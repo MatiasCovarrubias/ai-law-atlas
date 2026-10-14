@@ -1,5 +1,7 @@
 # AI Law Atlas
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23374030.svg)](https://doi.org/10.5281/zenodo.23374030)
+
 The AI Law Atlas collects the laws, regulations and bills that govern artificial intelligence and what it runs on:
 data, compute, chips, data centers and energy. It turns them into data that can be counted and compared. Each
 instrument is listed in a registry with its jurisdiction, stage and dates. For the more consequential ones, the
@@ -153,4 +155,4 @@ Every row carries `provision` and `quote`, so any item can be checked against th
 
 ## Citation
 
-See `CITATION.cff`. Please also cite AGORA when using AGORA-derived records.
+DOI: [10.5281/zenodo.23374030](https://doi.org/10.5281/zenodo.23374030) (archived on Zenodo). See `CITATION.cff`. Please also cite AGORA when using AGORA-derived records.
