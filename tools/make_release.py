@@ -37,9 +37,10 @@ TABLES = ["instruments", "classifications", "events", "thresholds", "obligations
 
 def main() -> None:
     out = ROOT / (sys.argv[sys.argv.index("--out") + 1] if "--out" in sys.argv else "build/release/ai-law-atlas")
-    if out.exists():
-        shutil.rmtree(out)
-    out.mkdir(parents=True)
+    out.mkdir(parents=True, exist_ok=True)
+    for p in out.iterdir():  # keep .git: the folder is the public repo's clone
+        if p.name != ".git":
+            shutil.rmtree(p) if p.is_dir() else p.unlink()
     for f in (ROOT / "release").iterdir():
         shutil.copy2(f, out / f.name)
     for src, dst in FILES.items():
@@ -53,8 +54,8 @@ def main() -> None:
         if p.exists():
             shutil.copy2(p, out / "data" / p.name)
     shutil.copy2(ROOT / "build" / "annotations.sqlite", out / "data" / "annotations.sqlite")
-    n = sum(1 for _ in out.rglob("*") if _.is_file())
-    size = sum(p.stat().st_size for p in out.rglob("*") if p.is_file()) / 1e6
+    files = [p for p in out.rglob("*") if p.is_file() and ".git" not in p.relative_to(out).parts]
+    n, size = len(files), sum(p.stat().st_size for p in files) / 1e6
     print(f"{out}: {n} files, {size:.1f} MB")
 
 

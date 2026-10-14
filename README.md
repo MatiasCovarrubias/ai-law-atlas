@@ -8,7 +8,7 @@ must do what, and what happens to those who don't. Every item cites its provisio
 it can be checked against the source. The atlas covers proposals as well as enacted laws, including bills that
 failed.
 
-Release v1.0 (October 2026). Research data, not legal advice.
+Release v1.0.1 (October 2026). Research data, not legal advice.
 
 ## How it is built
 

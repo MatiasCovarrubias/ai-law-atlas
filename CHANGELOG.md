@@ -1,5 +1,9 @@
 # Changelog
 
+## v1.0.1 (14 October 2026)
+
+Archived on Zenodo with a DOI. Citation metadata updated. No data changes.
+
 ## v1.0 (October 2026)
 
 First public release.
