@@ -1,0 +1,1049 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "us-co-sb21-190",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (connectors/fetch_texts.py)",
+  "url": "https://leg.colorado.gov/bill_files/54661/download",
+  "retrieved": "2026-10-13",
+  "version": "as fetched",
+  "language": "en",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "data_protection",
+   "consumer_protection",
+   "algorithmic_decision_systems",
+   "minors_child_safety"
+  ],
+  "primary_domain": "data_protection",
+  "mechanisms": [
+   "mandate_obligation",
+   "prohibition_ban",
+   "disclosure_transparency",
+   "liability_rule",
+   "standard_setting"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "data_controller",
+   "data_processor",
+   "government_agency"
+  ],
+  "affected_roles": [
+   "consumers_users",
+   "minors"
+  ],
+  "decision_margins": [
+   "firm:input_use",
+   "firm:pricing",
+   "firm:compliance_process",
+   "household:data_privacy",
+   "household:information"
+  ],
+  "territorial_scope": {
+   "types": [
+    "subnational",
+    "extraterritorial"
+   ],
+   "description": "Applies to controllers that conduct business in Colorado or intentionally target products or services to Colorado residents, and protects Colorado residents acting in an individual or household context.",
+   "evidence": {
+    "provision": "6-1-1304(1)(a)",
+    "quote": "COMMERCIAL PRODUCTS OR SERVICES THAT ARE INTENTIONALLY TARGETED TO RESIDENTS OF COLORADO"
+   }
+  },
+  "agora_harms": [
+   "Violation of civil or human rights, including privacy"
+  ],
+  "agora_incentives": [
+   "Fines"
+  ],
+  "agora_risk_factors": [
+   "Privacy",
+   "Transparency"
+  ],
+  "agora_strategies": [
+   "Disclosure",
+   "Evaluation: Impact assessment",
+   "Input controls: Data use",
+   "Input controls: Data circulation"
+  ]
+ },
+ "summary": {
+  "short": "SB 21-190 (Colorado Privacy Act) gives Colorado consumers rights over their personal data and imposes duties on controllers and processors that do business in Colorado or target residents, enforced by the Attorney General and district attorneys, from July 1, 2023.",
+  "long": "SB 21-190 enacts the Colorado Privacy Act as Part 13 of Article 1 of Title 6, effective July 1, 2023. It covers controllers that conduct business in Colorado or target products to Colorado residents and process personal data of 100,000 or more consumers a year, or 25,000 or more while deriving revenue from selling data. Exemptions include HIPAA-covered health information, Gramm-Leach-Bliley financial institutions, FCRA-regulated activity and employment records. Consumers may access, correct, delete, port and opt out of targeted advertising, data sales and certain profiling; controllers must respond within 45 days, provide appeals, and honor universal opt-out mechanisms meeting Attorney General specifications from July 1, 2024. Controllers must give privacy notices, specify purposes, minimize data, avoid secondary use without consent, secure data, avoid unlawful discrimination, and obtain consent before processing sensitive data, including a known child's data with parental consent. Processing that presents a heightened risk of harm requires documented data protection assessments, available to the Attorney General on request. Processors must follow controller instructions under binding contracts. The Attorney General and district attorneys enforce the Act, with no private right of action; violations are deceptive trade practices, and penalty amounts are not stated here."
+ },
+ "relations": [
+  {
+   "relation": "amends",
+   "target_text": "C.R.S. 6-1-104 (cooperative reporting)",
+   "note": "Adds references to part 13 to the cooperative reporting section.",
+   "evidence": {
+    "provision": "Sec. 2",
+    "quote": "SECTION 2. In Colorado Revised Statutes, amend 6-1-104 as follows:"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "C.R.S. 6-1-105 (unfair or deceptive trade practices)",
+   "note": "Adds subsection (1)(nnn), making a violation of part 13 a deceptive trade practice.",
+   "evidence": {
+    "provision": "Sec. 3",
+    "quote": "SECTION 3. In Colorado Revised Statutes, 6-1-105, add (1)(nnn) as follows:"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "C.R.S. 6-1-107 (powers of attorney general and district attorneys)",
+   "note": "Adds part 13 references to the investigative powers provision.",
+   "evidence": {
+    "provision": "Sec. 4",
+    "quote": "SECTION 4. In Colorado Revised Statutes, 6-1-107, amend (1) introductory portion as follows:"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "C.R.S. 6-1-108 (subpoenas, hearings, rules)",
+   "note": "Adds part 13 references to the subpoena and hearing powers.",
+   "evidence": {
+    "provision": "Sec. 5",
+    "quote": "SECTION 5. In Colorado Revised Statutes, 6-1-108, amend (1) as follows:"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "C.R.S. 6-1-110 (restraining orders, injunctions, assurances of discontinuance)",
+   "note": "Adds part 13 references to injunction and assurance provisions.",
+   "evidence": {
+    "provision": "Sec. 6",
+    "quote": "SECTION 6. In Colorado Revised Statutes, 6-1-110, amend (1)"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "C.R.S. 6-1-716 (breach of security notification)",
+   "note": "Processor must help the controller meet breach notification obligations under 6-1-716.",
+   "evidence": {
+    "provision": "6-1-1305(2)(b)",
+    "quote": "THE NOTIFICATION OF A BREACH OF THE SECURITY OF THE SYSTEM PURSUANT"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "45 CFR 160.103",
+   "note": "Defines business associate by reference; 6-1-1303(8) and (21) also use 45 CFR 160.103 definitions.",
+   "evidence": {
+    "provision": "6-1-1303(3)",
+    "quote": "\"BUSINESS ASSOCIATE\" HAS THE MEANING ESTABLISHED IN 45"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "HIPAA, 42 U.S.C. 1320d to 1320d-9",
+   "note": "Defines HIPAA for the exemptions in 6-1-1304(2).",
+   "evidence": {
+    "provision": "6-1-1303(15)",
+    "quote": "SECS. 1320d TO 1320d-9."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Gramm-Leach-Bliley Act, 15 U.S.C. 6801 et seq.",
+   "note": "Exempts personal data processed in compliance with that Act (6-1-1304(2)(j)(II)) and financial institutions subject to it (6-1-1304(2)(q)).",
+   "evidence": {
+    "provision": "6-1-1304(2)(j)(II)",
+    "quote": "\"GRAMM-LEACH-BLILEY ACT\", 15 U.S.C. SEC. 6801 ET SEQ., AS AMENDED"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Fair Credit Reporting Act, 15 U.S.C. 1681 et seq.",
+   "note": "Exempts consumer reporting activity regulated by that Act, to the extent so regulated.",
+   "evidence": {
+    "provision": "6-1-1304(2)(i)(II)",
+    "quote": "ACTIVITY IS REGULATED BY THE FEDERAL \"FAIR CREDIT REPORTING ACT\","
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Children's Online Privacy Protection Act of 1998, 15 U.S.C. 6501 to 6506",
+   "note": "Exempts personal data regulated by that Act if handled in compliance with it.",
+   "evidence": {
+    "provision": "6-1-1304(2)(j)(IV)",
+    "quote": "PROTECTION ACT OF 1998\", 15 U.S.C. SECS. 6501TO 6506, AS AMENDED, IF"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Colorado Open Records Act, part 2 of article 72 of title 24",
+   "note": "Data protection assessments are exempt from public inspection under that Act.",
+   "evidence": {
+    "provision": "6-1-1309(4)",
+    "quote": "\"COLORADO OPEN RECORDS ACT\", PART 2 OF ARTICLE 72 OF"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "C.R.S. 24-31-108",
+   "note": "Civil penalty receipts are credited under that section.",
+   "evidence": {
+    "provision": "6-1-1311(2)",
+    "quote": "CIVIL PENALTIES UNDER THIS PART 13 PURSUANT TO SECTION"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Colorado Constitution, art. II, sec. 7",
+   "note": "Legislative declaration refers to the constitutional privacy right.",
+   "evidence": {
+    "provision": "6-1-1302(1)(a)(II)",
+    "quote": "PRIVACY UNDER SECTION 7 OF ARTICLE II, AND FUNDAMENTAL PRIVACY"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Colorado Constitution, art. V, sec. 1(3)",
+   "note": "Referendum petition against the act can delay its effect until approval at the general election.",
+   "evidence": {
+    "provision": "Sec. 7(1)",
+    "quote": "filed pursuant to section 1 (3) of article V of the state"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "12 U.S.C. 5481(24)",
+   "note": "Defines the prudential regulator used in the affiliate definition.",
+   "evidence": {
+    "provision": "6-1-1303(1)",
+    "quote": "THAT TERM IS DEFINED IN 12 U.S.C. SEC. 5481 (24), IF ANY."
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "Attorney General (Colorado)",
+   "role": "designated",
+   "function": "Exclusive state enforcement of part 13 (including injunctions and parens patriae actions); rulemaking on universal opt-out technical specifications; may adopt rules on opinion letters and good-faith reliance; may request data protection assessments.",
+   "evidence": {
+    "provision": "6-1-1311(1)(a)",
+    "quote": "AUTHORITY TO ENFORCE THIS PART 13 BY BRINGING AN ACTION IN THE NAME OF THE STATE"
+   }
+  },
+  {
+   "name": "District attorneys (Colorado)",
+   "role": "designated",
+   "function": "Share enforcement authority over part 13 with the Attorney General; must issue a notice of violation before enforcement where a cure is possible (provision repealed effective January 1, 2025).",
+   "evidence": {
+    "provision": "6-1-1311(1)(a)",
+    "quote": "AUTHORITY TO ENFORCE THIS PART 13 BY BRINGING AN ACTION IN THE NAME OF THE STATE"
+   }
+  },
+  {
+   "name": "State Treasurer (Colorado)",
+   "role": "designated",
+   "function": "Credits receipts from civil penalties imposed under part 13 pursuant to C.R.S. 24-31-108.",
+   "evidence": {
+    "provision": "6-1-1311(2)",
+    "quote": "THE STATE TREASURER SHALL CREDIT ALL RECEIPTS FROM THE IMPOSITION OF CIVIL PENALTIES"
+   }
+  }
+ ],
+ "notes": "The text is a garbled reproduction: many subsection labels are missing or misplaced (e.g., 6-1-1303(1)(c), 6-1-1304(2)(a), (c), (e); 6-1-1304(2)(o) appears twice), and strikeout and insertion marks in Sections 2-6 are not reliably rendered. Quotes follow the printed text. Part 13 is added to article 1 of title 6; the text does not name that article. Sunset-type repeals within the act: 6-1-1306(1)(a)(IV)(A) repealed effective July 1, 2024; 6-1-1311(1)(d) repealed effective January 1, 2025. Section 7 sets the effective date at July 1, 2023, subject to referendum. The signature block and approval date are not legible in this text. Internal difference: 6-1-1309(1) applies the assessment duty to processing of data acquired on or after the section's effective date, while 6-1-1309(6) refers to processing activities created or generated after July 1, 2023. Federal and other references in the exemptions (e.g., 42 CFR Part 2, 45 CFR 46, 45 CFR 164, 18 U.S.C. 2721, 20 U.S.C. 1232g, 49 U.S.C. 40101) are not each listed as relations.",
+ "events": [
+  {
+   "event": "signed",
+   "date": null,
+   "date_type": "not_stated",
+   "date_text": "Signature block reads APPROVED; the date and time line is blank",
+   "applies_to": "Act as a whole",
+   "evidence": {
+    "provision": "Signature block (after Sec. 7)",
+    "quote": "APPROVED"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2023-07-01",
+   "date_type": "absolute",
+   "date_text": "This act takes effect July 1, 2023; except that a referendum petition may defer effect until approval at the November 2022 general election, in which case it takes effect July 1, 2023 or on the date of the governor's declaration of the vote, whichever is later",
+   "applies_to": "Act as a whole (new Part 13 of Article 1 of Title 6 and conforming amendments in Secs. 2-6)",
+   "evidence": {
+    "provision": "Sec. 7(1)",
+    "quote": "This act takes effect July 1, 2023"
+   }
+  },
+  {
+   "event": "application",
+   "date": "2023-07-01",
+   "date_type": "relative",
+   "date_text": "This act applies to conduct occurring on or after the applicable effective date of this act",
+   "anchor": "applicable effective date of this act",
+   "applies_to": "Conduct occurring on or after the effective date",
+   "offset_value": 0,
+   "offset_unit": "days",
+   "anchor_event": "entry_into_force",
+   "evidence": {
+    "provision": "Sec. 7(2)",
+    "quote": "This act applies to conduct occurring on or after the applicable effective date of this act"
+   },
+   "date_computed_from": "entry_into_force 2023-07-01 (text) + 0 days"
+  },
+  {
+   "event": "application",
+   "date": "2023-07-01",
+   "date_type": "absolute",
+   "date_text": "PROCESSING ACTIVITIES CREATED OR GENERATED AFTER JULY 1, 2023",
+   "applies_to": "Data protection assessment requirement for processing activities created or generated after July 1, 2023 (not retroactive)",
+   "evidence": {
+    "provision": "6-1-1309(6)",
+    "quote": "PROCESSING ACTIVITIES CREATED OR GENERATED AFTER JULY 1, 2023"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2023-07-01",
+   "date_type": "absolute",
+   "date_text": "BY JULY 1, 2023, THE ATTORNEY GENERAL SHALL ADOPT RULES",
+   "applies_to": "Attorney General rules detailing technical specifications for universal opt-out mechanisms",
+   "evidence": {
+    "provision": "6-1-1313(2)",
+    "quote": "BY JULY 1, 2023, THE ATTORNEY GENERAL SHALL ADOPT RULES"
+   }
+  },
+  {
+   "event": "application",
+   "date": "2024-07-01",
+   "date_type": "absolute",
+   "date_text": "EFFECTIVE JULY 1, 2024, A CONTROLLER THAT PROCESSES PERSONAL DATA FOR PURPOSES OF TARGETED ADVERTISING OR THE SALE OF PERSONAL DATA SHALL ALLOW CONSUMERS TO EXERCISE THE RIGHT TO OPT OUT THROUGH A USER-SELECTED UNIVERSAL OPT-OUT MECHANISM",
+   "applies_to": "Controllers processing personal data for targeted advertising or sale: universal opt-out mechanism duty",
+   "evidence": {
+    "provision": "6-1-1306(1)(a)(IV)(B)",
+    "quote": "EFFECTIVE JULY 1, 2024, A CONTROLLER THAT PROCESSES"
+   }
+  },
+  {
+   "event": "repealed",
+   "date": "2024-07-01",
+   "date_type": "absolute",
+   "date_text": "THIS SUBSECTION (1)(a)(IV)(A) IS REPEALED, EFFECTIVE JULY 1, 2024",
+   "applies_to": "Sec. 6-1-1306(1)(a)(IV)(A) only (earlier optional universal opt-out clause)",
+   "evidence": {
+    "provision": "6-1-1306(1)(a)(IV)(A)",
+    "quote": "IS REPEALED, EFFECTIVE JULY 1, 2024"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2025-01-01",
+   "date_type": "absolute",
+   "date_text": "BY JANUARY 1, 2025, THE ATTORNEY GENERAL MAY ADOPT RULES",
+   "applies_to": "Optional Attorney General rules governing opinion letters and interpretive guidance (good-faith reliance defense)",
+   "evidence": {
+    "provision": "6-1-1313(3)",
+    "quote": "BY JANUARY 1, 2025, THE ATTORNEY GENERAL MAY ADOPT RULES"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2025-07-01",
+   "date_type": "absolute",
+   "date_text": "THE RULES MUST BECOME EFFECTIVE BY JULY 1, 2025",
+   "applies_to": "Attorney General opinion letter and interpretive guidance rules, if adopted",
+   "evidence": {
+    "provision": "6-1-1313(3)",
+    "quote": "THE RULES MUST BECOME EFFECTIVE BY JULY 1, 2025"
+   }
+  },
+  {
+   "event": "repealed",
+   "date": "2025-01-01",
+   "date_type": "absolute",
+   "date_text": "THIS SUBSECTION (1)(d) IS REPEALED, EFFECTIVE JANUARY 1, 2025",
+   "applies_to": "Sec. 6-1-1311(1)(d) only (pre-enforcement notice and cure requirement)",
+   "evidence": {
+    "provision": "6-1-1311(1)(d)",
+    "quote": "IS REPEALED, EFFECTIVE JANUARY 1, 2025"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "WITHIN FORTY-FIVE DAYS AFTER RECEIPT OF THE REQUEST",
+   "anchor": "receipt of the consumer's request",
+   "applies_to": "Controller response to consumer rights requests and notice of reasons for not acting (6-1-1306(2)(a)-(b))",
+   "offset_value": 45,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "6-1-1306(2)(a)",
+    "quote": "WITHIN FORTY-FIVE DAYS AFTER RECEIPT OF THE REQUEST"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "THE CONTROLLER MAY EXTEND THE FORTY-FIVE-DAY PERIOD BY FORTY-FIVE ADDITIONAL DAYS WHERE REASONABLY NECESSARY",
+   "depends_on": "Controller determines extension is reasonably necessary; controller must inform consumer of extension within forty-five days after receipt of the request",
+   "applies_to": "Consumer rights request response period (6-1-1306(2)(a))",
+   "offset_value": 45,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "6-1-1306(2)(a)",
+    "quote": "THE CONTROLLER MAY EXTEND THE FORTY-FIVE-DAY PERIOD BY FORTY-FIVE ADDITIONAL DAYS"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "WITHIN FORTY-FIVE DAYS AFTER RECEIPT OF AN APPEAL",
+   "anchor": "receipt of an appeal",
+   "applies_to": "Controller response to consumer appeals of refusals to act on rights requests (6-1-1306(3)(b))",
+   "offset_value": 45,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "6-1-1306(3)(b)",
+    "quote": "WITHIN FORTY-FIVE DAYS AFTER RECEIPT OF AN APPEAL"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "THE CONTROLLER MAY EXTEND THE FORTY-FIVE-DAY PERIOD BY SIXTY ADDITIONAL DAYS WHERE REASONABLY NECESSARY",
+   "depends_on": "Controller determines extension is reasonably necessary, taking into account complexity and number of requests; controller must inform consumer of extension within forty-five days after receipt of the appeal",
+   "applies_to": "Consumer appeal response period (6-1-1306(3)(b))",
+   "offset_value": 60,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "6-1-1306(3)(b)",
+    "quote": "THE CONTROLLER MAY EXTEND THE FORTY-FIVE-DAY PERIOD BY SIXTY ADDITIONAL DAYS"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "WITHIN SIXTY DAYS AFTER RECEIPT OF THE NOTICE OF VIOLATION",
+   "anchor": "receipt of the notice of violation",
+   "applies_to": "Controller cure period before enforcement action, where cure is deemed possible (6-1-1311(1)(d))",
+   "offset_value": 60,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "6-1-1311(1)(d)",
+    "quote": "WITHIN SIXTY DAYS AFTER RECEIPT OF THE NOTICE OF VIOLATION"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "data_subjects_count",
+   "variable_text": "consumers whose personal data a controller controls or processes during a calendar year",
+   "operator": ">=",
+   "value": 100000,
+   "value_text": "ONE HUNDRED THOUSAND CONSUMERS OR MORE",
+   "unit": "consumers",
+   "measurement": "personal data controlled or processed during a calendar year",
+   "level": "entity",
+   "trigger": "scope_definition",
+   "consequence": "Part 13 applies to a controller that meets this test (alternative to the 25,000-consumer sale test)",
+   "conditions": "Controller also conducts business in Colorado or produces or delivers products or services intentionally targeted to Colorado residents; one or both thresholds must be met",
+   "evidence": {
+    "provision": "6-1-1304(1)(b)(I)",
+    "quote": "CONTROLS OR PROCESSES THE PERSONAL DATA OF ONE HUNDRED THOUSAND CONSUMERS OR MORE DURING A CALENDAR YEAR"
+   }
+  },
+  {
+   "variable": "data_subjects_count",
+   "variable_text": "consumers whose personal data a controller processes or controls, where the controller derives revenue or receives a discount from sale of personal data",
+   "operator": ">=",
+   "value": 25000,
+   "value_text": "TWENTY-FIVE THOUSAND CONSUMERS OR MORE",
+   "unit": "consumers",
+   "measurement": "personal data processed or controlled (calendar year not stated for this clause in the quote)",
+   "level": "entity",
+   "trigger": "scope_definition",
+   "consequence": "Part 13 applies to a controller that meets this test together with the sale-revenue condition",
+   "conditions": "Controller derives revenue or receives a discount on the price of goods or services from the sale of personal data; alternative to the 100,000-consumer test; controller also conducts business in Colorado or targets Colorado residents",
+   "evidence": {
+    "provision": "6-1-1304(1)(b)(II)",
+    "quote": "PROCESSES OR CONTROLS THE PERSONAL DATA OF TWENTY-FIVE THOUSAND CONSUMERS OR MORE"
+   }
+  },
+  {
+   "variable": "age",
+   "variable_text": "child: individual under thirteen years of age",
+   "operator": "<",
+   "value": 13,
+   "value_text": "UNDER THIRTEEN YEARS OF AGE",
+   "unit": "years",
+   "level": "person",
+   "trigger": "obligation",
+   "consequence": "Personal data concerning a known child is sensitive data; processing it requires consent from the child's parent or lawful guardian",
+   "conditions": "Applies where the controller processes personal data concerning a known child",
+   "evidence": {
+    "provision": "6-1-1303(4)",
+    "quote": "MEANS AN INDIVIDUAL UNDER THIRTEEN YEARS OF AGE"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "ownership of, control of, or power to vote outstanding shares of any class of voting security of an entity",
+   "operator": ">=",
+   "value": 25,
+   "value_text": "TWENTY-FIVE PERCENT OR MORE",
+   "unit": "percent",
+   "measurement": "outstanding shares of any class of voting security, directly or indirectly, or acting through other persons",
+   "level": "group",
+   "trigger": "scope_definition",
+   "consequence": "Legal entities meeting this control test are affiliates; transfers of personal data to an affiliate are excluded from the definition of sale",
+   "conditions": "Alternative control tests: control in any manner over election of a majority of directors, trustees or general partners, or controlling influence as determined by the applicable prudential regulator",
+   "evidence": {
+    "provision": "6-1-1303(1)(a)",
+    "quote": "OWNERSHIP OF, CONTROL OF, OR POWER TO VOTE TWENTY-FIVE PERCENT OR MORE OF THE OUTSTANDING SHARES OF ANY CLASS OF VOTING SECURITY OF THE ENTITY"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "exercises of the right to data portability by a consumer per calendar year",
+   "operator": "<=",
+   "value": 2,
+   "value_text": "NO MORE THAN TWO TIMES PER CALENDAR YEAR",
+   "unit": "requests",
+   "measurement": "per consumer per calendar year",
+   "level": "person",
+   "trigger": "cap",
+   "consequence": "A consumer's exercise of the portability right is limited to two times per calendar year",
+   "conditions": "Applies to the right to obtain personal data in a portable and readily usable format under the access right",
+   "evidence": {
+    "provision": "6-1-1306(1)(e)",
+    "quote": "A CONSUMER MAY EXERCISE THIS RIGHT NO MORE THAN TWO TIMES PER CALENDAR YEAR"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "second or subsequent consumer request for information within a twelve-month period",
+   "operator": ">=",
+   "value": 2,
+   "value_text": "FOR A SECOND OR SUBSEQUENT REQUEST WITHIN A TWELVE-MONTH PERIOD",
+   "unit": "requests",
+   "measurement": "within a twelve-month period",
+   "level": "person",
+   "trigger": "pricing_tier",
+   "consequence": "Controller may charge a fee for the second or subsequent request, calculated in the manner specified in C.R.S. 24-72-205(5)(a); otherwise the information is provided free of charge",
+   "conditions": "Applies to information specified in section 6-1-1306(2)(b) provided upon consumer request",
+   "evidence": {
+    "provision": "6-1-1306(2)(b)",
+    "quote": "FOR A SECOND OR SUBSEQUENT REQUEST WITHIN A TWELVE-MONTH PERIOD, THE CONTROLLER MAY CHARGE AN AMOUNT"
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "Affiliate",
+   "defined_in": "C.R.S. 6-1-1303(1)",
+   "evidence": {
+    "provision": "6-1-1303(1)",
+    "quote": "A LEGAL ENTITY THAT CONTROLS, IS CONTROLLED BY, OR IS UNDER COMMON CONTROL WITH ANOTHER LEGAL ENTITY"
+   }
+  },
+  {
+   "term": "Business associate",
+   "defined_in": "45 CFR 160.103",
+   "evidence": {
+    "provision": "6-1-1303(3)",
+    "quote": "HAS THE MEANING ESTABLISHED IN 45"
+   }
+  },
+  {
+   "term": "Consent",
+   "defined_in": "C.R.S. 6-1-1303(5)",
+   "evidence": {
+    "provision": "6-1-1303(5)",
+    "quote": "A CLEAR, AFFIRMATIVE ACT SIGNIFYING A CONSUMER'S FREELY GIVEN, SPECIFIC, INFORMED, AND UNAMBIGUOUS AGREEMENT"
+   }
+  },
+  {
+   "term": "Consumer",
+   "defined_in": "C.R.S. 6-1-1303(6)",
+   "evidence": {
+    "provision": "6-1-1303(6)",
+    "quote": "AN INDIVIDUAL WHO IS A COLORADO RESIDENT ACTING ONLY IN AN INDIVIDUAL OR HOUSEHOLD CONTEXT"
+   }
+  },
+  {
+   "term": "Controller",
+   "defined_in": "C.R.S. 6-1-1303(7)",
+   "evidence": {
+    "provision": "6-1-1303(7)",
+    "quote": "A PERSON THAT, ALONE OR JOINTLY WITH OTHERS, DETERMINES THE PURPOSES FOR AND MEANS OF PROCESSING PERSONAL DATA"
+   }
+  },
+  {
+   "term": "Covered entity",
+   "defined_in": "45 CFR 160.103",
+   "evidence": {
+    "provision": "6-1-1303(8)",
+    "quote": "HAS THE MEANING ESTABLISHED IN 45 CFR"
+   }
+  },
+  {
+   "term": "Dark pattern",
+   "defined_in": "C.R.S. 6-1-1303(9)",
+   "evidence": {
+    "provision": "6-1-1303(9)",
+    "quote": "A USER INTERFACE DESIGNED OR MANIPULATED WITH THE SUBSTANTIAL EFFECT OF SUBVERTING OR IMPAIRING USER AUTONOMY, DECISION-MAKING, OR CHOICE"
+   }
+  },
+  {
+   "term": "Decisions that produce legal or similarly significant effects concerning a consumer",
+   "defined_in": "C.R.S. 6-1-1303(10)",
+   "evidence": {
+    "provision": "6-1-1303(10)",
+    "quote": "A DECISION THAT RESULTS IN THE PROVISION OR DENIAL OF FINANCIAL OR LENDING SERVICES, HOUSING, INSURANCE, EDUCATION ENROLLMENT OR OPPORTUNITY, CRIMINAL JUSTICE, EMPLOYMENT OPPORTUNITIES, HEALTH-CARE SERVICES, OR ACCESS TO ESSENTIAL GOODS OR SERVICES"
+   }
+  },
+  {
+   "term": "De-identified data",
+   "defined_in": "C.R.S. 6-1-1303(11)",
+   "evidence": {
+    "provision": "6-1-1303(11)",
+    "quote": "DATA THAT CANNOT REASONABLY BE USED TO INFER INFORMATION ABOUT, OR OTHERWISE BE LINKED TO, AN IDENTIFIED OR IDENTIFIABLE INDIVIDUAL"
+   }
+  },
+  {
+   "term": "Identified or identifiable individual",
+   "defined_in": "C.R.S. 6-1-1303(16)",
+   "evidence": {
+    "provision": "6-1-1303(16)",
+    "quote": "AN INDIVIDUAL WHO CAN BE READILY IDENTIFIED, DIRECTLY OR INDIRECTLY"
+   }
+  },
+  {
+   "term": "Child",
+   "defined_in": "C.R.S. 6-1-1303(4)",
+   "evidence": {
+    "provision": "6-1-1303(4)",
+    "quote": "MEANS AN INDIVIDUAL UNDER THIRTEEN YEARS OF AGE"
+   }
+  },
+  {
+   "term": "Personal data",
+   "defined_in": "C.R.S. 6-1-1303(17)",
+   "evidence": {
+    "provision": "6-1-1303(17)(a)",
+    "quote": "MEANS INFORMATION THAT IS LINKED OR REASONABLY LINKABLE TO AN IDENTIFIED OR IDENTIFIABLE INDIVIDUAL"
+   }
+  },
+  {
+   "term": "Processing",
+   "defined_in": "C.R.S. 6-1-1303(18)",
+   "evidence": {
+    "provision": "6-1-1303(18)",
+    "quote": "THE COLLECTION, USE, SALE, STORAGE, DISCLOSURE, ANALYSIS, DELETION, OR MODIFICATION OF PERSONAL DATA"
+   }
+  },
+  {
+   "term": "Processor",
+   "defined_in": "C.R.S. 6-1-1303(19)",
+   "evidence": {
+    "provision": "6-1-1303(19)",
+    "quote": "DATA ON BEHALF OF A CONTROLLER"
+   }
+  },
+  {
+   "term": "Profiling",
+   "defined_in": "C.R.S. 6-1-1303(20)",
+   "evidence": {
+    "provision": "6-1-1303(20)",
+    "quote": "MEANS ANY FORM OF AUTOMATED PROCESSING OF PERSONAL DATA TO EVALUATE, ANALYZE, OR PREDICT PERSONAL ASPECTS"
+   }
+  },
+  {
+   "term": "Pseudonymous data",
+   "defined_in": "C.R.S. 6-1-1303(22)",
+   "evidence": {
+    "provision": "6-1-1303(22)",
+    "quote": "PERSONAL DATA THAT CAN NO LONGER BE ATTRIBUTED TO A SPECIFIC INDIVIDUAL WITHOUT THE USE OF ADDITIONAL INFORMATION"
+   }
+  },
+  {
+   "term": "Sale",
+   "defined_in": "C.R.S. 6-1-1303(23)(a)",
+   "evidence": {
+    "provision": "6-1-1303(23)(a)",
+    "quote": "THE EXCHANGE OF PERSONAL DATA FOR MONETARY OR OTHER VALUABLE CONSIDERATION BY A CONTROLLER TO A THIRD PARTY"
+   }
+  },
+  {
+   "term": "Sensitive data",
+   "defined_in": "C.R.S. 6-1-1303(24)",
+   "evidence": {
+    "provision": "6-1-1303(24)",
+    "quote": "PERSONAL DATA REVEALING RACIAL OR ETHNIC ORIGIN, RELIGIOUS BELIEFS"
+   }
+  },
+  {
+   "term": "Targeted advertising",
+   "defined_in": "C.R.S. 6-1-1303(25)(a)",
+   "evidence": {
+    "provision": "6-1-1303(25)(a)",
+    "quote": "MEANS DISPLAYING TO A CONSUMER AN ADVERTISEMENT THAT"
+   }
+  },
+  {
+   "term": "Third party",
+   "defined_in": "C.R.S. 6-1-1303(26)",
+   "evidence": {
+    "provision": "6-1-1303(26)",
+    "quote": "A PERSON, PUBLIC AUTHORITY, AGENCY, OR BODY OTHER THAN A CONSUMER, CONTROLLER, PROCESSOR, OR AFFILIATE OF THE PROCESSOR OR THE CONTROLLER"
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "other",
+   "addressee": "data_processor",
+   "modality": "shall",
+   "summary": "Processor shall adhere to the controller's instructions and assist the controller with consumer requests, security, breach notification and data protection assessments.",
+   "applies_from": "July 1, 2023 (effective date of the act, section 7(1))",
+   "evidence": {
+    "provision": "6-1-1305(2)",
+    "quote": "PROCESSORS SHALL ADHERE TO THE INSTRUCTIONS OF THE CONTROLLER AND ASSIST THE CONTROLLER TO MEET ITS OBLIGATIONS"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_processor",
+   "modality": "shall",
+   "summary": "Processor shall ensure that each person processing personal data is subject to a duty of confidentiality and engage a subcontractor only after giving the controller an opportunity to object, under a written contract.",
+   "applies_from": "July 1, 2023 (effective date of the act, section 7(1))",
+   "evidence": {
+    "provision": "6-1-1305(3)",
+    "quote": "ENSURE THAT EACH PERSON PROCESSING THE PERSONAL DATA IS"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "data_controller",
+   "also_addressees": [
+    "data_processor"
+   ],
+   "modality": "shall",
+   "summary": "Controller and processor shall implement appropriate technical and organizational security measures appropriate to the risk and allocate responsibilities between them.",
+   "applies_from": "July 1, 2023 (effective date of the act, section 7(1))",
+   "evidence": {
+    "provision": "6-1-1305(4)",
+    "quote": "THE CONTROLLER AND THE PROCESSOR SHALL IMPLEMENT APPROPRIATE"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_processor",
+   "also_addressees": [
+    "data_controller"
+   ],
+   "modality": "shall",
+   "summary": "Processing by a processor must be governed by a binding contract setting out instructions, data type, duration, deletion or return at the controller's choice, information for demonstrating compliance, and audits.",
+   "applies_from": "July 1, 2023 (effective date of the act, section 7(1))",
+   "evidence": {
+    "provision": "6-1-1305(5)",
+    "quote": "PROCESSING BY A PROCESSOR MUST BE GOVERNED BY A"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Controller must enable consumers to exercise rights to opt out (targeted advertising, sale, profiling), access, correction, deletion and portability, without requiring a new account.",
+   "applies_from": "July 1, 2023 (effective date of the act, section 7(1))",
+   "evidence": {
+    "provision": "6-1-1306(1)",
+    "quote": "CONTROLLERS SHALL NOT REQUIRE A CONSUMER TO CREATE"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Controller processing for targeted advertising or sale of personal data must allow consumers to opt out through a user-selected universal opt-out mechanism meeting Attorney General technical specifications.",
+   "applies_from": "July 1, 2024",
+   "conditional_on": "Controller processes personal data for targeted advertising or the sale of personal data",
+   "evidence": {
+    "provision": "6-1-1306(1)(a)(IV)(B)",
+    "quote": "EFFECTIVE JULY 1, 2024, A CONTROLLER THAT PROCESSES"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Controller must inform the consumer of action taken on a request within forty-five days of receipt, with one extension of forty-five days, and give reasons if no action is taken; information is free of charge on first request.",
+   "applies_from": "July 1, 2023 (effective date of the act, section 7(1))",
+   "evidence": {
+    "provision": "6-1-1306(2)(a)",
+    "quote": "A CONTROLLER SHALL INFORM A CONSUMER OF ANY ACTION TAKEN ON A REQUEST UNDER"
+   }
+  },
+  {
+   "type": "complaint_mechanism",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Controller must establish an internal appeal process for refusals of consumer requests, decide appeals within forty-five days (extendable by sixty days), and inform consumers of the right to contact the Attorney General.",
+   "applies_from": "July 1, 2023 (effective date of the act, section 7(1))",
+   "evidence": {
+    "provision": "6-1-1306(3)(a)",
+    "quote": "A CONTROLLER SHALL ESTABLISH AN INTERNAL PROCESS"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Controller using de-identified data must exercise reasonable oversight of contractual commitments on that data and take steps to address breaches.",
+   "applies_from": "July 1, 2023 (effective date of the act, section 7(1))",
+   "evidence": {
+    "provision": "6-1-1307(2)",
+    "quote": "A CONTROLLER THAT USES DE-IDENTIFIED DATA SHALL EXERCISE"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Controller must provide consumers a reasonably accessible privacy notice covering data categories, purposes, how to exercise rights and appeal, and categories of data and third parties shared.",
+   "applies_from": "July 1, 2023 (effective date of the act, section 7(1))",
+   "evidence": {
+    "provision": "6-1-1308(1)(a)",
+    "quote": "A CONTROLLER SHALL PROVIDE CONSUMERS WITH A REASONABLY ACCESSIBLE"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Controller that sells personal data or processes it for targeted advertising must clearly and conspicuously disclose the sale or processing and how to opt out.",
+   "applies_from": "July 1, 2023 (effective date of the act, section 7(1))",
+   "conditional_on": "Controller sells personal data to third parties or processes personal data for targeted advertising",
+   "evidence": {
+    "provision": "6-1-1308(1)(b)",
+    "quote": "THE CONTROLLER SHALL CLEARLY AND CONSPICUOUSLY DISCLOSE THE SALE OR PROCESSING"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "data_controller",
+   "modality": "shall_not",
+   "summary": "Controller shall not require a new account to exercise a right, or increase the cost of or decrease availability of a product or service solely because a consumer exercised a right.",
+   "applies_from": "July 1, 2023 (effective date of the act, section 7(1))",
+   "evidence": {
+    "provision": "6-1-1308(1)(c)",
+    "quote": "REQUIRE A CONSUMER TO CREATE A NEW ACCOUNT IN ORDER TO"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Controller shall specify the express purposes for which personal data are collected and processed.",
+   "applies_from": "July 1, 2023 (effective date of the act, section 7(1))",
+   "evidence": {
+    "provision": "6-1-1308(2)",
+    "quote": "A CONTROLLER SHALL SPECIFY THE EXPRESS PURPOSES FOR WHICH PERSONAL DATA ARE COLLECTED AND PROCESSED."
+   }
+  },
+  {
+   "type": "data_minimization",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Controller's collection of personal data must be adequate, relevant and limited to what is reasonably necessary for the specified purposes.",
+   "applies_from": "July 1, 2023 (effective date of the act, section 7(1))",
+   "evidence": {
+    "provision": "6-1-1308(3)",
+    "quote": "A CONTROLLER'S COLLECTION OF PERSONAL DATA MUST BE ADEQUATE, RELEVANT, AND LIMITED"
+   }
+  },
+  {
+   "type": "data_minimization",
+   "addressee": "data_controller",
+   "modality": "shall_not",
+   "summary": "Controller shall not process personal data for purposes not reasonably necessary to or compatible with the specified purposes, unless it first obtains the consumer's consent.",
+   "applies_from": "July 1, 2023 (effective date of the act, section 7(1))",
+   "conditional_on": "Unless the controller first obtains the consumer's consent",
+   "evidence": {
+    "provision": "6-1-1308(4)",
+    "quote": "A CONTROLLER SHALL NOT PROCESS PERSONAL DATA FOR PURPOSES THAT ARE NOT REASONABLY"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Controller shall take reasonable measures to secure personal data during storage and use from unauthorized acquisition, appropriate to the volume, scope and nature of the data and business.",
+   "applies_from": "July 1, 2023 (effective date of the act, section 7(1))",
+   "evidence": {
+    "provision": "6-1-1308(5)",
+    "quote": "A CONTROLLER SHALL TAKE REASONABLE MEASURES TO SECURE PERSONAL DATA"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "data_controller",
+   "modality": "shall_not",
+   "summary": "Controller shall not process personal data in violation of state or federal laws prohibiting unlawful discrimination against consumers.",
+   "applies_from": "July 1, 2023 (effective date of the act, section 7(1))",
+   "evidence": {
+    "provision": "6-1-1308(6)",
+    "quote": "A CONTROLLER SHALL NOT PROCESS PERSONAL DATA IN VIOLATION OF STATE OR FEDERAL LAWS"
+   }
+  },
+  {
+   "type": "consent",
+   "addressee": "data_controller",
+   "modality": "shall_not",
+   "summary": "Controller shall not process a consumer's sensitive data without first obtaining consent, or for a known child without consent from the parent or lawful guardian.",
+   "applies_from": "July 1, 2023 (effective date of the act, section 7(1))",
+   "conditional_on": "Unless the controller first obtains the consumer's consent (or parent or guardian consent for a known child)",
+   "evidence": {
+    "provision": "6-1-1308(7)",
+    "quote": "A CONTROLLER SHALL NOT PROCESS A CONSUMER'S SENSITIVE DATA WITHOUT FIRST OBTAINING"
+   }
+  },
+  {
+   "type": "impact_assessment",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Controller must conduct and document a data protection assessment of each processing activity presenting a heightened risk of harm to a consumer, weighing benefits against risks and safeguards.",
+   "applies_from": "Processing activities created or generated after July 1, 2023 (6-1-1309(6))",
+   "conditional_on": "Processing presents a heightened risk of harm to a consumer, including targeted advertising or profiling with foreseeable risks, sale of personal data, or processing sensitive data",
+   "evidence": {
+    "provision": "6-1-1309(1)",
+    "quote": "WITHOUT CONDUCTING AND DOCUMENTING A DATA PROTECTION"
+   }
+  },
+  {
+   "type": "cooperation_with_authority",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Controller must make data protection assessments available to the Attorney General on request, which may evaluate them for compliance.",
+   "applies_from": "July 1, 2023 (effective date of the act, section 7(1))",
+   "conditional_on": "Upon request of the Attorney General",
+   "evidence": {
+    "provision": "6-1-1309(4)",
+    "quote": "A CONTROLLER SHALL MAKE THE DATA PROTECTION ASSESSMENT"
+   }
+  },
+  {
+   "type": "data_minimization",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Personal data processed under an exception in section 6-1-1304 shall not be processed for other purposes and shall be processed solely to the extent necessary, reasonable and proportionate.",
+   "applies_from": "July 1, 2023 (effective date of the act, section 7(1))",
+   "conditional_on": "Personal data processed pursuant to an exception in section 6-1-1304",
+   "evidence": {
+    "provision": "6-1-1304(4)",
+    "quote": "SHALL NOT BE PROCESSED FOR ANY PURPOSE OTHER THAN A"
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "government_agency",
+   "modality": "may",
+   "summary": "Attorney General may promulgate rules for carrying out the part.",
+   "applies_from": "July 1, 2023 (effective date of the act, section 7(1))",
+   "evidence": {
+    "provision": "6-1-1313(1)",
+    "quote": "THE ATTORNEY GENERAL MAY PROMULGATE RULES FOR THE PURPOSE OF CARRYING OUT"
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Attorney General shall adopt rules detailing technical specifications for universal opt-out mechanisms, which must not default-enable the mechanism and must allow the controller to authenticate Colorado residents.",
+   "applies_from": "By July 1, 2023",
+   "evidence": {
+    "provision": "6-1-1313(2)",
+    "quote": "BY JULY 1, 2023, THE ATTORNEY GENERAL SHALL ADOPT RULES"
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "government_agency",
+   "modality": "may",
+   "summary": "Attorney General may adopt rules governing opinion letters and interpretive guidance, including a good-faith reliance defence, which must take effect by July 1, 2025.",
+   "applies_from": "By January 1, 2025",
+   "evidence": {
+    "provision": "6-1-1313(3)",
+    "quote": "BY JANUARY 1, 2025, THE ATTORNEY GENERAL MAY ADOPT"
+   }
+  }
+ ],
+ "enforcement": [
+  {
+   "sanction_type": "injunction_order",
+   "authority": "Attorney General and district attorneys",
+   "triggered_by": "Violation of Part 13 of Article 1 of Title 6 (enforcement by the Attorney General or district attorneys, who have exclusive authority under 6-1-1311(1)(a))",
+   "max_penalty_text": "Not stated in this text; the provision authorizes seeking an injunction to enjoin a violation",
+   "penalty_formula": "Not stated in this text.",
+   "private_right_of_action": false,
+   "cure_period": "Before an enforcement action under 6-1-1311(1)(a), a notice of violation must be issued if a cure is deemed possible; 60 days after receipt to cure (6-1-1311(1)(d), repealed effective January 1, 2025 per the text)",
+   "evidence": {
+    "provision": "6-1-1311(1)(a)",
+    "quote": "INCLUDING SEEKING AN INJUNCTION TO ENJOIN A VIOLATION OF THIS PART 13"
+   }
+  },
+  {
+   "sanction_type": "injunction_order",
+   "authority": "Attorney General and district attorneys, through a district court action",
+   "triggered_by": "Violation of Part 13 treated as a deceptive trade practice for enforcement by the Attorney General or a district attorney (6-1-1311(1)(c); 6-1-105(1)(nnn))",
+   "max_penalty_text": "Not stated in this text; court may issue a temporary restraining order or injunction, orders to compensate or restore injured persons, and orders to prevent unjust enrichment",
+   "penalty_formula": "Not stated in this text.",
+   "penalty_reference": "C.R.S. 6-1-110(1) (restraining orders and injunctions for deceptive trade practices)",
+   "private_right_of_action": false,
+   "cure_period": "Notice-of-violation and 60-day cure step of 6-1-1311(1)(d) applied before an action under 6-1-1311(1)(a) (provision repealed effective January 1, 2025 per the text)",
+   "evidence": {
+    "provision": "6-1-1311(1)(c)",
+    "quote": "FOR PURPOSES ONLY OF ENFORCEMENT OF THIS PART 13 BY THE ATTORNEY GENERAL OR A DISTRICT ATTORNEY, A VIOLATION OF THIS PART 13 IS A DECEPTIVE TRADE PRACTICE."
+   }
+  },
+  {
+   "sanction_type": "other",
+   "authority": "Attorney General and district attorneys",
+   "triggered_by": "Violation of a deceptive trade practice under Part 13, where the authority to institute a civil action exists (6-1-110(2))",
+   "max_penalty_text": "Not stated in this text; the assurance may include a voluntary payment of investigation costs and restoration of money or property acquired by the violator",
+   "penalty_formula": "Not stated in this text.",
+   "penalty_reference": "C.R.S. 6-1-110(2) (assurance of discontinuance)",
+   "private_right_of_action": false,
+   "cure_period": "Not stated in this text",
+   "evidence": {
+    "provision": "6-1-110(2)",
+    "quote": "the attorney general or district attorney may accept, in lieu thereof or as a part thereof, an assurance of discontinuance"
+   }
+  },
+  {
+   "sanction_type": "civil_penalty",
+   "authority": "Not stated in this section (the text refers to receipts from the imposition of civil penalties under Part 13)",
+   "triggered_by": "Violation of Part 13 for which civil penalties are imposed (the text refers to such penalties in 6-1-1311(2) without setting out the penalty provision)",
+   "max_penalty_text": "Not stated in this text; no civil penalty amount or range appears in Part 13",
+   "penalty_formula": "Not stated in this text.",
+   "penalty_reference": "C.R.S. 24-31-108 (crediting of receipts, as cited in 6-1-1311(2))",
+   "private_right_of_action": false,
+   "cure_period": "60 days after notice of violation, if cure is deemed possible (6-1-1311(1)(d), repealed effective January 1, 2025 per the text)",
+   "evidence": {
+    "provision": "6-1-1311(2)",
+    "quote": "THE STATE TREASURER SHALL CREDIT ALL RECEIPTS FROM THE IMPOSITION OF CIVIL PENALTIES UNDER THIS PART 13"
+   }
+  }
+ ],
+ "section_status": {}
+}

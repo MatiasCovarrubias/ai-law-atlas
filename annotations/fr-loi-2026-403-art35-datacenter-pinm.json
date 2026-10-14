@@ -1,0 +1,1833 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "fr-loi-2026-403-art35-datacenter-pinm",
+ "tier": "B",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "light, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-interim-20261014"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (Claude Code retrieval)",
+  "url": "https://echanges.dila.gouv.fr/OPENDATA/JORF/JORF_20260526-212444.tar.gz + JORF_20260527-002826.tar.gz (texte) + JORF_20260527-222846.tar.gz, JORF_20260528-002624.tar.gz",
+  "retrieved": "2026-10-14",
+  "version": "JORF text: JORF n°0122 du 27 mai 2026 (NOR ECOM2409377L), as promulgated after CC decision n° 2026-903 DC (censured provisions shown as bracketed notes); DILA JORF open data, JORFTEXT000054131304",
+  "language": "fr",
+  "extent": "full",
+  "note": "Full law stored; the relevant provision is Article 35 in the JORF numbering (Titre VII), which inserts I bis in art. L. 300-6-2 Code de l'urbanisme (data centres qualifiable by decree as projet d'intérêt national majeur; permit may be refused where structural water stress; data-centre definition) and in its V lets the energy minister ask RTE to reserve grid connection capacity for electricity-intensive industrial/digital projects; its IV was censured. Registry number/date/title match the JORF. Note: the JORF visa reads 'décision du Conseil constitutionnel n° 2026-903 DC du 21 mars 2026' while the censure notes and the travaux préparatoires say 21 mai 2026 (apparent slip in the visa; registry's 21 May is consistent with the body). 84 articles. Raw HTML assembled by script from the official DILA JORF open-data XML (texte/version + texte/struct + section_ta + article files) downloaded with curl from echanges.dila.gouv.fr (Légifrance itself returns 403 to curl); article order and headings follow the JORF struct file; no text altered."
+ },
+ "classification": {
+  "domains": [
+   "compute_data_centers",
+   "energy_grid_water",
+   "ai_general"
+  ],
+  "primary_domain": "compute_data_centers",
+  "mechanisms": [
+   "designation_tiering",
+   "licensing_permit_certification",
+   "tariff_price_regulation",
+   "mandate_obligation"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "data_center_operator",
+   "utility_grid_operator",
+   "government_agency",
+   "regulator"
+  ],
+  "decision_margins": [
+   "firm:investment_location",
+   "firm:input_use"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national"
+   ],
+   "description": "Applies across French territory: the state qualifies projects by decree, local permit authorities decide permits, and the energy minister acts for projects located on national territory.",
+   "evidence": {
+    "provision": "Art. 35 V",
+    "quote": "Pour l'implantation sur le territoire de projets d'infrastructures industrielles et numériques fortement consommatrices en électricité"
+   }
+  }
+ },
+ "summary": {
+  "short": "French omnibus simplification law (Loi n° 2026-403). Article 35 lets a decree qualify data centres as projets d'intérêt national majeur, lets permit authorities refuse data-centre building permits in water-stressed areas, and lets the energy minister ask the transmission operator to reserve grid capacity for electricity-intensive digital projects.",
+  "long": "Loi n° 2026-403 of 26 May 2026 is a broad simplification statute covering administration, business formalities, public procurement, commerce, insurance, health research and other areas. This annotation covers its AI-relevant provisions, which sit in Article 35 (Titre VII) and, for the data-protection regulator, Article 59. Article 35 I.3°b inserts a new paragraph I bis into Code de l'urbanisme L. 300-6-2: a data centre of particular importance for the digital or ecological transition or national sovereignty may be qualified by decree as a projet d'intérêt national majeur. The same paragraph allows the administrative authority to refuse a data-centre building permit where the territory faces structural water-resource tensions, and defines a data centre. Article 35 V allows the energy minister to ask the public transmission operator to reserve connection capacity for electricity-intensive industrial and digital projects, and allows the operator to charge an additional contribution to cover operating measures, with calculation principles subject to approval by the energy regulator (CRE). Article 35 IV is marked as declared unconstitutional by the Conseil constitutionnel decision cited in the text. Article 59 requires the CNIL to promote innovation in artificial intelligence when using its instruments and in its missions. The text gives no general sanction regime for these provisions."
+ },
+ "relations": [
+  {
+   "relation": "enacted_by_bill",
+   "target_text": "Projet de loi n° 550 (2023-2024) (Senate bill)",
+   "note": "Bill reference from the travaux préparatoires list at the end of the text.",
+   "evidence": {
+    "provision": "Travaux préparatoires (Sénat)",
+    "quote": "Projet de loi n° 550 (2023-2024)"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Code de l'urbanisme",
+   "note": "Art. 35 I adds L. 152-5-3 and amends L. 300-6-2, which covers data centres as projects of national major interest (I bis).",
+   "evidence": {
+    "provision": "Art. 35 I",
+    "quote": "I. - Le code de l'urbanisme est ainsi modifié :"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Code de l'environnement",
+   "note": "Art. 35 II deletes the word industriel in L. 411-2-1; many other provisions amend it (e.g. Art. 42, Art. 44).",
+   "evidence": {
+    "provision": "Art. 35 II",
+    "quote": "A la première phrase du dernier alinéa de l'article L. 411-2-1 du code de l'environnement"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Code de l'énergie",
+   "note": "Art. 40 I inserts L. 342-9-1 (connection deadlines for mobile antennas). Art. 35 V refers to L. 342-12 of this code.",
+   "evidence": {
+    "provision": "Art. 40 I",
+    "quote": "Après l'article L. 342-9 du code de l'énergie, il est inséré un article L. 342-9-1 ainsi rédigé :"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Loi n° 2023-175 du 10 mars 2023 relative à l'accélération de la production d'énergies renouvelables",
+   "note": "Art. 35 III adjusts references in Articles 27 and 28 of this law to projects of national major interest.",
+   "evidence": {
+    "provision": "Art. 35 III",
+    "quote": "La loi n° 2023-175 du 10 mars 2023 relative à l'accélération de la production d'énergies renouvelables est ainsi modifiée :"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Code minier",
+   "note": "Art. 43 I amends the mining code (concessions, exploration, mining titles). Art. 43 II also amends the environment code.",
+   "evidence": {
+    "provision": "Art. 43 I",
+    "quote": "Le code minier est ainsi modifié :"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Code de la construction et de l'habitation",
+   "note": "Art. 5 XI repeals and amends several articles (L. 122-1, L. 123-3, L. 126-31, L. 126-37). Art. 71 also amends L. 122-3.",
+   "evidence": {
+    "provision": "Art. 5 XI",
+    "quote": "XI. - Le code de la construction et de l'habitation est ainsi modifié :"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Code des assurances",
+   "note": "Art. 30 I amends the insurance code (termination rights, claims handling, expert procedures). Arts. 31 to 34 also amend it.",
+   "evidence": {
+    "provision": "Art. 30 I",
+    "quote": "I. - Le livre Ier du code des assurances est ainsi modifié :"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Code de commerce",
+   "note": "Art. 22 I and Art. 26 II amend the commercial code (works council, merger control thresholds and penalties are in other articles).",
+   "evidence": {
+    "provision": "Art. 22 I",
+    "quote": "I. - Le code de commerce est ainsi modifié :"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Code de la commande publique",
+   "note": "Art. 12 I amends the public procurement code (dematerialisation platform, lot reservation, innovative contracts).",
+   "evidence": {
+    "provision": "Art. 12 I",
+    "quote": "I. - Le code de la commande publique est ainsi modifié :"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Code de la santé publique",
+   "note": "Art. 54 I amends the public health code (research on persons, health data reuse, clinical trial rules).",
+   "evidence": {
+    "provision": "Art. 54 I",
+    "quote": "I. - Le code de la santé publique est ainsi modifié :"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Code des postes et des communications électroniques",
+   "note": "Art. 39 I amends the electronic communications code (mobile infrastructure sharing, new Art. L. 34-9-1-1). Art. 41 I inserts L. 33-6-1 to L. 33-6-5.",
+   "evidence": {
+    "provision": "Art. 39 I",
+    "quote": "I. - Le code des postes et des communications électroniques est ainsi modifié :"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Code général des impôts",
+   "note": "Art. 6 I amends the tax code (Art. 238 bis, Art. 1729 B). Art. 5 VI repeals Art. 1003.",
+   "evidence": {
+    "provision": "Art. 6 I",
+    "quote": "I. - Le code général des impôts est ainsi modifié :"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Code de justice administrative",
+   "note": "Art. 28 amends the administrative justice code (honorary magistrates, sitting formations).",
+   "evidence": {
+    "provision": "Art. 28",
+    "quote": "Le code de justice administrative est ainsi modifié :"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Code des relations entre le public et l'administration",
+   "note": "Art. 25 I amends the public-administration relations code (mediation, interruption of time limits). Art. 59 II also amends it (access to documents).",
+   "evidence": {
+    "provision": "Art. 25 I",
+    "quote": "I. - Le code des relations entre le public et l'administration est ainsi modifié :"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Code du travail",
+   "note": "Art. 5 X amends the labour code (employer groupings, social and economic committees, works council rules).",
+   "evidence": {
+    "provision": "Art. 5 X",
+    "quote": "X. - Le code du travail est ainsi modifié :"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Loi n° 78-17 du 6 janvier 1978 relative à l'informatique, aux fichiers et aux libertés",
+   "note": "Art. 54 II amends the data protection law (reference frameworks, authorisations, research). Art. 59 I and Art. 60 1° also amend it, including CNIL innovation duties in AI.",
+   "evidence": {
+    "provision": "Art. 54 II",
+    "quote": "La loi n° 78-17 du 6 janvier 1978 relative à l'informatique, aux fichiers et aux libertés est ainsi modifiée :"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Loi n° 2022-217 du 21 février 2022 relative à la différenciation, la décentralisation, la déconcentration et portant diverses mesures de simplification de l'action publique locale",
+   "note": "Art. 66 amends Art. 97 of the 2022 law (commercial urban planning experiment).",
+   "evidence": {
+    "provision": "Art. 66",
+    "quote": "L'article 97 de la loi n° 2022-217 du 21 février 2022 relative à la différenciation, la décentralisation, la déconcentration et portant diverses mesures de simplification de l'action publique locale est ainsi modifié :"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Loi n° 2016-1087 du 8 août 2016 pour la reconquête de la biodiversité, de la nature et des paysages",
+   "note": "Art. 1 XIV deletes words in Art. 70.",
+   "evidence": {
+    "provision": "Art. 1 XIV",
+    "quote": "A l'article 70 de la loi n° 2016-1087 du 8 août 2016 pour la reconquête de la biodiversité, de la nature et des paysages"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Loi n° 2014-856 du 31 juillet 2014 relative à l'économie sociale et solidaire",
+   "note": "Art. 1 XXV deletes the words en Conseil d'Etat in Art. 3 III and Art. 4 VII.",
+   "evidence": {
+    "provision": "Art. 1 XXV",
+    "quote": "A la première phrase du III de l'article 3 et à la première phrase du VII de l'article 4 de la loi n° 2014-856 du 31 juillet 2014 relative à l'économie sociale et solidaire"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Loi n° 2013-316 du 16 avril 2013 relative à l'indépendance de l'expertise en matière de santé et d'environnement et à la protection des lanceurs d'alerte",
+   "note": "Art. 1 XXIII A repeals Art. 2 and Arts. 4 to 7 and amends Art. 3.",
+   "evidence": {
+    "provision": "Art. 1 XXIII A",
+    "quote": "A. - La loi n° 2013-316 du 16 avril 2013 relative à l'indépendance de l'expertise en matière de santé et d'environnement et à la protection des lanceurs d'alerte est ainsi modifiée :"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Loi n° 93-20 du 7 janvier 1993 relative à l'institution d'une garantie de l'Etat pour certaines expositions temporaires d'œuvres d'art",
+   "note": "Art. 1 XXI repeals Art. 2 and amends Art. 3.",
+   "evidence": {
+    "provision": "Art. 1 XXI",
+    "quote": "La loi n° 93-20 du 7 janvier 1993 relative à l'institution d'une garantie de l'Etat pour certaines expositions temporaires d'œuvres d'art est ainsi modifiée :"
+   }
+  },
+  {
+   "relation": "repeals",
+   "target_text": "Loi n° 2017-256 du 28 février 2017 de programmation relative à l'égalité réelle outre-mer",
+   "note": "Repeals Art. 113 III of the 2017 law.",
+   "evidence": {
+    "provision": "Art. 2",
+    "quote": "Le III de l'article 113 de la loi n° 2017-256 du 28 février 2017 de programmation relative à l'égalité réelle outre-mer"
+   }
+  },
+  {
+   "relation": "repeals",
+   "target_text": "Loi n° 2020-289 du 23 mars 2020 de finances rectificative pour 2020",
+   "note": "Repeals Art. 6 IX of the 2020 finance law.",
+   "evidence": {
+    "provision": "Art. 3",
+    "quote": "Le IX de l'article 6 de la loi n° 2020-289 du 23 mars 2020 de finances rectificative pour 2020 est abrogé."
+   }
+  },
+  {
+   "relation": "repeals",
+   "target_text": "Loi n° 2005-882 du 2 août 2005 en faveur des petites et moyennes entreprises",
+   "note": "Repeals Art. 60-1 of the 2005 law.",
+   "evidence": {
+    "provision": "Art. 1 XX",
+    "quote": "L'article 60-1 de la loi n° 2005-882 du 2 août 2005 en faveur des petites et moyennes entreprises est abrogé."
+   }
+  },
+  {
+   "relation": "repeals",
+   "target_text": "Loi n° 2010-873 du 27 juillet 2010 relative à l'action extérieure de l'Etat",
+   "note": "Repeals Art. 10 of the 2010 law.",
+   "evidence": {
+    "provision": "Art. 1 XXII",
+    "quote": "L'article 10 de la loi n° 2010-873 du 27 juillet 2010 relative à l'action extérieure de l'Etat est abrogé."
+   }
+  },
+  {
+   "relation": "repeals",
+   "target_text": "Loi n° 2018-202 du 26 mars 2018 relative à l'organisation des jeux Olympiques et Paralympiques de 2024",
+   "note": "Repeals Art. 28 of the 2018 law.",
+   "evidence": {
+    "provision": "Art. 1 XXVI",
+    "quote": "L'article 28 de la loi n° 2018-202 du 26 mars 2018 relative à l'organisation des jeux Olympiques et Paralympiques de 2024 est abrogé."
+   }
+  },
+  {
+   "relation": "repeals",
+   "target_text": "Loi n° 2020-546 du 11 mai 2020 prorogeant l'état d'urgence sanitaire et complétant ses dispositions",
+   "note": "Repeals Art. 11 VIII of the 2020 law.",
+   "evidence": {
+    "provision": "Art. 1 XXVII",
+    "quote": "Le VIII de l'article 11 de la loi n° 2020-546 du 11 mai 2020 prorogeant l'état d'urgence sanitaire et complétant ses dispositions est abrogé."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Loi n° 2008-776 du 4 août 2008 de modernisation de l'économie (Art. 51, definition of micro-enterprises)",
+   "note": "Art. 29 I 3° a adds micro-enterprises as defined in Art. 51 of the 2008 law to the rules on savings accounts (Art. L. 314-7 CMF). Art. 30 I 3° uses the same definition for SMEs and microenterprises.",
+   "evidence": {
+    "provision": "Art. 29 I 3° a",
+    "quote": "aux microentreprises au sens de l'article 51 de la loi n° 2008-776 du 4 août 2008 de modernisation de l'économie"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Règlement (UE) n° 651/2014 de la Commission du 17 juin 2014 (Annex I, SME category)",
+   "note": "Art. 8 uses the SME category in Annex I to the EU regulation to set the tax-authority silence rule.",
+   "evidence": {
+    "provision": "Art. 8",
+    "quote": "l'annexe I au règlement (UE) n° 651/2014 de la Commission du 17 juin 2014"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Règlement (UE) 2016/679 (General Data Protection Regulation)",
+   "note": "Art. 54 I 1° c requires remote quality control or insurance to respect the GDPR. Art. 54 I 4° b and Art. 54 II 3° also refer to it.",
+   "evidence": {
+    "provision": "Art. 54 I 1° c",
+    "quote": "elles respectent le règlement (UE) n° 2016/679 du Parlement européen et du Conseil du 27 avril 2016"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive (UE) 2023/1791 du Parlement européen et du Conseil du 13 septembre 2023 relative à l'efficacité énergétique",
+   "note": "Art. 46 uses the directive's definition of efficient district heating and cooling to define an exemption from urban planning rules.",
+   "evidence": {
+    "provision": "Art. 46",
+    "quote": "au sens de la directive (UE) 2023/1791 du Parlement européen et du Conseil du 13 septembre 2023 relative à l'efficacité énergétique"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Loi organique n° 2011-333 du 29 mars 2011 relative au Défenseur des droits",
+   "note": "Art. 25 I 1° e refers to mediation by the Défenseur des droits under this organic law.",
+   "evidence": {
+    "provision": "Art. 25 I 1° e",
+    "quote": "dans les cas et les conditions prévus par la loi organique n° 2011-333 du 29 mars 2011 relative au Défenseur des droits"
+   }
+  }
+ ],
+ "notes": "Relations cover the whole law (all titles), not only the data-centre article. The data-centre provisions are Art. 35 I 3° b (new I bis of L. 300-6-2 of the urban planning code, which allows a decree to qualify a data centre as a project of national major interest and allows refusal of a building permit in water-stressed areas) and Art. 35 V (grid capacity reservation). Art. 35 IV is marked as struck down by the Conseil constitutionnel and is not coded. Many articles carry the bracketed note 'Dispositions déclarées non conforme à la Constitution' and their text is not coded. Inconsistency: the preamble cites decision n° 2026-903 DC 'du 21 mars 2026', while the bracketed notes and the publication note give 'du 21 mai 2026'. The relations list is not exhaustive: minor amendments and repeals in other codes (e.g. code de la défense, code de l'éducation, code des transports, code de la sécurité sociale, code rural, code de la route) are not individually recorded. Art. 35 V cites L. 342-12 of the energy code, recorded under the energy code amendment row. target_instrument_id is left empty because no registry IDs were supplied.",
+ "events": [
+  {
+   "event": "published",
+   "date": "2026-05-27",
+   "date_type": "absolute",
+   "date_text": "JORF n°0122 du 27 mai 2026",
+   "applies_to": "Loi n° 2026-403",
+   "evidence": {
+    "provision": "En-tête",
+    "quote": "JORF n°0122 du 27 mai 2026"
+   }
+  },
+  {
+   "event": "signed",
+   "date": "2026-05-26",
+   "date_type": "absolute",
+   "date_text": "Fait à Paris, le 26 mai 2026.",
+   "applies_to": "Loi n° 2026-403 (promulgation)",
+   "evidence": {
+    "provision": "Dernier alinéa (signature)",
+    "quote": "Fait à Paris, le 26 mai 2026."
+   }
+  },
+  {
+   "event": "introduced",
+   "date": null,
+   "date_type": "not_stated",
+   "date_text": "Projet de loi n° 550 (2023-2024)",
+   "applies_to": "Sénat (first reading)",
+   "evidence": {
+    "provision": "Travaux préparatoires",
+    "quote": "Projet de loi n° 550 (2023-2024)"
+   }
+  },
+  {
+   "event": "passed_chamber",
+   "date": "2024-10-22",
+   "date_type": "absolute",
+   "date_text": "adoption, après engagement de la procédure accélérée, le 22 octobre 2024 (TA n° 8, 2024-2025)",
+   "applies_to": "Sénat (first reading)",
+   "evidence": {
+    "provision": "Travaux préparatoires",
+    "quote": "adoption, après engagement de la procédure accélérée, le 22 octobre 2024 (TA n° 8, 2024-2025)"
+   }
+  },
+  {
+   "event": "passed_chamber",
+   "date": "2025-06-17",
+   "date_type": "absolute",
+   "date_text": "et adoption le 17 juin 2025 (TA n° 144)",
+   "applies_to": "Assemblée nationale (first reading)",
+   "evidence": {
+    "provision": "Travaux préparatoires",
+    "quote": "et adoption le 17 juin 2025 (TA n° 144)"
+   }
+  },
+  {
+   "event": "passed_chamber",
+   "date": "2026-04-14",
+   "date_type": "absolute",
+   "date_text": "Discussion et adoption le 14 avril 2026 (TA n° 273).",
+   "applies_to": "Assemblée nationale (commission mixte paritaire text)",
+   "evidence": {
+    "provision": "Travaux préparatoires",
+    "quote": "Discussion et adoption le 14 avril 2026 (TA n° 273)."
+   }
+  },
+  {
+   "event": "legislative_approval",
+   "date": "2026-04-15",
+   "date_type": "absolute",
+   "date_text": "Discussion et adoption le 15 avril 2026 (TA n° 95, 2025-2026).",
+   "applies_to": "Sénat (final adoption of commission mixte paritaire text)",
+   "evidence": {
+    "provision": "Travaux préparatoires",
+    "quote": "Discussion et adoption le 15 avril 2026 (TA n° 95, 2025-2026)."
+   }
+  },
+  {
+   "event": "constitutional_review",
+   "date": "2026-05-21",
+   "date_type": "absolute",
+   "date_text": "Décision n° 2026-903 DC du 21 mai 2026 publiée au Journal officiel de ce jour.",
+   "applies_to": "Loi n° 2026-403",
+   "evidence": {
+    "provision": "Travaux préparatoires",
+    "quote": "Décision n° 2026-903 DC du 21 mai 2026 publiée au Journal officiel de ce jour."
+   }
+  },
+  {
+   "event": "constitutional_review",
+   "date": "2026-03-21",
+   "date_type": "absolute",
+   "date_text": "Vu la décision du Conseil constitutionnel n° 2026-903 DC du 21 mars 2026",
+   "applies_to": "Loi n° 2026-403 (cited in visas; conflicts with 21 mai 2026 in body)",
+   "evidence": {
+    "provision": "Visas (préambule)",
+    "quote": "Vu la décision du Conseil constitutionnel n° 2026-903 DC du 21 mars 2026"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2027-05-26",
+   "date_type": "relative",
+   "date_text": "Dans un délai d'un an à compter de la promulgation de la présente loi",
+   "anchor": "promulgation de la présente loi",
+   "applies_to": "Government report on ad hoc councils",
+   "offset_value": 1,
+   "offset_unit": "years",
+   "anchor_event": "signed",
+   "evidence": {
+    "provision": "Art. 1 XXVIII",
+    "quote": "Dans un délai d'un an à compter de la promulgation de la présente loi"
+   },
+   "date_computed_from": "signed 2026-05-26 (text) + 1 years"
+  },
+  {
+   "event": "sunset",
+   "date": "2029-05-26",
+   "date_type": "relative",
+   "date_text": "sont créées pour une durée de trois ans",
+   "anchor": "promulgation de la présente loi",
+   "applies_to": "Commissions and consultative bodies created by statute and placed with the Prime Minister or a minister",
+   "offset_value": 3,
+   "offset_unit": "years",
+   "anchor_event": "signed",
+   "evidence": {
+    "provision": "Art. 4",
+    "quote": "sont créées pour une durée de trois ans"
+   },
+   "date_computed_from": "signed 2026-05-26 (text) + 3 years"
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2026-07-01",
+   "date_type": "absolute",
+   "date_text": "Les 1° à 3° du VIII du présent article entrent en vigueur le 1er juillet 2026.",
+   "applies_to": "Art. 5 VIII 1° to 3°",
+   "evidence": {
+    "provision": "Art. 5 XV",
+    "quote": "Les 1° à 3° du VIII du présent article entrent en vigueur le 1er juillet 2026."
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2027-01-01",
+   "date_type": "absolute",
+   "date_text": "Le 7° du X entre en vigueur le 1er janvier 2027.",
+   "applies_to": "Art. 5 X 7° (employment: groupement d'employeurs)",
+   "evidence": {
+    "provision": "Art. 5 XV",
+    "quote": "Le 7° du X entre en vigueur le 1er janvier 2027."
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2027-01-01",
+   "date_type": "absolute",
+   "date_text": "Les I et II du présent article entrent en vigueur le 1er janvier 2027.",
+   "applies_to": "Art. 6 I and II (corporate patronage reporting and tax provisions)",
+   "evidence": {
+    "provision": "Art. 6 III",
+    "quote": "Les I et II du présent article entrent en vigueur le 1er janvier 2027."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2030-12-31",
+   "date_type": "absolute",
+   "date_text": "au plus tard le 31 décembre 2030",
+   "applies_to": "Art. 12 I (electronic platform use by public buyers)",
+   "evidence": {
+    "provision": "Art. 12 II",
+    "quote": "au plus tard le 31 décembre 2030"
+   }
+  },
+  {
+   "event": "application",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "s'applique à compter d'une date déterminée par décret pour chaque catégorie d'acheteurs",
+   "depends_on": "décret pour chaque catégorie d'acheteurs et d'autorités concédantes",
+   "applies_to": "Art. 12 I (electronic platform use by public buyers and concession authorities)",
+   "evidence": {
+    "provision": "Art. 12 II",
+    "quote": "s'applique à compter d'une date déterminée par décret pour chaque catégorie d'acheteurs"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2027-01-01",
+   "date_type": "absolute",
+   "date_text": "Le I entre en vigueur le 1er janvier 2027",
+   "applies_to": "Art. 13 I (works contracts without prior advertising below EU threshold); procedures launched from that date",
+   "evidence": {
+    "provision": "Art. 13 II",
+    "quote": "Le I entre en vigueur le 1er janvier 2027"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2026-05-28",
+   "date_type": "relative",
+   "date_text": "Le I entre en vigueur le lendemain de la publication de la présente loi",
+   "anchor": "publication de la présente loi",
+   "applies_to": "Art. 14 I (reserved lots for young innovative companies)",
+   "offset_value": 1,
+   "offset_unit": "days",
+   "anchor_event": "published",
+   "evidence": {
+    "provision": "Art. 14 II",
+    "quote": "Le I entre en vigueur le lendemain de la publication de la présente loi"
+   },
+   "date_computed_from": "published 2026-05-27 (text) + 1 days"
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2026-05-27",
+   "date_type": "relative",
+   "date_text": "Le I entre en vigueur le lendemain de la promulgation de la présente loi",
+   "anchor": "promulgation de la présente loi",
+   "applies_to": "Art. 15 I (defence and security procurement lots)",
+   "offset_value": 1,
+   "offset_unit": "days",
+   "anchor_event": "signed",
+   "evidence": {
+    "provision": "Art. 15 II",
+    "quote": "Le I entre en vigueur le lendemain de la promulgation de la présente loi"
+   },
+   "date_computed_from": "signed 2026-05-26 (text) + 1 days"
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2026-07-01",
+   "date_type": "absolute",
+   "date_text": "Le I entre en vigueur le 1er juillet 2026",
+   "applies_to": "Art. 16 I (innovative works, supplies or services without prior advertising)",
+   "evidence": {
+    "provision": "Art. 16 II",
+    "quote": "Le I entre en vigueur le 1er juillet 2026"
+   }
+  },
+  {
+   "event": "application",
+   "date": "2026-07-26",
+   "date_type": "relative",
+   "date_text": "s'applique aux ventes conclues deux mois au moins après la promulgation de la présente loi",
+   "anchor": "promulgation de la présente loi",
+   "applies_to": "Art. 22 I (sales of business goodwill; social and economic committee)",
+   "offset_value": 2,
+   "offset_unit": "months",
+   "anchor_event": "signed",
+   "evidence": {
+    "provision": "Art. 22 II",
+    "quote": "s'applique aux ventes conclues deux mois au moins après la promulgation de la présente loi"
+   },
+   "date_computed_from": "signed 2026-05-26 (text) + 2 months"
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2026-09-27",
+   "date_type": "relative",
+   "date_text": "Le I entre en vigueur le premier jour du quatrième mois suivant celui de la publication de la présente loi",
+   "anchor": "publication de la présente loi",
+   "applies_to": "Art. 24 I (merger notification thresholds, L. 430-2 Code de commerce)",
+   "offset_value": 4,
+   "offset_unit": "months",
+   "anchor_event": "published",
+   "evidence": {
+    "provision": "Art. 24 II",
+    "quote": "Le I entre en vigueur le premier jour du quatrième mois suivant celui de la publication de la présente loi"
+   },
+   "date_computed_from": "published 2026-05-27 (text) + 4 months"
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2027-01-01",
+   "date_type": "absolute",
+   "date_text": "Le 2° et le b du 3° du I du présent article entrent en vigueur le 1er janvier 2027.",
+   "applies_to": "Art. 29 I 2° and I 3° b",
+   "evidence": {
+    "provision": "Art. 29 II",
+    "quote": "Le 2° et le b du 3° du I du présent article entrent en vigueur le 1er janvier 2027."
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2027-05-26",
+   "date_type": "relative",
+   "date_text": "Le a du 3° et le 5° du même I entrent en vigueur un an après la promulgation de la présente loi.",
+   "anchor": "promulgation de la présente loi",
+   "applies_to": "Art. 29 I 3° a and I 5°",
+   "offset_value": 1,
+   "offset_unit": "years",
+   "anchor_event": "signed",
+   "evidence": {
+    "provision": "Art. 29 II",
+    "quote": "Le a du 3° et le 5° du même I entrent en vigueur un an après la promulgation de la présente loi."
+   },
+   "date_computed_from": "signed 2026-05-26 (text) + 1 years"
+  },
+  {
+   "event": "application",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "s'appliquent aux contrats conclus ou tacitement reconduits à compter de la publication du décret en Conseil d'Etat mentionné à l'article L. 113-15-2-1",
+   "depends_on": "décret en Conseil d'Etat mentionné à l'article L. 113-15-2-1 du code des assurances",
+   "applies_to": "Art. 30 I 3° and I 5° (insurance contracts for microenterprises and SMEs)",
+   "evidence": {
+    "provision": "Art. 30 III A",
+    "quote": "s'appliquent aux contrats conclus ou tacitement reconduits à compter de la publication du décret en Conseil d'Etat mentionné à l'article L. 113-15-2-1"
+   }
+  },
+  {
+   "event": "application",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "s'applique aux contrats conclus ou tacitement reconduits à compter de la publication du décret en Conseil d'Etat mentionné au IV de l'article L. 121-18",
+   "depends_on": "décret en Conseil d'Etat mentionné au IV de l'article L. 121-18 du code des assurances",
+   "applies_to": "Art. 30 I 4° (new L. 121-18 Code des assurances)",
+   "evidence": {
+    "provision": "Art. 30 III B",
+    "quote": "s'applique aux contrats conclus ou tacitement reconduits à compter de la publication du décret en Conseil d'Etat mentionné au IV de l'article L. 121-18"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "dans un délai de deux ans à compter de la publication du décret en Conseil d'Etat mentionné à l'article L. 121-18 du code des assurances",
+   "depends_on": "décret en Conseil d'Etat mentionné à l'article L. 121-18 du code des assurances",
+   "applies_to": "Government report on the claims-handling time limits",
+   "offset_value": 2,
+   "offset_unit": "years",
+   "evidence": {
+    "provision": "Art. 30 IV",
+    "quote": "dans un délai de deux ans à compter de la publication du décret en Conseil d'Etat mentionné à l'article L. 121-18 du code des assurances"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "dans un délai de six mois à compter de la déclaration du sinistre",
+   "anchor": "déclaration du sinistre",
+   "applies_to": "Insurer appointing an expert (L. 121-18 I, Code des assurances)",
+   "offset_value": 6,
+   "offset_unit": "months",
+   "evidence": {
+    "provision": "Art. 30 I 4°",
+    "quote": "dans un délai de six mois à compter de la déclaration du sinistre"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "dans un délai de deux mois à compter de la déclaration du sinistre",
+   "anchor": "déclaration du sinistre",
+   "applies_to": "Insurer not appointing an expert (L. 121-18 I, Code des assurances)",
+   "offset_value": 2,
+   "offset_unit": "months",
+   "evidence": {
+    "provision": "Art. 30 I 4°",
+    "quote": "dans un délai de deux mois à compter de la déclaration du sinistre"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "dans un délai de trente jours à compter de la date de résiliation",
+   "anchor": "date de résiliation",
+   "applies_to": "Insurer refund of premium balance (L. 113-15-2-1, Code des assurances)",
+   "offset_value": 30,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Art. 30 I 3°",
+    "quote": "dans un délai de trente jours à compter de la date de résiliation"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "l'assureur lui notifie la résiliation au moins six mois avant l'échéance du contrat",
+   "anchor": "échéance du contrat",
+   "applies_to": "Local authority insured: notice of termination (L. 113-12, Code des assurances)",
+   "offset_value": -6,
+   "offset_unit": "months",
+   "evidence": {
+    "provision": "Art. 30 I 1° a",
+    "quote": "l'assureur lui notifie la résiliation au moins six mois avant l'échéance du contrat"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "Le bureau central de tarification statue dans un délai de trois mois sur les demandes qui lui sont adressées.",
+   "anchor": "saisine du bureau central de tarification",
+   "applies_to": "Bureau central de tarification (Art. 34 1° b, 3° b, 4° c, 6°)",
+   "offset_value": 3,
+   "offset_unit": "months",
+   "evidence": {
+    "provision": "Art. 34 1° b",
+    "quote": "Le bureau central de tarification statue dans un délai de trois mois sur les demandes qui lui sont adressées."
+   }
+  },
+  {
+   "event": "application",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "peut également être qualifié par décret de projet d'intérêt national majeur",
+   "depends_on": "décret",
+   "applies_to": "Data centres (centre de données) qualified by decree as projets d'intérêt national majeur",
+   "evidence": {
+    "provision": "Art. 35 I 3° b (art. L. 300-6-2 I bis, Code de l'urbanisme)",
+    "quote": "peut également être qualifié par décret de projet d'intérêt national majeur"
+   }
+  },
+  {
+   "event": "application",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "Ce décret prévoit également les modalités selon lesquelles l'autorité de l'Etat qui a prononcé la déclaration de projet peut statuer",
+   "depends_on": "décret en Conseil d'Etat",
+   "applies_to": "Projects with a déclaration de projet made before promulgation (raison impérative d'intérêt public majeur recognition)",
+   "evidence": {
+    "provision": "Art. 36 I",
+    "quote": "Ce décret prévoit également les modalités selon lesquelles l'autorité de l'Etat qui a prononcé la déclaration de projet peut statuer"
+   }
+  },
+  {
+   "event": "application",
+   "date": "2026-05-27",
+   "date_type": "relative",
+   "date_text": "Les b et c du 2° du I sont applicables aux dossiers d'information transmis à compter de la publication de la présente loi.",
+   "anchor": "publication de la présente loi",
+   "applies_to": "Art. 39 I 2° b and c (information files for mobile telephony sites)",
+   "offset_value": 0,
+   "offset_unit": "days",
+   "anchor_event": "published",
+   "evidence": {
+    "provision": "Art. 39 V",
+    "quote": "Les b et c du 2° du I sont applicables aux dossiers d'information transmis à compter de la publication de la présente loi."
+   },
+   "date_computed_from": "published 2026-05-27 (text) + 0 days"
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "ne peut excéder cinq mois à compter de l'acceptation, par le demandeur, de la convention de raccordement",
+   "anchor": "acceptation par le demandeur de la convention de raccordement",
+   "applies_to": "Connection of mobile radio antennas to the distribution network (L. 342-9-1 Code de l'énergie)",
+   "offset_value": 5,
+   "offset_unit": "months",
+   "evidence": {
+    "provision": "Art. 40 I",
+    "quote": "ne peut excéder cinq mois à compter de l'acceptation, par le demandeur, de la convention de raccordement"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "La proposition de convention de raccordement lui est adressée dans un délai d'un mois à compter de la réception de la demande complète.",
+   "anchor": "réception de la demande complète",
+   "applies_to": "Distribution network operator: connection agreement proposal (L. 342-9-1 Code de l'énergie)",
+   "offset_value": 1,
+   "offset_unit": "months",
+   "evidence": {
+    "provision": "Art. 40 I",
+    "quote": "La proposition de convention de raccordement lui est adressée dans un délai d'un mois à compter de la réception de la demande complète."
+   }
+  },
+  {
+   "event": "application",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "présentées à compter de l'entrée en vigueur de la loi n° 2026-403 du 26 mai 2026",
+   "depends_on": "entrée en vigueur de la loi n° 2026-403 (no date stated in the text)",
+   "applies_to": "Requests for connection of mobile radio antennas to the distribution network (L. 111-11-1 Code de l'urbanisme)",
+   "evidence": {
+    "provision": "Art. 40 II",
+    "quote": "présentées à compter de l'entrée en vigueur de la loi n° 2026-403 du 26 mai 2026"
+   }
+  },
+  {
+   "event": "application",
+   "date": "2026-05-26",
+   "date_type": "relative",
+   "date_text": "réalisés à compter de la promulgation de la loi n° 2026-403 du 26 mai 2026 de simplification de la vie économique",
+   "anchor": "promulgation de la présente loi",
+   "applies_to": "Private connection branches and infrastructure built after promulgation (L. 33-6-1 CPCE)",
+   "offset_value": 0,
+   "offset_unit": "days",
+   "anchor_event": "signed",
+   "evidence": {
+    "provision": "Art. 41 I",
+    "quote": "réalisés à compter de la promulgation de la loi n° 2026-403 du 26 mai 2026 de simplification de la vie économique"
+   },
+   "date_computed_from": "signed 2026-05-26 (text) + 0 days"
+  },
+  {
+   "event": "deadline",
+   "date": "2027-05-26",
+   "date_type": "relative",
+   "date_text": "dans un délai d'un an à compter de cette promulgation",
+   "anchor": "promulgation de la présente loi",
+   "applies_to": "Claim of ownership of connection branches built before promulgation (L. 33-6-3 CPCE)",
+   "offset_value": 1,
+   "offset_unit": "years",
+   "anchor_event": "signed",
+   "evidence": {
+    "provision": "Art. 41 I (art. L. 33-6-3 CPCE)",
+    "quote": "dans un délai d'un an à compter de cette promulgation"
+   },
+   "date_computed_from": "signed 2026-05-26 (text) + 1 years"
+  },
+  {
+   "event": "application",
+   "date": "2024-07-01",
+   "date_type": "absolute",
+   "date_text": "est déposée entre le 1er juillet 2024 et la promulgation de la présente loi",
+   "applies_to": "Option for applications for mining concessions or exclusive research permits filed in that window",
+   "evidence": {
+    "provision": "Art. 43 III",
+    "quote": "est déposée entre le 1er juillet 2024 et la promulgation de la présente loi"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "Le présent article entre en vigueur à une date fixée par décret en Conseil d'Etat, et au plus tard le 31 décembre 2027.",
+   "depends_on": "décret en Conseil d'Etat",
+   "applies_to": "Art. 44 (domestic groundwater declarations)",
+   "evidence": {
+    "provision": "Art. 44 VI",
+    "quote": "Le présent article entre en vigueur à une date fixée par décret en Conseil d'Etat, et au plus tard le 31 décembre 2027."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2027-12-31",
+   "date_type": "absolute",
+   "date_text": "au plus tard le 31 décembre 2027",
+   "applies_to": "Latest entry into force of Art. 44",
+   "evidence": {
+    "provision": "Art. 44 VI",
+    "quote": "au plus tard le 31 décembre 2027"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "fournit, dans un délai d'un an à compter de cette date, la déclaration préalable",
+   "anchor": "entrée en vigueur du présent article",
+   "applies_to": "Existing domestic groundwater works: prior declaration (L. 411-1 Code minier)",
+   "offset_value": 1,
+   "offset_unit": "years",
+   "anchor_event": "entry_into_force",
+   "evidence": {
+    "provision": "Art. 44 V",
+    "quote": "fournit, dans un délai d'un an à compter de cette date, la déclaration préalable"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2027-11-26",
+   "date_type": "relative",
+   "date_text": "Le c du 3° du II du présent article entre en vigueur dix-huit mois après la promulgation de la présente loi.",
+   "anchor": "promulgation de la présente loi",
+   "applies_to": "Art. 54 II 3° c (CNIL data-processing repositories)",
+   "offset_value": 18,
+   "offset_unit": "months",
+   "anchor_event": "signed",
+   "evidence": {
+    "provision": "Art. 54 III",
+    "quote": "Le c du 3° du II du présent article entre en vigueur dix-huit mois après la promulgation de la présente loi."
+   },
+   "date_computed_from": "signed 2026-05-26 (text) + 18 months"
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "dans un délai de trois mois, renouvelable une fois",
+   "anchor": "autorisation de la CNIL ou engagement de conformité",
+   "applies_to": "Controller holding the data: making data available (art. 66 VI, loi n° 78-17)",
+   "offset_value": 3,
+   "offset_unit": "months",
+   "evidence": {
+    "provision": "Art. 54 II 3° c (art. 66 VI, loi n° 78-17)",
+    "quote": "dans un délai de trois mois, renouvelable une fois"
+   }
+  },
+  {
+   "event": "application",
+   "date": "2026-05-26",
+   "date_type": "relative",
+   "date_text": "n'est applicable qu'aux mutations intervenant après la promulgation de la présente loi",
+   "anchor": "promulgation de la présente loi",
+   "applies_to": "Art. 61 I (commercial and artisanal premises definition; transfers after promulgation)",
+   "offset_value": 0,
+   "offset_unit": "days",
+   "anchor_event": "signed",
+   "evidence": {
+    "provision": "Art. 61 II",
+    "quote": "n'est applicable qu'aux mutations intervenant après la promulgation de la présente loi"
+   },
+   "date_computed_from": "signed 2026-05-26 (text) + 0 days"
+  },
+  {
+   "event": "application",
+   "date": "2026-05-26",
+   "date_type": "relative",
+   "date_text": "Le 2° du I est applicable aux baux en cours d'exécution à la date de la promulgation de la présente loi.",
+   "anchor": "promulgation de la présente loi",
+   "applies_to": "Art. 62 I 2° (monthly rent payment on request; leases in force)",
+   "offset_value": 0,
+   "offset_unit": "days",
+   "anchor_event": "signed",
+   "evidence": {
+    "provision": "Art. 62 II A",
+    "quote": "Le 2° du I est applicable aux baux en cours d'exécution à la date de la promulgation de la présente loi."
+   },
+   "date_computed_from": "signed 2026-05-26 (text) + 0 days"
+  },
+  {
+   "event": "application",
+   "date": "2026-05-26",
+   "date_type": "relative",
+   "date_text": "Le deuxième alinéa du 4° du même I est applicable aux baux conclus ou renouvelés à compter de la promulgation de la présente loi.",
+   "anchor": "promulgation de la présente loi",
+   "applies_to": "Art. 62 I 4° second alinéa (guarantee cap); leases concluded or renewed after promulgation",
+   "offset_value": 0,
+   "offset_unit": "days",
+   "anchor_event": "signed",
+   "evidence": {
+    "provision": "Art. 62 II B",
+    "quote": "Le deuxième alinéa du 4° du même I est applicable aux baux conclus ou renouvelés à compter de la promulgation de la présente loi."
+   },
+   "date_computed_from": "signed 2026-05-26 (text) + 0 days"
+  },
+  {
+   "event": "application",
+   "date": "2026-08-26",
+   "date_type": "relative",
+   "date_text": "Le troisième alinéa du même 4° est applicable aux mutations intervenant à l'expiration d'un délai de trois mois après la promulgation de la présente loi.",
+   "anchor": "promulgation de la présente loi",
+   "applies_to": "Art. 62 I 4° third alinéa (transfers of leased premises)",
+   "offset_value": 3,
+   "offset_unit": "months",
+   "anchor_event": "signed",
+   "evidence": {
+    "provision": "Art. 62 II C",
+    "quote": "Le troisième alinéa du même 4° est applicable aux mutations intervenant à l'expiration d'un délai de trois mois après la promulgation de la présente loi."
+   },
+   "date_computed_from": "signed 2026-05-26 (text) + 3 months"
+  },
+  {
+   "event": "application",
+   "date": "2026-08-26",
+   "date_type": "relative",
+   "date_text": "lorsque la remise des clés du local pris à bail intervient à l'expiration d'un délai de trois mois après la même date",
+   "anchor": "promulgation de la présente loi",
+   "applies_to": "Art. 62 I 4° last alinéa (return of guarantees; leases in force)",
+   "offset_value": 3,
+   "offset_unit": "months",
+   "anchor_event": "signed",
+   "evidence": {
+    "provision": "Art. 62 II D",
+    "quote": "lorsque la remise des clés du local pris à bail intervient à l'expiration d'un délai de trois mois après la même date"
+   },
+   "date_computed_from": "signed 2026-05-26 (text) + 3 months"
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "dans un délai raisonnable ne pouvant excéder trois mois à compter de la remise des clés",
+   "anchor": "remise des clés",
+   "applies_to": "Refund of guarantee deposit to the tenant (L. 145-40 Code de commerce)",
+   "offset_value": 3,
+   "offset_unit": "months",
+   "evidence": {
+    "provision": "Art. 62 I 4°",
+    "quote": "dans un délai raisonnable ne pouvant excéder trois mois à compter de la remise des clés"
+   }
+  },
+  {
+   "event": "application",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "s'applique aux demandes tendant à la suspension des effets de la clause résolutoire introduites à compter de l'entrée en vigueur de la loi n° 2026-403 du 26 mai 2026",
+   "depends_on": "entrée en vigueur de la loi n° 2026-403 (no date stated in the text)",
+   "applies_to": "Applications to suspend the effects of a termination clause (L. 145-41 Code de commerce)",
+   "evidence": {
+    "provision": "Art. 63",
+    "quote": "s'applique aux demandes tendant à la suspension des effets de la clause résolutoire introduites à compter de l'entrée en vigueur de la loi n° 2026-403 du 26 mai 2026"
+   }
+  },
+  {
+   "event": "expiry",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "devient caduque si plus de cinq ans se sont écoulés entre la fermeture et la réouverture à la clientèle",
+   "anchor": "fermeture du site bénéficiant de l'autorisation initiale",
+   "applies_to": "Commercial authorisation of a temporarily transferred sales area (L. 752-1-3 Code de commerce)",
+   "offset_value": 5,
+   "offset_unit": "years",
+   "evidence": {
+    "provision": "Art. 64 1° (art. L. 752-1-3 Code de commerce)",
+    "quote": "devient caduque si plus de cinq ans se sont écoulés entre la fermeture et la réouverture à la clientèle"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2027",
+   "date_type": "absolute",
+   "date_text": "à la fin, l'année : « 2025 » est remplacée par l'année : « 2027 »",
+   "applies_to": "Art. 97 VII 1° of Law 2022-217 (year changed from 2025 to 2027)",
+   "evidence": {
+    "provision": "Art. 66 4° a",
+    "quote": "l'année : « 2025 » est remplacée par l'année : « 2027 »"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "dispose d'un délai de cinq semaines pour rendre son avis",
+   "anchor": "saisine du conseil",
+   "applies_to": "Conseil de la simplification pour les entreprises: opinion on bills and regulations under II A and II B",
+   "offset_value": 5,
+   "offset_unit": "weeks",
+   "evidence": {
+    "provision": "Art. 78 II D",
+    "quote": "dispose d'un délai de cinq semaines pour rendre son avis"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "le Premier ministre peut demander au conseil de rendre son avis sur un projet de loi dans un délai de quinze jours",
+   "anchor": "demande du Premier ministre",
+   "applies_to": "Conseil de la simplification pour les entreprises: opinion on bills requested by the Prime Minister",
+   "offset_value": 15,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Art. 78 II D",
+    "quote": "le Premier ministre peut demander au conseil de rendre son avis sur un projet de loi dans un délai de quinze jours"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "En cas d'urgence, ce délai peut être réduit à trois jours.",
+   "anchor": "demande du Premier ministre",
+   "applies_to": "Conseil de la simplification pour les entreprises: urgent opinion on bills",
+   "offset_value": 3,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Art. 78 II D",
+    "quote": "En cas d'urgence, ce délai peut être réduit à trois jours."
+   }
+  },
+  {
+   "event": "application",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "en cours à la date d'entrée en vigueur du même premier alinéa sont transférées de plein droit au juge de l'exécution",
+   "depends_on": "entrée en vigueur du premier alinéa de l'article L. 213-6 du code de l'organisation judiciaire (date not stated)",
+   "applies_to": "Pending enforcement-jurisdiction proceedings transferred to the juge de l'exécution",
+   "evidence": {
+    "provision": "Art. 82 II",
+    "quote": "en cours à la date d'entrée en vigueur du même premier alinéa sont transférées de plein droit au juge de l'exécution"
+   }
+  },
+  {
+   "event": "application",
+   "date": "2026-05-26",
+   "date_type": "relative",
+   "date_text": "est applicable aux médiations auxquelles il est recouru à compter de la promulgation de la présente loi",
+   "anchor": "promulgation de la présente loi",
+   "applies_to": "Art. 25 VII (suspension of limitation periods during mediation, L. 421-3 CRPA)",
+   "offset_value": 0,
+   "offset_unit": "days",
+   "anchor_event": "signed",
+   "evidence": {
+    "provision": "Art. 25 VII",
+    "quote": "est applicable aux médiations auxquelles il est recouru à compter de la promulgation de la présente loi"
+   },
+   "date_computed_from": "signed 2026-05-26 (text) + 0 days"
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "other",
+   "variable_text": "catégorie des micro, petites et moyennes entreprises définie à l'annexe I au règlement (UE) n° 651/2014",
+   "operator": "=",
+   "value": null,
+   "value_text": "set by annex I to Regulation (EU) No 651/2014 (size class defined elsewhere)",
+   "unit": "",
+   "measurement": "firm size category as defined in the referenced annex",
+   "level": "entity",
+   "trigger": "eligibility",
+   "consequence": "Where the request concerns such an enterprise, the absence of an administrative reply within the delay is deemed agreement on the estimated value",
+   "conditions": "request concerning an enterprise in that category",
+   "depends_on": "annex I to Regulation (EU) No 651/2014",
+   "evidence": {
+    "provision": "Art. 8 (inserting LPF L. 18 II, new alinéa)",
+    "quote": "Lorsque la demande concerne une entreprise qui relève de la catégorie des micro, petites et moyennes entreprises définie à l'annexe I au règlement (UE) n° 651/2014"
+   }
+  },
+  {
+   "variable": "transaction_value",
+   "variable_text": "valeur estimée du besoin, seuil européen applicable aux marchés de fournitures et de services",
+   "operator": "<",
+   "value": null,
+   "value_text": "seuil européen applicable aux marchés de fournitures et de services passés par les autorités publiques centrales, figurant dans un avis annexé au code de la commande publique",
+   "unit": "",
+   "currency": "EUR",
+   "measurement": "estimated value of the need",
+   "level": "other",
+   "trigger": "exemption",
+   "consequence": "Buyers may award works contracts below this threshold without prior advertising or competition",
+   "conditions": "buyers must choose a relevant offer and avoid systematically contracting with the same operator",
+   "depends_on": "EU threshold stated in a notice annexed to the Code de la commande publique",
+   "evidence": {
+    "provision": "Art. 13 I, 1st alinéa",
+    "quote": "dont la valeur estimée est inférieure au seuil européen applicable aux marchés de fournitures et de services passés par les autorités publiques centrales agissant en tant que pouvoirs adjudicateurs"
+   }
+  },
+  {
+   "variable": "share_of_financials",
+   "variable_text": "montant cumulé des lots de travaux inférieurs au seuil, part de la valeur totale estimée de tous les lots",
+   "operator": "<=",
+   "value": 20,
+   "value_text": "20 %",
+   "unit": "percent",
+   "measurement": "cumulative amount of such lots relative to total estimated value of all lots",
+   "level": "other",
+   "trigger": "exemption",
+   "consequence": "Lots of works below the EU threshold may be awarded without prior advertising or competition",
+   "conditions": "applies to lots whose works amount is below the same EU threshold",
+   "evidence": {
+    "provision": "Art. 13 I, 2nd alinéa",
+    "quote": "à la condition que le montant cumulé de ces lots n'excède pas 20 % de la valeur totale estimée de tous les lots"
+   }
+  },
+  {
+   "variable": "transaction_value",
+   "variable_text": "valeur estimée du besoin, seuil européen applicable aux marchés de fournitures et de services (réservation de lots)",
+   "operator": "<",
+   "value": null,
+   "value_text": "seuil européen applicable aux marchés de fournitures et de services passés par les autorités publiques centrales, figurant dans un avis annexé au code",
+   "unit": "",
+   "currency": "EUR",
+   "measurement": "estimated value of the need for innovative works, supplies or services",
+   "level": "other",
+   "trigger": "eligibility",
+   "consequence": "Lots of innovative contracts below this threshold may be reserved to young innovative enterprises",
+   "conditions": "innovative works, supplies or services within art. L. 2172-3 second alinéa",
+   "depends_on": "EU threshold stated in a notice annexed to the Code de la commande publique",
+   "evidence": {
+    "provision": "Art. 14 I 1° (CCP, new L. 2113-17)",
+    "quote": "répondent à un besoin dont la valeur estimée est inférieure au seuil européen applicable aux marchés de fournitures et de services"
+   }
+  },
+  {
+   "variable": "share_of_financials",
+   "variable_text": "part des lots réservés aux jeunes entreprises innovantes, montant total des marchés",
+   "operator": "<=",
+   "value": 15,
+   "value_text": "15 %",
+   "unit": "percent",
+   "measurement": "share of the total amount of the contracts that may be reserved as lots",
+   "level": "other",
+   "trigger": "cap",
+   "consequence": "Up to 15 % of the total amount of these contracts may be reserved as lots for young innovative enterprises",
+   "conditions": "contracts below the EU threshold for innovative works, supplies or services",
+   "evidence": {
+    "provision": "Art. 14 I 1° (CCP, new L. 2113-17)",
+    "quote": "des lots représentant 15 % du montant total de ces marchés peuvent être réservés à des jeunes entreprises innovantes"
+   }
+  },
+  {
+   "variable": "transaction_value",
+   "variable_text": "valeur estimée du besoin, seuil européen applicable aux marchés de fournitures et de services (marchés de défense ou de sécurité)",
+   "operator": "<",
+   "value": null,
+   "value_text": "seuil européen applicable aux marchés de fournitures et de services passés par les autorités publiques centrales, figurant dans un avis annexé au code",
+   "unit": "",
+   "currency": "EUR",
+   "measurement": "estimated value of the need for innovative works, supplies or services",
+   "level": "other",
+   "trigger": "eligibility",
+   "consequence": "Lots of defence or security contracts below this threshold may be reserved to young innovative enterprises",
+   "conditions": "innovative works, supplies or services within art. L. 2172-3 second alinéa; separate lots",
+   "depends_on": "EU threshold stated in a notice annexed to the Code de la commande publique",
+   "evidence": {
+    "provision": "Art. 15 I 1° (CCP, new L. 2313-5-1)",
+    "quote": "répondent à un besoin dont la valeur estimée est inférieure au seuil européen applicable aux marchés de fournitures et de services"
+   }
+  },
+  {
+   "variable": "share_of_financials",
+   "variable_text": "part des lots réservés aux jeunes entreprises innovantes, montant total des marchés de défense ou de sécurité",
+   "operator": "<=",
+   "value": 15,
+   "value_text": "15 %",
+   "unit": "percent",
+   "measurement": "share of the total amount of the contracts that may be reserved as lots",
+   "level": "other",
+   "trigger": "cap",
+   "consequence": "Up to 15 % of the total amount of these contracts may be reserved as lots for young innovative enterprises",
+   "conditions": "defence or security contracts passed in separate lots",
+   "evidence": {
+    "provision": "Art. 15 I 1° (CCP, new L. 2313-5-1)",
+    "quote": "des lots représentant 15 % du montant total de ces marchés peuvent être réservés à des jeunes entreprises innovantes"
+   }
+  },
+  {
+   "variable": "transaction_value",
+   "variable_text": "valeur estimée du besoin, seuil européen applicable aux marchés de fournitures et de services (marchés sans publicité préalable)",
+   "operator": "<",
+   "value": null,
+   "value_text": "seuil européen applicable aux marchés de fournitures et de services passés par les autorités publiques centrales, figurant dans un avis annexé au même code",
+   "unit": "",
+   "currency": "EUR",
+   "measurement": "estimated value of the need for innovative works, supplies or services",
+   "level": "other",
+   "trigger": "exemption",
+   "consequence": "Buyers may award public contracts for innovative works, supplies or services below this threshold without prior advertising or competition",
+   "conditions": "buyers must choose a relevant offer and avoid systematically contracting with the same operator",
+   "depends_on": "EU threshold stated in a notice annexed to the Code de la commande publique",
+   "evidence": {
+    "provision": "Art. 16 I",
+    "quote": "répondant à un besoin dont la valeur estimée est inférieure au seuil européen applicable aux marchés de fournitures et de services"
+   }
+  },
+  {
+   "variable": "transaction_value",
+   "variable_text": "montant de lots de services et de fournitures",
+   "operator": "<",
+   "value": 80000,
+   "value_text": "80 000 euros hors taxes",
+   "unit": "EUR excl. VAT",
+   "currency": "EUR",
+   "measurement": "amount of individual lots (services and supplies)",
+   "level": "other",
+   "trigger": "exemption",
+   "consequence": "Lots of services and supplies below this amount may be awarded without prior advertising or competition, within the cumulative limit",
+   "conditions": "cumulative amount of such lots not exceeding 20 % of total estimated value of all lots",
+   "evidence": {
+    "provision": "Art. 16 I, 2nd alinéa",
+    "quote": "à 80 000 euros hors taxes pour les marchés de services et de fournitures"
+   }
+  },
+  {
+   "variable": "share_of_financials",
+   "variable_text": "montant cumulé des lots, part de la valeur totale estimée de tous les lots",
+   "operator": "<=",
+   "value": 20,
+   "value_text": "20 %",
+   "unit": "percent",
+   "measurement": "cumulative amount of such lots relative to total estimated value of all lots",
+   "level": "other",
+   "trigger": "exemption",
+   "consequence": "Lots below the amount thresholds may be awarded without prior advertising or competition",
+   "conditions": "applies to lots below the thresholds in Art. 16 I",
+   "evidence": {
+    "provision": "Art. 16 I, 2nd alinéa",
+    "quote": "à la condition que le montant cumulé de ces lots n'excède pas 20 % de la valeur totale estimée de tous les lots"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "montant visé au I, deuxième alinéa, de l'article L. 430-2 du code de commerce",
+   "operator": ">",
+   "value": 250000000,
+   "value_text": "250 millions d'euros",
+   "unit": "EUR",
+   "currency": "EUR",
+   "measurement": "as defined in L. 430-2 (measure not restated in this text)",
+   "level": "other",
+   "trigger": "obligation",
+   "consequence": "Amount raised from EUR 150 million to EUR 250 million; applies to concentrations notified from the first day of the fourth month after promulgation",
+   "conditions": "operator and measure taken from the amended provision; this text states only the amount",
+   "evidence": {
+    "provision": "Art. 24 I 1° a)",
+    "quote": "A la fin du deuxième alinéa, le montant : « 150 millions d'euros » est remplacé par le montant : « 250 millions d'euros »"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "montant visé au I, troisième alinéa, de l'article L. 430-2 du code de commerce",
+   "operator": ">",
+   "value": 80000000,
+   "value_text": "80 millions d'euros",
+   "unit": "EUR",
+   "currency": "EUR",
+   "measurement": "as defined in L. 430-2 (measure not restated in this text)",
+   "level": "other",
+   "trigger": "obligation",
+   "consequence": "Amount raised from EUR 50 million to EUR 80 million",
+   "conditions": "operator and measure taken from the amended provision; this text states only the amount",
+   "evidence": {
+    "provision": "Art. 24 I 1° b)",
+    "quote": "A la fin du troisième alinéa, le montant : « 50 millions d'euros » est remplacé par le montant : « 80 millions d'euros »"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "montant visé au II, deuxième alinéa, de l'article L. 430-2 du code de commerce",
+   "operator": ">",
+   "value": 100000000,
+   "value_text": "100 millions d'euros",
+   "unit": "EUR",
+   "currency": "EUR",
+   "measurement": "as defined in L. 430-2 (measure not restated in this text)",
+   "level": "other",
+   "trigger": "obligation",
+   "consequence": "Amount raised from EUR 75 million to EUR 100 million",
+   "conditions": "operator and measure taken from the amended provision; this text states only the amount",
+   "evidence": {
+    "provision": "Art. 24 I 2° a)",
+    "quote": "A la fin du deuxième alinéa, le montant : « 75 millions d'euros » est remplacé par le montant : « 100 millions d'euros »"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "montant visé au II, troisième alinéa, de l'article L. 430-2 du code de commerce",
+   "operator": ">",
+   "value": 20000000,
+   "value_text": "20 millions d'euros",
+   "unit": "EUR",
+   "currency": "EUR",
+   "measurement": "as defined in L. 430-2 (measure not restated in this text)",
+   "level": "other",
+   "trigger": "obligation",
+   "consequence": "Amount raised from EUR 15 million to EUR 20 million",
+   "conditions": "operator and measure taken from the amended provision; this text states only the amount",
+   "evidence": {
+    "provision": "Art. 24 I 2° b)",
+    "quote": "A la fin du troisième alinéa, le montant : « 15 millions d'euros » est remplacé par le montant : « 20 millions d'euros »"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "microentreprises au sens de l'article 51 de la loi n° 2008-776 de modernisation de l'économie",
+   "operator": "=",
+   "value": null,
+   "value_text": "microentreprises as defined in article 51 of loi n° 2008-776 (defined elsewhere)",
+   "unit": "",
+   "measurement": "size class defined in the referenced law",
+   "level": "entity",
+   "trigger": "eligibility",
+   "consequence": "Microenterprises are added alongside natural persons in the first sentence of L. 314-7 III",
+   "depends_on": "article 51 of loi n° 2008-776 du 4 août 2008 (LME)",
+   "evidence": {
+    "provision": "Art. 29 I 3° a) (L. 314-7 III, first sentence)",
+    "quote": "aux microentreprises au sens de l'article 51 de la loi n° 2008-776 du 4 août 2008 de modernisation de l'économie"
+   }
+  },
+  {
+   "variable": "employees",
+   "variable_text": "moins de dix personnes",
+   "operator": "<",
+   "value": 10,
+   "value_text": "moins de dix personnes",
+   "unit": "persons",
+   "measurement": "headcount of the enterprise",
+   "level": "entity",
+   "trigger": "eligibility",
+   "consequence": "Defines microenterprises for the L. 314-7 III rule in the New Caledonia version of the provision",
+   "conditions": "jointly with annual turnover or annual balance-sheet total not exceeding XPF 238 660 000",
+   "evidence": {
+    "provision": "Art. 29 I 5° b), 1° bis (inserting into L. 752-10 II; also L. 753-10 and L. 754-8)",
+    "quote": "des entreprises qui occupent moins de dix personnes"
+   }
+  },
+  {
+   "variable": "revenue_annual",
+   "variable_text": "chiffre d'affaires annuel ou total du bilan annuel",
+   "operator": "<=",
+   "value": 238660000,
+   "value_text": "238 660 000 francs CFP",
+   "unit": "XPF",
+   "currency": "XPF",
+   "measurement": "annual turnover or annual balance-sheet total",
+   "level": "entity",
+   "trigger": "eligibility",
+   "consequence": "Defines microenterprises for the L. 314-7 III rule in the New Caledonia version of the provision",
+   "conditions": "alternative between turnover and balance-sheet total; jointly with fewer than ten persons",
+   "evidence": {
+    "provision": "Art. 29 I 5° b), 1° bis (inserting into L. 752-10 II; also L. 753-10 and L. 754-8)",
+    "quote": "et dont le chiffre d'affaires annuel ou le total du bilan annuel n'excède pas 238 660 000 francs CFP"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "microentreprises et petites et moyennes entreprises au sens de l'article 51 de la loi n° 2008-776",
+   "operator": "=",
+   "value": null,
+   "value_text": "microentreprises and PME as defined in article 51 of loi n° 2008-776 (defined elsewhere)",
+   "unit": "",
+   "measurement": "size class defined in the referenced law",
+   "level": "entity",
+   "trigger": "eligibility",
+   "consequence": "Insured firms of this size may terminate tacitly renewable property-damage contracts after one year from first effect, except listed contracts",
+   "conditions": "professional property-damage insurance contracts",
+   "depends_on": "article 51 of loi n° 2008-776 du 4 août 2008 (LME)",
+   "evidence": {
+    "provision": "Art. 30 I 3° (Code des assurances L. 113-15-2-1, 1st alinéa)",
+    "quote": "souscrits par des microentreprises et des petites et moyennes entreprises, au sens de l'article 51 de la loi n° 2008-776 du 4 août 2008 de modernisation de l'économie"
+   }
+  },
+  {
+   "variable": "power_capacity",
+   "variable_text": "puissance d'une installation de production d'électricité renouvelable en mer",
+   "operator": ">",
+   "value": null,
+   "value_text": "seuil fixé par décret",
+   "unit": "",
+   "measurement": "installed power of the offshore renewable installation",
+   "level": "facility",
+   "trigger": "exemption",
+   "consequence": "Contracting authorities may decide, by derogation from L. 2113-10 CCP, not to divide the contract into lots",
+   "conditions": "works, supplies or services concerning the offshore installation or an associated study",
+   "depends_on": "décret",
+   "evidence": {
+    "provision": "Art. 38",
+    "quote": "d'une puissance supérieure à un seuil fixé par décret"
+   }
+  },
+  {
+   "variable": "transaction_value",
+   "variable_text": "montant du marché concernant le réseau public de transport d'électricité associé",
+   "operator": ">",
+   "value": null,
+   "value_text": "seuil fixé par décret",
+   "unit": "",
+   "measurement": "amount of the contract",
+   "level": "other",
+   "trigger": "exemption",
+   "consequence": "Contracting authorities may decide, by derogation from L. 2113-10 CCP, not to divide the contract into lots",
+   "conditions": "contract for creation or modification of a transmission network work or transformer station associated with the offshore installation",
+   "depends_on": "décret",
+   "evidence": {
+    "provision": "Art. 38",
+    "quote": "lorsqu'un marché d'un montant supérieur à un seuil fixé par décret"
+   }
+  },
+  {
+   "variable": "transaction_value",
+   "variable_text": "seuils fixés par décret mentionnés à l'article 38, plancher",
+   "operator": ">=",
+   "value": 10000000,
+   "value_text": "dix millions d'euros hors taxes (floor for decree-set thresholds)",
+   "unit": "EUR excl. VAT",
+   "currency": "EUR",
+   "measurement": "thresholds set under article 38 for the derogation",
+   "level": "other",
+   "trigger": "scope_definition",
+   "consequence": "Decree-set thresholds under article 38 cannot be below EUR 10 million excluding VAT",
+   "conditions": "applies to the thresholds in the first alinéa of Art. 38",
+   "evidence": {
+    "provision": "Art. 38, 2nd alinéa",
+    "quote": "Les seuils mentionnés au premier alinéa du présent article ne peuvent être inférieurs à dix millions d'euros hors taxes."
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "distance par rapport à la limite haute du rivage",
+   "operator": ">",
+   "value": 100,
+   "value_text": "une bande de cent mètres de la limite haute du rivage",
+   "unit": "m",
+   "measurement": "distance from the limite haute du rivage",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Radio installations may be authorised outside existing settlements only beyond the coastal areas and a 100 m strip",
+   "conditions": "one of three cumulative conditions in Art. 39 IV",
+   "evidence": {
+    "provision": "Art. 39 IV, 1°",
+    "quote": "en tout état de cause au-delà des espaces proches du rivage et d'une bande de cent mètres de la limite haute du rivage"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "durée maximale de validité d'un permis exclusif de recherches",
+   "operator": ">",
+   "value": 15,
+   "value_text": "durée maximale de quinze ans",
+   "unit": "years",
+   "measurement": "validity period of the exclusive exploration permit",
+   "level": "other",
+   "trigger": "cap",
+   "consequence": "Validity may exceptionally be extended beyond fifteen years under the conditions stated",
+   "conditions": "exceptional circumstances linked to mining research hazards; duly justified by the holder",
+   "evidence": {
+    "provision": "Art. 43 I 17° b) (C. min. L. 142-2-1, new alinéas)",
+    "quote": "la validité d'un permis exclusif de recherches peut être prolongée au-delà de la durée maximale de quinze ans"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "durée de la prolongation exceptionnelle d'un permis exclusif de recherches",
+   "operator": "<=",
+   "value": 3,
+   "value_text": "d'au plus trois ans",
+   "unit": "years",
+   "measurement": "duration of the exceptional extension",
+   "level": "other",
+   "trigger": "cap",
+   "consequence": "Exceptional extension is granted without new competitive procedure or reduction of area",
+   "conditions": "granted under the exceptional circumstances of the preceding alinéa",
+   "evidence": {
+    "provision": "Art. 43 I 17° b) (C. min. L. 142-2-1, new alinéas)",
+    "quote": "Cette prolongation exceptionnelle, d'au plus trois ans, est accordée sans nouvelle mise en concurrence, ni réduction de surface."
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "durée de l'autorisation de recherches minières sur le domaine de l'Etat",
+   "operator": "<=",
+   "value": 2,
+   "value_text": "ne peut excéder deux ans",
+   "unit": "years",
+   "measurement": "duration of the authorisation",
+   "level": "other",
+   "trigger": "cap",
+   "consequence": "The mining research authorisation may not exceed two years",
+   "evidence": {
+    "provision": "Art. 43 I 34° (C. min. L. 621-22)",
+    "quote": "La durée de cette autorisation ne peut excéder deux ans."
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "heures d'entrée dans les locaux professionnels par les agents de contrôle",
+   "operator": "range",
+   "value": 6,
+   "value_max": 21,
+   "value_text": "avant 6 heures et après 21 heures",
+   "unit": "hours (time of day)",
+   "measurement": "time of day of entry",
+   "level": "other",
+   "trigger": "prohibition",
+   "consequence": "Officers may not enter business premises before 6 hours or after 21 hours",
+   "conditions": "except premises open to the public or where an listed activity is ongoing",
+   "evidence": {
+    "provision": "Art. 43 I 28° (C. min. L. 511-2, 2nd alinéa, 1°)",
+    "quote": "Ils ne peuvent pénétrer dans ces lieux avant 6 heures et après 21 heures."
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "heures de visite des domiciles et locaux à usage d'habitation",
+   "operator": "range",
+   "value": 6,
+   "value_max": 21,
+   "value_text": "avant 6 heures et après 21 heures",
+   "unit": "hours (time of day)",
+   "measurement": "time of day of visits",
+   "level": "other",
+   "trigger": "prohibition",
+   "consequence": "Visits to homes outside these hours may start only with the occupant's consent or in the presence of a judicial police officer",
+   "conditions": "applies to domiciles and premises with residential parts",
+   "evidence": {
+    "provision": "Art. 43 I 28° (C. min. L. 511-2, 3rd alinéa)",
+    "quote": "ne peuvent être commencées avant 6 heures et après 21 heures qu'avec l'assentiment de l'occupant"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "profondeur d'un sondage, forage, puits, ouvrage souterrain ou travail de fouille",
+   "operator": ">",
+   "value": 10,
+   "value_text": "dix mètres au-dessous de la surface du sol",
+   "unit": "m",
+   "measurement": "depth below ground surface",
+   "level": "facility",
+   "trigger": "obligation",
+   "consequence": "Works deeper than ten metres require a prior declaration to a designated body",
+   "conditions": "groundwater works for research, monitoring or abstraction require a declaration regardless of depth",
+   "evidence": {
+    "provision": "Art. 44 III 1° (C. min. L. 411-1 I, 1st alinéa)",
+    "quote": "dont la profondeur dépasse dix mètres au-dessous de la surface du sol"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "montant maximal des frais pouvant être facturés pour le transfert de données de dossiers médicaux",
+   "operator": "<=",
+   "value": null,
+   "value_text": "montant maximal défini par décret",
+   "unit": "",
+   "measurement": "fees charged for transfer of patient records on change of publisher",
+   "level": "service",
+   "trigger": "cap",
+   "consequence": "Fees that may be charged for the data transfer are capped at the maximum set by decree",
+   "conditions": "change of publisher of a digital health service managing patient records",
+   "depends_on": "décret (CSP L. 1470-5-1 I, 2nd alinéa)",
+   "evidence": {
+    "provision": "Art. 55 (CSP L. 1470-5-1 I, 2nd alinéa)",
+    "quote": "Un décret définit le montant maximal des frais pouvant être facturés"
+   }
+  },
+  {
+   "variable": "turnover_global",
+   "variable_text": "chiffre d'affaires annuel mondial total de l'exercice précédent du responsable de traitement",
+   "operator": ">",
+   "value": 50000000,
+   "value_text": "50 millions d'euros",
+   "unit": "EUR",
+   "currency": "EUR",
+   "measurement": "worldwide total annual turnover of the controller in the previous financial year",
+   "level": "entity",
+   "trigger": "penalty_tier",
+   "consequence": "Amounts of the fine and daily penalty in the amended provision are raised to the levels stated in the text",
+   "evidence": {
+    "provision": "Art. 60 2° (loi n° 78-17, art. 22-1, 2nd alinéa)",
+    "quote": "Lorsque le chiffre d'affaires annuel mondial total de l'exercice précédent du responsable de traitement est supérieur à 50 millions d'euros"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "montant des sommes payées à titre de garantie par le preneur à bail",
+   "operator": "<=",
+   "value": null,
+   "value_text": "montant des loyers dus au titre d'un trimestre",
+   "unit": "",
+   "measurement": "guarantee deposits paid by the lessee of a commercial premises",
+   "level": "other",
+   "trigger": "cap",
+   "consequence": "Guarantee deposits may not exceed the rent due for one quarter",
+   "conditions": "applies to lessees of premises under L. 145-32-1",
+   "depends_on": "rent due for one quarter under the lease",
+   "evidence": {
+    "provision": "Art. 62 I 4° (C. com. L. 145-40, 1st new alinéa)",
+    "quote": "Les sommes payées à titre de garantie par le preneur à bail d'un local mentionné à l'article L. 145-32-1 ne peuvent excéder le montant des loyers dus au titre d'un trimestre."
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "durée écoulée entre la fermeture et la réouverture du site bénéficiant de l'autorisation initiale",
+   "operator": ">",
+   "value": 5,
+   "value_text": "plus de cinq ans",
+   "unit": "years",
+   "measurement": "time between closure and reopening of the site",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "The commercial authorisation lapses if more than five years elapse between closure and reopening",
+   "conditions": "temporary transfer of a sales area within a commercial zone",
+   "evidence": {
+    "provision": "Art. 64 1° (C. com. L. 752-1-3, 2nd alinéa)",
+    "quote": "devient caduque si plus de cinq ans se sont écoulés entre la fermeture et la réouverture"
+   }
+  },
+  {
+   "variable": "floor_area",
+   "variable_text": "surface de vente du magasin de commerce de détail rouvert",
+   "operator": "<",
+   "value": 2500,
+   "value_text": "2 500 mètres carrés",
+   "unit": "m2",
+   "measurement": "sales area of the reopened retail store",
+   "level": "facility",
+   "trigger": "exemption",
+   "consequence": "Displacement of the sales area within a commercial complex is exempt from commercial authorisation",
+   "conditions": "total sales area of the complex not increased and no change to the building footprint",
+   "evidence": {
+    "provision": "Art. 64 2° b) (C. com. L. 752-2 VI, 1°)",
+    "quote": "La surface de vente du magasin de commerce de détail rouvert est inférieure à 2 500 mètres carrés"
+   }
+  },
+  {
+   "variable": "floor_area",
+   "variable_text": "surface de vente du magasin de commerce de détail rouvert, commerces à prédominance alimentaire",
+   "operator": "<",
+   "value": 1000,
+   "value_text": "1 000 mètres carrés",
+   "unit": "m2",
+   "measurement": "sales area of the reopened retail store",
+   "level": "facility",
+   "trigger": "exemption",
+   "consequence": "Displacement of the sales area within a commercial complex is exempt from commercial authorisation for food-predominant stores",
+   "conditions": "food-predominant stores; cumulative conditions of Art. 64 2° b) VI apply",
+   "evidence": {
+    "provision": "Art. 64 2° b) (C. com. L. 752-2 VI, 1°)",
+    "quote": "ou, pour les commerces à prédominance alimentaire, à 1 000 mètres carrés"
+   }
+  },
+  {
+   "variable": "floor_area",
+   "variable_text": "surface de vente d'un magasin de commerce de détail existant soumis à division",
+   "operator": ">",
+   "value": 1000,
+   "value_text": "d'une surface de vente supérieure à 1 000 mètres carrés",
+   "unit": "m2",
+   "measurement": "sales area of the existing store",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Division of an existing store into a commercial complex is not subject to commercial authorisation",
+   "conditions": "no increase of total sales area; activities remain in the same sector",
+   "evidence": {
+    "provision": "Art. 69 (C. com. L. 752-2 VIII)",
+    "quote": "d'une surface de vente supérieure à 1 000 mètres carrés"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "durée d'exploitation du magasin existant soumis à division",
+   "operator": ">",
+   "value": 3,
+   "value_text": "exploité depuis plus de trois années",
+   "unit": "years",
+   "measurement": "operating period of the existing store",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Division of an existing store into a commercial complex is not subject to commercial authorisation",
+   "conditions": "store must have been operated for more than three years",
+   "evidence": {
+    "provision": "Art. 69 (C. com. L. 752-2 VIII)",
+    "quote": "exploité depuis plus de trois années"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "durée de cessation d'exploitation des locaux commerciaux réouverts",
+   "operator": "<",
+   "value": 5,
+   "value_text": "moins de cinq ans",
+   "unit": "years",
+   "measurement": "period during which the premises have ceased to be operated",
+   "level": "facility",
+   "trigger": "exemption",
+   "consequence": "Reopening of such premises is exempt from commercial authorisation",
+   "conditions": "applies where sales-area transfers lead to reopening of retail stores",
+   "evidence": {
+    "provision": "Art. 70 II (C. com. L. 752-2 VII, 2nd alinéa)",
+    "quote": "ayant cessé d'être exploités pendant moins de cinq ans"
+   }
+  },
+  {
+   "variable": "floor_area",
+   "variable_text": "surface des établissements recevant du public soumis à déclaration de conformité",
+   "operator": "<",
+   "value": 300,
+   "value_text": "moins de 300 mètres carrés",
+   "unit": "m2",
+   "measurement": "floor area of the establishment",
+   "level": "facility",
+   "trigger": "exemption",
+   "consequence": "Work authorisation is replaced by a declaration of conformity certified by a third party for establishments that keep the same activity",
+   "conditions": "establishment has a fire-extinction system adapted to the fire risk, or is located in a station; same activity retained",
+   "evidence": {
+    "provision": "Art. 71 (CCH L. 122-3, new alinéa)",
+    "quote": "pour les établissements de moins de 300 mètres carrés"
+   }
+  }
+ ],
+ "section_status": {}
+}

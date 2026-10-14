@@ -1,0 +1,966 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "us-bis-sme-2023",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (connectors/fetch_texts.py)",
+  "url": "https://www.govinfo.gov/content/pkg/FR-2023-10-25/pdf/2023-23049.pdf",
+  "retrieved": "2026-10-13",
+  "version": "as fetched",
+  "language": "en",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "chips_export_controls"
+  ],
+  "primary_domain": "chips_export_controls",
+  "mechanisms": [
+   "export_import_control",
+   "prohibition_ban",
+   "licensing_permit_certification"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "exporter",
+   "chip_designer_manufacturer",
+   "enterprise"
+  ],
+  "affected_roles": [
+   "enterprise",
+   "hardware_supplier"
+  ],
+  "decision_margins": [
+   "firm:trade",
+   "firm:entry_market_access",
+   "firm:compliance_process"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national",
+    "extraterritorial"
+   ],
+   "description": "Applies to items subject to the EAR and to activities of U.S. persons, with destinations in Macau and Country Group D:5; some prohibitions reach items not subject to the EAR when known to be destined for listed end uses in China or Macau.",
+   "evidence": {
+    "provision": "§ 744.6(c)(2)(i)",
+    "quote": "To or within China or Macau, any item not subject to the EAR that you know will be used in the"
+   }
+  },
+  "agora_risk_factors": [
+   "Security"
+  ],
+  "agora_strategies": [
+   "Input controls: Compute circulation",
+   "Input controls: Compute use"
+  ]
+ },
+ "summary": {
+  "short": "Interim final rule, effective 17 November 2023, amending the EAR to control semiconductor manufacturing equipment and related technology: adds license requirements for Macau and Country Group D:5 destinations, removes ECCN 3B090, narrows end-use and U.S.-person controls, and adds a temporary general license.",
+  "long": "Interim final rule published 25 October 2023 by the Bureau of Industry and Security, amending the Export Administration Regulations on semiconductor manufacturing equipment (SME). It removes ECCN 3B090 and places its items in revised ECCNs 3B001 and 3B002. National Security and Regional Stability license requirements apply to exports, reexports and in-country transfers of these items and related software and technology to Macau and Country Group D:5 destinations. A 0% de minimis rule covers certain lithography equipment used for advanced-node integrated circuits, unless the origin country controls it equivalently. License exceptions are restricted. Section 744.23 end-use controls are restructured and the SME control is narrowed to front-end production equipment in specified ECCNs, with exclusions for back-end steps and masks. Section 744.6 U.S.-person restrictions are revised, with exclusions for U.S. persons working for U.S. or Country Group A:5 or A:6-headquartered companies. A temporary general license covers certain SME parts and components through 31 December 2025, and its paragraph (d) is removed effective 1 January 2026. New section 772.1 definitions cover advanced-node integrated circuits and extreme ultraviolet. Most provisions take effect 17 November 2023."
+ },
+ "relations": [
+  {
+   "relation": "legal_basis",
+   "target_text": "Export Control Reform Act of 2018 (ECRA), 50 U.S.C. 4801–4852",
+   "note": "The text states that ECRA, as amended, provides the legal basis for BIS's principal authorities and is the authority under which BIS issues this rule.",
+   "evidence": {
+    "provision": "Export Control Reform Act of 2018 (section following the Background and public comments discussion)",
+    "quote": "ECRA, as amended, provides the legal basis for BIS’s principal authorities"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Export Administration Regulations (EAR), 15 CFR parts 730–774",
+   "note": "The rule amends parts 734, 736, 740, 742, 744, 772 and 774 of the EAR through numbered amendatory instructions; part 1 contains instructions 1 to 12 in part.",
+   "evidence": {
+    "provision": "SUMMARY; amendatory instructions to 15 CFR parts 734–774",
+    "quote": "This SME IFR amends the EAR by"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Implementation of Additional Export Controls: Certain Advanced Computing and Semiconductor Manufacturing Items; Supercomputer and Semiconductor End Use (October 7 IFR), 87 FR 62186 (October 13, 2022)",
+   "note": "This rule refines the SME controls of the October 7 IFR. It also removes the October 7 IFR temporary general license in supplement no. 1 to part 736 and replaces it with a new TGL.",
+   "evidence": {
+    "provision": "Section C.6 (Revisions to the Temporary General License in Supplement no. 1 to Part 736)",
+    "quote": "by removing the October 7 IFR TGL"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Implementation of Additional Export Controls: Certain Advanced Computing Items; Supercomputer and Semiconductor End Use; Updates to the Controls and Corrections (AC/S IFR)",
+   "note": "Companion interim final rule published elsewhere in the same Federal Register issue; it addresses advanced computing provisions of the October 7 IFR.",
+   "evidence": {
+    "provision": "SUPPLEMENTARY INFORMATION, Background A. Introduction",
+    "quote": "(AC/S IFR)"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Entity List Additions rule (separate Federal Register rule, public inspection October 17, 2023)",
+   "note": "Separate rule, stated to add 13 entities to the Entity List; this document does not itself add entities.",
+   "evidence": {
+    "provision": "SUPPLEMENTARY INFORMATION, Topic 23 BIS response",
+    "quote": "adds 13 entities"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "22 CFR 126.1 (International Traffic in Arms Regulations (ITAR))",
+   "note": "Section 742.4 license review for 9x515 and 600 series items destined to Country Group D:5 is to be consistent with the ITAR arms embargo policies referenced in 22 CFR 126.1.",
+   "evidence": {
+    "provision": "Section C.8 (Addition and Reformatting of § 742.4), amended § 742.4(b)(1)(ii)",
+    "quote": "22 CFR 126.1 (International Traffic in Arms Regulations (ITAR))"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Export Administration Regulations (EAR)",
+   "note": "Amends EAR § 772.1 (adds definitions for Advanced-Node IC and EUV), and Supplement No. 1 to part 774 (revises ECCNs 3B001, 3B002, 3D001, 3D002, 3D003 and 3E001; removes ECCN 3B090). Only amendments in this part are noted.",
+   "evidence": {
+    "provision": "Sec. 14 (amending § 772.1); Sec. 16 (amending Supplement No. 1 to part 774)",
+    "quote": "Section 772.1 is amended by"
+   }
+  },
+  {
+   "relation": "legal_basis",
+   "target_text": "50 U.S.C. 4801–4852 (cited as authority)",
+   "note": "Listed in the authority citations for part 772 and part 774 among other statutes; the text does not name the statute.",
+   "evidence": {
+    "provision": "Authority citation, part 772 (Sec. 13)",
+    "quote": "Authority: 50 U.S.C. 4801–4852"
+   }
+  },
+  {
+   "relation": "legal_basis",
+   "target_text": "E.O. 13222 (66 FR 44025)",
+   "note": "Executive order cited in the authority citations for part 772 and part 774.",
+   "evidence": {
+    "provision": "Authority citation, part 772 (Sec. 13)",
+    "quote": "13222, 66 FR 44025, 3 CFR, 2001 Comp., p."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "ITAR (22 CFR parts 120 through 130)",
+   "note": "ECCN 3E001 Related Controls state that certain technology for USML Category XV items is subject to the ITAR, with a reference to 22 CFR parts 120 through 130.",
+   "evidence": {
+    "provision": "Supplement No. 1 to part 774, ECCN 3E001, Related Controls",
+    "quote": "(see 22 CFR parts 120 through 130)"
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "Bureau of Industry and Security (BIS), U.S. Department of Commerce",
+   "role": "designated",
+   "function": "Issuing agency for this rule under ECRA; administers the EAR, including license requirements, license exceptions, temporary general licenses and Entity List actions described in the text.",
+   "evidence": {
+    "provision": "Section C.6 (Revisions to the Temporary General License in Supplement no. 1 to Part 736)",
+    "quote": "In this rule, BIS has added a TGL in paragraph (d)(1) of"
+   }
+  },
+  {
+   "name": "End-User Review Committee (ERC)",
+   "role": "designated",
+   "function": "Body that identifies and approves entities to be added to the Entity List, as stated in the text.",
+   "evidence": {
+    "provision": "SUPPLEMENTARY INFORMATION, Topic 23 BIS response",
+    "quote": "identified and approved by the End-User Review Committee (ERC)"
+   }
+  },
+  {
+   "name": "BIS",
+   "role": "designated",
+   "function": "Empowered to inform persons, individually or by EAR amendment, that a license is required for specific exports to certain end-users; receives Advisory Opinion requests under § 748.3(c) on whether a manufacturing stage is back-end.",
+   "evidence": {
+    "provision": "(b) Additional prohibition on persons informed by BIS",
+    "quote": "BIS may inform persons"
+   }
+  },
+  {
+   "name": "Deputy Assistant Secretary for Export Administration",
+   "role": "designated",
+   "function": "Gives or directs specific notices that a license is required; signs the written notice that follows an oral notice, or the designee does.",
+   "evidence": {
+    "provision": "(b) Additional prohibition on persons informed by BIS",
+    "quote": "Specific notice is to be given only by"
+   }
+  }
+ ],
+ "notes": "Part 1 of 2 covers the cover page, summary, dates, background, public comments (Topics 1 to 62 in part) and amendatory text through § 744.23(a)(4); the Note to paragraph (a)(4) and later provisions are in part 2. Relations and entities are limited to what part 1 states. Internal numbering: the amendatory instruction to § 744.6 and the instruction to § 744.23 are both numbered 12. The preamble's Paperwork Reduction Act section states a sunset clause effective August 1, 2024 for TGL recordkeeping, while the TGL itself runs through December 31, 2025 (instruction 5 removes its paragraph (d) effective January 1, 2026). Several topic responses refer to former paragraph designations (e.g., § 744.23(a)(2)(v) redesignated as (a)(4)), so cross-references need the redesignation table. The Section 744.6 and 744.23 text is partly restated in part 2. Part 2 of 2: covers the end of the back-end exclusion, paragraphs (b) to (d) of a section whose heading is in part 1, the part 772 definitions, the part 774 authority and ECCN revisions, and the Supplement No. 1 to part 774 text. Relations and entities are limited to this part; no firms are named here. Internal inconsistencies: Note 1 writes the caption as ADVANCEDNODE INTEGRATED CIRCUITS while the definition is Advanced-Node Integrated Circuits; the technical note to 3B001.f.1.b refers to 3.B.1.f.1.b while the control uses 3B001.f.1.b. Dollar license values, technical parameters and reasons for control are not coded in this part.",
+ "events": [
+  {
+   "event": "published",
+   "date": "2023-10-25",
+   "date_type": "absolute",
+   "date_text": "Federal Register / Vol. 88, No. 205 / Wednesday, October 25, 2023",
+   "applies_to": "Federal Register issue containing this interim final rule",
+   "evidence": {
+    "provision": "Federal Register page header",
+    "quote": "Federal Register / Vol. 88, No. 205 / Wednesday, October 25, 2023"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2023-11-17",
+   "date_type": "absolute",
+   "date_text": "This rule is effective November 17, 2023",
+   "applies_to": "Rule generally, except amendatory instruction 5",
+   "evidence": {
+    "provision": "DATES",
+    "quote": "November 17, 2023, except for amendatory instruction 5, which is effective January 1, 2026."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2023-12-18",
+   "date_type": "absolute",
+   "date_text": "Comments must be received by BIS no later than December 18, 2023",
+   "applies_to": "Public comments on this interim final rule",
+   "evidence": {
+    "provision": "DATES",
+    "quote": "Comments must be received by BIS no later than December 18, 2023."
+   }
+  },
+  {
+   "event": "application",
+   "date": "2023-11-17",
+   "date_type": "absolute",
+   "date_text": "this TGL is valid from November 17, 2023, through December 31, 2025",
+   "applies_to": "Temporary General License under paragraph (d)(1) of Supplement no. 1 to part 736 (less restricted SME parts, components or equipment)",
+   "evidence": {
+    "provision": "Section C.6 (Revisions to the Temporary General License in Supplement no. 1 to Part 736)",
+    "quote": "In keeping with that goal, this TGL is valid from November 17, 2023, through December 31, 2025."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2023-10-18",
+   "date_type": "absolute",
+   "date_text": "contracts signed before October 18, 2023",
+   "applies_to": "Contract sanctity provisions for license applications under paragraph (a)(4) of section 742.4 (SME items): contracts signed before this date",
+   "evidence": {
+    "provision": "Sec. 742.4(c) (Contract sanctity), as amended",
+    "quote": "For paragraph (a)(4), contract sanctity provisions are available for contracts signed before October 18, 2023."
+   }
+  },
+  {
+   "event": "sunset",
+   "date": "2024-08-01",
+   "date_type": "absolute",
+   "date_text": "a sunset clause on this requirement effective August 1, 2024",
+   "applies_to": "Recordkeeping requirement for TGL shipments under Supplement no. 1 to part 736, paragraph (d)(5), to be removed from the EAR",
+   "evidence": {
+    "provision": "Rulemaking Requirements, para. 2 (Paperwork Reduction Act)",
+    "quote": "There is a sunset clause on this requirement effective August 1, 2024"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2026-01-01",
+   "date_type": "absolute",
+   "date_text": "amendatory instruction 5, which is effective January 1, 2026",
+   "applies_to": "Amendatory instruction 5: removal and reservation of paragraph (d) of Supplement no. 1 to part 736 (Temporary General License)",
+   "evidence": {
+    "provision": "DATES; amendatory instruction 5 (Supplement no. 1 to part 736)",
+    "quote": "amendatory instruction 5, which is effective January 1, 2026."
+   }
+  },
+  {
+   "event": "expiry",
+   "date": "2025-12-31",
+   "date_type": "absolute",
+   "date_text": "expires on December 31, 2025",
+   "applies_to": "Temporary General License under paragraph (d)(1) of Supplement no. 1 to part 736",
+   "evidence": {
+    "provision": "Supplement no. 1 to part 736, para. (d)(3) (Validity date)",
+    "quote": "The TGL under paragraph (d)(1) of this supplement expires on December 31, 2025."
+   }
+  },
+  {
+   "event": "published",
+   "date": "2023-10-25",
+   "date_type": "absolute",
+   "date_text": "Wednesday, October 25, 2023",
+   "applies_to": "Federal Register publication of the rule (Vol. 88, No. 205)",
+   "evidence": {
+    "provision": "Federal Register, Vol. 88, No. 205, page header",
+    "quote": "Federal Register / Vol. 88, No. 205 / Wednesday, October 25, 2023 / Rules and Regulations"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "other",
+   "variable_text": "de minimis level (U.S. content) for equipment meeting the parameters in ECCN 3B001.f.1.b.2.b",
+   "operator": "=",
+   "value": 0,
+   "value_text": "There is no de minimis level for equipment meeting the parameters in ECCN 3B001.f.1.b.2.b",
+   "unit": "percent",
+   "measurement": "Not specified in this provision",
+   "level": "product",
+   "trigger": "scope_definition",
+   "consequence": "Foreign-made equipment meeting the parameters is subject to the EAR when destined for advanced-node IC development or production, unless the country of first export lists the commodity.",
+   "conditions": "Destined for the development or production of advanced-node integrated circuits meeting paragraph (1) of the definition in § 772.1; the exception applies where the country from which the foreign-made item was first exported has the commodity on its export control list.",
+   "evidence": {
+    "provision": "§ 734.4(a)(3)",
+    "quote": "There is no de minimis level for equipment meeting the parameters in ECCN 3B001.f.1.b.2.b"
+   }
+  },
+  {
+   "variable": "process_node",
+   "variable_text": "logic IC production technology node (nm), alternative to non-planar transistor architecture",
+   "operator": "<=",
+   "value": 16,
+   "value_text": "16/14 nanometers or less",
+   "unit": "nm",
+   "measurement": "Technology node per the IRDS Logic Industry 'Node Range' figure (Note 1 to the definition)",
+   "level": "product",
+   "trigger": "scope_definition",
+   "consequence": "Logic integrated circuits meeting this criterion are Advanced-Node ICs for parts 734 and 744 of the EAR",
+   "conditions": "Alternative criteria: non-planar transistor architecture, NAND memory with 128 layers or more, or DRAM at 18 nm half-pitch or less",
+   "evidence": {
+    "provision": "§ 772.1 (Advanced-Node IC, criterion (1))",
+    "quote": "with a ‘‘production’’ ‘technology node’ of 16/14 nanometers or less"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "NAND memory integrated circuits, number of layers",
+   "operator": ">=",
+   "value": 128,
+   "value_text": "128 layers or more",
+   "unit": "layers",
+   "level": "product",
+   "trigger": "scope_definition",
+   "consequence": "NAND memory integrated circuits meeting this criterion are Advanced-Node ICs for parts 734 and 744 of the EAR",
+   "conditions": "Alternative criteria: logic, non-planar architecture or DRAM criteria",
+   "evidence": {
+    "provision": "§ 772.1 (Advanced-Node IC, criterion (2))",
+    "quote": "integrated circuits with 128 layers or"
+   }
+  },
+  {
+   "variable": "process_node",
+   "variable_text": "DRAM production technology node (nm half-pitch)",
+   "operator": "<=",
+   "value": 18,
+   "value_text": "18 nanometer half-pitch or less",
+   "unit": "nm half-pitch",
+   "measurement": "Calculated half-pitch per the IEEE/IRDS method in the Technical Note to the definition",
+   "level": "product",
+   "trigger": "scope_definition",
+   "consequence": "DRAM integrated circuits meeting this criterion are Advanced-Node ICs for parts 734 and 744 of the EAR",
+   "conditions": "Alternative criteria: logic, non-planar architecture or NAND criteria",
+   "evidence": {
+    "provision": "§ 772.1 (Advanced-Node IC, criterion (3))",
+    "quote": "nanometer half-pitch or less."
+   }
+  },
+  {
+   "variable": "process_node",
+   "variable_text": "EUV electromagnetic spectrum wavelength (nm)",
+   "operator": "range",
+   "value": 5,
+   "value_max": 124,
+   "value_text": "greater than 5 nm and less than 124 nm",
+   "unit": "nm",
+   "trigger": "scope_definition",
+   "consequence": "Wavelengths in this range are Extreme Ultraviolet (EUV) for the EAR",
+   "evidence": {
+    "provision": "§ 772.1 (Extreme Ultraviolet (EUV))",
+    "quote": "greater than 5 nm and less than 124 nm."
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "light source wavelength of lithography equipment (nm), shorter than 193 nm",
+   "operator": "<",
+   "value": 193,
+   "value_text": "shorter than 193 nm",
+   "unit": "nm",
+   "level": "product",
+   "trigger": "scope_definition",
+   "consequence": "Step-and-repeat or step-and-scan lithography equipment with this light source is within ECCN 3B001.f.1.a",
+   "conditions": "Alternative to ECCN 3B001.f.1.b criteria",
+   "evidence": {
+    "provision": "ECCN 3B001.f.1.a",
+    "quote": "than 193 nm; or"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "light source wavelength of lithography equipment (nm), equal to or longer than 193 nm",
+   "operator": ">=",
+   "value": 193,
+   "value_text": "equal to or longer than 193 nm",
+   "unit": "nm",
+   "level": "product",
+   "trigger": "scope_definition",
+   "consequence": "Lithography equipment meeting the conjunctive criteria in ECCN 3B001.f.1.b is within that paragraph",
+   "conditions": "Also requires a Minimum Resolvable Feature size of 45 nm or less and an overlay value criterion",
+   "evidence": {
+    "provision": "ECCN 3B001.f.1.b",
+    "quote": "longer than 193 nm and having all of the following:"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "Minimum Resolvable Feature size (MRF) of lithography pattern (nm)",
+   "operator": "<=",
+   "value": 45,
+   "value_text": "Minimum Resolvable Feature size (MRF) of 45 nm or less",
+   "unit": "nm",
+   "measurement": "MRF calculated by the formula in Technical Note 1 to ECCN 3B001.f.1.b",
+   "level": "product",
+   "trigger": "scope_definition",
+   "consequence": "Conjunctive criterion for ECCN 3B001.f.1.b.1",
+   "conditions": "Requires light source wavelength equal to or longer than 193 nm and an overlay criterion in 3B001.f.1.b.2",
+   "evidence": {
+    "provision": "ECCN 3B001.f.1.b.1",
+    "quote": "(MRF) of 45 nm or less; and"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "dedicated chuck overlay of lithography equipment (nm), less than or equal to",
+   "operator": "<=",
+   "value": 1.5,
+   "value_text": "maximum ‘dedicated chuck overlay’ value of less than or equal to 1.50 nm",
+   "unit": "nm",
+   "measurement": "Single machine overlay per Technical Note 2 to ECCN 3B001.f.1.b",
+   "level": "product",
+   "trigger": "scope_definition",
+   "consequence": "Lithography equipment with this overlay value meets the criterion in ECCN 3B001.f.1.b.2.a",
+   "conditions": "Alternative to 3B001.f.1.b.2.b; combined with MRF and wavelength criteria",
+   "evidence": {
+    "provision": "ECCN 3B001.f.1.b.2.a",
+    "quote": "overlay’ value of less than or equal to 1.50"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "dedicated chuck overlay of lithography equipment (nm), greater than 1.50 and up to 2.4",
+   "operator": "range",
+   "value": 1.5,
+   "value_max": 2.4,
+   "value_text": "greater than 1.50 nm but less than or equal to 2.4 nm",
+   "unit": "nm",
+   "measurement": "Single machine overlay per Technical Note 2 to ECCN 3B001.f.1.b",
+   "level": "product",
+   "trigger": "scope_definition",
+   "consequence": "Lithography equipment with this overlay value meets the criterion in ECCN 3B001.f.1.b.2.b",
+   "conditions": "Alternative to 3B001.f.1.b.2.a; combined with MRF and wavelength criteria",
+   "evidence": {
+    "provision": "ECCN 3B001.f.1.b.2.b",
+    "quote": "than or equal to 2.4 nm;"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "layer thickness uniformity across a 75 mm distance (% of thickness), for equipment producing layers of materials other than silicon",
+   "operator": "<",
+   "value": 2.5,
+   "value_text": "thickness uniform to less than ±2.5% across a distance of 75 mm or more",
+   "unit": "%",
+   "level": "product",
+   "trigger": "scope_definition",
+   "consequence": "Epitaxial growth equipment meeting this uniformity criterion is within ECCN 3B001.a.1",
+   "conditions": "Distance of 75 mm or more",
+   "evidence": {
+    "provision": "ECCN 3B001.a.1",
+    "quote": "±2.5% across a distance of 75 mm or more;"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "epitaxial deposition operating temperature (°C) for silicon epitaxial growth equipment",
+   "operator": "<=",
+   "value": 685,
+   "value_text": "epitaxial deposition operating temperature of 685 °C or below",
+   "unit": "°C",
+   "level": "product",
+   "trigger": "scope_definition",
+   "consequence": "Equipment meeting the conjunctive criteria in ECCN 3B001.a.4 is within that paragraph",
+   "conditions": "Also requires multiple chambers with high vacuum or inert environment and a preclean chamber",
+   "evidence": {
+    "provision": "ECCN 3B001.a.4.c",
+    "quote": "temperature of 685 °C or below;"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "aspect ratio of etched features (depth:width) for anisotropic dielectric etching equipment",
+   "operator": ">",
+   "value": 30,
+   "value_text": "aspect ratio greater than 30:1",
+   "unit": "aspect ratio (x:1)",
+   "level": "product",
+   "trigger": "scope_definition",
+   "consequence": "Etch equipment meeting the conjunctive criteria in ECCN 3B001.c.1.b is within that paragraph",
+   "conditions": "Also requires lateral dimension below 100 nm and RF pulsed output and fast gas switching valves",
+   "evidence": {
+    "provision": "ECCN 3B001.c.1.b",
+    "quote": "aspect ratio greater than 30:1"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "lateral dimension on the top surface of etched features (nm)",
+   "operator": "<",
+   "value": 100,
+   "value_text": "lateral dimension on the top surface of less than 100 nm",
+   "unit": "nm",
+   "level": "product",
+   "trigger": "scope_definition",
+   "consequence": "Conjunctive criterion for ECCN 3B001.c.1.b",
+   "conditions": "Also requires aspect ratio greater than 30:1",
+   "evidence": {
+    "provision": "ECCN 3B001.c.1.b",
+    "quote": "surface of less than 100 nm"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "silicon germanium-to-silicon (SiGe:Si) etch selectivity ratio",
+   "operator": ">=",
+   "value": 100,
+   "value_text": "largest ‘silicon germanium-to-silicon (SiGe:Si) etch selectivity’ of greater than or equal to 100:1",
+   "unit": "ratio (x:1)",
+   "measurement": "Measured at a Ge concentration of 30% or more per Technical Note 1 to ECCN 3B001.c",
+   "level": "product",
+   "trigger": "scope_definition",
+   "consequence": "Isotropic dry etch equipment meeting this criterion is within ECCN 3B001.c.1.a",
+   "conditions": "Alternative criteria in 3B001.c.1.b and c.1.c",
+   "evidence": {
+    "provision": "ECCN 3B001.c.1.a",
+    "quote": "of greater than or equal to 100:1;"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "number of individually controllable variable temperature elements in electrostatic chuck",
+   "operator": ">=",
+   "value": 20,
+   "value_text": "Electrostatic chuck with twenty or more individually controllable variable temperature elements",
+   "unit": "elements",
+   "level": "product",
+   "trigger": "scope_definition",
+   "consequence": "Conjunctive criterion for anisotropic dry etch equipment in ECCN 3B001.c.1.c",
+   "conditions": "Also requires pulsed RF output and fast gas switching valves",
+   "evidence": {
+    "provision": "ECCN 3B001.c.1.c.3",
+    "quote": "Electrostatic chuck with twenty or"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "gas switching time of fast gas switching valve(s) (ms)",
+   "operator": "<",
+   "value": 300,
+   "value_text": "fast gas switching valve(s) with switching time less than 300 milliseconds",
+   "unit": "ms",
+   "level": "product",
+   "trigger": "scope_definition",
+   "consequence": "Conjunctive criterion for anisotropic dielectric etch equipment in ECCN 3B001.c.1.b.2",
+   "conditions": "Also requires aspect ratio above 30:1, lateral dimension below 100 nm and a pulsed RF source",
+   "evidence": {
+    "provision": "ECCN 3B001.c.1.b.2",
+    "quote": "valve(s) with switching time less than 300"
+   }
+  },
+  {
+   "variable": "transaction_value",
+   "variable_text": "License Exception LVS value limit for ECCN 3B001 items (USD)",
+   "operator": "<=",
+   "value": 500,
+   "value_text": "LVS: $500, except semiconductor manufacturing equipment specified in 3B001.a.4, c, d, f.1.b, k to p.",
+   "unit": "USD",
+   "currency": "USD",
+   "trigger": "eligibility",
+   "consequence": "Value limit for License Exception LVS for listed ECCN 3B001 items, excluding listed semiconductor manufacturing equipment",
+   "conditions": "Does not apply to semiconductor manufacturing equipment specified in 3B001.a.4, c, d, f.1.b, k to p",
+   "evidence": {
+    "provision": "Supp. No. 1 to Part 774, ECCN 3B001 (License Exceptions)",
+    "quote": "LVS: $500, except semiconductor"
+   }
+  },
+  {
+   "variable": "process_node",
+   "variable_text": "technology level of integrated circuits (mm) for 3E001 Note 2 exclusion",
+   "operator": ">=",
+   "value": 0.13,
+   "value_text": "at or above 0.130 mm",
+   "unit": "mm",
+   "level": "product",
+   "trigger": "exclusion",
+   "consequence": "Technology for listed integrated circuits is excluded from ECCN 3E001 when all Note 2 conditions hold",
+   "conditions": "Also requires three or fewer metal layers",
+   "evidence": {
+    "provision": "ECCN 3E001 Note 2 (a)",
+    "quote": "(a) Using ‘‘technology’’ at or above 0.130"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "number of metal layers in multi-layer structures of listed integrated circuits",
+   "operator": "<=",
+   "value": 3,
+   "value_text": "with three or fewer metal layers",
+   "unit": "metal layers",
+   "level": "product",
+   "trigger": "exclusion",
+   "consequence": "Conjunctive condition for the ECCN 3E001 Note 2 exclusion",
+   "conditions": "Also requires technology at or above 0.130 mm",
+   "evidence": {
+    "provision": "ECCN 3E001 Note 2 (b)",
+    "quote": "with three or fewer metal layers."
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "front-end integrated circuit ‘‘production’’ equipment",
+   "defined_in": "§ 744.23(a)(4), Note 1",
+   "evidence": {
+    "provision": "§ 744.23(a)(4), Note 1",
+    "quote": "Front-end integrated circuit ‘‘production’’ equipment includes equipment used in the production stages from a blank wafer or substrate to a completed wafer or substrate"
+   }
+  },
+  {
+   "term": "‘‘production’’ (exclusion for back-end steps)",
+   "defined_in": "§ 744.6(d)(3)",
+   "evidence": {
+    "provision": "§ 744.6(d)(3)",
+    "quote": "does not apply to back-end steps such as assembly, test, or packaging that do not alter the integrated circuit technology level."
+   }
+  },
+  {
+   "term": "advanced-node integrated circuits",
+   "defined_in": "§ 772.1 of the EAR (cross-reference; definition text not in this part)",
+   "evidence": {
+    "provision": "§ 734.4(a)(3)",
+    "quote": "meet the parameter specified in paragraph (1) of that definition in § 772.1 of the EAR"
+   }
+  },
+  {
+   "term": "U.S. person",
+   "defined_in": "§ 772.1 of the EAR (cross-reference; definition text not in this part)",
+   "evidence": {
+    "provision": "§ 744.6(d)(4)(i)",
+    "quote": "natural ‘‘U.S. person,’’ as defined in paragraphs (a)(1) and (3) of the definition in § 772.1 of the EAR"
+   }
+  },
+  {
+   "term": "Country Group D:5",
+   "defined_in": "Supplement no. 1 to part 740 of the EAR",
+   "evidence": {
+    "provision": "§ 742.4(a)(4)",
+    "quote": "either Macau or a destination specified in Country Group D:5 in supplement no. 1 to part 740 of the EAR"
+   }
+  },
+  {
+   "term": "Country Group A:5 or A:6",
+   "defined_in": "Supplement no. 1 to part 740 of the EAR",
+   "evidence": {
+    "provision": "§ 744.6(d)(4)(i)",
+    "quote": "a company headquartered in the United States or a destination specified in Country Group A:5 or A:6"
+   }
+  },
+  {
+   "term": "Advanced-Node Integrated Circuits (Advanced-Node IC)",
+   "defined_in": "§ 772.1 (EAR)",
+   "evidence": {
+    "provision": "§ 772.1",
+    "quote": "integrated circuits include integrated circuits that meet any of the following criteria:"
+   }
+  },
+  {
+   "term": "Extreme Ultraviolet (EUV)",
+   "defined_in": "§ 772.1 (EAR)",
+   "evidence": {
+    "provision": "§ 772.1",
+    "quote": "Extreme Ultraviolet (EUV) means"
+   }
+  },
+  {
+   "term": "Minimum Resolvable Feature size (MRF)",
+   "defined_in": "ECCN 3B001.f.1.b, Technical Note 1",
+   "evidence": {
+    "provision": "ECCN 3B001.f.1.b Technical Notes",
+    "quote": "The ‘Minimum Resolvable Feature size’"
+   }
+  },
+  {
+   "term": "Dedicated chuck overlay",
+   "defined_in": "ECCN 3B001.f.1.b, Technical Note 2",
+   "evidence": {
+    "provision": "ECCN 3B001.f.1.b Technical Notes",
+    "quote": "‘Dedicated chuck overlay’ is the"
+   }
+  },
+  {
+   "term": "Silicon germanium-to-silicon (SiGe:Si) etch selectivity",
+   "defined_in": "ECCN 3B001.c, Technical Note 1",
+   "evidence": {
+    "provision": "ECCN 3B001.c Technical Notes",
+    "quote": "selectivity’ is measured for a Ge"
+   }
+  },
+  {
+   "term": "Radical",
+   "defined_in": "ECCN 3B001, Technical Note 2 (for 3B001.c Note 1 and 3B001.d.14)",
+   "evidence": {
+    "provision": "ECCN 3B001 Technical Notes",
+    "quote": "‘radical’ is defined as an atom"
+   }
+  },
+  {
+   "term": "Work function metal",
+   "defined_in": "ECCN 3B001.d.8, Technical Note",
+   "evidence": {
+    "provision": "ECCN 3B001.d.8 Technical Note",
+    "quote": "‘work function metal’ is a material"
+   }
+  },
+  {
+   "term": "Semiconductor process tools",
+   "defined_in": "ECCN 3B001.e, Technical Note 1",
+   "evidence": {
+    "provision": "ECCN 3B001.e Technical Notes",
+    "quote": "‘semiconductor process tools’ refers to"
+   }
+  },
+  {
+   "term": "Sequential multiple wafer processing",
+   "defined_in": "ECCN 3B001.e, Technical Note 2",
+   "evidence": {
+    "provision": "ECCN 3B001.e Technical Notes",
+    "quote": "multiple wafer processing’ means the"
+   }
+  },
+  {
+   "term": "Computational lithography",
+   "defined_in": "ECCN 3D003, Related Definitions",
+   "evidence": {
+    "provision": "ECCN 3D003 Related Definitions",
+    "quote": "‘computational lithography’ is the"
+   }
+  },
+  {
+   "term": "Process Design Kit (PDK)",
+   "defined_in": "ECCN 3E001, Note 3 Technical Note",
+   "evidence": {
+    "provision": "ECCN 3E001 Note 3 Technical Note",
+    "quote": "a ‘Process Design Kit’ (‘PDK’)"
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "other",
+   "addressee": "exporter",
+   "summary": "No de minimis level applies to listed lithography equipment (ECCN 3B001.f.1.b.2.b) destined for development or production of advanced-node integrated circuits, unless the origin country lists the item on its own export control list.",
+   "applies_from": "effective November 17, 2023",
+   "conditional_on": "destined for development or production of advanced-node integrated circuits; origin country does not list the item on its export control list",
+   "evidence": {
+    "provision": "§ 734.4(a)(3)",
+    "quote": "There is no de minimis level for equipment meeting the parameters in ECCN 3B001.f.1.b.2.b"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "exporter",
+   "modality": "shall_not",
+   "summary": "The temporary general license under General Order No. 4 cannot be used for indigenous development or production of Category 3B tools in Macau or Country Group D:5 destinations.",
+   "applies_from": "effective November 17, 2023",
+   "conditional_on": "development or production of Category 3B tools at the direction of an entity headquartered in Macau or Country Group D:5",
+   "evidence": {
+    "provision": "Supplement no. 1 to part 736, General Order No. 4, paragraph (d)(4)(ii)",
+    "quote": "The TGL under paragraph (d)(1) of this supplement cannot be used for the indigenous"
+   }
+  },
+  {
+   "type": "record_keeping",
+   "addressee": "exporter",
+   "modality": "shall",
+   "summary": "Exports, reexports, in-country transfers and exports from abroad under the TGL are subject to part 762 recordkeeping, including records of directives; each party issuing or acting on a directive keeps a record of it.",
+   "applies_from": "effective November 17, 2023",
+   "conditional_on": "shipments made under the authorization of the TGL",
+   "evidence": {
+    "provision": "Supplement no. 1 to part 736, General Order No. 4, paragraph (d)(5)",
+    "quote": "All exports, reexports, transfer (in-country), and exports from abroad shipped under the authorization of this TGL are subject to the recordkeeping requirements of part 762 of the EAR."
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "exporter",
+   "modality": "shall_not",
+   "summary": "Items controlled under the listed ECCNs (new SME controls) and associated software and technology are not eligible for license exceptions other than License Exception GOV, restricted to § 740.11(b), when exported to Macau or Country Group D:5.",
+   "applies_from": "effective November 17, 2023",
+   "conditional_on": "export, reexport or in-country transfer to or within Macau or Country Group D:5",
+   "evidence": {
+    "provision": "§ 740.2(a)(9)(i)",
+    "quote": "the license exception is other than License Exception GOV, restricted to eligibility under the provisions of § 740.11(b)"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "exporter",
+   "modality": "shall",
+   "summary": "A license is required for exports, reexports and in-country transfers to or within Macau or Country Group D:5 of listed semiconductor manufacturing equipment, software and technology (ECCNs 3B001, 3B002, 3D001, 3D002, 3E001).",
+   "applies_from": "effective November 17, 2023",
+   "conditional_on": "destination is Macau or a destination in Country Group D:5",
+   "evidence": {
+    "provision": "§ 742.4(a)(4)",
+    "quote": "A license is required for exports, reexports, and transfers (in-country) to or within either Macau or a destination specified in Country Group D:5"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "License applications for the items in § 742.4(a)(4) are reviewed under the license review policies of § 744.23(d), except that applications are reviewed case by case where no license would be required under part 744.",
+   "applies_from": "effective November 17, 2023",
+   "conditional_on": "license application for items in § 742.4(a)(4)",
+   "evidence": {
+    "provision": "§ 742.4(b)(2)",
+    "quote": "License applications for items specified in paragraph (a)(4) of this section will be reviewed consistent with license review policies in § 744.23(d) of the EAR"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "exporter",
+   "modality": "shall",
+   "summary": "Regional stability license requirements apply to exports, reexports and in-country transfers to or within Macau or Country Group D:5 of listed advanced computing and semiconductor manufacturing items and associated software and technology, and to exports from abroad originating in China or Macau of certain 3E001 technology; deemed exports are excluded.",
+   "applies_from": "effective November 17, 2023",
+   "conditional_on": "destination is Macau or Country Group D:5, or export from abroad originating in China or Macau",
+   "evidence": {
+    "provision": "§ 742.6(a)(6)(i)",
+    "quote": "A license is required for items specified in ECCNs 3A090"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "exporter",
+   "modality": "shall",
+   "summary": "U.S. persons are informed that a license is required for shipping, transmitting, transferring, facilitating or servicing (including installation) listed items or end uses in China, Macau or Country Group D:5 when they know the activity is covered (advanced-node IC development or production, Category 3 items for advanced-node ICs, and listed SME).",
+   "applies_from": "effective November 17, 2023",
+   "conditional_on": "the person knows the export, reexport or in-country transfer meets one of the activities in paragraphs (c)(2)(i) through (iii)",
+   "evidence": {
+    "provision": "§ 744.6(c)(2)",
+    "quote": "then a license is required for shipping, transmitting, or transferring (in-country)"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "License applications submitted under the notice in § 744.6(c)(2) are reviewed with a presumption of denial for Macau and Country Group D:5 destinations, except for foreign-made items not subject to the EAR that perform the same function (presumption of approval); other applications are reviewed case by case.",
+   "applies_from": "effective November 17, 2023",
+   "conditional_on": "license application submitted under the notice in § 744.6(c)(2)",
+   "evidence": {
+    "provision": "§ 744.6(e)(3)",
+    "quote": "Applications for licenses submitted pursuant to the notice of a license requirement set forth in paragraph (c)(2) of this section will be reviewed with a presumption of denial"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "exporter",
+   "modality": "shall_not",
+   "summary": "General prohibition on exporting, reexporting or transferring (in-country) without a license, when the exporter knows the item is destined for supercomputer, advanced-node IC or SME end uses in China, Macau or Country Group D:5 (including SME for front-end IC production equipment); back-end exclusion in paragraph (a)(5).",
+   "applies_from": "effective November 17, 2023",
+   "conditional_on": "exporter has knowledge at the time of export, reexport or transfer that the item is destined for a listed destination, end use or end user; not excluded by paragraph (a)(5)",
+   "evidence": {
+    "provision": "§ 744.23(a)",
+    "quote": "you may not export, reexport, or transfer (in-country) without a license any item subject to the EAR described in paragraphs (a)(1) through (4) of this section"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "exporter",
+   "modality": "shall_not",
+   "summary": "Persons informed by BIS by specific notice or Federal Register amendment that a license is required for a specific export, reexport or transfer (in-country) to a certain end-user may not proceed without that license. Paragraph (c) adds that no license exception may overcome the prohibition in paragraph (a).",
+   "applies_from": "not stated in this part",
+   "conditional_on": "BIS has informed the person that a license is required for a specific end-user",
+   "evidence": {
+    "provision": "para. (b) and (c)",
+    "quote": "that a license is required for a specific export, reexport, or transfer (in-country)"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Specific notice under paragraph (b) is to be given only by, or at the direction of, the Deputy Assistant Secretary for Export Administration. Oral notice must be followed by a written notice within two working days signed by the Deputy Assistant Secretary or designee.",
+   "applies_from": "not stated in this part",
+   "conditional_on": "BIS gives specific notice under paragraph (b)",
+   "evidence": {
+    "provision": "para. (b)",
+    "quote": "Specific notice is to be given only by, or at the direction of, the Deputy Assistant Secretary for Export Administration."
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "License applications are reviewed with a presumption of denial for Macau and Country Group D:5 destinations, with a presumption of approval in specified cases, and case-by-case review otherwise, taking into account technology level, customers, compliance plans and contract sanctity.",
+   "applies_from": "not stated in this part",
+   "evidence": {
+    "provision": "para. (d)",
+    "quote": "Applications will be reviewed with a presumption of denial for Macau and destinations specified in Country Group D:5."
+   }
+  },
+  {
+   "type": "licensing_certification",
+   "addressee": "exporter",
+   "modality": "shall",
+   "summary": "Supplement No. 1 to Part 774 revises ECCNs 3B001, 3B002, 3D001, 3D002, 3D003 and 3E001, each with license requirements by reason for control (NS, RS, AT, MT, NP) and country chart columns. A License Requirements Note in 3D002 and 3E001 refers to additional requirements in § 744.17 for certain microprocessors.",
+   "applies_from": "not stated in this part",
+   "conditional_on": "export, reexport or transfer of the listed items to the specified destinations",
+   "evidence": {
+    "provision": "Supp. No. 1 to Part 774, ECCNs 3B001, 3D001, 3E001 (License Requirements)",
+    "quote": "NS applies to ‘‘technology’’ for commodities controlled"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "exporter",
+   "modality": "shall",
+   "summary": "ECCN 3D001 refers to § 743.1 of the EAR for reporting requirements for exports under License Exceptions, Special Comprehensive Licenses and Validated End-User authorizations. The reporting duty itself is stated in § 743.1, not in this part.",
+   "applies_from": "not stated in this part",
+   "conditional_on": "export under License Exceptions, Special Comprehensive Licenses or Validated End-User authorizations",
+   "evidence": {
+    "provision": "Supp. No. 1 to Part 774, ECCN 3D001 (Reporting Requirements)",
+    "quote": "See § 743.1 of the EAR for reporting requirements for exports under License Exceptions, Special Comprehensive Licenses, and Validated End-User authorizations."
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "exporter",
+   "modality": "shall_not",
+   "summary": "License Exception STA may not be used to ship or transmit software or technology specially designed for the development or production of listed equipment (e.g., 3A002.g.1 or 3B001.a.2) to Country Group A:6 destinations, and for certain items to Country Group A:5 or A:6 destinations.",
+   "applies_from": "not stated in this part",
+   "conditional_on": "shipment or transmission of listed software or technology to Country Group A:5 or A:6 destinations",
+   "evidence": {
+    "provision": "Supp. No. 1 to Part 774, ECCN 3D001 (Special Conditions for STA)",
+    "quote": "License Exception STA may not be"
+   }
+  }
+ ],
+ "section_status": {
+  "enforcement": {
+   "status": "not_found",
+   "note": "This part contains no sanction, fine, criminal penalty, licence revocation, suspension, blocking or clawback provision. It covers § 744 prohibition paragraphs (b) to (d) (BIS notice, license exceptions, license review standards), Part 772 definitions and Part 774 ECCN amendments. The other part of the document is annotated separately."
+  }
+ },
+ "enforcement": []
+}

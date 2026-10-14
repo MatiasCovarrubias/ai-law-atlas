@@ -1,0 +1,995 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "cn-dsl-2021",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (connectors/fetch_texts.py)",
+  "url": "http://www.npc.gov.cn/npc/c2/c30834/202106/t20210610_311888.html",
+  "retrieved": "2026-10-13",
+  "version": "as fetched",
+  "language": "zh",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "cybersecurity",
+   "data_protection",
+   "data_transfer_localization",
+   "data_access_sharing"
+  ],
+  "primary_domain": "cybersecurity",
+  "mechanisms": [
+   "mandate_obligation",
+   "prohibition_ban",
+   "export_import_control",
+   "designation_tiering",
+   "institution_setup",
+   "standard_setting",
+   "licensing_permit_certification",
+   "liability_rule"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "data_controller",
+   "data_broker",
+   "essential_entity",
+   "government_agency"
+  ],
+  "affected_roles": [
+   "general_public",
+   "consumers_users"
+  ],
+  "decision_margins": [
+   "firm:compliance_process",
+   "firm:trade",
+   "firm:entry_market_access",
+   "household:data_privacy"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national",
+    "extraterritorial"
+   ],
+   "description": "Applies to data processing in the territory of the PRC and reaches processing carried out outside China that harms PRC national security, public interest or the lawful rights of citizens and organisations.",
+   "evidence": {
+    "provision": "Art. 2(2)",
+    "quote": "在中华人民共和国境外开展数据处理活动，损害中华人民共和国国家安全、公共利益或者公民、组织合法权益的，依法追究法律责任。"
+   }
+  },
+  "agora_harms": [
+   "Violation of civil or human rights, including privacy"
+  ],
+  "agora_incentives": [
+   "Civil liability",
+   "Criminal liability",
+   "Fines"
+  ],
+  "agora_strategies": [
+   "Input controls: Data circulation"
+  ]
+ },
+ "summary": {
+  "short": "Sets rules for data processing and data security in China: data classification, risk monitoring, incident response, a national security review, export controls, and limits on cross-border transfer of important data and on foreign data requests. Penalties apply from 1 September 2021.",
+  "long": "Governs data processing (collection, storage, use, processing, transmission, provision, disclosure) and data security in mainland China, and reaches processing outside China that harms Chinese national security, public interest or the rights of citizens and organisations. Establishes a central national security coordination mechanism and sectoral and local data regulators. Requires data classification and grading, with catalogues of important data and stricter rules for core data; provides for risk assessment, reporting, incident response and a national security review of data processing. Processors must maintain full-process data security management, training and technical measures; processors of important data must designate a responsible person and submit periodic risk assessment reports. Imposes export controls on certain controlled items, restricts transfer of important data abroad and disclosure of stored data to foreign judicial or law-enforcement bodies, regulates data trading intermediaries, requires administrative licences where other laws require them, and sets rules for government data and open government data. Penalties include warnings, fines (for basic violations 50,000 to 500,000 yuan, higher in serious cases), suspension of business, revocation of licences and civil or criminal liability. Takes effect 1 September 2021."
+ },
+ "relations": [
+  {
+   "relation": "cross_references",
+   "target_text": "中华人民共和国网络安全法 (Cybersecurity Law of the PRC)",
+   "note": "Art. 31 applies the Cybersecurity Law to cross-border transfer of important data by critical information infrastructure operators.",
+   "evidence": {
+    "provision": "第三十一条",
+    "quote": "适用《中华人民共和国网络安全法》的规定"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "网络安全等级保护制度 (cybersecurity classified protection system)",
+   "note": "Art. 27 requires data processing over information networks to build on the cybersecurity classified protection system.",
+   "evidence": {
+    "provision": "第二十七条",
+    "quote": "在网络安全等级保护制度的基础上"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "中华人民共和国保守国家秘密法 (Law on Guarding State Secrets of the PRC)",
+   "note": "Art. 53 applies the State Secrets law and other laws and regulations to data processing involving state secrets.",
+   "evidence": {
+    "provision": "第五十三条",
+    "quote": "适用《中华人民共和国保守国家秘密法》等法律、行政法规的规定"
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "中央国家安全领导机构",
+   "role": "designated",
+   "function": "Decision-making and coordination of national data security work; studies and guides national data security strategy (Art. 5).",
+   "evidence": {
+    "provision": "第五条",
+    "quote": "中央国家安全领导机构负责国家数据安全工作的决策和议事协调"
+   }
+  },
+  {
+   "name": "国家数据安全工作协调机制",
+   "role": "designated",
+   "function": "Coordination mechanism established under Art. 5; coordinates departments in formulating the important data catalogue (Art. 21) and risk information work (Art. 22).",
+   "evidence": {
+    "provision": "第二十一条",
+    "quote": "国家数据安全工作协调机制统筹协调有关部门制定重要数据目录"
+   }
+  },
+  {
+   "name": "国家网信部门",
+   "role": "designated",
+   "function": "Coordinates network data security and related regulatory work (Art. 6); with State Council departments, formulates export security rules for important data of other processors (Art. 31).",
+   "evidence": {
+    "provision": "第六条",
+    "quote": "国家网信部门依照本法和有关法律、行政法规的规定，负责统筹协调网络数据安全和相关监管工作"
+   }
+  },
+  {
+   "name": "工业、电信、交通、金融、自然资源、卫生健康、教育、科技等主管部门",
+   "role": "designated",
+   "function": "Sectoral regulators with data security supervision duties for their own industry or field (Art. 6).",
+   "evidence": {
+    "provision": "第六条",
+    "quote": "承担本行业、本领域数据安全监管职责"
+   }
+  },
+  {
+   "name": "公安机关、国家安全机关",
+   "role": "designated",
+   "function": "Data security supervision within their own remits (Art. 6); may request data for national security or criminal investigation (Art. 35).",
+   "evidence": {
+    "provision": "第六条",
+    "quote": "公安机关、国家安全机关等依照本法和有关法律、行政法规的规定，在各自职责范围内承担数据安全监管职责"
+   }
+  },
+  {
+   "name": "国务院标准化行政主管部门",
+   "role": "designated",
+   "function": "Organises formulation and revision of data development technology, product and data security standards together with State Council departments (Art. 17).",
+   "evidence": {
+    "provision": "第十七条",
+    "quote": "国务院标准化行政主管部门和国务院有关部门根据各自的职责，组织制定并适时修订有关数据开发利用技术、产品和数据安全相关标准"
+   }
+  },
+  {
+   "name": "国务院有关部门",
+   "role": "designated",
+   "function": "Co-formulates, with the national cyberspace authority, export security rules for important data of processors other than critical information infrastructure operators (Art. 31).",
+   "evidence": {
+    "provision": "第三十一条",
+    "quote": "国家网信部门会同国务院有关部门制定"
+   }
+  },
+  {
+   "name": "有关主管部门",
+   "role": "designated",
+   "function": "Generic competent authority: receives complaints (Art. 12), activates emergency response (Art. 23), summons and orders rectification (Art. 44), and imposes penalties (Arts. 45-48).",
+   "evidence": {
+    "provision": "第四十五条",
+    "quote": "由有关主管部门责令改正，给予警告"
+   }
+  },
+  {
+   "name": "中华人民共和国主管机关",
+   "role": "designated",
+   "function": "Handles foreign judicial or law enforcement requests for data and approves any provision of data stored in China to foreign authorities (Art. 36).",
+   "evidence": {
+    "provision": "第三十六条",
+    "quote": "非经中华人民共和国主管机关批准，境内的组织、个人不得向外国司法或者执法机构提供存储于中华人民共和国境内的数据"
+   }
+  },
+  {
+   "name": "中央军事委员会",
+   "role": "designated",
+   "function": "Formulates separately the measures for military data security under this law (Art. 54).",
+   "evidence": {
+    "provision": "第五十四条",
+    "quote": "军事数据安全保护的办法，由中央军事委员会依据本法另行制定"
+   }
+  },
+  {
+   "name": "国家机关",
+   "role": "addressee",
+   "function": "Public bodies bound by government data security duties, including data security management systems (Art. 39), entrusted-processing controls (Art. 40) and open data duties (Arts. 41-42).",
+   "evidence": {
+    "provision": "第三十九条",
+    "quote": "国家机关应当依照法律、行政法规的规定，建立健全数据安全管理制度"
+   }
+  }
+ ],
+ "notes": "Text is the NPC website version as adopted on 2021-06-10; Art. 55 sets entry into force on 2021-09-01. No legal_basis, amends, repeals or enacted_by_bill relation is stated in this text. Art. 54 military data measures and the Art. 31 export measures are to be issued separately and are not in this text. Art. 45 para. 2 uses 国家核心数据 without a definition beyond Art. 21. Relations with no registry ID carry an empty target_instrument_id; lei and ticker are empty because no firm is named.",
+ "events": [
+  {
+   "event": "adopted",
+   "date": "2021-06-10",
+   "date_type": "absolute",
+   "date_text": "2021年6月10日第十三届全国人民代表大会常务委员会第二十九次会议通过",
+   "applies_to": "entire law",
+   "evidence": {
+    "provision": "Title block (dateline)",
+    "quote": "2021年6月10日第十三届全国人民代表大会常务委员会第二十九次会议通过"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2021-09-01",
+   "date_type": "absolute",
+   "date_text": "本法自2021年9月1日起施行",
+   "applies_to": "entire law",
+   "evidence": {
+    "provision": "第五十五条",
+    "quote": "本法自2021年9月1日起施行"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "other",
+   "variable_text": "违法所得 (illegal gains of a data trading intermediary)",
+   "operator": "<",
+   "value": 100000,
+   "value_text": "违法所得不足十万元",
+   "unit": "yuan",
+   "currency": "CNY",
+   "measurement": "Amount of illegal gains (违法所得) of the intermediary institution that failed its Art. 33 duties; applies where there are no such gains or gains are below this amount",
+   "level": "entity",
+   "trigger": "penalty_tier",
+   "consequence": "Selects the fine band: 100,000 to 1,000,000 yuan, instead of 1 to 10 times the illegal gains (Art. 47)",
+   "conditions": "Applies to a data trading intermediary service institution that did not perform the obligations in Art. 33 (source verification, identity review, record keeping)",
+   "evidence": {
+    "provision": "Art. 47 (第四十七条)",
+    "quote": "没有违法所得或者违法所得不足十万元的，处十万元以上一百万元以下罚款"
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "数据 (data)",
+   "defined_in": "cn-dsl-2021 (this instrument)",
+   "evidence": {
+    "provision": "Art. 3 para. 1 (第三条第一款)",
+    "quote": "本法所称数据，是指任何以电子或者其他方式对信息的记录。"
+   }
+  },
+  {
+   "term": "数据处理 (data processing)",
+   "defined_in": "cn-dsl-2021 (this instrument)",
+   "evidence": {
+    "provision": "Art. 3 para. 2 (第三条第二款)",
+    "quote": "数据处理，包括数据的收集、存储、使用、加工、传输、提供、公开等。"
+   }
+  },
+  {
+   "term": "数据安全 (data security)",
+   "defined_in": "cn-dsl-2021 (this instrument)",
+   "evidence": {
+    "provision": "Art. 3 para. 3 (第三条第三款)",
+    "quote": "数据安全，是指通过采取必要措施，确保数据处于有效保护和合法利用的状态，以及具备保障持续安全状态的能力。"
+   }
+  },
+  {
+   "term": "国家核心数据 (national core data)",
+   "defined_in": "cn-dsl-2021 (this instrument)",
+   "evidence": {
+    "provision": "Art. 21 para. 2 (第二十一条第二款)",
+    "quote": "关系国家安全、国民经济命脉、重要民生、重大公共利益等数据属于国家核心数据，实行更加严格的管理制度。"
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The central national security leadership body is responsible for national data security decision-making and coordination, and for establishing a national data security coordination mechanism.",
+   "applies_from": "2021-09-01",
+   "evidence": {
+    "provision": "Art. 5",
+    "quote": "中央国家安全领导机构负责国家数据安全工作的决策和议事协调"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "regulator",
+   "modality": "shall",
+   "summary": "Sectoral competent authorities (industry, telecoms, transport, finance, natural resources, health, education, science and technology) bear data security supervision duties in their own sectors; public security, state security and the national cyberspace authority have supervisory and coordination roles.",
+   "applies_from": "2021-09-01",
+   "evidence": {
+    "provision": "Art. 6",
+    "quote": "工业、电信、交通、金融、自然资源、卫生健康、教育、科技等主管部门承担本行业、本领域数据安全监管职责。"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_processor",
+   "modality": "shall",
+   "summary": "Persons carrying out data processing activities must comply with laws and regulations, respect social morality and ethics, observe business and professional ethics, act honestly, perform data security protection duties, bear social responsibility, and not endanger national security, public interest or the lawful rights of individuals and organizations.",
+   "applies_from": "2021-09-01",
+   "evidence": {
+    "provision": "Art. 8",
+    "quote": "开展数据处理活动，应当遵守法律、法规"
+   }
+  },
+  {
+   "type": "complaint_mechanism",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Authorities receiving complaints or reports about violations must handle them promptly under the law and keep the complainant's information confidential.",
+   "applies_from": "2021-09-01",
+   "evidence": {
+    "provision": "Art. 12",
+    "quote": "收到投诉、举报的部门应当及时依法处理。"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "People's governments at or above the provincial level must include the digital economy in their national economic and social development plans and formulate digital economy plans as needed.",
+   "applies_from": "2021-09-01",
+   "evidence": {
+    "provision": "Art. 14",
+    "quote": "省级以上人民政府应当将数字经济发展纳入本级国民经济和社会发展规划"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Providers of intelligent public services must fully consider the needs of elderly and disabled persons and avoid obstructing their daily lives.",
+   "applies_from": "2021-09-01",
+   "evidence": {
+    "provision": "Art. 15",
+    "quote": "提供智能化公共服务，应当充分考虑老年人、残疾人的需求"
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The State Council standardization authority and relevant State Council departments organize the formulation and periodic revision of data development and data security standards.",
+   "applies_from": "2021-09-01",
+   "evidence": {
+    "provision": "Art. 17",
+    "quote": "组织制定并适时修订有关数据开发利用技术、产品和数据安全相关标准"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The State establishes and improves a data trading management system to regulate data trading conduct.",
+   "applies_from": "2021-09-01",
+   "evidence": {
+    "provision": "Art. 19",
+    "quote": "国家建立健全数据交易管理制度，规范数据交易行为"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The State establishes a classified and tiered data protection system; the coordination mechanism and departments and regions compile important data catalogues and protect listed data.",
+   "applies_from": "2021-09-01",
+   "evidence": {
+    "provision": "Art. 21",
+    "quote": "国家建立数据分类分级保护制度"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The State establishes data security risk assessment, reporting, information sharing and monitoring and early-warning mechanisms.",
+   "applies_from": "2021-09-01",
+   "evidence": {
+    "provision": "Art. 22",
+    "quote": "国家建立集中统一、高效权威的数据安全风险评估、报告、信息共享、监测预警机制"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Competent authorities must activate emergency plans and take emergency disposal measures when data security incidents occur, and publish public-relevant warnings.",
+   "applies_from": "2021-09-01",
+   "evidence": {
+    "provision": "Art. 23",
+    "quote": "有关主管部门应当依法启动应急预案"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The State establishes a data security review system and conducts national security review of data processing activities that affect or may affect national security.",
+   "applies_from": "2021-09-01",
+   "evidence": {
+    "provision": "Art. 24",
+    "quote": "国家建立数据安全审查制度，对影响或者可能影响国家安全的数据处理活动进行国家安全审查"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The State implements export controls on controlled data items related to national security and international obligations.",
+   "applies_from": "2021-09-01",
+   "evidence": {
+    "provision": "Art. 25",
+    "quote": "国家对与维护国家安全和利益、履行国际义务相关的属于管制物项的数据依法实施出口管制"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "may",
+   "summary": "The People's Republic of China may take reciprocal measures against a state or region that adopts discriminatory prohibitions or restrictions concerning data and related technologies.",
+   "applies_from": "2021-09-01",
+   "conditional_on": "Discriminatory measures taken by a state or region against China in investment or trade concerning data",
+   "evidence": {
+    "provision": "Art. 26",
+    "quote": "中华人民共和国可以根据实际情况对该国家或者地区对等采取措施"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "data_processor",
+   "modality": "shall",
+   "summary": "Data processing activities must establish and improve a full-process data security management system, organize data security education and training, and adopt technical and other necessary measures; network-based processing must also follow the multi-level cybersecurity protection system.",
+   "applies_from": "2021-09-01",
+   "evidence": {
+    "provision": "Art. 27",
+    "quote": "开展数据处理活动应当依照法律、法规的规定，建立健全全流程数据安全管理制度"
+   }
+  },
+  {
+   "type": "management_system",
+   "addressee": "data_processor",
+   "modality": "shall",
+   "summary": "Processors of important data must designate a person responsible for data security and a management body, and implement data security protection responsibilities.",
+   "applies_from": "2021-09-01",
+   "conditional_on": "Processing of important data",
+   "evidence": {
+    "provision": "Art. 27",
+    "quote": "重要数据的处理者应当明确数据安全负责人和管理机构"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_processor",
+   "modality": "shall",
+   "summary": "Data processing and research and development of new data technologies should promote economic and social development, enhance people's welfare, and conform to social morality and ethics.",
+   "applies_from": "2021-09-01",
+   "evidence": {
+    "provision": "Art. 28",
+    "quote": "开展数据处理活动以及研究开发数据新技术，应当有利于促进经济社会发展"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "data_processor",
+   "modality": "shall",
+   "summary": "Data processing activities must strengthen risk monitoring and take remedial measures immediately when data security defects or vulnerabilities are found.",
+   "applies_from": "2021-09-01",
+   "evidence": {
+    "provision": "Art. 29",
+    "quote": "开展数据处理活动应当加强风险监测，发现数据安全缺陷、漏洞等风险时，应当立即采取补救措施"
+   }
+  },
+  {
+   "type": "incident_reporting",
+   "addressee": "data_processor",
+   "modality": "shall",
+   "summary": "When a data security incident occurs, processors must immediately take disposal measures, promptly notify users as prescribed, and report to the competent authorities.",
+   "applies_from": "2021-09-01",
+   "conditional_on": "Occurrence of a data security incident",
+   "evidence": {
+    "provision": "Art. 29",
+    "quote": "发生数据安全事件时，应当立即采取处置措施，按照规定及时告知用户并向有关主管部门报告"
+   }
+  },
+  {
+   "type": "risk_assessment",
+   "addressee": "data_processor",
+   "modality": "shall",
+   "summary": "Processors of important data must conduct periodic risk assessments of their data processing as prescribed and submit risk assessment reports to the competent authorities (second character: reporting to authorities); report content is specified.",
+   "applies_from": "2021-09-01",
+   "conditional_on": "Processing of important data",
+   "evidence": {
+    "provision": "Art. 30",
+    "quote": "重要数据的处理者应当按照规定对其数据处理活动定期开展风险评估，并向有关主管部门报送风险评估报告"
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The national cyberspace authority, together with relevant State Council departments, formulates the rules for outbound security management of important data collected and generated by processors other than critical information infrastructure operators.",
+   "applies_from": "2021-09-01",
+   "conditional_on": "Important data collected by processors other than critical information infrastructure operators",
+   "evidence": {
+    "provision": "Art. 31",
+    "quote": "其他数据处理者在中华人民共和国境内运营中收集和产生的重要数据的出境安全管理办法，由国家网信部门会同国务院有关部门制定"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "data_processor",
+   "modality": "shall_not",
+   "summary": "Persons and organizations collecting data must use lawful and proper means and must not steal or otherwise unlawfully obtain data.",
+   "applies_from": "2021-09-01",
+   "evidence": {
+    "provision": "Art. 32",
+    "quote": "不得窃取或者以其他非法方式获取数据"
+   }
+  },
+  {
+   "type": "data_minimization",
+   "addressee": "data_processor",
+   "modality": "shall",
+   "summary": "Where laws or administrative regulations prescribe the purpose and scope of data collection or use, data must be collected and used within those prescribed purpose and scope.",
+   "applies_from": "2021-09-01",
+   "conditional_on": "Laws or administrative regulations prescribe purpose and scope of data collection or use",
+   "evidence": {
+    "provision": "Art. 32",
+    "quote": "应当在法律、行政法规规定的目的和范围内收集、使用数据"
+   }
+  },
+  {
+   "type": "verification_gatekeeping",
+   "addressee": "data_broker",
+   "modality": "shall",
+   "summary": "Intermediary institutions for data trading services must require data providers to explain data sources and verify the identities of both trading parties.",
+   "applies_from": "2021-09-01",
+   "conditional_on": "Providing data trading intermediary services",
+   "evidence": {
+    "provision": "Art. 33",
+    "quote": "应当要求数据提供方说明数据来源，审核交易双方的身份"
+   }
+  },
+  {
+   "type": "record_keeping",
+   "addressee": "data_broker",
+   "modality": "shall",
+   "summary": "Intermediary institutions for data trading services must retain verification and transaction records.",
+   "applies_from": "2021-09-01",
+   "conditional_on": "Providing data trading intermediary services",
+   "evidence": {
+    "provision": "Art. 33",
+    "quote": "并留存审核、交易记录"
+   }
+  },
+  {
+   "type": "licensing_certification",
+   "addressee": "data_processor",
+   "modality": "shall",
+   "summary": "Providers of data processing-related services must obtain an administrative licence where laws or administrative regulations require one.",
+   "applies_from": "2021-09-01",
+   "conditional_on": "Laws or administrative regulations require an administrative licence for the service",
+   "evidence": {
+    "provision": "Art. 34",
+    "quote": "服务提供者应当依法取得许可"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Public security and state security organs requesting data for national security or criminal investigation must follow national rules and strict approval procedures and act lawfully.",
+   "applies_from": "2021-09-01",
+   "conditional_on": "Data requested for national security or criminal investigation",
+   "evidence": {
+    "provision": "Art. 35",
+    "quote": "应当按照国家有关规定，经过严格的批准手续，依法进行"
+   }
+  },
+  {
+   "type": "cooperation_with_authority",
+   "addressee": "data_holder",
+   "modality": "shall",
+   "summary": "Organizations and individuals must cooperate with public security and state security data requests made under Art. 35.",
+   "applies_from": "2021-09-01",
+   "conditional_on": "Data requests by public security or state security organs under Art. 35",
+   "evidence": {
+    "provision": "Art. 35",
+    "quote": "有关组织、个人应当予以配合"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The competent authority handles requests from foreign judicial or law enforcement bodies for data under international treaties or on the principle of equality and reciprocity.",
+   "applies_from": "2021-09-01",
+   "conditional_on": "Requests from foreign judicial or law enforcement bodies for data",
+   "evidence": {
+    "provision": "Art. 36",
+    "quote": "处理外国司法或者执法机构关于提供数据的请求"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "data_holder",
+   "modality": "shall_not",
+   "summary": "Domestic organizations and individuals must not provide data stored in China to foreign judicial or law enforcement bodies without approval from the competent authority.",
+   "applies_from": "2021-09-01",
+   "conditional_on": "No approval from the competent authority",
+   "evidence": {
+    "provision": "Art. 36",
+    "quote": "非经中华人民共和国主管机关批准，境内的组织、个人不得向外国司法或者执法机构提供存储于中华人民共和国境内的数据"
+   }
+  },
+  {
+   "type": "data_minimization",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "State organs collecting or using data to perform statutory duties must do so within their statutory scope and under the conditions and procedures set by law and regulation.",
+   "applies_from": "2021-09-01",
+   "conditional_on": "Collection or use of data for performing statutory duties",
+   "evidence": {
+    "provision": "Art. 38",
+    "quote": "国家机关为履行法定职责的需要收集、使用数据，应当在其履行法定职责的范围内依照法律、行政法规规定的条件和程序进行"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "government_agency",
+   "modality": "shall_not",
+   "summary": "State organs must keep confidential personal privacy, personal information, trade secrets and confidential business information obtained in performing duties, and must not disclose or unlawfully provide them to others.",
+   "applies_from": "2021-09-01",
+   "evidence": {
+    "provision": "Art. 38",
+    "quote": "应当依法予以保密，不得泄露或者非法向他人提供"
+   }
+  },
+  {
+   "type": "management_system",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "State organs must establish and improve data security management systems and implement data security protection responsibilities to safeguard government data.",
+   "applies_from": "2021-09-01",
+   "evidence": {
+    "provision": "Art. 39",
+    "quote": "国家机关应当依照法律、行政法规的规定，建立健全数据安全管理制度，落实数据安全保护责任"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "State organs entrusting third parties to build, maintain, store or process e-government systems or government data must obtain strict approval and supervise the trustee's data security performance.",
+   "applies_from": "2021-09-01",
+   "conditional_on": "Entrusting a third party with e-government systems or government data",
+   "evidence": {
+    "provision": "Art. 40",
+    "quote": "国家机关委托他人建设、维护电子政务系统，存储、加工政务数据，应当经过严格的批准程序，并应当监督受托方履行相应的数据安全保护义务"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "data_processor",
+   "modality": "shall_not",
+   "summary": "Trustees entrusted with government data must perform data security obligations under law and contract and must not retain, use, disclose or provide government data without authorization.",
+   "applies_from": "2021-09-01",
+   "conditional_on": "Entrusted by a state organ with government data",
+   "evidence": {
+    "provision": "Art. 40",
+    "quote": "不得擅自留存、使用、泄露或者向他人提供政务数据"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "State organs must publish government data timely and accurately as prescribed, except where disclosure is prohibited by law.",
+   "applies_from": "2021-09-01",
+   "conditional_on": "Government data not prohibited from disclosure by law",
+   "evidence": {
+    "provision": "Art. 41",
+    "quote": "国家机关应当遵循公正、公平、便民的原则，按照规定及时、准确地公开政务数据"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The State formulates a government data open catalogue and builds a unified government data open platform.",
+   "applies_from": "2021-09-01",
+   "evidence": {
+    "provision": "Art. 42",
+    "quote": "国家制定政务数据开放目录，构建统一规范、互联互通、安全可控的政务数据开放平台"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_processor",
+   "modality": "shall",
+   "summary": "Data processing involving state secrets, statistics, archives or personal information must also comply with the other applicable laws and regulations.",
+   "applies_from": "2021-09-01",
+   "conditional_on": "Processing involving state secrets, statistics or archives, or personal information",
+   "evidence": {
+    "provision": "Art. 53",
+    "quote": "开展涉及个人信息的数据处理活动，还应当遵守有关法律、行政法规的规定"
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Central Military Commission formulates separate measures for the security protection of military data.",
+   "applies_from": "2021-09-01",
+   "evidence": {
+    "provision": "Art. 54",
+    "quote": "军事数据安全保护的办法，由中央军事委员会依据本法另行制定"
+   }
+  }
+ ],
+ "enforcement": [
+  {
+   "sanction_type": "other",
+   "authority": "有关主管部门 (competent authorities)",
+   "triggered_by": "Discovery of a relatively large security risk in a data processing activity during supervision (Art. 44)",
+   "max_penalty_text": "约谈 (summons/interview) and order to take measures to rectify and remove hidden dangers; no monetary penalty stated",
+   "cure_period": "rectification ordered; no fixed period stated",
+   "evidence": {
+    "provision": "Art. 44",
+    "quote": "可以按照规定的权限和程序对有关组织、个人进行约谈"
+   }
+  },
+  {
+   "sanction_type": "administrative_fine",
+   "authority": "有关主管部门 (competent authorities)",
+   "triggered_by": "Failure to fulfil data security protection obligations under Arts. 27, 29 and 30",
+   "max_penalty_text": "五万元以上五十万元以下罚款; for refusal to correct or serious consequences such as large-scale data leakage, 五十万元以上二百万元以下罚款; directly responsible persons 一万元以上十万元以下 (base) or 五万元以上二十万元以下 (serious)",
+   "max_penalty_amount": 2000000,
+   "currency": "CNY",
+   "penalty_formula": "Base tier: 50,000 to 500,000 CNY for the entity (optional); escalated tier: 500,000 to 2,000,000 CNY where the entity refuses to correct or causes serious consequences; directly responsible persons 10,000 to 100,000 CNY (base) or 50,000 to 200,000 CNY (escalated)",
+   "cure_period": "correction ordered (责令改正); no fixed period stated; refusal to correct triggers the escalated tier",
+   "evidence": {
+    "provision": "Art. 45 para. 1",
+    "quote": "由有关主管部门责令改正，给予警告，可以并处五万元以上五十万元以下罚款"
+   }
+  },
+  {
+   "sanction_type": "warning_reprimand",
+   "authority": "有关主管部门 (competent authorities)",
+   "triggered_by": "Failure to fulfil data security protection obligations under Arts. 27, 29 and 30",
+   "max_penalty_text": "警告 (warning), issued together with correction order",
+   "cure_period": "correction ordered (责令改正); no fixed period stated",
+   "evidence": {
+    "provision": "Art. 45 para. 1",
+    "quote": "由有关主管部门责令改正，给予警告"
+   }
+  },
+  {
+   "sanction_type": "license_revocation",
+   "authority": "有关主管部门 (competent authorities)",
+   "triggered_by": "Refusal to correct, or serious consequences such as large-scale data leakage, for failures under Arts. 27, 29 and 30",
+   "max_penalty_text": "并可以责令暂停相关业务、停业整顿、吊销相关业务许可证或者吊销营业执照 (may order suspension of related business, rectification, revocation of relevant business licence or business licence)",
+   "cure_period": "not stated; applies where the entity refuses to correct",
+   "evidence": {
+    "provision": "Art. 45 para. 1",
+    "quote": "并可以责令暂停相关业务、停业整顿、吊销相关业务许可证或者吊销营业执照"
+   }
+  },
+  {
+   "sanction_type": "administrative_fine",
+   "authority": "有关主管部门 (competent authorities)",
+   "triggered_by": "Violation of the national core data management system endangering national sovereignty, security and development interests",
+   "max_penalty_text": "二百万元以上一千万元以下罚款",
+   "max_penalty_amount": 10000000,
+   "currency": "CNY",
+   "penalty_formula": "200,000 to 10,000,000 CNY",
+   "cure_period": "not stated",
+   "evidence": {
+    "provision": "Art. 45 para. 2",
+    "quote": "由有关主管部门处二百万元以上一千万元以下罚款"
+   }
+  },
+  {
+   "sanction_type": "license_revocation",
+   "authority": "有关主管部门 (competent authorities)",
+   "triggered_by": "Violation of the national core data management system endangering national sovereignty, security and development interests",
+   "max_penalty_text": "根据情况责令暂停相关业务、停业整顿、吊销相关业务许可证或者吊销营业执照 (as the case requires, suspension of related business, rectification, revocation of licence or business licence)",
+   "cure_period": "not stated",
+   "evidence": {
+    "provision": "Art. 45 para. 2",
+    "quote": "根据情况责令暂停相关业务、停业整顿、吊销相关业务许可证或者吊销营业执照"
+   }
+  },
+  {
+   "sanction_type": "criminal_penalty",
+   "authority": "not stated (judicial criminal liability)",
+   "triggered_by": "Violation of the national core data management system where the conduct constitutes a crime",
+   "max_penalty_text": "依法追究刑事责任 (criminal liability under law; no penalty amount stated in this Law)",
+   "cure_period": "not applicable",
+   "evidence": {
+    "provision": "Art. 45 para. 2",
+    "quote": "构成犯罪的，依法追究刑事责任"
+   }
+  },
+  {
+   "sanction_type": "administrative_fine",
+   "authority": "有关主管部门 (competent authorities)",
+   "triggered_by": "Cross-border provision of important data in violation of Art. 31",
+   "max_penalty_text": "十万元以上一百万元以下罚款; where serious, 一百万元以上一千万元以下罚款; directly responsible persons 一万元以上十万元以下 (base) or 十万元以上一百万元以下 (serious)",
+   "max_penalty_amount": 10000000,
+   "currency": "CNY",
+   "penalty_formula": "Base: 100,000 to 1,000,000 CNY (optional, with warning and correction order); serious cases: 1,000,000 to 10,000,000 CNY; directly responsible persons 10,000 to 100,000 CNY (base) or 100,000 to 1,000,000 CNY (serious)",
+   "cure_period": "correction ordered (责令改正); no fixed period stated",
+   "evidence": {
+    "provision": "Art. 46",
+    "quote": "由有关主管部门责令改正，给予警告，可以并处十万元以上一百万元以下罚款"
+   }
+  },
+  {
+   "sanction_type": "license_revocation",
+   "authority": "有关主管部门 (competent authorities)",
+   "triggered_by": "Serious cases of cross-border provision of important data in violation of Art. 31",
+   "max_penalty_text": "并可以责令暂停相关业务、停业整顿、吊销相关业务许可证或者吊销营业执照 (may order suspension of related business, rectification, revocation of licence or business licence)",
+   "cure_period": "not stated",
+   "evidence": {
+    "provision": "Art. 46",
+    "quote": "并可以责令暂停相关业务、停业整顿、吊销相关业务许可证或者吊销营业执照"
+   }
+  },
+  {
+   "sanction_type": "benefit_revocation_clawback",
+   "authority": "有关主管部门 (competent authorities)",
+   "triggered_by": "Failure by a data transaction intermediary to meet obligations under Art. 33",
+   "max_penalty_text": "没收违法所得 (confiscation of illegal gains)",
+   "penalty_formula": "Confiscation of illegal gains (没收违法所得)",
+   "cure_period": "correction ordered (责令改正); no fixed period stated",
+   "evidence": {
+    "provision": "Art. 47",
+    "quote": "没收违法所得，处违法所得一倍以上十倍以下罚款"
+   }
+  },
+  {
+   "sanction_type": "administrative_fine",
+   "authority": "有关主管部门 (competent authorities)",
+   "triggered_by": "Failure by a data transaction intermediary to meet obligations under Art. 33",
+   "max_penalty_text": "处违法所得一倍以上十倍以下罚款; where there are no illegal gains or gains are under 100,000 CNY, 十万元以上一百万元以下罚款; directly responsible persons 一万元以上十万元以下",
+   "currency": "CNY",
+   "penalty_formula": "1 to 10 times the illegal gains; or 100,000 to 1,000,000 CNY where there are no illegal gains or gains are under 100,000 CNY; directly responsible persons 10,000 to 100,000 CNY",
+   "cure_period": "correction ordered (责令改正); no fixed period stated",
+   "evidence": {
+    "provision": "Art. 47",
+    "quote": "处违法所得一倍以上十倍以下罚款"
+   }
+  },
+  {
+   "sanction_type": "license_revocation",
+   "authority": "有关主管部门 (competent authorities)",
+   "triggered_by": "Failure by a data transaction intermediary to meet obligations under Art. 33",
+   "max_penalty_text": "并可以责令暂停相关业务、停业整顿、吊销相关业务许可证或者吊销营业执照 (may order suspension of related business, rectification, revocation of licence or business licence)",
+   "cure_period": "not stated",
+   "evidence": {
+    "provision": "Art. 47",
+    "quote": "并可以责令暂停相关业务、停业整顿、吊销相关业务许可证或者吊销营业执照"
+   }
+  },
+  {
+   "sanction_type": "administrative_fine",
+   "authority": "有关主管部门 (competent authorities)",
+   "triggered_by": "Refusal to cooperate with data retrieval under Art. 35",
+   "max_penalty_text": "五万元以上五十万元以下罚款; directly responsible persons 一万元以上十万元以下",
+   "max_penalty_amount": 500000,
+   "currency": "CNY",
+   "penalty_formula": "50,000 to 500,000 CNY; directly responsible persons 10,000 to 100,000 CNY",
+   "cure_period": "correction ordered (责令改正); no fixed period stated",
+   "evidence": {
+    "provision": "Art. 48 para. 1",
+    "quote": "给予警告，并处五万元以上五十万元以下罚款"
+   }
+  },
+  {
+   "sanction_type": "administrative_fine",
+   "authority": "有关主管部门 (competent authorities)",
+   "triggered_by": "Provision of data stored in China to foreign judicial or law enforcement bodies without approval (Art. 36)",
+   "max_penalty_text": "十万元以上一百万元以下罚款; where serious consequences, 一百万元以上五百万元以下罚款; directly responsible persons 一万元以上十万元以下 (base) or 五万元以上五十万元以下 (serious)",
+   "max_penalty_amount": 5000000,
+   "currency": "CNY",
+   "penalty_formula": "Base: warning, and optionally 100,000 to 1,000,000 CNY; serious consequences: 1,000,000 to 5,000,000 CNY; directly responsible persons 10,000 to 100,000 CNY (base) or 50,000 to 500,000 CNY (serious)",
+   "cure_period": "not stated",
+   "evidence": {
+    "provision": "Art. 48 para. 2",
+    "quote": "给予警告，可以并处十万元以上一百万元以下罚款"
+   }
+  },
+  {
+   "sanction_type": "license_revocation",
+   "authority": "有关主管部门 (competent authorities)",
+   "triggered_by": "Serious consequences of unapproved provision of data to foreign judicial or law enforcement bodies (Art. 36)",
+   "max_penalty_text": "并可以责令暂停相关业务、停业整顿、吊销相关业务许可证或者吊销营业执照 (may order suspension of related business, rectification, revocation of licence or business licence)",
+   "cure_period": "not stated",
+   "evidence": {
+    "provision": "Art. 48 para. 2",
+    "quote": "并可以责令暂停相关业务、停业整顿、吊销相关业务许可证或者吊销营业执照"
+   }
+  },
+  {
+   "sanction_type": "other",
+   "authority": "not stated (superior or supervisory authority over the state organ)",
+   "triggered_by": "State organ failing to fulfil data security protection obligations under this Law",
+   "max_penalty_text": "依法给予处分 (disciplinary sanction under law) for directly responsible supervisors and other directly responsible persons",
+   "cure_period": "not stated",
+   "evidence": {
+    "provision": "Art. 49",
+    "quote": "对直接负责的主管人员和其他直接责任人员依法给予处分"
+   }
+  },
+  {
+   "sanction_type": "other",
+   "authority": "not stated (supervisory authority over the official)",
+   "triggered_by": "Dereliction of duty, abuse of power or favouritism by state staff performing data security supervision",
+   "max_penalty_text": "依法给予处分 (disciplinary sanction under law)",
+   "cure_period": "not stated",
+   "evidence": {
+    "provision": "Art. 50",
+    "quote": "依法给予处分"
+   }
+  },
+  {
+   "sanction_type": "other",
+   "authority": "not stated (competent authority under other laws)",
+   "triggered_by": "Theft or other illegal acquisition of data, data processing that eliminates or restricts competition, or infringement of lawful rights of individuals or organisations",
+   "max_penalty_text": "punishment under the relevant laws and administrative regulations (依照有关法律、行政法规的规定处罚); not specified in this Law",
+   "penalty_reference": "有关法律、行政法规 (other laws and administrative regulations, not named in this Law)",
+   "cure_period": "not stated",
+   "evidence": {
+    "provision": "Art. 51",
+    "quote": "依照有关法律、行政法规的规定处罚"
+   }
+  },
+  {
+   "sanction_type": "private_damages",
+   "authority": "courts (civil liability; authority not stated)",
+   "triggered_by": "Violation of this Law causing damage to others",
+   "max_penalty_text": "依法承担民事责任 (civil liability under law); no amount stated",
+   "private_right_of_action": true,
+   "cure_period": "not applicable",
+   "evidence": {
+    "provision": "Art. 52 para. 1",
+    "quote": "违反本法规定，给他人造成损害的，依法承担民事责任"
+   }
+  },
+  {
+   "sanction_type": "other",
+   "authority": "public security authorities (治安管理; authority not named)",
+   "triggered_by": "Violation of this Law constituting an act violating public security administration",
+   "max_penalty_text": "依法给予治安管理处罚 (public security administration punishment under law); no amount stated",
+   "penalty_reference": "治安管理处罚法 not named in this text",
+   "cure_period": "not stated",
+   "evidence": {
+    "provision": "Art. 52 para. 2",
+    "quote": "构成违反治安管理行为的，依法给予治安管理处罚"
+   }
+  },
+  {
+   "sanction_type": "criminal_penalty",
+   "authority": "not stated (judicial criminal liability)",
+   "triggered_by": "Violation of this Law constituting a crime",
+   "max_penalty_text": "依法追究刑事责任 (criminal liability under law); no penalty amount stated in this Law",
+   "cure_period": "not applicable",
+   "evidence": {
+    "provision": "Art. 52 para. 2",
+    "quote": "构成犯罪的，依法追究刑事责任"
+   }
+  }
+ ],
+ "section_status": {}
+}

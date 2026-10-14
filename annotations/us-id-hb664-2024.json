@@ -1,0 +1,133 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "us-id-hb664-2024",
+ "tier": "B",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "light, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-interim-20261014"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "AGORA plaintext (ETO, CC BY-NC 4.0), local cache",
+  "url": "https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2024/legislation/H0664.pdf",
+  "retrieved": "2024-11-15",
+  "version": "1.33.0 (2026-09-16)",
+  "language": "en",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "synthetic_media_deepfakes",
+   "elections_political_ads",
+   "online_safety_content"
+  ],
+  "primary_domain": "synthetic_media_deepfakes",
+  "mechanisms": [
+   "liability_rule",
+   "disclosure_transparency"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "ai_deployer",
+   "platform_operator"
+  ],
+  "affected_roles": [
+   "general_public"
+  ],
+  "decision_margins": [
+   "household:information",
+   "firm:compliance_process"
+  ],
+  "territorial_scope": {
+   "types": [
+    "subnational"
+   ],
+   "description": "State statute of Idaho; applies to electioneering communications under Idaho law and is enacted by the Idaho Legislature.",
+   "evidence": {
+    "provision": "Section 1 (adding Section 67-6628A, Idaho Code)",
+    "quote": "Be It Enacted by the Legislature of the State of Idaho:"
+   }
+  },
+  "agora_applications": [
+   "Broadcasting and media production"
+  ],
+  "agora_harms": [
+   "Detrimental content"
+  ],
+  "agora_incentives": [
+   "Civil liability"
+  ],
+  "agora_risk_factors": [
+   "Security: Dissemination",
+   "Transparency"
+  ],
+  "agora_strategies": [
+   "Disclosure: In deployment"
+  ]
+ },
+ "summary": {
+  "short": "Adds Idaho Code Section 67-6628A, giving candidates civil remedies (injunction, damages, fees) against the creator of synthetic media that deceptively represents them in electioneering communications. It provides a disclosure-based affirmative defense and limits intermediary liability. Effective on passage.",
+  "long": "Idaho House Bill 664, the Freedom From AI-Rigged (FAIR) Elections Act, adds Section 67-6628A to Chapter 66, Title 67, Idaho Code. It defines synthetic media as a realistic but false audio or video recording of an individual's speech or conduct, created with digital technology, that depicts an event that did not occur. A candidate whose speech or conduct is deceptively represented through synthetic media in an electioneering communication may seek injunctive or equitable relief against publication, or damages against the information content provider, with fees and costs available to a prevailing party. Publishing a prescribed manipulation disclosure is an affirmative defense. Plaintiffs bear the burden of proof by clear and convincing evidence. The information content provider is the usual target; a medium may be liable only if it removes the disclosure or alters content into synthetic media, and federally licensed broadcasts subject to 47 U.S.C. 315 are excluded. Interactive computer service providers are not treated as publishers of third-party content, subject to the same exception. Section 2 is a severability clause; Section 3 declares an emergency and makes the act effective on passage and approval."
+ },
+ "relations": [
+  {
+   "relation": "amends",
+   "target_text": "Chapter 66, Title 67, Idaho Code",
+   "note": "Adds a new section 67-6628A to Chapter 66, Title 67, Idaho Code (Section 1 of the act). Target not in registry; no registry ID.",
+   "evidence": {
+    "provision": "Section 1",
+    "quote": "That Chapter 66, Title 67, Idaho Code, be, and the same is hereby amended by the addition thereto of a NEW SECTION"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "47 U.S.C. 315",
+   "note": "Subsection (9) carves out medium liability for licensees, programmers or operators of federally licensed broadcasting stations transmitting electioneering communications subject to 47 U.S.C. 315. Target not in registry; no registry ID.",
+   "evidence": {
+    "provision": "67-6628A(9)",
+    "quote": "Except when a licensee, programmer, or operator of a federally licensed broadcasting station transmits an electioneering communication that is subject to 47 U.S.C. 315"
+   }
+  }
+ ],
+ "notes": "Title reads 'CHAP3 TER 66' (apparent typo for Chapter 66). 'Electioneering communication' and 'candidate' are used but not defined in the text. Subsection (2)(c)(i) refers to a 'reasonable individual' and (2)(c)(ii) to a 'reasonable person'. The text gives no enactment or session-law reference and no calendar date; Section 3 is an emergency clause making the act effective on passage and approval. Subsection (10) does not cite a statute for its publisher-immunity rule. Adopted status is taken from registry metadata.",
+ "events": [
+  {
+   "event": "entry_into_force",
+   "date": "2024-03-25",
+   "date_type": "relative",
+   "date_text": "this act shall be in full force and effect on and after its passage and approval",
+   "anchor": "passage and approval of the act",
+   "applies_to": "Sections 1 and 2 (new Idaho Code § 67-6628A and severability clause)",
+   "offset_value": 0,
+   "offset_unit": "days",
+   "anchor_event": "signed",
+   "evidence": {
+    "provision": "SECTION 3",
+    "quote": "this act shall be in full force and effect on and after its passage and approval."
+   },
+   "date_computed_from": "signed 2024-03-25 (registry) + 0 days"
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "other",
+   "variable_text": "audio length of an electioneering communication containing synthetic media (disclosure duty for audio-only media)",
+   "operator": ">",
+   "value": 2,
+   "value_text": "if the audio is greater than two (2) minutes in length",
+   "unit": "minutes",
+   "measurement": "Length of the audio-only electioneering communication containing the synthetic media; the measurement method is not specified in the text.",
+   "level": "other",
+   "trigger": "obligation",
+   "consequence": "Where the audio exceeds two minutes, the disclosure must also be interspersed within the audio at intervals of no more than two minutes each, as a condition of the affirmative defense.",
+   "conditions": "Applies only to audio-only media (subsection (5)(b)) relied on for the affirmative defense in subsection (5); the two-minute interval is recorded as part of that obligation rather than as a separate threshold.",
+   "evidence": {
+    "provision": "Sec. 1, 67-6628A(5)(b)",
+    "quote": "if the audio is greater than two (2) minutes in length"
+   }
+  }
+ ],
+ "section_status": {}
+}

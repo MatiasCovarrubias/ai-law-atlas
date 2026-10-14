@@ -1,0 +1,113 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "us-il-aivia",
+ "tier": "B",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "light, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-interim-20261014"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "AGORA plaintext (ETO, CC BY-NC 4.0), local cache",
+  "url": "https://www.ilga.gov/legislation/fulltext.asp?DocName=&SessionId=108&GA=101&DocTypeId=HB&DocNum=2557&GAID=15&LegID=&SpecSess=&Session=",
+  "retrieved": "2025-04-02",
+  "version": "1.33.0 (2026-09-16)",
+  "language": "en",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "employment_labor",
+   "algorithmic_decision_systems",
+   "data_protection"
+  ],
+  "primary_domain": "employment_labor",
+  "mechanisms": [
+   "disclosure_transparency",
+   "mandate_obligation",
+   "prohibition_ban"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "employer"
+  ],
+  "affected_roles": [
+   "workers"
+  ],
+  "decision_margins": [
+   "firm:compliance_process",
+   "household:employment",
+   "household:data_privacy"
+  ],
+  "territorial_scope": {
+   "types": [
+    "subnational"
+   ],
+   "description": "Applies to employers considering applicants for positions based in Illinois.",
+   "evidence": {
+    "provision": "Section 5",
+    "quote": "when considering applicants for positions based in Illinois"
+   }
+  },
+  "agora_applications": [
+   "Business services and analytics"
+  ],
+  "agora_risk_factors": [
+   "Transparency",
+   "Privacy"
+  ],
+  "agora_strategies": [
+   "Disclosure: In deployment",
+   "Input controls: Data circulation"
+  ]
+ },
+ "summary": {
+  "short": "Requires employers that use AI analysis of applicant video interviews for Illinois-based positions to notify applicants, explain the AI, and obtain consent before interviews. Limits sharing of applicant videos and requires deletion on request within 30 days. The text states no effective date.",
+  "long": "Illinois statute (Artificial Intelligence Video Interview Act) covering employers that ask applicants to record video interviews and analyse them with artificial intelligence for positions based in Illinois. Before requesting video interviews, the employer must notify each applicant that AI may be used to analyse the interview and consider fitness for the position, provide information on how the AI works and the general types of characteristics it uses, and obtain the applicant's consent to the AI evaluation. An employer may not use AI to evaluate applicants who have not consented. Employers may not share applicant videos except with persons whose expertise or technology is necessary to evaluate an applicant's fitness for the position. On an applicant's request, employers must delete the applicant's interviews within 30 days and instruct other persons who received copies to delete them, including electronic backups. The text states no effective date, penalties, enforcement mechanism or private right of action."
+ },
+ "notes": "The document contains two copies of the same Act, one under an [AGORA 304] header and one under an [AGORA 2107: Illinois House Bill 2557 (2019)] header. Apart from line breaks the operative text is identical. The text itself gives no effective date, session-law history or enacting bill. The bill reference and the registry citation '820 ILCS 42' come from metadata outside the enacted text and are not coded as relations. No relation to another instrument is stated in the text.",
+ "events": [
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "before the interview",
+   "anchor": "applicant's video interview",
+   "depends_on": "applicant's video interview",
+   "applies_to": "employers using AI analysis of applicant video interviews (notice, information and consent before the interview)",
+   "evidence": {
+    "provision": "Section 5(1)",
+    "quote": "Notify each applicant before the interview that artificial intelligence may be used to analyze the applicant's video interview"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "within 30 days after receipt of the request",
+   "anchor": "receipt of the applicant's request for deletion",
+   "depends_on": "applicant's request for deletion of video interviews",
+   "applies_to": "employers (deletion of applicant video interviews on request, and instructions to other persons holding copies)",
+   "offset_value": 30,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Section 15",
+    "quote": "within 30 days after receipt of the request, must delete an applicant's interviews"
+   }
+  }
+ ],
+ "section_status": {
+  "relations": {
+   "status": "not_found",
+   "note": "The text cites no other instrument. The bill reference in the bracketed AGORA headers is not part of the enacted text, so no enacted_by_bill row is coded."
+  },
+  "thresholds": {
+   "status": "not_found",
+   "note": "No numeric cutoff in the Act changes legal treatment of an employer, applicant or video. The only number, the 30-day period for deleting videos after a request (Section 15), is a procedural time limit and is recorded as an event, not a threshold. The document reproduces the same Act twice; the operative wording is the same apart from the placement of the final sentence of Section 5."
+  }
+ },
+ "thresholds": [],
+ "relations": []
+}

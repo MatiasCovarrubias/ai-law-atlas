@@ -1,0 +1,298 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "us-ca-sb420-2025",
+ "tier": "B",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "light, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-interim-20261014"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "AGORA plaintext (ETO, CC BY-NC 4.0), local cache",
+  "url": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260SB420",
+  "retrieved": "2026-03-25",
+  "version": "1.33.0 (2026-09-16)",
+  "language": "en",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "ai_general",
+   "algorithmic_decision_systems",
+   "public_sector_ai"
+  ],
+  "primary_domain": "algorithmic_decision_systems",
+  "mechanisms": [
+   "mandate_obligation",
+   "prohibition_ban",
+   "disclosure_transparency",
+   "procurement_rule"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "ai_developer",
+   "ai_deployer",
+   "government_agency"
+  ],
+  "affected_roles": [
+   "consumers_users",
+   "workers"
+  ],
+  "decision_margins": [
+   "firm:compliance_process",
+   "firm:product_design_release",
+   "household:information"
+  ],
+  "territorial_scope": {
+   "types": [
+    "subnational"
+   ],
+   "description": "Applies to developers and deployers of high-risk ADS used or made available for use in California; the definitions tie coverage to use in the state.",
+   "evidence": {
+    "provision": "Sec. 2 (Bus. & Prof. Code § 22756(d))",
+    "quote": "“Deployer” means a natural person or entity that uses a high-risk automated decision system in the state."
+   }
+  },
+  "agora_applications": [
+   "Education",
+   "Energy and utilities",
+   "Finance and investment",
+   "Medicine, life sciences and public health",
+   "Government: other applications/unspecified"
+  ],
+  "agora_harms": [
+   "Discrimination",
+   "Violation of civil or human rights, including privacy"
+  ],
+  "agora_incentives": [
+   "Fines"
+  ],
+  "agora_risk_factors": [
+   "Bias",
+   "Transparency"
+  ],
+  "agora_strategies": [
+   "Evaluation: Impact assessment",
+   "Disclosure: In deployment",
+   "Disclosure: About inputs",
+   "Disclosure: About evaluation",
+   "Tiering: Tiering based on impact",
+   "Tiering: Tiering based on domain of application"
+  ]
+ },
+ "summary": {
+  "short": "Introduced California bill adding Business and Professions Code Chapter 24.6: developers and deployers of high-risk automated decision systems must perform impact assessments, give notices, and maintain governance programs against algorithmic discrimination, and state agencies may not contract for such systems without anti-discrimination certification.",
+  "long": "Adds Business and Professions Code Chapter 24.6 on automated decision systems (ADS). High-risk ADS assist or replace discretionary decisions with legal or similarly significant effects, such as on education, employment, housing, health care, lending or essential services. Developers must complete impact assessments before making a high-risk ADS publicly available, and deployers within two years of deploying systems first deployed after 1 January 2026. Deployers must notify affected persons, publish a website statement and offer human review of decisions where technically feasible; developers and deployers must maintain governance programs. Deploying or making available a system that the assessment finds likely to cause algorithmic discrimination is prohibited unless safeguards are implemented. Entities with 50 or fewer employees are excluded. The Attorney General or Civil Rights Department may sue for civil penalties (tiered from $2,500 to $10,000 for failed assessments; $25,000 per algorithmic-discrimination violation), injunctions and fees, after 45 days' notice, with possible cure. Public Contract Code Section 10285.8 bars state agencies from awarding high-risk ADS contracts unless the vendor certifies compliance with anti-discrimination laws and the chapter."
+ },
+ "relations": [
+  {
+   "relation": "amends",
+   "target_text": "California Business and Professions Code, Division 8 (adds Chapter 24.6, Sections 22756 to 22756.8)",
+   "note": "Adds a new chapter; the text shows no existing provisions being changed.",
+   "evidence": {
+    "provision": "Sec. 2",
+    "quote": "Chapter 24.6 (commencing with Section 22756) is added to Division 8 of the Business and Professions Code"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "California Public Contract Code, Division 2, Part 2, Chapter 1 (adds Article 11, Section 10285.8)",
+   "note": "Adds a new article; the text shows no existing provisions being changed. Section 22756.1(b)(2)(B) cross-refers to Section 10285.8.",
+   "evidence": {
+    "provision": "Sec. 3",
+    "quote": "Article 11 (commencing with Section 10285.8) is added to Chapter 1 of Part 2 of Division 2 of the Public Contract Code"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "California Consumer Privacy Act of 2018",
+   "note": "Cited only in the legislative findings, stating that AI data privacy should be in line with it.",
+   "evidence": {
+    "provision": "Sec. 1(c)(1)",
+    "quote": "in line with the California Consumer Privacy Act of 2018 and other relevant privacy laws."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Unruh Civil Rights Act (Civil Code Section 51)",
+   "note": "Used in the definition of protected classification (22756(n)) and in the contract certification requirement (Public Contract Code 10285.8(a)(1)).",
+   "evidence": {
+    "provision": "22756(n)",
+    "quote": "the Unruh Civil Rights Act (Section 51 of the Civil Code)"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "California Fair Employment and Housing Act (Government Code Chapter 7, commencing with Section 12960)",
+   "note": "Used in the definition of protected classification (22756(n)) and in the contract certification requirement (Public Contract Code 10285.8(a)(2)).",
+   "evidence": {
+    "provision": "22756(n)",
+    "quote": "the California Fair Employment and Housing Act (Chapter 7 (commencing with Section 12960) of Part 2.8 of Division 3 of Title 2 of the Government Code)"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "California Civil Code Section 3426.1 (trade secret definition)",
+   "note": "Defines trade secret for the disclosure carve-out in 22756.5(a).",
+   "evidence": {
+    "provision": "22756.5(a)",
+    "quote": "as defined in Section 3426.1 of the Civil Code"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "California Government Code Section 17556",
+   "note": "Cited in the state-mandate reimbursement statement; the text says the act creates a new crime or infraction.",
+   "evidence": {
+    "provision": "Sec. 5",
+    "quote": "within the meaning of Section 17556 of the Government Code"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "California Constitution, Article I Section 3 and Article XIII B Section 6",
+   "note": "Sec. 4 finds the act limits public access under Article I Section 3; Sec. 5 cites Article XIII B Section 6 for reimbursement.",
+   "evidence": {
+    "provision": "Sec. 4",
+    "quote": "within the meaning of Section 3 of Article I of the California Constitution"
+   }
+  }
+ ],
+ "notes": "Document is the introduced bill text; no version date is stated. Sec. 1 findings use non-operative 'should' wording; operative duties are in Secs. 2 and 3. Sec. 5 says costs arise because the act 'creates a new crime or infraction', while Sec. 22756.7 provides civil actions and civil penalties. Sec. 22756.8(a) exempts entities with 50 or fewer employees, while Sec. 22756.7(b)(1)(A) sets penalty tiers starting at fewer than 100 employees. Sec. 22756.1(b)(2)(D) lacks a closing period. Target instrument IDs are left empty because the registry was not provided.",
+ "events": [
+  {
+   "event": "application",
+   "date": "2026-01-01",
+   "date_type": "absolute",
+   "date_text": "made publicly available for use on or after January 1, 2026",
+   "applies_to": "developers of high-risk automated decision systems made publicly available for use on or after 2026-01-01; impact assessment before making the system available",
+   "evidence": {
+    "provision": "Sec. 2 (adds Bus. and Prof. Code Sec. 22756.1(a)(1))",
+    "quote": "made publicly available for use on or after January 1, 2026"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2028-01-01",
+   "date_type": "absolute",
+   "date_text": "on or before January 1, 2028",
+   "applies_to": "developers of high-risk automated decision systems first made publicly available for use before 2026-01-01; impact assessment due",
+   "evidence": {
+    "provision": "Sec. 2 (adds Bus. and Prof. Code Sec. 22756.1(a)(2))",
+    "quote": "on or before January 1, 2028"
+   }
+  },
+  {
+   "event": "application",
+   "date": "2026-01-01",
+   "date_type": "absolute",
+   "date_text": "first deployed after January 1, 2026",
+   "applies_to": "deployers of high-risk automated decision systems first deployed after 2026-01-01; impact assessment duty",
+   "evidence": {
+    "provision": "Sec. 2 (adds Bus. and Prof. Code Sec. 22756.1(b)(1))",
+    "quote": "for a high-risk automated decision system first deployed after January 1, 2026"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "within two years of deploying the high-risk automated decision system",
+   "anchor": "deployment of the high-risk automated decision system",
+   "depends_on": "deployment of the high-risk automated decision system",
+   "applies_to": "deployers of high-risk automated decision systems first deployed after 2026-01-01; impact assessment",
+   "offset_value": 2,
+   "offset_unit": "years",
+   "evidence": {
+    "provision": "Sec. 2 (adds Bus. and Prof. Code Sec. 22756.1(b)(1))",
+    "quote": "within two years of deploying the high-risk automated decision system"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "within 30 days of a request from the Attorney General or the Civil Rights Department",
+   "anchor": "request from the Attorney General or the Civil Rights Department",
+   "depends_on": "request from the Attorney General or the Civil Rights Department",
+   "applies_to": "developers providing a copy of an impact assessment to the Attorney General or Civil Rights Department",
+   "offset_value": 30,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Sec. 2 (adds Bus. and Prof. Code Sec. 22756.7(a)(1))",
+    "quote": "within 30 days of a request from the Attorney General or the Civil Rights Department"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "shall provide 45 days’ written notice to a deployer or developer of any alleged violation",
+   "anchor": "written notice of an alleged violation to a deployer or developer",
+   "depends_on": "written notice of an alleged violation to a deployer or developer",
+   "applies_to": "Attorney General or Civil Rights Department before commencing a civil action under Sec. 22756.7",
+   "offset_value": 45,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Sec. 2 (adds Bus. and Prof. Code Sec. 22756.7(c)(1))",
+    "quote": "shall provide 45 days’ written notice to a deployer or developer of any alleged violation"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "employees",
+   "variable_text": "number of employees of the entity (exclusion from chapter)",
+   "operator": "<=",
+   "value": 50,
+   "value_text": "50 or fewer employees",
+   "unit": "employees",
+   "measurement": "Not specified in the text",
+   "level": "entity",
+   "trigger": "exclusion",
+   "consequence": "The chapter does not apply to an entity with 50 or fewer employees.",
+   "conditions": "Applies in addition to the other exclusion in 22756.8(b) for systems approved, certified or cleared by a federal agency.",
+   "evidence": {
+    "provision": "22756.8(a)",
+    "quote": "An entity with 50 or fewer employees."
+   }
+  },
+  {
+   "variable": "employees",
+   "variable_text": "number of employees of the defendant (civil penalty tier)",
+   "operator": "<",
+   "value": 100,
+   "value_text": "fewer than 100 employees",
+   "unit": "employees",
+   "measurement": "Not specified in the text",
+   "level": "entity",
+   "trigger": "penalty_tier",
+   "consequence": "Civil penalty for failure to conduct an impact assessment is two thousand five hundred dollars ($2,500) for a defendant below this size.",
+   "conditions": "Applies to a failure to conduct an impact assessment as required under the chapter.",
+   "evidence": {
+    "provision": "22756.7(b)(1)(A)",
+    "quote": "for a defendant with fewer than 100 employees"
+   }
+  },
+  {
+   "variable": "employees",
+   "variable_text": "number of employees of the defendant (civil penalty tier)",
+   "operator": ">=",
+   "value": 500,
+   "value_text": "at least 500 employees (text also states fewer than 500 employees for the middle tier)",
+   "unit": "employees",
+   "measurement": "Not specified in the text",
+   "level": "entity",
+   "trigger": "penalty_tier",
+   "consequence": "Civil penalty for failure to conduct an impact assessment is ten thousand dollars ($10,000) for a defendant at this size; five thousand dollars ($5,000) applies to a defendant with fewer than 500 employees.",
+   "conditions": "Applies to a failure to conduct an impact assessment as required under the chapter.",
+   "evidence": {
+    "provision": "22756.7(b)(1)(A)",
+    "quote": "if the defendant has at least 500 employees"
+   }
+  }
+ ],
+ "section_status": {}
+}

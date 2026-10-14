@@ -1,0 +1,302 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "us-mi-hb4668-2025",
+ "tier": "B",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "light, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-interim-20261014"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "AGORA plaintext (ETO, CC BY-NC 4.0), local cache",
+  "url": "https://legislature.mi.gov/documents/2025-2026/billintroduced/House/htm/2025-HIB-4668.htm",
+  "retrieved": "2026-06-29",
+  "version": "1.33.0 (2026-09-16)",
+  "language": "en",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "ai_general",
+   "cybersecurity",
+   "employment_labor"
+  ],
+  "primary_domain": "ai_general",
+  "mechanisms": [
+   "mandate_obligation",
+   "prohibition_ban",
+   "disclosure_transparency",
+   "designation_tiering",
+   "liability_rule"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "ai_developer",
+   "employer",
+   "auditor_assessor"
+  ],
+  "affected_roles": [
+   "workers",
+   "general_public",
+   "government_agency"
+  ],
+  "decision_margins": [
+   "firm:product_design_release",
+   "firm:compliance_process"
+  ],
+  "territorial_scope": {
+   "types": [
+    "subnational"
+   ],
+   "description": "Michigan state statute enacted by the state legislature; obligations and enforcement are tied to the State of Michigan.",
+   "evidence": {
+    "provision": "Enacting clause",
+    "quote": "the people of the state of michigan enact:"
+   }
+  },
+  "agora_harms": [
+   "Harm to health/safety",
+   "Harm to property"
+  ],
+  "agora_incentives": [
+   "Civil liability",
+   "Fines"
+  ],
+  "agora_risk_factors": [
+   "Safety",
+   "Security: Cybersecurity",
+   "Transparency"
+  ],
+  "agora_strategies": [
+   "Disclosure",
+   "Disclosure: About evaluation",
+   "Disclosure: About incidents",
+   "Evaluation: External auditing",
+   "Tiering: Tiering based on inputs"
+  ]
+ },
+ "summary": {
+  "short": "A bill that would require large developers of foundation models to publish and follow safety and security protocols for critical risks, publish transparency reports, undergo annual third-party audits, and protect employees who report risks, from January 1, 2026, with attorney general civil enforcement.",
+  "long": "Introduced June 24, 2025 and referred to the Judiciary Committee, the bill would require 'large developers' of foundation models to produce, publish and follow safety and security protocols for critical risks from January 1, 2026. A large developer has developed a foundation model with computing power costing at least $5,000,000 and, within the preceding 12 months, models costing at least $100,000,000 in computing power. Critical risks include death or serious injury to more than 100 people, or over $1,000,000,000 in damages, from incidents such as weapons of mass destruction or cyberattacks. Developers must publish transparency reports at least every 90 days, keep test records for 5 years, and undergo an annual third-party audit published within 90 days. Employees who report critical risks are protected from retaliation. The attorney general may seek fines of up to $1,000,000 per violation of the publication or audit sections, plus injunctive relief; employees may sue for retaliation."
+ },
+ "relations": [
+  {
+   "relation": "cross_references",
+   "target_text": "whistleblowers' protection act, 1980 PA 469, MCL 15.361 to 15.369",
+   "note": "Sec. 11 (employee protections) states that it does not invalidate or limit protections under the Whistleblowers' Protection Act. The target is not in the registry, so no instrument ID is given.",
+   "evidence": {
+    "provision": "Sec. 11(9)",
+    "quote": "under the whistleblowers' protection act, 1980 PA 469, MCL 15.361 to 15.369."
+   }
+  }
+ ],
+ "notes": "The only instrument-level relation is the cross-reference to the Whistleblowers' Protection Act in Sec. 11(9). The text has no legal_basis, amends, repeals, implements or transposes clauses. Internal references to Secs. 5, 7 and 9 are within the bill and are not coded as relations. The annotated text is the bill as introduced on June 24, 2025, with no enactment or amendment history. Sec. 13(1)(a) ($1,000,000 per violation) and Sec. 11(7) ($500) cover different violations and are not inconsistent.",
+ "events": [
+  {
+   "event": "introduced",
+   "date": "2025-06-24",
+   "date_type": "absolute",
+   "date_text": "June 24, 2025, Introduced by Rep. Lightner and referred to Committee on Judiciary.",
+   "applies_to": "House bill (HOUSE BILL NO. 4668); introduced by Rep. Lightner",
+   "evidence": {
+    "provision": "Header",
+    "quote": "June 24, 2025, Introduced by Rep. Lightner and referred to Committee on Judiciary."
+   }
+  },
+  {
+   "event": "application",
+   "date": "2026-01-01",
+   "date_type": "absolute",
+   "date_text": "Beginning on January 1, 2026",
+   "applies_to": "Large developers: safety and security protocol, conspicuous publication, modification notices, transparency reports and record retention under Sec. 7(1)(a)-(d)",
+   "evidence": {
+    "provision": "Sec. 7(1)",
+    "quote": "Beginning on January 1, 2026, a large developer shall do all of the following:"
+   }
+  },
+  {
+   "event": "application",
+   "date": "2026-01-01",
+   "date_type": "absolute",
+   "date_text": "Beginning on January 1, 2026, not less than once per year",
+   "applies_to": "Large developers: annual independent third-party audit under Sec. 9(1)",
+   "evidence": {
+    "provision": "Sec. 9(1)",
+    "quote": "Beginning on January 1, 2026, not less than once per year, a large developer shall retain a reputable third-party auditor"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "not more than 30 days after the material modification was made",
+   "anchor": "material modification of the safety and security protocol",
+   "depends_on": "material modification of the safety and security protocol under Sec. 7(1)(a)",
+   "applies_to": "Large developers: publication of modifications to the safety and security protocol",
+   "offset_value": 30,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Sec. 7(1)(b)",
+    "quote": "conspicuously publish the modifications not more than 30 days after the material modification was made."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "Not less than once every 90 days, produce and conspicuously publish a transparency report",
+   "applies_to": "Large developers: transparency report covering the period from 120 days to 30 days before publication, Sec. 7(1)(c)",
+   "offset_value": 90,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Sec. 7(1)(c)",
+    "quote": "Not less than once every 90 days, produce and conspicuously publish a transparency report"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "not less than once per year",
+   "applies_to": "Large developers: independent third-party audit report under Sec. 9(1)",
+   "offset_value": 1,
+   "offset_unit": "years",
+   "evidence": {
+    "provision": "Sec. 9(1)",
+    "quote": "not less than once per year, a large developer shall retain a reputable third-party auditor"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "Not more than 90 days after the completion of the auditor's report under subsection (1)",
+   "anchor": "completion of the auditor's report under subsection (1)",
+   "depends_on": "completion of the auditor's report under Sec. 9(1)",
+   "applies_to": "Large developers: publication of the audit report under Sec. 9(3)",
+   "offset_value": 90,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Sec. 9(3)",
+    "quote": "Not more than 90 days after the completion of the auditor's report under subsection (1), a large developer shall conspicuously publish that report."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "not more than 90 days after the occurrence of the alleged violation",
+   "anchor": "occurrence of the alleged violation",
+   "depends_on": "occurrence of the alleged violation of subsection (1)",
+   "applies_to": "Employees: civil action for an alleged violation of the whistleblower protection in Sec. 11(1)",
+   "offset_value": 90,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Sec. 11(2)",
+    "quote": "may bring a civil action not more than 90 days after the occurrence of the alleged violation"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "monthly",
+   "applies_to": "Large developers: monthly status update to the employee who made an anonymous disclosure, Sec. 11(5)(b)(ii)",
+   "offset_value": 1,
+   "offset_unit": "months",
+   "evidence": {
+    "provision": "Sec. 11(5)(b)(ii)",
+    "quote": "A monthly update is given to the employee under subparagraph (i)"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "not less than once per quarter",
+   "applies_to": "Large developers: sharing of disclosures and updates with officers and directors without conflict of interest, Sec. 11(6)",
+   "offset_value": 3,
+   "offset_unit": "months",
+   "evidence": {
+    "provision": "Sec. 11(6)",
+    "quote": "must be shared with the officers and directors of the large developer who do not have a conflict of interest not less than once per quarter"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "other",
+   "variable_text": "persons killed or seriously injured in a critical-risk incident",
+   "operator": ">",
+   "value": 100,
+   "value_text": "more than 100 people",
+   "unit": "persons",
+   "measurement": "Prospective: the foreseeable and material risk that the large developer's development, storage, or deployment of a foundation model will result in the harm, through an incident of a kind listed in Sec. 3(b)(i) to (iv)",
+   "level": "model",
+   "trigger": "scope_definition",
+   "consequence": "Defines 'critical risk'; the protocol, transparency, audit, and whistleblower provisions refer to critical risks as so defined.",
+   "conditions": "Alternative to the monetary-damages limb in the same definition; the risk must be foreseeable and material.",
+   "evidence": {
+    "provision": "Sec. 3(b)",
+    "quote": "will result in the death of, or serious injury to, more than 100 people"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "damages to rights in money or property from a critical-risk incident",
+   "operator": ">",
+   "value": 1000000000,
+   "value_text": "more than $1,000,000,000.00 in damages",
+   "unit": "USD",
+   "currency": "USD",
+   "measurement": "Prospective: the foreseeable and material risk that the large developer's development, storage, or deployment of a foundation model will result in the damages, through an incident of a kind listed in Sec. 3(b)(i) to (iv)",
+   "level": "model",
+   "trigger": "scope_definition",
+   "consequence": "Defines 'critical risk' by reference to monetary damages; alternative to the death or serious injury limb.",
+   "conditions": "Alternative to the death or serious injury limb in the same definition; the risk must be foreseeable and material.",
+   "evidence": {
+    "provision": "Sec. 3(b)",
+    "quote": "will result in more than $1,000,000,000.00 in damages to rights in money or property"
+   }
+  },
+  {
+   "variable": "compute_training",
+   "variable_text": "cost of computing power used to develop a foundation model",
+   "operator": ">=",
+   "value": 5000000,
+   "value_text": "a quantity of computing power that costs not less than $5,000,000.00",
+   "unit": "USD",
+   "currency": "USD",
+   "measurement": "Measured using prevailing market prices of cloud computing in the United States at the time the computing power was used",
+   "level": "model",
+   "trigger": "eligibility",
+   "consequence": "One of two cumulative limbs that define a large developer, to which the act's duties apply.",
+   "conditions": "Must be met jointly with the limb in Sec. 3(f)(ii) (developer has also developed, within the preceding 12 months, foundation models of the stated computing cost).",
+   "evidence": {
+    "provision": "Sec. 3(f)(i)",
+    "quote": "A foundation model with a quantity of computing power that costs not less than $5,000,000.00"
+   }
+  },
+  {
+   "variable": "compute_training",
+   "variable_text": "cost of computing power across foundation models developed by the person within the preceding 12 months",
+   "operator": ">=",
+   "value": 100000000,
+   "value_text": "a total quantity of computing power that costs not less than $100,000,000.00",
+   "unit": "USD",
+   "currency": "USD",
+   "measurement": "Aggregate over 1 or more foundation models developed within the immediately preceding 12 months; measured using prevailing market prices of cloud computing in the United States at the time the computing power was used",
+   "level": "entity",
+   "trigger": "eligibility",
+   "consequence": "Second cumulative limb that defines a large developer, to which the act's duties apply.",
+   "conditions": "Must be met jointly with the limb in Sec. 3(f)(i) (developer has also developed a foundation model of the stated computing cost).",
+   "evidence": {
+    "provision": "Sec. 3(f)(ii)",
+    "quote": "with a total quantity of computing power that costs not less than $100,000,000.00"
+   }
+  }
+ ],
+ "section_status": {}
+}

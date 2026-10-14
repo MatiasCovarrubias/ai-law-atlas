@@ -1,0 +1,668 @@
+{
+ "instrument_id": "cl-ley21459-2022",
+ "checker": "claude-opus-5-5 (Claude Code)",
+ "protocol": "VP-1.0",
+ "date": "2026-10-14",
+ "reference": [
+  {
+   "category": "threshold",
+   "provision": "Art. 7 inc. 1 No. 2 and No. 3",
+   "quote": "si el valor del perjuicio excediere de cuatro unidades tributarias mensuales y no pasare de cuarenta unidades tributarias mensuales",
+   "value": "damage > 4 UTM (vs <= 4 UTM) -> fraud penalty tier 2 instead of tier 3 (penalty_tier, UTM)",
+   "match": {
+    "X": 1,
+    "Y": 1
+   }
+  },
+  {
+   "category": "threshold",
+   "provision": "Art. 7 inc. 1 No. 1",
+   "quote": "si el valor del perjuicio excediera de cuarenta unidades tributarias mensuales",
+   "value": "damage > 40 UTM -> tier 1: presidio menor medio-maximo + fine 11-15 UTM (penalty_tier)",
+   "match": {
+    "X": 0,
+    "Y": 0
+   }
+  },
+  {
+   "category": "threshold",
+   "provision": "Art. 7 inc. 2",
+   "quote": "Si el valor del perjuicio excediere de cuatrocientas unidades tributarias mensuales, se aplicará la pena de presidio menor en su grado máximo y multa de veintiuna a treinta unidades tributarias mensuales",
+   "value": "damage > 400 UTM -> presidio menor maximo + fine 21-30 UTM (penalty_tier)",
+   "match": {
+    "X": 3,
+    "Y": 3
+   }
+  },
+  {
+   "category": "key_date",
+   "provision": "Promulgation clause",
+   "quote": "Santiago, 9 de junio de 2022.- IZKIA SICHES PASTÉN, Vicepresidenta de la República",
+   "value": "2022-06-09 promulgation (signed)",
+   "match": {
+    "X": 2,
+    "Y": 0
+   }
+  },
+  {
+   "category": "key_date",
+   "provision": "Tribunal Constitucional certificate",
+   "quote": "por sentencia de 26 de mayo de 2022, en los autos Rol 13185-22- CPR",
+   "value": "2022-05-26 constitutional review judgment (certificate dated 2022-05-27)",
+   "match": {
+    "X": 1,
+    "Y": 2
+   }
+  },
+  {
+   "category": "key_date",
+   "provision": "Art. transitorio segundo inc. 1",
+   "quote": "El artículo 18 de la presente ley comenzará a regir transcurridos seis meses desde la publicación en el Diario Oficial de un reglamento dictado por el Ministerio de Transportes y Telecomunicaciones",
+   "value": "Art. 18 (CPP amendments, incl. Art. 218 bis) applies 6 months after publication of the MTT regulation (conditional/relative)",
+   "match": {
+    "X": 6,
+    "Y": 6
+   }
+  },
+  {
+   "category": "key_date",
+   "provision": "Art. transitorio segundo inc. 2",
+   "quote": "El reglamento señalado en el inciso anterior deberá dictarse dentro del plazo de seis meses, contado desde la publicación de la presente ley en el Diario Oficial",
+   "value": "deadline for the regulation: 6 months after publication of the law",
+   "match": {
+    "X": 7,
+    "Y": 5
+   }
+  },
+  {
+   "category": "key_date",
+   "provision": "Art. transitorio tercero",
+   "quote": "Los artículos 19 y 21 comenzarán a regir transcurridos seis meses desde la publicación de la presente ley en el Diario Oficial",
+   "value": "Arts. 19 and 21 apply 6 months after publication of the law",
+   "match": {
+    "X": 8,
+    "Y": 4
+   }
+  },
+  {
+   "category": "key_date",
+   "provision": "Art. 9 (consolidated-text marker)",
+   "quote": "Artículo 9°.- Derogado.",
+   "value": "Art. 9 repealed; consolidated-text version marker 2024-09-04",
+   "match": {
+    "X": null,
+    "Y": null
+   }
+  },
+  {
+   "category": "key_date",
+   "provision": "Art. 16 (consolidated-text marker)",
+   "quote": "Artículo 16.- Derogado.",
+   "value": "Art. 16 repealed; consolidated-text version marker 2025-01-01",
+   "match": {
+    "X": null,
+    "Y": null
+   }
+  },
+  {
+   "category": "sanction",
+   "provision": "Art. 1",
+   "quote": "será castigado con la pena de presidio menor en sus grados medio a máximo",
+   "value": "attack on system integrity: presidio menor medio a maximo",
+   "match": {
+    "X": 0,
+    "Y": 0
+   }
+  },
+  {
+   "category": "sanction",
+   "provision": "Art. 2",
+   "quote": "será castigado con la pena de presidio menor en su grado mínimo o multa de once a veinte unidades tributarias mensuales",
+   "value": "illicit access: presidio menor minimo or fine 11-20 UTM; with intent/divulgation presidio menor minimo a medio; obtained and divulged presidio menor medio a maximo",
+   "match": {
+    "X": 1,
+    "Y": 1
+   }
+  },
+  {
+   "category": "sanction",
+   "provision": "Art. 3",
+   "quote": "será castigado con la pena de presidio menor en su grado medio",
+   "value": "illicit interception: presidio menor medio; electromagnetic capture presidio menor medio a maximo",
+   "match": {
+    "X": 3,
+    "Y": 2
+   }
+  },
+  {
+   "category": "sanction",
+   "provision": "Art. 4",
+   "quote": "será castigado con presidio menor en su grado medio, siempre que con ello se cause un daño grave al titular de estos mismos",
+   "value": "attack on data integrity: presidio menor medio",
+   "match": {
+    "X": 5,
+    "Y": 3
+   }
+  },
+  {
+   "category": "sanction",
+   "provision": "Art. 5",
+   "quote": "será castigado con la pena de presidio menor en su grado máximo a presidio mayor en su grado mínimo",
+   "value": "computer forgery: presidio menor medio a maximo; public employee: presidio menor maximo a presidio mayor minimo",
+   "match": {
+    "X": 6,
+    "Y": 4
+   }
+  },
+  {
+   "category": "sanction",
+   "provision": "Art. 6",
+   "quote": "sufrirá la pena asignada a los respectivos delitos, rebajada en un grado",
+   "value": "receiving computer data: penalty of the underlying offence reduced one degree",
+   "match": {
+    "X": 8,
+    "Y": 5
+   }
+  },
+  {
+   "category": "sanction",
+   "provision": "Art. 7",
+   "quote": "Con presidio menor en sus grados medio a máximo y multa de once a quince unidades tributarias mensuales",
+   "value": "computer fraud: tiered by damage; max presidio menor maximo + fine 21-30 UTM above 400 UTM",
+   "match": {
+    "X": 9,
+    "Y": 6
+   }
+  },
+  {
+   "category": "sanction",
+   "provision": "Art. 8",
+   "quote": "será sancionado con la pena de presidio menor en su grado mínimo y multa de cinco a diez unidades tributarias mensuales",
+   "value": "abuse of devices: presidio menor minimo + fine 5-10 UTM",
+   "match": {
+    "X": 10,
+    "Y": 7
+   }
+  },
+  {
+   "category": "sanction",
+   "provision": "Art. 10 inc. 2",
+   "quote": "la pena correspondiente se aumentará en un grado",
+   "value": "aggravation: penalty raised one degree when public-utility services or electoral processes are affected",
+   "match": {
+    "X": 11,
+    "Y": 8
+   }
+  },
+  {
+   "category": "sanction",
+   "provision": "Art. 13",
+   "quote": "caerán especialmente en comiso los instrumentos de los delitos penados en esta ley, los efectos que de ellos provengan y las utilidades que hubieren originado",
+   "value": "forfeiture (comiso) of instruments, proceeds and profits; equivalent sum if not possible",
+   "match": {
+    "X": 12,
+    "Y": 9
+   }
+  },
+  {
+   "category": "sanction",
+   "provision": "Art. 20 (inserting Ley 18.168 Art. 36 B f))",
+   "quote": "serán sancionados con la pena de presidio menor en su grado máximo",
+   "value": "breach of secrecy duty under CPP Arts. 218 bis, 219, 222: presidio menor maximo",
+   "match": {
+    "X": 13,
+    "Y": 10
+   }
+  },
+  {
+   "category": "sanction",
+   "provision": "Art. 21 (amending Ley 20.393 Arts. 1 and 15)",
+   "quote": "en el Título I de la ley que sanciona delitos informáticos",
+   "value": "criminal liability of legal persons extended to Title I offences (penalties by reference to Ley 20.393)",
+   "match": {
+    "X": 14,
+    "Y": 11
+   }
+  }
+ ],
+ "judgments": {
+  "X": {
+   "thresholds": [
+    {
+     "index": 0,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 1,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 2,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 3,
+     "verdict": "correct",
+     "note": ""
+    }
+   ],
+   "events": [
+    {
+     "index": 0,
+     "verdict": "correct",
+     "note": "approval by Congress, date not stated"
+    },
+    {
+     "index": 1,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 2,
+     "verdict": "correct",
+     "note": "promulgation"
+    },
+    {
+     "index": 3,
+     "verdict": "correct",
+     "note": "publication date not in text"
+    },
+    {
+     "index": 4,
+     "verdict": "correct",
+     "note": "general EIF, date not stated"
+    },
+    {
+     "index": 5,
+     "verdict": "not_this_instrument",
+     "note": "Repeal of Ley 19.223 by Art. 17 is an event of the repealed act (belongs in relations as 'repeals'); coded here as a 'repealed' event it reads as this law being repealed."
+    },
+    {
+     "index": 6,
+     "verdict": "correct",
+     "note": "Art. 18 conditional start"
+    },
+    {
+     "index": 7,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 8,
+     "verdict": "correct",
+     "note": ""
+    }
+   ],
+   "obligations": [
+    {
+     "index": 0,
+     "verdict": "wrong_type",
+     "note": "Art. 2 inc. 4 conditions are conditions for an exemption from criminal liability, not duties; codebook 3.5 requires eligibility_condition (one row). Coded as registration_notification."
+    },
+    {
+     "index": 1,
+     "verdict": "wrong_type",
+     "note": "Art. 2 inc. 4 conditions are conditions for an exemption from criminal liability, not duties; codebook 3.5 requires eligibility_condition (one row). Coded as incident_reporting."
+    },
+    {
+     "index": 2,
+     "verdict": "wrong_type",
+     "note": "Art. 2 inc. 4 conditions are conditions for an exemption from criminal liability, not duties; codebook 3.5 requires eligibility_condition (one row). Coded as prohibition."
+    },
+    {
+     "index": 3,
+     "verdict": "wrong_type",
+     "note": "Art. 2 inc. 4 conditions are conditions for an exemption from criminal liability, not duties; codebook 3.5 requires eligibility_condition (one row). Coded as consent."
+    },
+    {
+     "index": 4,
+     "verdict": "correct",
+     "note": "Art. 12 order requirements and MP report"
+    },
+    {
+     "index": 5,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 6,
+     "verdict": "correct",
+     "note": "Fiscal Nacional instructions"
+    },
+    {
+     "index": 7,
+     "verdict": "correct",
+     "note": "CPP 218 bis preservation"
+    },
+    {
+     "index": 8,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 9,
+     "verdict": "correct",
+     "note": "applies_from repeats the 6-month deadline rather than a start date (minor)"
+    }
+   ],
+   "enforcement": [
+    {
+     "index": 0,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 1,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 2,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 3,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 4,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 5,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 6,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 7,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 8,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 9,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 10,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 11,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 12,
+     "verdict": "wrong_type",
+     "note": "Comiso (criminal forfeiture of instruments and proceeds) is not the revocation or clawback of a benefit; 'other' (or criminal_penalty) fits."
+    },
+    {
+     "index": 13,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 14,
+     "verdict": "correct",
+     "note": "corporate criminal liability by reference to Ley 20.393"
+    }
+   ]
+  },
+  "Y": {
+   "thresholds": [
+    {
+     "index": 0,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 1,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 2,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 3,
+     "verdict": "correct",
+     "note": ""
+    }
+   ],
+   "events": [
+    {
+     "index": 0,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 1,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 2,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 3,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 4,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 5,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 6,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 7,
+     "verdict": "not_this_instrument",
+     "note": "Repeal of Ley 19.223 by Art. 17 is an event of the repealed act (belongs in relations as 'repeals'); coded here as a 'repealed' event it reads as this law being repealed."
+    },
+    {
+     "index": 8,
+     "verdict": "correct",
+     "note": "90-day preservation period as a procedural deadline"
+    }
+   ],
+   "obligations": [
+    {
+     "index": 0,
+     "verdict": "correct",
+     "note": "criminal prohibition Art. 1"
+    },
+    {
+     "index": 1,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 2,
+     "verdict": "correct",
+     "note": "safe-harbour conditions as one eligibility_condition row"
+    },
+    {
+     "index": 3,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 4,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 5,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 6,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 7,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 8,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 9,
+     "verdict": "unsupported",
+     "note": "Art. 13 comiso is a sanction (forfeiture), not a government duty; it is already enforcement row 9."
+    },
+    {
+     "index": 10,
+     "verdict": "correct",
+     "note": "Art. 12 court powers and order requirements"
+    },
+    {
+     "index": 11,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 12,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 13,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 14,
+     "verdict": "correct",
+     "note": "secrecy duty of the requested company"
+    },
+    {
+     "index": 15,
+     "verdict": "wrong_date",
+     "note": "applies_from says six months after publication under Art. tercero transitorio, but that article covers Arts. 19 and 21 only; Art. 20 has no deferred start."
+    },
+    {
+     "index": 16,
+     "verdict": "unsupported",
+     "note": "Art. 21 extends corporate criminal liability under Ley 20.393 to Title I offences; it states no duty of firms. It is a sanction regime (enforcement row 11), not an obligation."
+    }
+   ],
+   "enforcement": [
+    {
+     "index": 0,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 1,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 2,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 3,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 4,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 5,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 6,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 7,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 8,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 9,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 10,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 11,
+     "verdict": "correct",
+     "note": ""
+    }
+   ]
+  }
+ },
+ "sampling": {
+  "X": {},
+  "Y": {}
+ },
+ "classification": {
+  "X": {
+   "domains": "right",
+   "primary_domain": "right",
+   "note": "cybersecurity clearly right; data_access_sharing defensible via CPP 218 bis data preservation (marginal)"
+  },
+  "Y": {
+   "domains": "right",
+   "primary_domain": "right",
+   "note": "same domains as X"
+  }
+ },
+ "reference_scope": "full text",
+ "notes": "Consolidated text: Arts. 9 and 16 read 'Derogado' with unlabelled date markers 2024-09-04 and 2025-01-01. Reference items 8-9 record those repeals; their date attribution is uncertain (the markers are unlabelled and could belong to the neighbouring articles), and both versions explicitly declined to code them, so they affect both equally. X does not code the criminal offences of Arts. 1-8 as prohibitions (Y does); the omission is a recall gap, not a precision error. Threshold tiers of Art. 7 coded as four rows (one per tier) in both versions; accepted as correct for both."
+}

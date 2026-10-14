@@ -1,0 +1,524 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "us-tx-sb1188-2025",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "AGORA plaintext (ETO, CC BY-NC 4.0), local cache",
+  "url": "https://capitol.texas.gov/tlodocs/89R/billtext/pdf/SB01188F.pdf",
+  "retrieved": "2026-05-02",
+  "version": "1.33.0 (2026-09-16)",
+  "language": "en",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "data_protection",
+   "data_transfer_localization",
+   "data_access_sharing",
+   "ai_sectoral",
+   "algorithmic_decision_systems"
+  ],
+  "primary_domain": "data_protection",
+  "mechanisms": [
+   "mandate_obligation",
+   "prohibition_ban",
+   "disclosure_transparency"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "healthcare_provider",
+   "government_agency"
+  ],
+  "affected_roles": [
+   "consumers_users",
+   "minors"
+  ],
+  "decision_margins": [
+   "household:data_privacy",
+   "household:access",
+   "firm:product_design_release",
+   "firm:compliance_process"
+  ],
+  "territorial_scope": {
+   "types": [
+    "subnational"
+   ],
+   "description": "Applies to covered entities and health care practitioners authorized to provide health care services in Texas; the storage rule requires records to be physically maintained in the United States or a U.S. territory.",
+   "evidence": {
+    "provision": "Sec. 183.005(a)(1)",
+    "quote": "the practitioner is acting within the scope of the practitioner's license, certification, or other authorization to provide health care services in this state"
+   }
+  },
+  "agora_applications": [
+   "Medicine, life sciences and public health"
+  ],
+  "agora_harms": [
+   "Violation of civil or human rights, including privacy"
+  ],
+  "agora_incentives": [
+   "Fines"
+  ],
+  "agora_risk_factors": [
+   "Privacy",
+   "Transparency"
+  ],
+  "agora_strategies": [
+   "Disclosure: In deployment",
+   "Input controls: Data use"
+  ]
+ },
+ "summary": {
+  "short": "Texas SB 1188 adds Health and Safety Code Chapter 183 on electronic health records. It requires U.S. storage, limits access and amendments, mandates record fields including biological sex, gives minors' parents access, permits practitioners' AI diagnostic use with disclosure, and sets agency and attorney general enforcement, effective September 1, 2025.",
+  "long": "SB 1188 adds Chapter 183 to the Texas Health and Safety Code. Section 183.001 defines terms, including covered entity, which includes health care practitioners but excludes listed facilities and waiver providers. Section 183.002 requires covered entities to keep electronic health records physically in the United States or a U.S. territory, limits access to staff with employment-related need, and requires reasonable safeguards. Section 183.003 requires records to include an option to record metabolic health and diet communications between covered entities. Section 183.004 bars collecting, storing or sharing credit score or voter registration status in records. Section 183.005 permits practitioners to use AI for diagnostic purposes under listed conditions, including review of AI-created records, and requires disclosure of that use to patients. Section 183.006 requires systems for minors' records to allow parents or guardians complete access, subject to legal restrictions. Section 183.007 requires a separate space recording biological sex and sexual development disorders, and requires decision tools to use the recorded biological sex. Section 183.008 limits amendments to biological sex. Sections 183.009 and 183.010 require investigations and allow disciplinary action after three or more violations. Section 183.011 allows attorney general injunctions and civil penalties of up to $5,000, $25,000 or $250,000 depending on culpability. Section 183.012 requires an memorandum of understanding and rules. Section 2 applies the chapter to records prepared on or after the effective date, and the storage rule to storage from January 1, 2026. Section 4 sets the effective date as September 1, 2025."
+ },
+ "relations": [
+  {
+   "relation": "amends",
+   "target_text": "Subtitle I, Title 2, Health and Safety Code",
+   "note": "Adds Chapter 183 (Electronic Health Records, Sec. 183.001-183.012) to the Health and Safety Code.",
+   "evidence": {
+    "provision": "SECTION 1",
+    "quote": "Subtitle I, Title 2, Health and Safety Code, is amended by adding Chapter 183 to read as follows"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Health and Safety Code Section 181.001",
+   "note": "The definition of 'covered entity' has the meaning assigned by Section 181.001; that section is not reproduced in this text.",
+   "evidence": {
+    "provision": "Sec. 183.001(2)",
+    "quote": "\"Covered entity\" has the meaning assigned by Section 181.001."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Health Insurance Portability and Accountability Act of 1996 (Pub. L. No. 104-191)",
+   "note": "Investigations under Sec. 183.009 must comply with HIPAA as well as other applicable state and federal laws.",
+   "evidence": {
+    "provision": "Sec. 183.009",
+    "quote": "the Health Insurance Portability and Accountability Act of 1996 (Pub. L. No. 104-191)"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Texas Human Resources Code, Chapter 103",
+   "note": "Chapter 103 facilities are excluded from the definition of covered entity.",
+   "evidence": {
+    "provision": "Sec. 183.001(2)(F)",
+    "quote": "a day activity and health services facility licensed under Chapter 103, Human Resources Code"
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "Texas Medical Board",
+   "role": "designated",
+   "function": "Jointly with the commission and the Texas Department of Insurance, ensures EHR biological-sex space requirements; sets medical records standards referenced in Sec. 183.005(a)(3); party to memorandum of understanding under Sec. 183.012.",
+   "evidence": {
+    "provision": "Sec. 183.007(a)",
+    "quote": "the commission, the Texas Medical Board, and the Texas Department of Insurance shall jointly ensure that"
+   }
+  },
+  {
+   "name": "Texas Department of Insurance",
+   "role": "designated",
+   "function": "Jointly with the commission and the Texas Medical Board, ensures EHR biological-sex space requirements; party to memorandum of understanding and rules under Sec. 183.012.",
+   "evidence": {
+    "provision": "Sec. 183.007(a)",
+    "quote": "the commission, the Texas Medical Board, and the Texas Department of Insurance shall jointly ensure that"
+   }
+  },
+  {
+   "name": "Texas Department of Licensing and Regulation",
+   "role": "designated",
+   "function": "Party to the memorandum of understanding and, as necessary, rules to implement Chapter 183.",
+   "evidence": {
+    "provision": "Sec. 183.012",
+    "quote": "shall enter into a memorandum of understanding and, as necessary, adopt rules to implement this chapter"
+   }
+  },
+  {
+   "name": "Executive commissioner",
+   "role": "designated",
+   "function": "Party to the memorandum of understanding and, as necessary, rules to implement Chapter 183.",
+   "evidence": {
+    "provision": "Sec. 183.012",
+    "quote": "The executive commissioner, the Texas Medical Board, the Texas Department of Licensing and Regulation"
+   }
+  },
+  {
+   "name": "Attorney General",
+   "role": "designated",
+   "function": "May institute actions for injunctive relief and for civil penalties against covered entities for violations of Chapter 183.",
+   "evidence": {
+    "provision": "Sec. 183.011(a)",
+    "quote": "The attorney general may institute an action for injunctive relief to restrain a violation of this chapter."
+   }
+  },
+  {
+   "name": "The commission",
+   "role": "designated",
+   "function": "With the appropriate regulatory agency, investigates credible allegations of violations of Chapter 183; also acts jointly under Sec. 183.007(a). The text does not define 'the commission'.",
+   "evidence": {
+    "provision": "Sec. 183.009",
+    "quote": "The commission or the appropriate regulatory agency shall conduct an investigation of any credible allegation of a violation of this chapter"
+   }
+  },
+  {
+   "name": "Appropriate regulatory agency",
+   "role": "designated",
+   "function": "Investigates credible allegations of violations (with the commission); may take disciplinary action against covered entities that violate the chapter three or more times in the same manner. The text does not name the agency.",
+   "evidence": {
+    "provision": "Sec. 183.010",
+    "quote": "The appropriate regulatory agency may take disciplinary action against a covered entity that violates this chapter three or more times in the same manner"
+   }
+  }
+ ],
+ "notes": "Effective date conflict: Sec. 2(a) applies Chapter 183 only to records prepared on or after the effective date, while Sec. 2(b) applies Sec. 183.002 to storage on or after January 1, 2026 regardless of when the record was prepared; Sec. 4 sets the effective date as September 1, 2025. Undefined terms: 'the commission', 'appropriate regulatory agency', 'open data' (183.002(b)), 'protected health information' (183.011(b)(3)), and 'covered entity' is defined only by reference to Section 181.001. Sec. 183.001(2) also excludes facilities under Health and Safety Code Chapters 142, 242, 246, 247 and 252 and a waiver provider; only the Human Resources Code Chapter 103 reference is coded as a relation. Section 183.008 and 183.007 concern biological sex entries and are not coded as thresholds.",
+ "events": [
+  {
+   "event": "entry_into_force",
+   "date": "2025-09-01",
+   "date_type": "absolute",
+   "date_text": "This Act takes effect September 1, 2025.",
+   "applies_to": "Act as a whole",
+   "evidence": {
+    "provision": "Sec. 4",
+    "quote": "This Act takes effect September 1, 2025."
+   }
+  },
+  {
+   "event": "application",
+   "date": "2025-09-01",
+   "date_type": "relative",
+   "date_text": "applies only to an electronic health record prepared on or after the effective date of this Act",
+   "anchor": "effective date of this Act",
+   "applies_to": "Chapter 183 (Health and Safety Code), for electronic health records prepared on or after the effective date",
+   "offset_value": 0,
+   "offset_unit": "days",
+   "anchor_event": "entry_into_force",
+   "evidence": {
+    "provision": "Sec. 2(a)",
+    "quote": "applies only to an electronic health record prepared on or after the effective date of this Act"
+   },
+   "date_computed_from": "entry_into_force 2025-09-01 (text) + 0 days"
+  },
+  {
+   "event": "application",
+   "date": "2026-01-01",
+   "date_type": "absolute",
+   "date_text": "applies to the storage of an electronic health record on or after January 1, 2026",
+   "applies_to": "Sec. 183.002 (storage of electronic health records), regardless of the date the record was prepared",
+   "evidence": {
+    "provision": "Sec. 2(b)",
+    "quote": "applies to the storage of an electronic health record on or after January 1, 2026"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "age",
+   "variable_text": "minor: individual 17 years of age or younger who has not had the disabilities of minority removed for general purposes",
+   "operator": "<=",
+   "value": 17,
+   "value_text": "17 years of age or younger",
+   "unit": "years",
+   "measurement": "Age of the individual; no measurement window stated",
+   "level": "person",
+   "trigger": "scope_definition",
+   "consequence": "Individual is a minor for purposes of the parental access duty in Sec. 183.006(b)",
+   "conditions": "Individual has not had the disabilities of minority removed for general purposes",
+   "evidence": {
+    "provision": "Sec. 183.006(a)",
+    "quote": "\"minor\" means an individual 17 years of age or younger who has not had the disabilities of minority removed for general purposes"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "violations of this chapter by a covered entity in the same manner",
+   "operator": ">=",
+   "value": 3,
+   "value_text": "three or more times in the same manner",
+   "unit": "violations",
+   "measurement": "Count of violations of this chapter in the same manner by the covered entity; no measurement window stated",
+   "level": "entity",
+   "trigger": "penalty_tier",
+   "consequence": "Appropriate regulatory agency may take disciplinary action against the covered entity as if it violated an applicable licensing or regulatory law, including license, registration or certification suspension or revocation",
+   "conditions": "Violation of this chapter; same manner",
+   "evidence": {
+    "provision": "Sec. 183.010",
+    "quote": "violates this chapter three or more times in the same manner"
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "Biological sex",
+   "defined_in": "Sec. 183.001(1)",
+   "evidence": {
+    "provision": "Sec. 183.001(1)",
+    "quote": "means the biological trait that determines whether a sexually reproducing organism produces male or female gametes"
+   }
+  },
+  {
+   "term": "Covered entity",
+   "defined_in": "Sec. 183.001(2), by reference to Section 181.001 (not in this text)",
+   "evidence": {
+    "provision": "Sec. 183.001(2)",
+    "quote": "has the meaning assigned by Section 181.001. The term includes a health care practitioner."
+   }
+  },
+  {
+   "term": "Female",
+   "defined_in": "Sec. 183.001(3)",
+   "evidence": {
+    "provision": "Sec. 183.001(3)",
+    "quote": "means an individual whose reproductive system is developed to produce ova"
+   }
+  },
+  {
+   "term": "Health care practitioner",
+   "defined_in": "Sec. 183.001(4)",
+   "evidence": {
+    "provision": "Sec. 183.001(4)",
+    "quote": "means an individual who is licensed, certified, or otherwise authorized to provide health care services in this state"
+   }
+  },
+  {
+   "term": "Male",
+   "defined_in": "Sec. 183.001(5)",
+   "evidence": {
+    "provision": "Sec. 183.001(5)",
+    "quote": "means an individual whose reproductive system is developed to produce sperm"
+   }
+  },
+  {
+   "term": "Sexual development disorder",
+   "defined_in": "Sec. 183.001(6)",
+   "evidence": {
+    "provision": "Sec. 183.001(6)",
+    "quote": "means a congenital condition associated with atypical development of internal or external genital structures"
+   }
+  },
+  {
+   "term": "Minor",
+   "defined_in": "Sec. 183.006(a)",
+   "evidence": {
+    "provision": "Sec. 183.006(a)",
+    "quote": "\"minor\" means an individual 17 years of age or younger who has not had the disabilities of minority removed for general purposes"
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "localization",
+   "addressee": "healthcare_provider",
+   "modality": "shall",
+   "summary": "Covered entity shall ensure electronic health records under its control that contain patient information are physically maintained in the United States or a U.S. territory, including records stored by third-party, subcontracted or cloud providers.",
+   "applies_from": "Storage on or after January 1, 2026 (Sec. 2(b)); otherwise the Act's effective date of September 1, 2025 (Sec. 4) for records prepared on or after that date (Sec. 2(a))",
+   "evidence": {
+    "provision": "Sec. 183.002(a)",
+    "quote": "A covered entity shall ensure that electronic health records under the control of the entity that contain patient information are physically maintained in the United States or a territory of the United States."
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "healthcare_provider",
+   "modality": "shall",
+   "summary": "Covered entity shall restrict access to state residents' electronic health record information (other than open data) to individuals who need it for treatment, payment or health care operations, and shall implement reasonable and appropriate administrative, physical and technical safeguards for confidentiality, integrity and availability.",
+   "applies_from": "Storage on or after January 1, 2026 (Sec. 2(b)); otherwise the Act's effective date of September 1, 2025 (Sec. 4) for records prepared on or after that date (Sec. 2(a))",
+   "evidence": {
+    "provision": "Sec. 183.002(b)-(c)",
+    "quote": "Each covered entity shall implement reasonable and appropriate administrative, physical, and technical safeguards"
+   }
+  },
+  {
+   "type": "record_keeping",
+   "addressee": "healthcare_provider",
+   "modality": "shall",
+   "summary": "Covered entity shall ensure each electronic health record includes the option for a health care practitioner to collect and record inter-entity communications on the individual's metabolic health and diet in treating a chronic disease or illness.",
+   "applies_from": "September 1, 2025 for electronic health records prepared on or after that date (Sec. 2(a), Sec. 4)",
+   "evidence": {
+    "provision": "Sec. 183.003",
+    "quote": "A covered entity shall ensure each electronic health record maintained for an individual includes the option for a health care practitioner to collect and record communications between two or more covered entities"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "healthcare_provider",
+   "modality": "shall_not",
+   "summary": "Covered entity may not collect, store or share information on an individual's credit score or voter registration status in the individual's electronic health record.",
+   "applies_from": "September 1, 2025 for electronic health records prepared on or after that date (Sec. 2(a), Sec. 4)",
+   "evidence": {
+    "provision": "Sec. 183.004",
+    "quote": "A covered entity may not collect, store, or share any information regarding an individual's credit score or voter registration status in the individual's electronic health record."
+   }
+  },
+  {
+   "type": "human_oversight",
+   "addressee": "healthcare_provider",
+   "modality": "shall",
+   "summary": "A health care practitioner using artificial intelligence for diagnostic purposes must act within the scope of the practitioner's license, must not use it where otherwise restricted or prohibited by state or federal law, and must review all AI-created records consistent with Texas Medical Board medical records standards.",
+   "applies_from": "September 1, 2025 for electronic health records prepared on or after that date (Sec. 2(a), Sec. 4)",
+   "conditional_on": "Use of AI for diagnostic purposes (including recommendations on diagnosis or treatment) is permitted only if the three conditions in Sec. 183.005(a)(1)-(3) hold",
+   "evidence": {
+    "provision": "Sec. 183.005(a)(3)",
+    "quote": "the practitioner reviews all records created with artificial intelligence"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "healthcare_provider",
+   "modality": "shall",
+   "summary": "A health care practitioner who uses artificial intelligence for diagnostic purposes must disclose that use to the practitioner's patients.",
+   "applies_from": "September 1, 2025 for electronic health records prepared on or after that date (Sec. 2(a), Sec. 4)",
+   "conditional_on": "Applies to AI use for diagnostic purposes under Sec. 183.005(a)",
+   "evidence": {
+    "provision": "Sec. 183.005(b)",
+    "quote": "must disclose the practitioner's use of that technology to the practitioner's patients."
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "healthcare_provider",
+   "modality": "shall",
+   "summary": "Covered entity shall ensure the electronic health record system it uses for minors' records allows a minor's parent (or managing conservator or guardian, if applicable) complete and unrestricted access immediately, unless restricted by state or federal law or court order.",
+   "applies_from": "September 1, 2025 for electronic health records prepared on or after that date (Sec. 2(a), Sec. 4)",
+   "conditional_on": "Applies to electronic health records of minors (17 years of age or younger, Sec. 183.006(a)); access may be restricted under state or federal law or a court order",
+   "evidence": {
+    "provision": "Sec. 183.006(b)",
+    "quote": "shall ensure each electronic health record system the entity uses to store electronic health records of minors allows a minor's parent"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The commission, the Texas Medical Board and the Texas Department of Insurance shall jointly ensure that each electronic health record includes a separate space for documenting biological sex (as recorded at birth) and information on any sexual development disorder, and that any algorithm or decision assistance tool in the record includes the biological sex recorded in that space.",
+   "applies_from": "September 1, 2025 for electronic health records prepared on or after that date (Sec. 2(a), Sec. 4)",
+   "conditional_on": "Notwithstanding any other law",
+   "evidence": {
+    "provision": "Sec. 183.007(a)",
+    "quote": "the commission, the Texas Medical Board, and the Texas Department of Insurance shall jointly ensure that:"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "healthcare_provider",
+   "modality": "shall_not",
+   "summary": "Covered entity may amend an individual's recorded biological sex in the electronic health record only to correct a clerical error, or where a sexual development disorder diagnosis leads to a change to the opposite biological sex.",
+   "applies_from": "September 1, 2025 for electronic health records prepared on or after that date (Sec. 2(a), Sec. 4)",
+   "conditional_on": "Amendment is permitted only under Sec. 183.008(a)(1) (clerical error) or (a)(2) (sexual development disorder diagnosis)",
+   "evidence": {
+    "provision": "Sec. 183.008(a)",
+    "quote": "A covered entity may amend on an electronic health record an individual's biological sex"
+   }
+  },
+  {
+   "type": "record_keeping",
+   "addressee": "healthcare_provider",
+   "modality": "shall",
+   "summary": "Where biological sex is amended on the basis of a sexual development disorder diagnosis, covered entity shall include information on that disorder in the electronic health record's designated space.",
+   "applies_from": "September 1, 2025 for electronic health records prepared on or after that date (Sec. 2(a), Sec. 4)",
+   "conditional_on": "Applies only where biological sex is amended under Sec. 183.008(a)(2)",
+   "evidence": {
+    "provision": "Sec. 183.008(b)",
+    "quote": "the covered entity shall include in the individual's electronic health record information on the individual's sexual development disorder"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "regulator",
+   "modality": "shall",
+   "summary": "The commission or the appropriate regulatory agency shall investigate any credible allegation of a violation of the chapter by a covered entity, in compliance with applicable state and federal law including HIPAA.",
+   "applies_from": "September 1, 2025 for electronic health records prepared on or after that date (Sec. 2(a), Sec. 4)",
+   "conditional_on": "Triggered by a credible allegation of a violation",
+   "evidence": {
+    "provision": "Sec. 183.009",
+    "quote": "The commission or the appropriate regulatory agency shall conduct an investigation of any credible allegation of a violation of this chapter by a covered entity."
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The executive commissioner, the Texas Medical Board, the Texas Department of Licensing and Regulation, the Texas Department of Insurance and each regulatory agency subject to the chapter shall enter into a memorandum of understanding to implement the chapter.",
+   "applies_from": "September 1, 2025 (Sec. 4)",
+   "evidence": {
+    "provision": "Sec. 183.012",
+    "quote": "shall enter into a memorandum of understanding"
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The same bodies named in Sec. 183.012 may, as necessary, adopt rules to implement the chapter.",
+   "applies_from": "September 1, 2025 (Sec. 4)",
+   "conditional_on": "As necessary",
+   "evidence": {
+    "provision": "Sec. 183.012",
+    "quote": "adopt rules to implement this chapter."
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "If a state agency determines that a federal waiver or authorization is necessary before implementing a provision, the affected agency shall request it and may delay implementation until granted.",
+   "applies_from": "Upon the agency's determination that a federal waiver or authorization is necessary (Sec. 3)",
+   "conditional_on": "Only if the affected state agency determines a federal waiver or authorization is necessary",
+   "evidence": {
+    "provision": "Sec. 3",
+    "quote": "the agency affected by the provision shall request the waiver or authorization"
+   }
+  }
+ ],
+ "enforcement": [
+  {
+   "sanction_type": "license_revocation",
+   "authority": "the appropriate regulatory agency",
+   "triggered_by": "a covered entity violates this chapter three or more times in the same manner",
+   "max_penalty_text": "license, registration, or certification suspension or revocation for a period the agency determines appropriate",
+   "penalty_reference": "Sec. 183.010",
+   "cure_period": "none stated in this text",
+   "evidence": {
+    "provision": "Sec. 183.010",
+    "quote": "may take disciplinary action against a covered entity that violates this chapter three or more times in the same manner"
+   }
+  },
+  {
+   "sanction_type": "injunction_order",
+   "authority": "the attorney general",
+   "triggered_by": "a violation of this chapter",
+   "penalty_reference": "Sec. 183.011(a)",
+   "cure_period": "none stated in this text",
+   "evidence": {
+    "provision": "Sec. 183.011(a)",
+    "quote": "The attorney general may institute an action for injunctive relief to restrain a violation of this chapter."
+   }
+  },
+  {
+   "sanction_type": "civil_penalty",
+   "authority": "the attorney general",
+   "triggered_by": "a violation of this chapter by a covered entity",
+   "max_penalty_text": "$5,000 per violation committed negligently in a single year; $25,000 per violation committed knowingly or intentionally in a single year; $250,000 per violation in which the covered entity knowingly or intentionally used protected health information for financial gain",
+   "currency": "$",
+   "penalty_formula": "Tiered per-violation maxima: $5,000 (negligent, single year); $25,000 (knowing or intentional, single year); $250,000 (knowing or intentional use of protected health information for financial gain). Continuing violations within a year are counted once per violation regardless of duration.",
+   "penalty_reference": "Sec. 183.011(b)",
+   "cure_period": "none stated in this text",
+   "evidence": {
+    "provision": "Sec. 183.011(b)",
+    "quote": "A civil penalty assessed under this section may not exceed:"
+   }
+  }
+ ],
+ "section_status": {}
+}

@@ -1,0 +1,147 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "us-ca-ab302-2023",
+ "tier": "B",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "light, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-interim-20261014"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "AGORA plaintext (ETO, CC BY-NC 4.0), local cache",
+  "url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202320240AB302",
+  "retrieved": "2024-05-12",
+  "version": "1.33.0 (2026-09-16)",
+  "language": "en",
+  "extent": "partial",
+  "note": "AGORA record covers part of an act: An act to add Section 11546.45.5 to the Government Code, relating to automated decision systems"
+ },
+ "classification": {
+  "domains": [
+   "public_sector_ai",
+   "algorithmic_decision_systems"
+  ],
+  "primary_domain": "public_sector_ai",
+  "mechanisms": [
+   "mandate_obligation"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "government_agency"
+  ],
+  "affected_roles": [
+   "general_public"
+  ],
+  "decision_margins": [],
+  "territorial_scope": {
+   "types": [
+    "subnational"
+   ],
+   "description": "Applies to California state agencies as defined in the section; the text reaches no actors outside the state's own agencies.",
+   "evidence": {
+    "provision": "SECTION 1 (adding Government Code § 11546.45.5(a)(5)(A))",
+    "quote": "“State agency” means any of the following:"
+   }
+  },
+  "agora_applications": [
+   "Government: other applications/unspecified"
+  ],
+  "agora_risk_factors": [
+   "Bias",
+   "Security: Cybersecurity"
+  ],
+  "agora_strategies": [
+   "Government study or report"
+  ]
+ },
+ "summary": {
+  "short": "Adds Government Code § 11546.45.5, requiring the Department of Technology to inventory high-risk automated decision systems used, developed or procured by California state agencies by September 1, 2024, and to report the inventory annually to legislative committees from January 1, 2025.",
+  "long": "Adds Government Code section 11546.45.5. It defines automated decision system, high-risk automated decision system, state agency and board, and excludes the University of California, the Legislature, the judicial branch and boards except as provided. By September 1, 2024, the Department of Technology must conduct, in coordination with other interagency bodies as it deems appropriate, an inventory of high-risk automated decision systems proposed for, or in use, development or procurement by state agencies. The inventory must describe each system's decisions and intended benefits, alternatives, research results on efficacy, categories of data and personal information used, and measures in place, if any, to mitigate risks such as cybersecurity risk and biased decisions. From January 1, 2025 and annually thereafter, the department must submit a report of the inventory to the Assembly Committee on Privacy and Consumer Protection and the Senate Committee on Governmental Organization. The reporting requirement becomes inoperative on January 1, 2029. The text sets no penalties and creates no private right of action."
+ },
+ "relations": [
+  {
+   "relation": "amends",
+   "target_text": "Government Code",
+   "note": "Adds new Section 11546.45.5 to the Government Code (Section 1 of the act). The target code is not in the registry, so target_instrument_id is left empty.",
+   "evidence": {
+    "provision": "SECTION 1",
+    "quote": "Section 11546.45.5 is added to the Government Code, to read:"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Section 10231.5 (code not named in the text)",
+   "note": "Makes the inoperative date of the report requirement in subdivision (d)(1) depend on Section 10231.5.",
+   "evidence": {
+    "provision": "11546.45.5(d)(2)",
+    "quote": "The requirement for submitting a report imposed under paragraph (1) is inoperative on January 1, 2029, pursuant to Section 10231.5."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Section 9795 (code not named in the text)",
+   "note": "Requires the report under subdivision (d)(1) to be submitted in compliance with Section 9795.",
+   "evidence": {
+    "provision": "11546.45.5(d)(3)",
+    "quote": "A report to be submitted pursuant to paragraph (1) shall be submitted in compliance with Section 9795."
+   }
+  }
+ ],
+ "notes": "The document is the act as adopted and gives no bill number, session-law history, effective-date clause or enacting-act reference, so enacted_by_bill is not recorded. Sections 10231.5 and 9795 are cited without naming their code, and the text does not identify it. In the source, subdivision (b) and subparagraph (a)(5)(B) run together without line breaks, so the section structure above follows the lettering as printed.",
+ "events": [
+  {
+   "event": "deadline",
+   "date": "2024-09-01",
+   "date_type": "absolute",
+   "date_text": "On or before September 1, 2024, the Department of Technology shall conduct",
+   "applies_to": "Department of Technology: comprehensive inventory of high-risk automated decision systems proposed for use, development, or procurement by, or used by, any state agency",
+   "evidence": {
+    "provision": "Gov. Code § 11546.45.5(b)",
+    "quote": "On or before September 1, 2024, the Department of Technology shall conduct"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2025-01-01",
+   "date_type": "recurring",
+   "date_text": "On or before January 1, 2025, and annually thereafter, the department shall submit a report",
+   "applies_to": "Department of Technology: report of the comprehensive inventory to the Assembly Committee on Privacy and Consumer Protection and the Senate Committee on Governmental Organization",
+   "evidence": {
+    "provision": "Gov. Code § 11546.45.5(d)(1)",
+    "quote": "On or before January 1, 2025, and annually thereafter, the department shall submit a report"
+   }
+  },
+  {
+   "event": "sunset",
+   "date": "2029-01-01",
+   "date_type": "absolute",
+   "date_text": "is inoperative on January 1, 2029, pursuant to Section 10231.5",
+   "applies_to": "Requirement to submit the inventory report under § 11546.45.5(d)(1)",
+   "evidence": {
+    "provision": "Gov. Code § 11546.45.5(d)(2)",
+    "quote": "is inoperative on January 1, 2029"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "other",
+   "variable_text": "number of members of a board, commission, committee, council, association or authority",
+   "operator": ">",
+   "value": 1,
+   "value_text": "more than one person",
+   "unit": "persons",
+   "level": "other",
+   "trigger": "scope_definition",
+   "consequence": "Body qualifies as a 'Board' under the definition, which is then excluded from 'State agency' except as provided in subparagraph (A).",
+   "conditions": "Members appointed by the Governor, the Legislature, or both.",
+   "evidence": {
+    "provision": "Gov. Code § 11546.45.5(a)(2)",
+    "quote": "consisting of more than one person whose members are appointed by the Governor, the Legislature, or both"
+   }
+  }
+ ],
+ "section_status": {}
+}

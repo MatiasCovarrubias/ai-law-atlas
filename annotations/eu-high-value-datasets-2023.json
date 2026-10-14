@@ -1,0 +1,278 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "eu-high-value-datasets-2023",
+ "tier": "B",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "light, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-interim-20261014"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (connectors/fetch_texts.py)",
+  "url": "http://publications.europa.eu/resource/cellar/a278a3e0-9864-11ed-b508-01aa75ed71a1.0006.03/DOC_1",
+  "retrieved": "2026-10-13",
+  "version": "as fetched",
+  "language": "en",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "data_access_sharing"
+  ],
+  "primary_domain": "data_access_sharing",
+  "mechanisms": [
+   "mandate_obligation",
+   "standard_setting"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "government_agency"
+  ],
+  "decision_margins": [
+   "firm:input_use"
+  ],
+  "territorial_scope": {
+   "types": [
+    "supranational"
+   ],
+   "description": "Applies in all EU Member States; obligations fall on public sector bodies holding the listed datasets.",
+   "evidence": {
+    "provision": "Art. 6",
+    "quote": "This Regulation shall be binding in its entirety and directly applicable in all Member States."
+   }
+  },
+  "agora_strategies": [
+   "Input controls: Data circulation"
+  ]
+ },
+ "summary": {
+  "short": "Lists specific high-value datasets in six thematic categories and requires public sector bodies holding them to publish them for re-use via APIs, under open licences (CC0 or CC BY 4.0), from 16 months after entry into force.",
+  "long": "Commission Implementing Regulation (EU) 2023/138 lays down a list of specific high-value datasets under Directive (EU) 2019/1024, in six thematic categories (geospatial; earth observation and environment; meteorological; statistics; companies and company ownership; mobility), with granularity, key attributes, formats and update frequencies set in the Annex. Public sector bodies holding listed datasets must make them available for re-use in machine-readable formats via APIs, with bulk download where the Annex requires it, publish API terms of use, quality of service criteria and documentation, designate an API point of contact, and mark the datasets as high-value in their metadata (Art. 3). Art. 4 requires re-use under CC0 or CC BY 4.0 or an equivalent or less restrictive open licence, applies the obligations to existing machine-readable high-value datasets created before the date of application, and requires publication of Member State exemptions granted under Directive 2019/1024. Member States must report on implementation within two years of entry into force, then every two years on request, including the number of exempted bodies (Art. 5). Binding in its entirety and directly applicable in all Member States, it applies 16 months after entry into force (Art. 6)."
+ },
+ "relations": [
+  {
+   "relation": "legal_basis",
+   "target_text": "Directive (EU) 2019/1024 of the European Parliament and of the Council of 20 June 2019 on open data and the re-use of public sector information",
+   "note": "Enabling act. The preamble cites Article 14(1) of the Directive as the legal basis.",
+   "evidence": {
+    "provision": "Preamble, citations",
+    "quote": "Having regard to Directive (EU) 2019/1024 of the European Parliament and of the Council of 20 June 2019 on open data and the re-use of public sector information"
+   }
+  },
+  {
+   "relation": "implements",
+   "target_text": "Directive (EU) 2019/1024 of the European Parliament and of the Council of 20 June 2019 on open data and the re-use of public sector information",
+   "note": "Establishes the list of high-value datasets under Annex I to the Directive and the arrangements for their publication and re-use. Recital (7) states that the Directive provides for this Regulation to set the free-of-charge exception for public undertakings.",
+   "evidence": {
+    "provision": "Art. 1(1)",
+    "quote": "This Implementing Regulation establishes the list of high-value datasets belonging to the thematic categories set out in Annex I to Directive (EU) 2019/1024"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive 2007/2/EC establishing an Infrastructure for Spatial Information in the European Community (INSPIRE)",
+   "note": "Its definitions apply to the geospatial, earth observation and environment and meteorological categories. The Annex also uses INSPIRE data themes as the scope of several datasets.",
+   "evidence": {
+    "provision": "Art. 2(2)",
+    "quote": "The definitions set out for datasets in the geospatial, earth observation and environment and meteorological categories in Directive 2007/2/EC shall apply."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive 2005/44/EC of the European Parliament and of the Council on harmonised river information services (RIS) on inland waterways",
+   "note": "Its definitions apply to the mobility category. The Annex applies its data format and documentation rules to inland waterways datasets.",
+   "evidence": {
+    "provision": "Art. 2(3)",
+    "quote": "The definitions set out for datasets in the mobility category under Directive 2007/2/EC and Directive 2005/44/EC shall apply."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive 2003/4/EC of the European Parliament and of the Council on public access to environmental information",
+   "note": "The environmental category is stated to be without affecting the access regimes under this Directive.",
+   "evidence": {
+    "provision": "Annex 2.1",
+    "quote": "consistent with and without affecting the relevant access regimes as defined in Directive 2003/4/EC"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) 2016/679",
+   "note": "Personal data processing must comply with the GDPR (recital 8). Member States report on data protection impact assessments under Article 35 of this Regulation.",
+   "evidence": {
+    "provision": "Art. 5(3)(e)",
+    "quote": "the existence of data protection impact assessments carried out in accordance with Article 35 of Regulation (EU) 2016/679"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Commission Regulation (EC) No 1205/2008 implementing Directive 2007/2/EC as regards metadata",
+   "note": "Sets the minimum metadata elements for INSPIRE-scope datasets.",
+   "evidence": {
+    "provision": "Annex 1.2(b)",
+    "quote": "shall contain at least the metadata elements set out in Commission Regulation (EC) No 1205/2008."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) 2021/2116",
+   "note": "Reference parcels and agricultural parcels datasets must take into account the obligation in Article 67(3) and (5) of this Regulation.",
+   "evidence": {
+    "provision": "Annex 1.2(c)",
+    "quote": "the obligation foreseen by Article 67(3) and 67(5) of Regulation (EU) 2021/2116"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) No 1306/2013",
+   "note": "Cited for the accuracy level of the reference parcels and agricultural parcels datasets. Footnote 2 shows that Regulation (EU) 2021/2116 repealed Regulation (EU) No 1306/2013.",
+   "evidence": {
+    "provision": "Annex 1.1",
+    "quote": "as referred to in Article 70(1) of Regulation (EU) 1306/2013."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) No 549/2013 of the European Parliament and of the Council",
+   "note": "Defines the concepts and breakdowns for the national accounts and government finance datasets in the statistics category.",
+   "evidence": {
+    "provision": "Annex 4.1 (table)",
+    "quote": "Regulation (EU) No 549/2013 of the European Parliament and of the Council"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) 2019/1700 of the European Parliament and of the Council",
+   "note": "Lays down the key variables for poverty, inequality, employment and unemployment datasets in the statistics category.",
+   "evidence": {
+    "provision": "Annex 4.1, footnote 62",
+    "quote": "Regulation (EU) 2019/1700 of the European Parliament and of the Council"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive 2013/34/EU of the European Parliament and of the Council on the annual financial statements, consolidated financial statements and related reports",
+   "note": "The descriptions of the company datasets and their key attributes are to be understood in accordance with listed articles of this Directive.",
+   "evidence": {
+    "provision": "Annex 5.1",
+    "quote": "The descriptions of the datasets and their key attributes shall be understood in accordance with Articles 4, 5, 9-19a, 24, 28-29a, 31, 35, 36, 39, 40, 43 and 48c of Directive 2013/34/EU"
+   }
+  }
+ ],
+ "notes": "Target IDs are left empty because they were not checked against the registry. The Annex cites Regulation (EU) 1306/2013, which footnote 2 shows was repealed by Regulation (EU) 2021/2116. The Annex 2.1 table cites 'Regulation (EU) 2019/1021/EU' while footnote 32 gives 2019/1021. Article 4(3) allows CC0 or CC BY 4.0, while Annex 1.2 and 5.2 require CC BY 4.0 or an equivalent open licence; the text does not explain the difference. Many environmental and statistical acts in the Annex are listed only as sources of key variables and are not coded as relations. section_status.relations is marked not_applicable only because the schema requires that field; the relations are listed above.",
+ "events": [
+  {
+   "event": "signed",
+   "date": "2022-12-21",
+   "date_type": "absolute",
+   "date_text": "Done at Brussels, 21 December 2022.",
+   "applies_to": "",
+   "evidence": {
+    "provision": "Signature block (after Art. 6)",
+    "quote": "Done at Brussels, 21 December 2022."
+   }
+  },
+  {
+   "event": "consultation",
+   "date": "2022-07-15",
+   "date_type": "absolute",
+   "date_text": "delivered an opinion on 15 July 2022",
+   "applies_to": "European Data Protection Supervisor opinion under Art. 42(1) of Regulation (EU) 2018/1725",
+   "evidence": {
+    "provision": "Recital (13)",
+    "quote": "delivered an opinion on 15 July 2022"
+   }
+  },
+  {
+   "event": "published",
+   "date": "2023-01-20",
+   "date_type": "absolute",
+   "date_text": "20.1.2023",
+   "applies_to": "Official Journal of the European Union, L 19/43",
+   "evidence": {
+    "provision": "Header (Official Journal dateline)",
+    "quote": "20.1.2023"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2023-02-09",
+   "date_type": "relative",
+   "date_text": "on the twentieth day following that of its publication in the Official Journal of the European Union",
+   "anchor": "publication in the Official Journal of the European Union",
+   "applies_to": "",
+   "offset_value": 20,
+   "offset_unit": "days",
+   "anchor_event": "published",
+   "evidence": {
+    "provision": "Art. 6, para. 1",
+    "quote": "This Regulation shall enter into force on the twentieth day following that of its publication in the Official Journal of the European Union."
+   },
+   "date_computed_from": "published 2023-01-20 (text) + 20 days"
+  },
+  {
+   "event": "application",
+   "date": "2024-06-09",
+   "date_type": "relative",
+   "date_text": "It shall apply from 16 months after entry into force of this Regulation.",
+   "anchor": "entry into force of this Regulation",
+   "applies_to": "obligations under this Regulation for high-value datasets",
+   "offset_value": 16,
+   "offset_unit": "months",
+   "anchor_event": "entry_into_force",
+   "evidence": {
+    "provision": "Art. 6, para. 2",
+    "quote": "It shall apply from 16 months after entry into force of this Regulation."
+   },
+   "date_computed_from": "entry_into_force 2023-02-09 (computed) + 16 months"
+  },
+  {
+   "event": "deadline",
+   "date": "2025-02-09",
+   "date_type": "relative",
+   "date_text": "By 2 years after entry into force of this Implementing Regulation",
+   "anchor": "entry into force of this Implementing Regulation",
+   "applies_to": "Member States: report to the Commission on measures implementing this Regulation",
+   "offset_value": 2,
+   "offset_unit": "years",
+   "anchor_event": "entry_into_force",
+   "evidence": {
+    "provision": "Art. 5, para. 1",
+    "quote": "By 2 years after entry into force of this Implementing Regulation Member States shall provide the Commission with a report on the measures they have carried out"
+   },
+   "date_computed_from": "entry_into_force 2023-02-09 (computed) + 2 years"
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "updated version of the report upon the request of the Commission which should be made every 2 years",
+   "applies_to": "Member States: updated report to the Commission",
+   "evidence": {
+    "provision": "Art. 5, para. 2",
+    "quote": "an updated version of the report upon the request of the Commission which should be made every 2 years"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "Time series shall begin no later than at the date of application of the respective legal act listed in the table below.",
+   "depends_on": "date of application of the respective legal act listed in the table in Annex point 4.1",
+   "applies_to": "time series of statistics high-value datasets",
+   "evidence": {
+    "provision": "Annex, point 4.1 (Datasets in scope)",
+    "quote": "Time series shall begin no later than at the date of application of the respective legal act listed in the table below."
+   }
+  }
+ ],
+ "section_status": {
+  "thresholds": {
+   "status": "not_applicable",
+   "note": "The operative provisions (Articles 1-6 and Annex sections 1-6) set no numeric cutoff that changes legal treatment. Numbers found are technical specifications (scale 1:5 000, update frequencies, formats), statistical definitions in Annex tables (e.g. poverty and work-intensity measures), or procedural time limits (Art. 5 reporting, Art. 6 application date, coded as events). The two-year exemption period appears only in recital (6), which is not an operative provision, and Article 4(1) refers to the exemption without a period. Any cutoffs governing the free-of-charge exemption sit in Directive (EU) 2019/1024 Art. 14, which this Regulation implements."
+  }
+ },
+ "thresholds": []
+}

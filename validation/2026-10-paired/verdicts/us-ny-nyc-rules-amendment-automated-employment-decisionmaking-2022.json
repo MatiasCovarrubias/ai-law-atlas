@@ -1,0 +1,246 @@
+{
+ "instrument_id": "us-ny-nyc-rules-amendment-automated-employment-decisionmaking-2022",
+ "checker": "claude-opus-5-5 (Claude Code)",
+ "protocol": "VP-1.0",
+ "date": "2026-10-14",
+ "reference": [
+  {
+   "category": "threshold",
+   "provision": "6 RCNY § 5-301(d)",
+   "quote": "an independent auditor may exclude a category that represents less than 2% of the data being used for the bias audit from the required calculations for impact ratio",
+   "value": "< 2% of audit data: category may be excluded from impact-ratio calculations (with justification and counts in summary)",
+   "match": {
+    "X": 1,
+    "Y": 0
+   }
+  }
+ ],
+ "judgments": {
+  "X": {
+   "thresholds": [
+    {
+     "index": 0,
+     "verdict": "unsupported",
+     "note": "one-year bias-audit recency is a time limit (recurring compliance deadline, also coded as event 0), not a threshold under codebook 3.4"
+    },
+    {
+     "index": 1,
+     "verdict": "correct",
+     "note": "level 'group' is a loose fit (demographic category, not affiliates)"
+    }
+   ],
+   "events": [
+    {
+     "index": 0,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 1,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 2,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 3,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 4,
+     "verdict": "correct",
+     "note": ""
+    }
+   ],
+   "obligations": [
+    {
+     "index": 0,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 1,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 2,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 3,
+     "verdict": "unsupported",
+     "note": "independence criteria come from the definition of 'Independent auditor' (§ 5-300); a definition, not a duty or benefit eligibility condition"
+    },
+    {
+     "index": 4,
+     "verdict": "correct",
+     "note": "§ 5-302 split into four rows (4-7) where the granularity rule (article x role x type) would give two; content not repeated, so not marked duplicate"
+    },
+    {
+     "index": 5,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 6,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 7,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 8,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 9,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 10,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 11,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 12,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 13,
+     "verdict": "correct",
+     "note": ""
+    }
+   ],
+   "enforcement": []
+  },
+  "Y": {
+   "thresholds": [
+    {
+     "index": 0,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 1,
+     "verdict": "unsupported",
+     "note": "one-year bias-audit recency is a time limit (recurring compliance deadline, also coded as event 1), not a threshold under codebook 3.4"
+    }
+   ],
+   "events": [
+    {
+     "index": 0,
+     "verdict": "unsupported",
+     "note": "Section 1's amending clause is a relation (amends 6 RCNY ch. 5), not a dated event; no date given"
+    },
+    {
+     "index": 1,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 2,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 3,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 4,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 5,
+     "verdict": "correct",
+     "note": ""
+    }
+   ],
+   "obligations": [
+    {
+     "index": 0,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 1,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 2,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 3,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 4,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 5,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 6,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 7,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 8,
+     "verdict": "correct",
+     "note": ""
+    }
+   ],
+   "enforcement": []
+  }
+ },
+ "sampling": {
+  "X": {},
+  "Y": {}
+ },
+ "classification": {
+  "X": {
+   "domains": "right",
+   "primary_domain": "right",
+   "note": "algorithmic_decision_systems primary; employment_labor and ai_sectoral defensible"
+  },
+  "Y": {
+   "domains": "right",
+   "primary_domain": "right",
+   "note": "algorithmic_decision_systems, employment_labor"
+  }
+ },
+ "reference_scope": "full text",
+ "notes": "Fetched text is the rule text only: no dates and no sanctions, so the reference list has a single threshold (2% exclusion). Both versions code enforcement as not_found, which is correct. Both code the one-year audit recency as a threshold (judged unsupported per codebook 3.4) as well as an event. X splits obligations more finely (14 vs 9 rows); Y merges per article as the codebook asks."
+}

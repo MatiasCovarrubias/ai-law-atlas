@@ -1,0 +1,183 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "fr-cibs-l312-70-datacenter-excise",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "codes.droit.org (unofficial copy)",
+  "url": "https://codes.droit.org/PDF/Code%20des%20impositions%20sur%20les%20biens%20et%20services.pdf",
+  "retrieved": "2026-10-14",
+  "version": "current version of art. L312-70 as last amended by loi n° 2025-127 du 14 février 2025, art. 21 (codes.droit.org edition of 2026-10-10, generated from Légifrance API data)",
+  "language": "fr",
+  "extent": "full",
+  "note": "Légifrance returned 403 (Cloudflare). Raw file is the whole consolidated CIBS PDF from codes.droit.org; the .txt was trimmed by hand to article L312-70 only (header lines added for code/part/article and amendment source). Re-running extract_texts.py would yield the whole code. The article sets the conditions for the reduced rate; the rate itself is set in the tariff table elsewhere in the code (not included)."
+ },
+ "classification": {
+  "domains": [
+   "compute_data_centers",
+   "energy_grid_water"
+  ],
+  "primary_domain": "compute_data_centers",
+  "mechanisms": [
+   "tax_incentive"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "data_center_operator"
+  ],
+  "decision_margins": [
+   "firm:input_use",
+   "firm:compliance_process"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national"
+   ],
+   "description": "Applies to electricity consumed by qualifying data infrastructure under the French Code des impositions sur les biens et services; the article contains no explicit territorial wording.",
+   "evidence": {
+    "provision": "Art. L. 312-70",
+    "quote": "Relève d'un tarif réduit de l'accise"
+   }
+  }
+ },
+ "summary": {
+  "short": "French excise-code article under which data-centre operators get a reduced excise rate on electricity above one gigawatt-hour per calendar year, if eight cumulative conditions are met (security, cooling, energy management, heat recovery, water use, electro-sensitivity). Amended by Law 2025-127 of 14 February 2025.",
+  "long": "Article L. 312-70 of the Code des impositions sur les biens et services (general excise regime) gives a reduced excise rate on electricity consumed for data-processing infrastructure, for the portion above one gigawatt-hour per calendar year. The rate applies only if eight cumulative conditions are met: data storage, processing, transport or distribution use; secured access; dedicated thermal, air-quality, power and fire-prevention controls; an energy management system; membership of a recognised good-practice programme (eco-design, efficiency, consumption reporting, cooling performance criteria); waste-heat recovery in a heat or cold network, or a multi-year power-efficiency indicator set by decree; cooling water use limited by a multi-year indicator set by decree; and electro-sensitive activities. The article itself sets no penalties. Its amendment by Law 2025-127 of 14 February 2025 is recorded in its version line."
+ },
+ "relations": [
+  {
+   "relation": "amended_by",
+   "target_text": "LOI n°2025-127 du 14 février 2025",
+   "note": "The version line states the article was modified by this law (art. 21, b du 7° du I (V)). The header also cites Conseil Constit. 2025-874 DC, which is not coded as a relation.",
+   "evidence": {
+    "provision": "Article L. 312-70 (version en vigueur)",
+    "quote": "modifié par LOI n°2025-127 du 14 février 2025 - art. 21, b du 7° du I (V)"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Code de l'énergie, article L. 233-1, I (avant-dernier alinéa)",
+   "note": "Point 4 requires the energy management system to meet the criteria in the penultimate paragraph of Art. L. 233-1 I of the Energy Code.",
+   "evidence": {
+    "provision": "Article L. 312-70, 4°",
+    "quote": "conforme aux critères prévus à l'avant-dernier alinéa du I de l'article L. 233-1 du code de l'énergie"
+   }
+  }
+ ],
+ "notes": "Excerpt of one article (L. 312-70) as in force after LOI n°2025-127. The text gives no rate figure; the reduced rate applies only to the share of consumption above one gigawatt-hour per calendar year. Points 6 and 7 leave their indicator values to a décret, which is not part of this text. Point 5 refers to an unnamed programme recognised by an unnamed public or international authority. No internal inconsistency found.",
+ "events": [
+  {
+   "event": "amended",
+   "date": "2025-02-14",
+   "date_type": "absolute",
+   "date_text": "modifié par LOI n°2025-127 du 14 février 2025 - art. 21, b du 7° du I (V)",
+   "applies_to": "Article L. 312-70 as amended by LOI n°2025-127 (art. 21, b du 7° du I (V)); date is the amending act's date as printed in the version note",
+   "evidence": {
+    "provision": "Article L. 312-70 (Version en vigueur)",
+    "quote": "modifié par LOI n°2025-127 du 14 février 2025"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "energy_consumption",
+   "variable_text": "électricité consommée pour les besoins de l'infrastructure immobilière, fraction qui excède un gigawattheure sur une année civile",
+   "operator": ">",
+   "value": 1,
+   "value_text": "un gigawattheure sur une année civile",
+   "unit": "GWh",
+   "measurement": "electricity consumed by the infrastructure in one calendar year; the reduced rate applies only to the fraction above the threshold",
+   "level": "facility",
+   "trigger": "benefit",
+   "consequence": "Reduced excise rate applies to electricity consumed above 1 GWh per calendar year, where the cumulative conditions 1° to 8° are met",
+   "conditions": "Cumulative conditions 1° to 8° of Art. L. 312-70 must all be met",
+   "evidence": {
+    "provision": "Art. L. 312-70",
+    "quote": "pour la fraction qui excède un gigawattheure sur une année civile"
+   }
+  },
+  {
+   "variable": "energy_efficiency",
+   "variable_text": "indicateur chiffré sur un horizon pluriannuel en matière d'efficacité dans l'utilisation de la puissance",
+   "operator": "=",
+   "value": null,
+   "value_text": "indicateur chiffré sur un horizon pluriannuel, déterminé par décret en fonction de l'espace occupé par les équipements informatiques et, le cas échéant, de leur utilisation",
+   "unit": "indicator set by decree",
+   "measurement": "multi-year horizon; indicator determined by decree in relation to the space occupied by IT equipment and, where applicable, its use; the text gives no direction or numeric value for the indicator",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Alternative route to eligibility under 6°: the infrastructure meets the decree-set power-use efficiency indicator instead of valorising waste heat in a heat or cold network",
+   "conditions": "Applies as an alternative to valorisation of fatal heat in a heat or cold network (6°)",
+   "depends_on": "décret (implementing decree, not in this text)",
+   "evidence": {
+    "provision": "Art. L. 312-70, 6°",
+    "quote": "respecte un indicateur chiffré sur un horizon pluriannuel en matière d'efficacité dans l'utilisation de la puissance, déterminé par décret"
+   }
+  },
+  {
+   "variable": "water_efficiency",
+   "variable_text": "eau utilisée à des fins de refroidissement limitée selon un indicateur chiffré sur un horizon pluriannuel",
+   "operator": "=",
+   "value": null,
+   "value_text": "indicateur chiffré sur un horizon pluriannuel, déterminé par décret",
+   "unit": "indicator set by decree",
+   "measurement": "multi-year horizon; indicator determined by decree; the text gives no direction or numeric value for the indicator",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Water used for cooling must stay within the decree-set multi-year indicator as a condition of eligibility",
+   "conditions": "Cumulative conditions 1° to 8° of Art. L. 312-70 must all be met",
+   "depends_on": "décret (implementing decree, not in this text)",
+   "evidence": {
+    "provision": "Art. L. 312-70, 7°",
+    "quote": "L'eau qui y est utilisée à des fins de refroidissement est limitée selon un indicateur chiffré sur un horizon pluriannuel, déterminé par décret"
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "eligibility_condition",
+   "addressee": "data_center_operator",
+   "modality": "shall",
+   "summary": "Electricity for data-storage infrastructure qualifies for a reduced excise rate on the part of annual consumption above one gigawatt-hour only if eight cumulative conditions are met: secure access; dedicated thermal, air, power and fire controls; an energy management system; membership of a recognised best-practice programme with periodic reporting; heat recovery or a power-efficiency indicator; a water-use indicator for cooling; and electro-sensitive activities.",
+   "conditional_on": "Electricity consumption exceeds one gigawatt-hour per calendar year and the eight cumulative conditions in points 1° to 8° are met.",
+   "evidence": {
+    "provision": "Art. L. 312-70, chapeau and 1° to 8°",
+    "quote": "Relève d'un tarif réduit de l'accise, pour la fraction qui excède un gigawattheure sur une année civile, l'électricité"
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Decree (décret) sets the multi-year efficiency-in-power-use indicator under point 6° (by reference to the space occupied by IT equipment and, where relevant, its use) and the multi-year water-use indicator under point 7°.",
+   "conditional_on": "Applies only where the data-center infrastructure is assessed under points 6° and 7° of the eligibility conditions.",
+   "evidence": {
+    "provision": "Art. L. 312-70, 6° and 7°",
+    "quote": "déterminé par décret en fonction de l'espace occupé par les équipements informatiques"
+   }
+  }
+ ],
+ "section_status": {
+  "entities": {
+   "status": "not_found",
+   "note": "No named firm, facility or public body. The duty-holder is described only as l'exploitant, and the programme authority only as une autorité publique, nationale ou internationale."
+  },
+  "definitions": {
+   "status": "not_found",
+   "note": "The article contains no defined terms. Scope terms such as 'centres de stockage de données', 'infrastructure immobilière' and 'exploitant' are used without definition in this text."
+  },
+  "enforcement": {
+   "status": "not_found",
+   "note": "The document is a single article (L. 312-70) setting a reduced excise rate for electricity used by qualifying data infrastructure. It contains no sanction, penalty, revocation, clawback, suspension or blocking provision. Penalty rules for the excise regime are not included in the fetched text."
+  }
+ },
+ "enforcement": [],
+ "definitions": [],
+ "entities": []
+}

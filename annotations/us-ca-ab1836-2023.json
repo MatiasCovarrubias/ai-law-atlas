@@ -1,0 +1,287 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "us-ca-ab1836-2023",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "AGORA plaintext (ETO, CC BY-NC 4.0), local cache",
+  "url": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202320240AB1836",
+  "retrieved": "2025-01-17",
+  "version": "1.33.0 (2026-09-16)",
+  "language": "en",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "synthetic_media_deepfakes"
+  ],
+  "primary_domain": "synthetic_media_deepfakes",
+  "mechanisms": [
+   "liability_rule"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "ai_deployer",
+   "ai_distributor"
+  ],
+  "decision_margins": [
+   "firm:product_design_release"
+  ],
+  "territorial_scope": {
+   "types": [
+    "subnational"
+   ],
+   "description": "Applies to liability arising from acts occurring directly in California.",
+   "evidence": {
+    "provision": "Civil Code § 3344.1(o)",
+    "quote": "This section shall apply to the adjudication of liability and the imposition of any damages or other remedies in cases in which the liability, damages, and other remedies arise from acts occurring directly in this state."
+   }
+  },
+  "agora_applications": [
+   "Broadcasting and media production"
+  ],
+  "agora_harms": [
+   "Violation of civil or human rights, including privacy"
+  ],
+  "agora_incentives": [
+   "Civil liability"
+  ]
+ },
+ "summary": {
+  "short": "Amends California Civil Code § 3344.1 to impose liability on persons who produce, distribute or make available a deceased personality's digital replica in expressive audiovisual works or sound recordings without consent, with listed exemptions. Effective date not stated in the provided text.",
+  "long": "Section 1 states legislative intent to protect intellectual property from exploitation. Section 2 amends Civil Code § 3344.1 on use of a deceased personality's name, voice, signature, photograph or likeness. Subdivision (a)(1) makes unconsented use on products, merchandise, goods, advertising or solicitation liable for the greater of $750 or actual damages, plus profits not counted in actual damages; punitive damages and attorney's fees are available. Subdivision (a)(2) makes a person who produces, distributes or makes available a digital replica of a deceased personality's voice or likeness in an expressive audiovisual work or sound recording without consent liable for the greater of $10,000 or actual damages, unless an exception applies: news, public affairs or sports broadcasts; comment, criticism, scholarship, satire or parody; certain documentary or biographical representations; fleeting or incidental use; or advertisements for such works. A digital replica is defined as a computer-generated, highly realistic, readily identifiable representation. Other subdivisions cover transferability and succession of rights, a 70-year post-death limit, claims registration with the Secretary of State, cumulative remedies, application to acts occurring directly in California, and retroactivity for personalities who died before January 1, 1985. The document reproduces the amended section in full and does not mark which text is new."
+ },
+ "relations": [
+  {
+   "relation": "amends",
+   "target_text": "California Civil Code § 3344.1",
+   "note": "Amends Civil Code § 3344.1 (rights of deceased personalities). The text provided is the amended section as printed; changed text is not marked.",
+   "evidence": {
+    "provision": "SEC. 2",
+    "quote": "Section 3344.1 of the Civil Code is amended to read:"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "California Government Code § 12195(d)",
+   "note": "Within amended § 3344.1(f)(2), the claim-registration fee is set by reference to subdivision (d) of Government Code § 12195. The fee amount is not stated in this text.",
+   "evidence": {
+    "provision": "SEC. 2 (Civ. Code § 3344.1(f)(2))",
+    "quote": "upon payment of a fee as set forth in subdivision (d) of Section 12195 of the Government Code."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "California Probate Code § 240",
+   "note": "Within amended § 3344.1(d)(4), division of rights among children and grandchildren is exercisable in the manner provided in Probate Code § 240.",
+   "evidence": {
+    "provision": "SEC. 2 (Civ. Code § 3344.1(d)(4))",
+    "quote": "exercisable in the manner provided in Section 240 of the Probate Code"
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "Secretary of State (California)",
+   "role": "designated",
+   "function": "Receives and posts registrations of successor-in-interest and licensee claims to deceased personality rights, prescribes the claim form, and may microfilm or destroy filings and post the registry online.",
+   "evidence": {
+    "provision": "SEC. 2 (Civ. Code § 3344.1(f)(2)-(3))",
+    "quote": "the Secretary of State shall post the document along with the entire registry"
+   }
+  }
+ ],
+ "notes": "Only SEC. 2 amends a law (Civil Code § 3344.1). SEC. 1 is a statement of legislative intent referring to all intellectual property, while the amended section concerns the right of publicity. The text carries no markings separating new from restated text, so the new digital-replica provisions in § 3344.1(a)(2) and (B) cannot be distinguished from unchanged text; coding is based on the text as presented and should be checked against the enrolled bill. No effective-date section appears in the text provided. Government Code § 12195 and Probate Code § 240 are cited but not reproduced.",
+ "events": [],
+ "thresholds": [
+  {
+   "variable": "other",
+   "variable_text": "years between death and January 1, 1985 (deceased personality scope)",
+   "operator": "<=",
+   "value": 70,
+   "value_text": "died within 70 years prior to January 1, 1985",
+   "unit": "years",
+   "measurement": "period measured back from January 1, 1985 to the date of death",
+   "level": "person",
+   "trigger": "scope_definition",
+   "consequence": "A natural person who died within 70 years before January 1, 1985 is included in the definition of deceased personality.",
+   "conditions": "Applies in addition to the commercial-value test in the first sentence of the definition.",
+   "evidence": {
+    "provision": "Sec. 2 (amending Civil Code § 3344.1(h))",
+    "quote": "A “deceased personality” shall include, without limitation, any such natural person who has died within 70 years prior to January 1, 1985."
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "years after death within which an action may be brought",
+   "operator": "<=",
+   "value": 70,
+   "value_text": "not brought after the expiration of 70 years after the death of the deceased personality",
+   "unit": "years",
+   "measurement": "time from the death of the deceased personality to the use complained of",
+   "level": "person",
+   "trigger": "benefit_duration",
+   "consequence": "No action may be brought under this section for a use occurring more than 70 years after the death of the deceased personality.",
+   "conditions": "Applies to use of the name, voice, signature, photograph, or likeness of a deceased personality under this section.",
+   "evidence": {
+    "provision": "Sec. 2 (amending Civil Code § 3344.1(g))",
+    "quote": "An action shall not be brought under this section by reason of any use of a deceased personality’s name, voice, signature, photograph, or likeness occurring after the expiration of 70 years after the death of the deceased personality."
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "year of death relative to January 1, 1985",
+   "operator": "<",
+   "value": 1985,
+   "value_text": "any deceased personality who died prior to January 1, 1985",
+   "unit": "year",
+   "measurement": "date of death compared with January 1, 1985",
+   "level": "person",
+   "trigger": "scope_definition",
+   "consequence": "Rights are deemed to have existed at the time of death and vest in the persons entitled under the testamentary instrument of the deceased personality.",
+   "conditions": "Subdivision (q) states the rights are expressly made retroactive, including to such deceased personalities.",
+   "evidence": {
+    "provision": "Sec. 2 (amending Civil Code § 3344.1(b))",
+    "quote": "shall be deemed to have existed at the time of death of any deceased personality who died prior to January 1, 1985"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "year of action taken to exercise rights (relative to May 1, 2007)",
+   "operator": "<",
+   "value": 2007,
+   "value_text": "if an action was taken prior to May 1, 2007",
+   "unit": "year",
+   "measurement": "date on which the action to exercise rights was taken",
+   "level": "person",
+   "trigger": "exemption",
+   "consequence": "The exercise of rights is not affected by subdivision (b), and the rights vest solely in the persons described in subdivision (d), other than a disinherited person.",
+   "conditions": "Applies to a deceased personality who died prior to January 1, 1985, where the exercise was not successfully challenged in court by a person described in subdivision (b).",
+   "evidence": {
+    "provision": "Sec. 2 (amending Civil Code § 3344.1(p))",
+    "quote": "if an action was taken prior to May 1, 2007, to exercise rights recognized under this section"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "aggregate interest in the rights held by persons exercising them",
+   "operator": ">",
+   "value": 0.5,
+   "value_text": "those persons who, in the aggregate, are entitled to more than a one-half interest in the rights",
+   "unit": "fraction of the rights",
+   "measurement": "aggregate ownership share of the persons entitled under subdivision (d)",
+   "level": "group",
+   "trigger": "eligibility",
+   "consequence": "Those persons may exercise the rights on behalf of and for the benefit of all persons entitled after the death of a person.",
+   "conditions": "Applies subject to subdivisions (b) and (c).",
+   "evidence": {
+    "provision": "Sec. 2 (amending Civil Code § 3344.1(d))",
+    "quote": "by those persons who, in the aggregate, are entitled to more than a one-half interest in the rights"
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "deceased personality",
+   "defined_in": "Civil Code § 3344.1(h)",
+   "evidence": {
+    "provision": "Sec. 2 (amending Civil Code § 3344.1(h))",
+    "quote": "“deceased personality” means any natural person whose name, voice, signature, photograph, or likeness has commercial value at the time of that person’s death, or because of that person’s death"
+   }
+  },
+  {
+   "term": "digital replica",
+   "defined_in": "Civil Code § 3344.1(a)(2)(B)(ii)(I)",
+   "evidence": {
+    "provision": "Sec. 2 (amending Civil Code § 3344.1(a)(2)(B)(ii)(I))",
+    "quote": "“Digital replica” means a computer-generated, highly realistic electronic representation that is readily identifiable as the voice or visual likeness of an individual"
+   }
+  },
+  {
+   "term": "audiovisual work",
+   "defined_in": "Civil Code § 3344.1(a)(2)(B)(i)",
+   "evidence": {
+    "provision": "Sec. 2 (amending Civil Code § 3344.1(a)(2)(B)(i))",
+    "quote": "“Audiovisual work” means a work that consists of a series of related images that are intrinsically intended to be shown by the use of machines or devices"
+   }
+  },
+  {
+   "term": "photograph",
+   "defined_in": "Civil Code § 3344.1(i)",
+   "evidence": {
+    "provision": "Sec. 2 (amending Civil Code § 3344.1(i))",
+    "quote": "“photograph” means any photograph or photographic reproduction, still or moving, or any videotape or live television transmission, of any person, such that the deceased personality is readily identifiable"
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Secretary of State must post filed successor-in-interest or licensee claims, together with the entire registry of such claims, on its internet website. The Secretary of State may also microfilm or reproduce filings, which is a permission and is not coded.",
+   "applies_from": "Upon receipt and after filing of any document under this section",
+   "conditional_on": "A document is filed under Civil Code 3344.1 (successor or licensee claims)",
+   "evidence": {
+    "provision": "Sec. 2 (amending Civil Code 3344.1(f)(3))",
+    "quote": "the Secretary of State shall post the document along with the entire registry"
+   }
+  },
+  {
+   "type": "registration_notification",
+   "addressee": "consumers_users",
+   "modality": "shall",
+   "summary": "A person claiming to be a successor in interest to a deceased personality's rights, or a licensee, who chooses to register the claim must file a verified form with the Secretary of State containing the listed information and pay the fee. The text does not specify further addressee categories.",
+   "applies_from": "On registering a claim with the Secretary of State",
+   "conditional_on": "The claimant chooses to register a claim under Civil Code 3344.1(f)(2)",
+   "evidence": {
+    "provision": "Sec. 2 (amending Civil Code 3344.1(f)(2))",
+    "quote": "The form shall be verified and shall include the name and date of death of the deceased personality"
+   }
+  }
+ ],
+ "enforcement": [
+  {
+   "sanction_type": "private_damages",
+   "authority": "None named; private action under Civil Code § 3344.1",
+   "triggered_by": "Use of a deceased personality's name, voice, signature, photograph, or likeness, without prior consent, on or in products, merchandise, or goods, or for advertising, selling, or soliciting purchases of products, merchandise, goods, or services",
+   "max_penalty_text": "Greater of seven hundred fifty dollars ($750) or actual damages, plus profits attributable to the use not counted in actual damages; punitive damages may also be awarded; prevailing party may recover attorney's fees and costs",
+   "currency": "USD",
+   "penalty_formula": "Greater of $750 or actual damages suffered by the injured party or parties, plus non-duplicative profits attributable to the use",
+   "penalty_reference": "Civil Code § 3344.1(a)(1)(A)",
+   "private_right_of_action": true,
+   "cure_period": "None stated",
+   "evidence": {
+    "provision": "Sec. 2 (amending Civil Code § 3344.1(a)(1)(A))",
+    "quote": "the person who violated the section shall be liable to the injured party or parties in an amount equal to the greater of seven hundred fifty dollars ($750) or the actual damages suffered by the injured party or parties"
+   }
+  },
+  {
+   "sanction_type": "private_damages",
+   "authority": "None named; private action under Civil Code § 3344.1",
+   "triggered_by": "Production, distribution, or making available of a digital replica of a deceased personality's voice or likeness in an expressive audiovisual work or sound recording without prior consent, where none of the criteria in clause (ii) apply",
+   "max_penalty_text": "Greater of ten thousand dollars ($10,000) or actual damages suffered by a person controlling the rights to the deceased personality's likeness",
+   "currency": "USD",
+   "penalty_formula": "Greater of $10,000 or actual damages suffered by a person controlling the rights to the deceased personality's likeness",
+   "penalty_reference": "Civil Code § 3344.1(a)(2)(A)(i)",
+   "private_right_of_action": true,
+   "cure_period": "None stated",
+   "evidence": {
+    "provision": "Sec. 2 (amending Civil Code § 3344.1(a)(2)(A)(i))",
+    "quote": "shall be liable to any injured party in an amount equal to the greater of ten thousand dollars ($10,000) or the actual damages suffered by a person controlling the rights"
+   }
+  }
+ ],
+ "section_status": {
+  "events": {
+   "status": "not_found",
+   "note": "The text gives no enactment, signature, publication, entry-into-force, application, phase-in, deadline, sunset, expiry or repeal date for this act. Dates in the amended section (January 1, 1985; May 1, 2007; 70 years after death) refer to earlier law, past actions or rights periods and are not events of this instrument."
+  }
+ }
+}

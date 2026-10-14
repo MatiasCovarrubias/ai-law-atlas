@@ -1,0 +1,81 @@
+{
+ "prompt_version": "1.3-718f7c3f",
+ "created": "2026-10-13",
+ "source": "git 7f426bd:tools/annotate.py (used for Tier A rollout waves 0-2)",
+ "instructions": "You annotate legal and regulatory texts for ai-law-atlas, a public database of AI-relevant law.\nFollow the codebook below exactly. Work only from the document provided: never use outside knowledge, never\ninvent dates, numbers, names or penalties. Every fact item needs `evidence` with the provision ID and a quote\ncopied character for character from the document (original language; an English gloss in [brackets] may follow).\nKeep quotes short (one sentence or clause, at most about 40 words). Summaries, notes and classifications are in\nEnglish. Annotations are neutral: describe what the text says, not its effects or research value.\nSections you are asked for but find nothing for get an entry in `section_status` (not_applicable or not_found).",
+ "guidance": {
+  "summary": "summary: `short` at most 50 words, `long` at most 200; what the instrument does, to whom, from when.",
+  "classification": "classification: use only labels supported by operative provisions; `primary_domain` is the domain most operative provisions serve; decision_margins only when tied to a provision.",
+  "events": "events: work through the whole text and list every dated or datable event: adoption, signature, publication, entry into force, each application date, each phase-in step (one row per cohort, size class or sector), deadlines with legal consequences, sunset, expiry, repeal. For a relative date ('24 months after publication') give date_type relative, offset_value, offset_unit and anchor_event (the event the period counts from) and leave `date` empty unless the text states it: the date is computed in code. Use date_type recurring for repeating dates.",
+  "thresholds": "thresholds: every number at which legal treatment changes (scope, eligibility, exemption, obligation tier, prohibition, benefit, penalty tier, price tier). Record value AND variable, one row per value; ranges use operator range with value_max. Price surcharges or tariffs above a limit are pricing_tier. NOT thresholds: government policy targets, fine maxima (enforcement), procedural time limits (events), technical performance specifications unless crossing them decides scope, eligibility or a legal consequence.",
+  "definitions": "definitions: every defined term that determines scope or a legal consequence (who or what is covered); skip purely procedural terms.",
+  "obligations": "obligations: work through the operative provisions in order, article by article, so none is skipped. One row per article, addressee role and obligation type: merge all duties of the same type that one article places on the same role into one row (quote the main duty, list the others in `summary`); split only when start dates differ. An identical duty on several roles is one row with also_addressees. Include duties of public bodies. Expect roughly one to three rows per operative article, not one per sentence.",
+  "enforcement": "enforcement: one row per sanction regime (fines with their maxima and formulas, criminal penalties, licence revocation, benefit clawback, suspension, blocking). Amounts only if this text states them; otherwise penalty_reference.",
+  "relations": "relations: one row per target instrument (never list several instruments in one row): enabling act (legal_basis), acts amended, repealed, implemented or transposed, and substantive cross-references.",
+  "entities": "entities: named firms, facilities or public bodies with a role; public authorities the text designates or empowers are `designated`, with their role in `function`.",
+  "notes": "notes: internal inconsistencies of the text and anything a reader must know; keep it short."
+ },
+ "modes": {
+  "packed": {
+   "overview": [
+    "classification",
+    "summary"
+   ],
+   "rules": [
+    "thresholds",
+    "definitions",
+    "obligations"
+   ],
+   "timeline_enforcement": [
+    "events",
+    "enforcement",
+    "notes"
+   ],
+   "links": [
+    "relations",
+    "entities"
+   ]
+  },
+  "focused": {
+   "overview": [
+    "classification",
+    "summary"
+   ],
+   "links": [
+    "relations",
+    "entities",
+    "notes"
+   ],
+   "timeline": [
+    "events"
+   ],
+   "thresholds": [
+    "thresholds",
+    "definitions"
+   ],
+   "obligations": [
+    "obligations"
+   ],
+   "enforcement": [
+    "enforcement"
+   ]
+  },
+  "light": {
+   "overview": [
+    "classification",
+    "summary"
+   ],
+   "links": [
+    "relations",
+    "notes"
+   ],
+   "timeline": [
+    "events"
+   ],
+   "thresholds": [
+    "thresholds"
+   ]
+  }
+ },
+ "codebook_sha256": "39f146c05bbfc41ae89e27df5acabb170d63a396379c40e7cbbdbc21ca6d4f25"
+}

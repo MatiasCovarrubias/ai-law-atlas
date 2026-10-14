@@ -1,0 +1,183 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "us-ca-sb7-2025",
+ "tier": "B",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "light, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-interim-20261014"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "AGORA plaintext (ETO, CC BY-NC 4.0), local cache",
+  "url": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260SB7",
+  "retrieved": "2026-04-26",
+  "version": "1.33.0 (2026-09-16)",
+  "language": "en",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "employment_labor",
+   "algorithmic_decision_systems",
+   "data_protection"
+  ],
+  "primary_domain": "employment_labor",
+  "mechanisms": [
+   "mandate_obligation",
+   "prohibition_ban",
+   "disclosure_transparency"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "employer",
+   "ai_deployer",
+   "government_agency"
+  ],
+  "affected_roles": [
+   "workers"
+  ],
+  "decision_margins": [
+   "firm:compliance_process",
+   "firm:input_use",
+   "household:employment",
+   "household:data_privacy"
+  ],
+  "territorial_scope": {
+   "types": [
+    "subnational"
+   ],
+   "description": "Applies to employers and workers covered by the California Labor Code, including state and local government employers.",
+   "evidence": {
+    "provision": "Sec. 1, Labor Code §1520(i)",
+    "quote": "“Worker” means any natural person who is an employee of, or an independent contractor providing service to, or through, a business or a state or local governmental entity in any workplace."
+   }
+  },
+  "agora_applications": [
+   "Business services and analytics"
+  ],
+  "agora_harms": [
+   "Discrimination",
+   "Violation of civil or human rights, including privacy"
+  ],
+  "agora_incentives": [
+   "Fines",
+   "Civil liability"
+  ],
+  "agora_risk_factors": [
+   "Bias",
+   "Privacy",
+   "Transparency"
+  ],
+  "agora_strategies": [
+   "Disclosure: In deployment",
+   "Disclosure: About inputs",
+   "Input controls: Data use"
+  ]
+ },
+ "summary": {
+  "short": "Adds Labor Code Part 5.5.5 on employers' use of automated decision systems (ADS): written pre-use and post-use notices to workers, bar on relying solely on ADS for discipline, termination or deactivation, worker data access, and Labor Commissioner and prosecutor enforcement.",
+  "long": "Adds Labor Code Part 5.5.5 (§§1520–1539) on automated decision systems (ADS) used in employment. Employers must give written notice to affected workers at least 30 days before first deploying an ADS for employment-related decisions other than hiring (existing users by April 1, 2026; new workers within 30 days of hiring), notify job applicants of hiring-related ADS use, and maintain a list of ADS in use. Employers may not use ADS to violate labor or civil rights laws, infer protected status, take adverse action for exercising legal rights, or collect worker data for undisclosed purposes. Discipline, termination or deactivation may not rest solely on ADS; where ADS output is primarily relied on, a human reviewer must review it and a post-decision notice is required. Customer ratings may not be the only or primary ADS input. Workers may request a copy of their own data from the most recent 12 months primarily used by an ADS in such decisions, once every 12 months. The Labor Commissioner and public prosecutors enforce the part; violators face a $500 civil penalty. Carve-outs: collective bargaining agreements that explicitly waive the part; federal contract compliance; CCPA rules."
+ },
+ "relations": [
+  {
+   "relation": "amends",
+   "target_text": "California Labor Code, Division 2 (adds new Part 5.5.5 beginning at Section 1520)",
+   "note": "The bill adds a new Part 5.5.5 to Division 2 of the Labor Code, which is the Part this bill's text sets out.",
+   "evidence": {
+    "provision": "SECTION 1.",
+    "quote": "Part 5.5.5 (commencing with Section 1520) is added to Division 2 of the Labor Code"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "California Labor Code Sections 98.3, 98.7, 98.74, 1197.1, and Chapter 8 (commencing with Section 180) of Division 1",
+   "note": "Section 1532 applies the procedures in Sections 98.3, 98.7, 98.74 or 1197.1 for Labor Commissioner enforcement and citations, and Section 1532(b) allows public prosecutor enforcement under Chapter 8 of Division 1.",
+   "evidence": {
+    "provision": "Sec. 1532(a)",
+    "quote": "through the procedures set forth in Section 98.3, 98.7, 98.74, or 1197.1"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "California Consumer Privacy Act of 2018 (Civil Code Title 1.81.5, commencing with Section 1798.100); Civil Code Sections 1798.185 and 1798.199.40",
+   "note": "Section 1537 provides that an employer subject to the CCPA is subject to privacy-related automated decisionmaking technology regulations adopted by the California Privacy Protection Agency under Civil Code Sections 1798.185 and 1798.199.40; Section 1536 makes this exception to its notice-compliance provision.",
+   "evidence": {
+    "provision": "Sec. 1537",
+    "quote": "an employer that is a business subject to the California Consumer Privacy Act of 2018"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Government Code Section 52008 and Section 12940",
+   "note": "Section 1520(g) adopts the Government Code Section 52008 definition of federal government; Section 1524(a)(2) refers to protected status under Government Code Section 12940.",
+   "evidence": {
+    "provision": "Sec. 1520(g)",
+    "quote": "Section 52008 of the Government Code"
+   }
+  }
+ ],
+ "notes": "The document is bill text with no version, date or legislative history; the 'failed' status and 'dead' stage come from registry metadata only. Internal points: Section 1522(a) limits the pre-use notice to decisions other than hiring, while Section 1522(d) requires notice to job applicants where an ADS is used for hiring decisions. Section 1522(a)(2) refers to the date 'this title takes effect', but the text is a Labor Code Part and contains no effective-date provision. Section 1534 states that the part does not preempt more protective local ordinances; this is a non-preemption clause and is not coded as a preemption relation. Section 1536 refers to 'any other state law' without naming any instrument, so no relation is coded for it. The section_status entry below is required by the schema and is not a finding; relations are listed above.",
+ "events": [
+  {
+   "event": "deadline",
+   "date": "2026-04-01",
+   "date_type": "absolute",
+   "date_text": "no later than April 1, 2026",
+   "applies_to": "Employers already using an ADS to assist employment-related decisions (other than hiring) when this title takes effect: written notice to affected workers",
+   "evidence": {
+    "provision": "Lab. Code § 1522(a)(2)",
+    "quote": "no later than April 1, 2026"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "At least 30 days before an ADS is first deployed by the employer.",
+   "depends_on": "First deployment of an ADS by the employer",
+   "applies_to": "Employers deploying an ADS for employment-related decisions (other than hiring): written pre-use notice to affected workers or their authorized representative",
+   "offset_value": -30,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Lab. Code § 1522(a)(1)",
+    "quote": "At least 30 days before an ADS is first deployed by the employer."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "To a new worker within 30 days of hiring the worker.",
+   "depends_on": "Hiring of the worker",
+   "applies_to": "New workers hired by an employer using an ADS for employment-related decisions (other than hiring): written pre-use notice",
+   "offset_value": 30,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Lab. Code § 1522(a)(3)",
+    "quote": "To a new worker within 30 days of hiring the worker."
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "other",
+   "variable_text": "look-back period for the worker's own data copy",
+   "operator": "=",
+   "value": 12,
+   "value_text": "the most recent 12 months of the worker’s own data",
+   "unit": "months",
+   "measurement": "look-back window covering the most recent 12 months of the worker's own data used by an ADS; the text does not state a measurement method",
+   "level": "person",
+   "trigger": "scope_definition",
+   "consequence": "The worker's right to request a copy covers only the most recent 12 months of their own data primarily used by an ADS for a discipline, termination or deactivation decision.",
+   "conditions": "Applies to a worker's request for a copy of data primarily used by an ADS for a discipline, termination or deactivation decision; a worker may make one such request every 12 months.",
+   "evidence": {
+    "provision": "1524(e)",
+    "quote": "a copy of the most recent 12 months of the worker’s own data primarily used by an ADS to make a discipline, termination, or deactivation decision"
+   }
+  }
+ ],
+ "section_status": {}
+}

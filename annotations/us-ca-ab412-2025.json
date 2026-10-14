@@ -1,0 +1,286 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "us-ca-ab412-2025",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "AGORA plaintext (ETO, CC BY-NC 4.0), local cache",
+  "url": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260AB412",
+  "retrieved": "2026-04-06",
+  "version": "1.33.0 (2026-09-16)",
+  "language": "en",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "ip_training_data",
+   "generative_ai"
+  ],
+  "primary_domain": "ip_training_data",
+  "mechanisms": [
+   "mandate_obligation",
+   "disclosure_transparency",
+   "liability_rule"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "ai_developer"
+  ],
+  "decision_margins": [
+   "firm:input_use",
+   "firm:compliance_process"
+  ],
+  "territorial_scope": {
+   "types": [
+    "subnational",
+    "extraterritorial"
+   ],
+   "description": "A California statute that reaches developers outside California who make a GenAI model available to Californians for use.",
+   "evidence": {
+    "provision": "Civ. Code § 3115(e)(2)",
+    "quote": "Makes the GenAI model available to Californians for use."
+   }
+  },
+  "agora_incentives": [
+   "Civil liability"
+  ],
+  "agora_risk_factors": [
+   "Transparency"
+  ],
+  "agora_strategies": [
+   "Disclosure",
+   "Disclosure: About inputs"
+  ]
+ },
+ "summary": {
+  "short": "Proposed California bill AB 412 would require developers of generative AI models offered or used commercially in California to document copyrighted training materials, answer rights-owner requests, and face civil actions of $1,000 per violation for non-compliance. The text states no operative date.",
+  "long": "AB 412 would add Title 15.3 to Part 4 of Division 3 of the Civil Code on copyrighted materials used for AI training. It defines artificial intelligence, generative AI, covered materials (works registered or indexed with the US Copyright Office), rights owners, developers and approximate content fingerprints. A developer of a GenAI model must document covered materials it knows were used in training, make reasonable efforts to identify others, document rights owners, publish information enabling fingerprint generation, and provide a website mechanism for rights-owner information requests. It must document those requests and retain records for the model's use period plus five years. Within 30 days of a request, the developer must assess fingerprints received and provide lists of covered materials held by the rights owner that it documented or that appear likely in its dataset; each further day of non-compliance is a discrete violation. Rights owners may submit one request per calendar quarter per model. A rights owner that complied in good faith may sue for $1,000 per violation or actual damages, whichever is greater, plus injunctive or declaratory relief and attorney's fees. Models trained only on publicly available data, used only for noncommercial academic or governmental research, not trained on covered materials, or trained only on materials the developer owns are excluded. The text names no enforcing agency and states no operative date."
+ },
+ "relations": [
+  {
+   "relation": "amends",
+   "target_text": "California Civil Code, Part 4, Division 3 (adds Title 15.3, Secs. 3115 to 3119.5)",
+   "note": "Adds a new title to the Civil Code by addition. The document shows no other section that changes existing Civil Code text.",
+   "evidence": {
+    "provision": "SECTION 1",
+    "quote": "Title 15.3 (commencing with Section 3115) is added to Part 4 of Division 3 of the Civil Code"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Title 17 of the United States Code, Public Law 94-553 (17 U.S.C. Sec. 101 et seq.); also 17 U.S.C. Sec. 1401",
+   "note": "Defines covered material (registration, preregistration or indexing with the US Copyright Office) and rights owner (copyright owners and owners of pre-1972 sound recordings) by reference to Title 17.",
+   "evidence": {
+    "provision": "Civil Code Sec. 3115(c)",
+    "quote": "pursuant to Title 17 of the United States Code, Public Law 94-553 (17 U.S.C. Sec. 101 et seq.)"
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "United States Copyright Office",
+   "role": "listed",
+   "function": "Registration, preregistration or indexing of materials, which makes them covered material under Sec. 3115(c). The text assigns the Office no functions or powers.",
+   "evidence": {
+    "provision": "Civil Code Sec. 3115(c)",
+    "quote": "registered, preregistered, or indexed with the United States Copyright Office"
+   }
+  }
+ ],
+ "notes": "The document is bill text with no version date or legislative history; the registry's status fields are not stated in the text. Covered material requires Copyright Office registration, preregistration or indexing (Sec. 3115(c)), but rights owner also includes owners of pre-1972 sound recordings under 17 U.S.C. Sec. 1401 (Sec. 3115(d)(2)); the text does not say whether those recordings must be registered to be covered material. Sec. 3116(a)(1) requires documentation of covered materials the developer knows were used, while Sec. 3116(a)(2) requires only reasonable efforts for others. Sec. 3119 gives a civil action only to a rights owner that has complied in good faith with Sec. 3118 (one request per calendar quarter), while Sec. 3117(d)(2) excuses responses to requests made in violation of Sec. 3118. No public authority is designated or given enforcement powers; enforcement is by private civil action under Sec. 3119.",
+ "events": [
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "Within 30 days of receiving a request for information from a rights owner using the mechanism established pursuant to subdivision (c) of Section 3116, a developer shall do both of the following",
+   "depends_on": "receipt of a request for information from a rights owner under Sec. 3116(c)",
+   "applies_to": "developer's assessment of fingerprints and provision of information to the rights owner under Sec. 3117(a)",
+   "offset_value": 30,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Sec. 3117(a)",
+    "quote": "Within 30 days of receiving a request for information from a rights owner using the mechanism established pursuant to subdivision (c) of Section 3116"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "shall not submit more than one request per calendar quarter to the same developer concerning the same GenAI model, unless the subsequent request includes material new information not available to the rights owner at the time of the prior request",
+   "applies_to": "rights owner or person acting on its behalf submitting requests to the same developer concerning the same GenAI model",
+   "evidence": {
+    "provision": "Sec. 3118(a)",
+    "quote": "shall not submit more than one request per calendar quarter to the same developer concerning the same GenAI model"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "other",
+   "variable_text": "requests per calendar quarter to the same developer concerning the same GenAI model",
+   "operator": ">",
+   "value": 1,
+   "value_text": "more than one request per calendar quarter to the same developer concerning the same GenAI model, unless the subsequent request includes material new information not available to the rights owner at the time of the prior request",
+   "unit": "requests per calendar quarter",
+   "measurement": "Calendar quarter, counted per developer and per GenAI model; a request may pertain to multiple covered materials",
+   "level": "person",
+   "trigger": "prohibition",
+   "consequence": "Request made in violation of the limit is prohibited conduct, and the developer need not respond to it (Sec. 3117(d)(2)).",
+   "conditions": "Rights owner has submitted a request under Sec. 3116(c) and the subsequent request contains no material new information not available at the time of the prior request.",
+   "evidence": {
+    "provision": "Sec. 1 (adding Civ. Code § 3118(a); see also § 3117(d)(2))",
+    "quote": "shall not submit more than one request per calendar quarter to the same developer concerning the same GenAI model"
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "Approximate content fingerprint / fingerprint",
+   "defined_in": "Sec. 1 (adding Civ. Code § 3115(a))",
+   "evidence": {
+    "provision": "Sec. 1 (adding Civ. Code § 3115(a))",
+    "quote": "“Approximate content fingerprint” or “fingerprint” means an abstract representation of digital content that encodes distinctive features of the content"
+   }
+  },
+  {
+   "term": "Artificial intelligence / AI",
+   "defined_in": "Sec. 1 (adding Civ. Code § 3115(b))",
+   "evidence": {
+    "provision": "Sec. 1 (adding Civ. Code § 3115(b))",
+    "quote": "“Artificial intelligence” or “AI” means an engineered or machine-based system that varies in its level of autonomy"
+   }
+  },
+  {
+   "term": "Covered material",
+   "defined_in": "Sec. 1 (adding Civ. Code § 3115(c))",
+   "evidence": {
+    "provision": "Sec. 1 (adding Civ. Code § 3115(c))",
+    "quote": "“Covered material” means a material registered, preregistered, or indexed with the United States Copyright Office pursuant to Title 17 of the United States Code"
+   }
+  },
+  {
+   "term": "Rights owner",
+   "defined_in": "Sec. 1 (adding Civ. Code § 3115(d))",
+   "evidence": {
+    "provision": "Sec. 1 (adding Civ. Code § 3115(d))",
+    "quote": "“Rights owner” means either of the following:"
+   }
+  },
+  {
+   "term": "Developer",
+   "defined_in": "Sec. 1 (adding Civ. Code § 3115(e))",
+   "evidence": {
+    "provision": "Sec. 1 (adding Civ. Code § 3115(e))",
+    "quote": "“Developer” means a business, person, partnership, corporation, or other entity that designs, codes, produces, or substantially modifies a GenAI model"
+   }
+  },
+  {
+   "term": "Generative artificial intelligence / GenAI",
+   "defined_in": "Sec. 1 (adding Civ. Code § 3115(f))",
+   "evidence": {
+    "provision": "Sec. 1 (adding Civ. Code § 3115(f))",
+    "quote": "“Generative artificial intelligence” or “GenAI” means an artificial intelligence system that can generate derived synthetic content"
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "record_keeping",
+   "addressee": "ai_developer",
+   "modality": "shall",
+   "summary": "Document covered materials known to have been used to train the GenAI model; make reasonable efforts to identify and document other covered materials; document the rights owner of each documented material; document requests received under Section 3116(c); retain this documentation for as long as the developer uses the model commercially in California or makes it available to Californians, whichever is longer, plus five years.",
+   "applies_from": "not stated in text",
+   "conditional_on": "developer of a GenAI model as defined in Civil Code Section 3115(e)",
+   "evidence": {
+    "provision": "Civil Code § 3116(a)(1)",
+    "quote": "Document any covered materials that the developer knows were used by the developer to train the GenAI model."
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "ai_developer",
+   "modality": "shall",
+   "summary": "Make available on the developer's website information sufficient for a natural person to generate a fingerprint compatible with covered materials used in training, generated according to widely accepted industry standards; this may be satisfied by directing rights owners to a free, nondiscriminatory, reasonably accessible external tool.",
+   "applies_from": "not stated in text",
+   "conditional_on": "developer of a GenAI model as defined in Civil Code Section 3115(e)",
+   "evidence": {
+    "provision": "Civil Code § 3116(b)(1)",
+    "quote": "Make available information on the developer’s internet website sufficient to enable a natural person to generate a fingerprint"
+   }
+  },
+  {
+   "type": "complaint_mechanism",
+   "addressee": "ai_developer",
+   "modality": "shall",
+   "summary": "Make available a mechanism on the developer's website through which a rights owner can submit a request for information about the developer's use of covered materials; the mechanism must allow the rights owner to provide identity documentation, a signature or authorised third-party signature, and registration, preregistration or index numbers and fingerprints.",
+   "applies_from": "not stated in text",
+   "conditional_on": "developer of a GenAI model as defined in Civil Code Section 3115(e)",
+   "evidence": {
+    "provision": "Civil Code § 3116(c)(1)",
+    "quote": "Make available a mechanism on the developer’s internet website allowing a rights owner to submit a request for information about the developer’s use of covered materials."
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "ai_developer",
+   "modality": "shall",
+   "summary": "Within 30 days of receiving a rights owner's request under Section 3116(c), assess whether the covered material represented by each fingerprint is likely present in the dataset (not required for fingerprints not generated to industry standards), and provide the rights owner a list of its documented covered materials held by the rights owner and a list of materials the assessment suggests are likely present.",
+   "applies_from": "within 30 days of receiving a request from a rights owner using the mechanism under Section 3116(c)",
+   "conditional_on": "rights owner submits a request using the mechanism established under Civil Code Section 3116(c)",
+   "evidence": {
+    "provision": "Civil Code § 3117(a)(2)",
+    "quote": "Provide the rights owner with the following information:"
+   }
+  },
+  {
+   "type": "data_minimization",
+   "addressee": "ai_developer",
+   "modality": "shall",
+   "summary": "Collection, use, retention and sharing of information received from a rights owner under Section 3117 must be reasonably necessary and proportionate to the purposes for which it was collected, or another compatible disclosed purpose, and not further processed incompatibly with those purposes.",
+   "applies_from": "not stated in text",
+   "conditional_on": "information received from a rights owner pursuant to Civil Code Section 3117",
+   "evidence": {
+    "provision": "Civil Code § 3117(b)",
+    "quote": "A developer’s collection, use, retention, and sharing of information from a rights owner pursuant to this section shall be reasonably necessary and proportionate"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "consumers_users",
+   "modality": "shall_not",
+   "summary": "A rights owner (copyright holder or its agent) shall not submit more than one request per calendar quarter to the same developer concerning the same GenAI model, unless the later request includes material new information; a single request may pertain to multiple covered materials.",
+   "applies_from": "not stated in text",
+   "conditional_on": "rights owner requesting information from a developer of a GenAI model under Civil Code Section 3116(c)",
+   "evidence": {
+    "provision": "Civil Code § 3118(a)",
+    "quote": "shall not submit more than one request per calendar quarter to the same developer concerning the same GenAI model"
+   }
+  }
+ ],
+ "enforcement": [
+  {
+   "sanction_type": "private_damages",
+   "authority": "Rights owner, by civil action against the developer (court not named in the text)",
+   "triggered_by": "Developer does not provide a rights owner with the information required under this title, where the rights owner complied in good faith with Section 3118",
+   "max_penalty_text": "One thousand dollars ($1,000) per violation or actual damages, whichever is greater.",
+   "max_penalty_amount": 1000,
+   "currency": "USD",
+   "penalty_formula": "Greater of $1,000 per violation or actual damages (Sec. 3119(a)); each day after the 30-day period in Sec. 3117(a) is a discrete violation (Sec. 3117(c)); also injunctive or declaratory relief, reasonable attorney's costs and fees, and any other relief the court deems appropriate (Sec. 3119(b)-(d)).",
+   "penalty_reference": "Civil Code Sec. 3119",
+   "private_right_of_action": true,
+   "cure_period": "None stated. The developer has 30 days after a request (Sec. 3117(a)) before daily violations accrue under Sec. 3117(c).",
+   "evidence": {
+    "provision": "Civil Code Sec. 3119(a)",
+    "quote": "One thousand dollars ($1,000) per violation or actual damages, whichever is greater."
+   }
+  }
+ ],
+ "section_status": {}
+}

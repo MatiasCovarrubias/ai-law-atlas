@@ -1,0 +1,136 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "se-lag-2025-570-datacenter-energy",
+ "tier": "B",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "light, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-interim-20261014"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (connectors/fetch_texts.py)",
+  "url": "https://data.riksdagen.se/dokument/sfs-2025-570.text",
+  "retrieved": "2026-10-13",
+  "version": "as fetched",
+  "language": "sv",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "compute_data_centers",
+   "energy_grid_water"
+  ],
+  "primary_domain": "compute_data_centers",
+  "mechanisms": [
+   "disclosure_transparency"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "data_center_owner",
+   "data_center_operator"
+  ],
+  "affected_roles": [
+   "general_public"
+  ],
+  "decision_margins": [
+   "firm:compliance_process",
+   "household:information"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national"
+   ],
+   "description": "Swedish statute applying to data centres owned or managed under its provisions; the text states no further territorial limit.",
+   "evidence": {
+    "provision": "3 §",
+    "quote": "Den som äger eller förvaltar ett datacenter"
+   }
+  },
+  "agora_applications": [
+   "Energy and utilities"
+  ],
+  "agora_strategies": [
+   "Disclosure"
+  ]
+ },
+ "summary": {
+  "short": "Requires owners or operators of data centres with at least 500 kW installed IT power to publish annual energy performance data by reporting it to the EU database under Directive (EU) 2023/1791 Art. 12. Excludes security-sensitive, defence and crisis-preparedness uses. Supervised by a government-designated authority. Issued 28 May 2025.",
+  "long": "Lag (2025:570) requires the owner or manager of a data centre with an installed IT power demand of at least 500 kilowatts to publish information on the data centre's energy performance each year, by reporting it to the database referred to in Article 12 of Directive (EU) 2023/1791 in its original wording. The reporting duty does not apply to information covered by secrecy under the Public Access to Information and Secrecy Act (2009:400), or to data centres used for security-sensitive activities, for defence or crisis-preparedness purposes, or exclusively for such services. Reporting rules are set in Commission Delegated Regulation (EU) 2024/1364. A supervisory authority designated by the government may request information and documents, access premises other than dwellings, and issue orders needed to ensure compliance, which may be combined with a conditional fine (vite). Its decisions may be appealed to the general administrative court, and leave to appeal is required for appeals to the administrative court of appeal."
+ },
+ "relations": [
+  {
+   "relation": "cross_references",
+   "target_text": "Europaparlamentets och rådets direktiv (EU) 2023/1791 av den 13 september 2023 om energieffektivitet och om ändring av förordning (EU) 2023/955, article 12 database",
+   "note": "Section 3 requires the operator to report energy performance data to the database referred to in Article 12 of this Directive, 'i den ursprungliga lydelsen' (in its original wording). The Act does not state that it implements or transposes the Directive.",
+   "evidence": {
+    "provision": "3 §",
+    "quote": "databas som avses i artikel 12 i Europaparlamentets och rådets direktiv (EU) 2023/1791"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Kommissionens delegerade förordning (EU) 2024/1364 av den 14 mars 2024 om den första delen av inrättandet av ett gemensamt unionssystem för bedömning av datacentraler",
+   "note": "Section 3 says reporting rules are in this Delegated Regulation. Sections 5 and 7 make the supervisory authority's powers apply to compliance with this Act and the Delegated Regulation. The Act does not state that it is made under it.",
+   "evidence": {
+    "provision": "3 §",
+    "quote": "Bestämmelser om rapportering finns i kommissionens delegerade förordning (EU) 2024/1364"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Offentlighets- och sekretesslagen (2009:400)",
+   "note": "The reporting duty does not apply to information covered by secrecy under this Act.",
+   "evidence": {
+    "provision": "3 §",
+    "quote": "sekretess enligt offentlighets- och sekretesslagen (2009:400)"
+   }
+  }
+ ],
+ "notes": "The text states no enabling act (no legal_basis row). The Act's own amendment history is blank (Omtryck and Ändrad empty), and the document gives no entry-into-force date. Section 3 refers to the Directive 'i den ursprungliga lydelsen', so the reference is to its original wording. Section 8 refers to general administrative courts and to the Kammarrätt without naming instruments, so it is not coded as a relation. Section 7 allows a vite (conditional fine) but the text gives no amount; enforcement is not coded here, as this task covers relations and notes only.",
+ "events": [
+  {
+   "event": "signed",
+   "date": "2025-05-28",
+   "date_type": "absolute",
+   "date_text": "Utfärdad: 2025-05-28",
+   "applies_to": "Lag (2025:570) as a whole",
+   "evidence": {
+    "provision": "Header (SFS nr 2025:570, Utfärdad)",
+    "quote": "Utfärdad: 2025-05-28"
+   }
+  },
+  {
+   "event": "application",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "årligen",
+   "applies_to": "Reporting duty under 3 § for owners or operators of datacenters with an installed IT power demand of at least 500 kilowatt, reporting to the database in Art. 12 of Directive (EU) 2023/1791",
+   "evidence": {
+    "provision": "3 §",
+    "quote": "ska årligen offentliggöra uppgifter om datacentrets energiprestanda"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "power_capacity",
+   "variable_text": "installerat it-effektbehov (installed IT power demand)",
+   "operator": ">=",
+   "value": 500,
+   "value_text": "minst 500 kilowatt",
+   "unit": "kilowatt",
+   "measurement": "Installed IT power demand of the data centre; the text does not specify a measurement window or who measures it.",
+   "level": "facility",
+   "trigger": "scope_definition",
+   "consequence": "A data centre at or above this installed IT power demand falls under the annual energy performance disclosure duty in 3 §, subject to the exclusions in 4 §.",
+   "conditions": "Applies to the person who owns or manages the data centre; the duty does not apply to data centres covered by 4 § (security-sensitive use, defence or crisis preparedness use, or services provided exclusively for such purposes).",
+   "evidence": {
+    "provision": "3 §",
+    "quote": "med ett installerat it-effektbehov på minst 500 kilowatt"
+   }
+  }
+ ],
+ "section_status": {}
+}

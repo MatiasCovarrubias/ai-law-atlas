@@ -1,0 +1,3723 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "eu-dora-2022",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium, batch; spot-checked by Claude Opus (Claude Code) 2026-10-14",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-718f7c3f"
+ },
+ "validation": "spot-checked",
+ "text_version": {
+  "source": "official site (connectors/fetch_texts.py)",
+  "url": "http://publications.europa.eu/resource/cellar/0caf473a-85bd-11ed-9887-01aa75ed71a1.0006.03/DOC_1",
+  "retrieved": "2026-10-13",
+  "version": "as fetched",
+  "language": "en",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "cybersecurity"
+  ],
+  "primary_domain": "cybersecurity",
+  "mechanisms": [
+   "mandate_obligation",
+   "registration_notification",
+   "disclosure_transparency",
+   "designation_tiering",
+   "standard_setting",
+   "institution_setup"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "financial_institution",
+   "insurer",
+   "regulator",
+   "cloud_service_provider"
+  ],
+  "affected_roles": [
+   "consumers_users",
+   "workers"
+  ],
+  "decision_margins": [
+   "firm:compliance_process",
+   "firm:input_use",
+   "firm:size_organization",
+   "household:information"
+  ],
+  "territorial_scope": {
+   "types": [
+    "supranational"
+   ],
+   "description": "Directly applicable across the European Union to the financial entities and ICT third-party service providers listed in Article 2(1).",
+   "evidence": {
+    "provision": "Art. 2(1)",
+    "quote": "this Regulation applies to the following entities"
+   }
+  },
+  "agora_risk_factors": [
+   "Security: Cybersecurity"
+  ],
+  "agora_strategies": [
+   "Disclosure: About incidents",
+   "Evaluation: Adversarial testing",
+   "Tiering: Tiering based on impact"
+  ]
+ },
+ "summary": {
+  "short": "EU Regulation establishing uniform requirements for ICT risk management, major ICT-related incident reporting, digital operational resilience testing and ICT third-party risk for listed EU financial entities, with a simplified regime for certain smaller entities.",
+  "long": "Regulation (EU) 2022/2554 sets uniform requirements for the security of network and information systems supporting the business processes of financial entities. Article 2(1) covers listed entities, including credit institutions, payment institutions, investment firms, central counterparties, insurers and ICT third-party service providers. Chapter II requires a management-body-approved ICT risk management framework covering identification, protection, detection, response and recovery, with simplified rules for listed small entities under Article 16. Chapter III requires an ICT-related incident management process, classification of incidents, and reporting of major ICT-related incidents to competent authorities, with clients informed where their financial interests are affected. Chapter IV requires a digital operational resilience testing programme for entities other than microenterprises, and threat-led penetration testing at least every three years for entities identified by competent authorities. Chapter V sets principles for ICT third-party risk, including a register of contractual arrangements, exit strategies and contract termination circumstances. This annotation covers Articles 1 to 28 only; the application date is not in the text provided."
+ },
+ "relations": [
+  {
+   "relation": "legal_basis",
+   "target_text": "Treaty on the Functioning of the European Union, Article 114 (with Articles 290 and 291 for delegated and implementing acts)",
+   "note": "Article 114 TFEU is cited as the legal basis in the preamble; Articles 290 and 291 TFEU are cited for delegated and implementing acts in recital 98 and Articles 15, 16, 18, 20 and 26.",
+   "evidence": {
+    "provision": "Preamble",
+    "quote": "Having regard to the Treaty on the Functioning of the European Union, and in particular Article 114 thereof,"
+   }
+  },
+  {
+   "relation": "legal_basis",
+   "target_text": "Regulation (EU) No 1093/2010",
+   "note": "Draft regulatory technical standards are developed under the procedure in Articles 10 to 14 of this Regulation (EBA founding regulation).",
+   "evidence": {
+    "provision": "Article 15, third paragraph",
+    "quote": "in accordance with Articles 10 to 14 of Regulations (EU) No 1093/2010, (EU) No 1094/2010 and (EU) No 1095/2010"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Regulation (EC) No 1060/2009",
+   "note": "Stated in the title and recital 102 that the Regulation amends this instrument so that applicable ICT risk provisions are laid down in this Regulation. The operative amending provisions are not in part 1.",
+   "evidence": {
+    "provision": "Title; Recital (102)",
+    "quote": "and amending Regulations (EC) No 1060/2009, (EU) No 648/2012, (EU) No 600/2014, (EU) No 909/2014 and (EU) 2016/1011"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive (EU) 2022/2555",
+   "note": "Article 1(2) treats this Regulation as a sector-specific Union legal act for the purposes of Article 4 of that Directive; recital 16 describes it as lex specialis. Financial entities identified as essential or important entities are covered.",
+   "evidence": {
+    "provision": "Article 1(2)",
+    "quote": "this Regulation shall be considered a sector-specific Union legal act for the purposes of Article 4 of that Directive."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive (EU) 2022/2556",
+   "note": "Recital 102 says this Regulation, together with this Directive, consolidates ICT risk management provisions across the financial services acquis. Recital only.",
+   "evidence": {
+    "provision": "Recital (102)",
+    "quote": "together with Directive (EU) 2022/2556 of the European Parliament and of the Council"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive (EU) 2022/2557",
+   "note": "Carve-out: Chapters III and IV of Directive (EU) 2022/2557 do not apply to financial entities within this Regulation's scope. Stated in recital 19 only.",
+   "evidence": {
+    "provision": "Recital (19)",
+    "quote": "the obligations laid down in Chapters III and IV of Directive (EU) 2022/2557 should not apply to financial entities falling within the scope of that Directive."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive (EU) 2015/2366",
+   "note": "Payment institutions are defined by reference to this Directive. Recital 23 says incident reporting under this Directive should cease for payment service providers within this Regulation's scope.",
+   "evidence": {
+    "provision": "Article 3(35)",
+    "quote": "a payment institution as defined in Article 4, point (4), of Directive (EU) 2015/2366"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive 2013/36/EU",
+   "note": "Member States may exclude entities listed in Article 2(5), points (4) to (23), of this Directive located in their territory; Article 19 refers to designation under Article 4 of this Directive.",
+   "evidence": {
+    "provision": "Article 2(4)",
+    "quote": "entities referred to in Article 2(5), points (4) to (23), of Directive 2013/36/EU that are located within their respective territories"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive 2014/65/EU",
+   "note": "Scope exclusion for persons exempted under Articles 2 and 3 of this Directive.",
+   "evidence": {
+    "provision": "Article 2(3)(d)",
+    "quote": "natural or legal persons exempted pursuant to Articles 2 and 3 of Directive 2014/65/EU;"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive 2011/61/EU",
+   "note": "Scope exclusion for managers of alternative investment funds referred to in Article 3(2) of this Directive.",
+   "evidence": {
+    "provision": "Article 2(3)(a)",
+    "quote": "managers of alternative investment funds as referred to in Article 3(2) of Directive 2011/61/EU;"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive 2009/138/EC",
+   "note": "Scope exclusion for insurance and reinsurance undertakings referred to in Article 4 of this Directive.",
+   "evidence": {
+    "provision": "Article 2(3)(b)",
+    "quote": "insurance and reinsurance undertakings as referred to in Article 4 of Directive 2009/138/EC;"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive (EU) 2016/2341",
+   "note": "Institutions for occupational retirement provision are defined by reference to this Directive; scope exclusion for small schemes.",
+   "evidence": {
+    "provision": "Article 3(52)",
+    "quote": "as defined in Article 6, point (1), of Directive (EU) 2016/2341"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive 2009/110/EC",
+   "note": "Electronic money institutions are defined by reference to this Directive.",
+   "evidence": {
+    "provision": "Article 3(38)",
+    "quote": "as defined in Article 2, point (1), of Directive 2009/110/EC of the European Parliament and of the Council"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive 2009/65/EC",
+   "note": "Management companies are defined by reference to this Directive.",
+   "evidence": {
+    "provision": "Article 3(45)",
+    "quote": "a management company as defined in Article 2(1), point (b), of Directive 2009/65/EC"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive 2013/34/EU",
+   "note": "Subsidiary, group and parent undertaking are defined by reference to this Directive.",
+   "evidence": {
+    "provision": "Article 3(25)",
+    "quote": "a subsidiary undertaking within the meaning of Article 2, point (10), and Article 22 of Directive 2013/34/EU"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive 2014/59/EU",
+   "note": "Resolution authorities under Article 3 of this Directive receive incident details under Article 19(6)(d).",
+   "evidence": {
+    "provision": "Article 19(6)(d)",
+    "quote": "the resolution authorities, as referred to in Article 3 of Directive 2014/59/EU"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) No 1024/2013",
+   "note": "Significant credit institutions are classified under Article 6(4) of this Regulation; they report incidents via national competent authorities, which transmit reports to the ECB.",
+   "evidence": {
+    "provision": "Article 19(3)",
+    "quote": "Credit institutions classified as significant, in accordance with Article 6(4) of Regulation (EU) No 1024/2013"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) 2019/881",
+   "note": "The term 'cyber threat' is defined by reference to Article 2, point (8), of this Regulation.",
+   "evidence": {
+    "provision": "Article 3(12)",
+    "quote": "‘cyber threat’ as defined in Article 2, point (8), of Regulation (EU) 2019/881"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) No 806/2014",
+   "note": "The Single Resolution Board receives incident details for entities under Article 7(2) and (4)(b), (5) of this Regulation.",
+   "evidence": {
+    "provision": "Article 19(6)(d)",
+    "quote": "the Single Resolution Board (SRB) with respect to entities referred to in Article 7(2) of Regulation (EU) No 806/2014"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) No 575/2013",
+   "note": "Credit institution is defined by reference to Article 4(1), point (1), of this Regulation.",
+   "evidence": {
+    "provision": "Article 3(31)",
+    "quote": "a credit institution as defined in Article 4(1), point (1), of Regulation (EU) No 575/2013"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) 2019/2033",
+   "note": "Small and non-interconnected investment firms are defined by reference to Article 12(1) of this Regulation.",
+   "evidence": {
+    "provision": "Article 3(34)",
+    "quote": "meets the conditions laid out in Article 12(1) of Regulation (EU) 2019/2033"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) 2020/1503",
+   "note": "Crowdfunding service providers are defined by reference to this Regulation and are in scope under Article 2(1)(s).",
+   "evidence": {
+    "provision": "Article 3(58)",
+    "quote": "as defined in Article 2(1), point (e), of Regulation (EU) 2020/1503"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) 2017/2402",
+   "note": "Securitisation repositories are defined by reference to this Regulation.",
+   "evidence": {
+    "provision": "Article 3(59)",
+    "quote": "as defined in Article 2, point (23), of Regulation (EU) 2017/2402"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive (EU) 2016/97",
+   "note": "Insurance intermediaries and related categories are defined by reference to this Directive.",
+   "evidence": {
+    "provision": "Article 3(49)",
+    "quote": "as defined in Article 2(1), point (3), of Directive (EU) 2016/97"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation on markets in crypto-assets (number not given in this text)",
+   "note": "Crypto-asset service providers and issuers of asset-referenced tokens are in scope as authorised under this Regulation.",
+   "evidence": {
+    "provision": "Article 2(1), point (f)",
+    "quote": "as authorised under a Regulation of the European Parliament and of the Council on markets in crypto-assets"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Regulation (EC) No 1060/2009 (credit rating agencies)",
+   "note": "Changes Annex I Section A point 4 and Annex III point 12. The same act is also named in Art. 46(n) for competent-authority designation.",
+   "evidence": {
+    "provision": "Art. 59(1)-(2)",
+    "quote": "Regulation (EC) No 1060/2009 is amended as follows:"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Regulation (EU) No 648/2012 (EMIR)",
+   "note": "Changes Arts 26, 34, 56, 79, 80 and Annexes I and III. The same act is also named in Art. 46(f) and (h) for competent-authority designation.",
+   "evidence": {
+    "provision": "Art. 60(1)-(7)",
+    "quote": "Regulation (EU) No 648/2012 is amended as follows:"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Regulation (EU) No 909/2014 (CSDR), Article 45",
+   "note": "Changes paragraphs 1, 3, 4, 6 and 7 of Art. 45 and deletes paragraph 2. The same act is also named in Art. 46(e) for competent-authority designation.",
+   "evidence": {
+    "provision": "Art. 61",
+    "quote": "Article 45 of Regulation (EU) No 909/2014 is amended as follows:"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Regulation (EU) No 600/2014 (MiFIR)",
+   "note": "Changes Arts 27g, 27h and 27i. The same act is also named in Art. 46(g) for competent-authority designation.",
+   "evidence": {
+    "provision": "Art. 62(1)-(3)",
+    "quote": "Regulation (EU) No 600/2014 is amended as follows:"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Regulation (EU) 2016/1011 (benchmarks regulation)",
+   "note": "Adds paragraph 6 to Art. 6 for critical benchmark administrators. The same act is also named in Art. 46(o) for competent-authority designation.",
+   "evidence": {
+    "provision": "Art. 63",
+    "quote": "In Article 6 of Regulation (EU) 2016/1011, the following paragraph is added:"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive (EU) 2022/2555 (NIS 2)",
+   "note": "Cooperation with NIS 2 Cooperation Group, single points of contact and CSIRTs, and competent authorities for essential or important entities; also cited in Arts 32(4)(e), 32(8), 35(2)(b), 42(5), 47(2)-(4) and 55(3).",
+   "evidence": {
+    "provision": "Art. 47(1)",
+    "quote": "the Cooperation Group established by Article 14 of Directive (EU) 2022/2555"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) 2016/679 (GDPR)",
+   "note": "Personal data processing standard for ESAs and competent authorities (Art. 56(1)) and for information-sharing arrangements (Art. 45(1)(c)).",
+   "evidence": {
+    "provision": "Art. 56(1)",
+    "quote": "The personal data shall be processed in accordance with Regulation (EU) 2016/679 or Regulation (EU) 2018/1725, whichever is applicable."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) No 1093/2010 (EBA regulation)",
+   "note": "Joint Committee procedure, Oversight Forum establishment and delegation/appeal procedures (e.g. Arts 31(1), 32(1), 37(3)(f), 39(6), 57(2)).",
+   "evidence": {
+    "provision": "Art. 32(1)",
+    "quote": "in accordance with Article 57(1) of Regulations (EU) No 1093/2010, (EU) No 1094/2010 and (EU) No 1095/2010"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive 2014/59/EU (bank recovery and resolution)",
+   "note": "Resolution authorities are among the bodies that may take part in cross-sector exercises and mechanisms.",
+   "evidence": {
+    "provision": "Art. 49(1)",
+    "quote": "resolution authorities as referred to in Article 3 of Directive 2014/59/EU"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) No 806/2014 (Single Resolution Mechanism)",
+   "note": "The Single Resolution Board takes part in cross-sector mechanisms for entities within the scope of this regulation.",
+   "evidence": {
+    "provision": "Art. 49(1)",
+    "quote": "the Single Resolution Board as regards information relating to entities falling under the scope of Regulation (EU) No 806/2014"
+   }
+  },
+  {
+   "relation": "designates_under",
+   "target_text": "Regulation (EU) No 1024/2013 (SSM Regulation)",
+   "note": "The ECB is the competent authority for credit institutions classified as significant under Art. 6(4) of that regulation.",
+   "evidence": {
+    "provision": "Art. 46(a)",
+    "quote": "classified as significant in accordance with Article 6(4) of Regulation (EU) No 1024/2013"
+   }
+  },
+  {
+   "relation": "designates_under",
+   "target_text": "Directive 2013/36/EU (CRD)",
+   "note": "Competent authority for credit institutions and exempted institutions, designated under Art. 4 of that directive.",
+   "evidence": {
+    "provision": "Art. 46(a)",
+    "quote": "the competent authority designated in accordance with Article 4 of that Directive"
+   }
+  },
+  {
+   "relation": "designates_under",
+   "target_text": "Directive (EU) 2015/2366 (PSD2)",
+   "note": "Competent authority for payment institutions under Art. 22. Art. 58(2) also refers to a review of this directive and a possible proposal on payment-system oversight.",
+   "evidence": {
+    "provision": "Art. 46(b)",
+    "quote": "the competent authority designated in accordance with Article 22 of Directive (EU) 2015/2366"
+   }
+  },
+  {
+   "relation": "designates_under",
+   "target_text": "Directive (EU) 2019/2034 (investment firms prudential)",
+   "note": "Competent authority for investment firms under Art. 4 of that directive.",
+   "evidence": {
+    "provision": "Art. 46(c)",
+    "quote": "the competent authority designated in accordance with Article 4 of Directive (EU) 2019/2034"
+   }
+  },
+  {
+   "relation": "designates_under",
+   "target_text": "Regulation on markets in crypto-assets and issuers of asset-referenced tokens (as named in the text)",
+   "note": "Competent authority for crypto-asset service providers authorised under that regulation; the text gives no number.",
+   "evidence": {
+    "provision": "Art. 46(d)",
+    "quote": "for crypto-asset service providers as authorised under the Regulation on markets in crypto-assets and issuers of asset-referenced tokens"
+   }
+  },
+  {
+   "relation": "designates_under",
+   "target_text": "Directive 2014/65/EU (MiFID II)",
+   "note": "Competent authority for trading venues and data reporting service providers under Art. 67 of that directive.",
+   "evidence": {
+    "provision": "Art. 46(g)",
+    "quote": "the competent authority designated in accordance with Article 67 of Directive 2014/65/EU"
+   }
+  },
+  {
+   "relation": "designates_under",
+   "target_text": "Directive 2011/61/EU (AIFMD)",
+   "note": "Competent authority for managers of alternative investment funds under Art. 44 of that directive.",
+   "evidence": {
+    "provision": "Art. 46(i)",
+    "quote": "the competent authority designated in accordance with Article 44 of Directive 2011/61/EU"
+   }
+  },
+  {
+   "relation": "designates_under",
+   "target_text": "Directive 2009/65/EC (UCITS)",
+   "note": "Competent authority for management companies under Art. 97 of that directive.",
+   "evidence": {
+    "provision": "Art. 46(j)",
+    "quote": "the competent authority designated in accordance with Article 97 of Directive 2009/65/EC"
+   }
+  },
+  {
+   "relation": "designates_under",
+   "target_text": "Directive 2009/138/EC (Solvency II)",
+   "note": "Competent authority for insurance and reinsurance undertakings under Art. 30 of that directive.",
+   "evidence": {
+    "provision": "Art. 46(k)",
+    "quote": "the competent authority designated in accordance with Article 30 of Directive 2009/138/EC"
+   }
+  },
+  {
+   "relation": "designates_under",
+   "target_text": "Directive (EU) 2016/97 (insurance distribution)",
+   "note": "Competent authority for insurance intermediaries under Art. 12 of that directive.",
+   "evidence": {
+    "provision": "Art. 46(l)",
+    "quote": "the competent authority designated in accordance with Article 12 of Directive (EU) 2016/97"
+   }
+  },
+  {
+   "relation": "designates_under",
+   "target_text": "Directive (EU) 2016/2341 (IORP)",
+   "note": "Competent authority for institutions for occupational retirement provision under Art. 47 of that directive.",
+   "evidence": {
+    "provision": "Art. 46(m)",
+    "quote": "the competent authority designated in accordance with Article 47 of Directive (EU) 2016/2341"
+   }
+  },
+  {
+   "relation": "designates_under",
+   "target_text": "Regulation (EU) 2020/1503 (European crowdfunding service providers)",
+   "note": "Competent authority for crowdfunding service providers under Art. 29 of that regulation.",
+   "evidence": {
+    "provision": "Art. 46(p)",
+    "quote": "the competent authority designated in accordance with Article 29 of Regulation (EU) 2020/1503"
+   }
+  },
+  {
+   "relation": "designates_under",
+   "target_text": "Regulation (EU) 2017/2402 (securitisation)",
+   "note": "Competent authority for securitisation repositories under Arts 10 and 14(1) of that regulation.",
+   "evidence": {
+    "provision": "Art. 46(q)",
+    "quote": "the competent authority designated in accordance with Articles 10 and 14(1) of Regulation (EU) 2017/2402"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive 2006/43/EC (statutory audit)",
+   "note": "Named as a possible route for strengthened auditor requirements after a review due by 17 January 2026. This is a review option, not an amendment made by this text.",
+   "evidence": {
+    "provision": "Art. 58(3)",
+    "quote": "by means of amendments to Directive 2006/43/EC of the European Parliament and of the Council"
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "European Banking Authority (EBA)",
+   "role": "designated",
+   "function": "One of the three European Supervisory Authorities; develops draft regulatory technical standards and implementing standards through the Joint Committee (Arts 15, 18(3), 20, 26(11), 28(9)-(10)); receives incident information and assesses cross-border relevance (Art. 19(6)(a), 19(7)); may be appointed Lead Overseer (Art. 3(61)).",
+   "evidence": {
+    "provision": "Article 19(7)",
+    "quote": "EBA, ESMA or EIOPA shall, as soon as possible, notify relevant competent authorities in other Member States accordingly."
+   }
+  },
+  {
+   "name": "Joint Committee of the European Supervisory Authorities",
+   "role": "designated",
+   "function": "Coordinates the ESAs' work on ICT risk; through it the ESAs develop draft standards, reports and common guidelines (Arts 11(11), 15, 18(3), 20, 21(1), 22(2)).",
+   "evidence": {
+    "provision": "Article 3(62)",
+    "quote": "means the committee referred to in Article 54 of Regulations (EU) No 1093/2010, (EU) No 1094/2010 and (EU) No 1095/2010"
+   }
+  },
+  {
+   "name": "Relevant competent authority (designated by each Member State)",
+   "role": "designated",
+   "function": "Single authority per financial entity, designated by each Member State where supervision is split; receives initial notifications and reports of major ICT-related incidents and forwards details under Art. 19(6); may provide feedback (Art. 22(1)); may approve internal testers for TLPT (Art. 27(2)(a)). Refers to competent authorities under Art. 46 (part 2).",
+   "evidence": {
+    "provision": "Article 19(1)",
+    "quote": "Member States shall designate a single competent authority as the relevant competent authority responsible for carrying out the functions and duties provided for in this Article."
+   }
+  },
+  {
+   "name": "Single public authority for TLPT matters (or delegated national financial authority)",
+   "role": "designated",
+   "function": "Member States may designate one public authority in the financial sector for TLPT matters at national level; absent such designation, a competent authority may delegate TLPT tasks to another national financial authority (Art. 26(9)-(10)).",
+   "evidence": {
+    "provision": "Article 26(9)",
+    "quote": "Member States may designate a single public authority in the financial sector to be responsible for TLPT-related matters in the financial sector at national level"
+   }
+  },
+  {
+   "name": "European Central Bank (ECB)",
+   "role": "listed",
+   "function": "Receives major ICT-related incident reports from significant credit institutions via national competent authorities (Art. 19(3)) and details of incidents for certain entities (Art. 19(6)(b)); may receive voluntary significant cyber threat notifications (Art. 19(2)); consulted on RTS and ITS (Arts 18(3), 20, 26(11)).",
+   "evidence": {
+    "provision": "Article 19(6)(b)",
+    "quote": "the ECB, in the case of financial entities referred to in Article 2(1), points (a), (b) and (d);"
+   }
+  },
+  {
+   "name": "European Union Agency for Cybersecurity (ENISA)",
+   "role": "listed",
+   "function": "Consulted in developing draft standards (Arts 15, 16(3), 18(3), 20, 21(1)); its international standards and guidance inform classification criteria (Art. 18(4)).",
+   "evidence": {
+    "provision": "Article 18(3)",
+    "quote": "in consultation with the ECB and ENISA"
+   }
+  },
+  {
+   "name": "CSIRTs and single points of contact designated or established under Directive (EU) 2022/2555",
+   "role": "listed",
+   "function": "Receive incident details from competent authorities (Art. 19(6)(c)); Member States may require financial entities to report to them (Art. 19(1)); may receive voluntary notifications of significant cyber threats (Art. 19(2)).",
+   "evidence": {
+    "provision": "Article 19(6)(c)",
+    "quote": "the competent authorities, single points of contact or CSIRTs designated or established in accordance with Directive (EU) 2022/2555;"
+   }
+  },
+  {
+   "name": "Single Resolution Board (SRB)",
+   "role": "listed",
+   "function": "Receives incident details for entities under Regulation (EU) No 806/2014 where incidents pose a risk to critical functions (Art. 19(6)(d)).",
+   "evidence": {
+    "provision": "Article 19(6)(d)",
+    "quote": "the Single Resolution Board (SRB) with respect to entities referred to in Article 7(2) of Regulation (EU) No 806/2014"
+   }
+  },
+  {
+   "name": "Resolution authorities (Article 3, Directive 2014/59/EU)",
+   "role": "listed",
+   "function": "Receive incident details from competent authorities where incidents pose a risk to critical functions (Art. 19(6)(d)).",
+   "evidence": {
+    "provision": "Article 19(6)(d)",
+    "quote": "the resolution authorities, as referred to in Article 3 of Directive 2014/59/EU"
+   }
+  },
+  {
+   "name": "European Commission",
+   "role": "designated",
+   "function": "Empowered to adopt regulatory technical standards by delegated act and implementing technical standards by implementing act (Arts 15, 18(5), 20, 26(11), 28(9)-(10)).",
+   "evidence": {
+    "provision": "Article 15, third paragraph",
+    "quote": "Power is delegated to the Commission to supplement this Regulation by adopting the regulatory technical standards referred to in the first paragraph"
+   }
+  },
+  {
+   "name": "European Supervisory Authorities (EBA, EIOPA and ESMA), acting as ESAs",
+   "role": "designated",
+   "function": "Designate critical ICT third-party service providers through the Joint Committee, on recommendation of the Oversight Forum; appoint Lead Overseers (Art. 31(1)); issue cooperation guidelines (Art. 32(7)).",
+   "evidence": {
+    "provision": "Art. 31(1)(a)",
+    "quote": "designate the ICT third-party service providers that are critical for financial entities, following an assessment"
+   }
+  },
+  {
+   "name": "Joint Committee of the ESAs",
+   "role": "designated",
+   "function": "Establishes, publishes and updates yearly the list of critical ICT third-party service providers; establishes the Oversight Forum (Arts 31(9), 32(1)).",
+   "evidence": {
+    "provision": "Art. 31(9)",
+    "quote": "shall establish, publish and update yearly the list of critical ICT third-party service providers at Union level"
+   }
+  },
+  {
+   "name": "Lead Overseer (ESA appointed for each critical ICT third-party service provider)",
+   "role": "designated",
+   "function": "Conducts oversight of assigned critical ICT third-party service providers and adopts individual oversight plans (Arts 33, 35, 37-43).",
+   "evidence": {
+    "provision": "Art. 33(1)",
+    "quote": "The Lead Overseer, appointed in accordance with Article 31(1), point (b), shall conduct the oversight of the assigned critical ICT third-party service providers"
+   }
+  },
+  {
+   "name": "Oversight Forum",
+   "role": "designated",
+   "function": "Sub-committee of the Joint Committee supporting the Joint Committee and the Lead Overseers; yearly collective assessment; comprehensive benchmarks (Art. 32).",
+   "evidence": {
+    "provision": "Art. 32(1)",
+    "quote": "shall establish the Oversight Forum as a sub-committee for the purposes of supporting the work of the Joint Committee"
+   }
+  },
+  {
+   "name": "Joint Oversight Network (JON)",
+   "role": "designated",
+   "function": "Coordinates among the three Lead Overseers and the conduct of oversight activities (Art. 34).",
+   "evidence": {
+    "provision": "Art. 34(1)",
+    "quote": "shall set up a JON to coordinate among themselves"
+   }
+  },
+  {
+   "name": "Joint examination team",
+   "role": "designated",
+   "function": "Established for each critical ICT third-party service provider to assist the Lead Overseer in investigations and inspections (Art. 40).",
+   "evidence": {
+    "provision": "Art. 40(1)",
+    "quote": "shall be assisted by a joint examination team established for each critical ICT third-party service provider"
+   }
+  },
+  {
+   "name": "European Commission",
+   "role": "designated",
+   "function": "Empowered to adopt delegated acts specifying designation criteria, oversight fees and related matters, and regulatory technical standards (Arts 31(6), 41(2), 43(2)).",
+   "evidence": {
+    "provision": "Art. 31(6)",
+    "quote": "The Commission is empowered to adopt a delegated act in accordance with Article 57"
+   }
+  },
+  {
+   "name": "Competent authorities listed in Art. 46(a) to (q)",
+   "role": "designated",
+   "function": "Ensure compliance with this regulation for each category of financial entity under the respective sectoral acts; sector-specific designations are listed in Art. 46.",
+   "evidence": {
+    "provision": "Art. 46",
+    "quote": "compliance with this Regulation shall be ensured by the following competent authorities"
+   }
+  },
+  {
+   "name": "European Central Bank (ECB)",
+   "role": "designated",
+   "function": "Competent authority for credit institutions classified as significant under Regulation (EU) No 1024/2013 (Art. 46(a)); may be called on for technical advice (Art. 34(3)).",
+   "evidence": {
+    "provision": "Art. 46(a)",
+    "quote": "the ECB in accordance with the powers and tasks conferred by that Regulation"
+   }
+  },
+  {
+   "name": "Critical ICT third-party service providers",
+   "role": "designated",
+   "function": "Designated as critical after the assessment; must notify financial entities of their designation and are subject to the Lead Overseer oversight (Art. 31(5)).",
+   "evidence": {
+    "provision": "Art. 31(5)",
+    "quote": "shall notify the financial entities to which they provide services of their designation as critical"
+   }
+  },
+  {
+   "name": "Financial entities",
+   "role": "addressee",
+   "function": "Notify competent authorities of their participation in information-sharing arrangements on cyber threat information (Art. 45(3)).",
+   "evidence": {
+    "provision": "Art. 45(3)",
+    "quote": "Financial entities shall notify competent authorities of their participation in the information-sharing arrangements"
+   }
+  },
+  {
+   "name": "Single Resolution Board",
+   "role": "listed",
+   "function": "May participate in cross-sector information-sharing and exercises as regards entities under Regulation (EU) No 806/2014 (Art. 49(1)).",
+   "evidence": {
+    "provision": "Art. 49(1)",
+    "quote": "the Single Resolution Board as regards information relating to entities falling under the scope of Regulation (EU) No 806/2014"
+   }
+  },
+  {
+   "name": "ENISA (European Union Agency for Cybersecurity)",
+   "role": "listed",
+   "function": "May be called on by Lead Overseers for technical advice and join coordination meetings (Art. 34(3)); may take part in cross-sector mechanisms (Art. 49(1)).",
+   "evidence": {
+    "provision": "Art. 34(3)",
+    "quote": "call on the ECB and ENISA to provide technical advice"
+   }
+  },
+  {
+   "name": "Cooperation Group (Directive (EU) 2022/2555)",
+   "role": "listed",
+   "function": "Financial supervisors and the ESAs may participate in its activities for matters concerning financial entities (Art. 47(1)).",
+   "evidence": {
+    "provision": "Art. 47(1)",
+    "quote": "the Cooperation Group established by Article 14 of Directive (EU) 2022/2555"
+   }
+  },
+  {
+   "name": "European Systemic Risk Board (ESRB)",
+   "role": "listed",
+   "function": "May take part in cross-sector mechanisms and exercises (Art. 49(1)); consulted in the review under Art. 58(1).",
+   "evidence": {
+    "provision": "Art. 49(1)",
+    "quote": "the ESRB and ENISA, as appropriate"
+   }
+  }
+ ],
+ "notes": "Part 1 of 2: recitals and Articles 1 to 28 (Chapters I to V, Section I). Operative amendments to the five amended Regulations, critical ICT third-party provider designation and oversight (Art. 31 onward) and the Article 46 competent authority provisions fall in part 2, so amendment relations here rest on the title and recital 102. Empty strings stand for null (no registry ID, LEI or ticker in the text). Internal inconsistency: Art. 3(53) defines a small institution for occupational retirement provision as one with 'less than 100 members in total', while recital 42 says 'not more than 100 members'. Recitals also cite Regulation (EU) 2016/679, Regulation (EU) 2018/1725, Directive (EU) 2016/1148 and Europol; these appear only in recitals and are not recorded as relations. Part 2 of 2 (Arts 29-64, footnotes). Targets outside the registry have an empty target_instrument_id (schema requires a string) and the name in target_text. lei and ticker are empty strings for the same reason. Art. 46 designations under sector acts are coded as designates_under, except where the same act is amended here; that row notes it. Art. 58 review clauses name possible future changes to Directive 2006/43/EC and PSD2 oversight; these are coded as cross-references, not amendments. No internal inconsistency found in this part. Spot-check (Claude Opus, 2026-10-14): Art. 54(6) five-year publication limit runs from publication of each penalty decision, not of the Regulation, so no date is computed; removed the duplicate external 'published' row (the OJ citation in the text gives 27.12.2022); Art. 53 notification concerns Chapter VII, not Chapter V; ICT third-party service providers recoded from enterprise to cloud_service_provider (closest role); retention and publication periods (Arts. 54(6), 56(2)) removed from thresholds; added the delegated Art. 18(3) materiality threshold.",
+ "events": [
+  {
+   "event": "adopted",
+   "date": "2022-12-14",
+   "date_type": "absolute",
+   "date_text": "of 14 December 2022",
+   "applies_to": "Regulation (EU) 2022/2554",
+   "evidence": {
+    "provision": "Title",
+    "quote": "of 14 December 2022"
+   }
+  },
+  {
+   "event": "consultation",
+   "date": "2021-05-10",
+   "date_type": "absolute",
+   "date_text": "delivered an opinion on 10 May 2021",
+   "applies_to": "European Data Protection Supervisor opinion",
+   "evidence": {
+    "provision": "Recital (106)",
+    "quote": "delivered an opinion on 10 May 2021"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2024-07-17",
+   "date_type": "absolute",
+   "date_text": "by 17 July 2024",
+   "applies_to": "ESAs through the Joint Committee: common guidelines on estimation of aggregated annual costs and losses from major ICT-related incidents",
+   "evidence": {
+    "provision": "Art. 11(11)",
+    "quote": "shall by 17 July 2024 develop common guidelines"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2024-01-17",
+   "date_type": "absolute",
+   "date_text": "by 17 January 2024",
+   "applies_to": "ESAs: draft regulatory technical standards on ICT risk management tools, methods, processes and policies under Art. 15",
+   "evidence": {
+    "provision": "Art. 15, para. 3",
+    "quote": "The ESAs shall submit those draft regulatory technical standards to the Commission by 17 January 2024."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2024-01-17",
+   "date_type": "absolute",
+   "date_text": "by 17 January 2024",
+   "applies_to": "ESAs: draft regulatory technical standards for simplified ICT risk management framework under Art. 16(3)",
+   "evidence": {
+    "provision": "Art. 16(3), subpara. 3",
+    "quote": "The ESAs shall submit those draft regulatory technical standards to the Commission by 17 January 2024."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2024-01-17",
+   "date_type": "absolute",
+   "date_text": "by 17 January 2024",
+   "applies_to": "ESAs: common draft regulatory technical standards on classification and materiality thresholds of ICT-related incidents under Art. 18(3)",
+   "evidence": {
+    "provision": "Art. 18(4), subpara. 2",
+    "quote": "The ESAs shall submit those common draft regulatory technical standards to the Commission by 17 January 2024."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2024-07-17",
+   "date_type": "absolute",
+   "date_text": "to the Commission by 17 July 2024",
+   "applies_to": "ESAs: draft regulatory and implementing technical standards on reporting content, templates and time limits under Art. 20",
+   "evidence": {
+    "provision": "Art. 20, para. 2",
+    "quote": "to the Commission by 17 July 2024."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2025-01-17",
+   "date_type": "absolute",
+   "date_text": "by 17 January 2025",
+   "applies_to": "ESAs: joint report on feasibility of a single EU Hub for major ICT-related incident reporting, submitted to Parliament, Council and Commission",
+   "evidence": {
+    "provision": "Art. 21(3)",
+    "quote": "The ESAs shall submit the report referred to in paragraph 1 to the European Parliament, to the Council and to the Commission by 17 January 2025."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2024-07-17",
+   "date_type": "absolute",
+   "date_text": "by 17 July 2024",
+   "applies_to": "ESAs: draft regulatory technical standards on TLPT under Art. 26(11)",
+   "evidence": {
+    "provision": "Art. 26(11)",
+    "quote": "The ESAs shall submit those draft regulatory technical standards to the Commission by 17 July 2024."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2024-01-17",
+   "date_type": "absolute",
+   "date_text": "by 17 January 2024",
+   "applies_to": "ESAs: draft implementing technical standards establishing templates for the register of information under Art. 28(9)",
+   "evidence": {
+    "provision": "Art. 28(9)",
+    "quote": "The ESAs shall submit those draft implementing technical standards to the Commission by 17 January 2024."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2024-01-17",
+   "date_type": "absolute",
+   "date_text": "by 17 January 2024",
+   "applies_to": "ESAs: draft regulatory technical standards on policy for contractual arrangements supporting critical or important functions under Art. 28(10)",
+   "evidence": {
+    "provision": "Art. 28(10)",
+    "quote": "The ESAs shall submit those draft regulatory technical standards to the Commission by 17 January 2024."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "within the time limits to be laid down in accordance with Article 20, first paragraph, point (a), point (ii)",
+   "depends_on": "time limits to be laid down under Art. 20(a)(ii)",
+   "applies_to": "financial entities: initial notification and intermediate and final reports of major ICT-related incidents",
+   "evidence": {
+    "provision": "Art. 19(4)",
+    "quote": "within the time limits to be laid down in accordance with Article 20, first paragraph, point (a), point (ii)"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "documented and reviewed at least once a year",
+   "applies_to": "financial entities (other than microenterprises): ICT risk management framework documentation and review",
+   "evidence": {
+    "provision": "Art. 6(5)",
+    "quote": "The ICT risk management framework shall be documented and reviewed at least once a year"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "review as needed, and at least yearly",
+   "applies_to": "financial entities: classification of ICT-supported business functions, information assets and ICT assets",
+   "evidence": {
+    "provision": "Art. 8(1)",
+    "quote": "Financial entities shall review as needed, and at least yearly, the adequacy of this classification and of any relevant documentation."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "at least yearly",
+   "applies_to": "financial entities: testing of ICT business continuity plans and ICT response and recovery plans",
+   "evidence": {
+    "provision": "Art. 11(6)(a)",
+    "quote": "test the ICT business continuity plans and the ICT response and recovery plans in relation to ICT systems supporting all functions at least yearly"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "at least yearly",
+   "applies_to": "senior ICT staff: report to the management body",
+   "evidence": {
+    "provision": "Art. 13(5)",
+    "quote": "Senior ICT staff shall report at least yearly to the management body on the findings referred to in paragraph 3"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "at least yearly",
+   "applies_to": "financial entities (other than microenterprises): appropriate tests on all ICT systems and applications supporting critical or important functions",
+   "evidence": {
+    "provision": "Art. 24(6)",
+    "quote": "shall ensure, at least yearly, that appropriate tests are conducted on all ICT systems and applications supporting critical or important functions."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "at least every 3 years",
+   "applies_to": "financial entities identified under Art. 26(8): advanced testing by means of TLPT",
+   "evidence": {
+    "provision": "Art. 26(1)",
+    "quote": "shall carry out at least every 3 years advanced testing by means of TLPT."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "every three tests",
+   "applies_to": "financial entities using internal testers for TLPT: contracting of external testers",
+   "evidence": {
+    "provision": "Art. 26(8)",
+    "quote": "they shall contract external testers every three tests."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "at least yearly",
+   "applies_to": "financial entities (other than microenterprises): report to competent authorities on new ICT third-party arrangements",
+   "evidence": {
+    "provision": "Art. 28(3)",
+    "quote": "Financial entities shall report at least yearly to the competent authorities on the number of new arrangements on the use of ICT services"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2024-07-17",
+   "date_type": "absolute",
+   "date_text": "by 17 July 2024",
+   "applies_to": "draft regulatory technical standards specifying subcontracting elements (Art. 30(2)(a))",
+   "evidence": {
+    "provision": "Art. 30(5), third subparagraph",
+    "quote": "The ESAs shall submit those draft regulatory technical standards to the Commission by 17 July 2024."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "Within 6 weeks from the date of the notification",
+   "anchor": "date of the Lead Overseer's notification of the designation outcome to the ICT third-party service provider",
+   "applies_to": "reasoned statement by a designated critical ICT third-party service provider",
+   "offset_value": 6,
+   "offset_unit": "weeks",
+   "evidence": {
+    "provision": "Art. 31(5), first subparagraph",
+    "quote": "Within 6 weeks from the date of the notification"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "within 30 calendar days of the receipt of such statement",
+   "anchor": "receipt of the reasoned statement of the critical ICT third-party service provider",
+   "applies_to": "Lead Overseer's consideration of the reasoned statement and any request for additional information",
+   "offset_value": 30,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Art. 31(5), first subparagraph",
+    "quote": "within 30 calendar days of the receipt of such statement"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "no later than one month after the notification",
+   "anchor": "notification of the designation as critical to the ICT third-party service provider",
+   "applies_to": "starting date of oversight activities for designated critical ICT third-party service providers",
+   "offset_value": 1,
+   "offset_unit": "months",
+   "evidence": {
+    "provision": "Art. 31(5), second subparagraph",
+    "quote": "That starting date shall be no later than one month after the notification."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2024-07-17",
+   "date_type": "absolute",
+   "date_text": "by 17 July 2024",
+   "applies_to": "Commission delegated act specifying the designation criteria (Art. 31(2))",
+   "evidence": {
+    "provision": "Art. 31(6)",
+    "quote": "The Commission is empowered to adopt a delegated act in accordance with Article 57 to supplement this Regulation by specifying further the criteria referred to in paragraph 2 of this Article, by 17 July 2024."
+   }
+  },
+  {
+   "event": "published",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "yearly",
+   "applies_to": "list of critical ICT third-party service providers at Union level",
+   "evidence": {
+    "provision": "Art. 31(9)",
+    "quote": "shall establish, publish and update yearly the list of critical ICT third-party service providers at Union level."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "on a yearly and aggregated basis",
+   "applies_to": "competent authorities' transmission of reports under Art. 28(3) to the Oversight Forum",
+   "evidence": {
+    "provision": "Art. 31(10)",
+    "quote": "competent authorities shall, on a yearly and aggregated basis, transmit the reports referred to in Article 28(3), third subparagraph"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "within 6 months of receipt of the application",
+   "anchor": "receipt of the reasoned application by EBA, ESMA or EIOPA",
+   "applies_to": "decision on designating an ICT third-party service provider that applied to be designated as critical",
+   "offset_value": 6,
+   "offset_unit": "months",
+   "evidence": {
+    "provision": "Art. 31(11), third subparagraph",
+    "quote": "shall be adopted and notified to the ICT third-party service provider within 6 months of receipt of the application."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "within the 12 months following the designation",
+   "anchor": "designation of the ICT third-party service provider as critical under Art. 31(1), point (a)",
+   "applies_to": "subsidiary in the Union required for use of a designated third-country critical ICT third-party service provider",
+   "offset_value": 12,
+   "offset_unit": "months",
+   "evidence": {
+    "provision": "Art. 31(12)",
+    "quote": "within the 12 months following the designation"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2024-07-17",
+   "date_type": "absolute",
+   "date_text": "by 17 July 2024",
+   "applies_to": "guidelines on cooperation between the ESAs and competent authorities for oversight tasks",
+   "evidence": {
+    "provision": "Art. 32(7)",
+    "quote": "the ESAs shall by 17 July 2024 issue"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "on yearly basis",
+   "applies_to": "ESAs' report on the application of the oversight framework section to Parliament, Council and Commission",
+   "evidence": {
+    "provision": "Art. 32(9)",
+    "quote": "shall, on yearly basis, submit a report on the application of this Section"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "yearly",
+   "applies_to": "communication of the annual oversight plan to the critical ICT third-party service provider",
+   "evidence": {
+    "provision": "Art. 33(4), first subparagraph",
+    "quote": "That plan shall be communicated yearly to the critical ICT third-party service provider."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "within 15 calendar days",
+   "anchor": "receipt of the draft oversight plan",
+   "applies_to": "reasoned statement by the critical ICT third-party service provider on the draft oversight plan",
+   "offset_value": 15,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Art. 33(4), second subparagraph",
+    "quote": "may submit a reasoned statement within 15 calendar days"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "within 30 calendar days",
+   "anchor": "Lead Overseer's opportunity given to the critical ICT third-party service provider before issuing recommendations",
+   "applies_to": "information from the critical ICT third-party service provider on expected impact on customers outside the Regulation",
+   "offset_value": 30,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Art. 35(3), second subparagraph",
+    "quote": "to provide, within 30 calendar days, relevant information"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "a period of at least 30 calendar days from the date on which the critical ICT third-party service provider received notification of the respective measures",
+   "anchor": "receipt of notification of the measures under Art. 35(1), points (a) to (c)",
+   "applies_to": "decision imposing a periodic penalty payment for non-compliance with measures",
+   "offset_value": 30,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Art. 35(6)",
+    "quote": "a period of at least 30 calendar days from the date on which the critical ICT third-party service provider received notification of the respective measures"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "for no more than a period of six months following the notification of the decision",
+   "anchor": "notification of the decision to impose a periodic penalty payment",
+   "applies_to": "daily periodic penalty payments imposed on a critical ICT third-party service provider",
+   "offset_value": 6,
+   "offset_unit": "months",
+   "evidence": {
+    "provision": "Art. 35(7)",
+    "quote": "for no more than a period of six months following the notification of the decision to impose a periodic penalty payment"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "Within 3 months of the completion of an investigation or inspection",
+   "anchor": "completion of an investigation or inspection",
+   "applies_to": "Lead Overseer recommendations to critical ICT third-party service providers",
+   "offset_value": 3,
+   "offset_unit": "months",
+   "evidence": {
+    "provision": "Art. 40(3)",
+    "quote": "Within 3 months of the completion of an investigation or inspection"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2024-07-17",
+   "date_type": "absolute",
+   "date_text": "by 17 July 2024",
+   "applies_to": "draft regulatory technical standards on the information and templates for oversight",
+   "evidence": {
+    "provision": "Art. 41(2)",
+    "quote": "The ESAs shall submit those draft regulatory technical standards to the Commission by 17 July 2024."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "Within 60 calendar days of the receipt of the recommendations",
+   "anchor": "receipt of the Lead Overseer's recommendations under Art. 35(1), point (d)",
+   "applies_to": "critical ICT third-party service providers' notice of intention to follow recommendations or reasoned explanation",
+   "offset_value": 60,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Art. 42(1)",
+    "quote": "Within 60 calendar days of the receipt of the recommendations"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "within 60 calendar days of the receipt of such notification",
+   "anchor": "receipt by the financial entity of the competent authority's notification",
+   "applies_to": "possibility of a decision requiring suspension of use of a critical ICT third-party service",
+   "offset_value": 60,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Art. 42(4)",
+    "quote": "within 60 calendar days of the receipt of such notification"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2024-07-17",
+   "date_type": "absolute",
+   "date_text": "by 17 July 2024",
+   "applies_to": "Commission delegated act setting oversight fee amounts and payment method",
+   "evidence": {
+    "provision": "Art. 43(2)",
+    "quote": "by determining the amount of the fees and the way in which they are to be paid by 17 July 2024."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "every five years",
+   "applies_to": "joint confidential report by the ESAs on discussions with third-country authorities",
+   "evidence": {
+    "provision": "Art. 44(2)",
+    "quote": "submit every five years a joint confidential report"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2025-01-17",
+   "date_type": "absolute",
+   "date_text": "by 17 January 2025",
+   "applies_to": "Member States' notification of laws, regulations and administrative provisions implementing Chapter VII (administrative penalties and remedial measures), including criminal law provisions, to the Commission, ESMA, the EBA and EIOPA",
+   "evidence": {
+    "provision": "Art. 53",
+    "quote": "Member States shall notify the laws, regulations and administrative provisions implementing this Chapter, including any relevant criminal law provisions, to the Commission, ESMA, the EBA and EIOPA by 17 January 2025."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "shall not exceed five years after its publication",
+   "anchor": "publication of the administrative penalty decision on the competent authority's website",
+   "applies_to": "retention of published administrative penalty decisions on official websites",
+   "offset_value": 5,
+   "offset_unit": "years",
+   "evidence": {
+    "provision": "Art. 54(6), second subparagraph",
+    "quote": "This period shall not exceed five years after its publication."
+   }
+  },
+  {
+   "event": "application",
+   "date": "2024-01-17",
+   "date_type": "absolute",
+   "date_text": "for a period of five years from 17 January 2024",
+   "applies_to": "Commission's power to adopt delegated acts under Articles 31(6) and 43(2)",
+   "evidence": {
+    "provision": "Art. 57(2), first subparagraph",
+    "quote": "for a period of five years from 17 January 2024"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2028-01-17",
+   "date_type": "absolute",
+   "date_text": "By 17 January 2028",
+   "applies_to": "Commission review report and, where appropriate, legislative proposal",
+   "evidence": {
+    "provision": "Art. 58(1), first subparagraph",
+    "quote": "By 17 January 2028, the Commission shall, after consulting the ESAs and the ESRB, as appropriate, carry out a review"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2023-07-17",
+   "date_type": "absolute",
+   "date_text": "no later than 17 July 2023",
+   "applies_to": "Commission report on payment systems oversight in the review of Directive (EU) 2015/2366",
+   "evidence": {
+    "provision": "Art. 58(2), first subparagraph",
+    "quote": "a report to the European Parliament and the Council no later than 17 July 2023"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2026-01-17",
+   "date_type": "absolute",
+   "date_text": "By 17 January 2026",
+   "applies_to": "Commission review on strengthened requirements for statutory auditors and audit firms",
+   "evidence": {
+    "provision": "Art. 58(3)",
+    "quote": "By 17 January 2026, the Commission shall"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2023-01-16",
+   "date_type": "relative",
+   "date_text": "on the twentieth day following that of its publication in the Official Journal of the European Union",
+   "anchor": "publication in the Official Journal of the European Union",
+   "applies_to": "Regulation as a whole",
+   "offset_value": 20,
+   "offset_unit": "days",
+   "anchor_event": "published",
+   "evidence": {
+    "provision": "Art. 64, first paragraph",
+    "quote": "This Regulation shall enter into force on the twentieth day following that of its publication in the Official Journal of the European Union."
+   },
+   "date_computed_from": "published 2022-12-27 (text) + 20 days"
+  },
+  {
+   "event": "application",
+   "date": "2025-01-17",
+   "date_type": "absolute",
+   "date_text": "It shall apply from 17 January 2025.",
+   "applies_to": "Regulation as a whole (general application)",
+   "evidence": {
+    "provision": "Art. 64, second paragraph",
+    "quote": "It shall apply from 17 January 2025."
+   }
+  },
+  {
+   "event": "signed",
+   "date": "2022-12-14",
+   "date_type": "absolute",
+   "date_text": "Done at Strasbourg, 14 December 2022.",
+   "applies_to": "Regulation as a whole (signature by the Presidents of the European Parliament and the Council)",
+   "evidence": {
+    "provision": "Art. 64 (signature block)",
+    "quote": "Done at Strasbourg, 14 December 2022."
+   }
+  },
+  {
+   "event": "published",
+   "date": "2022-12-27",
+   "date_type": "absolute",
+   "date_text": "OJ L 333, 27.12.2022, p. 1",
+   "applies_to": "Regulation as a whole (Official Journal citation)",
+   "evidence": {
+    "provision": "Art. 59, footnote (^*1)",
+    "quote": "OJ L 333, 27.12.2022, p. 1"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "employees",
+   "variable_text": "employs fewer than 10 persons",
+   "operator": "<",
+   "value": 10,
+   "value_text": "employs fewer than 10 persons",
+   "unit": "persons",
+   "level": "entity",
+   "trigger": "scope_definition",
+   "consequence": "Qualifies as a microenterprise together with the turnover or balance sheet limb; microenterprise carve-outs apply in other provisions (e.g., Art. 5(3), Art. 6(4), Art. 8(3))",
+   "conditions": "Also has annual turnover and/or annual balance sheet total not exceeding EUR 2 million; not a trading venue, central counterparty, trade repository or central securities depository",
+   "evidence": {
+    "provision": "Art. 3(60)",
+    "quote": "‘microenterprise’ means a financial entity, other than a trading venue, a central counterparty, a trade repository or a central securities depository, which employs fewer than 10 persons"
+   }
+  },
+  {
+   "variable": "revenue_annual",
+   "variable_text": "annual turnover and/or annual balance sheet total that does not exceed EUR 2 million",
+   "operator": "<=",
+   "value": 2000000,
+   "value_text": "does not exceed EUR 2 million",
+   "unit": "EUR",
+   "currency": "EUR",
+   "level": "entity",
+   "trigger": "scope_definition",
+   "consequence": "Qualifies as a microenterprise together with the employee limb; microenterprise carve-outs apply in other provisions",
+   "conditions": "Also employs fewer than 10 persons",
+   "evidence": {
+    "provision": "Art. 3(60)",
+    "quote": "has an annual turnover and/or annual balance sheet total that does not exceed EUR 2 million"
+   }
+  },
+  {
+   "variable": "employees",
+   "variable_text": "employs 10 or more persons, but fewer than 50 persons",
+   "operator": "range",
+   "value": 10,
+   "value_max": 50,
+   "value_text": "employs 10 or more persons, but fewer than 50 persons (upper limit exclusive)",
+   "unit": "persons",
+   "level": "entity",
+   "trigger": "scope_definition",
+   "consequence": "Qualifies as a small enterprise (size category used in Art. 2(3)(e) and Art. 18(4))",
+   "conditions": "Also annual turnover and/or balance sheet total exceeds EUR 2 million but does not exceed EUR 10 million",
+   "evidence": {
+    "provision": "Art. 3(63)",
+    "quote": "‘small enterprise’ means a financial entity that employs 10 or more persons, but fewer than 50 persons"
+   }
+  },
+  {
+   "variable": "revenue_annual",
+   "variable_text": "annual turnover and/or annual balance sheet total that exceeds EUR 2 million, but does not exceed EUR 10 million",
+   "operator": "range",
+   "value": 2000000,
+   "value_max": 10000000,
+   "value_text": "exceeds EUR 2 million, but does not exceed EUR 10 million",
+   "unit": "EUR",
+   "currency": "EUR",
+   "level": "entity",
+   "trigger": "scope_definition",
+   "consequence": "Qualifies as a small enterprise together with the employee limb",
+   "conditions": "Also employs 10 or more persons but fewer than 50 persons",
+   "evidence": {
+    "provision": "Art. 3(63)",
+    "quote": "has an annual turnover and/or annual balance sheet total that exceeds EUR 2 million, but does not exceed EUR 10 million"
+   }
+  },
+  {
+   "variable": "employees",
+   "variable_text": "employs fewer than 250 persons",
+   "operator": "<",
+   "value": 250,
+   "value_text": "employs fewer than 250 persons",
+   "unit": "persons",
+   "level": "entity",
+   "trigger": "scope_definition",
+   "consequence": "Qualifies as a medium-sized enterprise together with the turnover and balance sheet limbs (size category used in Art. 2(3)(e) and Art. 18(4))",
+   "conditions": "Must not be a small enterprise; also turnover not exceeding EUR 50 million and/or balance sheet not exceeding EUR 43 million",
+   "evidence": {
+    "provision": "Art. 3(64)",
+    "quote": "employs fewer than 250 persons"
+   }
+  },
+  {
+   "variable": "revenue_annual",
+   "variable_text": "annual turnover that does not exceed EUR 50 million",
+   "operator": "<=",
+   "value": 50000000,
+   "value_text": "does not exceed EUR 50 million",
+   "unit": "EUR",
+   "currency": "EUR",
+   "level": "entity",
+   "trigger": "scope_definition",
+   "consequence": "Qualifies as a medium-sized enterprise together with the employee limb (joined by 'and/or' with the balance sheet limb)",
+   "conditions": "Must not be a small enterprise; employs fewer than 250 persons",
+   "evidence": {
+    "provision": "Art. 3(64)",
+    "quote": "has an annual turnover that does not exceed EUR 50 million"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "annual balance sheet total that does not exceed EUR 43 million",
+   "operator": "<=",
+   "value": 43000000,
+   "value_text": "does not exceed EUR 43 million",
+   "unit": "EUR",
+   "currency": "EUR",
+   "level": "entity",
+   "trigger": "scope_definition",
+   "consequence": "Qualifies as a medium-sized enterprise together with the employee limb (joined by 'and/or' with the turnover limb)",
+   "conditions": "Must not be a small enterprise; employs fewer than 250 persons",
+   "evidence": {
+    "provision": "Art. 3(64)",
+    "quote": "an annual balance sheet that does not exceed EUR 43 million"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "institutions for occupational retirement provision whose pension schemes together have not more than 15 members in total",
+   "operator": "<=",
+   "value": 15,
+   "value_text": "do not have more than 15 members in total",
+   "unit": "members",
+   "level": "entity",
+   "trigger": "exclusion",
+   "consequence": "Regulation does not apply to such institutions (Art. 2(3)(c))",
+   "conditions": "Pension schemes operated together by the institution",
+   "evidence": {
+    "provision": "Art. 2(3), point (c)",
+    "quote": "institutions for occupational retirement provision which operate pension schemes which together do not have more than 15 members in total"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "small institution for occupational retirement provision: pension schemes which together have less than 100 members in total",
+   "operator": "<",
+   "value": 100,
+   "value_text": "less than 100 members in total",
+   "unit": "members",
+   "level": "entity",
+   "trigger": "exemption",
+   "consequence": "Subject to the simplified ICT risk management framework; Arts. 5 to 15 do not apply (Art. 16(1))",
+   "conditions": "Member State must have excluded it from Directive (EU) 2016/2341 under its Art. 5 conditions (Recital 42, not operative text)",
+   "evidence": {
+    "provision": "Art. 3(53)",
+    "quote": "‘small institution for occupational retirement provision’ means an institution for occupational retirement provision which operates pension schemes which together have less than 100 members in total"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "small and non-interconnected investment firm: conditions laid out in Article 12(1) of Regulation (EU) 2019/2033",
+   "operator": "=",
+   "value": null,
+   "value_text": "set by Article 12(1) of Regulation (EU) 2019/2033",
+   "unit": "",
+   "level": "entity",
+   "trigger": "exemption",
+   "consequence": "Subject to the simplified ICT risk management framework; Arts. 5 to 15 do not apply (Art. 16(1))",
+   "conditions": "Conditions defined in Regulation (EU) 2019/2033",
+   "depends_on": "Regulation (EU) 2019/2033, Art. 12(1)",
+   "evidence": {
+    "provision": "Art. 3(34)",
+    "quote": "‘small and non-interconnected investment firm’ means an investment firm that meets the conditions laid out in Article 12(1) of Regulation (EU) 2019/2033"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "materiality thresholds for determining major ICT-related incidents (and major operational or security payment-related incidents)",
+   "operator": ">=",
+   "value": null,
+   "value_text": "set by regulatory technical standards under Art. 18(3)(a)",
+   "level": "other",
+   "trigger": "obligation",
+   "consequence": "Incidents classified as major under these thresholds must be reported to the competent authority under Art. 19(1)",
+   "depends_on": "Commission regulatory technical standards adopted under Art. 18(3)-(4)",
+   "evidence": {
+    "provision": "Art. 18(3)(a)",
+    "quote": "including materiality thresholds for determining major ICT-related incidents"
+   },
+   "unit": ""
+  }
+ ],
+ "definitions": [
+  {
+   "term": "financial entity",
+   "defined_in": "this Regulation",
+   "evidence": {
+    "provision": "Art. 2(2)",
+    "quote": "For the purposes of this Regulation, entities referred to in paragraph 1, points (a) to (t), shall collectively be referred to as ‘financial entities’."
+   }
+  },
+  {
+   "term": "ICT services",
+   "defined_in": "this Regulation",
+   "evidence": {
+    "provision": "Art. 3(21)",
+    "quote": "‘ICT services’ means digital and data services provided through ICT systems to one or more internal or external users on an ongoing basis"
+   }
+  },
+  {
+   "term": "ICT third-party service provider",
+   "defined_in": "this Regulation",
+   "evidence": {
+    "provision": "Art. 3(19)",
+    "quote": "‘ICT third-party service provider’ means an undertaking providing ICT services"
+   }
+  },
+  {
+   "term": "ICT intra-group service provider",
+   "defined_in": "this Regulation",
+   "evidence": {
+    "provision": "Art. 3(20)",
+    "quote": "‘ICT intra-group service provider’ means an undertaking that is part of a financial group and that provides predominantly ICT services to financial entities within the same group"
+   }
+  },
+  {
+   "term": "ICT third-party service provider established in a third country",
+   "defined_in": "this Regulation",
+   "evidence": {
+    "provision": "Art. 3(24)",
+    "quote": "‘ICT third-party service provider established in a third country’ means an ICT third-party service provider that is a legal person established in a third-country"
+   }
+  },
+  {
+   "term": "critical ICT third-party service provider",
+   "defined_in": "this Regulation",
+   "evidence": {
+    "provision": "Art. 3(23)",
+    "quote": "‘critical ICT third-party service provider’ means an ICT third-party service provider designated as critical in accordance with Article 31;"
+   }
+  },
+  {
+   "term": "ICT third-party risk",
+   "defined_in": "this Regulation",
+   "evidence": {
+    "provision": "Art. 3(18)",
+    "quote": "‘ICT third-party risk’ means an ICT risk that may arise for a financial entity in relation to its use of ICT services provided by ICT third-party service providers"
+   }
+  },
+  {
+   "term": "ICT risk",
+   "defined_in": "this Regulation",
+   "evidence": {
+    "provision": "Art. 3(5)",
+    "quote": "‘ICT risk’ means any reasonably identifiable circumstance in relation to the use of network and information systems which, if materialised, may compromise the security"
+   }
+  },
+  {
+   "term": "ICT concentration risk",
+   "defined_in": "this Regulation",
+   "evidence": {
+    "provision": "Art. 3(29)",
+    "quote": "‘ICT concentration risk’ means an exposure to individual or multiple related critical ICT third-party service providers creating a degree of dependency on such providers"
+   }
+  },
+  {
+   "term": "ICT-related incident",
+   "defined_in": "this Regulation",
+   "evidence": {
+    "provision": "Art. 3(8)",
+    "quote": "‘ICT-related incident’ means a single event or a series of linked events unplanned by the financial entity that compromises the security of the network and information systems"
+   }
+  },
+  {
+   "term": "major ICT-related incident",
+   "defined_in": "this Regulation",
+   "evidence": {
+    "provision": "Art. 3(10)",
+    "quote": "‘major ICT-related incident’ means an ICT-related incident that has a high adverse impact on the network and information systems that support critical or important functions of the financial entity"
+   }
+  },
+  {
+   "term": "operational or security payment-related incident",
+   "defined_in": "this Regulation",
+   "evidence": {
+    "provision": "Art. 3(9)",
+    "quote": "‘operational or security payment-related incident’ means a single event or a series of linked events unplanned by the financial entities referred to in Article 2(1), points (a) to (d)"
+   }
+  },
+  {
+   "term": "major operational or security payment-related incident",
+   "defined_in": "this Regulation",
+   "evidence": {
+    "provision": "Art. 3(11)",
+    "quote": "‘major operational or security payment-related incident’ means an operational or security payment-related incident that has a high adverse impact on the payment-related services provided;"
+   }
+  },
+  {
+   "term": "significant cyber threat",
+   "defined_in": "this Regulation",
+   "evidence": {
+    "provision": "Art. 3(13)",
+    "quote": "‘significant cyber threat’ means a cyber threat the technical characteristics of which indicate that it could have the potential to result in a major ICT-related incident"
+   }
+  },
+  {
+   "term": "cyber threat",
+   "defined_in": "Regulation (EU) 2019/881, Art. 2, point (8)",
+   "evidence": {
+    "provision": "Art. 3(12)",
+    "quote": "‘cyber threat’ means ‘cyber threat’ as defined in Article 2, point (8), of Regulation (EU) 2019/881;"
+   }
+  },
+  {
+   "term": "critical or important function",
+   "defined_in": "this Regulation",
+   "evidence": {
+    "provision": "Art. 3(22)",
+    "quote": "‘critical or important function’ means a function, the disruption of which would materially impair the financial performance of a financial entity"
+   }
+  },
+  {
+   "term": "threat-led penetration testing (TLPT)",
+   "defined_in": "this Regulation",
+   "evidence": {
+    "provision": "Art. 3(17)",
+    "quote": "‘threat-led penetration testing (TLPT)’ means a framework that mimics the tactics, techniques and procedures of real-life threat actors"
+   }
+  },
+  {
+   "term": "Lead Overseer",
+   "defined_in": "this Regulation",
+   "evidence": {
+    "provision": "Art. 3(61)",
+    "quote": "‘Lead Overseer’ means the European Supervisory Authority appointed in accordance with Article 31(1), point (b) of this Regulation;"
+   }
+  },
+  {
+   "term": "management body",
+   "defined_in": "Directive 2014/65/EU, Art. 4(1), point (36), and other acts listed in this Regulation, Art. 3(30)",
+   "evidence": {
+    "provision": "Art. 3(30)",
+    "quote": "‘management body’ means a management body as defined in Article 4(1), point (36), of Directive 2014/65/EU"
+   }
+  },
+  {
+   "term": "public authority",
+   "defined_in": "this Regulation",
+   "evidence": {
+    "provision": "Art. 3(65)",
+    "quote": "‘public authority’ means any government or other public administration entity, including national central banks."
+   }
+  },
+  {
+   "term": "network and information system",
+   "defined_in": "Directive (EU) 2022/2555, Art. 6, point 1",
+   "evidence": {
+    "provision": "Art. 3(2)",
+    "quote": "‘network and information system’ means a network and information system as defined in Article 6, point 1, of Directive (EU) 2022/2555;"
+   }
+  },
+  {
+   "term": "legacy ICT system",
+   "defined_in": "this Regulation",
+   "evidence": {
+    "provision": "Art. 3(3)",
+    "quote": "‘legacy ICT system’ means an ICT system that has reached the end of its lifecycle (end-of-life), that is not suitable for upgrades or fixes"
+   }
+  },
+  {
+   "term": "microenterprise",
+   "defined_in": "this Regulation",
+   "evidence": {
+    "provision": "Art. 3(60)",
+    "quote": "‘microenterprise’ means a financial entity, other than a trading venue, a central counterparty, a trade repository or a central securities depository, which employs fewer than 10 persons"
+   }
+  },
+  {
+   "term": "small enterprise",
+   "defined_in": "this Regulation",
+   "evidence": {
+    "provision": "Art. 3(63)",
+    "quote": "‘small enterprise’ means a financial entity that employs 10 or more persons, but fewer than 50 persons"
+   }
+  },
+  {
+   "term": "medium-sized enterprise",
+   "defined_in": "this Regulation",
+   "evidence": {
+    "provision": "Art. 3(64)",
+    "quote": "‘medium-sized enterprise’ means a financial entity that is not a small enterprise and employs fewer than 250 persons"
+   }
+  },
+  {
+   "term": "small institution for occupational retirement provision",
+   "defined_in": "this Regulation",
+   "evidence": {
+    "provision": "Art. 3(53)",
+    "quote": "‘small institution for occupational retirement provision’ means an institution for occupational retirement provision which operates pension schemes which together have less than 100 members in total"
+   }
+  },
+  {
+   "term": "small and non-interconnected investment firm",
+   "defined_in": "Regulation (EU) 2019/2033, Art. 12(1)",
+   "evidence": {
+    "provision": "Art. 3(34)",
+    "quote": "‘small and non-interconnected investment firm’ means an investment firm that meets the conditions laid out in Article 12(1) of Regulation (EU) 2019/2033"
+   }
+  },
+  {
+   "term": "credit institution",
+   "defined_in": "Regulation (EU) No 575/2013, Art. 4(1), point (1)",
+   "evidence": {
+    "provision": "Art. 3(31)",
+    "quote": "‘credit institution’ means a credit institution as defined in Article 4(1), point (1), of Regulation (EU) No 575/2013"
+   }
+  },
+  {
+   "term": "investment firm",
+   "defined_in": "Directive 2014/65/EU, Art. 4(1), point (1)",
+   "evidence": {
+    "provision": "Art. 3(33)",
+    "quote": "‘investment firm’ means an investment firm as defined in Article 4(1), point (1), of Directive 2014/65/EU;"
+   }
+  },
+  {
+   "term": "payment institution",
+   "defined_in": "Directive (EU) 2015/2366, Art. 4, point (4)",
+   "evidence": {
+    "provision": "Art. 3(35)",
+    "quote": "‘payment institution’ means a payment institution as defined in Article 4, point (4), of Directive (EU) 2015/2366;"
+   }
+  },
+  {
+   "term": "payment institution exempted pursuant to Directive (EU) 2015/2366",
+   "defined_in": "Directive (EU) 2015/2366, Art. 32(1)",
+   "evidence": {
+    "provision": "Art. 3(36)",
+    "quote": "‘payment institution exempted pursuant to Directive (EU) 2015/2366’ means a payment institution exempted pursuant to Article 32(1) of Directive (EU) 2015/2366;"
+   }
+  },
+  {
+   "term": "account information service provider",
+   "defined_in": "Directive (EU) 2015/2366, Art. 33(1)",
+   "evidence": {
+    "provision": "Art. 3(37)",
+    "quote": "‘account information service provider’ means an account information service provider as referred to in Article 33(1) of Directive (EU) 2015/2366;"
+   }
+  },
+  {
+   "term": "electronic money institution",
+   "defined_in": "Directive 2009/110/EC, Art. 2, point (1)",
+   "evidence": {
+    "provision": "Art. 3(38)",
+    "quote": "‘electronic money institution’ means an electronic money institution as defined in Article 2, point (1), of Directive 2009/110/EC"
+   }
+  },
+  {
+   "term": "electronic money institution exempted pursuant to Directive 2009/110/EC",
+   "defined_in": "Directive 2009/110/EC, Art. 9(1)",
+   "evidence": {
+    "provision": "Art. 3(39)",
+    "quote": "‘electronic money institution exempted pursuant to Directive 2009/110/EC’ means an electronic money institution benefitting from a waiver as referred to in Article 9(1) of Directive 2009/110/EC"
+   }
+  },
+  {
+   "term": "institution exempted pursuant to Directive 2013/36/EU",
+   "defined_in": "Directive 2013/36/EU, Art. 2(5), points (4) to (23)",
+   "evidence": {
+    "provision": "Art. 3(32)",
+    "quote": "‘institution exempted pursuant to Directive 2013/36/EU’ means an entity as referred to in Article 2(5), points (4) to (23), of Directive 2013/36/EU;"
+   }
+  },
+  {
+   "term": "institution for occupational retirement provision",
+   "defined_in": "Directive (EU) 2016/2341, Art. 6, point (1)",
+   "evidence": {
+    "provision": "Art. 3(52)",
+    "quote": "‘institution for occupational retirement provision’ means an institution for occupational retirement provision as defined in Article 6, point (1), of Directive (EU) 2016/2341;"
+   }
+  },
+  {
+   "term": "central counterparty",
+   "defined_in": "Regulation (EU) No 648/2012, Art. 2, point (1)",
+   "evidence": {
+    "provision": "Art. 3(40)",
+    "quote": "‘central counterparty’ means a central counterparty as defined in Article 2, point (1), of Regulation (EU) No 648/2012;"
+   }
+  },
+  {
+   "term": "trade repository",
+   "defined_in": "Regulation (EU) No 648/2012, Art. 2, point (2)",
+   "evidence": {
+    "provision": "Art. 3(41)",
+    "quote": "‘trade repository’ means a trade repository as defined in Article 2, point (2), of Regulation (EU) No 648/2012;"
+   }
+  },
+  {
+   "term": "central securities depository",
+   "defined_in": "Regulation (EU) No 909/2014, Art. 2(1), point (1)",
+   "evidence": {
+    "provision": "Art. 3(42)",
+    "quote": "‘central securities depository’ means a central securities depository as defined in Article 2(1), point (1), of Regulation (EU) No 909/2014;"
+   }
+  },
+  {
+   "term": "trading venue",
+   "defined_in": "Directive 2014/65/EU, Art. 4(1), point (24)",
+   "evidence": {
+    "provision": "Art. 3(43)",
+    "quote": "‘trading venue’ means a trading venue as defined in Article 4(1), point (24), of Directive 2014/65/EU;"
+   }
+  },
+  {
+   "term": "manager of alternative investment funds",
+   "defined_in": "Directive 2011/61/EU, Art. 4(1), point (b)",
+   "evidence": {
+    "provision": "Art. 3(44)",
+    "quote": "‘manager of alternative investment funds’ means a manager of alternative investment funds as defined in Article 4(1), point (b), of Directive 2011/61/EU;"
+   }
+  },
+  {
+   "term": "management company",
+   "defined_in": "Directive 2009/65/EC, Art. 2(1), point (b)",
+   "evidence": {
+    "provision": "Art. 3(45)",
+    "quote": "‘management company’ means a management company as defined in Article 2(1), point (b), of Directive 2009/65/EC;"
+   }
+  },
+  {
+   "term": "data reporting service provider",
+   "defined_in": "Regulation (EU) No 600/2014, Art. 2(1), points (34) to (36)",
+   "evidence": {
+    "provision": "Art. 3(46)",
+    "quote": "‘data reporting service provider’ means a data reporting service provider within the meaning of Regulation (EU) No 600/2014, as referred to in Article 2(1), points (34) to (36) thereof;"
+   }
+  },
+  {
+   "term": "insurance undertaking",
+   "defined_in": "Directive 2009/138/EC, Art. 13, point (1)",
+   "evidence": {
+    "provision": "Art. 3(47)",
+    "quote": "‘insurance undertaking’ means an insurance undertaking as defined in Article 13, point (1), of Directive 2009/138/EC;"
+   }
+  },
+  {
+   "term": "reinsurance undertaking",
+   "defined_in": "Directive 2009/138/EC, Art. 13, point (4)",
+   "evidence": {
+    "provision": "Art. 3(48)",
+    "quote": "‘reinsurance undertaking’ means a reinsurance undertaking as defined in Article 13, point (4), of Directive 2009/138/EC;"
+   }
+  },
+  {
+   "term": "insurance intermediary",
+   "defined_in": "Directive (EU) 2016/97, Art. 2(1), point (3)",
+   "evidence": {
+    "provision": "Art. 3(49)",
+    "quote": "‘insurance intermediary’ means an insurance intermediary as defined in Article 2(1), point (3), of Directive (EU) 2016/97"
+   }
+  },
+  {
+   "term": "ancillary insurance intermediary",
+   "defined_in": "Directive (EU) 2016/97, Art. 2(1), point (4)",
+   "evidence": {
+    "provision": "Art. 3(50)",
+    "quote": "‘ancillary insurance intermediary’ means an ancillary insurance intermediary as defined in Article 2(1), point (4), of Directive (EU) 2016/97;"
+   }
+  },
+  {
+   "term": "reinsurance intermediary",
+   "defined_in": "Directive (EU) 2016/97, Art. 2(1), point (5)",
+   "evidence": {
+    "provision": "Art. 3(51)",
+    "quote": "‘reinsurance intermediary’ means a reinsurance intermediary as defined in Article 2(1), point (5), of Directive (EU) 2016/97;"
+   }
+  },
+  {
+   "term": "credit rating agency",
+   "defined_in": "Regulation (EC) No 1060/2009, Art. 3(1), point (b)",
+   "evidence": {
+    "provision": "Art. 3(54)",
+    "quote": "‘credit rating agency’ means a credit rating agency as defined in Article 3(1), point (b), of Regulation (EC) No 1060/2009;"
+   }
+  },
+  {
+   "term": "crypto-asset service provider",
+   "defined_in": "Regulation on markets in crypto-assets (relevant provision)",
+   "evidence": {
+    "provision": "Art. 3(55)",
+    "quote": "‘crypto-asset service provider’ means a crypto-asset service provider as defined in the relevant provision of the Regulation on markets in crypto-assets;"
+   }
+  },
+  {
+   "term": "issuer of asset-referenced tokens",
+   "defined_in": "Regulation on markets in crypto-assets (relevant provision)",
+   "evidence": {
+    "provision": "Art. 3(56)",
+    "quote": "‘issuer of asset-referenced tokens’ means an issuer of asset-referenced tokens as defined in the relevant provision of the Regulation on markets in crypto-assets;"
+   }
+  },
+  {
+   "term": "administrator of critical benchmarks",
+   "defined_in": "Regulation (EU) 2016/1011, Art. 3(1), point (25)",
+   "evidence": {
+    "provision": "Art. 3(57)",
+    "quote": "‘administrator of critical benchmarks’ means an administrator of ‘critical benchmarks’ as defined in Article 3(1), point (25), of Regulation (EU) 2016/1011;"
+   }
+  },
+  {
+   "term": "crowdfunding service provider",
+   "defined_in": "Regulation (EU) 2020/1503, Art. 2(1), point (e)",
+   "evidence": {
+    "provision": "Art. 3(58)",
+    "quote": "‘crowdfunding service provider’ means a crowdfunding service provider as defined in Article 2(1), point (e), of Regulation (EU) 2020/1503"
+   }
+  },
+  {
+   "term": "securitisation repository",
+   "defined_in": "Regulation (EU) 2017/2402, Art. 2, point (23)",
+   "evidence": {
+    "provision": "Art. 3(59)",
+    "quote": "‘securitisation repository’ means a securitisation repository as defined in Article 2, point (23), of Regulation (EU) 2017/2402"
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States that exclude entities under Art. 2(5)(4) to (23) of Directive 2013/36/EU from DORA must inform the Commission, and any later changes; the Commission must make that information publicly available.",
+   "conditional_on": "Member State chooses to use the exclusion option under Art. 2(4)",
+   "evidence": {
+    "provision": "Art. 2(4)",
+    "quote": "it shall inform the Commission thereof as well as of any subsequent changes thereto"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Financial entities must implement the Chapter II ICT risk management rules in accordance with the proportionality principle, taking account of size, risk profile, and nature, scale and complexity of services.",
+   "evidence": {
+    "provision": "Art. 4(1)",
+    "quote": "Financial entities shall implement the rules laid down in Chapter II in accordance with the principle of proportionality"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Competent authorities must consider financial entities' application of the proportionality principle when reviewing the consistency of their ICT risk management framework.",
+   "evidence": {
+    "provision": "Art. 4(3)",
+    "quote": "The competent authorities shall consider the application of the proportionality principle by financial entities"
+   }
+  },
+  {
+   "type": "management_system",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Financial entities must have an internal governance and control framework ensuring effective and prudent management of ICT risk.",
+   "evidence": {
+    "provision": "Art. 5(1)",
+    "quote": "Financial entities shall have in place an internal governance and control framework that ensures an effective and prudent management of ICT risk"
+   }
+  },
+  {
+   "type": "management_system",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "The management body defines, approves, oversees and is responsible for the ICT risk management framework; it bears ultimate responsibility, sets policies, roles, business continuity and response plans, internal audit plans, budget, ICT third-party policy and reporting channels (Art. 5(2)(a) to (i)).",
+   "evidence": {
+    "provision": "Art. 5(2)",
+    "quote": "The management body of the financial entity shall define, approve, oversee and be responsible for the implementation of all arrangements related to the ICT risk management framework"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Members of the management body must keep up to date with sufficient ICT risk knowledge and skills, including regular specific training.",
+   "evidence": {
+    "provision": "Art. 5(4)",
+    "quote": "Members of the management body of the financial entity shall actively keep up to date with sufficient knowledge and skills"
+   }
+  },
+  {
+   "type": "management_system",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Financial entities other than microenterprises must establish a role, or designate a senior manager, to monitor ICT third-party service arrangements and related risk exposure.",
+   "conditional_on": "Entity is not a microenterprise",
+   "evidence": {
+    "provision": "Art. 5(3)",
+    "quote": "Financial entities, other than microenterprises, shall establish a role in order to monitor the arrangements concluded with ICT third-party service providers"
+   }
+  },
+  {
+   "type": "management_system",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Financial entities must have a sound, comprehensive and well-documented ICT risk management framework as part of overall risk management, documented and reviewed at least yearly (Art. 6(5)), with a control function, internal audit, a follow-up process for audit findings, and a digital operational resilience strategy (Art. 6(4), (6) to (8)); non-microenterprises have the control function and audit duties.",
+   "evidence": {
+    "provision": "Art. 6(1)",
+    "quote": "Financial entities shall have a sound, comprehensive and well-documented ICT risk management framework"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "The ICT risk management framework must include strategies, policies, procedures, ICT protocols and tools to protect all information assets and ICT assets, including physical components.",
+   "evidence": {
+    "provision": "Art. 6(2)",
+    "quote": "The ICT risk management framework shall include at least strategies, policies, procedures, ICT protocols and tools that are necessary to duly and adequately protect all information assets and ICT assets"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Financial entities must provide complete and updated information on ICT risk and their ICT risk management framework to competent authorities upon request, and a review report on request (Art. 6(3), (5)).",
+   "conditional_on": "Upon request of the competent authority",
+   "evidence": {
+    "provision": "Art. 6(3)",
+    "quote": "They shall provide complete and updated information on ICT risk and on their ICT risk management framework to the competent authorities upon their request."
+   }
+  },
+  {
+   "type": "audit",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "The ICT risk management framework of non-microenterprises must be subject to regular internal audit by auditors with sufficient ICT expertise and independence; a formal follow-up process for critical audit findings is also required (Art. 6(6), (7)).",
+   "conditional_on": "Entity is not a microenterprise",
+   "evidence": {
+    "provision": "Art. 6(6)",
+    "quote": "shall be subject to internal audit by auditors on a regular basis"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Financial entities must use and maintain updated ICT systems, protocols and tools that are appropriate, reliable, have sufficient capacity, and are technologically resilient.",
+   "evidence": {
+    "provision": "Art. 7",
+    "quote": "financial entities shall use and maintain updated ICT systems, protocols and tools that are"
+   }
+  },
+  {
+   "type": "record_keeping",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Financial entities must identify, classify and document ICT-supported business functions, information and ICT assets, and maintain inventories of assets, configurations and third-party dependencies, updated periodically and on major change, reviewed at least yearly.",
+   "evidence": {
+    "provision": "Art. 8(1)",
+    "quote": "financial entities shall identify, classify and adequately document all ICT supported business functions"
+   }
+  },
+  {
+   "type": "risk_assessment",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Financial entities must continuously identify all sources of ICT risk and assess cyber threats and vulnerabilities, review risk scenarios at least yearly; non-microenterprises must perform a risk assessment upon each major change (Art. 8(3)) and a yearly specific risk assessment on all legacy ICT systems (Art. 8(7)).",
+   "conditional_on": "Art. 8(3) and 8(7) apply to entities other than microenterprises",
+   "evidence": {
+    "provision": "Art. 8(2)",
+    "quote": "Financial entities shall, on a continuous basis, identify all sources of ICT risk"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Financial entities must continuously monitor and control ICT system security, design and implement ICT security policies that ensure resilience, availability and data integrity, use appropriate ICT solutions, and document information security, network segmentation, access control, authentication, encryption, change management and patch policies.",
+   "evidence": {
+    "provision": "Art. 9(1)",
+    "quote": "financial entities shall continuously monitor and control the security and functioning of ICT systems and tools"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Mechanisms must promptly detect anomalous activities and ICT incidents, provide multiple layers of control and alert thresholds, and be regularly tested under Art. 25; sufficient resources must monitor user activity and cyber-attacks.",
+   "evidence": {
+    "provision": "Art. 10(1)",
+    "quote": "Financial entities shall have in place mechanisms to promptly detect anomalous activities"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Data reporting service providers must have systems that check trade reports for completeness and errors and request re-transmission.",
+   "conditional_on": "Entity is a data reporting service provider",
+   "evidence": {
+    "provision": "Art. 10(4)",
+    "quote": "Data reporting service providers shall, in addition, have in place systems that can effectively check trade reports"
+   }
+  },
+  {
+   "type": "management_system",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Financial entities must put in place a comprehensive ICT business continuity policy, implemented through documented arrangements, plans and procedures for continuity, incident response, containment, and impact estimation (Art. 11(1), (2)); a crisis management function is required for non-microenterprises (Art. 11(7)).",
+   "evidence": {
+    "provision": "Art. 11(1)",
+    "quote": "financial entities shall put in place a comprehensive ICT business continuity policy"
+   }
+  },
+  {
+   "type": "audit",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "ICT response and recovery plans of non-microenterprises are subject to independent internal audit reviews.",
+   "conditional_on": "Entity is not a microenterprise",
+   "evidence": {
+    "provision": "Art. 11(3)",
+    "quote": "shall be subject to independent internal audit reviews"
+   }
+  },
+  {
+   "type": "testing_evaluation",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Financial entities must maintain and periodically test ICT business continuity plans, including for outsourced critical functions; business continuity and response and recovery plans must be tested at least yearly, and crisis communication plans tested (Art. 11(4), (6)).",
+   "evidence": {
+    "provision": "Art. 11(4)",
+    "quote": "Financial entities shall put in place, maintain and periodically test appropriate ICT business continuity plans"
+   }
+  },
+  {
+   "type": "risk_assessment",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Financial entities must conduct a business impact analysis of exposures to severe business disruptions, using quantitative and qualitative criteria, and align ICT assets with it.",
+   "evidence": {
+    "provision": "Art. 11(5)",
+    "quote": "financial entities shall conduct a business impact analysis (BIA) of their exposures to severe business disruptions"
+   }
+  },
+  {
+   "type": "record_keeping",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Financial entities must keep readily accessible records of activities before and during disruption events when continuity and recovery plans are activated.",
+   "conditional_on": "Continuity or recovery plans are activated",
+   "evidence": {
+    "provision": "Art. 11(8)",
+    "quote": "Financial entities shall keep readily accessible records of activities before and during disruption events"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Central securities depositories must provide competent authorities with copies of ICT business continuity test results; non-microenterprises must report to competent authorities, on request, estimated aggregated annual costs and losses from major ICT-related incidents (Art. 11(9), (10)).",
+   "conditional_on": "Art. 11(9) applies to central securities depositories; Art. 11(10) to non-microenterprises on request",
+   "evidence": {
+    "provision": "Art. 11(9)",
+    "quote": "Central securities depositories shall provide the competent authorities with copies of the results of the ICT business continuity tests"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The ESAs, through the Joint Committee, must develop common guidelines on the estimation of aggregated annual costs and losses from major ICT-related incidents.",
+   "applies_from": "by 17 July 2024",
+   "evidence": {
+    "provision": "Art. 11(11)",
+    "quote": "the ESAs, through the Joint Committee, shall by 17 July 2024 develop common guidelines on the estimation of aggregated annual costs and losses"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Financial entities must develop and document backup policies and restoration and recovery procedures, set up backup systems, and test them periodically; restoration must use segregated systems and recovery checks must maintain data integrity (Art. 12(1), (2), (3), (7)).",
+   "evidence": {
+    "provision": "Art. 12(1)",
+    "quote": "financial entities shall develop and document"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Non-microenterprises must maintain redundant ICT capacities; microenterprises must assess the need for such capacity based on risk profile.",
+   "conditional_on": "Entity is not a microenterprise",
+   "evidence": {
+    "provision": "Art. 12(4)",
+    "quote": "Financial entities, other than microenterprises, shall maintain redundant ICT capacities"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Central securities depositories must maintain at least one secondary processing site at a geographic distance from the primary site, with equivalent continuity capability and immediate accessibility to staff.",
+   "conditional_on": "Entity is a central securities depository",
+   "evidence": {
+    "provision": "Art. 12(5)",
+    "quote": "Central securities depositories shall maintain at least one secondary processing site"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Financial entities must capture and analyse vulnerability and threat information; after major incidents disrupting core activities they must hold post-incident reviews (Art. 13(1), (2), (3)); senior ICT staff report yearly to the management body (Art. 13(5)).",
+   "evidence": {
+    "provision": "Art. 13(2)",
+    "quote": "Financial entities shall put in place post ICT-related incident reviews after a major ICT-related incident disrupts their core activities"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Non-microenterprises must, on request, communicate to competent authorities the changes implemented after post-incident reviews.",
+   "conditional_on": "Entity is not a microenterprise; upon request",
+   "evidence": {
+    "provision": "Art. 13(2)",
+    "quote": "Financial entities, other than microenterprises, shall, upon request, communicate to the competent authorities, the changes that were implemented"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Financial entities must develop ICT security awareness programmes and digital operational resilience training as compulsory modules for all staff and senior management, and monitor technological developments on a continuous basis (Art. 13(6), (7)).",
+   "evidence": {
+    "provision": "Art. 13(6)",
+    "quote": "Financial entities shall develop ICT security awareness programmes and digital operational resilience training as compulsory modules in their staff training schemes."
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Financial entities must have crisis communication plans enabling responsible disclosure of at least major ICT-related incidents or vulnerabilities to clients, counterparts and the public, and communication policies for staff and external stakeholders; at least one person must implement the communication strategy (Art. 14(2), (3)).",
+   "evidence": {
+    "provision": "Art. 14(1)",
+    "quote": "financial entities shall have in place crisis communication plans enabling a responsible disclosure of, at least, major ICT-related incidents or vulnerabilities to clients and counterparts as well as to the public"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The ESAs, through the Joint Committee and in consultation with ENISA, must develop common draft regulatory technical standards on ICT security policies, access controls, anomaly detection, business continuity, response and recovery plans, and reporting content, taking account of entity size and risk profile.",
+   "applies_from": "by 17 January 2024",
+   "evidence": {
+    "provision": "Art. 15",
+    "quote": "develop common draft regulatory technical standards in order to"
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Power is delegated to the Commission to supplement the Regulation by adopting the regulatory technical standards referred to in Art. 15.",
+   "evidence": {
+    "provision": "Art. 15",
+    "quote": "Power is delegated to the Commission to supplement this Regulation by adopting the regulatory technical standards referred to in the first paragraph"
+   }
+  },
+  {
+   "type": "management_system",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Simplified-regime entities must maintain a sound documented ICT risk management framework, monitor systems, use resilient ICT tools, identify key ICT third-party dependencies, ensure continuity through business continuity plans, test them regularly, and provide awareness training (Art. 16(1)(a) to (h)).",
+   "conditional_on": "Entity is a simplified-regime entity under Art. 16(1)",
+   "evidence": {
+    "provision": "Art. 16(1)",
+    "quote": "the entities listed in the first subparagraph shall:"
+   }
+  },
+  {
+   "type": "management_system",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "The ICT risk management framework of simplified-regime entities must be documented and reviewed periodically and upon major ICT-related incidents, and a review report must be provided on request.",
+   "conditional_on": "Entity is a simplified-regime entity under Art. 16(1)",
+   "evidence": {
+    "provision": "Art. 16(2)",
+    "quote": "shall be documented and reviewed periodically and upon the occurrence of major ICT-related incidents"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The ESAs must develop common draft regulatory technical standards on the simplified ICT risk management framework and submit them to the Commission.",
+   "applies_from": "by 17 January 2024",
+   "evidence": {
+    "provision": "Art. 16(3)",
+    "quote": "The ESAs shall submit those draft regulatory technical standards to the Commission by 17 January 2024."
+   }
+  },
+  {
+   "type": "incident_reporting",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Financial entities must define, establish and implement an ICT-related incident management process to detect, manage and notify incidents, with early warning indicators, classification, roles, communication plans and response procedures (Art. 17(1), (3)).",
+   "evidence": {
+    "provision": "Art. 17(1)",
+    "quote": "Financial entities shall define, establish and implement an ICT-related incident management process to detect, manage and notify ICT-related incidents."
+   }
+  },
+  {
+   "type": "record_keeping",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Financial entities must record all ICT-related incidents and significant cyber threats, and establish procedures to identify root causes and address them.",
+   "evidence": {
+    "provision": "Art. 17(2)",
+    "quote": "Financial entities shall record all ICT-related incidents and significant cyber threats."
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Financial entities must classify ICT-related incidents and determine their impact by criteria covering clients affected, duration, geographic spread, data losses, service criticality and economic impact; they must also classify significant cyber threats (Art. 18(1), (2)).",
+   "evidence": {
+    "provision": "Art. 18(1)",
+    "quote": "Financial entities shall classify ICT-related incidents and shall determine their impact based on the following criteria"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The ESAs, through the Joint Committee and in consultation with the ECB and ENISA, must develop common draft regulatory technical standards on classification criteria, materiality thresholds for major incidents, and significant cyber threat thresholds, and submit them to the Commission.",
+   "applies_from": "by 17 January 2024",
+   "evidence": {
+    "provision": "Art. 18(3)",
+    "quote": "The ESAs shall, through the Joint Committee and in consultation with the ECB and ENISA, develop common draft regulatory technical standards further specifying"
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Power is delegated to the Commission to supplement the Regulation by adopting the regulatory technical standards referred to in Art. 18(3).",
+   "evidence": {
+    "provision": "Art. 18(3)",
+    "quote": "Power is delegated to the Commission to supplement this Regulation by adopting the regulatory technical standards referred to in paragraph 3"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Financial entities must report major ICT-related incidents to the relevant competent authority; significant credit institutions report to the national competent authority, which transmits the report to the ECB; Member States may require reporting to CSIRTs.",
+   "conditional_on": "Incident is major",
+   "evidence": {
+    "provision": "Art. 19(1)",
+    "quote": "Financial entities shall report major ICT-related incidents to the relevant competent authority as referred to in Article 46"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Financial entities must submit an initial notification, intermediate reports on significant status changes, and a final report after root cause analysis, using templates, within time limits set under Art. 20.",
+   "conditional_on": "Time limits to be laid down under Art. 20 RTS",
+   "evidence": {
+    "provision": "Art. 19(4)",
+    "quote": "Financial entities shall, within the time limits to be laid down in accordance with Article 20"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Where a major ICT-related incident affects the financial interests of clients, financial entities must inform clients without undue delay of the incident and mitigation measures; for significant cyber threats they inform potentially affected clients of protection measures (Art. 19(3)).",
+   "conditional_on": "Major ICT-related incident has an impact on the financial interests of clients",
+   "evidence": {
+    "provision": "Art. 19(3)",
+    "quote": "financial entities shall, without undue delay as soon as they become aware of it, inform their clients about the major ICT-related incident"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "financial_institution",
+   "modality": "may",
+   "summary": "Financial entities may voluntarily notify significant cyber threats to the relevant competent authority when they deem the threat relevant to the financial system, service users or clients.",
+   "conditional_on": "Voluntary",
+   "evidence": {
+    "provision": "Art. 19(2)",
+    "quote": "Financial entities may, on a voluntary basis, notify significant cyber threats to the relevant competent authority"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The competent authority must in a timely manner pass details of major incidents to EBA, ESMA or EIOPA, the ECB, other competent authorities, single points of contact or CSIRTs, resolution authorities and other relevant public authorities; EBA, ESMA or EIOPA and the ECB assess cross-border relevance and notify other authorities (Art. 19(6), (7)).",
+   "evidence": {
+    "provision": "Art. 19(6)",
+    "quote": "the competent authority shall, in a timely manner, provide details of the major ICT-related incident to the following recipients"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "financial_institution",
+   "modality": "may",
+   "summary": "Financial entities may outsource incident reporting obligations to a third-party provider, remaining fully responsible for compliance.",
+   "conditional_on": "In accordance with Union and national sectoral law",
+   "evidence": {
+    "provision": "Art. 19(5)",
+    "quote": "Financial entities may outsource, in accordance with Union and national sectoral law, the reporting obligations under this Article"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The ESAs, through the Joint Committee and in consultation with ENISA and the ECB, must develop common draft regulatory technical standards on the content of incident reports, reporting time limits and significant cyber threat notifications, and common draft implementing technical standards on forms and templates.",
+   "applies_from": "by 17 July 2024",
+   "evidence": {
+    "provision": "Art. 20",
+    "quote": "The ESAs shall submit the common draft regulatory technical standards referred to in the first paragraph, point (a), and the common draft implementing technical standards referred to in the first paragraph, point (b), to the Commission by 17 July 2024."
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Power is delegated to the Commission to adopt the common regulatory technical standards, and conferred to adopt the common implementing technical standards, referred to in Art. 20.",
+   "evidence": {
+    "provision": "Art. 20",
+    "quote": "Power is delegated to the Commission to supplement this Regulation by adopting the common regulatory technical standards"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The ESAs, through the Joint Committee and in consultation with the ECB and ENISA, must prepare a joint report on the feasibility of a single EU Hub for major ICT-related incident reporting and submit it to the Parliament, Council and Commission.",
+   "applies_from": "by 17 January 2025",
+   "evidence": {
+    "provision": "Art. 21(3)",
+    "quote": "The ESAs shall submit the report referred to in paragraph 1 to the European Parliament, to the Council and to the Commission by 17 January 2025."
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Upon receipt of an initial notification or report, the competent authority must acknowledge receipt and may provide feedback or guidance; the ESAs must report yearly on anonymised and aggregated major incidents (Art. 22(2)).",
+   "evidence": {
+    "provision": "Art. 22(1)",
+    "quote": "the competent authority shall, upon receipt of the initial notification and of each report as referred to in Article 19(4), acknowledge receipt"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "The Chapter III incident requirements also apply to operational or security payment-related incidents, and major such incidents, where they concern credit institutions, payment institutions, account information service providers and electronic money institutions.",
+   "conditional_on": "Entity is a credit institution, payment institution, account information service provider or electronic money institution",
+   "evidence": {
+    "provision": "Art. 23",
+    "quote": "The requirements laid down in this Chapter shall also apply to operational or security payment-related incidents"
+   }
+  },
+  {
+   "type": "testing_evaluation",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Non-microenterprises must establish, maintain and review a sound digital operational resilience testing programme as part of the ICT risk management framework, with independent testers, remediation procedures, and at least yearly tests on all ICT systems supporting critical or important functions (Art. 24(1), (4) to (6)).",
+   "conditional_on": "Entity is not a microenterprise",
+   "evidence": {
+    "provision": "Art. 24(1)",
+    "quote": "establish, maintain and review a sound and comprehensive digital operational resilience testing programme"
+   }
+  },
+  {
+   "type": "testing_evaluation",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "The testing programme must provide for appropriate tests such as vulnerability assessments, scenario-based tests, performance and end-to-end testing and penetration testing.",
+   "evidence": {
+    "provision": "Art. 25(1)",
+    "quote": "The digital operational resilience testing programme referred to in Article 24 shall provide"
+   }
+  },
+  {
+   "type": "testing_evaluation",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Central securities depositories and central counterparties must perform vulnerability assessments before any deployment or redeployment of applications, infrastructure components and ICT services supporting critical or important functions.",
+   "conditional_on": "Entity is a central securities depository or central counterparty",
+   "evidence": {
+    "provision": "Art. 25(2)",
+    "quote": "Central securities depositories and central counterparties shall perform vulnerability assessments before any deployment or redeployment"
+   }
+  },
+  {
+   "type": "testing_evaluation",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Microenterprises must perform the Art. 25(1) tests using a risk-based approach and strategic planning of ICT testing, balancing resources against risk and criticality.",
+   "conditional_on": "Entity is a microenterprise",
+   "evidence": {
+    "provision": "Art. 25(3)",
+    "quote": "Microenterprises shall perform the tests referred to in paragraph 1 by combining a risk-based approach"
+   }
+  },
+  {
+   "type": "testing_evaluation",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Financial entities identified as required to perform advanced testing must carry out TLPT at least every 3 years, covering several or all critical or important functions on live production systems, with the competent authority able to adjust frequency.",
+   "conditional_on": "Entity is other than an Art. 16(1) entity and other than a microenterprise, and is identified by the competent authority under Art. 26(8)",
+   "evidence": {
+    "provision": "Art. 26(1)",
+    "quote": "shall carry out at least every 3 years advanced testing by means of TLPT"
+   }
+  },
+  {
+   "type": "testing_evaluation",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Each TLPT must cover several or all critical or important functions and be performed on live production systems supporting them; the financial entity identifies relevant underlying systems and determines TLPT scope, validated by competent authorities.",
+   "conditional_on": "Entity is required to perform TLPT",
+   "evidence": {
+    "provision": "Art. 26(2)",
+    "quote": "Each threat-led penetration test shall cover several or all critical or important functions of a financial entity"
+   }
+  },
+  {
+   "type": "management_system",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Where ICT third-party providers are in TLPT scope, the financial entity must take measures and safeguards to ensure their participation and retain full responsibility for compliance; it must also apply effective risk management controls to mitigate testing risks.",
+   "conditional_on": "ICT third-party service providers included in TLPT scope",
+   "evidence": {
+    "provision": "Art. 26(3)",
+    "quote": "the financial entity shall take the necessary measures and safeguards to ensure the participation of such ICT third-party service providers in the TLPT"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Financial entities must apply effective risk management controls to mitigate risks of impact on data, damage to assets and disruption to critical functions from TLPT, with cooperation of providers and testers.",
+   "conditional_on": "Entity is required to perform TLPT",
+   "evidence": {
+    "provision": "Art. 26(5)",
+    "quote": "apply effective risk management controls to mitigate the risks of any potential impact on data"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "After TLPT, the financial entity and external testers must provide the designated authority a summary of findings, remediation plans and documentation; the entity must notify the competent authority of the attestation, findings summary and remediation plans (Art. 26(6), (7)).",
+   "conditional_on": "Entity is required to perform TLPT",
+   "evidence": {
+    "provision": "Art. 26(6)",
+    "quote": "shall provide to the authority, designated in accordance with paragraph 9 or 10, a summary of the relevant findings, the remediation plans and the documentation"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Financial entities must contract testers for TLPT in accordance with Art. 27; where internal testers are used, they must contract external testers every three tests.",
+   "conditional_on": "Entity is required to perform TLPT; second sentence applies to use of internal testers",
+   "evidence": {
+    "provision": "Art. 26(8)",
+    "quote": "When financial entities use internal testers for the purposes of undertaking TLPT, they shall contract external testers every three tests."
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Competent authorities must identify financial entities required to perform TLPT, based on impact, financial stability and ICT risk profile criteria; significant credit institutions may use only external testers.",
+   "evidence": {
+    "provision": "Art. 26(8)",
+    "quote": "Competent authorities shall identify financial entities that are required to perform TLPT"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "may",
+   "summary": "Member States may designate a single public authority for TLPT matters in the financial sector; absent such designation, a competent authority may delegate TLPT tasks to another national financial authority.",
+   "conditional_on": "Member State or competent authority chooses to designate or delegate",
+   "evidence": {
+    "provision": "Art. 26(9)",
+    "quote": "Member States may designate a single public authority in the financial sector to be responsible for TLPT-related matters"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The ESAs, in agreement with the ECB, must develop joint draft regulatory technical standards in accordance with TIBER-EU on TLPT criteria, internal testers, scope, methodology and cooperation, and submit them to the Commission.",
+   "applies_from": "by 17 July 2024",
+   "evidence": {
+    "provision": "Art. 26(11)",
+    "quote": "The ESAs shall submit those draft regulatory technical standards to the Commission by 17 July 2024."
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Power is delegated to the Commission to supplement the Regulation by adopting the TLPT regulatory technical standards referred to in Art. 26(11).",
+   "evidence": {
+    "provision": "Art. 26(11)",
+    "quote": "Power is delegated to the Commission to supplement this Regulation by adopting the regulatory technical standards referred to in the first subparagraph"
+   }
+  },
+  {
+   "type": "eligibility_condition",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Financial entities may use only testers for TLPT that have the highest suitability and reputability, specific threat intelligence and red team expertise, accreditation or codes of conduct, independent assurance, and professional indemnity insurance.",
+   "conditional_on": "Carrying out TLPT",
+   "evidence": {
+    "provision": "Art. 27(1)",
+    "quote": "Financial entities shall only use testers for the carrying out of TLPT, that:"
+   }
+  },
+  {
+   "type": "verification_gatekeeping",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "When using internal testers, financial entities must ensure additional conditions: competent authority approval, verified sufficient dedicated resources and avoidance of conflicts of interest, and an external threat intelligence provider.",
+   "conditional_on": "Entity uses internal testers for TLPT",
+   "evidence": {
+    "provision": "Art. 27(2)",
+    "quote": "When using internal testers, financial entities shall ensure that, in addition to the requirements in paragraph 1, the following conditions are met"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Contracts with external testers must require sound management of TLPT results and data processing that does not create risks to the financial entity.",
+   "evidence": {
+    "provision": "Art. 27(3)",
+    "quote": "Financial entities shall ensure that contracts concluded with external testers require a sound management of the TLPT results"
+   }
+  },
+  {
+   "type": "management_system",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Financial entities remain fully responsible for compliance with all DORA obligations when using ICT third-party services; they must manage ICT third-party risk within the ICT risk management framework on a proportionate basis.",
+   "evidence": {
+    "provision": "Art. 28(1)(a)",
+    "quote": "remain fully responsible for compliance with, and the discharge of, all obligations under this Regulation"
+   }
+  },
+  {
+   "type": "management_system",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Non-microenterprises must adopt and regularly review a strategy on ICT third-party risk, including a policy on ICT services supporting critical or important functions, reviewed by the management body.",
+   "conditional_on": "Entity is not a microenterprise and not an Art. 16(1) entity",
+   "evidence": {
+    "provision": "Art. 28(2)",
+    "quote": "shall adopt, and regularly review, a strategy on ICT third-party risk"
+   }
+  },
+  {
+   "type": "record_keeping",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Financial entities must maintain and update at entity, sub-consolidated and consolidated levels a register of information on all ICT third-party contractual arrangements, distinguishing those supporting critical or important functions, and provide it to the competent authority on request.",
+   "evidence": {
+    "provision": "Art. 28(3)",
+    "quote": "shall maintain and update at entity level, and at sub-consolidated and consolidated levels, a register of information"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Financial entities must report at least yearly to competent authorities on new ICT third-party arrangements, provider categories, contract types and services, and inform them in a timely manner of planned arrangements for critical or important functions.",
+   "evidence": {
+    "provision": "Art. 28(3)",
+    "quote": "Financial entities shall report at least yearly to the competent authorities on the number of new arrangements on the use of ICT services"
+   }
+  },
+  {
+   "type": "risk_assessment",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Before entering a contractual arrangement on ICT services, financial entities must assess whether it supports critical or important functions, supervisory conditions, relevant risks including concentration risk, provider due diligence and conflicts of interest.",
+   "conditional_on": "Before entering into a contractual arrangement on ICT services",
+   "evidence": {
+    "provision": "Art. 28(4)",
+    "quote": "Before entering into a contractual arrangement on the use of ICT services, financial entities shall:"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Financial entities may only contract with ICT third-party providers that comply with appropriate information security standards, and for critical or important functions must consider the most up-to-date and highest information security standards.",
+   "evidence": {
+    "provision": "Art. 28(5)",
+    "quote": "Financial entities may only enter into contractual arrangements with ICT third-party service providers that comply with appropriate information security standards."
+   }
+  },
+  {
+   "type": "audit",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "In exercising access, inspection and audit rights over ICT third-party providers, financial entities must pre-determine audit frequency and areas on a risk basis, using accepted audit standards, and verify auditor skills for high technical complexity.",
+   "evidence": {
+    "provision": "Art. 28(6)",
+    "quote": "financial entities shall, on the basis of a risk-based approach, pre-determine the frequency of audits and inspections"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Financial entities must ensure that ICT third-party contractual arrangements may be terminated where there is significant breach, circumstances altering performance, evidenced ICT risk weaknesses, or where the competent authority can no longer supervise effectively.",
+   "conditional_on": "Specified termination circumstances arise",
+   "evidence": {
+    "provision": "Art. 28(7)",
+    "quote": "Financial entities shall ensure that contractual arrangements on the use of ICT services may be terminated in any of the following circumstances"
+   }
+  },
+  {
+   "type": "management_system",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "For ICT services supporting critical or important functions, financial entities must put in place exit strategies, alternative solutions and transition plans, tested and reviewed periodically, plus contingency measures.",
+   "conditional_on": "ICT services support critical or important functions",
+   "evidence": {
+    "provision": "Art. 28(8)",
+    "quote": "For ICT services supporting critical or important functions, financial entities shall put in place exit strategies."
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The ESAs, through the Joint Committee, must develop draft implementing technical standards establishing standard templates for the register of information, and submit them to the Commission.",
+   "applies_from": "17 January 2024",
+   "evidence": {
+    "provision": "Art. 28(9)",
+    "quote": "The ESAs shall, through the Joint Committee, develop draft implementing technical standards to establish the standard templates for the purposes of the register of information"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The ESAs, through the Joint Committee, must develop draft regulatory technical standards further specifying the content of the ICT third-party policy for critical or important functions, and submit them to the Commission by 17 January 2024.",
+   "applies_from": "17 January 2024",
+   "evidence": {
+    "provision": "Art. 28(10)",
+    "quote": "The ESAs shall, through the Joint Committee, develop draft regulatory technical standards to further specify the detailed content of the policy"
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Power is conferred on the Commission to adopt the implementing technical standards on the register of information (Art. 28(9)) and delegated to adopt the regulatory technical standards on the ICT third-party policy (Art. 28(10)).",
+   "evidence": {
+    "provision": "Art. 28(10)",
+    "quote": "Power is delegated to the Commission to supplement this Regulation by adopting the regulatory technical standards referred to in the first subparagraph"
+   }
+  },
+  {
+   "type": "risk_assessment",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "When assessing ICT concentration risk, financial entities must also consider whether a planned contract for critical or important ICT services would involve a non-substitutable provider or multiple contracts with the same or closely connected providers, and weigh alternatives.",
+   "applies_from": "From 17 January 2025 (Art. 64)",
+   "conditional_on": "Envisaged contractual arrangement for ICT services supporting critical or important functions",
+   "evidence": {
+    "provision": "Art. 29(1)",
+    "quote": "financial entities shall also take into account whether the envisaged conclusion of a contractual arrangement"
+   }
+  },
+  {
+   "type": "risk_assessment",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Financial entities must weigh risks of subcontracting, including third-country subcontractors, consider insolvency law and data recovery constraints, and for third-country providers consider Union data protection rules and enforcement; also assess whether subcontracting chains could impair monitoring and supervision.",
+   "applies_from": "From 17 January 2025 (Art. 64)",
+   "conditional_on": "Contractual arrangements on ICT services supporting critical or important functions, including subcontracting or third-country providers",
+   "evidence": {
+    "provision": "Art. 29(2)",
+    "quote": "financial entities shall weigh benefits and risks that may arise in connection with such subcontracting"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "financial_institution",
+   "also_addressees": [
+    "cloud_service_provider"
+   ],
+   "modality": "shall",
+   "summary": "Rights and obligations of the financial entity and the ICT third-party service provider must be clearly allocated and set out in writing in one document including service level agreements.",
+   "applies_from": "From 17 January 2025 (Art. 64)",
+   "evidence": {
+    "provision": "Art. 30(1)",
+    "quote": "The rights and obligations of the financial entity and of the ICT third-party service provider shall be clearly allocated and set out in writing."
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "financial_institution",
+   "also_addressees": [
+    "cloud_service_provider"
+   ],
+   "modality": "shall",
+   "summary": "ICT contracts must include at least listed elements, including service descriptions and subcontracting conditions, locations of service and data processing, data availability and access and return on insolvency or termination, incident assistance, cooperation with authorities, termination rights, and participation in security awareness and resilience training.",
+   "applies_from": "From 17 January 2025 (Art. 64)",
+   "evidence": {
+    "provision": "Art. 30(2)",
+    "quote": "The contractual arrangements on the use of ICT services shall include at least the following elements:"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "financial_institution",
+   "also_addressees": [
+    "cloud_service_provider"
+   ],
+   "modality": "shall",
+   "summary": "Contracts for ICT services supporting critical or important functions must include, in addition to Art. 30(2) elements, full quantitative service level targets, notice and reporting duties of the provider, business contingency and security requirements, participation in TLPT, exit strategies with transition periods, and contract terms on monitoring, access and audit rights.",
+   "applies_from": "From 17 January 2025 (Art. 64)",
+   "conditional_on": "ICT services supporting critical or important functions",
+   "evidence": {
+    "provision": "Art. 30(3)",
+    "quote": "The contractual arrangements on the use of ICT services supporting critical or important functions shall include, in addition to the elements referred to in paragraph 2, at least the following:"
+   }
+  },
+  {
+   "type": "audit",
+   "addressee": "financial_institution",
+   "also_addressees": [
+    "cloud_service_provider"
+   ],
+   "modality": "shall",
+   "summary": "Contracts for critical or important ICT services must provide the financial entity, or an appointed third party, and the competent authority with unrestricted rights of access, inspection and audit, including taking copies on-site, and define scope, procedures and frequency of inspections and audits.",
+   "applies_from": "From 17 January 2025 (Art. 64)",
+   "conditional_on": "ICT services supporting critical or important functions; the microenterprise derogation in Art. 30(3) allows delegation of audit rights to an independent third party",
+   "evidence": {
+    "provision": "Art. 30(3)(e)(i)",
+    "quote": "unrestricted rights of access, inspection and audit by the financial entity, or an appointed third party, and by the competent authority"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "cloud_service_provider",
+   "modality": "shall",
+   "summary": "Contracts for critical or important ICT services must require the provider to implement and test business contingency plans and to have ICT security measures, tools and policies appropriate to the financial entity's regulatory framework.",
+   "applies_from": "From 17 January 2025 (Art. 64)",
+   "conditional_on": "ICT services supporting critical or important functions",
+   "evidence": {
+    "provision": "Art. 30(3)(c)",
+    "quote": "requirements for the ICT third-party service provider to implement and test business contingency plans"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "When negotiating contractual arrangements, financial entities and ICT third-party providers must consider using standard contractual clauses developed by public authorities for specific services.",
+   "applies_from": "From 17 January 2025 (Art. 64)",
+   "evidence": {
+    "provision": "Art. 30(4)",
+    "quote": "shall consider the use of standard contractual clauses developed by public authorities"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The ESAs, through the Joint Committee, must develop draft regulatory technical standards specifying elements a financial entity must determine and assess when subcontracting ICT services supporting critical or important functions, and submit them to the Commission by 17 July 2024.",
+   "applies_from": "From 17 January 2025 (Art. 64)",
+   "evidence": {
+    "provision": "Art. 30(5)",
+    "quote": "The ESAs shall, through the Joint Committee, develop draft regulatory technical standards to specify further the elements"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The ESAs, through the Joint Committee and upon recommendation from the Oversight Forum, must designate ICT third-party service providers that are critical for financial entities after assessment against the Art. 31(2) criteria, and appoint a Lead Overseer for each.",
+   "applies_from": "From 17 January 2025 (Art. 64)",
+   "conditional_on": "Designation may not be used until the Commission adopts the delegated act under Art. 31(6)",
+   "evidence": {
+    "provision": "Art. 31(1)",
+    "quote": "designate the ICT third-party service providers that are critical for financial entities"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The ESAs, through the Joint Committee, must establish, publish and update yearly the list of critical ICT third-party service providers at Union level.",
+   "applies_from": "From 17 January 2025 (Art. 64)",
+   "evidence": {
+    "provision": "Art. 31(9)",
+    "quote": "shall establish, publish and update yearly the list of critical ICT third-party service providers at Union level."
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Competent authorities must transmit yearly and in aggregated form the Art. 28(3) reports to the Oversight Forum.",
+   "applies_from": "From 17 January 2025 (Art. 64)",
+   "evidence": {
+    "provision": "Art. 31(10)",
+    "quote": "competent authorities shall, on a yearly and aggregated basis, transmit the reports referred to in Article 28(3)"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The ESAs must notify the designated provider of its designation and starting date of oversight; the Lead Overseer must notify the provider of the assessment outcome and consider any reasoned statement.",
+   "applies_from": "From 17 January 2025 (Art. 64)",
+   "conditional_on": "Designation under Art. 31(1)(a)",
+   "evidence": {
+    "provision": "Art. 31(5)",
+    "quote": "The Lead Overseer shall notify the ICT third-party service provider of the outcome of the assessment"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "cloud_service_provider",
+   "modality": "shall",
+   "summary": "A designated critical ICT third-party service provider must notify the financial entities to which it provides services of its designation as critical.",
+   "applies_from": "From 17 January 2025 (Art. 64)",
+   "conditional_on": "Designation as critical under Art. 31(1)(a)",
+   "evidence": {
+    "provision": "Art. 31(5)",
+    "quote": "The ICT third-party service provider shall notify the financial entities to which they provide services of their designation as critical."
+   }
+  },
+  {
+   "type": "appointment_of_representative",
+   "addressee": "cloud_service_provider",
+   "modality": "shall",
+   "summary": "Critical ICT third-party service providers in a group must designate one legal person as coordination point for communication with the Lead Overseer.",
+   "applies_from": "From 17 January 2025 (Art. 64)",
+   "conditional_on": "Provider belongs to a group",
+   "evidence": {
+    "provision": "Art. 31(4)",
+    "quote": "Critical ICT third-party service providers which are part of a group shall designate one legal person as a coordination point"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "financial_institution",
+   "modality": "shall_not",
+   "summary": "Financial entities may use a third-country ICT provider designated as critical only if that provider has established a subsidiary in the Union within 12 months of designation.",
+   "applies_from": "12 months following the designation (Art. 31(12))",
+   "conditional_on": "Third-country ICT third-party service provider designated as critical",
+   "evidence": {
+    "provision": "Art. 31(12)",
+    "quote": "Financial entities shall only make use of the services of an ICT third-party service provider established in a third country"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "cloud_service_provider",
+   "modality": "shall",
+   "summary": "A critical third-country ICT provider that has established an EU subsidiary must notify the Lead Overseer of any changes to the management structure of that subsidiary.",
+   "applies_from": "From 17 January 2025 (Art. 64)",
+   "conditional_on": "Subsidiary established in the Union under Art. 31(12)",
+   "evidence": {
+    "provision": "Art. 31(13)",
+    "quote": "shall notify the Lead Overseer of any changes to the structure of the management of the subsidiary established in the Union."
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Joint Committee must establish the Oversight Forum as a sub-committee; the Oversight Forum must regularly discuss ICT risk developments, assess oversight results yearly, submit benchmarks, and the ESAs must issue cooperation guidelines by 17 July 2024 and submit a yearly report on the Section.",
+   "applies_from": "From 17 January 2025 (Art. 64)",
+   "evidence": {
+    "provision": "Art. 32(1)",
+    "quote": "shall establish the Oversight Forum as a sub-committee"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The ESAs must issue guidelines on cooperation and the allocation of oversight tasks by 17 July 2024 and submit a yearly report on the application of the oversight Section to Parliament, Council and Commission.",
+   "applies_from": "17 July 2024 for guidelines (Art. 32(7)); yearly thereafter for report (Art. 32(9))",
+   "evidence": {
+    "provision": "Art. 32(7)",
+    "quote": "the ESAs shall by 17 July 2024 issue, for the purposes of this Section, guidelines on the cooperation between the ESAs and the competent authorities"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Lead Overseer must assess whether each critical ICT third-party service provider has comprehensive, sound and effective ICT risk management rules, procedures and arrangements, covering the areas listed in Art. 33(3).",
+   "applies_from": "From 17 January 2025 (Art. 64)",
+   "conditional_on": "Critical ICT third-party service provider under its oversight",
+   "evidence": {
+    "provision": "Art. 33(2)",
+    "quote": "the Lead Overseer shall assess whether each critical ICT third-party service provider has in place comprehensive, sound and effective rules"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "also_addressees": [
+    "cloud_service_provider"
+   ],
+   "modality": "shall",
+   "summary": "The Lead Overseer must adopt a reasoned individual annual oversight plan for each critical provider, communicate a draft to the provider beforehand, and communicate the adopted plan yearly to the provider; the provider may submit a reasoned statement within 15 calendar days.",
+   "applies_from": "From 17 January 2025 (Art. 64)",
+   "conditional_on": "Assessment under Art. 33(2) completed",
+   "evidence": {
+    "provision": "Art. 33(4)",
+    "quote": "the Lead Overseer shall adopt a clear, detailed and reasoned individual oversight plan"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "may",
+   "summary": "Competent authorities may take measures concerning critical ICT third-party service providers only in agreement with the Lead Overseer, once annual oversight plans are adopted and notified.",
+   "applies_from": "From 17 January 2025 (Art. 64)",
+   "conditional_on": "Annual oversight plans adopted and notified under Art. 33(4)",
+   "evidence": {
+    "provision": "Art. 33(5)",
+    "quote": "competent authorities may take measures concerning such critical ICT third-party service providers only in agreement with the Lead Overseer."
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The three Lead Overseers must set up a Joint Oversight Network (JON) to coordinate oversight, and draw up a common oversight protocol, revised periodically.",
+   "applies_from": "From 17 January 2025 (Art. 64)",
+   "evidence": {
+    "provision": "Art. 34(1)",
+    "quote": "the three Lead Overseers appointed in accordance with Article 31(1), point (b), shall set up a JON"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Lead Overseer must ensure regular coordination within the JON and seek consistent oversight approaches, take account of Directive (EU) 2022/2555, and seek to minimise disruption to services to entities outside the Regulation's scope.",
+   "applies_from": "From 17 January 2025 (Art. 64)",
+   "conditional_on": "Exercise of Art. 35 powers",
+   "evidence": {
+    "provision": "Art. 35(2)(a)",
+    "quote": "ensure regular coordination within the JON"
+   }
+  },
+  {
+   "type": "cooperation_with_authority",
+   "addressee": "cloud_service_provider",
+   "modality": "shall",
+   "summary": "Critical ICT third-party service providers must cooperate in good faith with the Lead Overseer and assist it in carrying out its tasks.",
+   "applies_from": "From 17 January 2025 (Art. 64)",
+   "conditional_on": "Critical ICT third-party service provider designated under Art. 31",
+   "evidence": {
+    "provision": "Art. 35(5)",
+    "quote": "Critical ICT third-party service providers shall cooperate in good faith with the Lead Overseer"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Lead Overseer must inform the JON of the outcome of its information-request and investigation powers and transmit reports to the JON and the competent authorities of the financial entities using the provider's services.",
+   "applies_from": "From 17 January 2025 (Art. 64)",
+   "evidence": {
+    "provision": "Art. 35(4)",
+    "quote": "The Lead Overseer shall inform the JON of the outcome of the exercise of the powers referred to in paragraph 1, points (a) and (b)."
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Lead Overseer must disclose to the public every periodic penalty payment imposed, unless disclosure would seriously jeopardise financial markets or cause disproportionate damage.",
+   "applies_from": "From 17 January 2025 (Art. 64)",
+   "conditional_on": "Periodic penalty payment imposed under Art. 35(6); exception for serious jeopardy or disproportionate damage",
+   "evidence": {
+    "provision": "Art. 35(10)",
+    "quote": "The Lead Overseer shall disclose to the public every periodic penalty payment that has been imposed"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "EBA, ESMA or EIOPA must conclude administrative cooperation arrangements with relevant third-country authorities to enable inspections outside the Union, and these must specify listed elements.",
+   "applies_from": "From 17 January 2025 (Art. 64)",
+   "conditional_on": "Oversight outside the Union under Art. 36(1)",
+   "evidence": {
+    "provision": "Art. 36(2)",
+    "quote": "EBA, ESMA or EIOPA shall conclude administrative cooperation arrangements with the relevant authority of the third country"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Where the Lead Overseer cannot conduct oversight outside the Union, it must exercise its Art. 35 powers on the basis of available facts and document and explain the consequences of its inability.",
+   "applies_from": "From 17 January 2025 (Art. 64)",
+   "conditional_on": "Lead Overseer unable to conduct oversight activities outside the Union",
+   "evidence": {
+    "provision": "Art. 36(3)(b)",
+    "quote": "document and explain any consequence of its inability to conduct the envisaged oversight activities"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "When sending a simple request for information, the Lead Overseer must cite Art. 37 as legal basis, state the purpose, specify the information, set a time limit and inform the provider that a voluntary reply must not be incorrect or misleading. A request by decision must contain the same elements plus the penalty payment reference and appeal rights, and a copy must go to competent authorities and the JON.",
+   "applies_from": "From 17 January 2025 (Art. 64)",
+   "conditional_on": "Request under Art. 37(1)",
+   "evidence": {
+    "provision": "Art. 37(2)",
+    "quote": "When sending a simple request for information under paragraph 1, the Lead Overseer shall:"
+   }
+  },
+  {
+   "type": "cooperation_with_authority",
+   "addressee": "cloud_service_provider",
+   "modality": "shall",
+   "summary": "Representatives of critical ICT third-party service providers must supply requested information and remain fully responsible if it is incomplete, incorrect or misleading.",
+   "applies_from": "From 17 January 2025 (Art. 64)",
+   "conditional_on": "Request under Art. 37(1)",
+   "evidence": {
+    "provision": "Art. 37(4)",
+    "quote": "The representatives of the critical ICT third-party service providers shall supply the information requested."
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Officials conducting investigations must exercise powers only on production of a written authorisation; the Lead Overseer must inform competent authorities of financial entities in good time before an investigation.",
+   "applies_from": "From 17 January 2025 (Art. 64)",
+   "conditional_on": "General investigation under Art. 38(1)",
+   "evidence": {
+    "provision": "Art. 38(3)",
+    "quote": "shall exercise their powers upon production of a written authorisation specifying the subject matter and purpose of the investigation"
+   }
+  },
+  {
+   "type": "cooperation_with_authority",
+   "addressee": "cloud_service_provider",
+   "modality": "shall",
+   "summary": "Representatives of critical ICT third-party service providers are required to submit to investigations based on a decision of the Lead Overseer.",
+   "applies_from": "From 17 January 2025 (Art. 64)",
+   "conditional_on": "Investigation ordered by decision of the Lead Overseer",
+   "evidence": {
+    "provision": "Art. 38(4)",
+    "quote": "The representatives of the critical ICT third-party service providers are required to submit to the investigations on the basis of a decision of the Lead Overseer."
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Lead Overseer must inform competent authorities of the financial entities using the provider's services in good time before an inspection, and before any planned on-site inspection must give reasonable notice to the provider, unless an emergency or the inspection would be rendered ineffective.",
+   "applies_from": "From 17 January 2025 (Art. 64)",
+   "conditional_on": "On-site or off-site inspection under Art. 39(1)",
+   "evidence": {
+    "provision": "Art. 39(5)",
+    "quote": "Before any planned on-site inspection, the Lead Overseer shall give reasonable notice to the critical ICT third-party service providers"
+   }
+  },
+  {
+   "type": "cooperation_with_authority",
+   "addressee": "cloud_service_provider",
+   "modality": "shall",
+   "summary": "Critical ICT third-party service providers must submit to on-site inspections ordered by decision of the Lead Overseer.",
+   "applies_from": "From 17 January 2025 (Art. 64)",
+   "conditional_on": "Inspection ordered by decision of the Lead Overseer",
+   "evidence": {
+    "provision": "Art. 39(6)",
+    "quote": "The critical ICT third-party service provider shall submit to on-site inspections ordered by decision of the Lead Overseer."
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "After consulting the Oversight Forum, the Lead Overseer must adopt recommendations to the critical provider within 3 months of completing an investigation or inspection, and immediately communicate them to the provider and the relevant competent authorities.",
+   "applies_from": "Within 3 months of completion of an investigation or inspection (Art. 40(3))",
+   "conditional_on": "Completion of an investigation or inspection",
+   "evidence": {
+    "provision": "Art. 40(3)",
+    "quote": "Within 3 months of the completion of an investigation or inspection, the Lead Overseer, after consulting the Oversight Forum, shall adopt recommendations"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The ESAs must develop draft regulatory technical standards on information for designation applications, provider reporting templates, joint examination team composition, and competent authorities' assessment of measures, and submit them to the Commission by 17 July 2024.",
+   "applies_from": "17 July 2024 (Art. 41(2))",
+   "evidence": {
+    "provision": "Art. 41(1)",
+    "quote": "The ESAs shall, through the Joint Committee, develop draft regulatory technical standards to specify"
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Commission is empowered to supplement the Regulation by adopting the regulatory technical standards referred to in Art. 41(1).",
+   "applies_from": "From 17 January 2025 (Art. 64)",
+   "evidence": {
+    "provision": "Art. 41(2)",
+    "quote": "Power is delegated to the Commission to supplement this Regulation by adopting the regulatory technical standards referred to in paragraph 1"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "cloud_service_provider",
+   "modality": "shall",
+   "summary": "Within 60 calendar days of receiving the Lead Overseer's recommendations, critical ICT third-party service providers must either notify their intention to follow them or provide a reasoned explanation for not doing so.",
+   "applies_from": "Within 60 calendar days of receipt of recommendations (Art. 42(1))",
+   "conditional_on": "Recommendations issued under Art. 35(1)(d)",
+   "evidence": {
+    "provision": "Art. 42(1)",
+    "quote": "critical ICT third-party service providers shall either notify the Lead Overseer of their intention to follow the recommendations or provide a reasoned explanation"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Lead Overseer must publicly disclose where a critical provider fails to notify its intention or its explanation is insufficient, including the provider's identity and the type and nature of non-compliance, limited to what is relevant and proportionate.",
+   "applies_from": "From 17 January 2025 (Art. 64)",
+   "conditional_on": "Provider fails to notify under Art. 42(1) or explanation not deemed sufficient",
+   "evidence": {
+    "provision": "Art. 42(2)",
+    "quote": "The Lead Overseer shall publicly disclose where a critical ICT third-party service provider fails to notify the Lead Overseer"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Competent authorities must inform relevant financial entities of the risks identified in recommendations addressed to critical providers.",
+   "applies_from": "From 17 January 2025 (Art. 64)",
+   "evidence": {
+    "provision": "Art. 42(3)",
+    "quote": "Competent authorities shall inform the relevant financial entities of the risks identified in the recommendations"
+   }
+  },
+  {
+   "type": "risk_assessment",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "When managing ICT third-party risk, financial entities must take into account the risks identified in the recommendations addressed to critical providers.",
+   "applies_from": "From 17 January 2025 (Art. 64)",
+   "conditional_on": "Recommendations addressed to critical ICT third-party service providers",
+   "evidence": {
+    "provision": "Art. 42(3)",
+    "quote": "financial entities shall take into account the risks referred to in the first subparagraph."
+   }
+  },
+  {
+   "type": "cooperation_with_authority",
+   "addressee": "cloud_service_provider",
+   "modality": "shall",
+   "summary": "Critical ICT third-party service providers affected by suspension decisions must fully cooperate with the impacted financial entities, including in suspending or terminating contractual arrangements.",
+   "applies_from": "From 17 January 2025 (Art. 64)",
+   "conditional_on": "Decision under Art. 42(6) requiring suspension or termination",
+   "evidence": {
+    "provision": "Art. 42(9)",
+    "quote": "The critical ICT third-party service providers affected by the decisions provided for in paragraph 6 shall fully cooperate with the financial entities impacted"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "also_addressees": [
+    "cloud_service_provider"
+   ],
+   "modality": "shall",
+   "summary": "The Lead Overseer must charge critical ICT third-party service providers fees fully covering its oversight costs under the delegated act, proportionate to turnover.",
+   "applies_from": "From 17 January 2025 (Art. 64)",
+   "conditional_on": "Delegated act under Art. 43(2)",
+   "evidence": {
+    "provision": "Art. 43(1)",
+    "quote": "The Lead Overseer shall, in accordance with the delegated act referred to in paragraph 2 of this Article, charge critical ICT third-party service providers fees"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The ESAs must submit every five years a joint confidential report to Parliament, Council and Commission summarising findings from discussions with third-country authorities.",
+   "applies_from": "Every five years",
+   "evidence": {
+    "provision": "Art. 44(2)",
+    "quote": "The ESAs shall, through the Joint Committee, submit every five years a joint confidential report"
+   }
+  },
+  {
+   "type": "registration_notification",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Financial entities must notify competent authorities of their participation in information-sharing arrangements on cyber threats, and of cessation of membership once it takes effect.",
+   "applies_from": "From 17 January 2025 (Art. 64)",
+   "conditional_on": "Participation in information-sharing arrangements under Art. 45(1)",
+   "evidence": {
+    "provision": "Art. 45(3)",
+    "quote": "Financial entities shall notify competent authorities of their participation in the information-sharing arrangements"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Compliance with the Regulation is to be ensured by the competent authorities listed in points (a) to (q) of Art. 46, each for the financial entities under its respective legal act.",
+   "applies_from": "From 17 January 2025 (Art. 64)",
+   "evidence": {
+    "provision": "Art. 46",
+    "quote": "compliance with this Regulation shall be ensured by the following competent authorities"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Competent authorities and the Lead Overseer must exchange all relevant information on critical ICT third-party service providers in a timely manner.",
+   "applies_from": "From 17 January 2025 (Art. 64)",
+   "evidence": {
+    "provision": "Art. 48(2)",
+    "quote": "Competent authorities and the Lead Overseer shall, in a timely manner, mutually exchange all relevant information"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Competent authorities, ESAs and the ECB must cooperate closely, exchange information, coordinate supervision to identify and remedy breaches, and provide cross-jurisdictional assessments in case of disagreement.",
+   "applies_from": "From 17 January 2025 (Art. 64)",
+   "evidence": {
+    "provision": "Art. 49(2)",
+    "quote": "Competent authorities, ESAs and the ECB shall cooperate closely with each other and exchange information"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States must lay down rules establishing administrative penalties and remedial measures for breaches of the Regulation, which must be effective, proportionate and dissuasive.",
+   "applies_from": "From 17 January 2025 (Art. 64)",
+   "conditional_on": "Without prejudice to criminal penalties under Art. 52",
+   "evidence": {
+    "provision": "Art. 50(3)",
+    "quote": "Member States shall lay down rules establishing appropriate administrative penalties and remedial measures for breaches of this Regulation"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States must ensure that decisions imposing administrative penalties or remedial measures are properly reasoned and subject to a right of appeal.",
+   "applies_from": "From 17 January 2025 (Art. 64)",
+   "conditional_on": "Decisions under Art. 50(2)(c)",
+   "evidence": {
+    "provision": "Art. 50(6)",
+    "quote": "Member States shall ensure that any decision imposing administrative penalties or remedial measures set out in paragraph 2, point (c), is properly reasoned and is subject to a right of appeal."
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "When determining the type and level of a penalty or remedial measure, competent authorities must take into account intent or negligence and listed factors, including materiality, gravity, duration, financial strength and previous breaches.",
+   "applies_from": "From 17 January 2025 (Art. 64)",
+   "conditional_on": "Determining a penalty or remedial measure under Art. 50",
+   "evidence": {
+    "provision": "Art. 51(2)",
+    "quote": "Competent authorities, when determining the type and level of an administrative penalty or remedial measure to be imposed under Article 50, shall take into account"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Where Member States choose criminal penalties, they must ensure measures so that competent authorities can liaise with judicial and criminal justice authorities and share information with other competent authorities and EBA, ESMA or EIOPA.",
+   "applies_from": "From 17 January 2025 (Art. 64)",
+   "conditional_on": "Member States have chosen criminal penalties",
+   "evidence": {
+    "provision": "Art. 52(2)",
+    "quote": "they shall ensure that appropriate measures are in place"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States must notify the Commission, ESMA, the EBA and EIOPA of laws and provisions implementing the Chapter, including criminal law provisions, and of later amendments.",
+   "applies_from": "By 17 January 2025",
+   "evidence": {
+    "provision": "Art. 53",
+    "quote": "Member States shall notify the laws, regulations and administrative provisions implementing this Chapter"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Competent authorities must publish on their websites, without undue delay, decisions imposing administrative penalties against which there is no appeal, including type and nature of breach, identity of persons responsible and penalties imposed, subject to case-by-case exceptions in Art. 54(3).",
+   "applies_from": "From 17 January 2025 (Art. 64)",
+   "conditional_on": "No appeal pending after notification of the addressee",
+   "evidence": {
+    "provision": "Art. 54(1)",
+    "quote": "Competent authorities shall publish on their official websites, without undue delay, any decision imposing an administrative penalty"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall_not",
+   "summary": "Confidential information received, exchanged or transmitted under the Regulation is subject to professional secrecy and may not be disclosed to any other person or authority except under Union or national law.",
+   "applies_from": "From 17 January 2025 (Art. 64)",
+   "conditional_on": "Confidential information under the Regulation",
+   "evidence": {
+    "provision": "Art. 55(3)",
+    "quote": "shall not be disclosed to any other person or authority except by virtue of provisions laid down by Union or national law"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The ESAs and competent authorities may process personal data only where necessary for their duties under the Regulation, in accordance with Regulation (EU) 2016/679 or 2018/1725.",
+   "applies_from": "From 17 January 2025 (Art. 64)",
+   "evidence": {
+    "provision": "Art. 56(1)",
+    "quote": "The ESAs and the competent authorities shall be allowed to process personal data only where necessary"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Personal data processed by the ESAs and competent authorities must be retained until the supervisory duties are discharged and for a maximum of 15 years, except where court proceedings require longer retention, unless other sectoral acts provide otherwise.",
+   "applies_from": "From 17 January 2025 (Art. 64)",
+   "conditional_on": "Absent other sectoral acts or pending court proceedings",
+   "evidence": {
+    "provision": "Art. 56(2)",
+    "quote": "shall be retained until the discharge of the applicable supervisory duties and in any case for a maximum period of 15 years"
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Power to adopt delegated acts under Art. 31(6) and 43(2) is conferred on the Commission for five years from 17 January 2024, tacitly extendable; before adopting such acts the Commission must consult Member State experts.",
+   "applies_from": "From 17 January 2024 for five years",
+   "evidence": {
+    "provision": "Art. 57(2)",
+    "quote": "The power to adopt delegated acts referred to in Articles 31(6) and 43(2) shall be conferred on the Commission for a period of five years from 17 January 2024."
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "By 17 January 2028, the Commission must review the Regulation after consulting the ESAs and ESRB, covering designation criteria, voluntary notification of cyber threats, the Art. 31(12) regime and Lead Overseer powers, financial entities under Art. 2(3)(e), and the JON, and submit a report, with a legislative proposal where appropriate.",
+   "applies_from": "By 17 January 2028",
+   "evidence": {
+    "provision": "Art. 58(1)",
+    "quote": "By 17 January 2028, the Commission shall, after consulting the ESAs and the ESRB, as appropriate, carry out a review"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Commission must submit to Parliament and Council no later than 17 July 2023 a report on cyber resilience of payment systems as part of the review of Directive (EU) 2015/2366, and may propose extending oversight to payment system operators.",
+   "applies_from": "No later than 17 July 2023",
+   "conditional_on": "Review of Directive (EU) 2015/2366",
+   "evidence": {
+    "provision": "Art. 58(2)",
+    "quote": "the Commission shall submit, as part of the review of Directive (EU) 2015/2366, a report to the European Parliament and the Council no later than 17 July 2023."
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "By 17 January 2026, the Commission must review, after consulting the ESAs and the Committee of European Auditing Oversight Bodies, the appropriateness of strengthened digital operational resilience requirements for statutory auditors and audit firms, and submit a report, with a legislative proposal where appropriate.",
+   "applies_from": "By 17 January 2026",
+   "evidence": {
+    "provision": "Art. 58(3)",
+    "quote": "By 17 January 2026, the Commission shall, after consulting the ESAs and the Committee of European Auditing Oversight Bodies, carry out a review"
+   }
+  },
+  {
+   "type": "management_system",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Amends Annex I, Section A, point 4 of Regulation (EC) No 1060/2009: a credit rating agency must have sound administrative and accounting procedures, internal control mechanisms, risk assessment procedures, and control arrangements for managing ICT systems in accordance with the Regulation.",
+   "applies_from": "From 17 January 2025 (Art. 64)",
+   "evidence": {
+    "provision": "Art. 59(1) (amending Regulation (EC) No 1060/2009, Annex I, Section A, point 4)",
+    "quote": "A credit rating agency shall have sound administrative and accounting procedures"
+   }
+  },
+  {
+   "type": "management_system",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Amends Regulation (EU) No 648/2012 (Art. 26(3)): a CCP must maintain an organisational structure ensuring continuity and must employ ICT systems managed in accordance with the Regulation; amends Art. 34(1) and Art. 79 on business continuity and ICT risk management for CCPs and trade repositories.",
+   "applies_from": "From 17 January 2025 (Art. 64)",
+   "evidence": {
+    "provision": "Art. 60(1)(a) (amending Regulation (EU) No 648/2012, Art. 26(3))",
+    "quote": "A CCP shall maintain and operate an organisational structure that ensures continuity and orderly functioning"
+   }
+  },
+  {
+   "type": "management_system",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Amends Regulation (EU) No 909/2014 (Art. 45): a CSD must identify operational risk and establish, implement and maintain an adequate business continuity policy and disaster recovery plan including ICT response and recovery plans in accordance with the Regulation.",
+   "applies_from": "From 17 January 2025 (Art. 64)",
+   "evidence": {
+    "provision": "Art. 61(3) (amending Regulation (EU) No 909/2014, Art. 45(3))",
+    "quote": "a CSD shall establish, implement and maintain an adequate business continuity policy and disaster recovery plan"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Amends Regulation (EU) No 600/2014 (Arts. 27g-27i): an APA, CTP and ARM must comply with the requirements on security of network and information systems set out in the Regulation.",
+   "applies_from": "From 17 January 2025 (Art. 64)",
+   "evidence": {
+    "provision": "Art. 62(1)(a) (amending Regulation (EU) No 600/2014, Art. 27g(4))",
+    "quote": "An APA shall comply with the requirements concerning the security of network and information systems"
+   }
+  },
+  {
+   "type": "management_system",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Adds Art. 6(6) to Regulation (EU) 2016/1011: an administrator of critical benchmarks must have sound administrative and accounting procedures, internal control mechanisms, risk assessment procedures, and control arrangements for managing ICT systems in accordance with the Regulation.",
+   "applies_from": "From 17 January 2025 (Art. 64)",
+   "conditional_on": "Administrator of critical benchmarks",
+   "evidence": {
+    "provision": "Art. 63 (adding Regulation (EU) 2016/1011, Art. 6(6))",
+    "quote": "For critical benchmarks, an administrator shall have sound administrative and accounting procedures"
+   }
+  }
+ ],
+ "enforcement": [
+  {
+   "sanction_type": "administrative_fine",
+   "authority": "Lead Overseer (ESAs, through the Joint Committee)",
+   "triggered_by": "Whole or partial non-compliance with measures required under Article 35(1), points (a), (b) and (c), after at least 30 calendar days from notification of those measures; imposed daily until compliance, for no more than six months",
+   "max_penalty_text": "up to 1 % of the average daily worldwide turnover of the critical ICT third-party service provider in the preceding business year",
+   "penalty_formula": "Up to 1% of average daily worldwide turnover in the preceding business year, calculated from the date stated in the decision; imposed on a daily basis until compliance",
+   "penalty_reference": "Art. 35(6)-(9); cross-referenced in Art. 37(3)(e), Art. 38(3), Art. 38(4), Art. 39(2) and Art. 39(6)",
+   "cure_period": "Decision may be taken only after at least 30 calendar days from notification of the measures; daily payments cease on compliance",
+   "evidence": {
+    "provision": "Art. 35(8)",
+    "quote": "up to 1 % of the average daily worldwide turnover of the critical ICT third-party service provider in the preceding business year"
+   }
+  },
+  {
+   "sanction_type": "service_suspension",
+   "authority": "Competent authorities",
+   "triggered_by": "Risks identified in recommendations addressed to a critical ICT third-party service provider not being addressed; applied as a measure of last resort after notification and, if appropriate, consultation under Art. 42(4) and (5)",
+   "max_penalty_text": "No monetary maximum stated; temporary suspension of the use or deployment of the provider's service, in part or completely, until the identified risks are addressed",
+   "penalty_reference": "Art. 42(6)-(8)",
+   "cure_period": "Competent authorities shall grant financial entities the necessary period of time to adjust contractual arrangements before the suspension takes effect",
+   "evidence": {
+    "provision": "Art. 42(6)",
+    "quote": "take a decision requiring financial entities to temporarily suspend, either in part or completely, the use or deployment of a service provided by the critical ICT third-party service provider"
+   }
+  },
+  {
+   "sanction_type": "administrative_fine",
+   "authority": "Member States (competent authorities apply the penalties and remedial measures)",
+   "triggered_by": "Breaches of this Regulation; also applicable to members of the management body and other responsible individuals under Art. 50(5)",
+   "max_penalty_text": "Not stated in this Regulation; Member States lay down administrative penalties and remedial measures that are effective, proportionate and dissuasive",
+   "penalty_reference": "Art. 50(3), Art. 50(4)(c), Art. 50(5); factors listed in Art. 51(2); appeal right under Art. 50(6)",
+   "cure_period": "Not stated",
+   "evidence": {
+    "provision": "Art. 50(3)",
+    "quote": "Member States shall lay down rules establishing appropriate administrative penalties and remedial measures for breaches of this Regulation"
+   }
+  },
+  {
+   "sanction_type": "injunction_order",
+   "authority": "Competent authorities",
+   "triggered_by": "Conduct in breach of this Regulation",
+   "max_penalty_text": "Not stated in this Regulation; order to cease conduct and desist from repetition",
+   "penalty_reference": "Art. 50(4)(a)-(b)",
+   "cure_period": "Not stated",
+   "evidence": {
+    "provision": "Art. 50(4)(a)",
+    "quote": "issue an order requiring the natural or legal person to cease conduct that is in breach of this Regulation"
+   }
+  },
+  {
+   "sanction_type": "other",
+   "authority": "Competent authorities",
+   "triggered_by": "Breach of this Regulation",
+   "max_penalty_text": "Public notice identifying the natural or legal person and the nature of the breach; no monetary amount stated",
+   "penalty_reference": "Art. 50(4)(e)",
+   "cure_period": "Not stated",
+   "evidence": {
+    "provision": "Art. 50(4)(e)",
+    "quote": "issue public notices, including public statements indicating the identity of the natural or legal person and the nature of the breach"
+   }
+  },
+  {
+   "sanction_type": "criminal_penalty",
+   "authority": "Member States",
+   "triggered_by": "Breaches of this Regulation that Member States choose to make subject to criminal penalties under national law",
+   "max_penalty_text": "Not stated in this Regulation; Member States may decide whether to lay down criminal penalties",
+   "penalty_reference": "Art. 52(1)-(2)",
+   "cure_period": "Not stated",
+   "evidence": {
+    "provision": "Art. 52(2)",
+    "quote": "Where Member States have chosen to lay down criminal penalties for breaches of this Regulation"
+   }
+  },
+  {
+   "sanction_type": "other",
+   "authority": "Competent authorities",
+   "triggered_by": "Decision imposing an administrative penalty against which there is no appeal after the addressee has been notified",
+   "max_penalty_text": "Publication on official websites of the type and nature of the breach, the identity of the persons responsible and the penalties imposed; publication period not to exceed five years",
+   "penalty_reference": "Art. 54(1)-(6)",
+   "cure_period": "Not stated",
+   "evidence": {
+    "provision": "Art. 54(1)",
+    "quote": "shall publish on their official websites, without undue delay, any decision imposing an administrative penalty against which there is no appeal"
+   }
+  }
+ ],
+ "section_status": {}
+}

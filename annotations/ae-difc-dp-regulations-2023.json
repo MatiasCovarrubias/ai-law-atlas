@@ -1,0 +1,115 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "ae-difc-dp-regulations-2023",
+ "tier": "B",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "light, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-interim-20261014"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "AGORA plaintext (ETO, CC BY-NC 4.0), local cache",
+  "url": "https://www.dataguidance.com/sites/default/files/data_protection_regualtions_final.pdf",
+  "retrieved": "2025-01-21",
+  "version": "1.33.0 (2026-09-16)",
+  "language": "en",
+  "extent": "partial",
+  "note": "AGORA record covers part of an act: Dubai International Financial Centre Data Protection Regulations, Regulation 10 (\"Personal data processed through autono"
+ },
+ "classification": {
+  "domains": [
+   "ai_general",
+   "data_protection",
+   "algorithmic_decision_systems"
+  ],
+  "primary_domain": "ai_general",
+  "mechanisms": [
+   "mandate_obligation",
+   "prohibition_ban",
+   "disclosure_transparency"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "ai_deployer",
+   "ai_provider",
+   "data_controller",
+   "data_processor"
+  ],
+  "affected_roles": [
+   "consumers_users"
+  ],
+  "decision_margins": [
+   "firm:entry_market_access",
+   "firm:product_design_release",
+   "firm:compliance_process",
+   "household:data_privacy",
+   "household:information"
+  ],
+  "territorial_scope": {
+   "types": [
+    "subnational"
+   ],
+   "description": "Issued as DIFC regulations under the Law and administered by the Commissioner; the Regulation 10 text states no explicit territorial limit.",
+   "evidence": {
+    "provision": "Regulation 10.2.2(b)(v)",
+    "quote": "Dubai Financial Services Authority, the Financial Services Regulatory Authority"
+   }
+  },
+  "agora_harms": [
+   "Discrimination",
+   "Violation of civil or human rights, including privacy"
+  ],
+  "agora_risk_factors": [
+   "Bias",
+   "Interpretability and explainability",
+   "Privacy",
+   "Security",
+   "Transparency"
+  ],
+  "agora_strategies": [
+   "Disclosure",
+   "Disclosure: In deployment",
+   "Evaluation: Impact assessment",
+   "Evaluation: Conformity assessment"
+  ]
+ },
+ "summary": {
+  "short": "DIFC Data Protection Regulation 10 governs AI systems that process personal data. It requires deployers and operators to give notice and provide assessments, bars commercial use unless designed to meet listed principles, and conditions high-risk processing on audit requirements and an Autonomous Systems Officer.",
+  "long": "The document is Regulation 10 (Processing of Personal Data through Autonomous and Semi-Autonomous Systems) of the DIFC Data Protection Regulations as amended in September 2023. Regulation 10.1.1 defines System, Deployer, Operator and Provider. Under 10.2.1, Deployers and Operators processing personal data for AI systems must adhere to the general principles in Article 9 of the Law. Under 10.2.2, where an application or website service uses such systems, Deployers or Operators must give notice on first use, describe the system's purposes, outputs and safeguards, and provide on request evidence of audit or certification compliance, human-intervention algorithms, risk and impact assessments, and a register of use cases and recipients. Under 10.3.1, systems affecting data subjects must be designed to be ethical, fair, transparent, secure and accountable. Under 10.3.2, no person may make such a system available for commercial use unless it processes personal data only for human-defined or human-approved purposes and meets 10.3.1 and any Commissioner audit requirements. Under 10.3.3, high-risk processing is permitted only if the Commissioner has set audit requirements, the system complies with them, it processes only for human-defined or human-approved purposes, and an Autonomous Systems Officer has been appointed. Under 10.3.4, Deployers are deemed controllers and Operators deemed processors. Under 10.3.5, data subjects may complain under Parts 9 and 10 of the Law. The document contains only Regulation 10. It states no penalties and no commencement date, and the Law it cross-refers to is not included."
+ },
+ "relations": [
+  {
+   "relation": "cross_references",
+   "target_text": "the Law (the DIFC data protection law, referred to as 'the Law' throughout Regulation 10; not named in this excerpt)",
+   "note": "Regulation 10 relies on the Law for core terms and duties, including Article 9 (processing principles), Articles 10 and 11 (lawful bases), Articles 17 and 18 (DPO), Articles 29 and 32 to 40 (data subject rights), Parts 9 and 10 (complaints) and Schedule 1 (high risk processing). The legal basis of the Regulations is not stated in this excerpt.",
+   "evidence": {
+    "provision": "10.2.1",
+    "quote": "the general requirements and principles for Processing Personal Data set out in Article 9 of the Law"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Guidelines for Financial Institutions adopting Enabling Technologies, published by the Central Bank of the UAE",
+   "note": "Named, with the words 'which may include', as an example of codes, certifications or principles on which a System may be designed or developed; the Deployer or Operator must describe these in the notice required under 10.2.2(b)(v).",
+   "evidence": {
+    "provision": "10.2.2(b)(v)",
+    "quote": "the Guidelines for Financial Institutions adopting Enabling Technologies published by the Central Bank of the UAE"
+   }
+  }
+ ],
+ "notes": "Excerpt only: Regulation 10 (sections 10.1 to 10.3) of the DIFC Data Protection Regulations. The Law is referenced throughout but neither named nor included. Drafting issues: 10.3.3 refers to 'the Defined Term, sub-clause (a) in Schedule 1, Article 3 of the Law' (apparent gap in wording), and 10.3.4 contains a stray footnote marker ('Law:12'). Several requirements depend on audit and certification rules the Commissioner may set later (10.2.2(c), 10.3.2(b), 10.3.3(a)); no dates are given. References to Regulation 9 and other Regulation numbers are internal and not coded as relations. Only the Law and the Central Bank guidelines are coded; the OECD, UNESCO, NIST and Dubai Digital Authority frameworks named in 10.2.2(b)(v) are not.",
+ "events": [],
+ "section_status": {
+  "events": {
+   "status": "not_found",
+   "note": "The provided text (Regulation 10 only: Sections 10.1 to 10.3.5) contains no adoption, signature, publication, entry-into-force, application, phase-in, deadline, sunset, expiry or repeal dates. The only dates in the registry metadata (as amended September 2023) are not in the document and are not coded. No relative periods running from this instrument's own events appear. The text does refer to the Law and to the Commissioner setting audit and certification requirements 'from time to time', which are undated delegations and are not events."
+  },
+  "thresholds": {
+   "status": "not_found",
+   "note": "The provided text (Regulation 10, Autonomous and Semi-Autonomous Systems) contains no numeric cutoff that changes legal treatment. Its numbers are cross-references to articles, schedules and regulations (e.g., Articles 9, 10, 11, 17, 18, 29(1)(h)(ix), 32 to 40 and Regulation 9), not thresholds. The text attributes no numeric scope, eligibility, obligation tier or penalty tier to any provision. Thresholds may exist in other parts of the full instrument, which were not provided."
+  }
+ },
+ "thresholds": []
+}

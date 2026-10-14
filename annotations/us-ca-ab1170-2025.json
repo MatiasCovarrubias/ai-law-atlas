@@ -1,0 +1,858 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "us-ca-ab1170-2025",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "AGORA plaintext (ETO, CC BY-NC 4.0), local cache",
+  "url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB1170",
+  "retrieved": "2026-04-21",
+  "version": "1.33.0 (2026-09-16)",
+  "language": "en",
+  "extent": "partial",
+  "note": "AGORA sections of the act only: California AB 1170, SEC. 27-28 (CCPA Amendment 2025); California AB-1170, SEC. 46 (AI in Education Working Group 2025); California AB-1170, SEC. 35 (Generative AI Training Data Documentation 2025)"
+ },
+ "classification": {
+  "domains": [
+   "data_protection",
+   "algorithmic_decision_systems",
+   "generative_ai",
+   "ip_training_data",
+   "ai_sectoral"
+  ],
+  "primary_domain": "data_protection",
+  "mechanisms": [
+   "mandate_obligation",
+   "disclosure_transparency",
+   "institution_setup",
+   "standard_setting"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "enterprise",
+   "data_processor",
+   "ai_developer",
+   "government_agency",
+   "regulator"
+  ],
+  "affected_roles": [
+   "consumers_users",
+   "minors",
+   "workers"
+  ],
+  "decision_margins": [
+   "firm:compliance_process",
+   "firm:product_design_release",
+   "household:data_privacy",
+   "household:information"
+  ],
+  "territorial_scope": {
+   "types": [
+    "subnational",
+    "extraterritorial"
+   ],
+   "description": "Applies within California. Civil Code 3111 reaches developers of generative AI systems made publicly available to Californians, and the CCPA definitions apply to businesses doing business in California.",
+   "evidence": {
+    "provision": "Sec. 35 (Civil Code 3111)",
+    "quote": "is made publicly available to Californians for use"
+   }
+  },
+  "agora_applications": [
+   "Education"
+  ],
+  "agora_harms": [
+   "Violation of civil or human rights, including privacy"
+  ],
+  "agora_risk_factors": [
+   "Privacy",
+   "Transparency",
+   "Security: Cybersecurity"
+  ],
+  "agora_strategies": [
+   "Disclosure: About inputs",
+   "Evaluation: Impact assessment",
+   "Government study or report",
+   "New institution"
+  ]
+ },
+ "summary": {
+  "short": "Amends the California Consumer Privacy Act's definitions and rulemaking directions, including on automated decisionmaking, and requires developers of generative AI systems made available to Californians to post training-data documentation by 1 January 2026. Also convenes an education AI working group reporting by 1 January 2027.",
+  "long": "Sec. 27 and Sec. 28 amend the California Consumer Privacy Act (Civil Code 1798.140 and 1798.185). They revise definitions, including profiling, personal information (which covers inferences and AI systems capable of outputting personal information) and sensitive personal information. They direct the California Privacy Protection Agency to adopt regulations on access and opt-out rights for automated decisionmaking, annual cybersecurity audits and risk assessments for processing presenting significant risk, and opt-out preference signals. Civil and administrative enforcement of the amended provisions may not commence before 1 July 2023. Sec. 46 (Education Code 33328.5) requires the Superintendent to convene an artificial intelligence working group that develops guidance by 1 January 2026, a model policy by 1 July 2026 and a report by 1 January 2027; the section is repealed on 1 January 2031. Sec. 35 (Civil Code 3111) requires developers of generative AI systems released on or after 1 January 2022 and made publicly available to Californians to post training-data documentation on their websites by 1 January 2026 and before each later release or substantial modification. The documentation covers data sources, copyright status, personal and aggregate consumer information, cleaning and synthetic data use. Exemptions cover systems whose sole purpose is security and integrity, aircraft operation in national airspace, and federal national-security or defense uses."
+ },
+ "relations": [
+  {
+   "relation": "amends",
+   "target_text": "Civil Code §§ 1798.140, 1798.185 and 3111",
+   "note": "Coded once for the Civil Code. SEC. 27 amends §1798.140 and SEC. 28 amends §1798.185; both restate the amended text in full. SEC. 35 amends §3111.",
+   "evidence": {
+    "provision": "SEC. 27",
+    "quote": "Section 1798.140 of the Civil Code is amended to read:"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Education Code § 33328.5",
+   "note": "Section 33328.5 creates the Superintendent's AI working group and its guidance, model policy and reporting duties (SEC. 46).",
+   "evidence": {
+    "provision": "SEC. 46",
+    "quote": "Section 33328.5 of the Education Code is amended to read:"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Family Educational Rights and Privacy Act (20 U.S.C. Sec. 1232g; 34 C.F.R. Part 99)",
+   "note": "Civil Code §1798.140(v)(1)(J) defines education information by reference to FERPA.",
+   "evidence": {
+    "provision": "SEC. 27, Civil Code 1798.140(v)(1)(J)",
+    "quote": "as defined in the Family Educational Rights and Privacy Act (20 U.S.C. Sec. 1232g; 34 C.F.R. Part 99)"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Title 45 of the Code of Federal Regulations, Section 164.514",
+   "note": "Civil Code §1798.185(a)(2) excludes these deidentification standards from the AG's authority to update the definition of deidentified where the information was previously protected health information.",
+   "evidence": {
+    "provision": "SEC. 28, Civil Code 1798.185(a)(2)",
+    "quote": "deidentification standards set forth in Section 164.514 of Title 45 of the Code of Federal Regulations"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Government Code §§ 9795 and 11123; Bagley-Keene Open Meeting Act (Government Code Art. 9 from § 11120)",
+   "note": "The working group is subject to the Bagley-Keene Act (33328.5(f)). Public meetings may be held by teleconference under §11123 (33328.5(d)(1)(B)(ii)). The report is made in compliance with §9795 (33328.5(d)(6)).",
+   "evidence": {
+    "provision": "SEC. 46, Education Code 33328.5(d)(6)",
+    "quote": "in compliance with Section 9795 of the Government Code"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Unfair and Deceptive Practices Act (Business and Professions Code, Chapter 5 from Section 17200)",
+   "note": "Limits retroactive or material privacy-policy changes after a merger, acquisition or similar transfer. The same wording appears in §1798.140(ah)(2)(C).",
+   "evidence": {
+    "provision": "SEC. 27, Civil Code 1798.140(ad)(2)(C)",
+    "quote": "in a manner that would violate the Unfair and Deceptive Practices Act"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "California Code of Regulations, Title 18, Section 17014",
+   "note": "The definition of consumer incorporates this regulation as it read on September 1, 2017.",
+   "evidence": {
+    "provision": "SEC. 27, Civil Code 1798.140(i)",
+    "quote": "as defined in Section 17014 of Title 18 of the California Code of Regulations"
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "California Privacy Protection Agency",
+   "role": "designated",
+   "function": "Exercises the Attorney General's regulation-making authority under §1798.185 from the later of 1 July 2021 or six months after notice to the AG; receives risk assessments under §1798.185(a)(14)(B).",
+   "evidence": {
+    "provision": "SEC. 28, Civil Code 1798.185(d)",
+    "quote": "shall be exercised by the California Privacy Protection Agency"
+   }
+  },
+  {
+   "name": "Attorney General (California)",
+   "role": "designated",
+   "function": "Adopts regulations under §1798.185(a), a power later exercised by the CPPA under (d). May not bring an enforcement action until six months after the final regulations are published.",
+   "evidence": {
+    "provision": "SEC. 28, Civil Code 1798.185(c)",
+    "quote": "The Attorney General shall not bring an enforcement action under this title until six months after the publication of the final regulations"
+   }
+  },
+  {
+   "name": "Insurance Commissioner",
+   "role": "designated",
+   "function": "Has jurisdiction over insurance rates and pricing (§1798.185(a)(20)).",
+   "evidence": {
+    "provision": "SEC. 28, Civil Code 1798.185(a)(20)",
+    "quote": "the Insurance Commissioner shall have jurisdiction over insurance rates and pricing."
+   }
+  },
+  {
+   "name": "Superintendent (as referred to in Education Code 33328.5)",
+   "role": "designated",
+   "function": "Convenes the AI in education working group, which develops guidance, a model policy and a report.",
+   "evidence": {
+    "provision": "SEC. 46, Education Code 33328.5(b)",
+    "quote": "The Superintendent shall convene a working group for all of the following purposes:"
+   }
+  },
+  {
+   "name": "AI in education working group (convened by the Superintendent)",
+   "role": "designated",
+   "function": "Assesses AI use in education, develops guidance by 1 January 2026 and a model policy by 1 July 2026, and reports by 1 January 2027. Dissolved on submission of the report.",
+   "evidence": {
+    "provision": "SEC. 46, Education Code 33328.5(g)",
+    "quote": "The working group shall be dissolved upon submission of the report required by paragraph (6) of subdivision (d) to the Legislature."
+   }
+  },
+  {
+   "name": "department (not further identified in the text)",
+   "role": "designated",
+   "function": "Posts on its internet website the guidance and the model policy developed by the working group.",
+   "evidence": {
+    "provision": "SEC. 46, Education Code 33328.5(e)",
+    "quote": "The department shall post on its internet website the guidance developed pursuant to paragraph (3) of subdivision (d)"
+   }
+  }
+ ],
+ "notes": "Excerpt only: SEC. 27, 28, 35 and 46 are provided, and this pass fills relations, entities and notes only. SEC. 27 and 28 restate Civil Code text in full, so their operative changes are not coded here. Internal timing: Civil Code 1798.185(a) sets 1 July 2020 for AG regulations, but (d) applies notwithstanding (a), with a 1 July 2022 timeline and CPPA rulemaking. 'Generative artificial intelligence' in Civil Code 3111 is not defined in the provided text. Education Code 33328.5(e) refers to 'the department' without naming it. Section 33328.5 sunsets on 1 January 2031 (subd. (h)). Empty target_instrument_id, lei and ticker values mean the target is not in the registry or the identifier is not verified.",
+ "events": [
+  {
+   "event": "deadline",
+   "date": "2022-07-01",
+   "date_type": "absolute",
+   "date_text": "the timeline for adopting final regulations required by the act adding this subdivision shall be July 1, 2022",
+   "applies_to": "adoption of final regulations required by the act adding Civ. Code 1798.185(d)",
+   "evidence": {
+    "provision": "SEC. 28 (Civ. Code 1798.185(d))",
+    "quote": "the timeline for adopting final regulations required by the act adding this subdivision shall be July 1, 2022."
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "Beginning the later of July 1, 2021, or six months after the agency provides notice to the Attorney General that it is prepared to begin rulemaking under this title",
+   "depends_on": "agency provides notice to the Attorney General that it is prepared to begin rulemaking under this title",
+   "applies_to": "exercise of the Attorney General's rulemaking authority under Civ. Code 1798.185 by the California Privacy Protection Agency",
+   "evidence": {
+    "provision": "SEC. 28 (Civ. Code 1798.185(d))",
+    "quote": "Beginning the later of July 1, 2021, or six months after the agency provides notice to the Attorney General that it is prepared to begin rulemaking under this title"
+   }
+  },
+  {
+   "event": "application",
+   "date": "2023-07-01",
+   "date_type": "absolute",
+   "date_text": "civil and administrative enforcement of the provisions of law added or amended by this act shall not commence until July 1, 2023, and shall only apply to violations occurring on or after that date",
+   "applies_to": "civil and administrative enforcement of the provisions of law added or amended by this act, for violations occurring on or after 2023-07-01",
+   "evidence": {
+    "provision": "SEC. 28 (Civ. Code 1798.185(d))",
+    "quote": "civil and administrative enforcement of the provisions of law added or amended by this act shall not commence until July 1, 2023"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2026-01-01",
+   "date_type": "absolute",
+   "date_text": "On or before January 1, 2026, develop guidance for local educational agencies and charter schools on the safe use of artificial intelligence in education",
+   "applies_to": "Superintendent's working group guidance for local educational agencies and charter schools on safe use of artificial intelligence in education",
+   "evidence": {
+    "provision": "SEC. 46 (Educ. Code 33328.5(d)(3))",
+    "quote": "On or before January 1, 2026, develop guidance for local educational agencies and charter schools on the safe use of artificial intelligence in education"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2026-07-01",
+   "date_type": "absolute",
+   "date_text": "On or before July 1, 2026, develop a model policy for local educational agencies and charter schools",
+   "applies_to": "Superintendent's working group model policy for local educational agencies and charter schools on safe and effective use of artificial intelligence",
+   "evidence": {
+    "provision": "SEC. 46 (Educ. Code 33328.5(d)(4))",
+    "quote": "On or before July 1, 2026, develop a model policy for local educational agencies and charter schools"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2027-01-01",
+   "date_type": "absolute",
+   "date_text": "On or before January 1, 2027, submit a report to the appropriate policy and fiscal committees of the Legislature",
+   "applies_to": "working group report to the policy and fiscal committees of the Legislature presenting the assessment",
+   "evidence": {
+    "provision": "SEC. 46 (Educ. Code 33328.5(d)(6))",
+    "quote": "On or before January 1, 2027, submit a report to the appropriate policy and fiscal committees of the Legislature"
+   }
+  },
+  {
+   "event": "expiry",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "The working group shall be dissolved upon submission of the report required by paragraph (6) of subdivision (d) to the Legislature.",
+   "depends_on": "submission of the report required by paragraph (6) of subdivision (d) to the Legislature",
+   "applies_to": "Superintendent's AI in education working group",
+   "evidence": {
+    "provision": "SEC. 46 (Educ. Code 33328.5(g))",
+    "quote": "The working group shall be dissolved upon submission of the report required by paragraph (6) of subdivision (d) to the Legislature."
+   }
+  },
+  {
+   "event": "sunset",
+   "date": "2031-01-01",
+   "date_type": "absolute",
+   "date_text": "This section shall remain in effect only until January 1, 2031, and as of that date is repealed.",
+   "applies_to": "Educ. Code 33328.5 (artificial intelligence working group and guidance provisions)",
+   "evidence": {
+    "provision": "SEC. 46 (Educ. Code 33328.5(h))",
+    "quote": "This section shall remain in effect only until January 1, 2031, and as of that date is repealed."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2026-01-01",
+   "date_type": "absolute",
+   "date_text": "On or before January 1, 2026, and before each time thereafter that a generative artificial intelligence system or service",
+   "applies_to": "developers of generative AI systems or services released on or after January 1, 2022, and of substantial modifications to them, post training-data documentation on their websites",
+   "evidence": {
+    "provision": "SEC. 35 (Civ. Code 3111)",
+    "quote": "On or before January 1, 2026, and before each time thereafter that a generative artificial intelligence system or service"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "before each time thereafter that a generative artificial intelligence system or service, or a substantial modification to a generative artificial intelligence system or service, released on or after January 1, 2022, is made publicly available to Californians",
+   "applies_to": "developers of generative AI systems or services, and of substantial modifications, before each public availability to Californians",
+   "evidence": {
+    "provision": "SEC. 35 (Civ. Code 3111)",
+    "quote": "before each time thereafter that a generative artificial intelligence system or service, or a substantial modification to a generative artificial intelligence system or service, released on or after January 1, 2022, is made publicly available to Californians"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "revenue_annual",
+   "variable_text": "annual gross revenues",
+   "operator": ">",
+   "value": 25000000,
+   "value_text": "As of January 1 of the calendar year, had annual gross revenues in excess of twenty-five million dollars ($25,000,000) in the preceding calendar year, as adjusted pursuant to subdivision (d) of Section 1798.199.95",
+   "unit": "USD",
+   "currency": "USD",
+   "indexed": true,
+   "measurement": "Annual gross revenues of the preceding calendar year, as of January 1 of the calendar year",
+   "level": "entity",
+   "trigger": "scope_definition",
+   "consequence": "Entity meets one of the alternative thresholds for the definition of business (with (d)(1)(B) and (d)(1)(C)).",
+   "conditions": "Also collects consumers' personal information or on whose behalf it is collected, determines purposes and means of processing, and does business in California.",
+   "evidence": {
+    "provision": "Sec. 27 (Civil Code § 1798.140(d)(1)(A))",
+    "quote": "As of January 1 of the calendar year, had annual gross revenues in excess of twenty-five million dollars ($25,000,000) in the preceding calendar year"
+   }
+  },
+  {
+   "variable": "data_subjects_count",
+   "variable_text": "consumers or households whose personal information is bought, sold or shared annually",
+   "operator": ">=",
+   "value": 100000,
+   "value_text": "100,000 or more consumers or households",
+   "unit": "consumers or households",
+   "measurement": "Alone or in combination, annually bought, sold or shared",
+   "level": "entity",
+   "trigger": "scope_definition",
+   "consequence": "Entity meets one of the alternative thresholds for the definition of business.",
+   "conditions": "Alternative to the revenue and revenue-share thresholds in (d)(1).",
+   "evidence": {
+    "provision": "Sec. 27 (Civil Code § 1798.140(d)(1)(B))",
+    "quote": "Alone or in combination, annually buys, sells, or shares the personal information of 100,000 or more consumers or households."
+   }
+  },
+  {
+   "variable": "share_of_financials",
+   "variable_text": "share of annual revenues derived from selling or sharing consumers' personal information",
+   "operator": ">=",
+   "value": 50,
+   "value_text": "50 percent or more of its annual revenues from selling or sharing consumers' personal information",
+   "unit": "percent",
+   "measurement": "Share of annual revenues from selling or sharing personal information",
+   "level": "entity",
+   "trigger": "scope_definition",
+   "consequence": "Entity meets one of the alternative thresholds for the definition of business.",
+   "conditions": "Alternative to the revenue and consumer-count thresholds in (d)(1).",
+   "evidence": {
+    "provision": "Sec. 27 (Civil Code § 1798.140(d)(1)(C))",
+    "quote": "Derives 50 percent or more of its annual revenues from selling or sharing consumers' personal information."
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "ownership or voting power over outstanding voting shares (control of an affiliate)",
+   "operator": ">",
+   "value": 50,
+   "value_text": "more than 50 percent of the outstanding shares of any class of voting security",
+   "unit": "percent",
+   "measurement": "Ownership of, or power to vote, outstanding shares of any class of voting security",
+   "level": "group",
+   "trigger": "scope_definition",
+   "consequence": "Controlled or controlling entity sharing common branding and consumers' personal information counts as a business.",
+   "conditions": "Shares common branding with the business and with whom the business shares consumers' personal information.",
+   "evidence": {
+    "provision": "Sec. 27 (Civil Code § 1798.140(d)(2))",
+    "quote": "ownership of, or the power to vote, more than 50 percent of the outstanding shares of any class of voting security of a business"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "interest held by each business in a joint venture or partnership",
+   "operator": ">=",
+   "value": 40,
+   "value_text": "each business has at least a 40 percent interest",
+   "unit": "percent",
+   "measurement": "Interest of each business composing the joint venture or partnership",
+   "level": "group",
+   "trigger": "scope_definition",
+   "consequence": "Joint venture or partnership and each composing business are separately considered a single business.",
+   "conditions": "Composed of businesses in which each business has at least the stated interest.",
+   "evidence": {
+    "provision": "Sec. 27 (Civil Code § 1798.140(d)(3))",
+    "quote": "in which each business has at least a 40 percent interest"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "radius of geographic area used to locate a consumer from device data",
+   "operator": "<=",
+   "value": 1850,
+   "value_text": "equal to or less than the area of a circle with a radius of 1,850 feet",
+   "unit": "feet",
+   "measurement": "Area in which data derived from a device locates a consumer",
+   "level": "person",
+   "trigger": "scope_definition",
+   "consequence": "Such data is precise geolocation, which is listed as sensitive personal information.",
+   "conditions": "Data derived from a device and used or intended to be used to locate a consumer; subject to exceptions prescribed by regulations.",
+   "evidence": {
+    "provision": "Sec. 27 (Civil Code § 1798.140(w))",
+    "quote": "equal to or less than the area of a circle with a radius of 1,850 feet"
+   }
+  },
+  {
+   "variable": "age",
+   "variable_text": "age of child in custody of a parent or guardian (family definition)",
+   "operator": "<",
+   "value": 18,
+   "value_text": "any children under 18 years of age over which the parent or guardian has custody",
+   "unit": "years",
+   "measurement": "Age of child under parent's or guardian's custody",
+   "level": "person",
+   "trigger": "scope_definition",
+   "consequence": "Children under 18 in custody are included in 'family' for the definition of unique identifier.",
+   "conditions": "Custodial parent or guardian relationship.",
+   "evidence": {
+    "provision": "Sec. 27 (Civil Code § 1798.140(aj))",
+    "quote": "any children under 18 years of age over which the parent or guardian has custody"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "word limit on consumer's addendum to a rejected request to correct health-related personal information",
+   "operator": "<=",
+   "value": 250,
+   "value_text": "limited to 250 words per alleged incomplete or incorrect item",
+   "unit": "words",
+   "measurement": "Per alleged incomplete or incorrect item",
+   "level": "person",
+   "trigger": "cap",
+   "consequence": "Consumer's written addendum is capped at this length per item.",
+   "conditions": "Business rejects a consumer's request to correct personal information collected and analyzed concerning health.",
+   "evidence": {
+    "provision": "Sec. 28 (Civil Code § 1798.185(a)(7)(D))",
+    "quote": "The addendum shall be limited to 250 words per alleged incomplete or incorrect item"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "release date of a generative artificial intelligence system or service (or substantial modification)",
+   "operator": ">=",
+   "value": 2022,
+   "value_text": "released on or after January 1, 2022",
+   "unit": "calendar year (1 January)",
+   "measurement": "Date a system or service, or a substantial modification, is made publicly available to Californians",
+   "level": "model",
+   "trigger": "scope_definition",
+   "consequence": "Training-data documentation duty applies to the system or service.",
+   "conditions": "Made publicly available to Californians; excluded systems in subdivision (b).",
+   "evidence": {
+    "provision": "Sec. 35 (Civil Code § 3111)",
+    "quote": "released on or after January 1, 2022, is made publicly available to Californians"
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "Business",
+   "defined_in": "Civil Code § 1798.140(d)",
+   "evidence": {
+    "provision": "Sec. 27 (Civil Code § 1798.140(d))",
+    "quote": "\"Business\" means:"
+   }
+  },
+  {
+   "term": "Consumer",
+   "defined_in": "Civil Code § 1798.140(i)",
+   "evidence": {
+    "provision": "Sec. 27 (Civil Code § 1798.140(i))",
+    "quote": "\"Consumer\" means a natural person who is a California resident"
+   }
+  },
+  {
+   "term": "Household",
+   "defined_in": "Civil Code § 1798.140(q)",
+   "evidence": {
+    "provision": "Sec. 27 (Civil Code § 1798.140(q))",
+    "quote": "\"Household\" means a group, however identified, of consumers who cohabitate with one another at the same residential address"
+   }
+  },
+  {
+   "term": "Personal information",
+   "defined_in": "Civil Code § 1798.140(v)",
+   "evidence": {
+    "provision": "Sec. 27 (Civil Code § 1798.140(v)(1))",
+    "quote": "\"Personal information\" means information that identifies, relates to, describes, is reasonably capable of being associated with, or could reasonably be linked, directly or indirectly, with a particular consumer or household."
+   }
+  },
+  {
+   "term": "Publicly available",
+   "defined_in": "Civil Code § 1798.140(v)(2)(B)",
+   "evidence": {
+    "provision": "Sec. 27 (Civil Code § 1798.140(v)(2)(B)(i))",
+    "quote": "For purposes of this paragraph, \"publicly available\" means any of the following:"
+   }
+  },
+  {
+   "term": "Aggregate consumer information",
+   "defined_in": "Civil Code § 1798.140(b)",
+   "evidence": {
+    "provision": "Sec. 27 (Civil Code § 1798.140(b))",
+    "quote": "\"Aggregate consumer information\" means information that relates to a group or category of consumers"
+   }
+  },
+  {
+   "term": "Deidentified",
+   "defined_in": "Civil Code § 1798.140(m)",
+   "evidence": {
+    "provision": "Sec. 27 (Civil Code § 1798.140(m))",
+    "quote": "\"Deidentified\" means information that cannot reasonably be used to infer information about, or otherwise be linked to, a particular consumer"
+   }
+  },
+  {
+   "term": "Biometric information",
+   "defined_in": "Civil Code § 1798.140(c)",
+   "evidence": {
+    "provision": "Sec. 27 (Civil Code § 1798.140(c))",
+    "quote": "\"Biometric information\" means an individual's physiological, biological, or behavioral characteristics"
+   }
+  },
+  {
+   "term": "Sensitive personal information",
+   "defined_in": "Civil Code § 1798.140(ae)",
+   "evidence": {
+    "provision": "Sec. 27 (Civil Code § 1798.140(ae))",
+    "quote": "\"Sensitive personal information\" means:"
+   }
+  },
+  {
+   "term": "Precise geolocation",
+   "defined_in": "Civil Code § 1798.140(w)",
+   "evidence": {
+    "provision": "Sec. 27 (Civil Code § 1798.140(w))",
+    "quote": "\"Precise geolocation\" means any data that is derived from a device"
+   }
+  },
+  {
+   "term": "Profiling",
+   "defined_in": "Civil Code § 1798.140(z)",
+   "evidence": {
+    "provision": "Sec. 27 (Civil Code § 1798.140(z))",
+    "quote": "\"Profiling\" means any form of automated processing of personal information"
+   }
+  },
+  {
+   "term": "Consent",
+   "defined_in": "Civil Code § 1798.140(h)",
+   "evidence": {
+    "provision": "Sec. 27 (Civil Code § 1798.140(h))",
+    "quote": "\"Consent\" means any freely given, specific, informed, and unambiguous indication of the consumer's wishes"
+   }
+  },
+  {
+   "term": "Dark pattern",
+   "defined_in": "Civil Code § 1798.140(l)",
+   "evidence": {
+    "provision": "Sec. 27 (Civil Code § 1798.140(l))",
+    "quote": "\"Dark pattern\" means a user interface designed or manipulated with the substantial effect of subverting or impairing user autonomy, decisionmaking, or choice, as further defined by regulation."
+   }
+  },
+  {
+   "term": "Sell",
+   "defined_in": "Civil Code § 1798.140(ad)",
+   "evidence": {
+    "provision": "Sec. 27 (Civil Code § 1798.140(ad)(1))",
+    "quote": "by the business to a third party for monetary or other valuable consideration"
+   }
+  },
+  {
+   "term": "Share",
+   "defined_in": "Civil Code § 1798.140(ah)",
+   "evidence": {
+    "provision": "Sec. 27 (Civil Code § 1798.140(ah)(1))",
+    "quote": "by the business to a third party for cross-context behavioral advertising"
+   }
+  },
+  {
+   "term": "Cross-context behavioral advertising",
+   "defined_in": "Civil Code § 1798.140(k)",
+   "evidence": {
+    "provision": "Sec. 27 (Civil Code § 1798.140(k))",
+    "quote": "\"Cross-context behavioral advertising\" means the targeting of advertising to a consumer"
+   }
+  },
+  {
+   "term": "Third party",
+   "defined_in": "Civil Code § 1798.140(ai)",
+   "evidence": {
+    "provision": "Sec. 27 (Civil Code § 1798.140(ai))",
+    "quote": "\"Third party\" means a person who is not any of the following:"
+   }
+  },
+  {
+   "term": "Service provider",
+   "defined_in": "Civil Code § 1798.140(ag)",
+   "evidence": {
+    "provision": "Sec. 27 (Civil Code § 1798.140(ag)(1))",
+    "quote": "\"Service provider\" means a person that processes personal information on behalf of a business"
+   }
+  },
+  {
+   "term": "Contractor",
+   "defined_in": "Civil Code § 1798.140(j)",
+   "evidence": {
+    "provision": "Sec. 27 (Civil Code § 1798.140(j)(1))",
+    "quote": "\"Contractor\" means a person to whom the business makes available a consumer's personal information for a business purpose"
+   }
+  },
+  {
+   "term": "Unique identifier",
+   "defined_in": "Civil Code § 1798.140(aj)",
+   "evidence": {
+    "provision": "Sec. 27 (Civil Code § 1798.140(aj))",
+    "quote": "\"Unique identifier\" or \"unique personal identifier\" means a persistent identifier that can be used to recognize a consumer"
+   }
+  },
+  {
+   "term": "Verifiable consumer request",
+   "defined_in": "Civil Code § 1798.140(ak)",
+   "evidence": {
+    "provision": "Sec. 27 (Civil Code § 1798.140(ak))",
+    "quote": "\"Verifiable consumer request\" means a request that is made by a consumer"
+   }
+  },
+  {
+   "term": "Research",
+   "defined_in": "Civil Code § 1798.140(ab)",
+   "evidence": {
+    "provision": "Sec. 27 (Civil Code § 1798.140(ab))",
+    "quote": "\"Research\" means scientific analysis, systematic study, and observation"
+   }
+  },
+  {
+   "term": "Artificial intelligence",
+   "defined_in": "Education Code § 33328.5(a)(1)",
+   "evidence": {
+    "provision": "Sec. 46 (Education Code § 33328.5(a)(1))",
+    "quote": "\"Artificial intelligence\" means an engineered or machine-based system that varies in its level of autonomy"
+   }
+  },
+  {
+   "term": "Local educational agency",
+   "defined_in": "Education Code § 33328.5(a)(3)",
+   "evidence": {
+    "provision": "Sec. 46 (Education Code § 33328.5(a)(3))",
+    "quote": "\"Local educational agency\" means a school district or county office of education."
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "other",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Research using personal information collected for other purposes must be compatible with the original business purpose, subsequently pseudonymized and deidentified, protected by technical safeguards and business processes against reidentification, used solely for compatible research purposes, and subject to additional security controls limiting access.",
+   "conditional_on": "Research with personal information collected from a consumer in the course of interactions with a business' service or device for other purposes",
+   "evidence": {
+    "provision": "Sec. 27 (amending Civil Code 1798.140(ab))",
+    "quote": "Research with personal information that may have been collected from a consumer in the course of the consumer's interactions with a business' service or device for other purposes shall be:"
+   }
+  },
+  {
+   "type": "data_minimization",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Information is deidentified only if the business possessing it takes reasonable measures against association with a consumer or household, publicly commits to keep it deidentified and not reidentify it (except to test deidentification), and contractually obligates recipients to comply with the subdivision.",
+   "conditional_on": "Information treated as deidentified under Civil Code 1798.140(m)",
+   "evidence": {
+    "provision": "Sec. 27 (amending Civil Code 1798.140(m)(1))",
+    "quote": "Takes reasonable measures to ensure that the information cannot be associated with a consumer or household."
+   }
+  },
+  {
+   "type": "data_minimization",
+   "addressee": "data_processor",
+   "modality": "shall_not",
+   "summary": "A service provider's written contract must prohibit it from selling or sharing the personal information, from retaining, using or disclosing it for purposes other than the contracted business purposes, and from retaining, using or disclosing it outside the direct business relationship; the contract must also limit combining data; the contractor contract (1798.140(j)) includes a certification of compliance.",
+   "conditional_on": "Person acting as a service provider or contractor processing personal information on behalf of a business under a written contract",
+   "evidence": {
+    "provision": "Sec. 27 (amending Civil Code 1798.140(ag)(1))",
+    "quote": "provided that the contract prohibits the person from:"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_processor",
+   "modality": "shall",
+   "summary": "A service provider or contractor that engages another person to assist in processing personal information for a business purpose must notify the business and bind that person by a written contract to the same requirements.",
+   "conditional_on": "Service provider or contractor engages another person to assist in processing personal information",
+   "evidence": {
+    "provision": "Sec. 27 (amending Civil Code 1798.140(ag)(2) and 1798.140(j)(2))",
+    "quote": "it shall notify the business of that engagement, and the engagement shall be pursuant to a written contract"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "A third party that acquires personal information in a merger, acquisition, bankruptcy or similar transaction and materially alters use or sharing inconsistently with promises made at collection must give prior notice to the consumer; the same notice duty appears for the sharing definition in 1798.140(ah)(2)(C).",
+   "conditional_on": "Third party materially alters how it uses or shares a consumer's personal information in a manner materially inconsistent with promises made at the time of collection",
+   "evidence": {
+    "provision": "Sec. 27 (amending Civil Code 1798.140(ad)(2)(C))",
+    "quote": "it shall provide prior notice of the new or changed practice to the consumer"
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The California Privacy Protection Agency (after the Attorney General handover) is empowered to issue regulations on many topics, including opt-out rights and procedures, verifiable requests, correction, business purposes, opt-out preference signals (including age-band signals), limits on sensitive personal information, and rules on how businesses respond to opt-out signals (no degraded functionality, fees, or coercion).",
+   "applies_from": "Beginning the later of July 1, 2021, or six months after the agency provides notice to the Attorney General that it is prepared to begin rulemaking; final regulations timeline July 1, 2022 (Sec. 28 subd. (d))",
+   "evidence": {
+    "provision": "Sec. 28 (amending Civil Code 1798.185(a)(15))",
+    "quote": "Issuing regulations governing access and opt-out rights with respect to a business' use of automated decisionmaking technology"
+   }
+  },
+  {
+   "type": "audit",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Under regulations to be issued, businesses whose processing of personal information presents significant risk to consumers' privacy or security must perform a cybersecurity audit annually, with scope and independence set by regulation.",
+   "conditional_on": "Regulations issued under Civil Code 1798.185(a)(14) requiring businesses whose processing presents significant risk",
+   "evidence": {
+    "provision": "Sec. 28 (amending Civil Code 1798.185(a)(14)(A))",
+    "quote": "Perform a cybersecurity audit on an annual basis"
+   }
+  },
+  {
+   "type": "impact_assessment",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Under regulations to be issued, businesses whose processing presents significant risk must submit to the California Privacy Protection Agency on a regular basis a risk assessment of their processing, identifying benefits and risks, including whether sensitive personal information is involved.",
+   "conditional_on": "Regulations issued under Civil Code 1798.185(a)(14) requiring businesses whose processing presents significant risk",
+   "evidence": {
+    "provision": "Sec. 28 (amending Civil Code 1798.185(a)(14)(B))",
+    "quote": "Submit to the California Privacy Protection Agency on a regular basis a risk assessment"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The agency must review Insurance Code provisions on consumer privacy and adopt a regulation applying only the more protective provisions of the Act to insurance companies; the Insurance Commissioner keeps jurisdiction over insurance rates and pricing.",
+   "conditional_on": "Completion of the review under Civil Code 1798.185(a)(20)",
+   "evidence": {
+    "provision": "Sec. 28 (amending Civil Code 1798.185(a)(20))",
+    "quote": "the agency shall adopt a regulation that applies only the more protective provisions of this title to insurance companies"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Superintendent must convene a working group with the composition set out in subdivision (c) (teachers, staff, administrators, faculty, industry representatives, pupils; at least half teachers) which is subject to the Bagley-Keene Open Meeting Act.",
+   "evidence": {
+    "provision": "Sec. 46 (amending Education Code 33328.5(b))",
+    "quote": "The Superintendent shall convene a working group for all of the following purposes:"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The working group must assess the current and future state of AI use in education (including cost, ownership, licensing and source-code access), hold at least three public meetings, detail current uses (human-centered and human replacement AI), and solicit input from educators and pupils, and identify ways for the state to support educators.",
+   "evidence": {
+    "provision": "Sec. 46 (amending Education Code 33328.5(d)(1)(B)(i))",
+    "quote": "Conduct at least three public meetings to incorporate feedback from pupils, families, and relevant stakeholders into the assessment required by subparagraph (A)."
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The working group must develop guidance for local educational agencies and charter schools on the safe use of AI in education, covering academic integrity, acceptable uses, data privacy and security, parent access to pupil AI inputs, and software procurement.",
+   "applies_from": "On or before January 1, 2026",
+   "evidence": {
+    "provision": "Sec. 46 (Education Code 33328.5(d)(3))",
+    "quote": "On or before January 1, 2026, develop guidance for local educational agencies and charter schools on the safe use of artificial intelligence in education"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The working group must develop a model policy for local educational agencies and charter schools on the safe and effective use of AI, covering topics listed in paragraph (4)(A) to (I), including academic integrity, data privacy, procurement, equity and professional development.",
+   "applies_from": "On or before July 1, 2026",
+   "evidence": {
+    "provision": "Sec. 46 (Education Code 33328.5(d)(4))",
+    "quote": "On or before July 1, 2026, develop a model policy for local educational agencies and charter schools"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The department must post on its website the guidance and the model policy developed under paragraphs (3) and (4) of subdivision (d).",
+   "evidence": {
+    "provision": "Sec. 46 (Education Code 33328.5(e))",
+    "quote": "The department shall post on its internet website the guidance developed pursuant to paragraph (3) of subdivision (d)"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The working group must submit a report to the policy and fiscal committees of the Legislature presenting the assessment and any findings or recommendations; the working group is dissolved upon submission.",
+   "applies_from": "On or before January 1, 2027",
+   "evidence": {
+    "provision": "Sec. 46 (Education Code 33328.5(d)(6))",
+    "quote": "On or before January 1, 2027, submit a report to the appropriate policy and fiscal committees of the Legislature"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "ai_developer",
+   "modality": "shall",
+   "summary": "Before each release or substantial modification of a generative AI system or service made publicly available to Californians, the developer must post on its website documentation of training data, covering sources, purpose, data point counts, data types, copyright status, purchase or licence, personal and aggregate consumer information, cleaning, collection period, first-use dates and synthetic data use; exemptions apply for security and integrity, aircraft operation, and national security systems.",
+   "applies_from": "On or before January 1, 2026, and before each time thereafter",
+   "conditional_on": "Generative AI system or service released on or after January 1, 2022, or a substantial modification of one, made publicly available to Californians",
+   "evidence": {
+    "provision": "Sec. 35 (Civil Code 3111)",
+    "quote": "the developer of the system or service shall post on the developer's internet website documentation regarding the data used by the developer to train the generative artificial intelligence system or service"
+   }
+  }
+ ],
+ "section_status": {
+  "enforcement": {
+   "status": "not_found",
+   "note": "The excerpt contains no sanction regime. It amends CCPA definitions (SEC. 27, Civ. Code 1798.140), regulation provisions (SEC. 28, Civ. Code 1798.185) and training-data documentation duties (SEC. 35, Civ. Code 3111), but reproduces no penalty, fine, revocation or injunction provisions. SEC. 28(c)-(d) only defer when enforcement may start ('civil and administrative enforcement ... shall not commence until July 1, 2023') and are not themselves sanctions. The SEC. 46 Education Code section and the SEC. 35 Civil Code section also contain no sanctions."
+  }
+ },
+ "enforcement": []
+}

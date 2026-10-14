@@ -1,0 +1,929 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "sa-pdpl-2021",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (connectors/fetch_texts.py)",
+  "url": "https://sdaia.gov.sa/en/SDAIA/about/Documents/Personal%20Data%20English%20V2-23April2023-%20Reviewed-.pdf",
+  "retrieved": "2026-10-13",
+  "version": "as fetched",
+  "language": "ar",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "data_protection",
+   "data_transfer_localization"
+  ],
+  "primary_domain": "data_protection",
+  "mechanisms": [
+   "mandate_obligation",
+   "prohibition_ban",
+   "disclosure_transparency",
+   "registration_notification",
+   "licensing_permit_certification",
+   "institution_setup"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "data_controller",
+   "data_processor",
+   "government_agency",
+   "regulator",
+   "auditor_assessor"
+  ],
+  "affected_roles": [
+   "consumers_users"
+  ],
+  "decision_margins": [
+   "household:data_privacy",
+   "household:information",
+   "firm:compliance_process",
+   "firm:product_design_release",
+   "firm:entry_market_access"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national",
+    "extraterritorial"
+   ],
+   "description": "Applies to personal data processing in the Kingdom and to processing of data of individuals residing in the Kingdom by parties outside the Kingdom.",
+   "evidence": {
+    "provision": "Art. 2(1)",
+    "quote": "related to individuals residing in the Kingdom by any means from any party outside the Kingdom"
+   }
+  },
+  "agora_harms": [
+   "Violation of civil or human rights, including privacy"
+  ],
+  "agora_incentives": [
+   "Civil liability",
+   "Fines",
+   "Imprisonment"
+  ],
+  "agora_risk_factors": [
+   "Privacy",
+   "Security"
+  ],
+  "agora_strategies": [
+   "Disclosure",
+   "Evaluation: Impact assessment",
+   "Input controls: Data use",
+   "Input controls: Data circulation",
+   "Licensing, registration, and certification"
+  ]
+ },
+ "summary": {
+  "short": "Sets rules for collecting, processing, disclosing and transferring personal data, granting data subjects rights and imposing duties on controllers and processors. Applies in the Kingdom and to residents' data processed abroad. Enforced by a Competent Authority with fines and criminal penalties. Effective 720 days after publication.",
+  "long": "The Law regulates collecting, processing, disclosing, transferring and destroying personal data in the Kingdom and residents' data processed abroad, excluding purely personal or family use. Data subjects gain rights to be informed, access and obtain their data, correct it and request its destruction. Processing generally requires consent, subject to listed exceptions including legitimate interest, which does not cover sensitive data. Controllers must limit purpose and content, provide a privacy policy and notice at collection, restrict disclosure, implement security measures and notify breaches. Health data, credit data, marketing communications and research uses have specific conditions. Controllers must carry out impact assessments for products or services and keep processing records. Cross-border transfers require a listed purpose and an adequacy assessment by the Competent Authority. The Competent Authority supervises compliance, may keep a national register of controllers, and may license accreditation and audit bodies. Intentional disclosure of sensitive data for harm or personal benefit carries up to two years' imprisonment and/or a three-million-riyal fine; other violations carry warnings or fines up to five million riyals. Courts may order confiscation and publication of judgments, and individuals may claim compensation. The Law takes effect 720 days after publication."
+ },
+ "relations": [
+  {
+   "relation": "cross_references",
+   "target_text": "Credit Information Law",
+   "note": "Art. 24 sets Regulations controls for Credit Data that protect the Data Subject's rights under this Law and the Credit Information Law. The target is not in the registry, so the id is empty.",
+   "evidence": {
+    "provision": "Article 24",
+    "quote": "protects their rights under this Law and the Credit Information Law"
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "Competent Authority",
+   "role": "designated",
+   "function": "Oversees implementation of the Law and the Regulations (Art. 30(1)); issues the Regulations' implementing rules, receives breach notifications (Art. 20(1)), and may collect fees for protection services (Art. 30(4)(D)). Identity is to be set by Council of Ministers resolution (Art. 1(3)).",
+   "evidence": {
+    "provision": "Article 30(1)",
+    "quote": "the Competent Authority shall be the entity in charge of overseeing the implementation of this Law and the Regulations"
+   }
+  },
+  {
+   "name": "Saudi Central Bank",
+   "role": "listed",
+   "function": "Named as holding powers preserved alongside the Law (Art. 30(1)) and as a body to be coordinated with on the Regulations (Art. 42).",
+   "evidence": {
+    "provision": "Article 30(1)",
+    "quote": "the powers of the Saudi Central Bank pursuant to applicable legal provisions"
+   }
+  },
+  {
+   "name": "Public Prosecution",
+   "role": "designated",
+   "function": "Investigates and prosecutes the criminal violation in Art. 35(1) before the competent court.",
+   "evidence": {
+    "provision": "Article 35(2)",
+    "quote": "The Public Prosecution is responsible for investigating and prosecuting before the competent court"
+   }
+  },
+  {
+   "name": "Ministry of Communications and Information Technology",
+   "role": "listed",
+   "function": "Named body with which the President of the Competent Authority must coordinate before issuing the Regulations.",
+   "evidence": {
+    "provision": "Article 42",
+    "quote": "Ministry of Communications and Information Technology"
+   }
+  },
+  {
+   "name": "Ministry of Foreign Affairs",
+   "role": "listed",
+   "function": "Named body with which the President of the Competent Authority must coordinate before issuing the Regulations.",
+   "evidence": {
+    "provision": "Article 42",
+    "quote": "Ministry of Foreign Affairs"
+   }
+  },
+  {
+   "name": "Communications, Space & Technology Commission",
+   "role": "listed",
+   "function": "Named body with which the President of the Competent Authority must coordinate before issuing the Regulations.",
+   "evidence": {
+    "provision": "Article 42",
+    "quote": "Communications, Space & Technology Commission"
+   }
+  },
+  {
+   "name": "Digital Government Authority",
+   "role": "listed",
+   "function": "Named body with which the President of the Competent Authority must coordinate before issuing the Regulations.",
+   "evidence": {
+    "provision": "Article 42",
+    "quote": "Digital Government Authority"
+   }
+  },
+  {
+   "name": "National Cybersecurity Authority",
+   "role": "listed",
+   "function": "Named body with which the President of the Competent Authority must coordinate before issuing the Regulations.",
+   "evidence": {
+    "provision": "Article 42",
+    "quote": "National Cybersecurity Authority"
+   }
+  },
+  {
+   "name": "Saudi Health Council",
+   "role": "listed",
+   "function": "Named body with which the President of the Competent Authority must coordinate before issuing the Regulations.",
+   "evidence": {
+    "provision": "Article 42",
+    "quote": "Saudi Health Council"
+   }
+  }
+ ],
+ "notes": "Annotated from the English translation supplied; quotes are verbatim from it. The text contains no Royal Decree number or date and no amendment; registry metadata cites Royal Decree M/19 and amendment M/148, which the text does not reflect. The Implementing Regulations are not included. Article 32 is repealed. Art. 29(4) refers to subparagraphs (b) and (c) of Art. 29(2), which the text letters A to C. The Art. 36(2) committee and Art. 37 inspectors are appointed by decision of the Competent Authority president and are not named bodies.",
+ "events": [
+  {
+   "event": "published",
+   "date": null,
+   "date_type": "not_stated",
+   "date_text": "commencing on the date of its publication in the Official Gazette",
+   "applies_to": "Law as a whole (Official Gazette publication; the date is not stated in the text)",
+   "evidence": {
+    "provision": "Article 43",
+    "quote": "commencing on the date of its publication in the Official Gazette"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "This Law shall come into force after (seven hundred and twenty) days commencing on the date of its publication in the Official Gazette.",
+   "anchor": "publication of the Law in the Official Gazette",
+   "applies_to": "Law as a whole",
+   "offset_value": 720,
+   "offset_unit": "days",
+   "anchor_event": "published",
+   "evidence": {
+    "provision": "Article 43",
+    "quote": "This Law shall come into force after (seven hundred and twenty) days commencing on the date of its publication in the Official Gazette."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "The president of the Competent Authority shall issue the Regulations within a period not exceeding (seven hundred and twenty) days commencing on the date of publishing the Law",
+   "anchor": "publication of the Law",
+   "applies_to": "issuance of the Regulations by the president of the Competent Authority",
+   "offset_value": 720,
+   "offset_unit": "days",
+   "anchor_event": "published",
+   "evidence": {
+    "provision": "Article 42",
+    "quote": "shall issue the Regulations within a period not exceeding (seven hundred and twenty) days commencing on the date of publishing the Law"
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "Personal Data",
+   "defined_in": "this Law",
+   "evidence": {
+    "provision": "Art. 1(4)",
+    "quote": "Any data, regardless of its source or form, that may lead to identifying an individual specifically"
+   }
+  },
+  {
+   "term": "Processing",
+   "defined_in": "this Law",
+   "evidence": {
+    "provision": "Art. 1(5)",
+    "quote": "Any operation carried out on Personal Data by any means"
+   }
+  },
+  {
+   "term": "Collection",
+   "defined_in": "this Law",
+   "evidence": {
+    "provision": "Art. 1(6)",
+    "quote": "The collection of Personal Data by Controller"
+   }
+  },
+  {
+   "term": "Destruction",
+   "defined_in": "this Law",
+   "evidence": {
+    "provision": "Art. 1(7)",
+    "quote": "Any action taken on Personal Data that makes it unreadable"
+   }
+  },
+  {
+   "term": "Disclosure",
+   "defined_in": "this Law",
+   "evidence": {
+    "provision": "Art. 1(8)",
+    "quote": "Enabling any person - other than the Controller or the Processor"
+   }
+  },
+  {
+   "term": "Transfer",
+   "defined_in": "this Law",
+   "evidence": {
+    "provision": "Art. 1(9)",
+    "quote": "The transfer of Personal Data from one place to another for Processing"
+   }
+  },
+  {
+   "term": "Publishing",
+   "defined_in": "this Law",
+   "evidence": {
+    "provision": "Art. 1(10)",
+    "quote": "Transmitting or making available any Personal Data using any written"
+   }
+  },
+  {
+   "term": "Sensitive Data",
+   "defined_in": "this Law",
+   "evidence": {
+    "provision": "Art. 1(11)",
+    "quote": "Personal Data revealing racial or ethnic origin, or religious, intellectual"
+   }
+  },
+  {
+   "term": "Genetic Data",
+   "defined_in": "this Law",
+   "evidence": {
+    "provision": "Art. 1(12)",
+    "quote": "Any Personal Data related to the hereditary or acquired characteristics of"
+   }
+  },
+  {
+   "term": "Health Data",
+   "defined_in": "this Law",
+   "evidence": {
+    "provision": "Art. 1(13)",
+    "quote": "Any Personal Data related to an individual's health condition"
+   }
+  },
+  {
+   "term": "Health Services",
+   "defined_in": "this Law",
+   "evidence": {
+    "provision": "Art. 1(14)",
+    "quote": "Services related to the health of an individual, including preventive"
+   }
+  },
+  {
+   "term": "Credit Data",
+   "defined_in": "this Law",
+   "evidence": {
+    "provision": "Art. 1(15)",
+    "quote": "Any Personal Data related to an individual's request for, or obtaining of,"
+   }
+  },
+  {
+   "term": "Data Subject",
+   "defined_in": "this Law",
+   "evidence": {
+    "provision": "Art. 1(16)",
+    "quote": "The individual to whom the Personal Data relate."
+   }
+  },
+  {
+   "term": "Public Entity",
+   "defined_in": "this Law",
+   "evidence": {
+    "provision": "Art. 1(17)",
+    "quote": "Any ministry, department, public institution or public authority"
+   }
+  },
+  {
+   "term": "Controller",
+   "defined_in": "this Law",
+   "evidence": {
+    "provision": "Art. 1(18)",
+    "quote": "Any Public Entity, natural person or private legal person that specifies the"
+   }
+  },
+  {
+   "term": "Processor",
+   "defined_in": "this Law",
+   "evidence": {
+    "provision": "Art. 1(19)",
+    "quote": "Any Public Entity, natural person or private legal person that processes"
+   }
+  },
+  {
+   "term": "Competent Authority",
+   "defined_in": "this Law",
+   "evidence": {
+    "provision": "Art. 1(3)",
+    "quote": "The authority to be determined by a resolution of the Council of"
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "data_subject_rights",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Data Subject rights to be informed of legal basis and purpose, access, obtain a readable copy, correct or update, and request destruction of Personal Data held by the Controller, as set out in the Regulations.",
+   "applies_from": "720 days after publication in the Official Gazette (Art. 43)",
+   "evidence": {
+    "provision": "Art. 4",
+    "quote": "Data Subject shall have the following rights pursuant to this Law and as set out in the Regulations"
+   }
+  },
+  {
+   "type": "consent",
+   "addressee": "data_controller",
+   "modality": "shall_not",
+   "summary": "Personal Data may not be processed, nor its processing purpose changed, without the Data Subject's consent, except in cases stated in the Law; Regulations set consent conditions. Data Subject may withdraw consent at any time (Art. 5(2)).",
+   "applies_from": "720 days after publication in the Official Gazette (Art. 43)",
+   "conditional_on": "except the cases stated in this Law",
+   "evidence": {
+    "provision": "Art. 5(1)",
+    "quote": "neither Personal Data may be processed nor the purpose of Personal Data Processing may be changed without the consent of the Data Subject"
+   }
+  },
+  {
+   "type": "consent",
+   "addressee": "data_controller",
+   "modality": "shall_not",
+   "summary": "Consent may not be made a condition of providing a service or benefit, unless the service or benefit is directly related to the processing for which consent is given.",
+   "applies_from": "720 days after publication in the Official Gazette (Art. 43)",
+   "conditional_on": "unless the service or benefit is directly related to the Processing for which consent is given",
+   "evidence": {
+    "provision": "Art. 7",
+    "quote": "The consent referred to in paragraph (1) of Article (5) of this Law may not form a condition of providing a service or a benefit"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Select only Processors providing the necessary guarantees to implement the Law and Regulations, and monitor the compliance of those Processors; responsibility towards Data Subject and Competent Authority is not prejudiced.",
+   "applies_from": "720 days after publication in the Official Gazette (Art. 43)",
+   "evidence": {
+    "provision": "Art. 8",
+    "quote": "the Controller shall only select Processors providing the necessary guarantees to implement the provisions of this Law and the Regulations"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Controller shall prevent Data Subject access to Personal Data in the situations stated in Art. 16(1)-(6) (Art. 9(2)); Controller may set time frames and limit access in cases stated in Art. 9(1).",
+   "applies_from": "720 days after publication in the Official Gazette (Art. 43)",
+   "conditional_on": "situations stated in Paragraphs (1, 2, 3, 4, 5) and (6) of Article (16)",
+   "evidence": {
+    "provision": "Art. 9(2)",
+    "quote": "The Controller shall prevent the Data Subject from accessing Personal Data in any of the situations stated in Paragraphs (1, 2, 3, 4, 5) and (6) of Article (16) herein"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_controller",
+   "modality": "shall_not",
+   "summary": "Controller may only collect Personal Data directly from the Data Subject and may only process it for the purposes for which it was collected, subject to exceptions listed in Art. 10(1)-(7).",
+   "applies_from": "720 days after publication in the Official Gazette (Art. 43)",
+   "conditional_on": "exceptions listed in Art. 10(1) to (7)",
+   "evidence": {
+    "provision": "Art. 10",
+    "quote": "The Controller may only collect Personal Data directly from the Data Subject and may only process Personal Data for the purposes for which they have been collected"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Purpose of collection must be directly related to the Controller's purposes and not contravene legal provisions; methods must be lawful, appropriate, direct, clear and secure, without deception, misleading or extortion.",
+   "applies_from": "720 days after publication in the Official Gazette (Art. 43)",
+   "evidence": {
+    "provision": "Art. 11(1)",
+    "quote": "The purpose for which Personal Data is collected shall be directly related to the Controller’s purposes"
+   }
+  },
+  {
+   "type": "data_minimization",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Collected content must be limited to the minimum necessary for the purpose of collection; content identifying the Data Subject after the purpose is achieved must be avoided (Art. 11(3)); when data is no longer necessary, the Controller shall cease collection and destroy previously collected data without undue delay (Art. 11(4)).",
+   "applies_from": "720 days after publication in the Official Gazette (Art. 43)",
+   "evidence": {
+    "provision": "Art. 11(3)",
+    "quote": "The content of the Personal Data shall be appropriate and limited to the minimum amount necessary to achieve the purpose of the Collection"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Controller shall use a privacy policy and make it available to Data Subjects before collection, specifying purpose, data, means, processing, storage, destruction and Data Subject rights.",
+   "applies_from": "720 days after publication in the Official Gazette (Art. 43)",
+   "evidence": {
+    "provision": "Art. 12",
+    "quote": "The Controller shall use a privacy policy and make it available to Data Subjects for their information prior to collecting their Personal Data"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "When collecting directly from the Data Subject, Controller shall take appropriate measures to inform of the legal basis, purpose, mandatory and optional data, recipients and transfers outside the Kingdom, consequences of non-collection, rights, and other elements set by the Regulations.",
+   "applies_from": "720 days after publication in the Official Gazette (Art. 43)",
+   "conditional_on": "when collecting Personal Data directly from the Data Subject",
+   "evidence": {
+    "provision": "Art. 13",
+    "quote": "the Controller shall take appropriate measures to inform the Data Subject of the following upon Collection"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Controller must take sufficient steps to verify the accuracy, completeness, timeliness and relevance of Personal Data before processing.",
+   "applies_from": "720 days after publication in the Official Gazette (Art. 43)",
+   "evidence": {
+    "provision": "Art. 14",
+    "quote": "The Controller may not process Personal Data without taking sufficient steps to verify the Personal Data accuracy, completeness, timeliness and relevance"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_controller",
+   "modality": "shall_not",
+   "summary": "Controller may not disclose Personal Data except in the situations listed in Art. 15(1)-(6).",
+   "applies_from": "720 days after publication in the Official Gazette (Art. 43)",
+   "conditional_on": "except in the situations listed in Art. 15(1) to (6)",
+   "evidence": {
+    "provision": "Art. 15",
+    "quote": "The Controller may not Disclose Personal Data except in the following situations"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_controller",
+   "modality": "shall_not",
+   "summary": "Controller shall not disclose Personal Data in the situations of Art. 15(1), (2), (5) and (6) where disclosure falls under one of the listed grounds (threat to security, relations with other states, crime detection, safety, privacy of others, and others).",
+   "applies_from": "720 days after publication in the Official Gazette (Art. 43)",
+   "conditional_on": "if the Disclosure falls under one of the grounds in Art. 16(1) to (9)",
+   "evidence": {
+    "provision": "Art. 16",
+    "quote": "The Controller shall not disclose Personal Data in the situations stated in Paragraphs (1, 2"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "When Personal Data is corrected, completed or updated, Controller shall notify the amendment to all other entities to which it was transferred and make it available to them.",
+   "applies_from": "720 days after publication in the Official Gazette (Art. 43)",
+   "evidence": {
+    "provision": "Art. 17(1)",
+    "quote": "the Controller shall notify such amendment to all the other entities to which such Personal Data has been transferred"
+   }
+  },
+  {
+   "type": "data_minimization",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Controller shall, without undue delay, destroy Personal Data when no longer necessary for the purpose of collection, subject to retention rules in Art. 18(2).",
+   "applies_from": "720 days after publication in the Official Gazette (Art. 43)",
+   "conditional_on": "when no longer necessary for the purpose for which they were collected",
+   "evidence": {
+    "provision": "Art. 18(1)",
+    "quote": "The Controller shall, without undue delay, Destroy the Personal Data when no longer necessary for the purpose for which they were collected"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Controller shall implement all necessary organizational, administrative and technical measures to protect Personal Data, including during Transfer, in accordance with the Regulations.",
+   "applies_from": "720 days after publication in the Official Gazette (Art. 43)",
+   "evidence": {
+    "provision": "Art. 19",
+    "quote": "The Controller shall implement all the necessary organizational, administrative and technical measures to protect Personal Data"
+   }
+  },
+  {
+   "type": "incident_reporting",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Controller shall notify the Competent Authority upon knowing of any breach, damage or illegal access to personal data, in accordance with the Regulations.",
+   "applies_from": "720 days after publication in the Official Gazette (Art. 43)",
+   "conditional_on": "upon knowing of any breach, damage, or illegal access to personal data",
+   "evidence": {
+    "provision": "Art. 20(1)",
+    "quote": "The Controller shall notify the Competent Authority upon knowing of any breach, damage, or illegal access to personal data"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Controller shall notify the Data Subject of any breach, damage or illegal access that would cause damage to their data or prejudice to their rights and interests, in accordance with the Regulations.",
+   "applies_from": "720 days after publication in the Official Gazette (Art. 43)",
+   "conditional_on": "breach that would cause damage or prejudice to the Data Subject",
+   "evidence": {
+    "provision": "Art. 20(2)",
+    "quote": "The Controller shall notify the Data Subject of any breach, damage or illegal access to their Personal Data"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Controller shall respond to Data Subject requests pertaining to their rights under the Law within the period and in the method set out in the Regulations.",
+   "applies_from": "720 days after publication in the Official Gazette (Art. 43)",
+   "evidence": {
+    "provision": "Art. 21",
+    "quote": "The Controller shall respond to the requests of the Data Subject pertaining to their rights under this Law"
+   }
+  },
+  {
+   "type": "impact_assessment",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Controller shall conduct an impact assessment of Personal Data Processing in relation to any product or service, based on the nature of its activity, in accordance with the Regulations.",
+   "applies_from": "720 days after publication in the Official Gazette (Art. 43)",
+   "conditional_on": "based on the nature of the activity carried out by the Controller",
+   "evidence": {
+    "provision": "Art. 22",
+    "quote": "The Controller shall conduct an impact assessment of Personal Data Processing in relation to any product or service"
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Regulations shall set additional controls and procedures for Processing of Health Data, including restricting access to Health Data to the minimum number of employees and workers necessary to provide Health Services.",
+   "applies_from": "720 days after publication in the Official Gazette (Art. 43)",
+   "evidence": {
+    "provision": "Art. 23",
+    "quote": "the Regulations shall set out additional controls and procedures for the Processing of Health Data"
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Regulations shall set additional controls and procedures for Processing of Credit Data, including verifying explicit consent and notifying the Data Subject when a request for disclosure of Credit Data is received.",
+   "applies_from": "720 days after publication in the Official Gazette (Art. 43)",
+   "evidence": {
+    "provision": "Art. 24",
+    "quote": "the Regulations shall set out additional controls and procedures for the Processing of Credit Data"
+   }
+  },
+  {
+   "type": "consent",
+   "addressee": "data_controller",
+   "modality": "shall_not",
+   "summary": "Controller may not use personal means of communication (post, email) of the Data Subject to send advertising or awareness-raising materials unless prior consent is obtained (exception: materials sent by Public Entities).",
+   "applies_from": "720 days after publication in the Official Gazette (Art. 43)",
+   "conditional_on": "unless prior consent of the targeted recipient is obtained",
+   "evidence": {
+    "provision": "Art. 25",
+    "quote": "Controller may not use personal means of communication, including the post and email, of the Data Subject to send advertising"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Sender of advertising or awareness-raising material shall provide a clear mechanism, as set out in the Regulations, enabling the recipient to request that such materials stop.",
+   "applies_from": "720 days after publication in the Official Gazette (Art. 43)",
+   "evidence": {
+    "provision": "Art. 25(2)",
+    "quote": "The sender of the material shall provide a clear mechanism, as set out in the Regulations"
+   }
+  },
+  {
+   "type": "consent",
+   "addressee": "data_controller",
+   "modality": "may",
+   "summary": "Personal Data (other than Sensitive Data) may be processed for marketing purposes if collected directly from the Data Subject and consent is given under the Law; Regulations set controls.",
+   "applies_from": "720 days after publication in the Official Gazette (Art. 43)",
+   "conditional_on": "if collected directly from the Data Subject and consent is given; excludes Sensitive Data",
+   "evidence": {
+    "provision": "Art. 26",
+    "quote": "Personal Data may be processed for marketing"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "general_public",
+   "modality": "shall_not",
+   "summary": "It is not permissible to copy official documents where Data Subjects are identifiable, except where required by law or when a competent public authority requests copying under the Regulations.",
+   "applies_from": "720 days after publication in the Official Gazette (Art. 43)",
+   "conditional_on": "except where required by law or requested by a competent public authority",
+   "evidence": {
+    "provision": "Art. 28",
+    "quote": "It is not permissible to copy official documents where Data Subjects are identifiable"
+   }
+  },
+  {
+   "type": "localization",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Transfer or disclosure outside the Kingdom is permitted for listed purposes only if it causes no prejudice to national security or vital interests, the destination provides adequate protection per Competent Authority assessment, and is limited to the minimum data needed.",
+   "applies_from": "720 days after publication in the Official Gazette (Art. 43)",
+   "conditional_on": "transfer for purposes listed in Art. 29(1)(A) to (D); not applicable in cases of extreme necessity (Art. 29(3))",
+   "evidence": {
+    "provision": "Art. 29(2)",
+    "quote": "The Transfer or Disclosure shall be limited to the minimum amount of Personal Data needed."
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "regulator",
+   "modality": "shall",
+   "summary": "Competent Authority is the entity in charge of overseeing implementation of the Law and Regulations, without prejudice to the powers of the Saudi Central Bank.",
+   "applies_from": "720 days after publication in the Official Gazette (Art. 43)",
+   "evidence": {
+    "provision": "Art. 30(1)",
+    "quote": "the Competent Authority shall be the entity in charge of overseeing the implementation of this Law and the Regulations"
+   }
+  },
+  {
+   "type": "appointment_of_representative",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Controller shall appoint one or more personal data protection officers in the situations identified by the Regulations; the Regulations set the officers' responsibilities.",
+   "applies_from": "720 days after publication in the Official Gazette (Art. 43)",
+   "conditional_on": "situations identified by the Regulations",
+   "evidence": {
+    "provision": "Art. 30(2)",
+    "quote": "The Regulations shall identify the situations where the Controller shall appoint one or more persons as personal data protection officer(s)."
+   }
+  },
+  {
+   "type": "cooperation_with_authority",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Controller shall cooperate with the Competent Authority in its duties to supervise implementation and take necessary steps on matters referred to it by the Competent Authority.",
+   "applies_from": "720 days after publication in the Official Gazette (Art. 43)",
+   "evidence": {
+    "provision": "Art. 30(3)",
+    "quote": "The Controller shall cooperate with the Competent Authority in performing its duties to supervise the implementation"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "regulator",
+   "modality": "may",
+   "summary": "Competent Authority may request documents or information from Controllers, request cooperation of other parties, specify monitoring tools including a national register of Controllers, provide services with a possible fee.",
+   "applies_from": "720 days after publication in the Official Gazette (Art. 43)",
+   "conditional_on": "for the purpose of supervising implementation of the Law and Regulations",
+   "evidence": {
+    "provision": "Art. 30(4)",
+    "quote": "The Competent Authority, in order to carry out its duties related to supervising the implementation of the provisions of the Law and Regulations, may"
+   }
+  },
+  {
+   "type": "record_keeping",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Controller shall maintain records of Personal Data Processing activities for the period required under the Regulations, available on request to the Competent Authority, containing at minimum contact details, purposes, Data Subject categories, recipients, transfers outside the Kingdom, and retention period.",
+   "applies_from": "720 days after publication in the Official Gazette (Art. 43)",
+   "conditional_on": "based on the nature of the activity carried out by the Controller",
+   "evidence": {
+    "provision": "Art. 31",
+    "quote": "the Controller shall maintain records, for such a period as required under the Regulations, of the Personal Data Processing activities"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "regulator",
+   "modality": "shall",
+   "summary": "Competent Authority shall set requirements for practising commercial, professional or non-profit activities related to Personal Data protection in the Kingdom, in coordination with competent authorities.",
+   "applies_from": "720 days after publication in the Official Gazette (Art. 43)",
+   "evidence": {
+    "provision": "Art. 33(1)",
+    "quote": "The Competent Authority shall set the requirements for practicing commercial, professional or non-profit activities related to Personal Data protection in the Kingdom"
+   }
+  },
+  {
+   "type": "licensing_certification",
+   "addressee": "regulator",
+   "modality": "may",
+   "summary": "Competent Authority may grant licenses to entities issuing accreditation certificates to Controllers and Processors, and to entities conducting audits or checks of Personal Data Processing, under conditions it sets.",
+   "applies_from": "720 days after publication in the Official Gazette (Art. 43)",
+   "conditional_on": "under conditions and criteria set by the Competent Authority",
+   "evidence": {
+    "provision": "Art. 33(2)",
+    "quote": "The Competent Authority may grant licenses to entities that issue accreditation certificates to Controllers and Processors."
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "regulator",
+   "modality": "shall",
+   "summary": "Competent Authority shall specify tools and mechanisms to monitor compliance of Controllers and Processors outside the Kingdom when processing data of individuals residing in the Kingdom, and define enforcement procedures outside the Kingdom.",
+   "applies_from": "720 days after publication in the Official Gazette (Art. 43)",
+   "conditional_on": "when Processing personal data related to individuals residing in the Kingdom",
+   "evidence": {
+    "provision": "Art. 33(4)",
+    "quote": "The Competent Authority shall specify the appropriate tools and mechanisms to monitor compliance of Controllers and Processors outside the Kingdom"
+   }
+  },
+  {
+   "type": "complaint_mechanism",
+   "addressee": "consumers_users",
+   "modality": "may",
+   "summary": "Data Subject may submit to the Competent Authority any complaint arising from implementation of the Law and Regulations; Regulations set rules for processing complaints.",
+   "applies_from": "720 days after publication in the Official Gazette (Art. 43)",
+   "evidence": {
+    "provision": "Art. 34",
+    "quote": "A Data Subject may submit to the Competent Authority any complaint that may arise out of the implementation of this Law and the Regulations"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "may",
+   "summary": "Employees and workers appointed by the Competent Authority president have powers to control and inspect violations; Competent Authority may seize means used in violations pending decision.",
+   "applies_from": "720 days after publication in the Official Gazette (Art. 43)",
+   "conditional_on": "appointed by a decision of the president of the Competent Authority",
+   "evidence": {
+    "provision": "Art. 37(1)",
+    "quote": "Employees and workers appointed by a decision of the president of the Competent Authority shall have the powers to control and inspect the violations"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Public Entity shall discipline its employees who violate the Law and Regulations, in accordance with disciplinary provisions prescribed by law.",
+   "applies_from": "720 days after publication in the Official Gazette (Art. 43)",
+   "evidence": {
+    "provision": "Art. 39",
+    "quote": "the Public Entity shall discipline any of its employees who violate any of the provisions of this Law and Regulations"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_processor",
+   "also_addressees": [
+    "data_controller"
+   ],
+   "modality": "shall",
+   "summary": "Any person engaging in Processing of Personal Data shall protect the confidentiality of the data, including after the end of the occupational or contractual relationship.",
+   "applies_from": "720 days after publication in the Official Gazette (Art. 43)",
+   "evidence": {
+    "provision": "Art. 41",
+    "quote": "Any person that engages in the Processing of Personal Data shall protect the confidentiality of the Personal Data"
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "regulator",
+   "modality": "shall",
+   "summary": "President of the Competent Authority shall issue the Regulations within 720 days of publication of the Law, after coordinating with listed authorities.",
+   "applies_from": "720 days after publication in the Official Gazette (Art. 43)",
+   "evidence": {
+    "provision": "Art. 42",
+    "quote": "The president of the Competent Authority shall issue the Regulations within a period not exceeding (seven hundred and twenty) days"
+   }
+  }
+ ],
+ "enforcement": [
+  {
+   "sanction_type": "criminal_penalty",
+   "authority": "Competent court (Public Prosecution investigates and prosecutes)",
+   "triggered_by": "Any individual who discloses or publishes Sensitive Data in violation of the Law, with the intention of harming the Data Subject or achieving a personal benefit",
+   "max_penalty_text": "Imprisonment not exceeding two years, or a fine not exceeding three million Riyals, or both",
+   "max_penalty_amount": 3000000,
+   "currency": "Riyals",
+   "penalty_formula": "Court may double the fine in case of recidivism, even if exceeding its maximum, provided it does not exceed double this limit (Art. 35(4))",
+   "penalty_reference": "Art. 35(1)-(4)",
+   "cure_period": "None stated",
+   "evidence": {
+    "provision": "Art. 35(1)",
+    "quote": "shall be punished with imprisonment for a period not exceeding (two years), or a fine not exceeding (three million)"
+   }
+  },
+  {
+   "sanction_type": "administrative_fine",
+   "authority": "Committee formed by decision of the president of the Competent Authority (decision approved by the president or delegate)",
+   "triggered_by": "Any person with a special natural or legal capacity covered by the Law who violates any provision of the Law or the Regulations, in cases not covered by Art. 35",
+   "max_penalty_text": "A warning or a fine not exceeding five million Riyals",
+   "max_penalty_amount": 5000000,
+   "currency": "Riyals",
+   "penalty_formula": "Fine may be doubled in the event of a repeat violation, even if exceeding its maximum, provided it does not exceed double this limit (Art. 36(1))",
+   "penalty_reference": "Art. 36(1)-(3)",
+   "cure_period": "None stated",
+   "evidence": {
+    "provision": "Art. 36(1)",
+    "quote": "a fine not exceeding (five million) Riyals"
+   }
+  },
+  {
+   "sanction_type": "other",
+   "authority": "Competent court",
+   "triggered_by": "Violations stipulated in the Law (confiscation of funds obtained as a result of the violation, without prejudice to bona fide third parties)",
+   "max_penalty_text": "Confiscation of funds obtained as a result of committing the violations",
+   "penalty_reference": "Art. 38(1)",
+   "cure_period": "None stated",
+   "evidence": {
+    "provision": "Art. 38(1)",
+    "quote": "the confiscation of funds obtained as a result of committing the violations"
+   }
+  },
+  {
+   "sanction_type": "other",
+   "authority": "Competent court, or the committee referred to in Art. 36(2), as the case may be",
+   "triggered_by": "Violations stipulated in the Law, based on the type, seriousness and impact of the violation (publication of judgment or decision summary)",
+   "max_penalty_text": "Publication of a summary of the judgment or decision at the expense of the violator in one (or more) local newspapers or other proper means, after the judgment becomes final",
+   "penalty_reference": "Art. 38(2)",
+   "cure_period": "None stated",
+   "evidence": {
+    "provision": "Art. 38(2)",
+    "quote": "shall be published at the expense of the violator in one (or more)"
+   }
+  },
+  {
+   "sanction_type": "other",
+   "authority": "Competent Authority",
+   "triggered_by": "Violations stipulated in the Law or the Regulations (seizure of the means or tools used in committing the violation)",
+   "max_penalty_text": "Seizure of the means or tools used in committing the violation until a decision is made on it",
+   "penalty_reference": "Art. 37(3)",
+   "cure_period": "None stated",
+   "evidence": {
+    "provision": "Art. 37(3)",
+    "quote": "The Competent Authority has the right to seize the means or tools used in committing the"
+   }
+  },
+  {
+   "sanction_type": "other",
+   "authority": "Public Entity (disciplinary action against its own employees)",
+   "triggered_by": "Employees of a Public Entity who violate any provision of the Law or the Regulations",
+   "max_penalty_text": "Discipline in accordance with the disciplinary provisions and procedures prescribed by law",
+   "penalty_reference": "Art. 39",
+   "cure_period": "None stated",
+   "evidence": {
+    "provision": "Art. 39",
+    "quote": "the Public Entity shall discipline any of its employees who violate any of the provisions"
+   }
+  },
+  {
+   "sanction_type": "private_damages",
+   "authority": "Competent court (on application by the affected individual)",
+   "triggered_by": "Any individual who suffers damage as a result of a violation of the Law or the Regulations",
+   "max_penalty_text": "Proportionate compensation for the material or moral damage",
+   "penalty_reference": "Art. 40",
+   "private_right_of_action": true,
+   "cure_period": "None stated",
+   "evidence": {
+    "provision": "Art. 40",
+    "quote": "may apply to a competent court for proportionate compensation for the material or moral damage"
+   }
+  }
+ ],
+ "section_status": {
+  "thresholds": {
+   "status": "not_found",
+   "note": "No numeric cutoff in this text changes legal treatment. Numbers present are penalty amounts and imprisonment terms (Art. 35(1), 36(1); enforcement), a committee size of not less than three (Art. 36(2)), and 720-day periods (Art. 42, 43; procedural). Time frames left to the Regulations (Art. 17(2)) are not numeric."
+  }
+ },
+ "thresholds": []
+}

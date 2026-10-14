@@ -1,0 +1,128 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "us-fr-2020-00497",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "AGORA plaintext (ETO, CC BY-NC 4.0), local cache",
+  "url": "https://www.federalregister.gov/documents/2020/01/22/2020-00497/medical-devices-radiology-devices-classification-of-the-radiological-computer-assisted-diagnostic",
+  "retrieved": "2024-12-06",
+  "version": "1.33.0 (2026-09-16)",
+  "language": "en",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "ai_sectoral"
+  ],
+  "primary_domain": "ai_sectoral",
+  "mechanisms": [
+   "mandate_obligation",
+   "disclosure_transparency"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "ai_provider"
+  ],
+  "affected_roles": [
+   "healthcare_provider",
+   "consumers_users"
+  ],
+  "decision_margins": [
+   "firm:product_design_release",
+   "firm:compliance_process"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national"
+   ],
+   "description": "Codified federal regulation of the United States, applying to devices within the scope of this classification.",
+   "evidence": {
+    "provision": "§ 892.2060",
+    "quote": "§ 892.2060 Radiological computer-assisted diagnostic software for lesions suspicious of cancer."
+   }
+  },
+  "agora_applications": [
+   "Medicine, life sciences and public health"
+  ],
+  "agora_risk_factors": [
+   "Reliability",
+   "Reliability: Robustness"
+  ],
+  "agora_strategies": [
+   "Performance requirements",
+   "Evaluation",
+   "Disclosure: About evaluation"
+  ]
+ },
+ "summary": {
+  "short": "FDA regulation classifying radiological computer-assisted diagnostic software that characterizes lesions suspicious for cancer as Class II (special controls) image-processing devices. It sets design verification, validation and labeling requirements for manufacturers, with the clinical user making diagnostic decisions.",
+  "long": "The section identifies radiological computer-assisted diagnostic software for lesions suspicious of cancer as an image processing prescription device. It aids in characterizing lesions on images such as magnetic resonance, mammography, radiography or computed tomography, extracting features from the images and giving information about the lesions to the user. Diagnostic and patient management decisions remain with the clinical user. Paragraph (b) classifies the device as Class II (special controls). Design verification and validation must include a detailed description of the image analysis algorithms, pre-specified performance testing protocols, results showing the device improves reader performance in the intended use population, test datasets with sufficient cases from important cohorts, standalone performance testing, and software documentation including cybersecurity. Labeling must include the patient population, reading protocol, intended user and training, device inputs and outputs, compatible imaging hardware and protocols, warnings and limitations (including situations where the device may fail), instructions for use, and a detailed summary of performance testing with sub-analyses. The text states no numeric thresholds, enforcement measures or penalties."
+ },
+ "notes": "Excerpt of 21 CFR 892.2060 (identification, class II special controls). No other instrument is cited by name, so no relations are coded; the enabling statute is not stated in the text. No named firms, facilities or public bodies appear; users and manufacturers are referred to by role only. No internal inconsistencies were found.",
+ "events": [],
+ "definitions": [
+  {
+   "term": "radiological computer-assisted diagnostic software for lesions suspicious of cancer",
+   "defined_in": "21 CFR § 892.2060(a)",
+   "evidence": {
+    "provision": "§ 892.2060(a)",
+    "quote": "is an image processing prescription device intended to aid in the characterization of lesions as suspicious for cancer identified on acquired medical images"
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "testing_evaluation",
+   "addressee": "ai_developer",
+   "modality": "shall",
+   "summary": "Design verification and validation must include a detailed description of the image analysis algorithms, pre-specified performance testing protocols, results showing the device improves reader performance, standalone performance testing, and software documentation including cybersecurity.",
+   "evidence": {
+    "provision": "§ 892.2060(b)(1)",
+    "quote": "Design verification and validation must include:"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "ai_provider",
+   "modality": "shall",
+   "summary": "Labeling must include a description of the indicated patient population, intended reading protocol, intended user and recommended training, device inputs and outputs, compatible imaging hardware and protocols, warnings and limitations, instructions for use, and a detailed summary of performance testing.",
+   "evidence": {
+    "provision": "§ 892.2060(b)(2)",
+    "quote": "Labeling must include:"
+   }
+  }
+ ],
+ "section_status": {
+  "relations": {
+   "status": "not_found",
+   "note": "The excerpt cites no other instrument by name and does not state its enabling authority."
+  },
+  "entities": {
+   "status": "not_applicable",
+   "note": "The provision regulates a device category and names no firms, facilities or public bodies; the addressees (manufacturers, clinical users) are described by role only."
+  },
+  "events": {
+   "status": "not_found",
+   "note": "The document is the regulatory text of 21 CFR § 892.2060 and contains no adoption, signature, publication, entry-into-force, application, phase-in, deadline, sunset, expiry or repeal dates. No dated events could be coded from the text provided."
+  },
+  "thresholds": {
+   "status": "not_applicable",
+   "note": "The section classifies the device as Class II and sets special controls (design verification, labeling). It contains no numeric cutoffs that change legal treatment and no delegation of a numeric threshold."
+  },
+  "enforcement": {
+   "status": "not_applicable",
+   "note": "The text contains only identification (a), classification as Class II with special controls (b)(1)-(2), and no sanction, penalty, revocation, clawback, suspension or blocking provisions. Enforcement for this device type is not stated in the document."
+  }
+ },
+ "thresholds": [],
+ "enforcement": [],
+ "relations": [],
+ "entities": []
+}

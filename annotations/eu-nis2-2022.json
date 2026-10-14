@@ -1,0 +1,2455 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "eu-nis2-2022",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (connectors/fetch_texts.py)",
+  "url": "http://publications.europa.eu/resource/cellar/9b84d482-85bd-11ed-9887-01aa75ed71a1.0006.03/DOC_1",
+  "retrieved": "2026-10-13",
+  "version": "as fetched",
+  "language": "en",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "cybersecurity",
+   "data_protection"
+  ],
+  "primary_domain": "cybersecurity",
+  "mechanisms": [
+   "mandate_obligation",
+   "designation_tiering",
+   "registration_notification",
+   "institution_setup",
+   "standard_setting",
+   "liability_rule"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "essential_entity",
+   "enterprise",
+   "cloud_service_provider",
+   "data_center_operator",
+   "platform_operator",
+   "search_engine_operator",
+   "government_agency"
+  ],
+  "affected_roles": [
+   "consumers_users"
+  ],
+  "decision_margins": [
+   "firm:compliance_process",
+   "firm:size_organization"
+  ],
+  "territorial_scope": {
+   "types": [
+    "supranational"
+   ],
+   "description": "EU directive applying to entities that provide services or carry out activities within the Union, implemented through Member State law.",
+   "evidence": {
+    "provision": "Art. 2(1)",
+    "quote": "which provide their services or carry out their activities within the Union"
+   }
+  },
+  "agora_harms": [
+   "Harm to infrastructure"
+  ],
+  "agora_risk_factors": [
+   "Security: Cybersecurity"
+  ],
+  "agora_strategies": [
+   "Governance development",
+   "New institution",
+   "Performance requirements",
+   "Tiering: Tiering based on domain of application",
+   "Tiering: Tiering based on impact",
+   "Evaluation"
+  ]
+ },
+ "summary": {
+  "short": "Sets cybersecurity risk-management and incident-reporting duties for essential and important entities in Annex I and II sectors, and requires Member States to designate national authorities, CSIRTs and cybersecurity strategies. Repeals Directive 2016/1148.",
+  "long": "Directive (EU) 2022/2555 sets measures for a high common level of cybersecurity across the Union and repeals Directive (EU) 2016/1148. It applies to public and private entities of the types listed in Annexes I and II that are medium-sized enterprises or larger and operate within the Union, and, regardless of size, to listed categories including electronic communications and trust service providers, TLD registries, DNS providers and critical entities under Directive (EU) 2022/2557. Entities are classed as essential or important. Member States must adopt national cybersecurity strategies, designate competent authorities, single points of contact, cyber crisis management authorities and CSIRTs, and compile lists of essential and important entities. Essential and important entities must take cybersecurity risk-management measures, which management bodies approve and oversee, and notify changes to their registration details. The Directive also establishes a Cooperation Group, a CSIRTs network, EU-CyCLONe, peer reviews, coordinated vulnerability disclosure and a European vulnerability database. The text provided covers the provisions up to Article 22; the remaining provisions are in the second part of the document."
+ },
+ "relations": [
+  {
+   "relation": "legal_basis",
+   "target_text": "Treaty on the Functioning of the European Union (TFEU), Article 114",
+   "note": "Legal basis stated in the citations. The TFEU is a treaty, not a registry instrument.",
+   "evidence": {
+    "provision": "Citations (preamble)",
+    "quote": "Having regard to the Treaty on the Functioning of the European Union, and in particular Article 114 thereof,"
+   }
+  },
+  {
+   "relation": "repeals",
+   "target_text": "Directive (EU) 2016/1148 (NIS Directive)",
+   "note": "Recital 5 states that Directive 2016/1148 is repealed and replaced by this Directive. The operative repeal article, if any, is not in part 1.",
+   "evidence": {
+    "provision": "Title; Recital (5)",
+    "quote": "Therefore, Directive (EU) 2016/1148 should be repealed and replaced by this Directive."
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Regulation (EU) No 910/2014",
+   "note": "Amendment stated in the title. Recital 92 says the corresponding provisions of this Regulation should be deleted. The operative amending provisions are not in part 1.",
+   "evidence": {
+    "provision": "Title",
+    "quote": "amending Regulation (EU) No 910/2014 and Directive (EU) 2018/1972"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive (EU) 2022/2557 (critical entities)",
+   "note": "Entities identified as critical entities under 2022/2557 fall within scope (Art 2(3)). Art 1(2)(b) and Art 3(1)(f) also refer to them, and Art 13(5) requires cooperation between the competent authorities of the two directives.",
+   "evidence": {
+    "provision": "Art. 2(3)",
+    "quote": "Regardless of their size, this Directive applies to entities identified as critical entities under Directive (EU) 2022/2557."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) 2022/2554",
+   "note": "Art 2(10) excludes entities that Member States exempt from 2022/2554. Recital 28 treats 2022/2554 as a sector-specific act for financial entities whose ICT provisions apply instead of this Directive's.",
+   "evidence": {
+    "provision": "Art. 2(10)",
+    "quote": "This Directive does not apply to entities which Member States have exempted from the scope of Regulation (EU) 2022/2554 in accordance with Article 2(4) of that Regulation."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) 2016/679",
+   "note": "The Directive applies without prejudice to this Regulation (Art 2(12)). Personal data processing under the Directive must comply with it (Art 2(14)).",
+   "evidence": {
+    "provision": "Art. 2(12)",
+    "quote": "This Directive applies without prejudice to Regulation (EU) 2016/679, Directive 2002/58/EC"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) 2019/881",
+   "note": "Terms cybersecurity, cyber threat, ICT product, ICT service and ICT process are defined by reference to this Regulation (Art 6(3), (10), (12)-(14)).",
+   "evidence": {
+    "provision": "Art. 6(3)",
+    "quote": "cybersecurity as defined in Article 2, point (1), of Regulation (EU) 2019/881"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Commission Recommendation 2003/361/EC",
+   "note": "Medium-sized enterprise ceilings define scope (Art 2(1)). Art 3(4) of the Annex to the Recommendation does not apply for the purposes of this Directive.",
+   "evidence": {
+    "provision": "Art. 2(1)",
+    "quote": "qualify as medium-sized enterprises under Article 2 of the Annex to Recommendation 2003/361/EC"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) 2018/1139",
+   "note": "Authorities under this Regulation must cooperate with the Member State's competent authorities, to the extent possible (Art 13(4)). Recital 29 addresses compliance with its requirements.",
+   "evidence": {
+    "provision": "Art. 13(4)",
+    "quote": "the national authorities under Regulations (EC) No 300/2008 and (EU) 2018/1139"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) No 182/2011",
+   "note": "Implementing powers conferred on the Commission are to be exercised under this Regulation (Recital 139). Arts 14(8) and 21(5) refer to the examination procedure in Art 39(2).",
+   "evidence": {
+    "provision": "Recital (139)",
+    "quote": "Those powers should be exercised in accordance with Regulation (EU) No 182/2011"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) 2022/2065",
+   "note": "Recital 140 says the Commission is to assess whether providers designated as very large online platforms could be identified as essential entities. Recital only; no operative provision in part 1.",
+   "evidence": {
+    "provision": "Recital (140)",
+    "quote": "designated as very large online platforms within the meaning of Article 33 of Regulation (EU) 2022/2065"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Regulation (EU) No 910/2014",
+   "note": "Deletes Article 19 of Regulation (EU) No 910/2014 with effect from 18 October 2024.",
+   "evidence": {
+    "provision": "Art. 42",
+    "quote": "In Regulation (EU) No 910/2014, Article 19 is deleted with effect from 18 October 2024."
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Directive (EU) 2018/1972",
+   "note": "Deletes Articles 40 and 41 of Directive (EU) 2018/1972 with effect from 18 October 2024.",
+   "evidence": {
+    "provision": "Art. 43",
+    "quote": "In Directive (EU) 2018/1972, Articles 40 and 41 are deleted with effect from 18 October 2024."
+   }
+  },
+  {
+   "relation": "repeals",
+   "target_text": "Directive (EU) 2016/1148",
+   "note": "Repeal with effect from 18 October 2024; references to the repealed Directive are construed as references to this Directive (correlation table in Annex III).",
+   "evidence": {
+    "provision": "Art. 44",
+    "quote": "Directive (EU) 2016/1148 is repealed with effect from 18 October 2024."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) 2019/881",
+   "note": "Member States may require use of ICT products certified under European cybersecurity certification schemes adopted pursuant to Article 49 of Regulation (EU) 2019/881; Commission may request ENISA to prepare a candidate scheme under Article 48(2).",
+   "evidence": {
+    "provision": "Art. 24(1)",
+    "quote": "certified under European cybersecurity certification schemes adopted pursuant to Article 49 of Regulation (EU) 2019/881"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) 2016/679",
+   "note": "Personal data breach referred to in Article 4(12) and notified under Article 33 of that Regulation; competent authorities inform supervisory authorities; fines under Article 58(2)(i) of that Regulation exclude a fine under Article 34 for the same conduct.",
+   "evidence": {
+    "provision": "Art. 35(1)",
+    "quote": "as defined in Article 4, point (12), of Regulation (EU) 2016/679 which is to be notified pursuant to Article 33 of that Regulation"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) 2022/2554",
+   "note": "Cooperation between competent authorities and authorities under Regulation (EU) 2022/2554; information to the Oversight Forum on critical ICT third-party service providers (also Art. 33(6)).",
+   "evidence": {
+    "provision": "Art. 31(10)",
+    "quote": "cooperate with the relevant competent authorities of the Member State concerned under Regulation (EU) 2022/2554."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive (EU) 2022/2557",
+   "note": "Information exchange and coordination with competent authorities under Directive (EU) 2022/2557 on critical entities (also Art. 31(9)).",
+   "evidence": {
+    "provision": "Art. 23(10)",
+    "quote": "competent authorities under Directive (EU) 2022/2557 information about significant incidents"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive (EU) 2022/2557",
+   "note": "Competent authorities under this Directive inform the competent authorities under Directive (EU) 2022/2557 when supervising entities identified as critical entities.",
+   "evidence": {
+    "provision": "Art. 31(9)",
+    "quote": "inform the relevant competent authorities within the same Member State under Directive (EU) 2022/2557"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) No 182/2011",
+   "note": "The Commission is assisted by a committee within the meaning of this Regulation; examination procedure under Article 5 applies (Art. 39(2)); also used for implementing acts under Art. 23(11).",
+   "evidence": {
+    "provision": "Art. 39(1)",
+    "quote": "That committee shall be a committee within the meaning of Regulation (EU) No 182/2011."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive (EU) 2019/944",
+   "note": "Scope definition for electricity undertakings in Annex I.",
+   "evidence": {
+    "provision": "Annex I, point 1(a)",
+    "quote": "Electricity undertakings as defined in Article 2, point (57), of Directive (EU) 2019/944"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) 2019/943",
+   "note": "Scope definition for nominated electricity market operators in Annex I.",
+   "evidence": {
+    "provision": "Annex I, point 1(a)",
+    "quote": "Nominated electricity market operators as defined in Article 2, point (8), of Regulation (EU) 2019/943"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive (EU) 2018/2001",
+   "note": "Scope definition for district heating and cooling operators in Annex I.",
+   "evidence": {
+    "provision": "Annex I, point 1(b)",
+    "quote": "Operators of district heating or district cooling as defined in Article 2, point (19), of Directive (EU) 2018/2001"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive 2009/73/EC",
+   "note": "Scope definition for natural gas supply undertakings in Annex I.",
+   "evidence": {
+    "provision": "Annex I, point 1(d)",
+    "quote": "Supply undertakings as defined in Article 2, point (8), of Directive 2009/73/EC"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EC) No 300/2008",
+   "note": "Scope definition for air carriers in Annex I.",
+   "evidence": {
+    "provision": "Annex I, point 2(a)",
+    "quote": "Air carriers as defined in Article 3, point (4), of Regulation (EC) No 300/2008"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive 2012/34/EU",
+   "note": "Scope definition for rail infrastructure managers in Annex I.",
+   "evidence": {
+    "provision": "Annex I, point 2(b)",
+    "quote": "Infrastructure managers as defined in Article 3, point (2), of Directive 2012/34/EU"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) No 575/2013",
+   "note": "Scope definition for credit institutions in Annex I.",
+   "evidence": {
+    "provision": "Annex I, point 3",
+    "quote": "Credit institutions as defined in Article 4, point (1), of Regulation (EU) No 575/2013"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive 2014/65/EU",
+   "note": "Scope definition for trading venue operators in Annex I.",
+   "evidence": {
+    "provision": "Annex I, point 4",
+    "quote": "Operators of trading venues as defined in Article 4, point (24), of Directive 2014/65/EU"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) No 648/2012",
+   "note": "Scope definition for central counterparties in Annex I.",
+   "evidence": {
+    "provision": "Annex I, point 4",
+    "quote": "Central counterparties (CCPs) as defined in Article 2, point (1), of Regulation (EU) No 648/2012"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive 2011/24/EU",
+   "note": "Scope definition for healthcare providers in Annex I.",
+   "evidence": {
+    "provision": "Annex I, point 5",
+    "quote": "Healthcare providers as defined in Article 3, point (g), of Directive 2011/24/EU"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive (EU) 2020/2184",
+   "note": "Scope definition for drinking water suppliers and distributors in Annex I.",
+   "evidence": {
+    "provision": "Annex I, point 6",
+    "quote": "Suppliers and distributors of water intended for human consumption as defined in Article 2, point (1)(a), of Directive (EU) 2020/2184"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive 97/67/EC",
+   "note": "Scope definition for postal service providers in Annex II.",
+   "evidence": {
+    "provision": "Annex II, point 1",
+    "quote": "Postal service providers as defined in Article 2, point (1a), of Directive 97/67/EC"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive 2008/98/EC",
+   "note": "Scope definition for waste management undertakings in Annex II.",
+   "evidence": {
+    "provision": "Annex II, point 2",
+    "quote": "Undertakings carrying out waste management as defined in Article 3, point (9), of Directive 2008/98/EC"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EC) No 1907/2006",
+   "note": "Scope definition for chemical substance and mixture undertakings in Annex II.",
+   "evidence": {
+    "provision": "Annex II, point 3",
+    "quote": "as referred to in Article 3, points (9) and (14), of Regulation (EC) No 1907/2006"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EC) No 178/2002",
+   "note": "Scope definition for food businesses in Annex II.",
+   "evidence": {
+    "provision": "Annex II, point 4",
+    "quote": "Food businesses as defined in Article 3, point (2), of Regulation (EC) No 178/2002"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) 2017/745",
+   "note": "Scope definition for medical device manufacturers in Annex II.",
+   "evidence": {
+    "provision": "Annex II, point 5(a)",
+    "quote": "Entities manufacturing medical devices as defined in Article 2, point (1), of Regulation (EU) 2017/745"
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "Member States",
+   "role": "addressee",
+   "function": "Required to adopt a national cybersecurity strategy (Art 7(1)), designate or establish competent authorities, single points of contact, cyber crisis management authorities and CSIRTs (Arts 8-10), and perform further duties in Chapters II-IV.",
+   "evidence": {
+    "provision": "Art. 7(1)",
+    "quote": "Each Member State shall adopt a national cybersecurity strategy"
+   }
+  },
+  {
+   "name": "Competent authorities (national, designated by each Member State)",
+   "role": "designated",
+   "function": "Responsible for cybersecurity and for the supervisory tasks under Chapter VII; monitor implementation at national level (Art 8(1)-(2)).",
+   "evidence": {
+    "provision": "Art. 8(1)",
+    "quote": "Each Member State shall designate or establish one or more competent authorities responsible for cybersecurity"
+   }
+  },
+  {
+   "name": "Single points of contact (national)",
+   "role": "designated",
+   "function": "Liaison function for cross-border cooperation with other Member States, the Commission and ENISA, and cross-sectoral cooperation within the Member State (Art 8(3)-(4)).",
+   "evidence": {
+    "provision": "Art. 8(3)",
+    "quote": "Each Member State shall designate or establish a single point of contact."
+   }
+  },
+  {
+   "name": "Cyber crisis management authorities (national)",
+   "role": "designated",
+   "function": "Responsible for the management of large-scale cybersecurity incidents and crises (Art 9(1)); one may be designated as coordinator (Art 9(2)).",
+   "evidence": {
+    "provision": "Art. 9(1)",
+    "quote": "responsible for the management of large-scale cybersecurity incidents and crises (cyber crisis management authorities)"
+   }
+  },
+  {
+   "name": "CSIRTs (national computer security incident response teams)",
+   "role": "designated",
+   "function": "Incident handling in accordance with a well-defined process; tasks set out in Art 11(3), including monitoring, early warnings and incident response.",
+   "evidence": {
+    "provision": "Art. 10(1)",
+    "quote": "Each Member State shall designate or establish one or more CSIRTs."
+   }
+  },
+  {
+   "name": "CSIRT designated as coordinator for coordinated vulnerability disclosure (national)",
+   "role": "designated",
+   "function": "Acts as trusted intermediary between reporting persons and manufacturers or providers of vulnerable ICT products or services (Art 12(1)).",
+   "evidence": {
+    "provision": "Art. 12(1)",
+    "quote": "Each Member State shall designate one of its CSIRTs as a coordinator for the purposes of coordinated vulnerability disclosure."
+   }
+  },
+  {
+   "name": "European Union Agency for Cybersecurity (ENISA)",
+   "role": "designated",
+   "function": "Develops and maintains the European vulnerability database (Art 12(2)); provides the secretariat of the CSIRTs network (Art 15(2)) and of EU-CyCLONe (Art 16(2)); assists Member States on strategies and CSIRT development (Art 7(4), Art 10(10)).",
+   "evidence": {
+    "provision": "Art. 12(2)",
+    "quote": "ENISA shall develop and maintain, after consulting the Cooperation Group, a European vulnerability database."
+   }
+  },
+  {
+   "name": "European Commission",
+   "role": "designated",
+   "function": "Provides the secretariat of the Cooperation Group (Art 14(3)); adopts implementing acts on technical and methodological requirements for listed entity types (Art 21(5)); may adopt procedural implementing acts for the Cooperation Group (Art 14(8)).",
+   "evidence": {
+    "provision": "Art. 21(5)",
+    "quote": "By 17 October 2024, the Commission shall adopt implementing acts laying down the technical and the methodological requirements"
+   }
+  },
+  {
+   "name": "Cooperation Group",
+   "role": "designated",
+   "function": "Body established to support strategic cooperation and exchange of information among Member States; works on biennial work programmes (Art 14(1)-(2)).",
+   "evidence": {
+    "provision": "Art. 14(1)",
+    "quote": "a Cooperation Group is established."
+   }
+  },
+  {
+   "name": "CSIRTs network",
+   "role": "designated",
+   "function": "Network of national CSIRTs to promote confidence and operational cooperation among Member States (Art 15(1)), with tasks in Art 15(3).",
+   "evidence": {
+    "provision": "Art. 15(1)",
+    "quote": "a network of national CSIRTs is established."
+   }
+  },
+  {
+   "name": "European cyber crisis liaison organisation network (EU-CyCLONe)",
+   "role": "designated",
+   "function": "Supports coordinated management of large-scale cybersecurity incidents and crises at operational level (Art 16(1)); tasks in Art 16(3).",
+   "evidence": {
+    "provision": "Art. 16(1)",
+    "quote": "EU-CyCLONe is established to support the coordinated management of large-scale cybersecurity incidents and crises at operational level"
+   }
+  },
+  {
+   "name": "CERT-EU (computer emergency response team for the Union's institutions, bodies and agencies)",
+   "role": "listed",
+   "function": "Member of the CSIRTs network (Art 15(2)).",
+   "evidence": {
+    "provision": "Art. 15(2)",
+    "quote": "the computer emergency response team for the Union’s institutions, bodies and agencies (CERT-EU)"
+   }
+  },
+  {
+   "name": "European External Action Service",
+   "role": "listed",
+   "function": "Participates in the Cooperation Group as an observer (Art 14(3)).",
+   "evidence": {
+    "provision": "Art. 14(3)",
+    "quote": "The European External Action Service shall participate in the activities of the Cooperation Group as an observer."
+   }
+  },
+  {
+   "name": "European Supervisory Authorities (ESAs) and competent authorities under Regulation (EU) 2022/2554",
+   "role": "listed",
+   "function": "May participate in the activities of the Cooperation Group (Art 14(3)).",
+   "evidence": {
+    "provision": "Art. 14(3)",
+    "quote": "The European Supervisory Authorities (ESAs) and the competent authorities under Regulation (EU) 2022/2554 may participate in the activities of the Cooperation Group"
+   }
+  },
+  {
+   "name": "Critical Entities Resilience Group",
+   "role": "listed",
+   "function": "Established under Directive (EU) 2022/2557; meets with the Cooperation Group at least once a year (Art 14(9)).",
+   "evidence": {
+    "provision": "Art. 14(9)",
+    "quote": "with the Critical Entities Resilience Group established under Directive (EU) 2022/2557"
+   }
+  },
+  {
+   "name": "European Union Agency for Cybersecurity (ENISA)",
+   "role": "designated",
+   "function": "Creates and maintains the registry of entities referred to in Art. 27(1); receives information from single points of contact (Art. 27(4)); is informed of significant incidents affecting two or more Member States (Art. 23(6)); receives summary reports from single points of contact (Art. 23(9)).",
+   "evidence": {
+    "provision": "Art. 27(1)",
+    "quote": "ENISA shall create and maintain a registry of DNS service providers"
+   }
+  },
+  {
+   "name": "European Commission",
+   "role": "designated",
+   "function": "Adopts delegated acts under Art. 24(2) (subject to Art. 38) and implementing acts specifying significant incidents (Art. 23(11)) and notification formats (Art. 23(11)).",
+   "evidence": {
+    "provision": "Art. 24(2)",
+    "quote": "The Commission is empowered to adopt delegated acts, in accordance with Article 38, to supplement this Directive"
+   }
+  },
+  {
+   "name": "Competent authorities (each Member State)",
+   "role": "designated",
+   "function": "Supervise and take measures to ensure compliance with the Directive (Art. 31(1)); supervise and enforce obligations of essential and important entities (Arts. 32 and 33); impose administrative fines (Art. 34).",
+   "evidence": {
+    "provision": "Art. 31(1)",
+    "quote": "Member States shall ensure that their competent authorities effectively supervise and take the measures necessary to ensure compliance with this Directive."
+   }
+  },
+  {
+   "name": "Single point of contact (each Member State)",
+   "role": "designated",
+   "function": "Forwards notifications to single points of contact of other affected Member States (Art. 23(8)); submits summary reports to ENISA every three months (Art. 23(9)); liaises on cross-border incidents (Art. 23(1)).",
+   "evidence": {
+    "provision": "Art. 23(9)",
+    "quote": "The single point of contact shall submit to ENISA every three months a summary report"
+   }
+  },
+  {
+   "name": "CSIRT (each Member State)",
+   "role": "designated",
+   "function": "Receives notifications of significant incidents (Art. 23(1)); receives early warnings and incident notifications (Art. 23(4)); gives initial feedback and guidance (Art. 23(5)).",
+   "evidence": {
+    "provision": "Art. 23(1)",
+    "quote": "notify, without undue delay, its CSIRT or, where applicable, its competent authority"
+   }
+  },
+  {
+   "name": "Cooperation Group",
+   "role": "listed",
+   "function": "Consulted on draft implementing acts on significant incidents (Art. 23(11)); its reports are taken into account by the Commission in the review (Art. 40).",
+   "evidence": {
+    "provision": "Art. 40",
+    "quote": "the Commission shall take into account the reports of the Cooperation Group and the CSIRTs network"
+   }
+  },
+  {
+   "name": "Oversight Forum (established under Article 32(1) of Regulation (EU) 2022/2554)",
+   "role": "listed",
+   "function": "Informed by competent authorities when exercising supervisory and enforcement powers over essential or important entities designated as critical ICT third-party service providers (Arts. 31(10) and 33(6)).",
+   "evidence": {
+    "provision": "Art. 31(10)",
+    "quote": "inform the Oversight Forum established pursuant to Article 32(1) of Regulation (EU) 2022/2554"
+   }
+  }
+ ],
+ "notes": "Part 1 of 2: covers Recitals (1)-(144) and Articles 1-22 up to Article 22(2). Relations and entities are coded from this part only; Article 22(3) onward and the Annexes are in part 2. Target instrument IDs and LEI/ticker fields are empty strings because no registry IDs or verified identifiers appear in the text (schema requires strings; codebook uses null). Essential and important entities, DNS, TLD and other provider categories are defined classes, not named entities, and are not listed under entities. Definitional references to other acts (Directive 2015/1535, Directive 2005/29/EC, Regulation (EU) 2019/1150, Regulation (EU) No 1025/2012) are not coded as relations here. The amending provisions for Regulation 910/2014 and Directive 2018/1972 are not in part 1; only the title and recital 92 refer to them. No internal inconsistencies identified in this part. Relations and entities are populated, so their section_status entries are set to not_applicable only because the schema requires the fields. Part 2 of 2 (Articles 23-46 and Annexes I-III); relations and entities are drawn only from this part. Annex I and II cross-references are recorded for the scope-defining definitions; other footnoted acts in the annexes are not each recorded as separate rows. Articles 31(10) and 33(6) print a sentence fragment after a full stop ('Regulation (EU) 2022/2554. with this Directive.'), reproduced as in the source. target_instrument_id is left empty because no registry IDs were supplied for the targets. lei and ticker are empty strings (schema requires strings) and are unverified. In section_status, relations and entities are populated above; the status values are a schema formality.",
+ "events": [
+  {
+   "event": "adopted",
+   "date": "2022-12-14",
+   "date_type": "absolute",
+   "date_text": "of 14 December 2022",
+   "applies_to": "Directive as a whole",
+   "evidence": {
+    "provision": "Title",
+    "quote": "of 14 December 2022"
+   }
+  },
+  {
+   "event": "published",
+   "date": "2022-12-27",
+   "date_type": "absolute",
+   "date_text": "27.12.2022",
+   "applies_to": "Directive as a whole (Official Journal L 333/80)",
+   "evidence": {
+    "provision": "Header (Official Journal of the European Union)",
+    "quote": "27.12.2022"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2023-07-17",
+   "date_type": "absolute",
+   "date_text": "by 17 July 2023",
+   "applies_to": "Commission guidelines on application of Art. 4(1) and (2)",
+   "evidence": {
+    "provision": "Art. 4(3)",
+    "quote": "The Commission shall, by 17 July 2023, provide guidelines"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2024-02-01",
+   "date_type": "absolute",
+   "date_text": "By 1 February 2024 and every two years thereafter",
+   "applies_to": "Cooperation Group work programme (first one, then biennial)",
+   "evidence": {
+    "provision": "Art. 14(7)",
+    "quote": "By 1 February 2024 and every two years thereafter, the Cooperation Group shall establish a work programme"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2024-07-17",
+   "date_type": "absolute",
+   "date_text": "By 17 July 2024 and every 18 months thereafter",
+   "applies_to": "EU-CyCLONe report to the European Parliament and the Council assessing its work (first report; then every 18 months)",
+   "evidence": {
+    "provision": "Art. 16(7)",
+    "quote": "By 17 July 2024 and every 18 months thereafter, EU-CyCLONe shall submit"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2024-10-17",
+   "date_type": "absolute",
+   "date_text": "By 17 October 2024",
+   "applies_to": "Commission implementing acts on technical and methodological requirements for DNS, TLD, cloud, data centre, CDN, managed and online platform entities and trust service providers",
+   "evidence": {
+    "provision": "Art. 21(5)",
+    "quote": "By 17 October 2024, the Commission shall adopt implementing acts"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2025-01-17",
+   "date_type": "absolute",
+   "date_text": "on 17 January 2025",
+   "applies_to": "Cooperation Group establishes peer review methodology (Art. 19(1)); also CSIRTs network biennial report by 17 January 2025 (Art. 15(4))",
+   "evidence": {
+    "provision": "Art. 19(1)",
+    "quote": "The Cooperation Group shall, on 17 January 2025, establish"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2025-04-17",
+   "date_type": "absolute",
+   "date_text": "By 17 April 2025",
+   "applies_to": "Member States establish list of essential and important entities (Art. 3(3)); competent authorities notify Commission and Cooperation Group (Art. 3(5))",
+   "evidence": {
+    "provision": "Art. 3(3)",
+    "quote": "By 17 April 2025, Member States shall establish a list of essential and important entities"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "Member States review and, where appropriate, update the list of essential and important entities at least every two years thereafter",
+   "applies_to": "Member States list of essential and important entities",
+   "evidence": {
+    "provision": "Art. 3(3)",
+    "quote": "at least every two years thereafter"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "Member States assess national cybersecurity strategies on a regular basis and at least every five years",
+   "applies_to": "Member States national cybersecurity strategy assessment",
+   "evidence": {
+    "provision": "Art. 7(4)",
+    "quote": "Member States shall assess their national cybersecurity strategies on a regular basis and at least every five years"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "within three months of their adoption",
+   "anchor": "adoption of the national cybersecurity strategy",
+   "depends_on": "adoption of the national cybersecurity strategy",
+   "applies_to": "Member States notify national cybersecurity strategies to the Commission",
+   "offset_value": 3,
+   "offset_unit": "months",
+   "evidence": {
+    "provision": "Art. 7(3)",
+    "quote": "Member States shall notify their national cybersecurity strategies to the Commission within three months of their adoption."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "Within three months of the designation or establishment of the cyber crisis management authority",
+   "anchor": "designation or establishment of the cyber crisis management authority",
+   "depends_on": "designation or establishment of the cyber crisis management authority",
+   "applies_to": "Member State notifies Commission of identity of cyber crisis management authority",
+   "offset_value": 3,
+   "offset_unit": "months",
+   "evidence": {
+    "provision": "Art. 9(5)",
+    "quote": "Within three months of the designation or establishment of the cyber crisis management authority"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "within three months of the adoption of those plans",
+   "anchor": "adoption of the national large-scale cybersecurity incident and crisis response plan",
+   "depends_on": "adoption of the national large-scale cybersecurity incident and crisis response plan",
+   "applies_to": "Member States submit national response plans to the Commission and EU-CyCLONe",
+   "offset_value": 3,
+   "offset_unit": "months",
+   "evidence": {
+    "provision": "Art. 9(5)",
+    "quote": "within three months of the adoption of those plans"
+   }
+  },
+  {
+   "event": "signed",
+   "date": "2022-12-14",
+   "date_type": "absolute",
+   "date_text": "Done at Strasbourg, 14 December 2022.",
+   "applies_to": "Directive signed by the Presidents of the European Parliament and of the Council",
+   "evidence": {
+    "provision": "Final provisions, signature block after Art. 46",
+    "quote": "Done at Strasbourg, 14 December 2022."
+   }
+  },
+  {
+   "event": "passed_chamber",
+   "date": "2022-11-10",
+   "date_type": "absolute",
+   "date_text": "Position of the European Parliament of 10 November 2022",
+   "applies_to": "European Parliament (position at first reading)",
+   "evidence": {
+    "provision": "Footnote (^3)",
+    "quote": "Position of the European Parliament of 10 November 2022"
+   }
+  },
+  {
+   "event": "legislative_approval",
+   "date": "2022-11-28",
+   "date_type": "absolute",
+   "date_text": "decision of the Council of 28 November 2022",
+   "applies_to": "Council decision approving the Parliament position",
+   "evidence": {
+    "provision": "Footnote (^3)",
+    "quote": "decision of the Council of 28 November 2022"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2024-10-17",
+   "date_type": "absolute",
+   "date_text": "By 17 October 2024, the Commission shall",
+   "applies_to": "Commission implementing acts specifying significant incident cases for listed digital and cloud entities (Art. 23(3))",
+   "evidence": {
+    "provision": "Art. 23(11), second subparagraph",
+    "quote": "By 17 October 2024, the Commission shall"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2024-10-17",
+   "date_type": "absolute",
+   "date_text": "by 17 October 2024",
+   "applies_to": "Member States notifying the Commission of the laws adopted for administrative fines on public administration entities where no administrative fines exist",
+   "evidence": {
+    "provision": "Art. 34(8)",
+    "quote": "notify to the Commission the provisions of the laws which it adopts pursuant to this paragraph by 17 October 2024"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2024-10-17",
+   "date_type": "absolute",
+   "date_text": "By 17 October 2024, Member States shall adopt and publish the measures",
+   "applies_to": "Member States: adoption and publication of national measures necessary to comply with the Directive",
+   "evidence": {
+    "provision": "Art. 41(1)",
+    "quote": "By 17 October 2024, Member States shall adopt and publish the measures"
+   }
+  },
+  {
+   "event": "application",
+   "date": "2024-10-18",
+   "date_type": "absolute",
+   "date_text": "They shall apply those measures from 18 October 2024.",
+   "applies_to": "National measures adopted to comply with the Directive",
+   "evidence": {
+    "provision": "Art. 41(1)",
+    "quote": "They shall apply those measures from 18 October 2024."
+   }
+  },
+  {
+   "event": "amended",
+   "date": "2024-10-18",
+   "date_type": "absolute",
+   "date_text": "Article 19 is deleted with effect from 18 October 2024.",
+   "applies_to": "Regulation (EU) No 910/2014, Article 19 (deleted)",
+   "evidence": {
+    "provision": "Art. 42",
+    "quote": "In Regulation (EU) No 910/2014, Article 19 is deleted with effect from 18 October 2024."
+   }
+  },
+  {
+   "event": "amended",
+   "date": "2024-10-18",
+   "date_type": "absolute",
+   "date_text": "Articles 40 and 41 are deleted with effect from 18 October 2024",
+   "applies_to": "Directive (EU) 2018/1972, Articles 40 and 41 (deleted)",
+   "evidence": {
+    "provision": "Art. 43",
+    "quote": "In Directive (EU) 2018/1972, Articles 40 and 41 are deleted with effect from 18 October 2024."
+   }
+  },
+  {
+   "event": "repealed",
+   "date": "2024-10-18",
+   "date_type": "absolute",
+   "date_text": "Directive (EU) 2016/1148 is repealed with effect from 18 October 2024.",
+   "applies_to": "Directive (EU) 2016/1148 (NIS 1)",
+   "evidence": {
+    "provision": "Art. 44",
+    "quote": "Directive (EU) 2016/1148 is repealed with effect from 18 October 2024."
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2023-01-16",
+   "date_type": "relative",
+   "date_text": "shall enter into force on the twentieth day following that of its publication in the Official Journal of the European Union",
+   "anchor": "publication in the Official Journal of the European Union",
+   "applies_to": "This Directive",
+   "offset_value": 20,
+   "offset_unit": "days",
+   "anchor_event": "published",
+   "evidence": {
+    "provision": "Art. 45",
+    "quote": "This Directive shall enter into force on the twentieth day following that of its publication in the Official Journal of the European Union."
+   },
+   "date_computed_from": "published 2022-12-27 (text) + 20 days"
+  },
+  {
+   "event": "application",
+   "date": "2023-01-16",
+   "date_type": "absolute",
+   "date_text": "for a period of five years from 16 January 2023",
+   "applies_to": "Commission power to adopt delegated acts under Art. 24(2)",
+   "evidence": {
+    "provision": "Art. 38(2)",
+    "quote": "for a period of five years from 16 January 2023"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2025-01-17",
+   "date_type": "absolute",
+   "date_text": "by 17 January 2025",
+   "applies_to": "Entities referred to in Art. 27(1) submitting information to competent authorities",
+   "evidence": {
+    "provision": "Art. 27(2)",
+    "quote": "to submit the following information to the competent authorities by 17 January 2025"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2025-01-17",
+   "date_type": "absolute",
+   "date_text": "by 17 January 2025",
+   "applies_to": "Member States notifying the Commission of penalty rules and measures",
+   "evidence": {
+    "provision": "Art. 36",
+    "quote": "Member States shall, by 17 January 2025, notify the Commission of those rules"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "without undue delay and in any event within 24 hours of becoming aware of the significant incident, an early warning",
+   "depends_on": "becoming aware of the significant incident",
+   "applies_to": "Early warning to CSIRT or competent authority",
+   "evidence": {
+    "provision": "Art. 23(4), point (a)",
+    "quote": "within 24 hours of becoming aware of the significant incident"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "without undue delay and in any event within 72 hours of becoming aware of the significant incident, an incident notification",
+   "depends_on": "becoming aware of the significant incident",
+   "applies_to": "Incident notification to CSIRT or competent authority",
+   "evidence": {
+    "provision": "Art. 23(4), point (b)",
+    "quote": "within 72 hours of becoming aware of the significant incident, an incident notification"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "in any event within 24 hours of becoming aware of the significant incident",
+   "depends_on": "becoming aware of the significant incident",
+   "applies_to": "Trust service providers: notification of significant incidents affecting trust services",
+   "evidence": {
+    "provision": "Art. 23(4), second subparagraph",
+    "quote": "in any event within 24 hours of becoming aware of the significant incident."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "a final report not later than one month after the submission of the incident notification under point (b)",
+   "depends_on": "submission of the incident notification under Art. 23(4), point (b)",
+   "applies_to": "Final report on significant incident",
+   "evidence": {
+    "provision": "Art. 23(4), point (d)",
+    "quote": "a final report not later than one month after the submission of the incident notification under point (b)"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "a final report within one month of their handling of the incident",
+   "depends_on": "handling of the ongoing incident at the time of the final report",
+   "applies_to": "Final report for an ongoing incident",
+   "evidence": {
+    "provision": "Art. 23(4), point (e)",
+    "quote": "a final report within one month of their handling of the incident"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "where possible within 24 hours of receiving the early warning referred to in paragraph 4, point (a)",
+   "depends_on": "receipt of the early warning under Art. 23(4), point (a)",
+   "applies_to": "CSIRT or competent authority response to notifying entity",
+   "evidence": {
+    "provision": "Art. 23(5)",
+    "quote": "where possible within 24 hours of receiving the early warning referred to in paragraph 4, point (a)"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "without delay and in any event within three months of the date of the change",
+   "depends_on": "date of the change to information submitted under Art. 27(2)",
+   "applies_to": "Entities notifying changes to registry information",
+   "evidence": {
+    "provision": "Art. 27(3)",
+    "quote": "without delay and in any event within three months of the date of the change"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "without undue delay and in any event within 72 hours of receipt of any requests for access",
+   "depends_on": "receipt of a request for access to domain name registration data",
+   "applies_to": "TLD name registries and entities providing domain name registration services: replies to access requests",
+   "evidence": {
+    "provision": "Art. 28(5)",
+    "quote": "reply without undue delay and in any event within 72 hours of receipt of any requests for access"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "every three months a summary report",
+   "applies_to": "Single point of contact submitting summary reports to ENISA",
+   "evidence": {
+    "provision": "Art. 23(9)",
+    "quote": "shall submit to ENISA every three months a summary report"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "every six months",
+   "applies_to": "ENISA informing the Cooperation Group and the CSIRTs network about its findings on notifications",
+   "evidence": {
+    "provision": "Art. 23(9)",
+    "quote": "ENISA shall inform the Cooperation Group and the CSIRTs network about its findings on notifications received every six months."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2027-10-17",
+   "date_type": "recurring",
+   "date_text": "By 17 October 2027 and every 36 months thereafter, the Commission shall review",
+   "applies_to": "Commission review of the functioning of the Directive",
+   "evidence": {
+    "provision": "Art. 40",
+    "quote": "By 17 October 2027 and every 36 months thereafter, the Commission shall review"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "other",
+   "variable_text": "medium-sized enterprise size ceiling (Recommendation 2003/361/EC, Annex Art. 2(1))",
+   "operator": "=",
+   "value": null,
+   "value_text": "medium-sized enterprises under Article 2 of the Annex to Recommendation 2003/361/EC, or exceed the ceilings for medium-sized enterprises provided for in paragraph 1 of that Article",
+   "unit": "",
+   "measurement": "Size class as defined in Recommendation 2003/361/EC (not stated in this text)",
+   "level": "entity",
+   "trigger": "scope_definition",
+   "consequence": "Entities of a type referred to in Annex I or II that meet the size criterion fall within the scope of the Directive (general size-cap rule)",
+   "conditions": "Entity of a type referred to in Annex I or II; provides services or carries out activities within the Union",
+   "depends_on": "Recommendation 2003/361/EC, Annex Art. 2(1)",
+   "evidence": {
+    "provision": "Art. 2(1)",
+    "quote": "qualify as medium-sized enterprises under Article 2 of the Annex to Recommendation 2003/361/EC, or exceed the ceilings for medium-sized enterprises provided for in paragraph 1 of that Article"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "medium-sized enterprise ceiling for Annex I entities to be essential (Recommendation 2003/361/EC, Annex Art. 2(1))",
+   "operator": "=",
+   "value": null,
+   "value_text": "entities of a type referred to in Annex I which exceed the ceilings for medium-sized enterprises provided for in Article 2(1) of the Annex to Recommendation 2003/361/EC",
+   "unit": "",
+   "measurement": "Size class as defined in Recommendation 2003/361/EC (not stated in this text)",
+   "level": "entity",
+   "trigger": "designation_category",
+   "consequence": "Entity is considered an essential entity",
+   "conditions": "Entity of a type referred to in Annex I",
+   "depends_on": "Recommendation 2003/361/EC, Annex Art. 2(1)",
+   "evidence": {
+    "provision": "Art. 3(1)(a)",
+    "quote": "entities of a type referred to in Annex I which exceed the ceilings for medium-sized enterprises provided for in Article 2(1) of the Annex to Recommendation 2003/361/EC"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "qualification as medium-sized enterprise for public electronic communications providers (Recommendation 2003/361/EC, Annex Art. 2)",
+   "operator": "=",
+   "value": null,
+   "value_text": "providers of public electronic communications networks or of publicly available electronic communications services which qualify as medium-sized enterprises under Article 2 of the Annex to Recommendation 2003/361/EC",
+   "unit": "",
+   "measurement": "Size class as defined in Recommendation 2003/361/EC (not stated in this text)",
+   "level": "entity",
+   "trigger": "designation_category",
+   "consequence": "Entity is considered an essential entity",
+   "conditions": "Provider of public electronic communications networks or of publicly available electronic communications services",
+   "depends_on": "Recommendation 2003/361/EC, Annex Art. 2",
+   "evidence": {
+    "provision": "Art. 3(1)(c)",
+    "quote": "providers of public electronic communications networks or of publicly available electronic communications services which qualify as medium-sized enterprises under Article 2 of the Annex to Recommendation 2003/361/EC"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "significant impact on Member States for a large-scale cybersecurity incident",
+   "operator": ">=",
+   "value": 2,
+   "value_text": "at least two Member States",
+   "unit": "Member States",
+   "measurement": "Impact on Member States; the text does not specify a measurement method",
+   "level": "jurisdiction",
+   "trigger": "scope_definition",
+   "consequence": "Incident qualifies as a large-scale cybersecurity incident (alternative to exceeding a Member State's capacity to respond)",
+   "conditions": "Alternatively, the incident causes a level of disruption that exceeds a Member State's capacity to respond to it",
+   "evidence": {
+    "provision": "Art. 6(7)",
+    "quote": "which has a significant impact on at least two Member States"
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "network and information system",
+   "defined_in": "this Directive",
+   "evidence": {
+    "provision": "Art. 6(1)(b)",
+    "quote": "any device or group of interconnected or related devices, one or more of which, pursuant to a programme, carry out automatic processing of digital data"
+   }
+  },
+  {
+   "term": "cybersecurity",
+   "defined_in": "Regulation (EU) 2019/881",
+   "evidence": {
+    "provision": "Art. 6(3)",
+    "quote": "‘cybersecurity’ means cybersecurity as defined in Article 2, point (1), of Regulation (EU) 2019/881;"
+   }
+  },
+  {
+   "term": "incident",
+   "defined_in": "this Directive",
+   "evidence": {
+    "provision": "Art. 6(6)",
+    "quote": "‘incident’ means an event compromising the availability, authenticity, integrity or confidentiality of stored, transmitted or processed data"
+   }
+  },
+  {
+   "term": "large-scale cybersecurity incident",
+   "defined_in": "this Directive",
+   "evidence": {
+    "provision": "Art. 6(7)",
+    "quote": "‘large-scale cybersecurity incident’ means an incident which causes a level of disruption that exceeds a Member State’s capacity to respond to it"
+   }
+  },
+  {
+   "term": "significant cyber threat",
+   "defined_in": "this Directive",
+   "evidence": {
+    "provision": "Art. 6(11)",
+    "quote": "‘significant cyber threat’ means a cyber threat which, based on its technical characteristics, can be assumed to have the potential to have a severe impact"
+   }
+  },
+  {
+   "term": "vulnerability",
+   "defined_in": "this Directive",
+   "evidence": {
+    "provision": "Art. 6(15)",
+    "quote": "‘vulnerability’ means a weakness, susceptibility or flaw of ICT products or ICT services that can be exploited by a cyber threat"
+   }
+  },
+  {
+   "term": "internet exchange point",
+   "defined_in": "this Directive",
+   "evidence": {
+    "provision": "Art. 6(18)",
+    "quote": "‘internet exchange point’ means a network facility which enables the interconnection of more than two independent networks"
+   }
+  },
+  {
+   "term": "DNS service provider",
+   "defined_in": "this Directive",
+   "evidence": {
+    "provision": "Art. 6(20)",
+    "quote": "‘DNS service provider’ means an entity that provides:"
+   }
+  },
+  {
+   "term": "top-level domain name registry (TLD name registry)",
+   "defined_in": "this Directive",
+   "evidence": {
+    "provision": "Art. 6(21)",
+    "quote": "‘top-level domain name registry’ or ‘TLD name registry’ means an entity which has been delegated a specific TLD"
+   }
+  },
+  {
+   "term": "entity providing domain name registration services",
+   "defined_in": "this Directive",
+   "evidence": {
+    "provision": "Art. 6(22)",
+    "quote": "‘entity providing domain name registration services’ means a registrar or an agent acting on behalf of registrars"
+   }
+  },
+  {
+   "term": "digital service",
+   "defined_in": "Directive (EU) 2015/1535",
+   "evidence": {
+    "provision": "Art. 6(23)",
+    "quote": "‘digital service’ means a service as defined in Article 1(1), point (b), of Directive (EU) 2015/1535"
+   }
+  },
+  {
+   "term": "trust service provider",
+   "defined_in": "Regulation (EU) No 910/2014",
+   "evidence": {
+    "provision": "Art. 6(25)",
+    "quote": "‘trust service provider’ means a trust service provider as defined in Article 3, point (19), of Regulation (EU) No 910/2014"
+   }
+  },
+  {
+   "term": "qualified trust service provider",
+   "defined_in": "Regulation (EU) No 910/2014",
+   "evidence": {
+    "provision": "Art. 6(27)",
+    "quote": "‘qualified trust service provider’ means a qualified trust service provider as defined in Article 3, point (20), of Regulation (EU) No 910/2014"
+   }
+  },
+  {
+   "term": "online marketplace",
+   "defined_in": "Directive 2005/29/EC",
+   "evidence": {
+    "provision": "Art. 6(28)",
+    "quote": "‘online marketplace’ means an online marketplace as defined in Article 2, point (n), of Directive 2005/29/EC"
+   }
+  },
+  {
+   "term": "online search engine",
+   "defined_in": "Regulation (EU) 2019/1150",
+   "evidence": {
+    "provision": "Art. 6(29)",
+    "quote": "‘online search engine’ means an online search engine as defined in Article 2, point (5), of Regulation (EU) 2019/1150"
+   }
+  },
+  {
+   "term": "cloud computing service",
+   "defined_in": "this Directive",
+   "evidence": {
+    "provision": "Art. 6(30)",
+    "quote": "‘cloud computing service’ means a digital service that enables on-demand administration and broad remote access to a scalable and elastic pool of shareable computing resources"
+   }
+  },
+  {
+   "term": "data centre service",
+   "defined_in": "this Directive",
+   "evidence": {
+    "provision": "Art. 6(31)",
+    "quote": "‘data centre service’ means a service that encompasses structures, or groups of structures, dedicated to the centralised accommodation"
+   }
+  },
+  {
+   "term": "content delivery network",
+   "defined_in": "this Directive",
+   "evidence": {
+    "provision": "Art. 6(32)",
+    "quote": "‘content delivery network’ means a network of geographically distributed servers"
+   }
+  },
+  {
+   "term": "social networking services platform",
+   "defined_in": "this Directive",
+   "evidence": {
+    "provision": "Art. 6(33)",
+    "quote": "‘social networking services platform’ means a platform that enables end-users to connect, share, discover and communicate with each other"
+   }
+  },
+  {
+   "term": "representative",
+   "defined_in": "this Directive",
+   "evidence": {
+    "provision": "Art. 6(34)",
+    "quote": "‘representative’ means a natural or legal person established in the Union explicitly designated to act on behalf of"
+   }
+  },
+  {
+   "term": "public administration entity",
+   "defined_in": "this Directive",
+   "evidence": {
+    "provision": "Art. 6(35)",
+    "quote": "‘public administration entity’ means an entity recognised as such in a Member State in accordance with national law, not including the judiciary, parliaments or central banks"
+   }
+  },
+  {
+   "term": "public electronic communications network",
+   "defined_in": "Directive (EU) 2018/1972",
+   "evidence": {
+    "provision": "Art. 6(36)",
+    "quote": "‘public electronic communications network’ means a public electronic communications network as defined in Article 2, point (8), of Directive (EU) 2018/1972"
+   }
+  },
+  {
+   "term": "electronic communications service",
+   "defined_in": "Directive (EU) 2018/1972",
+   "evidence": {
+    "provision": "Art. 6(37)",
+    "quote": "‘electronic communications service’ means an electronic communications service as defined in Article 2, point (4), of Directive (EU) 2018/1972"
+   }
+  },
+  {
+   "term": "entity",
+   "defined_in": "this Directive",
+   "evidence": {
+    "provision": "Art. 6(38)",
+    "quote": "‘entity’ means a natural or legal person created and recognised as such under the national law"
+   }
+  },
+  {
+   "term": "managed service provider",
+   "defined_in": "this Directive",
+   "evidence": {
+    "provision": "Art. 6(39)",
+    "quote": "‘managed service provider’ means an entity that provides services related to the installation, management, operation or maintenance of ICT products"
+   }
+  },
+  {
+   "term": "managed security service provider",
+   "defined_in": "this Directive",
+   "evidence": {
+    "provision": "Art. 6(40)",
+    "quote": "‘managed security service provider’ means a managed service provider that carries out or provides assistance for activities relating to cybersecurity risk management"
+   }
+  },
+  {
+   "term": "research organisation",
+   "defined_in": "this Directive",
+   "evidence": {
+    "provision": "Art. 6(41)",
+    "quote": "‘research organisation’ means an entity which has as its primary goal to conduct applied research or experimental development"
+   }
+  },
+  {
+   "term": "significant incident",
+   "defined_in": "this Directive",
+   "evidence": {
+    "provision": "Art. 23(3)",
+    "quote": "An incident shall be considered to be significant if:"
+   }
+  },
+  {
+   "term": "main establishment",
+   "defined_in": "this Directive",
+   "evidence": {
+    "provision": "Art. 26(2)",
+    "quote": "shall be considered to have its main establishment in the Union in the Member State where the decisions related to the cybersecurity risk-management measures are predominantly taken"
+   }
+  },
+  {
+   "term": "personal data breach",
+   "defined_in": "Regulation (EU) 2016/679, Article 4, point (12)",
+   "evidence": {
+    "provision": "Art. 35(1)",
+    "quote": "as defined in Article 4, point (12), of Regulation (EU) 2016/679"
+   }
+  },
+  {
+   "term": "electricity undertakings",
+   "defined_in": "Directive (EU) 2019/944, Article 2, point (57)",
+   "evidence": {
+    "provision": "Annex I, point 1(a)",
+    "quote": "Electricity undertakings as defined in Article 2, point (57), of Directive (EU) 2019/944"
+   }
+  },
+  {
+   "term": "operators of district heating or district cooling",
+   "defined_in": "Directive (EU) 2018/2001, Article 2, point (19)",
+   "evidence": {
+    "provision": "Annex I, point 1(b)",
+    "quote": "Operators of district heating or district cooling as defined in Article 2, point (19), of Directive (EU) 2018/2001"
+   }
+  },
+  {
+   "term": "air carriers",
+   "defined_in": "Regulation (EC) No 300/2008, Article 3, point (4)",
+   "evidence": {
+    "provision": "Annex I, point 2(a)",
+    "quote": "Air carriers as defined in Article 3, point (4), of Regulation (EC) No 300/2008 used for commercial purposes"
+   }
+  },
+  {
+   "term": "credit institutions",
+   "defined_in": "Regulation (EU) No 575/2013, Article 4, point (1)",
+   "evidence": {
+    "provision": "Annex I, point 3",
+    "quote": "Credit institutions as defined in Article 4, point (1), of Regulation (EU) No 575/2013"
+   }
+  },
+  {
+   "term": "operators of trading venues",
+   "defined_in": "Directive 2014/65/EU, Article 4, point (24)",
+   "evidence": {
+    "provision": "Annex I, point 4",
+    "quote": "Operators of trading venues as defined in Article 4, point (24), of Directive 2014/65/EU"
+   }
+  },
+  {
+   "term": "central counterparties (CCPs)",
+   "defined_in": "Regulation (EU) No 648/2012, Article 2, point (1)",
+   "evidence": {
+    "provision": "Annex I, point 4",
+    "quote": "Central counterparties (CCPs) as defined in Article 2, point (1), of Regulation (EU) No 648/2012"
+   }
+  },
+  {
+   "term": "healthcare providers",
+   "defined_in": "Directive 2011/24/EU, Article 3, point (g)",
+   "evidence": {
+    "provision": "Annex I, point 5",
+    "quote": "Healthcare providers as defined in Article 3, point (g), of Directive 2011/24/EU"
+   }
+  },
+  {
+   "term": "suppliers and distributors of water intended for human consumption",
+   "defined_in": "Directive (EU) 2020/2184, Article 2, point (1)(a)",
+   "evidence": {
+    "provision": "Annex I, point 6",
+    "quote": "Suppliers and distributors of water intended for human consumption as defined in Article 2, point (1)(a), of Directive (EU) 2020/2184"
+   }
+  },
+  {
+   "term": "urban waste water, domestic waste water and industrial waste water",
+   "defined_in": "Council Directive 91/271/EEC, Article 2, points (1), (2) and (3)",
+   "evidence": {
+    "provision": "Annex I, point 7",
+    "quote": "Undertakings collecting, disposing of or treating urban waste water, domestic waste water or industrial waste water as defined in Article 2, points (1), (2) and (3), of Council Directive 91/271/EEC"
+   }
+  },
+  {
+   "term": "postal service providers",
+   "defined_in": "Directive 97/67/EC, Article 2, point (1a)",
+   "evidence": {
+    "provision": "Annex II, point 1",
+    "quote": "Postal service providers as defined in Article 2, point (1a), of Directive 97/67/EC"
+   }
+  },
+  {
+   "term": "undertakings carrying out waste management",
+   "defined_in": "Directive 2008/98/EC, Article 3, point (9)",
+   "evidence": {
+    "provision": "Annex II, point 2",
+    "quote": "Undertakings carrying out waste management as defined in Article 3, point (9), of Directive 2008/98/EC"
+   }
+  },
+  {
+   "term": "entities manufacturing medical devices",
+   "defined_in": "Regulation (EU) 2017/745, Article 2, point (1)",
+   "evidence": {
+    "provision": "Annex II, point 5(a)",
+    "quote": "Entities manufacturing medical devices as defined in Article 2, point (1), of Regulation (EU) 2017/745"
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "data_minimization",
+   "addressee": "enterprise",
+   "also_addressees": [
+    "government_agency"
+   ],
+   "modality": "shall",
+   "summary": "Entities, competent authorities, single points of contact and CSIRTs process personal data only to the extent necessary for the Directive and in accordance with Regulation (EU) 2016/679.",
+   "evidence": {
+    "provision": "Art. 2(14)",
+    "quote": "Entities, the competent authorities, the single points of contact and the CSIRTs shall process personal data to the extent necessary for the purposes of this Directive"
+   }
+  },
+  {
+   "type": "data_minimization",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Confidential information is exchanged with the Commission and other authorities only where necessary for the application of the Directive, limited to what is relevant and proportionate, and its confidentiality is preserved.",
+   "evidence": {
+    "provision": "Art. 2(13)",
+    "quote": "shall be exchanged with the Commission and other relevant authorities in accordance with this Directive only where that exchange is necessary for the application of this Directive"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States must adopt national cybersecurity strategies and designate or establish competent authorities, cyber crisis management authorities, single points of contact and CSIRTs (obligations stated in the scope of the Directive).",
+   "evidence": {
+    "provision": "Art. 1(2)(a)",
+    "quote": "obligations that require Member States to adopt national cybersecurity strategies"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States establish a list of essential and important entities and entities providing domain name registration services, and review and update it at least every two years thereafter.",
+   "applies_from": "17 April 2025",
+   "evidence": {
+    "provision": "Art. 3(3)",
+    "quote": "By 17 April 2025, Member States shall establish a list of essential and important entities"
+   }
+  },
+  {
+   "type": "registration_notification",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Entities listed under Art. 3(3) submit to the competent authorities their name, address and up-to-date contact details, sector and subsector, and Member States where they provide services, and notify changes within two weeks of the change.",
+   "evidence": {
+    "provision": "Art. 3(4)",
+    "quote": "Member States shall require the entities referred to in that paragraph to submit at least the following information to the competent authorities"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Competent authorities notify the Commission and the Cooperation Group of the number of essential and important entities per sector and subsector, and notify the Commission of further information on entities identified under Art. 2(2)(b) to (e).",
+   "applies_from": "17 April 2025",
+   "evidence": {
+    "provision": "Art. 3(5)",
+    "quote": "By 17 April 2025 and every two years thereafter, the competent authorities shall notify:"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Commission provides guidelines clarifying the application of the sector-specific Union legal act provisions in Art. 4(1) and (2).",
+   "applies_from": "17 July 2023",
+   "evidence": {
+    "provision": "Art. 4(3)",
+    "quote": "The Commission shall, by 17 July 2023, provide guidelines clarifying the application of paragraphs 1 and 2."
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Each Member State adopts a national cybersecurity strategy with strategic objectives, resources, policy and regulatory measures, including the listed elements (governance, risk assessment, preparedness, policies on supply chain, procurement, vulnerabilities, education, active cyber protection); strategy is assessed on a regular basis and at least every five years.",
+   "evidence": {
+    "provision": "Art. 7(1)",
+    "quote": "Each Member State shall adopt a national cybersecurity strategy that provides for the strategic objectives"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States notify their national cybersecurity strategies to the Commission within three months of their adoption, and may exclude national security information.",
+   "evidence": {
+    "provision": "Art. 7(3)",
+    "quote": "Member States shall notify their national cybersecurity strategies to the Commission within three months of their adoption."
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States designate or establish one or more competent authorities for cybersecurity and supervisory tasks, and a single point of contact; they ensure adequate resources for these authorities and the single point of contact.",
+   "evidence": {
+    "provision": "Art. 8(1)",
+    "quote": "Each Member State shall designate or establish one or more competent authorities responsible for cybersecurity"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Each Member State notifies the Commission without undue delay of the identity of the competent authority and single point of contact, their tasks and any changes, and makes the identity of its competent authority public.",
+   "evidence": {
+    "provision": "Art. 8(6)",
+    "quote": "Each Member State shall notify the Commission without undue delay of the identity of the competent authority"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Each Member State designates or establishes one or more cyber crisis management authorities, ensures their adequate resources, identifies crisis capabilities, and adopts a national large-scale cybersecurity incident and crisis response plan with the elements listed.",
+   "evidence": {
+    "provision": "Art. 9(1)",
+    "quote": "Each Member State shall designate or establish one or more competent authorities responsible for the management of large-scale cybersecurity incidents and crises"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States notify the Commission of the identity of the cyber crisis management authority within three months of its designation, and submit response plan information to the Commission and EU-CyCLONe within three months of adoption of the plans.",
+   "evidence": {
+    "provision": "Art. 9(5)",
+    "quote": "Within three months of the designation or establishment of the cyber crisis management authority referred to in paragraph 1, each Member State shall notify the Commission"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States designate or establish one or more CSIRTs covering the sectors in Annexes I and II, ensure they have adequate resources and a secure communication and information infrastructure, and ensure their cooperation in the CSIRTs network and with entities and third-country CSIRTs.",
+   "evidence": {
+    "provision": "Art. 10(1)",
+    "quote": "Each Member State shall designate or establish one or more CSIRTs."
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Each Member State notifies the Commission without undue delay of the identity of its CSIRTs and of the CSIRT designated as coordinator, and of their tasks and any changes.",
+   "evidence": {
+    "provision": "Art. 10(9)",
+    "quote": "Each Member State shall notify the Commission without undue delay of the identity of the CSIRT referred to in paragraph 1"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "CSIRTs comply with listed requirements (communication channels, secure sites, request routing, confidentiality, staffing, redundant systems) and jointly have the technical capabilities for the tasks listed in Art. 11(3), including monitoring, early warnings, incident response, forensic analysis and proactive scanning on request.",
+   "evidence": {
+    "provision": "Art. 11(1)",
+    "quote": "The CSIRTs shall comply with the following requirements:"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Each Member State designates one of its CSIRTs as coordinator for coordinated vulnerability disclosure, which acts as trusted intermediary and enables anonymous vulnerability reporting, with follow-up and anonymity ensured.",
+   "evidence": {
+    "provision": "Art. 12(1)",
+    "quote": "Each Member State shall designate one of its CSIRTs as a coordinator for the purposes of coordinated vulnerability disclosure."
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "ENISA develops and maintains, after consulting the Cooperation Group, a European vulnerability database with the listed content and security measures.",
+   "evidence": {
+    "provision": "Art. 12(2)",
+    "quote": "ENISA shall develop and maintain, after consulting the Cooperation Group, a European vulnerability database."
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Competent authorities, single points of contact and CSIRTs of the same Member State cooperate; CSIRTs or competent authorities receive significant incident notifications and incident, cyber threat and near-miss notifications, and inform the single points of contact; and cooperation with listed national authorities is ensured.",
+   "evidence": {
+    "provision": "Art. 13(2)",
+    "quote": "Member States shall ensure that their CSIRTs or, where applicable, their competent authorities, receive notifications of significant incidents"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States simplify reporting through technical means for the notifications referred to in Art. 23 and Art. 30.",
+   "evidence": {
+    "provision": "Art. 13(6)",
+    "quote": "Member States shall simplify the reporting through technical means for notifications referred to in Articles 23 and 30."
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Cooperation Group, composed of Member State, Commission and ENISA representatives, carries out the listed tasks (guidance on transposition, information exchange, risk assessments of critical supply chains, mutual assistance discussion, peer review methodology, reports, state-of-play assessments); Member States ensure effective cooperation of their representatives.",
+   "evidence": {
+    "provision": "Art. 14(4)",
+    "quote": "The Cooperation Group shall have the following tasks:"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Cooperation Group establishes a biennial work programme on actions to implement its objectives and tasks.",
+   "applies_from": "1 February 2024",
+   "evidence": {
+    "provision": "Art. 14(7)",
+    "quote": "By 1 February 2024 and every two years thereafter, the Cooperation Group shall establish a work programme"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Cooperation Group meets regularly and at least once a year with the Critical Entities Resilience Group established under Directive (EU) 2022/2557.",
+   "evidence": {
+    "provision": "Art. 14(9)",
+    "quote": "The Cooperation Group shall meet on a regular basis and in any event at least once a year with the Critical Entities Resilience Group"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The CSIRTs network carries out the listed tasks (information exchange, coordinated response, mutual assistance support, cooperation with SOCs, guidelines), and adopts its rules of procedure and procedural arrangements with EU-CyCLONe.",
+   "evidence": {
+    "provision": "Art. 15(3)",
+    "quote": "The CSIRTs network shall have the following tasks:"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The CSIRTs network assesses progress on operational cooperation and adopts a report, with conclusions and recommendations based on peer reviews, submitted to the Cooperation Group.",
+   "applies_from": "17 January 2025",
+   "evidence": {
+    "provision": "Art. 15(4)",
+    "quote": "By 17 January 2025, and every two years thereafter, the CSIRTs network shall, for the purpose of the review"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "EU-CyCLONe carries out the listed tasks (preparedness, shared situational awareness, impact assessment, coordination of crisis management, discussion of response plans), adopts its rules of procedure, and reports regularly to the Cooperation Group.",
+   "evidence": {
+    "provision": "Art. 16(3)",
+    "quote": "EU-CyCLONe shall have the following tasks:"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "EU-CyCLONe submits to the European Parliament and the Council a report assessing its work every 18 months.",
+   "applies_from": "17 July 2024",
+   "evidence": {
+    "provision": "Art. 16(7)",
+    "quote": "By 17 July 2024 and every 18 months thereafter, EU-CyCLONe shall submit to the European Parliament and to the Council a report"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "International agreements concluded by the Union on participation of third countries or international organisations in the Cooperation Group, CSIRTs network and EU-CyCLONe must comply with Union data protection law.",
+   "evidence": {
+    "provision": "Art. 17",
+    "quote": "Such agreements shall comply with Union data protection law."
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "ENISA adopts, with the Commission and the Cooperation Group, a biennial report on the state of cybersecurity in the Union, submits and presents it to the European Parliament, makes it available in machine-readable data, and develops the methodology for the aggregated assessment.",
+   "evidence": {
+    "provision": "Art. 18(1)",
+    "quote": "ENISA shall adopt, in cooperation with the Commission and the Cooperation Group, a biennial report on the state of cybersecurity in the Union"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Cooperation Group, with the Commission and ENISA, establishes the methodology and organisational aspects of peer reviews on 17 January 2025.",
+   "applies_from": "17 January 2025",
+   "evidence": {
+    "provision": "Art. 19(1)",
+    "quote": "The Cooperation Group shall, on 17 January 2025, establish, with the assistance of the Commission and ENISA"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States subject to a peer review notify participating Member States of its scope; peer review experts follow codes of conduct and confidentiality; expert reports are submitted to the Cooperation Group and CSIRTs network.",
+   "evidence": {
+    "provision": "Art. 19(4)",
+    "quote": "Before commencing a peer review as referred to in paragraph 1, Member States shall notify the participating Member States of its scope"
+   }
+  },
+  {
+   "type": "management_system",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Member States ensure that management bodies of essential and important entities approve the cybersecurity risk-management measures taken under Art. 21 and oversee their implementation.",
+   "evidence": {
+    "provision": "Art. 20(1)",
+    "quote": "Member States shall ensure that the management bodies of essential and important entities approve the cybersecurity risk-management measures"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Members of the management bodies of essential and important entities are required to follow cybersecurity training; essential and important entities are encouraged to offer similar training to employees on a regular basis.",
+   "evidence": {
+    "provision": "Art. 20(2)",
+    "quote": "Member States shall ensure that the members of the management bodies of essential and important entities are required to follow training"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Essential and important entities take appropriate and proportionate technical, operational and organisational measures to manage risks to network and information systems, including the all-hazards measures listed in Art. 21(2) (policies on risk analysis, incident handling, business continuity, supply chain security, vulnerability handling, cryptography, access control, multi-factor authentication and similar); when assessing supplier measures they take into account supplier vulnerabilities and, under Art. 21(3), the results of coordinated supply chain risk assessments; and an entity that finds it does not comply takes without undue delay corrective measures (Art. 21(4)).",
+   "evidence": {
+    "provision": "Art. 21(1)",
+    "quote": "Member States shall ensure that essential and important entities take appropriate and proportionate technical, operational and organisational measures"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Commission adopts implementing acts laying down the technical and methodological requirements of the Art. 21(2) measures for DNS service providers, TLD name registries, cloud computing, data centre, content delivery network, managed service, online marketplace, search engine, social networking and trust service providers.",
+   "applies_from": "17 October 2024",
+   "evidence": {
+    "provision": "Art. 21(5)",
+    "quote": "By 17 October 2024, the Commission shall adopt implementing acts laying down the technical and the methodological requirements of the measures referred to in paragraph 2"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Commission, after consulting the Cooperation Group, ENISA and relevant stakeholders, identifies the specific critical ICT services, ICT systems or ICT products that may be subject to coordinated security risk assessments.",
+   "evidence": {
+    "provision": "Art. 22(2)",
+    "quote": "The Commission, after consulting the Cooperation Group and ENISA, and, where necessary, relevant stakeholders, shall identify the specific critical ICT services"
+   }
+  },
+  {
+   "type": "incident_reporting",
+   "addressee": "essential_entity",
+   "modality": "shall",
+   "summary": "Essential and important entities must notify their CSIRT or competent authority without undue delay of any significant incident, and report information enabling cross-border impact to be determined. Where appropriate, they must also notify affected service recipients.",
+   "conditional_on": "Incident has a significant impact on the provision of the entity's services (significant incident as defined in Art. 23(3))",
+   "evidence": {
+    "provision": "Art. 23(1)",
+    "quote": "Each Member State shall ensure that essential and important entities notify, without undue delay, its CSIRT or, where applicable, its competent authority"
+   }
+  },
+  {
+   "type": "incident_reporting",
+   "addressee": "essential_entity",
+   "modality": "shall",
+   "summary": "Staged reporting for significant incidents: early warning within 24 hours of awareness (indicating suspected unlawful or malicious acts and possible cross-border impact); incident notification within 72 hours with initial assessment; intermediate report on request; final report within one month of the incident notification. Trust service providers have a 24-hour notification under the derogation in the last subparagraph of Art. 23(4).",
+   "applies_from": "24 hours after becoming aware of the significant incident (early warning); 72 hours after becoming aware (incident notification); one month after the incident notification (final report)",
+   "conditional_on": "Significant incident under Art. 23(3); intermediate report only upon request of CSIRT or competent authority",
+   "evidence": {
+    "provision": "Art. 23(4)(a)",
+    "quote": "without undue delay and in any event within 24 hours of becoming aware of the significant incident, an early warning"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "essential_entity",
+   "modality": "shall",
+   "summary": "Essential and important entities must communicate to recipients of their services potentially affected by a significant cyber threat any measures or remedies those recipients can take, and where appropriate inform them of the threat itself.",
+   "conditional_on": "Where applicable; significant cyber threat",
+   "evidence": {
+    "provision": "Art. 23(2)",
+    "quote": "essential and important entities communicate, without undue delay, to the recipients of their services"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States must ensure that the CSIRT or competent authority responds to an early warning within 24 hours where possible, with initial feedback and guidance; that the CSIRT or competent authority informs other affected Member States and ENISA of cross-border incidents; and that the single point of contact forwards notifications to other affected single points of contact on request.",
+   "applies_from": "Within 24 hours of receiving the early warning, where possible",
+   "conditional_on": "Upon receipt of an early warning or notification under Art. 23(4)",
+   "evidence": {
+    "provision": "Art. 23(5)",
+    "quote": "The CSIRT or the competent authority shall provide, without undue delay and where possible within 24 hours"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The single point of contact must submit a summary report on significant incidents, incidents, cyber threats and near misses to ENISA every three months; ENISA must inform the Cooperation Group and CSIRTs network every six months.",
+   "applies_from": "Every three months (summary report); every six months (ENISA findings)",
+   "evidence": {
+    "provision": "Art. 23(9)",
+    "quote": "The single point of contact shall submit to ENISA every three months a summary report"
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Commission must adopt implementing acts further specifying the criteria for a significant incident for DNS service providers, TLD name registries, cloud computing, data centre, content delivery network, managed service and managed security service providers, and online marketplace, search engine and social network providers. Under the same paragraph the Commission may adopt such acts for other essential and important entities.",
+   "applies_from": "By 17 October 2024",
+   "evidence": {
+    "provision": "Art. 23(11)",
+    "quote": "By 17 October 2024, the Commission shall, with regard to DNS service providers"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "may",
+   "summary": "Member States may require essential and important entities to use particular ICT products, services and processes certified under European cybersecurity certification schemes, and shall encourage the use of qualified trust services.",
+   "conditional_on": "To demonstrate compliance with particular requirements of Art. 21",
+   "evidence": {
+    "provision": "Art. 24(1)",
+    "quote": "Member States may require essential and important entities to use particular ICT products"
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "government_agency",
+   "modality": "may",
+   "summary": "The Commission may adopt delegated acts specifying which categories of essential and important entities must use certified ICT products or obtain certificates; such acts require an impact assessment and consultations beforehand and must include an implementation period.",
+   "conditional_on": "Where insufficient levels of cybersecurity have been identified",
+   "evidence": {
+    "provision": "Art. 24(2)",
+    "quote": "The Commission is empowered to adopt delegated acts, in accordance with Article 38"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "encouraged",
+   "summary": "Member States must encourage the use of European and international standards and technical specifications relevant to the security of network and information systems, without favouring a particular technology.",
+   "evidence": {
+    "provision": "Art. 25(1)",
+    "quote": "Member States shall, without imposing or discriminating in favour of the use of a particular type of technology, encourage the use of European and international standards"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "ENISA, in cooperation with Member States, must draw up advice and guidelines on technical areas relevant to standardisation and existing standards.",
+   "conditional_on": "Where appropriate, after consulting relevant stakeholders",
+   "evidence": {
+    "provision": "Art. 25(2)",
+    "quote": "ENISA, in cooperation with Member States, and, where appropriate, after consulting relevant stakeholders, shall draw up advice and guidelines"
+   }
+  },
+  {
+   "type": "appointment_of_representative",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Entities referred to in Art. 26(1)(b) (DNS, TLD, domain registration, cloud, data centre, CDN, managed service, online marketplace, search engine and social network providers) not established in the Union but offering services in the Union must designate a representative in one of the Member States where services are offered.",
+   "conditional_on": "Entity not established in the Union but offers services within the Union",
+   "evidence": {
+    "provision": "Art. 26(3)",
+    "quote": "it shall designate a representative in the Union"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "may",
+   "summary": "Member States that receive a request for mutual assistance may take supervisory and enforcement measures within the limits of that request.",
+   "conditional_on": "Request for mutual assistance in relation to an entity under Art. 26(1)(b)",
+   "evidence": {
+    "provision": "Art. 26(5)",
+    "quote": "may, within the limits of that request, take appropriate supervisory and enforcement measures"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "ENISA must create and maintain a registry of the entities listed in Art. 27(1) (DNS, TLD, domain registration, cloud, data centre, CDN, managed service, managed security service, online marketplace, search engine and social network providers) based on information from single points of contact.",
+   "evidence": {
+    "provision": "Art. 27(1)",
+    "quote": "ENISA shall create and maintain a registry of DNS service providers"
+   }
+  },
+  {
+   "type": "registration_notification",
+   "addressee": "cloud_service_provider",
+   "also_addressees": [
+    "platform_operator",
+    "search_engine_operator"
+   ],
+   "modality": "shall",
+   "summary": "Entities listed in Art. 27(1) (including DNS service providers, TLD registries, domain registration service providers, cloud, data centre, CDN, managed service, managed security service, online marketplace, search engine and social network providers) must submit to the competent authorities their name, sector, address, contact details, Member States served and IP ranges.",
+   "applies_from": "17 January 2025",
+   "evidence": {
+    "provision": "Art. 27(2)",
+    "quote": "Member States shall require entities referred to in paragraph 1 to submit the following information to the competent authorities by 17 January 2025"
+   }
+  },
+  {
+   "type": "registration_notification",
+   "addressee": "cloud_service_provider",
+   "also_addressees": [
+    "platform_operator",
+    "search_engine_operator"
+   ],
+   "modality": "shall",
+   "summary": "Entities listed in Art. 27(1) must notify the competent authority of any change to the information submitted under Art. 27(2).",
+   "applies_from": "Without delay and in any event within three months of the date of the change",
+   "conditional_on": "Change to information previously submitted",
+   "evidence": {
+    "provision": "Art. 27(3)",
+    "quote": "notify the competent authority about any changes to the information they submitted under paragraph 2 without delay and in any event within three months of the date of the change"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The single point of contact must forward registration information received under Art. 27(2) and (3), except IP ranges, to ENISA without undue delay.",
+   "conditional_on": "Upon receipt of information under Art. 27(2) and (3)",
+   "evidence": {
+    "provision": "Art. 27(4)",
+    "quote": "the single point of contact of the Member State concerned shall, without undue delay, forward it to ENISA"
+   }
+  },
+  {
+   "type": "record_keeping",
+   "addressee": "data_holder",
+   "modality": "shall",
+   "summary": "TLD name registries and domain name registration service providers must collect and maintain accurate and complete domain name registration data in a dedicated database, with due diligence under Union data protection law; the database must contain the information listed in Art. 28(2).",
+   "evidence": {
+    "provision": "Art. 28(1)",
+    "quote": "Member States shall require TLD name registries and entities providing domain name registration services to collect and maintain accurate and complete domain name registration data"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States must require TLD name registries and domain name registration service providers to collect and maintain the registration data in Art. 28(1) and (2) and to have policies and procedures, including verification procedures, for accuracy.",
+   "evidence": {
+    "provision": "Art. 28(3)",
+    "quote": "have policies and procedures, including verification procedures, in place to ensure that the databases referred to in paragraph 1 include accurate and complete information"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "data_holder",
+   "modality": "shall",
+   "summary": "TLD name registries and domain name registration service providers must make publicly available their verification policies and procedures, and the domain name registration data that is not personal data, without undue delay after registration.",
+   "applies_from": "Without undue delay after the registration of a domain name",
+   "conditional_on": "Registration data that is not personal data",
+   "evidence": {
+    "provision": "Art. 28(4)",
+    "quote": "make publicly available, without undue delay after the registration of a domain name, the domain name registration data which are not personal data"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_holder",
+   "modality": "shall",
+   "summary": "TLD name registries and domain name registration service providers must provide access to specific registration data on lawful and duly substantiated requests from legitimate access seekers, reply to such requests within 72 hours, and make disclosure policies publicly available.",
+   "applies_from": "Within 72 hours of receipt of any request for access",
+   "conditional_on": "Lawful and duly substantiated request by legitimate access seekers",
+   "evidence": {
+    "provision": "Art. 28(5)",
+    "quote": "reply without undue delay and in any event within 72 hours of receipt of any requests for access"
+   }
+  },
+  {
+   "type": "cooperation_with_authority",
+   "addressee": "data_holder",
+   "modality": "shall",
+   "summary": "TLD name registries and domain name registration service providers must cooperate with each other to avoid duplicated collection of registration data.",
+   "evidence": {
+    "provision": "Art. 28(6)",
+    "quote": "to that end, Member States shall require TLD name registries and entities providing domain name registration services to cooperate with each other"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States must facilitate the establishment of cybersecurity information-sharing arrangements among essential and important entities and their suppliers or service providers.",
+   "evidence": {
+    "provision": "Art. 29(3)",
+    "quote": "Member States shall facilitate the establishment of cybersecurity information-sharing arrangements"
+   }
+  },
+  {
+   "type": "registration_notification",
+   "addressee": "essential_entity",
+   "modality": "shall",
+   "summary": "Essential and important entities must notify the competent authorities of their participation in cybersecurity information-sharing arrangements, upon entering them, and of their withdrawal once it takes effect.",
+   "applies_from": "Upon entering into such arrangements, and upon withdrawal taking effect",
+   "conditional_on": "Participation in arrangements under Art. 29(2)",
+   "evidence": {
+    "provision": "Art. 29(4)",
+    "quote": "essential and important entities notify the competent authorities of their participation in the cybersecurity information-sharing arrangements"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States must process voluntary notifications under Art. 30(1) in accordance with the procedure in Art. 23, and may prioritise mandatory notifications over voluntary ones.",
+   "conditional_on": "Voluntary notifications submitted to CSIRTs or competent authorities",
+   "evidence": {
+    "provision": "Art. 30(2)",
+    "quote": "Member States shall process the notifications referred to in paragraph 1 of this Article in accordance with the procedure laid down in Article 23"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "regulator",
+   "modality": "shall",
+   "summary": "Competent authorities must effectively supervise and take the measures necessary to ensure compliance with the Directive, and may prioritise supervisory tasks on a risk-based approach.",
+   "evidence": {
+    "provision": "Art. 31(1)",
+    "quote": "Member States shall ensure that their competent authorities effectively supervise and take the measures necessary to ensure compliance with this Directive."
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "regulator",
+   "modality": "shall",
+   "summary": "Competent authorities must work in close cooperation with data protection supervisory authorities when addressing incidents resulting in personal data breaches.",
+   "conditional_on": "Incidents resulting in personal data breaches",
+   "evidence": {
+    "provision": "Art. 31(3)",
+    "quote": "The competent authorities shall work in close cooperation with supervisory authorities under Regulation (EU) 2016/679"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "regulator",
+   "modality": "shall",
+   "summary": "For essential entities, competent authorities must state the purpose of information requests and specify the information requested when using their powers under Art. 32(2)(e), (f) or (g); they must also set out detailed reasoning for enforcement measures and notify preliminary findings before adopting them.",
+   "conditional_on": "When exercising powers under Art. 32(2)(e), (f) or (g); before adopting enforcement measures",
+   "evidence": {
+    "provision": "Art. 32(3)",
+    "quote": "the competent authorities shall state the purpose of the request and specify the information requested"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "regulator",
+   "modality": "shall",
+   "summary": "Competent authorities for essential entities must inform the competent authorities under Directive (EU) 2022/2557 when acting on entities identified as critical entities, and must cooperate with the competent authorities under Regulation (EU) 2022/2554, including informing the Oversight Forum.",
+   "conditional_on": "Entity identified as a critical entity under Directive (EU) 2022/2557, or designated as a critical ICT third-party service provider under Regulation (EU) 2022/2554",
+   "evidence": {
+    "provision": "Art. 32(9)",
+    "quote": "Member States shall ensure that their competent authorities under this Directive inform the relevant competent authorities within the same Member State under Directive (EU) 2022/2557"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "regulator",
+   "modality": "shall",
+   "summary": "Competent authorities must take action, where necessary, through ex post supervisory measures when provided with evidence that an important entity does not comply, and must state the purpose of information requests under Art. 33(2)(d), (e) or (f).",
+   "conditional_on": "When provided with evidence, indication or information of non-compliance by an important entity",
+   "evidence": {
+    "provision": "Art. 33(1)",
+    "quote": "Member States shall ensure that the competent authorities take action, where necessary, through ex post supervisory measures"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "regulator",
+   "modality": "shall",
+   "summary": "Competent authorities for important entities must cooperate with the competent authorities under Regulation (EU) 2022/2554 and inform the Oversight Forum when acting on an important entity designated as a critical ICT third-party service provider.",
+   "conditional_on": "Important entity designated as a critical ICT third-party service provider under Regulation (EU) 2022/2554",
+   "evidence": {
+    "provision": "Art. 33(6)",
+    "quote": "Member States shall ensure that their competent authorities under this Directive cooperate with the relevant competent authorities of the Member State concerned under Regulation (EU) 2022/2554"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States must notify the Commission of the provisions of laws adopted for imposing fines on entities where no administrative fine system exists, and of any subsequent amending law.",
+   "applies_from": "By 17 October 2024",
+   "conditional_on": "Where the legal system of the Member State does not provide for administrative fines",
+   "evidence": {
+    "provision": "Art. 34(8)",
+    "quote": "The Member State shall notify to the Commission the provisions of the laws which it adopts pursuant to this paragraph by 17 October 2024"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "regulator",
+   "modality": "shall",
+   "summary": "Where competent authorities become aware that an infringement of Art. 21 or 23 can entail a personal data breach, they must inform the data protection supervisory authorities without undue delay; where another Member State's authority is competent, they must inform it of the potential breach.",
+   "conditional_on": "Infringement of Art. 21 or 23 that can entail a personal data breach",
+   "evidence": {
+    "provision": "Art. 35(1)",
+    "quote": "they shall, without undue delay, inform the supervisory authorities"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States must lay down rules on penalties applicable to infringements of national measures adopted under the Directive, and notify the Commission of those rules and measures and of subsequent amendments.",
+   "applies_from": "By 17 January 2025",
+   "evidence": {
+    "provision": "Art. 36",
+    "quote": "Member States shall, by 17 January 2025, notify the Commission of those rules and of those measures"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "regulator",
+   "modality": "shall",
+   "summary": "Competent authorities of Member States concerned must cooperate with and assist each other where an entity provides services in more than one Member State, including by informing and consulting each other on measures taken and responding to requests for assistance.",
+   "conditional_on": "Entity provides services in more than one Member State, or its network and information systems are located in other Member States",
+   "evidence": {
+    "provision": "Art. 37(1)",
+    "quote": "the competent authorities of the Member States concerned shall cooperate with and assist each other as necessary"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "regulator",
+   "modality": "may",
+   "summary": "Competent authorities of various Member States may carry out joint supervisory actions where appropriate and by common agreement.",
+   "conditional_on": "Where appropriate and with common agreement",
+   "evidence": {
+    "provision": "Art. 37(2)",
+    "quote": "the competent authorities of various Member States may carry out joint supervisory actions"
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The power to adopt delegated acts under Art. 24(2) is conferred on the Commission for five years; the delegation may be revoked by Parliament or Council, and delegated acts are subject to objection periods.",
+   "applies_from": "For a period of five years from 16 January 2023",
+   "evidence": {
+    "provision": "Art. 38(2)",
+    "quote": "shall be conferred on the Commission for a period of five years from 16 January 2023"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Before adopting a delegated act, the Commission must consult experts designated by each Member State, and must notify each delegated act simultaneously to Parliament and Council.",
+   "conditional_on": "Before adopting, or upon adopting, a delegated act",
+   "evidence": {
+    "provision": "Art. 38(4)",
+    "quote": "Before adopting a delegated act, the Commission shall consult experts designated by each Member State"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Commission is to be assisted by a committee within the meaning of Regulation (EU) No 182/2011.",
+   "evidence": {
+    "provision": "Art. 39(1)",
+    "quote": "The Commission shall be assisted by a committee."
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Commission must review the functioning of the Directive and report to Parliament and Council, assessing in particular the size of entities and the sectors in Annexes I and II; the review repeats every 36 months.",
+   "applies_from": "By 17 October 2027 and every 36 months thereafter",
+   "evidence": {
+    "provision": "Art. 40",
+    "quote": "By 17 October 2027 and every 36 months thereafter, the Commission shall review the functioning of this Directive"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States must adopt and publish the measures necessary to comply with the Directive and inform the Commission; they must apply those measures from 18 October 2024.",
+   "applies_from": "By 17 October 2024 (adoption and publication); from 18 October 2024 (application)",
+   "evidence": {
+    "provision": "Art. 41(1)",
+    "quote": "By 17 October 2024, Member States shall adopt and publish the measures necessary to comply with this Directive."
+   }
+  }
+ ],
+ "enforcement": [
+  {
+   "sanction_type": "warning_reprimand",
+   "authority": "competent authorities",
+   "triggered_by": "Infringements of this Directive by essential entities",
+   "cure_period": "not stated",
+   "evidence": {
+    "provision": "Art. 32(4), point (a)",
+    "quote": "issue warnings about infringements of this Directive by the entities concerned"
+   }
+  },
+  {
+   "sanction_type": "injunction_order",
+   "authority": "competent authorities",
+   "triggered_by": "Infringements of this Directive by essential entities; also binding instructions or orders under Art. 32(4)(b), (d), (f)",
+   "cure_period": "time-limits for implementing binding instructions and for reporting on implementation, set in the instruction (Art. 32(4), point (b))",
+   "evidence": {
+    "provision": "Art. 32(4), point (c)",
+    "quote": "order the entities concerned to cease conduct that infringes this Directive and desist from repeating that conduct"
+   }
+  },
+  {
+   "sanction_type": "other",
+   "authority": "competent authorities",
+   "triggered_by": "Supervisory measure against essential entities (monitoring officer appointed for a determined period)",
+   "cure_period": "not stated",
+   "evidence": {
+    "provision": "Art. 32(4), point (g)",
+    "quote": "designate a monitoring officer with well-defined tasks for a determined period of time to oversee the compliance of the entities concerned with Articles 21 and 23"
+   }
+  },
+  {
+   "sanction_type": "other",
+   "authority": "competent authorities",
+   "triggered_by": "Infringements of this Directive by essential entities",
+   "cure_period": "not stated",
+   "evidence": {
+    "provision": "Art. 32(4), point (h)",
+    "quote": "order the entities concerned to make public aspects of infringements of this Directive in a specified manner"
+   }
+  },
+  {
+   "sanction_type": "service_suspension",
+   "authority": "competent authority, or a certification or authorisation body, or a court or tribunal under national law",
+   "triggered_by": "Failure of essential entity to take required action after enforcement measures under Art. 32(4)(a)-(d) and (f) were ineffective and the deadline was not met",
+   "cure_period": "deadline set by the competent authority for the essential entity to remedy the deficiencies or comply (Art. 32(5))",
+   "evidence": {
+    "provision": "Art. 32(5), point (a)",
+    "quote": "suspend temporarily, or request a certification or authorisation body, or a court or tribunal, in accordance with national law, to suspend temporarily a certification or authorisation"
+   }
+  },
+  {
+   "sanction_type": "other",
+   "authority": "relevant bodies, courts or tribunals under national law, on request of the competent authority",
+   "triggered_by": "Failure of essential entity to take required action after enforcement measures under Art. 32(4)(a)-(d) and (f) were ineffective and the deadline was not met",
+   "cure_period": "deadline set by the competent authority for the essential entity to remedy the deficiencies or comply (Art. 32(5))",
+   "evidence": {
+    "provision": "Art. 32(5), point (b)",
+    "quote": "prohibit temporarily any natural person who is responsible for discharging managerial responsibilities at chief executive officer or legal representative level"
+   }
+  },
+  {
+   "sanction_type": "other",
+   "authority": "Member States (national law)",
+   "triggered_by": "Breach of duties to ensure compliance by a natural person responsible for or acting as legal representative of an essential entity; applies to important entities via Art. 33(5)",
+   "cure_period": "not stated",
+   "evidence": {
+    "provision": "Art. 32(6)",
+    "quote": "Member States shall ensure that it is possible to hold such natural persons liable for breach of their duties to ensure compliance with this Directive"
+   }
+  },
+  {
+   "sanction_type": "warning_reprimand",
+   "authority": "competent authorities",
+   "triggered_by": "Infringements of this Directive by important entities, on evidence that the entity allegedly does not comply (Art. 33(1))",
+   "cure_period": "not stated",
+   "evidence": {
+    "provision": "Art. 33(4), point (a)",
+    "quote": "issue warnings about infringements of this Directive by the entities concerned"
+   }
+  },
+  {
+   "sanction_type": "injunction_order",
+   "authority": "competent authorities",
+   "triggered_by": "Infringements of this Directive by important entities; also orders under Art. 33(4)(c)-(f) to cease conduct or comply",
+   "cure_period": "not stated",
+   "evidence": {
+    "provision": "Art. 33(4), point (b)",
+    "quote": "adopt binding instructions or an order requiring the entities concerned to remedy the deficiencies identified or the infringement of this Directive"
+   }
+  },
+  {
+   "sanction_type": "other",
+   "authority": "competent authorities",
+   "triggered_by": "Infringements of this Directive by important entities",
+   "cure_period": "not stated",
+   "evidence": {
+    "provision": "Art. 33(4), point (g)",
+    "quote": "order the entities concerned to make public aspects of infringements of this Directive in a specified manner"
+   }
+  },
+  {
+   "sanction_type": "administrative_fine",
+   "authority": "competent authorities (fine imposed under national law, Art. 34(2))",
+   "triggered_by": "Infringement by essential entity of Art. 21 or 23",
+   "max_penalty_text": "a maximum of at least EUR 10 000 000 or of a maximum of at least 2 % of the total worldwide annual turnover in the preceding financial year of the undertaking, whichever is higher",
+   "max_penalty_amount": 10000000,
+   "currency": "EUR",
+   "penalty_formula": "greater of EUR 10 000 000 or 2 % of total worldwide annual turnover in the preceding financial year of the undertaking to which the essential entity belongs",
+   "cure_period": "not stated",
+   "evidence": {
+    "provision": "Art. 34(4)",
+    "quote": "administrative fines of a maximum of at least EUR 10 000 000 or of a maximum of at least 2 % of the total worldwide annual turnover in the preceding financial year of the undertaking"
+   }
+  },
+  {
+   "sanction_type": "administrative_fine",
+   "authority": "competent authorities (fine imposed under national law, Art. 34(2))",
+   "triggered_by": "Infringement by important entity of Art. 21 or 23",
+   "max_penalty_text": "a maximum of at least EUR 7 000 000 or of a maximum of at least 1,4 % of the total worldwide annual turnover in the preceding financial year of the undertaking, whichever is higher",
+   "max_penalty_amount": 7000000,
+   "currency": "EUR",
+   "penalty_formula": "greater of EUR 7 000 000 or 1,4 % of total worldwide annual turnover in the preceding financial year of the undertaking to which the important entity belongs",
+   "cure_period": "not stated",
+   "evidence": {
+    "provision": "Art. 34(5)",
+    "quote": "administrative fines of a maximum of at least EUR 7 000 000 or of a maximum of at least 1,4 % of the total worldwide annual turnover in the preceding financial year"
+   }
+  },
+  {
+   "sanction_type": "other",
+   "authority": "Member States (power to be provided by national law); competent authority",
+   "triggered_by": "Failure of an essential or important entity to cease an infringement, in accordance with a prior decision of the competent authority",
+   "cure_period": "not stated",
+   "evidence": {
+    "provision": "Art. 34(6)",
+    "quote": "Member States may provide for the power to impose periodic penalty payments in order to compel an essential or important entity to cease an infringement of this Directive"
+   }
+  },
+  {
+   "sanction_type": "civil_penalty",
+   "authority": "competent national courts or tribunals (fine initiated by the competent authority)",
+   "triggered_by": "Infringements of this Directive in Member States whose legal system does not provide for administrative fines",
+   "cure_period": "not stated",
+   "evidence": {
+    "provision": "Art. 34(8)",
+    "quote": "the fine is initiated by the competent authority and imposed by competent national courts or tribunals"
+   }
+  },
+  {
+   "sanction_type": "administrative_fine",
+   "authority": "supervisory authorities under Regulation (EU) 2016/679, Art. 55 or 56",
+   "triggered_by": "Infringement by essential or important entity of Art. 21 or 23 that can entail a personal data breach",
+   "penalty_reference": "Regulation (EU) 2016/679, Art. 58(2), point (i)",
+   "cure_period": "not stated",
+   "evidence": {
+    "provision": "Art. 35(2)",
+    "quote": "the supervisory authorities as referred to in Article 55 or 56 of Regulation (EU) 2016/679 impose an administrative fine pursuant to Article 58(2), point (i), of that Regulation"
+   }
+  },
+  {
+   "sanction_type": "other",
+   "authority": "Member States (national rules on penalties)",
+   "triggered_by": "Infringements of national measures adopted pursuant to this Directive",
+   "cure_period": "not stated",
+   "evidence": {
+    "provision": "Art. 36",
+    "quote": "Member States shall lay down rules on penalties applicable to infringements of national measures adopted pursuant to this Directive"
+   }
+  }
+ ],
+ "section_status": {}
+}

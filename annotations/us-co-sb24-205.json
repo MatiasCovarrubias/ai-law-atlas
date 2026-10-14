@@ -1,0 +1,778 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "us-co-sb24-205",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "AGORA plaintext (ETO, CC BY-NC 4.0), local cache",
+  "url": "https://leg.colorado.gov/bill_files/47770/download",
+  "retrieved": "2026-03-25",
+  "version": "1.33.0 (2026-09-16)",
+  "language": "en",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "ai_general",
+   "algorithmic_decision_systems",
+   "consumer_protection"
+  ],
+  "primary_domain": "algorithmic_decision_systems",
+  "mechanisms": [
+   "mandate_obligation",
+   "disclosure_transparency"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "ai_developer",
+   "ai_deployer"
+  ],
+  "affected_roles": [
+   "consumers_users"
+  ],
+  "decision_margins": [
+   "firm:product_design_release",
+   "firm:compliance_process",
+   "household:access",
+   "household:information"
+  ],
+  "territorial_scope": {
+   "types": [
+    "subnational"
+   ],
+   "description": "Applies to persons doing business in Colorado that develop or deploy high-risk AI systems, and to Colorado residents as consumers.",
+   "evidence": {
+    "provision": "6-1-1701(6)",
+    "quote": "A PERSON DOING BUSINESS IN THIS STATE THAT DEPLOYS A HIGH-RISK ARTIFICIAL INTELLIGENCE SYSTEM"
+   }
+  },
+  "agora_applications": [
+   "Education",
+   "Finance and investment",
+   "Medicine, life sciences and public health",
+   "Government: benefits and welfare"
+  ],
+  "agora_harms": [
+   "Discrimination"
+  ],
+  "agora_risk_factors": [
+   "Bias",
+   "Transparency",
+   "Interpretability and explainability"
+  ],
+  "agora_strategies": [
+   "Disclosure: About inputs",
+   "Disclosure: About incidents",
+   "Disclosure: In deployment",
+   "Evaluation: Impact assessment"
+  ]
+ },
+ "summary": {
+  "short": "Colorado statute adding Part 17 on artificial intelligence to Article 1 of Title 6, C.R.S. From 1 February 2026, developers and deployers of high-risk AI systems making consequential decisions about Colorado consumers must use reasonable care against algorithmic discrimination, with documentation, disclosure and risk-management duties. The Attorney General enforces it.",
+  "long": "Adds Part 17 (sections 6-1-1701 to 6-1-1707) to Article 1 of Title 6, Colorado Revised Statutes, on artificial intelligence systems. High-risk AI systems are those that make, or are a substantial factor in making, consequential decisions about Colorado consumers in education, employment, financial or lending services, essential government services, health care, housing, insurance or legal services. From 1 February 2026, developers must use reasonable care against known or foreseeable algorithmic discrimination, provide deployers with documentation and publish a statement; deployers must use reasonable care, adopt a risk management program, complete impact assessments at least annually, notify consumers before consequential decisions, give explanations for adverse decisions, correction and appeal rights, and report discovered discrimination within 90 days. Deployers with fewer than 50 full-time equivalent employees that do not use their own data to train the system are exempt from several duties under conditions. Consumer-facing AI systems must disclose AI interaction unless obvious. Exemptions cover certain federally approved systems, insurers, banks and credit unions. The Attorney General has exclusive enforcement authority; violations are unfair trade practices, with an affirmative defense for cured violations and a rebuttable presumption of reasonable care. No private right of action is created. The Attorney General may adopt rules."
+ },
+ "relations": [
+  {
+   "relation": "amends",
+   "target_text": "Colorado Revised Statutes 6-1-105 (unfair or deceptive trade practices)",
+   "note": "Adds paragraph (1)(hhhh), making a violation of Part 17 a deceptive trade practice.",
+   "evidence": {
+    "provision": "Section 2",
+    "quote": "In Colorado Revised Statutes, 6-1-105, add (1)(hhhh) as follows:"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Colorado Revised Statutes, title 6, article 1 (new part 17)",
+   "note": "Adds Part 17 (sections 6-1-1701 to 6-1-1707) to article 1 of title 6.",
+   "evidence": {
+    "provision": "Section 1",
+    "quote": "In Colorado Revised Statutes, add part 17 to article 1 of title 6 as follows:"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Colorado Revised Statutes 6-1-1306 (1)(a)(I)(C)",
+   "note": "Consumer information duty refers to the right to opt out of profiling under this section.",
+   "evidence": {
+    "provision": "6-1-1703(4)(a)(III)",
+    "quote": "UNDER SECTION 6-1-1306 (1)(a)(I)(C)"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Colorado Revised Statutes 6-1-103",
+   "note": "Attorney General enforcement authority under this Part applies notwithstanding this section.",
+   "evidence": {
+    "provision": "6-1-1706(1)",
+    "quote": "NOTWITHSTANDING SECTION 6-1-103"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Colorado Revised Statutes 7-74-102 (4) (trade secret definition)",
+   "note": "Trade secret term used in this Part takes the meaning given in the cited section.",
+   "evidence": {
+    "provision": "6-1-1701(12)",
+    "quote": "HAS THE MEANING SET FORTH IN SECTION 7-74-102 (4)"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Colorado Revised Statutes 10-3-1104.9",
+   "note": "Insurers, fraternal benefit societies and their developers subject to this section are in full compliance with Part 17.",
+   "evidence": {
+    "provision": "6-1-1705(7)",
+    "quote": "IS SUBJECT TO THE REQUIREMENTS OF SECTION 10-3-1104.9"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Colorado Revised Statutes 10-1-102 (13) (insurer definition)",
+   "note": "Defines insurer for the insurance compliance exemption.",
+   "evidence": {
+    "provision": "6-1-1705(7)",
+    "quote": "AN INSURER, AS DEFINED IN SECTION 10-1-102 (13)"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Colorado Revised Statutes 10-14-102 (fraternal benefit society)",
+   "note": "Refers to fraternal benefit societies for the insurance compliance exemption.",
+   "evidence": {
+    "provision": "6-1-1705(7)",
+    "quote": "A FRATERNAL BENEFIT SOCIETY, AS DESCRIBED IN SECTION 10-14-102"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Colorado Revised Statutes 11-101-401 (bank, out-of-state bank and affiliate definitions)",
+   "note": "Gives meanings of affiliate, bank and out-of-state bank for the financial institution exemption.",
+   "evidence": {
+    "provision": "6-1-1705(8)(b)(I)",
+    "quote": "HAS THE MEANING SET FORTH IN SECTION 11-101-401 (3.5)"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Colorado Revised Statutes 11-30-101 (1)(a) (credit union definition)",
+   "note": "Gives the meaning of credit union for the financial institution exemption.",
+   "evidence": {
+    "provision": "6-1-1705(8)(b)(III)",
+    "quote": "HAS THE MEANING SET FORTH IN SECTION 11-30-101 (1)(a)"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Colorado Open Records Act (Part 2 of Article 72 of Title 24)",
+   "note": "Developer statements and documentation disclosed to the Attorney General are not subject to disclosure under this Act.",
+   "evidence": {
+    "provision": "6-1-1702(7)",
+    "quote": "PART 2 OF ARTICLE 72 OF TITLE 24"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "42 U.S.C. Sec. 234(d)(2)",
+   "note": "Defines health-care services by reference to this federal provision.",
+   "evidence": {
+    "provision": "6-1-1701(8)",
+    "quote": "HAS THE SAME MEANING AS PROVIDED IN 42 U.S.C. SEC. 234 (d)(2)"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "42 U.S.C. Sec. 2000a(e) (Title II, Civil Rights Act of 1964)",
+   "note": "Excludes private club or establishment acts from the definition of algorithmic discrimination.",
+   "evidence": {
+    "provision": "6-1-1701(1)(b)(II)",
+    "quote": "42 U.S.C. SEC. 2000a (e), AS AMENDED"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "42 U.S.C. Secs. 1320d to 1320d-9 (Health Insurance Portability and Accountability Act)",
+   "note": "Covered entities under this federal act are exempt for certain AI-generated health-care recommendations.",
+   "evidence": {
+    "provision": "6-1-1705(5)(d)",
+    "quote": "42 U.S.C. SECS. 1320d TO 1320d-9"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "45 CFR 46",
+   "note": "Research in the public interest conducted under this regulation is excluded from listed restrictions.",
+   "evidence": {
+    "provision": "6-1-1705(1)(g)",
+    "quote": "IS CONDUCTED IN ACCORDANCE WITH 45 CFR 46, AS AMENDED"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Artificial Intelligence Risk Management Framework published by NIST, United States Department of Commerce",
+   "note": "Named as a reasonable risk management framework for deployer programs and developer and deployer defenses.",
+   "evidence": {
+    "provision": "6-1-1703(2)(a)(I)(A)",
+    "quote": "PUBLISHED BY THE NATIONAL INSTITUTE OF STANDARDS AND TECHNOLOGY IN THE UNITED STATES DEPARTMENT OF COMMERCE"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "ISO/IEC 42001 (International Organization for Standardization)",
+   "note": "Named as a reasonable risk management standard for deployer programs and as a compliance reference for the affirmative defense.",
+   "evidence": {
+    "provision": "6-1-1703(2)(a)(I)(A)",
+    "quote": "STANDARD ISO/IEC 42001 OF THE INTERNATIONAL ORGANIZATION FOR STANDARDIZATION"
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "Attorney General of Colorado",
+   "role": "designated",
+   "function": "Exclusive enforcement authority under Part 17; may promulgate rules, designate risk management frameworks, and receive developer and deployer disclosures and notices.",
+   "evidence": {
+    "provision": "6-1-1706(1)",
+    "quote": "THE ATTORNEY GENERAL HAS EXCLUSIVE AUTHORITY TO ENFORCE THIS PART 17"
+   }
+  },
+  {
+   "name": "Commissioner of Insurance",
+   "role": "listed",
+   "function": "Adopts rules under section 10-3-1104.9 that bear on full compliance with Part 17 for insurers, fraternal benefit societies and their developers.",
+   "evidence": {
+    "provision": "6-1-1705(7)",
+    "quote": "ANY RULES ADOPTED BY THE COMMISSIONER OF INSURANCE PURSUANT TO SECTION 10-3-1104.9"
+   }
+  },
+  {
+   "name": "National Institute of Standards and Technology (United States Department of Commerce)",
+   "role": "listed",
+   "function": "Publishes the Artificial Intelligence Risk Management Framework that Part 17 names as a reference for risk management and for the affirmative defense.",
+   "evidence": {
+    "provision": "6-1-1706(3)(b)(I)",
+    "quote": "PUBLISHED BY THE NATIONAL INSTITUTE OF STANDARDS AND TECHNOLOGY IN THE UNITED STATES DEPARTMENT OF COMMERCE AND STANDARD ISO/IEC 42001"
+   }
+  }
+ ],
+ "notes": "The document is the enacted text of SB 24-205 (Sections 1 to 3). The registry status 'repealed' is not stated in the document; no repeal provision or repeal event is coded. Most duties apply 'on and after February 1, 2026' as written. Only relations, entities and notes are filled for this Tier A request. Targets outside the registry (Colorado Revised Statutes, federal statutes, NIST and ISO standards) carry a null target_instrument_id. No internal inconsistency identified; the 6-1-105(1)(hhhh) amendment in Section 2 matches the reference in 6-1-1706(2).",
+ "events": [
+  {
+   "event": "application",
+   "date": "2026-02-01",
+   "date_type": "absolute",
+   "date_text": "ON AND AFTER FEBRUARY 1, 2026",
+   "applies_to": "Developer duties for high-risk AI systems under C.R.S. 6-1-1702 (reasonable care, documentation, statements and disclosures)",
+   "evidence": {
+    "provision": "C.R.S. 6-1-1702(1)",
+    "quote": "ON AND AFTER FEBRUARY 1, 2026, A DEVELOPER OF A HIGH-RISK ARTIFICIAL INTELLIGENCE SYSTEM SHALL USE REASONABLE CARE"
+   }
+  },
+  {
+   "event": "application",
+   "date": "2026-02-01",
+   "date_type": "absolute",
+   "date_text": "ON AND AFTER FEBRUARY 1, 2026",
+   "applies_to": "Deployer duties for high-risk AI systems under C.R.S. 6-1-1703 (risk management policy and program, impact assessments, consumer notices and statements)",
+   "evidence": {
+    "provision": "C.R.S. 6-1-1703(1)",
+    "quote": "ON AND AFTER FEBRUARY 1, 2026, A DEPLOYER OF A HIGH-RISK ARTIFICIAL INTELLIGENCE SYSTEM SHALL USE REASONABLE CARE"
+   }
+  },
+  {
+   "event": "application",
+   "date": "2026-02-01",
+   "date_type": "absolute",
+   "date_text": "ON AND AFTER FEBRUARY 1, 2026, AND EXCEPT AS PROVIDED IN SUBSECTION (2) OF THIS SECTION",
+   "applies_to": "Duty to disclose to consumers that they are interacting with an AI system under C.R.S. 6-1-1704(1)",
+   "evidence": {
+    "provision": "C.R.S. 6-1-1704(1)",
+    "quote": "ON AND AFTER FEBRUARY 1, 2026, AND EXCEPT AS PROVIDED IN SUBSECTION (2) OF THIS SECTION"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2026-02-01",
+   "date_type": "absolute",
+   "date_text": "ON OR BEFORE FEBRUARY 1, 2026, AND AT LEAST ANNUALLY THEREAFTER",
+   "applies_to": "Review by a deployer or contracted third party that each deployed high-risk system is not causing algorithmic discrimination",
+   "evidence": {
+    "provision": "C.R.S. 6-1-1703(3)(g)",
+    "quote": "ON OR BEFORE FEBRUARY 1, 2026, AND AT LEAST ANNUALLY THEREAFTER"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "AT LEAST ANNUALLY AND WITHIN NINETY DAYS AFTER ANY INTENTIONAL AND SUBSTANTIAL MODIFICATION TO THE HIGH-RISK ARTIFICIAL INTELLIGENCE SYSTEM IS MADE AVAILABLE",
+   "applies_to": "Deployer or contracted third party impact assessment of each deployed high-risk system, at least annually",
+   "evidence": {
+    "provision": "C.R.S. 6-1-1703(3)(a)(II)",
+    "quote": "AT LEAST ANNUALLY AND WITHIN NINETY DAYS AFTER ANY INTENTIONAL AND SUBSTANTIAL MODIFICATION"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "WITHIN NINETY DAYS AFTER ANY INTENTIONAL AND SUBSTANTIAL MODIFICATION TO THE HIGH-RISK ARTIFICIAL INTELLIGENCE SYSTEM IS MADE AVAILABLE",
+   "depends_on": "Intentional and substantial modification of a high-risk AI system made available",
+   "applies_to": "Deployer or contracted third party impact assessment after a modification",
+   "offset_value": 90,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "C.R.S. 6-1-1703(3)(a)(II)",
+    "quote": "WITHIN NINETY DAYS AFTER ANY INTENTIONAL AND SUBSTANTIAL MODIFICATION"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "NO LATER THAN NINETY DAYS AFTER THE DEVELOPER INTENTIONALLY AND SUBSTANTIALLY MODIFIES ANY HIGH-RISK ARTIFICIAL INTELLIGENCE SYSTEM",
+   "depends_on": "Developer's intentional and substantial modification of a high-risk AI system",
+   "applies_to": "Developer update of the public statement on high-risk AI systems it develops or modifies",
+   "offset_value": 90,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "C.R.S. 6-1-1702(4)(b)(II)",
+    "quote": "NO LATER THAN NINETY DAYS AFTER THE DEVELOPER INTENTIONALLY AND SUBSTANTIALLY MODIFIES ANY HIGH-RISK ARTIFICIAL INTELLIGENCE SYSTEM"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "WITHOUT UNREASONABLE DELAY BUT NO LATER THAN NINETY DAYS AFTER THE DATE ON WHICH the developer discovers or receives a credible report of algorithmic discrimination",
+   "depends_on": "Developer discovers, through its testing, or receives a credible deployer report, that a high-risk system has caused or is likely to have caused algorithmic discrimination",
+   "applies_to": "Developer disclosure of known risks of algorithmic discrimination to the Attorney General and known deployers or developers",
+   "offset_value": 90,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "C.R.S. 6-1-1702(5)",
+    "quote": "WITHOUT UNREASONABLE DELAY BUT NO LATER THAN NINETY DAYS AFTER THE DATE ON WHICH"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "NO LATER THAN NINETY DAYS AFTER THE REQUEST",
+   "depends_on": "Request by the Attorney General that a developer disclose its statement or documentation",
+   "applies_to": "Developer disclosure of the statement or documentation to the Attorney General",
+   "offset_value": 90,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "C.R.S. 6-1-1702(7)",
+    "quote": "NO LATER THAN NINETY DAYS AFTER THE REQUEST"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "WITHOUT UNREASONABLE DELAY, BUT NO LATER THAN NINETY DAYS AFTER THE DATE OF THE DISCOVERY",
+   "depends_on": "Deployer discovers that a high-risk system has caused algorithmic discrimination",
+   "applies_to": "Deployer notice of the discovery to the Attorney General",
+   "offset_value": 90,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "C.R.S. 6-1-1703(7)",
+    "quote": "WITHOUT UNREASONABLE DELAY, BUT NO LATER THAN NINETY DAYS AFTER THE DATE OF THE DISCOVERY"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "NO LATER THAN NINETY DAYS AFTER THE REQUEST",
+   "depends_on": "Request by the Attorney General that a deployer or contracted third party disclose its risk management policy, impact assessment or records",
+   "applies_to": "Deployer disclosure of the risk management policy, impact assessment or records to the Attorney General",
+   "offset_value": 90,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "C.R.S. 6-1-1703(9)",
+    "quote": "NO LATER THAN NINETY DAYS AFTER THE REQUEST"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "employees",
+   "variable_text": "employs fewer than fifty full-time equivalent employees",
+   "operator": "<",
+   "value": 50,
+   "value_text": "FEWER THAN FIFTY FULL-TIME EQUIVALENT EMPLOYEES",
+   "unit": "full-time equivalent employees",
+   "measurement": "Tested at the time the deployer deploys the high-risk AI system and at all times while it is deployed",
+   "level": "entity",
+   "trigger": "exemption",
+   "consequence": "Subsections (2), (3) and (5) of 6-1-1703 do not apply to the deployer",
+   "conditions": "Also required: the deployer does not use its own data to train the system; the system is used for the intended uses disclosed under 6-1-1702(2)(a) and continues learning only from data other than the deployer's own data; and the deployer makes available to consumers any developer impact assessment that is substantially similar to the one required under 6-1-1703(3)(b)",
+   "evidence": {
+    "provision": "6-1-1703(6)(a)(I)",
+    "quote": "EMPLOYS FEWER THAN FIFTY FULL-TIME EQUIVALENT EMPLOYEES"
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "algorithmic discrimination",
+   "defined_in": "6-1-1701(1)(a)",
+   "evidence": {
+    "provision": "6-1-1701(1)(a)",
+    "quote": "ANY CONDITION IN WHICH THE USE OF AN ARTIFICIAL INTELLIGENCE SYSTEM RESULTS IN AN UNLAWFUL DIFFERENTIAL TREATMENT OR IMPACT THAT DISFAVORS AN INDIVIDUAL OR GROUP OF INDIVIDUALS"
+   }
+  },
+  {
+   "term": "algorithmic discrimination (exclusions)",
+   "defined_in": "6-1-1701(1)(b)",
+   "evidence": {
+    "provision": "6-1-1701(1)(b)(I)",
+    "quote": "THE OFFER, LICENSE, OR USE OF A HIGH-RISK ARTIFICIAL INTELLIGENCE SYSTEM BY A DEVELOPER OR DEPLOYER FOR THE SOLE PURPOSE OF:"
+   }
+  },
+  {
+   "term": "artificial intelligence system",
+   "defined_in": "6-1-1701(2)",
+   "evidence": {
+    "provision": "6-1-1701(2)",
+    "quote": "ANY MACHINE-BASED SYSTEM THAT, FOR ANY EXPLICIT OR IMPLICIT OBJECTIVE, INFERS FROM THE INPUTS THE SYSTEM RECEIVES HOW TO GENERATE OUTPUTS"
+   }
+  },
+  {
+   "term": "consequential decision",
+   "defined_in": "6-1-1701(3)",
+   "evidence": {
+    "provision": "6-1-1701(3)",
+    "quote": "A DECISION THAT HAS A MATERIAL LEGAL OR SIMILARLY SIGNIFICANT EFFECT ON THE PROVISION OR DENIAL TO ANY CONSUMER OF, OR THE COST OR TERMS OF:"
+   }
+  },
+  {
+   "term": "consumer",
+   "defined_in": "6-1-1701(4)",
+   "evidence": {
+    "provision": "6-1-1701(4)",
+    "quote": "AN INDIVIDUAL WHO IS A COLORADO RESIDENT."
+   }
+  },
+  {
+   "term": "deploy",
+   "defined_in": "6-1-1701(5)",
+   "evidence": {
+    "provision": "6-1-1701(5)",
+    "quote": "TO USE A HIGH-RISK ARTIFICIAL INTELLIGENCE SYSTEM."
+   }
+  },
+  {
+   "term": "deployer",
+   "defined_in": "6-1-1701(6)",
+   "evidence": {
+    "provision": "6-1-1701(6)",
+    "quote": "A PERSON DOING BUSINESS IN THIS STATE THAT DEPLOYS A HIGH-RISK ARTIFICIAL INTELLIGENCE SYSTEM."
+   }
+  },
+  {
+   "term": "developer",
+   "defined_in": "6-1-1701(7)",
+   "evidence": {
+    "provision": "6-1-1701(7)",
+    "quote": "A PERSON DOING BUSINESS IN THIS STATE THAT DEVELOPS OR INTENTIONALLY AND SUBSTANTIALLY MODIFIES AN ARTIFICIAL INTELLIGENCE SYSTEM."
+   }
+  },
+  {
+   "term": "health-care services",
+   "defined_in": "42 U.S.C. SEC. 234 (d)(2)",
+   "evidence": {
+    "provision": "6-1-1701(8)",
+    "quote": "HAS THE SAME MEANING AS PROVIDED IN 42 U.S.C. SEC. 234 (d)(2)"
+   }
+  },
+  {
+   "term": "high-risk artificial intelligence system",
+   "defined_in": "6-1-1701(9)(a)",
+   "evidence": {
+    "provision": "6-1-1701(9)(a)",
+    "quote": "ANY ARTIFICIAL INTELLIGENCE SYSTEM THAT, WHEN DEPLOYED, MAKES, OR IS A SUBSTANTIAL FACTOR IN MAKING, A CONSEQUENTIAL DECISION."
+   }
+  },
+  {
+   "term": "high-risk artificial intelligence system (exclusions)",
+   "defined_in": "6-1-1701(9)(b)",
+   "evidence": {
+    "provision": "6-1-1701(9)(b)(II)",
+    "quote": "THE FOLLOWING TECHNOLOGIES, UNLESS THE TECHNOLOGIES, WHEN DEPLOYED, MAKE, OR ARE A SUBSTANTIAL FACTOR IN MAKING, A CONSEQUENTIAL DECISION:"
+   }
+  },
+  {
+   "term": "intentional and substantial modification",
+   "defined_in": "6-1-1701(10)(a)",
+   "evidence": {
+    "provision": "6-1-1701(10)(a)",
+    "quote": "A DELIBERATE CHANGE MADE TO AN ARTIFICIAL INTELLIGENCE SYSTEM THAT RESULTS IN ANY NEW REASONABLY FORESEEABLE RISK OF ALGORITHMIC DISCRIMINATION."
+   }
+  },
+  {
+   "term": "substantial factor",
+   "defined_in": "6-1-1701(11)(a)",
+   "evidence": {
+    "provision": "6-1-1701(11)(b)",
+    "quote": "INCLUDES ANY USE OF AN ARTIFICIAL INTELLIGENCE SYSTEM TO GENERATE ANY CONTENT, DECISION, PREDICTION, OR RECOMMENDATION CONCERNING A CONSUMER"
+   }
+  },
+  {
+   "term": "trade secret",
+   "defined_in": "7-74-102 (4)",
+   "evidence": {
+    "provision": "6-1-1701(12)",
+    "quote": "HAS THE MEANING SET FORTH IN SECTION 7-74-102 (4)"
+   }
+  },
+  {
+   "term": "insurer",
+   "defined_in": "10-1-102 (13)",
+   "evidence": {
+    "provision": "6-1-1705(7)",
+    "quote": "AN INSURER, AS DEFINED IN SECTION 10-1-102 (13)"
+   }
+  },
+  {
+   "term": "affiliate",
+   "defined_in": "11-101-401 (3.5)",
+   "evidence": {
+    "provision": "6-1-1705(8)(b)(I)",
+    "quote": "HAS THE MEANING SET FORTH IN SECTION 11-101-401 (3.5)"
+   }
+  },
+  {
+   "term": "bank",
+   "defined_in": "11-101-401 (5)",
+   "evidence": {
+    "provision": "6-1-1705(8)(b)(II)",
+    "quote": "HAS THE MEANING SET FORTH IN SECTION 11-101-401 (5)"
+   }
+  },
+  {
+   "term": "credit union",
+   "defined_in": "11-30-101 (1)(a)",
+   "evidence": {
+    "provision": "6-1-1705(8)(b)(III)",
+    "quote": "HAS THE MEANING SET FORTH IN SECTION 11-30-101 (1)(a)"
+   }
+  },
+  {
+   "term": "out-of-state bank",
+   "defined_in": "11-101-401 (50)",
+   "evidence": {
+    "provision": "6-1-1705(8)(b)(IV)",
+    "quote": "HAS THE MEANING SET FORTH IN SECTION 11-101-401 (50)"
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "bias_mitigation",
+   "addressee": "ai_developer",
+   "modality": "shall",
+   "summary": "Developer of a high-risk AI system must use reasonable care to protect consumers from known or reasonably foreseeable risks of algorithmic discrimination arising from intended and contracted uses. A rebuttable presumption of reasonable care applies only in Attorney General enforcement actions (6-1-1706).",
+   "applies_from": "ON AND AFTER FEBRUARY 1, 2026",
+   "conditional_on": "system is a high-risk artificial intelligence system (6-1-1701(9))",
+   "evidence": {
+    "provision": "6-1-1702(1)",
+    "quote": "A DEVELOPER OF A HIGH-RISK ARTIFICIAL INTELLIGENCE SYSTEM SHALL USE REASONABLE CARE TO PROTECT CONSUMERS FROM ANY KNOWN OR REASONABLY FORESEEABLE RISKS OF ALGORITHMIC DISCRIMINATION"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "ai_developer",
+   "modality": "shall",
+   "summary": "Developer must make available to deployers or other developers: a general statement of foreseeable and harmful uses; documentation on training data types, limitations, purpose, intended benefits, evaluation, data governance, outputs and human use and monitoring (2); impact-assessment information to enable deployers to complete their assessments (3); and a publicly available statement of high-risk system types and how algorithmic discrimination risks are managed, updated as necessary and within 90 days after an intentional and substantial modification (4). Trade secrets and security-sensitive information need not be disclosed (6).",
+   "applies_from": "ON AND AFTER FEBRUARY 1, 2026",
+   "conditional_on": "system is a high-risk artificial intelligence system",
+   "evidence": {
+    "provision": "6-1-1702(2)",
+    "quote": "A DEVELOPER OF A HIGH-RISK ARTIFICIAL INTELLIGENCE SYSTEM SHALL MAKE AVAILABLE TO THE DEPLOYER OR OTHER DEVELOPER OF THE HIGH-RISK ARTIFICIAL INTELLIGENCE SYSTEM"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "ai_developer",
+   "modality": "shall",
+   "summary": "Developer must disclose to the Attorney General, in a prescribed form, and to all known deployers or other developers, known or reasonably foreseeable risks of algorithmic discrimination without unreasonable delay and no later than 90 days after discovering, through its testing, that the system has caused or is reasonably likely to have caused algorithmic discrimination, or after receiving a credible deployer report of such discrimination.",
+   "applies_from": "ON AND AFTER FEBRUARY 1, 2026",
+   "conditional_on": "developer discovers or receives a credible report that the high-risk system has caused algorithmic discrimination",
+   "evidence": {
+    "provision": "6-1-1702(5)",
+    "quote": "A DEVELOPER OF A HIGH-RISK ARTIFICIAL INTELLIGENCE SYSTEM SHALL DISCLOSE TO THE ATTORNEY GENERAL, IN A FORM AND MANNER PRESCRIBED BY THE ATTORNEY GENERAL"
+   }
+  },
+  {
+   "type": "cooperation_with_authority",
+   "addressee": "ai_developer",
+   "modality": "shall",
+   "summary": "On the Attorney General's request, developer must disclose the statement or documentation described in 6-1-1702(2) no later than 90 days after the request, in the prescribed form. Developer may designate proprietary or trade-secret content, and privileged content is not waived.",
+   "applies_from": "ON AND AFTER FEBRUARY 1, 2026",
+   "conditional_on": "Attorney General request",
+   "evidence": {
+    "provision": "6-1-1702(7)",
+    "quote": "THE ATTORNEY GENERAL MAY REQUIRE THAT A DEVELOPER DISCLOSE TO THE ATTORNEY GENERAL, NO LATER THAN NINETY DAYS AFTER THE REQUEST"
+   }
+  },
+  {
+   "type": "bias_mitigation",
+   "addressee": "ai_deployer",
+   "modality": "shall",
+   "summary": "Deployer of a high-risk system must use reasonable care to protect consumers from known or reasonably foreseeable risks of algorithmic discrimination. A rebuttable presumption of reasonable care applies only in Attorney General enforcement actions (6-1-1706).",
+   "applies_from": "ON AND AFTER FEBRUARY 1, 2026",
+   "conditional_on": "system is a high-risk artificial intelligence system (6-1-1701(9))",
+   "evidence": {
+    "provision": "6-1-1703(1)",
+    "quote": "A DEPLOYER OF A HIGH-RISK ARTIFICIAL INTELLIGENCE SYSTEM SHALL USE REASONABLE CARE TO PROTECT CONSUMERS FROM ANY KNOWN OR REASONABLY FORESEEABLE RISKS OF ALGORITHMIC DISCRIMINATION"
+   }
+  },
+  {
+   "type": "management_system",
+   "addressee": "ai_deployer",
+   "modality": "shall",
+   "summary": "Deployer must implement a risk management policy and program governing deployment, specifying principles, processes and personnel to identify, document and mitigate algorithmic discrimination risks. It must be iterative, regularly and systematically reviewed and updated, and reasonable considering listed factors including recognised frameworks, size and complexity, system scope and sensitivity of data. Exempt deployers are listed in (6).",
+   "applies_from": "ON AND AFTER FEBRUARY 1, 2026",
+   "conditional_on": "system is a high-risk artificial intelligence system; not an exempt small deployer under 6-1-1703(6)",
+   "evidence": {
+    "provision": "6-1-1703(2)(a)",
+    "quote": "A DEPLOYER OF A HIGH-RISK ARTIFICIAL INTELLIGENCE SYSTEM SHALL IMPLEMENT A RISK MANAGEMENT POLICY AND PROGRAM"
+   }
+  },
+  {
+   "type": "impact_assessment",
+   "addressee": "ai_deployer",
+   "modality": "shall",
+   "summary": "Deployer, or a third party it contracts, must complete an impact assessment before deploying a high-risk system, at least annually, and within 90 days after an intentional and substantial modification. Assessment content is set out in (3)(b)-(c). Assessments may cover comparable systems (3)(d) and may satisfy other-law assessments if reasonably similar (3)(e). Annual review that the system does not cause algorithmic discrimination is required by (3)(g).",
+   "applies_from": "ON AND AFTER FEBRUARY 1, 2026",
+   "conditional_on": "system is a high-risk artificial intelligence system; not an exempt small deployer under 6-1-1703(6)",
+   "evidence": {
+    "provision": "6-1-1703(3)(a)",
+    "quote": "A DEPLOYER, OR A THIRD PARTY CONTRACTED BY THE DEPLOYER, THAT DEPLOYS A HIGH-RISK ARTIFICIAL INTELLIGENCE SYSTEM ON OR AFTER FEBRUARY 1, 2026, SHALL COMPLETE AN IMPACT ASSESSMENT"
+   }
+  },
+  {
+   "type": "record_keeping",
+   "addressee": "ai_deployer",
+   "modality": "shall",
+   "summary": "Deployer must maintain the most recently completed impact assessment, all records concerning each assessment, and all prior assessments for at least three years following final deployment of the system.",
+   "conditional_on": "system is a high-risk artificial intelligence system",
+   "evidence": {
+    "provision": "6-1-1703(3)(f)",
+    "quote": "A DEPLOYER SHALL MAINTAIN THE MOST RECENTLY COMPLETED IMPACT ASSESSMENT FOR A HIGH-RISK ARTIFICIAL INTELLIGENCE SYSTEM"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "ai_deployer",
+   "modality": "shall",
+   "summary": "Before a consequential decision about a consumer is made, deployer must notify the consumer of the high-risk system's use, provide a statement of purpose, nature of the decision, deployer contact information, a plain-language description, and access instructions, and give information on any opt-out right under 6-1-1306 where applicable (4)(a). Notices must be given directly in plain language and in accessible formats, or otherwise made reasonably calculated to reach the consumer (4)(c). Where information is withheld, the consumer must be notified with a basis (8).",
+   "applies_from": "ON AND AFTER FEBRUARY 1, 2026",
+   "conditional_on": "high-risk system is used to make or is a substantial factor in a consequential decision concerning a consumer",
+   "evidence": {
+    "provision": "6-1-1703(4)(a)",
+    "quote": "THE DEPLOYER SHALL: (I) NOTIFY THE CONSUMER THAT THE DEPLOYER HAS DEPLOYED A HIGH-RISK ARTIFICIAL INTELLIGENCE SYSTEM"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "ai_deployer",
+   "modality": "shall",
+   "summary": "Where a consequential decision is adverse to the consumer, deployer must provide a statement of the principal reasons, including the degree and manner of the system's contribution, data types and data sources; an opportunity to correct incorrect personal data processed; and an opportunity to appeal, which must allow human review if technically feasible unless appeal is not in the consumer's best interest.",
+   "applies_from": "ON AND AFTER FEBRUARY 1, 2026",
+   "conditional_on": "consequential decision concerning a consumer is adverse to the consumer",
+   "evidence": {
+    "provision": "6-1-1703(4)(b)",
+    "quote": "IF THE CONSEQUENTIAL DECISION IS ADVERSE TO THE CONSUMER, PROVIDE TO THE CONSUMER"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "ai_deployer",
+   "modality": "shall",
+   "summary": "Deployer must make available on its website a statement summarising the high-risk system types it deploys, how it manages algorithmic discrimination risks for each, and in detail the nature, source and extent of information it collects and uses; the statement must be periodically updated. Subject to the exemption in (6).",
+   "applies_from": "ON AND AFTER FEBRUARY 1, 2026",
+   "conditional_on": "system is a high-risk artificial intelligence system; not an exempt small deployer under 6-1-1703(6)",
+   "evidence": {
+    "provision": "6-1-1703(5)(a)",
+    "quote": "A DEPLOYER SHALL MAKE AVAILABLE, IN A MANNER THAT IS CLEAR AND READILY AVAILABLE ON THE DEPLOYER'S WEBSITE, A STATEMENT SUMMARIZING"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "ai_deployer",
+   "modality": "shall",
+   "summary": "After discovering that a high-risk system has caused algorithmic discrimination, deployer must send a notice disclosing the discovery to the Attorney General without unreasonable delay and no later than 90 days after discovery, in the prescribed form.",
+   "applies_from": "ON AND AFTER FEBRUARY 1, 2026",
+   "conditional_on": "deployer discovers that a high-risk system deployed on or after February 1, 2026 has caused algorithmic discrimination",
+   "evidence": {
+    "provision": "6-1-1703(7)",
+    "quote": "SHALL SEND TO THE ATTORNEY GENERAL, IN A FORM AND MANNER PRESCRIBED BY THE ATTORNEY GENERAL, A NOTICE DISCLOSING THE DISCOVERY"
+   }
+  },
+  {
+   "type": "cooperation_with_authority",
+   "addressee": "ai_deployer",
+   "modality": "shall",
+   "summary": "On the Attorney General's request, deployer, or a third party it contracts, must disclose the risk management policy, impact assessment or records within 90 days after the request, in the prescribed form. Trade secrets may be designated and privileged content is not waived.",
+   "applies_from": "ON AND AFTER FEBRUARY 1, 2026",
+   "conditional_on": "Attorney General request",
+   "evidence": {
+    "provision": "6-1-1703(9)",
+    "quote": "THE ATTORNEY GENERAL MAY REQUIRE THAT A DEPLOYER, OR A THIRD PARTY CONTRACTED BY THE DEPLOYER, DISCLOSE TO THE ATTORNEY GENERAL"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "ai_deployer",
+   "also_addressees": [
+    "ai_developer"
+   ],
+   "modality": "shall",
+   "summary": "Deployer or other developer that makes available an AI system intended to interact with consumers must ensure each consumer interacting with it is told that they are interacting with an AI system. Not required where it would be obvious to a reasonable person.",
+   "applies_from": "ON AND AFTER FEBRUARY 1, 2026",
+   "conditional_on": "system is intended to interact with consumers and disclosure is not obvious to a reasonable person (6-1-1704(2))",
+   "evidence": {
+    "provision": "6-1-1704(1)",
+    "quote": "SHALL ENSURE THE DISCLOSURE TO EACH CONSUMER WHO INTERACTS WITH THE ARTIFICIAL INTELLIGENCE SYSTEM"
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "government_agency",
+   "modality": "may",
+   "summary": "Attorney General may promulgate rules needed to implement and enforce Part 17, including documentation requirements, notice contents, risk management and impact assessment content, the requirements for rebuttable presumptions and affirmative defences, and the process for recognising other risk management frameworks.",
+   "evidence": {
+    "provision": "6-1-1707(1)",
+    "quote": "THE ATTORNEY GENERAL MAY PROMULGATE RULES AS NECESSARY FOR THE PURPOSE OF IMPLEMENTING AND ENFORCING THIS PART 17"
+   }
+  }
+ ],
+ "enforcement": [
+  {
+   "sanction_type": "other",
+   "authority": "Attorney General (exclusive enforcement authority under 6-1-1706(1))",
+   "triggered_by": "Violation of the requirements established in Part 17 of Article 1 of Title 6 (6-1-1701 to 6-1-1707), treated as an unfair trade practice under 6-1-105(1)(hhhh)",
+   "max_penalty_text": "Not stated in this text. The text makes a violation an unfair trade practice under 6-1-105(1)(hhhh) and does not state a penalty amount.",
+   "penalty_formula": "Not stated in this text.",
+   "penalty_reference": "C.R.S. 6-1-105(1)(hhhh) (unfair trade practice; the penalty provisions are not reproduced in this text)",
+   "private_right_of_action": false,
+   "cure_period": "No fixed cure period stated. Section 6-1-1706(3) provides an affirmative defense for a developer, deployer or other person that discovers and cures a violation through feedback, adversarial testing or red teaming, or an internal review process, and is otherwise in compliance with a recognized risk management framework; the defense applies only in an Attorney General action.",
+   "evidence": {
+    "provision": "6-1-1706(2)",
+    "quote": "A VIOLATION OF THE REQUIREMENTS ESTABLISHED IN THIS PART 17 CONSTITUTES AN UNFAIR TRADE PRACTICE PURSUANT TO SECTION 6-1-105 (1)(hhhh)."
+   }
+  }
+ ],
+ "section_status": {}
+}

@@ -1,0 +1,226 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "dk-l3-2026-27-ai-act",
+ "tier": "B",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "light, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-interim-20261014"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (Claude Code retrieval)",
+  "url": "https://www.retsinformation.dk/eli/ft/202612L00003/pdf",
+  "retrieved": "2026-10-14",
+  "version": "Lovforslag L 3 (Folketingsår 2026-27, 1. samling) as fremsat 7 Oct 2026 (retsinformation LSF 2026/1 3)",
+  "language": "da",
+  "extent": "full",
+  "note": "Bill text with general and specific remarks (bemærkninger); the document also reproduces Regulation (EU) 2024/1689 (AI Act) in Danish as an annex. ft.dk PDF returned 403, so the retsinformation copy of the same lovforslag was used. Introduced by the Forsknings-, Uddannelses- og Digitaliseringsminister. Trimmed for annotation to the bill's operative text (§§ 1–20); Bilag 1 (reprint of Regulation (EU) 2024/1689) and the explanatory remarks are omitted. Untrimmed copy: <id>.untrimmed.txt.bak."
+ },
+ "classification": {
+  "domains": [
+   "ai_general",
+   "public_sector_ai",
+   "online_safety_content"
+  ],
+  "primary_domain": "ai_general",
+  "mechanisms": [
+   "mandate_obligation",
+   "prohibition_ban",
+   "registration_notification",
+   "institution_setup",
+   "enforcement_order"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "ai_provider",
+   "ai_deployer",
+   "ai_distributor",
+   "platform_operator",
+   "government_agency"
+  ],
+  "affected_roles": [
+   "consumers_users",
+   "general_public"
+  ],
+  "decision_margins": [
+   "firm:product_design_release",
+   "firm:entry_market_access",
+   "firm:compliance_process",
+   "household:access",
+   "household:information"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national"
+   ],
+   "description": "Applies in Denmark, with persons in scope defined by reference to Article 2(1)(a)-(f) of the AI Act; excluded from the Faroe Islands and Greenland.",
+   "evidence": {
+    "provision": "§ 20",
+    "quote": "Loven gælder ikke for Færøerne og Grønland."
+   }
+  },
+  "agora_applications": [
+   "Government: judicial and law enforcement"
+  ],
+  "agora_incentives": [
+   "Criminal liability",
+   "Fines"
+  ],
+  "agora_strategies": [
+   "Licensing, registration, and certification",
+   "Evaluation",
+   "Disclosure: About incidents"
+  ]
+ },
+ "summary": {
+  "short": "Proposed Danish act supplementing EU AI Regulation 2024/1689. Designates market-surveillance and contact authorities, gives them inspection, order, temporary-ban and online-blocking powers over AI providers, deployers, distributors and online-interface owners, requires registration of certain AI safety components, and sets fines. Effective the day after promulgation.",
+  "long": "The bill, introduced on 7 October 2026 by the Danish research, education and digitalisation minister, supplements Regulation (EU) 2024/1689 (the AI Act) for Denmark. It designates the Agency for Digitalisation as central contact point and coordinator of market-surveillance authorities, and makes the Danish Courts Administration a market-surveillance authority for courts' own use of AI systems. The minister may set by regulation which authorities act as national competent or market-surveillance authorities. Market-surveillance authorities may require information, sample AI systems, enter premises and issue orders requiring warnings, halting marketing, corrective action, withdrawal or recall. They may impose temporary bans on supplying an AI system that poses a risk. Owners of online interfaces may be ordered to change, remove or warn against content referring to non-compliant AI systems; blocking requires a court ruling. AI systems intended as safety components in critical digital infrastructure, road traffic, or water, gas, heating and electricity supply must be registered with the Agency. Providers must keep certain information for five years after their AI system is placed on the market or put into service. Listed violations of AI Act provisions and of this act are punishable by fines, with legal persons liable under the Criminal Code; the limitation period is five years. Fines may be settled by summary penalty notice. The act enters into force the day after publication and repeals Act No. 467 of 14 May 2025. It does not apply to the Faroe Islands or Greenland."
+ },
+ "relations": [
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) 2024/1689 (forordningen om kunstig intelligens, AI Act); the bill supplements it",
+   "note": "The bill states that it supplements the Regulation. The Regulation is reproduced as Annex 1 (bilag 1), which is not annotated here.",
+   "evidence": {
+    "provision": "§ 1",
+    "quote": "Loven supplerer Europa-Parlamentets og Rådets forordning (EU) 2024/1689 af 13. juni 2024"
+   }
+  },
+  {
+   "relation": "designates_under",
+   "target_text": "Regulation (EU) 2024/1689 (forordningen om kunstig intelligens), Art. 70",
+   "note": "Designates the Agency for Digitisation as central contact point under Art. 70(2). Other sections designate market surveillance and notifying authorities under the Regulation (§§ 2, 3(2), 3(3), 16(2)).",
+   "evidence": {
+    "provision": "§ 3 stk. 1",
+    "quote": "Digitaliseringsstyrelsen er centralt kontaktpunkt for forordningen om kunstig intelligens i henhold til artikel 70, stk. 2, 3. pkt."
+   }
+  },
+  {
+   "relation": "repeals",
+   "target_text": "Lov nr. 467 af 14. maj 2025 om supplerende bestemmelser til forordningen om kunstig intelligens",
+   "note": "The earlier Danish supplementary AI Act is repealed (ophæves). The repeal takes effect with the entry into force in § 19 stk. 1, which is set as the day after publication in Lovtidende.",
+   "evidence": {
+    "provision": "§ 19 stk. 2",
+    "quote": "Lov nr. 467 af 14. maj 2025 om supplerende bestemmelser til forordningen om kunstig intelligens ophæves."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Straffeloven (Danish Criminal Code), 5. kapitel (criminal liability of legal persons)",
+   "note": "Corporate criminal liability for the offences in § 17 stk. 1 is governed by the 5th chapter of the Criminal Code.",
+   "evidence": {
+    "provision": "§ 17 stk. 3",
+    "quote": "Der kan pålægges selskaber m.v. (juridiske personer) strafansvar efter reglerne i straffelovens 5. kapitel."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Retsplejeloven (Administration of Justice Act), rules on indictments and the suspect's right not to testify",
+   "note": "Applies by analogy to fine notices (bødeforelæg) under the § 18 out-of-court procedure.",
+   "evidence": {
+    "provision": "§ 18 stk. 2",
+    "quote": "Retsplejelovens regler om krav til indholdet af et anklageskrift og om, at en sigtet ikke er forpligtet til at udtale sig, finder tilsvarende anvendelse på bødeforelæg efter stk. 1."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Charter of Fundamental Rights of the European Union",
+   "note": "Limits the onward disclosure of technical, operational or commercially sensitive information by market surveillance authorities to cases needed to protect fundamental rights.",
+   "evidence": {
+    "provision": "§ 12 stk. 2",
+    "quote": "for at beskytte de grundlæggende rettigheder i Den Europæiske Unions charter om grundlæggende"
+   }
+  }
+ ],
+ "notes": "Target IDs are empty strings because no registry IDs were given; the codebook asks for null, but the schema requires a string. The header label '(Gældende)' is portal metadata; the text is the bill introduced 7 Oct 2026. The Regulation's annex (bilag 1) is not annotated. Relations are taken only from this bill's text. No internal inconsistencies found in the operative provisions.",
+ "events": [
+  {
+   "event": "introduced",
+   "date": "2026-10-07",
+   "date_type": "absolute",
+   "date_text": "Fremsat den 7. oktober 2026",
+   "applies_to": "bill as introduced (Fremsat)",
+   "evidence": {
+    "provision": "Front matter (Fremsættelse)",
+    "quote": "Fremsat den 7. oktober 2026"
+   }
+  },
+  {
+   "event": "published",
+   "date": null,
+   "date_type": "not_stated",
+   "date_text": "bekendtgørelsen i Lovtidende",
+   "applies_to": "Act as promulgated in Lovtidende",
+   "evidence": {
+    "provision": "§ 19, stk. 1",
+    "quote": "Loven træder i kraft dagen efter bekendtgørelsen i Lovtidende."
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "dagen efter bekendtgørelsen i Lovtidende",
+   "anchor": "bekendtgørelsen i Lovtidende",
+   "applies_to": "Act as a whole",
+   "offset_value": 1,
+   "offset_unit": "days",
+   "anchor_event": "published",
+   "evidence": {
+    "provision": "§ 19, stk. 1",
+    "quote": "Loven træder i kraft dagen efter bekendtgørelsen i Lovtidende."
+   }
+  },
+  {
+   "event": "repealed",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "ophæves",
+   "depends_on": "entry into force of this Act (§ 19, stk. 1)",
+   "applies_to": "Lov nr. 467 af 14. maj 2025 om supplerende bestemmelser til forordningen om kunstig intelligens",
+   "evidence": {
+    "provision": "§ 19, stk. 2",
+    "quote": "Lov nr. 467 af 14. maj 2025 om supplerende bestemmelser til forordningen om kunstig intelligens ophæves."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "Kærefristen er 4 uger fra den dag, hvor afgørelsen er meddelt den pågældende.",
+   "anchor": "notification of the decision to the person concerned",
+   "depends_on": "notification of the decision (meddelelse af afgørelsen)",
+   "applies_to": "appeal of decisions of courts' market surveillance authority (§ 3, stk. 4)",
+   "offset_value": 4,
+   "offset_unit": "weeks",
+   "evidence": {
+    "provision": "§ 3, stk. 4",
+    "quote": "Kærefristen er 4 uger fra den dag, hvor afgørelsen er meddelt den pågældende."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "før der er forløbet 3 måneder fra kendelsens afsigelse",
+   "anchor": "date of the court ruling (kendelsens afsigelse)",
+   "depends_on": "date of the court ruling (kendelsens afsigelse)",
+   "applies_to": "renewed request for blocking an online interface after a rejected request (§ 11, stk. 4)",
+   "offset_value": 3,
+   "offset_unit": "months",
+   "evidence": {
+    "provision": "§ 11, stk. 4",
+    "quote": "kan ny anmodning ikke fremsættes, før der er forløbet 3 måneder fra kendelsens afsigelse."
+   }
+  }
+ ],
+ "section_status": {
+  "thresholds": {
+   "status": "not_found",
+   "note": "The bill contains no monetary, size, volume or other numeric cutoff that changes legal treatment. Numbers present are procedural or retention periods, not thresholds: 4 weeks appeal period (§ 3(4)); 3 months before a new request may be filed after a rejected request to lift a blocking order (§ 11(4)); 5-year record retention (§ 5(3)); 5-year limitation period (§ 17(4)). Article and paragraph numbers of the AI Act are cross-references only."
+  }
+ },
+ "thresholds": []
+}

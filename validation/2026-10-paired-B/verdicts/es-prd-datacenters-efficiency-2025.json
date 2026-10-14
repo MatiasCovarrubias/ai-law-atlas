@@ -1,0 +1,93 @@
+{
+ "instrument_id": "es-prd-datacenters-efficiency-2025",
+ "checker": "claude-opus-5-5 (Claude Code)",
+ "protocol": "VP-1.0",
+ "date": "2026-10-14",
+ "tier": "B",
+ "reference": [
+  {
+   "category": "key_date",
+   "provision": "Plazo de remisión",
+   "quote": "Plazo para presentar documentación desde el viernes, 08 de agosto de 2025",
+   "value": "2025-08-08 (public hearing / consultation opens)",
+   "match": {
+    "X": 0,
+    "Y": 0
+   }
+  },
+  {
+   "category": "key_date",
+   "provision": "Plazo de remisión",
+   "quote": "hasta el lunes, 15 de septiembre de 2025",
+   "value": "2025-09-15 (consultation closes)",
+   "match": {
+    "X": 1,
+    "Y": 1
+   }
+  },
+  {
+   "category": "threshold",
+   "provision": "Antecedentes de la norma (description of draft RD)",
+   "quote": "se establece la obligación de demostrar que los centros de datos proyectados se incluyen entre el 15% de mejores prestaciones en lo que se refiere a los distintos indicadores",
+   "value": "top 15% performance on indicators (planned data centres); per the page, compliance is a condition for grid access",
+   "match": {
+    "X": null,
+    "Y": null
+   }
+  }
+ ],
+ "judgments": {
+  "X": {
+   "thresholds": [],
+   "events": [
+    {
+     "index": 0,
+     "verdict": "correct",
+     "note": "consultation opening date stated on the page"
+    },
+    {
+     "index": 1,
+     "verdict": "correct",
+     "note": "consultation closing date stated on the page"
+    }
+   ],
+   "obligations": [],
+   "enforcement": []
+  },
+  "Y": {
+   "thresholds": [],
+   "events": [
+    {
+     "index": 0,
+     "verdict": "correct",
+     "note": "consultation opening date stated on the page"
+    },
+    {
+     "index": 1,
+     "verdict": "correct",
+     "note": "consultation closing date stated on the page"
+    }
+   ],
+   "obligations": [],
+   "enforcement": []
+  }
+ },
+ "sampling": {
+  "X": {},
+  "Y": {}
+ },
+ "classification": {
+  "X": {
+   "domains": "right",
+   "primary_domain": "right",
+   "note": "compute_data_centers + energy_grid_water (grid-access condition, energy/water reporting)"
+  },
+  "Y": {
+   "domains": "right",
+   "primary_domain": "right",
+   "note": "same as X"
+  }
+ },
+ "reference_scope": "full text (consultation page only; the draft RD itself is a PDF annex not in the cached text)",
+ "notes": "Text is the MITECO consultation page only; the draft RD is a PDF annex not in the cache. Both versions code the same two consultation events correctly and code no thresholds. Both explicitly considered and excluded the 15% best-performance requirement because it appears only in the page's descriptive background (not an operative provision; cf. codebook edge case 6.6); the reference (written blind) counts it, so both miss it equally. Both correctly attribute the 500 kW cutoff to Delegated Regulation (EU) 2024/1364."
+}

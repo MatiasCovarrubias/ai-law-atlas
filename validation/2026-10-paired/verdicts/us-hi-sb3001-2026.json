@@ -1,0 +1,253 @@
+{
+ "instrument_id": "us-hi-sb3001-2026",
+ "checker": "claude-opus-5-5 (Claude Code)",
+ "protocol": "VP-1.0",
+ "date": "2026-10-14",
+ "reference": [
+  {
+   "category": "threshold",
+   "provision": "Sec. 2 (HRS §481B-__(k), def. \"Minor\")",
+   "quote": "\"Minor\" means any person under eighteen years of age.",
+   "value": "age < 18 years (person); scope of minor-specific duties in (b) and (d)",
+   "match": {
+    "X": 0,
+    "Y": 0
+   }
+  },
+  {
+   "category": "key_date",
+   "provision": "Sec. 6",
+   "quote": "provided that section 2 shall take effect on July 1, 2027.",
+   "value": "2027-07-01: section 2 (the new HRS §481B section) takes effect",
+   "match": {
+    "X": 1,
+    "Y": 0
+   }
+  },
+  {
+   "category": "key_date",
+   "provision": "Sec. 6",
+   "quote": "This Act shall take effect on July 1, 3000",
+   "value": "3000-07-01: Act's general effective date (placeholder date in the HD3 text)",
+   "match": {
+    "X": 0,
+    "Y": 1
+   }
+  },
+  {
+   "category": "key_date",
+   "provision": "Sec. 2 (HRS §481B-__(e))",
+   "quote": "Beginning January 1, 2028, an operator shall submit to the department of commerce and consumer affairs an annual report",
+   "value": "2028-01-01: annual reporting duty begins (recurring annually)",
+   "match": {
+    "X": 2,
+    "Y": 2
+   }
+  },
+  {
+   "category": "sanction",
+   "provision": "Sec. 2 (HRS §481B-__(g)(2))",
+   "quote": "A civil penalty of $1,000 per violation; provided that damages awarded under this subparagraph shall not exceed $1,000,000 per operator",
+   "value": "AG / office of consumer protection action: injunctive relief; greater of actual damages or $1,000 civil penalty per violation, capped at $1,000,000 per operator; attorneys' fees; no private action (h)",
+   "match": {
+    "X": 1,
+    "Y": 2
+   }
+  },
+  {
+   "category": "sanction",
+   "provision": "Sec. 2 (HRS §481B-__(f))",
+   "quote": "Any violation of this section shall constitute an unfair or deceptive act or practice in the conduct of trade or commerce within the meaning of section 480-2.",
+   "value": "violation is a UDAP under HRS §480-2 (penalty by reference; no amount stated)",
+   "match": {
+    "X": 2,
+    "Y": 0
+   }
+  }
+ ],
+ "judgments": {
+  "X": {
+   "thresholds": [
+    {
+     "index": 0,
+     "verdict": "correct",
+     "note": ""
+    }
+   ],
+   "events": [
+    {
+     "index": 0,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 1,
+     "verdict": "correct",
+     "note": "'take effect' for section 2; entry_into_force acceptable"
+    },
+    {
+     "index": 2,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 3,
+     "verdict": "correct",
+     "note": "recurring annual report deadline; separate fact from the start date in [2], no due date stated"
+    }
+   ],
+   "obligations": [
+    {
+     "index": 0,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 1,
+     "verdict": "duplicate",
+     "note": "codebook 3.5 granularity: same section (new HRS §481B-), role and type (disclosure_transparency) as [0]; split only when start dates differ"
+    },
+    {
+     "index": 2,
+     "verdict": "correct",
+     "note": "(c)(1),(2),(4) combined; type other acceptable (no crisis-protocol type)"
+    },
+    {
+     "index": 3,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 4,
+     "verdict": "duplicate",
+     "note": "codebook 3.5 granularity: same section, role and type (prohibition) as [3]"
+    },
+    {
+     "index": 5,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 6,
+     "verdict": "correct",
+     "note": ""
+    }
+   ],
+   "enforcement": [
+    {
+     "index": 0,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 1,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 2,
+     "verdict": "correct",
+     "note": ""
+    }
+   ]
+  },
+  "Y": {
+   "thresholds": [
+    {
+     "index": 0,
+     "verdict": "correct",
+     "note": ""
+    }
+   ],
+   "events": [
+    {
+     "index": 0,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 1,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 2,
+     "verdict": "correct",
+     "note": ""
+    }
+   ],
+   "obligations": [
+    {
+     "index": 0,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 1,
+     "verdict": "duplicate",
+     "note": "codebook 3.5 granularity: same section (new HRS §481B-), role and type (disclosure_transparency) as [0]; split only when start dates differ"
+    },
+    {
+     "index": 2,
+     "verdict": "correct",
+     "note": "provision label says (c)(1)-(4) but (c)(3) is coded separately in [3]; content fine"
+    },
+    {
+     "index": 3,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 4,
+     "verdict": "duplicate",
+     "note": "codebook 3.5 granularity: same section, role and type (prohibition) as [3]"
+    },
+    {
+     "index": 5,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 6,
+     "verdict": "correct",
+     "note": ""
+    }
+   ],
+   "enforcement": [
+    {
+     "index": 0,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 1,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 2,
+     "verdict": "correct",
+     "note": "currency '$' rather than USD; minor"
+    }
+   ]
+  }
+ },
+ "sampling": {
+  "X": {},
+  "Y": {}
+ },
+ "classification": {
+  "X": {
+   "domains": "right",
+   "primary_domain": "right",
+   "note": "online_safety_content (self-harm/suicide response duties) arguably also operative but not required"
+  },
+  "Y": {
+   "domains": "right",
+   "primary_domain": "right",
+   "note": ""
+  }
+ },
+ "reference_scope": "full text",
+ "notes": "Short bill text (HD3). Both versions are near-identical in substance; X adds a recurring deadline event for the annual report. The whole operative text is one new HRS section, so under the codebook granularity rule (one row per article, role and type) the separate (a)/(b) disclosure rows and (c)(3)/(d)(1) prohibition rows are duplicates in both versions; the content of those rows is accurate. Text gives no adoption date; the 3000-07-01 effective date is a placeholder in the bill and both record it as written."
+}

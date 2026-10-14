@@ -1,0 +1,391 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "cn-csl-amendment-2025",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (connectors/fetch_texts.py)",
+  "url": "http://www.npc.gov.cn/npc/c2/c30834/202510/t20251028_449048.html",
+  "retrieved": "2026-10-13",
+  "version": "as fetched",
+  "language": "zh",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "cybersecurity",
+   "data_protection",
+   "data_transfer_localization",
+   "online_safety_content",
+   "ai_general"
+  ],
+  "primary_domain": "cybersecurity",
+  "mechanisms": [
+   "mandate_obligation",
+   "prohibition_ban"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "platform_operator",
+   "essential_entity",
+   "hardware_supplier",
+   "government_agency"
+  ],
+  "affected_roles": [
+   "consumers_users",
+   "ai_developer"
+  ],
+  "decision_margins": [
+   "firm:compliance_process",
+   "firm:input_use",
+   "firm:product_design_release",
+   "household:data_privacy"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national",
+    "extraterritorial"
+   ],
+   "description": "Applies within the PRC; Art. 77 also reaches overseas organisations and individuals whose activities endanger China's cybersecurity.",
+   "evidence": {
+    "provision": "Item 14 (Art. 77, replacing Art. 75)",
+    "quote": "境外的机构、组织、个人从事危害中华人民共和国网络安全的活动的，依法追究法律责任"
+   }
+  },
+  "agora_harms": [
+   "Harm to infrastructure",
+   "Violation of civil or human rights, including privacy"
+  ],
+  "agora_incentives": [
+   "Fines"
+  ],
+  "agora_risk_factors": [
+   "Privacy",
+   "Security: Cybersecurity"
+  ],
+  "agora_strategies": [
+   "Government support: For R&D",
+   "Governance development"
+  ]
+ },
+ "summary": {
+  "short": "Amends China's Cybersecurity Law, effective 1 January 2026. Adds general principles and a provision on state support for AI research and infrastructure, adds personal-information processing duties, and revises penalties for network operators, critical information infrastructure operators, and product sellers, plus foreign actors harming cybersecurity.",
+  "long": "NPC Standing Committee decision adopted 28 October 2025, effective 1 January 2026, amending the Cybersecurity Law. It adds Art. 3 (Party leadership, overall national security concept, network power). New Art. 20 directs state support for AI basic research, key algorithms, training-data and computing infrastructure, AI ethics norms, risk monitoring and assessment, safety supervision, AI application, and AI use in cybersecurity management. New paragraph in Art. 42 requires network operators processing personal information to comply with the Cybersecurity Law, Civil Code and Personal Information Protection Law. Renumbers and rewrites the penalty provisions (Arts. 61-77): graded fines for breaching network security protection duties of network operators and critical information infrastructure operators; new Art. 63 penalising sale of uncertified critical network equipment and security products; Art. 67 fines of one to ten times procurement amount for critical infrastructure operators using unreviewed network products; higher fines for publishing prohibited information; cross-reference to other laws for personal information and cross-border data breaches; a mitigation clause (Art. 73); and Art. 77 liability and asset-freezing measures for overseas actors endangering China's cybersecurity."
+ },
+ "relations": [
+  {
+   "relation": "amends",
+   "target_text": "《中华人民共和国网络安全法》 (Cybersecurity Law)",
+   "note": "Amends the Cybersecurity Law through items 1 to 14 and provides for its republication with renumbered articles. The consolidated law is not in this document.",
+   "evidence": {
+    "provision": "Closing paragraph",
+    "quote": "《中华人民共和国网络安全法》根据本决定作相应修改并对条文顺序作相应调整，重新公布。"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "《中华人民共和国民法典》 (Civil Code)",
+   "note": "Cited in new Art. 42 para. 2 as a law that network operators' personal information processing must comply with.",
+   "evidence": {
+    "provision": "Decision item 4 (new Art. 42 para. 2)",
+    "quote": "应当遵守本法和《中华人民共和国民法典》、《中华人民共和国个人信息保护法》等法律、行政法规的规定"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "《中华人民共和国个人信息保护法》 (Personal Information Protection Law)",
+   "note": "Cited in new Art. 42 para. 2 as a law that network operators' personal information processing must comply with.",
+   "evidence": {
+    "provision": "Decision item 4 (new Art. 42 para. 2)",
+    "quote": "应当遵守本法和《中华人民共和国民法典》、《中华人民共和国个人信息保护法》等法律、行政法规的规定"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "《中华人民共和国行政处罚法》 (Administrative Penalty Law)",
+   "note": "Cited in new Art. 73 for mitigation, reduction or waiver of penalties under that law.",
+   "evidence": {
+    "provision": "Decision item 13 (new Art. 73)",
+    "quote": "《中华人民共和国行政处罚法》规定的从轻、减轻或者不予处罚情形"
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "国务院公安部门 (State Council public security department)",
+   "role": "designated",
+   "function": "May decide to freeze property or take other necessary sanctions against foreign institutions, organisations or individuals whose activities endanger network security and cause serious consequences.",
+   "evidence": {
+    "provision": "Decision item 14 (new Art. 77)",
+    "quote": "国务院公安部门和有关部门并可以决定对该机构、组织、个人采取冻结财产或者其他必要的制裁措施"
+   }
+  },
+  {
+   "name": "公安机关 (public security organs)",
+   "role": "designated",
+   "function": "Impose penalties for unlawfully obtaining, selling or providing personal information that does not constitute a crime, under other laws and regulations.",
+   "evidence": {
+    "provision": "Decision item 12 (new Art. 71, last para.)",
+    "quote": "由公安机关依照有关法律、行政法规的规定处罚"
+   }
+  }
+ ],
+ "notes": "The decision amends the Cybersecurity Law article by article; provision IDs refer to the decision's item numbers and the new article numbers they set. Items 5, 6, 8, 9, 10, 11 and 12 renumber and merge articles, so cross-references such as Art. 61(3) and Art. 64 follow the new numbering. Generic references to 有关主管部门 (competent authorities), 法律、行政法规 and 网络运营者 are not coded as named entities or relations. No internal inconsistency found. Effective date 1 January 2026 per the closing provision. The decision has no legal-basis clause. Section status below is required by the schema although entries are coded above.",
+ "events": [
+  {
+   "event": "adopted",
+   "date": "2025-10-28",
+   "date_type": "absolute",
+   "date_text": "2025年10月28日第十四届全国人民代表大会常务委员会第十八次会议通过",
+   "applies_to": "Decision as a whole (amendments to the Cybersecurity Law)",
+   "evidence": {
+    "provision": "Title note (题注), before the first paragraph",
+    "quote": "（2025年10月28日第十四届全国人民代表大会常务委员会第十八次会议通过）"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2026-01-01",
+   "date_type": "absolute",
+   "date_text": "本决定自2026年1月1日起施行。",
+   "applies_to": "Decision as a whole (amendments to the Cybersecurity Law)",
+   "evidence": {
+    "provision": "Closing paragraph (本决定自…施行)",
+    "quote": "本决定自2026年1月1日起施行。"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "other",
+   "variable_text": "违法所得 (illegal gains from the violation)",
+   "operator": ">=",
+   "value": 100000,
+   "value_text": "违法所得十万元以上",
+   "unit": "yuan",
+   "currency": "CNY",
+   "measurement": "Amount of illegal gains (违法所得) of the violating party; the text states no measurement window or method",
+   "level": "entity",
+   "trigger": "penalty_tier",
+   "consequence": "Illegal gains of 100,000 yuan or more: fine of 1 to 5 times the illegal gains. Below 100,000 yuan: fixed fine of 20,000 to 100,000 yuan.",
+   "conditions": "Applies to sale or provision of network critical equipment or dedicated cybersecurity products without security certification or testing, or with non-conforming certification or testing (violation of Art. 25 as inserted by item 七); unless other laws or administrative regulations provide otherwise.",
+   "evidence": {
+    "provision": "Decision item 七 (inserting Art. 63), para 1",
+    "quote": "违法所得十万元以上的，并处违法所得一倍以上五倍以下罚款"
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The State supports basic AI research, key technologies, training data and computing infrastructure, improves AI ethics norms, and strengthens risk monitoring, assessment and security supervision; a second paragraph supports using AI and other new technologies to improve network security protection.",
+   "applies_from": "2026-01-01",
+   "evidence": {
+    "provision": "Decision item 3 (new Art. 20 of the Cybersecurity Law)",
+    "quote": "加强风险监测评估和安全监管 [strengthen risk monitoring, assessment and security supervision]"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Network operators processing personal information must comply with this Law and with the Civil Code, the Personal Information Protection Law and other laws and administrative regulations.",
+   "applies_from": "2026-01-01",
+   "conditional_on": "Processing of personal information by network operators",
+   "evidence": {
+    "provision": "Decision item 4 (new Art. 42 para. 2, amending former Art. 40)",
+    "quote": "网络运营者处理个人信息，应当遵守本法和《中华人民共和国民法典》、《中华人民共和国个人信息保护法》等法律、行政法规的规定。"
+   }
+  }
+ ],
+ "enforcement": [
+  {
+   "sanction_type": "administrative_fine",
+   "authority": "有关主管部门 (competent authorities)",
+   "triggered_by": "Network operators failing to perform cybersecurity protection obligations under Arts 23 and 27 of the Law (as amended by item 5)",
+   "max_penalty_text": "处五万元以上五十万元以下罚款",
+   "max_penalty_amount": 500000,
+   "currency": "CNY",
+   "penalty_formula": "Order to correct plus warning and fine of 10,000-50,000 CNY (discretionary); if not corrected or harm results, fine of 50,000-500,000 CNY; directly responsible persons fined 10,000-100,000 CNY",
+   "penalty_reference": "None; amounts stated in this text",
+   "cure_period": "Order to correct first; the higher tier applies if the operator refuses to correct or harm results",
+   "evidence": {
+    "provision": "Item 5 (replacing Law Art. 59 with new Art. 61, para 1)",
+    "quote": "拒不改正或者导致危害网络安全等后果的，处五万元以上五十万元以下罚款"
+   }
+  },
+  {
+   "sanction_type": "administrative_fine",
+   "authority": "有关主管部门 (competent authorities)",
+   "triggered_by": "Critical information infrastructure (CII) operators failing to perform obligations under Arts 35, 36, 38 and 40 of the Law (as amended by item 5)",
+   "max_penalty_text": "处十万元以上一百万元以下罚款",
+   "max_penalty_amount": 1000000,
+   "currency": "CNY",
+   "penalty_formula": "Order to correct plus warning and fine of 50,000-100,000 CNY (discretionary); if not corrected or harm results, fine of 100,000-1,000,000 CNY; directly responsible persons fined 10,000-100,000 CNY",
+   "penalty_reference": "None; amounts stated in this text",
+   "cure_period": "Order to correct first; the higher tier applies if the operator refuses to correct or harm results",
+   "evidence": {
+    "provision": "Item 5 (new Law Art. 61, para 2)",
+    "quote": "拒不改正或者导致危害网络安全等后果的，处十万元以上一百万元以下罚款"
+   }
+  },
+  {
+   "sanction_type": "administrative_fine",
+   "authority": "有关主管部门 (competent authorities)",
+   "triggered_by": "Serious consequences (large-scale data leakage, partial loss of CII function, or loss of main CII function) caused by the conduct in the Art 61 paragraphs; also applies under the cross-reference in item 6 (new Law Art. 62, para 2) for conduct in Art 60 items 1 and 2",
+   "max_penalty_text": "处二百万元以上一千万元以下罚款",
+   "max_penalty_amount": 10000000,
+   "currency": "CNY",
+   "penalty_formula": "Serious consequences: fine of 500,000-2,000,000 CNY; particularly serious consequences (loss of main CII function): fine of 2,000,000-10,000,000 CNY; directly responsible persons fined 50,000-200,000 CNY (serious) or 200,000-1,000,000 CNY (particularly serious) per the tiers in the text",
+   "penalty_reference": "None; amounts stated in this text",
+   "cure_period": "None stated",
+   "evidence": {
+    "provision": "Item 5 (new Law Art. 61, para 3)",
+    "quote": "造成关键信息基础设施丧失主要功能等特别严重危害网络安全后果的，处二百万元以上一千万元以下罚款"
+   }
+  },
+  {
+   "sanction_type": "administrative_fine",
+   "authority": "有关主管部门 (competent authorities)",
+   "triggered_by": "Selling or providing network critical equipment or dedicated cybersecurity products that lack security certification or testing, or that fail it (Art 25 of the Law; item 7, new Law Art. 63)",
+   "max_penalty_text": "违法所得十万元以上的，并处违法所得一倍以上五倍以下罚款",
+   "currency": "CNY",
+   "penalty_formula": "Confiscation of illegal gains and order to stop sale, plus: where there are no illegal gains or gains are under 100,000 CNY, fine of 20,000-100,000 CNY; where gains are 100,000 CNY or more, fine of 1 to 5 times the illegal gains",
+   "penalty_reference": "None; amounts stated in this text",
+   "cure_period": "None stated",
+   "evidence": {
+    "provision": "Item 7 (new Law Art. 63)",
+    "quote": "违法所得十万元以上的，并处违法所得一倍以上五倍以下罚款"
+   }
+  },
+  {
+   "sanction_type": "license_revocation",
+   "authority": "有关主管部门 (competent authorities)",
+   "triggered_by": "Same conduct as Art 63 (sale or provision of uncertified or non-compliant network critical equipment or cybersecurity products) where circumstances are serious",
+   "max_penalty_text": "情节严重的，并可以责令暂停相关业务、停业整顿、吊销相关业务许可证或者吊销营业执照",
+   "currency": "CNY",
+   "penalty_formula": "Non-monetary: may order suspension of related business, rectification, revocation of relevant business licence, or revocation of business licence (discretionary, serious cases)",
+   "penalty_reference": "None; stated in this text",
+   "cure_period": "None stated",
+   "evidence": {
+    "provision": "Item 7 (new Law Art. 63)",
+    "quote": "情节严重的，并可以责令暂停相关业务、停业整顿、吊销相关业务许可证或者吊销营业执照"
+   }
+  },
+  {
+   "sanction_type": "service_suspension",
+   "authority": "有关主管部门 (competent authorities)",
+   "triggered_by": "Violations for which Art 64 of the Law provides; the triggering conduct is in the unchanged text of Art 64, which this decision does not restate",
+   "max_penalty_text": "并可以责令暂停相关业务、停业整顿、关闭网站或者应用程序、吊销相关业务许可证或者吊销营业执照",
+   "currency": "CNY",
+   "penalty_formula": "Non-monetary: may order suspension of related business, rectification, closure of website or application, revocation of relevant business licence, or revocation of business licence (discretionary)",
+   "penalty_reference": "None; stated in this text (item 8 amends the wording of Art 64)",
+   "cure_period": "None stated",
+   "evidence": {
+    "provision": "Item 8 (amending Law Art. 61, now Art. 64)",
+    "quote": "并可以责令暂停相关业务、停业整顿、关闭网站或者应用程序、吊销相关业务许可证或者吊销营业执照"
+   }
+  },
+  {
+   "sanction_type": "administrative_fine",
+   "authority": "有关主管部门 (competent authorities)",
+   "triggered_by": "Violating Art 28 of the Law: conducting cybersecurity certification, testing or risk assessment activities, or publishing system vulnerabilities, computer viruses, attack or intrusion information to the public (item 9, new Law Art. 65)",
+   "max_penalty_text": "处十万元以上一百万元以下罚款",
+   "max_penalty_amount": 1000000,
+   "currency": "CNY",
+   "penalty_formula": "Order to correct plus warning and fine of 10,000-100,000 CNY (discretionary); if not corrected or serious, fine of 100,000-1,000,000 CNY, with discretionary suspension of business, rectification, website or app closure or licence revocation; directly responsible persons fined 10,000-100,000 CNY",
+   "penalty_reference": "None; amounts stated in this text",
+   "cure_period": "Order to correct first; the higher tier applies if the operator refuses to correct or the case is serious",
+   "evidence": {
+    "provision": "Item 9 (new Law Art. 65, para 1)",
+    "quote": "拒不改正或者情节严重的，处十万元以上一百万元以下罚款"
+   }
+  },
+  {
+   "sanction_type": "administrative_fine",
+   "authority": "有关主管部门 (competent authorities)",
+   "triggered_by": "CII operators using network products or services that did not pass security review or failed it (Art 37 of the Law; item 10, new Law Art. 67)",
+   "max_penalty_text": "处采购金额一倍以上十倍以下罚款",
+   "currency": "CNY",
+   "penalty_formula": "Fine of 1 to 10 times the procurement amount; directly responsible persons fined 10,000-100,000 CNY; also order to correct within a time limit, stop use and remove the national security impact",
+   "penalty_reference": "None; amounts stated in this text",
+   "cure_period": "Order to correct within a time limit (限期改正)",
+   "evidence": {
+    "provision": "Item 10 (new Law Art. 67)",
+    "quote": "处采购金额一倍以上十倍以下罚款"
+   }
+  },
+  {
+   "sanction_type": "administrative_fine",
+   "authority": "有关主管部门 (competent authorities)",
+   "triggered_by": "Network operators failing to stop transmission, remove or report information prohibited by law (Art 49), or failing to follow authority instructions under Art 52; electronic message and app download providers failing Art 50(2) duties (item 11, new Law Art. 69)",
+   "max_penalty_text": "造成特别严重影响、特别严重后果的，由有关主管部门处二百万元以上一千万元以下罚款",
+   "max_penalty_amount": 10000000,
+   "currency": "CNY",
+   "penalty_formula": "Warning and publicity plus fine of 50,000-500,000 CNY (discretionary); if refused or serious, 500,000-2,000,000 CNY; if particularly serious, 2,000,000-10,000,000 CNY; directly responsible persons fined 50,000-200,000 CNY (serious tier) or 200,000-1,000,000 CNY (particularly serious tier)",
+   "penalty_reference": "None; amounts stated in this text",
+   "cure_period": "Order to correct first; higher tiers if refused or serious",
+   "evidence": {
+    "provision": "Item 11 (new Law Art. 69, para 2)",
+    "quote": "造成特别严重影响、特别严重后果的，由有关主管部门处二百万元以上一千万元以下罚款"
+   }
+  },
+  {
+   "sanction_type": "service_suspension",
+   "authority": "有关主管部门 (competent authorities)",
+   "triggered_by": "Refusal to correct or serious circumstances for the conduct under new Law Art. 69 (Arts 49, 52 and 50(2) violations)",
+   "max_penalty_text": "并可以责令暂停相关业务、停业整顿、关闭网站或者应用程序、吊销相关业务许可证或者吊销营业执照",
+   "currency": "CNY",
+   "penalty_formula": "Non-monetary: may order suspension of related business, rectification, closure of website or application, revocation of relevant business licence, or revocation of business licence (discretionary)",
+   "penalty_reference": "None; stated in this text",
+   "cure_period": "None stated",
+   "evidence": {
+    "provision": "Item 11 (new Law Art. 69, para 1)",
+    "quote": "并可以责令暂停相关业务、停业整顿、关闭网站或者应用程序、吊销相关业务许可证或者吊销营业执照"
+   }
+  },
+  {
+   "sanction_type": "other",
+   "authority": "Authorities under other laws and regulations; 公安机关 (public security organs) for the theft or unlawful sale of personal information that is not a crime",
+   "triggered_by": "Publishing or transmitting information prohibited under Art 13(2) and other laws; violating Art 24(3) and Arts 43-45 on personal information; CII operators storing or providing personal information or important data abroad in violation of Art 39; unlawful acquisition or sale of personal information under Art 46",
+   "max_penalty_text": "依照有关法律、行政法规的规定处理、处罚",
+   "currency": "CNY",
+   "penalty_formula": "No penalty amount in this text; penalties are set by the referenced laws and administrative regulations",
+   "penalty_reference": "Other laws and administrative regulations (依照有关法律、行政法规的规定), not cited by name in this text",
+   "cure_period": "None stated",
+   "evidence": {
+    "provision": "Item 12 (new Law Art. 71)",
+    "quote": "有下列行为之一的，依照有关法律、行政法规的规定处理、处罚"
+   }
+  },
+  {
+   "sanction_type": "other",
+   "authority": "国务院公安部门和有关部门 (State Council public security department and relevant departments)",
+   "triggered_by": "Overseas institutions, organizations or individuals engaging in activities that endanger the cybersecurity of the PRC, where they cause serious consequences (new Law Art. 77)",
+   "max_penalty_text": "并可以决定对该机构、组织、个人采取冻结财产或者其他必要的制裁措施",
+   "currency": "CNY",
+   "penalty_formula": "Non-monetary: may decide to freeze property or take other necessary sanctions; legal liability is pursued under law",
+   "penalty_reference": "None; stated in this text",
+   "cure_period": "None stated",
+   "evidence": {
+    "provision": "Item 14 (new Law Art. 77)",
+    "quote": "并可以决定对该机构、组织、个人采取冻结财产或者其他必要的制裁措施"
+   }
+  }
+ ],
+ "section_status": {
+  "definitions": {
+   "status": "not_found",
+   "note": "The amending decision does not define any term. It uses 关键信息基础设施, 网络运营者, 网络关键设备和网络安全专用产品 and 个人信息 without defining them; any definitions sit in the base law, which is not in the document."
+  }
+ },
+ "definitions": []
+}

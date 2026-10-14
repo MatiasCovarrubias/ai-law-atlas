@@ -1,0 +1,1377 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "br-bcb-cmn-rescj1-2020",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (connectors/fetch_texts.py)",
+  "url": "https://www.bcb.gov.br/api/conteudo/app/normativos/exibenormativo?p1=Resolu%C3%A7%C3%A3o%20Conjunta&p2=1",
+  "retrieved": "2026-10-13",
+  "version": "as fetched",
+  "language": "pt",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "data_access_sharing",
+   "data_protection",
+   "cybersecurity"
+  ],
+  "primary_domain": "data_access_sharing",
+  "mechanisms": [
+   "mandate_obligation",
+   "prohibition_ban",
+   "registration_notification",
+   "disclosure_transparency",
+   "standard_setting",
+   "institution_setup"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "financial_institution",
+   "data_holder",
+   "government_agency"
+  ],
+  "affected_roles": [
+   "consumers_users"
+  ],
+  "decision_margins": [
+   "firm:input_use",
+   "firm:compliance_process",
+   "firm:pricing",
+   "household:data_privacy",
+   "household:access"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national"
+   ],
+   "description": "Applies to financial institutions, payment institutions and other institutions authorized to operate by the Banco Central do Brasil.",
+   "evidence": {
+    "provision": "Art. 1",
+    "quote": "por parte de instituições financeiras, instituições de pagamento e demais instituições autorizadas a funcionar pelo Banco Central do Brasil"
+   }
+  },
+  "agora_strategies": [
+   "Input controls: Data circulation",
+   "Disclosure",
+   "Performance requirements",
+   "New institution"
+  ]
+ },
+ "summary": {
+  "short": "Joint resolution of the Banco Central do Brasil and the National Monetary Council implementing Open Banking in Brazil. It sets rules for sharing customer data and services, consent, authentication and interfaces for institutions authorized by the Central Bank, phased in from 1 June 2020 to 25 October 2021.",
+  "long": "Joint resolution of the Banco Central do Brasil and the National Monetary Council implementing Open Banking (Sistema Financeiro Aberto). It applies to financial institutions, payment institutions and other institutions authorized by the Central Bank (Art. 1). Participation is mandatory for S1 and S2 institutions for certain data and services, and voluntary for others (Art. 6). Customer consent must be specific, valid for up to twelve months unless the customer sets a longer period for successive payments, and cannot be given through adhesion contracts, pre-filled forms or presumed consent (Art. 10). Consent, authentication, confirmation and revocation steps apply (Arts. 8, 15-20). Institutions must offer standardized dedicated interfaces and must not create obstacles to sharing (Arts. 23, 28). Partnerships with non-authorized entities require prior due diligence and contract terms, including Central Bank access (Arts. 36-38). Each institution designates a responsible director, files semi-annual reports and keeps records for five years (Arts. 32-33, 49). Technical standards are set by a participants' convention subject to Central Bank approval (Arts. 44, 47). Phased deadlines run from 1 June 2020 to 25 October 2021 (Art. 55). The text sets no fine amounts; the Central Bank may veto or restrict partnerships (Art. 52)."
+ },
+ "relations": [
+  {
+   "relation": "legal_basis",
+   "target_text": "Lei nº 4.595, de 31 de dezembro de 1964, arts. 4º, inciso VIII, e 9º",
+   "note": "Enabling law cited in the preamble for the Banco Central and CMN powers.",
+   "evidence": {
+    "provision": "Preamble (introductory paragraph)",
+    "quote": "com base no art. 4º, inciso VIII, da referida Lei"
+   }
+  },
+  {
+   "relation": "legal_basis",
+   "target_text": "Lei nº 12.865, de 9 de outubro de 2013, art. 9º, caput e inciso II",
+   "note": "Second enabling law cited in the preamble.",
+   "evidence": {
+    "provision": "Preamble (introductory paragraph)",
+    "quote": "no art. 9º, caput e inciso II, da Lei nº 12.865, de 9 de outubro de 2013"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Resolução CMN nº 3.919, de 25 de novembro de 2010",
+   "note": "Amends art. 1º § 2º (incisos I to III) and art. 5º (incisos XIX to XXI) of Resolução CMN 3.919 with new wording, as written in the amending text.",
+   "evidence": {
+    "provision": "Art. 54",
+    "quote": "A Resolução nº 3.919, de 25 de novembro de 2010, passa a vigorar com as seguintes alterações"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Resolução CMN nº 3.954, de 24 de fevereiro de 2011, art. 8º, inciso V",
+   "note": "Defines the correspondent-banking service that makes credit-proposal sharing mandatory for certain institutions.",
+   "evidence": {
+    "provision": "Art. 6º, inciso III",
+    "quote": "Resolução nº 3.954, de 24 de fevereiro de 2011"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Resolução CMN nº 4.553, de 30 de janeiro de 2017 (Segmentos 1 e 2)",
+   "note": "Segment classification used to determine which institutions must participate mandatorily.",
+   "evidence": {
+    "provision": "Art. 6º, inciso I, alínea a",
+    "quote": "de que trata a Resolução nº 4.553, de 30 de janeiro de 2017"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Resolução CMN nº 4.658, de 26 de abril de 2018, Capítulo III (and Chapters IV and V where applicable)",
+   "note": "Governs contracting of authentication services for institutions that are not payment institutions.",
+   "evidence": {
+    "provision": "Art. 19, inciso II",
+    "quote": "Capítulo III da Resolução nº 4.658, de 26 de abril de 2018"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Circular BCB nº 3.909, de 16 de agosto de 2018, Capítulo III (and Chapters IV and V where applicable)",
+   "note": "Governs contracting of authentication services for payment institutions.",
+   "evidence": {
+    "provision": "Art. 19, inciso I",
+    "quote": "Capítulo III da Circular nº 3.909, de 16 de agosto de 2018"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Resolução CMN nº 3.402, de 6 de setembro de 2006",
+   "note": "Defines the account of registration and control, which is included in the transaction-data scope.",
+   "evidence": {
+    "provision": "Art. 5º, inciso I, alínea d, item 6",
+    "quote": "conta de registro e controle de que trata a Resolução nº 3.402, de 6 de setembro de 2006"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Lei nº 8.951, de 13 de dezembro de 1994",
+   "note": "Cited in the amended text of Resolução CMN 3.919 as a basis for an exclusion from the account-related rule.",
+   "evidence": {
+    "provision": "Art. 54 (amended text of Resolução CMN 3.919, art. 1º, § 2º, inciso I)",
+    "quote": "de que trata a Lei nº 8.951, de 13 de dezembro de 1994"
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "Banco Central do Brasil",
+   "role": "designated",
+   "function": "Empowered to set the initial governance structure (art. 46), approve the participants' convention (art. 47), adopt measures and set complementary rules (art. 51), and veto or restrict sharing (art. 52).",
+   "evidence": {
+    "provision": "Art. 51",
+    "quote": "O Banco Central do Brasil poderá adotar as medidas necessárias para o cumprimento do disposto nesta Resolução Conjunta"
+   }
+  },
+  {
+   "name": "Conselho Monetário Nacional",
+   "role": "listed",
+   "function": "Co-issuing body of the joint resolution; approved it in session on 30 April 2020.",
+   "evidence": {
+    "provision": "Preamble (introductory paragraph)",
+    "quote": "e o Conselho Monetário Nacional, em sessão realizada em 30 de abril de 2020"
+   }
+  }
+ ],
+ "notes": "The text is the original as published in the DOU of 5 May 2020, not a consolidated version. The registry field Atualizacoes lists later joint resolutions (RC BCB/CMN 3/2021, 4/2022, 7/2023, 10/2024, 15/2025) and other metadata, but these are not stated in the operative text, so they are not coded as relations. Internal inconsistency: art. 47 sets approval deadlines of 1 Sep 2020, 1 Mar 2021, 1 Jun 2021 and 2 Aug 2021, while art. 55 sets implementation deadlines of 30 Nov 2020, 31 May 2021, 30 Aug 2021 and 25 Oct 2021 for parallel items; both are recorded as written. Target instrument IDs are left empty because the cited instruments have no registry IDs in this document.",
+ "events": [
+  {
+   "event": "adopted",
+   "date": "2020-04-22",
+   "date_type": "absolute",
+   "date_text": "sua Diretoria Colegiada, em sessão realizada em 22 de abril de 2020",
+   "applies_to": "Diretoria Colegiada do Banco Central do Brasil",
+   "evidence": {
+    "provision": "Preamble",
+    "quote": "sua Diretoria Colegiada, em sessão realizada em 22 de abril de 2020"
+   }
+  },
+  {
+   "event": "adopted",
+   "date": "2020-04-30",
+   "date_type": "absolute",
+   "date_text": "o Conselho Monetário Nacional, em sessão realizada em 30 de abril de 2020",
+   "applies_to": "Conselho Monetário Nacional",
+   "evidence": {
+    "provision": "Preamble",
+    "quote": "o Conselho Monetário Nacional, em sessão realizada em 30 de abril de 2020"
+   }
+  },
+  {
+   "event": "signed",
+   "date": "2020-05-04",
+   "date_type": "absolute",
+   "date_text": "Resolução Conjunta nº 1, de 4 de maio de 2020 (as referred to in Art. 54)",
+   "applies_to": "Resolução Conjunta BCB/CMN nº 1/2020",
+   "evidence": {
+    "provision": "Art. 54",
+    "quote": "1, de 4 de maio de 2020"
+   }
+  },
+  {
+   "event": "published",
+   "date": "2020-05-05",
+   "date_type": "absolute",
+   "date_text": "Publicada no DOU de 5/5/2020, Seção 1, p. 34-38.",
+   "applies_to": "Diário Oficial da União",
+   "evidence": {
+    "provision": "DOU publication note",
+    "quote": "Publicada no DOU de 5/5/2020, Seção 1, p. 34-38."
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2020-06-01",
+   "date_type": "absolute",
+   "date_text": "entra em vigor em 1º de junho de 2020",
+   "applies_to": "Resolução Conjunta BCB/CMN nº 1/2020",
+   "evidence": {
+    "provision": "Art. 55",
+    "quote": "entra em vigor em 1º de junho de 2020"
+   }
+  },
+  {
+   "event": "amended",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "passa a vigorar com as seguintes alterações",
+   "depends_on": "entrada em vigor desta Resolução Conjunta (Art. 55)",
+   "applies_to": "Resolução CMN nº 3.919/2010, arts. 1º § 2º and 5º",
+   "evidence": {
+    "provision": "Art. 54",
+    "quote": "passa a vigorar com as seguintes alterações"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2020-09-01",
+   "date_type": "absolute",
+   "date_text": "até 1º de setembro de 2020, em relação",
+   "applies_to": "submission to BCB approval of the convention content under Art. 44, items III, VI and VII, and operational and technical standards for channels, products and services data (Art. 5 I a and b, items 1 to 5)",
+   "evidence": {
+    "provision": "Art. 47 I",
+    "quote": "até 1º de setembro de 2020, em relação"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2020-11-30",
+   "date_type": "absolute",
+   "date_text": "até 30 de novembro de 2020, para a implementação do disposto nos incisos III e VI do art. 44",
+   "applies_to": "implementation of Art. 44 III and VI (channels for consumer demands; participant repository) and of data sharing on channels, products and services (Art. 5 I a and b, items 1 to 5)",
+   "evidence": {
+    "provision": "Art. 55 I",
+    "quote": "até 30 de novembro de 2020, para a implementação do disposto nos incisos III e VI do art. 44"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2020-11-03",
+   "date_type": "absolute",
+   "date_text": "até 3 de novembro de 2020, cronograma para adequação",
+   "applies_to": "institutions with contracts with unauthorised entities for data and service sharing under Art. 36 at entry into force; submission of adaptation schedule to BCB",
+   "evidence": {
+    "provision": "Art. 53",
+    "quote": "até 3 de novembro de 2020, cronograma para adequação"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2021-03-01",
+   "date_type": "absolute",
+   "date_text": "até 1º de março de 2021, em relação",
+   "applies_to": "submission to BCB approval of the convention content under Art. 44 IV, and operational and technical standards for registration and transaction data (Art. 5 I c and d, items 1 to 5) and inter-participant cost recovery",
+   "evidence": {
+    "provision": "Art. 47 II",
+    "quote": "até 1º de março de 2021, em relação"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2021-05-31",
+   "date_type": "absolute",
+   "date_text": "até 31 de maio de 2021, para a implementação do disposto no inciso IV do art. 44",
+   "applies_to": "implementation of Art. 44 IV (dispute resolution) and of data sharing of registration and transaction data (Art. 5 I c and d, items 1 to 5)",
+   "evidence": {
+    "provision": "Art. 55 II",
+    "quote": "até 31 de maio de 2021, para a implementação do disposto no inciso IV do art. 44"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2021-06-01",
+   "date_type": "absolute",
+   "date_text": "até 1º de junho de 2021, em relação",
+   "applies_to": "submission to BCB approval of operational procedures and technological standards for service sharing (Art. 5 II)",
+   "evidence": {
+    "provision": "Art. 47 III",
+    "quote": "até 1º de junho de 2021, em relação"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2021-08-02",
+   "date_type": "absolute",
+   "date_text": "até 2 de agosto de 2021, em relação",
+   "applies_to": "submission to BCB approval of operational procedures and technological standards for product data (Art. 5 I b items 6 to 10) and transaction data (Art. 5 I d items 6 to 11)",
+   "evidence": {
+    "provision": "Art. 47 IV",
+    "quote": "até 2 de agosto de 2021, em relação"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2021-08-30",
+   "date_type": "absolute",
+   "date_text": "até 30 de agosto de 2021, para a implementação dos requisitos necessários para o compartilhamento de serviços",
+   "applies_to": "service sharing: payment initiation and credit proposal forwarding (Art. 5 II)",
+   "evidence": {
+    "provision": "Art. 55 III",
+    "quote": "até 30 de agosto de 2021, para a implementação dos requisitos necessários para o compartilhamento de serviços"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2021-10-25",
+   "date_type": "absolute",
+   "date_text": "até 25 de outubro de 2021, para a implementação dos requisitos necessários para o compartilhamento de:",
+   "applies_to": "sharing of product and service data (Art. 5 I b items 6 to 10) and transaction data (Art. 5 I d items 6 to 11)",
+   "evidence": {
+    "provision": "Art. 55 IV",
+    "quote": "até 25 de outubro de 2021, para a implementação dos requisitos necessários para o compartilhamento de:"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2021-12-31",
+   "date_type": "absolute",
+   "date_text": "não pode ultrapassar 31 de dezembro de 2021",
+   "applies_to": "final deadline of the adaptation schedule submitted under Art. 53 caput",
+   "evidence": {
+    "provision": "Art. 53 par. único",
+    "quote": "não pode ultrapassar 31 de dezembro de 2021"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "relatório semestral com datas-bases de 30 de junho e 31 de dezembro, apresentado até noventa dias após a respectiva data-base",
+   "applies_to": "semi-annual report by the responsible director on data and service sharing (Art. 33 § 2 II)",
+   "evidence": {
+    "provision": "Art. 33",
+    "quote": "nas datas-bases de 30 de junho e 31 de dezembro"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "em até um dia, contado a partir da solicitação do cliente",
+   "anchor": "solicitação do cliente",
+   "depends_on": "solicitação do cliente",
+   "applies_to": "revocation of consent for payment initiation service sharing (Art. 5 II a)",
+   "offset_value": 1,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Art. 15 § 3º I",
+    "quote": "em até um dia, contado a partir da solicitação do cliente"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "other",
+   "variable_text": "prazo de validade do consentimento",
+   "operator": "<=",
+   "value": 12,
+   "value_text": "limitado a doze meses",
+   "unit": "months",
+   "measurement": "validity period of each consent, set per determined purpose (§ 1º, inciso II)",
+   "level": "person",
+   "trigger": "cap",
+   "consequence": "consent validity is capped at twelve months; § 6º allows a longer period for successive payment transactions if the customer chooses",
+   "conditions": "validity compatible with the determined purposes (§ 1º, inciso II)",
+   "evidence": {
+    "provision": "Art. 10, § 1º, inciso III",
+    "quote": "ter prazo de validade compatível com as finalidades de que trata o inciso II, limitado a doze meses"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "histórico de transações compartilhado (período mínimo)",
+   "operator": ">=",
+   "value": 12,
+   "value_text": "os dados e o histórico de transações realizadas nos últimos doze meses",
+   "unit": "months",
+   "measurement": "look-back window of transactions, for products and services with contracts in force in that period",
+   "level": "product",
+   "trigger": "scope_definition",
+   "consequence": "minimum transaction-data scope for sharing covers the last twelve months",
+   "conditions": "products and services with contracts in force in that period (§ 5º, inciso II)",
+   "evidence": {
+    "provision": "Art. 5º, § 5º, inciso II",
+    "quote": "abrange, no mínimo, os dados e o histórico de transações realizadas nos últimos doze meses"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "segmentos prudenciais S1 e S2",
+   "operator": "=",
+   "value": null,
+   "value_text": "Segmentos 1 (S1) e 2 (S2), de que trata a Resolução nº 4.553, de 30 de janeiro de 2017",
+   "unit": "",
+   "measurement": "segment assigned under Resolução nº 4.553/2017, which this text does not reproduce",
+   "level": "entity",
+   "trigger": "obligation",
+   "consequence": "mandatory participation in data and service sharing for institutions in these segments, for the data listed in art. 5º, inciso I, alíneas 'a' and 'b'",
+   "conditions": "data under art. 5º, inciso I, alíneas 'a' and 'b'",
+   "depends_on": "Resolução nº 4.553, de 30 de janeiro de 2017 (segments S1 and S2)",
+   "evidence": {
+    "provision": "Art. 6º, inciso I, alínea 'a'",
+    "quote": "de forma obrigatória, as instituições enquadradas nos Segmentos 1 (S1) e 2 (S2), de que trata a Resolução nº 4.553, de 30 de janeiro de 2017"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "chamadas de interface por mês (dados de cadastro)",
+   "operator": ">",
+   "value": 2,
+   "value_text": "duas chamadas de interface ao mês, por instituição participante, por cliente e por assinatura de método",
+   "unit": "calls per month",
+   "measurement": "counted per participating institution, per customer and per method signature, for registration data",
+   "level": "person",
+   "trigger": "pricing_tier",
+   "consequence": "inter-participant expense reimbursement is prohibited for at least two interface calls per month; reimbursement beyond that level is governed by art. 42 and the convention",
+   "conditions": "registration data under art. 5º, inciso I, alínea 'c'",
+   "evidence": {
+    "provision": "Art. 43, inciso II, alínea 'a'",
+    "quote": "duas chamadas de interface ao mês, por instituição participante, por cliente e por assinatura de método"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "chamadas de interface por mês (dados de transações)",
+   "operator": ">",
+   "value": 120,
+   "value_text": "cento e vinte chamadas de interface ao mês, por instituição participante e por cliente",
+   "unit": "calls per month",
+   "measurement": "counted per participating institution and per customer, for transaction data",
+   "level": "person",
+   "trigger": "pricing_tier",
+   "consequence": "inter-participant expense reimbursement is prohibited for at least one hundred and twenty interface calls per month; reimbursement beyond that level is governed by art. 42 and the convention",
+   "conditions": "transaction data under art. 5º, inciso I, alínea 'd'",
+   "evidence": {
+    "provision": "Art. 43, inciso II, alínea 'b'",
+    "quote": "cento e vinte chamadas de interface ao mês, por instituição participante e por cliente"
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "Open Banking",
+   "defined_in": "this instrument, Art. 2º",
+   "evidence": {
+    "provision": "Art. 2º, inciso I",
+    "quote": "Open Banking: compartilhamento padronizado de dados e serviços por meio de abertura e integração de sistemas"
+   }
+  },
+  {
+   "term": "cliente",
+   "defined_in": "this instrument, Art. 2º",
+   "evidence": {
+    "provision": "Art. 2º, inciso II",
+    "quote": "qualquer pessoa natural ou jurídica, exceto as instituições de que trata o art. 1º"
+   }
+  },
+  {
+   "term": "instituição transmissora de dados",
+   "defined_in": "this instrument, Art. 2º",
+   "evidence": {
+    "provision": "Art. 2º, inciso III",
+    "quote": "instituição participante que compartilha com a instituição receptora os dados do escopo desta Resolução Conjunta"
+   }
+  },
+  {
+   "term": "instituição receptora de dados",
+   "defined_in": "this instrument, Art. 2º",
+   "evidence": {
+    "provision": "Art. 2º, inciso IV",
+    "quote": "instituição participante que apresenta solicitação de compartilhamento à instituição transmissora de dados para recepção dos dados do escopo desta Resolução Conjunta"
+   }
+  },
+  {
+   "term": "instituição detentora de conta",
+   "defined_in": "this instrument, Art. 2º",
+   "evidence": {
+    "provision": "Art. 2º, inciso V",
+    "quote": "instituição participante que mantém conta de depósitos à vista ou de poupança ou conta de pagamento pré-paga de cliente"
+   }
+  },
+  {
+   "term": "instituição iniciadora de transação de pagamento",
+   "defined_in": "this instrument, Art. 2º",
+   "evidence": {
+    "provision": "Art. 2º, inciso VI",
+    "quote": "instituição participante que presta serviço de iniciação de transação de pagamento sem deter em momento algum os fundos transferidos na prestação do serviço"
+   }
+  },
+  {
+   "term": "serviço de iniciação de transação de pagamento",
+   "defined_in": "this instrument, Art. 2º",
+   "evidence": {
+    "provision": "Art. 2º, inciso VII",
+    "quote": "serviço que possibilita a iniciação da instrução de uma transação de pagamento, ordenado pelo cliente, relativamente a uma conta de depósitos ou de pagamento pré-paga"
+   }
+  },
+  {
+   "term": "consentimento",
+   "defined_in": "this instrument, Art. 2º",
+   "evidence": {
+    "provision": "Art. 2º, inciso VIII",
+    "quote": "manifestação livre, informada, prévia e inequívoca de vontade, feita por meio eletrônico, pela qual o cliente concorda com o compartilhamento de dados ou de serviços para finalidades determinadas"
+   }
+  },
+  {
+   "term": "chamada de interface",
+   "defined_in": "this instrument, Art. 2º",
+   "evidence": {
+    "provision": "Art. 2º, inciso IX",
+    "quote": "requisição de dados e de serviços apresentada pela instituição receptora de dados ou iniciadora de transação de pagamento à instituição transmissora de dados ou detentora de conta"
+   }
+  },
+  {
+   "term": "transações de pagamento sucessivas",
+   "defined_in": "this instrument, Art. 2º",
+   "evidence": {
+    "provision": "Art. 2º, inciso XI",
+    "quote": "transações de pagamento realizadas entre os mesmos pagadores e recebedores de acordo com uma periodicidade, decorrentes de um mesmo negócio jurídico ou relação jurídica"
+   }
+  },
+  {
+   "term": "agregação de dados",
+   "defined_in": "this instrument, Art. 2º",
+   "evidence": {
+    "provision": "Art. 2º, inciso XII",
+    "quote": "consolidação de dados compartilhados de acordo com o disposto nesta Resolução Conjunta com a finalidade de prestar serviços aos seus clientes"
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "other",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Institutions must conduct their Open Banking activities with ethics and responsibility, observing the listed principles (transparency, security and privacy, data quality, non-discrimination, reciprocity, interoperability).",
+   "evidence": {
+    "provision": "Art. 4",
+    "quote": "devem conduzir suas atividades com ética e responsabilidade"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Scope: participating institutions must share at minimum the listed data and services (channels, products, registration, transactions, payment initiation, credit referral). Art. 5 §4 requires registration data to include the last available data with date; §5 requires transaction data for the last twelve months for contracts in force.",
+   "evidence": {
+    "provision": "Art. 5",
+    "quote": "O Open Banking abrange o compartilhamento de, no mínimo"
+   }
+  },
+  {
+   "type": "consent",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Sharing of registration and transaction data and of services under Art. 5 I(c), I(d) and II requires client consent under Art. 10.",
+   "evidence": {
+    "provision": "Art. 5 §3",
+    "quote": "É necessário obter consentimento do cliente, nos termos do art. 10"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Institutions under Segments S1 and S2 must participate in Open Banking data sharing on a mandatory basis; other institutions participate voluntarily. Sharing is mandatory within the implementation deadlines of Art. 55.",
+   "evidence": {
+    "provision": "Art. 6 I a)",
+    "quote": "de forma obrigatória, as instituições enquadradas nos Segmentos 1 (S1) e 2 (S2)"
+   }
+  },
+  {
+   "type": "registration_notification",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Participating institutions must register their participation in the participants repository run by electronic system.",
+   "evidence": {
+    "provision": "Art. 7",
+    "quote": "devem registrar sua participação no repositório de participantes"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Sharing request comprises consent, authentication and confirmation steps, to be carried out securely, agilely, precisely and conveniently, exclusively through electronic channels, successively and without interruption, through the dedicated interface, with duration suited to their purpose.",
+   "evidence": {
+    "provision": "Art. 8 par. único I",
+    "quote": "ser efetuadas com segurança, agilidade, precisão e conveniência"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Institutions must give clients clear, objective and adequate information about the steps of the sharing request, associated procedures and any redirection to other environments.",
+   "evidence": {
+    "provision": "Art. 9",
+    "quote": "devem assegurar a prestação de informações aos clientes de forma clara, objetiva e adequada"
+   }
+  },
+  {
+   "type": "consent",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Receiving institution or payment initiator must identify the client and obtain consent before sharing.",
+   "evidence": {
+    "provision": "Art. 10 caput",
+    "quote": "deve identificar o cliente e obter o seu consentimento"
+   }
+  },
+  {
+   "type": "consent",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Consent must be requested in clear language, refer to determined purposes, state a validity period compatible with the purposes and limited to twelve months, identify the transmitting institution and the data or services, identify the client, and be obtained after entry into force. Any change in those conditions requires new consent (§2).",
+   "applies_from": "entry into force (art. 55: 1º de junho de 2020)",
+   "evidence": {
+    "provision": "Art. 10 §1 III",
+    "quote": "ter prazo de validade compatível com as finalidades de que trata o inciso II, limitado a doze meses"
+   }
+  },
+  {
+   "type": "consent",
+   "addressee": "financial_institution",
+   "modality": "shall_not",
+   "summary": "Consent may not be obtained through an adhesion contract, a pre-filled acceptance form, or presumed without active client manifestation (§3); the receiving institution may not disclose the sharing purposes to the transmitting institution, subject to exceptions in §5 (§4).",
+   "evidence": {
+    "provision": "Art. 10 §3",
+    "quote": "É vedado obter o consentimento do cliente"
+   }
+  },
+  {
+   "type": "consent",
+   "addressee": "consumers_users",
+   "modality": "may",
+   "summary": "For successive payment transactions, the client may set a validity period longer than the twelve-month limit and may condition it on the end of those transactions.",
+   "conditional_on": "successive payment transactions",
+   "evidence": {
+    "provision": "Art. 10 §6",
+    "quote": "o cliente, a seu critério, poderá definir prazo superior ao estabelecido no § 1º, inciso III"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Where data are presented grouped, the grouping must be clearly identified, allow granular discrimination by the client, and relate to the granular data.",
+   "evidence": {
+    "provision": "Art. 11 par. único",
+    "quote": "Para fins do disposto no caput, o agrupamento de dados deve"
+   }
+  },
+  {
+   "type": "data_minimization",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Receiving institution must ensure the shared data are relevant to the determined purposes of the consent.",
+   "evidence": {
+    "provision": "Art. 12",
+    "quote": "deve assegurar que os dados objeto do compartilhamento sejam pertinentes às finalidades determinadas"
+   }
+  },
+  {
+   "type": "consent",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "For payment initiation sharing, consent must cover at least payment form, amount, payee information and payment date; for successive transactions it must also cover periodicity and term (§1). The amount may be optional for variable successive payments (§2).",
+   "conditional_on": "payment initiation service (Art. 5 II a)",
+   "evidence": {
+    "provision": "Art. 13 caput",
+    "quote": "o consentimento deve contemplar, no mínimo, as seguintes informações"
+   }
+  },
+  {
+   "type": "data_minimization",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Information required for payment initiation consent must be strictly necessary for executing the payment transaction and compatible with the payment arrangement rules.",
+   "evidence": {
+    "provision": "Art. 13 §3",
+    "quote": "As informações exigidas no caput devem ser aquelas estritamente necessárias para a execução da transação de pagamento"
+   }
+  },
+  {
+   "type": "consent",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Payment initiator must request client consent for each new payment transaction, except for successive transactions, where the validity period of Art. 10 §6 applies.",
+   "evidence": {
+    "provision": "Art. 13 §4",
+    "quote": "deve solicitar o consentimento do cliente a cada nova transação de pagamento"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Participating institutions must give clients, at minimum, information on active consents: identity of institutions, data and services shared, validity period, request date, and purpose for receivers and payment initiators.",
+   "evidence": {
+    "provision": "Art. 14",
+    "quote": "devem prestar ao cliente, no mínimo, as seguintes informações sobre os consentimentos"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Participating institutions must ensure clients can revoke consent at any time, by secure, agile, precise and convenient procedure, and through at least the channel where consent was given (§1). Revocation for payment initiation must be effected within one day; otherwise immediately (§3).",
+   "evidence": {
+    "provision": "Art. 15 caput",
+    "quote": "devem assegurar a possibilidade da revogação do respectivo consentimento, a qualquer tempo"
+   }
+  },
+  {
+   "type": "consent",
+   "addressee": "financial_institution",
+   "modality": "shall_not",
+   "summary": "Transmitting institution or account holder may not propose consent revocation to the client, except in case of justified suspicion of fraud.",
+   "evidence": {
+    "provision": "Art. 15 §2",
+    "quote": "É vedado à instituição transmissora de dados ou detentora de conta propor ao cliente a revogação de consentimento"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Revocation effected must be immediately reported to the other participating institutions involved in the sharing.",
+   "evidence": {
+    "provision": "Art. 15 §4",
+    "quote": "deve ser informada imediatamente para as demais instituições participantes"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Transmitting institution or account holder must adopt procedures and controls to authenticate the client and the receiving or initiating institution, performed once per consent (client) or once per interface call (institution).",
+   "evidence": {
+    "provision": "Art. 16 caput",
+    "quote": "deve adotar procedimentos e controles para autenticação"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Client authentication controls must be compatible with those for the institution's electronic service channels, considering risk level, type of data or service, and channel, including authentication factors, number of steps and duration.",
+   "evidence": {
+    "provision": "Art. 17 caput",
+    "quote": "Os procedimentos e controles para autenticação de cliente devem ser compatíveis com os aplicáveis ao acesso"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Authentication procedures under Arts. 16 and 17 must be compatible with the institution's cybersecurity policy required by regulation.",
+   "evidence": {
+    "provision": "Art. 18",
+    "quote": "devem ser compatíveis com a política de segurança cibernética da instituição"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "financial_institution",
+   "modality": "shall_not",
+   "summary": "Authentication of the receiving or initiating institution may not be contracted out to that same institution. Outsourcing of authentication is otherwise permitted under Art. 19 caput, with responsibility remaining with the transmitting institution (§1, not coded as obligation).",
+   "evidence": {
+    "provision": "Art. 19 §2",
+    "quote": "É vedada a contratação para fins da autenticação de instituição de que trata o art. 16, inciso II"
+   }
+  },
+  {
+   "type": "consent",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Transmitting institution or account holder must request confirmation of the sharing from the client, simultaneously with authentication.",
+   "evidence": {
+    "provision": "Art. 20 caput",
+    "quote": "deve solicitar confirmação de compartilhamento ao cliente"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "For registration and transaction data sharing, the confirmation must show at minimum the receiving institution, the consent validity period, and the data to be shared.",
+   "evidence": {
+    "provision": "Art. 21",
+    "quote": "devem ser discriminadas na confirmação, no mínimo, as seguintes informações"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "For payment initiation sharing, the confirmation must show at minimum the transaction amount, payee information and payment date (§1 and §2 allow variations for successive transactions).",
+   "evidence": {
+    "provision": "Art. 22",
+    "quote": "devem ser discriminadas na confirmação, no mínimo, as seguintes informações"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Participating institutions must provide dedicated, standardized interfaces for data and service sharing, machine-readable and free of restrictions on use (§1).",
+   "evidence": {
+    "provision": "Art. 23 caput",
+    "quote": "As instituições participantes devem disponibilizar interfaces dedicadas ao compartilhamento"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "For public-facing data under Art. 5 I(a) and I(b), institutions must ensure free public access to the interfaces; call limits may be set by convention on justified and equitable parameters.",
+   "evidence": {
+    "provision": "Art. 23 §2",
+    "quote": "devem assegurar o seu acesso gratuito ao público"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Institutions must provide other participants clear, adequate and accessible information on the dedicated interfaces, including version control and connection support.",
+   "evidence": {
+    "provision": "Art. 24",
+    "quote": "devem fornecer às demais participantes informações a respeito das interfaces dedicadas"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Transmitting institution or account holder must make an alternative sharing channel available to other participants when dedicated interfaces are unavailable.",
+   "evidence": {
+    "provision": "Art. 25 caput",
+    "quote": "deve disponibilizar alternativa para o compartilhamento às demais instituições participantes"
+   }
+  },
+  {
+   "type": "incident_reporting",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Interface unavailability causing an institutional crisis must be promptly reported to the Central Bank.",
+   "evidence": {
+    "provision": "Art. 25 §1",
+    "quote": "devem ser comunicados tempestivamente ao Banco Central do Brasil"
+   }
+  },
+  {
+   "type": "record_keeping",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "During alternative-channel sharing, the institution must ensure the receiving institution accesses only consented data and services (§2 I), and must keep a record of access and of the data and services accessed (§2 II).",
+   "evidence": {
+    "provision": "Art. 25 §2 II",
+    "quote": "manter registro de acesso e dos dados e serviços acessados"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Transmitting institution or account holder must give timely information to the requesting institution on whether a sharing request was effected or, if not, the reasons.",
+   "evidence": {
+    "provision": "Art. 26 caput",
+    "quote": "deve prestar informações tempestivas à instituição receptora de dados ou iniciadora de transação de pagamento"
+   }
+  },
+  {
+   "type": "record_keeping",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "An impossibility of sharing must be duly documented with reasons and supporting evidence.",
+   "evidence": {
+    "provision": "Art. 26 §3",
+    "quote": "A impossibilidade de compartilhamento de que trata o caput deve ser devidamente documentada"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Receiving or initiating institution must inform the client that the sharing request was effected, including the determined purposes and the data and services shared, through electronic channels (§1).",
+   "evidence": {
+    "provision": "Art. 27 caput",
+    "quote": "deve comunicar ao cliente a efetivação da solicitação de compartilhamento"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "financial_institution",
+   "modality": "shall_not",
+   "summary": "Participating institutions may not create obstacles to sharing, such as additional client authorisations, additional validation of consent, or complex access instructions.",
+   "evidence": {
+    "provision": "Art. 28",
+    "quote": "É vedado às instituições participantes a criação de obstáculos ao compartilhamento"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "financial_institution",
+   "modality": "shall_not",
+   "summary": "Account-holding institutions may not restrict, limit or prevent payment transaction initiation, nor discriminate against it relative to transactions the client executes directly.",
+   "evidence": {
+    "provision": "Art. 29",
+    "quote": "É vedado às instituições detentoras de contas restringir, limitar ou impedir a iniciação de transação de pagamento"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Participating institutions must provide a technical support channel to other participants on sharing steps, interface connectivity, interface unavailability, and data reliability, integrity and availability.",
+   "evidence": {
+    "provision": "Art. 30 caput",
+    "quote": "devem disponibilizar canal de atendimento para a prestação de suporte técnico"
+   }
+  },
+  {
+   "type": "registration_notification",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Institutions must register in the participants repository information on how to access the support channel.",
+   "evidence": {
+    "provision": "Art. 30 par. único",
+    "quote": "devem registrar no repositório de participantes mencionado no art. 44, inciso VI"
+   }
+  },
+  {
+   "type": "management_system",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Participating institutions and the institutions contracting partnerships under Art. 36 must designate a director responsible for the sharing, who may hold other functions without conflict of interest.",
+   "evidence": {
+    "provision": "Art. 32 caput",
+    "quote": "devem designar diretor responsável pelo compartilhamento de que trata esta Resolução Conjunta"
+   }
+  },
+  {
+   "type": "record_keeping",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "The responsible director must prepare a semi-annual report on the sharing (reference dates 30 June and 31 December), covering client demands, support demands, incidents, business continuity tests and interface call volumes. It is submitted to the risk committee where it exists and presented to the board, or to the executive board if there is none, within ninety days of the reference date.",
+   "evidence": {
+    "provision": "Art. 33 caput",
+    "quote": "deve elaborar relatório semestral referente ao compartilhamento de dados e serviços"
+   }
+  },
+  {
+   "type": "complaint_mechanism",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Institutions are responsible for handling client demands about sharing in which they were involved, including public demands about the interface under Art. 23 §2 (par. único).",
+   "evidence": {
+    "provision": "Art. 34 caput",
+    "quote": "são responsáveis por tratar as demandas encaminhadas por seus clientes"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Institutions must inform clients that sharing demands may be submitted through the institution's service channels and the channels for demands under Art. 44 III, and how to access them.",
+   "evidence": {
+    "provision": "Art. 35 caput",
+    "quote": "devem informar aos seus clientes que as demandas a respeito do compartilhamento de dados e serviços podem ser apresentadas"
+   }
+  },
+  {
+   "type": "consent",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Partnerships with entities not authorised by the Central Bank for sharing require prior and express client consent.",
+   "conditional_on": "partnership with non-authorised entity (Art. 36)",
+   "evidence": {
+    "provision": "Art. 36 §1",
+    "quote": "O compartilhamento de que trata o caput pressupõe prévio e expresso consentimento do cliente"
+   }
+  },
+  {
+   "type": "management_system",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Risk-management policies and strategies must include partnership decision criteria and, for partners abroad, the parameters for assessing countries and regions. Policies must be approved by the board or, if none, by the executive board.",
+   "evidence": {
+    "provision": "Art. 36 §2",
+    "quote": "As instituições devem assegurar que suas políticas e estratégias para gerenciamento de riscos"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "financial_institution",
+   "modality": "shall_not",
+   "summary": "Partnerships for sharing may not be contracted between institutions authorised by the Central Bank, nor where the partner acts on behalf of the contracting institution for sharing.",
+   "evidence": {
+    "provision": "Art. 36 §5",
+    "quote": "É vedada a contratação de parcerias de que trata o caput"
+   }
+  },
+  {
+   "type": "verification_gatekeeping",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Contracting a partnership must be preceded by a favourable opinion from the director responsible for sharing (Art. 32), in line with the requirements of Art. 37.",
+   "evidence": {
+    "provision": "Art. 36 §6",
+    "quote": "deve ser precedida da emissão de parecer favorável por parte do diretor de que trata o art. 32"
+   }
+  },
+  {
+   "type": "verification_gatekeeping",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Before contracting a partnership, institutions must adopt procedures covering corporate governance and risk-proportionate management, and verify the potential partner's capacity on compliance, data transfer information, confidentiality, integrity, availability and recovery, certifications, independent audit reports, monitoring resources, access controls, and foreign-country legal assessment (§4).",
+   "evidence": {
+    "provision": "Art. 37 caput",
+    "quote": "devem adotar procedimentos que contemplem"
+   }
+  },
+  {
+   "type": "record_keeping",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "The verification procedures and information must be documented and kept up to date.",
+   "evidence": {
+    "provision": "Art. 37 §1",
+    "quote": "devem ser documentados e mantidos atualizados"
+   }
+  },
+  {
+   "type": "management_system",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "The contracting institution must have the resources and competences needed for proper management of the partnership.",
+   "evidence": {
+    "provision": "Art. 37 §3",
+    "quote": "A instituição contratante deve possuir recursos e competências necessários para a adequada gestão da parceria"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "The partnership contract must provide, at minimum, the object, the parties' roles, countries where data may be shared, security measures, access rights of the contracting institution, notice of subcontracting, Central Bank access, compliance with Central Bank orders, adherence to technology standards, a duty to keep the institution informed of limitations, and procedures for client demands.",
+   "evidence": {
+    "provision": "Art. 38 caput",
+    "quote": "O contrato de que trata o art. 36 deve prever, no mínimo"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "financial_institution",
+   "modality": "shall_not",
+   "summary": "The contract object may not include client service activities on behalf of the contracting institution under correspondent rules, nor sharing of transaction data for products contracted at other institutions.",
+   "evidence": {
+    "provision": "Art. 38 §1",
+    "quote": "É vedado incluir, no objeto do contrato de que trata o inciso I do caput"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "financial_institution",
+   "also_addressees": [
+    "enterprise"
+   ],
+   "modality": "shall",
+   "summary": "Both the partner and the contracting institution must inform the client that the partner does not act on behalf of the institution for sharing purposes.",
+   "evidence": {
+    "provision": "Art. 38 §2",
+    "quote": "o dever do parceiro contratado e da instituição contratante de informar o cliente que o parceiro não atua em nome da instituição"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "enterprise",
+   "also_addressees": [
+    "financial_institution"
+   ],
+   "modality": "shall",
+   "summary": "The contract must require the partner to give the Central Bank-appointed resolution regime manager full access to contracts, documentation, information and access codes, and to give prior notice, at least thirty days before the planned interruption of sharing (extendable by thirty days at the manager's request), including where interruption results from the contracting institution's default.",
+   "conditional_on": "resolution regime of the contracting institution declared by the Central Bank",
+   "evidence": {
+    "provision": "Art. 38 §4 II",
+    "quote": "com pelo menos trinta dias de antecedência da data prevista para a interrupção"
+   }
+  },
+  {
+   "type": "management_system",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Institutions must establish monitoring and control mechanisms ensuring reliability, availability, integrity, security and confidentiality of the data, and the implementation and effectiveness of the requirements, including processes, tests, audit trails, metrics, and correction of deficiencies.",
+   "evidence": {
+    "provision": "Art. 40 caput",
+    "quote": "devem instituir mecanismos de acompanhamento e de controle"
+   }
+  },
+  {
+   "type": "audit",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Monitoring and control mechanisms must be subject to periodic tests by internal audit, where applicable, consistent with internal controls; they must also be consistent with the cybersecurity policy and keep partner institutions from accessing client credentials.",
+   "evidence": {
+    "provision": "Art. 40 §2 I",
+    "quote": "ser submetidos a testes periódicos pela auditoria interna, quando aplicável"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Monitoring and control mechanisms must cover indicators of interface performance.",
+   "evidence": {
+    "provision": "Art. 41",
+    "quote": "devem abranger indicadores relativos ao desempenho das interfaces usadas para o compartilhamento"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "For reimbursement of sharing costs, institutions must ensure equitable treatment and non-discriminatory access, including access to updated data without access windows or priority among participants, and set call limits and charging by convention on justified parameters applicable to all.",
+   "conditional_on": "reimbursement permitted under Art. 42 caput",
+   "evidence": {
+    "provision": "Art. 42 par. único",
+    "quote": "as instituições participantes devem assegurar:"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "financial_institution",
+   "modality": "shall_not",
+   "summary": "Reimbursement of expenses between participants is prohibited for payment initiation interface calls, and for at least two calls per month per client and per method for registration data and at least 120 calls per month per client for transaction data.",
+   "evidence": {
+    "provision": "Art. 43",
+    "quote": "É vedado o ressarcimento de despesas, entre as instituições participantes:"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Participating institutions must enter into a convention covering technology standards and operating procedures, data layout, complaint channels, dispute resolution, reimbursement, participants repository, and rights and obligations. Convention information must be kept updated and accessible to participants.",
+   "evidence": {
+    "provision": "Art. 44 caput",
+    "quote": "As instituições participantes devem celebrar convenção"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Information on the interface implementation standard must be kept updated and accessible to the public for the interfaces under Art. 23 §2.",
+   "evidence": {
+    "provision": "Art. 44 §3",
+    "quote": "devem ser mantidas atualizadas e acessíveis ao público"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "The convention's rules, procedures and standards must be formalised in an instrument signed by participants, individually or through national associations, which must state the start date for mandatory observance and be applied uniformly.",
+   "evidence": {
+    "provision": "Art. 45 caput",
+    "quote": "devem ser formalizados em instrumento firmado entre as instituições participantes"
+   }
+  },
+  {
+   "type": "record_keeping",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "The convention instrument and the adhesion terms of new participants must be kept available to the Central Bank.",
+   "evidence": {
+    "provision": "Art. 45 §3",
+    "quote": "devem ser mantidos à disposição do Banco Central do Brasil"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "regulator",
+   "modality": "shall",
+   "summary": "The Central Bank must establish the initial governance structure for implementing Open Banking, based on Art. 44 §1 guidelines, and participate in drafting the convention to ensure the objectives of Art. 3 and principles of Art. 4; it must also promote discussions among participants through their national associations.",
+   "evidence": {
+    "provision": "Art. 46 caput",
+    "quote": "O Banco Central do Brasil deverá:"
+   }
+  },
+  {
+   "type": "cooperation_with_authority",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Convention content must be submitted to Central Bank approval by the deadline for items in Art. 44 III, VI and VII and for the operational and technology procedures on channels and product data under Art. 5 I(a) and I(b), items 1 to 5. Later amendments must also be submitted for approval.",
+   "applies_from": "1 September 2020 (art. 47 I)",
+   "evidence": {
+    "provision": "Art. 47 I",
+    "quote": "I - até 1º de setembro de 2020, em relação:"
+   }
+  },
+  {
+   "type": "cooperation_with_authority",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Submission to Central Bank approval by the deadline for Art. 44 IV, for procedures and standards for registration and transaction data (Art. 5 I(c) and I(d), items 1 to 5), and for reimbursement between participants on that data.",
+   "applies_from": "1 March 2021 (art. 47 II)",
+   "evidence": {
+    "provision": "Art. 47 II",
+    "quote": "II - até 1º de março de 2021, em relação:"
+   }
+  },
+  {
+   "type": "cooperation_with_authority",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Submission to Central Bank approval by the deadline for operational and technology procedures on payment initiation services under Art. 5 II.",
+   "applies_from": "1 June 2021 (art. 47 III)",
+   "evidence": {
+    "provision": "Art. 47 III",
+    "quote": "III - até 1º de junho de 2021, em relação aos procedimentos operacionais"
+   }
+  },
+  {
+   "type": "cooperation_with_authority",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Submission to Central Bank approval by the deadline for procedures on product data (Art. 5 I(b), items 6 to 10) and transaction data (Art. 5 I(d), items 6 to 11), including reimbursement on that transaction data.",
+   "applies_from": "2 August 2021 (art. 47 IV)",
+   "evidence": {
+    "provision": "Art. 47 IV",
+    "quote": "IV - até 2 de agosto de 2021, em relação aos procedimentos operacionais"
+   }
+  },
+  {
+   "type": "management_system",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Risk-management policies under existing regulation must cover business continuity: procedures for interface unavailability (including alternatives under Art. 25), restoration deadlines, handling and prevention of data-security incidents, and business-continuity testing.",
+   "evidence": {
+    "provision": "Art. 48 caput",
+    "quote": "devem assegurar que suas políticas para gerenciamento de riscos, previstas na regulamentação em vigor, disponham"
+   }
+  },
+  {
+   "type": "testing_evaluation",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Institutions must carry out business-continuity tests covering scenarios of interface unavailability and evaluate their results.",
+   "evidence": {
+    "provision": "Art. 48 IV",
+    "quote": "a execução de testes de continuidade de negócios"
+   }
+  },
+  {
+   "type": "record_keeping",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Institutions must keep available to the Central Bank for five years the records listed in items I to X (consents, revocations, access records, impossibility documentation, semi-annual reports, partnership opinions and verification records, partnership contracts, monitoring data, convention instrument). The period for item IX runs from implementation of the mechanisms, and for item VIII from contract termination.",
+   "evidence": {
+    "provision": "Art. 49 caput",
+    "quote": "devem manter à disposição do Banco Central do Brasil pelo prazo de cinco anos"
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "regulator",
+   "modality": "may",
+   "summary": "The Central Bank may adopt measures to implement the resolution and set further rules on data scope, interface unavailability and performance parameters, reporting deadlines, certification requirements for partners, reimbursement limits, participation form, convention submission and maximum restoration periods.",
+   "evidence": {
+    "provision": "Art. 51 caput",
+    "quote": "O Banco Central do Brasil poderá adotar as medidas necessárias para o cumprimento do disposto nesta Resolução Conjunta"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Institutions that already had contracts with unauthorised entities for sharing under Art. 36 must submit to the Central Bank a schedule for adapting to Art. 38. The final deadline in the schedule may not exceed 31 December 2021 (par. único).",
+   "applies_from": "3 November 2020",
+   "conditional_on": "contracts already in place on the date of entry into force",
+   "evidence": {
+    "provision": "Art. 53 caput",
+    "quote": "devem apresentar ao Banco Central do Brasil, até 3 de novembro de 2020, cronograma para adequação"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Staged implementation deadline: implement Art. 44 III and VI and requirements for sharing channel, product and service data (Art. 5 I(a) and I(b), items 1 to 5).",
+   "applies_from": "30 November 2020",
+   "evidence": {
+    "provision": "Art. 55 I",
+    "quote": "I - até 30 de novembro de 2020, para a implementação do disposto nos incisos III e VI do art. 44"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Staged implementation deadline: implement Art. 44 IV and requirements for registration and transaction data sharing (Art. 5 I(c) and I(d), items 1 to 5).",
+   "applies_from": "31 May 2021",
+   "evidence": {
+    "provision": "Art. 55 II",
+    "quote": "II - até 31 de maio de 2021, para a implementação do disposto no inciso IV do art. 44"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Staged implementation deadline: implement requirements for payment initiation service sharing (Art. 5 II).",
+   "applies_from": "30 August 2021",
+   "evidence": {
+    "provision": "Art. 55 III",
+    "quote": "III - até 30 de agosto de 2021, para a implementação dos requisitos necessários para o compartilhamento de serviços"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Staged implementation deadline: implement requirements for product and service data (Art. 5 I(b), items 6 to 10) and transaction data (Art. 5 I(d), items 6 to 11).",
+   "applies_from": "25 October 2021",
+   "evidence": {
+    "provision": "Art. 55 IV",
+    "quote": "IV - até 25 de outubro de 2021, para a implementação dos requisitos necessários para o compartilhamento de"
+   }
+  }
+ ],
+ "enforcement": [
+  {
+   "sanction_type": "blocking",
+   "authority": "Banco Central do Brasil",
+   "triggered_by": "Non-compliance with this Resolução Conjunta ('inobservância do disposto nesta Resolução Conjunta'), found at any time, in relation to sharing under art. 36 (partnerships with non-authorised entities) [the Central Bank may veto or restrict such sharing]",
+   "max_penalty_text": "No monetary penalty stated; the text provides for a veto or restrictions on sharing, with no amount.",
+   "cure_period": "The Central Bank sets a period for adjusting processes ('estabelecendo prazo para a adequação de processos'); the duration is not stated in this text.",
+   "evidence": {
+    "provision": "Art. 52",
+    "quote": "O Banco Central do Brasil poderá vetar ou impor restrições ao compartilhamento de que trata o art. 36"
+   }
+  }
+ ],
+ "section_status": {}
+}

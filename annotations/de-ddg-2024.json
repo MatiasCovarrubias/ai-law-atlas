@@ -1,0 +1,148 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "de-ddg-2024",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (connectors/fetch_texts.py)",
+  "url": "https://www.gesetze-im-internet.de/ddg/",
+  "retrieved": "2026-10-13",
+  "version": "as fetched",
+  "language": "de",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "online_safety_content",
+   "platforms_competition",
+   "consumer_protection",
+   "data_access_sharing"
+  ],
+  "primary_domain": "online_safety_content",
+  "mechanisms": [
+   "institution_setup",
+   "mandate_obligation",
+   "disclosure_transparency",
+   "liability_rule",
+   "prohibition_ban"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "platform_operator",
+   "government_agency",
+   "regulator"
+  ],
+  "affected_roles": [
+   "consumers_users",
+   "general_public"
+  ],
+  "decision_margins": [
+   "firm:compliance_process",
+   "household:information"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national"
+   ],
+   "description": "Federal German statute; the scope provisions (§ 1 and § 2) are not in the fetched text, so the reach beyond Germany is not established here.",
+   "evidence": {
+    "provision": "Title",
+    "quote": "Digitale-Dienste-Gesetz"
+   }
+  },
+  "agora_incentives": [
+   "Civil liability",
+   "Fines"
+  ]
+ },
+ "summary": {
+  "short": "German Digital Services Act implementation statute (DDG). Implements Regulation (EU) 2022/2065 (DSA) for digital intermediary services: designates competent authorities, creates a Digital Services Coordinator, sets liability, blocking and information rules, enforcement powers and fines. From the table of contents only; operative text not in the fetched document.",
+  "long": "The DDG is a German statute that implements Regulation (EU) 2022/2065 (DSA) for digital services. Part 1 sets general rules: scope and definitions, the European seat of providers, a country-of-origin principle and freedom of admission. Part 2 sets general information duties and special duties for commercial communications. Part 3 covers users' infringements: limited liability of providers and a claim to blocking. Part 4 covers audiovisual media service and video-sharing platform providers, including provider lists, information requests and contractual use bans. Part 5 designates competent authorities and sets up a Digital Services Coordinator with a central complaints office and advisory board; it also covers reporting suspected offences to the Federal Criminal Police Office. Part 6 assigns further authorities under Regulations (EU) 2019/1150, 2024/1028 and 2018/302 and a liaison point under Directive 2000/31/EC. Part 7 sets investigation, information, search and seizure powers, enforcement, public information, Federal Network Agency powers, legal remedies and procedure. Part 8 contains fine provisions. Part 9 contains transitional and final provisions and an evaluation clause. Only the table of contents was fetched: provision texts, entry-into-force dates and penalty amounts are not stated in this document."
+ },
+ "relations": [
+  {
+   "relation": "implements",
+   "target_text": "Verordnung (EU) 2022/2065 (Digital Services Act)",
+   "note": "Part 5 heading; the TOC also lists cross-references to Art. 18, Art. 49(1) and Art. 51(3) of this Regulation (§§ 12, 13, 29).",
+   "evidence": {
+    "provision": "Teil 5",
+    "quote": "Durchführung der Verordnung (EU) 2022/2065"
+   }
+  },
+  {
+   "relation": "implements",
+   "target_text": "Verordnung (EU) 2019/1150",
+   "note": "Section heading only; text not provided.",
+   "evidence": {
+    "provision": "§ 22",
+    "quote": "Durchführung der Verordnung (EU) 2019/1150"
+   }
+  },
+  {
+   "relation": "implements",
+   "target_text": "Verordnung (EU) 2024/1028",
+   "note": "Section heading only; text not provided. Section 22b also lists authorities for enforcing duties under this Regulation.",
+   "evidence": {
+    "provision": "§ 22a",
+    "quote": "Durchführung der Verordnung (EU) 2024/1028"
+   }
+  },
+  {
+   "relation": "implements",
+   "target_text": "Verordnung (EU) 2018/302",
+   "note": "Section heading covers implementation and enforcement of the prohibition of discriminatory provisions; text not provided.",
+   "evidence": {
+    "provision": "§ 22c",
+    "quote": "Durchführung der Verordnung (EU) 2018/302 und Durchsetzung des Verbots diskriminierender Bestimmungen"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Richtlinie 2000/31/EG (E-Commerce-Richtlinie)",
+   "note": "Section 23 heading refers to a liaison body under Art. 19(2) of the Directive; the substantive interaction is not visible in the TOC.",
+   "evidence": {
+    "provision": "§ 23",
+    "quote": "Verbindungsstelle nach Artikel 19 Absatz 2 der Richtlinie 2000/31/EG"
+   }
+  }
+ ],
+ "notes": "Only the non-official table of contents (nichtamtliches Inhaltsverzeichnis) was provided. It contains no operative provisions, so no obligations, thresholds, definitions, enforcement or entities can be verified, and no text_version details are available. Relations are taken from section headings only; target instrument IDs are null pending registry lookup. Bodies named in headings (e.g. Bundesnetzagentur, Koordinierungsstelle für digitale Dienste) are not coded as entities because their designation is not visible in the TOC. Full statutory text is needed for a complete annotation.",
+ "events": [],
+ "section_status": {
+  "entities": {
+   "status": "not_found",
+   "note": "Only headings were provided. Authorities appear by name in headings (e.g. Bundesnetzagentur in § 30) but the text designating or empowering them is not in the document."
+  },
+  "events": {
+   "status": "not_found",
+   "note": "The fetched document is only the non-official table of contents (Inhaltsverzeichnis) of the DDG. It contains no dated provisions, dateline, adoption or entry-into-force information, and no operative text. Part 9 (Übergangs- und Schlussvorschriften, incl. § 34 Evaluierung) exists in the heading list but its text is not in the document, so no events are recorded. Re-annotate from the full statute text."
+  },
+  "thresholds": {
+   "status": "not_found",
+   "note": "The provided document is only the non-official table of contents of the DDG (section titles, no operative text). No provision text was available, so no numeric thresholds could be coded. Full text of §§ 1-34 is needed to annotate thresholds."
+  },
+  "definitions": {
+   "status": "not_found",
+   "note": "The provided document lists only the heading '§ 1 Anwendungsbereich, Begriffsbestimmungen' and no definition text. No defined terms could be quoted. Full text of § 1 (and any other definitional provisions) is needed to annotate definitions."
+  },
+  "obligations": {
+   "status": "not_found",
+   "note": "The supplied document is only the non-official table of contents (Inhaltsverzeichnis) of the DDG. It contains no operative provisions, so no obligations could be extracted. Annotation requires the full text of the DDG (e.g., §§ 1-34), which would also need to be checked for amending text."
+  },
+  "enforcement": {
+   "status": "not_found",
+   "note": "The supplied document is only the non-official table of contents of the DDG. It lists headings such as § 27 Durchsetzung von Verpflichtungen, § 30 Befugnisse der Bundesnetzagentur and § 33 Bußgeldvorschriften, but contains no provision text, so no sanction regime, maximum, formula, cure period or private right of action could be taken from it. Annotation needs the full text of §§ 27 to 33."
+  }
+ },
+ "thresholds": [],
+ "obligations": [],
+ "enforcement": [],
+ "definitions": [],
+ "entities": []
+}

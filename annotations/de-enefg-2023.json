@@ -1,0 +1,1706 @@
+{
+ "schema_version": "1.1",
+ "instrument_id": "de-enefg-2023",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-opus-5-5 (Claude Code)",
+  "method": "gold set (Opus, Claude Code)",
+  "date": "2026-10-11",
+  "prompt_version": "gold (hand annotation by Claude Opus in Claude Code; no prompt version)"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "Gesetze im Internet (gesetze-im-internet.de, Bundesministerium der Justiz / Bundesamt für Justiz), HTML single-page version",
+  "url": "https://www.gesetze-im-internet.de/enefg/BJNR1350B0023.html",
+  "retrieved": "2026-10-11",
+  "version": "original as promulgated (Ausfertigungsdatum 13.11.2023, BGBl. 2023 I Nr. 309); portal footnote 'Textnachweis ab: 18.11.2023'; no 'Stand' line, so no later amendments are documented on the portal",
+  "language": "de",
+  "extent": "full",
+  "note": "Full text of the EnEfG (§§ 1-21 and Anlagen 1-3), which is Article 1 of the Gesetz vom 13.11.2023 (BGBl. 2023 I Nr. 309). Articles 2-3 of that act are not part of this text; the entry-into-force date comes from the portal footnote. Standards cited (DIN EN 50600 series, ISO 50001, ISO 50005, DIN EN 17463) are not included."
+ },
+ "summary": {
+  "short": "Germany's Energy Efficiency Act sets national energy-saving targets and duties for federal and Länder governments, public bodies and energy-intensive firms, and imposes PUE limits, renewable-electricity, waste-heat reuse, energy-management and annual reporting duties on data centres of 300 kW or more. In force 18 November 2023, with phased dates to 2030.",
+  "long": "The EnEfG sets 2030 targets for final and primary energy consumption, annual savings duties for the Federation (45 TWh) and the Länder (3 TWh) from 2024 to 2030, and 2% annual savings for public bodies using 1 GWh or more. Firms averaging more than 7.5 GWh must set up an energy or environmental management system; firms above 2.5 GWh must publish certified implementation plans for economic savings measures, avoid and reuse waste heat, and report waste-heat data for a public platform. Data centres (non-redundant connected load of 300 kW or more, network nodes excluded) must reach a PUE of 1.5 from July 2027 and 1.3 from July 2030 if operating before 1 July 2026; later centres must reach PUE 1.2 and a reused-energy share of 10%, rising to 15% and 20% for centres opening from July 2027 and July 2028, with exemptions tied to heat-network agreements. Operators must cover electricity 50% from renewables from 2024 and 100% from 2027, set up management systems by July 2025 (certified from 2026 above 1 MW), report Anlage 3 data annually to a federal register, and show customers their energy use. Administrative fines reach EUR 100,000."
+ },
+ "classification": {
+  "domains": [
+   "energy_grid_water",
+   "compute_data_centers"
+  ],
+  "primary_domain": "energy_grid_water",
+  "mechanisms": [
+   "mandate_obligation",
+   "standard_setting",
+   "designation_tiering",
+   "registration_notification",
+   "disclosure_transparency",
+   "institution_setup"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "data_center_operator",
+   "data_center_owner",
+   "data_center_occupant",
+   "utility_grid_operator",
+   "government_agency",
+   "general_public"
+  ],
+  "affected_roles": [
+   "consumers_users"
+  ],
+  "decision_margins": [
+   "firm:investment_location",
+   "firm:input_use",
+   "firm:compliance_process"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national"
+   ],
+   "description": "Germany (federal statute); duties of the Länder concern their own territory, and listed security, defence and nuclear bodies and facilities are excluded (§ 21).",
+   "evidence": {
+    "provision": "Title",
+    "quote": "Gesetz zur Steigerung der Energieeffizienz in Deutschland"
+   }
+  },
+  "agora_applications": [],
+  "agora_harms": [],
+  "agora_incentives": [
+   "Fines"
+  ],
+  "agora_risk_factors": [],
+  "agora_strategies": [
+   "Performance requirements",
+   "Disclosure",
+   "Tiering"
+  ]
+ },
+ "events": [
+  {
+   "event": "legislative_approval",
+   "date": null,
+   "date_type": "not_stated",
+   "date_text": "vom Bundestag beschlossen",
+   "applies_to": "Act adopted by the Bundestag as Article 1 of the Gesetz vom 13.11.2023",
+   "evidence": {
+    "provision": "Portal footnote",
+    "quote": "Das G wurde als Artikel 1 des G v. 13.11.2023 I Nr. 309 vom Bundestag beschlossen."
+   }
+  },
+  {
+   "event": "adopted",
+   "date": "2023-11-13",
+   "date_type": "absolute",
+   "date_text": "Ausfertigungsdatum: 13.11.2023",
+   "applies_to": "Whole act (date of signature / Ausfertigung)",
+   "evidence": {
+    "provision": "Heading",
+    "quote": "Ausfertigungsdatum: 13.11.2023"
+   }
+  },
+  {
+   "event": "published",
+   "date": null,
+   "date_type": "not_stated",
+   "date_text": "BGBl. 2023 I Nr. 309",
+   "applies_to": "Promulgation in the Bundesgesetzblatt (issue cited, date not given in the text)",
+   "evidence": {
+    "provision": "Vollzitat",
+    "quote": "Energieeffizienzgesetz vom 13. November 2023 (BGBl. 2023 I Nr. 309)"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2023-11-18",
+   "date_type": "absolute",
+   "date_text": "am 18.11.2023 in Kraft getreten",
+   "applies_to": "Whole act (under Article 3 of the enacting act)",
+   "evidence": {
+    "provision": "Portal footnote",
+    "quote": "Es ist gem. Artikel 3 dieses G am 18.11.2023 in Kraft getreten."
+   }
+  },
+  {
+   "event": "application",
+   "date": "2024-01-01",
+   "date_type": "absolute",
+   "date_text": "ab dem 1. Januar 2024 zu 50 Prozent",
+   "applies_to": "§ 11(5) No. 1: data-centre operators cover 50% of electricity use with renewable electricity (on a balance-sheet basis)",
+   "evidence": {
+    "provision": "§ 11 Abs. 5 Nr. 1",
+    "quote": "ab dem 1. Januar 2024 zu 50 Prozent durch Strom aus erneuerbaren Energien"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2027-01-01",
+   "date_type": "absolute",
+   "date_text": "ab dem 1. Januar 2027 zu 100 Prozent",
+   "applies_to": "§ 11(5) No. 2: renewable-electricity share rises to 100%",
+   "evidence": {
+    "provision": "§ 11 Abs. 5 Nr. 2",
+    "quote": "ab dem 1. Januar 2027 zu 100 Prozent durch Strom aus erneuerbaren Energien"
+   }
+  },
+  {
+   "event": "application",
+   "date": "2024-01-01",
+   "date_type": "absolute",
+   "date_text": "ab dem 1. Januar 2024",
+   "applies_to": "§ 15: data-centre operators serving third parties must show customers their attributable annual energy consumption",
+   "evidence": {
+    "provision": "§ 15",
+    "quote": "so sind die Betreiber ab dem 1. Januar 2024 dazu verpflichtet, die direkt den Kunden zuzuordnenden Energieverbräuche pro Jahr gegenüber diesen Kunden darzustellen"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2025-07-01",
+   "date_type": "absolute",
+   "date_text": "bis zum 1. Juli 2025",
+   "applies_to": "§ 12(1), with § 12(5): data-centre operators and IT operators must have set up an energy or environmental management system",
+   "evidence": {
+    "provision": "§ 12 Abs. 1",
+    "quote": "Unbeschadet von § 8 sind Betreiber von Rechenzentren verpflichtet, bis zum 1. Juli 2025 ein Energie- oder Umweltmanagementsystem einzurichten."
+   }
+  },
+  {
+   "event": "application",
+   "date": "2026-01-01",
+   "date_type": "absolute",
+   "date_text": "ab dem 1. Januar 2026",
+   "applies_to": "§ 12(3): validation or certification of the management system for data centres of 1 MW or more (300 kW or more if publicly owned or operated for public bodies)",
+   "evidence": {
+    "provision": "§ 12 Abs. 3",
+    "quote": "besteht ab dem 1. Januar 2026 die Pflicht zur Validierung oder Zertifizierung des Energie- oder Umweltmanagementsystems"
+   }
+  },
+  {
+   "event": "application",
+   "date": "2026-01-01",
+   "date_type": "absolute",
+   "date_text": "ab dem 1. Januar 2026",
+   "applies_to": "§ 12(5) sentences 2-3: validation or certification for IT operators with IT connected load of 500 kW or more (300 kW or more if operated on behalf of public bodies)",
+   "evidence": {
+    "provision": "§ 12 Abs. 5 Satz 2",
+    "quote": "Für Betreiber von Informationstechnik mit einer nicht redundanten Nennanschlussleistung der Informationstechnik ab 500 Kilowatt besteht ab dem 1. Januar 2026 die Pflicht zur Validierung oder Zertifizierung"
+   }
+  },
+  {
+   "event": "application",
+   "date": "2026-07-01",
+   "date_type": "absolute",
+   "date_text": "Rechenzentren, die ab dem 1. Juli 2026 den Betrieb aufnehmen",
+   "applies_to": "§ 11(2): vintage cut-off; data centres starting operation from this date must reach PUE <= 1.2 and a reused-energy share of at least 10% (centres starting earlier fall under § 11(1))",
+   "evidence": {
+    "provision": "§ 11 Abs. 2 Satz 1",
+    "quote": "Rechenzentren, die ab dem 1. Juli 2026 den Betrieb aufnehmen, sind so zu errichten und zu betreiben, dass sie"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2027-07-01",
+   "date_type": "absolute",
+   "date_text": "Rechenzentren, die ab dem 1. Juli 2027 den Betrieb aufnehmen",
+   "applies_to": "§ 11(2) No. 2: planned reused-energy share of at least 15% for data centres starting operation from this date",
+   "evidence": {
+    "provision": "§ 11 Abs. 2 Satz 1 Nr. 2",
+    "quote": "Rechenzentren, die ab dem 1. Juli 2027 den Betrieb aufnehmen, müssen einen geplanten Anteil an wiederverwendeter Energie von mindestens 15 Prozent aufweisen"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2028-07-01",
+   "date_type": "absolute",
+   "date_text": "Rechenzentren, die ab dem 1. Juli 2028 den Betrieb aufnehmen",
+   "applies_to": "§ 11(2) No. 2: planned reused-energy share of at least 20% for data centres starting operation from this date",
+   "evidence": {
+    "provision": "§ 11 Abs. 2 Satz 1 Nr. 2",
+    "quote": "Rechenzentren, die ab dem 1. Juli 2028 den Betrieb aufnehmen, müssen einen geplanten Anteil an wiederverwendeter Energie von mindestens 20 Prozent aufweisen"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "spätestens zwei Jahre nach Inbetriebnahme",
+   "anchor": "commissioning (Inbetriebnahme) of each data centre covered by § 11(2)",
+   "applies_to": "§ 11(2) sentence 2: PUE and reused-energy requirements must be met permanently as an annual average",
+   "evidence": {
+    "provision": "§ 11 Abs. 2 Satz 2",
+    "quote": "Die Anforderungen nach Satz 1 sind spätestens zwei Jahre nach Inbetriebnahme im Jahresdurchschnitt dauerhaft zu erreichen."
+   }
+  },
+  {
+   "event": "application",
+   "date": "2027-07-01",
+   "date_type": "absolute",
+   "date_text": "ab dem 1. Juli 2027",
+   "applies_to": "§ 11(1) No. 1: data centres that started operation before 1 July 2026 must reach PUE <= 1.5 (annual average)",
+   "evidence": {
+    "provision": "§ 11 Abs. 1 Nr. 1",
+    "quote": "ab dem 1. Juli 2027 eine Energieverbrauchseffektivität von kleiner oder gleich 1,5"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2030-07-01",
+   "date_type": "absolute",
+   "date_text": "ab dem 1. Juli 2030",
+   "applies_to": "§ 11(1) No. 2: PUE limit for pre-July-2026 data centres tightens to <= 1.3",
+   "evidence": {
+    "provision": "§ 11 Abs. 1 Nr. 2",
+    "quote": "ab dem 1. Juli 2030 eine Energieverbrauchseffektivität von kleiner oder gleich 1,3 im Jahresdurchschnitt dauerhaft erreichen"
+   }
+  },
+  {
+   "event": "application",
+   "date": "2027-07-01",
+   "date_type": "absolute",
+   "date_text": "plangemäß vor dem 1. Juli 2027 außer Betrieb gehen",
+   "applies_to": "§ 12(6): cut-off for the exemption from § 12(1), (2), (3) and (5) for data centres or IT scheduled to go out of operation before this date",
+   "evidence": {
+    "provision": "§ 12 Abs. 6",
+    "quote": "Die Anforderungen nach den Absätzen 1, 2, 3 und 5 sind nicht anzuwenden auf Rechenzentren oder Informationstechnik, die plangemäß vor dem 1. Juli 2027 außer Betrieb gehen."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "bis zum Ablauf des 31. März eines jeden Jahres",
+   "anchor": "recurring annual deadline (31 March each year) for the preceding calendar year",
+   "applies_to": "§ 13(1): data-centre operators publish and transmit Anlage 3 information",
+   "evidence": {
+    "provision": "§ 13 Abs. 1 Satz 1",
+    "quote": "Betreiber von Rechenzentren sind verpflichtet, bis zum Ablauf des 31. März eines jeden Jahres Informationen über ihr Rechenzentrum nach Maßgabe der Anlage 3 für das vorangegangene Kalenderjahr zu veröffentlichen und an den Bund zu übermitteln."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2024-05-15",
+   "date_type": "absolute",
+   "date_text": "spätestens zum 15. Mai 2024",
+   "applies_to": "§ 20(2) No. 1: first § 13(1) transmission for data centres with non-redundant connected load of 500 kW or more",
+   "evidence": {
+    "provision": "§ 20 Abs. 2 Nr. 1",
+    "quote": "ab einer nicht redundanten Nennanschlussleistung von 500 Kilowatt spätestens zum 15. Mai 2024 zu übermitteln"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2025-07-01",
+   "date_type": "absolute",
+   "date_text": "spätestens zum 1. Juli 2025",
+   "applies_to": "§ 20(2) No. 2: first § 13(1) transmission for data centres with non-redundant connected load of 200 kW to under 500 kW (see notes on the 300 kW definition)",
+   "evidence": {
+    "provision": "§ 20 Abs. 2 Nr. 2",
+    "quote": "ab einer nicht redundanten Nennanschlussleistung von 200 Kilowatt bis unter 500 Kilowatt spätestens zum 1. Juli 2025 zu übermitteln"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2024-03-31",
+   "date_type": "absolute",
+   "date_text": "bis zum 31. März 2024",
+   "applies_to": "§ 20(3): IT operators provide information for 2023 to the Federation",
+   "evidence": {
+    "provision": "§ 20 Abs. 3",
+    "quote": "Betreiber von Informationstechnik sind für das Jahr 2023 verpflichtet, dem Bund Informationen nach § 13 Absatz 2 bis zum 31. März 2024 bereitzustellen"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "innerhalb von zehn Jahren",
+   "anchor": "waste-heat agreement between the data-centre operator and a nearby municipality or heat-network operator",
+   "applies_to": "§ 11(3) No. 2: exemption from the reused-energy requirement if the agreement allows the requirement to be met within ten years",
+   "evidence": {
+    "provision": "§ 11 Abs. 3 Satz 1 Nr. 2",
+    "quote": "womit die Anforderungen nach Absatz 2 Satz 1 Nummer 2 innerhalb von zehn Jahren erfüllt werden können"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "nicht innerhalb von sechs Monaten annimmt",
+   "anchor": "offer by the data-centre operator to a nearby heat-network operator to use reused energy at cost (Gestehungskosten)",
+   "applies_to": "§ 11(3) No. 3: exemption from the reused-energy requirement if the offer is not accepted within six months",
+   "evidence": {
+    "provision": "§ 11 Abs. 3 Satz 1 Nr. 3",
+    "quote": "der Betreiber eines in der Umgebung befindlichen Wärmenetzes ein Angebot zur Nutzung wiederverwendeter Energie zu Gestehungskosten nicht innerhalb von sechs Monaten annimmt"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2025-07-18",
+   "date_type": "absolute",
+   "date_text": "bis zum Ablauf des 18. Juli 2025",
+   "applies_to": "§ 8(2) sentence 1: firms that reached the > 7.5 GWh status by 17 November 2023 must have set up an energy or environmental management system",
+   "evidence": {
+    "provision": "§ 8 Abs. 2 Satz 1",
+    "quote": "Unternehmen, die bis zum Ablauf des 17. November 2023 den Status eines Unternehmens nach Absatz 1 erlangt haben, müssen ein Energie- oder Umweltmanagementsystem bis zum Ablauf des 18. Juli 2025 eingerichtet haben."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "spätestens 20 Monate nach dem Zeitpunkt, zu dem sie diesen Status erlangt haben",
+   "anchor": "date on which a firm reaches the § 8(1) status on or after 18 November 2023",
+   "applies_to": "§ 8(2) sentence 2: management-system deadline for firms crossing 7.5 GWh later",
+   "evidence": {
+    "provision": "§ 8 Abs. 2 Satz 2",
+    "quote": "spätestens 20 Monate nach dem Zeitpunkt, zu dem sie diesen Status erlangt haben, eingerichtet haben"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "spätestens binnen drei Jahren",
+   "anchor": "completion of re-certification or EMAS renewal (cases No. 1-2) or of the energy audit (case No. 3)",
+   "applies_to": "§ 9: firms above 2.5 GWh must prepare and publish implementation plans",
+   "evidence": {
+    "provision": "§ 9 Satz 1, Satz 4",
+    "quote": "Die Frist nach Satz 1 beginnt in den Fällen nach Satz 1 Nummer 1 und 2 mit Abschluss der Re-Zertifizierung oder der Verlängerungseintragung, in den Fällen nach Satz 1 Nummer 3 mit Fertigstellung des Energieaudits."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "innerhalb einer Frist von vier Wochen",
+   "anchor": "request by the Bundesamt für Wirtschaft und Ausfuhrkontrolle in a sample check",
+   "applies_to": "§ 10 sentence 2: firms submit Anlage 2 evidence",
+   "evidence": {
+    "provision": "§ 10 Satz 2",
+    "quote": "die Vorlage von Nachweisen nach der Anlage 2 innerhalb einer Frist von vier Wochen über eine elektronisch abrufbare Vorlage zu verlangen"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "bis zum 31. März eines jeden Jahres",
+   "anchor": "recurring annual deadline (31 March each year)",
+   "applies_to": "§ 17(2): firms transmit waste-heat information to the Bundesstelle für Energieeffizienz",
+   "evidence": {
+    "provision": "§ 17 Abs. 2 Satz 1",
+    "quote": "an die Bundesstelle für Energieeffizienz bis zum 31. März eines jeden Jahres zu übermitteln"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2024-01-01",
+   "date_type": "absolute",
+   "date_text": "erstmals bis zum 1. Januar 2024",
+   "applies_to": "§ 20(4): first transmission of § 17(2) waste-heat information",
+   "evidence": {
+    "provision": "§ 20 Abs. 4",
+    "quote": "Unternehmen sind verpflichtet, die Informationen nach § 17 Absatz 2 Satz 1 erstmals bis zum 1. Januar 2024 zu übermitteln."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2026-06-30",
+   "date_type": "absolute",
+   "date_text": "bis zum Ablauf des 30. Juni 2026",
+   "applies_to": "§ 6(4): public bodies of 3 GWh or more set up an energy or environmental management system; 1 to under 3 GWh a simplified energy management system",
+   "evidence": {
+    "provision": "§ 6 Abs. 4 Nr. 1",
+    "quote": "3 Gigawattstunden oder mehr sind verpflichtet, ein Energie- oder Umweltmanagementsystem bis zum Ablauf des 30. Juni 2026 einzurichten"
+   }
+  },
+  {
+   "event": "expiry",
+   "date": "2045",
+   "date_type": "absolute",
+   "date_text": "bis zum Jahr 2045",
+   "applies_to": "§ 6(1): end of the 2% annual final-energy savings duty of public bodies",
+   "evidence": {
+    "provision": "§ 6 Abs. 1 Satz 1",
+    "quote": "sind zu jährlichen Einsparungen beim Endenergieverbrauch in Höhe von 2 Prozent pro Jahr bis zum Jahr 2045 verpflichtet"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "bis zum 1. November eines jeden Jahres über das jeweilige Vorjahr",
+   "anchor": "recurring annual deadline (1 November each year) for the preceding year",
+   "applies_to": "§ 6(7): Länder transmit total final energy consumption of public bodies and municipalities",
+   "evidence": {
+    "provision": "§ 6 Abs. 7 Satz 3",
+    "quote": "übermitteln diesen bis zum 1. November eines jeden Jahres über das jeweilige Vorjahr an die zuständige Stelle"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2024",
+   "date_type": "conditional",
+   "date_text": "erstmals im Jahr 2024 und spätestens sechs Monate nach Bereitstellung der elektronischen Vorlage",
+   "depends_on": "provision of the electronic template by the competent body under § 7(1) and (2) Nos. 2-3",
+   "applies_to": "§ 20(1): first transmission by the Länder of § 6(7) information",
+   "evidence": {
+    "provision": "§ 20 Abs. 1",
+    "quote": "erstmals im Jahr 2024 und spätestens sechs Monate nach Bereitstellung der elektronischen Vorlage"
+   }
+  },
+  {
+   "event": "application",
+   "date": "2024-01-01",
+   "date_type": "absolute",
+   "date_text": "vom 1. Januar 2024 bis zum 31. Dezember 2030",
+   "applies_to": "§ 5(1)-(2): start of annual new final-energy savings duties of the Federation (45 TWh) and the Länder (3 TWh)",
+   "evidence": {
+    "provision": "§ 5 Abs. 1 Satz 1",
+    "quote": "Der Bund bewirkt vom 1. Januar 2024 bis zum 31. Dezember 2030 mittels strategischer Maßnahmen jährlich neue Endenergieeinsparungen in Höhe von jeweils mindestens 45 Terawattstunden."
+   }
+  },
+  {
+   "event": "expiry",
+   "date": "2030-12-31",
+   "date_type": "absolute",
+   "date_text": "bis zum Ablauf des 31. Dezember 2030",
+   "applies_to": "§ 5(1)-(2): end of the Federation and Länder savings period",
+   "evidence": {
+    "provision": "§ 5 Abs. 2 Satz 1",
+    "quote": "Die Länder bewirken vom 1. Januar 2024 bis zum Ablauf des 31. Dezember 2030 mittels strategischer Maßnahmen jährlich neue Endenergieeinsparungen in Höhe von jeweils mindestens 3 Terawattstunden."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2024",
+   "date_type": "absolute",
+   "date_text": "im Jahr 2024",
+   "applies_to": "§ 5(1) sentence 3: Federal Government summarises the planned strategic measures in the update of the national energy and climate plan",
+   "evidence": {
+    "provision": "§ 5 Abs. 1 Satz 3",
+    "quote": "geändert worden ist, im Jahr 2024 zusammen"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2030",
+   "date_type": "absolute",
+   "date_text": "bis zum Jahr 2030",
+   "applies_to": "§ 4(1): target year for reducing final energy consumption by 26.5% and primary energy consumption by 39.3% against 2008",
+   "evidence": {
+    "provision": "§ 4 Abs. 1 Nr. 1",
+    "quote": "den Endenergieverbrauch Deutschlands im Vergleich zum Jahr 2008 bis zum Jahr 2030 um mindestens 26,5 Prozent auf einen Endenergieverbrauch von 1 867 Terawattstunden zu senken"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2027",
+   "date_type": "absolute",
+   "date_text": "im Jahr 2027",
+   "applies_to": "§ 4(2): Federal Government reviews the savings figures and reports to the Bundestag on post-2030 targets",
+   "evidence": {
+    "provision": "§ 4 Abs. 2 Satz 2",
+    "quote": "Die Energieeinspargrößen nach Satz 1 wird die Bundesregierung im Jahr 2027 überprüfen"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "jeweils zu Beginn seiner Wahlperiode",
+   "anchor": "start of each Bundestag electoral term",
+   "applies_to": "§ 1(2): Federal Government reports to the Bundestag on the effects of the act",
+   "evidence": {
+    "provision": "§ 1 Abs. 2",
+    "quote": "Die Bundesregierung wird dem Deutschen Bundestag jeweils zu Beginn seiner Wahlperiode über die Wirkung dieses Gesetzes berichten."
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "power_capacity",
+   "variable_text": "nicht redundante elektrische Nennanschlussleistung",
+   "operator": ">=",
+   "value": 300,
+   "value_text": "ab 300 Kilowatt",
+   "unit": "kW",
+   "currency": null,
+   "indexed": false,
+   "measurement": "Non-redundant nominal electrical connected load of the structure(s) (lit. a) and of power-distribution, environmental-control and resilience installations (lit. b), each stated as from 300 kW",
+   "level": "facility",
+   "trigger": "scope_definition",
+   "consequence": "The facility is a 'Rechenzentrum' and falls under §§ 11-15 and Anlage 3",
+   "conditions": "Central housing, interconnection and operation of IT and network telecom equipment for data storage, processing and transport; network nodes that mainly connect other data centres without processing data are excluded (lit. c)",
+   "evidence": {
+    "provision": "§ 3 Nr. 24 lit. a",
+    "quote": "zur Erbringung von Datenspeicher-, Datenverarbeitungs- und Datentransportdiensten mit einer nicht redundanten elektrischen Nennanschlussleistung ab 300 Kilowatt"
+   }
+  },
+  {
+   "variable": "power_capacity",
+   "variable_text": "nicht redundante Nennanschlussleistung (Informationstechnik)",
+   "operator": ">=",
+   "value": 50,
+   "value_text": "ab 50 Kilowatt",
+   "unit": "kW",
+   "currency": null,
+   "indexed": false,
+   "measurement": "Non-redundant nominal connected load of the IT that a person maintains (as owner or with comparable use rights) inside a data centre it does not itself operate",
+   "level": "other",
+   "trigger": "scope_definition",
+   "consequence": "The person is a 'Betreiber von Informationstechnik' (IT operator, e.g. a colocation customer) bound by § 12(5)",
+   "evidence": {
+    "provision": "§ 3 Nr. 4",
+    "quote": "wer Informationstechnik innerhalb eines Rechenzentrums mit einer nicht redundanten Nennanschlussleistung ab 50 Kilowatt entweder als Eigentümer oder mit vergleichbaren Nutzungsrechten unterhält"
+   }
+  },
+  {
+   "variable": "energy_efficiency",
+   "variable_text": "Energieverbrauchseffektivität",
+   "operator": "<=",
+   "value": 1.5,
+   "value_text": "kleiner oder gleich 1,5",
+   "unit": "PUE (ratio of total data-centre energy to IT energy, DIN EN 50600-4-2)",
+   "currency": null,
+   "indexed": false,
+   "measurement": "Annual average, to be reached permanently",
+   "level": "facility",
+   "trigger": "obligation",
+   "consequence": "Maximum PUE from 1 July 2027 for data centres that started operation before 1 July 2026",
+   "conditions": "Data centre started operation before 1 July 2026",
+   "evidence": {
+    "provision": "§ 11 Abs. 1 Nr. 1",
+    "quote": "ab dem 1. Juli 2027 eine Energieverbrauchseffektivität von kleiner oder gleich 1,5"
+   }
+  },
+  {
+   "variable": "energy_efficiency",
+   "variable_text": "Energieverbrauchseffektivität",
+   "operator": "<=",
+   "value": 1.3,
+   "value_text": "kleiner oder gleich 1,3",
+   "unit": "PUE (DIN EN 50600-4-2)",
+   "currency": null,
+   "indexed": false,
+   "measurement": "Annual average, to be reached permanently",
+   "level": "facility",
+   "trigger": "obligation",
+   "consequence": "Maximum PUE from 1 July 2030 for data centres that started operation before 1 July 2026",
+   "conditions": "Data centre started operation before 1 July 2026",
+   "evidence": {
+    "provision": "§ 11 Abs. 1 Nr. 2",
+    "quote": "ab dem 1. Juli 2030 eine Energieverbrauchseffektivität von kleiner oder gleich 1,3 im Jahresdurchschnitt dauerhaft erreichen"
+   }
+  },
+  {
+   "variable": "energy_efficiency",
+   "variable_text": "Energieverbrauchseffektivität",
+   "operator": "<=",
+   "value": 1.2,
+   "value_text": "kleiner oder gleich 1,2",
+   "unit": "PUE (DIN EN 50600-4-2)",
+   "currency": null,
+   "indexed": false,
+   "measurement": "Annual average, reached permanently at the latest two years after commissioning; electricity for installations used solely to upgrade the data centre's waste heat is excluded from the calculation",
+   "level": "facility",
+   "trigger": "obligation",
+   "consequence": "Maximum PUE for data centres starting operation from 1 July 2026",
+   "conditions": "Data centre starts operation on or after 1 July 2026",
+   "evidence": {
+    "provision": "§ 11 Abs. 2 Satz 1 Nr. 1",
+    "quote": "eine Energieverbrauchseffektivität von kleiner oder gleich 1,2 erreichen"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "Anteil an wiederverwendeter Energie nach DIN EN 50600-4-6",
+   "operator": ">=",
+   "value": 10,
+   "value_text": "von mindestens 10 Prozent",
+   "unit": "percent (energy reuse factor, DIN EN 50600-4-6)",
+   "currency": null,
+   "indexed": false,
+   "measurement": "Annual average, reached permanently at the latest two years after commissioning",
+   "level": "facility",
+   "trigger": "obligation",
+   "consequence": "Minimum reused-energy share for data centres starting operation from 1 July 2026",
+   "conditions": "Data centre starts operation on or after 1 July 2026; not applicable where a § 11(3) exemption is proven",
+   "evidence": {
+    "provision": "§ 11 Abs. 2 Satz 1 Nr. 2",
+    "quote": "einen Anteil an wiederverwendeter Energie nach DIN EN 50600-4-6, Ausgabe November 2020 von mindestens 10 Prozent aufweisen"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "geplanter Anteil an wiederverwendeter Energie",
+   "operator": ">=",
+   "value": 15,
+   "value_text": "von mindestens 15 Prozent",
+   "unit": "percent (planned reused-energy share)",
+   "currency": null,
+   "indexed": false,
+   "measurement": "Planned share; annual average reached permanently at the latest two years after commissioning",
+   "level": "facility",
+   "trigger": "obligation",
+   "consequence": "Minimum planned reused-energy share for data centres starting operation from 1 July 2027",
+   "conditions": "Data centre starts operation on or after 1 July 2027; § 11(3) exemptions apply",
+   "evidence": {
+    "provision": "§ 11 Abs. 2 Satz 1 Nr. 2",
+    "quote": "müssen einen geplanten Anteil an wiederverwendeter Energie von mindestens 15 Prozent aufweisen"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "geplanter Anteil an wiederverwendeter Energie",
+   "operator": ">=",
+   "value": 20,
+   "value_text": "von mindestens 20 Prozent",
+   "unit": "percent (planned reused-energy share)",
+   "currency": null,
+   "indexed": false,
+   "measurement": "Planned share; annual average reached permanently at the latest two years after commissioning",
+   "level": "facility",
+   "trigger": "obligation",
+   "consequence": "Minimum planned reused-energy share for data centres starting operation from 1 July 2028",
+   "conditions": "Data centre starts operation on or after 1 July 2028; § 11(3) exemptions apply",
+   "evidence": {
+    "provision": "§ 11 Abs. 2 Satz 1 Nr. 2",
+    "quote": "Rechenzentren, die ab dem 1. Juli 2028 den Betrieb aufnehmen, müssen einen geplanten Anteil an wiederverwendeter Energie von mindestens 20 Prozent aufweisen"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "Stromverbrauch bilanziell durch Strom aus erneuerbaren Energien",
+   "operator": ">=",
+   "value": 50,
+   "value_text": "zu 50 Prozent",
+   "unit": "percent of electricity consumption",
+   "currency": null,
+   "indexed": false,
+   "measurement": "Balance-sheet (bilanziell) coverage of the data centres' electricity consumption",
+   "level": "facility",
+   "trigger": "obligation",
+   "consequence": "Minimum renewable-electricity coverage from 1 January 2024",
+   "evidence": {
+    "provision": "§ 11 Abs. 5 Nr. 1",
+    "quote": "ab dem 1. Januar 2024 zu 50 Prozent durch Strom aus erneuerbaren Energien"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "Stromverbrauch bilanziell durch Strom aus erneuerbaren Energien",
+   "operator": "=",
+   "value": 100,
+   "value_text": "zu 100 Prozent",
+   "unit": "percent of electricity consumption",
+   "currency": null,
+   "indexed": false,
+   "measurement": "Balance-sheet (bilanziell) coverage of the data centres' electricity consumption",
+   "level": "facility",
+   "trigger": "obligation",
+   "consequence": "Full renewable-electricity coverage from 1 January 2027",
+   "evidence": {
+    "provision": "§ 11 Abs. 5 Nr. 2",
+    "quote": "ab dem 1. Januar 2027 zu 100 Prozent durch Strom aus erneuerbaren Energien"
+   }
+  },
+  {
+   "variable": "power_capacity",
+   "variable_text": "nicht redundante Nennanschlussleistung",
+   "operator": ">=",
+   "value": 1,
+   "value_text": "ab 1 Megawatt",
+   "unit": "MW",
+   "currency": null,
+   "indexed": false,
+   "measurement": "Non-redundant nominal connected load of the data centre",
+   "level": "facility",
+   "trigger": "obligation",
+   "consequence": "Management system must be validated or certified from 1 January 2026",
+   "evidence": {
+    "provision": "§ 12 Abs. 3",
+    "quote": "Für Rechenzentren mit einer nicht redundanten Nennanschlussleistung ab 1 Megawatt"
+   }
+  },
+  {
+   "variable": "power_capacity",
+   "variable_text": "nicht redundante Nennanschlussleistung",
+   "operator": ">=",
+   "value": 300,
+   "value_text": "ab 300 Kilowatt",
+   "unit": "kW",
+   "currency": null,
+   "indexed": false,
+   "measurement": "Non-redundant nominal connected load of the data centre",
+   "level": "facility",
+   "trigger": "obligation",
+   "consequence": "Management system must be validated or certified from 1 January 2026 for publicly owned data centres or those operated for public bodies",
+   "conditions": "Data centre owned by public bodies (öffentliche Träger) or operated for them",
+   "evidence": {
+    "provision": "§ 12 Abs. 3",
+    "quote": "für Rechenzentren, die im Eigentum öffentlicher Träger stehen oder für diese betrieben werden, mit einer nicht redundanten Nennanschlussleistung ab 300 Kilowatt"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "Anteil der wiederverwendeten Energie, der über ein Wärmenetz aufgenommen wird",
+   "operator": ">=",
+   "value": 50,
+   "value_text": "zu einem Anteil von mindestens 50 Prozent",
+   "unit": "percent of reused energy taken up via a heat network",
+   "currency": null,
+   "indexed": false,
+   "measurement": "Share of the data centre's reused energy taken up for use via a heat network",
+   "level": "facility",
+   "trigger": "exemption",
+   "consequence": "Exempt from the § 12(1) duty to set up a management system",
+   "conditions": "Jointly with average annual total final energy consumption not exceeding 7.5 GWh",
+   "evidence": {
+    "provision": "§ 12 Abs. 4",
+    "quote": "Rechenzentren, deren wiederverwendete Energie zur Nutzung über ein Wärmenetz zu einem Anteil von mindestens 50 Prozent aufgenommen wird"
+   }
+  },
+  {
+   "variable": "energy_consumption",
+   "variable_text": "jährlicher durchschnittlicher Gesamtendenergieverbrauch",
+   "operator": "<=",
+   "value": 7.5,
+   "value_text": "die Schwelle von 7,5 Gigawattstunden nicht überschreitet",
+   "unit": "GWh per year",
+   "currency": null,
+   "indexed": false,
+   "measurement": "Annual average over the last three completed calendar years; the text attributes the consumption to the data centre ('ihr')",
+   "level": "facility",
+   "trigger": "exemption",
+   "consequence": "Exempt from the § 12(1) duty to set up a management system (the § 8 duty stays unaffected, § 12(1) 'Unbeschadet von § 8')",
+   "conditions": "Jointly with at least 50% of reused energy taken up via a heat network",
+   "evidence": {
+    "provision": "§ 12 Abs. 4",
+    "quote": "wenn ihr jährlicher durchschnittlicher Gesamtendenergieverbrauch innerhalb der letzten drei abgeschlossenen Kalenderjahre die Schwelle von 7,5 Gigawattstunden nicht überschreitet"
+   }
+  },
+  {
+   "variable": "power_capacity",
+   "variable_text": "nicht redundante Nennanschlussleistung der Informationstechnik",
+   "operator": ">=",
+   "value": 500,
+   "value_text": "ab 500 Kilowatt",
+   "unit": "kW",
+   "currency": null,
+   "indexed": false,
+   "measurement": "Non-redundant nominal connected load of the IT operator's equipment",
+   "level": "other",
+   "trigger": "obligation",
+   "consequence": "IT operator's management system must be validated or certified from 1 January 2026",
+   "evidence": {
+    "provision": "§ 12 Abs. 5 Satz 2",
+    "quote": "Für Betreiber von Informationstechnik mit einer nicht redundanten Nennanschlussleistung der Informationstechnik ab 500 Kilowatt"
+   }
+  },
+  {
+   "variable": "power_capacity",
+   "variable_text": "nicht redundante Nennanschlussleistung der Informationstechnik",
+   "operator": ">=",
+   "value": 300,
+   "value_text": "ab 300 Kilowatt",
+   "unit": "kW",
+   "currency": null,
+   "indexed": false,
+   "measurement": "Non-redundant nominal connected load of the IT operator's equipment",
+   "level": "other",
+   "trigger": "obligation",
+   "consequence": "Validation or certification duty from 1 January 2026 for IT operated on behalf of public bodies",
+   "conditions": "IT operator operates on behalf of public bodies (im Auftrag öffentlicher Träger)",
+   "evidence": {
+    "provision": "§ 12 Abs. 5 Satz 3",
+    "quote": "besteht die Pflicht nach Satz 2 zur Validierung oder Zertifizierung ab einer nicht redundanten Nennanschlussleistung der Informationstechnik ab 300 Kilowatt"
+   }
+  },
+  {
+   "variable": "power_capacity",
+   "variable_text": "nicht redundante Nennanschlussleistung",
+   "operator": ">=",
+   "value": 500,
+   "value_text": "ab einer nicht redundanten Nennanschlussleistung von 500 Kilowatt",
+   "unit": "kW",
+   "currency": null,
+   "indexed": false,
+   "measurement": "Non-redundant nominal connected load of the data centre",
+   "level": "facility",
+   "trigger": "obligation",
+   "consequence": "First § 13(1) transmission due by 15 May 2024",
+   "evidence": {
+    "provision": "§ 20 Abs. 2 Nr. 1",
+    "quote": "ab einer nicht redundanten Nennanschlussleistung von 500 Kilowatt spätestens zum 15. Mai 2024 zu übermitteln"
+   }
+  },
+  {
+   "variable": "power_capacity",
+   "variable_text": "nicht redundante Nennanschlussleistung",
+   "operator": "range",
+   "value": 200,
+   "value_max": 500,
+   "value_text": "ab einer nicht redundanten Nennanschlussleistung von 200 Kilowatt bis unter 500 Kilowatt",
+   "unit": "kW",
+   "currency": null,
+   "indexed": false,
+   "measurement": "Non-redundant nominal connected load of the data centre; lower bound inclusive, upper bound exclusive",
+   "level": "facility",
+   "trigger": "obligation",
+   "consequence": "First § 13(1) transmission due by 1 July 2025",
+   "conditions": "The lower bound (200 kW) is below the 300 kW data-centre definition in § 3 No. 24; see notes",
+   "evidence": {
+    "provision": "§ 20 Abs. 2 Nr. 2",
+    "quote": "ab einer nicht redundanten Nennanschlussleistung von 200 Kilowatt bis unter 500 Kilowatt spätestens zum 1. Juli 2025 zu übermitteln"
+   }
+  },
+  {
+   "variable": "energy_consumption",
+   "variable_text": "jährlicher durchschnittlicher Gesamtendenergieverbrauch",
+   "operator": ">",
+   "value": 7.5,
+   "value_text": "von mehr als 7,5 Gigawattstunden",
+   "unit": "GWh per year",
+   "currency": null,
+   "indexed": false,
+   "measurement": "Annual average total final energy consumption over the last three completed calendar years",
+   "level": "entity",
+   "trigger": "obligation",
+   "consequence": "Firm must set up an energy or environmental management system with the § 8(3) additional requirements",
+   "evidence": {
+    "provision": "§ 8 Abs. 1",
+    "quote": "Unternehmen mit einem jährlichen durchschnittlichen Gesamtendenergieverbrauch innerhalb der letzten drei abgeschlossenen Kalenderjahre von mehr als 7,5 Gigawattstunden sind verpflichtet, ein Energie- oder Umweltmanagementsystem"
+   }
+  },
+  {
+   "variable": "energy_consumption",
+   "variable_text": "jährlicher durchschnittlicher Gesamtendenergieverbrauch",
+   "operator": ">",
+   "value": 2.5,
+   "value_text": "von mehr als 2,5 Gigawattstunden",
+   "unit": "GWh per year",
+   "currency": null,
+   "indexed": false,
+   "measurement": "Annual average total final energy consumption over the last three completed calendar years",
+   "level": "entity",
+   "trigger": "obligation",
+   "consequence": "Firm must prepare, have confirmed and publish implementation plans for economic savings measures",
+   "evidence": {
+    "provision": "§ 9 Satz 1",
+    "quote": "Unternehmen mit einem jährlichen durchschnittlichen Gesamtendenergieverbrauch innerhalb der letzten drei abgeschlossenen Kalenderjahre von mehr als 2,5 Gigawattstunden sind verpflichtet"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "positiver Kapitalwert nach maximal 50 Prozent der Nutzungsdauer",
+   "operator": "<=",
+   "value": 50,
+   "value_text": "nach maximal 50 Prozent der Nutzungsdauer",
+   "unit": "percent of useful life",
+   "currency": null,
+   "indexed": false,
+   "measurement": "Economic assessment under DIN EN 17463; useful life from the Federal Ministry of Finance depreciation tables",
+   "level": "product",
+   "trigger": "scope_definition",
+   "consequence": "A savings measure counts as economic ('wirtschaftlich') and must be covered by the § 9 implementation plan",
+   "conditions": "Measure's useful life of at most 15 years",
+   "evidence": {
+    "provision": "§ 9 Satz 2",
+    "quote": "nach maximal 50 Prozent der Nutzungsdauer ein positiver Kapitalwert ergibt"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "Nutzungsdauer",
+   "operator": "<=",
+   "value": 15,
+   "value_text": "Nutzungsdauer von maximal 15 Jahren",
+   "unit": "years",
+   "currency": null,
+   "indexed": false,
+   "measurement": "Useful life from the Federal Ministry of Finance depreciation tables",
+   "level": "product",
+   "trigger": "scope_definition",
+   "consequence": "Only measures with a useful life of at most 15 years can count as economic under § 9",
+   "evidence": {
+    "provision": "§ 9 Satz 2",
+    "quote": "jedoch begrenzt auf Maßnahmen mit einer Nutzungsdauer von maximal 15 Jahren"
+   }
+  },
+  {
+   "variable": "energy_consumption",
+   "variable_text": "jährlicher durchschnittlicher Gesamtendenergieverbrauch",
+   "operator": "<=",
+   "value": 2.5,
+   "value_text": "von 2,5 Gigawattstunden oder weniger",
+   "unit": "GWh per year",
+   "currency": null,
+   "indexed": false,
+   "measurement": "Annual average over the last three completed calendar years",
+   "level": "entity",
+   "trigger": "exemption",
+   "consequence": "Exempt from the waste-heat avoidance and reuse duties of § 16(1)-(2)",
+   "evidence": {
+    "provision": "§ 16 Abs. 4",
+    "quote": "Unternehmen, die einen jährlichen durchschnittlichen Gesamtendenergieverbrauch innerhalb der letzten drei abgeschlossenen Kalenderjahre Jahre von 2,5 Gigawattstunden oder weniger haben"
+   }
+  },
+  {
+   "variable": "energy_consumption",
+   "variable_text": "jährlicher durchschnittlicher Gesamtendenergieverbrauch",
+   "operator": "<=",
+   "value": 2.5,
+   "value_text": "von 2,5 Gigawattstunden oder weniger",
+   "unit": "GWh per year",
+   "currency": null,
+   "indexed": false,
+   "measurement": "Annual average over the last three completed calendar years",
+   "level": "entity",
+   "trigger": "exemption",
+   "consequence": "Exempt from the waste-heat information duty on request (§ 17(1)) and annual reporting (§ 17(2))",
+   "evidence": {
+    "provision": "§ 17 Abs. 4",
+    "quote": "Ausgenommen von der Auskunftspflicht nach Absatz 1 und der Pflicht zur Berichterstattung nach Absatz 2 Satz 1 sind Unternehmen"
+   }
+  },
+  {
+   "variable": "energy_consumption",
+   "variable_text": "jährlicher Gesamtendenergieverbrauch",
+   "operator": ">=",
+   "value": 1,
+   "value_text": "von 1 Gigawattstunde oder mehr",
+   "unit": "GWh per year",
+   "currency": null,
+   "indexed": false,
+   "measurement": "Annual total final energy consumption of the public body; previous year's consumption is the reference for savings",
+   "level": "entity",
+   "trigger": "obligation",
+   "consequence": "Public body must save 2% of final energy consumption per year until 2045",
+   "evidence": {
+    "provision": "§ 6 Abs. 1 Satz 1",
+    "quote": "Öffentliche Stellen mit einem jährlichen Gesamtendenergieverbrauch von 1 Gigawattstunde oder mehr"
+   }
+  },
+  {
+   "variable": "energy_consumption",
+   "variable_text": "jährlicher durchschnittlicher Gesamtendenergieverbrauch",
+   "operator": ">=",
+   "value": 3,
+   "value_text": "3 Gigawattstunden oder mehr",
+   "unit": "GWh per year",
+   "currency": null,
+   "indexed": false,
+   "measurement": "Annual average over the last three completed calendar years before 17 November 2023",
+   "level": "entity",
+   "trigger": "obligation",
+   "consequence": "Public body must set up an energy or environmental management system by 30 June 2026",
+   "evidence": {
+    "provision": "§ 6 Abs. 4 Nr. 1",
+    "quote": "3 Gigawattstunden oder mehr sind verpflichtet, ein Energie- oder Umweltmanagementsystem bis zum Ablauf des 30. Juni 2026 einzurichten"
+   }
+  },
+  {
+   "variable": "energy_consumption",
+   "variable_text": "jährlicher durchschnittlicher Gesamtendenergieverbrauch",
+   "operator": "range",
+   "value": 1,
+   "value_max": 3,
+   "value_text": "1 Gigawattstunde bis unter 3 Gigawattstunden",
+   "unit": "GWh per year",
+   "currency": null,
+   "indexed": false,
+   "measurement": "Annual average over the last three completed calendar years before 17 November 2023; upper bound exclusive",
+   "level": "entity",
+   "trigger": "obligation",
+   "consequence": "Public body must set up a simplified energy management system by 30 June 2026",
+   "evidence": {
+    "provision": "§ 6 Abs. 4 Nr. 2",
+    "quote": "1 Gigawattstunde bis unter 3 Gigawattstunden sind verpflichtet, ein vereinfachtes Energiemanagementsystem bis zum Ablauf des 30. Juni 2026 einzurichten"
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "other",
+   "addressee": "data_center_operator",
+   "summary": "Data centres that started operation before 1 July 2026 must be built and operated to reach an annual-average PUE of at most 1.5 from 1 July 2027 and 1.3 from 1 July 2030.",
+   "applies_from": "2027-07-01",
+   "conditional_on": "Exemptions for climate-neutral firms may be set by ordinance under § 18",
+   "evidence": {
+    "provision": "§ 11 Abs. 1",
+    "quote": "Rechenzentren, die vor dem 1. Juli 2026 den Betrieb aufnehmen oder aufgenommen haben, sind so zu errichten und zu betreiben, dass sie"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_center_operator",
+   "summary": "Data centres starting operation from 1 July 2026 must reach PUE of at most 1.2 and a reused-energy share of at least 10% (planned 15% from July 2027 and 20% from July 2028 vintages), permanently as annual average within two years of commissioning.",
+   "applies_from": "2026-07-01",
+   "conditional_on": "Reused-energy share not required where the operator proves a § 11(3) case (subsequent events without fault, heat-network agreement, or offer at cost not accepted within six months)",
+   "evidence": {
+    "provision": "§ 11 Abs. 2",
+    "quote": "Die Anforderungen nach Satz 1 sind spätestens zwei Jahre nach Inbetriebnahme im Jahresdurchschnitt dauerhaft zu erreichen."
+   }
+  },
+  {
+   "type": "eligibility_condition",
+   "addressee": "data_center_operator",
+   "summary": "To be relieved of the reused-energy share, the operator must prove one of three cases: shortfall from later events without fault, a qualifying waste-heat agreement with a municipality or heat-network operator (with investment plan, cost and price terms), or a heat-network operator not accepting an at-cost offer within six months.",
+   "applies_from": "2026-07-01",
+   "evidence": {
+    "provision": "§ 11 Abs. 3 Satz 1",
+    "quote": "Die Anforderungen nach Absatz 2 Satz 1 Nummer 2 sind nicht anzuwenden, wenn der Betreiber des Rechenzentrums nachweist, dass eine der nachfolgenden Voraussetzungen erfüllt ist"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "utility_grid_operator",
+   "summary": "A heat-network operator that receives an offer from a data-centre operator to use reused energy must inform the data-centre operator of the heat network's capacity.",
+   "applies_from": null,
+   "evidence": {
+    "provision": "§ 11 Abs. 3 Satz 2",
+    "quote": "Der Betreiber des Wärmenetzes, dem vom Betreiber des Rechenzentrums ein Angebot zur Nutzung wiederverwendeter Energie nach Satz 1 Nummer 3 unterbreitet wird, ist verpflichtet, den Betreiber des Rechenzentrums über die Kapazität des Wärmenetzes zu informieren."
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_center_operator",
+   "summary": "The general waste-heat avoidance and reuse duties of § 16 apply correspondingly to data centres, unless Section 4 sets more specific requirements.",
+   "applies_from": null,
+   "evidence": {
+    "provision": "§ 11 Abs. 4",
+    "quote": "Die Anforderungen nach § 16 sind für Rechenzentren entsprechend anzuwenden, soweit in diesem Abschnitt keine spezielleren Anforderungen gestellt sind."
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_center_operator",
+   "summary": "Data-centre operators must cover the electricity consumption of their data centres on a balance-sheet basis with renewable electricity: 50% from 1 January 2024 and 100% from 1 January 2027.",
+   "applies_from": "2024-01-01",
+   "evidence": {
+    "provision": "§ 11 Abs. 5",
+    "quote": "Betreiber von Rechenzentren decken den Stromverbrauch in ihren Rechenzentren bilanziell"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_center_operator",
+   "summary": "Data-centre operators must set up an energy or environmental management system by 1 July 2025, including continuous measurement of electrical power and energy demand of main components and measures to improve energy efficiency continuously.",
+   "applies_from": "2025-07-01",
+   "conditional_on": "Exempt if at least 50% of reused energy goes into a heat network and average consumption is at most 7.5 GWh (§ 12(4)), or if scheduled out of operation before 1 July 2027 (§ 12(6))",
+   "evidence": {
+    "provision": "§ 12 Abs. 1-2",
+    "quote": "kontinuierliche Messungen zur elektrischen Leistung und zum Energiebedarf der wesentlichen Komponenten des Rechenzentrums durchzuführen"
+   }
+  },
+  {
+   "type": "audit",
+   "addressee": "data_center_operator",
+   "summary": "From 1 January 2026, the management system must be validated or certified for data centres of 1 MW or more, and for publicly owned or publicly operated data centres of 300 kW or more.",
+   "applies_from": "2026-01-01",
+   "conditional_on": "Not applicable if scheduled out of operation before 1 July 2027 (§ 12(6))",
+   "evidence": {
+    "provision": "§ 12 Abs. 3",
+    "quote": "besteht ab dem 1. Januar 2026 die Pflicht zur Validierung oder Zertifizierung des Energie- oder Umweltmanagementsystems"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_center_occupant",
+   "summary": "IT operators (colocation customers maintaining IT of 50 kW or more) must meet the management-system requirements of § 12(1)-(2) correspondingly.",
+   "applies_from": "2025-07-01",
+   "conditional_on": "Not applicable if the IT is scheduled out of operation before 1 July 2027 (§ 12(6))",
+   "evidence": {
+    "provision": "§ 12 Abs. 5 Satz 1",
+    "quote": "Betreiber von Informationstechnik haben die Anforderungen nach den Absätzen 1 und 2 entsprechend zu erfüllen."
+   }
+  },
+  {
+   "type": "audit",
+   "addressee": "data_center_occupant",
+   "summary": "From 1 January 2026, IT operators with IT connected load of 500 kW or more (300 kW or more if operated on behalf of public bodies) must have their management system validated or certified.",
+   "applies_from": "2026-01-01",
+   "conditional_on": "Not applicable if the IT is scheduled out of operation before 1 July 2027 (§ 12(6))",
+   "evidence": {
+    "provision": "§ 12 Abs. 5 Satz 2-3",
+    "quote": "Für Betreiber von Informationstechnik, die im Auftrag öffentlicher Träger betrieben werden, besteht die Pflicht nach Satz 2 zur Validierung oder Zertifizierung"
+   }
+  },
+  {
+   "type": "eligibility_condition",
+   "addressee": "data_center_operator",
+   "summary": "To use the § 12(6) exemption for planned decommissioning before 1 July 2027, the data-centre or IT operator must provide corresponding evidence.",
+   "applies_from": null,
+   "evidence": {
+    "provision": "§ 12 Abs. 6 Satz 2",
+    "quote": "Entsprechende Nachweise sind vom Betreiber des Rechenzentrums oder der Informationstechnik zu erbringen."
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "data_center_operator",
+   "summary": "Data-centre operators must publish the Anlage 3 information about their data centre (identity, size class, location, floor area, connected load, electricity, renewable share, waste heat, data volume, PUE, reused energy, cooling and water efficiency) for the previous calendar year by 31 March each year.",
+   "applies_from": null,
+   "evidence": {
+    "provision": "§ 13 Abs. 1 Satz 1; Anlage 3",
+    "quote": "Informationen über ihr Rechenzentrum nach Maßgabe der Anlage 3 für das vorangegangene Kalenderjahr zu veröffentlichen"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "data_center_operator",
+   "summary": "Data-centre operators must transmit the Anlage 3 information to the Federation by 31 March each year, using the federal electronic template; first transmission by 15 May 2024 (500 kW or more) or 1 July 2025 (200 kW to under 500 kW).",
+   "applies_from": "2024-05-15",
+   "evidence": {
+    "provision": "§ 13 Abs. 1; § 20 Abs. 2",
+    "quote": "Betreiber von Rechenzentren haben die Informationen nach § 13 Absatz 1 Satz 1 erstmals"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "data_center_occupant",
+   "summary": "IT operators must provide information for 2023 to the Federation by 31 March 2024, preferably using the federal electronic template.",
+   "applies_from": "2024-03-31",
+   "evidence": {
+    "provision": "§ 20 Abs. 3",
+    "quote": "hierzu soll die vom Bund bereitgestellte elektronische Vorlage verwendet werden"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "data_center_operator",
+   "summary": "Data-centre operators offering services to third parties must show each customer the annual energy consumption directly attributable to that customer, from 1 January 2024.",
+   "applies_from": "2024-01-01",
+   "evidence": {
+    "provision": "§ 15",
+    "quote": "Bieten Betreiber von Rechenzentren Dienstleistungen für Dritte (Kunden) an"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "summary": "The Federal Government establishes an energy-efficiency register for data centres storing the § 13(1) information and transferring it to a European database on data centres.",
+   "applies_from": null,
+   "evidence": {
+    "provision": "§ 14",
+    "quote": "Die Bundesregierung errichtet ein Energieeffizienzregister für Rechenzentren"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "general_public",
+   "summary": "Firms (Unternehmen) averaging more than 7.5 GWh must set up an energy or environmental management system, including recording of energy flows and waste heat, identification of feasible savings and waste-heat measures, and economic assessment under DIN EN 17463; deadline 18 July 2025 or 20 months after reaching the status.",
+   "applies_from": "2025-07-18",
+   "conditional_on": "Until the system is set up (at most until the deadline), exempt from energy audits under § 8(1) EDL-G",
+   "evidence": {
+    "provision": "§ 8 Abs. 1-3",
+    "quote": "hat mindestens folgende zusätzliche Anforderungen als Teil des Energie- oder Umweltmanagementsystems zu erfüllen"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "general_public",
+   "summary": "Firms averaging more than 2.5 GWh must, within three years, prepare and publish concrete implementation plans for all savings measures identified as economic in their management systems or energy audits, confirmed beforehand by certifiers, environmental verifiers or energy auditors; trade secrets are excluded from publication.",
+   "applies_from": null,
+   "evidence": {
+    "provision": "§ 9",
+    "quote": "Unternehmen sind verpflichtet, sich die Vollständigkeit und Richtigkeit der nach Satz 1 erstellten Umsetzungspläne vor der Veröffentlichung durch Zertifizierer, Umweltgutachter oder Energieauditoren bestätigen zu lassen."
+   }
+  },
+  {
+   "type": "cooperation_with_authority",
+   "addressee": "general_public",
+   "summary": "Firms must, on request of the Bundesamt für Wirtschaft und Ausfuhrkontrolle in sample checks, submit Anlage 2 evidence within four weeks, and prove the § 9 confirmation via the authority's electronic template.",
+   "applies_from": null,
+   "evidence": {
+    "provision": "§ 10 Satz 2; § 9 Satz 5",
+    "quote": "Das Bundesamt für Wirtschaft und Ausfuhrkontrolle ist berechtigt, zu dem in Satz 1 genannten Zweck von Unternehmen die Vorlage von Nachweisen nach der Anlage 2"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "general_public",
+   "summary": "Firms must avoid waste heat according to the state of the art, reduce it to the technically unavoidable share, and reuse it, so far as possible and reasonable; installations requiring a BImSchG § 4 permit are excluded where more specific rules exist.",
+   "applies_from": null,
+   "conditional_on": "Not for firms averaging 2.5 GWh or less (§ 16(4))",
+   "evidence": {
+    "provision": "§ 16 Abs. 1-2",
+    "quote": "Unternehmen haben die anfallende Abwärme durch Maßnahmen und Techniken zur Energieeinsparung durch Abwärmenutzung wiederzuverwenden, soweit dies möglich und zumutbar ist."
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "general_public",
+   "summary": "Firms must, on request of heat-network or district-heating operators and other potential heat buyers, give information on their waste heat (name, site, annual heat quantity and maximum thermal output, time profiles, control options, average temperature).",
+   "applies_from": null,
+   "conditional_on": "Not for firms averaging 2.5 GWh or less (§ 17(4))",
+   "evidence": {
+    "provision": "§ 17 Abs. 1",
+    "quote": "Unternehmen sind auf Anfrage von Betreibern von Wärmenetzen oder Fernwärmeversorgungsunternehmen und sonstigen potenziellen wärmeabnehmenden Unternehmen verpflichtet, Auskunft zu geben"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "general_public",
+   "summary": "Firms must transmit the § 17(1) waste-heat information to the Bundesstelle für Energieeffizienz by 31 March each year and update it without delay on changes; first transmission by 1 January 2024.",
+   "applies_from": "2024-01-01",
+   "conditional_on": "Not for firms averaging 2.5 GWh or less (§ 17(4))",
+   "evidence": {
+    "provision": "§ 17 Abs. 2 Satz 1; § 20 Abs. 4",
+    "quote": "Unternehmen sind verpflichtet, unabhängig vom Vorliegen einer konkreten Anfrage die in Absatz 1 aufgeführten Informationen zu anfallender Abwärme an die Bundesstelle für Energieeffizienz"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "summary": "The Bundesstelle für Energieeffizienz publishes the waste-heat information on a public platform, protecting trade secrets; information whose publication would endanger public or national security is kept in a non-public area.",
+   "applies_from": null,
+   "evidence": {
+    "provision": "§ 17 Abs. 2 Satz 3; Abs. 3",
+    "quote": "Die Bundesstelle für Energieeffizienz stellt die übermittelten Informationen unter Wahrung von Betriebs- und Geschäftsgeheimnissen nach Satz 1 auf einer öffentlich zugänglichen Plattform für Abwärme übersichtlich bereit."
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "summary": "Public bodies using 1 GWh or more per year must cut final energy consumption by 2% per year until 2045 through individual measures, with shortfalls made up within two years.",
+   "applies_from": null,
+   "conditional_on": "Exclusions for research installations (§ 6(5)) and housing companies (§ 6(6))",
+   "evidence": {
+    "provision": "§ 6 Abs. 1-2",
+    "quote": "Bei Verfehlung des Ziels muss die Menge der nicht erbrachten Einsparung in den zwei jeweiligen Folgejahren eingespart werden."
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "summary": "Public bodies averaging 3 GWh or more must set up an energy or environmental management system, and those of 1 to under 3 GWh a simplified one, by 30 June 2026.",
+   "applies_from": "2026-06-30",
+   "evidence": {
+    "provision": "§ 6 Abs. 4",
+    "quote": "sind verpflichtet, ein vereinfachtes Energiemanagementsystem bis zum Ablauf des 30. Juni 2026 einzurichten"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "summary": "The Länder ensure implementation of the public-sector exemplary-role rules of Directive 2012/27/EU in their territory and report total final energy consumption of public bodies and municipalities by 1 November each year; federal public bodies report their data to the competent body.",
+   "applies_from": "2024",
+   "evidence": {
+    "provision": "§ 6 Abs. 7, Abs. 9",
+    "quote": "Die öffentlichen Stellen des Bundes sind verpflichtet, ihre Daten an die zuständige Stelle nach § 7 Absatz 1 und 2 Nummer 2 und 3 zu berichten."
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "summary": "The Federation must achieve new final-energy savings of at least 45 TWh per year, and the Länder at least 3 TWh per year (split by Anlage 1), through strategic measures from 2024 to 2030, with at least 5% benefiting households lacking means for essential energy services.",
+   "applies_from": "2024-01-01",
+   "evidence": {
+    "provision": "§ 5 Abs. 1-3",
+    "quote": "Strategische Maßnahmen nach den Absätzen 1 und 2 müssen zu einem Anteil von je mindestens 5 Prozent dazu beitragen, dass der Endenergieverbrauch von privaten Haushalten sinkt"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "regulator",
+   "summary": "The Bundesamt für Wirtschaft und Ausfuhrkontrolle, as Bundesstelle für Energieeffizienz, monitors savings duties, supplies reporting templates, supports the ministry, and builds and runs the waste-heat platform.",
+   "applies_from": null,
+   "evidence": {
+    "provision": "§ 7",
+    "quote": "Aufbau und Betrieb einer Plattform für Abwärme nach § 17 Absatz 2 und 3"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "regulator",
+   "summary": "The Bundesamt für Wirtschaft und Ausfuhrkontrolle must check by sampling the set-up and operation of firms' management systems and the preparation and publication of implementation plans.",
+   "applies_from": null,
+   "evidence": {
+    "provision": "§ 10 Satz 1",
+    "quote": "durch Stichproben bei den Unternehmen zu kontrollieren"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "summary": "The Federal Government reports to the Bundestag on the act's effects at the start of each electoral term, and reviews the savings figures and reports on post-2030 targets in 2027.",
+   "applies_from": null,
+   "evidence": {
+    "provision": "§ 1 Abs. 2; § 4 Abs. 2",
+    "quote": "dem Deutschen Bundestag einen Bericht zur Fortschreibung der Energieeffizienzziele für den Zeitraum nach 2030 vorlegen"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "summary": "The Federal Ministry of Defence reports, in aggregated and anonymised form, final energy consumption and savings of defence facilities not excluded under § 21(1) No. 2.",
+   "applies_from": null,
+   "evidence": {
+    "provision": "§ 21 Abs. 2",
+    "quote": "Das Bundesministerium der Verteidigung berichtet Endenergieverbräuche und -einsparungen"
+   }
+  }
+ ],
+ "enforcement": [
+  {
+   "sanction_type": "administrative_fine",
+   "authority": "Bundesamt für Wirtschaft und Ausfuhrkontrolle",
+   "triggered_by": "Intentional or negligent failure to set up a management system (§ 8(1), § 12(1), also with § 12(5)) or to build or operate a data centre as required by § 11(1) or (2) sentence 1 (§ 19(1) Nos. 1 and 5)",
+   "max_penalty_text": "mit einer Geldbuße bis zu hunderttausend Euro",
+   "max_penalty_amount": 100000,
+   "currency": "EUR",
+   "penalty_formula": null,
+   "penalty_reference": null,
+   "private_right_of_action": false,
+   "cure_period": null,
+   "evidence": {
+    "provision": "§ 19 Abs. 1 Nr. 1, 5; Abs. 2; Abs. 3",
+    "quote": "entgegen § 11 Absatz 1 oder 2 Satz 1 ein Rechenzentrum nicht richtig errichtet oder nicht richtig betreibt"
+   }
+  },
+  {
+   "sanction_type": "administrative_fine",
+   "authority": "Not designated in this text (§ 19(3) excludes No. 7 from the Bundesamt für Wirtschaft und Ausfuhrkontrolle's competence)",
+   "triggered_by": "Intentional or negligent failure to avoid or reduce waste heat contrary to § 16(1) sentence 1 (§ 19(1) No. 7)",
+   "max_penalty_text": "mit einer Geldbuße bis zu hunderttausend Euro",
+   "max_penalty_amount": 100000,
+   "currency": "EUR",
+   "penalty_formula": null,
+   "penalty_reference": null,
+   "private_right_of_action": false,
+   "cure_period": null,
+   "evidence": {
+    "provision": "§ 19 Abs. 1 Nr. 7; Abs. 2; Abs. 3",
+    "quote": "ist das Bundesamt für Wirtschaft und Ausfuhrkontrolle, ausgenommen hiervon ist Absatz 1 Nummer 7"
+   }
+  },
+  {
+   "sanction_type": "administrative_fine",
+   "authority": "Bundesamt für Wirtschaft und Ausfuhrkontrolle",
+   "triggered_by": "Intentional or negligent breach of the implementation-plan duties (§ 9), an enforceable order under § 10 sentence 2, the data-centre information duty (§ 13(1) sentence 1), or the waste-heat information and reporting duties (§ 17(1), (2) sentence 1) (§ 19(1) Nos. 2-4, 6, 8, 9)",
+   "max_penalty_text": "in den übrigen Fällen mit einer Geldbuße bis zu fünfzigtausend Euro",
+   "max_penalty_amount": 50000,
+   "currency": "EUR",
+   "penalty_formula": null,
+   "penalty_reference": null,
+   "private_right_of_action": false,
+   "cure_period": null,
+   "evidence": {
+    "provision": "§ 19 Abs. 1 Nr. 6; Abs. 2",
+    "quote": "entgegen § 13 Absatz 1 Satz 1 eine Information nicht, nicht richtig, nicht vollständig oder nicht rechtzeitig übermittelt"
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "Rechenzentrum (data centre)",
+   "evidence": {
+    "provision": "§ 3 Nr. 24",
+    "quote": "eine Struktur oder eine Gruppe von Strukturen für die zentrale Unterbringung, die zentrale Verbindung und den zentralen Betrieb von Informationstechnologie- und Netzwerk-Telekommunikationsausrüstungen"
+   }
+  },
+  {
+   "term": "Netzknoten (network node, excluded from data-centre rules)",
+   "evidence": {
+    "provision": "§ 3 Nr. 24 lit. c",
+    "quote": "ausgenommen von den Regelungen sind Rechenzentren, die dem Anschluss oder der Verbindung von anderen Rechenzentren dienen und die überwiegend keine Verarbeitung der Daten vornehmen (Netzknoten)"
+   }
+  },
+  {
+   "term": "Betreiber eines Rechenzentrums (data-centre operator)",
+   "evidence": {
+    "provision": "§ 3 Nr. 3",
+    "quote": "wer entweder Eigentümer des Rechenzentrums oder der Flächen zur Co-Lokation ist oder vergleichbare Nutzungsrechte hat"
+   }
+  },
+  {
+   "term": "Betreiber von Informationstechnik (IT operator)",
+   "evidence": {
+    "provision": "§ 3 Nr. 4",
+    "quote": "ohne selbst Betreiber des Rechenzentrums zu sein, in dem die Informationstechnik unterhalten wird"
+   }
+  },
+  {
+   "term": "Co-Lokation (colocation)",
+   "evidence": {
+    "provision": "§ 3 Nr. 6",
+    "quote": "eine Dienstleistung innerhalb eines Rechenzentrums, die darin besteht, technische Infrastruktur bereitzustellen, innerhalb derer Kunden ihre eigene Informationstechnik betreiben können"
+   }
+  },
+  {
+   "term": "Energieverbrauchseffektivität (PUE)",
+   "evidence": {
+    "provision": "§ 3 Nr. 15",
+    "quote": "eine Kennzahl für die Energieeffektivität der Infrastruktur eines Rechenzentrums, das das Verhältnis des jährlichen Energiebedarfs des gesamten Rechenzentrums zum Energiebedarf der Informationstechnik beschreibt"
+   }
+  },
+  {
+   "term": "Energiemanagementsystem (energy management system)",
+   "evidence": {
+    "provision": "§ 3 Nr. 16",
+    "quote": "ein System, das den Anforderungen der DIN EN ISO 50001, Ausgabe Dezember 2018"
+   }
+  },
+  {
+   "term": "Umweltmanagementsystem (environmental management system)",
+   "evidence": {
+    "provision": "§ 3 Nr. 29",
+    "quote": "Umweltmanagementsystem: ein System nach der Verordnung (EG) Nr. 1221/2009"
+   }
+  },
+  {
+   "term": "vereinfachtes Energiemanagementsystem (simplified energy management system)",
+   "evidence": {
+    "provision": "§ 3 Nr. 30",
+    "quote": "ein System, das den Anforderungen von Level 2 der ISO 50005, Ausgabe September 2021"
+   }
+  },
+  {
+   "term": "Öffentliche Stellen (public bodies)",
+   "evidence": {
+    "provision": "§ 3 Nr. 22",
+    "quote": "Behörden, Organe der Rechtspflege und andere öffentlich-rechtlich organisierte Einrichtungen, Körperschaften, Anstalten und Stiftungen des öffentlichen Rechts des Bundes oder der Länder sowie deren Vereinigungen"
+   }
+  },
+  {
+   "term": "Gesamtendenergieverbrauch (total final energy consumption)",
+   "evidence": {
+    "provision": "§ 3 Nr. 19",
+    "quote": "ist die Gesamtmenge an Endenergie, die über alle Sektoren in einem vorgegebenen Zeitraum verbraucht wurde"
+   }
+  },
+  {
+   "term": "Endenergie (final energy)",
+   "evidence": {
+    "provision": "§ 3 Nr. 8",
+    "quote": "derjenige Teil der eingesetzten Primärenergie, der den Verbrauchern nach Abzug von Energiewandlungs- und Übertragungsverlusten zur Verfügung steht"
+   }
+  },
+  {
+   "term": "technisch unvermeidbare Abwärme (technically unavoidable waste heat)",
+   "evidence": {
+    "provision": "§ 3 Nr. 27",
+    "quote": "der Teil der Abwärme, der aufgrund thermodynamischer Gesetzmäßigkeiten entsteht und nicht durch Anwendung des Standes der Technik, mit vertretbarem Aufwand, vermieden oder reduziert werden kann"
+   }
+  },
+  {
+   "term": "technisch vermeidbare Abwärme (technically avoidable waste heat)",
+   "evidence": {
+    "provision": "§ 3 Nr. 28",
+    "quote": "der Teil der Abwärme, der durch ineffiziente Technik, Steuerung, Prozesse und Verfahren entsteht"
+   }
+  },
+  {
+   "term": "Maßnahme zur Abwärmenutzung (waste-heat use measure)",
+   "evidence": {
+    "provision": "§ 3 Nr. 21",
+    "quote": "jede Technik zur Rückgewinnung und Wiederverwendung industrieller Abwärme, beispielsweise als Wärme, Kälte sowie mechanische und elektrische Energie"
+   }
+  },
+  {
+   "term": "Energieaudit (energy audit)",
+   "evidence": {
+    "provision": "§ 3 Nr. 12",
+    "quote": "ein systematisches Verfahren, um Maßnahmen zur Steigerung der Energieeffizienz und zur Reduzierung des Energieverbrauchs in einem Unternehmen festzustellen"
+   }
+  }
+ ],
+ "relations": [
+  {
+   "relation": "transposes",
+   "target_instrument_id": null,
+   "target_text": "Directive 2012/27/EU on energy efficiency, as amended by Directive (EU) 2019/944",
+   "note": "The text names Directive 2012/27/EU (CELEX 32012L0027) 'in der jeweils geltenden Fassung'; it does not name the 2023 recast (Directive (EU) 2023/1791, registry id eu-energy-efficiency-directive-2023). Whether the act transposes the recast is left for the resolve stage.",
+   "evidence": {
+    "provision": "Footnote 1 to title",
+    "quote": "Dieses Gesetz dient der Umsetzung der Richtlinie 2012/27/EU des Europäischen Parlaments und des Rates vom 25. Oktober 2012 zur Energieeffizienz"
+   }
+  },
+  {
+   "relation": "enacted_by_bill",
+   "target_instrument_id": null,
+   "target_text": "Gesetz vom 13. November 2023 (BGBl. 2023 I Nr. 309), Article 1",
+   "note": "Entry into force under Article 3 of that act",
+   "evidence": {
+    "provision": "Portal footnote",
+    "quote": "Das G wurde als Artikel 1 des G v. 13.11.2023 I Nr. 309 vom Bundestag beschlossen."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": null,
+   "target_text": "Gesetz über Energiedienstleistungen und andere Energieeffizienzmaßnahmen (EDL-G) of 4 November 2010, § 8",
+   "note": "Firms under § 8(2) are exempt from EDL-G energy audits until their management system is set up; § 9 implementation plans also cover EDL-G management systems and audits",
+   "evidence": {
+    "provision": "§ 8 Abs. 2 Satz 3; § 9 Satz 1 Nr. 2-3",
+    "quote": "von der Verpflichtung zur Durchführung von Energieaudits nach § 8 Absatz 1 des Gesetzes über Energiedienstleistungen und andere Effizienzmaßnahmen befreit"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": null,
+   "target_text": "Bundes-Immissionsschutzgesetz (BImSchG), § 4",
+   "note": "Waste-heat duties of § 16(1)-(2) do not apply to installations requiring a BImSchG permit where more specific BImSchG rules exist",
+   "evidence": {
+    "provision": "§ 16 Abs. 3",
+    "quote": "sind nicht auf Anlagen anzuwenden, die nach § 4 des Bundes-Immissionsschutzgesetzes"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": null,
+   "target_text": "Directive 2010/75/EU on industrial emissions (BAT conclusions)",
+   "note": "BAT conclusions on waste heat inform the state of the art under § 16(1)",
+   "evidence": {
+    "provision": "§ 16 Abs. 1 Satz 3",
+    "quote": "Schlussfolgerungen zu den besten verfügbaren Techniken gemäß der Richtlinie 2010/75/EU"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": null,
+   "target_text": "Regulation (EU) 2018/1999 on the Governance of the Energy Union and Climate Action, Art. 14(2)",
+   "note": "Planned strategic measures are summarised in the 2024 update of the national energy and climate plan",
+   "evidence": {
+    "provision": "§ 5 Abs. 1 Satz 3",
+    "quote": "in der Aktualisierung des Energie- und Klimaplans nach Artikel 14 Absatz 2 der Verordnung (EU) 2018/1999"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": null,
+   "target_text": "Regulation (EC) No 1221/2009 (EMAS)",
+   "note": "Defines EMAS and the environmental management system accepted under §§ 6, 8 and 12",
+   "evidence": {
+    "provision": "§ 3 Nr. 17, Nr. 29",
+    "quote": "nach der Verordnung (EG) Nr. 1221/2009 des Europäischen Parlaments und des Rates vom 25. November 2009"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": null,
+   "target_text": "Directive (EU) 2018/2002 amending Directive 2012/27/EU, Annex V",
+   "note": "Method for calculating public bodies' final-energy savings under § 6(1)",
+   "evidence": {
+    "provision": "§ 6 Abs. 3",
+    "quote": "gemäß Anhang V Absatz 1 zur Richtlinie (EU) 2018/2002"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": null,
+   "target_text": "Gesetz über Ordnungswidrigkeiten (OWiG), § 36(1) No. 1",
+   "note": "Designates the administrative authority for fines",
+   "evidence": {
+    "provision": "§ 19 Abs. 3",
+    "quote": "Verwaltungsbehörde im Sinne des § 36 Absatz 1 Nummer 1 des Gesetzes über Ordnungswidrigkeiten"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": null,
+   "target_text": "Atomgesetz (AtomG)",
+   "note": "Nuclear installations under the AtomG are excluded from the act",
+   "evidence": {
+    "provision": "§ 21 Abs. 1 Nr. 3",
+    "quote": "kerntechnische Anlagen, die dem Gesetz über die friedliche Verwendung der Kernenergie und den Schutz gegen ihre Gefahren (AtomG)"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": null,
+   "target_text": "European database on data centres (instrument not named in the text)",
+   "note": "Register data are transferred to a European database; the text does not name the legal basis of that database (left for the resolve stage)",
+   "evidence": {
+    "provision": "§ 14",
+    "quote": "in eine europäische Datenbank über Rechenzentren übertragen werden"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": null,
+   "target_text": "DIN EN 50600-4-2 (August 2019), DIN EN 50600-4-6 (November 2020) and other DIN EN 50600 parts",
+   "note": "Technical standards defining PUE, reused-energy share and the Anlage 3 metrics (renewable share 50600-4-3, cooling efficiency 50600-4-7, water use 50600-9)",
+   "evidence": {
+    "provision": "§ 3 Nr. 15; § 11 Abs. 2; Anlage 3",
+    "quote": "im Sinne der DIN EN 50600-4-2, Ausgabe August 2019"
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "Bundesamt für Wirtschaft und Ausfuhrkontrolle (BAFA)",
+   "role": "designated",
+   "lei": null,
+   "ticker": null,
+   "evidence": {
+    "provision": "§ 7 Abs. 1",
+    "quote": "werden vom Bundesamt für Wirtschaft und Ausfuhrkontrolle wahrgenommen"
+   }
+  },
+  {
+   "name": "Bundesstelle für Energieeffizienz",
+   "role": "designated",
+   "lei": null,
+   "ticker": null,
+   "evidence": {
+    "provision": "§ 7 Abs. 2",
+    "quote": "Die Bundesstelle für Energieeffizienz hat nach diesem Gesetz folgende Aufgaben"
+   }
+  },
+  {
+   "name": "Bundesregierung",
+   "role": "designated",
+   "lei": null,
+   "ticker": null,
+   "evidence": {
+    "provision": "§ 14",
+    "quote": "Die Bundesregierung errichtet ein Energieeffizienzregister für Rechenzentren"
+   }
+  },
+  {
+   "name": "Bundesministerium für Wirtschaft und Klimaschutz",
+   "role": "listed",
+   "lei": null,
+   "ticker": null,
+   "evidence": {
+    "provision": "§ 7 Abs. 2 Nr. 1; § 21 Abs. 2",
+    "quote": "Unterstützung des Bundesministeriums für Wirtschaft und Klimaschutz"
+   }
+  },
+  {
+   "name": "Bundesministerium der Verteidigung",
+   "role": "designated",
+   "lei": null,
+   "ticker": null,
+   "evidence": {
+    "provision": "§ 21 Abs. 2",
+    "quote": "Das Bundesministerium der Verteidigung berichtet Endenergieverbräuche und -einsparungen"
+   }
+  },
+  {
+   "name": "Bundesnachrichtendienst",
+   "role": "listed",
+   "lei": null,
+   "ticker": null,
+   "evidence": {
+    "provision": "§ 21 Abs. 1 Nr. 1",
+    "quote": "die Verfassungsschutzbehörden des Bundes und der Länder, der Militärische Abschirmdienst und der Bundesnachrichtendienst"
+   }
+  },
+  {
+   "name": "Militärischer Abschirmdienst",
+   "role": "listed",
+   "lei": null,
+   "ticker": null,
+   "evidence": {
+    "provision": "§ 21 Abs. 1 Nr. 1",
+    "quote": "der Militärische Abschirmdienst und der Bundesnachrichtendienst"
+   }
+  }
+ ],
+ "section_status": {},
+ "notes": "Text-internal issues, recorded as written: (1) § 20(2) No. 2 sets a first-reporting tier for data centres from 200 kW to under 500 kW, but § 3 No. 24 defines a Rechenzentrum only from 300 kW non-redundant connected load; both are coded. (2) 7.5 GWh appears twice: in § 8(1) as a firm-level trigger (Unternehmen averaging more than 7.5 GWh must set up a management system) and in § 12(4) as one of two joint conditions of a data-centre exemption from § 12(1) (consumption not above 7.5 GWh plus at least 50% of reused energy taken up via a heat network); § 12(1) applies 'Unbeschadet von § 8'. Both are coded. (3) § 19(1) No. 3 refers to '§ 9 Absatz 2 Satz 1' and § 10 and § 19(1) No. 2 refer to '§ 9 Absatz 1', but § 9 in this text has no numbered paragraphs (the confirmation duty is in § 9 sentence 4). (4) § 20(3) requires IT operators to provide 'Informationen nach § 13 Absatz 2', but § 13(2) is an ordinance authorisation and § 13(1) binds only data-centre operators; the text does not say which information IT operators provide. (5) § 11(2) No. 2 uses 'Anteil' for the 10% step and 'geplanten Anteil' for the 15% and 20% steps. (6) § 6(3) describes Directive (EU) 2018/2002 as last amended by Directive 2012/27/EU. (7) § 19(3) excludes § 19(1) No. 7 (waste heat) from BAFA's competence without naming another authority. § 19 lists no fine for § 11(5) (renewable electricity), § 12(3) and (5) sentences 2-3 (certification), § 15 or § 20(3). Left for the resolve stage: the authority for § 19(1) No. 7; content of any ordinances under § 13(2) (additional information duties) and § 18 (exemptions for climate-neutral firms from §§ 11-13 and 15-17); the European database in § 14; any amendments after the original text. Firm-level duties (Unternehmen, §§ 8, 9, 10, 16, 17) are coded with addressee 'general_public' because the vocabulary has no generic firm role; they also bind data-centre operators that meet the thresholds. Anlage 3 size classes (< 500 kW up to >= 100 MW IT load) are reporting categories and are not coded as thresholds."
+}

@@ -1,0 +1,755 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "cn-pi-compliance-audit-2025",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (connectors/fetch_texts.py)",
+  "url": "https://www.cac.gov.cn/2025-02/14/c_1741233507681519.htm",
+  "retrieved": "2026-10-13",
+  "version": "as fetched",
+  "language": "zh",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "data_protection",
+   "data_transfer_localization",
+   "algorithmic_decision_systems",
+   "minors_child_safety",
+   "biometrics",
+   "cybersecurity"
+  ],
+  "primary_domain": "data_protection",
+  "mechanisms": [
+   "mandate_obligation",
+   "enforcement_order",
+   "standard_setting"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "data_controller",
+   "platform_operator",
+   "auditor_assessor",
+   "regulator"
+  ],
+  "affected_roles": [
+   "consumers_users",
+   "minors",
+   "general_public"
+  ],
+  "decision_margins": [
+   "firm:compliance_process",
+   "household:data_privacy"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national"
+   ],
+   "description": "Applies to personal information protection compliance audits carried out within the territory of the People's Republic of China.",
+   "evidence": {
+    "provision": "Art. 2",
+    "quote": "在中华人民共和国境内开展个人信息保护合规审计，适用本办法。"
+   }
+  },
+  "agora_harms": [
+   "Violation of civil or human rights, including privacy"
+  ],
+  "agora_risk_factors": [
+   "Privacy"
+  ],
+  "agora_strategies": [
+   "Evaluation: External auditing",
+   "Evaluation: Impact assessment"
+  ]
+ },
+ "summary": {
+  "short": "Sets rules for personal information protection compliance audits in China, effective 1 May 2025. Processors handling over 10 million people's data must audit at least every two years, and protection departments may order audits after serious risks or large leaks, following an annexed audit guideline.",
+  "long": "Order No. 18 of the Cyberspace Administration of China, adopted 20 May 2024, effective 1 May 2025. Governs personal information protection compliance audits within the PRC, defined as supervisory review of compliance with laws and administrative regulations. Processors may audit internally or through entrusted bodies (Art. 3); those handling over 10 million people's data must audit at least every two years (Art. 4). Protection departments may require an audit for serious risks or after a security incident exposing 1 million or more personal records or 100,000 or more sensitive records (Art. 5); the processor pays and must rectify and report within 15 working days (Arts. 8, 11). Processors over 1 million people must designate a protection officer, and major platforms an external-majority oversight body (Art. 12). Audit bodies must be qualified, may not subcontract, and may not audit the same object more than three consecutive times (Arts. 7, 14, 15). An annex guideline lists review items, including consent, notice, cross-border transfer, automated decisions, sensitive data and minors under 14. Violations are dealt with under the Personal Information Protection Law and the Network Data Security Regulations, with criminal liability where applicable (Art. 18). State organs and public-affairs bodies are excluded (Art. 19)."
+ },
+ "relations": [
+  {
+   "relation": "legal_basis",
+   "target_instrument_id": "null",
+   "target_text": "中华人民共和国个人信息保护法 (Personal Information Protection Law)",
+   "note": "Cited in Art. 1 as a law under which the Measures are made. Art. 18 also refers penalties to it.",
+   "evidence": {
+    "provision": "Art. 1 (第一条)",
+    "quote": "根据《中华人民共和国个人信息保护法》、《网络数据安全管理条例》等法律、行政法规，制定本办法。"
+   }
+  },
+  {
+   "relation": "legal_basis",
+   "target_instrument_id": "null",
+   "target_text": "网络数据安全管理条例 (Network Data Security Management Regulations)",
+   "note": "Cited in Art. 1 as a regulation under which the Measures are made. Art. 18 also refers penalties to it, and the Annex preamble cites it.",
+   "evidence": {
+    "provision": "Art. 1 (第一条)",
+    "quote": "根据《中华人民共和国个人信息保护法》、《网络数据安全管理条例》等法律、行政法规，制定本办法。"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": "null",
+   "target_text": "中华人民共和国认证认可条例 (Certification and Accreditation Regulation)",
+   "note": "Art. 7 states that certification of professional institutions follows the provisions of this regulation.",
+   "evidence": {
+    "provision": "Art. 7 (第七条)",
+    "quote": "专业机构的认证按照《中华人民共和国认证认可条例》的有关规定执行。"
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "保护部门 (国家网信部门和其他履行个人信息保护职责的部门)",
+   "role": "designated",
+   "function": "Defined collectively as protection departments. May require processors to commission professional institutions for compliance audits (Art. 5). Supervises audits (Art. 16), receives audit reports (Art. 10) and rectification reports (Art. 11), and receives complaints and reports (Art. 17).",
+   "lei": "null",
+   "ticker": "null",
+   "evidence": {
+    "provision": "Art. 5 (第五条)",
+    "quote": "国家网信部门和其他履行个人信息保护职责的部门（以下统称为保护部门），可以要求个人信息处理者委托专业机构对个人信息处理活动进行合规审计"
+   }
+  },
+  {
+   "name": "国家互联网信息办公室",
+   "role": "listed",
+   "function": "Named as the issuing body in the order heading. The order is signed by its director (庄荣文). The text does not state whether this body is the national cyberspace authority referred to in Art. 5.",
+   "lei": "null",
+   "ticker": "null",
+   "evidence": {
+    "provision": "Order heading (国家互联网信息办公室令 第18号)",
+    "quote": "国家互联网信息办公室令"
+   }
+  }
+ ],
+ "notes": "Text is the CAC web page reproducing Order No. 18: signed 2025-02-12, effective 2025-05-01 (Art. 20). The preamble gives adoption at the 2024-05-20 meeting. The Annex 个人信息保护合规审计指引 forms part of the instrument (Art. 6 refers to it). Target instrument IDs are null because registry IDs for the cited laws were not supplied. Art. 18 refers penalties to the PIPL and NDSR without stating amounts. Art. 19 excludes state organs from scope. Website navigation and footer text were excluded. The section_status entries below are included only because the schema requires them; relations and entities are populated above.",
+ "events": [
+  {
+   "event": "adopted",
+   "date": "2024-05-20",
+   "date_type": "absolute",
+   "date_text": "已经2024年5月20日国家互联网信息办公室2024年第15次室务会会议审议通过",
+   "applies_to": "",
+   "evidence": {
+    "provision": "Preamble (国家互联网信息办公室令第18号)",
+    "quote": "已经2024年5月20日国家互联网信息办公室2024年第15次室务会会议审议通过"
+   }
+  },
+  {
+   "event": "signed",
+   "date": "2025-02-12",
+   "date_type": "absolute",
+   "date_text": "2025年2月12日 (signature of the Director, 国家互联网信息办公室主任 庄荣文)",
+   "applies_to": "",
+   "evidence": {
+    "provision": "Preamble (国家互联网信息办公室令第18号)",
+    "quote": "2025年2月12日"
+   }
+  },
+  {
+   "event": "published",
+   "date": "2025-02-14",
+   "date_type": "absolute",
+   "date_text": "2025年02月14日 18:00 (posting date shown with the text)",
+   "applies_to": "",
+   "evidence": {
+    "provision": "Document header (posting date)",
+    "quote": "2025年02月14日 18:00"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2025-05-01",
+   "date_type": "absolute",
+   "date_text": "自2025年5月1日起施行",
+   "applies_to": "",
+   "evidence": {
+    "provision": "Art. 20",
+    "quote": "本办法自2025年5月1日起施行。"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "每两年至少开展一次个人信息保护合规审计",
+   "applies_to": "处理超过1000万人个人信息的个人信息处理者",
+   "evidence": {
+    "provision": "Art. 4",
+    "quote": "应当每两年至少开展一次个人信息保护合规审计"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "在限定时间内完成个人信息保护合规审计 (time limit set by the 保护部门; extension possible with its approval)",
+   "depends_on": "time limit specified by the 保护部门 (限定时间)",
+   "applies_to": "个人信息处理者 required to audit at the request of the 保护部门",
+   "evidence": {
+    "provision": "Art. 9",
+    "quote": "在限定时间内完成个人信息保护合规审计"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "在整改完成后15个工作日内，向保护部门报送整改情况报告",
+   "anchor": "completion of rectification (整改完成)",
+   "applies_to": "个人信息处理者 required to rectify issues found in an audit conducted at the 保护部门's request; report to 保护部门",
+   "offset_value": 15,
+   "offset_unit": "business_days",
+   "evidence": {
+    "provision": "Art. 11",
+    "quote": "在整改完成后15个工作日内，向保护部门报送整改情况报告"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "data_subjects_count",
+   "variable_text": "处理超过1000万人个人信息的个人信息处理者",
+   "operator": ">",
+   "value": 10000000,
+   "value_text": "处理超过1000万人个人信息",
+   "unit": "persons",
+   "measurement": "Number of individuals whose personal information the processor handles; measurement window not stated in text",
+   "level": "entity",
+   "trigger": "obligation",
+   "consequence": "Processor must conduct a personal information protection compliance audit at least once every two years",
+   "evidence": {
+    "provision": "Art. 4",
+    "quote": "处理超过1000万人个人信息的个人信息处理者，应当每两年至少开展一次个人信息保护合规审计。"
+   }
+  },
+  {
+   "variable": "data_subjects_count",
+   "variable_text": "导致100万人以上个人信息泄露、篡改、丢失、毁损的个人信息安全事件",
+   "operator": ">=",
+   "value": 1000000,
+   "value_text": "导致100万人以上个人信息",
+   "unit": "persons",
+   "measurement": "Number of individuals whose personal information is leaked, altered, lost or damaged in a personal information security incident",
+   "level": "other",
+   "trigger": "eligibility",
+   "consequence": "Protection authorities may require the processor to commission a professional institution to conduct a compliance audit",
+   "conditions": "Occurrence of a personal information security incident; the text lists this as one of three alternative grounds",
+   "evidence": {
+    "provision": "Art. 5 para. 1 item (3)",
+    "quote": "发生个人信息安全事件，导致100万人以上个人信息或者10万人以上敏感个人信息泄露、篡改、丢失、毁损的。"
+   }
+  },
+  {
+   "variable": "data_subjects_count",
+   "variable_text": "导致10万人以上敏感个人信息泄露、篡改、丢失、毁损的个人信息安全事件",
+   "operator": ">=",
+   "value": 100000,
+   "value_text": "10万人以上敏感个人信息",
+   "unit": "persons",
+   "measurement": "Number of individuals whose sensitive personal information is leaked, altered, lost or damaged in a personal information security incident",
+   "level": "other",
+   "trigger": "eligibility",
+   "consequence": "Protection authorities may require the processor to commission a professional institution to conduct a compliance audit",
+   "conditions": "Occurrence of a personal information security incident; applies to sensitive personal information; the text lists this as one of three alternative grounds",
+   "evidence": {
+    "provision": "Art. 5 para. 1 item (3)",
+    "quote": "发生个人信息安全事件，导致100万人以上个人信息或者10万人以上敏感个人信息泄露、篡改、丢失、毁损的。"
+   }
+  },
+  {
+   "variable": "data_subjects_count",
+   "variable_text": "处理100万人以上个人信息的个人信息处理者",
+   "operator": ">=",
+   "value": 1000000,
+   "value_text": "处理100万人以上个人信息",
+   "unit": "persons",
+   "measurement": "Number of individuals whose personal information the processor handles; measurement window not stated in text",
+   "level": "entity",
+   "trigger": "obligation",
+   "consequence": "Processor must designate a personal information protection officer responsible for the compliance audit work",
+   "evidence": {
+    "provision": "Art. 12 para. 1",
+    "quote": "处理100万人以上个人信息的个人信息处理者应当指定个人信息保护负责人"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "同一专业机构及其关联机构、同一合规审计负责人对同一审计对象连续开展个人信息保护合规审计的次数",
+   "operator": ">=",
+   "value": 3,
+   "value_text": "连续三次以上",
+   "unit": "consecutive audits of the same audit subject",
+   "measurement": "Consecutive compliance audits of the same audit subject by the same professional institution, its affiliates, or the same lead auditor",
+   "level": "other",
+   "trigger": "prohibition",
+   "consequence": "Same professional institution, its affiliates and the same lead auditor may not conduct a compliance audit of the same audit subject for three or more consecutive times (wording read as three or more)",
+   "evidence": {
+    "provision": "Art. 15",
+    "quote": "同一专业机构及其关联机构、同一合规审计负责人不得连续三次以上对同一审计对象开展个人信息保护合规审计。"
+   }
+  },
+  {
+   "variable": "data_subjects_count",
+   "variable_text": "关键信息基础设施运营者以外的数据处理者累计向境外提供个人信息（不含敏感个人信息）",
+   "operator": ">=",
+   "value": 1000000,
+   "value_text": "自当年1月1日起累计向境外提供100万人以上个人信息（不含敏感个人信息）",
+   "unit": "persons",
+   "measurement": "Cumulative number of individuals whose non-sensitive personal information is provided abroad, counted from 1 January of the current year",
+   "level": "entity",
+   "trigger": "obligation",
+   "consequence": "Compliance audit must check whether a national cyberspace authority security assessment was conducted before the transfer, unless laws, administrative regulations or the authority provide otherwise",
+   "conditions": "Data processor other than critical information infrastructure operators; applies to non-sensitive personal information only",
+   "evidence": {
+    "provision": "Annex, item 15(2)",
+    "quote": "自当年1月1日起累计向境外提供100万人以上个人信息（不含敏感个人信息）"
+   }
+  },
+  {
+   "variable": "data_subjects_count",
+   "variable_text": "关键信息基础设施运营者以外的数据处理者累计向境外提供敏感个人信息",
+   "operator": ">=",
+   "value": 10000,
+   "value_text": "或者1万人以上敏感个人信息",
+   "unit": "persons",
+   "measurement": "Cumulative number of individuals whose sensitive personal information is provided abroad, counted from 1 January of the current year",
+   "level": "entity",
+   "trigger": "obligation",
+   "consequence": "Compliance audit must check whether a national cyberspace authority security assessment was conducted before the transfer, unless laws, administrative regulations or the authority provide otherwise",
+   "conditions": "Data processor other than critical information infrastructure operators; applies to sensitive personal information",
+   "evidence": {
+    "provision": "Annex, item 15(2)",
+    "quote": "或者1万人以上敏感个人信息"
+   }
+  },
+  {
+   "variable": "data_subjects_count",
+   "variable_text": "关键信息基础设施运营者以外的数据处理者累计向境外提供个人信息（不含敏感个人信息），10万人以上、不满100万人",
+   "operator": "range",
+   "value": 100000,
+   "value_max": 1000000,
+   "value_text": "10万人以上、不满100万人个人信息（不含敏感个人信息）",
+   "unit": "persons",
+   "measurement": "Cumulative number of individuals whose non-sensitive personal information is provided abroad, counted from 1 January of the current year",
+   "level": "entity",
+   "trigger": "obligation",
+   "consequence": "Compliance audit must check whether the transfer followed the national authority's rules: personal information protection certification, or a standard contract signed with the overseas recipient and filed with the provincial cyberspace authority, or another condition in law or regulation",
+   "conditions": "Data processor other than critical information infrastructure operators; applies to non-sensitive personal information; the upper bound is stated as 不满100万人 (below 1 million)",
+   "evidence": {
+    "provision": "Annex, item 15(3)",
+    "quote": "累计向境外提供10万人以上、不满100万人个人信息（不含敏感个人信息）或者不满1万人敏感个人信息的"
+   }
+  },
+  {
+   "variable": "data_subjects_count",
+   "variable_text": "关键信息基础设施运营者以外的数据处理者累计向境外提供敏感个人信息，不满1万人",
+   "operator": "<",
+   "value": 10000,
+   "value_text": "不满1万人敏感个人信息",
+   "unit": "persons",
+   "measurement": "Cumulative number of individuals whose sensitive personal information is provided abroad, counted from 1 January of the current year",
+   "level": "entity",
+   "trigger": "obligation",
+   "consequence": "Compliance audit must check whether the transfer followed the national authority's rules: personal information protection certification, or a standard contract signed with the overseas recipient and filed with the provincial cyberspace authority, or another condition in law or regulation",
+   "conditions": "Data processor other than critical information infrastructure operators; applies to sensitive personal information",
+   "evidence": {
+    "provision": "Annex, item 15(3)",
+    "quote": "累计向境外提供10万人以上、不满100万人个人信息（不含敏感个人信息）或者不满1万人敏感个人信息的"
+   }
+  },
+  {
+   "variable": "age",
+   "variable_text": "不满十四周岁未成年人的个人信息",
+   "operator": "<",
+   "value": 14,
+   "value_text": "不满十四周岁未成年人",
+   "unit": "years",
+   "measurement": "Age of the individual whose personal information is processed",
+   "level": "person",
+   "trigger": "obligation",
+   "consequence": "Where processing is based on consent, prior consent of the minor's parents or other guardians must be obtained (audit item)",
+   "conditions": "Processing based on individual consent",
+   "evidence": {
+    "provision": "Annex, item 13(2)",
+    "quote": "处理不满十四周岁未成年人的个人信息，是否事前取得未成年人的父母或者其他监护人的同意"
+   }
+  },
+  {
+   "variable": "age",
+   "variable_text": "不满十四周岁未成年人个人信息的处理",
+   "operator": "<",
+   "value": 14,
+   "value_text": "不满十四周岁未成年人",
+   "unit": "years",
+   "measurement": "Age of the individual whose personal information is processed",
+   "level": "person",
+   "trigger": "obligation",
+   "consequence": "Processor must establish dedicated processing rules and inform minors and guardians of processing purposes, methods and protective measures (audit items)",
+   "conditions": "Applies to processing of personal information of minors under fourteen",
+   "evidence": {
+    "provision": "Annex, item 14",
+    "quote": "处理不满十四周岁未成年人个人信息进行合规审计的"
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "个人信息保护合规审计",
+   "defined_in": "this instrument",
+   "evidence": {
+    "provision": "Art. 2 para. 2",
+    "quote": "本办法所称个人信息保护合规审计，是指对个人信息处理者的个人信息处理活动是否遵守法律、行政法规的情况进行审查和评价的监督活动。"
+   }
+  },
+  {
+   "term": "保护部门",
+   "defined_in": "this instrument",
+   "evidence": {
+    "provision": "Art. 5 para. 1",
+    "quote": "国家网信部门和其他履行个人信息保护职责的部门（以下统称为保护部门）"
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "audit",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "A personal information processor that conducts its own compliance audit must have it done by an internal body or by a commissioned professional institution, on a regular basis, covering compliance with laws and administrative regulations.",
+   "applies_from": "2025-05-01 (Art. 20)",
+   "conditional_on": "Processor conducts its own personal information protection compliance audit",
+   "evidence": {
+    "provision": "Art. 3",
+    "quote": "个人信息处理者自行开展个人信息保护合规审计的，应当由个人信息处理者内部机构或者委托专业机构定期对其处理个人信息遵守法律、行政法规的情况进行合规审计。"
+   }
+  },
+  {
+   "type": "audit",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Processors handling personal information of more than 10 million persons must conduct a compliance audit at least once every two years.",
+   "applies_from": "2025-05-01 (Art. 20)",
+   "conditional_on": "Processor handles personal information of more than 10 million persons",
+   "evidence": {
+    "provision": "Art. 4",
+    "quote": "处理超过1000万人个人信息的个人信息处理者，应当每两年至少开展一次个人信息保护合规审计。"
+   }
+  },
+  {
+   "type": "audit",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "When a protection department requires it in one of the listed situations (serious risk, possible infringement of many persons, or a security incident affecting large numbers of persons), the processor must have a compliance audit carried out by a professional institution.",
+   "applies_from": "2025-05-01 (Art. 20)",
+   "conditional_on": "Protection department requires an audit in a situation listed in Art. 5(1)-(3)",
+   "evidence": {
+    "provision": "Art. 5",
+    "quote": "可以要求个人信息处理者委托专业机构对个人信息处理活动进行合规审计"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "government_agency",
+   "modality": "shall_not",
+   "summary": "The same personal information security incident or risk may not be used to repeatedly require a processor to commission a professional institution for a compliance audit.",
+   "applies_from": "2025-05-01 (Art. 20)",
+   "conditional_on": "Same personal information security incident or risk",
+   "evidence": {
+    "provision": "Art. 5",
+    "quote": "对同一个人信息安全事件或者风险，不得重复要求个人信息处理者委托专业机构开展个人信息保护合规审计。"
+   }
+  },
+  {
+   "type": "audit",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "A processor that audits itself or is audited by a commissioned institution at the protection department's request must refer to the Personal Information Protection Compliance Audit Guidelines annexed to the Measures.",
+   "applies_from": "2025-05-01 (Art. 20)",
+   "conditional_on": "Self-conducted audit, or audit by a commissioned institution at the protection department's request",
+   "evidence": {
+    "provision": "Art. 6",
+    "quote": "个人信息处理者自行开展或者按照保护部门要求委托专业机构开展个人信息保护合规审计的，应当参照本办法附件《个人信息保护合规审计指引》。"
+   }
+  },
+  {
+   "type": "eligibility_condition",
+   "addressee": "auditor_assessor",
+   "modality": "shall",
+   "summary": "A professional institution must have the capability to conduct personal information protection compliance audits, including auditing staff, premises, facilities and funds suited to its services.",
+   "applies_from": "2025-05-01 (Art. 20)",
+   "conditional_on": "Professional institution conducts personal information protection compliance audits",
+   "evidence": {
+    "provision": "Art. 7",
+    "quote": "专业机构应当具备开展个人信息保护合规审计的能力，有与服务相适应的审计人员、场所、设施和资金等。"
+   }
+  },
+  {
+   "type": "licensing_certification",
+   "addressee": "auditor_assessor",
+   "modality": "encouraged",
+   "summary": "Relevant professional institutions are encouraged to obtain certification, which follows the certification regulations cited in the Article.",
+   "applies_from": "2025-05-01 (Art. 20)",
+   "evidence": {
+    "provision": "Art. 7",
+    "quote": "鼓励相关专业机构通过认证。"
+   }
+  },
+  {
+   "type": "cooperation_with_authority",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "A processor auditing at the protection department's request must give necessary support to the professional institution and bear the audit fees.",
+   "applies_from": "2025-05-01 (Art. 20)",
+   "conditional_on": "Audit carried out at the protection department's request",
+   "evidence": {
+    "provision": "Art. 8",
+    "quote": "个人信息处理者按照保护部门要求开展个人信息保护合规审计的，应当为专业机构正常开展个人信息保护合规审计工作提供必要支持，并承担审计费用。"
+   }
+  },
+  {
+   "type": "audit",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "A processor auditing at the protection department's request must select the professional institution as the department requires and complete the audit within the time limit; the department may approve an extension for complex cases.",
+   "applies_from": "within the time limit set by the protection department (Art. 9)",
+   "conditional_on": "Audit carried out at the protection department's request",
+   "evidence": {
+    "provision": "Art. 9",
+    "quote": "应当按照保护部门要求选定专业机构，在限定时间内完成个人信息保护合规审计"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "After completing an audit at the protection department's request, the processor must submit the professional institution's audit report to the department.",
+   "applies_from": "2025-05-01 (Art. 20)",
+   "conditional_on": "Audit carried out at the protection department's request",
+   "evidence": {
+    "provision": "Art. 10",
+    "quote": "应当将专业机构出具的个人信息保护合规审计报告报送保护部门。"
+   }
+  },
+  {
+   "type": "audit",
+   "addressee": "auditor_assessor",
+   "modality": "shall",
+   "summary": "The audit report must be signed by the institution's main responsible person and the compliance audit lead and bear the institution's seal.",
+   "applies_from": "2025-05-01 (Art. 20)",
+   "evidence": {
+    "provision": "Art. 10",
+    "quote": "个人信息保护合规审计报告应当由专业机构主要负责人、合规审计负责人签字并加盖专业机构公章。"
+   }
+  },
+  {
+   "type": "cooperation_with_authority",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "A processor must rectify problems identified in the audit as the protection department requires.",
+   "applies_from": "2025-05-01 (Art. 20)",
+   "conditional_on": "Audit carried out at the protection department's request",
+   "evidence": {
+    "provision": "Art. 11",
+    "quote": "应当按照保护部门要求对合规审计中发现的问题进行整改。"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "After rectification, the processor must submit a rectification report to the protection department.",
+   "applies_from": "15 working days after rectification is completed (Art. 11)",
+   "conditional_on": "Audit carried out at the protection department's request",
+   "evidence": {
+    "provision": "Art. 11",
+    "quote": "在整改完成后15个工作日内，向保护部门报送整改情况报告。"
+   }
+  },
+  {
+   "type": "management_system",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Processors handling personal information of more than one million persons must designate a personal information protection officer responsible for the compliance audit work.",
+   "applies_from": "2025-05-01 (Art. 20)",
+   "conditional_on": "Processor handles personal information of more than 1,000,000 persons",
+   "evidence": {
+    "provision": "Art. 12",
+    "quote": "处理100万人以上个人信息的个人信息处理者应当指定个人信息保护负责人，负责个人信息处理者的个人信息保护合规审计工作。"
+   }
+  },
+  {
+   "type": "management_system",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "Processors providing important internet platform services with large user numbers and complex business must set up an independent body, mainly of external members, to supervise the compliance audit.",
+   "applies_from": "2025-05-01 (Art. 20)",
+   "conditional_on": "Processor provides important internet platform services with huge user numbers and complex business types",
+   "evidence": {
+    "provision": "Art. 12",
+    "quote": "应当成立主要由外部成员组成的独立机构对个人信息保护合规审计情况进行监督。"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "auditor_assessor",
+   "modality": "shall",
+   "summary": "A professional institution must comply with law, act with integrity, and make objective and impartial professional judgements in audits.",
+   "applies_from": "2025-05-01 (Art. 20)",
+   "conditional_on": "Professional institution conducts a compliance audit",
+   "evidence": {
+    "provision": "Art. 13",
+    "quote": "专业机构在从事个人信息保护合规审计活动时，应当遵守法律法规，诚信正直，公正客观地作出合规审计职业判断"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "auditor_assessor",
+   "modality": "shall",
+   "summary": "A professional institution must keep confidential the personal information, trade secrets and confidential business information obtained in audit work and must not disclose or unlawfully provide them to others.",
+   "applies_from": "2025-05-01 (Art. 20)",
+   "conditional_on": "Information obtained in performing audit duties",
+   "evidence": {
+    "provision": "Art. 13",
+    "quote": "对在履行个人信息保护合规审计职责中获得的个人信息、商业秘密、保密商务信息等应当依法予以保密，不得泄露或者非法向他人提供"
+   }
+  },
+  {
+   "type": "data_minimization",
+   "addressee": "auditor_assessor",
+   "modality": "shall",
+   "summary": "A professional institution must promptly delete the relevant information after the audit work ends.",
+   "applies_from": "2025-05-01 (Art. 20)",
+   "conditional_on": "Compliance audit work has ended",
+   "evidence": {
+    "provision": "Art. 13",
+    "quote": "在合规审计工作结束后及时删除相关信息"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "auditor_assessor",
+   "modality": "shall_not",
+   "summary": "A professional institution may not sub-contract the compliance audit to other institutions.",
+   "applies_from": "2025-05-01 (Art. 20)",
+   "evidence": {
+    "provision": "Art. 14",
+    "quote": "专业机构不得转委托其他机构开展个人信息保护合规审计。"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "auditor_assessor",
+   "modality": "shall_not",
+   "summary": "The same institution, its affiliates, and the same compliance audit lead may not audit the same audit object more than three consecutive times.",
+   "applies_from": "2025-05-01 (Art. 20)",
+   "conditional_on": "Same audit object",
+   "evidence": {
+    "provision": "Art. 15",
+    "quote": "同一专业机构及其关联机构、同一合规审计负责人不得连续三次以上对同一审计对象开展个人信息保护合规审计。"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The protection departments supervise and inspect processors' compliance audits.",
+   "applies_from": "2025-05-01 (Art. 20)",
+   "evidence": {
+    "provision": "Art. 16",
+    "quote": "保护部门对个人信息处理者开展个人信息保护合规审计情况进行监督检查。"
+   }
+  },
+  {
+   "type": "complaint_mechanism",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "A department receiving a complaint or report about unlawful activity in compliance audits must handle it promptly under the law and inform the complainant of the result.",
+   "applies_from": "2025-05-01 (Art. 20)",
+   "conditional_on": "Complaint or report about unlawful activity in a compliance audit",
+   "evidence": {
+    "provision": "Art. 17",
+    "quote": "收到投诉、举报的部门应当依法及时处理，并将处理结果告知投诉、举报人。"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Processors must respond to individuals' requests and explain their personal information processing rules (Annex, point 18).",
+   "applies_from": "2025-05-01 (Art. 20)",
+   "conditional_on": "Individual requests explanation of processing rules",
+   "evidence": {
+    "provision": "Annex, point 18",
+    "quote": "个人信息处理者应当响应个人申请，对其个人信息处理规则进行解释说明"
+   }
+  },
+  {
+   "type": "management_system",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Processors must formulate internal management systems and operating procedures, with organisational structure and responsibilities, in accordance with laws and administrative regulations (Annex, point 19).",
+   "applies_from": "2025-05-01 (Art. 20)",
+   "evidence": {
+    "provision": "Annex, point 19",
+    "quote": "个人信息处理者应当依照法律、行政法规的规定制定内部管理制度和操作规程"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Processors must adopt security technical measures proportionate to the scale and type of personal information processed (Annex, point 20).",
+   "applies_from": "2025-05-01 (Art. 20)",
+   "evidence": {
+    "provision": "Annex, point 20",
+    "quote": "个人信息处理者应当采取与所处理个人信息规模、类型相适应的安全技术措施"
+   }
+  },
+  {
+   "type": "incident_reporting",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Processors must formulate a personal information security incident emergency plan (Annex, point 24).",
+   "applies_from": "2025-05-01 (Art. 20)",
+   "evidence": {
+    "provision": "Annex, point 24",
+    "quote": "个人信息处理者应当制定个人信息安全事件应急预案"
+   }
+  }
+ ],
+ "enforcement": [
+  {
+   "sanction_type": "other",
+   "authority": "Not stated in this text; Art. 18 refers to the sanctions set by the PIPL and the Network Data Security Regulations (个人信息保护法、网络数据安全管理条例)",
+   "triggered_by": "Personal information processors or professional institutions violating this Measures (个人信息处理者、专业机构违反本办法规定的)",
+   "max_penalty_text": "Not stated in this text",
+   "penalty_reference": "《中华人民共和国个人信息保护法》、《网络数据安全管理条例》等法律法规的规定",
+   "cure_period": "Not stated in this text",
+   "evidence": {
+    "provision": "Art. 18 (第十八条)",
+    "quote": "个人信息处理者、专业机构违反本办法规定的，依照《中华人民共和国个人信息保护法》、《网络数据安全管理条例》等法律法规的规定处理"
+   }
+  },
+  {
+   "sanction_type": "criminal_penalty",
+   "authority": "Not specified in this text (criminal liability pursued under law)",
+   "triggered_by": "Violation of this Measures by a personal information processor or professional institution that constitutes a crime (构成犯罪的)",
+   "max_penalty_text": "Not stated in this text",
+   "penalty_reference": "Not specified in this text; liability pursued 依法追究刑事责任",
+   "cure_period": "Not stated in this text",
+   "evidence": {
+    "provision": "Art. 18 (第十八条)",
+    "quote": "构成犯罪的，依法追究刑事责任"
+   }
+  }
+ ],
+ "section_status": {}
+}

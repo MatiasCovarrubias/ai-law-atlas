@@ -1,0 +1,1525 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "it-ag-421-2026-ai-authorities-training",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "normattiva.it (official portal, Claude Code retrieval), full-act export of the original GU text",
+  "url": "https://www.normattiva.it/esporta/attoCompleto?atto.dataPubblicazioneGazzetta=2026-10-08&atto.codiceRedazionale=26G00200",
+  "retrieved": "2026-10-14",
+  "version": "Decreto Legislativo 7 ottobre 2026, n. 179 (GU Serie Generale n. 234 del 08-10-2026, codice redazionale 26G00200), testo originario as published; enters into force 23-10-2026; 54 articles",
+  "language": "it",
+  "extent": "full",
+  "note": "Final enacted decree replacing the Atto del Governo n. 421 schema (51 articles; final act has 54). Previous text kept as .prev.txt.bak; old raw PDF kept as cache/raw/<id>.prev.pdf.bak. The default 'vigente' export shows every article as 'NON ANCORA ESISTENTE O VIGENTE' because the decree is not yet in force, so the export was fetched in an 'originario' session (published GU text). Extracted with tools/extract_texts.py; first lines are normattiva page chrome."
+ },
+ "classification": {
+  "domains": [
+   "ai_general",
+   "ai_sectoral",
+   "algorithmic_decision_systems",
+   "employment_labor",
+   "public_sector_ai",
+   "data_protection",
+   "ip_training_data"
+  ],
+  "primary_domain": "ai_general",
+  "mechanisms": [
+   "institution_setup",
+   "registration_notification",
+   "mandate_obligation",
+   "disclosure_transparency",
+   "sandbox_pilot"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "government_agency",
+   "regulator",
+   "auditor_assessor",
+   "financial_institution",
+   "employer",
+   "ai_provider",
+   "ai_deployer",
+   "research_institution"
+  ],
+  "affected_roles": [
+   "workers",
+   "ai_developer"
+  ],
+  "decision_margins": [
+   "household:employment",
+   "firm:input_use",
+   "firm:entry_market_access",
+   "firm:compliance_process"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national"
+   ],
+   "description": "Applies to the subjects of Article 2(1) of Regulation (EU) 2024/1689 and to the Italian authorities and institutions named in the decree.",
+   "evidence": {
+    "provision": "Art. 2(2)",
+    "quote": "Il presente decreto si applica ai soggetti di cui all'articolo 2, paragrafo 1, del regolamento IA."
+   }
+  },
+  "agora_applications": [
+   "Education",
+   "Finance and investment",
+   "Government: judicial and law enforcement",
+   "Government: other applications/unspecified",
+   "Medicine, life sciences and public health"
+  ],
+  "agora_harms": [
+   "Discrimination",
+   "Harm to health/safety",
+   "Violation of civil or human rights, including privacy"
+  ],
+  "agora_incentives": [
+   "Fines"
+  ],
+  "agora_risk_factors": [
+   "Bias",
+   "Interpretability and explainability",
+   "Privacy",
+   "Safety",
+   "Transparency"
+  ],
+  "agora_strategies": [
+   "New institution",
+   "Pilots and testbeds",
+   "Licensing, registration, and certification",
+   "Disclosure",
+   "Government support: AI workforce-related",
+   "Government study or report"
+  ]
+ },
+ "summary": {
+  "short": "Italian legislative decree adapting national law to the EU AI Act: names national AI and market-surveillance authorities (AgID, ACN, Banca d'Italia, CONSOB, IVASS, Garante), sets their powers and fines, creates an AI regulatory sandbox, and adds AI rules on training, employment, health and trade secrets. Dated 7 October 2026.",
+  "long": "Legislative decree No. 179 of 7 October 2026 adapts Italian law to the EU AI Act and to Law 132/2025 on AI. It names AgID as notifying authority and ACN as AI authority and single point of contact, and designates ACN, Banca d'Italia, CONSOB, IVASS and the Garante as market-surveillance authorities for their sectors. ACN keeps a national register of certain high-risk systems and holds inspection powers. Fines for AI Act breaches reach EUR 35 million or 7% of worldwide turnover at the top tier, and warnings are possible for minor breaches. An Italian AI regulatory sandbox, run jointly by AgID and ACN, is created. Chapter III provides for AI training and literacy measures in education, professions, justice, health and public administration. Employers may not take employment decisions solely on automated processing and must inform workers; non-compliant decisions are void. Article 52 amends Article 98 of the Industrial Property Code so that AI training data and algorithms can qualify as protected trade secrets when Article 98(1) conditions are met. The text states no separate entry-into-force date beyond its adoption date. Implementation must not create new public charges (Art. 54)."
+ },
+ "relations": [
+  {
+   "relation": "legal_basis",
+   "target_text": "Legge 23 settembre 2025, n. 132 (legge IA), Disposizioni e deleghe al Governo in materia di intelligenza artificiale, art. 24 comma 1 e comma 2 lett. a)-n)",
+   "note": "Preamble cites the law and its delegation provision as the basis of the decree; the text refers to it as 'legge IA' and incorporates its definitions (Art. 1(1)-(2)(i)).",
+   "evidence": {
+    "provision": "Preambolo (Visti)",
+    "quote": "Vista la legge 23 settembre 2025, n. 132, recante «Disposizioni e deleghe al Governo in materia di intelligenza artificiale»"
+   }
+  },
+  {
+   "relation": "implements",
+   "target_text": "Regolamento (UE) 2024/1689 (regolamento IA, regolamento sull'intelligenza artificiale)",
+   "note": "Stated purpose is adaptation of national law to the EU AI Regulation, in matters of powers of national authorities and use of AI in training.",
+   "evidence": {
+    "provision": "Art. 2(1)",
+    "quote": "Il presente decreto detta le disposizioni necessarie all'adeguamento della normativa nazionale al regolamento IA"
+   }
+  },
+  {
+   "relation": "designates_under",
+   "target_text": "Regolamento (UE) 2019/1020 sulla vigilanza del mercato e sulla conformità dei prodotti",
+   "note": "Grants ACN the market-surveillance supervisory and inspection powers under Arts. 14 and 16 of Regulation (EU) 2019/1020; Art. 10(1) also applies d.lgs. 157/2022 to ACN activities under that regulation.",
+   "evidence": {
+    "provision": "Art. 15(1)",
+    "quote": "l'ACN esercita i poteri di vigilanza e ispettivi previsti dal regolamento IA, nonché, dagli articoli 14 e 16 del regolamento (UE) 2019/1020"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Decreto-legge 14 giugno 2021, n. 82, convertito con modificazioni dalla legge 4 agosto 2021, n. 109",
+   "note": "Art. 32 adds to art. 7(1) of the decree-law a point (aa-bis) making ACN market surveillance authority and single point of contact under Art. 70 of the AI Regulation; and replaces wording in art. 11(2)(f).",
+   "evidence": {
+    "provision": "Art. 32(1)",
+    "quote": "Al decreto-legge 14 giugno 2021, n. 82, convertito, con modificazioni, dalla legge 4 agosto 2021, n. 109, sono apportate le seguenti modificazioni"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Decreto-legge 30 aprile 2019, n. 34, convertito con modificazioni dalla legge 28 giugno 2019, n. 58 (art. 36 comma 2-octies, terzo periodo)",
+   "note": "Adds the Agenzia per la cybersicurezza nazionale alongside the Guardia di finanza in art. 36(2-octies), third sentence (FinTech experimentation).",
+   "evidence": {
+    "provision": "Art. 33(1)",
+    "quote": "All'articolo 36, comma 2-octies, terzo periodo, del decreto-legge 30 aprile 2019, n. 34"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Decreto legislativo 10 febbraio 2005, n. 30 (codice della proprietà industriale), art. 98",
+   "note": "Inserts a new comma 1-bis in art. 98 extending trade-secret protection to data, algorithms and mathematical methods for training AI systems, subject to the conditions of art. 98(1)(a)-(c).",
+   "evidence": {
+    "provision": "Art. 52(1)",
+    "quote": "All'articolo 98 del codice della proprietà industriale, di cui al decreto legislativo 10 febbraio 2005, n. 30, dopo il comma 1 è inserito il seguente"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regolamento (UE) 2016/679 (GDPR), art. 22 and arts. 13, 15, 22",
+   "note": "Art. 41 keeps the GDPR art. 22 rules on automated decisions in employment and preserves access and rights under arts. 13, 15 and 22.",
+   "evidence": {
+    "provision": "Art. 41(1)",
+    "quote": "Fermo restando quanto previsto dall'articolo 22 del regolamento (UE) 2016/679"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Decreto legislativo 9 aprile 2008, n. 81 (sicurezza sul lavoro), art. 28",
+   "note": "Art. 42(2) places assessment of AI systems affecting work organisation within the risk assessment under art. 28 of d.lgs. 81/2008.",
+   "evidence": {
+    "provision": "Art. 42(2)",
+    "quote": "valutazione dei rischi di cui all'articolo 28 del decreto legislativo n. 81 del 2008"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Decreto legislativo 12 ottobre 2022, n. 157 (vigilanza del mercato)",
+   "note": "Art. 8 coordinates ACN with sectoral market surveillance authorities under d.lgs. 157/2022; Art. 10 applies its provisions to ACN activities, except arts. 11 and 12 of that decree.",
+   "evidence": {
+    "provision": "Art. 10(1)",
+    "quote": "le disposizioni di cui al decreto legislativo 12 ottobre 2022, n. 157, si applicano alle attività dell'ACN"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Decreto-legge 15 settembre 2023, n. 123, convertito dalla legge 13 novembre 2023, n. 159, art. 15 (Coordinatore dei Servizi Digitali)",
+   "note": "Art. 12(1) states that the competences of the Garante and AGCOM as Digital Services Coordinator remain unchanged.",
+   "evidence": {
+    "provision": "Art. 12(1)",
+    "quote": "Coordinatore dei Servizi Digitali ai sensi dell'articolo 15 del decreto-legge 15 settembre 2023, n. 123"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Decreto legislativo 4 settembre 2024, n. 134, art. 5 comma 5 (punto di contatto unico)",
+   "note": "Art. 14(3) requires ACN to coordinate information exchange with the single point of contact under d.lgs. 134/2024 for the national high-risk registration.",
+   "evidence": {
+    "provision": "Art. 14(3)",
+    "quote": "punto di contatto unico istituito ai sensi dell'articolo 5, comma 5, del decreto legislativo 4 settembre 2024, n. 134"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regolamento (CE) n. 765/2008 (accreditamento)",
+   "note": "Art. 13(5) allows AgID to use the national accreditation body for assessing and monitoring conformity assessment bodies under that regulation.",
+   "evidence": {
+    "provision": "Art. 13(5)",
+    "quote": "ai sensi e in conformità al regolamento (CE) n. 765/2008"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Legge 7 agosto 1990, n. 241, art. 15 (accordi tra pubbliche amministrazioni)",
+   "note": "Several articles (7, 8, 9) provide for inter-authority agreements under art. 15 of l. 241/1990.",
+   "evidence": {
+    "provision": "Art. 7(1)",
+    "quote": "ai sensi e per gli effetti dell'articolo 15, della legge 7 agosto 1990, n. 241"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Legge 24 novembre 1981, n. 689 (modifiche al sistema penale)",
+   "note": "Art. 24(10) applies l. 689/1981 to the sanctioning procedure, except its art. 16, insofar as compatible.",
+   "evidence": {
+    "provision": "Art. 24(10)",
+    "quote": "si applica, in quanto compatibile, la legge 24 novembre 1981, n. 689, ad eccezione dell'articolo 16"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Decreto legislativo 30 giugno 2003, n. 196 (codice in materia di protezione dei dati personali), art. 166",
+   "note": "Art. 24(8) applies art. 166 of the data protection code to sanctions imposed by the Garante under Art. 74(8) of the AI Regulation.",
+   "evidence": {
+    "provision": "Art. 24(8)",
+    "quote": "articolo 166 del codice in materia di protezione dei dati personali, di cui al decreto legislativo 30 giugno 2003, n. 196"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Legge 21 aprile 2023, n. 49 (equo compenso)",
+   "note": "Art. 49 allows fee modulation for professionals using AI systems under the equo compenso law, by reference to the risk class under the AI Regulation.",
+   "evidence": {
+    "provision": "Art. 49(1)",
+    "quote": "ai sensi della legge 21 aprile 2023, n. 49, secondo parametri"
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "Agenzia per l'Italia digitale (AgID)",
+   "role": "designated",
+   "function": "National AI authority (Art. 1(2)(a)); notifying authority responsible for conformity assessment body procedures (Art. 4); monitoring of notified bodies and sanctioning powers as notifying authority (Arts. 13, 20).",
+   "evidence": {
+    "provision": "Art. 1(2)(a)",
+    "quote": "l'Agenzia per l'Italia digitale (AgID) e l'Agenzia per la cybersicurezza nazionale (ACN)"
+   }
+  },
+  {
+   "name": "Agenzia per la cybersicurezza nazionale (ACN)",
+   "role": "designated",
+   "function": "National AI authority (Art. 1(2)(a)); market surveillance authority for AI systems (Art. 5(1)(a)); single point of contact (Art. 6); national registration of high-risk AI systems (Art. 14); supervisory and inspection powers (Art. 15); corrective measures (Art. 16); coordination on sanctions (Art. 24(9)).",
+   "evidence": {
+    "provision": "Art. 5(1)(a)",
+    "quote": "l'ACN, per la vigilanza del mercato sui sistemi di IA"
+   }
+  },
+  {
+   "name": "Banca d'Italia",
+   "role": "designated",
+   "function": "National market surveillance authority for high-risk AI systems used in providing credit and other financial services under the banking consolidated act (Art. 5(1)(b)).",
+   "evidence": {
+    "provision": "Art. 5(1)(b)",
+    "quote": "la Banca d'Italia, quale autorità competente sui sistemi di IA ad alto rischio utilizzati nell'erogazione di finanziamenti"
+   }
+  },
+  {
+   "name": "Commissione nazionale per la società e la borsa (CONSOB)",
+   "role": "designated",
+   "function": "National market surveillance authority for high-risk AI systems used in financial services under the financial intermediation consolidated act (Art. 5(1)(b)).",
+   "evidence": {
+    "provision": "Art. 5(1)(b)",
+    "quote": "la CONSOB, quale autorità competente sui sistemi di IA ad alto rischio utilizzati nell'erogazione dei servizi finanziari"
+   }
+  },
+  {
+   "name": "Istituto per la vigilanza sulle assicurazioni (IVASS)",
+   "role": "designated",
+   "function": "National market surveillance authority for high-risk AI systems used in insurance and reinsurance activities and insurance distribution (Art. 5(1)(b)).",
+   "evidence": {
+    "provision": "Art. 5(1)(b)",
+    "quote": "l'IVASS, quale autorità competente sui sistemi di IA ad alto rischio utilizzati nell'esercizio dell'attività assicurativa"
+   }
+  },
+  {
+   "name": "Garante per la protezione dei dati personali",
+   "role": "designated",
+   "function": "Market surveillance authority limited to the cases in Art. 74(8) of the AI Regulation (Art. 5(1)(c)); cooperation with national AI authorities (Arts. 7(6), 9(3)-(4)); sanctions under Art. 166 of the data protection code (Art. 24(8)).",
+   "evidence": {
+    "provision": "Art. 5(1)(c)",
+    "quote": "il Garante per la protezione dei dati personali, limitatamente a quanto previsto dall'articolo 74, paragrafo 8, del regolamento IA"
+   }
+  },
+  {
+   "name": "Comitato di coordinamento (Presidenza del Consiglio dei ministri)",
+   "role": "designated",
+   "function": "Coordination committee set up at the Presidency of the Council of Ministers; defines strategic management of the Italian AI regulatory sandbox (Art. 27) and gives unified guidance on agreements and guidance acts (Art. 12(2)).",
+   "evidence": {
+    "provision": "Art. 1(2)(f)",
+    "quote": "il comitato istituito presso la Presidenza del Consiglio dei ministri"
+   }
+  },
+  {
+   "name": "Autorità settoriali di vigilanza del mercato (amministrazioni di cui all'art. 3 d.lgs. 157/2022)",
+   "role": "designated",
+   "function": "Sectoral market surveillance authorities responsible for enforcing EU harmonisation legislation listed in Annex I to the AI Regulation; coordinated with ACN under Art. 8.",
+   "evidence": {
+    "provision": "Art. 1(2)(c)",
+    "quote": "le amministrazioni di cui dall'articolo 3 del decreto legislativo 12 ottobre 2022, n. 157"
+   }
+  },
+  {
+   "name": "Ministro per la pubblica amministrazione",
+   "role": "addressee",
+   "function": "Defines by guidelines the minimum AI competence framework for public employees, after consulting AgID and ACN (Art. 40(2)).",
+   "evidence": {
+    "provision": "Art. 40(2)",
+    "quote": "Il Ministro per la pubblica amministrazione, sentite AgID e ACN e previa intesa in Conferenza Stato-Regioni, definisce, con proprie linee guida"
+   }
+  },
+  {
+   "name": "Ministero del lavoro e delle politiche sociali",
+   "role": "addressee",
+   "function": "Coordinates measures ensuring that introduction and use of AI systems in workplaces respects health and safety principles (Art. 42(1)).",
+   "evidence": {
+    "provision": "Art. 42(1)",
+    "quote": "Il Ministero del lavoro e delle politiche sociali, nell'ambito delle competenze attribuite dal decreto legislativo 9 aprile 2008, n. 81, assicura il coordinamento"
+   }
+  }
+ ],
+ "notes": "The export is the enacted decree dated Rome, 7 October 2026 (n. 179); it gives no publication or entry-into-force date, so periods counted from entry into force cannot be dated from this text. The registry title refers to schema AG 421; the annotation follows the adopted text. The text refers throughout to the AI Regulation and to Law 132/2025 ('legge IA') and incorporates their definitions by reference (Art. 1(1)-(2)). No numerical inconsistencies were found. Art. 24(4) ends with a publication-related sentence that is not clearly linked to its lettered list in the export. Target instrument IDs and entity LEI/ticker are empty strings because the schema requires strings and no identifiers were verified or in the registry. The section_status below is schema-required; relations and entities are populated.",
+ "events": [
+  {
+   "event": "proposed",
+   "date": "2026-06-10",
+   "date_type": "absolute",
+   "date_text": "adottata nella riunione del 10 giugno 2026",
+   "applies_to": "Consiglio dei ministri preliminary deliberation on the draft decree",
+   "evidence": {
+    "provision": "Visti (preamble)",
+    "quote": "Vista la preliminare deliberazione del Consiglio dei ministri, adottata nella riunione del 10 giugno 2026;"
+   }
+  },
+  {
+   "event": "legislative_approval",
+   "date": "2026-08-04",
+   "date_type": "absolute",
+   "date_text": "adottata nella riunione del 4 agosto 2026",
+   "applies_to": "Consiglio dei ministri final deliberation before signature",
+   "evidence": {
+    "provision": "Visti (preamble)",
+    "quote": "Vista la deliberazione del Consiglio dei ministri, adottata nella riunione del 4 agosto 2026;"
+   }
+  },
+  {
+   "event": "signed",
+   "date": "2026-10-07",
+   "date_type": "absolute",
+   "date_text": "Dato a Roma, addì 7 ottobre 2026",
+   "applies_to": "Decreto legislativo n. 179 (President of the Republic)",
+   "evidence": {
+    "provision": "Capo V, Disposizioni finali (signature clause)",
+    "quote": "Dato a Roma, addì 7 ottobre 2026"
+   }
+  },
+  {
+   "event": "published",
+   "date": null,
+   "date_type": "not_stated",
+   "date_text": "sarà inserito nella Raccolta ufficiale degli atti normativi della Repubblica italiana",
+   "applies_to": "Decreto legislativo n. 179 (insertion in the official collection of normative acts)",
+   "evidence": {
+    "provision": "Capo V, Disposizioni finali",
+    "quote": "Il presente decreto, munito del sigillo dello Stato, sarà inserito nella Raccolta ufficiale degli atti normativi della Repubblica italiana."
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": null,
+   "date_type": "not_stated",
+   "date_text": "the text contains no entry-into-force date or clause; periods in the decree run from entry into force",
+   "applies_to": "Decreto legislativo n. 179 as a whole",
+   "evidence": {
+    "provision": "Capo V, Disposizioni finali",
+    "quote": "Il presente decreto, munito del sigillo dello Stato, sarà inserito nella Raccolta ufficiale degli atti normativi della Repubblica italiana."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "da adottare entro novanta giorni dalla data di entrata in vigore del presente decreto",
+   "anchor": "data di entrata in vigore del presente decreto",
+   "applies_to": "DPCM on parameters for calculating costs of surveillance activities for non-conforming products (Art. 10(2))",
+   "offset_value": 90,
+   "offset_unit": "days",
+   "anchor_event": "entry_into_force",
+   "evidence": {
+    "provision": "Art. 10(2)",
+    "quote": "da adottare entro novanta giorni dalla data di entrata in vigore del presente decreto"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "avvia, entro novanta giorni dalla data di entrata in vigore del presente decreto, un piano di formazione",
+   "anchor": "data di entrata in vigore del presente decreto",
+   "applies_to": "Ministry of Education and Merit: launch of teacher training plan on social media use (Art. 37(1))",
+   "offset_value": 90,
+   "offset_unit": "days",
+   "anchor_event": "entry_into_force",
+   "evidence": {
+    "provision": "Art. 37(1)",
+    "quote": "avvia, entro novanta giorni dalla data di entrata in vigore del presente decreto, un piano di formazione"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "da adottare entro novanta giorni dalla data di entrata in vigore del presente decreto",
+   "anchor": "data di entrata in vigore del presente decreto",
+   "applies_to": "Decree of the Minister of Education and Merit on criteria and modalities of AI training for school staff (Art. 38(1))",
+   "offset_value": 90,
+   "offset_unit": "days",
+   "anchor_event": "entry_into_force",
+   "evidence": {
+    "provision": "Art. 38(1)",
+    "quote": "da adottare entro novanta giorni dalla data di entrata in vigore del presente decreto."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "Entro sei mesi dalla data di entrata in vigore del presente decreto",
+   "anchor": "data di entrata in vigore del presente decreto",
+   "applies_to": "National professional councils and bodies: adjustment of training regulations to include AI literacy paths (Art. 47(5))",
+   "offset_value": 6,
+   "offset_unit": "months",
+   "anchor_event": "entry_into_force",
+   "evidence": {
+    "provision": "Art. 47(5)",
+    "quote": "Entro sei mesi dalla data di entrata in vigore del presente decreto, i consigli nazionali degli ordini e dei collegi"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "da concludere entro sei mesi dalla data di entrata in vigore del presente decreto",
+   "anchor": "data di entrata in vigore del presente decreto",
+   "applies_to": "Agreement in the Conferenza Stato-Regioni on inclusion of AI training in continuing medical education for health professions (Art. 47(6))",
+   "offset_value": 6,
+   "offset_unit": "months",
+   "anchor_event": "entry_into_force",
+   "evidence": {
+    "provision": "Art. 47(6)",
+    "quote": "da concludere entro sei mesi dalla data di entrata in vigore del presente decreto"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "Entro dodici mesi dalla data di entrata in vigore del presente decreto",
+   "anchor": "data di entrata in vigore del presente decreto",
+   "applies_to": "Decrees on fee-setting (equo compenso) to be supplemented with parameters for AI-based modulation (Art. 49(2))",
+   "offset_value": 12,
+   "offset_unit": "months",
+   "anchor_event": "entry_into_force",
+   "evidence": {
+    "provision": "Art. 49(2)",
+    "quote": "Entro dodici mesi dalla data di entrata in vigore del presente decreto"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "Entro sei mesi dalla data di entrata in vigore del presente decreto",
+   "anchor": "data di entrata in vigore del presente decreto",
+   "applies_to": "Commissione nazionale per la formazione continua: define percentage of triennial training obligation for AI paths (Art. 51(3))",
+   "offset_value": 6,
+   "offset_unit": "months",
+   "anchor_event": "entry_into_force",
+   "evidence": {
+    "provision": "Art. 51(3)",
+    "quote": "Entro sei mesi dalla data di entrata in vigore del presente decreto, la Commissione nazionale per la formazione continua"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "Entro sei mesi dalla data di entrata in vigore del presente decreto",
+   "anchor": "data di entrata in vigore del presente decreto",
+   "applies_to": "Agenzia nazionale per i servizi sanitari regionali: identify AI training programmes for management courses (Art. 51(4))",
+   "offset_value": 6,
+   "offset_unit": "months",
+   "anchor_event": "entry_into_force",
+   "evidence": {
+    "provision": "Art. 51(4)",
+    "quote": "Entro sei mesi dalla data di entrata in vigore del presente decreto, l'Agenzia nazionale per i servizi sanitari regionali"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "presentano relazioni annuali all'ufficio per l'IA a decorrere dall'anno successivo all'istituzione dello Spazio di sperimentazione normativa per l'IA e successivamente ogni anno fino alla sua cessazione",
+   "depends_on": "istituzione dello Spazio di sperimentazione normativa per l'IA",
+   "applies_to": "National competent authorities: annual reports to the AI Office on regulatory sandboxes (Art. 31(1))",
+   "evidence": {
+    "provision": "Art. 31(1)",
+    "quote": "presentano relazioni annuali all'ufficio per l'IA a decorrere dall'anno successivo all'istituzione"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "other",
+   "variable_text": "dimensione d'impresa: piccole e medie imprese, microimprese e start-up innovative",
+   "operator": "=",
+   "value": null,
+   "value_text": "criterio di cui all'articolo 99, paragrafo 6, del regolamento IA (set by reference to the AI Act)",
+   "unit": "",
+   "measurement": "Not stated in this text; size criterion is defined by reference to Art. 99(6) of Regulation (EU) 2024/1689",
+   "level": "entity",
+   "trigger": "penalty_tier",
+   "consequence": "Administrative fine for these undertakings is determined under the Art. 99(6) AI Act criterion.",
+   "conditions": "Applies to SMEs, microenterprises and innovative start-ups.",
+   "depends_on": "Art. 99(6) of Regulation (EU) 2024/1689; start-up innovative status not defined in this text",
+   "evidence": {
+    "provision": "Art. 23(7)",
+    "quote": "Per le piccole e medie imprese, ivi incluse le microimprese, e le start-up innovative, la sanzione è determinata secondo il criterio di cui all'articolo 99, paragrafo 6, del regolamento IA."
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "durata dell'assegnazione di personale delle università, enti di ricerca e istituzioni AFAM a supporto dello Spazio di sperimentazione normativa",
+   "operator": "<=",
+   "value": 3,
+   "value_text": "non superiore a tre anni",
+   "unit": "years",
+   "measurement": "Period of assignment, whether or not continuous; measurement window not stated",
+   "level": "person",
+   "trigger": "cap",
+   "consequence": "Assignment of personnel to support sandbox activities may not exceed three years, or the sandbox period if shorter.",
+   "conditions": "Also not longer than the period set for the sandbox experiment; applies to assignments under Art. 45(3).",
+   "evidence": {
+    "provision": "Art. 45(3)",
+    "quote": "in ogni caso per un periodo non superiore a tre anni, anche non continuativi"
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "definizioni richiamate ai fini del decreto",
+   "defined_in": "Regulation (EU) 2024/1689, Art. 3; Legge 132/2025, Art. 2; TUF (D.Lgs. 58/1998, Art. 1); TUB (D.Lgs. 385/1993, Art. 1); Codice delle assicurazioni private (D.Lgs. 209/2005, Art. 1)",
+   "evidence": {
+    "provision": "Art. 1(1)",
+    "quote": "Ai fini del presente decreto, si applicano le definizioni di cui all'articolo 3 del regolamento (UE) 2024/1689"
+   }
+  },
+  {
+   "term": "autorità nazionali per l'intelligenza artificiale",
+   "defined_in": "Art. 1(2)(a)",
+   "evidence": {
+    "provision": "Art. 1(2)(a)",
+    "quote": "«autorità nazionali per l'intelligenza artificiale»: l'Agenzia per l'Italia digitale (AgID) e l'Agenzia per la cybersicurezza nazionale (ACN)"
+   }
+  },
+  {
+   "term": "autorità nazionali di vigilanza del mercato",
+   "defined_in": "Art. 1(2)(b)",
+   "evidence": {
+    "provision": "Art. 1(2)(b)",
+    "quote": "«autorità nazionali di vigilanza del mercato»: l'ACN, la Banca d'Italia, la Commissione nazionale per la società e la borsa (CONSOB), l'Istituto per la vigilanza sulle assicurazioni (IVASS) e il Garante per la protezione dei dati personali"
+   }
+  },
+  {
+   "term": "autorità settoriali di vigilanza del mercato",
+   "defined_in": "Art. 1(2)(c)",
+   "evidence": {
+    "provision": "Art. 1(2)(c)",
+    "quote": "«autorità settoriali di vigilanza del mercato»: le amministrazioni di cui dall'articolo 3 del decreto legislativo 12 ottobre 2022, n. 157"
+   }
+  },
+  {
+   "term": "autorità del settore finanziario",
+   "defined_in": "Art. 1(2)(d)",
+   "evidence": {
+    "provision": "Art. 1(2)(d)",
+    "quote": "«autorità del settore finanziario»: la Banca d'Italia, la CONSOB e l'IVASS"
+   }
+  },
+  {
+   "term": "autorità nazionale di notifica",
+   "defined_in": "Art. 1(2)(e)",
+   "evidence": {
+    "provision": "Art. 1(2)(e)",
+    "quote": "«autorità nazionale di notifica»: l'AgID"
+   }
+  },
+  {
+   "term": "Comitato di coordinamento",
+   "defined_in": "Art. 1(2)(f)",
+   "evidence": {
+    "provision": "Art. 1(2)(f)",
+    "quote": "«Comitato di coordinamento»: il comitato istituito presso la Presidenza del Consiglio dei ministri"
+   }
+  },
+  {
+   "term": "istituti finanziari",
+   "defined_in": "Art. 1(2)(g)",
+   "evidence": {
+    "provision": "Art. 1(2)(g)",
+    "quote": "«istituti finanziari»: le banche italiane e le banche dell'Unione europea con succursale in Italia"
+   }
+  },
+  {
+   "term": "regolamento IA",
+   "defined_in": "Art. 1(2)(h)",
+   "evidence": {
+    "provision": "Art. 1(2)(h)",
+    "quote": "«regolamento IA»: il regolamento (UE) 2024/1689"
+   }
+  },
+  {
+   "term": "legge IA",
+   "defined_in": "Art. 1(2)(i)",
+   "evidence": {
+    "provision": "Art. 1(2)(i)",
+    "quote": "«legge IA»: la legge 23 settembre 2025, n. 132"
+   }
+  },
+  {
+   "term": "normativa di armonizzazione dell'Unione",
+   "defined_in": "Art. 1(2)(l), by reference to Annex I of Regulation (EU) 2024/1689",
+   "evidence": {
+    "provision": "Art. 1(2)(l)",
+    "quote": "«normativa di armonizzazione dell'Unione»: la normativa di armonizzazione dell'Unione europea elencata all'allegato I al regolamento IA"
+   }
+  },
+  {
+   "term": "Spazio di sperimentazione italiano per l'IA",
+   "defined_in": "Art. 1(2)(n), by reference to Art. 57 of Regulation (EU) 2024/1689",
+   "evidence": {
+    "provision": "Art. 1(2)(n)",
+    "quote": "«Spazio di sperimentazione italiano per l'IA»: lo spazio di sperimentazione nazionale per l'intelligenza artificiale, ai sensi dell'articolo 57 del regolamento IA."
+   }
+  },
+  {
+   "term": "sperimentazione FinTech",
+   "defined_in": "Art. 1(2)(o)",
+   "evidence": {
+    "provision": "Art. 1(2)(o)",
+    "quote": "«sperimentazione FinTech»: lo spazio di sperimentazione di cui all'articolo 36, commi da 2-bis a 2-novies, del decreto-legge 30 aprile 2019, n. 34"
+   }
+  },
+  {
+   "term": "sistema di intelligenza artificiale",
+   "defined_in": "Regulation (EU) 2024/1689, Art. 3(1), as referenced in Art. 41(1) of this decreto",
+   "evidence": {
+    "provision": "Art. 41(1)",
+    "quote": "sistemi di intelligenza artificiale, quali definiti dall'articolo 3, punto 1), del regolamento IA"
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "AgID, as national notification authority, is responsible for procedures to assess, designate and notify conformity assessment bodies and to monitor them.",
+   "evidence": {
+    "provision": "Art. 4(1)",
+    "quote": "l'AgID è l'autorità nazionale di notifica, responsabile della predisposizione e dell'attuazione delle procedure necessarie per la valutazione, la designazione e la notifica degli organismi di valutazione della conformità"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "ACN, Banca d'Italia, CONSOB, IVASS and the Garante are designated as national market surveillance authorities for their respective areas, with ACN as competent authority for AI systems generally.",
+   "evidence": {
+    "provision": "Art. 5(1)",
+    "quote": "sono autorità nazionali di vigilanza del mercato ai sensi del medesimo regolamento"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "ACN, acting as single point of contact, must be contactable under the modalities published on its website; contact information is also made available in the Commission's list of single points of contact.",
+   "evidence": {
+    "provision": "Art. 6(1)",
+    "quote": "è contattabile secondo le modalità pubblicate nel proprio sito internet istituzionale"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "AgID and the national market surveillance authorities conclude agreements to share data and information in a timely and complete manner, set up rapid-response cooperation for serious incidents, and coordinate with fundamental-rights, financial and law-enforcement authorities.",
+   "evidence": {
+    "provision": "Art. 7(1)",
+    "quote": "stipulano tra loro accordi, ai sensi e per gli effetti dell'articolo 15, della legge 7 agosto 1990, n. 241"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Agreements and protocols affecting territorial public administrations must be communicated before adoption to the Conferenza delle Regioni e delle Province autonome, ANCI and UPI.",
+   "evidence": {
+    "provision": "Art. 7(2)",
+    "quote": "sono comunicati, prima della loro adozione, alla Conferenza delle Regioni e delle Province autonome"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "ACN coordinates and cooperates with the relevant sectoral market surveillance authorities, performs joint activities where a product is covered by both the AI Regulation and Union harmonisation law, and sectoral authorities inform ACN of relevant conformity checks.",
+   "evidence": {
+    "provision": "Art. 8(2)",
+    "quote": "svolgono in forma congiunta le attività connesse all'esercizio dei poteri di vigilanza"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "ACN and the financial sector authorities cooperate, including through agreements under Law 241/1990, on AI systems used by financial institutions; ACN and the Garante cooperate on non-high-risk AI systems in listed contexts; and authorities exchange information on financial institutions.",
+   "evidence": {
+    "provision": "Art. 9(1)",
+    "quote": "l'ACN e le Autorità del settore finanziario collaborano anche attraverso la stipula di accordi"
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "A decree of the President of the Council of Ministers, on ACN proposal and with the Minister of Economy and Finance, sets the parameters for calculating the costs of supervisory activities on non-compliant products.",
+   "applies_from": "90 days from entry into force of this decree",
+   "evidence": {
+    "provision": "Art. 10(2)",
+    "quote": "da adottare entro novanta giorni dalla data di entrata in vigore del presente decreto sono stabiliti i parametri per il calcolo dei costi delle attività di vigilanza"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "may",
+   "summary": "The AI national authorities and financial sector authorities may adopt guidelines, recommendations and good practices within the limits set by the AI Regulation and the national AI law; the Garante has the same power for the limited scope in Art. 74(8).",
+   "conditional_on": "Within the limits and purposes set by Arts. 57(6)-(7), 70(8), 74(11) of the AI Regulation and by Law 132/2025",
+   "evidence": {
+    "provision": "Art. 11(1)",
+    "quote": "possono, secondo le rispettive competenze, adottare linee guida, raccomandazioni e buone pratiche"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "ACN and AgID must inform the Coordination Committee of the conclusion and start of negotiations of agreements and protocols with other authorities.",
+   "evidence": {
+    "provision": "Art. 12(3)",
+    "quote": "ACN e AgID informano il Comitato di coordinamento della stipula degli accordi e dei protocolli d'intesa"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "AgID defines and implements the procedures for evaluation, designation and notification of conformity assessment bodies.",
+   "evidence": {
+    "provision": "Art. 13(2)",
+    "quote": "L'AgID definisce e attua le procedure di valutazione, designazione e notifica degli organismi di valutazione della conformità"
+   }
+  },
+  {
+   "type": "audit",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "AgID ensures continuous monitoring, with periodic and extraordinary audits, of notified bodies and the entities under Art. 33 AI Regulation; where deficiencies are found, it starts limitation, suspension and withdrawal proceedings after hearing the body.",
+   "evidence": {
+    "provision": "Art. 13(3)",
+    "quote": "assicura il monitoraggio continuo, con audit periodici e straordinari, sul mantenimento dei requisiti relativi agli organismi notificati"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "auditor_assessor",
+   "modality": "shall",
+   "summary": "The costs of AgID's monitoring controls on notified bodies are borne by those bodies, under Art. 30(4)-(5) of Law 234/2012.",
+   "evidence": {
+    "provision": "Art. 13(4)",
+    "quote": "sono a carico degli organismi medesimi"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "ACN is competent for national registration of the high-risk AI systems listed in Annex III, point 2, of the AI Regulation.",
+   "evidence": {
+    "provision": "Art. 14(1)",
+    "quote": "l'ACN è competente per la registrazione, a livello nazionale, dei sistemi di IA ad alto rischio di cui all'allegato III, punto 2, del regolamento IA"
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "A decree of the ACN Director General, in agreement with AgID, sets the modalities for registration, keeping and management of the information in Annex VIII of the AI Regulation.",
+   "evidence": {
+    "provision": "Art. 14(2)",
+    "quote": "Con decreto del direttore generale di ACN, di intesa con AgID, sono stabilite le modalità di registrazione, tenuta e gestione delle informazioni"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "ACN exercises the supervisory and inspection powers of the AI Regulation and of Regulation (EU) 2019/1020, including controls and unannounced remote or on-site inspections of real-world testing.",
+   "evidence": {
+    "provision": "Art. 15(1)",
+    "quote": "l'ACN esercita i poteri di vigilanza e ispettivi previsti dal regolamento IA"
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "A regulation adopted by decree of the President of the Council of Ministers, on ACN proposal, defines the modalities for exercising the Art. 15(1)-(2) powers and for adopting the measures in Art. 16.",
+   "evidence": {
+    "provision": "Art. 15(3)",
+    "quote": "sono definite le modalità per l'esercizio dei poteri di cui ai commi 1 e 2"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "ACN is the competent supervisory authority for the measures under AI Regulation Arts. 79, 80, 82 and 83 and Regulation (EU) 2019/1020 Arts. 14 and 16; proceedings start on reports of serious incidents, admissible complaints, reports from other authorities, or on ACN's own initiative.",
+   "evidence": {
+    "provision": "Art. 16(2)",
+    "quote": "Il procedimento relativo alle misure di cui al comma 1 è avviato a seguito di segnalazione di incidenti gravi"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The financial sector authorities have supervisory and inspection powers over supervised financial institutions under the AI Regulation and Regulation (EU) 2019/1020, without prejudice to Art. 22 of Law 262/2005.",
+   "evidence": {
+    "provision": "Art. 17(1)",
+    "quote": "le Autorità del settore finanziario dispongono, nei confronti degli istituti finanziari vigilati, dei poteri previsti dal regolamento IA"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The financial sector authorities sign a protocol of understanding with the Guardia di Finanza on information exchange for prevention and repression of economic and financial offences, and an analogous protocol with the DIA.",
+   "evidence": {
+    "provision": "Art. 17(4)",
+    "quote": "Le Autorità del settore finanziario stipulano un protocollo d'intesa con il Corpo della guardia di finanza"
+   }
+  },
+  {
+   "type": "complaint_mechanism",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "National market surveillance authorities receive complaints under AI Regulation Art. 85 and handle them under their own procedures, ensuring the right to adversarial hearing; a complaint sent to a non-competent authority is forwarded ex officio with notice to the complainant.",
+   "evidence": {
+    "provision": "Art. 18(1)",
+    "quote": "ricevono i reclami ai sensi dell'articolo 85 del regolamento IA e li trattano secondo le procedure adottate da ciascuna"
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "ACN regulates by director-general decree the procedure for handling complaints within its competence.",
+   "evidence": {
+    "provision": "Art. 18(2)",
+    "quote": "L'ACN disciplina la procedura per la trattazione dei reclami di cui al comma 1 di propria competenza con decreto del direttore generale"
+   }
+  },
+  {
+   "type": "complaint_mechanism",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Out-of-court dispute resolution bodies for financial customers (Arts. 128-bis TUB, 187.1 CAP, 32-ter TUF) handle appeals about AI Regulation violations by member financial institutions, where committed in their area of competence.",
+   "evidence": {
+    "provision": "Art. 18(3)",
+    "quote": "sono competenti per i ricorsi relativi alle violazioni del regolamento IA compiute dagli istituti finanziari che aderiscono a tali organismi"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "AgID and the national market surveillance authorities must take all measures necessary for correct and effective implementation of the sanctions section, taking into account AI Regulation Art. 99.",
+   "evidence": {
+    "provision": "Art. 19(1)",
+    "quote": "adottano tutte le misure necessarie per garantire un'attuazione corretta ed efficace della presente sezione"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "AgID and the market surveillance authorities must promptly inform ACN of administrative fines imposed and of related disputes or court proceedings; ACN is competent for the activity under AI Regulation Art. 99(11).",
+   "evidence": {
+    "provision": "Art. 24(9)",
+    "quote": "informano tempestivamente l'ACN delle sanzioni amministrative pecuniarie applicate"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Italian AI regulatory sandbox is established under the direct supervision of the national AI authorities, to support best-practice sharing, innovation and regulatory learning, and to ease market access for AI systems, especially from SMEs and start-ups.",
+   "evidence": {
+    "provision": "Art. 26(1)",
+    "quote": "È istituito, sotto la vigilanza diretta delle Autorità nazionali per l'intelligenza artificiale, lo Spazio di sperimentazione italiano per l'IA"
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "AgID and ACN jointly provide, by decree of their directors general, for access to the controlled environment of the sandbox, its management and operation, coordinated by the Coordination Committee; Art. 26(4) requires objective and transparent admission criteria covering eligible entities, access priorities and maturity.",
+   "evidence": {
+    "provision": "Art. 26(2)",
+    "quote": "Le modalità di accesso, di gestione e di funzionamento dello Spazio di sperimentazione italiano, di cui al primo periodo, sono stabilite con decreto adottato in forma congiunta dai direttori generali dell'AgID e dell'ACN"
+   }
+  },
+  {
+   "type": "eligibility_condition",
+   "addressee": "ai_provider",
+   "summary": "Providers and prospective providers of AI systems may participate in the Italian sandbox through eligibility criteria identified and assessed under Art. 26(2)-(4) and the implementing decrees.",
+   "conditional_on": "Participation in the Italian AI sandbox",
+   "evidence": {
+    "provision": "Art. 26(3)",
+    "quote": "avviene mediante l'individuazione e la valutazione di criteri di eleggibilità"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The strategic management and general guidelines of the Italian sandbox are defined within the Coordination Committee, after consultation with stakeholders, Regions and Autonomous Provinces; the Committee sets experimentation priorities and selection order of providers.",
+   "evidence": {
+    "provision": "Art. 27(1)",
+    "quote": "La gestione strategica e gli indirizzi generali dello Spazio di sperimentazione italiano per l'IA sono definiti nell'ambito del Comitato di coordinamento"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "AgID and ACN must set up, by joint decree of their directors general, a parity-composed Operational Group that manages the sandbox; the Group monitors development, testing and validation by admitted providers, conducts preliminary admissibility review, selects projects, and approves and monitors test plans; the Ministry of University and Research contributes to technical requirements.",
+   "evidence": {
+    "provision": "Art. 28(1)",
+    "quote": "l'AgID e l'ACN provvedono, mediante decreto adottato congiuntamente dai rispettivi direttori generali, a costituire un Gruppo operativo"
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Decrees of the AgID and ACN directors general define the composition, functioning and operational modalities of the Operational Group, the services offered, and the eligibility criteria.",
+   "evidence": {
+    "provision": "Art. 28(5)",
+    "quote": "sono definiti la composizione, il funzionamento e le modalità operative del Gruppo"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The national AI authorities must respect the confidentiality of information and data obtained in carrying out sandbox tasks, in accordance with AI Regulation Art. 78.",
+   "evidence": {
+    "provision": "Art. 28(6)",
+    "quote": "Le Autorità nazionali per l'intelligenza artificiale rispettano la riservatezza delle informazioni e dei dati"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "AgID supervises cooperation with notified bodies, in line with any implementing acts of the Commission under AI Regulation Art. 58.",
+   "evidence": {
+    "provision": "Art. 29(2)",
+    "quote": "La cooperazione con gli organismi notificati è supervisionata da AgID"
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Regulations adopted by decree of the President of the Council of Ministers, on proposal of the national AI authorities, define the establishment, management and operation of dual-use and judicial sandboxes (after consulting the Ministries of Defence and Justice), and the coordination with the FinTech sandbox (Art. 30(6)).",
+   "evidence": {
+    "provision": "Art. 30(1)",
+    "quote": "le modalità di istituzione, gestione e funzionamento degli spazi di sperimentazione di sistemi di IA impiegabili in chiave duale"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Agreements set out the instruments for coordination between the Italian sandbox and regional and local sandboxes, and the criteria for including their results in the annual report under Art. 31.",
+   "evidence": {
+    "provision": "Art. 30(4)",
+    "quote": "sono stabiliti gli strumenti di raccordo tra lo Spazio di sperimentazione italiano per l'IA"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The competent national authorities submit annual reports to the AI Office from the year after the sandbox is established, until its termination, plus a final report; the reports are transmitted through the Coordination Committee to the Presidency of the Council.",
+   "applies_from": "from the year after the institution of the regulatory sandbox",
+   "evidence": {
+    "provision": "Art. 31(1)",
+    "quote": "presentano relazioni annuali all'ufficio per l'IA a decorrere dall'anno successivo all'istituzione dello Spazio di sperimentazione normativa per l'IA"
+   }
+  },
+  {
+   "type": "data_minimization",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Coordination and information exchanges under the decree, including those deviating from official secrecy, must comply with data protection law and the principles of necessity, proportionality and minimisation.",
+   "evidence": {
+    "provision": "Art. 34",
+    "quote": "avvengono, anche in deroga all'obbligo del segreto d'ufficio, nel rispetto della vigente normativa in materia di protezione dei dati personali"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Ministry of Education and Merit updates the STEM guidelines to integrate AI; the Ministry of Labour contributes to analysis of emerging professional skills linked to STEAM and AI, and the Ministry updates national curriculum indications.",
+   "evidence": {
+    "provision": "Art. 36(3)",
+    "quote": "Il Ministero dell'istruzione e del merito provvede all'aggiornamento delle linee guida per le discipline STEM"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Ministry of Education and Merit launches, within 90 days, a teacher training plan on the use of social media and digital platforms, including educational actions for pupils and families.",
+   "applies_from": "90 days from entry into force of this decree",
+   "evidence": {
+    "provision": "Art. 37(1)",
+    "quote": "avvia, entro novanta giorni dalla data di entrata in vigore del presente decreto, un piano di formazione"
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "A decree of the Minister of Education and Merit, to be adopted within 90 days, sets the criteria and modalities for AI training of school teachers and CPIA staff, and defines the interventions for students.",
+   "applies_from": "90 days from entry into force of this decree",
+   "evidence": {
+    "provision": "Art. 38(1)",
+    "quote": "è erogata con i criteri e le modalità stabilite con decreto del Ministro dell'istruzione e del merito, da adottare entro novanta giorni dalla data di entrata in vigore del presente decreto"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "CPIA, within their autonomy, promote adult AI-literacy courses, including methods for assessing and recognising prior and acquired competences.",
+   "evidence": {
+    "provision": "Art. 39(1)",
+    "quote": "favoriscono la realizzazione di percorsi di ampliamento dell'offerta formativa finalizzati all'alfabetizzazione degli adulti"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Minister for Public Administration directs and coordinates recruitment, training and reskilling policies for public employees for AI use.",
+   "evidence": {
+    "provision": "Art. 40(1)",
+    "quote": "indirizza e coordina le politiche di reclutamento, di formazione di base, di formazione continua"
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Minister for Public Administration, after consulting AgID and ACN and agreeing with the Conferenza Stato-Regioni, sets by guidelines the minimum AI competence framework for public employees.",
+   "evidence": {
+    "provision": "Art. 40(2)",
+    "quote": "definisce, con proprie linee guida, il quadro minimo di competenze sull'intelligenza artificiale necessarie al personale dipendente pubblico"
+   }
+  },
+  {
+   "type": "human_oversight",
+   "addressee": "employer",
+   "modality": "shall",
+   "summary": "An employer using AI systems must ensure that final decisions on hiring, modification or termination of employment, including disciplinary and performance decisions, are not taken solely on the basis of automated processing; the final decision is reserved to a natural person with effective and autonomous power. Consent does not exempt from this rule.",
+   "conditional_on": "Employer uses AI systems within the meaning of Art. 3(1) AI Regulation in employment decisions",
+   "evidence": {
+    "provision": "Art. 41(1)",
+    "quote": "assicura che le decisioni finali relative alla costituzione, alla modificazione o alla risoluzione del rapporto, ivi compresi i provvedimenti disciplinari e le valutazioni delle prestazioni, non siano adottate unicamente sulla base di un trattamento automatizzato"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "employer",
+   "modality": "shall",
+   "summary": "Use of AI systems in employment must respect worker dignity and confidentiality and the principle of non-discrimination.",
+   "evidence": {
+    "provision": "Art. 41(2)",
+    "quote": "L'utilizzo dei sistemi di cui al comma 1 avviene nel rispetto della dignità e della riservatezza del lavoratore e del principio di non discriminazione"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "employer",
+   "modality": "shall",
+   "summary": "Before starting processing, the employer must fulfil the information duties under Art. 1-bis of Legislative Decree 152/1997.",
+   "applies_from": "before the start of processing",
+   "evidence": {
+    "provision": "Art. 41(3)",
+    "quote": "Prima dell'avvio del trattamento, il datore di lavoro assolve agli obblighi di informativa previsti dall'articolo 1-bis del decreto legislativo 26 maggio 1997, n. 152"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "employer",
+   "modality": "shall",
+   "summary": "On request, the worker is entitled to an intelligible reasoned explanation of a decision affecting them, provided through a natural person, including the extent of AI influence and main parameters considered; access and rights under GDPR Arts. 13, 15 and 22 remain.",
+   "conditional_on": "On request by the worker",
+   "evidence": {
+    "provision": "Art. 41(3)",
+    "quote": "Il lavoratore ha diritto di ottenere, a richiesta e mediante l'intervento di una persona fisica, una motivazione intelligibile della decisione"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Ministry of Labour and Social Policies coordinates measures, within Legislative Decree 81/2008, to ensure that AI introduction and use in workplaces respects health and safety principles.",
+   "evidence": {
+    "provision": "Art. 42(1)",
+    "quote": "assicura il coordinamento delle misure volte a garantire che l'introduzione e l'utilizzo dei sistemi di intelligenza artificiale nei contesti lavorativi"
+   }
+  },
+  {
+   "type": "risk_assessment",
+   "addressee": "employer",
+   "modality": "shall",
+   "summary": "AI systems affecting work organisation, work pace, performance modalities or safety-relevant decisions are assessed within the workplace risk assessment under Art. 28 of Legislative Decree 81/2008.",
+   "conditional_on": "AI systems that affect work organisation, production rhythms, performance or safety-relevant decision processes",
+   "evidence": {
+    "provision": "Art. 42(2)",
+    "quote": "è valutato nell'ambito della valutazione dei rischi di cui all'articolo 28 del decreto legislativo n. 81 del 2008"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "employer",
+   "modality": "shall",
+   "summary": "Employers ensure adequate information and training of workers on the specific risks of AI systems and on the prevention and protection measures adopted.",
+   "evidence": {
+    "provision": "Art. 42(3)",
+    "quote": "I datori di lavoro assicurano un'adeguata informazione e formazione dei lavoratori in merito ai rischi specifici connessi all'utilizzo dei sistemi di intelligenza artificiale"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "research_institution",
+   "modality": "shall",
+   "summary": "Universities and AFAM institutions must include, in their training activities, integrated technical, legal, functional, ethical and fundamental-rights profiles related to the use of AI systems.",
+   "evidence": {
+    "provision": "Art. 44(2)",
+    "quote": "le attività formative prevedono una formazione integrata dei profili tecnici, giuridici, funzionali, etici e di tutela dei diritti fondamentali della persona"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "research_institution",
+   "modality": "shall",
+   "summary": "Training activities must ensure minimum content in relation to AI systems (principles, limits and risks, critical interpretation of outputs, legal and ethical implications, human oversight, cybersecurity), achieved through dedicated courses, integrated modules, labs or internships.",
+   "conditional_on": "Proportionate to the type of course and disciplinary profile",
+   "evidence": {
+    "provision": "Art. 44(3)",
+    "quote": "assicurano, in misura proporzionata alla tipologia di corso e al relativo profilo disciplinare, i seguenti contenuti minimi in relazione ai sistemi di intelligenza artificiale"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Ministry of University and Research carries out annual monitoring of the implementation of Art. 44(1)-(4) in universities and AFAM institutions, based on national quality-assessment data.",
+   "evidence": {
+    "provision": "Art. 44(6)",
+    "quote": "Il Ministero dell'università e della ricerca svolge un'attività di monitoraggio annuale sull'attuazione"
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "A decree of the Minister of University and Research, after consulting ANVUR, sets the monitoring indicators, operational modalities, criteria and forms of participation in European working groups.",
+   "evidence": {
+    "provision": "Art. 44(7)",
+    "quote": "sono definiti gli indicatori di monitoraggio, le modalità operative in formato compatibile con i sistemi informativi europei"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Justice administration staff training paths must meet the AI literacy obligations of AI Regulation Art. 4, be differentiated by function and risk level and updated periodically, and ensure the competences for human oversight where high-risk systems are used; the Scuola superiore della magistratura trains judges.",
+   "evidence": {
+    "provision": "Art. 46(1)",
+    "quote": "assicurano il rispetto degli obblighi di alfabetizzazione previsti dall'articolo 4 del regolamento IA"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Professional orders and colleges must include AI literacy and training paths in their initial and continuing professional training, covering technical, legal and professional-ethics profiles and a minimum number of hours per continuing-education period; the addressee role here is an approximation for professional bodies.",
+   "evidence": {
+    "provision": "Art. 47(1)",
+    "quote": "I corsi di formazione professionale iniziale e di formazione continua svolti dagli ordini professionali includono percorsi di alfabetizzazione e formazione all'uso dei sistemi di intelligenza artificiale"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Within six months, national councils of orders and colleges must amend their training rules to include the AI paths; within six months, the Conferenza permanente must reach an agreement on including AI training in health-profession continuing medical education.",
+   "applies_from": "six months from entry into force of this decree",
+   "evidence": {
+    "provision": "Art. 47(5)",
+    "quote": "Entro sei mesi dalla data di entrata in vigore del presente decreto, i consigli nazionali degli ordini e dei collegi"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Public administrations and bodies authorised or accredited for employment services that use AI systems must ensure human oversight, transparency of decisions and protection of users and workers' rights.",
+   "conditional_on": "Use of AI systems for employment-service activities under Art. 48(1)",
+   "evidence": {
+    "provision": "Art. 48(2)",
+    "quote": "L'utilizzo dei sistemi di cui al comma 1 è subordinato alla garanzia della supervisione umana, della trasparenza delle decisioni e della tutela dei diritti degli utenti e dei lavoratori"
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Within twelve months, the existing decrees on professional fees and the related decrees are supplemented with parameters for fee modulation reflecting the AI system's risk classification.",
+   "applies_from": "twelve months from entry into force of this decree",
+   "evidence": {
+    "provision": "Art. 49(2)",
+    "quote": "sono integrati con la determinazione dei parametri utili alla modulazione"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Committee for financial education promotes and coordinates measures to raise public awareness of opportunities and risks of AI in the financial sector.",
+   "evidence": {
+    "provision": "Art. 50(1)",
+    "quote": "promuove e coordina, anche attraverso l'azione dei suoi componenti, misure atte a sensibilizzare il pubblico"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "healthcare_provider",
+   "modality": "shall",
+   "summary": "Continuing education courses for health professionals must include AI literacy and training paths covering technical, legal and professional-ethics profiles.",
+   "evidence": {
+    "provision": "Art. 51(1)",
+    "quote": "I corsi di formazione continua dei professionisti sanitari includono percorsi di alfabetizzazione e formazione all'uso dei sistemi di intelligenza artificiale"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Within six months, the National Commission for Continuing Education must set a specific percentage of the triennial individual training obligation for AI paths, and the national agency for regional health services must identify AI training programmes for managerial courses.",
+   "applies_from": "six months from entry into force of this decree",
+   "evidence": {
+    "provision": "Art. 51(3)",
+    "quote": "definisce una specifica percentuale dell'obbligo formativo individuale triennale da destinare ai percorsi formativi di cui al comma 1"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The public administrations concerned carry out the activities of the decree using existing human, instrumental and financial resources, without new or greater charges on public finance.",
+   "evidence": {
+    "provision": "Art. 54(1)",
+    "quote": "le amministrazioni interessate provvedono alle attività previste dal presente decreto"
+   }
+  }
+ ],
+ "enforcement": [
+  {
+   "sanction_type": "administrative_fine",
+   "authority": "National market surveillance authorities (Art. 21); AgID as notifying authority for Art. 20 powers",
+   "triggered_by": "Non-compliance with the prohibition of practices under Art. 5 of Regulation (EU) 2024/1689, unless the act constitutes a crime",
+   "max_penalty_text": "fino a euro 35.000.000 ovvero, se superiore, fino al 7 per cento del fatturato mondiale totale annuo dell'esercizio precedente",
+   "max_penalty_amount": 35000000,
+   "currency": "EUR",
+   "penalty_formula": "Higher of EUR 35,000,000 or 7% of worldwide total annual turnover of the preceding financial year (turnover as defined in Art. 99 of Regulation (EU) 2024/1689, per Art. 23(5))",
+   "penalty_reference": "Regulation (EU) 2024/1689 Art. 5; turnover definition in Art. 99 (Art. 23(5) of this decree)",
+   "cure_period": "not stated",
+   "evidence": {
+    "provision": "Art. 23(1)",
+    "quote": "è soggetta alla sanzione amministrativa pecuniaria fino a euro 35.000.000 ovvero, se superiore, fino al 7 per cento del fatturato mondiale totale annuo dell'esercizio precedente"
+   }
+  },
+  {
+   "sanction_type": "administrative_fine",
+   "authority": "National market surveillance authorities (Art. 21); AgID as notifying authority for Art. 20 powers",
+   "triggered_by": "Non-compliance with the obligations listed in Arts. 16, 22, 23, 24, 25, 26, 31, 33(1), (3), (4), 34, 50, 73 and 80 of Regulation (EU) 2024/1689, unless the act constitutes a crime",
+   "max_penalty_text": "fino a euro 15.000.000 ovvero, se superiore, fino al 3 per cento del fatturato mondiale totale annuo dell'esercizio precedente",
+   "max_penalty_amount": 15000000,
+   "currency": "EUR",
+   "penalty_formula": "Higher of EUR 15,000,000 or 3% of worldwide total annual turnover of the preceding financial year",
+   "penalty_reference": "Regulation (EU) 2024/1689 Arts. 16, 22–26, 31, 33(1), (3), (4), 34, 50, 73, 80; turnover per Art. 99 (Art. 23(5))",
+   "cure_period": "not stated",
+   "evidence": {
+    "provision": "Art. 23(2)",
+    "quote": "è soggetto alla sanzione amministrativa pecuniaria fino a euro 15.000.000 ovvero, se superiore, fino al 3 per cento del fatturato mondiale totale annuo dell'esercizio precedente"
+   }
+  },
+  {
+   "sanction_type": "administrative_fine",
+   "authority": "National market surveillance authorities (Art. 21); AgID as notifying authority for Art. 20 powers",
+   "triggered_by": "Supplying inaccurate, incomplete or misleading information to notified bodies or competent authorities in response to a request, unless the act constitutes a crime",
+   "max_penalty_text": "fino a euro 7.500.000 ovvero, se superiore, fino all'1 per cento del fatturato mondiale totale annuo dell'esercizio precedente",
+   "max_penalty_amount": 7500000,
+   "currency": "EUR",
+   "penalty_formula": "Higher of EUR 7,500,000 or 1% of worldwide total annual turnover of the preceding financial year",
+   "penalty_reference": "Regulation (EU) 2024/1689 (information duties toward notified bodies and national competent authorities); turnover per Art. 99 (Art. 23(5))",
+   "cure_period": "not stated",
+   "evidence": {
+    "provision": "Art. 23(3)",
+    "quote": "è soggetta alla sanzione amministrativa pecuniaria fino a euro 7.500.000 ovvero, se superiore, fino all'1 per cento del fatturato mondiale totale annuo dell'esercizio precedente"
+   }
+  },
+  {
+   "sanction_type": "administrative_fine",
+   "authority": "National market surveillance authorities (Art. 21); AgID as notifying authority for Art. 20 powers",
+   "triggered_by": "Non-compliance with the obligations in Arts. 27 and 86 of Regulation (EU) 2024/1689, unless the act constitutes a crime",
+   "max_penalty_text": "fino a euro 1.000.000 ovvero, se superiore, fino allo 0,5 per cento del fatturato mondiale totale annuo dell'esercizio precedente",
+   "max_penalty_amount": 1000000,
+   "currency": "EUR",
+   "penalty_formula": "Higher of EUR 1,000,000 or 0.5% of worldwide total annual turnover of the preceding financial year",
+   "penalty_reference": "Regulation (EU) 2024/1689 Arts. 27 and 86; turnover per Art. 99 (Art. 23(5))",
+   "cure_period": "not stated",
+   "evidence": {
+    "provision": "Art. 23(4)",
+    "quote": "è soggetto alla sanzione amministrativa pecuniaria fino a euro 1.000.000 ovvero, se superiore, fino allo 0,5 per cento del fatturato mondiale totale annuo dell'esercizio precedente"
+   }
+  },
+  {
+   "sanction_type": "injunction_order",
+   "authority": "National notifying authority (AgID) and national market surveillance authorities",
+   "triggered_by": "Violations of Regulation (EU) 2024/1689 characterised by low offensiveness or danger, applied as an alternative to administrative fines",
+   "max_penalty_text": "not stated in this text",
+   "penalty_reference": "Regulation (EU) 2024/1689 Art. 99(1)",
+   "cure_period": "deadline set by the authority in the order",
+   "evidence": {
+    "provision": "Art. 22(1)(a)",
+    "quote": "ordinare di eliminare le infrazioni e di astenersi dal ripeterle, anche indicando le misure da adottare e il termine per attuarle"
+   }
+  },
+  {
+   "sanction_type": "warning_reprimand",
+   "authority": "National notifying authority (AgID) and national market surveillance authorities",
+   "triggered_by": "Violations of Regulation (EU) 2024/1689 characterised by low offensiveness or danger, where the infringement has ceased; applied as an alternative to administrative fines",
+   "max_penalty_text": "not stated in this text",
+   "penalty_reference": "Regulation (EU) 2024/1689 Art. 99(1)",
+   "cure_period": "not stated",
+   "evidence": {
+    "provision": "Art. 22(1)(b)",
+    "quote": "applicare una sanzione consistente nella dichiarazione pubblica avente ad oggetto la violazione commessa e il soggetto responsabile"
+   }
+  },
+  {
+   "sanction_type": "administrative_fine",
+   "authority": "National notifying authority (AgID) and national market surveillance authorities",
+   "triggered_by": "Non-compliance with an order under Art. 22(1)(a) within the deadline set by the authority",
+   "max_penalty_text": "l'importo delle sanzioni è aumentato sino a un terzo rispetto a quello previsto per la violazione originaria, fermi restando i massimali stabiliti dall'articolo 23",
+   "penalty_formula": "Up to one third above the amount for the original violation, subject to the Art. 23 maxima",
+   "penalty_reference": "Art. 23 of this decree",
+   "cure_period": "deadline set by the authority in the order under Art. 22(1)(a)",
+   "evidence": {
+    "provision": "Art. 22(2)",
+    "quote": "l'importo delle sanzioni è aumentato sino a un terzo rispetto a quello previsto per la violazione originaria, fermi restando i massimali stabiliti dall'articolo 23"
+   }
+  },
+  {
+   "sanction_type": "administrative_fine",
+   "authority": "AgID (as notifying authority)",
+   "triggered_by": "Exercise of notifying-authority functions under Arts. 28, 30 and 36 of Regulation (EU) 2024/1689 (conformity assessment bodies)",
+   "max_penalty_text": "amounts not stated in this text; fines are those provided in Art. 99(4)(f) and (5) of Regulation (EU) 2024/1689",
+   "penalty_reference": "Regulation (EU) 2024/1689 Art. 99(4), point (f), and Art. 99(5)",
+   "cure_period": "not stated",
+   "evidence": {
+    "provision": "Art. 20(1)",
+    "quote": "irroga le sanzioni amministrative pecuniarie previste dall'articolo 99, paragrafi 4, lettera f), e 5 del medesimo regolamento"
+   }
+  },
+  {
+   "sanction_type": "administrative_fine",
+   "authority": "Garante per la protezione dei dati personali",
+   "triggered_by": "Sanctions imposed by the Garante, limited to the scope of Art. 74(8) of Regulation (EU) 2024/1689",
+   "max_penalty_text": "amounts not stated in this text; the procedure and fund allocation of Art. 166 of the Privacy Code apply",
+   "penalty_reference": "d.lgs. 30 giugno 2003, n. 196 (Codice in materia di protezione dei dati personali), art. 166",
+   "cure_period": "not stated",
+   "evidence": {
+    "provision": "Art. 24(8)",
+    "quote": "Alle sanzioni di cui al presente capo irrogate dal Garante per la protezione dei dati personali, limitatamente a quanto previsto dall'articolo 74, paragrafo 8, del regolamento IA, si applica quanto disposto dall'articolo 166 del codice in materia di protezione dei dati personali"
+   }
+  },
+  {
+   "sanction_type": "administrative_fine",
+   "authority": "Banca d'Italia",
+   "triggered_by": "Sanctions under this chapter imposed by Banca d'Italia",
+   "max_penalty_text": "amounts not stated in this text; sanctioning procedure of TUB Art. 145 applies",
+   "penalty_reference": "d.lgs. 1° settembre 1993, n. 385 (testo unico bancario), art. 145",
+   "cure_period": "not stated",
+   "evidence": {
+    "provision": "Art. 24(5)",
+    "quote": "Alle sanzioni di cui al presente capo irrogate dalla Banca d'Italia si applica la procedura sanzionatoria di cui all'articolo 145 del testo unico delle leggi in materia bancaria e creditizia"
+   }
+  },
+  {
+   "sanction_type": "administrative_fine",
+   "authority": "CONSOB",
+   "triggered_by": "Sanctions under this chapter imposed by CONSOB",
+   "max_penalty_text": "amounts not stated in this text; sanctioning procedure of TUF Art. 195 applies",
+   "penalty_reference": "d.lgs. 24 febbraio 1998, n. 58 (TUF), art. 195",
+   "cure_period": "not stated",
+   "evidence": {
+    "provision": "Art. 24(6)",
+    "quote": "Alle sanzioni di cui al presente capo irrogate dalla Consob si applica la procedura sanzionatoria di cui all'articolo 195 del testo unico delle disposizioni in materia di intermediazione finanziaria"
+   }
+  },
+  {
+   "sanction_type": "administrative_fine",
+   "authority": "IVASS",
+   "triggered_by": "Sanctions under this chapter imposed by IVASS",
+   "max_penalty_text": "amounts not stated in this text; sanctioning procedure of Codice delle assicurazioni private Arts. 311-septies and 324-octies applies",
+   "penalty_reference": "d.lgs. 7 settembre 2005, n. 209 (Codice delle assicurazioni private), arts. 311-septies and 324-octies",
+   "cure_period": "not stated",
+   "evidence": {
+    "provision": "Art. 24(7)",
+    "quote": "Alle sanzioni di cui al presente capo irrogate dall'IVASS si applica la procedura sanzionatoria ai sensi degli articoli 311-septies e 324-octies del codice delle assicurazioni private"
+   }
+  },
+  {
+   "sanction_type": "other",
+   "authority": "Authority issuing the sanction decision (AgID, national market surveillance authorities, Banca d'Italia, CONSOB, IVASS, Garante)",
+   "triggered_by": "Issuance of a sanction decision under this chapter; publication is in extract form on the authority's website, subject to anonymisation exceptions",
+   "max_penalty_text": "publication requirement; no amount stated",
+   "cure_period": "not stated",
+   "evidence": {
+    "provision": "Art. 24(4)",
+    "quote": "Il provvedimento di irrogazione delle sanzioni previste dal presente capo è pubblicato senza ritardo e per estratto nel sito internet istituzionale delle autorità di cui al comma 1"
+   }
+  },
+  {
+   "sanction_type": "other",
+   "authority": "ACN (Agenzia per la cybersicurezza nazionale)",
+   "triggered_by": "Procedure opened after serious incident reports under Art. 73, complaints not manifestly unfounded, referral by other authorities, or ex officio",
+   "max_penalty_text": "supervisory measures; the measures themselves are not described in this text",
+   "penalty_reference": "Regulation (EU) 2024/1689 Arts. 79, 80, 82, 83; Regulation (EU) 2019/1020 Arts. 14, 16",
+   "cure_period": "not stated",
+   "evidence": {
+    "provision": "Art. 16(1)",
+    "quote": "l'ACN è l'autorità di vigilanza competente per i sistemi di IA in relazione alle misure di cui agli articoli 79, 80, 82 e 83 del regolamento IA"
+   }
+  },
+  {
+   "sanction_type": "other",
+   "authority": "Not specified in the text (civil consequence of the employer's decision)",
+   "triggered_by": "Dismissal or other employment decisions taken in violation of Art. 41(1) (final decisions must not be taken solely on automated processing)",
+   "max_penalty_text": "nullity of the dismissal and of the decisions",
+   "penalty_reference": "Art. 41(1) of this decree",
+   "cure_period": "not stated",
+   "evidence": {
+    "provision": "Art. 41(4)",
+    "quote": "Il licenziamento intimato in violazione del comma 1 è nullo."
+   }
+  }
+ ],
+ "section_status": {}
+}

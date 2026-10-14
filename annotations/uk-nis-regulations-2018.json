@@ -1,0 +1,2304 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "uk-nis-regulations-2018",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (connectors/fetch_texts.py)",
+  "url": "https://www.legislation.gov.uk/uksi/2018/506/data.html",
+  "retrieved": "2026-10-13",
+  "version": "as fetched",
+  "language": "en",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "cybersecurity"
+  ],
+  "primary_domain": "cybersecurity",
+  "mechanisms": [
+   "mandate_obligation",
+   "registration_notification",
+   "designation_tiering",
+   "enforcement_order",
+   "institution_setup"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "essential_entity",
+   "platform_operator",
+   "cloud_service_provider",
+   "government_agency",
+   "regulator"
+  ],
+  "affected_roles": [
+   "consumers_users",
+   "general_public"
+  ],
+  "decision_margins": [
+   "firm:compliance_process"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national",
+    "extraterritorial"
+   ],
+   "description": "Applies to the United Kingdom, its internal waters, territorial sea and designated continental shelf areas, and also reaches digital service providers with a head office outside the UK that offer services within the UK.",
+   "evidence": {
+    "provision": "Regulation 14A(1)(a)",
+    "quote": "has its head office outside the United Kingdom, but which offers digital services within the United Kingdom"
+   }
+  },
+  "agora_harms": [
+   "Harm to infrastructure"
+  ],
+  "agora_incentives": [
+   "Fines"
+  ],
+  "agora_strategies": [
+   "Performance requirements",
+   "Disclosure: About incidents",
+   "Licensing, registration, and certification",
+   "Tiering: Tiering based on impact",
+   "Evaluation",
+   "Government study or report"
+  ]
+ },
+ "summary": {
+  "short": "Implements EU Directive 2016/1148 (NIS) in the UK from 10 May 2018: sets security and incident-notification duties for operators of essential services and relevant digital service providers, with designated authorities and penalties up to £17,000,000.",
+  "long": "Implements Directive (EU) 2016/1148 (the NIS Directive) in the UK, in force 10 May 2018. Requires a national NIS strategy and designates sector competent authorities; GCHQ is the single point of contact and CSIRT (regs 2–5). Persons providing essential services above Schedule 2 thresholds are deemed operators of essential services (OES), or may be designated by a competent authority (reg. 8). OES must take appropriate security measures and notify significant incidents within 72 hours (regs 10–11). Relevant digital service providers (online marketplaces, online search engines, cloud computing services), other than micro or small enterprises, must manage security risks, notify substantial incidents within 72 hours and register with the Information Commission (regs 12–14). Non-UK providers offering digital services in the UK must nominate a UK representative (reg. 14A). Enforcement tools include information notices, inspections, enforcement notices and penalty notices (regs 15–18). Penalties are capped at £1,000,000 for non-material contraventions and £8,500,000 or £17,000,000 for material ones. Appeals lie to the First-tier Tribunal (regs 19A–19B); penalties are recoverable as court orders (reg. 20). Fees and periodic review reports are also covered (regs 21, 25)."
+ },
+ "relations": [
+  {
+   "relation": "legal_basis",
+   "target_text": "European Communities Act 1972, section 2(2) (\"the 1972 Act\")",
+   "note": "The Regulations are made in exercise of powers conferred by section 2(2) of, and paragraph 1A of Schedule 2 to, the 1972 Act.",
+   "evidence": {
+    "provision": "Preamble (introductory text)",
+    "quote": "The Secretary of State makes the following Regulations in exercise of the powers conferred by section 2(2) of, and paragraph 1A M3 of Schedule 2 to, the 1972 Act"
+   }
+  },
+  {
+   "relation": "legal_basis",
+   "target_text": "Finance Act 1973, section 56 (\"the 1973 Act\")",
+   "note": "The Regulations are made under section 56 of the Finance Act 1973, with the consent of the Treasury.",
+   "evidence": {
+    "provision": "Preamble (introductory text)",
+    "quote": "section 56 of the Finance Act 1973 M4 (“the 1973 Act”)"
+   }
+  },
+  {
+   "relation": "implements",
+   "target_text": "Directive (EU) 2016/1148 concerning measures for a high common level of security of network and information systems across the Union",
+   "note": "Explanatory Note (not part of the Regulations) states that the Regulations implement the Directive.",
+   "evidence": {
+    "provision": "Explanatory Note (not part of the Regulations)",
+    "quote": "These Regulations implement Directive (EU) 2016/1148 of the European Parliament and of the Council concerning measures for a high common level of security of network and information systems across the Union"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Commission Implementing Regulation (EU) 2018/151 (\"EU Regulation 2018/151\")",
+   "note": "Defined in regulation 1(2); specifies elements for managing risks and parameters for substantial incident impact, applied through regulations 12(2)(c), 12(7)(a) and 25(1)(a).",
+   "evidence": {
+    "provision": "Art. 1(2)",
+    "quote": "“EU Regulation 2018/151” means Commission Implementing Regulation (EU) 2018/151 of 30 January 2018"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive 2013/11/EU on alternative dispute resolution for consumer disputes",
+   "note": "Used in the definitions of online marketplace (consumers and traders as defined in Article 4(1)).",
+   "evidence": {
+    "provision": "Art. 1(2)",
+    "quote": "means Directive 2013/11/EU of the European Parliament and of the Council on alternative dispute resolution for consumer disputes"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive (EU) 2015/1535 laying down a procedure for the provision of information in the field of technical regulations",
+   "note": "Used in the definition of digital service (service within the meaning of point (b) of Article 1(1)).",
+   "evidence": {
+    "provision": "Art. 1(2)",
+    "quote": "means Directive (EU) 2015/1535 of the European Parliament and of the Council laying down a procedure"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Communications Act 2003, sections 105A to 105C",
+   "note": "Network and service providers subject to these sections are excluded from the deemed OES designation in regulation 8(1).",
+   "evidence": {
+    "provision": "Art. 8(1A)",
+    "quote": "Paragraph (1) does not apply to a network provider or service provider who is subject to the requirements of sections 105A to 105C of the Communications Act 2003"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Commission Recommendation 2003/361/EC (micro and small enterprise)",
+   "note": "Size test for RDSPs (regulation 1(3)(e)(ii)) and for digital service providers outside the UK (regulation 14A(1)(b)).",
+   "evidence": {
+    "provision": "Art. 1(3)(e)(ii)",
+    "quote": "the provider is not a micro or small enterprise as defined in Commission Recommendation 2003/361/EC"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Police and Criminal Evidence Act 1984, section 63A(1A)",
+   "note": "Defines relevant law-enforcement authority, used in regulations 4(2A) and 5 and in the co-operation duties of the competent authorities.",
+   "evidence": {
+    "provision": "Art. 1(2)",
+    "quote": "“relevant law-enforcement authority” has the meaning given in section 63A(1A) of the Police and Criminal Evidence Act 1984"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Court of Session Act 1988, section 45",
+   "note": "Remedy of specific performance of a statutory duty available in civil proceedings under regulation 20(4)(b) and 20(5)(b).",
+   "evidence": {
+    "provision": "Art. 20(4)",
+    "quote": "for specific performance of a statutory duty under section 45 of the Court of Session Act 1988"
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "GCHQ (Government Communications Headquarters)",
+   "role": "designated",
+   "function": "Designated as the single point of contact (SPOC) on network and information systems security (reg. 4(1)) and as the computer security incident response team (CSIRT) for the UK (reg. 5(1)).",
+   "evidence": {
+    "provision": "Art. 4(1)",
+    "quote": "GCHQ is designated as the SPOC on the security of network and information systems for the United Kingdom."
+   }
+  },
+  {
+   "name": "Office of Communications",
+   "role": "designated",
+   "function": "Designated competent authority for the digital infrastructure subsector (Schedule 1).",
+   "evidence": {
+    "provision": "Schedule 1",
+    "quote": "Office of Communications (United Kingdom)"
+   }
+  },
+  {
+   "name": "Gas and Electricity Markets Authority",
+   "role": "designated",
+   "function": "Designated competent authority, acting jointly with the Secretary of State for Energy Security and Net Zero, for the electricity subsector and for the gas subsector (Schedule 1).",
+   "evidence": {
+    "provision": "Schedule 1",
+    "quote": "the Gas and Electricity Markets Authority (acting jointly)"
+   }
+  },
+  {
+   "name": "Secretary of State for Transport",
+   "role": "designated",
+   "function": "Designated competent authority for air transport (jointly with the Civil Aviation Authority), rail transport, water transport and road transport (England and Wales, Scotland) (Schedule 1).",
+   "evidence": {
+    "provision": "Schedule 1",
+    "quote": "The Secretary of State for Transport (England and Wales and Scotland)"
+   }
+  },
+  {
+   "name": "Civil Aviation Authority",
+   "role": "designated",
+   "function": "Designated competent authority, acting jointly with the Secretary of State for Transport, for air transport in the United Kingdom (Schedule 1).",
+   "evidence": {
+    "provision": "Schedule 1",
+    "quote": "The Civil Aviation Authority (acting jointly) (United Kingdom)"
+   }
+  },
+  {
+   "name": "Secretary of State for Health (England)",
+   "role": "designated",
+   "function": "Designated competent authority for the healthcare settings sector in England (Schedule 1).",
+   "evidence": {
+    "provision": "Schedule 1",
+    "quote": "The Secretary of State for Health (England)"
+   }
+  },
+  {
+   "name": "Secretary of State for Environment, Food and Rural Affairs (England)",
+   "role": "designated",
+   "function": "Designated competent authority for drinking water supply and distribution in England (Schedule 1).",
+   "evidence": {
+    "provision": "Schedule 1",
+    "quote": "The Secretary of State for Environment, Food and Rural Affairs (England)"
+   }
+  },
+  {
+   "name": "Welsh Ministers",
+   "role": "designated",
+   "function": "Designated competent authority for healthcare settings and drinking water supply and distribution in Wales (Schedule 1).",
+   "evidence": {
+    "provision": "Schedule 1",
+    "quote": "The Welsh Ministers (Wales)"
+   }
+  },
+  {
+   "name": "Scottish Ministers",
+   "role": "designated",
+   "function": "Designated competent authority for road transport and healthcare settings in Scotland (Schedule 1).",
+   "evidence": {
+    "provision": "Schedule 1",
+    "quote": "The Scottish Ministers (Scotland)"
+   }
+  },
+  {
+   "name": "Drinking Water Quality Regulator for Scotland",
+   "role": "designated",
+   "function": "Designated competent authority for drinking water supply and distribution in Scotland (Schedule 1).",
+   "evidence": {
+    "provision": "Schedule 1",
+    "quote": "The Drinking Water Quality Regulator for Scotland (Scotland)"
+   }
+  },
+  {
+   "name": "Department of Finance (Northern Ireland)",
+   "role": "designated",
+   "function": "Designated competent authority for the Northern Ireland jurisdiction across the energy, transport, health and drinking water subsectors (Schedule 1).",
+   "evidence": {
+    "provision": "Schedule 1",
+    "quote": "The Department of Finance (Northern Ireland)"
+   }
+  }
+ ],
+ "notes": "Text shows amendment markers (F-numbers) and omitted provisions as dotted lines; amendments are not coded as relations because the text does not name the amending acts. Target instrument IDs are not in the registry and are left empty. Inconsistencies: regulation 25(2) requires review reports at intervals not exceeding five years, while the Explanatory Note says reviews must be biennial; regulation 18(2) refers to 'the duty set out in regulation (3A)' without the number 17; the Explanatory Note names the regulator the Information Commissioner while the Regulations use Information Commission; the Explanatory Note says regulation 19 provides independent review, but regulation 19 is headed only and the appeal provisions sit in regulations 19A and 19B. Entities list competent authorities only; OES and RDSP addressees are roles, not named entities. Lei and ticker are not verifiable from the text.",
+ "events": [
+  {
+   "event": "adopted",
+   "date": "2018-04-19",
+   "date_type": "absolute",
+   "date_text": "Made19th April 2018",
+   "applies_to": "these Regulations",
+   "evidence": {
+    "provision": "Front matter (Made)",
+    "quote": "Made19th April 2018"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2018-05-10",
+   "date_type": "absolute",
+   "date_text": "come into force on 10th May 2018",
+   "applies_to": "these Regulations",
+   "evidence": {
+    "provision": "Reg. 1(1)",
+    "quote": "come into force on 10th May 2018"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2018-08-10",
+   "date_type": "absolute",
+   "date_text": "10th August 2018, in the case of a person who falls within paragraph (1) on the date these Regulations come into force",
+   "applies_to": "persons deemed designated as OES under reg. 8(1) on the coming into force date: notice to designated competent authority under reg. 8(2)",
+   "evidence": {
+    "provision": "Reg. 8(11)(a)",
+    "quote": "10th August 2018, in the case of a person who falls within paragraph (1) on the date these Regulations come into force"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "the date three months after the date on which the person falls within that paragraph",
+   "anchor": "date on which the person falls within reg. 8(1)",
+   "depends_on": "date on which a person falls within reg. 8(1) (other cases than the coming-into-force date)",
+   "applies_to": "persons who fall within reg. 8(1) after the coming into force date: notice to designated competent authority under reg. 8(2)",
+   "offset_value": 3,
+   "offset_unit": "months",
+   "evidence": {
+    "provision": "Reg. 8(11)(b)",
+    "quote": "the date three months after the date on which the person falls within that paragraph"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2021-03-31",
+   "date_type": "conditional",
+   "date_text": "in which case it means 31st March 2021",
+   "anchor": "first day of deemed designation under reg. 8(1) or designation under reg. 8(3)",
+   "depends_on": "first day of deemed designation under reg. 8(1) or designation under reg. 8(3) was before 31st December 2020",
+   "applies_to": "OES nomination of a person to act on its behalf in the UK under reg. 8A(3)(b)",
+   "evidence": {
+    "provision": "Reg. 8A(7)",
+    "quote": "in which case it means 31st March 2021"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "means the date three months after",
+   "anchor": "first day deemed designated as OES under reg. 8(1) or day designated under reg. 8(3)",
+   "depends_on": "first day of deemed designation under reg. 8(1) or designation under reg. 8(3) (other cases)",
+   "applies_to": "OES nomination of a person to act on its behalf in the UK under reg. 8A(3)(b)",
+   "offset_value": 3,
+   "offset_unit": "months",
+   "evidence": {
+    "provision": "Reg. 8A(7)",
+    "quote": "means the date three months after"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "within seven days beginning with the day on which the change took effect",
+   "anchor": "day on which the change to information notified under reg. 8A(3)(b) took effect",
+   "depends_on": "change to information notified under reg. 8A(3)(b)",
+   "applies_to": "OES notification of changes to nominated person information under reg. 8A(4)",
+   "offset_value": 7,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Reg. 8A(4)",
+    "quote": "within seven days beginning with the day on which the change took effect"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2020-05-09",
+   "date_type": "absolute",
+   "date_text": "must take place before 9th May 2020",
+   "applies_to": "competent authority review of the list of OES designations under reg. 8(8)-(9)",
+   "evidence": {
+    "provision": "Reg. 8(10)",
+    "quote": "must take place before 9th May 2020"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "subsequent reviews must take place, at least, biennially",
+   "applies_to": "competent authority review of the list of OES designations under reg. 8(8)-(9)",
+   "evidence": {
+    "provision": "Reg. 8(10)",
+    "quote": "subsequent reviews must take place, at least, biennially"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "no later than 72 hours after the operator is aware that a NIS incident has occurred",
+   "anchor": "operator becoming aware that a NIS incident has occurred",
+   "depends_on": "OES awareness that a NIS incident has occurred",
+   "applies_to": "OES notification of NIS incident to designated competent authority under reg. 11(1) and (3)",
+   "evidence": {
+    "provision": "Reg. 11(3)(b)(i)",
+    "quote": "no later than 72 hours after the operator is aware that a NIS incident has occurred"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2018-07-01",
+   "date_type": "absolute",
+   "date_text": "The first report mentioned in paragraph (9) must be submitted on or before 1st July 2018",
+   "applies_to": "competent authority annual report to the SPOC on NIS incidents notified under reg. 11(1)",
+   "evidence": {
+    "provision": "Reg. 11(10)",
+    "quote": "The first report mentioned in paragraph (9) must be submitted on or before 1st July 2018"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "subsequent reports must be submitted at annual intervals",
+   "applies_to": "competent authority annual report to the SPOC on NIS incidents notified under reg. 11(1)",
+   "evidence": {
+    "provision": "Reg. 11(10)",
+    "quote": "subsequent reports must be submitted at annual intervals"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "in any event no later than 72 hours",
+   "anchor": "RDSP becoming first aware that an incident has occurred",
+   "depends_on": "RDSP first awareness that an incident has occurred",
+   "applies_to": "RDSP notification of incident with substantial impact to the Information Commission under reg. 12(3) and (6)",
+   "evidence": {
+    "provision": "Reg. 12(6)(a)",
+    "quote": "in any event no later than 72 hours"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2018-07-01",
+   "date_type": "absolute",
+   "date_text": "The first report mentioned in paragraph (15) must be submitted on or before 1st July 2018",
+   "applies_to": "Information Commission annual report to the SPOC on incidents notified under reg. 12(3)",
+   "evidence": {
+    "provision": "Reg. 12(16)",
+    "quote": "The first report mentioned in paragraph (15) must be submitted on or before 1st July 2018"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "subsequent reports must be submitted at annual intervals after that date",
+   "applies_to": "Information Commission annual report to the SPOC on incidents notified under reg. 12(3)",
+   "evidence": {
+    "provision": "Reg. 12(16)",
+    "quote": "subsequent reports must be submitted at annual intervals after that date"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2018-11-01",
+   "date_type": "absolute",
+   "date_text": "1st November 2018, in the case of a RDSP who satisfies the conditions mentioned in regulation 1(3)(e) on the coming into force date of these Regulations",
+   "applies_to": "RDSPs satisfying reg. 1(3)(e) on the coming into force date: registration with the Information Commission",
+   "evidence": {
+    "provision": "Reg. 14(4)(a)",
+    "quote": "1st November 2018, in the case of a RDSP who satisfies the conditions mentioned in regulation 1(3)(e) on the coming into force date of these Regulations"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "in any other case, the date three months after the RDSP satisfies those conditions",
+   "anchor": "RDSP satisfying the conditions in reg. 1(3)(e)",
+   "depends_on": "RDSP satisfies the conditions in reg. 1(3)(e) after the coming into force date",
+   "applies_to": "RDSPs registration with the Information Commission",
+   "offset_value": 3,
+   "offset_unit": "months",
+   "evidence": {
+    "provision": "Reg. 14(4)(b)",
+    "quote": "in any other case, the date three months after the RDSP satisfies those conditions"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "within three months of the date on which the change took effect",
+   "anchor": "day on which the change to registration details took effect",
+   "depends_on": "change to details submitted under reg. 14(2)",
+   "applies_to": "RDSP notification of changes to registration details",
+   "offset_value": 3,
+   "offset_unit": "months",
+   "evidence": {
+    "provision": "Reg. 14(3)",
+    "quote": "within three months of the date on which the change took effect"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2018-08-10",
+   "date_type": "relative",
+   "date_text": "within three months of the date on which these regulations come into force",
+   "anchor": "coming into force date of these Regulations",
+   "applies_to": "digital service providers with head office outside the UK offering services in the UK on the coming into force date: nomination of a UK representative",
+   "offset_value": 3,
+   "offset_unit": "months",
+   "anchor_event": "entry_into_force",
+   "evidence": {
+    "provision": "Reg. 14A(3)(a)",
+    "quote": "within three months of the date on which these regulations come into force"
+   },
+   "date_computed_from": "entry_into_force 2018-05-10 (text) + 3 months"
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "within three months of the provider first offering digital services in the United Kingdom",
+   "anchor": "provider first offering digital services in the United Kingdom",
+   "depends_on": "provider first offering digital services in the United Kingdom after the coming into force date",
+   "applies_to": "digital service providers established outside the UK: nomination of a UK representative",
+   "offset_value": 3,
+   "offset_unit": "months",
+   "evidence": {
+    "provision": "Reg. 14A(3)(b)",
+    "quote": "within three months of the provider first offering digital services in the United Kingdom"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "within 28 days of being informed of that decision",
+   "anchor": "OES being informed of decision to take no further action under reg. 17(4)",
+   "depends_on": "decision to take no further action under reg. 17(4)",
+   "applies_to": "OES request for reasons for a no-further-action decision",
+   "offset_value": 28,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Reg. 17(5)",
+    "quote": "within 28 days of being informed of that decision"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "in any event no later than 28 days",
+   "anchor": "receipt of a request under reg. 17(5)",
+   "depends_on": "receipt of a request under reg. 17(5)",
+   "applies_to": "competent authority provision of written reasons for a decision under reg. 17(4)",
+   "offset_value": 28,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Reg. 17(6)",
+    "quote": "in any event no later than 28 days"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "before the end of a period of 28 days beginning with the day on which the last relevant enforcement notice was served",
+   "anchor": "day on which the last relevant enforcement notice was served on the OES or RDSP",
+   "depends_on": "service of the last relevant enforcement notice under reg. 17",
+   "applies_to": "civil proceedings to enforce reg. 17(3A) by the competent authority or Information Commission",
+   "offset_value": 28,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Reg. 20A(6)",
+    "quote": "before the end of a period of 28 days beginning with the day on which the last relevant enforcement notice was served"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "must be paid to the enforcement authority within 30 days after receipt of the invoice",
+   "anchor": "receipt of the invoice sent by the enforcement authority",
+   "depends_on": "receipt of the invoice sent by the enforcement authority under reg. 21(2)",
+   "applies_to": "OES or RDSP payment of fee to enforcement authority",
+   "offset_value": 30,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Reg. 21(2)",
+    "quote": "must be paid to the enforcement authority within 30 days after receipt of the invoice"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2020-05-09",
+   "date_type": "absolute",
+   "date_text": "The first report must be published on or before 9th May 2020",
+   "applies_to": "Secretary of State review report on the regulatory provision in these Regulations and EU Regulation 2018/151",
+   "evidence": {
+    "provision": "Reg. 25(2)",
+    "quote": "The first report must be published on or before 9th May 2020"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2022-05-09",
+   "date_type": "absolute",
+   "date_text": "the second report must be published on or before 9th May 2022",
+   "applies_to": "Secretary of State review report on the regulatory provision in these Regulations and EU Regulation 2018/151",
+   "evidence": {
+    "provision": "Reg. 25(2)",
+    "quote": "the second report must be published on or before 9th May 2022"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "subsequent reports must be published at F170intervals not exceeding five years",
+   "applies_to": "Secretary of State review report on the regulatory provision in these Regulations and EU Regulation 2018/151",
+   "evidence": {
+    "provision": "Reg. 25(2)",
+    "quote": "subsequent reports must be published at F170intervals not exceeding five years"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "other",
+   "variable_text": "final customers (electricity supply, Great Britain)",
+   "operator": ">",
+   "value": 250000,
+   "value_text": "more than 250,000 final customers",
+   "unit": "final customers",
+   "level": "entity",
+   "trigger": "eligibility",
+   "consequence": "Meeting the threshold is a condition for deemed designation as an OES under reg. 8(1)",
+   "conditions": "Electricity undertaking carrying out supply; essential service relying on network and information systems; Great Britain",
+   "evidence": {
+    "provision": "Sch. 2 para. 1(2)(a)(i)",
+    "quote": "electricity undertakings that carry out the function of supply to more than 250,000 final customers"
+   }
+  },
+  {
+   "variable": "power_capacity",
+   "variable_text": "cumulated generation capacity of generators operated by the undertaking and its affiliated undertakings (input to a transmission system)",
+   "operator": ">=",
+   "value": 2,
+   "value_text": "greater than or equal to 2 gigawatts",
+   "unit": "gigawatts",
+   "measurement": "Generators operated by affiliated undertakings are cumulated; nuclear and generators not connected to a transmission system are excluded (sub-para. 1(6))",
+   "level": "group",
+   "trigger": "eligibility",
+   "consequence": "Meeting the threshold is a condition for deemed designation as an OES under reg. 8(1)",
+   "conditions": "Electricity undertaking carrying out supply and generation; Great Britain",
+   "evidence": {
+    "provision": "Sch. 2 para. 1(2)(a)(ii)",
+    "quote": "would have a total capacity, in terms of input to a transmission system, greater than or equal to 2 gigawatts"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "consumers (electricity supply licence holder, Northern Ireland)",
+   "operator": ">",
+   "value": 8000,
+   "value_text": "more than 8,000 consumers",
+   "unit": "consumers",
+   "level": "entity",
+   "trigger": "eligibility",
+   "consequence": "Meeting the threshold is a condition for deemed designation as an OES under reg. 8(1)",
+   "conditions": "Holder of supply licence under Article 10(1)(c) of the Electricity (Northern Ireland) Order 1992",
+   "evidence": {
+    "provision": "Sch. 2 para. 1(2)(b)(i)",
+    "quote": "who supplies electricity to more than 8,000 consumers"
+   }
+  },
+  {
+   "variable": "power_capacity",
+   "variable_text": "generating capacity (generation licence holder, Northern Ireland)",
+   "operator": ">=",
+   "value": 350,
+   "value_text": "equal to or greater than 350 megawatts",
+   "unit": "megawatts",
+   "level": "entity",
+   "trigger": "eligibility",
+   "consequence": "Meeting the threshold is a condition for deemed designation as an OES under reg. 8(1)",
+   "conditions": "Holder of generation licence under Article 10(1)(a) of the Electricity (Northern Ireland) Order 1992",
+   "evidence": {
+    "provision": "Sch. 2 para. 1(2)(b)(ii)",
+    "quote": "with a generating capacity equal to or greater than 350 megawatts"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "final customers (electricity transmission, Great Britain)",
+   "operator": ">",
+   "value": 250000,
+   "value_text": "potential to disrupt delivery of electricity to more than 250,000 final customers",
+   "unit": "final customers",
+   "measurement": "Potential to disrupt delivery, not actual customer count",
+   "level": "entity",
+   "trigger": "eligibility",
+   "consequence": "Meeting the threshold is a condition for deemed designation as an OES under reg. 8(1)",
+   "conditions": "Transmission system operator; Great Britain; excludes transmission systems subject to an offshore transmission or interconnector licence (sub-para. 1(7))",
+   "evidence": {
+    "provision": "Sch. 2 para. 1(4)(a)(i)",
+    "quote": "transmission system operators with a potential to disrupt delivery of electricity to more than 250,000 final customers"
+   }
+  },
+  {
+   "variable": "power_capacity",
+   "variable_text": "capacity of electricity interconnector (input to a transmission system)",
+   "operator": ">=",
+   "value": 1,
+   "value_text": "greater than or equal to 1 gigawatt",
+   "unit": "gigawatts",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Meeting the threshold is a condition for deemed designation as an OES under reg. 8(1)",
+   "conditions": "Holder of interconnector licence; Great Britain",
+   "evidence": {
+    "provision": "Sch. 2 para. 1(4)(a)(iii)",
+    "quote": "has a capacity, in terms of input to a transmission system, greater than or equal to 1 gigawatt"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "final customers (electricity distribution, Great Britain)",
+   "operator": ">",
+   "value": 250000,
+   "value_text": "potential to disrupt delivery of electricity to more than 250,000 final customers",
+   "unit": "final customers",
+   "measurement": "Potential to disrupt delivery, not actual customer count",
+   "level": "entity",
+   "trigger": "eligibility",
+   "consequence": "Meeting the threshold is a condition for deemed designation as an OES under reg. 8(1)",
+   "conditions": "Distribution system operator; Great Britain",
+   "evidence": {
+    "provision": "Sch. 2 para. 1(5)(a)",
+    "quote": "distribution system operators with the potential to disrupt delivery of electricity to more than 250,000 final customers"
+   }
+  },
+  {
+   "variable": "volume",
+   "variable_text": "throughput of upstream petroleum pipeline (oil equivalent)",
+   "operator": ">",
+   "value": 3000000,
+   "value_text": "throughput of more than 3,000,000 tonnes of oil equivalent per year excluding natural gas",
+   "unit": "tonnes of oil equivalent per year",
+   "measurement": "Throughput per year; oil equivalent as defined in sub-para. 2(8)(h)",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Meeting the threshold is a condition for deemed designation as an OES under reg. 8(1)",
+   "conditions": "Relevant upstream petroleum pipeline in the United Kingdom; applies only if the operator does not fall within another threshold requirement for this pipeline",
+   "evidence": {
+    "provision": "Sch. 2 para. 2(2)",
+    "quote": "has a throughput of more than 3,000,000 tonnes of oil equivalent per year excluding natural gas"
+   }
+  },
+  {
+   "variable": "volume",
+   "variable_text": "throughput of oil transmission pipeline (crude oil based fuel)",
+   "operator": ">",
+   "value": 500000,
+   "value_text": "throughput of more than 500,000 tonnes of crude oil based fuel per year",
+   "unit": "tonnes of crude oil based fuel per year",
+   "measurement": "Throughput per year",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Meeting the threshold is a condition for deemed designation as an OES under reg. 8(1)",
+   "conditions": "Operator of a pipeline; Great Britain; excludes transmission of crude oil",
+   "evidence": {
+    "provision": "Sch. 2 para. 2(3)(a)",
+    "quote": "of more than 500,000 tonnes of crude oil based fuel per year"
+   }
+  },
+  {
+   "variable": "volume",
+   "variable_text": "throughput of oil transmission pipeline (crude oil based fuel)",
+   "operator": ">",
+   "value": 50000,
+   "value_text": "throughput of more than 50,000 tonnes of crude oil based fuel per year",
+   "unit": "tonnes of crude oil based fuel per year",
+   "measurement": "Throughput per year",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Meeting the threshold is a condition for deemed designation as an OES under reg. 8(1)",
+   "conditions": "Operator of a pipeline; Northern Ireland",
+   "evidence": {
+    "provision": "Sch. 2 para. 2(3)(b)",
+    "quote": "of more than 50,000 tonnes of crude oil based fuel per year"
+   }
+  },
+  {
+   "variable": "volume",
+   "variable_text": "throughput of relevant oil processing facility (oil equivalent)",
+   "operator": ">",
+   "value": 3000000,
+   "value_text": "throughput of more than 3,000,000 tonnes of oil equivalent per year",
+   "unit": "tonnes of oil equivalent per year",
+   "measurement": "Throughput per year",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Meeting the threshold is a condition for deemed designation as an OES under reg. 8(1)",
+   "conditions": "Relevant oil processing facility in the United Kingdom",
+   "evidence": {
+    "provision": "Sch. 2 para. 2(4)(a)",
+    "quote": "an operator of a facility with a throughput of more than 3,000,000 tonnes of oil equivalent per year"
+   }
+  },
+  {
+   "variable": "volume",
+   "variable_text": "throughput of relevant upstream petroleum pipeline connected to an oil processing facility (oil equivalent)",
+   "operator": ">",
+   "value": 3000000,
+   "value_text": "throughput of more than 3,000,000 tonnes of oil equivalent per year",
+   "unit": "tonnes of oil equivalent per year",
+   "measurement": "Throughput per year",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Meeting the threshold is a condition for deemed designation as an OES under reg. 8(1)",
+   "conditions": "Pipeline connected to and operated from a relevant oil processing facility in the United Kingdom",
+   "evidence": {
+    "provision": "Sch. 2 para. 2(4)(b)",
+    "quote": "an operator of a pipeline with a throughput of more than 3,000,000 tonnes of oil equivalent per year"
+   }
+  },
+  {
+   "variable": "volume",
+   "variable_text": "capacity of facility for storage, production or supply of crude oil based fuel",
+   "operator": ">",
+   "value": 500000,
+   "value_text": "capacity greater than 500,000 tonnes of crude oil based fuel for storage, production or supply",
+   "unit": "tonnes of crude oil based fuel",
+   "measurement": "Each of the three values (storage, production per year, supply per year) applies separately",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Meeting the threshold is a condition for deemed designation as an OES under reg. 8(1)",
+   "conditions": "Operator of facility for crude oil based fuel production, refining, onshore storage and transmission; Great Britain",
+   "evidence": {
+    "provision": "Sch. 2 para. 2(5)(a)(i)",
+    "quote": "storage of 500,000 tonnes of crude oil based fuel"
+   }
+  },
+  {
+   "variable": "volume",
+   "variable_text": "storage capacity of facility for crude oil based fuel",
+   "operator": ">",
+   "value": 50000,
+   "value_text": "storage capacity of greater than 50,000 tonnes of crude oil based fuel",
+   "unit": "tonnes of crude oil based fuel",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Meeting the threshold is a condition for deemed designation as an OES under reg. 8(1)",
+   "conditions": "Operator of facility for crude oil based fuel storage; Northern Ireland",
+   "evidence": {
+    "provision": "Sch. 2 para. 2(5)(b)",
+    "quote": "a storage capacity of greater than 50,000 tonnes of crude oil based fuel"
+   }
+  },
+  {
+   "variable": "volume",
+   "variable_text": "throughput of petroleum production project installation (oil equivalent)",
+   "operator": ">",
+   "value": 3000000,
+   "value_text": "throughput of more than 3,000,000 tonnes of oil equivalent per year",
+   "unit": "tonnes of oil equivalent per year",
+   "measurement": "Throughput per year",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Meeting the threshold is a condition for deemed designation as an OES under reg. 8(1)",
+   "conditions": "Relevant offshore installation forming part of a petroleum production project in the United Kingdom",
+   "evidence": {
+    "provision": "Sch. 2 para. 2(6)(i)",
+    "quote": "an operator of an installation with a throughput of more than 3,000,000 tonnes of oil equivalent per year"
+   }
+  },
+  {
+   "variable": "volume",
+   "variable_text": "throughput of upstream petroleum pipeline connected to a petroleum production installation (oil equivalent)",
+   "operator": ">",
+   "value": 3000000,
+   "value_text": "throughput of more than 3,000,000 tonnes of oil equivalent per year",
+   "unit": "tonnes of oil equivalent per year",
+   "measurement": "Throughput per year",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Meeting the threshold is a condition for deemed designation as an OES under reg. 8(1)",
+   "conditions": "Pipeline connected to and operated from a petroleum production installation in the United Kingdom",
+   "evidence": {
+    "provision": "Sch. 2 para. 2(6)(ii)",
+    "quote": "an operator of a pipeline with a throughput of more than 3,000,000 tonnes of oil equivalent per year"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "final customers (gas supply, Great Britain)",
+   "operator": ">",
+   "value": 250000,
+   "value_text": "supply undertakings that supply gas to more than 250,000 final customers",
+   "unit": "final customers",
+   "level": "entity",
+   "trigger": "eligibility",
+   "consequence": "Meeting the threshold is a condition for deemed designation as an OES under reg. 8(1)",
+   "conditions": "Supply undertaking; Great Britain",
+   "evidence": {
+    "provision": "Sch. 2 para. 3(2)(a)",
+    "quote": "supply undertakings that supply gas to more than 250,000 final customers"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "customers (gas supply licence holder, Northern Ireland)",
+   "operator": ">",
+   "value": 2000,
+   "value_text": "who supplies gas to more than 2,000 customers",
+   "unit": "customers",
+   "level": "entity",
+   "trigger": "eligibility",
+   "consequence": "Meeting the threshold is a condition for deemed designation as an OES under reg. 8(1)",
+   "conditions": "Holder of supply licence under Article 8(1)(c) of the Gas (Northern Ireland) Order 1996",
+   "evidence": {
+    "provision": "Sch. 2 para. 3(2)(b)",
+    "quote": "who supplies gas to more than 2,000 customers"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "final customers (gas transmission, Great Britain)",
+   "operator": ">",
+   "value": 250000,
+   "value_text": "potential to disrupt delivery to more than 250,000 final customers",
+   "unit": "final customers",
+   "measurement": "Potential to disrupt delivery, not actual customer count",
+   "level": "entity",
+   "trigger": "eligibility",
+   "consequence": "Meeting the threshold is a condition for deemed designation as an OES under reg. 8(1)",
+   "conditions": "Transmission system operator; Great Britain; excludes interconnector licence transmission systems (sub-para. 3(9))",
+   "evidence": {
+    "provision": "Sch. 2 para. 3(3)(a)(i)",
+    "quote": "transmission system operators with a potential to disrupt delivery to more than 250,000 final customers"
+   }
+  },
+  {
+   "variable": "volume",
+   "variable_text": "technological input capacity of gas interconnector to a transmission system",
+   "operator": ">",
+   "value": 20000000,
+   "value_text": "technological capacity to input more than 20 million cubic metres of gas per day",
+   "unit": "cubic metres of gas per day",
+   "measurement": "Technological capacity",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Meeting the threshold is a condition for deemed designation as an OES under reg. 8(1)",
+   "conditions": "Holder of interconnector licence; Great Britain",
+   "evidence": {
+    "provision": "Sch. 2 para. 3(3)(a)(ii)",
+    "quote": "has the technological capacity to input more than 20 million cubic metres of gas per day to a transmission system"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "final customers (gas distribution, Great Britain)",
+   "operator": ">",
+   "value": 250000,
+   "value_text": "potential to disrupt delivery to more than 250,000 final customers",
+   "unit": "final customers",
+   "measurement": "Potential to disrupt delivery, not actual customer count",
+   "level": "entity",
+   "trigger": "eligibility",
+   "consequence": "Meeting the threshold is a condition for deemed designation as an OES under reg. 8(1)",
+   "conditions": "Distribution system operator; Great Britain",
+   "evidence": {
+    "provision": "Sch. 2 para. 3(4)(a)",
+    "quote": "distribution system operators with a potential to disrupt delivery to more than 250,000 final customers"
+   }
+  },
+  {
+   "variable": "volume",
+   "variable_text": "technological input capacity of gas storage facility to a transmission system",
+   "operator": ">",
+   "value": 20000000,
+   "value_text": "technological capacity to input more than 20 million cubic metres of gas per day",
+   "unit": "cubic metres of gas per day",
+   "measurement": "Technological capacity",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Meeting the threshold is a condition for deemed designation as an OES under reg. 8(1)",
+   "conditions": "Storage system operator; Great Britain",
+   "evidence": {
+    "provision": "Sch. 2 para. 3(5)(a)",
+    "quote": "storage system operators where the storage facility has the technological capacity to input more than 20 million cubic metres of gas per day to a transmission system"
+   }
+  },
+  {
+   "variable": "volume",
+   "variable_text": "technological input capacity of LNG facility to a transmission system",
+   "operator": ">",
+   "value": 20000000,
+   "value_text": "technological capacity to input more than 20 million cubic metres of gas per day",
+   "unit": "cubic metres of gas per day",
+   "measurement": "Technological capacity",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Meeting the threshold is a condition for deemed designation as an OES under reg. 8(1)",
+   "conditions": "LNG system operator; Great Britain",
+   "evidence": {
+    "provision": "Sch. 2 para. 3(6)(a)",
+    "quote": "LNG system operators where the LNG facility has the technological capacity to input more than 20 million cubic metres of gas per day to a transmission system"
+   }
+  },
+  {
+   "variable": "volume",
+   "variable_text": "throughput of relevant gas processing facility (oil equivalent)",
+   "operator": ">",
+   "value": 3000000,
+   "value_text": "throughput of more than 3,000,000 tonnes of oil equivalent per year",
+   "unit": "tonnes of oil equivalent per year",
+   "measurement": "Throughput per year",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Meeting the threshold is a condition for deemed designation as an OES under reg. 8(1)",
+   "conditions": "Relevant gas processing facility in the United Kingdom",
+   "evidence": {
+    "provision": "Sch. 2 para. 3(7)(a)",
+    "quote": "an operator of a facility with a throughput of more than 3,000,000 tonnes of oil equivalent per year"
+   }
+  },
+  {
+   "variable": "volume",
+   "variable_text": "throughput of petroleum production installation or pipeline (oil equivalent)",
+   "operator": ">",
+   "value": 3000000,
+   "value_text": "throughput of more than 3,000,000 tonnes of oil equivalent per year",
+   "unit": "tonnes of oil equivalent per year",
+   "measurement": "Throughput per year",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Meeting the threshold is a condition for deemed designation as an OES under reg. 8(1)",
+   "conditions": "Petroleum production project in the United Kingdom, other than projects primarily used for gas storage",
+   "evidence": {
+    "provision": "Sch. 2 para. 3(8)(a)",
+    "quote": "an operator of an installation or pipeline with a throughput of more than 3,000,000 tonnes of oil equivalent per year"
+   }
+  },
+  {
+   "variable": "volume",
+   "variable_text": "annual terminal passenger numbers at an aerodrome",
+   "operator": ">",
+   "value": 10000000,
+   "value_text": "annual terminal passenger numbers greater than 10 million",
+   "unit": "annual terminal passengers",
+   "measurement": "Annual terminal passenger numbers",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Meeting the threshold is a condition for deemed designation as an OES under reg. 8(1)",
+   "conditions": "Owner or manager of an aerodrome in the United Kingdom",
+   "evidence": {
+    "provision": "Sch. 2 para. 4(2)",
+    "quote": "an owner or manager of an aerodrome with annual terminal passenger numbers greater than 10 million"
+   }
+  },
+  {
+   "variable": "volume",
+   "variable_text": "annual terminal passenger numbers at an airport (air-traffic service provider)",
+   "operator": ">",
+   "value": 10000000,
+   "value_text": "annual terminal passenger numbers greater than 10 million",
+   "unit": "annual terminal passengers",
+   "measurement": "Annual terminal passenger numbers",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Meeting the threshold is a condition for deemed designation as an OES under reg. 8(1)",
+   "conditions": "Air-traffic service provider at an airport in the United Kingdom",
+   "evidence": {
+    "provision": "Sch. 2 para. 4(3)(b)",
+    "quote": "an air-traffic service provider at any airport which has annual terminal passenger numbers greater than 10 million"
+   }
+  },
+  {
+   "variable": "market_share",
+   "variable_text": "share of annual terminal passengers at a UK airport (air carrier)",
+   "operator": ">",
+   "value": 30,
+   "value_text": "more than thirty percent of the annual terminal passengers at any United Kingdom airport",
+   "unit": "percent",
+   "measurement": "Share of annual terminal passengers at a single airport with more than 10 million passengers",
+   "level": "entity",
+   "trigger": "eligibility",
+   "consequence": "Meeting the threshold is a condition for deemed designation as an OES under reg. 8(1)",
+   "conditions": "Air carrier; both this and the total passenger threshold must be met",
+   "evidence": {
+    "provision": "Sch. 2 para. 4(4)(a)",
+    "quote": "more than thirty percent of the annual terminal passengers at any United Kingdom airport"
+   }
+  },
+  {
+   "variable": "volume",
+   "variable_text": "total annual terminal passengers across all UK airports (air carrier)",
+   "operator": ">",
+   "value": 10000000,
+   "value_text": "more than 10 million total annual terminal passengers across all United Kingdom airports",
+   "unit": "annual terminal passengers",
+   "measurement": "Total across all UK airports",
+   "level": "entity",
+   "trigger": "eligibility",
+   "consequence": "Meeting the threshold is a condition for deemed designation as an OES under reg. 8(1)",
+   "conditions": "Air carrier; both this and the airport-share threshold must be met",
+   "evidence": {
+    "provision": "Sch. 2 para. 4(4)(b)",
+    "quote": "more than 10 million total annual terminal passengers across all United Kingdom airports"
+   }
+  },
+  {
+   "variable": "volume",
+   "variable_text": "total annual freight at UK ports (shipping company)",
+   "operator": ">",
+   "value": 5000000,
+   "value_text": "over 5 million tonnes of total annual freight at United Kingdom ports",
+   "unit": "tonnes",
+   "measurement": "Total annual freight at UK ports",
+   "level": "entity",
+   "trigger": "eligibility",
+   "consequence": "Meeting the threshold is a condition for deemed designation as an OES under reg. 8(1)",
+   "conditions": "Shipping company; applies together with the port freight share threshold",
+   "evidence": {
+    "provision": "Sch. 2 para. 5(2)(a)(i)",
+    "quote": "over 5 million tonnes of total annual freight at United Kingdom ports"
+   }
+  },
+  {
+   "variable": "market_share",
+   "variable_text": "share of freight at an individual UK port (shipping company)",
+   "operator": ">",
+   "value": 30,
+   "value_text": "over thirty percent of the freight at any individual United Kingdom port",
+   "unit": "percent",
+   "measurement": "Share of freight at a single port",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Meeting the threshold is a condition for deemed designation as an OES under reg. 8(1)",
+   "conditions": "Port must fulfil at least one of the criteria in sub-para. 5(2)(a)(ii)(aa) to (dd)",
+   "evidence": {
+    "provision": "Sch. 2 para. 5(2)(a)(ii)",
+    "quote": "over thirty percent of the freight at any individual United Kingdom port"
+   }
+  },
+  {
+   "variable": "market_share",
+   "variable_text": "share of total roll-on roll-off traffic in the UK (port criterion)",
+   "operator": ">",
+   "value": 15,
+   "value_text": "more than fifteen percent of the total roll-on roll-off traffic in the United Kingdom",
+   "unit": "percent",
+   "measurement": "Share of UK total traffic",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Port criterion for shipping company designation under reg. 8(1)",
+   "conditions": "Alternative criterion for the port (one of four)",
+   "evidence": {
+    "provision": "Sch. 2 para. 5(2)(a)(ii)(aa)",
+    "quote": "it handles more than fifteen percent of the total roll-on roll-off traffic in the United Kingdom"
+   }
+  },
+  {
+   "variable": "market_share",
+   "variable_text": "share of total lift-on lift-off traffic in the UK (port criterion)",
+   "operator": ">",
+   "value": 15,
+   "value_text": "more than fifteen percent of the total lift-on lift-off traffic in the United Kingdom",
+   "unit": "percent",
+   "measurement": "Share of UK total traffic",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Port criterion for shipping company designation under reg. 8(1)",
+   "conditions": "Alternative criterion for the port (one of four)",
+   "evidence": {
+    "provision": "Sch. 2 para. 5(2)(a)(ii)(bb)",
+    "quote": "it handles more than fifteen percent of the total lift-on lift-off traffic in the United Kingdom"
+   }
+  },
+  {
+   "variable": "market_share",
+   "variable_text": "share of total liquid bulk traffic in the UK (port criterion)",
+   "operator": ">",
+   "value": 10,
+   "value_text": "more than ten percent of the total liquid bulk traffic in the United Kingdom",
+   "unit": "percent",
+   "measurement": "Share of UK total traffic",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Port criterion for shipping company designation under reg. 8(1)",
+   "conditions": "Alternative criterion for the port (one of four)",
+   "evidence": {
+    "provision": "Sch. 2 para. 5(2)(a)(ii)(cc)",
+    "quote": "it handles more than ten percent of the total liquid bulk traffic in the United Kingdom"
+   }
+  },
+  {
+   "variable": "market_share",
+   "variable_text": "share of total biomass fuel traffic in the UK (port criterion)",
+   "operator": ">",
+   "value": 20,
+   "value_text": "more than twenty percent of the total biomass fuel traffic in the United Kingdom",
+   "unit": "percent",
+   "measurement": "Share of UK total traffic",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Port criterion for shipping company designation under reg. 8(1)",
+   "conditions": "Alternative criterion for the port (one of four)",
+   "evidence": {
+    "provision": "Sch. 2 para. 5(2)(a)(ii)(dd)",
+    "quote": "it handles more than twenty percent of the total biomass fuel traffic in the United Kingdom"
+   }
+  },
+  {
+   "variable": "market_share",
+   "variable_text": "share of annual passenger numbers at an individual UK port (shipping company)",
+   "operator": ">",
+   "value": 30,
+   "value_text": "over thirty percent of the annual passenger numbers at any individual United Kingdom port",
+   "unit": "percent",
+   "measurement": "Share of annual passenger numbers at a single port",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Meeting the threshold is a condition for deemed designation as an OES under reg. 8(1)",
+   "conditions": "Port with annual passenger numbers greater than 10 million",
+   "evidence": {
+    "provision": "Sch. 2 para. 5(2)(b)",
+    "quote": "over thirty percent of the annual passenger numbers at any individual United Kingdom port"
+   }
+  },
+  {
+   "variable": "volume",
+   "variable_text": "annual passenger numbers at a UK port",
+   "operator": ">",
+   "value": 10000000,
+   "value_text": "annual passenger numbers greater than 10 million",
+   "unit": "annual passengers",
+   "measurement": "Annual passenger numbers at the port",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Meeting the threshold is a condition for deemed designation as an OES under reg. 8(1)",
+   "conditions": "Shipping company (sub-para. 5(2)(b))",
+   "evidence": {
+    "provision": "Sch. 2 para. 5(2)(b)",
+    "quote": "which has annual passenger numbers greater than 10 million"
+   }
+  },
+  {
+   "variable": "volume",
+   "variable_text": "annual passenger numbers at a UK port (harbour authority)",
+   "operator": ">",
+   "value": 10000000,
+   "value_text": "annual passenger numbers greater than 10 million",
+   "unit": "annual passengers",
+   "measurement": "Annual passenger numbers at the port",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Meeting the threshold is a condition for deemed designation as an OES under reg. 8(1)",
+   "conditions": "Harbour authority for a port in the United Kingdom",
+   "evidence": {
+    "provision": "Sch. 2 para. 5(3)(a)",
+    "quote": "a harbour authority for a port which has annual passenger numbers greater than 10 million"
+   }
+  },
+  {
+   "variable": "market_share",
+   "variable_text": "share of total roll-on roll-off traffic in the UK (harbour authority port criterion)",
+   "operator": ">",
+   "value": 15,
+   "value_text": "more than fifteen percent of the total roll-on roll-off traffic in the United Kingdom",
+   "unit": "percent",
+   "measurement": "Share of UK total traffic",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Port criterion for harbour authority designation under reg. 8(1)",
+   "conditions": "Alternative criterion for the port (one of four)",
+   "evidence": {
+    "provision": "Sch. 2 para. 5(3)(b)(i)",
+    "quote": "it handles more than fifteen percent of the total roll-on roll-off traffic in the United Kingdom"
+   }
+  },
+  {
+   "variable": "market_share",
+   "variable_text": "share of total lift-on lift-off traffic in the UK (harbour authority port criterion)",
+   "operator": ">",
+   "value": 15,
+   "value_text": "more than fifteen percent of the total lift-on lift-off traffic in the United Kingdom",
+   "unit": "percent",
+   "measurement": "Share of UK total traffic",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Port criterion for harbour authority designation under reg. 8(1)",
+   "conditions": "Alternative criterion for the port (one of four)",
+   "evidence": {
+    "provision": "Sch. 2 para. 5(3)(b)(ii)",
+    "quote": "it handles more than fifteen percent of the total lift-on lift-off traffic in the United Kingdom"
+   }
+  },
+  {
+   "variable": "market_share",
+   "variable_text": "share of total liquid bulk traffic in the UK (harbour authority port criterion)",
+   "operator": ">",
+   "value": 10,
+   "value_text": "more than ten percent of the total liquid bulk traffic in the United Kingdom",
+   "unit": "percent",
+   "measurement": "Share of UK total traffic",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Port criterion for harbour authority designation under reg. 8(1)",
+   "conditions": "Alternative criterion for the port (one of four)",
+   "evidence": {
+    "provision": "Sch. 2 para. 5(3)(b)(iii)",
+    "quote": "it handles more than ten percent of the total liquid bulk traffic in the United Kingdom"
+   }
+  },
+  {
+   "variable": "market_share",
+   "variable_text": "share of total biomass fuel traffic in the UK (harbour authority port criterion)",
+   "operator": ">",
+   "value": 20,
+   "value_text": "more than twenty percent of the total biomass fuel traffic in the United Kingdom",
+   "unit": "percent",
+   "measurement": "Share of UK total traffic",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Port criterion for harbour authority designation under reg. 8(1)",
+   "conditions": "Alternative criterion for the port (one of four)",
+   "evidence": {
+    "provision": "Sch. 2 para. 5(3)(b)(iv)",
+    "quote": "it handles more than twenty percent of the total biomass fuel traffic in the United Kingdom"
+   }
+  },
+  {
+   "variable": "volume",
+   "variable_text": "annual passenger numbers at a UK port (port facility operator)",
+   "operator": ">",
+   "value": 10000000,
+   "value_text": "annual passenger numbers greater than 10 million",
+   "unit": "annual passengers",
+   "measurement": "Annual passenger numbers at the port",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Meeting the threshold is a condition for deemed designation as an OES under reg. 8(1)",
+   "conditions": "Operator of a port facility handling passengers",
+   "evidence": {
+    "provision": "Sch. 2 para. 5(4)(a)",
+    "quote": "an operator of a port facility which handles passengers at a port which has annual passenger numbers greater than 10 million"
+   }
+  },
+  {
+   "variable": "market_share",
+   "variable_text": "share of total roll-on roll-off traffic in the UK (port facility criterion)",
+   "operator": ">",
+   "value": 15,
+   "value_text": "more than fifteen percent of the total roll-on roll-off traffic in the United Kingdom",
+   "unit": "percent",
+   "measurement": "Share of UK total traffic",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Port criterion for port facility operator designation under reg. 8(1)",
+   "conditions": "Alternative criterion; the operator must handle the same freight type for which the port qualifies",
+   "evidence": {
+    "provision": "Sch. 2 para. 5(4)(b)(i)",
+    "quote": "it handles more than fifteen percent of the total roll-on roll-off traffic in the United Kingdom"
+   }
+  },
+  {
+   "variable": "market_share",
+   "variable_text": "share of total lift-on lift-off traffic in the UK (port facility criterion)",
+   "operator": ">",
+   "value": 15,
+   "value_text": "more than fifteen percent of the total lift-on lift-off traffic in the United Kingdom",
+   "unit": "percent",
+   "measurement": "Share of UK total traffic",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Port criterion for port facility operator designation under reg. 8(1)",
+   "conditions": "Alternative criterion; the operator must handle the same freight type for which the port qualifies",
+   "evidence": {
+    "provision": "Sch. 2 para. 5(4)(b)(ii)",
+    "quote": "it handles more than fifteen percent of the total lift-on lift-off traffic in the United Kingdom"
+   }
+  },
+  {
+   "variable": "market_share",
+   "variable_text": "share of total liquid bulk traffic in the UK (port facility criterion)",
+   "operator": ">",
+   "value": 10,
+   "value_text": "more than ten percent of the total liquid bulk traffic in the United Kingdom",
+   "unit": "percent",
+   "measurement": "Share of UK total traffic",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Port criterion for port facility operator designation under reg. 8(1)",
+   "conditions": "Alternative criterion; the operator must handle the same freight type for which the port qualifies",
+   "evidence": {
+    "provision": "Sch. 2 para. 5(4)(b)(iii)",
+    "quote": "it handles more than ten percent of the total liquid bulk traffic in the United Kingdom"
+   }
+  },
+  {
+   "variable": "market_share",
+   "variable_text": "share of total biomass fuel traffic in the UK (port facility criterion)",
+   "operator": ">",
+   "value": 20,
+   "value_text": "more than twenty percent of the total biomass fuel traffic in the United Kingdom",
+   "unit": "percent",
+   "measurement": "Share of UK total traffic",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Port criterion for port facility operator designation under reg. 8(1)",
+   "conditions": "Alternative criterion; the operator must handle the same freight type for which the port qualifies",
+   "evidence": {
+    "provision": "Sch. 2 para. 5(4)(b)(iv)",
+    "quote": "it handles more than twenty percent of the total biomass fuel traffic in the United Kingdom"
+   }
+  },
+  {
+   "variable": "volume",
+   "variable_text": "annual passenger numbers at a UK port (vessel traffic services)",
+   "operator": ">",
+   "value": 10000000,
+   "value_text": "annual passenger numbers greater than 10 million",
+   "unit": "annual passengers",
+   "measurement": "Annual passenger numbers at the port",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Meeting the threshold is a condition for deemed designation as an OES under reg. 8(1)",
+   "conditions": "Operator of vessel traffic services at the port",
+   "evidence": {
+    "provision": "Sch. 2 para. 5(5)(a)",
+    "quote": "an operator of vessel traffic services at a port which has annual passenger numbers greater than 10 million"
+   }
+  },
+  {
+   "variable": "market_share",
+   "variable_text": "share of total roll-on roll-off traffic in the UK (vessel traffic services port criterion)",
+   "operator": ">",
+   "value": 15,
+   "value_text": "more than fifteen percent of the total roll-on roll-off traffic in the United Kingdom",
+   "unit": "percent",
+   "measurement": "Share of UK total traffic",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Port criterion for vessel traffic services designation under reg. 8(1)",
+   "conditions": "Alternative criterion for the port (one of four)",
+   "evidence": {
+    "provision": "Sch. 2 para. 5(5)(b)(i)",
+    "quote": "it handles more than fifteen percent of the total roll-on roll-off traffic in the United Kingdom"
+   }
+  },
+  {
+   "variable": "market_share",
+   "variable_text": "share of total lift-on lift-off traffic in the UK (vessel traffic services port criterion)",
+   "operator": ">",
+   "value": 15,
+   "value_text": "more than fifteen percent of the total lift-on lift-off traffic in the United Kingdom",
+   "unit": "percent",
+   "measurement": "Share of UK total traffic",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Port criterion for vessel traffic services designation under reg. 8(1)",
+   "conditions": "Alternative criterion for the port (one of four)",
+   "evidence": {
+    "provision": "Sch. 2 para. 5(5)(b)(ii)",
+    "quote": "it handles more than fifteen percent of the total lift-on lift-off traffic in the United Kingdom"
+   }
+  },
+  {
+   "variable": "market_share",
+   "variable_text": "share of total liquid bulk traffic in the UK (vessel traffic services port criterion)",
+   "operator": ">",
+   "value": 10,
+   "value_text": "more than ten percent of the total liquid bulk traffic in the United Kingdom",
+   "unit": "percent",
+   "measurement": "Share of UK total traffic",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Port criterion for vessel traffic services designation under reg. 8(1)",
+   "conditions": "Alternative criterion for the port (one of four)",
+   "evidence": {
+    "provision": "Sch. 2 para. 5(5)(b)(iii)",
+    "quote": "it handles more than ten percent of the total liquid bulk traffic in the United Kingdom"
+   }
+  },
+  {
+   "variable": "market_share",
+   "variable_text": "share of total biomass fuel traffic in the UK (vessel traffic services port criterion)",
+   "operator": ">",
+   "value": 20,
+   "value_text": "more than twenty percent of the total biomass fuel traffic in the United Kingdom",
+   "unit": "percent",
+   "measurement": "Share of UK total traffic",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Port criterion for vessel traffic services designation under reg. 8(1)",
+   "conditions": "Alternative criterion for the port (one of four)",
+   "evidence": {
+    "provision": "Sch. 2 para. 5(5)(b)(iv)",
+    "quote": "it handles more than twenty percent of the total biomass fuel traffic in the United Kingdom"
+   }
+  },
+  {
+   "variable": "volume",
+   "variable_text": "annual passenger journeys (metro, tram or light rail operator)",
+   "operator": ">",
+   "value": 50000000,
+   "value_text": "more than 50 million annual passenger journeys",
+   "unit": "annual passenger journeys",
+   "measurement": "Annual passenger journeys",
+   "level": "entity",
+   "trigger": "eligibility",
+   "consequence": "Meeting the threshold is a condition for deemed designation as an OES under reg. 8(1)",
+   "conditions": "Operator of metros, trams and other light rail services in the United Kingdom",
+   "evidence": {
+    "provision": "Sch. 2 para. 6(4)",
+    "quote": "an operator with more than 50 million annual passenger journeys"
+   }
+  },
+  {
+   "variable": "volume",
+   "variable_text": "vehicle miles travelled in total on roads (road transport)",
+   "operator": ">",
+   "value": 50000000000,
+   "value_text": "roads in the United Kingdom that have vehicles travelling more than 50 billion miles in total on them",
+   "unit": "miles",
+   "measurement": "Total miles travelled by vehicles on the roads covered by the road authority",
+   "level": "other",
+   "trigger": "eligibility",
+   "consequence": "Meeting the threshold is a condition for deemed designation as an OES under reg. 8(1)",
+   "conditions": "Road authority responsible for UK roads",
+   "evidence": {
+    "provision": "Sch. 2 para. 7(1)",
+    "quote": "that have vehicles travelling more than 50 billion miles in total on them"
+   }
+  },
+  {
+   "variable": "volume",
+   "variable_text": "vehicle miles travelled per year on roads covered by ITS services (road authority)",
+   "operator": ">",
+   "value": 50000000000,
+   "value_text": "roads in the United Kingdom that have vehicles travelling more than 50 billion miles in total on them, per year",
+   "unit": "miles per year",
+   "measurement": "Total miles travelled by vehicles per year on the roads covered",
+   "level": "other",
+   "trigger": "eligibility",
+   "consequence": "Meeting the threshold is a condition for deemed designation as an OES under reg. 8(1)",
+   "conditions": "Road authority providing Intelligent Transport Systems services",
+   "evidence": {
+    "provision": "Sch. 2 para. 7(2)",
+    "quote": "more than 50 billion miles in total on them, per year"
+   }
+  },
+  {
+   "variable": "population",
+   "variable_text": "people supplied with potable water",
+   "operator": ">=",
+   "value": 200000,
+   "value_text": "the supply of water to 200,000 or more people",
+   "unit": "people",
+   "level": "service",
+   "trigger": "eligibility",
+   "consequence": "Meeting the threshold is a condition for deemed designation as an OES under reg. 8(1)",
+   "conditions": "Supply of potable water in the United Kingdom (drinking water supply and distribution)",
+   "evidence": {
+    "provision": "Sch. 2 para. 9",
+    "quote": "the supply of water to 200,000 or more people"
+   }
+  },
+  {
+   "variable": "volume",
+   "variable_text": "queries from devices in the UK to a TLD Name Registry",
+   "operator": ">=",
+   "value": 14000000000,
+   "value_text": "services 14 billion or more queries from any devices located within the United Kingdom",
+   "unit": "queries",
+   "measurement": "Any consecutive 168-hour period; domains registered within ICANN",
+   "level": "service",
+   "trigger": "eligibility",
+   "consequence": "Meeting the threshold is a condition for deemed designation as an OES under reg. 8(1)",
+   "conditions": "TLD Name Registry, irrespective of place of establishment",
+   "evidence": {
+    "provision": "Sch. 2 para. 10(2)",
+    "quote": "services 14 billion or more queries from any devices located within the United Kingdom"
+   }
+  },
+  {
+   "variable": "volume",
+   "variable_text": "different IP addresses used by persons in the UK served by a DNS resolver service",
+   "operator": ">=",
+   "value": 500000,
+   "value_text": "services 500,000 or more different Internet Protocol addresses used by persons in the United Kingdom",
+   "unit": "IP addresses",
+   "measurement": "Any consecutive 168-hour period",
+   "level": "service",
+   "trigger": "eligibility",
+   "consequence": "Meeting the threshold is a condition for deemed designation as an OES under reg. 8(1)",
+   "conditions": "DNS resolver service provided by a DNS service provider, irrespective of place of establishment",
+   "evidence": {
+    "provision": "Sch. 2 para. 10(3)",
+    "quote": "services 500,000 or more different Internet Protocol addresses used by persons in the United Kingdom"
+   }
+  },
+  {
+   "variable": "volume",
+   "variable_text": "domains registered to persons with a UK address served by a DNS authoritative hosting service",
+   "operator": ">=",
+   "value": 100000,
+   "value_text": "services 100,000 or more domains registered to persons with an address in the United Kingdom",
+   "unit": "domains",
+   "level": "service",
+   "trigger": "eligibility",
+   "consequence": "Meeting the threshold is a condition for deemed designation as an OES under reg. 8(1)",
+   "conditions": "DNS authoritative hosting service provided by a DNS service provider, irrespective of place of establishment",
+   "evidence": {
+    "provision": "Sch. 2 para. 10(3A)",
+    "quote": "services 100,000 or more domains registered to persons with an address in the United Kingdom"
+   }
+  },
+  {
+   "variable": "market_share",
+   "variable_text": "market share of an IXP operator among IXP operators in the UK, by interconnected autonomous systems",
+   "operator": ">=",
+   "value": 30,
+   "value_text": "30% or more market share amongst IXP operators in the United Kingdom",
+   "unit": "percent",
+   "measurement": "Terms of interconnected autonomous systems",
+   "level": "entity",
+   "trigger": "eligibility",
+   "consequence": "Meeting the threshold is a condition for deemed designation as an OES under reg. 8(1)",
+   "conditions": "IXP operator, irrespective of place of establishment",
+   "evidence": {
+    "provision": "Sch. 2 para. 10(4)",
+    "quote": "has 30% or more market share amongst IXP operators in the United Kingdom"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "size class of a digital service provider (not micro or small enterprise)",
+   "operator": "=",
+   "value": null,
+   "value_text": "not a micro or small enterprise as defined in Commission Recommendation 2003/361/EC",
+   "unit": "",
+   "level": "entity",
+   "trigger": "scope_definition",
+   "consequence": "Provider not a micro or small enterprise is within the RDSP definition; micro and small enterprises are excluded",
+   "conditions": "Provider has head office in the United Kingdom or has nominated a representative established in the United Kingdom; provides a digital service in the United Kingdom",
+   "depends_on": "Commission Recommendation 2003/361/EC",
+   "evidence": {
+    "provision": "Reg. 1(3)(e)(ii)",
+    "quote": "the provider is not a micro or small enterprise as defined in Commission Recommendation 2003/361/EC"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "size class of a digital service provider established outside the UK (not small or micro enterprise)",
+   "operator": "=",
+   "value": null,
+   "value_text": "not a small or micro enterprise as defined in Commission Recommendation 2003/361/EC",
+   "unit": "",
+   "level": "entity",
+   "trigger": "scope_definition",
+   "consequence": "Provider with head office outside the UK must nominate a UK representative only if not a small or micro enterprise",
+   "conditions": "Head office outside the United Kingdom; offers digital services within the United Kingdom",
+   "depends_on": "Commission Recommendation 2003/361/EC",
+   "evidence": {
+    "provision": "Reg. 14A(1)(b)",
+    "quote": "is not a small or micro enterprise as defined in Commission Recommendation 2003/361/EC"
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "digital service",
+   "defined_in": "Reg. 1(2)",
+   "evidence": {
+    "provision": "Reg. 1(2)",
+    "quote": "“digital service” means a service within the meaning of point (b) of Article 1(1) of Directive 2015/1535 which is of any the following kinds"
+   }
+  },
+  {
+   "term": "digital service provider",
+   "defined_in": "Reg. 1(2)",
+   "evidence": {
+    "provision": "Reg. 1(2)",
+    "quote": "“digital service provider” means any person who provides a digital service"
+   }
+  },
+  {
+   "term": "online marketplace",
+   "defined_in": "Reg. 1(2)",
+   "evidence": {
+    "provision": "Reg. 1(2)",
+    "quote": "“online marketplace” means a digital service that allows consumers and/or traders"
+   }
+  },
+  {
+   "term": "online search engine",
+   "defined_in": "Reg. 1(2)",
+   "evidence": {
+    "provision": "Reg. 1(2)",
+    "quote": "“online search engine” means a digital service that allows users to perform searches of, in principle, all websites"
+   }
+  },
+  {
+   "term": "cloud computing service",
+   "defined_in": "Reg. 1(2)",
+   "evidence": {
+    "provision": "Reg. 1(2)",
+    "quote": "“cloud computing service” means a digital service that enables access to a scalable and elastic pool of shareable computing resources"
+   }
+  },
+  {
+   "term": "essential service",
+   "defined_in": "Reg. 1(2)",
+   "evidence": {
+    "provision": "Reg. 1(2)",
+    "quote": "“essential service” means a service which is essential for the maintenance of critical societal or economic activities"
+   }
+  },
+  {
+   "term": "network and information system",
+   "defined_in": "Reg. 1(2)",
+   "evidence": {
+    "provision": "Reg. 1(2)",
+    "quote": "“network and information system” (“NIS”) means—"
+   }
+  },
+  {
+   "term": "operator of an essential service (OES)",
+   "defined_in": "Reg. 1(2)",
+   "evidence": {
+    "provision": "Reg. 1(2)",
+    "quote": "“OES” (“operator of an essential service”) means a person who is deemed to be designated as an operator of an essential service under regulation 8(1)"
+   }
+  },
+  {
+   "term": "relevant digital service provider (RDSP)",
+   "defined_in": "Reg. 1(3)(e)",
+   "evidence": {
+    "provision": "Reg. 1(3)(e)",
+    "quote": "a “relevant digital service provider” (“RDSP”) is a reference to a person who provides a digital service in the United Kingdom"
+   }
+  },
+  {
+   "term": "incident",
+   "defined_in": "Reg. 1(2)",
+   "evidence": {
+    "provision": "Reg. 1(2)",
+    "quote": "“incident” means any event having an actual adverse effect on the security of network and information systems"
+   }
+  },
+  {
+   "term": "security of network and information systems",
+   "defined_in": "Reg. 1(3)(g)",
+   "evidence": {
+    "provision": "Reg. 1(3)(g)",
+    "quote": "“security of network and information systems” means the ability of network and information systems to resist"
+   }
+  },
+  {
+   "term": "representative",
+   "defined_in": "Reg. 1(2)",
+   "evidence": {
+    "provision": "Reg. 1(2)",
+    "quote": "“representative” means any natural or legal person established in the United Kingdom who is able to act on behalf of a digital service provider established outside the United Kingdom"
+   }
+  },
+  {
+   "term": "oil equivalent",
+   "defined_in": "Sch. 2 para. 2(8)(h)",
+   "evidence": {
+    "provision": "Sch. 2 para. 2(8)(h)",
+    "quote": "“oil equivalent” means petroleum and, for the purposes of assessments of throughput, where petroleum is in a gaseous state 1,100 cubic meters"
+   }
+  },
+  {
+   "term": "affiliated undertaking",
+   "defined_in": "Directive 2013/34/EU Art. 2(12)",
+   "evidence": {
+    "provision": "Sch. 2 para. 1(8)(a)",
+    "quote": "“affiliated undertaking” has the meaning given by Article 2(12) of Directive 2013/34/EU"
+   }
+  },
+  {
+   "term": "final customer",
+   "defined_in": "Directive 2009/72/EC Art. 2(9)",
+   "evidence": {
+    "provision": "Sch. 2 para. 1(8)(e)",
+    "quote": "“final customer” has the meaning given by Article 2(9) of the Electricity Directive"
+   }
+  },
+  {
+   "term": "road authority",
+   "defined_in": "Commission Delegated Regulation (EU) 2015/962 Art. 2(12)",
+   "evidence": {
+    "provision": "Sch. 2 para. 7(3)(a)",
+    "quote": "“road authority” has the same meaning"
+   }
+  },
+  {
+   "term": "TLD Name Registry",
+   "defined_in": "Sch. 2 para. 10(5)(d)",
+   "evidence": {
+    "provision": "Sch. 2 para. 10(5)(d)",
+    "quote": "“TLD Name Registry” is a reference to “top-level domain name registry” which means an entity which administers and operates the registration of internet domain names under a specific top-level domain"
+   }
+  },
+  {
+   "term": "DNS service provider",
+   "defined_in": "Sch. 2 para. 10(5)(b)",
+   "evidence": {
+    "provision": "Sch. 2 para. 10(5)(b)",
+    "quote": "which means an entity which provides DNS services"
+   }
+  },
+  {
+   "term": "IXP",
+   "defined_in": "Sch. 2 para. 10(5)(c)",
+   "evidence": {
+    "provision": "Sch. 2 para. 10(5)(c)",
+    "quote": "“IXP” is a reference to “internet exchange point” which means a network facility which"
+   }
+  },
+  {
+   "term": "IXP Operator",
+   "defined_in": "Sch. 2 para. 10(5)(ca)",
+   "evidence": {
+    "provision": "Sch. 2 para. 10(5)(ca)",
+    "quote": "“IXP Operator” means a person who provides an IXP to another person"
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "A Minister of the Crown must designate and publish the NIS national strategy setting strategic objectives and priorities for the relevant sectors and digital services; the Minister may review it and must publish any revised strategy.",
+   "evidence": {
+    "provision": "Regulation 2(1)",
+    "quote": "A Minister of the Crown must designate and publish a strategy to provide strategic objectives and priorities"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Each designated competent authority, in its subsector, must review the application of the Regulations, prepare and publish guidance, keep lists of designated and revoked OES, send those lists to GCHQ as SPOC, consult and co-operate with the Information Commission, law-enforcement authorities, other UK competent authorities, the SPOC and the CSIRT.",
+   "evidence": {
+    "provision": "Regulation 3(3)",
+    "quote": "In relation to the subsector for which it is designated under paragraph (1), the competent authority must"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "regulator",
+   "modality": "shall",
+   "summary": "In relation to digital services, the Information Commission must review the application of the Regulations, prepare and publish guidance, and consult and co-operate with the persons listed in regulation 3(3)(g).",
+   "evidence": {
+    "provision": "Regulation 3(4)",
+    "quote": "review the application of these Regulations"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "also_addressees": [
+    "regulator"
+   ],
+   "modality": "shall",
+   "summary": "The competent authorities and the Information Commission must have regard to the national strategy when carrying out their duties under the Regulations.",
+   "evidence": {
+    "provision": "Regulation 3(6)",
+    "quote": "must have regard to the national strategy that is published under regulation 2(1)"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "GCHQ as single point of contact must consult and co-operate, as it considers appropriate, with relevant law-enforcement authorities and co-operate with the NIS enforcement authorities.",
+   "evidence": {
+    "provision": "Regulation 4(2A)",
+    "quote": "consult and co-operate, as it considers appropriate, with relevant law enforcement authorities"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The CSIRT (GCHQ) must monitor incidents in the UK, provide early warning and alerts, respond to notified incidents, provide risk and incident analysis, establish relationships with the private sector, promote common standardised practices, and co-operate with the NIS enforcement authorities.",
+   "evidence": {
+    "provision": "Regulation 5(2)",
+    "quote": "monitor incidents in the United Kingdom"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "government_agency",
+   "modality": "shall_not",
+   "summary": "Information shared between NIS enforcement authorities and other recipients under regulation 6(1) may not be further shared for any purpose other than the purposes in regulation 6(1), unless the NIS enforcement authority agrees.",
+   "evidence": {
+    "provision": "Regulation 6(1A)",
+    "quote": "may not be further shared by the person with whom it is shared"
+   }
+  },
+  {
+   "type": "registration_notification",
+   "addressee": "essential_entity",
+   "modality": "shall",
+   "summary": "A person deemed to be an OES, or treated as an OES under regulation 8(2A), must notify the designated competent authority in writing of that fact before the notification date.",
+   "applies_from": "notification date: 10 August 2018 for persons falling within regulation 8(1) when the Regulations come into force; otherwise three months after the person falls within regulation 8(1)",
+   "conditional_on": "person falls within regulation 8(1)",
+   "evidence": {
+    "provision": "Regulation 8(2)",
+    "quote": "A person who falls within paragraph (1) must notify the designated competent authority"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "A competent authority must designate an OES by written notice with reasons; must have regard to notifications from persons who no longer meet the conditions; must maintain a list of all OES; and must review the list at regular intervals.",
+   "applies_from": "first review before 9 May 2020; subsequent reviews at least biennially",
+   "conditional_on": "designation under regulation 8(3) or revocation consideration",
+   "evidence": {
+    "provision": "Regulation 8(8)",
+    "quote": "A competent authority must maintain a list of all the persons"
+   }
+  },
+  {
+   "type": "registration_notification",
+   "addressee": "essential_entity",
+   "modality": "shall",
+   "summary": "An OES that has reasonable grounds to believe it no longer falls within regulation 8(1) or that the conditions for designation under regulation 8(3) are no longer met must notify the competent authority in writing as soon as practicable, with supporting evidence.",
+   "conditional_on": "reasonable grounds to believe the OES no longer meets the conditions",
+   "evidence": {
+    "provision": "Regulation 8(7A)",
+    "quote": "they must as soon as practicable notify the designated competent authority in writing"
+   }
+  },
+  {
+   "type": "appointment_of_representative",
+   "addressee": "essential_entity",
+   "modality": "shall",
+   "summary": "An OES with its head office outside the UK, when required by a designated competent authority, must nominate in writing a person in the UK with authority to act on its behalf under the Regulations.",
+   "conditional_on": "OES with head office outside the UK providing relevant essential services in the UK and having received a written notice requiring compliance",
+   "evidence": {
+    "provision": "Regulation 8A(3)(a)",
+    "quote": "nominate in writing a person in the United Kingdom with the authority to act on their behalf under these Regulations"
+   }
+  },
+  {
+   "type": "registration_notification",
+   "addressee": "essential_entity",
+   "modality": "shall",
+   "summary": "An OES covered by regulation 8A must notify the designated competent authority in writing of the nominated person's name, address and contact details before the relevant date.",
+   "applies_from": "before the relevant date: three months after the OES is deemed or designated an OES (31 March 2021 where the earlier date fell before 31 December 2020)",
+   "conditional_on": "OES with head office outside the UK subject to regulation 8A",
+   "evidence": {
+    "provision": "Regulation 8A(3)(b)",
+    "quote": "before the relevant date, notify the designated competent authority for the OES in writing of"
+   }
+  },
+  {
+   "type": "registration_notification",
+   "addressee": "essential_entity",
+   "modality": "shall",
+   "summary": "An OES covered by regulation 8A must notify the designated competent authority of any change to the nominated person information as soon as practicable and within seven days of the change.",
+   "applies_from": "within seven days beginning with the day on which the change took effect",
+   "conditional_on": "change to information notified under regulation 8A(3)(b)",
+   "evidence": {
+    "provision": "Regulation 8A(4)",
+    "quote": "must notify the designated competent authority for the OES of any changes"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Before revoking a deemed or regulation 8(3) designation, the competent authority must serve a written notice of proposed revocation, give reasons, invite written representations and consider them before a final decision.",
+   "conditional_on": "proposed revocation of an OES designation under regulation 9",
+   "evidence": {
+    "provision": "Regulation 9(3)(a)",
+    "quote": "serve a notice in writing of proposed revocation on that person"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "essential_entity",
+   "modality": "shall",
+   "summary": "An OES must take appropriate and proportionate technical and organisational measures to manage risks to the security of the network and information systems it relies on, and measures to prevent and minimise the impact of incidents, having regard to the state of the art.",
+   "evidence": {
+    "provision": "Regulation 10(1)",
+    "quote": "An OES must take appropriate and proportionate technical and organisational measures to manage risks"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "essential_entity",
+   "modality": "shall",
+   "summary": "Operators of essential services must have regard to relevant guidance issued by the relevant competent authority when carrying out their duties under regulation 10(1) and (2).",
+   "evidence": {
+    "provision": "Regulation 10(4)",
+    "quote": "Operators of essential services must have regard to any relevant guidance issued by the relevant competent authority"
+   }
+  },
+  {
+   "type": "incident_reporting",
+   "addressee": "essential_entity",
+   "modality": "shall",
+   "summary": "An OES must notify the designated competent authority in writing of any NIS incident with a significant impact on the continuity of its essential service, with the content listed in regulation 11(3), without undue delay and in any event within 72 hours of becoming aware of it.",
+   "applies_from": "without undue delay and in any event no later than 72 hours after the operator is aware that a NIS incident has occurred",
+   "conditional_on": "NIS incident with significant impact on the continuity of the essential service",
+   "evidence": {
+    "provision": "Regulation 11(1)",
+    "quote": "An OES must notify the designated competent authority"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "After receiving an incident notification, the competent authority must assess what further action is required and share the NIS incident information with the CSIRT; the competent authority and CSIRT must consult each other and the OES before informing the public.",
+   "conditional_on": "receipt of a notification under regulation 11(1)",
+   "evidence": {
+    "provision": "Regulation 11(5)(a)",
+    "quote": "assess what further action, if any, is required in respect of that incident"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The competent authority must provide an annual report to the SPOC identifying the number and nature of NIS incidents notified under regulation 11(1).",
+   "applies_from": "first report on or before 1 July 2018; subsequent reports at annual intervals",
+   "evidence": {
+    "provision": "Regulation 11(9)",
+    "quote": "The competent authority must provide an annual report to the SPOC"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "essential_entity",
+   "modality": "shall",
+   "summary": "Operators of essential services must have regard to relevant guidance issued by the relevant competent authority when carrying out their duties under regulation 11(1) to (4).",
+   "evidence": {
+    "provision": "Regulation 11(12)",
+    "quote": "must have regard to any relevant guidance issued by the relevant competent authority when carrying out their duties imposed by paragraphs (1) to (4)"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "platform_operator",
+   "also_addressees": [
+    "search_engine_operator",
+    "cloud_service_provider"
+   ],
+   "modality": "shall",
+   "summary": "A relevant digital service provider (RDSP) must identify and take appropriate and proportionate measures to manage risks to the security of network and information systems it relies on to provide online marketplace, online search engine or cloud computing services in the UK; measures must ensure continuity and reflect the elements in EU Regulation 2018/151.",
+   "conditional_on": "RDSP providing online marketplace, online search engine or cloud computing service within the UK",
+   "evidence": {
+    "provision": "Regulation 12(1)",
+    "quote": "A RDSP must identify and take appropriate and proportionate measures to manage the risks posed to the security of network and information systems"
+   }
+  },
+  {
+   "type": "incident_reporting",
+   "addressee": "platform_operator",
+   "also_addressees": [
+    "search_engine_operator",
+    "cloud_service_provider"
+   ],
+   "modality": "shall",
+   "summary": "An RDSP must notify the Information Commission in writing of any incident having a substantial impact on the digital services it provides in the UK, with the content listed in regulation 12(5), without undue delay and within 72 hours of first becoming aware.",
+   "applies_from": "without undue delay and in any event no later than 72 hours after the RDSP is first aware that an incident has occurred",
+   "conditional_on": "RDSP has access to information enabling it to assess whether the impact is substantial",
+   "evidence": {
+    "provision": "Regulation 12(3)",
+    "quote": "about any incident having a substantial impact on the provision of any of the digital services"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "platform_operator",
+   "also_addressees": [
+    "search_engine_operator",
+    "cloud_service_provider"
+   ],
+   "modality": "shall",
+   "summary": "In determining whether an incident has substantial impact, an RDSP must take into account the parameters in EU Regulation 2018/151 and must have regard to relevant guidance published by the Information Commission.",
+   "evidence": {
+    "provision": "Regulation 12(7)(b)",
+    "quote": "have regard to any relevant guidance published by the"
+   }
+  },
+  {
+   "type": "incident_reporting",
+   "addressee": "essential_entity",
+   "modality": "shall",
+   "summary": "An OES relying on an RDSP for an essential service must notify its designated competent authority in writing, without undue delay, of any significant impact on the continuity of its service caused by an incident affecting the RDSP.",
+   "applies_from": "without undue delay",
+   "conditional_on": "OES reliant on an RDSP to provide an essential service and significant impact caused by an RDSP incident",
+   "evidence": {
+    "provision": "Regulation 12(9)",
+    "quote": "If an OES is reliant on a RDSP to provide an essential service, the operator must notify"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "regulator",
+   "modality": "shall",
+   "summary": "After receiving an RDSP incident notification, the Information Commission must share it with the CSIRT as soon as reasonably practicable; before informing the public about an incident it must consult the CSIRT and the RDSP.",
+   "conditional_on": "receipt of a notification under regulation 12(3)",
+   "evidence": {
+    "provision": "Regulation 12(8)",
+    "quote": "must share the incident notification with the CSIRT as soon as reasonably practicable"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "regulator",
+   "modality": "shall",
+   "summary": "The Information Commission must provide an annual report to the SPOC identifying the number and nature of RDSP incidents notified under regulation 12(3); the first report is due on or before 1 July 2018.",
+   "applies_from": "first report on or before 1 July 2018; subsequent reports at annual intervals after that date",
+   "evidence": {
+    "provision": "Regulation 12(15)",
+    "quote": "must provide an annual report to the SPOC identifying the number and nature of incidents notified to it under paragraph (3)"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "regulator",
+   "modality": "shall",
+   "summary": "The Information Commission must maintain a register of all RDSPs that have been notified to it.",
+   "evidence": {
+    "provision": "Regulation 14(1)",
+    "quote": "must maintain a register of all RDSPs that have been notified to it"
+   }
+  },
+  {
+   "type": "registration_notification",
+   "addressee": "platform_operator",
+   "also_addressees": [
+    "search_engine_operator",
+    "cloud_service_provider"
+   ],
+   "modality": "shall",
+   "summary": "An RDSP must submit its name, head office or nominated representative address, and contact details to the Information Commission before the registration date, and notify changes in writing within three months of the change taking effect.",
+   "applies_from": "before the registration date: 1 November 2018 for RDSPs meeting the conditions at the coming into force date, otherwise three months after the RDSP satisfies those conditions",
+   "conditional_on": "RDSP satisfying the conditions in regulation 1(3)(e)",
+   "evidence": {
+    "provision": "Regulation 14(2)",
+    "quote": "A RDSP must submit the following details to the"
+   }
+  },
+  {
+   "type": "appointment_of_representative",
+   "addressee": "platform_operator",
+   "also_addressees": [
+    "search_engine_operator",
+    "cloud_service_provider"
+   ],
+   "modality": "shall",
+   "summary": "A digital service provider with its head office outside the UK that offers digital services in the UK and is not a small or micro enterprise must nominate in writing a UK representative and notify the Information Commission of the representative's details.",
+   "applies_from": "within three months of the coming into force date for providers already offering services in the UK on that date; otherwise within three months of first offering digital services in the UK",
+   "conditional_on": "head office outside the UK, offering digital services in the UK, not a small or micro enterprise",
+   "evidence": {
+    "provision": "Regulation 14A(2)(a)",
+    "quote": "nominate in writing a representative in the United Kingdom"
+   }
+  },
+  {
+   "type": "cooperation_with_authority",
+   "addressee": "essential_entity",
+   "also_addressees": [
+    "platform_operator",
+    "cloud_service_provider"
+   ],
+   "modality": "shall",
+   "summary": "A person served with an information notice under regulation 15 must comply with its requirements.",
+   "conditional_on": "service of an information notice under regulation 15",
+   "evidence": {
+    "provision": "Regulation 15(5A)",
+    "quote": "must comply with the requirements of the notice"
+   }
+  },
+  {
+   "type": "cooperation_with_authority",
+   "addressee": "essential_entity",
+   "also_addressees": [
+    "platform_operator",
+    "cloud_service_provider"
+   ],
+   "modality": "shall",
+   "summary": "An OES or RDSP subject to an inspection must pay the reasonable costs of the inspection if required, co-operate with the inspector, provide access to premises and documents, allow examination and copying, allow access to persons, not intentionally obstruct the inspector, and comply with inspector requests.",
+   "conditional_on": "inspection under regulation 16(1) or (2)",
+   "evidence": {
+    "provision": "Regulation 16(3)(a)",
+    "quote": "pay the reasonable costs of the inspection"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "An inspector must produce proof of identity if requested, keep removed material secure, take measures to ensure the OES or RDSP can still comply before exercising certain powers, and give a notice of removed items.",
+   "conditional_on": "exercise of inspection powers under regulation 16",
+   "evidence": {
+    "provision": "Regulation 16(6)(a)",
+    "quote": "produce proof of the inspector’s identity if requested by any person present at the premises"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "essential_entity",
+   "also_addressees": [
+    "platform_operator",
+    "cloud_service_provider"
+   ],
+   "modality": "shall",
+   "summary": "An OES or RDSP must pay a fee invoiced by the enforcement authority for the reasonable costs of its NIS functions, within 30 days after receipt of the invoice.",
+   "applies_from": "within 30 days after receipt of the invoice",
+   "conditional_on": "invoice sent by the enforcement authority under regulation 21",
+   "evidence": {
+    "provision": "Regulation 21(2)",
+    "quote": "must be paid to the enforcement authority within 30 days after receipt of the invoice"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Before taking enforcement action, the enforcement authority must consider whether it is reasonable and proportionate and must have regard to representations, steps taken to comply and rectify, time available to comply, and other enactments.",
+   "conditional_on": "before enforcement action under regulation 17(1) or (2), 18(3A) or (3B), or 20",
+   "evidence": {
+    "provision": "Regulation 23(1)",
+    "quote": "the enforcement authority must consider whether it is reasonable and proportionate"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Upon request by an OES or RDSP, the competent authority or Information Commission must provide written reasons for a decision to take no further action within a reasonable time and no later than 28 days.",
+   "applies_from": "within 28 days of the request",
+   "conditional_on": "request under regulation 17(5)",
+   "evidence": {
+    "provision": "Regulation 17(6)",
+    "quote": "must provide written reasons for a decision under paragraph (4) within a reasonable time"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Secretary of State must carry out a review of the regulatory provision in the Regulations and EU Regulation 2018/151 and publish a report of its conclusions; reports must set out objectives and their assessment as required by section 30(4) of the Small Business, Enterprise and Employment Act 2015.",
+   "applies_from": "first report on or before 9 May 2020; second report on or before 9 May 2022; subsequent reports at intervals not exceeding five years",
+   "evidence": {
+    "provision": "Regulation 25(1)(a)",
+    "quote": "carry out a review of the regulatory provision contained in these Regulations"
+   }
+  }
+ ],
+ "enforcement": [
+  {
+   "sanction_type": "other",
+   "authority": "Designated competent authority for an OES (reg. 17(1)); Information Commission for an RDSP (reg. 17(2))",
+   "triggered_by": "Reasonable grounds to believe the OES or RDSP has failed to perform a listed duty, e.g. security duties (reg. 10(1)-(2), 12(1)-(2)), incident notification (reg. 11, 12(3)), information notices (reg. 15), or inspection directions (reg. 16)",
+   "max_penalty_text": "No monetary amount stated. The enforcement notice must specify the alleged failure, the reasons, and the steps to rectify it with a time period.",
+   "penalty_reference": "reg. 17(3)",
+   "cure_period": "Time period specified in the notice for the steps to rectify the failure (reg. 17(3)(c)); representations may be made before service (reg. 17(2A))",
+   "evidence": {
+    "provision": "reg. 17(1)",
+    "quote": "may serve an enforcement notice upon that OES"
+   }
+  },
+  {
+   "sanction_type": "administrative_fine",
+   "authority": "Designated competent authority for an OES (reg. 18(1)); Information Commission for an RDSP (reg. 18(2))",
+   "triggered_by": "Failure to comply with a duty referred to in regulation 17(1) or 17(3A) (OES), or regulation 17(2) or 17(3A) (RDSP), where a penalty is considered warranted",
+   "max_penalty_text": "Not exceed £1,000,000 for a non-material contravention; not exceed £8,500,000 for a material contravention not meeting the significant-risk criteria; not exceed £17,000,000 for a material contravention that has or could have created a significant risk to, or significant impact on, the service provision",
+   "max_penalty_amount": 17000000,
+   "currency": "GBP",
+   "penalty_formula": "Tiered caps: £1,000,000 for any non-material contravention; £8,500,000 for a material contravention; £17,000,000 for a material contravention that has or could have created a significant risk to, or significant impact on, the service provision. Amount must be appropriate and proportionate to the failure.",
+   "penalty_reference": "reg. 18(3)-(6)",
+   "cure_period": "No fixed cure period stated. Representations may be made after the notice of intention to impose a penalty (reg. 18(3)(f)); a material contravention is defined by reference to failure to rectify under an enforcement notice (reg. 18(7)(a)).",
+   "evidence": {
+    "provision": "reg. 18(6)(d)",
+    "quote": "not exceed £17,000,000 for a material contravention"
+   }
+  },
+  {
+   "sanction_type": "injunction_order",
+   "authority": "Designated competent authority for an OES (reg. 20A(1)(a)); Information Commission for an RDSP (reg. 20A(1)(b))",
+   "triggered_by": "Failure to comply with the requirements of an enforcement notice as required by regulation 17(3A)",
+   "max_penalty_text": "No monetary maximum stated. Civil proceedings may seek an injunction, specific performance of a statutory duty, or any other appropriate remedy or relief.",
+   "penalty_reference": "reg. 20A(4)-(5)",
+   "cure_period": "No civil proceedings may be commenced before the end of 28 days beginning with the day on which the last relevant enforcement notice was served (reg. 20A(6))",
+   "evidence": {
+    "provision": "reg. 20A(4)(a)",
+    "quote": "for an injunction to enforce the duty in regulation 17(3A);"
+   }
+  }
+ ],
+ "section_status": {}
+}

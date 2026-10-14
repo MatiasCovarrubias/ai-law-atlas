@@ -1,0 +1,575 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "uk-psti-security-requirements-2023",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (connectors/fetch_texts.py)",
+  "url": "https://www.legislation.gov.uk/uksi/2023/1007/data.html",
+  "retrieved": "2026-10-13",
+  "version": "as fetched",
+  "language": "en",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "cybersecurity",
+   "consumer_protection"
+  ],
+  "primary_domain": "cybersecurity",
+  "mechanisms": [
+   "mandate_obligation",
+   "disclosure_transparency",
+   "standard_setting"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "hardware_supplier",
+   "enterprise"
+  ],
+  "affected_roles": [
+   "consumers_users"
+  ],
+  "decision_margins": [
+   "firm:product_design_release",
+   "firm:compliance_process",
+   "household:information"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national"
+   ],
+   "description": "Extends to England, Wales, Scotland and Northern Ireland and applies to relevant connectable products made available in the United Kingdom.",
+   "evidence": {
+    "provision": "Reg. 1(2)",
+    "quote": "extend to England and Wales, Scotland and Northern Ireland"
+   }
+  },
+  "agora_strategies": [
+   "Disclosure",
+   "Disclosure: In standard form"
+  ]
+ },
+ "summary": {
+  "short": "Sets security requirements for manufacturers of UK consumer connectable products, covering passwords, vulnerability reporting and minimum security update periods. It also sets deemed-compliance routes through ETSI EN 303 645, ISO/IEC 29147 and labelling schemes, excepted product categories, and statement-of-compliance content and retention rules, in force 29 April 2024 across the UK.",
+  "long": "Made under the Product Security and Telecommunications Infrastructure Act 2022 and in force 29 April 2024 in England, Wales, Scotland and Northern Ireland, these Regulations set security requirements for manufacturers of relevant connectable products. Schedule 1 requires unique or user-defined passwords, a published point of contact for security reports with acknowledgement and status updates, and a published defined support period for security updates. Regulation 5 applies these requirements to each manufacturer where there is more than one. Schedule 2 deems compliance where ETSI EN 303 645 or ISO/IEC 29147 provisions are met, or where a Japan JC-STAR STAR-1 or Singapore Cybersecurity Labelling Scheme label is held; Schedule 2A applies similar deemed compliance to statements of compliance. Schedule 3 lists excepted products, such as certain medical devices, computers, smart meters, electric vehicle charge points and vehicles. Schedule 4 sets statement-of-compliance content, and regulations 8 and 9 require manufacturers and importers to keep statements for the longer of ten years or the defined support period. Regulation 10 requires review at least every five years. This text itself contains no penalty provisions."
+ },
+ "relations": [
+  {
+   "relation": "legal_basis",
+   "target_text": "Product Security and Telecommunications Infrastructure Act 2022",
+   "note": "Enabling Act. Powers under sections 1(1), 3(1), 6(1), 9(3)(b) and (6), 15(3) and 77(2) are exercised; section references in the Regulations are to this Act (reg. 2(2)).",
+   "evidence": {
+    "provision": "Preamble (enacting words); reg. 2(2)",
+    "quote": "sections 1(1), 3(1), 6(1), 9(3)(b) and (6), 15(3) and 77(2) of the Product Security and Telecommunications Infrastructure Act 20222"
+   }
+  },
+  {
+   "relation": "legal_basis",
+   "target_text": "European Union (Withdrawal) Act 2018",
+   "note": "Power under section 8C is exercised. The draft was laid under paragraph 8F(1) of Schedule 7 to that Act.",
+   "evidence": {
+    "provision": "Preamble (enacting words)",
+    "quote": "section 8C of the European Union (Withdrawal) Act 20181"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Consumer Protection from Unfair Trading Regulations 2008",
+   "note": "Schedule 1 para. 3(5) requires publication of support-period information alongside information described in regulation 6(4)(a) of the 2008 Regulations, and para. 3(5) and 3(7) use its definitions.",
+   "evidence": {
+    "provision": "Schedule 1, para. 3(7)",
+    "quote": "“the 2008 Regulations” means the Consumer Protection from Unfair Trading Regulations 20085"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Electric Vehicles (Smart Charge Points) Regulations 2021",
+   "note": "Charge points to which these regulations apply are excepted products under Schedule 3 para. 2.",
+   "evidence": {
+    "provision": "Schedule 3, para. 2(4)",
+    "quote": "“the 2021 Regulations” mean the Electric Vehicles (Smart Charge Points) Regulations 20217"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Automated and Electric Vehicles Act 2018",
+   "note": "Defines 'charge point' for the purposes of the Schedule 3 para. 2 exception.",
+   "evidence": {
+    "provision": "Schedule 3, para. 2(4)",
+    "quote": "“charge point” has the meaning given in section 9(1) of the Automated and Electric Vehicles Act 20188"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Medical Devices Regulations 2002",
+   "note": "Products to which these Regulations apply are excepted, except a relevant connectable product on which software to which those Regulations apply is installed or operable (Schedule 3 para. 3(2)).",
+   "evidence": {
+    "provision": "Schedule 3, para. 3(1)",
+    "quote": "products to which the Medical Devices Regulations 20029 apply"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Gas Act 1986 (section 7AB)",
+   "note": "Smart meter products supplied under a licence holder's licence under this section are excepted if assured under an assurance scheme (Schedule 3 para. 4(1)).",
+   "evidence": {
+    "provision": "Schedule 3, para. 4(1)(a)(i)",
+    "quote": "section 7AB of the Gas Act 198610"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Electricity Act 1989 (section 6)",
+   "note": "Alternative licence basis for the smart meter product exception in Schedule 3 para. 4(1)(a)(ii).",
+   "evidence": {
+    "provision": "Schedule 3, para. 4(1)(a)(ii)",
+    "quote": "section 6 of the Electricity Act 198911"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) 2018/858",
+   "note": "Products to which this Regulation applies are excepted in Great Britain (Schedule 3 para. 6).",
+   "evidence": {
+    "provision": "Schedule 3, para. 6",
+    "quote": "Regulation (EU) 2018/858 of the European Parliament and of the Council of 30 May 2018"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) No 168/2013",
+   "note": "Two- or three-wheel vehicles and quadricycles to which this Regulation applies are excepted in Great Britain (Schedule 3 para. 7).",
+   "evidence": {
+    "provision": "Schedule 3, para. 7",
+    "quote": "Regulation (EU) No 168/2013 of the European Parliament and of the Council of 15 January 2013"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) No 167/2013",
+   "note": "Agricultural and forestry vehicles to which this Regulation applies are excepted in Great Britain (Schedule 3 para. 8).",
+   "evidence": {
+    "provision": "Schedule 3, para. 8",
+    "quote": "Regulation (EU) No 167/2013 of the European Parliament and of the Council of 5 February 2013"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Windsor Framework (Joint Declaration No. 1/2023)",
+   "note": "Defines the Windsor Framework used for the Northern Ireland exception in Schedule 3 para. 1.",
+   "evidence": {
+    "provision": "Schedule 3, para. 1(4)",
+    "quote": "“Windsor Framework” has the same meaning as in Joint Declaration No. 1/2023 of the EU and the United Kingdom"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "ETSI EN 303 645 (Cyber Security for Consumer Internet of Things: Baseline Requirements)",
+   "note": "Provisions 5.1-1, 5.1-2, 5.2-1 and 5.3-13 are incorporated as deemed-compliance conditions in Schedule 2.",
+   "evidence": {
+    "provision": "Regulation 2(1); Schedule 2, paras 1(2), 2(2)(a), 3(2)",
+    "quote": "“ETSI EN 303 645” means the European Standard on Cyber Security for Consumer Internet of Things: Baseline Requirements"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "ISO/IEC 29147:2018 (Vulnerability disclosure standard)",
+   "note": "Paragraphs 6.2.2, 6.2.5 and 6.5 are used as an alternative deemed-compliance route in Schedule 2 para. 2(2)(b).",
+   "evidence": {
+    "provision": "Regulation 2(1); Schedule 2, para. 2(2)(b)",
+    "quote": "“ISO/IEC 29147” means the ISO/IEC 29147:2018 Information technology - Security techniques - Vulnerability disclosure standard"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Japan JC-STAR STAR-1 labelling scheme",
+   "note": "A current conformance label under this scheme is a deemed-compliance condition in Schedules 2 and 2A.",
+   "evidence": {
+    "provision": "Regulation 2(1); Schedule 2, para. 1(3)",
+    "quote": "“Japan JC-STAR STAR-1” means the Labeling Scheme based on Japan Cyber-Security Technical Assessment Requirements (JC-STAR) STAR-1 Conformance Requirements"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Singapore Cybersecurity Labelling Scheme (CCC SP-151-2 CLS(IoT) Scheme Specifications)",
+   "note": "A current label under any level of this scheme is a deemed-compliance condition in Schedules 2 and 2A.",
+   "evidence": {
+    "provision": "Regulation 2(1); Schedule 2, para. 1(4)",
+    "quote": "“Singapore Cybersecurity Labelling Scheme” means the Cybersecurity Labelling Scheme published by the Cyber Security Agency of Singapore"
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "Secretary of State",
+   "role": "addressee",
+   "function": "Makes the Regulations; must carry out reviews of the regulatory provisions and publish reports on their conclusions (reg. 10).",
+   "evidence": {
+    "provision": "Regulation 10(1)",
+    "quote": "The Secretary of State must from time to time—"
+   }
+  },
+  {
+   "name": "Department for Science, Innovation and Technology",
+   "role": "listed",
+   "function": "Named as the source from which the full impact assessment is available.",
+   "evidence": {
+    "provision": "Explanatory Note",
+    "quote": "available from the Department for Science, Innovation and Technology"
+   }
+  },
+  {
+   "name": "National Cyber Security Centre",
+   "role": "listed",
+   "function": "Administers the commercial product assurance scheme referenced in the smart meter product exception (Schedule 3 para. 4(2)).",
+   "evidence": {
+    "provision": "Schedule 3, para. 4(2)",
+    "quote": "administered by the National Cyber Security Centre"
+   }
+  },
+  {
+   "name": "Cyber Security Agency of Singapore",
+   "role": "listed",
+   "function": "Publishes the Singapore Cybersecurity Labelling Scheme referenced as a deemed-compliance route.",
+   "evidence": {
+    "provision": "Regulation 2(1)",
+    "quote": "published by the Cyber Security Agency of Singapore"
+   }
+  },
+  {
+   "name": "Information-technology Promotion Agency, Japan",
+   "role": "listed",
+   "function": "Publishes the JC-STAR STAR-1 labelling scheme referenced as a deemed-compliance route.",
+   "evidence": {
+    "provision": "Regulation 2(1)",
+    "quote": "published by the Information-technology Promotion Agency, Japan"
+   }
+  }
+ ],
+ "notes": "The text as provided refers to JC-STAR (December 2024) and the Singapore scheme (April 2025), which post-date the made date of 14 September 2023, so it appears to be a later consolidated version; the F-markers show textual amendments whose amending instruments are not identified in the text, so no amends or amended_by relations are coded. Target instrument IDs are blank because no registry IDs were supplied. Manufacturers and importers (regs 5, 8, 9; Schedule 1) are generic addressees and are not coded as named entities. The relations and entities sections are populated, so their section_status entries are not_applicable and are included only because the schema requires them.",
+ "events": [
+  {
+   "event": "adopted",
+   "date": "2023-09-14",
+   "date_type": "absolute",
+   "date_text": "Made14th September 2023",
+   "applies_to": "Regulations made by the Secretary of State",
+   "evidence": {
+    "provision": "Preamble (Made date)",
+    "quote": "Made14th September 2023"
+   }
+  },
+  {
+   "event": "legislative_approval",
+   "date": null,
+   "date_type": "not_stated",
+   "date_text": "A draft of these Regulations has been laid before, and approved by, both Houses of Parliament",
+   "applies_to": "draft Regulations approved by both Houses of Parliament",
+   "evidence": {
+    "provision": "Preamble (statutory procedure paragraph)",
+    "quote": "A draft of these Regulations has been laid before, and approved by, both Houses of Parliament"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2024-04-29",
+   "date_type": "absolute",
+   "date_text": "These Regulations come into force on 29th April 2024",
+   "applies_to": "these Regulations (England and Wales, Scotland and Northern Ireland)",
+   "evidence": {
+    "provision": "Citation, commencement and extent, reg. 1(2)",
+    "quote": "These Regulations come into force on 29th April 2024"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "The first report must be published before the end of the period of five years beginning with the date on which these Regulations come into force.",
+   "anchor": "entry into force of these Regulations",
+   "applies_to": "first report of the Secretary of State on the review of the regulatory provision",
+   "offset_value": 5,
+   "offset_unit": "years",
+   "anchor_event": "entry_into_force",
+   "evidence": {
+    "provision": "Review, reg. 10(2)",
+    "quote": "The first report must be published before the end of the period of five years beginning with the date on which these Regulations come into force."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "Subsequent reports must be published at intervals not exceeding five years.",
+   "applies_to": "subsequent reports of the Secretary of State on the review of the regulatory provision",
+   "evidence": {
+    "provision": "Review, reg. 10(3)",
+    "quote": "Subsequent reports must be published at intervals not exceeding five years."
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "age",
+   "variable_text": "children under 14 years old",
+   "operator": "<",
+   "value": 14,
+   "value_text": "under 14 years old",
+   "unit": "years",
+   "measurement": "Determined by the manufacturer's intended purpose, as defined in regulation 2(1) (the use for which the product is intended according to the data provided by the manufacturer)",
+   "level": "product",
+   "trigger": "exclusion",
+   "consequence": "A computer listed in paragraph 5(1) of Schedule 3 that is designed exclusively for children under 14 is not an excepted product.",
+   "conditions": "Product is a desktop computer, laptop computer, or tablet computer without cellular network capability (Sch. 3 para. 5(1)); manufacturer's intended purpose is designed exclusively for children under 14.",
+   "evidence": {
+    "provision": "Schedule 3, para. 5(2)",
+    "quote": "designed exclusively for children under 14 years old are not excepted products"
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "hardware",
+   "defined_in": "Regulation 2(1)",
+   "evidence": {
+    "provision": "Regulation 2(1)",
+    "quote": "“hardware” means a physical electronic information system, or parts thereof, capable of processing, storing or transmitting digital data;"
+   }
+  },
+  {
+   "term": "manufacturer’s intended purpose",
+   "defined_in": "Regulation 2(1)",
+   "evidence": {
+    "provision": "Regulation 2(1)",
+    "quote": "“manufacturer’s intended purpose” means the use for which the product is intended according to the data provided by the manufacturer, including on the label, in the instructions for use, or in promotional or sales materials or statements;"
+   }
+  },
+  {
+   "term": "security update",
+   "defined_in": "Regulation 2(1)",
+   "evidence": {
+    "provision": "Regulation 2(1)",
+    "quote": "“security update” means a software update that protects or enhances the security of a product, including a software update that addresses security issues which have been discovered by or reported to the manufacturer."
+   }
+  },
+  {
+   "term": "defined support period",
+   "defined_in": "Regulation 2(1)",
+   "evidence": {
+    "provision": "Regulation 2(1)",
+    "quote": "“defined support period” means the minimum length of time, expressed as a period of time with an end date, for which security updates will be provided;"
+   }
+  },
+  {
+   "term": "ETSI EN 303 645",
+   "defined_in": "Regulation 2(1)",
+   "evidence": {
+    "provision": "Regulation 2(1)",
+    "quote": "“ETSI EN 303 645” means the European Standard on Cyber Security for Consumer Internet of Things: Baseline Requirements (ETSI EN 303 645 V2.1.1 (19th June 2020))"
+   }
+  },
+  {
+   "term": "ISO/IEC 29147",
+   "defined_in": "Regulation 2(1)",
+   "evidence": {
+    "provision": "Regulation 2(1)",
+    "quote": "“ISO/IEC 29147” means the ISO/IEC 29147:2018 Information technology - Security techniques - Vulnerability disclosure standard (2nd edition, 2018)"
+   }
+  },
+  {
+   "term": "Japan JC-STAR STAR-1",
+   "defined_in": "Regulation 2(1)",
+   "evidence": {
+    "provision": "Regulation 2(1)",
+    "quote": "“Japan JC-STAR STAR-1” means the Labeling Scheme based on Japan Cyber-Security Technical Assessment Requirements (JC-STAR) STAR-1 Conformance Requirements and Assessment Methods published by the Information-technology Promotion Agency, Japan"
+   }
+  },
+  {
+   "term": "Singapore Cybersecurity Labelling Scheme",
+   "defined_in": "Regulation 2(1)",
+   "evidence": {
+    "provision": "Regulation 2(1)",
+    "quote": "“Singapore Cybersecurity Labelling Scheme” means the Cybersecurity Labelling Scheme published by the Cyber Security Agency of Singapore"
+   }
+  },
+  {
+   "term": "factory default state",
+   "defined_in": "Schedule 1, para. 1(5)",
+   "evidence": {
+    "provision": "Schedule 1, para. 1(5)",
+    "quote": "“factory default state” means the state of the product after factory reset or after final production or assembly;"
+   }
+  },
+  {
+   "term": "unique per product",
+   "defined_in": "Schedule 1, para. 1(5)",
+   "evidence": {
+    "provision": "Schedule 1, para. 1(5)",
+    "quote": "“unique per product” means unique for each individual product of a given product class or type."
+   }
+  },
+  {
+   "term": "good industry practice",
+   "defined_in": "Schedule 1, para. 1(5)",
+   "evidence": {
+    "provision": "Schedule 1, para. 1(5)",
+    "quote": "“good industry practice” means the exercise of that degree of skill, diligence, prudence and foresight which would reasonably and ordinarily be expected from a skilled and experienced cryptographer engaged in the same type of activity"
+   }
+  },
+  {
+   "term": "incremental counter",
+   "defined_in": "Schedule 1, para. 1(5)",
+   "evidence": {
+    "provision": "Schedule 1, para. 1(5)",
+    "quote": "“incremental counter” means a method of password generation in which multiple passwords are the same save for a small amount of characters which change per password to make them unique"
+   }
+  },
+  {
+   "term": "application programming interface key",
+   "defined_in": "Schedule 1, para. 1(5)",
+   "evidence": {
+    "provision": "Schedule 1, para. 1(5)",
+    "quote": "“application programming interface key” means a string of characters used to identify and authenticate a particular user, product, or application so that it can access the application programming interface;"
+   }
+  },
+  {
+   "term": "cryptographic key",
+   "defined_in": "Schedule 1, para. 1(5)",
+   "evidence": {
+    "provision": "Schedule 1, para. 1(5)",
+    "quote": "“cryptographic key” means data used to encrypt and decrypt data;"
+   }
+  },
+  {
+   "term": "invitation to purchase",
+   "defined_in": "Consumer Protection from Unfair Trading Regulations 2008, reg. 2(1) (via Schedule 1, para. 3(7))",
+   "evidence": {
+    "provision": "Schedule 1, para. 3(7)",
+    "quote": "“invitation to purchase” has the meaning given in regulation 2(1) of the 2008 Regulations."
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "security_measures",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Manufacturers of relevant connectable products must ensure passwords are unique per product or defined by the user, and that unique passwords are not incremental, public-derived, identifier-derived or otherwise guessable (Sch 1 para 1). Exclusions for cryptographic keys, certain pairing PINs and API keys are scope limits, not duties.",
+   "applies_from": "29th April 2024 (regulation 1(2), coming into force)",
+   "conditional_on": "Applies to hardware and software of the product when not in factory default state, as set out in Sch 1 para 1(1)",
+   "evidence": {
+    "provision": "Sch. 1 para. 1(2)",
+    "quote": "Passwords must be—"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Manufacturers must publish at least one point of contact for reporting security issues, and the times at which the reporter will receive an acknowledgment and status updates. Information must be accessible, clear, transparent, given without prior request, in English, free of charge and without requesting personal information (Sch 1 para 2(2)-(3)).",
+   "applies_from": "29th April 2024 (regulation 1(2), coming into force)",
+   "conditional_on": "Applies to hardware, pre-installed or installable software and software used for manufacturer's intended purposes, unless a smartphone or cellular tablet (Sch 1 para 2(1))",
+   "evidence": {
+    "provision": "Sch. 1 para. 2(2)",
+    "quote": "The following information must be published—"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Manufacturers must publish the defined support period, and publish any new defined support period as soon as practicable when extended, in accessible, clear and transparent form in English, free of charge and understandable without technical knowledge. Where an invitation to purchase is published on the manufacturer's own or non-paid website, this information must be given equal prominence. The requirement is not met if the defined support period is shortened after publication (Sch 1 para 3(2)-(7)).",
+   "applies_from": "29th April 2024 (regulation 1(2), coming into force)",
+   "conditional_on": "Applies to products capable of receiving security updates, as set out in Sch 1 para 3(1)",
+   "evidence": {
+    "provision": "Sch. 1 para. 3(2)",
+    "quote": "The defined support period must be published."
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Where there is more than one manufacturer of a relevant connectable product, each manufacturer must meet any relevant Schedule 1 security requirement, or satisfy the deemed-compliance conditions in Schedule 2 for that requirement.",
+   "applies_from": "29th April 2024 (regulation 1(2), coming into force)",
+   "conditional_on": "Applies where there is more than one manufacturer of the product",
+   "evidence": {
+    "provision": "Reg. 5",
+    "quote": "each manufacturer must meet any relevant security requirement specified in Schedule 1"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "The statement of compliance must include the product type and batch; the name and address of each manufacturer and any authorised representative; declarations that it is prepared by or for the manufacturer and of compliance with Schedule 1 or Schedule 2; the defined support period; the signatory's signature, name and function; and the place and date of issue. Where a standard is referenced, its identification number, version and date of issue must be included where applicable (Reg. 7; Sch. 4 para. 1-2).",
+   "applies_from": "29th April 2024 (regulation 1(2), coming into force)",
+   "conditional_on": "Applies where a statement of compliance is required",
+   "evidence": {
+    "provision": "Reg. 7; Sch. 4 para. 1(1)",
+    "quote": "The statement of compliance must include the following information"
+   }
+  },
+  {
+   "type": "record_keeping",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "The manufacturer must retain a copy of the statement of compliance for the longer of 10 years from the date of issue or the defined support period set out in the statement.",
+   "applies_from": "29th April 2024 (regulation 1(2), coming into force)",
+   "conditional_on": "Applies where a statement of compliance is required under section 9(2) of the Act to make the product available in the United Kingdom",
+   "evidence": {
+    "provision": "Reg. 8",
+    "quote": "the manufacturer of the product must retain a copy of the statement of compliance relating to the product"
+   }
+  },
+  {
+   "type": "record_keeping",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "The importer must retain a copy of the statement of compliance for the longer of 10 years from the date of issue or the defined support period set out in the statement.",
+   "applies_from": "29th April 2024 (regulation 1(2), coming into force)",
+   "conditional_on": "Applies where a statement of compliance is required under section 15(2) of the Act to make the product available in the United Kingdom",
+   "evidence": {
+    "provision": "Reg. 9",
+    "quote": "the importer of the product must retain a copy of the statement of compliance relating to the product"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Under deemed-compliance Condition A for the reporting requirement, the manufacturer must publish how a person may access the vulnerability report mechanism, when a reporter receives an acknowledgment, and when ongoing communication is received, in accessible, clear, transparent form in English, free of charge and without requesting personal information (Sch 2 para 2(3)-(4)).",
+   "applies_from": "29th April 2024 (regulation 1(2), coming into force)",
+   "conditional_on": "Applies only where the manufacturer relies on Condition A of Sch 2 para 2(1) as deemed compliance",
+   "evidence": {
+    "provision": "Sch. 2 para. 2(3)",
+    "quote": "A manufacturer is required to publish information as to—"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Secretary of State must from time to time carry out a review of these Regulations and publish a report of its conclusions. The first report must be published within five years of the Regulations coming into force, and subsequent reports at intervals not exceeding five years.",
+   "applies_from": "29th April 2024 (regulation 1(2), coming into force)",
+   "evidence": {
+    "provision": "Reg. 10(1)-(3)",
+    "quote": "The Secretary of State must from time to time—"
+   }
+  }
+ ],
+ "section_status": {
+  "enforcement": {
+   "status": "not_applicable",
+   "note": "This instrument specifies security requirements, deemed-compliance conditions, excepted products and statement-of-compliance content. It contains no sanctions, fines, criminal penalties, revocation or blocking provisions. It is made under powers in the Product Security and Telecommunications Infrastructure Act 2022 (cited in the preamble and Explanatory Note as Part 1 of that Act), and the enforcement provisions, if any, are not stated in this text."
+  }
+ },
+ "enforcement": []
+}

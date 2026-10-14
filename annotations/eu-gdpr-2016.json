@@ -1,0 +1,2093 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "eu-gdpr-2016",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (connectors/fetch_texts.py)",
+  "url": "http://publications.europa.eu/resource/cellar/3e485e15-11bd-11e6-ba9a-01aa75ed71a1.0006.03/DOC_1",
+  "retrieved": "2026-10-13",
+  "version": "as fetched",
+  "language": "en",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "data_protection",
+   "algorithmic_decision_systems",
+   "minors_child_safety",
+   "data_transfer_localization"
+  ],
+  "primary_domain": "data_protection",
+  "mechanisms": [
+   "mandate_obligation",
+   "prohibition_ban",
+   "disclosure_transparency"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "data_controller",
+   "data_processor"
+  ],
+  "affected_roles": [
+   "consumers_users",
+   "minors"
+  ],
+  "decision_margins": [
+   "household:data_privacy",
+   "household:information",
+   "firm:compliance_process",
+   "firm:input_use"
+  ],
+  "territorial_scope": {
+   "types": [
+    "supranational",
+    "extraterritorial"
+   ],
+   "description": "Applies across the European Union and also reaches non-EU controllers and processors whose processing relates to offering goods or services to, or monitoring, data subjects in the Union.",
+   "evidence": {
+    "provision": "Art. 3(2)",
+    "quote": "This Regulation applies to the processing of personal data of data subjects who are in the Union by a controller or processor not established in the Union"
+   }
+  },
+  "agora_harms": [
+   "Violation of civil or human rights, including privacy"
+  ],
+  "agora_strategies": [
+   "Disclosure: About inputs",
+   "Input controls: Data use"
+  ]
+ },
+ "summary": {
+  "short": "Regulation (EU) 2016/679 (GDPR) sets rules for processing personal data by controllers and processors established in the EU and, under Article 3(2), by non-EU controllers offering goods or services to or monitoring people in the Union. Part 1 covers general provisions, principles, lawful bases, special categories and data subject rights.",
+  "long": "Regulation (EU) 2016/679 (GDPR) sets rules on protecting natural persons in relation to personal data processing and on its free movement, repealing Directive 95/46/EC. It covers automated processing and filing systems (Art. 2), excluding among others purely household activity and criminal-law enforcement by competent authorities. It binds controllers and processors established in the Union and, for non-EU controllers, those offering goods or services to or monitoring people in the Union (Art. 3). Article 5 sets processing principles with an accountability duty; Article 6 lists six lawful bases; Article 7 sets consent conditions; Article 8 requires parental authorisation for children under 16 using information society services, which Member States may lower to 13. Article 9(1) prohibits processing of special categories of data, subject to listed exceptions. Chapter III grants transparency, information, access, rectification, erasure, restriction and notification rights (Arts. 12-19), with responses due within one month (Art. 12(3)). This annotation covers only the recitals and Articles 1-19 of the text supplied; later chapters and the application date are not described."
+ },
+ "relations": [
+  {
+   "relation": "legal_basis",
+   "target_text": "Treaty on the Functioning of the European Union, Article 16",
+   "note": "Enacting citation of the Treaty as legal basis. The Treaty is not a registry instrument.",
+   "evidence": {
+    "provision": "Preamble (citations)",
+    "quote": "Having regard to the Treaty on the Functioning of the European Union, and in particular Article 16 thereof"
+   }
+  },
+  {
+   "relation": "repeals",
+   "target_text": "Directive 95/46/EC",
+   "note": "Repeal is stated in the title. The operative repeal provision is not in this part and falls in part 2.",
+   "evidence": {
+    "provision": "Title",
+    "quote": "and repealing Directive 95/46/EC"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Directive 2002/58/EC",
+   "note": "Recital only: states that the Directive should be amended. The operative amendment, if any, is not in this part.",
+   "evidence": {
+    "provision": "Recital (173)",
+    "quote": "that Directive should be amended accordingly"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive 2000/31/EC",
+   "note": "Regulation is stated to be without prejudice to the Directive, in particular the liability rules of intermediary service providers in Articles 12 to 15 of that Directive.",
+   "evidence": {
+    "provision": "Art. 2(4)",
+    "quote": "This Regulation shall be without prejudice to the application of Directive 2000/31/EC, in particular of the liability rules of intermediary service providers in Articles 12 to 15 of that Directive."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EC) No 45/2001",
+   "note": "Applies to processing by Union institutions, bodies, offices and agencies. Other Union acts are to be adapted under Art. 98, which is in part 2.",
+   "evidence": {
+    "provision": "Art. 2(3)",
+    "quote": "For the processing of personal data by the Union institutions, bodies, offices and agencies, Regulation (EC) No 45/2001 applies."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive (EU) 2015/1535, Article 1(1)(b)",
+   "note": "Definition of information society service is made by reference to the Directive.",
+   "evidence": {
+    "provision": "Art. 4(25)",
+    "quote": "‘information society service’ means a service as defined in point (b) of Article 1(1) of Directive (EU) 2015/1535"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive (EU) 2016/680",
+   "note": "Recital only. Art. 2(2)(d) excludes processing by competent authorities for criminal law purposes from this Regulation; the Directive is not named in the operative text.",
+   "evidence": {
+    "provision": "Recital (19)",
+    "quote": "namely Directive (EU) 2016/680 of the European Parliament and of the Council"
+   }
+  },
+  {
+   "relation": "repeals",
+   "target_text": "Directive 95/46/EC",
+   "note": "Repealed with effect from 25 May 2018. Its adequacy and authorisation decisions remain in force until amended, replaced or repealed (Arts 45(9), 46(5), 97(2)(a)).",
+   "evidence": {
+    "provision": "Art. 94(1)",
+    "quote": "Directive 95/46/EC is repealed with effect from 25 May 2018."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive 95/46/EC (decisions adopted under Article 25(6))",
+   "note": "Commission adequacy decisions adopted under Article 25(6) of Directive 95/46/EC remain in force under Article 45(9); Article 97(2)(a) has the Commission examine them in its reviews.",
+   "evidence": {
+    "provision": "Art. 45(9)",
+    "quote": "Decisions adopted by the Commission on the basis of Article 25(6) of Directive 95/46/EC shall remain in force"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive 2002/58/EC (privacy and electronic communications)",
+   "note": "The Regulation imposes no additional obligations on electronic communications services in matters subject to specific obligations with the same objective in Directive 2002/58/EC.",
+   "evidence": {
+    "provision": "Art. 95",
+    "quote": "matters for which they are subject to specific obligations with the same objective set out in Directive 2002/58/EC"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EC) No 765/2008 (accreditation and market surveillance)",
+   "note": "National accreditation body accredits certification bodies under Regulation (EC) No 765/2008 with complementary requirements set by this Regulation (Art. 43(3)).",
+   "evidence": {
+    "provision": "Art. 43(1)(b)",
+    "quote": "the national accreditation body named in accordance with Regulation (EC) No 765/2008 of the European Parliament and of the Council"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EC) No 1049/2001 (public access to documents)",
+   "note": "Access to documents submitted to Board members is governed by Regulation (EC) No 1049/2001.",
+   "evidence": {
+    "provision": "Art. 76(2)",
+    "quote": "shall be governed by Regulation (EC) No 1049/2001 of the European Parliament and of the Council"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) No 182/2011 (committee procedure)",
+   "note": "The Commission committee under Article 93 is a committee within the meaning of Regulation (EU) No 182/2011, and the examination and advisory procedures of that Regulation apply where referenced.",
+   "evidence": {
+    "provision": "Art. 93(1)",
+    "quote": "That committee shall be a committee within the meaning of Regulation (EU) No 182/2011."
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "Supervisory authority (national, established by each Member State)",
+   "role": "designated",
+   "function": "Independent public authority established by a Member State pursuant to Article 51; defined term used throughout the Regulation.",
+   "evidence": {
+    "provision": "Art. 4(21)",
+    "quote": "‘supervisory authority’ means an independent public authority which is established by a Member State pursuant to Article 51"
+   }
+  },
+  {
+   "name": "European Commission",
+   "role": "designated",
+   "function": "Empowered to adopt delegated acts on the information to be presented by standardised icons and the procedures for providing them (Art. 12(8)).",
+   "evidence": {
+    "provision": "Art. 12(8)",
+    "quote": "The Commission shall be empowered to adopt delegated acts in accordance with Article 92"
+   }
+  },
+  {
+   "name": "European Data Protection Board",
+   "role": "designated",
+   "function": "Body established by this Regulation, to issue guidance on profiling (Recital 72). Its establishment provision is in part 2.",
+   "evidence": {
+    "provision": "Recital (72)",
+    "quote": "The European Data Protection Board established by this Regulation (the ‘Board’) should be able to issue guidance in that context."
+   }
+  },
+  {
+   "name": "Supervisory authority (independent public authority of each Member State)",
+   "role": "designated",
+   "function": "Responsible for monitoring the application of the Regulation; competent for tasks (Art. 57) and corrective, investigative and authorisation powers (Art. 58) on its territory.",
+   "evidence": {
+    "provision": "Art. 51(1)",
+    "quote": "Each Member State shall provide for one or more independent public authorities to be responsible for monitoring the application of this Regulation"
+   }
+  },
+  {
+   "name": "Lead supervisory authority",
+   "role": "designated",
+   "function": "Competent for cross-border processing carried out by a controller or processor with a main or single establishment in the Union; the controller's sole interlocutor for that processing.",
+   "evidence": {
+    "provision": "Art. 56(1)",
+    "quote": "the supervisory authority of the main establishment or of the single establishment of the controller or processor shall be competent to act as lead supervisory authority"
+   }
+  },
+  {
+   "name": "European Data Protection Board",
+   "role": "designated",
+   "function": "Body of the Union with legal personality; ensures consistent application of the Regulation, issues opinions and binding decisions (Arts 64, 65, 70).",
+   "evidence": {
+    "provision": "Art. 68(1)",
+    "quote": "is hereby established as a body of the Union and shall have legal personality"
+   }
+  },
+  {
+   "name": "European Data Protection Supervisor",
+   "role": "designated",
+   "function": "Member of the European Data Protection Board (Art. 68(3)); provides the Board's secretariat (Art. 75(1)).",
+   "evidence": {
+    "provision": "Art. 75(1)",
+    "quote": "The Board shall have a secretariat, which shall be provided by the European Data Protection Supervisor."
+   }
+  },
+  {
+   "name": "European Commission",
+   "role": "designated",
+   "function": "May decide by implementing act that a third country, territory, sector or international organisation ensures an adequate level of protection (Art. 45(3)); may adopt delegated and implementing acts under Arts 92 and 93.",
+   "evidence": {
+    "provision": "Art. 45(3)",
+    "quote": "The Commission, after assessing the adequacy of the level of protection, may decide, by means of implementing act,"
+   }
+  },
+  {
+   "name": "Certification bodies",
+   "role": "designated",
+   "function": "Issue and renew data protection certification, after accreditation under Article 43(1).",
+   "evidence": {
+    "provision": "Art. 43(1)",
+    "quote": "certification bodies which have an appropriate level of expertise in relation to data protection shall"
+   }
+  },
+  {
+   "name": "Monitoring body for approved codes of conduct",
+   "role": "designated",
+   "function": "Monitors compliance with an approved code of conduct; accredited for that purpose by the competent supervisory authority (Art. 41(1)).",
+   "evidence": {
+    "provision": "Art. 41(1)",
+    "quote": "is accredited for that purpose by the competent supervisory authority"
+   }
+  }
+ ],
+ "notes": "Part 1 of 2 covers the title, recitals, and Articles 1 to 19 (Chapters I to III, Sections 1 to 3). Obligations, thresholds, enforcement and most definitions in later Articles, and the operative repeal (Art. 94) and amendment (Art. 95) provisions, are in part 2. Relations are coded from the title and recitals where no operative provision appears in this part. Controllers and processors are roles, not named entities, and no named firms appear in this part. Where no registry ID exists, target_instrument_id is an empty string. Empty lei and ticker are given as empty strings because the schema requires strings. Part 2 covers Articles 20 to 99 (Chapters III to XI) and the footnotes attached to them. Registry IDs for the cited instruments are not assigned, so target_instrument_id is empty. Article 96 (pre-2016 agreements concluded by Member States) and Article 98 (review of other Union data protection acts) name no specific instrument and are not coded as relations. Source typos include 'to a an effective judicial remedy' (Art. 78(2)) and 'monetary, budgetary and taxation a matters' (Art. 23(1)(e)). Article 94(1) (repeal) and Article 99(2) (application from 25 May 2018) both use that date and do not conflict. The section_status entries are set to not_applicable only because the schema requires both keys; the relations and entities sections are populated above.",
+ "events": [
+  {
+   "event": "adopted",
+   "date": "2016-04-27",
+   "date_type": "absolute",
+   "date_text": "of 27 April 2016",
+   "applies_to": "Regulation (EU) 2016/679 as a whole",
+   "evidence": {
+    "provision": "Title",
+    "quote": "of 27 April 2016"
+   }
+  },
+  {
+   "event": "published",
+   "date": "2016-05-04",
+   "date_type": "absolute",
+   "date_text": "4.5.2016",
+   "applies_to": "Official Journal of the European Union, L 119/1",
+   "evidence": {
+    "provision": "Front page (Official Journal header)",
+    "quote": "4.5.2016"
+   }
+  },
+  {
+   "event": "consultation",
+   "date": "2012-03-07",
+   "date_type": "absolute",
+   "date_text": "delivered an opinion on 7 March 2012",
+   "applies_to": "Opinion of the European Data Protection Supervisor on the draft legislative act",
+   "evidence": {
+    "provision": "Recital (172)",
+    "quote": "delivered an opinion on 7 March 2012"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "in any event within one month of receipt of the request; may be extended by two further months where necessary, with notice of the extension and reasons within one month of receipt",
+   "anchor": "receipt of the data subject's request",
+   "depends_on": "receipt of the data subject's request",
+   "applies_to": "Controller's information on action taken on requests under Articles 15 to 22 (Art. 12(3)) and notice of refusal to act (Art. 12(4))",
+   "offset_value": 1,
+   "offset_unit": "months",
+   "evidence": {
+    "provision": "Article 12(3)",
+    "quote": "in any event within one month of receipt of the request"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "within a reasonable period after obtaining the personal data, but at the latest within one month",
+   "anchor": "obtaining the personal data",
+   "depends_on": "obtaining of the personal data from a source other than the data subject",
+   "applies_to": "Information to be provided where personal data have not been obtained from the data subject (Art. 14(1)-(2))",
+   "offset_value": 1,
+   "offset_unit": "months",
+   "evidence": {
+    "provision": "Article 14(3)(a)",
+    "quote": "within a reasonable period after obtaining the personal data, but at the latest within one month"
+   }
+  },
+  {
+   "event": "signed",
+   "date": "2016-04-27",
+   "date_type": "absolute",
+   "date_text": "Done at Brussels, 27 April 2016.",
+   "applies_to": "instrument as a whole",
+   "evidence": {
+    "provision": "Signature block (after Art. 99)",
+    "quote": "Done at Brussels, 27 April 2016."
+   }
+  },
+  {
+   "event": "published",
+   "date": null,
+   "date_type": "not_stated",
+   "date_text": "its publication in the Official Journal of the European Union",
+   "applies_to": "instrument as a whole",
+   "evidence": {
+    "provision": "Art. 99(1)",
+    "quote": "following that of its publication in the Official Journal of the European Union"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2016-05-24",
+   "date_type": "relative",
+   "date_text": "on the twentieth day following that of its publication in the Official Journal of the European Union",
+   "anchor": "publication in the Official Journal of the European Union",
+   "applies_to": "instrument as a whole",
+   "offset_value": 20,
+   "offset_unit": "days",
+   "anchor_event": "published",
+   "evidence": {
+    "provision": "Art. 99(1)",
+    "quote": "shall enter into force on the twentieth day following that of its publication in the Official Journal of the European Union"
+   },
+   "date_computed_from": "published 2016-05-04 (text) + 20 days"
+  },
+  {
+   "event": "application",
+   "date": "2018-05-25",
+   "date_type": "absolute",
+   "date_text": "It shall apply from 25 May 2018.",
+   "applies_to": "entire Regulation",
+   "evidence": {
+    "provision": "Art. 99(2)",
+    "quote": "It shall apply from 25 May 2018."
+   }
+  },
+  {
+   "event": "application",
+   "date": "2016-05-24",
+   "date_type": "absolute",
+   "date_text": "for an indeterminate period of time from 24 May 2016",
+   "applies_to": "Commission power to adopt delegated acts under Art. 12(8) and Art. 43(8)",
+   "evidence": {
+    "provision": "Art. 92(2)",
+    "quote": "for an indeterminate period of time from 24 May 2016"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2018-05-25",
+   "date_type": "absolute",
+   "date_text": "by 25 May 2018",
+   "applies_to": "notification to the Commission of national provisions under Art. 51(4), 83(9), 84(2), 88(3) and 90(2)",
+   "evidence": {
+    "provision": "Art. 51(4)",
+    "quote": "by 25 May 2018"
+   }
+  },
+  {
+   "event": "repealed",
+   "date": "2018-05-25",
+   "date_type": "absolute",
+   "date_text": "Directive 95/46/EC is repealed with effect from 25 May 2018.",
+   "applies_to": "Directive 95/46/EC",
+   "evidence": {
+    "provision": "Art. 94(1)",
+    "quote": "Directive 95/46/EC is repealed with effect from 25 May 2018."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2020-05-25",
+   "date_type": "recurring",
+   "date_text": "By 25 May 2020 and every four years thereafter",
+   "applies_to": "Commission report on the evaluation and review of this Regulation",
+   "evidence": {
+    "provision": "Art. 97(1)",
+    "quote": "By 25 May 2020 and every four years thereafter"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "without undue delay and, where feasible, not later than 72 hours after having become aware of it",
+   "depends_on": "controller becoming aware of a personal data breach",
+   "applies_to": "notification of a personal data breach to the supervisory authority",
+   "evidence": {
+    "provision": "Art. 33(1)",
+    "quote": "where feasible, not later than 72 hours after having become aware of it"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "within period of up to eight weeks of receipt of the request for consultation",
+   "depends_on": "receipt of the request for consultation under Art. 36(1)",
+   "applies_to": "supervisory authority written advice to the controller on prior consultation",
+   "evidence": {
+    "provision": "Art. 36(2)",
+    "quote": "within period of up to eight weeks of receipt of the request for consultation"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "within a period of four weeks after having been consulted in accordance with paragraph 3",
+   "depends_on": "consultation of the other supervisory authorities concerned on the draft decision",
+   "applies_to": "objection by other supervisory authorities concerned to the draft decision",
+   "evidence": {
+    "provision": "Art. 60(4)",
+    "quote": "within a period of four weeks after having been consulted in accordance with paragraph 3"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "within a period of two weeks",
+   "depends_on": "lead supervisory authority submitting a revised draft decision",
+   "applies_to": "procedure on revised draft decision under Art. 60(4)",
+   "evidence": {
+    "provision": "Art. 60(5)",
+    "quote": "within a period of two weeks"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "no later than one month after receiving the request",
+   "depends_on": "receipt of a request for assistance from another supervisory authority",
+   "applies_to": "reply to a request for mutual assistance",
+   "evidence": {
+    "provision": "Art. 61(2)",
+    "quote": "no later than one month after receiving the request"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "That opinion shall be adopted within eight weeks",
+   "depends_on": "referral of a matter to the Board under Art. 64(1) or 64(2)",
+   "applies_to": "opinion of the Board",
+   "evidence": {
+    "provision": "Art. 64(3)",
+    "quote": "That opinion shall be adopted within eight weeks"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "within two weeks after receiving the opinion",
+   "depends_on": "receipt of the Board opinion under Art. 64",
+   "applies_to": "supervisory authority notice to the Chair of the Board on whether it maintains or amends its draft decision",
+   "evidence": {
+    "provision": "Art. 64(7)",
+    "quote": "within two weeks after receiving the opinion"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "shall be adopted within one month from the referral of the subject-matter",
+   "depends_on": "referral of the subject-matter to the Board under Art. 65(1)",
+   "applies_to": "binding decision of the Board",
+   "evidence": {
+    "provision": "Art. 65(2)",
+    "quote": "shall be adopted within one month from the referral of the subject-matter"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "within two weeks following the expiration of the second month referred to in paragraph 2",
+   "depends_on": "Board unable to adopt a decision within the periods in Art. 65(2)",
+   "applies_to": "binding decision of the Board by simple majority",
+   "evidence": {
+    "provision": "Art. 65(3)",
+    "quote": "within two weeks following the expiration of the second month"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "at the latest by one month after the Board has notified its decision",
+   "depends_on": "notification of the Board decision under Art. 65(1)",
+   "applies_to": "final decision of the lead or complaint-receiving supervisory authority",
+   "evidence": {
+    "provision": "Art. 65(6)",
+    "quote": "at the latest by one month after the Board has notified its decision"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "shall be adopted within two weeks by simple majority",
+   "depends_on": "request for an urgent opinion or urgent binding decision under Art. 66(2) or 66(3)",
+   "applies_to": "urgent opinion or urgent binding decision of the Board",
+   "evidence": {
+    "provision": "Art. 66(4)",
+    "quote": "shall be adopted within two weeks by simple majority"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "does not inform the data subject within three months on the progress or outcome of the complaint",
+   "depends_on": "lodging of a complaint under Art. 77",
+   "applies_to": "data subject right to judicial remedy against supervisory authority inaction",
+   "evidence": {
+    "provision": "Art. 78(2)",
+    "quote": "does not inform the data subject within three months on the progress or outcome of the complaint"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "age",
+   "variable_text": "age of the child below which consent must be given or authorised by the holder of parental responsibility (information society services)",
+   "operator": ">=",
+   "value": 16,
+   "value_text": "at least 16 years old",
+   "unit": "years",
+   "measurement": "age of the child at the time of processing; applies where processing is based on consent under Art. 6(1)(a) for an offer of information society services directly to a child",
+   "level": "person",
+   "trigger": "eligibility",
+   "consequence": "Processing of a child's personal data on the basis of consent is lawful where the child is at least 16; below 16 it is lawful only if consent is given or authorised by the holder of parental responsibility",
+   "conditions": "Offer of information society services directly to a child; reasonable efforts to verify parental consent under Art. 8(2)",
+   "evidence": {
+    "provision": "Art. 8(1)",
+    "quote": "the child is at least 16 years old"
+   }
+  },
+  {
+   "variable": "age",
+   "variable_text": "lower age for child consent to information society services set by Member State law",
+   "operator": ">=",
+   "value": null,
+   "value_text": "Member States may provide by law for a lower age for those purposes provided that such lower age is not below 13 years",
+   "unit": "years",
+   "measurement": "age of the child at the time of processing",
+   "level": "person",
+   "trigger": "eligibility",
+   "consequence": "Member State law may set a lower age than 16 for child consent, but not below 13",
+   "conditions": "Processing under Art. 6(1)(a) of an offer of information society services directly to a child",
+   "depends_on": "Member State law (Art. 8(1), second subparagraph)",
+   "evidence": {
+    "provision": "Art. 8(1)",
+    "quote": "provided that such lower age is not below 13 years"
+   }
+  },
+  {
+   "variable": "employees",
+   "variable_text": "employing fewer than 250 persons",
+   "operator": "<",
+   "value": 250,
+   "value_text": "fewer than 250 persons",
+   "unit": "persons",
+   "measurement": "number of persons employed by the enterprise or organisation (as stated in Art. 30(5))",
+   "level": "entity",
+   "trigger": "exemption",
+   "consequence": "Record-keeping obligations in Art. 30(1) and (2) do not apply to an enterprise or organisation below this size, unless one of the listed risk or occasionality conditions is met.",
+   "conditions": "Exemption does not apply where the processing is likely to result in a risk to the rights and freedoms of data subjects, the processing is not occasional, or the processing includes special categories of data under Art. 9(1) or personal data relating to criminal convictions and offences under Art. 10.",
+   "evidence": {
+    "provision": "Art. 30(5)",
+    "quote": "an enterprise or an organisation employing fewer than 250 persons"
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "personal data",
+   "defined_in": "this instrument (Regulation (EU) 2016/679)",
+   "evidence": {
+    "provision": "Art. 4(1)",
+    "quote": "‘personal data’ means any information relating to an identified or identifiable natural person"
+   }
+  },
+  {
+   "term": "processing",
+   "defined_in": "this instrument (Regulation (EU) 2016/679)",
+   "evidence": {
+    "provision": "Art. 4(2)",
+    "quote": "‘processing’ means any operation or set of operations which is performed on personal data or on sets of personal data, whether or not by automated means"
+   }
+  },
+  {
+   "term": "restriction of processing",
+   "defined_in": "this instrument (Regulation (EU) 2016/679)",
+   "evidence": {
+    "provision": "Art. 4(3)",
+    "quote": "‘restriction of processing’ means the marking of stored personal data with the aim of limiting their processing in the future"
+   }
+  },
+  {
+   "term": "profiling",
+   "defined_in": "this instrument (Regulation (EU) 2016/679)",
+   "evidence": {
+    "provision": "Art. 4(4)",
+    "quote": "‘profiling’ means any form of automated processing of personal data consisting of the use of personal data to evaluate certain personal aspects relating to a natural person"
+   }
+  },
+  {
+   "term": "pseudonymisation",
+   "defined_in": "this instrument (Regulation (EU) 2016/679)",
+   "evidence": {
+    "provision": "Art. 4(5)",
+    "quote": "‘pseudonymisation’ means the processing of personal data in such a manner that the personal data can no longer be attributed to a specific data subject without the use of additional information"
+   }
+  },
+  {
+   "term": "filing system",
+   "defined_in": "this instrument (Regulation (EU) 2016/679)",
+   "evidence": {
+    "provision": "Art. 4(6)",
+    "quote": "‘filing system’ means any structured set of personal data which are accessible according to specific criteria"
+   }
+  },
+  {
+   "term": "controller",
+   "defined_in": "this instrument (Regulation (EU) 2016/679)",
+   "evidence": {
+    "provision": "Art. 4(7)",
+    "quote": "‘controller’ means the natural or legal person, public authority, agency or other body which, alone or jointly with others, determines the purposes and means of the processing of personal data"
+   }
+  },
+  {
+   "term": "processor",
+   "defined_in": "this instrument (Regulation (EU) 2016/679)",
+   "evidence": {
+    "provision": "Art. 4(8)",
+    "quote": "‘processor’ means a natural or legal person, public authority, agency or other body which processes personal data on behalf of the controller"
+   }
+  },
+  {
+   "term": "recipient",
+   "defined_in": "this instrument (Regulation (EU) 2016/679)",
+   "evidence": {
+    "provision": "Art. 4(9)",
+    "quote": "‘recipient’ means a natural or legal person, public authority, agency or another body, to which the personal data are disclosed, whether a third party or not"
+   }
+  },
+  {
+   "term": "third party",
+   "defined_in": "this instrument (Regulation (EU) 2016/679)",
+   "evidence": {
+    "provision": "Art. 4(10)",
+    "quote": "‘third party’ means a natural or legal person, public authority, agency or body other than the data subject, controller, processor"
+   }
+  },
+  {
+   "term": "consent",
+   "defined_in": "this instrument (Regulation (EU) 2016/679)",
+   "evidence": {
+    "provision": "Art. 4(11)",
+    "quote": "‘consent’ of the data subject means any freely given, specific, informed and unambiguous indication of the data subject's wishes"
+   }
+  },
+  {
+   "term": "personal data breach",
+   "defined_in": "this instrument (Regulation (EU) 2016/679)",
+   "evidence": {
+    "provision": "Art. 4(12)",
+    "quote": "‘personal data breach’ means a breach of security leading to the accidental or unlawful destruction, loss, alteration, unauthorised disclosure of, or access to, personal data"
+   }
+  },
+  {
+   "term": "genetic data",
+   "defined_in": "this instrument (Regulation (EU) 2016/679)",
+   "evidence": {
+    "provision": "Art. 4(13)",
+    "quote": "‘genetic data’ means personal data relating to the inherited or acquired genetic characteristics of a natural person"
+   }
+  },
+  {
+   "term": "biometric data",
+   "defined_in": "this instrument (Regulation (EU) 2016/679)",
+   "evidence": {
+    "provision": "Art. 4(14)",
+    "quote": "‘biometric data’ means personal data resulting from specific technical processing relating to the physical, physiological or behavioural characteristics of a natural person"
+   }
+  },
+  {
+   "term": "data concerning health",
+   "defined_in": "this instrument (Regulation (EU) 2016/679)",
+   "evidence": {
+    "provision": "Art. 4(15)",
+    "quote": "‘data concerning health’ means personal data related to the physical or mental health of a natural person"
+   }
+  },
+  {
+   "term": "main establishment",
+   "defined_in": "this instrument (Regulation (EU) 2016/679)",
+   "evidence": {
+    "provision": "Art. 4(16)(a)",
+    "quote": "as regards a controller with establishments in more than one Member State, the place of its central administration in the Union"
+   }
+  },
+  {
+   "term": "representative",
+   "defined_in": "this instrument (Regulation (EU) 2016/679)",
+   "evidence": {
+    "provision": "Art. 4(17)",
+    "quote": "‘representative’ means a natural or legal person established in the Union who, designated by the controller or processor in writing pursuant to Article 27"
+   }
+  },
+  {
+   "term": "enterprise",
+   "defined_in": "this instrument (Regulation (EU) 2016/679)",
+   "evidence": {
+    "provision": "Art. 4(18)",
+    "quote": "‘enterprise’ means a natural or legal person engaged in an economic activity, irrespective of its legal form"
+   }
+  },
+  {
+   "term": "group of undertakings",
+   "defined_in": "this instrument (Regulation (EU) 2016/679)",
+   "evidence": {
+    "provision": "Art. 4(19)",
+    "quote": "‘group of undertakings’ means a controlling undertaking and its controlled undertakings"
+   }
+  },
+  {
+   "term": "binding corporate rules",
+   "defined_in": "this instrument (Regulation (EU) 2016/679)",
+   "evidence": {
+    "provision": "Art. 4(20)",
+    "quote": "‘binding corporate rules’ means personal data protection policies which are adhered to by a controller or processor established on the territory of a Member State"
+   }
+  },
+  {
+   "term": "supervisory authority",
+   "defined_in": "this instrument (Regulation (EU) 2016/679)",
+   "evidence": {
+    "provision": "Art. 4(21)",
+    "quote": "‘supervisory authority’ means an independent public authority which is established by a Member State pursuant to Article 51"
+   }
+  },
+  {
+   "term": "supervisory authority concerned",
+   "defined_in": "this instrument (Regulation (EU) 2016/679)",
+   "evidence": {
+    "provision": "Art. 4(22)",
+    "quote": "a supervisory authority which is concerned by the processing of personal data because"
+   }
+  },
+  {
+   "term": "cross-border processing",
+   "defined_in": "this instrument (Regulation (EU) 2016/679)",
+   "evidence": {
+    "provision": "Art. 4(23)(a)",
+    "quote": "processing of personal data which takes place in the context of the activities of establishments in more than one Member State of a controller or processor in the Union"
+   }
+  },
+  {
+   "term": "information society service",
+   "defined_in": "this instrument (Regulation (EU) 2016/679)",
+   "evidence": {
+    "provision": "Art. 4(25)",
+    "quote": "‘information society service’ means a service as defined in point (b) of Article 1(1) of Directive (EU) 2015/1535"
+   }
+  },
+  {
+   "term": "international organisation",
+   "defined_in": "this instrument (Regulation (EU) 2016/679)",
+   "evidence": {
+    "provision": "Art. 4(26)",
+    "quote": "‘international organisation’ means an organisation and its subordinate bodies governed by public international law"
+   }
+  },
+  {
+   "term": "supervisory authority",
+   "defined_in": "Regulation (EU) 2016/679, Art. 51(1)",
+   "evidence": {
+    "provision": "Art. 51(1)",
+    "quote": "one or more independent public authorities to be responsible for monitoring the application of this Regulation"
+   }
+  },
+  {
+   "term": "Board",
+   "defined_in": "Regulation (EU) 2016/679, Art. 68(1)",
+   "evidence": {
+    "provision": "Art. 68(1)",
+    "quote": "The European Data Protection Board (the ‘Board’) is hereby established as a body of the Union and shall have legal personality."
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "other",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Controller is responsible for, and must be able to demonstrate, compliance with the Art. 5(1) principles (accountability).",
+   "evidence": {
+    "provision": "Art. 5(2)",
+    "quote": "The controller shall be responsible for, and be able to demonstrate compliance with, paragraph 1 (‘accountability’)."
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Processing is lawful only if at least one of the listed legal bases in Art. 6(1)(a) to (f) applies.",
+   "evidence": {
+    "provision": "Art. 6(1)",
+    "quote": "Processing shall be lawful only if and to the extent that at least one of the following applies:"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The legal basis for processing under Art. 6(1)(c) and (e) must be laid down by Union law or Member State law, which must meet an objective of public interest.",
+   "evidence": {
+    "provision": "Art. 6(3)",
+    "quote": "The basis for the processing referred to in point (c) and (e) of paragraph 1 shall be laid down by:"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "For processing for another purpose not based on consent or law, controller must assess compatibility by taking into account the listed factors.",
+   "conditional_on": "processing for a purpose other than that for which the data were collected, not based on consent or a law under Art. 23(1)",
+   "evidence": {
+    "provision": "Art. 6(4)",
+    "quote": "the controller shall, in order to ascertain whether processing for another purpose is compatible with the purpose for which the personal data are initially collected, take into account, inter alia:"
+   }
+  },
+  {
+   "type": "consent",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Controller must demonstrate consent; written declarations with other matters must distinguish the consent request; data subject must be informed before consent and be able to withdraw it, as easily as giving it; consent not conditioned on unnecessary contract performance.",
+   "conditional_on": "processing is based on consent",
+   "evidence": {
+    "provision": "Art. 7(1)",
+    "quote": "Where processing is based on consent, the controller shall be able to demonstrate that the data subject has consented to processing of his or her personal data."
+   }
+  },
+  {
+   "type": "consent",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "For information society services offered directly to a child under 16 (or lower national age not below 13), processing requires consent or authorisation by the holder of parental responsibility; controller makes reasonable efforts to verify this.",
+   "conditional_on": "information society services offered directly to a child, and child below the applicable age",
+   "evidence": {
+    "provision": "Art. 8(2)",
+    "quote": "The controller shall make reasonable efforts to verify in such cases that consent is given or authorised by the holder of parental responsibility over the child"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "data_controller",
+   "modality": "shall_not",
+   "summary": "Processing of special categories of personal data (racial or ethnic origin, political opinions, beliefs, trade union membership, genetic, biometric for identification, health, sex life or sexual orientation) is prohibited, subject to Art. 9(2) exceptions.",
+   "conditional_on": "unless one of the exceptions in Art. 9(2) applies",
+   "evidence": {
+    "provision": "Art. 9(1)",
+    "quote": "and the processing of genetic data, biometric data for the purpose of uniquely identifying a natural person, data concerning health or data concerning a natural person's sex life or sexual orientation shall be prohibited."
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "may",
+   "summary": "Member States may maintain or introduce further conditions, including limitations, for processing genetic, biometric or health data.",
+   "evidence": {
+    "provision": "Art. 9(4)",
+    "quote": "Member States may maintain or introduce further conditions, including limitations, with regard to the processing of genetic data, biometric data or data concerning health."
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Processing of personal data on criminal convictions and offences is carried out only under official authority control or where authorised by law with appropriate safeguards; any comprehensive register is kept only under official authority.",
+   "evidence": {
+    "provision": "Art. 10",
+    "quote": "shall be carried out only under the control of official authority or when the processing is authorised by Union or Member State law providing for appropriate safeguards"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Where the controller can show it cannot identify the data subject, it must inform the data subject accordingly, if possible.",
+   "conditional_on": "controller is able to demonstrate that it is not in a position to identify the data subject",
+   "evidence": {
+    "provision": "Art. 11(2)",
+    "quote": "the controller shall inform the data subject accordingly, if possible."
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Controller takes appropriate measures to provide information under Arts 13 and 14 and communications under Arts 15 to 22 and 34 in a concise, transparent, intelligible and easily accessible form; information in writing or other means including electronic.",
+   "evidence": {
+    "provision": "Art. 12(1)",
+    "quote": "The controller shall take appropriate measures to provide any information referred to in Articles 13 and 14"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Controller facilitates exercise of rights under Arts 15 to 22 and acts on requests within one month (extendable by two months with notice); if no action, informs the data subject of reasons and of complaint and judicial remedy options; information and actions free of charge save for manifestly unfounded or excessive requests.",
+   "applies_from": "within one month of receipt of the request",
+   "evidence": {
+    "provision": "Art. 12(3)",
+    "quote": "The controller shall provide information on action taken on a request under Articles 15 to 22 to the data subject without undue delay and in any event within one month of receipt of the request."
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Commission is empowered to adopt delegated acts determining the information to be presented by standardised icons and the procedures for providing them.",
+   "evidence": {
+    "provision": "Art. 12(8)",
+    "quote": "The Commission shall be empowered to adopt delegated acts in accordance with Article 92 for the purpose of determining the information to be presented by the icons"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Where personal data are collected from the data subject, controller provides listed information (identity, purposes and legal basis, recipients, transfers, retention, rights, complaint right, consequences of non-provision, automated decision-making); further processing for another purpose requires prior information.",
+   "applies_from": "at the time when personal data are obtained",
+   "conditional_on": "personal data collected from the data subject",
+   "evidence": {
+    "provision": "Art. 13(1)",
+    "quote": "the controller shall, at the time when personal data are obtained, provide the data subject with all of the following information:"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Where personal data are not obtained from the data subject, controller provides listed information including source; information provided within a reasonable period and at the latest within one month, or at first communication or first disclosure; prior information before further processing for another purpose.",
+   "applies_from": "within a reasonable period after obtaining the personal data, but at the latest within one month",
+   "conditional_on": "personal data not obtained from the data subject, and none of the exceptions in Art. 14(5) applies",
+   "evidence": {
+    "provision": "Art. 14(3)(a)",
+    "quote": "within a reasonable period after obtaining the personal data, but at the latest within one month, having regard to the specific circumstances in which the personal data are processed;"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Controller provides, on request, confirmation of processing, access to the data, the listed information (purposes, categories, recipients, retention, rights, source, automated decision-making), and a copy of the personal data.",
+   "evidence": {
+    "provision": "Art. 15(1)",
+    "quote": "The data subject shall have the right to obtain from the controller confirmation as to whether or not personal data concerning him or her are being processed"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Controller rectifies inaccurate personal data without undue delay and completes incomplete data on request.",
+   "evidence": {
+    "provision": "Art. 16",
+    "quote": "The data subject shall have the right to obtain from the controller without undue delay the rectification of inaccurate personal data concerning him or her."
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Controller erases personal data without undue delay on listed grounds (e.g., no longer necessary, consent withdrawn, unlawful processing); where data are public, controller takes reasonable steps to inform other controllers of erasure requests; exceptions in Art. 17(3).",
+   "conditional_on": "one of the grounds in Art. 17(1)(a) to (f) applies",
+   "evidence": {
+    "provision": "Art. 17(1)",
+    "quote": "the controller shall have the obligation to erase personal data without undue delay where one of the following grounds applies:"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Controller restricts processing where listed grounds apply; restricted data processed only under listed conditions; data subject informed before restriction is lifted.",
+   "conditional_on": "one of the grounds in Art. 18(1)(a) to (d) applies",
+   "evidence": {
+    "provision": "Art. 18(1)",
+    "quote": "The data subject shall have the right to obtain from the controller restriction of processing where one of the following applies:"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Controller communicates any rectification, erasure or restriction to each recipient to whom data were disclosed, unless impossible or disproportionate; informs the data subject about recipients on request.",
+   "conditional_on": "unless this proves impossible or involves disproportionate effort",
+   "evidence": {
+    "provision": "Art. 19",
+    "quote": "The controller shall communicate any rectification or erasure of personal data or restriction of processing carried out in accordance with Article 16, Article 17(1) and Article 18 to each recipient"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Data subject right to receive personal data provided to the controller in a structured, machine-readable format and to transmit it to another controller; controller must enable transmission directly where technically feasible (Art. 20(2)). Applies where processing is consent- or contract-based and automated.",
+   "applies_from": "25 May 2018 (Art. 99(2))",
+   "conditional_on": "Processing based on consent or contract and carried out by automated means",
+   "evidence": {
+    "provision": "Art. 20(1)",
+    "quote": "The data subject shall have the right to receive the personal data concerning him or her"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "data_controller",
+   "modality": "shall_not",
+   "summary": "Controller must stop processing personal data on objection (Art. 21(1)) or for direct marketing (Art. 21(3)) unless it demonstrates compelling legitimate grounds.",
+   "applies_from": "25 May 2018 (Art. 99(2))",
+   "conditional_on": "Data subject objects under Art. 21(1) or 21(2)",
+   "evidence": {
+    "provision": "Art. 21(1)",
+    "quote": "The controller shall no longer process the personal data unless the controller demonstrates compelling legitimate grounds"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Right to object must be explicitly brought to the data subject's attention at the latest at first communication, presented clearly and separately from other information.",
+   "applies_from": "25 May 2018 (Art. 99(2))",
+   "evidence": {
+    "provision": "Art. 21(4)",
+    "quote": "At the latest at the time of the first communication with the data subject, the right referred to in paragraphs 1 and 2 shall be explicitly brought to the attention of the data subject"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "data_controller",
+   "modality": "shall_not",
+   "summary": "Data subject may not be subject to a decision based solely on automated processing, including profiling, that produces legal effects or similarly significantly affects them, subject to the exceptions in Art. 22(2).",
+   "applies_from": "25 May 2018 (Art. 99(2))",
+   "conditional_on": "Exceptions in Art. 22(2)(a) to (c)",
+   "evidence": {
+    "provision": "Art. 22(1)",
+    "quote": "The data subject shall have the right not to be subject to a decision based solely on automated processing, including profiling"
+   }
+  },
+  {
+   "type": "human_oversight",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "For decisions under Art. 22(2)(a) and (c), controller must implement suitable safeguards, at least the right to obtain human intervention, to express a point of view and to contest the decision.",
+   "applies_from": "25 May 2018 (Art. 99(2))",
+   "conditional_on": "Decision based on contract or explicit consent under Art. 22(2)(a) or (c)",
+   "evidence": {
+    "provision": "Art. 22(3)",
+    "quote": "the data controller shall implement suitable measures to safeguard the data subject's rights and freedoms and legitimate interests, at least the right to obtain human intervention on the part of the controller"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member State legislative measures restricting the obligations and rights in Arts. 12 to 22 and 34 must contain specific provisions on purposes, data categories, scope, safeguards, controllers, storage periods, risks and data subjects' right to be informed, where relevant.",
+   "applies_from": "25 May 2018 (Art. 99(2))",
+   "conditional_on": "Member State or Union legislative measure restricting rights",
+   "evidence": {
+    "provision": "Art. 23(2)",
+    "quote": "any legislative measure referred to in paragraph 1 shall contain specific provisions at least, where relevant, as to"
+   }
+  },
+  {
+   "type": "management_system",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Implement appropriate technical and organisational measures to ensure and demonstrate compliance, reviewed and updated where necessary, including data protection policies where proportionate (Art. 24(2)).",
+   "applies_from": "25 May 2018 (Art. 99(2))",
+   "evidence": {
+    "provision": "Art. 24(1)",
+    "quote": "the controller shall implement appropriate technical and organisational measures to ensure and to be able to demonstrate that processing is performed in accordance with this Regulation."
+   }
+  },
+  {
+   "type": "data_minimization",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Implement data protection by design (Art. 25(1)) and by default measures so that only personal data necessary for each specific purpose are processed, covering amount, extent, storage period and accessibility.",
+   "applies_from": "25 May 2018 (Art. 99(2))",
+   "evidence": {
+    "provision": "Art. 25(1)",
+    "quote": "the controller shall, both at the time of the determination of the means for processing and at the time of the processing itself, implement appropriate technical and organisational measures"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Joint controllers must determine their respective responsibilities transparently by arrangement, and make the essence of the arrangement available to the data subject (Art. 26(2)).",
+   "applies_from": "25 May 2018 (Art. 99(2))",
+   "conditional_on": "Two or more controllers jointly determine purposes and means",
+   "evidence": {
+    "provision": "Art. 26(1)",
+    "quote": "They shall in a transparent manner determine their respective responsibilities for compliance with the obligations under this Regulation"
+   }
+  },
+  {
+   "type": "appointment_of_representative",
+   "addressee": "data_controller",
+   "also_addressees": [
+    "data_processor"
+   ],
+   "modality": "shall",
+   "summary": "Controller or processor not established in the Union must designate in writing a representative in the Union, subject to the exemptions in Art. 27(2).",
+   "applies_from": "25 May 2018 (Art. 99(2))",
+   "conditional_on": "Art. 3(2) applies; exemptions in Art. 27(2)(a) and (b)",
+   "evidence": {
+    "provision": "Art. 27(1)",
+    "quote": "the controller or the processor shall designate in writing a representative in the Union."
+   }
+  },
+  {
+   "type": "management_system",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Controller may use only processors providing sufficient guarantees to implement appropriate measures meeting the Regulation's requirements.",
+   "applies_from": "25 May 2018 (Art. 99(2))",
+   "conditional_on": "Processing carried out on behalf of a controller",
+   "evidence": {
+    "provision": "Art. 28(1)",
+    "quote": "the controller shall use only processors providing sufficient guarantees to implement appropriate technical and organisational measures"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_processor",
+   "modality": "shall",
+   "summary": "Processor contract or legal act (in writing) must bind the processor to: process only on documented instructions, confidentiality, Art. 32 measures, conditions for sub-processors, assistance with data subject requests, Arts. 32 to 36 compliance, deletion or return, and provision of information and audits; processor must not engage another processor without authorisation (Art. 28(2)).",
+   "applies_from": "25 May 2018 (Art. 99(2))",
+   "conditional_on": "Processing carried out on behalf of a controller",
+   "evidence": {
+    "provision": "Art. 28(3)",
+    "quote": "That contract or other legal act shall stipulate, in particular, that the processor:"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_processor",
+   "modality": "shall_not",
+   "summary": "Processor may not engage another processor without prior specific or general written authorisation of the controller, and must inform the controller of intended changes (Art. 28(2)).",
+   "applies_from": "25 May 2018 (Art. 99(2))",
+   "evidence": {
+    "provision": "Art. 28(2)",
+    "quote": "The processor shall not engage another processor without prior specific or general written authorisation of the controller."
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "data_processor",
+   "modality": "shall_not",
+   "summary": "Processor and persons acting under its or the controller's authority may not process personal data except on controller instructions, unless required by Union or Member State law.",
+   "applies_from": "25 May 2018 (Art. 99(2))",
+   "conditional_on": "Unless required by Union or Member State law",
+   "evidence": {
+    "provision": "Art. 29",
+    "quote": "shall not process those data except on instructions from the controller"
+   }
+  },
+  {
+   "type": "record_keeping",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Maintain a record of processing activities with the content listed in Art. 30(1)(a) to (g), in writing or electronic form, and make it available to the supervisory authority on request. Art. 30(5) exempts enterprises or organisations with fewer than 250 persons, subject to listed exceptions.",
+   "applies_from": "25 May 2018 (Art. 99(2))",
+   "conditional_on": "Art. 30(5) exemption for fewer than 250 persons unless risk, non-occasional processing or special categories",
+   "evidence": {
+    "provision": "Art. 30(1)",
+    "quote": "Each controller and, where applicable, the controller's representative, shall maintain a record of processing activities under its responsibility."
+   }
+  },
+  {
+   "type": "record_keeping",
+   "addressee": "data_processor",
+   "modality": "shall",
+   "summary": "Maintain a record of all categories of processing carried out on behalf of each controller, with the content listed in Art. 30(2)(a) to (d), and make it available to the supervisory authority on request.",
+   "applies_from": "25 May 2018 (Art. 99(2))",
+   "conditional_on": "Art. 30(5) exemption for fewer than 250 persons unless risk, non-occasional processing or special categories",
+   "evidence": {
+    "provision": "Art. 30(2)",
+    "quote": "Each processor and, where applicable, the processor's representative shall maintain a record of all categories of processing activities carried out on behalf of a controller"
+   }
+  },
+  {
+   "type": "cooperation_with_authority",
+   "addressee": "data_controller",
+   "also_addressees": [
+    "data_processor"
+   ],
+   "modality": "shall",
+   "summary": "Controller and processor (and their representatives) must cooperate, on request, with the supervisory authority in the performance of its tasks.",
+   "applies_from": "25 May 2018 (Art. 99(2))",
+   "conditional_on": "On request of the supervisory authority",
+   "evidence": {
+    "provision": "Art. 31",
+    "quote": "shall cooperate, on request, with the supervisory authority in the performance of its tasks."
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "data_controller",
+   "also_addressees": [
+    "data_processor"
+   ],
+   "modality": "shall",
+   "summary": "Implement appropriate technical and organisational measures to ensure a level of security appropriate to the risk, including pseudonymisation and encryption, ongoing confidentiality and integrity, restoration of availability, and regular testing of effectiveness (Art. 32(1)(a) to (d)).",
+   "applies_from": "25 May 2018 (Art. 99(2))",
+   "evidence": {
+    "provision": "Art. 32(1)",
+    "quote": "the controller and the processor shall implement appropriate technical and organisational measures to ensure a level of security appropriate to the risk"
+   }
+  },
+  {
+   "type": "incident_reporting",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Notify the supervisory authority of a personal data breach without undue delay and, where feasible, within 72 hours of becoming aware of it, unless unlikely to result in a risk; include reasons for any delay. Notification content listed in Art. 33(3).",
+   "applies_from": "25 May 2018 (Art. 99(2))",
+   "conditional_on": "Unless the breach is unlikely to result in a risk to natural persons' rights and freedoms",
+   "evidence": {
+    "provision": "Art. 33(1)",
+    "quote": "the controller shall without undue delay and, where feasible, not later than 72 hours after having become aware of it, notify the personal data breach to the supervisory authority"
+   }
+  },
+  {
+   "type": "incident_reporting",
+   "addressee": "data_processor",
+   "modality": "shall",
+   "summary": "Notify the controller without undue delay after becoming aware of a personal data breach.",
+   "applies_from": "25 May 2018 (Art. 99(2))",
+   "evidence": {
+    "provision": "Art. 33(2)",
+    "quote": "The processor shall notify the controller without undue delay after becoming aware of a personal data breach."
+   }
+  },
+  {
+   "type": "record_keeping",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Document all personal data breaches, their facts, effects and remedial action, enabling the supervisory authority to verify compliance with Art. 33.",
+   "applies_from": "25 May 2018 (Art. 99(2))",
+   "evidence": {
+    "provision": "Art. 33(5)",
+    "quote": "The controller shall document any personal data breaches, comprising the facts relating to the personal data breach, its effects and the remedial action taken."
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Communicate a personal data breach likely to result in high risk to the data subject without undue delay, in clear and plain language; exemptions in Art. 34(3) (protective measures, subsequent measures, disproportionate effort with public communication).",
+   "applies_from": "25 May 2018 (Art. 99(2))",
+   "conditional_on": "Breach likely to result in a high risk to natural persons' rights and freedoms",
+   "evidence": {
+    "provision": "Art. 34(1)",
+    "quote": "the controller shall communicate the personal data breach to the data subject without undue delay."
+   }
+  },
+  {
+   "type": "impact_assessment",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Carry out a data protection impact assessment before processing likely to result in high risk, with minimum content under Art. 35(7); seek advice of the DPO where designated (Art. 35(2)); seek views of data subjects where appropriate (Art. 35(9)); review when risk changes (Art. 35(11)). Mandatory cases listed in Art. 35(3).",
+   "applies_from": "25 May 2018 (Art. 99(2))",
+   "conditional_on": "Processing likely to result in high risk to natural persons' rights and freedoms",
+   "evidence": {
+    "provision": "Art. 35(1)",
+    "quote": "the controller shall, prior to the processing, carry out an assessment of the impact of the envisaged processing operations on the protection of personal data."
+   }
+  },
+  {
+   "type": "cooperation_with_authority",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Consult the supervisory authority before processing where a DPIA indicates high risk absent mitigation; provide the information listed in Art. 36(3).",
+   "applies_from": "25 May 2018 (Art. 99(2))",
+   "conditional_on": "DPIA under Art. 35 indicates high risk absent mitigating measures",
+   "evidence": {
+    "provision": "Art. 36(1)",
+    "quote": "The controller shall consult the supervisory authority prior to processing where a data protection impact assessment under Article 35 indicates that the processing would result in a high risk"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States must consult the supervisory authority when preparing legislative or regulatory measures relating to processing.",
+   "applies_from": "25 May 2018 (Art. 99(2))",
+   "conditional_on": "Preparation of a legislative measure or regulatory measure based on it that relates to processing",
+   "evidence": {
+    "provision": "Art. 36(4)",
+    "quote": "Member States shall consult the supervisory authority during the preparation of a proposal for a legislative measure"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_controller",
+   "also_addressees": [
+    "data_processor"
+   ],
+   "modality": "shall",
+   "summary": "Designate a data protection officer where processing is by a public authority, involves regular and systematic monitoring on a large scale, or large-scale special category or criminal data processing (Art. 37(1)(a) to (c)).",
+   "applies_from": "25 May 2018 (Art. 99(2))",
+   "conditional_on": "Cases in Art. 37(1)(a) to (c)",
+   "evidence": {
+    "provision": "Art. 37(1)",
+    "quote": "The controller and the processor shall designate a data protection officer in any case where:"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "data_controller",
+   "also_addressees": [
+    "data_processor"
+   ],
+   "modality": "shall",
+   "summary": "Publish the contact details of the data protection officer and communicate them to the supervisory authority.",
+   "applies_from": "25 May 2018 (Art. 99(2))",
+   "conditional_on": "Where a DPO is designated",
+   "evidence": {
+    "provision": "Art. 37(7)",
+    "quote": "The controller or the processor shall publish the contact details of the data protection officer and communicate them to the supervisory authority."
+   }
+  },
+  {
+   "type": "management_system",
+   "addressee": "data_controller",
+   "also_addressees": [
+    "data_processor"
+   ],
+   "modality": "shall",
+   "summary": "Ensure the DPO is involved properly and in a timely manner, is supported with resources and access, does not receive instructions on tasks, is not dismissed or penalised for performing them, reports to highest management, and avoids conflicts of interest (Art. 38(6)).",
+   "applies_from": "25 May 2018 (Art. 99(2))",
+   "conditional_on": "Where a DPO is designated",
+   "evidence": {
+    "provision": "Art. 38(1)",
+    "quote": "The controller and the processor shall ensure that the data protection officer is involved, properly and in a timely manner, in all issues which relate to the protection of personal data."
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Tasks assigned to the data protection officer: inform and advise, monitor compliance, advise on DPIAs, cooperate with and act as contact point for the supervisory authority, with due regard to processing risk (Art. 39(2)).",
+   "applies_from": "25 May 2018 (Art. 99(2))",
+   "conditional_on": "Where a DPO is designated",
+   "evidence": {
+    "provision": "Art. 39(1)",
+    "quote": "The data protection officer shall have at least the following tasks:"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "encouraged",
+   "summary": "Member States, supervisory authorities, the Board and the Commission encourage drawing up of sector-specific codes of conduct, taking account of micro, small and medium-sized enterprises.",
+   "applies_from": "25 May 2018 (Art. 99(2))",
+   "evidence": {
+    "provision": "Art. 40(1)",
+    "quote": "The Member States, the supervisory authorities, the Board and the Commission shall encourage the drawing up of codes of conduct"
+   }
+  },
+  {
+   "type": "audit",
+   "addressee": "auditor_assessor",
+   "modality": "shall",
+   "summary": "Monitoring body accredited for a code of conduct must take appropriate action against infringing controllers or processors, including suspension or exclusion, and inform the supervisory authority.",
+   "applies_from": "25 May 2018 (Art. 99(2))",
+   "conditional_on": "Body accredited to monitor a code of conduct under Art. 41(1)",
+   "evidence": {
+    "provision": "Art. 41(4)",
+    "quote": "a body as referred to in paragraph 1 of this Article shall, subject to appropriate safeguards, take appropriate action in cases of infringement of the code by a controller or processor"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "encouraged",
+   "summary": "Member States, supervisory authorities, the Board and the Commission encourage establishment of data protection certification mechanisms, seals and marks.",
+   "applies_from": "25 May 2018 (Art. 99(2))",
+   "evidence": {
+    "provision": "Art. 42(1)",
+    "quote": "The Member States, the supervisory authorities, the Board and the Commission shall encourage, in particular at Union level, the establishment of data protection certification mechanisms"
+   }
+  },
+  {
+   "type": "licensing_certification",
+   "addressee": "auditor_assessor",
+   "modality": "shall",
+   "summary": "Certification bodies with appropriate expertise issue and renew certification, after informing the supervisory authority where necessary, and must be accredited under Art. 43(1)(a) or (b).",
+   "applies_from": "25 May 2018 (Art. 99(2))",
+   "conditional_on": "Accreditation by supervisory authority or national accreditation body",
+   "evidence": {
+    "provision": "Art. 43(1)",
+    "quote": "issue and renew certification"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "auditor_assessor",
+   "modality": "shall",
+   "summary": "Certification bodies must provide the competent supervisory authorities with the reasons for granting or withdrawing certification.",
+   "applies_from": "25 May 2018 (Art. 99(2))",
+   "evidence": {
+    "provision": "Art. 43(5)",
+    "quote": "The certification bodies referred to in paragraph 1 shall provide the competent supervisory authorities with the reasons for granting or withdrawing the requested certification."
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_controller",
+   "also_addressees": [
+    "data_processor"
+   ],
+   "modality": "shall_not",
+   "summary": "Transfers of personal data to a third country or international organisation, including onward transfers, may take place only if the conditions in Chapter V are complied with.",
+   "applies_from": "25 May 2018 (Art. 99(2))",
+   "conditional_on": "Transfer to a third country or international organisation",
+   "evidence": {
+    "provision": "Art. 44",
+    "quote": "Any transfer of personal data which are undergoing processing or are intended for processing after transfer to a third country or to an international organisation shall take place only if"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Commission's adequacy decisions must provide for a periodic review at least every four years, and specify territorial and sectoral application.",
+   "applies_from": "25 May 2018 (Art. 99(2))",
+   "conditional_on": "Commission decision that a third country or sector ensures adequate protection",
+   "evidence": {
+    "provision": "Art. 45(3)",
+    "quote": "shall provide for a mechanism for a periodic review, at least every four years"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Commission publishes in the Official Journal and on its website a list of third countries, territories, sectors and international organisations with adequacy decisions.",
+   "applies_from": "25 May 2018 (Art. 99(2))",
+   "evidence": {
+    "provision": "Art. 45(8)",
+    "quote": "The Commission shall publish in the Official Journal of the European Union and on its website a list of the third countries"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_controller",
+   "also_addressees": [
+    "data_processor"
+   ],
+   "modality": "shall",
+   "summary": "Absent an adequacy decision, a transfer may take place only if the controller or processor has provided appropriate safeguards with enforceable data subject rights and remedies (Art. 46(2) to (3)).",
+   "applies_from": "25 May 2018 (Art. 99(2))",
+   "conditional_on": "Absence of an adequacy decision under Art. 45(3)",
+   "evidence": {
+    "provision": "Art. 46(1)",
+    "quote": "a controller or processor may transfer personal data to a third country or an international organisation only if the controller or processor has provided appropriate safeguards"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Binding corporate rules must specify the group structure, transfers, legal nature, principles, data subject rights, liability, complaint procedures, audits, reporting of changes and staff training (Art. 47(2)(a) to (n)).",
+   "applies_from": "25 May 2018 (Art. 99(2))",
+   "conditional_on": "Binding corporate rules approved under Art. 47(1)",
+   "evidence": {
+    "provision": "Art. 47(2)",
+    "quote": "The binding corporate rules referred to in paragraph 1 shall specify at least:"
+   }
+  },
+  {
+   "type": "cooperation_with_authority",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Controller relying on compelling legitimate interests for a transfer must inform the supervisory authority of the transfer and inform the data subject of the transfer and interests pursued.",
+   "applies_from": "25 May 2018 (Art. 99(2))",
+   "conditional_on": "Transfer under the last subparagraph of Art. 49(1) where no other derogation applies",
+   "evidence": {
+    "provision": "Art. 49(1)",
+    "quote": "The controller shall inform the supervisory authority of the transfer."
+   }
+  },
+  {
+   "type": "record_keeping",
+   "addressee": "data_controller",
+   "also_addressees": [
+    "data_processor"
+   ],
+   "modality": "shall",
+   "summary": "Document the assessment and suitable safeguards for transfers under Art. 49(1) in the records referred to in Art. 30.",
+   "applies_from": "25 May 2018 (Art. 99(2))",
+   "conditional_on": "Transfers under Art. 49(1)",
+   "evidence": {
+    "provision": "Art. 49(6)",
+    "quote": "The controller or processor shall document the assessment as well as the suitable safeguards referred to in the second subparagraph of paragraph 1 of this Article in the records referred to in Article 30."
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Commission and supervisory authorities must take appropriate steps for international cooperation in enforcement of data protection legislation, including mutual assistance and information exchange.",
+   "applies_from": "25 May 2018 (Art. 99(2))",
+   "conditional_on": "Relating to third countries and international organisations",
+   "evidence": {
+    "provision": "Art. 50",
+    "quote": "the Commission and supervisory authorities shall take appropriate steps to"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Each Member State provides for one or more independent public supervisory authorities, and notifies the Commission of its law adopted under Chapter VI by 25 May 2018 and of later amendments.",
+   "applies_from": "by 25 May 2018 (Art. 51(4)); 25 May 2018 (Art. 99(2))",
+   "evidence": {
+    "provision": "Art. 51(1)",
+    "quote": "Each Member State shall provide for one or more independent public authorities to be responsible for monitoring the application of this Regulation"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Each Member State ensures supervisory authorities are independent, provided with human, technical and financial resources, own staff, and separate public budgets (Art. 52(1), (4) to (6)).",
+   "applies_from": "25 May 2018 (Art. 99(2))",
+   "evidence": {
+    "provision": "Art. 52(4)",
+    "quote": "Each Member State shall ensure that each supervisory authority is provided with the human, technical and financial resources"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States provide that each supervisory authority member is appointed by a transparent procedure and meets the qualification requirements in Art. 53(2).",
+   "applies_from": "25 May 2018 (Art. 99(2))",
+   "evidence": {
+    "provision": "Art. 53(1)",
+    "quote": "Member States shall provide for each member of their supervisory authorities to be appointed by means of a transparent procedure"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States provide by law for establishment, qualifications, appointment rules, terms, and staff obligations of each supervisory authority; members and staff are bound by professional secrecy during and after their term.",
+   "applies_from": "25 May 2018 (Art. 99(2))",
+   "evidence": {
+    "provision": "Art. 54(1)",
+    "quote": "Each Member State shall provide by law for all of the following:"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "A supervisory authority receiving a complaint or possible infringement with cross-border elements must inform the lead supervisory authority without delay; the lead authority decides within three weeks whether to handle the case.",
+   "applies_from": "25 May 2018 (Art. 99(2))",
+   "conditional_on": "Subject matter relates only to an establishment in its Member State or substantially affects data subjects only there (Art. 56(2))",
+   "evidence": {
+    "provision": "Art. 56(3)",
+    "quote": "the supervisory authority shall inform the lead supervisory authority without delay on that matter."
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Each supervisory authority monitors and enforces the Regulation, promotes public awareness, advises legislators, handles complaints, investigates, cooperates with other authorities, and performs the other listed tasks on its territory (Art. 57(1)(a) to (v)).",
+   "applies_from": "25 May 2018 (Art. 99(2))",
+   "evidence": {
+    "provision": "Art. 57(1)",
+    "quote": "monitor and enforce the application of this Regulation"
+   }
+  },
+  {
+   "type": "complaint_mechanism",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Each supervisory authority facilitates submission of complaints, for example by an electronic complaint form, without excluding other means.",
+   "applies_from": "25 May 2018 (Art. 99(2))",
+   "evidence": {
+    "provision": "Art. 57(2)",
+    "quote": "Each supervisory authority shall facilitate the submission of complaints referred to in point (f) of paragraph 1 by measures such as a complaint submission form"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Each supervisory authority draws up an annual report on its activities, transmitted to the national parliament, government and other designated authorities, and made available to the public, the Commission and the Board.",
+   "applies_from": "25 May 2018 (Art. 99(2))",
+   "evidence": {
+    "provision": "Art. 59",
+    "quote": "Each supervisory authority shall draw up an annual report on its activities"
+   }
+  },
+  {
+   "type": "cooperation_with_authority",
+   "addressee": "data_controller",
+   "also_addressees": [
+    "data_processor"
+   ],
+   "modality": "shall",
+   "summary": "After notification of a lead supervisory authority's decision, controller or processor must take necessary measures to ensure compliance in all Union establishments and notify those measures to the lead authority.",
+   "applies_from": "25 May 2018 (Art. 99(2))",
+   "conditional_on": "Notification of a decision under Art. 60(7) or (9)",
+   "evidence": {
+    "provision": "Art. 60(10)",
+    "quote": "The controller or processor shall take the necessary measures to ensure compliance with the decision as regards processing activities"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Supervisory authorities must reply to a request from another supervisory authority without undue delay and no later than one month after receipt, and provide mutual assistance without charging a fee.",
+   "applies_from": "25 May 2018 (Art. 99(2))",
+   "evidence": {
+    "provision": "Art. 61(2)",
+    "quote": "Each supervisory authority shall take all appropriate measures required to reply to a request of another supervisory authority without undue delay and no later than one month after receiving the request."
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Supervisory authorities conduct joint operations, including joint investigations and enforcement measures, where appropriate, and involve authorities of other Member States where the conditions of Art. 62(2) are met.",
+   "applies_from": "25 May 2018 (Art. 99(2))",
+   "conditional_on": "Where appropriate; involvement of other Member States under Art. 62(2)",
+   "evidence": {
+    "provision": "Art. 62(1)",
+    "quote": "The supervisory authorities shall, where appropriate, conduct joint operations including joint investigations and joint enforcement measures"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Supervisory authorities cooperate with each other and with the Commission through the consistency mechanism to ensure consistent application of the Regulation across the Union.",
+   "applies_from": "25 May 2018 (Art. 99(2))",
+   "conditional_on": "Where relevant",
+   "evidence": {
+    "provision": "Art. 63",
+    "quote": "the supervisory authorities shall cooperate with each other and, where relevant, with the Commission, through the consistency mechanism"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Board issues an opinion where a competent supervisory authority intends to adopt listed measures (DPIA lists, codes of conduct, accreditation criteria, standard clauses, contractual clauses, BCRs), and the authority communicates its draft decision to the Board.",
+   "applies_from": "25 May 2018 (Art. 99(2))",
+   "conditional_on": "Supervisory authority intends to adopt a measure listed in Art. 64(1)(a) to (f)",
+   "evidence": {
+    "provision": "Art. 64(1)",
+    "quote": "The Board shall issue an opinion where a competent supervisory authority intends to adopt any of the measures below."
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Board adopts a binding decision in listed dispute cases, including relevant and reasoned objections and conflicting views on the main establishment, within one month (extendable), by two-thirds majority.",
+   "applies_from": "25 May 2018 (Art. 99(2))",
+   "conditional_on": "Cases listed in Art. 65(1)(a) to (c)",
+   "evidence": {
+    "provision": "Art. 65(1)",
+    "quote": "the Board shall adopt a binding decision in the following cases:"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "may",
+   "summary": "In exceptional urgent circumstances a supervisory authority may immediately adopt provisional measures with legal effect on its territory for up to three months, and communicate them to other authorities, the Board and the Commission.",
+   "applies_from": "25 May 2018 (Art. 99(2))",
+   "conditional_on": "Exceptional circumstances and urgent need to protect data subjects' rights",
+   "evidence": {
+    "provision": "Art. 66(1)",
+    "quote": "immediately adopt provisional measures intended to produce legal effects on its own territory"
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "government_agency",
+   "modality": "may",
+   "summary": "The Commission may adopt implementing acts of general scope specifying electronic information-exchange arrangements between supervisory authorities and the Board, following the examination procedure.",
+   "applies_from": "25 May 2018 (Art. 99(2))",
+   "evidence": {
+    "provision": "Art. 67",
+    "quote": "The Commission may adopt implementing acts of general scope in order to specify the arrangements for the exchange of information by electronic means"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Board ensures consistent application of the Regulation, issues guidelines, recommendations and best practices (including on profiling, breach notification, transfers), consults interested parties, and forwards its opinions to the Commission and make them public.",
+   "applies_from": "25 May 2018 (Art. 99(2))",
+   "evidence": {
+    "provision": "Art. 70(1)",
+    "quote": "The Board shall ensure the consistent application of this Regulation."
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Board draws up an annual report on the protection of natural persons in the Union, made public and transmitted to Parliament, Council and Commission, including review of guidelines and binding decisions.",
+   "applies_from": "25 May 2018 (Art. 99(2))",
+   "evidence": {
+    "provision": "Art. 71(1)",
+    "quote": "The Board shall draw up an annual report regarding the protection of natural persons with regard to processing in the Union"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Board adopts its own rules of procedure by a two-thirds majority of its members and organises its operational arrangements.",
+   "applies_from": "25 May 2018 (Art. 99(2))",
+   "evidence": {
+    "provision": "Art. 72(2)",
+    "quote": "The Board shall adopt its own rules of procedure by a two-thirds majority of its members"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Chair of the Board convenes its meetings and prepares the agenda, notifies decisions under Art. 65, and ensures timely performance of the Board's tasks.",
+   "applies_from": "25 May 2018 (Art. 99(2))",
+   "evidence": {
+    "provision": "Art. 74(1)(a)",
+    "quote": "to convene the meetings of the Board and prepare its agenda;"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Board's secretariat is provided by the European Data Protection Supervisor and performs its tasks under the Chair's instructions.",
+   "applies_from": "25 May 2018 (Art. 99(2))",
+   "evidence": {
+    "provision": "Art. 75(1)",
+    "quote": "The Board shall have a secretariat, which shall be provided by the European Data Protection Supervisor."
+   }
+  },
+  {
+   "type": "complaint_mechanism",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The supervisory authority with which a complaint is lodged must inform the complainant of progress and outcome, including the possibility of judicial remedy under Art. 78.",
+   "applies_from": "25 May 2018 (Art. 99(2))",
+   "evidence": {
+    "provision": "Art. 77(2)",
+    "quote": "The supervisory authority with which the complaint has been lodged shall inform the complainant on the progress and the outcome of the complaint"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "A court of a Member State that learns of parallel proceedings on the same subject matter in another Member State must contact that court to confirm them.",
+   "applies_from": "25 May 2018 (Art. 99(2))",
+   "conditional_on": "Information on pending proceedings concerning the same processing in another Member State",
+   "evidence": {
+    "provision": "Art. 81(1)",
+    "quote": "it shall contact that court in the other Member State to confirm the existence of such proceedings."
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States must by law reconcile data protection with freedom of expression and information, including journalistic, academic, artistic or literary purposes, and provide exemptions or derogations where necessary.",
+   "applies_from": "25 May 2018 (Art. 99(2))",
+   "conditional_on": "Processing for journalistic, academic, artistic or literary purposes (Art. 85(2))",
+   "evidence": {
+    "provision": "Art. 85(1)",
+    "quote": "Member States shall by law reconcile the right to the protection of personal data pursuant to this Regulation with the right to freedom of expression and information"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Employment-context rules adopted by Member States by law or collective agreement must include suitable and specific measures safeguarding dignity, legitimate interests and fundamental rights, and be notified to the Commission by 25 May 2018.",
+   "applies_from": "25 May 2018 (Art. 99(2)); notification by 25 May 2018 (Art. 88(3))",
+   "conditional_on": "Member States adopt more specific employment rules under Art. 88(1)",
+   "evidence": {
+    "provision": "Art. 88(2)",
+    "quote": "Those rules shall include suitable and specific measures to safeguard the data subject's human dignity, legitimate interests and fundamental rights"
+   }
+  },
+  {
+   "type": "data_minimization",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Processing for archiving, scientific or historical research or statistical purposes must be subject to safeguards, including technical and organisational measures ensuring data minimisation, pseudonymisation where possible, and anonymisation where purposes can be met that way.",
+   "applies_from": "25 May 2018 (Art. 99(2))",
+   "conditional_on": "Processing for archiving in the public interest, research or statistical purposes",
+   "evidence": {
+    "provision": "Art. 89(1)",
+    "quote": "Those safeguards shall ensure that technical and organisational measures are in place in particular in order to ensure respect for the principle of data minimisation."
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Each Member State notifies the Commission of the rules adopted under Art. 90(1) on supervisory powers over controllers or processors subject to professional secrecy, and of later amendments.",
+   "applies_from": "25 May 2018 (Art. 99(2))",
+   "conditional_on": "Member State adopts rules under Art. 90(1)",
+   "evidence": {
+    "provision": "Art. 90(2)",
+    "quote": "Each Member State shall notify to the Commission the rules adopted pursuant to paragraph 1, by 25 May 2018"
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Power to adopt delegated acts conferred on the Commission for an indeterminate period from 24 May 2016 (for Art. 12(8) and Art. 43(8)); the Commission must notify each delegated act simultaneously to Parliament and Council.",
+   "applies_from": "24 May 2016 (Art. 92(2))",
+   "conditional_on": "Subject to the conditions of Art. 92; revocable under Art. 92(3)",
+   "evidence": {
+    "provision": "Art. 92(1)",
+    "quote": "The power to adopt delegated acts is conferred on the Commission subject to the conditions laid down in this Article."
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Commission submits a report on the evaluation and review of the Regulation to Parliament and Council by 25 May 2020 and every four years thereafter, examining Chapter V and Chapter VII and proposing amendments if necessary.",
+   "applies_from": "By 25 May 2020 and every four years thereafter (Art. 97(1))",
+   "evidence": {
+    "provision": "Art. 97(1)",
+    "quote": "By 25 May 2020 and every four years thereafter, the Commission shall submit a report on the evaluation and review of this Regulation"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Commission submits legislative proposals, if appropriate, to amend other Union data protection legal acts for uniform and consistent protection.",
+   "applies_from": "25 May 2018 (Art. 99(2))",
+   "conditional_on": "If appropriate",
+   "evidence": {
+    "provision": "Art. 98",
+    "quote": "The Commission shall, if appropriate, submit legislative proposals with a view to amending other Union legal acts on the protection of personal data"
+   }
+  }
+ ],
+ "enforcement": [
+  {
+   "sanction_type": "administrative_fine",
+   "authority": "Supervisory authority (Art. 83(1), (4))",
+   "triggered_by": "Infringement of controller and processor obligations under Articles 8, 11, 25 to 39, 42 and 43; certification body obligations under Articles 42 and 43; monitoring body obligations under Article 41(4)",
+   "max_penalty_text": "up to 10 000 000 EUR, or in the case of an undertaking, up to 2 % of the total worldwide annual turnover of the preceding financial year, whichever is higher",
+   "max_penalty_amount": 10000000,
+   "currency": "EUR",
+   "penalty_formula": "2 % of total worldwide annual turnover of the preceding financial year for an undertaking, if higher than EUR 10 000 000; under Art. 83(3) the total for linked infringements may not exceed the amount specified for the gravest infringement",
+   "penalty_reference": "Art. 83(4)",
+   "cure_period": "none stated",
+   "evidence": {
+    "provision": "Art. 83(4)",
+    "quote": "be subject to administrative fines up to 10 000 000 EUR, or in the case of an undertaking, up to 2 % of the total worldwide annual turnover of the preceding financial year, whichever is higher"
+   }
+  },
+  {
+   "sanction_type": "administrative_fine",
+   "authority": "Supervisory authority (Art. 83(1), (5))",
+   "triggered_by": "Infringement of basic processing principles and consent conditions (Arts 5, 6, 7, 9); data subjects' rights (Arts 12 to 22); transfers to third countries or international organisations (Arts 44 to 49); obligations under Member State law adopted under Chapter IX; non-compliance with an order or limitation by the supervisory authority under Art. 58(2) or failure to provide access under Art. 58(1)",
+   "max_penalty_text": "up to 20 000 000 EUR, or in the case of an undertaking, up to 4 % of the total worldwide annual turnover of the preceding financial year, whichever is higher",
+   "max_penalty_amount": 20000000,
+   "currency": "EUR",
+   "penalty_formula": "4 % of total worldwide annual turnover of the preceding financial year for an undertaking, if higher than EUR 20 000 000; under Art. 83(3) the total for linked infringements may not exceed the amount specified for the gravest infringement",
+   "penalty_reference": "Art. 83(5)",
+   "cure_period": "none stated",
+   "evidence": {
+    "provision": "Art. 83(5)",
+    "quote": "be subject to administrative fines up to 20 000 000 EUR, or in the case of an undertaking, up to 4 % of the total worldwide annual turnover of the preceding financial year, whichever is higher"
+   }
+  },
+  {
+   "sanction_type": "administrative_fine",
+   "authority": "Supervisory authority (Art. 83(1), (6))",
+   "triggered_by": "Non-compliance with an order by the supervisory authority under Art. 58(2)",
+   "max_penalty_text": "up to 20 000 000 EUR, or in the case of an undertaking, up to 4 % of the total worldwide annual turnover of the preceding financial year, whichever is higher",
+   "max_penalty_amount": 20000000,
+   "currency": "EUR",
+   "penalty_formula": "4 % of total worldwide annual turnover of the preceding financial year for an undertaking, if higher than EUR 20 000 000",
+   "penalty_reference": "Art. 83(6)",
+   "cure_period": "none stated",
+   "evidence": {
+    "provision": "Art. 83(6)",
+    "quote": "Non-compliance with an order by the supervisory authority as referred to in Article 58(2) shall, in accordance with paragraph 2 of this Article, be subject to administrative fines up to 20 000 000 EUR, or in the case of an undertaking, up to 4 % of the total worldwide annual turnover of the preceding financial year, whichever is higher"
+   }
+  },
+  {
+   "sanction_type": "other",
+   "authority": "Member States (Art. 84(1))",
+   "triggered_by": "Infringements of the Regulation not subject to administrative fines pursuant to Article 83",
+   "max_penalty_text": "Member States shall lay down the rules on other penalties applicable to infringements of this Regulation; no amount stated",
+   "penalty_formula": "not stated in this text; penalties are set by Member State rules",
+   "penalty_reference": "Art. 84(1)",
+   "cure_period": "none stated",
+   "evidence": {
+    "provision": "Art. 84(1)",
+    "quote": "Member States shall lay down the rules on other penalties applicable to infringements of this Regulation in particular for infringements which are not subject to administrative fines pursuant to Article 83"
+   }
+  },
+  {
+   "sanction_type": "private_damages",
+   "authority": "Courts competent under the law of the Member State referred to in Art. 79(2) (Art. 82(6))",
+   "triggered_by": "Material or non-material damage suffered as a result of an infringement of this Regulation; controller liability for processing that infringes the Regulation; processor liability in limited cases (Art. 82(2))",
+   "max_penalty_text": "compensation for the damage suffered; no amount stated",
+   "penalty_formula": "not stated; compensation for the damage suffered; exemption if the controller or processor proves it is not in any way responsible (Art. 82(3))",
+   "penalty_reference": "Art. 82(1)-(3)",
+   "private_right_of_action": true,
+   "cure_period": "none stated",
+   "evidence": {
+    "provision": "Art. 82(1)",
+    "quote": "shall have the right to receive compensation from the controller or processor for the damage suffered"
+   }
+  },
+  {
+   "sanction_type": "other",
+   "authority": "Courts of the Member State (Art. 79(2))",
+   "triggered_by": "Data subject considers that rights under this Regulation have been infringed as a result of processing in non-compliance with this Regulation",
+   "max_penalty_text": "effective judicial remedy; no amount stated",
+   "penalty_formula": "not stated",
+   "penalty_reference": "Art. 79(1)-(2)",
+   "private_right_of_action": true,
+   "cure_period": "none stated",
+   "evidence": {
+    "provision": "Art. 79(1)",
+    "quote": "each data subject shall have the right to an effective judicial remedy where he or she considers that his or her rights under this Regulation have been infringed"
+   }
+  },
+  {
+   "sanction_type": "warning_reprimand",
+   "authority": "Supervisory authority (Art. 58(2)(a)-(b))",
+   "triggered_by": "Intended processing operations likely to infringe the Regulation (warning); processing operations that have infringed the Regulation (reprimand)",
+   "max_penalty_text": "no amount; corrective measure",
+   "penalty_formula": "not applicable",
+   "penalty_reference": "Art. 58(2)(a)-(b)",
+   "cure_period": "none stated",
+   "evidence": {
+    "provision": "Art. 58(2)(a)",
+    "quote": "to issue warnings to a controller or processor that intended processing operations are likely to infringe provisions of this Regulation"
+   }
+  },
+  {
+   "sanction_type": "injunction_order",
+   "authority": "Supervisory authority (Art. 58(2)(c)-(e), (g))",
+   "triggered_by": "Infringement or likely infringement of the Regulation; orders to comply with data subject requests, bring processing into compliance, communicate breaches, or rectify or erase data",
+   "max_penalty_text": "no amount; corrective order",
+   "penalty_formula": "not applicable",
+   "penalty_reference": "Art. 58(2)(c), (d), (e), (g)",
+   "cure_period": "within a period specified by the supervisory authority (Art. 58(2)(d))",
+   "evidence": {
+    "provision": "Art. 58(2)(d)",
+    "quote": "to order the controller or processor to bring processing operations into compliance with the provisions of this Regulation, where appropriate, in a specified manner and within a specified period"
+   }
+  },
+  {
+   "sanction_type": "blocking",
+   "authority": "Supervisory authority (Art. 58(2)(f))",
+   "triggered_by": "Processing operations that infringe or are likely to infringe the Regulation",
+   "max_penalty_text": "temporary or definitive limitation including a ban on processing; no amount",
+   "penalty_formula": "not applicable",
+   "penalty_reference": "Art. 58(2)(f)",
+   "cure_period": "none stated",
+   "evidence": {
+    "provision": "Art. 58(2)(f)",
+    "quote": "to impose a temporary or definitive limitation including a ban on processing"
+   }
+  },
+  {
+   "sanction_type": "blocking",
+   "authority": "Supervisory authority (Art. 58(2)(j))",
+   "triggered_by": "Data flows to a recipient in a third country or to an international organisation",
+   "max_penalty_text": "suspension of data flows; no amount",
+   "penalty_formula": "not applicable",
+   "penalty_reference": "Art. 58(2)(j)",
+   "cure_period": "none stated",
+   "evidence": {
+    "provision": "Art. 58(2)(j)",
+    "quote": "to order the suspension of data flows to a recipient in a third country or to an international organisation"
+   }
+  },
+  {
+   "sanction_type": "license_revocation",
+   "authority": "Certification bodies (Art. 43) or competent supervisory authority (Art. 58(2)(h))",
+   "triggered_by": "Requirements for the certification not, or no longer, being met",
+   "max_penalty_text": "withdrawal of certification; no amount",
+   "penalty_formula": "not applicable",
+   "penalty_reference": "Art. 58(2)(h); Art. 42(7)",
+   "cure_period": "none stated",
+   "evidence": {
+    "provision": "Art. 58(2)(h)",
+    "quote": "to withdraw a certification or to order the certification body to withdraw a certification issued pursuant to Articles 42 and 43"
+   }
+  }
+ ],
+ "section_status": {}
+}

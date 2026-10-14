@@ -1,0 +1,133 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "us-hr6253-119",
+ "tier": "B",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "light, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-interim-20261014"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "AGORA plaintext (ETO, CC BY-NC 4.0), local cache",
+  "url": "https://www.congress.gov/bill/119th-congress/house-bill/6253/text",
+  "retrieved": "2026-02-12",
+  "version": "1.33.0 (2026-09-16)",
+  "language": "en",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "algorithmic_decision_systems",
+   "minors_child_safety",
+   "consumer_protection"
+  ],
+  "primary_domain": "algorithmic_decision_systems",
+  "mechanisms": [
+   "mandate_obligation",
+   "disclosure_transparency"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "platform_operator"
+  ],
+  "affected_roles": [
+   "minors"
+  ],
+  "decision_margins": [
+   "firm:product_design_release",
+   "household:information",
+   "household:data_privacy"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national"
+   ],
+   "description": "Federal statute applying to covered online platforms, with preemption of state laws that cover the same requirements.",
+   "evidence": {
+    "provision": "Sec. 2(e)",
+    "quote": "No State or political subdivision of a State may prescribe, maintain, or enforce any law"
+   }
+  },
+  "agora_risk_factors": [
+   "Transparency"
+  ],
+  "agora_strategies": [
+   "Disclosure",
+   "Disclosure: About inputs",
+   "Disclosure: In deployment"
+  ]
+ },
+ "summary": {
+  "short": "Would require providers of online platforms using personalized recommendation systems, from one year after enactment, to give minor users notices about those systems and options to switch to or limit them, with an input-transparent algorithm as default. Violations are treated as FTC unfair or deceptive practices.",
+  "long": "The bill would apply to providers of covered online platforms, meaning public-facing online platforms that use a personalized recommendation system and primarily provide a forum for user-generated content. Beginning one year after enactment, a provider must give covered users, meaning minors who register an account or create a profile, a clear and conspicuous notice the first time they interact with such a system. The terms and conditions must include a description of the system's essential features, inputs and parameters, the user-specific data collected or inferred, the opt-out and profile options available, and the quantities the system is designed to optimize. Providers must offer an option to switch to an input-transparent algorithm and an option to limit the type or category of recommendations, and must set an input-transparent algorithm as the default for covered users. A violation is treated as a violation of an FTC rule defining unfair or deceptive acts or practices, and the Federal Trade Commission enforces the section under the FTC Act. The bill does not require disclosure of trade secrets, confidential business information or privileged information, and it bars states from enforcing laws that cover the same requirements."
+ },
+ "relations": [
+  {
+   "relation": "cross_references",
+   "target_text": "Federal Trade Commission Act (15 U.S.C. 41 et seq.), including section 18(a)(1)(B) (15 U.S.C. 57a(a)(1)(B))",
+   "note": "Violations of Sec. 2 are treated as violations of an FTC rule under section 18(a)(1)(B). The FTC enforces Sec. 2 with the Act's powers and duties as if incorporated, and violators face the Act's penalties and privileges.",
+   "evidence": {
+    "provision": "Sec. 2(b)(1)",
+    "quote": "A violation of this section shall be treated as a violation of a rule defining an unfair or deceptive act or practice prescribed under section 18(a)(1)(B) of the Federal Trade Commission Act (15 U.S.C. 57a(a)(1)(B))"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "section 8.1(b) of title 47, Code of Federal Regulations",
+   "note": "The definition of online platform excludes broadband internet access providers as described in 47 CFR 8.1(b), or successor regulation.",
+   "evidence": {
+    "provision": "Sec. 2(d)(9)(B)(i)",
+    "quote": "a provider of broadband internet access service (as described in section 8.1(b) of title 47, Code of Federal Regulations, or successor regulation)"
+   }
+  },
+  {
+   "relation": "preempts",
+   "target_text": "State and political subdivision laws covering the requirements of subsection (a)",
+   "note": "Preemption applies only to state or local provisions that cover the requirements of Sec. 2(a). The text does not name any specific state law.",
+   "evidence": {
+    "provision": "Sec. 2(e)",
+    "quote": "No State or political subdivision of a State may prescribe, maintain, or enforce any law, rule, regulation, requirement, standard, or other provision having the force and effect of law"
+   }
+  }
+ ],
+ "notes": "Introduced bill text, status pending; no enactment or amendment history in the document. Relations to the FTC Act and 47 CFR 8.1(b) are cross-references, with no registry IDs. Section_status.relations is filled only because the schema requires it; relations are listed above. Possible drafting issues for a reader: 'covered user' is defined as a minor who registers an account (Sec. 2(d)(5)), while 'covered online platform' is not limited to minors; Sec. 2(a)(1)(C) says 'in their use of the platform' without clear referent; 'material change' in Sec. 2(a)(1)(B) is undefined; the 1-year start date runs from enactment (relative date, not computed).",
+ "events": [
+  {
+   "event": "application",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "Beginning on the date that is 1 year after the date of the enactment of this Act, the provider of a covered online platform shall do the following",
+   "anchor": "date of the enactment of this Act",
+   "applies_to": "Provider of a covered online platform: notices to covered users under Sec. 2(a)(1) and an input-transparent algorithm as the default under Sec. 2(a)(2)",
+   "offset_value": 1,
+   "offset_unit": "years",
+   "anchor_event": "signed",
+   "evidence": {
+    "provision": "Sec. 2(a)",
+    "quote": "Beginning on the date that is 1 year after the date of the enactment of this Act, the provider of a covered online platform shall do the following:"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "age",
+   "variable_text": "minor means an individual under the age of 18",
+   "operator": "<",
+   "value": 18,
+   "value_text": "an individual under the age of 18",
+   "unit": "years",
+   "measurement": "Age of the individual; the text does not specify how age is determined or verified",
+   "level": "person",
+   "trigger": "scope_definition",
+   "consequence": "Defines 'minor'; a minor who registers an account or creates a profile on a covered online platform is a covered user, to whom the duties in Sec. 2(a) are owed",
+   "conditions": "Also requires registering an account or creating a profile on the covered platform (Sec. 2(d)(5)) and the platform being a covered online platform (Sec. 2(d)(4))",
+   "evidence": {
+    "provision": "Sec. 2(d)(8)",
+    "quote": "The term “minor” means an individual under the age of 18."
+   }
+  }
+ ],
+ "section_status": {}
+}

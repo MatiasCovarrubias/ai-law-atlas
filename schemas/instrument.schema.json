@@ -1,0 +1,324 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "Instrument",
+ "type": "object",
+ "description": "One canonical legal instrument (or a bill that never passed). Metadata only; no text.",
+ "required": [
+  "instrument_id",
+  "instrument_type",
+  "iso",
+  "jurisdiction",
+  "legislative_stage",
+  "level",
+  "priority_region",
+  "status",
+  "title"
+ ],
+ "properties": {
+  "instrument_id": {
+   "type": "string",
+   "description": "Stable slug, ISO-prefixed: eu-ai-act-2024, us-ca-sb53-2025"
+  },
+  "title": {
+   "type": "string"
+  },
+  "short_title": {
+   "type": "string"
+  },
+  "jurisdiction": {
+   "type": "string"
+  },
+  "iso": {
+   "type": "string",
+   "description": "ISO-3166 alpha-2 (GB for the UK), ISO-3166-2 for subnational units (US-CA, CN-GD), EU, or INT for multinational bodies"
+  },
+  "level": {
+   "enum": [
+    "supranational",
+    "national",
+    "subnational",
+    "municipal"
+   ]
+  },
+  "priority_region": {
+   "enum": [
+    "P1-US",
+    "P1-Europe",
+    "P1-LATAM",
+    "P1-China",
+    "P2",
+    "P3"
+   ]
+  },
+  "instrument_type": {
+   "enum": [
+    "statute",
+    "regulation",
+    "implementing_act",
+    "delegated_act",
+    "executive_order",
+    "administrative_rule",
+    "decision",
+    "ordinance",
+    "code_of_practice",
+    "guidance",
+    "strategy",
+    "bill",
+    "treaty",
+    "other"
+   ]
+  },
+  "status": {
+   "enum": [
+    "adopted",
+    "in_force",
+    "partially_in_force",
+    "adopted_not_yet_in_force",
+    "suspended",
+    "repealed",
+    "struck_down",
+    "pending",
+    "vetoed",
+    "withdrawn",
+    "lapsed",
+    "failed"
+   ],
+   "description": "Lifecycle status. 'adopted' = adopted, but current legal force (in force, future date, repealed) not yet checked"
+  },
+  "dates": {
+   "type": "object",
+   "properties": {
+    "proposed": {
+     "type": "string",
+     "description": "YYYY[-MM[-DD]]"
+    },
+    "adopted": {
+     "type": "string",
+     "description": "YYYY[-MM[-DD]]"
+    },
+    "published": {
+     "type": "string",
+     "description": "YYYY[-MM[-DD]]"
+    },
+    "entry_into_force": {
+     "type": "string",
+     "description": "YYYY[-MM[-DD]]"
+    },
+    "first_application": {
+     "type": "string",
+     "description": "YYYY[-MM[-DD]]"
+    },
+    "repealed": {
+     "type": "string",
+     "description": "YYYY[-MM[-DD]]"
+    },
+    "last_action": {
+     "type": "string",
+     "description": "YYYY[-MM[-DD]]; date of the latest status event reported by the source (e.g., death of a bill)"
+    }
+   }
+  },
+  "topics": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   },
+   "description": "Deprecated scout topics (manifest_v0); use domains"
+  },
+  "keys": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   },
+   "description": "Canonical identifiers (tools/keys.py): EU:REG:2024:1689, US:EO:14110, US-CA:BILL:2025:SB53"
+  },
+  "language": {
+   "type": "string"
+  },
+  "urls": {
+   "type": "object",
+   "properties": {
+    "official": {
+     "type": "string"
+    },
+    "fulltext": {
+     "type": "string"
+    },
+    "english": {
+     "type": "string"
+    }
+   }
+  },
+  "text_connector": {
+   "type": "string",
+   "description": "Connector that fetches the canonical text, e.g. eurlex, legislation_uk, federal_register, agora, generic"
+  },
+  "family_ids": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   }
+  },
+  "provenance": {
+   "type": "object",
+   "properties": {
+    "added_by": {
+     "type": "string"
+    },
+    "added_on": {
+     "type": "string"
+    },
+    "sources": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     }
+    },
+    "verified": {
+     "type": "boolean",
+     "description": "true if the official URL was opened and matched the instrument"
+    },
+    "notes": {
+     "type": "string"
+    },
+    "stage_basis": {
+     "enum": [
+      "status",
+      "agora_status",
+      "agora_status+title",
+      "override",
+      "default"
+     ],
+     "description": "How legislative_stage was set: from a checked status, from AGORA's Enacted/Proposed/Defunct (bills may be further along than 'introduced'), AGORA status plus title (e.g., 'Draft for Comment'), a manual override, or a default awaiting review"
+    },
+    "type_basis": {
+     "enum": [
+      "scout",
+      "agora_title_rules",
+      "override"
+     ]
+    },
+    "domains_basis": {
+     "enum": [
+      "scout_topics",
+      "title_keywords",
+      "override"
+     ]
+    }
+   }
+  },
+  "legislative_stage": {
+   "enum": [
+    "adopted",
+    "final_passage",
+    "advanced",
+    "introduced",
+    "dead"
+   ],
+   "description": "Furthest stage reached (PLAN.md section 4)"
+  },
+  "furthest_stage_before_death": {
+   "enum": [
+    "final_passage",
+    "advanced",
+    "introduced"
+   ],
+   "description": "For dead proposals"
+  },
+  "proposal": {
+   "type": "object",
+   "properties": {
+    "procedure": {
+     "type": "string"
+    },
+    "chamber_of_origin": {
+     "type": "string"
+    },
+    "government_bill": {
+     "type": "boolean"
+    },
+    "sponsors": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     }
+    },
+    "sponsor_parties": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     }
+    },
+    "bipartisan": {
+     "type": "boolean"
+    },
+    "next_step": {
+     "type": "string"
+    },
+    "veto_reason": {
+     "type": "string"
+    },
+    "companions": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     }
+    },
+    "text_versions": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "properties": {
+       "version": {
+        "type": "string"
+       },
+       "date": {
+        "type": "string"
+       },
+       "url": {
+        "type": "string"
+       }
+      }
+     }
+    }
+   }
+  },
+  "domains": {
+   "type": "array",
+   "items": {
+    "enum": [
+     "ai_general",
+     "ai_sectoral",
+     "generative_ai",
+     "synthetic_media_deepfakes",
+     "algorithmic_decision_systems",
+     "biometrics",
+     "data_protection",
+     "data_transfer_localization",
+     "data_access_sharing",
+     "platforms_competition",
+     "online_safety_content",
+     "minors_child_safety",
+     "elections_political_ads",
+     "cybersecurity",
+     "ip_training_data",
+     "chips_export_controls",
+     "investment_screening",
+     "compute_data_centers",
+     "energy_grid_water",
+     "employment_labor",
+     "consumer_protection",
+     "public_sector_ai"
+    ]
+   },
+   "description": "Domains from schemas/vocab.json; how they were assigned is in provenance.domains_basis"
+  },
+  "text_access": {
+   "enum": [
+    "blocked",
+    "fallback"
+   ],
+   "description": "From registry/access_issues.jsonl: blocked = open issue in the human queue; fallback = text reached only via a fallback (e.g., Wayback). Absent = no recorded problem"
+  }
+ }
+}

@@ -1,0 +1,240 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "us-il-hb3506-2025",
+ "tier": "B",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "light, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-interim-20261014"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "AGORA plaintext (ETO, CC BY-NC 4.0), local cache",
+  "url": "https://ilga.gov/legislation/fulltext.asp?DocName=&SessionId=114&GA=104&DocTypeId=HB&DocNum=3506&GAID=18&LegID=162191&SpecSess=&Session=",
+  "retrieved": "2025-02-19",
+  "version": "1.33.0 (2026-09-16)",
+  "language": "en",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "ai_general",
+   "employment_labor"
+  ],
+  "primary_domain": "ai_general",
+  "mechanisms": [
+   "mandate_obligation",
+   "disclosure_transparency",
+   "liability_rule"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "ai_developer"
+  ],
+  "affected_roles": [
+   "workers"
+  ],
+  "decision_margins": [
+   "firm:compliance_process",
+   "firm:product_design_release"
+  ],
+  "territorial_scope": {
+   "types": [
+    "subnational"
+   ],
+   "description": "Illinois state statute; the Attorney General enforces it against developers, and the text sets no express geographic limit on developers' activities.",
+   "evidence": {
+    "provision": "Section 35(a)",
+    "quote": "The Attorney General may bring a civil action against a developer that violates Sections 15 or 25."
+   }
+  },
+  "agora_harms": [
+   "Harm to health/safety",
+   "Harm to property"
+  ],
+  "agora_incentives": [
+   "Civil liability",
+   "Fines"
+  ],
+  "agora_risk_factors": [
+   "Safety",
+   "Security",
+   "Security: Cybersecurity",
+   "Transparency"
+  ],
+  "agora_strategies": [
+   "Disclosure",
+   "Disclosure: About evaluation",
+   "Disclosure: About incidents",
+   "Evaluation",
+   "Evaluation: External auditing"
+  ]
+ },
+ "summary": {
+  "short": "Introduced Illinois bill (Artificial Intelligence Safety and Security Protocol Act) requiring developers of foundation models trained with compute costing at least $100,000,000 to publish a safety and security protocol, publish risk assessment reports every 90 days and undergo annual third-party audits; civil penalties up to $1,000,000.",
+  "long": "Introduced bill in the 104th Illinois General Assembly (HB3506) that would create the Artificial Intelligence Safety and Security Protocol Act. It applies to a 'developer', defined as a person that has trained at least one foundation model with compute costing at least $100,000,000 at prevailing cloud computing prices. Developers would have to produce, implement, follow and conspicuously publish a safety and security protocol covering critical risks, including chemical, biological, radiological or nuclear weapons, cyber-attacks and evasion of control by the model; material modifications must be published within 30 days. No less than every 90 days, developers must publish a risk assessment report, and must retain specific test records for at least 5 years. Developers may redact documents for trade secret, public safety or national security reasons, must keep unredacted versions for 5 years and allow Attorney General inspection. At least once every calendar year, a developer must retain a reputable third-party auditor and publish the audit report within 90 days after completion. Whistleblower Act protections apply, and developers must provide an anonymous internal disclosure process. The Attorney General may bring civil actions for violations of Sections 15 or 25, with civil penalties up to $1,000,000, and may seek injunctive relief. The text states no effective date."
+ },
+ "relations": [
+  {
+   "relation": "cross_references",
+   "target_text": "Whistleblower Act (Illinois; cited by name only, no citation given)",
+   "note": "Section 30(a) applies the Whistleblower Act to this Act, except that its criminal penalties are not assessed for disclosures to the Attorney General under this Act. The target is not identified by citation and is not in the registry.",
+   "evidence": {
+    "provision": "Section 30(a)",
+    "quote": "The provisions of the Whistleblower Act shall apply to this Act"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Section 1.31 of the Statute on Statutes",
+   "note": "Severability clause refers to Section 1.31 of the Statute on Statutes for the severability of this Act's provisions. The target is not in the registry.",
+   "evidence": {
+    "provision": "Section 97",
+    "quote": "The provisions of this Act are severable under Section 1.31 of the Statute on Statutes."
+   }
+  }
+ ],
+ "notes": "Bill as introduced; no effective date is stated, although Section 15(a) refers to 'the effective date'. The Employee definition uses 'covered models' and 'covered model derivatives', which are not defined; the rest of the text uses 'foundation model'. The Employee definition refers to 'critical harm' while Sections 15, 30 and 35 use 'critical risk'. Section 25(a)(3) refers to possible violations of Section 20, but Section 35(a) provides civil penalties only for violations of Sections 15 or 25. Section 30(a) bars criminal penalties under the Whistleblower Act for certain disclosures, but that Act is not identified by citation. Section 5 and Section 10 contain no operative obligations.",
+ "events": [
+  {
+   "event": "introduced",
+   "date": null,
+   "date_type": "not_stated",
+   "date_text": "No introduction date is stated; the cover reads 'Introduced , by Rep. Daniel Didech'.",
+   "applies_to": "",
+   "evidence": {
+    "provision": "Front matter (bill cover)",
+    "quote": "Introduced , by Rep. Daniel Didech"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "no later than 30 days after the effective date of those modifications",
+   "anchor": "effective date of the developer's material modification to the safety and security protocol",
+   "applies_to": "Publication of material modifications to the safety and security protocol",
+   "offset_value": 30,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Section 15(a)",
+    "quote": "the developer shall conspicuously publish those modifications no later than 30 days after the effective date of those modifications."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "No less than every 90 days",
+   "applies_to": "Production and publication of risk assessment report by a developer",
+   "evidence": {
+    "provision": "Section 15(b)",
+    "quote": "No less than every 90 days, a developer shall produce and conspicuously publish a risk assessment report."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "At least once every calendar year",
+   "applies_to": "Retention of a third-party auditor to produce an compliance report",
+   "evidence": {
+    "provision": "Section 25(a)",
+    "quote": "At least once every calendar year, a developer shall retain a reputable third-party auditor to produce a report assessing the following:"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "No later than 90 days after the completion of the third-party auditor's report",
+   "anchor": "completion of the third-party auditor's report required under subsection (a)",
+   "applies_to": "Publication of the third-party auditor's report",
+   "offset_value": 90,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Section 25(c)",
+    "quote": "No later than 90 days after the completion of the third-party auditor's report required under subsection (a), the developer shall conspicuously publish the report."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "a monthly update to the person who made the disclosure",
+   "applies_to": "Developer's monthly update to an employee who made an internal disclosure",
+   "evidence": {
+    "provision": "Section 30(b)",
+    "quote": "including a monthly update to the person who made the disclosure regarding the status"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "no less frequently than once every fiscal quarter",
+   "applies_to": "Sharing of disclosures and responses with officers and directors without conflicts of interest",
+   "evidence": {
+    "provision": "Section 30(c)",
+    "quote": "Each disclosure and response shall be shared with the officers and directors of the developer who do not have a conflict of interest no less frequently than once every fiscal quarter."
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "other",
+   "variable_text": "persons who suffer death or serious injury from a critical risk",
+   "operator": ">",
+   "value": 100,
+   "value_text": "more than 100 people",
+   "unit": "persons",
+   "measurement": "Not specified in the text. Applies to a foreseeable and non-trivial risk that a developer's development, storage or deployment of a foundation model will result in the harm.",
+   "level": "model",
+   "trigger": "scope_definition",
+   "consequence": "Defines 'critical risk', on which the safety and security protocol, risk assessment report, audit and related duties depend.",
+   "conditions": "Harm must fall within one of four listed routes: CBRN weapon creation and release, cyber-attack, qualifying criminal conduct with limited human intervention, or evading control of the developer or user.",
+   "evidence": {
+    "provision": "Section 10, definition of 'Critical risk'",
+    "quote": "the death of, or serious injury to, more than 100 people"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "damage to rights in money or property from a critical risk",
+   "operator": ">",
+   "value": 1000000000,
+   "value_text": "more than $1,000,000,000 in damage to rights in money or property",
+   "unit": "dollars",
+   "currency": "$",
+   "measurement": "Not specified in the text.",
+   "level": "model",
+   "trigger": "scope_definition",
+   "consequence": "Defines 'critical risk' as an alternative to the 100-person harm threshold, on which the Act's duties depend.",
+   "conditions": "Same as the 100-person harm threshold: a foreseeable and non-trivial risk through one of the four listed routes.",
+   "evidence": {
+    "provision": "Section 10, definition of 'Critical risk'",
+    "quote": "more than $1,000,000,000"
+   }
+  },
+  {
+   "variable": "compute_training",
+   "variable_text": "cost of computational power used to train a foundation model, measured at prevailing cloud computing prices",
+   "operator": ">=",
+   "value": 100000000,
+   "value_text": "costs at least $100,000,000 when measured using prevailing market prices of cloud computing",
+   "unit": "dollars",
+   "currency": "$",
+   "measurement": "Cost of computational power measured using prevailing market prices of cloud computing. The text states no time window.",
+   "level": "model",
+   "trigger": "scope_definition",
+   "consequence": "Defines 'developer', the addressee of the Act's duties, as a person that has trained at least one foundation model at or above this cost.",
+   "conditions": "The person must have trained at least one foundation model with this quantity of computational power.",
+   "evidence": {
+    "provision": "Section 10, definition of 'Developer'",
+    "quote": "costs at least $100,000,000 when measured using prevailing market prices of cloud computing"
+   }
+  }
+ ],
+ "section_status": {}
+}

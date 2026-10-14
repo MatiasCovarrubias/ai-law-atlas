@@ -1,0 +1,595 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "it-agcom-96-25-cons-age-verification",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (connectors/fetch_texts.py)",
+  "url": "https://www.agcom.it/sites/default/files/media/allegato/2025/Allegato%20A%20-%20delibera%2096-25-CONS.pdf",
+  "retrieved": "2026-10-13",
+  "version": "as fetched",
+  "language": "it",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "online_safety_content",
+   "minors_child_safety",
+   "data_protection",
+   "biometrics",
+   "cybersecurity",
+   "ai_sectoral"
+  ],
+  "primary_domain": "online_safety_content",
+  "mechanisms": [
+   "mandate_obligation",
+   "prohibition_ban",
+   "standard_setting",
+   "disclosure_transparency"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "platform_operator",
+   "regulator"
+  ],
+  "affected_roles": [
+   "minors",
+   "consumers_users",
+   "general_public"
+  ],
+  "decision_margins": [
+   "household:access",
+   "household:data_privacy",
+   "firm:product_design_release",
+   "firm:compliance_process"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national",
+    "extraterritorial",
+    "targeted"
+   ],
+   "description": "Applies to listed operators in Italy and, by its terms, to listed operators established in other Member States, with the list compiled by the Authority.",
+   "evidence": {
+    "provision": "Art. 4(2)",
+    "quote": "a prescindere dallo Stato membro di stabilimento"
+   }
+  },
+  "agora_harms": [
+   "Detrimental content",
+   "Discrimination"
+  ],
+  "agora_risk_factors": [
+   "Bias",
+   "Privacy",
+   "Reliability",
+   "Reliability: Robustness",
+   "Security: Cybersecurity"
+  ],
+  "agora_strategies": [
+   "Performance requirements",
+   "Evaluation: Post-market monitoring",
+   "Evaluation: Impact assessment",
+   "Input controls: Data use",
+   "Licensing, registration, and certification"
+  ]
+ },
+ "summary": {
+  "short": "AGCOM Resolution 96/25/CONS sets technical and process requirements for age verification that websites and video-sharing platforms distributing pornographic content in Italy must adopt. Access must be withheld until age is verified, using data-minimising third-party proofs, and it covers Italian and listed foreign providers.",
+  "long": "AGCOM Resolution 96/25/CONS, adopted under Art. 13-bis of Decree-Law 123/2023, sets technical and process requirements for age assurance that operators of websites and video-sharing platforms distributing pornographic content in Italy must adopt. It applies to listed operators, whether established in Italy or in another Member State. The requirements, which are technology-neutral, cover proportionality, data protection (no profiling, no biometric identification, no identity data collected by the site), independent third-party age-proof providers under a double-anonymity model, security and anti-circumvention, performance and accuracy (self-declaration is not considered effective), re-verification for each access session, accessibility, non-discrimination in training data, user information and complaint handling. Operators must have compliant systems within six months of publication; the provisions for foreign-established operators apply three months after the list is published. The Authority will monitor systems in real operation, cooperate with other Member States, and may revise the resolution in line with European Commission guidelines under Art. 28 of Regulation 2022/2065. The text notes that the SPID public identity system, as analysed, does not fully meet the double-anonymity requirement. Penalties are not set out in this text."
+ },
+ "relations": [
+  {
+   "relation": "legal_basis",
+   "target_text": "Decreto-legge 5 settembre 2023, n. 123, art. 13-bis, as converted by Legge 13 novembre 2023, n. 159",
+   "note": "The measure is adopted under art. 13-bis, comma 3 of the Decreto; art. 4(1) also cites art. 13-bis.",
+   "evidence": {
+    "provision": "Art. 1(1)",
+    "quote": "adottato in attuazione dell'art. 13-bis, comma 3, del Decreto"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) 2022/2065 (Digital Services Act), incl. art. 28 guidelines and very large online platforms",
+   "note": "Refers to Commission guidelines under DSA art. 28, which the measure is to conform to and which trigger a revision under art. 4(3); also refers to very large online platforms as defined by the DSA in the EUDI wallet section.",
+   "evidence": {
+    "provision": "Art. 4(3)",
+    "quote": "A decorrere dalla data di entrata in vigore degli orientamenti adottati ai sensi dell’articolo 28 del Regolamento (UE) 2022/2065"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive 2000/31/EC (e-commerce), art. 3(4) and (5)",
+   "note": "Extends the scope to providers established in another Member State case by case, under the procedure of art. 3(4) and (5) of the Directive.",
+   "evidence": {
+    "provision": "Art. 1(3)",
+    "quote": "Qualora sussistano le condizioni di cui al paragrafo 4 dell’articolo 3 della Direttiva"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) 2016/679 (GDPR), incl. arts. 5, 24 and 25",
+   "note": "Data protection requirements for age assurance systems; the text cites GDPR arts. 5(2), 24 and 25. The first citation is garbled in the text as 20761679.",
+   "evidence": {
+    "provision": "Art. 3(2) ii",
+    "quote": "Regolamento (UE) 2016/679 del Parlamento europeo e del Consiglio, del 27 aprile 2016 - GDPR"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "AGCOM delibera n. 9/23/CONS (parental control and content categories)",
+   "note": "Parental control logic and content categories from delibera 9/23/CONS are referenced as context and as an alternative approach.",
+   "evidence": {
+    "provision": "Art. 1(4)",
+    "quote": "quali ad esempio le categorie previste dalla delibera 9/23/CONS"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation amending Regulation (EU) No 910/2014 (European digital identity framework), art. 12-ter(3), as cited (proposal)",
+   "note": "Refers to art. 12-ter(3) of the EU digital identity regulation under negotiation, on acceptance of EU digital wallets by very large online platforms requiring user authentication.",
+   "evidence": {
+    "provision": "Age assurance systems based on applications",
+    "quote": "che modifica il Regolamento (UE) n. 910/2014 per quanto riguarda l'istituzione di un quadro"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Cyber Resilience Act (proposal, CRA)",
+   "note": "Cited as a proposal for cybersecurity measures that age assurance systems must take into account.",
+   "evidence": {
+    "provision": "Art. 3(iv) Security",
+    "quote": "Cyber Resilience Act - CRA"
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "AGCOM (the Authority issuing this measure, as named in registry metadata; the text refers only to 'l'Autorità')",
+   "role": "designated",
+   "function": "Adopts the technical and process requirements; compiles and updates the list of addressee providers and communicates it to the Commission; identifies providers established in other Member States case by case under art. 3(4)-(5) of Directive 2000/31/EC; monitors compliance and cooperates with other Member States through IMI.",
+   "evidence": {
+    "provision": "Art. 1(1)",
+    "quote": "Detti soggetti sono individuati in una lista compilata e aggiornata dall’Autorità"
+   }
+  },
+  {
+   "name": "Agenzia per l'Italia Digitale (AGID)",
+   "role": "listed",
+   "function": "Supervises the digital identity managers (Gestori dell'identità digitale) that the text treats as third parties in public-system age verification.",
+   "evidence": {
+    "provision": "Art. 3(2) (public identity systems) and Art. 3(iii)",
+    "quote": "sottoposti a vigilanza da parte dell’Agenzia per l’Italia Digitale (AGID)"
+   }
+  },
+  {
+   "name": "Garante per la protezione dei dati personali",
+   "role": "listed",
+   "function": "Issued an opinion (parere) that the Authority considered in setting the requirements, including on the use of digital IDs provided by public bodies.",
+   "evidence": {
+    "provision": "Art. 3(2)",
+    "quote": "considerato il parere del Garante per la protezione dei dati personali"
+   }
+  }
+ ],
+ "notes": "Annex B (section I.8, cited in Art. 3) is referenced but is not part of this text, so the SPID assessment is not verified here. Art. 3(2) i cites the GDPR as 20761679, an apparent OCR error for 2016/679. Art. 1(4) describes the methods as highly recommended for other subjects, while the introduction and Art. 4(1) make them obligatory for the listed providers. Art. 4(1) sets a six-month compliance period from publication and Art. 4(2) a three-month period for foreign-established providers counted from list publication. Operational entities are the categories of providers, not named firms, so the entities list contains only public bodies. The name AGCOM is taken from the registry metadata; the document says only 'l'Autorità'.",
+ "events": [
+  {
+   "event": "adopted",
+   "date": null,
+   "date_type": "not_stated",
+   "date_text": "Allegato A alla delibera n. 96/25/CONS (the document gives no adoption date)",
+   "applies_to": "",
+   "evidence": {
+    "provision": "Allegato A",
+    "quote": "Allegato A alla delibera n. 96/25/CONS"
+   }
+  },
+  {
+   "event": "published",
+   "date": null,
+   "date_type": "not_stated",
+   "date_text": "date of publication of the provvedimento; the document does not state the date",
+   "applies_to": "",
+   "evidence": {
+    "provision": "Art. 4(1)",
+    "quote": "dalla data di pubblicazione del presente provvedimento"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "entro sei mesi dalla data di pubblicazione del presente provvedimento",
+   "anchor": "publication of the present provvedimento",
+   "applies_to": "gestori di siti web e piattaforme di condivisione di video che diffondono in Italia immagini e video a carattere pornografico: dotarsi di efficaci sistemi di verifica della maggiore età conformi alle prescrizioni",
+   "offset_value": 6,
+   "offset_unit": "months",
+   "anchor_event": "published",
+   "evidence": {
+    "provision": "Art. 4(1)",
+    "quote": "entro sei mesi dalla data di pubblicazione del presente provvedimento"
+   }
+  },
+  {
+   "event": "application",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "tre mesi dopo la pubblicazione della lista di cui all’articolo 1 del presente provvedimento",
+   "depends_on": "publication of the list of providers compiled and updated by the Authority under Art. 1(1)",
+   "applies_to": "gestori di siti web e piattaforme di condivisione di video stabiliti in altri Stati membri, regardless of Member State of establishment, subject to the conditions of Art. 1(1) and 1(3)",
+   "offset_value": 3,
+   "offset_unit": "months",
+   "evidence": {
+    "provision": "Art. 4(2)",
+    "quote": "tre mesi dopo la pubblicazione della lista di cui all’articolo 1 del presente provvedimento"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "other",
+   "variable_text": "durata dell'inattività dell'utente dopo la quale la verifica dell'età non è più valida",
+   "operator": ">=",
+   "value": 45,
+   "value_text": "un periodo di 45 minuti di effettiva inattività",
+   "unit": "minutes",
+   "measurement": "continuous user inactivity; the verification validity ends after this period (per access session)",
+   "level": "person",
+   "trigger": "obligation",
+   "consequence": "The age verification ceases to be valid, so a new verification is required before further access to pornographic content.",
+   "conditions": "Validity also ceases when the user leaves the service, when the session ends, when the user leaves the browser, or when the operating system enters stand-by. The rule addresses shared devices used by an adult and a minor.",
+   "evidence": {
+    "provision": "Art. 3(2), v. Precisione ed efficacia",
+    "quote": "dopo un periodo di 45 minuti di effettiva inattività"
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "Garanzia dell'età (Age assurance)",
+   "defined_in": "Art. 2 (this instrument)",
+   "evidence": {
+    "provision": "Art. 2, Definizioni",
+    "quote": "utilizzati per determinare l'età o la fascia di età di un individuo a vari livelli di confidenza o certezza."
+   }
+  },
+  {
+   "term": "Verifica dell'età (Age verification)",
+   "defined_in": "Art. 2 (this instrument)",
+   "evidence": {
+    "provision": "Art. 2, Definizioni",
+    "quote": "fa riferimento a quei sistemi che si basano su identificatori rigidi (fisici) e/o fonti di identificazione verificate"
+   }
+  },
+  {
+   "term": "Stima dell'età (Age estimation)",
+   "defined_in": "Art. 2 (this instrument)",
+   "evidence": {
+    "provision": "Art. 2, Definizioni",
+    "quote": "si riferisce ai metodi che stabiliscono che con una certa probabilità un utente abbia una certa età"
+   }
+  },
+  {
+   "term": "Autodichiarazione (Self-declaration)",
+   "defined_in": "Art. 2 (this instrument)",
+   "evidence": {
+    "provision": "Art. 2, Definizioni",
+    "quote": "si riferisce all’insieme di processi in cui un utente inserisce una data o seleziona una casella di un form"
+   }
+  },
+  {
+   "term": "Prova dell'età (age proof)",
+   "defined_in": "Art. 2 (this instrument)",
+   "evidence": {
+    "provision": "Art. 2, Definizioni",
+    "quote": "oggetto di tipo fisico (es. scratch card) o digitale"
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "government_duty",
+   "addressee": "regulator",
+   "modality": "shall",
+   "summary": "AGCOM compiles and updates a list of the operators subject to the measure and communicates it to the European Commission.",
+   "evidence": {
+    "provision": "Art. 1(1)",
+    "quote": "Detti soggetti sono individuati in una lista compilata e aggiornata dall’Autorità, nonché comunicata dalla stessa alla Commissione europea."
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "regulator",
+   "modality": "shall",
+   "summary": "AGCOM may extend the scope to operators established in other Member States case by case, under Article 3(4) and (5) of Directive 2000/31/EC.",
+   "conditional_on": "Conditions of Article 3(4) of Directive 2000/31/EC are met.",
+   "evidence": {
+    "provision": "Art. 1(3)",
+    "quote": "individuati caso per caso dall’Autorità in conformità alla normativa europea"
+   }
+  },
+  {
+   "type": "age_verification",
+   "addressee": "platform_operator",
+   "modality": "encouraged",
+   "summary": "AGCOM recommends that the methods of this measure be used also by other subjects beyond the list in Art. 1(1) and for other content harmful to minors.",
+   "evidence": {
+    "provision": "Art. 1(4)",
+    "quote": "siano altamente raccomandate"
+   }
+  },
+  {
+   "type": "age_verification",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "Age assurance systems used by the listed operators must meet the process and system requirements set out in Art. 3(2).",
+   "evidence": {
+    "provision": "Art. 3(2)",
+    "quote": "deve rispettare i requisiti e le specifiche di processo e di sistema di seguito descritti"
+   }
+  },
+  {
+   "type": "data_minimization",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "Operators must use a tool that is as non-invasive as possible to reach the verification aim, and must choose the tools themselves while respecting proportionality.",
+   "evidence": {
+    "provision": "Art. 3(2)(i)",
+    "quote": "devono utilizzare uno strumento per quanto possibile non invasivo"
+   }
+  },
+  {
+   "type": "testing_evaluation",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "Operators must demonstrate the effectiveness of the tool used under the principles and requirements set by the Authority, and its compliance with data protection rules.",
+   "evidence": {
+    "provision": "Art. 3(2)(i)",
+    "quote": "a dimostrare l'efficacia dello strumento utilizzato"
+   }
+  },
+  {
+   "type": "data_minimization",
+   "addressee": "platform_operator",
+   "also_addressees": [
+    "enterprise"
+   ],
+   "modality": "shall",
+   "summary": "Age assurance methods must comply with GDPR principles, in particular data minimisation and data protection by design and by default; third parties involved in the process are covered by the no-profiling and no-identity-collection duties in the same article.",
+   "evidence": {
+    "provision": "Art. 3(2)(ii)",
+    "quote": "rispettosi del principio di minimizzazione dei dati"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "Operators implementing age assurance must give users appropriate information on the processing of personal data and collect only the data necessary for the purpose.",
+   "evidence": {
+    "provision": "Art. 3(2)(ii)",
+    "quote": "fornendo opportuna informativa agli utenti"
+   }
+  },
+  {
+   "type": "data_minimization",
+   "addressee": "platform_operator",
+   "also_addressees": [
+    "enterprise"
+   ],
+   "modality": "shall_not",
+   "summary": "Operators and third parties involved in age assurance must not carry out any profiling of users, and the mechanisms must not allow identity, age, date of birth or other personal information to be collected; the personal data used for verification must not be processed.",
+   "evidence": {
+    "provision": "Art. 3(2)(ii)",
+    "quote": "non devono effettuare alcuna profilazione degli utenti"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "The age verification provider must be legally and technically independent of the adult content sites and video-sharing platforms, and those sites must have no access to the verification data.",
+   "evidence": {
+    "provision": "Art. 3(2)(iii)",
+    "quote": "deve essere giuridicamente e tecnicamente indipendente"
+   }
+  },
+  {
+   "type": "data_minimization",
+   "addressee": "enterprise",
+   "also_addressees": [
+    "platform_operator"
+   ],
+   "modality": "shall_not",
+   "summary": "Under the double anonymity model, the system must not allow the adult services to recognise a user who has already used it, to know the source of the age proof, or to recognise two proofs as coming from the same source; the proof providers must not know the service for which verification is performed.",
+   "conditional_on": "Double anonymity model used.",
+   "evidence": {
+    "provision": "Art. 3(2)(iii)",
+    "quote": "non deve consentire ai soggetti mirati interessati di riconoscere un utente"
+   }
+  },
+  {
+   "type": "age_verification",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "For systems not based on apps on the user terminal, the age proof must be issued in three separate phases: issuance after identification, delivery to the user only, and verification by the site or platform; the proof must contain only the information that the user is an adult.",
+   "conditional_on": "Systems not based on applications installed on the user terminal.",
+   "evidence": {
+    "provision": "Art. 3(2)(iii)",
+    "quote": "deve essere diviso in tre fasi distinte"
+   }
+  },
+  {
+   "type": "age_verification",
+   "addressee": "platform_operator",
+   "modality": "encouraged",
+   "summary": "The Authority considers it advisable that the operators do not carry out age verification themselves and rely on independently verified third-party solutions.",
+   "evidence": {
+    "provision": "Art. 3(2)(iii)",
+    "quote": "non effettuino personalmente operazioni di verifica dell'età"
+   }
+  },
+  {
+   "type": "licensing_certification",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Providers of age proofs that are not already subject to legal identification obligations must undergo assessment by a third party, with certification by a dedicated Authority as stated in the text.",
+   "conditional_on": "Providers not already subject to specific legal identification obligations.",
+   "evidence": {
+    "provision": "Art. 3(2)(iii)",
+    "quote": "siano soggetti a una valutazione da parte di terzi"
+   }
+  },
+  {
+   "type": "age_verification",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "Very large online platforms under the DSA that require users to authenticate must also accept European digital identity wallets, at the user's voluntary request, for the minimum attributes needed, such as the age proof.",
+   "conditional_on": "Very large online platforms under the DSA; use only on voluntary user request.",
+   "evidence": {
+    "provision": "Art. 3(2)(iii)",
+    "quote": "dovranno accettare anche l'uso dei portafogli europei di identità digitale"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "The age assurance system must take account of cyberattacks, adopt sufficient cybersecurity measures to mitigate risks, and prevent circumvention attempts, including liveness detection.",
+   "evidence": {
+    "provision": "Art. 3(2)(iv)",
+    "quote": "deve prevedere misure di sicurezza informatica sufficienti a mitigare i rischi"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "platform_operator",
+   "modality": "shall_not",
+   "summary": "The operator subject to the law must not promote or refer to any mechanism for circumventing age assurance systems.",
+   "evidence": {
+    "provision": "Art. 3(2)(iv)",
+    "quote": "non deve promuovere o fare comunque riferimento a qualsiasi meccanismo di elusione dei sistemi di age assurance"
+   }
+  },
+  {
+   "type": "testing_evaluation",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "The verification mechanism must perform reliably in real operating conditions and over time, with continuous monitoring of accuracy and correction where needed; self-declaration is not an effective method; the system must be neutral or independent of the access device and operating system.",
+   "evidence": {
+    "provision": "Art. 3(2)(v)",
+    "quote": "Il meccanismo di verifica dell'età deve fornire prestazioni che non variano nel tempo"
+   }
+  },
+  {
+   "type": "age_verification",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "Operators must ensure that no user accesses pornographic content until age is verified, that verification is repeated at each access, and that verification validity ends when the user leaves the service, ends the session or after 45 minutes of effective inactivity.",
+   "evidence": {
+    "provision": "Art. 3(2)(v)",
+    "quote": "devono garantire che nessun utente acceda a contenuti pornografici finché non abbia dimostrato la maggiore età"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "The age assurance system must be easy to use and accessible to all users, including users with disabilities, and must not unduly prevent adults from accessing lawful content; account creation must not be required.",
+   "evidence": {
+    "provision": "Art. 3(2)(vi)",
+    "quote": "devono garantire che il sistema implementato sia facile da usare"
+   }
+  },
+  {
+   "type": "bias_mitigation",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "Where applicable, the verification mechanisms must be trained on diverse datasets to avoid discriminatory results for groups of users, including minors wrongly identified as adults and adults wrongly identified as minors.",
+   "conditional_on": "Where applicable.",
+   "evidence": {
+    "provision": "Art. 3(2)(vii)",
+    "quote": "siano stati addestrati su diversi dataset"
+   }
+  },
+  {
+   "type": "complaint_mechanism",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "The age assurance provider must provide at least one channel to receive and handle complaints about wrong age decisions promptly.",
+   "evidence": {
+    "provision": "Art. 3(2)(x)",
+    "quote": "deve prevedere almeno un canale per acquisire e gestire, tempestivamente, i reclami"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "regulator",
+   "modality": "shall",
+   "summary": "AGCOM will assess technical age verification solutions case by case once implemented and under real operating conditions.",
+   "evidence": {
+    "provision": "Art. 3(2)(xi)",
+    "quote": "valuterà caso per caso ed in concreto le soluzioni tecniche di verifica dell'età"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "regulator",
+   "modality": "shall",
+   "summary": "AGCOM cooperates closely with the European Commission and with the national digital services coordinators of other Member States, including through the IMI system, and provides mutual assistance.",
+   "evidence": {
+    "provision": "Art. 3(2)(xii)",
+    "quote": "coopera strettamente con la Commissione e con i Coordinatori nazionali dei servizi digitali designati negli altri Stati membri"
+   }
+  },
+  {
+   "type": "age_verification",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "Operators publishing adult content in Italy must have effective age verification systems complying with the measure within six months of its publication.",
+   "applies_from": "six months from the date of publication of this measure",
+   "evidence": {
+    "provision": "Art. 4(1)",
+    "quote": "si dotano di efficaci sistemi di verifica della maggiore età conformi alle prescrizioni indicate entro sei mesi dalla data di pubblicazione del presente provvedimento"
+   }
+  },
+  {
+   "type": "age_verification",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "The measure applies also to operators established in other Member States, regardless of their Member State of establishment, subject to the conditions of Art. 1(3).",
+   "applies_from": "three months after publication of the list referred to in Art. 1",
+   "conditional_on": "Publication of the list referred to in Art. 1.",
+   "evidence": {
+    "provision": "Art. 4(2)",
+    "quote": "le disposizioni del presente provvedimento si applicano anche con riferimento ai gestori di siti web"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "regulator",
+   "modality": "shall",
+   "summary": "Where necessary, AGCOM commits to amend the measure to align it with EU rules adopted later, concerning operators established in other Member States.",
+   "applies_from": "from the date of entry into force of the guidelines adopted under Article 28 of Regulation (EU) 2022/2065",
+   "conditional_on": "Entry into force of the guidelines under Art. 28 of Regulation (EU) 2022/2065.",
+   "evidence": {
+    "provision": "Art. 4(3)",
+    "quote": "si impegna a modificare ed adeguare il presente provvedimento"
+   }
+  }
+ ],
+ "section_status": {
+  "enforcement": {
+   "status": "not_found",
+   "note": "The fetched text contains no sanction, fine, penalty, blocking or suspension provisions. Art. 1(1) and Art. 4(1) refer to art. 13-bis of Decreto-legge 123/2023 for the legal basis, but the penalty provisions of that Decree are not in this document, so none are coded."
+  }
+ },
+ "enforcement": []
+}

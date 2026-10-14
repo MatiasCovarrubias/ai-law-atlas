@@ -1,0 +1,410 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "us-sc-12-36-2120-79",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (connectors/fetch_texts.py)",
+  "url": "https://www.scstatehouse.gov/code/t12c036.php",
+  "retrieved": "2026-10-13",
+  "version": "as fetched",
+  "language": "en",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "compute_data_centers",
+   "energy_grid_water"
+  ],
+  "primary_domain": "compute_data_centers",
+  "mechanisms": [
+   "tax_incentive",
+   "licensing_permit_certification",
+   "registration_notification"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "data_center_owner",
+   "data_center_operator",
+   "government_agency"
+  ],
+  "affected_roles": [
+   "utility_grid_operator"
+  ],
+  "decision_margins": [
+   "firm:investment_location",
+   "firm:input_use",
+   "firm:compliance_process"
+  ],
+  "territorial_scope": {
+   "types": [
+    "subnational"
+   ],
+   "description": "Applies to datacenters at a single location in South Carolina, under the state sales and use tax.",
+   "evidence": {
+    "provision": "Sec. 12-36-2120(79)(B)(5)",
+    "quote": "a new or existing facility at a single location in South Carolina"
+   }
+  },
+  "agora_incentives": [
+   "Subsidies"
+  ],
+  "agora_strategies": [
+   "Government support"
+  ]
+ },
+ "summary": {
+  "short": "Exempts from South Carolina sales and use tax the purchase of computer equipment used within a qualifying datacenter and the electricity used by it, for facilities certified by the Department of Commerce that meet investment and job thresholds. Applies to datacenters certified before January 1, 2032.",
+  "long": "Item (79) of Section 12-36-2120 exempts from the state sales and use tax (A)(1) original or replacement computers, computer equipment, and computer hardware and software purchases used within a datacenter, and (A)(2) electricity used by a datacenter and eligible business property located there; other electricity sales remain taxable. Subitem (B) defines a datacenter as a facility at a single location in South Carolina with concurrently maintainable power and cooling, a capital investment of at least fifty million dollars by a taxpayer over five years (or seventy-five million aggregate by one or more taxpayers), at least twenty-five full-time jobs at average cash compensation of 150% of per capita income (State or county, whichever is lower), and those jobs maintained for three consecutive years. Under subitems (C) and (D), the taxpayer notifies the Department of Revenue and the Department of Commerce, and may claim the exemption on eligible purchases once Commerce certifies the facility; limitation periods are suspended. Subitem (E) extends the exemption to later purchases and investments. Subitem (F) allows assessment of tax if requirements are not met and reduces the electricity exemption in proportion to qualifying jobs below twenty-five. Subitem (G) applies to datacenters certified before January 1, 2032, continues for ten years for those certified by December 31, 2031, and is then repealed."
+ },
+ "relations": [
+  {
+   "relation": "part_of",
+   "target_text": "South Carolina Sales and Use Tax Act (S.C. Code Title 12, Chapter 36)",
+   "note": "Item (79) is one item of Section 12-36-2120, which sits in the chapter. The registry ID for the chapter is not known.",
+   "evidence": {
+    "provision": "Chapter 36 heading",
+    "quote": "South Carolina Sales and Use Tax Act"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Section 12-54-85 (periods of limitation for assessment of taxes)",
+   "note": "Item (79) refers to the Section 12-54-85 limitation period for the claim period (D)(1) and for suspension of that period (D)(2). The text of Section 12-54-85 is not in the document.",
+   "evidence": {
+    "provision": "Sec. 12-36-2120(79)(D)(1)",
+    "quote": "at any time during the period provided in Section 12-54-85(F)"
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "Department of Commerce",
+   "role": "designated",
+   "function": "Certifies a datacenter facility under the policies and procedures it promulgates; certification is a step before the exemption can be claimed; also receives taxpayer notice of intent to claim the exemption.",
+   "evidence": {
+    "provision": "Sec. 12-36-2120(79)(B)(5)(v)",
+    "quote": "which is certified by the Department of Commerce pursuant to subitem (D)(1) under such policies and procedures as promulgated by the Department of Commerce"
+   }
+  },
+  {
+   "name": "Department of Revenue",
+   "role": "designated",
+   "function": "Receives the taxpayer's written notice of intent to claim the exemption and of its use; issues the exemption certificate; may assess tax due if the taxpayer fails the investment and job requirements.",
+   "evidence": {
+    "provision": "Sec. 12-36-2120(79)(C)(1)",
+    "quote": "shall notify the Department of Revenue and Department of Commerce, in writing, of its intention to claim the exemption"
+   }
+  }
+ ],
+ "notes": "Item (79) is annotated from the chapter-length text, so extent is partial (item 79 only). The text's history notes do not identify the act that added item (79). Item (79)(G) sunsets the item: it applies only to datacenters certified before 1 January 2032, with a further ten-year period for those certified by 31 December 2031, after which the subitem is repealed. The text defines 'computer equipment' separately in item (79)(B)(2) and item (65)(c), with different wording on cooling equipment. Section 12-54-85 is cross-referenced but not included in the document.",
+ "events": [
+  {
+   "event": "sunset",
+   "date": "2032-01-01",
+   "date_type": "absolute",
+   "date_text": "prior to January 1, 2032",
+   "applies_to": "datacenters certified by the Department of Commerce under subitem (D)(1)",
+   "evidence": {
+    "provision": "Sec. 12-36-2120(79)(G)",
+    "quote": "This subitem only applies to a datacenter that is certified by the Department of Commerce pursuant to subitem (D)(1) prior to January 1, 2032."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2031-12-31",
+   "date_type": "absolute",
+   "date_text": "certified by December 31, 2031",
+   "applies_to": "taxpayers seeking continued application of item (79) for an additional ten-year period",
+   "evidence": {
+    "provision": "Sec. 12-36-2120(79)(G)",
+    "quote": "However, this item shall continue to apply to a taxpayer that is certified by December 31, 2031, for an additional ten year period."
+   }
+  },
+  {
+   "event": "repealed",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "Upon the end of the ten year period, this subitem is repealed",
+   "anchor": "end of the ten-year period for a taxpayer certified under subitem (G)",
+   "depends_on": "certification of the taxpayer by the Department of Commerce under Sec. 12-36-2120(79)(G)",
+   "applies_to": "subitem (79) of Sec. 12-36-2120",
+   "evidence": {
+    "provision": "Sec. 12-36-2120(79)(G)",
+    "quote": "Upon the end of the ten year period, this subitem is repealed"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "Also, the five-year period begins upon notification.",
+   "anchor": "notification to the Department of Revenue and Department of Commerce",
+   "depends_on": "notification of intention to claim the exemption under Sec. 12-36-2120(79)(C)(1)",
+   "applies_to": "investment and job requirements of subitem (B)(5) for a datacenter exemption",
+   "evidence": {
+    "provision": "Sec. 12-36-2120(79)(C)(1)",
+    "quote": "Also, the five-year period begins upon notification."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "Once the taxpayer meets the requirements of subitem (B)(5), or at the end of the five-year period, the taxpayer shall notify the Department of Revenue, in writing",
+   "anchor": "meeting the requirements of subitem (B)(5) or the end of the five-year period",
+   "depends_on": "end of the five-year period under Sec. 12-36-2120(79)(C)(1), or earlier fulfilment of subitem (B)(5)",
+   "applies_to": "taxpayer notice to the Department of Revenue on whether it met subitem (B)(5)",
+   "evidence": {
+    "provision": "Sec. 12-36-2120(79)(C)(2)",
+    "quote": "or at the end of the five-year period, the taxpayer shall notify the Department of Revenue, in writing"
+   }
+  },
+  {
+   "event": "application",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "and upon certification by the Department of Commerce, the taxpayer may claim the exemption on eligible purchases",
+   "depends_on": "notification under subitem (C)(1) and certification by the Department of Commerce under subitem (D)(1)",
+   "applies_to": "eligible purchases of original or replacement computers, computer equipment, and software used within a datacenter, and electricity used by a datacenter and eligible business property",
+   "evidence": {
+    "provision": "Sec. 12-36-2120(79)(D)(1)",
+    "quote": "and upon certification by the Department of Commerce, the taxpayer may claim the exemption on eligible purchases"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "capital_investment",
+   "variable_text": "capital investment in real or personal property or both by a single taxpayer",
+   "operator": ">=",
+   "value": 50000000,
+   "value_text": "invests at least fifty million dollars in real or personal property or both over a five year period",
+   "unit": "dollars",
+   "currency": "USD",
+   "measurement": "taxpayer's investment at a single location over a five-year period, starting from notice to the Department of Revenue and Department of Commerce under (C)(1)",
+   "level": "facility",
+   "trigger": "scope_definition",
+   "consequence": "facility can be a datacenter for the exemption in item (79)(A) if this single-taxpayer investment test is met",
+   "conditions": "alternative to the seventy-five million dollar aggregate test in (B)(5)(ii)(b); also requires (B)(5)(i), (iii) and (iv)",
+   "evidence": {
+    "provision": "Sec. 12-36-2120(79)(B)(5)(ii)(a)",
+    "quote": "where a taxpayer invests at least fifty million dollars in real or personal property or both over a five year period"
+   }
+  },
+  {
+   "variable": "capital_investment",
+   "variable_text": "aggregate capital investment by one or more taxpayers at a facility",
+   "operator": ">=",
+   "value": 75000000,
+   "value_text": "invests a minimum aggregate capital investment of at least seventy-five million dollars in real or personal property or both over a five year period",
+   "unit": "dollars",
+   "currency": "USD",
+   "measurement": "aggregate investment at one facility by one or more taxpayers over a five-year period, starting from joint notice under (C)(1)",
+   "level": "facility",
+   "trigger": "scope_definition",
+   "consequence": "facility can be a datacenter for the exemption in item (79)(A) if this aggregate investment test is met",
+   "conditions": "alternative to the fifty million dollar single-taxpayer test in (B)(5)(ii)(a); also requires (B)(5)(i), (iii) and (iv)",
+   "evidence": {
+    "provision": "Sec. 12-36-2120(79)(B)(5)(ii)(b)",
+    "quote": "where one or more taxpayers invests a minimum aggregate capital investment of at least seventy-five million dollars"
+   }
+  },
+  {
+   "variable": "employees",
+   "variable_text": "full-time jobs created and maintained at the facility",
+   "operator": ">=",
+   "value": 25,
+   "value_text": "creates and maintains at least twenty-five full-time jobs at the facility",
+   "unit": "full-time jobs",
+   "measurement": "full-time jobs at the facility created and maintained; jobs must be maintained for three consecutive years under (B)(5)(iv)",
+   "level": "facility",
+   "trigger": "scope_definition",
+   "consequence": "required job count for a facility to be a datacenter under item (79)",
+   "conditions": "jointly with the average compensation test in (B)(5)(iii)",
+   "evidence": {
+    "provision": "Sec. 12-36-2120(79)(B)(5)(iii)",
+    "quote": "creates and maintains at least twenty-five full-time jobs at the facility"
+   }
+  },
+  {
+   "variable": "wage_level",
+   "variable_text": "average cash compensation level of the required jobs",
+   "operator": ">=",
+   "value": 150,
+   "value_text": "an average cash compensation level of one hundred fifty percent of the per capita income of the State or of the county in which the facility is located, whichever is lower",
+   "unit": "percent of per capita income (lower of State or county figure)",
+   "measurement": "average cash compensation of the required jobs, compared with the most recently published per capita income data available when the facility is certified by the Department of Commerce",
+   "level": "facility",
+   "trigger": "scope_definition",
+   "consequence": "facility must meet the compensation level to be a datacenter under item (79)",
+   "conditions": "jointly with the twenty-five full-time jobs test in (B)(5)(iii)",
+   "evidence": {
+    "provision": "Sec. 12-36-2120(79)(B)(5)(iii)",
+    "quote": "an average cash compensation level of one hundred fifty percent of the per capita income of the State or of the county in which the facility is located, whichever is lower"
+   }
+  },
+  {
+   "variable": "employees",
+   "variable_text": "qualifying full-time jobs used to scale the electricity exemption",
+   "operator": "=",
+   "value": 25,
+   "value_text": "calculated by dividing the number of qualifying jobs by twenty-five",
+   "unit": "full-time jobs",
+   "measurement": "number of qualifying full-time jobs at the facility that the taxpayer maintains with the required compensation level",
+   "level": "facility",
+   "trigger": "benefit",
+   "consequence": "electricity exemption applies only to the percentage of the sale price given by qualifying jobs divided by twenty-five",
+   "conditions": "applies only where the taxpayer met (B)(5)(iii) but later fails to maintain the required jobs and compensation level",
+   "evidence": {
+    "provision": "Sec. 12-36-2120(79)(F)(2)(ii)",
+    "quote": "the exemption only applies to a percentage of the sale price, calculated by dividing the number of qualifying jobs by twenty-five"
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "Computer",
+   "defined_in": "Sec. 12-36-2120(79)(B)(1)",
+   "evidence": {
+    "provision": "Sec. 12-36-2120(79)(B)(1)",
+    "quote": "means an electronic device that accepts information in digital or similar form and manipulates it for a result based on a sequence of instructions"
+   }
+  },
+  {
+   "term": "Computer equipment",
+   "defined_in": "Sec. 12-36-2120(79)(B)(2)",
+   "evidence": {
+    "provision": "Sec. 12-36-2120(79)(B)(2)",
+    "quote": "original or replacement servers, routers, switches, power units, network devices, hard drives, processors, memory modules, motherboards, racks"
+   }
+  },
+  {
+   "term": "Computer software",
+   "defined_in": "Sec. 12-36-2120(79)(B)(3)",
+   "evidence": {
+    "provision": "Sec. 12-36-2120(79)(B)(3)",
+    "quote": "a set of coded instructions designed to cause a computer or automatic data processing equipment to perform a task"
+   }
+  },
+  {
+   "term": "Concurrently maintainable",
+   "defined_in": "Sec. 12-36-2120(79)(B)(4)",
+   "evidence": {
+    "provision": "Sec. 12-36-2120(79)(B)(4)",
+    "quote": "means capable of having any capacity component or distribution element serviced or repaired on a planned basis without interrupting or impeding the performance of the computer equipment"
+   }
+  },
+  {
+   "term": "Datacenter",
+   "defined_in": "Sec. 12-36-2120(79)(B)(5)",
+   "evidence": {
+    "provision": "Sec. 12-36-2120(79)(B)(5)",
+    "quote": "a new or existing facility at a single location in South Carolina"
+   }
+  },
+  {
+   "term": "Eligible business property",
+   "defined_in": "Sec. 12-36-2120(79)(B)(6)",
+   "evidence": {
+    "provision": "Sec. 12-36-2120(79)(B)(6)",
+    "quote": "property used for the generation, transformation, transmission, distribution, or management of electricity, including exterior substations"
+   }
+  },
+  {
+   "term": "Multiple distribution paths",
+   "defined_in": "Sec. 12-36-2120(79)(B)(7)",
+   "evidence": {
+    "provision": "Sec. 12-36-2120(79)(B)(7)",
+    "quote": "means a series of distribution paths configured to ensure that failure on one distribution path does not interrupt or impede other distribution paths"
+   }
+  },
+  {
+   "term": "Redundant capacity components",
+   "defined_in": "Sec. 12-36-2120(79)(B)(8)",
+   "evidence": {
+    "provision": "Sec. 12-36-2120(79)(B)(8)",
+    "quote": "means components beyond those required to support the computer equipment"
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "reporting_to_authority",
+   "addressee": "data_center_operator",
+   "modality": "shall",
+   "summary": "A taxpayer claiming the datacenter exemption must notify the Department of Revenue and the Department of Commerce, in writing, of its intention to claim it; for a multi-taxpayer facility the facility also notifies.",
+   "conditional_on": "Taxpayer intends to claim the exemption under item (79)",
+   "evidence": {
+    "provision": "Sec. 12-36-2120(79)(C)(1)",
+    "quote": "shall notify the Department of Revenue and Department of Commerce, in writing, of its intention to claim the exemption."
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "data_center_operator",
+   "modality": "shall",
+   "summary": "After meeting the (B)(5) investment and job requirements, or at the end of the five-year period, the taxpayer notifies the Department of Revenue in writing whether it met those requirements and provides the proof the department determines necessary.",
+   "conditional_on": "Taxpayer meets the (B)(5) requirements or the five-year period ends",
+   "evidence": {
+    "provision": "Sec. 12-36-2120(79)(C)(2)",
+    "quote": "Once the taxpayer meets the requirements of subitem (B)(5), or at the end of the five-year period, the taxpayer shall notify the Department of Revenue, in writing, whether it has or has not met the requirements of subitem (B)(5)."
+   }
+  },
+  {
+   "type": "eligibility_condition",
+   "addressee": "data_center_operator",
+   "modality": "shall",
+   "summary": "A datacenter qualifies only if the taxpayer invests at least the stated minimum in a single location, creates and maintains at least twenty-five full-time jobs, and keeps those jobs for three consecutive years after certification; loss of the job requirement limits the exemption under (F)(2).",
+   "conditional_on": "Facility is certified by the Department of Commerce",
+   "evidence": {
+    "provision": "Sec. 12-36-2120(79)(B)(5)(iii)",
+    "quote": "where a taxpayer creates and maintains at least twenty-five full-time jobs at the facility"
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Department of Commerce certifies datacenters under policies and procedures it promulgates.",
+   "conditional_on": "Facility seeks certification as a datacenter under item (79)",
+   "evidence": {
+    "provision": "Sec. 12-36-2120(79)(B)(5)(v)",
+    "quote": "which is certified by the Department of Commerce pursuant to subitem (D)(1) under such policies and procedures as promulgated by the Department of Commerce."
+   }
+  }
+ ],
+ "enforcement": [
+  {
+   "sanction_type": "benefit_revocation_clawback",
+   "authority": "Department of Revenue",
+   "triggered_by": "Taxpayer receives the item (79) exemption for purchases but fails to meet the investment and job requirements of subitem (B)(5) at the end of the five-year period",
+   "max_penalty_text": "No maximum stated; the text says the department may assess the tax due on items purchased",
+   "penalty_formula": "Assessment of any state or local sales or use tax due on items purchased under the exemption; the text states no rate or multiplier",
+   "cure_period": "Not stated",
+   "evidence": {
+    "provision": "Sec. 12-36-2120(79)(F)(1)",
+    "quote": "If a taxpayer receives the exemption for purchases but fails to meet the requirements of subitem (B)(5) at the end of the five-year period, the department may assess any state or local sales or use tax due on items purchased."
+   }
+  },
+  {
+   "sanction_type": "benefit_revocation_clawback",
+   "authority": "Department of Revenue",
+   "triggered_by": "Taxpayer met subitem (B)(5) but later fails to maintain the number of full-time jobs with the required compensation level at the facility under subitem (B)(5)(iii)",
+   "max_penalty_text": "No maximum stated; the taxpayer is denied the exemption for items under (A)(1) until the job requirement is met, and the electricity exemption is reduced",
+   "penalty_formula": "Electricity exemption applies to a percentage of the sale price calculated by dividing the number of qualifying jobs by twenty-five",
+   "cure_period": "Not stated; the text allows the exemption for items under (A)(1) to resume once the previous qualifying jobs requirement is met",
+   "evidence": {
+    "provision": "Sec. 12-36-2120(79)(F)(2)(ii)",
+    "quote": "but the exemption only applies to a percentage of the sale price, calculated by dividing the number of qualifying jobs by twenty-five."
+   }
+  }
+ ],
+ "section_status": {}
+}

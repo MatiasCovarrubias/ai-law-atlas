@@ -1,0 +1,126 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "us-ma-massachusetts-bill-h-64-automated-decision-2023",
+ "tier": "B",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "light, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-interim-20261014"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "AGORA plaintext (ETO, CC BY-NC 4.0), local cache",
+  "url": "https://malegislature.gov/Bills/193/H64/House/Bill/Text",
+  "retrieved": "2024-06-16",
+  "version": "1.33.0 (2026-09-16)",
+  "language": "en",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "public_sector_ai",
+   "algorithmic_decision_systems"
+  ],
+  "primary_domain": "public_sector_ai",
+  "mechanisms": [
+   "institution_setup",
+   "mandate_obligation",
+   "disclosure_transparency"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "government_agency"
+  ],
+  "affected_roles": [
+   "general_public"
+  ],
+  "decision_margins": [],
+  "territorial_scope": {
+   "types": [
+    "subnational"
+   ],
+   "description": "Applies to agencies, offices and authorities of the Commonwealth of Massachusetts and its political subdivisions as defined in the section.",
+   "evidence": {
+    "provision": "Sec. 1 (inserting G.L. c. 7D, § 11(b))",
+    "quote": "There shall be a commission within the executive office of technology services and security"
+   }
+  },
+  "agora_applications": [
+   "Government: other applications/unspecified"
+  ],
+  "agora_harms": [
+   "Discrimination"
+  ],
+  "agora_risk_factors": [
+   "Bias",
+   "Transparency",
+   "Interpretability and explainability"
+  ],
+  "agora_strategies": [
+   "Government study or report",
+   "New institution",
+   "Disclosure"
+  ]
+ },
+ "summary": {
+  "short": "Bill H.64 would create a commission within the executive office of technology services and security to study Massachusetts government use of automated decision systems, survey those uses, and report annually with recommendations to the governor and legislature.",
+  "long": "Bill H.64 would insert a new Section 11 into Chapter 7D of the General Laws. It defines algorithm, artificial intelligence, automated decision system, Commonwealth or Massachusetts office, identified group characteristic, source code and training data. It creates a commission within the executive office of technology services and security to study and recommend regulations, limits, standards and safeguards for the use by the Commonwealth of automated decision systems that may affect human welfare. The commission's membership includes the secretary of technology services and security as chair, legislators, the attorney general, the state auditor, the inspector general, academic and advocacy representatives, and industry representatives. Members are to be appointed within 45 days of the effective date of the act. The commission must meet at least 10 times per calendar year, hold at least one public hearing, and broadcast its meetings over the internet. Its tasks include a survey of all Massachusetts office uses of automated decision systems, examination of transparency, auditability, data, intellectual property and due process issues, and a review of research on disparate outcomes. It must submit an annual report by December 31 that includes a public list of automated decision systems in use, policies and training, and contracts with third parties, together with recommendations such as areas where offices should not use such systems and procedures for explanations and for detecting disparate impacts. The bill sets no penalties and does not regulate private actors."
+ },
+ "relations": [
+  {
+   "relation": "amends",
+   "target_text": "General Laws, Chapter 7D (Massachusetts)",
+   "note": "Section 1 inserts a new section 11 into Chapter 7D of the General Laws. Chapter 7D is not in the registry, so no ID is given.",
+   "evidence": {
+    "provision": "Section 1",
+    "quote": "Chapter 7D of the General Laws, as amended by chapter 64 of the acts of 2017, is hereby further amended by inserting after section 10 the following new section"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Acts of 2017, chapter 64",
+   "note": "The text describes Chapter 7D as already amended by chapter 64 of the acts of 2017. The bill does not change that act.",
+   "evidence": {
+    "provision": "Section 1",
+    "quote": "as amended by chapter 64 of the acts of 2017"
+   }
+  }
+ ],
+ "notes": "Only Section 1 of the bill is in the document, and it contains no effective date or enacting clause. Section 11(d) requires appointments 'within 45 days of the effective date of this act', but the text does not state that date. Section 11 creates a study commission with recommendation and reporting duties; it does not itself impose operative duties on private actors. The definition of 'Commonwealth of Massachusetts or Massachusetts office' has an unbalanced quotation mark in the source text. Relations are the only populated section; the section_status entry is required by the schema and does not indicate an empty section.",
+ "events": [
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "Members of the commission shall be appointed within 45 days of the effective date of this act.",
+   "anchor": "effective date of this act",
+   "applies_to": "appointment of members of the commission under Sec. 11(c)",
+   "offset_value": 45,
+   "offset_unit": "days",
+   "anchor_event": "entry_into_force",
+   "evidence": {
+    "provision": "Sec. 1 (inserting G.L. c. 7D, § 11(d))",
+    "quote": "Members of the commission shall be appointed within 45 days of the effective date of this act."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "The commission shall submit an annual report by December 31",
+   "applies_to": "annual report to the governor, the clerks of the house of representatives and the senate, and the joint committee on advanced information technology and cybersecurity",
+   "evidence": {
+    "provision": "Sec. 1 (inserting G.L. c. 7D, § 11(e))",
+    "quote": "The commission shall submit an annual report by December 31"
+   }
+  }
+ ],
+ "section_status": {
+  "thresholds": {
+   "status": "not_applicable",
+   "note": "The bill creates a study commission in the executive office of technology services and security. Its numbers are procedural deadlines (45 days for appointments, December 31 for the annual report), a meeting frequency (not fewer than 10 times per calendar year), and commission membership counts. None sets a scope, eligibility, exemption, obligation tier, prohibition, benefit, or penalty cutoff, so none is coded as a threshold."
+  }
+ },
+ "thresholds": []
+}

@@ -1,0 +1,289 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "br-sp-decreto64771-2020",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (connectors/fetch_texts.py)",
+  "url": "https://www.al.sp.gov.br/repositorio/legislacao/decreto/2020/decreto-64771-03.02.2020.html",
+  "retrieved": "2026-10-13",
+  "version": "as fetched",
+  "language": "pt",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "compute_data_centers"
+  ],
+  "primary_domain": "compute_data_centers",
+  "mechanisms": [
+   "tax_incentive",
+   "licensing_permit_certification"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "data_center_operator",
+   "cloud_service_provider"
+  ],
+  "affected_roles": [
+   "hardware_supplier"
+  ],
+  "decision_margins": [
+   "firm:input_use",
+   "firm:investment_location"
+  ],
+  "territorial_scope": {
+   "types": [
+    "subnational"
+   ],
+   "description": "Applies within the State of São Paulo; eligibility depends on customs clearance and use of infrastructure in this State.",
+   "evidence": {
+    "provision": "Art. 3º, II, b",
+    "quote": "que os equipamentos importados sejam desembaraçados neste Estado"
+   }
+  }
+ },
+ "summary": {
+  "short": "São Paulo State decree granting ICMS suspension, deferral and exemption on listed servers, switches and rack equipment acquired for fixed assets by companies whose main activity is CNAE 6311-9/00 (data processing, application hosting). Requires a special regime request; conditions include employment, regional and environmental criteria. Effective 1 January 2021.",
+  "long": "The decree sets ICMS treatment for listed data-center equipment acquired for fixed assets by companies whose main economic activity is CNAE 6311-9/00 (data processing, application service providers and internet hosting). Covered items are rack-mounted servers with storage, ASIC and hypervisor features, and switches with at least 128 10/40/100 Gbps ports, classified under NCM 8471.49.00 and 8517.62.39. Imports are suspended and domestic sales deferred, with other operations exempt (Art. 1). Suspension applies only to equipment used exclusively in the importer's production process, and the suspended or deferred tax is paid with the recipient's later sale (Art. 1 §§ 2-3). Eligibility requires at least one of six conditions, including job creation, a non-existent activity, local inputs, strategic status, a priority region or logistics infrastructure (Art. 2). Simples Nacional firms and communication services are excluded; the regime is conditioned on use of state port or airport infrastructure, customs clearance in São Paulo, expansion or revitalization projects, and environmental compliance (Art. 3). Firms must request a special regime, which is automatically revoked for non-compliance, unapproved design changes, environmental harm, tax crimes, definitive shutdown or economic-order offences (Art. 4). Takes effect 1 January 2021 (Art. 5)."
+ },
+ "relations": [
+  {
+   "relation": "legal_basis",
+   "target_text": "Lei Complementar 160, de 7 de agosto de 2017 (§ 8º do artigo 3º)",
+   "note": "Cited in the preamble as a power under which the decree is issued.",
+   "evidence": {
+    "provision": "Preâmbulo",
+    "quote": "tendo em vista o disposto no § 8º do artigo 3º da Lei Complementar 160, de 7 de agosto de 2017"
+   }
+  },
+  {
+   "relation": "legal_basis",
+   "target_text": "Convênio ICMS 190/17, de 15 de dezembro de 2017 (cláusula décima terceira)",
+   "note": "Cited in the preamble as a basis for the decree; the cover letter says it lets federated units adopt tax benefits granted by another unit of the same region.",
+   "evidence": {
+    "provision": "Preâmbulo",
+    "quote": "na cláusula décima terceira do Convênio ICMS 190/17, de 15 de dezembro de 2017"
+   }
+  },
+  {
+   "relation": "legal_basis",
+   "target_text": "Lei 10.550, de 30 de junho de 2016, editada pelo Estado do Espírito Santo",
+   "note": "Listed among the preamble's legal bases; the decree text does not state how this Espírito Santo law relates to its provisions.",
+   "evidence": {
+    "provision": "Preâmbulo",
+    "quote": "na Lei 10.550, de 30 de junho de 2016, editada pelo Estado do Espírito Santo"
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "Secretaria da Fazenda e Planejamento (Estado de São Paulo)",
+   "role": "designated",
+   "function": "Its approval is required for project changes made under the special regime; a change made without its communication and approval is a ground for automatic revocation of the regime (Art. 4, parágrafo único, item 2). The cover letter also states that tax matters fall within its competence.",
+   "evidence": {
+    "provision": "Artigo 4º, parágrafo único, item 2",
+    "quote": "alteração do projeto sem comunicação e aprovação da Secretaria da Fazenda e Planejamento"
+   }
+  }
+ ],
+ "notes": "Relation target_instrument_id is empty because no registry IDs were supplied; the targets are identified by target_text. Inconsistency: the cover letter (Ofício GS-CAT) describes the measure as isenção e diferimento, but Art. 1, I also provides suspensão of ICMS on imports; the decree text governs. Art. 3, II, III refers to unnamed competent environmental bodies, not coded as entities. Technical specifications in Art. 1, § 1º (e.g., 128 switches, 10/40/100 Gbps) are not coded here. Relations and entities both have entries, so their section_status entries are placeholders required by the schema.",
+ "events": [
+  {
+   "event": "proposed",
+   "date": null,
+   "date_type": "not_stated",
+   "date_text": "OFÍCIO GS-CAT Nº /2020 (undated letter forwarding the draft decree)",
+   "applies_to": "draft decree (minuta de decreto)",
+   "evidence": {
+    "provision": "Ofício GS-CAT (accompanying letter, after the decree)",
+    "quote": "Tenho a honra de encaminhar a Vossa Excelência a inclusa minuta de decreto"
+   }
+  },
+  {
+   "event": "signed",
+   "date": "2020-02-03",
+   "date_type": "absolute",
+   "date_text": "Palácio dos Bandeirantes, 3 de fevereiro de 2020",
+   "applies_to": "",
+   "evidence": {
+    "provision": "Signature block (after Art. 5º)",
+    "quote": "Palácio dos Bandeirantes, 3 de fevereiro de 2020"
+   }
+  },
+  {
+   "event": "published",
+   "date": "2020-02-03",
+   "date_type": "absolute",
+   "date_text": "Publicado na Secretaria de Governo, aos 3 de fevereiro de 2020.",
+   "applies_to": "",
+   "evidence": {
+    "provision": "Publication note after signature block",
+    "quote": "Publicado na Secretaria de Governo, aos 3 de fevereiro de 2020."
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2021-01-01",
+   "date_type": "absolute",
+   "date_text": "Este decreto entra em vigor em 01-01-2021",
+   "applies_to": "whole decree",
+   "evidence": {
+    "provision": "Art. 5º",
+    "quote": "Este decreto entra em vigor em 01-01-2021."
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "other",
+   "variable_text": "tempo de paralisação das atividades antes do pedido (projeto de revitalização)",
+   "operator": ">=",
+   "value": 12,
+   "value_text": "no mínimo, 12 (doze) meses",
+   "unit": "months",
+   "measurement": "period between cessation of activities and filing of the special-regime request (protocolização do pedido de regime especial)",
+   "level": "entity",
+   "trigger": "eligibility",
+   "consequence": "Revitalization projects qualify only if the cessation of activities occurred at least 12 months before the special-regime request is filed.",
+   "conditions": "Applies only to revitalization projects (projeto de revitalização) under Art. 3 II(d).",
+   "evidence": {
+    "provision": "Art. 3 II(d)",
+    "quote": "que a paralisação das atividades tenha ocorrido, no mínimo, 12 (doze) meses antes da data da protocolização do pedido de regime especial"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "número de switches em aparelho de comutação de dados",
+   "operator": ">=",
+   "value": 128,
+   "value_text": "pelo menos, 128 switches",
+   "unit": "switches",
+   "measurement": "count of switches per data-switching apparatus, as stated in the equipment description",
+   "level": "product",
+   "trigger": "scope_definition",
+   "consequence": "A data-switching apparatus with at least 128 switches falls within the covered equipment listed in § 1 item 2.",
+   "conditions": "Also rack-mounted with separate power feeds (RPDU), cable organisers, MTP fibre distribution panels and transceivers as listed; classified under NCM 8517.62.39.",
+   "evidence": {
+    "provision": "Art. 1 § 1 item 2",
+    "quote": "aparelho de comutação de dados contendo, pelo menos, 128 switches"
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "atividade econômica principal (CNAE 6311-9/00)",
+   "defined_in": "Classificação Nacional de Atividades Econômicas - CNAE",
+   "evidence": {
+    "provision": "Art. 1",
+    "quote": "empresa cuja atividade econômica principal seja identificado pelo código 6311-9/00 (tratamento de dados, provedores de serviços de aplicação e serviços de hospedagem na internet) da Classificação Nacional de Atividades Econômicas - CNAE"
+   }
+  },
+  {
+   "term": "servidor (máquina automática para processamento de dados)",
+   "defined_in": "Art. 1 § 1 item 1",
+   "evidence": {
+    "provision": "Art. 1 § 1 item 1",
+    "quote": "máquinas automáticas para processamento de dados utilizadas como servidor, com unidade de memória, destinadas ao armazenamento de dados"
+   }
+  },
+  {
+   "term": "aparelho de comutação de dados",
+   "defined_in": "Art. 1 § 1 item 2",
+   "evidence": {
+    "provision": "Art. 1 § 1 item 2",
+    "quote": "aparelho de comutação de dados contendo, pelo menos, 128 switches com portas 10/40/100 Gbps de fibra óptica"
+   }
+  },
+  {
+   "term": "projeto de ampliação",
+   "defined_in": "Art. 3 Parágrafo único",
+   "evidence": {
+    "provision": "Art. 3 Parágrafo único",
+    "quote": "não se considera como projeto de ampliação a simples substituição, recondicionamento, modificação ou reforma de equipamentos, que não representem aumento comprovado de produção"
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "eligibility_condition",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Suspension of ICMS on imports of the listed equipment is admitted only where the equipment is used exclusively in the importing company's production process. Applies to companies registered under CNAE 6311-9/00.",
+   "applies_from": "01-01-2021 (Art. 5: entra em vigor em 01-01-2021)",
+   "conditional_on": "Equipment listed in Art. 1 § 1; company with CNAE 6311-9/00 as principal activity",
+   "evidence": {
+    "provision": "Art. 1, § 2",
+    "quote": "A suspensão na forma do inciso I somente será admitida em relação aos equipamentos relacionados no § 1º utilizados exclusivamente no processo produtivo da empresa importadora."
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "ICMS suspended or deferred under Art. 1 I and II must be paid cumulatively with the tax due on the recipient company's sale, with the sale value as the tax base.",
+   "applies_from": "01-01-2021 (Art. 5: entra em vigor em 01-01-2021)",
+   "conditional_on": "Suspension or deferral under Art. 1, incisos I and II",
+   "evidence": {
+    "provision": "Art. 1, § 3",
+    "quote": "O imposto suspenso ou diferido na forma dos incisos I e II será pago cumulativamente com o devido pela saída realizada pela empresa destinatária"
+   }
+  },
+  {
+   "type": "eligibility_condition",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Companies may benefit only if they meet at least one of six conditions: job creation; non-existing economic activity or product without similar in the State; predominant use of State inputs; strategic status; location in a priority region; or boosting existing logistics infrastructure.",
+   "applies_from": "01-01-2021 (Art. 5: entra em vigor em 01-01-2021)",
+   "conditional_on": "At least one of the conditions in Art. 2 items I to VI",
+   "evidence": {
+    "provision": "Art. 2",
+    "quote": "Podem beneficiar-se do disposto neste decreto as empresas que atendam, pelo menos, a uma das seguintes condições"
+   }
+  },
+  {
+   "type": "eligibility_condition",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Benefit is conditional on: preferential use of State port and airport infrastructure; import clearance in the State; for expansion projects, expansion or diversification of productive capacity; for revitalization projects, a stoppage of at least 12 months before the special-regime application; and regular standing with competent environmental bodies where applicable (Art. 3 II and III). Art. 3, Parágrafo único clarifies that simple replacement or refurbishment is not an expansion.",
+   "applies_from": "01-01-2021 (Art. 5: entra em vigor em 01-01-2021)",
+   "conditional_on": "Conditions listed in Art. 3 II a) to d) and III, as applicable",
+   "evidence": {
+    "provision": "Art. 3, II",
+    "quote": "II - fica condicionado:"
+   }
+  },
+  {
+   "type": "eligibility_condition",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "The interested company must apply for a special regime (regime especial) in order for the decree to apply.",
+   "applies_from": "01-01-2021 (Art. 5: entra em vigor em 01-01-2021)",
+   "conditional_on": "Application for special regime",
+   "evidence": {
+    "provision": "Art. 4",
+    "quote": "a empresa interessada deverá solicitar regime especial"
+   }
+  }
+ ],
+ "enforcement": [
+  {
+   "sanction_type": "benefit_revocation_clawback",
+   "authority": "Not stated in the text; revocation is described as automatic",
+   "triggered_by": "Art. 4º, parágrafo único, items 1-6: (1) non-compliance with the conditions fixed in the special regime; (2) project change without communication and approval by the Secretaria da Fazenda e Planejamento; (3) conduct or activity harmful to the environment; (4) crimes against the tax order or tax evasion; (5) definitive cessation of activities; (6) conduct or activity harmful to the economic order",
+   "max_penalty_text": "No monetary penalty stated; the consequence is automatic revocation (cassação) of the special regime",
+   "cure_period": "None stated",
+   "evidence": {
+    "provision": "Art. 4º, parágrafo único",
+    "quote": "O regime especial será automaticamente cassado nas seguintes hipóteses"
+   }
+  }
+ ],
+ "section_status": {}
+}

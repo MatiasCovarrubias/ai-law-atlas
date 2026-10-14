@@ -1,0 +1,769 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "cn-sh-ai-application-measures-2025",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (connectors/fetch_texts.py)",
+  "url": "https://sheitc.sh.gov.cn/cyfz/20250728/e571042d40384fcf859a347eb99e10df.html",
+  "retrieved": "2026-10-13",
+  "version": "as fetched",
+  "language": "zh",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "ai_general",
+   "generative_ai",
+   "compute_data_centers"
+  ],
+  "primary_domain": "ai_general",
+  "mechanisms": [
+   "direct_subsidy_grant"
+  ],
+  "binding_force": "non_binding",
+  "addressee_roles": [
+   "enterprise",
+   "ai_developer",
+   "ai_deployer",
+   "research_institution",
+   "government_agency"
+  ],
+  "affected_roles": [
+   "workers"
+  ],
+  "decision_margins": [
+   "firm:input_use",
+   "firm:product_design_release",
+   "firm:investment_location"
+  ],
+  "territorial_scope": {
+   "types": [
+    "subnational",
+    "municipal"
+   ],
+   "description": "Municipal measures issued by Shanghai authorities, with municipal-level subsidies for entities in Shanghai.",
+   "evidence": {
+    "provision": "Measure 1",
+    "quote": "对租用智能算力的主体，市级给予最高30%租金补贴"
+   }
+  },
+  "agora_incentives": [
+   "Subsidies"
+  ],
+  "agora_strategies": [
+   "Government support",
+   "Government support: For R&D",
+   "Government support: AI workforce-related",
+   "Pilots and testbeds"
+  ]
+ },
+ "summary": {
+  "short": "Shanghai municipal measures (issued 28 July 2025) offering subsidies, computing, model and corpus vouchers, R&D, talent and cluster support to AI firms and institutions to expand AI application.",
+  "long": "The measures were issued by the Shanghai Economic and Informatization Commission on 28 July 2025 and set 12 support measures to expand AI application in Shanghai. Measures 1 to 3 issue computing-power, model and corpus vouchers of 600 million, 300 million and 100 million yuan, with municipal rent subsidies of up to 30% for leased compute, up to 50% of contract value for large-model deployment, and up to 30% for purchased corpora, all capped. Measures 4 and 5 fund key technology and scientific-intelligence projects at up to 30% to 70% of approved investment, capped at 50 million yuan. Measures 6 to 8 support innovation service platforms, new R&D institutions (3 to 5 years, up to 500 million yuan), rewards for product sales or leasing, first-version software applications and demonstration scenarios. Measure 9 covers AI towns and clusters with rent reductions or one-time fees for 6 months to 3 years. Measure 10 provides talent funding and personal awards of up to 300,000 yuan. Measures 11 and 12 cover investment funds and open-source incentives of up to 5 million yuan. The text sets no prohibitions, reporting duties or penalties and works through government subsidies, with implementation left to the issuing bodies."
+ },
+ "entities": [
+  {
+   "name": "上海市经济和信息化委员会 (Shanghai Municipal Economic and Informatization Commission)",
+   "role": "designated",
+   "function": "Issuing authority of the measures (沪经信智〔2025〕489号); formulated them jointly with relevant commissions, offices and district governments; to organise demonstration-scenario calls jointly with industry competent departments (Measure 8)",
+   "evidence": {
+    "provision": "Notice (沪经信智〔2025〕489号), opening paragraph",
+    "quote": "市经济信息化委联合相关委办、区政府制定了《上海市进一步扩大人工智能应用的若干措施》"
+   }
+  },
+  {
+   "name": "上海市人民政府 (referred to in the text as 市政府)",
+   "role": "designated",
+   "function": "Approves strategic or public-welfare key projects before support of up to 50% is given, above the general 30% ceiling in Measure 4",
+   "evidence": {
+    "provision": "Measure 4",
+    "quote": "经市政府批准后可给予最高50%支持"
+   }
+  }
+ ],
+ "notes": "Administrative notice from the Shanghai Municipal Economic and Informatization Commission setting out 12 measures of subsidies, vouchers, awards and support programmes. The text contains no regulatory obligations, prohibitions, penalties or effective-date clause. All amounts are ceilings (最高) or approved-cost shares. Measure 4 allows up to 50% for strategic or public-welfare projects approved by the municipal government, above the 30% general ceiling in the same measure. The publication date 2025-07-28 appears only in the webpage dateline. The notice header addresses 有关单位 (relevant units) and the measures refer to 企业 and 主体 without a defined eligibility test; 符合条件 (eligible) is not defined in the text. The national new-generation AI strategy is cited as policy background only, with no instrument reference.",
+ "events": [
+  {
+   "event": "signed",
+   "date": "2025-07-28",
+   "date_type": "absolute",
+   "date_text": "2025年7月28日",
+   "applies_to": "the Shanghai Municipal Measures to Further Expand AI Application, issued under 沪经信智〔2025〕489号",
+   "evidence": {
+    "provision": "Issuing notice (沪经信智〔2025〕489号), signature block",
+    "quote": "2025年7月28日"
+   }
+  },
+  {
+   "event": "published",
+   "date": "2025-07-28",
+   "date_type": "absolute",
+   "date_text": "发布日期：2025-07-28",
+   "applies_to": "the notice and the measures, as posted on the issuing commission's website",
+   "evidence": {
+    "provision": "Website posting header (来源 / 发布日期 field)",
+    "quote": "发布日期：2025-07-28"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "other",
+   "variable_text": "municipal rent subsidy ceiling for leased intelligent computing power (租用智能算力的市级租金补贴)",
+   "operator": "<=",
+   "value": 30,
+   "value_text": "最高30%租金补贴",
+   "unit": "%",
+   "level": "entity",
+   "trigger": "benefit",
+   "consequence": "Ceiling of 30% municipal rent subsidy for entities renting intelligent computing power.",
+   "conditions": "Entity renting intelligent computing power",
+   "evidence": {
+    "provision": "Measure 1",
+    "quote": "市级给予最高30%租金补贴"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "maximum duration of joint municipal-district rent subsidy (市区协同租金补贴期限)",
+   "operator": "<=",
+   "value": 1,
+   "value_text": "最多1年",
+   "unit": "years",
+   "level": "entity",
+   "trigger": "benefit_duration",
+   "consequence": "Joint municipal-district rent subsidy available for at most 1 year.",
+   "conditions": "Entity renting intelligent computing power; applies under the early-and-small support principle stated in the text",
+   "evidence": {
+    "provision": "Measure 1",
+    "quote": "市区协同给予最多1年、最高100%的租金补贴"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "ceiling on joint municipal-district rent subsidy share (市区协同租金补贴比例)",
+   "operator": "<=",
+   "value": 100,
+   "value_text": "最高100%的租金补贴",
+   "unit": "%",
+   "level": "entity",
+   "trigger": "benefit",
+   "consequence": "Ceiling of 100% for joint municipal-district rent subsidy.",
+   "conditions": "Same conditions as the 1-year rent subsidy; entity renting intelligent computing power",
+   "evidence": {
+    "provision": "Measure 1",
+    "quote": "市区协同给予最多1年、最高100%的租金补贴"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "ceiling on construction support for self-built intelligent computing facility deployment (自主智能算力设施部署项目建设支持比例)",
+   "operator": "<=",
+   "value": 10,
+   "value_text": "最高10%建设支持",
+   "unit": "%",
+   "level": "facility",
+   "trigger": "benefit",
+   "consequence": "Ceiling of 10% construction support for self-built intelligent computing facility deployment projects.",
+   "conditions": "Self-built intelligent computing facility deployment project",
+   "evidence": {
+    "provision": "Measure 1",
+    "quote": "对自主智能算力设施部署项目，给予最高10%建设支持"
+   }
+  },
+  {
+   "variable": "transaction_value",
+   "variable_text": "approved contract amount for large-model vertical application (核定合同额)",
+   "operator": "<=",
+   "value": 50,
+   "value_text": "给予核定合同额最高50%",
+   "unit": "%",
+   "level": "entity",
+   "trigger": "benefit",
+   "consequence": "Subsidy ceiling of 50% of approved contract amount.",
+   "conditions": "Entity calling a third-party large-model API deployed on a cloud platform, or privately deploying a third-party large model, for vertical applications",
+   "evidence": {
+    "provision": "Measure 2",
+    "quote": "给予核定合同额最高50%、最高500万元补贴"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "absolute ceiling on large-model application subsidy (补贴金额上限)",
+   "operator": "<=",
+   "value": 5000000,
+   "value_text": "最高500万元补贴",
+   "unit": "CNY",
+   "currency": "CNY",
+   "level": "entity",
+   "trigger": "benefit",
+   "consequence": "Absolute subsidy ceiling of CNY 5,000,000.",
+   "conditions": "Same conditions as the 50% contract-amount subsidy",
+   "evidence": {
+    "provision": "Measure 2",
+    "quote": "给予核定合同额最高50%、最高500万元补贴"
+   }
+  },
+  {
+   "variable": "transaction_value",
+   "variable_text": "approved contract amount for corpus purchase (核定合同额)",
+   "operator": "<=",
+   "value": 30,
+   "value_text": "给予核定合同额最高30%",
+   "unit": "%",
+   "level": "entity",
+   "trigger": "benefit",
+   "consequence": "Corpus purchase subsidy ceiling of 30% of approved contract amount.",
+   "conditions": "Entity buying corpus from non-affiliated parties for R&D or application of large models, vertical applications or agents",
+   "evidence": {
+    "provision": "Measure 3",
+    "quote": "给予核定合同额最高30%、最高500万元采购补贴"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "absolute ceiling on corpus purchase subsidy (采购补贴金额上限)",
+   "operator": "<=",
+   "value": 5000000,
+   "value_text": "最高500万元采购补贴",
+   "unit": "CNY",
+   "currency": "CNY",
+   "level": "entity",
+   "trigger": "benefit",
+   "consequence": "Absolute corpus purchase subsidy ceiling of CNY 5,000,000.",
+   "conditions": "Same conditions as the 30% corpus purchase subsidy",
+   "evidence": {
+    "provision": "Measure 3",
+    "quote": "给予核定合同额最高30%、最高500万元采购补贴"
+   }
+  },
+  {
+   "variable": "capital_investment",
+   "variable_text": "approved total project investment (核定项目总投资)",
+   "operator": "<=",
+   "value": 30,
+   "value_text": "按照核定项目总投资给予最高30%",
+   "unit": "%",
+   "level": "other",
+   "trigger": "benefit",
+   "consequence": "Support ceiling of 30% of approved total project investment for key technology innovation projects.",
+   "conditions": "Key technology innovation projects in frontier directions listed in the text",
+   "evidence": {
+    "provision": "Measure 4",
+    "quote": "按照核定项目总投资给予最高30%、最高5000万元支持"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "absolute support ceiling for key technology innovation projects (支持金额上限)",
+   "operator": "<=",
+   "value": 50000000,
+   "value_text": "最高5000万元支持",
+   "unit": "CNY",
+   "currency": "CNY",
+   "level": "other",
+   "trigger": "benefit",
+   "consequence": "Absolute support ceiling of CNY 50,000,000.",
+   "conditions": "Same conditions as the 30% project-investment support",
+   "evidence": {
+    "provision": "Measure 4",
+    "quote": "按照核定项目总投资给予最高30%、最高5000万元支持"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "municipal matching project support ceiling (市级配套项目支持金额上限)",
+   "operator": "<=",
+   "value": 50000000,
+   "value_text": "给予最高5000万元支持",
+   "unit": "CNY",
+   "currency": "CNY",
+   "level": "other",
+   "trigger": "benefit",
+   "consequence": "Support ceiling of CNY 50,000,000 for municipal matching projects.",
+   "conditions": "Innovation entities participating in national major projects, strategic platforms or challenge tasks and applying for municipal matching projects",
+   "evidence": {
+    "provision": "Measure 4",
+    "quote": "申报市级配套项目，给予最高5000万元支持"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "support ceiling for strategic or public-benefit key projects (关键项目支持比例)",
+   "operator": "<=",
+   "value": 50,
+   "value_text": "经市政府批准后可给予最高50%支持",
+   "unit": "%",
+   "level": "other",
+   "trigger": "benefit",
+   "consequence": "Support ceiling of 50% for strategic or public-benefit key projects, available after municipal government approval.",
+   "conditions": "Strategic or public-benefit key project",
+   "depends_on": "municipal government approval",
+   "evidence": {
+    "provision": "Measure 4",
+    "quote": "对具有战略性、公益性的关键项目，经市政府批准后可给予最高50%支持"
+   }
+  },
+  {
+   "variable": "capital_investment",
+   "variable_text": "approved total investment of quality projects in citywide science-intelligence programme (核定总投资)",
+   "operator": "<=",
+   "value": 70,
+   "value_text": "按照核定总投资给予最高70%",
+   "unit": "%",
+   "level": "other",
+   "trigger": "benefit",
+   "consequence": "Support ceiling of 70% of approved total investment.",
+   "conditions": "Quality projects under the citywide science-intelligence programme",
+   "evidence": {
+    "provision": "Measure 5",
+    "quote": "按照核定总投资给予最高70%、最高5000万元支持"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "absolute support ceiling for science-intelligence projects (支持金额上限)",
+   "operator": "<=",
+   "value": 50000000,
+   "value_text": "最高5000万元支持",
+   "unit": "CNY",
+   "currency": "CNY",
+   "level": "other",
+   "trigger": "benefit",
+   "consequence": "Absolute support ceiling of CNY 50,000,000.",
+   "conditions": "Same conditions as the 70% science-intelligence support",
+   "evidence": {
+    "provision": "Measure 5",
+    "quote": "按照核定总投资给予最高70%、最高5000万元支持"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "duration of continuous support for new AI R&D institutions led by strategic leading talent (连续性支持期限)",
+   "operator": "range",
+   "value": 3,
+   "value_max": 5,
+   "value_text": "给予3-5年、最高5亿元的连续性支持",
+   "unit": "years",
+   "level": "entity",
+   "trigger": "benefit_duration",
+   "consequence": "Continuous support for a period of 3 to 5 years.",
+   "conditions": "New AI R&D institution led by a strategic leading talent",
+   "evidence": {
+    "provision": "Measure 6",
+    "quote": "给予3-5年、最高5亿元的连续性支持"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "absolute ceiling on continuous support for new AI R&D institutions (连续性支持金额上限)",
+   "operator": "<=",
+   "value": 500000000,
+   "value_text": "最高5亿元",
+   "unit": "CNY",
+   "currency": "CNY",
+   "level": "entity",
+   "trigger": "benefit",
+   "consequence": "Absolute support ceiling of CNY 500,000,000 over the support period.",
+   "conditions": "New AI R&D institution led by a strategic leading talent",
+   "evidence": {
+    "provision": "Measure 6",
+    "quote": "给予3-5年、最高5亿元的连续性支持"
+   }
+  },
+  {
+   "variable": "capital_investment",
+   "variable_text": "approved total investment for innovation service platform projects (核定总投资)",
+   "operator": "<=",
+   "value": 50,
+   "value_text": "按照核定总投资给予最高50%",
+   "unit": "%",
+   "level": "other",
+   "trigger": "benefit",
+   "consequence": "Support ceiling of 50% of approved total investment.",
+   "conditions": "Industrial innovation service platform projects in AI frontier fields",
+   "evidence": {
+    "provision": "Measure 6",
+    "quote": "按照核定总投资给予最高50%、最高2000万元支持"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "absolute support ceiling for innovation service platforms (支持金额上限)",
+   "operator": "<=",
+   "value": 20000000,
+   "value_text": "最高2000万元支持",
+   "unit": "CNY",
+   "currency": "CNY",
+   "level": "other",
+   "trigger": "benefit",
+   "consequence": "Absolute support ceiling of CNY 20,000,000.",
+   "conditions": "Same conditions as the 50% platform-investment support",
+   "evidence": {
+    "provision": "Measure 6",
+    "quote": "按照核定总投资给予最高50%、最高2000万元支持"
+   }
+  },
+  {
+   "variable": "transaction_value",
+   "variable_text": "approved contract amount for product sales or leasing (核定合同额)",
+   "operator": "<=",
+   "value": 5,
+   "value_text": "按核定合同额的5%给予最高500万元奖励",
+   "unit": "%",
+   "level": "product",
+   "trigger": "benefit",
+   "consequence": "Reward of 5% of approved contract amount.",
+   "conditions": "Sales or leasing of products such as embodied intelligence robots reaching a certain scale (scale not quantified in the text)",
+   "evidence": {
+    "provision": "Measure 7",
+    "quote": "按核定合同额的5%给予最高500万元奖励"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "absolute reward ceiling for product sales or leasing (奖励金额上限)",
+   "operator": "<=",
+   "value": 5000000,
+   "value_text": "最高500万元奖励",
+   "unit": "CNY",
+   "currency": "CNY",
+   "level": "product",
+   "trigger": "benefit",
+   "consequence": "Absolute reward ceiling of CNY 5,000,000.",
+   "conditions": "Same conditions as the 5% product reward",
+   "evidence": {
+    "provision": "Measure 7",
+    "quote": "按核定合同额的5%给予最高500万元奖励"
+   }
+  },
+  {
+   "variable": "transaction_value",
+   "variable_text": "approved contract amount for first-version AI software application (核定合同金额)",
+   "operator": "<=",
+   "value": 30,
+   "value_text": "按照核定合同金额给予最高30%",
+   "unit": "%",
+   "level": "product",
+   "trigger": "benefit",
+   "consequence": "Support ceiling of 30% of approved contract amount.",
+   "conditions": "First-version application demonstration of AI software products of local AI enterprises",
+   "evidence": {
+    "provision": "Measure 7",
+    "quote": "按照核定合同金额给予最高30%、最高2000万元支持"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "absolute support ceiling for AI software first-version application (支持金额上限)",
+   "operator": "<=",
+   "value": 20000000,
+   "value_text": "最高2000万元支持",
+   "unit": "CNY",
+   "currency": "CNY",
+   "level": "product",
+   "trigger": "benefit",
+   "consequence": "Absolute support ceiling of CNY 20,000,000.",
+   "conditions": "Same conditions as the 30% software application support",
+   "evidence": {
+    "provision": "Measure 7",
+    "quote": "按照核定合同金额给予最高30%、最高2000万元支持"
+   }
+  },
+  {
+   "variable": "capital_investment",
+   "variable_text": "approved total investment of benchmark demonstration scenario projects (核定总投资)",
+   "operator": "<=",
+   "value": 20,
+   "value_text": "按照核定总投资给予最高20%",
+   "unit": "%",
+   "level": "other",
+   "trigger": "benefit",
+   "consequence": "Support ceiling of 20% of approved total investment.",
+   "conditions": "Benchmark demonstration scenario construction projects",
+   "evidence": {
+    "provision": "Measure 8",
+    "quote": "对标杆示范场景建设项目，按照核定总投资给予最高20%、最高1000万元支持"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "absolute support ceiling for benchmark demonstration scenario projects (支持金额上限)",
+   "operator": "<=",
+   "value": 10000000,
+   "value_text": "最高1000万元支持",
+   "unit": "CNY",
+   "currency": "CNY",
+   "level": "other",
+   "trigger": "benefit",
+   "consequence": "Absolute support ceiling of CNY 10,000,000.",
+   "conditions": "Same conditions as the 20% benchmark scenario support",
+   "evidence": {
+    "provision": "Measure 8",
+    "quote": "对标杆示范场景建设项目，按照核定总投资给予最高20%、最高1000万元支持"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "support share of compute, model and corpus vouchers (算力券、模型券、语料券支持比例)",
+   "operator": "<=",
+   "value": 100,
+   "value_text": "最高100%支持",
+   "unit": "%",
+   "level": "entity",
+   "trigger": "benefit",
+   "consequence": "Support ceiling of 100% for the vouchers listed.",
+   "conditions": "Eligible innovative enterprises in AI industrial clusters",
+   "evidence": {
+    "provision": "Measure 9",
+    "quote": "向符合条件的创新型企业发放最高100%支持的100万元算力券、100万元模型券、100万元语料券补贴"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "face value of compute, model and corpus vouchers (算力券、模型券、语料券面额)",
+   "operator": "=",
+   "value": 1000000,
+   "value_text": "100万元算力券、100万元模型券、100万元语料券",
+   "unit": "CNY",
+   "currency": "CNY",
+   "level": "entity",
+   "trigger": "benefit",
+   "consequence": "Vouchers of CNY 1,000,000 each for compute, model and corpus.",
+   "conditions": "Eligible innovative enterprises in AI industrial clusters",
+   "evidence": {
+    "provision": "Measure 9",
+    "quote": "向符合条件的创新型企业发放最高100%支持的100万元算力券、100万元模型券、100万元语料券补贴"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "duration of rent reduction or one-off setup fee for AI talent start-up teams (房租减免或一次性开办费期限)",
+   "operator": "range",
+   "value": 6,
+   "value_max": 36,
+   "value_text": "6个月至3年不等的房租减免或一次性开办费",
+   "unit": "months",
+   "level": "group",
+   "trigger": "benefit_duration",
+   "consequence": "Rent reduction or one-off setup fee for a period varying from 6 months to 3 years.",
+   "conditions": "Eligible AI talent start-up team",
+   "evidence": {
+    "provision": "Measure 9",
+    "quote": "给予6个月至3年不等的房租减免或一次性开办费"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "individual award ceiling for talent at high-quality AI enterprises (个人奖励上限)",
+   "operator": "<=",
+   "value": 300000,
+   "value_text": "给予最高30万元个人奖励",
+   "unit": "CNY",
+   "currency": "CNY",
+   "level": "person",
+   "trigger": "benefit",
+   "consequence": "Individual award ceiling of CNY 300,000.",
+   "conditions": "Talent related to high-quality AI enterprises",
+   "evidence": {
+    "provision": "Measure 10",
+    "quote": "给予最高30万元个人奖励"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "reward ceiling for open-source communities and open-source models and corpora (奖励金额上限)",
+   "operator": "<=",
+   "value": 5000000,
+   "value_text": "给予最高500万元奖励",
+   "unit": "CNY",
+   "currency": "CNY",
+   "level": "other",
+   "trigger": "benefit",
+   "consequence": "Reward ceiling of CNY 5,000,000.",
+   "conditions": "Open-source communities with significant impact, and high-download, high-performance and influential open-source models and corpora",
+   "evidence": {
+    "provision": "Measure 12",
+    "quote": "下载量高、性能优、影响力大的模型和语料开源产品，给予最高500万元奖励"
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Issue 600 million yuan of compute vouchers and strengthen the compute scheduling platform; give compute-renting entities municipal rent subsidies of up to 30%, and joint municipal-district rent subsidies of up to 1 year and up to 100%; give up to 10% construction support for self-built compute facilities.",
+   "conditional_on": "Applies to entities that rent intelligent compute or deploy self-owned compute facilities, subject to the measure's support limits.",
+   "evidence": {
+    "provision": "Measure 1 (措施1)",
+    "quote": "发放6亿元算力券 [issue 600 million yuan compute vouchers]"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Issue 300 million yuan of model vouchers; give subsidies of up to 50% of the approved contract value, up to 5 million yuan, for calling third-party large models on cloud platforms or privately deploying them.",
+   "conditional_on": "Applies to entities advancing vertical large-model applications, as specified in the measure.",
+   "evidence": {
+    "provision": "Measure 2 (措施2)",
+    "quote": "给予核定合同额最高50%、最高500万元补贴"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Issue 100 million yuan of corpus vouchers and strengthen the corpus public service platform; give procurement subsidies of up to 30% of the approved contract value, up to 5 million yuan, for purchasing corpora from unrelated parties.",
+   "conditional_on": "Applies to entities purchasing non-affiliated corpora for model, vertical application or agent R&D.",
+   "evidence": {
+    "provision": "Measure 3 (措施3)",
+    "quote": "给予核定合同额最高30%、最高500万元采购补贴"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Support technical innovation in listed key frontier areas, giving up to 30% of approved total project investment, up to 50 million yuan; support participation in national projects and municipal matching projects up to 50 million yuan; up to 50% for strategic or public-interest projects with municipal government approval.",
+   "conditional_on": "Support is based on approved project investment; the 50% tier requires municipal government approval.",
+   "evidence": {
+    "provision": "Measure 4 (措施4)",
+    "quote": "按照核定项目总投资给予最高30%、最高5000万元支持"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Organise implementation of a citywide scientific intelligence '100 teams, 100 projects' programme, aiming (per the text's stated goal of 'striving') for at least 100 teams and 100 projects within 2 years; give up to 70% of approved total investment, up to 50 million yuan, for qualifying projects.",
+   "conditional_on": "Aspirational wording ('力争') for the 2-year target; funding applies to qualifying projects.",
+   "evidence": {
+    "provision": "Measure 5 (措施5)",
+    "quote": "组织实施全市科学智能“百团百项”工程"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Give continuous support of 3 to 5 years, up to 500 million yuan, to new AI R&D institutions led by strategic leading talent; give up to 50% of approved total investment, up to 20 million yuan, to platforms for AI safety governance, testing and evaluation, pilot verification and similar services.",
+   "conditional_on": "Applies to institutions and platforms meeting the measure's criteria.",
+   "evidence": {
+    "provision": "Measure 6 (措施6)",
+    "quote": "给予3-5年、最高5亿元的连续性支持"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Give awards of 5% of approved contract value, up to 5 million yuan, for sales or rental of AI products such as embodied intelligent robots reaching a certain scale; give up to 30% of approved contract value, up to 20 million yuan, for first-edition application demonstrations of AI software products.",
+   "conditional_on": "The scale threshold for robot sales or rental is not specified in the text ('一定规模').",
+   "evidence": {
+    "provision": "Measure 7 (措施7)",
+    "quote": "按核定合同额的5%给予最高500万元奖励"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Co-organise with industry competent departments the collection of demonstration scenarios in key fields, to build replicable and extendable typical scenarios; give up to 20% of approved total investment, up to 10 million yuan, for demonstration scenario projects.",
+   "conditional_on": "Applies to demonstration scenario projects.",
+   "evidence": {
+    "provision": "Measure 8 (措施8)",
+    "quote": "会同各行业主管部门，组织重点领域示范场景征集"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Give subsidies in the form of 1 million yuan each of compute, model and corpus vouchers to qualifying innovative enterprises, up to 100% support, under joint municipal-district arrangements; actively promote 'apply-free, enjoy-immediately' ('免申即享') subsidies; give rent reductions of 6 months to 3 years or one-time setup fees to qualifying AI talent start-up teams.",
+   "conditional_on": "Applies to enterprises and teams that meet the eligibility conditions, as stated in the text.",
+   "evidence": {
+    "provision": "Measure 9 (措施9)",
+    "quote": "积极推动补贴“免申即享”"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Provide long-term stable career and staffing support funding to high-level talent and teams; implement a 'talent plus project plus industry' support mechanism granting talent autonomy over technical routes, team formation and funding use; implement special awards of up to 300,000 yuan per individual for talent at high-quality AI enterprises.",
+   "conditional_on": "Awards apply to talent at AI enterprises meeting the text's criteria.",
+   "evidence": {
+    "provision": "Measure 10 (措施10)",
+    "quote": "对人工智能优质企业相关人才实施专项奖励，给予最高30万元个人奖励"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Give play to the guiding role of the national AI industry investment fund and the municipal AI pilot industry parent fund, jointly with district investment funds and social capital, in early, small and long-term investment; support qualifying enterprises in establishing venture capital funds and thematic sub-funds.",
+   "conditional_on": "Applies to investment in the key areas listed in the measure (compute, corpora, large models, embodied intelligence, scientific intelligence).",
+   "evidence": {
+    "provision": "Measure 11 (措施11)",
+    "quote": "发挥国家人工智能产业投资基金、市级人工智能先导产业母基金等引导作用"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Give awards of up to 5 million yuan to open-source communities with clear impact and to open-source models and corpora with high downloads, performance and influence; continue to use international AI conferences and developer platforms for international cooperation and open sharing.",
+   "conditional_on": "Applies to open-source communities and products meeting the stated impact criteria.",
+   "evidence": {
+    "provision": "Measure 12 (措施12)",
+    "quote": "给予最高500万元奖励"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Use the World AI Conference and the Global Developers Pioneer Conference to promote international cooperation and open sharing in AI.",
+   "evidence": {
+    "provision": "Measure 12 (措施12)",
+    "quote": "持续用好世界人工智能大会、全球开发者先锋大会等平台"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "encouraged",
+   "summary": "The text encourages enterprises to actively join the global open-source ecosystem; the encouragement names enterprises as addressees.",
+   "evidence": {
+    "provision": "Measure 12 (措施12)",
+    "quote": "鼓励企业积极融入全球开源生态"
+   }
+  }
+ ],
+ "section_status": {
+  "relations": {
+   "status": "not_found",
+   "note": "The text names no legal instrument it is made under, amends, implements or cross-references. It cites the national strategy (国家发展新一代人工智能的战略部署) only as policy background."
+  },
+  "definitions": {
+   "status": "not_found",
+   "note": "The text defines no terms. Scope-relevant terms such as 人工智能企业, 符合条件的 and 非关联方 are used without definition."
+  },
+  "enforcement": {
+   "status": "not_found",
+   "note": "The text sets out subsidy, voucher and reward measures for AI application (computing-power, model, corpus and project support). It contains no fines, penalties, criminal sanctions, licence revocation, benefit clawback, suspension or blocking provisions, and no reference to a penalty regime."
+  }
+ },
+ "enforcement": [],
+ "definitions": [],
+ "relations": []
+}

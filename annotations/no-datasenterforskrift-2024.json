@@ -1,0 +1,604 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "no-datasenterforskrift-2024",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (connectors/fetch_texts.py)",
+  "url": "https://lovdata.no/dokument/SF/forskrift/2024-12-18-3313",
+  "retrieved": "2026-10-13",
+  "version": "as fetched",
+  "language": "no",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "compute_data_centers",
+   "cybersecurity",
+   "data_access_sharing"
+  ],
+  "primary_domain": "compute_data_centers",
+  "mechanisms": [
+   "registration_notification",
+   "mandate_obligation",
+   "enforcement_order",
+   "disclosure_transparency"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "data_center_operator"
+  ],
+  "affected_roles": [
+   "data_center_occupant"
+  ],
+  "decision_margins": [
+   "firm:entry_market_access",
+   "firm:compliance_process"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national",
+    "extraterritorial"
+   ],
+   "description": "Applies to data centre operators under Norwegian electronic communications law; operators must have a physical representative in Norway, which reaches foreign operators.",
+   "evidence": {
+    "provision": "§ 1-6",
+    "quote": "En datasenteroperatør skal ha en representant som er til stede i Norge."
+   }
+  },
+  "agora_harms": [
+   "Harm to infrastructure"
+  ],
+  "agora_incentives": [
+   "Fines"
+  ],
+  "agora_strategies": [
+   "Licensing, registration, and certification",
+   "Evaluation: External auditing",
+   "Performance requirements"
+  ]
+ },
+ "summary": {
+  "short": "Norwegian regulation under the Electronic Communications Act requiring data centre operators above a 0.5 MW threshold to register with the national communications authority before starting operations, and to meet customer-information, representative, security, preparedness and incident-reporting duties, with administrative fines. In force 1 January 2025.",
+  "long": "Regulation of 18 December 2024 under the Electronic Communications Act, in force 1 January 2025 and amended with effect from 1 July 2026. It covers data centre operators above a 0.5 MW threshold (§ 1-2). Operators must register with the national communications authority before starting operations, including public-sector customers, the share of power used for cryptocurrency mining and contracted capacity; existing operators had until 1 July 2025. Operators must keep customer information current and disclose it to police, prosecutors and security authorities on request, keep a representative in Norway and respond without undue delay. Chapter 2 requires a security management system, risk and vulnerability assessments, security and contingency plans and exercises, supplier oversight, notification of significant incidents, and customer warnings about threats and planned work. The authority may order independent security audits at the operator's cost, national operation of services in a crisis, and prioritisation of services after disruption. Administrative fines reach up to 5% of turnover for violations of § 15-12 of the Act and up to 30 day-fines for individuals."
+ },
+ "relations": [
+  {
+   "relation": "legal_basis",
+   "target_text": "lov 13. desember 2024 nr. 76 om elektronisk kommunikasjon (ekomloven)",
+   "note": "Enabling act. The Hjemmel line cites ekomloven §§ 3-7, 15-1, 15-12, 15-13 and 16-7. The text also uses ekomloven § 1-5 nr. 38 for the definition of datasenteroperatør and ekomloven kapittel 15 and § 16-7 for enforcement and appeals.",
+   "evidence": {
+    "provision": "Hjemmel (header, Fastsatt av)",
+    "quote": "Fastsatt av Digitaliserings- og forvaltningsdepartementet 18. desember 2024 med hjemmel i lov 13. desember 2024 nr. 76"
+   }
+  },
+  {
+   "relation": "amended_by",
+   "target_text": "forskrift 22 juni 2026 nr. 1320 (FOR-2026-06-22-1320)",
+   "note": "Consolidated text as amended, in force 1 July 2026. Amended provisions are marked Endret ved (§§ 1-3, 2-2, 3-2) and new provisions Tilføyd ved (§§ 1-4 to 1-7).",
+   "evidence": {
+    "provision": "Metadata (Sist endret)",
+    "quote": "FOR-2026-06-22-1320 fra 01.07.2026"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "sikkerhetsloven",
+   "note": "Referenced for the national security authority's disclosure powers and for the national response and warning functions (under § 2-4 of that act); also the scope of the national communications authority's tasks.",
+   "evidence": {
+    "provision": "§ 1-5 (second paragraph, b)",
+    "quote": "for å utføre oppgaver etter sikkerhetsloven"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "politiloven",
+   "note": "§ 1-5 refers to a threat-prevention action under politiloven § 17b as the basis for a disclosure duty to the Police Security Service; § 1-6 lists politiloven among the statutes under which authorities may act.",
+   "evidence": {
+    "provision": "§ 1-5 (first paragraph, b)",
+    "quote": "som nevnt i politiloven § 17b"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "straffeprosessloven",
+   "note": "Listed in § 1-6 among the statutes under which authorities may take measures that the representative must be able to assist with.",
+   "evidence": {
+    "provision": "§ 1-6",
+    "quote": "som forskriften § 1-5, straffeprosessloven, politiloven eller sikkerhetsloven"
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "Nasjonal kommunikasjonsmyndighet",
+   "role": "designated",
+   "function": "Supervises compliance with the regulation (tilsyn); receives registrations and customer information; may impose security audits, orders, exemptions and overtredelsesgebyr (administrative fines) under §§ 1-3, 2-6, 2-9, 2-10, 3-2 and 3-5.",
+   "evidence": {
+    "provision": "§ 3-1",
+    "quote": "Nasjonal kommunikasjonsmyndighet fører tilsyn med at kravene i forskriften blir oppfylt"
+   }
+  },
+  {
+   "name": "Digitaliserings- og forvaltningsdepartementet",
+   "role": "designated",
+   "function": "Ministry that adopted the regulation; decides appeals against individual decisions of the national communications authority (§ 3-4); may impose overtredelsesgebyr under § 3-3.",
+   "evidence": {
+    "provision": "§ 3-4",
+    "quote": "avgjøres av departementet"
+   }
+  },
+  {
+   "name": "politiet / påtalemyndigheten",
+   "role": "beneficiary",
+   "function": "Entitled to receive customer information from a datasenteroperatør when necessary to stop or prevent a crime (§ 1-5 first paragraph, a).",
+   "evidence": {
+    "provision": "§ 1-5 (first paragraph, a)",
+    "quote": "politiet eller påtalemyndigheten når og i det omfang det er nødvendig for å stanse eller avverge et lovbrudd"
+   }
+  },
+  {
+   "name": "Politiets sikkerhetstjeneste",
+   "role": "beneficiary",
+   "function": "Entitled to receive customer information where there is reason to investigate a planned act under politiloven § 17b (§ 1-5 first paragraph, b).",
+   "evidence": {
+    "provision": "§ 1-5 (first paragraph, b)",
+    "quote": "Politiets sikkerhetstjeneste"
+   }
+  },
+  {
+   "name": "Nasjonal sikkerhetsmyndighet",
+   "role": "beneficiary",
+   "function": "Entitled to receive customer information needed to run the national response function for serious digital attacks and the national warning system (§ 1-5 second paragraph, a).",
+   "evidence": {
+    "provision": "§ 1-5 (second paragraph, a)",
+    "quote": "Nasjonal sikkerhetsmyndighet når og i det omfang det er nødvendig for å drive den nasjonale responsfunksjonen"
+   }
+  }
+ ],
+ "notes": "Consolidated text as amended by FOR-2026-06-22-1320 (in force 1 July 2026); the amendment is recorded in the document's metadata and amendment markers. The regulation is annotated as a full text, but only as it appears in the document. Internal tension: § 1-3 requires registration before operations start, while § 4-2 allows operators already active at the enactment of the act to register by 1 July 2025; the text does not reconcile these. Ekomloven is the only instrument with substantive relations, cited as the legal basis and for enforcement (chapter 15) and appeals (§ 16-7). Target instrument IDs are left empty because the targets' registry IDs were not provided.",
+ "events": [
+  {
+   "event": "adopted",
+   "date": "2024-12-18",
+   "date_type": "absolute",
+   "date_text": "Fastsatt av Digitaliserings- og forvaltningsdepartementet 18. desember 2024",
+   "applies_to": "",
+   "evidence": {
+    "provision": "Metadata (Hjemmel)",
+    "quote": "Fastsatt av Digitaliserings- og forvaltningsdepartementet 18. desember 2024"
+   }
+  },
+  {
+   "event": "published",
+   "date": "2024-12-20",
+   "date_type": "absolute",
+   "date_text": "Kunngjort 20.12.2024 kl. 16.20",
+   "applies_to": "",
+   "evidence": {
+    "provision": "Metadata (Kunngjort)",
+    "quote": "20.12.2024   kl. 16.20"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2025-01-01",
+   "date_type": "absolute",
+   "date_text": "Forskriften trer i kraft 1. januar 2025.",
+   "applies_to": "Forskriften (whole regulation, except provisions later amended or added)",
+   "evidence": {
+    "provision": "§ 4-1",
+    "quote": "Forskriften trer i kraft 1. januar 2025."
+   }
+  },
+  {
+   "event": "application",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "skal registrere seg hos Nasjonal kommunikasjonsmyndighet før virksomheten starter opp",
+   "anchor": "start of datasenteroperatørens virksomhet",
+   "depends_on": "start of datasenteroperatørens virksomhet",
+   "applies_to": "datasenteroperatører: registration duty in § 1-3 applies before operations start",
+   "evidence": {
+    "provision": "§ 1-3",
+    "quote": "skal registrere seg hos Nasjonal kommunikasjonsmyndighet før virksomheten starter opp"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2025-07-01",
+   "date_type": "absolute",
+   "date_text": "senest 1. juli 2025",
+   "applies_to": "datasenteroperatører that at the entry into force of the law offer datasentertjeneste or operate a datasenter: registration under § 1-3",
+   "evidence": {
+    "provision": "§ 4-2",
+    "quote": "skal oppfylle registreringsplikten i § 1-3 senest 1. juli 2025."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "skal snarest mulig og senest to uker etter endringen meldes til Nasjonal kommunikasjonsmyndighet",
+   "anchor": "endring i registrerte opplysninger",
+   "depends_on": "endring i registrerte opplysninger (including cessation of operations and deletion from the register)",
+   "applies_to": "datasenteroperatører: notification of changes to registered information under § 1-3",
+   "offset_value": 2,
+   "offset_unit": "weeks",
+   "evidence": {
+    "provision": "§ 1-3",
+    "quote": "skal snarest mulig og senest to uker etter endringen meldes til Nasjonal kommunikasjonsmyndighet"
+   }
+  },
+  {
+   "event": "amended",
+   "date": "2026-07-01",
+   "date_type": "absolute",
+   "date_text": "Endret ved forskrift 22 juni 2026 nr. 1320 (i kraft 1 juli 2026).",
+   "applies_to": "§§ 1-3, 1-4, 1-5, 1-6, 1-7, 2-2 and 3-2 as marked as amended or added in the consolidated text",
+   "evidence": {
+    "provision": "§ 1-3",
+    "quote": "Endret ved forskrift 22 juni 2026 nr. 1320 (i kraft 1 juli 2026)."
+   }
+  },
+  {
+   "event": "application",
+   "date": "2026-07-01",
+   "date_type": "absolute",
+   "date_text": "Tilføyd ved forskrift 22 juni 2026 nr. 1320 (i kraft 1 juli 2026).",
+   "applies_to": "§§ 1-4 to 1-7 (customer information, disclosure to authorities, physical representative in Norway, response time), as added by amendment",
+   "evidence": {
+    "provision": "§ 1-4",
+    "quote": "Tilføyd ved forskrift 22 juni 2026 nr. 1320 (i kraft 1 juli 2026)."
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "power_capacity",
+   "variable_text": "terskelverdi for datasenteroperatør (ekomloven § 1-5 nr. 38 bokstav b)",
+   "operator": "=",
+   "value": 0.5,
+   "value_text": "Terskelverdien etter ekomloven § 1-5 nr. 38 bokstav b er 0,5 MW.",
+   "unit": "MW",
+   "measurement": "Not stated in this regulation; the measure is defined in ekomloven § 1-5 nr. 38.",
+   "level": "entity",
+   "trigger": "scope_definition",
+   "consequence": "Sets the capacity cutoff in the operator definition that determines whether the regulation applies to a data centre operator.",
+   "conditions": "The regulation does not state whether the cutoff applies above or below the value; the definition is by reference to ekomloven. Under § 1-3 third paragraph, the authority may order operators below the threshold of particular importance to register.",
+   "evidence": {
+    "provision": "§ 1-2",
+    "quote": "Terskelverdien etter ekomloven § 1-5 nr. 38 bokstav b er 0,5 MW."
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "datasenteroperatør",
+   "defined_in": "ekomloven § 1-5 nr. 38",
+   "evidence": {
+    "provision": "§ 1-1",
+    "quote": "Forskriften gjelder for datasenteroperatører som definert i ekomloven § 1-5 nr. 38."
+   }
+  },
+  {
+   "term": "datasentertjeneste",
+   "defined_in": "ekomloven § 1-5 nr. 37",
+   "evidence": {
+    "provision": "§ 1-4",
+    "quote": "kunder som får tilgang til datasentertjenester, jf. ekomloven § 1-5 nr. 37"
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "registration_notification",
+   "addressee": "data_center_operator",
+   "modality": "shall",
+   "summary": "Data centre operator must register with Nasjonal kommunikasjonsmyndighet before starting operations, with the registration content listed in the provision (name, address, website, data centre locations, services, public-sector customers, crypto-mining power share, subscribed power, expected start, building owner).",
+   "applies_from": "before the operation starts",
+   "evidence": {
+    "provision": "§ 1-3",
+    "quote": "En datasenteroperatør skal registrere seg hos Nasjonal kommunikasjonsmyndighet før virksomheten starter opp."
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "data_center_operator",
+   "modality": "shall",
+   "summary": "Changes to registered information, including cessation of operations and deletion from the register, must be reported to Nasjonal kommunikasjonsmyndighet as soon as possible and no later than two weeks after the change.",
+   "applies_from": "after each change, no later than two weeks after the change",
+   "evidence": {
+    "provision": "§ 1-3",
+    "quote": "Endringer i registrerte opplysninger, herunder om opphør av virksomheten og sletting i registeret, skal snarest mulig og senest to uker etter endringen meldes til Nasjonal kommunikasjonsmyndighet."
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "regulator",
+   "modality": "may",
+   "summary": "Nasjonal kommunikasjonsmyndighet may set a standard form for registration and further requirements for the registration.",
+   "evidence": {
+    "provision": "§ 1-3",
+    "quote": "Nasjonal kommunikasjonsmyndighet kan fastsette standardskjema som skal nyttes ved registreringen"
+   }
+  },
+  {
+   "type": "registration_notification",
+   "addressee": "data_center_operator",
+   "modality": "shall",
+   "summary": "Operators below the 0.5 MW threshold may be ordered by Nasjonal kommunikasjonsmyndighet to register if they are of particular importance; the authority may grant individual exemptions from the registration duty.",
+   "conditional_on": "order by Nasjonal kommunikasjonsmyndighet for operators below the threshold of particular importance",
+   "evidence": {
+    "provision": "§ 1-3",
+    "quote": "Nasjonal kommunikasjonsmyndighet kan pålegge datasenteroperatører som faller under terskelverdien, men som er av særlig viktighet, å registrere seg."
+   }
+  },
+  {
+   "type": "record_keeping",
+   "addressee": "data_center_operator",
+   "modality": "shall",
+   "summary": "Operator must keep available and up to date information on customers receiving data centre services, including where each customer's equipment is located and the customer's name, registration details, address, telephone, email and website.",
+   "applies_from": "from 1 July 2026 (amendment in force)",
+   "evidence": {
+    "provision": "§ 1-4",
+    "quote": "En datasenteroperatør skal ha tilgjengelig og oppdatert informasjon om kunder som får tilgang til datasentertjenester"
+   }
+  },
+  {
+   "type": "cooperation_with_authority",
+   "addressee": "data_center_operator",
+   "modality": "shall",
+   "summary": "Operator must provide customer information described in § 1-4 to the police or prosecution authority, Politiets sikkerhetstjeneste, Nasjonal sikkerhetsmyndighet and Nasjonal kommunikasjonsmyndighet, when and to the extent necessary and on written order under the stated conditions.",
+   "applies_from": "from 1 July 2026 (amendment in force)",
+   "conditional_on": "written order by the competent authority, when necessary for the stated purposes",
+   "evidence": {
+    "provision": "§ 1-5",
+    "quote": "En datasenteroperatør har plikt til å utlevere informasjon som nevnt i § 1-4 om én eller enkelte angitte kunder til"
+   }
+  },
+  {
+   "type": "appointment_of_representative",
+   "addressee": "data_center_operator",
+   "modality": "shall",
+   "summary": "Operator must have a representative present in Norway who can meet in person, has the necessary authority and knowledge to follow up authority enquiries and assist with measures.",
+   "applies_from": "from 1 July 2026 (amendment in force)",
+   "evidence": {
+    "provision": "§ 1-6",
+    "quote": "En datasenteroperatør skal ha en representant som er til stede i Norge."
+   }
+  },
+  {
+   "type": "cooperation_with_authority",
+   "addressee": "data_center_operator",
+   "modality": "shall",
+   "summary": "During working hours, operator must comply without undue delay with orders under § 1-5 and assist with measures under § 1-6; outside normal working hours it must be on standby to follow up urgent enquiries on short notice.",
+   "applies_from": "from 1 July 2026 (amendment in force)",
+   "conditional_on": "outside working hours: urgent cases concerning crime prevention or national security",
+   "evidence": {
+    "provision": "§ 1-7",
+    "quote": "Innenfor arbeidstid skal datasenteroperatøren etterkomme pålegg etter § 1-5 uten ugrunnet opphold."
+   }
+  },
+  {
+   "type": "management_system",
+   "addressee": "data_center_operator",
+   "modality": "shall",
+   "summary": "Operator must establish and maintain a security management system describing its security work; the leader must review it periodically, make it known to employees and subcontractors to the extent appropriate, document it, and periodically check and audit related plans and documentation.",
+   "evidence": {
+    "provision": "§ 2-1",
+    "quote": "En datasenteroperatør skal etablere og vedlikeholde et styringssystem for sikkerhet som beskriver virksomhetens sikkerhetsarbeid."
+   }
+  },
+  {
+   "type": "risk_assessment",
+   "addressee": "data_center_operator",
+   "modality": "shall",
+   "summary": "Operator must prepare and maintain risk and vulnerability assessments of sufficient scope to identify organisational, physical, logical and human security measures, assess risk from changes affecting security, and document them.",
+   "evidence": {
+    "provision": "§ 2-2",
+    "quote": "En datasenteroperatør skal utarbeide og vedlikeholde risiko- og sårbarhetsvurderinger for å ivareta forsvarlig sikkerhet i datasenteret."
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "data_center_operator",
+   "modality": "shall",
+   "summary": "Operator must prepare, implement and maintain basic security measures (combining barriers, detection, verification and response measures), plan damage-limitation measures, have a recovery plan for an adequate security level, and document these.",
+   "evidence": {
+    "provision": "§ 2-3",
+    "quote": "En datasenteroperatør skal utarbeide, iverksette og vedlikeholde grunnsikringstiltak for å ivareta forsvarlig sikkerhet i datasenteret."
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "data_center_operator",
+   "modality": "shall",
+   "summary": "Operator must prepare, implement and maintain security plans for information, information systems and management systems, including minimum procedures for rights allocation, access control, change, deletion, logging, redundancy, backup, maintenance and testing; the plans must be documented.",
+   "evidence": {
+    "provision": "§ 2-4",
+    "quote": "En datasenteroperatør skal utarbeide, iverksette og vedlikeholde planer for sikring av informasjon, informasjonssystemer og styringssystemer."
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "data_center_operator",
+   "modality": "shall",
+   "summary": "Operator must prepare and maintain contingency plans to ensure adequate security, document them, regularly conduct contingency exercises, document the exercise plan, and take part in exercises arranged by the ministry or Nasjonal kommunikasjonsmyndighet on request.",
+   "conditional_on": "participation in exercises by the ministry or authority on request",
+   "evidence": {
+    "provision": "§ 2-5",
+    "quote": "En datasenteroperatør skal utarbeide og vedlikeholde beredskapsplaner for å ivareta forsvarlig sikkerhet i datasenteret."
+   }
+  },
+  {
+   "type": "audit",
+   "addressee": "data_center_operator",
+   "also_addressees": [
+    "auditor_assessor"
+   ],
+   "modality": "shall",
+   "summary": "When Nasjonal kommunikasjonsmyndighet orders a security audit of all or part of the operation, the audit must be carried out by an independent, qualified third party, its result sent to the authority, and the operator must bear all costs.",
+   "conditional_on": "order by Nasjonal kommunikasjonsmyndighet where information or supervision is insufficient",
+   "evidence": {
+    "provision": "§ 2-6",
+    "quote": "Revisjonen skal foretas av en uavhengig, kvalifisert tredjepart, og resultatet av revisjonen skal sendes Nasjonal kommunikasjonsmyndighet."
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "data_center_operator",
+   "modality": "shall",
+   "summary": "Operator must follow up that suppliers, contractors and others performing work for or on behalf of the operator comply with security requirements set in or under law.",
+   "evidence": {
+    "provision": "§ 2-7",
+    "quote": "En datasenteroperatør skal følge opp at leverandører, entreprenører og andre som utfører arbeid for eller på vegne av operatøren, etterlever sikkerhetskrav fastsatt i eller med hjemmel i lov."
+   }
+  },
+  {
+   "type": "incident_reporting",
+   "addressee": "data_center_operator",
+   "modality": "shall",
+   "summary": "Operator must notify Nasjonal kommunikasjonsmyndighet without undue delay of incidents causing significant breaches of availability, authenticity, integrity or confidentiality of the data centre or its services, with minimum content listed in the provision (cause, consequences, economic and societal impact, affected customers, geographic scope, measures, duration).",
+   "conditional_on": "incidents causing significant breaches",
+   "evidence": {
+    "provision": "§ 2-8",
+    "quote": "En datasenteroperatør skal uten ugrunnet opphold varsle Nasjonal kommunikasjonsmyndighet om hendelser som har medført vesentlige brudd"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "data_center_operator",
+   "modality": "shall",
+   "summary": "Operator must notify customers of possible protective or remedial measures under concrete and significant threats to authenticity, integrity or confidentiality (and may inform them of the threat itself where appropriate), and must notify customers of planned work that may affect the data centre services.",
+   "conditional_on": "concrete and significant threats (for the threat notice); planned work (for the planned-work notice)",
+   "evidence": {
+    "provision": "§ 2-8",
+    "quote": "Ved konkrete og betydelige trusler med fare for brudd på autentisitet, integritet eller konfidensialitet skal datasenteroperatør varsle kundene"
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "regulator",
+   "modality": "may",
+   "summary": "Nasjonal kommunikasjonsmyndighet may issue regulations on more detailed notification procedures.",
+   "evidence": {
+    "provision": "§ 2-8",
+    "quote": "Nasjonal kommunikasjonsmyndighet kan gi forskrift om nærmere prosedyrer for varsling."
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "data_center_operator",
+   "modality": "shall",
+   "summary": "When Nasjonal kommunikasjonsmyndighet orders it in a crisis or emergency situation, operator must operate and maintain the service with personnel and technical solutions in Norway.",
+   "conditional_on": "order by Nasjonal kommunikasjonsmyndighet in a crisis or emergency situation",
+   "evidence": {
+    "provision": "§ 2-9",
+    "quote": "pålegge datasenteroperatørene å drifte og vedlikeholde tjenestetilbudet med personell og tekniske løsninger i Norge."
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_center_operator",
+   "modality": "shall",
+   "summary": "When Nasjonal kommunikasjonsmyndighet orders it after disruption of data centre services, operator must prioritise important societal actors when normal operation is restored.",
+   "conditional_on": "services stopped or disrupted, and prioritisation necessary to safeguard public interests, on order by Nasjonal kommunikasjonsmyndighet",
+   "evidence": {
+    "provision": "§ 2-10",
+    "quote": "pålegge datasenteroperatørene å prioritere viktige samfunnsaktører når normal drift skal gjenopprettes."
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "regulator",
+   "modality": "shall",
+   "summary": "Nasjonal kommunikasjonsmyndighet supervises compliance with the regulation.",
+   "evidence": {
+    "provision": "§ 3-1",
+    "quote": "Nasjonal kommunikasjonsmyndighet fører tilsyn med at kravene i forskriften blir oppfylt"
+   }
+  },
+  {
+   "type": "complaint_mechanism",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Appeals against individual decisions of Nasjonal kommunikasjonsmyndighet under the regulation are decided by the ministry.",
+   "conditional_on": "appeal against an individual decision",
+   "evidence": {
+    "provision": "§ 3-4",
+    "quote": "Klage over enkeltvedtak fattet av Nasjonal kommunikasjonsmyndighet etter denne forskriften, avgjøres av departementet"
+   }
+  },
+  {
+   "type": "registration_notification",
+   "addressee": "data_center_operator",
+   "modality": "shall",
+   "summary": "Operators that offered data centre services or operated a data centre when the Act entered into force must meet the registration duty in § 1-3 by 1 July 2025.",
+   "applies_from": "by 1 July 2025",
+   "conditional_on": "operators offering data centre services or operating a data centre at the Act's entry into force",
+   "evidence": {
+    "provision": "§ 4-2",
+    "quote": "skal oppfylle registreringsplikten i § 1-3 senest 1. juli 2025."
+   }
+  }
+ ],
+ "enforcement": [
+  {
+   "sanction_type": "administrative_fine",
+   "authority": "Nasjonal kommunikasjonsmyndighet",
+   "triggered_by": "A firm, or anyone acting on its behalf, who intentionally or negligently breaches §§ 1-3, 1-4, 1-6, 1-7, 2-1, 2-2, 2-3, 2-4, 2-5, 2-7 or 2-8; or breaches an individual decision made under § 2-6, § 2-9 or § 2-10; or breaches an order made under § 1-5.",
+   "max_penalty_text": "No maximum amount is stated in § 3-2. The § 3-3 cap is tied to breaches of ekomloven § 15-12.",
+   "penalty_formula": "Not stated in this text. § 3-3 lists factors for setting the amount (gravity, duration, culpability, turnover).",
+   "penalty_reference": "§ 3-3; ekomloven § 15-12 (cap provision, not the § 3-2 breaches)",
+   "evidence": {
+    "provision": "§ 3-2",
+    "quote": "Nasjonal kommunikasjonsmyndighet kan ilegge et foretak overtredelsesgebyr"
+   }
+  },
+  {
+   "sanction_type": "administrative_fine",
+   "authority": "Departementet og Nasjonal kommunikasjonsmyndighet",
+   "triggered_by": "A firm, or anyone acting on its behalf, who commits breaches under ekomloven § 15-12.",
+   "max_penalty_text": "Up to 5 percent of the firm's turnover (omsetning: total sales revenue for the last financial year).",
+   "penalty_formula": "Up to 5 percent of the firm's turnover (samlede salgsinntekt for siste regnskapsår).",
+   "penalty_reference": "ekomloven § 15-12",
+   "evidence": {
+    "provision": "§ 3-3",
+    "quote": "kan ilegge overtredelsesgebyr på inntil 5 prosent av foretakets omsetning"
+   }
+  },
+  {
+   "sanction_type": "administrative_fine",
+   "authority": "Departementet og Nasjonal kommunikasjonsmyndighet",
+   "triggered_by": "Natural persons who intentionally or negligently commit breaches under ekomloven § 15-12.",
+   "max_penalty_text": "Up to 30 rettsgebyrer for natural persons.",
+   "max_penalty_amount": 30,
+   "currency": "rettsgebyr",
+   "penalty_formula": "Up to 30 rettsgebyrer (unit of account as written in the text).",
+   "penalty_reference": "ekomloven § 15-12",
+   "evidence": {
+    "provision": "§ 3-3",
+    "quote": "kan ilegge overtredelsesgebyr på inntil 30 rettsgebyrer for fysiske personer"
+   }
+  },
+  {
+   "sanction_type": "other",
+   "authority": "Nasjonal kommunikasjonsmyndighet",
+   "triggered_by": "Breaches of the regulation's requirements, as supervised under § 3-1.",
+   "max_penalty_text": "The text refers to sanctions under ekomloven chapter 15 without stating amounts.",
+   "penalty_reference": "ekomloven kapittel 15",
+   "evidence": {
+    "provision": "§ 3-1",
+    "quote": "gjennomføre sanksjoner etter ekomloven kapittel 15"
+   }
+  }
+ ],
+ "section_status": {}
+}

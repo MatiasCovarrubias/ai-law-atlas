@@ -1,0 +1,197 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "us-hr6077-119",
+ "tier": "B",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "light, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-interim-20261014"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "AGORA plaintext (ETO, CC BY-NC 4.0), local cache",
+  "url": "https://www.congress.gov/bill/119th-congress/house-bill/6077/text",
+  "retrieved": "2026-02-17",
+  "version": "1.33.0 (2026-09-16)",
+  "language": "en",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "ai_sectoral"
+  ],
+  "primary_domain": "ai_sectoral",
+  "mechanisms": [
+   "direct_subsidy_grant",
+   "mandate_obligation",
+   "disclosure_transparency"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "government_agency",
+   "research_institution"
+  ],
+  "decision_margins": [],
+  "territorial_scope": {
+   "types": [
+    "national"
+   ],
+   "description": "Federal grant program administered by HRSA under the Public Health Service Act, open to qualified medical schools and residency sponsoring institutions.",
+   "evidence": {
+    "provision": "Sec. 2",
+    "quote": "Part C of title VII of the Public Health Service Act (42 U.S.C. 293k et seq.) is amended by adding at the end the following:"
+   }
+  },
+  "agora_applications": [
+   "Medicine, life sciences and public health"
+  ],
+  "agora_incentives": [
+   "Subsidies"
+  ],
+  "agora_strategies": [
+   "Government support: AI workforce-related"
+  ]
+ },
+ "summary": {
+  "short": "The bill adds a competitive HRSA grant program in the Public Health Service Act for AI education and training of medical students, residents and faculty at qualified medical schools and residency sponsoring institutions. It authorizes $1,000,000 per fiscal year for fiscal years 2026 through 2030.",
+  "long": "The bill amends Part C of title VII of the Public Health Service Act by adding subpart III (Secs. 749C to 749G). The Secretary of Health and Human Services, acting through the Health Resources and Services Administration, must establish a competitive grant program for qualified medical schools or residency sponsoring institutions to educate and train medical students, medical residents and medical faculty in deploying artificial intelligence in the medical profession. Individual grants may not exceed $100,000, and a recipient may receive no more than $100,000 per fiscal year. Permitted uses include AI for diagnostics and treatment recommendations, integration into clinical decision-making, instruction on ethical issues such as bias and patient data privacy, and practical demonstrations. Administrative costs are capped at 10 percent, and grant funds may not support publication in predatory journals. Recipients must submit annual reports starting within 180 days of receiving a grant, and must make funded educational materials publicly available within 30 days of each report. The Secretary gives priority to schools serving medically underserved communities and may award no more than two grants within the same 2020 Census Division. The authorization of $1,000,000 per fiscal year covers fiscal years 2026 through 2030.](placeholder)"
+ },
+ "relations": [
+  {
+   "relation": "amends",
+   "target_text": "Public Health Service Act (42 U.S.C. 293k et seq.), Part C of title VII",
+   "note": "Adds new subpart III (Secs. 749C to 749G) at the end of Part C of title VII. Sec. 749E(b)(1) and 749E(f) also refer to section 796 of the Act (see notes).",
+   "evidence": {
+    "provision": "Sec. 2",
+    "quote": "Part C of title VII of the Public Health Service Act (42 U.S.C. 293k et seq.) is amended by adding at the end the following:"
+   }
+  }
+ ],
+ "notes": "Bill as introduced; no legislative history in the document. No repeal, legal basis or implementation relation is stated. Secs. 749E(b)(1) and 749E(f) cross-refer to 'section 796' of the Public Health Service Act, which the bill does not reproduce; it is not coded as a separate row because it is the same target as the amendment. The Act is not in the registry, so target_instrument_id is empty. Grant cap: $100,000 per application (749E(b)(1)(A)) and $100,000 per fiscal year (749E(h)); both are stated and consistent, to be coded under thresholds.",
+ "events": [
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "Not later than 180 days after receiving a grant under section 749E",
+   "depends_on": "receipt of a grant under section 749E",
+   "applies_to": "annual reports to the Secretary under SEC. 749F(a) by grant recipients",
+   "offset_value": 180,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "SEC. 749F(a)",
+    "quote": "Not later than 180 days after receiving a grant under section 749E, and annually thereafter for the duration of the grant period"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "annually thereafter for the duration of the grant period",
+   "applies_to": "annual reports to the Secretary under SEC. 749F(a) by grant recipients",
+   "evidence": {
+    "provision": "SEC. 749F(a)",
+    "quote": "annually thereafter for the duration of the grant period"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "Not later than 30 days after submitting a report under subsection (a)",
+   "depends_on": "submission of a report under SEC. 749F(a)",
+   "applies_to": "public availability of educational materials funded by the grant (SEC. 749F(b))",
+   "offset_value": 30,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "SEC. 749F(b)",
+    "quote": "Not later than 30 days after submitting a report under subsection (a)"
+   }
+  },
+  {
+   "event": "application",
+   "date": "2026",
+   "date_type": "absolute",
+   "date_text": "There is authorized to be appropriated to carry out this subpart $1,000,000 for each of fiscal years 2026 through 2030.",
+   "applies_to": "appropriations authorized for subpart III (SEC. 749C to 749G) for fiscal years 2026 through 2030",
+   "evidence": {
+    "provision": "SEC. 749G",
+    "quote": "There is authorized to be appropriated to carry out this subpart $1,000,000 for each of fiscal years 2026 through 2030."
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "other",
+   "variable_text": "desired grant amount per application",
+   "operator": "<=",
+   "value": 100000,
+   "value_text": "not to exceed $100,000",
+   "unit": "USD",
+   "currency": "USD",
+   "measurement": "amount stated in the application",
+   "level": "entity",
+   "trigger": "cap",
+   "consequence": "The application must state a desired grant amount not exceeding $100,000.",
+   "conditions": "Applicant must be a qualified medical school or residency sponsoring institution submitting an application under section 796.",
+   "evidence": {
+    "provision": "Sec. 2, SEC. 749E(b)(1)(A)",
+    "quote": "the desired grant amount, not to exceed $100,000"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "grant funding received by one school or institution per fiscal year under this section",
+   "operator": "<=",
+   "value": 100000,
+   "value_text": "may not receive more than $100,000 in funding under this section in any fiscal year",
+   "unit": "USD",
+   "currency": "USD",
+   "measurement": "per fiscal year",
+   "level": "entity",
+   "trigger": "cap",
+   "consequence": "A qualified medical school or residency sponsoring institution may not receive more than $100,000 in funding under this section in any fiscal year.",
+   "conditions": "Funding is under the grant program in section 749E.",
+   "evidence": {
+    "provision": "Sec. 2, SEC. 749E(h)",
+    "quote": "may not receive more than $100,000 in funding under this section in any fiscal year"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "share of grant amount that may be used for administrative costs",
+   "operator": "<=",
+   "value": 10,
+   "value_text": "Not more than 10 percent of the amount of a grant under this section may be used for administrative costs",
+   "unit": "percent",
+   "measurement": "share of the amount of a grant under this section",
+   "level": "entity",
+   "trigger": "cap",
+   "consequence": "Administrative costs, including preparation of annual reports, are limited to 10 percent of the grant amount.",
+   "conditions": "Applies to grants under section 749E.",
+   "evidence": {
+    "provision": "Sec. 2, SEC. 749E(c)(2)",
+    "quote": "Not more than 10 percent of the amount of a grant under this section may be used for administrative costs"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "number of grants awarded to qualified medical schools or residency sponsoring institutions within the same 2020 United States Census Division",
+   "operator": "<=",
+   "value": 2,
+   "value_text": "to not more than two qualified medical schools or residency sponsoring institutions located within the same 2020 United States Census Division",
+   "unit": "institutions",
+   "measurement": "per 2020 United States Census Division",
+   "level": "jurisdiction",
+   "trigger": "cap",
+   "consequence": "The Secretary may award grants to not more than two qualified medical schools or residency sponsoring institutions located within the same 2020 United States Census Division.",
+   "conditions": "Applies to the extent practicable geographic distribution under section 749E(g).",
+   "evidence": {
+    "provision": "Sec. 2, SEC. 749E(g)",
+    "quote": "to not more than two qualified medical schools or residency sponsoring institutions located within the same 2020 United States Census Division"
+   }
+  }
+ ],
+ "section_status": {}
+}

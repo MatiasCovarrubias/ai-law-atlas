@@ -1,0 +1,123 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "us-ny-new-york-data-privacy-act-2023",
+ "tier": "B",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "light, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-interim-20261014"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "AGORA plaintext (ETO, CC BY-NC 4.0), local cache",
+  "url": "https://www.nysenate.gov/legislation/bills/2023/A3593",
+  "retrieved": "2024-05-14",
+  "version": "1.33.0 (2026-09-16)",
+  "language": "en",
+  "extent": "partial",
+  "note": "AGORA sections of the act only: An Act to amend the general business law, in relation to the management\n and oversight of personal data (Section 7)"
+ },
+ "classification": {
+  "domains": [
+   "algorithmic_decision_systems"
+  ],
+  "primary_domain": "algorithmic_decision_systems",
+  "mechanisms": [
+   "mandate_obligation",
+   "disclosure_transparency"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "data_controller",
+   "data_processor"
+  ],
+  "affected_roles": [
+   "consumers_users",
+   "workers"
+  ],
+  "decision_margins": [
+   "firm:compliance_process",
+   "household:access",
+   "household:employment"
+  ],
+  "territorial_scope": {
+   "types": [
+    "subnational"
+   ],
+   "description": "Applies as New York State law to controllers and processors covered by its automated decision-making provisions; the excerpt states that the jurisdictional limits of another section do not apply to these paragraphs.",
+   "evidence": {
+    "provision": "Automated decision-making, subpar. (C)(IV)",
+    "quote": "FOR PURPOSES OF THIS PARAGRAPH, THE LIMITATIONS TO JURISDICTIONAL SCOPE SET FORTH IN PARAGRAPHS (B) AND (C) OF SUBDIVISION TWO OF SECTION ELEVEN HUNDRED ONE OF THIS ARTICLE SHALL NOT APPLY."
+   }
+  },
+  "agora_applications": [
+   "Finance and investment",
+   "Medicine, life sciences and public health"
+  ],
+  "agora_harms": [
+   "Discrimination"
+  ],
+  "agora_risk_factors": [
+   "Bias",
+   "Transparency"
+  ],
+  "agora_strategies": [
+   "Disclosure",
+   "Disclosure: About evaluation",
+   "Evaluation: Impact assessment",
+   "Evaluation: External auditing"
+  ]
+ },
+ "summary": {
+  "short": "Proposed New York bill amending the General Business Law. Requires controllers using solely automated decisions that materially contribute to denials of key services (finance, housing, insurance, health care, education, employment, necessities) to disclose this, offer appeals with 45-day responses, and conduct annual impact assessments by independent auditors.",
+  "long": "Proposed bill amending New York's General Business Law on the management and oversight of personal data. Under subdivision (A), a controller making an automated decision involving solely automated processing that materially contributes to denial of financial or lending services, housing, public accommodation, insurance, health care services, or access to basic necessities must disclose that the decision was made by a solely automated process, offer an appeal allowing the consumer to contest the decision, provide supporting information and obtain meaningful human review, and explain the appeal process. Controllers must respond to appeals within forty-five days, extendable once by forty-five days with notice and reasons. Under subdivision (C), controllers or processors engaged in automated decision-making in those fields, including those assisting others, must conduct an annual impact assessment describing objectives, design, training data, accuracy, fairness and bias testing, and assessing discriminatory results across protected characteristics. Assessments must use an external independent auditor or researcher, be publicly available online, be retained for at least six years, and be available to state, federal or local authorities on request. The excerpt states no effective date, penalties or enforcement authority, and it disapplies the jurisdictional limits of another section for these paragraphs."
+ },
+ "relations": [
+  {
+   "relation": "cross_references",
+   "target_text": "Section 1101 ('section eleven hundred one') of 'this article'; the article is not identified in the excerpt",
+   "note": "Paragraph (C)(IV) makes the jurisdictional-scope limitations in paragraphs (B) and (C) of subdivision two of section 1101 inapplicable to the automated decision-making provisions. The target text is not included in the excerpt, and it is unclear whether 'this article' refers to the bill's own text or to an existing law. Target instrument not in registry, so target_instrument_id is left empty.",
+   "evidence": {
+    "provision": "Automated decision-making provision, para. (C)(IV)",
+    "quote": "THE LIMITATIONS TO JURISDICTIONAL SCOPE SET FORTH IN PARAGRAPHS (B) AND (C) OF SUBDIVISION TWO OF SECTION ELEVEN HUNDRED ONE OF THIS ARTICLE SHALL NOT APPLY."
+   }
+  }
+ ],
+ "notes": "Excerpt only: the document contains the automated decision-making provision (paras (A) to (C)). It gives no section number, title or enacting article, and the text of section 1101 is not included. Bill title, status and stage come from registry metadata, not the document, and the document does not say it amends the General Business Law. Scope inconsistency: para (A) lists financial or lending services, housing, public accommodation, insurance, health care services and access to basic necessities, while (C)(I) also lists education enrollment and employment. Para (A) places duties on the controller, while (C) places them on the controller or processor. Para (A)(B) appeal-response periods are as stated in the text; no other relations are stated in this excerpt.",
+ "events": [
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "A CONTROLLER MUST RESPOND TO A CONSUMER'S APPEAL WITHIN FORTY-FIVE DAYS OF RECEIPT OF THE APPEAL. THAT PERIOD MAY BE EXTENDED ONCE BY FORTY-FIVE ADDITIONAL DAYS WHERE REASONABLY NECESSARY",
+   "anchor": "receipt of the appeal",
+   "depends_on": "receipt of consumer's appeal",
+   "applies_to": "appeals of solely automated decisions that materially contribute to a denial of financial or lending services, housing, public accommodation, insurance, health care services, or access to basic necessities",
+   "offset_value": 45,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Sec. 1(B)",
+    "quote": "A CONTROLLER MUST RESPOND TO A CONSUMER'S APPEAL WITHIN FORTY-FIVE"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "ANNUALLY",
+   "applies_to": "annual impact assessments of automated decision-making affecting financial or lending services, housing, public accommodation, insurance, education enrollment, employment, health care services, or access to basic necessities",
+   "evidence": {
+    "provision": "Sec. 1(C)(I)",
+    "quote": "CONDUCT AN IMPACT ASSESSMENT OF SUCH AUTOMATED DECISION-MAKING"
+   }
+  }
+ ],
+ "section_status": {
+  "thresholds": {
+   "status": "not_found",
+   "note": "The supplied text is a partial excerpt (automated decision-making provisions only). It contains no numeric cutoff that changes legal treatment. The 45-day appeal response period and 6-year retention period are procedural or retention duties, coded as events or obligations, not thresholds. The cross-reference to subdivision two of section 1101 (jurisdictional scope limits) is not numeric."
+  }
+ },
+ "thresholds": []
+}

@@ -1,0 +1,615 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "cn-pi-outbound-certification-measures-2025",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (connectors/fetch_texts.py)",
+  "url": "https://www.gov.cn/zhengce/zhengceku/202510/content_7044914.htm",
+  "retrieved": "2026-10-13",
+  "version": "as fetched",
+  "language": "zh",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "data_transfer_localization",
+   "data_protection"
+  ],
+  "primary_domain": "data_transfer_localization",
+  "mechanisms": [
+   "licensing_permit_certification",
+   "registration_notification",
+   "mandate_obligation",
+   "standard_setting",
+   "prohibition_ban"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "data_controller",
+   "auditor_assessor",
+   "government_agency"
+  ],
+  "affected_roles": [
+   "consumers_users"
+  ],
+  "decision_margins": [
+   "firm:trade",
+   "firm:compliance_process",
+   "household:data_privacy"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national",
+    "extraterritorial"
+   ],
+   "description": "Applies to personal information handlers transferring data out of China, and requires overseas handlers to apply through a domestic establishment or designated representative.",
+   "evidence": {
+    "provision": "Art. 7 para. 2",
+    "quote": "中华人民共和国境外的个人信息处理者申请个人信息出境认证的，应当由其在境内设立的专门机构或者指定代表协助进行申请。"
+   }
+  },
+  "agora_harms": [
+   "Violation of civil or human rights, including privacy"
+  ],
+  "agora_strategies": [
+   "Licensing, registration, and certification",
+   "Evaluation: Conformity assessment",
+   "Evaluation: Impact assessment",
+   "Input controls: Data circulation"
+  ]
+ },
+ "summary": {
+  "short": "Sets rules for certifying outbound transfers of personal information by Chinese personal information handlers through accredited certification bodies, with eligibility limits and an effective date of 1 January 2026.",
+  "long": "Issued by the CAC and SAMR (Order No. 20, 14 October 2025, adopted 21 July 2025), the measures govern transfers of personal information out of China through certification by a professional certification body. Eligible handlers must not be critical information infrastructure operators and must cumulatively transfer, from 1 January of a year, personal information (excluding sensitive personal information and important data) of 100,000 to under 1 million people, or sensitive personal information of under 10,000 people; splitting volumes to evade a security assessment is prohibited. Before applying, handlers must give notice, obtain separate consent where required and complete an impact assessment covering six listed factors. Certificates last three years, with renewal applications due six months before expiry. Certification bodies must file with the CAC, report certificate changes within five working days, and suspend or revoke certificates when transfers fall outside the certified scope. The CAC and SAMR set rules and standards, supervise certification, and may summon certified handlers facing significant risk. Overseas handlers must act through a domestic establishment or designated representative. The measures take effect on 1 January 2026."
+ },
+ "relations": [
+  {
+   "relation": "legal_basis",
+   "target_text": "中华人民共和国个人信息保护法",
+   "note": "Enabling law cited in the preamble. Art. 3 also cites its Art. 38(1)(2) as the statutory basis for outbound certification.",
+   "evidence": {
+    "provision": "Art. 1",
+    "quote": "根据《中华人民共和国个人信息保护法》、《网络数据安全管理条例》、《中华人民共和国认证认可条例》等法律法规，制定本办法。"
+   }
+  },
+  {
+   "relation": "legal_basis",
+   "target_text": "网络数据安全管理条例",
+   "note": "Cited in the preamble as a basis. Art. 17 also refers to it for handling violations.",
+   "evidence": {
+    "provision": "Art. 1",
+    "quote": "《网络数据安全管理条例》"
+   }
+  },
+  {
+   "relation": "legal_basis",
+   "target_text": "中华人民共和国认证认可条例",
+   "note": "Cited in the preamble as a basis. Art. 17 also refers to it for handling violations.",
+   "evidence": {
+    "provision": "Art. 1",
+    "quote": "《中华人民共和国认证认可条例》"
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "国家互联网信息办公室",
+   "role": "designated",
+   "function": "Co-develops outbound certification standards and technical specifications (Art. 4); files and publishes certification body filings (Art. 12); co-supervises certification activities (Art. 13); receives reports and complaints (Arts. 11, 15); may summon certified processors (Art. 16).",
+   "evidence": {
+    "provision": "Art. 4",
+    "quote": "国家网信部门会同国家数据管理部门和其他有关部门制定个人信息出境认证相关标准、技术规范"
+   }
+  },
+  {
+   "name": "国家市场监督管理部门",
+   "role": "designated",
+   "function": "Approves certification qualifications of certification bodies (Art. 12); formulates certification rules, unified certificates and marks with the CAC (Art. 4); shares certification information (Art. 9); supervises certification activities (Art. 13).",
+   "evidence": {
+    "provision": "Art. 4",
+    "quote": "国家市场监督管理部门会同国家网信部门制定个人信息保护认证规则、统一认证证书及标志"
+   }
+  },
+  {
+   "name": "国家数据管理部门",
+   "role": "designated",
+   "function": "Works with the CAC on standards (Art. 4) and reviews filing materials of certification bodies (Art. 12).",
+   "evidence": {
+    "provision": "Art. 12",
+    "quote": "国家网信部门收到专业认证机构提交的备案材料后，会同国家数据管理部门对备案材料进行审核"
+   }
+  },
+  {
+   "name": "专业认证机构",
+   "role": "addressee",
+   "function": "Certification bodies with personal information protection certification qualifications; issue certificates (Art. 8), report certificate information (Art. 9), suspend or revoke certificates (Art. 10), report violations (Art. 11), and file with the CAC (Art. 12).",
+   "evidence": {
+    "provision": "Art. 8",
+    "quote": "专业认证机构应当按照认证基本规范、个人信息保护认证规则开展个人信息出境认证活动"
+   }
+  },
+  {
+   "name": "个人信息处理者",
+   "role": "addressee",
+   "function": "Processors that transfer personal information abroad through certification; must obtain certification, notify and obtain separate consent and conduct impact assessments before applying (Art. 6), and rectify when required (Art. 16).",
+   "evidence": {
+    "provision": "Art. 2",
+    "quote": "个人信息处理者通过个人信息保护认证的方式向中华人民共和国境外提供个人信息，适用本办法。"
+   }
+  },
+  {
+   "name": "全国认证认可信息公共服务平台",
+   "role": "listed",
+   "function": "Platform to which certification information is reported (Art. 9) and on which suspensions and revocations are published (Art. 10).",
+   "evidence": {
+    "provision": "Art. 9",
+    "quote": "向全国认证认可信息公共服务平台报送个人信息出境认证证书相关信息"
+   }
+  }
+ ],
+ "notes": "Annotated from the single copy of the order text; the source page repeats the full text twice. Art. 19 sets effect from 2026-01-01. Art. 5(2) numeric thresholds and the Art. 8 three-year certificate validity are not coded in this pass (relations, entities, notes only). Target instrument IDs and LEI/ticker values are empty strings because the registry IDs were not supplied and no identifiers are verified. Art. 17 refers to criminal liability without naming an offence. section_status entries are set to not_applicable because both sections are populated; the schema requires the field.",
+ "events": [
+  {
+   "event": "adopted",
+   "date": "2025-07-21",
+   "date_type": "absolute",
+   "date_text": "已经2025年7月21日国家互联网信息办公室2025年第17次室务会会议审议通过",
+   "applies_to": "measures as a whole",
+   "evidence": {
+    "provision": "Order preamble (令文)",
+    "quote": "已经2025年7月21日国家互联网信息办公室2025年第17次室务会会议审议通过"
+   }
+  },
+  {
+   "event": "signed",
+   "date": "2025-10-14",
+   "date_type": "absolute",
+   "date_text": "2025年10月14日",
+   "applies_to": "measures as a whole (order signed by the CAC director and the SAMR director)",
+   "evidence": {
+    "provision": "Order signature block (令文落款)",
+    "quote": "2025年10月14日"
+   }
+  },
+  {
+   "event": "published",
+   "date": "2025-10-14",
+   "date_type": "absolute",
+   "date_text": "成文日期：2025年10月14日; 现予公布",
+   "applies_to": "measures as a whole",
+   "evidence": {
+    "provision": "Order preamble (令文)",
+    "quote": "现予公布"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2026-01-01",
+   "date_type": "absolute",
+   "date_text": "自2026年1月1日起施行",
+   "applies_to": "measures as a whole",
+   "evidence": {
+    "provision": "Art. 19",
+    "quote": "本办法自2026年1月1日起施行"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "证书到期需继续使用的，个人信息处理者应当在有效期届满前6个月提出认证申请",
+   "anchor": "certificate expiry (有效期届满)",
+   "depends_on": "expiry of the 3-year certificate validity period",
+   "applies_to": "personal information processors continuing to use a certificate: renewal application",
+   "offset_value": -6,
+   "offset_unit": "months",
+   "evidence": {
+    "provision": "Art. 8 para. 2",
+    "quote": "应当在有效期届满前6个月提出认证申请"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "应当在出具认证证书或者认证证书状态发生变化后5个工作日内",
+   "anchor": "issuance of certificate or change in certificate status",
+   "depends_on": "issuance of a certification certificate or a change in its status",
+   "applies_to": "certification bodies: reporting certificate information to the national certification information platform",
+   "offset_value": 5,
+   "offset_unit": "business_days",
+   "evidence": {
+    "provision": "Art. 9 para. 1",
+    "quote": "应当在出具认证证书或者认证证书状态发生变化后5个工作日内"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "应当自国家市场监督管理部门批准取得个人信息保护认证资质之日起10个工作日内向国家网信部门办理备案手续",
+   "anchor": "SAMR approval of personal information protection certification qualification",
+   "depends_on": "approval by the State Administration for Market Regulation of the certification qualification",
+   "applies_to": "certification bodies: filing with the CAC",
+   "offset_value": 10,
+   "offset_unit": "business_days",
+   "evidence": {
+    "provision": "Art. 12 para. 1",
+    "quote": "应当自国家市场监督管理部门批准取得个人信息保护认证资质之日起10个工作日内向国家网信部门办理备案手续"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "材料齐全的，应当在30个工作日内予以备案并进行公示；材料不齐全的，不予备案，应当在30个工作日内通知专业认证机构并说明理由",
+   "anchor": "CAC receipt of certification body filing materials",
+   "depends_on": "receipt by the CAC of the filing materials of the certification body",
+   "applies_to": "CAC decision on filing: publication of filing if materials complete, or notice of reasons if incomplete",
+   "offset_value": 30,
+   "offset_unit": "business_days",
+   "evidence": {
+    "provision": "Art. 12 para. 3",
+    "quote": "材料齐全的，应当在30个工作日内予以备案并进行公示"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "data_subjects_count",
+   "variable_text": "累计向境外提供个人信息的人数（不含敏感个人信息）",
+   "operator": "range",
+   "value": 100000,
+   "value_max": 1000000,
+   "value_text": "自当年1月1日起累计向境外提供10万人以上、不满100万人个人信息（不含敏感个人信息）",
+   "unit": "persons",
+   "measurement": "Cumulative count of persons whose personal information is provided overseas, counted from 1 January of the current year; excludes sensitive personal information and important data (Art. 5 para. 2)",
+   "level": "entity",
+   "trigger": "eligibility",
+   "consequence": "Qualifies the personal information processor for the certification route for providing personal information overseas, if the other conditions are met",
+   "conditions": "Also requires not being a critical information infrastructure operator (Art. 5 para. 1 item (1)); alternative to the sensitive-data limit in Art. 5 para. 1 item (2) (或者); quantity splitting to avoid the security assessment is prohibited (Art. 5 para. 4)",
+   "evidence": {
+    "provision": "Art. 5 para. 1 item (2)",
+    "quote": "自当年1月1日起累计向境外提供10万人以上、不满100万人个人信息（不含敏感个人信息）或者不满1万人敏感个人信息"
+   }
+  },
+  {
+   "variable": "data_subjects_count",
+   "variable_text": "累计向境外提供敏感个人信息的人数",
+   "operator": "<",
+   "value": 10000,
+   "value_text": "不满1万人敏感个人信息",
+   "unit": "persons",
+   "measurement": "Cumulative count of persons whose sensitive personal information is provided overseas, counted from 1 January of the current year",
+   "level": "entity",
+   "trigger": "eligibility",
+   "consequence": "Qualifies the personal information processor for the certification route for providing sensitive personal information overseas, if the other conditions are met",
+   "conditions": "Alternative to the 10万人以上 limit for non-sensitive personal information in Art. 5 para. 1 item (2) (或者); also requires not being a critical information infrastructure operator (Art. 5 para. 1 item (1)); excludes important data (Art. 5 para. 2)",
+   "evidence": {
+    "provision": "Art. 5 para. 1 item (2)",
+    "quote": "自当年1月1日起累计向境外提供10万人以上、不满100万人个人信息（不含敏感个人信息）或者不满1万人敏感个人信息"
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "个人信息出境认证",
+   "defined_in": "this instrument",
+   "evidence": {
+    "provision": "Art. 3",
+    "quote": "本办法所称个人信息出境认证，是指按照《中华人民共和国个人信息保护法》第三十八条第一款第二项规定，由依法取得个人信息保护认证资质的专业认证机构"
+   }
+  },
+  {
+   "term": "专业认证机构",
+   "defined_in": "this instrument",
+   "evidence": {
+    "provision": "Art. 3",
+    "quote": "由依法取得个人信息保护认证资质的专业认证机构"
+   }
+  },
+  {
+   "term": "向境外提供的个人信息",
+   "defined_in": "this instrument",
+   "evidence": {
+    "provision": "Art. 5 para. 2",
+    "quote": "前款所称向境外提供的个人信息，不包括重要数据。"
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The National Cyberspace Administration, together with the national data management department and other relevant departments, formulates standards and technical specifications for outbound personal information certification.",
+   "applies_from": "2026-01-01 (effective date, Art. 19)",
+   "evidence": {
+    "provision": "Art. 4",
+    "quote": "国家网信部门会同国家数据管理部门和其他有关部门制定个人信息出境认证相关标准、技术规范"
+   }
+  },
+  {
+   "type": "eligibility_condition",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "A personal information processor providing personal information abroad through certification must simultaneously meet the listed conditions: not a critical information infrastructure operator, and cumulative outbound volume of 100,000 or more but fewer than 1 million individuals' personal information (excluding sensitive personal information), or fewer than 10,000 individuals' sensitive personal information, counted from 1 January of the current year. Important data is excluded.",
+   "applies_from": "2026-01-01 (effective date, Art. 19)",
+   "conditional_on": "Unless laws, administrative regulations or the national cyberspace authority provide otherwise",
+   "evidence": {
+    "provision": "Art. 5",
+    "quote": "个人信息处理者通过个人信息出境认证的方式向境外提供个人信息的，应当同时符合下列情形"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "data_controller",
+   "modality": "shall_not",
+   "summary": "A personal information processor may not use quantity-splitting or similar means to route personal information that must pass an outbound security assessment through the certification route.",
+   "applies_from": "2026-01-01 (effective date, Art. 19)",
+   "evidence": {
+    "provision": "Art. 5",
+    "quote": "个人信息处理者不得采取数量拆分等手段"
+   }
+  },
+  {
+   "type": "impact_assessment",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Before applying for certification for outbound provision, the processor must conduct a personal information protection impact assessment covering six listed matters (purpose and lawfulness, scale and sensitivity, overseas recipient's obligations and capabilities, risks after transfer, foreign legal environment, other matters).",
+   "applies_from": "2026-01-01 (effective date, Art. 19)",
+   "conditional_on": "Before applying for certification",
+   "evidence": {
+    "provision": "Art. 6",
+    "quote": "应当按照法律、行政法规的规定履行告知、取得个人单独同意、进行个人信息保护影响评估等义务"
+   }
+  },
+  {
+   "type": "consent",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Before applying for certification for outbound provision, the processor must obtain individuals' separate consent, as required by laws and administrative regulations.",
+   "applies_from": "2026-01-01 (effective date, Art. 19)",
+   "conditional_on": "Before applying for certification",
+   "evidence": {
+    "provision": "Art. 6",
+    "quote": "取得个人单独同意"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Before applying for certification for outbound provision, the processor must give notice as required by laws and administrative regulations.",
+   "applies_from": "2026-01-01 (effective date, Art. 19)",
+   "conditional_on": "Before applying for certification",
+   "evidence": {
+    "provision": "Art. 6",
+    "quote": "履行告知"
+   }
+  },
+  {
+   "type": "licensing_certification",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "A processor providing personal information abroad through certification must apply to a professional certification body for outbound certification.",
+   "applies_from": "2026-01-01 (effective date, Art. 19)",
+   "conditional_on": "When providing personal information abroad through the certification method",
+   "evidence": {
+    "provision": "Art. 7",
+    "quote": "个人信息处理者通过认证方式向境外提供个人信息的，应当向专业认证机构申请个人信息出境认证"
+   }
+  },
+  {
+   "type": "appointment_of_representative",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "A personal information processor located outside the PRC must apply through a dedicated institution or designated representative established within the PRC.",
+   "applies_from": "2026-01-01 (effective date, Art. 19)",
+   "conditional_on": "Processor located outside the PRC",
+   "evidence": {
+    "provision": "Art. 7",
+    "quote": "中华人民共和国境外的个人信息处理者申请个人信息出境认证的，应当由其在境内设立的专门机构或者指定代表协助进行申请"
+   }
+  },
+  {
+   "type": "licensing_certification",
+   "addressee": "auditor_assessor",
+   "modality": "shall",
+   "summary": "The professional certification body must carry out outbound certification under the basic certification norms and the certification rules, and must promptly issue a certificate to conforming applicants. Certificates are valid for 3 years.",
+   "applies_from": "2026-01-01 (effective date, Art. 19)",
+   "conditional_on": "Applicant meets certification requirements",
+   "evidence": {
+    "provision": "Art. 8",
+    "quote": "专业认证机构应当按照认证基本规范、个人信息保护认证规则开展个人信息出境认证活动"
+   }
+  },
+  {
+   "type": "licensing_certification",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "To continue use after certificate expiry, the processor must apply for renewal at least 6 months before the certificate's validity period ends.",
+   "applies_from": "2026-01-01 (effective date, Art. 19)",
+   "conditional_on": "Certificate expiring and continued use required; applies 6 months before expiry",
+   "evidence": {
+    "provision": "Art. 8",
+    "quote": "证书到期需继续使用的，个人信息处理者应当在有效期届满前6个月提出认证申请"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "auditor_assessor",
+   "modality": "shall",
+   "summary": "The certification body must report certificate information (certificate number, certified processor name, certification scope, status changes) to the national certification and accreditation public information platform within 5 working days of issuing or changing a certificate's status.",
+   "applies_from": "2026-01-01 (effective date, Art. 19)",
+   "conditional_on": "Upon issuance of a certificate or change in certificate status",
+   "evidence": {
+    "provision": "Art. 9",
+    "quote": "专业认证机构应当在出具认证证书或者认证证书状态发生变化后5个工作日内，向全国认证认可信息公共服务平台报送"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The State Administration for Market Regulation and the cyberspace authority must establish a certification information sharing mechanism.",
+   "applies_from": "2026-01-01 (effective date, Art. 19)",
+   "evidence": {
+    "provision": "Art. 9",
+    "quote": "国家市场监督管理部门与国家网信部门建立认证信息共享机制"
+   }
+  },
+  {
+   "type": "licensing_certification",
+   "addressee": "auditor_assessor",
+   "modality": "shall",
+   "summary": "Where the certification body finds that a certified processor's outbound activity is inconsistent with the certification scope, or that it no longer meets certification requirements, it must suspend the certificate's use until the certificate is revoked. Under the second paragraph, the body must cooperate when the cyberspace authority or other departments find such a situation.",
+   "applies_from": "2026-01-01 (effective date, Art. 19)",
+   "conditional_on": "Outbound activity inconsistent with certification scope, or processor no longer meets certification requirements",
+   "evidence": {
+    "provision": "Art. 10",
+    "quote": "不再符合认证要求的，应当暂停其使用直至撤销相关认证证书"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "auditor_assessor",
+   "modality": "shall",
+   "summary": "The situations under the first two paragraphs of Art. 10 must be published on the national certification and accreditation public information platform. The text does not name the body that publishes.",
+   "applies_from": "2026-01-01 (effective date, Art. 19)",
+   "conditional_on": "Situations under Art. 10 first and second paragraphs",
+   "evidence": {
+    "provision": "Art. 10",
+    "quote": "应当通过全国认证认可信息公共服务平台予以公布"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "auditor_assessor",
+   "modality": "shall",
+   "summary": "If the certification body finds that outbound personal information activity violates laws, administrative regulations or national rules, it must promptly report to the cyberspace authority and other relevant departments.",
+   "applies_from": "2026-01-01 (effective date, Art. 19)",
+   "conditional_on": "Certification body discovers a violation during certification activities",
+   "evidence": {
+    "provision": "Art. 11",
+    "quote": "应当及时向国家网信部门和有关部门报告"
+   }
+  },
+  {
+   "type": "registration_notification",
+   "addressee": "auditor_assessor",
+   "modality": "shall",
+   "summary": "A certification body approved to issue personal information protection certification must file with the cyberspace authority within 10 working days of approval, submitting listed materials (qualifications, experience, staff background review, implementation rules, risk mechanisms, ongoing supervision, complaint mechanism, other materials) and ensuring their authenticity.",
+   "applies_from": "Within 10 working days after the date of approval by the market regulation department",
+   "conditional_on": "Certification body approved by the State Administration for Market Regulation",
+   "evidence": {
+    "provision": "Art. 12",
+    "quote": "应当自国家市场监督管理部门批准取得个人信息保护认证资质之日起10个工作日内向国家网信部门办理备案手续"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "On receiving a filing from a certification body, the cyberspace authority, with the national data management department, reviews the materials; complete filings are recorded and publicly announced within 30 working days, and incomplete ones are rejected with notice and reasons within 30 working days.",
+   "applies_from": "2026-01-01 (effective date, Art. 19)",
+   "conditional_on": "Receipt of a certification body's filing materials",
+   "evidence": {
+    "provision": "Art. 12",
+    "quote": "材料齐全的，应当在30个工作日内予以备案并进行公示"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The State Administration for Market Regulation and the cyberspace authority supervise outbound certification activities, conduct regular or unannounced inspections, sample-check certification processes and results, and inspect and evaluate certification bodies.",
+   "applies_from": "2026-01-01 (effective date, Art. 19)",
+   "evidence": {
+    "provision": "Art. 13",
+    "quote": "国家市场监督管理部门和国家网信部门对个人信息出境认证活动进行监督"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "auditor_assessor",
+   "also_addressees": [
+    "government_agency"
+   ],
+   "modality": "shall",
+   "summary": "State organs, certification bodies and their staff must keep confidential the privacy, personal information, trade secrets and confidential business information they learn in performing duties, and must not disclose, unlawfully provide or unlawfully use them.",
+   "applies_from": "2026-01-01 (effective date, Art. 19)",
+   "evidence": {
+    "provision": "Art. 14",
+    "quote": "应当依法予以保密，不得泄露或者非法向他人提供、非法使用"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "A certified processor that is summoned by the cyberspace authority or other departments for a high-risk or security incident must rectify as required and eliminate hidden dangers.",
+   "applies_from": "2026-01-01 (effective date, Art. 19)",
+   "conditional_on": "Summons under Art. 16 following significant outbound risk or a personal information security incident",
+   "evidence": {
+    "provision": "Art. 16",
+    "quote": "获证个人信息处理者应当按照要求整改，消除隐患"
+   }
+  }
+ ],
+ "enforcement": [
+  {
+   "sanction_type": "license_revocation",
+   "authority": "专业认证机构 [professional certification body]",
+   "triggered_by": "Certified processor's outbound transfers do not match the certification scope, or it no longer meets certification requirements (Art. 10 para 1; para 2 covers CAC and other departments finding such a case and the certification body cooperating)",
+   "max_penalty_text": "Not stated in this text: use of the certificate is suspended until the certificate is revoked",
+   "cure_period": "Not stated",
+   "evidence": {
+    "provision": "Art. 10 para 1",
+    "quote": "应当暂停其使用直至撤销相关认证证书"
+   }
+  },
+  {
+   "sanction_type": "warning_reprimand",
+   "authority": "省级以上网信部门和有关部门 [cyberspace authorities at provincial level and above and relevant departments]",
+   "triggered_by": "Significant risk in a certified processor's outbound transfers, or a personal information security incident (Art. 16)",
+   "max_penalty_text": "Not stated in this text: summons (约谈) and a duty to rectify and remove hidden dangers as required",
+   "cure_period": "Rectification as required by the authority; no period stated",
+   "evidence": {
+    "provision": "Art. 16",
+    "quote": "可以依法对获证个人信息处理者进行约谈"
+   }
+  },
+  {
+   "sanction_type": "other",
+   "authority": "Not specified in this text; handling under the laws it cites",
+   "triggered_by": "Violation of the Measures",
+   "max_penalty_text": "Not stated in this text: handled under the cited laws and regulations",
+   "penalty_reference": "《中华人民共和国个人信息保护法》、《网络数据安全管理条例》、《中华人民共和国认证认可条例》",
+   "cure_period": "Not stated",
+   "evidence": {
+    "provision": "Art. 17",
+    "quote": "违反本办法规定的，依据《中华人民共和国个人信息保护法》、《网络数据安全管理条例》、《中华人民共和国认证认可条例》等法律法规处理"
+   }
+  },
+  {
+   "sanction_type": "criminal_penalty",
+   "authority": "Not specified in this text",
+   "triggered_by": "Violation of the Measures that constitutes a crime",
+   "max_penalty_text": "Not stated in this text: criminal liability pursued according to law",
+   "cure_period": "Not stated",
+   "evidence": {
+    "provision": "Art. 17",
+    "quote": "构成犯罪的，依法追究刑事责任"
+   }
+  }
+ ],
+ "section_status": {}
+}

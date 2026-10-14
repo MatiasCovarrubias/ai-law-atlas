@@ -1,0 +1,110 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "us-ca-sb524-2025",
+ "tier": "B",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "light, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-interim-20261014"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "AGORA plaintext (ETO, CC BY-NC 4.0), local cache",
+  "url": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260SB524",
+  "retrieved": "2026-04-01",
+  "version": "1.33.0 (2026-09-16)",
+  "language": "en",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "public_sector_ai",
+   "generative_ai",
+   "data_access_sharing"
+  ],
+  "primary_domain": "public_sector_ai",
+  "mechanisms": [
+   "mandate_obligation",
+   "disclosure_transparency"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "government_agency",
+   "ai_provider"
+  ],
+  "affected_roles": [
+   "general_public"
+  ],
+  "decision_margins": [
+   "firm:input_use",
+   "household:data_privacy"
+  ],
+  "territorial_scope": {
+   "types": [
+    "subnational"
+   ],
+   "description": "Applies to law enforcement agencies of the State of California and of local governments, special districts and political subdivisions that employ peace officers.",
+   "evidence": {
+    "provision": "Penal Code § 13663(e)(4)",
+    "quote": "any department or agency of the state or any local government, special district, or other political subdivision thereof"
+   }
+  },
+  "agora_applications": [
+   "Government: judicial and law enforcement"
+  ],
+  "agora_risk_factors": [
+   "Transparency"
+  ],
+  "agora_strategies": [
+   "Disclosure: In deployment",
+   "Input controls: Data use"
+  ]
+ },
+ "summary": {
+  "short": "Requires California law enforcement agencies to adopt a policy on AI-generated official police reports, including an AI-use statement, officer signature, retained first drafts and an audit trail, and limits contracted AI vendors' use of agency data. Adds Penal Code § 13663.",
+  "long": "Adds Penal Code § 13663, which requires each law enforcement agency to maintain a policy under which an official report generated fully or partly by artificial intelligence must identify each AI program used, carry the statement that the report was written either fully or in part using artificial intelligence, and be signed by the officer attesting to review and accuracy. The first AI-produced draft must be retained for as long as the official report, and such drafts are not officer statements. The agency must keep an audit trail identifying the person who used AI and any video or audio footage used. Contracted vendors, defined as third parties that make AI available to law enforcement for drafting police reports, may not share, sell or otherwise use agency-provided information except for the agency's purposes or under a court order, but may access processed data for troubleshooting, bias mitigation, accuracy improvement or system refinement. The definition of artificial intelligence covers systems that automatically draft report narratives from in-car, dash-mounted or body-worn camera footage or audio, and systems that generate narratives from an officer's dictated report. Section 2 provides for reimbursement of local agencies and school districts if the Commission on State Mandates finds state-mandated costs. The text states no penalties, enforcement authority or effective date."
+ },
+ "relations": [
+  {
+   "relation": "amends",
+   "target_text": "California Penal Code (new Section 13663 added)",
+   "note": "Adds new Penal Code § 13663 rather than amending an existing section; coded as amends because the text inserts into the Penal Code.",
+   "evidence": {
+    "provision": "SECTION 1",
+    "quote": "Section 13663 is added to the Penal Code, to read:"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Section 830 (peace officer definition; code not named in the clause)",
+   "note": "Definition of 'Law enforcement agency' refers to peace officers 'as described in Section 830'. The clause does not name the code.",
+   "evidence": {
+    "provision": "SECTION 1 (Penal Code § 13663(e)(4))",
+    "quote": "that employs any peace officer, as described in Section 830."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "California Government Code, Part 7 (commencing with Section 17500) of Division 4 of Title 2",
+   "note": "State-mandate reimbursement clause: reimbursement for costs found mandated by the Commission on State Mandates is to be made under the cited Government Code part.",
+   "evidence": {
+    "provision": "SEC. 2",
+    "quote": "pursuant to Part 7 (commencing with Section 17500) of Division 4 of Title 2 of the Government Code."
+   }
+  }
+ ],
+ "notes": "Bill text (no session-law number, enactment or effective date in the document). Operative text is Section 1 (new Penal Code § 13663); Section 2 is a state-mandate reimbursement clause. No penalty or enforcement provision stated. Internal points: the 'artificial intelligence' definition in (e)(1) includes a scope sentence limited to drafting systems; 'official report' in (e)(5) means the signed final version under (a)(2); the (b)(1) retention period is tied to the official report's retention, with no period stated. The 'Section 830' reference names no code.",
+ "events": [],
+ "section_status": {
+  "events": {
+   "status": "not_found",
+   "note": "The document contains no dates for legislative steps, signature, publication, entry into force, or application. Section 1 adds Penal Code 13663 without a start date, and Section 2 refers to Commission on State Mandates determinations without a date. No event is recorded."
+  },
+  "thresholds": {
+   "status": "not_applicable",
+   "note": "The text contains no numeric cutoff that changes legal treatment. Its numbers are section and subdivision numbers (Penal Code 13663, Section 830, Part 7 commencing with Section 17500, Division 4 of Title 2), which are citations and cross-references, not thresholds. Scope is defined by agency type and the use of AI, not by a numeric limit."
+  }
+ },
+ "thresholds": []
+}

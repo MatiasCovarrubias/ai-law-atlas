@@ -1,0 +1,488 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "us-va-hb2760-2021",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "AGORA plaintext (ETO, CC BY-NC 4.0), local cache",
+  "url": "https://www.wvlegislature.gov/Bill_Text_HTML/2021_SESSIONS/RS/signed_bills/house/HB2760%20SUB%20ENR_SIGNED.pdf",
+  "retrieved": "2025-04-02",
+  "version": "1.33.0 (2026-09-16)",
+  "language": "en",
+  "extent": "partial",
+  "note": "AGORA sections of the act only: West Virginia HB 2760 (2021), Sec 11-13Q \"Credit allowed for specified high technology manufacturers.\""
+ },
+ "classification": {
+  "domains": [
+   "chips_export_controls",
+   "ai_general"
+  ],
+  "primary_domain": "chips_export_controls",
+  "mechanisms": [
+   "tax_incentive",
+   "registration_notification"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "chip_designer_manufacturer",
+   "employer"
+  ],
+  "affected_roles": [
+   "workers"
+  ],
+  "decision_margins": [
+   "firm:investment_location",
+   "household:employment"
+  ],
+  "territorial_scope": {
+   "types": [
+    "subnational"
+   ],
+   "description": "Credit applies against taxes imposed by West Virginia for qualified investment in facilities in this state.",
+   "evidence": {
+    "provision": "§11-13Q-1Oa(b)(1)",
+    "quote": "a new or expanded high technology manufacturing business in this state"
+   }
+  },
+  "agora_applications": [
+   "Manufacturing and process automation"
+  ],
+  "agora_incentives": [
+   "Subsidies"
+  ],
+  "agora_strategies": [
+   "Government support"
+  ]
+ },
+ "summary": {
+  "short": "West Virginia code section 11-13Q-1Oa grants a 20-year credit of 100 percent of tax attributable to qualified investment in new or expanded high technology manufacturing businesses, covering electronics, semiconductors and, from 2022, drone, autonomous vehicle, robot, AI-operated machine, biotechnology and medical-device manufacturing, conditioned on 20 new jobs.",
+  "long": "West Virginia code section 11-13Q-1Oa allows an eligible high technology manufacturing business taxpayer a credit against state taxes equal to 100 percent of the tax attributable to its qualified investment in a new or expanded high technology manufacturing business in this state that creates at least 20 new jobs within 12 months after the investment is placed in service. The credit runs for a 20-year period, may be taken without carryover, and cannot be combined with other credits in the code for the same investment. Eligible activities are six-digit NAICS manufacturing codes for computers, electronic components and semiconductors; from tax years beginning on or after January 1, 2022, also drones, autonomous motor vehicles, robots, machines operated by and incorporating artificial intelligence, biotechnology products and medical devices. New jobs must pay a median compensation above $45,000 a year, adjusted annually by a consumer price index formula based on 2007. The commissioner may prescribe rules to determine and verify the credit and may require a notice of intent before estimated tax payments are reduced. The text defines artificial intelligence, autonomous, robot, drone and medical device.},"
+ },
+ "relations": [
+  {
+   "relation": "cross_references",
+   "target_text": "West Virginia Code § 11-13Q-3",
+   "note": "Defines 'new employee' and 'new jobs' by reference to this section of the same code.",
+   "evidence": {
+    "provision": "(c)",
+    "quote": "has the meaning ascribed to it in § 11-13Q-3 of this code"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "West Virginia Code § 11-13Q-7",
+   "note": "The taxes against which the annual credit is applied are enumerated in this section of the same code.",
+   "evidence": {
+    "provision": "(b)(3)",
+    "quote": "applied against the taxes enumerated in § 11-13Q-7 of this code"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Internal Revenue Code of 1986, section 51 and section 267",
+   "note": "Defines related individuals (section 51) and ownership interest (section 267) used to exclude certain employees from new jobs.",
+   "evidence": {
+    "provision": "(c)(1)(A)",
+    "quote": "section 51 of the Internal Revenue Code of 1986"
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "the commissioner",
+   "role": "designated",
+   "function": "Prescribes rules to determine and verify the credit; may require a notice of intent to claim the credit before estimated tax installments are reduced.",
+   "evidence": {
+    "provision": "(e)",
+    "quote": "The commissioner may prescribe such rules as he or she determines necessary"
+   }
+  },
+  {
+   "name": "United States Department of Labor",
+   "role": "listed",
+   "function": "Publishes the consumer price index used for the inflation adjustment of the median compensation amount.",
+   "evidence": {
+    "provision": "(c)(3), consumer price index definition",
+    "quote": "published by the United States Department of Labor"
+   }
+  }
+ ],
+ "notes": "Excerpt of the West Virginia Code section 11-13Q-1a as printed (heading reads '§11-13Q-1 Oa.'). The text does not name the enacting bill or session law, so HB 2760 is not confirmed from the document. Internal issues: the proviso in (a) extends subdivision (2) to tax years beginning on and after January 1, 2022; the definition labelled (3)(C) 'Autonomous Motor Vehicle' is garbled and runs into the biotechnology definition, so no autonomous motor vehicle definition appears, and (3)(D) is missing; the numbering in (c)(3) (A), (8), (C), (D) is irregular. Sections 11-13Q-3 and 11-13Q-7 are not included in this excerpt.",
+ "events": [
+  {
+   "event": "application",
+   "date": "2022-01-01",
+   "date_type": "absolute",
+   "date_text": "for tax years beginning on and after January 1, 2022",
+   "applies_to": "businesses engaged in the activities listed in subdivision (2) of subsection (a), in addition to subdivision (1) activities",
+   "evidence": {
+    "provision": "§11-13Q-1 Oa(a)",
+    "quote": "for tax years beginning on and after January 1, 2022"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "creation of at least 20 new jobs within 12 months after placing qualified investment into service",
+   "anchor": "placing qualified investment into service",
+   "depends_on": "placing qualified investment into service",
+   "applies_to": "new or expanded high technology manufacturing business; creation of at least 20 new jobs",
+   "evidence": {
+    "provision": "§11-13Q-1 Oa(b)(1)",
+    "quote": "which results in the creation of at least 20 new jobs within 12 months after placing qualified investment into service"
+   }
+  },
+  {
+   "event": "application",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "The annual credit allowance shall be taken beginning with the taxable year in which the taxpayer places the qualified investment into service or use in this state",
+   "anchor": "taxpayer placing qualified investment into service or use in this state",
+   "depends_on": "taxpayer placing qualified investment into service or use in this state",
+   "applies_to": "annual credit allowance for qualified investment over the 20-year credit period",
+   "evidence": {
+    "provision": "§11-13Q-1 Oa(b)(3)",
+    "quote": "The annual credit allowance shall be taken beginning with the taxable year in which the taxpayer places the qualified investment into service or use in this state"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "before the taxpayer begins reducing his or her monthly or quarterly installment payments of estimated tax",
+   "anchor": "taxpayer beginning to reduce monthly or quarterly estimated tax installment payments",
+   "depends_on": "commissioner requiring a notice of intent; taxpayer beginning to reduce estimated tax installment payments",
+   "applies_to": "taxpayer intending to claim the credit, where the commissioner requires a notice of intent",
+   "evidence": {
+    "provision": "§11-13Q-1 Oa(f)",
+    "quote": "a notice of intent to claim this credit before the taxpayer begins reducing his or her monthly or quarterly installment payments of estimated tax"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "jobs_created",
+   "variable_text": "creation of at least 20 new jobs within 12 months after placing qualified investment into service",
+   "operator": ">=",
+   "value": 20,
+   "value_text": "at least 20 new jobs within 12 months after placing qualified investment into service",
+   "unit": "jobs",
+   "measurement": "New jobs created within 12 months after the qualified investment is placed in service; jobs must be directly attributable to the investment under (c)(2)",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "The investment qualifies for the credit only if at least 20 new jobs are created within the 12-month window",
+   "conditions": "New or expanded high technology manufacturing business in this state; qualified investment placed in service or use",
+   "evidence": {
+    "provision": "§11-13Q-1Oa(b)(1)",
+    "quote": "which results in the creation of at least 20 new jobs within 12 months after placing qualified investment into service"
+   }
+  },
+  {
+   "variable": "wage_level",
+   "variable_text": "median compensation of the new jobs attributable to the qualified investment",
+   "operator": ">",
+   "value": 45000,
+   "value_text": "greater than $45,000 per year",
+   "unit": "dollars per year",
+   "currency": "USD",
+   "indexed": true,
+   "measurement": "Median compensation of the new jobs attributable to the qualified investment, applied each year of the 20-year credit period as adjusted under (c)(3)",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Failure to meet the median compensation requirement for a year results in forfeiture of the credit for that year",
+   "conditions": "Jobs must be directly attributable to the qualified investment under (c)(2); amount adjusted for inflation each year under (c)(3); increases rounded to the next lowest multiple of $50 under (c)(3)(D)",
+   "evidence": {
+    "provision": "§11-13Q-1Oa(c)(2)(D)",
+    "quote": "The median compensation of the new jobs attributable to the qualified investment is greater than $45,000 per year"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "ownership interest of a person in the business",
+   "operator": ">=",
+   "value": 10,
+   "value_text": "a person who owns 10 percent or more of the business",
+   "unit": "percent",
+   "measurement": "Ownership interest determined under the rules set forth in subsection (b), section 267 of the Internal Revenue Code of 1986",
+   "level": "person",
+   "trigger": "exclusion",
+   "consequence": "Employees filling new jobs who are such owners are not counted as new employees",
+   "conditions": "Applies together with the related-individuals exclusion in (c)(1)(A)",
+   "evidence": {
+    "provision": "§11-13Q-1Oa(c)(1)(A)",
+    "quote": "a person who owns 10 percent or more of the business"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "six-month period ending on the date the qualified investment is placed in service or use, and six-month period beginning on that date",
+   "operator": "=",
+   "value": 6,
+   "value_text": "six-month period ending on the date the taxpayer's qualified investment is placed in service or use",
+   "unit": "months",
+   "measurement": "Six-month window before and six-month window after the date the taxpayer's qualified investment is placed in service or use",
+   "level": "entity",
+   "trigger": "exclusion",
+   "consequence": "Employees who worked for the taxpayer in the earlier window and are rehired in the later window are not counted as new employees",
+   "conditions": "Applies only where the employee is rehired by the taxpayer during the six-month period beginning on the placement date",
+   "evidence": {
+    "provision": "§11-13Q-1Oa(c)(1)(B)",
+    "quote": "Worked for the taxpayer during the six-month period ending on the date the taxpayer's qualified investment is placed in service or use"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "credit period in consecutive years for each qualified investment",
+   "operator": "=",
+   "value": 20,
+   "value_text": "for each consecutive year of a 20-year credit period",
+   "unit": "years",
+   "measurement": "Annual credit allowance taken for each consecutive year of the credit period",
+   "level": "entity",
+   "trigger": "benefit_duration",
+   "consequence": "The credit is allowed for 20 consecutive years",
+   "conditions": "Taxpayer may elect to delay the start of the 20-year period to the next succeeding taxable year under (b)(3)",
+   "evidence": {
+    "provision": "§11-13Q-1Oa(b)(2)",
+    "quote": "for each consecutive year of a 20-year credit period"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "credit period of consecutive years applied without carryover",
+   "operator": "=",
+   "value": 20,
+   "value_text": "applied for a period of 20 consecutive years without carryover",
+   "unit": "years",
+   "measurement": "Annual credit allowance applied against the taxes enumerated in §11-13Q-7 over the credit period",
+   "level": "entity",
+   "trigger": "benefit_duration",
+   "consequence": "The credit offsets 100 percent of the tax attributable to the qualified investment for 20 consecutive years without carryover",
+   "conditions": "Credit taken beginning in the taxable year the qualified investment is placed in service, unless the delay election under (b)(3) is made",
+   "evidence": {
+    "provision": "§11-13Q-1Oa(b)(3)",
+    "quote": "shall be applied for a period of 20 consecutive years without carryover"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "credit amount as a percentage of tax attributable to qualified investment",
+   "operator": "=",
+   "value": 100,
+   "value_text": "100 percent of the tax attributable to qualified investment",
+   "unit": "percent",
+   "measurement": "Annual credit amount as a share of the tax attributable to the qualified investment",
+   "level": "entity",
+   "trigger": "benefit",
+   "consequence": "The annual credit allowable equals 100 percent of the tax attributable to the qualified investment",
+   "conditions": "Applies to each consecutive year of the 20-year credit period",
+   "evidence": {
+    "provision": "§11-13Q-1Oa(b)(2)",
+    "quote": "is 100 percent of the tax attributable to qualified investment"
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "high technology manufacturing business",
+   "defined_in": "§11-13Q-1Oa(a)(1)",
+   "evidence": {
+    "provision": "§11-13Q-1Oa(a)(1)",
+    "quote": "\"High technology manufacturing business\" means a manufacturing activity properly classified as having one or more of the following six-digit North American Industry Classification System code numbers."
+   }
+  },
+  {
+   "term": "high technology manufacturing business (expanded categories for tax years beginning on and after January 1, 2022)",
+   "defined_in": "§11-13Q-1Oa(a)",
+   "evidence": {
+    "provision": "§11-13Q-1Oa(a) (proviso)",
+    "quote": "for tax years beginning on and after January 1, 2022, the term \"high technology manufacturing business\" means and is limited to only those businesses engaged in a business enumerated in subdivision (1) or subdivision (2), or both, of this subsection"
+   }
+  },
+  {
+   "term": "artificial intelligence",
+   "defined_in": "§11-13Q-1Oa(a)(3)(A)",
+   "evidence": {
+    "provision": "§11-13Q-1Oa(a)(3)(A)",
+    "quote": "computers and computer systems that, by design and function, perform tasks that would typically require human intelligence, including decision-making, visual perception, speech recognition, or translation of one human language into another human language."
+   }
+  },
+  {
+   "term": "autonomous",
+   "defined_in": "§11-13Q-1Oa(a)(3)(B)",
+   "evidence": {
+    "provision": "§11-13Q-1Oa(a)(3)(B)",
+    "quote": "\"autonomous\" means that set of characteristics of a machine which taken as a whole cause the machine to be capable of performing designated tasks without immediate direct or explicit human control or intervention beyond initial programming and preliminary set up and initiation."
+   }
+  },
+  {
+   "term": "biotechnology",
+   "defined_in": "§11-13Q-1Oa(a)(3)(C)-(D) (source text garbled)",
+   "evidence": {
+    "provision": "§11-13Q-1Oa(a)(3)(C)-(D) (source text garbled)",
+    "quote": "Biotechnology includes, but is not limited to, recombinant DNA techniques, genetics and genetic engineering, cell fusion techniques, and bioprocesses, using living organisms, or parts of organisms."
+   }
+  },
+  {
+   "term": "biotechnology product",
+   "defined_in": "§11-13Q-1Oa(a)(3)(E)",
+   "evidence": {
+    "provision": "§11-13Q-1Oa(a)(3)(E)",
+    "quote": "\"Biotechnology product\" means any virus, therapeutic serum, antibody, protein, toxin, antitoxin, vaccine, blood, blood component or derivative, allergenic product, or analogous product produced through the application of biotechnology that is used in the prevention, treatment, or cure of diseases or injuries to humans, animals, or plants."
+   }
+  },
+  {
+   "term": "drone",
+   "defined_in": "§11-13Q-1Oa(a)(3)(F)",
+   "evidence": {
+    "provision": "§11-13Q-1Oa(a)(3)(F)",
+    "quote": "\"drone\" means an unmanned aircraft that may be controlled either remotely or by an autonomous system, which may work with internal systemic sensors or ground positioning satellite systems, or both."
+   }
+  },
+  {
+   "term": "medical device",
+   "defined_in": "§11-13Q-1Oa(a)(3)(G)",
+   "evidence": {
+    "provision": "§11-13Q-1Oa(a)(3)(G)",
+    "quote": "\"Medical device\" means an instrument, apparatus, implement, machine, contrivance, implant, in vitro reagent, or other similar or related article, including any component, part, or accessory, that is:"
+   }
+  },
+  {
+   "term": "robot",
+   "defined_in": "§11-13Q-1Oa(a)(3)(I)",
+   "evidence": {
+    "provision": "§11-13Q-1Oa(a)(3)(I)",
+    "quote": "\"robot\" means a programmable machine, for which operating instructions are typically derived from computer programming, which machine is:"
+   }
+  },
+  {
+   "term": "new jobs",
+   "defined_in": "§11-13Q-3",
+   "evidence": {
+    "provision": "§11-13Q-1Oa(c)",
+    "quote": "The term \"new jobs\" has the meaning ascribed to it in § 11-13Q-3 of this code."
+   }
+  },
+  {
+   "term": "new employee",
+   "defined_in": "§11-13Q-3",
+   "evidence": {
+    "provision": "§11-13Q-1Oa(c)(1)",
+    "quote": "The term \"new employee\" has the meaning ascribed to it in §11-13Q-3 of this code"
+   }
+  },
+  {
+   "term": "related individuals",
+   "defined_in": "Internal Revenue Code of 1986, section 51(i)",
+   "evidence": {
+    "provision": "§11-13Q-1Oa(c)(1)(A)",
+    "quote": "Are related individuals, as defined in subsection (i), section 51 of the Internal Revenue Code of 1986"
+   }
+  },
+  {
+   "term": "cost-of-living adjustment",
+   "defined_in": "§11-13Q-1Oa(c)(3)(A)",
+   "evidence": {
+    "provision": "§11-13Q-1Oa(c)(3)(A)",
+    "quote": "the cost-of-living adjustment for any calendar year is the percentage, if any, by which the consumer price index for the preceding calendar year exceeds the consumer price index for the calendar year 2007."
+   }
+  },
+  {
+   "term": "consumer price index for any calendar year",
+   "defined_in": "§11-13Q-1Oa(c)(3) (paragraph labelled (8) in source)",
+   "evidence": {
+    "provision": "§11-13Q-1Oa(c)(3) (paragraph labelled (8) in source)",
+    "quote": "the consumer price index for any calendar year is the average of the federal consumer price index as of the close of the 12-month period ending on August 31 of such calendar year."
+   }
+  },
+  {
+   "term": "Federal Consumer Price Index",
+   "defined_in": "§11-13Q-1Oa(c)(3) (paragraph labelled (C) in source)",
+   "evidence": {
+    "provision": "§11-13Q-1Oa(c)(3) (paragraph labelled (C) in source)",
+    "quote": "the term \"Federal Consumer Price Index\" means the last consumer price index for all urban consumers published by the United States Department of Labor."
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "eligibility_condition",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "A taxpayer's qualified investment in a new or expanded high technology manufacturing business must result in at least 20 new jobs within 12 months after the investment is placed into service, for the credit under subsection (b)(1) to be allowed.",
+   "conditional_on": "Qualified investment in a new or expanded high technology manufacturing business in this state placed into service",
+   "evidence": {
+    "provision": "§ 11-13Q-1a(b)(1)",
+    "quote": "which results in the creation of at least 20 new jobs within 12 months after placing qualified investment into service"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "enterprise",
+   "modality": "may",
+   "summary": "A taxpayer may elect to delay the start of the 20-year credit period until the next succeeding taxable year, by making the election in the annual income tax return for the year the qualified investment is first placed in service; once made, the election cannot be revoked.",
+   "conditional_on": "Qualified investment placed into service or use in this state",
+   "evidence": {
+    "provision": "§ 11-13Q-1a(b)(3)",
+    "quote": "unless the taxpayer elects to delay the beginning of the 20-year credit period until the next succeeding taxable year"
+   }
+  },
+  {
+   "type": "eligibility_condition",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "New jobs must be directly attributable to the qualified investment, with median compensation above $45,000 per year (adjusted for inflation each year under subsection (c)(3)); failure to meet the median compensation requirement in a year results in forfeiture of the credit for that year. Related individuals and certain rehired employees are excluded from new employees under subsection (c)(1).",
+   "conditional_on": "Jobs attributable to the qualified investment under subsection (c)(2)",
+   "evidence": {
+    "provision": "§ 11-13Q-1a(c)(2)(D)",
+    "quote": "The median compensation of the new jobs attributable to the qualified investment is greater than $45,000 per year"
+   }
+  },
+  {
+   "type": "eligibility_condition",
+   "addressee": "enterprise",
+   "modality": "shall_not",
+   "summary": "A taxpayer that has taken the credit under this section may not take the credit under any other section of the article, or under any other provision of the code, for the same qualified investment.",
+   "conditional_on": "Credit under this section taken for the qualified investment",
+   "evidence": {
+    "provision": "§ 11-13Q-1a(d)(1)",
+    "quote": "not be eligible for application of the credit allowed under any other section of this article"
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "government_agency",
+   "modality": "may",
+   "summary": "The commissioner may prescribe rules to determine the amount of credit allowed, to verify a taxpayer's continued entitlement to claim the credit, and to verify proper application of the credit.",
+   "evidence": {
+    "provision": "§ 11-13Q-1a(e)",
+    "quote": "The commissioner may prescribe such rules as he or she determines necessary"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "A taxpayer that intends to claim the credit must file with the commissioner a notice of intent to claim the credit before it begins reducing its monthly or quarterly installment payments of estimated tax.",
+   "conditional_on": "The commissioner requires the notice under subsection (f)",
+   "evidence": {
+    "provision": "§ 11-13Q-1a(f)",
+    "quote": "to file with the commissioner a notice of intent to claim this credit before the taxpayer begins reducing his or her monthly or quarterly installment payments of estimated tax"
+   }
+  }
+ ],
+ "section_status": {
+  "enforcement": {
+   "status": "not_found",
+   "note": "No fines, criminal penalties, licence revocation, suspension or blocking provisions appear in the text. Section 11-13Q-1(c)(3) states that failure to meet the median compensation requirement results in forfeiture of the credit for that year, but the text names no authority, penalty maximum or enforcement procedure for it, so it is not coded as an enforcement regime. Section 11-13Q-1(e) and (f) give the commissioner rule-making and notice powers only."
+  }
+ },
+ "enforcement": []
+}

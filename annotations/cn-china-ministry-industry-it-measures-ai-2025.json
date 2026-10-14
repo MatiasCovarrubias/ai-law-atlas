@@ -1,0 +1,692 @@
+{
+ "schema_version": "1.1",
+ "instrument_id": "cn-china-ministry-industry-it-measures-ai-2025",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-opus-5-5 (Claude Code)",
+  "method": "gold set (Opus, Claude Code)",
+  "date": "2026-10-11",
+  "prompt_version": "gold (hand annotation by Claude Opus in Claude Code; no prompt version)"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "Ministry of Industry and Information Technology (miit.gov.cn), Department of Science and Technology: consultation notice page and its PDF attachment",
+  "url": "https://www.miit.gov.cn/jgsj/kjs/jscx/gjsfz/art/2025/art_092a447008f340d3abd55819b8c8e5cf.html",
+  "retrieved": "2026-10-11",
+  "version": "Public consultation draft (公开征求意见稿), notice dated 2025-08-22; comments due 2025-09-22",
+  "language": "zh",
+  "extent": "full",
+  "note": "cache/texts holds the consultation notice (HTML page body) followed by the full draft from the PDF attachment (https://www.miit.gov.cn/cms_files/filemanager/1226211233/attach/20258/7789058de79b487bb4bfab97aba8e3af.pdf; 6 chapters, 37 articles, plus the annex listing activities subject to expert re-review). PDF lines were re-joined without spaces (CJK) and page numbers dropped; raw files in cache/raw/. A final version with a changed title (人工智能科技伦理审查与服务办法（试行）, 工信部联科〔2026〕75号, dated 2026-03-20) was later issued; it is not annotated here."
+ },
+ "summary": {
+  "short": "Draft trial measures by MIIT and ten other bodies requiring universities, research institutes, medical institutions and firms doing ethically risky AI research and development in China to obtain ethics review by an in-house committee or service center, plus expert re-review for listed activities. Effective date blank.",
+  "long": "The draft covers AI research, development and similar activities in China that may pose ethical risks to life and health, human dignity, the environment, public order or sustainable development. Units carrying out such activities are responsible; units with the capacity should set up a multidisciplinary AI ethics committee. Provincial authorities and State Council departments may set up ethics service centers that review on commission. Activity leaders apply with a plan, an ethics risk assessment and a commitment letter. Committees choose a general, simplified or emergency procedure, review fairness, controllability, transparency and explainability, traceability and risk-benefit, decide within 30 days, and conduct follow-up review at most every 12 months, with power to suspend or terminate activities. Activities on an annexed list (human-machine fusion systems affecting behaviour or health, algorithms able to mobilise public opinion, highly autonomous automated decision systems in safety or health settings) also need expert re-review by the competent authority, unless an existing filing or approval regime already covers ethics. Units register committees and listed activities on a national platform and file annual reports. Violations are penalised under the Science and Technology Progress Law and other laws. The draft also sets out government support measures."
+ },
+ "classification": {
+  "domains": [
+   "ai_general",
+   "algorithmic_decision_systems"
+  ],
+  "primary_domain": "ai_general",
+  "mechanisms": [
+   "mandate_obligation",
+   "licensing_permit_certification",
+   "registration_notification",
+   "designation_tiering",
+   "institution_setup",
+   "standard_setting"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "ai_developer",
+   "healthcare_provider",
+   "government_agency",
+   "regulator"
+  ],
+  "affected_roles": [
+   "general_public"
+  ],
+  "decision_margins": [
+   "firm:compliance_process",
+   "firm:product_design_release"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national"
+   ],
+   "description": "AI science and technology activities carried out within the People's Republic of China.",
+   "evidence": {
+    "provision": "Art. 2",
+    "quote": "第二条【适用范围】本办法所指的人工智能科技活动是在中华人民共和国境内开展的 [Art. 2 (Scope): AI S&T activities under these Measures are those carried out within the PRC]"
+   }
+  },
+  "agora_applications": [],
+  "agora_harms": [
+   "Discrimination",
+   "Harm to health/safety"
+  ],
+  "agora_incentives": [],
+  "agora_risk_factors": [
+   "Bias",
+   "Reliability: Robustness",
+   "Transparency",
+   "Interpretability and explainability",
+   "Safety"
+  ],
+  "agora_strategies": [
+   "Evaluation",
+   "Evaluation: Impact assessment",
+   "Licensing, registration, and certification",
+   "New institution",
+   "Tiering",
+   "Tiering: Tiering based on impact",
+   "Government support"
+  ]
+ },
+ "events": [
+  {
+   "event": "published",
+   "date": "2025-08-07",
+   "date_type": "absolute",
+   "date_text": "发布时间：2025-08-07 20:28 (page header)",
+   "applies_to": "Consultation notice page on miit.gov.cn (header publication time; differs from the notice's own date, see consultation event)",
+   "evidence": {
+    "provision": "MIIT notice page header",
+    "quote": "发布时间：2025-08-07 20:28  来源：科技司 [Published 2025-08-07 20:28; source: Department of Science and Technology]"
+   }
+  },
+  {
+   "event": "consultation",
+   "date": "2025-08-22",
+   "date_type": "absolute",
+   "date_text": "2025年8月22日 (date at the foot of the notice)",
+   "applies_to": "Public consultation on the draft, opened by the notice of MIIT and other departments",
+   "evidence": {
+    "provision": "Consultation notice, para. 3 and date line",
+    "quote": "根据规范性文件制定程序要求，现面向社会公开征求意见 [In line with the procedure for normative documents, public comments are now solicited]"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2025-09-22",
+   "date_type": "absolute",
+   "date_text": "有关意见请于2025年9月22日前反馈",
+   "applies_to": "Deadline for public comments",
+   "evidence": {
+    "provision": "Consultation notice, para. 3",
+    "quote": "有关意见请于2025年9月22日前反馈 [comments to be submitted by 22 September 2025]"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "本办法自*年*月*日起施行",
+   "depends_on": "Effective date left blank in the draft (placeholder *年*月*日); to be set in the adopted text",
+   "applies_to": "All provisions",
+   "evidence": {
+    "provision": "Art. 37",
+    "quote": "第三十七条【施行日期】本办法自*年*月*日起施行 [Art. 37: these Measures take effect on (date left blank)]"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "申请受理后的 30 日内",
+   "anchor": "Acceptance of the application; 30 calendar days (Art. 33), extendable in complex cases",
+   "applies_to": "Committee or service center decision (approve, revise and resubmit, or reject)",
+   "evidence": {
+    "provision": "Art. 16 para. 1",
+    "quote": "委员会或服务中心应在申请受理后的 30 日内作出批准、修改后再审或不予批准等决定 [decision within 30 days of acceptance]"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "自决定送达之日起 3 个工作日内",
+   "anchor": "Service of the decision; 3 working days",
+   "applies_to": "Applicant's appeal against a revise-or-reject decision",
+   "evidence": {
+    "provision": "Art. 16 para. 2",
+    "quote": "申请人有异议的，应在自决定送达之日起 3 个工作日内向委员会或服务中心提出申诉 [appeal within 3 working days of service]"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "在 7 个工作日内",
+   "anchor": "Receipt of a well-founded appeal; 7 working days",
+   "applies_to": "Committee or service center's new decision on appeal",
+   "evidence": {
+    "provision": "Art. 16 para. 2",
+    "quote": "申诉理由充分的，委员会或服务中心应在 7 个工作日内重新作出决定 [new decision within 7 working days]"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "跟踪审查间隔一般不超过 12 个月",
+   "anchor": "Approval or previous follow-up review; recurring, generally at most 12 months",
+   "applies_to": "Follow-up review of approved AI activities",
+   "evidence": {
+    "provision": "Art. 17",
+    "quote": "跟踪审查间隔一般不超过 12 个月 [follow-up review interval generally no more than 12 months]"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "在收到复核申请后 30 日内",
+   "anchor": "Receipt of the expert re-review application; 30 calendar days",
+   "applies_to": "Provincial authority or competent department feedback on expert re-review",
+   "evidence": {
+    "provision": "Art. 23 para. 2",
+    "quote": "在收到复核申请后 30 日内向申请单位反馈复核意见 [re-review opinion to the applicant within 30 days of receipt]"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "跟踪审查间隔一般不超过 6 个月",
+   "anchor": "Approval or previous follow-up review; recurring, generally at most 6 months",
+   "applies_to": "Follow-up review of activities on the expert re-review list",
+   "evidence": {
+    "provision": "Art. 25 para. 1",
+    "quote": "跟踪审查间隔一般不超过 6 个月 [follow-up review interval generally no more than 6 months]"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "应急工作一般在 72 小时内完成",
+   "anchor": "Start of emergency review; generally 72 hours",
+   "applies_to": "Emergency-procedure review (e.g., public emergencies)",
+   "evidence": {
+    "provision": "Art. 27",
+    "quote": "应急工作一般在 72 小时内完成 [emergency work generally completed within 72 hours]"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "专家复核前的工作一般在 36 小时内完成",
+   "anchor": "Start of emergency review; generally 36 hours for the work before expert re-review",
+   "applies_to": "Emergency review of activities subject to expert re-review",
+   "evidence": {
+    "provision": "Art. 27",
+    "quote": "对于适用专家复核程序的人工智能科技活动，专家复核前的工作一般在 36 小时内完成 [for activities subject to expert re-review, work before re-review generally within 36 hours]"
+   }
+  }
+ ],
+ "thresholds": [],
+ "obligations": [
+  {
+   "type": "other",
+   "addressee": "ai_developer",
+   "summary": "Anyone carrying out AI S&T activities must integrate ethics requirements throughout and follow the listed AI ethics principles (human welfare, rights, IP, fairness, risk control, openness, controllability, accountability).",
+   "applies_from": "entry into force (date blank in draft, Art. 37)",
+   "evidence": {
+    "provision": "Art. 3",
+    "quote": "开展人工智能科技活动应将科技伦理要求贯穿全过程 [AI S&T activities shall integrate S&T ethics requirements throughout the whole process]"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "ai_developer",
+   "summary": "Universities, research institutes, medical institutions and firms doing AI S&T activities are responsible for AI ethics management in their unit; units with the capacity should set up an AI ethics committee and give it staff, premises, funding and independence.",
+   "applies_from": "entry into force (date blank in draft, Art. 37)",
+   "conditional_on": "The unit has the capacity (有条件的单位)",
+   "evidence": {
+    "provision": "Art. 9",
+    "quote": "有条件的单位应设立人工智能科技伦理委员会（以下简称委员会）。委员会应配备必要的工作人员、办公场所和经费等条件，采取有效措施保障委员会独立开展工作 [units with the capacity shall set up an AI ethics committee and resource it to work independently]"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "ai_developer",
+   "summary": "Committee charter, composition and member duties follow arts. 5-8 of the Trial Measures for S&T Ethics Review; members must include experts in AI technology, applications, ethics and law.",
+   "applies_from": "entry into force (date blank in draft, Art. 37)",
+   "evidence": {
+    "provision": "Art. 10",
+    "quote": "委员会组成应包括人工智能技术、应用、伦理、法律等相应专业背景的专家 [committee shall include experts in AI technology, applications, ethics, law, etc.]"
+   }
+  },
+  {
+   "type": "licensing_certification",
+   "addressee": "ai_developer",
+   "summary": "The leader of an in-scope AI activity must apply for ethics review to the unit's committee (or a commissioned service center if there is no capable committee; individuals without a unit go to a service center), submitting the activity plan (algorithms, data sources, testing, intended uses), an ethics risk assessment with prevention plan, and a compliance commitment.",
+   "applies_from": "entry into force (date blank in draft, Art. 37)",
+   "conditional_on": "Activity falls within the scope of Art. 2",
+   "evidence": {
+    "provision": "Art. 12",
+    "quote": "人工智能科技活动负责人应向本单位委员会申请，单位未设立委员会或委员会无法胜任科技伦理审查工作要求，向本单位委托的服务中心申请开展科技伦理审查，无单位人员应委托符合要求的服务中心开展科技伦理审查 [the activity leader shall apply to the unit's committee, or to a commissioned service center]"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "ai_developer",
+   "summary": "The committee or service center must decide whether to accept an application, notify the applicant, assign the general, simplified or emergency procedure according to risk, and list all missing materials at once.",
+   "applies_from": "entry into force (date blank in draft, Art. 37)",
+   "evidence": {
+    "provision": "Art. 13",
+    "quote": "委员会或服务中心应根据申请材料决定是否受理申请并通知申请人 [committee or service center shall decide on acceptance and notify the applicant]"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "ai_developer",
+   "summary": "General-procedure review meetings are chaired by the committee chair or a designated vice-chair, with at least 5 members present covering the categories in Art. 10; advisers without direct interests may be consulted but do not vote.",
+   "applies_from": "entry into force (date blank in draft, Art. 37)",
+   "evidence": {
+    "provision": "Art. 14",
+    "quote": "到会委员应不少于 5 人，且应包括本办法第十条所列的不同类别的委员 [at least 5 members present, including the categories listed in Art. 10]"
+   }
+  },
+  {
+   "type": "risk_assessment",
+   "addressee": "ai_developer",
+   "summary": "Ethics review must focus on fairness (data completeness and diversity, preventing bias), controllability and trustworthiness (robustness, user control, monitoring), transparency and explainability (disclosure of uses, logic and risks), traceable responsibility (logging), and staff qualification, social value and risk-benefit.",
+   "applies_from": "entry into force (date blank in draft, Art. 37)",
+   "evidence": {
+    "provision": "Art. 15",
+    "quote": "委员会或服务中心开展人工智能科技伦理审查，重点关注以下方面 [in AI ethics review, the committee or service center shall focus on the following]"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "ai_developer",
+   "summary": "The committee or service center must decide within 30 days of acceptance (extendable), give reasons or revision suggestions for revise-or-reject decisions, and re-decide within 7 working days on a well-founded appeal.",
+   "applies_from": "entry into force (date blank in draft, Art. 37)",
+   "evidence": {
+    "provision": "Art. 16",
+    "quote": "对于需要修改或不予批准的，委员会或服务中心应提出修改建议或说明理由 [for revise or reject decisions, the committee or service center shall give suggestions or reasons]"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "ai_developer",
+   "summary": "The activity leader must identify changes in ethics risk promptly and report them to the committee or service center.",
+   "applies_from": "entry into force (date blank in draft, Art. 37)",
+   "evidence": {
+    "provision": "Art. 17",
+    "quote": "人工智能科技活动负责人应及时识别科技伦理风险变化，并将相关变化情况向委员会或服务中心报告 [the activity leader shall identify and report changes in ethics risk]"
+   }
+  },
+  {
+   "type": "audit",
+   "addressee": "ai_developer",
+   "summary": "The committee or service center must conduct follow-up review of approved activities (generally at least every 12 months) and may suspend or terminate them.",
+   "applies_from": "entry into force (date blank in draft, Art. 37)",
+   "evidence": {
+    "provision": "Art. 17",
+    "quote": "委员会或服务中心依照《伦理办法》第十九条规定对审查批准的人工智能科技活动开展跟踪审查 [committee or service center shall conduct follow-up review under art. 19 of the Ethics Measures]"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "ai_developer",
+   "summary": "The committee or service center must set rules and follow-up frequency for the simplified procedure, which is carried out by two or more designated members and reverts to the general procedure on negative opinions, doubts or disagreement.",
+   "applies_from": "entry into force (date blank in draft, Art. 37)",
+   "evidence": {
+    "provision": "Art. 20",
+    "quote": "委员会或服务中心应制定适用简易程序审查的工作规程和跟踪频度 [shall set working rules and follow-up frequency for simplified review]"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "summary": "MIIT and MOST, with other departments, must issue and dynamically adjust the list of AI activities requiring expert ethics re-review (initial list in the annex).",
+   "applies_from": "entry into force (date blank in draft, Art. 37)",
+   "evidence": {
+    "provision": "Art. 21",
+    "quote": "工业和信息化部、科技部会同有关部门制定发布“需要开展科技伦理专家复核的人工智能科技活动”清单 [MIIT and MOST with relevant departments shall issue the list of AI activities requiring expert ethics re-review]"
+   }
+  },
+  {
+   "type": "licensing_certification",
+   "addressee": "ai_developer",
+   "summary": "Units carrying out listed activities must, after initial committee or service-center review, apply for expert re-review (lead unit if several; central SOEs and centrally administered universities, institutes and medical bodies to the competent department, others to the provincial authority) and submit materials under art. 27 of the Ethics Measures.",
+   "applies_from": "entry into force (date blank in draft, Art. 37)",
+   "conditional_on": "Activity is on the expert re-review list; not required where Art. 26 applies",
+   "evidence": {
+    "provision": "Arts. 22-23",
+    "quote": "开展纳入“复核清单”的人工智能科技活动，通过委员会或服务中心的初步审查后，由本单位申请开展专家复核 [for listed activities, after initial review the unit shall apply for expert re-review]"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "summary": "Provincial authorities or competent State Council departments must form expert re-review groups under arts. 28-30 of the Ethics Measures, review the initial opinion's compliance and reasonableness, and reply within 30 days; they may commission a service center.",
+   "applies_from": "entry into force (date blank in draft, Art. 37)",
+   "evidence": {
+    "provision": "Art. 23 paras. 2-3",
+    "quote": "地方或相关主管部门应依照《伦理办法》第二十八条至第三十条规定组织成立复核专家组 [provincial authority or competent department shall form an expert re-review group]"
+   }
+  },
+  {
+   "type": "audit",
+   "addressee": "ai_developer",
+   "summary": "The committee or service center must take its decision in line with the expert re-review opinion and conduct stricter follow-up review of listed activities (generally at least every 6 months).",
+   "applies_from": "entry into force (date blank in draft, Art. 37)",
+   "evidence": {
+    "provision": "Arts. 24-25",
+    "quote": "委员会或服务中心对纳入“复核清单”的人工智能科技活动加强跟踪审查 [committee or service center shall strengthen follow-up review of listed activities]"
+   }
+  },
+  {
+   "type": "licensing_certification",
+   "addressee": "ai_developer",
+   "summary": "If the ethics risk of a listed activity changes materially, ethics review must be repeated under art. 20 of the Ethics Measures and expert re-review applied for again.",
+   "applies_from": "entry into force (date blank in draft, Art. 37)",
+   "conditional_on": "Material change in ethics risk",
+   "evidence": {
+    "provision": "Art. 25 para. 2",
+    "quote": "科技伦理风险发生重大变化的，应依照《伦理办法》第二十条规定重新开展相关科技伦理审查并申请专家复核 [on a material change in ethics risk, review again and apply for expert re-review]"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "ai_developer",
+   "summary": "The committee or service center must adopt an emergency procedure for public emergencies, completing emergency review generally within 72 hours (36 hours for the stage before expert re-review), while assuring quality and follow-up.",
+   "applies_from": "entry into force (date blank in draft, Art. 37)",
+   "evidence": {
+    "provision": "Arts. 27-28",
+    "quote": "委员会或服务中心应制定应急工作制度，明确突发公共事件等紧急状态下的应急审查流程和标准操作规程 [shall establish an emergency work system with emergency review procedures]"
+   }
+  },
+  {
+   "type": "registration_notification",
+   "addressee": "ai_developer",
+   "summary": "Units must register their committee and their listed (re-review) activities on the national S&T management information registration platform under arts. 43-45 of the Ethics Measures; service centers must also register.",
+   "applies_from": "entry into force (date blank in draft, Art. 37)",
+   "evidence": {
+    "provision": "Art. 30 para. 1",
+    "quote": "将委员会相关情况、纳入“复核清单”的人工智能科技活动通过国家科技管理信息登记平台进行登记 [register committee information and listed activities on the national S&T management information registration platform]"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "ai_developer",
+   "summary": "Units must submit the committee's annual work report for the previous year and implementation reports on listed activities; service centers submit an annual work report.",
+   "applies_from": "entry into force (date blank in draft, Art. 37)",
+   "evidence": {
+    "provision": "Art. 30 para. 1",
+    "quote": "并提交上一年度委员会工作报告、纳入“复核清单”的人工智能科技活动实施情况报告等相关材料 ... 服务中心应依照上述规定登记并提交上一年度工作报告 [submit the previous year's committee report and reports on listed activities; service centers register and report likewise]"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "summary": "MOST and competent departments share AI ethics registration information.",
+   "applies_from": "entry into force (date blank in draft, Art. 37)",
+   "evidence": {
+    "provision": "Art. 30 para. 2",
+    "quote": "科技部与相关主管部门对人工智能科技伦理相关登记信息同步共享 [MOST and competent departments share registration information]"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "summary": "Provincial authorities and competent departments must open channels for reporting AI ethics violations in their sector or region and handle reports.",
+   "applies_from": "entry into force (date blank in draft, Art. 37)",
+   "evidence": {
+    "provision": "Art. 31",
+    "quote": "地方、相关主管部门、从事人工智能科技活动的单位应结合本行业本系统或本单位的实际情况，畅通能够反映人工智能科技伦理违法违规问题的渠道 [authorities and units shall keep open channels for reporting AI ethics violations]"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "ai_developer",
+   "summary": "Units carrying out AI S&T activities must open internal channels for reporting AI ethics violations and handle reports.",
+   "applies_from": "entry into force (date blank in draft, Art. 37)",
+   "evidence": {
+    "provision": "Art. 31",
+    "quote": "地方、相关主管部门、从事人工智能科技活动的单位应结合本行业本系统或本单位的实际情况，畅通能够反映人工智能科技伦理违法违规问题的渠道 [authorities and units shall keep open channels for reporting AI ethics violations]"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "regulator",
+   "summary": "MOST coordinates national S&T ethics oversight; MIIT with other departments is responsible for AI ethics governance and emergency coordination; each department and province is responsible for its own sector or region.",
+   "applies_from": "entry into force (date blank in draft, Art. 37)",
+   "evidence": {
+    "provision": "Art. 29",
+    "quote": "科技部负责统筹指导全国科技伦理监管工作，工业和信息化部会同有关部门负责人工智能科技伦理治理工作 [MOST coordinates national S&T ethics oversight; MIIT with relevant departments is responsible for AI ethics governance]"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "summary": "Programmatic support measures: build an AI ethics standards system and service system (risk monitoring, testing, certification, consulting), support SMEs, innovation, education and training. The text does not name the responsible body.",
+   "applies_from": "entry into force (date blank in draft, Art. 37)",
+   "evidence": {
+    "provision": "Arts. 4-5",
+    "quote": "推进人工智能科技伦理服务体系建设，强化人工智能科技伦理风险监测预警、检测评估、认证、咨询等服务供给 ... 加大对中小微企业的人工智能科技伦理支持力度 [advance the AI ethics service system; increase support for SMEs]"
+   }
+  }
+ ],
+ "enforcement": [
+  {
+   "sanction_type": "other",
+   "authority": "Not specified; penalties under the Science and Technology Progress Law and other laws and rules",
+   "triggered_by": "Violation of these Measures in AI S&T activities or AI ethics work",
+   "max_penalty_text": null,
+   "max_penalty_amount": null,
+   "currency": null,
+   "penalty_formula": null,
+   "penalty_reference": "《科学技术进步法》等法律法规和相关规定 (Science and Technology Progress Law and other laws, regulations and rules)",
+   "private_right_of_action": false,
+   "cure_period": null,
+   "evidence": {
+    "provision": "Art. 32",
+    "quote": "违反本办法规定的，依照《科学技术进步法》等法律法规和相关规定，给予相应处罚 [violations are penalised under the S&T Progress Law and other laws and rules]"
+   }
+  },
+  {
+   "sanction_type": "injunction_order",
+   "authority": "The unit's AI ethics committee or the service center",
+   "triggered_by": "Changes in ethics risk found in follow-up review of an approved activity",
+   "max_penalty_text": "暂停或终止相关科技活动 (suspension or termination of the activity)",
+   "max_penalty_amount": null,
+   "currency": null,
+   "penalty_formula": null,
+   "penalty_reference": null,
+   "private_right_of_action": false,
+   "cure_period": null,
+   "evidence": {
+    "provision": "Art. 17",
+    "quote": "必要时可作出暂停或终止相关科技活动等决定 [where necessary, may decide to suspend or terminate the activity]"
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "AI science and technology activity (人工智能科技活动; scope)",
+   "evidence": {
+    "provision": "Art. 2",
+    "quote": "本办法所指的人工智能科技活动是在中华人民共和国境内开展的，可能在生命健康、人的尊严、生态环境、公共秩序、可持续发展等方面带来科技伦理风险挑战的人工智能科学研究、技术开发等科技活动，以及依据法律、行政法规和国家有关规定需进行人工智能科技伦理审查的其他科技活动 [AI research, development and similar activities in the PRC that may pose ethical risks to life and health, human dignity, environment, public order or sustainable development, and other activities requiring AI ethics review by law]"
+   }
+  },
+  {
+   "term": "AI ethics service center (服务中心)",
+   "evidence": {
+    "provision": "Art. 11",
+    "quote": "服务中心接受其他单位委托，提供人工智能科技活动伦理审查、培训、咨询等服务 [service centers accept commissions from other units to provide ethics review, training and consulting]"
+   }
+  },
+  {
+   "term": "Provincial authority (地方)",
+   "evidence": {
+    "provision": "Art. 33 para. 2",
+    "quote": "本办法所称“地方”是指省级地方人民政府确定的负责人工智能领域科技伦理审查和管理工作的省级管理部门 [the provincial department designated by the provincial government for AI ethics review and management]"
+   }
+  },
+  {
+   "term": "Competent department (相关主管部门)",
+   "evidence": {
+    "provision": "Art. 33 para. 2",
+    "quote": "“相关主管部门”是指国务院相关主管部门 [the relevant competent departments of the State Council]"
+   }
+  },
+  {
+   "term": "Activities eligible for the simplified procedure",
+   "evidence": {
+    "provision": "Art. 19",
+    "quote": "有下列情形之一的可以适用简易程序 ... 人工智能科技活动伦理风险发生的可能性和程度不高于日常生活中遇到的常规风险 ... 对已批准的人工智能科技活动方案作较小修改且不增大风险受益比 ... 前期无重大调整的人工智能科技活动的跟踪审查 [minimal risk; minor changes not increasing the risk-benefit ratio; follow-up review without major prior changes]"
+   }
+  },
+  {
+   "term": "Listed activity for expert re-review (复核清单), item 1: human-machine fusion systems",
+   "evidence": {
+    "provision": "Annex, item 1",
+    "quote": "对人类主观行为、心理情绪和生命健康等具有较强影响的人机融合系统的研发 [R&D of human-machine fusion systems with strong effects on human behaviour, emotions, life and health]"
+   }
+  },
+  {
+   "term": "Listed activity for expert re-review (复核清单), item 2: opinion-mobilising algorithms",
+   "evidence": {
+    "provision": "Annex, item 2",
+    "quote": "具有舆论社会动员能力和社会意识引导能力的算法模型、应用程序及系统的研发 [R&D of algorithm models, apps and systems capable of mobilising public opinion and guiding social awareness]"
+   }
+  },
+  {
+   "term": "Listed activity for expert re-review (复核清单), item 3: highly autonomous automated decision systems",
+   "evidence": {
+    "provision": "Annex, item 3",
+    "quote": "面向存在安全、人身健康风险等场景的具有高度自主能力的自动化决策系统的研发 [R&D of highly autonomous automated decision systems for scenarios with safety or health risks]"
+   }
+  }
+ ],
+ "relations": [
+  {
+   "relation": "legal_basis",
+   "target_instrument_id": null,
+   "target_text": "中华人民共和国科学技术进步法 (Law of the PRC on Progress of Science and Technology)",
+   "note": "Listed first among the bases in Art. 1",
+   "evidence": {
+    "provision": "Art. 1",
+    "quote": "依据《中华人民共和国科学技术进步法》《关于加强科技伦理治理的意见》《科技伦理审查办法（试行）》（以下简称《伦理办法》）等法律法规和相关规定，制定本办法 [made on the basis of the S&T Progress Law, the Opinions on S&T ethics governance and the Trial Measures for S&T Ethics Review]"
+   }
+  },
+  {
+   "relation": "legal_basis",
+   "target_instrument_id": "cn-opinions-strengthening-governance-science-technology-ethics-2022",
+   "target_text": "关于加强科技伦理治理的意见 (Opinions on Strengthening the Governance of S&T Ethics)",
+   "note": "",
+   "evidence": {
+    "provision": "Art. 1",
+    "quote": "依据《中华人民共和国科学技术进步法》《关于加强科技伦理治理的意见》《科技伦理审查办法（试行）》（以下简称《伦理办法》）等法律法规和相关规定，制定本办法 [made on the basis of the S&T Progress Law, the Opinions on S&T ethics governance and the Trial Measures for S&T Ethics Review]"
+   }
+  },
+  {
+   "relation": "legal_basis",
+   "target_instrument_id": "cn-trial-measures-science-technology-ethics-reviews-2023",
+   "target_text": "科技伦理审查办法（试行） (Trial Measures for S&T Ethics Review; 《伦理办法》 in the text)",
+   "note": "",
+   "evidence": {
+    "provision": "Art. 1",
+    "quote": "依据《中华人民共和国科学技术进步法》《关于加强科技伦理治理的意见》《科技伦理审查办法（试行）》（以下简称《伦理办法》）等法律法规和相关规定，制定本办法 [made on the basis of the S&T Progress Law, the Opinions on S&T ethics governance and the Trial Measures for S&T Ethics Review]"
+   }
+  },
+  {
+   "relation": "implements",
+   "target_instrument_id": "cn-trial-measures-science-technology-ethics-reviews-2023",
+   "target_text": "科技伦理审查办法（试行） and 关于加强科技伦理治理的意见",
+   "note": "Stated in the consultation notice, not in the draft articles: the draft details and implements both in the AI field",
+   "evidence": {
+    "provision": "Consultation notice, para. 2",
+    "quote": "《人工智能科技伦理管理服务办法（试行）（公开征求意见稿）》是《关于加强科技伦理治理的意见》《科技伦理审查办法（试行）》等在人工智能领域的细化和落实 [the draft details and implements the Opinions and the Trial Ethics Review Measures in the AI field]"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": "cn-trial-measures-science-technology-ethics-reviews-2023",
+   "target_text": "科技伦理审查办法（试行）, arts. 5-8",
+   "note": "Committee charter, composition and member duties follow these articles",
+   "evidence": {
+    "provision": "Art. 10",
+    "quote": "委员会章程、组成和委员职责、义务应依照《伦理办法》第五条至第八条进行 [committee charter, composition and duties follow arts. 5-8 of the Ethics Measures]"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": "cn-trial-measures-science-technology-ethics-reviews-2023",
+   "target_text": "科技伦理审查办法（试行）, arts. 19-20 and 27-30",
+   "note": "Follow-up review (art. 19), re-review after material change (art. 20), expert re-review materials (art. 27) and expert group procedure (arts. 28-30)",
+   "evidence": {
+    "provision": "Art. 23",
+    "quote": "人工智能科技活动承担单位应依照《伦理办法》第二十七条规定提交专家复核材料 [the unit shall submit expert re-review materials under art. 27 of the Ethics Measures]"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": "cn-trial-measures-science-technology-ethics-reviews-2023",
+   "target_text": "科技伦理审查办法（试行）, arts. 43-45",
+   "note": "Registration of committees and listed activities on the national platform, and annual reporting",
+   "evidence": {
+    "provision": "Art. 30",
+    "quote": "单位应依照《伦理办法》第四十三条至第四十五条规定 [units shall, under arts. 43-45 of the Ethics Measures]"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": "cn-trial-measures-science-technology-ethics-reviews-2023",
+   "target_text": "科技伦理审查办法（试行） and other laws (residual application)",
+   "note": "Matters not covered by these Measures follow the Ethics Measures and other laws",
+   "evidence": {
+    "provision": "Art. 35",
+    "quote": "本办法未作规定的，依照《伦理办法》及相关法律法规的规定执行 [matters not provided for follow the Ethics Measures and related laws]"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": null,
+   "target_text": "Registration, filing and approval regimes for deep synthesis, algorithmic recommendation and generative AI services (instruments not named)",
+   "note": "Exemption from expert re-review where these regimes already make ethics compliance an approval condition or supervisory item. Instruments not named in the text; candidates in the registry: cn-deep-synthesis-2022, cn-algorithm-recommendation-2021, cn-genai-interim-measures-2023 (to be resolved)",
+   "evidence": {
+    "provision": "Art. 26",
+    "quote": "人工智能科技活动在深度合成、算法推荐、生成式人工智能服务管理等方面实行登记、备案、行政审批等监管措施且将符合科技伦理要求作为审批条件、监管内容的，可不再开展专家复核 [no expert re-review needed where deep synthesis, algorithm recommendation or genAI registration, filing or approval already covers ethics]"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": null,
+   "target_text": "科学技术进步法 and other laws (penalties)",
+   "note": "Penalties for violations are those of the S&T Progress Law and other laws; no penalties set in this text",
+   "evidence": {
+    "provision": "Art. 32",
+    "quote": "违反本办法规定的，依照《科学技术进步法》等法律法规和相关规定，给予相应处罚 [violations are penalised under the S&T Progress Law and other laws and rules]"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": null,
+   "target_text": "Special rules of State Council departments on AI ethics management in their sector (not named)",
+   "note": "Sector rules consistent with these Measures apply concurrently",
+   "evidence": {
+    "provision": "Art. 35",
+    "quote": "相关主管部门对本行业本系统人工智能科技伦理管理服务有特殊规定且符合本办法精神的，应同时依照其规定执行 [sector-specific rules consistent with these Measures also apply]"
+   }
+  }
+ ],
+ "entities": [],
+ "section_status": {
+  "thresholds": {
+   "status": "not_found",
+   "note": "No numeric cutoff on activities or entities changes legal treatment. Tiering (expert re-review list, simplified procedure) is qualitative. The numbers in the text are procedural time limits (coded as deadline events) and committee quorums (at least 5 members for general review, Art. 14; two or more for simplified review, Art. 20), recorded in obligations."
+  },
+  "entities": {
+   "status": "not_applicable",
+   "note": "General rule; no firms or facilities are named. Issuing and supervising bodies (MIIT, MOST and others) appear in obligations."
+  }
+ },
+ "notes": "Consultation draft; obligations describe what would apply once adopted, from an effective date left blank (Art. 37). Dates: the notice page header shows 发布时间 2025-08-07 20:28 while the notice itself is dated 2025年8月22日 (and the page metadata PubDate is 2025-08-22); both are coded (published, consultation). Substantive design requirements (bias prevention, robustness, user control, disclosure of uses and risks, logging) appear only as review criteria for the committee (Art. 15), not as stand-alone duties of developers. Duties of the unit's ethics committee are coded with addressee ai_developer because the committee is an organ of the unit; duties of service centers (Art. 11: management rules, full-time staff, supervision by provincial or competent departments) have no matching role and are mentioned in summaries only. Articles 4-8 are programmatic support measures with no named addressee. Art. 34 lets provincial authorities and competent departments issue implementing rules and lets S&T associations issue sector guidelines; the expert re-review list can be adjusted (Art. 21, annex). Later development (outside this text): MIIT and nine other departments issued the final 人工智能科技伦理审查与服务办法（试行） (工信部联科〔2026〕75号, dated 2026-03-20), https://www.miit.gov.cn/jgsj/kjs/wjfb/art/2026/art_2995f16b28504ddcbb604e918eb15759.html."
+}

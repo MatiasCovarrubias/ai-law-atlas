@@ -1,0 +1,138 @@
+{
+ "instrument_id": "us-id-hb575-2024",
+ "checker": "claude-opus-5-5 (Claude Code)",
+ "protocol": "VP-1.0",
+ "date": "2026-10-14",
+ "reference": [
+  {
+   "category": "threshold",
+   "provision": "Sec. 18-6606(3)",
+   "quote": "previously found guilty of a violation of this section or a similar statute in another state or any local jurisdiction within the past five (5) years",
+   "value": "prior conviction within 5 years -> felony instead of misdemeanor (penalty_tier)",
+   "match": {
+    "X": 0,
+    "Y": 1
+   }
+  },
+  {
+   "category": "key_date",
+   "provision": "Section 2",
+   "quote": "this act shall be in full force and effect on and after July 1, 2024",
+   "value": "2024-07-01 effective date (emergency clause)",
+   "match": {
+    "X": 0,
+    "Y": 0
+   }
+  },
+  {
+   "category": "sanction",
+   "provision": "Sec. 18-6606(2)",
+   "quote": "A person who violates subsection (1) of this section is guilty of a misdemeanor unless such person is guilty of a felony as provided in subsec30 tion (3) of this section",
+   "value": "misdemeanor; no maximum stated in this text",
+   "match": {
+    "X": 0,
+    "Y": 0
+   }
+  },
+  {
+   "category": "sanction",
+   "provision": "Sec. 18-6606(3)",
+   "quote": "is guilty of a felony punishable by imprisonment for a period no more than ten (10) years, or by a fine of no more than twenty-five thousand dollars ($25,000), or by both such fine and imprisonment",
+   "value": "felony (repeat offence within 5 years): max 10 years imprisonment and/or USD 25,000 fine",
+   "match": {
+    "X": 1,
+    "Y": 0
+   }
+  }
+ ],
+ "judgments": {
+  "X": {
+   "thresholds": [
+    {
+     "index": 0,
+     "verdict": "correct",
+     "note": "5-year look-back, penalty_tier"
+    }
+   ],
+   "events": [
+    {
+     "index": 0,
+     "verdict": "correct",
+     "note": "effective date 2024-07-01"
+    }
+   ],
+   "obligations": [
+    {
+     "index": 0,
+     "verdict": "correct",
+     "note": ""
+    }
+   ],
+   "enforcement": [
+    {
+     "index": 0,
+     "verdict": "correct",
+     "note": "misdemeanor tier; no max stated. penalty_reference points to the section itself rather than a cross-reference (minor)"
+    },
+    {
+     "index": 1,
+     "verdict": "correct",
+     "note": "felony tier 10 years / USD 25,000"
+    }
+   ]
+  },
+  "Y": {
+   "thresholds": [
+    {
+     "index": 0,
+     "verdict": "duplicate",
+     "note": "The repeat-offence felony tier is one cutoff (prior finding within 5 years); a separate '>= 1 prior finding' row double-counts the same cutoff coded in row 1 (same provision, same consequence). The text states no count."
+    },
+    {
+     "index": 1,
+     "verdict": "correct",
+     "note": ""
+    }
+   ],
+   "events": [
+    {
+     "index": 0,
+     "verdict": "correct",
+     "note": ""
+    }
+   ],
+   "obligations": [
+    {
+     "index": 0,
+     "verdict": "correct",
+     "note": ""
+    }
+   ],
+   "enforcement": [
+    {
+     "index": 0,
+     "verdict": "correct",
+     "note": "One criminal regime row covering both tiers; misdemeanor (no max) and felony (10 years / USD 25,000) both recorded"
+    }
+   ]
+  }
+ },
+ "sampling": {
+  "X": {},
+  "Y": {}
+ },
+ "classification": {
+  "X": {
+   "domains": "right",
+   "primary_domain": "right",
+   "note": "online_safety_content added; defensible for an offence of disclosing harmful intimate content"
+  },
+  "Y": {
+   "domains": "right",
+   "primary_domain": "right",
+   "note": ""
+  }
+ },
+ "reference_scope": "full text",
+ "notes": "Short bill text. Both versions capture all four reference items. Y codes the repeat-offence tier as two threshold rows; X as one."
+}

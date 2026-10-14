@@ -1,0 +1,538 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "es-ley-15-2022-equal-treatment",
+ "tier": "B",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "light, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-interim-20261014"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (connectors/fetch_texts.py)",
+  "url": "https://www.boe.es/eli/es/l/2022/07/12/15",
+  "retrieved": "2026-10-13",
+  "version": "as fetched",
+  "language": "es",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "employment_labor",
+   "consumer_protection",
+   "online_safety_content",
+   "public_sector_ai",
+   "algorithmic_decision_systems"
+  ],
+  "primary_domain": "employment_labor",
+  "mechanisms": [
+   "mandate_obligation",
+   "prohibition_ban",
+   "liability_rule",
+   "institution_setup",
+   "disclosure_transparency",
+   "procurement_rule"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "government_agency",
+   "employer",
+   "enterprise",
+   "financial_institution",
+   "platform_operator",
+   "advertiser_campaign"
+  ],
+  "affected_roles": [
+   "consumers_users",
+   "workers",
+   "minors",
+   "general_public"
+  ],
+  "decision_margins": [
+   "firm:entry_market_access",
+   "firm:input_use",
+   "firm:compliance_process",
+   "firm:pricing",
+   "household:access",
+   "household:employment",
+   "household:information",
+   "household:prices"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national"
+   ],
+   "description": "Applies to the public sector and to private persons who reside, are located or act in Spanish territory; several provisions apply only to the State administration.",
+   "evidence": {
+    "provision": "Art. 2(4)",
+    "quote": "También lo serán a las personas físicas o jurídicas de carácter privado que residan, se encuentren o actúen en territorio español"
+   }
+  },
+  "agora_applications": [
+   "Government: other applications/unspecified"
+  ],
+  "agora_harms": [
+   "Discrimination",
+   "Violation of civil or human rights, including privacy"
+  ],
+  "agora_incentives": [
+   "Fines",
+   "Civil liability",
+   "Criminal liability"
+  ],
+  "agora_risk_factors": [
+   "Bias",
+   "Interpretability and explainability",
+   "Transparency"
+  ],
+  "agora_strategies": [
+   "Evaluation: Impact assessment",
+   "Disclosure",
+   "New institution",
+   "Government study or report"
+  ]
+ },
+ "summary": {
+  "short": "Spanish statute, in force the day after its publication in the BOE of 13 July 2022, prohibiting discrimination on listed grounds in employment, education, health, goods and services, housing and media. It creates an independent equality authority, sets administrative fines, and asks public administrations to minimise bias in algorithmic decision-making.",
+  "long": "Ley 15/2022 is a general anti-discrimination statute that applies to the public sector and to private persons acting in Spanish territory (art. 2). It defines direct and indirect discrimination, multiple and intersectional discrimination, harassment, retaliation and positive action (art. 6), and prohibits discriminatory treatment in employment and collective bargaining (arts. 9-11), education (art. 13), health care (art. 15), social services (art. 16), goods and services offered to the public (art. 17), housing (art. 20), venues (art. 21) and media and online services (art. 22). Article 23 asks public administrations to favour bias-minimisation, transparency and accountability mechanisms for algorithms used in public decision-making, including impact assessments. It creates the Autoridad Independiente para la Igualdad de Trato y la No Discriminación (arts. 40-45), which may mediate and bring legal actions. Administrative fines range from 300 to 500,000 euros across minor, serious and very serious infractions (arts. 47-48). Civil liability and a shifted burden of proof apply in discrimination cases (arts. 27, 30). Several provisions are declared basic State law or apply only to the State administration (Disposición final octava)."
+ },
+ "relations": [
+  {
+   "relation": "amends",
+   "target_text": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas (art. 77, new apartado 3 bis)",
+   "note": "Adds a burden-of-proof rule for discrimination claims in administrative procedure. The same law is also cited as the procedural basis in arts. 31.2, 44.3 and 52.4 of this text.",
+   "evidence": {
+    "provision": "Disposición final cuarta",
+    "quote": "Se añade un nuevo apartado 3 bis en el artículo 77 de la Ley 39/2015"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Ley 1/2000, de 7 de enero, de Enjuiciamiento Civil (arts. 11 bis, 15 ter, 217.5 and 222.3; new art. 15 ter inserted)",
+   "note": "Amends standing rules, adds art. 15 ter on joinder of affected persons, and amends the burden-of-proof rule in art. 217.5 and res judicata in art. 222.3.",
+   "evidence": {
+    "provision": "Disposición final segunda",
+    "quote": "Se modifica el artículo 11 bis de la Ley 1/2000, de 7 de enero, de Enjuiciamiento Civil"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Ley 29/1998, de 13 de julio, reguladora de la Jurisdicción Contencioso-administrativa (arts. 19.1 i) and 60.7)",
+   "note": "Extends standing for discrimination cases and sets the burden-of-proof rule in contentious-administrative proceedings.",
+   "evidence": {
+    "provision": "Disposición final tercera",
+    "quote": "La letra i) del artículo 19.1 de la Ley 29/1998, de 13 de julio"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Ley 34/2002, de 11 de julio, de servicios de la sociedad de la información y de comercio electrónico (art. 11.4, second paragraph added)",
+   "note": "Lets courts restrict or interrupt services or remove data from web pages to protect discriminated persons, subject to proportionality.",
+   "evidence": {
+    "provision": "Disposición final primera",
+    "quote": "Se añade un segundo párrafo al apartado 4 del artículo 11 de la Ley 34/2002"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Ley 3/1991, de 10 de enero, de Competencia Desleal (art. 32.2, second paragraph added)",
+   "note": "Allows publicity of court rulings to be carried out through the Autoridad and observatories, at the court's discretion.",
+   "evidence": {
+    "provision": "Disposición final sexta",
+    "quote": "Se añade un nuevo párrafo segundo en el apartado 2 del artículo 32 de la Ley 3/1991"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Ley 50/1981, de 30 de diciembre, Estatuto Orgánico del Ministerio Fiscal (arts. 18.3 and 20)",
+   "note": "Creates a hate-crime and discrimination section in provincial prosecutor offices and a Fiscal for hate crimes and discrimination at the State Prosecutor General's office.",
+   "evidence": {
+    "provision": "Disposición final quinta",
+    "quote": "Se modifica la Ley 50/1981, de 30 de diciembre, por la que se regula el Estatuto Orgánico del Ministerio Fiscal"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Ley General para la Defensa de los Consumidores y Usuarios y otras leyes complementarias, texto refundido aprobado por Real Decreto Legislativo 1/2007 (operative text: art. 52 b) and new art. 46.3)",
+   "note": "The Referencias anteriores block lists arts. 46 and 50, but the operative text amends art. 52 b) and adds art. 46.3; art. 50 is not amended in the operative text.",
+   "evidence": {
+    "provision": "Disposición final séptima",
+    "quote": "Se modifica la letra b) del artículo 52"
+   }
+  },
+  {
+   "relation": "transposes",
+   "target_text": "Directiva 2000/43/CE del Consejo, relativa a la aplicación del principio de igualdad de trato de las personas independientemente de su origen racial o étnico",
+   "note": "Stated purpose of transposing the objectives and aims of the directive more fully than Ley 62/2003 did. The same directive is the basis of the competent-body designation in Disposición adicional tercera (art. 13).",
+   "evidence": {
+    "provision": "Preámbulo, II. Justificación de la ley",
+    "quote": "trasponer de manera más adecuada los objetivos y fines de las Directivas 2000/43/CE y 2000/78/CE"
+   }
+  },
+  {
+   "relation": "transposes",
+   "target_text": "Directiva 2000/78/CE del Consejo, relativa al establecimiento de un marco general para la igualdad de trato en el empleo y la ocupación",
+   "note": "Stated purpose of transposing the objectives and aims of the directive more fully than Ley 62/2003 did; the preamble also says the law goes beyond mere transposition.",
+   "evidence": {
+    "provision": "Preámbulo, II. Justificación de la ley",
+    "quote": "trasponer de manera más adecuada los objetivos y fines de las Directivas 2000/43/CE y 2000/78/CE"
+   }
+  },
+  {
+   "relation": "legal_basis",
+   "target_text": "Constitución Española de 1978 (arts. 9.2, 10 and 14 cited in art. 1; art. 149.1 cited for competence titles)",
+   "note": "The law states that it develops arts. 9.2, 10 and 14 of the Constitution. Disposición final octava assigns the competence titles under art. 149.1 of the Constitution to individual provisions.",
+   "evidence": {
+    "provision": "Disposición final octava, apartado 1",
+    "quote": "de acuerdo con el artículo 149.1.1.ª de la Constitución"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Ley 40/2015, de 1 de octubre, de Régimen Jurídico del Sector Público",
+   "note": "Governs the Autoridad Independiente's functioning (art. 41.2) and applies supplementarily to sanction procedures (art. 46.1); art. 41.1 refers to its art. 109.",
+   "evidence": {
+    "provision": "Artículo 41.2",
+    "quote": "por la Ley 40/2015, de 1 de octubre, de Régimen Jurídico del Sector Público"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Ley 9/2017, de 8 de noviembre, de Contratos del Sector Público",
+   "note": "Applies to the Autoridad Independiente's contracting regime (art. 41.2).",
+   "evidence": {
+    "provision": "Artículo 41.2",
+    "quote": "la Ley 9/2017, de 8 de noviembre, de Contratos del Sector Público"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Ley 47/2003, de 26 de noviembre, General Presupuestaria",
+   "note": "Applies to the Autoridad Independiente's budget and accounts (arts. 41.2 and 42.3, 42.4).",
+   "evidence": {
+    "provision": "Artículo 42.3",
+    "quote": "formulará y rendirá sus cuentas de acuerdo con la Ley 47/2003, de 26 de noviembre, General Presupuestaria"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Ley 12/1989, de 9 de mayo, de la Función Estadística Pública",
+   "note": "Governs disclosure of personal data by the Autoridad in its collaboration duty (art. 44.4).",
+   "evidence": {
+    "provision": "Artículo 44.4",
+    "quote": "en la Ley 12/1989, de 9 de mayo, de la Función Estadística Pública"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Ley 19/2007, de 11 de julio, contra la violencia, el racismo, la xenofobia y la intolerancia en el deporte",
+   "note": "Sports activities are in scope 'de acuerdo con' this law (art. 3.1 ñ).",
+   "evidence": {
+    "provision": "Artículo 3.1 ñ)",
+    "quote": "de acuerdo con la Ley 19/2007, de 11 de julio, contra la violencia, el racismo, la xenofobia y la intolerancia en el deporte"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Texto Refundido de la Ley General de derechos de las personas con discapacidad y de su inclusión social, Real Decreto Legislativo 1/2013",
+   "note": "Applies to disability-related sanctions in preference to this Title (art. 46.2).",
+   "evidence": {
+    "provision": "Artículo 46.2",
+    "quote": "aprobado por Real Decreto Legislativo 1/2013, de 29 de noviembre"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Ley de Infracciones y Sanciones en el Orden Social, texto refundido aprobado por Real Decreto Legislativo 5/2000",
+   "note": "Governs sanction procedure in the social order (art. 46.2).",
+   "evidence": {
+    "provision": "Artículo 46.2",
+    "quote": "texto refundido aprobado por Real Decreto Legislativo 5/2000, de 4 de agosto"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Ley Orgánica 4/2000, de 11 de enero, sobre derechos y libertades de los extranjeros en España y su integración social",
+   "note": "This law applies without prejudice to the immigration regime (Disposición adicional cuarta).",
+   "evidence": {
+    "provision": "Disposición adicional cuarta",
+    "quote": "sin perjuicio de la regulación establecida en la Ley Orgánica 4/2000, de 11 de enero"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Ley 52/1997, de 27 de noviembre, de Asistencia Jurídica al Estado e Instituciones Públicas",
+   "note": "Governs legal assistance to the Autoridad Independiente (Disposición adicional segunda).",
+   "evidence": {
+    "provision": "Disposición adicional segunda",
+    "quote": "de conformidad con la Ley 52/1997, de 27 de noviembre, de Asistencia Jurídica al Estado e Instituciones Públicas"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Ley 62/2003, de 30 de diciembre, de medidas fiscales, administrativas y del orden social",
+   "note": "Described as a partial, earlier transposition of Directives 2000/43/CE and 2000/78/CE; no operative interaction.",
+   "evidence": {
+    "provision": "Preámbulo, II. Justificación de la ley",
+    "quote": "lo que solo se hizo parcialmente en la Ley 62/2003, de 30 de diciembre, de medidas fiscales, administrativas y del orden social"
+   }
+  }
+ ],
+ "notes": "Only the relations block is filled here; section_status relations is marked not_applicable only because the schema requires a status, and entries are present. Inconsistencies: (1) the Referencias anteriores block lists arts. 46 and 50 of RDL 1/2007 as modified, but the operative text amends art. 52 b) and adds art. 46.3, and does not amend art. 50. (2) Art. 40 creates the Autoridad Independiente para la Igualdad de Trato y la No Discriminación, but Disposiciones finales sexta and séptima refer to an 'Autoridad para la Igualdad de Trato' and an 'Agencia Española para la Igualdad de Trato y la No discriminación'. (3) The Referencias posteriores block reports Sentencia 89/2024 (Recurso 6706/2022) dismissing a challenge to arts. 4.4, 9.1, 13.2, 20.2, 47.2 3.d) and 4.d); it also lists a corrección de errores (BOE-A-2022-15169). Relations with target_instrument_id empty have no registry ID in the document.",
+ "events": [
+  {
+   "event": "signed",
+   "date": "2022-07-12",
+   "date_type": "absolute",
+   "date_text": "Madrid, 12 de julio de 2022.",
+   "applies_to": "law as a whole",
+   "evidence": {
+    "provision": "Signature block (final formula)",
+    "quote": "Madrid, 12 de julio de 2022."
+   }
+  },
+  {
+   "event": "published",
+   "date": "2022-07-13",
+   "date_type": "absolute",
+   "date_text": "«BOE» núm. 167, de 13 de julio de 2022",
+   "applies_to": "law as a whole",
+   "evidence": {
+    "provision": "Publication reference (document header)",
+    "quote": "«BOE» núm. 167, de 13 de julio de 2022, páginas 98071 a 98109"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2022-07-14",
+   "date_type": "relative",
+   "date_text": "entrará en vigor el día siguiente al de su publicación en el «Boletín Oficial del Estado»",
+   "anchor": "publication in the Boletín Oficial del Estado",
+   "applies_to": "law as a whole",
+   "offset_value": 1,
+   "offset_unit": "days",
+   "anchor_event": "published",
+   "evidence": {
+    "provision": "Final provision 10",
+    "quote": "entrará en vigor el día siguiente al de su publicación en el «Boletín Oficial del Estado»"
+   },
+   "date_computed_from": "published 2022-07-13 (text) + 1 days"
+  },
+  {
+   "event": "deadline",
+   "date": "2023-01-14",
+   "date_type": "relative",
+   "date_text": "En el plazo de seis meses desde la entrada en vigor de esta ley se procederá a la integración de la Autoridad Independiente",
+   "anchor": "entry into force",
+   "applies_to": "integration into the Autoridad Independiente para la Igualdad de Trato y la No Discriminación of functions, bodies and services of the General State Administration (Additional provision 1(1))",
+   "offset_value": 6,
+   "offset_unit": "months",
+   "anchor_event": "entry_into_force",
+   "evidence": {
+    "provision": "Additional provision 1(1)",
+    "quote": "En el plazo de seis meses desde la entrada en vigor de esta ley se procederá a la integración de la Autoridad Independiente"
+   },
+   "date_computed_from": "entry_into_force 2022-07-14 (computed) + 6 months"
+  },
+  {
+   "event": "deadline",
+   "date": "2023-01-14",
+   "date_type": "relative",
+   "date_text": "En el plazo de seis meses desde la entrada en vigor de esta ley, el Gobierno, a iniciativa de la Autoridad Independiente",
+   "anchor": "entry into force",
+   "applies_to": "Government approval by Real Decreto of the Estatuto of the Autoridad Independiente (Additional provision 1(2); Art. 41(3))",
+   "offset_value": 6,
+   "offset_unit": "months",
+   "anchor_event": "entry_into_force",
+   "evidence": {
+    "provision": "Additional provision 1(2)",
+    "quote": "En el plazo de seis meses desde la entrada en vigor de esta ley, el Gobierno, a iniciativa de la Autoridad Independiente"
+   },
+   "date_computed_from": "entry_into_force 2022-07-14 (computed) + 6 months"
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "En el plazo de un año desde su constitución",
+   "depends_on": "constitution of the Autoridad Independiente para la Igualdad de Trato y la No Discriminación",
+   "applies_to": "submission to the competent equality department of a proposal for a Centro de Documentación y Memoria (Additional provision 1(3))",
+   "offset_value": 1,
+   "offset_unit": "years",
+   "evidence": {
+    "provision": "Additional provision 1(3)",
+    "quote": "En el plazo de un año desde su constitución la Autoridad Independiente para la Igualdad de Trato y la No Discriminación presentará"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "En el plazo de un año desde que la Autoridad Independiente para la Igualdad de Trato y la No Discriminación comience a desplegar efectivamente sus funciones y tareas",
+   "depends_on": "commencement of effective functions of the Autoridad Independiente para la Igualdad de Trato y la No Discriminación",
+   "applies_to": "report on contrary or discriminatory provisions and administrative practices in State legislation and regulations (Sixth additional provision(1))",
+   "offset_value": 1,
+   "offset_unit": "years",
+   "evidence": {
+    "provision": "Sixth additional provision(1)",
+    "quote": "En el plazo de un año desde que la Autoridad Independiente para la Igualdad de Trato y la No Discriminación comience a desplegar efectivamente sus funciones y tareas"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "con carácter anual",
+   "applies_to": "annual report by the most representative business and trade union organisations on compliance with Arts. 9, 10 and 11 (Additional provision 5)",
+   "evidence": {
+    "provision": "Additional provision 5",
+    "quote": "Las organizaciones empresariales y sindicales más representativas elaborarán un informe con carácter anual"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "La Estrategia tendrá carácter cuatrienal.",
+   "applies_to": "evaluation of the Estrategia Estatal para la Igualdad de Trato y la No Discriminación (Art. 34(3))",
+   "offset_value": 4,
+   "offset_unit": "years",
+   "evidence": {
+    "provision": "Art. 34(3)",
+    "quote": "La Estrategia tendrá carácter cuatrienal."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "en el plazo de un mes natural a contar desde la recepción de la correspondiente comunicación",
+   "depends_on": "receipt of the communication of the proposed presidency nominee by the Congress",
+   "applies_to": "Congress approval or rejection of the proposed presidency nominee (Art. 41(4))",
+   "offset_value": 1,
+   "offset_unit": "months",
+   "evidence": {
+    "provision": "Art. 41(4)",
+    "quote": "en el plazo de un mes natural a contar desde la recepción de la correspondiente comunicación"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "el Gobierno presentará a la Cámara un nuevo candidato en el plazo de tres meses",
+   "depends_on": "rejection of the proposed presidency nominee by the Congress",
+   "applies_to": "Government presents a new candidate for the presidency (Art. 41(4))",
+   "offset_value": 3,
+   "offset_unit": "months",
+   "evidence": {
+    "provision": "Art. 41(4)",
+    "quote": "el Gobierno presentará a la Cámara un nuevo candidato en el plazo de tres meses"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "El plazo máximo en que deberá notificarse la resolución del procedimiento sancionador será de seis meses",
+   "depends_on": "initiation of a sanctioning procedure under this Law",
+   "applies_to": "notification of the resolution of the sanctioning procedure (Art. 52(2))",
+   "offset_value": 6,
+   "offset_unit": "months",
+   "evidence": {
+    "provision": "Art. 52(2)",
+    "quote": "El plazo máximo en que deberá notificarse la resolución del procedimiento sancionador será de seis meses"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "employees",
+   "variable_text": "más de 250 trabajadores (empresas con más de 250 trabajadores)",
+   "operator": ">",
+   "value": 250,
+   "value_text": "más de 250 trabajadores",
+   "unit": "workers",
+   "measurement": "Company headcount; the salary-information duty applies only if a regulation under Art. 9.6 is adopted",
+   "level": "entity",
+   "trigger": "obligation",
+   "consequence": "Employers above the threshold may be required by regulation to publish salary information needed to analyse pay differences",
+   "conditions": "Applies only through regulatory development ('Por vía reglamentaria, se podrá exigir'); factors as in Art. 2.1",
+   "evidence": {
+    "provision": "Artículo 9.6",
+    "quote": "cuyas empresas tengan más de 250 trabajadores [employers whose companies have more than 250 workers]"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "antigüedad legal de la asociación u organización (al menos dos años antes de la iniciación del proceso judicial)",
+   "operator": ">=",
+   "value": 2,
+   "value_text": "al menos dos años antes de la iniciación del proceso judicial",
+   "unit": "years",
+   "measurement": "Time elapsed between legal constitution of the association or organisation and the start of the judicial process",
+   "level": "entity",
+   "trigger": "eligibility",
+   "consequence": "Human-rights associations and organisations must meet this seniority requirement to be legitimated for judicial defence of rights",
+   "conditions": "Also requires active pursuit of statutory activities, unless suing to defend its members; and a state-wide or relevant territorial scope under Art. 29.2 b)",
+   "evidence": {
+    "provision": "Artículo 29.2 a)",
+    "quote": "Que se hubieran constituido legalmente al menos dos años antes de la iniciación del proceso judicial"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "número de infracciones leves cometidas (tercera o más, con dos sanciones firmes por infracciones leves en el año anterior)",
+   "operator": ">=",
+   "value": 3,
+   "value_text": "una tercera o más infracción leve",
+   "unit": "infracciones",
+   "measurement": "Count of minor infractions committed by the alleged offender, with a one-year look-back for prior final administrative sanctions",
+   "level": "person",
+   "trigger": "penalty_tier",
+   "consequence": "The infraction is classified as grave",
+   "conditions": "In the previous year the alleged offender had already been sanctioned by two minor infractions through a final administrative resolution",
+   "evidence": {
+    "provision": "Artículo 47.3 d)",
+    "quote": "La comisión de una tercera o más infracción leve, siempre que en el plazo del año anterior el presunto infractor hubiera sido ya sancionado por dos infracciones leves mediante resolución administrativa firme."
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "número de infracciones graves cometidas (tercera o más, con dos sanciones firmes por infracciones graves en los dos años anteriores)",
+   "operator": ">=",
+   "value": 3,
+   "value_text": "una tercera o más infracción grave",
+   "unit": "infracciones",
+   "measurement": "Count of grave infractions committed by the alleged offender, with a two-year look-back for prior final administrative sanctions",
+   "level": "person",
+   "trigger": "penalty_tier",
+   "consequence": "The infraction is classified as muy grave",
+   "conditions": "In the two previous years the alleged offender had already been sanctioned by two grave infractions through a final administrative resolution",
+   "evidence": {
+    "provision": "Artículo 47.4 d)",
+    "quote": "La comisión de una tercera o más infracción grave, siempre que en el plazo de los dos años anteriores el presunto infractor hubiera sido ya sancionado por dos infracciones graves mediante resolución administrativa firme."
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "importe de la sanción impuesta por infracción muy grave",
+   "operator": ">",
+   "value": 300000,
+   "value_text": "exceda los 300.000 euros",
+   "unit": "EUR",
+   "currency": "EUR",
+   "measurement": "Amount of the administrative fine imposed for a very grave infraction",
+   "level": "other",
+   "trigger": "penalty_tier",
+   "consequence": "Resolution requires agreement of the Council of Ministers, in addition to the Ministry competent by subject matter",
+   "conditions": "Applies only where the infraction is muy grave",
+   "evidence": {
+    "provision": "Artículo 52.4",
+    "quote": "cuando se trate de infracciones muy graves, y el importe de la sanción impuesta exceda los 300.000 euros, se requerirá acuerdo del Consejo de Ministros."
+   }
+  }
+ ],
+ "section_status": {}
+}

@@ -1,0 +1,518 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "us-ky-hb775-2025",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "web.archive.org (archived copy of the Kentucky legislature's enrolled bill PDF)",
+  "url": "https://web.archive.org/web/20250506055527/https://apps.legislature.ky.gov/recorddocuments/bill/25RS/hb775/bill.pdf",
+  "retrieved": "2026-10-14",
+  "version": "25 RS HB 775/EN (enrolled)",
+  "language": "en",
+  "extent": "partial",
+  "note": "Whole omnibus revenue bill (147 pages); data center provisions are a part of it. apps.legislature.ky.gov unreachable from this machine (timeouts); Wayback copy of the legislature's PDF (which carries the standard 'UNOFFICIAL COPY' header). Line numbers stripped; plain text does not mark new (underlined) or deleted (struck) language. Trimmed to the act title/enacting clause, Section 34 (KRS 154.20-220 definitions amended: qualified data center project no longer limited to a consolidated local government of 500,000+; minimum investment tiers by county population of $450M / $100M / $25M, $150M for a project organizer) and Section 40 (the only effective-date section; Section 34 is not listed, so it takes the general effective date); rest of the act omitted (incl. Section 27, KRS 131.190, whose only data-center change is a cross-reference wording fix). A stray 'Section 35' heading line interleaved by the PDF inside the last Section 34 sentence was dropped. Untrimmed copy: <id>.untrimmed.txt.bak."
+ },
+ "classification": {
+  "domains": [
+   "compute_data_centers"
+  ],
+  "primary_domain": "compute_data_centers",
+  "mechanisms": [
+   "tax_incentive"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "data_center_owner",
+   "data_center_operator",
+   "data_center_occupant"
+  ],
+  "decision_margins": [
+   "firm:investment_location",
+   "firm:input_use"
+  ],
+  "territorial_scope": {
+   "types": [
+    "subnational"
+   ],
+   "description": "Applies within the Commonwealth of Kentucky, as defined in the definitions section.",
+   "evidence": {
+    "provision": "Sec. 34 (KRS 154.20-220(5))",
+    "quote": "\"Commonwealth\" means the Commonwealth of Kentucky;"
+   }
+  }
+ },
+ "summary": {
+  "short": "Amends the definitions in KRS 154.20-220 for a Kentucky economic-development incentive for qualified data center projects, covering eligible companies, data center equipment, minimum capital investment, and memorandum-of-agreement terms of up to 50 years. Sections 19-24, 26, 35-37 take effect 1 July 2025.",
+  "long": "Partial text: Section 34 (definitions in KRS 154.20-220 to 154.20-229) and the Section 40 effective-date clause; Sections 1-33 and 35-39 are omitted. The Kentucky Economic Development Finance Authority enters memoranda of agreement with eligible companies (preliminary approval) and verifies that the minimum capital investment is made by the fifth anniversary (final approval). Eligible companies include owners, operators, colocation tenants and project organizers. Eligible costs cover purchases of data center equipment (servers, networking, power and cooling equipment, software), excluding electricity and construction equipment. Minimum capital investment is $450 million, $100 million or $25 million for owners, operators or colocation tenants, by county population, and $150 million for project organizers. Excluded projects include those accepting other KRS Chapter 154 incentives, replacing existing Commonwealth data centers, or benefiting from the electricity sales and use tax exemption for cryptocurrency mining. Agreement terms run 15 years (project organizers), 50 years (investment of at least $450 million) or 25 years (others). Sections 19-24, 26 and 35-37 take effect 1 July 2025. The excerpt does not show the exemption's operative tax rule or rate."
+ },
+ "relations": [
+  {
+   "relation": "amends",
+   "target_text": "KRS 154.20-220",
+   "note": "Section 34 amends KRS 154.20-220, which contains the definitions for KRS 154.20-220 to 154.20-229. Only part of the amended section is in the excerpt.",
+   "evidence": {
+    "provision": "Section 34",
+    "quote": "KRS 154.20-220 is amended to read as follows"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "KRS 154.20-010",
+   "note": "The definition of Authority refers to the Kentucky Economic Development Finance Authority as established by KRS 154.20-010.",
+   "evidence": {
+    "provision": "Section 34, subsec. (3)",
+    "quote": "established by KRS 154.20-010"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "KRS 154.20-229",
+   "note": "The definition of Memorandum of agreement refers to an agreement executed under KRS 154.20-229. The definitions apply to KRS 154.20-220 to 154.20-229.",
+   "evidence": {
+    "provision": "Section 34, subsec. (11)",
+    "quote": "executed under KRS 154.20-229"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "KRS Chapter 154",
+   "note": "A data center project that applies for or accepts other economic development incentives under KRS Chapter 154 is excluded from the qualified data center project definition.",
+   "evidence": {
+    "provision": "Section 34, subsec. (17)(d)2.",
+    "quote": "under KRS Chapter 154"
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "Kentucky Economic Development Finance Authority",
+   "role": "designated",
+   "function": "Defined as the Authority. Takes preliminary approval (entering a memorandum of agreement with an eligible company) and final approval (verifying the minimum capital investment) for data center projects.",
+   "evidence": {
+    "provision": "Section 34, subsec. (3)",
+    "quote": "\"Authority\" means the Kentucky Economic Development Finance Authority"
+   }
+  },
+  {
+   "name": "Department of Revenue",
+   "role": "listed",
+   "function": "Defined as the Department. No operative duty of the Department appears in the excerpt.",
+   "evidence": {
+    "provision": "Section 34, subsec. (7)",
+    "quote": "\"Department\" means the Department of Revenue"
+   }
+  },
+  {
+   "name": "United States Census Bureau",
+   "role": "listed",
+   "function": "Publishes the American Community Survey county population estimate used to place a county in a minimum capital investment tier.",
+   "evidence": {
+    "provision": "Section 34, subsec. (17)(b)1.",
+    "quote": "as published by the United States Census"
+   }
+  }
+ ],
+ "notes": "Excerpt of the engrossed bill text (HB077520.100), an unofficial copy. Sections 1-33 and 35-39 are omitted, so the annotation covers Section 34 (definitions amending KRS 154.20-220) and Section 40 (effective dates) only. Text extraction is garbled in places (e.g., definitions (2), (4)-(8), (16) and (18)(b)2.), so quotes are taken from legible lines. Brackets in '(c)[' and '(d)]' under (17) appear to mark deleted text in the engrossed version. Section 40 makes Sections 19 to 24, 26, and 35 to 37 effective July 1, 2025; Section 34 is not listed and its effective date is not stated in the excerpt. Sub-item 1.c of (17)(b) reads 'Twenty-five million dollar ($25,000,000)'. No named firms appear in the excerpt.",
+ "events": [
+  {
+   "event": "entry_into_force",
+   "date": "2025-07-01",
+   "date_type": "absolute",
+   "date_text": "Sections 19 to 24, 26, and 35 to 37 of this Act take effect on July 1, 2025",
+   "applies_to": "Sections 19 to 24, 26, and 35 to 37 of this Act",
+   "evidence": {
+    "provision": "Section 40",
+    "quote": "Sections 19 to 24, 26, and 35 to 37 of this Act take effect on July 1,"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": null,
+   "date_type": "not_stated",
+   "date_text": "Section 40 gives a July 1, 2025 effective date only for Sections 19 to 24, 26, and 35 to 37; no effective date for the other sections is stated in this text",
+   "applies_to": "Sections of this Act other than 19 to 24, 26, and 35 to 37, including Section 34",
+   "evidence": {
+    "provision": "Section 40",
+    "quote": "Sections 19 to 24, 26, and 35 to 37 of this Act take effect on July 1,"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "Has the following minimum capital investment on or before the fifth anniversary of the preliminary approval",
+   "depends_on": "preliminary approval of the eligible company by the authority (KRS 154.20-220(14))",
+   "applies_to": "Qualified data center project: minimum capital investment by owner, operator, colocation tenant or project organizer",
+   "offset_value": 5,
+   "offset_unit": "years",
+   "evidence": {
+    "provision": "Section 34 (KRS 154.20-220(17)(b))",
+    "quote": "Has the following minimum capital investment on or before the fifth anniversary of the preliminary approval:"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "capital_investment",
+   "variable_text": "minimum capital investment for owner, operator or colocation tenant",
+   "operator": ">=",
+   "value": 450000000,
+   "value_text": "Four hundred fifty million dollars ($450,000,000) if located in a county having a population equal to or greater than one hundred thousand (100,000)",
+   "unit": "dollars",
+   "currency": "USD",
+   "measurement": "Investment must be made on or before the fifth anniversary of the preliminary approval; county population from the most recent five-year American Community Survey estimate at time of application by the eligible company",
+   "level": "entity",
+   "trigger": "eligibility",
+   "consequence": "Project meets the minimum capital investment for a qualified data center project (owner, operator or colocation tenant) in a county of 100,000 or more",
+   "conditions": "Applies to owner, operator or colocation tenant; project located in a county with population of at least 100,000",
+   "evidence": {
+    "provision": "Sec. 34, KRS 154.20-220(17)(b)(1)(a)",
+    "quote": "Four hundred fifty million dollars ($450,000,000) if located in a"
+   }
+  },
+  {
+   "variable": "population",
+   "variable_text": "county population (five-year American Community Survey estimate)",
+   "operator": ">=",
+   "value": 100000,
+   "value_text": "county having a population equal to or greater than one hundred thousand (100,000)",
+   "unit": "persons",
+   "measurement": "Most recently available five-year American Community Survey estimate published by the United States Census Bureau at time of application by the eligible company",
+   "level": "jurisdiction",
+   "trigger": "eligibility",
+   "consequence": "Selects the $450,000,000 minimum capital investment tier for owner, operator or colocation tenant",
+   "conditions": "Applies to owner, operator or colocation tenant",
+   "evidence": {
+    "provision": "Sec. 34, KRS 154.20-220(17)(b)(1)(a)",
+    "quote": "county having a population equal to or greater than one hundred"
+   }
+  },
+  {
+   "variable": "capital_investment",
+   "variable_text": "minimum capital investment for owner, operator or colocation tenant",
+   "operator": ">=",
+   "value": 100000000,
+   "value_text": "One hundred million dollars ($100,000,000) if located in a county having a population greater than fifty thousand (50,000) but less than one hundred thousand (100,000)",
+   "unit": "dollars",
+   "currency": "USD",
+   "measurement": "Investment must be made on or before the fifth anniversary of the preliminary approval; county population from the most recent five-year American Community Survey estimate at time of application by the eligible company",
+   "level": "entity",
+   "trigger": "eligibility",
+   "consequence": "Project meets the minimum capital investment for a qualified data center project (owner, operator or colocation tenant) in a mid-size county",
+   "conditions": "Applies to owner, operator or colocation tenant; county population greater than 50,000 and less than 100,000",
+   "evidence": {
+    "provision": "Sec. 34, KRS 154.20-220(17)(b)(1)(b)",
+    "quote": "One hundred million dollars ($100,000,000) if located in a"
+   }
+  },
+  {
+   "variable": "population",
+   "variable_text": "county population (five-year American Community Survey estimate)",
+   "operator": "range",
+   "value": 50000,
+   "value_max": 100000,
+   "value_text": "county having a population greater than fifty thousand (50,000) but less than one hundred thousand (100,000)",
+   "unit": "persons",
+   "measurement": "Most recently available five-year American Community Survey estimate published by the United States Census Bureau at time of application by the eligible company",
+   "level": "jurisdiction",
+   "trigger": "eligibility",
+   "consequence": "Selects the $100,000,000 minimum capital investment tier for owner, operator or colocation tenant",
+   "conditions": "Bounds are exclusive: population greater than 50,000 and less than 100,000",
+   "evidence": {
+    "provision": "Sec. 34, KRS 154.20-220(17)(b)(1)(b)",
+    "quote": "county having a population greater than fifty thousand (50,000)"
+   }
+  },
+  {
+   "variable": "capital_investment",
+   "variable_text": "minimum capital investment for owner, operator or colocation tenant",
+   "operator": ">=",
+   "value": 25000000,
+   "value_text": "Twenty-five million dollar ($25,000,000) if located in a county having a population of not more than fifty thousand (50,000)",
+   "unit": "dollars",
+   "currency": "USD",
+   "measurement": "Investment must be made on or before the fifth anniversary of the preliminary approval; county population from the most recent five-year American Community Survey estimate at time of application by the eligible company",
+   "level": "entity",
+   "trigger": "eligibility",
+   "consequence": "Project meets the minimum capital investment for a qualified data center project (owner, operator or colocation tenant) in a county of 50,000 or fewer",
+   "conditions": "Applies to owner, operator or colocation tenant; county population of not more than 50,000",
+   "evidence": {
+    "provision": "Sec. 34, KRS 154.20-220(17)(b)(1)(c)",
+    "quote": "Twenty-five million dollar ($25,000,000) if located in a county"
+   }
+  },
+  {
+   "variable": "population",
+   "variable_text": "county population (five-year American Community Survey estimate)",
+   "operator": "<=",
+   "value": 50000,
+   "value_text": "county having a population of not more than fifty thousand (50,000)",
+   "unit": "persons",
+   "measurement": "Most recently available five-year American Community Survey estimate published by the United States Census Bureau at time of application by the eligible company",
+   "level": "jurisdiction",
+   "trigger": "eligibility",
+   "consequence": "Selects the $25,000,000 minimum capital investment tier for owner, operator or colocation tenant",
+   "conditions": "Applies to owner, operator or colocation tenant",
+   "evidence": {
+    "provision": "Sec. 34, KRS 154.20-220(17)(b)(1)(c)",
+    "quote": "county having a population of not more than fifty thousand (50,000)"
+   }
+  },
+  {
+   "variable": "capital_investment",
+   "variable_text": "minimum capital investment for project organizer",
+   "operator": ">=",
+   "value": 150000000,
+   "value_text": "For a project organizer, at least one hundred fifty million dollars ($150,000,000)",
+   "unit": "dollars",
+   "currency": "USD",
+   "measurement": "Investment must be made on or before the fifth anniversary of the preliminary approval",
+   "level": "entity",
+   "trigger": "eligibility",
+   "consequence": "Project meets the minimum capital investment for a qualified data center project of a project organizer",
+   "conditions": "Applies to project organizer",
+   "evidence": {
+    "provision": "Sec. 34, KRS 154.20-220(17)(b)(2)",
+    "quote": "For a project organizer, at least one hundred fifty million dollars"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "term of memorandum of agreement (years), qualified data center project of a project organizer",
+   "operator": "<=",
+   "value": 15,
+   "value_text": "Fifteen (15) years for a qualified data center project of a project organizer",
+   "unit": "years",
+   "measurement": "Period for which a memorandum of agreement may be in effect",
+   "level": "entity",
+   "trigger": "benefit_duration",
+   "consequence": "Memorandum of agreement term may not exceed 15 years",
+   "conditions": "Qualified data center project of a project organizer",
+   "evidence": {
+    "provision": "Sec. 34, KRS 154.20-220(18)(a)",
+    "quote": "Fifteen (15) years for a qualified data center project of a project organizer"
+   }
+  },
+  {
+   "variable": "capital_investment",
+   "variable_text": "capital investment of data center project (other than project organizer)",
+   "operator": ">=",
+   "value": 450000000,
+   "value_text": "Fifty (50) years for a data center project having a capital investment equal to or greater than four hundred fifty million dollars ($450,000,000)",
+   "unit": "dollars",
+   "currency": "USD",
+   "measurement": "Period for which a memorandum of agreement may be in effect; capital investment as defined in KRS 154.20-220(17)(b)",
+   "level": "entity",
+   "trigger": "benefit_duration",
+   "consequence": "Memorandum of agreement term may not exceed 50 years",
+   "conditions": "Any other qualified data center project (not a project organizer project)",
+   "evidence": {
+    "provision": "Sec. 34, KRS 154.20-220(18)(b)(1)",
+    "quote": "Fifty (50) years for a data center project having a capital investment"
+   }
+  },
+  {
+   "variable": "capital_investment",
+   "variable_text": "capital investment of data center project (other than project organizer)",
+   "operator": "<",
+   "value": 450000000,
+   "value_text": "Twenty-five (25) years for a data center project having a capital investment less than four hundred fifty million dollars ($450,000,000)",
+   "unit": "dollars",
+   "currency": "USD",
+   "measurement": "Period for which a memorandum of agreement may be in effect; capital investment as defined in KRS 154.20-220(17)(b)",
+   "level": "entity",
+   "trigger": "benefit_duration",
+   "consequence": "Memorandum of agreement term may not exceed 25 years",
+   "conditions": "Any other qualified data center project (not a project organizer project)",
+   "evidence": {
+    "provision": "Sec. 34, KRS 154.20-220(18)(b)(2)",
+    "quote": "Twenty-five (25) years for a data center project having a capital"
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "Affiliate",
+   "defined_in": "Sec. 34, KRS 154.20-220(1)",
+   "evidence": {
+    "provision": "Sec. 34, KRS 154.20-220(1)",
+    "quote": "\"Affiliate\" means the following:"
+   }
+  },
+  {
+   "term": "Approved company",
+   "defined_in": "Sec. 34, KRS 154.20-220(3)",
+   "evidence": {
+    "provision": "Sec. 34, KRS 154.20-220(3)",
+    "quote": "\"Approved company\" means an eligible company that has received final approval"
+   }
+  },
+  {
+   "term": "Authority",
+   "defined_in": "Sec. 34, KRS 154.20-220",
+   "evidence": {
+    "provision": "Sec. 34, KRS 154.20-220",
+    "quote": "\"Authority\" means the Kentucky Economic Development Finance Authority"
+   }
+  },
+  {
+   "term": "Colocation tenant",
+   "defined_in": "Sec. 34, KRS 154.20-220(4)",
+   "evidence": {
+    "provision": "Sec. 34, KRS 154.20-220(4)",
+    "quote": "\"Colocation tenant\" means an entity that contracts with the owner or operator for"
+   }
+  },
+  {
+   "term": "Data center equipment",
+   "defined_in": "Sec. 34, KRS 154.20-220(6)(a)",
+   "evidence": {
+    "provision": "Sec. 34, KRS 154.20-220(6)(a)",
+    "quote": "Means computer equipment and software for the processing, storage, retrieval,"
+   }
+  },
+  {
+   "term": "Eligible company",
+   "defined_in": "Sec. 34, KRS 154.20-220(8)(a)",
+   "evidence": {
+    "provision": "Sec. 34, KRS 154.20-220(8)(a)",
+    "quote": "Means any corporation, limited liability company, partnership. limited"
+   }
+  },
+  {
+   "term": "Eligible costs",
+   "defined_in": "Sec. 34, KRS 154.20-220(9)",
+   "evidence": {
+    "provision": "Sec. 34, KRS 154.20-220(9)",
+    "quote": "\"Eligible costs\" means expenditures made by the preliminarily approved company"
+   }
+  },
+  {
+   "term": "Final approval",
+   "defined_in": "Sec. 34, KRS 154.20-220(10)",
+   "evidence": {
+    "provision": "Sec. 34, KRS 154.20-220(10)",
+    "quote": "\"Final approval\" means the action taken by the authority to verify that, on or before"
+   }
+  },
+  {
+   "term": "Memorandum of agreement",
+   "defined_in": "Sec. 34, KRS 154.20-220(11)",
+   "evidence": {
+    "provision": "Sec. 34, KRS 154.20-220(11)",
+    "quote": "\"Memorandum of agreement\" means the agreement between the eligible company"
+   }
+  },
+  {
+   "term": "Operator",
+   "defined_in": "Sec. 34, KRS 154.20-220(12)(a)",
+   "evidence": {
+    "provision": "Sec. 34, KRS 154.20-220(12)(a)",
+    "quote": "Means any entity, other than an owner, a project organizer, or a colocation"
+   }
+  },
+  {
+   "term": "Owner",
+   "defined_in": "Sec. 34, KRS 154.20-220(13)",
+   "evidence": {
+    "provision": "Sec. 34, KRS 154.20-220(13)",
+    "quote": "\"Owner\" means an entity, other than a project organizer, holding fee title to a data"
+   }
+  },
+  {
+   "term": "Preliminary approval",
+   "defined_in": "Sec. 34, KRS 154.20-220(14)",
+   "evidence": {
+    "provision": "Sec. 34, KRS 154.20-220(14)",
+    "quote": "\"Preliminary approval\" means the action taken by the authority to enter into a"
+   }
+  },
+  {
+   "term": "Project organizer",
+   "defined_in": "Sec. 34, KRS 154.20-220(15)",
+   "evidence": {
+    "provision": "Sec. 34, KRS 154.20-220(15)",
+    "quote": "\"Project organizer\" means an entity that:"
+   }
+  },
+  {
+   "term": "Qualified data center infrastructure",
+   "defined_in": "Sec. 34, KRS 154.20-220(16)",
+   "evidence": {
+    "provision": "Sec. 34, KRS 154.20-220(16)",
+    "quote": "\"Qualified data center infrastructure\" means providing site development and"
+   }
+  },
+  {
+   "term": "Qualified data center project",
+   "defined_in": "Sec. 34, KRS 154.20-220(17)(a)",
+   "evidence": {
+    "provision": "Sec. 34, KRS 154.20-220(17)(a)(2)",
+    "quote": "Acquiring, leasing, rehabilitating, expanding, or constructing one (1) or"
+   }
+  },
+  {
+   "term": "Term",
+   "defined_in": "Sec. 34, KRS 154.20-220(18)",
+   "evidence": {
+    "provision": "Sec. 34, KRS 154.20-220(18)",
+    "quote": "\"Term\" means the period of time for which a memorandum of agreement may be in"
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "eligibility_condition",
+   "addressee": "data_center_owner",
+   "also_addressees": [
+    "data_center_operator",
+    "data_center_occupant"
+   ],
+   "modality": "shall",
+   "summary": "A qualified data center project must have a minimum capital investment on or before the fifth anniversary of preliminary approval: $450,000,000 for an owner, operator or colocation tenant in a county of 100,000 or more; $100,000,000 for a county of 50,001 to 99,999; $25,000,000 for a county of 50,000 or fewer; and $150,000,000 for a project organizer. County population is taken from the most recent five-year American Community Survey estimate at the time of application.",
+   "applies_from": "on or before the fifth anniversary of the preliminary approval",
+   "conditional_on": "Project is a qualified data center project under KRS 154.20-220(17)(a); county population tier determined at time of application",
+   "evidence": {
+    "provision": "Sec. 34 (amending KRS 154.20-220(17)(b))",
+    "quote": "Has the following minimum capital investment on or before the fifth anniversary of the preliminary approval:"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Authority takes final approval action to verify that the minimum capital investment has been made by the fifth anniversary of preliminary approval.",
+   "applies_from": "not stated in excerpt",
+   "conditional_on": "Final approval stage of a data center project under a memorandum of agreement",
+   "evidence": {
+    "provision": "Sec. 34 (amending KRS 154.20-220(10))",
+    "quote": "the action taken by the authority to verify that, on or before the fifth anniversary of the preliminary approval, the minimum capital investment has been made"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall_not",
+   "summary": "A memorandum of agreement's term may not exceed 15 years for a project organizer's qualified data center project, 50 years for a project with capital investment of $450,000,000 or more, and 25 years for a project with less than $450,000,000 (other data center projects).",
+   "applies_from": "not stated in excerpt",
+   "conditional_on": "Type of applicant (project organizer or other) and capital investment amount of the data center project",
+   "evidence": {
+    "provision": "Sec. 34 (amending KRS 154.20-220(18))",
+    "quote": "the period of time for which a memorandum of agreement may be in effect, which shall not exceed:"
+   }
+  }
+ ],
+ "section_status": {
+  "enforcement": {
+   "status": "not_found",
+   "note": "The provided text contains no sanction, fine, criminal penalty, clawback, revocation or suspension provision. It covers Section 34 (definitions in KRS 154.20-220 to 154.20-229) and the Section 40 effective date. Sections 1-33 and 35-39 are omitted from the fetched text and could not be checked."
+  }
+ },
+ "enforcement": []
+}

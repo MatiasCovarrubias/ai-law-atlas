@@ -1,0 +1,161 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "us-s1399-119",
+ "tier": "B",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "light, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-interim-20261014"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "AGORA plaintext (ETO, CC BY-NC 4.0), local cache",
+  "url": "https://www.congress.gov/bill/119th-congress/senate-bill/1399/text",
+  "retrieved": "2025-04-28",
+  "version": "1.33.0 (2026-09-16)",
+  "language": "en",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "ai_sectoral"
+  ],
+  "primary_domain": "ai_sectoral",
+  "mechanisms": [
+   "mandate_obligation",
+   "tariff_price_regulation"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "government_agency"
+  ],
+  "affected_roles": [
+   "ai_provider",
+   "healthcare_provider"
+  ],
+  "decision_margins": [
+   "firm:pricing"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national"
+   ],
+   "description": "Applies to Medicare payment for covered outpatient department services under Title XVIII of the Social Security Act, a federal program.",
+   "evidence": {
+    "provision": "Sec. 2(a)",
+    "quote": "Section 1833(t) of the Social Security Act (42 U.S.C. 1395l(t)) is amended"
+   }
+  },
+  "agora_applications": [
+   "Medicine, life sciences and public health"
+  ]
+ },
+ "summary": {
+  "short": "Amends Social Security Act §1833(t) so that FDA-cleared algorithm-based healthcare services furnished in hospital outpatient departments from January 1, 2026 are assigned to new technology ambulatory payment classifications based on manufacturer-submitted costs, and directs HHS to apply a software-as-a-service payment policy from January 1, 2023.",
+  "long": "The Health Tech Investment Act amends Section 1833(t) of the Social Security Act to add a special rule for algorithm-based healthcare services, defined as services delivered through an FDA-cleared or approved device that uses artificial intelligence, machine learning or similar software to yield clinical outputs for use by a physician or practitioner in screening, detection, diagnosis or treatment. For covered outpatient department services furnished on or after January 1, 2026, the Secretary must ensure that qualifying services are assigned to a new technology ambulatory payment classification based on costs submitted by the manufacturer, must adjust that classification as necessary, and may not remove a service from it until adequate claims data exists, and in no case before the service has received payment under the classification for at least five years. The Secretary must also adjust eligibility criteria so that distinct adjunctive algorithm-based services can qualify. Section 2(b) directs the Secretary to apply the outpatient payment policy for software as a service, described in a November 23, 2022 final rule, to services provided on or after January 1, 2023. The text contains no enforcement or penalty provisions."
+ },
+ "relations": [
+  {
+   "relation": "amends",
+   "target_text": "Social Security Act, section 1833(t) (42 U.S.C. 1395l(t))",
+   "note": "Sec. 2(a) amends section 1833(t) of the Social Security Act by adding a new paragraph (16)(H) and changing paragraph (2)(E). The target is not in the registry.",
+   "evidence": {
+    "provision": "Sec. 2(a)",
+    "quote": "Section 1833(t) of the Social Security Act (42 U.S.C. 1395l(t)) is amended—"
+   }
+  },
+  {
+   "relation": "codifies",
+   "target_text": "Federal Register final rule at 87 Fed. Reg. 71748 (published November 23, 2022), Medicare Program: Hospital Outpatient Prospective Payment and Ambulatory Surgical Center Payment Systems and Quality Reporting Programs; ... COVID–19",
+   "note": "Sec. 2(b) is headed 'Codifying OPPS payment for software as a service' and directs the Secretary to apply the payment policy described in the cited 2022 final rule. The rule is cited by reference and is not in the registry.",
+   "evidence": {
+    "provision": "Sec. 2(b)",
+    "quote": "shall apply the hospital outpatient prospective payment system payment for software as a service policy described in the final rule entitled"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Federal Register final rule at 66 Fed. Reg. 59897 (published November 30, 2001), Medicare Program; Changes to the Hospital Outpatient Prospective Payment System for Calendar Year 2002",
+   "note": "The new paragraph (16)(H)(i) refers to the new technology ambulatory payment classification 'as described in' this 2001 final rule. The reference defines the classification the new subparagraph applies to; the rule is not in the registry.",
+   "evidence": {
+    "provision": "Sec. 2(a)(2) (new Social Security Act section 1833(t)(16)(H)(i))",
+    "quote": "as described in the final rule entitled ‘Medicare Program; Changes to the Hospital Outpatient Prospective Payment System for Calendar Year 2002’ published by the Department of Health and Human Services on November 30, 2001 (66 Fed. Reg. 59897)"
+   }
+  }
+ ],
+ "notes": "Bill as introduced; no enacted text. Relations come only from references in this bill's text. No target is in the registry, so target_instrument_id is an empty string. Sec. 2(b) sets an effective date of January 1, 2023, which is earlier than the bill's introduction; Sec. 2(a) applies from January 1, 2026 for covered OPD services. Sec. 2(b)'s payment policy is identified only by reference to the 2022 final rule, so its content is not coded. The 2001 rule's title says 'Calendar Year 2002' but the text gives its publication date as November 30, 2001; this is reproduced as written.",
+ "events": [
+  {
+   "event": "application",
+   "date": "2026-01-01",
+   "date_type": "absolute",
+   "date_text": "on or after January 1, 2026",
+   "applies_to": "Covered OPD services furnished on or after 2026-01-01 that are algorithm-based healthcare services assigned to a new technology ambulatory payment classification (cohort: services furnished from 2026-01-01)",
+   "evidence": {
+    "provision": "Sec. 2(a)(2) (inserting 42 U.S.C. 1395l(t)(16)(H)(i))",
+    "quote": "furnished on or after January 1, 2026"
+   }
+  },
+  {
+   "event": "application",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "on or after the date of the enactment of this subparagraph",
+   "depends_on": "enactment of this Act (date of enactment not stated in the text)",
+   "applies_to": "Algorithm-based healthcare services assigned to a new technology ambulatory payment classification on or after enactment, or currently assigned for less than 5 years as of enactment (cohort: assignment on or after enactment)",
+   "evidence": {
+    "provision": "Sec. 2(a)(2) (inserting 42 U.S.C. 1395l(t)(16)(H)(i))",
+    "quote": "on or after the date of the enactment of this subparagraph"
+   }
+  },
+  {
+   "event": "application",
+   "date": "2023-01-01",
+   "date_type": "absolute",
+   "date_text": "Effective for services provided on or after January 1, 2023",
+   "applies_to": "Services provided on or after 2023-01-01 under the hospital outpatient prospective payment system software-as-a-service payment policy (Secretary to apply)",
+   "evidence": {
+    "provision": "Sec. 2(b)",
+    "quote": "Effective for services provided on or after January 1, 2023"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "other",
+   "variable_text": "period of assignment to a new technology ambulatory payment classification as of the enactment date",
+   "operator": "<",
+   "value": 5,
+   "value_text": "for a period of less than 5 years",
+   "unit": "years",
+   "measurement": "Period during which the service has been assigned to the new technology ambulatory payment classification, measured as of the date of enactment ('as of such date')",
+   "level": "service",
+   "trigger": "eligibility",
+   "consequence": "A service that is currently assigned, and has been assigned for less than 5 years as of enactment, falls within the special rule requiring the Secretary to assign it to a new technology ambulatory payment classification based on manufacturer-submitted cost.",
+   "conditions": "The service is an algorithm-based healthcare service (clause (iii)) furnished as a covered OPD service on or after January 1, 2026.",
+   "evidence": {
+    "provision": "Sec. 2(a)(2) (adding 42 U.S.C. 1395l(t)(16)(H)(i))",
+    "quote": "is currently and has been assigned to a new technology ambulatory payment classification for a period of less than 5 years"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "years of payment under the assigned new technology ambulatory payment classification before removal",
+   "operator": ">=",
+   "value": 5,
+   "value_text": "for at least 5 years",
+   "unit": "years",
+   "measurement": "Payment received by the service under the assigned new technology ambulatory payment classification",
+   "level": "service",
+   "trigger": "benefit_duration",
+   "consequence": "The Secretary may not remove the service from the new technology ambulatory payment classification until adequate claims data exists to reassign it, and in no case before it has received payment under that classification for at least 5 years.",
+   "conditions": "The Secretary determines that adequate claims data exists to reassign the service to another ambulatory payment classification.",
+   "evidence": {
+    "provision": "Sec. 2(a)(2) (adding 42 U.S.C. 1395l(t)(16)(H)(i)(III))",
+    "quote": "received payment under the assigned new technology ambulatory payment classification for at least 5 years"
+   }
+  }
+ ],
+ "section_status": {}
+}

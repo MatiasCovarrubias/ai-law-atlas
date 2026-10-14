@@ -1,0 +1,98 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "cl-boletin17307-07-ai-intimate-images",
+ "tier": "B",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "light, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-interim-20261014"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (connectors/fetch_texts.py)",
+  "url": "https://tramitacion.senado.cl/appsenado/index.php?mo=tramitacion&ac=getDocto&iddocto=17940&tipodoc=mensaje_mocion",
+  "retrieved": "2026-10-13",
+  "version": "as fetched",
+  "language": "es",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "synthetic_media_deepfakes",
+   "data_protection"
+  ],
+  "primary_domain": "synthetic_media_deepfakes",
+  "mechanisms": [
+   "prohibition_ban"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "general_public"
+  ],
+  "affected_roles": [
+   "general_public"
+  ],
+  "decision_margins": [
+   "household:data_privacy"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national"
+   ],
+   "description": "Amends the Chilean Penal Code; the operative provisions state no extraterritorial reach.",
+   "evidence": {
+    "provision": "Artículo único",
+    "quote": "Modifíquense los artículos 161-A y 161-C del Código Penal"
+   }
+  },
+  "agora_harms": [
+   "Detrimental content",
+   "Violation of civil or human rights, including privacy"
+  ],
+  "agora_incentives": [
+   "Criminal liability",
+   "Fines",
+   "Imprisonment"
+  ],
+  "agora_risk_factors": [
+   "Privacy"
+  ]
+ },
+ "summary": {
+  "short": "Proposed bill amending Penal Code arts. 161-A and 161-C to criminalise capturing, AI-generating or disseminating private or intimate images or facts without consent, punished with prison and fines. Operative provisions have no stated entry-into-force date.",
+  "long": "Bill (Boletín 17307-07) amending Penal Code arts. 161-A and 161-C. Art. 161-A covers capturing, intercepting, recording or reproducing private conversations, communications, documents, or images or facts (including those generated with artificial intelligence or editing tools) in private premises without the affected person's consent, and disseminating them. Penalty: minor imprisonment in any degree and a fine of 50 to 500 monthly tax units (UTM); where the same person obtains and disseminates, minor imprisonment in its maximum degree and 100 to 500 UTM. Art. 161-A excludes persons acting under law or judicial authorization. Art. 161-C covers capturing, recording, filming, photographing or generating with artificial intelligence images, videos or audiovisual records of another person's genitals or other intimate body part, for sexual purposes and without consent, in public or freely accessible places. Penalty: minor imprisonment in its minimum degree and 5 to 10 UTM; dissemination 10 to 20 UTM; higher penalties where the same person both obtains and disseminates. The bill imposes no duties on AI providers or platforms. Its statement of reasons cites a deepfake case and says existing Chilean law does not specifically address deepfakes. No entry-into-force date is stated."
+ },
+ "relations": [
+  {
+   "relation": "amends",
+   "target_text": "Código Penal (Chile), arts. 161-A and 161-C",
+   "note": "The bill replaces the text of arts. 161-A and 161-C of the Código Penal. The base wording of those articles is not reproduced in the document.",
+   "evidence": {
+    "provision": "Artículo único",
+    "quote": "Modifíquense los artículos 161-A y 161-C del Código Penal"
+   }
+  }
+ ],
+ "notes": "Operative text covers only arts. 161-A and 161-C of the Código Penal; the current wording of those articles is not reproduced, so changes are identifiable only from the new text. The Fundamentos refer to prohibiting deepfakes and to stricter laws, but the operative provisions are criminal offences and do not state a general deepfake prohibition. AI-related conduct is one of several listed means in art. 161-A. The last sentence of art. 161-C ends with 'unidades tributarias' without 'mensuales' (used elsewhere in the text) and without a closing period, which may be a transcription gap. The only date in the document is the electronic signature date 17-12-2024; no introduction or entry-into-force date is stated. Statistics in the Fundamentos (ClaroVTR, Kaspersky, Centro Nacional de Inteligencia Artificial) are not coded. Ley 19.799 is cited only for the electronic signature of the document and is not recorded as a relation. The section_status entry is included only because the schema requires it; relations are recorded in the relations array.",
+ "events": [
+  {
+   "event": "introduced",
+   "date": "2024-12-17",
+   "date_type": "absolute",
+   "date_text": "17-12-2024 19:22",
+   "applies_to": "Senado (filing of the bill by Senator Bianchi, per the electronic signature block)",
+   "evidence": {
+    "provision": "Signature block (Este documento fue firmado electrónicamente)",
+    "quote": "17-12-2024 19:22"
+   }
+  }
+ ],
+ "section_status": {
+  "thresholds": {
+   "status": "not_found",
+   "note": "No numeric scope, eligibility, exemption, benefit or prohibition cutoffs found. The only numbers are penalty amounts (UTM fines, prison grades) in arts. 161-A and 161-C, which the codebook codes under enforcement, not thresholds. Penalty tiers for the same person obtaining and disclosing (161-A, 161-C) are triggered by conduct, not by a numeric crossing."
+  }
+ },
+ "thresholds": []
+}

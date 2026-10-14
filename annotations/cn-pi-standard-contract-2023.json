@@ -1,0 +1,433 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "cn-pi-standard-contract-2023",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (connectors/fetch_texts.py)",
+  "url": "https://www.cac.gov.cn/2023-02/24/c_1678884830036813.htm",
+  "retrieved": "2026-10-13",
+  "version": "as fetched",
+  "language": "zh",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "data_transfer_localization",
+   "data_protection"
+  ],
+  "primary_domain": "data_transfer_localization",
+  "mechanisms": [
+   "mandate_obligation",
+   "registration_notification",
+   "prohibition_ban",
+   "standard_setting"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "data_controller",
+   "government_agency"
+  ],
+  "affected_roles": [
+   "consumers_users"
+  ],
+  "decision_margins": [
+   "firm:compliance_process",
+   "firm:trade"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national"
+   ],
+   "description": "Applies to personal information processors transferring personal information from China to recipients outside the PRC.",
+   "evidence": {
+    "provision": "Art. 2",
+    "quote": "向中华人民共和国境外提供个人信息，适用本办法。"
+   }
+  },
+  "agora_risk_factors": [
+   "Privacy"
+  ],
+  "agora_strategies": [
+   "Licensing, registration, and certification",
+   "Evaluation: Impact assessment",
+   "Input controls: Data circulation"
+  ]
+ },
+ "summary": {
+  "short": "Sets conditions for transferring personal information outside China by concluding the State standard contract with the overseas recipient. Requires a protection impact assessment and filing with the provincial cyberspace authority within 10 working days; bars splitting transfers to avoid security assessment. Effective 1 June 2023.",
+  "long": "Sets conditions for transferring personal information outside China by concluding the State standard contract with the overseas recipient. Art. 4 limits this route to non-CII processors below caps: under 1 million individuals processed, and since 1 January of the prior year under 100,000 individuals' information and under 10,000 individuals' sensitive information transferred abroad; splitting transfers to avoid a security assessment is barred. Before transfer, the processor must carry out an impact assessment (Art. 5). The contract must follow the Annex, which the regulator may adjust; the contract must take effect before transfer (Art. 6). Within 10 working days of effectiveness the processor files the contract and assessment report with the provincial cyberspace authority (Art. 7); reassessment and refiling are required on specified changes (Art. 8). Regulators must keep information confidential (Art. 9); anyone may report violations (Art. 10); regulators may interview processors facing major risk or incidents (Art. 11). Violations are handled under the PIPL, with criminal liability where applicable (Art. 12). Effective 1 June 2023; non-compliant transfers already under way must be rectified within six months (Art. 13)."
+ },
+ "relations": [
+  {
+   "relation": "legal_basis",
+   "target_text": "中华人民共和国个人信息保护法 (Personal Information Protection Law of the PRC); not in registry",
+   "note": "Enacted under the PIPL and other laws and regulations. Art. 12 also refers to the PIPL for handling violations, so this single row covers both references.",
+   "evidence": {
+    "provision": "Art. 1",
+    "quote": "根据《中华人民共和国个人信息保护法》等法律法规，制定本办法"
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "国家互联网信息办公室",
+   "role": "designated",
+   "function": "National cyberspace authority (国家网信部门) that issued the Measures and may adjust the annex of the standard contract.",
+   "evidence": {
+    "provision": "Art. 6 para. 1",
+    "quote": "国家网信部门可以根据实际情况对附件进行调整"
+   }
+  },
+  {
+   "name": "省级网信部门",
+   "role": "designated",
+   "function": "Provincial cyberspace authority where the personal information processor is located; receives the filing of the standard contract and the personal information protection impact assessment report.",
+   "evidence": {
+    "provision": "Art. 7 para. 1",
+    "quote": "向所在地省级网信部门备案"
+   }
+  },
+  {
+   "name": "省级以上网信部门",
+   "role": "designated",
+   "function": "Provincial-level and higher cyberspace authorities; receive reports of violations and may summon personal information processors for an interview (约谈) where outbound transfers carry substantial risk or a security incident occurs.",
+   "evidence": {
+    "provision": "Art. 10",
+    "quote": "可以向省级以上网信部门举报"
+   }
+  },
+  {
+   "name": "个人信息处理者",
+   "role": "addressee",
+   "function": "Personal information processors that provide personal information outside the PRC by concluding the standard contract with an overseas recipient; bear the filing, impact assessment and rectification duties.",
+   "evidence": {
+    "provision": "Art. 2",
+    "quote": "个人信息处理者通过与境外接收方订立个人信息出境标准合同"
+   }
+  }
+ ],
+ "notes": "The document is a CAC web page. The standard contract annex (附件) is only linked, not reproduced, so no annex terms are coded. Entities are populated above; the section_status fields are set to not_applicable only because the schema requires them. The PIPL target has no registry ID, so target_instrument_id is an empty string.",
+ "events": [
+  {
+   "event": "adopted",
+   "date": "2023-02-03",
+   "date_type": "absolute",
+   "date_text": "2023年2月3日国家互联网信息办公室2023年第2次室务会议审议通过",
+   "applies_to": "",
+   "evidence": {
+    "provision": "Order No. 13 (国家互联网信息办公室令第13号), preamble",
+    "quote": "《个人信息出境标准合同办法》已经2023年2月3日国家互联网信息办公室2023年第2次室务会议审议通过"
+   }
+  },
+  {
+   "event": "signed",
+   "date": "2023-02-22",
+   "date_type": "absolute",
+   "date_text": "2023年2月22日",
+   "applies_to": "",
+   "evidence": {
+    "provision": "Order No. 13, signature block (国家互联网信息办公室主任 庄荣文)",
+    "quote": "2023年2月22日"
+   }
+  },
+  {
+   "event": "published",
+   "date": "2023-02-24",
+   "date_type": "absolute",
+   "date_text": "2023年02月24日 15:00",
+   "applies_to": "",
+   "evidence": {
+    "provision": "Page dateline (CAC website posting of the Measures)",
+    "quote": "2023年02月24日 15:00"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2023-06-01",
+   "date_type": "absolute",
+   "date_text": "自2023年6月1日起施行",
+   "applies_to": "",
+   "evidence": {
+    "provision": "Order No. 13, preamble; Art. 13",
+    "quote": "自2023年6月1日起施行"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2023-12-01",
+   "date_type": "relative",
+   "date_text": "自本办法施行之日起6个月内",
+   "anchor": "entry into force of the Measures (本办法施行之日)",
+   "applies_to": "outbound transfers of personal information begun before entry into force that do not comply with the Measures (施行前已经开展的个人信息出境活动，不符合本办法规定的)",
+   "offset_value": 6,
+   "offset_unit": "months",
+   "anchor_event": "entry_into_force",
+   "evidence": {
+    "provision": "Art. 13",
+    "quote": "本办法施行前已经开展的个人信息出境活动，不符合本办法规定的，应当自本办法施行之日起6个月内完成整改"
+   },
+   "date_computed_from": "entry_into_force 2023-06-01 (text) + 6 months"
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "应当在标准合同生效之日起10个工作日内向所在地省级网信部门备案",
+   "depends_on": "effective date of the standard contract (标准合同生效之日)",
+   "applies_to": "personal information processors filing the standard contract and PIPIA report with the provincial cyberspace authority",
+   "offset_value": 10,
+   "offset_unit": "business_days",
+   "evidence": {
+    "provision": "Art. 7, para. 1",
+    "quote": "个人信息处理者应当在标准合同生效之日起10个工作日内向所在地省级网信部门备案"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "data_subjects_count",
+   "variable_text": "处理个人信息人数 (number of individuals whose personal information is processed)",
+   "operator": "<",
+   "value": 1000000,
+   "value_text": "不满100万人 (fewer than 1 million persons)",
+   "unit": "persons",
+   "measurement": "Number of individuals whose personal information the processor handles; the text states no window or measurement method",
+   "level": "entity",
+   "trigger": "eligibility",
+   "consequence": "Processor may transfer personal information abroad by standard contract only if this count is below the limit; otherwise the eligibility condition is not met",
+   "conditions": "Jointly with the other Art. 4 conditions: not a critical information infrastructure operator; cumulative outbound counts below the stated limits; no splitting of volumes to avoid security assessment",
+   "evidence": {
+    "provision": "第四条第（二）项",
+    "quote": "处理个人信息不满100万人的"
+   }
+  },
+  {
+   "variable": "data_subjects_count",
+   "variable_text": "自上年1月1日起累计向境外提供个人信息的人数 (cumulative number of individuals whose personal information was provided abroad since 1 January of the previous year)",
+   "operator": "<",
+   "value": 100000,
+   "value_text": "不满10万人 (fewer than 100,000 persons)",
+   "unit": "persons",
+   "measurement": "Cumulative count of individuals whose personal information was provided overseas, counted from 1 January of the previous year",
+   "level": "entity",
+   "trigger": "eligibility",
+   "consequence": "Processor may transfer personal information abroad by standard contract only if this cumulative count is below the limit",
+   "conditions": "Jointly with the other Art. 4 conditions, including the cumulative sensitive personal information limit",
+   "evidence": {
+    "provision": "第四条第（三）项",
+    "quote": "自上年1月1日起累计向境外提供个人信息不满10万人的"
+   }
+  },
+  {
+   "variable": "data_subjects_count",
+   "variable_text": "自上年1月1日起累计向境外提供敏感个人信息的人数 (cumulative number of individuals whose sensitive personal information was provided abroad since 1 January of the previous year)",
+   "operator": "<",
+   "value": 10000,
+   "value_text": "不满1万人 (fewer than 10,000 persons)",
+   "unit": "persons",
+   "measurement": "Cumulative count of individuals whose sensitive personal information was provided overseas, counted from 1 January of the previous year",
+   "level": "entity",
+   "trigger": "eligibility",
+   "consequence": "Processor may transfer personal information abroad by standard contract only if this cumulative sensitive-information count is below the limit",
+   "conditions": "Jointly with the other Art. 4 conditions, including the cumulative personal information limit",
+   "evidence": {
+    "provision": "第四条第（四）项",
+    "quote": "自上年1月1日起累计向境外提供敏感个人信息不满1万人的"
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "标准合同 (standard contract; 个人信息出境标准合同)",
+   "defined_in": "this instrument",
+   "evidence": {
+    "provision": "第二条",
+    "quote": "个人信息出境标准合同（以下简称标准合同）"
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "eligibility_condition",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "A personal information processor transferring abroad under a standard contract must meet all listed conditions: not a critical information infrastructure operator; fewer than 1 million individuals' personal information processed; cumulative outbound transfer of personal information of fewer than 100,000 individuals since 1 January of the previous year; cumulative outbound transfer of sensitive personal information of fewer than 10,000 individuals since 1 January of the previous year.",
+   "conditional_on": "Transfer made by entering into a standard contract with an overseas recipient",
+   "evidence": {
+    "provision": "Art. 4",
+    "quote": "个人信息处理者通过订立标准合同的方式向境外提供个人信息的，应当同时符合下列情形"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "data_controller",
+   "modality": "shall_not",
+   "summary": "A processor shall not use volume-splitting or similar means to route personal information that must pass an outbound security assessment through a standard contract instead.",
+   "conditional_on": "Personal information that by law must pass an outbound security assessment",
+   "evidence": {
+    "provision": "Art. 4",
+    "quote": "个人信息处理者不得采取数量拆分等手段"
+   }
+  },
+  {
+   "type": "impact_assessment",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Before providing personal information overseas, the processor shall carry out a personal information protection impact assessment covering the listed matters (legality of purpose and scope, scale and sensitivity, overseas recipient's obligations and safeguards, risks after transfer, foreign data protection environment, other relevant matters).",
+   "applies_from": "Before providing personal information overseas",
+   "conditional_on": "Outbound transfer of personal information",
+   "evidence": {
+    "provision": "Art. 5",
+    "quote": "个人信息处理者向境外提供个人信息前，应当开展个人信息保护影响评估"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "The standard contract shall be concluded strictly in accordance with the annex to the Measures; the processor may agree other terms with the overseas recipient provided they do not conflict with the standard contract.",
+   "conditional_on": "Conclusion of a standard contract",
+   "evidence": {
+    "provision": "Art. 6",
+    "quote": "标准合同应当严格按照本办法附件订立。"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "data_controller",
+   "modality": "shall_not",
+   "summary": "Outbound transfer of personal information may only begin after the standard contract takes effect; transfer before effect is not permitted.",
+   "applies_from": "After the standard contract takes effect",
+   "conditional_on": "Transfer under a standard contract",
+   "evidence": {
+    "provision": "Art. 6",
+    "quote": "标准合同生效后方可开展个人信息出境活动。"
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "government_agency",
+   "modality": "may",
+   "summary": "The national cyberspace authority may adjust the annex to the standard contract according to actual circumstances.",
+   "evidence": {
+    "provision": "Art. 6",
+    "quote": "国家网信部门可以根据实际情况对附件进行调整。"
+   }
+  },
+  {
+   "type": "registration_notification",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "The processor shall file the standard contract and its personal information protection impact assessment report with the provincial-level cyberspace authority of its location, and is responsible for the truthfulness of the filed materials.",
+   "applies_from": "Within 10 working days after the standard contract takes effect",
+   "conditional_on": "Standard contract entered into",
+   "evidence": {
+    "provision": "Art. 7",
+    "quote": "个人信息处理者应当在标准合同生效之日起10个工作日内向所在地省级网信部门备案。"
+   }
+  },
+  {
+   "type": "impact_assessment",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Upon the listed changes during the contract term, the processor shall redo the impact assessment and supplement or re-sign the standard contract.",
+   "applies_from": "During the validity of the standard contract",
+   "conditional_on": "Changes in purpose, scope, type, sensitivity, method, storage location or recipient's processing use or method (including extended retention); changes in the recipient country's data protection laws or policies; other matters affecting personal information rights",
+   "evidence": {
+    "provision": "Art. 8",
+    "quote": "应当重新开展个人信息保护影响评估，补充或者重新订立标准合同"
+   }
+  },
+  {
+   "type": "registration_notification",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Upon the changes listed in Art. 8, the processor shall complete the corresponding filing procedures again.",
+   "applies_from": "During the validity of the standard contract",
+   "conditional_on": "Changes listed in Art. 8(1) to (3)",
+   "evidence": {
+    "provision": "Art. 8",
+    "quote": "并履行相应备案手续"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Cyberspace authorities and their staff shall keep confidential the personal privacy, personal information, trade secrets and confidential business information they learn in performing their duties, and shall not disclose or unlawfully provide or use them.",
+   "conditional_on": "Knowledge acquired in performing duties",
+   "evidence": {
+    "provision": "Art. 9",
+    "quote": "网信部门及其工作人员对在履行职责中知悉的个人隐私、个人信息、商业秘密、保密商务信息等应当依法予以保密"
+   }
+  },
+  {
+   "type": "cooperation_with_authority",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "After being summoned (约谈) by a provincial-level or higher cyberspace authority, the processor shall rectify as required and eliminate hidden dangers.",
+   "conditional_on": "Higher risk of outbound transfer or a personal information security incident, and the authority's summons",
+   "evidence": {
+    "provision": "Art. 11",
+    "quote": "个人信息处理者应当按照要求整改，消除隐患。"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Outbound transfers already carried out before the Measures took effect that do not comply with them shall be rectified within 6 months of the effective date.",
+   "applies_from": "Within 6 months from the effective date of the Measures (施行 on 2023年6月1日)",
+   "conditional_on": "Outbound transfers carried out before the Measures took effect that do not comply with them",
+   "evidence": {
+    "provision": "Art. 13",
+    "quote": "应当自本办法施行之日起6个月内完成整改"
+   }
+  }
+ ],
+ "enforcement": [
+  {
+   "sanction_type": "warning_reprimand",
+   "authority": "省级以上网信部门 (provincial-level and above cyberspace authorities)",
+   "triggered_by": "Outbound personal information transfer activity posing greater risk or involving a personal information security incident (Art. 11)",
+   "max_penalty_text": "No penalty maximum stated; summons (约谈) with a duty to rectify as required",
+   "cure_period": "No period stated; the processor must rectify as required and eliminate hidden dangers",
+   "evidence": {
+    "provision": "Art. 11",
+    "quote": "省级以上网信部门发现个人信息出境活动存在较大风险或者发生个人信息安全事件的，可以依法对个人信息处理者进行约谈。"
+   }
+  },
+  {
+   "sanction_type": "other",
+   "authority": "Not specified in this text (penalties handled under the PIPL and other laws)",
+   "triggered_by": "Violation of the Measures (违反本办法规定)",
+   "max_penalty_text": "Not stated in this text; penalties are governed by the Personal Information Protection Law and other laws and regulations",
+   "penalty_reference": "《中华人民共和国个人信息保护法》 (PIPL), cited by name without article number",
+   "cure_period": "Not stated in this text",
+   "evidence": {
+    "provision": "Art. 12",
+    "quote": "违反本办法规定的，依据《中华人民共和国个人信息保护法》等法律法规处理；"
+   }
+  },
+  {
+   "sanction_type": "criminal_penalty",
+   "authority": "Not specified in this text",
+   "triggered_by": "Violation of the Measures that constitutes a crime (构成犯罪)",
+   "max_penalty_text": "Not stated in this text; criminal liability is pursued according to law",
+   "penalty_reference": "Criminal law (not specified in this text)",
+   "cure_period": "Not applicable",
+   "evidence": {
+    "provision": "Art. 12",
+    "quote": "构成犯罪的，依法追究刑事责任。"
+   }
+  }
+ ],
+ "section_status": {}
+}

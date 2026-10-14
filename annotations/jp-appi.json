@@ -1,0 +1,2684 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "jp-appi",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (Claude Code retrieval)",
+  "url": "https://laws.e-gov.go.jp/api/1/lawdata/415AC0000000057",
+  "retrieved": "2026-10-14",
+  "version": "current consolidated text on e-Gov as of 2026-10-14 (latest revision listed: enforcement 2026-10-01, by Act No. 70 of 2025)",
+  "language": "ja",
+  "extent": "full",
+  "note": "Converted from e-Gov API v1 XML to plain text; article numbering kept; table of contents omitted; supplementary provisions of amending acts included."
+ },
+ "classification": {
+  "domains": [
+   "data_protection",
+   "data_transfer_localization",
+   "data_access_sharing"
+  ],
+  "primary_domain": "data_protection",
+  "mechanisms": [
+   "mandate_obligation",
+   "prohibition_ban",
+   "disclosure_transparency",
+   "registration_notification",
+   "designation_tiering",
+   "licensing_permit_certification",
+   "institution_setup",
+   "standard_setting"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "data_controller",
+   "data_processor",
+   "government_agency",
+   "research_institution"
+  ],
+  "affected_roles": [
+   "consumers_users"
+  ],
+  "decision_margins": [
+   "firm:input_use",
+   "firm:compliance_process",
+   "firm:trade",
+   "household:data_privacy",
+   "household:information"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national",
+    "extraterritorial"
+   ],
+   "description": "Applies to business operators and administrative organs in Japan and, under Article 171, to foreign handling connected with goods or services offered to persons in Japan.",
+   "evidence": {
+    "provision": "Art. 171",
+    "quote": "国内にある者に対する物品又は役務の提供に関連して、国内にある者を本人とする個人情報"
+   }
+  },
+  "agora_harms": [
+   "Violation of civil or human rights, including privacy"
+  ],
+  "agora_incentives": [
+   "Criminal liability",
+   "Fines",
+   "Imprisonment"
+  ],
+  "agora_risk_factors": [
+   "Privacy",
+   "Security"
+  ],
+  "agora_strategies": [
+   "Disclosure",
+   "Input controls: Data use",
+   "Input controls: Data circulation",
+   "Licensing, registration, and certification",
+   "New institution"
+  ]
+ },
+ "summary": {
+  "short": "Japan's Act on the Protection of Personal Information regulates how personal information business operators, pseudonymized and anonymized information handlers and administrative organs handle personal data. It sets purpose limits, security, third-party and cross-border transfer rules, individual rights, and criminal penalties, and creates the Personal Information Protection Commission.",
+  "long": "The Act defines personal information and related categories (pseudonymously processed, anonymously processed and personal-related information) and sets basic principles and duties of the national and local governments, including a cabinet-approved basic policy. Chapter 4 imposes duties on personal information handling business operators: purpose specification and use limits, proper acquisition, notice of purposes, accuracy, security measures, supervision of employees and contractors, breach reporting, limits on third-party provision and transfers to foreign third parties, record-keeping, and rules for pseudonymized and anonymized information; accredited protection organizations are also provided for. Chapter 5 applies parallel duties to administrative organs, including registration of personal information files and rights to request disclosure, correction and suspension of use. Chapter 6 establishes the Personal Information Protection Commission, empowered to give guidance, require reports, inspect premises, and issue recommendations and orders. Chapter 8 sets criminal penalties, including up to one year's imprisonment or a 1 million yen fine for violating a Commission order, and corporate fines up to 100 million yen for certain violations. Article 171 extends the Act to foreign handling connected with goods or services offered to persons in Japan. The text includes supplementary provisions from Act No. 37 of 2021, whose provisions take effect on dates set out in that Act, including 1 September 2021."
+ },
+ "relations": [
+  {
+   "relation": "amended_by",
+   "target_text": "令和二年六月一二日法律第四四号",
+   "note": "Amending act whose Article 1 revises this Act (including deleting Art. 84 and renumbering Art. 83); this text reproduces its transitional provisions.",
+   "evidence": {
+    "provision": "附則（令和二年六月一二日法律第四四号）第一条",
+    "quote": "第一条中個人情報の保護に関する法律第八十四条を削り"
+   }
+  },
+  {
+   "relation": "amended_by",
+   "target_text": "令和三年法律第三十七号（デジタル社会の形成を図るための関係法律の整備に関する法律）",
+   "note": "Per the transitional provisions reproduced here, Art. 50 of this amending act revises this Act; the amending act's Art. 50 is cited for the start of its application.",
+   "evidence": {
+    "provision": "附則（令和三年五月一九日法律第三七号）第七条",
+    "quote": "第五十条の規定の施行の日（以下この条において「第五十条施行日」という。）"
+   }
+  },
+  {
+   "relation": "amended_by",
+   "target_text": "平成二七年九月九日法律第六五号",
+   "note": "Amending act; its Art. 2 sets out the amended text of this Act, and its transitional provisions and review clauses (Art. 12) are reproduced here.",
+   "evidence": {
+    "provision": "附則（平成二七年九月九日法律第六五号）第二条",
+    "quote": "第二条の規定による改正後の個人情報の保護に関する法律"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "行政機関の保有する個人情報の保護に関する法律",
+   "note": "Review clause on public-sector personal information law, which is governed by a separate statute; no session-law number is stated in this text.",
+   "evidence": {
+    "provision": "附則（平成二七年九月九日法律第六五号）第十二条第一項",
+    "quote": "行政機関の保有する個人情報の保護に関する法律第二条第一項に規定する行政機関"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "独立行政法人等の保有する個人情報の保護に関する法律（平成十五年法律第五十九号）",
+   "note": "Review clause refers to the personal information held by independent administrative agencies under that separate act.",
+   "evidence": {
+    "provision": "附則（平成二七年九月九日法律第六五号）第十二条第一項",
+    "quote": "独立行政法人等の保有する個人情報の保護に関する法律（平成十五年法律第五十九号）"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "行政機関の保有する情報の公開に関する法律（平成十一年法律第四十二号）",
+   "note": "Defines 行政機関情報公開法, whose exemption categories are used for disclosure decisions under Arts. 78 to 80.",
+   "evidence": {
+    "provision": "第六十条第一項",
+    "quote": "行政機関の保有する情報の公開に関する法律（平成十一年法律第四十二号。以下この章において「行政機関情報公開法」という。）"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "行政手続における特定の個人を識別するための番号の利用等に関する法律（平成二十五年法律第二十七号）",
+   "note": "Defines 番号利用法; the Commission's supervisory remit extends to specific personal information under that act (Art. 132(4)).",
+   "evidence": {
+    "provision": "第百三十一条",
+    "quote": "行政手続における特定の個人を識別するための番号の利用等に関する法律（平成二十五年法律第二十七号。以下「番号利用法」という。）"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "行政不服審査法（平成二十六年法律第六十八号）",
+   "note": "Disapplies several provisions of that act to appeals against decisions by administrative organs and applies others with modifications (Arts. 104 to 106).",
+   "evidence": {
+    "provision": "第百四条第一項",
+    "quote": "行政不服審査法（平成二十六年法律第六十八号）第九条、第十七条、第二十四条"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "情報通信技術を活用した行政の推進等に関する法律（平成十四年法律第百五十一号）",
+   "note": "Allows electronic processing of notices that must otherwise be served by document under Art. 161.",
+   "evidence": {
+    "provision": "第百六十四条",
+    "quote": "情報通信技術を活用した行政の推進等に関する法律（平成十四年法律第百五十一号）第三条第九号"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "行政手続法（平成五年法律第八十八号）",
+   "note": "Notices under Art. 15(1) or 30 of that act are served by document; Art. 15(3) of that act does not apply.",
+   "evidence": {
+    "provision": "第百六十一条第二項",
+    "quote": "行政手続法（平成五年法律第八十八号）第十五条第一項又は第三十条の通知は"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "民事訴訟法（平成八年法律第百九号）",
+   "note": "Service rules of the Civil Procedure Act apply to the Commission's service of documents, with the court read as the Commission (Art. 162).",
+   "evidence": {
+    "provision": "第百五十条第一項",
+    "quote": "民事訴訟法（平成八年法律第百九号）第百条第一項"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "内閣府設置法（平成十一年法律第八十九号）",
+   "note": "The Commission is established under Art. 49(3) of the Cabinet Office Establishment Act; the basis is cited in this Act.",
+   "evidence": {
+    "provision": "第百三十条",
+    "quote": "内閣府設置法第四十九条第三項の規定に基づいて"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "独立行政法人通則法（平成十一年法律第百三号）",
+   "note": "Defines the independent administrative agencies that fall within 独立行政法人等.",
+   "evidence": {
+    "provision": "第二条第9項",
+    "quote": "独立行政法人通則法（平成十一年法律第百三号）第二条第一項に規定する独立行政法人"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "サイバーセキュリティ基本法（平成二十六年法律第百四号）",
+   "note": "Defines cybersecurity for the review clause on security measures for national administrative organs.",
+   "evidence": {
+    "provision": "附則（平成二七年九月九日法律第六五号）第十二条第五項",
+    "quote": "サイバーセキュリティ基本法（平成二十六年法律第百四号）第二条"
+   }
+  },
+  {
+   "relation": "amended_by",
+   "target_text": "令和八年七月一七日法律第五六号 (amending act; its Art. 1 item 3 amends this Act)",
+   "note": "Art. 1 item 3 of the amending act changes the table of contents and provisions of this Act; the amending provisions themselves are not in this part.",
+   "evidence": {
+    "provision": "附則（令和八年七月一七日法律第五六号）第一条第三号",
+    "quote": "第一条中個人情報の保護に関する法律の目次の改正規定"
+   }
+  },
+  {
+   "relation": "amended_by",
+   "target_text": "the act containing 第五十一条 (title not given in this part)",
+   "note": "Art. 9 para. 1 and Art. 10 refer to 第五十一条 of an amending act and to its enforcement date (第五十一条施行日); that act is not named in this part.",
+   "evidence": {
+    "provision": "附則 第九条第一項",
+    "quote": "第五十一条施行日前に特定地方独立行政法人等に対しされた本人の個人情報の取扱いに関する同意がある場合"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "地方公共団体の条例 (local government ordinances)",
+   "note": "Para. 1 provides that ordinance provisions punishing conduct regulated by the amended Act lose effect when Art. 51 takes effect; para. 2 keeps penalties for earlier violations under the old rules unless the local government provides otherwise.",
+   "evidence": {
+    "provision": "附則 第十条第一項",
+    "quote": "地方公共団体の条例の規定で、第五十一条改正後個人情報保護法で規制する行為を処罰する旨を定めているもの"
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "個人情報保護委員会",
+   "role": "designated",
+   "function": "Commission established under Art. 130 that supervises and monitors compliance, issues rules and guidance, and exercises the powers listed in Art. 132 and Arts. 146 to 148.",
+   "evidence": {
+    "provision": "第百三十条",
+    "quote": "個人情報保護委員会（以下「委員会」という。）を置く。"
+   }
+  },
+  {
+   "name": "内閣総理大臣",
+   "role": "designated",
+   "function": "Appoints the Commission chair and members with the consent of both houses of the Diet.",
+   "evidence": {
+    "provision": "第百三十四条第三項",
+    "quote": "両議院の同意を得て、内閣総理大臣が任命する。"
+   }
+  },
+  {
+   "name": "事業所管大臣",
+   "role": "designated",
+   "function": "Exercises Commission powers delegated under Art. 150(1), including those in Arts. 26(1), 146(1), 163 and 164; competent ministers are defined in Art. 152.",
+   "evidence": {
+    "provision": "第百五十条第一項",
+    "quote": "第百六十四条の規定による権限を事業所管大臣に委任することができる"
+   }
+  },
+  {
+   "name": "金融庁長官",
+   "role": "designated",
+   "function": "Receives Commission powers delegated by the Prime Minister for matters under the Financial Services Agency's jurisdiction (Art. 150(4)).",
+   "evidence": {
+    "provision": "第百五十条第四項",
+    "quote": "を金融庁長官に委任する。"
+   }
+  },
+  {
+   "name": "証券取引等監視委員会",
+   "role": "designated",
+   "function": "May receive part of the powers delegated to the Commissioner of the Financial Services Agency (Art. 150(5)).",
+   "evidence": {
+    "provision": "第百五十条第五項",
+    "quote": "その一部を証券取引等監視委員会に委任することができる。"
+   }
+  },
+  {
+   "name": "財務局長又は財務支局長",
+   "role": "designated",
+   "function": "May receive part of the delegated powers under Art. 150(6) and (7).",
+   "evidence": {
+    "provision": "第百五十条第六項",
+    "quote": "の一部を財務局長又は財務支局長に委任することができる。"
+   }
+  },
+  {
+   "name": "法務大臣",
+   "role": "designated",
+   "function": "Confirms, before the Commission may consent to use of information in foreign criminal proceedings, that Art. 172(3)(1) and (2) do not apply.",
+   "evidence": {
+    "provision": "第百七十二条第四項",
+    "quote": "同項第一号及び第二号に該当しないことについて法務大臣の確認を"
+   }
+  },
+  {
+   "name": "外務大臣",
+   "role": "designated",
+   "function": "Confirms that Art. 172(3)(3) does not apply before the Commission may consent to use of information in foreign criminal proceedings.",
+   "evidence": {
+    "provision": "第百七十二条第四項",
+    "quote": "同項第三号に該当しないことについて外務大臣の確認を"
+   }
+  },
+  {
+   "name": "認定個人情報保護団体",
+   "role": "designated",
+   "function": "Certified bodies that the Commission authorises to handle complaints and issue guidelines for their member business operators (Arts. 47, 53 and 54).",
+   "evidence": {
+    "provision": "第四十七条第一項",
+    "quote": "個人情報保護委員会の認定を受けることができる。"
+   }
+  },
+  {
+   "name": "情報公開・個人情報保護審査会",
+   "role": "designated",
+   "function": "Body to which the administrative organ must refer certain appeals concerning disclosure, correction and suspension decisions (Art. 105).",
+   "evidence": {
+    "provision": "第百五条第一項",
+    "quote": "次の各号のいずれかに該当する場合を除き、情報公開・個人情報保護審査会"
+   }
+  },
+  {
+   "name": "個人情報保護委員会",
+   "role": "designated",
+   "function": "Authority to which a personal data transfer may be notified under the transitional rule (Art. 9 para. 3); rules under Personal Information Protection Commission regulations.",
+   "evidence": {
+    "provision": "附則 第九条第三項",
+    "quote": "個人情報保護委員会に届け出ることができる"
+   }
+  },
+  {
+   "name": "特定地方独立行政法人等",
+   "role": "addressee",
+   "function": "Defined term in Art. 9 para. 1 for bodies to which the transitional consent rules apply.",
+   "evidence": {
+    "provision": "附則 第九条第一項",
+    "quote": "特定地方独立行政法人等に対しされた本人の個人情報の取扱いに関する同意がある場合"
+   }
+  },
+  {
+   "name": "沖縄科学技術大学院大学学園",
+   "role": "listed",
+   "function": "Listed in Table 1 (別表第一) of the appended tables; 根拠法 given in the table.",
+   "evidence": {
+    "provision": "別表第一",
+    "quote": "沖縄科学技術大学院大学学園"
+   }
+  },
+  {
+   "name": "沖縄振興開発金融公庫",
+   "role": "listed",
+   "function": "Listed in Table 1 (別表第一); 根拠法 given in the table.",
+   "evidence": {
+    "provision": "別表第一",
+    "quote": "沖縄振興開発金融公庫"
+   }
+  },
+  {
+   "name": "外国人技能実習機構",
+   "role": "listed",
+   "function": "Listed in Table 1 (別表第一); 根拠法 given in the table.",
+   "evidence": {
+    "provision": "別表第一",
+    "quote": "外国人技能実習機構"
+   }
+  },
+  {
+   "name": "株式会社国際協力銀行",
+   "role": "listed",
+   "function": "Listed in Table 1 (別表第一); 根拠法 given in the table.",
+   "evidence": {
+    "provision": "別表第一",
+    "quote": "株式会社国際協力銀行"
+   }
+  },
+  {
+   "name": "株式会社日本政策金融公庫",
+   "role": "listed",
+   "function": "Listed in Table 1 (別表第一); 根拠法 given in the table.",
+   "evidence": {
+    "provision": "別表第一",
+    "quote": "株式会社日本政策金融公庫"
+   }
+  },
+  {
+   "name": "株式会社日本貿易保険",
+   "role": "listed",
+   "function": "Listed in Table 1 (別表第一); 根拠法 given in the table.",
+   "evidence": {
+    "provision": "別表第一",
+    "quote": "株式会社日本貿易保険"
+   }
+  },
+  {
+   "name": "金融経済教育推進機構",
+   "role": "listed",
+   "function": "Listed in Table 1 (別表第一); 根拠法 given in the table.",
+   "evidence": {
+    "provision": "別表第一",
+    "quote": "金融経済教育推進機構"
+   }
+  },
+  {
+   "name": "原子力損害賠償・廃炉等支援機構",
+   "role": "listed",
+   "function": "Listed in Table 1 (別表第一); 根拠法 given in the table.",
+   "evidence": {
+    "provision": "別表第一",
+    "quote": "原子力損害賠償・廃炉等支援機構"
+   }
+  },
+  {
+   "name": "国立健康危機管理研究機構",
+   "role": "listed",
+   "function": "Listed in Table 1 (別表第一); 根拠法 given in the table.",
+   "evidence": {
+    "provision": "別表第一",
+    "quote": "国立健康危機管理研究機構"
+   }
+  },
+  {
+   "name": "国立大学法人",
+   "role": "listed",
+   "function": "Listed in Table 1 (別表第一); 根拠法 given in the table.",
+   "evidence": {
+    "provision": "別表第一",
+    "quote": "国立大学法人"
+   }
+  },
+  {
+   "name": "大学共同利用機関法人",
+   "role": "listed",
+   "function": "Listed in Table 1 (別表第一); 根拠法 given in the table.",
+   "evidence": {
+    "provision": "別表第一",
+    "quote": "大学共同利用機関法人"
+   }
+  },
+  {
+   "name": "脱炭素成長型経済構造移行推進機構",
+   "role": "listed",
+   "function": "Listed in Table 1 (別表第一); 根拠法 given in the table.",
+   "evidence": {
+    "provision": "別表第一",
+    "quote": "脱炭素成長型経済構造移行推進機構"
+   }
+  },
+  {
+   "name": "日本学術会議",
+   "role": "listed",
+   "function": "Listed in Table 1 (別表第一); 根拠法 given in the table.",
+   "evidence": {
+    "provision": "別表第一",
+    "quote": "日本学術会議"
+   }
+  },
+  {
+   "name": "日本銀行",
+   "role": "listed",
+   "function": "Listed in Table 1 (別表第一); 根拠法 given in the table.",
+   "evidence": {
+    "provision": "別表第一",
+    "quote": "日本銀行"
+   }
+  },
+  {
+   "name": "日本司法支援センター",
+   "role": "listed",
+   "function": "Listed in Table 1 (別表第一); 根拠法 given in the table.",
+   "evidence": {
+    "provision": "別表第一",
+    "quote": "日本司法支援センター"
+   }
+  },
+  {
+   "name": "日本私立学校振興・共済事業団",
+   "role": "listed",
+   "function": "Listed in Table 1 (別表第一); 根拠法 given in the table.",
+   "evidence": {
+    "provision": "別表第一",
+    "quote": "日本私立学校振興・共済事業団"
+   }
+  },
+  {
+   "name": "日本中央競馬会",
+   "role": "listed",
+   "function": "Listed in Table 1 (別表第一); 根拠法 given in the table.",
+   "evidence": {
+    "provision": "別表第一",
+    "quote": "日本中央競馬会"
+   }
+  },
+  {
+   "name": "日本年金機構",
+   "role": "listed",
+   "function": "Listed in Table 1 (別表第一); 根拠法 given in the table.",
+   "evidence": {
+    "provision": "別表第一",
+    "quote": "日本年金機構"
+   }
+  },
+  {
+   "name": "農水産業協同組合貯金保険機構",
+   "role": "listed",
+   "function": "Listed in Table 1 (別表第一); 根拠法 given in the table.",
+   "evidence": {
+    "provision": "別表第一",
+    "quote": "農水産業協同組合貯金保険機構"
+   }
+  },
+  {
+   "name": "福島国際研究教育機構",
+   "role": "listed",
+   "function": "Listed in Table 1 (別表第一); 根拠法 given in the table.",
+   "evidence": {
+    "provision": "別表第一",
+    "quote": "福島国際研究教育機構"
+   }
+  },
+  {
+   "name": "放送大学学園",
+   "role": "listed",
+   "function": "Listed in Table 1 (別表第一); 根拠法 given in the table.",
+   "evidence": {
+    "provision": "別表第一",
+    "quote": "放送大学学園"
+   }
+  },
+  {
+   "name": "預金保険機構",
+   "role": "listed",
+   "function": "Listed in Table 1 (別表第一); 根拠法 given in the table.",
+   "evidence": {
+    "provision": "別表第一",
+    "quote": "預金保険機構"
+   }
+  },
+  {
+   "name": "沖縄科学技術大学院大学学園",
+   "role": "listed",
+   "function": "Listed in Table 2 (別表第二); 根拠法 given in the table.",
+   "evidence": {
+    "provision": "別表第二",
+    "quote": "沖縄科学技術大学院大学学園"
+   }
+  },
+  {
+   "name": "国立研究開発法人",
+   "role": "listed",
+   "function": "Listed in Table 2 (別表第二) as a category of bodies; 根拠法 given in the table.",
+   "evidence": {
+    "provision": "別表第二",
+    "quote": "国立研究開発法人"
+   }
+  },
+  {
+   "name": "国立健康危機管理研究機構",
+   "role": "listed",
+   "function": "Listed in Table 2 (別表第二); 根拠法 given in the table.",
+   "evidence": {
+    "provision": "別表第二",
+    "quote": "国立健康危機管理研究機構"
+   }
+  },
+  {
+   "name": "国立大学法人",
+   "role": "listed",
+   "function": "Listed in Table 2 (別表第二); 根拠法 given in the table.",
+   "evidence": {
+    "provision": "別表第二",
+    "quote": "国立大学法人"
+   }
+  },
+  {
+   "name": "大学共同利用機関法人",
+   "role": "listed",
+   "function": "Listed in Table 2 (別表第二); 根拠法 given in the table.",
+   "evidence": {
+    "provision": "別表第二",
+    "quote": "大学共同利用機関法人"
+   }
+  },
+  {
+   "name": "独立行政法人国立病院機構",
+   "role": "listed",
+   "function": "Listed in Table 2 (別表第二); 根拠法 given in the table.",
+   "evidence": {
+    "provision": "別表第二",
+    "quote": "独立行政法人国立病院機構"
+   }
+  },
+  {
+   "name": "独立行政法人地域医療機能推進機構",
+   "role": "listed",
+   "function": "Listed in Table 2 (別表第二); 根拠法 given in the table.",
+   "evidence": {
+    "provision": "別表第二",
+    "quote": "独立行政法人地域医療機能推進機構"
+   }
+  },
+  {
+   "name": "福島国際研究教育機構",
+   "role": "listed",
+   "function": "Listed in Table 2 (別表第二); 根拠法 given in the table.",
+   "evidence": {
+    "provision": "別表第二",
+    "quote": "福島国際研究教育機構"
+   }
+  },
+  {
+   "name": "放送大学学園",
+   "role": "listed",
+   "function": "Listed in Table 2 (別表第二); 根拠法 given in the table.",
+   "evidence": {
+    "provision": "別表第二",
+    "quote": "放送大学学園"
+   }
+  }
+ ],
+ "notes": "Part 1 of 2: the text runs from the title through the 2021 amending act's transitional provisions, ending at the Art. 51 provision of that act. The remainder is in part 2 and is not annotated here. The 附則 reproduces transitional clauses of amending acts (2015, 2020, 2021); the amending-act relations come from that reproduced text, not from registry data. No target is in the registry, so target_instrument_id is empty throughout. Several 2003 transitional clauses (附則 Arts. 2 to 5) cite article numbers of the original 2003 text that later renumbering changed; those references are not re-mapped here. Part 2 of 2 covers only the 附則 (supplementary provisions) of amending acts from 令和四年 onward and the appended tables 別表第一 and 別表第二; the body of the Act is not in this part. Numbering of 附則 provisions restarts with each act, so provision IDs need the 附則 heading. Art. 9 and 10 refer to 第五十一条 of an amending act that is not named in this part, so that act cannot be identified here. Other 附則 blocks amend other laws (e.g., 令和五年法律第七九号, 令和八年法律第四六号); those are not coded as relations of this Act. 第七十三条 (検討) is a government review duty and is not annotated in this part. Empty target_instrument_id and lei/ticker fields mean the target is outside the registry or the identifier is not verified.",
+ "events": [
+  {
+   "event": "adopted",
+   "date": "2003",
+   "date_type": "absolute",
+   "date_text": "平成十五年法律第五十七号",
+   "applies_to": "Whole Act as originally enacted (Act No. 57 of 2003)",
+   "evidence": {
+    "provision": "題名",
+    "quote": "平成十五年法律第五十七号"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2026-07-17",
+   "date_type": "relative",
+   "date_text": "この法律は、公布の日から施行する。",
+   "anchor": "promulgation (公布の日)",
+   "applies_to": "General rule for the 2003 Act, except Chapters 4 to 6 and supplementary Arts. 2 to 6",
+   "offset_value": 0,
+   "offset_unit": "days",
+   "anchor_event": "published",
+   "evidence": {
+    "provision": "附則（2003 Act）第一条",
+    "quote": "この法律は、公布の日から施行する。"
+   },
+   "date_computed_from": "published 2026-07-17 (text) + 0 days"
+  },
+  {
+   "event": "phase_in_step",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "第四章から第六章まで及び附則第二条から第六条までの規定は、公布の日から起算して二年を超えない範囲内において政令で定める日から施行する。",
+   "depends_on": "Cabinet order (政令で定める日), within two years after promulgation",
+   "applies_to": "Chapters 4 to 6 and supplementary Arts. 2 to 6 of the 2003 Act",
+   "evidence": {
+    "provision": "附則（2003 Act）第一条",
+    "quote": "第四章から第六章まで及び附則第二条から第六条までの規定は、公布の日から起算して二年を超えない範囲内において政令で定める日から施行する。"
+   }
+  },
+  {
+   "event": "amended",
+   "date": "2015-09-09",
+   "date_type": "absolute",
+   "date_text": "平成二七年九月九日法律第六五号",
+   "applies_to": "Act No. 65 of 2015 (amends this Act, including Art. 2 of that Act)",
+   "evidence": {
+    "provision": "附則（Act No. 65 of 2015）",
+    "quote": "平成二七年九月九日法律第六五号"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "この法律は、公布の日から起算して二年を超えない範囲内において政令で定める日から施行する。",
+   "depends_on": "Cabinet order (政令で定める日), within two years after promulgation of Act No. 65 of 2015",
+   "applies_to": "General commencement of Act No. 65 of 2015, including its amendments to this Act (Art. 2 of that Act)",
+   "evidence": {
+    "provision": "附則（Act No. 65 of 2015）第一条",
+    "quote": "この法律は、公布の日から起算して二年を超えない範囲内において政令で定める日から施行する。"
+   }
+  },
+  {
+   "event": "amended",
+   "date": "2020-06-12",
+   "date_type": "absolute",
+   "date_text": "令和二年六月一二日法律第四四号",
+   "applies_to": "Act No. 44 of 2020 (amends this Act)",
+   "evidence": {
+    "provision": "附則（Act No. 44 of 2020）",
+    "quote": "令和二年六月一二日法律第四四号"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "公布の日から起算して六月を経過した日",
+   "anchor": "promulgation of Act No. 44 of 2020, plus six months",
+   "depends_on": "Promulgation date of Act No. 44 of 2020 (2020-06-12, per its header) plus six months",
+   "applies_to": "Amendments to this Act made by Art. 1 item 2 of Act No. 44 of 2020 (incl. amendment of Art. 87)",
+   "evidence": {
+    "provision": "附則（Act No. 44 of 2020）第一条第二号",
+    "quote": "公布の日から起算して六月を経過した日"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "この法律は、公布の日から起算して二年を超えない範囲内において政令で定める日から施行する。",
+   "depends_on": "Cabinet order (政令で定める日), within two years after promulgation of Act No. 44 of 2020",
+   "applies_to": "General commencement of Act No. 44 of 2020 (provisions not listed separately in its Art. 1)",
+   "evidence": {
+    "provision": "附則（Act No. 44 of 2020）第一条",
+    "quote": "この法律は、公布の日から起算して二年を超えない範囲内において政令で定める日から施行する。"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "次条及び附則第七条の規定　公布の日から起算して一年六月を超えない範囲内において政令で定める日",
+   "depends_on": "Cabinet order (政令で定める日), within one year and six months after promulgation of Act No. 44 of 2020",
+   "applies_to": "Art. 2 (notification rules for transfers of personal data) and Art. 7 of Act No. 44 of 2020",
+   "evidence": {
+    "provision": "附則（Act No. 44 of 2020）第一条第三号",
+    "quote": "次条及び附則第七条の規定　公布の日から起算して一年六月を超えない範囲内において政令で定める日"
+   }
+  },
+  {
+   "event": "amended",
+   "date": "2021-05-19",
+   "date_type": "absolute",
+   "date_text": "令和三年五月一九日法律第三七号",
+   "applies_to": "Act No. 37 of 2021 (amends this Act, including its Arts. 50 and 51)",
+   "evidence": {
+    "provision": "附則（Act No. 37 of 2021）",
+    "quote": "令和三年五月一九日法律第三七号"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2021-09-01",
+   "date_type": "absolute",
+   "date_text": "この法律は、令和三年九月一日から施行する。",
+   "applies_to": "General commencement of Act No. 37 of 2021, except the provisions listed in its Art. 1 items 1 to 7",
+   "evidence": {
+    "provision": "附則（Act No. 37 of 2021）第一条",
+    "quote": "この法律は、令和三年九月一日から施行する。"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "公布の日から起算して一年を超えない範囲内において、各規定につき、政令で定める日",
+   "depends_on": "Cabinet order (政令で定める日), within one year after promulgation of Act No. 37 of 2021, per provision",
+   "applies_to": "Items listed in Art. 1 item 4 of Act No. 37 of 2021, including its Art. 50 (amendments to this Act)",
+   "evidence": {
+    "provision": "附則（Act No. 37 of 2021）第一条第四号",
+    "quote": "公布の日から起算して一年を超えない範囲内において、各規定につき、政令で定める日"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "公布の日から起算して二年を超えない範囲内において、各規定につき、政令で定める日",
+   "depends_on": "Cabinet order (政令で定める日), within two years after promulgation of Act No. 37 of 2021, per provision",
+   "applies_to": "Items listed in Art. 1 item 7 of Act No. 37 of 2021, including its Art. 51 (amendments to this Act)",
+   "evidence": {
+    "provision": "附則（Act No. 37 of 2021）第一条第七号",
+    "quote": "公布の日から起算して二年を超えない範囲内において、各規定につき、政令で定める日"
+   }
+  },
+  {
+   "event": "published",
+   "date": "2026-07-17",
+   "date_type": "absolute",
+   "date_text": "令和八年七月一七日法律第五六号",
+   "applies_to": "Act No. 56 of 2026, which amends 個人情報の保護に関する法律 (第一条)",
+   "evidence": {
+    "provision": "附則 (令和八年法律第五六号)",
+    "quote": "附　則（令和八年七月一七日法律第五六号）"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "公布の日から起算して二年を超えない範囲内において政令で定める日から施行する",
+   "depends_on": "政令で定める日 (cabinet order), no later than two years after promulgation",
+   "applies_to": "Act No. 56 of 2026, general commencement",
+   "evidence": {
+    "provision": "附則 第一条 (令和八年法律第五六号)",
+    "quote": "この法律は、公布の日から起算して二年を超えない範囲内において政令で定める日から施行する。"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2027-01-17",
+   "date_type": "relative",
+   "date_text": "公布の日から起算して六月を経過した日",
+   "anchor": "promulgation of Act No. 56 of 2026",
+   "applies_to": "第一条 amendments to 個人情報の保護に関する法律 listed in 附則 第一条第三号 (table of contents and renumbering of articles)",
+   "offset_value": 6,
+   "offset_unit": "months",
+   "anchor_event": "published",
+   "evidence": {
+    "provision": "附則 第一条第三号 (令和八年法律第五六号)",
+    "quote": "公布の日から起算して六月を経過した日"
+   },
+   "date_computed_from": "published 2026-07-17 (text) + 6 months"
+  },
+  {
+   "event": "application",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "第五十一条施行日において第五十一条改正後個人情報保護法第十八条第一項又は第二項の同意があったものとみなす",
+   "depends_on": "第五十一条施行日 (date fixed in part 1 of this consolidated text)",
+   "applies_to": "特定地方独立行政法人等: prior consents deemed given under 第九条第１項, 第２項, 第５項, 第８項, 第10項 and 第11項",
+   "evidence": {
+    "provision": "附則 第九条第１項",
+    "quote": "第五十一条施行日において第五十一条改正後個人情報保護法第十八条第一項又は第二項の同意があったものとみなす。"
+   }
+  },
+  {
+   "event": "application",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "特定地方独立行政法人等が第五十一条施行日以後に第五十一条改正後個人情報保護法第二十八条第一項の規定により本人の同意を得る場合について適用する",
+   "depends_on": "第五十一条施行日 (date fixed in part 1 of this consolidated text)",
+   "applies_to": "特定地方独立行政法人等: 第五十一条改正後個人情報保護法 provisions on consent and onward transfer applied to acts after the date (第九条第６項, 第７項, 第９項, 第12項, 第13項)",
+   "evidence": {
+    "provision": "附則 第九条第６項",
+    "quote": "特定地方独立行政法人等が第五十一条施行日以後に第五十一条改正後個人情報保護法第二十八条第一項の規定により本人の同意を得る場合について適用する。"
+   }
+  },
+  {
+   "event": "expiry",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "第五十一条の規定の施行と同時に、その効力を失うものとする",
+   "depends_on": "第五十一条施行日 (same moment as entry into force of 第五十一条)",
+   "applies_to": "Local government ordinance provisions that penalise conduct regulated by 第五十一条改正後個人情報保護法",
+   "evidence": {
+    "provision": "附則 第十条第１項",
+    "quote": "第五十一条の規定の施行と同時に、その効力を失うものとする。"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "data_subjects_count",
+   "variable_text": "本人の数が政令で定める数に満たない個人情報ファイル",
+   "operator": "<",
+   "value": null,
+   "value_text": "本人の数が政令で定める数に満たない",
+   "unit": "persons",
+   "measurement": "number of data subjects recorded in the personal information file",
+   "level": "other",
+   "trigger": "exclusion",
+   "consequence": "Personal information files below the cabinet-order number are excluded from the prior-notification duty of Art. 74(1).",
+   "conditions": "Applies to personal information files held by an administrative organ; other exclusions in Art. 74(2) apply in parallel.",
+   "depends_on": "政令で定める数 (number set by Cabinet Order)",
+   "evidence": {
+    "provision": "Art. 74(2) item (9)",
+    "quote": "本人の数が政令で定める数に満たない個人情報ファイル"
+   }
+  },
+  {
+   "variable": "data_subjects_count",
+   "variable_text": "行政機関等匿名加工情報の本人の数 (number of data subjects of the proposed administrative-organ anonymized information) at or above the PPC-rule number",
+   "operator": ">=",
+   "value": null,
+   "value_text": "個人情報保護委員会規則で定める数以上",
+   "unit": "persons",
+   "measurement": "number of data subjects of the anonymized information in the proposal, judged against the effective-use standard",
+   "level": "other",
+   "trigger": "eligibility",
+   "consequence": "A proposal for use of administrative-organ anonymized information must meet this minimum to pass the review criteria of Art. 114(1).",
+   "conditions": "Also must not exceed the number of data subjects of the personal information file (Art. 114(1) item (2)).",
+   "depends_on": "個人情報保護委員会規則で定める数 (number set by PPC rules)",
+   "evidence": {
+    "provision": "Art. 114(1) item (2)",
+    "quote": "行政機関等匿名加工情報の本人の数が、行政機関等匿名加工情報の効果的な活用の観点からみて個人情報保護委員会規則で定める数以上であり"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "行政機関等匿名加工情報の利用期間 (period of use of the proposed anonymized information) not exceeding the PPC-rule period",
+   "operator": "<=",
+   "value": null,
+   "value_text": "個人情報保護委員会規則で定める期間を超えないもの",
+   "unit": "period (set by rule)",
+   "measurement": "period of business use stated in the proposal under Art. 112(2) item (6)",
+   "level": "other",
+   "trigger": "eligibility",
+   "consequence": "A proposed period of use that exceeds the rule-set period fails the review criteria of Art. 114(1).",
+   "conditions": "Assessed together with the other criteria in Art. 114(1).",
+   "depends_on": "個人情報保護委員会規則で定める期間 (period set by PPC rules)",
+   "evidence": {
+    "provision": "Art. 114(1) item (5)",
+    "quote": "行政機関等匿名加工情報の効果的な活用の観点からみて個人情報保護委員会規則で定める期間を超えないものであること。"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "Disqualification period after completion of a criminal sentence under this Act (欠格期間)",
+   "operator": "<",
+   "value": 2,
+   "value_text": "二年を経過しない者",
+   "unit": "years",
+   "measurement": "period counted from the day the sentence was completed, ceased to be executed, or otherwise ended",
+   "level": "person",
+   "trigger": "eligibility",
+   "consequence": "A person within this period cannot be certified as an accredited personal information protection organisation.",
+   "conditions": "Applies to a sentence imposed under the provisions of this Act.",
+   "evidence": {
+    "provision": "Art. 48(1) item (1)",
+    "quote": "この法律の規定により刑に処せられ、その執行を終わり、又は執行を受けることがなくなった日から二年を経過しない者"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "Disqualification period after revocation of certification under Art. 155(1) (欠格期間)",
+   "operator": "<",
+   "value": 2,
+   "value_text": "その取消しの日から二年を経過しない者",
+   "unit": "years",
+   "measurement": "period counted from the day of revocation",
+   "level": "entity",
+   "trigger": "eligibility",
+   "consequence": "An entity whose certification was revoked under Art. 155(1) cannot be certified again within this period.",
+   "conditions": "Applies to a certification revoked under Art. 155(1).",
+   "evidence": {
+    "provision": "Art. 48(1) item (2)",
+    "quote": "第百五十五条第一項の規定により認定を取り消され、その取消しの日から二年を経過しない者"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "Disqualification period for an officer after a criminal sentence (欠格期間) (Art. 48(1) item (3)(a))",
+   "operator": "<",
+   "value": 2,
+   "value_text": "二年を経過しない者",
+   "unit": "years",
+   "measurement": "period counted from the day the sentence was completed, ceased to be executed, or otherwise ended",
+   "level": "person",
+   "trigger": "eligibility",
+   "consequence": "An entity with an officer in this position cannot be certified.",
+   "conditions": "Applies to officers of the applicant (役員) sentenced to imprisonment with work or a more severe penalty, or sentenced under this Act.",
+   "evidence": {
+    "provision": "Art. 48(1) item (3) (a)",
+    "quote": "拘禁刑以上の刑に処せられ、又はこの法律の規定により刑に処せられ、その執行を終わり、又は執行を受けることがなくなった日から二年を経過しない者"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "Disqualification period for a former officer of an entity whose certification was revoked (欠格期間) (Art. 48(1) item (3)(b))",
+   "operator": "<",
+   "value": 2,
+   "value_text": "その取消しの日前三十日以内にその役員であった者でその取消しの日から二年を経過しない者",
+   "unit": "years",
+   "measurement": "period counted from the day of revocation; the person must have been an officer within 30 days before revocation",
+   "level": "person",
+   "trigger": "eligibility",
+   "consequence": "An entity with such an officer cannot be certified.",
+   "conditions": "Applies where the entity's certification was revoked under Art. 155(1); the 30-day look-back before revocation is part of the test.",
+   "evidence": {
+    "provision": "Art. 48(1) item (3) (b)",
+    "quote": "第百五十五条第一項の規定により認定を取り消された法人において、その取消しの日前三十日以内にその役員であった者でその取消しの日から二年を経過しない者"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "Disqualification period after sentence for a proposer of anonymized administrative-organ information (欠格期間)",
+   "operator": "<",
+   "value": 2,
+   "value_text": "起算して二年を経過しない者",
+   "unit": "years",
+   "measurement": "period counted from the day the sentence was completed, ceased to be executed, or otherwise ended",
+   "level": "person",
+   "trigger": "eligibility",
+   "consequence": "A person within this period cannot make a proposal for use of administrative-organ anonymized information.",
+   "conditions": "Applies to a sentence imposed under this Act or to imprisonment with work or a more severe penalty.",
+   "evidence": {
+    "provision": "Art. 113 item (4)",
+    "quote": "拘禁刑以上の刑に処せられ、又はこの法律の規定により刑に処せられ、その執行を終わり、又は執行を受けることがなくなった日から起算して二年を経過しない者"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "Disqualification period after contract rescission under Art. 120 (欠格期間)",
+   "operator": "<",
+   "value": 2,
+   "value_text": "その解除の日から起算して二年を経過しない者",
+   "unit": "years",
+   "measurement": "period counted from the day of rescission",
+   "level": "person",
+   "trigger": "eligibility",
+   "consequence": "A person whose contract was rescinded under Art. 120 cannot make a proposal within this period.",
+   "conditions": "Applies to a person whose anonymized-information use contract was rescinded under Art. 120.",
+   "evidence": {
+    "provision": "Art. 113 item (5)",
+    "quote": "第百二十条の規定により行政機関等匿名加工情報の利用に関する契約を解除され、その解除の日から起算して二年を経過しない者"
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "個人情報 (personal information)",
+   "defined_in": "Art. 2(1)",
+   "evidence": {
+    "provision": "Art. 2(1)",
+    "quote": "この法律において「個人情報」とは、生存する個人に関する情報であって、次の各号のいずれかに該当するものをいう。"
+   }
+  },
+  {
+   "term": "個人識別符号 (personal identifier code)",
+   "defined_in": "Art. 2(2)",
+   "evidence": {
+    "provision": "Art. 2(2)",
+    "quote": "この法律において「個人識別符号」とは、次の各号のいずれかに該当する文字、番号、記号その他の符号のうち、政令で定めるものをいう。"
+   }
+  },
+  {
+   "term": "要配慮個人情報 (sensitive personal information)",
+   "defined_in": "Art. 2(3)",
+   "evidence": {
+    "provision": "Art. 2(3)",
+    "quote": "この法律において「要配慮個人情報」とは、本人の人種、信条、社会的身分、病歴、犯罪の経歴、犯罪により害を被った事実その他本人に対する不当な差別、偏見その他の不利益が生じないようにその取扱いに特に配慮を要するものとして政令で定める記述等が含まれる個人情報をいう。"
+   }
+  },
+  {
+   "term": "本人 (principal, the data subject)",
+   "defined_in": "Art. 2(4)",
+   "evidence": {
+    "provision": "Art. 2(4)",
+    "quote": "この法律において個人情報について「本人」とは、個人情報によって識別される特定の個人をいう。"
+   }
+  },
+  {
+   "term": "仮名加工情報 (pseudonymously processed information)",
+   "defined_in": "Art. 2(5)",
+   "evidence": {
+    "provision": "Art. 2(5)",
+    "quote": "この法律において「仮名加工情報」とは、次の各号に掲げる個人情報の区分に応じて当該各号に定める措置を講じて他の情報と照合しない限り特定の個人を識別することができないように個人情報を加工して得られる個人に関する情報をいう。"
+   }
+  },
+  {
+   "term": "匿名加工情報 (anonymously processed information)",
+   "defined_in": "Art. 2(6)",
+   "evidence": {
+    "provision": "Art. 2(6)",
+    "quote": "この法律において「匿名加工情報」とは、次の各号に掲げる個人情報の区分に応じて当該各号に定める措置を講じて特定の個人を識別することができないように個人情報を加工して得られる個人に関する情報であって、当該個人情報を復元することができないようにしたものをいう。"
+   }
+  },
+  {
+   "term": "個人関連情報 (personally referable information)",
+   "defined_in": "Art. 2(7)",
+   "evidence": {
+    "provision": "Art. 2(7)",
+    "quote": "この法律において「個人関連情報」とは、生存する個人に関する情報であって、個人情報、仮名加工情報及び匿名加工情報のいずれにも該当しないものをいう。"
+   }
+  },
+  {
+   "term": "行政機関 (administrative organ)",
+   "defined_in": "Art. 2(8)",
+   "evidence": {
+    "provision": "Art. 2(8)",
+    "quote": "この法律において「行政機関」とは、次に掲げる機関をいう。"
+   }
+  },
+  {
+   "term": "独立行政法人等 (incorporated administrative agency and similar bodies)",
+   "defined_in": "Art. 2(9)",
+   "evidence": {
+    "provision": "Art. 2(9)",
+    "quote": "この法律において「独立行政法人等」とは、独立行政法人通則法（平成十一年法律第百三号）第二条第一項に規定する独立行政法人及び別表第一に掲げる法人をいう。"
+   }
+  },
+  {
+   "term": "地方独立行政法人 (local incorporated administrative agency)",
+   "defined_in": "Art. 2(10)",
+   "evidence": {
+    "provision": "Art. 2(10)",
+    "quote": "この法律において「地方独立行政法人」とは、地方独立行政法人法（平成十五年法律第百十八号）第二条第一項に規定する地方独立行政法人をいう。"
+   }
+  },
+  {
+   "term": "行政機関等 (administrative organs and related bodies)",
+   "defined_in": "Art. 2(11)",
+   "evidence": {
+    "provision": "Art. 2(11)",
+    "quote": "この法律において「行政機関等」とは、次に掲げる機関をいう。"
+   }
+  },
+  {
+   "term": "個人情報データベース等 (personal information database, etc.)",
+   "defined_in": "Art. 16(1)",
+   "evidence": {
+    "provision": "Art. 16(1)",
+    "quote": "この章及び第八章において「個人情報データベース等」とは、個人情報を含む情報の集合物であって、次に掲げるもの"
+   }
+  },
+  {
+   "term": "個人情報取扱事業者 (personal information handling business operator)",
+   "defined_in": "Art. 16(2)",
+   "evidence": {
+    "provision": "Art. 16(2)",
+    "quote": "この章及び第六章から第八章までにおいて「個人情報取扱事業者」とは、個人情報データベース等を事業の用に供している者をいう。"
+   }
+  },
+  {
+   "term": "個人データ (personal data)",
+   "defined_in": "Art. 16(3)",
+   "evidence": {
+    "provision": "Art. 16(3)",
+    "quote": "この章において「個人データ」とは、個人情報データベース等を構成する個人情報をいう。"
+   }
+  },
+  {
+   "term": "保有個人データ (retained personal data)",
+   "defined_in": "Art. 16(4)",
+   "evidence": {
+    "provision": "Art. 16(4)",
+    "quote": "この章において「保有個人データ」とは、個人情報取扱事業者が、開示、内容の訂正、追加又は削除、利用の停止、消去及び第三者への提供の停止を行うことのできる権限を有する個人データであって、その存否が明らかになることにより公益その他の利益が害されるものとして政令で定めるもの以外のものをいう。"
+   }
+  },
+  {
+   "term": "仮名加工情報取扱事業者 (pseudonymously processed information handling business operator)",
+   "defined_in": "Art. 16(5)",
+   "evidence": {
+    "provision": "Art. 16(5)",
+    "quote": "この章、第六章及び第七章において「仮名加工情報取扱事業者」とは、仮名加工情報を含む情報の集合物であって"
+   }
+  },
+  {
+   "term": "匿名加工情報取扱事業者 (anonymously processed information handling business operator)",
+   "defined_in": "Art. 16(6)",
+   "evidence": {
+    "provision": "Art. 16(6)",
+    "quote": "この章、第六章及び第七章において「匿名加工情報取扱事業者」とは、匿名加工情報を含む情報の集合物であって"
+   }
+  },
+  {
+   "term": "個人関連情報取扱事業者 (personally referable information handling business operator)",
+   "defined_in": "Art. 16(7)",
+   "evidence": {
+    "provision": "Art. 16(7)",
+    "quote": "この章、第六章及び第七章において「個人関連情報取扱事業者」とは、個人関連情報を含む情報の集合物であって"
+   }
+  },
+  {
+   "term": "学術研究機関等 (academic research institutions, etc.)",
+   "defined_in": "Art. 16(8)",
+   "evidence": {
+    "provision": "Art. 16(8)",
+    "quote": "この章において「学術研究機関等」とは、大学その他の学術研究を目的とする機関若しくは団体又はそれらに属する者をいう。"
+   }
+  },
+  {
+   "term": "個人情報取扱事業者等 (personal information handling business operators, collectively)",
+   "defined_in": "Art. 47(1)",
+   "evidence": {
+    "provision": "Art. 47(1)",
+    "quote": "個人情報取扱事業者、仮名加工情報取扱事業者又は匿名加工情報取扱事業者（以下この章において「個人情報取扱事業者等」という。）"
+   }
+  },
+  {
+   "term": "報道 (news reporting)",
+   "defined_in": "Art. 57(2)",
+   "evidence": {
+    "provision": "Art. 57(2)",
+    "quote": "前項第一号に規定する「報道」とは、不特定かつ多数の者に対して客観的事実を事実として知らせること（これに基づいて意見又は見解を述べることを含む。）をいう。"
+   }
+  },
+  {
+   "term": "認定個人情報保護団体 (accredited personal information protection organisation)",
+   "defined_in": "Art. 51(1)",
+   "evidence": {
+    "provision": "Art. 51(1)",
+    "quote": "（以下この節及び第六章において「認定個人情報保護団体」という。）"
+   }
+  },
+  {
+   "term": "行政機関の長等 (heads of administrative organs and related bodies)",
+   "defined_in": "Art. 63",
+   "evidence": {
+    "provision": "Art. 63",
+    "quote": "（以下この章及び次章において「行政機関の長等」という。）"
+   }
+  },
+  {
+   "term": "保有個人情報 (retained personal information of administrative organs)",
+   "defined_in": "Art. 60(1)",
+   "evidence": {
+    "provision": "Art. 60(1)",
+    "quote": "この章及び第八章において「保有個人情報」とは、行政機関等の職員（独立行政法人等及び地方独立行政法人にあっては、その役員を含む。以下この章及び第八章において同じ。）が職務上作成し、又は取得した個人情報であって"
+   }
+  },
+  {
+   "term": "個人情報ファイル (personal information file)",
+   "defined_in": "Art. 60(2)",
+   "evidence": {
+    "provision": "Art. 60(2)",
+    "quote": "この章及び第八章において「個人情報ファイル」とは、保有個人情報を含む情報の集合物であって、次に掲げるものをいう。"
+   }
+  },
+  {
+   "term": "行政機関等匿名加工情報 (anonymously processed information of administrative organs)",
+   "defined_in": "Art. 60(3)",
+   "evidence": {
+    "provision": "Art. 60(3)",
+    "quote": "この章において「行政機関等匿名加工情報」とは、次の各号のいずれにも該当する個人情報ファイルを構成する保有個人情報の全部又は一部"
+   }
+  },
+  {
+   "term": "条例要配慮個人情報 (ordinance-designated sensitive personal information)",
+   "defined_in": "Art. 60(5)",
+   "evidence": {
+    "provision": "Art. 60(5)",
+    "quote": "この章において「条例要配慮個人情報」とは、地方公共団体の機関又は地方独立行政法人が保有する個人情報（要配慮個人情報を除く。）のうち、"
+   }
+  },
+  {
+   "term": "委員会 (Personal Information Protection Commission)",
+   "defined_in": "Art. 130(1)",
+   "evidence": {
+    "provision": "Art. 130(1)",
+    "quote": "個人情報保護委員会（以下「委員会」という。）を置く。"
+   }
+  },
+  {
+   "term": "事業所管大臣 (competent business minister)",
+   "defined_in": "Art. 152",
+   "evidence": {
+    "provision": "Art. 152",
+    "quote": "この款の規定における事業所管大臣は、次のとおりとする。"
+   }
+  },
+  {
+   "term": "特定地方独立行政法人等",
+   "defined_in": "附則 第九条第一項 (Art. 9 para. 1, supplementary provisions; enacting act not shown in this part)",
+   "evidence": {
+    "provision": "附則 第九条第一項",
+    "quote": "特定地方独立行政法人等（第五十一条改正後個人情報保護法第五十八条第一項第二号に掲げる者又は同条第二項の規定により"
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Central government must formulate and implement comprehensive measures needed to ensure proper handling of personal information by government bodies, local governments, incorporated administrative agencies and business operators.",
+   "evidence": {
+    "provision": "Art. 4",
+    "quote": "必要な施策を総合的に策定し、及びこれを実施する責務を有する。"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Local governments must formulate and implement measures needed to ensure proper handling of personal information in their areas.",
+   "evidence": {
+    "provision": "Art. 5",
+    "quote": "必要な施策を策定し、及びこれを実施する責務を有する"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Government must establish a Basic Policy on personal information protection (prepared by the PPC, decided by Cabinet and published); the basic policy content is listed in Art. 7(2).",
+   "evidence": {
+    "provision": "Art. 7(1)",
+    "quote": "政府は、個人情報の保護に関する施策の総合的かつ一体的な推進を図るため、個人情報の保護に関する基本方針"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Government must take measures for personal information held by its own organs and by incorporated administrative agencies.",
+   "evidence": {
+    "provision": "Art. 8(1)",
+    "quote": "その機関が保有する個人情報の適正な取扱いが確保されるよう必要な措置を講ずるものとする"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Government must provide information, guidelines and other support to local governments and business operators.",
+   "evidence": {
+    "provision": "Art. 9",
+    "quote": "必要な措置を講ずるものとする"
+   }
+  },
+  {
+   "type": "complaint_mechanism",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Government must take measures to achieve prompt and appropriate handling of complaints between business operators and individuals.",
+   "evidence": {
+    "provision": "Art. 10",
+    "quote": "苦情の適切かつ迅速な処理を図るために必要な措置を講ずるものとする"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Government must take measures to ensure proper handling by business operators and, through local governments, by local public bodies.",
+   "evidence": {
+    "provision": "Art. 11(1)",
+    "quote": "個人情報取扱事業者による個人情報の適正な取扱いを確保するために必要な措置を講ずるものとする"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Government must provide necessary measures to ensure the appropriate handling of personal information in local government and local incorporated administrative agency holdings.",
+   "evidence": {
+    "provision": "Art. 11(2)",
+    "quote": "必要な措置を講ずるものとする"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Local governments must take measures for personal information held by their organs and by local incorporated administrative agencies they establish.",
+   "evidence": {
+    "provision": "Art. 12(1)",
+    "quote": "その機関が保有する個人情報の適正な取扱いが確保されるよう必要な措置を講ずるものとする"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Local governments must endeavour to provide support to businesses and residents in their areas to ensure proper handling of personal information.",
+   "evidence": {
+    "provision": "Art. 13",
+    "quote": "支援に必要な措置を講ずるよう努めなければならない"
+   }
+  },
+  {
+   "type": "complaint_mechanism",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Local governments must endeavour to arrange mediation and other measures for complaints between businesses and individuals.",
+   "evidence": {
+    "provision": "Art. 14",
+    "quote": "苦情の処理のあっせんその他必要な措置を講ずるよう努めなければならない"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "National and local governments must cooperate in implementing personal information protection measures.",
+   "evidence": {
+    "provision": "Art. 15",
+    "quote": "国及び地方公共団体は、個人情報の保護に関する施策を講ずるにつき、相協力するものとする"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Government must take legislative and other measures for personal information requiring special protection and international coordination.",
+   "evidence": {
+    "provision": "Art. 6",
+    "quote": "必要な法制上の措置その他の措置を講ずるとともに"
+   }
+  },
+  {
+   "type": "data_minimization",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "A business handling personal information must specify the purpose of use as far as possible; changes of purpose must stay within the reasonably related scope (Art. 17(2)).",
+   "evidence": {
+    "provision": "Art. 17(1)",
+    "quote": "その利用の目的（以下「利用目的」という。）をできる限り特定しなければならない。"
+   }
+  },
+  {
+   "type": "data_minimization",
+   "addressee": "data_controller",
+   "modality": "shall_not",
+   "summary": "Business may not handle personal information beyond the specified purpose without prior consent, subject to exceptions in Art. 18(3); successor and merger rules in Art. 18(2).",
+   "conditional_on": "Unless prior consent is obtained, and subject to exceptions in Art. 18(3) (legal basis, life/body/property, public health, cooperation with public bodies, academic research).",
+   "evidence": {
+    "provision": "Art. 18(1)",
+    "quote": "あらかじめ本人の同意を得ないで、前条の規定により特定された利用目的の達成に必要な範囲を超えて、個人情報を取り扱ってはならない。"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "data_controller",
+   "modality": "shall_not",
+   "summary": "Business may not use personal information in a way that may foster or induce illegal or improper conduct.",
+   "evidence": {
+    "provision": "Art. 19",
+    "quote": "違法又は不当な行為を助長し、又は誘発するおそれがある方法により個人情報を利用してはならない。"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "data_controller",
+   "modality": "shall_not",
+   "summary": "Business may not acquire personal information by deceit or other improper means.",
+   "evidence": {
+    "provision": "Art. 20(1)",
+    "quote": "偽りその他不正の手段により個人情報を取得してはならない。"
+   }
+  },
+  {
+   "type": "consent",
+   "addressee": "data_controller",
+   "modality": "shall_not",
+   "summary": "Business may not acquire sensitive personal information without prior consent, except in the cases listed in Art. 20(2)(i) to (viii).",
+   "conditional_on": "Unless one of the exceptions in Art. 20(2) applies.",
+   "evidence": {
+    "provision": "Art. 20(2)",
+    "quote": "あらかじめ本人の同意を得ないで、要配慮個人情報を取得してはならない。"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "On acquiring personal information, business must promptly notify the individual of the purpose of use or publish it; Art. 21(2) requires express indication for contract-based acquisition; Art. 21(3) requires notice of changed purposes.",
+   "conditional_on": "Unless the purpose was already published, subject to exceptions in Art. 21(4).",
+   "evidence": {
+    "provision": "Art. 21(1)",
+    "quote": "速やかに、その利用目的を、本人に通知し、又は公表しなければならない。"
+   }
+  },
+  {
+   "type": "data_minimization",
+   "addressee": "data_controller",
+   "modality": "encouraged",
+   "summary": "Business must endeavour to keep personal data accurate and up to date and to erase it promptly when no longer needed for the purpose.",
+   "evidence": {
+    "provision": "Art. 22",
+    "quote": "当該個人データを遅滞なく消去するよう努めなければならない"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Business must take necessary and appropriate measures to prevent leakage, loss or damage of personal data and for its security management.",
+   "evidence": {
+    "provision": "Art. 23",
+    "quote": "その取り扱う個人データの漏えい、滅失又は毀損の防止その他の個人データの安全管理のために必要かつ適切な措置を講じなければならない。"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Business must exercise necessary and appropriate supervision over employees handling personal data.",
+   "evidence": {
+    "provision": "Art. 24",
+    "quote": "当該従業者に対する必要かつ適切な監督を行わなければならない"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Business that entrusts all or part of personal data handling must exercise necessary and appropriate supervision over the entrusted party.",
+   "evidence": {
+    "provision": "Art. 25",
+    "quote": "委託を受けた者に対する必要かつ適切な監督を行わなければならない"
+   }
+  },
+  {
+   "type": "incident_reporting",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Business must report to the PPC specified security incidents involving personal data posing a large risk to rights and interests, under PPC rules; Art. 26(1) proviso covers entrusted cases.",
+   "evidence": {
+    "provision": "Art. 26(1)",
+    "quote": "個人情報保護委員会に報告しなければならない"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Business must notify affected individuals of specified security incidents, or take substitute measures where notice is difficult.",
+   "conditional_on": "Applies to incidents reportable under Art. 26(1), subject to the substitute-measure exception.",
+   "evidence": {
+    "provision": "Art. 26(2)",
+    "quote": "本人に対し、個人情報保護委員会規則で定めるところにより、当該事態が生じた旨を通知しなければならない"
+   }
+  },
+  {
+   "type": "consent",
+   "addressee": "data_controller",
+   "modality": "shall_not",
+   "summary": "Business may not provide personal data to a third party without prior consent, except in the cases listed in Art. 27(1) (legal basis, life protection, public bodies, academic research).",
+   "conditional_on": "Unless an exception in Art. 27(1) applies.",
+   "evidence": {
+    "provision": "Art. 27(1)",
+    "quote": "あらかじめ本人の同意を得ないで、個人データを第三者に提供してはならない"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "For opt-out third-party provision under Art. 27(2), business must give prior notice of listed items to individuals or make them easily accessible, and file a notification with the PPC; changes must be notified (Art. 27(3)); Art. 27(6) requires notice of changes to the responsible person.",
+   "conditional_on": "Only where business uses opt-out provision under Art. 27(2).",
+   "evidence": {
+    "provision": "Art. 27(3)",
+    "quote": "個人情報保護委員会に届け出なければならない"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "regulator",
+   "modality": "shall",
+   "summary": "PPC must publish items notified under Art. 27(2) and changes under Art. 27(3).",
+   "evidence": {
+    "provision": "Art. 27(4)",
+    "quote": "当該届出に係る事項を公表しなければならない"
+   }
+  },
+  {
+   "type": "consent",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Business providing personal data to a third party outside Japan must obtain prior consent, unless the recipient has the equivalent system or an exception applies.",
+   "conditional_on": "Unless the third party is in a country recognised as equivalent or has the systems specified in Art. 28(1).",
+   "evidence": {
+    "provision": "Art. 28(1)",
+    "quote": "あらかじめ外国にある第三者への提供を認める旨の本人の同意を得なければならない"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Before obtaining consent for overseas transfer, business must provide information on the foreign data protection system and measures taken by the recipient.",
+   "evidence": {
+    "provision": "Art. 28(2)",
+    "quote": "その他当該本人に参考となるべき情報を当該本人に提供しなければならない"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "After transfer to a third party outside Japan with equivalent systems, business must take measures to ensure continuous implementation of equivalent measures and provide information on request.",
+   "conditional_on": "Applies where personal data is transferred to a third party under Art. 28(1) systems.",
+   "evidence": {
+    "provision": "Art. 28(3)",
+    "quote": "当該第三者による相当措置の継続的な実施を確保するために必要な措置を講ずるとともに"
+   }
+  },
+  {
+   "type": "record_keeping",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Business must create records of third-party provision of personal data (date, recipient, other PPC-rule items) and keep them for the period set by PPC rules (Art. 29(2)).",
+   "conditional_on": "Unless an exception in Art. 27(1) or Art. 27(5) applies.",
+   "evidence": {
+    "provision": "Art. 29(1)",
+    "quote": "当該個人データを提供した年月日、当該第三者の氏名又は名称その他の個人情報保護委員会規則で定める事項に関する記録を作成しなければならない"
+   }
+  },
+  {
+   "type": "verification_gatekeeping",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "When receiving personal data from a third party, business must verify the third party's name, address, representative and how it acquired the data.",
+   "conditional_on": "Unless an exception in Art. 27(1) or Art. 27(5) applies.",
+   "evidence": {
+    "provision": "Art. 30(1)",
+    "quote": "次に掲げる事項の確認を行わなければならない"
+   }
+  },
+  {
+   "type": "record_keeping",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Business receiving personal data from a third party must record the verification (date of receipt, verified items, other PPC-rule items) and keep the record for the PPC-set period (Art. 30(4)).",
+   "evidence": {
+    "provision": "Art. 30(3)",
+    "quote": "当該確認に係る事項その他の個人情報保護委員会規則で定める事項に関する記録を作成しなければならない"
+   }
+  },
+  {
+   "type": "consent",
+   "addressee": "data_controller",
+   "modality": "shall_not",
+   "summary": "Business providing personal-related information to a third party expected to hold it as personal data must first confirm the individual's consent to that transfer, unless an exception applies.",
+   "conditional_on": "Where the third party is expected to acquire it as personal data; subject to Art. 27(1) exceptions.",
+   "evidence": {
+    "provision": "Art. 31(1)",
+    "quote": "当該個人関連情報を当該第三者に提供してはならない"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Business must make available to individuals information about retained personal data (name, address, representative, purposes of use, procedures and fees, and other items), or respond on request.",
+   "evidence": {
+    "provision": "Art. 32(1)",
+    "quote": "本人の知り得る状態（本人の求めに応じて遅滞なく回答する場合を含む。）に置かなければならない"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "On request, business must promptly disclose retained personal data by electromagnetic record provision or other specified method; partial or full non-disclosure grounds are in Art. 33(2)(i) to (iii); Art. 33(3) requires notice of non-disclosure decisions.",
+   "conditional_on": "Subject to the non-disclosure grounds in Art. 33(2).",
+   "evidence": {
+    "provision": "Art. 33(2)",
+    "quote": "遅滞なく、当該保有個人データを開示しなければならない"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "On a request for correction, addition or deletion of inaccurate retained personal data, business must investigate without delay and correct as needed, then notify the individual of the decision (Art. 34(3)).",
+   "conditional_on": "Where the content is not factual and no other law provides a special procedure.",
+   "evidence": {
+    "provision": "Art. 34(2)",
+    "quote": "その結果に基づき、当該保有個人データの内容の訂正等を行わなければならない"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "On a request to stop use, delete, or stop third-party provision of retained personal data processed in breach of Art. 18, 19, 20, 27 or 28 (or where no longer needed or a Art. 26(1) incident occurred), business must act without delay and notify the individual (Art. 35(6)-(7)).",
+   "conditional_on": "Where the request is well-founded and, for third-party provision stops, subject to the substitute-measure exception.",
+   "evidence": {
+    "provision": "Art. 35(2)",
+    "quote": "遅滞なく、当該保有個人データの利用停止等を行わなければならない"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "data_controller",
+   "modality": "encouraged",
+   "summary": "Business must endeavour to explain the reasons when it declines or takes different action on a request for disclosure, correction or stop of use.",
+   "evidence": {
+    "provision": "Art. 36",
+    "quote": "その理由を説明するよう努めなければならない"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Business may set request procedures but must provide information to identify the data and take appropriate measures for the individual's convenience; must not impose excessive burden (Art. 37(4)).",
+   "evidence": {
+    "provision": "Art. 37(2)",
+    "quote": "本人の利便を考慮した適切な措置をとらなければならない"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Business may charge a fee for purpose notices and disclosure requests (Art. 38(1)), and must set the fee amount reasonably in light of actual costs.",
+   "evidence": {
+    "provision": "Art. 38(2)",
+    "quote": "実費を勘案して合理的であると認められる範囲内において、その手数料の額を定めなければならない"
+   }
+  },
+  {
+   "type": "complaint_mechanism",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Business must endeavour to handle complaints about personal information appropriately and promptly and to maintain a system to do so.",
+   "evidence": {
+    "provision": "Art. 40(1)",
+    "quote": "適切かつ迅速な処理に努めなければならない"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "When creating pseudonymously processed information, business must process personal information under the PPC-rule standards so that individuals cannot be identified without cross-referencing other information.",
+   "evidence": {
+    "provision": "Art. 41(1)",
+    "quote": "個人情報保護委員会規則で定める基準に従い、個人情報を加工しなければならない"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Business holding deleted information and matching data for pseudonymised information must take PPC-rule security measures for that deleted information.",
+   "evidence": {
+    "provision": "Art. 41(2)",
+    "quote": "削除情報等の安全管理のための措置を講じなければならない"
+   }
+  },
+  {
+   "type": "data_minimization",
+   "addressee": "data_controller",
+   "modality": "shall_not",
+   "summary": "Business may not handle pseudonymously processed information beyond the purpose range under Art. 17(1), except where required by law; Art. 41(4)-(5) apply modified notice and erasure rules.",
+   "conditional_on": "Unless required by law.",
+   "evidence": {
+    "provision": "Art. 41(3)",
+    "quote": "仮名加工情報（個人情報であるものに限る。以下この条において同じ。）を取り扱ってはならない"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "data_controller",
+   "modality": "shall_not",
+   "summary": "Business may not provide pseudonymously processed personal data to third parties, except where required by law.",
+   "conditional_on": "Unless required by law.",
+   "evidence": {
+    "provision": "Art. 41(6)",
+    "quote": "仮名加工情報である個人データを第三者に提供してはならない"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "data_controller",
+   "modality": "shall_not",
+   "summary": "Business may not cross-reference pseudonymised information to identify individuals, and may not use contact information in it to call, post, send telegrams, fax, electronic means or visit homes (Art. 41(8)).",
+   "evidence": {
+    "provision": "Art. 41(7)",
+    "quote": "当該仮名加工情報を他の情報と照合してはならない"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "data_controller",
+   "modality": "shall_not",
+   "summary": "Business may not use contact information or other information in pseudonymised data to make calls, send mail, telegrams, fax, electronic messages or visit homes.",
+   "evidence": {
+    "provision": "Art. 41(8)",
+    "quote": "当該仮名加工情報に含まれる連絡先その他の情報を利用してはならない"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "data_controller",
+   "modality": "shall_not",
+   "summary": "Business may not provide pseudonymously processed information (not personal information) to third parties, except where required by law; Art. 42(2) applies the Art. 27(5)-(6) recipient rules.",
+   "conditional_on": "Unless required by law.",
+   "evidence": {
+    "provision": "Art. 42(1)",
+    "quote": "仮名加工情報（個人情報であるものを除く。次項及び第三項において同じ。）を第三者に提供してはならない"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "When creating anonymously processed information, business must process personal information under PPC-rule standards to prevent identification and restoration of the source data.",
+   "evidence": {
+    "provision": "Art. 43(1)",
+    "quote": "個人情報保護委員会規則で定める基準に従い、当該個人情報を加工しなければならない"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Business creating anonymously processed information must take PPC-rule security measures for the deleted items and processing method information.",
+   "evidence": {
+    "provision": "Art. 43(2)",
+    "quote": "これらの情報の安全管理のための措置を講じなければならない"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Business creating anonymously processed information must publish the categories of personal information it contains (Art. 43(3)); before third-party provision it must publish the categories and method and explicitly mark the information as anonymously processed (Art. 43(4)).",
+   "evidence": {
+    "provision": "Art. 43(3)",
+    "quote": "当該匿名加工情報に含まれる個人に関する情報の項目を公表しなければならない"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "data_controller",
+   "modality": "shall_not",
+   "summary": "Business creating anonymously processed information may not cross-reference it with other information to identify the individuals.",
+   "evidence": {
+    "provision": "Art. 43(5)",
+    "quote": "当該匿名加工情報を他の情報と照合してはならない"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_controller",
+   "modality": "encouraged",
+   "summary": "Business must endeavour to take and publish security and complaint-handling measures for anonymously processed information.",
+   "evidence": {
+    "provision": "Art. 43(6)",
+    "quote": "当該措置の内容を公表するよう努めなければならない"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Business providing anonymously processed information to a third party must publish beforehand the categories and method of provision and explicitly tell the recipient that the information is anonymously processed.",
+   "conditional_on": "Applies to business providing anonymously processed information to a third party.",
+   "evidence": {
+    "provision": "Art. 44",
+    "quote": "当該第三者に対して、当該提供に係る情報が匿名加工情報である旨を明示しなければならない"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "data_controller",
+   "modality": "shall_not",
+   "summary": "Anonymous-information business may not obtain identifying data or cross-reference anonymously processed information to identify individuals.",
+   "evidence": {
+    "provision": "Art. 45",
+    "quote": "当該匿名加工情報を他の情報と照合してはならない"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "data_controller",
+   "modality": "encouraged",
+   "summary": "Anonymous-information business must endeavour to take necessary security measures and complaint handling for such information and publish the measures.",
+   "evidence": {
+    "provision": "Art. 46",
+    "quote": "当該措置の内容を公表するよう努めなければならない"
+   }
+  },
+  {
+   "type": "licensing_certification",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Organisations seeking PPC certification as an accredited personal information protection organisation must apply to the PPC under the government-set procedure.",
+   "conditional_on": "Applies to organisations wishing to be certified under Art. 47(1).",
+   "evidence": {
+    "provision": "Art. 47(3)",
+    "quote": "個人情報保護委員会に申請しなければならない"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "regulator",
+   "modality": "shall",
+   "summary": "PPC must publicly announce each certification and any scope limitation.",
+   "evidence": {
+    "provision": "Art. 47(4)",
+    "quote": "公示しなければならない"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "regulator",
+   "modality": "shall_not",
+   "summary": "PPC may not certify an application unless it meets the criteria in Art. 49(1) to (3).",
+   "conditional_on": "Unless the application meets the criteria in Art. 49.",
+   "evidence": {
+    "provision": "Art. 49",
+    "quote": "その認定をしてはならない"
+   }
+  },
+  {
+   "type": "licensing_certification",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "A certified organisation must obtain PPC approval before changing the scope of its certified business, except for minor changes under PPC rules.",
+   "conditional_on": "Except for minor changes defined by PPC rules.",
+   "evidence": {
+    "provision": "Art. 50(1)",
+    "quote": "個人情報保護委員会の認定を受けなければならない"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "A certified organisation intending to discontinue certified business must notify the PPC in advance.",
+   "evidence": {
+    "provision": "Art. 51(1)",
+    "quote": "あらかじめ、その旨を個人情報保護委員会に届け出なければならない"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "regulator",
+   "modality": "shall",
+   "summary": "PPC must publicly announce a notified discontinuation of certified business.",
+   "evidence": {
+    "provision": "Art. 51(2)",
+    "quote": "その旨を公示しなければならない"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "A certified organisation must make only consenting business operators its covered entities, and may exclude a covered operator that fails to comply with the guidelines after measures under Art. 54(4).",
+   "evidence": {
+    "provision": "Art. 52(1)",
+    "quote": "対象事業者としなければならない"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "A certified organisation must publish the names of its covered entities.",
+   "evidence": {
+    "provision": "Art. 52(2)",
+    "quote": "対象事業者の氏名又は名称を公表しなければならない"
+   }
+  },
+  {
+   "type": "complaint_mechanism",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "A certified organisation receiving a complaint about a covered entity must advise the complainant, investigate, notify the covered entity and request prompt resolution.",
+   "evidence": {
+    "provision": "Art. 53(1)",
+    "quote": "その苦情の内容を通知してその迅速な解決を求めなければならない"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_controller",
+   "modality": "shall_not",
+   "summary": "Covered entities may not refuse without justifiable reason a request from the certified organisation for explanation or documents in complaint handling.",
+   "conditional_on": "Absent a justifiable reason.",
+   "evidence": {
+    "provision": "Art. 53(3)",
+    "quote": "正当な理由がないのに、これを拒んではならない"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "enterprise",
+   "modality": "encouraged",
+   "summary": "A certified organisation must endeavour to prepare guidelines (personal information protection guidelines) consistent with the Act, after hearing consumer and other stakeholder views.",
+   "evidence": {
+    "provision": "Art. 54(1)",
+    "quote": "この法律の規定の趣旨に沿った指針（以下この節及び第六章において「個人情報保護指針」という。）を作成するよう努めなければならない"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "A certified organisation must notify the PPC of any guidelines it prepares or amends, without delay.",
+   "evidence": {
+    "provision": "Art. 54(2)",
+    "quote": "当該個人情報保護指針を個人情報保護委員会に届け出なければならない"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "After the guidelines are published, the certified organisation must take guidance, recommendations and other necessary measures to make covered entities comply.",
+   "evidence": {
+    "provision": "Art. 54(4)",
+    "quote": "対象事業者に対し、当該個人情報保護指針を遵守させるため必要な指導、勧告その他の措置をとらなければならない"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "enterprise",
+   "modality": "shall_not",
+   "summary": "A certified organisation may not use information obtained in certified work for purposes other than the certified work.",
+   "evidence": {
+    "provision": "Art. 55",
+    "quote": "認定業務の用に供する目的以外に利用してはならない"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "enterprise",
+   "modality": "shall_not",
+   "summary": "Bodies that are not certified may not use the name certified personal information protection organisation or a confusingly similar name.",
+   "evidence": {
+    "provision": "Art. 56",
+    "quote": "認定個人情報保護団体という名称又はこれに紛らわしい名称を用いてはならない"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "enterprise",
+   "modality": "encouraged",
+   "summary": "Media, religious, writing and political entities exempted from Chapter 4 must endeavour to take security, complaint and other measures for personal information and publish them.",
+   "conditional_on": "Applies to the exempted entities listed in Art. 57(1) when they process information for their exempt purposes.",
+   "evidence": {
+    "provision": "Art. 57(3)",
+    "quote": "当該措置の内容を公表するよう努めなければならない"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "research_institution",
+   "modality": "encouraged",
+   "summary": "Academic research institutions handling personal information for research must comply with the Act and endeavour to take and publish necessary measures for proper handling.",
+   "conditional_on": "Applies to academic research institutions when handling personal information for academic research purposes.",
+   "evidence": {
+    "provision": "Art. 59",
+    "quote": "この法律の規定を遵守するとともに、その適正を確保するために必要な措置を自ら講じ"
+   }
+  },
+  {
+   "type": "data_minimization",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Government bodies must specify the purpose of use as far as possible when holding personal information, may hold it only where necessary for their functions, and may not hold it beyond the purpose (Art. 61(2)) or change the purpose beyond the reasonably related scope (Art. 61(3)).",
+   "evidence": {
+    "provision": "Art. 61(1)",
+    "quote": "その利用目的をできる限り特定しなければならない"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "When acquiring personal information directly from the individual in writing, government bodies must state the purpose of use in advance, subject to exceptions in Art. 62(i) to (iv).",
+   "conditional_on": "Subject to the exceptions in Art. 62.",
+   "evidence": {
+    "provision": "Art. 62",
+    "quote": "あらかじめ、本人に対し、その利用目的を明示しなければならない"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "government_agency",
+   "modality": "shall_not",
+   "summary": "Government bodies may not use personal information in a way that may foster or induce illegal or improper conduct.",
+   "evidence": {
+    "provision": "Art. 63",
+    "quote": "違法又は不当な行為を助長し、又は誘発するおそれがある方法により個人情報を利用してはならない"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "government_agency",
+   "modality": "shall_not",
+   "summary": "Government bodies may not acquire personal information by deceit or other improper means.",
+   "evidence": {
+    "provision": "Art. 64",
+    "quote": "偽りその他不正の手段により個人情報を取得してはならない"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "encouraged",
+   "summary": "Government bodies must endeavour to keep retained personal information accurate and consistent with facts within the purpose.",
+   "evidence": {
+    "provision": "Art. 65",
+    "quote": "保有個人情報が過去又は現在の事実と合致するよう努めなければならない"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Government bodies must take necessary and appropriate measures to prevent leakage, loss or damage of retained personal information and for its security management.",
+   "evidence": {
+    "provision": "Art. 66(1)",
+    "quote": "保有個人情報の安全管理のために必要かつ適切な措置を講じなければならない"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "data_processor",
+   "modality": "shall",
+   "summary": "Contractors and designated administrators handling retained personal information for government bodies bear the same security duty for their entrusted work.",
+   "conditional_on": "Applies to the entities listed in Art. 66(2)(i) to (v) for their entrusted work.",
+   "evidence": {
+    "provision": "Art. 66(2)",
+    "quote": "前項の規定は、次の各号に掲げる者が当該各号に定める業務を行う場合における個人情報の取扱いについて準用する"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "government_agency",
+   "also_addressees": [
+    "workers"
+   ],
+   "modality": "shall_not",
+   "summary": "Staff of government bodies and dispatched workers handling personal information may not disclose it without cause or use it for improper purposes.",
+   "evidence": {
+    "provision": "Art. 67",
+    "quote": "その業務に関して知り得た個人情報の内容をみだりに他人に知らせ、又は不当な目的に利用してはならない"
+   }
+  },
+  {
+   "type": "incident_reporting",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Government bodies must report specified security incidents involving retained personal information to the PPC under PPC rules.",
+   "evidence": {
+    "provision": "Art. 68(1)",
+    "quote": "個人情報保護委員会に報告しなければならない"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Government bodies must notify affected individuals of specified security incidents, subject to the substitute-measure and sensitive-information exceptions in Art. 68(2).",
+   "conditional_on": "Applies to incidents under Art. 68(1), subject to Art. 68(2) exceptions.",
+   "evidence": {
+    "provision": "Art. 68(2)",
+    "quote": "本人に対し、個人情報保護委員会規則で定めるところにより、当該事態が生じた旨を通知しなければならない"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "government_agency",
+   "modality": "shall_not",
+   "summary": "Government bodies may not use or provide retained personal information for purposes other than the purpose of use, except as required by law or permitted by the exceptions in Art. 69(2).",
+   "conditional_on": "Unless required by law or within the exceptions in Art. 69(2).",
+   "evidence": {
+    "provision": "Art. 69(1)",
+    "quote": "利用目的以外の目的のために保有個人情報を自ら利用し、又は提供してはならない"
+   }
+  },
+  {
+   "type": "data_minimization",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Where a government body decides it is necessary to protect individual rights, it must limit internal use of retained personal information beyond the purpose to specified divisions, organs or staff.",
+   "conditional_on": "Where the body finds it specially necessary to protect individual rights and interests.",
+   "evidence": {
+    "provision": "Art. 69(4)",
+    "quote": "保有個人情報の利用目的以外の目的のための行政機関等の内部における利用を特定の部局若しくは機関又は職員に限るものとする"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "When providing retained personal information for a purpose or under Art. 69(2)(iii)-(iv), government bodies must require the recipient to impose use limits or security measures.",
+   "conditional_on": "Where the body considers it necessary.",
+   "evidence": {
+    "provision": "Art. 70",
+    "quote": "提供に係る個人情報について、その利用の目的若しくは方法の制限その他必要な制限を付し"
+   }
+  },
+  {
+   "type": "consent",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Government bodies providing retained personal information for a purpose other than its use purpose to a third party in a foreign country must obtain prior consent, unless an exception applies.",
+   "conditional_on": "Unless required by law or Art. 69(2)(iv) applies, and subject to the equivalent-system exception in Art. 71(1).",
+   "evidence": {
+    "provision": "Art. 71(1)",
+    "quote": "あらかじめ外国にある第三者への提供を認める旨の本人の同意を得なければならない"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Before obtaining consent for overseas provision, government bodies must provide information on the foreign data protection regime and measures taken by the recipient.",
+   "evidence": {
+    "provision": "Art. 71(2)",
+    "quote": "その他当該本人に参考となるべき情報を当該本人に提供しなければならない"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "After providing retained personal information to a foreign recipient with equivalent systems, government bodies must take measures to ensure continuous implementation of equivalent measures and provide information on request.",
+   "evidence": {
+    "provision": "Art. 71(3)",
+    "quote": "当該第三者による相当措置の継続的な実施を確保するために必要な措置を講ずるとともに"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "When providing personal-related information to a third party expected to hold it as personal information, government bodies must, where necessary, require use limits or security measures from the recipient.",
+   "conditional_on": "Where government body finds it necessary and the third party is expected to acquire it as personal information.",
+   "evidence": {
+    "provision": "Art. 72",
+    "quote": "その漏えいの防止その他の個人関連情報の適切な管理のために必要な措置を講ずることを求めるものとする"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "government_agency",
+   "modality": "shall_not",
+   "summary": "Government bodies may not provide pseudonymously processed information (not personal information) to third parties, except to contractors or where required by law.",
+   "conditional_on": "Unless required by law or where the recipient is a contractor.",
+   "evidence": {
+    "provision": "Art. 73(1)",
+    "quote": "を第三者（当該仮名加工情報の取扱いの委託を受けた者を除く。）に提供してはならない"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Government bodies must take necessary and appropriate measures to prevent leakage and for security of pseudonymously processed information.",
+   "evidence": {
+    "provision": "Art. 73(2)",
+    "quote": "仮名加工情報の安全管理のために必要かつ適切な措置を講じなければならない"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "government_agency",
+   "modality": "shall_not",
+   "summary": "Government bodies may not obtain deleted information or cross-reference pseudonymously processed information to identify individuals, and may not use contact details in it for calls, mail, telegrams, fax, electronic means or home visits (Art. 73(4)).",
+   "conditional_on": "Unless required by law.",
+   "evidence": {
+    "provision": "Art. 73(3)",
+    "quote": "当該仮名加工情報を他の情報と照合してはならない"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Before holding a personal information file, the head of an administrative organ must notify the PPC of listed items (name, purpose, recorded items, collection method and recipients); the same applies to changes (Art. 74(2)), and cessation or ineligibility must be notified without delay (Art. 74(3)).",
+   "conditional_on": "Subject to the file exemptions in Art. 74(2).",
+   "evidence": {
+    "provision": "Art. 74(1)",
+    "quote": "あらかじめ、個人情報保護委員会に対し、次に掲げる事項を通知しなければならない"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Government bodies must create and publish a personal information file ledger listing the items in Art. 74(1) and other prescribed items, subject to the omission rules in Art. 75(3).",
+   "conditional_on": "Subject to the exemptions in Art. 75(2) and the omission rule in Art. 75(3).",
+   "evidence": {
+    "provision": "Art. 75(1)",
+    "quote": "個人情報ファイル簿」という。）を作成し、公表しなければならない"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Government bodies must disclose retained personal information to the requester except where a non-disclosure ground in Art. 78(1)(i) to (vi) applies.",
+   "conditional_on": "Except where a non-disclosure ground in Art. 78(1) applies.",
+   "evidence": {
+    "provision": "Art. 78(1)",
+    "quote": "開示請求者に対し、当該保有個人情報を開示しなければならない"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Where a record contains non-disclosable parts that can easily be separated, government bodies must disclose the rest; Art. 79(2) covers personal identifiers in third-party information.",
+   "conditional_on": "Where the non-disclosable part can easily be separated.",
+   "evidence": {
+    "provision": "Art. 79(1)",
+    "quote": "当該部分を除いた部分につき開示しなければならない"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Government bodies must notify requesters in writing of a disclosure decision (with purpose and implementation details) or of a non-disclosure decision.",
+   "evidence": {
+    "provision": "Art. 82(1)",
+    "quote": "その旨、開示する保有個人情報の利用目的及び開示の実施に関し政令で定める事項を書面により通知しなければならない"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Government bodies must decide disclosure requests within 30 days of receipt (excluding correction periods); the period may be extended once by 30 days with notice (Art. 83(2)).",
+   "evidence": {
+    "provision": "Art. 83(1)",
+    "quote": "開示決定等は、開示請求があった日から三十日以内にしなければならない"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Before deciding on disclosure of third-party information in certain cases, government bodies must give the third party an opportunity to submit an opinion; if the third party objects and disclosure is decided, at least two weeks must elapse (Art. 86(3)).",
+   "conditional_on": "Where the case falls under Art. 86(2)(i) or (ii) and the third party's whereabouts are known.",
+   "evidence": {
+    "provision": "Art. 86(2)",
+    "quote": "意見書を提出する機会を与えなければならない"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Government bodies must make publicly available the rules on the disclosure method for electromagnetic records.",
+   "evidence": {
+    "provision": "Art. 87(2)",
+    "quote": "電磁的記録についての開示の方法に関する定めを一般の閲覧に供しなければならない"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "regulator",
+   "modality": "may",
+   "summary": "The PPC may make rules (PPC rules) within its competence to implement or carry out the Act or specific delegations.",
+   "evidence": {
+    "provision": "Art. 145",
+    "quote": "個人情報保護委員会規則を制定することができる"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "regulator",
+   "modality": "shall",
+   "summary": "The PPC is responsible for the basic policy formulation and implementation, supervision of business operators, government monitoring, certified organisations, complaints assistance, public awareness, research and international cooperation, among other functions.",
+   "evidence": {
+    "provision": "Art. 132(1)",
+    "quote": "基本方針の策定及び推進に関すること"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "regulator",
+   "modality": "shall",
+   "summary": "The PPC must annually compile and publish a summary of reports from government bodies on enforcement of the Act.",
+   "evidence": {
+    "provision": "Art. 165(2)",
+    "quote": "その概要を公表するものとする"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "A local government head must notify the PPC of any personal information protection ordinance enacted under the Act, without delay.",
+   "conditional_on": "Applies to ordinances enacted under this Act.",
+   "evidence": {
+    "provision": "Art. 167(1)",
+    "quote": "個人情報保護委員会規則で定めるところにより、その旨及びその内容を委員会に届け出なければならない"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "regulator",
+   "modality": "shall",
+   "summary": "The PPC must publish notified local ordinances on the internet or by other appropriate means.",
+   "evidence": {
+    "provision": "Art. 167(2)",
+    "quote": "当該届出に係る事項をインターネットの利用その他適切な方法により公表しなければならない"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "regulator",
+   "modality": "shall",
+   "summary": "The PPC must report annually to the Diet through the Prime Minister on its work and publish a summary.",
+   "evidence": {
+    "provision": "Art. 168",
+    "quote": "所掌事務の処理状況を報告するとともに、その概要を公表しなければならない"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "regulator",
+   "modality": "shall",
+   "summary": "The PPC must set up a comprehensive help desk (guidance centre) to ensure smooth operation of the Act.",
+   "evidence": {
+    "provision": "Art. 169",
+    "quote": "総合的な案内所を整備するものとする"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "may",
+   "summary": "Specified local independent administrative corporations may, under PPC rules, notify principals and file a report with the Personal Information Protection Commission before the commencement date, for third-party provision of personal data.",
+   "applies_from": "before the commencement date of Art. 51 (第五十一条施行日前)",
+   "conditional_on": "PPC rules (個人情報保護委員会規則); provision of personal data to a third party under amended Art. 27(2)",
+   "evidence": {
+    "provision": "附則 第九条第三項",
+    "quote": "個人情報保護委員会規則で定めるところにより、同項各号に掲げる事項に相当する事項について、本人に通知するとともに、個人情報保護委員会に届け出ることができる。"
+   }
+  },
+  {
+   "type": "consent",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Specified local independent administrative corporations must comply with amended Art. 28(2) (information on consent) when obtaining consent under amended Art. 28(1) after commencement; the same applies to amended Art. 71(2) for listed holders of retained personal information. Amended Art. 28(3) and 71(3) apply to foreign transfers after commencement.",
+   "applies_from": "from the commencement date of Art. 51 (第五十一条施行日以後)",
+   "conditional_on": "consent obtained or foreign transfer made after commencement",
+   "evidence": {
+    "provision": "附則 第九条第六項",
+    "quote": "第五十一条改正後個人情報保護法第二十八条第二項の規定は、特定地方独立行政法人等が第五十一条施行日以後に第五十一条改正後個人情報保護法第二十八条第一項の規定により本人の同意を得る場合について適用する。"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Government is to study concrete measures, with a target of within one year after promulgation, for using hiragana or katakana spellings of names to identify individuals in administrative procedures (including recording such spellings in the family register), and to take the necessary measures based on the results.",
+   "applies_from": "target: within one year after promulgation of the Act (公布の日から一年以内を目途)",
+   "evidence": {
+    "provision": "附則 第七十三条",
+    "quote": "この法律の公布後一年以内を目途としてその具体的な方策について検討を加え、その結果に基づいて必要な措置を講ずるものとする。"
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Necessary transitional measures (including penal transitional measures) for the Act's implementation are to be set by cabinet order (政令), in addition to the provisions of this supplementary part.",
+   "evidence": {
+    "provision": "附則 第七十二条",
+    "quote": "この附則に定めるもののほか、この法律の施行に関し必要な経過措置（罰則に関する経過措置を含む。）は、政令で定める。"
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Necessary transitional measures for implementing the Act are to be set by cabinet order (政令), in addition to the provisions of this supplementary part (Act No. 48 of 2022).",
+   "evidence": {
+    "provision": "附則（令和四年五月二五日法律第四八号）第百二十五条",
+    "quote": "この附則に定めるもののほか、この法律の施行に関し必要な経過措置は、政令で定める。"
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Necessary transitional measures (including penal transitional measures) for implementing the Act are to be set by cabinet order (政令) (Act No. 79 of 2023).",
+   "evidence": {
+    "provision": "附則（令和五年一一月二九日法律第七九号）第六十八条",
+    "quote": "この附則に規定するもののほか、この法律の施行に関し必要な経過措置（罰則に関する経過措置を含む。）は、政令で定める。"
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Necessary transitional measures for implementing the Act are to be set by cabinet order (政令) (Act No. 47 of 2023).",
+   "evidence": {
+    "provision": "附則（令和五年六月七日法律第四七号）第五条",
+    "quote": "前三条に定めるもののほか、この法律の施行に関し必要な経過措置は、政令で定める。"
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Necessary transitional measures for implementing the Act are to be set by cabinet order (政令) (Act No. 46 of 2024).",
+   "evidence": {
+    "provision": "附則（令和八年六月二四日法律第四六号）第五条",
+    "quote": "前三条に定めるもののほか、この法律の施行に関し必要な経過措置は、政令で定める。"
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Necessary transitional measures (including penal transitional measures) for implementing the Act are to be set by cabinet order (政令) (Act No. 56 of 2026).",
+   "evidence": {
+    "provision": "附則（令和八年七月一七日法律第五六号）第十三条",
+    "quote": "附則第二条から前条までに定めるもののほか、この法律の施行に関し必要な経過措置（罰則に関する経過措置を含む。）は、政令で定める。"
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Necessary transitional measures (including penal transitional measures) for implementing the Act are to be set by cabinet order (政令) (Act No. 62 of 2026).",
+   "evidence": {
+    "provision": "附則（令和八年七月一七日法律第六二号）第八条",
+    "quote": "附則第二条から前条までに定めるもののほか、この法律の施行に関し必要な経過措置（罰則に関する経過措置を含む。）は、政令で定める。"
+   }
+  }
+ ],
+ "enforcement": [
+  {
+   "sanction_type": "injunction_order",
+   "authority": "個人情報保護委員会 (Personal Information Protection Commission)",
+   "triggered_by": "Business operator's violation of listed Chapter 4 provisions after a recommendation under Art. 148(1) is not followed where serious rights infringement is imminent (Art. 148(2)); or a violation where urgent measures are needed (Art. 148(3)).",
+   "max_penalty_text": "No fine; order to take measures to stop or correct the violation (Art. 148(2)-(3)). Breach of the order is punished under Art. 178.",
+   "penalty_reference": "Art. 178",
+   "cure_period": "Recommendation under Art. 148(1) precedes the order under Art. 148(2); no fixed period stated",
+   "evidence": {
+    "provision": "第百四十八条第二項",
+    "quote": "当該個人情報取扱事業者等に対し、その勧告に係る措置をとるべきことを命ずることができる。"
+   }
+  },
+  {
+   "sanction_type": "other",
+   "authority": "個人情報保護委員会 (Personal Information Protection Commission)",
+   "triggered_by": "Business operator's breach of an order under Art. 148(2) or (3).",
+   "max_penalty_text": "Public announcement of the violation; no amount stated.",
+   "evidence": {
+    "provision": "第百四十八条第四項",
+    "quote": "その命令を受けた個人情報取扱事業者等がその命令に違反したときは、その旨を公表することができる。"
+   }
+  },
+  {
+   "sanction_type": "injunction_order",
+   "authority": "個人情報保護委員会 (Personal Information Protection Commission)",
+   "triggered_by": "Necessary, for enforcement of Chapter 4 Section 5, against an accredited personal information protection organisation; no specific violation is named in the provision.",
+   "max_penalty_text": "No fine; order to take necessary measures such as improving the method of accredited business or changing the guidelines.",
+   "evidence": {
+    "provision": "第百五十四条",
+    "quote": "認定個人情報保護団体に対し、認定業務の実施の方法の改善、個人情報保護指針の変更その他の必要な措置をとるべき旨を命ずることができる。"
+   }
+  },
+  {
+   "sanction_type": "license_revocation",
+   "authority": "個人情報保護委員会 (Personal Information Protection Commission)",
+   "triggered_by": "Accredited personal information protection organisation falls within one of the cases in Art. 155(1), such as a disqualifying event, breach of Art. 55, failure to obey an order under Art. 154, or fraud in obtaining accreditation.",
+   "max_penalty_text": "Revocation of accreditation (認定の取消し); no fine stated.",
+   "evidence": {
+    "provision": "第百五十五条第一項",
+    "quote": "委員会は、認定個人情報保護団体が次の各号のいずれかに該当するときは、その認定を取り消すことができる。"
+   }
+  },
+  {
+   "sanction_type": "injunction_order",
+   "authority": "courts (civil suit under Art. 39; the court is not named in the text)",
+   "triggered_by": "Data subject's demand to stop use, erase or stop third-party provision of retained personal data handled in breach of Art. 18, 19, 20, 27 or 28 (Art. 35), before bringing suit.",
+   "max_penalty_text": "No penalty amount; civil suit and an application for a provisional disposition order (仮処分命令) are contemplated (Art. 39(3)).",
+   "private_right_of_action": true,
+   "cure_period": "Suit may be brought only after the demand reaches the defendant and two weeks have passed (Art. 39(1)); no cure period for the business operator is stated",
+   "evidence": {
+    "provision": "第三十九条第一項",
+    "quote": "その到達した日から二週間を経過した後でなければ、その訴えを提起することができない。"
+   }
+  },
+  {
+   "sanction_type": "criminal_penalty",
+   "authority": "not named in the text (criminal penalty)",
+   "triggered_by": "Staff or former staff of an administrative organ or contractor who, without justification, provides a personal information file recording personal secrets (Art. 60(2)(i)).",
+   "max_penalty_text": "二年以下の拘禁刑又は百万円以下の罰金に処する。",
+   "max_penalty_amount": 1000000,
+   "currency": "JPY",
+   "evidence": {
+    "provision": "第百七十六条",
+    "quote": "二年以下の拘禁刑又は百万円以下の罰金に処する。"
+   }
+  },
+  {
+   "sanction_type": "criminal_penalty",
+   "authority": "not named in the text (criminal penalty)",
+   "triggered_by": "Breach of the secrecy duty under Art. 143 by a member, expert or staff member of the Commission (leaking or misusing secrets).",
+   "max_penalty_text": "二年以下の拘禁刑又は百万円以下の罰金に処する。",
+   "max_penalty_amount": 1000000,
+   "currency": "JPY",
+   "evidence": {
+    "provision": "第百七十七条",
+    "quote": "第百四十三条の規定に違反して秘密を漏らし、又は盗用した者は、二年以下の拘禁刑又は百万円以下の罰金に処する。"
+   }
+  },
+  {
+   "sanction_type": "criminal_penalty",
+   "authority": "not named in the text (criminal penalty)",
+   "triggered_by": "Breach of an order under Art. 148(2) or (3).",
+   "max_penalty_text": "一年以下の拘禁刑又は百万円以下の罰金に処する。",
+   "max_penalty_amount": 1000000,
+   "currency": "JPY",
+   "evidence": {
+    "provision": "第百七十八条",
+    "quote": "当該違反行為をした者は、一年以下の拘禁刑又は百万円以下の罰金に処する。"
+   }
+  },
+  {
+   "sanction_type": "criminal_penalty",
+   "authority": "not named in the text (criminal penalty)",
+   "triggered_by": "Business operator, its officer, representative or employee (or former such person) who provides or steals a personal information database for own or a third party's illegitimate gain.",
+   "max_penalty_text": "一年以下の拘禁刑又は五十万円以下の罰金に処する。",
+   "max_penalty_amount": 500000,
+   "currency": "JPY",
+   "evidence": {
+    "provision": "第百七十九条",
+    "quote": "又は盗用したときは、一年以下の拘禁刑又は五十万円以下の罰金に処する。"
+   }
+  },
+  {
+   "sanction_type": "criminal_penalty",
+   "authority": "not named in the text (criminal penalty)",
+   "triggered_by": "A person under Art. 176 who provides or steals retained personal information known through their work for own or a third party's illegitimate gain.",
+   "max_penalty_text": "一年以下の拘禁刑又は五十万円以下の罰金に処する。",
+   "max_penalty_amount": 500000,
+   "currency": "JPY",
+   "evidence": {
+    "provision": "第百八十条",
+    "quote": "その業務に関して知り得た保有個人情報を自己若しくは第三者の不正な利益を図る目的で提供し、又は盗用したときは、一年以下の拘禁刑又は五十万円以下の罰金に処する。"
+   }
+  },
+  {
+   "sanction_type": "criminal_penalty",
+   "authority": "not named in the text (criminal penalty)",
+   "triggered_by": "Staff of an administrative organ who abuses their authority to collect records of personal secrets for a purpose outside their duties.",
+   "max_penalty_text": "一年以下の拘禁刑又は五十万円以下の罰金に処する。",
+   "max_penalty_amount": 500000,
+   "currency": "JPY",
+   "evidence": {
+    "provision": "第百八十一条",
+    "quote": "行政機関等の職員がその職権を濫用して、専らその職務の用以外の用に供する目的で"
+   }
+  },
+  {
+   "sanction_type": "criminal_penalty",
+   "authority": "not named in the text (criminal penalty)",
+   "triggered_by": "Refusal, false answer or evasion in response to a report, document request or inspection under Art. 146(1), or a false or missing report under Art. 153.",
+   "max_penalty_text": "五十万円以下の罰金に処する。",
+   "max_penalty_amount": 500000,
+   "currency": "JPY",
+   "evidence": {
+    "provision": "第百八十二条",
+    "quote": "当該違反行為をした者は、五十万円以下の罰金に処する。"
+   }
+  },
+  {
+   "sanction_type": "criminal_penalty",
+   "authority": "not named in the text (criminal penalty against legal persons)",
+   "triggered_by": "A representative, agent or employee of a legal person commits an offence under Art. 178 or 179 in connection with the business; the legal person is fined as well. For Art. 182, the legal person receives the fine of that article.",
+   "max_penalty_text": "一億円以下の罰金刑 for Art. 178 and 179; for Art. 182, the fine of that article (五十万円以下の罰金).",
+   "max_penalty_amount": 100000000,
+   "currency": "JPY",
+   "penalty_reference": "Art. 182",
+   "evidence": {
+    "provision": "第百八十四条第一項",
+    "quote": "第百七十八条及び第百七十九条　一億円以下の罰金刑"
+   }
+  },
+  {
+   "sanction_type": "administrative_fine",
+   "authority": "not named in the text (過料)",
+   "triggered_by": "Breach of Art. 30(2) or Art. 56 (false statement by a third party in verification, or use of the accredited-body name by an unaccredited person); failure or false notice under Art. 51(1); obtaining disclosed information by fraud.",
+   "max_penalty_text": "十万円以下の過料に処する。",
+   "max_penalty_amount": 100000,
+   "currency": "JPY",
+   "evidence": {
+    "provision": "第百八十五条",
+    "quote": "次の各号のいずれかに該当する者は、十万円以下の過料に処する。"
+   }
+  }
+ ],
+ "section_status": {}
+}

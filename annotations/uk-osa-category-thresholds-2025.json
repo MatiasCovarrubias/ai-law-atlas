@@ -1,0 +1,252 @@
+{
+ "schema_version": "1.1",
+ "instrument_id": "uk-osa-category-thresholds-2025",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-opus-5-5 (Claude Code)",
+  "method": "manual + model (codebook worked example)",
+  "date": "2026-10-11",
+  "prompt_version": "gold (codebook worked example; no prompt version)"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "legislation.gov.uk",
+  "url": "https://www.legislation.gov.uk/uksi/2025/226/made/data.html",
+  "retrieved": "2026-10-11",
+  "version": "original as made (2025-02-26)",
+  "language": "en",
+  "extent": "full",
+  "note": "Includes the non-binding Explanatory Note. Footnote texts (definitions in the Online Safety Act 2023) are not included."
+ },
+ "summary": {
+  "short": "Sets the user-number and functionality thresholds that place online services in Category 1, 2A or 2B under the UK Online Safety Act 2023, which triggers additional duties under the Act. In force 27 February 2025.",
+  "long": "These regulations, made by the Secretary of State on Ofcom's advice and approved by both Houses of Parliament, define when regulated online services meet the threshold conditions for the Online Safety Act 2023 categories. Category 1 covers user-to-user services with more than 34 million average monthly active UK users and a content recommender system, or more than 7 million with a recommender system and a forward or share function. Category 2A covers search engines with more than 7 million users, except vertical search engines that search selected sources through API-based arrangements. Category 2B covers user-to-user services with more than 3 million users and a direct-messaging function. User numbers are the monthly mean over the six months before the month in which Ofcom's assessment begins. The duties attached to each category, and the assessment and register process, are set in the parent Act (sections 95-97), not in this instrument."
+ },
+ "classification": {
+  "domains": [
+   "online_safety_content",
+   "platforms_competition",
+   "algorithmic_decision_systems"
+  ],
+  "primary_domain": "online_safety_content",
+  "mechanisms": [
+   "designation_tiering"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "platform_operator",
+   "search_engine_operator"
+  ],
+  "affected_roles": [
+   "consumers_users"
+  ],
+  "decision_margins": [
+   "firm:product_design_release",
+   "firm:compliance_process",
+   "household:information"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national"
+   ],
+   "description": "United Kingdom; thresholds count UK users only.",
+   "evidence": {
+    "provision": "Reg. 1(3)",
+    "quote": "These Regulations extend to England and Wales, Scotland and Northern Ireland."
+   }
+  },
+  "agora_applications": [],
+  "agora_harms": [
+   "Detrimental content"
+  ],
+  "agora_incentives": [],
+  "agora_risk_factors": [],
+  "agora_strategies": [
+   "Tiering",
+   "Tiering: Tiering based on impact"
+  ]
+ },
+ "events": [
+  {
+   "event": "legislative_approval",
+   "date": null,
+   "date_type": "not_stated",
+   "date_text": "approved by a resolution of each House of Parliament",
+   "applies_to": "Draft instrument (affirmative procedure)",
+   "evidence": {
+    "provision": "Preamble",
+    "quote": "a draft of this instrument has been laid before Parliament and approved by a resolution of each House of Parliament"
+   }
+  },
+  {
+   "event": "adopted",
+   "date": "2025-02-26",
+   "date_type": "absolute",
+   "date_text": "Made 26th February 2025",
+   "applies_to": "Regulations made by the Secretary of State",
+   "evidence": {
+    "provision": "Heading",
+    "quote": "Made 26th February 2025"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2025-02-27",
+   "date_type": "absolute",
+   "date_text": "Coming into force 27th February 2025 (the day after the day on which they are made)",
+   "applies_to": "All regulations",
+   "evidence": {
+    "provision": "Heading; Reg. 1(2)",
+    "quote": "Coming into force 27th February 2025"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "users_monthly_active",
+   "variable_text": "average number of monthly active United Kingdom users",
+   "operator": ">",
+   "value": 34000000,
+   "value_text": "exceeds 34 million",
+   "unit": "average monthly active UK users",
+   "currency": null,
+   "indexed": false,
+   "measurement": "Mean of monthly active UK users over the six months before the month the assessment begins (Reg. 6)",
+   "level": "service",
+   "trigger": "designation_category",
+   "consequence": "Category 1 (route a)",
+   "conditions": "Uses a content recommender system",
+   "evidence": {
+    "provision": "Reg. 3(1)(a)",
+    "quote": "has an average number of monthly active United Kingdom users that exceeds 34 million, and"
+   }
+  },
+  {
+   "variable": "users_monthly_active",
+   "variable_text": "average number of monthly active United Kingdom users",
+   "operator": ">",
+   "value": 7000000,
+   "value_text": "exceeds 7 million",
+   "unit": "average monthly active UK users",
+   "currency": null,
+   "indexed": false,
+   "measurement": "As in Reg. 6",
+   "level": "service",
+   "trigger": "designation_category",
+   "consequence": "Category 1 (route b)",
+   "conditions": "Uses a content recommender system AND lets users forward or share user-generated content",
+   "evidence": {
+    "provision": "Reg. 3(1)(b)",
+    "quote": "provides a functionality for users to forward or share regulated user-generated content"
+   }
+  },
+  {
+   "variable": "users_monthly_active",
+   "variable_text": "average number of monthly active United Kingdom users",
+   "operator": ">",
+   "value": 7000000,
+   "value_text": "exceeds 7 million",
+   "unit": "average monthly active UK users",
+   "currency": null,
+   "indexed": false,
+   "measurement": "As in Reg. 6; for search, users who encountered search content in results",
+   "level": "service",
+   "trigger": "designation_category",
+   "consequence": "Category 2A (search engines)",
+   "conditions": "Not a vertical search engine that searches selected websites or databases on a specific topic through an API-based arrangement",
+   "evidence": {
+    "provision": "Reg. 4",
+    "quote": "The Category 2A threshold conditions are met by a search engine of a regulated search service or a combined service where it"
+   }
+  },
+  {
+   "variable": "users_monthly_active",
+   "variable_text": "average number of monthly active United Kingdom users",
+   "operator": ">",
+   "value": 3000000,
+   "value_text": "exceeds 3 million",
+   "unit": "average monthly active UK users",
+   "currency": null,
+   "indexed": false,
+   "measurement": "As in Reg. 6",
+   "level": "service",
+   "trigger": "designation_category",
+   "consequence": "Category 2B",
+   "conditions": "Offers direct messaging that other users cannot see unless the sender or recipient takes further action",
+   "evidence": {
+    "provision": "Reg. 5(a)",
+    "quote": "has an average number of monthly active United Kingdom users that exceeds 3 million, and"
+   }
+  }
+ ],
+ "obligations": [],
+ "enforcement": [],
+ "definitions": [
+  {
+   "term": "Active United Kingdom user (user-to-user service)",
+   "evidence": {
+    "provision": "Reg. 2(a)",
+    "quote": "any United Kingdom user who has accessed the user-to-user part of that service"
+   }
+  },
+  {
+   "term": "Active United Kingdom user (search engine)",
+   "evidence": {
+    "provision": "Reg. 2(b)",
+    "quote": "any United Kingdom user who has encountered search content in or via search results"
+   }
+  },
+  {
+   "term": "Content recommender system",
+   "evidence": {
+    "provision": "Reg. 3(2)",
+    "quote": "uses algorithms which by means of machine learning or other techniques determines, or otherwise affects, the way in which regulated user-generated content of a user"
+   }
+  },
+  {
+   "term": "Relevant period",
+   "evidence": {
+    "provision": "Reg. 6(2)",
+    "quote": "is the six-month period ending with the month preceding the month in which that assessment begins"
+   }
+  }
+ ],
+ "relations": [
+  {
+   "relation": "legal_basis",
+   "target_instrument_id": "uk-online-safety-act-2023",
+   "target_text": "Online Safety Act 2023, s. 224(2) and Sch. 11 para. 1(1)-(3)",
+   "note": "Made under delegated powers; made after Ofcom research and advice (Sch. 11 para. 2(11))",
+   "evidence": {
+    "provision": "Preamble",
+    "quote": "The Secretary of State makes these Regulations in exercise of the powers conferred by section 224(2) of, and paragraph 1(1), (2) and (3) of Schedule 11 to, the Online Safety Act 2023"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": "uk-online-safety-act-2023",
+   "target_text": "Online Safety Act 2023, ss. 95-97 (Ofcom assessments and register of categorised services)",
+   "note": "User numbers are measured relative to the start of an assessment under these sections",
+   "evidence": {
+    "provision": "Reg. 6(2)",
+    "quote": "in relation to an assessment under section 95, 96 or 97 of the Online Safety Act 2023"
+   }
+  }
+ ],
+ "entities": [],
+ "section_status": {
+  "obligations": {
+   "status": "not_applicable",
+   "note": "This instrument only defines thresholds; category duties are in the Online Safety Act 2023."
+  },
+  "enforcement": {
+   "status": "not_applicable",
+   "note": "Enforcement and penalties are in the Online Safety Act 2023."
+  },
+  "entities": {
+   "status": "not_applicable",
+   "note": "No services are named; Ofcom's register of categorised services designates them."
+  }
+ },
+ "notes": "Thresholds combine a user-number test with functionality tests (recommender system, forward or share, direct messaging), so services can also fall outside a category by changing features."
+}

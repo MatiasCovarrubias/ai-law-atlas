@@ -1,0 +1,438 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "us-pafaca-2024",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "AGORA plaintext (ETO, CC BY-NC 4.0), local cache",
+  "url": "https://www.congress.gov/bill/118th-congress/house-bill/8038/text#toc-H808ECDA050C44AE19AA10EFA0F5FA10B",
+  "retrieved": "2024-06-06",
+  "version": "1.33.0 (2026-09-16)",
+  "language": "en",
+  "extent": "partial",
+  "note": "AGORA sections of the act only: 21st Century Peace through Strength Act, Division D (\"Protecting Americans from Foreign Adversary Controlled Application"
+ },
+ "classification": {
+  "domains": [
+   "platforms_competition",
+   "data_access_sharing"
+  ],
+  "primary_domain": "platforms_competition",
+  "mechanisms": [
+   "prohibition_ban",
+   "mandate_obligation",
+   "designation_tiering"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "platform_operator",
+   "cloud_service_provider",
+   "government_agency"
+  ],
+  "affected_roles": [
+   "consumers_users"
+  ],
+  "decision_margins": [
+   "firm:entry_market_access",
+   "household:access"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national",
+    "extraterritorial",
+    "targeted"
+   ],
+   "description": "Applies to conduct within the land or maritime borders of the United States and to named foreign-controlled applications and entities.",
+   "evidence": {
+    "provision": "Sec. 2(a)(1)",
+    "quote": "within the land or maritime borders of the United States"
+   }
+  },
+  "agora_incentives": [
+   "Fines"
+  ]
+ },
+ "summary": {
+  "short": "Makes it unlawful for entities to distribute, maintain or update a foreign adversary controlled application in the United States through app marketplaces or internet hosting, starting 270 days after enactment or after a presidential determination. Requires data portability for users and sets civil penalties enforced by the Attorney General.",
+  "long": "Sets out a prohibition on entities distributing, maintaining or updating a foreign adversary controlled application in the United States through app marketplaces or internet hosting services. Named applications (ByteDance, TikTok and related entities) are covered from 270 days after enactment; other covered companies from 270 days after a presidential determination. The President may grant one extension of up to 90 days on certified divestiture conditions. Before a prohibition applies, the owner or controller must give users, on request, their account data in machine-readable format. Qualified divestitures and services needed for compliance are exempt. Civil penalties reach $5,000 per affected US user for prohibited conduct and $500 per user for data violations, sought by the Attorney General; individual users are excluded from enforcement. Judicial review lies only in the D.C. Circuit: within 165 days of enactment for challenges to the division, 90 days for challenges to later actions or determinations."
+ },
+ "relations": [
+  {
+   "relation": "cross_references",
+   "target_text": "section 4872(d)(2) of title 10, United States Code",
+   "note": "Defines 'foreign adversary country' by reference to a list in another title of the US Code; this text does not amend that section.",
+   "evidence": {
+    "provision": "Sec. 2(g)(4)",
+    "quote": "a country specified in section 4872(d)(2) of title 10, United States Code"
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "ByteDance, Ltd.",
+   "role": "listed",
+   "function": "Named in the definition of 'foreign adversary controlled application' as an entity whose applications fall within it.",
+   "evidence": {
+    "provision": "Sec. 2(g)(3)(A)(i)",
+    "quote": "ByteDance, Ltd.;"
+   }
+  },
+  {
+   "name": "TikTok",
+   "role": "listed",
+   "function": "Named in the definition of 'foreign adversary controlled application' as an entity whose applications fall within it.",
+   "evidence": {
+    "provision": "Sec. 2(g)(3)(A)(ii)",
+    "quote": "TikTok;"
+   }
+  },
+  {
+   "name": "Attorney General",
+   "role": "designated",
+   "function": "Conducts investigations into violations of subsection (a) or (b), pursues civil penalty enforcement, and may bring actions in federal district court for relief.",
+   "evidence": {
+    "provision": "Sec. 2(d)(2)(A)",
+    "quote": "shall conduct investigations related to potential violations of subsection (a) or (b)"
+   }
+  },
+  {
+   "name": "President",
+   "role": "designated",
+   "function": "Makes determinations that a covered company presents a significant threat, determines qualified divestitures, and may grant a one-time extension of the prohibition date.",
+   "evidence": {
+    "provision": "Sec. 2(a)(3)",
+    "quote": "the President may grant a 1-time extension of not more than 90 days"
+   }
+  },
+  {
+   "name": "United States Court of Appeals for the District of Columbia Circuit",
+   "role": "designated",
+   "function": "Has exclusive jurisdiction over petitions for review and challenges to this division or actions under it.",
+   "evidence": {
+    "provision": "Sec. 3(b)",
+    "quote": "The United States Court of Appeals for the District of Columbia Circuit shall have exclusive jurisdiction over any challenge to this division"
+   }
+  }
+ ],
+ "notes": "The registry metadata gives Division H of Pub. L. 118-50, but the document heading reads DIVISION D and the text names no public law or enacting bill, so that link is not verified from this text. Application and challenge deadlines run from 'the date of the enactment of this Act' (Sec. 2(a)(2), Sec. 3(c)), and the enactment date is not stated in the text. The ByteDance and TikTok entries are named in the definitions only; the text does not state their current status.",
+ "events": [
+  {
+   "event": "application",
+   "date": "2025-01-19",
+   "date_type": "relative",
+   "date_text": "beginning on the date that is 270 days after the date of the enactment of this Act",
+   "anchor": "date of the enactment of this Act",
+   "applies_to": "prohibition under Sec. 2(a)(1) for applications satisfying Sec. 2(g)(3)(A)",
+   "offset_value": 270,
+   "offset_unit": "days",
+   "anchor_event": "signed",
+   "evidence": {
+    "provision": "Sec. 2(a)(2)(A)",
+    "quote": "beginning on the date that is 270 days after the date of the enactment of this Act"
+   },
+   "date_computed_from": "signed 2024-04-24 (registry) + 270 days"
+  },
+  {
+   "event": "application",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "beginning on the date that is 270 days after the date of the relevant determination of the President under such subsection",
+   "depends_on": "relevant determination of the President under Sec. 2(g)(3)(B)",
+   "applies_to": "prohibition under Sec. 2(a)(1) for applications satisfying Sec. 2(g)(3)(B)",
+   "offset_value": 270,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Sec. 2(a)(2)(B)",
+    "quote": "beginning on the date that is 270 days after the date of the relevant determination of the President under such subsection"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "the President may grant a 1-time extension of not more than 90 days with respect to the date on which this subsection would otherwise apply",
+   "depends_on": "President certifies to Congress the matters in Sec. 2(a)(3)(A) to (C)",
+   "applies_to": "application date under Sec. 2(a)(1) for a foreign adversary controlled application",
+   "evidence": {
+    "provision": "Sec. 2(a)(3)",
+    "quote": "the President may grant a 1-time extension of not more than 90 days"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "Before the date on which a prohibition under subsection (a) applies to a foreign adversary controlled application",
+   "depends_on": "date on which a prohibition under Sec. 2(a) applies to the application",
+   "applies_to": "entity that owns or controls the application: provision of user account data in machine readable format upon request",
+   "evidence": {
+    "provision": "Sec. 2(b)",
+    "quote": "Before the date on which a prohibition under subsection (a) applies to a foreign adversary controlled application"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "submitted not less than 30 days before such determination",
+   "depends_on": "relevant determination of the President under Sec. 2(g)(3)(B)",
+   "applies_to": "public report to Congress preceding a determination that a covered company presents a significant threat to national security",
+   "offset_value": -30,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Sec. 2(g)(3)(B)(ii)(II)",
+    "quote": "submitted not less than 30 days before such determination"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2024-10-06",
+   "date_type": "relative",
+   "date_text": "not later than 165 days after the date of the enactment of this Act",
+   "anchor": "date of the enactment of this Act",
+   "applies_to": "challenges to this division",
+   "offset_value": 165,
+   "offset_unit": "days",
+   "anchor_event": "signed",
+   "evidence": {
+    "provision": "Sec. 3(c)(1)",
+    "quote": "not later than 165 days after the date of the enactment of this Act"
+   },
+   "date_computed_from": "signed 2024-04-24 (registry) + 165 days"
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "not later than 90 days after the date of such action, finding, or determination",
+   "depends_on": "date of such action, finding, or determination under this division",
+   "applies_to": "challenges to any action, finding, or determination under this division",
+   "offset_value": 90,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Sec. 3(c)(2)",
+    "quote": "not later than 90 days after the date of such action, finding, or determination"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "users_monthly_active",
+   "variable_text": "monthly active users",
+   "operator": ">",
+   "value": 1000000,
+   "value_text": "more than 1,000,000 monthly active users with respect to at least 2 of the 3 months preceding the date on which a relevant determination of the President is made pursuant to paragraph (3)(B)",
+   "unit": "users",
+   "measurement": "Monthly active users counted in at least 2 of the 3 months preceding the President's relevant determination under (g)(3)(B)",
+   "level": "service",
+   "trigger": "scope_definition",
+   "consequence": "Website, desktop, mobile or AR/VR application operated by the entity can qualify as a covered company, a precondition for the foreign adversary controlled application definition under (g)(3)(B)",
+   "conditions": "Application must also permit account creation and user-generated content sharing and viewing (clauses (i), (iii), (iv)) and must not have as its primary purpose product, business or travel reviews (B)",
+   "evidence": {
+    "provision": "Sec. 2(g)(2)(A)(ii)",
+    "quote": "has more than 1,000,000 monthly active users with respect to at least 2 of the 3 months preceding the date on which a relevant determination of the President is made pursuant to paragraph (3)(B);"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "ownership stake",
+   "operator": ">=",
+   "value": 20,
+   "value_text": "at least a 20 percent stake",
+   "unit": "percent",
+   "measurement": "Direct or indirect ownership stake held by a foreign person or combination of foreign persons described in (g)(1)(A)",
+   "level": "entity",
+   "trigger": "scope_definition",
+   "consequence": "Entity is treated as controlled by a foreign adversary, an element of the definitions of covered company and foreign adversary controlled application",
+   "conditions": "The owning foreign person must be domiciled in, headquartered in, having its principal place of business in, or organized under the laws of a foreign adversary country (g)(1)(A)",
+   "evidence": {
+    "provision": "Sec. 2(g)(1)(B)",
+    "quote": "directly or indirectly own at least a 20 percent stake"
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "controlled by a foreign adversary",
+   "defined_in": "this division",
+   "evidence": {
+    "provision": "Sec. 2(g)(1)",
+    "quote": "The term “controlled by a foreign adversary” means, with respect to a covered company or other entity, that such company or other entity is—"
+   }
+  },
+  {
+   "term": "covered company",
+   "defined_in": "this division",
+   "evidence": {
+    "provision": "Sec. 2(g)(2)(A)",
+    "quote": "The term “covered company” means an entity that operates, directly or indirectly (including through a parent company, subsidiary, or affiliate), a website, desktop application, mobile application, or augmented or immersive technology application that—"
+   }
+  },
+  {
+   "term": "foreign adversary controlled application",
+   "defined_in": "this division",
+   "evidence": {
+    "provision": "Sec. 2(g)(3)",
+    "quote": "The term “foreign adversary controlled application” means a website, desktop application, mobile application, or augmented or immersive technology application that is operated, directly or indirectly (including through a parent company, subsidiary, or affiliate), by—"
+   }
+  },
+  {
+   "term": "foreign adversary country",
+   "defined_in": "section 4872(d)(2) of title 10, United States Code",
+   "evidence": {
+    "provision": "Sec. 2(g)(4)",
+    "quote": "The term “foreign adversary country” means a country specified in section 4872(d)(2) of title 10, United States Code."
+   }
+  },
+  {
+   "term": "internet hosting service",
+   "defined_in": "this division",
+   "evidence": {
+    "provision": "Sec. 2(g)(5)",
+    "quote": "The term “internet hosting service” means a service through which storage and computing resources are provided to an individual or organization for the accommodation and maintenance of 1 or more websites or online services"
+   }
+  },
+  {
+   "term": "qualified divestiture",
+   "defined_in": "this division",
+   "evidence": {
+    "provision": "Sec. 2(g)(6)",
+    "quote": "The term “qualified divestiture” means a divestiture or similar transaction that—"
+   }
+  },
+  {
+   "term": "source code",
+   "defined_in": "this division",
+   "evidence": {
+    "provision": "Sec. 2(g)(7)",
+    "quote": "The term “source code” means the combination of text and other characters comprising the content, both viewable and nonviewable, of a software application"
+   }
+  },
+  {
+   "term": "United States",
+   "defined_in": "this division",
+   "evidence": {
+    "provision": "Sec. 2(g)(8)",
+    "quote": "The term “United States” includes the territories of the United States."
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "prohibition",
+   "addressee": "platform_operator",
+   "also_addressees": [
+    "cloud_service_provider",
+    "ai_distributor"
+   ],
+   "modality": "shall_not",
+   "summary": "Entities may not distribute, maintain or update a foreign adversary controlled application through an app marketplace or internet hosting for US users. Applies to applications under subsection (g)(3)(A) from 270 days after enactment.",
+   "applies_from": "270 days after the date of the enactment of this Act (Sec. 2(a)(2)(A), applications under (g)(3)(A))",
+   "conditional_on": "Application satisfies the definition in Sec. 2(g)(3)(A); no qualified divestiture executed before the prohibition date (Sec. 2(c)(1))",
+   "evidence": {
+    "provision": "Sec. 2(a)(1)",
+    "quote": "It shall be unlawful for an entity to distribute, maintain, or update (or enable the distribution, maintenance, or updating of) a foreign adversary controlled application"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "platform_operator",
+   "also_addressees": [
+    "cloud_service_provider",
+    "ai_distributor"
+   ],
+   "modality": "shall_not",
+   "summary": "Same prohibition on distributing, maintaining or updating a foreign adversary controlled application through a marketplace or internet hosting for US users. Applies to applications designated by presidential determination under Sec. 2(g)(3)(B).",
+   "applies_from": "270 days after the date of the relevant determination of the President under such subsection (Sec. 2(a)(2)(B), applications under (g)(3)(B))",
+   "conditional_on": "Application satisfies the definition in Sec. 2(g)(3)(B); presidential determination made",
+   "evidence": {
+    "provision": "Sec. 2(a)(2)(B)",
+    "quote": "beginning on the date that is 270 days after the date of the relevant determination of the President under such subsection"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "may",
+   "summary": "The President may grant a one-time extension of not more than 90 days for the application of the prohibition, if the President certifies to Congress the three listed conditions regarding a qualified divestiture.",
+   "applies_from": "Extension of the date in Sec. 2(a)(2), up to 90 days",
+   "conditional_on": "President certifies to Congress that a path to a qualified divestiture has been identified, significant progress has been produced, and binding agreements are in place",
+   "evidence": {
+    "provision": "Sec. 2(a)(3)",
+    "quote": "the President may grant a 1-time extension of not more than 90 days"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "The entity that owns or controls a foreign adversary controlled application must provide users within the US, on request, all available account data in a machine-readable format, including content and other account information.",
+   "applies_from": "Before the date on which a prohibition under Sec. 2(a) applies to the application",
+   "conditional_on": "Upon request by a user within the land or maritime borders of the United States",
+   "evidence": {
+    "provision": "Sec. 2(b)",
+    "quote": "the entity that owns or controls such application shall provide, upon request by a user of such application within the land or maritime borders of United States, to such user all the available data related to the account of such user"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Attorney General must conduct investigations of potential violations of Sec. 2(a) or (b) and, where a violation is determined, pursue enforcement under Sec. 2(d)(1).",
+   "conditional_on": "Potential violation of subsection (a) or (b) of Sec. 2",
+   "evidence": {
+    "provision": "Sec. 2(d)(2)(A)",
+    "quote": "shall conduct investigations related to potential violations of subsection (a) or (b)"
+   }
+  }
+ ],
+ "enforcement": [
+  {
+   "sanction_type": "civil_penalty",
+   "authority": "Attorney General (Department of Justice), through enforcement actions in federal district court",
+   "triggered_by": "Violation of subsection (a), the prohibition on distributing, maintaining or updating a foreign adversary controlled application through app marketplaces or internet hosting services",
+   "max_penalty_text": "Not to exceed the amount that results from multiplying $5,000 by the number of users within the land or maritime borders of the United States determined to have accessed, maintained, or updated a foreign adversary controlled application as a result of such violation",
+   "currency": "USD",
+   "penalty_formula": "$5,000 multiplied by the number of users within the land or maritime borders of the United States determined to have accessed, maintained, or updated the application as a result of the violation",
+   "penalty_reference": "Division D, Sec. 2(d)(1)(A)",
+   "cure_period": "None stated in this text.",
+   "evidence": {
+    "provision": "Division D, Sec. 2(d)(1)(A)",
+    "quote": "shall be subject to pay a civil penalty in an amount not to exceed the amount that results from multiplying $5,000 by the number of users"
+   }
+  },
+  {
+   "sanction_type": "civil_penalty",
+   "authority": "Attorney General (Department of Justice), through enforcement actions in federal district court",
+   "triggered_by": "Violation of subsection (b), the duty to provide data and account information to users before a prohibition applies",
+   "max_penalty_text": "Not to exceed the amount that results from multiplying $500 by the number of users within the land or maritime borders of the United States affected by such violation",
+   "currency": "USD",
+   "penalty_formula": "$500 multiplied by the number of users within the land or maritime borders of the United States affected by the violation",
+   "penalty_reference": "Division D, Sec. 2(d)(1)(B)",
+   "cure_period": "None stated in this text.",
+   "evidence": {
+    "provision": "Division D, Sec. 2(d)(1)(B)",
+    "quote": "shall be subject to pay a civil penalty in an amount not to exceed the amount that results from multiplying $500 by the number of users"
+   }
+  },
+  {
+   "sanction_type": "injunction_order",
+   "authority": "Attorney General, bringing an action in an appropriate district court of the United States",
+   "triggered_by": "Violation of subsection (a) or (b), as the basis for an action seeking appropriate relief",
+   "max_penalty_text": "No monetary maximum stated; the text provides for declaratory and injunctive relief in addition to civil penalties",
+   "penalty_reference": "Division D, Sec. 2(d)(2)(B)",
+   "cure_period": "None stated in this text.",
+   "evidence": {
+    "provision": "Division D, Sec. 2(d)(2)(B)",
+    "quote": "may bring an action in an appropriate district court of the United States for appropriate relief, including civil penalties under paragraph (1) or declaratory and injunctive relief"
+   }
+  }
+ ],
+ "section_status": {}
+}

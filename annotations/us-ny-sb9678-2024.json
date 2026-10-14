@@ -1,0 +1,138 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "us-ny-sb9678-2024",
+ "tier": "B",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "light, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-interim-20261014"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "AGORA plaintext (ETO, CC BY-NC 4.0), local cache",
+  "url": "https://www.nysenate.gov/legislation/bills/2023/S9678/amendment/B",
+  "retrieved": "2024-12-04",
+  "version": "1.33.0 (2026-09-16)",
+  "language": "en",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "elections_political_ads",
+   "synthetic_media_deepfakes"
+  ],
+  "primary_domain": "elections_political_ads",
+  "mechanisms": [
+   "mandate_obligation",
+   "disclosure_transparency",
+   "liability_rule"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "advertiser_campaign"
+  ],
+  "affected_roles": [
+   "general_public"
+  ],
+  "decision_margins": [
+   "firm:compliance_process",
+   "household:information"
+  ],
+  "territorial_scope": {
+   "types": [
+    "subnational"
+   ],
+   "description": "Amends the New York State Election Law and applies to political communications in elections under that law.",
+   "evidence": {
+    "provision": "Sec. 1, Election Law § 14-106(5)(b)(iv)",
+    "quote": "the supreme court where the materially deceptive media at issue could deceive and influence electors in an upcoming election"
+   }
+  },
+  "agora_applications": [
+   "Broadcasting and media production"
+  ],
+  "agora_harms": [
+   "Detrimental content",
+   "Violation of civil or human rights, including privacy"
+  ],
+  "agora_incentives": [
+   "Civil liability"
+  ],
+  "agora_risk_factors": [
+   "Transparency",
+   "Security: Dissemination"
+  ],
+  "agora_strategies": [
+   "Disclosure",
+   "Disclosure: In standard form"
+  ]
+ },
+ "summary": {
+  "short": "Amends New York Election Law § 14-106 so that persons who distribute political communications containing materially deceptive media, with actual knowledge of that, must disclose it using a prescribed label, subject to exemptions. Candidates depicted without consent may seek injunctive relief and costs. Takes effect immediately.",
+  "long": "Amends Election Law § 14-106 to require disclosure when a person, campaign, committee or organization distributes a political communication containing materially deceptive media that it knows to be materially deceptive. Visual media must carry the statement 'This (image, video, or audio) has been manipulated' in a font no smaller than other text; audio must state it at the start and end and, if longer than two minutes, at intervals of no more than two minutes. Exemptions cover satire or parody, news reporting that acknowledges questions about authenticity, paid broadcasts by stations with consistent disclaimer requirements, and initial dissemination by platforms of content from other providers. A candidate whose voice or likeness appears without consent may seek injunctive relief, court costs and attorneys' fees in the supreme court, with expedited proceedings. Preliminary relief is available where plaintiffs are more likely than not to succeed and a remedy is possible in the upcoming election. The plaintiff must prove use by clear and convincing evidence. Nothing requires cancelling, editing or labelling content where inconsistent with federal law. Takes effect immediately."
+ },
+ "relations": [
+  {
+   "relation": "amends",
+   "target_text": "New York Election Law § 14-106, subdivision 5, paragraph (b), and a new subdivision 7",
+   "note": "Section 1 amends paragraph (b) of subdivision 5 of section 14-106 and adds a new subdivision 7 to that section.",
+   "evidence": {
+    "provision": "Section 1",
+    "quote": "is amended and a new subdivision 7 is added"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Laws of 2024, chapter 58, Part MM, subpart B, section 1",
+   "note": "Section 1 describes the amended paragraph (b) as added by this session law provision; this act does not itself enact it.",
+   "evidence": {
+    "provision": "Section 1",
+    "quote": "as added by section 1 of subpart B of part MM of chapter 58 of the laws of 2024"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "federal law (no specific instrument named)",
+   "note": "Subdivision 7 states that it does not require labels or edits where such action is inconsistent with federal law; no specific federal instrument is identified.",
+   "evidence": {
+    "provision": "Section 1, subdivision 7",
+    "quote": "where such action is inconsistent with federal law"
+   }
+  }
+ ],
+ "notes": "Section 1 reproduces paragraph (b) in full without marking which words are new or changed, so the amended wording cannot be separated from existing text in this document. Bracketed wording in (iii)(4) is not explained in the text and may be a deletion marker. Subdivision 7 is numbered without a heading and follows paragraph (b)(vi). Section 2 states the act takes effect immediately and gives no other effective date.",
+ "events": [
+  {
+   "event": "entry_into_force",
+   "date": null,
+   "date_type": "not_stated",
+   "date_text": "This act shall take effect immediately.",
+   "applies_to": "Whole act, including the amendments to Election Law § 14-106(5)(b) and new subdivision 7",
+   "evidence": {
+    "provision": "§ 2",
+    "quote": "This act shall take effect immediately."
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "other",
+   "variable_text": "length of auditory political communication (audio duration)",
+   "operator": ">",
+   "value": 2,
+   "value_text": "if the audio is greater than two minutes in length",
+   "unit": "minutes",
+   "measurement": "audio length of the communication; the text does not say who measures it",
+   "level": "other",
+   "trigger": "obligation",
+   "consequence": "Audio longer than two minutes must carry the disclosure statement at the beginning and end and interspersed at intervals of not greater than two minutes each",
+   "conditions": "Applies to auditory communications that are produced by or include materially deceptive media, where the distributor or publisher has actual knowledge that it is materially deceptive and the exceptions in clause (iii) do not apply",
+   "evidence": {
+    "provision": "Sec. 1 (Election Law § 14-106(5)(b)(ii)(2))",
+    "quote": "if the audio is greater than two minutes in length"
+   }
+  }
+ ],
+ "section_status": {}
+}

@@ -1,0 +1,104 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "fr-ppl-1630-ia-droit-auteur-2023",
+ "tier": "B",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "light, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-interim-20261014"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (connectors/fetch_texts.py)",
+  "url": "https://www.assemblee-nationale.fr/dyn/16/textes/l16b1630_proposition-loi.pdf",
+  "retrieved": "2026-10-13",
+  "version": "as fetched",
+  "language": "fr",
+  "extent": "full",
+  "note": "PDF linked from https://www.assemblee-nationale.fr/dyn/16/textes/l16b1630_proposition-loi"
+ },
+ "classification": {
+  "domains": [
+   "ip_training_data",
+   "generative_ai",
+   "synthetic_media_deepfakes"
+  ],
+  "primary_domain": "ip_training_data",
+  "mechanisms": [
+   "mandate_obligation",
+   "disclosure_transparency",
+   "licensing_permit_certification"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "ai_deployer",
+   "government_agency"
+  ],
+  "decision_margins": [
+   "firm:input_use",
+   "firm:compliance_process",
+   "household:information"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national"
+   ],
+   "description": "Applies within France by amending the French Code de la propriété intellectuelle.",
+   "evidence": {
+    "provision": "Article 1er",
+    "quote": "L’intégration par un logiciel d’intelligence artificielle d’œuvres de l’esprit protégées par le droit d’auteur dans son système"
+   }
+  },
+  "agora_applications": [
+   "Arts, sports, leisure, travel, and lifestyle"
+  ],
+  "agora_harms": [
+   "Financial loss"
+  ],
+  "agora_risk_factors": [
+   "Transparency"
+  ],
+  "agora_strategies": [
+   "Disclosure",
+   "Input controls: Data use",
+   "Licensing, registration, and certification"
+  ]
+ },
+ "summary": {
+  "short": "Proposed French bill (2023) amending the intellectual property code so that AI systems' integration and exploitation of protected works requires rights-holder authorisation, AI-generated works must be labelled and list author names, works of undetermined origin face a levy, and collective management bodies require ministerial approval.",
+  "long": "Private member's bill registered in the French National Assembly on 12 September 2023 and referred to the Culture and Education committee; the text is the bill as registered. Article 1 amends Article L. 131-3 of the Code de la propriété intellectuelle so that integration by AI software of protected works into its system, and their exploitation, is subject to the code's general rules and therefore to authorisation by authors or rights holders. Article 2 adds to Article L. 321-2: where a work is created by AI without direct human intervention, the rights holders are the authors or rights holders of the works used to design it; collective management of rights in AI-generated works may be carried out by collective management bodies; remuneration under Article L. 133-1 is collected by bodies approved by the minister in charge of culture, with approval weighed on membership diversity, managers' qualifications, collection means and fair representation; a Conseil d'État decree sets the conditions of grant and withdrawal. Article 3 requires the mention 'œuvre générée par IA' and the names of the authors of the works used on AI-generated works. Article 4 creates a levy on works produced by AI from works of undetermined origin, payable to the designated collective management body and imposed on the company operating the AI system; a Conseil d'État decree sets its rate and base. The text contains no penalty provisions and no entry-into-force date."
+ },
+ "relations": [
+  {
+   "relation": "amends",
+   "target_text": "Code de la propriété intellectuelle (CPI)",
+   "note": "Four articles amend the CPI: Art. 1 adds a paragraph to L. 131-3; Art. 2 adds nine paragraphs to L. 321-2; Art. 3 adds a paragraph to L. 121-2; Art. 4 adds three paragraphs to L. 121-2 as modified by Art. 3. Target not in registry, so no instrument ID.",
+   "evidence": {
+    "provision": "Article 1er",
+    "quote": "L’article L. 131-3 du code de la propriété intellectuelle est complété par"
+   }
+  }
+ ],
+ "notes": "Status 'lapsed' is from registry metadata; the document itself shows only registration on 12 September 2023 and referral to the Commission des affaires culturelles. Art. 4 refers to 'l'article L. 131-3 modifié' as designating the collective management body, but the paragraph Art. 1 adds to L. 131-3 concerns AI integration of works and designates no body; the body is accredited under L. 321-2 (Art. 2). Art. 2 cross-refers to L. 133-1 (remuneration), which the bill does not amend. Art. 4 leaves the rate and base of the taxation to a décret en Conseil d'État, and Art. 2 leaves accreditation conditions to one. The exposé des motifs says origin 'demeure incertaine', while Art. 4 says 'ne peut être déterminée'.",
+ "events": [
+  {
+   "event": "introduced",
+   "date": "2023-09-12",
+   "date_type": "absolute",
+   "date_text": "Enregistré à la Présidence de l’Assemblée nationale le 12 septembre 2023.",
+   "applies_to": "Assemblée nationale (registration of the bill)",
+   "evidence": {
+    "provision": "Cover page (header)",
+    "quote": "Enregistré à la Présidence de l’Assemblée nationale le 12 septembre 2023."
+   }
+  }
+ ],
+ "section_status": {
+  "thresholds": {
+   "status": "not_found",
+   "note": "The bill contains no numeric cutoff that changes legal treatment. The only numbers are article and alinéa numbering and an anecdotal figure (351 years) in the explanatory memorandum. Art. 4 delegates the rate and base of the proposed taxation to a Conseil d'État decree ('fixe le taux et l'assiette de cette taxation'), but that is an amount, not a cutoff, so no row is coded. Art. 2 sets agrément criteria (diversity, qualification, means, representation) without numeric values."
+  }
+ },
+ "thresholds": []
+}

@@ -1,0 +1,855 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "us-va-hb30-2026-dc-electricity-tax",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (connectors/fetch_texts.py)",
+  "url": "https://budget.lis.virginia.gov/get/budget/5268/HB30/",
+  "retrieved": "2026-10-13",
+  "version": "as fetched",
+  "language": "en",
+  "extent": "partial",
+  "note": "PDF linked from https://budget.lis.virginia.gov/bill/2026/2/. Trimmed to the data-center provisions of the 2026 Appropriation Act: Item 1 N.1 and N.5 (Joint Subcommittee on Tax Policy data center study), Item 366 M (cooling water), Item 367 E (data center noise), Item 475 Regulation of Public Utilities (large load interconnection), Item 477 D (SCC data center reporting), Part 3 § 3-5.18 (data center fixtures valuation) and § 3-5.24 (data center electricity consumption tax), § 4-14.00 (effective date), and enactments 4, 35 and 36 (large-load rate election; expiry clauses), with the act's title and enacting clause; bracketed markers label each excerpt; rest of the act omitted. Untrimmed copy: <id>.untrimmed.txt.bak."
+ },
+ "classification": {
+  "domains": [
+   "compute_data_centers",
+   "energy_grid_water"
+  ],
+  "primary_domain": "compute_data_centers",
+  "mechanisms": [
+   "mandate_obligation",
+   "tariff_price_regulation",
+   "standard_setting"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "data_center_operator",
+   "utility_grid_operator",
+   "regulator",
+   "government_agency"
+  ],
+  "affected_roles": [
+   "consumers_users",
+   "general_public"
+  ],
+  "decision_margins": [
+   "firm:input_use",
+   "firm:investment_location",
+   "firm:compliance_process",
+   "household:prices"
+  ],
+  "territorial_scope": {
+   "types": [
+    "subnational"
+   ],
+   "description": "Applies to data center operators and data centers in the Commonwealth of Virginia.",
+   "evidence": {
+    "provision": "Part 3, § 3-5.24, A.2 (definition of data center operator)",
+    "quote": "any person who (i) owns, operates, or occupies a data center in the Commonwealth"
+   }
+  },
+  "agora_harms": [
+   "Ecological harm"
+  ],
+  "agora_incentives": [
+   "Fines"
+  ],
+  "agora_strategies": [
+   "Government study or report",
+   "Performance requirements"
+  ]
+ },
+ "summary": {
+  "short": "Virginia's 2026 Special Session I appropriation act (HB 30) levies, from July 1, 2026 to July 1, 2028, an electricity consumption tax on data center operators, with refunds of excess revenue, and adds data center cooling-water, noise, grid and reporting provisions.",
+  "long": "Virginia's 2026 Special Session I appropriation act (HB 30), covering fiscal years 2027 and 2028, amends the Code and adds data center provisions. From July 1, 2026 to July 1, 2028 it levies an electricity consumption tax of $0.011/kWh per month on each data center operator; revenue above $600,000,000 per fiscal year goes to a non-reverting fund used for refunds from fiscal 2027, administered by the State Corporation Commission. The Department of Environmental Quality must set cooling-water scarcity criteria by July 1, 2027; in designated areas data centers must certify water-saving cooling before July 1, 2032, and new air-permit applicants in the Eastern Virginia Groundwater Management Area after January 1, 2027 must use air, recycled-water, stormwater or closed-loop cooling. DEQ noise regulations apply from December 31, 2029, with civil penalties of up to $32,500 per day from January 1, 2030. The Corporation Commission may weigh economic benefits to disadvantaged communities in large-load interconnection requests, and Phase II utilities' annual incremental strategic undergrounding investment increases are limited to three percent of distribution rate base. Utilities, water providers and agencies report data center contracts, water use and generators by October 1, 2026, and a Joint Subcommittee on Tax Policy studies data center incentives, reporting by December 15, 2026. The act takes effect July 1, 2026; the first enactment expires June 30, 2028."
+ },
+ "relations": [
+  {
+   "relation": "legal_basis",
+   "target_text": "Code of Virginia § 2.2-1509 (Governor's budget submission)",
+   "note": "The long title cites § 2.2-1509 for the Governor's budget submission under which the appropriations are made. The text does not describe it as a power-conferring basis for the tax.",
+   "evidence": {
+    "provision": "Long title (Act caption)",
+    "quote": "Budget submitted by the Governor of Virginia in accordance with the provisions of § 2.2-1509,"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Code of Virginia (sections listed in the enacting clause)",
+   "note": "The enacting clause amends and reenacts listed sections, adds listed sections in Titles 4.1, 6.2 and 54.1, and amends some sections 'as it is currently effective and as it shall become effective'. The full list is not repeated here. Only the excerpted operative provisions are coded.",
+   "evidence": {
+    "provision": "Long title (Act caption)",
+    "quote": "to amend and reenact §§ 33.2-3404, 33.2-1526.1, 58.1-322.03, 58.1-339.8, 58.1-602, 58.1-605,"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Code of Virginia §§ 58.1-3506, 58.1-2900 et seq., 2.2-4000 et seq., 56-585.1, 56-576, 58.1-647",
+   "note": "The data center definition used in Items 366 and 367 is taken from subdivision A 43 of § 58.1-3506, whose text is not in this excerpt. Item 370 A.1 applies Chapter 29 of Title 58.1 mutatis mutandis. The noise and cooling provisions are exempted from the Administrative Process Act (§ 2.2-4000 et seq.). Phase II Utility and historically disadvantaged community terms refer to §§ 56-585.1 and 56-576.",
+   "evidence": {
+    "provision": "Part 1, § 1-108 Department of Environmental Quality (440), Item 366, para. M.2",
+    "quote": "defined in subdivision A 43 of § 58.1-3506, Code of Virginia, must certify"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Acts of Assembly 2023, Chapter 757 and Chapter 775 (fourth enactment of each)",
+   "note": "Additional enactment 4 makes the fourth enactment of Chapter 757 or of Chapter 775 (2023 Acts) apply to certain retail customers of a Phase II Utility for a deferred fuel cost financing petition filed between May 1 and July 15, 2026.",
+   "evidence": {
+    "provision": "Additional enactments, enactment 4",
+    "quote": "the fourth enactment of Chapter 757 or the fourth enactment of Chapter 775"
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "State Corporation Commission",
+   "role": "designated",
+   "function": "Collects the data center electricity consumption tax monthly; issues guidelines to effectuate the tax; administers the non-reverting excess-revenue fund; allocates refunds; receives data center electric service agreement, water usage and generator reports (Item 477 D).",
+   "evidence": {
+    "provision": "Part 3, § 3-5.24, para. B",
+    "quote": "The tax imposed by this Item shall be collected monthly by the State Corporation Commission."
+   }
+  },
+  {
+   "name": "Department of Environmental Quality",
+   "role": "designated",
+   "function": "Adopts cooling water scarcity area criteria and data center noise regulations; receives quarterly self-supplied electricity usage reports; conducts a retrofit study and plan for the Eastern Virginia Groundwater Management Area.",
+   "evidence": {
+    "provision": "Part 1, § 1-108 Department of Environmental Quality (440), Item 366, para. M.1",
+    "quote": "The Department of Environmental Quality (Department) shall amend 9VAC25-780,"
+   }
+  },
+  {
+   "name": "Joint Subcommittee on Tax Policy",
+   "role": "designated",
+   "function": "Legislative subcommittee whose members are appointed under para. N.1; studies the data center sales and use tax exemption and other data center impacts; reports recommendations to the General Assembly by December 15, 2026.",
+   "evidence": {
+    "provision": "Part 1, § 1-1 General Assembly of Virginia (101), Item 1, para. N.1",
+    "quote": "to a Joint Subcommittee on Tax Policy"
+   }
+  },
+  {
+   "name": "Weldon Cooper Center for Public Service",
+   "role": "addressee",
+   "function": "Shall provide technical assistance to the Joint Subcommittee on Tax Policy.",
+   "evidence": {
+    "provision": "Part 1, § 1-1 General Assembly of Virginia (101), Item 1, para. N.5",
+    "quote": "shall provide technical assistance to the Joint Subcommittee on Tax Policy."
+   }
+  }
+ ],
+ "notes": "Excerpt-based annotation: the document omits much of the first enactment and many sections, so relations and entities cover only the excerpted provisions. Possible inconsistency: Part 3 § 3-5.24 para. 2 defines 'data center' on its own terms (facility with at least one megawatt of capacity), while Items 366 and 367 refer to the definition in subdivision A 43 of § 58.1-3506, which is not in this excerpt and is not among the sections listed as amended. Some amended Code sections are listed as both currently effective and as they shall become effective; both are listed but not separately coded. Phase II Utility (a defined class) is not coded as an entity.",
+ "events": [
+  {
+   "event": "entry_into_force",
+   "date": "2026-07-01",
+   "date_type": "absolute",
+   "date_text": "This act is effective on July 1, 2026.",
+   "applies_to": "the act as a whole",
+   "evidence": {
+    "provision": "§ 4-14.00 EFFECTIVE DATE",
+    "quote": "This act is effective on July 1, 2026."
+   }
+  },
+  {
+   "event": "application",
+   "date": "2026-07-01",
+   "date_type": "absolute",
+   "date_text": "Beginning on and after July 1, 2026, but before July 1, 2028, there is hereby levied and imposed upon every data center",
+   "applies_to": "data center electricity consumption tax (§ 3-5.24 A.1), imposed on data center operators",
+   "evidence": {
+    "provision": "§ 3-5.24 A.1",
+    "quote": "Beginning on and after July 1, 2026, but before July 1, 2028, there is hereby levied and imposed upon every data center"
+   }
+  },
+  {
+   "event": "application",
+   "date": "2026-09",
+   "date_type": "absolute",
+   "date_text": "the first collection of the tax imposed under this Item shall occur in September of 2026",
+   "applies_to": "first collection of the data center electricity consumption tax (payment covers taxes owed from July 1, 2026 through September 1, 2026)",
+   "evidence": {
+    "provision": "§ 3-5.24 E",
+    "quote": "the first collection of the tax imposed under this Item shall occur in September of 2026"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "due on or before the last day of the month following the month in which the electricity was consumed.",
+   "applies_to": "monthly return of the data center electricity consumption tax remitted by a data center operator for self-supplied electricity to the State Corporation Commission",
+   "evidence": {
+    "provision": "§ 3-5.24 B",
+    "quote": "due on or before the last day of the month following the month in which the electricity was consumed."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "The State Corporation Commission shall issue guidelines to effectuate the provisions of this Item 60 days after the passage of this act.",
+   "anchor": "passage of this act",
+   "applies_to": "State Corporation Commission guidelines to effectuate the data center electricity consumption tax",
+   "offset_value": 60,
+   "offset_unit": "days",
+   "anchor_event": "legislative_approval",
+   "evidence": {
+    "provision": "§ 3-5.24 E",
+    "quote": "shall issue guidelines to effectuate the provisions of this Item 60 days after the passage of this act."
+   }
+  },
+  {
+   "event": "application",
+   "date": "2026-05-01",
+   "date_type": "absolute",
+   "date_text": "between May 1, 2026, and July 15, 2026",
+   "applies_to": "petitions by a Phase II Utility for a financing order regarding deferred fuel costs under § 56-249.6:2, filed in this window (retail customers above 5 megawatts in calendar year 2025 under Chapter 757 or 775 fourth enactment)",
+   "evidence": {
+    "provision": "Enactment 4",
+    "quote": "and July 15, 2026, for a financing order regarding deferred fuel costs"
+   }
+  },
+  {
+   "event": "application",
+   "date": "2026-07-01",
+   "date_type": "absolute",
+   "date_text": "on or after July 1, 2026, pursuant to clause (iv) of",
+   "applies_to": "petitions by a Phase II Utility for cost recovery of strategic undergrounding (overhead-to-underground conversion) under § 56-585.1 A 6 (iv)",
+   "evidence": {
+    "provision": "Enactment 4",
+    "quote": "on or after July 1, 2026, pursuant to clause (iv) of"
+   }
+  },
+  {
+   "event": "application",
+   "date": "2026-07-01",
+   "date_type": "absolute",
+   "date_text": "a customer executing a new electric service agreement on or after July 1, 2026",
+   "applies_to": "large load customers of a Phase II Utility executing a new electric service agreement on or after this date, electing to take service on any rate schedule for which they qualify",
+   "evidence": {
+    "provision": "Enactment 4",
+    "quote": "a customer executing a new electric service agreement on or after July 1, 2026"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2026-10-01",
+   "date_type": "recurring",
+   "date_text": "by October 1, 2026, and each year thereafter",
+   "applies_to": "State Corporation Commission aggregated report to the Chairs of the Senate Finance and Appropriations and House Appropriations Committees on data center electric service agreements, water usage and generator permits",
+   "evidence": {
+    "provision": "Item 477 D",
+    "quote": "House Appropriations Committees by October 1, 2026,"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2026-10-15",
+   "date_type": "absolute",
+   "date_text": "The Department, by October 15, 2026, shall conduct a study and provide a plan on the retrofitting of existing",
+   "applies_to": "Department of Environmental Quality study and plan on retrofitting existing data centers in the Eastern Virginia Groundwater Management Area",
+   "evidence": {
+    "provision": "Item 366 para. M.2",
+    "quote": "The Department, by October 15, 2026, shall conduct a study and provide a plan on the retrofitting of existing"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2026-12-15",
+   "date_type": "absolute",
+   "date_text": "shall report recommendations to the General Assembly by December 15, 2026.",
+   "applies_to": "Joint Subcommittee on Tax Policy report of recommendations to the General Assembly",
+   "evidence": {
+    "provision": "Part 1, § 1-1 Item 1, para. N.5",
+    "quote": "recommendations to the General Assembly by December 15, 2026."
+   }
+  },
+  {
+   "event": "application",
+   "date": "2027-01-01",
+   "date_type": "absolute",
+   "date_text": "all new data centers who submit a complete application for a Department of Environmental Quality air permit after January 1, 2027",
+   "applies_to": "new data centers in the Eastern Virginia Groundwater Management Area submitting a complete DEQ air permit application after this date (cooling systems: air cooling, 100 percent recycled water and/or stormwater, or closed loop)",
+   "evidence": {
+    "provision": "Item 366 para. M.2",
+    "quote": "all new data centers who submit a complete application for a Department of Environmental Quality air permit after January 1, 2027"
+   }
+  },
+  {
+   "event": "application",
+   "date": "2027-01-01",
+   "date_type": "absolute",
+   "date_text": "the default rate schedule applicable to such customers on and after January 1, 2027.",
+   "applies_to": "default rate schedule used to determine average annual electric load factor for large load customers under the Phase II Utility election provision",
+   "evidence": {
+    "provision": "Enactment 4",
+    "quote": "customers on and after January 1, 2027."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2027-07-01",
+   "date_type": "absolute",
+   "date_text": "no later than July 1, 2027, to establish criteria for the Department",
+   "applies_to": "Department of Environmental Quality amendment of 9VAC25-780 to establish Cooling Water Scarcity Area criteria",
+   "evidence": {
+    "provision": "Item 366 para. M.1",
+    "quote": "no later than July 1, 2027, to establish criteria for the Department"
+   }
+  },
+  {
+   "event": "application",
+   "date": "2027-07-01",
+   "date_type": "absolute",
+   "date_text": "In every fiscal year beginning on and after July 1, 2027, the State Corporation Commission shall allocate and distribute refunds",
+   "applies_to": "State Corporation Commission allocation and distribution of refunds from excess data center electricity tax revenue",
+   "evidence": {
+    "provision": "§ 3-5.24 D",
+    "quote": "In every fiscal year beginning on and after July 1, 2027, the State Corporation Commission shall allocate and distribute refunds"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2029-12-31",
+   "date_type": "absolute",
+   "date_text": "to be effective no later than December 31, 2029",
+   "applies_to": "Department of Environmental Quality noise regulations for data centers",
+   "evidence": {
+    "provision": "Item 367 para. E",
+    "quote": "to be effective no later than December 31, 2029"
+   }
+  },
+  {
+   "event": "application",
+   "date": "2030-01-01",
+   "date_type": "absolute",
+   "date_text": "on or after January 1, 2030, any data center that violates such regulations",
+   "applies_to": "data centers violating the Department of Environmental Quality noise regulations (civil penalty applicable)",
+   "evidence": {
+    "provision": "Item 367 para. E",
+    "quote": "on or after January 1, 2030, any data center that violates such regulations"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2032-07-01",
+   "date_type": "absolute",
+   "date_text": "In a Cooling Water Scarcity Area, prior to July 1, 2032, a data center",
+   "applies_to": "data centers in a Cooling Water Scarcity Area certifying to DEQ their cooling method (air cooling, closed loop or more efficient systems to the maximum extent practicable)",
+   "evidence": {
+    "provision": "Item 366 para. M.2",
+    "quote": "In a Cooling Water Scarcity Area, prior to July 1, 2032, a data center"
+   }
+  },
+  {
+   "event": "expiry",
+   "date": "2028-06-30",
+   "date_type": "absolute",
+   "date_text": "That the provisions of the first enactment of this act shall expire at midnight on June 30, 2028.",
+   "applies_to": "provisions of the first enactment of this act, including Part 3 § 3-5.24 (data center electricity consumption tax)",
+   "evidence": {
+    "provision": "Enactment 35",
+    "quote": "shall expire at midnight on June 30, 2028."
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "power_capacity",
+   "variable_text": "equipment used for the transformation, transmission, distribution, or management of at least one megawatt of capacity of electrical power and cooling",
+   "operator": ">=",
+   "value": 1,
+   "value_text": "at least one megawatt of capacity of electrical power and cooling",
+   "unit": "megawatt",
+   "level": "facility",
+   "trigger": "scope_definition",
+   "consequence": "Equipment used to manage at least one megawatt of electrical power and cooling is one of the listed components that bring a facility within the data center definition for this Item",
+   "conditions": "Facility's primary services are to centralize storage, management and processing of digital data; facilities whose primary function is internet access or a communication service are excluded",
+   "evidence": {
+    "provision": "Part 3, § 3-5.24 para. 2",
+    "quote": "equipment used for the transformation, transmission, distribution, or management of at least one megawatt of capacity of electrical power and cooling"
+   }
+  },
+  {
+   "variable": "power_capacity",
+   "variable_text": "contracted or measured electric demand of the customer",
+   "operator": ">=",
+   "value": 25,
+   "value_text": "contracted or measured electric demand of 25 megawatts or greater",
+   "unit": "megawatt",
+   "measurement": "contracted or measured electric demand of the customer",
+   "level": "entity",
+   "trigger": "eligibility",
+   "consequence": "Customer may elect to take service on any rate schedule for which it qualifies based on its demand, regardless of load factor",
+   "conditions": "Joint with the 75 percent load factor and 200 full-time equivalent employment conditions; customer executes a new electric service agreement on or after July 1, 2026, or executed one between July 1, 2024 and July 1, 2026, to serve facilities under construction as of July 1, 2026; elections subject to the 150 MW aggregate and 50 MW individual caps",
+   "evidence": {
+    "provision": "Enactment 4",
+    "quote": "contracted or measured electric demand of 25 megawatts or greater"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "average annual electric load factor of the customer",
+   "operator": ">=",
+   "value": 75,
+   "value_text": "anticipated or measured average annual electric load factor of 75 percent or greater",
+   "unit": "percent",
+   "measurement": "Determined in accordance with the Commission-approved terms of the default rate schedule applicable to such customers on and after January 1, 2027",
+   "level": "entity",
+   "trigger": "eligibility",
+   "consequence": "Together with the demand and employment conditions, makes the customer eligible to elect service under any rate schedule it qualifies for",
+   "conditions": "Joint with the 25 MW demand and 200 full-time equivalent employment conditions",
+   "evidence": {
+    "provision": "Enactment 4",
+    "quote": "annual electric load factor of 75 percent or greater"
+   }
+  },
+  {
+   "variable": "employees",
+   "variable_text": "full-time equivalent employment workforce engaged in manufacturing, industrial, or consumer goods warehousing and distribution activities other than data storage",
+   "operator": ">=",
+   "value": 200,
+   "value_text": "of at least 200 individuals",
+   "unit": "individuals",
+   "measurement": "At a single or contiguous customer account location within the Phase II Utility's service territory",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Required workforce size for the customer to be eligible to elect service under any rate schedule it qualifies for",
+   "conditions": "Joint with the 25 MW demand and 75 percent load factor conditions",
+   "evidence": {
+    "provision": "Enactment 4",
+    "quote": "of at least 200"
+   }
+  },
+  {
+   "variable": "power_capacity",
+   "variable_text": "electric demand of a retail customer during calendar year 2025",
+   "operator": ">",
+   "value": 5,
+   "value_text": "whose demand exceeded five megawatts during calendar year 2025",
+   "unit": "megawatt",
+   "measurement": "Demand in calendar year 2025",
+   "level": "entity",
+   "trigger": "eligibility",
+   "consequence": "The fourth enactment of Chapter 757 or the fourth enactment of Chapter 775 of the Acts of Assembly of 2023 applies to the retail customer for deferred fuel financing petitions",
+   "conditions": "Customer receives electric service from a Phase II Utility; petition filed between May 1, 2026 and July 15, 2026 for a financing order regarding deferred fuel costs under § 56-249.6:2",
+   "evidence": {
+    "provision": "Enactment 4",
+    "quote": "whose demand exceeded five"
+   }
+  },
+  {
+   "variable": "power_capacity",
+   "variable_text": "aggregate electric demand of electing customers",
+   "operator": "<=",
+   "value": 150,
+   "value_text": "the electric demand, in the aggregate, of such electing customers shall not exceed 150 megawatts",
+   "unit": "megawatt",
+   "measurement": "Aggregate demand of all customers electing service under this provision",
+   "level": "other",
+   "trigger": "cap",
+   "consequence": "Aggregate demand of electing customers may exceed this cap only if the Commission determines in its discretion that exceeding it is in the public interest",
+   "conditions": "Applies to customers electing rate-schedule service under the large-load provision",
+   "evidence": {
+    "provision": "Enactment 4",
+    "quote": "the electric demand, in the aggregate, of such electing customers shall not exceed 150 megawatts"
+   }
+  },
+  {
+   "variable": "power_capacity",
+   "variable_text": "electric demand of any individual electing customer",
+   "operator": "<=",
+   "value": 50,
+   "value_text": "the electric demand of any individual customer shall not exceed 50 megawatts",
+   "unit": "megawatt",
+   "measurement": "Demand of an individual customer electing service under this provision",
+   "level": "entity",
+   "trigger": "cap",
+   "consequence": "Electric demand of an individual electing customer may not exceed this cap",
+   "conditions": "The Commission discretion clause in the same sentence is worded for the aggregate cap only; applies to customers electing under the large-load provision",
+   "evidence": {
+    "provision": "Enactment 4",
+    "quote": "the electric demand of any individual customer shall not exceed 50 megawatts"
+   }
+  },
+  {
+   "variable": "share_of_financials",
+   "variable_text": "annual incremental increase in the level of investments in a strategic undergrounding petition, as a share of distribution rate base",
+   "operator": "<=",
+   "value": 3,
+   "value_text": "shall not seek any annual incremental increase in the level of investments associated with such a petition that exceeds three percent of such utility's distribution rate base",
+   "unit": "percent",
+   "measurement": "Measured against the distribution rate base for the most recently ended 12-month test period in the Phase II Utility's most recent biennial review",
+   "level": "entity",
+   "trigger": "cap",
+   "consequence": "Phase II Utility may not seek an annual incremental increase above this percentage of distribution rate base in a strategic undergrounding cost recovery petition",
+   "conditions": "Petition filed by a Phase II Utility on or after July 1, 2026 under § 56-585.1 A 6 (iv) for replacement of overhead distribution facilities with underground facilities",
+   "evidence": {
+    "provision": "Enactment 4",
+    "quote": "shall not seek any annual incremental increase in the level of investments associated with such a petition that exceeds three percent"
+   }
+  },
+  {
+   "variable": "volume",
+   "variable_text": "overhead distribution facilities converted to underground service under a strategic undergrounding program",
+   "operator": "<=",
+   "value": 4000,
+   "value_text": "an overall cap of 4000 miles of overhead distribution facilities converted to underground service",
+   "unit": "miles",
+   "measurement": "Overall cumulative miles converted under the strategic undergrounding program",
+   "level": "entity",
+   "trigger": "cap",
+   "consequence": "Cost recovery for the strategic undergrounding program is limited to this overall total of miles converted",
+   "conditions": "Applies to any strategic undergrounding program of a Phase II Utility for which cost recovery is sought under § 56-585.1 A 6 (iv)",
+   "evidence": {
+    "provision": "Enactment 4",
+    "quote": "overall cap of 4000 miles of overhead distribution facilities converted to underground service"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "revenues from the tax imposed under this Item deposited to the general fund in a fiscal year",
+   "operator": "<=",
+   "value": 600000000,
+   "value_text": "no more than $600,000,000 of the revenues from the tax imposed under this Item shall be deposited to the general fund",
+   "unit": "USD per fiscal year",
+   "currency": "USD",
+   "measurement": "Per fiscal year",
+   "level": "jurisdiction",
+   "trigger": "cap",
+   "consequence": "Revenues above this amount, less SCC administration costs, are deposited to a special nonreverting fund used for refunds",
+   "conditions": "Applies to the data center electricity consumption tax under § 3-5.24",
+   "evidence": {
+    "provision": "Part 3, § 3-5.24 para. C",
+    "quote": "no more than $600,000,000 of the revenues from the tax imposed under this Item shall be deposited to the general fund"
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "data center",
+   "defined_in": "Part 3, § 3-5.24 para. 2",
+   "evidence": {
+    "provision": "Part 3, § 3-5.24 para. 2",
+    "quote": "means a facility whose primary services are to centralize the storage, management, and processing of digital data"
+   }
+  },
+  {
+   "term": "data center",
+   "defined_in": "Code of Virginia § 58.1-3506, subdivision A 43 (by reference)",
+   "evidence": {
+    "provision": "Part 1, § 1-108 Item 366 para. M.2",
+    "quote": "defined in subdivision A 43 of § 58.1-3506, Code of Virginia"
+   }
+  },
+  {
+   "term": "data center operator",
+   "defined_in": "Part 3, § 3-5.24 para. 2",
+   "evidence": {
+    "provision": "Part 3, § 3-5.24 para. 2",
+    "quote": "means any person who (i) owns, operates, or occupies a data center in the Commonwealth"
+   }
+  },
+  {
+   "term": "electricity consumption tax",
+   "defined_in": "Part 3, § 3-5.24 para. 2",
+   "evidence": {
+    "provision": "Part 3, § 3-5.24 para. 2",
+    "quote": "regardless of whether the electricity is provided through an incumbent electric utility, an incumbent electric cooperative"
+   }
+  },
+  {
+   "term": "self-supplied",
+   "defined_in": "Part 3, § 3-5.24 para. 2",
+   "evidence": {
+    "provision": "Part 3, § 3-5.24 para. 2",
+    "quote": "means electricity that is (i)(a) generated at a data center, (b) for use at such data center, and (c) not provided through"
+   }
+  },
+  {
+   "term": "Phase II Utility",
+   "defined_in": "Code of Virginia § 56-585.1, subdivision A 1 (by reference)",
+   "evidence": {
+    "provision": "Part 1, § 1-136 Item 475",
+    "quote": "a Phase II Utility, as defined in subdivision A 1 of § 56-585.1 of the Code of Virginia"
+   }
+  },
+  {
+   "term": "historically economically disadvantaged communities",
+   "defined_in": "Code of Virginia § 56-576 (by reference)",
+   "evidence": {
+    "provision": "Part 1, § 1-136 Item 475",
+    "quote": "as defined in § 56-576 of the Code of Virginia, in which the local governing body"
+   }
+  },
+  {
+   "term": "Eastern Virginia Groundwater Management Area",
+   "defined_in": "9VAC25-600-20(A) (by reference)",
+   "evidence": {
+    "provision": "Part 1, § 1-108 Item 366 para. M.1",
+    "quote": "Groundwater Management Area, as that term is defined in 9VAC25-600-20(A)"
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Chair of the Senate Finance and Appropriations Committee and the Chair of the House Appropriations Committee appoint members to a Joint Subcommittee on Tax Policy; the Joint Subcommittee elects its chair and vice-chair.",
+   "evidence": {
+    "provision": "Part 1, § 1-1 General Assembly (101), Item 1, para. N.1",
+    "quote": "The Chair of the Senate Finance and Appropriations Committee shall appoint six"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "also_addressees": [
+    "utility_grid_operator"
+   ],
+   "modality": "shall",
+   "summary": "The Joint Subcommittee on Tax Policy shall study the data center sales and use tax exemption and related impacts during the 2026 interim, meet at least twice, and report recommendations to the General Assembly by December 15, 2026. All agencies, applicable utilities and the Weldon Cooper Center shall provide technical assistance to it.",
+   "applies_from": "2026 interim",
+   "evidence": {
+    "provision": "Part 1, § 1-1 General Assembly (101), Item 1, para. N.5",
+    "quote": "shall study the data center sales and use tax"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Department of Environmental Quality shall amend regulation 9VAC25-780 to establish criteria for 'Cooling Water Scarcity Areas', with a focus on the Eastern Virginia Groundwater Management Area; the initial promulgation is exempt from the Administrative Process Act.",
+   "applies_from": "no later than July 1, 2027",
+   "evidence": {
+    "provision": "Part 1, § 1-108 Department of Environmental Quality (440), Item 366 (Water Protection), para. M.1",
+    "quote": "shall amend 9VAC25-780,"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_center_operator",
+   "modality": "shall",
+   "summary": "In a Cooling Water Scarcity Area, a data center must certify to the Department that it will use air cooling, closed loop cooling or more efficient cooling systems, to the maximum extent practicable as determined by the Department, to minimize water use for cooling.",
+   "applies_from": "prior to July 1, 2032",
+   "conditional_on": "data center located in a Cooling Water Scarcity Area",
+   "evidence": {
+    "provision": "Part 1, § 1-108 Department of Environmental Quality (440), Item 366, para. M.2",
+    "quote": "Department that for cooling purposes it will use air cooling, closed loop cooling systems,"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_center_operator",
+   "modality": "shall",
+   "summary": "New data centers in the Eastern Virginia Groundwater Management Area that submit a complete DEQ air permit application must use air cooling systems, 100 percent recycled water and/or stormwater for cooling, or a closed loop system.",
+   "applies_from": "applications submitted after January 1, 2027",
+   "conditional_on": "data center located in the Eastern Virginia Groundwater Management Area and submitting a complete DEQ air permit application",
+   "evidence": {
+    "provision": "Part 1, § 1-108 Department of Environmental Quality (440), Item 366, para. M.2",
+    "quote": "all new data centers who submit a complete application for a Department of Environmental Quality air permit after January 1, 2027, shall either use air cooling systems"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Department shall conduct a study and provide a plan on retrofitting existing data centers in the Eastern Virginia Groundwater Management Area to use air cooling, recycled water/stormwater or closed loop cooling.",
+   "applies_from": "by October 15, 2026",
+   "evidence": {
+    "provision": "Part 1, § 1-108 Department of Environmental Quality (440), Item 366, para. M.2",
+    "quote": "The Department, by October 15, 2026, shall conduct a study and provide a plan"
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Department shall adopt and is authorized to enforce noise regulations for data centers, effective no later than December 31, 2029, based on the lowest achievable noise; the initial promulgation is exempt from the Administrative Process Act. Local authority to adopt more restrictive ordinances is preserved.",
+   "applies_from": "effective no later than December 31, 2029",
+   "evidence": {
+    "provision": "Part 1, § 1-108 Department of Environmental Quality (440), Item 367, para. E",
+    "quote": "the Department shall adopt and is"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "utility_grid_operator",
+   "modality": "may",
+   "summary": "In evaluating requests to interconnect large load customers, a Phase II Utility may consider potential economic benefits to historically economically disadvantaged communities where the local governing body has resolved that the development is in the public interest.",
+   "conditional_on": "evaluation of large load interconnection requests",
+   "evidence": {
+    "provision": "Part 1, § 1-136 State Corporation Commission (171), Item 475",
+    "quote": "may consider potential economic benefits"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "regulator",
+   "modality": "shall",
+   "summary": "The State Corporation Commission, with DEQ assistance, shall collect electric service agreements with data centers, data center water usage information and permitting information on data center generators, and report it in aggregated format to the chairs of the Senate Finance and Appropriations and House Appropriations Committees, by October 1, 2026 and each year thereafter.",
+   "applies_from": "by October 1, 2026 and each year thereafter",
+   "evidence": {
+    "provision": "Part 1, § 1-136 State Corporation Commission (171), Item 477, para. D",
+    "quote": "shall collect the following and report the information in an aggregated format"
+   }
+  },
+  {
+   "type": "cooperation_with_authority",
+   "addressee": "utility_grid_operator",
+   "also_addressees": [
+    "government_agency"
+   ],
+   "modality": "shall",
+   "summary": "Any applicable utility, and other Commonwealth agencies and political subdivisions, shall provide assistance as requested to the SCC data collection, including electric service agreements, water usage and generator permitting information.",
+   "conditional_on": "upon request by the State Corporation Commission",
+   "evidence": {
+    "provision": "Part 1, § 1-136 State Corporation Commission (171), Item 477, para. D",
+    "quote": "any applicable utility shall provide assistance as requested"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_center_operator",
+   "modality": "shall",
+   "summary": "An electricity consumption tax is levied on every data center operator at $0.011/kWh of electricity consumed at each data center per month, in addition to other taxes.",
+   "applies_from": "beginning on and after July 1, 2026, but before July 1, 2028",
+   "evidence": {
+    "provision": "Part 3, § 3-5.24, para. A.1",
+    "quote": "there is hereby levied and imposed upon every data center operator"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "data_center_operator",
+   "modality": "shall",
+   "summary": "A data center operator with self-supplied electricity must report its usage quarterly to the Department of Environmental Quality, which verifies the usage with the State Corporation Commission.",
+   "conditional_on": "self-supplied electricity",
+   "evidence": {
+    "provision": "Part 3, § 3-5.24, para. A.2",
+    "quote": "the data center operator shall report its usage"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "data_center_operator",
+   "modality": "shall",
+   "summary": "For self-supplied electricity, the data center operator shall remit the tax to the State Corporation Commission on a monthly return due on or before the last day of the month following consumption.",
+   "conditional_on": "self-supplied electricity",
+   "evidence": {
+    "provision": "Part 3, § 3-5.24, para. B",
+    "quote": "the data center operator shall remit the tax imposed under subsection A"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "regulator",
+   "modality": "shall",
+   "summary": "The State Corporation Commission collects the tax monthly. Revenue above $600,000,000 per fiscal year, less SCC administration costs, goes to a special nonreverting fund used for refunds.",
+   "evidence": {
+    "provision": "Part 3, § 3-5.24, paras. B and C",
+    "quote": "The tax imposed by this Item shall be collected monthly by the State Corporation Commission."
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "regulator",
+   "modality": "shall",
+   "summary": "The State Corporation Commission shall allocate and distribute refunds from excess tax revenue in the special fund each fiscal year, pro rata by operator; refunds for utility-remitted tax are credited to operator accounts and self-supplied refunds are paid directly.",
+   "applies_from": "every fiscal year beginning on and after July 1, 2027",
+   "conditional_on": "excess revenue collections deposited to the fund",
+   "evidence": {
+    "provision": "Part 3, § 3-5.24, para. D",
+    "quote": "the State Corporation Commission shall allocate and distribute refunds"
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "regulator",
+   "modality": "shall",
+   "summary": "The State Corporation Commission shall issue guidelines to effectuate the tax provisions within 60 days after passage of the act.",
+   "applies_from": "60 days after the passage of this act",
+   "evidence": {
+    "provision": "Part 3, § 3-5.24, para. E",
+    "quote": "shall issue guidelines to effectuate the provisions of this Item"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_center_operator",
+   "modality": "shall",
+   "summary": "Notwithstanding the monthly schedule, the first collection occurs in September 2026, and the payment due must include all taxes owed for the period from July 1, 2026 through September 1, 2026.",
+   "applies_from": "September 2026",
+   "evidence": {
+    "provision": "Part 3, § 3-5.24, para. E",
+    "quote": "the payment due for such first collection, shall include all taxes owed"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "utility_grid_operator",
+   "modality": "shall_not",
+   "summary": "For petitions for strategic undergrounding cost recovery filed on or after July 1, 2026, a Phase II Utility shall not seek an annual incremental investment increase exceeding three percent of its distribution rate base; the program has an overall cap of 4000 miles of overhead facilities converted to underground.",
+   "applies_from": "petitions filed on or after July 1, 2026",
+   "conditional_on": "petition under § 56-585.1 A 6 (iv) for strategic undergrounding cost recovery",
+   "evidence": {
+    "provision": "Enactment 4",
+    "quote": "the Phase II Utility shall not seek any annual incremental increase"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "utility_grid_operator",
+   "modality": "shall",
+   "summary": "A Phase II Utility shall permit qualifying large customers (demand of 25 MW or more, load factor of 75 percent or more, and at least 200 manufacturing or warehousing workers) to elect any rate schedule they qualify for, subject to aggregate (150 MW) and individual (50 MW) demand limits unless the SCC determines otherwise.",
+   "applies_from": "customers executing a new electric service agreement on or after July 1, 2026",
+   "conditional_on": "customer demand, load factor and workforce conditions stated in the enactment",
+   "evidence": {
+    "provision": "Enactment 4",
+    "quote": "shall permit a customer executing a new electric service agreement on or after July 1, 2026"
+   }
+  }
+ ],
+ "enforcement": [
+  {
+   "sanction_type": "civil_penalty",
+   "authority": "Department of Environmental Quality, or the locality in which the data center is located (enforcement authority per Item 367 E(iv))",
+   "triggered_by": "Violation of the noise regulations the Department must adopt for data centers under Item 367 E, on or after January 1, 2030",
+   "max_penalty_text": "civil penalty of up to $32,500 per day of violation",
+   "max_penalty_amount": 32500,
+   "currency": "USD",
+   "penalty_formula": "Up to $32,500 per day of violation; the text does not state whether the penalty is imposed by an agency or by a court",
+   "penalty_reference": "Part 1, § 1-108 Department of Environmental Quality (440), Item 367, para. E(iii)-(iv)",
+   "cure_period": "None stated in the text",
+   "evidence": {
+    "provision": "Part 1, § 1-108 Department of Environmental Quality (440), Item 367, para. E(iii)",
+    "quote": "any data center that violates such regulations shall be subject to a civil penalty of up to $32,500 per day of violation"
+   }
+  },
+  {
+   "sanction_type": "other",
+   "authority": "State Corporation Commission (collects the data center electricity consumption tax monthly)",
+   "triggered_by": "Not stated in this text; the penalty provisions of Chapter 29 of Title 58.1 apply to the data center electricity consumption tax by reference",
+   "max_penalty_text": "Not stated in this text; penalties are governed by the Chapter 29 provisions applied by reference",
+   "penalty_formula": "Not stated in this text; Chapter 29 of Title 58.1 provisions on assessment, collection, audit, interest, penalties and appeal apply mutatis mutandis",
+   "penalty_reference": "Code of Virginia, Chapter 29 of Title 58.1 (§ 58.1-2900 et seq.)",
+   "cure_period": "None stated in the text",
+   "evidence": {
+    "provision": "Part 3, § 3-5.24, para. B",
+    "quote": "All provisions of Chapter 29 of Title 58.1 of the Code of Virginia (§58.1-2900 et seq.), including those governing assessment, collection, audit, interest, penalties, and appeal, shall apply mutatis mutandis to the tax imposed under this Item"
+   }
+  }
+ ],
+ "section_status": {}
+}

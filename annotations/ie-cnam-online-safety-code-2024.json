@@ -1,0 +1,936 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "ie-cnam-online-safety-code-2024",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (Claude Code retrieval)",
+  "url": "https://www.cnam.ie/app/uploads/2024/11/Coimisiun-na-Mean-Online-Safety-Code.pdf",
+  "retrieved": "2026-10-14",
+  "version": "Online Safety Code, publication date October 2024 (as adopted 10 Oct 2024)",
+  "language": "en",
+  "extent": "full",
+  "note": "Registry URL (/wp-content/uploads/2024/10/...) now 404s after a cnam.ie site restructure; byte-identical copies are at /app/uploads/2024/10/Coimisiun-na-Mean_Online-Safety-Code.pdf and the saved /app/uploads/2024/11/ URL. Parts A and B (incl. Part B obligations up to s.17)."
+ },
+ "classification": {
+  "domains": [
+   "online_safety_content",
+   "minors_child_safety",
+   "data_protection",
+   "consumer_protection"
+  ],
+  "primary_domain": "online_safety_content",
+  "mechanisms": [
+   "mandate_obligation",
+   "prohibition_ban",
+   "disclosure_transparency"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "platform_operator"
+  ],
+  "affected_roles": [
+   "minors",
+   "consumers_users",
+   "general_public",
+   "advertiser_campaign"
+  ],
+  "decision_margins": [
+   "firm:product_design_release",
+   "firm:compliance_process",
+   "household:access",
+   "household:data_privacy",
+   "household:information"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national",
+    "targeted"
+   ],
+   "description": "Applies in the State to named video-sharing platform services designated by the Commission as under the jurisdiction of the State.",
+   "evidence": {
+    "provision": "Section 2.3",
+    "quote": "The Code applies to named online services that have been designated by the Commission in accordance with the Act as video-sharing platform services under the jurisdiction of the State"
+   }
+  },
+  "agora_harms": [
+   "Detrimental content"
+  ],
+  "agora_strategies": [
+   "Disclosure",
+   "Disclosure: In deployment"
+  ]
+ },
+ "summary": {
+  "short": "Binding code made by Coimisiún na Meán under the Online Safety and Media Regulation Act 2022 for designated video-sharing platform services in Ireland. It requires restriction of harmful videos and commercial communications, age assurance, parental controls and complaint handling; Part B applies from a date the Commission sets.",
+  "long": "Code adopted under the Online Safety and Media Regulation Act 2022 and Article 28b of the Audiovisual Media Services Directive. Part A (sections 1 to 10) sets scope and general duties: it applies to video-sharing platform services designated under Irish jurisdiction, requires appropriate measures to protect children and the general public, and states that age verification based solely on self-declaration is not effective. Non-compliance is a contravention under Part 8B of the Act, and providers must maintain systems and controls to demonstrate compliance; the Commission considers size and nature of the service. Part B (sections 11 to 17), applying from a date set by the Commission, requires platforms' terms to restrict harmful video and commercial communications, adult-only content access controls and content rating, account suspension after prior warning, parental controls where users under 16 are permitted, reporting and flagging, complaint procedures, an annual media literacy action plan, a ban on commercial processing of children's personal data, and reports to the Commission every 3 months. The Code states no fine amounts."
+ },
+ "relations": [
+  {
+   "relation": "legal_basis",
+   "target_text": "Online Safety and Media Regulation Act 2022 (the Act), which provides the power to make online safety codes",
+   "note": "The Code is made under Section 139K of the Broadcasting Act 2009 as amended by the Act; sections 139K, 139L, 139M, 139N, 139Q, 139ZD, 139ZF and 139Z of the Act are cited in the text.",
+   "evidence": {
+    "provision": "1.1",
+    "quote": "Pursuant to Section 139K of the Broadcasting Act 2009, as amended by the Online Safety and Media Regulation Act 2022"
+   }
+  },
+  {
+   "relation": "legal_basis",
+   "target_text": "Broadcasting Act 2009 (Section 139K, as amended)",
+   "note": "Section 139K of the Broadcasting Act 2009, as amended, is the stated power under which the Commission may make online safety codes.",
+   "evidence": {
+    "provision": "1.1",
+    "quote": "Pursuant to Section 139K of the Broadcasting Act 2009, as amended by the Online Safety and Media Regulation Act 2022"
+   }
+  },
+  {
+   "relation": "implements",
+   "target_text": "Audiovisual Media Services Directive (Directive (EU) 2010/13, as amended by Directive (EU) 2018/1808), Article 28b",
+   "note": "The Code gives effect to Article 28b of the Directive in the State; Part A and Part B also refer to Article 9(1) and Article 6(a)(1) of the Directive.",
+   "evidence": {
+    "provision": "2.1",
+    "quote": "The Code gives effect to Article 28b of the Audiovisual Media Services Directive in the State."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) 2022/2065 (Digital Services Act)",
+   "note": "Substantive interaction: sections 12.6 to 12.8 and 13.6 to 13.8 (account suspension) apply only where DSA Articles 23 and 35(1)(b) measures do not cover the consequences for the user; sections 5.1, 5.3 and 16.2 also refer to DSA articles (Articles 4, 5, 6, 8 and 20(1)(a) to (d)).",
+   "evidence": {
+    "provision": "12.9",
+    "quote": "Articles 23 and 35(1)(b) of Regulation (EU)"
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "Coimisiún na Meán",
+   "role": "designated",
+   "function": "Online safety regulator empowered to make the Code, to designate video-sharing platform services, to determine whether a provider has failed to comply, and to take enforcement steps (sections 1.1, 2.2, 9.1, 9.2)",
+   "evidence": {
+    "provision": "1.1",
+    "quote": "Coimisiún na Meán (the “Commission”) may make codes"
+   }
+  },
+  {
+   "name": "Video-sharing platform service providers",
+   "role": "addressee",
+   "function": "Bear the obligations in Part A (section 10) and Part B (sections 11 to 17) of the Code, including terms and conditions restrictions, age assurance, content rating, parental controls, reporting, complaints and reporting to the Commission",
+   "evidence": {
+    "provision": "12.1",
+    "quote": "A video-sharing platform service provider shall include, in the"
+   }
+  }
+ ],
+ "notes": "The Code applies to named video-sharing platform services designated by the Commission (section 2.3), but the document names none; the register is external (footnote 1). Part B (sections 11 to 17) applies from a date the Commission will determine, and no date is stated in the text. Section 1.5 states that the whole Code is binding and applies to all such services, while sections 9.2 and 10.8 allow the Commission to take account of service size and nature. Section 11 defines child as under 18, while section 14.1 sets an under-16 threshold for parental controls. Footnote 3 states that self-declaration of age is not an effective age assurance measure for Part A, and section 12.10 says the same for Part B. The adoption date is not stated in the text. Foreword references to the EU Terrorist Content Online Regulation and to An Garda Síochána are context only and are not cited in operative provisions.",
+ "events": [
+  {
+   "event": "consultation",
+   "date": null,
+   "date_type": "not_stated",
+   "date_text": "initial Call for Inputs in summer 2023",
+   "applies_to": "Call for Inputs preceding the draft Code",
+   "evidence": {
+    "provision": "Foreword",
+    "quote": "initial Call for Inputs in summer 2023"
+   }
+  },
+  {
+   "event": "consultation",
+   "date": "2023-12",
+   "date_type": "absolute",
+   "date_text": "Consultation on the draft Code and guidance which ran from December 2023 to January 2024",
+   "applies_to": "draft Code and guidance",
+   "evidence": {
+    "provision": "Foreword",
+    "quote": "Consultation on the draft Code and guidance which ran from December 2023"
+   }
+  },
+  {
+   "event": "proposed",
+   "date": null,
+   "date_type": "not_stated",
+   "date_text": "We then published a revised draft Code",
+   "applies_to": "revised draft Code",
+   "evidence": {
+    "provision": "Foreword",
+    "quote": "We then published a revised draft Code"
+   }
+  },
+  {
+   "event": "consultation",
+   "date": null,
+   "date_type": "not_stated",
+   "date_text": "We then notified the Code to the European Commission in May through a required TRIS process",
+   "applies_to": "European Commission (TRIS notification of the Code)",
+   "evidence": {
+    "provision": "Foreword",
+    "quote": "notified the Code to the European Commission in May"
+   }
+  },
+  {
+   "event": "adopted",
+   "date": null,
+   "date_type": "not_stated",
+   "date_text": "The adoption of Coimisiún na Meán’s Online Safety Code; we can now proceed to adopt the final Code",
+   "applies_to": "Online Safety Code",
+   "evidence": {
+    "provision": "Foreword",
+    "quote": "can now proceed to adopt the final Code"
+   }
+  },
+  {
+   "event": "published",
+   "date": "2024-10",
+   "date_type": "absolute",
+   "date_text": "Publication date: October 2024",
+   "applies_to": "Online Safety Code",
+   "evidence": {
+    "provision": "Cover page",
+    "quote": "October 2024"
+   }
+  },
+  {
+   "event": "application",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "from the date determined by the Commission for the application of Part B of the Code, Section 11 to Section 17 of Part B of the Code shall apply to a video-sharing platform service provider",
+   "depends_on": "date determined by the Commission for the application of Part B of the Code",
+   "applies_to": "Part B, Sections 11 to 17, video-sharing platform service providers",
+   "evidence": {
+    "provision": "Part B (introductory text, before Section 11)",
+    "quote": "from the date determined by the Commission for the application of Part B of the Code"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "The plan shall be updated annually.",
+   "applies_to": "media literacy action plan of each video-sharing platform service provider",
+   "evidence": {
+    "provision": "Section 17.1",
+    "quote": "The plan shall be updated annually."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "every 3 months or at such other intervals as may be specified by the Commission",
+   "applies_to": "reports to the Commission on handling of user complaints by each video-sharing platform service provider",
+   "evidence": {
+    "provision": "Section 17.3",
+    "quote": "every 3 months or at such other intervals as may be specified by the Commission"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "age",
+   "variable_text": "age of persons defined as children",
+   "operator": "<",
+   "value": 18,
+   "value_text": "under the age of 18 years",
+   "unit": "years",
+   "measurement": "Not stated in the text",
+   "level": "person",
+   "trigger": "scope_definition",
+   "consequence": "A person under 18 is a child for the purposes of the Code's child-protection provisions",
+   "evidence": {
+    "provision": "Section 11 (Definitions)",
+    "quote": "means a person(s) under the age of 18 years."
+   }
+  },
+  {
+   "variable": "age",
+   "variable_text": "age of users whose terms of service permit use of the service",
+   "operator": "<",
+   "value": 16,
+   "value_text": "users under the age of 16 (that is, 15 and under)",
+   "unit": "years",
+   "measurement": "Not stated in the text",
+   "level": "person",
+   "trigger": "obligation",
+   "consequence": "The provider must provide parental control systems under the control of the end-user for video content and audiovisual commercial communications which may impair the development of children",
+   "conditions": "The provider's terms of service permit users under the age of 16",
+   "evidence": {
+    "provision": "Section 14.1",
+    "quote": "whose terms of service permit users under the age of 16 (that is, 15 and under)"
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "video-sharing platform service",
+   "defined_in": "this Code, Section 11",
+   "evidence": {
+    "provision": "Section 11 (Definitions)",
+    "quote": "where the principal purpose of the service or of a dissociable section thereof or an essential functionality of the service is devoted to providing programmes, user-generated videos, or both, to the general public"
+   }
+  },
+  {
+   "term": "video-sharing platform service provider",
+   "defined_in": "this Code, Section 11",
+   "evidence": {
+    "provision": "Section 11 (Definitions)",
+    "quote": "means the natural or legal person who provides a video-sharing platform service."
+   }
+  },
+  {
+   "term": "child/children",
+   "defined_in": "this Code, Section 11",
+   "evidence": {
+    "provision": "Section 11 (Definitions)",
+    "quote": "means a person(s) under the age of 18 years."
+   }
+  },
+  {
+   "term": "audiovisual commercial communication",
+   "defined_in": "this Code, Section 11",
+   "evidence": {
+    "provision": "Section 11 (Definitions)",
+    "quote": "means a commercial communication consisting of images with or without sound which are designed to promote, directly or indirectly, the goods, services or image of a natural or legal person pursuing an economic activity"
+   }
+  },
+  {
+   "term": "audiovisual commercial communications harmful to children",
+   "defined_in": "this Code, Section 11",
+   "evidence": {
+    "provision": "Section 11 (Definitions)",
+    "quote": "audiovisual commercial communications that directly exhort children to buy or hire a product or service"
+   }
+  },
+  {
+   "term": "user-generated video",
+   "defined_in": "this Code, Section 11",
+   "evidence": {
+    "provision": "Section 11 (Definitions)",
+    "quote": "means user-generated content consisting of a set of moving images with or without sound constituting an individual item"
+   }
+  },
+  {
+   "term": "video content",
+   "defined_in": "this Code, Section 11",
+   "evidence": {
+    "provision": "Section 11 (Definitions)",
+    "quote": "refers to: a. user-generated video, b. any programme."
+   }
+  },
+  {
+   "term": "programme",
+   "defined_in": "this Code, Section 11",
+   "evidence": {
+    "provision": "Section 11 (Definitions)",
+    "quote": "means a set of moving images with or without sound constituting an individual item, irrespective of its length"
+   }
+  },
+  {
+   "term": "adult-only video content",
+   "defined_in": "this Code, Section 11",
+   "evidence": {
+    "provision": "Section 11 (Definitions)",
+    "quote": "video content consisting of pornography,"
+   }
+  },
+  {
+   "term": "age assurance measure",
+   "defined_in": "this Code, Section 11",
+   "evidence": {
+    "provision": "Section 11 (Definitions)",
+    "quote": "means a process used to restrict access to a service or to particular features or content of a service that involves estimating or verifying a user"
+   }
+  },
+  {
+   "term": "restricted video content",
+   "defined_in": "this Code, Section 11",
+   "evidence": {
+    "provision": "Section 11 (Definitions)",
+    "quote": "video content by which a person bullies or humiliates another person"
+   }
+  },
+  {
+   "term": "risk test",
+   "defined_in": "this Code, Section 11",
+   "evidence": {
+    "provision": "Section 11 (Definitions)",
+    "quote": "content that gives rise to: a. any risk to a person"
+   }
+  },
+  {
+   "term": "restricted audiovisual commercial communications",
+   "defined_in": "this Code, Section 11",
+   "evidence": {
+    "provision": "Section 11 (Definitions)",
+    "quote": "audiovisual commercial communications containing incitement to violence or hatred directed against a group of persons"
+   }
+  },
+  {
+   "term": "subliminal techniques",
+   "defined_in": "this Code, Section 11",
+   "evidence": {
+    "provision": "Section 11 (Definitions)",
+    "quote": "means any technical device, which, by using images of very brief duration or by any other means, exploits the possibility of conveying a message to"
+   }
+  },
+  {
+   "term": "surreptitious commercial communications",
+   "defined_in": "this Code, Section 11",
+   "evidence": {
+    "provision": "Section 11 (Definitions)",
+    "quote": "means the representation in words or pictures of goods, services, the name, the trade mark or the activities of a producer of goods or a provider of services in programmes"
+   }
+  },
+  {
+   "term": "terms and conditions and related obligations",
+   "defined_in": "this Code, Section 11",
+   "evidence": {
+    "provision": "Section 11 (Definitions)",
+    "quote": "means all clauses, irrespective of their name or form, which govern the contractual relationship between the provider of intermediary services and the recipients of the service."
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "government_duty",
+   "addressee": "regulator",
+   "modality": "shall",
+   "summary": "In interpreting, applying and enforcing the Code, the Commission must act lawfully, rationally and fairly, in accordance with its public law duties and the listed statutory objectives and rights.",
+   "applies_from": "not stated",
+   "evidence": {
+    "provision": "Sec. 4.1",
+    "quote": "the Commission must, in accordance with its public law duties, act lawfully, rationally and fairly."
+   }
+  },
+  {
+   "type": "management_system",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "Video-sharing platform service providers must have systems and controls in place to demonstrate compliance with the obligations in the Code.",
+   "applies_from": "not stated",
+   "evidence": {
+    "provision": "Sec. 9.3",
+    "quote": "have systems and controls in place to demonstrate compliance"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "regulator",
+   "modality": "shall",
+   "summary": "When considering a failure to comply and any enforcement steps, the Commission must have regard to whether compliance would not be practicable or proportionate, taking into account the size and nature of the service.",
+   "applies_from": "not stated",
+   "evidence": {
+    "provision": "Sec. 9.2",
+    "quote": "the Commission shall have regard to whether it has been demonstrated"
+   }
+  },
+  {
+   "type": "content_moderation",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "Take appropriate measures to protect children from programmes, user-generated videos and commercial communications that may impair their development, and the general public from incitement to violence or hatred and from content constituting specified criminal offences.",
+   "applies_from": "not stated",
+   "evidence": {
+    "provision": "Sec. 10.1",
+    "quote": "shall take appropriate measures to protect"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "Comply with the requirements of Article 9(1) of the Audiovisual Media Services Directive for audiovisual commercial communications marketed, sold or arranged by the provider; Sec. 10.3 requires appropriate measures for those not marketed by the provider.",
+   "applies_from": "not stated",
+   "conditional_on": "for audiovisual commercial communications marketed, sold or arranged by the provider",
+   "evidence": {
+    "provision": "Sec. 10.2",
+    "quote": "shall comply with the requirements set out in Article"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "Clearly inform users where programmes and user-generated videos contain audiovisual commercial communications, where declared or known to the provider.",
+   "applies_from": "not stated",
+   "conditional_on": "provided such communications are declared or the provider has knowledge of that fact",
+   "evidence": {
+    "provision": "Sec. 10.4",
+    "quote": "shall ensure that they clearly inform users"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "Implement the measures set out in Article 28b(3)(a) to (j) of the Audiovisual Media Services Directive, as appropriate, to achieve the requirements of Section 10.",
+   "applies_from": "not stated",
+   "conditional_on": "as appropriate",
+   "evidence": {
+    "provision": "Sec. 10.5",
+    "quote": "implement the measures set out in Article 28b(3)(a)"
+   }
+  },
+  {
+   "type": "content_moderation",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "Include and apply in terms and conditions requirements to protect the general public and children from the content in Article 28b(1)(a) to (c), and requirements for commercial communications not marketed by the provider (Sec. 10.6(a), (b)).",
+   "applies_from": "not stated",
+   "conditional_on": "as appropriate",
+   "evidence": {
+    "provision": "Sec. 10.6(a)",
+    "quote": "shall include and apply in their terms and conditions of the service"
+   }
+  },
+  {
+   "type": "complaint_mechanism",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "Establish and operate transparent and user-friendly mechanisms for users to report or flag content (Sec. 10.6(d)), and transparent, easy-to-use and effective complaint-handling procedures (Sec. 10.6(i)).",
+   "applies_from": "not stated",
+   "conditional_on": "as appropriate",
+   "evidence": {
+    "provision": "Sec. 10.6(d)",
+    "quote": "establish and operate transparent and user-friendly mechanisms for users of"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "Establish and operate systems through which the provider can explain to users what effect has been given to reporting and flagging.",
+   "applies_from": "not stated",
+   "conditional_on": "as appropriate",
+   "evidence": {
+    "provision": "Sec. 10.6(e)",
+    "quote": "systems through which the video-sharing platform service provider can explain to users"
+   }
+  },
+  {
+   "type": "age_verification",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "Establish and operate age verification systems for users with respect to content that may impair the physical, mental or moral development of minors; self-declaration alone is not an effective measure under the footnote.",
+   "applies_from": "not stated",
+   "conditional_on": "as appropriate",
+   "evidence": {
+    "provision": "Sec. 10.6(f)",
+    "quote": "shall establish and operate age verification systems"
+   }
+  },
+  {
+   "type": "minors_protection",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "Provide parental control systems under the end-user's control for content that may impair the development of minors.",
+   "applies_from": "not stated",
+   "conditional_on": "as appropriate",
+   "evidence": {
+    "provision": "Sec. 10.6(h)",
+    "quote": "parental control systems that are under the control of the end-user"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "Provide a functionality for users uploading user-generated videos to declare commercial communications (Sec. 10.6(c)); establish an easy-to-use content rating system (Sec. 10.6(g)); provide effective media literacy measures and tools (Sec. 10.6(j)).",
+   "applies_from": "not stated",
+   "conditional_on": "as appropriate",
+   "evidence": {
+    "provision": "Sec. 10.6(c)",
+    "quote": "have a functionality for users who upload user-generated videos"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "regulator",
+   "modality": "shall",
+   "summary": "It is for the Commission to determine whether measures taken by providers are appropriate.",
+   "applies_from": "not stated",
+   "evidence": {
+    "provision": "Sec. 10.7",
+    "quote": "it will be a matter for the Commission to determine the same"
+   }
+  },
+  {
+   "type": "content_moderation",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "Measures must be practicable and proportionate, taking into account the size and nature of the service; for protection of minors, the most harmful content is subject to the strictest measures.",
+   "applies_from": "not stated",
+   "evidence": {
+    "provision": "Sec. 10.8",
+    "quote": "the most harmful content shall be subject to the strictest measures."
+   }
+  },
+  {
+   "type": "data_minimization",
+   "addressee": "platform_operator",
+   "modality": "shall_not",
+   "summary": "Shall not process for commercial purposes (such as direct marketing, profiling and behaviourally targeted advertising) the personal data of minors collected under the age-verification and parental-control measures.",
+   "applies_from": "not stated",
+   "evidence": {
+    "provision": "Sec. 10.9",
+    "quote": "shall not process for commercial purposes"
+   }
+  },
+  {
+   "type": "complaint_mechanism",
+   "addressee": "platform_operator",
+   "modality": "may",
+   "summary": "May provide out-of-court redress mechanisms, including mediation, for disputes with users under Article 28b(1) and (3); user rights before a court are not affected.",
+   "applies_from": "not stated",
+   "evidence": {
+    "provision": "Sec. 10.10",
+    "quote": "may provide for out-of-court redress mechanisms including mediation"
+   }
+  },
+  {
+   "type": "content_moderation",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "Include in terms and conditions restrictions precluding users from uploading or sharing restricted video content and restricted indissociable user-generated content.",
+   "applies_from": "from the date determined by the Commission for the application of Part B of the Code",
+   "evidence": {
+    "provision": "Sec. 12.1",
+    "quote": "restrictions that preclude users from"
+   }
+  },
+  {
+   "type": "content_moderation",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "Include in terms and conditions either a restriction precluding uploading or sharing of adult-only video content, or a requirement that uploaders rate such content as not suitable for children.",
+   "applies_from": "from the date determined by the Commission for the application of Part B of the Code",
+   "evidence": {
+    "provision": "Sec. 12.2(b)",
+    "quote": "must rate the content as not suitable for children"
+   }
+  },
+  {
+   "type": "minors_protection",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "For services principally devoted to adult-only content, include in terms a requirement precluding use by children and an obligation that adult users ensure their accounts are not used by children.",
+   "applies_from": "from the date determined by the Commission for the application of Part B of the Code",
+   "conditional_on": "principal purpose of the service, or a dissociable section, is adult-only video content",
+   "evidence": {
+    "provision": "Sec. 12.3",
+    "quote": "a requirement precluding the use by children of the service"
+   }
+  },
+  {
+   "type": "content_moderation",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "Include in terms a requirement that users comply with and do not circumvent age assurance and content rating obligations (Sec. 12.4), and with the terms in Sections 12.1 to 12.4 (Sec. 12.5).",
+   "applies_from": "from the date determined by the Commission for the application of Part B of the Code",
+   "evidence": {
+    "provision": "Sec. 12.4",
+    "quote": "requirement that users comply with and do not attempt to circumvent age assurance"
+   }
+  },
+  {
+   "type": "content_moderation",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "Apply terms providing for suspension, after a prior warning where appropriate, of users who frequently infringe Sections 12.1 to 12.4; suspension decisions are case-by-case and must have due regard to fundamental rights (Sec. 12.7, 12.8).",
+   "applies_from": "from the date determined by the Commission for the application of Part B of the Code",
+   "conditional_on": "where appropriate and after having issued a prior warning",
+   "evidence": {
+    "provision": "Sec. 12.6",
+    "quote": "suspend for a reasonable period of time the provision of their services"
+   }
+  },
+  {
+   "type": "age_verification",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "Implement effective age assurance measures to ensure adult-only video content cannot normally be seen by children; self-declaration alone is not effective.",
+   "applies_from": "from the date determined by the Commission for the application of Part B of the Code",
+   "conditional_on": "whose terms and conditions do not preclude uploading or sharing of adult-only video content",
+   "evidence": {
+    "provision": "Sec. 12.10",
+    "quote": "shall implement effective age assurance measures"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "Establish an easy-to-use content rating system allowing users who upload user-generated videos to rate such content as adult-only and tag it.",
+   "applies_from": "from the date determined by the Commission for the application of Part B of the Code",
+   "conditional_on": "whose terms and conditions do not preclude uploading or sharing of adult-only video content",
+   "evidence": {
+    "provision": "Sec. 12.11",
+    "quote": "content rating system allowing users who upload user-generated videos to rate such content"
+   }
+  },
+  {
+   "type": "content_moderation",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "For commercial communications not marketed by the provider, include in terms restrictions precluding users from uploading harmful-to-public, harmful-to-children and restricted commercial communications.",
+   "applies_from": "from the date determined by the Commission for the application of Part B of the Code",
+   "conditional_on": "audiovisual commercial communications not marketed, sold or arranged by the provider",
+   "evidence": {
+    "provision": "Sec. 13.1",
+    "quote": "restrictions that preclude users from"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "For non-marketed commercial communications, include in terms a requirement that such communications are readily recognisable as such.",
+   "applies_from": "from the date determined by the Commission for the application of Part B of the Code",
+   "conditional_on": "audiovisual commercial communications not marketed, sold or arranged by the provider",
+   "evidence": {
+    "provision": "Sec. 13.2",
+    "quote": "are readily recognisable as such"
+   }
+  },
+  {
+   "type": "content_moderation",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "For non-marketed commercial communications, include in terms a restriction precluding surreptitious commercial communications and the use of subliminal techniques.",
+   "applies_from": "from the date determined by the Commission for the application of Part B of the Code",
+   "conditional_on": "audiovisual commercial communications not marketed, sold or arranged by the provider",
+   "evidence": {
+    "provision": "Sec. 13.3",
+    "quote": "a restriction precluding surreptitious audiovisual commercial communications"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "Include in terms an obligation for users to declare when uploading user-generated videos that contain commercial communications, and a requirement that users comply with Sections 13.1 to 13.4.",
+   "applies_from": "from the date determined by the Commission for the application of Part B of the Code",
+   "evidence": {
+    "provision": "Sec. 13.4",
+    "quote": "an obligation for users to declare when they are uploading"
+   }
+  },
+  {
+   "type": "content_moderation",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "Apply terms providing for suspension, after a prior warning where appropriate, of users who frequently infringe Sections 13.1 to 13.4; suspension decisions are case-by-case and must have due regard to fundamental rights (Sec. 13.7, 13.8).",
+   "applies_from": "from the date determined by the Commission for the application of Part B of the Code",
+   "conditional_on": "where appropriate and after having issued a prior warning",
+   "evidence": {
+    "provision": "Sec. 13.6",
+    "quote": "suspend for a reasonable period of time the provision of their"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "platform_operator",
+   "modality": "shall_not",
+   "summary": "Shall not market, sell or arrange commercial communications harmful to the general public, harmful to children, or restricted commercial communications.",
+   "applies_from": "from the date determined by the Commission for the application of Part B of the Code",
+   "conditional_on": "audiovisual commercial communications marketed, sold or arranged by the provider",
+   "evidence": {
+    "provision": "Sec. 13.10",
+    "quote": "shall not market, sell"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "For commercial communications marketed, sold or arranged by the provider, ensure they are readily recognisable as such.",
+   "applies_from": "from the date determined by the Commission for the application of Part B of the Code",
+   "conditional_on": "audiovisual commercial communications marketed, sold or arranged by the provider",
+   "evidence": {
+    "provision": "Sec. 13.11",
+    "quote": "ensure that audiovisual commercial communications are readily recognisable as such"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "platform_operator",
+   "modality": "shall_not",
+   "summary": "Shall not market, sell or arrange surreptitious commercial communications, or include subliminal techniques in commercial communications.",
+   "applies_from": "from the date determined by the Commission for the application of Part B of the Code",
+   "conditional_on": "audiovisual commercial communications marketed, sold or arranged by the provider",
+   "evidence": {
+    "provision": "Sec. 13.12",
+    "quote": "sell or arrange surreptitious audiovisual commercial communications"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "platform_operator",
+   "modality": "may",
+   "summary": "Alcohol commercial communications are not restricted from marketing, selling or arranging, and need not be precluded, provided such content cannot normally be seen by children through measures such as content rating, age assurance and parental controls.",
+   "applies_from": "from the date determined by the Commission for the application of Part B of the Code",
+   "conditional_on": "provided such content cannot normally be seen by children",
+   "evidence": {
+    "provision": "Sec. 13.13",
+    "quote": "from marketing, selling or arranging"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "Put in place a functionality for users uploading user-generated videos to declare whether the video contains commercial communications.",
+   "applies_from": "from the date determined by the Commission for the application of Part B of the Code",
+   "evidence": {
+    "provision": "Sec. 13.14",
+    "quote": "a functionality for users who upload user-generated videos"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "Where a declaration or knowledge indicates that a user-generated video contains commercial communications, ensure users are clearly informed in a transparent manner.",
+   "applies_from": "from the date determined by the Commission for the application of Part B of the Code",
+   "conditional_on": "where a user has declared, or the provider has knowledge, that the video contains commercial communications",
+   "evidence": {
+    "provision": "Sec. 13.15",
+    "quote": "are clearly informed of the declaration or fact"
+   }
+  },
+  {
+   "type": "minors_protection",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "Provide parental control systems under end-user control for video content and commercial communications that may impair children's development; systems must at minimum allow restricting viewing by unknown users, restricting by language or metadata, and setting time limits (Sec. 14.2).",
+   "applies_from": "from the date determined by the Commission for the application of Part B of the Code",
+   "conditional_on": "terms of service permit users under the age of 16 (that is, 15 and under)",
+   "evidence": {
+    "provision": "Sec. 14.1",
+    "quote": "parental control systems that are under the"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "Provide information explaining to users, including children, how parental control systems operate, and draw users' attention to the systems made available (Sec. 14.4).",
+   "applies_from": "from the date determined by the Commission for the application of Part B of the Code",
+   "evidence": {
+    "provision": "Sec. 14.3",
+    "quote": "shall provide information that explains to users, including children"
+   }
+  },
+  {
+   "type": "minors_protection",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "Where parental controls are required, offer them as an option to new users at account sign-up.",
+   "applies_from": "from the date determined by the Commission for the application of Part B of the Code",
+   "conditional_on": "where parental control systems are offered as a requirement under Section 14",
+   "evidence": {
+    "provision": "Sec. 14.5",
+    "quote": "as an option to new users on account sign-up"
+   }
+  },
+  {
+   "type": "complaint_mechanism",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "Establish and operate transparent and user-friendly mechanisms for users to report or flag restricted content, adult-only content in breach of terms, and commercial communications that breach the Code.",
+   "applies_from": "from the date determined by the Commission for the application of Part B of the Code",
+   "evidence": {
+    "provision": "Sec. 15.1",
+    "quote": "establish and operate transparent and user-friendly mechanisms for users of"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "Establish and operate systems by which providers explain to users what effect has been given to reported or flagged content, for example removal.",
+   "applies_from": "from the date determined by the Commission for the application of Part B of the Code",
+   "evidence": {
+    "provision": "Sec. 15.2",
+    "quote": "systems by which providers explain to users"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "When informing a notifier of a decision on reported or flagged content, inform the notifier of the complaint-handling procedures and provide clear information about complaint handling.",
+   "applies_from": "from the date determined by the Commission for the application of Part B of the Code",
+   "evidence": {
+    "provision": "Sec. 15.3",
+    "quote": "shall inform the notifier that they can use the complaint handling"
+   }
+  },
+  {
+   "type": "complaint_mechanism",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "Establish and operate transparent, easy-to-use and effective complaint procedures for measures on age assurance, content rating, parental controls and reporting, handled diligently, timely and non-discriminatorily (Sec. 16.4); information on procedures should be prominent (Sec. 16.3).",
+   "applies_from": "from the date determined by the Commission for the application of Part B of the Code",
+   "evidence": {
+    "provision": "Sec. 16.1",
+    "quote": "transparent, easy-to-use and effective procedures"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "Publish an action plan specifying measures to promote media literacy, updated annually.",
+   "applies_from": "from the date determined by the Commission for the application of Part B of the Code",
+   "evidence": {
+    "provision": "Sec. 17.1",
+    "quote": "action plan specifying the measures it will take to promote media literacy"
+   }
+  },
+  {
+   "type": "data_minimization",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "Ensure personal data of children collected when implementing age verification and parental controls is not processed for commercial purposes such as direct marketing, profiling and behavioural targeted advertising.",
+   "applies_from": "from the date determined by the Commission for the application of Part B of the Code",
+   "evidence": {
+    "provision": "Sec. 17.2",
+    "quote": "is not processed for commercial purposes"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "Provide a report to the Commission every 3 months, or at other intervals specified by the Commission, on handling of user communications raising complaints or other matters, in the manner the Commission specifies.",
+   "applies_from": "from the date determined by the Commission for the application of Part B of the Code",
+   "evidence": {
+    "provision": "Sec. 17.3",
+    "quote": "every 3 months or at such other intervals as may be specified by the Commission"
+   }
+  }
+ ],
+ "enforcement": [
+  {
+   "sanction_type": "other",
+   "authority": "Coimisiún na Meán",
+   "triggered_by": "failure by a video-sharing platform service to comply with the Code",
+   "max_penalty_text": "Not stated in this text",
+   "penalty_reference": "Section 139Q of the Act; Part 8B of the Online Safety and Media Regulation Act 2022 (contravention regime, as cross-referenced in s.9.1)",
+   "cure_period": "Not stated in this text",
+   "evidence": {
+    "provision": "Section 9.1",
+    "quote": "a failure by a videosharing platform service to comply with the Code shall be a contravention for the purposes of Part 8B of the Act"
+   }
+  }
+ ],
+ "section_status": {}
+}

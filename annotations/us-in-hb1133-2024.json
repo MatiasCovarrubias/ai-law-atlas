@@ -1,0 +1,134 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "us-in-hb1133-2024",
+ "tier": "B",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "light, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-interim-20261014"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "AGORA plaintext (ETO, CC BY-NC 4.0), local cache",
+  "url": "https://iga.in.gov/pdf-documents/123/2024/house/bills/HB1133/HB1133.06.ENRS.pdf",
+  "retrieved": "2024-11-19",
+  "version": "1.33.0 (2026-09-16)",
+  "language": "en",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "elections_political_ads",
+   "synthetic_media_deepfakes"
+  ],
+  "primary_domain": "elections_political_ads",
+  "mechanisms": [
+   "disclosure_transparency",
+   "liability_rule"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "advertiser_campaign"
+  ],
+  "decision_margins": [
+   "household:information"
+  ],
+  "territorial_scope": {
+   "types": [
+    "subnational"
+   ],
+   "description": "Applies to campaign communications in Indiana elections, as an amendment to the Indiana Code.",
+   "evidence": {
+    "provision": "Title and enacting clause",
+    "quote": "Be it enacted by the General Assembly of the State of Indiana"
+   }
+  },
+  "agora_harms": [
+   "Detrimental content"
+  ],
+  "agora_incentives": [
+   "Civil liability"
+  ],
+  "agora_risk_factors": [
+   "Transparency"
+  ],
+  "agora_strategies": [
+   "Disclosure",
+   "Disclosure: In standard form"
+  ]
+ },
+ "summary": {
+  "short": "Indiana HB 1133 (2024) adds IC 3-9-8 to the Indiana Code. Campaign communications that include fabricated media depicting a candidate must carry a prescribed disclaimer. A depicted candidate may sue the payer, sponsor or knowing disseminator for damages, injunctive relief and fees. Effective upon passage.",
+  "long": "HB 1133 adds a new chapter, IC 3-9-8, on digitally altered media in elections. A campaign communication is defined as one that advocates for or against a clearly identified candidate, is intended to injure a candidate or influence an election outcome, or solicits a contribution. Fabricated media covers three categories: altered recordings that materially misdepict an individual and are not recognizable as altered, non-consensual lifelike audio or visual imitations used to convey a fictional depiction, and depictions of artificially generated persons that are not recognizable imitations of an identifiable individual. Candidate includes individuals holding elected office at federal, state, school board or local level. If a campaign communication includes fabricated media depicting a candidate, the payer must include a disclaimer stating that elements of the media have been digitally altered or artificially generated, separate from the existing disclaimer under IC 3-9-3-2.5(d). Format rules apply to printed, audio and video communications, including reading in each language used, minimum volume, and repetition at two-minute intervals for audio longer than two minutes. A candidate depicted in fabricated media in a communication lacking the required disclaimer may bring a civil action against the payer, the sponsor, and a disseminator who knowingly, intentionally or recklessly altered or removed the disclaimer. Prevailing plaintiffs may recover actual damages, injunctive relief, and court costs and attorney's fees. The plaintiff must prove by clear and convincing evidence the depiction. Courts must expedite such hearings. Section 2 declares an emergency.}},"
+ },
+ "relations": [
+  {
+   "relation": "cross_references",
+   "target_text": "IC 3-5-2-6",
+   "note": "Defines 'candidate' for the new chapter; Sec. 2(a) applies that definition subject to Sec. 2(b), which extends 'candidate' to holders of elected office.",
+   "evidence": {
+    "provision": "SECTION 1, Sec. 2(a)",
+    "quote": "has the meaning set forth in IC 3-5-2-6"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "IC 3-9-3-2.5",
+   "note": "The disclaimer required by Sec. 5 must be separate from the disclaimer required under IC 3-9-3-2.5(d); Sec. 5(2) and (4) also refer to IC 3-9-3-2.5(e) for printed disclaimer formatting.",
+   "evidence": {
+    "provision": "SECTION 1, Sec. 5",
+    "quote": "separate from the disclaimer required under IC3-9-3-2.5(d)"
+   }
+  }
+ ],
+ "notes": "Bill text as provided (Indiana HB 1133, 2024). The document gives no passage, signing or effective date beyond '[EFFECTIVE UPON PASSAGE]' on Section 1 and an emergency clause in Section 2. Section 1 adds a new chapter, IC 3-9-8, to the Indiana Code; it does not amend, repeal or implement a named instrument. Internal points: Sec. 1(b)(1)(C) uses 'fabricated media' before Sec. 3 defines it; Sec. 2(a) makes 'candidate' subject to subsection (b), and the document does not say how (b) interacts with IC 3-5-2-6 beyond that. Source formatting has missing spaces (e.g., 'Sec. 2.(a)For purposes of this chapter,subject to subsection(b)'); quotes reproduce the text as printed.",
+ "events": [
+  {
+   "event": "entry_into_force",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "[EFFECTIVE UPON PASSAGE]",
+   "anchor": "passage of this act",
+   "depends_on": "passage of the act by the General Assembly",
+   "applies_to": "IC 3-9-8 (new Chapter 8, Secs. 1-6)",
+   "evidence": {
+    "provision": "SECTION 1",
+    "quote": "[EFFECTIVE UPON PASSAGE]"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "An emergency is declared for this act.",
+   "anchor": "passage of this act",
+   "depends_on": "passage of the act by the General Assembly",
+   "applies_to": "the whole act (Sections 1-2)",
+   "evidence": {
+    "provision": "SECTION 2",
+    "quote": "An emergency is declared for this act."
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "other",
+   "variable_text": "length of audio campaign communication (minutes)",
+   "operator": ">",
+   "value": 2,
+   "value_text": "more than two (2) minutes in length",
+   "unit": "minutes",
+   "measurement": "Length of the campaign communication as a whole; the text states no measurement method or aggregation.",
+   "level": "other",
+   "trigger": "obligation",
+   "consequence": "Disclaimer must be read at intervals of two (2) minutes for the duration of the communication, in addition to the beginning and end.",
+   "conditions": "Campaign communication includes fabricated media depicting a candidate and is an audio communication.",
+   "evidence": {
+    "provision": "Sec. 5(3)(C)",
+    "quote": "if the campaign communication is more than two (2) minutes in length, at intervals of two (2) minutes"
+   }
+  }
+ ],
+ "section_status": {}
+}

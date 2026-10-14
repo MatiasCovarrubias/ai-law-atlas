@@ -1,0 +1,260 @@
+{
+ "instrument_id": "us-ca-ab1064-2025",
+ "checker": "claude-opus-5-5 (Claude Code)",
+ "protocol": "VP-1.0",
+ "date": "2026-10-14",
+ "tier": "B",
+ "reference": [
+  {
+   "category": "threshold",
+   "provision": "Sec. 22757.21(e)",
+   "quote": "“Child” means a natural person under 18 years of age who resides in this state.",
+   "value": "age < 18 (scope definition of child)",
+   "match": {
+    "X": 0,
+    "Y": 0
+   }
+  },
+  {
+   "category": "threshold",
+   "provision": "Sec. 22757.23(e)",
+   "quote": "unless the child, if the child is at least 13 years of age and less than 16 years of age, or the child’s parent or guardian, if the child is less than 13 years of age, has provided consent",
+   "value": "age 13 to < 16: child's own consent required for developer to train on child's personal information",
+   "match": {
+    "X": 1,
+    "Y": 2
+   }
+  },
+  {
+   "category": "threshold",
+   "provision": "Sec. 22757.23(e)",
+   "quote": "or the child’s parent or guardian, if the child is less than 13 years of age, has provided consent to the developer",
+   "value": "age < 13: parent/guardian consent required (developer training)",
+   "match": {
+    "X": 2,
+    "Y": 1
+   }
+  },
+  {
+   "category": "threshold",
+   "provision": "Sec. 22757.24(d)",
+   "quote": "unless the child, if the child is at least 13 years of age and less than 16 years of age, or the child’s parent or guardian, if the child is less than 13 years of age, has provided consent to the deployer",
+   "value": "age 13 to < 16: child's own consent required for deployer data-sharing agreement",
+   "match": {
+    "X": 3,
+    "Y": 4
+   }
+  },
+  {
+   "category": "threshold",
+   "provision": "Sec. 22757.24(d)",
+   "quote": "or the child’s parent or guardian, if the child is less than 13 years of age, has provided consent to the deployer",
+   "value": "age < 13: parent/guardian consent required (deployer data-sharing)",
+   "match": {
+    "X": 4,
+    "Y": 3
+   }
+  },
+  {
+   "category": "key_date",
+   "provision": "Sec. 22757.22(c)",
+   "quote": "On or before January 1, 2028, the board shall adopt regulations governing all of the following:",
+   "value": "2028-01-01 deadline for board regulations",
+   "match": {
+    "X": 0,
+    "Y": 0
+   }
+  },
+  {
+   "category": "key_date",
+   "provision": "Sec. 2757.23(a) [sic; 22757.23(a)]",
+   "quote": "On or before July 1, 2028, a developer shall do all of the following with respect to a covered product:",
+   "value": "2028-07-01 developer registration, risk level assessment, system information label",
+   "match": {
+    "X": 1,
+    "Y": 2
+   }
+  },
+  {
+   "category": "key_date",
+   "provision": "Sec. 22757.23(f)(1)",
+   "quote": "On or after July 1, 2028, a developer shall submit a covered product it develops to an independent third party audit",
+   "value": "2028-07-01 third-party audit duty applies",
+   "match": {
+    "X": 2,
+    "Y": 3
+   }
+  },
+  {
+   "category": "key_date",
+   "provision": "Sec. 22757.28(b)",
+   "quote": "Before January 1, 2028, the board shall publish a description of the laws described by subdivision (a)",
+   "value": "before 2028-01-01 board guidance on duplicative laws",
+   "match": {
+    "X": 3,
+    "Y": 1
+   }
+  }
+ ],
+ "judgments": {
+  "X": {
+   "thresholds": [
+    {
+     "index": 0,
+     "verdict": "correct",
+     "note": "child = under 18, scope definition"
+    },
+    {
+     "index": 1,
+     "verdict": "correct",
+     "note": "13-<16 child consent band, developer training"
+    },
+    {
+     "index": 2,
+     "verdict": "correct",
+     "note": "<13 parent consent, developer training"
+    },
+    {
+     "index": 3,
+     "verdict": "correct",
+     "note": "13-<16 band, deployer data sharing"
+    },
+    {
+     "index": 4,
+     "verdict": "correct",
+     "note": "<13 parent consent, deployer data sharing"
+    }
+   ],
+   "events": [
+    {
+     "index": 0,
+     "verdict": "correct",
+     "note": "board regulations deadline"
+    },
+    {
+     "index": 1,
+     "verdict": "correct",
+     "note": "developer registration/assessment/label deadline"
+    },
+    {
+     "index": 2,
+     "verdict": "correct",
+     "note": "audit duty applies on or after 2028-07-01"
+    },
+    {
+     "index": 3,
+     "verdict": "correct",
+     "note": "'Before January 1, 2028' coded as 2028-01-01; minor, accepted for both versions"
+    },
+    {
+     "index": 4,
+     "verdict": "correct",
+     "note": "30-day incident report; one row for developer and deployer, per codebook repeated-limit rule; no offset fields but date_text clear"
+    },
+    {
+     "index": 5,
+     "verdict": "correct",
+     "note": "30-day website description after substantiation"
+    },
+    {
+     "index": 6,
+     "verdict": "correct",
+     "note": "30-day corrective-action period"
+    }
+   ],
+   "obligations": [],
+   "enforcement": []
+  },
+  "Y": {
+   "thresholds": [
+    {
+     "index": 0,
+     "verdict": "correct",
+     "note": "child = under 18"
+    },
+    {
+     "index": 1,
+     "verdict": "correct",
+     "note": "<13 parent consent, developer training"
+    },
+    {
+     "index": 2,
+     "verdict": "correct",
+     "note": "13-<16 band, developer training"
+    },
+    {
+     "index": 3,
+     "verdict": "correct",
+     "note": "<13 parent consent, deployer data sharing"
+    },
+    {
+     "index": 4,
+     "verdict": "correct",
+     "note": "13-<16 band, deployer data sharing"
+    },
+    {
+     "index": 5,
+     "verdict": "unsupported",
+     "note": "8-year consecutive term limit for board members is an institutional tenure rule, not a threshold at which treatment of a regulated party changes"
+    }
+   ],
+   "events": [
+    {
+     "index": 0,
+     "verdict": "correct",
+     "note": "board regulations deadline"
+    },
+    {
+     "index": 1,
+     "verdict": "correct",
+     "note": "'Before January 1, 2028' coded as 2028-01-01; minor, accepted for both versions"
+    },
+    {
+     "index": 2,
+     "verdict": "correct",
+     "note": "developer registration deadline"
+    },
+    {
+     "index": 3,
+     "verdict": "correct",
+     "note": "audit duty applies on or after 2028-07-01"
+    },
+    {
+     "index": 4,
+     "verdict": "correct",
+     "note": "30-day incident report, with offset fields"
+    },
+    {
+     "index": 5,
+     "verdict": "correct",
+     "note": "30-day website description"
+    },
+    {
+     "index": 6,
+     "verdict": "correct",
+     "note": "30-day corrective-action period"
+    }
+   ],
+   "obligations": [],
+   "enforcement": []
+  }
+ },
+ "sampling": {
+  "X": {},
+  "Y": {}
+ },
+ "classification": {
+  "X": {
+   "domains": "right",
+   "primary_domain": "right",
+   "note": "minors_child_safety primary; generative_ai (companion chatbots), biometrics, data_protection (training consent), algorithmic_decision_systems (pupil assessment, social score), ai_general all tied to operative provisions"
+  },
+  "Y": {
+   "domains": "partly",
+   "primary_domain": "right",
+   "note": "same as X plus employment_labor, which rests only on the standard whistleblower anti-retaliation clause (22757.25(a)-(b)), an incidental rider rather than an operative employment domain"
+  }
+ },
+ "reference_scope": "full text",
+ "notes": "Match indices refer to the thresholds section for threshold items and to the events section for key_date items. Both versions capture every reference item. The only difference in facts is Y's extra threshold for the board-member 8-year term limit (judged unsupported). Both code the three 30-day procedural periods as conditional deadlines (Y adds offset_value/offset_unit). Neither codes the $25,000 penalty as a threshold (correct)."
+}

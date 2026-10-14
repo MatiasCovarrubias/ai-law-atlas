@@ -1,0 +1,523 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "fr-pjl-ddadue-2025-ai-act",
+ "tier": "B",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "light, effort high, obligations medium",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (Claude Code retrieval)",
+  "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b2518_projet-loi.pdf",
+  "retrieved": "2026-10-14",
+  "version": "Assemblée nationale n° 2518 (17e lég.), projet de loi adopté par le Sénat en première lecture le 18 février 2026 (Sénat T.A. n° 63, 2025-2026), transmitted 20 Feb 2026",
+  "language": "fr",
+  "extent": "partial",
+  "note": "Trimmed 2026-10-14 to the bill's AI-Act implementation part: article 24 (titre V bis LCEN) and articles 24 bis to 24 terdecies added by the Senate. Articles 24 decies (CPCE/ARCEP-type agents), 24 undecies (code monétaire et financier, ACPR), 24 duodecies (loi Informatique et libertés, CNIL) and 24 terdecies (loi 1986, Arcom) also implement Regulation (EU) 2024/1689 and were kept, beyond the requested 24 bis-24 nonies range. Article 63 (code du travail, labour-inspection market surveillance) also cites Regulation 2024/1689 in passing but is not included. Source: whole bill PDF (cache/raw/<id>.pdf, unchanged); re-running extract_texts.py --force would restore the untrimmed text. The existing annotation (annotations/<id>.json) was made on the untrimmed text: only 48 of its 343 quotes occur in the trimmed text (most lost quotes come from non-AI articles)."
+ },
+ "classification": {
+  "domains": [
+   "ai_general",
+   "ai_sectoral",
+   "data_protection",
+   "consumer_protection",
+   "public_sector_ai",
+   "cybersecurity"
+  ],
+  "primary_domain": "ai_general",
+  "mechanisms": [
+   "institution_setup",
+   "licensing_permit_certification",
+   "sandbox_pilot",
+   "mandate_obligation"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "ai_provider",
+   "ai_deployer",
+   "ai_distributor",
+   "auditor_assessor",
+   "government_agency",
+   "regulator"
+  ],
+  "affected_roles": [
+   "consumers_users",
+   "essential_entity"
+  ],
+  "decision_margins": [
+   "firm:entry_market_access",
+   "firm:compliance_process",
+   "household:data_privacy"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national",
+    "subnational"
+   ],
+   "description": "National application, with specific adaptation clauses for overseas collectivities such as French Polynesia and Wallis and Futuna.",
+   "evidence": {
+    "provision": "Art. 24 septies (inserting Code de la défense, Art. L. 1340-6, III)",
+    "quote": "Le présent chapitre est applicable en Polynésie française et à Wallis-et-Futuna."
+   }
+  },
+  "agora_applications": [
+   "Government: judicial and law enforcement",
+   "Transportation",
+   "Medicine, life sciences and public health",
+   "Energy and utilities",
+   "Networking and telecommunications",
+   "Education",
+   "Finance and investment"
+  ],
+  "agora_harms": [
+   "Harm to health/safety",
+   "Harm to infrastructure",
+   "Violation of civil or human rights, including privacy"
+  ],
+  "agora_incentives": [
+   "Fines"
+  ],
+  "agora_risk_factors": [
+   "Safety",
+   "Privacy",
+   "Security: Cybersecurity",
+   "Transparency"
+  ],
+  "agora_strategies": [
+   "Licensing, registration, and certification",
+   "Evaluation: Conformity assessment",
+   "Evaluation: Post-market monitoring",
+   "Pilots and testbeds"
+  ]
+ },
+ "summary": {
+  "short": "Article 24 of a French bill adapting national law to the EU AI Act (Regulation (EU) 2024/1689) makes AI systems subject to the regulation, designates national market-surveillance and notifying authorities across sectors, and sets their investigation, injunction and administrative-fine powers. Pending Senate-adopted text.",
+  "long": "Article 24 of a French bill adapting national law to the EU AI Act (Regulation (EU) 2024/1689) sets out how the regulation is applied and enforced nationally. The Senate-adopted text, pending in the Assemblée nationale, inserts a Title V bis into the 2004 digital economy law (Art. 55-1 to 55-6): AI systems are subject to the regulation, authorities may share information, agents may inspect and fine notified bodies in the toy sector, and fines follow the regulation's Art. 99 ceilings. Art. 24 bis authorises an ordinance, within six months of promulgation, on overseas adaptation and regulatory sandboxes. Art. 24 ter gives the Conseil d'État, Cour de cassation and Cour des comptes oversight of high-risk AI used in judicial functions. Further articles amend the environment, consumer, construction, defence, transport, public health, postal and electronic communications, monetary and financial, data protection (1978) and audiovisual (1986) laws, assigning market-surveillance, notification, certification and fine powers to the CNIL, Arcom, the health agency, the consumer authority, the transport minister, the radio-frequency agency and the financial supervisor. Authorities may order injunctions, suspension, withdrawal, recall and fines. The excerpt gives no entry-into-force date for Article 24."
+ },
+ "relations": [
+  {
+   "relation": "implements",
+   "target_instrument_id": "null",
+   "target_text": "Regulation (EU) 2024/1689 (AI Act), cited as règlement (UE) 2024/1689",
+   "note": "Art. 55-1 I, inserted into the 2004 LCEN, makes AI systems subject to the regulation within the conditions it sets. Art. 24 bis authorises ordinance measures for its application.",
+   "evidence": {
+    "provision": "Article 24, Art. 55-1 I (inserted)",
+    "quote": "sont soumis au règlement (UE) 2024/1689"
+   }
+  },
+  {
+   "relation": "legal_basis",
+   "target_instrument_id": "null",
+   "target_text": "Constitution du 4 octobre 1958, article 38",
+   "note": "Basis of the ordinance power granted to the Government in Art. 24 bis I.",
+   "evidence": {
+    "provision": "Article 24 bis, I",
+    "quote": "Dans les conditions prévues à l’article 38 de la Constitution"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_instrument_id": "null",
+   "target_text": "Loi n° 2004-575 du 21 juin 2004 pour la confiance dans l’économie numérique",
+   "note": "Inserts a new title V bis on AI systems (Art. 55-1 to 55-6).",
+   "evidence": {
+    "provision": "Article 24",
+    "quote": "Après le titre V de la loi n° 2004-575 du 21 juin 2004 pour la confiance dans l’économie numérique, il est inséré un titre V bis"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_instrument_id": "null",
+   "target_text": "Loi n° 78-17 du 6 janvier 1978 relative à l’informatique, aux fichiers et aux libertés",
+   "note": "Amends Arts. 8, 16, 19, 20, 21-1, 21-2, 22 and 22-1, and inserts title IV quinquies (Arts. 124-9 to 124-17) on AI systems; CNIL made competent authority and notified body.",
+   "evidence": {
+    "provision": "Article 24 duodecies (nouveau)",
+    "quote": "La loi n° 78-17 du 6 janvier 1978 relative à l’informatique, aux fichiers et aux libertés est ainsi modifiée"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_instrument_id": "null",
+   "target_text": "Code de l’environnement",
+   "note": "Adds AI-system provisions to L. 557-1, L. 557-31, L. 557-46 and L. 557-53, and inserts L. 557-58-1 (administrative fines).",
+   "evidence": {
+    "provision": "Article 24 quater (nouveau)",
+    "quote": "Le code de l’environnement est ainsi modifié"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_instrument_id": "null",
+   "target_text": "Code de la consommation",
+   "note": "Adds 35° to L. 511-7, 7° and 8° to L. 511-12, inserts L. 512-22-3 and L. 522-9-2 and L. 522-9-3, and repeals the 2° of L. 511-13.",
+   "evidence": {
+    "provision": "Article 24 quinquies (nouveau)",
+    "quote": "Le code de la consommation est ainsi modifié"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_instrument_id": "null",
+   "target_text": "Code monétaire et financier",
+   "note": "Adds supervisory duties and a 5° to L. 612-2 II, inserts L. 612-39-2 (sanctions commission fines) and changes the table in L. 783-2 and parallel articles.",
+   "evidence": {
+    "provision": "Article 24 undecies (nouveau)",
+    "quote": "Le code monétaire et financier est ainsi modifié"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_instrument_id": "null",
+   "target_text": "Code des transports",
+   "note": "Inserts L. 2214-1-1 and L. 2214-3-1, amends L. 2214-2, and adds section 3 (L. 5113-7 and L. 5113-8) on placing boats and personal watercraft on the market.",
+   "evidence": {
+    "provision": "Article 24 octies (nouveau)",
+    "quote": "Le code des transports est ainsi modifié"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_instrument_id": "null",
+   "target_text": "Code de la santé publique",
+   "note": "Adds market surveillance and notified-body roles (L. 5211-2, L. 5221-2), offences L. 5461-10 and L. 5462-9, financial sanctions L. 5471-1-1, and changes the rate in L. 5473-1 III from 30 % to 50 %.",
+   "evidence": {
+    "provision": "Article 24 nonies (nouveau)",
+    "quote": "Le code de la santé publique est ainsi modifié"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_instrument_id": "null",
+   "target_text": "Code des postes et des communications électroniques",
+   "note": "Amends L. 40-1 and L. 43 (ANFR powers and fines over AI systems in radio equipment) and the territorial-application clause in VII.",
+   "evidence": {
+    "provision": "Article 24 decies (nouveau)",
+    "quote": "Le code des postes et des communications électroniques est ainsi"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_instrument_id": "null",
+   "target_text": "Code de la construction et de l’habitation",
+   "note": "Inserts L. 186-9 on administrative fines for breaches of chapter III and sections 1 to 3 of chapter IX of the AI Act.",
+   "evidence": {
+    "provision": "Article 24 sexies (nouveau)",
+    "quote": "du code de la construction et de l’habitation est complétée par un article L. 186-9"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_instrument_id": "null",
+   "target_text": "Code de la défense",
+   "note": "Adds chapter X (L. 1340-1 to L. 1340-7) on market surveillance of high-risk AI systems used as safety components in critical infrastructure.",
+   "evidence": {
+    "provision": "Article 24 septies (nouveau)",
+    "quote": "Le titre III du livre III de la première partie du code de la défense est"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_instrument_id": "null",
+   "target_text": "Code de justice administrative",
+   "note": "Inserts chapter VI (L. 116-1) giving the Conseil d’État market surveillance of AI systems used in judicial functions.",
+   "evidence": {
+    "provision": "Article 24 ter, I",
+    "quote": "Le titre Ier du livre Ier du code de justice administrative est complété"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_instrument_id": "null",
+   "target_text": "Code de l’organisation judiciaire",
+   "note": "Inserts chapter IV (L. 454-1, L. 454-2) assigning the Cour de cassation market surveillance of AI systems used by the judiciary.",
+   "evidence": {
+    "provision": "Article 24 ter, II",
+    "quote": "Le titre V du livre IV du code de l’organisation judiciaire est"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_instrument_id": "null",
+   "target_text": "Code des juridictions financières",
+   "note": "Inserts section 7 (L. 111-19) assigning the Cour des comptes market surveillance of AI systems used by financial courts.",
+   "evidence": {
+    "provision": "Article 24 ter, III",
+    "quote": "Le chapitre Ier du titre Ier du livre Ier du code des juridictions"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_instrument_id": "null",
+   "target_text": "Loi n° 86-1067 du 30 septembre 1986 relative à la liberté de communication",
+   "note": "Adds Arts. 20-12 and 20-13 giving ARCOM supervision of prohibited practices and transparency obligations of AI systems.",
+   "evidence": {
+    "provision": "Article 24 terdecies (nouveau)",
+    "quote": "Le titre Ier de la loi n° 86-1067 du 30 septembre 1986 relative à la liberté"
+   }
+  },
+  {
+   "relation": "designates_under",
+   "target_instrument_id": "null",
+   "target_text": "Regulation (EU) 2019/1020 on market surveillance and compliance of products",
+   "note": "Applies the market surveillance powers of Art. 14(4) of 2019/1020 to agents enforcing the AI Act (also used in Arts. 20 and 20-12 of the 1978 law).",
+   "evidence": {
+    "provision": "Article 24 septies, Art. L. 1340-3 II (Code de la défense)",
+    "quote": "disposent des pouvoirs prévus au paragraphe 4 de l’article 14 du règlement (UE) 2019/1020"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": "null",
+   "target_text": "Regulation (EU) 2017/745 on medical devices",
+   "note": "Covers AI systems that are safety components of medical devices; ANSM is made authority for market surveillance and may authorise certain systems under Art. 59 of 2017/745.",
+   "evidence": {
+    "provision": "Article 24 nonies, 1° a)",
+    "quote": "l’article 1er du règlement (UE) 2017/745 du Parlement européen et du Conseil du 5 avril 2017 précité"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": "null",
+   "target_text": "Regulation (EU) 2024/2847 on horizontal cybersecurity requirements (Cyber Resilience Act)",
+   "note": "In the territorial-application clause, references to 2024/2847 are replaced by national provisions.",
+   "evidence": {
+    "provision": "Article 24 decies, 2° d)",
+    "quote": "les références au règlement (UE) 2024/2847 du Parlement européen et du Conseil du 23 octobre 2024"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": "null",
+   "target_text": "Directive 2013/53/UE on recreational craft and personal watercraft",
+   "note": "Without prejudice to the directive; AI systems that are safety components of recreational craft are covered by L. 5113-7.",
+   "evidence": {
+    "provision": "Article 24 octies, 4° (Art. L. 5113-7 I)",
+    "quote": "directive 2013/53/UE du Parlement européen et du"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": "null",
+   "target_text": "Regulation (EU) 2016/679 (GDPR)",
+   "note": "Art. 124-9 applies the AI title without prejudice to the other provisions of the 1978 law and the GDPR.",
+   "evidence": {
+    "provision": "Article 24 duodecies, 8° (Art. 124-9)",
+    "quote": "s’applique sans préjudice des autres dispositions de la présente loi et du règlement (UE) 2016/679"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": "null",
+   "target_text": "Directive 2009/48/CE on the safety of toys",
+   "note": "Art. 55-5 gives inspection powers over notified bodies in the toy sector; Art. 55-6 makes the toy notifying authority competent to impose fines.",
+   "evidence": {
+    "provision": "Article 24, Art. 55-5",
+    "quote": "défini par la directive 2009/48/CE du Parlement européen et du"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": "null",
+   "target_text": "Loi n° 2021-1382 du 25 octobre 2021 relative à la régulation et à la protection de l’accès aux œuvres culturelles à l’ère numérique, article 36",
+   "note": "Technical expertise of the State administrative service named in Art. 36 may be used by market surveillance authorities.",
+   "evidence": {
+    "provision": "Article 24, Art. 55-3 I",
+    "quote": "à l’article 36 de la loi n° 2021-1382 du 25 octobre 2021 relative à la"
+   }
+  }
+ ],
+ "notes": "Excerpt of the Senate-adopted bill (first reading, registered at the Assemblée nationale 20 Feb 2026), covering Titre IV Art. 24 to 24 terdecies only; other provisions are elided with […], so text_version.extent is partial. The AI Act is cited as règlement (UE) 2024/1689, which is not in the registry, so target ids are null. Placeholders read loi n° du portant diverses dispositions (Art. 24 nonies 13 b and 15 b; Art. 24 undecies 5 a); the bill's title as given in Art. 24 nonies 13 b omits d’information and agriculture et de pêche, which the cover title includes. Cross-references to 2022-582 and 2022-1086 ordinances (medical devices) are not coded as relations.",
+ "events": [
+  {
+   "event": "received_chamber",
+   "date": "2026-02-20",
+   "date_type": "absolute",
+   "date_text": "Enregistré à la Présidence de l’Assemblée nationale le 20 février 2026.",
+   "applies_to": "Assemblée nationale (second chamber)",
+   "evidence": {
+    "provision": "Cover page (en-tête)",
+    "quote": "Enregistré à la Présidence de l’Assemblée nationale le 20 février 2026."
+   }
+  },
+  {
+   "event": "passed_chamber",
+   "date": null,
+   "date_type": "not_stated",
+   "date_text": "Le Sénat a adopté, en première lecture, après engagement de la procédure accélérée",
+   "applies_to": "Sénat",
+   "evidence": {
+    "provision": "Cover page (en-tête)",
+    "quote": "Le Sénat a adopté, en première lecture, après engagement de la procédure accélérée"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "dans un délai de six mois à compter de la promulgation de la présente loi",
+   "anchor": "promulgation de la présente loi",
+   "applies_to": "Government ordinance adapting national law to the AI Regulation (Art. 24 bis, I, 1° and 2°)",
+   "offset_value": 6,
+   "offset_unit": "months",
+   "anchor_event": "signed",
+   "evidence": {
+    "provision": "Art. 24 bis, I",
+    "quote": "dans un délai de six mois à compter de la promulgation de la présente loi"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "dans un délai de deux mois à compter de la publication de l’ordonnance",
+   "depends_on": "publication de l’ordonnance (Art. 24 bis, I)",
+   "applies_to": "Bill ratifying the ordinance (Art. 24 bis, II)",
+   "evidence": {
+    "provision": "Art. 24 bis, II",
+    "quote": "Un projet de loi de ratification est déposé devant le Parlement dans un délai de deux mois à compter de la publication de l’ordonnance."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "dans un délai d’un mois",
+   "depends_on": "written notice to the operator of the envisaged sanction",
+   "applies_to": "Written observations before administrative fines: Art. 24 (inserting Loi 2004-575, Art. 55-6); Art. 24 quater, 5° (L. 557-58-1, III); Art. 24 octies, 4° (L. 5113-8, II); Art. 24 septies (L. 1340-5, II); Art. 24 decies, 2° (L. 43, II septies, minimum one month)",
+   "evidence": {
+    "provision": "Art. 24 (inserting Loi 2004-575, Art. 55-6)",
+    "quote": "en l’invitant à présenter, dans un délai d’un mois, ses observations écrites"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "qui ne peut pas être inférieur à dix jours ouvrables",
+   "depends_on": "time limit set by the authority for the operator's observations before injunction measures",
+   "applies_to": "Injunction measures against high-risk AI systems (Art. 24 septies, inserting Code de la défense, Art. L. 1340-4, I)",
+   "evidence": {
+    "provision": "Art. 24 septies (inserting Code de la défense, Art. L. 1340-4, I)",
+    "quote": "qui ne peut pas être inférieur à dix jours ouvrables"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "un délai d’exécution qui ne peut être inférieur à trois jours",
+   "depends_on": "injunction issued under Art. 20 V ter, 2° of Loi 78-17",
+   "applies_to": "Injunction to bring an AI system into compliance (Art. 20 V ter, 2°)",
+   "evidence": {
+    "provision": "Art. 24 duodecies, 4° (inserting Loi 78-17, Art. 20 V ter, 2°)",
+    "quote": "Cette injonction est assortie d’un délai d’exécution qui ne peut être inférieur à trois jours."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "dans un délai de sept jours",
+   "depends_on": "not stated in the text (measure under Art. 73(8) of the AI Regulation taken by the CNIL president)",
+   "applies_to": "CNIL president's measures against AI operators (Art. 20 V bis, 2°)",
+   "evidence": {
+    "provision": "Art. 24 duodecies, 4° (inserting Loi 78-17, Art. 20 V bis, 2°)",
+    "quote": "dans un délai de sept jours"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "dans un délai de trois mois, de l’état de l’instruction ou de l’issue de cette réclamation",
+   "depends_on": "receipt of a complaint (réclamation) by the supervisory authority",
+   "applies_to": "Supervisory authority of the judiciary's AI systems: duty to inform the complainant (Art. L. 454-2 reference to Art. L. 453-2)",
+   "evidence": {
+    "provision": "Art. 24 ter, II (inserting Code de l’organisation judiciaire, Art. L. 454-2)",
+    "quote": "dans un délai de trois mois, de l’état de l’instruction ou de l’issue de cette réclamation"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "dans un délai de six mois à compter de la visite",
+   "depends_on": "inspection visit (visite) under Art. 20-12 IV",
+   "applies_to": "Restitution of documents seized in inspections (Art. 20-12 IV, C)",
+   "evidence": {
+    "provision": "Art. 24 terdecies (inserting Loi 86-1067, Art. 20-12, IV, C)",
+    "quote": "dans un délai de six mois à compter de la visite"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "dans un délai de cinq jours à compter de son établissement",
+   "depends_on": "establishment of the minutes (procès-verbal) of the hearing",
+   "applies_to": "Copy of hearing minutes to the persons concerned (Art. 20-12 III, 2°)",
+   "evidence": {
+    "provision": "Art. 24 terdecies (inserting Loi 86-1067, Art. 20-12, III, 2°)",
+    "quote": "Un double du procès-verbal est transmis dans un délai de cinq jours à compter de son établissement aux personnes concernées"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "other",
+   "variable_text": "montant maximal des amendes administratives pour des manquements en concours (plafond cumulé)",
+   "operator": ">",
+   "value": 35000000,
+   "value_text": "dont le montant maximal excède 35 millions d’euros",
+   "unit": "EUR",
+   "currency": "EUR",
+   "measurement": "Montant maximal légal des amendes encourues pour des manquements en concours, sanctionnés dans une même procédure ou dans des procédures séparées",
+   "level": "entity",
+   "trigger": "penalty_tier",
+   "consequence": "Where several administrative sanctions are imposed on the same author for concurrent breaches, they are executed cumulatively up to the highest legal maximum.",
+   "conditions": "Several administrative sanctions imposed on the same author for concurrent breaches (manquements en concours); alternative to the 7 % turnover limb in the same sentence.",
+   "evidence": {
+    "provision": "Art. 24 decies, 2° c (inserting CPCE Art. L. 43 II septies)",
+    "quote": "dont le montant maximal excède 35 millions d’euros ou 7 % de son chiffre d’affaires pour une entreprise"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "montant maximal des amendes administratives pour des manquements en concours, en pourcentage du chiffre d’affaires (entreprise)",
+   "operator": ">",
+   "value": 7,
+   "value_text": "ou 7 % de son chiffre d’affaires pour une entreprise",
+   "unit": "percent of turnover",
+   "measurement": "Share of the firm's chiffre d’affaires, applied to the maximum fine for concurrent breaches",
+   "level": "entity",
+   "trigger": "penalty_tier",
+   "consequence": "Where several administrative sanctions are imposed on the same author for concurrent breaches, they are executed cumulatively up to the highest legal maximum.",
+   "conditions": "Applies to an entreprise; alternative to the 35 million euro limb in the same sentence.",
+   "evidence": {
+    "provision": "Art. 24 decies, 2° c (inserting CPCE Art. L. 43 II septies)",
+    "quote": "ou 7 % de son chiffre d’affaires pour une entreprise"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "période de réitération des manquements sanctionnés (délai à compter de la décision de sanction devenue définitive)",
+   "operator": "<=",
+   "value": 2,
+   "value_text": "dans un délai de deux ans à compter de la date à laquelle la première décision de sanction est devenue définitive",
+   "unit": "years",
+   "measurement": "Period from the date the first sanction decision became final, within which repeated breaches are counted",
+   "level": "entity",
+   "trigger": "penalty_tier",
+   "consequence": "Repeated breaches sanctioned within this period are taken into account in setting the amount of the financial sanction.",
+   "conditions": "Repetition of breaches already sanctioned by a final decision; applies to breaches under L. 5461-10 and L. 5462-9.",
+   "evidence": {
+    "provision": "Art. 24 nonies, 9° (inserting CSP Art. L. 5471-1-1 III)",
+    "quote": "manquements sanctionnés dans un délai de deux ans à compter de la date à laquelle la première décision de sanction est devenue définitive"
+   }
+  }
+ ],
+ "section_status": {}
+}

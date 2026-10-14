@@ -1,0 +1,132 @@
+{
+ "instrument_id": "mx-dip-lgamvlv-20quater-ia-2026",
+ "checker": "claude-opus-5-5 (Claude Code)",
+ "protocol": "VP-1.0",
+ "date": "2026-10-14",
+ "reference": [
+  {
+   "category": "key_date",
+   "provision": "I. Antecedentes, 1",
+   "quote": "En sesión celebrada el 29 de abril de 2025, la Dip. Annia Sarahí Gómez\nCárdenas y Diputados integrantes del Grupo Parlamentario del PAN\npresentaron la Iniciativa",
+   "value": "introduced 2025-04-29",
+   "match": {
+    "X": 0,
+    "Y": 0
+   }
+  },
+  {
+   "category": "key_date",
+   "provision": "Closing (signature of the dictamen)",
+   "quote": "Dado en el Palacio Legislativo de San Lázaro a los 21 días del mes de octubre de\n2025.",
+   "value": "committee_approved (Comisión de Igualdad de Género dictamen) 2025-10-21",
+   "match": {
+    "X": 3,
+    "Y": 3
+   }
+  },
+  {
+   "category": "key_date",
+   "provision": "Transitorio Único",
+   "quote": "El presente decreto entrará en vigor el día siguiente al de su\npublicación en el Diario Oficial de la Federación.",
+   "value": "entry into force the day after publication in the DOF (relative, 1 day after published)",
+   "match": {
+    "X": 5,
+    "Y": 5
+   }
+  }
+ ],
+ "judgments": {
+  "X": {
+   "obligations": [],
+   "enforcement": [],
+   "thresholds": [],
+   "events": [
+    {
+     "index": 0,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 1,
+     "verdict": "wrong_type",
+     "note": "Referral (turno) to committee on 2025-04-30 coded as a second 'introduced' event; the initiative was introduced on 2025-04-29"
+    },
+    {
+     "index": 2,
+     "verdict": "correct",
+     "note": "Committee's extended deadline for the dictamen; procedural but stated in the text"
+    },
+    {
+     "index": 3,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 4,
+     "verdict": "correct",
+     "note": "Prospective DOF publication used as anchor; not_stated is loose (conditional would fit a pending bill) but no date is asserted"
+    },
+    {
+     "index": 5,
+     "verdict": "correct",
+     "note": "Day after DOF publication, date left null"
+    }
+   ]
+  },
+  "Y": {
+   "obligations": [],
+   "enforcement": [],
+   "thresholds": [],
+   "events": [
+    {
+     "index": 0,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 1,
+     "verdict": "wrong_type",
+     "note": "Referral (turno) to committee on 2025-04-30 coded as a second 'introduced' event"
+    },
+    {
+     "index": 2,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 3,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 4,
+     "verdict": "wrong_type",
+     "note": "2026-02-17 is the Gaceta Parlamentaria issue carrying the committee report (date from the source header), coded as 'published', the event that anchors entry into force (DOF publication); it conflates the two and drives the wrong computed date in event 5"
+    },
+    {
+     "index": 5,
+     "verdict": "wrong_date",
+     "note": "Entry into force computed as 2026-02-18 from the Gaceta date; the text anchors it on publication in the Diario Oficial de la Federación, which has not occurred in this document. Date should be null"
+    }
+   ]
+  }
+ },
+ "sampling": {
+  "X": {},
+  "Y": {}
+ },
+ "classification": {
+  "X": {
+   "domains": "right",
+   "primary_domain": "right",
+   "note": "synthetic_media_deepfakes (primary) and online_safety_content fit the operative paragraph (non-consensual generation and dissemination of simulated intimate content)."
+  },
+  "Y": {
+   "domains": "right",
+   "primary_domain": "right",
+   "note": "Same domains as X."
+  }
+ },
+ "reference_scope": "full text",
+ "notes": "Short OCR text; full reference list. No thresholds in the operative decree; both versions mark thresholds not_found, consistent with the reference. Reference item 3 (entry into force) is matched by Y event 5, but that item carries a wrong computed date (judged wrong_date). Both versions add procedural events (referral, extended committee deadline) not in the reference."
+}

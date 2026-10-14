@@ -1,0 +1,371 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "us-hr8094-119",
+ "tier": "B",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "light, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-interim-20261014"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (connectors/fetch_texts.py)",
+  "url": "https://www.govinfo.gov/content/pkg/BILLS-119hr8094ih/html/BILLS-119hr8094ih.htm",
+  "retrieved": "2026-10-13",
+  "version": "as fetched",
+  "language": "en",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "ai_general",
+   "generative_ai",
+   "consumer_protection"
+  ],
+  "primary_domain": "ai_general",
+  "mechanisms": [
+   "disclosure_transparency",
+   "mandate_obligation",
+   "registration_notification"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "ai_developer",
+   "ai_provider",
+   "government_agency"
+  ],
+  "affected_roles": [
+   "ai_deployer",
+   "consumers_users",
+   "general_public"
+  ],
+  "decision_margins": [
+   "firm:product_design_release",
+   "firm:compliance_process",
+   "household:information"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national"
+   ],
+   "description": "Applies to covered entities over which the Federal Trade Commission has jurisdiction, including certain common carriers and non-profit organizations.",
+   "evidence": {
+    "provision": "Sec. 2(l)(3)(C)",
+    "quote": "any person, partnership, or corporation over which the Commission has jurisdiction"
+   }
+  },
+  "agora_risk_factors": [
+   "Transparency"
+  ],
+  "agora_strategies": [
+   "Disclosure",
+   "Disclosure: About inputs",
+   "Disclosure: About evaluation",
+   "Disclosure: In standard form",
+   "Government study or report"
+  ]
+ },
+ "summary": {
+  "short": "Directs the Federal Trade Commission to issue regulations requiring covered entities that provide use of or services from foundation models to disclose information about training data, documentation, testing and operations, and to submit specified information to the Commission. Regulations apply 90 days after promulgation.",
+  "long": "The bill directs the Federal Trade Commission, within one year of enactment and in consultation with NIST, Commerce and OSTP, to issue regulations requiring covered entities to publish and submit information about foundation models. Required content includes training data sources, collection and composition, data governance, intended uses and foreseeable risks, version and knowledge cutoff, supported languages, alignment with the NIST AI Risk Management Framework, benchmark performance, and computational power used. Covered entities are persons providing use of or services from a foundation model that meet any of four tests: high-capability performance on risky tasks, over 10,000,000 aggregate monthly users, over 10,000,000 monthly downloads, or training compute above 10^26 operations. Fully open-source models are exempt. Publication in a system or model card can count as compliance, and redactions are allowed for cybersecurity, public safety, national security or compliance with federal law if identified and justified. Derivative models must link to the base model's disclosure page and comply with rules for significant changes. Small and new businesses receive compliance guidance and a three-month grace period from penalties. Violations are treated as violations of an FTC rule on unfair or deceptive practices, with enforcement after 14 days' notice. The regulations apply 90 days after promulgation and are reviewed annually."
+ },
+ "relations": [
+  {
+   "relation": "cross_references",
+   "target_text": "Federal Trade Commission Act (15 U.S.C. 41 et seq.)",
+   "note": "Enforcement of the bill's FTC regulations follows the FTC Act as if its terms were incorporated; violations are treated as violations of a rule under FTC Act section 18(a)(1)(B) (15 U.S.C. 57a(a)(1)(B)); FTC Act sections 4, 5(a)(2) and 6 are referenced in the covered-entity jurisdiction clause (Sec. 2(l)(3)(C)(ii)).",
+   "evidence": {
+    "provision": "Sec. 2(j)(2)(A)",
+    "quote": "as though all applicable terms and provisions of the Federal Trade Commission Act (15 U.S.C. 41 et seq.) were incorporated into and made a part of this section"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "National Artificial Intelligence Initiative Act of 2020 (Public Law 116-283), section 5002",
+   "note": "'Artificial intelligence' is defined by reference to section 5002 of that Act.",
+   "evidence": {
+    "provision": "Sec. 2(l)(1)",
+    "quote": "of the National Artificial Intelligence Initiative Act of 2020"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Critical Infrastructures Protection Act of 2001 (42 U.S.C. 5195c(e))",
+   "note": "'Critical infrastructure' is defined by reference to subsection (e) of that Act.",
+   "evidence": {
+    "provision": "Sec. 2(l)(4)",
+    "quote": "of the Critical Infrastructures Protection Act of 2001"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Small Business Act (15 U.S.C. 632(a)), section 3(a)",
+   "note": "'Small business' is defined by reference to the term 'small business concern' in section 3(a) of that Act; used in the small-business compliance plan in Sec. 2(e).",
+   "evidence": {
+    "provision": "Sec. 2(l)(10)",
+    "quote": "of the Small Business Act (15 U.S.C. 632(a))"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "5 U.S.C. 553 (section 553 of title 5, United States Code)",
+   "note": "Regulations under Sec. 2(a)(1) and the threshold-updating power in Sec. 2(l)(3)(B) must be promulgated in accordance with section 553 of title 5.",
+   "evidence": {
+    "provision": "Sec. 2(a)(1)",
+    "quote": "In accordance with section 553 of title 5, United"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Communications Act of 1934 (47 U.S.C. 151 et seq.)",
+   "note": "Common carriers subject to the Communications Act of 1934 are within the definition of covered persons notwithstanding certain FTC Act jurisdictional limits.",
+   "evidence": {
+    "provision": "Sec. 2(l)(3)(C)(ii)(I)",
+    "quote": "the Communications Act of 1934"
+   }
+  }
+ ],
+ "notes": "Standalone bill: it creates new FTC rulemaking and does not amend, repeal or implement an existing instrument; only statutory cross-references are listed. Internal inconsistency: Sec. 2(l)(3)(B) lets the Commission update the number of monthly output instances for subparagraph (A)(i), but (A)(i) contains no output-instance figure. Sec. 2(d) is headed 'Consideration of Alternative Provisions' while its operative text says the Commission 'shall require' downstream models to comply. The term 'fully open-source model' in Sec. 2(c) is not defined. Sec. 2(j)(2)(A) is qualified by 'Except as provided in subsection (l)(3)(C)', which only defines covered persons. Text is the introduced version (IH) of 26 March 2026.",
+ "events": [
+  {
+   "event": "introduced",
+   "date": "2026-03-26",
+   "date_type": "absolute",
+   "date_text": "March 26, 2026",
+   "applies_to": "House of Representatives; referred to the Committee on Energy and Commerce",
+   "evidence": {
+    "provision": "Cover page (date of introduction)",
+    "quote": "March 26, 2026"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "Not later than 1 year after the date of the enactment of this Act, the Commission, in consultation with ... shall do the following: (1) ... promulgate regulations",
+   "anchor": "date of enactment of this Act",
+   "applies_to": "Federal Trade Commission: promulgate regulations under Sec. 2(a)(1) and issue guidance under Sec. 2(a)(2)",
+   "offset_value": 1,
+   "offset_unit": "years",
+   "anchor_event": "signed",
+   "evidence": {
+    "provision": "Sec. 2(a)",
+    "quote": "Not later than 1 year after the date of the enactment of this Act"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "Not later than 1 year after the date of the enactment of this Act, the Commission shall establish a web page on the website of the Commission",
+   "anchor": "date of enactment of this Act",
+   "applies_to": "Federal Trade Commission: establish foundation model resources web page under Sec. 2(f)",
+   "offset_value": 1,
+   "offset_unit": "years",
+   "anchor_event": "signed",
+   "evidence": {
+    "provision": "Sec. 2(f)",
+    "quote": "Not later than 1 year after the date of the enactment of this Act"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "Not later than 1 year after the date of the enactment of this Act, the Commission shall submit ... a report on the establishment, implementation, and enforcement of the regulations",
+   "anchor": "date of enactment of this Act",
+   "applies_to": "Federal Trade Commission: report to the House Energy and Commerce and Science, Space, and Technology Committees and the Senate Commerce, Science, and Transportation Committee under Sec. 2(k)",
+   "offset_value": 1,
+   "offset_unit": "years",
+   "anchor_event": "signed",
+   "evidence": {
+    "provision": "Sec. 2(k)",
+    "quote": "Not later than 1 year after the date of the enactment of this Act"
+   }
+  },
+  {
+   "event": "application",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "The regulations required by subsection (a)(1) shall apply beginning on the date that is 90 days after the date on which the Commission promulgates such regulations.",
+   "depends_on": "promulgation by the Commission of regulations under Sec. 2(a)(1)",
+   "applies_to": "Regulations under Sec. 2(a)(1) (covered entity transparency requirements)",
+   "evidence": {
+    "provision": "Sec. 2(h)",
+    "quote": "shall apply beginning on the date that is 90 days after the date on which the Commission promulgates such regulations"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "Not later than 1 year after the date on which the Commission promulgates the regulations required by subsection (a)(1), and annually thereafter, the Commission ... shall assess the requirements established by the regulations and update the regulations",
+   "depends_on": "promulgation by the Commission of regulations under Sec. 2(a)(1)",
+   "applies_to": "Federal Trade Commission: assess and update regulations under Sec. 2(a)(1)",
+   "evidence": {
+    "provision": "Sec. 2(i)",
+    "quote": "Not later than 1 year after the date on which the Commission promulgates the regulations required by subsection (a)(1), and annually thereafter"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "and annually thereafter (repeats the assessment and update duty of Sec. 2(i))",
+   "depends_on": "first assessment and update deadline under Sec. 2(i)",
+   "applies_to": "Federal Trade Commission: annual assessment and update of regulations under Sec. 2(a)(1)",
+   "evidence": {
+    "provision": "Sec. 2(i)",
+    "quote": "and annually thereafter"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "Providing one three-month grace period beginning on the date on which a small business or new business becomes a covered entity during which such covered entity is not subject to penalties under this Act",
+   "depends_on": "date on which a small business or new business becomes a covered entity",
+   "applies_to": "Small businesses and new businesses that become covered entities",
+   "evidence": {
+    "provision": "Sec. 2(e)(2)",
+    "quote": "one three-month grace period beginning on the date on which a small business or new business becomes a covered entity"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "the Commission shall provide covered entities with notice that they are covered entities not less than fourteen days before taking any enforcement action",
+   "depends_on": "Commission's enforcement action against a covered entity",
+   "applies_to": "Federal Trade Commission: notice to covered entities before enforcement action under Sec. 2(j)(2)",
+   "evidence": {
+    "provision": "Sec. 2(j)(2)(C)",
+    "quote": "not less than fourteen days before taking any enforcement action"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "compute_training",
+   "variable_text": "quantity of computing power used to train the model, including the original training run and any subsequent fine-tuning, reinforcement learning or other material modifications",
+   "operator": ">",
+   "value": 1e+26,
+   "value_text": "greater than 10\\26\\ integer or floating point operations",
+   "unit": "operations",
+   "measurement": "computing used for the original training run and for any subsequent fine-tuning, reinforcement learning, or other material modifications the entity applies",
+   "level": "model",
+   "trigger": "scope_definition",
+   "consequence": "A person, partnership or corporation providing use of or services from the model is a covered entity under Sec. 2(l)(3)(A), subject to the FTC regulations under Sec. 2(a)",
+   "conditions": "Alternative to the other prongs (i) to (iii) of Sec. 2(l)(3)(A) (the text says 'does any of the following'); provider must be within Sec. 2(l)(3)(C); the Commission may update the number by regulation under Sec. 2(l)(3)(B)",
+   "evidence": {
+    "provision": "Sec. 2(l)(3)(A)(iv)",
+    "quote": "Was trained using a quantity of computing power greater than 10\\26\\ integer or floating point operations"
+   }
+  },
+  {
+   "variable": "users_monthly_active",
+   "variable_text": "monthly users of a foundation model, in aggregate, including users of second party entities that use the model",
+   "operator": ">",
+   "value": 10000000,
+   "value_text": "over 10,000,000 monthly users",
+   "unit": "users",
+   "measurement": "in aggregate, including users of second party entities that use such model",
+   "level": "model",
+   "trigger": "scope_definition",
+   "consequence": "A person, partnership or corporation providing use of or services from the model is a covered entity under Sec. 2(l)(3)(A), subject to the FTC regulations under Sec. 2(a)",
+   "conditions": "Alternative to the other prongs of Sec. 2(l)(3)(A); provider must be within Sec. 2(l)(3)(C); the Commission may update the number by regulation under Sec. 2(l)(3)(B)",
+   "evidence": {
+    "provision": "Sec. 2(l)(3)(A)(ii)",
+    "quote": "Has, in aggregate, over 10,000,000 monthly users"
+   }
+  },
+  {
+   "variable": "volume",
+   "variable_text": "monthly foundation model download instances, in aggregate, for models typically downloaded once for use by a user",
+   "operator": ">",
+   "value": 10000000,
+   "value_text": "over 10,000,000 monthly foundation model download instances",
+   "unit": "download instances",
+   "measurement": "in aggregate; applies if the model is typically downloaded once for use by a user",
+   "level": "model",
+   "trigger": "scope_definition",
+   "consequence": "A person, partnership or corporation providing use of or services from the model is a covered entity under Sec. 2(l)(3)(A), subject to the FTC regulations under Sec. 2(a)",
+   "conditions": "Alternative to the other prongs of Sec. 2(l)(3)(A); provider must be within Sec. 2(l)(3)(C); the Commission may update the number by regulation under Sec. 2(l)(3)(B)",
+   "evidence": {
+    "provision": "Sec. 2(l)(3)(A)(iii)",
+    "quote": "Has in aggregate, over 10,000,000 monthly foundation model download instances"
+   }
+  },
+  {
+   "variable": "model_parameters",
+   "variable_text": "number of parameters a model generally contains",
+   "operator": ">=",
+   "value": 1000000000,
+   "value_text": "at least 1,000,000,000 parameters",
+   "unit": "parameters",
+   "measurement": "stated as 'generally contains'",
+   "level": "model",
+   "trigger": "scope_definition",
+   "consequence": "Model meets one of the cumulative requirements for being a foundation model under Sec. 2(l)(5)(A)",
+   "conditions": "Must also be trained on broad data, generally use self-supervision, be designed for generality of output, and be generally applicable across a wide range of contexts or tasks (Sec. 2(l)(5)(A)(i), (ii), (iv), (v)); Sec. 2(l)(5)(B) extends the term to models provided with technical safeguards",
+   "evidence": {
+    "provision": "Sec. 2(l)(5)(A)(iii)",
+    "quote": "Generally contains at least 1,000,000,000 parameters."
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "years in operation of a startup or other new business",
+   "operator": "<",
+   "value": 1,
+   "value_text": "in operation for less than 1 year",
+   "unit": "years",
+   "measurement": "period of operation of the business",
+   "level": "entity",
+   "trigger": "eligibility",
+   "consequence": "Qualifies as a new business for the compliance assistance plan and the three-month grace period under Sec. 2(e)",
+   "conditions": "Applies to a startup or other new business; relevant when the business becomes a covered entity",
+   "evidence": {
+    "provision": "Sec. 2(l)(8)",
+    "quote": "a startup or other new business that has been in operation for less than 1 year"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "small business concern size standard",
+   "operator": "=",
+   "value": null,
+   "value_text": "the meaning given the term ``small business concern'' in section 3(a) of the Small Business Act (15 U.S.C. 632(a))",
+   "unit": "",
+   "measurement": "as defined in section 3(a) of the Small Business Act",
+   "level": "entity",
+   "trigger": "eligibility",
+   "consequence": "Qualifies as a small business for the compliance assistance plan and the three-month grace period under Sec. 2(e)",
+   "conditions": "Size class defined by reference to another act; value is not stated in this text",
+   "depends_on": "section 3(a) of the Small Business Act (15 U.S.C. 632(a))",
+   "evidence": {
+    "provision": "Sec. 2(l)(10)",
+    "quote": "the meaning given the term ``small business concern'' in section 3(a) of the Small Business Act"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "grace period after a small business or new business becomes a covered entity",
+   "operator": "=",
+   "value": 3,
+   "value_text": "one three-month grace period",
+   "unit": "months",
+   "measurement": "period beginning on the date on which the small business or new business becomes a covered entity",
+   "level": "entity",
+   "trigger": "benefit_duration",
+   "consequence": "The covered entity is not subject to penalties under the Act or any regulation promulgated under it during the period",
+   "conditions": "Applies only to a small business or new business; the Commission must provide a representative to meet with the entity during the period under Sec. 2(e)(3)",
+   "evidence": {
+    "provision": "Sec. 2(e)(2)",
+    "quote": "Providing one three-month grace period beginning on the date on which a small business or new business becomes a covered entity"
+   }
+  }
+ ],
+ "section_status": {}
+}

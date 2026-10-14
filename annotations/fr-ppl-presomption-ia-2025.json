@@ -1,0 +1,118 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "fr-ppl-presomption-ia-2025",
+ "tier": "B",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "light, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-interim-20261014"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (connectors/fetch_texts.py)",
+  "url": "https://www.senat.fr/leg/tas25-085.pdf",
+  "retrieved": "2026-10-13",
+  "version": "as fetched",
+  "language": "fr",
+  "extent": "full",
+  "note": "PDF linked from https://www.senat.fr/leg/tas25-085.html"
+ },
+ "classification": {
+  "domains": [
+   "ip_training_data"
+  ],
+  "primary_domain": "ip_training_data",
+  "mechanisms": [
+   "liability_rule"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "ai_provider"
+  ],
+  "decision_margins": [
+   "firm:input_use"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national"
+   ],
+   "description": "Amends the French Intellectual Property Code and applies in French civil proceedings.",
+   "evidence": {
+    "provision": "I. 1°",
+    "quote": "Le code de la propriété intellectuelle est ainsi modifié"
+   }
+  },
+  "agora_incentives": [
+   "Civil liability"
+  ]
+ },
+ "summary": {
+  "short": "Proposed French law adding Article L. 331-4-1 to the Intellectual Property Code: in civil disputes, a protected work is presumed used by an AI model or system provider once an indication makes that use plausible, unless disproved. Applies to pending cases from entry into force.",
+  "long": "The bill, adopted by the Senate at first reading (document dated 8 April 2026), would add Article L. 331-4-1 to the Intellectual Property Code. In any civil dispute, a work or protected object under copyright or a related right is presumed to have been used by the provider of an AI model or system, once an indication relating to the system's development or deployment, or to its output, makes that use plausible; the presumption can be rebutted by contrary proof. Article I.2° (new) updates a reference in Article L. 811-1-1 to the new law's title. Paragraph II applies the new presumption to proceedings pending on the date of entry into force, without reopening decisions that have become final. The text sets no thresholds, penalties or administrative enforcement, and does not define 'AI system' or 'model'."
+ },
+ "relations": [
+  {
+   "relation": "amends",
+   "target_text": "Code de la propriété intellectuelle (inserts new art. L. 331-4-1 in section 1 of chapter Ier of title III of book III of the first part; 2° amends the 1° of art. L. 811-1-1)",
+   "note": "Part I of the bill modifies the Code de la propriété intellectuelle. The code is not in the registry, so target_instrument_id is empty.",
+   "evidence": {
+    "provision": "I",
+    "quote": "Le code de la propriété intellectuelle est ainsi modifié :"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "loi n° 2021-1382 du 25 octobre 2021 relative à la régulation et à la protection de l’accès aux œuvres culturelles à l’ère numérique",
+   "note": "Art. L. 811-1-1 1° cites this law. Part I 2° replaces that citation with a reference to the proposed law; the text changes only the citation.",
+   "evidence": {
+    "provision": "I, 2°",
+    "quote": "« loi n° 2021-1382 du 25 octobre 2021 relative à la régulation et à la protection de l’accès aux œuvres culturelles à l’ère numérique » sont"
+   }
+  }
+ ],
+ "notes": "Senate-adopted first-reading text of 8 April 2026, not yet enacted; relations describe proposed changes. Part I 2° leaves the number and date of the new law blank (loi n° du), to be completed on enactment. Part I 2° does not name the code containing L. 811-1-1; it sits under Part I, which amends the Code de la propriété intellectuelle. Part II (nouveau) applies the new presumption only to proceedings pending at entry into force, excluding final judgments. The presumption in new L. 331-4-1 is rebuttable (Sauf preuve contraire) and applies in civil disputes only.",
+ "events": [
+  {
+   "event": "passed_chamber",
+   "date": "2026-04-08",
+   "date_type": "absolute",
+   "date_text": "Délibéré en séance publique, à Paris, le 8 avril 2026.",
+   "applies_to": "Sénat (first reading)",
+   "evidence": {
+    "provision": "Dateline following Article unique",
+    "quote": "Délibéré en séance publique, à Paris, le 8 avril 2026."
+   }
+  },
+  {
+   "event": "application",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "est applicable aux instances en cours à la date d’entrée en vigueur de la présente loi",
+   "depends_on": "entry into force of this law (no date stated in the text)",
+   "applies_to": "Art. unique I 1° (new Art. L. 331-4-1 of the Code de la propriété intellectuelle), pending proceedings; final decisions res judicata excluded",
+   "evidence": {
+    "provision": "Art. unique, II (nouveau)",
+    "quote": "est applicable aux instances en cours à la date d’entrée en vigueur de la présente loi"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": null,
+   "date_type": "not_stated",
+   "date_text": "à la date d’entrée en vigueur de la présente loi",
+   "applies_to": "This law (as a whole)",
+   "evidence": {
+    "provision": "Art. unique, II (nouveau)",
+    "quote": "à la date d’entrée en vigueur de la présente loi"
+   }
+  }
+ ],
+ "section_status": {
+  "thresholds": {
+   "status": "not_found",
+   "note": "The operative provisions (Article unique I 1° inserting Art. L. 331-4-1 CPI; I 2° amending Art. L. 811-1-1; II transitional rule) contain no numeric cut-off changing legal treatment. The only numbers are dates and the reference to Loi n° 2021-1382 of 25 October 2021, which is a citation, not a threshold."
+  }
+ },
+ "thresholds": []
+}

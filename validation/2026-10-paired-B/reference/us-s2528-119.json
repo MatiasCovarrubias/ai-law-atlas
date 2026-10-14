@@ -1,0 +1,34 @@
+{
+ "instrument_id": "us-s2528-119",
+ "checker": "claude-opus-5-5 (Claude Code)",
+ "protocol": "VP-1.0",
+ "tier": "B",
+ "reference_scope": "full text",
+ "notes": "Bill text only; no stated absolute dates or legislative history in the fetched text. Per-application procedural periods (5 business days notice, 120-day review, 120-day extension with deemed approval, 30-day enforcement bar after denial, 60-day comment period) are deadlines, judged if coded but not counted as key dates. The minimum 1-year test-project term (Sec. 3(a)(2)(D)(ii)(III)) is a required content of agency regulations; accepted as either an event or a benefit_duration threshold if coded, not in the reference.",
+ "reference": [
+  {
+   "category": "threshold",
+   "provision": "Sec. 3(a)(2)(A)(v)",
+   "quote": "A regulated entity that is regulated or supervised by more than 1 financial regulatory agency shall provide notice of any application",
+   "value": "> 1 financial regulatory agency: notice of application to each regulator (obligation)"
+  },
+  {
+   "category": "threshold",
+   "provision": "Sec. 3(a)(2)(B)(iii)(II)(bb)",
+   "quote": "may not resubmit more than 2 applications that are substantially similar to the denied application",
+   "value": "max 2 substantially similar resubmissions after denial (cap)"
+  },
+  {
+   "category": "key_date",
+   "provision": "Sec. 3(a)(2)(D)",
+   "quote": "Not later than 180 days after the date of enactment of this Act, each financial regulatory agency shall promulgate regulations",
+   "value": "enactment + 180 days: agencies' implementing regulations"
+  },
+  {
+   "category": "key_date",
+   "provision": "Sec. 3(b)",
+   "quote": "Not later than 2 years after the date of enactment of this Act, and each year for 7 years thereafter, each financial regulatory agency shall submit",
+   "value": "first annual report enactment + 2 years, then annually for 7 years (reporting duty ends)"
+  }
+ ]
+}

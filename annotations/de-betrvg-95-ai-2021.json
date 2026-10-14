@@ -1,0 +1,103 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "de-betrvg-95-ai-2021",
+ "tier": "B",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "light, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-interim-20261014"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (connectors/fetch_texts.py)",
+  "url": "https://www.gesetze-im-internet.de/betrvg/__95.html",
+  "retrieved": "2026-10-13",
+  "version": "as fetched",
+  "language": "de",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "employment_labor",
+   "ai_general"
+  ],
+  "primary_domain": "employment_labor",
+  "mechanisms": [
+   "mandate_obligation"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "employer"
+  ],
+  "affected_roles": [
+   "workers"
+  ],
+  "decision_margins": [
+   "household:employment"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national"
+   ],
+   "description": "National statute of Germany; the reproduced text states no extraterritorial reach.",
+   "evidence": {
+    "provision": "§ 95",
+    "quote": "Betriebsverfassungsgesetz"
+   }
+  }
+ },
+ "summary": {
+  "short": "Requires works council consent for guidelines on personnel selection for hiring, transfers, regrouping and dismissals. In firms with more than 500 employees the works council may demand such guidelines. Both rules apply when AI is used to draft them.",
+  "long": "Section 95 of the German Works Constitution Act makes guidelines on personnel selection for hiring, transfers, regrouping and dismissals subject to works council consent (Abs. 1). If no agreement is reached, the conciliation committee (Einigungsstelle) decides on the employer's application, and its award replaces the agreement. In firms with more than 500 employees, the works council may demand guidelines on the professional and personal requirements and social criteria to be observed in such measures, with the same conciliation procedure (Abs. 2). Abs. 2a states that paragraphs 1 and 2 apply even where artificial intelligence is used in drafting the guidelines. Abs. 3 defines a transfer as the assignment of another work area expected to exceed one month or involving a significant change in working conditions, and excludes the determination of a workplace for employees who usually do not work at a fixed workplace. The reproduced text contains no fines or other sanctions."
+ },
+ "notes": "Document contains only § 95 BetrVG (extent: partial; the registry title also references §§ 80(3) and 90, which are not in the fetched text). Page is labelled 'Nichtamtliches Inhaltsverzeichnis' (unofficial web rendering). The text of § 95(2a) does not name the amending act (Betriebsrätemodernisierungsgesetz) and no amendment history appears in the document. Internal references in § 95 (Betriebsrat, Einigungsstelle, Absatz 1 Satz 1) point only to provisions of the same act, so no external instrument relations are stated.",
+ "events": [],
+ "thresholds": [
+  {
+   "variable": "employees",
+   "variable_text": "Arbeitnehmer in Betrieben (employees in establishments; works council may demand guidelines)",
+   "operator": ">",
+   "value": 500,
+   "value_text": "In Betrieben mit mehr als 500 Arbeitnehmern",
+   "unit": "employees",
+   "measurement": "Not specified in the provision; the counting method and reference date are not stated.",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "The works council may demand that guidelines on the professional and personal requirements and social aspects to be observed in measures under § 95(1) sentence 1 be drawn up; failing agreement, the conciliation committee decides.",
+   "conditions": "Applies to measures under § 95(1) sentence 1 (hiring, transfer, regrouping and dismissal selection guidelines). § 95(2a) applies §§ 95(1) and (2) even where AI is used in drafting the guidelines.",
+   "evidence": {
+    "provision": "§ 95 Abs. 2 BetrVG",
+    "quote": "In Betrieben mit mehr als 500 Arbeitnehmern kann der Betriebsrat die Aufstellung von Richtlinien"
+   }
+  },
+  {
+   "variable": "job_duration",
+   "variable_text": "Dauer einer Zuweisung eines anderen Arbeitsbereichs (duration of reassignment to another work area)",
+   "operator": ">",
+   "value": 1,
+   "value_text": "die voraussichtlich die Dauer von einem Monat überschreitet",
+   "unit": "months",
+   "measurement": "Expected (voraussichtliche) duration of the assignment at the time it is made; the text does not specify further measurement rules.",
+   "level": "person",
+   "trigger": "scope_definition",
+   "consequence": "An assignment of another work area expected to exceed one month is a Versetzung within the meaning of the Act, which falls under the personnel selection guideline rules of § 95(1).",
+   "conditions": "Alternatively, an assignment is a Versetzung if it is associated with a significant change in the circumstances under which the work is performed. Not a Versetzung where, by the nature of the employment relationship, employees are not usually permanently at a specific workplace and the workplace is determined accordingly.",
+   "evidence": {
+    "provision": "§ 95 Abs. 3 BetrVG",
+    "quote": "die voraussichtlich die Dauer von einem Monat überschreitet"
+   }
+  }
+ ],
+ "section_status": {
+  "relations": {
+   "status": "not_found",
+   "note": "No relation to another instrument is stated in the fetched § 95 text; the only references are internal to the BetrVG (Absatz 1 Satz 1, Einigungsstelle)."
+  },
+  "events": {
+   "status": "not_found",
+   "note": "The fetched text is the single provision § 95 BetrVG (Auswahlrichtlinien) with paragraphs (1) to (3). It contains no adoption, signature, publication, entry-into-force, application, deadline or repeal dates. The 2021 amending act named in the registry metadata is not dated in the text, so no event was coded from metadata."
+  }
+ },
+ "relations": []
+}

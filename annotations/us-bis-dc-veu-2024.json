@@ -1,0 +1,483 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "us-bis-dc-veu-2024",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (connectors/fetch_texts.py)",
+  "url": "https://www.govinfo.gov/content/pkg/FR-2024-10-02/pdf/2024-22587.pdf",
+  "retrieved": "2026-10-13",
+  "version": "as fetched",
+  "language": "en",
+  "extent": "full",
+  "note": "Trimmed to FR Doc. 2024-22587 (the PDF pages also carried neighbouring documents); untrimmed copy kept."
+ },
+ "classification": {
+  "domains": [
+   "chips_export_controls",
+   "compute_data_centers"
+  ],
+  "primary_domain": "chips_export_controls",
+  "mechanisms": [
+   "export_import_control",
+   "licensing_permit_certification",
+   "mandate_obligation"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "exporter",
+   "data_center_operator",
+   "government_agency"
+  ],
+  "decision_margins": [
+   "firm:trade",
+   "firm:entry_market_access",
+   "firm:input_use",
+   "firm:compliance_process"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national",
+    "extraterritorial",
+    "targeted"
+   ],
+   "description": "Governs exports and reexports from the United States of controlled items to validated end users in listed destinations, and names approved end users in Supplement No. 7 to part 748.",
+   "evidence": {
+    "provision": "§ 748.15(b)(2)",
+    "quote": "Data Center VEU Authorizations may be used for any destination for which a license is required for ECCN 3A090, 4A090 items"
+   }
+  },
+  "agora_risk_factors": [
+   "Security",
+   "Security: Cybersecurity"
+  ],
+  "agora_strategies": [
+   "Licensing, registration, and certification",
+   "Input controls: Compute circulation",
+   "Input controls: Compute use",
+   "Evaluation"
+  ]
+ },
+ "summary": {
+  "short": "Amends the Export Administration Regulations to add a Data Center Validated End User (VEU) authorization allowing exports and reexports of controlled items for data centers to preapproved end users in destinations requiring a license, excluding D:5 countries and 600 series items. Effective 2 October 2024.",
+  "long": "The rule adds a Data Center Validated End User (VEU) Authorization to the Export Administration Regulations, effective 2 October 2024, alongside the existing General VEU Authorization for China and India. It permits exports and reexports of Commerce Control List items that require a license to destinations other than Country Group D:5 (excluding 600 series items) for use in data centers, to end users approved by the End-User Review Committee and listed in Supplement No. 7 to part 748. Applicants submit an advisory opinion request with the information in Supplement No. 8, including security and information-security plans, a supply-chain risk plan and a list of current and potential customers; the committee's evaluation includes whether the host country has given assurances on safe and secure use. Exporters must obtain end-use certifications before a first export. Reexporters and Data Center VEU end users file semiannual reports with BIS, and records are subject to review and on-site inspection. Items may be used at the end user's own facility in an authorized destination, consumed, or reexported only as BIS authorizes; in-country transfers are restricted, and part 744 activities are barred. Authorizations may be revised, suspended or revoked."
+ },
+ "relations": [
+  {
+   "relation": "legal_basis",
+   "target_text": "Export Control Reform Act of 2018 (ECRA), 50 U.S.C. 4801–4852",
+   "note": "The text states that ECRA is the authority under which BIS issues this rule.",
+   "evidence": {
+    "provision": "Export Control Reform Act of 2018 (preamble)",
+    "quote": "ECRA provides the legal basis for BIS’s principal authorities and serves as the authority under which BIS issues this rule."
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Export Administration Regulations (EAR), 15 CFR parts 730–774",
+   "note": "Revises § 748.15 and Supplements No. 7 and No. 8 to part 748, and makes conforming changes to § 748.15(g)–(i).",
+   "evidence": {
+    "provision": "Rulemaking Requirements (regulatory text)",
+    "quote": "Accordingly, part 748 of the EAR (15 CFR parts 730–774) is amended as follows:"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "EAR part 762 (recordkeeping requirements)",
+   "note": "Certifications and all VEU-related records must be retained under part 762 recordkeeping requirements.",
+   "evidence": {
+    "provision": "§ 748.15(e)",
+    "quote": "in accordance with the recordkeeping requirements set forth in part 762 of the EAR."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "EAR part 744 (Entity List in Supp. No. 4; Military End-User List in Supp. No. 7)",
+   "note": "Supp. No. 8 requires applicants to describe relationships with organizations designated on these lists.",
+   "evidence": {
+    "provision": "Supplement No. 8 to Part 748, Part B(3)",
+    "quote": "designated on the Entity List in Supp. No. 4 to part 744 and/or Military End-User List in Supp. No. 7 to part 744"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "EAR Supplement No. 9 to part 748 (End-User Review Committee procedures)",
+   "note": "ERC evaluation of Data Center VEU applicants follows the process in existing Supplement No. 9.",
+   "evidence": {
+    "provision": "Eligibility and Application Requirements (preamble)",
+    "quote": "consistent with the process identified in existing Supplement No. 9 to Part 748"
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "Bureau of Industry and Security (BIS), Department of Commerce",
+   "role": "designated",
+   "function": "Issues VEU responses (letters granting VEU status), receives requests, certifications and reports, and reviews records under § 748.15.",
+   "evidence": {
+    "provision": "Addition of Authorization Data Center VEU to the EAR (preamble)",
+    "quote": "BIS amends the EAR to refer to the existing VEU program"
+   }
+  },
+  {
+   "name": "End-User Review Committee (ERC)",
+   "role": "designated",
+   "function": "Evaluates VEU applicants with other agencies and approves VEU status requests under Supplement No. 9 to part 748.",
+   "evidence": {
+    "provision": "§ 748.15(a)(1)",
+    "quote": "granted VEU status by the End-User Review Committee (ERC)"
+   }
+  },
+  {
+   "name": "Departments of Defense, Energy, and State",
+   "role": "listed",
+   "function": "Interagency partners of BIS that assist in evaluating the eligibility of a data center for Data Center VEU.",
+   "evidence": {
+    "provision": "Eligibility and Application Requirements (preamble)",
+    "quote": "its interagency partners in the Departments of Defense, Energy, and State"
+   }
+  }
+ ],
+ "notes": "Supplement No. 7 lists numerous named validated end-users; these are not coded individually as entities. Text inconsistencies: (1) two paragraphs in § 748.15(f)(1) are both labelled (iii); (2) deadline items (1) and (2) both include June 30 (the first report covers January 1 through June 30, the second covers June 30 to December 31); (3) Supp. No. 8 Part B(9) says the supply chain plan will 'prevent PRC-origin equipment' while the preamble says it will 'ensure no prohibited technology enters the environment'; (4) the preamble describes a Supplement No. 7 list of Data Center VEU end-users, but in the text provided every printed row is of VEU Type 'General'. Section status entries below are set only because the schema requires a value; both sections have entries.",
+ "events": [
+  {
+   "event": "entry_into_force",
+   "date": "2024-10-02",
+   "date_type": "absolute",
+   "date_text": "This rule is effective on October 2, 2024.",
+   "applies_to": "",
+   "evidence": {
+    "provision": "DATES",
+    "quote": "This rule is effective on October"
+   }
+  },
+  {
+   "event": "published",
+   "date": "2024-10-02",
+   "date_type": "absolute",
+   "date_text": "Federal Register / Vol. 89, No. 191 / Wednesday, October 2, 2024 / Rules and Regulations",
+   "applies_to": "",
+   "evidence": {
+    "provision": "Federal Register page header (Vol. 89, No. 191)",
+    "quote": "Wednesday, October 2, 2024"
+   }
+  },
+  {
+   "event": "signed",
+   "date": null,
+   "date_type": "not_stated",
+   "date_text": "Signed by Thea D. Rozman Kendler, Assistant Secretary for Export Administration; no signing date is printed.",
+   "applies_to": "",
+   "evidence": {
+    "provision": "Signature block (end of rule)",
+    "quote": "Thea D. Rozman Kendler,"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "Reexporters using General VEU Authorization: reports are due by February 15 of each year, covering January 1 through December 31 of the prior year.",
+   "applies_to": "Reexporters making use of General VEU Authorization (annual reports)",
+   "evidence": {
+    "provision": "15 CFR 748.15(f)(1)(iii)",
+    "quote": "February 15 of each year"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "First semiannual report due July 15 of each year, covering January 1 through June 30.",
+   "applies_to": "Reexporters and end users making use of Data Center VEU Authorization (semiannual reports)",
+   "evidence": {
+    "provision": "15 CFR 748.15(f)(1)(iii)(1)",
+    "quote": "The first report is due July 15"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "Second semiannual report due January 15, covering June 30 to December 31 of the previous year.",
+   "applies_to": "Reexporters and end users making use of Data Center VEU Authorization (semiannual reports)",
+   "evidence": {
+    "provision": "15 CFR 748.15(f)(1)(iii)(2)",
+    "quote": "The second report is due January"
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "Validated end-user",
+   "defined_in": "15 CFR 748.15 (introductory text)",
+   "evidence": {
+    "provision": "15 CFR 748.15 (introductory text)",
+    "quote": "Validated endusers are those who have been previously approved by BIS pursuant to the requirements of this section."
+   }
+  },
+  {
+   "term": "Data Center VEU Authorization",
+   "defined_in": "15 CFR 748.15 (introductory text)",
+   "evidence": {
+    "provision": "15 CFR 748.15 (introductory text)",
+    "quote": "Data Center VEU Authorizations permit the export and reexport to validated end-users of any eligible items that will be used in specific data centers."
+   }
+  },
+  {
+   "term": "Items (for purposes of authorization VEU)",
+   "defined_in": "15 CFR 748.15(a)(2)",
+   "evidence": {
+    "provision": "15 CFR 748.15(a)(2)",
+    "quote": "items for purposes of authorization VEU include commodities, software and technology, except as excluded by paragraph (c) of this section"
+   }
+  },
+  {
+   "term": "Eligible end-users (Data Center VEU)",
+   "defined_in": "15 CFR 748.15(a)(1)",
+   "evidence": {
+    "provision": "15 CFR 748.15(a)(1)",
+    "quote": "are those validated endusers identified in supplement no. 7 to part 748"
+   }
+  },
+  {
+   "term": "Eligible items for Data Center VEU Authorizations",
+   "defined_in": "15 CFR 748.15(c)(2)",
+   "evidence": {
+    "provision": "15 CFR 748.15(c)(2)",
+    "quote": "Eligible items for Data Center VEU Authorizations are all those items on the Commerce Control List, that require a license to the destination excluding ‘‘600 series’’ items, and are necessary for a data center."
+   }
+  },
+  {
+   "term": "Eligible destination (Data Center VEU)",
+   "defined_in": "15 CFR 748.15(b)(2)",
+   "evidence": {
+    "provision": "15 CFR 748.15(b)(2)",
+    "quote": "Data Center VEU Authorizations may be used for any destination for which a license is required for ECCN 3A090, 4A090 items, and .z items in Categories 3, 4, and 5, except for destinations in Country Groups D:5 countries."
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "prohibition",
+   "addressee": "exporter",
+   "also_addressees": [
+    "ai_distributor"
+   ],
+   "modality": "shall_not",
+   "summary": "Exports, reexports or transfers under General or Data Center VEU are limited to validated end-users listed in supplement no. 7 to part 748; other end-users may not receive eligible items under these authorizations.",
+   "applies_from": "effective October 2, 2024 (DATES)",
+   "evidence": {
+    "provision": "748.15(a)(1)",
+    "quote": "The only end-users to whom eligible items may be exported, reexported, or transferred under a General VEU Authorization"
+   }
+  },
+  {
+   "type": "eligibility_condition",
+   "addressee": "exporter",
+   "also_addressees": [
+    "enterprise"
+   ],
+   "modality": "shall",
+   "summary": "Requests for VEU authorization must be made as an advisory opinion request under 748.3(c), list the items by ECCN, and include the information in supplement no. 8; requests may come from exporters, reexporters or end-users.",
+   "applies_from": "effective October 2, 2024 (DATES)",
+   "evidence": {
+    "provision": "748.15(a)(2)",
+    "quote": "requests for authorization must be submitted in the form of an advisory opinion request"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "In evaluating an end user for VEU eligibility, the End-User Review Committee considers a range of listed factors, including compliance record, need for on-site review, technology control plan and relationships with U.S. and foreign companies.",
+   "applies_from": "effective October 2, 2024 (DATES)",
+   "evidence": {
+    "provision": "748.15(a)(3)",
+    "quote": "In evaluating an end user for eligibility under authorization VEU, the ERC will consider a range of information"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "enterprise",
+   "also_addressees": [
+    "exporter"
+   ],
+   "modality": "shall",
+   "summary": "Information submitted in a VEU request is treated as continuing representations; any material or substantive change relating to the authorization must be promptly reported to BIS, whether or not authorization has been granted.",
+   "applies_from": "effective October 2, 2024 (DATES)",
+   "evidence": {
+    "provision": "748.15(a)(5)",
+    "quote": "Any material or substantive change relating to the authorization must be promptly reported to BIS"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "exporter",
+   "also_addressees": [
+    "ai_distributor"
+   ],
+   "modality": "shall_not",
+   "summary": "Items controlled under the EAR for missile technology (MT) and crime control (CC) reasons may not be exported or reexported under General or Data Center VEU Authorizations.",
+   "applies_from": "effective October 2, 2024 (DATES)",
+   "evidence": {
+    "provision": "748.15(c)(1)",
+    "quote": "Items controlled under the EAR for missile technology (MT) and crime control (CC) reasons may not be exported or reexported under General or Data Center VEU Authorizations."
+   }
+  },
+  {
+   "type": "verification_gatekeeping",
+   "addressee": "exporter",
+   "also_addressees": [
+    "ai_distributor"
+   ],
+   "modality": "shall",
+   "summary": "Before an initial export or reexport to a validated end-user under either VEU authorization, exporters or reexporters must obtain certifications from the end-user regarding end use and compliance with VEU requirements, containing the contents set out in supplement no. 8.",
+   "applies_from": "effective October 2, 2024 (DATES)",
+   "evidence": {
+    "provision": "748.15(e)",
+    "quote": "exporters or reexporters must obtain certifications"
+   }
+  },
+  {
+   "type": "record_keeping",
+   "addressee": "exporter",
+   "also_addressees": [
+    "ai_distributor"
+   ],
+   "modality": "shall",
+   "summary": "Certifications and all records relating to VEU must be retained under the recordkeeping requirements of part 762 of the EAR.",
+   "applies_from": "effective October 2, 2024 (DATES)",
+   "evidence": {
+    "provision": "748.15(e)",
+    "quote": "Certifications and all records relating to VEU must be retained by exporters or reexporters"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "exporter",
+   "modality": "shall",
+   "summary": "Reexporters using General VEU Authorization must file annual reports to BIS; reexporters using Data Center VEU Authorization must file semi-annual reports. Each report lists, per validated end-user, name and address, eligible destination, quantity, value and ECCNs.",
+   "applies_from": "effective October 2, 2024 (DATES)",
+   "evidence": {
+    "provision": "748.15(f)(1)(i)",
+    "quote": "Reexporters who make use of General VEU Authorizations are required to submit annual reports to BIS."
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "End users under Data Center VEU must submit semi-annual reports to BIS covering current inventory of eligible items, dates and recipients of receipt, description of current compute use, and a list of current customers with their utilization.",
+   "applies_from": "effective October 2, 2024 (DATES)",
+   "evidence": {
+    "provision": "748.15(f)(1)(ii)",
+    "quote": "End users who make use of Data Center VEU Authorizations must submit reports to BIS semi-annually."
+   }
+  },
+  {
+   "type": "cooperation_with_authority",
+   "addressee": "exporter",
+   "also_addressees": [
+    "enterprise"
+   ],
+   "modality": "shall",
+   "summary": "On BIS request, exporters, reexporters, transferors and validated end-users must allow review of records, including on-site reviews of the information covered by paragraphs (e) and (f)(1).",
+   "applies_from": "effective October 2, 2024 (DATES)",
+   "conditional_on": "Upon request by BIS",
+   "evidence": {
+    "provision": "748.15(f)(2)",
+    "quote": "Upon request by BIS, exporters, reexporters, transferors, and validated end-users must allow review of records"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "exporter",
+   "also_addressees": [
+    "enterprise"
+   ],
+   "modality": "shall",
+   "summary": "Exporters and reexporters shipping under either VEU authorization, and persons transferring in-country under General VEU, must give the receiving VEU written notice of the shipment or transfer listing VEU-authorized contents and ECCNs; notice timing is agreed in advance and the notices must be kept.",
+   "applies_from": "effective October 2, 2024 (DATES)",
+   "evidence": {
+    "provision": "748.15(g)",
+    "quote": "are required to provide the VEUs to which they are shipping or transferring notice of the shipment or transfer"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "data_center_operator",
+   "also_addressees": [
+    "enterprise"
+   ],
+   "modality": "shall",
+   "summary": "A Data Center VEU application must describe physical and logical security requirements for each location housing controlled items, access policies, an information security plan (cybersecurity, logging and monitoring, technology control, personnel security, incident reporting), and a supply chain plan preventing PRC-origin equipment and PRC vendors in the data center environment.",
+   "applies_from": "effective October 2, 2024 (DATES)",
+   "evidence": {
+    "provision": "Supplement No. 8 to part 748, Part B(4)",
+    "quote": "Describe physical and logical security requirements for each location the controlled items will be housed"
+   }
+  },
+  {
+   "type": "eligibility_condition",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "The application must include a signed statement on letterhead by a person authorized to bind the applicant, certifying compliance with VEU requirements, acknowledging end-use and diversion restrictions and recordkeeping, and agreeing to on-site reviews by U.S. Government officials.",
+   "applies_from": "effective October 2, 2024 (DATES)",
+   "evidence": {
+    "provision": "Supplement No. 8 to part 748, Part A(7)",
+    "quote": "Include an original statement on letterhead"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "If the End-User Review Committee approves a request, BIS issues a response letter granting VEU status.",
+   "applies_from": "effective October 2, 2024 (DATES)",
+   "conditional_on": "If the End-User Review Committee approves the request",
+   "evidence": {
+    "provision": "Approval Process and VEU Conditions (preamble)",
+    "quote": "BIS will issue a response in the form of a letter granting VEU status."
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "The BIS approval letter states permitted items and any conditions required of the VEU; example conditions include physical and logical security requirements, prohibiting access by individuals or entities of concern, onsite inspections, and not providing computing power above prohibited thresholds.",
+   "applies_from": "effective October 2, 2024 (DATES)",
+   "conditional_on": "If BIS grants VEU status",
+   "evidence": {
+    "provision": "Approval Process and VEU Conditions (preamble)",
+    "quote": "The letter will state the items that are permitted for export or reexport to the VEU, along with any conditions required of the VEU."
+   }
+  }
+ ],
+ "enforcement": [
+  {
+   "sanction_type": "license_revocation",
+   "authority": "Not named for this action in the text; VEU status is granted by the End-User Review Committee under § 748.15(a)(1)",
+   "triggered_by": "The text states that VEU authorization may be revised, suspended or revoked, entirely or in part, but gives no triggering conditions. Private right of action is not addressed.",
+   "max_penalty_text": "Not stated in this text.",
+   "cure_period": "Not stated in this text.",
+   "evidence": {
+    "provision": "§ 748.15(a)(4)",
+    "quote": "The VEU authorization is subject to revision, suspension, or revocation entirely or in part."
+   }
+  }
+ ],
+ "section_status": {
+  "thresholds": {
+   "status": "not_found",
+   "note": "No numeric cutoff changing legal treatment in the operative Data Center VEU provisions. Eligibility is set by ECCN, item category, licence requirement and destination group (Country Groups D:5 excluded). The ERC conditions refer to 'computing power above prohibited thresholds' without quantifying them. Supplement No. 7 restates General VEU item limits (e.g., APP 12.0 weighted teraflops; 13 microns) that belong to pre-existing General VEU entries and were not coded."
+  }
+ },
+ "thresholds": []
+}

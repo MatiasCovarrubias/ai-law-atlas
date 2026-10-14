@@ -1,0 +1,127 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "us-s558-117",
+ "tier": "B",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "light, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-interim-20261014"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "AGORA plaintext (ETO, CC BY-NC 4.0), local cache",
+  "url": "https://www.congress.gov/bill/117th-congress/senate-bill/558/text?s=6&r=6&q=%7B%22search%22%3A%5B%22%5C%22artificial+intelligence%5C%22+OR+%5C%22machine+learning%5C%22+OR+%5C%22algorithm%5C%22%22%5D%7D",
+  "retrieved": "2024-04-12",
+  "version": "1.33.0 (2026-09-16)",
+  "language": "en",
+  "extent": "partial",
+  "note": "AGORA sections of the act only: Flood Level Observation, Operations, and Decision Support Act, Section 14 (\"National Weather Service hydrologic research"
+ },
+ "classification": {
+  "domains": [
+   "employment_labor",
+   "ai_sectoral"
+  ],
+  "primary_domain": "employment_labor",
+  "mechanisms": [
+   "mandate_obligation",
+   "direct_subsidy_grant"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "government_agency",
+   "workers"
+  ],
+  "affected_roles": [
+   "research_institution"
+  ],
+  "decision_margins": [
+   "household:employment"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national"
+   ],
+   "description": "Applies to federal positions in the executive branch and to a program run by the NOAA Administrator for U.S. citizens.",
+   "evidence": {
+    "provision": "Sec. 14(b)(5)",
+    "quote": "positions within the executive branch of the Federal Government"
+   }
+  },
+  "agora_strategies": [
+   "Government support: For R&D"
+  ]
+ },
+ "summary": {
+  "short": "Section 14 directs the NOAA Administrator to establish a hydrologic research fellowship program for U.S. citizens in graduate programs, with research priorities that include applying AI and machine learning to hydrologic modeling. It also gives federal agencies direct-hire authority for fellowship graduates from fiscal year 2022 onward.",
+  "long": "Section 14 requires the Administrator to establish a hydrologic research fellowship program for qualified individuals: U.S. citizens enrolled in research-based graduate programs at institutions of higher education in listed fields such as hydrology, computer sciences and engineering. Selection must give preference to historically Black colleges and universities and minority-serving institutions, and fellowships last up to 2 years. Fellows are placed in executive-branch positions. The Assistant Administrator for Weather Services sets award guidelines and, with NOAA line offices, USGS, FEMA and the Army Corps of Engineers, publishes research priorities that may include applying artificial intelligence and machine learning to hydrologic modeling. From fiscal year 2022, any federal agency head may directly appoint graduates who completed a qualifying degree and the fellowship, meeting Office of Personnel Management standards, within 2 years of completing the fellowship. The section contains no enforcement provisions."
+ },
+ "relations": [
+  {
+   "relation": "cross_references",
+   "target_text": "Higher Education Act of 1965, section 101 (20 U.S.C. 1001)",
+   "note": "Section 14(a)(3) gives 'institution of higher education' the meaning given in section 101 of the Higher Education Act of 1965, which determines which graduate programs qualify under subsection (b)(2)(B).",
+   "evidence": {
+    "provision": "Sec. 14(a)(3)",
+    "quote": "has the meaning given that term in section 101 of the Higher Education Act of 1965 (20 U.S.C. 1001)"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Title 5, United States Code, chapter 33, subchapter I, and sections 3303 and 3328 of title 5",
+   "note": "Section 14(c)(1) sets direct hire authority for fellowship recipients without regard to subchapter I of chapter 33 of title 5, other than sections 3303 and 3328.",
+   "evidence": {
+    "provision": "Sec. 14(c)(1)",
+    "quote": "without regard to the provisions of subchapter I of chapter 33 of title 5, United States Code, other than sections 3303 and 3328 of that title"
+   }
+  }
+ ],
+ "notes": "Excerpt: only Sec. 14 (National Weather Service Hydrologic Research Fellowship Program) is provided; the parent bill, its title and any session-law history are not in the text, so the registry title is not confirmed by this document. The section states no legal basis, amendment, repeal or implementation relation. Source formatting artifacts: paragraph (2)(B)(viii) and (ix) run together ('or(ix)'), and paragraph (3) and (4) are run into adjacent text; they are read as separate paragraphs. No internal inconsistencies found.",
+ "events": [
+  {
+   "event": "application",
+   "date": "2022",
+   "date_type": "absolute",
+   "date_text": "During fiscal year 2022 and any fiscal year thereafter",
+   "applies_to": "direct hire appointment authority of any Federal agency head for recipients of a fellowship under the program",
+   "evidence": {
+    "provision": "Sec. 14(c)(1)",
+    "quote": "During fiscal year 2022 and any fiscal year thereafter"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "not later than 2 years after the date on which the individual completed the fellowship under the program",
+   "depends_on": "individual's completion of the fellowship under the program",
+   "applies_to": "exercise of direct hire authority under Sec. 14(c)(1) with respect to an individual",
+   "offset_value": 2,
+   "offset_unit": "years",
+   "evidence": {
+    "provision": "Sec. 14(c)(2)",
+    "quote": "not later than 2 years after the date on which the individual completed the fellowship under the program"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "other",
+   "variable_text": "fellowship term (length of fellowship under the program)",
+   "operator": "<=",
+   "value": 2,
+   "value_text": "up to 2 years",
+   "unit": "years",
+   "level": "person",
+   "trigger": "benefit_duration",
+   "consequence": "Fellowship under the program is limited to a period of up to 2 years.",
+   "conditions": "Applies to fellowships awarded under the hydrologic research fellowship program",
+   "evidence": {
+    "provision": "Sec. 14(b)(6)",
+    "quote": "A fellowship under the program shall be for a period of up to 2 years."
+   }
+  }
+ ],
+ "section_status": {}
+}

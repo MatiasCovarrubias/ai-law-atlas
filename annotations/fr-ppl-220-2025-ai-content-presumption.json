@@ -1,0 +1,131 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "fr-ppl-220-2025-ai-content-presumption",
+ "tier": "B",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "light, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-interim-20261014"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (Claude Code retrieval)",
+  "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b2864_texte-adopte-commission.pdf",
+  "retrieved": "2026-10-14",
+  "version": "Assemblée nationale texte de la commission des affaires culturelles n° 2864 (2 June 2026), first reading, on PPL adopted by the Senate (Sénat T.A. n° 85, AN n° 2634)",
+  "language": "fr",
+  "extent": "full",
+  "note": "Single article ('Article unique (Non modifié)'), i.e. identical to the Senate-adopted text. Latest stage per AN dossier DLR5L17N53359."
+ },
+ "classification": {
+  "domains": [
+   "ip_training_data"
+  ],
+  "primary_domain": "ip_training_data",
+  "mechanisms": [
+   "liability_rule"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "ai_provider"
+  ],
+  "decision_margins": [
+   "firm:input_use"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national"
+   ],
+   "description": "Applies in civil proceedings under French law, as the provision is inserted into the French Intellectual Property Code.",
+   "evidence": {
+    "provision": "Article unique, I, 1° (inserting CPI Art. L. 331-4-1)",
+    "quote": "Sauf preuve contraire, dans toute contestation en matière civile"
+   }
+  },
+  "agora_incentives": [
+   "Civil liability"
+  ]
+ },
+ "summary": {
+  "short": "Proposed French statute adding Art. L. 331-4-1 to the Intellectual Property Code. In civil disputes, a protected work is presumed used by an AI model or system provider, unless proven otherwise, once an indicium makes that use plausible. Applies to pending proceedings at entry into force, subject to final judgments.",
+  "long": "Single-article bill (first reading, committee text, registered 2 June 2026). Paragraph I 1° inserts Art. L. 331-4-1 into the Intellectual Property Code: in any civil dispute, a work or protected subject matter under copyright or related rights is presumed, unless proven otherwise, to have been used by the provider of an AI model or system, once an indicium relating to the development or deployment of the system or to its generated output makes that use plausible. Paragraph I 2° replaces a reference to Law No. 2021-1382 in Art. L. 811-1-1 (1°) with a reference to the new law. Paragraph II makes the presumption in 1° applicable to proceedings pending at the date of entry into force, subject to decisions that have become final. The text sets no administrative authority, sanction or penalty."
+ },
+ "relations": [
+  {
+   "relation": "amends",
+   "target_text": "Code de la propriété intellectuelle",
+   "note": "Art. I 1° inserts a new article L. 331-4-1 into section 1 of chapter Ier, title III, book III, part one. Art. I 2° also amends the reference in L. 811-1-1 1°. Target is not in the registry, so the ID is empty.",
+   "evidence": {
+    "provision": "I, 1°",
+    "quote": "est complétée par un article L. 331-4-1 ainsi rédigé"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Loi n° 2021-1382 du 25 octobre 2021 relative à la régulation et à la protection de l’accès aux œuvres culturelles à l’ère numérique",
+   "note": "Art. I 2° replaces the reference to this law in L. 811-1-1 1° with a reference to the present bill. The law itself is not amended. Target is not in the registry, so the ID is empty.",
+   "evidence": {
+    "provision": "I, 2°",
+    "quote": "n° 2021-1382"
+   }
+  }
+ ],
+ "notes": "Text of the Commission des affaires culturelles et de l’éducation, annex to the report, first reading, article unique (non modifié). The replacement wording in I 2° reads “n° du” with the number and date left blank. Section II applies I 1° to proceedings pending on the entry into force date, except decisions that have become final. The Code de la propriété intellectuelle is not a registry instrument.",
+ "events": [
+  {
+   "event": "committee_approved",
+   "date": "2026-06-02",
+   "date_type": "absolute",
+   "date_text": "Enregistré à la Présidence de l’Assemblée nationale le 2 juin 2026.",
+   "applies_to": "Commission des affaires culturelles et de l’éducation text (annexe au rapport), registered at the Assemblée nationale; the document gives the registration date, not a Commission vote date",
+   "evidence": {
+    "provision": "Cover page",
+    "quote": "Enregistré à la Présidence de l’Assemblée nationale le 2 juin 2026."
+   }
+  },
+  {
+   "event": "passed_chamber",
+   "date": null,
+   "date_type": "not_stated",
+   "date_text": "Sénat : 220, 496, 497 et T.A. 85 (2025-2026)",
+   "applies_to": "Sénat; inferred from the T.A. (texte adopté) reference in the bill history; no adoption date is stated",
+   "evidence": {
+    "provision": "Cover page (Voir les numéros)",
+    "quote": "Sénat : 220, 496, 497 et T.A. 85 (2025-2026)."
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": null,
+   "date_type": "not_stated",
+   "date_text": "la date d’entrée en vigueur de la présente loi",
+   "applies_to": "The law as a whole; the text states no entry-into-force date and refers only to the date of entry into force of the law",
+   "evidence": {
+    "provision": "Article unique, II",
+    "quote": "à la date d’entrée en vigueur de la présente loi"
+   }
+  },
+  {
+   "event": "application",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "est applicable aux instances en cours à la date d’entrée en vigueur de la présente loi, sous réserve des décisions passées en force de chose jugée",
+   "anchor": "date d’entrée en vigueur de la présente loi",
+   "depends_on": "entry into force of this law (date not stated in the text)",
+   "applies_to": "Art. L. 331-4-1 Code de la propriété intellectuelle (presumption of use) in civil proceedings pending at entry into force, excluding decisions that have become final",
+   "anchor_event": "entry_into_force",
+   "evidence": {
+    "provision": "Article unique, II",
+    "quote": "est applicable aux instances en cours à la date d’entrée en vigueur de la présente loi"
+   }
+  }
+ ],
+ "section_status": {
+  "thresholds": {
+   "status": "not_applicable",
+   "note": "The bill contains no numeric cutoff. Its operative provision (Art. L. 331-4-1 CPI, as inserted by Article unique I.1°) turns on a qualitative evidentiary test, an indication making use 'vraisemblable' (plausible), and the transitional clause (Article unique II) applies by reference to pending proceedings, not to a number."
+  }
+ },
+ "thresholds": []
+}

@@ -1,0 +1,528 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "pe-sbs-res504-2021",
+ "tier": "B",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "light, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-interim-20261014"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (connectors/fetch_texts.py)",
+  "url": "https://busquedas.elperuano.pe/api/visor_html/1929393-1",
+  "retrieved": "2026-10-13",
+  "version": "as fetched",
+  "language": "es",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "cybersecurity",
+   "data_transfer_localization",
+   "consumer_protection"
+  ],
+  "primary_domain": "cybersecurity",
+  "mechanisms": [
+   "mandate_obligation",
+   "licensing_permit_certification",
+   "registration_notification",
+   "designation_tiering"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "financial_institution",
+   "insurer"
+  ],
+  "affected_roles": [
+   "consumers_users",
+   "cloud_service_provider",
+   "auditor_assessor"
+  ],
+  "decision_margins": [
+   "firm:compliance_process",
+   "firm:input_use",
+   "firm:product_design_release"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national",
+    "targeted"
+   ],
+   "description": "Applies to named categories of supervised Peruvian financial, insurance and pension entities and to listed public financial bodies.",
+   "evidence": {
+    "provision": "Art. 1.1",
+    "quote": "El presente Reglamento es de aplicación a las empresas señaladas en los artículos 16 y 17 de la Ley General"
+   }
+  },
+  "agora_harms": [
+   "Financial loss"
+  ],
+  "agora_incentives": [
+   "Civil liability"
+  ],
+  "agora_risk_factors": [
+   "Security",
+   "Security: Cybersecurity"
+  ],
+  "agora_strategies": [
+   "Licensing, registration, and certification",
+   "Disclosure: About incidents",
+   "Evaluation",
+   "Evaluation: External auditing",
+   "Performance requirements",
+   "Tiering"
+  ]
+ },
+ "summary": {
+  "short": "Peruvian SBS rule (Resolución 504-2021, in force 1 July 2021) requiring supervised financial, insurance and pension firms to run an information security and cybersecurity management system, with tiered regimes, incident reporting, digital-channel authentication and prior authorization for certain foreign data-processing services.",
+  "long": "Resolución SBS N° 504-2021 approves the Reglamento para la Gestión de la Seguridad de la Información y la Ciberseguridad for the entities in Articles 16 and 17 of the General Law, AFPs and named public financial bodies (Art. 1). Firms must maintain an information security and cybersecurity management system (SGSI-C) proportionate to their size and complexity, sorted into General, Simplified and Reinforced regimes (Arts. 3-4, 26-27). Duties include board and management responsibilities, a security function, minimum controls, a cybersecurity programme, reporting significant incidents to the Superintendencia and a forensic analysis (Arts. 5-15). Digital-channel transactions require strong authentication, with exemptions for low-risk payments, and the company is responsible for unrecognised operations made under an exemption (Arts. 17-20). Significant outsourced data processing, including cloud services, requires notice 30 days before start (Art. 24.3) and prior authorization for foreign providers where legal limits apply (Art. 25). The rule also amends the internal audit, external audit, corporate governance, operational risk, credit card and e-money regulations (Arts. Second to Eighth). It takes effect 1 July 2021 (Art. Tenth), with an adaptation plan due within 60 days (Art. Ninth)."
+ },
+ "relations": [
+  {
+   "relation": "legal_basis",
+   "target_text": "Ley General del Sistema Financiero y del Sistema de Seguros y Orgánica de la Superintendencia de Banca y Seguros, Ley N° 26702, arts. 349 numerals 7 and 9",
+   "note": "Enabling powers cited in the preamble for issuing the regulation.",
+   "evidence": {
+    "provision": "Considerandos (preamble)",
+    "quote": "En uso de las atribuciones conferidas por los numerales 7 y 9 del artículo 349 de la Ley General del Sistema Financiero y del Sistema de Seguros y Orgánica de la Superintendencia de Banca y Seguros, Ley N° 26702"
+   }
+  },
+  {
+   "relation": "legal_basis",
+   "target_text": "Ley del Sistema Privado de Administración de Fondos de Pensiones, TUO approved by Decreto Supremo N° 054-97-EF, art. 57 literal d)",
+   "note": "Second enabling power cited in the preamble, relevant to AFPs.",
+   "evidence": {
+    "provision": "Considerandos (preamble)",
+    "quote": "el inciso d) del artículo 57 de la Ley del Sistema Privado de Administración de Fondos de Pensiones, cuyo Texto Único Ordenado es aprobado por Decreto Supremo N° 054-97-EF"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Reglamento de Auditoría Interna, Resolución SBS N° 11699-2008 and amendments",
+   "note": "Replaces numerals of the Anexo 'Actividades Programadas' in Sections I to VI.",
+   "evidence": {
+    "provision": "Artículo Segundo",
+    "quote": "Modificar el Reglamento de Auditoría Interna, aprobado por la Resolución SBS N° 11699-2008 y sus modificatorias"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Reglamento de Auditoría Externa, Resolución SBS N° 17026-2010 and amendments",
+   "note": "Amends literal b) of the second paragraph of art. 20 (Informe sobre el sistema de control interno).",
+   "evidence": {
+    "provision": "Artículo Tercero",
+    "quote": "Modificar el literal b) del segundo párrafo del artículo 20° Informe sobre el sistema de control interno del Reglamento de Auditoría Externa"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Texto Único de Procedimientos Administrativos (TUPA) of the SBS, approved by Resolución N° 1678-2018",
+   "note": "Modifies procedure No. 123 and adds procedure No. 198.",
+   "evidence": {
+    "provision": "Artículo Cuarto",
+    "quote": "Modificar el procedimiento N° 123 relativo a la “Autorización del Procesamiento Principal en el Exterior”"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Reglamento de Gobierno Corporativo y de la Gestión Integral de Riesgos, Resolución SBS N° 272-2017 and amendments",
+   "note": "Adds definition rr) Proveedor, amends definition jj) Subcontratación and replaces Chapter IV (arts. 35 to 37).",
+   "evidence": {
+    "provision": "Artículo Quinto",
+    "quote": "Modificar el Reglamento de Gobierno Corporativo y de la Gestión Integral de Riesgos, aprobado mediante Resolución SBS N° 272-2017 y sus modificatorias"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Reglamento de Riesgo Operacional, Resolución SBS N° 2116-2009",
+   "note": "Replaces literal i) of art. 2 and art. 14 (third-party services).",
+   "evidence": {
+    "provision": "Artículo Sexto",
+    "quote": "Modificar el Reglamento de Riesgo Operacional, aprobado por Resolución SBS Nº 2116-2009"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Reglamento de Tarjetas de Crédito y Débito, Resolución SBS N° 6523-2013 and amendments",
+   "note": "Replaces arts. 6 and 12 on minimum card information and validity.",
+   "evidence": {
+    "provision": "Artículo Séptimo",
+    "quote": "Modificar el Reglamento de Tarjetas de Crédito y Débito, aprobado por Resolución SBS N° 6523-2013 y sus normas modificatorias"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Reglamento de Operaciones con Dinero Electrónico, Resolución SBS N° 6283-2013 and amendments",
+   "note": "Replaces art. 4 on devices used for electronic money.",
+   "evidence": {
+    "provision": "Artículo Octavo",
+    "quote": "Modificar el Reglamento de Operaciones con Dinero Electrónico aprobado por Resolución SBS N° 6283-2013 y sus normas modificatorias"
+   }
+  },
+  {
+   "relation": "repeals",
+   "target_text": "Circular G-140-2009 (including its art. 7A)",
+   "note": "Derogated on the date the regulation enters into force, 1 July 2021; art. 7A is derogated the day after publication (see Artículo Décimo a.).",
+   "evidence": {
+    "provision": "Artículo Décimo",
+    "quote": "fecha en la que se deroga la Circular G 140-2009"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Reglamento para el requerimiento de patrimonio efectivo adicional, Resolución SBS N° 8425-2011",
+   "note": "Determines which firms are subject to the Régimen Reforzado (Subcapítulo VI) by reference to capital requirements for market concentration risk.",
+   "evidence": {
+    "provision": "Artículo 4.7",
+    "quote": "aprobado por la Resolución SBS Nº 8425-2011 y sus normas modificatorias"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Reglamento para la Gestión de la Continuidad del Negocio, Resolución SBS N° 877-2020",
+   "note": "Art. 15 of that regulation applies to reporting of significant interruption events caused by security incidents.",
+   "evidence": {
+    "provision": "Disposición Complementaria Final Tercera",
+    "quote": "Reglamento para la Gestión de la Continuidad del Negocio, aprobado por la Resolución SBS Nº 877-2020"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Reglamento para la Supervisión y Control de los Corredores y Auxiliares de Seguros, Resolución SBS N° 809-2019",
+   "note": "Its art. 36 sets the segmentation under which insurance brokers of segment 1 fall within the regulation.",
+   "evidence": {
+    "provision": "Disposición Complementaria Final Cuarta",
+    "quote": "Reglamento para la Supervisión y Control de los Corredores y Auxiliares de Seguros aprobado por la Resolución SBS N° 809-2019"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Decreto Supremo N° 001-2009-JUS (pre-publication of draft regulations)",
+   "note": "Basis cited for pre-publication of the draft for public comment.",
+   "evidence": {
+    "provision": "Considerandos (preamble)",
+    "quote": "al amparo de lo dispuesto en el Decreto Supremo Nº 001-2009-JUS"
+   }
+  }
+ ],
+ "notes": "Target instrument IDs are null: none were verified against the registry. Art. 24.3 refers to literal h) of art. 24.2, but 24.2 has only literals a) to g). Artículo Quinto is numbered 1, then d), then 3, with no item 2 label. Artículo Décimo sets entry into force on 1 July 2021, while Artículo Noveno gives a 1 July 2022 adaptation deadline for Subcapítulo III. The document header carries a title referring to a different decree (DS 029-2018-PCM), which the operative text does not otherwise cite.",
+ "events": [
+  {
+   "event": "consultation",
+   "date": null,
+   "date_type": "not_stated",
+   "date_text": "se dispuso la prepublicación del proyecto de resolución sobre la materia en el portal electrónico de la Superintendencia",
+   "applies_to": "Draft resolution",
+   "evidence": {
+    "provision": "Considerandos",
+    "quote": "Que, para recoger las opiniones del público, se dispuso la prepublicación del proyecto de resolución sobre la materia en el portal electrónico de la Superintendencia"
+   }
+  },
+  {
+   "event": "adopted",
+   "date": "2021-02-19",
+   "date_type": "absolute",
+   "date_text": "Lima, 19 de febrero de 2021",
+   "applies_to": "Resolución SBS Nº 504-2021 and Reglamento para la Gestión de la Seguridad de la Información y la Ciberseguridad",
+   "evidence": {
+    "provision": "Encabezado (dateline) and Resolución clause",
+    "quote": "Lima, 19 de febrero de 2021"
+   }
+  },
+  {
+   "event": "signed",
+   "date": "2021-02-19",
+   "date_type": "absolute",
+   "date_text": "Lima, 19 de febrero de 2021",
+   "applies_to": "Resolución SBS Nº 504-2021",
+   "evidence": {
+    "provision": "Encabezado (dateline) and signature block",
+    "quote": "Lima, 19 de febrero de 2021"
+   }
+  },
+  {
+   "event": "published",
+   "date": null,
+   "date_type": "not_stated",
+   "date_text": "publíquese",
+   "applies_to": "Resolución SBS Nº 504-2021",
+   "evidence": {
+    "provision": "Cierre de la resolución",
+    "quote": "Regístrese, comuníquese y publíquese"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2021-07-01",
+   "date_type": "absolute",
+   "date_text": "entra en vigencia el 1 de julio de 2021",
+   "applies_to": "Resolución SBS Nº 504-2021, except items a. to d. of Artículo Décimo",
+   "evidence": {
+    "provision": "Artículo Décimo",
+    "quote": "La presente Resolución entra en vigencia el 1 de julio de 2021"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "entran en vigencia al día siguiente de publicada la presente Resolución",
+   "anchor": "publicación de la presente Resolución",
+   "applies_to": "Reglamento Arts. 25.1 and 25.2 (authorization for significant cross-border data processing services)",
+   "offset_value": 1,
+   "offset_unit": "days",
+   "anchor_event": "published",
+   "evidence": {
+    "provision": "Artículo Décimo, literal a.",
+    "quote": "que entran en vigencia al día siguiente de publicada la presente Resolución"
+   }
+  },
+  {
+   "event": "repealed",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "fecha en la cual se deroga el artículo 7A de la Circular G 140-2009",
+   "anchor": "publicación de la presente Resolución",
+   "applies_to": "Circular G 140-2009, Art. 7A",
+   "offset_value": 1,
+   "offset_unit": "days",
+   "anchor_event": "published",
+   "evidence": {
+    "provision": "Artículo Décimo, literal a.",
+    "quote": "fecha en la cual se deroga el artículo 7A de la Circular G 140-2009"
+   }
+  },
+  {
+   "event": "repealed",
+   "date": "2021-07-01",
+   "date_type": "absolute",
+   "date_text": "entra en vigencia el 1 de julio de 2021, fecha en la que se deroga la Circular G 140-2009",
+   "applies_to": "Circular G 140-2009",
+   "evidence": {
+    "provision": "Artículo Décimo",
+    "quote": "entra en vigencia el 1 de julio de 2021, fecha en la que se deroga la Circular G 140-2009"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "entra en vigencia a partir de la auditoría correspondiente al ejercicio 2022",
+   "depends_on": "audit for fiscal year 2022 (auditoría correspondiente al ejercicio 2022)",
+   "applies_to": "Artículo Segundo (amendment of Reglamento de Auditoría Interna)",
+   "evidence": {
+    "provision": "Artículo Décimo, literal b.",
+    "quote": "El Artículo Segundo de la presente Resolución entra en vigencia a partir de la auditoría correspondiente al ejercicio 2022"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "entran en vigencia al día siguiente de la publicación de la presente Resolución, con excepción de lo indicado en el inciso d.",
+   "anchor": "publicación de la presente Resolución",
+   "applies_to": "Artículos Séptimo, Octavo y Noveno (amendments to credit/debit card and e-money rules; adaptation plan)",
+   "offset_value": 1,
+   "offset_unit": "days",
+   "anchor_event": "published",
+   "evidence": {
+    "provision": "Artículo Décimo, literal c.",
+    "quote": "entran en vigencia al día siguiente de la publicación de la presente Resolución"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2022-01-01",
+   "date_type": "absolute",
+   "date_text": "entran en vigencia el 1 de enero de 2022",
+   "applies_to": "Joint disclosure of issuer name and commercial product name on credit/debit cards (Art. Séptimo) and e-money devices (Art. Octavo)",
+   "evidence": {
+    "provision": "Artículo Décimo, literal d.",
+    "quote": "entran en vigencia el 1 de enero de 2022"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "En un plazo que no debe exceder de sesenta (60) días calendario contados a partir del día siguiente de la publicación de la presente Resolución",
+   "anchor": "publicación de la presente Resolución",
+   "applies_to": "Companies: submit adaptation plan to the Superintendencia, approved by the board",
+   "offset_value": 60,
+   "offset_unit": "days",
+   "anchor_event": "published",
+   "evidence": {
+    "provision": "Artículo Noveno, numeral 1",
+    "quote": "En un plazo que no debe exceder de sesenta (60) días calendario contados a partir del día siguiente de la publicación de la presente Resolución"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2022-07-01",
+   "date_type": "absolute",
+   "date_text": "tienen un plazo de adecuación hasta el 1 de julio de 2022",
+   "applies_to": "Subcapítulo III of Capítulo II (authentication) and Tercera Disposición Complementaria Final",
+   "evidence": {
+    "provision": "Artículo Noveno, numeral 2",
+    "quote": "tienen un plazo de adecuación hasta el 1 de julio de 2022"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "En un plazo no mayor a treinta (30) días calendario contados a partir del día siguiente de la publicación de la presente Resolución",
+   "anchor": "publicación de la presente Resolución",
+   "applies_to": "Companies with a significant cross-border data processing service whose legal framework limits compliance with Art. 24.2: submit report on limitations and compensatory measures",
+   "offset_value": 30,
+   "offset_unit": "days",
+   "anchor_event": "published",
+   "evidence": {
+    "provision": "Artículo Noveno, numeral 3",
+    "quote": "En un plazo no mayor a treinta (30) días calendario contados a partir del día siguiente de la publicación de la presente Resolución"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "por lo menos treinta (30) días calendario antes de iniciar la provisión del procesamiento de datos",
+   "anchor": "start of provision of the significant data processing service",
+   "depends_on": "start of provision of the significant data processing service by third party",
+   "applies_to": "Company informing the Superintendencia of a contracted significant data processing service",
+   "offset_value": -30,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Artículo 24, párrafo 24.3",
+    "quote": "por lo menos treinta (30) días calendario antes de iniciar la provisión del procesamiento de datos"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "la cual será respondida por la Superintendencia en el plazo de sesenta (60) días hábiles",
+   "anchor": "filing of request for authorization to apply the simplified regime",
+   "depends_on": "filing of request under Art. 4.6",
+   "applies_to": "Request to apply the Régimen Simplificado",
+   "offset_value": 60,
+   "offset_unit": "business_days",
+   "evidence": {
+    "provision": "Artículo 4, párrafo 4.6",
+    "quote": "la cual será respondida por la Superintendencia en el plazo de sesenta (60) días hábiles"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "la cual será respondida por la Superintendencia en el plazo de sesenta (60) días hábiles",
+   "anchor": "filing of authorization request for cross-border significant data processing service",
+   "depends_on": "filing of request under Art. 25.1",
+   "applies_to": "Request for authorization to contract a significant data processing service from abroad",
+   "offset_value": 60,
+   "offset_unit": "business_days",
+   "evidence": {
+    "provision": "Artículo 25, párrafo 25.1",
+    "quote": "la cual será respondida por la Superintendencia en el plazo de sesenta (60) días hábiles"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "Verificar anualmente que el proveedor de servicios de procesamiento de datos cuenta con controles de seguridad de la información; evidenciar anualmente certificaciones para servicios en nube",
+   "applies_to": "Company using a significant third-party data processing service",
+   "evidence": {
+    "provision": "Artículo 24, párrafo 24.2, literales f) y g)",
+    "quote": "Verificar anualmente que el proveedor de servicios de procesamiento de datos cuenta con controles de seguridad de la información"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "cuya periodicidad por lo menos debe ser anual",
+   "applies_to": "Simplified-regime companies: minimum security activities in Art. 26.1 a) to f)",
+   "evidence": {
+    "provision": "Artículo 26, párrafo 26.1",
+    "quote": "cuya periodicidad por lo menos debe ser anual"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "other",
+   "variable_text": "volumen promedio de activos de los últimos tres años de empresas de seguros y/o reaseguros",
+   "operator": ">=",
+   "value": 450000000,
+   "value_text": "mayor o igual a 450 millones de soles",
+   "unit": "soles",
+   "currency": "PEN",
+   "measurement": "promedio de los activos de los últimos tres (3) años",
+   "level": "entity",
+   "trigger": "scope_definition",
+   "consequence": "Empresa de seguros y/o reaseguros queda comprendida en el Régimen General del Reglamento",
+   "conditions": "Aplica a empresas de Seguros y/o Reaseguros; no listadas en el párrafo 4.2 cuando corresponda",
+   "evidence": {
+    "provision": "Art. 4 para. 4",
+    "quote": "cuyo volumen promedio de activos de los últimos tres (3) años sea mayor o igual a 450 millones de soles están comprendidas en el Régimen General"
+   }
+  },
+  {
+   "variable": "transaction_value",
+   "variable_text": "monto de umbral por operación para la exención de autenticación reforzada en pagos de bajo riesgo de fraude",
+   "operator": "<",
+   "value": null,
+   "value_text": "monto de umbral por operación definido por la empresa; la exención aplica por debajo de dicho monto",
+   "unit": "",
+   "measurement": "por operación de pago por canal digital, según análisis de riesgo en línea",
+   "level": "service",
+   "trigger": "exemption",
+   "consequence": "Operaciones de pago con bajo nivel de riesgo de fraude por debajo del umbral quedan exentas de autenticación reforzada",
+   "conditions": "Análisis de riesgo en línea por operación; implementación de EMV 3DS o tokenización de pagos EMV; medición periódica del ratio de fraude",
+   "depends_on": "monto definido por la empresa en su análisis de riesgos",
+   "evidence": {
+    "provision": "Art. 20 para. 2 item ii",
+    "quote": "Definir el monto de umbral por operación por debajo del cual aplicará la exención por el citado análisis de riesgos."
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "plazo de vigencia de las tarjetas de crédito",
+   "operator": "<=",
+   "value": 5,
+   "value_text": "no puede exceder de cinco (5) años",
+   "unit": "years",
+   "measurement": "plazo de vigencia de la tarjeta de crédito",
+   "level": "product",
+   "trigger": "cap",
+   "consequence": "Limita el plazo de vigencia de las tarjetas de crédito; pueden acordarse plazos menores",
+   "conditions": "Tarjetas de crédito con soporte físico o digital",
+   "evidence": {
+    "provision": "Art. Séptimo.1 (sustituye Art. 6 del Reglamento de Tarjetas de Crédito y Débito)",
+    "quote": "El plazo de vigencia de las tarjetas de crédito no puede exceder de cinco (5) años"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "plazo de vigencia de las tarjetas de débito",
+   "operator": "<=",
+   "value": 5,
+   "value_text": "no puede exceder de cinco (5) años",
+   "unit": "years",
+   "measurement": "plazo de vigencia de la tarjeta de débito",
+   "level": "product",
+   "trigger": "cap",
+   "consequence": "Limita el plazo de vigencia de las tarjetas de débito; pueden acordarse plazos menores",
+   "conditions": "Tarjetas de débito con soporte físico o digital",
+   "evidence": {
+    "provision": "Art. Séptimo.1 (sustituye Art. 12 del Reglamento de Tarjetas de Crédito y Débito)",
+    "quote": "El plazo de vigencia de las tarjetas de débito no puede exceder de cinco (5) años"
+   }
+  }
+ ],
+ "section_status": {}
+}

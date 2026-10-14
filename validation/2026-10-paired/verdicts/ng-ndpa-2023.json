@@ -1,0 +1,717 @@
+{
+ "instrument_id": "ng-ndpa-2023",
+ "checker": "claude-opus-5-5 (Claude Code)",
+ "protocol": "VP-1.0",
+ "date": "2026-10-14",
+ "reference": [
+  {
+   "category": "threshold",
+   "provision": "Sec. 9(2)(a)",
+   "quote": "the private sector shall be a Nigerian and possess not less than five\nyears cognate experience and proficiency in data protection and privacy",
+   "value": ">= 5 years cognate experience: eligibility of private-sector Council member",
+   "match": {
+    "X": 3,
+    "Y": 1
+   }
+  },
+  {
+   "category": "threshold",
+   "provision": "Sec. 14(2)(b)",
+   "quote": "possess at least 10 years cognate experience, at a senior management\nlevel",
+   "value": ">= 10 years senior-management experience: eligibility of National Commissioner",
+   "match": {
+    "X": 2,
+    "Y": 2
+   }
+  },
+  {
+   "category": "threshold",
+   "provision": "Sec. 31(5)",
+   "quote": "Where the circumstance relates to the processing of personal data\nof a child of 13 years and above in relation to the provision of information and\nservices by electronic means at the specific request of the child, the Commission\nshall make regulations",
+   "value": "age >= 13: child's own requests for electronic services governed by Commission regulations",
+   "match": {
+    "X": 1,
+    "Y": 3
+   }
+  },
+  {
+   "category": "threshold",
+   "provision": "Sec. 65 ('data controller or data processor of major importance'); applied in Secs. 32, 44, 45, 48(3), 49",
+   "quote": "processes or intends to process personal data of more than such\nnumber of data subjects who are within Nigeria, as the Commission may\nprescribe",
+   "value": "data subjects > number set by the Commission (value null, delegated): major-importance designation (DPO, registration, fees, higher penalty maximum)",
+   "match": {
+    "X": 0,
+    "Y": 0
+   }
+  },
+  {
+   "category": "key_date",
+   "provision": "Commencement (enacting formula)",
+   "quote": "[12th Day of June, 2023]\n\nCommencement.",
+   "value": "2023-06-12 entry into force",
+   "match": {
+    "X": 3,
+    "Y": null
+   },
+   "match_note": "Y codes entry_into_force (E4) but as not_stated, so the stated date is not recorded."
+  },
+  {
+   "category": "key_date",
+   "provision": "Presidential assent",
+   "quote": "I ASSENT\n\nBOLA AHMED TINUBU, GCFR\nPresident of the Federal Republic of Nigeria\n12th Day of June, 2023.",
+   "value": "2023-06-12 signed (assent)",
+   "match": {
+    "X": 2,
+    "Y": 2
+   }
+  },
+  {
+   "category": "key_date",
+   "provision": "Schedule to the Bill, item (4)",
+   "quote": "3rd May, 2023.\n\n(4)\nDate Passed by\nthe Senate",
+   "value": "2023-05-03 passed Senate",
+   "match": {
+    "X": null,
+    "Y": null
+   }
+  },
+  {
+   "category": "key_date",
+   "provision": "Schedule to the Bill, item (5)",
+   "quote": "24th May, 2023.\n\n(5)\nDate Passed by\nthe House of\nRepresentatives",
+   "value": "2023-05-24 passed House of Representatives (final passage)",
+   "match": {
+    "X": null,
+    "Y": null
+   },
+   "match_note": "Both versions put 24 May 2023 on the Senate (E0); neither records House passage."
+  },
+  {
+   "category": "key_date",
+   "provision": "Gazette cover",
+   "quote": "Lagos - 1st July, 2023",
+   "value": "2023-07-01 published (Official Gazette No. 119, Vol. 110)",
+   "match": {
+    "X": 4,
+    "Y": 3
+   }
+  },
+  {
+   "category": "key_date",
+   "provision": "Sec. 44(1)",
+   "quote": "Data controllers and data processors of major importance\nshall register with the Commission within six months after the commencement\nof the Act",
+   "value": "registration deadline: 6 months after commencement = 2023-12-12",
+   "match": {
+    "X": 6,
+    "Y": 5
+   }
+  },
+  {
+   "category": "key_date",
+   "provision": "Sec. 19(3)",
+   "quote": "the remaining 50% of the\ntake-off grant shall be provided on the anniversary of the date on which this\nAct commences",
+   "value": "second 50% of take-off grant: first anniversary of commencement = 2024-06-12 (first 50% on commencement)",
+   "match": {
+    "X": 5,
+    "Y": 11
+   }
+  },
+  {
+   "category": "sanction",
+   "provision": "Sec. 13(2)",
+   "quote": "a fine of at\nleast N10,000,000 or imprisonment for a term not more than three\nyears, or both",
+   "value": "Council member offences (secret profit; gifts): fine >= N10m or <= 3 years, or both (para. (b)); fine >= N5m or <= 2 years, or both (second limb, text says para. (d))",
+   "match": {
+    "X": 5,
+    "Y": 5
+   },
+   "match_note": "Y splits into N5 (para. (a)) and N6 (para. (b))."
+  },
+  {
+   "category": "sanction",
+   "provision": "Sec. 47",
+   "quote": "the Commission may make\nan appropriate compliance order against that data controller or data processor",
+   "value": "compliance orders: warning, requirement to comply, cease and desist; no monetary maximum",
+   "match": {
+    "X": 2,
+    "Y": 1
+   },
+   "match_note": "X splits into N2 (cease and desist) and N3 (warning)."
+  },
+  {
+   "category": "sanction",
+   "provision": "Sec. 48(2)-(5)",
+   "quote": "The “higher maximum amount” shall be the greater of —\n(a) N10,000,000, and\n(b) 2% of its annual gross revenue in the preceding financial year.",
+   "value": "enforcement orders / penalty or remedial fee: major importance up to greater of N10m and 2% of prior-year annual gross revenue; others up to greater of N2m and 2%; also remedy, compensation, account of profits",
+   "match": {
+    "X": 0,
+    "Y": 0
+   },
+   "match_note": "Y also codes s.48(2)(b),(c) as N3, N2; X codes s.48(2) orders as N1."
+  },
+  {
+   "category": "sanction",
+   "provision": "Sec. 49(1)",
+   "quote": "imprisonment for a term not more than one year or both",
+   "value": "offence of failing to comply with s.47 orders: fine up to higher/standard maximum amount, or imprisonment <= 1 year, or both",
+   "match": {
+    "X": 4,
+    "Y": 4
+   }
+  },
+  {
+   "category": "sanction",
+   "provision": "Sec. 51",
+   "quote": "may recover\ndamages from such data controller or data processor in civil proceedings",
+   "value": "private right of action for damages; no maximum",
+   "match": {
+    "X": 6,
+    "Y": 9
+   }
+  },
+  {
+   "category": "sanction",
+   "provision": "Sec. 52",
+   "quote": "the Court may make an\norder of forfeiture against a convicted data controller, data processor, or\nindividual in accordance with the Proceeds of Crime (Recovery and\nManagement) Act",
+   "value": "forfeiture order on conviction, by reference to Proceeds of Crime Act; no maximum stated",
+   "match": {
+    "X": 7,
+    "Y": 7
+   }
+  }
+ ],
+ "judgments": {
+  "X": {
+   "thresholds": [
+    {
+     "index": 0,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 1,
+     "verdict": "correct",
+     "note": "trigger obligation (Commission must regulate) is defensible"
+    },
+    {
+     "index": 2,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 3,
+     "verdict": "correct",
+     "note": ""
+    }
+   ],
+   "events": [
+    {
+     "index": 0,
+     "verdict": "wrong_date",
+     "note": "Text's bill schedule prints each value before its label: 3 May 2023 is 'Date Passed by the Senate', 24 May 2023 is 'Date Passed by the House of Representatives'. Senate passage is coded with the House date."
+    },
+    {
+     "index": 1,
+     "verdict": "wrong_date",
+     "note": "Final passage date is stated (House of Representatives, 24 May 2023); coded not_stated."
+    },
+    {
+     "index": 2,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 3,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 4,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 5,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 6,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 7,
+     "verdict": "correct",
+     "note": "conditional with offset is acceptable for a period after a contingent trigger"
+    },
+    {
+     "index": 8,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 9,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 10,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 11,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 12,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 13,
+     "verdict": "correct",
+     "note": ""
+    }
+   ],
+   "obligations": [
+    {
+     "index": 0,
+     "verdict": "wrong_addressee",
+     "note": "Commission duty coded with addressee regulator; codebook 3.5 requires government_agency for government_duty"
+    },
+    {
+     "index": 2,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 4,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 6,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 8,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 10,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 12,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 14,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 16,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 18,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 20,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 22,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 24,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 26,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 28,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 30,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 32,
+     "verdict": "wrong_addressee",
+     "note": "Commission duty coded with addressee regulator; codebook 3.5 requires government_agency"
+    },
+    {
+     "index": 34,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 36,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 38,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 40,
+     "verdict": "correct",
+     "note": ""
+    }
+   ],
+   "enforcement": [
+    {
+     "index": 0,
+     "verdict": "correct",
+     "note": "max_penalty_amount 10,000,000 is the fixed component of the higher maximum; formula states the 'greater of' rule correctly"
+    },
+    {
+     "index": 1,
+     "verdict": "correct",
+     "note": "s.48(2) non-monetary orders, split from the fee in N0"
+    },
+    {
+     "index": 2,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 3,
+     "verdict": "correct",
+     "note": "s.47 warning split from cease-and-desist by sanction type"
+    },
+    {
+     "index": 4,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 5,
+     "verdict": "correct",
+     "note": "both limbs of s.13(2) in one row; minimum fines as written"
+    },
+    {
+     "index": 6,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 7,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 8,
+     "verdict": "unsupported",
+     "note": "s.61(3) only empowers regulations to create offences; no sanction regime is set by this text"
+    }
+   ]
+  },
+  "Y": {
+   "thresholds": [
+    {
+     "index": 0,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 1,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 2,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 3,
+     "verdict": "correct",
+     "note": ""
+    }
+   ],
+   "events": [
+    {
+     "index": 0,
+     "verdict": "wrong_date",
+     "note": "Text's bill schedule prints each value before its label: 3 May 2023 is 'Date Passed by the Senate', 24 May 2023 is 'Date Passed by the House of Representatives'. Senate passage is coded with the House date."
+    },
+    {
+     "index": 1,
+     "verdict": "wrong_date",
+     "note": "2023-06-05 is the Clerk's certification date, not the final vote; the House passed the bill on 24 May 2023"
+    },
+    {
+     "index": 2,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 3,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 4,
+     "verdict": "wrong_date",
+     "note": "Entry into force coded not_stated; the text prints '[12th Day of June, 2023]' beside Commencement"
+    },
+    {
+     "index": 5,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 6,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 7,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 8,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 9,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 10,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 11,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 12,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 13,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 14,
+     "verdict": "correct",
+     "note": ""
+    }
+   ],
+   "obligations": [
+    {
+     "index": 0,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 2,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 4,
+     "verdict": "correct",
+     "note": "s.24(1) principles under data_minimization as main type"
+    },
+    {
+     "index": 6,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 8,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 10,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 12,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 14,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 16,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 18,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 20,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 22,
+     "verdict": "correct",
+     "note": "duty conditional on the portability right being established by regulation; stated in conditional_on"
+    },
+    {
+     "index": 24,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 26,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 28,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 30,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 32,
+     "verdict": "correct",
+     "note": "s.44(1) and (3) in one row, same type and addressee"
+    },
+    {
+     "index": 34,
+     "verdict": "wrong_type",
+     "note": "Commission's duty to set up a complaints unit is a government_duty per codebook 3.5, not complaint_mechanism"
+    },
+    {
+     "index": 36,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 38,
+     "verdict": "unsupported",
+     "note": "s.51 civil damages is a remedy (enforcement / private right of action), not an obligation"
+    },
+    {
+     "index": 40,
+     "verdict": "unsupported",
+     "note": "s.53(2) vicarious liability is a liability rule, not a duty"
+    }
+   ],
+   "enforcement": [
+    {
+     "index": 0,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 1,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 2,
+     "verdict": "correct",
+     "note": "account of profits as benefit_revocation_clawback is defensible"
+    },
+    {
+     "index": 3,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 4,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 5,
+     "verdict": "correct",
+     "note": "notes the (b)/(d)/(e) inconsistency in s.13(2)"
+    },
+    {
+     "index": 6,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 7,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 8,
+     "verdict": "unsupported",
+     "note": "s.53(1) attributes culpability to principal officers; it is not a separate sanction regime"
+    },
+    {
+     "index": 9,
+     "verdict": "correct",
+     "note": ""
+    }
+   ]
+  }
+ },
+ "sampling": {
+  "X": {
+   "obligations": 2
+  },
+  "Y": {
+   "obligations": 2
+  }
+ },
+ "classification": {
+  "X": {
+   "domains": "right",
+   "primary_domain": "right",
+   "note": "data_protection (primary), data_transfer_localization (Part VIII), algorithmic_decision_systems (s.37), minors_child_safety (s.31): all have operative provisions."
+  },
+  "Y": {
+   "domains": "right",
+   "primary_domain": "right",
+   "note": "Same domains as X; all supported."
+  }
+ },
+ "reference_scope": "full text",
+ "notes": "Obligations: 42 items in each version, systematic sample k=2 (indices 0,2,...,40; 21 judged per version). Reference excludes procedural time limits (72 h, 60 days, 30 days, 3 months, 1 month, 6-month audit/report) as key dates; both versions code them as deadline events, which the codebook allows, and they were judged correct. Both versions share the Senate/House date error: the bill schedule's extracted text reads '3rd May, 2023. (4) Date Passed by the Senate 24th May, 2023. (5) Date Passed by the House of Representatives', where every other column of the schedule (short title, long title, summary) prints the value before its label, so 3 May = Senate and 24 May = House. Unsampled items noted but not counted: Y O37 (s.49 offence coded as a prohibition obligation) and Y O39 (s.53(1) culpability coded as an obligation) look unsupported; X O3 (s.25 lawful bases as 'other' obligation) is borderline. Text inconsistency in s.13(2) (offence names paras (b),(e); penalties name (b),(d)): Y flags it, X lists (b),(d),(e) without flagging."
+}

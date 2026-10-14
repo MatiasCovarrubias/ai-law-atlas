@@ -1,0 +1,143 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "us-hr3460-119",
+ "tier": "B",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "light, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-interim-20261014"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "AGORA plaintext (ETO, CC BY-NC 4.0), local cache",
+  "url": "https://www.congress.gov/bill/119th-congress/house-bill/3460/text",
+  "retrieved": "2026-01-21",
+  "version": "1.33.0 (2026-09-16)",
+  "language": "en",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "employment_labor",
+   "ai_general"
+  ],
+  "primary_domain": "employment_labor",
+  "mechanisms": [
+   "prohibition_ban",
+   "liability_rule"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "employer"
+  ],
+  "affected_roles": [
+   "workers"
+  ],
+  "decision_margins": [
+   "household:employment"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national"
+   ],
+   "description": "Federal statute reaching employers engaged in commerce or an industry or activity affecting commerce.",
+   "evidence": {
+    "provision": "Sec. 2(8)",
+    "quote": "engaged in commerce or an industry or activity affecting commerce"
+   }
+  },
+  "agora_incentives": [
+   "Civil liability"
+  ],
+  "agora_risk_factors": [
+   "Security: Cybersecurity"
+  ]
+ },
+ "summary": {
+  "short": "Bill barring employers from retaliating against covered employees and independent contractors who report AI security vulnerabilities or AI violations to regulators, law enforcement, Congress or supervisors. Enforced by Labor Department complaint or district court action, with reinstatement, double back pay and damages.",
+  "long": "The bill would prohibit any employer engaged in commerce from discharging, demoting, suspending, threatening, blacklisting, harassing or otherwise discriminating against a covered individual (employees, former employees, independent contractors and former independent contractors) because of protected disclosures about an AI security vulnerability or AI violation. Protected disclosures include information given to the appropriate regulatory official or the Attorney General, a regulatory or law enforcement agency, any Member of Congress or congressional committee, or a supervisor, and assistance in related investigations or proceedings. AI security vulnerability means a security failure that could allow emerging AI technology to be acquired by theft or other means. AI violation covers violations of federal law relating to AI and failures to respond to a substantial and specific danger to public safety, health or national security. A covered individual may file a complaint with the Secretary of Labor under the procedures of 49 U.S.C. 42121(b), or, if no final decision issues within 180 days, sue in federal district court with a jury trial, subject to limitation periods of 6 years, 3 years from knowledge of the facts, and an outer limit of 10 years. Prevailing individuals may receive reinstatement, two times back pay with interest, compensatory damages including litigation costs and attorneys' fees, and other remedies. These rights may not be waived or altered by contract, including mandatory arbitration. The text states no effective date and no civil penalty amounts."
+ },
+ "relations": [
+  {
+   "relation": "cross_references",
+   "target_text": "49 U.S.C. 42121(b) (AIR21 complaint rules and procedures, incorporated by reference)",
+   "note": "Complaints filed with the Secretary of Labor under Sec. 3(b)(1)(A) are governed by the procedures in 49 U.S.C. 42121(b), including its burdens of proof, except as the bill provides.",
+   "evidence": {
+    "provision": "Sec. 3(b)(2)(A)(i)",
+    "quote": "shall be governed by the rules and procedures set forth in section 42121(b) of title 49, United States Code, including the legal burdens of proof described in such section."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Labor Management Relations Act, 1947, s. 501(1) and (3) (29 U.S.C. 142(1) and (3))",
+   "note": "Used only to define 'commerce' and 'industry or activity affecting commerce' for the employer definition.",
+   "evidence": {
+    "provision": "Sec. 2(5)",
+    "quote": "as defined in paragraphs (1) and (3) of section 501 of the Labor Management Relations Act, 1947 (29 U.S.C. 142 (1) and (3))"
+   }
+  }
+ ],
+ "notes": "Introduced bill text; no amendments, repeals or implementing acts are stated. Both relations are cross-references to federal statutes not in the registry, so target_instrument_id is empty. Section_status.relations is not_applicable only because the schema requires that field; relation rows are populated above.",
+ "events": [
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "within 180 days of the filing of a complaint under subparagraph (A)",
+   "anchor": "filing of a complaint with the Secretary of Labor under Sec. 3(b)(1)(A)",
+   "depends_on": "filing of a complaint with the Secretary of Labor under Sec. 3(b)(1)(A)",
+   "applies_to": "Secretary of Labor final decision; covered individual may bring a district court action under Sec. 3(b)(1)(B) if no decision within the period",
+   "evidence": {
+    "provision": "Sec. 3(b)(1)(B)",
+    "quote": "within 180 days of the filing of a complaint under subparagraph (A)"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "more than 6 years after the date on which the violation of subsection (a) occurs",
+   "anchor": "date on which the violation of subsection (a) occurs",
+   "depends_on": "date of the violation of Sec. 3(a)",
+   "applies_to": "action brought under Sec. 3(b)(1)(B) (statute of limitations)",
+   "evidence": {
+    "provision": "Sec. 3(b)(2)(B)(ii)(I)(aa)",
+    "quote": "more than 6 years after the date on which the violation of subsection (a) occurs"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "more than 3 years after the date on which facts material to the right of action are known, or reasonably should have been known, by the covered individual bringing the action",
+   "anchor": "date on which facts material to the right of action are known or reasonably should have been known by the covered individual",
+   "depends_on": "knowledge of facts material to the right of action by the covered individual bringing the action",
+   "applies_to": "action brought under Sec. 3(b)(1)(B) (statute of limitations)",
+   "evidence": {
+    "provision": "Sec. 3(b)(2)(B)(ii)(I)(bb)",
+    "quote": "more than 3 years after the date on which facts material to the right of action are known"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "may not in any circumstance be brought more than 10 years after the date on which the violation occurs",
+   "anchor": "date on which the violation occurs",
+   "depends_on": "date of the violation of Sec. 3(a)",
+   "applies_to": "action brought under Sec. 3(b)(1)(B) (outer limit, notwithstanding the 6-year and 3-year periods)",
+   "evidence": {
+    "provision": "Sec. 3(b)(2)(B)(ii)(II)",
+    "quote": "may not in any circumstance be brought more than 10 years after the date on which the violation occurs"
+   }
+  }
+ ],
+ "section_status": {
+  "thresholds": {
+   "status": "not_found",
+   "note": "No numeric cutoff in the bill changes scope, eligibility, exemption, obligation tier, prohibition, benefit tier, penalty tier or price tier. The 180-day wait (Sec. 3(b)(1)(B)) and the 6-year, 3-year and 10-year limitation periods (Sec. 3(b)(2)(B)(ii)) are procedural time limits, not thresholds. The 2 times back pay remedy (Sec. 3(b)(3)(B)) is relief, not a cutoff. The employer definition has no numeric size test."
+  }
+ },
+ "thresholds": []
+}

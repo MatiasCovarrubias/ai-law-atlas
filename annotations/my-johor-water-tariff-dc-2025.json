@@ -1,0 +1,165 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "my-johor-water-tariff-dc-2025",
+ "tier": "B",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "light, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-interim-20261014"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (connectors/fetch_texts.py)",
+  "url": "https://www.ranhillsaj.com.my/water-tariff",
+  "retrieved": "2026-10-13",
+  "version": "as fetched",
+  "language": "en",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "energy_grid_water",
+   "compute_data_centers"
+  ],
+  "primary_domain": "energy_grid_water",
+  "mechanisms": [
+   "tariff_price_regulation",
+   "designation_tiering"
+  ],
+  "binding_force": "quasi_binding",
+  "addressee_roles": [
+   "consumers_users",
+   "data_center_operator"
+  ],
+  "decision_margins": [
+   "firm:input_use",
+   "household:prices"
+  ],
+  "territorial_scope": {
+   "types": [
+    "subnational"
+   ],
+   "description": "Water tariff schedule of Ranhill SAJ; the text names the utility but not the state, which comes from registry metadata.",
+   "evidence": {
+    "provision": "Water Tariff page, header",
+    "quote": "Welcome to Ranhill SAJ"
+   }
+  },
+  "agora_strategies": [
+   "Tiering: Tiering based on domain of application"
+  ]
+ },
+ "summary": {
+  "short": "Sets Ranhill SAJ water tariff rates in RM per cubic metre and minimum charges by type of use in Johor, including a Data Centre category at RM 5.33 per cubic metre with a RM 53.30 monthly minimum. No effective date appears in the text; registry metadata gives 1 August 2025.",
+  "long": "The page presents a water tariff schedule from Ranhill SAJ with rates in RM per cubic metre and monthly minimum charges for six types of use. Domestic rates rise across three volume bands (0-20 m³, 21-35 m³, over 35 m³) at RM 1.05, 2.35 and 3.50, with a monthly minimum of RM 10.50. Religious institutions and welfare-approved users pay an average rate of RM 1.65 and Domestic Bulk users RM 2.75, with monthly minimums of RM 16.50 and RM 27.50. Non Domestic rates are RM 4.15 (0-35 m³) and RM 5.30 (over 35 m³) with a RM 41.50 minimum. Shipping pays an average RM 8.03 with a RM 80.30 minimum. The Data Centre category pays an average RM 5.33 per cubic metre with a RM 53.30 monthly minimum. The text states no legal basis, effective date, penalties or enforcement provisions; the effective date of 1 August 2025 comes from registry metadata only."
+ },
+ "notes": "Extract is a Ranhill SAJ web page showing a water tariff table (RM per cubic metre and monthly minimum by type of use), with navigation and login text omitted. The text states no enabling act, gazette reference, amending or repealing instrument, or effective date. The registry's 'gazetted tariff effective 1 August 2025' does not appear in the document and is not coded. The Data Centre row gives an Average Rate of RM 5.33 per m³ and a minimum of RM 53.30 monthly, but the text defines no 'Data Centre' category or eligibility criteria. No internal inconsistencies were found.",
+ "events": [],
+ "thresholds": [
+  {
+   "variable": "volume",
+   "variable_text": "UTILIZATION band for water consumption (m³), Domestic",
+   "operator": "range",
+   "value": 0,
+   "value_max": 20,
+   "value_text": "0 m³ – 20 m³ (Domestic; RM 1.05 per m³; minimum RM 10.50 monthly)",
+   "unit": "m³",
+   "currency": "RM",
+   "measurement": "Consumption volume in m³ as banded in the schedule; billing period and metering method not stated",
+   "level": "service",
+   "trigger": "pricing_tier",
+   "consequence": "Rate of RM 1.05 per cubic metre applies to Domestic use within this band",
+   "conditions": "Type of use is Domestic; monthly minimum rate of RM 10.50 is listed separately",
+   "evidence": {
+    "provision": "Water Tariff schedule, Domestic table",
+    "quote": "0 m³ – 20 m³"
+   }
+  },
+  {
+   "variable": "volume",
+   "variable_text": "UTILIZATION band for water consumption (m³), Domestic",
+   "operator": "range",
+   "value": 21,
+   "value_max": 35,
+   "value_text": "21 m³ – 35 m³ (Domestic; RM 2.35 per m³; minimum RM 10.50 monthly)",
+   "unit": "m³",
+   "currency": "RM",
+   "measurement": "Consumption volume in m³ as banded in the schedule; billing period and metering method not stated",
+   "level": "service",
+   "trigger": "pricing_tier",
+   "consequence": "Rate of RM 2.35 per cubic metre applies to Domestic use within this band",
+   "conditions": "Type of use is Domestic; monthly minimum rate of RM 10.50 is listed separately",
+   "evidence": {
+    "provision": "Water Tariff schedule, Domestic table",
+    "quote": "21 m³ – 35 m³"
+   }
+  },
+  {
+   "variable": "volume",
+   "variable_text": "UTILIZATION band for water consumption (m³), Domestic",
+   "operator": ">",
+   "value": 35,
+   "value_text": "> 35 m³ (Domestic; RM 3.50 per m³; minimum RM 10.50 monthly)",
+   "unit": "m³",
+   "currency": "RM",
+   "measurement": "Consumption volume in m³ as banded in the schedule; billing period and metering method not stated",
+   "level": "service",
+   "trigger": "pricing_tier",
+   "consequence": "Rate of RM 3.50 per cubic metre applies to Domestic use above this band limit",
+   "conditions": "Type of use is Domestic; monthly minimum rate of RM 10.50 is listed separately",
+   "evidence": {
+    "provision": "Water Tariff schedule, Domestic table",
+    "quote": "> 35 m³"
+   }
+  },
+  {
+   "variable": "volume",
+   "variable_text": "UTILIZATION band for water consumption (m³), Non Domestic",
+   "operator": "range",
+   "value": 0,
+   "value_max": 35,
+   "value_text": "0 m³ – 35 m³ (Non Domestic; RM 4.15 per m³; minimum RM 41.50 monthly)",
+   "unit": "m³",
+   "currency": "RM",
+   "measurement": "Consumption volume in m³ as banded in the schedule; billing period and metering method not stated",
+   "level": "service",
+   "trigger": "pricing_tier",
+   "consequence": "Rate of RM 4.15 per cubic metre applies to Non Domestic use within this band",
+   "conditions": "Type of use is Non Domestic; monthly minimum rate of RM 41.50 is listed separately",
+   "evidence": {
+    "provision": "Water Tariff schedule, Non Domestic table",
+    "quote": "0 m³ – 35 m³"
+   }
+  },
+  {
+   "variable": "volume",
+   "variable_text": "UTILIZATION band for water consumption (m³), Non Domestic",
+   "operator": ">",
+   "value": 35,
+   "value_text": "> 35 m³ (Non Domestic; RM 5.30 per m³; minimum RM 41.50 monthly)",
+   "unit": "m³",
+   "currency": "RM",
+   "measurement": "Consumption volume in m³ as banded in the schedule; billing period and metering method not stated",
+   "level": "service",
+   "trigger": "pricing_tier",
+   "consequence": "Rate of RM 5.30 per cubic metre applies to Non Domestic use above this band limit",
+   "conditions": "Type of use is Non Domestic; monthly minimum rate of RM 41.50 is listed separately",
+   "evidence": {
+    "provision": "Water Tariff schedule, Non Domestic table",
+    "quote": "> 35 m³"
+   }
+  }
+ ],
+ "section_status": {
+  "relations": {
+   "status": "not_found",
+   "note": "The page is a tariff table only. It names no legal basis and no related instrument, and states no amendment, repeal, implementation or cross-reference."
+  },
+  "events": {
+   "status": "not_found",
+   "note": "The fetched web page reproduces the tariff rate tables for the Data Centre and other categories but states no dates. It contains no effective date, gazette or signature date, publication date, or phase-in schedule. The registry's reference to an effective date of 1 August 2025 is not in the document, so no event is recorded from it."
+  }
+ },
+ "relations": []
+}

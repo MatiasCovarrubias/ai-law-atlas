@@ -1,0 +1,191 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "us-s2937-119",
+ "tier": "B",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "light, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-interim-20261014"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "AGORA plaintext (ETO, CC BY-NC 4.0), local cache",
+  "url": "https://www.congress.gov/bill/119th-congress/senate-bill/2937/text/is?format=txt",
+  "retrieved": "2026-02-11",
+  "version": "1.33.0 (2026-09-16)",
+  "language": "en",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "ai_general",
+   "consumer_protection",
+   "minors_child_safety"
+  ],
+  "primary_domain": "ai_general",
+  "mechanisms": [
+   "liability_rule",
+   "prohibition_ban",
+   "registration_notification"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "ai_developer",
+   "ai_deployer",
+   "government_agency"
+  ],
+  "affected_roles": [
+   "consumers_users",
+   "minors",
+   "enterprise"
+  ],
+  "decision_margins": [
+   "firm:entry_market_access",
+   "firm:product_design_release",
+   "firm:compliance_process"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national",
+    "extraterritorial"
+   ],
+   "description": "Applies federally in the United States and reaches foreign developers that make covered products available in the United States.",
+   "evidence": {
+    "provision": "Sec. 401(a)",
+    "quote": "Before making a covered product available in the United States, a foreign developer shall designate an agent for service of process."
+   }
+  },
+  "agora_harms": [
+   "Harm to health/safety",
+   "Financial loss",
+   "Harm to property"
+  ],
+  "agora_incentives": [
+   "Civil liability"
+  ],
+  "agora_risk_factors": [
+   "Safety"
+  ],
+  "agora_strategies": [
+   "Licensing, registration, and certification"
+  ]
+ },
+ "summary": {
+  "short": "Creates federal civil liability for developers and deployers of artificial intelligence systems ('covered products') for harm caused by them; makes unenforceable contract and terms language that waives liability; requires foreign developers to designate a US agent before making covered products available; applies to actions commenced after enactment.",
+  "long": "Introduced in the Senate on 29 September 2025 and referred to the Judiciary Committee, the bill makes developers and deployers of artificial intelligence systems ('covered products') civilly liable for harm to persons, property, finances or reputation caused by those products. Developers are liable for failure to exercise reasonable care in design or warnings, breach of express warranty, or a defective condition unreasonably dangerous at sale, with strict liability for defective condition (Sec. 101). Deployers are liable as developers for substantial modification or intentional misuse (Sec. 102). Contract and terms-of-service language that waives rights or unreasonably limits liability is unenforceable (Sec. 201). Suits may be brought in federal district court by the Attorney General, state attorneys general, individuals or classes; limitations period is four years from discovery (Secs. 301, 303). State law is superseded only where it conflicts with the Act (Sec. 304). Foreign developers must designate a US agent for service of process before making covered products available in the United States and notify the Attorney General of changes within 15 days; deploying without designation is prohibited (Title IV). The Act applies to liability actions commenced on or after enactment (Sec. 501)."
+ },
+ "notes": "Standalone bill as introduced (Sept 29, 2025; referred to Committee on the Judiciary). It amends no existing statute and names no federal or state instrument. Sec. 305 refers to 'amendments made by this Act' but the bill makes none. References to other law are generic: 'applicable covered product safety statute or administrative regulation' (Sec. 101(b)(4), 101(c)(5)) and 'applicable State law' (Sec. 201, Sec. 304). Points a reader should check: 'foreign developer' (Sec. 401-402) is not defined in Sec. 3, which defines 'developer' without reference to nationality; Sec. 301 lists violations of sections 101, 102 and 201 as the basis for civil actions, not Title IV, while Sec. 402(b) gives the Attorney General injunctive relief for the Sec. 402(a) prohibition; Sec. 401(d) and Sec. 402 use 'Attorney General' and Sec. 403 creates a registry, but no penalty amount or civil penalty is stated for Title IV.",
+ "events": [
+  {
+   "event": "introduced",
+   "date": "2025-09-29",
+   "date_type": "absolute",
+   "date_text": "September 29, 2025",
+   "applies_to": "Senate (bill introduced by Mr. Durbin for himself and Mr. Hawley)",
+   "evidence": {
+    "provision": "Cover page (introduction)",
+    "quote": "Mr. Durbin (for himself and Mr. Hawley) introduced the following bill"
+   }
+  },
+  {
+   "event": "application",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "This Act shall apply with respect to any liability action commenced on or after the date of enactment of this Act",
+   "anchor": "date of enactment of this Act",
+   "depends_on": "date of enactment of this Act",
+   "applies_to": "liability actions commenced on or after enactment, regardless of when the harm or conduct occurred",
+   "evidence": {
+    "provision": "Sec. 501",
+    "quote": "This Act shall apply with respect to any liability action commenced on or after the date of enactment of this Act"
+   }
+  },
+  {
+   "event": "application",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "Before making a covered product available in the United States, a foreign developer shall designate an agent for service of process.",
+   "anchor": "making a covered product available in the United States",
+   "depends_on": "making a covered product available in the United States",
+   "applies_to": "foreign developers of covered products",
+   "evidence": {
+    "provision": "Sec. 401(a)",
+    "quote": "Before making a covered product available in the United States, a foreign developer shall designate an agent for service of process."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "not later than 15 days after the change",
+   "anchor": "change to the designated agent or its contact information",
+   "depends_on": "change to the designated agent or its contact information under Sec. 401(a)",
+   "applies_to": "foreign developers notifying the Attorney General of changes to the designated agent",
+   "offset_value": 15,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Sec. 401(d)",
+    "quote": "not later than 15 days after the change"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "may be filed not later than 4 years after the date on which the claimant discovered or, in the exercise of reasonable care, should have discovered",
+   "anchor": "date on which the claimant discovered or should have discovered the harm and its cause",
+   "depends_on": "claimant's discovery (or constructive discovery) of the harm and its cause",
+   "applies_to": "filing of a liability action under Title I",
+   "offset_value": 4,
+   "offset_unit": "years",
+   "evidence": {
+    "provision": "Sec. 303(a)",
+    "quote": "may be filed not later than 4 years after the date on which the claimant discovered"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "age",
+   "variable_text": "under 18 years old",
+   "operator": "<",
+   "value": 18,
+   "value_text": "under 18 years old",
+   "unit": "years",
+   "measurement": "Age of the user of the covered product; the text does not state how age is determined.",
+   "level": "person",
+   "trigger": "presumption",
+   "consequence": "A risk is presumed not to be open and obvious to such a user, so the open-and-obvious bar on failure-to-warn liability in subparagraph (A) does not apply to that risk.",
+   "conditions": "Applies to a failure-to-warn liability action under Sec. 101(a)(2) in which the risk is otherwise open and obvious to an ordinary user.",
+   "evidence": {
+    "provision": "Sec. 101(c)(4)(B)",
+    "quote": "a risk shall be presumed to not be open and obvious to a user of a covered product who is under 18 years old"
+   }
+  },
+  {
+   "variable": "age",
+   "variable_text": "under the age of 18",
+   "operator": "<",
+   "value": 18,
+   "value_text": "because the person is under the age of 18",
+   "unit": "years",
+   "measurement": "Age of the person bringing a claim; the text does not state how age is determined.",
+   "level": "person",
+   "trigger": "eligibility",
+   "consequence": "Person counts as under a legal disability, so the limitation period in Sec. 303(a) is tolled until the person ceases to be under a legal disability (Sec. 303(b)).",
+   "conditions": "Alternatively applies where the person lacks capacity to make decisions about legal rights because of a mental illness or intellectual disability (Sec. 3(12)(A)).",
+   "evidence": {
+    "provision": "Sec. 3(12)(B)",
+    "quote": "because the person is under the age of 18"
+   }
+  }
+ ],
+ "section_status": {
+  "relations": {
+   "status": "not_found",
+   "note": "No named instrument is amended, repealed, implemented, transposed or cross-referenced. The bill refers generically to unnamed federal safety statutes and to State law (Sec. 101(b)(4), 101(c)(5), 201, 304); these are not registry instruments and are not coded as relations."
+  }
+ },
+ "relations": []
+}

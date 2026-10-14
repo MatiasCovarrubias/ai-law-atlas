@@ -1,0 +1,750 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "mx-cnbv-biometricos-bancos-2026",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (connectors/fetch_texts.py)",
+  "url": "https://sidof.segob.gob.mx/notas/docFuente/5792307",
+  "retrieved": "2026-10-13",
+  "version": "as fetched",
+  "language": "es",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "biometrics",
+   "data_protection",
+   "data_access_sharing",
+   "cybersecurity"
+  ],
+  "primary_domain": "biometrics",
+  "mechanisms": [
+   "mandate_obligation",
+   "prohibition_ban",
+   "licensing_permit_certification",
+   "registration_notification",
+   "standard_setting"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "financial_institution"
+  ],
+  "affected_roles": [
+   "consumers_users"
+  ],
+  "decision_margins": [
+   "household:access",
+   "household:data_privacy",
+   "firm:product_design_release",
+   "firm:compliance_process"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national"
+   ],
+   "description": "Applies to credit institutions subject to Mexican banking rules, for clients presenting Mexican identity documents issued in Mexico or through consulates abroad.",
+   "evidence": {
+    "provision": "Artículo 51 Bis",
+    "quote": "Las Instituciones deberán requerir a las personas físicas que de manera presencial soliciten la celebración de operaciones pasivas"
+   }
+  },
+  "agora_applications": [
+   "Finance and investment",
+   "Security"
+  ],
+  "agora_harms": [
+   "Violation of civil or human rights, including privacy"
+  ],
+  "agora_risk_factors": [
+   "Privacy",
+   "Security: Cybersecurity"
+  ],
+  "agora_strategies": [
+   "Licensing, registration, and certification",
+   "Performance requirements",
+   "Input controls: Data circulation",
+   "Input controls: Data use"
+  ]
+ },
+ "summary": {
+  "short": "Amends Mexico's CNBV general provisions for credit institutions to permit facial biometric identity verification alongside fingerprints, checked against official registries, and sets technical and security requirements for biometric databases (Annex 71). Applies from the day after DOF publication.",
+  "long": "CNBV resolution dated 25 June 2026 amending Articles 51 Bis, 51 Bis 2, 51 Bis 3, 51 Bis 4 and 51 Bis 5 of the general provisions for credit institutions and replacing Annex 71. Credit institutions must verify, for in-person operations, that the biometric data of the person presenting an identity document matches official registries, with a 90% match for fingerprints and an online check of facial biometrics added. Institutions may build their own biometric databases in place of certain requirements, subject to matching against official registries, notice to the Commission within 20 business days, annual validation of security mechanisms, and deletion of data when use stops. Biometric data may not be sold, transferred, shared or interoperated with other institutions or third parties for identity checks. The Commission may request information and, after a hearing, order partial or total suspension of a database for serious or repeated non-compliance. The Commission may also authorise alternative processes and documents. Annex 71 sets capture requirements and security controls such as segregation, encryption and penetration testing. Institutions must comply within 90 business days of entry into force, the day after DOF publication."
+ },
+ "relations": [
+  {
+   "relation": "legal_basis",
+   "target_text": "Ley de Instituciones de Crédito (artículos 52, párrafo octavo y 98 Bis)",
+   "note": "Enabling powers cited in the preamble.",
+   "evidence": {
+    "provision": "Preámbulo (fundamento)",
+    "quote": "con fundamento en lo dispuesto por los artículos 52, párrafo octavo y 98 Bis de la Ley de Instituciones de Crédito"
+   }
+  },
+  {
+   "relation": "legal_basis",
+   "target_text": "Ley de la Comisión Nacional Bancaria y de Valores (artículos 4, fracciones II, XXXVI y XXXVIII, y 16, fracción I)",
+   "note": "Enabling powers of the issuing authority cited in the preamble.",
+   "evidence": {
+    "provision": "Preámbulo (fundamento)",
+    "quote": "así como 4, fracciones II, XXXVI y XXXVIII y 16, fracción I de la Ley de la Comisión Nacional Bancaria y de Valores"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Disposiciones de carácter general aplicables a las instituciones de crédito (DOF 2 de diciembre de 2005, as amended)",
+   "note": "Amends Arts. 51 Bis, 51 Bis 2, 51 Bis 3, 51 Bis 4 (listed paragraphs), 51 Bis 5 and replaces Anexo 71. Other provisions are not changed.",
+   "evidence": {
+    "provision": "ÚNICO",
+    "quote": "Se REFORMAN los artículos 51 Bis, párrafo primero, fracción I"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Ley para Regular las Agrupaciones Financieras (artículo 113)",
+   "note": "Sharing of biometric databases is barred without prejudice to Art. 113 of that law.",
+   "evidence": {
+    "provision": "Art. 51 Bis 2 (párrafo sobre no enajenación de bases biométricas)",
+    "quote": "sin perjuicio de lo establecido en el Artículo 113 de la Ley para Regular las Agrupaciones Financieras"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Disposiciones de carácter general a que se refiere el artículo 115 de la Ley de Instituciones de Crédito",
+   "note": "Art. 51 Bis 2 uses the identification list of disposición 4ª of these rules as a fallback for customers without the listed documents.",
+   "evidence": {
+    "provision": "Art. 51 Bis 2, fracción I, segundo párrafo",
+    "quote": "disposición 4ª, fracción I, inciso b), subinciso (i) de las Disposiciones de carácter general a que se refiere el artículo 115 de la Ley de Instituciones de Crédito"
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "Comisión Nacional Bancaria y de Valores",
+   "role": "designated",
+   "function": "Issuing authority of the rule; may request additional information, authorize alternative identification and verification processes, and instruct partial or total suspension of a biometric database.",
+   "evidence": {
+    "provision": "Art. 51 Bis 2 (penúltimo párrafo)",
+    "quote": "La Comisión podrá requerir a la Institución en todo momento información adicional"
+   }
+  },
+  {
+   "name": "Instituciones de crédito",
+   "role": "addressee",
+   "function": "Credit institutions bound by the identity verification and biometric database duties.",
+   "evidence": {
+    "provision": "Art. 51 Bis",
+    "quote": "Las Instituciones deberán requerir a las personas físicas que de manera presencial soliciten la celebración"
+   }
+  },
+  {
+   "name": "Instituto Nacional Electoral",
+   "role": "listed",
+   "function": "Reference registry against which fingerprint or biometric data from voter credentials are verified online.",
+   "evidence": {
+    "provision": "Art. 51 Bis 4, fracción I, inciso b)",
+    "quote": "coincida, al menos, en un noventa por ciento con los registros del mencionado Instituto"
+   }
+  },
+  {
+   "name": "Secretaría de Relaciones Exteriores",
+   "role": "listed",
+   "function": "Reference registry for passports and consular identification cards verified online; also the authority for verification of customers who cannot provide biometric data.",
+   "evidence": {
+    "provision": "Art. 51 Bis 4, fracción II, inciso b)",
+    "quote": "coincida, al menos, en un noventa por ciento con los registros de la Secretaría de Relaciones Exteriores"
+   }
+  },
+  {
+   "name": "Registro Nacional de Población",
+   "role": "listed",
+   "function": "Registry against which the customer's Clave Única de Registro de Población is corroborated.",
+   "evidence": {
+    "provision": "Art. 51 Bis 2, fracción IV",
+    "quote": "corroborar la existencia de la Clave Única de Registro de Población del cliente con el Registro Nacional de Población"
+   }
+  }
+ ],
+ "notes": "Registry metadata gives DOF publication 01-07-2026; the document text does not state that date. It is dated Ciudad de México, 25 de junio de 2026, and enters into force the day after DOF publication (Transitorio PRIMERO). Only the listed paragraphs are reformed; '. . .' marks unchanged text, and Anexo 71 is replaced in full. Internal references (Arts. 168 Bis 14, Anexo 75) are not coded as relations. Target_instrument_id is empty because no target is in the registry. Transitorio SEGUNDO uses días naturales while other deadlines use días hábiles; this is a difference in wording, not a conflict.",
+ "events": [
+  {
+   "event": "signed",
+   "date": "2026-06-25",
+   "date_type": "absolute",
+   "date_text": "Ciudad de México, a 25 de junio de 2026",
+   "applies_to": "Resolución que modifica las Disposiciones de carácter general aplicables a las instituciones de crédito (biométricos)",
+   "evidence": {
+    "provision": "Atentamente (dateline)",
+    "quote": "Ciudad de México, a 25 de junio de 2026"
+   }
+  },
+  {
+   "event": "published",
+   "date": null,
+   "date_type": "not_stated",
+   "date_text": "publicación en el Diario Oficial de la Federación (the text does not print the publication date)",
+   "applies_to": "Resolución que modifica las Disposiciones de carácter general aplicables a las instituciones de crédito (biométricos)",
+   "evidence": {
+    "provision": "TRANSITORIOS, PRIMERO",
+    "quote": "su publicación en el Diario Oficial de la Federación"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "al día siguiente de su publicación en el Diario Oficial de la Federación",
+   "anchor": "publicación en el Diario Oficial de la Federación",
+   "applies_to": "Resolución que modifica las Disposiciones de carácter general aplicables a las instituciones de crédito (biométricos)",
+   "offset_value": 1,
+   "offset_unit": "days",
+   "anchor_event": "published",
+   "evidence": {
+    "provision": "TRANSITORIOS, PRIMERO",
+    "quote": "entrará en vigor al día siguiente de su publicación en el Diario Oficial de la Federación"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "dentro de un plazo de 30 días naturales, un aviso a la Comisión",
+   "anchor": "entrada en vigor de la presente Resolución",
+   "applies_to": "Instituciones que, a la entrada en vigor de la Resolución, tengan conformada una base de datos de información biométrica de sus clientes: aviso a la Comisión (Anexo 75), con fecha de conformación y fecha de inicio de uso",
+   "offset_value": 30,
+   "offset_unit": "days",
+   "anchor_event": "entry_into_force",
+   "evidence": {
+    "provision": "TRANSITORIOS, SEGUNDO",
+    "quote": "dentro de un plazo de 30 días naturales, un aviso a la Comisión"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "dentro de un plazo máximo de 90 días hábiles contados a partir de su entrada en vigor",
+   "anchor": "entrada en vigor de la presente Resolución",
+   "applies_to": "Instituciones: conformity with the Resolución modificatoria",
+   "offset_value": 90,
+   "offset_unit": "business_days",
+   "anchor_event": "entry_into_force",
+   "evidence": {
+    "provision": "TRANSITORIOS, TERCERO",
+    "quote": "dentro de un plazo máximo de 90 días hábiles contados a partir de su entrada en vigor"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "a más tardar dentro de los 20 días hábiles posteriores a la fecha en que inicien operaciones en materia de verificación de identidad utilizando la base de datos de información biométrica",
+   "depends_on": "fecha en que la Institución inicie operaciones en materia de verificación de identidad utilizando su base de datos de información biométrica",
+   "applies_to": "Art. 51 Bis 2: institutions that form a biometric database of clients and use it for identity verification; notice in Anexo 75 format with supporting documents",
+   "offset_value": 20,
+   "offset_unit": "business_days",
+   "evidence": {
+    "provision": "Artículo 51 Bis 2, párrafo primero",
+    "quote": "a más tardar dentro de los 20 días hábiles posteriores a la fecha en que inicien operaciones en materia de verificación de identidad utilizando la base de datos de información biométrica"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "validación anual; a más tardar dentro de los 20 días hábiles posteriores a la conclusión de la validación",
+   "anchor": "conclusión de la validación",
+   "applies_to": "Art. 51 Bis 2: institutions that form a biometric database; annual validation of the security mechanisms in Anexo 71 and reporting of corrective actions to the Commission",
+   "offset_value": 20,
+   "offset_unit": "business_days",
+   "evidence": {
+    "provision": "Artículo 51 Bis 2, párrafo sobre validación anual",
+    "quote": "deberá realizar una validación anual respecto de los mecanismos de seguridad mencionados en el Anexo 71"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "con al menos 20 días hábiles posteriores al término del uso de la base anteriormente mencionada",
+   "depends_on": "término del uso de la base de datos de información biométrica",
+   "applies_to": "Art. 51 Bis 2: institutions that stop using a biometric database; notice to the Commission in Anexo 75 format",
+   "offset_value": 20,
+   "offset_unit": "business_days",
+   "evidence": {
+    "provision": "Artículo 51 Bis 2, párrafo sobre dejar de utilizar la base de datos",
+    "quote": "con al menos 20 días hábiles posteriores al término del uso de la base anteriormente mencionada"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "al menos 20 días hábiles posteriores al término de uso de la base mencionada",
+   "depends_on": "término de uso de la base de datos de información biométrica autorizada conforme al artículo 51 Bis 3",
+   "applies_to": "Art. 51 Bis 3: institutions using an authorised alternative process to form a biometric database; notice to the Commission in Anexo 75 format",
+   "offset_value": 20,
+   "offset_unit": "business_days",
+   "evidence": {
+    "provision": "Artículo 51 Bis 3, párrafo quinto",
+    "quote": "al menos 20 días hábiles posteriores al término de uso de la base mencionada"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "dentro de los 20 días hábiles posteriores respecto del término de su uso",
+   "depends_on": "término de uso del documento de identificación o de la acción de verificación autorizada conforme al artículo 51 Bis 5",
+   "applies_to": "Art. 51 Bis 5: institutions that stop using an authorised identification document or verification action; notice to the Commission in Anexo 75 format",
+   "offset_value": 20,
+   "offset_unit": "business_days",
+   "evidence": {
+    "provision": "Artículo 51 Bis 5, último párrafo",
+    "quote": "dentro de los 20 días hábiles posteriores respecto del término de su uso"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "other",
+   "variable_text": "coincidencia de la información biométrica con los registros del INE (credencial para votar)",
+   "operator": ">=",
+   "value": 90,
+   "value_text": "al menos, en un noventa por ciento",
+   "unit": "%",
+   "measurement": "Verificación en línea por la Institución contra los registros del Instituto Nacional Electoral; los datos biométricos obtenidos deben cumplir los requisitos técnicos de dicho Instituto",
+   "level": "person",
+   "trigger": "eligibility",
+   "consequence": "Online biometric verification of a person presenting an INE voter credential must reach at least a 90% match with INE records.",
+   "conditions": "In-person operations under Art. 51 Bis; biometric data must be obtained directly from the holder.",
+   "evidence": {
+    "provision": "Artículo 51 Bis 4, fracción I, inciso b), párrafo primero",
+    "quote": "coincida, al menos, en un noventa por ciento con los registros del mencionado Instituto"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "coincidencia de la información biométrica con los registros de la SRE (pasaporte mexicano)",
+   "operator": ">=",
+   "value": 90,
+   "value_text": "al menos, en un noventa por ciento",
+   "unit": "%",
+   "measurement": "Verificación en línea por la Institución contra los registros de la Secretaría de Relaciones Exteriores; los datos biométricos obtenidos deben cumplir los requisitos técnicos de dicha Secretaría",
+   "level": "person",
+   "trigger": "eligibility",
+   "consequence": "Online biometric verification of a person presenting a Mexican passport must reach at least a 90% match with SRE records.",
+   "conditions": "In-person operations under Art. 51 Bis; biometric data must be obtained directly from the person.",
+   "evidence": {
+    "provision": "Artículo 51 Bis 4, fracción II, inciso b), párrafo primero",
+    "quote": "coincida, al menos, en un noventa por ciento con los registros de la Secretaría de Relaciones Exteriores"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "coincidencia de la información biométrica con los registros de la SRE (matrícula consular)",
+   "operator": ">=",
+   "value": 90,
+   "value_text": "al menos, en un noventa por ciento",
+   "unit": "%",
+   "measurement": "Verificación en línea por la Institución contra los registros de la Secretaría de Relaciones Exteriores; los datos biométricos obtenidos deben cumplir los requisitos técnicos de dicha Secretaría",
+   "level": "person",
+   "trigger": "eligibility",
+   "consequence": "Online biometric verification of a person presenting a consular identity card (matrícula consular) must reach at least a 90% match with SRE records.",
+   "conditions": "In-person operations under Art. 51 Bis; applies in addition to the data checks in fracción V, incisos a) to c).",
+   "evidence": {
+    "provision": "Artículo 51 Bis 4, fracción V, párrafo segundo",
+    "quote": "que presenta la matrícula consular coincida, al menos, en un noventa por ciento con los registros de la Secretaría de Relaciones Exteriores"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "número de identificaciones adicionales cuando la persona no cuenta con los documentos primarios",
+   "operator": "=",
+   "value": 2,
+   "value_text": "dos de las demás identificaciones",
+   "unit": "identificaciones",
+   "measurement": "Número de identificaciones que la Institución debe requerir al cliente",
+   "level": "person",
+   "trigger": "obligation",
+   "consequence": "Where the person has none of the listed primary documents, the institution must require two of the other listed identifications and perform the verification in Art. 51 Bis 4, fracción IV.",
+   "conditions": "Applies when the person presenting himself or herself has none of the documents listed in the preceding paragraph of Art. 51 Bis 2, fracción I, and the base de datos is being formed.",
+   "evidence": {
+    "provision": "Artículo 51 Bis 2, fracción I, párrafo segundo",
+    "quote": "las Instituciones deberán requerir dos de las demás identificaciones mencionadas en la disposición 4ª, fracción I, inciso b), subinciso (i)"
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "Autenticación Biométrica",
+   "defined_in": "Anexo 71, III. Glosario",
+   "evidence": {
+    "provision": "Anexo 71, III. Glosario",
+    "quote": "El Proceso mediante el cual se verifica la identidad del Usuario con los datos biométricos de huellas dactilares o del rostro que las Instituciones hayan obtenido previamente."
+   }
+  },
+  {
+   "term": "Comparación",
+   "defined_in": "Anexo 71, III. Glosario",
+   "evidence": {
+    "provision": "Anexo 71, III. Glosario",
+    "quote": "Proceso mediante el cual la Plantilla Biométrica generada a partir de una \"captura en vivo\" es comparada con la(s) otra(s) Plantilla(s) Biométricas generadas y guardadas previamente"
+   }
+  },
+  {
+   "term": "Plantilla Biométrica",
+   "defined_in": "Anexo 71, III. Glosario",
+   "evidence": {
+    "provision": "Anexo 71, III. Glosario",
+    "quote": "Representación alfanumérica de la información extraída de una o más muestras biométricas."
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "verification_gatekeeping",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Institutions must require persons who apply in person for passive operations linked to Level 4 accounts, or for active operations, services or payment means linked to Levels 3 and 4, to provide identity data and perform the verification actions of Art. 51 Bis 4 fracción I for the person presenting; no online biometric verification of a represented person.",
+   "conditional_on": "Applies to in-person requests by natural persons for the listed operations.",
+   "evidence": {
+    "provision": "Art. 51 Bis (primer párrafo, reformado)",
+    "quote": "Las Instituciones deberán requerir a las personas físicas que de manera presencial soliciten la celebración de operaciones pasivas relacionadas con Cuentas Bancarias Nivel 4"
+   }
+  },
+  {
+   "type": "verification_gatekeeping",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Institutions must perform the verification actions of Art. 51 Bis 4 fracciones I (inciso b), II (inciso b) and V for the person presenting, and must not verify online the biometric data of a represented person when a representative acts.",
+   "evidence": {
+    "provision": "Art. 51 Bis, fracción I, inciso a) (reformado)",
+    "quote": "Las Instituciones deberán efectuar las acciones de verificación a que alude el Artículo 51 Bis 4, fracción I de las presentes disposiciones respecto de la persona que se presenta."
+   }
+  },
+  {
+   "type": "verification_gatekeeping",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "For database-based identity verification, institutions must verify that the client's biometric data match the registries of the INE, SRE, Mexican tax authority or federal agency, keep documentary evidence, verify the client's credential, passport or consular ID and corroborate the CURP with the Registro Nacional de Población; verification is only against each institution's own database.",
+   "conditional_on": "Applies when the institution forms its own biometric database under Art. 51 Bis 2.",
+   "evidence": {
+    "provision": "Art. 51 Bis 2, párrafos segundo, tercero y fracciones I, III y IV",
+    "quote": "Lo anterior, siempre que las Instituciones realicen, para la integración de dicha base de datos, la verificación de la coincidencia de la información biométrica del cliente"
+   }
+  },
+  {
+   "type": "record_keeping",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Institutions must keep documentary evidence of the custody of the biometric matching verification results with the authorities listed in the article.",
+   "conditional_on": "Applies when the institution forms a biometric database under Art. 51 Bis 2.",
+   "evidence": {
+    "provision": "Art. 51 Bis 2, párrafo segundo",
+    "quote": "Asimismo, las instituciones deberán contar con la evidencia documental del resguardo de la verificación de la coincidencia realizada"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Institutions must first capture the biometric data of their employees, directors and officials who will collect client data, and then capture client data, meeting the technical requirements of Anexo 71.",
+   "conditional_on": "Applies when the institution forms a biometric database under Art. 51 Bis 2.",
+   "evidence": {
+    "provision": "Art. 51 Bis 2, fracción II",
+    "quote": "Hacer primeramente la captura de la información biométrica de sus empleados, directivos o funcionarios"
+   }
+  },
+  {
+   "type": "testing_evaluation",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Institutions with a biometric database must carry out an annual validation of the security mechanisms in Anexo 71, in compliance with Art. 168 Bis 14 fracción IX.",
+   "applies_from": "Annual",
+   "conditional_on": "Applies when the institution holds a biometric database under Art. 51 Bis 2.",
+   "evidence": {
+    "provision": "Art. 51 Bis 2, quinto párrafo",
+    "quote": "deberá realizar una validación anual respecto de los mecanismos de seguridad mencionados en el Anexo 71"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Institutions must send the Commission, within 20 business days after completing the annual validation, the actions taken to address the deviations identified.",
+   "applies_from": "Within 20 días hábiles after conclusion of the annual validation.",
+   "conditional_on": "Applies when the institution holds a biometric database under Art. 51 Bis 2.",
+   "evidence": {
+    "provision": "Art. 51 Bis 2, quinto párrafo",
+    "quote": "enviar a la Comisión, a más tardar dentro de los 20 días hábiles posteriores a la conclusión de la validación"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "regulator",
+   "modality": "may",
+   "summary": "The Commission may at any time request additional information to supervise compliance and, after a hearing for the institution, may order partial or total, temporary or definitive suspension of the biometric database use for serious or repeated non-compliance.",
+   "conditional_on": "Applies to institutions with a biometric database under Art. 51 Bis 2.",
+   "evidence": {
+    "provision": "Art. 51 Bis 2, sexto y séptimo párrafos",
+    "quote": "La Comisión podrá requerir a la Institución en todo momento información adicional"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "financial_institution",
+   "modality": "shall_not",
+   "summary": "Biometric client data in the database must not be sold, transferred, shared or requested under any exchange, custody, reuse or interoperability scheme between institutions or with third parties for identity verification, without prejudice to Art. 113 of the Ley para Regular las Agrupaciones Financieras.",
+   "evidence": {
+    "provision": "Art. 51 Bis 2, octavo párrafo",
+    "quote": "no deberá ser enajenada, vendida, transferida, compartida o solicitada bajo cualquier esquema de intercambio"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "When an institution stops using its biometric database, it must notify the Commission using Anexo 75 at least 20 business days after the end of use.",
+   "applies_from": "At least 20 días hábiles after the end of use of the database.",
+   "conditional_on": "Applies when the institution decides to stop using the database.",
+   "evidence": {
+    "provision": "Art. 51 Bis 2, noveno párrafo",
+    "quote": "deberán de dar un aviso a la Comisión de conformidad con el formato correspondiente del Anexo 75"
+   }
+  },
+  {
+   "type": "data_minimization",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "After ceasing use of the biometric database, the institution must delete the biometric data using administrative, technical and physical measures that prevent recovery or unauthorised access, and keep documentary evidence for the Commission.",
+   "applies_from": "After the end of use of the database.",
+   "conditional_on": "Applies when the institution stops using the database.",
+   "evidence": {
+    "provision": "Art. 51 Bis 2, noveno párrafo",
+    "quote": "deberán realizar la supresión de los datos biométricos contenidos en la base referida"
+   }
+  },
+  {
+   "type": "licensing_certification",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "To use a process other than that of Art. 51 Bis 2 fracciones I and II, the institution must obtain Commission authorization by submitting Anexo 75 with a detailed description of the mechanism, approved by its Board, and of the technological infrastructure.",
+   "conditional_on": "Commission authorization of other processes under Art. 51 Bis 3.",
+   "evidence": {
+    "provision": "Art. 51 Bis 3, primer párrafo y fracción I",
+    "quote": "La descripción detallada del mecanismo, el cual deberá ser aprobado por su Consejo"
+   }
+  },
+  {
+   "type": "verification_gatekeeping",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Under the alternative process, institutions must verify the match of the client's biometric data with the registries of the INE, SRE, Mexican tax authority or federal agency and keep the security elements for custody and integrity of the information.",
+   "conditional_on": "Applies under an authorized alternative process under Art. 51 Bis 3.",
+   "evidence": {
+    "provision": "Art. 51 Bis 3, primer párrafo",
+    "quote": "las Instituciones deberán realizar la verificación de la coincidencia de la información biométrica del cliente"
+   }
+  },
+  {
+   "type": "record_keeping",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Institutions must keep documentary evidence of the custody of the verification result under the alternative process and make it available to the Commission.",
+   "conditional_on": "Applies under an authorized alternative process under Art. 51 Bis 3.",
+   "evidence": {
+    "provision": "Art. 51 Bis 3, tercer párrafo",
+    "quote": "Las Instituciones deberán contar con la evidencia documental del resguardo del resultado de la verificación"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "When an institution stops using the alternative database, it must notify the Commission using Anexo 75 at least 20 business days after the end of use, then delete the personal data with documented evidence.",
+   "applies_from": "At least 20 días hábiles after the end of use.",
+   "conditional_on": "Applies when the institution stops using the database under Art. 51 Bis 3.",
+   "evidence": {
+    "provision": "Art. 51 Bis 3, quinto párrafo",
+    "quote": "deberán de dar un aviso a la Comisión de conformidad con el formato correspondiente del Anexo 75 de las presentes disposiciones, al menos 20 días hábiles"
+   }
+  },
+  {
+   "type": "verification_gatekeeping",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "For in-person identification with the INE credential (fracción I, inciso b), institutions must verify online that the biometric data obtained match at least 90 percent with INE records, using the technical requirements set by the INE, with reader and application safeguards; the same 90 percent online verification applies to the passport (fracción II, inciso b) and consular ID (fracción V).",
+   "conditional_on": "Applies to in-person operations under Art. 51 Bis.",
+   "evidence": {
+    "provision": "Art. 51 Bis 4, fracción I, inciso b), párrafo primero",
+    "quote": "Verificar en línea que la información biométrica que se obtenga de la persona física que presenta la credencial para votar"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Biometric readers and institution applications must ensure that biometric data are obtained directly from the holder, prevent recording of data from simulation mechanisms, and include security measures so that stored, processed or transmitted information is not known or used by unauthorised third parties.",
+   "conditional_on": "Applies to the biometric verification processes of Art. 51 Bis 4.",
+   "evidence": {
+    "provision": "Art. 51 Bis 4, fracción I, inciso b), párrafo primero",
+    "quote": "deberán asegurar que la información biométrica se obtenga directamente de la persona titular"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Institutions must provide documented mechanisms and procedures for contracting and payment requests, and operations, with persons who cannot provide at least one biometric datum for authentication before the INE, SRE or other authority, recorded in the client file.",
+   "conditional_on": "Applies to persons with a permanent physical impediment to providing biometric data.",
+   "evidence": {
+    "provision": "Art. 51 Bis 4, fracción I, párrafo segundo",
+    "quote": "Las Instituciones deberán prever mecanismos y procedimientos documentados para llevar a cabo las contrataciones y la solicitud de medios de pago"
+   }
+  },
+  {
+   "type": "licensing_certification",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "To request approval of other identity documents or verification actions under Art. 51 Bis 5, institutions must submit Anexo 75 with the proposed process, a description of the process approved by their Board, and a validation method for the documents; changes to an approved procedure require prior Commission authorization.",
+   "conditional_on": "Applies when the institution seeks Commission authorization under Art. 51 Bis 5.",
+   "evidence": {
+    "provision": "Art. 51 Bis 5, tercer párrafo",
+    "quote": "Al solicitar las aprobaciones a que se refiere el párrafo primero de este artículo, las Instituciones deberán presentar lo siguiente"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "When an institution stops using an approved identity document and verification action, it must notify the Commission using Anexo 75 within 20 business days after the end of use.",
+   "applies_from": "Within 20 días hábiles after the end of use.",
+   "conditional_on": "Applies under Art. 51 Bis 5.",
+   "evidence": {
+    "provision": "Art. 51 Bis 5, quinto párrafo",
+    "quote": "deberán de dar un aviso a la Comisión de conformidad con el formato correspondiente del Anexo 75 de las presentes disposiciones, dentro de los 20 días hábiles posteriores respecto del término de su uso"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Institutions that already hold a client biometric database at entry into force must file a notice with the Commission using Anexo 75, stating the database creation date, the date from which it is used for verification, and the type of biometric identification and verification used.",
+   "applies_from": "Within 30 días naturales of the entry into force of the Resolution.",
+   "conditional_on": "Applies to institutions that hold a biometric database at entry into force.",
+   "evidence": {
+    "provision": "Transitorio SEGUNDO",
+    "quote": "deberán presentar dentro de un plazo de 30 días naturales, un aviso a la Comisión"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Institutions must comply with the Resolution as amended within a maximum period of 90 business days from its entry into force.",
+   "applies_from": "90 días hábiles contados a partir de su entrada en vigor.",
+   "evidence": {
+    "provision": "Transitorio TERCERO",
+    "quote": "deberán apegarse a lo establecido en esta Resolución modificatoria, dentro de un plazo máximo de 90 días hábiles"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "financial_institution",
+   "modality": "shall_not",
+   "summary": "Institutions may form client biometric databases only for fingerprint and facial biometrics under Art. 51 Bis 2 and 51 Bis 3, until technical specifications are issued for other biometric data types.",
+   "conditional_on": "Until the Commission issues technical specifications for other biometric data types.",
+   "evidence": {
+    "provision": "Transitorio CUARTO",
+    "quote": "solo podrán conformar la base de datos de información biométrica de sus clientes de conformidad con el artículo 51 Bis 2 y 51 Bis 3"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Institutions must at all times guarantee the integrity, preservation, availability and non-manipulation of stored or transmitted biometric information and, for the first capture process, prevent an employee from registering their own biometric data in place of the client's; the list of minimum measures (a to h) covers logical segregation, dedicated infrastructure, secure configuration, access control with audit records, encryption, vulnerability and penetration testing, integrity and secure deletion controls, and restriction of unauthorised access.",
+   "conditional_on": "Applies to biometric databases under Art. 51 Bis 2 and 51 Bis 3.",
+   "evidence": {
+    "provision": "Anexo 71, párrafo tercero (introducción)",
+    "quote": "Las Instituciones en todo momento deberán garantizar la integridad de la información biométrica almacenada o trasmitida"
+   }
+  },
+  {
+   "type": "testing_evaluation",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "The first capture process of biometric data must be verified annually by the internal control officers (Contraloría Interna) of the institution.",
+   "applies_from": "Annual.",
+   "evidence": {
+    "provision": "Anexo 71, párrafo segundo",
+    "quote": "este proceso deberá de ser verificado de manera anual por los responsables de Contraloría Interna de la Institución."
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Fingerprint capture requires at least six fingerprints per client, using dual readers for at least two fingers per reading, with minimum image parameters, quality analysis per NFIQ, deduplication against existing records, compression at most WSQ 10:1, and at least three recapture attempts when minimum quality is not met.",
+   "conditional_on": "Applies to fingerprint capture for client databases.",
+   "evidence": {
+    "provision": "Anexo 71, sección I, inciso a)",
+    "quote": "Las Instituciones deberán capturar al menos seis huellas dactilares de sus clientes."
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Facial capture requires a duplicate check against existing records (NIST FRVT 1:N), spoofing detection under ISO/IEC 30107-3 or Face Verification Certification, and image requirements under ISO/IEC 19794-5 and ICAO standards.",
+   "conditional_on": "Applies to facial biometric capture for client databases.",
+   "evidence": {
+    "provision": "Anexo 71, sección II (tabla de primera captura de biometría facial)",
+    "quote": "Validar que las capturas de los clientes o empleados de la Institución no se encuentren previamente registradas"
+   }
+  },
+  {
+   "type": "record_keeping",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Where clients are permanently unable to provide fingerprints, the institution must capture as many fingerprints as possible and record the annotations in the client file; for such clients it must also use verification procedures under Art. 51 Bis 4 fracciones I, II and V.",
+   "conditional_on": "Applies where a client cannot permanently provide fingerprints.",
+   "evidence": {
+    "provision": "Anexo 71, excepción a la captura de huellas dactilares, párrafo segundo",
+    "quote": "haciendo las anotaciones correspondientes en el expediente"
+   }
+  },
+  {
+   "type": "licensing_certification",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Capture applications, processes, parameters or devices that do not conform to Anexo 71 must be submitted to the Commission for approval under Art. 51 Bis 3.",
+   "conditional_on": "Applies where capture applications or devices do not conform to Anexo 71.",
+   "evidence": {
+    "provision": "Anexo 71, excepción a la captura de huellas dactilares, párrafo cuarto",
+    "quote": "deberán someterlos a la aprobación de la Comisión a la que se refiere el artículo 51 Bis 3"
+   }
+  }
+ ],
+ "enforcement": [
+  {
+   "sanction_type": "service_suspension",
+   "authority": "Comisión Nacional Bancaria y de Valores",
+   "triggered_by": "Incumplimiento grave o reiterado, a juicio de la Comisión, de los requisitos técnicos, operativos y de seguridad de la base de datos de información biométrica, previo derecho de audiencia de la Institución",
+   "max_penalty_text": "No maximum or penalty amount is stated; the Commission may instruct partial or total, temporary or definitive suspension of use of the biometric database",
+   "cure_period": "None stated; prior right of hearing (derecho de audiencia) must be granted to the Institution before the instruction",
+   "evidence": {
+    "provision": "Art. 51 Bis 2 (párrafo sobre suspensión de la base de datos)",
+    "quote": "previo derecho de audiencia que otorgue a la Institución, podrá instruir la suspensión parcial o total, temporal o definitiva del uso de la base de datos de información biométrica"
+   }
+  }
+ ],
+ "section_status": {}
+}

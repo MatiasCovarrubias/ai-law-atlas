@@ -1,0 +1,143 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "us-az-sb1565-2023",
+ "tier": "B",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "light, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-interim-20261014"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "AGORA plaintext (ETO, CC BY-NC 4.0), local cache",
+  "url": "https://www.azleg.gov/legtext/56leg/1R/bills/SB1565S.htm",
+  "retrieved": "2024-12-05",
+  "version": "1.33.0 (2026-09-16)",
+  "language": "en",
+  "extent": "partial",
+  "note": "AGORA record covers part of an act: State of Arizona Senate Bill 1565, An Act Amending Sections 16-442, 16-552 and 16-621, Arizona Revised Statutes; Relatin"
+ },
+ "classification": {
+  "domains": [
+   "elections_political_ads",
+   "public_sector_ai"
+  ],
+  "primary_domain": "elections_political_ads",
+  "mechanisms": [
+   "prohibition_ban",
+   "licensing_permit_certification",
+   "standard_setting",
+   "mandate_obligation"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "government_agency",
+   "hardware_supplier"
+  ],
+  "affected_roles": [
+   "general_public"
+  ],
+  "decision_margins": [
+   "firm:product_design_release",
+   "firm:entry_market_access"
+  ],
+  "territorial_scope": {
+   "types": [
+    "subnational"
+   ],
+   "description": "Applies to voting systems and elections for federal, state and county offices in Arizona.",
+   "evidence": {
+    "provision": "Sec. 1 (amending A.R.S. 16-442(B))",
+    "quote": "Machines, devices, firmware or software used in this state may not include any artificial intelligence or learning hardware, firmware or software."
+   }
+  },
+  "agora_applications": [
+   "Government: other applications/unspecified"
+  ],
+  "agora_incentives": [
+   "Access to business opportunities"
+  ],
+  "agora_strategies": [
+   "Licensing, registration, and certification",
+   "Evaluation: Conformity assessment"
+  ]
+ },
+ "summary": {
+  "short": "Would amend Arizona election statutes to bar artificial intelligence or learning hardware, firmware and software from voting machines and devices used in federal, state and county elections, from early ballot processing, and from electronic vote adjudication. No effective date appears in the text; registry metadata lists the bill as failed.",
+  "long": "Senate Bill 1565 would amend three Arizona Revised Statutes provisions on election administration. Section 1 amends A.R.S. 16-442: machines, devices, firmware or software used in the state may not include artificial intelligence or learning components; the secretary of state must adopt standards for loss of certification after consulting a committee; the secretary of state may revoke certification or prohibit for up to five years the purchase, lease or use of a voting system in connection with federal, state or county elections; and emergency certification of an upgrade is limited to six months. Section 2 amends A.R.S. 16-552: artificial intelligence or learning software or firmware may not be used in processing early ballots or by the early election board in verifying the voter's affidavit. Section 3 amends A.R.S. 16-621: any electronic vote adjudication feature may not include artificial intelligence or learning software or firmware; the county officer must provide live video recording of ballot custody in tabulation rooms for statewide, county and legislative elections, contingent on legislative appropriation; and chain-of-custody records must be kept from early voting through provisional tabulation. The text states no effective date. Registry metadata records the bill as failed.](string-placeholder)}]}</br>{"
+ },
+ "relations": [
+  {
+   "relation": "amends",
+   "target_text": "Arizona Revised Statutes §§ 16-442, 16-552, 16-621 (Title 16)",
+   "note": "Amends three sections of the Arizona Revised Statutes: § 16-442 (Sec. 1), § 16-552 (Sec. 2) and § 16-621 (Sec. 3). Target instrument is not in the registry, so the ID is left blank.",
+   "evidence": {
+    "provision": "Sec. 1",
+    "quote": "Section 16-442, Arizona Revised Statutes, is amended to read:"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Help America Vote Act of 2002 (federal statute)",
+   "note": "Section 16-442(B) requires that election machines comply with the Help America Vote Act of 2002 and be tested by an accredited laboratory.",
+   "evidence": {
+    "provision": "Sec. 1 (16-442(B))",
+    "quote": "may only be used in this state if they comply with the help America vote act of 2002"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Arizona Revised Statutes § 16-442 (certification of voting equipment)",
+   "note": "Section 16-621(B) applies to an electronic vote adjudication feature certified under § 16-442, which this bill amends.",
+   "evidence": {
+    "provision": "Sec. 3 (16-621(B))",
+    "quote": "that has been certified for use as prescribed by section 16-442"
+   }
+  }
+ ],
+ "notes": "Registry metadata gives status failed (legislative_stage dead). The document has no enactment clause, effective date or legislative history. Amended sections appear as plain text without strike-through or underline, so new material cannot be separated from restated text in this copy; capitalised 'ARTIFICIAL' (Sec. 2 A) and 'INTELLIGENCE' (Sec. 2 B) may mark inserted words. The three amended sections are coded in one row for the Arizona Revised Statutes. Sec. 2 B contains the wording 'software of firmware' where 'software or firmware' seems intended.",
+ "events": [],
+ "thresholds": [
+  {
+   "variable": "other",
+   "variable_text": "years of experience of committee member in electronic voting systems",
+   "operator": ">=",
+   "value": 5,
+   "value_text": "at least five years of experience",
+   "unit": "years",
+   "measurement": "not stated",
+   "level": "person",
+   "trigger": "eligibility",
+   "consequence": "At least one of the three committee members must meet the experience requirement.",
+   "conditions": "Applies to the committee appointed under subsection A of section 16-442.",
+   "evidence": {
+    "provision": "Sec. 1 (amending A.R.S. 16-442(A))",
+    "quote": "at least one of whom shall have at least five years of experience"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "duration limit of emergency certification of an upgrade or modification to a certified voting system",
+   "operator": "<=",
+   "value": 6,
+   "value_text": "not more than six months",
+   "unit": "months",
+   "measurement": "not stated",
+   "level": "product",
+   "trigger": "cap",
+   "consequence": "At the end of the certification period the voting system or device is decertified and unavailable unless certified under this section.",
+   "conditions": "Secretary of state approves after consultation with the committee, on the governing body establishing in an open meeting that the election cannot be conducted without the emergency certification.",
+   "evidence": {
+    "provision": "Sec. 1 (amending A.R.S. 16-442(F))",
+    "quote": "Any emergency certification shall be limited to not more than six months."
+   }
+  }
+ ],
+ "section_status": {
+  "events": {
+   "status": "not_found",
+   "note": "The bill text states no effective date, enactment date or legislative history. Its time periods (for example 'at least ninety days before the election' in 16-552(A) and 'within twenty-four hours' in 16-552(E)) are existing law restated without change, so they are not events of this bill. Legislative steps are not in the fetched text, and no official source URL is available, so the registry status 'failed' is not coded as an event."
+  }
+ }
+}

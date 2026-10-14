@@ -1,0 +1,2522 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "fr-loi-2025-391-ddadue-datacenters",
+ "tier": "B",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "light, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-interim-20261014"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (Claude Code retrieval)",
+  "url": "https://echanges.dila.gouv.fr/OPENDATA/JORF/Freemium_jorf_global_20250713-140000.tar.gz",
+  "retrieved": "2026-10-14",
+  "version": "JORF text: JORF n°0103 du 2 mai 2025 (NOR ECOM2415026L), as promulgated after CC decision n° 2025-879 DC of 29 April 2025; DILA JORF open data, JORFTEXT000051538879",
+  "language": "fr",
+  "extent": "full",
+  "note": "Full law stored; the data-centre provisions are in Article 25 (Code de l'énergie: new chapter VI 'La performance énergétique des centres de données', arts. L. 236-1 to L. 236-3 - reporting for data centres >= 500 kW, waste-heat valorisation for >= 1 MW in L. 236-2, sanctions; plus new art. L. 233-5 (cost-benefit analysis of heating/cooling efficiency for new or substantially modified installations, incl. 4° data centres > 1 MW)). Registry number/date confirmed; full official title is 'LOI n° 2025-391 du 30 avril 2025 portant diverses dispositions d'adaptation au droit de l'Union européenne en matière économique, financière, environnementale, énergétique, de transport, de santé et de circulation des personnes' (registry title is shortened). A rectificatif (JORF n°0109 du 10 mai 2025, JORFTEXT000051575460) corrects only a typo in art. 39 (Art. L. 5215-1 A), not applied. 41 articles. Raw HTML assembled by script from the official DILA JORF open-data XML (texte/version + texte/struct + section_ta + article files) downloaded with curl from echanges.dila.gouv.fr (Légifrance itself returns 403 to curl); article order and headings follow the JORF struct file; no text altered."
+ },
+ "classification": {
+  "domains": [
+   "energy_grid_water",
+   "compute_data_centers",
+   "consumer_protection",
+   "data_protection"
+  ],
+  "primary_domain": "energy_grid_water",
+  "mechanisms": [
+   "mandate_obligation",
+   "prohibition_ban",
+   "licensing_permit_certification",
+   "registration_notification",
+   "disclosure_transparency",
+   "liability_rule"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "data_center_operator",
+   "enterprise",
+   "utility_grid_operator",
+   "financial_institution",
+   "auditor_assessor",
+   "government_agency"
+  ],
+  "affected_roles": [
+   "consumers_users",
+   "data_center_occupant",
+   "general_public"
+  ],
+  "decision_margins": [
+   "firm:input_use",
+   "firm:investment_location",
+   "firm:compliance_process"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national"
+   ],
+   "description": "Applies to data centres in mainland France; some articles are extended to New Caledonia, French Polynesia and Wallis and Futuna.",
+   "evidence": {
+    "provision": "Art. 25 I.9° (Code de l'énergie, Art. L. 236-1 I, second paragraph)",
+    "quote": "Le présent chapitre s'applique à tous les centres de données"
+   }
+  },
+  "agora_incentives": [
+   "Fines",
+   "Civil liability"
+  ]
+ },
+ "summary": {
+  "short": "Omnibus French act adapting law to EU rules in economic, energy, transport and other fields. Its data-centre provisions (Art. 25, Code de l'énergie Art. L. 236-1 to L. 236-3) require energy-data reporting for sites of 500 kW or more, waste-heat recovery at 1 MW or more, and allow administrative fines up to 50,000 euros per data centre.",
+  "long": "Law n° 2025-391 of 30 April 2025 (JORF 2 May 2025) is an omnibus act adapting French law to EU rules across economic, financial, environmental, energy, transport and health fields. Article 25 adds a data-centre chapter to the Energy Code (Art. L. 236-1 to L. 236-3) that applies to all data centres, with defence-related centres excluded from the reporting duty. Centres with installed capacity of 500 kW or more must transmit administrative, environmental and energy information on an EU digital platform and make related data public. Centres of 1 MW or more must recover their waste heat, subject to decree-defined derogations. Projects of 1 MW or more require a cost-benefit analysis of energy efficiency (Art. L. 233-5). The administrative authority may issue a formal notice with a deadline of at most one year and, if it is not followed, an administrative fine of up to 50,000 euros per data centre; it may publish the sanction for two months to five years. Ministers set general rules on siting, grid availability and cooling water. Article 25 I to III enter into force on 1 October 2025, and Art. L. 236-1 from the day after publication. Other titles cover investment-service inducements, electricity aggregation, class actions and energy-efficiency duties for companies and public bodies."
+ },
+ "relations": [
+  {
+   "relation": "legal_basis",
+   "target_text": "Constitution, article 38 (ordinance powers)",
+   "note": "Ordinance authorisations in Art. 1 II, Art. 2 III and VII, and Art. 25 V are made under this article.",
+   "evidence": {
+    "provision": "Art. 1 II",
+    "quote": "Dans les conditions prévues à l'article 38 de la Constitution"
+   }
+  },
+  {
+   "relation": "transposes",
+   "target_text": "Directive (UE) 2023/2864",
+   "note": "Authorises transposition by ordinance; this text does not itself transpose the directive.",
+   "evidence": {
+    "provision": "Art. 1 II 1°",
+    "quote": "la transposition de la directive (UE) 2023/2864 du Parlement européen et du Conseil du 13 décembre 2023"
+   }
+  },
+  {
+   "relation": "transposes",
+   "target_text": "Directive (UE) 2024/1619",
+   "note": "Authorises transposition by ordinance within one year; not transposed by this text.",
+   "evidence": {
+    "provision": "Art. 2 III A",
+    "quote": "transposer en droit français la directive (UE) 2024/1619 du Parlement européen et du Conseil du 31 mai 2024"
+   }
+  },
+  {
+   "relation": "transposes",
+   "target_text": "Directive (UE) 2023/2225",
+   "note": "Authorises transposition by ordinance; not transposed by this text.",
+   "evidence": {
+    "provision": "Art. 2 VII 1°",
+    "quote": "De transposer la directive (UE) 2023/2225 du Parlement européen et du Conseil du 18 octobre 2023"
+   }
+  },
+  {
+   "relation": "transposes",
+   "target_text": "Directive (UE) 2023/2673",
+   "note": "Authorises transposition by ordinance; not transposed by this text.",
+   "evidence": {
+    "provision": "Art. 2 VII 2°",
+    "quote": "De transposer la directive (UE) 2023/2673 du Parlement européen et du Conseil du 22 novembre 2023"
+   }
+  },
+  {
+   "relation": "transposes",
+   "target_text": "Directive (UE) 2023/1791 (energy efficiency)",
+   "note": "Art. 25 V authorises ordinances for listed articles; Art. 25 II also adapts Code de l'énergie provisions to articles of this directive (e.g. L. 233-5, L. 236-2).",
+   "evidence": {
+    "provision": "Art. 25 V",
+    "quote": "nécessaire à la transposition des articles 7,13 à 17,19 à 24 et 26 à 30 de la directive (UE) 2023/1791"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive (UE) 2020/1828 (representative actions)",
+   "note": "Qualified entities for group actions are those listed under article 5 of this directive.",
+   "evidence": {
+    "provision": "Art. 16 I C 3",
+    "quote": "en application de l'article 5 de la directive (UE) 2020/1828 du Parlement européen et du Conseil du 25 novembre 2020"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Code monétaire et financier",
+   "note": "Amended in many articles (Art. 1, 2, 3 III, 4 I, 4 IV, 7 IV and others); also adds articles L. 226-5 and L. 330-5 to L. 330-6.",
+   "evidence": {
+    "provision": "Art. 1 I",
+    "quote": "Le code monétaire et financier est ainsi modifié"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Code de commerce",
+   "note": "Amended in Art. 6, 8 and 16 IV; Art. 4 IV and 7 are also amendments to this code.",
+   "evidence": {
+    "provision": "Art. 6",
+    "quote": "Le code de commerce est ainsi modifié"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Code de l'énergie",
+   "note": "Amended in Art. 17 I, 18, 19 and 20; Art. 25 II adds L. 211-10, L. 233-1 to L. 233-5, and chapters V and VI on public bodies and data centres.",
+   "evidence": {
+    "provision": "Art. 17 I",
+    "quote": "Le code de l'énergie est ainsi modifié"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Code de l'environnement",
+   "note": "Amended in Art. 21 and Art. 25 I; Art. 16 XVII A 3° repeals article L. 142-3-1.",
+   "evidence": {
+    "provision": "Art. 21",
+    "quote": "Le code de l'environnement est ainsi modifié"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Code des assurances",
+   "note": "Amended in Art. 3 I (adds 4° to L. 451-1-1) and Art. 11 I.",
+   "evidence": {
+    "provision": "Art. 11 I",
+    "quote": "Le IV de l'article L. 310-1-1-1 du code des assurances est ainsi modifié"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Code de la consommation",
+   "note": "Amended in Art. 16 XII and Art. 17 II.",
+   "evidence": {
+    "provision": "Art. 17 II",
+    "quote": "Le code de la consommation est ainsi modifié"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Code de la construction et de l'habitation",
+   "note": "Amended in Art. 24 I (car park surfaces and solar shading obligations).",
+   "evidence": {
+    "provision": "Art. 24 I",
+    "quote": "L'article L. 171-4 du code de la construction et de l'habitation est ainsi modifié"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Code de l'urbanisme",
+   "note": "Art. 24 II adds a non-cumulation rule to L. 111-19-1; Art. 24 VI and VII also amend it.",
+   "evidence": {
+    "provision": "Art. 24 II",
+    "quote": "L'article L. 111-19-1 du code de l'urbanisme est complété par un alinéa ainsi rédigé"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Code civil",
+   "note": "Art. 16 XI adds a new chapter V (civil sanction for deliberate fault causing serial damage).",
+   "evidence": {
+    "provision": "Art. 16 XI",
+    "quote": "Le sous-titre II du titre III du livre III du code civil est complété par un chapitre V"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Code de justice administrative",
+   "note": "Art. 16 XIII rewrites article L. 77-10-1 on group actions before administrative courts.",
+   "evidence": {
+    "provision": "Art. 16 XIII",
+    "quote": "L'article L. 77-10-1 du code de justice administrative est ainsi rédigé"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Code de l'organisation judiciaire",
+   "note": "Art. 16 VI restores article L. 211-15 on specialised courts for group actions; Art. 16 XVII B amends it further.",
+   "evidence": {
+    "provision": "Art. 16 VI",
+    "quote": "L'article L. 211-15 du code de l'organisation judiciaire est ainsi rétabli"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Code de la mutualité",
+   "note": "Art. 9 replaces 'société' with 'entreprise' in L. 114-46-4 III.",
+   "evidence": {
+    "provision": "Art. 9",
+    "quote": "Le III de l'article L. 114-46-4 du code de la mutualité est ainsi modifié"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Code de la sécurité sociale",
+   "note": "Art. 11 II amends L. 931-7-3 III.",
+   "evidence": {
+    "provision": "Art. 11 II",
+    "quote": "Le III de l'article L. 931-7-3 du code de la sécurité sociale est ainsi modifié"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Code rural et de la pêche maritime",
+   "note": "Art. 11 III amends L. 524-6-7 IV.",
+   "evidence": {
+    "provision": "Art. 11 III",
+    "quote": "Le IV de l'article L. 524-6-7 du code rural et de la pêche maritime est ainsi modifié"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Code des impositions sur les biens et services",
+   "note": "Art. 25 III replaces a cross-reference in L. 312-70 4°.",
+   "evidence": {
+    "provision": "Art. 25 III",
+    "quote": "Au 4° de l'article L. 312-70 du code des impositions sur les biens et services"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Code du travail",
+   "note": "Art. 14 amends the consultation rule in L. 2312-17 (sixth paragraph).",
+   "evidence": {
+    "provision": "Art. 14",
+    "quote": "Au sixième alinéa de l'article L. 2312-17 du code du travail"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Code général des collectivités territoriales",
+   "note": "Art. 24 X rewrites the end of the last paragraph of article L. 1412-1.",
+   "evidence": {
+    "provision": "Art. 24 X",
+    "quote": "la fin du dernier alinéa de l'article L. 1412-1 du code général des collectivités territoriales est ainsi rédigée"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Loi n° 78-17 du 6 janvier 1978 (informatique, fichiers et libertés)",
+   "note": "Art. 16 XV amends article 38 on representative organisations; Art. 16 XVII A 9° repeals articles 37 and 127 and I of article 128.",
+   "evidence": {
+    "provision": "Art. 16 XV",
+    "quote": "A la première phrase de l'article 38 de la loi n° 78-17 du 6 janvier 1978 relative à l'informatique, aux fichiers et aux libertés"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Loi n° 2023-175 du 10 mars 2023 (accélération de la production d'énergies renouvelables)",
+   "note": "Art. 24 IV amends article 40; Art. 24 V amends article 43 II; Art. 24 II refers to article 40 in a non-cumulation rule.",
+   "evidence": {
+    "provision": "Art. 24 IV",
+    "quote": "L'article 40 de la loi n° 2023-175 du 10 mars 2023 relative à l'accélération de la production d'énergies renouvelables est ainsi modifié"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Loi n° 2021-1104 du 22 août 2021 (climate and resilience)",
+   "note": "Deletes the second paragraph of article 101 V.",
+   "evidence": {
+    "provision": "Art. 24 III",
+    "quote": "Le second alinéa du V de l'article 101 de la loi n° 2021-1104 du 22 août 2021"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Loi n° 2023-451 du 9 juin 2023 (commercial influence)",
+   "note": "Art. 1 V deletes a reference to registration under L. 54-10-3 and approval under L. 54-10-5 in article 4 V 4°.",
+   "evidence": {
+    "provision": "Art. 1 V",
+    "quote": "Au 4° du V de l'article 4 de la loi n° 2023-451 du 9 juin 2023"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Ordonnance n° 2024-934 du 15 octobre 2024 (women on boards)",
+   "note": "Art. 1 IX amends articles 1 and 26 II. Art. 8 VIII 2° refers to it as transposing directive (UE) 2022/2381.",
+   "evidence": {
+    "provision": "Art. 1 IX",
+    "quote": "L'ordonnance n° 2024-934 du 15 octobre 2024 précitée est ainsi modifiée"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Ordonnance n° 2023-1142 du 6 décembre 2023 (sustainability reporting)",
+   "note": "Amended in Art. 7 I, Art. 13 and Art. 8 (via the Code de commerce); Art. 7 changes dates in article 33 II.",
+   "evidence": {
+    "provision": "Art. 7 I",
+    "quote": "L'article 33 de l'ordonnance n° 2023-1142 du 6 décembre 2023"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Ordonnance n° 2023-1138 du 6 décembre 2023 (motor insurance, transposing directive 2021/2118)",
+   "note": "Art. 3 II deletes the second paragraph of article 15.",
+   "evidence": {
+    "provision": "Art. 3 II",
+    "quote": "Le second alinéa de l'article 15 de l'ordonnance n° 2023-1138 du 6 décembre 2023"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Ordonnance n° 2024-936 du 15 octobre 2024 (crypto-asset markets)",
+   "note": "Art. 2 I 13 amends provisions as worded under this ordinance; Art. 2 IV 7° and other articles refer to it in tables.",
+   "evidence": {
+    "provision": "Art. 2 I 13 a",
+    "quote": "dans leur rédaction résultant de l'ordonnance n° 2024-936 du 15 octobre 2024 relative aux marchés de crypto-actifs"
+   }
+  },
+  {
+   "relation": "repeals",
+   "target_text": "Loi n° 2008-496 du 27 mai 2008, article 10",
+   "note": "Repeal stated in Art. 16 XVII A 10°.",
+   "evidence": {
+    "provision": "Art. 16 XVII A 10°",
+    "quote": "L'article 10 de la loi n° 2008-496 du 27 mai 2008 portant diverses dispositions d'adaptation au droit communautaire"
+   }
+  },
+  {
+   "relation": "repeals",
+   "target_text": "Loi n° 2016-1547 du 18 novembre 2016, titre V chapitre Ier",
+   "note": "Repeal stated in Art. 16 XVII A 11°.",
+   "evidence": {
+    "provision": "Art. 16 XVII A 11°",
+    "quote": "Le chapitre Ier du titre V de la loi n° 2016-1547 du 18 novembre 2016 de modernisation de la justice du XXIe siècle"
+   }
+  },
+  {
+   "relation": "repeals",
+   "target_text": "Code de la santé publique, article L. 1526-10",
+   "note": "Repeal stated in Art. 16 XVII C; Art. 16 XVII A 7° repeals chapter III of title IV of book I of part one.",
+   "evidence": {
+    "provision": "Art. 16 XVII C",
+    "quote": "L'article L. 1526-10 du code de la santé publique est abrogé"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Loi n° 95-125 du 8 février 1995 (civil and administrative procedure)",
+   "note": "Mediation in group actions follows chapter I of title II of this law.",
+   "evidence": {
+    "provision": "Art. 16 III C 1",
+    "quote": "dans les conditions prévues au chapitre Ier du titre II de la loi n° 95-125 du 8 février 1995"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Loi n° 2016-1691 du 9 décembre 2016 (Sapin II), article 17",
+   "note": "Art. 4 I 2° refers to the anti-corruption due diligence duties of article 17 for access to beneficial ownership data.",
+   "evidence": {
+    "provision": "Art. 4 I 2°",
+    "quote": "aux obligations prévues à l'article 17 de la loi n° 2016-1691 du 9 décembre 2016"
+   }
+  },
+  {
+   "relation": "designates_under",
+   "target_text": "Regulation (EU) No 1227/2011 (REMIT)",
+   "note": "Art. 19 applies the REMIT sanction criteria and powers, including the CRE's powers under article 18.",
+   "evidence": {
+    "provision": "Art. 19 I 4° b",
+    "quote": "Dans le cas d'un manquement au règlement (UE) n° 1227/2011 du Parlement européen et du Conseil du 25 octobre 2011"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) 2019/942 (ACER)",
+   "note": "Art. 19 6° a and 5° refer to ACER's information requests and to the CRE's role in cases under REMIT.",
+   "evidence": {
+    "provision": "Art. 19 6° a",
+    "quote": "l'Agence pour la coopération des régulateurs de l'énergie instituée par le règlement (UE) 2019/942"
+   }
+  },
+  {
+   "relation": "designates_under",
+   "target_text": "Regulation (EU) 2023/2631 (green bonds)",
+   "note": "The AMF is designated as competent authority under article 44 and holds supervisory powers under article 45.",
+   "evidence": {
+    "provision": "Art. 1 III 8°",
+    "quote": "L'Autorité des marchés financiers est l'autorité compétente au sens de l'article 44 du règlement (UE) 2023/2631"
+   }
+  },
+  {
+   "relation": "designates_under",
+   "target_text": "Regulation (EU) 2017/1129 (prospectus)",
+   "note": "The AMF is granted supervisory and investigatory powers under article 32.",
+   "evidence": {
+    "provision": "Art. 1 III 4° 1°",
+    "quote": "Des pouvoirs de surveillance et d'enquête mentionnés à l'article 32 du règlement (UE) 2017/1129"
+   }
+  },
+  {
+   "relation": "designates_under",
+   "target_text": "Regulation (EU) No 648/2012 (EMIR), article 4 ter",
+   "note": "The AMF supervises compliance with article 4 ter by post-trade risk reduction service providers.",
+   "evidence": {
+    "provision": "Art. 1 VII 10°",
+    "quote": "L'Autorité des marchés financiers est chargée de la surveillance du respect dudit article 4 ter"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) 2019/1238 (PEPP)",
+   "note": "Penalty rules for PEPP breaches are set by reference to this regulation.",
+   "evidence": {
+    "provision": "Art. 3 III 1°",
+    "quote": "Pour les manquements aux obligations fixées par le règlement (UE) 2019/1238 du Parlement européen et du Conseil du 20 juin 2019"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) 2023/1114 (MiCA)",
+   "note": "Refers to crypto-asset service providers authorised under article 59 for custody and pledge rules.",
+   "evidence": {
+    "provision": "Art. 2 I 4° (art. L. 226-5)",
+    "quote": "prestataire de services sur crypto-actifs autorisé dans les conditions prévues à l'article 59 du règlement (UE) 2023/1114"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) 2023/1113 (transfers of funds)",
+   "note": "Art. 2 IV 7° makes the AML supervisory provisions of article L. 518-15-1 applicable to this regulation.",
+   "evidence": {
+    "provision": "Art. 2 IV 7°",
+    "quote": "par le règlement (UE) 2023/1113 du Parlement européen et du Conseil du 31 mai 2023 sur les informations accompagnant les transferts de fonds"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) No 575/2013 (CRR)",
+   "note": "Risk-based capital components are defined by reference to articles 92 bis and 92 ter.",
+   "evidence": {
+    "provision": "Art. 2 I 1°",
+    "quote": "définies aux articles 92 bis et 92 ter du règlement (UE) n° 575/2013"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) 2022/2554 (DORA)",
+   "note": "Art. 1 VI 3° refers to ICT-related requirements of articles 6 and 7 for payment institutions' participation in payment systems.",
+   "evidence": {
+    "provision": "Art. 1 VI 3°",
+    "quote": "liés aux articles 6 et 7 du règlement (UE) 2022/2554 du Parlement européen et du Conseil du 14 décembre 2022"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) 2019/943 (electricity market)",
+   "note": "Regional coordination centres are established under article 35.",
+   "evidence": {
+    "provision": "Art. 17 I 3°",
+    "quote": "établis en application de l'article 35 du règlement (UE) 2019/943"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) No 600/2014 (MiFIR), article 39 bis",
+   "note": "Payment-for-order-flow limits are set by reference to article 39 bis.",
+   "evidence": {
+    "provision": "Art. 1 I 2°",
+    "quote": "Dans les limites fixées à l'article 39 bis du règlement (UE) n° 600/2014"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) 2021/241 (Recovery and Resilience Facility)",
+   "note": "Public bodies implementing the facility are subject to information access under article L. 561-46-2 I 7°.",
+   "evidence": {
+    "provision": "Art. 4 I 2° (art. L. 561-46-2 I 7°)",
+    "quote": "établie par le règlement (UE) 2021/241 du Parlement européen et du Conseil du 12 février 2021"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) 2020/852 (taxonomy), article 8",
+   "note": "Sustainability disclosure requirements of article 8 are referenced in the audit opinion scope.",
+   "evidence": {
+    "provision": "Art. 8 II 9°",
+    "quote": "Cet avis porte également sur le respect des exigences de publication des informations prévues à l'article 8 du règlement (UE) 2020/852"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive 2013/34/UE (annual accounts)",
+   "note": "Sustainability reporting standards are adopted under articles 29 ter and 29 quater of this directive.",
+   "evidence": {
+    "provision": "Art. 8 II 9° 1°",
+    "quote": "en application des articles 29 ter ou 29 quater de la directive 2013/34/ UE"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Code des transports",
+   "note": "Also amended in Arts 28 I, 29 I, 30 I and 31 (rewriting L. 2221-7-1); one row covers all these articles.",
+   "evidence": {
+    "provision": "Art. 27 I",
+    "quote": "Le titre II du livre III de la sixième partie du code des transports est complété par un chapitre IX"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Règlement (UE) 2024/1679 (Union guidelines for the development of the trans-European transport network)",
+   "note": "Defines the airport network to which L. 6329-1 I applies; L. 6329-1 II also cites its Art. 34(1)(g).",
+   "evidence": {
+    "provision": "Art. 27 I (inserting Code des transports, art. L. 6329-1 I)",
+    "quote": "appartenant au réseau défini à l'article 2 du règlement (UE) 2024/1679"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Règlement (UE) 2023/1804 (Alternative Fuels Infrastructure Regulation)",
+   "note": "Sets the conditions and timetable for electricity supply at airport stands under L. 6329-1 I.",
+   "evidence": {
+    "provision": "Art. 27 I (inserting Code des transports, art. L. 6329-1 I)",
+    "quote": "définis aux paragraphes 1, 3 et 4 de l'article 12 du règlement (UE) 2023/1804"
+   }
+  },
+  {
+   "relation": "repeals",
+   "target_text": "Code de la voirie routière, article L. 119-1-1",
+   "note": "Art. 29 I 4° also rewrites L. 1115-5 of the Code des transports to cite L. 141-13 of the Code de la voirie routière.",
+   "evidence": {
+    "provision": "Art. 28 II",
+    "quote": "L'article L. 119-1-1 du code de la voirie routière est abrogé."
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Code de l'environnement",
+   "note": "Amended in Arts 33 I, 35 and 36 I and 37 (also Art. 35 updates references to Regulations (EC) 1005/2009 and (EU) 517/2014).",
+   "evidence": {
+    "provision": "Art. 33 I",
+    "quote": "La section 10 du chapitre IX du titre II du livre II du code de l'environnement est ainsi modifiée"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Code des douanes",
+   "note": "Adds article 59 unvicies on exchange of information between customs agents and the authority implementing the CBAM regulation.",
+   "evidence": {
+    "provision": "Art. 33 II",
+    "quote": "Le chapitre III du titre II du code des douanes est complété par un article 59 unvicies ainsi rédigé"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Code général des collectivités territoriales",
+   "note": "Flood-risk plan cross-references are rewritten (Art. 36 II).",
+   "evidence": {
+    "provision": "Art. 36 II",
+    "quote": "Le code général des collectivités territoriales est ainsi modifié"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Code de l'urbanisme",
+   "note": "Flood-risk plan cross-references are rewritten (Art. 36 III).",
+   "evidence": {
+    "provision": "Art. 36 III",
+    "quote": "Le code de l'urbanisme est ainsi modifié"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Code de la santé publique",
+   "note": "Amended in Arts 38, 39 and 40 (none of these articles reference other provisions beyond the EU regulations listed separately).",
+   "evidence": {
+    "provision": "Art. 38",
+    "quote": "Le code de la santé publique est ainsi modifié"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Code de l'entrée et du séjour des étrangers et du droit d'asile",
+   "note": "Amended in Art. 40 and Art. 41; Art. 40 inserts the EU Blue Card and talent-permit provisions.",
+   "evidence": {
+    "provision": "Art. 40",
+    "quote": "Le code de l'entrée et du séjour des étrangers et du droit d'asile est ainsi modifié"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Code des impositions sur les biens et services",
+   "note": "Single cross-reference correction in L. 422-1.",
+   "evidence": {
+    "provision": "Art. 30 II",
+    "quote": "A l'article L. 422-1 du code des impositions sur les biens et services"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Code du travail, article L. 8211-1",
+   "note": "Defines the offences that can lead to refusal or withdrawal of an EU Blue Card permit (L. 421-11).",
+   "evidence": {
+    "provision": "Art. 40 2° c) (rewriting Code de l'entrée et du séjour, art. L. 421-11)",
+    "quote": "une condamnation pénale pour une infraction définie à l'article L. 8211-1 du code du travail"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Code de l'énergie, article L. 144-2",
+   "note": "Identifies the public body (IFP Énergies nouvelles) to which sanction proceeds are allocated.",
+   "evidence": {
+    "provision": "Art. 32 (inserting Code de l'environnement, art. L. 229-92)",
+    "quote": "mentionné à l'article L. 144-2 du code de l'énergie"
+   }
+  },
+  {
+   "relation": "repeals",
+   "target_text": "Loi n° 2019-1428 du 24 décembre 2019 d'orientation des mobilités, article 25 III",
+   "note": "Repeal of a single paragraph of article 25.",
+   "evidence": {
+    "provision": "Art. 29 II",
+    "quote": "Le III de l'article 25 de la loi n° 2019-1428 du 24 décembre 2019 d'orientation des mobilités est abrogé"
+   }
+  },
+  {
+   "relation": "legal_basis",
+   "target_text": "Constitution (as cited in the text), article 38: power to legislate by ordinance",
+   "note": "The ordinance power in Art. 34 I is granted under art. 38 of the Constitution.",
+   "evidence": {
+    "provision": "Art. 34 I",
+    "quote": "Dans les conditions prévues à l'article 38 de la Constitution"
+   }
+  },
+  {
+   "relation": "designates_under",
+   "target_text": "Regulation (EU) 2023/2405 (ReFuelEU Aviation)",
+   "note": "National administrative fines for breaches of the regulation's obligations (L. 229-81 to L. 229-85).",
+   "evidence": {
+    "provision": "Art. 32 (inserting Code de l'environnement, art. L. 229-81, 1°)",
+    "quote": "Des obligations de mise à disposition des exploitants d'aéronefs dans chaque aéroport de l'Union européenne de carburants d'aviation durables prévues à l'article 4 du règlement (UE) 2023/2405"
+   }
+  },
+  {
+   "relation": "designates_under",
+   "target_text": "Regulation (EU) 2023/956 (Carbon Border Adjustment Mechanism; referred to as 'règlement MACF' in Art. 33 I)",
+   "note": "Art. 33 I uses the term 'règlement MACF' without naming the regulation in this part; the link rests on Art. 33 II and Art. 34.",
+   "evidence": {
+    "provision": "Art. 33 II (inserting Code des douanes, art. 59 unvicies)",
+    "quote": "chargée de la mise en œuvre du règlement (UE) 2023/956 du Parlement européen et du Conseil du 10 mai 2023"
+   }
+  },
+  {
+   "relation": "designates_under",
+   "target_text": "Regulation (EU) 2024/573 (fluorinated greenhouse gases)",
+   "note": "National injunctions, fines and bans under L. 521-18-1 for breaches of the regulation.",
+   "evidence": {
+    "provision": "Art. 35 5° (rewriting Code de l'environnement, art. L. 521-18-1, 2°)",
+    "quote": "entrant dans le champ d'application des règlements (UE) 2024/573 ou (UE) 2024/590"
+   }
+  },
+  {
+   "relation": "designates_under",
+   "target_text": "Regulation (EU) 2024/590 (ozone-depleting substances)",
+   "note": "National injunctions, fines and bans under L. 521-18-1 for breaches of the regulation.",
+   "evidence": {
+    "provision": "Art. 35 5° (rewriting Code de l'environnement, art. L. 521-18-1, 6°)",
+    "quote": "en méconnaissance du règlement (UE) 2024/590 du Parlement européen et du Conseil du 7 février 2024 précité"
+   }
+  },
+  {
+   "relation": "designates_under",
+   "target_text": "Regulation (EU) 2023/1542 (batteries)",
+   "note": "Added to the list of regulations whose breach triggers L. 521-18 measures (Art. 35 4° a and b).",
+   "evidence": {
+    "provision": "Art. 35 4° a) (amending Code de l'environnement, art. L. 521-18, first paragraph)",
+    "quote": "(UE) n° 2017/852 ou (UE) 2023/1542"
+   }
+  },
+  {
+   "relation": "designates_under",
+   "target_text": "Regulation (EU) No 649/2012 (export and import of hazardous chemicals)",
+   "note": "Added to the list of regulations whose breach triggers L. 521-18 measures (Art. 35 4° a).",
+   "evidence": {
+    "provision": "Art. 35 4° a) (amending Code de l'environnement, art. L. 521-18, first paragraph)",
+    "quote": "relative au respect des règlements (UE) n° 649/2012"
+   }
+  },
+  {
+   "relation": "designates_under",
+   "target_text": "Regulation (EU) No 2019/1021 (persistent organic pollutants)",
+   "note": "Added to the list of regulations whose breach triggers L. 521-18 measures (Art. 35 4° a).",
+   "evidence": {
+    "provision": "Art. 35 4° a) (amending Code de l'environnement, art. L. 521-18, first paragraph)",
+    "quote": "(UE) n° 2019/1021"
+   }
+  },
+  {
+   "relation": "designates_under",
+   "target_text": "Regulation (EC) No 1907/2006 (REACH)",
+   "note": "Added to the list of regulations whose breach triggers L. 521-18 measures (Art. 35 4° a).",
+   "evidence": {
+    "provision": "Art. 35 4° a) (amending Code de l'environnement, art. L. 521-18, first paragraph)",
+    "quote": "(CE) n° 1907/2006"
+   }
+  },
+  {
+   "relation": "designates_under",
+   "target_text": "Regulation (EC) No 1272/2008 (CLP)",
+   "note": "Added to the list of regulations whose breach triggers L. 521-18 measures (Art. 35 4° a).",
+   "evidence": {
+    "provision": "Art. 35 4° a) (amending Code de l'environnement, art. L. 521-18, first paragraph)",
+    "quote": "(CE) n° 1272/2008"
+   }
+  },
+  {
+   "relation": "designates_under",
+   "target_text": "Regulation (EU) No 2017/852 (mercury)",
+   "note": "Added to the list of regulations whose breach triggers L. 521-18 measures (Art. 35 4° a).",
+   "evidence": {
+    "provision": "Art. 35 4° a) (amending Code de l'environnement, art. L. 521-18, first paragraph)",
+    "quote": "(UE) n° 2017/852"
+   }
+  },
+  {
+   "relation": "designates_under",
+   "target_text": "Regulation (EU) 2017/745 (medical devices)",
+   "note": "ANSM measures on supply interruptions under L. 5215-1 A, and the offences in L. 5461-9 (Art. 39 8°), are tied to Art. 10 bis of this regulation.",
+   "evidence": {
+    "provision": "Art. 39 3° (inserting Code de la santé publique, art. L. 5215-1 A)",
+    "quote": "Lorsqu'elle est informée, en application de l'article 10 bis du règlement (UE) 2017/745"
+   }
+  },
+  {
+   "relation": "designates_under",
+   "target_text": "Regulation (EU) 2017/746 (in vitro diagnostic medical devices)",
+   "note": "ANSM measures on supply interruptions under L. 5224-1, and the offences in L. 5462-8 (Art. 39 9°), are tied to Art. 10 bis of this regulation.",
+   "evidence": {
+    "provision": "Art. 39 7° (inserting Code de la santé publique, art. L. 5224-1)",
+    "quote": "Lorsqu'elle est informée, en application de l'article 10 bis du règlement (UE) 2017/746"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Commission Implementing Regulation (EU) 2019/773 (railway traffic management interoperability TSI)",
+   "note": "Defines the medical and psychological fitness checks for safety-critical railway staff.",
+   "evidence": {
+    "provision": "Art. 31 (rewriting Code des transports, art. L. 2221-7-1)",
+    "quote": "en application du règlement d'exécution (UE) 2019/773 de la Commission du 16 mai 2019"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Commission Delegated Regulation (EU) 2017/1926 (multimodal travel information services)",
+   "note": "Its Art. 2 definitions and Arts 3 to 9 are cited in L. 1115-1 to L. 1264-7; several references to its articles are deleted by Art. 29.",
+   "evidence": {
+    "provision": "Art. 29 I 1° a) (rewriting Code des transports, art. L. 1115-1)",
+    "quote": "définis à l'article 2 du règlement délégué (UE) 2017/1926 de la Commission du 31 mai 2017"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive (EU) 2021/1883 (EU Blue Card)",
+   "note": "Cited for the EU Blue Card and related residence cards; the text does not use transposition wording (Title IV is headed 'dispositions d'adaptation au droit de l'Union européenne').",
+   "evidence": {
+    "provision": "Art. 40 3° a) (rewriting Code de l'entrée et du séjour, art. L. 421-12)",
+    "quote": "mentionnée à l'article 9 de la directive (UE) 2021/1883"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive (EU) 2016/801 (researchers, students and others)",
+   "note": "Cited as a basis for the 'chercheur' residence card that counts toward long-term residence (L. 421-12).",
+   "evidence": {
+    "provision": "Art. 40 3° c) (rewriting Code de l'entrée et du séjour, art. L. 421-12)",
+    "quote": "mentionnée à l'article 17 de la directive (UE) 2016/801 du Parlement européen et du Conseil du 11 mai 2016"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive 2011/95/UE (qualification for international protection)",
+   "note": "Cited to define refugee and subsidiary protection status for L. 421-12 d).",
+   "evidence": {
+    "provision": "Art. 40 3° d) (rewriting Code de l'entrée et du séjour, art. L. 421-12)",
+    "quote": "définis aux e et g de l'article 2 de la directive 2011/95/ UE"
+   }
+  }
+ ],
+ "notes": "Part 1 of 2 (Titres I and II, Articles 1 to 26). Relations and notes cover only this part. Data-centre provisions in this part are Art. 25 II 9° (Code de l'énergie, L. 233-5 cost-benefit analysis; L. 236-1 to L. 236-3 data centres with thresholds of 500 kW and 1 MW). Art. 25 VI makes L. 236-1 enter into force the day after publication via a reference to 'le 3° du II du présent article', but L. 236-1 is inserted by II 9°, not II 3°; as written the cross-reference does not match. Ordinance authorisations (Art. 1 II, 2 III, 2 VII, 25 V) are not transpositions by this text. Many amendments are table updates to codified lists of ordinance and law provisions. Part 2 of 2 (Arts 27-41). Relations stated in this part only; amending articles are merged into one row per target code, citing the first article. target_instrument_id is an empty string where the target is not in the registry (the schema requires a string). The text refers to a 'règlement MACF' (Art. 33 I) without naming it in this part; the link to Regulation (EU) 2023/956 rests on Art. 33 II and Art. 34. Art. 36 I contains 'İ.-' where 'I.-' is presumably meant. Art. 40 cites EU directives but does not use transposition wording, so these are recorded as cross_references. The Nota refers to a rectificatif (JO n° 109, 10 May 2025) that is not reflected here. Art. 39 quotes omit the HTML-entity guillemets used in the source. Relations stated only in other instruments (e.g., the repeal of Regulation 1005/2009 in the title quoted in Art. 35 2° b) are not recorded.",
+ "events": [
+  {
+   "event": "constitutional_review",
+   "date": "2025-04-29",
+   "date_type": "absolute",
+   "date_text": "décision du Conseil constitutionnel n° 2025-879 du 29 avril 2025",
+   "applies_to": "Loi (ensemble du texte)",
+   "evidence": {
+    "provision": "Visas (préambule)",
+    "quote": "Vu la décision du Conseil constitutionnel n° 2025-879 du 29 avril 2025"
+   }
+  },
+  {
+   "event": "legislative_approval",
+   "date": null,
+   "date_type": "not_stated",
+   "date_text": "L'Assemblée nationale et le Sénat ont adopté",
+   "applies_to": "Loi (adoption par les deux chambres)",
+   "evidence": {
+    "provision": "Préambule",
+    "quote": "L'Assemblée nationale et le Sénat ont adopté,"
+   }
+  },
+  {
+   "event": "signed",
+   "date": "2025-04-30",
+   "date_type": "absolute",
+   "date_text": "LOI n° 2025-391 du 30 avril 2025",
+   "applies_to": "Loi (promulgation)",
+   "evidence": {
+    "provision": "Préambule (promulgation)",
+    "quote": "Le Président de la République promulgue la loi dont la teneur suit"
+   }
+  },
+  {
+   "event": "published",
+   "date": "2025-05-02",
+   "date_type": "absolute",
+   "date_text": "JORF n°0103 du 2 mai 2025",
+   "applies_to": "Loi (publication au Journal officiel)",
+   "evidence": {
+    "provision": "En-tête",
+    "quote": "JORF n°0103 du 2 mai 2025"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2026-01-30",
+   "date_type": "relative",
+   "date_text": "dans un délai de neuf mois à compter de la promulgation de la présente loi",
+   "anchor": "promulgation de la présente loi",
+   "applies_to": "Ordonnance transposant la directive (UE) 2023/2864 et mesures de coordination (Art. 1 II)",
+   "offset_value": 9,
+   "offset_unit": "months",
+   "anchor_event": "signed",
+   "evidence": {
+    "provision": "Art. 1 II",
+    "quote": "dans un délai de neuf mois à compter de la promulgation de la présente loi"
+   },
+   "date_computed_from": "signed 2025-04-30 (text) + 9 months"
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "Un projet de loi de ratification est déposé devant le Parlement dans un délai de trois mois à compter de la publication de l'ordonnance",
+   "depends_on": "publication de l'ordonnance mentionnée au premier alinéa de l'Art. 1 II",
+   "applies_to": "Projet de loi de ratification de l'ordonnance (Art. 1 II)",
+   "offset_value": 3,
+   "offset_unit": "months",
+   "evidence": {
+    "provision": "Art. 1 II, dernier alinéa",
+    "quote": "Un projet de loi de ratification est déposé devant le Parlement dans un délai de trois mois à compter de la publication de l'ordonnance"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2026-07-01",
+   "date_type": "absolute",
+   "date_text": "entrent en vigueur le 1er juillet 2026",
+   "applies_to": "Art. 1 IV A, 5° à 7°, 20° et a et d du 21° (dispositions de droit monétaire et financier)",
+   "evidence": {
+    "provision": "Art. 1 IV B",
+    "quote": "entrent en vigueur le 1er juillet 2026"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2026-07-01",
+   "date_type": "absolute",
+   "date_text": "entre en vigueur le 1er juillet 2026",
+   "applies_to": "Art. 1 V A (modification de l'article 4 V 4° de la loi n° 2023-451)",
+   "evidence": {
+    "provision": "Art. 1 V B",
+    "quote": "Le A du présent V entre en vigueur le 1er juillet 2026"
+   }
+  },
+  {
+   "event": "application",
+   "date": "2026-01-01",
+   "date_type": "absolute",
+   "date_text": "certification des comptes des exercices clôturés après le 1er janvier 2026",
+   "applies_to": "Certification des comptes des exercices clôturés après le 1er janvier 2026 (Art. 1 VII A 2°)",
+   "evidence": {
+    "provision": "Art. 1 VII B",
+    "quote": "s'applique à la certification des comptes des exercices clôturés après le 1er janvier 2026"
+   }
+  },
+  {
+   "event": "application",
+   "date": "2026-01-01",
+   "date_type": "absolute",
+   "date_text": "les articles 1er à 10,12,15,17,19 et 22 sont applicables à compter du 1er janvier 2026",
+   "applies_to": "Ordonnance 2024-934, articles 1 à 10, 12, 15, 17, 19 et 22, pour les sociétés remplissant les seuils de l'article L. 22-10-10 2° bis (réécriture de l'article 26 II)",
+   "evidence": {
+    "provision": "Art. 1 IX 2°",
+    "quote": "les articles 1er à 10,12,15,17,19 et 22 sont applicables à compter du 1er janvier 2026"
+   }
+  },
+  {
+   "event": "application",
+   "date": "2026-06-30",
+   "date_type": "absolute",
+   "date_text": "Les articles 11,13,14,16,18,20 et 21 leur sont applicables à compter du 30 juin 2026",
+   "applies_to": "Ordonnance 2024-934, articles 11, 13, 14, 16, 18, 20 et 21, pour les mêmes sociétés (réécriture de l'article 26 II)",
+   "evidence": {
+    "provision": "Art. 1 IX 2°",
+    "quote": "Les articles 11,13,14,16,18,20 et 21 leur sont applicables à compter du 30 juin 2026"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2026-04-30",
+   "date_type": "relative",
+   "date_text": "dans un délai d'un an à compter de la promulgation de la présente loi",
+   "anchor": "promulgation de la présente loi",
+   "applies_to": "Ordonnance transposant la directive (UE) 2024/1619 (Art. 2 III A)",
+   "offset_value": 12,
+   "offset_unit": "months",
+   "anchor_event": "signed",
+   "evidence": {
+    "provision": "Art. 2 III A",
+    "quote": "dans un délai d'un an à compter de la promulgation de la présente loi"
+   },
+   "date_computed_from": "signed 2025-04-30 (text) + 12 months"
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "Un projet de loi de ratification est déposé devant le Parlement dans un délai de trois mois à compter de la publication de l'ordonnance mentionnée au A du présent III",
+   "depends_on": "publication de l'ordonnance mentionnée à l'Art. 2 III A",
+   "applies_to": "Projet de loi de ratification de l'ordonnance (Art. 2 III B)",
+   "offset_value": 3,
+   "offset_unit": "months",
+   "evidence": {
+    "provision": "Art. 2 III B",
+    "quote": "Un projet de loi de ratification est déposé devant le Parlement dans un délai de trois mois à compter de la publication de l'ordonnance mentionnée au A du présent III"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2026-01-30",
+   "date_type": "relative",
+   "date_text": "dans un délai de neuf mois à compter de la promulgation de la présente loi",
+   "anchor": "promulgation de la présente loi",
+   "applies_to": "Ordonnances transposant les directives (UE) 2023/2225 et 2023/2673 (Art. 2 VII)",
+   "offset_value": 9,
+   "offset_unit": "months",
+   "anchor_event": "signed",
+   "evidence": {
+    "provision": "Art. 2 VII",
+    "quote": "dans un délai de neuf mois à compter de la promulgation de la présente loi"
+   },
+   "date_computed_from": "signed 2025-04-30 (text) + 9 months"
+  },
+  {
+   "event": "entry_into_force",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "entrent en vigueur à une date fixée par décret",
+   "depends_on": "décret fixant la date d'entrée en vigueur",
+   "applies_to": "Art. 2 I 4° a et e (art. L. 613-44 I et VI du code monétaire et financier)",
+   "evidence": {
+    "provision": "Art. 2 VIII",
+    "quote": "Les a et e du 4° du I entrent en vigueur à une date fixée par décret"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2025-05-31",
+   "date_type": "absolute",
+   "date_text": "au plus tard le 31 mai 2025",
+   "applies_to": "Art. 2 I 4° a et e (art. L. 613-44 I et VI du code monétaire et financier)",
+   "evidence": {
+    "provision": "Art. 2 VIII",
+    "quote": "au plus tard le 31 mai 2025"
+   }
+  },
+  {
+   "event": "application",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "s'applique à compter d'une date fixée par décret en Conseil d'Etat",
+   "depends_on": "décret en Conseil d'Etat fixant la date d'application",
+   "applies_to": "Art. L. 561-46-2 I, informations sur la chaîne de propriété et les données historiques des bénéficiaires effectifs (Art. 4 I 2°)",
+   "evidence": {
+    "provision": "Art. 4 II",
+    "quote": "s'applique à compter d'une date fixée par décret en Conseil d'Etat, et au plus tard du 10 juillet 2026"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2026-07-10",
+   "date_type": "absolute",
+   "date_text": "au plus tard du 10 juillet 2026",
+   "applies_to": "Art. L. 561-46-2 I, informations sur la chaîne de propriété et les données historiques des bénéficiaires effectifs (Art. 4 I 2°)",
+   "evidence": {
+    "provision": "Art. 4 II",
+    "quote": "au plus tard du 10 juillet 2026"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "entre en vigueur à une date fixée par décret en Conseil d'Etat",
+   "depends_on": "décret en Conseil d'Etat fixant la date d'entrée en vigueur",
+   "applies_to": "Art. 5 (obligations comportant des clauses d'action collective)",
+   "evidence": {
+    "provision": "Art. 5 II",
+    "quote": "entre en vigueur à une date fixée par décret en Conseil d'Etat, et au plus tard le 31 décembre 2025"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2025-12-31",
+   "date_type": "absolute",
+   "date_text": "au plus tard le 31 décembre 2025",
+   "applies_to": "Art. 5 (obligations comportant des clauses d'action collective)",
+   "evidence": {
+    "provision": "Art. 5 II",
+    "quote": "au plus tard le 31 décembre 2025"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2027",
+   "date_type": "absolute",
+   "date_text": "l'année : « 2025 » est remplacée par l'année : « 2027 »",
+   "applies_to": "Ordonnance 2023-1142, art. 33 II 2° (publication d'informations de durabilité)",
+   "evidence": {
+    "provision": "Art. 7 I 1° a",
+    "quote": "l'année : « 2025 » est remplacée par l'année : « 2027 »"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2028",
+   "date_type": "absolute",
+   "date_text": "l'année : « 2026 » est remplacée par l'année : « 2028 »",
+   "applies_to": "Ordonnance 2023-1142, art. 33 II 3° (publication d'informations de durabilité)",
+   "evidence": {
+    "provision": "Art. 7 I 1° b",
+    "quote": "l'année : « 2026 » est remplacée par l'année : « 2028 »"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2024-01-01",
+   "date_type": "absolute",
+   "date_text": "trois premiers exercices ouverts à compter du 1er janvier 2024",
+   "applies_to": "Rapports des trois premiers exercices ouverts à compter du 1er janvier 2024 (omission de certaines informations de l'ESRS 1, appendice C; Ordonnance 2023-1142 art. 33 IV)",
+   "evidence": {
+    "provision": "Art. 7 I 2°",
+    "quote": "Dans les rapports afférents aux trois premiers exercices ouverts à compter du 1er janvier 2024"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "qui peut être introduite à l'expiration d'un délai de six mois à compter de la demande tendant à faire cesser le manquement",
+   "anchor": "demande tendant à faire cesser le manquement",
+   "applies_to": "Action de groupe fondée sur un manquement au code du travail (candidats à un emploi, stagiaires, salariés)",
+   "offset_value": 6,
+   "offset_unit": "months",
+   "evidence": {
+    "provision": "Art. 16 I F",
+    "quote": "peut être introduite à l'expiration d'un délai de six mois à compter de la demande tendant à faire cesser le manquement"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "L'action de groupe ne peut être engagée plus de cinq ans après la date à laquelle la décision",
+   "depends_on": "décision sur la responsabilité devenue non susceptible de recours (Art. 16 VIII)",
+   "applies_to": "Action de groupe fondée sur un manquement aux règles du livre IV du code de commerce ou aux articles 101 et 102 TFUE",
+   "offset_value": 5,
+   "offset_unit": "years",
+   "evidence": {
+    "provision": "Art. 16 VIII",
+    "quote": "L'action de groupe ne peut être engagée plus de cinq ans après la date à laquelle la décision"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2029-04-30",
+   "date_type": "relative",
+   "date_text": "Dans un délai de quatre ans à compter de la promulgation de la présente loi",
+   "anchor": "promulgation de la présente loi",
+   "applies_to": "Rapport du Gouvernement au Parlement sur l'évaluation de la réforme des actions de groupe (Art. 16 XVI)",
+   "offset_value": 4,
+   "offset_unit": "years",
+   "anchor_event": "signed",
+   "evidence": {
+    "provision": "Art. 16 XVI",
+    "quote": "Dans un délai de quatre ans à compter de la promulgation de la présente loi"
+   },
+   "date_computed_from": "signed 2025-04-30 (text) + 4 years"
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "conservent cette faculté pendant un délai de deux ans à compter de cette date",
+   "anchor": "entrée en vigueur de l'article 16 XVII (date non fixée dans le texte)",
+   "applies_to": "Personnes pouvant exercer une action de groupe à la date d'entrée en vigueur de l'article 16 XVII (disposition transitoire)",
+   "offset_value": 2,
+   "offset_unit": "years",
+   "anchor_event": "entry_into_force",
+   "evidence": {
+    "provision": "Art. 16 XVII D",
+    "quote": "conservent cette faculté pendant un délai de deux ans à compter de cette date"
+   }
+  },
+  {
+   "event": "application",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "est applicable aux seules actions intentées après la publication de la présente loi",
+   "anchor": "publication de la présente loi",
+   "applies_to": "Art. 16 I à X (sauf XI): actions de groupe intentées après la publication",
+   "anchor_event": "published",
+   "evidence": {
+    "provision": "Art. 16 XVII F",
+    "quote": "Le présent article, à l'exception du XI, est applicable aux seules actions intentées après la publication de la présente loi"
+   }
+  },
+  {
+   "event": "application",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "est applicable aux seules actions dont le fait générateur de la responsabilité du défendeur est postérieur à la publication de la présente loi",
+   "anchor": "publication de la présente loi",
+   "applies_to": "Art. 16 XI (sanction civile en cas de faute dolosive ayant causé des dommages sériels, code civil art. 1254)",
+   "anchor_event": "published",
+   "evidence": {
+    "provision": "Art. 16 XVII F, dernier alinéa",
+    "quote": "Le XI est applicable aux seules actions dont le fait générateur de la responsabilité du défendeur est postérieur à la publication de la présente loi"
+   }
+  },
+  {
+   "event": "application",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "ne sont pas applicables aux contrats de fourniture ou d'agrégation en cours à la date de promulgation de la présente loi",
+   "anchor": "promulgation de la présente loi",
+   "applies_to": "Art. L. 338-2 et L. 338-3 du code de l'énergie: non applicables aux contrats en cours à la promulgation",
+   "anchor_event": "signed",
+   "evidence": {
+    "provision": "Art. 17 III",
+    "quote": "ne sont pas applicables aux contrats de fourniture ou d'agrégation en cours à la date de promulgation de la présente loi"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "dans un délai de dix-huit mois à compter de la publication des résultats de la consultation",
+   "anchor": "publication des résultats de la consultation publique",
+   "depends_on": "publication des résultats de la consultation publique de la CRE (art. L. 352-2 du code de l'énergie)",
+   "applies_to": "Gestionnaires de réseaux publics de distribution ou de transport cessant leurs activités de stockage d'énergie",
+   "offset_value": 18,
+   "offset_unit": "months",
+   "evidence": {
+    "provision": "Art. 17 I 16°",
+    "quote": "dans un délai de dix-huit mois à compter de la publication des résultats de la consultation"
+   }
+  },
+  {
+   "event": "application",
+   "date": "2023-09-10",
+   "date_type": "absolute",
+   "date_text": "ont été délivrés à compter du 10 septembre 2023",
+   "applies_to": "Opérations pour lesquelles le permis de construire, le permis d'aménager ou la décision de non-opposition a été délivré (Art. 24 VII et a du 7° du I de l'article 29 de la loi 2023-175)",
+   "evidence": {
+    "provision": "Art. 24 VIII",
+    "quote": "s'appliquent aux opérations pour lesquelles le permis de construire, le permis d'aménager ou la décision de non-opposition à une déclaration préalable ont été délivrés à compter du 10 septembre 2023"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2026",
+   "date_type": "absolute",
+   "date_text": "la première occurrence de l'année : « 2028 » est remplacée par l'année : « 2026 »",
+   "applies_to": "Art. 40 III 1° de la loi n° 2023-175 (échéance des ombrières sur parcs de stationnement extérieurs)",
+   "evidence": {
+    "provision": "Art. 24 IV 4°",
+    "quote": "la première occurrence de l'année : « 2028 » est remplacée par l'année : « 2026 »"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2026-06-30",
+   "date_type": "absolute",
+   "date_text": "la date : « 31 décembre 2025 » est remplacée par la date : « 30 juin 2026 »",
+   "applies_to": "Art. 40 III 4e alinéa de la loi n° 2023-175 (échéance de la mesure sur les parcs de stationnement)",
+   "evidence": {
+    "provision": "Art. 24 IV 5°",
+    "quote": "la date : « 31 décembre 2025 » est remplacée par la date : « 30 juin 2026 »"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2025-10-01",
+   "date_type": "absolute",
+   "date_text": "Les I à III du présent article entrent en vigueur le 1er octobre 2025",
+   "applies_to": "Art. 25 I à III (code de l'environnement, code de l'énergie: efficacité énergétique, chapitre V et VI)",
+   "evidence": {
+    "provision": "Art. 25 VI",
+    "quote": "Les I à III du présent article entrent en vigueur le 1er octobre 2025"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "entrent en vigueur le lendemain de la publication de la présente loi",
+   "anchor": "publication de la présente loi",
+   "applies_to": "Art. 25 II 3° (art. L. 221-7-1 du code de l'énergie) et article L. 236-1 du code de l'énergie (chapitre des centres de données)",
+   "offset_value": 1,
+   "offset_unit": "days",
+   "anchor_event": "published",
+   "evidence": {
+    "provision": "Art. 25 VI",
+    "quote": "entrent en vigueur le lendemain de la publication de la présente loi"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2025-10-30",
+   "date_type": "relative",
+   "date_text": "Dans un délai de six mois à compter de la promulgation de la présente loi",
+   "anchor": "promulgation de la présente loi",
+   "applies_to": "Rapport du Gouvernement sur la trajectoire financière de l'objectif de réduction de consommation et de rénovation des organismes publics (Art. 25 IV)",
+   "offset_value": 6,
+   "offset_unit": "months",
+   "anchor_event": "signed",
+   "evidence": {
+    "provision": "Art. 25 IV",
+    "quote": "Dans un délai de six mois à compter de la promulgation de la présente loi"
+   },
+   "date_computed_from": "signed 2025-04-30 (text) + 6 months"
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "puis tous les deux ans, le Gouvernement remet au Parlement un rapport",
+   "applies_to": "Rapport du Gouvernement sur la trajectoire financière de l'objectif de réduction de consommation et de rénovation des organismes publics (Art. 25 IV)",
+   "evidence": {
+    "provision": "Art. 25 IV",
+    "quote": "puis tous les deux ans, le Gouvernement remet au Parlement un rapport"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2025-10-30",
+   "date_type": "relative",
+   "date_text": "dans un délai de six mois à compter de la promulgation de la présente loi, toute mesure relevant du domaine de la loi nécessaire à la transposition",
+   "anchor": "promulgation de la présente loi",
+   "applies_to": "Ordonnance transposant certains articles de la directive (UE) 2023/1791 sur l'efficacité énergétique (Art. 25 V)",
+   "offset_value": 6,
+   "offset_unit": "months",
+   "anchor_event": "signed",
+   "evidence": {
+    "provision": "Art. 25 V",
+    "quote": "dans un délai de six mois à compter de la promulgation de la présente loi, toute mesure relevant du domaine de la loi nécessaire à la transposition"
+   },
+   "date_computed_from": "signed 2025-04-30 (text) + 6 months"
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "Un projet de loi de ratification est déposé devant le Parlement dans un délai de trois mois à compter de la publication de chacune des ordonnances",
+   "depends_on": "publication de chacune des ordonnances prévues au premier alinéa de l'Art. 25 V",
+   "applies_to": "Projet de loi de ratification des ordonnances (Art. 25 V)",
+   "offset_value": 3,
+   "offset_unit": "months",
+   "evidence": {
+    "provision": "Art. 25 V, second alinéa",
+    "quote": "dans un délai de trois mois à compter de la publication de chacune des ordonnances prévues au premier alinéa du présent V"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "dans un délai de deux mois à compter soit de la certification de leur système de management de l'énergie, soit de la réalisation de l'audit",
+   "depends_on": "certification du système de management de l'énergie ou réalisation de l'audit énergétique (art. L. 233-1 I code de l'énergie)",
+   "applies_to": "Personnes morales soumises à l'article L. 233-1 I du code de l'énergie: transmission des informations",
+   "offset_value": 2,
+   "offset_unit": "months",
+   "evidence": {
+    "provision": "Art. 25 II 4° (art. L. 233-1 III)",
+    "quote": "dans un délai de deux mois à compter soit de la certification de leur système de management de l'énergie, soit de la réalisation de l'audit"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2027-10-11",
+   "date_type": "absolute",
+   "date_text": "disposent d'un système de management de l'énergie certifié au plus tard le 11 octobre 2027",
+   "applies_to": "Personnes morales nouvellement soumises à l'article L. 233-1 I 1° (système de management de l'énergie)",
+   "evidence": {
+    "provision": "Art. 25 VII A",
+    "quote": "disposent d'un système de management de l'énergie certifié au plus tard le 11 octobre 2027"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2026-10-11",
+   "date_type": "absolute",
+   "date_text": "réalisent leur premier audit énergétique au plus tard le 11 octobre 2026",
+   "applies_to": "Personnes morales nouvellement soumises à l'article L. 233-1 I 2° (audit énergétique)",
+   "evidence": {
+    "provision": "Art. 25 VII B",
+    "quote": "réalisent leur premier audit énergétique au plus tard le 11 octobre 2026"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "s'y soumettent dans l'année suivant les trois dernières années civiles",
+   "depends_on": "entrée dans le champ de l'article L. 233-1 I, consommation moyenne sur trois années civiles au-dessus d'un seuil",
+   "applies_to": "Personnes morales entrant dans le champ de l'article L. 233-1 I après le 11 octobre 2026 ou 2027",
+   "offset_value": 1,
+   "offset_unit": "years",
+   "evidence": {
+    "provision": "Art. 25 VII C",
+    "quote": "s'y soumettent dans l'année suivant les trois dernières années civiles"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2026-12-31",
+   "date_type": "absolute",
+   "date_text": "Jusqu'au 31 décembre 2026, de celle consommée par les collectivités territoriales de moins de 50 000 habitants",
+   "applies_to": "Organismes publics (art. L. 235-2 I 1°): exclusion de la réduction de consommation pour petites collectivités",
+   "evidence": {
+    "provision": "Art. 25 II 9° (art. L. 235-2 I 1°)",
+    "quote": "Jusqu'au 31 décembre 2026, de celle consommée par les collectivités territoriales de moins de 50 000 habitants"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2029-12-31",
+   "date_type": "absolute",
+   "date_text": "Jusqu'au 31 décembre 2029, de celle consommée par les collectivités territoriales de moins de 5 000 habitants",
+   "applies_to": "Organismes publics (art. L. 235-2 I 2°): exclusion de la réduction de consommation pour très petites collectivités",
+   "evidence": {
+    "provision": "Art. 25 II 9° (art. L. 235-2 I 2°)",
+    "quote": "Jusqu'au 31 décembre 2029, de celle consommée par les collectivités territoriales de moins de 5 000 habitants"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "transmettent, tous les deux ans, à l'Etat ou à un organisme désigné par lui les données relatives à la performance énergétique de leurs bâtiments",
+   "applies_to": "Organismes publics mentionnés à l'article L. 235-1 (inventaire national des bâtiments publics, art. L. 235-4)",
+   "evidence": {
+    "provision": "Art. 25 II 9° (art. L. 235-4)",
+    "quote": "transmettent, tous les deux ans, à l'Etat ou à un organisme désigné par lui"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "Cette consultation des usagers est renouvelée quatre ans après le début du contrat",
+   "depends_on": "début du contrat de concession pluriannuel de l'exploitant d'aérodrome",
+   "applies_to": "Exploitants d'aérodromes dont le contrat pluriannuel dépasse la durée ordinaire (art. L. 6325-2 1° et 2°)",
+   "offset_value": 4,
+   "offset_unit": "years",
+   "evidence": {
+    "provision": "Art. 26 I 1°",
+    "quote": "Cette consultation des usagers est renouvelée quatre ans après le début du contrat"
+   }
+  },
+  {
+   "event": "application",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "s'applique aux aérodromes pour lesquels un contrat de concession fait l'objet d'une consultation qui a été engagée ou dont l'avis de concession est publié après la publication de la présente loi",
+   "anchor": "publication de la présente loi",
+   "applies_to": "Aérodromes pour lesquels une consultation de concession est engagée ou un avis publié après la publication de la loi (Art. 26 I, à l'exception de certains alinéas)",
+   "anchor_event": "published",
+   "evidence": {
+    "provision": "Art. 26 II",
+    "quote": "s'applique aux aérodromes pour lesquels un contrat de concession fait l'objet d'une consultation qui a été engagée ou dont l'avis de concession est publié après la publication de la présente loi"
+   }
+  },
+  {
+   "event": "application",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "dans les conditions et selon le calendrier définis aux paragraphes 1, 3 et 4 de l'article 12 du règlement (UE) 2023/1804",
+   "depends_on": "calendar in Regulation (EU) 2023/1804, Art. 12(1), (3) and (4)",
+   "applies_to": "airport managers in the network defined by Regulation (EU) 2024/1679: electricity supply to contact stand positions and, for airports with more than 10,000 commercial movements in the last three years, to remote stand positions",
+   "evidence": {
+    "provision": "Art. L. 6329-1 I (code des transports, inserted by Art. 27 I)",
+    "quote": "assurent la fourniture d'électricité aux postes de stationnement au contact"
+   }
+  },
+  {
+   "event": "application",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "dans les conditions et selon le calendrier définis au g du paragraphe 1 de l'article 34 du règlement (UE) 2024/1679",
+   "depends_on": "calendar in Regulation (EU) 2024/1679, Art. 34(1)(g)",
+   "applies_to": "airport managers whose total annual passenger traffic exceeds four million: pre-conditioned air supply to aircraft at contact stand positions",
+   "evidence": {
+    "provision": "Art. L. 6329-1 II (code des transports, inserted by Art. 27 I)",
+    "quote": "fournissent l'infrastructure nécessaire à l'approvisionnement en air conditionné des aéronefs"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2026-04-30",
+   "date_type": "relative",
+   "date_text": "dans un délai d'un an à compter de la promulgation de la présente loi",
+   "anchor": "promulgation of this law",
+   "applies_to": "Government: authority to legislate by ordinance on adaptations needed for CBAM Regulation (EU) 2023/956 implementing acts (period for adoption of the ordinance)",
+   "offset_value": 1,
+   "offset_unit": "years",
+   "anchor_event": "signed",
+   "evidence": {
+    "provision": "Art. 34 I",
+    "quote": "dans un délai d'un an à compter de la promulgation de la présente loi"
+   },
+   "date_computed_from": "signed 2025-04-30 (text) + 1 years"
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "dans un délai de trois mois à compter de la publication de l'ordonnance mentionnée au I",
+   "anchor": "publication of the ordinance referred to in Art. 34 I",
+   "depends_on": "publication of the ordinance adopted under Art. 34 I",
+   "applies_to": "Government: filing of the bill ratifying the ordinance with Parliament",
+   "offset_value": 3,
+   "offset_unit": "months",
+   "evidence": {
+    "provision": "Art. 34 II",
+    "quote": "dans un délai de trois mois à compter de la publication de l'ordonnance mentionnée au I"
+   }
+  },
+  {
+   "event": "application",
+   "date": "2030-01-01",
+   "date_type": "absolute",
+   "date_text": "pour la période allant du 1er janvier 2030 au 31 décembre 2034",
+   "applies_to": "fuel suppliers: administrative fines for failure to meet average synthetic aviation fuel shares under Regulation (EU) 2023/2405, Art. 4, for the period 2030 to 2034",
+   "evidence": {
+    "provision": "Art. L. 229-81 1° (code de l'environnement, inserted by Art. 32)",
+    "quote": "pour la période allant du 1er janvier 2030 au 31 décembre 2034, les parts moyennes de ces mêmes carburants"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "Cette date est comprise entre deux semaines et trois mois après la notification de la décision de révocation.",
+   "anchor": "notification of the decision revoking authorised MACF declarant status",
+   "depends_on": "notification of the revocation decision",
+   "applies_to": "authorised MACF declarant: effective date of revocation of status",
+   "evidence": {
+    "provision": "Art. L. 229-76 (code de l'environnement, inserted by Art. 33 I 4°)",
+    "quote": "Cette date est comprise entre deux semaines et trois mois après la notification de la décision de révocation."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "Pendant le délai d'un mois mentionné au paragraphe 5 de l'article 19 du règlement MACF",
+   "anchor": "period defined in Art. 19(5) of the CBAM regulation",
+   "depends_on": "Regulation (EU) 2023/956 (MACF), Art. 19(5)",
+   "applies_to": "authorised MACF declarant: right to submit observations; no repurchase of certificates until surrender obligation is met",
+   "evidence": {
+    "provision": "Art. L. 229-77 (code de l'environnement, inserted by Art. 33 I 4°)",
+    "quote": "Pendant le délai d'un mois mentionné au paragraphe 5 de l'article 19 du règlement MACF"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "elle le met en demeure de satisfaire à cette obligation dans un délai d'un mois",
+   "anchor": "formal notice (mise en demeure) under Art. L. 229-78",
+   "depends_on": "mise en demeure issued under Art. L. 229-78",
+   "applies_to": "authorised MACF declarant failing to surrender sufficient MACF certificates: period to comply after formal notice",
+   "evidence": {
+    "provision": "Art. L. 229-78 (code de l'environnement, inserted by Art. 33 I 4°)",
+    "quote": "elle le met en demeure de satisfaire à cette obligation dans un délai d'un mois"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "Au plus tard six mois après la constatation d'un manquement aux obligations prévues à l'article 16 du règlement (UE) 2024/573",
+   "anchor": "finding of a breach of Art. 16 of Regulation (EU) 2024/573",
+   "depends_on": "finding of a breach of the obligations in Art. 16 of Regulation (EU) 2024/573",
+   "applies_to": "authority: time limit to order a fine on producers or importers exceeding hydrofluorocarbon quotas (paragraphs I and II); the person concerned has three months to submit observations",
+   "evidence": {
+    "provision": "Art. L. 521-18-2 I and II (code de l'environnement, inserted by Art. 35 6°)",
+    "quote": "Au plus tard six mois après la constatation d'un manquement aux obligations prévues à l'article 16"
+   }
+  },
+  {
+   "event": "passed_chamber",
+   "date": "2025-02-17",
+   "date_type": "absolute",
+   "date_text": "adoption, après engagement de la procédure accélérée, le 17 février 2025 (TA n° 53)",
+   "applies_to": "Assemblée nationale (first reading)",
+   "evidence": {
+    "provision": "Travaux préparatoires (Assemblée nationale)",
+    "quote": "adoption, après engagement de la procédure accélérée, le 17 février 2025 (TA n° 53)"
+   }
+  },
+  {
+   "event": "passed_chamber",
+   "date": "2025-03-10",
+   "date_type": "absolute",
+   "date_text": "Discussion et adoption le 10 mars 2025 (TA n° 71 rect., 2024-2025).",
+   "applies_to": "Sénat (first reading)",
+   "evidence": {
+    "provision": "Travaux préparatoires (Sénat)",
+    "quote": "Discussion et adoption le 10 mars 2025 (TA n° 71 rect., 2024-2025)."
+   }
+  },
+  {
+   "event": "passed_chamber",
+   "date": "2025-04-02",
+   "date_type": "absolute",
+   "date_text": "Discussion et adoption le 2 avril 2025 (TA n° 87).",
+   "applies_to": "Assemblée nationale (second reading, text modified by the Sénat as proposed by the joint committee)",
+   "evidence": {
+    "provision": "Travaux préparatoires (Assemblée nationale, second reading)",
+    "quote": "Discussion et adoption le 2 avril 2025 (TA n° 87)."
+   }
+  },
+  {
+   "event": "legislative_approval",
+   "date": "2025-04-03",
+   "date_type": "absolute",
+   "date_text": "Discussion et adoption le 3 avril 2025 (TA n° 100, 2024-2025).",
+   "applies_to": "Sénat (final passage of the joint committee text)",
+   "evidence": {
+    "provision": "Travaux préparatoires (Sénat, final reading)",
+    "quote": "Discussion et adoption le 3 avril 2025 (TA n° 100, 2024-2025)."
+   }
+  },
+  {
+   "event": "constitutional_review",
+   "date": "2025-04-29",
+   "date_type": "absolute",
+   "date_text": "Décision n° 2025-879 DC du 29 avril 2025 publiée au Journal officiel de ce jour.",
+   "applies_to": "Conseil constitutionnel: decision on the law",
+   "evidence": {
+    "provision": "Travaux préparatoires (Conseil constitutionnel)",
+    "quote": "Décision n° 2025-879 DC du 29 avril 2025 publiée au Journal officiel de ce jour."
+   }
+  },
+  {
+   "event": "signed",
+   "date": "2025-04-30",
+   "date_type": "absolute",
+   "date_text": "Fait à Paris, le 30 avril 2025.",
+   "applies_to": "law as a whole (signature by the President of the Republic)",
+   "evidence": {
+    "provision": "Closing formula (after Art. 41)",
+    "quote": "Fait à Paris, le 30 avril 2025."
+   }
+  },
+  {
+   "event": "published",
+   "date": "2025-05-10",
+   "date_type": "absolute",
+   "date_text": "Ce texte a fait l’objet d’un rectificatif publié au Journal officiel n° 109 du 10 mai 2025 (NOR : ECOM2415026Z).",
+   "applies_to": "corrective notice (rectificatif) to the text of this law; not the initial publication",
+   "evidence": {
+    "provision": "Nota (after Art. 41)",
+    "quote": "Ce texte a fait l’objet d’un rectificatif publié au Journal officiel n° 109 du 10 mai 2025"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "other",
+   "variable_text": "montant des paiements (valeur des paiements individuels ou liés, en espèces ou en nature)",
+   "operator": ">=",
+   "value": null,
+   "value_text": "égal ou supérieur à une valeur de (amount not stated in this text)",
+   "unit": "",
+   "measurement": "Individual payment or set of linked payments, cash or in kind, valued per the code",
+   "level": "entity",
+   "trigger": "obligation",
+   "consequence": "Payments at or above the threshold must be reported under the amended L. 232-6-2 II",
+   "conditions": "Amount is not restated in this part; the threshold is set in the amended provision of the Code de commerce",
+   "depends_on": "Amount set in Code de commerce L. 232-6-2 II (not restated in this text)",
+   "evidence": {
+    "provision": "Art. 6 1° a (amending C. com. L. 232-6-2 II)",
+    "quote": "paiement, en espèces ou en nature, qu'il s'agisse d'un paiement individuel ou d'un ensemble de paiements lorsque ceux-ci sont liés entre eux, égal ou supérieur à une valeur de"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "heures de formation",
+   "operator": "<=",
+   "value": 90,
+   "value_text": "dans la limite de 90 heures pour l'intégralité de la ou des formations",
+   "unit": "hours",
+   "measurement": "Hours recognised for the training, cumulated over the training or trainings",
+   "level": "person",
+   "trigger": "cap",
+   "consequence": "Training hours that can be counted are capped at 90 hours in total",
+   "conditions": "Hours effectuées au titre de chaque année",
+   "evidence": {
+    "provision": "Art. 13 2° (amending Ord. 2023-1142 Art. 37 III)",
+    "quote": "dans la limite de 90 heures pour l'intégralité de la ou des formations"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "activité effective et publique de douze mois consécutifs",
+   "operator": ">=",
+   "value": 12,
+   "value_text": "activité effective et publique de douze mois consécutifs",
+   "unit": "months",
+   "measurement": "Period of activity to be shown on the date the accreditation application is filed",
+   "level": "entity",
+   "trigger": "eligibility",
+   "consequence": "Association must show 12 consecutive months of effective public activity to be accredited to bring group actions",
+   "conditions": "Non-profit association regularly declared, with statutory object covering the interests harmed; accreditation by the administrative authority",
+   "evidence": {
+    "provision": "Art. 16 I.C.1 (1°)",
+    "quote": "de l'exercice d'une activité effective et publique de douze mois consécutifs en vue de la défense d'intérêts auxquels il a été porté atteinte"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "déclarées depuis deux ans au moins",
+   "operator": ">=",
+   "value": 2,
+   "value_text": "régulièrement déclarées depuis deux ans au moins",
+   "unit": "years",
+   "measurement": "Years since the association was regularly declared",
+   "level": "entity",
+   "trigger": "eligibility",
+   "consequence": "Eligibility to bring a group action limited to cessation of the breach",
+   "conditions": "Also requires 24 consecutive months of effective public activity defending the interests affected",
+   "evidence": {
+    "provision": "Art. 16 I.C.1 (action tendant à la seule cessation du manquement)",
+    "quote": "régulièrement déclarées depuis deux ans au moins"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "activité effective et publique de vingt-quatre mois consécutifs",
+   "operator": ">=",
+   "value": 24,
+   "value_text": "activité effective et publique de vingt-quatre mois consécutifs",
+   "unit": "months",
+   "measurement": "Period of activity before the action",
+   "level": "entity",
+   "trigger": "eligibility",
+   "consequence": "Eligibility to bring a cessation-only group action",
+   "conditions": "Associations regularly declared for at least two years",
+   "evidence": {
+    "provision": "Art. 16 I.C.1 (action tendant à la seule cessation du manquement)",
+    "quote": "de l'exercice d'une activité effective et publique de vingt-quatre mois consécutifs"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "activité effective et publique de douze mois consécutifs en vue de la protection des intérêts des consommateurs",
+   "operator": ">=",
+   "value": 12,
+   "value_text": "de l'exercice d'une activité effective et publique de douze mois consécutifs en vue de la protection des intérêts des consommateurs",
+   "unit": "months",
+   "measurement": "Period of activity on the date the cross-border accreditation application is filed",
+   "level": "entity",
+   "trigger": "eligibility",
+   "consequence": "Eligibility for accreditation to bring cross-border representative actions",
+   "conditions": "Non-profit, qualified entity; accreditation by the competent authority",
+   "evidence": {
+    "provision": "Art. 16 X.B.1",
+    "quote": "de l'exercice d'une activité effective et publique de douze mois consécutifs en vue de la protection des intérêts des consommateurs"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "régulièrement déclarée depuis cinq ans au moins",
+   "operator": ">=",
+   "value": 5,
+   "value_text": "régulièrement déclarée depuis cinq ans au moins",
+   "unit": "years",
+   "measurement": "Years since the association was regularly declared",
+   "level": "entity",
+   "trigger": "eligibility",
+   "consequence": "Eligibility to act on behalf of persons whose data processing affects them, under the amended Art. 38 of Law 78-17",
+   "conditions": "Statutory object includes protection of privacy or personal data; nationally representative consumer association or other listed organisations",
+   "evidence": {
+    "provision": "Art. 16 XV (amending Loi 78-17 Art. 38)",
+    "quote": "régulièrement déclarée depuis cinq ans au moins"
+   }
+  },
+  {
+   "variable": "power_capacity",
+   "variable_text": "seuil de puissance (participation au mécanisme d'ajustement)",
+   "operator": ">=",
+   "value": null,
+   "value_text": "Ce seuil, qui ne peut être inférieur à dix mégawatts et peut dépendre du type d'énergie utilisée, est fixé selon les règles mentionnées au dernier alinéa de l'article L. 321-10",
+   "unit": "MW",
+   "measurement": "Installed capacity of each production installation",
+   "level": "facility",
+   "trigger": "scope_definition",
+   "consequence": "Installations at or above the threshold must make their available upward and downward capacity available to the transmission system operator",
+   "conditions": "Connected to public transmission or distribution networks; floor of 10 MW set by the text",
+   "depends_on": "Rules in the last paragraph of C. énergie L. 321-10 (not restated in this text)",
+   "evidence": {
+    "provision": "Art. 18 1° (amending C. énergie L. 321-13 al. 1)",
+    "quote": "Ce seuil, qui ne peut être inférieur à dix mégawatts"
+   }
+  },
+  {
+   "variable": "floor_area",
+   "variable_text": "parcs de stationnement non couverts de plus de 500 mètres carrés",
+   "operator": ">",
+   "value": 500,
+   "value_text": "de plus de 500 mètres carrés",
+   "unit": "m2",
+   "measurement": "Surface of the uncovered car park",
+   "level": "facility",
+   "trigger": "obligation",
+   "consequence": "Where planned, at least half of the surface must have permeable or vegetated surfaces or hydraulic arrangements",
+   "conditions": "Car parks associated with the buildings referred to in the same provision",
+   "evidence": {
+    "provision": "Art. 24 I.1 (CCH L. 171-4 I, 2nd alinéa)",
+    "quote": "Les parcs de stationnement non couverts de plus de 500 mètres carrés"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "raccordement au réseau d'eau n'excède pas cent mètres",
+   "operator": "<=",
+   "value": 100,
+   "value_text": "lorsque ce raccordement n'excède pas cent mètres",
+   "unit": "metres",
+   "measurement": "Length of the water connection",
+   "level": "facility",
+   "trigger": "obligation",
+   "consequence": "The authorisation may require the beneficiary to finance the water connection",
+   "conditions": "Network dimensioned only for the project and not intended to serve other existing or future buildings",
+   "evidence": {
+    "provision": "Art. 24 VII.2 c (amending C. urb. L. 332-15 4th alinéa)",
+    "quote": "lorsque ce raccordement n'excède pas cent mètres"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "distance séparant les deux participants les plus éloignés",
+   "operator": "<=",
+   "value": 20,
+   "value_text": "la distance séparant les deux participants les plus éloignés peut être portée à vingt kilomètres",
+   "unit": "km",
+   "measurement": "Distance between the two most distant participants",
+   "level": "entity",
+   "trigger": "scope_definition",
+   "consequence": "Extended collective self-consumption operations may reach a distance of up to 20 km",
+   "conditions": "Applies where one of the participating producers or consumers is a fire and rescue service",
+   "evidence": {
+    "provision": "Art. 24 XI (amending C. énergie L. 315-2 1st alinéa)",
+    "quote": "la distance séparant les deux participants les plus éloignés peut être portée à vingt kilomètres"
+   }
+  },
+  {
+   "variable": "population",
+   "variable_text": "communes de plus de 45 000 habitants",
+   "operator": ">",
+   "value": 45000,
+   "value_text": "comprenant au moins une commune de plus de 45 000 habitants",
+   "unit": "inhabitants",
+   "measurement": "Population of the communes in the public establishment",
+   "level": "other",
+   "trigger": "scope_definition",
+   "consequence": "Content and modalities of the heat and cold action programme are set by regulation for these bodies",
+   "conditions": "Applies to the metropolis of Lyon and to EPCIs with own tax comprising at least one such commune",
+   "evidence": {
+    "provision": "Art. 25 I.3 b (amending C. env. L. 229-26 II 2°)",
+    "quote": "comprenant au moins une commune de plus de 45 000 habitants"
+   }
+  },
+  {
+   "variable": "capital_investment",
+   "variable_text": "montant d'investissement supérieur à 100 millions d'euros",
+   "operator": ">",
+   "value": 100000000,
+   "value_text": "chaque projet représentant un montant d'investissement supérieur à 100 millions d'euros",
+   "unit": "euros",
+   "currency": "EUR",
+   "measurement": "Investment amount of each project",
+   "level": "facility",
+   "trigger": "obligation",
+   "consequence": "Projects above the threshold must have an proportionate evaluation of energy efficiency and sobriety solutions",
+   "conditions": "Applies to projects other than transport infrastructure projects (see the following row)",
+   "evidence": {
+    "provision": "Art. 25 II.2 (inserting C. énergie L. 211-10)",
+    "quote": "chaque projet représentant un montant d'investissement supérieur à 100 millions d'euros"
+   }
+  },
+  {
+   "variable": "capital_investment",
+   "variable_text": "porté à 175 millions d'euros pour les projets d'infrastructures de transport",
+   "operator": ">",
+   "value": 175000000,
+   "value_text": "Ce montant est porté à 175 millions d'euros s'agissant des projets d'infrastructures de transport",
+   "unit": "euros",
+   "currency": "EUR",
+   "measurement": "Investment amount of each project",
+   "level": "facility",
+   "trigger": "obligation",
+   "consequence": "For transport infrastructure projects, the evaluation of energy efficiency and sobriety solutions applies above this amount",
+   "conditions": "Transport infrastructure projects only",
+   "evidence": {
+    "provision": "Art. 25 II.2 (inserting C. énergie L. 211-10)",
+    "quote": "Ce montant est porté à 175 millions d'euros s'agissant des projets d'infrastructures de transport"
+   }
+  },
+  {
+   "variable": "energy_consumption",
+   "variable_text": "consommation annuelle moyenne d'énergie finale supérieure ou égale à 23,6 gigawattheures",
+   "operator": ">=",
+   "value": 23.6,
+   "value_text": "lorsque leur consommation annuelle moyenne d'énergie finale est supérieure ou égale à 23,6 gigawattheures",
+   "unit": "GWh",
+   "measurement": "Annual average final energy consumption of the legal person",
+   "level": "entity",
+   "trigger": "obligation",
+   "consequence": "Obligation to implement an energy management system certified under the text",
+   "conditions": "Legal persons registered in the commercial register or private-law legal persons under C. com. L. 612-1; activities in France",
+   "evidence": {
+    "provision": "Art. 25 II.4 (C. énergie L. 233-1 I.1°)",
+    "quote": "lorsque leur consommation annuelle moyenne d'énergie finale est supérieure ou égale à 23,6 gigawattheures"
+   }
+  },
+  {
+   "variable": "energy_consumption",
+   "variable_text": "consommation annuelle moyenne d'énergie finale supérieure ou égale à 2,75 gigawattheures",
+   "operator": ">=",
+   "value": 2.75,
+   "value_text": "supérieure ou égale à 2,75 gigawattheures et qu'elles n'ont pas mis en œuvre de système de management de l'énergie",
+   "unit": "GWh",
+   "measurement": "Annual average final energy consumption of the legal person",
+   "level": "entity",
+   "trigger": "obligation",
+   "consequence": "Obligation to carry out an energy audit every four years",
+   "conditions": "Applies where no energy management system has been implemented",
+   "evidence": {
+    "provision": "Art. 25 II.4 (C. énergie L. 233-1 I.2°)",
+    "quote": "supérieure ou égale à 2,75 gigawattheures et qu'elles n'ont pas mis en œuvre de système de management de l'énergie"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "temps de retour sur investissement inférieur à cinq ans",
+   "operator": "<",
+   "value": 5,
+   "value_text": "dont le temps de retour sur investissement est inférieur à cinq ans",
+   "unit": "years",
+   "measurement": "Payback time of an energy-saving measure",
+   "level": "entity",
+   "trigger": "obligation",
+   "consequence": "Non-implementation of such measures must be justified in the action plan",
+   "conditions": "Applies to recommendations of the energy audit or the energy management system",
+   "evidence": {
+    "provision": "Art. 25 II.4 (C. énergie L. 233-1 II)",
+    "quote": "dont le temps de retour sur investissement est inférieur à cinq ans"
+   }
+  },
+  {
+   "variable": "energy_consumption",
+   "variable_text": "consommation d'énergie finale dépasse 2,75 gigawattheures",
+   "operator": ">",
+   "value": 2.75,
+   "value_text": "lorsque celle-ci dépasse 2,75 gigawattheures",
+   "unit": "GWh",
+   "measurement": "Annual final energy consumption",
+   "level": "entity",
+   "trigger": "obligation",
+   "consequence": "Obligation to declare annual final energy consumption",
+   "conditions": "Applies to legal persons subject to L. 233-1",
+   "evidence": {
+    "provision": "Art. 25 II.5 (C. énergie L. 233-2)",
+    "quote": "lorsque celle-ci dépasse 2,75 gigawattheures"
+   }
+  },
+  {
+   "variable": "power_capacity",
+   "variable_text": "installations de production d'électricité thermique dont la puissance est supérieure à dix mégawatts",
+   "operator": ">",
+   "value": 10,
+   "value_text": "Les installations de production d'électricité thermique dont la puissance est supérieure à dix mégawatts",
+   "unit": "MW",
+   "measurement": "Installed power of the installation",
+   "level": "facility",
+   "trigger": "obligation",
+   "consequence": "Cost-benefit analysis of energy efficiency of heat and cold supply required before a significant creation or modification project",
+   "conditions": "Applies to significant projects of creation or modification; derogations set by decree",
+   "evidence": {
+    "provision": "Art. 25 II.8 (C. énergie L. 233-5 1°)",
+    "quote": "Les installations de production d'électricité thermique dont la puissance est supérieure à dix mégawatts"
+   }
+  },
+  {
+   "variable": "power_capacity",
+   "variable_text": "installations industrielles dont la puissance est supérieure à huit mégawatts",
+   "operator": ">",
+   "value": 8,
+   "value_text": "Les installations industrielles dont la puissance est supérieure à huit mégawatts",
+   "unit": "MW",
+   "measurement": "Installed power of the installation",
+   "level": "facility",
+   "trigger": "obligation",
+   "consequence": "Cost-benefit analysis of energy efficiency of heat and cold supply required before a significant creation or modification project",
+   "conditions": "Applies to significant projects of creation or modification; derogations set by decree",
+   "evidence": {
+    "provision": "Art. 25 II.8 (C. énergie L. 233-5 2°)",
+    "quote": "Les installations industrielles dont la puissance est supérieure à huit mégawatts"
+   }
+  },
+  {
+   "variable": "power_capacity",
+   "variable_text": "installations de service dont la puissance est supérieure à sept mégawatts",
+   "operator": ">",
+   "value": 7,
+   "value_text": "Les installations de service dont la puissance est supérieure à sept mégawatts",
+   "unit": "MW",
+   "measurement": "Installed power of the installation",
+   "level": "facility",
+   "trigger": "obligation",
+   "consequence": "Cost-benefit analysis of energy efficiency of heat and cold supply required before a significant creation or modification project",
+   "conditions": "Applies to significant projects of creation or modification; derogations set by decree",
+   "evidence": {
+    "provision": "Art. 25 II.8 (C. énergie L. 233-5 3°)",
+    "quote": "Les installations de service dont la puissance est supérieure à sept mégawatts"
+   }
+  },
+  {
+   "variable": "power_capacity",
+   "variable_text": "centres de données dont la puissance est supérieure à un mégawatt",
+   "operator": ">",
+   "value": 1,
+   "value_text": "Les centres de données dont la puissance est supérieure à un mégawatt",
+   "unit": "MW",
+   "measurement": "Installed power of the data centre",
+   "level": "facility",
+   "trigger": "obligation",
+   "consequence": "Cost-benefit analysis of energy efficiency of heat and cold supply required before a significant creation or modification project",
+   "conditions": "Applies to significant projects of creation or modification; derogations set by decree",
+   "evidence": {
+    "provision": "Art. 25 II.8 (C. énergie L. 233-5 4°)",
+    "quote": "Les centres de données dont la puissance est supérieure à un mégawatt"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "plus de la moitié des membres de l'organe d'administration, de direction ou de surveillance désignés par les entités publiques",
+   "operator": ">",
+   "value": 50,
+   "value_text": "Plus de la moitié des membres de leur organe d'administration, de direction ou de surveillance sont désignés",
+   "unit": "% of members",
+   "measurement": "Share of members of the governing body designated by public entities",
+   "level": "entity",
+   "trigger": "scope_definition",
+   "consequence": "Entity is treated as a public body subject to the public-body energy performance rules",
+   "conditions": "Cumulative with the purpose, financing and designation criteria in the same provision",
+   "evidence": {
+    "provision": "Art. 25 II.9 (C. énergie L. 235-1 2° c)",
+    "quote": "Plus de la moitié des membres de leur organe d'administration, de direction ou de surveillance sont désignés"
+   }
+  },
+  {
+   "variable": "population",
+   "variable_text": "collectivités territoriales de moins de 50 000 habitants",
+   "operator": "<",
+   "value": 50000,
+   "value_text": "de celle consommée par les collectivités territoriales de moins de 50 000 habitants",
+   "unit": "inhabitants",
+   "measurement": "Population of the local authority or grouping",
+   "level": "entity",
+   "trigger": "exemption",
+   "consequence": "Energy consumption of such bodies is excluded from the public-body reduction target",
+   "conditions": "Applies until 31 December 2026",
+   "evidence": {
+    "provision": "Art. 25 II.9 (C. énergie L. 235-2 I.1°)",
+    "quote": "de celle consommée par les collectivités territoriales de moins de 50 000 habitants"
+   }
+  },
+  {
+   "variable": "population",
+   "variable_text": "collectivités territoriales de moins de 5 000 habitants",
+   "operator": "<",
+   "value": 5000,
+   "value_text": "de celle consommée par les collectivités territoriales de moins de 5 000 habitants",
+   "unit": "inhabitants",
+   "measurement": "Population of the local authority or grouping",
+   "level": "entity",
+   "trigger": "exemption",
+   "consequence": "Energy consumption of such bodies is excluded from the public-body reduction target",
+   "conditions": "Applies until 31 December 2029",
+   "evidence": {
+    "provision": "Art. 25 II.9 (C. énergie L. 235-2 I.2°)",
+    "quote": "de celle consommée par les collectivités territoriales de moins de 5 000 habitants"
+   }
+  },
+  {
+   "variable": "power_capacity",
+   "variable_text": "puissance installée supérieure ou égale à 500 kilowatts",
+   "operator": ">=",
+   "value": 500,
+   "value_text": "dont la puissance installée des salles de serveurs et des centres d'exploitation informatique est supérieure ou égale à 500 kilowatts",
+   "unit": "kW",
+   "measurement": "Installed power of server rooms and computing operation centres",
+   "level": "facility",
+   "trigger": "obligation",
+   "consequence": "Administrative, environmental and energy information on operation must be transmitted on the EU platform and made public",
+   "conditions": "Data centres as defined in L. 236-1 I; excludes the operators in the cases listed in L. 236-1 I",
+   "evidence": {
+    "provision": "Art. 25 II.9 (C. énergie L. 236-1 II)",
+    "quote": "dont la puissance installée des salles de serveurs et des centres d'exploitation informatique est supérieure ou égale à 500 kilowatts"
+   }
+  },
+  {
+   "variable": "power_capacity",
+   "variable_text": "puissance installée supérieure ou égale à 1 mégawatt",
+   "operator": ">=",
+   "value": 1,
+   "value_text": "les centres de données dont la puissance installée est supérieure ou égale à 1 mégawatt valorisent la chaleur fatale qu'ils produisent",
+   "unit": "MW",
+   "measurement": "Installed power of the data centre",
+   "level": "facility",
+   "trigger": "obligation",
+   "consequence": "Data centre must recover the fatal heat it produces",
+   "conditions": "Derogations, including the case in paragraph 6 of Article 26 of Directive (EU) 2023/1791, set by decree in Conseil d'Etat",
+   "evidence": {
+    "provision": "Art. 25 II.9 (C. énergie L. 236-2)",
+    "quote": "les centres de données dont la puissance installée est supérieure ou égale à 1 mégawatt valorisent la chaleur fatale qu'ils produisent"
+   }
+  },
+  {
+   "variable": "lease_term",
+   "variable_text": "durée maximale de dix ans pour le premier contrat pluriannuel",
+   "operator": "<=",
+   "value": 10,
+   "value_text": "peut être d'une durée maximale de dix ans",
+   "unit": "years",
+   "measurement": "Duration of the first multi-year contract after the concession award",
+   "level": "facility",
+   "trigger": "cap",
+   "consequence": "Maximum duration of the first multi-year aerodrome contract",
+   "conditions": "Derogation from the general duration rule; aerodrome concession contract",
+   "evidence": {
+    "provision": "Art. 26 I.1 (C. transports L. 6325-2, alinéa 1° inserted)",
+    "quote": "peut être d'une durée maximale de dix ans"
+   }
+  },
+  {
+   "variable": "lease_term",
+   "variable_text": "durée maximale de dix ans lorsque les spécificités du projet industriel le justifient",
+   "operator": "<=",
+   "value": 10,
+   "value_text": "peut être portée à dix ans lorsque les spécificités du projet industriel de l'exploitant",
+   "unit": "years",
+   "measurement": "Duration of multi-year aerodrome contracts",
+   "level": "facility",
+   "trigger": "cap",
+   "consequence": "Maximum duration of multi-year contracts may be extended to ten years",
+   "conditions": "Specificities of the industrial project justify it relative to investment duration and amount; prior consultation of users",
+   "evidence": {
+    "provision": "Art. 26 I.1 (C. transports L. 6325-2, alinéa 2° inserted)",
+    "quote": "peut être portée à dix ans lorsque les spécificités du projet industriel de l'exploitant"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "chaque année pendant une durée de cinq ans",
+   "operator": ">=",
+   "value": 5,
+   "value_text": "chaque année pendant une durée de cinq ans",
+   "unit": "years",
+   "measurement": "Number of consecutive years in which the aerodrome operator does not receive fair remuneration of capital",
+   "level": "facility",
+   "trigger": "exemption",
+   "consequence": "Tariff-moderation condition may not be applied by the transport regulator",
+   "conditions": "Applies where the tariff condition prevented fair remuneration of invested capital each year for five years",
+   "evidence": {
+    "provision": "Art. 26 I.2 (C. transports L. 6327-2 V)",
+    "quote": "pendant une durée de cinq ans"
+   }
+  },
+  {
+   "variable": "lease_term",
+   "variable_text": "durée supérieure à cinq ans",
+   "operator": ">",
+   "value": 5,
+   "value_text": "lorsque cette durée est supérieure à cinq ans en application du 2° de l'article L. 6325-2",
+   "unit": "years",
+   "measurement": "Duration of the proposed contract",
+   "level": "facility",
+   "trigger": "obligation",
+   "consequence": "Transport regulator must give a binding opinion on the adequacy of the duration to the industrial project",
+   "conditions": "Where the regulator is competent",
+   "evidence": {
+    "provision": "Art. 26 I.3 e (C. transports L. 6327-3 4°)",
+    "quote": "lorsque cette durée est supérieure à cinq ans en application du 2° de l'article L. 6325-2"
+   }
+  },
+  {
+   "variable": "volume",
+   "variable_text": "commercial aircraft movements per year over the last three years",
+   "operator": ">",
+   "value": 10000,
+   "value_text": "plus de dix mille mouvements commerciaux par an au cours des trois dernières années",
+   "unit": "movements per year",
+   "measurement": "Commercial movements per year over the preceding three years at the airport",
+   "level": "facility",
+   "trigger": "obligation",
+   "consequence": "Airport manager must provide electricity at offshore stands in addition to contact stands.",
+   "conditions": "Airport belongs to the network defined in Art. 2 of Regulation (EU) 2024/1679.",
+   "evidence": {
+    "provision": "Art. L. 6329-1, I",
+    "quote": "pour les aéroports comptabilisant plus de dix mille mouvements commerciaux par an au cours des trois dernières années"
+   }
+  },
+  {
+   "variable": "volume",
+   "variable_text": "annual total passenger traffic of the airport",
+   "operator": ">",
+   "value": 4000000,
+   "value_text": "supérieur à quatre millions de passagers",
+   "unit": "passengers per year",
+   "measurement": "Annual total passenger traffic, based on the last triennial average available on 18 July 2024, per Eurostat statistics (Art. 27, II)",
+   "level": "facility",
+   "trigger": "obligation",
+   "consequence": "Airport manager must provide air-conditioning infrastructure for parked aircraft at contact stands.",
+   "conditions": "Conditions and timetable as set in the cited Article of Regulation (EU) 2024/1679.",
+   "evidence": {
+    "provision": "Art. L. 6329-1, II",
+    "quote": "dont le volume annuel total de trafic de passagers est supérieur à quatre millions de passagers"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "share of the annual required aviation fuel quantity uplifted at an EU airport",
+   "operator": ">=",
+   "value": 90,
+   "value_text": "au moins 90 % de la quantité annuelle de carburants d'aviation requise",
+   "unit": "percent",
+   "measurement": "Annual quantity of aviation fuel uplifted by the aircraft operator at an EU airport, compared with the annual quantity required",
+   "level": "entity",
+   "trigger": "obligation",
+   "consequence": "Below this share the aircraft operator is liable to an administrative fine under Art. L. 229-84.",
+   "conditions": "Does not apply where justified by fuel safety rules or a temporary exemption under Art. 5(2) to (8) of Regulation (EU) 2023/2405.",
+   "evidence": {
+    "provision": "Art. 32 (L. 229-84, 1°)",
+    "quote": "représentant au moins 90"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "years of effective and lawful practice as a nurse responsible for general care in Romania",
+   "operator": ">=",
+   "value": 3,
+   "value_text": "pendant au moins trois années consécutives au cours des cinq années précédant la date de l'attestation",
+   "unit": "years",
+   "measurement": "Consecutive years of practice within the five years before the date of the attestation",
+   "level": "person",
+   "trigger": "eligibility",
+   "consequence": "Eligibility for recognition of a non-conforming Romanian nursing training title under the listed conditions.",
+   "conditions": "Alternative to a certificate of completion of a special upgrade programme.",
+   "evidence": {
+    "provision": "Art. 38, 2° g)",
+    "quote": "pendant au moins trois années consécutives au cours des cinq années précédant la date de l'attestation"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "duration of the employment contract for a talent-type residence permit",
+   "operator": ">=",
+   "value": 2,
+   "value_text": "lorsque le contrat est conclu pour une durée d'au moins deux ans",
+   "unit": "years",
+   "measurement": "Duration of the employment contract as stated in the contract",
+   "level": "person",
+   "trigger": "benefit_duration",
+   "consequence": "Permit validity equals the contract duration, up to the cap of four years stated in the same sentence.",
+   "conditions": "Applies to the talent-carte bleue européenne permit under L. 421-11.",
+   "evidence": {
+    "provision": "Art. 40, 1° (L. 411-4, 1°)",
+    "quote": "lorsque le contrat est conclu pour une durée d'au moins deux ans"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "maximum validity of the talent-type residence permit",
+   "operator": "<=",
+   "value": 4,
+   "value_text": "dans la limite de quatre ans",
+   "unit": "years",
+   "measurement": "Duration of permit validity",
+   "level": "person",
+   "trigger": "benefit_duration",
+   "consequence": "Permit validity is capped at four years where the contract runs at least two years.",
+   "conditions": "Applies where the employment contract runs at least two years.",
+   "evidence": {
+    "provision": "Art. 40, 1° (L. 411-4, 1°)",
+    "quote": "dans la limite de quatre ans"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "duration of the employment contract below which a shorter permit validity applies",
+   "operator": "<",
+   "value": 2,
+   "value_text": "inférieure à deux ans",
+   "unit": "years",
+   "measurement": "Duration of the period covered by the employment contract",
+   "level": "person",
+   "trigger": "benefit_duration",
+   "consequence": "Permit is issued for the contract duration plus three months, capped at two years.",
+   "conditions": "Applies to contracts shorter than two years.",
+   "evidence": {
+    "provision": "Art. 40, 1° (L. 411-4, 1°)",
+    "quote": "Lorsque la période couverte par le contrat de travail est inférieure à deux ans"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "duration of highly qualified employment",
+   "operator": ">=",
+   "value": 6,
+   "value_text": "pendant une durée égale ou supérieure à six mois",
+   "unit": "months",
+   "measurement": "Duration of employment in a highly qualified job",
+   "level": "person",
+   "trigger": "eligibility",
+   "consequence": "Eligibility for the talent-carte bleue européenne permit.",
+   "conditions": "Also requires the diploma or experience condition and a salary threshold under the same paragraph.",
+   "evidence": {
+    "provision": "Art. 40, 2° a) (L. 421-11, al. 1)",
+    "quote": "pendant une durée égale ou supérieure à six mois"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "years of higher education studies",
+   "operator": ">=",
+   "value": 3,
+   "value_text": "au moins trois années d'études supérieures",
+   "unit": "years",
+   "measurement": "Length of the diploma",
+   "level": "person",
+   "trigger": "eligibility",
+   "consequence": "Diploma route to eligibility for the talent-carte bleue européenne permit.",
+   "conditions": "Alternative to five years of experience of comparable level or three years of relevant experience in the seven preceding years.",
+   "evidence": {
+    "provision": "Art. 40, 2° a) (L. 421-11, al. 1)",
+    "quote": "un diplôme sanctionnant au moins trois années d'études supérieures"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "years of professional experience of comparable level",
+   "operator": ">=",
+   "value": 5,
+   "value_text": "d'une expérience professionnelle d'au moins cinq ans d'un niveau comparable",
+   "unit": "years",
+   "measurement": "Professional experience",
+   "level": "person",
+   "trigger": "eligibility",
+   "consequence": "Experience route to eligibility for the talent-carte bleue européenne permit.",
+   "conditions": "Alternative to the diploma route; conditions set by decree in Conseil d'Etat.",
+   "evidence": {
+    "provision": "Art. 40, 2° a) (L. 421-11, al. 1)",
+    "quote": "d'une expérience professionnelle d'au moins cinq ans d'un niveau comparable"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "years of relevant professional experience in the seven years before the application",
+   "operator": ">=",
+   "value": 3,
+   "value_text": "au moins trois ans d'expérience professionnelle pertinente au cours des sept années précédant la demande",
+   "unit": "years",
+   "measurement": "Relevant experience within the seven years before the application",
+   "level": "person",
+   "trigger": "eligibility",
+   "consequence": "Alternative eligibility route to the talent-carte bleue européenne permit under conditions set by decree.",
+   "conditions": "Conditions set by decree in Conseil d'Etat.",
+   "evidence": {
+    "provision": "Art. 40, 2° a) (L. 421-11, al. 1)",
+    "quote": "au moins trois ans d'expérience professionnelle pertinente au cours des sept années précédant la demande"
+   }
+  },
+  {
+   "variable": "wage_level",
+   "variable_text": "salary threshold for the talent card, relative to average gross annual salary",
+   "operator": ">=",
+   "value": 1.5,
+   "value_text": "ne peut être inférieur à 1,5 fois le salaire annuel brut moyen",
+   "unit": "times average annual gross salary",
+   "measurement": "Applicant salary compared with average annual gross salary",
+   "level": "person",
+   "trigger": "eligibility",
+   "consequence": "Applicant must meet the salary threshold to obtain the talent card.",
+   "conditions": "The salary threshold amount is fixed by decree in Conseil d'Etat and may not be below 1.5 times the average salary.",
+   "depends_on": "décret en Conseil d'Etat (seuil de rémunération fixé par décret en Conseil d'Etat)",
+   "evidence": {
+    "provision": "Art. 40, 2° a) (L. 421-11, al. 1)",
+    "quote": "dont le montant ne peut être inférieur à 1,5 fois le salaire annuel brut moyen"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "stay period before a further mobility within EU Member States, from the second mobility",
+   "operator": "<=",
+   "value": 6,
+   "value_text": "réduit à six mois à partir de la deuxième mobilité",
+   "unit": "months",
+   "measurement": "Stay period under the talent card",
+   "level": "person",
+   "trigger": "eligibility",
+   "consequence": "From the second mobility, the required stay period in an EU Member State is six months.",
+   "conditions": "Applies from the second mobility in an EU Member State.",
+   "evidence": {
+    "provision": "Art. 40, 2° b) (L. 421-11, dernier alinéa)",
+    "quote": "Ce délai de séjour est réduit à six mois à partir de la deuxième mobilité dans un Etat membre de l'Union européenne"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "stay period before mobility, amended from eighteen months to one year",
+   "operator": ">=",
+   "value": 1,
+   "value_text": "un an",
+   "unit": "years",
+   "measurement": "Stay period under the talent card",
+   "level": "person",
+   "trigger": "eligibility",
+   "consequence": "The amendment replaces eighteen months with one year as the stay period in the last paragraph of L. 421-11.",
+   "conditions": "Applies to the base stay period; reduced to six months from the second mobility under a separate row.",
+   "evidence": {
+    "provision": "Art. 40, 2° b)",
+    "quote": "les mots : « dix-huit mois » sont remplacés par les mots : « un an »"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "years holding a talent card before the EU long-term resident card",
+   "operator": ">=",
+   "value": 2,
+   "value_text": "depuis deux ans",
+   "unit": "years",
+   "measurement": "Duration of talent card holding",
+   "level": "person",
+   "trigger": "eligibility",
+   "consequence": "Eligibility for the EU long-term resident card (talent-carte bleue européenne holders).",
+   "conditions": "Also requires prior regular residence of at least three years under the listed permits.",
+   "evidence": {
+    "provision": "Art. 40, 3° (L. 421-12, al. 1)",
+    "quote": "mentionnée à l'article L. 421-11 depuis deux ans"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "years of prior regular residence under the listed permits",
+   "operator": ">=",
+   "value": 3,
+   "value_text": "pendant au moins trois années",
+   "unit": "years",
+   "measurement": "Continuous regular residence before the two-year card period",
+   "level": "person",
+   "trigger": "eligibility",
+   "consequence": "Eligibility condition for the EU long-term resident card.",
+   "conditions": "Residence in France or another EU Member State under one of the listed permits, uninterrupted.",
+   "evidence": {
+    "provision": "Art. 40, 3° (L. 421-12, al. 1)",
+    "quote": "pendant au moins trois années sous couvert d'une des cartes de séjour suivantes"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "years of legal and uninterrupted residence as a family member, for automatic renewal",
+   "operator": ">=",
+   "value": 5,
+   "value_text": "cumule cinq années de résidence légale et ininterrompue",
+   "unit": "years",
+   "measurement": "Legal residence across EU Member States as a family member",
+   "level": "person",
+   "trigger": "benefit",
+   "consequence": "The residence card is renewed de plein droit.",
+   "conditions": "Residence in different EU Member States as family member of a talent card holder; the last two years must be in France.",
+   "evidence": {
+    "provision": "Art. 40, 4° (L. 421-22, al. nouveau)",
+    "quote": "lorsque son titulaire cumule cinq années de résidence légale et ininterrompue"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "final years of residence in France required for automatic renewal",
+   "operator": ">=",
+   "value": 2,
+   "value_text": "dont les deux dernières années en France",
+   "unit": "years",
+   "measurement": "Residence in France within the cumulative five years",
+   "level": "person",
+   "trigger": "eligibility",
+   "consequence": "Automatic renewal requires the last two years of the five-year residence to be in France.",
+   "conditions": "Part of the five-year cumulative residence condition.",
+   "evidence": {
+    "provision": "Art. 40, 4° (L. 421-22, al. nouveau)",
+    "quote": "dont les deux dernières années en France"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "period after the first sanction decision became final in which reiteration raises the fine tier",
+   "operator": "<=",
+   "value": 5,
+   "value_text": "dans un délai de cinq ans à compter de la date à laquelle la première décision de sanction est devenue définitive",
+   "unit": "years",
+   "measurement": "Period counted from the date the first sanction decision became final",
+   "level": "entity",
+   "trigger": "penalty_tier",
+   "consequence": "Maximum fine for reiterated breach rises from five times to eight times the market value of the substances, products or equipment.",
+   "conditions": "Applies to a repeated breach within the period.",
+   "evidence": {
+    "provision": "Art. 35, 5° (L. 521-18-1, 2°)",
+    "quote": "En cas de réitération du manquement dans un délai de cinq ans"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "period after the first sanction decision became final in which reiteration raises the fine tier",
+   "operator": "<=",
+   "value": 5,
+   "value_text": "dans un délai de cinq ans à compter de la date à laquelle la première décision de sanction est devenue définitive",
+   "unit": "years",
+   "measurement": "Period counted from the date the first sanction decision became final",
+   "level": "entity",
+   "trigger": "penalty_tier",
+   "consequence": "Maximum fine for reiterated breach rises from three to five times... as stated in the cited provision, to eight times the market value of the hydrofluorocarbons, products or equipment.",
+   "conditions": "Applies to a repeated breach of the obligations under Article 16 of Regulation (EU) 2024/573 within the period.",
+   "evidence": {
+    "provision": "Art. 35, 6° (L. 521-18-2, III)",
+    "quote": "En cas de réitération du manquement dans un délai de cinq ans"
+   }
+  }
+ ],
+ "section_status": {}
+}

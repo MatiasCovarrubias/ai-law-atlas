@@ -1,0 +1,159 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "sg-eliona-2024",
+ "tier": "B",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "light, effort high, obligations medium",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (connectors/fetch_texts.py)",
+  "url": "https://www.parliament.gov.sg/api/media/1e6033db-cb5f-64e2-b198-ff00006af031/elections-(integrity-of-online-advertising)-(amendment)-bill-29-2024.pdf",
+  "retrieved": "2026-10-13",
+  "version": "as fetched",
+  "language": "en",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "elections_political_ads",
+   "synthetic_media_deepfakes"
+  ],
+  "primary_domain": "elections_political_ads",
+  "mechanisms": [
+   "prohibition_ban",
+   "mandate_obligation"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "advertiser_campaign",
+   "platform_operator",
+   "government_agency"
+  ],
+  "affected_roles": [
+   "general_public"
+  ],
+  "decision_margins": [
+   "household:information"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national"
+   ],
+   "description": "Applies to content published or caused to be published in Singapore in relation to Singapore parliamentary and presidential elections.",
+   "evidence": {
+    "provision": "Art. 2 (inserting Parliamentary Elections Act 1954, s 61MA(1)(a))",
+    "quote": "the person publishes, or causes to be published, in Singapore any content"
+   }
+  },
+  "agora_harms": [
+   "Detrimental content"
+  ],
+  "agora_incentives": [
+   "Fines",
+   "Imprisonment"
+  ],
+  "agora_risk_factors": [
+   "Security: Dissemination"
+  ]
+ },
+ "summary": {
+  "short": "Bill No. 29/2024 would amend the Parliamentary Elections Act 1954 and Presidential Elections Act 1991 to make it an offence to publish online election advertising showing a candidate saying or doing things they did not, made with digital means, during the election period.",
+  "long": "The Bill amends the Parliamentary Elections Act 1954 and the Presidential Elections Act 1991. It requires the Returning Officer to publish and maintain a public website list of candidates who have deposited the required sum and consented to publication. It creates an offence, during the election period, of publishing or causing publication in Singapore of online election advertising that contains a realistic audio, visual or audiovisual representation of a candidate saying or doing something they did not, where the representation was created wholly or partly with digitally generated or manipulated content; generative artificial intelligence is given as an example. Offenders face a fine of up to $1,000, imprisonment of up to 12 months, or both. A defence applies where the person did not know and had no reason to believe the representation was untrue. Private communications, publications by authorised news agencies and prescribed circumstances are excluded. The Returning Officer may issue corrective directions for such advertisements, and a candidate may request one. Providers of social media services who fail to comply with a direction face a fine of up to $1,000,000. A candidate who knowingly makes a false or misleading request commits an illegal practice. The Act comes into operation on a date the Minister appoints by notification in the Gazette."
+ },
+ "relations": [
+  {
+   "relation": "amends",
+   "target_text": "Parliamentary Elections Act 1954",
+   "note": "Inserts new s 28(1C) and s 61MA; amends the Division 3 heading, s 61N(1) and (2), and s 61S(3) (cl. 2(a) to (g)).",
+   "evidence": {
+    "provision": "Cl. 2",
+    "quote": "Amendment of Parliamentary Elections Act 1954"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Presidential Elections Act 1991",
+   "note": "Inserts new s 10(2A) and s 42LA; amends the Subdivision heading, s 42M and s 42R(3) (cl. 3(a) to (g)).",
+   "evidence": {
+    "provision": "Cl. 3",
+    "quote": "Amendment of Presidential Elections Act 1991"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "election advertising regulations",
+   "note": "New s 61MA(4)(c) (and the parallel s 42LA(4)(c)) excludes publishing in circumstances prescribed by these regulations. The regulations are not part of this text.",
+   "evidence": {
+    "provision": "Cl. 2, new s 61MA(4)(c)",
+    "quote": "prescribed by the election advertising regulations as excluded from subsection (1)"
+   }
+  }
+ ],
+ "notes": "Annotated from Bill No. 29/2024 as first read on 9 September 2024. Registry metadata describes the enacted Act 34 of 2024, which was not checked, so enacted wording may differ from this text. Commencement date is not stated; the Act comes into operation on a date the Minister appoints by Gazette notification (cl. 1). The two amendment sets (s 61MA of the Parliamentary Elections Act and s 42LA of the Presidential Elections Act) are parallel in offence, defence, exclusions and penalties; the candidate definitions differ in wording (electoral division appears only in the Parliamentary Act). No internal inconsistency found between the operative clauses and the explanatory statement.",
+ "events": [
+  {
+   "event": "introduced",
+   "date": "2024-09-09",
+   "date_type": "absolute",
+   "date_text": "Read the first time on 9 September 2024.",
+   "applies_to": "Parliament of Singapore, first reading of the Bill",
+   "evidence": {
+    "provision": "Bill No. 29/2024, cover page",
+    "quote": "Read the first time on 9 September 2024."
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "comes into operation on a date that the Minister appoints by notification in the Gazette",
+   "depends_on": "Minister's appointment of a date by notification in the Gazette",
+   "applies_to": "Whole Act",
+   "evidence": {
+    "provision": "Sec. 1 (Short title and commencement)",
+    "quote": "comes into operation on a date that the Minister appoints by notification in the Gazette"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "other",
+   "variable_text": "deposit sum required for candidacy (Parliamentary election)",
+   "operator": ">=",
+   "value": null,
+   "value_text": "the sum required by section 28 of the Parliamentary Elections Act 1954 (amount not stated in this Bill)",
+   "unit": "",
+   "level": "person",
+   "trigger": "eligibility",
+   "consequence": "A person who has deposited the sum and consented to publication is listed by the Returning Officer and, from the writ issue until the end of nomination, counts as a candidate for the new offence in s 61MA.",
+   "conditions": "Also requires consent to publication of name; applies from writ issue until end of nomination proceedings.",
+   "depends_on": "section 28 of the Parliamentary Elections Act 1954 (sum set by that section)",
+   "evidence": {
+    "provision": "Art. 2(a) (inserting Parliamentary Elections Act 1954, s 28(1C)(a)); Art. 2(c) (inserting s 61MA(5)(a))",
+    "quote": "deposited the sum required by this section;"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "deposit sum required for candidacy (Presidential election)",
+   "operator": ">=",
+   "value": null,
+   "value_text": "the sum required by section 10 of the Presidential Elections Act 1991 (amount not stated in this Bill)",
+   "unit": "",
+   "level": "person",
+   "trigger": "eligibility",
+   "consequence": "A person who has deposited the sum and consented to publication is listed by the Returning Officer and, from the writ issue until the end of nomination, counts as a candidate for the new offence in s 42LA.",
+   "conditions": "Also requires consent to publication of name; applies from writ issue until end of nomination proceedings.",
+   "depends_on": "section 10 of the Presidential Elections Act 1991 (sum set by that section)",
+   "evidence": {
+    "provision": "Art. 3(a) (inserting Presidential Elections Act 1991, s 10(2A)(a)); Art. 3(c) (inserting s 42LA(5)(a))",
+    "quote": "deposited the sum required by this section;"
+   }
+  }
+ ],
+ "section_status": {}
+}

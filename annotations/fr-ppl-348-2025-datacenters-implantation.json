@@ -1,0 +1,394 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "fr-ppl-348-2025-datacenters-implantation",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (Claude Code retrieval)",
+  "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b2584_proposition-loi.pdf",
+  "retrieved": "2026-10-14",
+  "version": "Assemblée nationale n° 2584 (26 March 2026), proposition de loi adoptée par le Sénat en première lecture le 25 mars 2026 (Sénat T.A. n° 73, 2025-2026)",
+  "language": "fr",
+  "extent": "full",
+  "note": "Replaces the previous cache file, which was the Senate committee 'L'essentiel' summary (lessentiel/ppl24-348.pdf), not the bill. No later AN stage in dossier DLR5L17N51569."
+ },
+ "classification": {
+  "domains": [
+   "compute_data_centers",
+   "energy_grid_water"
+  ],
+  "primary_domain": "compute_data_centers",
+  "mechanisms": [
+   "mandate_obligation",
+   "designation_tiering",
+   "licensing_permit_certification",
+   "tariff_price_regulation"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "data_center_owner",
+   "government_agency",
+   "utility_grid_operator",
+   "regulator"
+  ],
+  "affected_roles": [
+   "general_public"
+  ],
+  "decision_margins": [
+   "firm:investment_location",
+   "firm:entry_market_access",
+   "firm:input_use",
+   "firm:compliance_process"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national"
+   ],
+   "description": "Applies to data-centre projects located on French territory, with local communes and intercommunal bodies involved in project committees.",
+   "evidence": {
+    "provision": "Art. 4 II",
+    "quote": "un rapport sur les conditions de déploiement des centres de données sur le territoire national"
+   }
+  },
+  "agora_strategies": [
+   "Government study or report"
+  ]
+ },
+ "summary": {
+  "short": "Proposed French law (Senate-adopted at first reading) letting the government qualify data-centre projects as projets d'intérêt national majeur, with a local stakeholder committee and consultation steps, enabling grid-capacity reservation for energy-intensive projects, and requiring a government report within six months of promulgation.",
+  "long": "The bill, adopted by the Senate at first reading and transmitted to the Assemblée nationale on 26 March 2026, sets rules for data-centre siting in France. It lets the land-use master plan propose siting guidance (Art. 1) and lets the government qualify, by decree, data-centre projects of particular importance as projets d'intérêt national majeur (Art. 1 bis). Publication of such a decree requires a project committee organised by the project holder, with a presentation file sent at least one month before the first meeting, fifteen days for written observations and fifteen days for the holder's reply. The administrative authority may refuse a building permit for a data centre in an area with structural water-resource tensions. Further articles amend public-consultation rules and grid-connection derogations for such projects, and let the energy minister ask the transmission system operator to reserve connection capacity for electricity-intensive projects, subject to a possible additional connection contribution whose calculation principles the energy regulator approves. Articles 2 and 3, and Article 4 I, are deleted. Article 4 II requires a government report to Parliament within six months of promulgation on deployment conditions for data centres."
+ },
+ "relations": [
+  {
+   "relation": "amends",
+   "target_text": "code de l’urbanisme",
+   "note": "Inserts new article L. 141-6-1 into the code de l’urbanisme (Art. 1er) and modifies article L. 300-6-2 of that code (Art. 1er bis I).",
+   "evidence": {
+    "provision": "Art. 1er",
+    "quote": "La sous-section 1 de la section 2 du chapitre Ier du titre IV du livre Ier du code de l’urbanisme est complétée par un article L. 141-6-1 ainsi rédigé"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "code de l’environnement",
+   "note": "Modifies articles L. 122-1-1, L. 126-1 and L. 411-2-1 of the code de l’environnement (Art. 1er bis II).",
+   "evidence": {
+    "provision": "Art. 1er bis II",
+    "quote": "Le code de l’environnement est ainsi modifié :"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "code de l’environnement, articles L. 181-28-2 and L. 411-2-1",
+   "note": "Article L. 300-6-2 I bis refers to article L. 181-28-2 (publication of a PINM decree is subject to it); article L. 300-6-2 XIII refers to the last paragraph of article L. 411-2-1 on the imperative reason of major public interest.",
+   "evidence": {
+    "provision": "Art. 1er bis I, I bis",
+    "quote": "Sans préjudice de l’article L. 181-28-2 du code de l’environnement"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "loi n° 2023-175 du 10 mars 2023 relative à l’accélération de la production d’énergies renouvelables",
+   "note": "Modifies article 27 (I, penultimate paragraph) and article 28 (first paragraph) of this law to extend existing derogations to projects of national major interest.",
+   "evidence": {
+    "provision": "Art. 1er bis III",
+    "quote": "La loi n° 2023-175 du 10 mars 2023 relative à l’accélération de la production d’énergies renouvelables est ainsi modifiée"
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "porteur de projet",
+   "role": "addressee",
+   "function": "Must organise, at its own cost, the project committee before a decree qualifying a data centre as a project of national major interest is published; must send a presentation file at least one month before the first meeting and reply to written observations within fifteen days.",
+   "evidence": {
+    "provision": "Art. 1er bis I bis",
+    "quote": "par le porteur de projet et à ses frais, d’un comité de projet"
+   }
+  },
+  {
+   "name": "autorité administrative",
+   "role": "designated",
+   "function": "May refuse the grant of a building permit for a data centre located on a territory with structural tensions over water resources.",
+   "evidence": {
+    "provision": "Art. 1er bis I bis",
+    "quote": "L’autorité administrative peut refuser l’octroi du permis de construire d’un centre de données"
+   }
+  },
+  {
+   "name": "ministre chargé de l’énergie",
+   "role": "designated",
+   "function": "May ask the public transmission grid operator to reserve sufficient connection capacity on a grid work for electricity-intensive industrial and digital infrastructure projects.",
+   "evidence": {
+    "provision": "Art. 1er bis IV",
+    "quote": "ministre chargé de l’énergie peut demander au gestionnaire du réseau"
+   }
+  },
+  {
+   "name": "gestionnaire du réseau public de transport d’électricité",
+   "role": "addressee",
+   "function": "Receives the minister’s request to reserve connection capacity; submits the principles for calculating the additional connection contribution to CRE approval.",
+   "evidence": {
+    "provision": "Art. 1er bis IV",
+    "quote": "public de transport d’électricité de réserver sur un ouvrage ou sur un"
+   }
+  },
+  {
+   "name": "Commission de régulation de l’énergie",
+   "role": "designated",
+   "function": "Approves the principles on which the transmission grid operator calculates the additional connection contribution.",
+   "evidence": {
+    "provision": "Art. 1er bis IV",
+    "quote": "à l’approbation de la Commission de régulation de l’énergie"
+   }
+  },
+  {
+   "name": "demandeur du raccordement au réseau de transport",
+   "role": "addressee",
+   "function": "May be liable for an additional financial contribution covering in advance the cost of operating measures that allow unrestricted withdrawal from the transmission grid.",
+   "evidence": {
+    "provision": "Art. 1er bis IV",
+    "quote": "peut être redevable d’une contribution financière"
+   }
+  },
+  {
+   "name": "Gouvernement",
+   "role": "addressee",
+   "function": "Must submit to Parliament, within six months of promulgation, a report on the conditions for deploying data centres on national territory.",
+   "evidence": {
+    "provision": "Art. 4 II",
+    "quote": "Le Gouvernement remet au Parlement, dans un délai"
+   }
+  }
+ ],
+ "notes": "Text is the Senate-adopted bill as transmitted to the Assemblée nationale (first reading), deliberated 25 March 2026 and registered 26 March 2026; the registry status is pending. Articles 2 and 3 are marked Supprimés and Article 4 I is deleted; Article 1er bis and Article 4 II are marked nouveau. This pass covers relations, entities and notes only. The text does not name the code containing article L. 342-12 (Art. 1er bis IV), so no relation is recorded for it. The definition of data centre in Art. 1er bis I bis applies only to the first paragraph of that section. Several entities are described by function rather than by name.",
+ "events": [
+  {
+   "event": "passed_chamber",
+   "date": "2026-03-25",
+   "date_type": "absolute",
+   "date_text": "Délibéré en séance publique, à Paris, le 25 mars 2026.",
+   "applies_to": "Sénat, first reading (text adopted by the Senate)",
+   "evidence": {
+    "provision": "Final dateline; opening statement 'Le Sénat a adopté, en première lecture'",
+    "quote": "Délibéré en séance publique, à Paris, le 25 mars 2026."
+   }
+  },
+  {
+   "event": "received_chamber",
+   "date": "2026-03-26",
+   "date_type": "absolute",
+   "date_text": "Enregistré à la Présidence de l’Assemblée nationale le 26 mars 2026.",
+   "applies_to": "Assemblée nationale (transmission of the Senate-adopted text)",
+   "evidence": {
+    "provision": "Header (first page)",
+    "quote": "Enregistré à la Présidence de l’Assemblée nationale le 26 mars 2026."
+   }
+  },
+  {
+   "event": "signed",
+   "date": null,
+   "date_type": "not_stated",
+   "date_text": "promulgation de la présente loi",
+   "applies_to": "Promulgation of this law (no date stated in the text; anchor for the Art. 4 II report deadline)",
+   "evidence": {
+    "provision": "Art. 4 II",
+    "quote": "à compter de la promulgation de la présente loi"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "dans un délai de six mois à compter de la promulgation de la présente loi",
+   "anchor": "promulgation de la présente loi",
+   "applies_to": "Government report to Parliament on conditions for deploying data centres on national territory (Art. 4 II)",
+   "offset_value": 6,
+   "offset_unit": "months",
+   "anchor_event": "signed",
+   "evidence": {
+    "provision": "Art. 4 II",
+    "quote": "de six mois à compter de la promulgation de la présente loi"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "Au moins un mois avant la première réunion, le porteur de projet transmet aux parties prenantes un dossier de présentation du projet",
+   "anchor": "première réunion du comité de projet",
+   "applies_to": "Project holder: presentation file sent to stakeholders before the first project-committee meeting (Art. L. 300-6-2 I bis, inserted by Art. 1er bis)",
+   "offset_value": -1,
+   "offset_unit": "months",
+   "evidence": {
+    "provision": "Art. 1er bis, I, 2° (inserting Code de l'urbanisme Art. L. 300-6-2 I bis, third paragraph)",
+    "quote": "Au moins un mois avant la première réunion, le porteur de projet transmet aux parties prenantes"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "les parties prenantes disposent d’un délai de quinze jours pour formuler leurs observations écrites, auxquelles le porteur de projet répond dans un délai de quinze jours",
+   "anchor": "réunion du comité de projet (À l’issue de la réunion)",
+   "applies_to": "Stakeholders' written observations within 15 days after the meeting, and project holder's reply within 15 days (Art. L. 300-6-2 I bis, inserted by Art. 1er bis)",
+   "offset_value": 15,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Art. 1er bis, I, 2° (inserting Code de l'urbanisme Art. L. 300-6-2 I bis, fourth paragraph)",
+    "quote": "les parties prenantes disposent d’un délai de quinze jours pour formuler leurs observations écrites"
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "centre de données",
+   "defined_in": "Code de l’urbanisme, art. L. 300-6-2, I bis (as inserted by Art. 1er bis, I, 2°)",
+   "evidence": {
+    "provision": "Art. 1er bis, I, 2° (inserting Code de l’urbanisme, art. L. 300-6-2, I bis)",
+    "quote": "un centre de données est défini comme une infrastructure ou un groupe d’infrastructures servant à héberger, à connecter et à exploiter des systèmes et des serveurs informatiques et du matériel connexe pour le stockage, le traitement ou la distribution de données"
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "may",
+   "summary": "The document d'orientation et d'objectifs may propose strategic siting orientations for data centres, taking account of territorial balances and energy transition.",
+   "evidence": {
+    "provision": "Art. 1er (inserting Code de l'urbanisme, Art. L. 141-6-1)",
+    "quote": "Le document d’orientation et d’objectifs peut proposer des orientations stratégiques d’implantation des centres de données"
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "government_agency",
+   "modality": "may",
+   "summary": "A data centre of particular importance may be qualified by decree as a projet d'intérêt national majeur.",
+   "evidence": {
+    "provision": "Art. 1er bis I (2°, inserting I bis of Code de l'urbanisme, Art. L. 300-6-2)",
+    "quote": "peut également être qualifié par décret de projet d’intérêt national majeur"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_center_owner",
+   "modality": "shall",
+   "summary": "Before a decree qualifying a data centre project as a projet d'intérêt national majeur is published, the project holder must, at its own cost, organise a project committee with the State representative, the host commune, neighbouring communes and competent EPCIs.",
+   "conditional_on": "publication of a decree qualifying a data centre project as a projet d'intérêt national majeur",
+   "evidence": {
+    "provision": "Art. 1er bis I (2°, inserting I bis of Code de l'urbanisme, Art. L. 300-6-2)",
+    "quote": "l’organisation préalable, par le porteur de projet et à ses frais, d’un comité de projet"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "data_center_owner",
+   "modality": "shall",
+   "summary": "At least one month before the first committee meeting, the project holder must send stakeholders a presentation dossier on the project's characteristics, impacts and territorial integration.",
+   "applies_from": "at least one month before the first committee meeting",
+   "conditional_on": "publication of a decree qualifying a data centre project as a projet d'intérêt national majeur",
+   "evidence": {
+    "provision": "Art. 1er bis I (2°, inserting I bis of Code de l'urbanisme, Art. L. 300-6-2)",
+    "quote": "Au moins un mois avant la première réunion, le porteur de projet transmet aux parties prenantes un dossier de présentation du projet"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_center_owner",
+   "modality": "shall",
+   "summary": "Stakeholders have fifteen days after the committee meeting to submit written observations, and the project holder must reply within fifteen days.",
+   "applies_from": "fifteen days after the committee meeting",
+   "conditional_on": "publication of a decree qualifying a data centre project as a projet d'intérêt national majeur",
+   "evidence": {
+    "provision": "Art. 1er bis I (2°, inserting I bis of Code de l'urbanisme, Art. L. 300-6-2)",
+    "quote": "auxquelles le porteur de projet répond dans un délai de quinze jours"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "may",
+   "summary": "The administrative authority may refuse a building permit for a data centre sited in an area with structural tensions on water resources.",
+   "evidence": {
+    "provision": "Art. 1er bis I (2°, inserting I bis of Code de l'urbanisme, Art. L. 300-6-2)",
+    "quote": "L’autorité administrative peut refuser l’octroi du permis de construire d’un centre de données implanté sur un territoire connaissant des tensions structurelles sur la ressource en eau."
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "A décret en Conseil d'État shall specify the conditions under which the overriding public interest reason may be recognised by the competent authority under the environmental code.",
+   "evidence": {
+    "provision": "Art. 1er bis I (5°, inserting XIII of Art. L. 300-6-2 of Code de l'urbanisme)",
+    "quote": "Un décret en Conseil d’État précise les conditions dans"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "also_addressees": [
+    "utility_grid_operator"
+   ],
+   "modality": "may",
+   "summary": "The minister in charge of energy may ask the public transmission grid operator to reserve sufficient connection capacity on grid works for infrastructure projects that consume large amounts of electricity.",
+   "evidence": {
+    "provision": "Art. 1er bis IV",
+    "quote": "le ministre chargé de l’énergie peut demander au gestionnaire du réseau public de transport d’électricité de réserver sur un ouvrage"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "enterprise",
+   "modality": "may",
+   "summary": "The applicant for transmission-grid connection of an industrial or digital infrastructure project may be liable for an additional financial contribution covering operating measures to be put in place by the grid operator.",
+   "conditional_on": "grid connection of an industrial or digital infrastructure project under Art. 1er bis IV",
+   "evidence": {
+    "provision": "Art. 1er bis IV",
+    "quote": "le demandeur du raccordement au réseau de transport d’un projet mentionné au premier alinéa du présent IV peut être redevable d’une contribution financière supplémentaire"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "utility_grid_operator",
+   "modality": "shall",
+   "summary": "The transmission grid operator must submit the principles for calculating the additional connection contribution to approval by the Commission de régulation de l'énergie.",
+   "conditional_on": "grid connection contribution under Art. 1er bis IV",
+   "evidence": {
+    "provision": "Art. 1er bis IV",
+    "quote": "Les principes de calcul de cette contribution sont soumis par le gestionnaire du réseau de transport à l’approbation de la Commission de régulation de l’énergie."
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Government must deliver to Parliament a report on conditions for deploying data centres in France, covering economic development, strategic autonomy, energy policy, territorial planning, ecological transition, data infrastructure research and innovation.",
+   "applies_from": "six months from promulgation of the law",
+   "evidence": {
+    "provision": "Art. 4 II (nouveau)",
+    "quote": "Le Gouvernement remet au Parlement, dans un délai de six mois à compter de la promulgation de la présente loi, un rapport"
+   }
+  }
+ ],
+ "section_status": {
+  "thresholds": {
+   "status": "not_found",
+   "note": "No numeric cutoff found. The qualification of a data centre as a project of major national interest (Art. 1er bis, I, 2°, I bis) refers to investment, installed capacity and support for domestic ecosystems without any number; the water-resource criterion (territories with structural tensions on water resources) and the IV contribution for electricity-intensive projects carry no value; the 'set by decree' delegation covers the qualification and the Conseil d'État conditions for the imperative reason of overriding public interest (Art. 1er bis, I, 3°/5° XIII) but states no numeric value. Procedural periods (one month, fifteen days, six months) are events, not thresholds."
+  },
+  "enforcement": {
+   "status": "not_found",
+   "note": "The text (Art. 1er bis I bis, Art. 4) contains no fines, penalties, criminal sanctions, licence revocation, benefit clawback, suspension or blocking. The power to refuse a building permit where water resources are structurally strained is an administrative refusal, not coded as a sanction. No cross-reference to a penalty regime is found in the text."
+  }
+ },
+ "thresholds": [],
+ "enforcement": []
+}

@@ -1,0 +1,170 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "us-ca-sb384-2025",
+ "tier": "B",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "light, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-interim-20261014"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "AGORA plaintext (ETO, CC BY-NC 4.0), local cache",
+  "url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB384",
+  "retrieved": "2026-04-22",
+  "version": "1.33.0 (2026-09-16)",
+  "language": "en",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "platforms_competition",
+   "algorithmic_decision_systems"
+  ],
+  "primary_domain": "platforms_competition",
+  "mechanisms": [
+   "prohibition_ban",
+   "liability_rule"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "ai_provider",
+   "ai_deployer"
+  ],
+  "affected_roles": [
+   "consumers_users"
+  ],
+  "decision_margins": [
+   "firm:pricing",
+   "firm:input_use",
+   "household:prices"
+  ],
+  "territorial_scope": {
+   "types": [
+    "subnational"
+   ],
+   "description": "Adds a chapter to California's Business and Professions Code, applying within the state and enforced by state and local officials.",
+   "evidence": {
+    "provision": "Sec. 2 (adding Bus. & Prof. Code § 22949.85)",
+    "quote": "Chapter 40 (commencing with Section 22949.85) is added to Division 8 of the Business and Professions Code, to read:"
+   }
+  },
+  "agora_applications": [
+   "Business services and analytics"
+  ],
+  "agora_harms": [
+   "Financial loss"
+  ],
+  "agora_incentives": [
+   "Civil liability"
+  ],
+  "agora_strategies": [
+   "Input controls: Data use"
+  ]
+ },
+ "summary": {
+  "short": "California SB 384 proposed bill would prohibit selling, licensing, providing or using a price-setting algorithm that processes competitors' nonpublic input data to set prices, supply levels or rents, if two or more competitors are expected to use it. Enforced by civil actions. No effective date is stated.",
+  "long": "Proposed Business and Professions Code § 22949.85 (SB 384) would prohibit selling, licensing, providing or using a price-setting algorithm, with intent or reasonable expectation that two or more competitors in the same market use it, if the person knows or should know it processes nonpublic input data to set a price or supply level for goods or services, or a rent or occupancy level for rental property. Users have an affirmative defense if they exercise reasonable due diligence, including written assurances from the provider that the algorithm does not process nonpublic input data. Providers face a separate violation per authorized user or licensee; users face a separate violation for each calendar month of use. The Attorney General, a district attorney, or a city attorney or county counsel may sue for actual damages, injunctive relief, restitution or civil penalties up to $1,000 per violation, with attorney's fees for prevailing public plaintiffs. Conflicting contracts are void to that extent, and the section does not limit antitrust laws. Definitions cover artificial intelligence, nonpublic input data, price-setting algorithms and competitors. No effective date is stated."
+ },
+ "relations": [
+  {
+   "relation": "amends",
+   "target_text": "Business and Professions Code, Division 8 (Chapter 40 added)",
+   "note": "The bill adds a new Chapter 40 (Section 22949.85 et seq.) to Division 8 of the Business and Professions Code.",
+   "evidence": {
+    "provision": "SEC. 2",
+    "quote": "Chapter 40 (commencing with Section 22949.85) is added to Division 8 of the Business and Professions Code"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Clayton Act (15 U.S.C. Sec. 12)",
+   "note": "Defines 'antitrust laws' for the section by reference to the Clayton Act.",
+   "evidence": {
+    "provision": "22949.85(g)(2)",
+    "quote": "has the same meaning as defined in the Clayton Act (15 U.S.C. Sec. 12)"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Section 45 of Title 15 of the United States Code",
+   "note": "Included within the 'antitrust laws' definition for the section.",
+   "evidence": {
+    "provision": "22949.85(g)(2)",
+    "quote": "includes Section 45 of Title 15 of the United States Code"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Cartwright Act (Chapter 2 (commencing with Section 16700) of Part 2 of Division 7)",
+   "note": "Included within the 'antitrust laws' definition for the section.",
+   "evidence": {
+    "provision": "22949.85(g)(2)",
+    "quote": "including provisions commonly known as the Cartwright Act (Chapter 2 (commencing with Section 16700) of Part 2 of Division 7)"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Civil Code Section 1087 (definition of multiple listing service)",
+   "note": "The definition of 'price-setting algorithm' excludes a multiple listing service as defined in this Civil Code section.",
+   "evidence": {
+    "provision": "22949.85(g)(4)(B)",
+    "quote": "does not include a multiple listing service, as that term is defined in Section 1087 of the Civil Code"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "antitrust laws",
+   "note": "Subdivision (f) states that the section does not limit the applicability of antitrust laws; no specific instrument is named in this provision.",
+   "evidence": {
+    "provision": "22949.85(f)",
+    "quote": "This section does not limit the applicability of antitrust laws."
+   }
+  }
+ ],
+ "notes": "Relations are recorded for the bill as introduced (status pending, legislative stage introduced). The text states no enabling act, no session-law enactment and no repeal. The 'antitrust laws' definition in (g)(2) is quoted as printed, including the cross-references to the Clayton Act, 15 U.S.C. Section 45 and the Cartwright Act. The document contains a stray '@' character before subdivision (g)(4); it appears to be a formatting artifact and is not coded. The section_status relations entry is required by the schema even though relation entries are present, so its not_applicable status is a formal placeholder only.",
+ "events": [],
+ "thresholds": [
+  {
+   "variable": "other",
+   "variable_text": "number of competitors using the same price-setting algorithm",
+   "operator": ">=",
+   "value": 2,
+   "value_text": "two or more competitors in the same market",
+   "unit": "competitors",
+   "measurement": "Number of competitors (persons or business entities offering similar or substitutable goods, services or real property for lease in the same relevant market to the same or overlapping customer base) that use, or are intended or reasonably expected to use, the algorithm",
+   "level": "other",
+   "trigger": "scope_definition",
+   "consequence": "The prohibition in subdivision (a) applies only where the algorithm is sold, licensed, provided or used with the intent or reasonable expectation that two or more competitors will use it.",
+   "conditions": "Competitors are defined in subdivision (g)(5) as two or more persons or business entities offering similar or substitutable goods, services or real property in the same relevant market to the same or overlapping customer base; the algorithm must also process nonpublic input data to set a price, supply, rent or occupancy level.",
+   "evidence": {
+    "provision": "SEC. 2 (adding Bus. & Prof. Code § 22949.85(a))",
+    "quote": "with the intent or reasonable expectation that it be used by two or more competitors in the same market"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "age of input data: time between collection and use or distribution of the price-setting algorithm",
+   "operator": ">",
+   "value": 1,
+   "value_text": "more than one year before the use or distribution of the price-setting algorithm",
+   "unit": "years",
+   "measurement": "Time elapsed between the date the input data was collected and the date of use or distribution of the price-setting algorithm",
+   "level": "other",
+   "trigger": "exclusion",
+   "consequence": "Data collected more than one year before use or distribution is excluded from the definition of nonpublic input data, so it does not bring the algorithm within the prohibition in subdivision (a).",
+   "conditions": "Applies only to data that is confidential, nonpublic and sensitive information of competitors; the one-year limit is part of the definition of nonpublic input data in subdivision (g)(3).",
+   "evidence": {
+    "provision": "SEC. 2 (adding Bus. & Prof. Code § 22949.85(g)(3))",
+    "quote": "but does not include data that was collected more than one year before the use or distribution of the price-setting algorithm"
+   }
+  }
+ ],
+ "section_status": {
+  "events": {
+   "status": "not_found",
+   "note": "The fetched bill text (Sections 1 and 2, adding Chapter 40 to Division 8 of the Business and Professions Code) states no effective date, application date, phase-in, deadline, sunset or repeal, and gives no adoption, signature or publication date. The introduced stage appears only in the registry metadata, not in the text, and no official legislative URL was provided, so no legislative-step events were coded."
+  }
+ }
+}

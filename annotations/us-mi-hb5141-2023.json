@@ -1,0 +1,168 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "us-mi-hb5141-2023",
+ "tier": "B",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "light, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-interim-20261014"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "AGORA plaintext (ETO, CC BY-NC 4.0), local cache",
+  "url": "https://www.legislature.mi.gov/documents/2023-2024/publicact/htm/2023-PA-0263.htm",
+  "retrieved": "2024-11-15",
+  "version": "1.33.0 (2026-09-16)",
+  "language": "en",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "elections_political_ads",
+   "synthetic_media_deepfakes"
+  ],
+  "primary_domain": "elections_political_ads",
+  "mechanisms": [
+   "disclosure_transparency",
+   "mandate_obligation"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "advertiser_campaign",
+   "platform_operator"
+  ],
+  "affected_roles": [
+   "general_public"
+  ],
+  "decision_margins": [
+   "household:information"
+  ],
+  "territorial_scope": {
+   "types": [
+    "subnational"
+   ],
+   "description": "Applies to paid advertisements relating to federal, state or local candidates and elections in Michigan, and to Michigan ballot questions.",
+   "evidence": {
+    "provision": "Sec. 59(6)",
+    "quote": "relating to a candidate for federal, state, or local office in this state"
+   }
+  },
+  "agora_applications": [
+   "Broadcasting and media production"
+  ],
+  "agora_incentives": [
+   "Fines",
+   "Imprisonment"
+  ],
+  "agora_risk_factors": [
+   "Transparency"
+  ],
+  "agora_strategies": [
+   "Disclosure"
+  ]
+ },
+ "summary": {
+  "short": "Amends Michigan Campaign Finance Act section 47 and adds section 59, requiring that political advertisements and prerecorded telephone messages generated in whole or substantially by artificial intelligence carry a disclosure statement. Covers Michigan candidates, elections and ballot questions; violations carry civil fines or misdemeanor penalties.",
+  "long": "Amends section 47 of the Michigan Campaign Finance Act and adds section 59. Section 59 requires a person, committee or other entity that creates, originally publishes or originally distributes a qualified political advertisement (a paid advertisement relating to a federal, state or local candidate or election in Michigan, or a ballot question, containing AI-generated image, audio or video) to state that it was generated in whole or substantially by artificial intelligence, with minimum size, duration and language rules for graphic, audio and video formats. A first violation is a state civil infraction with a fine of up to $250; later violations carry up to $1,000 each, and each distribution is a separate violation. Exemptions cover bona fide news coverage, paid broadcasts, satire or parody, businesses regulated by the Michigan Public Service Commission or the FCC, and distribution platforms with a written disclosure policy; platforms are not liable for missing disclosures if they gave notice of their prohibitions. Section 47 requires AI-generated prerecorded telephone messages advocating for or against a candidate or ballot question to carry a specified statement. Knowing violations of section 47 are misdemeanors punishable by a fine of up to $1,000, imprisonment for up to 93 days, or both. The amendments do not take effect unless House Bill 5143 of the 102nd Legislature is enacted into law."
+ },
+ "relations": [
+  {
+   "relation": "amends",
+   "target_text": "1976 PA 388 (act to regulate political activity and campaign financing): amends section 47 (MCL 169.247), as amended by 2015 PA 269, and adds section 59",
+   "note": "One row for the target act; the amendment both changes section 47 and adds section 59.",
+   "evidence": {
+    "provision": "Long title",
+    "quote": "by amending section 47 (MCL 169.247), as amended by 2015 PA 269, and by adding section 59"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "House Bill No. 5143 of the 102nd Legislature",
+   "note": "Enacting section 1 makes this amendatory act effective only if the named bill is enacted; a condition on effectiveness, not a legal basis.",
+   "evidence": {
+    "provision": "Enacting section 1",
+    "quote": "This amendatory act does not take effect unless House Bill No. 5143 of the 102nd Legislature is enacted into law."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Federal Communications Commission sponsor identification requirements",
+   "note": "Radio and television paid advertisements must identify the sponsor as the FCC requires; the text does not specify the FCC rule.",
+   "evidence": {
+    "provision": "Sec. 47(2)",
+    "quote": "must identify the sponsoring person as required by the Federal Communications Commission"
+   }
+  }
+ ],
+ "notes": "Target act 1976 PA 388 is not in the registry, so target_instrument_id is left empty. The text does not state a legal basis, enacting bill, repeal or replacement; the Public Act and enrolled bill numbers come from registry metadata, not the document. Sec. 47(1), (5) and (7) cross-refer internally to section 55 and section 6(2)(j) of 1976 PA 388, which are not reproduced. The amended section 47 is printed without marking new text, so new and restated language cannot be told apart. Inconsistency: Sec. 59(5) and 59(4)(c) refer to failures to disclose AI content in a prerecorded telephone message, but Sec. 59(1) and the Sec. 59(6) definition cover only qualified political advertisements; the prerecorded-message AI disclaimer is in Sec. 47(7), with different wording. Sec. 47 and Sec. 59 may both reach AI-generated political ads, and the text does not say how they interact. Effectiveness depends on House Bill 5143 (102nd Legislature), which was not checked.",
+ "events": [
+  {
+   "event": "entry_into_force",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "This amendatory act does not take effect unless House Bill No. 5143 of the 102nd Legislature is enacted into law.",
+   "anchor": "enactment of House Bill No. 5143 of the 102nd Legislature",
+   "depends_on": "enactment of House Bill No. 5143 of the 102nd Legislature",
+   "applies_to": "this amendatory act (amended Sec. 47 and new Sec. 59)",
+   "evidence": {
+    "provision": "Enacting section 1",
+    "quote": "This amendatory act does not take effect unless House Bill No. 5143 of the 102nd Legislature is enacted into law."
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "other",
+   "variable_text": "days before a general election, for communications referencing a candidate or ballot question",
+   "operator": "<=",
+   "value": 60,
+   "value_text": "within 60 days before a general election",
+   "unit": "days",
+   "measurement": "window measured before a general election; applies to a communication referencing a clearly identified candidate or ballot question",
+   "level": "other",
+   "trigger": "scope_definition",
+   "consequence": "Exempted communication within the window must contain the identification required by subsection (1), (2), or (7).",
+   "conditions": "Communication otherwise entirely exempted under section 6(2)(j); targeted by radio, television, mass mailing, or prerecorded telephone message to the relevant electorate.",
+   "evidence": {
+    "provision": "Sec. 47(5)(a)",
+    "quote": "within 60 days before a general election"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "days before a primary election, for communications referencing a candidate or ballot question",
+   "operator": "<=",
+   "value": 30,
+   "value_text": "30 days before a primary election",
+   "unit": "days",
+   "measurement": "window measured before a primary election; applies to a communication referencing a clearly identified candidate or ballot question",
+   "level": "other",
+   "trigger": "scope_definition",
+   "consequence": "Exempted communication within the window must contain the identification required by subsection (1), (2), or (7).",
+   "conditions": "Communication otherwise entirely exempted under section 6(2)(j); targeted by radio, television, mass mailing, or prerecorded telephone message to the relevant electorate.",
+   "evidence": {
+    "provision": "Sec. 47(5)(a)",
+    "quote": "or 30 days before a primary election in which the candidate or ballot question appears on a ballot"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "number of violations (first violation compared with second or subsequent violation)",
+   "operator": ">=",
+   "value": 2,
+   "value_text": "second or subsequent violation",
+   "unit": "violations",
+   "measurement": "violations of section 59(1) by the same person; each qualified political advertisement distributed or aired is a separate violation under subsection (3)",
+   "level": "person",
+   "trigger": "penalty_tier",
+   "consequence": "A second or subsequent violation is a state civil infraction carrying a higher civil fine maximum than a first violation.",
+   "conditions": "Violation of section 59(1) by the person.",
+   "evidence": {
+    "provision": "Sec. 59(2)(b)",
+    "quote": "For a second or subsequent violation, the person is responsible for a state civil infraction"
+   }
+  }
+ ],
+ "section_status": {}
+}

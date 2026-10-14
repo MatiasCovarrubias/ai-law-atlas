@@ -1,0 +1,272 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "us-wa-hb2225-2026",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "AGORA plaintext (ETO, CC BY-NC 4.0), local cache",
+  "url": "https://lawfilesext.leg.wa.gov/biennium/2025-26/Pdf/Bills/Session%20Laws/House/2225-S.SL.pdf?q=20260430170446",
+  "retrieved": "2026-04-30",
+  "version": "1.33.0 (2026-09-16)",
+  "language": "en",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "ai_general",
+   "generative_ai",
+   "minors_child_safety",
+   "consumer_protection",
+   "online_safety_content"
+  ],
+  "primary_domain": "generative_ai",
+  "mechanisms": [
+   "mandate_obligation",
+   "disclosure_transparency",
+   "prohibition_ban",
+   "liability_rule"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "ai_deployer"
+  ],
+  "affected_roles": [
+   "minors",
+   "consumers_users"
+  ],
+  "decision_margins": [
+   "firm:product_design_release",
+   "firm:compliance_process"
+  ],
+  "territorial_scope": {
+   "types": [
+    "subnational",
+    "extraterritorial"
+   ],
+   "description": "Applies to any operator that makes AI companion chatbots available or controls access to them for users in Washington, reaching operators based elsewhere that serve state users.",
+   "evidence": {
+    "provision": "Sec. 2(4)",
+    "quote": "makes available or controls access to an AI companion chatbot for users in this state"
+   }
+  },
+  "agora_harms": [
+   "Detrimental content",
+   "Harm to health/safety"
+  ],
+  "agora_incentives": [
+   "Civil liability"
+  ],
+  "agora_risk_factors": [
+   "Safety",
+   "Transparency"
+  ],
+  "agora_strategies": [
+   "Disclosure",
+   "Disclosure: In deployment"
+  ]
+ },
+ "summary": {
+  "short": "Washington HB 2225 (2026) regulates operators of AI companion chatbots available to Washington users. It requires recurring disclosure that chatbots are artificial, minor protections, self-harm detection protocols and violations treated as consumer protection act violations. Effective January 1, 2027.",
+  "long": "HB 2225 adds a new chapter to Title 19 RCW regulating AI companion chatbots: AI systems with a natural language interface that give adaptive, human-like responses and sustain relationships across interactions, excluding certain business, video game, voice assistant and curriculum-aligned educational bots. Operators (persons making available or controlling access to such chatbots for users in Washington) must give clear notice that the chatbot is artificial and not human at the start of an interaction and at least every three hours, and must take reasonable measures to stop chatbots claiming to be human. Where an operator knows a user is a minor, or the chatbot is directed to minors, it must repeat the notice hourly, prevent sexually explicit or suggestive dialogue, and prohibit listed manipulative engagement techniques. Before making a chatbot available, operators must maintain a protocol to detect suicidal ideation or self-harm, refer users to crisis resources and prevent self-harm content, and must publicly disclose the protocol and the annual number of crisis referrals. Violations are deemed unfair or deceptive acts under the consumer protection act, chapter 19.86 RCW; the text sets no separate penalty. Effective January 1, 2027."
+ },
+ "relations": [
+  {
+   "relation": "part_of",
+   "target_text": "Title 19 RCW",
+   "note": "The act's new chapter is to be added to Title 19 RCW. Target is not in the registry, so target_instrument_id is empty.",
+   "evidence": {
+    "provision": "Sec. 7",
+    "quote": "Sections 1 through 6 of this act constitute a new chapter in Title 19 RCW."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "chapter 19.86 RCW (consumer protection act)",
+   "note": "Sec. 6 declares violations of the chapter to be unfair or deceptive acts under the consumer protection act. The text does not set out a separate enforcement regime.",
+   "evidence": {
+    "provision": "Sec. 6",
+    "quote": "for the purpose of applying the consumer protection act, chapter 19.86 RCW"
+   }
+  }
+ ],
+ "notes": "Sec. 3(2)(b) requires the disclosure at least every three hours for all users; Sec. 4(2)(b) requires it at least every hour for minors or chatbots directed to minors. These are separate cohorts, not a conflict. Sec. 6 applies the consumer protection act without naming an enforcing authority, penalty or private right of action. Sec. 1(4)(d) states an intent with no operative provision. The only date is the effective date in Sec. 9 (January 1, 2027). Sec. 3(3) and Sec. 4(3) use 'AI chatbot' and 'AI companion chatbot' interchangeably.",
+ "events": [
+  {
+   "event": "entry_into_force",
+   "date": "2027-01-01",
+   "date_type": "absolute",
+   "date_text": "This act takes effect January 1, 2027.",
+   "applies_to": "Entire act (new chapter in Title 19 RCW)",
+   "evidence": {
+    "provision": "Sec. 9",
+    "quote": "This act takes effect January 1, 2027."
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "age",
+   "variable_text": "minor: person under 18 years of age",
+   "operator": "<",
+   "value": 18,
+   "value_text": "any person under 18 years of age",
+   "unit": "years",
+   "measurement": "Not stated in the text",
+   "level": "person",
+   "trigger": "scope_definition",
+   "consequence": "Defines 'minor'; the Sec. 4 duties apply where the operator knows the user is a minor or the chatbot is directed to minors.",
+   "conditions": "Operator knows the user is a minor, or the AI companion chatbot is directed to minors (Sec. 4(1))",
+   "evidence": {
+    "provision": "Sec. 2(3)",
+    "quote": "\"Minor\" means any person under 18 years of age."
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "AI companion chatbot",
+   "defined_in": "this act, Sec. 2(1)(a)",
+   "evidence": {
+    "provision": "Sec. 2(1)(a)",
+    "quote": "\"AI companion chatbot\" or \"AI companion\" means an artificial intelligence system with a natural language interface that provides adaptive, human-like responses to user inputs, including by exhibiting anthropomorphic features, and is able to sustain a relationship across multiple interactions."
+   }
+  },
+  {
+   "term": "Artificial intelligence",
+   "defined_in": "this act, Sec. 2(2)",
+   "evidence": {
+    "provision": "Sec. 2(2)",
+    "quote": "\"Artificial intelligence\" or \"AI\" means the use of machine learning and related technologies that use data to train statistical models for the purpose of enabling computer systems to perform tasks normally associated with human intelligence or perception"
+   }
+  },
+  {
+   "term": "Minor",
+   "defined_in": "this act, Sec. 2(3)",
+   "evidence": {
+    "provision": "Sec. 2(3)",
+    "quote": "\"Minor\" means any person under 18 years of age."
+   }
+  },
+  {
+   "term": "Operator",
+   "defined_in": "this act, Sec. 2(4)",
+   "evidence": {
+    "provision": "Sec. 2(4)",
+    "quote": "\"Operator\" means any person, partnership, corporation, or entity that makes available or controls access to an AI companion chatbot for users in this state."
+   }
+  },
+  {
+   "term": "Self-harm",
+   "defined_in": "this act, Sec. 2(5)",
+   "evidence": {
+    "provision": "Sec. 2(5)",
+    "quote": "\"Self-harm\" means intentional self-injury, with or without the intent to cause death."
+   }
+  },
+  {
+   "term": "User",
+   "defined_in": "this act, Sec. 2(6)",
+   "evidence": {
+    "provision": "Sec. 2(6)",
+    "quote": "\"User\" means a natural person who interacts with an AI companion chatbot for personal use and who is not an operator, developer, or agent thereof."
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "disclosure_transparency",
+   "addressee": "ai_provider",
+   "modality": "shall",
+   "summary": "Operator (Sec. 2(4)) must give a clear and conspicuous disclosure that the AI companion chatbot is artificially generated and not human, at the beginning of each interaction and at least every three hours during continued interaction (Sec. 3(2)).",
+   "applies_from": "January 1, 2027",
+   "evidence": {
+    "provision": "Sec. 3(1)",
+    "quote": "An operator must provide a clear and conspicuous disclosure that an AI companion chatbot is artificially generated and not human."
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "ai_provider",
+   "modality": "shall",
+   "summary": "Operator must implement reasonable measures to prohibit and prevent AI companion chatbots from claiming to be human, including when asked, and from generating output that refutes or conflicts with the required disclosure.",
+   "applies_from": "January 1, 2027",
+   "evidence": {
+    "provision": "Sec. 3(3)",
+    "quote": "The operator must implement reasonable measures to prohibit and prevent AI companion chatbots from claiming to be human"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "ai_provider",
+   "modality": "shall",
+   "summary": "Where the operator knows the user is a minor or the chatbot is directed to minors: issue a clear and conspicuous notice that the chatbot is artificially generated and not human, at the beginning of the interaction and at least every hour during continuous interaction (Sec. 4(2)); and implement reasonable measures to prohibit the chatbot from claiming to be human or generating output that conflicts with that notice (Sec. 4(3)).",
+   "applies_from": "January 1, 2027",
+   "conditional_on": "operator knows that the user is a minor, or the AI companion chatbot is directed to minors",
+   "evidence": {
+    "provision": "Sec. 4(1)(a)",
+    "quote": "Issue a clear and conspicuous notification indicating that the chatbot is artificially generated and not human;"
+   }
+  },
+  {
+   "type": "minors_protection",
+   "addressee": "ai_provider",
+   "modality": "shall",
+   "summary": "Where the operator knows the user is a minor or the chatbot is directed to minors: implement reasonable measures to prevent sexually explicit content or suggestive dialogue with minors (Sec. 4(1)(b)), and to prohibit manipulative engagement techniques that engage or prolong an emotional relationship, listed in items (i) to (viii) (Sec. 4(1)(c)).",
+   "applies_from": "January 1, 2027",
+   "conditional_on": "operator knows that the user is a minor, or the AI companion chatbot is directed to minors",
+   "evidence": {
+    "provision": "Sec. 4(1)(c)",
+    "quote": "Implement reasonable measures to prohibit the use of manipulative engagement techniques, which cause the AI companion chatbot to engage in or prolong an emotional relationship with the user"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "ai_provider",
+   "modality": "shall_not",
+   "summary": "Operator may not make available or deploy an AI companion chatbot unless it maintains and implements a protocol for detecting and addressing suicidal ideation or expressions of self-harm by users; the protocol must include identification methods (including for eating disorders), responses referring users to crisis resources, and measures preventing content encouraging or describing self-harm (Sec. 5(2)).",
+   "applies_from": "January 1, 2027",
+   "evidence": {
+    "provision": "Sec. 5(1)",
+    "quote": "An operator may not make available or deploy an AI companion chatbot unless it maintains and implements a protocol for detecting and addressing suicidal ideation or expressions of self-harm by users."
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "ai_provider",
+   "modality": "shall",
+   "summary": "Operator must publicly disclose, on its website(s) and within any mobile or web-based application through which the companion is made available, the details of the self-harm and suicidal ideation protocols, including safeguards and the number of crisis referral notifications issued to users in the preceding calendar year.",
+   "applies_from": "January 1, 2027",
+   "evidence": {
+    "provision": "Sec. 5(3)",
+    "quote": "The operator shall publicly disclose on their website or websites"
+   }
+  }
+ ],
+ "enforcement": [
+  {
+   "sanction_type": "other",
+   "authority": "Not stated in this act; Sec. 6 applies the consumer protection act, chapter 19.86 RCW",
+   "triggered_by": "Violation of this chapter (Secs. 3 through 5 duties), treated as an unfair or deceptive act in trade or commerce and an unfair method of competition under chapter 19.86 RCW",
+   "max_penalty_text": "Not stated in this act",
+   "penalty_reference": "Chapter 19.86 RCW (Consumer Protection Act), cross-referenced in Sec. 6; penalty and remedy provisions are not reproduced in this act. Private right of action is neither created nor excluded in this act; it is not determined from this text.",
+   "cure_period": "Not stated in this act",
+   "evidence": {
+    "provision": "Sec. 6",
+    "quote": "A violation of this chapter is not reasonable in relation to the development and preservation of business and is an unfair or deceptive act in trade or commerce"
+   }
+  }
+ ],
+ "section_status": {
+  "entities": {
+   "status": "not_found",
+   "note": "No named firms or public bodies appear. Obligations address 'operator' as defined in Sec. 2(4), and no authority is designated or empowered."
+  }
+ },
+ "entities": []
+}

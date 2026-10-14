@@ -1,0 +1,157 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "nl-rbdha-2020-syri",
+ "tier": "B",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "light, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-interim-20261014"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (Claude Code retrieval)",
+  "url": "https://data.rechtspraak.nl/uitspraken/content?id=ECLI:NL:RBDHA:2020:865",
+  "retrieved": "2026-10-14",
+  "version": "Judgment of 5 February 2020 (published 4 Feb 2020 per metadata; record modified 2025-03-21), Rechtspraak open data XML",
+  "language": "nl",
+  "extent": "full",
+  "note": "Raw .html is a mechanical conversion of the official open-data XML (uitspraak element only; inhoudsindicatie and RDF metadata dropped; footnotes numbered and appended at end; embedded images not included)."
+ },
+ "classification": {
+  "domains": [
+   "data_protection",
+   "algorithmic_decision_systems",
+   "public_sector_ai",
+   "data_access_sharing"
+  ],
+  "primary_domain": "data_protection",
+  "mechanisms": [
+   "enforcement_order"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "government_agency"
+  ],
+  "affected_roles": [
+   "general_public"
+  ],
+  "decision_margins": [
+   "household:data_privacy"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national",
+    "targeted"
+   ],
+   "description": "Dutch court applying Dutch statutes to named plaintiffs; the declaration of unenforceability runs toward the four admitted plaintiffs and those whose interests they represent.",
+   "evidence": {
+    "provision": "7.2",
+    "quote": "verklaart voor recht dat dat artikel 65 Wet SUWI en hoofdstuk 5a Besluit SUWI jegens NJCM"
+   }
+  },
+  "agora_applications": [
+   "Government: benefits and welfare"
+  ],
+  "agora_harms": [
+   "Violation of civil or human rights, including privacy"
+  ],
+  "agora_risk_factors": [
+   "Bias",
+   "Privacy",
+   "Transparency"
+  ]
+ },
+ "summary": {
+  "short": "Dutch district court judgment (5 February 2020) in a suit by civil-society plaintiffs against the State. Declares Wet SUWI art. 65 and Besluit SUWI chapter 5a, governing the SyRI data-linking and risk-report system, unenforceable toward the admitted plaintiffs as contrary to ECHR Art. 8(2).",
+  "long": "Judgment of the Hague District Court of 5 February 2020 in a case brought by four collective interest organisations (NJCM, Platform Bescherming Burgerrechten, Privacy First, Koepel van DBC-Vrije Praktijken), with FNV intervening, against the Dutch State. The case concerns SyRI (Systeem Risico Indicatie), a government mechanism in Wet SUWI art. 64-65 and Besluit SUWI chapter 5a, in force from 1 January 2014, under which designated public bodies link datasets in a secure environment to generate risk reports on possible social-security, tax and labour-law fraud. The court found that art. 65 Wet SUWI and chapter 5a Besluit SUWI violate ECHR Art. 8(2) for insufficient safeguards, citing limited transparency about risk indicators and the risk model, no integral prior necessity review, data-minimisation concerns and no duty to notify data subjects. It held that art. 64 Wet SUWI on its own does not violate Art. 8(2). It declared them unenforceable toward the admitted plaintiffs and those whose interests they represent. The Landelijke Cliëntenraad and two individual plaintiffs were declared inadmissible. Claims for disclosure of risk models and for destruction of data were rejected, and the data-processor claim was not reached. The State was ordered to pay costs of EUR 3,250.51."
+ },
+ "relations": [
+  {
+   "relation": "legal_basis",
+   "target_text": "Grondwet, artikelen 93 en 94",
+   "note": "The court states it applies the ECHR and ICCPR provisions as binding under these constitutional articles. Registry ID not verified.",
+   "evidence": {
+    "provision": "6.20",
+    "quote": "Dit zijn eenieder verbindende bepalingen die de rechtbank op grond van de artikelen 93 en 94 Grondwet dient toe te passen."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Wet structuur uitvoeringsorganisatie en inkomen (Wet SUWI), artikel 65 and chapter 5a of the Besluit SUWI",
+   "note": "The judgment's operative part declares article 65 Wet SUWI, together with chapter 5a Besluit SUWI, unenforceable (onverbindend) toward the NJCM, Platform Bescherming Burgerrechten, Privacy First and Koepel van DBC-Vrije Praktijken, for conflict with ECHR art. 8(2). Article 64 Wet SUWI is not found in conflict (6.110). Registry ID not verified.",
+   "evidence": {
+    "provision": "7.2",
+    "quote": "artikel 65 Wet SUWI en hoofdstuk 5a Besluit SUWI jegens NJCM"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Besluit SUWI, hoofdstuk 5a (SyRI rules)",
+   "note": "The text states that the Besluit SUWI gives effect to the rules delegated by the Wet SUWI on SyRI. The judgment reviews chapter 5a together with article 65 Wet SUWI. Registry ID not verified.",
+   "evidence": {
+    "provision": "4.8",
+    "quote": "Aan dit laatste is uitvoering gegeven met het Besluit SUWI, in het bijzonder met hoofdstuk 5a van dat besluit."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Europees Verdrag tot bescherming van de rechten van de mens (EVRM), artikel 8",
+   "note": "Article 8(2) ECHR is the ground on which the court declares the SyRI provisions unenforceable. Registry ID not verified.",
+   "evidence": {
+    "provision": "6.7",
+    "quote": "De SyRI-wetgeving voldoet niet aan de in artikel 8 lid 2 EVRM gestelde eis"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Algemene verordening gegevensbescherming (AVG), Regulation (EU) 2016/679",
+   "note": "The court applies the GDPR to the claims because it was in force when the claims were decided. It does not rule on the specific GDPR provisions invoked (6.107). Registry ID not verified.",
+   "evidence": {
+    "provision": "6.28",
+    "quote": "Met ingang van 25 mei 2018, nadat de dagvaarding is uitgebracht, geldt de AVG."
+   }
+  },
+  {
+   "relation": "designates_under",
+   "target_text": "Uitvoeringswet Algemene verordening gegevensbescherming (UAVG), article 6 (per footnote 12); article 48(10) also referenced",
+   "note": "The text states the Autoriteit Persoonsgegevens is designated supervisory authority 'in de zin van de AVG'; footnote 12 cites art. 6 UAVG. The same act's art. 48(10), which the court sets aside as not applicable to these pending claims (6.28), is also referenced. Registry ID not verified.",
+   "evidence": {
+    "provision": "4.33",
+    "quote": "is aangewezen als toezichthoudende autoriteit in Nederland in de zin van de AVG"
+   }
+  }
+ ],
+ "notes": "Court judgment (first instance, Rechtbank Den Haag), not a statute. Relations describe the legal framework the court applies, not relations created by this text. Target_instrument_id is left empty because registry IDs were not verified. The text does not state whether an appeal was lodged. Internal points: the text spells the claimant organisation as 'NCJM c.s.' once (6.43) and as 'Platform voor Burgerrechten' in the operative part (7.2) and in places elsewhere, versus 'Platform Bescherming Burgerrechten' in the parties section. The Wet SUWI 'Wet van 9 oktober 2013' (footnote 7) is cited as amending the Wet SUWI with effect from 1 January 2014 (4.1).",
+ "events": [
+  {
+   "event": "adopted",
+   "date": "2020-02-05",
+   "date_type": "absolute",
+   "date_text": "Vonnis van 5 februari 2020; in het openbaar uitgesproken op 5 februari 2020",
+   "applies_to": "Judgment ECLI:NL:RBDHA:2020:865",
+   "evidence": {
+    "provision": "Closing clause (Dit vonnis is gewezen door ...)",
+    "quote": "in het openbaar uitgesproken op 5 februari 2020"
+   }
+  },
+  {
+   "event": "struck_down",
+   "date": "2020-02-05",
+   "date_type": "absolute",
+   "date_text": "Vonnis van 5 februari 2020 (declaration in the operative part, 7.2)",
+   "applies_to": "Art. 65 Wet SUWI and hoofdstuk 5a Besluit SUWI (SyRI), as to NJCM, Platform Bescherming Burgerrechten, Privacy First, Koepel van DBC-Vrije Praktijken and those whose interests they represent",
+   "evidence": {
+    "provision": "7 De beslissing, 7.2",
+    "quote": "onverbindend zijn wegens strijdigheid met artikel 8 lid 2 EVRM"
+   }
+  }
+ ],
+ "section_status": {
+  "thresholds": {
+   "status": "not_found",
+   "note": "The judgment states no numeric cut-off that changes legal treatment. The retention, destruction and feedback periods (two years, four weeks, twenty months) are procedural time limits, coded as events or obligations rather than thresholds. The risk-model cut-off (afsnijpunt) is described only as fixed in advance, with no value given in the text. The count of 17 data categories and the 1 January 2014 effective date are not treatment cut-offs."
+  }
+ },
+ "thresholds": []
+}

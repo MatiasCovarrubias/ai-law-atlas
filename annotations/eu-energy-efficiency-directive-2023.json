@@ -1,0 +1,3680 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "eu-energy-efficiency-directive-2023",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (connectors/fetch_texts.py)",
+  "url": "http://publications.europa.eu/resource/cellar/0e432499-5752-11ee-9220-01aa75ed71a1.0006.03/DOC_1",
+  "retrieved": "2026-10-13",
+  "version": "as fetched",
+  "language": "en",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "energy_grid_water",
+   "compute_data_centers"
+  ],
+  "primary_domain": "energy_grid_water",
+  "mechanisms": [
+   "mandate_obligation",
+   "designation_tiering",
+   "procurement_rule",
+   "disclosure_transparency",
+   "direct_subsidy_grant"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "government_agency",
+   "enterprise",
+   "utility_grid_operator",
+   "data_center_owner",
+   "data_center_operator"
+  ],
+  "affected_roles": [
+   "consumers_users",
+   "general_public"
+  ],
+  "decision_margins": [
+   "firm:compliance_process",
+   "firm:input_use",
+   "household:data_privacy"
+  ],
+  "territorial_scope": {
+   "types": [
+    "supranational",
+    "national"
+   ],
+   "description": "Applies across the Union through transposition by Member States; the provisions provided contain no reach beyond Member State territory.",
+   "evidence": {
+    "provision": "Art. 1(1)",
+    "quote": "This Directive establishes a common framework of measures to promote energy efficiency within the Union"
+   }
+  },
+  "agora_strategies": [
+   "Disclosure",
+   "Government support",
+   "Performance requirements",
+   "Tiering: Tiering based on inputs"
+  ]
+ },
+ "summary": {
+  "short": "Recast EU energy efficiency directive setting a framework for energy efficiency targets, the energy efficiency first principle, public-sector energy savings, energy savings obligations, energy audits, energy management systems and data-centre reporting. Binding on Member States, which must transpose it. Adopted 13 September 2023.",
+  "long": "Directive (EU) 2023/1791 recasts Directive 2012/27/EU and establishes a common Union framework to promote energy efficiency and meet Union energy efficiency targets. Member States must apply an energy efficiency first principle in planning, policy and major investment decisions above EUR 100 million (EUR 175 million for transport infrastructure) (Art. 3). Member States must collectively reduce final energy consumption by at least 11.7% in 2030 compared with the 2020 EU Reference Scenario and set indicative national contributions (Art. 4). Public bodies must reduce their final energy consumption by at least 1.9% each year (Art. 5), renovate at least 3% of the floor area of publicly owned buildings each year (Art. 6), and purchase high energy-efficiency products and services (Art. 7). Member States must achieve cumulative end-use energy savings through obligation schemes or alternative policy measures, with designated obligated parties (Arts 8 to 10). Enterprises above set annual energy consumption must implement a certified energy management system or undergo energy audits (Art. 11). Owners and operators of data centres with at least 500 kW of installed IT power must make energy performance information publicly available, and the Commission maintains a European database (Art. 12). Articles 13 and 14 set metering requirements for natural gas and for heating, cooling and domestic hot water. The document provided ends with Article 14; later provisions are not included in this file."
+ },
+ "relations": [
+  {
+   "relation": "legal_basis",
+   "target_text": "Treaty on the Functioning of the European Union (TFEU), Article 194(2)",
+   "note": "Cited in the preamble as the Treaty basis of the Directive.",
+   "evidence": {
+    "provision": "Preamble (citations)",
+    "quote": "Having regard to the Treaty on the Functioning of the European Union, and in particular Article 194(2) thereof,"
+   }
+  },
+  {
+   "relation": "replaces",
+   "target_text": "Directive 2012/27/EU",
+   "note": "Recast of Directive 2012/27/EU per the title and recital (1). Any operative repeal provision lies outside this part.",
+   "evidence": {
+    "provision": "Recital (1)",
+    "quote": "that Directive should be recast in the interests of clarity"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Regulation (EU) 2023/955",
+   "note": "Stated in the title. Recital (154) says it should be amended to reflect the energy poverty definition. Any operative amending provision lies outside this part.",
+   "evidence": {
+    "provision": "Title",
+    "quote": "and amending Regulation (EU) 2023/955 (recast)"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) 2018/1999 (Governance Regulation)",
+   "note": "Many provisions refer to its planning, reporting, assessment and recommendation articles (e.g. Art. 3(5)(d), 4(2), 4(6), 5(5), 8(10), 8(12)); Art. 2(2) incorporates its definition of energy efficiency first.",
+   "evidence": {
+    "provision": "Article 3(5)(d)",
+    "quote": "as part of their integrated national energy and climate progress reports submitted pursuant to Article 17 of Regulation (EU) 2018/1999"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) 2020/852 (taxonomy)",
+   "note": "Recital (65) uses its do no significant harm principle; the recital is context only.",
+   "evidence": {
+    "provision": "Recital (65)",
+    "quote": "should comply with the principle of ‘do no significant harm’ within the meaning of Regulation (EU) 2020/852"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive 2010/31/EU (Energy Performance of Buildings)",
+   "note": "Art. 6 renovation obligation applies without prejudice to Art. 7 of that Directive and refers to its Art. 9 nearly zero-energy standard.",
+   "evidence": {
+    "provision": "Article 6(1)",
+    "quote": "Without prejudice to Article 7 of Directive 2010/31/EU"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive 2014/23/EU",
+   "note": "Procurement thresholds for public contracts and concessions; also used to define contracting authorities and entities (Art. 2(14)-(15)).",
+   "evidence": {
+    "provision": "Article 7(1)",
+    "quote": "Article 8 of Directive 2014/23/EU"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive 2014/24/EU",
+   "note": "Procurement thresholds for public contracts; also used in the definition of contracting authorities (Art. 2(14)).",
+   "evidence": {
+    "provision": "Article 7(1)",
+    "quote": "Article 4 of Directive 2014/24/EU"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive 2014/25/EU",
+   "note": "Procurement thresholds for contracts by contracting entities; also used in the definition of contracting entities (Art. 2(15)).",
+   "evidence": {
+    "provision": "Article 7(1)",
+    "quote": "Article 15 of Directive 2014/25/EU"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive (EU) 2019/944",
+   "note": "Energy savings obligation applies without prejudice to this Directive; also used in several definitions (Art. 2(26), (34), (35), (51)).",
+   "evidence": {
+    "provision": "Article 8(3)",
+    "quote": "without prejudice to Regulation (EU) 2019/943 and Directive (EU) 2019/944"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive 2009/73/EC",
+   "note": "Smart gas metering roll-out is to be implemented in accordance with this Directive; also used in Art. 2(26) and (34).",
+   "evidence": {
+    "provision": "Article 13(2)",
+    "quote": "in accordance with Directive 2009/73/EC"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive (EU) 2018/2001 (renewable energy)",
+   "note": "Used in the definition of ambient energy (Art. 2(7)); also referred to in recitals on renewable energy communities and heat pumps.",
+   "evidence": {
+    "provision": "Article 2(7)",
+    "quote": "ambient energy as defined in Article 2, point (2), of Directive (EU) 2018/2001"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Commission Implementing Regulation (EU) 2019/1780",
+   "note": "Energy efficiency information on public contracts is published in TED notices under this Implementing Regulation.",
+   "evidence": {
+    "provision": "Article 7(5)",
+    "quote": "Commission Implementing Regulation (EU) 2019/1780"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Commission Implementing Regulation (EU) 2018/2066",
+   "note": "Net calorific values in its Annex VI apply when converting energy savings, unless other factors are justified.",
+   "evidence": {
+    "provision": "Article 9(8)",
+    "quote": "Annex VI of Commission Implementing Regulation (EU) 2018/2066"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) 2021/1119",
+   "note": "Stated aim of the common framework is to contribute to the implementation of this Regulation.",
+   "evidence": {
+    "provision": "Article 1(1)",
+    "quote": "contribute to the implementation of Regulation (EU) 2021/1119"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive 2003/87/EC (EU ETS)",
+   "note": "Used to define an exclusion for industrial activities (Art. 8(8)(b)) and in the EU ETS carbon price pass-through rule (Art. 9(9)); also cited in Art. 10(3) of that Directive via recital (136).",
+   "evidence": {
+    "provision": "Article 8(8)(b)",
+    "quote": "industrial activities listed in Annex I to Directive 2003/87/EC"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) 2017/1369 (energy labelling)",
+   "note": "Product packages covered by a delegated act under this Regulation may be purchased on aggregate efficiency.",
+   "evidence": {
+    "provision": "Article 7(4)",
+    "quote": "a delegated act adopted under Regulation (EU) 2017/1369"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive 2009/81/EC (defence procurement)",
+   "note": "Procurement energy-efficiency obligations do not apply to contracts for military equipment as defined there.",
+   "evidence": {
+    "provision": "Article 7(2)",
+    "quote": "military equipment as defined in Directive 2009/81/EC"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Commission Recommendation 2003/361/EC (SME definition)",
+   "note": "Defines SMEs and microenterprises used in Art. 2(30)-(31) and Art. 11.",
+   "evidence": {
+    "provision": "Article 2(30)",
+    "quote": "enterprises as defined in Article 2(1) of the Annex to Commission Recommendation 2003/361/EC"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Commission Recommendation (EU) 2021/1749",
+   "note": "Member States are encouraged, not required, to take it into account when applying Art. 3.",
+   "evidence": {
+    "provision": "Article 3(3)",
+    "quote": "Member States are encouraged to take into account Commission Recommendation (EU) 2021/1749"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EC) No 1099/2008 (energy statistics)",
+   "note": "Defines energy products (Art. 2(1)); also defines data centre (Art. 2(49)) and final energy consumption losses (Art. 2(6)).",
+   "evidence": {
+    "provision": "Article 2(1)",
+    "quote": "as defined in Article 2, point (d), of Regulation (EC) No 1099/2008"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) 2022/869 (trans-European energy infrastructure)",
+   "note": "Recital (21) notes projects of common interest under this Regulation may be subject to overlapping energy efficiency first requirements.",
+   "evidence": {
+    "provision": "Recital (21)",
+    "quote": "included in the Union list pursuant to Article 3 of Regulation (EU) 2022/869"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Regulation (EU) 2023/955",
+   "note": "Article 37 replaces point (1) of Article 2 of Regulation (EU) 2023/955 (energy poverty definition).",
+   "evidence": {
+    "provision": "Art. 37",
+    "quote": "In Article 2 of Regulation (EU) 2023/955, point (1) is replaced by the following:"
+   }
+  },
+  {
+   "relation": "repeals",
+   "target_text": "Directive 2012/27/EU (as amended)",
+   "note": "Repeal with effect from 12 October 2025; references to the repealed Directive are to be read per the correlation table in Annex XVII.",
+   "evidence": {
+    "provision": "Art. 38",
+    "quote": "Directive 2012/27/EU, as amended by the acts listed in Part A of Annex XVI is repealed with effect from 12 October 2025"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) 2018/1999 (Governance of the Energy Union and Climate Action)",
+   "note": "Heating and cooling assessments are part of the integrated national energy and climate plans and their updates under that Regulation.",
+   "evidence": {
+    "provision": "Art. 25(1)",
+    "quote": "its updates pursuant to Regulation (EU) 2018/1999"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive (EU) 2018/2001 (renewable energy)",
+   "note": "The comprehensive heating and cooling assessment is accompanied by an assessment under Article 15(7) of that Directive.",
+   "evidence": {
+    "provision": "Art. 25(1)",
+    "quote": "shall be accompanied by the assessment carried out pursuant to Article 15(7) of Directive (EU) 2018/2001."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive 2010/31/EU (energy performance of buildings)",
+   "note": "Defines installers of building elements; also linked to long-term renovation strategies.",
+   "evidence": {
+    "provision": "Art. 22(1)",
+    "quote": "installers of building elements as defined in Article 2, point (9), of Directive 2010/31/EU"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive 2009/73/EC (natural gas internal market)",
+   "note": "National regulatory authorities apply the energy efficiency first principle in regulatory tasks under this Directive.",
+   "evidence": {
+    "provision": "Art. 27(1)",
+    "quote": "carrying out the regulatory tasks provided for in Directives 2009/73/EC and (EU) 2019/944"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) 2019/943 (internal market for electricity)",
+   "note": "Tariff principles and network regulation are referenced for incentive-based regulation and cost efficiency.",
+   "evidence": {
+    "provision": "Art. 27(1)",
+    "quote": "as set out in Article 18 of Regulation (EU) 2019/943"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive 2003/87/EC (EU ETS)",
+   "note": "Energy efficiency policy measures in buildings and transport are linked to emissions trading; the energy savings rules refer to it.",
+   "evidence": {
+    "provision": "Art. 24(3)(a)",
+    "quote": "the application of emissions trading in the buildings and transport sector in accordance with Directive 2003/87/EC"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive (EU) 2015/2366 (payment services)",
+   "note": "Payment method charges are limited by reference to Article 62 of that Directive.",
+   "evidence": {
+    "provision": "Art. 21(4)",
+    "quote": "in accordance with Article 62 of Directive (EU) 2015/2366"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive 2011/83/EU (consumer rights)",
+   "note": "Consumer protection rules in this Directive apply without prejudice to Union consumer protection law.",
+   "evidence": {
+    "provision": "Art. 21(1)",
+    "quote": "in particular Directive 2011/83/EU of the European Parliament and of the Council"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Council Directive 93/13/EEC (unfair terms in consumer contracts)",
+   "note": "Consumer protection rules in this Directive apply without prejudice to Union consumer protection law.",
+   "evidence": {
+    "provision": "Art. 21(1)",
+    "quote": "Council Directive 93/13/EEC"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive 2013/11/EU (consumer ADR)",
+   "note": "Out-of-court dispute settlement for consumer final customers must comply with that Directive.",
+   "evidence": {
+    "provision": "Art. 22(8)",
+    "quote": "consumer as defined in Article 4(1), point (a), of Directive 2013/11/EU"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive 2010/75/EU (industrial emissions)",
+   "note": "Article 26(7) to (10) apply to installations covered by that Directive without prejudice to its requirements.",
+   "evidence": {
+    "provision": "Art. 26(11)",
+    "quote": "shall apply to installations covered by Directive 2010/75/EU"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) 2018/2066 (monitoring of greenhouse gas emissions)",
+   "note": "Net calorific values in its Annex VI apply for comparison of energy savings unless other values are justified.",
+   "evidence": {
+    "provision": "Art. 31(1)",
+    "quote": "the net calorific values in Annex VI of Regulation (EU) 2018/2066"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) 2017/1369 (energy labelling)",
+   "note": "Revision of default primary energy coefficients must take account of its effects on Union law.",
+   "evidence": {
+    "provision": "Art. 31(7)",
+    "quote": "Directive 2009/125/EC and Regulation (EU) 2017/1369"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive 2001/42/EC (strategic environmental assessment)",
+   "note": "The heating and cooling cost-benefit analysis may form part of an environmental assessment under that Directive.",
+   "evidence": {
+    "provision": "Art. 25(3)",
+    "quote": "That cost-benefit analysis may be part of an environmental assessment under Directive 2001/42/EC"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EC) No 765/2008 (accreditation)",
+   "note": "Certification and qualification scheme providers must be accredited under that Regulation or approved in line with national standards.",
+   "evidence": {
+    "provision": "Art. 28(1)",
+    "quote": "accredited in accordance with Regulation (EC) No 765/2008"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Commission Decision 2008/952/EC (cogeneration guidelines)",
+   "note": "Member States use its detailed guidelines when applying Annex II.",
+   "evidence": {
+    "provision": "Annex II, Part I",
+    "quote": "Member States shall use the detailed Guidelines established by Commission Decision 2008/952/EC"
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "European Commission",
+   "role": "designated",
+   "function": "Establishes the European database on data centres (Art. 12(3)); assesses the Art. 3(1) investment thresholds and submits a report (Art. 3(2)); assesses national contributions and may submit corrected indicative contributions (Art. 4(5)).",
+   "evidence": {
+    "provision": "Article 12(3)",
+    "quote": "The Commission shall establish a European database on data centres"
+   }
+  },
+  {
+   "name": "Competent authorities (Member State level)",
+   "role": "designated",
+   "function": "Monitor the application of the energy efficiency first principle in policy, planning and investment decisions (Art. 3(4)).",
+   "evidence": {
+    "provision": "Article 3(4)",
+    "quote": "Member States shall ensure that the competent authorities monitor the application of the energy efficiency first principle"
+   }
+  },
+  {
+   "name": "Entity or entities identified by each Member State for monitoring the energy efficiency first principle",
+   "role": "designated",
+   "function": "Responsible for monitoring the application of the energy efficiency first principle and the impacts of regulatory frameworks, planning and investment decisions (Art. 3(5)(c)).",
+   "evidence": {
+    "provision": "Article 3(5)(c)",
+    "quote": "identify an entity or entities responsible for monitoring the application of the energy efficiency first principle"
+   }
+  },
+  {
+   "name": "Competent authority or body designated by each Member State for energy audits",
+   "role": "designated",
+   "function": "Ensures that the energy audit timelines in Art. 11(2) are complied with and that the Annex VI minimum criteria are correctly applied (Art. 11(5)).",
+   "evidence": {
+    "provision": "Article 11(5)",
+    "quote": "Member States shall designate a competent authority or body to ensure that the timelines for conducting energy audits"
+   }
+  },
+  {
+   "name": "Implementing public authority (optional, appointed by Member States)",
+   "role": "designated",
+   "function": "May be appointed to administer an energy efficiency obligation scheme (Art. 9(2)).",
+   "evidence": {
+    "provision": "Article 9(2)",
+    "quote": "they may appoint an implementing public authority to administer the scheme"
+   }
+  },
+  {
+   "name": "National authorities responsible for implementation of Article 11",
+   "role": "designated",
+   "function": "Receive information on enterprises above the 85 TJ and 10 TJ annual energy consumption thresholds (Art. 11(3)).",
+   "evidence": {
+    "provision": "Article 11(3)",
+    "quote": "Member States shall ensure that that information is made available to the national authorities responsible for implementation of this Article"
+   }
+  },
+  {
+   "name": "European Commission",
+   "role": "designated",
+   "function": "Empowered to adopt delegated acts (Art. 33) and to assess and report under Art. 35 and other review provisions.",
+   "evidence": {
+    "provision": "Art. 33(1)",
+    "quote": "The Commission is empowered to adopt delegated acts in accordance with Article 34 to review the harmonised efficiency reference values"
+   }
+  },
+  {
+   "name": "National energy regulatory authorities",
+   "role": "designated",
+   "function": "Apply the energy efficiency first principle in regulatory decisions on gas and electricity infrastructure, verify network planning methodologies and report on efficiency (Art. 27).",
+   "evidence": {
+    "provision": "Art. 27(1)",
+    "quote": "National energy regulatory authorities shall apply the energy efficiency first principle"
+   }
+  },
+  {
+   "name": "Competent authorities (cost-benefit analyses for heating and cooling)",
+   "role": "designated",
+   "function": "Designated by Member States to carry out the cost-benefit analyses for heating and cooling assessment (Art. 25(3)); assess local heating and cooling plans (Art. 25(6)).",
+   "evidence": {
+    "provision": "Art. 25(3)",
+    "quote": "Member States shall designate the competent authorities responsible for carrying out the cost-benefit analyses"
+   }
+  },
+  {
+   "name": "Single points of contact (consumer information)",
+   "role": "designated",
+   "function": "Provide final customers and final users with information on their rights, applicable law and available dispute-settlement mechanisms (Art. 22(3)(e)).",
+   "evidence": {
+    "provision": "Art. 22(3)(e)",
+    "quote": "the provision of single points of contact, to provide final customers and final users with all necessary information"
+   }
+  },
+  {
+   "name": "Dedicated one-stop shops for energy efficiency advice",
+   "role": "designated",
+   "function": "Established by Member States with competent authorities to provide technical, administrative and financial advice on energy efficiency (Art. 22(4)).",
+   "evidence": {
+    "provision": "Art. 22(4)",
+    "quote": "establish dedicated one-stop shops or similar mechanisms"
+   }
+  },
+  {
+   "name": "Energy ombudsperson (optional)",
+   "role": "designated",
+   "function": "May be designated by Member States to handle complaints and out-of-court settlement of disputes arising from energy service and energy performance contracts (Art. 29(7)).",
+   "evidence": {
+    "provision": "Art. 29(7)",
+    "quote": "designate an ombudsperson to ensure the efficient handling of complaints"
+   }
+  },
+  {
+   "name": "Gas and electricity transmission and distribution system operators",
+   "role": "addressee",
+   "function": "Required to apply the energy efficiency first principle in network planning, development and investment decisions (Art. 27(2)) and to comply with Annex XIV (Art. 27(8)).",
+   "evidence": {
+    "provision": "Art. 27(2)",
+    "quote": "Member States shall ensure that gas and electricity transmission and distribution system operators apply the energy efficiency first principle"
+   }
+  },
+  {
+   "name": "Data centres with a total rated energy input exceeding 1 MW",
+   "role": "addressee",
+   "function": "Member States must ensure they use waste heat or other waste heat recovery applications, unless shown not technically or economically feasible (Art. 26(6)).",
+   "evidence": {
+    "provision": "Art. 26(6)",
+    "quote": "Member States shall ensure that data centres with a total rated energy input exceeding 1 MW utilise the waste heat"
+   }
+  }
+ ],
+ "notes": "Part 1 of 2: covers the recitals and Articles 1 to 14 (Chapters I to III). Articles 15 onward are in part 2 and are not annotated here. Obligations, thresholds, events, enforcement and definitions were not requested for this run and are not coded. Target instrument IDs are empty strings because no registry IDs were supplied; target_text identifies each target. Obligated parties (Art. 9(3)), data centre owners and operators (Art. 12(1)) and enterprises (Art. 11) are categories and are not coded as named entities. Two operative data-centre thresholds differ: 500 kW installed IT power for the reporting duty (Art. 12(1)) and 1 MW for the best-practice encouragement (Art. 12(4)); both are left for the thresholds pass. Recital (155) limits transposition to substantive amendments, so unchanged provisions remain under Directive 2012/27/EU. Part 2 of 2 (Articles 15 to 40 and Annexes I to XVII). Relations and entities are drawn only from this part. target_instrument_id is empty because registry IDs for the targets were not supplied. Annex I and Annex II formulas are not reproduced in the text. Article 36(1) does not list Articles 13 to 20 in its transposition list, although Article 39 makes them apply from 12 October 2025. Annex XVI Part A lists earlier acts that amended Directive 2012/27/EU; these are not coded here as relations of this Directive.",
+ "events": [
+  {
+   "event": "signed",
+   "date": "2023-09-13",
+   "date_type": "absolute",
+   "date_text": "DIRECTIVE (EU) 2023/1791 ... of 13 September 2023",
+   "applies_to": "Directive (EU) 2023/1791 as a whole",
+   "evidence": {
+    "provision": "Title",
+    "quote": "of 13 September 2023"
+   }
+  },
+  {
+   "event": "published",
+   "date": "2023-09-20",
+   "date_type": "absolute",
+   "date_text": "20.9.2023 Official Journal of the European Union L 231/1",
+   "applies_to": "Directive (EU) 2023/1791 as a whole",
+   "evidence": {
+    "provision": "Header (Official Journal L 231/1)",
+    "quote": "20.9.2023"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2023-11-30",
+   "date_type": "absolute",
+   "date_text": "at the latest by 30 November 2023, the Commission shall update the 2020 EU Reference Scenario",
+   "applies_to": "Commission update of the 2020 EU Reference Scenario",
+   "evidence": {
+    "provision": "Art. 4(5), third subparagraph",
+    "quote": "at the latest by 30 November 2023, the Commission shall update the 2020 EU Reference Scenario"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2024-02-01",
+   "date_type": "absolute",
+   "date_text": "notify their updated indicative national energy efficiency contribution at the latest by 1 February 2024",
+   "applies_to": "Member States wishing to update their indicative national energy efficiency contributions using the updated reference scenario",
+   "evidence": {
+    "provision": "Art. 4(5), fourth subparagraph",
+    "quote": "shall notify their updated indicative national energy efficiency contribution at the latest by 1 February 2024"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2024-03-01",
+   "date_type": "absolute",
+   "date_text": "or at the latest by 1 March 2024",
+   "applies_to": "Commission submission of corrected indicative national energy efficiency contributions where the collective target is found insufficient",
+   "evidence": {
+    "provision": "Art. 4(5)",
+    "quote": "at the latest by 1 March 2024"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2024-04-11",
+   "date_type": "absolute",
+   "date_text": "By 11 April 2024, the Commission shall adopt guidelines providing a common general framework",
+   "applies_to": "Commission guidelines for Member States' cost-benefit methodologies under Art. 3(5)(a)",
+   "evidence": {
+    "provision": "Art. 3(6)",
+    "quote": "By 11 April 2024, the Commission shall adopt guidelines"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2024-05-15",
+   "date_type": "recurring",
+   "date_text": "By 15 May 2024 and every year thereafter, Member States shall require owners and operators of data centres",
+   "applies_to": "Owners and operators of data centres with installed IT power demand of at least 500kW: publication of Annex VII information",
+   "evidence": {
+    "provision": "Art. 12(1)",
+    "quote": "By 15 May 2024 and every year thereafter"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2014-01-01",
+   "date_type": "absolute",
+   "date_text": "new savings each year from 1 January 2014 to 31 December 2020 of 1,5 % of annual energy sales to final customers by volume",
+   "applies_to": "Energy savings obligation, period 2014-2020 under Art. 8(1)(a)",
+   "evidence": {
+    "provision": "Art. 8(1)(a)",
+    "quote": "new savings each year from 1 January 2014 to 31 December 2020 of 1,5 %"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2021-01-01",
+   "date_type": "absolute",
+   "date_text": "0,8 % of annual final energy consumption from 1 January 2021 to 31 December 2023",
+   "applies_to": "Energy savings obligation, period 2021-2023 under Art. 8(1)(b)(i)",
+   "evidence": {
+    "provision": "Art. 8(1)(b)(i)",
+    "quote": "0,8 % of annual final energy consumption from 1 January 2021 to 31 December 2023"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2021-01-01",
+   "date_type": "absolute",
+   "date_text": "Cyprus and Malta shall achieve new savings each year from 1 January 2021 to 31 December 2023, equivalent to 0,24 %",
+   "applies_to": "Cyprus and Malta: derogation for the period 2021-2023",
+   "evidence": {
+    "provision": "Art. 8(1), second subparagraph",
+    "quote": "Cyprus and Malta shall achieve new savings each year from 1 January 2021 to 31 December 2023"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2024-01-01",
+   "date_type": "absolute",
+   "date_text": "1,3 % of annual final energy consumption from 1 January 2024 to 31 December 2025",
+   "applies_to": "Energy savings obligation, period 2024-2025 under Art. 8(1)(b)(ii)",
+   "evidence": {
+    "provision": "Art. 8(1)(b)(ii)",
+    "quote": "1,3 % of annual final energy consumption from 1 January 2024 to 31 December 2025"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2024-01-01",
+   "date_type": "absolute",
+   "date_text": "Cyprus and Malta shall achieve new savings each year from 1 January 2024 to 31 December 2030 equivalent to 0,45 %",
+   "applies_to": "Cyprus and Malta: derogation for the period 2024-2030",
+   "evidence": {
+    "provision": "Art. 8(1), third subparagraph",
+    "quote": "Cyprus and Malta shall achieve new savings each year from 1 January 2024 to 31 December 2030"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2026-01-01",
+   "date_type": "absolute",
+   "date_text": "1,5 % of annual final energy consumption from 1 January 2026 to 31 December 2027",
+   "applies_to": "Energy savings obligation, period 2026-2027 under Art. 8(1)(b)(iii)",
+   "evidence": {
+    "provision": "Art. 8(1)(b)(iii)",
+    "quote": "1,5 % of annual final energy consumption from 1 January 2026 to 31 December 2027"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2028-01-01",
+   "date_type": "absolute",
+   "date_text": "1,9 % of annual final energy consumption from 1 January 2028 to 31 December 2030",
+   "applies_to": "Energy savings obligation, period 2028-2030 under Art. 8(1)(b)(iv)",
+   "evidence": {
+    "provision": "Art. 8(1)(b)(iv)",
+    "quote": "1,9 % of annual final energy consumption from 1 January 2028 to 31 December 2030"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "Member States shall continue to achieve new annual savings in accordance with the savings rate provided for in point (b)(iv) for ten-year periods after 2030",
+   "applies_to": "Energy savings obligation, ten-year periods after 2030",
+   "evidence": {
+    "provision": "Art. 8(1), final subparagraph",
+    "quote": "for ten-year periods after 2030"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2026-12-31",
+   "date_type": "absolute",
+   "date_text": "shall not include, until 31 December 2026, the energy consumption of public bodies in local administrative units with a population of less than 50 000",
+   "applies_to": "Public bodies in local administrative units with population of less than 50 000: excluded from the Art. 5(1) obligation until this date",
+   "evidence": {
+    "provision": "Art. 5(3)",
+    "quote": "shall not include, until 31 December 2026, the energy consumption of public bodies in local administrative units with a population of less than 50 000"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2029-12-31",
+   "date_type": "absolute",
+   "date_text": "until 31 December 2029, the energy consumption of public bodies in local administrative units with a population of less than 5 000 inhabitants",
+   "applies_to": "Public bodies in local administrative units with population of less than 5 000: excluded from the Art. 5(1) obligation until this date",
+   "evidence": {
+    "provision": "Art. 5(3)",
+    "quote": "until 31 December 2029, the energy consumption of public bodies in local administrative units with a population of less than 5 000 inhabitants"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2027-10-11",
+   "date_type": "absolute",
+   "date_text": "During a transitional period ending on 11 October 2027 the target set out in paragraph 1 shall be indicative",
+   "applies_to": "End of transitional period during which the Art. 5(1) public sector reduction target is indicative",
+   "evidence": {
+    "provision": "Art. 5(2)",
+    "quote": "During a transitional period ending on 11 October 2027"
+   }
+  },
+  {
+   "event": "application",
+   "date": "2024-01-01",
+   "date_type": "absolute",
+   "date_text": "that, on 1 January 2024, are not nearly zero-energy buildings",
+   "applies_to": "Public-body buildings over 250 m2 counted for the 3 % annual renovation requirement (reference date)",
+   "evidence": {
+    "provision": "Art. 6(1), final subparagraph",
+    "quote": "that, on 1 January 2024, are not nearly zero-energy buildings"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2026-12-31",
+   "date_type": "absolute",
+   "date_text": "in any year until 31 December 2026 may count the surplus towards the annual renovation rate of any of the following three years",
+   "applies_to": "Renovation surplus counting rule (three following years) for renovations until this date",
+   "evidence": {
+    "provision": "Art. 6(3)",
+    "quote": "in any year until 31 December 2026 may count the surplus"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2027-01-01",
+   "date_type": "absolute",
+   "date_text": "as of 1 January 2027 may count the surplus towards the annual renovation rate of the following two years",
+   "applies_to": "Renovation surplus counting rule (two following years) for renovations from this date",
+   "evidence": {
+    "provision": "Art. 6(3), second sentence",
+    "quote": "as of 1 January 2027 may count the surplus towards the annual renovation rate of the following two years"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2025-10-11",
+   "date_type": "absolute",
+   "date_text": "By 11 October 2025, Member States shall, for the purposes of this Article, establish and make publicly available and accessible an inventory",
+   "applies_to": "Member States: inventory of heated and/or cooled public-body buildings over 250 m2",
+   "evidence": {
+    "provision": "Art. 6(5)",
+    "quote": "By 11 October 2025, Member States shall, for the purposes of this Article, establish"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "Member States shall update that inventory at least every two years",
+   "applies_to": "Member States: update of the public-body building inventory",
+   "evidence": {
+    "provision": "Art. 6(5), second subparagraph",
+    "quote": "Member States shall update that inventory at least every two years"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2023-12-31",
+   "date_type": "absolute",
+   "date_text": "notify to the Commission, by 31 December 2023, their projected energy savings",
+   "applies_to": "Member States applying the alternative approach under Art. 6(6)",
+   "evidence": {
+    "provision": "Art. 6(6), final subparagraph",
+    "quote": "notify to the Commission, by 31 December 2023"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2030-12-31",
+   "date_type": "absolute",
+   "date_text": "to achieve at least the equivalent of energy savings in the buildings covered by paragraph 1 by 31 December 2030",
+   "applies_to": "Member States applying the alternative approach under Art. 6(6): equivalent savings in public-body buildings",
+   "evidence": {
+    "provision": "Art. 6(6), final subparagraph",
+    "quote": "to achieve at least the equivalent of energy savings in the buildings covered by paragraph 1 by 31 December 2030"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2040",
+   "date_type": "absolute",
+   "date_text": "the renovation to nearly zero-energy building shall be achieved at the latest by 2040",
+   "applies_to": "Buildings covered by a renovation passport under the alternative approach of Art. 6(6)(a)",
+   "evidence": {
+    "provision": "Art. 6(6)(a)",
+    "quote": "shall be achieved at the latest by 2040"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2025-05-15",
+   "date_type": "absolute",
+   "date_text": "By 15 May 2025, the Commission shall assess the available data on the energy efficiency of data centres",
+   "applies_to": "Commission assessment of data centre energy efficiency data and report to Parliament and Council",
+   "evidence": {
+    "provision": "Art. 12(5)",
+    "quote": "By 15 May 2025, the Commission shall assess"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2026-10-11",
+   "date_type": "absolute",
+   "date_text": "carry out a first energy audit by 11 October 2026",
+   "applies_to": "Enterprises with average annual energy consumption above 10 TJ that do not implement an energy management system",
+   "evidence": {
+    "provision": "Art. 11(2), third subparagraph",
+    "quote": "carry out a first energy audit by 11 October 2026"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "subsequent energy audits are carried out at least every four years",
+   "applies_to": "Enterprises subject to energy audits under Art. 11(2)",
+   "evidence": {
+    "provision": "Art. 11(2), third subparagraph",
+    "quote": "subsequent energy audits are carried out at least every four years"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2027-10-11",
+   "date_type": "absolute",
+   "date_text": "have an energy management system in place at the latest by 11 October 2027",
+   "applies_to": "Enterprises with average annual energy consumption above 85 TJ",
+   "evidence": {
+    "provision": "Art. 11(1), second subparagraph",
+    "quote": "have an energy management system in place at the latest by 11 October 2027"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2027-10-11",
+   "date_type": "absolute",
+   "date_text": "By 11 October 2027, the Commission shall carry out an assessment of the thresholds set out in paragraph 1",
+   "applies_to": "Commission assessment of the Art. 3(1) investment value thresholds",
+   "evidence": {
+    "provision": "Art. 3(2)",
+    "quote": "By 11 October 2027, the Commission shall carry out an assessment of the thresholds set out in paragraph 1"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2028-10-11",
+   "date_type": "absolute",
+   "date_text": "The Commission shall, by 11 October 2028, submit a report to the European Parliament and to the Council",
+   "applies_to": "Commission report on the Art. 3(1) thresholds",
+   "evidence": {
+    "provision": "Art. 3(2)",
+    "quote": "by 11 October 2028, submit a report to the European Parliament and to the Council"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2026-12-31",
+   "date_type": "absolute",
+   "date_text": "The Commission shall assess by 31 December 2026 any methodological changes in the data reported",
+   "applies_to": "Commission assessment of methodological changes and possible adjustment of the 2030 targets",
+   "evidence": {
+    "provision": "Art. 4(7)",
+    "quote": "The Commission shall assess by 31 December 2026"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "additional measures are implemented within one year of the date of receipt of the Commission’s assessment",
+   "depends_on": "receipt of the Commission’s assessment pursuant to Article 29(1) and (3) of Regulation (EU) 2018/1999",
+   "applies_to": "Member States above their indicative trajectories for final energy consumption: additional measures",
+   "offset_value": 1,
+   "offset_unit": "years",
+   "evidence": {
+    "provision": "Art. 4(6)",
+    "quote": "within one year of the date of receipt of the Commission’s assessment"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "Member States shall, on an annual basis, publish the energy savings achieved by each obligated party",
+   "applies_to": "Member States: annual publication of energy savings by obligated party under the energy efficiency obligation scheme",
+   "evidence": {
+    "provision": "Art. 9(12)",
+    "quote": "on an annual basis, publish the energy savings achieved by each obligated party"
+   }
+  },
+  {
+   "event": "signed",
+   "date": "2023-09-13",
+   "date_type": "absolute",
+   "date_text": "Done at Strasbourg, 13 September 2023.",
+   "applies_to": "Directive as a whole",
+   "evidence": {
+    "provision": "Signature block after Art. 40",
+    "quote": "Done at Strasbourg, 13 September 2023."
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2023-10-10",
+   "date_type": "relative",
+   "date_text": "on the twentieth day following that of its publication in the Official Journal of the European Union",
+   "anchor": "publication in the Official Journal of the European Union",
+   "applies_to": "Directive as a whole",
+   "offset_value": 20,
+   "offset_unit": "days",
+   "anchor_event": "published",
+   "evidence": {
+    "provision": "Art. 39, first paragraph",
+    "quote": "on the twentieth day following that of its publication in the Official Journal of the European Union"
+   },
+   "date_computed_from": "published 2023-09-20 (text) + 20 days"
+  },
+  {
+   "event": "application",
+   "date": "2025-10-12",
+   "date_type": "absolute",
+   "date_text": "shall apply from 12 October 2025",
+   "applies_to": "Articles 13 to 20 and Annexes II, VIII, IX, XII, XIII and XIV",
+   "evidence": {
+    "provision": "Art. 39, second paragraph",
+    "quote": "Articles 13, 14, 15, 16, 17, 18, 19 and 20 and Annexes II, VIII, IX, XII, XIII and XIV shall apply from 12 October 2025."
+   }
+  },
+  {
+   "event": "application",
+   "date": "2024-06-30",
+   "date_type": "absolute",
+   "date_text": "Article 37 shall apply from 30 June 2024.",
+   "applies_to": "Amendment to Regulation (EU) 2023/955 (Art. 37)",
+   "evidence": {
+    "provision": "Art. 39, second paragraph",
+    "quote": "Article 37 shall apply from 30 June 2024."
+   }
+  },
+  {
+   "event": "repealed",
+   "date": "2025-10-12",
+   "date_type": "absolute",
+   "date_text": "is repealed with effect from 12 October 2025",
+   "applies_to": "Directive 2012/27/EU, as amended",
+   "evidence": {
+    "provision": "Art. 38, first paragraph",
+    "quote": "is repealed with effect from 12 October 2025"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2025-10-11",
+   "date_type": "absolute",
+   "date_text": "by 11 October 2025",
+   "applies_to": "Transposition of Articles 1 to 3, 4, 5 to 11, 21 to 25, 26(1), (2), (4) to (14), 27, 28(1) to (5), 29 to 32 and Annexes I, III to VII, X, XI and XV",
+   "evidence": {
+    "provision": "Art. 36(1), first subparagraph",
+    "quote": "Annexes I, III to VII, X, XI and XV by 11 October 2025"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2025-10-11",
+   "date_type": "absolute",
+   "date_text": "by 11 October 2025 notify the Commission of those rules and of those measures",
+   "applies_to": "National rules on penalties for infringements",
+   "evidence": {
+    "provision": "Art. 32",
+    "quote": "Member States shall by 11 October 2025 notify the Commission of those rules"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2027-01-01",
+   "date_type": "absolute",
+   "date_text": "by 1 January 2027",
+   "applies_to": "Meters and heat cost allocators not remotely readable that are already installed",
+   "evidence": {
+    "provision": "Art. 16(2)",
+    "quote": "shall be rendered remotely readable or replaced with remotely readable devices by 1 January 2027"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2024-10-11",
+   "date_type": "absolute",
+   "date_text": "By 11 October 2024, the Commission shall assess",
+   "applies_to": "Commission assessment of whether energy efficiency is covered by existing partnerships",
+   "evidence": {
+    "provision": "Art. 23(1), first subparagraph",
+    "quote": "By 11 October 2024, the Commission shall assess whether energy efficiency is covered by existing partnerships."
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2027-12-31",
+   "date_type": "absolute",
+   "date_text": "until 31 December 2027",
+   "applies_to": "District heating and cooling efficiency criteria in Art. 26(1)(a)",
+   "evidence": {
+    "provision": "Art. 26(1)(a)",
+    "quote": "until 31 December 2027"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2028-01-01",
+   "date_type": "absolute",
+   "date_text": "from 1 January 2028",
+   "applies_to": "District heating and cooling efficiency criteria in Art. 26(1)(b)",
+   "evidence": {
+    "provision": "Art. 26(1)(b)",
+    "quote": "from 1 January 2028"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2035-01-01",
+   "date_type": "absolute",
+   "date_text": "from 1 January 2035",
+   "applies_to": "District heating and cooling efficiency criteria in Art. 26(1)(c)",
+   "evidence": {
+    "provision": "Art. 26(1)(c)",
+    "quote": "from 1 January 2035"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2040-01-01",
+   "date_type": "absolute",
+   "date_text": "from 1 January 2040",
+   "applies_to": "District heating and cooling efficiency criteria in Art. 26(1)(d)",
+   "evidence": {
+    "provision": "Art. 26(1)(d)",
+    "quote": "from 1 January 2040"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2045-01-01",
+   "date_type": "absolute",
+   "date_text": "from 1 January 2045",
+   "applies_to": "District heating and cooling efficiency criteria in Art. 26(1)(e)",
+   "evidence": {
+    "provision": "Art. 26(1)(e)",
+    "quote": "from 1 January 2045"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2050-01-01",
+   "date_type": "absolute",
+   "date_text": "from 1 January 2050",
+   "applies_to": "District heating and cooling efficiency criteria in Art. 26(1)(f)",
+   "evidence": {
+    "provision": "Art. 26(1)(f)",
+    "quote": "from 1 January 2050"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2025-12-31",
+   "date_type": "absolute",
+   "date_text": "until 31 December 2025: 200 grams/kWh",
+   "applies_to": "Alternative GHG emissions criterion per unit of heat or cold, Art. 26(2)(a)",
+   "evidence": {
+    "provision": "Art. 26(2)(a)",
+    "quote": "until 31 December 2025: 200 grams/kWh"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2026-01-01",
+   "date_type": "absolute",
+   "date_text": "from 1 January 2026: 150 grams/kWh",
+   "applies_to": "Alternative GHG emissions criterion, Art. 26(2)(b)",
+   "evidence": {
+    "provision": "Art. 26(2)(b)",
+    "quote": "from 1 January 2026: 150 grams/kWh"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2035-01-01",
+   "date_type": "absolute",
+   "date_text": "from 1 January 2035: 100 grams/kWh",
+   "applies_to": "Alternative GHG emissions criterion, Art. 26(2)(c)",
+   "evidence": {
+    "provision": "Art. 26(2)(c)",
+    "quote": "from 1 January 2035: 100 grams/kWh"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2045-01-01",
+   "date_type": "absolute",
+   "date_text": "from 1 January 2045: 50 grams/kWh",
+   "applies_to": "Alternative GHG emissions criterion, Art. 26(2)(d)",
+   "evidence": {
+    "provision": "Art. 26(2)(d)",
+    "quote": "from 1 January 2045: 50 grams/kWh"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2050-01-01",
+   "date_type": "absolute",
+   "date_text": "from 1 January 2050: 0 grams/kWh",
+   "applies_to": "Alternative GHG emissions criterion, Art. 26(2)(e)",
+   "evidence": {
+    "provision": "Art. 26(2)(e)",
+    "quote": "from 1 January 2050: 0 grams/kWh"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2024-01-11",
+   "date_type": "absolute",
+   "date_text": "by 11 January 2024",
+   "applies_to": "Member States choosing to apply GHG criteria per period (Art. 26(3))",
+   "evidence": {
+    "provision": "Art. 26(3), first sentence",
+    "quote": "they shall notify the Commission by 11 January 2024"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "at least six months before the beginning of the relevant periods referred to in paragraph 2, points (b) to (e)",
+   "anchor": "beginning of the relevant periods referred to in Art. 26(2), points (b) to (e)",
+   "applies_to": "Notification by Member States choosing GHG criteria per period",
+   "offset_value": -6,
+   "offset_unit": "months",
+   "anchor_event": "phase_in_step",
+   "evidence": {
+    "provision": "Art. 26(3), second sentence",
+    "quote": "at least six months before the beginning of the relevant periods"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2030",
+   "date_type": "absolute",
+   "date_text": "if built or substantially refurbished until 2030",
+   "applies_to": "New heat sources in district heating and cooling systems: no fossil fuels other than natural gas",
+   "evidence": {
+    "provision": "Art. 26(4)(b)",
+    "quote": "if built or substantially refurbished until 2030"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2025-01-01",
+   "date_type": "recurring",
+   "date_text": "as from 1 January 2025, and every five years thereafter",
+   "applies_to": "Operators of existing district heating and cooling systems above 5 MW not meeting Art. 26(1)(b) to (e): plan to be prepared and approved",
+   "evidence": {
+    "provision": "Art. 26(5), first sentence",
+    "quote": "as from 1 January 2025, and every five years thereafter"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "within three months of the date of taking that decision",
+   "depends_on": "Member State decision to exempt an individual installation from the Art. 26(9) permit criteria",
+   "applies_to": "Reasoned decision to the Commission on exempted installations",
+   "evidence": {
+    "provision": "Art. 26(10)",
+    "quote": "submit a reasoned decision to the Commission within three months of the date of taking that decision"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2024-10-11",
+   "date_type": "absolute",
+   "date_text": "By 11 October 2024, the Commission shall",
+   "applies_to": "Commission measures on professions training and a single point of access platform",
+   "evidence": {
+    "provision": "Art. 28(3)",
+    "quote": "By 11 October 2024, the Commission shall:"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2024-12-31",
+   "date_type": "recurring",
+   "date_text": "By 31 December 2024 and at least every four years thereafter",
+   "applies_to": "Member State assessment of certification and qualification schemes",
+   "evidence": {
+    "provision": "Art. 28(6), first sentence",
+    "quote": "By 31 December 2024 and at least every four years thereafter"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2024-03-30",
+   "date_type": "absolute",
+   "date_text": "by 30 March 2024",
+   "applies_to": "Commission report on energy efficiency public funding and a Union-level mechanism",
+   "evidence": {
+    "provision": "Art. 30(16), second subparagraph",
+    "quote": "the Commission shall submit by 30 March 2024 a report"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2024-03-15",
+   "date_type": "absolute",
+   "date_text": "by 15 March 2024",
+   "applies_to": "Commission guidance on accessing and aggregating data on energy efficiency lending products",
+   "evidence": {
+    "provision": "Art. 30(18), second subparagraph",
+    "quote": "the Commission shall by 15 March 2024 provide guidance to Member States"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2024-12-31",
+   "date_type": "absolute",
+   "date_text": "By 31 December 2024, the Commission shall provide guidance",
+   "applies_to": "Commission guidance on unlocking private investment",
+   "evidence": {
+    "provision": "Art. 30(10), first subparagraph",
+    "quote": "By 31 December 2024, the Commission shall provide guidance"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2025-03-15",
+   "date_type": "recurring",
+   "date_text": "by 15 March 2025 and every two years thereafter",
+   "applies_to": "Member State reporting of energy efficiency public investment and lending data",
+   "evidence": {
+    "provision": "Art. 30(17), first subparagraph",
+    "quote": "Member States shall report to the Commission by 15 March 2025 and every two years thereafter"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2026-12-25",
+   "date_type": "recurring",
+   "date_text": "By 25 December 2026 and every four years thereafter",
+   "applies_to": "Commission revision of default primary energy coefficients",
+   "evidence": {
+    "provision": "Art. 31(7)",
+    "quote": "By 25 December 2026 and every four years thereafter"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2023-12-31",
+   "date_type": "absolute",
+   "date_text": "by 31 December 2023",
+   "applies_to": "First delegated act establishing a common Union scheme for rating data centre sustainability",
+   "evidence": {
+    "provision": "Art. 33(3)",
+    "quote": "The Commission shall adopt the first such delegated act by 31 December 2023."
+   }
+  },
+  {
+   "event": "application",
+   "date": "2023-10-10",
+   "date_type": "absolute",
+   "date_text": "for a period of five years from 10 October 2023",
+   "applies_to": "Commission delegated powers under Art. 33",
+   "evidence": {
+    "provision": "Art. 34(2), first sentence",
+    "quote": "for a period of five years from 10 October 2023"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "not later than nine months before the end of the five-year period",
+   "depends_on": "End of the five-year delegation period under Art. 34(2)",
+   "applies_to": "Commission report on the delegation of power",
+   "evidence": {
+    "provision": "Art. 34(2), second sentence",
+    "quote": "not later than nine months before the end of the five-year period"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2021-01-01",
+   "date_type": "absolute",
+   "date_text": "By 1 January 2021",
+   "applies_to": "Commission report on energy efficiency potential in energy conversion, transmission and storage",
+   "evidence": {
+    "provision": "Art. 35(4)",
+    "quote": "By 1 January 2021, the Commission shall submit a report"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2021-12-31",
+   "date_type": "absolute",
+   "date_text": "By 31 December 2021",
+   "applies_to": "Commission assessment and report on metering, billing and consumer information for natural gas",
+   "evidence": {
+    "provision": "Art. 35(5)",
+    "quote": "By 31 December 2021, the Commission shall"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2022-10-31",
+   "date_type": "absolute",
+   "date_text": "By 31 October 2022",
+   "applies_to": "Commission assessment of 2020 headline energy efficiency targets",
+   "evidence": {
+    "provision": "Art. 35(6)",
+    "quote": "By 31 October 2022, the Commission shall assess"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2025-10-31",
+   "date_type": "recurring",
+   "date_text": "By 31 October 2025 and every four years thereafter",
+   "applies_to": "Commission evaluation of heating and cooling measures and report",
+   "evidence": {
+    "provision": "Art. 35(2), first subparagraph",
+    "quote": "By 31 October 2025 and every four years thereafter, the Commission shall evaluate"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "before 30 April each year",
+   "applies_to": "Member State statistics on cogeneration, district heating and cooling",
+   "evidence": {
+    "provision": "Art. 35(3)",
+    "quote": "before 30 April each year"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2027-02-28",
+   "date_type": "recurring",
+   "date_text": "By 28 February 2027 and every five years thereafter",
+   "applies_to": "Commission evaluation of the implementation of this Directive and report",
+   "evidence": {
+    "provision": "Art. 35(7), first subparagraph",
+    "quote": "By 28 February 2027 and every five years thereafter"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2032-10-31",
+   "date_type": "absolute",
+   "date_text": "By 31 October 2032",
+   "applies_to": "Commission assessment of 2030 headline energy efficiency targets",
+   "evidence": {
+    "provision": "Art. 35(8)",
+    "quote": "By 31 October 2032, the Commission shall assess"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2021-12-31",
+   "date_type": "absolute",
+   "date_text": "Until 31 December 2021",
+   "applies_to": "Billing or consumption information for heating, cooling and domestic hot water: at least quarterly where remotely readable devices installed (Annex IX, point 2)",
+   "evidence": {
+    "provision": "Annex IX, point 2, first subparagraph",
+    "quote": "Until 31 December 2021, where remotely readable meters or heat cost allocators have been installed"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2022-01-01",
+   "date_type": "absolute",
+   "date_text": "From 1 January 2022, where remotely readable meters or heat cost allocators have been installed",
+   "applies_to": "Billing or consumption information for heating, cooling and domestic hot water: at least monthly where remotely readable devices installed (Annex IX, point 2)",
+   "evidence": {
+    "provision": "Annex IX, point 2, second subparagraph",
+    "quote": "From 1 January 2022, where remotely readable meters or heat cost allocators have been installed"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2034-01-01",
+   "date_type": "absolute",
+   "date_text": "until 1 January 2034",
+   "applies_to": "Cogeneration units in operation before 10 October 2023 that derogate from the 270 gCO2 per kWh threshold",
+   "evidence": {
+    "provision": "Annex III, point (a), fourth indent",
+    "quote": "may derogate from this requirement until 1 January 2034"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2024-01-01",
+   "date_type": "absolute",
+   "date_text": "newly implemented as from 1 January 2024 regarding the use of direct fossil fuel combustion",
+   "applies_to": "Energy savings from policy measures on direct fossil fuel combustion no longer countable toward Art. 8(1)(b) obligation",
+   "evidence": {
+    "provision": "Annex V, point 2(i)",
+    "quote": "newly implemented as from 1 January 2024 regarding the use of direct fossil fuel combustion"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2026-01-01",
+   "date_type": "absolute",
+   "date_text": "newly implemented as from 1 January 2026",
+   "applies_to": "Policy measures on direct combustion of fossil fuel technologies and their subsidies in residential buildings excluded from permitted policies (Annex V, point 2(h)(i) and (ii))",
+   "evidence": {
+    "provision": "Annex V, point 2(h)(i)",
+    "quote": "newly implemented as from 1 January 2026"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2030-12-31",
+   "date_type": "absolute",
+   "date_text": "until 31 December 2030",
+   "applies_to": "Exemption for energy savings from direct fossil fuel combustion in energy-intensive industrial enterprises (Annex V, point 2(j))",
+   "evidence": {
+    "provision": "Annex V, point 2(j)",
+    "quote": "until 31 December 2030"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "capital_investment",
+   "variable_text": "value of planning, policy and major investment decisions",
+   "operator": ">",
+   "value": 100000000,
+   "value_text": "of a value of more than EUR 100 000 000 each",
+   "unit": "EUR",
+   "currency": "EUR",
+   "measurement": "per individual planning, policy or major investment decision ('each')",
+   "level": "other",
+   "trigger": "scope_definition",
+   "consequence": "Member States must ensure energy efficiency solutions are assessed in such decisions for energy systems and for non-energy sectors with an impact on energy consumption",
+   "conditions": "applies to the sectors listed in Art. 3(1)(a) and (b)",
+   "evidence": {
+    "provision": "Art. 3(1)",
+    "quote": "of a value of more than EUR 100 000 000 each"
+   }
+  },
+  {
+   "variable": "capital_investment",
+   "variable_text": "value of major investment decisions for transport infrastructure projects",
+   "operator": ">",
+   "value": 175000000,
+   "value_text": "EUR 175 000 000 for transport infrastructure projects",
+   "unit": "EUR",
+   "currency": "EUR",
+   "measurement": "per individual transport infrastructure project decision",
+   "level": "other",
+   "trigger": "scope_definition",
+   "consequence": "Member States must ensure energy efficiency solutions are assessed in transport infrastructure decisions above this value",
+   "conditions": "applies to the sectors listed in Art. 3(1)(a) and (b)",
+   "evidence": {
+    "provision": "Art. 3(1)",
+    "quote": "EUR 175 000 000 for transport infrastructure projects"
+   }
+  },
+  {
+   "variable": "population",
+   "variable_text": "local administrative units with a population of less than 50 000",
+   "operator": "<",
+   "value": 50000,
+   "value_text": "a population of less than 50 000",
+   "unit": "inhabitants",
+   "measurement": "population of the local administrative unit",
+   "level": "jurisdiction",
+   "trigger": "exclusion",
+   "consequence": "energy consumption of public bodies in such units is excluded from the Art. 5(1) reduction obligation until 31 December 2026",
+   "conditions": "applies only until 31 December 2026",
+   "evidence": {
+    "provision": "Art. 5(3)",
+    "quote": "the energy consumption of public bodies in local administrative units with a population of less than 50 000"
+   }
+  },
+  {
+   "variable": "population",
+   "variable_text": "local administrative units with a population of less than 5 000 inhabitants",
+   "operator": "<",
+   "value": 5000,
+   "value_text": "a population of less than 5 000 inhabitants",
+   "unit": "inhabitants",
+   "measurement": "population of the local administrative unit",
+   "level": "jurisdiction",
+   "trigger": "exclusion",
+   "consequence": "energy consumption of public bodies in such units is excluded from the Art. 5(1) reduction obligation until 31 December 2029",
+   "conditions": "applies only until 31 December 2029",
+   "evidence": {
+    "provision": "Art. 5(3)",
+    "quote": "until 31 December 2029, the energy consumption of public bodies in local administrative units with a population of less than 5 000 inhabitants"
+   }
+  },
+  {
+   "variable": "floor_area",
+   "variable_text": "buildings which have a total useful floor area of over 250 m^2",
+   "operator": ">",
+   "value": 250,
+   "value_text": "over 250 m^2",
+   "unit": "m^2",
+   "measurement": "total useful floor area of each building",
+   "level": "facility",
+   "trigger": "scope_definition",
+   "consequence": "floor area of such buildings is counted in the 3 % annual renovation requirement for public-body buildings",
+   "conditions": "buildings owned by public bodies that, on 1 January 2024, are not nearly zero-energy buildings",
+   "evidence": {
+    "provision": "Art. 6(1)",
+    "quote": "buildings which have a total useful floor area of over 250 m^2"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "share of total floor area of buildings renovated in a given year",
+   "operator": ">",
+   "value": 3,
+   "value_text": "more than 3 % of the total floor area of its buildings",
+   "unit": "%",
+   "measurement": "annual renovation of total floor area of the Member State's buildings in accordance with Art. 6(1)",
+   "level": "other",
+   "trigger": "benefit",
+   "consequence": "surplus above the threshold may be counted towards the annual renovation rate of later years",
+   "conditions": "surplus counted for the following three years for renovations until 31 December 2026, and for the following two years for renovations from 1 January 2027",
+   "evidence": {
+    "provision": "Art. 6(3)",
+    "quote": "renovates more than 3 % of the total floor area of its buildings in accordance with paragraph 1 in any year until 31 December 2026"
+   }
+  },
+  {
+   "variable": "floor_area",
+   "variable_text": "heated and/or cooled buildings that have a total useful floor area of more than 250 m^2",
+   "operator": ">",
+   "value": 250,
+   "value_text": "have a total useful floor area of more than 250 m^2",
+   "unit": "m^2",
+   "measurement": "total useful floor area of each building",
+   "level": "facility",
+   "trigger": "scope_definition",
+   "consequence": "such buildings must be included in the inventory that Member States establish and update",
+   "conditions": "heated and/or cooled buildings owned or occupied by public bodies",
+   "evidence": {
+    "provision": "Art. 6(5)",
+    "quote": "have a total useful floor area of more than 250 m^2"
+   }
+  },
+  {
+   "variable": "transaction_value",
+   "variable_text": "public contracts and concessions with a value equal to or greater than the thresholds in Directives 2014/23/EU, 2014/24/EU and 2014/25/EU",
+   "operator": ">=",
+   "value": null,
+   "value_text": "with a value equal to or greater than the thresholds laid down in Article 8 of Directive 2014/23/EU, Article 4 of Directive 2014/24/EU and Article 15 of Directive 2014/25/EU",
+   "unit": "",
+   "measurement": "contract value as set in the cited Directives",
+   "level": "other",
+   "trigger": "scope_definition",
+   "consequence": "contracting authorities and entities must purchase only products, services, buildings and works with high energy-efficiency performance (Annex IV)",
+   "conditions": "unless not technically feasible; procurement of armed forces and military equipment is subject to Art. 7(2)",
+   "depends_on": "thresholds in Article 8 of Directive 2014/23/EU, Article 4 of Directive 2014/24/EU and Article 15 of Directive 2014/25/EU",
+   "evidence": {
+    "provision": "Art. 7(1)",
+    "quote": "with a value equal to or greater than the thresholds laid down in Article 8 of Directive 2014/23/EU"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "share of required savings counted through options in Art. 8(8) for the obligation period under Art. 8(1)(a)",
+   "operator": "<=",
+   "value": 25,
+   "value_text": "no more than 25 % of the amount of energy savings referred to in paragraph 1, first subparagraph, point (a)",
+   "unit": "%",
+   "measurement": "combined options under Art. 8(8) relative to required savings under Art. 8(1)(a)",
+   "level": "jurisdiction",
+   "trigger": "cap",
+   "consequence": "options under Art. 8(8) taken together may account for no more than this share of the required savings",
+   "conditions": "applies to the obligation period referred to in Art. 8(1)(a)",
+   "evidence": {
+    "provision": "Art. 8(9)(a)",
+    "quote": "shall amount to no more than 25 % of the amount of energy savings referred to in paragraph 1, first subparagraph, point (a)"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "reduction of savings calculated under Art. 8(6) and (7) from options in Art. 8(8)",
+   "operator": "<=",
+   "value": 35,
+   "value_text": "shall not lead to a reduction of more than 35 %",
+   "unit": "%",
+   "measurement": "reduction of the calculated savings amount resulting from the options chosen under Art. 8(8)",
+   "level": "jurisdiction",
+   "trigger": "cap",
+   "consequence": "options under Art. 8(8) may not reduce the calculated savings amount by more than this share",
+   "conditions": "applies to the obligation period referred to in Art. 8(1)(b)(i)",
+   "evidence": {
+    "provision": "Art. 8(9)(b)",
+    "quote": "shall not lead to a reduction of more than 35 %"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "surplus of cumulative energy savings carried into the following obligation period",
+   "operator": "<=",
+   "value": 10,
+   "value_text": "no more than 10 % of such surplus",
+   "unit": "%",
+   "measurement": "share of the surplus above the required cumulative savings at the end of an obligation period",
+   "level": "jurisdiction",
+   "trigger": "cap",
+   "consequence": "eligible surplus up to this share may be carried into the following obligation period without increasing the target",
+   "conditions": "applies where savings above the required level are achieved by the end of an obligation period",
+   "evidence": {
+    "provision": "Art. 8(13)",
+    "quote": "carry the eligible amount of no more than 10 % of such surplus"
+   }
+  },
+  {
+   "variable": "energy_consumption",
+   "variable_text": "average annual consumption higher than 85 TJ of energy over the previous three years",
+   "operator": ">",
+   "value": 85,
+   "value_text": "average annual consumption higher than 85 TJ of energy over the previous three years",
+   "unit": "TJ",
+   "measurement": "average annual energy consumption over the previous three years, all energy carriers taken together",
+   "level": "entity",
+   "trigger": "obligation",
+   "consequence": "enterprise must implement an energy management system certified by an independent body",
+   "conditions": "applies to enterprises; Member States must ensure compliance by 11 October 2027",
+   "evidence": {
+    "provision": "Art. 11(1)",
+    "quote": "average annual consumption higher than 85 TJ of energy over the previous three years"
+   }
+  },
+  {
+   "variable": "energy_consumption",
+   "variable_text": "average annual consumption higher than 10 TJ of energy over the previous three years",
+   "operator": ">",
+   "value": 10,
+   "value_text": "average annual consumption higher than 10 TJ of energy over the previous three years",
+   "unit": "TJ",
+   "measurement": "average annual energy consumption over the previous three years, all energy carriers taken together",
+   "level": "entity",
+   "trigger": "obligation",
+   "consequence": "enterprise is subject to an energy audit",
+   "conditions": "applies to enterprises which do not implement an energy management system",
+   "evidence": {
+    "provision": "Art. 11(2)",
+    "quote": "average annual consumption higher than 10 TJ of energy over the previous three years"
+   }
+  },
+  {
+   "variable": "power_capacity",
+   "variable_text": "data centres with a power demand of the installed information technology (IT) of at least 500kW",
+   "operator": ">=",
+   "value": 500,
+   "value_text": "with a power demand of the installed information technology (IT) of at least 500kW",
+   "unit": "kW",
+   "measurement": "power demand of the installed IT",
+   "level": "facility",
+   "trigger": "obligation",
+   "consequence": "owners and operators must make the information in Annex VII publicly available each year",
+   "conditions": "data centres in the Member State's territory; excludes data centres used exclusively for defence and civil protection (Art. 12(2))",
+   "evidence": {
+    "provision": "Art. 12(1)",
+    "quote": "with a power demand of the installed information technology (IT) of at least 500kW"
+   }
+  },
+  {
+   "variable": "power_capacity",
+   "variable_text": "data centres with a power demand of the installed IT equal to or greater than 1 MW",
+   "operator": ">=",
+   "value": 1,
+   "value_text": "with a power demand of the installed IT equal to or greater than 1 MW",
+   "unit": "MW",
+   "measurement": "power demand of the installed IT",
+   "level": "facility",
+   "trigger": "scope_definition",
+   "consequence": "Member States encourage owners and operators to take into account the best practices of the European Code of Conduct on Data Centre Energy Efficiency",
+   "conditions": "data centres in the Member State's territory",
+   "evidence": {
+    "provision": "Art. 12(4)",
+    "quote": "with a power demand of the installed IT equal to or greater than 1 MW"
+   }
+  },
+  {
+   "variable": "employees",
+   "variable_text": "enterprises as defined in Article 2(1) of the Annex to Commission Recommendation 2003/361/EC",
+   "operator": "<",
+   "value": null,
+   "value_text": "enterprises as defined in Article 2(1) of the Annex to Commission Recommendation 2003/361/EC",
+   "unit": "",
+   "measurement": "as defined in the cited Recommendation; the numeric criteria are not stated in this text",
+   "level": "entity",
+   "trigger": "scope_definition",
+   "consequence": "defines SMEs for SME-specific programmes and support (Art. 11(6) to (7))",
+   "conditions": "size class defined by reference to another act",
+   "depends_on": "Article 2(1) of the Annex to Commission Recommendation 2003/361/EC",
+   "evidence": {
+    "provision": "Art. 2(30)",
+    "quote": "enterprises as defined in Article 2(1) of the Annex to Commission Recommendation 2003/361/EC"
+   }
+  },
+  {
+   "variable": "employees",
+   "variable_text": "enterprise as defined in Article 2(3) of the Annex to Recommendation 2003/361/EC",
+   "operator": "<",
+   "value": null,
+   "value_text": "an enterprise as defined in Article 2(3) of the Annex to Recommendation 2003/361/EC",
+   "unit": "",
+   "measurement": "as defined in the cited Recommendation; the numeric criteria are not stated in this text",
+   "level": "entity",
+   "trigger": "scope_definition",
+   "consequence": "defines microenterprises (referred to in Art. 9(5))",
+   "conditions": "size class defined by reference to another act",
+   "depends_on": "Article 2(3) of the Annex to Recommendation 2003/361/EC",
+   "evidence": {
+    "provision": "Art. 2(31)",
+    "quote": "an enterprise as defined in Article 2(3) of the Annex to Recommendation 2003/361/EC"
+   }
+  },
+  {
+   "variable": "power_capacity",
+   "variable_text": "cogeneration unit with installed capacity below 1 MWe",
+   "operator": "<",
+   "value": 1,
+   "value_text": "a cogeneration unit with installed capacity below 1 MWe",
+   "unit": "MWe",
+   "measurement": "installed capacity of the cogeneration unit",
+   "level": "facility",
+   "trigger": "scope_definition",
+   "consequence": "defines small-scale cogeneration unit",
+   "evidence": {
+    "provision": "Art. 2(44)",
+    "quote": "a cogeneration unit with installed capacity below 1 MWe"
+   }
+  },
+  {
+   "variable": "power_capacity",
+   "variable_text": "cogeneration unit with a maximum capacity below 50 kWe",
+   "operator": "<",
+   "value": 50,
+   "value_text": "a cogeneration unit with a maximum capacity below 50 kWe",
+   "unit": "kWe",
+   "measurement": "maximum capacity of the cogeneration unit",
+   "level": "facility",
+   "trigger": "scope_definition",
+   "consequence": "defines micro-cogeneration unit",
+   "evidence": {
+    "provision": "Art. 2(45)",
+    "quote": "a cogeneration unit with a maximum capacity below 50 kWe"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "refurbishment cost as a share of the investment cost for a new comparable unit",
+   "operator": ">",
+   "value": 50,
+   "value_text": "a refurbishment the cost of which exceeds 50 % of the investment cost for a new comparable unit",
+   "unit": "%",
+   "measurement": "cost of refurbishment relative to investment cost for a new comparable unit",
+   "level": "facility",
+   "trigger": "scope_definition",
+   "consequence": "defines substantial refurbishment",
+   "evidence": {
+    "provision": "Art. 2(50)",
+    "quote": "a refurbishment the cost of which exceeds 50 % of the investment cost for a new comparable unit"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "share of renewable energy in district heating and cooling supply (efficient system criterion)",
+   "operator": ">=",
+   "value": 50,
+   "value_text": "at least 50 % renewable energy (until 31 December 2027)",
+   "unit": "%",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Meets one criterion for an efficient district heating and cooling system",
+   "conditions": "Alternative to waste heat, cogenerated heat or combination criteria in the same point; applies until 31 December 2027",
+   "evidence": {
+    "provision": "Art. 26(1), point (a)",
+    "quote": "until 31 December 2027, a system using at least 50 % renewable energy, 50 % waste heat, 75 % cogenerated heat or 50 % of a combination of such energy and heat"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "share of renewable energy in district heating and cooling supply (efficient system criterion)",
+   "operator": ">=",
+   "value": 50,
+   "value_text": "at least 50 % renewable energy (from 1 January 2028)",
+   "unit": "%",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Meets one criterion for an efficient district heating and cooling system",
+   "conditions": "Alternative criterion; applies from 1 January 2028; a system not meeting points (b) to (e) must prepare a plan under Art. 26(5)",
+   "evidence": {
+    "provision": "Art. 26(1), point (b)",
+    "quote": "from 1 January 2028, a system using at least 50 % renewable energy"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "share of waste heat in district heating and cooling supply (efficient system criterion)",
+   "operator": ">=",
+   "value": 50,
+   "value_text": "at least 50 % waste heat (from 1 January 2028)",
+   "unit": "%",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Meets one criterion for an efficient district heating and cooling system",
+   "conditions": "Alternative criterion; applies from 1 January 2028",
+   "evidence": {
+    "provision": "Art. 26(1), point (b)",
+    "quote": "50 % waste heat, 50 % renewable energy and waste heat, 80 % of high-efficiency cogenerated heat"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "share of renewable energy in combined criterion (minimum)",
+   "operator": ">=",
+   "value": 5,
+   "value_text": "renewable energy share at least 5 % (from 1 January 2028, in combined criterion)",
+   "unit": "%",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Required minimum renewable share within the combined criterion for an efficient district heating and cooling system",
+   "conditions": "Applies together with total share of at least 50 %; from 1 January 2028",
+   "evidence": {
+    "provision": "Art. 26(1), point (b)",
+    "quote": "where the share of renewable energy is at least 5 % and the total share of renewable energy, waste heat or high-efficiency cogenerated heat is at least 50 %"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "total share of renewable energy, waste heat or high-efficiency cogenerated heat",
+   "operator": ">=",
+   "value": 50,
+   "value_text": "total share at least 50 % (from 1 January 2028, in combined criterion)",
+   "unit": "%",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Required total share within the combined criterion for an efficient district heating and cooling system",
+   "conditions": "Applies together with renewable share of at least 5 %; from 1 January 2028",
+   "evidence": {
+    "provision": "Art. 26(1), point (b)",
+    "quote": "the total share of renewable energy, waste heat or high-efficiency cogenerated heat is at least 50 %"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "share of renewable energy in district heating and cooling supply (efficient system criterion)",
+   "operator": ">=",
+   "value": 50,
+   "value_text": "at least 50 % renewable energy (from 1 January 2035)",
+   "unit": "%",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Meets one criterion for an efficient district heating and cooling system",
+   "conditions": "Alternative criterion; applies from 1 January 2035",
+   "evidence": {
+    "provision": "Art. 26(1), point (c)",
+    "quote": "from 1 January 2035, a system using at least 50 % renewable energy"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "share of waste heat in district heating and cooling supply (efficient system criterion)",
+   "operator": ">=",
+   "value": 50,
+   "value_text": "at least 50 % waste heat (from 1 January 2035)",
+   "unit": "%",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Meets one criterion for an efficient district heating and cooling system",
+   "conditions": "Alternative criterion; applies from 1 January 2035",
+   "evidence": {
+    "provision": "Art. 26(1), point (c)",
+    "quote": "a system using at least 50 % renewable energy, 50 % waste heat or 50 % renewable energy and waste heat"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "total share of renewable energy, waste heat or high-efficiency cogenerated heat",
+   "operator": ">=",
+   "value": 80,
+   "value_text": "total share at least 80 % (from 1 January 2035)",
+   "unit": "%",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Meets one criterion for an efficient district heating and cooling system when combined with the 35 % criterion",
+   "conditions": "Must also meet total renewable or waste heat share of at least 35 %; from 1 January 2035",
+   "evidence": {
+    "provision": "Art. 26(1), point (c)",
+    "quote": "the total share of renewable energy, waste heat or high-efficiency cogenerated heat is at least 80 %"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "total share of renewable energy or waste heat",
+   "operator": ">=",
+   "value": 35,
+   "value_text": "total share of renewable energy or waste heat at least 35 % (from 1 January 2035)",
+   "unit": "%",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Required minimum share within the 80 % criterion for an efficient district heating and cooling system",
+   "conditions": "Applies together with total share of at least 80 %; from 1 January 2035",
+   "evidence": {
+    "provision": "Art. 26(1), point (c)",
+    "quote": "the total share of renewable energy or waste heat is at least 35 %"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "share of renewable energy in district heating and cooling supply (efficient system criterion)",
+   "operator": ">=",
+   "value": 75,
+   "value_text": "at least 75 % renewable energy (from 1 January 2040)",
+   "unit": "%",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Meets one criterion for an efficient district heating and cooling system",
+   "conditions": "Alternative criterion; applies from 1 January 2040",
+   "evidence": {
+    "provision": "Art. 26(1), point (d)",
+    "quote": "from 1 January 2040, a system using at least 75 % renewable energy"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "share of waste heat in district heating and cooling supply (efficient system criterion)",
+   "operator": ">=",
+   "value": 75,
+   "value_text": "at least 75 % waste heat (from 1 January 2040)",
+   "unit": "%",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Meets one criterion for an efficient district heating and cooling system",
+   "conditions": "Alternative criterion; applies from 1 January 2040",
+   "evidence": {
+    "provision": "Art. 26(1), point (d)",
+    "quote": "a system using at least 75 % renewable energy, 75 % waste heat or 75 % renewable energy and waste heat"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "total share of renewable energy, waste heat and high-efficiency cogenerated heat",
+   "operator": ">=",
+   "value": 95,
+   "value_text": "total share at least 95 % (from 1 January 2040)",
+   "unit": "%",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Meets one criterion for an efficient district heating and cooling system when combined with the 35 % criterion",
+   "conditions": "Must also meet total renewable or waste heat share of at least 35 %; from 1 January 2040",
+   "evidence": {
+    "provision": "Art. 26(1), point (d)",
+    "quote": "a system using at least 95 % renewable energy, waste heat and high-efficiency cogenerated heat"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "total share of renewable energy or waste heat",
+   "operator": ">=",
+   "value": 35,
+   "value_text": "total share of renewable energy or waste heat at least 35 % (from 1 January 2040)",
+   "unit": "%",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Required minimum share within the 95 % criterion for an efficient district heating and cooling system",
+   "conditions": "Applies together with total share of at least 95 %; from 1 January 2040",
+   "evidence": {
+    "provision": "Art. 26(1), point (d)",
+    "quote": "the total share of renewable energy or waste heat is at least 35 %"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "share of renewable energy in district heating and cooling supply (efficient system criterion)",
+   "operator": ">=",
+   "value": 75,
+   "value_text": "at least 75 % renewable energy (from 1 January 2045)",
+   "unit": "%",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Meets one criterion for an efficient district heating and cooling system",
+   "conditions": "Applies from 1 January 2045",
+   "evidence": {
+    "provision": "Art. 26(1), point (e)",
+    "quote": "from 1 January 2045, a system using at least 75 % renewable energy, 75 % waste heat or 75 % renewable energy and waste heat"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "maximum GHG emissions per unit of heat or cold delivered (alternative criterion)",
+   "operator": "<=",
+   "value": 200,
+   "value_text": "maximum 200 grams/kWh (until 31 December 2025)",
+   "unit": "grams/kWh",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Meets the alternative GHG emissions criterion for an efficient district heating and cooling system",
+   "conditions": "Member State may choose this instead of para 1 criteria; applies to the stated period",
+   "evidence": {
+    "provision": "Art. 26(2), point (a)",
+    "quote": "until 31 December 2025: 200 grams/kWh"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "maximum GHG emissions per unit of heat or cold delivered (alternative criterion)",
+   "operator": "<=",
+   "value": 150,
+   "value_text": "maximum 150 grams/kWh (from 1 January 2026)",
+   "unit": "grams/kWh",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Meets the alternative GHG emissions criterion for an efficient district heating and cooling system",
+   "conditions": "Member State may choose this instead of para 1 criteria; applies from 1 January 2026",
+   "evidence": {
+    "provision": "Art. 26(2), point (b)",
+    "quote": "from 1 January 2026: 150 grams/kWh"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "maximum GHG emissions per unit of heat or cold delivered (alternative criterion)",
+   "operator": "<=",
+   "value": 100,
+   "value_text": "maximum 100 grams/kWh (from 1 January 2035)",
+   "unit": "grams/kWh",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Meets the alternative GHG emissions criterion for an efficient district heating and cooling system",
+   "conditions": "Member State may choose this instead of para 1 criteria; applies from 1 January 2035",
+   "evidence": {
+    "provision": "Art. 26(2), point (c)",
+    "quote": "from 1 January 2035: 100 grams/kWh"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "maximum GHG emissions per unit of heat or cold delivered (alternative criterion)",
+   "operator": "<=",
+   "value": 50,
+   "value_text": "maximum 50 grams/kWh (from 1 January 2045)",
+   "unit": "grams/kWh",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Meets the alternative GHG emissions criterion for an efficient district heating and cooling system",
+   "conditions": "Member State may choose this instead of para 1 criteria; applies from 1 January 2045",
+   "evidence": {
+    "provision": "Art. 26(2), point (d)",
+    "quote": "from 1 January 2045: 50 grams/kWh"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "maximum GHG emissions per unit of heat or cold delivered (alternative criterion)",
+   "operator": "<=",
+   "value": 0,
+   "value_text": "maximum 0 grams/kWh (from 1 January 2050)",
+   "unit": "grams/kWh",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Meets the alternative GHG emissions criterion for an efficient district heating and cooling system",
+   "conditions": "Member State may choose this instead of para 1 criteria; applies from 1 January 2050",
+   "evidence": {
+    "provision": "Art. 26(2), point (e)",
+    "quote": "from 1 January 2050: 0 grams/kWh"
+   }
+  },
+  {
+   "variable": "power_capacity",
+   "variable_text": "existing district heating and cooling systems with a total heat and cold output",
+   "operator": ">",
+   "value": 5,
+   "value_text": "total heat and cold output exceeding 5 MW",
+   "unit": "MW",
+   "measurement": "total heat and cold output",
+   "level": "facility",
+   "trigger": "obligation",
+   "consequence": "Operators must prepare a plan to improve efficiency, reduce losses and increase renewable share, requiring competent authority approval",
+   "conditions": "Applies to existing systems not meeting para 1 points (b) to (e); from 1 January 2025 and every five years thereafter",
+   "evidence": {
+    "provision": "Art. 26(5)",
+    "quote": "operators of all existing district heating and cooling systems with a total heat and cold output exceeding 5 MW"
+   }
+  },
+  {
+   "variable": "power_capacity",
+   "variable_text": "data centres with a total rated energy input",
+   "operator": ">",
+   "value": 1,
+   "value_text": "total rated energy input exceeding 1 MW",
+   "unit": "MW",
+   "measurement": "total rated energy input",
+   "level": "facility",
+   "trigger": "obligation",
+   "consequence": "Must utilise waste heat or other waste heat recovery applications unless shown not technically or economically feasible",
+   "conditions": "Feasibility assessed under Art. 26(7)",
+   "evidence": {
+    "provision": "Art. 26(6)",
+    "quote": "data centres with a total rated energy input exceeding 1 MW utilise the waste heat"
+   }
+  },
+  {
+   "variable": "power_capacity",
+   "variable_text": "thermal electricity generation installation with an average annual total energy input",
+   "operator": ">",
+   "value": 10,
+   "value_text": "average annual total energy input exceeding 10 MW",
+   "unit": "MW",
+   "measurement": "average annual total energy input",
+   "level": "facility",
+   "trigger": "obligation",
+   "consequence": "Installation-level cost-benefit analysis required when newly planned or substantially refurbished",
+   "conditions": "Newly planned or substantially refurbished installations",
+   "evidence": {
+    "provision": "Art. 26(7), point (a)",
+    "quote": "a thermal electricity generation installation with an average annual total energy input exceeding 10 MW"
+   }
+  },
+  {
+   "variable": "power_capacity",
+   "variable_text": "industrial installation with an average annual total energy input",
+   "operator": ">",
+   "value": 8,
+   "value_text": "average annual total energy input exceeding 8 MW",
+   "unit": "MW",
+   "measurement": "average annual total energy input",
+   "level": "facility",
+   "trigger": "obligation",
+   "consequence": "Installation-level cost-benefit analysis required when newly planned or substantially refurbished",
+   "conditions": "Newly planned or substantially refurbished installations",
+   "evidence": {
+    "provision": "Art. 26(7), point (b)",
+    "quote": "an industrial installation with an average annual total energy input exceeding 8 MW"
+   }
+  },
+  {
+   "variable": "power_capacity",
+   "variable_text": "service facility with an annual average total energy input (such as wastewater treatment and LNG facilities)",
+   "operator": ">",
+   "value": 7,
+   "value_text": "annual average total energy input exceeding 7 MW",
+   "unit": "MW",
+   "measurement": "annual average total energy input",
+   "level": "facility",
+   "trigger": "obligation",
+   "consequence": "Installation-level cost-benefit analysis required when newly planned or substantially refurbished",
+   "conditions": "Newly planned or substantially refurbished facilities",
+   "evidence": {
+    "provision": "Art. 26(7), point (c)",
+    "quote": "a service facility with an annual average total energy input exceeding 7 MW"
+   }
+  },
+  {
+   "variable": "power_capacity",
+   "variable_text": "data centre with a total rated energy input",
+   "operator": ">",
+   "value": 1,
+   "value_text": "total rated energy input exceeding 1 MW level",
+   "unit": "MW",
+   "measurement": "total rated energy input",
+   "level": "facility",
+   "trigger": "obligation",
+   "consequence": "Installation-level cost-benefit analysis required when newly planned or substantially refurbished",
+   "conditions": "Newly planned or substantially refurbished data centres",
+   "evidence": {
+    "provision": "Art. 26(7), point (d)",
+    "quote": "a data centre with a total rated energy input exceeding 1 MW level"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "operating hours per year (peak load and back-up electricity generating installations)",
+   "operator": "<",
+   "value": 1500,
+   "value_text": "planned to operate under 1 500 operating hours per year as a rolling average over five years",
+   "unit": "operating hours per year",
+   "measurement": "rolling average over a period of five years",
+   "level": "facility",
+   "trigger": "exemption",
+   "consequence": "May be exempted from the installation-level cost-benefit analysis",
+   "conditions": "Member States may exempt; verification procedure set by Member States",
+   "evidence": {
+    "provision": "Art. 26(8), point (a)",
+    "quote": "which are planned to operate under 1 500 operating hours per year as a rolling average over a period of five years"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "thresholds on available useful waste heat, heat demand or distance between industrial installations and district heating networks",
+   "operator": "=",
+   "value": null,
+   "value_text": "set by Member States",
+   "unit": "",
+   "level": "facility",
+   "trigger": "exemption",
+   "consequence": "Individual installations may be exempted from Art. 26(7), points (c) and (d)",
+   "conditions": "Optional for Member States; exemptions notified to the Commission",
+   "depends_on": "Member State-set thresholds under Art. 26(8)",
+   "evidence": {
+    "provision": "Art. 26(8)",
+    "quote": "Member States may also lay down thresholds, expressed in terms of the amount of available useful waste heat, the demand for heat or the distances between industrial installations and district heating networks"
+   }
+  },
+  {
+   "variable": "population",
+   "variable_text": "municipalities with a total population",
+   "operator": ">",
+   "value": 45000,
+   "value_text": "total population higher than 45 000",
+   "unit": "persons",
+   "measurement": "total population",
+   "level": "jurisdiction",
+   "trigger": "obligation",
+   "consequence": "Regional and local authorities must prepare local heating and cooling plans",
+   "conditions": "Applies at least in such municipalities",
+   "evidence": {
+    "provision": "Art. 25(6)",
+    "quote": "at least in municipalities having a total population higher than 45 000"
+   }
+  },
+  {
+   "variable": "floor_area",
+   "variable_text": "large non-residential buildings with a total useful floor area",
+   "operator": ">",
+   "value": 750,
+   "value_text": "total useful floor area above 750 m^2",
+   "unit": "m^2",
+   "measurement": "total useful floor area",
+   "level": "facility",
+   "trigger": "obligation",
+   "consequence": "Public bodies must assess feasibility of energy performance contracting for renovations",
+   "conditions": "Renovations of large non-residential buildings",
+   "evidence": {
+    "provision": "Art. 29(4)",
+    "quote": "For renovations of large non-residential buildings with a total useful floor area above 750 m^2"
+   }
+  },
+  {
+   "variable": "energy_efficiency",
+   "variable_text": "annual overall efficiency of cogeneration units (types 2, 4 to 8)",
+   "operator": ">=",
+   "value": 75,
+   "value_text": "annual overall efficiency set by Member States at a level of at least 75 %",
+   "unit": "%",
+   "measurement": "annual overall efficiency",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Electricity from cogeneration counted as total annual electricity production of the unit; otherwise power-to-heat formula applies",
+   "conditions": "Applies to cogeneration unit types (2), (4), (5), (6), (7) and (8) in Annex II Part II",
+   "evidence": {
+    "provision": "Annex II, Part I, point (1)(a)",
+    "quote": "with an annual overall efficiency set by Member States at a level of at least 75 %"
+   }
+  },
+  {
+   "variable": "energy_efficiency",
+   "variable_text": "annual overall efficiency of cogeneration units (types 1 and 3)",
+   "operator": ">=",
+   "value": 80,
+   "value_text": "annual overall efficiency set by Member States at a level of at least 80 %",
+   "unit": "%",
+   "measurement": "annual overall efficiency",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Electricity from cogeneration counted as total annual electricity production of the unit; otherwise power-to-heat formula applies",
+   "conditions": "Applies to cogeneration unit types (1) and (3) in Annex II Part II",
+   "evidence": {
+    "provision": "Annex II, Part I, point (1)(b)",
+    "quote": "with an annual overall efficiency set by Member States at a level of at least 80 %"
+   }
+  },
+  {
+   "variable": "energy_efficiency",
+   "variable_text": "primary energy savings of cogeneration production compared with separate production",
+   "operator": ">=",
+   "value": 10,
+   "value_text": "primary energy savings of at least 10 %",
+   "unit": "%",
+   "measurement": "primary energy savings calculated under Annex III point (b)",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Meets the criterion for high-efficiency cogeneration",
+   "conditions": "Compared with the efficiency reference values for separate production of heat and electricity",
+   "evidence": {
+    "provision": "Annex III, point (a)",
+    "quote": "shall provide primary energy savings calculated in accordance with point (b) of at least 10 % compared with the references for separate production of heat and electricity"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "direct CO2 emissions from fossil-fuelled cogeneration production per kWh of energy output",
+   "operator": "<",
+   "value": 270,
+   "value_text": "less than 270 gCO2 per 1 kWh of energy output",
+   "unit": "gCO2 per kWh",
+   "measurement": "energy output from combined generation",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Meets the emissions criterion for high-efficiency cogeneration",
+   "conditions": "Applies to units built or substantially refurbished after transposition of Annex III; units in operation before 10 October 2023 may derogate until 1 January 2034",
+   "evidence": {
+    "provision": "Annex III, point (a)",
+    "quote": "are less than 270 gCO2 per 1 kWh of energy output"
+   }
+  },
+  {
+   "variable": "power_capacity",
+   "variable_text": "electrical capacity of cogeneration units under alternative calculation",
+   "operator": ">",
+   "value": 25,
+   "value_text": "electrical capacity larger than 25 MW",
+   "unit": "MW",
+   "measurement": "electrical capacity",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Alternative calculation may be regarded as high-efficiency cogeneration only if overall efficiency is above 70 %",
+   "conditions": "Applies with alternative calculation of primary energy savings under Annex III point (c)",
+   "evidence": {
+    "provision": "Annex III, point (c)",
+    "quote": "for cogeneration units with an electrical capacity larger than 25 MW, the overall efficiency is above 70 %"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "payback period of cost-effective energy efficiency measures in an implementation plan",
+   "operator": "<=",
+   "value": 5,
+   "value_text": "payback period of five years or less",
+   "unit": "years",
+   "measurement": "simple pay-back period methodology provided by Member State",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Measures count toward the energy-intensive enterprise derogation for direct fossil fuel combustion savings",
+   "conditions": "Energy-intensive enterprises in the industry sector; energy audit under Art. 11(2); period 1 January 2024 to 31 December 2030",
+   "evidence": {
+    "provision": "Annex V, point 2(j)(i)",
+    "quote": "an overview of all cost-effective energy efficiency measures with a payback period of five years or less"
+   }
+  },
+  {
+   "variable": "power_capacity",
+   "variable_text": "district heating systems with a total rated thermal input",
+   "operator": ">",
+   "value": 20,
+   "value_text": "total rated thermal input exceeding 20 MW",
+   "unit": "MW",
+   "measurement": "total rated thermal input",
+   "level": "facility",
+   "trigger": "scope_definition",
+   "consequence": "Member States may limit the GHG emissions information duty to supplies from these systems",
+   "conditions": "Optional for Member States; applies to point (b) of the first subparagraph",
+   "evidence": {
+    "provision": "Annex IX, point 3",
+    "quote": "to include only supplies from district heating systems with a total rated thermal input exceeding 20 MW"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "sector share of total national useful heating and cooling demand",
+   "operator": ">",
+   "value": 5,
+   "value_text": "any other sector that individually consumes more than 5 % of total national useful heating and cooling demand",
+   "unit": "%",
+   "measurement": "share of total national useful heating and cooling demand",
+   "level": "other",
+   "trigger": "scope_definition",
+   "consequence": "Sector must be included in the comprehensive heating and cooling assessment",
+   "conditions": "Comprehensive assessment under Art. 25(1)",
+   "evidence": {
+    "provision": "Annex X, Part I, point 1(d)",
+    "quote": "any other sector that individually consumes more than 5 % of total national useful heating and cooling demand"
+   }
+  },
+  {
+   "variable": "power_capacity",
+   "variable_text": "thermal power generation installations that can supply or be retrofitted to supply waste heat",
+   "operator": ">",
+   "value": 50,
+   "value_text": "total thermal input exceeding 50 MW",
+   "unit": "MW",
+   "measurement": "total thermal input",
+   "level": "facility",
+   "trigger": "scope_definition",
+   "consequence": "Installations must be identified in the comprehensive heating and cooling assessment",
+   "conditions": "Thermal power generation installations that can supply or be retrofitted to supply waste heat",
+   "evidence": {
+    "provision": "Annex X, Part I, point 2(b)(i)",
+    "quote": "with a total thermal input exceeding 50 MW"
+   }
+  },
+  {
+   "variable": "power_capacity",
+   "variable_text": "heat and power cogeneration installations using Annex II Part II technologies",
+   "operator": ">",
+   "value": 20,
+   "value_text": "total thermal input exceeding 20 MW",
+   "unit": "MW",
+   "measurement": "total thermal input",
+   "level": "facility",
+   "trigger": "scope_definition",
+   "consequence": "Installations must be identified in the comprehensive heating and cooling assessment",
+   "conditions": "Cogeneration installations using technologies in Annex II Part II",
+   "evidence": {
+    "provision": "Annex X, Part I, point 2(b)(ii)",
+    "quote": "heat and power cogeneration installations using technologies referred to in Part II of Annex II with a total thermal input exceeding 20 MW"
+   }
+  },
+  {
+   "variable": "power_capacity",
+   "variable_text": "renewable energy installations generating heating or cooling",
+   "operator": ">",
+   "value": 20,
+   "value_text": "total thermal input exceeding 20 MW",
+   "unit": "MW",
+   "measurement": "total thermal input",
+   "level": "facility",
+   "trigger": "scope_definition",
+   "consequence": "Installations must be identified in the comprehensive heating and cooling assessment",
+   "conditions": "Renewable energy installations other than those in points (i) and (ii)",
+   "evidence": {
+    "provision": "Annex X, Part I, point 2(b)(iv)",
+    "quote": "renewable energy installations with a total thermal input exceeding 20 MW"
+   }
+  },
+  {
+   "variable": "power_capacity",
+   "variable_text": "industrial installations which can provide waste heat",
+   "operator": ">",
+   "value": 20,
+   "value_text": "total thermal input exceeding 20 MW",
+   "unit": "MW",
+   "measurement": "total thermal input",
+   "level": "facility",
+   "trigger": "scope_definition",
+   "consequence": "Installations must be identified in the comprehensive heating and cooling assessment",
+   "conditions": "Industrial installations able to provide waste heat",
+   "evidence": {
+    "provision": "Annex X, Part I, point 2(b)(v)",
+    "quote": "industrial installations with a total thermal input exceeding 20 MW which can provide waste heat"
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "energy",
+   "defined_in": "Regulation (EC) No 1099/2008",
+   "evidence": {
+    "provision": "Art. 2(1)",
+    "quote": "means energy products as defined in Article 2, point (d), of Regulation (EC) No 1099/2008"
+   }
+  },
+  {
+   "term": "energy efficiency first",
+   "defined_in": "Regulation (EU) 2018/1999",
+   "evidence": {
+    "provision": "Art. 2(2)",
+    "quote": "means energy efficiency first as defined in Article 2, point (18), of Regulation (EU) 2018/1999"
+   }
+  },
+  {
+   "term": "energy system",
+   "defined_in": "this Directive",
+   "evidence": {
+    "provision": "Art. 2(3)",
+    "quote": "means a system primarily designed to supply energy-services to satisfy the demand of end-use sectors for energy in the forms of heat, fuels, and electricity"
+   }
+  },
+  {
+   "term": "primary energy consumption (PEC)",
+   "defined_in": "this Directive",
+   "evidence": {
+    "provision": "Art. 2(5)",
+    "quote": "means gross available energy, excluding international maritime bunkers, final non-energy consumption and ambient energy"
+   }
+  },
+  {
+   "term": "final energy consumption (FEC)",
+   "defined_in": "this Directive",
+   "evidence": {
+    "provision": "Art. 2(6)",
+    "quote": "means all energy supplied to industry, to transport, including energy consumption in international aviation, to households"
+   }
+  },
+  {
+   "term": "ambient energy",
+   "defined_in": "Directive (EU) 2018/2001",
+   "evidence": {
+    "provision": "Art. 2(7)",
+    "quote": "means ambient energy as defined in Article 2, point (2), of Directive (EU) 2018/2001"
+   }
+  },
+  {
+   "term": "energy efficiency",
+   "defined_in": "this Directive",
+   "evidence": {
+    "provision": "Art. 2(8)",
+    "quote": "means the ratio of output of performance, service, goods or energy to input of energy"
+   }
+  },
+  {
+   "term": "energy savings",
+   "defined_in": "this Directive",
+   "evidence": {
+    "provision": "Art. 2(9)",
+    "quote": "means an amount of saved energy determined by measuring or estimating consumption, or both"
+   }
+  },
+  {
+   "term": "energy service",
+   "defined_in": "this Directive",
+   "evidence": {
+    "provision": "Art. 2(11)",
+    "quote": "means the physical benefit, utility or good derived from a combination of energy with energy-efficient technology or with action"
+   }
+  },
+  {
+   "term": "public bodies",
+   "defined_in": "this Directive",
+   "evidence": {
+    "provision": "Art. 2(12)",
+    "quote": "means national, regional or local authorities and entities directly financed and administered by those authorities but not having an industrial or commercial character"
+   }
+  },
+  {
+   "term": "total useful floor area",
+   "defined_in": "this Directive",
+   "evidence": {
+    "provision": "Art. 2(13)",
+    "quote": "means the floor area of a building, or part of a building, where energy is used to condition the indoor climate"
+   }
+  },
+  {
+   "term": "contracting authorities",
+   "defined_in": "Directives 2014/23/EU, 2014/24/EU and 2014/25/EU",
+   "evidence": {
+    "provision": "Art. 2(14)",
+    "quote": "means contracting authorities as defined in Article 6(1) of Directive 2014/23/EU, Article 2(1), point (1), of Directive 2014/24/EU and Article 3(1) of Directive 2014/25/EU"
+   }
+  },
+  {
+   "term": "contracting entities",
+   "defined_in": "Directives 2014/23/EU and 2014/25/EU",
+   "evidence": {
+    "provision": "Art. 2(15)",
+    "quote": "means contracting entities as defined in Article 7(1) of Directive 2014/23/EU and Article 4(1) of Directive 2014/25/EU"
+   }
+  },
+  {
+   "term": "energy management system",
+   "defined_in": "this Directive",
+   "evidence": {
+    "provision": "Art. 2(16)",
+    "quote": "means a set of interrelated or interacting elements of a strategy which sets an energy efficiency objective and a plan to achieve that objective"
+   }
+  },
+  {
+   "term": "obligated party",
+   "defined_in": "this Directive",
+   "evidence": {
+    "provision": "Art. 2(19)",
+    "quote": "means an energy distributor, retail energy sales company or transmission system operator, which is bound by the national energy efficiency obligation schemes referred to in Article 9"
+   }
+  },
+  {
+   "term": "entrusted party",
+   "defined_in": "this Directive",
+   "evidence": {
+    "provision": "Art. 2(20)",
+    "quote": "means a legal entity with delegated power from a government or other public body to develop, manage or operate a financing scheme"
+   }
+  },
+  {
+   "term": "participating party",
+   "defined_in": "this Directive",
+   "evidence": {
+    "provision": "Art. 2(21)",
+    "quote": "means an enterprise or public body that has committed itself to reaching certain objectives under a voluntary agreement, or that is covered by a national regulatory policy instrument"
+   }
+  },
+  {
+   "term": "implementing public authority",
+   "defined_in": "this Directive",
+   "evidence": {
+    "provision": "Art. 2(22)",
+    "quote": "means a body governed by public law which is responsible for the carrying out or monitoring of energy or carbon taxation, financial schemes and instruments"
+   }
+  },
+  {
+   "term": "policy measure",
+   "defined_in": "this Directive",
+   "evidence": {
+    "provision": "Art. 2(23)",
+    "quote": "means a regulatory, financial, fiscal, voluntary or information provision instrument formally established and implemented in a Member State"
+   }
+  },
+  {
+   "term": "individual action",
+   "defined_in": "this Directive",
+   "evidence": {
+    "provision": "Art. 2(24)",
+    "quote": "means an action that leads to verifiable and measurable or estimable energy efficiency improvements and that is undertaken as a result of a policy measure"
+   }
+  },
+  {
+   "term": "energy distributor",
+   "defined_in": "this Directive",
+   "evidence": {
+    "provision": "Art. 2(25)",
+    "quote": "means a natural or legal person, including a distribution system operator, who is responsible for transporting energy with a view to its delivery to final customers"
+   }
+  },
+  {
+   "term": "distribution system operator",
+   "defined_in": "Directive (EU) 2019/944 (electricity) and Directive 2009/73/EC (gas)",
+   "evidence": {
+    "provision": "Art. 2(26)",
+    "quote": "means distribution system operator as defined in Article 2, point (29), of Directive (EU) 2019/944 as regards electricity or Article 2, point (6), of Directive 2009/73/EC as regards gas"
+   }
+  },
+  {
+   "term": "retail energy sales company",
+   "defined_in": "this Directive",
+   "evidence": {
+    "provision": "Art. 2(27)",
+    "quote": "means a natural or legal person who sells energy to final customers"
+   }
+  },
+  {
+   "term": "final customer",
+   "defined_in": "this Directive",
+   "evidence": {
+    "provision": "Art. 2(28)",
+    "quote": "means a natural or legal person who purchases energy for own end use"
+   }
+  },
+  {
+   "term": "energy service provider",
+   "defined_in": "this Directive",
+   "evidence": {
+    "provision": "Art. 2(29)",
+    "quote": "means a natural or legal person who delivers energy services or energy efficiency improvement measures in a final customer’s facility or premises"
+   }
+  },
+  {
+   "term": "small and medium-sized enterprises (SMEs)",
+   "defined_in": "Commission Recommendation 2003/361/EC",
+   "evidence": {
+    "provision": "Art. 2(30)",
+    "quote": "means enterprises as defined in Article 2(1) of the Annex to Commission Recommendation 2003/361/EC"
+   }
+  },
+  {
+   "term": "microenterprise",
+   "defined_in": "Recommendation 2003/361/EC",
+   "evidence": {
+    "provision": "Art. 2(31)",
+    "quote": "means an enterprise as defined in Article 2(3) of the Annex to Recommendation 2003/361/EC"
+   }
+  },
+  {
+   "term": "energy audit",
+   "defined_in": "this Directive",
+   "evidence": {
+    "provision": "Art. 2(32)",
+    "quote": "means a systematic procedure with the purpose of obtaining adequate knowledge of the energy consumption profile of a building or group of buildings"
+   }
+  },
+  {
+   "term": "energy performance contracting",
+   "defined_in": "this Directive",
+   "evidence": {
+    "provision": "Art. 2(33)",
+    "quote": "means a contractual arrangement between the beneficiary and the provider of an energy efficiency improvement measure, verified and monitored during the whole term of the contract"
+   }
+  },
+  {
+   "term": "smart metering system",
+   "defined_in": "Directive (EU) 2019/944 and Directive 2009/73/EC",
+   "evidence": {
+    "provision": "Art. 2(34)",
+    "quote": "means smart metering system as defined in Article 2, point (23), of Directive (EU) 2019/944 or intelligent metering system as referred to in Directive 2009/73/EC"
+   }
+  },
+  {
+   "term": "transmission system operator",
+   "defined_in": "Directive (EU) 2019/944 (electricity) and Directive 2009/73/EC (gas)",
+   "evidence": {
+    "provision": "Art. 2(35)",
+    "quote": "means transmission system operator as defined in Article 2, point (35), of Directive (EU) 2019/944 as regards electricity"
+   }
+  },
+  {
+   "term": "cogeneration",
+   "defined_in": "this Directive",
+   "evidence": {
+    "provision": "Art. 2(36)",
+    "quote": "means the simultaneous generation in one process of thermal energy and electrical or mechanical energy"
+   }
+  },
+  {
+   "term": "economically justifiable demand",
+   "defined_in": "this Directive",
+   "evidence": {
+    "provision": "Art. 2(37)",
+    "quote": "means a demand that does not exceed the needs for heating or cooling and which would otherwise be satisfied at market conditions by energy generation processes other than cogeneration"
+   }
+  },
+  {
+   "term": "useful heat",
+   "defined_in": "this Directive",
+   "evidence": {
+    "provision": "Art. 2(38)",
+    "quote": "means heat produced in a cogeneration process to satisfy an economically justifiable demand for heating or cooling"
+   }
+  },
+  {
+   "term": "high-efficiency cogeneration",
+   "defined_in": "this Directive",
+   "evidence": {
+    "provision": "Art. 2(40)",
+    "quote": "means cogeneration meeting the criteria laid down in Annex III"
+   }
+  },
+  {
+   "term": "cogeneration unit",
+   "defined_in": "this Directive",
+   "evidence": {
+    "provision": "Art. 2(43)",
+    "quote": "means a unit that is able to operate in cogeneration mode"
+   }
+  },
+  {
+   "term": "small-scale cogeneration unit",
+   "defined_in": "this Directive",
+   "evidence": {
+    "provision": "Art. 2(44)",
+    "quote": "means a cogeneration unit with installed capacity below 1 MWe"
+   }
+  },
+  {
+   "term": "micro-cogeneration unit",
+   "defined_in": "this Directive",
+   "evidence": {
+    "provision": "Art. 2(45)",
+    "quote": "means a cogeneration unit with a maximum capacity below 50 kWe"
+   }
+  },
+  {
+   "term": "efficient district heating and cooling",
+   "defined_in": "this Directive",
+   "evidence": {
+    "provision": "Art. 2(46)",
+    "quote": "means a district heating or cooling system meeting the criteria laid down in Article 26"
+   }
+  },
+  {
+   "term": "efficient heating and cooling",
+   "defined_in": "this Directive",
+   "evidence": {
+    "provision": "Art. 2(47)",
+    "quote": "means a heating and cooling option that, compared to a baseline scenario reflecting a business-as-usual situation, measurably reduces the input of primary energy"
+   }
+  },
+  {
+   "term": "efficient individual heating and cooling",
+   "defined_in": "this Directive",
+   "evidence": {
+    "provision": "Art. 2(48)",
+    "quote": "means an individual heating and cooling supply option that, compared to efficient district heating and cooling, measurably reduces the input of non-renewable primary energy"
+   }
+  },
+  {
+   "term": "data centre",
+   "defined_in": "Regulation (EC) No 1099/2008",
+   "evidence": {
+    "provision": "Art. 2(49)",
+    "quote": "means data centre as defined in Annex A, point 2.6.3.1.16, of Regulation (EC) No 1099/2008"
+   }
+  },
+  {
+   "term": "substantial refurbishment",
+   "defined_in": "this Directive",
+   "evidence": {
+    "provision": "Art. 2(50)",
+    "quote": "means a refurbishment the cost of which exceeds 50 % of the investment cost for a new comparable unit"
+   }
+  },
+  {
+   "term": "energy poverty",
+   "defined_in": "this Directive",
+   "evidence": {
+    "provision": "Art. 2(52)",
+    "quote": "means a household’s lack of access to essential energy services"
+   }
+  },
+  {
+   "term": "final user",
+   "defined_in": "this Directive",
+   "evidence": {
+    "provision": "Art. 2(53)",
+    "quote": "means a natural or legal person purchasing heating, cooling or domestic hot water for their own end use"
+   }
+  },
+  {
+   "term": "efficient district heating and cooling system",
+   "defined_in": "Art. 26(1)",
+   "evidence": {
+    "provision": "Art. 26(1)",
+    "quote": "an efficient district heating and cooling system shall meet the following criteria"
+   }
+  },
+  {
+   "term": "high-efficiency cogeneration",
+   "defined_in": "Annex III, point (a)",
+   "evidence": {
+    "provision": "Annex III, point (a)",
+    "quote": "For the purpose of this Directive, high-efficiency cogeneration shall fulfil the following criteria"
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States must, where they adopt more stringent national measures, notify that legislation to the Commission.",
+   "conditional_on": "Where national legislation provides for more stringent measures",
+   "evidence": {
+    "provision": "Art. 1(2)",
+    "quote": "Where national legislation provides for more stringent measures, the Member State shall notify such legislation to the Commission."
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States must ensure energy efficiency solutions are assessed in planning, policy and major investment decisions above the stated value thresholds, and must also ensure competent authorities monitor application of the energy efficiency first principle.",
+   "conditional_on": "Planning, policy and major investment decisions of a value of more than EUR 100 000 000 each or EUR 175 000 000 for transport infrastructure projects",
+   "evidence": {
+    "provision": "Art. 3(1)",
+    "quote": "Member States shall ensure that energy efficiency solutions, including demand-side resources and system flexibilities, are assessed in planning, policy and major investment decisions"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States must ensure competent authorities monitor application of the energy efficiency first principle, including sector integration and cross-sectoral impacts.",
+   "conditional_on": "Where policy, planning and investment decisions are subject to approval and monitoring requirements",
+   "evidence": {
+    "provision": "Art. 3(4)",
+    "quote": "Member States shall ensure that the competent authorities monitor the application of the energy efficiency first principle"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States must promote and make publicly available cost-benefit methodologies, address the impact on energy poverty, identify the entity responsible for monitoring the energy efficiency first principle, and report on its application in their integrated national energy and climate progress reports.",
+   "conditional_on": "Cost-benefit analyses where required (point (a))",
+   "evidence": {
+    "provision": "Art. 3(5)(a)",
+    "quote": "promote and, where cost-benefit analyses are required, ensure the application of, and make publicly available, cost-benefit methodologies"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States must report to the Commission, in their integrated national energy and climate progress reports, on how the energy efficiency first principle was taken into account in planning, policy and major investment decisions, including a list of actions to remove barriers.",
+   "evidence": {
+    "provision": "Art. 3(5)(d)",
+    "quote": "report to the Commission, as part of their integrated national energy and climate progress reports submitted pursuant to Article 17 of Regulation (EU) 2018/1999"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "encouraged",
+   "summary": "Member States are encouraged to take into account a Commission Recommendation when applying the energy efficiency first principle.",
+   "evidence": {
+    "provision": "Art. 3(3)",
+    "quote": "Member States are encouraged to take into account Commission Recommendation (EU) 2021/1749"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Commission must carry out an assessment of the Article 3(1) thresholds by 11 October 2027 and submit a report by 11 October 2028.",
+   "applies_from": "11 October 2027",
+   "evidence": {
+    "provision": "Art. 3(2)",
+    "quote": "By 11 October 2027, the Commission shall carry out an assessment of the thresholds set out in paragraph 1"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Commission must adopt guidelines providing a common general framework for cost-benefit methodologies, which Member States may use.",
+   "applies_from": "11 April 2024",
+   "evidence": {
+    "provision": "Art. 3(6)",
+    "quote": "By 11 April 2024, the Commission shall adopt guidelines providing a common general framework"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States must collectively ensure a reduction of energy consumption of at least 11,7 % in 2030 compared to the 2020 EU Reference Scenario projections, and make efforts to contribute to the indicative primary energy consumption target.",
+   "applies_from": "2030",
+   "evidence": {
+    "provision": "Art. 4(1)",
+    "quote": "Member States shall collectively ensure a reduction of energy consumption of at least 11,7 % in 2030 compared to the projections of the 2020 EU Reference Scenario"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Each Member State must set an indicative national energy efficiency contribution based on final energy consumption and notify it to the Commission with an indicative trajectory, expressed also in absolute primary energy consumption in 2030.",
+   "evidence": {
+    "provision": "Art. 4(2)",
+    "quote": "Each Member State shall set an indicative national energy efficiency contribution based on final energy consumption"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States must ensure that their contribution in Mtoe is not more than 2,5 % above the formula result in Annex I, and must notify updated contributions by 1 February 2024 where they wish to update them.",
+   "applies_from": "1 February 2024",
+   "conditional_on": "Where a Member State wishes to update its indicative contribution",
+   "evidence": {
+    "provision": "Art. 4(4)",
+    "quote": "a Member State shall ensure that its contribution in Mtoe is not more than 2,5 % above what it would have been had it resulted from the formula set out in Annex I."
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Commission must submit corrected indicative contributions to Member States where the collective contribution is insufficient, and must update the 2020 EU Reference Scenario by 30 November 2023.",
+   "applies_from": "30 November 2023",
+   "conditional_on": "Where the Commission concludes the collective contribution is insufficient",
+   "evidence": {
+    "provision": "Art. 4(5)",
+    "quote": "the Commission shall submit to each Member State a corrected indicative national energy efficiency contribution for final energy consumption"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States above their indicative trajectories must ensure additional measures are implemented within one year of receipt of a Commission assessment, including at least one of the listed measures, and must explain gap-covering measures in their progress report.",
+   "conditional_on": "Where Member State final energy consumption is above its indicative trajectory and the Commission concludes that insufficient progress has been made",
+   "evidence": {
+    "provision": "Art. 4(6)",
+    "quote": "additional measures are implemented within one year of the date of receipt of the Commission’s assessment"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Commission must assess by 31 December 2026 methodological changes in data, energy balance calculation and energy models, and propose technical adjustments if necessary.",
+   "applies_from": "31 December 2026",
+   "evidence": {
+    "provision": "Art. 4(7)",
+    "quote": "The Commission shall assess by 31 December 2026 any methodological changes in the data reported"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States must ensure the total final energy consumption of all public bodies combined is reduced by at least 1,9 % each year compared to 2021, with a baseline established for 2021; the target is indicative during the transitional period to 11 October 2027.",
+   "conditional_on": "Transitional period ending 11 October 2027 during which the target is indicative (para 2)",
+   "evidence": {
+    "provision": "Art. 5(1)",
+    "quote": "Member States shall ensure that the total final energy consumption of all public bodies combined is reduced by at least 1,9 % each year, when compared to 2021."
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States must include public body consumption reduction amounts and measures in their national energy and climate plan updates and report to the Commission the reduction achieved every year.",
+   "evidence": {
+    "provision": "Art. 5(5)",
+    "quote": "Member States shall report to the Commission the final energy consumption reduction achieved every year."
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States must ensure regional and local authorities establish specific energy efficiency measures in long-term planning tools after consulting stakeholders, and that competent authorities mitigate negative impacts on energy poor and low-income households.",
+   "evidence": {
+    "provision": "Art. 5(6)",
+    "quote": "Member States shall ensure that regional and local authorities establish specific energy efficiency measures in their long-term planning tools"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States must support public bodies with financial and technical support, guidelines, competence building and training, and cooperation.",
+   "conditional_on": "Without prejudice to State aid rules",
+   "evidence": {
+    "provision": "Art. 5(7)",
+    "quote": "Member States shall support public bodies."
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "encouraged",
+   "summary": "Member States are to encourage public bodies to consider life cycle carbon emissions and the economic and social benefits of their investment and policy activities, and to improve energy performance of buildings they own or occupy.",
+   "evidence": {
+    "provision": "Art. 5(8)",
+    "quote": "Member States shall encourage public bodies to consider life cycle carbon emissions"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States must ensure that at least 3 % of the total floor area of heated and/or cooled buildings owned by public bodies is renovated each year to nearly zero-energy or zero-emission standard, subject to the exemptions and alternative approach in the Article.",
+   "conditional_on": "Buildings owned by public bodies with total useful floor area over 250 m2 that are not nearly zero-energy buildings on 1 January 2024",
+   "evidence": {
+    "provision": "Art. 6(1)",
+    "quote": "each Member State shall ensure that at least 3 % of the total floor area of heated and/or cooled buildings that are owned by public bodies is renovated each year"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Public bodies occupying a building they do not own must negotiate with the owner, at trigger points such as lease renewal, to establish contractual clauses for nearly zero-energy status.",
+   "conditional_on": "Where public bodies occupy a building that they do not own",
+   "evidence": {
+    "provision": "Art. 6(1)",
+    "quote": "Where public bodies occupy a building that they do not own, they shall negotiate with the owner"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States must establish and make publicly available an inventory of heated and/or cooled public buildings over 250 m2 with floor area, energy consumption and energy performance certificate data, updated at least every two years.",
+   "applies_from": "11 October 2025",
+   "evidence": {
+    "provision": "Art. 6(5)",
+    "quote": "By 11 October 2025, Member States shall, for the purposes of this Article, establish and make publicly available and accessible an inventory"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Under the alternative approach, Member States must introduce each year a renovation passport for buildings representing at least 3 % of floor area and achieve nearly zero-energy renovation by 2040.",
+   "conditional_on": "Where Member States choose the alternative approach under paragraph 6",
+   "evidence": {
+    "provision": "Art. 6(6)(a)",
+    "quote": "ensure that, each year, a renovation passport is introduced, where applicable"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States choosing the alternative approach must notify the Commission of projected energy savings by 31 December 2023.",
+   "applies_from": "31 December 2023",
+   "conditional_on": "Where Member States apply the alternative approach",
+   "evidence": {
+    "provision": "Art. 6(6)",
+    "quote": "notify to the Commission, by 31 December 2023, their projected energy savings"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States must ensure contracting authorities and entities purchase only products, services, buildings and works with high energy-efficiency performance under Annex IV, unless not technically feasible, and apply the energy efficiency first principle in public contracts above the thresholds.",
+   "conditional_on": "Public contracts and concessions with a value equal to or greater than the directive thresholds; unless not technically feasible",
+   "evidence": {
+    "provision": "Art. 7(1)",
+    "quote": "purchase only products, services buildings and works with high energy-efficiency performance"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States must ensure contracting authorities and entities assess the feasibility of long-term energy performance contracts when procuring service contracts with significant energy content.",
+   "conditional_on": "Service contracts with significant energy content",
+   "evidence": {
+    "provision": "Art. 7(3)",
+    "quote": "Member States shall ensure that contracting authorities and contracting entities assess the feasibility of concluding long-term energy performance contracts"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States must ensure contracting authorities and entities make publicly available information on the energy efficiency impact of contracts above the thresholds, through TED notices; contracting authorities may require tenderers to disclose life-cycle global warming potential information.",
+   "conditional_on": "Contracts with a value equal to or greater than the thresholds in paragraph 1",
+   "evidence": {
+    "provision": "Art. 7(5)",
+    "quote": "Member States shall ensure that contracting authorities and contracting entities make publicly available information on the energy efficiency impact of contracts"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States must support contracting authorities and entities in applying energy efficiency requirements, including through rules, guidelines, methodologies, competence support centres and cooperation.",
+   "evidence": {
+    "provision": "Art. 7(5)",
+    "quote": "Member States shall support contracting authorities and contracting entities in the uptake of energy efficiency requirements"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States must establish legal, regulatory and administrative provisions on public purchasing, budgeting and accounting so that contracting authorities are not deterred from energy efficiency investments and energy performance contracting.",
+   "evidence": {
+    "provision": "Art. 7(7)",
+    "quote": "Member States shall establish the legal and regulatory provisions, and administrative practices, regarding public purchasing and annual budgeting and accounting"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States must remove regulatory and non-regulatory barriers to energy efficiency in public purchasing, budgeting and accounting, and report to the Commission on measures taken in their integrated national energy and climate progress reports.",
+   "evidence": {
+    "provision": "Art. 7(8)",
+    "quote": "Member States shall remove any regulatory or non-regulatory barriers to energy efficiency"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States must report to the Commission on measures taken to address barriers to energy efficiency uptake, within their integrated national energy and climate progress reports.",
+   "evidence": {
+    "provision": "Art. 7(8)",
+    "quote": "Member States shall report to the Commission on the measures taken to address the barriers to uptake of energy efficiency improvements"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States must achieve cumulative end-use energy savings at the rates set for 2014-2020 and for each obligation period from 2021 to 2030 (0,8 %, 1,3 %, 1,5 % and 1,9 % of annual final energy consumption, with derogations for Cyprus and Malta), and continue at the 1,9 % rate for ten-year periods after 2030.",
+   "applies_from": "1 January 2014",
+   "evidence": {
+    "provision": "Art. 8(1)",
+    "quote": "Member States shall achieve cumulative end-use energy savings at least equivalent to:"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States must achieve the required savings either through an energy efficiency obligation scheme (Art. 9), alternative policy measures (Art. 10), or a combination, and calculate savings in accordance with Annex V.",
+   "evidence": {
+    "provision": "Art. 8(2)",
+    "quote": "Member States shall achieve the amount of energy savings required under paragraph 1 of this Article either by establishing an energy efficiency obligation scheme"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States must implement obligation schemes, alternative measures or fund measures as a priority among people affected by energy poverty, vulnerable customers and low-income households, ensure policy measures have no adverse effect on them, and promote renewable energy communities and citizen energy communities in designing measures.",
+   "evidence": {
+    "provision": "Art. 8(3)",
+    "quote": "Member States shall implement energy efficiency obligation schemes, alternative policy measures, or a combination of both"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States must establish and achieve a share of required cumulative savings among people affected by energy poverty and vulnerable customers, equal at least to the proportion of households in energy poverty assessed in their national plans, using listed indicators.",
+   "conditional_on": "Where a Member State has not notified its energy poverty share, a fallback average applies",
+   "evidence": {
+    "provision": "Art. 8(3)",
+    "quote": "Member States shall establish and achieve a share of the required amount of cumulative end-use energy savings among people affected by energy poverty"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States must include information on indicators, the arithmetic average share and outcomes of energy poverty measures in their national energy and climate plan updates and progress reports.",
+   "evidence": {
+    "provision": "Art. 8(4)",
+    "quote": "Member States shall include information about the indicators applied, the arithmetic average share and the outcome of policy measures"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States must describe in national energy and climate plan updates and progress reports how the savings to be achieved from 2021 to 2030 were calculated, including the annual savings rate, baseline and options applied.",
+   "evidence": {
+    "provision": "Art. 8(10)",
+    "quote": "Member States shall describe in the updates of their integrated national energy and climate plans"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States must notify the Commission of the required energy savings, the policy measures to be implemented and their calculation methodologies under Annex V, using the Commission template.",
+   "evidence": {
+    "provision": "Art. 8(11)",
+    "quote": "Member States shall notify the Commission of the amount of the required energy savings"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Where a Member State has not achieved the required savings by the end of an obligation period, it must achieve the outstanding savings in addition to the requirement of the following obligation period.",
+   "conditional_on": "Where the required cumulative savings were not achieved by the end of an obligation period",
+   "evidence": {
+    "provision": "Art. 8(13)",
+    "quote": "it shall achieve the outstanding energy savings in addition to the cumulative end-use energy savings required by the end of the following obligation period."
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States must demonstrate in their plans and reports that there is no double counting of savings, how savings contribute to national contributions, and that policy measures are eligible and appropriate.",
+   "evidence": {
+    "provision": "Art. 8(14)",
+    "quote": "Member States shall demonstrate including, where appropriate, with evidence and calculations"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Where Member States use an energy efficiency obligation scheme, they must ensure obligated parties achieve the cumulative end-use energy savings required under Article 8(1).",
+   "conditional_on": "Where Member States fulfil the obligation through an energy efficiency obligation scheme",
+   "evidence": {
+    "provision": "Art. 9(1)",
+    "quote": "they shall ensure that the obligated parties referred to in paragraph 3 of this Article operating in each Member State’s territory achieve"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States must designate obligated parties among transmission and distribution system operators, energy distributors, retail energy sales companies and transport fuel distributors or retailers, on objective and non-discriminatory criteria.",
+   "evidence": {
+    "provision": "Art. 9(3)",
+    "quote": "Member States shall designate, on the basis of objective and non-discriminatory criteria, obligated parties"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "enterprise",
+   "modality": "shall_not",
+   "summary": "Where retail energy sales companies are obligated parties, they must not create barriers that impede consumers from switching supplier in fulfilling their obligation (Member States must ensure this).",
+   "conditional_on": "Where retail energy sales companies are designated as obligated parties",
+   "evidence": {
+    "provision": "Art. 9(4)",
+    "quote": "retail energy sales companies do not create any barriers that impede consumers from switching from one supplier to another."
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Obligated parties must report annually on energy savings achieved from actions promoted among energy poor, vulnerable and low-income customers and on technical and financial support provided.",
+   "conditional_on": "Where Member States require obligated parties to achieve energy poverty-related savings under paragraphs 5 and 6",
+   "evidence": {
+    "provision": "Art. 9(7)",
+    "quote": "Member States shall require obligated parties to report on an annual basis on the energy savings achieved"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States must establish measurement, control and verification systems with documented verification on a statistically significant, representative sample of measures, carried out independently of obligated parties.",
+   "evidence": {
+    "provision": "Art. 9(9)",
+    "quote": "Member States shall establish measurement, control and verification systems for carrying out documented verification"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States must assess and, if appropriate, take measures to minimise the direct and indirect costs of obligation schemes on energy-intensive industries exposed to international competition.",
+   "evidence": {
+    "provision": "Art. 9(11)",
+    "quote": "Member States shall assess and, if appropriate, take measures to minimise the impact of the direct and indirect costs"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States must publish annually the energy savings achieved by each obligated party or sub-category, and in total under the scheme.",
+   "evidence": {
+    "provision": "Art. 9(12)",
+    "quote": "Member States shall, on an annual basis, publish the energy savings achieved by each obligated party"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Where Member States use alternative policy measures, they must ensure the required savings are achieved among final customers.",
+   "conditional_on": "Where Member States fulfil the obligation through alternative policy measures",
+   "evidence": {
+    "provision": "Art. 10(1)",
+    "quote": "they shall ensure, without prejudice to Article 8(8) and (9), that the energy savings required under Article 8(1) are achieved among final customers."
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "For alternative policy measures other than taxation, Member States must put in place measurement, control and verification systems with documented verification independent of participating or entrusted parties.",
+   "conditional_on": "Measures other than those relating to taxation",
+   "evidence": {
+    "provision": "Art. 10(2)",
+    "quote": "Member States shall put in place measurement, control and verification systems under which documented verification is carried out"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States must inform the Commission of their measurement, control and verification systems in their integrated national energy and climate progress reports.",
+   "evidence": {
+    "provision": "Art. 10(3)",
+    "quote": "Member States shall inform the Commission, as part of the integrated national energy and climate progress reports"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "When reporting a taxation measure, Member States must demonstrate how the effectiveness of the price signal has been ensured, and justify new energy savings where the tax rate decreases.",
+   "conditional_on": "Where a taxation measure is reported",
+   "evidence": {
+    "provision": "Art. 10(4)",
+    "quote": "When reporting a taxation measure, Member States shall demonstrate how the effectiveness of the price signal"
+   }
+  },
+  {
+   "type": "management_system",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Enterprises with average annual energy consumption above 85 TJ over the previous three years must implement an energy management system certified by an independent body; Member States must ensure this is in place by the stated date.",
+   "applies_from": "at the latest by 11 October 2027",
+   "conditional_on": "Average annual consumption higher than 85 TJ of energy over the previous three years",
+   "evidence": {
+    "provision": "Art. 11(1)",
+    "quote": "implement an energy management system. The energy management system shall be certified by an independent body"
+   }
+  },
+  {
+   "type": "audit",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Enterprises with average annual consumption above 10 TJ that do not implement an energy management system must undergo energy audits by independent qualified or accredited experts, with a first audit by 11 October 2026 and subsequent audits at least every four years.",
+   "applies_from": "11 October 2026",
+   "conditional_on": "Average annual consumption higher than 10 TJ and no energy management system implemented",
+   "evidence": {
+    "provision": "Art. 11(2)",
+    "quote": "carry out a first energy audit by 11 October 2026 and that subsequent energy audits are carried out at least every four years"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Enterprises subject to energy audits must draw up a concrete and feasible Action Plan based on audit recommendations, identifying measures where technically or economically feasible, and submit it to enterprise management.",
+   "conditional_on": "Enterprises subject to the energy audit obligation",
+   "evidence": {
+    "provision": "Art. 11(2)",
+    "quote": "The enterprises concerned shall draw up a concrete and feasible Action Plan on the basis of the recommendations arising from those energy audits."
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Action Plans and the recommendation implementation rate must be published in the enterprise annual report and made publicly available, subject to trade secret and confidentiality law.",
+   "conditional_on": "Enterprises subject to the energy audit obligation",
+   "evidence": {
+    "provision": "Art. 11(2)",
+    "quote": "the Action Plans and the recommendation implementation rate are published in the enterprise’s annual report"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Enterprises above the 85 TJ and 10 TJ thresholds must have their consumption information made available to national authorities responsible for implementing the article.",
+   "conditional_on": "Annual consumption above 85 TJ or 10 TJ in any given year",
+   "evidence": {
+    "provision": "Art. 11(3)",
+    "quote": "Member States shall ensure that that information is made available to the national authorities responsible for implementation of this Article."
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States must promote the availability to all final customers of high quality, cost-effective energy audits by independent qualified or accredited experts, with minimum criteria under Annex VI, and must designate a competent authority to ensure audit timelines and criteria are complied with.",
+   "evidence": {
+    "provision": "Art. 11(5)",
+    "quote": "Member States shall promote the availability to all final customers of high quality energy audits"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "auditor_assessor",
+   "modality": "shall_not",
+   "summary": "Energy audits must not include clauses preventing the audit findings from being transferred to any qualified or accredited energy service provider, provided the customer does not object.",
+   "conditional_on": "Provided that the customer does not object",
+   "evidence": {
+    "provision": "Art. 11(5)",
+    "quote": "Energy audits shall not include clauses preventing the findings of the audit from being transferred"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States must develop programmes encouraging and technically supporting SMEs not subject to the audit or management system obligations to undergo energy audits and implement the recommendations, including support in quantifying benefits and energy efficiency networks.",
+   "conditional_on": "SMEs not subject to paragraph 1 or 2",
+   "evidence": {
+    "provision": "Art. 11(6)",
+    "quote": "Member States shall develop programmes with the aim of encouraging and providing technical support to SMEs"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States must develop programmes to encourage non-SME enterprises not subject to paragraph 1 or 2 to undergo energy audits and implement the resulting recommendations.",
+   "conditional_on": "Enterprises that are not SMEs and not subject to paragraph 1 or 2",
+   "evidence": {
+    "provision": "Art. 11(8)",
+    "quote": "Member States shall develop programmes to encourage enterprises that are not SMEs"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "data_center_owner",
+   "also_addressees": [
+    "data_center_operator"
+   ],
+   "modality": "shall",
+   "summary": "Owners and operators of data centres with installed IT power demand of at least 500kW must make the Annex VII information publicly available each year, except information protected by trade secret and confidentiality law; Member States must require this.",
+   "applies_from": "By 15 May 2024 and every year thereafter",
+   "conditional_on": "Power demand of installed IT of at least 500kW; excludes defence and civil protection data centres",
+   "evidence": {
+    "provision": "Art. 12(1)",
+    "quote": "to make the information set out in Annex VII publicly available"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Commission must establish a European database on data centres based on the information communicated by obligated data centres, publicly available on an aggregated level.",
+   "evidence": {
+    "provision": "Art. 12(3)",
+    "quote": "The Commission shall establish a European database on data centres"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "data_center_owner",
+   "also_addressees": [
+    "data_center_operator"
+   ],
+   "modality": "encouraged",
+   "summary": "Member States are to encourage owners and operators of data centres with IT power demand of at least 1 MW to take into account the best practices in the European Code of Conduct on Data Centre Energy Efficiency.",
+   "conditional_on": "Power demand of installed IT equal to or greater than 1 MW",
+   "evidence": {
+    "provision": "Art. 12(4)",
+    "quote": "Member States shall encourage owners and operators of data centres in their territory with a power demand of the installed IT equal to or greater than 1 MW"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Commission must assess the available data on data centre energy efficiency and report to Parliament and Council, with legislative proposals where appropriate.",
+   "applies_from": "15 May 2025",
+   "evidence": {
+    "provision": "Art. 12(5)",
+    "quote": "By 15 May 2025, the Commission shall assess the available data on the energy efficiency of data centres"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States must ensure natural gas final customers are provided with competitively priced individual meters reflecting actual consumption and time of use, where technically possible, financially reasonable and proportionate, and always when an existing meter is replaced or a new connection or major renovation occurs.",
+   "conditional_on": "In so far as technically possible, financially reasonable, and proportionate to the potential energy savings",
+   "evidence": {
+    "provision": "Art. 13(1)",
+    "quote": "natural gas final customers are provided with competitively priced individual meters that accurately reflect the final customer’s actual energy consumption"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Where Member States implement smart gas metering, they must ensure the security of smart meters and data communication and the privacy of final customers, in compliance with Union data protection and privacy law.",
+   "conditional_on": "Where and to the extent that Member States implement smart metering systems for natural gas",
+   "evidence": {
+    "provision": "Art. 13(2)",
+    "quote": "they shall ensure the security of the smart meters and data communication, and the privacy of final customers"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Where Member States implement smart gas metering, they must ensure metering provides information on actual time of use, takes energy efficiency into account in minimum functionalities, and require appropriate advice to customers at smart meter installation.",
+   "conditional_on": "Where and to the extent that Member States implement smart metering systems for natural gas",
+   "evidence": {
+    "provision": "Art. 13(2)",
+    "quote": "they shall require that appropriate advice and information be given to customers at the time of installation of smart meters"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States must ensure that final customers of district heating, district cooling and domestic hot water are provided with competitively priced meters that accurately reflect actual energy consumption.",
+   "evidence": {
+    "provision": "Art. 14(1)",
+    "quote": "Member States shall ensure that, for district heating, district cooling and domestic hot water, final customers are provided with competitively priced meters"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Where heating, cooling or domestic hot water is supplied to a building from a central source or district system, a meter must be installed at the heat exchanger or point of delivery; the text does not name the party responsible for installation.",
+   "conditional_on": "Where heat, cooling or hot water is supplied to a building from a central source or district system",
+   "evidence": {
+    "provision": "Art. 14(2)",
+    "quote": "a meter shall be installed at the heat exchanger or point of delivery."
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States ensure individual meters or heat cost allocators for heating, cooling and domestic hot water where technically feasible and cost-effective; individual meters for domestic hot water in new buildings; publish criteria for non-feasibility; and ensure transparent, publicly available national cost-allocation rules for district heating or cooling buildings (Art. 15(1)-(3)).",
+   "applies_from": "12 October 2025 (Art. 39, second paragraph)",
+   "conditional_on": "Where multi-apartment or multi-purpose buildings have a central heating or cooling source or are supplied from district heating or cooling",
+   "evidence": {
+    "provision": "Art. 15(1)",
+    "quote": "individual meters shall be installed to measure the consumption of heating, cooling or domestic hot water for each building unit"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Newly installed meters and heat cost allocators must be remotely readable; existing non-remotely-readable devices must be made remotely readable or replaced by 1 January 2027 unless the Member State shows this is not cost-efficient. The addressee is not named in the text; read with the Member State duties in Arts. 14-15.",
+   "applies_from": "12 October 2025 (Art. 39, second paragraph)",
+   "conditional_on": "Subject to technical feasibility and cost-effectiveness conditions of Art. 15(1)",
+   "evidence": {
+    "provision": "Art. 16(1)-(2)",
+    "quote": "newly installed meters and heat cost allocators shall be remotely readable devices."
+   }
+  }
+ ],
+ "enforcement": [
+  {
+   "sanction_type": "other",
+   "authority": "Member States (national penalty rules; no authority named in this text)",
+   "triggered_by": "Infringements of national provisions adopted pursuant to this Directive",
+   "max_penalty_text": "Not specified in this text; penalties must be 'effective, proportionate and dissuasive'",
+   "penalty_reference": "Article 32 (penalty rules left to Member States)",
+   "cure_period": "Not stated in this text",
+   "evidence": {
+    "provision": "Article 32",
+    "quote": "Member States shall lay down the rules on penalties applicable to infringements of national provisions adopted pursuant to this Directive"
+   }
+  }
+ ],
+ "section_status": {}
+}

@@ -1,0 +1,234 @@
+{
+ "instrument_id": "us-nj-s3379-a4096-2026",
+ "checker": "claude-opus-5-5 (Claude Code)",
+ "protocol": "VP-1.0",
+ "date": "2026-10-14",
+ "reference": [
+  {
+   "category": "key_date",
+   "provision": "Bill header",
+   "quote": "INTRODUCED FEBRUARY 9, 2026",
+   "value": "introduced 2026-02-09",
+   "match": {
+    "X": 0,
+    "Y": 0
+   }
+  },
+  {
+   "category": "key_date",
+   "provision": "Bill header",
+   "quote": "As reported by the Assembly Telecommunications and\nUtilities Committee on June 4, 2026, with amendments.",
+   "value": "committee_approved (Assembly Telecommunications and Utilities Committee) 2026-06-04",
+   "match": {
+    "X": 1,
+    "Y": 1
+   }
+  },
+  {
+   "category": "key_date",
+   "provision": "Sec. 2",
+   "quote": "This act shall take\neffect immediately.",
+   "value": "entry into force immediately on enactment (date not stated in text)",
+   "match": {
+    "X": 2,
+    "Y": 2
+   }
+  },
+  {
+   "category": "key_date",
+   "provision": "Sec. 1(b)",
+   "quote": "No\nlater than six months after the effective date of this section",
+   "value": "first water and energy usage report due 6 months after effective date (general case)",
+   "match": {
+    "X": 4,
+    "Y": 3
+   }
+  },
+  {
+   "category": "key_date",
+   "provision": "Sec. 1(b)",
+   "quote": "for a data\ncenter that has been in operation for at least one year as of the effective\ndate of this section, no later than three months after the effective date of\nthis section",
+   "value": "first report due 3 months after effective date for data centers operating >= 1 year",
+   "match": {
+    "X": 3,
+    "Y": 4
+   }
+  },
+  {
+   "category": "key_date",
+   "provision": "Sec. 1(f)",
+   "quote": "apply for a period of three years, beginning on\nthe date a data center first submits a water and energy usage report to the\nboard",
+   "value": "reporting requirement ends 3 years after a data center's first report (sunset unless Board makes permanent)",
+   "match": {
+    "X": 7,
+    "Y": 8
+   }
+  },
+  {
+   "category": "threshold",
+   "provision": "Sec. 1(b)",
+   "quote": "for a data\ncenter that has been in operation for at least one year as of the effective\ndate of this section",
+   "value": "operating age >= 1 year at effective date -> earlier first-report deadline (phase_in)",
+   "match": {
+    "X": 0,
+    "Y": 0
+   }
+  },
+  {
+   "category": "threshold",
+   "provision": "Sec. 1(d)(1)",
+   "quote": "except that such information as\nanonymized and aggregated from at least five facilities shall be included in\nthe report",
+   "value": ">= 5 facilities aggregated -> confidential performance/sustainability data may be published in aggregate",
+   "match": {
+    "X": 1,
+    "Y": 1
+   }
+  }
+ ],
+ "judgments": {
+  "X": {
+   "obligations": [],
+   "enforcement": [],
+   "thresholds": [
+    {
+     "index": 0,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 1,
+     "verdict": "correct",
+     "note": "trigger exemption (from confidentiality) is apt"
+    }
+   ],
+   "events": [
+    {
+     "index": 0,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 1,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 2,
+     "verdict": "correct",
+     "note": "date_type not_stated acceptable: enactment date not in this text"
+    },
+    {
+     "index": 3,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 4,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 5,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 6,
+     "verdict": "correct",
+     "note": "60-day advance notice; conditional with negative offset acceptable"
+    },
+    {
+     "index": 7,
+     "verdict": "correct",
+     "note": "3-year reporting period per data center; conditional rather than relative, acceptable"
+    },
+    {
+     "index": 8,
+     "verdict": "correct",
+     "note": "Board publication deadline"
+    }
+   ]
+  },
+  "Y": {
+   "obligations": [],
+   "enforcement": [],
+   "thresholds": [
+    {
+     "index": 0,
+     "verdict": "correct",
+     "note": "trigger eligibility is less apt than exemption but defensible"
+    },
+    {
+     "index": 1,
+     "verdict": "correct",
+     "note": ""
+    }
+   ],
+   "events": [
+    {
+     "index": 0,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 1,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 2,
+     "verdict": "correct",
+     "note": "conditional on enactment, acceptable"
+    },
+    {
+     "index": 3,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 4,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 5,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 6,
+     "verdict": "correct",
+     "note": "Board publication deadline"
+    },
+    {
+     "index": 7,
+     "verdict": "correct",
+     "note": "60-day advance notice"
+    },
+    {
+     "index": 8,
+     "verdict": "correct",
+     "note": "3-year reporting period per data center"
+    }
+   ]
+  }
+ },
+ "sampling": {
+  "X": {},
+  "Y": {}
+ },
+ "classification": {
+  "X": {
+   "domains": "partly",
+   "primary_domain": "right",
+   "note": "compute_data_centers and energy_grid_water right; data_access_sharing over-inclusive (the act is an energy/water reporting and publication duty to a regulator, not a data access or sharing regime)."
+  },
+  "Y": {
+   "domains": "partly",
+   "primary_domain": "right",
+   "note": "Same domains as X; data_access_sharing over-inclusive."
+  }
+ },
+ "reference_scope": "full text",
+ "notes": "Short bill text (Second Reprint, as reported 2026-06-04); full reference list. X and Y are near-identical in thresholds and events; both cover every reference item. Reference excludes procedural deadlines (30-day publication, 60-day notice) and the semi-annual cycle; both versions code them, judged correct as deadline events."
+}

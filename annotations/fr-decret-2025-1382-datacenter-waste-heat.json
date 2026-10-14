@@ -1,0 +1,780 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "fr-decret-2025-1382-datacenter-waste-heat",
+ "tier": "B",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "light, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-interim-20261014"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (Claude Code retrieval)",
+  "url": "https://eur-lex.europa.eu/legal-content/FR/TXT/PDF/?uri=NIM:202600311",
+  "retrieved": "2026-10-14",
+  "version": "JORF n° 305 du 30 décembre 2025, texte n° 20 (JO PDF notified to the Commission as national transposition measure)",
+  "language": "fr",
+  "extent": "full",
+  "note": "The decree exists: official title 'Décret n° 2025-1382 du 29 décembre 2025 relatif à la transposition de la directive (UE) 2023/1791 relative à l'efficacité énergétique' (NOR ECOR2517021D; Légifrance JORFTEXT000053201866). It is a broad EED transposition decree, not data-centre-specific; data-centre provisions are new art. D. 236-1 to D. 236-7 and R. 237-4 to R. 237-6 code de l'énergie (ERF >= 0,20 deemed waste-heat valorisation, threshold may be raised by arrêté). Entry into force per art. 18."
+ },
+ "classification": {
+  "domains": [
+   "energy_grid_water",
+   "compute_data_centers"
+  ],
+  "primary_domain": "energy_grid_water",
+  "mechanisms": [
+   "mandate_obligation",
+   "registration_notification",
+   "disclosure_transparency",
+   "procurement_rule"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "enterprise",
+   "data_center_operator",
+   "data_center_occupant",
+   "government_agency"
+  ],
+  "affected_roles": [
+   "general_public"
+  ],
+  "decision_margins": [
+   "firm:compliance_process",
+   "firm:investment_location"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national"
+   ],
+   "description": "Applies to data centres and energy installations under the French energy and environment codes, with thresholds measured per SIRET number.",
+   "evidence": {
+    "provision": "Art. 8 (D. 236-1 I)",
+    "quote": "Le présent chapitre s’applique aux centres de données mentionnés à l’article L. 236-1."
+   }
+  },
+  "agora_strategies": [
+   "Disclosure",
+   "Performance requirements"
+  ]
+ },
+ "summary": {
+  "short": "Transposes parts of EU Directive 2023/1791 on energy efficiency into French energy and environment codes. For data centres above a power threshold, it sets declaration, public reporting and waste-heat reuse duties. In force 1 January 2026.",
+  "long": "Décret no 2025-1382 transposes parts of EU Directive 2023/1791 on energy efficiency into the energy and environment codes, in force 1 January 2026. For data centres above a power threshold under Art. L. 236-1 of the energy code, operators must declare installed power and a contact to the energy minister, publish annual energy and sustainability data by 15 May, and set up data collection. The energy minister may issue formal notices and fines. Data centres are deemed to reuse waste heat if their ERF is at least 0.20, which may be raised to 0.40 by order. Heat-producing installations must file a cost-benefit analysis unless exempted, and data centres may derogate where technico-economic conditions are not met. Other provisions cover energy audits for large firms, energy performance contracts, public procurement preferences and district heating and cooling criteria."
+ },
+ "relations": [
+  {
+   "relation": "legal_basis",
+   "target_text": "Loi no 2025-391 du 30 avril 2025 portant diverses dispositions d’adaptation au droit de l’Union européenne",
+   "note": "Preamble cites article 25 of this law as the enabling provision. The Application line gives the same law as 'loi no 2025/371' (see notes).",
+   "evidence": {
+    "provision": "Visas and Application line",
+    "quote": "Vu la loi no 2025-391 du 30 avril 2025 portant diverses dispositions d’adaptation au droit de l’Union européenne"
+   }
+  },
+  {
+   "relation": "legal_basis",
+   "target_text": "Ordonnance no 2025-979 du 14 octobre 2025 portant transposition des articles 7, 26 et 27 de la directive (UE) 2023/1791",
+   "note": "Cited as a basis for the decree in the Application line. The ordonnance transposes articles 7, 26 and 27 of the directive.",
+   "evidence": {
+    "provision": "Application line and visas",
+    "quote": "et en application de l’ordonnance no 2025-979 du 14 octobre 2025"
+   }
+  },
+  {
+   "relation": "implements",
+   "target_text": "Directive (UE) 2023/1791 du Parlement européen et du Conseil du 13 septembre 2023 relative à l’efficacité énergétique",
+   "note": "The decree title describes it as a transposition measure for this directive.",
+   "evidence": {
+    "provision": "Title",
+    "quote": "de la directive (UE) 2023/1791 relative à l’efficacité énergétique"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Code de l’énergie (partie réglementaire)",
+   "note": "Articles 2 to 11 modify the regulatory part in many places. This includes repeals (R. 234-3 abrogé; D. 233-8 and D. 233-9 abrogés) and new articles such as R. 211-11 to R. 211-18, D. 236-1 to D. 236-7 and R. 237-1 to R. 237-7.",
+   "evidence": {
+    "provision": "Art. 1",
+    "quote": "Le code de l’énergie est modifié conformément aux articles 2 à 11 du présent décret."
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Code de l’environnement (partie réglementaire)",
+   "note": "Art. 13 amends R. 122-5 and R. 122-20; Art. 14 amends D. 181-15-2; Art. 15 amends R. 229-51 and inserts R. 229-51-1; Art. 16 amends R. 512-46-4 and R. 593-16.",
+   "evidence": {
+    "provision": "Art. 12",
+    "quote": "Le code de l’environnement est modifié conformément aux articles 13 à 16 du présent décret."
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Code de l’urbanisme",
+   "note": "Art. 17 adds an item s) to R.* 431-16 on the cost-benefit analysis or the exemption justification for data centres.",
+   "evidence": {
+    "provision": "Art. 17",
+    "quote": "L’article R.* 431-16 du code de l’urbanisme est complété par un s ainsi rédigé"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Code de la défense (articles R. 1332-4 and R. 1332-22)",
+   "note": "Data centres designated under these articles fall within the exemption in L. 236-1 I 1o (D. 236-1 III).",
+   "evidence": {
+    "provision": "Art. 8 (Art. D. 236-1 III)",
+    "quote": "en application des articles R. 1332-4 et R. 1332-22 du code de la défense"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Code du commerce (article R. 123-221, second alinéa)",
+   "note": "SIRET number used as the scale for the power threshold (D. 236-1 II and R. 237-4 I).",
+   "evidence": {
+    "provision": "Art. 8 (Art. D. 236-1 II)",
+    "quote": "deuxième alinéa de l’article R. 123-221 du code du commerce"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Code des postes et des communications électroniques",
+   "note": "Visa only. The operative reference is in D. 236-6, which covers data-centre operators also regulated under L. 32 33o and L. 36-6 8o of that code.",
+   "evidence": {
+    "provision": "Visas",
+    "quote": "Vu le code des postes et des communications électroniques ;"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Règlement délégué (UE) 2024/1364 de la Commission du 14 mars 2024",
+   "note": "Referred to for conformity of data disclosure (D. 236-3 III) and for the ERF definition in Annex III (R. 237-4 II).",
+   "evidence": {
+    "provision": "Art. 8 (Art. D. 236-3 III)",
+    "quote": "dispositions du règlement délégué (UE) 2024/1364 de la Commission"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Règlement (UE) 2024/1781 du Parlement européen et du Conseil du 13 juin 2024",
+   "note": "Art. 7 (R. 234-4 2o b) extends the delegated-act reference to acts adopted under article 4 of this regulation.",
+   "evidence": {
+    "provision": "Art. 7 (R. 234-4 2o b)",
+    "quote": "règlement 2024/1781/UE du Parlement européen et du Conseil du 13 juin 2024"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive 2012/27/UE (reference replaced in R. 311-12-1)",
+   "note": "Art. 9 replaces the reference to annex II of directive 2012/27/UE with a reference to annex III of directive (UE) 2023/1791.",
+   "evidence": {
+    "provision": "Art. 9",
+    "quote": "l’annexe II de la directive 2012/27/UE du Parlement européen et"
+   }
+  }
+ ],
+ "notes": "The preamble cites the enabling law as loi no 2025-391 of 30 April 2025 (article 25), but the Application line cites it as loi no 2025/371. Extraction artefacts: R. 711-6 III 1o ends mid-sentence and a stray 'I;' line appears; R. 712-1 cites 'L. 2112' where L. 211-2 seems intended; the R. 234-5 replacement reads 'au I l’article L. 234-1' with a missing preposition. Relations to EU acts and codes have null target IDs because they are not in the registry. Entry-into-force rules are in article 18 and are not annotated here.",
+ "events": [
+  {
+   "event": "published",
+   "date": "2025-12-30",
+   "date_type": "absolute",
+   "date_text": "30 décembre 2025",
+   "applies_to": "Journal officiel de la République française, issue dateline",
+   "evidence": {
+    "provision": "Journal officiel page header",
+    "quote": "30 décembre 2025"
+   }
+  },
+  {
+   "event": "consultation",
+   "date": "2025-07-22",
+   "date_type": "absolute",
+   "date_text": "du 22 juillet 2025 au 1er septembre 2025",
+   "applies_to": "draft decree (public consultation under Code de l'environnement L. 123-19-1)",
+   "evidence": {
+    "provision": "Visas (Vu ...)",
+    "quote": "la consultation du public du 22 juillet 2025 au 1er septembre 2025"
+   }
+  },
+  {
+   "event": "signed",
+   "date": "2025-12-29",
+   "date_type": "absolute",
+   "date_text": "Fait le 29 décembre 2025.",
+   "applies_to": "decree as a whole",
+   "evidence": {
+    "provision": "Signature block (after Art. 19)",
+    "quote": "Fait le 29 décembre 2025."
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2026-01-01",
+   "date_type": "absolute",
+   "date_text": "Le présent décret entre en vigueur le 1er janvier 2026.",
+   "applies_to": "decree as a whole (general entry into force)",
+   "evidence": {
+    "provision": "Art. 18 I",
+    "quote": "Le présent décret entre en vigueur le 1er janvier 2026."
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2026-01-01",
+   "date_type": "absolute",
+   "date_text": "A partir du 1er janvier 2026 : 150 grammes par kilowattheure",
+   "applies_to": "cold networks: greenhouse gas emissions per unit of cold delivered at or below 150 g/kWh",
+   "evidence": {
+    "provision": "Art. 10 (inserting Code de l'énergie, Art. R. 711-6 I 1o)",
+    "quote": "A partir du 1er janvier 2026 : 150 grammes par kilowattheure"
+   }
+  },
+  {
+   "event": "application",
+   "date": "2026-07-01",
+   "date_type": "absolute",
+   "date_text": "Les dispositions des articles 3 et 13 s’appliquent aux projets dont le dépôt de la demande d’autorisation complète est postérieur au 1er juillet 2026.",
+   "applies_to": "projects whose complete authorisation application is filed after 1 July 2026 (Arts. 3 and 13)",
+   "evidence": {
+    "provision": "Art. 18 II",
+    "quote": "Les dispositions des articles 3 et 13 s’appliquent aux projets dont le dépôt de la demande d’autorisation complète est postérieur au 1er juillet 2026."
+   }
+  },
+  {
+   "event": "application",
+   "date": "2026-07-01",
+   "date_type": "absolute",
+   "date_text": "Les dispositions de l’article 13 s’appliquent aux plans et programmes dont la première consultation publique intervient après 1er juillet 2026.",
+   "applies_to": "plans and programmes whose first public consultation is after 1 July 2026 (Art. 13)",
+   "evidence": {
+    "provision": "Art. 18 II",
+    "quote": "Les dispositions de l’article 13 s’appliquent aux plans et programmes dont la première consultation publique intervient après 1er juillet 2026."
+   }
+  },
+  {
+   "event": "application",
+   "date": "2026-07-01",
+   "date_type": "absolute",
+   "date_text": "Les dispositions de l’article 15 s’appliquent aux plans climat-air-énergie territoriaux transmis pour avis au préfet de région et au président du conseil régional après le 1er juillet 2026.",
+   "applies_to": "plans climat-air-énergie territoriaux transmitted for opinion after 1 July 2026 (Art. 15)",
+   "evidence": {
+    "provision": "Art. 18 III",
+    "quote": "Les dispositions de l’article 15 s’appliquent aux plans climat-air-énergie territoriaux transmis pour avis au préfet de région et au président du conseil régional après le 1er juillet 2026."
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2026-01-01",
+   "date_type": "absolute",
+   "date_text": "A partir du 1er janvier 2035 : 100 grammes par kilowattheure",
+   "applies_to": "cold networks: greenhouse gas emissions at or below 100 g/kWh",
+   "evidence": {
+    "provision": "Art. 10 (inserting Code de l'énergie, Art. R. 711-6 I 2o)",
+    "quote": "A partir du 1er janvier 2035 : 100 grammes par kilowattheure"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "au plus tard le 15 mai de chaque année",
+   "applies_to": "data centre operators (Art. D. 236-3 I): annual administrative, environmental and energy information for the previous calendar year, transmitted and made public",
+   "evidence": {
+    "provision": "Art. 8 (inserting Code de l'énergie, Art. D. 236-3 I)",
+    "quote": "transmet, au plus tard le 15 mai de chaque année, des informations administratives"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "Pour les nouveaux centres de données, cette déclaration est transmise dans un délai qui n’excède pas deux mois après la date de mise en service de cette installation.",
+   "anchor": "date de mise en service of the new data centre installation",
+   "applies_to": "operators of new data centres: declaration of installed power, SIRET number and contact person to the minister in charge of energy",
+   "offset_value": 2,
+   "offset_unit": "months",
+   "evidence": {
+    "provision": "Art. 8 (inserting Code de l'énergie, Art. D. 236-2)",
+    "quote": "dans un délai qui n’excède pas deux mois après la date de mise en service de cette installation"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2039-12-31",
+   "date_type": "absolute",
+   "date_text": "Jusqu’au 31 décembre 2039, le réseau est alimenté par au moins 50 % d’énergie renouvelable et de récupération",
+   "applies_to": "heating networks: at least 50% renewable and recovered energy, until 31 December 2039",
+   "evidence": {
+    "provision": "Art. 10 (inserting Code de l'énergie, Art. R. 711-5 I 1o)",
+    "quote": "Jusqu’au 31 décembre 2039, le réseau est alimenté par au moins 50 % d’énergie renouvelable et de récupération"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2040-01-01",
+   "date_type": "absolute",
+   "date_text": "A compter du 1er janvier 2040, le réseau est alimenté par au moins 75 % d’énergie renouvelable et de récupération",
+   "applies_to": "heating networks: at least 75% renewable and recovered energy",
+   "evidence": {
+    "provision": "Art. 10 (inserting Code de l'énergie, Art. R. 711-5 I 2o)",
+    "quote": "A compter du 1er janvier 2040, le réseau est alimenté par au moins 75 % d’énergie renouvelable et de récupération"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2045-01-01",
+   "date_type": "absolute",
+   "date_text": "A partir du 1er janvier 2045 : 50 grammes par kilowattheure",
+   "applies_to": "cold networks: greenhouse gas emissions at or below 50 g/kWh",
+   "evidence": {
+    "provision": "Art. 10 (inserting Code de l'énergie, Art. R. 711-6 I 3o)",
+    "quote": "A partir du 1er janvier 2045 : 50 grammes par kilowattheure"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2050-01-01",
+   "date_type": "absolute",
+   "date_text": "A compter du 1er janvier 2050, le réseau est alimenté exclusivement par de l’énergie renouvelable et de récupération.",
+   "applies_to": "heating networks: supplied exclusively by renewable and recovered energy",
+   "evidence": {
+    "provision": "Art. 10 (inserting Code de l'énergie, Art. R. 711-5 I 3o)",
+    "quote": "A compter du 1er janvier 2050, le réseau est alimenté exclusivement par de l’énergie renouvelable et de récupération"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2050-01-01",
+   "date_type": "absolute",
+   "date_text": "A partir du 1er janvier 2050 : 0 gramme par kilowattheure",
+   "applies_to": "cold networks: greenhouse gas emissions at or below 0 g/kWh",
+   "evidence": {
+    "provision": "Art. 10 (inserting Code de l'énergie, Art. R. 711-6 I 4o)",
+    "quote": "A partir du 1er janvier 2050 : 0 gramme par kilowattheure"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2027-10-01",
+   "date_type": "absolute",
+   "date_text": "au plus tard le 1er octobre 2027",
+   "applies_to": "installations under R. 237-1 I 4o whose building permit application was filed before 1 January 2026 and that do not recover their waste heat: cost-benefit analysis transmitted to the competent authority",
+   "evidence": {
+    "provision": "Art. 8 (inserting Code de l'énergie, Art. R. 237-5)",
+    "quote": "cette analyse coûts-avantages est transmise à l’autorité compétente au plus tard le 1er octobre 2027"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "dans un délai n’excédant pas deux mois après la date de finalisation de cette analyse",
+   "anchor": "date de finalisation de l’analyse coûts-avantages",
+   "applies_to": "operators of installations subject to cost-benefit analysis: transmission of information to the minister in charge of energy",
+   "offset_value": 2,
+   "offset_unit": "months",
+   "evidence": {
+    "provision": "Art. 8 (inserting Code de l'énergie, Art. R. 237-2 II)",
+    "quote": "dans un délai n’excédant pas deux mois après la date de finalisation de cette analyse"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "réalise l’analyse coût-avantages dans un délai qui n’excède pas un an",
+   "anchor": "date on which the exemption criterion is no longer met",
+   "applies_to": "installations exempt from cost-benefit analysis under R. 237-1 IV whose exemption criterion ceases to be met",
+   "offset_value": 1,
+   "offset_unit": "years",
+   "evidence": {
+    "provision": "Art. 8 (inserting Code de l'énergie, Art. R. 237-1 V)",
+    "quote": "réalise l’analyse coût-avantages dans un délai qui n’excède pas un an"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "au plus tard cinq ans après la date de mise en service de cette installation telle que définie à l’article D. 236-2",
+   "anchor": "date de mise en service of the installation (Art. D. 236-2)",
+   "applies_to": "data centre installations exempt under R. 237-1 IV 4o: heat recovery or justification that it will be recovered",
+   "offset_value": 5,
+   "offset_unit": "years",
+   "evidence": {
+    "provision": "Art. 8 (inserting Code de l'énergie, Art. R. 237-1 IV 4o)",
+    "quote": "au plus tard cinq ans après la date de mise en service de cette installation"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "capital_investment",
+   "variable_text": "montant d’investissement d’un projet",
+   "operator": ">=",
+   "value": null,
+   "value_text": "seuil d’investissement mentionné à l’article L. 211-10 du code de l’énergie",
+   "unit": "",
+   "measurement": "initial capital investment costs excluding taxes, per R. 211-13 (acquisition or upgrade of tangible assets, construction and installation, design and engineering costs)",
+   "level": "facility",
+   "trigger": "scope_definition",
+   "consequence": "Projects reaching the threshold and subject to environmental assessment must include an energy and sobriety efficiency evaluation (R. 211-12 1o)",
+   "conditions": "Applies to projects subject to environmental assessment under L. 122-1 of the environment code; value not stated in this decree",
+   "depends_on": "Article L. 211-10 of the code de l’énergie",
+   "evidence": {
+    "provision": "Art. 3 (R. 211-12, 1o)",
+    "quote": "qui atteint le seuil d’investissement mentionné à l’article L. 211-10 du code de l’énergie"
+   }
+  },
+  {
+   "variable": "energy_consumption",
+   "variable_text": "consommation d’énergie finale annuelle du projet",
+   "operator": ">",
+   "value": null,
+   "value_text": "seuil de consommation fixé au 1o du I de l’article L. 233-1",
+   "unit": "",
+   "measurement": "annual final energy consumption of the project",
+   "level": "facility",
+   "trigger": "scope_definition",
+   "consequence": "Alternative criterion for projects not subject to environmental assessment that reach the investment threshold (R. 211-12 2o)",
+   "conditions": "Applies together with the investment threshold and at least one of criteria a, b or c of R. 211-12 2o; value not stated in this decree",
+   "depends_on": "Article L. 233-1 I 1o of the code de l’énergie",
+   "evidence": {
+    "provision": "Art. 3 (R. 211-12, 2o b)",
+    "quote": "La consommation d’énergie finale annuelle de ce projet est supérieure au seuil de consommation fixé au 1o du I de l’article L. 233-1"
+   }
+  },
+  {
+   "variable": "energy_consumption",
+   "variable_text": "consommation annuelle moyenne d’énergie finale de la personne morale (seuil 1o)",
+   "operator": ">=",
+   "value": null,
+   "value_text": "seuil fixé au 1o du I de l’article L. 233-1",
+   "unit": "",
+   "measurement": "average of annual final energy consumption over the three preceding calendar years, including self-consumed renewable energy (R. 233-1 I and II)",
+   "level": "entity",
+   "trigger": "eligibility",
+   "consequence": "Determines whether the legal person is subject to the L. 233-1 duties (energy audit or energy management system, action plan)",
+   "conditions": "Consumption calculated under R. 233-1; value not stated in this decree",
+   "depends_on": "Article L. 233-1 I 1o of the code de l’énergie",
+   "evidence": {
+    "provision": "Art. 6 (R. 233-1 I)",
+    "quote": "établie pour vérifier l’atteinte des seuils fixés au 1o et au 2o du I de l’article L. 233-1"
+   }
+  },
+  {
+   "variable": "energy_consumption",
+   "variable_text": "consommation annuelle moyenne d’énergie finale de la personne morale (seuil 2o)",
+   "operator": ">=",
+   "value": null,
+   "value_text": "seuil fixé au 2o du I de l’article L. 233-1",
+   "unit": "",
+   "measurement": "average of annual final energy consumption over the three preceding calendar years, including self-consumed renewable energy (R. 233-1 I and II)",
+   "level": "entity",
+   "trigger": "eligibility",
+   "consequence": "Determines whether the legal person is subject to the L. 233-1 duties (energy audit or energy management system, action plan)",
+   "conditions": "Consumption calculated under R. 233-1; value not stated in this decree",
+   "depends_on": "Article L. 233-1 I 2o of the code de l’énergie",
+   "evidence": {
+    "provision": "Art. 6 (R. 233-1 I)",
+    "quote": "établie pour vérifier l’atteinte des seuils fixés au 1o et au 2o du I de l’article L. 233-1"
+   }
+  },
+  {
+   "variable": "power_capacity",
+   "variable_text": "puissance du centre de données (seuil de puissance)",
+   "operator": ">=",
+   "value": null,
+   "value_text": "seuil de puissance visé à l’article L. 236-1",
+   "unit": "",
+   "measurement": "power assessed at the level of the SIRET number referred to in R. 123-221 of the commerce code (D. 236-1 II)",
+   "level": "entity",
+   "trigger": "scope_definition",
+   "consequence": "Data centres reaching the power threshold fall within the data centre energy performance chapter (D. 236-1 I)",
+   "conditions": "Operator direction not stated in this decree; data centres designated under the defence code (D. 236-1 III) are excluded under L. 236-1 I 1o",
+   "depends_on": "Article L. 236-1 of the code de l’énergie",
+   "evidence": {
+    "provision": "Art. 8 (D. 236-1 II)",
+    "quote": "Le seuil de puissance visé à l’article L. 236-1 s’apprécie à l’échelle du numéro SIRET"
+   }
+  },
+  {
+   "variable": "power_capacity",
+   "variable_text": "puissance du centre de données (seuil de puissance pour la valorisation de la chaleur fatale)",
+   "operator": ">=",
+   "value": null,
+   "value_text": "seuil de puissance prévu à l’article L. 236-2",
+   "unit": "",
+   "measurement": "power assessed at the level of the SIRET number referred to in R. 123-221 of the commerce code (R. 237-4 I)",
+   "level": "entity",
+   "trigger": "scope_definition",
+   "consequence": "Determines the data centres to which the waste heat recovery provisions of L. 236-2 apply (R. 237-4 I)",
+   "conditions": "Operator direction not stated in this decree",
+   "depends_on": "Article L. 236-2 of the code de l’énergie",
+   "evidence": {
+    "provision": "Art. 8 (R. 237-4 I)",
+    "quote": "Le seuil de puissance prévu à l’article L. 236-2 s’apprécie à l’échelle du numéro SIRET"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "rejet de chaleur fatale non valorisée",
+   "operator": "<",
+   "value": null,
+   "value_text": "inférieur à un seuil défini par arrêté des ministres chargés de l’énergie et des communications électroniques",
+   "unit": "",
+   "measurement": "not stated in this decree",
+   "level": "facility",
+   "trigger": "exemption",
+   "consequence": "Installation exempt from the cost-benefit analysis obligation if the unrecovered heat rejection is below the threshold (R. 237-1 IV 1o)",
+   "conditions": "One of several alternative exemption conditions in R. 237-1 IV; justification transmitted under R. 237-1 V",
+   "depends_on": "arrêté des ministres chargés de l’énergie et des communications électroniques (R. 237-1 VII)",
+   "evidence": {
+    "provision": "Art. 8 (R. 237-1 IV 1o)",
+    "quote": "Le rejet de chaleur fatale non valorisée est inférieur à un seuil défini par arrêté des ministres chargés de l’énergie et des communications électroniques"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "distance entre la demande de chaleur et l’installation",
+   "operator": ">",
+   "value": null,
+   "value_text": "supérieure aux seuils définis par arrêté des ministres chargés de l’énergie et des communications électroniques",
+   "unit": "",
+   "measurement": "distance between the installation and the heat demand constituting a heat recovery opportunity; unit not stated",
+   "level": "facility",
+   "trigger": "exemption",
+   "consequence": "Installation exempt from the cost-benefit analysis obligation if the heat demand lies beyond the arrêté thresholds (R. 237-1 IV 2o)",
+   "conditions": "One of several alternative exemption conditions in R. 237-1 IV",
+   "depends_on": "arrêté des ministres chargés de l’énergie et des communications électroniques (R. 237-1 VII)",
+   "evidence": {
+    "provision": "Art. 8 (R. 237-1 IV 2o)",
+    "quote": "se situe à une distance de l’installation supérieure aux seuils définis par arrêté des ministres chargés de l’énergie et des communications électroniques"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "heures de fonctionnement annuelles de l’installation",
+   "operator": "<",
+   "value": 1500,
+   "value_text": "moins de 1 500 heures par an",
+   "unit": "hours per year",
+   "measurement": "average annual operating hours over 5 years, or since start of operation if operated for less than 5 years (R. 237-1 IV 3o)",
+   "level": "facility",
+   "trigger": "exemption",
+   "consequence": "Installation exempt from the cost-benefit analysis obligation when also operated only during peak-load or backup periods (R. 237-1 IV 3o)",
+   "conditions": "Applies to installations under L. 233-5 1o operated only during peak-load or backup periods",
+   "evidence": {
+    "provision": "Art. 8 (R. 237-1 IV 3o)",
+    "quote": "L’installation relève du 1o de l’article L. 233-5, est exploitée uniquement durant des périodes de pointe de charge ou de secours et fonctionne moins de 1 500 heures par an"
+   }
+  },
+  {
+   "variable": "capital_investment",
+   "variable_text": "coût de modification d’une installation, rapporté au coût d’une installation neuve comparable",
+   "operator": ">",
+   "value": 50,
+   "value_text": "dépasse 50 % du coût d’investissement d’une installation neuve comparable",
+   "unit": "percent",
+   "measurement": "cost of the modification compared with the investment cost of a comparable new installation",
+   "level": "facility",
+   "trigger": "scope_definition",
+   "consequence": "Modification qualified as a modification d’ampleur (major modification) (R. 237-3)",
+   "conditions": "Applies to installations referred to in L. 233-5 1o to 4o",
+   "evidence": {
+    "provision": "Art. 8 (R. 237-3)",
+    "quote": "est qualifiée de modification d’ampleur si son coût dépasse 50 % du coût d’investissement d’une installation neuve comparable"
+   }
+  },
+  {
+   "variable": "energy_efficiency",
+   "variable_text": "facteur d’efficacité de réutilisation de la chaleur fatale (ERF)",
+   "operator": ">=",
+   "value": 0.2,
+   "value_text": "supérieur ou égal à 0,20",
+   "unit": "ratio",
+   "measurement": "ERF as defined in annex III of Delegated Regulation (EU) 2024/1364",
+   "level": "facility",
+   "trigger": "exemption",
+   "consequence": "Data centre deemed to valorise its waste heat under L. 236-2, and so outside the cost-benefit analysis scope for data centres that do not valorise heat (R. 237-1 I 4o)",
+   "conditions": "Applies to data centres above the power threshold of L. 236-2 (R. 237-4 I)",
+   "evidence": {
+    "provision": "Art. 8 (R. 237-4 II)",
+    "quote": "est supérieur ou égal à 0,20"
+   }
+  },
+  {
+   "variable": "energy_efficiency",
+   "variable_text": "facteur d’efficacité de réutilisation de la chaleur fatale (ERF), seuil pouvant être relevé",
+   "operator": ">=",
+   "value": null,
+   "value_text": "peut être porté jusqu’à 0,40 par arrêté des ministres chargés de l’énergie et des communications électroniques",
+   "unit": "ratio",
+   "measurement": "ERF as defined in annex III of Delegated Regulation (EU) 2024/1364",
+   "level": "facility",
+   "trigger": "exemption",
+   "consequence": "The ERF threshold may be raised, up to 0.40, by order of the ministers",
+   "conditions": "To be set in light of the evolution of heat recovery technologies and available energy outlets",
+   "depends_on": "arrêté des ministres chargés de l’énergie et des communications électroniques",
+   "evidence": {
+    "provision": "Art. 8 (R. 237-4 II)",
+    "quote": "Ce seuil peut être porté jusqu’à 0,40 par arrêté des ministres chargés de l’énergie et des communications électroniques"
+   }
+  },
+  {
+   "variable": "energy_efficiency",
+   "variable_text": "part d’énergie renouvelable et de récupération du réseau de chaleur",
+   "operator": ">=",
+   "value": 50,
+   "value_text": "au moins 50 % d’énergie renouvelable et de récupération",
+   "unit": "percent",
+   "measurement": "share of renewable and recovered energy in the total energy injected into the network and all sources used within the contract or regie perimeter (R. 711-5 II 3o)",
+   "level": "facility",
+   "trigger": "designation_category",
+   "consequence": "Heat network qualifies as efficient (efficace) under R. 711-5 I",
+   "conditions": "Applies until 31 December 2039",
+   "evidence": {
+    "provision": "Art. 10 (R. 711-5 I 1o)",
+    "quote": "Jusqu’au 31 décembre 2039, le réseau est alimenté par au moins 50 % d’énergie renouvelable et de récupération"
+   }
+  },
+  {
+   "variable": "energy_efficiency",
+   "variable_text": "part d’énergie renouvelable et de récupération du réseau de chaleur",
+   "operator": ">=",
+   "value": 75,
+   "value_text": "au moins 75 % d’énergie renouvelable et de récupération",
+   "unit": "percent",
+   "measurement": "share of renewable and recovered energy in the total energy injected into the network and all sources used within the contract or regie perimeter (R. 711-5 II 3o)",
+   "level": "facility",
+   "trigger": "designation_category",
+   "consequence": "Heat network qualifies as efficient (efficace) under R. 711-5 I",
+   "conditions": "Applies from 1 January 2040",
+   "evidence": {
+    "provision": "Art. 10 (R. 711-5 I 2o)",
+    "quote": "A compter du 1er janvier 2040, le réseau est alimenté par au moins 75 % d’énergie renouvelable et de récupération"
+   }
+  },
+  {
+   "variable": "energy_efficiency",
+   "variable_text": "part d’énergie renouvelable et de récupération du réseau de chaleur",
+   "operator": "=",
+   "value": 100,
+   "value_text": "exclusivement par de l’énergie renouvelable et de récupération",
+   "unit": "percent",
+   "measurement": "share of renewable and recovered energy in the total energy injected into the network and all sources used within the contract or regie perimeter (R. 711-5 II 3o)",
+   "level": "facility",
+   "trigger": "designation_category",
+   "consequence": "Heat network qualifies as efficient (efficace) under R. 711-5 I",
+   "conditions": "Applies from 1 January 2050; the text says supplied exclusively by renewable and recovered energy, coded here as 100 percent",
+   "evidence": {
+    "provision": "Art. 10 (R. 711-5 I 3o)",
+    "quote": "A compter du 1er janvier 2050, le réseau est alimenté exclusivement par de l’énergie renouvelable et de récupération"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "émissions de gaz à effet de serre par unité de froid livré (réseau de froid)",
+   "operator": "<=",
+   "value": 150,
+   "value_text": "A partir du 1er janvier 2026 : 150 grammes par kilowattheure",
+   "unit": "grams per kilowatt-hour",
+   "measurement": "GHG emissions of cold supply per unit of cold delivered, relative to all energy injected into the network and all sources used within the contract or regie perimeter (R. 711-6 II)",
+   "level": "facility",
+   "trigger": "designation_category",
+   "consequence": "Cold network qualifies as efficient (efficace) under R. 711-6 I",
+   "conditions": "Applies from 1 January 2026",
+   "evidence": {
+    "provision": "Art. 10 (R. 711-6 I 1o)",
+    "quote": "A partir du 1er janvier 2026 : 150 grammes par kilowattheure"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "émissions de gaz à effet de serre par unité de froid livré (réseau de froid)",
+   "operator": "<=",
+   "value": 100,
+   "value_text": "A partir du 1er janvier 2035 : 100 grammes par kilowattheure",
+   "unit": "grams per kilowatt-hour",
+   "measurement": "GHG emissions of cold supply per unit of cold delivered, relative to all energy injected into the network and all sources used within the contract or regie perimeter (R. 711-6 II)",
+   "level": "facility",
+   "trigger": "designation_category",
+   "consequence": "Cold network qualifies as efficient (efficace) under R. 711-6 I",
+   "conditions": "Applies from 1 January 2035",
+   "evidence": {
+    "provision": "Art. 10 (R. 711-6 I 2o)",
+    "quote": "A partir du 1er janvier 2035 : 100 grammes par kilowattheure"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "émissions de gaz à effet de serre par unité de froid livré (réseau de froid)",
+   "operator": "<=",
+   "value": 50,
+   "value_text": "A partir du 1er janvier 2045 : 50 grammes par kilowattheure",
+   "unit": "grams per kilowatt-hour",
+   "measurement": "GHG emissions of cold supply per unit of cold delivered, relative to all energy injected into the network and all sources used within the contract or regie perimeter (R. 711-6 II)",
+   "level": "facility",
+   "trigger": "designation_category",
+   "consequence": "Cold network qualifies as efficient (efficace) under R. 711-6 I",
+   "conditions": "Applies from 1 January 2045",
+   "evidence": {
+    "provision": "Art. 10 (R. 711-6 I 3o)",
+    "quote": "A partir du 1er janvier 2045 : 50 grammes par kilowattheure"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "émissions de gaz à effet de serre par unité de froid livré (réseau de froid)",
+   "operator": "<=",
+   "value": 0,
+   "value_text": "A partir du 1er janvier 2050 : 0 gramme par kilowattheure",
+   "unit": "grams per kilowatt-hour",
+   "measurement": "GHG emissions of cold supply per unit of cold delivered, relative to all energy injected into the network and all sources used within the contract or regie perimeter (R. 711-6 II)",
+   "level": "facility",
+   "trigger": "designation_category",
+   "consequence": "Cold network qualifies as efficient (efficace) under R. 711-6 I",
+   "conditions": "Applies from 1 January 2050",
+   "evidence": {
+    "provision": "Art. 10 (R. 711-6 I 4o)",
+    "quote": "A partir du 1er janvier 2050 : 0 gramme par kilowattheure"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "heures de fonctionnement annuelles d’une installation de production de chaleur",
+   "operator": "<",
+   "value": 500,
+   "value_text": "exploitée moins de 500 heures par an",
+   "unit": "hours per year",
+   "measurement": "annual operating hours of the heat-production installation",
+   "level": "facility",
+   "trigger": "exclusion",
+   "consequence": "Installation is not part of the normal operation of a heat network under L. 711-5 II (R. 711-8)",
+   "conditions": "Applies to a heat-production installation intended for peak demand; the project holder must submit a note showing no alternative can be implemented under acceptable technical and economic conditions",
+   "evidence": {
+    "provision": "Art. 10 (R. 711-8)",
+    "quote": "Dans ce second cas, l’installation est exploitée moins de 500 heures par an"
+   }
+  },
+  {
+   "variable": "capital_investment",
+   "variable_text": "coût de modification d’une installation de réseau de chaleur, rapporté au coût d’une installation neuve comparable",
+   "operator": ">",
+   "value": 50,
+   "value_text": "excède 50 % du coût d’investissement d’une installation neuve comparable",
+   "unit": "percent",
+   "measurement": "cost of the modification compared with the investment cost of a comparable new installation",
+   "level": "facility",
+   "trigger": "scope_definition",
+   "consequence": "Modification qualified as a modification d’ampleur (major modification) for the purposes of L. 711-5 III (R. 711-9)",
+   "conditions": "Applies for the purposes of L. 711-5 III",
+   "evidence": {
+    "provision": "Art. 10 (R. 711-9)",
+    "quote": "la modification d’une installation est qualifiée de modification d’ampleur si son coût excède 50 % du coût d’investissement d’une installation neuve comparable"
+   }
+  }
+ ],
+ "section_status": {}
+}

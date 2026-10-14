@@ -1,0 +1,334 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "us-ca-sb243-2025",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "AGORA plaintext (ETO, CC BY-NC 4.0), local cache",
+  "url": "https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260SB243",
+  "retrieved": "2026-04-23",
+  "version": "1.33.0 (2026-09-16)",
+  "language": "en",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "generative_ai",
+   "minors_child_safety",
+   "online_safety_content",
+   "consumer_protection"
+  ],
+  "primary_domain": "generative_ai",
+  "mechanisms": [
+   "mandate_obligation",
+   "disclosure_transparency",
+   "liability_rule"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "platform_operator"
+  ],
+  "affected_roles": [
+   "minors",
+   "consumers_users"
+  ],
+  "decision_margins": [
+   "firm:product_design_release",
+   "firm:compliance_process",
+   "household:information"
+  ],
+  "territorial_scope": {
+   "types": [
+    "subnational",
+    "extraterritorial"
+   ],
+   "description": "Applies to operators that make companion chatbot platforms available to a user in California, including operators located outside the state if they reach California users.",
+   "evidence": {
+    "provision": "Bus. & Prof. Code § 22601(e)",
+    "quote": "“Operator” means a person who makes a companion chatbot platform available to a user in the state."
+   }
+  },
+  "agora_harms": [
+   "Detrimental content",
+   "Harm to health/safety"
+  ],
+  "agora_incentives": [
+   "Civil liability"
+  ],
+  "agora_risk_factors": [
+   "Safety",
+   "Transparency"
+  ],
+  "agora_strategies": [
+   "Disclosure",
+   "Disclosure: In deployment",
+   "Disclosure: About incidents"
+  ]
+ },
+ "summary": {
+  "short": "Adds Chapter 22.6 on companion chatbot platforms available to users in California, under the Business and Professions Code. Requires operators to give AI disclosures, maintain suicide-prevention protocols, protect known minors, and report annually to the Office of Suicide Prevention from July 1, 2027, with a private right of action.",
+  "long": "Adds Chapter 22.6 to Division 8 of the Business and Professions Code, regulating operators that make companion chatbot platforms available to users in California. A companion chatbot is an AI system with a natural-language interface that gives adaptive, human-like responses, can meet social needs and sustains relationships across interactions; customer-service bots and limited video-game bots are excluded. Operators must issue a clear and conspicuous notice that a chatbot is artificial and not human where a reasonable person would be misled. They must maintain and publish a protocol against suicidal ideation and self-harm content, including referrals to crisis services, before letting chatbots engage users. For users known to be minors, operators must disclose AI interaction, give default reminders at least every three hours to take a break, and take reasonable measures against sexually explicit visual material. From July 1, 2027, operators must annually report to the Office of Suicide Prevention referral counts and protocols, without personal identifiers. Operators must also disclose that companion chatbots may not be suitable for some minors. Injured persons may sue for injunctive relief, the greater of actual damages or $1,000 per violation, and attorney's fees."
+ },
+ "relations": [
+  {
+   "relation": "amends",
+   "target_text": "Business and Professions Code, Division 8 (new Chapter 22.6, Sections 22601-22606)",
+   "note": "Adds Chapter 22.6, Companion Chatbots, to Division 8 of the Business and Professions Code.",
+   "evidence": {
+    "provision": "SECTION 1",
+    "quote": "Chapter 22.6 (commencing with Section 22601) is added to Division 8 of the Business and Professions Code, to read:"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "California Health and Safety Code, Section 131300",
+   "note": "Defines 'Office' as the Office of Suicide Prevention established under Section 131300; the Office receives operator reports under Section 22603.",
+   "evidence": {
+    "provision": "22601(d)",
+    "quote": "the Office of Suicide Prevention established pursuant to Section 131300 of the Health and Safety Code"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "18 U.S.C. Section 2256",
+   "note": "Defines 'sexually explicit conduct' by reference to 18 U.S.C. Section 2256.",
+   "evidence": {
+    "provision": "22601(f)",
+    "quote": "has the meaning defined in Section 2256 of Title 18 of the United States Code"
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "Office of Suicide Prevention",
+   "role": "designated",
+   "function": "Receives annual operator reports on crisis referral notifications and suicidal-ideation protocols (Section 22603(a)); posts data from those reports on its website (Section 22603(c)). Established under Health and Safety Code Section 131300.",
+   "evidence": {
+    "provision": "22601(d)",
+    "quote": "the Office of Suicide Prevention established pursuant to Section 131300 of the Health and Safety Code"
+   }
+  }
+ ],
+ "notes": "The document contains two identical copies of the enacted text, each under a different AGORA header; it is annotated once. The text gives no chapter, bill or session-law number, so enacted_by_bill is not coded even though the registry status is adopted. 'Operator' is a defined term for a person, not a named entity, so it is not listed under entities. Section 22603(a)(1) refers internally to Section 22602. The relations section is populated in the relations array, so its section_status entry is a required placeholder only.",
+ "events": [
+  {
+   "event": "application",
+   "date": "2027-07-01",
+   "date_type": "absolute",
+   "date_text": "Beginning July 1, 2027, an operator shall annually report to the office all of the following:",
+   "applies_to": "Operators' annual reports to the Office of Suicide Prevention under Bus. & Prof. Code § 22603(a)",
+   "evidence": {
+    "provision": "Sec. 1, Bus. & Prof. Code § 22603(a)",
+    "quote": "Beginning July 1, 2027, an operator shall annually report to the office all of the following:"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "annually",
+   "applies_to": "Annual operator reports to the Office of Suicide Prevention under Bus. & Prof. Code § 22603(a), covering the preceding calendar year",
+   "evidence": {
+    "provision": "Sec. 1, Bus. & Prof. Code § 22603(a)",
+    "quote": "an operator shall annually report to the office all of the following:"
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "Artificial intelligence",
+   "defined_in": "this chapter (Bus. & Prof. Code §22601)",
+   "evidence": {
+    "provision": "Bus. & Prof. Code §22601(a)",
+    "quote": "“Artificial intelligence” means an engineered or machine-based system that varies in its level of autonomy"
+   }
+  },
+  {
+   "term": "Companion chatbot",
+   "defined_in": "this chapter (Bus. & Prof. Code §22601); exclusions in §22601(b)(2)(A)-(C)",
+   "evidence": {
+    "provision": "Bus. & Prof. Code §22601(b)(1)",
+    "quote": "“Companion chatbot” means an artificial intelligence system with a natural language interface that provides adaptive, human-like responses to user inputs"
+   }
+  },
+  {
+   "term": "Companion chatbot platform",
+   "defined_in": "this chapter (Bus. & Prof. Code §22601)",
+   "evidence": {
+    "provision": "Bus. & Prof. Code §22601(c)",
+    "quote": "“Companion chatbot platform” means a platform that allows a user to engage with companion chatbots."
+   }
+  },
+  {
+   "term": "Office",
+   "defined_in": "this chapter (Bus. & Prof. Code §22601); office established under Health and Safety Code §131300",
+   "evidence": {
+    "provision": "Bus. & Prof. Code §22601(d)",
+    "quote": "“Office” means the Office of Suicide Prevention established pursuant to Section 131300 of the Health and Safety Code."
+   }
+  },
+  {
+   "term": "Operator",
+   "defined_in": "this chapter (Bus. & Prof. Code §22601)",
+   "evidence": {
+    "provision": "Bus. & Prof. Code §22601(e)",
+    "quote": "“Operator” means a person who makes a companion chatbot platform available to a user in the state."
+   }
+  },
+  {
+   "term": "Sexually explicit conduct",
+   "defined_in": "Section 2256 of Title 18 of the United States Code (by reference)",
+   "evidence": {
+    "provision": "Bus. & Prof. Code §22601(f)",
+    "quote": "“Sexually explicit conduct” has the meaning defined in Section 2256 of Title 18 of the United States Code."
+   }
+  },
+  {
+   "term": "Video game",
+   "defined_in": "this chapter (Bus. & Prof. Code §22601)",
+   "evidence": {
+    "provision": "Bus. & Prof. Code §22601(g)",
+    "quote": "“Video game” means a game played on an electronic amusement device that utilizes a computer, microprocessor, or similar electronic circuitry and its own monitor"
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "notice_to_users",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "Operator must issue a clear and conspicuous notification that the companion chatbot is artificially generated and not human, where a reasonable person would be misled to believe they are interacting with a human.",
+   "conditional_on": "A reasonable person interacting with a companion chatbot would be misled to believe the person is interacting with a human",
+   "evidence": {
+    "provision": "22602(a)",
+    "quote": "an operator shall issue a clear and conspicuous notification indicating that the companion chatbot is artificially generated and not human."
+   }
+  },
+  {
+   "type": "content_moderation",
+   "addressee": "platform_operator",
+   "modality": "shall_not",
+   "summary": "Operator shall prevent a companion chatbot on its platform from engaging with users unless it maintains a protocol for preventing production of suicidal ideation, suicide or self-harm content, including referring users to crisis service providers.",
+   "evidence": {
+    "provision": "22602(b)(1)",
+    "quote": "An operator shall prevent a companion chatbot on its companion chatbot platform from engaging with users unless the operator maintains a protocol"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "Operator shall publish details of the suicide and self-harm protocol on its internet website.",
+   "evidence": {
+    "provision": "22602(b)(2)",
+    "quote": "The operator shall publish details on the protocol required by this subdivision on the operator’s internet website."
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "For users the operator knows are minors: disclose that the user is interacting with artificial intelligence, and provide by default a notification at least every three hours of continuing interactions reminding the user to take a break and that the chatbot is artificially generated and not human.",
+   "conditional_on": "Operator knows the user is a minor",
+   "evidence": {
+    "provision": "22602(c)(1)",
+    "quote": "Disclose to the user that the user is interacting with artificial intelligence."
+   }
+  },
+  {
+   "type": "minors_protection",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "For users the operator knows are minors: institute reasonable measures to prevent the companion chatbot from producing visual material of sexually explicit conduct or directly stating that the minor should engage in sexually explicit conduct.",
+   "conditional_on": "Operator knows the user is a minor",
+   "evidence": {
+    "provision": "22602(c)(3)",
+    "quote": "Institute reasonable measures to prevent its companion chatbot from producing visual material of sexually explicit conduct"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "Operator shall annually report to the Office of Suicide Prevention the number of crisis referral notifications issued in the preceding calendar year, and its protocols to detect, remove and respond to suicidal ideation and to prohibit related chatbot responses.",
+   "applies_from": "Beginning July 1, 2027",
+   "evidence": {
+    "provision": "22603(a)",
+    "quote": "Beginning July 1, 2027, an operator shall annually report to the office all of the following:"
+   }
+  },
+  {
+   "type": "data_minimization",
+   "addressee": "platform_operator",
+   "modality": "shall_not",
+   "summary": "The annual report to the Office shall include only the information listed in subdivision (a) and shall not include identifiers or personal information about users.",
+   "applies_from": "Beginning July 1, 2027",
+   "evidence": {
+    "provision": "22603(b)",
+    "quote": "shall include only the information listed in subdivision (a) and shall not include any identifiers or personal information about users."
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Office of Suicide Prevention shall post data from operator reports on its internet website.",
+   "applies_from": "Beginning July 1, 2027",
+   "evidence": {
+    "provision": "22603(c)",
+    "quote": "The office shall post data from a report required by this section on its internet website."
+   }
+  },
+  {
+   "type": "testing_evaluation",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "Operator shall use evidence-based methods for measuring suicidal ideation.",
+   "evidence": {
+    "provision": "22603(d)",
+    "quote": "An operator shall use evidence-based methods for measuring suicidal ideation."
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "Operator shall disclose to users of its companion chatbot platform, in any format used to access the platform, that companion chatbots may not be suitable for some minors.",
+   "evidence": {
+    "provision": "22604",
+    "quote": "An operator shall disclose to a user of its companion chatbot platform"
+   }
+  }
+ ],
+ "enforcement": [
+  {
+   "sanction_type": "private_damages",
+   "authority": "Private person bringing a civil action (no public authority named)",
+   "triggered_by": "A person who suffers injury in fact as a result of a violation of this chapter may bring a civil action",
+   "max_penalty_text": "Damages in an amount equal to the greater of actual damages or one thousand dollars ($1,000) per violation; injunctive relief; reasonable attorney's fees and costs",
+   "max_penalty_amount": 1000,
+   "currency": "USD",
+   "penalty_formula": "Greater of actual damages or $1,000 per violation",
+   "penalty_reference": "Bus. & Prof. Code § 22605",
+   "private_right_of_action": true,
+   "cure_period": "Not stated in the text",
+   "evidence": {
+    "provision": "22605(b)",
+    "quote": "Damages in an amount equal to the greater of actual damages or one thousand dollars ($1,000) per violation."
+   }
+  }
+ ],
+ "section_status": {
+  "thresholds": {
+   "status": "not_found",
+   "note": "No numeric cutoff changes scope, eligibility, exemption, obligation tier, prohibition, benefit or penalty tier. The three-hour reminder interval in §22602(c)(2) is a duty parameter, and the $1,000 per-violation figure in §22605(b) is a damages amount (enforcement). The July 1, 2027 date is a deadline event."
+  }
+ },
+ "thresholds": []
+}

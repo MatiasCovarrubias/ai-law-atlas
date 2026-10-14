@@ -1,0 +1,164 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "us-id-sb1297-2026",
+ "tier": "B",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "light, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-interim-20261014"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "AGORA plaintext (ETO, CC BY-NC 4.0), local cache",
+  "url": "https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2026/legislation/S1297.pdf",
+  "retrieved": "2026-05-03",
+  "version": "1.33.0 (2026-09-16)",
+  "language": "en",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "generative_ai",
+   "minors_child_safety",
+   "consumer_protection"
+  ],
+  "primary_domain": "generative_ai",
+  "mechanisms": [
+   "mandate_obligation",
+   "prohibition_ban",
+   "disclosure_transparency"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "ai_provider"
+  ],
+  "affected_roles": [
+   "minors",
+   "consumers_users"
+  ],
+  "decision_margins": [
+   "firm:product_design_release",
+   "household:information",
+   "household:data_privacy"
+  ],
+  "territorial_scope": {
+   "types": [
+    "subnational"
+   ],
+   "description": "State statute of Idaho; the text does not expressly address operators outside Idaho.",
+   "evidence": {
+    "provision": "Preamble",
+    "quote": "Be It Enacted by the Legislature of the State of Idaho:"
+   }
+  },
+  "agora_harms": [
+   "Detrimental content",
+   "Harm to health/safety"
+  ],
+  "agora_incentives": [
+   "Civil liability",
+   "Fines"
+  ],
+  "agora_risk_factors": [
+   "Safety",
+   "Transparency"
+  ],
+  "agora_strategies": [
+   "Disclosure",
+   "Disclosure: In deployment"
+  ]
+ },
+ "summary": {
+  "short": "Idaho statute adding Chapter 21 (Conversational AI Safety Act) to Title 48. Requires operators of public conversational AI services to disclose AI interaction, adopt a suicide-response protocol, avoid claims of professional mental health care, and, for minors, add disclosures and safeguards. Attorney General civil penalties; effective July 1, 2027.",
+  "long": "SB 1297 (2026) adds Chapter 21, the Conversational AI Safety Act, to Title 48, Idaho Code. It applies to operators that develop and make available to the public a conversational AI service; app stores and search engines merely providing access are excluded. Developer and researcher tools, narrow-topic services, enterprise-only services, internal business tools and consumer-device voice assistants are excluded from that definition. Operators must disclose AI status where users could reasonably be misled into thinking they are talking to a human, adopt a protocol for responses to suicidal ideation with crisis referrals, and not knowingly represent a service as providing professional mental health care. For minor account holders, operators must give recurring AI disclosures, avoid unpredictable-interval engagement rewards, take reasonable measures against sexually explicit, romantic or emotionally dependent statements, and offer privacy and account tools. Violations carry an injunction and civil penalties of $1,000 per violation, capped at $500,000 per operator, or actual damages if greater, sought by the attorney general. No private right of action is created, and the chapter does not impose liability on model developers for third-party systems. It takes effect July 1, 2027."
+ },
+ "relations": [
+  {
+   "relation": "amends",
+   "target_text": "Title 48, Idaho Code",
+   "note": "Adds a new Chapter 21 (Conversational AI Safety Act, Sections 48-2101 to 48-2105) to Title 48 by addition; no existing provision is stated to be changed.",
+   "evidence": {
+    "provision": "Section 1",
+    "quote": "That Title 48, Idaho Code, be, and the same is hereby amended by the addition thereto of a NEW CHAPTER"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "18 U.S.C. 2256",
+   "note": "Defines 'sexually explicit conduct' and 'visual depiction' by reference to the federal definitions in 18 U.S.C. 2256, which are used in Section 48-2104(3).",
+   "evidence": {
+    "provision": "48-2102(8)",
+    "quote": "have the same meanings as provided in 18 U.S.C. 2256"
+   }
+  }
+ ],
+ "notes": "The text is a bill-form amendment with no bill number, session-law citation or legislative history, so no enacted_by_bill row is recorded. Section 48-2104(2) applies to an operator who 'knows or has reasonable certainty that an account holder is a minor', while the defined term 'Minor' in 48-2102(4) uses 'actual knowledge or reasonable certainty'; the operative wording differs from the definition. Section 48-2105(1) sets civil penalties of $1,000 per violation capped at $500,000 per operator 'or actual damages, whichever is greater', which does not state clearly whether damages are recoverable in addition to penalties or whether the cap applies to damages. Section 2 sets the effective date as July 1, 2027.",
+ "events": [
+  {
+   "event": "entry_into_force",
+   "date": "2027-07-01",
+   "date_type": "absolute",
+   "date_text": "July 1, 2027",
+   "applies_to": "Chapter 21, Title 48, Idaho Code (Conversational AI Safety Act), as added by Section 1",
+   "evidence": {
+    "provision": "SECTION 2",
+    "quote": "This act shall be in full force and effect on and after July 1, 2027."
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "age",
+   "variable_text": "under eighteen (18) years of age",
+   "operator": "<",
+   "value": 18,
+   "value_text": "under eighteen (18) years of age",
+   "unit": "years",
+   "measurement": "Determined by whether an operator has actual knowledge or reasonable certainty of the individual's age",
+   "level": "person",
+   "trigger": "scope_definition",
+   "consequence": "Individual is a minor; minor account holder provisions of 48-2104 apply to the operator's service",
+   "conditions": "Operator has actual knowledge or reasonable certainty that the individual is under eighteen (18) years of age",
+   "evidence": {
+    "provision": "48-2102(4)",
+    "quote": "under circumstances where an operator has actual knowledge or reasonable certainty that the individual is under eighteen (18) years of age"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "interval for repeated AI disclosure during a continuous interaction",
+   "operator": "<=",
+   "value": 3,
+   "value_text": "Appearing at least every three (3) hours in a continuous conversational AI service interaction",
+   "unit": "hours",
+   "measurement": "Interval between repeated disclosures within a continuous conversational AI service interaction",
+   "level": "service",
+   "trigger": "obligation",
+   "consequence": "Disclosure that the user is interacting with artificial intelligence must recur at least every three hours, in addition to the start of each session",
+   "conditions": "Applies to minor account holders where the operator uses the combined option under 48-2104(1)(b) instead of a persistent visible disclaimer under 48-2104(1)(a)",
+   "evidence": {
+    "provision": "48-2104(1)(b)(ii)",
+    "quote": "Appearing at least every three (3) hours in a continuous conversational AI service interaction."
+   }
+  },
+  {
+   "variable": "age",
+   "variable_text": "under thirteen (13) years of age",
+   "operator": "<",
+   "value": 13,
+   "value_text": "where such account holders are under thirteen (13) years of age, their parents or guardians",
+   "unit": "years",
+   "measurement": "Age of the minor account holder",
+   "level": "person",
+   "trigger": "obligation",
+   "consequence": "Operator must offer privacy and account setting tools to the parents or guardians of the minor account holder, in addition to the minor",
+   "conditions": "Applies to minor account holders; for minor account holders thirteen years of age and older, related tools are offered to parents or guardians as appropriate based on relevant risks",
+   "evidence": {
+    "provision": "48-2104(5)",
+    "quote": "where such account holders are under thirteen (13) years of age, their parents or guardians"
+   }
+  }
+ ],
+ "section_status": {}
+}

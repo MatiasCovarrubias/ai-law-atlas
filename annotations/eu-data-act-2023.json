@@ -1,0 +1,2384 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "eu-data-act-2023",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (connectors/fetch_texts.py)",
+  "url": "http://publications.europa.eu/resource/cellar/ef51c6ab-a06c-11ee-b164-01aa75ed71a1.0006.03/DOC_1",
+  "retrieved": "2026-10-13",
+  "version": "as fetched",
+  "language": "en",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "data_access_sharing",
+   "data_protection",
+   "consumer_protection",
+   "platforms_competition",
+   "cybersecurity"
+  ],
+  "primary_domain": "data_access_sharing",
+  "mechanisms": [
+   "mandate_obligation",
+   "prohibition_ban",
+   "disclosure_transparency",
+   "institution_setup"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "data_holder",
+   "enterprise",
+   "consumers_users",
+   "platform_operator",
+   "hardware_supplier",
+   "cloud_service_provider",
+   "government_agency"
+  ],
+  "affected_roles": [
+   "consumers_users",
+   "enterprise",
+   "data_controller"
+  ],
+  "decision_margins": [
+   "firm:product_design_release",
+   "firm:input_use",
+   "firm:pricing",
+   "firm:compliance_process",
+   "household:access",
+   "household:data_privacy"
+  ],
+  "territorial_scope": {
+   "types": [
+    "supranational",
+    "extraterritorial"
+   ],
+   "description": "Applies across the EU and to manufacturers, providers and data holders regardless of place of establishment where they place products, provide services or make data available in the Union.",
+   "evidence": {
+    "provision": "Art. 1(3)(a)",
+    "quote": "irrespective of the place of establishment of those manufacturers and providers"
+   }
+  },
+  "agora_strategies": [
+   "Input controls: Data circulation",
+   "Input controls: Data use"
+  ]
+ },
+ "summary": {
+  "short": "Sets EU rules giving users of connected products and related services access to the data they generate, and requiring data holders to share it with users and their chosen third parties. Also governs B2B data sharing terms, public-sector emergency access and cloud switching. Applies from 12 September 2025.",
+  "long": "Regulation (EU) 2023/2854 sets harmonised rules on fair access to and use of data. Article 1 covers product and related service data, data holders making data available to recipients, public-sector access in exceptional need, cloud switching and interoperability standards. This part covers Chapters I to III and only the heading of Chapter IV. Chapter II requires manufacturers and related-service providers to design products so that data are accessible to users by default (Art. 3), requires pre-contract information (Art. 3(2)-(3)), and obliges data holders to make readily available data accessible to users and, on request, to third parties (Arts. 4-5). This is subject to trade-secret safeguards (Art. 4(6)-(8)), a bar on users using data to build a competing connected product (Art. 4(10)), and exclusion of designated gatekeepers as eligible third parties (Art. 5(3)). Third parties must process data only for agreed purposes and may not profile except where strictly necessary (Art. 6). Microenterprises and small enterprises are partly exempt (Art. 7). Chapter III sets fair, reasonable and non-discriminatory terms for B2B data sharing (Art. 8), compensation limited to costs for SMEs (Art. 9), certified dispute settlement bodies (Art. 10), and technical protection measures and remedies (Art. 11). Personal data may be shared only where a valid GDPR legal basis exists. Enforcement in this part is limited to complaints to designated competent authorities; penalty provisions and the Chapters on public-sector access, cloud switching and interoperability are not in this part."
+ },
+ "relations": [
+  {
+   "relation": "legal_basis",
+   "target_text": "Treaty on the Functioning of the European Union, Article 114",
+   "note": "Treaty provision cited in the preamble as the legal basis for the Regulation.",
+   "evidence": {
+    "provision": "Preamble",
+    "quote": "Having regard to the Treaty on the Functioning of the European Union, and in particular Article 114 thereof"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Regulation (EU) 2017/2394",
+   "note": "Recital (108) states that this Regulation amends the Annexes. The operative amendment text is in part 2 of this instrument.",
+   "evidence": {
+    "provision": "Recital (108)",
+    "quote": "this Regulation amends the Annexes to Regulation (EU) 2017/2394"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Directive (EU) 2020/1828",
+   "note": "Recital (108) states that this Regulation amends the Annexes. The operative amendment text is in part 2 of this instrument.",
+   "evidence": {
+    "provision": "Recital (108)",
+    "quote": "Directive (EU) 2020/1828 of the European Parliament and of the Council"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) 2016/679",
+   "note": "Rights of access and portability under that Regulation are complemented; personal data law prevails in case of conflict.",
+   "evidence": {
+    "provision": "Art. 1(5)",
+    "quote": "Insofar as users are data subjects, the rights laid down in Chapter II of this Regulation shall complement the rights of access by data subjects and rights to data portability under Articles 15 and 20 of Regulation (EU) 2016/679"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) 2018/1725",
+   "note": "Listed among the data protection acts that this Regulation is without prejudice to.",
+   "evidence": {
+    "provision": "Art. 1(5)",
+    "quote": "in particular Regulations (EU) 2016/679 and (EU) 2018/1725 and Directive 2002/58/EC"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) 2018/1807",
+   "note": "This Regulation complements the self-regulatory approach of that Regulation by adding generally applicable obligations on cloud switching.",
+   "evidence": {
+    "provision": "Art. 1(7)",
+    "quote": "This Regulation complements the self-regulatory approach of Regulation (EU) 2018/1807 by adding generally applicable obligations on cloud switching."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) 2022/1925",
+   "note": "Gatekeepers designated under its Article 3 are excluded as eligible third parties (Art. 5(3)) and may not receive data passed on by third parties (Art. 6(2)(d)).",
+   "evidence": {
+    "provision": "Art. 5(3)",
+    "quote": "Any undertaking designated as a gatekeeper, pursuant to Article 3 of Regulation (EU) 2022/1925, shall not be an eligible third party under this Article"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) 2022/868",
+   "note": "Defines data intermediation service by reference to Article 2(11) of that Regulation.",
+   "evidence": {
+    "provision": "Art. 2(10)",
+    "quote": "data intermediation service as defined in Article 2, point (11), of Regulation (EU) 2022/868"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive (EU) 2016/943",
+   "note": "Defines trade secret and trade secret holder by reference to that Directive (also Art. 2(19)).",
+   "evidence": {
+    "provision": "Art. 2(18)",
+    "quote": "trade secret as defined in Article 2, point (1), of Directive (EU) 2016/943"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive 93/13/EEC",
+   "note": "Consumer law that this Regulation complements and is without prejudice to.",
+   "evidence": {
+    "provision": "Art. 1(9)",
+    "quote": "in particular Directives 93/13/EEC, 2005/29/EC and 2011/83/EU"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) 2015/847",
+   "note": "This Regulation is stated not to apply to data collected or shared under that Regulation.",
+   "evidence": {
+    "provision": "Art. 1(6)",
+    "quote": "does not apply to the collection or sharing of, access to or the use of data under Regulation (EU) 2015/847"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive (EU) 2015/849",
+   "note": "This Regulation is stated not to apply to data collected or shared under that Directive.",
+   "evidence": {
+    "provision": "Art. 1(6)",
+    "quote": "This Regulation does not apply to the collection or sharing of, access to or the use of data under Regulation (EU) 2015/847 and Directive (EU) 2015/849."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) No 1025/2012",
+   "note": "Harmonised standard is defined by reference to Article 2(1)(c) of that Regulation.",
+   "evidence": {
+    "provision": "Art. 2(43)",
+    "quote": "harmonised standard as defined in Article 2, point (1)(c), of Regulation (EU) No 1025/2012"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Regulation (EU) 2017/2394",
+   "note": "Adds the Data Act as point 29 to the Annex to Regulation (EU) 2017/2394. Art. 38(3) also refers to the cooperation mechanisms of that Regulation.",
+   "evidence": {
+    "provision": "Art. 47",
+    "quote": "In the Annex to Regulation (EU) 2017/2394 the following point is added:"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Directive (EU) 2020/1828",
+   "note": "Adds the Data Act as point 68 to Annex I of Directive (EU) 2020/1828.",
+   "evidence": {
+    "provision": "Art. 48",
+    "quote": "In Annex I to Directive (EU) 2020/1828 the following point is added:"
+   }
+  },
+  {
+   "relation": "designates_under",
+   "target_text": "Regulation (EU) 2016/679 (GDPR)",
+   "note": "GDPR supervisory authorities monitor the Regulation insofar as personal data is concerned, applying GDPR Chapters VI and VII. GDPR is also cross-referenced in Arts 17(2)(i), 38(3) and 40(4), where fines follow Art. 83 GDPR.",
+   "evidence": {
+    "provision": "Art. 37(3)",
+    "quote": "Chapters VI and VII of Regulation (EU) 2016/679 shall apply mutatis mutandis."
+   }
+  },
+  {
+   "relation": "designates_under",
+   "target_text": "Regulation (EU) 2018/1725",
+   "note": "Applies Art. 62 of Regulation (EU) 2018/1725 where relevant, for the EDPS monitoring of the Commission, the ECB and Union bodies. Art. 40(5) also refers to fines under Art. 66 of that Regulation.",
+   "evidence": {
+    "provision": "Art. 37(3)",
+    "quote": "Where relevant, Article 62 of Regulation (EU) 2018/1725 shall apply mutatis mutandis."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) 2022/868 (Data Governance Act)",
+   "note": "Establishes the EDIB as an expert group under its Art. 29. Also cross-referenced in Art. 17(3) (re-use exclusion), Art. 33(11), Art. 45(2) and Art. 46(1) (committee).",
+   "evidence": {
+    "provision": "Art. 42",
+    "quote": "The EDIB established by the Commission as an expert group pursuant to Article 29 of Regulation (EU) 2022/868"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive (EU) 2019/1024 (open data)",
+   "note": "Art. 17(3) states that the re-use rules of this Directive do not apply to data held by public sector bodies that were obtained under Chapter V.",
+   "evidence": {
+    "provision": "Art. 17(3)",
+    "quote": "Article 2, point (11), of Directive (EU) 2019/1024"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive (EU) 2016/943 (trade secrets)",
+   "note": "Art. 49(1)(f) requires the evaluation to take into account any revision of this Directive when assessing the impact on trade secrets.",
+   "evidence": {
+    "provision": "Art. 49(1)(f)",
+    "quote": "taking into account, to the extent possible, any revision of Directive (EU) 2016/943"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive 96/9/EC (database protection)",
+   "note": "The sui generis database right does not apply to data obtained from or generated by a connected product or related service within the Regulation's scope.",
+   "evidence": {
+    "provision": "Art. 43",
+    "quote": "The sui generis right provided for in Article 7 of Directive 96/9/EC shall not apply"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive (EU) 2019/770 (digital content and services)",
+   "note": "Switching contract clauses are stated to apply without prejudice to this Directive.",
+   "evidence": {
+    "provision": "Art. 25(2)",
+    "quote": "Without prejudice to Directive (EU) 2019/770"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) No 1025/2012 (European standardisation)",
+   "note": "The Commission requests harmonised standards under Art. 10 of this Regulation (Arts 33(4), 35(4), 36(5)), and common specifications rely on its procedures.",
+   "evidence": {
+    "provision": "Art. 33(4)",
+    "quote": "pursuant to Article 10 of Regulation (EU) No 1025/2012"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) No 182/2011 (committee procedure)",
+   "note": "The examination procedure of Art. 5 of this Regulation applies to the implementing acts referred to in Art. 46(2).",
+   "evidence": {
+    "provision": "Art. 46(2)",
+    "quote": "Article 5 of Regulation (EU) No 182/2011 shall apply."
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "European Commission",
+   "role": "addressee",
+   "function": "Shall adopt guidelines on the calculation of reasonable compensation for making data available (Art. 9(5)).",
+   "evidence": {
+    "provision": "Art. 9(5)",
+    "quote": "The Commission shall adopt guidelines on the calculation of reasonable compensation"
+   }
+  },
+  {
+   "name": "European Data Innovation Board (EDIB)",
+   "role": "listed",
+   "function": "Advisory body whose advice the Commission takes into account for the compensation guidelines (Art. 9(5)); also referred to in recital (103) as established by Regulation (EU) 2022/868.",
+   "evidence": {
+    "provision": "Art. 9(5)",
+    "quote": "taking into account the advice of the European Data Innovation Board (EDIB) referred to in Article 42"
+   }
+  },
+  {
+   "name": "competent authority (designated pursuant to Article 37)",
+   "role": "designated",
+   "function": "Receives notifications when a data holder refuses, withholds or suspends data sharing (Art. 4(2), 4(7), 4(8)); handles complaints (Art. 4(9)). Designation provisions are in part 2.",
+   "evidence": {
+    "provision": "Art. 4(2)",
+    "quote": "Where the data holder refuses to share data pursuant to this Article, it shall notify the competent authority designated pursuant to Article 37."
+   }
+  },
+  {
+   "name": "dispute settlement body (certified under Article 10(5))",
+   "role": "designated",
+   "function": "Certified by the Member State where it is established to settle disputes on access and fair terms for making data available (Art. 10(1), 10(5)).",
+   "evidence": {
+    "provision": "Art. 10(5)",
+    "quote": "shall, at the request of that body, certify that body"
+   }
+  },
+  {
+   "name": "undertaking designated as a gatekeeper under Article 3 of Regulation (EU) 2022/1925",
+   "role": "addressee",
+   "function": "Shall not be an eligible third party and shall not solicit users or receive data obtained under Art. 4(1) (Art. 5(3)).",
+   "evidence": {
+    "provision": "Art. 5(3)",
+    "quote": "Any undertaking designated as a gatekeeper, pursuant to Article 3 of Regulation (EU) 2022/1925, shall not be an eligible third party under this Article"
+   }
+  },
+  {
+   "name": "public sector bodies, the Commission, the European Central Bank and Union bodies",
+   "role": "beneficiary",
+   "function": "Named as the bodies that may request data from data holders where there is an exceptional need in the public interest (scope in Art. 1(3)(e); request rules in Chapter V, outside part 1).",
+   "evidence": {
+    "provision": "Art. 1(3)(e)",
+    "quote": "public sector bodies, the Commission, the European Central Bank and Union bodies that request data holders to make data available"
+   }
+  },
+  {
+   "name": "Competent authorities (designated by each Member State)",
+   "role": "designated",
+   "function": "Responsible for application and enforcement of the Regulation; handle complaints, investigate and impose or initiate financial penalties (Art. 37(5)).",
+   "evidence": {
+    "provision": "Art. 37(1)",
+    "quote": "Each Member State shall designate one or more competent authorities to be responsible for the application and enforcement of this Regulation"
+   }
+  },
+  {
+   "name": "Data coordinator",
+   "role": "designated",
+   "function": "Designated where a Member State has more than one competent authority; facilitates cooperation and acts as single point of contact (Art. 37(2), 37(6)(a)).",
+   "evidence": {
+    "provision": "Art. 37(2)",
+    "quote": "it shall designate a data coordinator from among them"
+   }
+  },
+  {
+   "name": "Supervisory authorities responsible for monitoring Regulation (EU) 2016/679",
+   "role": "designated",
+   "function": "Monitor application of the Regulation insofar as the protection of personal data is concerned.",
+   "evidence": {
+    "provision": "Art. 37(3)",
+    "quote": "The supervisory authorities responsible for monitoring the application of Regulation (EU) 2016/679 shall be responsible for monitoring the application of this Regulation"
+   }
+  },
+  {
+   "name": "European Data Protection Supervisor",
+   "role": "designated",
+   "function": "Monitors application of the Regulation as it concerns the Commission, the European Central Bank and Union bodies; may impose fines under Art. 66 of Regulation (EU) 2018/1725 (Art. 40(5)).",
+   "evidence": {
+    "provision": "Art. 37(3)",
+    "quote": "The European Data Protection Supervisor shall be responsible for monitoring the application of this Regulation"
+   }
+  },
+  {
+   "name": "EDIB (European Data Innovation Board)",
+   "role": "designated",
+   "function": "Expert group established by the Commission; advises the Commission and supports consistent application of Chapters II, III, V and VII, including penalty coordination (Art. 42).",
+   "evidence": {
+    "provision": "Art. 42",
+    "quote": "The EDIB established by the Commission as an expert group pursuant to Article 29 of Regulation (EU) 2022/868"
+   }
+  },
+  {
+   "name": "European Commission",
+   "role": "addressee",
+   "function": "Develops and recommends non-binding model contractual terms and standard contractual clauses (Art. 41); also develops a model request template (Art. 17(6)).",
+   "evidence": {
+    "provision": "Art. 41",
+    "quote": "The Commission, before 12 September 2025, shall develop and recommend non-binding model contractual terms on data access and use"
+   }
+  },
+  {
+   "name": "Eurostat",
+   "role": "beneficiary",
+   "function": "May receive data shared under Chapter V by public sector bodies, the Commission, the ECB or Union bodies, for the production of official statistics (Art. 21(1)(b)).",
+   "evidence": {
+    "provision": "Art. 21(1)(b)",
+    "quote": "with national statistical institutes and Eurostat for the production of official statistics"
+   }
+  }
+ ],
+ "notes": "Part 1 of 2 covers the recitals, Chapter I and Chapter II to IV start (Articles 1 to 12). Relations and entities are limited to this part. Target instrument IDs are empty strings because no registry IDs were supplied; target_text identifies each instrument. The competent authority and data coordinator are designated under Article 37, which is in part 2, so the authority is recorded generically. Recital (117) states an application date of 12 September 2025; it is not coded here and belongs to part 2 events. Section_status entries are not_applicable because the schema requires them; relations and entities are recorded above. Part 2 of 2 (Arts 13-50 and footnotes). No registry IDs were supplied, so target_instrument_id is an empty string for every relation and entity; target_text names each target. Each target appears once as a relation; further mentions are noted in the rows above. Footnote 38 gives only an OJ citation with no title. section_status is recorded only because the schema requires it: relations and entities are populated in this part.",
+ "events": [
+  {
+   "event": "signed",
+   "date": "2023-12-13",
+   "date_type": "absolute",
+   "date_text": "of 13 December 2023",
+   "applies_to": "Regulation (EU) 2023/2854 as a whole",
+   "evidence": {
+    "provision": "Title",
+    "quote": "of 13 December 2023"
+   }
+  },
+  {
+   "event": "published",
+   "date": "2023-12-22",
+   "date_type": "absolute",
+   "date_text": "22.12.2023",
+   "applies_to": "Regulation (EU) 2023/2854 as a whole (Official Journal L series)",
+   "evidence": {
+    "provision": "Front matter (Official Journal header)",
+    "quote": "22.12.2023"
+   }
+  },
+  {
+   "event": "consultation",
+   "date": "2022-05-04",
+   "date_type": "absolute",
+   "date_text": "on 4 May 2022",
+   "applies_to": "opinion of the European Data Protection Supervisor and European Data Protection Board on the draft act",
+   "evidence": {
+    "provision": "Recital (118)",
+    "quote": "delivered their opinion on 4 May 2022"
+   }
+  },
+  {
+   "event": "application",
+   "date": "2025-09-12",
+   "date_type": "absolute",
+   "date_text": "from 12 September 2025",
+   "applies_to": "the rules of this Regulation (general date of application)",
+   "evidence": {
+    "provision": "Recital (117)",
+    "quote": "those rules should apply from 12 September 2025"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2027-01-11",
+   "date_type": "relative",
+   "date_text": "after three years from the date of entry into force of this Regulation",
+   "anchor": "date of entry into force of this Regulation",
+   "applies_to": "abolition of switching charges imposed by providers of data processing services (preamble statement; operative provision not in this part)",
+   "offset_value": 3,
+   "offset_unit": "years",
+   "anchor_event": "entry_into_force",
+   "evidence": {
+    "provision": "Recital (88)",
+    "quote": "Switching charges should therefore be abolished after three years from the date of entry into force of this Regulation."
+   },
+   "date_computed_from": "entry_into_force 2024-01-11 (computed) + 3 years"
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2027-01-11",
+   "date_type": "relative",
+   "date_text": "after three years from the date of entry into force of this Regulation",
+   "anchor": "date of entry into force of this Regulation",
+   "applies_to": "data egress charges for in-parallel use of data processing services, not exceeding costs incurred (preamble statement; operative provision not in this part)",
+   "offset_value": 3,
+   "offset_unit": "years",
+   "anchor_event": "entry_into_force",
+   "evidence": {
+    "provision": "Recital (99)",
+    "quote": "after three years from the date of entry into force of this Regulation"
+   },
+   "date_computed_from": "entry_into_force 2024-01-11 (computed) + 3 years"
+  },
+  {
+   "event": "phase_in_step",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "for one year after the date on which they were placed on the market by a medium-sized enterprise",
+   "anchor": "date on which the connected product was placed on the market by a medium-sized enterprise",
+   "applies_to": "connected products placed on the market by a medium-sized enterprise (exclusion from Chapter II obligations for one year)",
+   "offset_value": 1,
+   "offset_unit": "years",
+   "evidence": {
+    "provision": "Art. 7(1), second subparagraph",
+    "quote": "to connected products for one year after the date on which they were placed on the market by a medium-sized enterprise"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "within 90 days of receipt of a request pursuant to paragraphs 1 and 4",
+   "anchor": "receipt of a request pursuant to paragraphs 1 and 4",
+   "applies_to": "decision of a dispute settlement body on a matter referred to it",
+   "offset_value": 90,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Art. 10(9)",
+    "quote": "within 90 days of receipt of a request pursuant to paragraphs 1 and 4"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "no later than within a period of five or 30 working days, depending on the nature of the exceptional need invoked in the request",
+   "anchor": "request by a public sector body, the Commission, the European Central Bank or a Union body",
+   "applies_to": "data holder decision to decline or seek modification of an exceptional-need data request (five-working-day period; preamble, operative provision not in this part)",
+   "offset_value": 5,
+   "offset_unit": "business_days",
+   "evidence": {
+    "provision": "Recital (71)",
+    "quote": "no later than within a period of five or 30 working days"
+   }
+  },
+  {
+   "event": "signed",
+   "date": "2023-12-13",
+   "date_type": "absolute",
+   "date_text": "Done at Strasbourg, 13 December 2023.",
+   "applies_to": "Regulation (EU) 2023/2854 as a whole",
+   "evidence": {
+    "provision": "Signature block",
+    "quote": "Done at Strasbourg, 13 December 2023."
+   }
+  },
+  {
+   "event": "published",
+   "date": "2023-12-22",
+   "date_type": "absolute",
+   "date_text": "OJ L, 2023/2854, 22.12.2023",
+   "applies_to": "Regulation (EU) 2023/2854 as a whole",
+   "evidence": {
+    "provision": "Art. 47 (citation of the Regulation)",
+    "quote": "OJ L, 2023/2854, 22.12.2023"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2024-01-11",
+   "date_type": "relative",
+   "date_text": "shall enter into force on the twentieth day following that of its publication in the Official Journal of the European Union",
+   "anchor": "publication in the Official Journal of the European Union",
+   "applies_to": "Regulation (EU) 2023/2854 as a whole",
+   "offset_value": 20,
+   "offset_unit": "days",
+   "anchor_event": "published",
+   "evidence": {
+    "provision": "Art. 50 (paragraph 1)",
+    "quote": "This Regulation shall enter into force on the twentieth day following that of its publication in the Official Journal of the European Union."
+   },
+   "date_computed_from": "published 2023-12-22 (text) + 20 days"
+  },
+  {
+   "event": "application",
+   "date": "2025-09-12",
+   "date_type": "absolute",
+   "date_text": "It shall apply from 12 September 2025.",
+   "applies_to": "Regulation (EU) 2023/2854 generally",
+   "evidence": {
+    "provision": "Art. 50 (paragraph 2)",
+    "quote": "It shall apply from 12 September 2025."
+   }
+  },
+  {
+   "event": "application",
+   "date": "2026-09-12",
+   "date_type": "absolute",
+   "date_text": "The obligation resulting from Article 3(1) shall apply to connected products and the services related to them placed on the market after 12 September 2026.",
+   "applies_to": "Obligation under Art. 3(1) for connected products and related services placed on the market after 12 September 2026",
+   "evidence": {
+    "provision": "Art. 50 (paragraph 3)",
+    "quote": "The obligation resulting from Article 3(1) shall apply to connected products and the services related to them placed on the market after 12 September 2026."
+   }
+  },
+  {
+   "event": "application",
+   "date": "2025-09-12",
+   "date_type": "absolute",
+   "date_text": "Chapter III shall apply in relation to obligations to make data available under Union law or national legislation adopted in accordance with Union law, which enters into force after 12 September 2025.",
+   "applies_to": "Chapter III, for data-availability obligations under Union or national law entering into force after 12 September 2025",
+   "evidence": {
+    "provision": "Art. 50 (paragraph 4)",
+    "quote": "Chapter III shall apply in relation to obligations to make data available under Union law or national legislation adopted in accordance with Union law, which enters into force after 12 September 2025."
+   }
+  },
+  {
+   "event": "application",
+   "date": "2025-09-12",
+   "date_type": "absolute",
+   "date_text": "Chapter IV shall apply to contracts concluded after 12 September 2025.",
+   "applies_to": "Chapter IV, contracts concluded after 12 September 2025",
+   "evidence": {
+    "provision": "Art. 50 (paragraph 5)",
+    "quote": "Chapter IV shall apply to contracts concluded after 12 September 2025."
+   }
+  },
+  {
+   "event": "application",
+   "date": "2027-09-12",
+   "date_type": "absolute",
+   "date_text": "Chapter IV shall apply from 12 September 2027 to contracts concluded on or before 12 September 2025 provided that they are: (a) of indefinite duration; or (b) due to expire at least 10 years from 11 January 2024.",
+   "applies_to": "Chapter IV, contracts concluded on or before 12 September 2025 that are of indefinite duration or due to expire at least 10 years from 11 January 2024",
+   "evidence": {
+    "provision": "Art. 50 (paragraph 6)",
+    "quote": "Chapter IV shall apply from 12 September 2027 to contracts concluded on or before 12 September 2025 provided that they are:"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2024-01-11",
+   "date_type": "absolute",
+   "date_text": "From 11 January 2024 to 12 January 2027, providers of data processing services may impose reduced switching charges on the customer for the switching process.",
+   "applies_to": "Providers of data processing services: reduced switching charges permitted",
+   "evidence": {
+    "provision": "Art. 29(2)",
+    "quote": "From 11 January 2024 to 12 January 2027, providers of data processing services may impose reduced switching charges on the customer for the switching process."
+   }
+  },
+  {
+   "event": "application",
+   "date": "2027-01-12",
+   "date_type": "absolute",
+   "date_text": "From 12 January 2027, providers of data processing services shall not impose any switching charges on the customer for the switching process.",
+   "applies_to": "Providers of data processing services: prohibition on switching charges",
+   "evidence": {
+    "provision": "Art. 29(1)",
+    "quote": "From 12 January 2027, providers of data processing services shall not impose any switching charges on the customer for the switching process."
+   }
+  },
+  {
+   "event": "application",
+   "date": "2024-01-11",
+   "date_type": "absolute",
+   "date_text": "The power to adopt delegated acts referred to in Article 29(7) and Article 33(2) shall be conferred on the Commission for an indeterminate period of time from 11 January 2024.",
+   "applies_to": "Commission's power to adopt delegated acts under Art. 29(7) and Art. 33(2)",
+   "evidence": {
+    "provision": "Art. 45(2)",
+    "quote": "The power to adopt delegated acts referred to in Article 29(7) and Article 33(2) shall be conferred on the Commission for an indeterminate period of time from 11 January 2024."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2025-09-12",
+   "date_type": "absolute",
+   "date_text": "by 12 September 2025 notify the Commission of those rules and measures",
+   "applies_to": "Member States: notification to the Commission of penalty rules and measures",
+   "evidence": {
+    "provision": "Art. 40(2)",
+    "quote": "Member States shall by 12 September 2025 notify the Commission of those rules and measures"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2025-09-12",
+   "date_type": "absolute",
+   "date_text": "The Commission, before 12 September 2025, shall develop and recommend non-binding model contractual terms",
+   "applies_to": "Commission: model contractual terms and standard contractual clauses",
+   "evidence": {
+    "provision": "Art. 41",
+    "quote": "The Commission, before 12 September 2025, shall develop and recommend non-binding model contractual terms on data access and use"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2028-09-12",
+   "date_type": "absolute",
+   "date_text": "By 12 September 2028, the Commission shall carry out an evaluation of this Regulation",
+   "applies_to": "Commission: evaluations under Art. 49(1) and Art. 49(2)",
+   "evidence": {
+    "provision": "Art. 49(1)",
+    "quote": "By 12 September 2028, the Commission shall carry out an evaluation of this Regulation"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "no later than five working days after the receipt of a request for the data necessary to respond to a public emergency",
+   "anchor": "receipt of a request for data necessary to respond to a public emergency",
+   "applies_to": "Data holder: decline or seek modification of a request (public emergency)",
+   "offset_value": 5,
+   "offset_unit": "business_days",
+   "evidence": {
+    "provision": "Art. 18(2)",
+    "quote": "no later than five working days after the receipt of a request for the data necessary to respond to a public emergency"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "no later than 30 working days after the receipt of such a request in other cases of an exceptional need",
+   "anchor": "receipt of a request for data in other cases of an exceptional need",
+   "applies_to": "Data holder: decline or seek modification of a request (other exceptional need cases)",
+   "offset_value": 30,
+   "offset_unit": "business_days",
+   "evidence": {
+    "provision": "Art. 18(2)",
+    "quote": "no later than 30 working days after the receipt of such a request in other cases of an exceptional need"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "the provider of data processing services shall notify the customer within 14 working days of the making of the switching request",
+   "anchor": "making of the switching request",
+   "applies_to": "Provider of data processing services: notify customer of technical unfeasibility of mandatory transitional period",
+   "offset_value": 14,
+   "offset_unit": "business_days",
+   "evidence": {
+    "provision": "Art. 25(4)",
+    "quote": "the provider of data processing services shall notify the customer within 14 working days of the making of the switching request"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "If the addressee has not received a reply within one month",
+   "anchor": "request for an opinion from the relevant national body or authority",
+   "applies_to": "Addressee of a third-country access decision: reply period of the national body before rejection",
+   "offset_value": 1,
+   "offset_unit": "months",
+   "evidence": {
+    "provision": "Art. 32(3)",
+    "quote": "If the addressee has not received a reply within one month"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "within a period of three months of notification of that act to the European Parliament and to the Council",
+   "anchor": "notification of a delegated act to the European Parliament and the Council",
+   "applies_to": "Delegated acts under Art. 29(7) or Art. 33(2): objection period",
+   "offset_value": 3,
+   "offset_unit": "months",
+   "evidence": {
+    "provision": "Art. 45(6)",
+    "quote": "within a period of three months of notification of that act to the European Parliament and to the Council"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "other",
+   "variable_text": "enterprise size class: microenterprise or small enterprise",
+   "operator": "=",
+   "value": null,
+   "value_text": "microenterprise or small enterprise",
+   "unit": "",
+   "level": "entity",
+   "trigger": "exclusion",
+   "consequence": "Chapter II obligations do not apply to data generated through the use of its connected products or related services",
+   "conditions": "no partner enterprise or linked enterprise that does not qualify as a microenterprise or small enterprise; not subcontracted to manufacture or design a connected product or to provide a related service",
+   "depends_on": "Annex to Recommendation 2003/361/EC, Art. 2(2) and 2(3) (via Art. 2(25) and 2(26) of this Regulation)",
+   "evidence": {
+    "provision": "Art. 7(1)",
+    "quote": "The obligations of this Chapter shall not apply to data generated through the use of connected products manufactured or designed or related services provided by a microenterprise or a small enterprise"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "period since enterprise qualified as a medium-sized enterprise",
+   "operator": "<",
+   "value": 1,
+   "value_text": "for less than one year",
+   "unit": "years",
+   "level": "entity",
+   "trigger": "eligibility",
+   "consequence": "Chapter II obligations do not apply to data generated through the use of connected products manufactured by or related services provided by the enterprise during this period",
+   "conditions": "enterprise has qualified as a medium-sized enterprise under Article 2 of the Annex to Recommendation 2003/361/EC",
+   "evidence": {
+    "provision": "Art. 7(1), second subparagraph",
+    "quote": "has qualified as a medium-sized enterprise under Article 2 of the Annex to Recommendation 2003/361/EC for less than one year"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "period after connected product placed on the market by a medium-sized enterprise",
+   "operator": "=",
+   "value": 1,
+   "value_text": "for one year after the date on which they were placed on the market by a medium-sized enterprise",
+   "unit": "years",
+   "level": "product",
+   "trigger": "benefit_duration",
+   "consequence": "Chapter II obligations do not apply to data generated through the use of such connected products during this period",
+   "conditions": "connected products manufactured by an enterprise that has qualified as a medium-sized enterprise",
+   "evidence": {
+    "provision": "Art. 7(1), second subparagraph",
+    "quote": "to connected products for one year after the date on which they were placed on the market by a medium-sized enterprise"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "size class of data recipient: SME or not-for-profit research organisation",
+   "operator": "=",
+   "value": null,
+   "value_text": "an SME or a not-for-profit research organisation",
+   "unit": "",
+   "level": "entity",
+   "trigger": "cap",
+   "consequence": "any compensation agreed shall not exceed the costs referred to in paragraph 2, point (a)",
+   "conditions": "no partner enterprises or linked enterprises that do not qualify as SMEs",
+   "depends_on": "SME as defined in Recommendation 2003/361/EC (not defined in this Article)",
+   "evidence": {
+    "provision": "Art. 9(4)",
+    "quote": "Where the data recipient is an SME or a not-for-profit research organisation"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "microenterprises and small enterprises (size classes)",
+   "operator": "=",
+   "value": null,
+   "value_text": "microenterprises and small enterprises",
+   "unit": "",
+   "level": "entity",
+   "trigger": "exemption",
+   "consequence": "Exceptional-need circumstance in Art. 15(1)(b) does not apply to microenterprises and small enterprises",
+   "conditions": "Applies to non-personal data under Art. 15(1)(b)",
+   "depends_on": "Size classes defined in Commission Recommendation 2003/361/EC (footnote (^5))",
+   "evidence": {
+    "provision": "Art. 15(2)",
+    "quote": "Paragraph 1, point (b), shall not apply to microenterprises and small enterprises."
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "microenterprises and small enterprises (size classes)",
+   "operator": "=",
+   "value": null,
+   "value_text": "microenterprises and small enterprises",
+   "unit": "",
+   "level": "entity",
+   "trigger": "exemption",
+   "consequence": "Duty to make emergency data available free of charge applies only to data holders other than microenterprises and small enterprises",
+   "conditions": "Data necessary to respond to a public emergency under Art. 15(1)(a)",
+   "depends_on": "Size classes defined in Commission Recommendation 2003/361/EC (footnote (^5))",
+   "evidence": {
+    "provision": "Art. 20(1)",
+    "quote": "Data holders other than microenterprises and small enterprises shall make available data necessary to respond to a public emergency"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "microenterprises and small enterprises (size classes)",
+   "operator": "=",
+   "value": null,
+   "value_text": "microenterprises and small enterprises",
+   "unit": "",
+   "level": "entity",
+   "trigger": "eligibility",
+   "consequence": "Microenterprises and small enterprises that claim compensation receive the compensation regime of Art. 20(2)",
+   "conditions": "Claim for compensation for making data available",
+   "depends_on": "Size classes defined in Commission Recommendation 2003/361/EC (footnote (^5))",
+   "evidence": {
+    "provision": "Art. 20(3)",
+    "quote": "Paragraph 2 shall also apply where a microenterprise and small enterprise claims compensation for making data available."
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "data",
+   "defined_in": "this Regulation, Art. 2(1)",
+   "evidence": {
+    "provision": "Art. 2(1)",
+    "quote": "‘data’ means any digital representation of acts, facts or information"
+   }
+  },
+  {
+   "term": "non-personal data",
+   "defined_in": "this Regulation, Art. 2(4)",
+   "evidence": {
+    "provision": "Art. 2(4)",
+    "quote": "‘non-personal data’ means data other than personal data;"
+   }
+  },
+  {
+   "term": "personal data",
+   "defined_in": "Regulation (EU) 2016/679, Art. 4(1)",
+   "evidence": {
+    "provision": "Art. 2(3)",
+    "quote": "‘personal data’ means personal data as defined in Article 4, point (1), of Regulation (EU) 2016/679;"
+   }
+  },
+  {
+   "term": "connected product",
+   "defined_in": "this Regulation, Art. 2(5)",
+   "evidence": {
+    "provision": "Art. 2(5)",
+    "quote": "‘connected product’ means an item that obtains, generates or collects data concerning its use or environment"
+   }
+  },
+  {
+   "term": "related service",
+   "defined_in": "this Regulation, Art. 2(6)",
+   "evidence": {
+    "provision": "Art. 2(6)",
+    "quote": "‘related service’ means a digital service, other than an electronic communications service, including software"
+   }
+  },
+  {
+   "term": "processing",
+   "defined_in": "this Regulation, Art. 2(7)",
+   "evidence": {
+    "provision": "Art. 2(7)",
+    "quote": "‘processing’ means any operation or set of operations which is performed on data or on sets of data"
+   }
+  },
+  {
+   "term": "data processing service",
+   "defined_in": "this Regulation, Art. 2(8)",
+   "evidence": {
+    "provision": "Art. 2(8)",
+    "quote": "‘data processing service’ means a digital service that is provided to a customer and that enables ubiquitous and on-demand network access"
+   }
+  },
+  {
+   "term": "same service type",
+   "defined_in": "this Regulation, Art. 2(9)",
+   "evidence": {
+    "provision": "Art. 2(9)",
+    "quote": "‘same service type’ means a set of data processing services that share the same primary objective, data processing service model and main functionalities;"
+   }
+  },
+  {
+   "term": "data intermediation service",
+   "defined_in": "Regulation (EU) 2022/868, Art. 2(11)",
+   "evidence": {
+    "provision": "Art. 2(10)",
+    "quote": "‘data intermediation service’ means data intermediation service as defined in Article 2, point (11), of Regulation (EU) 2022/868;"
+   }
+  },
+  {
+   "term": "data subject",
+   "defined_in": "Regulation (EU) 2016/679, Art. 4(1)",
+   "evidence": {
+    "provision": "Art. 2(11)",
+    "quote": "‘data subject’ means data subject as referred to in Article 4, point (1), of Regulation (EU) 2016/679;"
+   }
+  },
+  {
+   "term": "user",
+   "defined_in": "this Regulation, Art. 2(12)",
+   "evidence": {
+    "provision": "Art. 2(12)",
+    "quote": "‘user’ means a natural or legal person that owns a connected product"
+   }
+  },
+  {
+   "term": "data holder",
+   "defined_in": "this Regulation, Art. 2(13)",
+   "evidence": {
+    "provision": "Art. 2(13)",
+    "quote": "‘data holder’ means a natural or legal person that has the right or obligation, in accordance with this Regulation"
+   }
+  },
+  {
+   "term": "data recipient",
+   "defined_in": "this Regulation, Art. 2(14)",
+   "evidence": {
+    "provision": "Art. 2(14)",
+    "quote": "‘data recipient’ means a natural or legal person, acting for purposes which are related to that person’s trade, business, craft or profession"
+   }
+  },
+  {
+   "term": "product data",
+   "defined_in": "this Regulation, Art. 2(15)",
+   "evidence": {
+    "provision": "Art. 2(15)",
+    "quote": "‘product data’ means data generated by the use of a connected product that the manufacturer designed to be retrievable"
+   }
+  },
+  {
+   "term": "related service data",
+   "defined_in": "this Regulation, Art. 2(16)",
+   "evidence": {
+    "provision": "Art. 2(16)",
+    "quote": "‘related service data’ means data representing the digitisation of user actions or of events related to the connected product"
+   }
+  },
+  {
+   "term": "readily available data",
+   "defined_in": "this Regulation, Art. 2(17)",
+   "evidence": {
+    "provision": "Art. 2(17)",
+    "quote": "‘readily available data’ means product data and related service data that a data holder lawfully obtains or can lawfully obtain"
+   }
+  },
+  {
+   "term": "trade secret",
+   "defined_in": "Directive (EU) 2016/943, Art. 2(1)",
+   "evidence": {
+    "provision": "Art. 2(18)",
+    "quote": "‘trade secret’ means trade secret as defined in Article 2, point (1), of Directive (EU) 2016/943;"
+   }
+  },
+  {
+   "term": "trade secret holder",
+   "defined_in": "Directive (EU) 2016/943, Art. 2(2)",
+   "evidence": {
+    "provision": "Art. 2(19)",
+    "quote": "‘trade secret holder’ means a trade secret holder as defined in Article 2, point (2), of Directive (EU) 2016/943;"
+   }
+  },
+  {
+   "term": "profiling",
+   "defined_in": "Regulation (EU) 2016/679, Art. 4(4)",
+   "evidence": {
+    "provision": "Art. 2(20)",
+    "quote": "‘profiling’ means profiling as defined in Article 4, point (4), of Regulation (EU) 2016/679;"
+   }
+  },
+  {
+   "term": "making available on the market",
+   "defined_in": "this Regulation, Art. 2(21)",
+   "evidence": {
+    "provision": "Art. 2(21)",
+    "quote": "‘making available on the market’ means any supply of a connected product for distribution, consumption or use on the Union market"
+   }
+  },
+  {
+   "term": "placing on the market",
+   "defined_in": "this Regulation, Art. 2(22)",
+   "evidence": {
+    "provision": "Art. 2(22)",
+    "quote": "‘placing on the market’ means the first making available of a connected product on the Union market;"
+   }
+  },
+  {
+   "term": "consumer",
+   "defined_in": "this Regulation, Art. 2(23)",
+   "evidence": {
+    "provision": "Art. 2(23)",
+    "quote": "‘consumer’ means any natural person who is acting for purposes which are outside that person’s trade, business, craft or profession;"
+   }
+  },
+  {
+   "term": "enterprise",
+   "defined_in": "this Regulation, Art. 2(24)",
+   "evidence": {
+    "provision": "Art. 2(24)",
+    "quote": "‘enterprise’ means a natural or legal person that, in relation to contracts and practices covered by this Regulation, is acting for purposes"
+   }
+  },
+  {
+   "term": "small enterprise",
+   "defined_in": "Recommendation 2003/361/EC, Annex Art. 2(2)",
+   "evidence": {
+    "provision": "Art. 2(25)",
+    "quote": "‘small enterprise’ means a small enterprise as defined in Article 2(2) of the Annex to Recommendation 2003/361/EC;"
+   }
+  },
+  {
+   "term": "microenterprise",
+   "defined_in": "Recommendation 2003/361/EC, Annex Art. 2(3)",
+   "evidence": {
+    "provision": "Art. 2(26)",
+    "quote": "‘microenterprise’ means a microenterprise as defined in Article 2(3) of the Annex to Recommendation 2003/361/EC;"
+   }
+  },
+  {
+   "term": "Union bodies",
+   "defined_in": "this Regulation, Art. 2(27)",
+   "evidence": {
+    "provision": "Art. 2(27)",
+    "quote": "‘Union bodies’ means the Union bodies, offices and agencies set up by or pursuant to acts adopted on the basis of the Treaty on European Union"
+   }
+  },
+  {
+   "term": "public sector body",
+   "defined_in": "this Regulation, Art. 2(28)",
+   "evidence": {
+    "provision": "Art. 2(28)",
+    "quote": "‘public sector body’ means national, regional or local authorities of the Member States and bodies governed by public law of the Member States"
+   }
+  },
+  {
+   "term": "public emergency",
+   "defined_in": "this Regulation, Art. 2(29)",
+   "evidence": {
+    "provision": "Art. 2(29)",
+    "quote": "‘public emergency’ means an exceptional situation, limited in time, such as a public health emergency"
+   }
+  },
+  {
+   "term": "customer",
+   "defined_in": "this Regulation, Art. 2(30)",
+   "evidence": {
+    "provision": "Art. 2(30)",
+    "quote": "‘customer’ means a natural or legal person that has entered into a contractual relationship with a provider of data processing services"
+   }
+  },
+  {
+   "term": "virtual assistants",
+   "defined_in": "this Regulation, Art. 2(31)",
+   "evidence": {
+    "provision": "Art. 2(31)",
+    "quote": "‘virtual assistants’ means software that can process demands, tasks or questions"
+   }
+  },
+  {
+   "term": "digital assets",
+   "defined_in": "this Regulation, Art. 2(32)",
+   "evidence": {
+    "provision": "Art. 2(32)",
+    "quote": "‘digital assets’ means elements in digital form, including applications, for which the customer has the right of use"
+   }
+  },
+  {
+   "term": "on-premises ICT infrastructure",
+   "defined_in": "this Regulation, Art. 2(33)",
+   "evidence": {
+    "provision": "Art. 2(33)",
+    "quote": "‘on-premises ICT infrastructure’ means ICT infrastructure and computing resources owned, rented or leased by the customer"
+   }
+  },
+  {
+   "term": "switching",
+   "defined_in": "this Regulation, Art. 2(34)",
+   "evidence": {
+    "provision": "Art. 2(34)",
+    "quote": "‘switching’ means the process involving a source provider of data processing services, a customer of a data processing service"
+   }
+  },
+  {
+   "term": "data egress charges",
+   "defined_in": "this Regulation, Art. 2(35)",
+   "evidence": {
+    "provision": "Art. 2(35)",
+    "quote": "‘data egress charges’ means data transfer fees charged to customers for extracting their data through the network"
+   }
+  },
+  {
+   "term": "switching charges",
+   "defined_in": "this Regulation, Art. 2(36)",
+   "evidence": {
+    "provision": "Art. 2(36)",
+    "quote": "‘switching charges’ means charges, other than standard service fees or early termination penalties, imposed by a provider of data processing services on a customer"
+   }
+  },
+  {
+   "term": "functional equivalence",
+   "defined_in": "this Regulation, Art. 2(37)",
+   "evidence": {
+    "provision": "Art. 2(37)",
+    "quote": "‘functional equivalence’ means re-establishing on the basis of the customer’s exportable data and digital assets, a minimum level of functionality"
+   }
+  },
+  {
+   "term": "exportable data",
+   "defined_in": "this Regulation, Art. 2(38)",
+   "evidence": {
+    "provision": "Art. 2(38)",
+    "quote": "‘exportable data’, for the purpose of Articles 23 to 31 and Article 35, means the input and output data, including metadata"
+   }
+  },
+  {
+   "term": "smart contract",
+   "defined_in": "this Regulation, Art. 2(39)",
+   "evidence": {
+    "provision": "Art. 2(39)",
+    "quote": "‘smart contract’ means a computer program used for the automated execution of an agreement or part thereof"
+   }
+  },
+  {
+   "term": "interoperability",
+   "defined_in": "this Regulation, Art. 2(40)",
+   "evidence": {
+    "provision": "Art. 2(40)",
+    "quote": "‘interoperability’ means the ability of two or more data spaces or communication networks"
+   }
+  },
+  {
+   "term": "common specifications",
+   "defined_in": "this Regulation, Art. 2(42)",
+   "evidence": {
+    "provision": "Art. 2(42)",
+    "quote": "‘common specifications’ means a document, other than a standard, containing technical solutions"
+   }
+  },
+  {
+   "term": "harmonised standard",
+   "defined_in": "Regulation (EU) No 1025/2012, Art. 2(1)(c)",
+   "evidence": {
+    "provision": "Art. 2(43)",
+    "quote": "‘harmonised standard’ means a harmonised standard as defined in Article 2, point (1)(c), of Regulation (EU) No 1025/2012"
+   }
+  },
+  {
+   "term": "Commission Recommendation 2003/361/EC (micro, small and medium-sized enterprises)",
+   "defined_in": "Commission Recommendation 2003/361/EC of 6 May 2003 concerning the definition of micro, small and medium-sized enterprises",
+   "evidence": {
+    "provision": "footnote (^5)",
+    "quote": "Commission Recommendation 2003/361/EC of 6 May 2003 concerning the definition of micro, small and medium-sized enterprises"
+   }
+  },
+  {
+   "term": "exceptional need",
+   "defined_in": "Art. 15(1)",
+   "evidence": {
+    "provision": "Art. 15(1)",
+    "quote": "An exceptional need to use certain data within the meaning of this Chapter shall be limited in time and scope and shall be considered to exist only in any of the following circumstances:"
+   }
+  },
+  {
+   "term": "unfair contractual term",
+   "defined_in": "Art. 13(3)",
+   "evidence": {
+    "provision": "Art. 13(3)",
+    "quote": "A contractual term is unfair if it is of such a nature that its use grossly deviates from good commercial practice in data access and use, contrary to good faith and fair dealing."
+   }
+  },
+  {
+   "term": "unilaterally imposed contractual term",
+   "defined_in": "Art. 13(6)",
+   "evidence": {
+    "provision": "Art. 13(6)",
+    "quote": "A contractual term shall be considered to be unilaterally imposed within the meaning of this Article if it has been supplied by one contracting party and the other contracting party has not been able to influence its content despite an attempt to negotiate it."
+   }
+  },
+  {
+   "term": "competent authorities",
+   "defined_in": "Art. 37(1)",
+   "evidence": {
+    "provision": "Art. 37(1)",
+    "quote": "Each Member State shall designate one or more competent authorities to be responsible for the application and enforcement of this Regulation (competent authorities)."
+   }
+  },
+  {
+   "term": "common European data spaces",
+   "defined_in": "Art. 33(1)",
+   "evidence": {
+    "provision": "Art. 33(1)",
+    "quote": "common European data spaces which are purpose- or sector-specific or cross-sectoral interoperable frameworks for common standards and practices to share or jointly process data"
+   }
+  },
+  {
+   "term": "scalable and elastic computing resources limited to infrastructural elements",
+   "defined_in": "Art. 30(1)",
+   "evidence": {
+    "provision": "Art. 30(1)",
+    "quote": "Providers of data processing services that concern scalable and elastic computing resources limited to infrastructural elements such as servers, networks and the virtual resources necessary for operating the infrastructure"
+   }
+  },
+  {
+   "term": "custom-built data processing services",
+   "defined_in": "Art. 31(1)",
+   "evidence": {
+    "provision": "Art. 31(1)",
+    "quote": "data processing services of which the majority of main features has been custom-built to accommodate the specific needs of an individual customer"
+   }
+  },
+  {
+   "term": "non-production version of data processing services",
+   "defined_in": "Art. 31(2)",
+   "evidence": {
+    "provision": "Art. 31(2)",
+    "quote": "data processing services provided as a non-production version for testing and evaluation purposes and for a limited period of time."
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "other",
+   "addressee": "enterprise",
+   "also_addressees": [
+    "ai_developer"
+   ],
+   "modality": "shall",
+   "summary": "Connected products must be designed and manufactured, and related services designed and provided, so that product data and related service data are by default easily, securely, free of charge and machine-readable, and directly accessible to the user where relevant and technically feasible.",
+   "evidence": {
+    "provision": "Art. 3(1)",
+    "quote": "Connected products shall be designed and manufactured, and related services shall be designed and provided"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Before a contract for purchase, rent or lease of a connected product, the seller, rentor or lessor (which may be the manufacturer) must give the user pre-contract information on the product data, its format, volume, storage and access arrangements.",
+   "evidence": {
+    "provision": "Art. 3(2)",
+    "quote": "Before concluding a contract for the purchase, rent or lease of a connected product, the seller, rentor or lessor, which may be the manufacturer, shall provide at least the following information to the user"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Before a related service contract, the provider must give the user pre-contract information on the related service data, the prospective data holder, trade secret holders, complaint right and contract duration and termination.",
+   "evidence": {
+    "provision": "Art. 3(3)",
+    "quote": "Before concluding a contract for the provision of a related service, the provider of such related service shall provide at least the following information to the user"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_holder",
+   "modality": "shall",
+   "summary": "Where data cannot be directly accessed by the user, the data holder must make readily available data and metadata accessible to the user without undue delay, free of charge, in machine-readable format, on a simple electronic request where technically feasible.",
+   "conditional_on": "Where data cannot be directly accessed by the user from the connected product or related service",
+   "evidence": {
+    "provision": "Art. 4(1)",
+    "quote": "data holders shall make readily available data, as well as the relevant metadata necessary to interpret and use those data, accessible to the user without undue delay"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "data_holder",
+   "modality": "shall",
+   "summary": "A data holder that refuses to share data under Art. 4(2), withholds or suspends sharing of trade secret data under Art. 4(7), or refuses under Art. 4(8) must notify the designated competent authority.",
+   "conditional_on": "Where the data holder refuses, withholds or suspends data sharing",
+   "evidence": {
+    "provision": "Art. 4(2)",
+    "quote": "Where the data holder refuses to share data pursuant to this Article, it shall notify the competent authority designated pursuant to Article 37."
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "data_holder",
+   "modality": "shall_not",
+   "summary": "Data holders must not make the exercise of user choices or rights under Art. 4 unduly difficult, including through non-neutral choices or manipulative user interface design.",
+   "evidence": {
+    "provision": "Art. 4(4)",
+    "quote": "Data holders shall not make the exercise of choices or rights under this Article by the user unduly difficult"
+   }
+  },
+  {
+   "type": "data_minimization",
+   "addressee": "data_holder",
+   "modality": "shall_not",
+   "summary": "Data holders must not require information beyond what is necessary to verify user status and must not keep information, including log data, on the user's access beyond what is necessary.",
+   "evidence": {
+    "provision": "Art. 4(5)",
+    "quote": "Data holders shall not keep any information, in particular log data, on the user’s access to the data requested beyond what is necessary"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "data_holder",
+   "modality": "shall",
+   "summary": "Trade secrets are to be preserved: the data holder (or trade secret holder) must identify protected data and agree proportionate confidentiality measures with the user before disclosure.",
+   "conditional_on": "Where trade secrets are contained in the data",
+   "evidence": {
+    "provision": "Art. 4(6)",
+    "quote": "The data holder or, where they are not the same person, the trade secret holder shall identify the data which are protected as trade secrets"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "consumers_users",
+   "modality": "shall_not",
+   "summary": "The user must not use data obtained under a request to develop a competing connected product, share such data for that intent, or use it to derive insights about the manufacturer or data holder.",
+   "evidence": {
+    "provision": "Art. 4(10)",
+    "quote": "The user shall not use the data obtained pursuant to a request referred to in paragraph 1 to develop a connected product that competes with the connected product from which the data originate"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "consumers_users",
+   "modality": "shall_not",
+   "summary": "The user must not use coercive means or abuse gaps in a data holder's technical infrastructure to obtain data.",
+   "evidence": {
+    "provision": "Art. 4(11)",
+    "quote": "The user shall not use coercive means or abuse gaps in the technical infrastructure of a data holder"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "data_holder",
+   "modality": "shall_not",
+   "summary": "Where the user is not the data subject, personal data may be made available by the data holder only where a valid legal basis under GDPR Art. 6 (and Art. 9 and ePrivacy Art. 5(3) where relevant) exists.",
+   "conditional_on": "Where the user is not the data subject whose personal data is requested",
+   "evidence": {
+    "provision": "Art. 4(12)",
+    "quote": "shall be made available by the data holder to the user only where there is a valid legal basis for processing under Article 6"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "data_holder",
+   "modality": "shall_not",
+   "summary": "A data holder may use readily available non-personal data only on the basis of a contract with the user and must not use it to derive insights that could undermine the user's commercial position.",
+   "evidence": {
+    "provision": "Art. 4(13)",
+    "quote": "A data holder shall only use any readily available data that is non-personal data on the basis of a contract with the user."
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "data_holder",
+   "modality": "shall_not",
+   "summary": "Data holders must not make non-personal product data available to third parties other than for fulfilling their contract with the user, and must contractually bind third parties not to further share it.",
+   "evidence": {
+    "provision": "Art. 4(14)",
+    "quote": "Data holders shall not make available non-personal product data to third parties for commercial or non-commercial purposes other than the fulfilment of their contract with the user."
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_holder",
+   "modality": "shall",
+   "summary": "Upon request by a user or a party acting on its behalf, the data holder must make readily available data and metadata available to a third party without undue delay, free of charge to the user, in machine-readable format.",
+   "conditional_on": "Upon request by a user or a party acting on behalf of a user",
+   "evidence": {
+    "provision": "Art. 5(1)",
+    "quote": "Upon request by a user, or by a party acting on behalf of a user, the data holder shall make available readily available data"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "platform_operator",
+   "modality": "shall_not",
+   "summary": "A gatekeeper designated under Regulation (EU) 2022/1925 is not an eligible third party and must not solicit or incentivise users to make data available to its services, or receive such data.",
+   "conditional_on": "Where the undertaking is designated as a gatekeeper",
+   "evidence": {
+    "provision": "Art. 5(3)",
+    "quote": "Any undertaking designated as a gatekeeper, pursuant to Article 3 of Regulation (EU) 2022/1925, shall not be an eligible third party under this Article"
+   }
+  },
+  {
+   "type": "data_minimization",
+   "addressee": "data_holder",
+   "modality": "shall_not",
+   "summary": "Data holders must not keep information on the third party's access to the requested data beyond what is necessary for executing the request and for security and maintenance.",
+   "evidence": {
+    "provision": "Art. 5(4)",
+    "quote": "Data holders shall not keep any information on the third party’s access to the data requested beyond what is necessary"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "enterprise",
+   "modality": "shall_not",
+   "summary": "The third party must not use coercive means or abuse gaps in a data holder's technical infrastructure to obtain data.",
+   "evidence": {
+    "provision": "Art. 5(5)",
+    "quote": "The third party shall not use coercive means or abuse gaps in the technical infrastructure of a data holder"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "data_holder",
+   "modality": "shall_not",
+   "summary": "The data holder must not use readily available data to derive insights about the third party's economic situation or production methods that could undermine its commercial position, unless permission is given and can be withdrawn.",
+   "evidence": {
+    "provision": "Art. 5(6)",
+    "quote": "A data holder shall not use any readily available data to derive insights about the economic situation, assets and production methods of, or the use by, the third party"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "data_holder",
+   "modality": "shall_not",
+   "summary": "Personal data generated by the use of a product may be made available to a third party by the data holder only where a valid legal basis under GDPR Art. 6 (and Art. 9 and ePrivacy Art. 5(3) where relevant) exists.",
+   "conditional_on": "Where the user is not the data subject whose personal data is requested",
+   "evidence": {
+    "provision": "Art. 5(7)",
+    "quote": "shall be made available by the data holder to the third party only where there is a valid legal basis for processing under Article 6"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "data_holder",
+   "also_addressees": [
+    "enterprise"
+   ],
+   "modality": "shall",
+   "summary": "Trade secrets are disclosed to third parties only as strictly necessary; the data holder (or trade secret holder) must identify protected data and agree proportionate confidentiality measures with the third party.",
+   "conditional_on": "Where data are trade secrets",
+   "evidence": {
+    "provision": "Art. 5(9)",
+    "quote": "shall agree with the third party all proportionate technical and organisational measures necessary to preserve the confidentiality of the shared data"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "data_holder",
+   "modality": "shall",
+   "summary": "Where a data holder withholds or suspends sharing with a third party under Art. 5(10) or refuses under Art. 5(11), it must notify the designated competent authority.",
+   "conditional_on": "Where the data holder withholds, suspends or refuses data sharing",
+   "evidence": {
+    "provision": "Art. 5(10)",
+    "quote": "the data holder shall notify the competent authority designated pursuant to Article 37 that it has withheld or suspended data sharing"
+   }
+  },
+  {
+   "type": "data_minimization",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "A third party receiving data at a user's request must process it only for the agreed purposes and conditions, subject to data protection law, and erase it when no longer necessary for the agreed purpose.",
+   "conditional_on": "Data made available at the request of the user under Art. 5",
+   "evidence": {
+    "provision": "Art. 6(1)",
+    "quote": "A third party shall process the data made available to it pursuant to Article 5 only for the purposes and under the conditions agreed with the user"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "enterprise",
+   "modality": "shall_not",
+   "summary": "A third party must not, among other things, unduly hinder user choices, profile the user (unless necessary for the requested service), pass data to another third party or to a gatekeeper, compete with the source product, adversely affect security, or disregard agreed trade secret measures.",
+   "conditional_on": "Data made available at the request of the user under Art. 5",
+   "evidence": {
+    "provision": "Art. 6(2)",
+    "quote": "use the data it receives to develop a product that competes with the connected product from which the accessed data originate"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_holder",
+   "modality": "shall",
+   "summary": "Where a data holder must make data available to a data recipient under Union law, it must agree the arrangements with the recipient on fair, reasonable and non-discriminatory terms, transparently.",
+   "conditional_on": "Where a data holder is obliged to make data available to a data recipient under Art. 5 or other Union or national law",
+   "evidence": {
+    "provision": "Art. 8(1)",
+    "quote": "it shall agree with a data recipient the arrangements for making the data available and shall do so under fair, reasonable and non-discriminatory terms and conditions"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "data_holder",
+   "modality": "shall_not",
+   "summary": "A data holder must not discriminate in data-making-available arrangements between comparable categories of data recipients, including its partner or linked enterprises.",
+   "conditional_on": "Where a data holder is obliged to make data available to a data recipient",
+   "evidence": {
+    "provision": "Art. 8(3)",
+    "quote": "A data holder shall not discriminate regarding the arrangements for making data available between comparable categories of data recipients"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "data_holder",
+   "modality": "shall",
+   "summary": "On a reasoned request from a data recipient alleging discrimination, the data holder must without undue delay provide information showing there has been no discrimination.",
+   "conditional_on": "Upon the reasoned request of a data recipient who considers the conditions discriminatory",
+   "evidence": {
+    "provision": "Art. 8(3)",
+    "quote": "the data holder shall without undue delay provide the data recipient, upon its reasoned request, with information showing that there has been no discrimination."
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "data_holder",
+   "modality": "shall_not",
+   "summary": "A data holder must not make data available to a data recipient, including on an exclusive basis, unless requested to do so by the user under Chapter II.",
+   "evidence": {
+    "provision": "Art. 8(4)",
+    "quote": "A data holder shall not make data available to a data recipient, including on an exclusive basis, unless requested to do so by the user under Chapter II."
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_holder",
+   "also_addressees": [
+    "data_holder"
+   ],
+   "modality": "shall",
+   "summary": "Compensation agreed for making data available in business-to-business relations must be non-discriminatory and reasonable, and may include a margin.",
+   "conditional_on": "Business-to-business compensation for making data available",
+   "evidence": {
+    "provision": "Art. 9(1)",
+    "quote": "shall be non- discriminatory and reasonable"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "data_holder",
+   "modality": "shall_not",
+   "summary": "Where the data recipient is an SME or not-for-profit research organisation without larger partner or linked enterprises, agreed compensation must not exceed the costs of making the data available.",
+   "conditional_on": "Where the data recipient is an SME or a not-for-profit research organisation without partner or linked enterprises that are not SMEs",
+   "evidence": {
+    "provision": "Art. 9(4)",
+    "quote": "any compensation agreed shall not exceed the costs referred to in paragraph 2, point (a)."
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Commission must adopt guidelines on the calculation of reasonable compensation, taking into account the advice of the EDIB.",
+   "evidence": {
+    "provision": "Art. 9(5)",
+    "quote": "The Commission shall adopt guidelines on the calculation of reasonable compensation"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "data_holder",
+   "modality": "shall",
+   "summary": "The data holder must give the data recipient information setting out the basis for calculating the compensation in sufficient detail to assess compliance.",
+   "evidence": {
+    "provision": "Art. 9(7)",
+    "quote": "The data holder shall provide the data recipient with information setting out the basis for the calculation of the compensation"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Dispute settlement bodies must make their fees, or the mechanisms used to determine them, known to the parties before a decision is requested.",
+   "evidence": {
+    "provision": "Art. 10(2)",
+    "quote": "Dispute settlement bodies shall make the fees, or the mechanisms used to determine the fees, known to the parties concerned"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_holder",
+   "modality": "shall",
+   "summary": "Where a dispute settlement body decides in favour of the user or data recipient, the data holder must bear all fees charged and reimburse other reasonable expenses.",
+   "conditional_on": "Where the dispute settlement body decides in favour of the user or data recipient",
+   "evidence": {
+    "provision": "Art. 10(3)",
+    "quote": "the data holder shall bear all the fees charged by the dispute settlement body"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Member State where a dispute settlement body is established must certify that body on request where it meets the listed conditions; Member States notify certified bodies to the Commission, which publishes a list.",
+   "conditional_on": "Upon request of the dispute settlement body",
+   "evidence": {
+    "provision": "Art. 10(5)",
+    "quote": "The Member State where the dispute settlement body is established shall, at the request of that body, certify that body"
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "A dispute settlement body must adopt its decision within 90 days of receipt of a request, in writing or on a durable medium with reasons.",
+   "evidence": {
+    "provision": "Art. 10(9)",
+    "quote": "A dispute settlement body shall adopt its decision on a matter referred to it within 90 days of receipt of a request"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Dispute settlement bodies must draw up and make publicly available annual activity reports, including aggregated outcomes, average resolution times and common dispute reasons.",
+   "evidence": {
+    "provision": "Art. 10(10)",
+    "quote": "Dispute settlement bodies shall draw up and make publicly available annual activity reports."
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "data_holder",
+   "modality": "may",
+   "summary": "A data holder may apply appropriate technical protection measures, including smart contracts and encryption, to prevent unauthorised access, provided they do not discriminate between recipients or hinder user rights.",
+   "evidence": {
+    "provision": "Art. 11(1)",
+    "quote": "A data holder may apply appropriate technical protection measures, including smart contracts and encryption"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "consumers_users",
+   "also_addressees": [
+    "enterprise"
+   ],
+   "modality": "shall_not",
+   "summary": "Users, third parties and data recipients must not alter or remove technical protection measures applied by the data holder unless the data holder agrees.",
+   "evidence": {
+    "provision": "Art. 11(1)",
+    "quote": "Users, third parties and data recipients shall not alter or remove such technical protection measures unless agreed by the data holder."
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Where a third party or data recipient has infringed the listed conduct under Art. 11(3), it must without undue delay erase the data and copies, end infringing production or use of goods, inform the user, and compensate the affected party when requested.",
+   "conditional_on": "Where a third party or data recipient has engaged in conduct listed in Art. 11(3)",
+   "evidence": {
+    "provision": "Art. 11(2)",
+    "quote": "the third party or data recipient shall comply, without undue delay, with the requests of the data holder"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "enterprise",
+   "modality": "shall_not",
+   "summary": "Parties to a contract covered by Art. 13(1) may not exclude, derogate from or vary the application of the unfair-terms rules in Art. 13.",
+   "evidence": {
+    "provision": "Art. 13(9)",
+    "quote": "shall not exclude the application of this Article"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_holder",
+   "modality": "shall",
+   "summary": "Data holders that are legal persons, other than public sector bodies, must make requested data available upon a duly reasoned request in exceptional need cases.",
+   "conditional_on": "A public sector body, the Commission, the ECB or a Union body demonstrates an exceptional need under Art. 15.",
+   "evidence": {
+    "provision": "Art. 14",
+    "quote": "shall make them available upon a duly reasoned request"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "When requesting data under Art. 14, the requesting body must specify the data, demonstrate the exceptional need, explain purpose and use, set deadlines, state the legal basis, and meet the other request conditions in Art. 17(1)-(2) and (4); the Commission must develop a model request template (Art. 17(6)).",
+   "conditional_on": "Requests made under Art. 14.",
+   "evidence": {
+    "provision": "Art. 17(1)",
+    "quote": "When requesting data pursuant to Article 14, a public sector body, the Commission, the European Central Bank or a Union body shall:"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "government_agency",
+   "modality": "shall_not",
+   "summary": "Public sector bodies, the Commission, the ECB and Union bodies may not make data obtained under Chapter V available for reuse under Regulation (EU) 2022/868 or Directive (EU) 2019/1024.",
+   "evidence": {
+    "provision": "Art. 17(3)",
+    "quote": "shall not make data obtained pursuant to this Chapter available for reuse"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_holder",
+   "modality": "shall",
+   "summary": "A data holder receiving a request under Chapter V must make the data available without undue delay, taking necessary technical, organisational and legal measures; it may decline or seek modification within the periods in Art. 18(2).",
+   "conditional_on": "Request received under Chapter V.",
+   "evidence": {
+    "provision": "Art. 18(1)",
+    "quote": "shall make the data available to the requesting public sector body"
+   }
+  },
+  {
+   "type": "data_minimization",
+   "addressee": "data_holder",
+   "modality": "shall",
+   "summary": "Where personal data are requested, the data holder must anonymise them, or pseudonymise them where disclosure of personal data is required.",
+   "conditional_on": "Requested data include personal data.",
+   "evidence": {
+    "provision": "Art. 18(4)",
+    "quote": "the data holder shall properly anonymise the data"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "A public sector body, Commission, ECB or Union body receiving data under Art. 14 must implement measures preserving confidentiality and integrity, preserve trade secrets, and is responsible for the security of data received (Art. 19(1)(b), (3), (4)).",
+   "conditional_on": "Data received under a request made under Art. 14.",
+   "evidence": {
+    "provision": "Art. 19(1)(b)",
+    "quote": "have implemented technical and organisational measures that preserve the confidentiality and integrity of the requested data"
+   }
+  },
+  {
+   "type": "data_minimization",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Receiving public sector bodies must erase data once no longer necessary for the stated purpose and inform the data holder and recipients of the erasure.",
+   "conditional_on": "Data received under a request made under Art. 14.",
+   "evidence": {
+    "provision": "Art. 19(1)(c)",
+    "quote": "erase the data as soon as they are no longer necessary for the stated purpose"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "government_agency",
+   "modality": "shall_not",
+   "summary": "Receiving bodies (and third parties receiving data) may not use the data for purposes incompatible with the request, use it to develop competing products, or share it with third parties for such purposes (Art. 19(1)(a), 19(2)).",
+   "conditional_on": "Data received under Chapter V.",
+   "evidence": {
+    "provision": "Art. 19(2)(a)",
+    "quote": "use the data or insights about the economic situation"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_holder",
+   "modality": "shall",
+   "summary": "Data holders other than microenterprises and small enterprises must make data needed for a public emergency available free of charge.",
+   "conditional_on": "Public emergency under Art. 15(1)(a); data holder is not a microenterprise or small enterprise.",
+   "evidence": {
+    "provision": "Art. 20(1)",
+    "quote": "shall make available data necessary to respond to a public emergency pursuant to Article 15(1), point (a), free of charge"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The receiving public body, Commission, ECB or Union body must provide public acknowledgement to the data holder if the holder requests it.",
+   "conditional_on": "Data holder requests acknowledgement.",
+   "evidence": {
+    "provision": "Art. 20(1)",
+    "quote": "shall provide public acknowledgement to the data holder if requested by the data holder"
+   }
+  },
+  {
+   "type": "eligibility_condition",
+   "addressee": "research_institution",
+   "modality": "shall",
+   "summary": "Individuals or organisations receiving shared data for research or statistics must act on a not-for-profit basis or in a recognised public-interest mission, and may not be under significant commercial influence.",
+   "conditional_on": "Receipt of data shared under Art. 21(1).",
+   "evidence": {
+    "provision": "Art. 21(2)",
+    "quote": "shall act on a not-for-profit basis or in the context of a public-interest mission"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "research_institution",
+   "modality": "shall",
+   "summary": "Recipients of shared data must comply with the same obligations that apply to public sector bodies under Art. 17(3) and Art. 19.",
+   "conditional_on": "Receipt of data shared under Art. 21(1).",
+   "evidence": {
+    "provision": "Art. 21(3)",
+    "quote": "shall comply with the same obligations that are applicable to the public sector bodies"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "A public body sharing data under Art. 21(1) must notify the data holder without undue delay, stating recipient identity, purpose, period of use and protection measures.",
+   "conditional_on": "Transmission or making available of data under Art. 21(1).",
+   "evidence": {
+    "provision": "Art. 21(5)",
+    "quote": "shall notify without undue delay the data holder from whom the data was received"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Public sector bodies, the Commission, the ECB and Union bodies must cooperate and assist one another to implement Chapter V consistently; before requesting data from a holder in another Member State, a public sector body must notify that Member State's competent authority.",
+   "evidence": {
+    "provision": "Art. 22(1)",
+    "quote": "shall cooperate and assist one another, to implement this Chapter in a consistent manner"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "government_agency",
+   "modality": "shall_not",
+   "summary": "Data exchanged in mutual assistance may not be used in a manner incompatible with the purpose for which it was requested.",
+   "conditional_on": "Data exchanged under Art. 22(1).",
+   "evidence": {
+    "provision": "Art. 22(2)",
+    "quote": "shall not be used in a manner incompatible with the purpose for which they were requested"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "A public sector body intending to request data from a holder in another Member State must first notify that Member State's competent authority.",
+   "conditional_on": "Request to a data holder established in another Member State.",
+   "evidence": {
+    "provision": "Art. 22(3)",
+    "quote": "it shall first notify the competent authority designated pursuant to Article 37 in that Member State of that intention"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "regulator",
+   "modality": "shall",
+   "summary": "The competent authority of the data holder's Member State must, without undue delay, transmit the request to the holder (with advice) or reject it on substantiated grounds.",
+   "conditional_on": "Cross-border request under Art. 22(3).",
+   "evidence": {
+    "provision": "Art. 22(4)",
+    "quote": "the relevant competent authority shall, without undue delay, take one of the following actions"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "cloud_service_provider",
+   "modality": "shall_not",
+   "summary": "Providers of data processing services must not impose, and must remove, pre-commercial, commercial, technical, contractual and organisational obstacles to customers switching services.",
+   "conditional_on": "Switching of a data processing service covering the same service type.",
+   "evidence": {
+    "provision": "Art. 23",
+    "quote": "providers of data processing services shall not impose and shall remove pre-commercial, commercial, technical, contractual and organisational obstacles"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "cloud_service_provider",
+   "modality": "shall",
+   "summary": "The rights and obligations on switching must be set out in a written contract, which the provider must make available to the customer before signing in a form allowing storage and reproduction.",
+   "evidence": {
+    "provision": "Art. 25(1)",
+    "quote": "shall make that contract available to the customer prior to signing the contract"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "cloud_service_provider",
+   "modality": "shall",
+   "summary": "The switching contract must include at least the clauses listed in Art. 25(2)(a)-(i), including a transitional period of not more than 30 calendar days, a maximum notice period of two months, a data retrieval period of at least 30 calendar days, erasure, and switching charges per Art. 29.",
+   "evidence": {
+    "provision": "Art. 25(2)",
+    "quote": "the contract referred to in paragraph 1 of this Article shall include at least the following"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "cloud_service_provider",
+   "modality": "shall",
+   "summary": "Where the mandatory transitional period is technically unfeasible, the provider must notify the customer within 14 working days of the switching request, justify the unfeasibility and indicate an alternative period not exceeding seven months.",
+   "conditional_on": "Mandatory maximum transitional period is technically unfeasible.",
+   "evidence": {
+    "provision": "Art. 25(4)",
+    "quote": "shall notify the customer within 14 working days of the making of the switching request"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "cloud_service_provider",
+   "modality": "shall",
+   "summary": "The provider must give the customer information on switching and porting procedures, methods and formats, and a reference to an online register of data structures and formats.",
+   "evidence": {
+    "provision": "Art. 26",
+    "quote": "The provider of data processing services shall provide the customer with:"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "cloud_service_provider",
+   "modality": "shall",
+   "summary": "All parties involved, including destination providers, must cooperate in good faith to make switching effective and maintain service continuity.",
+   "evidence": {
+    "provision": "Art. 27",
+    "quote": "shall cooperate in good faith to make the switching process effective"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "cloud_service_provider",
+   "modality": "shall",
+   "summary": "Providers must publish on their websites, and keep up to date, the jurisdiction of the ICT infrastructure and a description of measures against international governmental access; these websites must be listed in contracts.",
+   "evidence": {
+    "provision": "Art. 28(1)",
+    "quote": "Providers of data processing services shall make the following information available on their websites"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "cloud_service_provider",
+   "modality": "shall_not",
+   "summary": "From 12 January 2027 providers may not impose any switching charges on the customer.",
+   "applies_from": "From 12 January 2027",
+   "evidence": {
+    "provision": "Art. 29(1)",
+    "quote": "From 12 January 2027, providers of data processing services shall not impose any switching charges"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "cloud_service_provider",
+   "modality": "may",
+   "summary": "Providers may impose reduced switching charges, not exceeding their directly linked switching costs (Art. 29(3)).",
+   "applies_from": "From 11 January 2024 to 12 January 2027",
+   "evidence": {
+    "provision": "Art. 29(2)",
+    "quote": "From 11 January 2024 to 12 January 2027, providers of data processing services may impose reduced switching charges"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "cloud_service_provider",
+   "modality": "shall",
+   "summary": "Before contracting, providers must give prospective customers clear information on standard fees, early termination penalties and reduced switching charges, and on highly complex or costly switching services, and publish it where applicable.",
+   "evidence": {
+    "provision": "Art. 29(4)",
+    "quote": "Before entering into a contract with a customer, providers of data processing services shall provide the prospective customer with clear information"
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Commission is empowered to adopt delegated acts establishing a monitoring mechanism for switching charges.",
+   "evidence": {
+    "provision": "Art. 29(7)",
+    "quote": "The Commission is empowered to adopt delegated acts in accordance with Article 45"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "cloud_service_provider",
+   "modality": "shall",
+   "summary": "Infrastructure-only providers must take all reasonable measures to facilitate functional equivalence; other providers must make open interfaces available free of charge to all customers; on request and absent common specifications, providers must export all exportable data in a structured, commonly used, machine-readable format.",
+   "conditional_on": "Export obligation applies where no common specifications or harmonised standards are published (Art. 30(5)).",
+   "evidence": {
+    "provision": "Art. 30(1)",
+    "quote": "take all reasonable measures in their power to facilitate that the customer"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "cloud_service_provider",
+   "modality": "shall",
+   "summary": "Providers (other than infrastructure-only ones) must ensure compatibility with common specifications or harmonised interoperability standards, and update their online register accordingly.",
+   "applies_from": "At least 12 months after the references to the common specifications or harmonised standards are published in the central Union standards repository.",
+   "evidence": {
+    "provision": "Art. 30(3)",
+    "quote": "shall ensure compatibility with common specifications"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "cloud_service_provider",
+   "modality": "shall",
+   "summary": "Providers must inform prospective customers of the Chapter VI obligations that do not apply to custom-built or non-production services.",
+   "conditional_on": "Custom-built services or non-production versions for testing (Art. 31).",
+   "evidence": {
+    "provision": "Art. 31(3)",
+    "quote": "the provider of data processing services shall inform the prospective customer of the obligations of this Chapter that do not apply"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "cloud_service_provider",
+   "modality": "shall",
+   "summary": "Providers must take adequate technical, organisational and legal measures, including contracts, to prevent international governmental access to or transfer of non-personal data held in the Union where this conflicts with Union or Member State law.",
+   "conditional_on": "Conflict with Union law or the national law of the relevant Member State.",
+   "evidence": {
+    "provision": "Art. 32(1)",
+    "quote": "shall take all adequate technical, organisational and legal measures, including contracts"
+   }
+  },
+  {
+   "type": "data_minimization",
+   "addressee": "cloud_service_provider",
+   "modality": "shall",
+   "summary": "Where an international access request applies, the provider must provide the minimum amount of data permissible in response.",
+   "conditional_on": "Conditions of Art. 32(2) or 32(3) are met.",
+   "evidence": {
+    "provision": "Art. 32(4)",
+    "quote": "the provider of data processing services shall provide the minimum amount of data permissible in response to a request"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "cloud_service_provider",
+   "modality": "shall",
+   "summary": "Before complying with a third-country authority's request for customer data, the provider must inform the customer of the request, except where the request serves law enforcement purposes and secrecy is necessary.",
+   "conditional_on": "Request of a third-country authority to access customer data, before compliance.",
+   "evidence": {
+    "provision": "Art. 32(5)",
+    "quote": "shall inform the customer about the existence of a request of a third-country authority to access its data before complying with that request"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Participants in data spaces offering data or data services must comply with essential interoperability requirements (described data, machine-readable descriptions, technical access means, and tools for data sharing agreements).",
+   "conditional_on": "Participants offering data or data services to other participants in data spaces.",
+   "evidence": {
+    "provision": "Art. 33(1)",
+    "quote": "Participants in data spaces that offer data or data services to other participants shall comply with the following essential requirements"
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Commission is empowered to adopt delegated acts further specifying the essential interoperability requirements.",
+   "evidence": {
+    "provision": "Art. 33(2)",
+    "quote": "The Commission is empowered to adopt delegated acts, in accordance with Article 45 of this Regulation"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Commission must request European standardisation organisations to draft harmonised standards for the essential requirements (Art. 33(4)); it must consult the EDIB and stakeholders, and repeal superseded implementing acts when a standard reference is published (Art. 33(6), (7), (9)).",
+   "evidence": {
+    "provision": "Art. 33(4)",
+    "quote": "The Commission shall, pursuant to Article 10 of Regulation (EU) No 1025/2012, request one or more European standardisation organisations to draft harmonised standards"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Interoperability requirements applied mutatis mutandis to providers of data processing services for in-parallel use: the Art. 23, 24, 25(2) and 30(2)-(5) requirements apply.",
+   "conditional_on": "In-parallel use of data processing services.",
+   "evidence": {
+    "provision": "Art. 34(1)",
+    "quote": "shall also apply mutatis mutandis to providers of data processing services to facilitate interoperability"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "cloud_service_provider",
+   "modality": "may",
+   "summary": "Providers may impose data egress charges for parallel use, only to pass on egress costs without exceeding them.",
+   "conditional_on": "Data processing service used in parallel with another service.",
+   "evidence": {
+    "provision": "Art. 34(2)",
+    "quote": "the providers of data processing services may impose data egress charges, but only for the purpose of passing on egress costs incurred"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Commission must publish references to harmonised standards and common specifications for data processing service interoperability in a central Union standards repository, after consulting the competent authorities and stakeholders.",
+   "conditional_on": "For the purpose of Art. 30(3).",
+   "evidence": {
+    "provision": "Art. 35(8)",
+    "quote": "the Commission shall, by means of implementing acts, publish the references of harmonised standards and common specifications"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Vendors of applications using smart contracts for making data available (or persons deploying them for others) must ensure the smart contracts meet the robustness, safe termination, archiving, access control and consistency requirements in Art. 36(1)(a)-(e).",
+   "conditional_on": "Smart contracts used for executing a data sharing agreement.",
+   "evidence": {
+    "provision": "Art. 36(1)",
+    "quote": "shall ensure that those smart contracts comply with the following essential requirements"
+   }
+  },
+  {
+   "type": "testing_evaluation",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "The smart contract vendor must perform a conformity assessment and, on fulfilment, issue an EU declaration of conformity, and is responsible for compliance (Art. 36(3)).",
+   "conditional_on": "Smart contracts used for executing a data sharing agreement.",
+   "evidence": {
+    "provision": "Art. 36(2)",
+    "quote": "shall perform a conformity assessment with a view to fulfilling the essential requirements laid down in paragraph 1"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Each Member State must designate one or more competent authorities for application and enforcement, notify the Commission of them and their tasks, and ensure they are impartial, independent and resourced (Art. 37(1), (2), (7), (8), (9)).",
+   "evidence": {
+    "provision": "Art. 37(1)",
+    "quote": "Each Member State shall designate one or more competent authorities to be responsible for the application and enforcement of this Regulation"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States must ensure competent authority tasks and powers are clearly defined, including promoting data literacy, handling complaints, investigations and cooperation.",
+   "evidence": {
+    "provision": "Art. 37(5)",
+    "quote": "Member States shall ensure that the tasks and powers of the competent authorities are clearly defined and include:"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "regulator",
+   "modality": "shall",
+   "summary": "Competent authorities must provide a response with actions taken or intended, without undue delay, to a reasoned assistance request from another Member State (Art. 37(15)); a designated data coordinator must act as single point of contact (Art. 37(6)).",
+   "conditional_on": "Request for assistance from another Member State's competent authority.",
+   "evidence": {
+    "provision": "Art. 37(15)",
+    "quote": "A competent authority shall, upon receiving such a request, provide a response"
+   }
+  },
+  {
+   "type": "appointment_of_representative",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Entities making connected products available or offering services in the Union without an EU establishment must designate a legal representative in one Member State.",
+   "conditional_on": "Entity not established in the Union.",
+   "evidence": {
+    "provision": "Art. 37(11)",
+    "quote": "shall designate a legal representative in one of the Member States"
+   }
+  },
+  {
+   "type": "cooperation_with_authority",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "The legal representative must cooperate with and demonstrate to competent authorities, on request, the actions and provisions taken to ensure compliance.",
+   "conditional_on": "Entity not established in the Union has designated a legal representative.",
+   "evidence": {
+    "provision": "Art. 37(12)",
+    "quote": "That legal representative shall cooperate with and comprehensively demonstrate to the competent authorities, upon request"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "also_addressees": [
+    "regulator"
+   ],
+   "modality": "shall",
+   "summary": "The data coordinator must, on request, provide information to natural and legal persons for lodging complaints; the competent authority must inform the complainant of progress and outcome, and cooperate to resolve complaints.",
+   "conditional_on": "Complaint lodged under Art. 38(1).",
+   "evidence": {
+    "provision": "Art. 38(1)",
+    "quote": "The data coordinator shall, upon request, provide all the necessary information to natural and legal persons"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Commission must develop and recommend non-binding model contractual terms on data access and use and non-binding standard contractual clauses for cloud computing contracts.",
+   "applies_from": "Before 12 September 2025",
+   "evidence": {
+    "provision": "Art. 41",
+    "quote": "shall develop and recommend non-binding model contractual terms on data access and use"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The EDIB, an expert group in which competent authorities are represented, must support consistent application of the Regulation by advising the Commission and facilitating cooperation between authorities.",
+   "evidence": {
+    "provision": "Art. 42",
+    "quote": "shall support the consistent application of this Regulation by:"
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The power to adopt delegated acts (Art. 29(7) and Art. 33(2)) is conferred on the Commission for an indeterminate period from 11 January 2024, subject to revocation by Parliament or Council.",
+   "applies_from": "11 January 2024",
+   "evidence": {
+    "provision": "Art. 45(2)",
+    "quote": "shall be conferred on the Commission for an indeterminate period of time from 11 January 2024"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Before adopting a delegated act, the Commission must consult experts designated by each Member State, and must notify each delegated act simultaneously to Parliament and Council.",
+   "conditional_on": "Adoption of a delegated act.",
+   "evidence": {
+    "provision": "Art. 45(4)",
+    "quote": "Before adopting a delegated act, the Commission shall consult experts designated by each Member State"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Commission must carry out and report on an evaluation of the Regulation, covering in particular exceptional need, the data economy, unfair terms, switching and governmental access (Art. 49(1)); a second evaluation covers Art. 23-31, 34 and 35 (Art. 49(2)).",
+   "applies_from": "By 12 September 2028",
+   "evidence": {
+    "provision": "Art. 49(1)",
+    "quote": "By 12 September 2028, the Commission shall carry out an evaluation of this Regulation"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States must provide the Commission with the information necessary for the preparation of the evaluation reports.",
+   "evidence": {
+    "provision": "Art. 49(3)",
+    "quote": "Member States shall provide the Commission with the information necessary for the preparation of the reports"
+   }
+  }
+ ],
+ "enforcement": [
+  {
+   "sanction_type": "other",
+   "authority": "Data holder, trade secret holder or user (requesting parties; no public authority named in this provision)",
+   "triggered_by": "Circumstances in Art. 11(3), such as a third party or data recipient providing false information, using deceptive or coercive means, using data for unauthorised purposes, unlawfully disclosing data, or altering technical protection measures; Art. 11(5) extends the same rights to users where a data recipient infringes Art. 6(2)(a) or (b)",
+   "max_penalty_text": "No monetary maximum stated. Requests to erase data and copies, to end production, offering, placing on the market or use of derivative goods or services (or their importation, export, storage or destruction), and to inform the user, without a fine amount",
+   "cure_period": "Not stated in this part",
+   "evidence": {
+    "provision": "Art. 11(2), points (a) to (c)",
+    "quote": "to end the production, offering or placing on the market"
+   }
+  },
+  {
+   "sanction_type": "private_damages",
+   "authority": "Party suffering from the misuse or disclosure of the unlawfully accessed or used data (requesting party; no public authority named)",
+   "triggered_by": "Circumstances in Art. 11(3), including unlawful disclosure of data or use for unauthorised purposes; Art. 11(4) applies the same measures to users who alter technical protection measures or fail to maintain trade secret measures",
+   "max_penalty_text": "No amount stated; compensation for the party suffering from the misuse or disclosure",
+   "cure_period": "Not stated in this part",
+   "evidence": {
+    "provision": "Art. 11(2), point (d)",
+    "quote": "to compensate the party suffering from the misuse or disclosure of such unlawfully accessed or used data."
+   }
+  },
+  {
+   "sanction_type": "other",
+   "authority": "Member States",
+   "triggered_by": "infringements of this Regulation",
+   "max_penalty_text": "not stated in this text; Member States lay down the rules on penalties",
+   "cure_period": "not stated",
+   "evidence": {
+    "provision": "Art. 40(1)",
+    "quote": "Member States shall lay down the rules on penalties applicable to infringements of this Regulation and shall take all measures necessary to ensure that they are implemented"
+   }
+  },
+  {
+   "sanction_type": "administrative_fine",
+   "authority": "supervisory authorities responsible for monitoring the application of Regulation (EU) 2016/679",
+   "triggered_by": "infringements of the obligations laid down in Chapter II, III and V of this Regulation",
+   "max_penalty_text": "up to the amount referred to in Article 83(5) of Regulation (EU) 2016/679",
+   "penalty_reference": "Regulation (EU) 2016/679, Art. 83(5)",
+   "cure_period": "not stated",
+   "evidence": {
+    "provision": "Art. 40(4)",
+    "quote": "may within their scope of competence impose administrative fines in accordance with Article 83 of Regulation (EU) 2016/679"
+   }
+  },
+  {
+   "sanction_type": "administrative_fine",
+   "authority": "European Data Protection Supervisor",
+   "triggered_by": "infringements of the obligations laid down in Chapter V of this Regulation",
+   "max_penalty_text": "up to the amount referred to in Article 66(3) of Regulation (EU) 2018/1725",
+   "penalty_reference": "Regulation (EU) 2018/1725, Art. 66(3)",
+   "cure_period": "not stated",
+   "evidence": {
+    "provision": "Art. 40(5)",
+    "quote": "the European Data Protection Supervisor may impose within its scope of competence administrative fines in accordance with Article 66 of Regulation (EU) 2018/1725"
+   }
+  },
+  {
+   "sanction_type": "administrative_fine",
+   "authority": "competent authorities designated under Article 37(1)",
+   "triggered_by": "alleged infringements of this Regulation, handled through complaints and investigations under Article 37(5)(b) and (c)",
+   "max_penalty_text": "not stated in this text; financial penalties which may include periodic penalties and penalties with retroactive effect",
+   "penalty_formula": "may include periodic penalties and penalties with retroactive effect",
+   "cure_period": "not stated",
+   "evidence": {
+    "provision": "Art. 37(5)(d)",
+    "quote": "imposing effective, proportionate and dissuasive financial penalties which may include periodic penalties and penalties with retroactive effect"
+   }
+  },
+  {
+   "sanction_type": "other",
+   "authority": "any competent authority of a Member State with competence under Article 37(13)",
+   "triggered_by": "entity offering connected products or services in the Union that has not designated a legal representative under Article 37(11)",
+   "max_penalty_text": "not stated in this text; effective, proportionate and dissuasive penalties",
+   "cure_period": "not stated",
+   "evidence": {
+    "provision": "Art. 37(13)",
+    "quote": "Any competent authority may exercise its competence, including by imposing effective, proportionate and dissuasive penalties"
+   }
+  }
+ ],
+ "section_status": {}
+}

@@ -1,0 +1,764 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "us-s4591-119",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (connectors/fetch_texts.py)",
+  "url": "https://www.govinfo.gov/content/pkg/BILLS-119s4591rs/html/BILLS-119s4591rs.htm",
+  "retrieved": "2026-10-13",
+  "version": "as fetched",
+  "language": "en",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "synthetic_media_deepfakes",
+   "generative_ai",
+   "online_safety_content",
+   "ip_training_data"
+  ],
+  "primary_domain": "synthetic_media_deepfakes",
+  "mechanisms": [
+   "liability_rule",
+   "mandate_obligation",
+   "prohibition_ban",
+   "registration_notification"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "general_public",
+   "platform_operator",
+   "ai_distributor",
+   "government_agency"
+  ],
+  "affected_roles": [
+   "consumers_users",
+   "minors",
+   "workers"
+  ],
+  "decision_margins": [
+   "firm:product_design_release",
+   "firm:compliance_process"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national",
+    "extraterritorial"
+   ],
+   "description": "Federal U.S. civil liability reaching conduct affecting interstate or foreign commerce, and foreign counter-notifying parties who consent to U.S. district court jurisdiction.",
+   "evidence": {
+    "provision": "Sec. 2(c)(1)",
+    "quote": "in a manner affecting interstate or foreign commerce (or using any means or facility of interstate or foreign commerce)"
+   }
+  },
+  "agora_applications": [
+   "Arts, sports, leisure, travel, and lifestyle",
+   "Broadcasting and media production"
+  ],
+  "agora_harms": [
+   "Violation of civil or human rights, including privacy",
+   "Financial loss"
+  ],
+  "agora_incentives": [
+   "Civil liability"
+  ],
+  "agora_strategies": [
+   "Licensing, registration, and certification"
+  ]
+ },
+ "summary": {
+  "short": "Bill (S. 4591, reported in Senate June 24, 2026) creating a federal property right in individuals' voice and visual likeness, enforceable by civil action against unauthorized digital replicas and related products, with notice-and-takedown safe harbors for online services. Effective 180 days after enactment.",
+  "long": "S. 4591, reported with an amendment on June 24, 2026, would give each individual and right holder a licensable property right to authorize use of the individual's voice or visual likeness in a 'digital replica' (a newly created, highly realistic computer-generated representation) or in a product or service requiring such authorization. The post-mortem right lasts 10 years, extendable in 5-year periods on proof of active public use, and terminates no later than 70 years after death. Living-person licenses are limited to 10 years and must be written, signed and specific as to uses; minors' licenses are limited to 5 years and need court approval. Anyone who makes available an unauthorized digital replica, or a product primarily designed to produce one, is liable in a civil action, subject to exclusions for news, documentary, commentary, parody and similar uses. Remedies include statutory damages, actual damages and profits, and injunctions. Online services that register a designated agent with the Copyright Office and follow a notice-and-takedown process get a safe harbor. The bill also adds subpoenas to identify violators and preempts most state causes of action with exceptions. It applies to post-enactment conduct and takes effect 180 days after enactment."
+ },
+ "relations": [
+  {
+   "relation": "cross_references",
+   "target_text": "Title 17, United States Code (section 115 and section 108)",
+   "note": "Section 115 sets the scope of 'online service' for digital music providers; section 108 eligibility is an exclusion from liability for nonprofit libraries and archives.",
+   "evidence": {
+    "provision": "Sec. 2(a)(5)(A)(ii); Sec. 2(c)(4)(C)(i)",
+    "quote": "section 115 of title 17, United States Code, applies"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Title 18, United States Code, section 2256(2)(A)",
+   "note": "Defines 'sexually explicit conduct' for the rule that the additional exclusions in subsection (c)(5)(A) do not apply to such replicas.",
+   "evidence": {
+    "provision": "Sec. 2(c)(5)(B)",
+    "quote": "as defined in section 2256(2)(A) of title 18, United States Code"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Communications Act of 1934, section 230(e)(2) (47 U.S.C. 230(e)(2))",
+   "note": "Declares this section a law pertaining to intellectual property for the purposes of section 230(e)(2).",
+   "evidence": {
+    "provision": "Sec. 2(h)(1)",
+    "quote": "section 230(e)(2) of the Communications Act of 1934 (47 U.S.C. 230(e)(2))"
+   }
+  },
+  {
+   "relation": "preempts",
+   "target_text": "State law causes of action protecting voice and visual likeness rights in connection with a digital replica",
+   "note": "Preemption is subject to the savings clauses in Sec. 2(g)(2), covering State causes of action existing as of January 2, 2025 and certain sexually explicit or election-related replica statutes.",
+   "evidence": {
+    "provision": "Sec. 2(g)(1)",
+    "quote": "shall preempt any cause of action under State law for the protection of an individual's voice and visual likeness rights"
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "Register of Copyrights (Copyright Office)",
+   "role": "designated",
+   "function": "Maintains the directory of designated agents and the directory of post-mortem digital replication rights; receives post-mortem renewal notices; may prescribe filing requirements by regulation and charge filing fees; may make interpretations to resolve ambiguities in the post-mortem provisions.",
+   "evidence": {
+    "provision": "Sec. 2(d)(2)(B)",
+    "quote": "Directory.--The Register of Copyrights"
+   }
+  },
+  {
+   "name": "Clerk of any district court of the United States",
+   "role": "designated",
+   "function": "On request by a right holder, an authorized representative, or an eligible plaintiff, issues a subpoena to a provider of an online service to identify an alleged violator.",
+   "evidence": {
+    "provision": "Sec. 2(f)(1)",
+    "quote": "may request the clerk of any district court of the United States to issue a subpoena"
+   }
+  }
+ ],
+ "notes": "Coded from the reported text (Calendar No. 446, reported June 24, 2026, with committee amendment). The introduced text printed with DELETED tags is not coded. No registry instrument is named, so target_instrument_id is empty for all relations. The operative deadlines in Sec. 2(b)(2)(D)(iv) and Sec. 2(d)(2)(C) run from the effective date in Sec. 2(k), 180 days after enactment. The text names no firms; online service providers and designated agents are addressees described by function, not named entities. No internal inconsistencies identified.",
+ "events": [
+  {
+   "event": "introduced",
+   "date": "2026-05-20",
+   "date_type": "absolute",
+   "date_text": "May 20, 2026",
+   "applies_to": "Senate",
+   "evidence": {
+    "provision": "Cover page (introduction)",
+    "quote": "introduced the following bill"
+   }
+  },
+  {
+   "event": "committee_approved",
+   "date": "2026-06-24",
+   "date_type": "absolute",
+   "date_text": "June 24, 2026 Reported by Mr. Grassley, with an amendment",
+   "applies_to": "Senate Committee on the Judiciary (reported with an amendment)",
+   "evidence": {
+    "provision": "Cover page (committee report)",
+    "quote": "Reported by Mr. Grassley, with an amendment"
+   }
+  },
+  {
+   "event": "signed",
+   "date": null,
+   "date_type": "not_stated",
+   "date_text": "date of enactment of this Act",
+   "applies_to": "Entire Act (enactment of the bill)",
+   "evidence": {
+    "provision": "Sec. 2(k)",
+    "quote": "This section shall take effect on the date that is 180 days after the date of enactment of this Act."
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "180 days after the date of enactment of this Act",
+   "anchor": "date of enactment of this Act",
+   "applies_to": "Sec. 2 (voice and visual likeness rights)",
+   "offset_value": 180,
+   "offset_unit": "days",
+   "anchor_event": "signed",
+   "evidence": {
+    "provision": "Sec. 2(k)",
+    "quote": "This section shall take effect on the date that is 180 days after the date of enactment of this Act."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "not later than 90 days after the effective date of this section, voluntarily register the post-mortem right",
+   "anchor": "effective date of this section",
+   "applies_to": "Right holders of individuals who died not fewer than 10 years before enactment (voluntary post-mortem registration)",
+   "offset_value": 90,
+   "offset_unit": "days",
+   "anchor_event": "entry_into_force",
+   "evidence": {
+    "provision": "Sec. 2(b)(2)(D)(iv)(I)",
+    "quote": "not later than 90 days after the effective date of this section, voluntarily register"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "by the later of (i) the date that is 90 days after the effective date of this section; or (ii) the date that is 90 days after the date on which the provider becomes a provider described in subparagraph (A)(i)",
+   "anchor": "effective date of this section",
+   "applies_to": "Online service providers required to register a designated agent with the Copyright Office (presumption of no good faith effort if not registered)",
+   "offset_value": 90,
+   "offset_unit": "days",
+   "anchor_event": "entry_into_force",
+   "evidence": {
+    "provision": "Sec. 2(d)(2)(C)",
+    "quote": "the date that is 90 days after the effective date of this section"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "not less than 14 days after the date on which the provider receives that counter-notification, replaces the removed material or ceases disabling access to that material",
+   "depends_on": "receipt of a counter-notification under paragraph (4)",
+   "applies_to": "Online service providers that receive a counter-notification and opt to replace removed material",
+   "offset_value": 14,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Sec. 2(d)(1)(B)(ii)(II)(bb)",
+    "quote": "not less than 14 days after the date on which the provider receives that counter-notification"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "commenced not later than 3 years after the date on which the party seeking to bring the civil action discovered, or with due diligence should have discovered, the applicable violation",
+   "depends_on": "discovery (or due-diligence discovery) of the applicable violation",
+   "applies_to": "Civil actions under subsection (e) (limitations period)",
+   "offset_value": 3,
+   "offset_unit": "years",
+   "evidence": {
+    "provision": "Sec. 2(e)(2)",
+    "quote": "commenced not later than 3 years after the date on which the party seeking to bring the civil action discovered"
+   }
+  },
+  {
+   "event": "application",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "Liability under this section shall apply only to conduct occurring after the date of enactment of this Act",
+   "anchor": "date of enactment of this Act",
+   "depends_on": "date of enactment of this Act",
+   "applies_to": "Liability for conduct occurring after enactment, and for conduct under a license or contract executed after enactment",
+   "anchor_event": "signed",
+   "evidence": {
+    "provision": "Sec. 2(j)(1)",
+    "quote": "conduct occurring after the date of enactment of this Act"
+   }
+  },
+  {
+   "event": "application",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "shall apply to any individual, regardless of whether the individual dies before, on, or after the date of enactment of this Act",
+   "anchor": "date of enactment of this Act",
+   "depends_on": "date of enactment of this Act",
+   "applies_to": "Digital replication right (Sec. 2(b)) for individuals who die before, on or after enactment",
+   "anchor_event": "signed",
+   "evidence": {
+    "provision": "Sec. 2(j)(2)(A)",
+    "quote": "shall apply to any individual, regardless of whether the individual dies before, on, or after the date of enactment of this Act"
+   }
+  },
+  {
+   "event": "expiry",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "for a period of 10 years after the death of the individual",
+   "depends_on": "death of the individual",
+   "applies_to": "Exclusive post-mortem digital replication right (initial 10-year period, before any renewal)",
+   "offset_value": 10,
+   "offset_unit": "years",
+   "evidence": {
+    "provision": "Sec. 2(b)(2)(A)(iv)(I)(bb)(AA)",
+    "quote": "for a period of 10 years after the death of the individual"
+   }
+  },
+  {
+   "event": "expiry",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "the date that is 70 years after the death of the individual",
+   "depends_on": "death of the individual",
+   "applies_to": "Digital replication right (post-mortem), latest termination date",
+   "offset_value": 70,
+   "offset_unit": "years",
+   "evidence": {
+    "provision": "Sec. 2(b)(2)(A)(v)(II)",
+    "quote": "the date that is 70 years after the death of the individual"
+   }
+  },
+  {
+   "event": "expiry",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "terminates when the individual reaches 18 years of age",
+   "depends_on": "individual reaches 18 years of age",
+   "applies_to": "Licenses of the digital replication right involving a living individual younger than 18",
+   "evidence": {
+    "provision": "Sec. 2(b)(2)(B)(ii)(I)",
+    "quote": "terminates when the individual reaches 18 years of age"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "other",
+   "variable_text": "duration of the right holder's exclusive period after the death of the individual (years)",
+   "operator": "=",
+   "value": 10,
+   "value_text": "for a period of 10 years after the death of the individual",
+   "unit": "years",
+   "measurement": "counted from the death of the individual",
+   "level": "person",
+   "trigger": "benefit_duration",
+   "consequence": "The right holder's exclusive period after death runs for 10 years, extendable only under the renewal conditions in the same clause.",
+   "conditions": "Extension requires the renewal showing of qualifying public use.",
+   "evidence": {
+    "provision": "Sec. 2(b)(2)(A)(iv)(I)(bb)(AA)",
+    "quote": "for a period of 10 years after the death of the individual"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "active and authorized public use in the 2-year period before expiry (renewal condition, years)",
+   "operator": "=",
+   "value": 2,
+   "value_text": "during the 2-year period preceding the expiration of the 10-year period",
+   "unit": "years",
+   "measurement": "use of the voice or visual likeness in interstate or foreign commerce, demonstrated by the right holder",
+   "level": "person",
+   "trigger": "eligibility",
+   "consequence": "The right holder may obtain an additional 5-year period only if this use is demonstrated.",
+   "conditions": "Applies before each additional 5-year period.",
+   "evidence": {
+    "provision": "Sec. 2(b)(2)(A)(iv)(I)(bb)(BB)",
+    "quote": "during the 2-year period preceding the expiration of the 10-year period"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "additional renewal period (years)",
+   "operator": "=",
+   "value": 5,
+   "value_text": "for an additional 5-year period, subject to renewal for additional 5-year periods",
+   "unit": "years",
+   "measurement": "renewable periods following the initial 10-year period",
+   "level": "person",
+   "trigger": "benefit_duration",
+   "consequence": "The exclusive period may be extended by 5-year periods, each subject to renewal on the same use showing.",
+   "conditions": "Each renewal requires the 2-year public use showing.",
+   "evidence": {
+    "provision": "Sec. 2(b)(2)(A)(iv)(I)(bb)(BB)",
+    "quote": "for an additional 5-year period, subject to renewal for additional 5-year periods"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "termination of the right after death (years)",
+   "operator": "=",
+   "value": 70,
+   "value_text": "the date that is 70 years after the death of the individual",
+   "unit": "years",
+   "measurement": "counted from the death of the individual",
+   "level": "person",
+   "trigger": "benefit_duration",
+   "consequence": "The right terminates on the earlier of the end of the 10-year or 5-year period without renewal, or 70 years after death.",
+   "conditions": "Termination on the earlier of the two dates in the clause.",
+   "evidence": {
+    "provision": "Sec. 2(b)(2)(A)(v)(II)",
+    "quote": "the date that is 70 years after the death of the individual"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "maximum license duration while the individual is living (years)",
+   "operator": "<=",
+   "value": 10,
+   "value_text": "valid only to the extent that the license duration does not exceed 10 years",
+   "unit": "years",
+   "measurement": "duration of the license agreement",
+   "level": "person",
+   "trigger": "cap",
+   "consequence": "A license granted while the individual is living is valid only up to 10 years in duration.",
+   "conditions": "The license must also be in writing, signed, and describe the intended uses.",
+   "evidence": {
+    "provision": "Sec. 2(b)(2)(B)(i)(I)",
+    "quote": "while the applicable individual is living, is valid only to the extent that the license duration does not exceed 10 years"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "maximum license duration for a living individual under 18 (years)",
+   "operator": "<=",
+   "value": 5,
+   "value_text": "valid only to the extent that the license duration does not exceed 5 years, but in any case terminates when the individual reaches 18 years of age",
+   "unit": "years",
+   "measurement": "duration of the license agreement",
+   "level": "person",
+   "trigger": "cap",
+   "consequence": "A license involving a minor is valid only up to 5 years and in any case ends when the individual reaches 18.",
+   "conditions": "Applies only to licenses involving a living individual under 18; court approval under applicable State law is also required.",
+   "evidence": {
+    "provision": "Sec. 2(b)(2)(B)(ii)(I)",
+    "quote": "is valid only to the extent that the license duration does not exceed 5 years, but in any case terminates when the individual reaches 18 years of age"
+   }
+  },
+  {
+   "variable": "age",
+   "variable_text": "younger than 18 years of age (living individual, license involving a minor)",
+   "operator": "<",
+   "value": 18,
+   "value_text": "a living individual who is younger than 18",
+   "unit": "years",
+   "measurement": "age of the living individual at the time of the license",
+   "level": "person",
+   "trigger": "eligibility",
+   "consequence": "The minor-license requirements apply: 5-year maximum duration, termination at 18, and court approval under State law.",
+   "conditions": "Applies to a license described in subparagraph (A)(i)(III) involving a living individual.",
+   "evidence": {
+    "provision": "Sec. 2(b)(2)(B)(ii)",
+    "quote": "a living individual who is younger than 18"
+   }
+  },
+  {
+   "variable": "age",
+   "variable_text": "right holder younger than 18 years of age (plaintiff standing)",
+   "operator": "<",
+   "value": 18,
+   "value_text": "who is younger than 18 years of age, a parent or guardian",
+   "unit": "years",
+   "measurement": "age of the applicable right holder",
+   "level": "person",
+   "trigger": "eligibility",
+   "consequence": "A parent or guardian of the right holder may bring a civil action under subsection (e).",
+   "conditions": "Applies where the applicable right holder is an individual under 18.",
+   "evidence": {
+    "provision": "Sec. 2(e)(1)(B)",
+    "quote": "who is younger than 18 years of age, a parent or guardian"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "years between death and enactment, not fewer than 10 (initial post-mortem registration)",
+   "operator": ">=",
+   "value": 10,
+   "value_text": "who died not fewer than 10 years before the date of enactment of this Act",
+   "unit": "years",
+   "measurement": "interval between the individual's death and the date of enactment",
+   "level": "person",
+   "trigger": "eligibility",
+   "consequence": "The applicable right holder may register the post-mortem right under the initial registration route in clause (iv)(I).",
+   "conditions": "Registration requires a showing of required authorized public use during the 2-year period before enactment, and is subject to the registration window in clause (iv)(I).",
+   "evidence": {
+    "provision": "Sec. 2(b)(2)(D)(iv)(I)",
+    "quote": "who died not fewer than 10 years before"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "years between death and enactment, not fewer than 8 and fewer than 10 (initial post-mortem registration)",
+   "operator": "range",
+   "value": 8,
+   "value_max": 10,
+   "value_text": "not fewer than 8, and fewer than 10, years before the date of enactment",
+   "unit": "years",
+   "measurement": "interval between the individual's death and the date of enactment",
+   "level": "person",
+   "trigger": "eligibility",
+   "consequence": "The applicable right holder may file a notice under clause (i) or subclause (I) of clause (iv).",
+   "conditions": "Applies to individuals who died within the stated interval before enactment.",
+   "evidence": {
+    "provision": "Sec. 2(b)(2)(D)(iv)(II)",
+    "quote": "not fewer than 8, and fewer than 10, years before"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "period of authorized public use before enactment for initial post-mortem registration (years)",
+   "operator": "=",
+   "value": 2,
+   "value_text": "during the 2-year period preceding the date of enactment of this Act",
+   "unit": "years",
+   "measurement": "authorized public use in interstate or foreign commerce, demonstrated by the right holder",
+   "level": "person",
+   "trigger": "eligibility",
+   "consequence": "Initial post-mortem registration under clause (iv)(I) requires demonstrated authorized public use during this period.",
+   "conditions": "Applies together with the death-interval condition of the same clause.",
+   "evidence": {
+    "provision": "Sec. 2(b)(2)(D)(iv)(I)",
+    "quote": "during the 2-year period preceding the date of enactment of this Act"
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "digital fingerprint",
+   "defined_in": "Sec. 2(a)",
+   "evidence": {
+    "provision": "Sec. 2(a)(1)",
+    "quote": "means an electronic label or identifier created by a cryptographic hash function (or similar function), or any other digital process, tool, or technique selected by the provider of an online service"
+   }
+  },
+  {
+   "term": "digital replica",
+   "defined_in": "Sec. 2(a)",
+   "evidence": {
+    "provision": "Sec. 2(a)(2)",
+    "quote": "means a newly created, computer-generated, highly realistic electronic representation that is readily identifiable as the voice or visual likeness of an individual"
+   }
+  },
+  {
+   "term": "individual",
+   "defined_in": "Sec. 2(a)",
+   "evidence": {
+    "provision": "Sec. 2(a)(3)",
+    "quote": "means a human being, living or dead"
+   }
+  },
+  {
+   "term": "interactive computer service",
+   "defined_in": "Sec. 2(a)",
+   "evidence": {
+    "provision": "Sec. 2(a)(4)",
+    "quote": "any information service, system, or access software provider that provides or enables computer access by multiple users to a computer server"
+   }
+  },
+  {
+   "term": "online service",
+   "defined_in": "Sec. 2(a)",
+   "evidence": {
+    "provision": "Sec. 2(a)(5)",
+    "quote": "any website, online application, mobile application, or virtual reality environment that predominantly provides public access to user uploaded material"
+   }
+  },
+  {
+   "term": "right holder",
+   "defined_in": "Sec. 2(a)",
+   "evidence": {
+    "provision": "Sec. 2(a)(6)",
+    "quote": "the individual, the voice or visual likeness of whom is at issue with respect to a digital replica"
+   }
+  },
+  {
+   "term": "sound recording artist",
+   "defined_in": "Sec. 2(a)",
+   "evidence": {
+    "provision": "Sec. 2(a)(7)",
+    "quote": "an individual who creates or performs in sound recordings for economic gain or for the livelihood of the individual"
+   }
+  },
+  {
+   "term": "user uploaded material",
+   "defined_in": "Sec. 2(a)",
+   "evidence": {
+    "provision": "Sec. 2(a)(8)",
+    "quote": "material, such as a video, image, audio file, or other similar material, that is placed on a service directly by, or at the direction of, a consumer end user of a service"
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "consent",
+   "addressee": "consumers_users",
+   "also_addressees": [
+    "enterprise"
+   ],
+   "modality": "shall",
+   "summary": "A license of an individual's digital replica is valid only if the license duration does not exceed 10 years (5 years for a minor, who must be approved by a court), is in writing, signed, and includes a reasonably specific description of intended uses. Post-mortem transfers or licenses must also be in writing and signed by the right holder or authorized representative.",
+   "applies_from": "180 days after date of enactment (Sec. 2(k))",
+   "conditional_on": "license or transfer of an individual's voice or visual likeness under Sec. 2(b)(2)",
+   "evidence": {
+    "provision": "Sec. 2(b)(2)(B)(i)(II)",
+    "quote": "shall be valid only if the license agreement"
+   }
+  },
+  {
+   "type": "registration_notification",
+   "addressee": "consumers_users",
+   "modality": "shall",
+   "summary": "For post-mortem renewal of the right, the right holder must file a notice with the Register of Copyrights in the applicable 2-year renewal period, containing the items listed in the provision (name of deceased, sworn statement of authorized public use, contact details, other information prescribed by regulation). Voluntary registration is permitted.",
+   "applies_from": "during the applicable 2-year renewal period",
+   "conditional_on": "renewal of a post-mortem right under Sec. 2(b)(2)(A)(iv)",
+   "evidence": {
+    "provision": "Sec. 2(b)(2)(D)(i)",
+    "quote": "the right holder files a notice with the Register of"
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "government_agency",
+   "modality": "may",
+   "summary": "The Register of Copyrights may prescribe by regulation the form, filing procedures and content requirements for post-mortem renewal notices and voluntary registrations.",
+   "applies_from": "180 days after date of enactment (Sec. 2(k))",
+   "evidence": {
+    "provision": "Sec. 2(b)(2)(D)(i)",
+    "quote": "may prescribe by regulation"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Register of Copyrights shall maintain a current directory of post-mortem digital replication rights registered under the section and make it available to the public for inspection online; it may charge a reasonable filing fee.",
+   "applies_from": "180 days after date of enactment (Sec. 2(k))",
+   "evidence": {
+    "provision": "Sec. 2(b)(2)(D)(ii)",
+    "quote": "available to the public for inspection online"
+   }
+  },
+  {
+   "type": "content_moderation",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "To keep the safe harbor from liability, an online service must, on a valid notification, remove or disable access to the material and to other matching uploads; adopt and inform users of a repeat-violator termination policy; notify the right holder and the uploader of the removal; and, on a counter-notification, provide a copy to the notifier and restore the material not less than 14 days later unless an eligible plaintiff sues.",
+   "applies_from": "180 days after date of enactment (Sec. 2(k))",
+   "conditional_on": "claiming the safe harbor from liability under Sec. 2(c) for an online service described in Sec. 2(a)(5)(A)",
+   "evidence": {
+    "provision": "Sec. 2(d)(1)(B)(ii)(I)(aa)",
+    "quote": "removes or disables access to the work embodying the claimed unauthorized use of a digital replica"
+   }
+  },
+  {
+   "type": "registration_notification",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "A provider of an online service described in Sec. 2(a)(5)(A)(i) or (ii) must register a designated agent with the Copyright Office and make the agent's name, address, telephone and email available through the service in a publicly accessible location. Other eligible providers may register.",
+   "applies_from": "effective date of this section (Sec. 2(k): 180 days after enactment)",
+   "evidence": {
+    "provision": "Sec. 2(d)(2)(A)(i)",
+    "quote": "service described in clause (i) or (ii) of subsection (a)(5)(A) shall"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Register of Copyrights shall maintain a current directory of designated agents for the purposes of the designated-agent provision and make it available to the public, including through the internet; it may charge a fee to providers.",
+   "applies_from": "180 days after date of enactment (Sec. 2(k))",
+   "evidence": {
+    "provision": "Sec. 2(d)(2)(B)(i)(I)",
+    "quote": "maintain a current directory of designated agents for the purposes of this paragraph"
+   }
+  },
+  {
+   "type": "complaint_mechanism",
+   "addressee": "consumers_users",
+   "modality": "shall",
+   "summary": "A notification of a claimed violation must be a written communication to the designated agent, with listed elements (signature, identification of individual and material, contact information, good-faith statement, and a statement under penalty of perjury where applicable). A counter-notification must likewise be in writing from the uploader, with a notarized signature, identification of the removed material, contact details, a sworn statement, and consent to jurisdiction and service of process.",
+   "applies_from": "180 days after date of enactment (Sec. 2(k))",
+   "conditional_on": "notification or counter-notification under Sec. 2(d)(3) or (d)(4)",
+   "evidence": {
+    "provision": "Sec. 2(d)(3)",
+    "quote": "shall be a written communication provided to the designated agent registered under this"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "general_public",
+   "modality": "shall_not",
+   "summary": "It is unlawful to knowingly materially misrepresent, in a notification or counter-notification, the matters listed in Sec. 2(d)(5)(A)(i)(I) and (II); failure to perform a good faith review is a knowing material misrepresentation.",
+   "applies_from": "180 days after date of enactment (Sec. 2(k))",
+   "evidence": {
+    "provision": "Sec. 2(d)(5)(A)(i)",
+    "quote": "It shall be unlawful to"
+   }
+  },
+  {
+   "type": "cooperation_with_authority",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "A subpoena issued by a district court clerk under this subsection shall order the online service provider to expeditiously disclose information sufficient to identify the alleged violator, to the extent available to the provider.",
+   "applies_from": "upon issuance of subpoena",
+   "conditional_on": "a subpoena issued under Sec. 2(f) to identify an alleged violator",
+   "evidence": {
+    "provision": "Sec. 2(f)(3)",
+    "quote": "shall authorize and order the provider of the"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "If the proposed subpoena request is in proper form, the notification satisfies Sec. 2(d)(3), and the declaration is properly executed, the clerk of a district court shall expeditiously issue and sign the subpoena and return it to the requester.",
+   "applies_from": "upon filing of a proper request",
+   "conditional_on": "proposed subpoena in proper form with valid notification and executed declaration",
+   "evidence": {
+    "provision": "Sec. 2(f)(4)",
+    "quote": "the clerk shall expeditiously issue and sign the proposed"
+   }
+  },
+  {
+   "type": "complaint_mechanism",
+   "addressee": "consumers_users",
+   "modality": "shall",
+   "summary": "A request for a subpoena to identify an alleged violator must include a copy of the notification, a proposed subpoena, and a sworn declaration that the subpoena's purpose is to identify a person alleged to be liable and that the information will be used only to protect rights under the section.",
+   "applies_from": "180 days after date of enactment (Sec. 2(k))",
+   "conditional_on": "request for a subpoena under Sec. 2(f)(1)",
+   "evidence": {
+    "provision": "Sec. 2(f)(2)(C)",
+    "quote": "a sworn declaration to the effect that"
+   }
+  }
+ ],
+ "enforcement": [
+  {
+   "sanction_type": "private_damages",
+   "authority": "Courts, in civil actions brought by eligible plaintiffs under Sec. 2(e)(1)",
+   "triggered_by": "Violation of subsection (c): unauthorized digital replica activity, or distributing or making available a product or service designed or marketed to produce unauthorized digital replicas",
+   "max_penalty_text": "Greater of: individual $5,000 per work (or per product or service); online service with a good faith effort $25,000 per work (or per product or service); online service without a good faith effort $5,000 per unauthorized display, copy, transmission and instance, capped at $750,000 per work (for products or services, $750,000 per product or service); other entity $25,000 per work (or per product or service); or actual damages plus profits. Punitive damages possible for willful activity; attorney's fees to the prevailing party in specified cases.",
+   "max_penalty_amount": 750000,
+   "currency": "USD",
+   "penalty_formula": "Statutory amount per work or per product or service by defendant category, or actual damages plus profits attributable to the use, whichever is greater; cap of $750,000 per work for online services without a good faith effort (no cap stated for products or services); punitive damages for willful activity with malice, fraud, knowledge or willful avoidance of knowledge; attorney's fees to the prevailing party in specified cases.",
+   "penalty_reference": "Sec. 2(e)(5)(A)",
+   "private_right_of_action": true,
+   "cure_period": "None stated in the text",
+   "evidence": {
+    "provision": "Sec. 2(e)(5)(A)(i)(I)(cc)",
+    "quote": "in a sum of not more than $750,000 per work"
+   }
+  },
+  {
+   "sanction_type": "private_damages",
+   "authority": "Courts, in an action by the right holder, the alleged violator that uploaded the material, or the provider of an online service injured by the misrepresentation",
+   "triggered_by": "Knowing material misrepresentation in a notification under paragraph (3) or counter-notification under paragraph (4), including failure to consider the required issues in good faith",
+   "max_penalty_text": "Greater of $25,000 per notification or counter-notification containing a misrepresentation, or the sum of actual damages and costs and attorney's fees of a prevailing recipient of a notification or counter-notification; in addition to the remedies under subsection (e).",
+   "max_penalty_amount": 25000,
+   "currency": "USD",
+   "penalty_formula": "Greater of $25,000 per notification or counter-notification containing a misrepresentation, or the sum of (I) actual damages incurred by the right holder or alleged violator and by any injured provider or other person and (II) costs and attorney's fees of a prevailing recipient of a notification or counter-notification.",
+   "penalty_reference": "Sec. 2(d)(5)(B)",
+   "private_right_of_action": true,
+   "cure_period": "None stated in the text",
+   "evidence": {
+    "provision": "Sec. 2(d)(5)(B)(i)",
+    "quote": "$25,000 per notification provided under paragraph (3)"
+   }
+  },
+  {
+   "sanction_type": "injunction_order",
+   "authority": "Courts, in a civil action under subsection (e)",
+   "triggered_by": "Violation of subsection (c) in a civil action under subsection (e)",
+   "max_penalty_text": "No monetary amount stated; the plaintiff may seek injunctive or other equitable relief.",
+   "penalty_formula": "Not applicable: equitable relief, no amount stated",
+   "penalty_reference": "Sec. 2(e)(5)(A)(iii)",
+   "private_right_of_action": true,
+   "cure_period": "None stated in the text",
+   "evidence": {
+    "provision": "Sec. 2(e)(5)(A)(iii)",
+    "quote": "the plaintiff may seek injunctive or other equitable relief"
+   }
+  }
+ ],
+ "section_status": {}
+}

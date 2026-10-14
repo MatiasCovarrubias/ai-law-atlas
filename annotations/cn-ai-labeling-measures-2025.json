@@ -1,0 +1,401 @@
+{
+ "schema_version": "1.1",
+ "instrument_id": "cn-ai-labeling-measures-2025",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-opus-5-5 (Claude Code)",
+  "method": "gold set (Opus, Claude Code)",
+  "date": "2026-10-11",
+  "prompt_version": "gold (hand annotation by Claude Opus in Claude Code; no prompt version)"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "Cyberspace Administration of China (cac.gov.cn), notice 国信办通字〔2025〕2号 with the Measures attached",
+  "url": "https://www.cac.gov.cn/2025-03/14/c_1743654684782215.htm",
+  "retrieved": "2026-10-11",
+  "version": "original as issued (notice dated 2025-03-07, released on cac.gov.cn 2025-03-14); the text mentions no amendments",
+  "language": "zh",
+  "extent": "full",
+  "note": "Articles 1-14 plus the issuing notice and the CAC web dateline. Site navigation and footer removed. Chinese quotes are full clauses between punctuation marks, because tools/quote_check.py tokenizes Chinese into clauses."
+ },
+ "summary": {
+  "short": "Requires Chinese online service providers covered by the algorithm-recommendation, deep-synthesis and generative-AI rules to add visible and metadata labels to AI-generated text, images, audio, video and virtual scenes. Content platforms and app stores must check and display labels, and removing labels is prohibited. Effective 1 September 2025.",
+  "long": "Issued jointly by the CAC, MIIT, the Ministry of Public Security and the NRTA, the Measures apply to network information service providers covered by the Algorithmic Recommendation Provisions, the Deep Synthesis Provisions and the Generative AI Interim Measures. They distinguish explicit labels, which users can perceive (text, sound or graphics), from implicit labels embedded in file data. Providers of services listed in Article 17(1) of the Deep Synthesis Provisions must place explicit labels in text, audio, images, video and virtual scenes, including in downloaded or exported files. All providers must write implicit labels into file metadata, recording content attributes, the provider's name or code and a content number; digital watermarks are encouraged. Content-dissemination services must check metadata, label confirmed, user-declared and suspected synthetic content, add their own metadata and offer users a labelling function. App distribution platforms must ask apps whether they offer AI generation and check their labelling materials. Providers may supply unlabelled content on request under a user agreement, keeping logs for at least six months. Users must declare synthetic content, and no one may maliciously remove, alter, forge or conceal labels. Violations are handled by the competent authorities under other laws."
+ },
+ "classification": {
+  "domains": [
+   "synthetic_media_deepfakes",
+   "generative_ai",
+   "online_safety_content"
+  ],
+  "primary_domain": "synthetic_media_deepfakes",
+  "mechanisms": [
+   "mandate_obligation",
+   "disclosure_transparency",
+   "prohibition_ban"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "ai_provider",
+   "platform_operator",
+   "consumers_users",
+   "general_public"
+  ],
+  "affected_roles": [],
+  "decision_margins": [
+   "firm:product_design_release",
+   "firm:compliance_process",
+   "firm:entry_market_access",
+   "household:information"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national"
+   ],
+   "description": "China; scope is defined by reference to the providers covered by three CAC rules, and the text has no separate territorial clause.",
+   "evidence": {
+    "provision": "Art. 2",
+    "quote": "符合《互联网信息服务算法推荐管理规定》、《互联网信息服务深度合成管理规定》、《生成式人工智能服务管理暂行办法》规定情形的网络信息服务提供者（以下简称“服务提供者”）开展人工智能生成合成内容标识活动，适用本办法。 [Network information service providers within the circumstances provided by the Algorithmic Recommendation Provisions, the Deep Synthesis Provisions and the Generative AI Interim Measures ('service providers') that carry out labelling of AI-generated synthetic content are governed by these Measures.]"
+   }
+  },
+  "agora_applications": [],
+  "agora_harms": [],
+  "agora_incentives": [],
+  "agora_risk_factors": [
+   "Transparency"
+  ],
+  "agora_strategies": [
+   "Disclosure",
+   "Disclosure: In deployment"
+  ]
+ },
+ "events": [
+  {
+   "event": "adopted",
+   "date": "2025-03-07",
+   "date_type": "absolute",
+   "date_text": "2025年3月7日 (date of the joint issuing notice, after the four issuing bodies)",
+   "applies_to": "Measures formulated and issued by CAC, MIIT, MPS and NRTA (notice 国信办通字〔2025〕2号)",
+   "evidence": {
+    "provision": "Issuing notice",
+    "quote": "国家广播电视总局\n2025年3月7日 [National Radio and Television Administration, 7 March 2025]"
+   }
+  },
+  {
+   "event": "published",
+   "date": "2025-03-14",
+   "date_type": "absolute",
+   "date_text": "2025年03月14日 17:00 (CAC website dateline)",
+   "applies_to": "Release of the notice and Measures on cac.gov.cn",
+   "evidence": {
+    "provision": "CAC web dateline",
+    "quote": "关于印发《人工智能生成合成内容标识办法》的通知\n\n2025年03月14日 17:00 [Notice on issuing the Measures for Labelling AI-Generated Synthetic Content, 14 March 2025 17:00]"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2025-09-01",
+   "date_type": "absolute",
+   "date_text": "本办法自2025年9月1日起施行",
+   "applies_to": "All provisions",
+   "evidence": {
+    "provision": "Art. 14",
+    "quote": "本办法自2025年9月1日起施行。 [These Measures take effect on 1 September 2025.]"
+   }
+  }
+ ],
+ "thresholds": [],
+ "obligations": [
+  {
+   "type": "labelling_watermarking",
+   "addressee": "ai_provider",
+   "summary": "Add explicit (perceivable) labels to generated text, audio, images, video, virtual scenes and other scenarios, at the positions specified for each medium.",
+   "applies_from": "2025-09-01",
+   "conditional_on": "The service falls under the circumstances of Article 17(1) of the Deep Synthesis Provisions",
+   "evidence": {
+    "provision": "Art. 4(1)",
+    "quote": "服务提供者提供的生成合成服务属于《互联网信息服务深度合成管理规定》第十七条第一款情形的，应当按照下列要求对生成合成内容添加显式标识： [Where the generation or synthesis service falls under Art. 17(1) of the Deep Synthesis Provisions, the service provider shall add explicit labels to the content as follows:]"
+   }
+  },
+  {
+   "type": "labelling_watermarking",
+   "addressee": "ai_provider",
+   "summary": "Ensure files contain compliant explicit labels when offering download, copy or export of generated content.",
+   "applies_from": "2025-09-01",
+   "conditional_on": "Within Art. 4 (services under Article 17(1) of the Deep Synthesis Provisions); offering download, copy or export functions",
+   "evidence": {
+    "provision": "Art. 4(2)",
+    "quote": "服务提供者提供生成合成内容下载、复制、导出等功能时，应当确保文件中含有满足要求的显式标识。 [When offering download, copy, export or similar functions, the service provider shall ensure the file contains a compliant explicit label.]"
+   }
+  },
+  {
+   "type": "labelling_watermarking",
+   "addressee": "ai_provider",
+   "summary": "Add implicit labels to the file metadata of generated content, containing content attributes, the provider's name or code, and a content number.",
+   "applies_from": "2025-09-01",
+   "evidence": {
+    "provision": "Art. 5(1)",
+    "quote": "服务提供者应当按照《互联网信息服务深度合成管理规定》第十六条的规定，在生成合成内容的文件元数据中添加隐式标识，隐式标识包含生成合成内容属性信息、服务提供者名称或者编码、内容编号等制作要素信息。 [In line with Art. 16 of the Deep Synthesis Provisions, service providers shall add implicit labels to file metadata, including content attributes, the provider's name or code, a content number and other production elements.]"
+   }
+  },
+  {
+   "type": "labelling_watermarking",
+   "addressee": "platform_operator",
+   "summary": "Content-dissemination services must check file metadata for implicit labels and add prominent labels around published content: 'is synthetic' when metadata confirms it, 'may be synthetic' when the user declares it, 'suspected synthetic' when the platform detects explicit labels or other traces.",
+   "applies_from": "2025-09-01",
+   "evidence": {
+    "provision": "Art. 6(1)(1)-(3)",
+    "quote": "提供网络信息内容传播服务的服务提供者应当采取下列措施，规范生成合成内容传播活动：...核验文件元数据中是否含有隐式标识，文件元数据明确标明为生成合成内容的，采取适当方式在发布内容周边添加显著的提示标识，明确提醒公众该内容属于生成合成内容； [Service providers offering content-dissemination services shall take the following measures: ... verify whether file metadata contains implicit labels and, where it clearly marks the content as synthetic, add prominent labels around the published content clearly reminding the public that it is synthetic;]"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "platform_operator",
+   "summary": "Content-dissemination services must provide labelling functions and remind users to declare whether their posts contain synthetic content.",
+   "applies_from": "2025-09-01",
+   "evidence": {
+    "provision": "Art. 6(1)(4)",
+    "quote": "（四）提供必要的标识功能，并提醒用户主动声明发布内容中是否包含生成合成内容。 [(4) provide the necessary labelling functions and remind users to declare whether published content contains synthetic content.]"
+   }
+  },
+  {
+   "type": "labelling_watermarking",
+   "addressee": "platform_operator",
+   "summary": "For confirmed, declared or suspected synthetic content, content-dissemination services must add dissemination metadata (content attributes, platform name or code, content number) to the file.",
+   "applies_from": "2025-09-01",
+   "conditional_on": "Content falls under items (1)-(3) of Art. 6(1)",
+   "evidence": {
+    "provision": "Art. 6(2)",
+    "quote": "有前款第一项至第三项情形的，应当在文件元数据中添加生成合成内容属性信息、传播平台名称或者编码、内容编号等传播要素信息。 [In the cases of items (1)-(3) of the preceding paragraph, dissemination elements such as content attributes, the platform's name or code and a content number shall be added to the file metadata.]"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "platform_operator",
+   "summary": "App distribution platforms must, when reviewing apps for listing or launch, require app providers to state whether they offer AI generation services, and verify the labelling materials of those that do.",
+   "applies_from": "2025-09-01",
+   "evidence": {
+    "provision": "Art. 7",
+    "quote": "互联网应用程序分发平台在应用程序上架或者上线审核时，应当要求互联网应用程序服务提供者说明是否提供人工智能生成合成服务。 [When reviewing apps for listing or launch, app distribution platforms shall require app service providers to state whether they provide AI generation or synthesis services.]"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "ai_provider",
+   "summary": "State the labelling methods, styles and other rules in the user service agreement and prompt users to read and understand the labelling requirements (applies to all service providers in scope, including dissemination platforms).",
+   "applies_from": "2025-09-01",
+   "evidence": {
+    "provision": "Art. 8",
+    "quote": "服务提供者应当在用户服务协议中明确说明生成合成内容标识的方法、样式等规范内容，并提示用户仔细阅读并理解相关的标识管理要求。 [Service providers shall state the methods, styles and other rules of labelling in the user service agreement and prompt users to read and understand the labelling requirements.]"
+   }
+  },
+  {
+   "type": "record_keeping",
+   "addressee": "ai_provider",
+   "summary": "A provider may supply content without explicit labels at a user's request only after a user agreement sets out the user's labelling duties and responsibility, and must keep logs including recipient information for at least six months.",
+   "applies_from": "2025-09-01",
+   "conditional_on": "User requests generated content without explicit labels",
+   "evidence": {
+    "provision": "Art. 9",
+    "quote": "用户申请服务提供者提供没有添加显式标识的生成合成内容的，服务提供者可以在通过用户协议明确用户的标识义务和使用责任后，提供不含显式标识的生成合成内容，并依法留存提供对象信息等相关日志不少于六个月。 [Where a user requests content without explicit labels, the provider may supply it after a user agreement specifies the user's labelling obligations and responsibility for use, and shall retain logs such as recipient information for no less than six months.]"
+   }
+  },
+  {
+   "type": "labelling_watermarking",
+   "addressee": "consumers_users",
+   "summary": "Users who publish synthetic content through dissemination services must declare it and label it using the provider's labelling function.",
+   "applies_from": "2025-09-01",
+   "evidence": {
+    "provision": "Art. 10(1)",
+    "quote": "用户使用网络信息内容传播服务发布生成合成内容的，应当主动声明并使用服务提供者提供的标识功能进行标识。 [Users publishing synthetic content through content-dissemination services shall proactively declare it and label it with the provider's labelling function.]"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "general_public",
+   "summary": "No organisation or individual may maliciously delete, alter, forge or conceal labels, provide tools or services for others to do so, or harm others' rights through improper labelling.",
+   "applies_from": "2025-09-01",
+   "evidence": {
+    "provision": "Art. 10(2)",
+    "quote": "任何组织和个人不得恶意删除、篡改、伪造、隐匿本办法规定的生成合成内容标识，不得为他人实施上述恶意行为提供工具或者服务，不得通过不正当标识手段损害他人合法权益。 [No organisation or individual may maliciously delete, alter, forge or conceal the labels required by these Measures, provide tools or services for others to do so, or harm others' lawful rights through improper labelling.]"
+   }
+  },
+  {
+   "type": "labelling_watermarking",
+   "addressee": "ai_provider",
+   "summary": "Labelling must also comply with relevant laws, administrative regulations, departmental rules and mandatory national standards (none named).",
+   "applies_from": "2025-09-01",
+   "evidence": {
+    "provision": "Art. 11",
+    "quote": "服务提供者开展标识活动的，还应当符合相关法律、行政法规、部门规章和强制性国家标准的要求。 [Service providers' labelling shall also meet the requirements of relevant laws, administrative regulations, departmental rules and mandatory national standards.]"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "ai_provider",
+   "summary": "Provide labelling materials under these Measures when completing algorithm filing, security assessment and similar procedures.",
+   "applies_from": "2025-09-01",
+   "conditional_on": "When undergoing algorithm filing, security assessment or similar procedures",
+   "evidence": {
+    "provision": "Art. 12",
+    "quote": "服务提供者在履行算法备案、安全评估等手续时，应当按照本办法提供生成合成内容标识相关材料， [When completing algorithm filing, security assessment and similar procedures, service providers shall provide labelling materials in accordance with these Measures,]"
+   }
+  },
+  {
+   "type": "cooperation_with_authority",
+   "addressee": "ai_provider",
+   "summary": "Strengthen sharing of labelling information and support the prevention of, and action against, related unlawful and criminal activity.",
+   "applies_from": "2025-09-01",
+   "evidence": {
+    "provision": "Art. 12",
+    "quote": "并加强标识信息共享，为防范打击相关违法犯罪活动提供支持和帮助。 [and strengthen sharing of labelling information, providing support and help to prevent and combat related illegal and criminal activities.]"
+   }
+  }
+ ],
+ "enforcement": [
+  {
+   "sanction_type": "other",
+   "authority": "Cyberspace, telecommunications, public security, radio and television and other competent authorities, according to their responsibilities",
+   "triggered_by": "Any violation of these Measures",
+   "max_penalty_text": null,
+   "max_penalty_amount": null,
+   "currency": null,
+   "penalty_formula": null,
+   "penalty_reference": "Relevant laws, administrative regulations and departmental rules (not named in this text)",
+   "private_right_of_action": false,
+   "cure_period": null,
+   "evidence": {
+    "provision": "Art. 13",
+    "quote": "违反本办法规定的，由网信、电信、公安和广播电视等有关主管部门依据职责，按照有关法律、行政法规、部门规章的规定予以处理。 [Violations are handled by the competent cyberspace, telecommunications, public security, radio and television and other authorities according to their responsibilities, under the relevant laws, administrative regulations and departmental rules.]"
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "Service provider (服务提供者)",
+   "evidence": {
+    "provision": "Art. 2",
+    "quote": "符合《互联网信息服务算法推荐管理规定》、《互联网信息服务深度合成管理规定》、《生成式人工智能服务管理暂行办法》规定情形的网络信息服务提供者（以下简称“服务提供者”） [network information service providers within the circumstances provided by the three rules (hereinafter 'service providers')]"
+   }
+  },
+  {
+   "term": "AI-generated synthetic content (人工智能生成合成内容)",
+   "evidence": {
+    "provision": "Art. 3(1)",
+    "quote": "人工智能生成合成内容是指利用人工智能技术生成、合成的文本、图片、音频、视频、虚拟场景等信息。 [AI-generated synthetic content means text, images, audio, video, virtual scenes and other information generated or synthesised with AI technology.]"
+   }
+  },
+  {
+   "term": "Labels of AI-generated synthetic content (人工智能生成合成内容标识)",
+   "evidence": {
+    "provision": "Art. 3(2)",
+    "quote": "人工智能生成合成内容标识包括显式标识和隐式标识。 [Labels of AI-generated synthetic content comprise explicit and implicit labels.]"
+   }
+  },
+  {
+   "term": "Explicit label (显式标识)",
+   "evidence": {
+    "provision": "Art. 3(3)",
+    "quote": "显式标识是指在生成合成内容或者交互场景界面中添加的，以文字、声音、图形等方式呈现并可以被用户明显感知到的标识。 [An explicit label is one added to the content or interactive interface, presented as text, sound, graphics etc., that users can clearly perceive.]"
+   }
+  },
+  {
+   "term": "Implicit label (隐式标识)",
+   "evidence": {
+    "provision": "Art. 3(4)",
+    "quote": "隐式标识是指采取技术措施在生成合成内容文件数据中添加的，不易被用户明显感知到的标识。 [An implicit label is one added to the content's file data by technical measures that users cannot easily perceive.]"
+   }
+  },
+  {
+   "term": "File metadata (文件元数据)",
+   "evidence": {
+    "provision": "Art. 5(3)",
+    "quote": "文件元数据是指按照特定编码格式嵌入到文件头部的描述性信息，用于记录文件来源、属性、用途等信息内容。 [File metadata means descriptive information embedded in the file header in a specific encoding format, recording the file's source, attributes, purpose and similar information.]"
+   }
+  }
+ ],
+ "relations": [
+  {
+   "relation": "legal_basis",
+   "target_instrument_id": null,
+   "target_text": "中华人民共和国网络安全法 (Cybersecurity Law of the PRC)",
+   "note": "Listed first among the laws and rules under which the Measures are made. The registry holds only the 2025 amendment decision (cn-csl-amendment-2025), not the base law.",
+   "evidence": {
+    "provision": "Art. 1",
+    "quote": "根据《中华人民共和国网络安全法》、《互联网信息服务算法推荐管理规定》、《互联网信息服务深度合成管理规定》、《生成式人工智能服务管理暂行办法》等法律、行政法规和部门规章，制定本办法。 [These Measures are formulated under the Cybersecurity Law, the Algorithmic Recommendation Provisions, the Deep Synthesis Provisions, the Generative AI Interim Measures and other laws, administrative regulations and departmental rules.]"
+   }
+  },
+  {
+   "relation": "legal_basis",
+   "target_instrument_id": "cn-algorithm-recommendation-2021",
+   "target_text": "互联网信息服务算法推荐管理规定 (Algorithmic Recommendation Provisions)",
+   "note": "Cited as a basis (Art. 1); its covered providers also define scope (Art. 2).",
+   "evidence": {
+    "provision": "Art. 1",
+    "quote": "根据《中华人民共和国网络安全法》、《互联网信息服务算法推荐管理规定》、《互联网信息服务深度合成管理规定》、《生成式人工智能服务管理暂行办法》等法律、行政法规和部门规章，制定本办法。"
+   }
+  },
+  {
+   "relation": "legal_basis",
+   "target_instrument_id": "cn-deep-synthesis-2022",
+   "target_text": "互联网信息服务深度合成管理规定 (Deep Synthesis Provisions)",
+   "note": "Cited as a basis (Art. 1); its covered providers also define scope (Art. 2).",
+   "evidence": {
+    "provision": "Art. 1",
+    "quote": "根据《中华人民共和国网络安全法》、《互联网信息服务算法推荐管理规定》、《互联网信息服务深度合成管理规定》、《生成式人工智能服务管理暂行办法》等法律、行政法规和部门规章，制定本办法。"
+   }
+  },
+  {
+   "relation": "legal_basis",
+   "target_instrument_id": "cn-genai-interim-measures-2023",
+   "target_text": "生成式人工智能服务管理暂行办法 (Generative AI Interim Measures)",
+   "note": "Cited as a basis (Art. 1); its covered providers also define scope (Art. 2).",
+   "evidence": {
+    "provision": "Art. 1",
+    "quote": "根据《中华人民共和国网络安全法》、《互联网信息服务算法推荐管理规定》、《互联网信息服务深度合成管理规定》、《生成式人工智能服务管理暂行办法》等法律、行政法规和部门规章，制定本办法。"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": "cn-deep-synthesis-2022",
+   "target_text": "Deep Synthesis Provisions, Art. 17(1)",
+   "note": "The explicit-labelling duty in Art. 4 applies only to services falling under the circumstances of Art. 17(1) of the Deep Synthesis Provisions.",
+   "evidence": {
+    "provision": "Art. 4(1)",
+    "quote": "服务提供者提供的生成合成服务属于《互联网信息服务深度合成管理规定》第十七条第一款情形的，"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": "cn-deep-synthesis-2022",
+   "target_text": "Deep Synthesis Provisions, Art. 16",
+   "note": "The implicit (metadata) labelling duty in Art. 5 is to be carried out according to Art. 16 of the Deep Synthesis Provisions.",
+   "evidence": {
+    "provision": "Art. 5(1)",
+    "quote": "服务提供者应当按照《互联网信息服务深度合成管理规定》第十六条的规定，"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": null,
+   "target_text": "强制性国家标准 (mandatory national standards; none named)",
+   "note": "Labelling must also meet mandatory national standards. The text names no standard, so no link to GB 45438-2025 (cn-gb45438-2025) is recorded here.",
+   "evidence": {
+    "provision": "Art. 11",
+    "quote": "服务提供者开展标识活动的，还应当符合相关法律、行政法规、部门规章和强制性国家标准的要求。"
+   }
+  }
+ ],
+ "entities": [],
+ "section_status": {
+  "thresholds": {
+   "status": "not_found",
+   "note": "No numeric cutoff changes legal treatment. The six-month log retention in Art. 9 is part of a record-keeping obligation, not a threshold. Technical label specifications are left to mandatory national standards (Art. 11)."
+  },
+  "entities": {
+   "status": "not_applicable",
+   "note": "A general rule; no firms or facilities are named. The four issuing bodies are government authorities."
+  }
+ },
+ "notes": "Art. 5(2) encourages, but does not require, implicit labels such as digital watermarks inside the content itself (鼓励服务提供者在生成合成内容中添加数字水印等形式的隐式标识); it is not coded as an obligation. Art. 4 explicit labelling is limited to services under Deep Synthesis Provisions Art. 17(1); Art. 5 implicit labelling and Arts. 8, 11-12 bind all service providers in scope. Art. 7 also binds app distribution platforms, which the text does not tie to the Art. 2 scope. The mandatory national standards in Art. 11 and the penalties in Art. 13 are set by other instruments that the text does not name."
+}

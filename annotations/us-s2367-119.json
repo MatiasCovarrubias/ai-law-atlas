@@ -1,0 +1,122 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "us-s2367-119",
+ "tier": "B",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "light, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-interim-20261014"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "AGORA plaintext (ETO, CC BY-NC 4.0), local cache",
+  "url": "https://www.congress.gov/bill/119th-congress/senate-bill/2367/text",
+  "retrieved": "2026-01-21",
+  "version": "1.33.0 (2026-09-16)",
+  "language": "en",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "data_protection",
+   "generative_ai",
+   "consumer_protection"
+  ],
+  "primary_domain": "data_protection",
+  "mechanisms": [
+   "liability_rule",
+   "disclosure_transparency"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "data_controller",
+   "data_processor",
+   "data_broker",
+   "ai_developer",
+   "ai_provider"
+  ],
+  "affected_roles": [
+   "consumers_users"
+  ],
+  "decision_margins": [
+   "firm:input_use",
+   "firm:product_design_release",
+   "household:data_privacy"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national"
+   ],
+   "description": "Federal civil tort applying to any person whose conduct is in or affects interstate or foreign commerce.",
+   "evidence": {
+    "provision": "SEC. 3(a)",
+    "quote": "in or affecting interstate or foreign commerce"
+   }
+  },
+  "agora_harms": [
+   "Violation of civil or human rights, including privacy"
+  ],
+  "agora_incentives": [
+   "Civil liability"
+  ],
+  "agora_risk_factors": [
+   "Privacy"
+  ],
+  "agora_strategies": [
+   "Input controls: Data use",
+   "Disclosure"
+  ]
+ },
+ "summary": {
+  "short": "Proposed federal private tort: any person who uses or otherwise exploits an individual's covered data without express, prior consent is liable to that individual, including via generative AI training. Provides a consent defense and makes predispute arbitration agreements unenforceable for such claims. No effective date stated.",
+  "long": "The bill, the AI Accountability and Personal Data Protection Act, would create a federal civil tort. Under Section 3, any person who, in or affecting interstate or foreign commerce, appropriates, uses, collects, processes, sells or otherwise exploits an individual's covered data without express, prior consent is liable to that individual in civil action; aiders and abettors are also liable. Covered data includes personally identifiable information, identifiers, geolocation, biometric, behavioral and inferred data; exploitation includes training a generative AI system used by its provider and generating covered data about an individual. Remedies include the greater of actual damages, treble profits or $1,000, punitive damages, injunctive relief and attorney's fees. Consent is an affirmative defense but is invalid if obtained through coercion, deception, or as a condition of a product or service beyond what is reasonably necessary; third-party consent requires separate, specific and affirmatively presented disclosure. Predispute arbitration agreements and joint-action waivers are unenforceable for such claims, and courts decide applicability; Section 4 preserves state laws and sets a minimum standard. The text states no effective date and no public enforcement authority."
+ },
+ "relations": [
+  {
+   "relation": "cross_references",
+   "target_text": "National Artificial Intelligence Initiative Act of 2020 (15 U.S.C. 9401), section 5002",
+   "note": "Sec. 2(2) takes the definition of 'artificial intelligence' from section 5002 of this external Act by reference.",
+   "evidence": {
+    "provision": "Sec. 2(2)",
+    "quote": "has the meaning given that term in section 5002 of the National Artificial Intelligence Initiative Act of 2020 (15 U.S.C. 9401)"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Federal Arbitration Act (chapter 1 of title 9, United States Code)",
+   "note": "Sec. 3(c)(1) applies notwithstanding the Federal Arbitration Act: predispute arbitration agreements and predispute joint-action waivers are not valid or enforceable for claims under this Act.",
+   "evidence": {
+    "provision": "Sec. 3(c)(1)",
+    "quote": "Notwithstanding any other provision of law, including chapter 1 of title 9, United States Code (commonly known as the “Federal Arbitration Act”)"
+   }
+  }
+ ],
+ "notes": "The text states no enactment date, effective date or consolidated version; the registry title's year (2025) does not appear in the document. Sec. 3(c)(1) and Sec. 4(a) refer to 'the date of enactment' or 'any claim arising under this Act' without a stated date. No legal_basis, amends, repeals, implements or transposes relation is stated; the only relations are the two cross-references above. Sec. 4(a) and 4(b) name no specific state instrument. section_status relations is set to not_found because the other relation types were searched for and none appear, although the two cross-reference entries are recorded above.",
+ "events": [],
+ "thresholds": [
+  {
+   "variable": "other",
+   "variable_text": "statutory minimum compensatory damages (floor in greater-of formula)",
+   "operator": ">=",
+   "value": 1000,
+   "value_text": "$1,000",
+   "unit": "USD",
+   "currency": "USD",
+   "level": "person",
+   "trigger": "benefit",
+   "consequence": "An individual prevailing in a civil action may recover compensatory damages equal to the greater of actual damages, treble profits, or $1,000.",
+   "conditions": "Individual prevailing in a civil action under Sec. 3(b)(1); compensatory damages are the greatest of the three listed measures.",
+   "evidence": {
+    "provision": "SEC. 3(b)(2)(A)(iii)",
+    "quote": "(iii) $1,000;"
+   }
+  }
+ ],
+ "section_status": {
+  "events": {
+   "status": "not_found",
+   "note": "The bill text contains no calendar dates, no entry-into-force or effective-date clause, no application or phase-in dates, no deadlines, and no sunset, expiry or repeal provision. Sec. 4(a) refers to 'the date of enactment of this Act' without stating a date. The introduction date is not printed in the fetched text, and the registry metadata (legislative_stage: introduced) is not a text source, so no legislative-step events were recorded."
+  }
+ }
+}

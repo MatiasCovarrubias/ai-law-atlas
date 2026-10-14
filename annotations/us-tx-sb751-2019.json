@@ -1,0 +1,189 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "us-tx-sb751-2019",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (connectors/fetch_texts.py)",
+  "url": "https://capitol.texas.gov/tlodocs/86R/billtext/html/SB00751F.htm",
+  "retrieved": "2026-10-13",
+  "version": "as fetched",
+  "language": "en",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "elections_political_ads",
+   "synthetic_media_deepfakes"
+  ],
+  "primary_domain": "elections_political_ads",
+  "mechanisms": [
+   "prohibition_ban"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "general_public"
+  ],
+  "decision_margins": [
+   "household:information"
+  ],
+  "territorial_scope": {
+   "types": [
+    "subnational"
+   ],
+   "description": "Amends the Texas Election Code, so it applies within the State of Texas.",
+   "evidence": {
+    "provision": "SECTION 1 (amending Election Code § 255.004)",
+    "quote": "Section 255.004, Election Code, is amended by adding Subsections (d) and (e)"
+   }
+  },
+  "agora_harms": [
+   "Detrimental content"
+  ],
+  "agora_incentives": [
+   "Criminal liability"
+  ]
+ },
+ "summary": {
+  "short": "Texas Election Code amendment creating a criminal offense for a person who, intending to injure a candidate or influence an election result, creates a deep fake video and causes it to be published or distributed within 30 days of an election. Takes effect September 1, 2019.",
+  "long": "S.B. 751 (86(R) session) amends Section 255.004 of the Texas Election Code by adding Subsections (d) and (e). Subsection (d) makes it an offense for a person, with intent to injure a candidate or influence the result of an election, to create a deep fake video and cause it to be published or distributed within 30 days of an election. Subsection (e) defines 'deep fake video' as a video, created with the intent to deceive, that appears to depict a real person performing an action that did not occur in reality. Section 2 provides that the Act takes effect September 1, 2019. The text states no penalty amount, exceptions or enforcing authority. The Senate passed the bill 31-0, the House passed it with amendment 141-3 with two present not voting, and the Senate concurred in the House amendment 30-0 on May 25, 2019. The governor's approval date line is blank in this document."
+ },
+ "relations": [
+  {
+   "relation": "amends",
+   "target_text": "Texas Election Code § 255.004",
+   "note": "Adds Subsections (d) and (e) to Section 255.004 of the Election Code. The target is not in the registry, so the ID is empty.",
+   "evidence": {
+    "provision": "SECTION 1",
+    "quote": "Section 255.004, Election Code, is amended by"
+   }
+  }
+ ],
+ "notes": "This is the enrolled bill text, the enacting act itself, so no enacted_by_bill relation is recorded. Subsection (d) uses the term 'deep fake video' and subsection (e) defines it as a video 'created with the intent to deceive' that appears to depict a real person performing an action that did not occur in reality. The approval block (Governor and date) is blank in this document; only the chamber passage dates appear in the certifications. The Act's effective date (September 1, 2019) is stated in Section 2.",
+ "events": [
+  {
+   "event": "passed_chamber",
+   "date": "2019-04-17",
+   "date_type": "absolute",
+   "date_text": "passed the Senate on April 17, 2019",
+   "applies_to": "Senate",
+   "evidence": {
+    "provision": "Certification by Secretary of the Senate",
+    "quote": "April 17, 2019, by the following vote: Yeas 31, Nays 0"
+   }
+  },
+  {
+   "event": "passed_chamber",
+   "date": "2019-05-22",
+   "date_type": "absolute",
+   "date_text": "passed the House, with amendment, on May 22, 2019",
+   "applies_to": "House (with amendment)",
+   "evidence": {
+    "provision": "Certification by Chief Clerk of the House",
+    "quote": "on May 22, 2019, by the following vote"
+   }
+  },
+  {
+   "event": "legislative_approval",
+   "date": "2019-05-25",
+   "date_type": "absolute",
+   "date_text": "the Senate concurred in House amendment on May 25, 2019",
+   "applies_to": "Senate concurrence in House amendment (final passage)",
+   "evidence": {
+    "provision": "Certification by Secretary of the Senate",
+    "quote": "the Senate concurred in House amendment on May 25, 2019"
+   }
+  },
+  {
+   "event": "signed",
+   "date": null,
+   "date_type": "not_stated",
+   "date_text": "Approved: ______ Date ______ Governor",
+   "applies_to": "Governor's approval",
+   "evidence": {
+    "provision": "Signature block (Governor)",
+    "quote": "Approved:"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2019-09-01",
+   "date_type": "absolute",
+   "date_text": "This Act takes effect September 1, 2019.",
+   "applies_to": "Act (new Election Code § 255.004(d)-(e))",
+   "evidence": {
+    "provision": "SECTION 2",
+    "quote": "This Act takes effect September 1, 2019."
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "other",
+   "variable_text": "period before an election within which a deep fake video must be published or distributed for the offense to apply",
+   "operator": "<=",
+   "value": 30,
+   "value_text": "within 30 days of an election",
+   "unit": "days",
+   "measurement": "Measured from the election date to the date the deep fake video is caused to be published or distributed",
+   "level": "other",
+   "trigger": "prohibition",
+   "consequence": "Causing the deep fake video to be published or distributed within the 30-day window is an element of the offense under Sec. 255.004(d)",
+   "conditions": "Person creates a deep fake video with intent to injure a candidate or influence the result of an election (Sec. 255.004(d)(1)); the video must also be published or distributed within 30 days of an election (Sec. 255.004(d)(2))",
+   "evidence": {
+    "provision": "SECTION 1 (inserting Election Code, Sec. 255.004(d)(2))",
+    "quote": "causes the deep fake video to be published or distributed within 30 days of an election."
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "deep fake video",
+   "defined_in": "Texas Election Code Sec. 255.004(e) (added by SECTION 1 of this Act)",
+   "evidence": {
+    "provision": "SECTION 1 (inserting Election Code, Sec. 255.004(e))",
+    "quote": "\"deep fake video\" means a video, created with the intent to deceive, that appears to depict a real person performing an action that did not occur in reality."
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "prohibition",
+   "addressee": "general_public",
+   "modality": "shall_not",
+   "summary": "A person may not, with intent to injure a candidate or influence the result of an election, create a deep fake video and cause it to be published or distributed within 30 days of an election. Offence created by amendment to Election Code § 255.004(d).",
+   "applies_from": "September 1, 2019",
+   "conditional_on": "Intent to injure a candidate or influence the result of an election; creating a deep fake video (defined in § 255.004(e) as a video created with intent to deceive that appears to depict a real person performing an action that did not occur in reality); causing publication or distribution within 30 days of an election.",
+   "evidence": {
+    "provision": "Sec. 1 (adding Election Code § 255.004(d))",
+    "quote": "A person commits an offense if the person, with intent to injure a candidate or influence the result of an election:"
+   }
+  }
+ ],
+ "enforcement": [
+  {
+   "sanction_type": "criminal_penalty",
+   "authority": "Not stated in this text",
+   "triggered_by": "A person, with intent to injure a candidate or influence the result of an election, creates a deep fake video and causes it to be published or distributed within 30 days of an election",
+   "max_penalty_text": "Not stated in this text",
+   "cure_period": "Not stated in this text",
+   "evidence": {
+    "provision": "Sec. 1 (adding Election Code Sec. 255.004(d))",
+    "quote": "A person commits an offense if the person, with intent"
+   }
+  }
+ ],
+ "section_status": {
+  "entities": {
+   "status": "not_applicable",
+   "note": "The Act names no firms, facilities or public bodies. It applies to 'a person' and refers generically to 'a candidate' and 'an election'."
+  }
+ },
+ "entities": []
+}

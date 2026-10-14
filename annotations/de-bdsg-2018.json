@@ -1,0 +1,146 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "de-bdsg-2018",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (connectors/fetch_texts.py)",
+  "url": "https://www.gesetze-im-internet.de/bdsg_2018/",
+  "retrieved": "2026-10-13",
+  "version": "as fetched",
+  "language": "de",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "data_protection",
+   "data_transfer_localization",
+   "algorithmic_decision_systems",
+   "employment_labor",
+   "consumer_protection"
+  ],
+  "primary_domain": "data_protection",
+  "mechanisms": [
+   "mandate_obligation",
+   "institution_setup",
+   "disclosure_transparency",
+   "liability_rule"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "data_controller",
+   "data_processor",
+   "government_agency",
+   "employer"
+  ],
+  "affected_roles": [
+   "general_public",
+   "workers",
+   "consumers_users"
+  ],
+  "decision_margins": [
+   "household:data_privacy",
+   "household:employment",
+   "firm:compliance_process"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national"
+   ],
+   "description": "Federal German statute; the outline names it but does not state its geographic scope provision.",
+   "evidence": {
+    "provision": "Title (Bundesdatenschutzgesetz)",
+    "quote": "Bundesdatenschutzgesetz"
+   }
+  },
+  "agora_harms": [
+   "Violation of civil or human rights, including privacy"
+  ],
+  "agora_incentives": [
+   "Fines",
+   "Imprisonment",
+   "Civil liability"
+  ],
+  "agora_risk_factors": [
+   "Privacy"
+  ]
+ },
+ "summary": {
+  "short": "German Federal Data Protection Act (BDSG), described only by its table of contents. It sets rules for personal data processing by public and private bodies under the GDPR and for law enforcement under Directive (EU) 2016/680, and creates a Federal Data Protection Commissioner.",
+  "long": "The Bundesdatenschutzgesetz (BDSG) is known here only from its unofficial table of contents; no operative provision text is in the document, and the outline gives no date of entry into force. Part 1 (common provisions) covers scope and definitions, processing by public bodies, video surveillance of publicly accessible spaces, data protection officers of public bodies, and the Federal Commissioner for Data Protection and Freedom of Information with its powers, reports and cooperation, plus judicial remedies. Part 2 implements processing rules for the purposes of Article 2 of Regulation (EU) 2016/679, covering special categories and further processing, employment, research, archiving, consumer credit, scoring, data subject rights including automated individual decisions, controller and processor duties, state supervisory authorities, fines, criminal provisions and court remedies. Part 3 implements Directive (EU) 2016/680 for law enforcement, with principles, legal bases, data subject rights, duties of controllers and processors, breach notification, impact assessments, third-country transfers, liability and penalties. Part 4 covers processing outside the scope of EU law and processing for state honours."
+ },
+ "relations": [
+  {
+   "relation": "implements",
+   "target_text": "Verordnung (EU) 2016/679",
+   "note": "Part 2 is headed as implementing provisions for processing under Article 2 of Regulation (EU) 2016/679. Recorded from the heading only; the operative provisions are not in the document.",
+   "evidence": {
+    "provision": "Teil 2 (Überschrift)",
+    "quote": "Durchführungsbestimmungen für Verarbeitungen zu Zwecken gemäß Artikel 2 der Verordnung (EU) 2016/679"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Richtlinie (EU) 2016/680",
+   "note": "Part 3 is headed as provisions for processing under Article 1(1) of Directive (EU) 2016/680. Recorded from the heading only.",
+   "evidence": {
+    "provision": "Teil 3 (Überschrift)",
+    "quote": "Bestimmungen für Verarbeitungen zu Zwecken gemäß Artikel 1 Absatz 1 der Richtlinie (EU) 2016/680"
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "Die oder der Bundesbeauftragte für den Datenschutz und die Informationsfreiheit",
+   "role": "designated",
+   "function": "Federal data protection and freedom of information commissioner. Chapter 4 (§§ 8-16) covers its establishment, competence, independence, appointment, duties, report and powers, as shown by the section headings.",
+   "evidence": {
+    "provision": "Kapitel 4 (Überschrift, Inhaltsübersicht)",
+    "quote": "Die oder der Bundesbeauftragte für den Datenschutz und die Informationsfreiheit"
+   }
+  },
+  {
+   "name": "Aufsichtsbehörden der Länder",
+   "role": "designated",
+   "function": "State supervisory authorities; § 40 is headed as their provision in the chapter on supervision of data processing by non-public bodies.",
+   "evidence": {
+    "provision": "Teil 2, Kapitel 4, § 40",
+    "quote": "§ 40 Aufsichtsbehörden der Länder"
+   }
+  }
+ ],
+ "notes": "The document is the unofficial table of contents (nichtamtliches Inhaltsverzeichnis) of the BDSG from gesetze-im-internet.de. It contains headings only, no operative provisions, so no obligations, thresholds, enforcement, definitions, events or classifications could be coded. Relations and entities come from headings only. The enabling act, amended acts and the 30 June 2017 date are not in the document (the date comes from registry metadata). The Part 4 heading covers activities outside both the GDPR and the Directive 2016/680, so it is a scope reference to both and is not coded as a separate relation. Full text is needed for legal_basis, amendment relations and the operative entities.",
+ "events": [],
+ "section_status": {
+  "events": {
+   "status": "not_found",
+   "note": "The fetched document is only a non-official table of contents (Inhaltsverzeichnis) of the BDSG. It contains no adoption, signature, publication, entry-into-force or application dates and no phase-in steps, deadlines, sunset or repeal provisions. The date in the registry metadata is not in the document and was not used."
+  },
+  "thresholds": {
+   "status": "not_found",
+   "note": "The document is only the nichtamtliches Inhaltsverzeichnis (table of contents) of the BDSG. It contains no operative provision text, so no numeric cutoffs can be quoted or coded. Provisions whose titles suggest possible thresholds, such as § 4 (Videoüberwachung), § 30 (Verbraucherkredite) and § 38 (Datenschutzbeauftragte nichtöffentlicher Stellen), could not be checked against their text."
+  },
+  "definitions": {
+   "status": "not_found",
+   "note": "The table of contents lists the headings '§ 2 Begriffsbestimmungen' and '§ 46 Begriffsbestimmungen', but the definitions text is not in the document, so no defined terms can be quoted. Annotation requires the full text of the Act (for example the Gesamtausgabe linked on the page)."
+  },
+  "obligations": {
+   "status": "not_found",
+   "note": "The fetched document contains only the table of contents (Inhaltsübersicht) of the BDSG, with section titles but no operative provision text. No obligations could be coded from it. Annotation requires the full text of §§ 1-86."
+  },
+  "enforcement": {
+   "status": "not_found",
+   "note": "The document is only the non-official table of contents (Inhaltsverzeichnis). It lists § 41 (Anwendung der Vorschriften über das Bußgeld- und Strafverfahren), § 42 (Strafvorschriften), § 43 (Bußgeldvorschriften) and § 84 (Strafvorschriften), but the operative text of these provisions is not in the document, so no maxima, triggers, authorities or cure periods could be coded."
+  }
+ },
+ "thresholds": [],
+ "obligations": [],
+ "enforcement": [],
+ "definitions": []
+}

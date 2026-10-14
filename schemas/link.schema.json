@@ -1,0 +1,52 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "Link",
+ "type": "object",
+ "description": "A source record (AGORA, LegiScan, OECD, DPA, ...) or another instrument, linked to an instrument by a typed relation.",
+ "required": [
+  "from",
+  "relation",
+  "to",
+  "method"
+ ],
+ "properties": {
+  "from": {
+   "type": "string",
+   "description": "source:id, e.g. agora:1376, legiscan:1893456, instrument:us-co-sb25b-004"
+  },
+  "relation": {
+   "enum": [
+    "same",
+    "part_of",
+    "version_of",
+    "amends",
+    "implements",
+    "repeals",
+    "transposes",
+    "preempts",
+    "codifies",
+    "bill_of",
+    "event_of",
+    "summarizes"
+   ]
+  },
+  "to": {
+   "type": "string",
+   "description": "instrument:<instrument_id>"
+  },
+  "method": {
+   "enum": [
+    "key",
+    "title",
+    "llm",
+    "manual"
+   ]
+  },
+  "confidence": {
+   "type": "number"
+  },
+  "note": {
+   "type": "string"
+  }
+ }
+}

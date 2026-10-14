@@ -1,0 +1,2279 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "us-ca-cppa-admt-regs-2025",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (connectors/fetch_texts.py)",
+  "url": "https://cppa.ca.gov/regulations/pdf/ccpa_updates_cyber_risk_admt_appr_text.pdf",
+  "retrieved": "2026-10-13",
+  "version": "as fetched",
+  "language": "en",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "data_protection",
+   "algorithmic_decision_systems",
+   "consumer_protection",
+   "minors_child_safety",
+   "cybersecurity",
+   "employment_labor"
+  ],
+  "primary_domain": "data_protection",
+  "mechanisms": [
+   "mandate_obligation",
+   "prohibition_ban",
+   "disclosure_transparency",
+   "designation_tiering"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "data_controller",
+   "data_processor",
+   "enterprise",
+   "ai_deployer"
+  ],
+  "affected_roles": [
+   "consumers_users",
+   "minors",
+   "workers"
+  ],
+  "decision_margins": [
+   "firm:input_use",
+   "firm:product_design_release",
+   "firm:pricing",
+   "firm:compliance_process",
+   "household:access",
+   "household:prices",
+   "household:data_privacy",
+   "household:employment"
+  ],
+  "territorial_scope": {
+   "types": [
+    "subnational"
+   ],
+   "description": "Regulations of a California state agency applying to businesses subject to the CCPA as defined under California law.",
+   "evidence": {
+    "provision": "§ 7001",
+    "quote": "In addition to the definitions set forth in Civil Code section 1798.140, for purposes of these regulations:"
+   }
+  },
+  "agora_risk_factors": [
+   "Privacy",
+   "Security: Cybersecurity",
+   "Transparency"
+  ],
+  "agora_strategies": [
+   "Disclosure",
+   "Evaluation"
+  ]
+ },
+ "summary": {
+  "short": "California Privacy Protection Agency regulations implementing the CCPA: privacy policy, notice, consumer request, opt-out, service provider contract, non-discrimination, minors and cybersecurity audit duties for covered businesses, plus automated decisionmaking technology (ADMT) rules; timing varies by provision.",
+  "long": "Regulations issued by the California Privacy Protection Agency (Cal. Code Regs. tit. 11, § 7000 et seq.) under the California Consumer Privacy Act. Article 1 defines terms, including automated decisionmaking technology (ADMT) and significant decisions, and limits collection and use of personal information to reasonably necessary and proportionate purposes. Articles 2 to 4 require privacy policies, notices at collection, opt-out and limit notices, handling of consumer requests (confirmation within 10 business days; response within 45 calendar days, extendable to 90), opt-out preference signals, and contract terms for service providers and third parties. Article 5 sets identity verification rules; Article 6 sets parental consent rules for consumers under 13; Article 7 restricts discriminatory price or service differences; Article 8 requires request metrics from businesses handling personal information of 10,000,000 or more consumers. Article 9 requires cybersecurity audits for businesses above processing thresholds, with first reports due by April 1, 2028 for businesses with 2026 gross revenue above $100,000,000. The table of contents also lists sections on risk assessments, ADMT pre-use notices, opt-out and access rights, insurance companies and sworn complaints; their operative text is not in the part of the document provided here."
+ },
+ "relations": [
+  {
+   "relation": "legal_basis",
+   "target_instrument_id": "null",
+   "target_text": "California Civil Code sections 1798.175 and 1798.185 (CCPA authority)",
+   "note": "Authority cited for the regulations as a whole. Each section's Note also lists the Civil Code sections it references.",
+   "evidence": {
+    "provision": "§ 7001, Note (authority cited)",
+    "quote": "Note: Authority cited: Sections 1798.175 and 1798.185, Civil Code."
+   }
+  },
+  {
+   "relation": "implements",
+   "target_instrument_id": "null",
+   "target_text": "California Consumer Privacy Act of 2018, Civil Code section 1798.100 et seq. (CCPA)",
+   "note": "Defined term used throughout the regulations; the regulations cite CCPA sections in their reference lines.",
+   "evidence": {
+    "provision": "§ 7001, definition of “CCPA”",
+    "quote": "“CCPA” means the California Consumer Privacy Act of 2018"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": "null",
+   "target_text": "Children’s Online Privacy Protection Act, 15 U.S.C. sections 6501 to 6506 (COPPA)",
+   "note": "Defined term. Section 7070(a)(1) requires parental consent under 7070 in addition to any verifiable parental consent required under COPPA.",
+   "evidence": {
+    "provision": "§ 7001, definition of “COPPA”; § 7070(a)(1)",
+    "quote": "“COPPA” means the Children’s Online Privacy Protection Act, 15 U.S.C."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": "null",
+   "target_text": "16 Code of Federal Regulations part 312 (COPPA rule)",
+   "note": "Named in the COPPA definition together with 15 U.S.C. sections 6501 to 6506.",
+   "evidence": {
+    "provision": "§ 7001, definition of “COPPA”",
+    "quote": "sections 6501 to 6506 and 16 Code of Federal Regulations part 312"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": "null",
+   "target_text": "Uniform Electronic Transactions Act, Civil Code section 1633.1 et seq.",
+   "note": "Cited in the definition of 'Signed' as the standard for electronic signing; the target is also part of the California Civil Code.",
+   "evidence": {
+    "provision": "§ 7001, definition of “Signed”",
+    "quote": "the Uniform Electronic Transactions Act, Civil Code section 1633.1 et seq."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": "null",
+   "target_text": "California Probate Code sections 4121 to 4130 (power of attorney)",
+   "note": "Power of attorney under these Probate Code sections exempts an authorized agent from the signed-permission requirement in subsection (a).",
+   "evidence": {
+    "provision": "§ 7063(b)",
+    "quote": "power of attorney pursuant to Probate Code sections 4121 to 4130."
+   }
+  },
+  {
+   "relation": "legal_basis",
+   "target_text": "California Civil Code § 1798.185",
+   "note": "Each Note in this part cites Civil Code § 1798.185 as the authority cited and as the reference.",
+   "evidence": {
+    "provision": "Note following § 7122",
+    "quote": "Authority cited: Section 1798.185, Civil Code."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "California Civil Code § 1798.125",
+   "note": "Opt-out right referenced in § 7221(l); the § 7221 Note also cites § 1798.125.",
+   "evidence": {
+    "provision": "§ 7221(l)",
+    "quote": "as set forth in Civil Code section 1798.125 and Article 7"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "California Civil Code § 1798.199.45",
+   "note": "Cited in the Note to § 7300 as a reference for sworn complaints.",
+   "evidence": {
+    "provision": "Note following § 7300",
+    "quote": "Reference: Section 1798.199.45,"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "California Civil Code § 1798.199.50",
+   "note": "Probable cause standard and proceedings under § 7302.",
+   "evidence": {
+    "provision": "§ 7302(a)",
+    "quote": "Under Civil Code section 1798.199.50, probable cause exists"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "California Civil Code § 1798.82",
+   "note": "§ 7123(e)(9) requires a sample or description of consumer notifications made under § 1798.82(a).",
+   "evidence": {
+    "provision": "§ 7123(e)(9)",
+    "quote": "Civil Code section 1798.82, subdivision (a),"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "California Civil Code § 1798.140",
+   "note": "Defines the personal information categories listed in the § 7157(b)(4) submission.",
+   "evidence": {
+    "provision": "§ 7157(b)(4)",
+    "quote": "Civil Code section 1798.140, subdivisions (v)(1)(A)(L)"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "California Civil Code § 1798.145",
+   "note": "Sensitive personal information referenced for masking in § 7123(c)(5)(C).",
+   "evidence": {
+    "provision": "§ 7123(c)(5)(C)",
+    "quote": "Civil Code section 1798.145, subdivisions (ae)(1)(A) and (B)"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "California Civil Code § 1798.150",
+   "note": "Breach-related training reference in § 7123(c)(13).",
+   "evidence": {
+    "provision": "§ 7123(c)(13)",
+    "quote": "as described in Civil Code section 1798.150"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "California Civil Code § 3426.1(d) (trade secrets)",
+   "note": "Trade secrets are excluded from required Pre-use Notice content in § 7220(d)(1); § 7222(c)(1) has the same exclusion for access responses.",
+   "evidence": {
+    "provision": "§ 7220(d)(1)",
+    "quote": "Trade secrets, as defined in Civil Code section 3426.1, subdivision (d)"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "California Insurance Code (including § 791.02)",
+   "note": "Defines insurance companies by reference to the Insurance Code; § 7271 relies on the insurance transaction definition in Insurance Code § 791.02.",
+   "evidence": {
+    "provision": "§ 7270(a)",
+    "quote": "subject to the California Insurance Code and its regulations"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "California Consumer Privacy Act (CCPA), Civil Code",
+   "note": "§ 7123(c)(3)(A)(ii) refers to contract requirements under the CCPA and § 7051.",
+   "evidence": {
+    "provision": "§ 7123(c)(3)(A)(ii)",
+    "quote": "required by the CCPA and section 7051"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "National Institute of Standards and Technology Cybersecurity Framework 2.0",
+   "note": "Non-legal framework given as an example of an audit that may satisfy this Article under § 7123(f).",
+   "evidence": {
+    "provision": "§ 7123(f)",
+    "quote": "National Institute of Standards and Technology Cybersecurity Framework 2.0"
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "California Privacy Protection Agency",
+   "role": "designated",
+   "function": "Regulatory body defined as the Agency; the regulations are issued under its division heading (Division 6). Established under Civil Code section 1798.199.10 et seq.",
+   "lei": "null",
+   "ticker": "null",
+   "evidence": {
+    "provision": "§ 7001(a)",
+    "quote": "“Agency” means the California Privacy Protection Agency established by Civil Code section 1798.199.10 et seq."
+   }
+  },
+  {
+   "name": "California Attorney General",
+   "role": "designated",
+   "function": "Defined to include the Attorney General's officers and employees. Registers data brokers under Civil Code section 1798.99.80 et seq. (§ 7012(i)) and may receive, on request, compiled request metrics (§ 7102(b)).",
+   "lei": "null",
+   "ticker": "null",
+   "evidence": {
+    "provision": "§ 7001, definition of “Attorney General”",
+    "quote": "“Attorney General” means the California Attorney General or any officer or employee of the California Department of Justice"
+   }
+  },
+  {
+   "name": "California Privacy Protection Agency (the Agency)",
+   "role": "designated",
+   "function": "Receives cybersecurity audit certifications (§ 7124) and risk assessment submissions (§ 7157); may require risk assessment reports (§ 7157(e)); its Enforcement Division receives sworn complaints (§ 7300) and conducts probable cause proceedings (§ 7302).",
+   "evidence": {
+    "provision": "§ 7124(a)",
+    "quote": "it must submit to the Agency a written certification"
+   }
+  },
+  {
+   "name": "California Attorney General",
+   "role": "designated",
+   "function": "May require a business to submit its risk assessment reports at any time (§ 7157(e)).",
+   "evidence": {
+    "provision": "§ 7157(e)",
+    "quote": "The Agency or the Attorney General may require a business to submit its risk assessment reports"
+   }
+  }
+ ],
+ "notes": "Part 1 covers §§ 7001 to 7121 (definitions through cybersecurity audit timing); the ADMT provisions and remaining articles are expected in part 2. The text is a redline extract in which deleted and inserted wording appear together (e.g., duplicate lettering such as '(f) (e)' and '(ccc) (ii)', and alternations such as 'may must', 'shall. shall'). Sentences were annotated as printed; struck wording was not coded. The definition lettering is inconsistent, so provisions are cited by definition name where needed. Civil Code sections cited throughout are treated as one instrument; hypothetical 'Business' examples are not entities. Part 2 of 2 covers §§ 7122-7124, 7150-7157, 7200, 7220-7222, 7270-7271, 7300 and 7302. Relations list citations to other laws only; references to sections of this Title 11 text are not listed. Drafting residue: § 7300(a) reads 'Sworn complaints may must be filed'; § 7302(b) reads 'The Enforcement Division Agency'; § 7302(c)(3) reads 'appear at attend'; § 7123(c)(17)(A) refers to 'subsection (17)'. § 7155(b) contains the placeholder '[OAL to fill in the effective date of these regulations]', so this part gives no effective date. § 7155(b) sets a December 31, 2027 deadline for certain existing processing. Standards bodies named in § 7122(a) (AICPA, PCAOB, ISACA, ISO) are not designated and are not listed as entities.",
+ "events": [
+  {
+   "event": "deadline",
+   "date": "2028-04-01",
+   "date_type": "absolute",
+   "date_text": "April 1, 2028, if the business’s annual gross revenue for 2026 was more than one hundred million dollars ($100,000,000) as of January 1, 2027",
+   "applies_to": "First cybersecurity audit report for businesses with annual gross revenue for 2026 above $100,000,000",
+   "evidence": {
+    "provision": "§ 7121(a)(1)",
+    "quote": "April 1, 2028, if the business’s annual gross revenue for 2026 was more than one hundred million dollars ($100,000,000) as of January 1, 2027"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2029-04-01",
+   "date_type": "absolute",
+   "date_text": "April 1, 2029, if the business’s annual gross revenue for 2027 was between fifty million dollars ($50,000,000) and one hundred million dollars ($100,000,000) as of January 1, 2028",
+   "applies_to": "First cybersecurity audit report for businesses with annual gross revenue for 2027 between $50,000,000 and $100,000,000",
+   "evidence": {
+    "provision": "§ 7121(a)(2)",
+    "quote": "April 1, 2029, if the business’s annual gross revenue for 2027 was between fifty million dollars ($50,000,000) and one hundred million dollars ($100,000,000) as of January 1, 2028"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2030-04-01",
+   "date_type": "absolute",
+   "date_text": "April 1, 2030, if the business’s annual gross revenue for 2028 was less than fifty million dollars ($50,000,000)",
+   "applies_to": "First cybersecurity audit report for businesses with annual gross revenue for 2028 below $50,000,000",
+   "evidence": {
+    "provision": "§ 7121(a)(3)",
+    "quote": "April 1, 2030, if the business’s annual gross revenue for 2028 was less than fifty million dollars ($50,000,000)"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "by April 1 of the following year",
+   "applies_to": "Cybersecurity audit reports for businesses meeting the § 7120 criteria on January 1 of a year, after April 1, 2030",
+   "evidence": {
+    "provision": "§ 7121(b)",
+    "quote": "the business must complete its cybersecurity audit report for that period by April 1 of the following year"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "No later than 10 business days after receiving a request to delete, request to correct, or request to know, request to access ADMT, or request to appeal ADMT",
+   "anchor": "receipt of the consumer request",
+   "applies_to": "Businesses confirming receipt of requests to delete, correct, know, access ADMT, or appeal ADMT",
+   "offset_value": 10,
+   "offset_unit": "business_days",
+   "evidence": {
+    "provision": "§ 7021(a)",
+    "quote": "No later than 10 business days after receiving a request to delete, request to correct, or request to know, request to access ADMT, or request to appeal ADMT"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "no later than 45 calendar days after receipt of the request",
+   "anchor": "receipt of the request",
+   "applies_to": "Responses to requests to delete, correct, know, access ADMT, and appeal ADMT",
+   "offset_value": 45,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "§ 7021(b)",
+    "quote": "Businesses shall respond to a request to delete, request to correct, and request to know, request to access ADMT, and request to appeal ADMT no later than 45 calendar days after receipt of the request"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "for a maximum total of 90 calendar days from the day the request is received",
+   "anchor": "receipt of the request",
+   "applies_to": "Extended response period for requests to delete, correct, know, access ADMT, and appeal ADMT, with notice and explanation to the consumer",
+   "offset_value": 90,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "§ 7021(b)",
+    "quote": "for a maximum total of 90 calendar days from the day the request is received"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "as soon as feasibly possible, but no later than 15 business days from the date the business receives the request",
+   "anchor": "receipt of the request to opt-out of sale/sharing",
+   "applies_to": "Ceasing to sell or share personal information after a request to opt-out of sale/sharing",
+   "offset_value": 15,
+   "offset_unit": "business_days",
+   "evidence": {
+    "provision": "§ 7026(f)(1)",
+    "quote": "as soon as feasibly possible, but no later than 15 business days from the date the business receives the request"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "but no later than 15 business days from the date the business receives the request",
+   "anchor": "receipt of the request to limit",
+   "applies_to": "Ceasing use and disclosure of sensitive personal information for purposes beyond § 7027(m) after a request to limit",
+   "offset_value": 15,
+   "offset_unit": "business_days",
+   "evidence": {
+    "provision": "§ 7027(g)(1)",
+    "quote": "but no later than 15 business days from the date the business receives the request"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "a business shall wait at least 12 months from the date of the consumer’s request before asking a consumer who has opted out of the sale or sharing of their personal information to consent",
+   "anchor": "date of the consumer’s request to opt-out of sale/sharing",
+   "applies_to": "Businesses asking a consumer who opted out of sale/sharing to consent to sale or sharing",
+   "offset_value": 12,
+   "offset_unit": "months",
+   "evidence": {
+    "provision": "§ 7026(k)",
+    "quote": "a business shall wait at least 12 months from the date of the consumer’s request"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "a business shall wait at least 12 months from the date the consumer’s request to limit is received",
+   "anchor": "receipt of the request to limit",
+   "applies_to": "Businesses asking a consumer who exercised the right to limit to consent to additional uses of sensitive personal information",
+   "offset_value": 12,
+   "offset_unit": "months",
+   "evidence": {
+    "provision": "§ 7027(l)",
+    "quote": "a business shall wait at least 12 months from the date the consumer’s request to limit is received"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "within the past six months of receiving the request",
+   "anchor": "receipt of the current request to correct",
+   "applies_to": "Businesses denying a request to correct the same alleged inaccuracy as a previously denied request",
+   "offset_value": -6,
+   "offset_unit": "months",
+   "evidence": {
+    "provision": "§ 7023(g)",
+    "quote": "within the past six months of receiving the request"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "at least once every 12 months",
+   "applies_to": "Businesses evaluating and documenting whether a reasonable verification method can be established, in connection with the privacy policy update",
+   "evidence": {
+    "provision": "§ 7062(g)",
+    "quote": "The business shall evaluate and document whether a reasonable method can be established at least once every 12 months"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "by July 1 of every calendar year",
+   "applies_to": "Businesses meeting the 10,000,000-consumer threshold in § 7102(a), disclosing compiled request metrics",
+   "evidence": {
+    "provision": "§ 7102(a)(2)",
+    "quote": "Disclose, by July 1 of every calendar year, the information compiled in subsection (a)(1) within their privacy policy"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "The business must submit the certification no later than April 1 following any year that the business is required to complete a cybersecurity audit",
+   "applies_to": "submission of cybersecurity audit certification to the Agency",
+   "evidence": {
+    "provision": "§ 7124(b)",
+    "quote": "The business must submit the certification no later than April 1 following any"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2027-12-31",
+   "date_type": "absolute",
+   "date_text": "no later than December 31, 2027",
+   "applies_to": "risk assessments for processing initiated before the effective date of these regulations and continuing after it",
+   "evidence": {
+    "provision": "§ 7155(b)",
+    "quote": "no later than December 31, 2027"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "no later than 45 calendar days from the date of the material change",
+   "depends_on": "material change relating to the processing activity",
+   "applies_to": "update of risk assessment after a material change",
+   "offset_value": 45,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "§ 7155(a)(3)",
+    "quote": "no later than 45 calendar days from the date of the material change"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "At least once every three years, a business must review, and update as necessary, its risk assessments",
+   "applies_to": "review and update of risk assessments",
+   "evidence": {
+    "provision": "§ 7155(a)(2)",
+    "quote": "At least once every three years"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "before initiating any processing activity identified in section 7150, subsection (b)",
+   "depends_on": "initiation of a processing activity identified in § 7150(b)",
+   "applies_to": "conducting and documenting a risk assessment",
+   "evidence": {
+    "provision": "§ 7155(a)(1)",
+    "quote": "before initiating any processing activity identified in section 7150, subsection (b)"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2027-01-01",
+   "date_type": "absolute",
+   "date_text": "no later than January 1, 2027",
+   "applies_to": "ADMT used for a significant decision prior to January 1, 2027",
+   "evidence": {
+    "provision": "§ 7200(b)",
+    "quote": "no later than January 1, 2027"
+   }
+  },
+  {
+   "event": "application",
+   "date": "2027-01-01",
+   "date_type": "absolute",
+   "date_text": "A business that uses ADMT on or after January 1, 2027, must be in compliance with the requirements of this Article any time it is using ADMT for a significant decision",
+   "applies_to": "use of ADMT for a significant decision on or after January 1, 2027",
+   "evidence": {
+    "provision": "§ 7200(b)",
+    "quote": "A business that uses ADMT on or after January 1, 2027"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2028-04-01",
+   "date_type": "absolute",
+   "date_text": "no later than April 1, 2028",
+   "applies_to": "submission of risk assessment information for risk assessments conducted in 2026 and 2027",
+   "evidence": {
+    "provision": "§ 7157(a)(1)",
+    "quote": "no later than April 1, 2028"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "no later than April 1 following any year during which the business conducted the risk assessments",
+   "applies_to": "submission of risk assessment information for risk assessments conducted after 2027",
+   "evidence": {
+    "provision": "§ 7157(a)(2)",
+    "quote": "following any year during which the business conducted the risk assessments"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "must submit its risk assessment reports within 30 calendar days of the Agency’s or the Attorney General’s request",
+   "depends_on": "request by the Agency or the Attorney General for risk assessment reports",
+   "applies_to": "submission of risk assessment reports on request",
+   "offset_value": 30,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "§ 7157(e)",
+    "quote": "within 30 calendar days of the Agency’s or the Attorney General’s request"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "no later than 15 business days from the date the business receives the request",
+   "depends_on": "receipt of a consumer's request to opt-out of ADMT after processing has been initiated",
+   "applies_to": "ceasing ADMT processing and notifying service providers after an opt-out request",
+   "offset_value": 15,
+   "offset_unit": "business_days",
+   "evidence": {
+    "provision": "§ 7221(n)(1)",
+    "quote": "no later than 15 business days from the date the business receives the request"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "files, at least 10 business days before the proceeding, a written request for an in-person or public proceeding",
+   "depends_on": "scheduled probable cause proceeding",
+   "applies_to": "written request by the alleged violator for an in-person or public probable cause proceeding",
+   "offset_value": -10,
+   "offset_unit": "business_days",
+   "evidence": {
+    "provision": "§ 7302(c)(1)",
+    "quote": "at least 10 business days before the proceeding"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "other",
+   "variable_text": "threshold set forth in Civil Code section 1798.140, subdivision (d)(1)(C)",
+   "operator": "=",
+   "value": null,
+   "value_text": "set by Civil Code section 1798.140, subdivision (d)(1)(C); value not stated in this text",
+   "unit": "",
+   "measurement": "preceding calendar year",
+   "level": "entity",
+   "trigger": "eligibility",
+   "consequence": "Processing that presents significant risk to consumers’ security requires a cybersecurity audit.",
+   "conditions": "Alternative to the threshold in § 7120(b)(2).",
+   "depends_on": "Civil Code section 1798.140, subdivision (d)(1)(C)",
+   "evidence": {
+    "provision": "§ 7120(b)(1)",
+    "quote": "The business meets the threshold set forth in Civil Code section 1798.140, subdivision (d)(1)(C), in the preceding calendar year"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "threshold set forth in Civil Code section 1798.140, subdivision (d)(1)(A)",
+   "operator": "=",
+   "value": null,
+   "value_text": "set by Civil Code section 1798.140, subdivision (d)(1)(A); value not stated in this text",
+   "unit": "",
+   "measurement": "preceding calendar year",
+   "level": "entity",
+   "trigger": "eligibility",
+   "consequence": "Processing that presents significant risk to consumers’ security requires a cybersecurity audit when combined with a count in § 7120(b)(2)(A) or (B).",
+   "conditions": "Must be combined with the count in § 7120(b)(2)(A) or (B).",
+   "depends_on": "Civil Code section 1798.140, subdivision (d)(1)(A)",
+   "evidence": {
+    "provision": "§ 7120(b)(2)",
+    "quote": "The business meets the threshold set forth in Civil Code section 1798.140, subdivision (d)(1)(A)"
+   }
+  },
+  {
+   "variable": "data_subjects_count",
+   "variable_text": "consumers or households whose personal information was processed",
+   "operator": ">=",
+   "value": 250000,
+   "value_text": "250,000 or more consumers or households",
+   "unit": "consumers or households",
+   "measurement": "personal information processed in the preceding calendar year",
+   "level": "entity",
+   "trigger": "eligibility",
+   "consequence": "Processing presents significant risk to consumers’ security, so a cybersecurity audit is required.",
+   "conditions": "Must also meet the threshold in Civil Code section 1798.140, subdivision (d)(1)(A).",
+   "evidence": {
+    "provision": "§ 7120(b)(2)(A)",
+    "quote": "Processed the personal information of 250,000 or more consumers or households in the preceding calendar year"
+   }
+  },
+  {
+   "variable": "data_subjects_count",
+   "variable_text": "consumers whose sensitive personal information was processed",
+   "operator": ">=",
+   "value": 50000,
+   "value_text": "50,000 or more consumers",
+   "unit": "consumers",
+   "measurement": "sensitive personal information processed in the preceding calendar year",
+   "level": "entity",
+   "trigger": "eligibility",
+   "consequence": "Processing presents significant risk to consumers’ security, so a cybersecurity audit is required.",
+   "conditions": "Must also meet the threshold in Civil Code section 1798.140, subdivision (d)(1)(A).",
+   "evidence": {
+    "provision": "§ 7120(b)(2)(B)",
+    "quote": "Processed the sensitive personal information of 50,000 or more consumers in the preceding calendar year."
+   }
+  },
+  {
+   "variable": "data_subjects_count",
+   "variable_text": "consumers whose personal information the business buys, receives, sells, shares or otherwise makes available for commercial purposes",
+   "operator": ">=",
+   "value": 10000000,
+   "value_text": "10,000,000 or more consumers in a calendar year",
+   "unit": "consumers",
+   "measurement": "calendar year; business alone or in combination that knows or reasonably should know",
+   "level": "group",
+   "trigger": "obligation",
+   "consequence": "Business must compile request metrics for the previous calendar year and disclose them.",
+   "conditions": "Metrics listed in § 7102(a)(1)(A) to (H).",
+   "evidence": {
+    "provision": "§ 7102(a)",
+    "quote": "the personal information of 10,000,000 or more consumers in a calendar year"
+   }
+  },
+  {
+   "variable": "revenue_annual",
+   "variable_text": "annual gross revenue for 2026",
+   "operator": ">",
+   "value": 100000000,
+   "value_text": "more than one hundred million dollars ($100,000,000)",
+   "unit": "dollars",
+   "currency": "USD",
+   "measurement": "annual gross revenue for 2026, as of January 1, 2027",
+   "level": "entity",
+   "trigger": "phase_in",
+   "consequence": "First cybersecurity audit report due no later than April 1, 2028; audit covers January 1, 2027 to January 1, 2028.",
+   "conditions": "Applies to the first cybersecurity audit report.",
+   "evidence": {
+    "provision": "§ 7121(a)(1)",
+    "quote": "if the business’s annual gross revenue for 2026 was more than one hundred million dollars ($100,000,000)"
+   }
+  },
+  {
+   "variable": "revenue_annual",
+   "variable_text": "annual gross revenue for 2027",
+   "operator": "range",
+   "value": 50000000,
+   "value_max": 100000000,
+   "value_text": "between fifty million dollars ($50,000,000) and one hundred million dollars ($100,000,000)",
+   "unit": "dollars",
+   "currency": "USD",
+   "measurement": "annual gross revenue for 2027, as of January 1, 2028",
+   "level": "entity",
+   "trigger": "phase_in",
+   "consequence": "First cybersecurity audit report due no later than April 1, 2029; audit covers January 1, 2028 to January 1, 2029.",
+   "conditions": "Text does not state whether the bounds are inclusive.",
+   "evidence": {
+    "provision": "§ 7121(a)(2)",
+    "quote": "if the business’s annual gross revenue for 2027 was between fifty million dollars ($50,000,000) and one hundred million dollars ($100,000,000)"
+   }
+  },
+  {
+   "variable": "revenue_annual",
+   "variable_text": "annual gross revenue for 2028",
+   "operator": "<",
+   "value": 50000000,
+   "value_text": "less than fifty million dollars ($50,000,000)",
+   "unit": "dollars",
+   "currency": "USD",
+   "measurement": "annual gross revenue for 2028, as of January 1, 2029",
+   "level": "entity",
+   "trigger": "phase_in",
+   "consequence": "First cybersecurity audit report due no later than April 1, 2030; audit covers January 1, 2029 to January 1, 2030.",
+   "conditions": "Applies to the first cybersecurity audit report.",
+   "evidence": {
+    "provision": "§ 7121(a)(3)",
+    "quote": "if the business’s annual gross revenue for 2028 was less than fifty million dollars ($50,000,000)"
+   }
+  },
+  {
+   "variable": "age",
+   "variable_text": "consumers under 16 years of age (actual knowledge)",
+   "operator": "<",
+   "value": 16,
+   "value_text": "less than 16 years of age",
+   "unit": "years",
+   "measurement": "business’s actual knowledge; willful disregard is deemed actual knowledge",
+   "level": "person",
+   "trigger": "scope_definition",
+   "consequence": "Personal information of such consumers is sensitive personal information.",
+   "conditions": "Business has actual knowledge of the consumer’s age.",
+   "evidence": {
+    "provision": "§ 7001(bbb)(4)",
+    "quote": "Personal information of consumers that the business has actual knowledge are less than 16 years of age."
+   }
+  },
+  {
+   "variable": "age",
+   "variable_text": "consumer less than 13 years of age (request to opt-in)",
+   "operator": "<",
+   "value": 13,
+   "value_text": "less than 13 years of age",
+   "unit": "years",
+   "measurement": "consumer’s age",
+   "level": "person",
+   "trigger": "eligibility",
+   "consequence": "Opt-in to sale or sharing is given by a parent or guardian; a consumer at least 13 years of age may give it themselves.",
+   "conditions": "Applies to a request to opt-in to sale/sharing.",
+   "evidence": {
+    "provision": "§ 7001(pp)",
+    "quote": "by a parent or guardian of a consumer less than 13 years of age or by a consumer at least 13 years of age."
+   }
+  },
+  {
+   "variable": "age",
+   "variable_text": "consumer less than the age of 13",
+   "operator": "<",
+   "value": 13,
+   "value_text": "a consumer less than the age of 13",
+   "unit": "years",
+   "measurement": "business’s actual knowledge that it sells or shares the consumer’s personal information",
+   "level": "person",
+   "trigger": "obligation",
+   "consequence": "Business must establish and comply with a reasonable method for determining that the consenting person is the parent or guardian.",
+   "conditions": "Business has actual knowledge that it sells or shares the consumer’s personal information.",
+   "evidence": {
+    "provision": "§ 7070(a)(1)",
+    "quote": "sells or shares the personal information of a consumer less than the age of 13"
+   }
+  },
+  {
+   "variable": "volume",
+   "variable_text": "uses of ADMT with respect to a consumer within a 12-month period",
+   "operator": ">",
+   "value": 4,
+   "value_text": "more than four times within a 12-month period",
+   "unit": "times per 12-month period",
+   "measurement": "Number of ADMT uses with respect to the consumer within a 12-month period",
+   "level": "person",
+   "trigger": "benefit",
+   "consequence": "The business may give an aggregate-level response to a consumer's request to access ADMT instead of per-use information.",
+   "conditions": "Applies when responding to a consumer's request to access ADMT; the aggregate response summarises outputs over the preceding 12 months, average parameters, and how they applied to the consumer.",
+   "evidence": {
+    "provision": "§ 7222(j)",
+    "quote": "A business that used an ADMT with respect to a consumer more than four times within a 12-month period may provide an aggregate-level response"
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "Automated decisionmaking technology (ADMT)",
+   "defined_in": "this instrument (§ 7001)",
+   "evidence": {
+    "provision": "§ 7001(e)",
+    "quote": "“Automated decisionmaking technology” or “ADMT” means any technology that processes personal information and uses computation to replace human decisionmaking or substantially replace human decisionmaking."
+   }
+  },
+  {
+   "term": "Substantially replace human decisionmaking",
+   "defined_in": "this instrument (§ 7001)",
+   "evidence": {
+    "provision": "§ 7001(e)(1)",
+    "quote": "to “substantially replace human decisionmaking” means a business uses the technology’s output to make a decision without human involvement."
+   }
+  },
+  {
+   "term": "Human involvement",
+   "defined_in": "this instrument (§ 7001)",
+   "evidence": {
+    "provision": "§ 7001(e)(1)",
+    "quote": "Human involvement requires the human reviewer to:"
+   }
+  },
+  {
+   "term": "Profiling",
+   "defined_in": "this instrument (§ 7001)",
+   "evidence": {
+    "provision": "§ 7001(ii)",
+    "quote": "“Profiling” means any form of automated processing of personal information to evaluate certain personal aspects"
+   }
+  },
+  {
+   "term": "Significant decision",
+   "defined_in": "this instrument (§ 7001)",
+   "evidence": {
+    "provision": "§ 7001(ddd)",
+    "quote": "“Significant decision” means a decision that results in the provision or denial of financial or lending services, housing, education enrollment or opportunities, employment or independent contracting opportunities or compensation, or healthcare services."
+   }
+  },
+  {
+   "term": "Performance at work",
+   "defined_in": "this instrument (§ 7001)",
+   "evidence": {
+    "provision": "§ 7001(cc)",
+    "quote": "“Performance at work” means the performance of job duties for which the consumer has been hired or has applied to be hired."
+   }
+  },
+  {
+   "term": "Performance in an educational program",
+   "defined_in": "this instrument (§ 7001)",
+   "evidence": {
+    "provision": "§ 7001(dd)",
+    "quote": "“Performance in an educational program” means the performance of coursework in an educational program"
+   }
+  },
+  {
+   "term": "Physical or biological identification or profiling",
+   "defined_in": "this instrument (§ 7001)",
+   "evidence": {
+    "provision": "§ 7001(ee)",
+    "quote": "“Physical or biological identification or profiling” means identifying or profiling a consumer using automated measurements or analysis of their physical or biological characteristics"
+   }
+  },
+  {
+   "term": "Systematic observation",
+   "defined_in": "this instrument (§ 7001)",
+   "evidence": {
+    "provision": "§ 7001(eee)",
+    "quote": "“Systematic observation” means methodical and regular or continuous observation."
+   }
+  },
+  {
+   "term": "Train (for risk assessment purposes)",
+   "defined_in": "this instrument (§ 7001)",
+   "evidence": {
+    "provision": "§ 7001(fff)",
+    "quote": "“Train” for the purposes of sections 7150, subsection (b)(6), and 7153 means the process through which a technology discovers underlying patterns, learns a series of actions, or is taught to generate a desired output."
+   }
+  },
+  {
+   "term": "Sensitive personal information",
+   "defined_in": "this instrument (§ 7001)",
+   "evidence": {
+    "provision": "§ 7001(bbb)",
+    "quote": "“Sensitive personal information” means:"
+   }
+  },
+  {
+   "term": "Cybersecurity audit",
+   "defined_in": "this instrument (§ 7001)",
+   "evidence": {
+    "provision": "§ 7001(j)",
+    "quote": "“Cybersecurity audit” means the annual cybersecurity audit that every business"
+   }
+  },
+  {
+   "term": "Information system",
+   "defined_in": "this instrument (§ 7001)",
+   "evidence": {
+    "provision": "§ 7001(t)",
+    "quote": "“Information system” means the resources (e.g., network, hardware, and software) organized for the processing of personal information or that can provide access to personal information."
+   }
+  },
+  {
+   "term": "Disproportionate effort",
+   "defined_in": "this instrument (§ 7001)",
+   "evidence": {
+    "provision": "§ 7001(m)",
+    "quote": "means the time and/or resources expended by the business, service provider, contractor, or third party to respond to the individualized request significantly outweighs the reasonably foreseeable impact to the consumer by not responding"
+   }
+  },
+  {
+   "term": "Financial incentive",
+   "defined_in": "this instrument (§ 7001)",
+   "evidence": {
+    "provision": "§ 7001(p)",
+    "quote": "“Financial incentive” means a program, benefit, or other offering, including payments to consumers, for the collection, retention, sale, or sharing of personal information."
+   }
+  },
+  {
+   "term": "Price or service difference",
+   "defined_in": "this instrument (§ 7001)",
+   "evidence": {
+    "provision": "§ 7001(ff)",
+    "quote": "“Price or service difference” means (1) any difference in the price or rate charged for any goods or services to any consumer related to the collection, retention, sale, or sharing of personal information"
+   }
+  },
+  {
+   "term": "Value of the consumer’s data",
+   "defined_in": "this instrument (§ 7001)",
+   "evidence": {
+    "provision": "§ 7001(iii)",
+    "quote": "“Value of the consumer’s data” means the value provided to the business by the consumer’s data as calculated under section 7081."
+   }
+  },
+  {
+   "term": "Opt-out preference signal",
+   "defined_in": "this instrument (§ 7001)",
+   "evidence": {
+    "provision": "§ 7001(aa)",
+    "quote": "“Opt-out preference signal” means a signal that is sent by a platform, technology, or mechanism, on behalf of the consumer, that communicates the consumer choice to opt-out of the sale and sharing of personal information"
+   }
+  },
+  {
+   "term": "Frictionless manner",
+   "defined_in": "this instrument (§ 7001)",
+   "evidence": {
+    "provision": "§ 7001(r)",
+    "quote": "“Frictionless manner” means a business’s processing of an opt-out preference signal that complies with the requirements set forth in section 7025, subsection (f)."
+   }
+  },
+  {
+   "term": "Right to opt-out of ADMT",
+   "defined_in": "this instrument (§ 7001)",
+   "evidence": {
+    "provision": "§ 7001(xx)",
+    "quote": "“Right to opt-out of ADMT” means a consumer’s right to direct that a business not use ADMT with respect to the consumer"
+   }
+  },
+  {
+   "term": "Right to access ADMT",
+   "defined_in": "this instrument (§ 7001)",
+   "evidence": {
+    "provision": "§ 7001(ss)",
+    "quote": "“Right to access ADMT” means a consumer’s right to request that a business provide information to the consumer about the business’s use of ADMT with respect to the consumer"
+   }
+  },
+  {
+   "term": "Nonbusiness",
+   "defined_in": "this instrument (§ 7001)",
+   "evidence": {
+    "provision": "§ 7001(v)",
+    "quote": "“Nonbusiness” means a person or entity that does not meet the definition of"
+   }
+  },
+  {
+   "term": "Employment-related information",
+   "defined_in": "this instrument (§ 7001)",
+   "evidence": {
+    "provision": "§ 7001(o)",
+    "quote": "“Employment-related information” means personal information that is collected by the business about a natural person"
+   }
+  },
+  {
+   "term": "auditor",
+   "defined_in": "§ 7122(a)",
+   "evidence": {
+    "provision": "§ 7122(a)",
+    "quote": "using a qualified, objective, independent professional (“auditor”)"
+   }
+  },
+  {
+   "term": "security incident",
+   "defined_in": "§ 7123(c)(17)(A)",
+   "evidence": {
+    "provision": "§ 7123(c)(17)(A)",
+    "quote": "“security incident” means an occurrence that actually or imminently jeopardizes the confidentiality, integrity, or availability of the business’s information system"
+   }
+  },
+  {
+   "term": "comparable set of processing activities",
+   "defined_in": "§ 7156(a)",
+   "evidence": {
+    "provision": "§ 7156(a)",
+    "quote": "A “comparable set of processing activities” that can be addressed by a single risk assessment is a set of similar processing activities that present similar risks to consumers’ privacy."
+   }
+  },
+  {
+   "term": "intends to use",
+   "defined_in": "§ 7150(b)(6)",
+   "evidence": {
+    "provision": "§ 7150(b)(6)",
+    "quote": "For purposes of this paragraph, “intends to use” means the business is using, plans to use, permits others to use"
+   }
+  },
+  {
+   "term": "recipient-business",
+   "defined_in": "§ 7153(a)",
+   "evidence": {
+    "provision": "§ 7153(a)",
+    "quote": "A business that makes ADMT available to another business (“recipientbusiness”)"
+   }
+  },
+  {
+   "term": "Infer or extrapolate",
+   "defined_in": "§ 7150(b)(5)",
+   "evidence": {
+    "provision": "§ 7150(b)(5)",
+    "quote": "“Infer or extrapolate” does not include a business using a consumer’s personal information solely to deliver goods to, or provide transportation for, that consumer at a sensitive location."
+   }
+  },
+  {
+   "term": "material change",
+   "defined_in": "§ 7155(a)(3)",
+   "evidence": {
+    "provision": "§ 7155(a)(3)",
+    "quote": "A change relating to the processing activity is material if it creates new negative impacts or increases the magnitude or likelihood of previously identified negative impacts"
+   }
+  },
+  {
+   "term": "insurance company",
+   "defined_in": "§ 7270(a)",
+   "evidence": {
+    "provision": "§ 7270(a)",
+    "quote": "insurance company shall mean any person that is subject to the California Insurance Code and its regulations."
+   }
+  },
+  {
+   "term": "output",
+   "defined_in": "§ 7220(c)(5)(A)",
+   "evidence": {
+    "provision": "§ 7220(c)(5)(A)",
+    "quote": "An “output” may include predictions, decisions, and recommendations"
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "audit",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Cybersecurity audit report definition: every business must create the report as part of its cybersecurity audit.",
+   "conditional_on": "business required to complete a cybersecurity audit under section 7120",
+   "evidence": {
+    "provision": "§ 7001(l)",
+    "quote": "the document that every business must create as part of its cybersecurity audit"
+   }
+  },
+  {
+   "type": "risk_assessment",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Risk assessment report definition: every business required to conduct a risk assessment must create a report as part of it.",
+   "conditional_on": "business required to conduct a risk assessment",
+   "evidence": {
+    "provision": "§ 7001(zz)",
+    "quote": "every business that is required to conduct a risk assessment must create as part of its risk assessment"
+   }
+  },
+  {
+   "type": "data_minimization",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Collection, use, retention and sharing of personal information must be reasonably necessary and proportionate to disclosed or consented purposes, consistent with consumer reasonable expectations.",
+   "evidence": {
+    "provision": "§ 7002(a)",
+    "quote": "shall be reasonably necessary and proportionate to achieve:"
+   }
+  },
+  {
+   "type": "consent",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Obtain consumer consent under section 7004 before collecting or processing personal information for purposes that do not meet the section 7002(a) requirements; consumer must be able to withdraw consent at any time.",
+   "conditional_on": "purpose does not meet section 7002(a)",
+   "evidence": {
+    "provision": "§ 7002(e)",
+    "quote": "A business shall obtain the consumer’s consent in accordance with section 7004 before collecting or processing personal information"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "data_controller",
+   "modality": "shall_not",
+   "summary": "Shall not collect categories of personal information other than those disclosed in the Notice at Collection; a new Notice at Collection is required for additional categories or incompatible purposes.",
+   "evidence": {
+    "provision": "§ 7002(f)",
+    "quote": "A business shall not collect categories of personal information other than"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Disclosures and communications to consumers must be easy to read and understandable; disclosures under Article 2 must be readable, available in the business's contract languages and accessible to consumers with disabilities.",
+   "evidence": {
+    "provision": "§ 7003(a)",
+    "quote": "Disclosures and communications to consumers shall be easy to read and understandable to consumers."
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Conspicuous links required under the CCPA or the regulations must appear in a similar manner to other homepage links; for mobile applications, a conspicuous link must be included in the privacy policy accessible from the app platform page.",
+   "evidence": {
+    "provision": "§ 7003(c)-(d)",
+    "quote": "a conspicuous link required under the CCPA or these regulations shall appear in a similar manner"
+   }
+  },
+  {
+   "type": "consent",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Design and implement methods for submitting CCPA requests and obtaining consent that follow stated principles (easy to understand, symmetry in choice, avoidance of confusing language and choice architecture, easy to execute).",
+   "evidence": {
+    "provision": "§ 7004(a)",
+    "quote": "businesses shall design and implement methods for submitting CCPA requests and obtaining consumer consent"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "data_controller",
+   "modality": "shall_not",
+   "summary": "Shall not add unnecessary burden or friction to the process of submitting a CCPA request or providing or withdrawing consent; agreements obtained through dark patterns do not constitute consent.",
+   "evidence": {
+    "provision": "§ 7004(a)(5)",
+    "quote": "The business shall not add unnecessary burden or friction to the process"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Provide a privacy policy; provide a Notice at Collection; provide a Notice of Right to Opt-out of Sale/Sharing or Alternative Opt-out Link where selling or sharing; provide a Notice of Right to Limit where using sensitive personal information beyond section 7027(m); provide a Notice of Financial Incentive where offering one.",
+   "conditional_on": "conditions stated in each subsection (e.g. selling or sharing, offering a financial incentive)",
+   "evidence": {
+    "provision": "§ 7010(a)",
+    "quote": "Every business that must comply with the CCPA and these regulations shall provide a privacy policy"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "ai_deployer",
+   "modality": "shall",
+   "summary": "A business using ADMT as set forth in section 7200(a) must provide consumers a Pre-use Notice under section 7220.",
+   "conditional_on": "business uses ADMT as set forth in section 7200(a)",
+   "evidence": {
+    "provision": "§ 7010(c)",
+    "quote": "A business that uses ADMT as set forth in section 7200, subsection (a), must provide consumers with a Pre-use Notice in accordance with section 7220."
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "ai_deployer",
+   "modality": "shall",
+   "summary": "A business using ADMT must include in its Pre-use Notice a link through which consumers can opt-out of ADMT use, except as set forth in section 7221(b).",
+   "conditional_on": "business uses ADMT as set forth in section 7200(a); exception in section 7221(b)",
+   "evidence": {
+    "provision": "§ 7010(d)",
+    "quote": "must include in its Pre-use Notice a link through which consumers can opt-out"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Privacy policy must include a comprehensive description of information practices (categories, sources, purposes, sales and sharing, disclosures), an explanation of CCPA rights, how to exercise them, and the date last updated; must be posted online via a conspicuous link using the word privacy.",
+   "evidence": {
+    "provision": "§ 7011(e)",
+    "quote": "The privacy policy shall include the following information:"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Notice at Collection must be readily available at or before the point of collection and must list categories of personal information, purposes, whether sold or shared, retention periods, and links to the opt-out notice and privacy policy.",
+   "applies_from": "at or before the point of collection",
+   "evidence": {
+    "provision": "§ 7012(e)",
+    "quote": "A business shall include the following in its Notice at Collection:"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "data_controller",
+   "modality": "shall_not",
+   "summary": "Shall not collect personal information from a consumer if the Notice at Collection was not given at or before the point of collection.",
+   "conditional_on": "Notice at Collection not given at or before the point of collection",
+   "evidence": {
+    "provision": "§ 7012(d)",
+    "quote": "the business shall not collect personal information from the consumer."
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Notice of Right to Opt-out of Sale/Sharing must include a description of the right and instructions for submitting an opt-out request, and must be provided in the same manner as the personal information is collected.",
+   "conditional_on": "business sells or shares personal information",
+   "evidence": {
+    "provision": "§ 7013(f)",
+    "quote": "A business shall include the following in its Notice of Right to Opt-out of Sale/Sharing:"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "data_controller",
+   "modality": "shall_not",
+   "summary": "Shall not sell or share personal information collected while no Notice of Right to Opt-out of Sale/Sharing was posted, unless the consumer consents.",
+   "conditional_on": "period during which no opt-out notice was posted",
+   "evidence": {
+    "provision": "§ 7013(h)",
+    "quote": "A business shall not sell or share the personal information it collected during the time the business did not have a Notice of Right to Opt-out of Sale/Sharing posted"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Notice of Right to Limit must include a description of the right to limit and instructions for submitting a request to limit.",
+   "conditional_on": "business uses or discloses sensitive personal information for purposes other than section 7027(m)",
+   "evidence": {
+    "provision": "§ 7014(f)",
+    "quote": "A business shall include the following in its Notice of Right to Limit:"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "data_controller",
+   "modality": "shall_not",
+   "summary": "Shall not use or disclose sensitive personal information collected while no Notice of Right to Limit was posted, for purposes other than section 7027(m), unless the consumer consents.",
+   "conditional_on": "period during which no right-to-limit notice was posted",
+   "evidence": {
+    "provision": "§ 7014(h)",
+    "quote": "A business shall not use or disclose sensitive personal information it collected during the time the business did not have a Notice of Right to Limit posted"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "A business choosing an Alternative Opt-out Link must title it Your Privacy Choices or Your California Privacy Choices with an opt-out icon, and the linked webpage must describe both opt-out and limit rights and provide the request mechanism.",
+   "conditional_on": "business chooses to use an Alternative Opt-out Link",
+   "evidence": {
+    "provision": "§ 7015(b)",
+    "quote": "A business that chooses to use an Alternative Opt-out Link shall title the link"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Businesses must provide two or more designated request methods for deletion, correction and know requests, including a toll-free number and a website method where applicable; online-only businesses need only provide an email address; requests to know beyond 12 months must have a means of submission; deficient requests must be treated as submitted or the consumer informed how to cure.",
+   "conditional_on": "business does not fit the online-only exception in subsection (a)",
+   "evidence": {
+    "provision": "§ 7020(b)",
+    "quote": "shall provide two or more designated methods for submitting requests to delete"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Confirm receipt of a request to delete, correct, know, access ADMT or appeal ADMT within 10 business days; respond within 45 calendar days, extendable by up to an additional 45 calendar days with notice and explanation.",
+   "applies_from": "upon receipt of the consumer request; confirmation within 10 business days; response within 45 calendar days",
+   "evidence": {
+    "provision": "§ 7021(a)",
+    "quote": "a business shall confirm receipt of the request and provide information about how the business will process the request"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "On a deletion request, permanently erase or deidentify personal information, notify service providers, contractors and third parties (unless impossible or disproportionate effort), inform the consumer of compliance and record retention, and, when denying, explain the basis and delete non-exempt information.",
+   "applies_from": "upon receipt of a request to delete",
+   "evidence": {
+    "provision": "§ 7022(b)",
+    "quote": "Permanently and completely erasing the personal information from its existing systems"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "data_processor",
+   "modality": "shall",
+   "summary": "Service providers and contractors must cooperate with the business in responding to a deletion request: erase or enable erasure, delete exempted data only for the exception purpose, and notify their own service providers and others.",
+   "applies_from": "upon notification by the business",
+   "conditional_on": "personal information collected under written contract with the business",
+   "evidence": {
+    "provision": "§ 7022(c)",
+    "quote": "cooperate with the business in responding to a request to delete"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "On a correction request, correct information on existing systems and instruct service providers and contractors to correct it; accept, review and consider documentation provided by the consumer; explain any denial; and disclose specific pieces of information on request to confirm correction.",
+   "applies_from": "upon receipt of a request to correct",
+   "evidence": {
+    "provision": "§ 7023(c)",
+    "quote": "shall correct the personal information at issue on its existing systems"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Implement and maintain reasonable security procedures and practices for documentation relating to a request to correct.",
+   "evidence": {
+    "provision": "§ 7023(d)(4)",
+    "quote": "The business shall implement and maintain reasonable security procedures and practices"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "data_controller",
+   "modality": "shall_not",
+   "summary": "Shall not disclose specific pieces of personal information in response to a request to know if the consumer's identity cannot be verified; SSN, account credentials and biometric data may not be disclosed in response to a request to know.",
+   "conditional_on": "identity cannot be verified under Article 5",
+   "evidence": {
+    "provision": "§ 7024(a)",
+    "quote": "the business shall not disclose any specific pieces of personal information to the requestor"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "On a request to know, provide all personal information collected in the preceding 12 months (and beyond, if collected on or after January 1, 2022, unless impossible or disproportionate); when denying in whole or part, explain the basis; provide categories, sources, purposes and third parties as individualized response; use a secure channel for transmission.",
+   "evidence": {
+    "provision": "§ 7024(e)",
+    "quote": "the business shall inform the requestor and explain the basis for the denial, unless prohibited from doing so by law."
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "data_processor",
+   "modality": "shall",
+   "summary": "Service providers and contractors must provide assistance to the business in responding to a verifiable request to know, including the personal information they hold under the written contract.",
+   "conditional_on": "verifiable consumer request to know",
+   "evidence": {
+    "provision": "§ 7024(i)",
+    "quote": "A service provider or contractor shall provide assistance to the business in responding to a verifiable consumer request to know"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Use reasonable security measures when transmitting personal information to the consumer in response to a request to know.",
+   "evidence": {
+    "provision": "§ 7024(f)",
+    "quote": "A business shall use reasonable security measures when transmitting personal information to the consumer."
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Business that sells or shares personal information must process opt-out preference signals meeting the listed requirements as valid opt-out requests for the browser or device and associated profile, without requiring additional information, and must display whether processed.",
+   "applies_from": "upon receipt or detection of an opt-out preference signal",
+   "conditional_on": "business sells or shares personal information collected online; signal complies with section 7025(b)",
+   "evidence": {
+    "provision": "§ 7025(b)",
+    "quote": "shall process any opt-out preference signal that meets the following requirements as a valid request to opt-out of sale/sharing"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "data_controller",
+   "modality": "shall_not",
+   "summary": "Shall not interpret the absence of an opt-out preference signal after a prior signal as consent to opt in to sale or sharing.",
+   "conditional_on": "consumer known to the business and previously sent a signal",
+   "evidence": {
+    "provision": "§ 7025(c)(5)",
+    "quote": "the business shall not interpret the absence of an opt-out preference signal"
+   }
+  },
+  {
+   "type": "data_minimization",
+   "addressee": "data_controller",
+   "also_addressees": [
+    "platform_operator"
+   ],
+   "modality": "shall_not",
+   "summary": "Business and the platform sending the opt-out preference signal shall not use, disclose or retain personal information collected in connection with the signal for other purposes.",
+   "evidence": {
+    "provision": "§ 7025(d)",
+    "quote": "shall not use, disclose, or retain any personal information collected from the consumer"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "data_controller",
+   "modality": "shall_not",
+   "summary": "For frictionless processing of opt-out preference signals, shall not charge a fee, change the consumer's product experience, or display notifications or interstitial content in response to the signal.",
+   "conditional_on": "processing opt-out preference signals in a frictionless manner",
+   "evidence": {
+    "provision": "§ 7025(f)(1)",
+    "quote": "Charge a fee or require any valuable consideration if the consumer uses an opt-out preference signal."
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "A business processing signals frictionlessly, to be exempt from posting the opt-out link, must include specified information in its privacy policy (right, frictionless statement, how to implement signals, other methods).",
+   "conditional_on": "business meets all conditions in section 7025(g)",
+   "evidence": {
+    "provision": "§ 7025(g)(2)",
+    "quote": "Includes in its privacy policy the following information:"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Provide two or more designated methods for opt-out of sale/sharing requests, including an opt-out preference signal; cease sale or sharing within 15 business days of the request and notify third parties; provide a means to confirm the opt-out was processed.",
+   "applies_from": "upon receipt of a request to opt out of sale or sharing",
+   "conditional_on": "business sells or shares personal information",
+   "evidence": {
+    "provision": "§ 7026(a)",
+    "quote": "shall provide two or more designated methods for submitting requests to opt-out of sale/sharing"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "When providing a Notice of Financial Incentive in response to an opt-out request, the business must comply with Article 7 and include the notice in its response.",
+   "conditional_on": "business informs the consumer of a charge for a product or service in response to an opt-out request",
+   "evidence": {
+    "provision": "§ 7026(i)",
+    "quote": "shall provide the consumer with a Notice of Financial Incentive that complies with section 7016"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "data_controller",
+   "modality": "shall_not",
+   "summary": "Shall not require an account or additional information beyond what is necessary to opt out, or require a verifiable consumer request for an opt-out request.",
+   "evidence": {
+    "provision": "§ 7026(c)",
+    "quote": "A business shall not require a consumer submitting a request to opt-out of sale/sharing to create an account"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "data_controller",
+   "modality": "shall_not",
+   "summary": "Shall not asks a consumer who has opted out to consent to sale or sharing within 12 months of the request, except as allowed by the regulations.",
+   "applies_from": "12 months from the date of the consumer's request",
+   "conditional_on": "consumer has opted out of sale or sharing",
+   "evidence": {
+    "provision": "§ 7026(k)",
+    "quote": "a business shall wait at least 12 months"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Provide two or more designated methods for requests to limit the use and disclosure of sensitive personal information, including an interactive form linked from the Limit link or Alternative Opt-out Link where collected online; cease non-exempt use within 15 business days and notify service providers and third parties; provide a means to confirm processing.",
+   "applies_from": "upon receipt of a request to limit",
+   "conditional_on": "business uses or discloses sensitive personal information for purposes other than section 7027(m)",
+   "evidence": {
+    "provision": "§ 7027(b)",
+    "quote": "shall provide two or more designated methods for submitting requests to limit."
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "data_controller",
+   "modality": "shall_not",
+   "summary": "Shall not require an account or additional information beyond what is necessary for a request to limit, or require a verifiable consumer request for it.",
+   "evidence": {
+    "provision": "§ 7027(d)",
+    "quote": "A business shall not require a consumer submitting a request to limit to create an account"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "When providing a Notice of Financial Incentive in response to a request to limit, comply with Article 7 and include the notice in the response.",
+   "conditional_on": "business informs the consumer of a charge for a product or service in response to a request to limit",
+   "evidence": {
+    "provision": "§ 7027(k)",
+    "quote": "shall provide the consumer with a Notice of Financial Incentive that complies with section 7016 in its response"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "data_controller",
+   "modality": "shall_not",
+   "summary": "Shall not ask a consumer who has exercised the right to limit to consent to use of sensitive personal information for other purposes within 12 months of the request.",
+   "applies_from": "12 months from the date the request to limit is received",
+   "conditional_on": "consumer has exercised the right to limit",
+   "evidence": {
+    "provision": "§ 7027(l)",
+    "quote": "a business shall wait at least 12 months"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Requests to opt in to sale or sharing or to use of sensitive personal information must use a two-step opt-in process: first a clear request to opt in, then separate confirmation.",
+   "conditional_on": "consumer seeks to opt in after opting out or limiting",
+   "evidence": {
+    "provision": "§ 7028(a)",
+    "quote": "shall use a two-step opt-in process"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "data_processor",
+   "modality": "shall_not",
+   "summary": "Service providers and contractors shall not retain, use or disclose personal information collected under the written contract except for listed purposes.",
+   "conditional_on": "personal information collected pursuant to written contract with the business",
+   "evidence": {
+    "provision": "§ 7050(a)",
+    "quote": "A service provider or contractor shall not retain, use, or disclose personal information collected pursuant to its written contract with the business"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "data_processor",
+   "modality": "shall_not",
+   "summary": "Service providers and contractors cannot contract to provide cross-context behavioral advertising, and shall not combine opted-out consumer personal information with other data for advertising services.",
+   "evidence": {
+    "provision": "§ 7050(b)",
+    "quote": "A service provider or contractor cannot contract with a business to provide cross-context behavioral advertising"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "data_processor",
+   "modality": "shall",
+   "summary": "When a service provider or contractor receives a CCPA request directly from a consumer, it shall act on the business's instructions or inform the consumer that the request was sent to a service provider.",
+   "conditional_on": "service provider receives a CCPA request directly from the consumer",
+   "evidence": {
+    "provision": "§ 7050(b)",
+    "quote": "the service provider or contractor shall either act on behalf of the business"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_processor",
+   "modality": "shall",
+   "summary": "A service provider or contractor that is a business must comply with the CCPA and regulations for personal information it handles outside its service provider role; and must comply with the terms of the required contract.",
+   "conditional_on": "service provider acting outside its role, or under the contract required by the CCPA",
+   "evidence": {
+    "provision": "§ 7050(d)",
+    "quote": "A service provider or contractor that is a business shall comply with the CCPA and these regulations"
+   }
+  },
+  {
+   "type": "audit",
+   "addressee": "data_processor",
+   "modality": "shall",
+   "summary": "Service providers and contractors must cooperate with the business's cybersecurity audit, including making relevant information available to the auditor and not misrepresenting facts.",
+   "conditional_on": "personal information collected under written contract with the business",
+   "evidence": {
+    "provision": "§ 7050(h)(1)",
+    "quote": "cooperate with the business:"
+   }
+  },
+  {
+   "type": "risk_assessment",
+   "addressee": "data_processor",
+   "modality": "shall",
+   "summary": "Service providers and contractors must cooperate in conducting the business's risk assessment by making available all necessary facts and not misrepresenting them.",
+   "conditional_on": "personal information collected under written contract with the business",
+   "evidence": {
+    "provision": "§ 7050(h)(2)",
+    "quote": "In conducting the business’s risk assessment pursuant to Article 10"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_controller",
+   "also_addressees": [
+    "data_processor"
+   ],
+   "modality": "shall",
+   "summary": "The contract between the business and service providers or contractors must prohibit sale or sharing, specify business purposes, restrict use, require CCPA compliance, grant audit and remediation rights, and require notice of inability to comply.",
+   "conditional_on": "contract required by the CCPA for service providers and contractors",
+   "evidence": {
+    "provision": "§ 7051(a)",
+    "quote": "The contract required by the CCPA for service providers and contractors shall:"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_processor",
+   "modality": "shall",
+   "summary": "A service provider or contractor that subcontracts must have a contract with the subcontractor that complies with the CCPA and the regulations.",
+   "conditional_on": "service provider subcontracts services to the business",
+   "evidence": {
+    "provision": "§ 7051(b)",
+    "quote": "shall have a contract with the subcontractor that complies with the CCPA and these regulations"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "A business that sells or shares personal information with a third party must enter an agreement specifying limited purposes, CCPA compliance, the business's right to monitor and remediate, and notice of inability to comply.",
+   "conditional_on": "business sells or shares a consumer's personal information with a third party",
+   "evidence": {
+    "provision": "§ 7053(a)",
+    "quote": "shall enter into an agreement with the third party that"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Establish, document and comply with a reasonable method for verifying the identity of a consumer making a request to delete, correct, know or access ADMT, and consider the listed factors.",
+   "evidence": {
+    "provision": "§ 7060(a)",
+    "quote": "A business shall establish, document, and comply with a reasonable method for verifying that the person making a request"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "data_controller",
+   "modality": "shall_not",
+   "summary": "Shall not require identity verification for opt-out of sale or sharing, limit, or opt-out of ADMT requests, and shall not require a fee for verification of delete, correct or know requests.",
+   "evidence": {
+    "provision": "§ 7060(b)",
+    "quote": "A business shall not require a consumer to verify their identity to make a request to opt-out of sale/sharing"
+   }
+  },
+  {
+   "type": "data_minimization",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Generally avoid requesting additional information for verification; avoid collecting identifying types in Civil Code section 1798.81.5(d) unless necessary; delete new verification information after processing.",
+   "evidence": {
+    "provision": "§ 7060(d)",
+    "quote": "A business shall generally avoid requesting additional information from the consumer for purposes of verification."
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Implement reasonable security measures to detect fraudulent identity-verification activity and prevent unauthorized deletion, correction or access.",
+   "evidence": {
+    "provision": "§ 7060(f)",
+    "quote": "A business shall implement reasonable security measures to detect fraudulent identity-verification activity"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "For non-accountholders, verify identity to a reasonable degree (know categories) or reasonably high degree (know specific pieces, access ADMT, with signed declaration); deny specific-pieces requests that cannot be verified; state inability to verify and document reasonable methods at least every 12 months.",
+   "conditional_on": "consumer does not have or cannot access a password-protected account",
+   "evidence": {
+    "provision": "§ 7062(b)",
+    "quote": "requires that the business verify the identity of the consumer making the request to a reasonable degree of certainty"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "data_controller",
+   "modality": "shall_not",
+   "summary": "Businesses shall not require the consumer to resubmit a request in their individual capacity, nor require a power of attorney for a consumer to use an authorized agent.",
+   "conditional_on": "consumer uses an authorized agent",
+   "evidence": {
+    "provision": "§ 7063(a)",
+    "quote": "businesses shall not require the consumer to resubmit their request"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "An authorized agent acting for a consumer must implement and maintain reasonable security procedures to protect the consumer's information. Applies to authorized agents, which may be natural persons or business entities.",
+   "conditional_on": "authorized agent submits requests on behalf of a consumer",
+   "evidence": {
+    "provision": "§ 7063(c)",
+    "quote": "An authorized agent shall implement and maintain reasonable security procedures and practices"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "enterprise",
+   "modality": "shall_not",
+   "summary": "An authorized agent shall not use the consumer's personal information for purposes other than fulfilling requests, verification or fraud prevention.",
+   "conditional_on": "authorized agent acting for a consumer",
+   "evidence": {
+    "provision": "§ 7063(d)",
+    "quote": "An authorized agent shall not use a consumer’s personal information"
+   }
+  },
+  {
+   "type": "consent",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "A business that has actual knowledge it sells or shares personal information of a consumer under 13 must establish a reasonable method to determine that the consenting person is the parent or guardian.",
+   "conditional_on": "actual knowledge of sale or sharing of personal information of a consumer under 13",
+   "evidence": {
+    "provision": "§ 7070(a)(1)",
+    "quote": "shall establish, document, and comply with a reasonable method for determining that the person consenting"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "After receiving parental consent to sale or sharing, the business shall inform the parent or guardian of the right to opt out and how to do so on the child's behalf.",
+   "conditional_on": "business receives consent under section 7070(a)",
+   "evidence": {
+    "provision": "§ 7070(b)",
+    "quote": "the business shall inform the parent or guardian of the right to opt-out of sale/sharing"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Establish a reasonable method, consistent with section 7070(a)(2), for determining that a person submitting a request for a child under 13 is the parent or guardian.",
+   "conditional_on": "request to delete, correct or know personal information of a child under 13",
+   "evidence": {
+    "provision": "§ 7070(c)",
+    "quote": "A business shall establish, document, and comply with a reasonable method, in accordance with the methods set forth in subsection (a)(2)"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "data_controller",
+   "modality": "shall_not",
+   "summary": "A price or service difference related to a consumer exercising CCPA rights is discriminatory and prohibited; a business shall not offer a price or service difference that it cannot show is reasonably related to the value of the consumer's data.",
+   "conditional_on": "price or service difference related to exercise of CCPA rights, or not reasonably related to value of consumer data",
+   "evidence": {
+    "provision": "§ 7080(a)",
+    "quote": "A price or service difference is discriminatory, and therefore prohibited by Civil Code section 1798.125"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "A business shall notify consumers of any financial incentive or price or service difference it offers, in accordance with section 7016.",
+   "conditional_on": "business offers a financial incentive or price or service difference",
+   "evidence": {
+    "provision": "§ 7080(e)",
+    "quote": "A business shall notify consumers of any financial incentive or price or service difference subject to Civil Code section 1798.125"
+   }
+  },
+  {
+   "type": "record_keeping",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Compile metrics for the previous calendar year on requests to delete, correct, know, access ADMT, opt out of sale or sharing, limit, and opt out of ADMT: received, complied with in whole or part, denied; and median or mean response days.",
+   "conditional_on": "business knows or reasonably should know it buys, receives, sells or shares personal information of 10,000,000 or more consumers in a calendar year",
+   "evidence": {
+    "provision": "§ 7102(a)(1)",
+    "quote": "Compile the following metrics for the previous calendar year:"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Disclose the compiled metrics by July 1 of every calendar year within the privacy policy or on a website linked from it.",
+   "applies_from": "by July 1 of every calendar year",
+   "conditional_on": "business meets the 10,000,000 consumer threshold in section 7102(a)",
+   "evidence": {
+    "provision": "§ 7102(a)(2)",
+    "quote": "Disclose, by July 1 of every calendar year, the information compiled in subsection (a)(1)"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Upon request, compile and provide the Attorney General with the metrics for requests received from consumers.",
+   "conditional_on": "Attorney General request; business chose to compile metrics for all individuals",
+   "evidence": {
+    "provision": "§ 7102(b)",
+    "quote": "shall, upon request, compile and provide to the"
+   }
+  },
+  {
+   "type": "audit",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Every business whose processing presents significant risk to consumers' security must complete an annual cybersecurity audit.",
+   "conditional_on": "significant risk to consumers' security under section 7120(b)",
+   "evidence": {
+    "provision": "§ 7120(a)",
+    "quote": "must complete a cybersecurity audit."
+   }
+  },
+  {
+   "type": "audit",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "First cybersecurity audit report due April 1, 2028, if annual gross revenue for 2026 exceeded $100,000,000 as of January 1, 2027.",
+   "applies_from": "April 1, 2028",
+   "conditional_on": "annual gross revenue for 2026 more than one hundred million dollars",
+   "evidence": {
+    "provision": "§ 7121(a)(1)",
+    "quote": "April 1, 2028, if the business’s annual gross revenue for 2026 was more than one hundred million dollars"
+   }
+  },
+  {
+   "type": "audit",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "First cybersecurity audit report due April 1, 2029, if annual gross revenue for 2027 was between $50,000,000 and $100,000,000.",
+   "applies_from": "April 1, 2029",
+   "conditional_on": "annual gross revenue for 2027 between fifty and one hundred million dollars",
+   "evidence": {
+    "provision": "§ 7121(a)(2)",
+    "quote": "April 1, 2029, if the business’s annual gross revenue for 2027 was"
+   }
+  },
+  {
+   "type": "audit",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "First cybersecurity audit report due April 1, 2030, if annual gross revenue for 2028 was less than $50,000,000.",
+   "applies_from": "April 1, 2030",
+   "conditional_on": "annual gross revenue for 2028 less than fifty million dollars",
+   "evidence": {
+    "provision": "§ 7121(a)(3)",
+    "quote": "April 1, 2030, if the business’s annual gross revenue for 2028 was less than fifty million dollars"
+   }
+  },
+  {
+   "type": "audit",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "After April 1, 2030, a business meeting the section 7120 criteria on January 1 must complete an audit covering the next 12 months and its report by April 1 of the following year.",
+   "applies_from": "after April 1, 2030",
+   "conditional_on": "business meets the criteria of section 7120 as of January 1 of a year",
+   "evidence": {
+    "provision": "§ 7121(b)",
+    "quote": "the business must complete a cybersecurity audit that covers the next 12 months"
+   }
+  },
+  {
+   "type": "audit",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "A business required to complete a cybersecurity audit must use a qualified, objective, independent auditor following accepted auditing standards. Internal auditors must report to an executive who has no direct responsibility for the cybersecurity program. The business must make information available to the auditor, disclose relevant facts in good faith, and not misrepresent facts. Audit findings must rely primarily on specific evidence rather than management assertions, and the report must go to the responsible executive.",
+   "conditional_on": "Business required to complete a cybersecurity audit under this Article",
+   "evidence": {
+    "provision": "§ 7122(a)",
+    "quote": "must do so using a qualified, objective, independent professional"
+   }
+  },
+  {
+   "type": "audit",
+   "addressee": "auditor_assessor",
+   "modality": "shall",
+   "summary": "The auditor must exercise objective and impartial judgment, must be free of business influence, and must not take part in activities it may later assess. Also covers qualification (knowledge of cybersecurity and of auditing it).",
+   "conditional_on": "Cybersecurity audit under this Article",
+   "evidence": {
+    "provision": "§ 7122(a)(2)",
+    "quote": "must exercise objective and impartial judgment on all issues"
+   }
+  },
+  {
+   "type": "record_keeping",
+   "addressee": "enterprise",
+   "also_addressees": [
+    "auditor_assessor"
+   ],
+   "modality": "shall",
+   "summary": "The business and the auditor must retain all documents relevant to each cybersecurity audit for at least five years after completion of the audit.",
+   "conditional_on": "Cybersecurity audit under this Article",
+   "evidence": {
+    "provision": "§ 7122(g)",
+    "quote": "must retain all documents relevant to each cybersecurity audit for a minimum of five (5) years"
+   }
+  },
+  {
+   "type": "audit",
+   "addressee": "auditor_assessor",
+   "modality": "shall",
+   "summary": "The cybersecurity audit must assess the business's program for protecting personal information, the components listed in subsection (c) that apply, and how the business implements and enforces the program. The audit report must describe the information system, criteria and evidence, identify gaps with a remediation plan, identify the auditor and qualified individuals, and carry a signed auditor statement of independence.",
+   "conditional_on": "Cybersecurity audit under this Article",
+   "evidence": {
+    "provision": "§ 7123(a)",
+    "quote": "The cybersecurity audit must assess how the business’s cybersecurity program"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Each year the business must submit to the Agency a written certification, signed by an executive management member, that it completed the cybersecurity audit. Submission is due no later than April 1 following the audit year, through the Agency's website, with the content listed in subsection (d).",
+   "applies_from": "Each calendar year in which the business is required to complete a cybersecurity audit",
+   "conditional_on": "Business required to complete a cybersecurity audit under this Article",
+   "evidence": {
+    "provision": "§ 7124(a)",
+    "quote": "it must submit to the Agency a written certification that the business completed the cybersecurity audit"
+   }
+  },
+  {
+   "type": "risk_assessment",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Before initiating a processing activity that presents significant risk (selling or sharing personal information, processing sensitive personal information, ADMT for significant decisions, certain automated inference, and training ADMT or identification technology), the business must conduct and document a risk assessment.",
+   "applies_from": "Before initiating the processing activity",
+   "conditional_on": "Processing activity listed in § 7150(b)",
+   "evidence": {
+    "provision": "§ 7150(a)",
+    "quote": "must conduct a risk assessment before initiating that processing"
+   }
+  },
+  {
+   "type": "risk_assessment",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Employees whose duties include participating in the processing must be included in the risk assessment process. The business may include external parties such as service providers, bias experts, consumer subsets or advocacy stakeholders.",
+   "conditional_on": "Processing subject to a risk assessment under § 7150",
+   "evidence": {
+    "provision": "§ 7151(a)",
+    "quote": "must be included in the business’s risk assessment process for that processing activity"
+   }
+  },
+  {
+   "type": "risk_assessment",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "The business must determine whether privacy risks outweigh benefits and document a risk assessment report covering the purpose, categories of personal information, operational elements, benefits, negative impacts, safeguards, whether processing will start, the individuals involved, and the review and approval record. For ADMT used for significant decisions, the logic and output must also be documented.",
+   "conditional_on": "Processing subject to a risk assessment under § 7150",
+   "evidence": {
+    "provision": "§ 7152(a)",
+    "quote": "A business must conduct a risk assessment to determine whether the risks to consumers’ privacy"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "ai_provider",
+   "modality": "shall",
+   "summary": "A business that makes ADMT trained on personal information available to another business for significant decisions must provide that business all facts available that are necessary for the recipient's own risk assessment.",
+   "conditional_on": "ADMT trained using personal information and made available to another business for a significant decision under § 7150(b)(3)",
+   "evidence": {
+    "provision": "§ 7153(a)",
+    "quote": "making available to the business all facts necessary to conduct the risk assessment"
+   }
+  },
+  {
+   "type": "risk_assessment",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "A risk assessment must be conducted and documented before starting a listed processing activity. It must be reviewed at least every three years and updated within 45 calendar days of a material change, as soon as feasibly possible.",
+   "applies_from": "Before initiating the processing activity; review at least every three years",
+   "conditional_on": "Processing activity listed in § 7150(b)",
+   "evidence": {
+    "provision": "§ 7155(a)(1)-(3)",
+    "quote": "At least once every three years, a business must review, and update as necessary, its risk assessments"
+   }
+  },
+  {
+   "type": "risk_assessment",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "For listed processing that began before the regulations' effective date and continues after it, the business must conduct and document a risk assessment no later than December 31, 2027, and must comply with the submission requirements.",
+   "applies_from": "no later than December 31, 2027",
+   "conditional_on": "Listed processing initiated before the effective date of these regulations and continuing after it",
+   "evidence": {
+    "provision": "§ 7155(b)",
+    "quote": "the business must conduct, and document as set forth in section 7152, a risk assessment in accordance with the requirements of this Article no later than December 31, 2027"
+   }
+  },
+  {
+   "type": "record_keeping",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "The business must retain its risk assessments, including original and updated versions, for as long as the processing continues or for five years after completion of the assessment, whichever is later.",
+   "conditional_on": "Processing subject to a risk assessment under § 7150",
+   "evidence": {
+    "provision": "§ 7155(c)",
+    "quote": "must retain its risk assessments, including original and updated versions, for as long as the processing continues"
+   }
+  },
+  {
+   "type": "risk_assessment",
+   "addressee": "enterprise",
+   "modality": "may",
+   "summary": "A business may conduct a single risk assessment for a comparable set of processing activities with similar risks, and may use a risk assessment prepared for another purpose or under another law if it contains, or is supplemented with, the information required by § 7152.",
+   "conditional_on": "Comparable processing activities presenting similar risks",
+   "evidence": {
+    "provision": "§ 7156(a)",
+    "quote": "A business may conduct a single risk assessment for a comparable set of processing activities."
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "For risk assessments conducted in 2026 and 2027, the business must submit to the Agency the information in subsection (b) no later than April 1, 2028. The submission covers the number of assessments, processing categories, and an attestation, and must be signed by a responsible executive management member through the Agency's website.",
+   "applies_from": "Risk assessments conducted in 2026 and 2027; submission no later than April 1, 2028",
+   "conditional_on": "Business conducting risk assessments under Article 10",
+   "evidence": {
+    "provision": "§ 7157(a)(1)",
+    "quote": "the business must submit to the Agency the information required by subsection (b) no later than April 1, 2028"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "For risk assessments conducted after 2027, the business must submit the information in subsection (b) no later than April 1 following each year in which it conducted risk assessments (for example, April 1, 2029 for 2028 assessments).",
+   "applies_from": "Risk assessments conducted after 2027; submission no later than April 1 of the following year",
+   "conditional_on": "Business conducting risk assessments under Article 10",
+   "evidence": {
+    "provision": "§ 7157(a)(2)",
+    "quote": "the business must submit to the Agency the information required by subsection (b) no later than April 1"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "On request of the Agency or the Attorney General, the business must submit its risk assessment reports within 30 calendar days of the request.",
+   "conditional_on": "Request by the Agency or the Attorney General",
+   "evidence": {
+    "provision": "§ 7157(e)",
+    "quote": "A business must submit its risk assessment reports within 30 calendar days of the Agency’s or the Attorney General’s request."
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "ai_deployer",
+   "modality": "shall",
+   "summary": "A business that uses ADMT for a significant decision concerning a consumer must comply with the requirements of Article 11.",
+   "conditional_on": "Use of ADMT to make a significant decision concerning a consumer",
+   "evidence": {
+    "provision": "§ 7200(a)",
+    "quote": "A business that uses ADMT to make a significant decision concerning a consumer must comply with the requirements of this Article."
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "ai_deployer",
+   "modality": "shall",
+   "summary": "A business that used ADMT for a significant decision before January 1, 2027 must comply with Article 11 no later than January 1, 2027.",
+   "applies_from": "no later than January 1, 2027",
+   "conditional_on": "ADMT used for a significant decision before January 1, 2027",
+   "evidence": {
+    "provision": "§ 7200(b)",
+    "quote": "must be in compliance with the requirements of this Article no later than January 1, 2027"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "ai_deployer",
+   "modality": "shall",
+   "summary": "A business that uses ADMT on or after January 1, 2027 must comply with Article 11 at any time it is using ADMT for a significant decision.",
+   "applies_from": "from January 1, 2027",
+   "conditional_on": "ADMT used on or after January 1, 2027 for a significant decision",
+   "evidence": {
+    "provision": "§ 7200(b)",
+    "quote": "must be in compliance with the requirements of this Article any time it is using ADMT for a significant decision"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "ai_deployer",
+   "modality": "shall",
+   "summary": "The business must provide consumers a Pre-use Notice, presented prominently at or before collection (or before new ADMT processing), describing the specific purpose, opt-out and appeal rights, access rights, non-retaliation, and how the ADMT works and how decisions are made, with limited exclusions for trade secrets and security information.",
+   "conditional_on": "Use of ADMT to make a significant decision concerning a consumer",
+   "evidence": {
+    "provision": "§ 7220(a)",
+    "quote": "must provide consumers with a Pre-use Notice"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "ai_deployer",
+   "modality": "shall",
+   "summary": "The business must give consumers the ability to opt out of ADMT used for significant decisions (subject to the human appeal and other exceptions in subsection (b)). It must offer two or more designated methods (including an online form linked from the Pre-use Notice), make opt-out easy, not require an account or verifiable request, confirm processing of the request, and allow authorized agents. A business may deny a request it documents as fraudulent, and may offer a choice of specific uses if it also offers an all-uses opt-out.",
+   "conditional_on": "Use of ADMT to make a significant decision, and no applicable exception under § 7221(b)",
+   "evidence": {
+    "provision": "§ 7221(a)",
+    "quote": "A business must provide consumers with the ability to opt-out of the use of ADMT to make a significant decision concerning the consumer"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "ai_deployer",
+   "modality": "shall_not",
+   "summary": "The business must not retaliate against a consumer for exercising the opt-out right. It must not ask for re-consent to ADMT use within 12 months of an opt-out request (except as the regulations allow), and must not start processing with ADMT when a consumer has opted out before processing begins.",
+   "conditional_on": "Consumer has exercised the opt-out right under § 7221",
+   "evidence": {
+    "provision": "§ 7221(l)",
+    "quote": "A business must not retaliate against a consumer because the consumer exercised their opt-out right"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "ai_deployer",
+   "also_addressees": [
+    "data_processor"
+   ],
+   "modality": "shall",
+   "summary": "If a consumer opts out after processing has started (having not opted out in response to the Pre-use Notice), the business must stop processing the consumer's personal information using that ADMT as soon as feasibly possible and no later than 15 business days after the request. It must also notify its service providers, contractors and other recipients to comply within the same period.",
+   "applies_from": "no later than 15 business days from the date the business receives the request",
+   "conditional_on": "Opt-out request submitted after processing with the ADMT has been initiated",
+   "evidence": {
+    "provision": "§ 7221(n)",
+    "quote": "Ceasing to process the consumer’s personal information using that ADMT"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "ai_deployer",
+   "modality": "shall",
+   "summary": "When responding to an access request, the business must provide information about its ADMT use for the consumer, including the specific purpose, the logic of the ADMT, the outcome and how the output was used, and instructions for exercising other CCPA rights. It must verify requesters, inform requesters when it cannot verify or when it denies the request in whole or part, and may give an aggregate response for consumers subject to ADMT more than four times in 12 months.",
+   "conditional_on": "Use of ADMT to make a significant decision concerning the consumer",
+   "evidence": {
+    "provision": "§ 7222(a)",
+    "quote": "must provide a consumer with information about this use when responding to a consumer’s request to access ADMT"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "data_processor",
+   "modality": "shall",
+   "summary": "A service provider or contractor must assist the business in responding to a verifiable request to access ADMT, including by providing or enabling access to the consumer's personal information it holds under its written contract.",
+   "conditional_on": "Verifiable consumer request to access ADMT",
+   "evidence": {
+    "provision": "§ 7222(i)",
+    "quote": "A service provider or contractor must provide assistance to the business in responding to a verifiable consumer request to access ADMT"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "ai_deployer",
+   "modality": "shall_not",
+   "summary": "The business must not retaliate against a consumer for exercising the right to access ADMT, and must not use dark patterns in methods for submitting access requests.",
+   "conditional_on": "Consumer has exercised the right to access ADMT",
+   "evidence": {
+    "provision": "§ 7222(k)",
+    "quote": "A business must not retaliate against a consumer because the consumer exercised their right to access ADMT"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "ai_deployer",
+   "modality": "shall",
+   "summary": "The business must use reasonable security measures when transmitting the requested ADMT access information to the consumer.",
+   "conditional_on": "Transmission of information in response to an access request",
+   "evidence": {
+    "provision": "§ 7222(g)",
+    "quote": "A business must use reasonable security measures when transmitting the requested information to the consumer."
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "insurer",
+   "modality": "shall",
+   "summary": "Insurance companies that are a CCPA 'business' must comply with the CCPA for personal information not subject to the Insurance Code, such as website browsing data and employee data.",
+   "conditional_on": "Insurance company that meets the CCPA definition of business, with respect to personal information not subject to the Insurance Code",
+   "evidence": {
+    "provision": "§ 7271(a)",
+    "quote": "shall comply with the CCPA with regard to any personal information not subject to the Insurance Code"
+   }
+  },
+  {
+   "type": "complaint_mechanism",
+   "addressee": "general_public",
+   "modality": "shall",
+   "summary": "A sworn complaint filed with the Agency must identify the business or person alleged to have violated the CCPA, state supporting facts and evidence, authorize communication with the alleged violator, include the complainant's contact details, and be signed under penalty of perjury.",
+   "conditional_on": "Complaint filed with the Agency",
+   "evidence": {
+    "provision": "§ 7300(a)",
+    "quote": "A complaint must:"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Enforcement Division must notify the complainant in writing of the action, if any, the Agency has taken or plans to take, with reasons.",
+   "conditional_on": "Sworn complaint filed with the Agency",
+   "evidence": {
+    "provision": "§ 7300(b)",
+    "quote": "The Enforcement Division will notify the complainant in writing of the action"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Agency must give the alleged violator notice of the probable cause proceeding, conduct the proceeding informally (closed to the public unless the alleged violator requests otherwise), determine probable cause on the record, and issue a written decision that is final and not subject to appeal.",
+   "conditional_on": "Probable cause proceeding under Civil Code section 1798.199.50",
+   "evidence": {
+    "provision": "§ 7302(d)",
+    "quote": "The Agency shall issue a written decision with its probable cause determination"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "government_agency",
+   "modality": "shall_not",
+   "summary": "Notices of probable cause and probable cause determinations must not be open to the public or admissible in evidence in any action other than one enforcing the CCPA.",
+   "conditional_on": "Probable cause notices and determinations",
+   "evidence": {
+    "provision": "§ 7302(e)",
+    "quote": "Notices of probable cause and probable cause determinations shall not be open to the public nor admissible in evidence"
+   }
+  }
+ ],
+ "section_status": {
+  "enforcement": {
+   "status": "not_found",
+   "note": "Part 2 contains Article 13 (§§7300-7302) on sworn complaints and probable cause proceedings, which are procedural. It states no fine, penalty maximum, criminal penalty, licence revocation, clawback, suspension or blocking. Penalty provisions are referenced only as Civil Code §§1798.199.45 and 1798.199.50, which are not in this text. Other articles in part 2 contain no sanctions."
+  }
+ },
+ "enforcement": []
+}

@@ -1,0 +1,2277 @@
+{
+ "schema_version": "1.2",
+ "instrument_id": "us-bis-ai-diffusion-2025",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-opus-5-5 (Claude Code)",
+  "method": "gold set (Opus, Claude Code)",
+  "date": "2026-10-13",
+  "prompt_version": "gold (hand annotation by Claude Opus in Claude Code; no prompt version)"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "Federal Register (govinfo), FR Doc. 2025-00636, 90 FR 4544, PDF text extracted with pdftotext (cached at cache/texts/us-bis-ai-diffusion-2025.txt)",
+  "url": "https://www.govinfo.gov/content/pkg/FR-2025-01-15/pdf/2025-00636.pdf",
+  "retrieved": "2026-10-11",
+  "version": "original interim final rule as published in the Federal Register (2025-01-15), effective 2025-01-13; no consolidated (eCFR) version used",
+  "language": "en",
+  "extent": "full",
+  "note": "The cached text is the whole FR document (90 FR 4544-4584): preamble (Summary, DATES, Supplementary Information I-IV, rulemaking requirements) followed by the regulatory text amending 15 CFR parts 732 (Supp. No. 3 red flag 28), 734 (§ 734.9(h), (l)), 740 (§§ 740.2, 740.8, new §§ 740.27-740.29, new Supp. No. 5), 742 (§ 742.6), 744 (§ 744.23(a)(3)(i)), 748 (§§ 748.3(f), 748.15, Supps. Nos. 2, 8, new Supp. No. 10), 750 (§ 750.7(g)), 762 (§ 762.2(b)(58)-(60)), 772 (§ 772.1 'Model Weights') and 774 (Supp. No. 1: revised ECCNs 3A001, 3A090, 3D001, 3E001, 4A003, 4A004, 4A005, 4A090, 4D001, 4D090, 4E001, 5A002, 5A992, 5A004, 5D002, 5D992, 5E002, 5E992; new 4E091). All amended provisions are annotated. Revised ECCN entries are restated in full; only the AI-diffusion-relevant parts (3A090 parameters and technical notes, .z paragraphs, license-exception lines, 4E091) are coded, while unchanged legacy parameters (e.g., APP limits in 4A003/4E001, 5A002 cryptography notes) are not. The preamble is non-operative context: it supports the summary, classification, DATES events and background cross-references only. Extraction artifacts: two-column layout sometimes interleaves lines (e.g., the § 750.7 and part 772 amendatory instructions, the 3A001 header), line-break hyphens are dropped (e.g., 'incountry', 'dualuse'), and superscript exponents are flattened ('1026' = 10^26, '1025' = 10^25, 'Tera (1012)' = 10^12). Quotes reproduce the extracted text; numeric values are coded correctly (e.g., value 1e26). The rule's later rescission is not stated in this text and is not recorded here (see notes)."
+ },
+ "summary": {
+  "short": "BIS interim final rule, effective 13 January 2025 (compliance from 15 May 2025), amending the Export Administration Regulations to require licences worldwide for advanced computing chips and for weights of closed AI models trained on 10^26 or more operations, with country compute allocations, new license exceptions and data-center VEU authorizations.",
+  "long": "The rule extends licensing of advanced computing chips (ECCN 3A090.a, 4A090.a and corresponding .z items) to all destinations and creates ECCN 4E091 for the parameters (weights) of AI models trained with 10^26 or more operations, excluding published weights and models less capable than the most advanced published model; foreign-direct-product rules reach foreign-produced items. License review is tiered by destination and headquarters: presumption of approval for 18 listed destinations plus the United States (Supplement No. 5 to part 740), presumption of denial for Country Group D:5 and Macau, and for all other destinations approval up to a per-country allocation of 790,000,000 TPP for 2025-2027 (raisable up to 100% with government assurances). New license exceptions: AIA (listed destinations, including model weights stored in secure facilities), ACM (development and production by private end users) and LPP (up to 26,900,000 TPP per consignee per year). Universal and National Data Center VEU authorizations carry compute caps (quarterly NVEU allocations; UVEU limits of 25%, 7% and 50% of compute outside listed countries) and conditions on ownership, supply chains, training location, model-weight storage, NIST 800-53/FedRAMP High security, personnel vetting and semi-annual reporting. Breaches may lead to revocation of VEU status and denial of licences."
+ },
+ "classification": {
+  "domains": [
+   "chips_export_controls",
+   "ai_general",
+   "compute_data_centers",
+   "cybersecurity"
+  ],
+  "primary_domain": "chips_export_controls",
+  "mechanisms": [
+   "export_import_control",
+   "licensing_permit_certification",
+   "designation_tiering",
+   "prohibition_ban",
+   "registration_notification",
+   "mandate_obligation"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "exporter",
+   "ai_developer",
+   "data_center_owner",
+   "data_center_operator",
+   "cloud_service_provider",
+   "chip_designer_manufacturer",
+   "government_agency"
+  ],
+  "affected_roles": [
+   "ai_provider",
+   "hardware_supplier"
+  ],
+  "decision_margins": [
+   "firm:trade",
+   "firm:investment_location",
+   "firm:input_use",
+   "firm:entry_market_access",
+   "firm:compliance_process"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national",
+    "extraterritorial"
+   ],
+   "description": "Applies to exports, reexports and in-country transfers of U.S.-origin and, through foreign direct product rules, foreign-produced advanced computing items and AI model weights to or within any destination worldwide, with treatment depending on the destination and on where the recipient or its ultimate parent is headquartered.",
+   "evidence": {
+    "provision": "§ 734.9(l)(2)",
+    "quote": "A foreignproduced 4E091 item meets the destination scope of this paragraph (l)(2) if the foreign-produced item is destined to any location worldwide."
+   }
+  },
+  "agora_applications": [],
+  "agora_harms": [
+   "Violation of civil or human rights, including privacy"
+  ],
+  "agora_incentives": [
+   "Access to business opportunities"
+  ],
+  "agora_risk_factors": [
+   "Security",
+   "Security: Cybersecurity",
+   "Security: Dissemination"
+  ],
+  "agora_strategies": [
+   "Input controls",
+   "Input controls: Compute circulation",
+   "Input controls: Compute use",
+   "Licensing, registration, and certification",
+   "Tiering",
+   "Tiering: Tiering based on inputs",
+   "Performance requirements"
+  ]
+ },
+ "events": [
+  {
+   "event": "published",
+   "date": "2025-01-15",
+   "date_type": "absolute",
+   "date_text": "Wednesday, January 15, 2025",
+   "applies_to": "Interim final rule published at 90 FR 4544 (FR Doc. 2025-00636, filed 2025-01-13)",
+   "evidence": {
+    "provision": "Federal Register page header",
+    "quote": "Federal Register / Vol. 90, No. 9 / Wednesday, January 15, 2025 / Rules and Regulations"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2025-01-13",
+   "date_type": "absolute",
+   "date_text": "This rule is effective January 13. 2025.",
+   "applies_to": "Whole rule (all amendments to 15 CFR parts 732-774), including the new ECCN 4E091 control on model weights",
+   "evidence": {
+    "provision": "Preamble, DATES",
+    "quote": "Effective date: This rule is effective January 13. 2025."
+   }
+  },
+  {
+   "event": "application",
+   "date": "2025-05-15",
+   "date_type": "absolute",
+   "date_text": "not required to comply with the changes made in this rule until May 15, 2025",
+   "applies_to": "Compliance date: exporters, reexporters and transferors must comply with all changes made by the rule, except paragraphs 14, 15 and 18 of Supplement No. 10 to part 748",
+   "evidence": {
+    "provision": "Preamble, DATES",
+    "quote": "exporters, reexporters, and transferors are not required to comply with the changes made in this rule until May 15, 2025"
+   }
+  },
+  {
+   "event": "application",
+   "date": "2026-01-15",
+   "date_type": "absolute",
+   "date_text": "a delayed compliance date of January 15, 2026",
+   "applies_to": "Delayed compliance date for the security requirements in paragraphs 14 (baseline security), 15 (AI-specific cybersecurity) and 18 (personnel security) of Supplement No. 10 to part 748",
+   "evidence": {
+    "provision": "Preamble, DATES",
+    "quote": "except that paragraphs 14, 15, and 18 of supplement no. 10 to part 748 have a delayed compliance date of January 15, 2026"
+   }
+  },
+  {
+   "event": "consultation",
+   "date": "2025-05-15",
+   "date_type": "absolute",
+   "date_text": "must be received by BIS no later than May 15, 2025",
+   "applies_to": "Closing date of the public comment period on the interim final rule (regulations.gov ID BIS-2025-0001)",
+   "evidence": {
+    "provision": "Preamble, DATES",
+    "quote": "Comments on revisions and additions in this rule are strongly encouraged and must be received by BIS no later than May 15, 2025."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2025-06-16",
+   "date_type": "absolute",
+   "date_text": "completed no later than on June 16, 2025",
+   "applies_to": "Saving clause: shipments losing license-exception or NLR eligibility that were en route on 2025-05-15 may proceed under prior eligibility if completed by this date",
+   "evidence": {
+    "provision": "Preamble, DATES (Saving clause)",
+    "quote": "provided the export, reexport, or transfer (in-country) is completed no later than on June 16, 2025"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2026-01-15",
+   "date_type": "absolute",
+   "date_text": "on or before January 15, 2026",
+   "applies_to": "UVEU and NVEU applicants (owners of advanced compute) must certify that they will follow paragraphs 14, 15 and 18 of Supplement No. 10 to part 748 on or before this date",
+   "evidence": {
+    "provision": "§ 748.15(a)(2)(ii)(A), (a)(2)(iii)(A)",
+    "quote": "The owner of the advanced compute must certify that it will follow the guidelines in paragraphs 14, 15, and 18 of Supplement No. 10 to this part on or before January 15, 2026."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2026-01-15",
+   "date_type": "absolute",
+   "date_text": "by January 15, 2026",
+   "applies_to": "Facilities to which a VEU stores or transfers ECCN 4E091 model weights outside listed countries must comply with paragraphs 14, 15 and 18 of Supplement No. 10",
+   "evidence": {
+    "provision": "Supp. No. 10 to part 748, para. 8",
+    "quote": "provided the facility complies with the provisions of paragraphs 14, 15, and 18 of Supplement No. 10 to this part by January 15, 2026"
+   }
+  },
+  {
+   "event": "application",
+   "date": "2025",
+   "date_type": "absolute",
+   "date_text": "cumulatively beginning in 2025; for the period from 2025 to 2027",
+   "applies_to": "Per-country TPP allocations (790,000,000 TPP for 2025 to 2027) are counted cumulatively from 2025; items exported, reexported or transferred before 2025 do not count",
+   "evidence": {
+    "provision": "§ 742.6(b)(10)(iii)(B)(1)",
+    "quote": "BIS will calculate progress toward country allocations by totaling the TPP of 3A090.a, 4A090.a, and corresponding .z items licensed to each destination cumulatively beginning in 2025."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "on an annual basis",
+   "applies_to": "BIS, with the Departments of State, Energy and Defense, reviews country allocations for subsequent years",
+   "evidence": {
+    "provision": "§ 742.6(b)(10)(iii)(B)(2)",
+    "quote": "Together with the Departments of State, Energy, and Defense, BIS will review allocations for subsequent years on an annual basis."
+   }
+  },
+  {
+   "event": "application",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "pursuant to government-togovernment assurances",
+   "depends_on": "Government-to-government assurances to the U.S. Government; paragraph (b) of Supplement No. 5 to part 740 lists no destinations in this text",
+   "applies_to": "Higher country allocation (up to +100% TPP) for destinations listed in paragraph (b) of Supplement No. 5 to part 740",
+   "evidence": {
+    "provision": "§ 742.6(b)(10)(iii)(C)",
+    "quote": "TPP allocations may be increased up to 100% for that destination pursuant to government-togovernment assurances, as applicable."
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2025-01",
+   "date_type": "absolute",
+   "date_text": "2025 Q1",
+   "applies_to": "NVEU per-company per-country cumulative installed-base allocation rises to 633,000,000 TPP in 2025 Q1",
+   "evidence": {
+    "provision": "§ 748.15(a)(2)(iii)(B), Table 1",
+    "quote": "2025 Q1 [...] 633,000,000"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2025-04",
+   "date_type": "absolute",
+   "date_text": "2025 Q2",
+   "applies_to": "NVEU per-company per-country cumulative installed-base allocation rises to 949,500,000 TPP in 2025 Q2",
+   "evidence": {
+    "provision": "§ 748.15(a)(2)(iii)(B), Table 1",
+    "quote": "2025 Q2 [...] 949,500,000"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2025-07",
+   "date_type": "absolute",
+   "date_text": "2025 Q3",
+   "applies_to": "NVEU per-company per-country cumulative installed-base allocation rises to 1,266,000,000 TPP in 2025 Q3",
+   "evidence": {
+    "provision": "§ 748.15(a)(2)(iii)(B), Table 1",
+    "quote": "2025 Q3 [...] 1,266,000,000"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2025-10",
+   "date_type": "absolute",
+   "date_text": "2025 Q4",
+   "applies_to": "NVEU per-company per-country cumulative installed-base allocation rises to 1,582,500,000 TPP in 2025 Q4",
+   "evidence": {
+    "provision": "§ 748.15(a)(2)(iii)(B), Table 1",
+    "quote": "2025 Q4 [...] 1,582,500,000"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2026-01",
+   "date_type": "absolute",
+   "date_text": "2026 Q1",
+   "applies_to": "NVEU per-company per-country cumulative installed-base allocation rises to 1,899,000,000 TPP in 2026 Q1",
+   "evidence": {
+    "provision": "§ 748.15(a)(2)(iii)(B), Table 1",
+    "quote": "2026 Q1 [...] 1,899,000,000"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2026-04",
+   "date_type": "absolute",
+   "date_text": "2026 Q2",
+   "applies_to": "NVEU per-company per-country cumulative installed-base allocation rises to 2,690,250,000 TPP in 2026 Q2",
+   "evidence": {
+    "provision": "§ 748.15(a)(2)(iii)(B), Table 1",
+    "quote": "2026 Q2 [...] 2,690,250,000"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2026-07",
+   "date_type": "absolute",
+   "date_text": "2026 Q3",
+   "applies_to": "NVEU per-company per-country cumulative installed-base allocation rises to 3,481,500,000 TPP in 2026 Q3",
+   "evidence": {
+    "provision": "§ 748.15(a)(2)(iii)(B), Table 1",
+    "quote": "2026 Q3 [...] 3,481,500,000"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2026-10",
+   "date_type": "absolute",
+   "date_text": "2026 Q4",
+   "applies_to": "NVEU per-company per-country cumulative installed-base allocation rises to 4,272,750,000 TPP in 2026 Q4",
+   "evidence": {
+    "provision": "§ 748.15(a)(2)(iii)(B), Table 1",
+    "quote": "2026 Q4 [...] 4,272,750,000"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2027-01",
+   "date_type": "absolute",
+   "date_text": "2027 Q1–4",
+   "applies_to": "NVEU per-company per-country cumulative installed-base allocation rises to 5,064,000,000 TPP in 2027 Q1–4",
+   "evidence": {
+    "provision": "§ 748.15(a)(2)(iii)(B), Table 1",
+    "quote": "2027 Q1–4 [...] 5,064,000,000"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "At least twenty-five calendar days prior to exports or reexports",
+   "anchor": "date of the export or reexport under License Exception NAC",
+   "applies_to": "Prior notification under License Exception NAC (SNAP-R application with TPP, performance density, datacenter use, cluster information)",
+   "evidence": {
+    "provision": "§ 740.8(c)(1)",
+    "quote": "At least twenty-five calendar days prior to exports or reexports using License Exception NAC, you must provide prior notification"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "within 30 days of the date on which the export or reexport takes place",
+   "anchor": "date of the export or reexport under License Exception LPP",
+   "applies_to": "Copy of the LPP ultimate-consignee certification to BIS (subject line 'LPP Shipment')",
+   "evidence": {
+    "provision": "§ 740.29(g)(1)",
+    "quote": "with subject line ‘‘LPP Shipment’’ within 30 days of the date on which the export or reexport takes place"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "180 days before any exports, reexports, or transfers (incountry) to the new datacenter",
+   "anchor": "first export, reexport or transfer to the new datacenter",
+   "applies_to": "UVEU notification to BIS (with physical address) before exports, reexports or transfers to a datacenter in a new location",
+   "evidence": {
+    "provision": "§ 748.15(a)(2)(ii)(A)",
+    "quote": "A UVEU will need to file a notification with BIS when building a datacenter in a new location 180 days before any exports, reexports, or transfers (incountry) to the new datacenter."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "within 30 days of receipt",
+   "anchor": "receipt of a complete UVEU application",
+   "applies_to": "BIS adjudication of complete UVEU applications",
+   "evidence": {
+    "provision": "§ 748.15(a)(2)(ii)(A)",
+    "quote": "As appropriate, BIS will adjudicate complete UVEU applications within 30 days of receipt."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "60 days in advance",
+   "anchor": "intended transfer of chips between countries or planned construction/installation",
+   "applies_to": "UVEU notice to BIS of intended inter-country chip transfers and of planned data-center construction or installation in new countries",
+   "evidence": {
+    "provision": "Supp. No. 10 to part 748, para. 5",
+    "quote": "The UVEU must notify the BIS 60 days in advance of its intention to transfer any chips between countries"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "by February 15 of each year",
+   "applies_to": "Annual reports by reexporters using General VEU authorizations, covering 1 January-31 December of the prior year",
+   "evidence": {
+    "provision": "§ 748.15(f)(1)(iii)",
+    "quote": "For reexporters making use of General VEU Authorization, reports are due by February 15 of each year"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "July 15 and January 15 of each year",
+   "applies_to": "Semi-annual reports by reexporters and end users using Data Center VEU authorizations (15 July for January-June; 15 January for July-December of the previous year)",
+   "evidence": {
+    "provision": "§ 748.15(f)(1)(iii)(A)-(B)",
+    "quote": "The first report is due July 15 of each year and must cover the period from January 1 through June 30"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "each February 1 and August 1",
+   "applies_to": "VEU facility-specific chip accounting reports to BIS and other agencies",
+   "evidence": {
+    "provision": "Supp. No. 10 to part 748, para. 10",
+    "quote": "The VEU will report to BIS and other agencies on a semi-annual basis (each February 1 and August 1), a complete facility-specific chip accounting"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "attested annually",
+   "applies_to": "Annual third-party (3PAO) attestation of VEU data-center compliance with NIST 800-53 requirements",
+   "evidence": {
+    "provision": "Supp. No. 10 to part 748, para. 14.b",
+    "quote": "Certification of compliance with the above NIST 800–53 requirements must be attested annually by a Third-Party Assessment Organization (3PAO)"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "within 30 days",
+   "anchor": "the theft, loss or tampering incident",
+   "applies_to": "VEU report to BIS of theft, loss or tampering incidents affecting chips in transit",
+   "evidence": {
+    "provision": "Supp. No. 10 to part 748, para. 16",
+    "quote": "reporting any theft, loss, or tampering incidents to BIS within 30 days"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "for five years",
+   "anchor": "date of the record (not specified)",
+   "applies_to": "Retention period for VEU records relating to the Supplement No. 10 conditions",
+   "evidence": {
+    "provision": "Supp. No. 10 to part 748, para. 11",
+    "quote": "it must maintain for five years all records in conjunction with these conditions"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "every six months or more frequently",
+   "applies_to": "License Exception ACM: facility-level accounting records of controlled items into and out of each facility",
+   "evidence": {
+    "provision": "§ 740.28(e)",
+    "quote": "Such accounting should be done for each facility, with records updated every six months or more frequently."
+   }
+  },
+  {
+   "event": "expiry",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "a one-year validity period",
+   "anchor": "date of licence issuance",
+   "applies_to": "Validity of licences for items listed in § 742.6(a)(6)(iii)(A) (advanced computing items under the worldwide licence requirement): generally one year",
+   "evidence": {
+    "provision": "§ 750.7(g)",
+    "quote": "or listed in § 742.6(a)(6)(iii)(A) of the EAR, which will generally be limited to a one-year validity period during which the items must be exported, re-exported, or transferred (in country)"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "compute_training",
+   "variable_text": "'Parameters' for an artificial intelligence model trained utilizing ... 'operations'",
+   "operator": ">=",
+   "value": 1e+26,
+   "value_text": "1026 or more 'operations' [10^26; exponent flattened in the extracted text]",
+   "unit": "training operations (mathematical operations, e.g., FLOP)",
+   "currency": null,
+   "indexed": false,
+   "measurement": "Operations for pre-training and any subsequent training (e.g., fine-tuning), including forward and backward propagation, excluding collection and curation of training data (Technical Note 2); operations of a data-generation model are added when its unpublished synthetic data account for more than 10% of training operations (Technical Note 3)",
+   "level": "model",
+   "trigger": "scope_definition",
+   "consequence": "The model's weights ('parameters') are controlled under new ECCN 4E091: licence required for export, reexport and in-country transfer to all destinations (§ 742.6(a)(13)); review under a presumption of denial for end users headquartered outside Supplement No. 5(a) destinations (§ 742.6(b)(14))",
+   "conditions": "Weights not 'published' (Note 1); model not below the capability-equivalent exclusion in Note 2",
+   "evidence": {
+    "provision": "Supp. No. 1 to part 774, ECCN 4E091 heading",
+    "quote": "4E091 ‘Parameters’ for an artificial intelligence model trained utilizing 1026 or more ‘operations.’"
+   }
+  },
+  {
+   "variable": "compute_training",
+   "variable_text": "additional training 'operations' used to derive a model from a model whose parameters have been published",
+   "operator": ">",
+   "value": 2.5e+25,
+   "value_text": "more than 2.5 × 1025 'operations' [2.5 x 10^25] ... whichever is higher",
+   "unit": "training operations",
+   "currency": null,
+   "indexed": false,
+   "level": "model",
+   "trigger": "scope_definition",
+   "consequence": "A model derived from a published-weight model falls under 4E091 only if the additional training operations exceed this amount (or 25% of the training operations, whichever is higher)",
+   "conditions": "Jointly with the 25% alternative (the higher of the two applies)",
+   "evidence": {
+    "provision": "Supp. No. 1 to part 774, ECCN 4E091, Note 1",
+    "quote": "except where the model has been derived using additional training ‘operations’ that constitute more than 2.5 × 1025 ‘operations’ or more than 25 percent of the training ‘operations’ defined in Note 2, whichever is higher"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "additional training 'operations' as a share of the training 'operations'",
+   "operator": ">",
+   "value": 25,
+   "value_text": "more than 25 percent of the training 'operations' ... whichever is higher",
+   "unit": "percent of training operations",
+   "currency": null,
+   "indexed": false,
+   "level": "model",
+   "trigger": "scope_definition",
+   "consequence": "Alternative cutoff for derived models: controlled only if additional training exceeds 25% of training operations (or 2.5 x 10^25, whichever is higher)",
+   "evidence": {
+    "provision": "Supp. No. 1 to part 774, ECCN 4E091, Note 1",
+    "quote": "or more than 25 percent of the training ‘operations’ defined in Note 2, whichever is higher"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "share of 'operations' involving training on unpublished data generated by a single data-generation model",
+   "operator": ">",
+   "value": 10,
+   "value_text": "more than ten percent of the 'operations'",
+   "unit": "percent of training operations",
+   "currency": null,
+   "indexed": false,
+   "measurement": "Where several unpublished models generate the data, only the one with the most training operations is counted; no operation is counted twice",
+   "level": "model",
+   "trigger": "scope_definition",
+   "consequence": "The data-generation model's operations (and, if its parameters were not published, its own training operations) are counted toward the 4E091 operations total",
+   "evidence": {
+    "provision": "Supp. No. 1 to part 774, ECCN 4E091, Technical Note 3",
+    "quote": "If more than ten percent of the ‘operations’ involve training on data that was not ‘‘published’’ as defined in § 734.7(a) and was generated by a single data-generation model, then ‘operations’ the data-generation model used to generate the data should be counted"
+   }
+  },
+  {
+   "variable": "compute_training",
+   "variable_text": "fewer 'operations' than the number needed ... to train an artificial intelligence model as capable ... as the most advanced artificial intelligence model that has been 'published'",
+   "operator": "<",
+   "value": null,
+   "value_text": "fewer 'operations' than the number needed, based on the most efficient 'published' methods",
+   "unit": "training operations",
+   "currency": null,
+   "indexed": false,
+   "measurement": "Capability measured by an aggregate of widely used benchmarks; the number of operations should not decrease with algorithmic improvements",
+   "level": "model",
+   "trigger": "exclusion",
+   "consequence": "Parameters of such models are not controlled under 4E091; exporters may self-classify (BIS guidance, U.S. AI Safety Institute or DOE technical opinions) or request a classification (§ 748.3(f))",
+   "depends_on": "Capability of the most advanced published AI model and the operations needed to match it (BIS guidance; U.S. AI Safety Institute and DOE technical opinions)",
+   "evidence": {
+    "provision": "Supp. No. 1 to part 774, ECCN 4E091, Note 2",
+    "quote": "4E091 does not control the ‘parameters’ of any artificial intelligence model trained utilizing fewer ‘operations’ than the number needed, based on the most efficient ‘‘published’’ methods to train artificial intelligence models, to train an artificial intelligence model as capable, according to an aggregate of widely used benchmarks, as the most advanced artificial intelligence model that has been ‘‘published’’"
+   }
+  },
+  {
+   "variable": "chip_performance",
+   "variable_text": "'total processing performance'",
+   "operator": ">=",
+   "value": 4800,
+   "value_text": "4800 or more",
+   "unit": "TPP",
+   "currency": null,
+   "indexed": false,
+   "measurement": "'Total processing performance' = 2 x 'MacTOPS' x bit length of the operation, aggregated over all processing units on the IC, at the theoretical maximum rate claimed by the manufacturer, dense (non-sparse) values (Technical Notes to 3A090)",
+   "level": "product",
+   "trigger": "designation_category",
+   "consequence": "IC is classified in 3A090.a (and computers or other items containing it in 4A090.a or the corresponding .z paragraphs): licence required to or within any destination worldwide (§ 742.6(a)(6)(iii)(A)); counts toward TPP allocations; eligible for AIA, ACM and LPP",
+   "evidence": {
+    "provision": "Supp. No. 1 to part 774, ECCN 3A090.a.1",
+    "quote": "a.1. A ‘total processing performance’ of 4800 or more"
+   }
+  },
+  {
+   "variable": "chip_performance",
+   "variable_text": "'total processing performance'",
+   "operator": ">=",
+   "value": 1600,
+   "value_text": "1600 or more",
+   "unit": "TPP",
+   "currency": null,
+   "indexed": false,
+   "measurement": "'Total processing performance' = 2 x 'MacTOPS' x bit length of the operation, aggregated over all processing units on the IC, at the theoretical maximum rate claimed by the manufacturer, dense (non-sparse) values (Technical Notes to 3A090)",
+   "level": "product",
+   "trigger": "designation_category",
+   "consequence": "IC is classified in 3A090.a (and computers or other items containing it in 4A090.a or the corresponding .z paragraphs): licence required to or within any destination worldwide (§ 742.6(a)(6)(iii)(A)); counts toward TPP allocations; eligible for AIA, ACM and LPP",
+   "conditions": "Jointly with 'performance density' of 5.92 or more",
+   "evidence": {
+    "provision": "Supp. No. 1 to part 774, ECCN 3A090.a.2",
+    "quote": "a.2. A ‘total processing performance’ of 1600 or more and a ‘performance density’ of 5.92 or more."
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "'performance density'",
+   "operator": ">=",
+   "value": 5.92,
+   "value_text": "5.92 or more",
+   "unit": "TPP per mm^2 of applicable die area",
+   "currency": null,
+   "indexed": false,
+   "measurement": "'Performance density' = TPP divided by 'applicable die area' in mm^2 (logic dies made with non-planar transistor process nodes) (Technical Note 4 to 3A090)",
+   "level": "product",
+   "trigger": "designation_category",
+   "consequence": "IC is classified in 3A090.a (and computers or other items containing it in 4A090.a or the corresponding .z paragraphs): licence required to or within any destination worldwide (§ 742.6(a)(6)(iii)(A)); counts toward TPP allocations; eligible for AIA, ACM and LPP",
+   "conditions": "Jointly with TPP of 1600 or more",
+   "evidence": {
+    "provision": "Supp. No. 1 to part 774, ECCN 3A090.a.2",
+    "quote": "a ‘performance density’ of 5.92 or more"
+   }
+  },
+  {
+   "variable": "chip_performance",
+   "variable_text": "'total processing performance'",
+   "operator": "range",
+   "value": 2400,
+   "value_max": 4800,
+   "value_text": "2400 or more and less than 4800",
+   "unit": "TPP",
+   "currency": null,
+   "indexed": false,
+   "measurement": "'Total processing performance' = 2 x 'MacTOPS' x bit length of the operation, aggregated over all processing units on the IC, at the theoretical maximum rate claimed by the manufacturer, dense (non-sparse) values (Technical Notes to 3A090)",
+   "level": "product",
+   "trigger": "designation_category",
+   "consequence": "IC is classified in 3A090.b: licence required to or within Country Groups D:1, D:4, D:5 (excluding A:5/A:6) (§ 742.6(a)(6)(iii)(B)); review under § 742.6(b)(10)(iv)",
+   "conditions": "Upper bound exclusive (less than 4800); jointly with performance density of 1.6 or more and less than 5.92",
+   "evidence": {
+    "provision": "Supp. No. 1 to part 774, ECCN 3A090.b.1",
+    "quote": "b.1. A ‘total processing performance’ of 2400 or more and less than 4800 and a ‘performance density’ of 1.6 or more and less than 5.92"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "'performance density'",
+   "operator": "range",
+   "value": 1.6,
+   "value_max": 5.92,
+   "value_text": "1.6 or more and less than 5.92",
+   "unit": "TPP per mm^2 of applicable die area",
+   "currency": null,
+   "indexed": false,
+   "measurement": "'Performance density' = TPP divided by 'applicable die area' in mm^2 (logic dies made with non-planar transistor process nodes) (Technical Note 4 to 3A090)",
+   "level": "product",
+   "trigger": "designation_category",
+   "consequence": "IC is classified in 3A090.b: licence required to or within Country Groups D:1, D:4, D:5 (excluding A:5/A:6) (§ 742.6(a)(6)(iii)(B)); review under § 742.6(b)(10)(iv)",
+   "conditions": "Upper bound exclusive; jointly with TPP of 2400 or more and less than 4800",
+   "evidence": {
+    "provision": "Supp. No. 1 to part 774, ECCN 3A090.b.1",
+    "quote": "a ‘performance density’ of 1.6 or more and less than 5.92, or"
+   }
+  },
+  {
+   "variable": "chip_performance",
+   "variable_text": "'total processing performance'",
+   "operator": ">=",
+   "value": 1600,
+   "value_text": "1600 or more",
+   "unit": "TPP",
+   "currency": null,
+   "indexed": false,
+   "measurement": "'Total processing performance' = 2 x 'MacTOPS' x bit length of the operation, aggregated over all processing units on the IC, at the theoretical maximum rate claimed by the manufacturer, dense (non-sparse) values (Technical Notes to 3A090)",
+   "level": "product",
+   "trigger": "designation_category",
+   "consequence": "IC is classified in 3A090.b: licence required to or within Country Groups D:1, D:4, D:5 (excluding A:5/A:6) (§ 742.6(a)(6)(iii)(B)); review under § 742.6(b)(10)(iv)",
+   "conditions": "Jointly with performance density of 3.2 or more and less than 5.92",
+   "evidence": {
+    "provision": "Supp. No. 1 to part 774, ECCN 3A090.b.2",
+    "quote": "b.2. A ‘total processing performance’ of 1600 or more and a ‘performance density’ of 3.2 or more and less than 5.92."
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "'performance density'",
+   "operator": "range",
+   "value": 3.2,
+   "value_max": 5.92,
+   "value_text": "3.2 or more and less than 5.92",
+   "unit": "TPP per mm^2 of applicable die area",
+   "currency": null,
+   "indexed": false,
+   "measurement": "'Performance density' = TPP divided by 'applicable die area' in mm^2 (logic dies made with non-planar transistor process nodes) (Technical Note 4 to 3A090)",
+   "level": "product",
+   "trigger": "designation_category",
+   "consequence": "IC is classified in 3A090.b: licence required to or within Country Groups D:1, D:4, D:5 (excluding A:5/A:6) (§ 742.6(a)(6)(iii)(B)); review under § 742.6(b)(10)(iv)",
+   "conditions": "Upper bound exclusive; jointly with TPP of 1600 or more",
+   "evidence": {
+    "provision": "Supp. No. 1 to part 774, ECCN 3A090.b.2",
+    "quote": "a ‘performance density’ of 3.2 or more and less than 5.92."
+   }
+  },
+  {
+   "variable": "chip_performance",
+   "variable_text": "'total processing performance'",
+   "operator": "<",
+   "value": 4800,
+   "value_text": "do not have a 'total processing performance' of 4800 or more",
+   "unit": "TPP",
+   "currency": null,
+   "indexed": false,
+   "level": "product",
+   "trigger": "exclusion",
+   "consequence": "3A090.a and .b do not apply to ICs below 4800 TPP that are not designed or marketed for datacenters; non-datacenter items at or above 4800 TPP are eligible for License Exceptions NAC/ACA",
+   "conditions": "Item not designed or marketed for use in datacenters",
+   "evidence": {
+    "provision": "Supp. No. 1 to part 774, ECCN 3A090, Note 1 to 3A090.a and 3A090.b",
+    "quote": "3A090.a and 3A090.b do not apply to items that are not designed or marketed for use in datacenters and do not have a ‘total processing performance’ of 4800 or more."
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "'memory bandwidth density'",
+   "operator": ">",
+   "value": 2,
+   "value_text": "greater than 2 gigabytes per second per square millimeter",
+   "unit": "GB/s per mm^2 of package or stack area",
+   "currency": null,
+   "indexed": false,
+   "measurement": "Memory bandwidth in GB/s divided by package or stack area in mm^2; co-packaged ICs whose dominant function is processing are excluded (Technical note to 3A090.c)",
+   "level": "product",
+   "trigger": "designation_category",
+   "consequence": "High bandwidth memory is classified in 3A090.c (licence requirements to Macau and Country Group D:5; License Exception HBM; § 744.23(a)(3)(i)(B) end-use control)",
+   "evidence": {
+    "provision": "Supp. No. 1 to part 774, ECCN 3A090.c",
+    "quote": "c. High bandwidth memory having a ‘memory bandwidth density’ greater than 2 gigabytes per second per square millimeter."
+   }
+  },
+  {
+   "variable": "volume",
+   "variable_text": "cumulative total processing performance (TPP) of items received by the ultimate consignee",
+   "operator": ">=",
+   "value": 253000000,
+   "value_text": "a cumulative total processing performance (TPP) of 253,000,000",
+   "unit": "TPP (cumulative)",
+   "currency": null,
+   "indexed": false,
+   "measurement": "Cumulative TPP of § 740.27(a)(1) items received by the ultimate consignee (the entity owning the items); period not stated",
+   "level": "entity",
+   "trigger": "obligation",
+   "consequence": "Exporter must submit the ultimate consignee's AIA certification to BIS (EARReports@bis.doc.gov) before the initial export, reexport or transfer",
+   "conditions": "Operator not stated ('with a cumulative TPP of'); coded as >=",
+   "evidence": {
+    "provision": "§ 740.27(c)",
+    "quote": "This reporting requirement is only applicable if the ultimate consignee is receiving items identified in paragraph (a)(1) with a cumulative total processing performance (TPP) of 253,000,000."
+   }
+  },
+  {
+   "variable": "volume",
+   "variable_text": "cumulative total processing performance (TPP) per calendar year to a single ultimate consignee",
+   "operator": "<=",
+   "value": 26900000,
+   "value_text": "up to 26,900,000 cumulative total processing performance (TPP)",
+   "unit": "TPP per calendar year",
+   "currency": null,
+   "indexed": false,
+   "measurement": "'Cumulative TPP' = sum of TPP of all eligible commodities received by the ultimate parent entity from all exporters in a calendar year, counting 3A090.a/4A090.a items and .z items meeting those parameters (§ 740.29(h))",
+   "level": "group",
+   "trigger": "cap",
+   "consequence": "Ceiling on exports and reexports under License Exception LPP to one ultimate consignee in a calendar year, across all exporters and intermediate consignees; consignee certifies it has not reached it and notifies BIS when it is reached",
+   "conditions": "Consignee headquartered in a Supplement No. 5(a) destination may apply the exports toward the limit of a different operating entity",
+   "evidence": {
+    "provision": "§ 740.29(a), (d)",
+    "quote": "The total TPP volume of all exports and reexports of eligible commodities under this license exception made by all exporters and reexporters to a single ultimate consignee per calendar year may not exceed 26,900,000 TPP"
+   }
+  },
+  {
+   "variable": "volume",
+   "variable_text": "aggregate TPP of a shipment",
+   "operator": ">=",
+   "value": 3200000,
+   "value_text": "an aggregate TPP of 3,200,000",
+   "unit": "TPP per shipment",
+   "currency": null,
+   "indexed": false,
+   "level": "other",
+   "trigger": "obligation",
+   "consequence": "Exporter or reexporter must notify BIS (subject line 'LPP Shipment') before exporting a shipment under License Exception LPP",
+   "conditions": "Operator not stated in the regulatory text ('of 3,200,000'); the preamble says 'more than 3,200,000'; coded as >=",
+   "evidence": {
+    "provision": "§ 740.29(g)(3)",
+    "quote": "must notify BIS by email to EARReports@bis.doc.gov with the subject line ‘‘LPP Shipment’’ of any shipment with an aggregate TPP of 3,200,000."
+   }
+  },
+  {
+   "variable": "volume",
+   "variable_text": "per-country allocation",
+   "operator": "<=",
+   "value": 790000000,
+   "value_text": "a per-country allocation of 790,000,000 TPP for the period from 2025 to 2027",
+   "unit": "TPP (cumulative installed base)",
+   "currency": null,
+   "indexed": false,
+   "measurement": "Cumulative installed base: TPP of 3A090.a, 4A090.a and corresponding .z items licensed to each destination from 2025; pre-2025 items not counted; NVEU allocations do not count toward it",
+   "level": "jurisdiction",
+   "trigger": "cap",
+   "consequence": "Licence applications for 3A090.a/4A090.a/.z items to destinations not listed in Supplement No. 5 (and not D:5 or Macau) are reviewed under a presumption of approval up to the allocation and under a policy of denial once it is met",
+   "evidence": {
+    "provision": "§ 742.6(b)(10)(iii)(B)(1)-(2)",
+    "quote": "will be reviewed under a presumption of approval, up to a per-country allocation of 790,000,000 TPP for the period from 2025 to 2027"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "increase of TPP allocations",
+   "operator": "<=",
+   "value": 100,
+   "value_text": "up to 100%",
+   "unit": "percent increase over the country allocation",
+   "currency": null,
+   "indexed": false,
+   "level": "jurisdiction",
+   "trigger": "cap",
+   "consequence": "Allocation for destinations listed in paragraph (b) of Supplement No. 5 to part 740 may be raised by up to 100% pursuant to government-to-government assurances",
+   "conditions": "Destination listed in Supplement No. 5(b) (no destinations listed in this text)",
+   "evidence": {
+    "provision": "§ 742.6(b)(10)(iii)(C)",
+    "quote": "TPP allocations may be increased up to 100% for that destination pursuant to government-togovernment assurances, as applicable."
+   }
+  },
+  {
+   "variable": "volume",
+   "variable_text": "Cumulative per-company per-country allocation in TPP",
+   "operator": "<=",
+   "value": 633000000.0,
+   "value_text": "633,000,000 (2025 Q1)",
+   "unit": "TPP (cumulative installed base)",
+   "currency": null,
+   "indexed": false,
+   "measurement": "Collective TPP of items in 3A090.a, 4A090.a or corresponding .z paragraphs installed per NVEU per country; cumulative, not additive to prior quarters; attrition (loss, damage, failure, relocation, resale) not counted; does not count toward country allocations",
+   "level": "entity",
+   "trigger": "cap",
+   "consequence": "Ceiling on an NVEU's installed base of advanced computing ICs in one country during 2025 Q1",
+   "evidence": {
+    "provision": "§ 748.15(a)(2)(iii)(B), Table 1",
+    "quote": "2025 Q1 [...] 633,000,000"
+   }
+  },
+  {
+   "variable": "volume",
+   "variable_text": "Cumulative per-company per-country allocation in TPP",
+   "operator": "<=",
+   "value": 949500000.0,
+   "value_text": "949,500,000 (2025 Q2)",
+   "unit": "TPP (cumulative installed base)",
+   "currency": null,
+   "indexed": false,
+   "measurement": "Collective TPP of items in 3A090.a, 4A090.a or corresponding .z paragraphs installed per NVEU per country; cumulative, not additive to prior quarters; attrition (loss, damage, failure, relocation, resale) not counted; does not count toward country allocations",
+   "level": "entity",
+   "trigger": "cap",
+   "consequence": "Ceiling on an NVEU's installed base of advanced computing ICs in one country during 2025 Q2",
+   "evidence": {
+    "provision": "§ 748.15(a)(2)(iii)(B), Table 1",
+    "quote": "2025 Q2 [...] 949,500,000"
+   }
+  },
+  {
+   "variable": "volume",
+   "variable_text": "Cumulative per-company per-country allocation in TPP",
+   "operator": "<=",
+   "value": 1266000000.0,
+   "value_text": "1,266,000,000 (2025 Q3)",
+   "unit": "TPP (cumulative installed base)",
+   "currency": null,
+   "indexed": false,
+   "measurement": "Collective TPP of items in 3A090.a, 4A090.a or corresponding .z paragraphs installed per NVEU per country; cumulative, not additive to prior quarters; attrition (loss, damage, failure, relocation, resale) not counted; does not count toward country allocations",
+   "level": "entity",
+   "trigger": "cap",
+   "consequence": "Ceiling on an NVEU's installed base of advanced computing ICs in one country during 2025 Q3",
+   "evidence": {
+    "provision": "§ 748.15(a)(2)(iii)(B), Table 1",
+    "quote": "2025 Q3 [...] 1,266,000,000"
+   }
+  },
+  {
+   "variable": "volume",
+   "variable_text": "Cumulative per-company per-country allocation in TPP",
+   "operator": "<=",
+   "value": 1582500000.0,
+   "value_text": "1,582,500,000 (2025 Q4)",
+   "unit": "TPP (cumulative installed base)",
+   "currency": null,
+   "indexed": false,
+   "measurement": "Collective TPP of items in 3A090.a, 4A090.a or corresponding .z paragraphs installed per NVEU per country; cumulative, not additive to prior quarters; attrition (loss, damage, failure, relocation, resale) not counted; does not count toward country allocations",
+   "level": "entity",
+   "trigger": "cap",
+   "consequence": "Ceiling on an NVEU's installed base of advanced computing ICs in one country during 2025 Q4",
+   "evidence": {
+    "provision": "§ 748.15(a)(2)(iii)(B), Table 1",
+    "quote": "2025 Q4 [...] 1,582,500,000"
+   }
+  },
+  {
+   "variable": "volume",
+   "variable_text": "Cumulative per-company per-country allocation in TPP",
+   "operator": "<=",
+   "value": 1899000000.0,
+   "value_text": "1,899,000,000 (2026 Q1)",
+   "unit": "TPP (cumulative installed base)",
+   "currency": null,
+   "indexed": false,
+   "measurement": "Collective TPP of items in 3A090.a, 4A090.a or corresponding .z paragraphs installed per NVEU per country; cumulative, not additive to prior quarters; attrition (loss, damage, failure, relocation, resale) not counted; does not count toward country allocations",
+   "level": "entity",
+   "trigger": "cap",
+   "consequence": "Ceiling on an NVEU's installed base of advanced computing ICs in one country during 2026 Q1",
+   "evidence": {
+    "provision": "§ 748.15(a)(2)(iii)(B), Table 1",
+    "quote": "2026 Q1 [...] 1,899,000,000"
+   }
+  },
+  {
+   "variable": "volume",
+   "variable_text": "Cumulative per-company per-country allocation in TPP",
+   "operator": "<=",
+   "value": 2690250000.0,
+   "value_text": "2,690,250,000 (2026 Q2)",
+   "unit": "TPP (cumulative installed base)",
+   "currency": null,
+   "indexed": false,
+   "measurement": "Collective TPP of items in 3A090.a, 4A090.a or corresponding .z paragraphs installed per NVEU per country; cumulative, not additive to prior quarters; attrition (loss, damage, failure, relocation, resale) not counted; does not count toward country allocations",
+   "level": "entity",
+   "trigger": "cap",
+   "consequence": "Ceiling on an NVEU's installed base of advanced computing ICs in one country during 2026 Q2",
+   "evidence": {
+    "provision": "§ 748.15(a)(2)(iii)(B), Table 1",
+    "quote": "2026 Q2 [...] 2,690,250,000"
+   }
+  },
+  {
+   "variable": "volume",
+   "variable_text": "Cumulative per-company per-country allocation in TPP",
+   "operator": "<=",
+   "value": 3481500000.0,
+   "value_text": "3,481,500,000 (2026 Q3)",
+   "unit": "TPP (cumulative installed base)",
+   "currency": null,
+   "indexed": false,
+   "measurement": "Collective TPP of items in 3A090.a, 4A090.a or corresponding .z paragraphs installed per NVEU per country; cumulative, not additive to prior quarters; attrition (loss, damage, failure, relocation, resale) not counted; does not count toward country allocations",
+   "level": "entity",
+   "trigger": "cap",
+   "consequence": "Ceiling on an NVEU's installed base of advanced computing ICs in one country during 2026 Q3",
+   "evidence": {
+    "provision": "§ 748.15(a)(2)(iii)(B), Table 1",
+    "quote": "2026 Q3 [...] 3,481,500,000"
+   }
+  },
+  {
+   "variable": "volume",
+   "variable_text": "Cumulative per-company per-country allocation in TPP",
+   "operator": "<=",
+   "value": 4272750000.0,
+   "value_text": "4,272,750,000 (2026 Q4)",
+   "unit": "TPP (cumulative installed base)",
+   "currency": null,
+   "indexed": false,
+   "measurement": "Collective TPP of items in 3A090.a, 4A090.a or corresponding .z paragraphs installed per NVEU per country; cumulative, not additive to prior quarters; attrition (loss, damage, failure, relocation, resale) not counted; does not count toward country allocations",
+   "level": "entity",
+   "trigger": "cap",
+   "consequence": "Ceiling on an NVEU's installed base of advanced computing ICs in one country during 2026 Q4",
+   "evidence": {
+    "provision": "§ 748.15(a)(2)(iii)(B), Table 1",
+    "quote": "2026 Q4 [...] 4,272,750,000"
+   }
+  },
+  {
+   "variable": "volume",
+   "variable_text": "Cumulative per-company per-country allocation in TPP",
+   "operator": "<=",
+   "value": 5064000000.0,
+   "value_text": "5,064,000,000 (2027 Q1–4)",
+   "unit": "TPP (cumulative installed base)",
+   "currency": null,
+   "indexed": false,
+   "measurement": "Collective TPP of items in 3A090.a, 4A090.a or corresponding .z paragraphs installed per NVEU per country; cumulative, not additive to prior quarters; attrition (loss, damage, failure, relocation, resale) not counted; does not count toward country allocations",
+   "level": "entity",
+   "trigger": "cap",
+   "consequence": "Ceiling on an NVEU's installed base of advanced computing ICs in one country during 2027 Q1–4",
+   "evidence": {
+    "provision": "§ 748.15(a)(2)(iii)(B), Table 1",
+    "quote": "2027 Q1–4 [...] 5,064,000,000"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "share of total AI computing power transferred or installed outside Supplement No. 5(a) countries",
+   "operator": "<=",
+   "value": 25,
+   "value_text": "not ... more than 25% of its total AI computing power",
+   "unit": "percent of aggregate TPP",
+   "currency": null,
+   "indexed": false,
+   "measurement": "Aggregate TPP of chips meeting or exceeding 3A090.a owned by the entity and all its subsidiary and parent entities",
+   "level": "group",
+   "trigger": "cap",
+   "consequence": "UVEUs headquartered in Supplement No. 5(a) countries may not transfer or install more than 25% of their AI compute outside those countries",
+   "evidence": {
+    "provision": "Supp. No. 10 to part 748, para. 6",
+    "quote": "The UVEU cannot transfer or install more than 25% of its total AI computing power"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "share of total AI computing power in any single country outside Supplement No. 5(a) countries",
+   "operator": "<=",
+   "value": 7,
+   "value_text": "not ... more than 7% of its total AI computing power to or in any single country",
+   "unit": "percent of aggregate TPP",
+   "currency": null,
+   "indexed": false,
+   "measurement": "As for the 25% limit",
+   "level": "group",
+   "trigger": "cap",
+   "consequence": "UVEUs headquartered in Supplement No. 5(a) countries may not place more than 7% of their AI compute in any single non-listed country",
+   "evidence": {
+    "provision": "Supp. No. 10 to part 748, para. 6",
+    "quote": "cannot transfer or install more than 7% of its total AI computing power to or in any single country outside of those listed"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "share of total AI computing power outside the United States",
+   "operator": "<=",
+   "value": 50,
+   "value_text": "not ... more than 50% of its total AI computing power outside of the United States",
+   "unit": "percent of aggregate TPP",
+   "currency": null,
+   "indexed": false,
+   "measurement": "Measured on the semi-annual reporting dates in para. 10 (1 February and 1 August)",
+   "level": "group",
+   "trigger": "cap",
+   "consequence": "U.S.-headquartered UVEUs may not transfer or install more than 50% of their AI compute outside the United States",
+   "evidence": {
+    "provision": "Supp. No. 10 to part 748, para. 6",
+    "quote": "Only for U.S.-headquartered entities with UVEU status: The UVEU cannot transfer or install more than 50% of its total AI computing power outside of the United States"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "fine-tuning as a share of the training operations of the original 4E091 model",
+   "operator": "<=",
+   "value": 25,
+   "value_text": "no more than 25 percent of the training operations",
+   "unit": "percent of training operations",
+   "currency": null,
+   "indexed": false,
+   "level": "model",
+   "trigger": "exemption",
+   "consequence": "VEU may fine-tune a 4E091 model (outside listed countries or for non-listed customers) without BIS authorization",
+   "evidence": {
+    "provision": "Supp. No. 10 to part 748, para. 7",
+    "quote": "Fine-tuning an AI model specified in ECCN 4E091 is permitted if such fine-tuning constitutes no more than 25 percent of the training operations of the original AI model specified in ECCN 4E091."
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "equity interest in the VEU held by D:5/Macau-headquartered or listed parties",
+   "operator": "<",
+   "value": 1,
+   "value_text": "under 1 percent ... whichever is lower",
+   "unit": "percent of equity",
+   "currency": null,
+   "indexed": false,
+   "measurement": "Individually or aggregated across affiliated or concerted entities, or across government-controlled bodies of Macau or a D:5 destination",
+   "level": "entity",
+   "trigger": "exemption",
+   "consequence": "Investments below the lower of 1% or $1 million need not be reported to BIS",
+   "conditions": "VEU whose equity securities are primarily traded on an exchange in a Supplement No. 5(a) country; jointly with the $1 million alternative (lower applies)",
+   "evidence": {
+    "provision": "Supp. No. 10 to part 748, para. 3",
+    "quote": "with the exception of investments under 1 percent or $1 million, whichever is lower"
+   }
+  },
+  {
+   "variable": "transaction_value",
+   "variable_text": "investment in the VEU by D:5/Macau-headquartered or listed parties",
+   "operator": "<",
+   "value": 1000000,
+   "value_text": "under ... $1 million, whichever is lower",
+   "unit": "USD",
+   "currency": "USD",
+   "indexed": false,
+   "level": "entity",
+   "trigger": "exemption",
+   "consequence": "Investments below the lower of 1% or $1 million need not be reported to BIS",
+   "conditions": "As for the 1 percent alternative",
+   "evidence": {
+    "provision": "Supp. No. 10 to part 748, para. 3",
+    "quote": "with the exception of investments under 1 percent or $1 million, whichever is lower"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "time in which model weights may be extracted at the interface's established output rate",
+   "operator": "<=",
+   "value": 6,
+   "value_text": "in six months or less",
+   "unit": "months",
+   "currency": null,
+   "indexed": false,
+   "level": "service",
+   "trigger": "obligation",
+   "consequence": "The interface may give access only through a narrow, well-defined API (e.g., inference or fine-tuning), reviewed and secured against model extraction attacks",
+   "evidence": {
+    "provision": "Supp. No. 10 to part 748, para. 15.c.iii",
+    "quote": "Every interface, for which the established output rate is such that the model weights may be extracted in six months or less, must provide access only through a narrow, well-defined API"
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "licensing_certification",
+   "addressee": "exporter",
+   "also_addressees": [
+    "chip_designer_manufacturer"
+   ],
+   "modality": "shall",
+   "summary": "Licence required to export, reexport or transfer (in-country) advanced computing items (3A090.a, 4A090.a, the .a/.1 .z paragraphs of 3A001, 4A003, 4A004, 4A005, 5A002, 5A004, 5A992, 5D002, 5D992 and related 3D001, 3E001, 4D001, 4D090, 4E001, 5E002, 5E992 software and technology) to or within any destination worldwide.",
+   "applies_from": "2025-05-15 (compliance date; rule effective 2025-01-13)",
+   "evidence": {
+    "provision": "§ 742.6(a)(6)(iii)(A)",
+    "quote": "Worldwide license requirement. A license is required to export, reexport, or transfer (in-country) items specified in ECCNs 3A001.z.1.a, z.2.a, z.3.a, z.4.a; 3A090.a"
+   }
+  },
+  {
+   "type": "licensing_certification",
+   "addressee": "exporter",
+   "modality": "shall",
+   "summary": "Licence required for the lower-performance 3A090.b, 4A090.b and corresponding .b/.2 .z items and related software and technology to or within Country Groups D:1, D:4 or D:5, excluding destinations also in A:5 or A:6.",
+   "applies_from": "2025-05-15 (compliance date; rule effective 2025-01-13)",
+   "evidence": {
+    "provision": "§ 742.6(a)(6)(iii)(B)",
+    "quote": "A license is required to export, reexport, or transfer (incountry) items specified in ECCNs 3A001.z.1.b, z.2.b, z.3.b, z.4.b; 3A090.b"
+   }
+  },
+  {
+   "type": "licensing_certification",
+   "addressee": "ai_developer",
+   "also_addressees": [
+    "exporter",
+    "cloud_service_provider"
+   ],
+   "modality": "shall",
+   "summary": "Licence required to export, reexport or transfer (in-country) AI model weights classified in ECCN 4E091 to all destinations; deemed exports to permanent regular employees of entities headquartered in Supplement No. 5(a) destinations are excluded.",
+   "applies_from": "2025-05-15 (compliance date; rule effective 2025-01-13)",
+   "evidence": {
+    "provision": "§ 742.6(a)(13)",
+    "quote": "A license is required for the export, reexport, and transfer (in-country) of items specified in ECCN 4E091 to all destinations worldwide."
+   }
+  },
+  {
+   "type": "licensing_certification",
+   "addressee": "exporter",
+   "also_addressees": [
+    "chip_designer_manufacturer"
+   ],
+   "modality": "shall",
+   "summary": "Advanced computing foreign direct product rule: foreign-produced 3A090, 4A090 and .z items that are direct products of listed U.S. software or technology, or of plants that are such direct products, are subject to the EAR when destined anywhere (or for D:5/Macau-headquartered mask or wafer production), and thus to § 742.6(a)(6) licence requirements.",
+   "applies_from": "2025-05-15 (compliance date; rule effective 2025-01-13)",
+   "evidence": {
+    "provision": "§ 734.9(h)",
+    "quote": "(h) Advanced computing FDP rule. A foreign-produced item is subject to the EAR if it meets both the product scope in paragraph (h)(1) of this section and the destination scope in paragraph (h)(2) of this section."
+   }
+  },
+  {
+   "type": "licensing_certification",
+   "addressee": "ai_developer",
+   "modality": "shall",
+   "summary": "AI model weights FDP rule: foreign-produced 4E091 model weights (including fine-tuned or quantized versions) produced using advanced computing items subject to the EAR (3A090, 4A090, .z) are subject to the EAR when destined to any location, and thus to the § 742.6(a)(13) licence requirement.",
+   "applies_from": "2025-05-15 (compliance date; rule effective 2025-01-13)",
+   "evidence": {
+    "provision": "§ 734.9(l)",
+    "quote": "(l) AI Model weights FDP rule. A foreign-produced item is subject to the EAR if it meets both the product scope in paragraph (l)(1) of this section and the destination scope in paragraph (l)(2) of this section."
+   }
+  },
+  {
+   "type": "licensing_certification",
+   "addressee": "exporter",
+   "modality": "shall",
+   "summary": "End-use licence requirement for 3A090.b, 4A090.b and corresponding .b/.2 .z items destined outside D:1/D:4/D:5 for entities headquartered (or with ultimate parent headquartered) in Macau or D:5, and for 3A090.c high bandwidth memory destined outside Macau/D:5 for such entities.",
+   "applies_from": "2025-05-15 (compliance date; rule effective 2025-01-13)",
+   "evidence": {
+    "provision": "§ 744.23(a)(3)(i)(A)-(B)",
+    "quote": "destined to any destination other than those specified in Country Groups D:1, D:4, or D:5 (excluding any destination also specified in Country Groups A:5 or A:6) for an entity that is headquartered in, or whose ultimate parent company is"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "exporter",
+   "modality": "shall_not",
+   "summary": "Advanced computing items and model weights (3A090, 4A090, 4E091 and related 3D001, 3E001, 4D090, 4E001) going to D:1, D:4 or D:5 (not A:5/A:6), or to Macau/D:5-headquartered entities anywhere, may use only the listed license exceptions (TMP, NAC/ACA, RPL, GOV, TSU, HBM, AIA for 4E091 in listed cases, ACM).",
+   "applies_from": "2025-05-15 (compliance date; rule effective 2025-01-13)",
+   "evidence": {
+    "provision": "§ 740.2(a)(9)(ii)",
+    "quote": "and the license exception is other than: TMP, restricted to eligibility under the provisions of § 740.9(a)(6); NAC/ACA, under the provisions of § 740.8"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "exporter",
+   "modality": "shall_not",
+   "summary": "License Exception STA may not be used for ECCN 4E091 technology to Country Group A:5 or A:6, nor for .a-level 4E001 technology to A:5 or A:6 (.b-level: A:6); ACM is not available for 4E091.",
+   "applies_from": "2025-05-15 (compliance date; rule effective 2025-01-13)",
+   "evidence": {
+    "provision": "Supp. No. 1 to part 774, ECCN 4E091, License Exceptions; ECCN 4E001",
+    "quote": "STA: License Exception STA may not be used to ship or transmit ‘‘technology’’ specified by ECCN 4E091 to any of the destinations listed in Country Group A:5 or A:6"
+   }
+  },
+  {
+   "type": "licensing_certification",
+   "addressee": "exporter",
+   "modality": "shall",
+   "summary": "Licence applications for 3A090.a, 4A090.a and .z AI commodities must include a purchase order or equivalent contract (BIS will generally limit licensed quantity to it) and the total aggregated TPP of each item (block 22(j)); one licence per country for destinations subject to a per-country TPP allocation.",
+   "applies_from": "2025-05-15 (compliance date; rule effective 2025-01-13)",
+   "evidence": {
+    "provision": "Supp. No. 2 to part 748, para. (c)(3)-(4)",
+    "quote": "require the submission of a purchase order or equivalent contractual agreement with the submission of the license application"
+   }
+  },
+  {
+   "type": "registration_notification",
+   "addressee": "exporter",
+   "modality": "shall",
+   "summary": "License Exception NAC (to Macau, D:5 or D:5/Macau-headquartered entities) requires prior notification via SNAP-R at least 25 calendar days before export, giving TPP, performance density, datacenter design/marketing, prior 12-month approvals, memory bandwidth and cluster size and use; NAC/ACA exclude datacenter items meeting 3A090.a.",
+   "applies_from": "2025-05-15 (compliance date; rule effective 2025-01-13)",
+   "evidence": {
+    "provision": "§ 740.8(a), (c)(1)",
+    "quote": "you must provide prior notification under License Exception NAC by submitting a completed application in SNAP–R in accordance with § 748.1 of the EAR"
+   }
+  },
+  {
+   "type": "eligibility_condition",
+   "addressee": "exporter",
+   "modality": "shall",
+   "summary": "License Exception AIA covers 3A090.a/4A090.a/.z items and related software and technology to entities located in, and headquartered (with ultimate parent) in, Supplement No. 5(a) destinations; it may not be used to provide such items to entities headquartered or located outside those destinations for training 4E091 models.",
+   "applies_from": "2025-05-15 (compliance date; rule effective 2025-01-13)",
+   "evidence": {
+    "provision": "§ 740.27(a)",
+    "quote": "This license exception cannot be used to provide items identified in paragraph (a)(1) of this section to entities headquartered outside of or located outside of paragraph (a) in supplement no. 5 to this part for training AI models specified in ECCN 4E091."
+   }
+  },
+  {
+   "type": "eligibility_condition",
+   "addressee": "ai_developer",
+   "also_addressees": [
+    "exporter"
+   ],
+   "modality": "shall",
+   "summary": "License Exception AIA also authorizes export of 4E091 model weights to entities headquartered in Supplement No. 5(a) destinations, if the recipient is located outside Macau and D:5 and the weights are stored in a facility complying with paras. 14, 15 and 18 of Supplement No. 10 to part 748.",
+   "applies_from": "2025-05-15 (compliance date; rule effective 2025-01-13)",
+   "evidence": {
+    "provision": "§ 740.27(a)(3)",
+    "quote": "These items will be stored in a facility that complies with paragraphs 14, 15 and 18 of the guidelines outlined in supplement no. 10 to part 748"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "exporter",
+   "modality": "shall",
+   "summary": "Under AIA, the exporter must furnish the ECCN of each item to the ultimate consignee (the entity owning the items) and, with each shipment, notify the consignee in writing that it is made under License Exception AIA.",
+   "applies_from": "2025-05-15 (compliance date; rule effective 2025-01-13)",
+   "evidence": {
+    "provision": "§ 740.27(b)(1), (b)(3)",
+    "quote": "The exporter, reexporter, or transferor must furnish to the ultimate consignee the ECCN of each item to be exported, reexported, or transferred (incountry) pursuant to this section."
+   }
+  },
+  {
+   "type": "verification_gatekeeping",
+   "addressee": "exporter",
+   "modality": "shall",
+   "summary": "Before using AIA for chips (§ 740.27(a)(1)), the exporter must obtain a one-time certification from each ultimate consignee (awareness of AIA, no Part 744 end uses, no IaaS for 4E091 training for non-listed entities, no onward transfer outside listed destinations without BIS authorization).",
+   "applies_from": "2025-05-15 (compliance date; rule effective 2025-01-13)",
+   "evidence": {
+    "provision": "§ 740.27(b)(2)",
+    "quote": "Prior to use of this license exception for items identified in (a)(1) only, the exporter, reexporter, or transferor must obtain a certification from the ultimate consignee."
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "data_center_owner",
+   "also_addressees": [
+    "cloud_service_provider"
+   ],
+   "modality": "shall_not",
+   "summary": "AIA ultimate consignees undertake not to use the items to provide IaaS access for training 4E091 models for entities headquartered or located outside Supplement No. 5(a) destinations, and not to export or transfer them to such entities or to Part 744 end uses without BIS authorization.",
+   "applies_from": "2025-05-15 (compliance date; rule effective 2025-01-13)",
+   "conditional_on": "Receipt of items under License Exception AIA",
+   "evidence": {
+    "provision": "§ 740.27(b)(2)(iii)-(iv)",
+    "quote": "Agrees items received under this license exception are not, without prior authorization from the U.S. Department of Commerce’s Bureau of Industry and Security (BIS), to be used to provide Infrastructure-as-a-Service (IaaS) access for training AI models specified in ECCN 4E091"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "exporter",
+   "modality": "shall",
+   "summary": "The AIA ultimate-consignee certification must be submitted to BIS (EARReports@bis.doc.gov, 'AIA Certification') before the initial export when the consignee receives items with a cumulative TPP of 253,000,000.",
+   "applies_from": "2025-05-15 (compliance date; rule effective 2025-01-13)",
+   "evidence": {
+    "provision": "§ 740.27(c)",
+    "quote": "the exporter, reexporter, or transferor must submit the certification to EARReports@bis.doc.gov, with the subject line: AIA Certification."
+   }
+  },
+  {
+   "type": "eligibility_condition",
+   "addressee": "chip_designer_manufacturer",
+   "also_addressees": [
+    "exporter"
+   ],
+   "modality": "shall",
+   "summary": "License Exception ACM authorizes advanced computing items to 'private sector end users' for development, production or warehouse storage of items ultimately destined to customers outside Macau and D:5; unavailable to Macau, D:5 or consignees headquartered there.",
+   "applies_from": "2025-05-15 (compliance date; rule effective 2025-01-13)",
+   "evidence": {
+    "provision": "§ 740.28(a), (c)",
+    "quote": "License Exception ACM authorizes the export, reexport, and transfer (in-country) of eligible items specified in paragraph (b) to ‘private sector end users’ for the ‘‘development,’’ ‘‘production,’’ or storage"
+   }
+  },
+  {
+   "type": "record_keeping",
+   "addressee": "exporter",
+   "modality": "shall",
+   "summary": "ACM users must keep a distribution system accounting for controlled items moved into and out of each facility, with records updated at least every six months.",
+   "applies_from": "2025-05-15 (compliance date; rule effective 2025-01-13)",
+   "evidence": {
+    "provision": "§ 740.28(e)",
+    "quote": "Exporters, reexporters, and transferors must maintain a system of distribution that allows them to account for the number of controlled items transferred to, and ... subsequently out, of the facility."
+   }
+  },
+  {
+   "type": "eligibility_condition",
+   "addressee": "exporter",
+   "modality": "shall",
+   "summary": "License Exception LPP authorizes export and reexport (not in-country transfer) of eligible chips up to 26,900,000 cumulative TPP per calendar year per ultimate consignee, except to Macau, D:5 or entities headquartered there, and not for Part 744 end uses.",
+   "applies_from": "2025-05-15 (compliance date; rule effective 2025-01-13)",
+   "evidence": {
+    "provision": "§ 740.29(a), (c)-(e)",
+    "quote": "License Exception LPP authorizes the export and reexport of up to 26,900,000 cumulative total processing performance (TPP) of advanced computing integrated circuits per-calendar year directly to a single ultimate consignee."
+   }
+  },
+  {
+   "type": "verification_gatekeeping",
+   "addressee": "exporter",
+   "modality": "shall",
+   "summary": "Before using LPP, the exporter must obtain a certification from the ultimate consignee (awareness of LPP, no Part 744 uses, not having received 26,900,000 cumulative TPP in the calendar year).",
+   "applies_from": "2025-05-15 (compliance date; rule effective 2025-01-13)",
+   "evidence": {
+    "provision": "§ 740.29(f)",
+    "quote": "Prior to use of this license exception the exporter or reexporter must obtain a certification from the ultimate consignee"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "exporter",
+   "modality": "shall",
+   "summary": "LPP exporters must send BIS a copy of the consignee certification within 30 days of export and notify BIS before any shipment with an aggregate TPP of 3,200,000.",
+   "applies_from": "2025-05-15 (compliance date; rule effective 2025-01-13)",
+   "evidence": {
+    "provision": "§ 740.29(g)(1), (g)(3)",
+    "quote": "must provide a copy of that certification to BIS by email to EARReports@bis.doc.gov with subject line ‘‘LPP Shipment’’"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "data_center_owner",
+   "modality": "shall",
+   "summary": "LPP ultimate consignees must notify BIS ('LPP TPP Limit Reached') as soon as they receive the shipment that exhausts the 26,900,000 TPP annual limit.",
+   "applies_from": "2025-05-15 (compliance date; rule effective 2025-01-13)",
+   "evidence": {
+    "provision": "§ 740.29(g)(2)",
+    "quote": "Ultimate consignees receiving eligible commodities under this License Exception TPP must notify BIS by email to EARReports@bis.doc.gov with subject line ‘‘LPP TPP Limit Reached’’"
+   }
+  },
+  {
+   "type": "record_keeping",
+   "addressee": "exporter",
+   "modality": "shall",
+   "summary": "Records relating to License Exceptions AIA, ACM and LPP are added to the records that must be retained under § 762.2.",
+   "applies_from": "2025-05-15 (compliance date; rule effective 2025-01-13)",
+   "evidence": {
+    "provision": "§ 762.2(b)(58)-(60)",
+    "quote": "(58) § 740.27, License Exception AIA. (59) § 740.28, License Exception ACM. (60) § 740.29, License Exception LPP."
+   }
+  },
+  {
+   "type": "verification_gatekeeping",
+   "addressee": "cloud_service_provider",
+   "modality": "encouraged",
+   "summary": "Know-your-customer red flag: IaaS providers helping train a 4E091 model for an entity headquartered outside Supplement No. 5(a) destinations should ask whether the customer intends to export the model and apply for a licence or inform the customer of its licence obligation.",
+   "applies_from": "2025-05-15 (compliance date; rule effective 2025-01-13)",
+   "evidence": {
+    "provision": "Supp. No. 3 to part 732, Red Flag 28",
+    "quote": "In such cases, the IaaS provider should inquire if the customer intends to export the model and if so, apply for a license as required or inform the customer of their obligation to do so prior to export."
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "ai_developer",
+   "also_addressees": [
+    "exporter"
+   ],
+   "modality": "may",
+   "summary": "Exporters may confirm that a model is outside 4E091 (below the capability-equivalent operations) by classification request to BIS or by self-classification relying on BIS guidance or U.S. AI Safety Institute/DOE technical opinions.",
+   "applies_from": "2025-05-15 (compliance date; rule effective 2025-01-13)",
+   "evidence": {
+    "provision": "§ 748.3(f); ECCN 4E091 Note 2.a",
+    "quote": "Classification requests may be submitted to confirm that technology is not controlled under ECCN 4E091"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "BIS reviews licence applications for § 742.6(a)(6)(iii)(A) advanced computing items under a presumption of denial for Macau, D:5 and entities headquartered there, and a presumption of approval for Supplement No. 5(a) destinations and entities headquartered there.",
+   "applies_from": "2025-01-13",
+   "evidence": {
+    "provision": "§ 742.6(b)(10)(iii)(A)",
+    "quote": "will be reviewed under a presumption of denial"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "For all other destinations, BIS approves applications up to a per-country allocation of 790,000,000 TPP (2025-2027) and denies them once it is met; allocations may rise up to 100% for Supplement No. 5(b) destinations with government assurances; BIS reviews allocations annually with State, Energy and Defense and posts progress online.",
+   "applies_from": "2025-01-13",
+   "evidence": {
+    "provision": "§ 742.6(b)(10)(iii)(B)-(C)",
+    "quote": "After the country allocations above are met, applications will be reviewed under a policy of denial."
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "BIS reviews applications for § 742.6(a)(6)(iii)(B) (.b-level) items under a presumption of approval except for Macau, D:5 and entities headquartered there (presumption of denial).",
+   "applies_from": "2025-01-13",
+   "evidence": {
+    "provision": "§ 742.6(b)(10)(iv)",
+    "quote": "Applications for exports, reexports, or transfers (in-country) will be reviewed with a presumption of approval to or within destinations not specified in Country Group D:5 or Macau"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "BIS reviews applications for 4E091 model weights under a presumption of denial for end users headquartered (or with ultimate parent) outside Supplement No. 5(a) destinations.",
+   "applies_from": "2025-01-13",
+   "evidence": {
+    "provision": "§ 742.6(b)(14)",
+    "quote": "Applications to export, reexport, or transfer (in-country) items classified under ECCN 4E091 will be reviewed under a presumption of denial"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "BIS adjudicates complete UVEU applications within 30 days and updates the VEU list (Supplement No. 7) with new data-center locations; no requirements beyond Supplement No. 10 may be imposed as a condition of the original UVEU grant.",
+   "applies_from": "2025-01-13",
+   "evidence": {
+    "provision": "§ 748.15(a)(2)(ii)(A)",
+    "quote": "No other requirements may be placed on the UVEU beyond those described in Supplement No. 10 to this part as a condition for granting the original UVEU application."
+   }
+  },
+  {
+   "type": "eligibility_condition",
+   "addressee": "data_center_owner",
+   "also_addressees": [
+    "data_center_operator"
+   ],
+   "modality": "shall",
+   "summary": "UVEU: the owner of the advanced computing ICs applies and certifies it will follow Supplement No. 10 (paras. 14, 15, 18 by 2026-01-15), identifies and obtains certifications from other entities involved, and a distinct operator needs its own UVEU; UVEUs must be headquartered in Supplement No. 5(a) destinations and may place data centers anywhere except Macau/D:5.",
+   "applies_from": "2025-05-15 (compliance date; rule effective 2025-01-13)",
+   "conditional_on": "Holding or applying for Data Center VEU authorization (UVEU or NVEU)",
+   "evidence": {
+    "provision": "§ 748.15(a)(2)(ii)(A), (b)(2)(i)",
+    "quote": "To qualify for UVEU authorization, the owner of the advanced computing ICs must certify that it will follow the guidelines in Supplement No. 10 to this part."
+   }
+  },
+  {
+   "type": "eligibility_condition",
+   "addressee": "data_center_owner",
+   "also_addressees": [
+    "data_center_operator"
+   ],
+   "modality": "shall",
+   "summary": "NVEU: a separate authorization per country; owner adheres to Supplement No. 10 and possibly other requirements, provides written assurances from other entities, may need government-to-government assurances; distinct operator needs its own NVEU; eligible if headquartered or located in Country Groups A, B or D:1-D:4 (not Macau/D:5).",
+   "applies_from": "2025-05-15 (compliance date; rule effective 2025-01-13)",
+   "conditional_on": "Holding or applying for Data Center VEU authorization (UVEU or NVEU)",
+   "evidence": {
+    "provision": "§ 748.15(a)(2)(iii)(A), (b)(2)(ii)",
+    "quote": "For every additional country in which the NVEU wants to operate, the owner of the advanced compute must obtain a separate NVEU authorization."
+   }
+  },
+  {
+   "type": "registration_notification",
+   "addressee": "data_center_owner",
+   "modality": "shall",
+   "summary": "VEU applications are advisory-opinion requests listing items by ECCN and the Supplement No. 8 information (D:5/Macau government or military ties, NVEU customer lists, supply-chain plan to keep PRC-origin equipment out, export compliance programme, NVEU ability to verify items have not left the country).",
+   "applies_from": "2025-05-15 (compliance date; rule effective 2025-01-13)",
+   "conditional_on": "Holding or applying for Data Center VEU authorization (UVEU or NVEU)",
+   "evidence": {
+    "provision": "§ 748.15(a)(2)(i), (a)(2)(iv); Supp. No. 8 to part 748, B(2), (6), (9)-(11)",
+    "quote": "applications for Authorization VEU must include the information described in Supplement No. 8 to this part"
+   }
+  },
+  {
+   "type": "registration_notification",
+   "addressee": "data_center_owner",
+   "modality": "shall",
+   "summary": "UVEUs must notify BIS 180 days before exporting to a datacenter in a new location (with its physical address), and 60 days in advance of inter-country chip transfers or data-center construction in countries not previously notified.",
+   "applies_from": "2025-05-15 (compliance date; rule effective 2025-01-13)",
+   "conditional_on": "UVEU status",
+   "evidence": {
+    "provision": "§ 748.15(a)(2)(ii)(A); Supp. No. 10 to part 748, para. 5",
+    "quote": "A UVEU will need to file a notification with BIS when building a datacenter in a new location 180 days before any exports, reexports, or transfers (incountry) to the new datacenter."
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "data_center_operator",
+   "modality": "shall_not",
+   "summary": "Items under Data Center VEU authorizations may not be used for Part 744 activities and may only be used or consumed at the end user's own facility in an authorized destination; reexports and in-country transfers are not permitted except to another location of the same VEU or with separate authorization.",
+   "applies_from": "2025-05-15 (compliance date; rule effective 2025-01-13)",
+   "conditional_on": "Holding or applying for Data Center VEU authorization (UVEU or NVEU)",
+   "evidence": {
+    "provision": "§ 748.15(d)(2)",
+    "quote": "Items obtained under Data Center VEU Authorizations may not be used for any activities described in part 744 of the EAR."
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "exporter",
+   "modality": "shall",
+   "summary": "Reexporters using VEU authorizations report to BIS (annually for General VEU, semi-annually for Data Center VEU) the name and address of each VEU, destination, quantity, value and ECCN of items.",
+   "applies_from": "2025-05-15 (compliance date; rule effective 2025-01-13)",
+   "evidence": {
+    "provision": "§ 748.15(f)(1)(i)",
+    "quote": "Reexporters who make use of Data Center VEU Authorizations are required to submit semi-annual reports to BIS."
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "data_center_operator",
+   "modality": "shall",
+   "summary": "Data Center VEU end users report semi-annually their current inventory of eligible items, dates of receipt and (NVEUs) current customers.",
+   "applies_from": "2025-05-15 (compliance date; rule effective 2025-01-13)",
+   "conditional_on": "Holding or applying for Data Center VEU authorization (UVEU or NVEU)",
+   "evidence": {
+    "provision": "§ 748.15(f)(1)(ii)",
+    "quote": "End users who make use of Data Center VEU Authorizations must submit reports to BIS semi-annually."
+   }
+  },
+  {
+   "type": "cooperation_with_authority",
+   "addressee": "data_center_operator",
+   "also_addressees": [
+    "exporter"
+   ],
+   "modality": "shall",
+   "summary": "Exporters, reexporters, transferors and VEUs must allow BIS review of records, including on-site reviews, and VEUs must cooperate with BIS audits of records and facilities.",
+   "applies_from": "2025-05-15 (compliance date; rule effective 2025-01-13)",
+   "conditional_on": "Holding or applying for Data Center VEU authorization (UVEU or NVEU)",
+   "evidence": {
+    "provision": "§ 748.15(f)(2); Supp. No. 10 to part 748, para. 11",
+    "quote": "Upon request by BIS, exporters, reexporters, transferors, and validated end-users must allow review of records, including on-site reviews"
+   }
+  },
+  {
+   "type": "eligibility_condition",
+   "addressee": "data_center_operator",
+   "also_addressees": [
+    "data_center_owner"
+   ],
+   "modality": "shall",
+   "summary": "VEU must have a credible plan or track record for physical, cyber and personnel security, export-control compliance and respect for human rights, and be free (with subsidiaries, parents and personnel) of ties, including R&D agreements, to military or military-intelligence end users.",
+   "applies_from": "2025-05-15 (compliance date; rule effective 2025-01-13)",
+   "conditional_on": "Holding or applying for Data Center VEU authorization (UVEU or NVEU)",
+   "evidence": {
+    "provision": "Supp. No. 10 to part 748, paras. 1-2",
+    "quote": "must be free of ties to any ‘military end users’"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_center_operator",
+   "also_addressees": [
+    "data_center_owner"
+   ],
+   "modality": "shall",
+   "summary": "VEU (including non-U.S. persons) must adhere to the U.S. outbound investment rules (31 CFR part 850, without the § 850.501(g) exception, submitting to BIS) and to ICTS determinations under 15 CFR part 791.",
+   "applies_from": "2025-05-15 (compliance date; rule effective 2025-01-13)",
+   "conditional_on": "Holding or applying for Data Center VEU authorization (UVEU or NVEU)",
+   "evidence": {
+    "provision": "Supp. No. 10 to part 748, para. 3",
+    "quote": "must adhere to the U.S. rules on outbound investment at 31 CFR part 850 as applied to U.S. persons regardless of whether such VEU, entity, or individual is a U.S. person"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "data_center_operator",
+   "modality": "shall",
+   "summary": "VEU must show it has eliminated supply-chain dependencies on advanced chips and networking equipment produced by Macau/D:5-headquartered entities and on equipment and services on the FCC covered list.",
+   "applies_from": "2025-05-15 (compliance date; rule effective 2025-01-13)",
+   "conditional_on": "Holding or applying for Data Center VEU authorization (UVEU or NVEU)",
+   "evidence": {
+    "provision": "Supp. No. 10 to part 748, para. 3",
+    "quote": "the VEU must demonstrate that it has eliminated supply chain dependencies on advanced semiconductors"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "data_center_operator",
+   "modality": "shall",
+   "summary": "VEU must notify the U.S. Government of cooperative activities (e.g., joint ventures) with Macau/D:5-headquartered or Entity List/SDN parties and report their equity, ownership or debt interests in the VEU, except investments under 1% or $1 million.",
+   "applies_from": "2025-05-15 (compliance date; rule effective 2025-01-13)",
+   "conditional_on": "Holding or applying for Data Center VEU authorization (UVEU or NVEU)",
+   "evidence": {
+    "provision": "Supp. No. 10 to part 748, para. 3",
+    "quote": "The VEU must report to BIS all equity interests (including contingent equity interests) or ownership stakes in the VEU"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "data_center_operator",
+   "modality": "shall_not",
+   "summary": "VEU may not, without BIS authorization, transfer chips, assemblies or computers meeting 3A090.a/4A090.a to Macau/D:5-located or -headquartered entities, persons working for listed parties (Entity List, ISN, SDN) or persons employed by Macau/D:5 governments or presenting a diversion risk.",
+   "applies_from": "2025-05-15 (compliance date; rule effective 2025-01-13)",
+   "conditional_on": "Holding or applying for Data Center VEU authorization (UVEU or NVEU)",
+   "evidence": {
+    "provision": "Supp. No. 10 to part 748, para. 4",
+    "quote": "The VEU may not, without authorization from BIS, transfer chips, assemblies, or computers that meet or exceed the scope of ECCN 3A090.a, 4A090.a"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "data_center_owner",
+   "modality": "shall_not",
+   "summary": "UVEU geographic allocation caps: no more than 25% of total AI compute outside Supplement No. 5(a) countries and 7% in any single other country (UVEUs headquartered there); no more than 50% outside the United States (U.S.-headquartered UVEUs).",
+   "applies_from": "2025-05-15 (compliance date; rule effective 2025-01-13)",
+   "conditional_on": "UVEU status",
+   "evidence": {
+    "provision": "Supp. No. 10 to part 748, para. 6; § 748.15(a)(2)(ii)(B)",
+    "quote": "UVEUs will be subject to the geographic allocations identified in paragraph 6 or Supplement No. 10 to this part."
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "data_center_operator",
+   "also_addressees": [
+    "cloud_service_provider",
+    "ai_developer"
+   ],
+   "modality": "shall_not",
+   "summary": "VEU (with subsidiaries and parents) may not, without BIS authorization, train a 4E091 model outside Supplement No. 5(a) countries or as IaaS for entities headquartered outside them; fine-tuning up to 25% of original training operations, API access and IaaS for inference remain allowed.",
+   "applies_from": "2025-05-15 (compliance date; rule effective 2025-01-13)",
+   "conditional_on": "Holding or applying for Data Center VEU authorization (UVEU or NVEU)",
+   "evidence": {
+    "provision": "Supp. No. 10 to part 748, para. 7",
+    "quote": "may not, without authorization from BIS, train an AI model specified in ECCN 4E091, in whole or in part, in a location outside of, or as Infrastructure-as-a-Service (IaaS) for an entity headquartered outside of, countries listed in paragraph (a) to Supplement No. 5 to Part 740."
+   }
+  },
+  {
+   "type": "localization",
+   "addressee": "data_center_operator",
+   "modality": "shall",
+   "summary": "VEU may store or transfer 4E091 model weights only to facilities in Supplement No. 5(a) countries, or elsewhere outside Macau/D:5 in facilities owned or operated by entities headquartered in those countries that comply with paras. 14, 15 and 18 by 2026-01-15.",
+   "applies_from": "2025-05-15 (compliance date; rule effective 2025-01-13)",
+   "conditional_on": "Holding or applying for Data Center VEU authorization (UVEU or NVEU)",
+   "evidence": {
+    "provision": "Supp. No. 10 to part 748, para. 8",
+    "quote": "The VEU may only store or transfer the model weights of an advanced AI model specified in ECCN 4E091 to facilities located in countries listed in paragraph (a) to Supplement No. 5 to Part 740"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "data_center_operator",
+   "modality": "shall_not",
+   "summary": "VEU must ensure no EAR items support Part 744 activities, military and intelligence entities of Macau/D:5 or flagged by BIS, or activities enabling human rights abuses or repression (censorship, arbitrary surveillance, abusive genetic collection).",
+   "applies_from": "2025-05-15 (compliance date; rule effective 2025-01-13)",
+   "conditional_on": "Holding or applying for Data Center VEU authorization (UVEU or NVEU)",
+   "evidence": {
+    "provision": "Supp. No. 10 to part 748, para. 9",
+    "quote": "The VEU is responsible for ensuring that no items subject to the EAR are used to support any of the following"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "data_center_operator",
+   "modality": "shall",
+   "summary": "VEU reports semi-annually (1 February, 1 August) a facility-specific chip accounting for itself and parents/subsidiaries: quantities and types of 3A090.a chips purchased, exported, transferred and installed, total aggregate compute and chip attrition.",
+   "applies_from": "2025-05-15 (compliance date; rule effective 2025-01-13)",
+   "conditional_on": "Holding or applying for Data Center VEU authorization (UVEU or NVEU)",
+   "evidence": {
+    "provision": "Supp. No. 10 to part 748, para. 10",
+    "quote": "a complete facility-specific chip accounting for itself and all parent and subsidiary entities"
+   }
+  },
+  {
+   "type": "verification_gatekeeping",
+   "addressee": "data_center_operator",
+   "modality": "shall",
+   "summary": "VEU must carry out ongoing monitoring, evaluation and end-user due diligence on all conditions, notify BIS whenever any requirement is not met, and keep all related records for five years, available to BIS on request.",
+   "applies_from": "2025-05-15 (compliance date; rule effective 2025-01-13)",
+   "conditional_on": "Holding or applying for Data Center VEU authorization (UVEU or NVEU)",
+   "evidence": {
+    "provision": "Supp. No. 10 to part 748, para. 11",
+    "quote": "The VEU must perform ongoing monitoring, evaluation, and end user due diligence of all the vetting requirements, export restrictions, acceptable use policies, and security requirements herein."
+   }
+  },
+  {
+   "type": "eligibility_condition",
+   "addressee": "data_center_operator",
+   "also_addressees": [
+    "data_center_owner"
+   ],
+   "modality": "shall",
+   "summary": "VEU certification follows Supplement No. 9; entities outside Supplement No. 5(a), Macau and D:5 qualify only if they meet Supplement No. 10 and, for NVEUs, a government-to-government arrangement exists; VEU must show no foreign ownership, control or influence (FOCI) factors related to Macau/D:5 under NISPOM 32 CFR 117.11(b) and additional factors.",
+   "applies_from": "2025-05-15 (compliance date; rule effective 2025-01-13)",
+   "conditional_on": "Holding or applying for Data Center VEU authorization (UVEU or NVEU)",
+   "evidence": {
+    "provision": "Supp. No. 10 to part 748, paras. 12-13",
+    "quote": "must meet ownership security standards to ensure there are no Foreign Ownership, Control, or Influence (FOCI) factors related to Macau or a destination specified in Country Group D:5."
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "data_center_operator",
+   "modality": "shall",
+   "summary": "VEU datacenters must comply with NIST 800-53 consistent with FedRAMP High plus listed controls; model weights and training techniques treated as FIPS-199 HIGH; anti-seizure and anti-tampering measures; defense-in-depth security planning (threat, vulnerability, probability, consequence analysis); UFC 4-010-05 physical security, no windows in server core areas, 24/7 guard patrol or PIDS with 15-minute response.",
+   "applies_from": "2026-01-15 (delayed compliance date for Supp. No. 10 paras. 14, 15 and 18)",
+   "conditional_on": "Holding or applying for Data Center VEU authorization (UVEU or NVEU)",
+   "evidence": {
+    "provision": "Supp. No. 10 to part 748, para. 14",
+    "quote": "The VEU’s datacenters must be compliant with NIST 800–53 in a fashion certified as appropriate for compliance with these conditions and consistent with the security requirements associated with FedRAMP High"
+   }
+  },
+  {
+   "type": "audit",
+   "addressee": "data_center_operator",
+   "modality": "shall",
+   "summary": "Compliance with the NIST 800-53 requirements must be attested annually by a FedRAMP-recognized Third-Party Assessment Organization (3PAO) and made available to BIS.",
+   "applies_from": "2026-01-15 (delayed compliance date for Supp. No. 10 paras. 14, 15 and 18)",
+   "conditional_on": "Holding or applying for Data Center VEU authorization (UVEU or NVEU)",
+   "evidence": {
+    "provision": "Supp. No. 10 to part 748, para. 14.b",
+    "quote": "must be attested annually by a Third-Party Assessment Organization (3PAO) and made available to BIS"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "data_center_operator",
+   "modality": "shall",
+   "summary": "AI-specific cybersecurity: follow NSA 'Deploying AI Systems Securely' and CISA CPG 1.0 actions; log and monitor usage (including third-party APIs and fine-tuning); store 4E091 weights on dedicated devices; rate-limit every interface to its legitimate output rate; interfaces allowing extraction within six months must be narrow, secured APIs.",
+   "applies_from": "2026-01-15 (delayed compliance date for Supp. No. 10 paras. 14, 15 and 18)",
+   "conditional_on": "Holding or applying for Data Center VEU authorization (UVEU or NVEU)",
+   "evidence": {
+    "provision": "Supp. No. 10 to part 748, para. 15",
+    "quote": "The VEU will establish and bear responsibility for the following additional practices for AI security"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "data_center_operator",
+   "also_addressees": [
+    "hardware_supplier"
+   ],
+   "modality": "shall",
+   "summary": "VEU must develop with the chip provider a shipment security plan (validated shippers, chain of custody, anti-theft and anti-tampering, inspection on receipt), track chips in transit, and apply verifiable end-of-life sanitization and disposal procedures.",
+   "applies_from": "2025-05-15 (compliance date; rule effective 2025-01-13)",
+   "conditional_on": "Holding or applying for Data Center VEU authorization (UVEU or NVEU)",
+   "evidence": {
+    "provision": "Supp. No. 10 to part 748, paras. 16-17",
+    "quote": "The VEU must work with the chip provider to develop, implement, and maintain a shipment security plan"
+   }
+  },
+  {
+   "type": "incident_reporting",
+   "addressee": "data_center_operator",
+   "modality": "shall",
+   "summary": "VEU must report theft, loss or tampering incidents to BIS within 30 days and report transit anomalies.",
+   "applies_from": "2025-05-15 (compliance date; rule effective 2025-01-13)",
+   "conditional_on": "Holding or applying for Data Center VEU authorization (UVEU or NVEU)",
+   "evidence": {
+    "provision": "Supp. No. 10 to part 748, para. 16",
+    "quote": "reporting any theft, loss, or tampering incidents to BIS within 30 days"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "data_center_operator",
+   "modality": "shall",
+   "summary": "Personnel security: vetting plan for everyone with access; exclude individuals on SDN/sanctions lists or with employment history with Macau/D:5 governments, intelligence or military or listed parties; extra vetting for those with Macau/D:5-headquartered employers; insider-threat programme per the CISA guide.",
+   "applies_from": "2026-01-15 (delayed compliance date for Supp. No. 10 paras. 14, 15 and 18)",
+   "conditional_on": "Holding or applying for Data Center VEU authorization (UVEU or NVEU)",
+   "evidence": {
+    "provision": "Supp. No. 10 to part 748, para. 18",
+    "quote": "The VEU must develop a plan to implement a personnel vetting model covering all individuals granted access to the VEU data center facility or corresponding systems."
+   }
+  }
+ ],
+ "enforcement": [
+  {
+   "sanction_type": "license_revocation",
+   "authority": "Bureau of Industry and Security (BIS)",
+   "triggered_by": "Failure to adhere to the Data Center VEU conditions in Supplement No. 10 to part 748 (including failure to comply with BIS requests, audits and record requirements under para. 11)",
+   "max_penalty_text": null,
+   "max_penalty_amount": null,
+   "currency": null,
+   "penalty_formula": "Revocation of VEU status on a national or global basis; denial of chip allocations or export licences; other penalties as appropriate under U.S. laws and regulations (not specified in this text)",
+   "penalty_reference": "'other penalties as appropriate under U.S. laws and regulations' (no statute named)",
+   "private_right_of_action": null,
+   "cure_period": null,
+   "evidence": {
+    "provision": "Supp. No. 10 to part 748, paras. 11, 19",
+    "quote": "Failure to adhere to this agreement may result in the revocation of VEU status on a national or global basis, denial of chip allocations or export licenses, as well as other penalties as appropriate under U.S. laws and regulations."
+   }
+  },
+  {
+   "sanction_type": "license_revocation",
+   "authority": "Bureau of Industry and Security (BIS)",
+   "triggered_by": "Rescission, by either party, of the government-to-government arrangement between the United States and the NVEU's (or UVEU host) country",
+   "max_penalty_text": null,
+   "max_penalty_amount": null,
+   "currency": null,
+   "penalty_formula": "NVEU status and, as appropriate, a UVEU's ability to operate in that country may be revoked",
+   "penalty_reference": null,
+   "private_right_of_action": null,
+   "cure_period": null,
+   "evidence": {
+    "provision": "Supp. No. 10 to part 748, para. 12",
+    "quote": "If a government-to-government arrangement is rescinded by either party, the NVEU status of NVEUs and, as appropriate, the ability of a UVEU to operate in that country may be revoked."
+   }
+  },
+  {
+   "sanction_type": "other",
+   "authority": "Bureau of Industry and Security (BIS)",
+   "triggered_by": "IaaS provider assisting training of a 4E091 model for an entity headquartered outside Supplement No. 5(a) destinations, where the weights are exported without the required licence",
+   "max_penalty_text": null,
+   "max_penalty_amount": null,
+   "currency": null,
+   "penalty_formula": "Liability for aiding and abetting a violation of the EAR; penalty not stated in this rule",
+   "penalty_reference": "EAR violation (aiding and abetting); penalty provisions not cited in this text",
+   "private_right_of_action": null,
+   "cure_period": null,
+   "evidence": {
+    "provision": "Supp. No. 3 to part 732, Red Flag 28",
+    "quote": "if a license is not obtained, that the IaaS provider will have aided and abetted in a violation of the EAR"
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "Model Weights",
+   "defined_in": "ECCN 4E091, Supplement No. 1 to part 774 (cross-reference in § 772.1)",
+   "evidence": {
+    "provision": "§ 772.1",
+    "quote": "Model Weights. See ECCN 4E091 (Supplement No. 1 to part 774)."
+   }
+  },
+  {
+   "term": "'Parameters' (ECCN 4E091)",
+   "evidence": {
+    "provision": "Supp. No. 1 to part 774, ECCN 4E091, Technical Note 1",
+    "quote": "‘Parameters’ refers to any value learned during training (e.g., network weights, biases, etc.). ‘Parameters’ for an artificial intelligence model are also known as model weights."
+   }
+  },
+  {
+   "term": "'Operations' (ECCN 4E091)",
+   "evidence": {
+    "provision": "Supp. No. 1 to part 774, ECCN 4E091, Technical Note 2",
+    "quote": "‘Operations’ refers to mathematical operations used for pre-training and any subsequent training, such as fine-tuning the pre-trained model, but does not include the collection and curation of the input training data."
+   }
+  },
+  {
+   "term": "ECCN 4E091 exclusion for published and derived models",
+   "evidence": {
+    "provision": "Supp. No. 1 to part 774, ECCN 4E091, Note 1",
+    "quote": "In accordance with § 734.7 of the EAR, 4E091 does not control the ‘parameters’ of any artificial intelligence model that have been ‘‘published’’ as defined in § 734.7(a)."
+   }
+  },
+  {
+   "term": "Foreign-produced item specified in ECCN 4E091",
+   "evidence": {
+    "provision": "§ 734.9(l)(1), Note 7",
+    "quote": "A foreignproduced item specified in ECCN 4E091 includes any foreign produced item that is further trained or modified via post-training techniques such as fine-tuning, quantization, or other techniques."
+   }
+  },
+  {
+   "term": "'Total processing performance' ('TPP')",
+   "evidence": {
+    "provision": "Supp. No. 1 to part 774, ECCN 3A090, Technical Note 1",
+    "quote": "‘Total processing performance’ (‘TPP’) is 2 × ‘MacTOPS’ × ‘bit length of the operation’, aggregated over all processing units on the integrated circuit."
+   }
+  },
+  {
+   "term": "'MacTOPS'",
+   "evidence": {
+    "provision": "Supp. No. 1 to part 774, ECCN 3A090, Technical Note 1.a",
+    "quote": "‘MacTOPS’ is the theoretical peak number of Tera (1012) operations per second for multiplyaccumulate computation"
+   }
+  },
+  {
+   "term": "'Performance density' / 'applicable die area'",
+   "evidence": {
+    "provision": "Supp. No. 1 to part 774, ECCN 3A090, Technical Note 4",
+    "quote": "‘Performance density’ is ‘TPP’ divided by ‘applicable die area’. For purposes of 3A090, ‘applicable die area’ is measured in millimeters squared and includes all die area of logic dies manufactured with a process node that uses a non-planar transistor architecture."
+   }
+  },
+  {
+   "term": "'Memory bandwidth density' / high bandwidth memory (3A090.c)",
+   "evidence": {
+    "provision": "Supp. No. 1 to part 774, ECCN 3A090, Technical note to 3A090.c",
+    "quote": "‘Memory bandwidth density’ is the memory bandwidth measured in gigabytes per second divided by the area of the package or stack measured in square millimeters."
+   }
+  },
+  {
+   "term": "Integrated circuits specified by 3A090",
+   "evidence": {
+    "provision": "Supp. No. 1 to part 774, ECCN 3A090, Note 2 to 3A090.a and 3A090.b",
+    "quote": "Integrated circuits specified by 3A090 include graphical processing units (GPUs), tensor processing ... units (TPUs), neural processors, in-memory processors, vision processors, text processors, co-processors/accelerators"
+   }
+  },
+  {
+   "term": "4A090 computers",
+   "evidence": {
+    "provision": "Supp. No. 1 to part 774, ECCN 4A090.a",
+    "quote": "a. Computers, ‘‘electronic assemblies,’’ and ‘‘components’’ containing integrated circuits, any of which meets or exceeds the limits in 3A090.a."
+   }
+  },
+  {
+   "term": ".z paragraphs (e.g., 3A001.z)",
+   "evidence": {
+    "provision": "Supp. No. 1 to part 774, ECCN 3A001.z",
+    "quote": "z. Any commodity described in 3A001 that meets or exceeds the performance parameters in 3A090, as follows"
+   }
+  },
+  {
+   "term": "Artificial Intelligence Authorization Countries (Supplement No. 5 to part 740)",
+   "evidence": {
+    "provision": "Supp. No. 5 to part 740, para. (a)",
+    "quote": "(a) Destinations eligible: Australia Belgium Canada Denmark Finland France Germany Ireland Italy Japan Netherlands New Zealand Norway Republic of Korea Spain Sweden Taiwan United Kingdom United States"
+   }
+  },
+  {
+   "term": "Destinations subject to a higher country allocation (Supplement No. 5(b))",
+   "evidence": {
+    "provision": "Supp. No. 5 to part 740, para. (b)",
+    "quote": "(b) Destinations that have provided government assurances to the U.S. Government and therefore are subject to a higher country allocation."
+   }
+  },
+  {
+   "term": "Ultimate consignee (License Exception AIA)",
+   "evidence": {
+    "provision": "§ 740.27(b)(1)",
+    "quote": "For purposes of this license exception, the ultimate consignee is the entity that has ownership over the eligible item(s) in paragraph (a)(1) or (a)(2)(ii)."
+   }
+  },
+  {
+   "term": "Ultimate consignee (License Exception LPP)",
+   "evidence": {
+    "provision": "§ 740.29(h)(1)",
+    "quote": "the ultimate consignee is the ultimate parent entity that has ultimate ownership over the items in paragraph (b)."
+   }
+  },
+  {
+   "term": "'Cumulative TPP' (License Exception LPP)",
+   "evidence": {
+    "provision": "§ 740.29(h)(2)",
+    "quote": "The ‘cumulative TPP’ is the total amount of TPP, as defined in the Technical Notes to 3A090, of all eligible commodities in ... paragraph (b) that are received by a single ultimate consignee in all shipments from all exporters and reexporters in a calendar year."
+   }
+  },
+  {
+   "term": "'Private sector end user' (License Exception ACM)",
+   "evidence": {
+    "provision": "§ 740.28(d)",
+    "quote": "A ‘private sector end user’ is either an individual who is not acting on behalf of any government (other than the U.S. Government), or a commercial firm (including its subsidiary and parent firms, and other subsidiaries of the same parent) that is not wholly owned by, or otherwise controlled by any government (other than the U.S. Government)."
+   }
+  },
+  {
+   "term": "Data center (VEU)",
+   "evidence": {
+    "provision": "§ 748.15 introductory text",
+    "quote": "A data center is a facility or ‘‘facilities’’ that house a multi-racked, networked computer system that include servers, storage devices, and networking equipment."
+   }
+  },
+  {
+   "term": "General VEU and Data Center VEU (universal or national) Authorizations",
+   "evidence": {
+    "provision": "§ 748.15 introductory text",
+    "quote": "There are two types of VEU authorization: General VEU Authorization and Data Center VEU Authorization."
+   }
+  },
+  {
+   "term": "National VEU (NVEU) Authorization",
+   "evidence": {
+    "provision": "§ 748.15(a)(2)(iii)(A)",
+    "quote": "The NVEU Authorization will allow an entity to receive exports and reexports in a specific country as specified in their NVEU authorization."
+   }
+  },
+  {
+   "term": "Ties (to military or military-intelligence end users)",
+   "evidence": {
+    "provision": "Supp. No. 10 to part 748, para. 2.b",
+    "quote": "Ties include research and development agreements and joint activities."
+   }
+  },
+  {
+   "term": "'Permanent regular employees' (deemed export carve-out)",
+   "defined_in": "15 CFR 734.20(d)(2)",
+   "evidence": {
+    "provision": "§ 742.6(a)(13)",
+    "quote": "‘permanent regular employees,’ as that term is defined § 734.20(d)(2)"
+   }
+  },
+  {
+   "term": "'Published'",
+   "defined_in": "15 CFR 734.7(a)",
+   "evidence": {
+    "provision": "§ 748.3(f)",
+    "quote": "‘‘published’’ as defined in § 734.7(a) of the EAR"
+   }
+  },
+  {
+   "term": "'Military end users' / 'military-intelligence end users'",
+   "defined_in": "15 CFR 744.21(g) and 744.22(f)(2)",
+   "evidence": {
+    "provision": "Supp. No. 10 to part 748, para. 2.a",
+    "quote": "‘military end users’ (as that term is defined in § 744.21(g)) or ‘militaryintelligence end users’ (as that term is defined in § 744.22(f)(2))"
+   }
+  }
+ ],
+ "relations": [
+  {
+   "relation": "amends",
+   "target_instrument_id": null,
+   "target_text": "Export Administration Regulations, 15 CFR parts 730-774 (parts 732, 734, 740, 742, 744, 748, 750, 762, 772 and 774)",
+   "note": "Adds §§ 734.9(l), 740.27-740.29, Supp. No. 5 to part 740, § 742.6(a)(13), (b)(14), § 748.3(f), Supp. No. 10 to part 748 and ECCN 4E091; revises the other listed provisions and ECCNs",
+   "evidence": {
+    "provision": "Amendatory instruction",
+    "quote": "Accordingly, parts 732, 734, 740, 742, 744, 748, 750, 762, 772, and 774 of the Export Administration Regulations (15 CFR parts 730 through 774) are amended as follows"
+   }
+  },
+  {
+   "relation": "legal_basis",
+   "target_instrument_id": null,
+   "target_text": "Export Control Reform Act of 2018 (ECRA), 50 U.S.C. 4801-4852",
+   "note": "Authority citations of all amended parts; the preamble states ECRA is the authority for the rule and exempts it from APA notice and comment (section 1762)",
+   "evidence": {
+    "provision": "Authority citation, part 734",
+    "quote": "Authority: 50 U.S.C. 4801–4852; 50 U.S.C. 4601 et seq.; 50 U.S.C. 1701 et seq."
+   }
+  },
+  {
+   "relation": "legal_basis",
+   "target_instrument_id": null,
+   "target_text": "International Emergency Economic Powers Act (50 U.S.C. 1701 et seq.); E.O. 13222; E.O. 13026; Notice of November 7, 2024 (89 FR 88867)",
+   "note": "Further authorities listed in the part 734, 742 and 744 authority citations",
+   "evidence": {
+    "provision": "Authority citation, part 742",
+    "quote": "E.O. 13222, 66 FR 44025, 3 CFR, 2001 Comp., p. 783; Presidential Determination 2003–23, 68 FR 26459, 3 CFR, 2004 Comp., p. 320; Notice of November 7, 2024, 89 FR 88867"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": "us-treasury-outbound-2024",
+   "target_text": "Outbound investment rules, 31 CFR part 850 (Treasury)",
+   "note": "VEUs, including non-U.S. persons, must adhere to part 850 as if U.S. persons, without the § 850.501(g) exception, filing with BIS",
+   "evidence": {
+    "provision": "Supp. No. 10 to part 748, para. 3",
+    "quote": "must adhere to the U.S. rules on outbound investment at 31 CFR part 850 as applied to U.S. persons"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": null,
+   "target_text": "Information and Communications Technology and Services program, 15 CFR part 791 (Commerce)",
+   "note": "VEUs must adhere to ICTS determinations, prohibitions and mitigations",
+   "evidence": {
+    "provision": "Supp. No. 10 to part 748, para. 3",
+    "quote": "made under Commerce’s Information Communication Technology Services program at 15 CFR part 791"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": null,
+   "target_text": "Secure and Trusted Communications Networks Act of 2019, Section 2 (FCC covered list)",
+   "note": "VEUs must eliminate supply-chain dependencies on covered equipment and services",
+   "evidence": {
+    "provision": "Supp. No. 10 to part 748, para. 3",
+    "quote": "equipment and services listed by the Federal Communications Commission as covered by Section 2 of the Secure and Trusted Communications Networks Act of 2019"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": null,
+   "target_text": "National Industrial Security Program Operating Manual (NISPOM), 32 CFR 117.11(b)",
+   "note": "Standard for assessing foreign ownership, control or influence (FOCI) of VEUs",
+   "evidence": {
+    "provision": "Supp. No. 10 to part 748, para. 13",
+    "quote": "National Industrial Security Program Operating Manual (NISPOM) 32 CFR 117.11(b)"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": null,
+   "target_text": "NIST SP 800-53 controls, FedRAMP High baseline and FIPS-199 security categories",
+   "note": "Baseline security standard for VEU datacenters and model weights, attested annually by a FedRAMP-recognized 3PAO",
+   "evidence": {
+    "provision": "Supp. No. 10 to part 748, para. 14",
+    "quote": "consistent with the security requirements associated with FedRAMP High"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": null,
+   "target_text": "Department of Defense Unified Facilities Criteria 4-010-05",
+   "note": "Physical security requirements for VEU data centers (Sections 3-4.4.1, 3-4.6.10, 3-4.17.3)",
+   "evidence": {
+    "provision": "Supp. No. 10 to part 748, para. 14.f.i",
+    "quote": "Compliance with Department of Defense Unified Facilities Criteria 4–010–05"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": null,
+   "target_text": "NSA cybersecurity information sheet 'Deploying AI Systems Securely'; CISA Cross-Sector Cybersecurity Performance Goals (CPG 1.0)",
+   "note": "AI-specific cybersecurity practices required of VEUs",
+   "evidence": {
+    "provision": "Supp. No. 10 to part 748, para. 15.a",
+    "quote": "Ensure compliance with all best practices in the NSA cybersecurity information sheet ‘‘Deploying AI Systems Securely,’’ and the recommended actions for every CISA CPG 1.0 goal"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": null,
+   "target_text": "CISA Insider Threat Mitigation Guide",
+   "note": "Standard for the VEU insider-threat programme",
+   "evidence": {
+    "provision": "Supp. No. 10 to part 748, para. 18.c",
+    "quote": "in accordance with the Cybersecurity and Infrastructure Security Agency Insider Threat Mitigation Guide"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": "us-bis-adv-computing-2022",
+   "target_text": "BIS interim final rule of October 2022, 87 FR 62186",
+   "note": "Preamble background: earlier advanced computing controls that this rule extends (stated in the preamble only)",
+   "evidence": {
+    "provision": "Preamble, II",
+    "quote": "Accordingly, BIS imposed controls on these items in October 2022 (87 FR 62186, October 13, 2022)"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": "us-bis-adv-computing-2023",
+   "target_text": "BIS rule of October 2023, 88 FR 73458 (advanced computing items)",
+   "note": "Preamble background: October 2023 expansion of advanced computing controls (preamble only)",
+   "evidence": {
+    "provision": "Preamble, II",
+    "quote": "October 2023 (88 FR 73458, October 25, 2023"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": "us-bis-sme-2023",
+   "target_text": "BIS rule of October 2023, 88 FR 73424 (semiconductor manufacturing items)",
+   "note": "Preamble background (preamble only)",
+   "evidence": {
+    "provision": "Preamble, II",
+    "quote": "88 FR 73424, October 25, 2023), and further clarified such controls in April 2024"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": "us-bis-dc-veu-2024",
+   "target_text": "Data Center Validated End User Authorization rule, 89 FR 80080 (October 2, 2024)",
+   "note": "Preamble background: this rule restructures the Data Center VEU in § 748.15 into universal and national authorizations (preamble only)",
+   "evidence": {
+    "provision": "Preamble, II",
+    "quote": "BIS expanded the Validated End-User (VEU) Authorization in § 748.15 to facilitate the export of advanced computing ICs and related items to qualified data centers (89 FR 80080, October 2, 2024)."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": "us-bis-fdpr-hbm-2024",
+   "target_text": "BIS rule of December 2024, 89 FR 96790",
+   "note": "Preamble background: most recent update of the advanced computing controls (preamble only)",
+   "evidence": {
+    "provision": "Preamble, II",
+    "quote": "Mostly recently, BIS updated these controls in December 2024 (89 FR 96790, December 5, 2024)."
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "Bureau of Industry and Security (BIS), U.S. Department of Commerce",
+   "role": "designated",
+   "function": "Licensing and licence review policy; country allocations and their public tracking; NAC notifications, AIA/LPP certifications and reports; classification requests; VEU authorization, reporting, audits and revocation (Office of Exporter Services receives VEU requests and reports)",
+   "lei": null,
+   "ticker": null,
+   "evidence": {
+    "provision": "§ 748.15(a)(2)(iv)",
+    "quote": "Submit the request to: The Office of Exporter Services, Bureau of Industry and Security, U.S. Department of Commerce"
+   }
+  },
+  {
+   "name": "U.S. Department of State",
+   "role": "designated",
+   "function": "Reviews country allocations for subsequent years annually, together with BIS",
+   "lei": null,
+   "ticker": null,
+   "evidence": {
+    "provision": "§ 742.6(b)(10)(iii)(B)(2)",
+    "quote": "Together with the Departments of State, Energy, and Defense, BIS will review allocations for subsequent years on an annual basis."
+   }
+  },
+  {
+   "name": "U.S. Department of Energy",
+   "role": "designated",
+   "function": "Reviews country allocations annually with BIS; may issue technical opinions used to self-classify AI models under the 4E091 Note 2 exclusion",
+   "lei": null,
+   "ticker": null,
+   "evidence": {
+    "provision": "Supp. No. 1 to part 774, ECCN 4E091, Note 2.a.1",
+    "quote": "technical opinions issued by the U.S. AI Safety Institute and the Department of Energy"
+   }
+  },
+  {
+   "name": "U.S. Department of Defense",
+   "role": "designated",
+   "function": "Reviews country allocations annually with BIS",
+   "lei": null,
+   "ticker": null,
+   "evidence": {
+    "provision": "§ 742.6(b)(10)(iii)(B)(2)",
+    "quote": "Together with the Departments of State, Energy, and Defense, BIS will review allocations"
+   }
+  },
+  {
+   "name": "U.S. AI Safety Institute",
+   "role": "designated",
+   "function": "May issue technical opinions on which exporters may rely to self-classify AI models as outside ECCN 4E091",
+   "lei": null,
+   "ticker": null,
+   "evidence": {
+    "provision": "Supp. No. 1 to part 774, ECCN 4E091, Note 2.a.1",
+    "quote": "Self classifying by relying on guidance published by BIS or technical opinions issued by the U.S. AI Safety Institute and the Department of Energy"
+   }
+  },
+  {
+   "name": "FedRAMP Program Management Office",
+   "role": "designated",
+   "function": "Accredits and recognizes the Third-Party Assessment Organizations that attest VEU compliance with NIST 800-53",
+   "lei": null,
+   "ticker": null,
+   "evidence": {
+    "provision": "Supp. No. 10 to part 748, para. 14.b",
+    "quote": "3PAOs must be accredited and recognized by the FedRAMP Program Management Office"
+   }
+  },
+  {
+   "name": "U.S. Department of the Treasury",
+   "role": "designated",
+   "function": "Continues to receive notifications and information required under 31 CFR part 850; VEU submissions made only because of para. 3 go to BIS instead",
+   "lei": null,
+   "ticker": null,
+   "evidence": {
+    "provision": "Supp. No. 10 to part 748, para. 3",
+    "quote": "any notification or other information that would be required to be submitted pursuant to 31 CFR part 850 should continue to be submitted to the Department of the"
+   }
+  }
+ ],
+ "section_status": {},
+ "notes": "Tiering: the regulatory text does not use the word 'tier'. Destinations are sorted into (i) the 18 destinations plus the United States listed in Supplement No. 5(a) to part 740 (presumption of approval; AIA; UVEU headquarters), (ii) Macau and Country Group D:5 (presumption of denial), and (iii) all other destinations (country allocation of 790,000,000 TPP for 2025-2027, then denial); Supplement No. 5(b) ('higher country allocation' with government assurances) lists no destinations in this text. Several treatments also turn on where an entity or its ultimate parent is headquartered. Ultimate consignees and VEU owners are coded as data_center_owner and VEU operators as data_center_operator, the closest roles in the vocabulary. TPP volume caps and triggers use the 'volume' variable; percentage compute caps use 'other'. NVEU allocation quarters are coded as phase_in_step events dated to the first month of each quarter ('2027 Q1–4' as 2027-01). Inconsistencies in the text: the AIA reporting trigger (§ 740.27(c)) and the LPP shipment notification (§ 740.29(g)(3)) state no operator ('of 253,000,000', 'of 3,200,000'), while the preamble says 'more than 3,200,000'; both coded as >=. § 740.27(c) refers to a notification 'described in (b)(4)' but § 740.27(b) ends at (b)(3); § 748.15(a)(2)(ii)(B) cites 'paragraph 6 or Supplement No. 10' (read as 'of'); § 740.29(g)(2) refers to 'License Exception TPP' (read as LPP); ECCN 4E091 Note 1 refers to 'Note 2' for the definition of training operations (Technical Note 2); Note 3 to 3A090 refers to 'Note 2 or 3 to 3A090', which are not reproduced in this text; § 748.3(f) says 'an average of widely used benchmarks' while ECCN 4E091 Note 2 says 'an aggregate'. The effective date is printed 'January 13. 2025'. The text gives the filing time (Filed 1-13-25) and the signatory (Assistant Secretary for Export Administration) but no signing date. Status: the registry records the instrument as repealed on the basis of a BIS press release of 2025-05-13 announcing rescission; this text does not mention rescission and no repealed event is coded (left for the resolve stage, which needs an official source such as a Federal Register rescission notice). Exemption for intentional publication: Supplement No. 10 states that none of its provisions apply to or prevent intentional publication of model weights, data or code."
+}

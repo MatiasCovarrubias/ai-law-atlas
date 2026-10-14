@@ -1,0 +1,827 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "cl-ley21431-2022",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (connectors/fetch_texts.py)",
+  "url": "https://www.leychile.cl/Consulta/obtxml?opt=7&idNorma=1173544",
+  "retrieved": "2026-10-13",
+  "version": "as fetched",
+  "language": "es",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "employment_labor",
+   "algorithmic_decision_systems",
+   "data_protection"
+  ],
+  "primary_domain": "employment_labor",
+  "mechanisms": [
+   "mandate_obligation",
+   "disclosure_transparency",
+   "designation_tiering"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "platform_operator",
+   "employer",
+   "government_agency"
+  ],
+  "affected_roles": [
+   "workers"
+  ],
+  "decision_margins": [
+   "household:employment",
+   "household:data_privacy",
+   "firm:input_use",
+   "firm:compliance_process"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national"
+   ],
+   "description": "Applies to digital platform services provided in the territory.",
+   "evidence": {
+    "provision": "Art. 152 quáter P",
+    "quote": "empresas de plataformas digitales de servicios prestados en el territorio"
+   }
+  },
+  "agora_applications": [
+   "Transportation"
+  ],
+  "agora_harms": [
+   "Discrimination",
+   "Harm to health/safety"
+  ],
+  "agora_incentives": [
+   "Fines"
+  ],
+  "agora_risk_factors": [
+   "Bias",
+   "Transparency",
+   "Privacy"
+  ],
+  "agora_strategies": [
+   "Disclosure"
+  ]
+ },
+ "summary": {
+  "short": "Amends the Chilean Labour Code to regulate digital service platform companies and their workers, treating those working dependently as employees and setting pay floors, working-time, data, non-discrimination and protection rules for dependent and independent platform workers, from the first day of the sixth month after publication.",
+  "long": "Law 21.431 amends the Labour Code (Art. 38 and a new Chapter X, Arts. 152 quáter P to 152 quinquies I) to regulate work through digital service platforms. It defines platform service companies and platform workers, and treats a platform worker as dependent when the subordination conditions of Art. 7 are met, and as independent otherwise. Dependent workers' contracts must set out terms such as work location, remuneration method and a complaints channel, and their hourly pay may not fall below a proportion of the minimum monthly wage increased by 20%. Independent workers receive a written contract, a minimum hourly fee on the same basis, a minimum daily disconnection period of twelve continuous hours, 30 days' written notice of termination after six months of continuous service, and social security coverage. Common rules cover information on offered services, access to and portability of personal data, a duty to avoid algorithmic discrimination, safety training and protective equipment, and collective bargaining rights. The Dirección del Trabajo supervises compliance, and fines under Art. 506 are doubled for repeat offences. Transitional provisions give existing companies three years to meet the employer requirement in Art. 19(1) of the Labour Code and require an annual report by the Consejo Superior Laboral for three years.](truncated)"
+ },
+ "relations": [
+  {
+   "relation": "amends",
+   "target_text": "Código del Trabajo (texto refundido, coordinado y sistematizado, decreto con fuerza de ley Nº 1, 2002)",
+   "note": "The act inserts a new numeral 9 in art. 38(1) and a new Chapter X (arts. 152 quáter P to 152 quinquies I) in Título II, Libro I.",
+   "evidence": {
+    "provision": "Artículo único, numerales 1 y 2",
+    "quote": "Introdúcense las siguientes modificaciones en el Código del Trabajo"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Ley sobre Impuesto a la Renta (contenida en el artículo 1º del decreto ley Nº 824, de 1974)",
+   "note": "Tax treatment of independent workers' fees (art. 42 No. 2) and withholding obligation of the platform company (art. 74 No. 2).",
+   "evidence": {
+    "provision": "Artículo 152 quáter Y",
+    "quote": "de la Ley sobre Impuesto a la Renta, contenida en el artículo 1º del decreto ley Nº 824, de 1974"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Decreto ley Nº 3.500, de 1980 (sistema de pensiones)",
+   "note": "Social security coverage for independent platform workers is governed by art. 92 of this decree law.",
+   "evidence": {
+    "provision": "Artículo 152 quáter Y",
+    "quote": "Para tal efecto, se estará a lo señalado en el artículo 92 del decreto ley Nº 3.500, de 1980"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Ley de Tránsito (named without a number in the text)",
+   "note": "Safety equipment for workers using bicycles or motorcycles must meet certifications under the Ley de Tránsito.",
+   "evidence": {
+    "provision": "Artículo 152 quinquies F",
+    "quote": "conforme a la Ley de Tránsito"
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "Dirección del Trabajo",
+   "role": "designated",
+   "function": "Inspects compliance with the Chapter's rules, especially arts. 152 quáter Z and 152 quinquies E; the text sets fines under art. 506 for infringements.",
+   "evidence": {
+    "provision": "Artículo 152 quinquies I",
+    "quote": "La Dirección del Trabajo fiscalizará, dentro del ámbito de su competencia, el cumplimiento de las normas de este Capítulo"
+   }
+  },
+  {
+   "name": "Servicio de Impuestos Internos",
+   "role": "designated",
+   "function": "May establish by resolution an alternative method of documenting platform-mediated operations in place of the boleta de honorarios.",
+   "evidence": {
+    "provision": "Artículo 152 quáter Y",
+    "quote": "salvo que el Servicio de Impuestos Internos establezca, mediante resolución, otra forma de documentar la operación"
+   }
+  },
+  {
+   "name": "Consejo Superior Laboral",
+   "role": "addressee",
+   "function": "Must issue an annual report during the first three years evaluating implementation and results of the law, including the effects of the dependent/independent distinction; sent to the President and the labour committees of the Senate and Chamber of Deputies.",
+   "evidence": {
+    "provision": "Disposiciones transitorias, Artículo tercero",
+    "quote": "el Consejo Superior Laboral deberá emitir un informe anual en el que se evaluará la implementación y aplicación de la ley y sus resultados"
+   }
+  }
+ ],
+ "notes": "Annotated from the enacted text as published (promulgated 8 March 2022). Only relations and entities were requested; no other Tier A sections were coded. The Código del Trabajo is not in the registry, so its target_instrument_id is empty. Internal Código references (arts. 7, 10, 22, 33, 44, 163, 216, 314, 485, 506) are not coded as relations. Art. 152 quinquies I refers to fines under art. 506 without stating an amount here. Art. 152 quáter Y (independents) and art. 152 quáter V (dependents) both set a minimum hourly floor of the minimum monthly income plus 20 per cent, but state the divisor differently (180 hours; four times the weekly ordinary hours limit of art. 22). The text does not reconcile the two wordings. The transitional provisions (arts. primero and segundo) use dates tied to publication, which are not stated in the text.",
+ "events": [
+  {
+   "event": "introduced",
+   "date": null,
+   "date_type": "not_stated",
+   "date_text": "iniciado en una moción de los Honorables senadores",
+   "applies_to": "bill introduced by motion of senators",
+   "evidence": {
+    "provision": "Preamble (first paragraph)",
+    "quote": "iniciado en una moción de los Honorables senadores"
+   }
+  },
+  {
+   "event": "legislative_approval",
+   "date": null,
+   "date_type": "not_stated",
+   "date_text": "el H. Congreso Nacional ha dado su aprobación al siguiente proyecto de ley",
+   "applies_to": "final passage by Congreso Nacional",
+   "evidence": {
+    "provision": "Preamble (first paragraph)",
+    "quote": "el H. Congreso Nacional ha dado su aprobación al siguiente proyecto de ley"
+   }
+  },
+  {
+   "event": "signed",
+   "date": "2022-03-08",
+   "date_type": "absolute",
+   "date_text": "Santiago, 8 de marzo de 2022",
+   "applies_to": "promulgation by the President of the Republic",
+   "evidence": {
+    "provision": "Promulgation clause (after Disposiciones transitorias)",
+    "quote": "Santiago, 8 de marzo de 2022"
+   }
+  },
+  {
+   "event": "published",
+   "date": null,
+   "date_type": "not_stated",
+   "date_text": "publicación en el Diario Oficial (publication date not given in the text)",
+   "applies_to": "law as a whole",
+   "evidence": {
+    "provision": "Disposiciones transitorias, Artículo primero",
+    "quote": "a su publicación en el Diario Oficial"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "entrará en vigencia el primer día del sexto mes siguiente a su publicación en el Diario Oficial",
+   "anchor": "publication in the Diario Oficial",
+   "applies_to": "law as a whole",
+   "offset_value": 6,
+   "offset_unit": "months",
+   "anchor_event": "published",
+   "evidence": {
+    "provision": "Disposiciones transitorias, Artículo primero",
+    "quote": "entrará en vigencia el primer día del sexto mes siguiente a su publicación en el Diario Oficial"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "tendrán para hacerlo el plazo de tres años, contado desde la publicación de esta ley",
+   "anchor": "publication of this law",
+   "applies_to": "platform companies not meeting the requirement of art. 19 inc. 1 Labour Code at entry into force",
+   "offset_value": 3,
+   "offset_unit": "years",
+   "anchor_event": "published",
+   "evidence": {
+    "provision": "Disposiciones transitorias, Artículo segundo",
+    "quote": "tendrán para hacerlo el plazo de tres años, contado desde la publicación de esta ley"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "Durante los primeros tres años de vigencia de esta ley, el Consejo Superior Laboral deberá emitir un informe anual",
+   "anchor": "entry into force of this law (first three years)",
+   "applies_to": "Consejo Superior Laboral annual report",
+   "anchor_event": "entry_into_force",
+   "evidence": {
+    "provision": "Disposiciones transitorias, Artículo tercero",
+    "quote": "el Consejo Superior Laboral deberá emitir un informe anual"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "Los datos deberán ser entregados por la plataforma en el plazo de quince días hábiles contado desde la fecha de la solicitud",
+   "anchor": "date of the worker's request",
+   "applies_to": "delivery of worker's personal data on request",
+   "offset_value": 15,
+   "offset_unit": "business_days",
+   "evidence": {
+    "provision": "Artículo único, numeral 2 (inserting Código del Trabajo, Art. 152 quinquies D, second paragraph)",
+    "quote": "en el plazo de quince días hábiles contado desde la fecha de la solicitud"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "con al menos treinta días de anticipación",
+   "anchor": "termination of the contract",
+   "applies_to": "written notice of termination to independent platform workers with six months or more of continuous service",
+   "offset_value": -30,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Artículo único, numeral 2 (inserting Código del Trabajo, Art. 152 quinquies A)",
+    "quote": "con al menos treinta días de anticipación"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "Dentro del respectivo período de pago, el que no podrá exceder de un mes",
+   "anchor": "each payment period",
+   "applies_to": "payment of fees to independent platform workers",
+   "evidence": {
+    "provision": "Artículo único, numeral 2 (inserting Código del Trabajo, Art. 152 quáter Y)",
+    "quote": "Dentro del respectivo período de pago, el que no podrá exceder de un mes"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "wage_level",
+   "variable_text": "ingreso mínimo mensual determinado por ley (remuneración por hora efectivamente trabajada, trabajador dependiente)",
+   "operator": ">=",
+   "value": null,
+   "value_text": "no podrá ser inferior a la proporción del ingreso mínimo mensual determinado por ley, incrementado en un veinte por ciento",
+   "unit": "hourly remuneration",
+   "measurement": "Hourly remuneration for hours effectively worked, verified by the company in each payment period",
+   "level": "person",
+   "trigger": "obligation",
+   "consequence": "The company must verify in each payment period that remuneration meets the hourly floor and pay any shortfall",
+   "conditions": "Dependent platform workers (art. 7 subordination test); the text states the floor applies 'en cualquier caso' (in any case), including where hours are freely distributed",
+   "depends_on": "Monthly minimum income set by law (outside this text)",
+   "evidence": {
+    "provision": "Artículo 152 quáter V",
+    "quote": "la remuneración por hora efectivamente trabajada no podrá ser inferior a la proporción del ingreso mínimo mensual determinado por ley, incrementado en un veinte por ciento"
+   }
+  },
+  {
+   "variable": "wage_level",
+   "variable_text": "incremento del veinte por ciento sobre el ingreso mínimo mensual (trabajador dependiente)",
+   "operator": "=",
+   "value": 20,
+   "value_text": "incrementado en un veinte por ciento",
+   "unit": "percent",
+   "measurement": "Increment applied to the monthly minimum income to set the hourly floor",
+   "level": "person",
+   "trigger": "obligation",
+   "consequence": "Raises the hourly floor above the proportion of the monthly minimum income; the text states the increment is to remunerate waiting and other non-effective time",
+   "conditions": "Applies to dependent platform workers under art. 152 quáter V",
+   "depends_on": "Monthly minimum income set by law (outside this text)",
+   "evidence": {
+    "provision": "Artículo 152 quáter V",
+    "quote": "ingreso mínimo mensual determinado por ley, incrementado en un veinte por ciento"
+   }
+  },
+  {
+   "variable": "wage_level",
+   "variable_text": "número resultante de la multiplicación por cuatro del máximo de jornada semanal ordinaria (trabajador dependiente)",
+   "operator": "=",
+   "value": 4,
+   "value_text": "por el número resultante de la multiplicación por cuatro del máximo de jornada semanal ordinaria establecido en el artículo 22",
+   "unit": "multiple of maximum ordinary weekly working hours (art. 22)",
+   "measurement": "Divisor used to convert the monthly minimum income into an hourly floor",
+   "level": "person",
+   "trigger": "obligation",
+   "consequence": "Sets the hourly divisor for the dependent-worker minimum remuneration",
+   "conditions": "Maximum ordinary weekly working hours are fixed in art. 22 of the Labour Code, which is not in this text",
+   "depends_on": "Maximum ordinary weekly working hours under art. 22 of the Labour Code (outside this text)",
+   "evidence": {
+    "provision": "Artículo 152 quáter V",
+    "quote": "se dividirá el valor del ingreso mínimo mensual por el número resultante de la multiplicación por cuatro del máximo de jornada semanal ordinaria"
+   }
+  },
+  {
+   "variable": "wage_level",
+   "variable_text": "honorarios por cada hora de servicios efectivamente realizados (trabajador independiente)",
+   "operator": ">=",
+   "value": null,
+   "value_text": "no podrán ser inferiores a la proporción del ingreso mínimo mensual determinado por ley, aumentado en un veinte por ciento",
+   "unit": "hourly fee",
+   "measurement": "Fee per hour of services effectively performed, verified by the company in each payment period",
+   "level": "person",
+   "trigger": "obligation",
+   "consequence": "The company must verify in each payment period that fees meet the hourly floor and pay any shortfall",
+   "conditions": "Independent platform workers; hours counted as effectively performed service time",
+   "depends_on": "Monthly minimum income set by law (outside this text)",
+   "evidence": {
+    "provision": "Artículo 152 quáter Y",
+    "quote": "Los honorarios por cada hora de servicios efectivamente realizados no podrán ser inferiores a la proporción del ingreso mínimo mensual determinado por ley, aumentado en un veinte por ciento"
+   }
+  },
+  {
+   "variable": "wage_level",
+   "variable_text": "incremento del veinte por ciento sobre el ingreso mínimo mensual (trabajador independiente)",
+   "operator": "=",
+   "value": 20,
+   "value_text": "aumentado en un veinte por ciento",
+   "unit": "percent",
+   "measurement": "Increment applied to the monthly minimum income to set the hourly fee floor",
+   "level": "person",
+   "trigger": "obligation",
+   "consequence": "Raises the hourly fee floor above the proportion of the monthly minimum income",
+   "conditions": "Applies to independent platform workers under art. 152 quáter Y",
+   "depends_on": "Monthly minimum income set by law (outside this text)",
+   "evidence": {
+    "provision": "Artículo 152 quáter Y",
+    "quote": "ingreso mínimo mensual determinado por ley, aumentado en un veinte por ciento"
+   }
+  },
+  {
+   "variable": "wage_level",
+   "variable_text": "se dividirá el valor del ingreso mínimo mensual en 180 horas (trabajador independiente)",
+   "operator": "=",
+   "value": 180,
+   "value_text": "Para su cálculo se dividirá el valor del ingreso mínimo mensual en 180 horas.",
+   "unit": "hours",
+   "measurement": "Divisor used to convert the monthly minimum income into an hourly fee floor",
+   "level": "person",
+   "trigger": "obligation",
+   "consequence": "Sets the hourly divisor for the independent-worker minimum fee",
+   "conditions": "Applies to the hourly fee floor for independent platform workers",
+   "depends_on": "Monthly minimum income set by law (outside this text)",
+   "evidence": {
+    "provision": "Artículo 152 quáter Y",
+    "quote": "Para su cálculo se dividirá el valor del ingreso mínimo mensual en 180 horas."
+   }
+  },
+  {
+   "variable": "job_duration",
+   "variable_text": "a lo menos, 30 horas promedio cada semana",
+   "operator": ">=",
+   "value": 30,
+   "value_text": "durante los últimos tres meses hayan prestado servicios a través de una determinada plataforma por, a lo menos, 30 horas promedio cada semana",
+   "unit": "hours per week",
+   "measurement": "Average weekly hours over the last three months, counting effectively performed service time under art. 152 quáter Y, inciso cuarto",
+   "level": "person",
+   "trigger": "eligibility",
+   "consequence": "Independent platform workers meeting the threshold may use the procedure in Libro V, Título I, Capítulo II, Párrafo 6º for fundamental-rights matters under art. 485",
+   "conditions": "Applies to independent platform workers who have provided services through a particular platform; also covers dismissal in retaliation for union affiliation or collective bargaining",
+   "evidence": {
+    "provision": "Artículo 152 quinquies B",
+    "quote": "durante los últimos tres meses hayan prestado servicios a través de una determinada plataforma por, a lo menos, 30 horas promedio cada semana"
+   }
+  },
+  {
+   "variable": "job_duration",
+   "variable_text": "servicios continuos por seis meses o más a través de su plataforma",
+   "operator": ">=",
+   "value": 6,
+   "value_text": "que ha prestado servicios continuos por seis meses o más a través de su plataforma",
+   "unit": "months",
+   "measurement": "Continuous service through the platform",
+   "level": "person",
+   "trigger": "obligation",
+   "consequence": "Termination of the contract requires written notice given at least thirty days in advance",
+   "conditions": "Independent platform worker; the advance notice is not required where termination is due to a serious breach (incumplimiento grave) by the worker",
+   "evidence": {
+    "provision": "Artículo 152 quinquies A",
+    "quote": "que ha prestado servicios continuos por seis meses o más a través de su plataforma"
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "empresa de plataforma digital de servicios",
+   "defined_in": "Código del Trabajo, Art. 152 quáter Q, letra a)",
+   "evidence": {
+    "provision": "Artículo 152 quáter Q, letra a)",
+    "quote": "Aquella organización que, a título oneroso, administra o gestiona un sistema informático o de tecnología ejecutable en aplicaciones de dispositivos móviles o fijos que permite que un trabajador de plataformas digitales ejecute servicios"
+   }
+  },
+  {
+   "term": "plataformas que se limiten a publicar anuncios (excluded from empresa de plataforma digital de servicios)",
+   "defined_in": "Código del Trabajo, Art. 152 quáter Q, letra a), second paragraph",
+   "evidence": {
+    "provision": "Artículo 152 quáter Q, letra a)",
+    "quote": "aquellas plataformas que se limiten a publicar anuncios de prestación de servicios de personas naturales o jurídicas"
+   }
+  },
+  {
+   "term": "trabajador de plataformas digitales",
+   "defined_in": "Código del Trabajo, Art. 152 quáter Q, letra b)",
+   "evidence": {
+    "provision": "Artículo 152 quáter Q, letra b)",
+    "quote": "Aquel que ejecuta servicios personales, sea a cuenta propia o ajena, solicitados por usuarios de una aplicación administrada o gestionada por una empresa de plataforma digital de servicios."
+   }
+  },
+  {
+   "term": "trabajador de plataformas digitales dependiente",
+   "defined_in": "Código del Trabajo, Art. 152 quáter R (by reference to art. 7)",
+   "evidence": {
+    "provision": "Artículo 152 quáter R",
+    "quote": "Los trabajadores de plataformas digitales que, en conformidad al artículo 7º, presten servicios personales para una empresa de plataforma digital de servicios bajo vínculo de subordinación y dependencia"
+   }
+  },
+  {
+   "term": "trabajador de plataformas digitales independiente",
+   "defined_in": "Código del Trabajo, Art. 152 quáter W (by reference to art. 7)",
+   "evidence": {
+    "provision": "Artículo 152 quáter W",
+    "quote": "es decir, aquellos que no se realicen en los términos señalados en el artículo 7º del presente Código."
+   }
+  },
+  {
+   "term": "jornada de trabajo (for this Chapter)",
+   "defined_in": "Código del Trabajo, Art. 152 quáter U",
+   "evidence": {
+    "provision": "Artículo 152 quáter U",
+    "quote": "se considera jornada de trabajo todo el tiempo durante el cual el trabajador se encuentre a disposición de la empresa de plataforma digital de servicios, a partir del acceso a la infraestructura digital y hasta que se desconecte voluntariamente"
+   }
+  },
+  {
+   "term": "jornada pasiva",
+   "defined_in": "Código del Trabajo, Art. 152 quáter U, third paragraph",
+   "evidence": {
+    "provision": "Artículo 152 quáter U",
+    "quote": "esto es, el tiempo en que el trabajador o la trabajadora se encuentra a disposición de la empresa de plataforma digital de servicios sin realizar labores por causas que no le son imputables"
+   }
+  },
+  {
+   "term": "horas de trabajo efectivamente realizado",
+   "defined_in": "Código del Trabajo, Art. 152 quáter U, third paragraph",
+   "evidence": {
+    "provision": "Artículo 152 quáter U",
+    "quote": "de las horas de trabajo efectivamente realizado, es decir, aquellas que median entre el inicio del servicio asignado y su conclusión en los términos pactados"
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "other",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "Dependent platform workers' employment contract must state: nature of services and terms (including personal data treatment and effect of user ratings), pay method and period, zone, contact criteria, and whether working hours are free or subject to general rules.",
+   "applies_from": "from entry into force (Art. primero transitorio)",
+   "conditional_on": "dependent platform workers (Art. 152 quáter R)",
+   "evidence": {
+    "provision": "Art. 152 quáter S",
+    "quote": "el contrato de trabajo de los trabajadores de plataformas digitales dependientes deberá indicar:"
+   }
+  },
+  {
+   "type": "complaint_mechanism",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "Designate an official channel for objections and complaints about pay, work records, assignment and client evaluations, with a physical office, local phone and responsible representative; must be attended by a person on request.",
+   "applies_from": "from entry into force (Art. primero transitorio)",
+   "conditional_on": "dependent platform workers (Art. 152 quáter R)",
+   "evidence": {
+    "provision": "Art. 152 quáter S letra c)",
+    "quote": "La designación de un canal oficial donde el trabajador pueda presentar sus objeciones, reclamos o requerimientos"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "Inform dependent platform workers in writing of the risks of their work, preventive measures and correct work means for each case.",
+   "applies_from": "from entry into force (Art. primero transitorio)",
+   "conditional_on": "dependent platform workers (Art. 152 quáter R)",
+   "evidence": {
+    "provision": "Art. 152 quáter T",
+    "quote": "deberá informar por escrito al trabajador de plataformas digitales dependiente acerca de los riesgos que entrañan sus labores"
+   }
+  },
+  {
+   "type": "record_keeping",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "At its own cost, implement a reliable mechanism recording working time of platform workers providing services in Chile, identifying passive hours separately from effectively worked hours.",
+   "applies_from": "from entry into force (Art. primero transitorio)",
+   "conditional_on": "platform workers providing services in the territory",
+   "evidence": {
+    "provision": "Art. 152 quáter U",
+    "quote": "Las plataformas digitales deberán implementar a su costo un mecanismo fidedigno de registro de la jornada"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "For dependent workers, verify each payment period that remuneration for services provided meets the hourly minimum (monthly minimum income plus 20%, divided by four times the ordinary weekly maximum hours) and pay any difference.",
+   "applies_from": "from entry into force (Art. primero transitorio)",
+   "conditional_on": "dependent platform workers (Art. 152 quáter R)",
+   "evidence": {
+    "provision": "Art. 152 quáter V",
+    "quote": "deberá verificar que las remuneraciones devengadas por los servicios efectivamente prestados cumplan con estos valores mínimos"
+   }
+  },
+  {
+   "type": "record_keeping",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "Where pay is based on services provided to users, the pay statement must include an annex detailing each operation and the calculation method.",
+   "applies_from": "from entry into force (Art. primero transitorio)",
+   "conditional_on": "remuneration paid per services provided to users",
+   "evidence": {
+    "provision": "Art. 152 quáter V",
+    "quote": "la liquidación de remuneraciones se deberá contener en un anexo, que constituye parte integrante de la misma"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "For independent workers, limit its role to coordinating contact between workers and users, while setting general terms and conditions for operating on its systems.",
+   "applies_from": "from entry into force (Art. primero transitorio)",
+   "conditional_on": "independent platform workers",
+   "evidence": {
+    "provision": "Art. 152 quáter W",
+    "quote": "deberá limitarse a coordinar el contacto entre el trabajador de plataformas digitales independiente y los usuarios"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "Independent workers' service contract must be in writing, in clear Spanish, and state items a) to j) (parties, price in Chilean pesos, contact criteria, data protection rules, maximum continuous connection time, cancellation rules, etc.); workers may be enabled only after express acceptance, and modifications require acceptance.",
+   "applies_from": "from entry into force (Art. primero transitorio)",
+   "conditional_on": "independent platform workers",
+   "evidence": {
+    "provision": "Art. 152 quáter X",
+    "quote": "deberá constar por escrito e indicar, en un lenguaje claro, sencillo y en idioma castellano, a lo menos, lo siguiente"
+   }
+  },
+  {
+   "type": "record_keeping",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "Deliver a copy of the independent worker contract to the worker and keep another copy available in the platform's system for the parties.",
+   "applies_from": "from entry into force (Art. primero transitorio)",
+   "conditional_on": "independent platform workers",
+   "evidence": {
+    "provision": "Art. 152 quáter X",
+    "quote": "Una copia del contrato deberá ser entregada, física o electrónicamente, al trabajador de plataformas digitales independiente"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "Pay independent workers' fees within a payment period not exceeding one month; hourly fees not below the monthly minimum income plus 20% (divided by 180 hours), with verification and payment of any difference; provide operational facilities for payment.",
+   "applies_from": "from entry into force (Art. primero transitorio)",
+   "conditional_on": "independent platform workers",
+   "evidence": {
+    "provision": "Art. 152 quáter Y",
+    "quote": "deberá pagar al trabajador de plataformas digitales independiente los honorarios que correspondan"
+   }
+  },
+  {
+   "type": "record_keeping",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "Require independent workers to issue the required tax documentation (such as a boleta de honorarios) for services to users, unless the tax authority sets another method by resolution.",
+   "applies_from": "from entry into force (Art. primero transitorio)",
+   "conditional_on": "independent platform workers",
+   "evidence": {
+    "provision": "Art. 152 quáter Y",
+    "quote": "deberán exigir que el trabajador de plataformas digitales independiente extienda la documentación tributaria que corresponde"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "Ensure independent workers have at least 12 continuous hours of disconnection within any 24-hour period.",
+   "applies_from": "from entry into force (Art. primero transitorio)",
+   "conditional_on": "independent platform workers",
+   "evidence": {
+    "provision": "Art. 152 quáter Z",
+    "quote": "deberá resguardar el cumplimiento de un tiempo de desconexión mínimo del trabajador de plataformas digitales independiente de doce horas continuas dentro de un período de veinticuatro horas"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "platform_operator",
+   "modality": "shall_not",
+   "summary": "May disconnect an independent worker temporarily only to give effect to the disconnection right; may not impose temporary disconnections or other sanctions based on refusing a service or not connecting for a period.",
+   "applies_from": "from entry into force (Art. primero transitorio)",
+   "conditional_on": "independent platform workers",
+   "evidence": {
+    "provision": "Art. 152 quáter Z",
+    "quote": "no podrá efectuar desconexiones temporales u otras medidas de sanción basadas en hechos como el rechazo"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "Give written notice at least thirty days in advance of terminating an independent worker's contract after six or more months of continuous service; no advance notice is required for serious breach by the worker.",
+   "applies_from": "from entry into force (Art. primero transitorio)",
+   "conditional_on": "independent worker with six or more months of continuous service through the platform",
+   "evidence": {
+    "provision": "Art. 152 quinquies A",
+    "quote": "deberá comunicar por escrito el término del contrato al trabajador de plataformas digitales independiente"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "Respect the constitutional guarantees of independent platform workers.",
+   "applies_from": "from entry into force (Art. primero transitorio)",
+   "conditional_on": "independent platform workers",
+   "evidence": {
+    "provision": "Art. 152 quinquies B",
+    "quote": "deberá respetar las garantías constitucionales del trabajador de plataformas digitales independiente"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "When offering a service and before acceptance, inform the worker of the place of performance, the user's identity and the payment method; for deliveries, the address; for transport, origin and destination.",
+   "applies_from": "from entry into force (Art. primero transitorio)",
+   "conditional_on": "platform workers, dependent or independent",
+   "evidence": {
+    "provision": "Art. 152 quinquies C",
+    "quote": "deberá informar al trabajador de plataforma digital, al momento de ofrecer un servicio y previo a su aceptación"
+   }
+  },
+  {
+   "type": "data_minimization",
+   "addressee": "platform_operator",
+   "modality": "shall_not",
+   "summary": "Worker data is strictly confidential and may be used by the platform only in the context of the services it provides, or released by court order for the purposes requested.",
+   "applies_from": "from entry into force (Art. primero transitorio)",
+   "conditional_on": "platform workers, dependent or independent",
+   "evidence": {
+    "provision": "Art. 152 quinquies D",
+    "quote": "sólo podrán ser utilizados por la empresa de plataforma digital de servicios en el contexto de los servicios que la misma empresa presta"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "On the worker's request, deliver access to personal data (especially data on ratings affecting work) within fifteen business days, and enable data portability in a structured, common format.",
+   "applies_from": "from entry into force (Art. primero transitorio)",
+   "conditional_on": "platform workers, dependent or independent",
+   "evidence": {
+    "provision": "Art. 152 quinquies D",
+    "quote": "Los datos deberán ser entregados por la plataforma en el plazo de quince días hábiles contado desde la fecha de la solicitud."
+   }
+  },
+  {
+   "type": "cooperation_with_authority",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "If required for inspection by competent authorities, allow access to the algorithm's programming, complete explanations of how it makes decisions, the data used to train it, and other relevant factors.",
+   "applies_from": "from entry into force (Art. primero transitorio)",
+   "conditional_on": "request by competent authorities",
+   "evidence": {
+    "provision": "Art. 152 quinquies D",
+    "quote": "deberán permitir el acceso a la programación del algoritmo"
+   }
+  },
+  {
+   "type": "bias_mitigation",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "In implementing algorithms, respect equality and non-discrimination, taking all necessary measures to avoid discrimination in work assignment, bonuses, pay calculation and other matters, including apparently neutral conduct with disproportionate effects.",
+   "applies_from": "from entry into force (Art. primero transitorio)",
+   "conditional_on": "platform workers, dependent or independent",
+   "evidence": {
+    "provision": "Art. 152 quinquies E",
+    "quote": "deberá respetar el principio de igualdad y el de no discriminación"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "Inform workers about the mechanisms and procedures adopted to comply with the non-discrimination rule.",
+   "applies_from": "from entry into force (Art. primero transitorio)",
+   "conditional_on": "platform workers, dependent or independent",
+   "evidence": {
+    "provision": "Art. 152 quinquies E",
+    "quote": "deberá informar a sus trabajadores sobre los mecanismos y procedimientos que adopte"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "Provide the worker with adequate and timely safety training; for two-wheeler workers a helmet, knee and elbow protection; and property damage insurance with minimum annual cover of 50 unidades de fomento.",
+   "applies_from": "from entry into force (Art. primero transitorio)",
+   "conditional_on": "platform workers; equipment duty applies to two-wheeler users",
+   "evidence": {
+    "provision": "Art. 152 quinquies F",
+    "quote": "La empresa de plataforma digital de servicios deberá proporcionar al trabajador"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "For calculating statutory severance on termination of a dependent worker's contract, use average remuneration over the last year worked, excluding unworked months, and apply article 163 if that amount is higher; the provision names no addressee.",
+   "applies_from": "from entry into force (Art. primero transitorio)",
+   "conditional_on": "termination of a dependent platform worker's contract",
+   "evidence": {
+    "provision": "Art. 152 quinquies G",
+    "quote": "se considerará como base de cálculo la remuneración promedio del último año trabajado"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "When a draft collective agreement is presented to two or more platform companies and each agrees to negotiate, each company must decide whether to negotiate jointly or separately and communicate the decision to the union negotiating committee.",
+   "applies_from": "from entry into force (Art. primero transitorio)",
+   "conditional_on": "draft collective agreement presented to two or more platform companies",
+   "evidence": {
+    "provision": "Art. 152 quinquies H",
+    "quote": "cada empresa deberá decidir si negocia en forma conjunta o separada"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Dirección del Trabajo supervises compliance with the chapter, especially articles 152 quáter Z and 152 quinquies E, within its competence.",
+   "applies_from": "from entry into force (Art. primero transitorio)",
+   "evidence": {
+    "provision": "Art. 152 quinquies I",
+    "quote": "La Dirección del Trabajo fiscalizará, dentro del ámbito de su competencia, el cumplimiento de las normas de este Capítulo"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "Platforms that do not meet the requirement of article 19 first paragraph of the Labour Code on the entry-into-force date have three years from publication of the law to comply.",
+   "applies_from": "three years from publication of the law (Art. segundo transitorio)",
+   "conditional_on": "platforms not compliant with article 19 inciso primero at entry into force",
+   "evidence": {
+    "provision": "Art. segundo transitorio",
+    "quote": "tendrán para hacerlo el plazo de tres años, contado desde la publicación de esta ley"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Consejo Superior Laboral must issue an annual report during the first three years evaluating implementation and results, especially the effects of the dependent/independent distinction, sent to the President and the labour committees of both chambers.",
+   "applies_from": "during the first three years of the law's effect (Art. tercero transitorio)",
+   "evidence": {
+    "provision": "Art. tercero transitorio",
+    "quote": "el Consejo Superior Laboral deberá emitir un informe anual"
+   }
+  }
+ ],
+ "enforcement": [
+  {
+   "sanction_type": "administrative_fine",
+   "authority": "Dirección del Trabajo",
+   "triggered_by": "Infringements of the obligations in Art. 152 quáter Z (minimum disconnection time for independent platform workers) and Art. 152 quinquies E (non-discrimination in automated decision-making), within the Dirección del Trabajo's supervisory remit",
+   "max_penalty_text": "Multas a que se refiere el artículo 506 (amount not stated in this text)",
+   "penalty_formula": "Fines under Art. 506 of the Código del Trabajo, doubled in case of recidivism (reincidencia)",
+   "penalty_reference": "Código del Trabajo, art. 506",
+   "cure_period": "Not stated in this text",
+   "evidence": {
+    "provision": "Art. 152 quinquies I",
+    "quote": "Las infracciones a este respecto se sancionarán con las multas a que se refiere el artículo 506, las que se duplicarán en caso de reincidencia."
+   }
+  }
+ ],
+ "section_status": {}
+}

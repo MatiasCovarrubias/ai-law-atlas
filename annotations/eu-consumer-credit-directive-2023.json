@@ -1,0 +1,2201 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "eu-consumer-credit-directive-2023",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (connectors/fetch_texts.py)",
+  "url": "http://publications.europa.eu/resource/cellar/12d92010-76c8-11ee-99ba-01aa75ed71a1.0006.03/DOC_1",
+  "retrieved": "2026-10-13",
+  "version": "as fetched",
+  "language": "en",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "consumer_protection",
+   "data_protection",
+   "algorithmic_decision_systems",
+   "data_access_sharing"
+  ],
+  "primary_domain": "consumer_protection",
+  "mechanisms": [
+   "mandate_obligation",
+   "prohibition_ban",
+   "licensing_permit_certification",
+   "registration_notification",
+   "disclosure_transparency",
+   "liability_rule",
+   "tariff_price_regulation",
+   "institution_setup",
+   "standard_setting"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "financial_institution",
+   "advertiser_campaign",
+   "data_controller",
+   "data_holder",
+   "government_agency"
+  ],
+  "affected_roles": [
+   "consumers_users"
+  ],
+  "decision_margins": [
+   "firm:entry_market_access",
+   "firm:product_design_release",
+   "firm:pricing",
+   "firm:compliance_process",
+   "household:access",
+   "household:prices",
+   "household:data_privacy",
+   "household:information"
+  ],
+  "territorial_scope": {
+   "types": [
+    "supranational"
+   ],
+   "description": "Applies to consumer credit agreements under an EU directive, implemented through national transposition by each Member State.",
+   "evidence": {
+    "provision": "Art. 50",
+    "quote": "This Directive is addressed to the Member States."
+   }
+  },
+  "agora_applications": [
+   "Finance and investment"
+  ],
+  "agora_harms": [
+   "Financial loss",
+   "Discrimination"
+  ],
+  "agora_incentives": [
+   "Fines"
+  ],
+  "agora_risk_factors": [
+   "Interpretability and explainability",
+   "Privacy"
+  ],
+  "agora_strategies": [
+   "Disclosure",
+   "Disclosure: In standard form",
+   "Licensing, registration, and certification",
+   "Input controls: Data use"
+  ]
+ },
+ "summary": {
+  "short": "Harmonises EU rules on consumer credit agreements, covering credit information, advertising, creditworthiness assessment, database access, withdrawal, early repayment and caps, and supervision. Repeals Directive 2008/48/EC; Member States apply the measures from 20 November 2026.",
+  "long": "Directive (EU) 2023/2225 sets a harmonised framework for consumer credit agreements and repeals Directive 2008/48/EC. Addressed to Member States, it requires transposition by 20 November 2025 and applies from 20 November 2026. It covers most consumer credit, excluding among others mortgage-secured credit, credit above EUR 100 000 (renovation credit excepted) and certain employer or interest-free arrangements. Creditors and credit intermediaries must meet advertising standards, provide standard pre-contractual information, give adequate explanations, and assess creditworthiness before granting credit. Tying practices and unsolicited credit are prohibited. Where creditworthiness uses automated processing, consumers may obtain human intervention and an explanation. The directive also sets rules on credit databases, overdrafts and overrunning, withdrawal within 14 days, and early repayment compensation capped at 1% or 0.5% of the amount repaid. It requires forbearance measures and debt advisory referrals, staff competence, and admission or registration of non-credit creditors. Member States must introduce measures against excessive borrowing rates, such as caps, and designate competent authorities. Penalties must be effective, proportionate and dissuasive, and may include fines."
+ },
+ "relations": [
+  {
+   "relation": "legal_basis",
+   "target_text": "Treaty on the Functioning of the European Union, Article 114",
+   "note": "Preamble cites Article 114 TFEU as the basis for the directive (no registry ID supplied).",
+   "evidence": {
+    "provision": "Preamble",
+    "quote": "Having regard to the Treaty on the Functioning of the European Union, and in particular Article 114 thereof,"
+   }
+  },
+  {
+   "relation": "replaces",
+   "target_text": "Directive 2008/48/EC",
+   "note": "Article 47 repeals Directive 2008/48/EC from 20 November 2026 and keeps it applying to credit agreements existing on that date until termination. Recital 97 describes this as repeal and replacement.",
+   "evidence": {
+    "provision": "Article 47",
+    "quote": "Directive 2008/48/EC is repealed with effect from 20 November 2026."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive 2002/65/EC",
+   "note": "Article 26(7) disapplies Articles 6 and 7 of Directive 2002/65/EC where the consumer has a withdrawal right under this Directive.",
+   "evidence": {
+    "provision": "Article 26(7)",
+    "quote": "Articles 6 and 7 of Directive 2002/65/EC shall not apply."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) 2016/679 (GDPR)",
+   "note": "Article 13 and other provisions apply without prejudice to the GDPR; Article 18(3) and Article 19(5) restrict processing of special categories of data.",
+   "evidence": {
+    "provision": "Article 13",
+    "quote": "Without prejudice to Regulation (EU) 2016/679, Member States shall require that creditors and credit intermediaries inform consumers"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive 2005/29/EC",
+   "note": "Article 7 and Article 8(6) apply without prejudice to the unfair commercial practices directive.",
+   "evidence": {
+    "provision": "Article 7",
+    "quote": "Without prejudice to Directive 2005/29/EC, Member States shall require that any advertising"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive 2013/11/EU",
+   "note": "Article 40(1) requires out-of-court dispute resolution entities to meet the quality requirements of Directive 2013/11/EU.",
+   "evidence": {
+    "provision": "Article 40(1)",
+    "quote": "shall comply with the quality requirements laid down by Directive 2013/11/EU"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) 2017/2394",
+   "note": "Article 41(4) requires competent authorities to meet the criteria in Article 5 of Regulation (EU) 2017/2394; Article 44(2) refers to its Article 21.",
+   "evidence": {
+    "provision": "Article 41(4)",
+    "quote": "fulfil the criteria set out in Article 5 of Regulation (EU) 2017/2394"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) No 1093/2010 (European Banking Authority)",
+   "note": "Article 41(3)(a) defines competent authorities by reference to Article 4(2) of Regulation (EU) No 1093/2010.",
+   "evidence": {
+    "provision": "Article 41(3)(a)",
+    "quote": "competent authorities as defined in Article 4, point (2), of Regulation (EU) No 1093/2010"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) No 575/2013",
+   "note": "Article 37(2)(a) exempts credit institutions defined in Article 4(1)(1) of Regulation (EU) No 575/2013 from the admission and registration requirement; Article 2(2)(e) also refers to it.",
+   "evidence": {
+    "provision": "Article 37(2)(a)",
+    "quote": "credit institutions as defined in Article 4(1), point (1), of Regulation (EU) No 575/2013;"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive (EU) 2015/2366",
+   "note": "Article 37(2)(b) exempts payment institutions from the admission and registration requirement for listed services.",
+   "evidence": {
+    "provision": "Article 37(2)(b)",
+    "quote": "payment institutions as defined in Article 4, point (4), of Directive (EU) 2015/2366"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive 2009/110/EC",
+   "note": "Article 37(2)(c) exempts electronic money institutions from the admission and registration requirement for credit granted under Directive 2009/110/EC.",
+   "evidence": {
+    "provision": "Article 37(2)(c)",
+    "quote": "electronic money institutions as defined in Article 2, point (1), of Directive 2009/110/EC"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive 2014/65/EU",
+   "note": "Article 2(2)(e) excludes certain credit agreements concluded with investment firms as defined in Directive 2014/65/EU.",
+   "evidence": {
+    "provision": "Article 2(2)(e)",
+    "quote": "investment firms as defined in Article 4(1), point (1), of Directive 2014/65/EU"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive 2011/83/EU",
+   "note": "Article 2(2)(h) uses the definition of distance contracts in Article 2, point 7 of Directive 2011/83/EU for the deferred-payment exclusion.",
+   "evidence": {
+    "provision": "Article 2(2)(h)",
+    "quote": "within the meaning of Article 2, point 7 of Directive 2011/83/EU"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive (EU) 2015/1535",
+   "note": "Article 2(2)(h) uses the definition of information society services in Article 1(1)(b) of Directive (EU) 2015/1535.",
+   "evidence": {
+    "provision": "Article 2(2)(h)",
+    "quote": "Article 1(1), point (b), of Directive (EU) 2015/1535"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive (EU) 2021/2167",
+   "note": "Article 3(22) defines debt advisory services by excluding credit purchasers and credit servicers as defined in Article 3, points (6) and (8), of Directive (EU) 2021/2167.",
+   "evidence": {
+    "provision": "Article 3(22)",
+    "quote": "credit purchasers or credit servicers as defined in Article 3, points (6) and (8), of Directive (EU) 2021/2167"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) 2016/1011",
+   "note": "Article 10(5) refers to the benchmark definition in Article 3(1), point (3), of Regulation (EU) 2016/1011.",
+   "evidence": {
+    "provision": "Article 10(5), final paragraph",
+    "quote": "Article 3(1), point (3), of Regulation (EU) 2016/1011"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) 2020/1503",
+   "note": "Article 46(2) refers to crowdfunding platforms as defined in Article 2(1)(d) of Regulation (EU) 2020/1503 for a Commission assessment.",
+   "evidence": {
+    "provision": "Article 46(2)",
+    "quote": "as defined in Article 2(1), point (d) of Regulation (EU) 2020/1503"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Commission Recommendation 2003/361/EC",
+   "note": "Articles 2(2)(h) and 37(3) use the SME definition in Recommendation 2003/361/EC for exemptions.",
+   "evidence": {
+    "provision": "Article 37(3)",
+    "quote": "micro, small and medium-sized enterprises as defined in Recommendation 2003/361/EC"
+   }
+  },
+  {
+   "relation": "repeals",
+   "target_text": "Directive 2008/48/EC",
+   "note": "Stated in the footnote describing this Directive's title ('repealing Directive 2008/48/EC'). Annex IV's correlation table maps provisions of 2008/48/EC to this Directive. Target not in registry, so target_instrument_id is left empty.",
+   "evidence": {
+    "provision": "Annex I, footnote (^2)",
+    "quote": "on credit agreements for consumers and repealing Directive 2008/48/EC"
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "Member States",
+   "role": "addressee",
+   "function": "Addressees of the directive, which must transpose it and apply the measures from 20 November 2026 (Articles 48(1) and 50).",
+   "evidence": {
+    "provision": "Article 50",
+    "quote": "This Directive is addressed to the Member States."
+   }
+  },
+  {
+   "name": "national competent authorities",
+   "role": "designated",
+   "function": "Designated by Member States to ensure the application and enforcement of the directive; must have investigation and enforcement powers (Article 41(1)).",
+   "evidence": {
+    "provision": "Article 41(1)",
+    "quote": "Member States shall designate the national competent authorities empowered to ensure the application and enforcement of this Directive"
+   }
+  },
+  {
+   "name": "European Banking Authority",
+   "role": "designated",
+   "function": "Publishes by 20 November 2029 a report on implementation of the measures limiting borrowing rates, APRCs or total costs of credit (Article 31(4)).",
+   "evidence": {
+    "provision": "Article 31(4)",
+    "quote": "By 20 November 2029 the European Banking Authority shall publish a report on the implementation of the measures"
+   }
+  },
+  {
+   "name": "European Commission",
+   "role": "designated",
+   "function": "Empowered to adopt delegated acts (Articles 30(5) and 45) and required to publish the list of competent authorities (Article 41(8)).",
+   "evidence": {
+    "provision": "Article 41(8)",
+    "quote": "The Commission shall publish a list of the competent authorities in the Official Journal of the European Union"
+   }
+  }
+ ],
+ "notes": "This part covers the recitals and the operative Articles 1 to 50 as supplied, plus the footnotes. Annexes I to IV are referred to but are not included in this extract and are not annotated here. No registry IDs were supplied, so target_instrument_id is left empty. Recital 97 describes Directive 2008/48/EC as repealed and replaced; Article 47 repeals it from 20 November 2026 but keeps it applying to existing agreements until termination. Article 2(2)(l) also exempts credit agreements existing on 20 November 2026, with listed articles applying to open-end agreements. Relations and entities are the only sections annotated in this part; no events, thresholds, obligations, enforcement or definitions were coded. Part 2 covers Annexes I to IV only (standard information forms, APR equation and assumptions, correlation table) and contains no operative articles. Relations are limited to the repeal of Directive 2008/48/EC stated in the Annex I footnote; references to this Directive itself are not coded. Annex I (item 1) and Annex II (item 1) include a where-applicable line stating that the price was personalised on the basis of automated decision-making. Annex II omits the 14-calendar-day right-of-withdrawal sentence that appears in Annex I. Annex III II(h) assumes a ceiling of EUR 1 500 where the credit ceiling has not been agreed, as a calculation assumption. Creditor, credit intermediary and supervisory authority appear only as generic placeholders in square brackets, not as named bodies.",
+ "events": [
+  {
+   "event": "signed",
+   "date": "2023-10-18",
+   "date_type": "absolute",
+   "date_text": "Done at Strasbourg, 18 October 2023.",
+   "applies_to": "Directive (EU) 2023/2225",
+   "evidence": {
+    "provision": "Final provisions (signature block)",
+    "quote": "Done at Strasbourg, 18 October 2023."
+   }
+  },
+  {
+   "event": "adopted",
+   "date": "2023-10-18",
+   "date_type": "absolute",
+   "date_text": "of 18 October 2023",
+   "applies_to": "Directive (EU) 2023/2225",
+   "evidence": {
+    "provision": "Title",
+    "quote": "of 18 October 2023"
+   }
+  },
+  {
+   "event": "consultation",
+   "date": "2021-08-26",
+   "date_type": "absolute",
+   "date_text": "delivered an opinion on 26 August 2021",
+   "applies_to": "European Data Protection Supervisor (consulted under Regulation (EU) 2018/1725, Art. 42(1))",
+   "evidence": {
+    "provision": "Recital (98)",
+    "quote": "delivered an opinion on 26 August 2021"
+   }
+  },
+  {
+   "event": "passed_chamber",
+   "date": "2023-09-12",
+   "date_type": "absolute",
+   "date_text": "Position of the European Parliament of 12 September 2023",
+   "applies_to": "European Parliament (position at first reading)",
+   "evidence": {
+    "provision": "Preamble, footnote (^2)",
+    "quote": "Position of the European Parliament of 12 September 2023"
+   }
+  },
+  {
+   "event": "legislative_approval",
+   "date": "2023-10-09",
+   "date_type": "absolute",
+   "date_text": "decision of the Council of 9 October 2023",
+   "applies_to": "Council of the European Union (final approval)",
+   "evidence": {
+    "provision": "Preamble, footnote (^2)",
+    "quote": "decision of the Council of 9 October 2023"
+   }
+  },
+  {
+   "event": "published",
+   "date": "2023-10-30",
+   "date_type": "absolute",
+   "date_text": "30.10.2023",
+   "applies_to": "Official Journal of the European Union, Series L",
+   "evidence": {
+    "provision": "Header (Official Journal, Series L 2023/2225)",
+    "quote": "30.10.2023"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2023-11-19",
+   "date_type": "relative",
+   "date_text": "shall enter into force on the twentieth day following that of its publication in the Official Journal of the European Union",
+   "anchor": "publication in the Official Journal of the European Union",
+   "applies_to": "Directive (EU) 2023/2225",
+   "offset_value": 20,
+   "offset_unit": "days",
+   "anchor_event": "published",
+   "evidence": {
+    "provision": "Art. 49",
+    "quote": "shall enter into force on the twentieth day following that of its publication"
+   },
+   "date_computed_from": "published 2023-10-30 (text) + 20 days"
+  },
+  {
+   "event": "deadline",
+   "date": "2025-11-20",
+   "date_type": "absolute",
+   "date_text": "by 20 November 2025",
+   "applies_to": "Member States: adoption and publication of national transposing measures",
+   "evidence": {
+    "provision": "Art. 48(1)",
+    "quote": "Member States shall adopt and publish, by 20 November 2025"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2025-11-20",
+   "date_type": "absolute",
+   "date_text": "at the latest by 20 November 2025",
+   "applies_to": "Member States: notification of designated competent authorities to the Commission",
+   "evidence": {
+    "provision": "Art. 41(5)",
+    "quote": "at the latest by 20 November 2025"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2025-11-20",
+   "date_type": "absolute",
+   "date_text": "By 20 November 2025",
+   "applies_to": "Commission: assessment of crowdfunding consumer protection",
+   "evidence": {
+    "provision": "Art. 46(2)",
+    "quote": "By 20 November 2025, the Commission shall assess the necessity"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2026-11-20",
+   "date_type": "absolute",
+   "date_text": "by 20 November 2026",
+   "applies_to": "Member States: notification of penalty rules to the Commission",
+   "evidence": {
+    "provision": "Art. 44(1)",
+    "quote": "shall, by 20 November 2026, notify the Commission of those rules"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2026-11-20",
+   "date_type": "absolute",
+   "date_text": "by 20 November 2026",
+   "applies_to": "Member States: report to the Commission on measures limiting borrowing rates, APRC or total costs",
+   "evidence": {
+    "provision": "Art. 31(3)",
+    "quote": "Member States shall report to the Commission on those measures by 20 November 2026."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2026-11-20",
+   "date_type": "recurring",
+   "date_text": "by 20 November 2026, and every year thereafter",
+   "applies_to": "Member States: report to the Commission on available debt advisory services",
+   "evidence": {
+    "provision": "Art. 36(4)",
+    "quote": "Member States shall, by 20 November 2026, and every year thereafter, report to the Commission"
+   }
+  },
+  {
+   "event": "application",
+   "date": "2026-11-20",
+   "date_type": "absolute",
+   "date_text": "They shall apply those measures from 20 November 2026.",
+   "applies_to": "Member States' national measures transposing this Directive",
+   "evidence": {
+    "provision": "Art. 48(1)",
+    "quote": "They shall apply those measures from 20 November 2026."
+   }
+  },
+  {
+   "event": "repealed",
+   "date": "2026-11-20",
+   "date_type": "absolute",
+   "date_text": "repealed with effect from 20 November 2026",
+   "applies_to": "Directive 2008/48/EC",
+   "evidence": {
+    "provision": "Art. 47",
+    "quote": "Directive 2008/48/EC is repealed with effect from 20 November 2026."
+   }
+  },
+  {
+   "event": "application",
+   "date": "2026-11-20",
+   "date_type": "absolute",
+   "date_text": "shall apply to all open-end credit agreements existing on 20 November 2026",
+   "applies_to": "Open-end credit agreements existing on 20 November 2026 (Arts 23, 24, 25(1) second sentence, 25(2), 28 and 39)",
+   "evidence": {
+    "provision": "Art. 47",
+    "quote": "shall apply to all open-end credit agreements existing on 20 November 2026"
+   }
+  },
+  {
+   "event": "application",
+   "date": "2023-11-19",
+   "date_type": "absolute",
+   "date_text": "for a period of five years from 19 November 2023",
+   "applies_to": "Commission power to adopt delegated acts under Art. 30(5)",
+   "evidence": {
+    "provision": "Art. 45(2)",
+    "quote": "for a period of five years from 19 November 2023"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "not later than nine months before the end of the five-year period",
+   "depends_on": "end of the five-year delegation period under Art. 45(2)",
+   "applies_to": "Commission: report on the delegation of power",
+   "evidence": {
+    "provision": "Art. 45(2)",
+    "quote": "not later than nine months before the end of the five-year period"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2027-11-20",
+   "date_type": "absolute",
+   "date_text": "By 20 November 2027",
+   "applies_to": "Commission: publication of Member States' measures limiting borrowing rates, APRC or total costs",
+   "evidence": {
+    "provision": "Art. 31(3)",
+    "quote": "By 20 November 2027, the Commission shall make the measures introduced by Member States"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2028-11-20",
+   "date_type": "absolute",
+   "date_text": "by 20 November 2028",
+   "applies_to": "Commission: report on availability of debt advisory services",
+   "evidence": {
+    "provision": "Art. 36(4)",
+    "quote": "The Commission shall, by 20 November 2028, present a report"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2029-11-20",
+   "date_type": "absolute",
+   "date_text": "By 20 November 2029",
+   "applies_to": "European Banking Authority: report on implementation of measures limiting rates and costs",
+   "evidence": {
+    "provision": "Art. 31(4)",
+    "quote": "By 20 November 2029 the European Banking Authority shall publish a report"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2029-11-20",
+   "date_type": "recurring",
+   "date_text": "by 20 November 2029 and every four years thereafter",
+   "applies_to": "Commission: evaluation of this Directive",
+   "evidence": {
+    "provision": "Art. 46(1)",
+    "quote": "The Commission shall undertake, by 20 November 2029 and every four years thereafter, an evaluation of this Directive."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "within a period of 14 calendar days",
+   "anchor": "conclusion of the credit agreement or receipt of contractual terms (Art. 26(1))",
+   "depends_on": "conclusion of the credit agreement",
+   "applies_to": "Consumer: exercise of right of withdrawal",
+   "offset_value": 14,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Art. 26(1)",
+    "quote": "within a period of 14 calendar days"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "shall in any event expire 12 months and 14 days after the conclusion of the credit agreement",
+   "anchor": "conclusion of the credit agreement",
+   "depends_on": "conclusion of the credit agreement; terms and information not received by consumer",
+   "applies_to": "Consumer: outer limit of withdrawal period",
+   "evidence": {
+    "provision": "Art. 26(2)",
+    "quote": "shall in any event expire 12 months and 14 days after the conclusion of the credit agreement"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "no later than 30 calendar days after the dispatch of the notification",
+   "anchor": "dispatch of the withdrawal notification (Art. 26(5)(a))",
+   "depends_on": "consumer's dispatch of withdrawal notification",
+   "applies_to": "Consumer: repayment of capital and interest after withdrawal",
+   "offset_value": 30,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Art. 26(5)(b)",
+    "quote": "no later than 30 calendar days after the dispatch of the notification"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "at least 30 days prior to the day when the actual reduction or cancellation of the overdraft facility takes effect",
+   "anchor": "reduction or cancellation of the overdraft facility",
+   "depends_on": "reduction or cancellation of an overdraft facility",
+   "applies_to": "Creditors: notice to consumer of overdraft reduction or cancellation",
+   "offset_value": -30,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Art. 24(3)",
+    "quote": "at least 30 days prior to the day when the actual reduction or cancellation of the overdraft facility takes effect"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "at least 30 days prior to the day when the actual cancellation or reduction of the overrunning takes effect",
+   "anchor": "cancellation or reduction of the overrunning",
+   "depends_on": "cancellation or reduction of overrunning",
+   "applies_to": "Creditors: notice to consumer of overrunning cancellation or reduction",
+   "offset_value": -30,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Art. 25(4)",
+    "quote": "at least 30 days prior to the day when the actual cancellation or reduction of the overrunning takes effect"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "within 30 days of the registration of any arrears in repayment of credit in a database",
+   "anchor": "registration of arrears in a credit database",
+   "depends_on": "registration of arrears in repayment of credit in a database",
+   "applies_to": "Member States: consumers to be informed of arrears registration",
+   "offset_value": 30,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Art. 19(7)(a)",
+    "quote": "within 30 days of the registration of any arrears in repayment of credit in a database"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "at least two months’ notice",
+   "anchor": "creditor's notice of standard termination of open-end credit agreement",
+   "depends_on": "creditor's termination of open-end credit agreement where agreed in the credit agreement",
+   "applies_to": "Creditors: notice to consumer for termination of open-end credit agreement",
+   "offset_value": 2,
+   "offset_unit": "months",
+   "evidence": {
+    "provision": "Art. 28(1)",
+    "quote": "by giving the consumer at least two months’ notice"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "between one and seven days after the conclusion of the credit agreement",
+   "anchor": "conclusion of the credit agreement or submission of the binding credit offer",
+   "depends_on": "pre-contractual information provided less than one day before the consumer is bound",
+   "applies_to": "Creditors and credit intermediaries: reminder of right to withdraw",
+   "offset_value": 1,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Art. 10(1)",
+    "quote": "between one and seven days after the conclusion of the credit agreement"
+   }
+  },
+  {
+   "event": "adopted",
+   "date": "2023-10-18",
+   "date_type": "absolute",
+   "date_text": "of 18 October 2023",
+   "applies_to": "Directive (EU) 2023/2225 as a whole",
+   "evidence": {
+    "provision": "Annex I, footnote (^2)",
+    "quote": "Directive (EU) 2023/2225 of the European Parliament and of the Council of 18 October 2023 on credit agreements for consumers"
+   }
+  },
+  {
+   "event": "published",
+   "date": "2023-10-30",
+   "date_type": "absolute",
+   "date_text": "30.10.2023",
+   "applies_to": "Directive (EU) 2023/2225 as a whole (Official Journal L series)",
+   "evidence": {
+    "provision": "Annex I, footnote (^2)",
+    "quote": "(OJ L, 2023/2225, 30.10.2023, ELI: http://data.europa.eu/eli/dir/2023/2225/oj)"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "transaction_value",
+   "variable_text": "total amount of credit",
+   "operator": ">",
+   "value": 100000,
+   "value_text": "more than EUR 100 000",
+   "unit": "EUR",
+   "currency": "EUR",
+   "measurement": "Total amount of credit under the agreement (ceiling or total sums made available, Art. 3(10)); no measurement window stated",
+   "level": "product",
+   "trigger": "exclusion",
+   "consequence": "The Directive does not apply to the credit agreement, subject to Art. 2(3) for renovation credit on residential property.",
+   "conditions": "Applies to credit agreements not otherwise excluded under Art. 2(2).",
+   "evidence": {
+    "provision": "Art. 2(2)(c)",
+    "quote": "credit agreements involving a total amount of credit of more than EUR 100 000"
+   }
+  },
+  {
+   "variable": "transaction_value",
+   "variable_text": "total amount of credit (renovation credit)",
+   "operator": ">",
+   "value": 100000,
+   "value_text": "more than EUR 100 000",
+   "unit": "EUR",
+   "currency": "EUR",
+   "measurement": "Total amount of credit under the agreement; no measurement window stated",
+   "level": "product",
+   "trigger": "scope_definition",
+   "consequence": "Notwithstanding Art. 2(2)(c), the Directive applies to such agreements whose purpose is renovation of a residential immovable property.",
+   "conditions": "Not secured by a mortgage or another comparable security commonly used on immovable property, or by a right related to immovable property; purpose is renovation of a residential immovable property.",
+   "evidence": {
+    "provision": "Art. 2(3)",
+    "quote": "this Directive applies to credit agreements involving a total amount of credit of more than EUR 100 000"
+   }
+  },
+  {
+   "variable": "employees",
+   "variable_text": "size class of supplier or provider (micro, small or medium-sized enterprise)",
+   "operator": "=",
+   "value": null,
+   "value_text": "suppliers or providers which are not micro, small or medium-sized enterprises as defined in Recommendation 2003/361/EC",
+   "unit": "",
+   "measurement": "Size class as defined in Commission Recommendation 2003/361/EC",
+   "level": "entity",
+   "trigger": "exclusion",
+   "consequence": "The deferred-payment exclusion applies to such suppliers only if the conditions in the second subparagraph are fulfilled.",
+   "conditions": "Supplier offers information society services consisting of distance contracts for sale of goods or supply of services within the meaning of Art. 2, point 7 of Directive 2011/83/EU.",
+   "depends_on": "Commission Recommendation 2003/361/EC",
+   "evidence": {
+    "provision": "Art. 2(2), subparagraph after point (h)",
+    "quote": "In the case of deferred payments offered by suppliers of goods or providers of services which are not micro, small or medium-sized enterprises as defined in Recommendation 2003/361/EC"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "payment period for deferred payment (time to execute payment after delivery)",
+   "operator": "<=",
+   "value": 50,
+   "value_text": "within 50 days of the delivery of the good or service",
+   "unit": "days",
+   "measurement": "Days from delivery of the good or provision of the service to full payment",
+   "level": "product",
+   "trigger": "exclusion",
+   "consequence": "Deferred payment by a supplier is excluded from the Directive where payment is entirely executed within this period and the other conditions of point (h) are met.",
+   "conditions": "No third party offering or purchasing credit; purchase price free of interest; only limited late-payment charges.",
+   "evidence": {
+    "provision": "Art. 2(2)(h), point (iii)",
+    "quote": "the payment is to be entirely executed within 50 days of the delivery of the good or service"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "payment period for deferred payment (large online suppliers)",
+   "operator": "<=",
+   "value": 14,
+   "value_text": "within 14 days of the delivery of the goods or services",
+   "unit": "days",
+   "measurement": "Days from delivery of goods or services to full payment",
+   "level": "product",
+   "trigger": "exclusion",
+   "consequence": "The exclusion for deferred payment applies to such suppliers only where payment is entirely executed within this period.",
+   "conditions": "Applies where the supplier is not a micro, small or medium-sized enterprise and offers distance-contract information society services; no third party offering or purchasing credit.",
+   "evidence": {
+    "provision": "Art. 2(2)(h), second subparagraph, point (ii)",
+    "quote": "the payment is to be entirely executed within 14 days of the delivery of the goods or services"
+   }
+  },
+  {
+   "variable": "employees",
+   "variable_text": "size class of supplier or provider (micro, small and medium-sized enterprise)",
+   "operator": "=",
+   "value": null,
+   "value_text": "suppliers of goods or providers of services who qualify as micro, small and medium-sized enterprises as defined in Recommendation 2003/361/EC",
+   "unit": "",
+   "measurement": "Size class as defined in Recommendation 2003/361/EC",
+   "level": "entity",
+   "trigger": "exemption",
+   "consequence": "Member States may decide not to apply admission and registration requirements to these suppliers acting as credit intermediaries or as creditors in an ancillary capacity.",
+   "conditions": "Ancillary capacity; for the creditor role, deferred payment free of interest with only limited late-payment charges.",
+   "depends_on": "Commission Recommendation 2003/361/EC",
+   "evidence": {
+    "provision": "Art. 37(3)",
+    "quote": "Member States may decide not to apply admission and registration requirements as referred to in paragraph 1 to suppliers of goods or providers of services who qualify as micro, small and medium-sized enterprises as defined in Recommendation 2003/361/EC"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "repayment period of credit under a deferred debit card",
+   "operator": "<=",
+   "value": 40,
+   "value_text": "within 40 days",
+   "unit": "days",
+   "measurement": "Days within which the credit has to be repaid under the terms of the agreement",
+   "level": "product",
+   "trigger": "exemption",
+   "consequence": "Member States may exempt such deferred debit card credit agreements from the Directive.",
+   "conditions": "Provided by a credit or payment institution; free of interest; only limited charges linked to the provision of the payment service.",
+   "evidence": {
+    "provision": "Art. 2(5), point (b)",
+    "quote": "under the terms of which the credit has to be repaid within 40 days"
+   }
+  },
+  {
+   "variable": "share_of_financials",
+   "variable_text": "total value of credit agreements entered into by such organisations, as a share of all credit agreements in the Member State",
+   "operator": "<",
+   "value": 1,
+   "value_text": "less than 1 % of the total value of all existing credit agreements entered into in that Member State",
+   "unit": "%",
+   "measurement": "Total value of all existing credit agreements entered into by all such organisations in the Member State, relative to all existing credit agreements in that Member State",
+   "level": "jurisdiction",
+   "trigger": "exemption",
+   "consequence": "Member States may exempt credit agreements concluded by such membership-restricted organisations from the Directive.",
+   "conditions": "Also requires that the total value of the organisation's existing credit agreements is insignificant relative to the Member State total; Member States must review the exemption each year.",
+   "evidence": {
+    "provision": "Art. 2(6), second subparagraph",
+    "quote": "is less than 1 % of the total value of all existing credit agreements entered into in that Member State"
+   }
+  },
+  {
+   "variable": "transaction_value",
+   "variable_text": "total amount of credit",
+   "operator": "<",
+   "value": 200,
+   "value_text": "less than EUR 200",
+   "unit": "EUR",
+   "currency": "EUR",
+   "measurement": "Total amount of credit under the agreement",
+   "level": "product",
+   "trigger": "exemption",
+   "consequence": "Member States may determine that Art. 8(3), points (d), (e) and (f), Art. 10(5), Art. 11(4) and Art. 21(3) do not apply to such agreements.",
+   "conditions": "Optional for Member States.",
+   "evidence": {
+    "provision": "Art. 2(8), point (a)",
+    "quote": "credit agreements involving a total amount of credit of less than EUR 200"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "repayment period of credit",
+   "operator": "<=",
+   "value": 3,
+   "value_text": "credit has to be repaid within three months",
+   "unit": "months",
+   "measurement": "Period within which credit has to be repaid under the terms of the agreement",
+   "level": "product",
+   "trigger": "exemption",
+   "consequence": "Member States may determine that Art. 8(3), points (d), (e) and (f), Art. 10(5), Art. 11(4) and Art. 21(3) do not apply to such agreements.",
+   "conditions": "Only insignificant charges payable.",
+   "evidence": {
+    "provision": "Art. 2(8), point (c)",
+    "quote": "credit agreements under the terms of which credit has to be repaid within three months and only insignificant charges are payable"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "grace period for repayment of credit instalments",
+   "operator": ">",
+   "value": 3,
+   "value_text": "grace periods of more than three months for the repayment of credit instalments",
+   "unit": "months",
+   "measurement": "Length of grace period offered for repayment of credit instalments",
+   "level": "product",
+   "trigger": "prohibition",
+   "consequence": "Member States may prohibit advertising for credit products offering grace periods of more than three months.",
+   "conditions": "Optional for Member States (Art. 8(8)).",
+   "evidence": {
+    "provision": "Art. 8(8), point (c)",
+    "quote": "offers ‘grace periods’ of more than three months for the repayment of credit instalments"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "period after the end of medical treatment after which diagnosis data may not be used for credit-related insurance",
+   "operator": "<=",
+   "value": 15,
+   "value_text": "after a period of time determined by the Member States, not exceeding 15 years following the end of the consumers’ medical treatment",
+   "unit": "years",
+   "measurement": "Years counted from the end of the consumer's medical treatment",
+   "level": "person",
+   "trigger": "prohibition",
+   "consequence": "Personal data on consumers' oncological diagnoses may not be used for an insurance policy related to a credit agreement after the period set by the Member State.",
+   "conditions": "Period set by Member States, not exceeding 15 years.",
+   "evidence": {
+    "provision": "Art. 14(4)",
+    "quote": "not exceeding 15 years following the end of the consumers’ medical treatment"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "duration of a significant overrunning",
+   "operator": ">",
+   "value": 1,
+   "value_text": "a significant overrunning exceeding a period of one month",
+   "unit": "months",
+   "measurement": "Duration of the overrunning",
+   "level": "product",
+   "trigger": "obligation",
+   "consequence": "The creditor must inform the consumer without delay of the overrunning, the amount involved, the borrowing rate, applicable penalties or interest, and the repayment date.",
+   "conditions": "Significant overrunning.",
+   "evidence": {
+    "provision": "Art. 25(2)",
+    "quote": "In the event of a significant overrunning exceeding a period of one month"
+   }
+  },
+  {
+   "variable": "share_of_financials",
+   "variable_text": "compensation for early repayment as a share of the amount of credit subject to early repayment",
+   "operator": "<=",
+   "value": 1,
+   "value_text": "shall not exceed 1 % of the amount of credit subject to early repayment where the period of time between the early repayment and the agreed date of termination of the credit agreement exceeds one year",
+   "unit": "%",
+   "measurement": "Percentage of the amount of credit subject to early repayment; remaining period to the agreed termination date",
+   "level": "product",
+   "trigger": "cap",
+   "consequence": "Caps the creditor's compensation for early repayment at this percentage.",
+   "conditions": "Early repayment falls within a period for which the borrowing rate is fixed (Art. 29(3)(c)); remaining period exceeds one year.",
+   "evidence": {
+    "provision": "Art. 29(2), second subparagraph",
+    "quote": "shall not exceed 1 % of the amount of credit subject to early repayment where the period of time between the early repayment and the agreed date of termination of the credit agreement exceeds one year"
+   }
+  },
+  {
+   "variable": "share_of_financials",
+   "variable_text": "compensation for early repayment as a share of the amount of credit subject to early repayment",
+   "operator": "<=",
+   "value": 0.5,
+   "value_text": "the compensation shall not exceed 0,5 % of the amount of credit subject to early repayment",
+   "unit": "%",
+   "measurement": "Percentage of the amount of credit subject to early repayment; remaining period to the agreed termination date",
+   "level": "product",
+   "trigger": "cap",
+   "consequence": "Caps the creditor's compensation for early repayment at this percentage where the remaining period does not exceed one year.",
+   "conditions": "Early repayment falls within a period for which the borrowing rate is fixed (Art. 29(3)(c)); remaining period does not exceed one year.",
+   "evidence": {
+    "provision": "Art. 29(2), second subparagraph",
+    "quote": "Where that period does not exceed one year, the compensation shall not exceed 0,5 % of the amount of credit subject to early repayment"
+   }
+  },
+  {
+   "variable": "transaction_value",
+   "variable_text": "amount of early repayment within any period of 12 months",
+   "operator": ">",
+   "value": null,
+   "value_text": "the threshold set out in national law, which shall not exceed EUR 10 000 within any period of 12 months",
+   "unit": "EUR",
+   "currency": "EUR",
+   "measurement": "Amount of early repayment within any period of 12 months",
+   "level": "product",
+   "trigger": "eligibility",
+   "consequence": "The creditor is entitled to early-repayment compensation only if the amount of early repayment exceeds the national threshold.",
+   "conditions": "Applies only where Member States use the option in Art. 29(4), point (a).",
+   "depends_on": "national law of the Member State (set by Member States, ceiling EUR 10 000 per 12 months)",
+   "evidence": {
+    "provision": "Art. 29(4), point (a)",
+    "quote": "exceeds the threshold set out in national law, which shall not exceed EUR 10 000 within any period of 12 months"
+   }
+  },
+  {
+   "variable": "transaction_value",
+   "variable_text": "ceiling on the national threshold for early-repayment amount in any 12-month period",
+   "operator": "<=",
+   "value": 10000,
+   "value_text": "shall not exceed EUR 10 000 within any period of 12 months",
+   "unit": "EUR",
+   "currency": "EUR",
+   "measurement": "Amount of early repayment within any period of 12 months",
+   "level": "product",
+   "trigger": "cap",
+   "consequence": "Ceiling on the national threshold that Member States may set for early-repayment compensation eligibility.",
+   "conditions": "Applies only where Member States use the option in Art. 29(4), point (a).",
+   "evidence": {
+    "provision": "Art. 29(4), point (a)",
+    "quote": "which shall not exceed EUR 10 000 within any period of 12 months"
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "consumer",
+   "defined_in": "this Directive",
+   "evidence": {
+    "provision": "Art. 3(1)",
+    "quote": "a natural person who acts for purposes which are outside his or her trade, business or profession"
+   }
+  },
+  {
+   "term": "creditor",
+   "defined_in": "this Directive",
+   "evidence": {
+    "provision": "Art. 3(2)",
+    "quote": "a natural or legal person who grants or promises to grant credit in the course of that person’s trade, business or profession"
+   }
+  },
+  {
+   "term": "credit agreement",
+   "defined_in": "this Directive",
+   "evidence": {
+    "provision": "Art. 3(3)",
+    "quote": "an agreement whereby a creditor grants or promises to grant to a consumer credit in the form of a deferred payment, loan or other similar financial accommodation"
+   }
+  },
+  {
+   "term": "ancillary service",
+   "defined_in": "this Directive",
+   "evidence": {
+    "provision": "Art. 3(4)",
+    "quote": "a service offered to the consumer in conjunction with the credit agreement"
+   }
+  },
+  {
+   "term": "total cost of the credit to the consumer",
+   "defined_in": "this Directive",
+   "evidence": {
+    "provision": "Art. 3(5)",
+    "quote": "all the costs, including interest, commissions, taxes and any other kind of fees which the consumer is required to pay in connection with the credit agreement"
+   }
+  },
+  {
+   "term": "total amount payable by the consumer",
+   "defined_in": "this Directive",
+   "evidence": {
+    "provision": "Art. 3(6)",
+    "quote": "the sum of the total amount of credit and the total cost of the credit to the consumer"
+   }
+  },
+  {
+   "term": "annual percentage rate of charge",
+   "defined_in": "this Directive",
+   "evidence": {
+    "provision": "Art. 3(7)",
+    "quote": "the total cost of the credit to the consumer, expressed as an annual percentage of the total amount of credit"
+   }
+  },
+  {
+   "term": "borrowing rate",
+   "defined_in": "this Directive",
+   "evidence": {
+    "provision": "Art. 3(8)",
+    "quote": "the interest rate expressed as a fixed or variable percentage applied on an annual basis to the amount of credit drawn down"
+   }
+  },
+  {
+   "term": "fixed borrowing rate",
+   "defined_in": "this Directive",
+   "evidence": {
+    "provision": "Art. 3(9)",
+    "quote": "the borrowing rate that the creditor and the consumer agree on in the credit agreement for the entire duration of the credit agreement"
+   }
+  },
+  {
+   "term": "total amount of credit",
+   "defined_in": "this Directive",
+   "evidence": {
+    "provision": "Art. 3(10)",
+    "quote": "the ceiling or the total sums made available under a credit agreement"
+   }
+  },
+  {
+   "term": "durable medium",
+   "defined_in": "this Directive",
+   "evidence": {
+    "provision": "Art. 3(11)",
+    "quote": "any instrument which enables the consumer to store information addressed personally to him or her"
+   }
+  },
+  {
+   "term": "credit intermediary",
+   "defined_in": "this Directive",
+   "evidence": {
+    "provision": "Art. 3(12)",
+    "quote": "a natural or legal person that is not acting as a creditor or notary"
+   }
+  },
+  {
+   "term": "pre-contractual information",
+   "defined_in": "this Directive",
+   "evidence": {
+    "provision": "Art. 3(13)",
+    "quote": "the information which is provided before the consumer is bound by a credit agreement"
+   }
+  },
+  {
+   "term": "profiling",
+   "defined_in": "Regulation (EU) 2016/679",
+   "evidence": {
+    "provision": "Art. 3(14)",
+    "quote": "profiling as defined in Article 4, point (4), of Regulation (EU) 2016/679"
+   }
+  },
+  {
+   "term": "tying practice",
+   "defined_in": "this Directive",
+   "evidence": {
+    "provision": "Art. 3(15)",
+    "quote": "the offering or the selling of a credit agreement in a package with other distinct financial products or services where the credit agreement is not made available to the consumer separately"
+   }
+  },
+  {
+   "term": "bundling practice",
+   "defined_in": "this Directive",
+   "evidence": {
+    "provision": "Art. 3(16)",
+    "quote": "the offering or the selling of a credit agreement in a package with other distinct financial products or services where the credit agreement is also made available to the consumer separately"
+   }
+  },
+  {
+   "term": "advisory services",
+   "defined_in": "this Directive",
+   "evidence": {
+    "provision": "Art. 3(17)",
+    "quote": "personal recommendations to a consumer in respect of one or more transactions relating to credit agreements"
+   }
+  },
+  {
+   "term": "overdraft facility",
+   "defined_in": "this Directive",
+   "evidence": {
+    "provision": "Art. 3(18)",
+    "quote": "an explicit credit agreement whereby a creditor makes available to a consumer funds which exceed the current balance in the consumer’s current account"
+   }
+  },
+  {
+   "term": "overrunning",
+   "defined_in": "this Directive",
+   "evidence": {
+    "provision": "Art. 3(19)",
+    "quote": "a tacitly accepted overdraft whereby a creditor makes available to a consumer funds"
+   }
+  },
+  {
+   "term": "linked credit agreement",
+   "defined_in": "this Directive",
+   "evidence": {
+    "provision": "Art. 3(20), point (a)",
+    "quote": "the credit or services in question serve exclusively to finance an agreement for the supply of specific goods or the provision of a specific service"
+   }
+  },
+  {
+   "term": "early repayment",
+   "defined_in": "this Directive",
+   "evidence": {
+    "provision": "Art. 3(21)",
+    "quote": "the full or partial discharge of the consumer’s obligations under a credit agreement, before the date agreed in the credit agreement"
+   }
+  },
+  {
+   "term": "debt advisory services",
+   "defined_in": "this Directive",
+   "evidence": {
+    "provision": "Art. 3(22)",
+    "quote": "personalised assistance of a technical, legal or psychological nature provided by independent professional operators"
+   }
+  },
+  {
+   "term": "Total amount of credit",
+   "defined_in": "Annex I, Part I (Total amount of credit)",
+   "evidence": {
+    "provision": "Annex I, Part I (Total amount of credit)",
+    "quote": "This means the ceiling or the total sums made available under the credit agreement."
+   }
+  },
+  {
+   "term": "Annual percentage rate of charge (APR)",
+   "defined_in": "Annex I, Part I (Annual percentage rate of charge (APR))",
+   "evidence": {
+    "provision": "Annex I, Part I (Annual percentage rate of charge (APR))",
+    "quote": "This is the total cost expressed as an annual percentage of the total amount of credit."
+   }
+  },
+  {
+   "term": "Total amount you will have to pay",
+   "defined_in": "Annex I, Part I (Total amount you will have to pay)",
+   "evidence": {
+    "provision": "Annex I, Part I (Total amount you will have to pay)",
+    "quote": "This means the amount of borrowed capital plus interest and possible costs related to your credit."
+   }
+  },
+  {
+   "term": "Open-end credit agreement",
+   "defined_in": "Annex III, part II, point (e)",
+   "evidence": {
+    "provision": "Annex III, part II, point (e) (final paragraph)",
+    "quote": "For the purposes of this point, an open-end credit agreement is a credit agreement without a fixed duration and includes credits that must be repaid in full within or after a period but, once repaid, become available to be drawn down again."
+   }
+  },
+  {
+   "term": "Year (calculation convention)",
+   "defined_in": "Annex III, part I, remark (c)",
+   "evidence": {
+    "provision": "Annex III, part I, remark (c)",
+    "quote": "A year is presumed to have 365 days (or 366 days for leap years), 52 weeks or 12 equal months."
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "notice_to_users",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Member States must require that information provided to consumers under the Directive is free of charge, regardless of the medium used.",
+   "applies_from": "20 November 2026 (Art. 48(1))",
+   "evidence": {
+    "provision": "Art. 5",
+    "quote": "such information is provided without charge to the consumer regardless of the media used to provide it"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "enterprise",
+   "modality": "shall_not",
+   "summary": "Conditions for granting credit must not discriminate against consumers legally resident in the Union on grounds of nationality or place of residence, subject to objectively justified differences.",
+   "applies_from": "20 November 2026 (Art. 48(1))",
+   "evidence": {
+    "provision": "Art. 6(1)",
+    "quote": "do not discriminate against consumers legally resident in the Union on ground of their nationality or place of residence"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "enterprise",
+   "modality": "shall_not",
+   "summary": "Advertising and marketing communications must be fair, clear and not misleading; wording that may create false expectations about availability, cost or total amount payable is prohibited.",
+   "applies_from": "20 November 2026 (Art. 48(1))",
+   "evidence": {
+    "provision": "Art. 7",
+    "quote": "Wording in such advertising and marketing communications that may create false expectations for a consumer regarding the availability or the cost of credit or the total amount payable by the consumer shall be prohibited."
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "advertiser_campaign",
+   "modality": "shall",
+   "summary": "Advertising of credit must include a clear and prominent warning that borrowing costs money; where interest rates or cost figures are shown, standard information (borrowing rate, total amount of credit, APR, duration, and others) must be given by a representative example.",
+   "applies_from": "20 November 2026 (Art. 48(1))",
+   "conditional_on": "where advertising indicates an interest rate or any figures relating to any cost of credit",
+   "evidence": {
+    "provision": "Art. 8(1)",
+    "quote": "Member States shall require that advertising concerning credit agreements include a clear and prominent warning to make consumers aware that borrowing costs money"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "advertiser_campaign",
+   "modality": "shall_not",
+   "summary": "Advertising for credit products that encourages credit to improve finances, says registered credit has little influence on assessment, or falsely suggests credit increases resources is prohibited.",
+   "applies_from": "20 November 2026 (Art. 48(1))",
+   "evidence": {
+    "provision": "Art. 8(7)",
+    "quote": "Member States shall prohibit advertising for credit products which:"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Clear and comprehensible general information about credit agreements must be made available at all times on paper or another durable medium, and must include the listed elements (issuer identity, purposes, duration, rate types, representative example, further costs, repayment options, early repayment, withdrawal, ancillary services, general warning).",
+   "applies_from": "20 November 2026 (Art. 48(1))",
+   "evidence": {
+    "provision": "Art. 9(1)",
+    "quote": "clear and comprehensible general information about credit agreements is made available to consumers by creditors or, where applicable, by credit intermediaries, at all times"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Pre-contractual information must be provided in good time on the Standard European Consumer Credit Information form, with the prescribed elements on one page (two at most) and additional elements in a separate section; Annex I form and related content and consistency requirements apply.",
+   "applies_from": "20 November 2026 (Art. 48(1))",
+   "evidence": {
+    "provision": "Art. 10(1)-(6)",
+    "quote": "provide the consumer with the clear and comprehensible pre-contractual information needed to compare different offers"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Where pre-contractual information is given less than one day before the consumer is bound, a reminder of the right to withdraw must be sent between one and seven days after conclusion or submission of the binding offer.",
+   "applies_from": "20 November 2026 (Art. 48(1))",
+   "conditional_on": "where pre-contractual information is provided less than one day before the consumer is bound",
+   "evidence": {
+    "provision": "Art. 10(1), second subparagraph",
+    "quote": "send a reminder to the consumer of the possibility to withdraw from the credit agreement"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "On request, and where the creditor is willing to conclude the agreement, a copy of the draft credit agreement must be provided free of charge on paper or another durable medium.",
+   "applies_from": "20 November 2026 (Art. 48(1))",
+   "conditional_on": "upon consumer request",
+   "evidence": {
+    "provision": "Art. 10(8)",
+    "quote": "provide the consumer free of charge with a copy of the draft credit agreement"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Where payments build capital rather than amortise credit, pre-contractual information must state that such agreements do not guarantee repayment of the total amount drawn, unless guaranteed expressly.",
+   "applies_from": "20 November 2026 (Art. 48(1))",
+   "conditional_on": "credit agreements where payments constitute capital rather than immediate amortisation",
+   "evidence": {
+    "provision": "Art. 10(9)",
+    "quote": "include a clear and concise statement that such credit agreements do not provide for a guarantee of repayment"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "For credit agreements under Art. 2(6) or (7), pre-contractual information must be given on the European Consumer Credit Information form (Annex II) with prescribed elements.",
+   "applies_from": "20 November 2026 (Art. 48(1))",
+   "conditional_on": "credit agreements referred to in Art. 2(6) or (7)",
+   "evidence": {
+    "provision": "Art. 11(1)-(5)",
+    "quote": "shall, by way of derogation from Article 10(2), be provided on paper or on another durable medium chosen by the consumer"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Creditors and, where applicable, credit intermediaries must provide adequate explanations, free of charge and before conclusion, enabling the consumer to assess suitability, and must adapt them to the circumstances (Member States may adapt in justified cases).",
+   "applies_from": "20 November 2026 (Art. 48(1))",
+   "evidence": {
+    "provision": "Art. 12(1)",
+    "quote": "are required to provide adequate explanations to the consumer on the proposed credit agreements"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Creditors and credit intermediaries must inform consumers in a clear and comprehensible manner when presenting a personalised offer based on automated processing of personal data.",
+   "applies_from": "20 November 2026 (Art. 48(1))",
+   "conditional_on": "personalised offers based on automated processing of personal data",
+   "evidence": {
+    "provision": "Art. 13",
+    "quote": "inform consumers in a clear and comprehensible manner when they are presented with a personalised offer that is based on automated processing of personal data"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "enterprise",
+   "modality": "shall_not",
+   "summary": "Member States must prohibit tying practices (credit offered only in a package where credit is not available separately) while allowing bundling practices.",
+   "applies_from": "20 November 2026 (Art. 48(1))",
+   "evidence": {
+    "provision": "Art. 14(1)",
+    "quote": "Member States shall allow bundling practices but shall prohibit tying practices."
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Where credit requires insurance, the creditor must accept an equivalent policy from a supplier chosen by the consumer; consumers must be given at least three days to compare insurance offers and are informed of this.",
+   "applies_from": "20 November 2026 (Art. 48(1))",
+   "conditional_on": "where the creditor requires a relevant insurance policy related to the credit",
+   "evidence": {
+    "provision": "Art. 14(3) and (5)",
+    "quote": "the creditor is required to accept the insurance policy from a supplier different to his or her preferred supplier"
+   }
+  },
+  {
+   "type": "data_minimization",
+   "addressee": "enterprise",
+   "modality": "shall_not",
+   "summary": "Personal data on consumers' oncological diagnoses must not be used for insurance policies related to credit after a period set by Member States, not exceeding 15 years after end of treatment.",
+   "applies_from": "20 November 2026 (Art. 48(1))",
+   "conditional_on": "after a period of time determined by Member States, not exceeding 15 years",
+   "evidence": {
+    "provision": "Art. 14(4)",
+    "quote": "personal data concerning consumers’ diagnoses of oncological diseases are not used for the purpose of an insurance policy related to a credit agreement"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "enterprise",
+   "modality": "shall_not",
+   "summary": "Creditors and credit intermediaries must not infer consumer agreement to credit or ancillary services from default options such as pre-ticked boxes.",
+   "applies_from": "20 November 2026 (Art. 48(1))",
+   "evidence": {
+    "provision": "Art. 15(1)",
+    "quote": "do not infer the agreement of the consumer for the conclusion of any credit agreement or for the purchase of ancillary services presented through default options"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Creditors and credit intermediaries must explicitly inform consumers whether advisory services are or can be provided, and before providing them give the listed information (basis of recommendation, fee) on paper or durable medium.",
+   "applies_from": "20 November 2026 (Art. 48(1))",
+   "conditional_on": "where advisory services are provided",
+   "evidence": {
+    "provision": "Art. 16(1)-(2)",
+    "quote": "explicitly inform the consumer, in the context of a given transaction, whether advisory services are being or can be provided to the consumer"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Where advisory services are provided, creditors and credit intermediaries must obtain and update the consumer's financial information, assess needs, consider a sufficiently large number of agreements, act in the consumer's best interests, and give a record of the recommendation.",
+   "applies_from": "20 November 2026 (Art. 48(1))",
+   "conditional_on": "where advisory services are provided to consumers",
+   "evidence": {
+    "provision": "Art. 16(3)",
+    "quote": "obtain the necessary information regarding the consumer’s financial situation, preferences and objectives related to the credit agreement"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Creditors and credit intermediaries must warn a consumer when a credit agreement may induce a specific risk given the consumer's financial situation.",
+   "applies_from": "20 November 2026 (Art. 48(1))",
+   "conditional_on": "where a credit agreement may induce a specific risk for the consumer",
+   "evidence": {
+    "provision": "Art. 16(5)",
+    "quote": "warn a consumer when a credit agreement may induce a specific risk for the consumer considering the consumer’s financial situation"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "enterprise",
+   "modality": "shall_not",
+   "summary": "Member States must prohibit any granting of credit to consumers without their prior request and explicit agreement.",
+   "applies_from": "20 November 2026 (Art. 48(1))",
+   "evidence": {
+    "provision": "Art. 17",
+    "quote": "Member States shall prohibit any granting of credit to consumers without their prior request and explicit agreement."
+   }
+  },
+  {
+   "type": "risk_assessment",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Before concluding a credit agreement the creditor must carry out a thorough creditworthiness assessment in the consumer's interest, based on relevant and accurate information (including joint repayment capacity for joint applications) and verified where necessary.",
+   "applies_from": "20 November 2026 (Art. 48(1))",
+   "conditional_on": "before concluding a credit agreement",
+   "evidence": {
+    "provision": "Art. 18(1), (3), (5)",
+    "quote": "the creditor carry out a thorough assessment of the consumer’s creditworthiness"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Credit intermediaries must accurately submit the necessary consumer information to the relevant creditor so that the creditworthiness assessment can be carried out.",
+   "applies_from": "20 November 2026 (Art. 48(1))",
+   "evidence": {
+    "provision": "Art. 18(2)",
+    "quote": "credit intermediaries accurately submit the necessary information obtained from the consumer to the relevant creditor"
+   }
+  },
+  {
+   "type": "record_keeping",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Creditors must establish, document and maintain procedures for the creditworthiness assessment and document and maintain the information used in it.",
+   "applies_from": "20 November 2026 (Art. 48(1))",
+   "evidence": {
+    "provision": "Art. 18(4)",
+    "quote": "Member States shall require the creditor to establish procedures for the assessment referred to in paragraph 1 and to document and maintain such procedures."
+   }
+  },
+  {
+   "type": "verification_gatekeeping",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Creditors may make credit available only where the creditworthiness assessment indicates the obligations are likely to be met.",
+   "applies_from": "20 November 2026 (Art. 48(1))",
+   "evidence": {
+    "provision": "Art. 18(6)",
+    "quote": "the creditor only makes the credit available to the consumer where the result of the creditworthiness assessment indicates"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "enterprise",
+   "modality": "shall_not",
+   "summary": "Creditors must not cancel or modify a concluded credit agreement to the consumer's detriment because the creditworthiness assessment was incorrectly conducted, unless the consumer knowingly withheld or falsified information.",
+   "applies_from": "20 November 2026 (Art. 48(1))",
+   "evidence": {
+    "provision": "Art. 18(7)",
+    "quote": "the creditor shall not subsequently cancel or modify the credit agreement to the detriment of the consumer on the grounds that the assessment of creditworthiness was incorrectly conducted"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Where automated processing is used in the creditworthiness assessment, the creditor must allow human intervention, an explanation, the consumer's point of view, and review of the assessment and decision; consumers must be informed of this right.",
+   "applies_from": "20 November 2026 (Art. 48(1))",
+   "conditional_on": "where the creditworthiness assessment involves automated processing of personal data",
+   "evidence": {
+    "provision": "Art. 18(8)",
+    "quote": "the consumer has the right to request and obtain from the creditor human intervention"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Where a credit application is rejected, the creditor must inform the consumer without delay and refer them to debt advisory services; where automated processing was used, the creditor must also inform the consumer of that and of the right to human assessment.",
+   "applies_from": "20 November 2026 (Art. 48(1))",
+   "conditional_on": "where the credit application is rejected",
+   "evidence": {
+    "provision": "Art. 18(9)",
+    "quote": "the creditor is required to inform the consumer without delay of the rejection"
+   }
+  },
+  {
+   "type": "risk_assessment",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Before any significant increase in the total amount of credit after conclusion, the creditor must reassess creditworthiness on updated information.",
+   "applies_from": "20 November 2026 (Art. 48(1))",
+   "conditional_on": "where the parties agree to change the total amount of credit after conclusion and before any significant increase",
+   "evidence": {
+    "provision": "Art. 18(10)",
+    "quote": "the creditor is required to reassess the consumer’s creditworthiness on the basis of updated information"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States must ensure that creditors from other Member States have non-discriminatory access to domestic creditworthiness databases in cross-border credit cases, for both public and private databases.",
+   "applies_from": "20 November 2026 (Art. 48(1))",
+   "conditional_on": "cross-border credit",
+   "evidence": {
+    "provision": "Art. 19(1), (3)",
+    "quote": "Each Member State shall, in the case of cross-border credit, ensure access for creditors from other Member States to databases used in that Member State for assessing the creditworthiness of consumers."
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_holder",
+   "modality": "shall",
+   "summary": "Databases holding consumer credit information must hold at least information on arrears, type of credit and identity of the creditor; database providers must keep their information up to date and accurate.",
+   "applies_from": "20 November 2026 (Art. 48(1))",
+   "evidence": {
+    "provision": "Art. 19(4), (7)",
+    "quote": "shall hold at least information on consumers’ arrears in repayment of credit, the type of credit and the identity of the creditor"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "enterprise",
+   "modality": "shall_not",
+   "summary": "Creditors and credit intermediaries must not process special categories of personal data or personal data from social networks contained in creditworthiness databases.",
+   "applies_from": "20 November 2026 (Art. 48(1))",
+   "evidence": {
+    "provision": "Art. 19(5)",
+    "quote": "Creditors and credit intermediaries shall not process special categories of data as referred to in Article 9(1) of Regulation (EU) 2016/679"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Where a credit application is rejected on the basis of a database consultation, the creditor must inform the consumer without undue delay and free of charge of the result, the database consulted and the categories of data used.",
+   "applies_from": "20 November 2026 (Art. 48(1))",
+   "conditional_on": "where the credit application is rejected on the basis of a database consultation",
+   "evidence": {
+    "provision": "Art. 19(6)",
+    "quote": "the creditor informs the consumer without undue delay and free of charge of the result of such consultation"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States must ensure consumers are informed within 30 days of registration of any credit repayment arrears in a database, and of their rights under the GDPR.",
+   "applies_from": "20 November 2026 (Art. 48(1))",
+   "conditional_on": "registration of arrears in a credit database",
+   "evidence": {
+    "provision": "Art. 19(7)(a)",
+    "quote": "within 30 days of the registration of any arrears in repayment of credit in a database"
+   }
+  },
+  {
+   "type": "complaint_mechanism",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States must ensure complaint procedures exist to allow consumers to challenge the content of credit databases.",
+   "applies_from": "20 November 2026 (Art. 48(1))",
+   "evidence": {
+    "provision": "Art. 19(8)",
+    "quote": "Member States shall ensure that complaint procedures are in place in order to facilitate consumers’ challenges to the content of databases"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Credit agreements and any modifications must be drawn up on paper or another durable medium, and all contracting parties must receive a copy.",
+   "applies_from": "20 November 2026 (Art. 48(1))",
+   "evidence": {
+    "provision": "Art. 20(1)",
+    "quote": "credit agreements and any modifications of such agreements are drawn up on paper or another durable medium and that all the contracting parties are provided with a copy"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Credit agreements must specify in a clear and concise manner the listed elements (e.g., type of credit, parties, amount, duration, borrowing rate, APR, payments, charges, withdrawal, early repayment, complaint mechanism, supervisory authority and debt advice contacts).",
+   "applies_from": "20 November 2026 (Art. 48(1))",
+   "evidence": {
+    "provision": "Art. 21(1)",
+    "quote": "the credit agreement specify in a clear and concise manner all of the following elements"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Where capital is amortised, the creditor must provide a free statement of account in the form of an amortisation table at any time; a statement that building capital does not guarantee repayment must be included where relevant.",
+   "applies_from": "20 November 2026 (Art. 48(1))",
+   "conditional_on": "where capital amortisation of a credit agreement with a fixed duration is involved",
+   "evidence": {
+    "provision": "Art. 21(2)-(3)",
+    "quote": "the creditor shall make available to the consumer, free of charge and at any time throughout the duration of the credit agreement, a statement of account in the form of an amortisation table"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Before modifying the terms and conditions of a credit agreement, the creditor must communicate a description of the changes, timescale, complaint means and periods, and the competent authority for complaints.",
+   "applies_from": "20 November 2026 (Art. 48(1))",
+   "conditional_on": "prior to modifying the terms and conditions of the credit agreement",
+   "evidence": {
+    "provision": "Art. 22",
+    "quote": "the creditor communicates on paper or another durable medium specified in the credit agreement the following information to the consumer"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Where creditors may change borrowing rates of existing agreements, they must inform the consumer of any change in good time before it takes effect, including the resulting payment amounts.",
+   "applies_from": "20 November 2026 (Art. 48(1))",
+   "conditional_on": "where creditors are allowed to change borrowing rates of existing credit agreements",
+   "evidence": {
+    "provision": "Art. 23(1)",
+    "quote": "the creditor inform the consumer of any change in the borrowing rate on paper or another durable medium specified in the credit agreement, in good time before the change enters into force"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "For overdraft facilities, the creditor must send at least monthly statements of account with listed elements, inform the consumer in good time of rate or charge increases, and notify reductions or cancellations at least 30 days in advance.",
+   "applies_from": "20 November 2026 (Art. 48(1))",
+   "conditional_on": "where credit is granted as an overdraft facility",
+   "evidence": {
+    "provision": "Art. 24(1)-(3)",
+    "quote": "keeps the consumer regularly, at least once per month, informed by means of statements of account"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Where an overdraft facility is reduced or cancelled, the creditor must offer, before enforcement proceedings, at no additional cost, repayment of the amount drawn in 12 equal monthly instalments unless the consumer repays earlier.",
+   "applies_from": "20 November 2026 (Art. 48(1))",
+   "conditional_on": "where the overdraft facility is reduced or cancelled",
+   "evidence": {
+    "provision": "Art. 24(4)",
+    "quote": "the creditor offer the consumer, before the enforcement proceedings have been initiated, at no additional cost, the possibility to repay the amount actually drawn down"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "For overrunning, the creditor must include information on the overrun possibility and rates in the current account agreement, inform the consumer without delay of significant overruns exceeding one month, and notify non-allowance or reduction at least 30 days prior.",
+   "applies_from": "20 November 2026 (Art. 48(1))",
+   "conditional_on": "where there is a possibility that the consumer is allowed an overrun",
+   "evidence": {
+    "provision": "Art. 25(1), (2), (4)",
+    "quote": "the creditor includes information on that possibility in that agreement"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "In cases of regular overrunning, the creditor must offer advisory services where available and redirect the consumer at no cost to debt advisory services.",
+   "applies_from": "20 November 2026 (Art. 48(1))",
+   "conditional_on": "in the case of regular overrunning",
+   "evidence": {
+    "provision": "Art. 25(2), second subparagraph",
+    "quote": "the creditor shall offer the consumer advisory services, where available, and redirect the consumer at no cost towards debt advisory services"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Where overrunning is reduced or cancelled, the creditor must offer, before enforcement, at no additional cost, repayment of the amount drawn in 12 equal monthly instalments unless repaid earlier.",
+   "applies_from": "20 November 2026 (Art. 48(1))",
+   "conditional_on": "where the overrunning is reduced or cancelled",
+   "evidence": {
+    "provision": "Art. 25(5)",
+    "quote": "Where the overrunning is reduced or cancelled, Member States shall require that the creditor offer the consumer"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "consumers_users",
+   "modality": "may",
+   "summary": "Consumers may withdraw from a credit agreement without giving reasons within 14 calendar days, with the period extended or limited as set out in the Article (including a 12-month-and-14-day long-stop where terms were not received).",
+   "applies_from": "20 November 2026 (Art. 48(1))",
+   "evidence": {
+    "provision": "Art. 26(1)-(2)",
+    "quote": "the consumer may withdraw from the credit agreement without giving any reason within a period of 14 calendar days"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "consumers_users",
+   "modality": "shall",
+   "summary": "A consumer exercising withdrawal must notify the creditor in the manner specified, and pay the capital and accrued interest without undue delay and no later than 30 calendar days after notification.",
+   "applies_from": "20 November 2026 (Art. 48(1))",
+   "conditional_on": "if the consumer exercises the right of withdrawal",
+   "evidence": {
+    "provision": "Art. 26(5)(b)",
+    "quote": "no later than 30 calendar days after the dispatch of the notification referred to in point (a)"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "A consumer who withdraws from a purchase contract under Union law must no longer be bound by the linked credit agreement.",
+   "applies_from": "20 November 2026 (Art. 48(1))",
+   "conditional_on": "where the consumer has exercised the right of withdrawal, based on Union law, concerning a contract for the supply of goods or services",
+   "evidence": {
+    "provision": "Art. 27(1)",
+    "quote": "is no longer bound by a linked credit agreement"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "enterprise",
+   "modality": "may",
+   "summary": "For open-end credit, the consumer may terminate free of charge at any time (subject to notice not exceeding one month); the creditor may, where agreed, terminate with at least two months' notice.",
+   "applies_from": "20 November 2026 (Art. 48(1))",
+   "conditional_on": "open-end credit agreements; creditor termination only where agreed in the credit agreement",
+   "evidence": {
+    "provision": "Art. 28(1)",
+    "quote": "the consumer may effect standard termination of an open-end credit agreement free of charge at any time"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Where the creditor terminates the consumer's right to draw down for objectively justified reasons, it must inform the consumer of the termination and reasons, where possible before and at the latest immediately after.",
+   "applies_from": "20 November 2026 (Art. 48(1))",
+   "conditional_on": "where agreed in the credit agreement and for objectively justified reasons",
+   "evidence": {
+    "provision": "Art. 28(2)",
+    "quote": "The creditor shall inform the consumer of the termination and the reasons for it on paper or another durable medium specified in the credit agreement"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "The consumer is entitled at any time to early repayment, with a reduction in the total cost of credit for the remaining duration that takes into account all costs imposed by the creditor.",
+   "applies_from": "20 November 2026 (Art. 48(1))",
+   "evidence": {
+    "provision": "Art. 29(1)",
+    "quote": "the consumer is at any time entitled to early repayment"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "The annual percentage rate of charge must be calculated by the mathematical formula in Annex III Part I, as the present value of all commitments agreed.",
+   "applies_from": "20 November 2026 (Art. 48(1))",
+   "evidence": {
+    "provision": "Art. 30(1)",
+    "quote": "shall be calculated in accordance with the mathematical formula set out in Part I of Annex III"
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Commission may adopt delegated acts to amend Article 30 and Annex III Part II by adding or modifying assumptions for calculating the APR.",
+   "conditional_on": "where the assumptions do not suffice to calculate the APR in a uniform manner or are no longer adapted to market situations",
+   "evidence": {
+    "provision": "Art. 30(5), second subparagraph",
+    "quote": "the Commission is empowered to adopt delegated acts in accordance with Article 45"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States must introduce measures to effectively prevent abuse and ensure consumers cannot be charged excessively high borrowing rates, APRs or total costs of credit, such as caps; the Commission must make these measures public by 20 November 2027, and Member States must report to the Commission by 20 November 2026.",
+   "applies_from": "by 20 November 2027 (Art. 31(3))",
+   "evidence": {
+    "provision": "Art. 31(1), (3)",
+    "quote": "Member States shall introduce measures to effectively prevent abuse"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "regulator",
+   "modality": "shall",
+   "summary": "The European Banking Authority must publish a report on the implementation of the Article 31(1) measures, including methodologies for caps and their effectiveness, by 20 November 2029.",
+   "applies_from": "by 20 November 2029 (Art. 31(4))",
+   "evidence": {
+    "provision": "Art. 31(4)",
+    "quote": "By 20 November 2029 the European Banking Authority shall publish a report on the implementation of the measures referred to in paragraph 1"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Creditors and credit intermediaries must act honestly, fairly, transparently and professionally in manufacturing, advertising, granting, advising, ancillary services and executing credit; staff remuneration must not impede this and must avoid conflicts of interest and sales-target incentives.",
+   "applies_from": "20 November 2026 (Art. 48(1))",
+   "evidence": {
+    "provision": "Art. 32(1)",
+    "quote": "act honestly, fairly, transparently and professionally"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Creditors and credit intermediaries must require staff to possess and keep up to date an appropriate level of knowledge and competence in relation to credit products, intermediation, advisory services and consumer rights.",
+   "applies_from": "20 November 2026 (Art. 48(1))",
+   "evidence": {
+    "provision": "Art. 33(1)",
+    "quote": "creditors and credit intermediaries require their staff to possess and keep up-to-date an appropriate level of knowledge and competence"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States must establish minimum knowledge and competence requirements for staff of creditors and intermediaries and ensure competent authorities supervise compliance and can require evidence.",
+   "applies_from": "20 November 2026 (Art. 48(1))",
+   "evidence": {
+    "provision": "Art. 33(2)-(3)",
+    "quote": "Member States shall establish minimum knowledge and competence requirements for the staff of creditors and of credit intermediaries."
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States must promote consumer financial education on responsible borrowing and debt management; the Commission must assess and publish a report on financial education and best practices.",
+   "evidence": {
+    "provision": "Art. 34(1)-(2)",
+    "quote": "Member States shall promote measures that support the education of consumers in relation to responsible borrowing and debt management"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Creditors must exercise, where appropriate, reasonable forbearance before enforcement proceedings, considering the consumer's individual circumstances, and need not offer forbearance repeatedly unless justified.",
+   "applies_from": "20 November 2026 (Art. 48(1))",
+   "conditional_on": "where appropriate, before enforcement proceedings are initiated",
+   "evidence": {
+    "provision": "Art. 35(1)",
+    "quote": "Member States shall require creditors to exercise, where appropriate, reasonable forbearance before enforcement proceedings are initiated"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Where Member States allow creditors to impose additional charges on default, they must cap those charges.",
+   "applies_from": "20 November 2026 (Art. 48(1))",
+   "conditional_on": "where Member States allow creditors to impose additional charges in the event of default",
+   "evidence": {
+    "provision": "Art. 35(4)",
+    "quote": "those Member States shall place a cap on those charges"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States must ensure independent debt advisory services are available to consumers in difficulty, with only limited charges; the Commission must present a report by 20 November 2028 and Member States must report by 20 November 2026 and annually thereafter.",
+   "applies_from": "20 November 2026 (Art. 48(1))",
+   "evidence": {
+    "provision": "Art. 36(1), (4)",
+    "quote": "Member States shall ensure that independent debt advisory services are made available to consumers"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Creditors must have processes and policies to detect early consumers experiencing financial difficulties and must refer them to easily accessible debt advisory services.",
+   "applies_from": "20 November 2026 (Art. 48(1))",
+   "evidence": {
+    "provision": "Art. 36(2)-(3)",
+    "quote": "creditors shall have processes and policies in place for the early detection of consumers experiencing financial difficulties"
+   }
+  },
+  {
+   "type": "licensing_certification",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Creditors and credit intermediaries must be subject to an adequate admission process, registration and supervision by an independent competent authority, subject to listed exemptions for credit institutions, payment and e-money institutions and ancillary micro and SME suppliers.",
+   "applies_from": "20 November 2026 (Art. 48(1))",
+   "evidence": {
+    "provision": "Art. 37(1)",
+    "quote": "creditors and credit intermediaries are subject to an adequate admission process, to registration and to supervision arrangements set up by an independent competent authority"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Credit intermediaries must indicate in consumer-facing advertising and documentation the extent of their powers and whether they work exclusively with one or more creditors; must disclose and agree fees with consumers before conclusion and communicate fees to the creditor for APR calculation.",
+   "applies_from": "20 November 2026 (Art. 48(1))",
+   "evidence": {
+    "provision": "Art. 38(a)-(d)",
+    "quote": "indicate, in advertising and documentation intended for consumers, the extent of their powers"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "The original creditor must inform the consumer of an assignment of the credit agreement, except where it continues to service the credit with the assignee's agreement.",
+   "applies_from": "20 November 2026 (Art. 48(1))",
+   "conditional_on": "assignment of creditor's rights, unless original creditor continues servicing the credit",
+   "evidence": {
+    "provision": "Art. 39(2)",
+    "quote": "Member States shall require that the original creditor inform the consumer of the assignment referred to in paragraph 1"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States must ensure consumers have access to adequate, prompt and effective out-of-court dispute resolution procedures and encourage cross-border cooperation between such entities.",
+   "applies_from": "20 November 2026 (Art. 48(1))",
+   "evidence": {
+    "provision": "Art. 40(1)",
+    "quote": "Member States shall ensure that consumers have access to adequate, prompt and effective out-of-court dispute resolution procedures"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States must designate national competent authorities with investigation and enforcement powers and adequate resources, and notify the Commission of designations by 20 November 2025.",
+   "applies_from": "by 20 November 2025 (Art. 41(5))",
+   "evidence": {
+    "provision": "Art. 41(1)",
+    "quote": "Member States shall designate the national competent authorities empowered to ensure the application and enforcement of this Directive"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Competent authorities and persons working for them, and auditors and experts instructed by them, are bound by professional secrecy, subject to exceptions in law.",
+   "applies_from": "20 November 2026 (Art. 48(1))",
+   "evidence": {
+    "provision": "Art. 41(2)",
+    "quote": "are bound by the obligation of professional secrecy"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Commission must publish a list of competent authorities in the Official Journal at least once a year and update it on its website.",
+   "evidence": {
+    "provision": "Art. 41(8)",
+    "quote": "The Commission shall publish a list of the competent authorities in the Official Journal of the European Union at least once a year"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "government_agency",
+   "modality": "shall_not",
+   "summary": "Where the Directive contains harmonised provisions, Member States may not maintain or introduce national provisions diverging from them, unless the Directive provides otherwise.",
+   "conditional_on": "insofar as the Directive contains harmonised provisions",
+   "evidence": {
+    "provision": "Art. 42(1)",
+    "quote": "Member States may not maintain or introduce in their national law provisions diverging from those laid down in this Directive"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Where a Member State uses the listed regulatory choices, it must notify the Commission without delay and of subsequent changes.",
+   "conditional_on": "where a Member State uses the regulatory choices listed in Article 42(2)",
+   "evidence": {
+    "provision": "Art. 42(2)",
+    "quote": "that Member State shall notify the Commission without delay thereof, as well as of any subsequent changes"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "consumers_users",
+   "modality": "shall_not",
+   "summary": "Consumers may not waive the rights conferred by the national measures transposing the Directive.",
+   "evidence": {
+    "provision": "Art. 43(1)",
+    "quote": "consumers may not waive the rights conferred on them by the national measures transposing this Directive"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States must ensure that transposing provisions cannot be circumvented through the way agreements are formulated.",
+   "evidence": {
+    "provision": "Art. 43(2)",
+    "quote": "Member States shall ensure that the provisions adopted in order to transpose this Directive cannot be circumvented"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States must notify the Commission of their penalty rules and measures by 20 November 2026, and notify any subsequent amendment without delay.",
+   "applies_from": "by 20 November 2026 (Art. 44(1))",
+   "evidence": {
+    "provision": "Art. 44(1)",
+    "quote": "Member States shall, by 20 November 2026, notify the Commission of those rules and of those measures"
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Power to adopt delegated acts under Article 30(5) is conferred on the Commission for five years from 19 November 2023, tacitly extended unless opposed; the Commission must draw up a report not later than nine months before the end of that period.",
+   "applies_from": "19 November 2023 (Art. 45(2))",
+   "evidence": {
+    "provision": "Art. 45(2)",
+    "quote": "The power to adopt delegated acts referred to in Article 30(5) shall be conferred on the Commission for a period of five years from 19 November 2023."
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Commission must evaluate the Directive by 20 November 2029 and every four years thereafter (scope, thresholds, compensation percentages, green-transition credit, penalties), and assess consumer protection for crowdfunding by 20 November 2025.",
+   "applies_from": "by 20 November 2029 (Art. 46(1))",
+   "evidence": {
+    "provision": "Art. 46(1)",
+    "quote": "The Commission shall undertake, by 20 November 2029 and every four years thereafter, an evaluation of this Directive."
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States must adopt and publish the laws, regulations and administrative provisions necessary to comply with the Directive, and immediately communicate their text to the Commission.",
+   "applies_from": "by 20 November 2025 (Art. 48(1))",
+   "evidence": {
+    "provision": "Art. 48(1)",
+    "quote": "Member States shall adopt and publish, by 20 November 2025, the laws, regulations and administrative provisions necessary to comply with this Directive."
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States must apply the transposing measures from 20 November 2026.",
+   "applies_from": "20 November 2026 (Art. 48(1))",
+   "evidence": {
+    "provision": "Art. 48(1)",
+    "quote": "They shall apply those measures from 20 November 2026."
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States must communicate to the Commission the text of the main national law measures they adopt in the field covered by the Directive.",
+   "evidence": {
+    "provision": "Art. 48(2)",
+    "quote": "Member States shall communicate to the Commission the text of the main measures of national law which they adopt in the field covered by this Directive."
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Form note (1): the creditor (text term) must fill in each 'where applicable' box if the information is relevant to the credit type, or delete the information or row where it is not relevant. Applies to the Annex I form.",
+   "evidence": {
+    "provision": "Annex I, note (1)",
+    "quote": "the creditor must fill in the box if the information is relevant to the type of credit"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Creditor must inform the consumer immediately and without charge of the result of a database consultation where a credit application is rejected on that basis (Annex I, Part 3 form text).",
+   "conditional_on": "Credit application rejected on the basis of a database consultation",
+   "evidence": {
+    "provision": "Annex I, Part 3, 'Consultation of a database'",
+    "quote": "The creditor must inform you immediately and without charge of the result of consulting a database"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Consumer has the right, on request, to a copy of the draft credit agreement free of charge; applies if the creditor is willing at the time of the request to conclude the agreement. Text is framed as a consumer right, implying a creditor duty to supply it.",
+   "conditional_on": "Upon consumer request; creditor willing to proceed to conclusion of the agreement",
+   "evidence": {
+    "provision": "Annex I, Part 3, 'Right to a draft credit agreement'",
+    "quote": "You have the right, upon request, to obtain a copy of the draft credit agreement free of charge."
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Form note (1) to Annex II (debt conversion form): creditor must fill in boxes where information is relevant to the credit type, or delete information or rows where not relevant.",
+   "evidence": {
+    "provision": "Annex II, note (1)",
+    "quote": "the creditor must fill in the box if the information is relevant to the type of credit"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "APR calculation method (Annex III, Part I, Remarks (d)): the calculation result is expressed with accuracy of at least one decimal place, rounded per the stated rule. Remarks (c) also fix day/year conventions for interval calculations.",
+   "conditional_on": "Calculation of the annual percentage rate of charge",
+   "evidence": {
+    "provision": "Annex III, Part I, Remarks (d)",
+    "quote": "The result of the calculation shall be expressed with an accuracy of at least one decimal place."
+   }
+  }
+ ],
+ "enforcement": [
+  {
+   "sanction_type": "administrative_fine",
+   "authority": "Member States (competent authorities; penalties imposed in accordance with Regulation (EU) 2017/2394, Art. 21)",
+   "triggered_by": "Penalties imposed in accordance with Article 21 of Regulation (EU) 2017/2394",
+   "max_penalty_text": "Not stated in this text; fines may be imposed through administrative procedures or through legal proceedings.",
+   "penalty_reference": "Article 21 of Regulation (EU) 2017/2394",
+   "evidence": {
+    "provision": "Art. 44(2)",
+    "quote": "they include the possibility either to impose fines through administrative procedures or to initiate legal proceedings for the imposition of fines, or both."
+   }
+  },
+  {
+   "sanction_type": "other",
+   "authority": "Member States",
+   "triggered_by": "Infringements of the national provisions adopted pursuant to this Directive",
+   "max_penalty_text": "Not specified in this text; penalties must be effective, proportionate and dissuasive.",
+   "evidence": {
+    "provision": "Art. 44(1)",
+    "quote": "The penalties provided for shall be effective, proportionate and dissuasive."
+   }
+  }
+ ],
+ "section_status": {}
+}

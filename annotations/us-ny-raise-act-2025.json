@@ -1,0 +1,540 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "us-ny-raise-act-2025",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "AGORA plaintext (ETO, CC BY-NC 4.0), local cache",
+  "url": "https://nyassembly.gov/leg/?default_fld=&leg_video=&bn=A06453&term=&Text=Y",
+  "retrieved": "2025-06-23",
+  "version": "1.33.0 (2026-09-16)",
+  "language": "en",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "ai_general",
+   "cybersecurity"
+  ],
+  "primary_domain": "ai_general",
+  "mechanisms": [
+   "mandate_obligation",
+   "prohibition_ban",
+   "disclosure_transparency"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "ai_developer"
+  ],
+  "affected_roles": [
+   "general_public",
+   "government_agency"
+  ],
+  "decision_margins": [
+   "firm:product_design_release",
+   "firm:compliance_process"
+  ],
+  "territorial_scope": {
+   "types": [
+    "subnational",
+    "extraterritorial"
+   ],
+   "description": "Applies to frontier models developed, deployed or operating in whole or in part in New York state, which reaches models developed elsewhere if they operate in New York.",
+   "evidence": {
+    "provision": "§ 1424 (Scope)",
+    "quote": "are developed, deployed, or operating in whole or in part in New York state"
+   }
+  },
+  "agora_harms": [
+   "Harm to health/safety",
+   "Harm to property"
+  ],
+  "agora_incentives": [
+   "Fines"
+  ],
+  "agora_risk_factors": [
+   "Safety",
+   "Security: Cybersecurity",
+   "Transparency"
+  ],
+  "agora_strategies": [
+   "Disclosure",
+   "Disclosure: About incidents",
+   "Evaluation"
+  ]
+ },
+ "summary": {
+  "short": "Adds Article 44-B (RAISE Act) to New York's General Business Law, requiring large developers of frontier AI models to implement and publish safety and security protocols, report safety incidents within 72 hours, and not deploy models posing unreasonable risk of critical harm. Effective 90 days after enactment.",
+  "long": "Adds Article 44-B, the Responsible AI Safety and Education (RAISE) Act, to New York's General Business Law. The article applies to frontier AI models developed, deployed or operating in whole or in part in New York. A frontier model is defined by training computation exceeding a stated number of operations and compute cost above $100 million, or a distilled model with compute cost above $5 million. A large developer is a person that has trained at least one frontier model and spent over $100 million in compute costs in aggregate on frontier models. Before deploying a frontier model, a large developer must implement a written safety and security protocol, retain an unredacted copy, publish a redacted copy, record and retain test information, and implement safeguards against unreasonable risk of critical harm. It must not deploy a frontier model where doing so would create an unreasonable risk of critical harm. It must review the protocol annually, disclose safety incidents to the attorney general and the division of homeland security and emergency services within 72 hours, and not knowingly make false or materially misleading statements. The attorney general may bring a civil action for civil penalties of up to $10 million for a first violation and $30 million for a subsequent violation, or for injunctive or declaratory relief. The article creates no private right of action. The act takes effect on the ninetieth day after it becomes law."
+ },
+ "relations": [
+  {
+   "relation": "amends",
+   "target_text": "New York General Business Law",
+   "note": "Adds new Article 44-B (Sections 1420 to 1425) to the General Business Law; target not matched to a registry ID.",
+   "evidence": {
+    "provision": "§ 2",
+    "quote": "The general business law is amended by adding a new article"
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "attorney general",
+   "role": "designated",
+   "function": "Brings civil actions for violations of Article 44-B and may recover civil penalties and injunctive or declaratory relief (§ 1422(1)); receives redacted safety and security protocols (§ 1421(1)(c)(i)); may access unredacted protocols upon request (§ 1421(1)(c)(ii)); receives safety incident disclosures (§ 1421(4)).",
+   "evidence": {
+    "provision": "§ 1422(1)",
+    "quote": "The attorney general may bring a civil action for a violation of this article"
+   }
+  },
+  {
+   "name": "division of homeland security and emergency services",
+   "role": "designated",
+   "function": "Receives redacted safety and security protocols (§ 1421(1)(c)(i)); may be granted access to protocols upon request (§ 1421(1)(c)(ii)); receives safety incident disclosures within seventy-two hours (§ 1421(4)).",
+   "evidence": {
+    "provision": "§ 1421(4)",
+    "quote": "to the attorney general and division of homeland security"
+   }
+  }
+ ],
+ "notes": "The document is the Assembly bill text (A.6453-B, reprinted as amended), with no enactment history or chapter text; adoption status and chapter number come from registry metadata only. In § 1420(6)(a) the compute threshold is rendered as 10 followed by a non-ASCII character and 26 (a character-encoding artefact in the source); the text does not state the exponent in plain form. § 1421(1)(c)(ii) lists 'the attorney general' twice in one phrase. § 1421(4) refers to 'subdivision thirteen of section fourteen hundred twenty' for the definition of safety incident. The large developer is a defined class, not a named entity.",
+ "events": [
+  {
+   "event": "introduced",
+   "date": "2025-03-05",
+   "date_type": "absolute",
+   "date_text": "March 5, 2025",
+   "applies_to": "Assembly (bill A.6453-B)",
+   "evidence": {
+    "provision": "Header (Assembly introduction)",
+    "quote": "March 5, 2025"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2026-03-19",
+   "date_type": "relative",
+   "date_text": "on the ninetieth day after it shall have become a law",
+   "anchor": "the date the act becomes a law",
+   "applies_to": "Whole act (§ 2 new Article 44-B and § 1 short title)",
+   "offset_value": 90,
+   "offset_unit": "days",
+   "anchor_event": "signed",
+   "evidence": {
+    "provision": "§ 3",
+    "quote": "This act shall take effect on the ninetieth day after it shall have become a law."
+   },
+   "date_computed_from": "signed 2025-12-19 (registry) + 90 days"
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "within seventy-two hours of the large developer learning of the safety incident",
+   "anchor": "large developer learning of the safety incident",
+   "depends_on": "learning of the safety incident",
+   "applies_to": "Large developers: disclosure of each safety incident to the attorney general and division of homeland security and emergency services (§ 1421(4))",
+   "evidence": {
+    "provision": "§ 1421(4)",
+    "quote": "within seventy-two hours of the large developer learning of the safety incident"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "annual review",
+   "applies_to": "Large developers: annual review of the safety and security protocol (§ 1421(3))",
+   "evidence": {
+    "provision": "§ 1421(3)",
+    "quote": "A large developer shall conduct an annual review of any safety and security protocol required by this section"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "compute_training",
+   "variable_text": "computational operations used to train the model",
+   "operator": ">",
+   "value": 1e+26,
+   "value_text": "greater than  10�26 computational operations",
+   "unit": "computational operations",
+   "measurement": "Operations used to train the AI model; the text gives no measurement method",
+   "level": "model",
+   "trigger": "scope_definition",
+   "consequence": "Model is a frontier model under limb (a) only if the compute cost also exceeds one hundred million dollars",
+   "conditions": "Joint with compute cost exceeding one hundred million dollars (limb (a))",
+   "evidence": {
+    "provision": "§ 1420(6)(a)",
+    "quote": "trained using greater than  10�26"
+   }
+  },
+  {
+   "variable": "compute_training",
+   "variable_text": "compute cost of the model",
+   "operator": ">",
+   "value": 100000000,
+   "value_text": "exceeds one hundred million dollars",
+   "unit": "USD",
+   "currency": "USD",
+   "measurement": "Compute cost as defined in § 1420(4): cost of compute in the final training run, using average published US cloud market prices at the start of training, as reasonably assessed by the person doing the training",
+   "level": "model",
+   "trigger": "scope_definition",
+   "consequence": "Together with the operations threshold, model is a frontier model under limb (a)",
+   "conditions": "Joint with training using greater than 10^26 computational operations",
+   "evidence": {
+    "provision": "§ 1420(6)(a)",
+    "quote": "the compute cost of which exceeds one hundred million dollars"
+   }
+  },
+  {
+   "variable": "compute_training",
+   "variable_text": "compute cost of a model produced by knowledge distillation",
+   "operator": ">",
+   "value": 5000000,
+   "value_text": "exceeds five million dollars",
+   "unit": "USD",
+   "currency": "USD",
+   "measurement": "Compute cost as defined in § 1420(4)",
+   "level": "model",
+   "trigger": "scope_definition",
+   "consequence": "Model produced by knowledge distillation of a frontier model is a frontier model under limb (b)",
+   "conditions": "Model produced by applying knowledge distillation to a frontier model defined in limb (a)",
+   "evidence": {
+    "provision": "§ 1420(6)(b)",
+    "quote": "exceeds five million dollars"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "number of people killed or seriously injured",
+   "operator": ">=",
+   "value": 100,
+   "value_text": "death or serious injury of one hundred or more people",
+   "unit": "people",
+   "level": "other",
+   "trigger": "scope_definition",
+   "consequence": "Alternative to the damages limb in the definition of critical harm",
+   "conditions": "Caused or materially enabled by a large developer's use, storage, or release of a frontier model, through a CBRN weapon or the autonomous criminal conduct limb (b)",
+   "evidence": {
+    "provision": "§ 1420(7)",
+    "quote": "\"Critical harm\" means the death or serious injury of one hundred or"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "damages to rights in money or property",
+   "operator": ">=",
+   "value": 1000000000,
+   "value_text": "at least one billion dollars of damages to rights in money or property",
+   "unit": "USD",
+   "currency": "USD",
+   "level": "other",
+   "trigger": "scope_definition",
+   "consequence": "Alternative to the casualty limb in the definition of critical harm",
+   "conditions": "Caused or materially enabled by a large developer's use, storage, or release of a frontier model, through the same routes as the casualty limb",
+   "evidence": {
+    "provision": "§ 1420(7)",
+    "quote": "one billion dollars of damages to rights in"
+   }
+  },
+  {
+   "variable": "compute_training",
+   "variable_text": "aggregate compute costs in training frontier models",
+   "operator": ">",
+   "value": 100000000,
+   "value_text": "has spent over one hundred million dollars in compute costs in aggregate",
+   "unit": "USD",
+   "currency": "USD",
+   "measurement": "Aggregate across all frontier models the person has trained",
+   "level": "entity",
+   "trigger": "eligibility",
+   "consequence": "Person is a large developer subject to the § 1421 duties",
+   "conditions": "Also has trained at least one frontier model",
+   "evidence": {
+    "provision": "§ 1420(9)",
+    "quote": "frontier model and has spent over one hundred million dollars in compute"
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "Appropriate redactions",
+   "defined_in": "this instrument (GBL art. 44-B)",
+   "evidence": {
+    "provision": "§ 1420(1)",
+    "quote": "\"Appropriate redactions\" means redactions to a safety and security"
+   }
+  },
+  {
+   "term": "Artificial intelligence",
+   "defined_in": "this instrument (GBL art. 44-B)",
+   "evidence": {
+    "provision": "§ 1420(2)",
+    "quote": "\"Artificial intelligence\" means a machine-based"
+   }
+  },
+  {
+   "term": "Artificial intelligence model",
+   "defined_in": "this instrument (GBL art. 44-B)",
+   "evidence": {
+    "provision": "§ 1420(3)",
+    "quote": "uses computational, statistical, or"
+   }
+  },
+  {
+   "term": "Compute cost",
+   "defined_in": "this instrument (GBL art. 44-B)",
+   "evidence": {
+    "provision": "§ 1420(4)",
+    "quote": "means the cost incurred to pay for compute used in"
+   }
+  },
+  {
+   "term": "Deploy",
+   "defined_in": "this instrument (GBL art. 44-B)",
+   "evidence": {
+    "provision": "§ 1420(5)",
+    "quote": "\"Deploy\" means to use a frontier model or to make a frontier model"
+   }
+  },
+  {
+   "term": "Frontier model",
+   "defined_in": "this instrument (GBL art. 44-B)",
+   "evidence": {
+    "provision": "§ 1420(6)",
+    "quote": "\"Frontier model\" means either of the following:"
+   }
+  },
+  {
+   "term": "Critical harm",
+   "defined_in": "this instrument (GBL art. 44-B)",
+   "evidence": {
+    "provision": "§ 1420(7)",
+    "quote": "\"Critical harm\" means the death or serious injury of one hundred or"
+   }
+  },
+  {
+   "term": "Knowledge distillation",
+   "defined_in": "this instrument (GBL art. 44-B)",
+   "evidence": {
+    "provision": "§ 1420(8)",
+    "quote": "means any supervised learning technique"
+   }
+  },
+  {
+   "term": "Large developer",
+   "defined_in": "this instrument (GBL art. 44-B)",
+   "evidence": {
+    "provision": "§ 1420(9)",
+    "quote": "\"Large developer\" means a person that"
+   }
+  },
+  {
+   "term": "Model weight",
+   "defined_in": "this instrument (GBL art. 44-B)",
+   "evidence": {
+    "provision": "§ 1420(10)",
+    "quote": "\"Model weight\" means a numerical parameter"
+   }
+  },
+  {
+   "term": "Person",
+   "defined_in": "this instrument (GBL art. 44-B)",
+   "evidence": {
+    "provision": "§ 1420(11)",
+    "quote": "\"Person\" means an individual, proprietorship,"
+   }
+  },
+  {
+   "term": "Safety and security protocol",
+   "defined_in": "this instrument (GBL art. 44-B)",
+   "evidence": {
+    "provision": "§ 1420(12)",
+    "quote": "means documented technical and"
+   }
+  },
+  {
+   "term": "Safety incident",
+   "defined_in": "this instrument (GBL art. 44-B)",
+   "evidence": {
+    "provision": "§ 1420(13)",
+    "quote": "means a known incidence of critical harm"
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "management_system",
+   "addressee": "ai_developer",
+   "modality": "shall",
+   "summary": "Before deploying a frontier model, a large developer must implement a written safety and security protocol.",
+   "applies_from": "Before deploying a frontier model (act takes effect on the ninetieth day after becoming law, §3)",
+   "conditional_on": "Person is a large developer deploying a frontier model",
+   "evidence": {
+    "provision": "§ 2 (inserting GBL § 1421(1)(a))",
+    "quote": "Implement a written safety and security protocol;"
+   }
+  },
+  {
+   "type": "record_keeping",
+   "addressee": "ai_developer",
+   "modality": "shall",
+   "summary": "Retain an unredacted copy of the safety and security protocol, with records and dates of updates, for as long as the frontier model is deployed plus five years; and record and retain test information sufficient for third parties to replicate the testing procedure, for the same period.",
+   "applies_from": "Before deploying a frontier model (act takes effect on the ninetieth day after becoming law, §3)",
+   "conditional_on": "Person is a large developer deploying a frontier model",
+   "evidence": {
+    "provision": "§ 2 (inserting GBL § 1421(1)(b) and (d))",
+    "quote": "Retain an unredacted copy of the"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "ai_developer",
+   "modality": "shall",
+   "summary": "Conspicuously publish a copy of the safety and security protocol with appropriate redactions, and transmit the redacted copy to the attorney general and the division of homeland security and emergency services.",
+   "applies_from": "Before deploying a frontier model (act takes effect on the ninetieth day after becoming law, §3)",
+   "conditional_on": "Person is a large developer deploying a frontier model",
+   "evidence": {
+    "provision": "§ 2 (inserting GBL § 1421(1)(c)(i))",
+    "quote": "Conspicuously publish a copy of the safety and security"
+   }
+  },
+  {
+   "type": "cooperation_with_authority",
+   "addressee": "ai_developer",
+   "modality": "shall",
+   "summary": "Grant the attorney general and the division of homeland security and emergency services, or the attorney general, access to the safety and security protocol upon request, with redactions only as required by federal law.",
+   "applies_from": "Upon request by the attorney general or the division",
+   "conditional_on": "Person is a large developer deploying a frontier model",
+   "evidence": {
+    "provision": "§ 2 (inserting GBL § 1421(1)(c)(ii))",
+    "quote": "Grant the attorney general and division of homeland security"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "ai_developer",
+   "modality": "shall",
+   "summary": "Implement appropriate safeguards to prevent unreasonable risk of critical harm.",
+   "applies_from": "Before deploying a frontier model (act takes effect on the ninetieth day after becoming law, §3)",
+   "conditional_on": "Person is a large developer deploying a frontier model",
+   "evidence": {
+    "provision": "§ 2 (inserting GBL § 1421(1)(e))",
+    "quote": "Implement appropriate safeguards to prevent unreasonable"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "ai_developer",
+   "modality": "shall_not",
+   "summary": "A large developer shall not deploy a frontier model if doing so would create an unreasonable risk of critical harm.",
+   "applies_from": "Act takes effect on the ninetieth day after becoming law (§3)",
+   "conditional_on": "Person is a large developer; deployment would create an unreasonable risk of critical harm",
+   "evidence": {
+    "provision": "§ 2 (inserting GBL § 1421(2))",
+    "quote": "shall not deploy a frontier model if doing so"
+   }
+  },
+  {
+   "type": "management_system",
+   "addressee": "ai_developer",
+   "modality": "shall",
+   "summary": "Conduct an annual review of the safety and security protocol to account for changes in model capabilities and industry best practices, modify it if necessary, and republish it in the same manner as the initial publication after any material modification.",
+   "applies_from": "Annually (act takes effect on the ninetieth day after becoming law, §3)",
+   "conditional_on": "Person is a large developer",
+   "evidence": {
+    "provision": "§ 2 (inserting GBL § 1421(3))",
+    "quote": "A large developer shall conduct an annual review of any safety"
+   }
+  },
+  {
+   "type": "incident_reporting",
+   "addressee": "ai_developer",
+   "modality": "shall",
+   "summary": "Disclose each safety incident affecting the frontier model to the attorney general and the division of homeland security and emergency services, including the incident date, the reasons it qualifies as a safety incident, and a short plain statement describing it.",
+   "applies_from": "Within seventy-two hours of learning of the safety incident or of facts sufficient to establish a reasonable belief that one has occurred",
+   "conditional_on": "Person is a large developer; a safety incident affecting the frontier model has occurred",
+   "evidence": {
+    "provision": "§ 2 (inserting GBL § 1421(4))",
+    "quote": "A large developer shall disclose each safety incident affecting the"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "ai_developer",
+   "modality": "shall_not",
+   "summary": "A large developer shall not knowingly make false or materially misleading statements or omissions in or regarding documents produced under the section.",
+   "applies_from": "Act takes effect on the ninetieth day after becoming law (§3)",
+   "conditional_on": "Person is a large developer",
+   "evidence": {
+    "provision": "§ 2 (inserting GBL § 1421(5))",
+    "quote": "knowingly make false or materially misleading statements or omissions in or"
+   }
+  },
+  {
+   "type": "management_system",
+   "addressee": "ai_developer",
+   "modality": "shall",
+   "summary": "The safety and security protocol must designate senior personnel to be responsible for ensuring compliance with the article.",
+   "applies_from": "Act takes effect on the ninetieth day after becoming law (§3)",
+   "conditional_on": "Duty stated within the definition of safety and security protocol",
+   "evidence": {
+    "provision": "§ 2 (inserting GBL § 1420(12)(e))",
+    "quote": "Designate senior personnel to be responsible for ensuring"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "ai_developer",
+   "modality": "shall",
+   "summary": "A person receiving full intellectual property rights of a frontier model (including the right to resell it) and retaining none of them is considered the large developer and is subject to the article's responsibilities and requirements after the transfer.",
+   "applies_from": "After the transfer of full intellectual property rights",
+   "conditional_on": "Transfer of full intellectual property rights of the frontier model to another person",
+   "evidence": {
+    "provision": "§ 2 (inserting GBL § 1420(9))",
+    "quote": "the receiving person shall be considered the large"
+   }
+  }
+ ],
+ "enforcement": [
+  {
+   "sanction_type": "civil_penalty",
+   "authority": "New York Attorney General",
+   "triggered_by": "Violation of section 1421 (transparency requirements regarding frontier model training and use) by a large developer",
+   "max_penalty_text": "in an amount not exceeding ten million dollars for a first violation and in an amount not exceeding thirty million dollars for any subsequent violation",
+   "max_penalty_amount": 10000000,
+   "currency": "USD",
+   "penalty_formula": "Amount determined based on severity of the violation; not exceeding $10 million for a first violation and $30 million for any subsequent violation",
+   "penalty_reference": "General Business Law § 1422(1)(a) (as added by § 2)",
+   "private_right_of_action": false,
+   "cure_period": "Not stated in text",
+   "evidence": {
+    "provision": "§ 2 (adding General Business Law art. 44-B) § 1422(1)(a); § 1422(2)",
+    "quote": "a civil penalty in an amount not exceeding ten million"
+   }
+  },
+  {
+   "sanction_type": "injunction_order",
+   "authority": "New York Attorney General",
+   "triggered_by": "Violation of section 1421 (transparency requirements regarding frontier model training and use) by a large developer",
+   "max_penalty_text": "injunctive or declaratory relief",
+   "currency": "not applicable",
+   "penalty_formula": "Not applicable; injunctive or declaratory relief with no amount stated",
+   "private_right_of_action": false,
+   "cure_period": "Not stated in text",
+   "evidence": {
+    "provision": "§ 2 (adding General Business Law art. 44-B) § 1422(1)(b)",
+    "quote": "injunctive or declaratory relief"
+   }
+  }
+ ],
+ "section_status": {}
+}

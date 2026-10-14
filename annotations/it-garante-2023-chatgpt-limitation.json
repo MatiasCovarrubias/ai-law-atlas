@@ -1,0 +1,254 @@
+{
+ "schema_version": "1.1",
+ "instrument_id": "it-garante-2023-chatgpt-limitation",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-opus-5-5 (Claude Code)",
+  "method": "manual + model (codebook worked example)",
+  "date": "2026-10-11",
+  "prompt_version": "gold (codebook worked example; no prompt version)"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "Garante per la protezione dei dati personali, docweb 9870832",
+  "url": "https://www.garanteprivacy.it/home/docweb/-/docweb-display/docweb/9870832",
+  "retrieved": "2026-10-11",
+  "version": "original as adopted (2023-03-30)",
+  "language": "it",
+  "extent": "full",
+  "note": "Urgent measure (provvedimento n. 112 of 30 March 2023) adopted by the President under Art. 5(8) of Garante Regulation 1/2000, subject to ratification."
+ },
+ "summary": {
+  "short": "Urgent order of Italy's data protection authority imposing on OpenAI an immediate temporary limitation on processing personal data of people in Italy through ChatGPT, and requiring OpenAI to report its remedial measures within 20 days.",
+  "long": "Acting under GDPR Article 58(2)(f), the Garante found that ChatGPT provided no information notice to users or data subjects, lacked a legal basis for collecting and processing personal data to train its algorithms, processed inaccurate data, and had no age verification although OpenAI's terms reserve the service to users aged 13 or older. It considered these breaches of GDPR Articles 5, 6, 8, 13 and 25. It ordered, with immediate effect from receipt, a provisional limitation of the processing of personal data of data subjects established in Italy, pending its investigation. OpenAI was asked to report within 20 days the measures taken and any justification. Non-compliance is subject to the criminal penalty in Article 170 of the Italian Privacy Code and to GDPR Article 83(5)(e) administrative fines. The order can be appealed to the ordinary courts within 30 days, or 60 for residents abroad."
+ },
+ "classification": {
+  "domains": [
+   "data_protection",
+   "generative_ai",
+   "minors_child_safety"
+  ],
+  "primary_domain": "data_protection",
+  "mechanisms": [
+   "enforcement_order",
+   "prohibition_ban"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "ai_provider",
+   "data_controller"
+  ],
+  "affected_roles": [
+   "consumers_users",
+   "minors"
+  ],
+  "decision_margins": [
+   "firm:entry_market_access",
+   "firm:product_design_release",
+   "household:access",
+   "household:data_privacy"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national",
+    "targeted"
+   ],
+   "description": "Addressed to OpenAI L.L.C. (United States); covers personal data of data subjects established in Italy.",
+   "evidence": {
+    "provision": "Dispositivo (a)",
+    "quote": "la misura della limitazione provvisoria, del trattamento dei dati personali degli interessati stabiliti nel territorio italiano [the measure of provisional limitation of processing of personal data of data subjects established in Italy]"
+   }
+  },
+  "agora_applications": [],
+  "agora_harms": [
+   "Violation of civil or human rights, including privacy"
+  ],
+  "agora_incentives": [
+   "Fines",
+   "Criminal liability"
+  ],
+  "agora_risk_factors": [
+   "Privacy",
+   "Reliability"
+  ],
+  "agora_strategies": [
+   "Input controls: Data use"
+  ]
+ },
+ "events": [
+  {
+   "event": "adopted",
+   "date": "2023-03-30",
+   "date_type": "absolute",
+   "date_text": "In Roma, 30 marzo 2023",
+   "applies_to": "Urgent order",
+   "evidence": {
+    "provision": "Signature",
+    "quote": "In Roma, 30 marzo 2023"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "effetto immediato a decorrere dalla data di ricezione del presente provvedimento",
+   "anchor": "date the order is received by OpenAI",
+   "applies_to": "Provisional limitation of processing",
+   "evidence": {
+    "provision": "Dispositivo (b)",
+    "quote": "la predetta limitazione ha effetto immediato a decorrere dalla data di ricezione del presente provvedimento [the limitation takes effect immediately from receipt of this order]"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "entro 20 giorni dalla data di ricezione",
+   "anchor": "receipt of the order; 20 days",
+   "applies_to": "OpenAI to report measures taken and justifications (GDPR Art. 58(1))",
+   "evidence": {
+    "provision": "Final paragraph",
+    "quote": "entro 20 giorni dalla data di ricezione dello stesso, a comunicare quali iniziative siano state intraprese al fine di dare attuazione a quanto prescritto"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "da convocarsi non oltre il trentesimo giorno",
+   "anchor": "adoption by the President; ratification at the Garante's first meeting, within 30 days, or the measure lapses",
+   "applies_to": "Ratification of the President's urgent measure by the Garante board",
+   "evidence": {
+    "provision": "Recital (Reg. 1/2000 Art. 5(8))",
+    "quote": "i quali cessano di avere efficacia sin dal momento della loro adozione se non sono ratificati dal Garante nella prima riunione utile, da convocarsi non oltre il trentesimo giorno"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "entro il termine di trenta giorni ... ovvero di sessanta giorni se il ricorrente risiede all'estero",
+   "anchor": "communication of the order; 30 days, or 60 for appellants resident abroad",
+   "applies_to": "Appeal to the ordinary court",
+   "evidence": {
+    "provision": "Appeal paragraph",
+    "quote": "entro il termine di trenta giorni dalla data di comunicazione del provvedimento stesso, ovvero di sessanta giorni se il ricorrente risiede all’estero"
+   }
+  }
+ ],
+ "thresholds": [],
+ "obligations": [
+  {
+   "type": "prohibition",
+   "addressee": "data_controller",
+   "summary": "OpenAI must provisionally stop processing personal data of data subjects established in Italy through ChatGPT, pending the investigation.",
+   "applies_from": null,
+   "conditional_on": "Receipt of the order",
+   "evidence": {
+    "provision": "Dispositivo (a)",
+    "quote": "dispone, in via d’urgenza, nei confronti di OpenAI L.L.C., società statunitense sviluppatrice e gestrice di ChatGPT, in qualità di titolare del trattamento"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "data_controller",
+   "summary": "OpenAI must report within 20 days the initiatives taken to comply and any information justifying the alleged breaches.",
+   "applies_from": null,
+   "conditional_on": "Within 20 days of receipt",
+   "evidence": {
+    "provision": "Final paragraph",
+    "quote": "a comunicare quali iniziative siano state intraprese al fine di dare attuazione a quanto prescritto e di fornire ogni elemento ritenuto utile a giustificare le violazioni sopra evidenziate"
+   }
+  }
+ ],
+ "enforcement": [
+  {
+   "sanction_type": "criminal_penalty",
+   "authority": "Italian criminal courts (on referral)",
+   "triggered_by": "Non-compliance with the Garante's measure",
+   "max_penalty_text": null,
+   "max_penalty_amount": null,
+   "currency": null,
+   "penalty_formula": null,
+   "penalty_reference": "Codice in materia di protezione dei dati personali, art. 170",
+   "private_right_of_action": false,
+   "cure_period": null,
+   "evidence": {
+    "provision": "Recital",
+    "quote": "in caso di inosservanza della misura disposta dal Garante, trova applicazione la sanzione penale di cui all’art. 170 del Codice"
+   }
+  },
+  {
+   "sanction_type": "administrative_fine",
+   "authority": "Garante per la protezione dei dati personali",
+   "triggered_by": "Non-compliance with the measure, or failure to answer the Art. 58 request",
+   "max_penalty_text": null,
+   "max_penalty_amount": null,
+   "currency": null,
+   "penalty_formula": null,
+   "penalty_reference": "GDPR art. 83(5)(e)",
+   "private_right_of_action": false,
+   "cure_period": null,
+   "evidence": {
+    "provision": "Recital; final paragraph",
+    "quote": "le sanzioni amministrative previste dall’art. 83, par. 5, lett. e), del Regolamento"
+   }
+  }
+ ],
+ "definitions": [],
+ "relations": [
+  {
+   "relation": "legal_basis",
+   "target_instrument_id": "eu-gdpr-2016",
+   "target_text": "Regulation (EU) 2016/679 (GDPR), Art. 58(2)(f) and Art. 58(1)",
+   "note": "Corrective power to impose a temporary limitation of processing; investigative power to request information",
+   "evidence": {
+    "provision": "Dispositivo (a)",
+    "quote": "ai sensi dell’art. 58, par. 2, lett. f), del Regolamento dispone, in via d’urgenza"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": "eu-gdpr-2016",
+   "target_text": "GDPR Arts. 5, 6, 8, 13, 25",
+   "note": "Provisions the processing is considered to breach",
+   "evidence": {
+    "provision": "Recital",
+    "quote": "si ponga in violazione degli artt. 5, 6, 8, 13 e 25 del Regolamento"
+   }
+  },
+  {
+   "relation": "legal_basis",
+   "target_instrument_id": null,
+   "target_text": "Garante Regulation n. 1/2000, Art. 5(8) (urgent measures by the President)",
+   "note": "Urgent measure by the President, to be ratified by the board",
+   "evidence": {
+    "provision": "Recital",
+    "quote": "ricorrano i presupposti per l’applicazione dell’art. 5, comma 8, del Regolamento n. 1/2000"
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "OpenAI, L.L.C.",
+   "role": "addressee",
+   "lei": null,
+   "ticker": null,
+   "evidence": {
+    "provision": "Dispositivo (a)",
+    "quote": "nei confronti di OpenAI L.L.C., società statunitense sviluppatrice e gestrice di ChatGPT"
+   }
+  }
+ ],
+ "section_status": {
+  "thresholds": {
+   "status": "not_found",
+   "note": "The only number, age 13, comes from OpenAI's own terms, so it is not coded (codebook 3.4). The 20- and 30-day limits are coded as events."
+  },
+  "definitions": {
+   "status": "not_found",
+   "note": "An individual order; no defined terms."
+  }
+ },
+ "notes": "The later order of 11 April 2023 setting conditions for lifting the limitation is a separate instrument (it-garante-2023-chatgpt-conditions); it is not referenced in this text, so it is not recorded as a relation here (codebook 3.8)."
+}

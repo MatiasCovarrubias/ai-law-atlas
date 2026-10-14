@@ -1,0 +1,1758 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "us-ferc-pjm-colocation-2025",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium, batch; spot-checked by Claude Opus (Claude Code) 2026-10-14",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-718f7c3f"
+ },
+ "validation": "spot-checked",
+ "text_version": {
+  "source": "official site (connectors/fetch_texts.py)",
+  "url": "https://www.ferc.gov/sites/default/files/2026-06/EL25-49-002_0.pdf",
+  "retrieved": "2026-10-13",
+  "version": "as fetched",
+  "language": "en",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "energy_grid_water",
+   "compute_data_centers"
+  ],
+  "primary_domain": "energy_grid_water",
+  "mechanisms": [
+   "mandate_obligation",
+   "tariff_price_regulation"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "utility_grid_operator",
+   "enterprise"
+  ],
+  "affected_roles": [
+   "data_center_occupant",
+   "consumers_users"
+  ],
+  "decision_margins": [
+   "firm:input_use",
+   "firm:compliance_process"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national",
+    "targeted"
+   ],
+   "description": "Federal order under FPA section 206 addressed to PJM Interconnection and named PJM transmission owners, applying to the PJM Region.",
+   "evidence": {
+    "provision": "Order, p. 2 (introduction)",
+    "quote": "finding PJM Interconnection, L.L.C.’s (PJM) Tariff unjust and unreasonable"
+   }
+  }
+ },
+ "summary": {
+  "short": "FERC order (Docket EL25-49) on rehearing and PJM compliance. Sustains finding that PJM's Tariff lacks clear co-location rules; sets replacement transmission services (Interim NITS, firm and non-firm contract demand) for Eligible Customers serving Co-Located Load or load with BTMG; directs further PJM compliance filings within 60 days.",
+  "long": "Order of the Federal Energy Regulatory Commission, issued June 18, 2026, on rehearing, clarification, PJM's second compliance filing and the paper hearing that followed the December 18, 2025 show-cause order (193 FERC ¶ 61,217). It sustains the finding that PJM's Tariff is unjust and unreasonable for lacking clear provisions on Co-Location Arrangements, where a generator and load share a site, and for not offering transmission services that reflect a load's willingness to limit its withdrawals. It sets as just and reasonable three new transmission services for Eligible Customers serving Co-Located Load or load with behind-the-meter generation (BTMG): Interim NITS, Firm Contract Demand (FCD) and Non-Firm Contract Demand (NFCD) service, charged on contract demand. It finds PJM's retail BTMG netting rules remain unjust and unreasonable and directs revisions, including a transition period, grandfathering, and an exemption for certain cogeneration Qualifying Facilities integrated with load. It states that states keep authority over generator siting and retail cost allocation, while wholesale sales and transmission charges fall under FERC jurisdiction. It denies or dismisses most rehearing and clarification requests and directs PJM and PJM transmission owners to file further compliance filings within 60 days of the order's date."
+ },
+ "relations": [
+  {
+   "relation": "legal_basis",
+   "target_instrument_id": "null",
+   "target_text": "Federal Power Act (FPA), section 206 (16 U.S.C. § 824e) and section 313(a) (16 U.S.C. § 825l(a))",
+   "note": "The order rests on FPA section 206 findings and on section 313(a) authority to modify or set aside the December Order in part.",
+   "evidence": {
+    "provision": "Introduction (p. 2 and p. 5)",
+    "quote": "pursuant to section 206 of the Federal Power Act (FPA)"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_instrument_id": "null",
+   "target_text": "PJM Interconnection, L.L.C., 193 FERC ¶ 61,217 (December Order)",
+   "note": "Modifies the discussion in and sets aside in part the December Order; other findings of the December Order are sustained.",
+   "evidence": {
+    "provision": "Introduction (p. 5)",
+    "quote": "we are modifying the discussion in the December Order and setting aside the order, in part"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": "null",
+   "target_text": "PJM Open Access Transmission Tariff (OATT), the Tariff",
+   "note": "The order directs PJM to file compliance revisions to the Tariff; it does not itself amend the Tariff text in this part.",
+   "evidence": {
+    "provision": "Introduction (p. 5)",
+    "quote": "We direct PJM to file, within 60 days of the date of issuance of this order, a compliance filing to revise its Tariff."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": "null",
+   "target_text": "PJM Interconnection, L.L.C., 190 FERC ¶ 61,115 (February Order)",
+   "note": "The February Order instituted the proceeding and set the briefing questions and preliminary findings on which this order relies.",
+   "evidence": {
+    "provision": "Background I.A (p. 10)",
+    "quote": "The February Order defined Co-Located Load as a"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": "null",
+   "target_text": "Docket No. EL25-20-000 (Constellation complaint, consolidated with the show cause proceeding)",
+   "note": "The February Order consolidated the show cause proceeding with a pending complaint proceeding involving Co-Located Load.",
+   "evidence": {
+    "provision": "Background I.A, footnote 15 (p. 10-11)",
+    "quote": "The February Order consolidated the new show cause proceeding with a pending complaint proceeding in Docket No. EL25-20-000"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": "null",
+   "target_text": "Order No. 888-A (FERC Stats. & Regs. ¶ 31,048)",
+   "note": "Exelon and FirstEnergy argue the contract demand services conflict with Order No. 888-A; the Commission finds they do not.",
+   "evidence": {
+    "provision": "Part IV.C.1.b.iii(b) (p. 64)",
+    "quote": "Most simply, Order No. 888-A rejected splitting load between NITS and PTPS at the same point of delivery."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": "null",
+   "target_text": "18 C.F.R. § 292.305(b)(1) (PURPA qualifying facility regulation)",
+   "note": "The Commission clarifies that the replacement rate does not change PURPA back-up and maintenance power obligations for qualifying facilities.",
+   "evidence": {
+    "provision": "Part IV.C.1.c.i(c) (p. 77-78)",
+    "quote": "nothing in the replacement rate undoes the requirement in 18 C.F.R. § 292.305(b)(1)"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": "null",
+   "target_text": "Docket No. EL26-67-000 (separate show cause proceeding on flexible large loads)",
+   "note": "Initiated concurrently; addresses whether the Tariff is just and reasonable without provisions for flexible large loads, and is cited as the reason undue discrimination arguments on flexible loads are outside this proceeding's scope.",
+   "evidence": {
+    "provision": "Part IV.C.1.b.ii(b) (p. 59-60)",
+    "quote": "the Commission is initiating a separate show cause proceeding in Docket No. EL26-67-000"
+   }
+  },
+  {
+   "relation": "legal_basis",
+   "target_text": "Federal Power Act (FPA), including FPA section 313(a) (16 U.S.C. § 825l(a)) on rehearing specificity",
+   "note": "The Commission states its FPA obligation to ensure just and reasonable rates, terms and conditions. The same part cites FPA section 313(a) for rejecting rehearing arguments that lack specificity.",
+   "evidence": {
+    "provision": "Order, unlawful taking of private property, Determination (p. 83); rehearing standard cited in Materiality Threshold footnotes",
+    "quote": "In any event, the Commission has an obligation under the FPA to ensure that the rates, terms, and conditions of jurisdictional service are just and reasonable."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "PURPA regulations, 18 C.F.R. § 292.305(c) (backup service rates for qualifying facilities)",
+   "note": "The order states that its BTMG netting directive does not change the rates for backup service to QFs under the PURPA regulations and so does not conflict with them.",
+   "evidence": {
+    "provision": "Order, Compliance V.A.3.d (QFs and Cogeneration Facilities, Determination)",
+    "quote": "Under the Commission’s PURPA regulations, the rates at which a host utility provides backup service must be just and reasonable"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "December Order, 193 FERC ¶ 61,217 (Co-Location Order)",
+   "note": "The order sets aside in part the December Order (cogeneration QFs netting and related findings) and otherwise sustains it. The December Order is the subject of the rehearing and compliance review in this part.",
+   "evidence": {
+    "provision": "Order, Materiality Threshold rehearing, Determination (p. 87)",
+    "quote": "we set aside, in part, the December Order’s elimination of BTMG netting as to certain cogeneration QFs"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Commission Order No. 2023 (interconnection reforms)",
+   "note": "Cited in a footnote for a PJM interconnection proposal accepted in compliance with Order No. 2023. The order does not amend Order No. 2023.",
+   "evidence": {
+    "provision": "Order, Necessary Study / New Generators footnote 461 (Determination)",
+    "quote": "in compliance with the Commission’s Order No. 2023 interconnection reforms"
+   }
+  },
+  {
+   "relation": "legal_basis",
+   "target_text": "Federal Power Act (FPA) section 206",
+   "note": "The order states that this proceeding arises under FPA section 206. It refers to a possible FPA section 205 filing by PJM for future changes.",
+   "evidence": {
+    "provision": "Part VI.C.5 (Determination)",
+    "quote": "the instant case arises under FPA section 206."
+   }
+  },
+  {
+   "relation": "implements",
+   "target_text": "FERC order in this docket, 193 FERC ¶ 61,217 (the December Order)",
+   "note": "Compliance directive: PJM is directed to revise its Tariff consistent with the December Order's directives.",
+   "evidence": {
+    "provision": "Part V.A.5.a (Determination, Definition of Co-Located Load)",
+    "quote": "consistent with the Commission’s directive in the December Order."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "FERC Order No. 845 (Reform of Generator Interconnection Procedures and Agreements)",
+   "note": "Relies on Order No. 845 for the principle that an Eligible Customer may propose its own necessary control technologies or protection systems.",
+   "evidence": {
+    "provision": "Part VI.C.5 (Determination)",
+    "quote": "consistent with the Commission’s determination in Order No. 845, nothing prevents an Eligible Customer"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "FERC Order No. 888 (Non-Firm PTPS rate cap)",
+   "note": "Cited as precedent that the Non-Firm PTPS rate is capped at the firm rate, and that non-firm rates should generally be priced below firm rates.",
+   "evidence": {
+    "provision": "Part VI.A.4.e (Determination)",
+    "quote": "In Order No. 888, the Commission determined that the rate for Non-Firm PTPS"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "FERC Order No. 888-A (rehearing and clarification of Order No. 888)",
+   "note": "Cited for the Commission's clarification that the Firm PTPS rate is a maximum price for non-firm transmission service.",
+   "evidence": {
+    "provision": "Part VI.A.4.e (Determination), footnote 886",
+    "quote": "Order No. 888-A, FERC Stats. & Regs. ¶ 31,048 at 30,272"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "NERC Reliability Standards (including PRC-012-2 on remedial action schemes)",
+   "note": "Reliability standards that the order makes applicable, as well as PJM and transmission owner technical criteria, to necessary control technologies and protection systems.",
+   "evidence": {
+    "provision": "Part VI.C.5 (Determination)",
+    "quote": "as well as any applicable NERC reliability standards."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "NERC Large Loads Action Plan",
+   "note": "The order notes that NERC is already considering registration requirements for large loads, including potentially Co-Located Loads, under this plan.",
+   "evidence": {
+    "provision": "Part VI.C.5 (Determination), footnote 988",
+    "quote": "NERC is already considering registration requirements for large loads, including potentially Co-Located Loads, as part of its Large Load Action Plan."
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "December Order, 193 FERC ¶ 61,217 (2025)",
+   "note": "Ordering paragraph (A) says the December Order is modified and set aside in part on rehearing. The December Order is not in this part and is not separately annotated here.",
+   "evidence": {
+    "provision": "Ordering paragraph (A)",
+    "quote": "In response to the requests for rehearing, the December Order is hereby modified and set aside, in part"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "PJM Intra-PJM Tariffs, OATT (Part XI, Attachment F-3A and other tariff records listed in the Appendix)",
+   "note": "Ordering paragraphs direct PJM and the PJM transmission owners to file compliance Tariff revisions within 60 days. The order does not itself change the Tariff text.",
+   "evidence": {
+    "provision": "Ordering paragraphs (C)-(H); Appendix – Tariff Record[s]",
+    "quote": "a compliance filing with revisions to its Tariff as described in Part IV.B.3"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Order No. 890, 118 FERC ¶ 61,119",
+   "note": "Relied on for a rebuttable presumption that unreserved use penalties no greater than twice the firm point-to-point rate are just and reasonable, and for distributing unreserved use penalties to non-offending transmission customers.",
+   "evidence": {
+    "provision": "Part VI, subpart c (Unreserved Use of the Transmission System), fn. 1052",
+    "quote": "we establish a rebuttable presumption that unreserved use penalties no greater than twice the firm point-to-point rate"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Order No. 890-A, 121 FERC ¶ 61,297",
+   "note": "Cited in support of the reliability flexibility PJM needs to curtail transmission customers during emergencies.",
+   "evidence": {
+    "provision": "Part VI.G.5, fn. 1089",
+    "quote": "Order No. 890-A, 121 FERC ¶ 61,297 at P 566"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Order No. 845, 163 FERC ¶ 61,043",
+   "note": "Cited in the Interim NITS study-process determination on the discretion transmission providers have when studying a service that can be provided reliably.",
+   "evidence": {
+    "provision": "Part VI.H.5, fn. 1126",
+    "quote": "Order No. 845, 163 FERC ¶ 61,043 at P 440"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Federal Power Act, section 212(h)",
+   "note": "Cited in the Eligible Customer definition quoted from the Tariff. The concurrence also refers to Federal Power Act sections 205 filings and 206 complaints.",
+   "evidence": {
+    "provision": "Part VI.K.3.c (Eligible Customer Requirements, Determination)",
+    "quote": "section 212(h) of the FPA"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Southwest Power Pool, Inc., 195 FERC ¶ 61,196 (CHILLS process)",
+   "note": "Constellation urged the Commission to adopt the SPP approach, which penalizes only exceedances of reserved capacity. The Commission declined to adopt it.",
+   "evidence": {
+    "provision": "Part VI, subpart a (Failure to Follow Curtailment or Load Shedding Directive), fn. 1039",
+    "quote": "Sw. Power Pool, Inc., 195 FERC ¶ 61,196, at 98 (2026)"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "PJM Manual 13: Emergency Operations, Rev. 97 (eff. November 20, 2025)",
+   "note": "Cited for PJM's curtailment procedures for Non-Firm PTPS, the comparison used in the Interim NITS curtailment determination.",
+   "evidence": {
+    "provision": "Part VI.G.5, fn. 1085",
+    "quote": "PJM Manual 13: Emergency Operations, Rev. 97 (eff. November 20, 2025), § 2.3.2"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "PJM Interconnection, L.L.C., 195 FERC ¶ 61,030",
+   "note": "Cited as the Commission's approval of PJM's proposal on interconnection service for Co-Located Generators.",
+   "evidence": {
+    "provision": "Part VI.K.5.c, fn. 1170",
+    "quote": "PJM Interconnection, L.L.C., 195 FERC ¶ 61,030 at P 25"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Proclamation No. 11014, 91 Fed. Reg. 11439 (Mar. 4, 2026) (President's Ratepayer Protection Pledge)",
+   "note": "Cited in a footnote on cost-allocation principles. Not an operative provision of this order.",
+   "evidence": {
+    "provision": "Part VI.K.2.b, fn. 1159",
+    "quote": "Proclamation No. 11014, 91 Fed. Reg. 11439 (Mar. 4, 2026)"
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "PJM Interconnection, L.L.C.",
+   "role": "addressee",
+   "function": "Directed to file compliance filings revising the Tariff within 60 days of the order, for the Co-Located Load terms and for the new transmission services.",
+   "lei": "null",
+   "ticker": "null",
+   "evidence": {
+    "provision": "Introduction (p. 5)",
+    "quote": "We direct PJM to file, within 60 days of the date of issuance of this order, a compliance filing to revise its Tariff."
+   }
+  },
+  {
+   "name": "PJM transmission owners",
+   "role": "addressee",
+   "function": "Directed to file a compliance filing revising the Tariff within 60 days of the order.",
+   "lei": "null",
+   "ticker": "null",
+   "evidence": {
+    "provision": "Introduction (p. 5)",
+    "quote": "We also direct the PJM transmission owners to file, within 60 days of the date of issuance of this order, a compliance filing to revise the Tariff."
+   }
+  },
+  {
+   "name": "Federal Energy Regulatory Commission",
+   "role": "designated",
+   "function": "Issuing authority under FPA sections 206 and 313(a); sets just and reasonable replacement rates and modifies or sets aside its prior orders.",
+   "lei": "null",
+   "ticker": "null",
+   "evidence": {
+    "provision": "Introduction (p. 5)",
+    "quote": "as permitted by section 313(a) of the FPA"
+   }
+  },
+  {
+   "name": "Exelon Corporation",
+   "role": "listed",
+   "function": "Requested rehearing of the December Order on behalf of listed utility affiliates; also filed a compliance-proceeding answer.",
+   "lei": "null",
+   "ticker": "null",
+   "evidence": {
+    "provision": "Procedural footnote 5 (p. 4)",
+    "quote": "Exelon Corporation (Exelon), on behalf of Atlantic City Electric Company"
+   }
+  },
+  {
+   "name": "FirstEnergy Service Company",
+   "role": "listed",
+   "function": "Requested rehearing of the December Order as agent for listed FirstEnergy affiliates.",
+   "lei": "null",
+   "ticker": "null",
+   "evidence": {
+    "provision": "Procedural footnote 5 (p. 4)",
+    "quote": "FirstEnergy Service Company, as agent for its affiliates"
+   }
+  },
+  {
+   "name": "Constellation Energy Generation, LLC",
+   "role": "listed",
+   "function": "Requested clarification or, alternatively, rehearing of the December Order; filed the Constellation complaint in Docket No. EL25-20-000.",
+   "lei": "null",
+   "ticker": "null",
+   "evidence": {
+    "provision": "Introduction (p. 4)",
+    "quote": "Constellation Energy Generation, LLC (Constellation) filed a request for clarification or, in the alternative, rehearing."
+   }
+  },
+  {
+   "name": "Monitoring Analytics, LLC (Independent Market Monitor for PJM)",
+   "role": "listed",
+   "function": "Intervenor in the PJM compliance proceeding, acting as the Independent Market Monitor for PJM.",
+   "lei": "null",
+   "ticker": "null",
+   "evidence": {
+    "provision": "Part II.A (p. 15)",
+    "quote": "Monitoring Analytics, LLC, acting in its capacity as the Independent Market Monitor for PJM (Market Monitor)"
+   }
+  },
+  {
+   "name": "Industrials (PJM Industrial Customer Coalition and Industrial Energy Consumers of America)",
+   "role": "listed",
+   "function": "Requested clarification or, alternatively, rehearing of the December Order; the group also includes AF&PA.",
+   "lei": "null",
+   "ticker": "null",
+   "evidence": {
+    "provision": "Procedural footnote 6 (p. 4)",
+    "quote": "the PJM Industrial Customer Coalition (PJM ICC) and the Industrial Energy Consumers of America (IECA)"
+   }
+  },
+  {
+   "name": "PIOs (EarthJustice, Environmental Defense Fund, Sierra Club)",
+   "role": "listed",
+   "function": "Filed a limited request for clarification of the December Order regarding cost allocation.",
+   "lei": "null",
+   "ticker": "null",
+   "evidence": {
+    "provision": "Procedural footnote 7 (p. 4)",
+    "quote": "As to the request for clarification, PIOs are EarthJustice, Environmental Defense Fund, and Sierra Club."
+   }
+  },
+  {
+   "name": "PJM Interconnection, L.L.C.",
+   "role": "addressee",
+   "function": "Directed to submit further compliance filings and revise its Tariff (BTMG netting, transmission services, Necessary Studies, Co-Located Load definition) within set periods.",
+   "evidence": {
+    "provision": "Order, cogeneration QFs, Determination (Compliance V.A.3.d)",
+    "quote": "We therefore direct PJM, within 60 days of the date of issuance of this order"
+   }
+  },
+  {
+   "name": "Industrials/Amtrak",
+   "role": "listed",
+   "function": "Party seeking clarification and rehearing and filing protests on PJM's compliance filing (BTMG netting, threshold, grandfathering, QFs).",
+   "evidence": {
+    "provision": "Order, Capacity Obligations, Request for Clarification and/or Rehearing",
+    "quote": "Industrials seek clarification that the removal of BTMG netting rules will only be applicable to transmission and specified ancillary services"
+   }
+  },
+  {
+   "name": "Constellation",
+   "role": "listed",
+   "function": "Party seeking clarification and rehearing on delisting of capacity interconnection rights (CIRs) for Co-Located Load and filing protests on compliance.",
+   "evidence": {
+    "provision": "Order, Treatment of Capacity Interconnection Rights, Request for Clarification or Rehearing",
+    "quote": "Constellation argues that the December Order appears to require a capacity resource to delist its CIRs"
+   }
+  },
+  {
+   "name": "Exelon",
+   "role": "listed",
+   "function": "Party challenging on rehearing the requirement that Interconnection Customers bear Network Upgrade costs.",
+   "evidence": {
+    "provision": "Order, Cost Responsibility for Network Upgrades, Request for Rehearing",
+    "quote": "Exelon and FirstEnergy challenge the Commission’s directive that an Interconnection Customer"
+   }
+  },
+  {
+   "name": "Energy Artisans",
+   "role": "listed",
+   "function": "Party protesting PJM compliance filing on Necessary Study costs and the 50 MW threshold.",
+   "evidence": {
+    "provision": "Order, Necessary Study Process, Pleadings",
+    "quote": "Energy Artisans argue that PJM’s proposed Necessary Study requirements will force industrial users"
+   }
+  },
+  {
+   "name": "EDFps",
+   "role": "listed",
+   "function": "Party commenting on PJM compliance filing (threshold design, backup generation exemption, transmission services).",
+   "evidence": {
+    "provision": "Order, BTMG materiality threshold, Pleadings (Size of Threshold)",
+    "quote": "EDFps argues that PJM’s proposed 50 MW threshold is arbitrary and will disincentivize large loads"
+   }
+  },
+  {
+   "name": "Eastman",
+   "role": "listed",
+   "function": "Party protesting PJM compliance filing on its Kingsport facility BTMG arrangements and grandfathering.",
+   "evidence": {
+    "provision": "Order, BTMG materiality threshold, Pleadings (Size of Threshold)",
+    "quote": "Eastman argues that the proposed changes to BTMG netting ignore the operational realities"
+   }
+  },
+  {
+   "name": "Crusoe",
+   "role": "listed",
+   "function": "Party commenting on PJM compliance filing (contract demand, Interim NITS, transmission service terms).",
+   "evidence": {
+    "provision": "Order, Transmission Service, Pleadings",
+    "quote": "Crusoe argues that PJM’s proposal in the paper hearing does not answer critical questions"
+   }
+  },
+  {
+   "name": "Vistra",
+   "role": "listed",
+   "function": "Party protesting PJM compliance filing on Necessary Study process, CIR reduction and pro forma GIA.",
+   "evidence": {
+    "provision": "Order, Necessary Studies, Pleadings",
+    "quote": "Vistra and Constellation request that PJM clarify how the proposed Tariff revisions"
+   }
+  },
+  {
+   "name": "AEU/SEIA",
+   "role": "listed",
+   "function": "Party protesting PJM's proposal requiring site-located generation to enter the interconnection queue and grandfathering terms.",
+   "evidence": {
+    "provision": "Order, BTMG materiality threshold, Pleadings (Size of Threshold)",
+    "quote": "AEU/SEIA claim that PJM’s proposal to require site-located generation to enter the interconnection queue is unjust and unreasonable"
+   }
+  },
+  {
+   "name": "Indicated TOs",
+   "role": "listed",
+   "function": "Transmission owners answering PJM compliance filing in support of the 50 MW materiality threshold.",
+   "evidence": {
+    "provision": "Order, BTMG materiality threshold, Answers",
+    "quote": "Indicated TOs argue that PJM’s proposed 50 MW materiality threshold strikes the appropriate balance"
+   }
+  },
+  {
+   "name": "BTMG Parties",
+   "role": "listed",
+   "function": "Joint group of behind-the-meter generation parties protesting PJM compliance filing (threshold, transition, grandfathering).",
+   "evidence": {
+    "provision": "Order, Grandfathering and Transition Period, Pleadings",
+    "quote": "BTMG Parties argue that the deadlines for the transition period and grandfathering eligibility will exclude retail customers"
+   }
+  },
+  {
+   "name": "Joint Parties",
+   "role": "listed",
+   "function": "Parties requesting clarification on net withdrawal limits and eligibility for new transmission services.",
+   "evidence": {
+    "provision": "Order, Request for Clarification (New Generators Serving Co-Located Load)",
+    "quote": "Joint Parties request the Commission clarify that a Co-Located Load may nominate a net withdrawal limit"
+   }
+  },
+  {
+   "name": "DPN",
+   "role": "listed",
+   "function": "Party commenting on PJM compliance filing (50 MW threshold and digital infrastructure projects).",
+   "evidence": {
+    "provision": "Order, BTMG materiality threshold, Pleadings (Size of Threshold)",
+    "quote": "DPN similarly argues that PJM’s proposal may be too restrictive for digital infrastructure projects"
+   }
+  },
+  {
+   "name": "PIOs",
+   "role": "listed",
+   "function": "Public interest organizations requesting clarification on PJM load forecasting practices.",
+   "evidence": {
+    "provision": "Order, Informational Report, Request for Clarification",
+    "quote": "PIOs request clarification as to how the Commission intends to respond to or otherwise use information"
+   }
+  },
+  {
+   "name": "U.S. Department of Energy",
+   "role": "listed",
+   "function": "Issued an emergency order (Order No. 202-26-06) during Winter Storm Fern directing PJM regarding backup generation; cited by PJM in the compliance filing.",
+   "evidence": {
+    "provision": "Order, BTMG materiality threshold, Compliance filing (PJM Compliance Filing)",
+    "quote": "PJM notes that the Department of Energy recently issued an order during Winter Storm Fern directing PJM to direct backup generation resources to operate"
+   }
+  },
+  {
+   "name": "PJM Interconnection, L.L.C.",
+   "role": "addressee",
+   "function": "Directed to file, within 60 days of the order, compliance filings revising its Tariff, including the Co-Located Load and Co-Located Generating Facility definitions and the study and control-technology provisions.",
+   "evidence": {
+    "provision": "Part V.A.5.a (Determination, Definition of Co-Located Load)",
+    "quote": "we direct PJM to file, within 60 days of the date of issuance of this order, a compliance filing"
+   }
+  },
+  {
+   "name": "PJM transmission owners (Indicated Transmission Owners)",
+   "role": "addressee",
+   "function": "Directed to file, within 60 days of the order, a compliance filing with the Tariff charges for NFCD transmission service and to make the charge calculation transparent for each customer.",
+   "evidence": {
+    "provision": "Part VI.A.4.e (Determination)",
+    "quote": "we direct the PJM transmission owners to submit, within 60 days of the date of issuance of this order, a compliance filing"
+   }
+  },
+  {
+   "name": "North American Electric Reliability Corporation (NERC)",
+   "role": "listed",
+   "function": "Named as the body considering registration requirements for large loads under its Large Load Action Plan. The Commission declined NOVEC's request that it direct NERC on registration.",
+   "evidence": {
+    "provision": "Part VI.C.5 (Determination), footnote 988",
+    "quote": "NERC is already considering registration requirements for large loads, including potentially Co-Located Loads, as part of its Large Load Action Plan."
+   }
+  },
+  {
+   "name": "Commission’s Office of Enforcement and Regulatory Accounting",
+   "role": "designated",
+   "function": "Named as the office to which a request for FCD or NFCD service on behalf of a load that does not meet the Co-Located Load definition should be referred.",
+   "evidence": {
+    "provision": "Part VI.A.5.d (Determination)",
+    "quote": "should be referred to the Commission’s Office of Enforcement and Regulatory Accounting."
+   }
+  },
+  {
+   "name": "PJM Interconnection, L.L.C.",
+   "role": "addressee",
+   "function": "Directed to submit within 60 days a compliance filing with Tariff revisions, a revised proposed effective date, and an annual report proposal; the RTO whose Tariff is revised.",
+   "evidence": {
+    "provision": "Ordering paragraph (C); Part VI.J.5",
+    "quote": "PJM is hereby directed to submit, within 60 days of the date of issuance of this order, a compliance filing with revisions to its Tariff as described in Part IV.B.3"
+   }
+  },
+  {
+   "name": "PJM transmission owners",
+   "role": "addressee",
+   "function": "Directed to submit within 60 days a compliance filing on the penalty framework, NITS rate application and unreserved use penalty distribution.",
+   "evidence": {
+    "provision": "Ordering paragraph (H)",
+    "quote": "PJM transmission owners are hereby directed to submit"
+   }
+  },
+  {
+   "name": "Indicated TOs",
+   "role": "listed",
+   "function": "Indicated transmission owners; proposed the two-part unreserved use penalty framework, penalty ratchet, five-year minimum commitment and bill-credit distribution.",
+   "evidence": {
+    "provision": "Part VI.E.1 (Initial Briefs)",
+    "quote": "Indicated TOs propose a five-year minimum commitment period for FCD transmission service"
+   }
+  },
+  {
+   "name": "Constellation Energy Generation, LLC",
+   "role": "listed",
+   "function": "Party in the consolidated complaint docket EL25-20-001 against PJM; urged faster Interim NITS effective date and opposed penalty and study-process positions.",
+   "evidence": {
+    "provision": "Caption",
+    "quote": "Constellation Energy Generation, LLC"
+   }
+  },
+  {
+   "name": "Old Dominion Electric Cooperative",
+   "role": "listed",
+   "function": "Party to docket EL25-49-002; supported financial penalties and asked for protections for members that serve as Eligible Customers.",
+   "evidence": {
+    "provision": "Caption (party list)",
+    "quote": "Old Dominion Electric Cooperative"
+   }
+  },
+  {
+   "name": "NOVEC",
+   "role": "listed",
+   "function": "Party; supported Indicated TOs' financial penalty structure and sought clarity that an LSE cannot be required to serve as Eligible Customer.",
+   "evidence": {
+    "provision": "Part VI.K.3.b (Reply Briefs)",
+    "quote": "NOVEC argues that the Commission should consider a more definitive delineation of who may be an Eligible Customer"
+   }
+  },
+  {
+   "name": "Vistra",
+   "role": "listed",
+   "function": "Party; argued that large loads were already included in capacity load forecasts and opposed PJM's effective date.",
+   "evidence": {
+    "provision": "Part VI.J.2 (Response Briefs)",
+    "quote": "Vistra argues that large loads were already included in the load forecasts for the 2027/2028 and 2028/2029 BRAs"
+   }
+  },
+  {
+   "name": "Joint Co-Location Developers",
+   "role": "listed",
+   "function": "Party; asked for earlier FCD availability, a clarified curtailment trigger and changes to the Maximum Facility Output limit.",
+   "evidence": {
+    "provision": "Part VI.K.6.a (Response Brief)",
+    "quote": "Joint Co-Location Developers ask that PJM clarify that its transmission service requirements for electric storage charging apply"
+   }
+  },
+  {
+   "name": "Enchanted Rock",
+   "role": "listed",
+   "function": "Party; argued that Interim NITS customers should be able to rely on on-site Co-Located Generators during curtailment.",
+   "evidence": {
+    "provision": "Part VI.H.2 (Response Briefs)",
+    "quote": "Enchanted Rock argues that because this limitation during curtailment conditions is a practice that affects rates and service significantly"
+   }
+  },
+  {
+   "name": "Invenergy",
+   "role": "listed",
+   "function": "Party; requested clarification of how the Eligible Customer definition applies to Co-Located Generators and Co-Located Loads.",
+   "evidence": {
+    "provision": "Part VI.K.3.a (Response Briefs)",
+    "quote": "Invenergy requests that the Commission and PJM clarify how the definition of Eligible Customer applies to Co-Located Generators and Co-Located Loads."
+   }
+  },
+  {
+   "name": "Market Monitor",
+   "role": "listed",
+   "function": "Market monitor; argued that all PJM load is currently served by NITS and raised reliability concerns about Interim NITS.",
+   "evidence": {
+    "provision": "Part VI.J.2 (Response Briefs)",
+    "quote": "Market Monitor argues that all load in PJM currently is served by NITS"
+   }
+  },
+  {
+   "name": "Industrials/Amtrak",
+   "role": "listed",
+   "function": "Party; urged caution on overly harsh operational penalties for existing retail customers.",
+   "evidence": {
+    "provision": "Part VI.A/B (Response Briefs on penalties)",
+    "quote": "Industrials/Amtrak urge the Commission to exercise caution in overly harsh"
+   }
+  },
+  {
+   "name": "Maryland OPC",
+   "role": "listed",
+   "function": "Party; asked that PJM demonstrate ratepayer protection standards and treatment of existing capacity under the reliability backstop procurement.",
+   "evidence": {
+    "provision": "Part K.2.a (Reply Briefs)",
+    "quote": "Maryland OPC requests that the Commission at minimum require PJM demonstrate how its proposal meets ratepayer protection standards"
+   }
+  }
+ ],
+ "notes": "Part 1 of 4 covers the caption through p. 78 (Part IV.C.1.c.i). Only relations, entities and notes were requested; other sections are outside this part. The caption lists Docket EL25-20-001 (consolidated) while the text cites EL25-20-000 for the Constellation complaint. Many rehearing arguments on the new transmission services are dismissed as non-final because the rates, terms and conditions are set for paper hearing, so the new service terms are not final in this part. Several Industrials and Exelon/FirstEnergy requests are dismissed as outside scope or insufficiently specific. PJM's 2024 Guidance Document was rescinded and is referred to only as non-binding guidance. Part 2 of 4 covers the rehearing and compliance discussion on BTMG netting, cogeneration QFs, transmission services, Necessary Studies, Co-Located Load definition and the informational report. Only relations and entities are coded here; thresholds, obligations and deadlines in this part are left to the other parts. The order accepts and rejects PJM's compliance proposals in part, and party positions summarised here come from pleadings, not Commission findings. Entries for Exelon and FirstEnergy share one quote. Empty target_instrument_id means the target is not in the registry. Part 3 of 4 covers the compliance determinations in Part V (from the Co-Located Load definition through the penalty-charge briefs) and the paper-hearing determinations in Part VI through the start of section VI.D. Only relations and entities are annotated here; obligations, thresholds and events in this part are left to the full annotation. The December Order (193 FERC ¶ 61,217) is cited throughout but is not part of this document, so its registry ID is unknown and target_instrument_id is left empty. Footnote 724 states that the Co-Located Generating Facility definition in Tariff § I.1 does not include the language the order rejects, while the body of the order directs removal of that language from the Part III definition. The relations and entities sections are populated, so their section_status entries are set only to satisfy the schema. Part 4 of 4 covers Part VI penalty subparts (a)-(c), anti-toggling, communications, curtailment, Interim NITS, effective date, annual report, Part K, the ordering paragraphs, the Tariff appendix, the caption and Commissioner Chang's concurrence. Legal basis and the Eligible Customer definition in other parts are not coded here. The Commission finds unreserved use penalties should go to all non-offending transmission customers, which departs from the Indicated TOs proposal to distribute them to NITS and FCD customers only. The June 1, 2029 effective date is not set; PJM is directed to reconsider it. Footnote 1159 cites a proclamation that is not an operative provision. Many other citations are incidental and not coded.",
+ "events": [
+  {
+   "event": "adopted",
+   "date": "2026-06-18",
+   "date_type": "absolute",
+   "date_text": "Issued June 18, 2026",
+   "applies_to": "Order on rehearing, clarification, compliance filing, and paper hearing (this order)",
+   "evidence": {
+    "provision": "Caption (p. 1)",
+    "quote": "(Issued June 18, 2026)"
+   }
+  },
+  {
+   "event": "adopted",
+   "date": "2025-12-18",
+   "date_type": "absolute",
+   "date_text": "On December 18, 2025, the Commission issued an order in the show cause proceeding",
+   "applies_to": "December Order, 193 FERC ¶ 61,217 (show cause proceeding in Docket No. EL25-49-000)",
+   "evidence": {
+    "provision": "Introduction (p. 3)",
+    "quote": "On December 18, 2025, the Commission issued an order in the show cause proceeding"
+   }
+  },
+  {
+   "event": "adopted",
+   "date": "2025-02",
+   "date_type": "absolute",
+   "date_text": "In February 2025, the Commission instituted a new proceeding in Docket No. EL25-49-000",
+   "applies_to": "February Order, 190 FERC ¶ 61,115 (instituting proceeding in Docket No. EL25-49-000)",
+   "evidence": {
+    "provision": "Part I.A, February Order (p. 9)",
+    "quote": "In February 2025, the Commission instituted a new proceeding in Docket No. EL25-49-000"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2026-02-16",
+   "date_type": "relative",
+   "date_text": "within 60 days of the date of issuance of the order",
+   "anchor": "issuance of the December Order (193 FERC ¶ 61,217)",
+   "applies_to": "PJM compliance filing setting terms and conditions for Interconnection Customers serving Co-Located Load",
+   "offset_value": 60,
+   "offset_unit": "days",
+   "anchor_event": "adopted",
+   "evidence": {
+    "provision": "Introduction (p. 3)",
+    "quote": "The Commission directed PJM to file, within 60 days of the date of issuance of the order, a compliance filing to revise its Tariff"
+   },
+   "date_computed_from": "adopted 2025-12-18 (December Order, text) + 60 days"
+  },
+  {
+   "event": "expiry",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "available until all Network Upgrades necessary to provide the requested NITS are complete (Interim NITS)",
+   "depends_on": "completion of all Network Upgrades necessary to provide the requested NITS",
+   "applies_to": "Interim NITS, a new interim non-firm transmission service",
+   "evidence": {
+    "provision": "Introduction (p. 3)",
+    "quote": "available until all Network Upgrades necessary to provide the requested NITS are complete (Interim NITS)"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2026-01-19",
+   "date_type": "absolute",
+   "date_text": "no later than 5:00 PM U.S. Eastern Time 45 on January 19, 2026",
+   "applies_to": "Application for rehearing of the December Order (30 days after issuance under FPA section 313(a))",
+   "evidence": {
+    "provision": "Part III, Procedural Matters (pp. 18-19)",
+    "quote": "no later than 5:00 PM U.S. Eastern Time 45 on January 19, 2026."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2026-03-16",
+   "date_type": "absolute",
+   "date_text": "interventions and protests due on or before March 16, 2026",
+   "applies_to": "Interventions and protests on PJM compliance filing in Docket No. ER26-1479-000",
+   "evidence": {
+    "provision": "Part II.A, PJM's Compliance Filing (pp. 14-15)",
+    "quote": "interventions and protests due on or before March 16, 2026"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2026-01-17",
+   "date_type": "relative",
+   "date_text": "within 30 days of the date of issuance of the December Order",
+   "anchor": "date of issuance of the December Order",
+   "applies_to": "PJM detailed informational report in Docket No. EL25-49-000 (load forecasting)",
+   "offset_value": 30,
+   "offset_unit": "days",
+   "anchor_event": "adopted",
+   "evidence": {
+    "provision": "Part V.D.1",
+    "quote": "within 30 days of the date of issuance of the December Order"
+   },
+   "date_computed_from": "adopted 2025-12-18 (December Order, text) + 30 days"
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2028-12-18",
+   "date_type": "absolute",
+   "date_text": "for a transition period through December 18, 2028",
+   "applies_to": "Retail BTMG used to net load prior to December 18, 2025 (end of transition period, as stated in PJM compliance attachment B quoted in footnote 572)",
+   "evidence": {
+    "provision": "Part V.A.2.d, n.572",
+    "quote": "for a transition period through December 18, 2028"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2025-12-18",
+   "date_type": "absolute",
+   "date_text": "that was in effect as of December 18, 2025",
+   "applies_to": "Grandfathering eligibility: retail BTMG contractual arrangements in effect on this date",
+   "evidence": {
+    "provision": "Part V.A.2.d",
+    "quote": "that was in effect as of December 18, 2025"
+   }
+  },
+  {
+   "event": "adopted",
+   "date": "2026-04-16",
+   "date_type": "absolute",
+   "date_text": "On April 16, 2026, the Commission issued an order rejecting",
+   "applies_to": "Commission order rejecting the portion of PJM's first compliance filing defining Co-Located Load (PJM Interconnection, 195 FERC ¶ 61,030)",
+   "evidence": {
+    "provision": "Part V.D.2.a",
+    "quote": "On April 16, 2026, the Commission issued an order rejecting"
+   }
+  },
+  {
+   "event": "application",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "prior to the effective date of the revised generation interconnection procedures and pro forma GIA directed in that order",
+   "depends_on": "effective date of the revised generation interconnection procedures and pro forma GIA directed in the December Order",
+   "applies_to": "Interconnection Customers with ISAs or GIAs executed (or requested to be filed unexecuted) before that effective date that wish to add or currently serve Co-Located Load: duty to publicly notify PJM and identify the Eligible Customer",
+   "evidence": {
+    "provision": "Part V, Determination (b) on Generation Interconnection Procedures, pro forma GIA, and Common Service Provisions",
+    "quote": "Interconnection Customers with ISAs or GIAs executed (or requested to be filed unexecuted) prior to the effective date of the revised generation interconnection procedures and pro forma GIA directed in that order"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2026-08-17",
+   "date_type": "relative",
+   "date_text": "within 60 days of the date of issuance of this order",
+   "anchor": "date of issuance of this order",
+   "applies_to": "All compliance filings directed by this order (ordering paragraphs (C) to (H)): PJM Tariff revisions under Parts IV.B.3, IV.C.1.b.i, IV.C.1.c.i (Eligible Load definition, revised BTMG definition), V (50 MW Retail BTMG threshold on netted load, cogeneration QF exemption process, removal of new pro forma GIA requirement for existing ISAs/GIAs, Co-Located Load definition, Non-Retail BTMG) and VI (Interim NITS, FCD and NFCD study procedures, rates, control technologies, curtailment, penalties, anti-toggling, telemetry, annual report, effective-date information); PJM transmission owners' compliance filing under paragraph (H)",
+   "offset_value": 60,
+   "offset_unit": "days",
+   "anchor_event": "adopted",
+   "evidence": {
+    "provision": "Ordering paragraphs (C)",
+    "quote": "within 60 days of the date of issuance of this order, a compliance filing with revisions to its Tariff as described in Part IV.B.3."
+   },
+   "date_computed_from": "adopted 2026-06-18 (this order, text) + 60 days"
+  },
+  {
+   "event": "proposed",
+   "date": "2029-06-01",
+   "date_type": "absolute",
+   "date_text": "June 1, 2029",
+   "applies_to": "PJM proposal: effective date for the three new transmission services (FCD, NFCD and Interim NITS); the Commission found the proposed date not shown to be just and reasonable and directed PJM to reconsider it",
+   "evidence": {
+    "provision": "Part VI.J.1 (Initial Briefs)",
+    "quote": "PJM proposes an effective date of June 1, 2029, for the three new transmission services."
+   }
+  },
+  {
+   "event": "application",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "convert automatically to a Network Customer when Network Upgrades are complete",
+   "anchor": "completion of necessary Network Upgrades",
+   "depends_on": "completion of necessary Network Upgrades",
+   "applies_to": "Eligible Customer taking Interim NITS on behalf of Co-Located Load: automatic conversion to Network Customer",
+   "evidence": {
+    "provision": "Part VI.H.5 (Determination)",
+    "quote": "convert automatically to a Network Customer when Network Upgrades are complete"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "other",
+   "variable_text": "transition period for retail BTMG netting",
+   "operator": "=",
+   "value": 3,
+   "value_text": "a transition period of three years",
+   "unit": "years",
+   "level": "entity",
+   "trigger": "benefit_duration",
+   "consequence": "Network Customers already using the retail BTMG netting rules may continue to use them for the transition period",
+   "conditions": "Network Customers already using the retail BTMG netting rules",
+   "evidence": {
+    "provision": "Part IV.C.1.c.i(a) (December Order, citing P 223)",
+    "quote": "allow Network Customers already using the retail BTMG netting rules to continue to do so for a transition period of three years"
+   }
+  },
+  {
+   "variable": "power_capacity",
+   "variable_text": "materiality threshold for retail BTMG netting: amount of load at a particular electrical location that a Network Customer may net using BTMG",
+   "operator": "=",
+   "value": 50,
+   "value_text": "50 MW",
+   "unit": "MW",
+   "measurement": "Amount of load netted using BTMG at a single electrical location (not generator nameplate capacity).",
+   "level": "facility",
+   "trigger": "cap",
+   "consequence": "A Network Customer may net up to 50 MW of load that it serves using BTMG at a particular electrical location under the retail BTMG netting rules; the Commission accepted the 50 MW level and the exclusion of on-site backup power but rejected applying it to cumulative generator nameplate capacity rather than to the load netted.",
+   "conditions": "Excludes on-site backup generation at the same electrical location that can only serve the retail load during conditions threatening PJM reliability or the regional power system; grandfathering addressed separately",
+   "evidence": {
+    "provision": "Part V.A.1.d (Determination)",
+    "quote": "we accept as just and reasonable PJM’s proposal to set the materiality threshold at 50 MW"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "instances of failing to follow a curtailment or load shedding directive",
+   "operator": ">=",
+   "value": 2,
+   "value_text": "after the second instance of failing to follow a curtailment or load shedding directive",
+   "unit": "instances",
+   "measurement": "count of instances as stated in the text; window and counting unit not specified",
+   "level": "entity",
+   "trigger": "penalty_tier",
+   "consequence": "PJM terminates the transmission service agreement with the Eligible Customer",
+   "conditions": "Eligible Customer taking Interim NITS, FCD, or NFCD transmission service on behalf of Eligible Load",
+   "evidence": {
+    "provision": "Determination (introductory paragraphs to penalty discussion)",
+    "quote": "after the second instance of failing to follow a curtailment or load shedding directive, PJM will terminate the transmission service agreement"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "misoperation of necessary control technologies and/or protection systems (count)",
+   "operator": ">=",
+   "value": 1,
+   "value_text": "after the first misoperation of necessary control technologies and/or protection systems",
+   "unit": "instances",
+   "measurement": "count of misoperations as stated in the text; window not specified",
+   "level": "entity",
+   "trigger": "penalty_tier",
+   "consequence": "suspension in service for a period of up to 120 days",
+   "conditions": "Eligible Customer taking Interim NITS, FCD, and/or NFCD transmission service on behalf of Eligible Load",
+   "evidence": {
+    "provision": "Determination (introductory paragraphs to penalty discussion)",
+    "quote": "suspension in service for a period of up to 120 days for an Eligible Customer taking Interim NITS, FCD, and/or NFCD transmission service after the first misoperation of necessary control technologies and/or protection systems"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "misoperation of necessary control technologies and/or protection systems (count)",
+   "operator": ">=",
+   "value": 2,
+   "value_text": "after the second misoperation of necessary control technologies and/or protection systems",
+   "unit": "instances",
+   "measurement": "count of misoperations as stated in the text; window not specified",
+   "level": "entity",
+   "trigger": "penalty_tier",
+   "consequence": "PJM terminates the transmission service agreement with the Eligible Customer",
+   "conditions": "Eligible Customer taking Interim NITS, FCD, and/or NFCD transmission service on behalf of Eligible Load",
+   "evidence": {
+    "provision": "Determination (introductory paragraphs to penalty discussion)",
+    "quote": "after the second misoperation of necessary control technologies and/or protection systems, PJM will terminate the transmission service agreement"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "Exceedance Hours occurring on the same calendar day",
+   "operator": ">",
+   "value": 1,
+   "value_text": "if more than one Exceedance Hour occurs on the same day",
+   "unit": "Exceedance Hours per day",
+   "measurement": "calendar day",
+   "level": "service",
+   "trigger": "penalty_tier",
+   "consequence": "an additional daily penalty applies, in addition to the base penalty charge",
+   "conditions": "Unreserved use of transmission service by an Eligible Customer on behalf of Eligible Load; penalty framework as proposed by Indicated TOs and adopted in the determination",
+   "evidence": {
+    "provision": "Determination, subpart c (Unreserved Use of the Transmission System)",
+    "quote": "if more than one Exceedance Hour occurs on the same day, then an additional daily penalty applies"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "days with exceedances within the same calendar week",
+   "operator": ">",
+   "value": 1,
+   "value_text": "if exceedances occur on multiple days within the same week",
+   "unit": "days",
+   "measurement": "calendar week",
+   "level": "service",
+   "trigger": "penalty_tier",
+   "consequence": "an additional weekly penalty applies",
+   "conditions": "Unreserved use of transmission service by an Eligible Customer on behalf of Eligible Load; penalty framework as proposed by Indicated TOs and adopted in the determination",
+   "evidence": {
+    "provision": "Determination, subpart c (Unreserved Use of the Transmission System)",
+    "quote": "if exceedances occur on multiple days within the same week, an additional weekly penalty applies"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "weeks with exceedances within the same calendar month",
+   "operator": ">",
+   "value": 1,
+   "value_text": "if exceedances occur in multiple weeks within the same month",
+   "unit": "weeks",
+   "measurement": "calendar month",
+   "level": "service",
+   "trigger": "penalty_tier",
+   "consequence": "an additional monthly penalty applies",
+   "conditions": "Unreserved use of transmission service by an Eligible Customer on behalf of Eligible Load; penalty framework as proposed by Indicated TOs and adopted in the determination",
+   "evidence": {
+    "provision": "Determination, subpart c (Unreserved Use of the Transmission System)",
+    "quote": "if exceedances occur in multiple weeks within the same month, then an additional monthly penalty applies"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "months with exceedances within the same calendar year",
+   "operator": ">",
+   "value": 1,
+   "value_text": "if exceedances occur in multiple months within the same year, then an additional annual penalty applies",
+   "unit": "months",
+   "measurement": "calendar year",
+   "level": "service",
+   "trigger": "penalty_tier",
+   "consequence": "an additional annual penalty applies",
+   "conditions": "Unreserved use of transmission service by an Eligible Customer on behalf of Eligible Load; penalty framework as proposed by Indicated TOs and adopted in the determination",
+   "evidence": {
+    "provision": "Determination, subpart c (Unreserved Use of the Transmission System)",
+    "quote": "if exceedances occur in multiple months within the same year, then an additional annual penalty applies"
+   }
+  },
+  {
+   "variable": "volume",
+   "variable_text": "metered load at the point of delivery exceeding reserved transmission service",
+   "operator": ">",
+   "value": null,
+   "value_text": "exceeds its reserved transmission service",
+   "unit": "MW",
+   "measurement": "hourly; an Exceedance Hour is an hour in which at least one five-minute interval has metered load above the reserved level",
+   "level": "service",
+   "trigger": "penalty_tier",
+   "consequence": "base penalty charge assessed for each Exceedance Hour, calculated from hourly exceedance MW, the equivalent hourly FCD rate and the number of exceedance intervals",
+   "conditions": "Co-Located Load served under the new transmission services; base penalty charge as described by Indicated TOs and adopted in the determination",
+   "depends_on": "reserved transmission service limit of the Eligible Customer",
+   "evidence": {
+    "provision": "Reply Briefs (description of Indicated TOs financial penalty proposal)",
+    "quote": "the base penalty charge will be assessed for any hour (Exceedance Hour) in which at least one five-minute interval (Exceedance Interval) occurs during which a customer’s metered load at the point of delivery exceeds its reserved transmission service"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "period of prohibition on taking NFCD transmission service for the portion of a Co-Located Load served by FCD transmission service",
+   "operator": "=",
+   "value": 5,
+   "value_text": "for a period of five years",
+   "unit": "years",
+   "measurement": "period as described in PJM's initial brief: five years following the effective date of the Service Agreement",
+   "level": "entity",
+   "trigger": "prohibition",
+   "consequence": "Eligible Customer may not take NFCD transmission service for the FCD-served portion of the Co-Located Load during the period",
+   "conditions": "Eligible Customer taking transmission service on behalf of a Co-Located Load; anti-toggling mechanism found just and reasonable with an exception directed to be removed on compliance",
+   "evidence": {
+    "provision": "Part VI.E.3 (Determination)",
+    "quote": "prohibit, for a period of five years, Eligible Customers taking transmission service on behalf of a Co-Located Load from taking NFCD transmission service"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "minimum term for FCD transmission service",
+   "operator": "=",
+   "value": 1,
+   "value_text": "the minimum term for FCD transmission service should be one year",
+   "unit": "years",
+   "measurement": "minimum term of service as required in the December Order, as recited in this order",
+   "level": "service",
+   "trigger": "obligation",
+   "consequence": "minimum term for FCD transmission service of one year",
+   "conditions": "FCD transmission service on behalf of a Co-Located Load; Indicated TOs' proposed five-year minimum commitment period rejected",
+   "evidence": {
+    "provision": "Part VI.E.3 (Determination)",
+    "quote": "the Commission required in the December Order that the minimum term for FCD transmission service should be one year"
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "Co-Located Load",
+   "defined_in": "February Order, 190 FERC ¶ 61,115 at P 3 (adopted in this order, Part I.A)",
+   "evidence": {
+    "provision": "Part I.A (quoting February Order, P 3 & n.4)",
+    "quote": "end-use customer load that is physically connected to the facilities of an existing or planned Customer Facility on the Interconnection Customer’s side of the Point of Interconnection to the PJM Transmission System"
+   }
+  },
+  {
+   "term": "Co-Location Arrangement",
+   "defined_in": "this order, Part I.A",
+   "evidence": {
+    "provision": "Part I.A",
+    "quote": "when referring to both the Co-Located Load and the associated generator, we will use the term Co-Location Arrangement"
+   }
+  },
+  {
+   "term": "Interconnection Customer",
+   "defined_in": "this order, Part I.A, fn. 14 (Tariff definitions of Generation Interconnection Customer and Generation Project Developer)",
+   "evidence": {
+    "provision": "Part I.A, fn. 14",
+    "quote": "the Commission will use the term Interconnection Customer to refer to both the Tariff definitions of Generation Interconnection Customer and Generation Project Developer"
+   }
+  },
+  {
+   "term": "Eligible Load",
+   "defined_in": "this order, Part IV.B.3.c",
+   "evidence": {
+    "provision": "Part IV.B.3.c",
+    "quote": "we use the term Eligible Load to refer to Co-Located Load"
+   }
+  },
+  {
+   "term": "Flexible large loads",
+   "defined_in": "this order, Part IV.C.1.b.ii(b), fn. 251",
+   "evidence": {
+    "provision": "Part IV.C.1.b.ii(b), fn. 251",
+    "quote": "Flexible large loads are a subset of large loads that are not co-located with generation but that are willing and able to limit their use of the transmission system under certain conditions."
+   }
+  },
+  {
+   "term": "BTMG (Behind the Meter Generation)",
+   "defined_in": "PJM, Intra-PJM Tariffs, OATT, § I.1 Definitions – A-B (21.0.0), as quoted in this order",
+   "evidence": {
+    "provision": "Introduction, fn. 4",
+    "quote": "a generation unit that delivers energy to load without using the Transmission System or any distribution facilities"
+   }
+  },
+  {
+   "term": "Tariff",
+   "defined_in": "December Order, 193 FERC ¶ 61,217 at P 2, as restated in this order",
+   "evidence": {
+    "provision": "Introduction, fn. 2",
+    "quote": "The December Order defined the Tariff as PJM’s Open Access Transmission Tariff (OATT), the Amended and Restated Operating Agreement of PJM, and the Reliability Assurance Agreement Among Load Serving Entities in the PJM Region."
+   }
+  },
+  {
+   "term": "Co-Located Load",
+   "defined_in": "December Order, 193 FERC ¶ 61,217 at P 164 (adopted as directed in this order, Part V.D.1.a)",
+   "evidence": {
+    "provision": "Part V.D.1.a (quoting December Order at P 164)",
+    "quote": "a configuration that refers to end-use customer load that is physically connected to the facilities of an existing or planned Customer Facility on the Interconnection Customer’s side of the Point of Interconnection to the PJM Transmission System."
+   }
+  },
+  {
+   "term": "Co-Located Load",
+   "defined_in": "December Order, 193 FERC ¶ 61,217 (as quoted in this order)",
+   "evidence": {
+    "provision": "Part VI.A.2.e (Determination)",
+    "quote": "Co-Located Load is, as defined in the December Order, behind the Point of Interconnection of an interconnected generator"
+   }
+  },
+  {
+   "term": "Co-Located Load (physical connection)",
+   "defined_in": "December Order, 193 FERC ¶ 61,217 at P 1 & n.3 (as quoted in this order)",
+   "evidence": {
+    "provision": "Part VI.A.5.d, n.916",
+    "quote": "physically connected to the facilities of an existing or planned Customer Facility on the Interconnection Customer’s side of the Point of Interconnection to the PJM Transmission System."
+   }
+  },
+  {
+   "term": "FCD transmission service",
+   "defined_in": "PJM proposed definition in PJM Initial Brief at 13 (described in this order; not adopted in this part)",
+   "evidence": {
+    "provision": "Part VI.A.2.a (Initial Briefs)",
+    "quote": "PJM proposes to define FCD transmission service as the transfer of capacity and energy for an Eligible Customer on behalf of a designated Co-Located Load"
+   }
+  },
+  {
+   "term": "NFCD transmission service",
+   "defined_in": "PJM proposed definition in PJM Initial Brief at 30 (described in this order; not adopted in this part)",
+   "evidence": {
+    "provision": "Part VI.A.2.a (Initial Briefs)",
+    "quote": "PJM proposes to define NFCD transmission service as a service offering the transmission of energy for an Eligible Customer on behalf of a designated Co-Located Load"
+   }
+  },
+  {
+   "term": "Eligible Customer",
+   "defined_in": "PJM, Intra-PJM Tariffs, OATT, § I.1 Definitions – E-F (41.0.0), quoted in Part VI.K.3.c (Determination)",
+   "evidence": {
+    "provision": "Part VI.K.3.c (Determination), quoting PJM OATT § I.1",
+    "quote": "any electric utility or any person generating electric energy for sale for resale"
+   }
+  },
+  {
+   "term": "Exceedance Hour",
+   "defined_in": "This order, Determination subpart c (Unreserved Use of the Transmission System)",
+   "evidence": {
+    "provision": "Determination, subpart c (Unreserved Use of the Transmission System)",
+    "quote": "a base penalty charge for each hour in which the Eligible Customer’s reserved service limit is exceeded at the Point of Interconnection during at least one five-minute interval (Exceedance Hour)"
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "reporting_to_authority",
+   "addressee": "utility_grid_operator",
+   "modality": "shall",
+   "summary": "Directs PJM to file, within 60 days of the order's issuance, a compliance filing revising its Tariff to set terms and conditions for Interconnection Customers seeking to serve Co-Located Load (as directed in the December Order, which this order cites).",
+   "applies_from": "within 60 days of the date of issuance of the order",
+   "evidence": {
+    "provision": "Order p. 3 (Introduction)",
+    "quote": "The Commission directed PJM to file, within 60 days of the date of issuance of the order, a compliance filing to revise its Tariff"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "utility_grid_operator",
+   "modality": "shall",
+   "summary": "Directs PJM to revise the Tariff's retail BTMG netting rules (continuing direction from the December Order).",
+   "evidence": {
+    "provision": "Order p. 19 (Section I, Background / Section IV)",
+    "quote": "We continue to direct PJM to revise the Tariff’s retail BTMG netting rules."
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "utility_grid_operator",
+   "modality": "shall",
+   "summary": "Directs PJM to clarify its interconnection procedures and agreements so that new and existing Interconnection Customers know how to interconnect in a Co-Location Arrangement.",
+   "evidence": {
+    "provision": "Order p. 19 (Section IV)",
+    "quote": "We also continue to direct PJM to clarify its interconnection procedures and agreements"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "utility_grid_operator",
+   "modality": "shall",
+   "summary": "Directs PJM to define 'Eligible Load' (or make comparable Tariff revisions) and to revise its definition of BTMG so Eligible Customers can take the new transmission services for Eligible Load with BTMG willing and able to limit withdrawals.",
+   "applies_from": "within 60 days of the date of issuance of this order",
+   "evidence": {
+    "provision": "Order p. 52 (Section IV.C.1.c)",
+    "quote": "We also direct PJM to file, within 60 days of the date of issuance of this order, a definition for Eligible Load"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "utility_grid_operator",
+   "modality": "shall",
+   "summary": "Directs PJM to submit a compliance filing modifying the Tariff to require that the Eligible Customer taking transmission service on behalf of Eligible Load take one of three transmission services (NITS or Interim NITS, FCD, or NFCD).",
+   "applies_from": "within 60 days of the date of this order",
+   "evidence": {
+    "provision": "Order p. 55 (Section IV.C.1.b.i)",
+    "quote": "Specifically, we direct PJM to submit a compliance filing, within 60 days of the date of this order, to modify its Tariff to require that the Eligible Customer taking transmission service on behalf of Eligible Load takes one of three transmission services"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Eligible Customers taking one of the new transmission services on behalf of Eligible Load must take at least one of the required services (NITS or Interim NITS, FCD, or NFCD) and are subject to operational requirements such as necessary control technologies and/or protection systems and to penalty charges and other remedial actions.",
+   "conditional_on": "Eligible Customers taking one of the new transmission services on behalf of Eligible Load",
+   "evidence": {
+    "provision": "Order p. 52 (Section IV.C.1.c)",
+    "quote": "All Eligible Customers taking one of the new transmission services on behalf of Eligible Load will be subject to the requirements discussed below"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "enterprise",
+   "modality": "shall_not",
+   "summary": "Under the FCD transmission service, the Eligible Customer on behalf of a Co-Located Load is not permitted to withdraw energy from the PJM transmission system beyond the contract demand level (as stated in the December Order, quoted in this order).",
+   "conditional_on": "Eligible Customer taking FCD transmission service on behalf of a Co-Located Load",
+   "evidence": {
+    "provision": "Order p. 54 (Section IV.C.1.b)",
+    "quote": "is not permitted to withdraw energy from the PJM transmission system beyond the contract demand level"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "enterprise",
+   "modality": "shall_not",
+   "summary": "Eligible Customers may not split load between NITS and FCD or NFCD transmission service at the same point of delivery; the December Order's rule against splitting between transmission services at the same point of delivery remains in effect.",
+   "evidence": {
+    "provision": "Order pp. 63-64 (Section IV.C.1.b.iii)",
+    "quote": "remains barred under the December Order: Eligible Customers also cannot split"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "utility_grid_operator",
+   "modality": "shall",
+   "summary": "PJM must file, within 60 days of the order date, a compliance filing revising its proposed Retail BTMG definition so that the 50 MW threshold applies to the amount of load netted at an electrical location, not to generator nameplate capacity. The Commission also rejected PJM's interpretation that prohibits any netting above the threshold.",
+   "applies_from": "within 60 days of the date of this order",
+   "evidence": {
+    "provision": "Part V.A.1.d (Determination)",
+    "quote": "We thus direct PJM to file, within 60 days of the date of this order, a compliance filing to revise its proposed"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "utility_grid_operator",
+   "modality": "shall",
+   "summary": "PJM must submit a further compliance filing with a process to exempt certain cogeneration QFs from the new retail BTMG netting rules if they demonstrate that they are integrated with load such that the load follows when their generating facility trips offline.",
+   "conditional_on": "if the cogeneration QF demonstrates that it is integrated with load such that the load follows when its generating facility trips offline",
+   "evidence": {
+    "provision": "Part V.A.3.d (Determination)",
+    "quote": "PJM must submit a further compliance filing that includes a process to exempt certain cogeneration QFs from the new retail BTMG netting rules"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "utility_grid_operator",
+   "modality": "shall",
+   "summary": "PJM must submit further compliance to revise its Tariff to extend the three new transmission services (NITS or Interim NITS, FCD, NFCD) to Eligible Customers taking service on behalf of load with BTMG that are willing and able to limit their energy withdrawals under certain conditions.",
+   "evidence": {
+    "provision": "Part V.B.5 (Determination)",
+    "quote": "direct PJM to submit further compliance to revise its Tariff to extend the three new transmission services set forth in the December Order"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "utility_grid_operator",
+   "modality": "shall",
+   "summary": "PJM must submit a compliance filing removing the requirement that Interconnection Customers with existing ISAs (Part VI) or GIAs (Part VII) enter into a new pro forma GIA, and must explain how its changes apply the prohibition on serving Co-Located Load from existing generators until required Network Upgrades, protection systems and metering are in service.",
+   "applies_from": "within 60 days of the date of issuance of this order",
+   "evidence": {
+    "provision": "Part V.C.4 (Determination)",
+    "quote": "we direct PJM to submit a compliance filing within 60 days of the date of issuance of this order to remove the requirement"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "An Interconnection Customer that modifies its ISA or GIA to allow an existing generator to serve Co-Located Load is responsible for the costs of any modifications or Network Upgrades needed as a result of PJM's study, including reductions in CIRs. The Commission describes this as a clarification of the existing Tariff.",
+   "conditional_on": "if the Interconnection Customer seeks to modify its ISA or GIA to allow its generator to serve Co-Located Load",
+   "evidence": {
+    "provision": "Part IV.C.2.b.iii (Determination)",
+    "quote": "We sustain the December Order’s requirement that an Interconnection Customer will be responsible for the costs of any modifications or Network Upgrades"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "utility_grid_operator",
+   "modality": "shall",
+   "summary": "PJM must file a compliance filing within 60 days of the order revising the Tariff definition of Co-Located Load to use “Point of Interconnection” instead of “Point of Change in Ownership”.",
+   "applies_from": "within 60 days of the date of issuance of the order",
+   "evidence": {
+    "provision": "Part V, §5.a (Definition of Co-Located Load)",
+    "quote": "we direct PJM to file, within 60 days of the date of issuance of this order, a compliance filing that revises the Tariff’s definition of Co-Located Load to use “Point of Interconnection” instead of “Point of Change in Ownership,”"
+   }
+  },
+  {
+   "type": "eligibility_condition",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "An Interconnection Customer that will use its generator to serve Co-Located Load must specify an Eligible Customer that will take transmission service on behalf of the Co-Located Load in its New Service Request (accepted by the Commission).",
+   "evidence": {
+    "provision": "Part V, §5.b (Generation Interconnection Procedures, pro forma GIA)",
+    "quote": "an Interconnection Customer who will use its generator to serve Co-Located Load must specify an Eligible Customer who will take transmission service on behalf of the Co-Located Load"
+   }
+  },
+  {
+   "type": "registration_notification",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Interconnection Customers with executed (or requested unexecuted) ISAs or GIAs that wish to add or are serving Co-Located Load must publicly notify PJM and identify the Eligible Customer; PJM is directed to add this requirement to Part III via compliance filing.",
+   "applies_from": "prior to the effective date of the revised generation interconnection procedures and pro forma GIA",
+   "conditional_on": "Interconnection Customer wishes to add Co-Located Load or is currently serving Co-Located Load",
+   "evidence": {
+    "provision": "Part V, §5.b (Generation Interconnection Procedures, pro forma GIA)",
+    "quote": "publicly notify PJM of that addition and identify the Eligible Customer that will take transmission service on behalf of that Co-Located Load"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "utility_grid_operator",
+   "modality": "shall",
+   "summary": "PJM must file within 60 days a compliance filing revising Tariff to remove the proposed changes to the Non-Retail BTMG definition.",
+   "applies_from": "within 60 days of the date of issuance of the order",
+   "evidence": {
+    "provision": "Part V, §5.c (Definition of Non-Retail BTMG)",
+    "quote": "direct PJM to file, within 60 days of the date of issuance of this order, a compliance filing to revise its Tariff to remove the proposed changes"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "utility_grid_operator",
+   "modality": "shall",
+   "summary": "PJM must revise Tariff on compliance so that requests for FCD transmission service are studied using the same cluster study process used for new NITS service requests.",
+   "applies_from": "on compliance",
+   "evidence": {
+    "provision": "Part VI, §3.e (Study Process, Determination)",
+    "quote": "We direct PJM to file Tariff revisions on compliance to study requests for FCD transmission service using the same process PJM uses for new service requests for NITS"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "utility_grid_operator",
+   "modality": "shall",
+   "summary": "PJM must submit a compliance filing with study procedures for NFCD transmission service requests, including the term length and minimum term of NFCD service.",
+   "applies_from": "within 60 days of the date of issuance of the order",
+   "evidence": {
+    "provision": "Part VI, §3.e (Study Process, Determination)",
+    "quote": "Therefore, we direct PJM to submit a compliance filing within 60 days of the date of issuance of this order that revises its Tariff to include study procedures for NFCD transmission service requests."
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "utility_grid_operator",
+   "modality": "shall",
+   "summary": "PJM must specify in a compliance filing how transmission owners participate in PJM’s study process for Eligible Loads for FCD and NFCD services and the related roles and responsibilities.",
+   "applies_from": "within 60 days of the date of issuance of the order",
+   "evidence": {
+    "provision": "Part VI, §3.e (Study Process, Determination)",
+    "quote": "We therefore direct PJM to specify in a compliance filing, which it must submit within 60 days of the date of issuance of this order, how transmission owners shall participate in PJM’s study process"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "utility_grid_operator",
+   "modality": "shall",
+   "summary": "PJM must submit a compliance filing revising the Tariff to charge Eligible Customers for ancillary services other than regulation and black start based on contract demand, and for regulation and black start based on gross load, and to apply administrative and redispatch charges.",
+   "applies_from": "within 60 days of the date of issuance of the order",
+   "evidence": {
+    "provision": "Part VI, §4.e (Rates and Charges, Determination)",
+    "quote": "we direct PJM to submit a compliance filing within 60 days of the date of issuance of this order that revises its Tariff to: (1) charge Eligible Customers taking FCD and/or NFCD transmission services"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "utility_grid_operator",
+   "modality": "shall",
+   "summary": "The PJM transmission owners must file within 60 days a compliance filing with NFCD charges, proposing a lower maximum rate or non-discriminatory discounts for NFCD service, with transparent charge calculation for individual customers.",
+   "applies_from": "within 60 days of the date of issuance of the order",
+   "evidence": {
+    "provision": "Part VI, §4.e (Rates and Charges, Determination)",
+    "quote": "the PJM transmission owners must propose a lower maximum rate or non-discriminatory discounts for the NFCD transmission service rate"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "utility_grid_operator",
+   "modality": "shall",
+   "summary": "PJM must submit a compliance filing within 60 days with Tariff revisions for Eligible Customers taking Interim NITS, FCD and/or NFCD service to have necessary control technologies and/or protection systems.",
+   "applies_from": "within 60 days of the date of issuance of the order",
+   "evidence": {
+    "provision": "Part VI, §C.5 (Determination)",
+    "quote": "we direct PJM to file, within 60 days of the date of issuance of this order, a compliance filing with Tariff revisions that require Eligible Customers taking Interim NITS, FCD, and/or NFCD transmission service on behalf of Eligible Loads, to have necessary control technologies and/or protection systems."
+   }
+  },
+  {
+   "type": "eligibility_condition",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "An Eligible Customer must have necessary control technologies and/or protection systems, which may include a special protection scheme, to limit its energy withdrawals to its contract demand level in order to take Interim NITS, FCD and/or NFCD service on behalf of any Eligible Load.",
+   "conditional_on": "Eligible Customer takes Interim NITS, FCD and/or NFCD transmission service on behalf of an Eligible Load",
+   "evidence": {
+    "provision": "Part VI, §C.5 (Determination)",
+    "quote": "an Eligible Customer must have necessary control technologies and/or protection systems, which may include a special protection scheme, to limit its energy withdrawals to its contract demand level"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Eligible Customers must pay for PJM and transmission owner-administered studies to evaluate and design necessary control technologies and/or protection systems.",
+   "evidence": {
+    "provision": "Part VI, §C.5 (Determination)",
+    "quote": "First, Eligible Customers shall pay for PJM and transmission owner-administered studies to evaluate and design necessary control technologies and/or protection systems"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Where a special protection scheme is employed, it must be at minimum fully redundant, able to withstand removal of part or all of one scheme or allow maintenance while providing full capability with a functionally equivalent separate scheme.",
+   "conditional_on": "A special protection scheme is employed as necessary control technologies and/or protection systems",
+   "evidence": {
+    "provision": "Part VI, §C.5 (Determination)",
+    "quote": "such special protection schemes implemented must be, at minimum, fully redundant"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "utility_grid_operator",
+   "modality": "shall",
+   "summary": "PJM must explain in its compliance filing which new and existing interconnection requirements and operational practices it will apply to Eligible Customers taking Interim NITS, FCD and/or NFCD service.",
+   "applies_from": "as part of its compliance filing due within 60 days of the date of issuance of the order",
+   "evidence": {
+    "provision": "Part VI, §C.5 (Determination)",
+    "quote": "we direct PJM to submit, as part of its compliance filing due within 60 days of the date of issuance of this order, an explanation of what new and existing interconnection requirements and operational practices it will apply"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "utility_grid_operator",
+   "modality": "shall",
+   "summary": "PJM must submit within 60 days a compliance filing revising the Tariff to permit Eligible Customers to take FCD or NFCD service, including Auction Revenue Rights for FCD customers, consistent with the replacement rate.",
+   "applies_from": "within 60 days of the date of issuance of the order",
+   "evidence": {
+    "provision": "Part VI, §A.5.d (Other, Determination)",
+    "quote": "We direct PJM to submit a compliance filing within 60 days of the date of issuance of this order to revise its Tariff consistent with this replacement rate."
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "utility_grid_operator",
+   "modality": "shall",
+   "summary": "PJM must submit, within 60 days, a further compliance filing providing additional information on the effective date of the new transmission services.",
+   "applies_from": "within 60 days of the date of issuance of the order",
+   "evidence": {
+    "provision": "Part VI, §E.3 (Effective Date, Determination)",
+    "quote": "we direct PJM to submit, within 60 days of the date of issuance of this order, a further compliance filing providing additional information on the effective date."
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "utility_grid_operator",
+   "modality": "shall",
+   "summary": "Unreserved use penalty revenues are to be distributed to all non-offending transmission customers (not only NITS and FCD customers, as proposed), as pro rata bill credits.",
+   "evidence": {
+    "provision": "Order at p. 237-238 (Part VI.A.c, Unreserved Use)",
+    "quote": "we find that unreserved use penalties should be distributed to all non-offending transmission"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "utility_grid_operator",
+   "modality": "shall",
+   "summary": "The PJM transmission owners must file a compliance filing implementing the Indicated TOs' proposed framework for financial penalties on unreserved use.",
+   "applies_from": "within 60 days of the date of issuance of this order",
+   "evidence": {
+    "provision": "Order at p. 237 (Determination; Part VI.A.c)",
+    "quote": "We thus direct the PJM transmission owners to file, within 60 days of the date of issuance of this order, a compliance filing that effectuates Indicated TOs’ proposed framework"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "enterprise",
+   "modality": "shall_not",
+   "summary": "Eligible Customers taking transmission service on behalf of a Co-Located Load may not take NFCD transmission service for any portion of Co-Located Load served by FCD transmission service for five years after the service agreement's effective date (anti-toggling mechanism, as approved).",
+   "applies_from": "five years following the effective date of the Service Agreement",
+   "conditional_on": "Co-Located Load served by FCD transmission service",
+   "evidence": {
+    "provision": "Order at p. 239 (Part VI.E.3, Determination)",
+    "quote": "prohibit, for a period of five years, Eligible Customers taking transmission service on behalf of a Co-Located Load from taking NFCD transmission service"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "utility_grid_operator",
+   "modality": "shall",
+   "summary": "PJM must propose, in a compliance filing, an anti-toggling mechanism without the exception for changes to the Co-Located Generator or Co-Located Load for Eligible Customers taking FCD service on behalf of Eligible Load.",
+   "applies_from": "within 60 days of the date of issuance of this order",
+   "evidence": {
+    "provision": "Order at p. 240 (Part VI.E.3, Determination)",
+    "quote": "we direct PJM to propose an anti-toggling mechanism without an exception for Eligible Customers taking FCD transmission service on behalf of Eligible Load in a compliance filing within 60 days of the date of issuance of this order"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Eligible Customers taking FCD service are subject to PJM's 42-month notice of termination provision, which the Commission found mirrors that applicable to Network Customers.",
+   "evidence": {
+    "provision": "Order at p. 239-240 (Part VI.E.3, Determination)",
+    "quote": "PJM’s proposed 42-month notice of termination provision applicable to FCD transmission service customers mirrors that applicable to Network Customers"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "utility_grid_operator",
+   "modality": "shall",
+   "summary": "PJM must file Tariff revisions for telemetry, data exchange, metering and relay-setting requirements so that it can monitor Eligible Load use, limit withdrawals and ensure relay settings are consistent with necessary control technologies and protection systems.",
+   "applies_from": "within 60 days of the date of issuance of this order",
+   "evidence": {
+    "provision": "Order at p. 241-242 (Part VI.F.3, Determination)",
+    "quote": "we direct PJM to file, within 60 days of the date of issuance of this order, a compliance filing with Tariff revisions it deems necessary for PJM"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "utility_grid_operator",
+   "modality": "shall",
+   "summary": "PJM must revise the Tariff to set curtailment priorities for Interim NITS, FCD and NFCD service (FCD treated as NITS; Interim NITS and NFCD curtailed before pre-emergency demand response) and detail priorities among Non-Firm PTPS, Interim NITS and NFCD service.",
+   "applies_from": "within 60 days of the date of issuance of this order",
+   "evidence": {
+    "provision": "Order at p. 246-247 (Part VI.G.5, Determination)",
+    "quote": "we direct PJM to submit, within 60 days of the date of issuance of this order, a compliance filing to revise the Tariff to include the curtailment priorities"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "enterprise",
+   "modality": "shall_not",
+   "summary": "An Eligible Customer taking Interim NITS on behalf of Co-Located Load may not draw energy from the Co-Located Generator when curtailed if that generator is a capacity resource; the restriction does not apply where the generator has no or only provisional interconnection service, or is seeking but has not obtained capacity status.",
+   "conditional_on": "the Co-Located Generator is a capacity resource",
+   "evidence": {
+    "provision": "Order at p. 256 (Part VI.H.5, Determination)",
+    "quote": "prohibit the Eligible Customer taking Interim NITS on behalf of Co-Located Load from drawing energy from the Co-Located Generator when the Eligible Customer is curtailed, if the Co-Located Generator is a capacity resource"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "utility_grid_operator",
+   "modality": "shall",
+   "summary": "PJM must file Tariff revisions for Interim NITS rates, terms and conditions, including administrative, ancillary, black start, regulation and redispatch charges; PJM transmission owners must file to apply the NITS rate to Eligible Customers.",
+   "applies_from": "within 60 days of the date of issuance of this order",
+   "evidence": {
+    "provision": "Order at p. 254 (Part VI.H.5, Determination)",
+    "quote": "we direct PJM to submit, within 60 days of the date of issuance of this order, a compliance filing to incorporate in the Tariff revisions to assess to Eligible Customers"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "utility_grid_operator",
+   "modality": "shall",
+   "summary": "PJM must file Tariff provisions establishing a study process for Interim NITS requests on compliance; the Commission allows PJM greater discretion than for FCD and NFCD service in studying Interim NITS.",
+   "applies_from": "on compliance",
+   "evidence": {
+    "provision": "Order at p. 254-255 (Part VI.H.5, Determination)",
+    "quote": "On compliance, we direct PJM to file Tariff provisions to effectuate a study process for Interim NITS"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "utility_grid_operator",
+   "modality": "shall",
+   "summary": "PJM must prepare an annual report, posted on its website, on demand for and use of the new transmission services, covering requests and grants by zone, MW taken, transmission revenues, curtailment frequency and magnitude, and denials; PJM must propose Tariff provisions requiring the report in its compliance filing.",
+   "applies_from": "annual; Tariff proposal due within 60 days of the date of issuance of this order",
+   "evidence": {
+    "provision": "Order at p. 257-258 (Part VI.I, Annual Report)",
+    "quote": "we therefore direct PJM to prepare an annual report, posted to its website, containing information about the demand for and use of these new transmission services"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "utility_grid_operator",
+   "modality": "shall",
+   "summary": "PJM must reconsider its proposed June 1, 2029 effective date and, in a compliance filing due within 60 days, explain whether Interim NITS and NFCD service can be made effective earlier.",
+   "applies_from": "compliance filing within 60 days of the date of issuance of this order",
+   "evidence": {
+    "provision": "Order at p. 264-265 (Part VI.J.5, Determination)",
+    "quote": "we direct PJM to reconsider its proposed effective date of June 1, 2029"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "enterprise",
+   "modality": "may",
+   "summary": "An Eligible Customer is not required to take the new transmission services and may elect NITS instead; LSEs are not required to become Eligible Customers for Co-Located Load.",
+   "evidence": {
+    "provision": "Order at p. 268-269 (Part VI.K.3.c, Determination)",
+    "quote": "an Eligible Customer is not required to take the new transmission services and may elect to take NITS"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "utility_grid_operator",
+   "modality": "shall",
+   "summary": "Ordering paragraphs (C) to (H) direct PJM and the PJM transmission owners to submit compliance filings within 60 days of the order revising the Tariff as described in the order's parts.",
+   "applies_from": "within 60 days of the date of issuance of this order",
+   "evidence": {
+    "provision": "Order at p. 272 (Ordering paragraphs C-H)",
+    "quote": "(C) PJM is hereby directed to submit, within 60 days of the date of issuance of this order, a compliance filing with revisions to its Tariff"
+   }
+  }
+ ],
+ "enforcement": [
+  {
+   "sanction_type": "other",
+   "authority": "PJM (as transmission provider) under its Tariff, as directed by the Commission",
+   "triggered_by": "Second instance of failing to follow a curtailment or load shedding directive by an Eligible Customer taking Interim NITS, FCD or NFCD transmission service on behalf of Eligible Load",
+   "max_penalty_text": "Termination of the transmission service agreement with the Eligible Customer (non-monetary)",
+   "penalty_formula": "Not monetary; termination of the transmission service agreement on the second instance. The Eligible Customer may still take service for other Eligible Loads under other agreements.",
+   "penalty_reference": "none stated",
+   "cure_period": "none stated",
+   "evidence": {
+    "provision": "Part VI.D (Determination, p. 228)",
+    "quote": "after the second instance of failing to follow a curtailment or load shedding directive, PJM will terminate the transmission service agreement"
+   }
+  },
+  {
+   "sanction_type": "service_suspension",
+   "authority": "PJM (as transmission provider) under its Tariff, as directed by the Commission",
+   "triggered_by": "First misoperation of necessary control technologies and/or protection systems by an Eligible Customer taking Interim NITS, FCD and/or NFCD transmission service on behalf of Eligible Load",
+   "max_penalty_text": "Suspension in service for a period of up to 120 days (non-monetary)",
+   "penalty_formula": "Not monetary; suspension of service for up to 120 days after the first misoperation.",
+   "penalty_reference": "none stated",
+   "cure_period": "Service may resume following PJM's approval, as well as the relevant transmission owner's approval of the necessary control technologies and/or protection systems",
+   "evidence": {
+    "provision": "Part VI.D.b (p. 233)",
+    "quote": "an operational penalty of suspension in service for a period of up to 120 days"
+   }
+  },
+  {
+   "sanction_type": "other",
+   "authority": "PJM (as transmission provider) under its Tariff, as directed by the Commission",
+   "triggered_by": "Second misoperation of necessary control technologies and/or protection systems pertaining to a transmission service agreement governing an Eligible Customer taking Interim NITS, FCD and/or NFCD transmission service on behalf of Eligible Load",
+   "max_penalty_text": "Termination of the transmission service agreement (non-monetary)",
+   "penalty_formula": "Not monetary; termination of the specific transmission service agreement on the second misoperation. The Eligible Customer may take service on behalf of other loads under other agreements.",
+   "penalty_reference": "none stated",
+   "cure_period": "none stated",
+   "evidence": {
+    "provision": "Part VI.D.b (p. 233)",
+    "quote": "after the second misoperation of necessary control technologies and/or protection systems, PJM will terminate the transmission service agreement"
+   }
+  },
+  {
+   "sanction_type": "other",
+   "authority": "PJM transmission owners (compliance filing directed by the Commission)",
+   "triggered_by": "Unreserved use: an Eligible Customer taking any of the new transmission services on behalf of Eligible Load withdraws from the transmission system in excess of its reserved service limit (Exceedance Hour), including repeated exceedances (penalty ratchet)",
+   "max_penalty_text": "A penalty rate that is twice the rate the Commission established for FCD transmission service; the text does not state a monetary amount",
+   "penalty_formula": "Two-part framework adopted from Indicated TOs: base penalty charge per Exceedance Hour, calculated as the Hourly Exceedance MW times the Equivalent Hourly FCD rate (FCD rate divided by 8,760) times the number of Exceedance Intervals within the hour; penalty ratchet adds daily, weekly, monthly or annual penalty charges. Penalty revenues are distributed as pro rata bill credits to non-offending transmission customers.",
+   "penalty_reference": "Order No. 890, 118 FERC ¶ 61,119 at P 848 (rebuttable presumption that unreserved use penalties no greater than twice the firm point-to-point rate are just and reasonable)",
+   "cure_period": "none stated",
+   "evidence": {
+    "provision": "Part VI.D.c (p. 237)",
+    "quote": "a penalty rate that is twice the rate we establish in this order for FCD transmission service"
+   }
+  }
+ ],
+ "section_status": {}
+}

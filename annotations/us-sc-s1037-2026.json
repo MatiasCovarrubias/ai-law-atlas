@@ -1,0 +1,238 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "us-sc-s1037-2026",
+ "tier": "B",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "light, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-interim-20261014"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "AGORA plaintext (ETO, CC BY-NC 4.0), local cache",
+  "url": "https://www.scstatehouse.gov/sess126_2025-2026/bills/1037.htm",
+  "retrieved": "2026-05-03",
+  "version": "1.33.0 (2026-09-16)",
+  "language": "en",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "generative_ai",
+   "minors_child_safety",
+   "online_safety_content",
+   "consumer_protection",
+   "data_protection"
+  ],
+  "primary_domain": "minors_child_safety",
+  "mechanisms": [
+   "mandate_obligation",
+   "prohibition_ban",
+   "liability_rule"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "ai_provider",
+   "platform_operator"
+  ],
+  "affected_roles": [
+   "minors",
+   "consumers_users"
+  ],
+  "decision_margins": [
+   "firm:product_design_release",
+   "firm:compliance_process",
+   "household:access",
+   "household:data_privacy"
+  ],
+  "territorial_scope": {
+   "types": [
+    "subnational",
+    "extraterritorial"
+   ],
+   "description": "Applies to any operator that makes a chatbot available to users in South Carolina, regardless of where the operator is located.",
+   "evidence": {
+    "provision": "Section 39-81-10(14)",
+    "quote": "provides a chatbot to users in this State"
+   }
+  },
+  "agora_harms": [
+   "Harm to health/safety",
+   "Detrimental content"
+  ],
+  "agora_incentives": [
+   "Civil liability",
+   "Fines"
+  ],
+  "agora_risk_factors": [
+   "Safety",
+   "Privacy"
+  ],
+  "agora_strategies": [
+   "Performance requirements",
+   "Disclosure: About incidents",
+   "Input controls: Data use"
+  ]
+ },
+ "summary": {
+  "short": "Adds Chapter 81 to South Carolina Code Title 39 on chatbots. Covered operators (500,000+ monthly users) must offer a limited-access mode, verify ages before enabling restricted features, add safeguards for minors, and report covered incidents to the Attorney General. Effective upon Governor's approval.",
+  "long": "It adds Chapter 81 to Title 39 on chatbot operators. A covered entity is an operator with 500,000 or more worldwide monthly active users, aggregated across affiliates, excluding internal, clinical, research and customer-service tools. Unverified users may access chatbots only in limited-access mode. Before enabling restricted features (personalization, proactive outreach, extended sessions, relationship simulation, explicit content), covered entities must verify age, classify users, and delete age verification data within 24 hours. Minors may use restricted features only with verifiable parental consent and parental controls. Covered entities may not design features to prioritize engagement at the expense of wellbeing, must address emotional dependence, must not falsely claim to be human, and must provide crisis messages. They must make reasonable efforts to notify emergency services about imminent risks and report covered incidents to the Attorney General within fifteen days. The Attorney General may seek injunctions and civil penalties up to $50,000 per violation, with each day a separate violation. Harmed persons and parents of harmed minors may sue for damages, fees, and punitive damages for wilful, reckless or grossly negligent violations. Waivers of these rights are void. The act takes effect upon the Governor's approval."
+ },
+ "relations": [
+  {
+   "relation": "amends",
+   "target_text": "Title 39 of the S.C. Code",
+   "note": "Adds new Chapter 81 (Chatbot Usage), Sections 39-81-10 through 39-81-60, to Title 39.",
+   "evidence": {
+    "provision": "Section 2",
+    "quote": "Title 39 of the S.C. Code is amended by adding:"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Chapter 4, Title 30, the Freedom of Information Act",
+   "note": "Reports submitted to the Attorney General under Section 39-81-50 are confidential and not subject to disclosure under that Act; the Attorney General may publish aggregate information.",
+   "evidence": {
+    "provision": "Section 39-81-50(C)(1)",
+    "quote": "are not subject to disclosure pursuant to Chapter 4, Title 30, the Freedom of Information Act."
+   }
+  }
+ ],
+ "notes": "Bill text as introduced; no later version was provided. Relations are limited to Title 39 of the S.C. Code and Chapter 4, Title 30, neither of which is in the registry. Internal inconsistencies: Section 39-81-20(C) and Section 39-81-50(A)(1) address an operator, while the rest of the chapter addresses a covered entity; Section 39-81-50(A)(1) sets a 24-hour duty on the operator although its lead-in refers to a covered entity. Section 39-81-20(B)(2) is made subject to item (3), which relies on data produced under item (2). Section 4 makes the act effective on approval by the Governor, with no fixed date. The section_status relations entry is not_applicable only because the field is required by schema; relations are recorded in the relations array.",
+ "events": [
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "delete age verification data within twenty-four hours of completing the age verification process",
+   "anchor": "completing the age verification process",
+   "applies_to": "age verification data retained by an operator after verification",
+   "evidence": {
+    "provision": "Section 39-81-20(C)(5)",
+    "quote": "delete age verification data within twenty-four hours of completing the age verification process"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "shall, within sixty days, disable access to restricted features",
+   "anchor": "effective date of this act",
+   "applies_to": "user accounts existing as of the effective date that are not classified as an authorized minor account or a verified adult account",
+   "offset_value": 60,
+   "offset_unit": "days",
+   "anchor_event": "entry_into_force",
+   "evidence": {
+    "provision": "Section 39-81-20(H)",
+    "quote": "shall, within sixty days, disable access to restricted features"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "within twenty-four hours",
+   "anchor": "covered entity obtains knowledge that a user faces an imminent risk of death or serious physical injury",
+   "applies_to": "operator notification to emergency services or law enforcement",
+   "evidence": {
+    "provision": "Section 39-81-50(A)(1)",
+    "quote": "make reasonable efforts, within twenty-four hours, to notify appropriate emergency services"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "within fifteen days of obtaining knowledge of a covered incident",
+   "anchor": "obtaining knowledge of a covered incident",
+   "applies_to": "initial report to the Attorney General on a covered incident",
+   "offset_value": 15,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Section 39-81-50(B)(1)",
+    "quote": "shall submit a report to the Attorney General within fifteen days of obtaining knowledge of a covered incident"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "may submit a supplemental report within sixty days after the initial report",
+   "anchor": "initial report",
+   "applies_to": "supplemental report by a covered entity to update or correct information",
+   "offset_value": 60,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Section 39-81-50(B)(2)",
+    "quote": "A covered entity may submit a supplemental report within sixty days after the initial report"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "This act takes effect upon approval by the Governor.",
+   "depends_on": "approval by the Governor",
+   "applies_to": "entire act",
+   "evidence": {
+    "provision": "SECTION 4",
+    "quote": "This act takes effect upon approval by the Governor."
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "users_monthly_active",
+   "variable_text": "monthly active users worldwide",
+   "operator": ">=",
+   "value": 500000,
+   "value_text": "five hundred thousand or more monthly active users worldwide",
+   "unit": "users",
+   "measurement": "Unique users who interact with a chatbot at least once in a thirty-day period, per the operator's ordinary business records; aggregated across all chatbots of the covered entity and its affiliates (Sec. 39-81-10(6)(b)); worldwide",
+   "level": "group",
+   "trigger": "scope_definition",
+   "consequence": "Operator becomes a covered entity subject to the chapter's duties",
+   "conditions": "Excludes chatbots not offered to the general public and chatbots used solely for customer service (Sec. 39-81-10(6)(a)(i)-(ii))",
+   "evidence": {
+    "provision": "Sec. 39-81-10(6)(a)",
+    "quote": "an operator of a chatbot that has five hundred thousand or more monthly active users worldwide"
+   }
+  },
+  {
+   "variable": "age",
+   "variable_text": "user classified as under sixteen by age verification process",
+   "operator": "<",
+   "value": 16,
+   "value_text": "under sixteen",
+   "unit": "years",
+   "measurement": "Classification produced by the reasonable age verification process under Sec. 39-81-20",
+   "level": "person",
+   "trigger": "obligation",
+   "consequence": "Covered entity shall require the consenting parent to provide contact information or establish a linked parental account",
+   "conditions": "Applies where the user is classified as a minor and parental consent is obtained under Sec. 39-81-30(C)",
+   "evidence": {
+    "provision": "Sec. 39-81-30(D)",
+    "quote": "If the age verification process classifies the user as under sixteen"
+   }
+  },
+  {
+   "variable": "age",
+   "variable_text": "individual who operator has determined is at least eighteen years of age",
+   "operator": ">=",
+   "value": 18,
+   "value_text": "at least eighteen years of age",
+   "unit": "years",
+   "measurement": "Determined by the operator through its age verification method or process",
+   "level": "person",
+   "trigger": "eligibility",
+   "consequence": "Individual may establish a parental account linked to a minor's account",
+   "conditions": "Account must be verified to be established by such an individual and affiliated with one or more accounts of a user or prospective user who is a minor",
+   "evidence": {
+    "provision": "Sec. 39-81-10(17)(a)",
+    "quote": "is at least eighteen years of age"
+   }
+  }
+ ],
+ "section_status": {}
+}

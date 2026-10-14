@@ -1,0 +1,903 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "us-wa-mhmda-2023",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (connectors/fetch_texts.py)",
+  "url": "https://lawfilesext.leg.wa.gov/biennium/2023-24/Pdf/Bills/Session%20Laws/House/1155-S.SL.pdf",
+  "retrieved": "2026-10-13",
+  "version": "as fetched",
+  "language": "en",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "data_protection",
+   "consumer_protection"
+  ],
+  "primary_domain": "data_protection",
+  "mechanisms": [
+   "mandate_obligation",
+   "prohibition_ban",
+   "disclosure_transparency",
+   "liability_rule"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "data_controller",
+   "data_processor",
+   "government_agency"
+  ],
+  "affected_roles": [
+   "consumers_users",
+   "healthcare_provider"
+  ],
+  "decision_margins": [
+   "firm:compliance_process",
+   "firm:input_use",
+   "household:data_privacy"
+  ],
+  "territorial_scope": {
+   "types": [
+    "subnational",
+    "extraterritorial"
+   ],
+   "description": "Applies to legal entities that conduct business in Washington or target products or services to Washington consumers.",
+   "evidence": {
+    "provision": "Sec. 3(23)(a)",
+    "quote": "Conducts business in Washington, or produces or provides products or services that are targeted to consumers in Washington"
+   }
+  }
+ },
+ "summary": {
+  "short": "Washington statute regulating collection, sharing and sale of consumer health data by regulated entities and small businesses. Requires privacy policies, consent, consumer rights and signed authorization for sales; prohibits certain geofences around health care facilities. Most duties apply from March 31, 2024; small businesses from June 30, 2024.",
+  "long": "Washington's My Health My Data Act (Laws of 2023, ch. 191) regulates consumer health data collected, shared or sold in Washington. Regulated entities and small businesses must publish a consumer health data privacy policy, obtain consent before collecting or sharing such data, and avoid unlawful discrimination against consumers exercising rights. Access must be restricted, data secured, and processors bound by contracts. Consumers may access, delete and withdraw consent over their data, with a 45-day response period and appeal rights. Selling consumer health data requires a signed valid authorization meeting listed requirements, expiring after one year. Sellers and purchasers keep authorizations for six years. Geofencing around in-person health care services to track consumers or send them health-related messages is unlawful. Violations are unfair or deceptive acts under the Consumer Protection Act. HIPAA-protected and other specified information is exempt. A joint legislative committee reviews enforcement actions; that section expires June 30, 2031. Most duties apply from March 31, 2024; small businesses from June 30, 2024."
+ },
+ "relations": [
+  {
+   "relation": "amends",
+   "target_text": "chapter 44.28 RCW",
+   "note": "Sec. 13 adds a new section to chapter 44.28 RCW, creating a joint committee review of enforcement actions under this act.",
+   "evidence": {
+    "provision": "Sec. 13",
+    "quote": "A new section is added to chapter 44.28 RCW to read as follows:"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Health Insurance Portability and Accountability Act of 1996 (federal) and related regulations",
+   "note": "Information meeting the HIPAA definition of protected health information is exempt from this chapter.",
+   "evidence": {
+    "provision": "Sec. 12(1)(a)(i)",
+    "quote": "Protected health information for purposes of the federal health insurance portability and accountability act of 1996 and related regulations"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "chapter 70.02 RCW",
+   "note": "Health care information collected, used or disclosed in accordance with chapter 70.02 RCW is exempt from this chapter.",
+   "evidence": {
+    "provision": "Sec. 12(1)(a)(ii)",
+    "quote": "Health care information collected, used, or disclosed in accordance with chapter 70.02 RCW"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "42 C.F.R. Part 2",
+   "note": "Patient identifying information collected, used or disclosed in accordance with 42 C.F.R. Part 2 is exempt from this chapter.",
+   "evidence": {
+    "provision": "Sec. 12(1)(a)(iii)",
+    "quote": "Patient identifying information collected, used, or disclosed in accordance with 42 C.F.R. Part 2"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "45 C.F.R. Part 46 (federal policy for the protection of human subjects)",
+   "note": "Identifiable private information under 45 C.F.R. Part 46 and related research categories are exempt from this chapter.",
+   "evidence": {
+    "provision": "Sec. 12(1)(a)(iv)",
+    "quote": "Identifiable private information for purposes of the federal policy for the protection of human subjects, 45 C.F.R. Part 46"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Gramm-Leach-Bliley act (15 U.S.C. 6801 et seq.) and implementing regulations",
+   "note": "Personal information governed by the Gramm-Leach-Bliley act is exempt from this chapter.",
+   "evidence": {
+    "provision": "Sec. 12(2)",
+    "quote": "The Gramm-Leach-Bliley act (15 U.S.C. 6801 et seq.) and implementing regulations"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "fair credit reporting act (15 U.S.C. 1681 et seq.)",
+   "note": "Personal information governed by the fair credit reporting act is exempt from this chapter.",
+   "evidence": {
+    "provision": "Sec. 12(2)",
+    "quote": "the fair credit reporting act (15 U.S.C. 1681 et seq.)"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "family educational rights and privacy act (20 U.S.C. 1232g; Part 99 of Title 34, C.F.R.)",
+   "note": "Personal information governed by the family educational rights and privacy act is exempt from this chapter.",
+   "evidence": {
+    "provision": "Sec. 12(2)",
+    "quote": "the family educational rights and privacy act (20 U.S.C. 1232g; Part 99 of Title 34, C.F.R.)"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "chapter 19.86 RCW (consumer protection act)",
+   "note": "Sec. 11 declares a violation of this chapter an unfair or deceptive act and an unfair method of competition for the purpose of applying the consumer protection act.",
+   "evidence": {
+    "provision": "Sec. 11",
+    "quote": "for the purpose of applying the consumer protection act, chapter 19.86 RCW"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "chapter 43.371 RCW",
+   "note": "Identifiable data collected, used or disclosed in accordance with chapter 43.371 RCW is exempt from this chapter.",
+   "evidence": {
+    "provision": "Sec. 12(1)(d)",
+    "quote": "chapter 43.371 RCW or RCW 69.43.165"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "RCW 69.43.165",
+   "note": "Identifiable data collected, used or disclosed in accordance with RCW 69.43.165 is exempt from this chapter.",
+   "evidence": {
+    "provision": "Sec. 12(1)(d)",
+    "quote": "chapter 43.371 RCW or RCW 69.43.165"
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "Joint committee (as referred to in Sec. 13)",
+   "role": "designated",
+   "function": "Must review enforcement actions authorized under section 11 brought by the attorney general and consumers, and submit a report of findings and recommendations to the governor and legislature by September 30, 2030.",
+   "evidence": {
+    "provision": "Sec. 13(1)",
+    "quote": "The joint committee must review enforcement actions, as authorized in section 11 of this act"
+   }
+  },
+  {
+   "name": "Office of the attorney general",
+   "role": "designated",
+   "function": "Brings enforcement actions as authorized in section 11 (per Sec. 13(1)); receives consumer complaints under Sec. 6(1)(h); provides data to the joint committee under Sec. 13(3).",
+   "evidence": {
+    "provision": "Sec. 13(3)",
+    "quote": "The office of the attorney general shall provide the joint committee any data within their purview"
+   }
+  }
+ ],
+ "notes": "Text is the enrolled bill as passed and approved (Chapter 191, Laws of 2023); cover states effective date July 23, 2023, while operative duties begin March 31, 2024 and small businesses must comply from June 30, 2024. The chapter number RCW 19.373 appears only in registry metadata, not in the document. Sec. 13(2) has no item (d). Regulated entities, processors, small businesses and third parties are defined categories, not named entities, so they are not listed. Sec. 12 cross-references further RCW and CFR provisions not all listed as relations. Sec. 13 expires June 30, 2031.",
+ "events": [
+  {
+   "event": "introduced",
+   "date": "2023-02-07",
+   "date_type": "absolute",
+   "date_text": "READ FIRST TIME 02/07/23.",
+   "applies_to": "House of Representatives (bill introduction)",
+   "evidence": {
+    "provision": "Bill header, Engrossed Substitute House Bill 1155 as amended by the Senate",
+    "quote": "READ FIRST TIME 02/07/23."
+   }
+  },
+  {
+   "event": "passed_chamber",
+   "date": "2023-04-05",
+   "date_type": "absolute",
+   "date_text": "Passed by the Senate April 5, 2023",
+   "applies_to": "Senate",
+   "evidence": {
+    "provision": "Certification of enrollment (cover page)",
+    "quote": "Passed by the Senate April 5, 2023"
+   }
+  },
+  {
+   "event": "legislative_approval",
+   "date": "2023-04-17",
+   "date_type": "absolute",
+   "date_text": "Passed by the House April 17, 2023",
+   "applies_to": "House of Representatives (final passage shown in the certificate of enrollment)",
+   "evidence": {
+    "provision": "Certification of enrollment (cover page)",
+    "quote": "Passed by the House April 17, 2023"
+   }
+  },
+  {
+   "event": "signed",
+   "date": "2023-04-27",
+   "date_type": "absolute",
+   "date_text": "Approved by the Governor April 27, 2023.",
+   "applies_to": "Governor's approval of the bill",
+   "evidence": {
+    "provision": "Signature block at end of the enrolled text",
+    "quote": "Approved by the Governor April 27, 2023."
+   }
+  },
+  {
+   "event": "published",
+   "date": "2023-04-27",
+   "date_type": "absolute",
+   "date_text": "Filed in Office of Secretary of State April 27, 2023.",
+   "applies_to": "Filing with the Office of the Secretary of State (session law)",
+   "evidence": {
+    "provision": "Signature block at end of the enrolled text",
+    "quote": "Filed in Office of Secretary of State April 27, 2023."
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2023-07-23",
+   "date_type": "absolute",
+   "date_text": "EFFECTIVE DATE: July 23, 2023",
+   "applies_to": "Chapter 191, Laws of 2023 (Washington my health my data act)",
+   "evidence": {
+    "provision": "Certification of enrollment (cover page)",
+    "quote": "EFFECTIVE DATE: July 23, 2023"
+   }
+  },
+  {
+   "event": "application",
+   "date": "2024-03-31",
+   "date_type": "absolute",
+   "date_text": "beginning March 31, 2024, a regulated entity and a small business shall maintain a consumer health data privacy policy",
+   "applies_to": "Regulated entities and small businesses (Sec. 4(1) privacy policy); Sec. 5(1) collection and sharing consent; Sec. 6(1) consumer rights; Sec. 7(1) access restriction and security; Sec. 8(1) processors; Sec. 9(1) sale authorization (any person), with small businesses under Sec. 4(2) to 9(6) on a later date",
+   "evidence": {
+    "provision": "Sec. 4(1)(a)",
+    "quote": "beginning March 31, 2024, a regulated entity and a small business shall maintain a consumer health data privacy policy"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2024-06-30",
+   "date_type": "absolute",
+   "date_text": "A small business must comply with this section beginning June 30, 2024.",
+   "applies_to": "Small businesses as defined in Sec. 3(28); Secs. 4(2), 5(2), 6(2), 7(2), 8(2) and 9(6)",
+   "evidence": {
+    "provision": "Sec. 4(2)",
+    "quote": "A small business must comply with this section beginning June 30, 2024."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "within 45 days of receipt of the request submitted pursuant to the methods described in this section",
+   "depends_on": "receipt of a consumer request under Sec. 6(1)(a) to (c)",
+   "applies_to": "Regulated entities and small businesses: response to consumer requests (Sec. 6(1)(a) to (c))",
+   "offset_value": 45,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Sec. 6(1)(g)",
+    "quote": "within 45 days of receipt of the request submitted pursuant to the methods described in this section"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "The response period may be extended once by 45 additional days when reasonably necessary",
+   "depends_on": "notice to the consumer of the extension within the initial 45-day response period, with the reason",
+   "applies_to": "Regulated entities and small businesses: extension of response period (Sec. 6(1)(g))",
+   "offset_value": 45,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Sec. 6(1)(g)",
+    "quote": "The response period may be extended once by 45 additional days when reasonably necessary"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "Within 45 days of receipt of an appeal",
+   "depends_on": "receipt of a consumer's appeal of a refusal to act on a request",
+   "applies_to": "Regulated entities and small businesses: written response to consumer appeal (Sec. 6(1)(h))",
+   "offset_value": 45,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Sec. 6(1)(h)",
+    "quote": "Within 45 days of receipt of an appeal"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "such delay may not exceed six months from authenticating the deletion request.",
+   "depends_on": "authentication of the consumer's deletion request, where the data is on archived or backup systems",
+   "applies_to": "Regulated entities and small businesses: deletion of archived or backup data (Sec. 6(1)(c)(iii))",
+   "offset_value": 6,
+   "offset_unit": "months",
+   "evidence": {
+    "provision": "Sec. 6(1)(c)(iii)",
+    "quote": "such delay may not exceed six months from authenticating the deletion request."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2030-09-30",
+   "date_type": "absolute",
+   "date_text": "by September 30, 2030.",
+   "applies_to": "Joint committee under chapter 44.28 RCW: report on findings and recommendations (Sec. 13(4))",
+   "evidence": {
+    "provision": "Sec. 13(4)",
+    "quote": "submit a report of its findings and recommendations to the governor and the appropriate committees of the legislature by September 30, 2030."
+   }
+  },
+  {
+   "event": "expiry",
+   "date": "2031-06-30",
+   "date_type": "absolute",
+   "date_text": "This section expires June 30, 2031.",
+   "applies_to": "Sec. 13 (joint committee enforcement review section)",
+   "evidence": {
+    "provision": "Sec. 13(5)",
+    "quote": "This section expires June 30, 2031."
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "other",
+   "variable_text": "geofence virtual boundary distance",
+   "operator": "<=",
+   "value": 2000,
+   "value_text": "2,000 feet or less from the perimeter of the physical location",
+   "unit": "feet",
+   "measurement": "virtual boundary distance measured from the perimeter of the physical location",
+   "level": "other",
+   "trigger": "scope_definition",
+   "consequence": "Defines the geofence to which the prohibition in Sec. 10 applies.",
+   "conditions": "Virtual boundary established by technology listed in Sec. 3(14).",
+   "evidence": {
+    "provision": "Sec. 3(14)",
+    "quote": "For purposes of this definition, \"geofence\" means a virtual boundary that is 2,000 feet or less from the perimeter of the physical location."
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "precise location radius",
+   "operator": "<=",
+   "value": 1750,
+   "value_text": "within a radius of 1,750 feet",
+   "unit": "feet",
+   "measurement": "precision and accuracy of location radius identifying an individual",
+   "level": "person",
+   "trigger": "scope_definition",
+   "consequence": "Defines precise location information, which is one of the consumer health data categories in Sec. 3(8)(b)(xi) when it could reasonably indicate an attempt to acquire or receive health services or supplies.",
+   "conditions": "Location must directly identify the specific location of an individual with precision and accuracy.",
+   "evidence": {
+    "provision": "Sec. 3(19)",
+    "quote": "that directly identifies the specific location of an individual with precision and accuracy within a radius of 1,750 feet."
+   }
+  },
+  {
+   "variable": "data_subjects_count",
+   "variable_text": "consumers with consumer health data handled by a small business",
+   "operator": "<",
+   "value": 100000,
+   "value_text": "fewer than 100,000 consumers during a calendar year",
+   "unit": "consumers",
+   "measurement": "consumers whose consumer health data is collected, processed, sold or shared during a calendar year",
+   "level": "entity",
+   "trigger": "phase_in",
+   "consequence": "Regulated entity qualifies as a small business; compliance dates for Secs. 4 to 9 are June 30, 2024 instead of March 31, 2024.",
+   "conditions": "One of two alternative tests in Sec. 3(28); the alternative is Sec. 3(28)(b).",
+   "evidence": {
+    "provision": "Sec. 3(28)(a)",
+    "quote": "Collects, processes, sells, or shares consumer health data of fewer than 100,000 consumers during a calendar year"
+   }
+  },
+  {
+   "variable": "share_of_financials",
+   "variable_text": "share of gross revenue from consumer health data activities",
+   "operator": "<",
+   "value": 50,
+   "value_text": "less than 50 percent of gross revenue",
+   "unit": "percent",
+   "measurement": "gross revenue derived from collection, processing, selling or sharing of consumer health data",
+   "level": "entity",
+   "trigger": "phase_in",
+   "consequence": "Regulated entity qualifies as a small business under Sec. 3(28)(b); compliance dates for Secs. 4 to 9 are June 30, 2024.",
+   "conditions": "Joint with the consumer count of fewer than 25,000 in Sec. 3(28)(b).",
+   "evidence": {
+    "provision": "Sec. 3(28)(b)",
+    "quote": "Derives less than 50 percent of gross revenue from the collection, processing, selling, or sharing of consumer health data"
+   }
+  },
+  {
+   "variable": "data_subjects_count",
+   "variable_text": "consumers whose consumer health data is controlled, processed, sold or shared",
+   "operator": "<",
+   "value": 25000,
+   "value_text": "fewer than 25,000 consumers",
+   "unit": "consumers",
+   "measurement": "consumers whose consumer health data is controlled, processed, sold or shared",
+   "level": "entity",
+   "trigger": "phase_in",
+   "consequence": "Together with the revenue test, qualifies the regulated entity as a small business; compliance dates for Secs. 4 to 9 are June 30, 2024.",
+   "conditions": "Joint with the revenue test (less than 50 percent of gross revenue) in Sec. 3(28)(b).",
+   "evidence": {
+    "provision": "Sec. 3(28)(b)",
+    "quote": "controls, processes, sells, or shares consumer health data of fewer than 25,000 consumers"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "ownership of voting shares for affiliate status",
+   "operator": ">",
+   "value": 50,
+   "value_text": "more than 50 percent of the outstanding shares of any class of voting security",
+   "unit": "percent",
+   "measurement": "ownership or voting power over outstanding shares of any class of voting security of a company",
+   "level": "group",
+   "trigger": "scope_definition",
+   "consequence": "Entities meeting this control test are affiliates; sharing with affiliates falls within the definition of sharing in Sec. 3(27)(a).",
+   "conditions": "Alternative tests: control over election of a majority of directors (Sec. 3(2)(b)) or controlling influence over management (Sec. 3(2)(c)).",
+   "evidence": {
+    "provision": "Sec. 3(2)(a)",
+    "quote": "Ownership of, or the power to vote, more than 50 percent of the outstanding shares of any class of voting security of a company"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "free information requests per consumer",
+   "operator": "<=",
+   "value": 2,
+   "value_text": "up to twice annually per consumer",
+   "unit": "requests per year",
+   "measurement": "requests per consumer, annually",
+   "level": "person",
+   "trigger": "benefit",
+   "consequence": "Information is provided free of charge up to this number; the text separately permits a fee or refusal for requests that are manifestly unfounded, excessive, or repetitive.",
+   "conditions": "Fee or refusal applies only if requests are manifestly unfounded, excessive, or repetitive; burden of showing this is on the regulated entity or small business.",
+   "evidence": {
+    "provision": "Sec. 6(1)(f)",
+    "quote": "free of charge, up to twice annually per consumer"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "authorization expiry period",
+   "operator": "=",
+   "value": 1,
+   "value_text": "expires one year from when the consumer signs the valid authorization",
+   "unit": "years",
+   "measurement": "time from when the consumer signs the authorization to sell consumer health data",
+   "level": "other",
+   "trigger": "eligibility",
+   "consequence": "An authorization to sell consumer health data expires one year after signing; an expired authorization is not valid (Sec. 9(3)(a)).",
+   "conditions": "Applies to a valid authorization to sell consumer health data under Sec. 9(2); the expiration date must be stated in the authorization.",
+   "evidence": {
+    "provision": "Sec. 9(2)(h)",
+    "quote": "An expiration date for the valid authorization that expires one year from when the consumer signs the valid authorization"
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "Consumer",
+   "defined_in": "this act",
+   "evidence": {
+    "provision": "Sec. 3(7)",
+    "quote": "\"Consumer\" means (a) a natural person who is a Washington resident; or (b) a natural person whose consumer health data is collected in Washington."
+   }
+  },
+  {
+   "term": "Consumer health data",
+   "defined_in": "this act",
+   "evidence": {
+    "provision": "Sec. 3(8)(a)",
+    "quote": "\"Consumer health data\" means personal information that is linked or reasonably linkable to a consumer and that identifies the consumer's past, present, or future physical or mental health status."
+   }
+  },
+  {
+   "term": "Regulated entity",
+   "defined_in": "this act",
+   "evidence": {
+    "provision": "Sec. 3(23)",
+    "quote": "\"Regulated entity\" means any legal entity that: (a) Conducts business in Washington, or produces or provides products or services that are targeted to consumers in Washington"
+   }
+  },
+  {
+   "term": "Small business",
+   "defined_in": "this act",
+   "evidence": {
+    "provision": "Sec. 3(28)",
+    "quote": "\"Small business\" means a regulated entity that satisfies one or both of the following thresholds:"
+   }
+  },
+  {
+   "term": "Processor",
+   "defined_in": "this act",
+   "evidence": {
+    "provision": "Sec. 3(21)",
+    "quote": "\"Processor\" means a person that processes consumer health data on behalf of a regulated entity or a small business."
+   }
+  },
+  {
+   "term": "Person",
+   "defined_in": "this act",
+   "evidence": {
+    "provision": "Sec. 3(17)",
+    "quote": "\"Person\" does not include government agencies, tribal nations, or contracted service providers when processing consumer health data on behalf of a government agency."
+   }
+  },
+  {
+   "term": "Third party",
+   "defined_in": "this act",
+   "evidence": {
+    "provision": "Sec. 3(29)",
+    "quote": "\"Third party\" means an entity other than a consumer, regulated entity, processor, small business, or affiliate of the regulated entity or the small business."
+   }
+  },
+  {
+   "term": "Affiliate",
+   "defined_in": "this act",
+   "evidence": {
+    "provision": "Sec. 3(2)",
+    "quote": "\"Affiliate\" means a legal entity that shares common branding with another legal entity and controls, is controlled by, or is under common control with another legal entity."
+   }
+  },
+  {
+   "term": "Sell or sale",
+   "defined_in": "this act",
+   "evidence": {
+    "provision": "Sec. 3(26)(a)",
+    "quote": "\"Sell\" or \"sale\" means the exchange of consumer health data for monetary or other valuable consideration."
+   }
+  },
+  {
+   "term": "Share or sharing",
+   "defined_in": "this act",
+   "evidence": {
+    "provision": "Sec. 3(27)(a)",
+    "quote": "\"Share\" or \"sharing\" means to release, disclose, disseminate, divulge, make available, provide access to, license, or otherwise communicate orally, in writing, or by electronic or other means"
+   }
+  },
+  {
+   "term": "Collect",
+   "defined_in": "this act",
+   "evidence": {
+    "provision": "Sec. 3(5)",
+    "quote": "\"Collect\" means to buy, rent, access, retain, receive, acquire, infer, derive, or otherwise process consumer health data in any manner."
+   }
+  },
+  {
+   "term": "Consent",
+   "defined_in": "this act",
+   "evidence": {
+    "provision": "Sec. 3(6)(a)",
+    "quote": "\"Consent\" means a clear affirmative act that signifies a consumer's freely given, specific, informed, opt-in, voluntary, and unambiguous agreement"
+   }
+  },
+  {
+   "term": "Deceptive design",
+   "defined_in": "this act",
+   "evidence": {
+    "provision": "Sec. 3(9)",
+    "quote": "\"Deceptive design\" means a user interface designed or manipulated with the effect of subverting or impairing user autonomy, decision making, or choice."
+   }
+  },
+  {
+   "term": "Geofence",
+   "defined_in": "this act",
+   "evidence": {
+    "provision": "Sec. 3(14)",
+    "quote": "\"Geofence\" means technology that uses global positioning coordinates, cell tower connectivity, cellular data, radio frequency identification, Wifi data, and/or any other form of spatial or location detection to establish a virtual boundary around a specific physical location"
+   }
+  },
+  {
+   "term": "Precise location information",
+   "defined_in": "this act",
+   "evidence": {
+    "provision": "Sec. 3(19)",
+    "quote": "\"Precise location information\" means information derived from technology including, but not limited to, global positioning system level latitude and longitude coordinates or other mechanisms"
+   }
+  },
+  {
+   "term": "Personal information",
+   "defined_in": "this act",
+   "evidence": {
+    "provision": "Sec. 3(18)(a)",
+    "quote": "\"Personal information\" means information that identifies or is reasonably capable of being associated or linked, directly or indirectly, with a particular consumer."
+   }
+  },
+  {
+   "term": "Publicly available information",
+   "defined_in": "this act",
+   "evidence": {
+    "provision": "Sec. 3(22)",
+    "quote": "\"Publicly available information\" means information that (a) is lawfully made available through federal, state, or municipal government records or widely distributed media"
+   }
+  },
+  {
+   "term": "Deidentified data",
+   "defined_in": "this act",
+   "evidence": {
+    "provision": "Sec. 3(10)",
+    "quote": "\"Deidentified data\" means data that cannot reasonably be used to infer information about, or otherwise be linked to, an identified or identifiable consumer"
+   }
+  },
+  {
+   "term": "Valid authorization to sell consumer health data",
+   "defined_in": "this act",
+   "evidence": {
+    "provision": "Sec. 9(2)",
+    "quote": "A valid authorization to sell consumer health data is a document consistent with this section and must be written in plain language."
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "prohibition",
+   "addressee": "data_controller",
+   "modality": "shall_not",
+   "summary": "Under the definition of consent, a regulated entity or small business may not obtain consent by acceptance of general terms of use, by hovering, muting, pausing or closing content, or through deceptive designs.",
+   "evidence": {
+    "provision": "Sec. 3(6)(b)",
+    "quote": "\"Consent\" may not be obtained by:"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "To qualify data as deidentified, the regulated entity or small business must take reasonable measures against association with a consumer, publicly commit to deidentified processing without reidentification, and contractually obligate recipients to meet the same criteria.",
+   "evidence": {
+    "provision": "Sec. 3(10)",
+    "quote": "publicly commits to process such data only in a deidentified fashion"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Maintain a consumer health data privacy policy clearly and conspicuously disclosing categories of data and purposes, sources, categories shared, categories of third parties and affiliates, and how consumers exercise rights; prominently publish a homepage link to it.",
+   "applies_from": "beginning March 31, 2024",
+   "evidence": {
+    "provision": "Sec. 4(1)(a)",
+    "quote": "a regulated entity and a small business shall maintain a consumer health data privacy policy"
+   }
+  },
+  {
+   "type": "consent",
+   "addressee": "data_controller",
+   "modality": "shall_not",
+   "summary": "May not collect, use or share additional categories of consumer health data, or use data for additional purposes, not disclosed in the privacy policy without first disclosing them and obtaining the consumer's affirmative consent. A processor contract inconsistent with the policy is stated as a violation.",
+   "applies_from": "beginning March 31, 2024",
+   "evidence": {
+    "provision": "Sec. 4(1)(c)-(d)",
+    "quote": "may not collect, use, or share additional categories of consumer health data not disclosed"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Small businesses (as defined in Sec. 3(28)) must comply with the privacy policy duties of Sec. 4(1).",
+   "applies_from": "beginning June 30, 2024",
+   "evidence": {
+    "provision": "Sec. 4(2)",
+    "quote": "A small business must comply with this section beginning June 30, 2024."
+   }
+  },
+  {
+   "type": "consent",
+   "addressee": "data_controller",
+   "modality": "shall_not",
+   "summary": "May not collect any consumer health data, or share it, except with consent (for sharing, separate and distinct from collection consent) or to the extent necessary to provide a product or service the consumer requested.",
+   "applies_from": "beginning March 31, 2024",
+   "evidence": {
+    "provision": "Sec. 5(1)(a)-(b)",
+    "quote": "may not collect any consumer health data except:"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "The consent request must clearly and conspicuously disclose the categories of data collected or shared, the purpose and specific uses, the categories of entities receiving it, and how consent can be withdrawn; consent must be obtained before collection or sharing.",
+   "applies_from": "beginning March 31, 2024",
+   "evidence": {
+    "provision": "Sec. 5(1)(c)",
+    "quote": "the request for consent must clearly and conspicuously disclose"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "data_controller",
+   "modality": "shall_not",
+   "summary": "May not unlawfully discriminate against a consumer for exercising rights under the chapter.",
+   "applies_from": "beginning March 31, 2024",
+   "evidence": {
+    "provision": "Sec. 5(1)(d)",
+    "quote": "may not unlawfully discriminate against a consumer for exercising any rights included in this chapter"
+   }
+  },
+  {
+   "type": "consent",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Small businesses must comply with the consent duties of Sec. 5(1).",
+   "applies_from": "beginning June 30, 2024",
+   "evidence": {
+    "provision": "Sec. 5(2)",
+    "quote": "A small business must comply with this section beginning June 30, 2024."
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Comply with consumer requests to confirm and access data (including a list of third parties and affiliates), withdraw consent, and delete data (notifying affiliates, processors and third parties); respond free of charge up to twice annually; respond within 45 days, extendable once by 45 days with notice; allow requests without a new account; and establish an appeal process with a written response within 45 days and attorney general contact information when denied.",
+   "applies_from": "beginning March 31, 2024",
+   "evidence": {
+    "provision": "Sec. 6(1)(g)",
+    "quote": "shall comply with the consumer's requests under subsection (1)(a) through (c) of this section without undue delay"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "data_processor",
+   "modality": "shall",
+   "summary": "Affiliates, processors, contractors and other third parties that receive notice of a deletion request must honor it and delete the data from their records.",
+   "conditional_on": "receipt of a consumer's deletion request",
+   "evidence": {
+    "provision": "Sec. 6(1)(c)(ii)",
+    "quote": "shall honor the consumer's deletion request and delete the consumer health data from its records"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Small businesses must comply with the consumer rights duties of Sec. 6(1).",
+   "applies_from": "beginning June 30, 2024",
+   "evidence": {
+    "provision": "Sec. 6(2)",
+    "quote": "A small business must comply with this section beginning June 30, 2024."
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Restrict employee, processor and contractor access to consumer health data to what is necessary for the consented purposes or requested service; maintain security practices meeting at minimum the industry standard of care.",
+   "applies_from": "beginning March 31, 2024",
+   "evidence": {
+    "provision": "Sec. 7(1)(b)",
+    "quote": "Establish, implement, and maintain administrative, technical, and physical data security practices"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Small businesses must comply with the access restriction and security duties of Sec. 7(1).",
+   "applies_from": "beginning June 30, 2024",
+   "evidence": {
+    "provision": "Sec. 7(2)",
+    "quote": "A small business must comply with this section beginning June 30, 2024."
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_processor",
+   "modality": "shall",
+   "summary": "Process consumer health data only under a binding contract setting processing instructions and limiting actions, and only consistent with those instructions; assist the regulated entity or small business with technical and organizational measures to meet its obligations. A processor acting outside its instructions is treated as a regulated entity for that data.",
+   "applies_from": "beginning March 31, 2024",
+   "evidence": {
+    "provision": "Sec. 8(1)(a)",
+    "quote": "a processor may process consumer health data only pursuant to a binding contract"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Small businesses must comply with the processor contract and assistance duties of Sec. 8(1).",
+   "applies_from": "beginning June 30, 2024",
+   "evidence": {
+    "provision": "Sec. 8(2)",
+    "quote": "A small business must comply with this section beginning June 30, 2024."
+   }
+  },
+  {
+   "type": "consent",
+   "addressee": "enterprise",
+   "modality": "shall_not",
+   "summary": "Unlawful to sell or offer to sell consumer health data without first obtaining a valid authorization signed by the consumer, separate from collection or sharing consent. The authorization must contain the items in Sec. 9(2)(a)-(i), cannot be conditioned on goods or services, and a copy must be given to the consumer.",
+   "applies_from": "beginning March 31, 2024",
+   "evidence": {
+    "provision": "Sec. 9(1)",
+    "quote": "it is unlawful for any person to sell or offer to sell consumer health data concerning a consumer without first obtaining valid authorization from the consumer"
+   }
+  },
+  {
+   "type": "record_keeping",
+   "addressee": "data_controller",
+   "also_addressees": [
+    "data_broker"
+   ],
+   "modality": "shall",
+   "summary": "The seller and purchaser of consumer health data must retain copies of all valid sale authorizations for six years from signature or from when last in effect, whichever is later.",
+   "applies_from": "beginning March 31, 2024",
+   "evidence": {
+    "provision": "Sec. 9(5)",
+    "quote": "The seller and purchaser of consumer health data must retain a copy of all valid authorizations"
+   }
+  },
+  {
+   "type": "consent",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Small businesses must comply with the sale authorization duties of Sec. 9.",
+   "applies_from": "beginning June 30, 2024",
+   "evidence": {
+    "provision": "Sec. 9(6)",
+    "quote": "A small business must comply with this section beginning June 30, 2024."
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "enterprise",
+   "modality": "shall_not",
+   "summary": "Unlawful for any person to implement a geofence around an in-person health care provider where it is used to identify or track consumers seeking care, collect their health data, or send them related notifications, messages or advertisements. The section states no start date; the act header gives an effective date of July 23, 2023.",
+   "evidence": {
+    "provision": "Sec. 10",
+    "quote": "It is unlawful for any person to implement a geofence around an entity that provides in-person health care services"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The joint committee of the legislature must review enforcement actions brought under the act and submit a report of its findings and recommendations to the governor and legislative committees by September 30, 2030; the section expires June 30, 2031.",
+   "evidence": {
+    "provision": "Sec. 13(1)",
+    "quote": "The joint committee must review enforcement actions"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The office of the attorney general must provide the joint committee any data within its purview that the committee considers necessary for the review.",
+   "evidence": {
+    "provision": "Sec. 13(3)",
+    "quote": "The office of the attorney general shall provide the joint committee any data within their purview"
+   }
+  }
+ ],
+ "enforcement": [
+  {
+   "sanction_type": "other",
+   "authority": "Attorney general and consumers, through enforcement actions under chapter 19.86 RCW (Consumer Protection Act), as referenced in Sec. 11 and Sec. 13",
+   "triggered_by": "A violation of this chapter (Sec. 11 treats a violation as an unfair or deceptive act in trade or commerce and an unfair method of competition for purposes of the Consumer Protection Act)",
+   "max_penalty_text": "No maximum penalty amount is stated in this text",
+   "penalty_reference": "chapter 19.86 RCW (Consumer Protection Act), referenced in Sec. 11",
+   "private_right_of_action": true,
+   "cure_period": "Not stated in this text",
+   "evidence": {
+    "provision": "Sec. 11",
+    "quote": "A violation of this chapter is not reasonable in relation to the development and preservation of business, and is an unfair or deceptive act in trade or commerce"
+   }
+  }
+ ],
+ "section_status": {}
+}

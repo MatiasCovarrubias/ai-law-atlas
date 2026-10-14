@@ -1,0 +1,349 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "us-padfa-2024",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (connectors/fetch_texts.py)",
+  "url": "https://www.govinfo.gov/content/pkg/PLAW-118publ50/pdf/PLAW-118publ50.pdf",
+  "retrieved": "2026-10-13",
+  "version": "as fetched",
+  "language": "en",
+  "extent": "partial",
+  "note": "Trimmed to Pub. L. 118-50's title, enacting clause, sec. 1 (organization into divisions) and sec. 2 (references), Division I (Protecting Americans' Data from Foreign Adversaries Act of 2024, secs. 1-2, including the effective-date subsection 2(d)), and the approval date/legislative history; Divisions A-H and J-T omitted. Untrimmed copy: <id>.untrimmed.txt.bak."
+ },
+ "classification": {
+  "domains": [
+   "data_protection",
+   "data_transfer_localization",
+   "consumer_protection"
+  ],
+  "primary_domain": "data_transfer_localization",
+  "mechanisms": [
+   "prohibition_ban"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "data_broker"
+  ],
+  "affected_roles": [
+   "consumers_users"
+  ],
+  "decision_margins": [
+   "firm:trade",
+   "household:data_privacy"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national",
+    "extraterritorial"
+   ],
+   "description": "Federal statute covering data of United States individuals transferred to foreign adversary countries or to entities controlled by foreign adversaries.",
+   "evidence": {
+    "provision": "Division I, Sec. 2(a)",
+    "quote": "It shall be unlawful for a data broker to"
+   }
+  },
+  "agora_strategies": [
+   "Input controls: Data circulation"
+  ]
+ },
+ "summary": {
+  "short": "Bans data brokers from selling, licensing, transferring or otherwise making available personally identifiable sensitive data of United States individuals to foreign adversary countries or entities they control. The FTC enforces it as an unfair or deceptive practice violation. Effective 60 days after enactment.",
+  "long": "Division I of Public Law 118-50 prohibits data brokers from selling, licensing, renting, trading, transferring, releasing, disclosing, providing access to or otherwise making available personally identifiable sensitive data of United States individuals to a foreign adversary country or an entity controlled by one. 'Data broker' excludes service providers and some other entities, such as those transmitting data at the individual's direction or publishing news. 'Sensitive data' is a defined list, including government identifiers, health and financial data, biometric and genetic information, precise geolocation, private communications, data on minors under 17 and online activity over time. Foreign adversary countries are those in 10 U.S.C. 4872(d)(2); control includes foreign ownership of at least 20 percent. The Federal Trade Commission enforces the prohibition as a violation of an unfair or deceptive practices rule under FTC Act section 18(a)(1)(B), with that Act's powers and penalties. The prohibition takes effect 60 days after enactment. No AI-specific provisions appear in this excerpt."
+ },
+ "relations": [
+  {
+   "relation": "enacted_by_bill",
+   "target_text": "H.R. 815 (118th Congress), enacted as Public Law 118-50",
+   "note": "Division I is part of the act enacted from H.R. 815 as Pub. L. 118-50; the text reproduces the session law and its legislative history block.",
+   "evidence": {
+    "provision": "Legislative history, H.R. 815 (following Div. I, Sec. 2(d))",
+    "quote": "LEGISLATIVE HISTORY—H.R. 815:"
+   }
+  },
+  {
+   "relation": "designates_under",
+   "target_text": "Federal Trade Commission Act (15 U.S.C. 41 et seq.), including section 18(a)(1)(B) (15 U.S.C. 57a(a)(1)(B))",
+   "note": "Applies FTC Act jurisdiction, powers and duties to enforcement of Sec. 2 (Sec. 2(b)(2)(A)); a violation is treated as a violation of an FTC rule under section 18(a)(1)(B) (Sec. 2(b)(1)); FTC Act penalties apply (Sec. 2(b)(2)(B)); other FTC authority is preserved (Sec. 2(b)(3)).",
+   "evidence": {
+    "provision": "Div. I, Sec. 2(b)(2)(A)",
+    "quote": "as though all applicable terms and provisions of the Federal Trade Commission Act (15 U.S.C. 41 et seq.) were incorporated"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Section 4872 of title 10, United States Code (10 U.S.C. 4872)",
+   "note": "Defines foreign adversary country by reference to the country list in 10 U.S.C. 4872(d)(2); the list is not in this text.",
+   "evidence": {
+    "provision": "Div. I, Sec. 2(c)(4)",
+    "quote": "a country specified in section 4872(d)(2) of title 10, United States Code."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Section 1460 of title 18, United States Code (18 U.S.C. 1460)",
+   "note": "The data broker exclusion for news or information does not cover an obscene visual depiction, as that term is used in 18 U.S.C. 1460.",
+   "evidence": {
+    "provision": "Div. I, Sec. 2(c)(3)(B)(iv)(II)",
+    "quote": "(as such term is used in section 1460 of title 18, United States Code)"
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "Federal Trade Commission",
+   "role": "designated",
+   "function": "Enforces the Sec. 2 prohibition with FTC Act jurisdiction, powers and duties incorporated; violations are treated as FTC rule violations; defined as the Commission in Sec. 2(c)(1).",
+   "evidence": {
+    "provision": "Div. I, Sec. 2(b)(2)(A)",
+    "quote": "The Commission shall enforce this section in the same manner, by the same means, and with the same jurisdiction, powers, and duties"
+   }
+  }
+ ],
+ "notes": "Annotates Division I only, as reproduced from Pub. L. 118-50 (pages 961-963 of 138 Stat. shown); Divisions A-H and J-T are omitted in the supplied text. Operative provisions are in Sec. 2; Sec. 1 is the short title. The 15 USC 9901 markers are codification references, not operative text. The addressee is the class 'data broker' (Sec. 2(c)(3)), not a named firm. The division states no penalty amounts; Sec. 2(b)(2)(B) imports FTC Act penalties by reference. The effective date is 60 days after enactment (Sec. 2(d)); the text records approval on April 24, 2024, and the effective date is not computed here. No internal inconsistencies found. Sec. 2(c)(4) and Sec. 2(c)(3)(B)(iv)(II) depend on other laws not included in the text.",
+ "events": [
+  {
+   "event": "signed",
+   "date": "2024-04-24",
+   "date_type": "absolute",
+   "date_text": "Approved April 24, 2024.",
+   "applies_to": "Public Law 118-50 (H.R. 815), including Division I",
+   "evidence": {
+    "provision": "Public Law 118-50, closing line",
+    "quote": "Approved April 24, 2024."
+   }
+  },
+  {
+   "event": "published",
+   "date": "2024-04-24",
+   "date_type": "absolute",
+   "date_text": "PUBLIC LAW 118–50—APR. 24, 2024",
+   "applies_to": "Public Law 118-50 (Statutes at Large, vol. 138, p. 895)",
+   "evidence": {
+    "provision": "Public Law 118-50, page header (138 STAT. 895)",
+    "quote": "PUBLIC LAW 118–50—APR. 24, 2024"
+   }
+  },
+  {
+   "event": "passed_chamber",
+   "date": "2023-03-07",
+   "date_type": "absolute",
+   "date_text": "Vol. 169 (2023): Mar. 7, considered and passed House.",
+   "applies_to": "House of Representatives (H.R. 815, first passage)",
+   "evidence": {
+    "provision": "Legislative history, H.R. 815 (Congressional Record)",
+    "quote": "Vol. 169 (2023): Mar. 7, considered and passed House."
+   }
+  },
+  {
+   "event": "passed_chamber",
+   "date": "2024-02",
+   "date_type": "absolute",
+   "date_text": "Vol. 170 (2024): Feb. 9–12, considered and passed Senate, amended.",
+   "applies_to": "Senate (H.R. 815, passed with amendment; date given as a range, Feb. 9–12, 2024)",
+   "evidence": {
+    "provision": "Legislative history, H.R. 815 (Congressional Record)",
+    "quote": "Vol. 170 (2024): Feb. 9–12, considered and passed Senate, amended."
+   }
+  },
+  {
+   "event": "passed_chamber",
+   "date": "2024-04-20",
+   "date_type": "absolute",
+   "date_text": "Apr. 20, House concurred in Senate amendment with an amendment pursuant to H. Res. 1160.",
+   "applies_to": "House of Representatives (concurrence in Senate amendment with a further amendment)",
+   "evidence": {
+    "provision": "Legislative history, H.R. 815 (Congressional Record)",
+    "quote": "House concurred in Senate amendment with an amendment pursuant to H. Res. 1160"
+   }
+  },
+  {
+   "event": "legislative_approval",
+   "date": "2024-04-23",
+   "date_type": "absolute",
+   "date_text": "Apr. 23, Senate concurred in House amendment.",
+   "applies_to": "Senate (concurrence in House amendment; final congressional passage of H.R. 815)",
+   "evidence": {
+    "provision": "Legislative history, H.R. 815 (Congressional Record)",
+    "quote": "Apr. 23, Senate concurred in House amendment."
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2024-06-23",
+   "date_type": "relative",
+   "date_text": "This section shall take effect on the date that is 60 days after the date of the enactment of this division.",
+   "anchor": "date of the enactment of this division (Division I)",
+   "applies_to": "Division I, Sec. 2 (prohibition on transfer of personally identifiable sensitive data to foreign adversaries, and FTC enforcement under Sec. 2(b))",
+   "offset_value": 60,
+   "offset_unit": "days",
+   "anchor_event": "signed",
+   "evidence": {
+    "provision": "Division I, Sec. 2(d) (Effective date)",
+    "quote": "This section shall take effect on the date that is 60 days after the date of the enactment of this division."
+   },
+   "date_computed_from": "signed 2024-04-24 (text) + 60 days"
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "other",
+   "variable_text": "direct or indirect ownership stake held by foreign persons in an entity",
+   "operator": ">=",
+   "value": 20,
+   "value_text": "at least a 20 percent stake",
+   "unit": "percent",
+   "measurement": "direct or indirect ownership by a foreign person or combination of foreign persons described in subparagraph (A)",
+   "level": "entity",
+   "trigger": "scope_definition",
+   "consequence": "the entity is controlled by a foreign adversary within the meaning of the definition",
+   "conditions": "the foreign person is domiciled in, headquartered in, has its principal place of business in, or is organized under the laws of a foreign adversary country",
+   "evidence": {
+    "provision": "Div. I, Sec. 2(c)(2)(B)",
+    "quote": "an entity with respect to which a foreign person or combination of foreign persons described in subparagraph (A) directly or indirectly own at least a 20 percent stake"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "precision of location information, measured as the range within which an individual or device is located",
+   "operator": "<=",
+   "value": 1850,
+   "value_text": "within a range of 1,850 feet or less",
+   "unit": "feet",
+   "measurement": "range of location precision of information derived from a device or technology of an individual",
+   "level": "person",
+   "trigger": "scope_definition",
+   "consequence": "location information at or below this precision is precise geolocation information, a category of sensitive data",
+   "conditions": "the information is derived from a device or technology of an individual and reveals the past or present physical location of an individual or device",
+   "evidence": {
+    "provision": "Div. I, Sec. 2(c)(6)(B)",
+    "quote": "within a range of 1,850 feet or less"
+   }
+  },
+  {
+   "variable": "age",
+   "variable_text": "age of an individual",
+   "operator": "<",
+   "value": 17,
+   "value_text": "under the age of 17",
+   "unit": "years",
+   "measurement": "age of the individual to whom the information relates",
+   "level": "person",
+   "trigger": "scope_definition",
+   "consequence": "information about an individual under this age is sensitive data",
+   "evidence": {
+    "provision": "Div. I, Sec. 2(c)(7)(M)",
+    "quote": "Information about an individual under the age of 17."
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "Commission",
+   "defined_in": "this division",
+   "evidence": {
+    "provision": "Div. I, Sec. 2(c)(1)",
+    "quote": "The term ‘‘Commission’’ means the Federal Trade Commission."
+   }
+  },
+  {
+   "term": "controlled by a foreign adversary",
+   "defined_in": "this division",
+   "evidence": {
+    "provision": "Div. I, Sec. 2(c)(2)",
+    "quote": "The term ‘‘controlled by a foreign adversary’’ means, with respect to an individual or entity, that such individual or entity is—"
+   }
+  },
+  {
+   "term": "data broker",
+   "defined_in": "this division",
+   "evidence": {
+    "provision": "Div. I, Sec. 2(c)(3)(A)",
+    "quote": "The term ‘‘data broker’’ means an entity that, for valuable consideration, sells, licenses, rents, trades, transfers, releases, discloses, provides access to, or otherwise makes available data of United States individuals"
+   }
+  },
+  {
+   "term": "foreign adversary country",
+   "defined_in": "10 U.S.C. 4872(d)(2)",
+   "evidence": {
+    "provision": "Div. I, Sec. 2(c)(4)",
+    "quote": "The term ‘‘foreign adversary country’’ means a country specified in section 4872(d)(2) of title 10, United States Code."
+   }
+  },
+  {
+   "term": "personally identifiable sensitive data",
+   "defined_in": "this division",
+   "evidence": {
+    "provision": "Div. I, Sec. 2(c)(5)",
+    "quote": "‘‘personally identifiable sensitive data’’ means any sensitive data that identifies or is linked or reasonably linkable, alone"
+   }
+  },
+  {
+   "term": "precise geolocation information",
+   "defined_in": "this division",
+   "evidence": {
+    "provision": "Div. I, Sec. 2(c)(6)",
+    "quote": "‘‘precise geolocation information’’ means information that—"
+   }
+  },
+  {
+   "term": "sensitive data",
+   "defined_in": "this division",
+   "evidence": {
+    "provision": "Div. I, Sec. 2(c)(7)",
+    "quote": "‘‘sensitive data’’ includes"
+   }
+  },
+  {
+   "term": "service provider",
+   "defined_in": "this division",
+   "evidence": {
+    "provision": "Div. I, Sec. 2(c)(8)",
+    "quote": "‘‘service provider’’ means"
+   }
+  },
+  {
+   "term": "United States individual",
+   "defined_in": "this division",
+   "evidence": {
+    "provision": "Div. I, Sec. 2(c)(9)",
+    "quote": "‘‘United States individual’’ means a natural person residing in the United States."
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "prohibition",
+   "addressee": "data_broker",
+   "modality": "shall_not",
+   "summary": "A data broker shall not sell, license, rent, trade, transfer, release, disclose, provide access to, or otherwise make available personally identifiable sensitive data of a United States individual to any foreign adversary country or any entity controlled by a foreign adversary. Enforcement by the FTC is in Sec. 2(b) and is not coded here.",
+   "applies_from": "60 days after the date of the enactment of this division (Sec. 2(d))",
+   "evidence": {
+    "provision": "Division I, Sec. 2(a)",
+    "quote": "It shall be unlawful for a data broker to sell, license, rent, trade, transfer, release, disclose, provide access to, or otherwise make available personally identifiable sensitive data of a United States individual to—"
+   }
+  }
+ ],
+ "enforcement": [
+  {
+   "sanction_type": "other",
+   "authority": "Federal Trade Commission",
+   "triggered_by": "Violation of Div. I, Sec. 2(a): a data broker selling, licensing, transferring or otherwise making available personally identifiable sensitive data of a United States individual to a foreign adversary country or an entity controlled by a foreign adversary",
+   "max_penalty_text": "subject to the penalties and entitled to the privileges and immunities provided in the Federal Trade Commission Act",
+   "penalty_reference": "Federal Trade Commission Act (15 U.S.C. 41 et seq.), incorporated by Div. I, Sec. 2(b)(2)(A); a violation is treated as a violation of a rule under section 18(a)(1)(B) of that Act (15 U.S.C. 57a(a)(1)(B)) (Div. I, Sec. 2(b)(1))",
+   "cure_period": "none stated in this text",
+   "evidence": {
+    "provision": "Div. I, Sec. 2(b)(2)(B)",
+    "quote": "Any person who violates this section shall be subject to the penalties and entitled to the privileges and immunities provided in the Federal Trade Commission Act."
+   }
+  }
+ ],
+ "section_status": {}
+}

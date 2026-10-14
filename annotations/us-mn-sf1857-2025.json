@@ -1,0 +1,100 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "us-mn-sf1857-2025",
+ "tier": "B",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "light, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-interim-20261014"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "AGORA plaintext (ETO, CC BY-NC 4.0), local cache",
+  "url": "https://www.revisor.mn.gov/bills/94/2025/0/SF/1857/versions/0/pdf/",
+  "retrieved": "2026-05-03",
+  "version": "1.33.0 (2026-09-16)",
+  "language": "en",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "minors_child_safety",
+   "generative_ai"
+  ],
+  "primary_domain": "minors_child_safety",
+  "mechanisms": [
+   "prohibition_ban",
+   "mandate_obligation",
+   "liability_rule"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "platform_operator",
+   "ai_provider"
+  ],
+  "affected_roles": [
+   "minors",
+   "consumers_users"
+  ],
+  "decision_margins": [
+   "firm:product_design_release",
+   "household:access"
+  ],
+  "territorial_scope": {
+   "types": [
+    "subnational"
+   ],
+   "description": "Minnesota state law; the text states no extraterritorial reach, applying to persons who own or control websites, applications, software or programs.",
+   "evidence": {
+    "provision": "Section 1, Subd. 2",
+    "quote": "It is unlawful for a person who owns or controls a website,"
+   }
+  },
+  "agora_incentives": [
+   "Civil liability",
+   "Fines"
+  ]
+ },
+ "summary": {
+  "short": "Minnesota bill SF 1857 (2025, introduced) would make it unlawful for operators of websites, applications or programs to let minors access chatbots for recreational purposes, require age proof, and allow individual damages suits and attorney general civil penalties.",
+  "long": "Minnesota SF 1857 (Section 1, Minn. Stat. § 325M.40 as proposed) defines a chatbot as a computer program designed to simulate conversation with human users and a minor as an individual under 18. Subdivision 2 makes it unlawful for a person who owns or controls a website, application, software or program to allow a minor to access chatbots for recreational purposes. Subdivision 3 requires a person offering chatbot services for recreational purposes to require proof of age before allowing access. Subdivision 4 allows an individual injured by a violation to bring a civil action for damages, statutory damages not to exceed $1,000, injunctive relief, and costs and reasonable attorney fees. The attorney general may enforce the section under section 8.31, and a violating person is liable for a civil penalty not to exceed $5,000,000. The text states no effective date. The instrument is at the introduced stage."
+ },
+ "relations": [
+  {
+   "relation": "cross_references",
+   "target_text": "section 8.31 (cited in the bill as the attorney general's enforcement provision; not reproduced in the text)",
+   "note": "Subd. 4(b) lets the attorney general enforce the section under section 8.31; the bill does not restate that section.",
+   "evidence": {
+    "provision": "Section 1, [325M.40] Subd. 4(b)",
+    "quote": "The attorney general may enforce this section under section 8.31."
+   }
+  }
+ ],
+ "notes": "Introduced bill text; no effective date, applicability date or sunset is stated. 'Recreational purposes' is not defined. Subd. 2 bars owners or controllers of a website, application, software or program from allowing a minor to access chatbots, while Subd. 3 separately requires a person offering chatbot services for recreational purposes to require proof of age; the two provisions name different addressees. The 'chatbot' definition is not limited to recreational use. Subd. 4(a) sets statutory damages 'not to exceed $1,000' but does not say whether this applies per violation or per minor. The bracketed heading '[325M.40]' is the only codification indication; the text does not name a parent chapter or amend any existing statute.",
+ "events": [],
+ "thresholds": [
+  {
+   "variable": "age",
+   "variable_text": "under the age of 18",
+   "operator": "<",
+   "value": 18,
+   "value_text": "\"Minor\" means an individual under the age of 18.",
+   "unit": "years",
+   "level": "person",
+   "trigger": "scope_definition",
+   "consequence": "Defines who is a minor for the chatbot access prohibition and the proof-of-age requirement.",
+   "conditions": "Applies in Subd. 2 (prohibition on allowing a minor to access chatbots for recreational purposes) and Subd. 3 (proof of age).",
+   "evidence": {
+    "provision": "Sec. 1, § 325M.40 Subd. 1(c)",
+    "quote": "\"Minor\" means an individual under the age of 18."
+   }
+  }
+ ],
+ "section_status": {
+  "events": {
+   "status": "not_found",
+   "note": "The bill text contains no dates, including no effective date, application date, deadline, sunset or repeal. Legislative steps are not in the fetched text and no official source URL was supplied, so no external events are coded."
+  }
+ }
+}

@@ -1,0 +1,1618 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "eu-nis2-implementing-2024",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (connectors/fetch_texts.py)",
+  "url": "http://publications.europa.eu/resource/cellar/28f15de8-8ce9-11ef-a130-01aa75ed71a1.0006.03/DOC_1",
+  "retrieved": "2026-10-13",
+  "version": "as fetched",
+  "language": "en",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "cybersecurity"
+  ],
+  "primary_domain": "cybersecurity",
+  "mechanisms": [
+   "mandate_obligation",
+   "standard_setting"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "cloud_service_provider",
+   "data_center_operator",
+   "platform_operator",
+   "search_engine_operator",
+   "essential_entity"
+  ],
+  "affected_roles": [
+   "consumers_users",
+   "workers"
+  ],
+  "decision_margins": [
+   "firm:compliance_process",
+   "firm:product_design_release",
+   "firm:input_use"
+  ],
+  "territorial_scope": {
+   "types": [
+    "supranational"
+   ],
+   "description": "Binding and directly applicable in all EU Member States for the listed relevant entities.",
+   "evidence": {
+    "provision": "Art. 16",
+    "quote": "This Regulation shall be binding in its entirety and directly applicable in all Member States."
+   }
+  }
+ },
+ "summary": {
+  "short": "Sets cybersecurity risk-management requirements (Annex) and significant-incident criteria for listed DNS, cloud, data centre, online platform, managed service, trust service and other relevant entities under Directive (EU) 2022/2555; binding in all Member States, in force 20 days after OJ publication.",
+  "long": "Implements Article 21(2) and Article 23(3) of Directive (EU) 2022/2555 (NIS 2) for listed relevant entities: DNS service providers, TLD name registries, cloud computing, data centre and content delivery network providers, managed service and managed security service providers, online marketplaces, online search engines, social networking services platforms and trust service providers. Article 2 requires them to apply the technical and methodological cybersecurity risk-management measures in the Annex, proportionate to their risk exposure, size and incident likelihood and impact; where a requirement applies 'where appropriate', 'where applicable' or 'to the extent feasible' and is not applied, the entity must document its reasoning. The Annex covers policy, risk management, incident handling, business continuity, supply chain security, acquisition and development, security testing, cyber hygiene and training, cryptography, human resources, access control, asset management and physical security. Article 3 sets significance criteria, including direct financial loss above the lower of EUR 500 000 or 5% of turnover and severe operational disruption; Article 4 aggregates recurring incidents; Articles 5 to 14 add criteria per entity type based on outage durations and user shares. Article 15 repeals Regulation (EU) 2018/151. Binding and directly applicable in all Member States; enters into force on the twentieth day after OJ publication."
+ },
+ "relations": [
+  {
+   "relation": "legal_basis",
+   "target_text": "Directive (EU) 2022/2555 of the European Parliament and of the Council (NIS 2 Directive), Articles 21(5) and 23(11)",
+   "note": "Enabling provisions cited in the preamble. The directive is not in the registry, so the target ID is left empty.",
+   "evidence": {
+    "provision": "Preamble, citations (Having regard to Directive (EU) 2022/2555)",
+    "quote": "and in particular Articles 21(5), first subparagraph and 23(11), second subparagraph thereof"
+   }
+  },
+  {
+   "relation": "implements",
+   "target_text": "Directive (EU) 2022/2555 of the European Parliament and of the Council (NIS 2 Directive), Article 21(2) and Article 23(3)",
+   "note": "The regulation lays down technical and methodological requirements of Art. 21(2) measures and specifies significant incidents under Art. 23(3) of the directive.",
+   "evidence": {
+    "provision": "Art. 1",
+    "quote": "lays down the technical and the methodological requirements of the measures referred to in Article 21(2) of Directive (EU) 2022/2555"
+   }
+  },
+  {
+   "relation": "repeals",
+   "target_text": "Commission Implementing Regulation (EU) 2018/151",
+   "note": "Repealed in full by Art. 15 of this regulation. Not in the registry.",
+   "evidence": {
+    "provision": "Art. 15",
+    "quote": "Commission Implementing Regulation (EU) 2018/151 (^4) is repealed."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) 2019/881 (Cybersecurity Act), Article 49",
+   "note": "Recital cites European cybersecurity certificates and EU statements of conformity issued under certification schemes adopted under Art. 49 of that regulation, as assurance for acquired ICT products or services.",
+   "evidence": {
+    "provision": "Recital (17)",
+    "quote": "adopted pursuant to Article 49 of Regulation (EU) 2019/881"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive (EU) 2016/943, Article 2 point (1) (trade secrets)",
+   "note": "The Art. 3(1)(b) significance criterion on exfiltration of trade secrets uses the trade secret definition in that directive.",
+   "evidence": {
+    "provision": "Art. 3(1)(b)",
+    "quote": "as set out in Article 2 point (1), of Directive (EU) 2016/943"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) 2018/1725, Article 42(1)",
+   "note": "The European Data Protection Supervisor was consulted under Art. 42(1) of that regulation on the draft act (recital 42).",
+   "evidence": {
+    "provision": "Recital (42)",
+    "quote": "consulted in accordance with Article 42(1) of Regulation (EU) 2018/1725"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Unnamed regulation of the European Parliament and of the Council on horizontal cybersecurity requirements for products with digital elements",
+   "note": "Recital says that entities setting security requirements for ICT products to be acquired should take into account essential requirements in this regulation. The text gives no number or date.",
+   "evidence": {
+    "provision": "Recital (17)",
+    "quote": "a regulation of the European Parliament and of the Council on horizontal cybersecurity requirements for products with digital elements"
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "relevant entities: DNS service providers, TLD name registries, cloud computing service providers, data centre service providers, content delivery network providers, managed service providers, managed security service providers, providers of online market places, of online search engines and of social networking services platforms, and trust service providers",
+   "role": "addressee",
+   "function": "Addressees of the technical and methodological requirements in the Annex (Art. 2(1)) and of the significant-incident criteria in Arts. 5 to 14. The categories are defined by reference to Art. 3 of Directive (EU) 2022/2555 (recital 1).",
+   "evidence": {
+    "provision": "Art. 1",
+    "quote": "with regard to DNS service providers, TLD name registries, cloud computing service providers, data centre service providers"
+   }
+  },
+  {
+   "name": "European Union Agency for Cybersecurity (ENISA)",
+   "role": "designated",
+   "function": "Can provide guidance on risk assessment and risk management to relevant entities (recital 7); assists the Commission in supporting a multistakeholder forum on network protocols, email and DNS/routing security (recital 8).",
+   "evidence": {
+    "provision": "Recital (7)",
+    "quote": "ENISA or national competent authorities under Directive (EU) 2022/2555 can provide guidance"
+   }
+  },
+  {
+   "name": "national competent authorities under Directive (EU) 2022/2555",
+   "role": "designated",
+   "function": "Supervise relevant entities; may take into account the time needed to implement the measures (recital 6); may provide guidance (recital 7).",
+   "evidence": {
+    "provision": "Recital (6)",
+    "quote": "National competent authorities may, when exercising supervision, take into account the appropriate time required"
+   }
+  },
+  {
+   "name": "Computer Security Incident Response Teams (CSIRTs) or, where applicable, the competent authorities",
+   "role": "designated",
+   "function": "Receive incident notifications from relevant entities (Annex, point 3.5.3(a)); provide information on incidents, vulnerabilities, threats and mitigation measures that entities must process (Annex, point 4.3.3).",
+   "evidence": {
+    "provision": "Annex, point 3.5.3(a)",
+    "quote": "with the Computer Security Incident Response Teams (CSIRTs) or, where applicable, the competent authorities, related to incident notification"
+   }
+  }
+ ],
+ "notes": "Adopted under Art. 21(5) and 23(11) of Directive (EU) 2022/2555; the directive and the 2018/151 regulation are outside the registry, so their target IDs are empty. Relations and entity rows are recorded from the text only. Drafting points to check against the OJ: Art. 6(b) ends with a comma and lacks a conjunction; Art. 14(e) reads 'more than 100 of users or relying parties' with no thousands figure; Art. 5(a) uses 30 minutes for DNS while Art. 14(a) uses 20 minutes for trust services. Entries are present in relations and entities, so section_status is set to not_applicable for schema conformance only.",
+ "events": [
+  {
+   "event": "consultation",
+   "date": "2024-09-01",
+   "date_type": "absolute",
+   "date_text": "delivered its opinion on 1 September 2024",
+   "applies_to": "draft implementing act (European Data Protection Supervisor opinion)",
+   "evidence": {
+    "provision": "Recital (42)",
+    "quote": "delivered its opinion on 1 September 2024"
+   }
+  },
+  {
+   "event": "adopted",
+   "date": "2024-10-17",
+   "date_type": "absolute",
+   "date_text": "of 17 October 2024",
+   "applies_to": "Commission Implementing Regulation (EU) 2024/2690",
+   "evidence": {
+    "provision": "Title",
+    "quote": "of 17 October 2024"
+   }
+  },
+  {
+   "event": "signed",
+   "date": "2024-10-17",
+   "date_type": "absolute",
+   "date_text": "Done at Brussels, 17 October 2024.",
+   "applies_to": "Commission Implementing Regulation (EU) 2024/2690",
+   "evidence": {
+    "provision": "Final provisions (signature block)",
+    "quote": "Done at Brussels, 17 October 2024."
+   }
+  },
+  {
+   "event": "published",
+   "date": "2024-10-18",
+   "date_type": "absolute",
+   "date_text": "18.10.2024",
+   "applies_to": "Official Journal of the European Union, L series, 2024/2690",
+   "evidence": {
+    "provision": "Gazette dateline (cover)",
+    "quote": "18.10.2024"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2024-11-07",
+   "date_type": "relative",
+   "date_text": "on the twentieth day following that of its publication in the Official Journal of the European Union",
+   "anchor": "publication in the Official Journal of the European Union",
+   "applies_to": "Regulation as a whole (binding in its entirety and directly applicable in all Member States)",
+   "offset_value": 20,
+   "offset_unit": "days",
+   "anchor_event": "published",
+   "evidence": {
+    "provision": "Article 16",
+    "quote": "This Regulation shall enter into force on the twentieth day following that of its publication in the Official Journal of the European Union."
+   },
+   "date_computed_from": "published 2024-10-18 (text) + 20 days"
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "at least annually",
+   "applies_to": "review and update of the network and information system security policy (point 1.1.2), risk assessment results and risk treatment plan (point 2.1.4), and assignment of personnel to roles (point 10.1.3)",
+   "evidence": {
+    "provision": "Annex, point 1.1.2",
+    "quote": "shall be reviewed and, where appropriate, updated by management bodies at least annually"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "on a quarterly basis",
+   "applies_to": "assessment of recurring incidents as referred to in Article 4 of this Regulation (Annex, point 3.4.2(b))",
+   "evidence": {
+    "provision": "Annex, point 3.4.2(b)",
+    "quote": "assess the existence of recurring incidents as referred to in Article 4 of this Regulation on a quarterly basis"
+   }
+  },
+  {
+   "event": "repealed",
+   "date": null,
+   "date_type": "not_stated",
+   "date_text": "is repealed",
+   "applies_to": "Commission Implementing Regulation (EU) 2018/151",
+   "evidence": {
+    "provision": "Article 15",
+    "quote": "Commission Implementing Regulation (EU) 2018/151"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "other",
+   "variable_text": "direct financial loss for the relevant entity",
+   "operator": ">",
+   "value": 500000,
+   "value_text": "exceeds EUR 500 000 or 5 % of the relevant entity's total annual turnover in the preceding financial year, whichever is lower",
+   "unit": "EUR",
+   "currency": "EUR",
+   "measurement": "direct financial loss caused or capable of being caused by the incident, for the relevant entity",
+   "level": "entity",
+   "trigger": "obligation",
+   "consequence": "incident is considered significant under Art. 23(3) of Directive (EU) 2022/2555 when this loss test is met",
+   "conditions": "applies jointly with the 5 % turnover limit; the lower of the two applies",
+   "evidence": {
+    "provision": "Art. 3(1)(a)",
+    "quote": "exceeds EUR 500 000 or 5 % of the relevant entity"
+   }
+  },
+  {
+   "variable": "revenue_annual",
+   "variable_text": "total annual turnover in the preceding financial year",
+   "operator": ">",
+   "value": 5,
+   "value_text": "5 % of the relevant entity's total annual turnover in the preceding financial year, whichever is lower",
+   "unit": "%",
+   "measurement": "relevant entity's total annual turnover in the preceding financial year; direct financial loss compared against it",
+   "level": "entity",
+   "trigger": "obligation",
+   "consequence": "incident is considered significant under Art. 23(3) of Directive (EU) 2022/2555 when this loss test is met",
+   "conditions": "applies jointly with the EUR 500 000 limit; the lower of the two applies",
+   "evidence": {
+    "provision": "Art. 3(1)(a)",
+    "quote": "or 5 % of the relevant entity"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "number of occurrences of incidents with the same apparent root cause",
+   "operator": ">=",
+   "value": 2,
+   "value_text": "at least twice",
+   "unit": "occurrences",
+   "measurement": "count of incidents linked by the same apparent root cause, aggregated collectively",
+   "level": "entity",
+   "trigger": "obligation",
+   "consequence": "individually non-significant incidents are considered collectively as one significant incident",
+   "conditions": "also must collectively meet the financial loss criterion in Art. 3(1)(a) and have the same apparent root cause",
+   "evidence": {
+    "provision": "Art. 4(a)",
+    "quote": "they have occurred at least twice within 6 months"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "period within which recurring incidents must occur",
+   "operator": "<=",
+   "value": 6,
+   "value_text": "within 6 months",
+   "unit": "months",
+   "measurement": "window for counting recurring incidents with the same apparent root cause",
+   "level": "entity",
+   "trigger": "obligation",
+   "consequence": "recurring incidents are aggregated only if they occur within this window",
+   "conditions": "at least two occurrences; same apparent root cause; collective financial loss criterion",
+   "evidence": {
+    "provision": "Art. 4(a)",
+    "quote": "they have occurred at least twice within 6 months"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "duration of complete unavailability of a recursive or authoritative DNS resolution service",
+   "operator": ">",
+   "value": 30,
+   "value_text": "completely unavailable for more than 30 minutes",
+   "unit": "minutes",
+   "measurement": "duration of complete unavailability of the service",
+   "level": "service",
+   "trigger": "obligation",
+   "consequence": "incident is significant under Art. 3(1)(g) when this criterion is met",
+   "conditions": "one of the criteria in Art. 5(a) to (c) suffices",
+   "evidence": {
+    "provision": "Art. 5(a)",
+    "quote": "a recursive or authoritative domain name resolution service is completely unavailable for more than 30 minutes"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "duration of average DNS response time above limit",
+   "operator": ">",
+   "value": 1,
+   "value_text": "for a period of more than one hour",
+   "unit": "hours",
+   "measurement": "period during which the average response time is measured",
+   "level": "service",
+   "trigger": "obligation",
+   "consequence": "incident is significant under Art. 3(1)(g) when this criterion is met",
+   "conditions": "jointly with average response time more than 10 seconds",
+   "evidence": {
+    "provision": "Art. 5(b)",
+    "quote": "for a period of more than one hour, the average response time of a recursive or authoritative domain name resolution service"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "average response time of DNS requests",
+   "operator": ">",
+   "value": 10,
+   "value_text": "is more than 10 seconds",
+   "unit": "seconds",
+   "measurement": "average response time of the recursive or authoritative resolution service to DNS requests",
+   "level": "service",
+   "trigger": "obligation",
+   "consequence": "incident is significant under Art. 3(1)(g) when this criterion is met",
+   "conditions": "jointly with the period of more than one hour",
+   "evidence": {
+    "provision": "Art. 5(b)",
+    "quote": "is more than 10 seconds"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "number of domain names with incorrect data (misconfiguration exception)",
+   "operator": "<",
+   "value": 1000,
+   "value_text": "the data of fewer than 1 000 domain names managed by the DNS service provider",
+   "unit": "domain names",
+   "measurement": "count of managed domain names whose data is not correct because of misconfiguration",
+   "level": "service",
+   "trigger": "exclusion",
+   "consequence": "compromise of data is not treated as significant under this criterion in these cases",
+   "conditions": "also no more than 1 % of the domain names managed by the provider",
+   "evidence": {
+    "provision": "Art. 5(c)",
+    "quote": "the data of fewer than 1 000 domain names managed by the DNS service provider"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "share of domain names with incorrect data (misconfiguration exception)",
+   "operator": "<=",
+   "value": 1,
+   "value_text": "amounting to no more than 1 % of the domain names",
+   "unit": "%",
+   "measurement": "share of domain names managed by the DNS service provider that are not correct because of misconfiguration",
+   "level": "service",
+   "trigger": "exclusion",
+   "consequence": "compromise of data is not treated as significant under this criterion in these cases",
+   "conditions": "also fewer than 1 000 domain names affected",
+   "evidence": {
+    "provision": "Art. 5(c)",
+    "quote": "amounting to no more than 1 % of the domain names"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "duration of average DNS response time above limit (TLD registries)",
+   "operator": ">",
+   "value": 1,
+   "value_text": "for a period of more than one hour",
+   "unit": "hours",
+   "measurement": "period during which the average response time is measured",
+   "level": "service",
+   "trigger": "obligation",
+   "consequence": "incident is significant under Art. 3(1)(g) when this criterion is met",
+   "conditions": "jointly with average response time more than 10 seconds",
+   "evidence": {
+    "provision": "Art. 6(b)",
+    "quote": "for a period of more than one hour, the average response time of an authoritative domain name resolution service"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "average response time of DNS requests (TLD registries)",
+   "operator": ">",
+   "value": 10,
+   "value_text": "is more than 10 seconds",
+   "unit": "seconds",
+   "measurement": "average response time of the authoritative resolution service to DNS requests",
+   "level": "service",
+   "trigger": "obligation",
+   "consequence": "incident is significant under Art. 3(1)(g) when this criterion is met",
+   "conditions": "jointly with the period of more than one hour",
+   "evidence": {
+    "provision": "Art. 6(b)",
+    "quote": "is more than 10 seconds"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "duration of complete unavailability of a cloud computing service",
+   "operator": ">",
+   "value": 30,
+   "value_text": "completely unavailable for more than 30 minutes",
+   "unit": "minutes",
+   "measurement": "duration of complete unavailability of the cloud computing service",
+   "level": "service",
+   "trigger": "obligation",
+   "consequence": "incident is significant under Art. 3(1)(g) when this criterion is met",
+   "conditions": "one of the criteria in Art. 7(a) to (d) suffices",
+   "evidence": {
+    "provision": "Art. 7(a)",
+    "quote": "a cloud computing service provided is completely unavailable for more than 30 minutes"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "share of Union users of a cloud computing service with limited availability",
+   "operator": ">",
+   "value": 5,
+   "value_text": "limited for more than 5 % of the cloud computing service's users in the Union",
+   "unit": "%",
+   "measurement": "share of the provider's cloud computing service users in the Union affected",
+   "level": "service",
+   "trigger": "obligation",
+   "consequence": "incident is significant under Art. 3(1)(g) when this criterion is met",
+   "conditions": "whichever of 5 % or 1 million users is smaller; jointly with duration more than one hour",
+   "evidence": {
+    "provision": "Art. 7(b)",
+    "quote": "is limited for more than 5 % of the cloud computing service"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "number of Union users of a cloud computing service with limited availability",
+   "operator": ">",
+   "value": 1000000,
+   "value_text": "or for more than 1 million of the cloud computing service",
+   "unit": "users",
+   "measurement": "number of the provider's cloud computing service users in the Union affected",
+   "level": "service",
+   "trigger": "obligation",
+   "consequence": "incident is significant under Art. 3(1)(g) when this criterion is met",
+   "conditions": "whichever of 5 % or 1 million users is smaller; jointly with duration more than one hour",
+   "evidence": {
+    "provision": "Art. 7(b)",
+    "quote": "or for more than 1 million of the cloud computing service"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "duration of limited availability of a cloud computing service",
+   "operator": ">",
+   "value": 1,
+   "value_text": "for a duration of more than one hour",
+   "unit": "hours",
+   "measurement": "duration of limited availability",
+   "level": "service",
+   "trigger": "obligation",
+   "consequence": "incident is significant under Art. 3(1)(g) when this criterion is met",
+   "conditions": "jointly with the user share threshold in Art. 7(b)",
+   "evidence": {
+    "provision": "Art. 7(b)",
+    "quote": "for a duration of more than one hour"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "share of Union users affected by compromised data of a cloud computing service",
+   "operator": ">",
+   "value": 5,
+   "value_text": "compromised with an impact on more than 5 % of that cloud computing service's users in the Union",
+   "unit": "%",
+   "measurement": "share of the provider's cloud computing service users in the Union affected",
+   "level": "service",
+   "trigger": "obligation",
+   "consequence": "incident is significant under Art. 3(1)(g) when this criterion is met",
+   "conditions": "whichever of 5 % or 1 million users is smaller",
+   "evidence": {
+    "provision": "Art. 7(d)",
+    "quote": "is compromised with an impact on more than 5 % of that cloud computing service"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "number of Union users affected by compromised data of a cloud computing service",
+   "operator": ">",
+   "value": 1000000,
+   "value_text": "or on more than 1 million of that cloud computing service",
+   "unit": "users",
+   "measurement": "number of the provider's cloud computing service users in the Union affected",
+   "level": "service",
+   "trigger": "obligation",
+   "consequence": "incident is significant under Art. 3(1)(g) when this criterion is met",
+   "conditions": "whichever of 5 % or 1 million users is smaller",
+   "evidence": {
+    "provision": "Art. 7(d)",
+    "quote": "or on more than 1 million of that cloud computing service"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "duration of limited availability of a data centre service",
+   "operator": ">",
+   "value": 1,
+   "value_text": "is limited for a duration of more than one hour",
+   "unit": "hours",
+   "measurement": "duration of limited availability of the data centre service",
+   "level": "service",
+   "trigger": "obligation",
+   "consequence": "incident is significant under Art. 3(1)(g) when this criterion is met",
+   "conditions": "one of the criteria in Art. 8(a) to (d) suffices",
+   "evidence": {
+    "provision": "Art. 8(b)",
+    "quote": "is limited for a duration of more than one hour"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "share of Union users with limited availability of a content delivery network",
+   "operator": ">",
+   "value": 5,
+   "value_text": "limited for more than 5 % of the content delivery network's users in the Union",
+   "unit": "%",
+   "measurement": "share of the network's users in the Union affected",
+   "level": "service",
+   "trigger": "obligation",
+   "consequence": "incident is significant under Art. 3(1)(g) when this criterion is met",
+   "conditions": "whichever of 5 % or 1 million users is smaller; jointly with duration more than one hour",
+   "evidence": {
+    "provision": "Art. 9(b)",
+    "quote": "the availability of a content delivery network is limited for more than 5 %"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "number of Union users with limited availability of a content delivery network",
+   "operator": ">",
+   "value": 1000000,
+   "value_text": "or for more than 1 million of the content delivery network",
+   "unit": "users",
+   "measurement": "number of the network's users in the Union affected",
+   "level": "service",
+   "trigger": "obligation",
+   "consequence": "incident is significant under Art. 3(1)(g) when this criterion is met",
+   "conditions": "whichever of 5 % or 1 million users is smaller; jointly with duration more than one hour",
+   "evidence": {
+    "provision": "Art. 9(b)",
+    "quote": "or for more than 1 million of the content delivery network"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "duration of complete unavailability of a content delivery network",
+   "operator": ">",
+   "value": 30,
+   "value_text": "completely unavailable for more than 30 minutes",
+   "unit": "minutes",
+   "measurement": "duration of complete unavailability of the network",
+   "level": "service",
+   "trigger": "obligation",
+   "consequence": "incident is significant under Art. 3(1)(g) when this criterion is met",
+   "conditions": "one of the criteria in Art. 9(a) to (d) suffices",
+   "evidence": {
+    "provision": "Art. 9(a)",
+    "quote": "a content delivery network is completely unavailable for more than 30 minutes"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "duration of limited availability of a content delivery network",
+   "operator": ">",
+   "value": 1,
+   "value_text": "for a duration of more than one hour",
+   "unit": "hours",
+   "measurement": "duration of limited availability",
+   "level": "service",
+   "trigger": "obligation",
+   "consequence": "incident is significant under Art. 3(1)(g) when this criterion is met",
+   "conditions": "jointly with the user share threshold in Art. 9(b)",
+   "evidence": {
+    "provision": "Art. 9(b)",
+    "quote": "for a duration of more than one hour"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "share of Union users affected by compromised data of a content delivery network",
+   "operator": ">",
+   "value": 5,
+   "value_text": "compromised with an impact on more than 5 % of that content delivery network",
+   "unit": "%",
+   "measurement": "share of the network's users in the Union affected",
+   "level": "service",
+   "trigger": "obligation",
+   "consequence": "incident is significant under Art. 3(1)(g) when this criterion is met",
+   "conditions": "whichever of 5 % or 1 million users is smaller",
+   "evidence": {
+    "provision": "Art. 9(d)",
+    "quote": "is compromised with an impact on more than 5 % of that content delivery network"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "number of Union users affected by compromised data of a content delivery network",
+   "operator": ">",
+   "value": 1000000,
+   "value_text": "or on more than 1 million of that content delivery network",
+   "unit": "users",
+   "measurement": "number of the network's users in the Union affected",
+   "level": "service",
+   "trigger": "obligation",
+   "consequence": "incident is significant under Art. 3(1)(g) when this criterion is met",
+   "conditions": "whichever of 5 % or 1 million users is smaller",
+   "evidence": {
+    "provision": "Art. 9(d)",
+    "quote": "or on more than 1 million of that content delivery network"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "duration of complete unavailability of a managed or managed security service",
+   "operator": ">",
+   "value": 30,
+   "value_text": "completely unavailable for more than 30 minutes",
+   "unit": "minutes",
+   "measurement": "duration of complete unavailability of the service",
+   "level": "service",
+   "trigger": "obligation",
+   "consequence": "incident is significant under Art. 3(1)(g) when this criterion is met",
+   "conditions": "one of the criteria in Art. 10(a) to (d) suffices",
+   "evidence": {
+    "provision": "Art. 10(a)",
+    "quote": "a managed service or managed security service is completely unavailable for more than 30 minutes"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "share of users of a managed or managed security service with limited availability",
+   "operator": ">",
+   "value": 5,
+   "value_text": "limited for more than 5 % of the service's users in the Union",
+   "unit": "%",
+   "measurement": "share of the service's users in the Union affected",
+   "level": "service",
+   "trigger": "obligation",
+   "consequence": "incident is significant under Art. 3(1)(g) when this criterion is met",
+   "conditions": "whichever of 5 % or 1 million users is smaller; jointly with duration more than one hour",
+   "evidence": {
+    "provision": "Art. 10(b)",
+    "quote": "is limited for more than 5 % of the service"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "number of Union users of a managed or managed security service with limited availability",
+   "operator": ">",
+   "value": 1000000,
+   "value_text": "or for more than 1 million of the service",
+   "unit": "users",
+   "measurement": "number of the service's users in the Union affected",
+   "level": "service",
+   "trigger": "obligation",
+   "consequence": "incident is significant under Art. 3(1)(g) when this criterion is met",
+   "conditions": "whichever of 5 % or 1 million users is smaller; jointly with duration more than one hour",
+   "evidence": {
+    "provision": "Art. 10(b)",
+    "quote": "or for more than 1 million of the service"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "duration of limited availability of a managed or managed security service",
+   "operator": ">",
+   "value": 1,
+   "value_text": "for a duration of more than one hour",
+   "unit": "hours",
+   "measurement": "duration of limited availability",
+   "level": "service",
+   "trigger": "obligation",
+   "consequence": "incident is significant under Art. 3(1)(g) when this criterion is met",
+   "conditions": "jointly with the user share threshold in Art. 10(b)",
+   "evidence": {
+    "provision": "Art. 10(b)",
+    "quote": "for a duration of more than one hour"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "share of service users affected by compromised data of a managed or managed security service",
+   "operator": ">",
+   "value": 5,
+   "value_text": "is compromised with an impact on more than 5 % of that managed service",
+   "unit": "%",
+   "measurement": "share of the service's users in the Union affected",
+   "level": "service",
+   "trigger": "obligation",
+   "consequence": "incident is significant under Art. 3(1)(g) when this criterion is met",
+   "conditions": "whichever of 5 % or 1 million users is smaller",
+   "evidence": {
+    "provision": "Art. 10(d)",
+    "quote": "is compromised with an impact on more than 5 % of that managed service"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "number of Union users affected by compromised data of a managed or managed security service",
+   "operator": ">",
+   "value": 1000000,
+   "value_text": "or on more than 1 million of the service users in the Union",
+   "unit": "users",
+   "measurement": "number of the service's users in the Union affected",
+   "level": "service",
+   "trigger": "obligation",
+   "consequence": "incident is significant under Art. 3(1)(g) when this criterion is met",
+   "conditions": "whichever of 5 % or 1 million users is smaller",
+   "evidence": {
+    "provision": "Art. 10(d)",
+    "quote": "or on more than 1 million of the service users in the Union"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "share of Union users with complete unavailability of an online marketplace",
+   "operator": ">",
+   "value": 5,
+   "value_text": "completely unavailable for more than 5 % of an online marketplace's users in the Union",
+   "unit": "%",
+   "measurement": "share of the marketplace's users in the Union affected",
+   "level": "service",
+   "trigger": "obligation",
+   "consequence": "incident is significant under Art. 3(1)(g) when this criterion is met",
+   "conditions": "whichever of 5 % or 1 million users is smaller; no duration element",
+   "evidence": {
+    "provision": "Art. 11(a)",
+    "quote": "an online marketplace is completely unavailable for more than 5 %"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "number of Union users with complete unavailability of an online marketplace",
+   "operator": ">",
+   "value": 1000000,
+   "value_text": "or for more than 1 million of an online marketplace",
+   "unit": "users",
+   "measurement": "number of the marketplace's users in the Union affected",
+   "level": "service",
+   "trigger": "obligation",
+   "consequence": "incident is significant under Art. 3(1)(g) when this criterion is met",
+   "conditions": "whichever of 5 % or 1 million users is smaller",
+   "evidence": {
+    "provision": "Art. 11(a)",
+    "quote": "or for more than 1 million of an online marketplace"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "share of Union users impacted by limited availability of an online marketplace",
+   "operator": ">",
+   "value": 5,
+   "value_text": "more than 5 % of an online marketplace's users in the Union",
+   "unit": "%",
+   "measurement": "share of the marketplace's users in the Union affected",
+   "level": "service",
+   "trigger": "obligation",
+   "consequence": "incident is significant under Art. 3(1)(g) when this criterion is met",
+   "conditions": "whichever of 5 % or 1 million users is smaller",
+   "evidence": {
+    "provision": "Art. 11(b)",
+    "quote": "more than 5 % of an online marketplace"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "number of Union users impacted by limited availability of an online marketplace",
+   "operator": ">",
+   "value": 1000000,
+   "value_text": "or more than 1 million of an online marketplace",
+   "unit": "users",
+   "measurement": "number of the marketplace's users in the Union affected",
+   "level": "service",
+   "trigger": "obligation",
+   "consequence": "incident is significant under Art. 3(1)(g) when this criterion is met",
+   "conditions": "whichever of 5 % or 1 million users is smaller",
+   "evidence": {
+    "provision": "Art. 11(b)",
+    "quote": "or more than 1 million of an online marketplace"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "share of Union users affected by compromised data of an online marketplace",
+   "operator": ">",
+   "value": 5,
+   "value_text": "compromised with an impact on more than 5 % of that online marketplace",
+   "unit": "%",
+   "measurement": "share of the marketplace's users in the Union affected",
+   "level": "service",
+   "trigger": "obligation",
+   "consequence": "incident is significant under Art. 3(1)(g) when this criterion is met",
+   "conditions": "whichever of 5 % or 1 million users is smaller",
+   "evidence": {
+    "provision": "Art. 11(d)",
+    "quote": "compromised with an impact on more than 5 % of that online marketplace"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "number of Union users affected by compromised data of an online marketplace",
+   "operator": ">",
+   "value": 1000000,
+   "value_text": "or on more than 1 million of that online marketplace",
+   "unit": "users",
+   "measurement": "number of the marketplace's users in the Union affected",
+   "level": "service",
+   "trigger": "obligation",
+   "consequence": "incident is significant under Art. 3(1)(g) when this criterion is met",
+   "conditions": "whichever of 5 % or 1 million users is smaller",
+   "evidence": {
+    "provision": "Art. 11(d)",
+    "quote": "or on more than 1 million of that online marketplace"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "share of Union users with complete unavailability of an online search engine",
+   "operator": ">",
+   "value": 5,
+   "value_text": "completely unavailable for more than 5 % of that online search engine's users in the Union",
+   "unit": "%",
+   "measurement": "share of the search engine's users in the Union affected",
+   "level": "service",
+   "trigger": "obligation",
+   "consequence": "incident is significant under Art. 3(1)(g) when this criterion is met",
+   "conditions": "whichever of 5 % or 1 million users is smaller; no duration element",
+   "evidence": {
+    "provision": "Art. 12(a)",
+    "quote": "an online search engine is completely unavailable for more than 5 %"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "number of Union users with complete unavailability of an online search engine",
+   "operator": ">",
+   "value": 1000000,
+   "value_text": "for more than 1 million of that online search engine",
+   "unit": "users",
+   "measurement": "number of the search engine's users in the Union affected",
+   "level": "service",
+   "trigger": "obligation",
+   "consequence": "incident is significant under Art. 3(1)(g) when this criterion is met",
+   "conditions": "whichever of 5 % or 1 million users is smaller",
+   "evidence": {
+    "provision": "Art. 12(a)",
+    "quote": "for more than 1 million of that online search engine"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "share of Union users impacted by limited availability of an online search engine",
+   "operator": ">",
+   "value": 5,
+   "value_text": "more than 5 % of an online search engine's users in the Union",
+   "unit": "%",
+   "measurement": "share of the search engine's users in the Union affected",
+   "level": "service",
+   "trigger": "obligation",
+   "consequence": "incident is significant under Art. 3(1)(g) when this criterion is met",
+   "conditions": "whichever of 5 % or 1 million users is smaller",
+   "evidence": {
+    "provision": "Art. 12(b)",
+    "quote": "more than 5 % of an online search engine"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "number of Union users impacted by limited availability of an online search engine",
+   "operator": ">",
+   "value": 1000000,
+   "value_text": "or more than 1 million of an online search engine",
+   "unit": "users",
+   "measurement": "number of the search engine's users in the Union affected",
+   "level": "service",
+   "trigger": "obligation",
+   "consequence": "incident is significant under Art. 3(1)(g) when this criterion is met",
+   "conditions": "whichever of 5 % or 1 million users is smaller",
+   "evidence": {
+    "provision": "Art. 12(b)",
+    "quote": "or more than 1 million of an online search engine"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "share of Union users affected by compromised data of an online search engine",
+   "operator": ">",
+   "value": 5,
+   "value_text": "compromised with an impact on more than 5 % of that online search engine",
+   "unit": "%",
+   "measurement": "share of the search engine's users in the Union affected",
+   "level": "service",
+   "trigger": "obligation",
+   "consequence": "incident is significant under Art. 3(1)(g) when this criterion is met",
+   "conditions": "whichever of 5 % or 1 million users is smaller",
+   "evidence": {
+    "provision": "Art. 12(d)",
+    "quote": "compromised with an impact on more than 5 % of that online search engine"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "number of Union users affected by compromised data of an online search engine",
+   "operator": ">",
+   "value": 1000000,
+   "value_text": "or on more than 1 million of that online search engine",
+   "unit": "users",
+   "measurement": "number of the search engine's users in the Union affected",
+   "level": "service",
+   "trigger": "obligation",
+   "consequence": "incident is significant under Art. 3(1)(g) when this criterion is met",
+   "conditions": "whichever of 5 % or 1 million users is smaller",
+   "evidence": {
+    "provision": "Art. 12(d)",
+    "quote": "or on more than 1 million of that online search engine"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "share of Union users with complete unavailability of a social networking service platform",
+   "operator": ">",
+   "value": 5,
+   "value_text": "completely unavailable for more than 5 % of that social networking service platform's users in the Union",
+   "unit": "%",
+   "measurement": "share of the platform's users in the Union affected",
+   "level": "service",
+   "trigger": "obligation",
+   "consequence": "incident is significant under Art. 3(1)(g) when this criterion is met",
+   "conditions": "whichever of 5 % or 1 million users is smaller; no duration element",
+   "evidence": {
+    "provision": "Art. 13(a)",
+    "quote": "a social networking service platform is completely unavailable for more than 5 %"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "number of Union users with complete unavailability of a social networking service platform",
+   "operator": ">",
+   "value": 1000000,
+   "value_text": "or for more than 1 million of that social networking service platform",
+   "unit": "users",
+   "measurement": "number of the platform's users in the Union affected",
+   "level": "service",
+   "trigger": "obligation",
+   "consequence": "incident is significant under Art. 3(1)(g) when this criterion is met",
+   "conditions": "whichever of 5 % or 1 million users is smaller",
+   "evidence": {
+    "provision": "Art. 13(a)",
+    "quote": "or for more than 1 million of that social networking service platform"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "share of Union users impacted by limited availability of a social networking service platform",
+   "operator": ">",
+   "value": 5,
+   "value_text": "more than 5 % of a social networking service platform's users in the Union",
+   "unit": "%",
+   "measurement": "share of the platform's users in the Union affected",
+   "level": "service",
+   "trigger": "obligation",
+   "consequence": "incident is significant under Art. 3(1)(g) when this criterion is met",
+   "conditions": "whichever of 5 % or 1 million users is smaller",
+   "evidence": {
+    "provision": "Art. 13(b)",
+    "quote": "more than 5 % of a social networking service platform"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "number of Union users impacted by limited availability of a social networking service platform",
+   "operator": ">",
+   "value": 1000000,
+   "value_text": "or more than 1 million of a social networking service platform",
+   "unit": "users",
+   "measurement": "number of the platform's users in the Union affected",
+   "level": "service",
+   "trigger": "obligation",
+   "consequence": "incident is significant under Art. 3(1)(g) when this criterion is met",
+   "conditions": "whichever of 5 % or 1 million users is smaller",
+   "evidence": {
+    "provision": "Art. 13(b)",
+    "quote": "or more than 1 million of a social networking service platform"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "share of Union users affected by compromised data of a social networking service platform",
+   "operator": ">",
+   "value": 5,
+   "value_text": "compromised with an impact on more than 5 % of that social networking service platform",
+   "unit": "%",
+   "measurement": "share of the platform's users in the Union affected",
+   "level": "service",
+   "trigger": "obligation",
+   "consequence": "incident is significant under Art. 3(1)(g) when this criterion is met",
+   "conditions": "whichever of 5 % or 1 million users is smaller",
+   "evidence": {
+    "provision": "Art. 13(d)",
+    "quote": "is compromised with an impact on more than 5 % of that social networking service platform"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "number of Union users affected by compromised data of a social networking service platform",
+   "operator": ">",
+   "value": 1000000,
+   "value_text": "or on more than 1 million of that social networking service platform",
+   "unit": "users",
+   "measurement": "number of the platform's users in the Union affected",
+   "level": "service",
+   "trigger": "obligation",
+   "consequence": "incident is significant under Art. 3(1)(g) when this criterion is met",
+   "conditions": "whichever of 5 % or 1 million users is smaller",
+   "evidence": {
+    "provision": "Art. 13(d)",
+    "quote": "or on more than 1 million of that social networking service platform"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "duration of complete unavailability of a trust service",
+   "operator": ">",
+   "value": 20,
+   "value_text": "completely unavailable for more than 20 minutes",
+   "unit": "minutes",
+   "measurement": "duration of complete unavailability of the trust service",
+   "level": "service",
+   "trigger": "obligation",
+   "consequence": "incident is significant under Art. 3(1)(g) when this criterion is met",
+   "conditions": "one of the criteria in Art. 14(a) to (e) suffices",
+   "evidence": {
+    "provision": "Art. 14(a)",
+    "quote": "a trust service is completely unavailable for more than 20 minutes"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "duration of unavailability of a trust service to users or relying parties, calculated per calendar week",
+   "operator": ">",
+   "value": 1,
+   "value_text": "for more than one hour calculated on a calendar week basis",
+   "unit": "hours",
+   "measurement": "unavailability to users or relying parties, calculated on a calendar week basis",
+   "level": "service",
+   "trigger": "obligation",
+   "consequence": "incident is significant under Art. 3(1)(g) when this criterion is met",
+   "conditions": "one of the criteria in Art. 14(a) to (e) suffices",
+   "evidence": {
+    "provision": "Art. 14(b)",
+    "quote": "for more than one hour calculated on a calendar week basis"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "share of Union users or relying parties impacted by limited availability of a trust service",
+   "operator": ">",
+   "value": 1,
+   "value_text": "more than 1 % of the users or relying parties in the Union",
+   "unit": "%",
+   "measurement": "share of users or relying parties in the Union affected",
+   "level": "service",
+   "trigger": "obligation",
+   "consequence": "incident is significant under Art. 3(1)(g) when this criterion is met",
+   "conditions": "whichever of 1 % or 200 000 users or relying parties is smaller",
+   "evidence": {
+    "provision": "Art. 14(c)",
+    "quote": "more than 1 % of the users or relying parties in the Union"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "number of Union users or relying parties impacted by limited availability of a trust service",
+   "operator": ">",
+   "value": 200000,
+   "value_text": "more than 200 000 users or relying parties in the Union",
+   "unit": "users",
+   "measurement": "number of users or relying parties in the Union affected",
+   "level": "service",
+   "trigger": "obligation",
+   "consequence": "incident is significant under Art. 3(1)(g) when this criterion is met",
+   "conditions": "whichever of 1 % or 200 000 users or relying parties is smaller",
+   "evidence": {
+    "provision": "Art. 14(c)",
+    "quote": "more than 200 000 users or relying parties in the Union"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "share of Union users or relying parties affected by compromised data of a trust service",
+   "operator": ">",
+   "value": 0.1,
+   "value_text": "with an impact on more than 0,1 % of users or relying parties",
+   "unit": "%",
+   "measurement": "share of users or relying parties of the trust service in the Union affected",
+   "level": "service",
+   "trigger": "obligation",
+   "consequence": "incident is significant under Art. 3(1)(g) when this criterion is met",
+   "conditions": "whichever of 0,1 % or 100 users or relying parties is smaller",
+   "evidence": {
+    "provision": "Art. 14(e)",
+    "quote": "with an impact on more than 0,1 % of users or relying parties"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "number of users or relying parties affected by compromised data of a trust service",
+   "operator": ">",
+   "value": 100,
+   "value_text": "or more than 100 of users or relying parties",
+   "unit": "users",
+   "measurement": "number of users or relying parties of the trust service in the Union affected",
+   "level": "service",
+   "trigger": "obligation",
+   "consequence": "incident is significant under Art. 3(1)(g) when this criterion is met",
+   "conditions": "whichever of 0,1 % or 100 users or relying parties is smaller",
+   "evidence": {
+    "provision": "Art. 14(e)",
+    "quote": "more than 100 of users or relying parties"
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "relevant entities",
+   "defined_in": "this Regulation (Art. 1)",
+   "evidence": {
+    "provision": "Art. 1",
+    "quote": "trust service providers (the relevant entities)"
+   }
+  },
+  {
+   "term": "trade secrets",
+   "defined_in": "Directive (EU) 2016/943, Art. 2 point (1), by reference",
+   "evidence": {
+    "provision": "Art. 3(1)(b)",
+    "quote": "trade secrets as set out in Article 2 point (1), of Directive (EU) 2016/943"
+   }
+  },
+  {
+   "term": "management bodies",
+   "defined_in": "this Regulation (Annex, point 1.1.1(k))",
+   "evidence": {
+    "provision": "Annex, point 1.1.1(k)",
+    "quote": "(the ‘management bodies’)"
+   }
+  },
+  {
+   "term": "user",
+   "defined_in": "this Regulation (recital 10)",
+   "evidence": {
+    "provision": "Recital (10)",
+    "quote": "the term ‘user’ should encompass all legal and natural persons which have access to the entity"
+   }
+  },
+  {
+   "term": "relying parties",
+   "defined_in": "this Regulation (recital 32)",
+   "evidence": {
+    "provision": "Recital (32)",
+    "quote": "relying parties should be understood as natural or legal persons that rely upon a trust service"
+   }
+  },
+  {
+   "term": "direct financial loss",
+   "defined_in": "this Regulation (recital 36)",
+   "evidence": {
+    "provision": "Recital (36)",
+    "quote": "administrative fines, as well as costs that are necessary for the day-to-day operation of the business, should not be considered as financial losses resulting from an incident"
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "security_measures",
+   "addressee": "essential_entity",
+   "modality": "shall",
+   "summary": "Relevant entities (DNS service providers, TLD registries, cloud, data centre, CDN, managed and managed security service providers, online marketplaces, search engines, social networking platforms, trust service providers) must ensure a level of network and information system security appropriate to the risks, taking into account their exposure, size, incident likelihood and severity.",
+   "applies_from": "from entry into force, the twentieth day following publication in the Official Journal (Art. 16)",
+   "evidence": {
+    "provision": "Art. 2(2)",
+    "quote": "The relevant entities shall ensure a level of security of network and information systems appropriate to the risks posed"
+   }
+  },
+  {
+   "type": "record_keeping",
+   "addressee": "essential_entity",
+   "modality": "shall",
+   "summary": "Where a relevant entity considers a technical or methodological requirement with 'where appropriate', 'where applicable' or 'to the extent feasible' not appropriate, not applicable or not feasible, it must document its reasoning in a comprehensible manner.",
+   "applies_from": "from entry into force, the twentieth day following publication in the Official Journal (Art. 16)",
+   "conditional_on": "where the entity considers a requirement not appropriate, not applicable or not feasible",
+   "evidence": {
+    "provision": "Art. 2(2), second subparagraph",
+    "quote": "the relevant entity shall in a comprehensible manner document its reasoning to that effect"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "essential_entity",
+   "modality": "shall",
+   "summary": "Relevant entities must consider the listed categories when counting users impacted by an incident (customers with access contracts, and natural and legal persons associated with business customers), for the purposes of Articles 7 and 9 to 14.",
+   "applies_from": "from entry into force, the twentieth day following publication in the Official Journal (Art. 16)",
+   "conditional_on": "when counting users impacted by an incident",
+   "evidence": {
+    "provision": "Art. 3(3)",
+    "quote": "the relevant entities shall consider all of the following"
+   }
+  },
+  {
+   "type": "management_system",
+   "addressee": "essential_entity",
+   "modality": "shall",
+   "summary": "Annex point 1: the policy on the security of network and information systems must set out the approach, objectives, commitments, roles, documentation, indicators and approval date listed in point 1.1.1, be reviewed at least annually, and responsibilities must be assigned to roles and reported to management bodies (points 1.1-1.2).",
+   "applies_from": "from entry into force, the twentieth day following publication in the Official Journal (Art. 16)",
+   "evidence": {
+    "provision": "Annex, point 1.1.1",
+    "quote": "the policy on the security of network and information systems shall:"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "essential_entity",
+   "modality": "shall",
+   "summary": "Relevant entities must require all personnel and third parties to apply network and information system security in accordance with the established security policy and procedures (point 1.2.2).",
+   "applies_from": "from entry into force, the twentieth day following publication in the Official Journal (Art. 16)",
+   "evidence": {
+    "provision": "Annex, point 1.2.2",
+    "quote": "The relevant entities shall require all personnel and third parties to apply network and information system security"
+   }
+  },
+  {
+   "type": "risk_assessment",
+   "addressee": "essential_entity",
+   "modality": "shall",
+   "summary": "Annex point 2: relevant entities must establish and maintain a risk management framework, perform and document risk assessments, establish a risk treatment plan, follow a risk management process listed in point 2.1.2 and review it at least annually.",
+   "applies_from": "from entry into force, the twentieth day following publication in the Official Journal (Art. 16)",
+   "evidence": {
+    "provision": "Annex, point 2.1.1",
+    "quote": "The relevant entities shall perform and document risk assessments"
+   }
+  },
+  {
+   "type": "management_system",
+   "addressee": "essential_entity",
+   "modality": "shall",
+   "summary": "Relevant entities must regularly review compliance with their security policies and operate an effective compliance reporting system to the management bodies (points 2.2.1-2.2.3).",
+   "applies_from": "from entry into force, the twentieth day following publication in the Official Journal (Art. 16)",
+   "evidence": {
+    "provision": "Annex, point 2.2.1",
+    "quote": "The relevant entities shall regularly review the compliance with their policies on network and information system security"
+   }
+  },
+  {
+   "type": "audit",
+   "addressee": "essential_entity",
+   "modality": "shall",
+   "summary": "Relevant entities must independently review their approach to network and information system security at planned intervals, through individuals with appropriate audit competence, with results reported to management bodies (points 2.3.1-2.3.4).",
+   "applies_from": "from entry into force, the twentieth day following publication in the Official Journal (Art. 16)",
+   "evidence": {
+    "provision": "Annex, point 2.3.1",
+    "quote": "The relevant entities shall review independently their approach to managing network and information system security"
+   }
+  },
+  {
+   "type": "management_system",
+   "addressee": "essential_entity",
+   "modality": "shall",
+   "summary": "Relevant entities must establish and implement an incident handling policy covering detection, analysis, containment, response, recovery, documentation and reporting of incidents, coherent with the business continuity plan (points 3.1.1-3.1.3).",
+   "applies_from": "from entry into force, the twentieth day following publication in the Official Journal (Art. 16)",
+   "evidence": {
+    "provision": "Annex, point 3.1.1",
+    "quote": "the relevant entities shall establish and implement an incident handling policy"
+   }
+  },
+  {
+   "type": "record_keeping",
+   "addressee": "essential_entity",
+   "modality": "shall",
+   "summary": "Relevant entities must monitor and log activity on their network and information systems, maintain, document and review logs, keep logs for a predefined period, and protect them from unauthorised access (points 3.2.1-3.2.7).",
+   "applies_from": "from entry into force, the twentieth day following publication in the Official Journal (Art. 16)",
+   "evidence": {
+    "provision": "Annex, point 3.2.3",
+    "quote": "the relevant entities shall maintain, document, and review logs"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "essential_entity",
+   "modality": "shall",
+   "summary": "Relevant entities must put in place a simple mechanism for employees, suppliers and customers to report suspicious events, and train employees on its use (points 3.3.1-3.3.2).",
+   "applies_from": "from entry into force, the twentieth day following publication in the Official Journal (Art. 16)",
+   "evidence": {
+    "provision": "Annex, point 3.3.1",
+    "quote": "The relevant entities shall put in place a simple mechanism allowing their employees, suppliers, and customers to report suspicious events."
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "essential_entity",
+   "modality": "shall",
+   "summary": "Relevant entities must assess suspicious events to determine whether they are incidents and their nature and severity, using predefined criteria and triage, and reassess events when new information becomes available (points 3.4.1-3.4.2).",
+   "applies_from": "from entry into force, the twentieth day following publication in the Official Journal (Art. 16)",
+   "evidence": {
+    "provision": "Annex, point 3.4.1",
+    "quote": "The relevant entities shall assess suspicious events to determine whether they constitute incidents"
+   }
+  },
+  {
+   "type": "cooperation_with_authority",
+   "addressee": "essential_entity",
+   "modality": "shall",
+   "summary": "Relevant entities must establish communication plans and procedures with CSIRTs or, where applicable, competent authorities related to incident notification, and for internal and external communication (points 3.5.3-3.5.4).",
+   "applies_from": "from entry into force, the twentieth day following publication in the Official Journal (Art. 16)",
+   "evidence": {
+    "provision": "Annex, point 3.5.3",
+    "quote": "The relevant entities shall establish communication plans and procedures"
+   }
+  },
+  {
+   "type": "testing_evaluation",
+   "addressee": "essential_entity",
+   "modality": "shall",
+   "summary": "Relevant entities must test their incident response procedures at planned intervals (point 3.5.5); post-incident reviews are to be carried out where appropriate (point 3.6).",
+   "applies_from": "from entry into force, the twentieth day following publication in the Official Journal (Art. 16)",
+   "evidence": {
+    "provision": "Annex, point 3.5.5",
+    "quote": "The relevant entities shall test at planned intervals their incident response procedures."
+   }
+  },
+  {
+   "type": "management_system",
+   "addressee": "essential_entity",
+   "modality": "shall",
+   "summary": "Annex point 4: relevant entities must lay down and maintain a business continuity and disaster recovery plan, and a crisis management process (points 4.1.1, 4.3.1-4.3.2).",
+   "applies_from": "from entry into force, the twentieth day following publication in the Official Journal (Art. 16)",
+   "evidence": {
+    "provision": "Annex, point 4.1.1",
+    "quote": "the relevant entities shall lay down and maintain a business continuity and disaster recovery plan"
+   }
+  },
+  {
+   "type": "risk_assessment",
+   "addressee": "essential_entity",
+   "modality": "shall",
+   "summary": "Relevant entities must carry out a business impact analysis of severe disruptions and establish continuity requirements for network and information systems on that basis (point 4.1.3).",
+   "applies_from": "from entry into force, the twentieth day following publication in the Official Journal (Art. 16)",
+   "evidence": {
+    "provision": "Annex, point 4.1.3",
+    "quote": "The relevant entities shall carry out a business impact analysis"
+   }
+  },
+  {
+   "type": "testing_evaluation",
+   "addressee": "essential_entity",
+   "modality": "shall",
+   "summary": "Business continuity and disaster recovery plans must be tested, reviewed and updated at planned intervals and after significant incidents (point 4.1.4); backup recovery must be regularly tested and results documented (point 4.2.6).",
+   "applies_from": "from entry into force, the twentieth day following publication in the Official Journal (Art. 16)",
+   "evidence": {
+    "provision": "Annex, point 4.1.4",
+    "quote": "The business continuity plan and disaster recovery plan shall be tested, reviewed and, where appropriate, updated at planned intervals"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "essential_entity",
+   "modality": "shall",
+   "summary": "Relevant entities must maintain backup copies of data and sufficient redundant resources, with backup plans, storage, access controls and integrity checks (points 4.2.1-4.2.5).",
+   "applies_from": "from entry into force, the twentieth day following publication in the Official Journal (Art. 16)",
+   "evidence": {
+    "provision": "Annex, point 4.2.1",
+    "quote": "The relevant entities shall maintain backup copies of data"
+   }
+  },
+  {
+   "type": "cooperation_with_authority",
+   "addressee": "essential_entity",
+   "modality": "shall",
+   "summary": "Relevant entities must implement a process for managing information received from CSIRTs or competent authorities on incidents, vulnerabilities, threats or mitigation measures (point 4.3.3).",
+   "applies_from": "from entry into force, the twentieth day following publication in the Official Journal (Art. 16)",
+   "evidence": {
+    "provision": "Annex, point 4.3.3",
+    "quote": "The relevant entities shall implement a process for managing and making use of information received from the CSIRTs"
+   }
+  },
+  {
+   "type": "management_system",
+   "addressee": "essential_entity",
+   "modality": "shall",
+   "summary": "Annex point 5: relevant entities must establish, implement and apply a supply chain security policy and criteria to select and contract suppliers and service providers, and review the policy at planned intervals (points 5.1.1-5.1.2, 5.1.6-5.1.7).",
+   "applies_from": "from entry into force, the twentieth day following publication in the Official Journal (Art. 16)",
+   "evidence": {
+    "provision": "Annex, point 5.1.1",
+    "quote": "the relevant entities shall establish, implement and apply a supply chain security policy"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "essential_entity",
+   "modality": "shall",
+   "summary": "Relevant entities must ensure that contracts with suppliers and service providers specify cybersecurity requirements, training, background verification, incident notification, audit rights, vulnerability handling, subcontracting and termination obligations, where appropriate (point 5.1.4).",
+   "applies_from": "from entry into force, the twentieth day following publication in the Official Journal (Art. 16)",
+   "conditional_on": "where appropriate, including through service level agreements",
+   "evidence": {
+    "provision": "Annex, point 5.1.4",
+    "quote": "the relevant entities shall ensure that their contracts with the suppliers and service providers specify"
+   }
+  },
+  {
+   "type": "record_keeping",
+   "addressee": "essential_entity",
+   "modality": "shall",
+   "summary": "Relevant entities must maintain and keep up to date a registry of their direct suppliers and service providers, with contact points and a list of ICT products, services and processes provided (point 5.2).",
+   "applies_from": "from entry into force, the twentieth day following publication in the Official Journal (Art. 16)",
+   "evidence": {
+    "provision": "Annex, point 5.2",
+    "quote": "shall maintain and keep up to date a registry of their direct suppliers and service providers"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "essential_entity",
+   "modality": "shall",
+   "summary": "Annex point 6: relevant entities must manage risks from acquisition of ICT products and services, set secure development rules, configuration, change management, patch management, network security, segmentation, malicious software and vulnerability handling measures (points 6.1-6.4, 6.6-6.10).",
+   "applies_from": "from entry into force, the twentieth day following publication in the Official Journal (Art. 16)",
+   "evidence": {
+    "provision": "Annex, point 6.1.1",
+    "quote": "the relevant entities shall set and implement processes to manage risks stemming from the acquisition of ICT services or ICT products"
+   }
+  },
+  {
+   "type": "testing_evaluation",
+   "addressee": "essential_entity",
+   "modality": "shall",
+   "summary": "Relevant entities must establish, implement and apply a policy and procedures for security testing, including test need, scope, frequency, documentation and mitigation of critical findings (points 6.5.1-6.5.3).",
+   "applies_from": "from entry into force, the twentieth day following publication in the Official Journal (Art. 16)",
+   "evidence": {
+    "provision": "Annex, point 6.5.1",
+    "quote": "The relevant entities shall establish, implement and apply a policy and procedures for security testing."
+   }
+  },
+  {
+   "type": "testing_evaluation",
+   "addressee": "essential_entity",
+   "modality": "shall",
+   "summary": "Relevant entities must establish, implement and apply a policy and procedures to assess whether cybersecurity risk-management measures are effectively implemented and maintained (points 7.1-7.3).",
+   "applies_from": "from entry into force, the twentieth day following publication in the Official Journal (Art. 16)",
+   "evidence": {
+    "provision": "Annex, point 7.1",
+    "quote": "the relevant entities shall establish, implement and apply a policy and procedures to assess whether the cybersecurity risk-management measures"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "essential_entity",
+   "modality": "shall",
+   "summary": "Annex point 8: relevant entities must ensure employees, management body members and direct suppliers are aware of risks and apply cyber hygiene, through a scheduled awareness programme, and must provide regular security training to staff with security-relevant roles (points 8.1-8.2).",
+   "applies_from": "from entry into force, the twentieth day following publication in the Official Journal (Art. 16)",
+   "evidence": {
+    "provision": "Annex, point 8.1.1",
+    "quote": "the relevant entities shall ensure that their employees, including members of management bodies, as well as direct suppliers and service providers are aware of risks"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "essential_entity",
+   "modality": "shall",
+   "summary": "Relevant entities must establish, implement and apply a policy and procedures on cryptography, covering cryptographic measures, algorithms and key management (points 9.1-9.3).",
+   "applies_from": "from entry into force, the twentieth day following publication in the Official Journal (Art. 16)",
+   "evidence": {
+    "provision": "Annex, point 9.1",
+    "quote": "the relevant entities shall establish, implement and apply a policy and procedures related to cryptography"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "essential_entity",
+   "modality": "shall",
+   "summary": "Annex point 10: relevant entities must ensure employees and direct suppliers understand and commit to security responsibilities and that mechanisms exist for qualified hiring, and must apply the background-verification and disciplinary and termination requirements in points 10.2-10.4.",
+   "applies_from": "from entry into force, the twentieth day following publication in the Official Journal (Art. 16)",
+   "evidence": {
+    "provision": "Annex, point 10.1.1",
+    "quote": "the relevant entities shall ensure that their employees and direct suppliers and service providers, wherever applicable, understand and commit to their security responsibilities"
+   }
+  },
+  {
+   "type": "verification_gatekeeping",
+   "addressee": "essential_entity",
+   "modality": "shall",
+   "summary": "Relevant entities must ensure, to the extent feasible, background verification of employees (and where applicable direct suppliers) where necessary for their role, and verification before such persons exercise the relevant roles (points 10.2.1-10.2.2).",
+   "applies_from": "from entry into force, the twentieth day following publication in the Official Journal (Art. 16)",
+   "conditional_on": "to the extent feasible and if necessary for the role",
+   "evidence": {
+    "provision": "Annex, point 10.2.1",
+    "quote": "the relevant entities shall ensure to the extent feasible verification of the background of their employees"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "essential_entity",
+   "modality": "shall",
+   "summary": "Relevant entities must contractually define post-employment security duties (point 10.3) and establish, communicate and maintain a disciplinary process for violations of security policies (point 10.4).",
+   "applies_from": "from entry into force, the twentieth day following publication in the Official Journal (Art. 16)",
+   "evidence": {
+    "provision": "Annex, point 10.4.1",
+    "quote": "The relevant entities shall establish, communicate and maintain a disciplinary process for handling violations"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "essential_entity",
+   "modality": "shall",
+   "summary": "Annex point 11: relevant entities must establish and implement logical and physical access control policies, manage access rights, privileged and administration accounts, identities, authentication and multi-factor authentication (points 11.1-11.7).",
+   "applies_from": "from entry into force, the twentieth day following publication in the Official Journal (Art. 16)",
+   "evidence": {
+    "provision": "Annex, point 11.1.1",
+    "quote": "the relevant entities shall establish, document and implement logical and physical access control policies"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "essential_entity",
+   "modality": "shall",
+   "summary": "Relevant entities must lay down classification levels for all assets and a policy for handling assets, removable media and asset disposal (points 12.1-12.3, 12.5).",
+   "applies_from": "from entry into force, the twentieth day following publication in the Official Journal (Art. 16)",
+   "evidence": {
+    "provision": "Annex, point 12.1.1",
+    "quote": "the relevant entities shall lay down classification levels of all assets"
+   }
+  },
+  {
+   "type": "record_keeping",
+   "addressee": "essential_entity",
+   "modality": "shall",
+   "summary": "Relevant entities must develop and maintain a complete, accurate, up-to-date and consistent inventory of their assets, with changes recorded in a traceable manner (points 12.4.1-12.4.3).",
+   "applies_from": "from entry into force, the twentieth day following publication in the Official Journal (Art. 16)",
+   "evidence": {
+    "provision": "Annex, point 12.4.1",
+    "quote": "The relevant entities shall develop and maintain a complete, accurate, up-to-date and consistent inventory of their assets."
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "essential_entity",
+   "modality": "shall",
+   "summary": "Annex point 13: relevant entities must prevent loss, damage or compromise of network and information systems from supporting utility failures and physical and environmental threats, and prevent and monitor unauthorised physical access (points 13.1-13.3).",
+   "applies_from": "from entry into force, the twentieth day following publication in the Official Journal (Art. 16)",
+   "evidence": {
+    "provision": "Annex, point 13.1.1",
+    "quote": "the relevant entities shall prevent loss, damage or compromise of network and information systems"
+   }
+  }
+ ],
+ "section_status": {
+  "enforcement": {
+   "status": "not_applicable",
+   "note": "The Regulation sets technical and methodological requirements for cybersecurity risk-management measures (Art. 2, Annex) and criteria for significant incidents (Arts. 3-14), and contains no sanction, penalty or enforcement provisions. It is made under powers in Directive (EU) 2022/2555 (Art. 21(5), Art. 23(11)). Recital 36 mentions 'administrative fines' only to exclude them from the calculation of financial losses, which is not a sanction regime."
+  }
+ },
+ "enforcement": []
+}

@@ -1,0 +1,440 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "us-ia-sf262-2023",
+ "tier": "B",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "light, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-interim-20261014"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (connectors/fetch_texts.py)",
+  "url": "https://www.legis.iowa.gov/docs/publications/LGE/90/SF262.pdf",
+  "retrieved": "2026-10-13",
+  "version": "as fetched",
+  "language": "en",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "data_protection",
+   "consumer_protection"
+  ],
+  "primary_domain": "data_protection",
+  "mechanisms": [
+   "mandate_obligation",
+   "prohibition_ban",
+   "disclosure_transparency"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "data_controller",
+   "data_processor",
+   "government_agency"
+  ],
+  "affected_roles": [
+   "consumers_users",
+   "minors"
+  ],
+  "decision_margins": [
+   "firm:compliance_process",
+   "firm:pricing",
+   "household:data_privacy",
+   "household:information"
+  ],
+  "territorial_scope": {
+   "types": [
+    "subnational",
+    "extraterritorial"
+   ],
+   "description": "State statute applying to persons doing business in Iowa and to persons producing products or services targeted to Iowa residents, which reaches actors outside Iowa.",
+   "evidence": {
+    "provision": "Sec. 2, 715D.2(1)",
+    "quote": "producing products or services that are targeted to consumers who are residents of the state"
+   }
+  }
+ },
+ "summary": {
+  "short": "Iowa statute (Senate File 262; Iowa Code ch. 715D) giving Iowa residents consumer rights over personal data and imposing duties on controllers and processors, enforced by the Attorney General; effective 1 January 2025.",
+  "long": "Iowa Senate File 262 (Iowa Code ch. 715D) regulates personal data of Iowa residents acting in an individual or household context. It covers persons doing business in Iowa or targeting Iowa residents that control or process personal data of at least 100,000 consumers in a calendar year, or 25,000 consumers while deriving over 50% of gross revenue from sale of personal data. Excluded are the state, financial institutions, nonprofits, higher education institutions, and certain health, credit and other data. Consumers may access, delete, port and opt out of sale of their data; controllers must respond within 90 days, extendable by 45 days, and offer an appeal. Controllers must maintain data security practices, give notice and an opt-out before processing sensitive data for nonexempt purposes, avoid discrimination for exercising rights, publish a privacy notice and disclose sales and targeted advertising. Processors must assist controllers under specified contract terms. The Attorney General has exclusive enforcement power, must give 90 days' notice and an opportunity to cure, and may seek injunctions and civil penalties up to $7,500 per violation. No private right of action exists. Local laws on personal data processing are preempted. Effective 1 January 2025."
+ },
+ "relations": [
+  {
+   "relation": "cross_references",
+   "target_text": "Health Insurance Portability and Accountability Act of 1996 (HIPAA), Pub. L. No. 104-191",
+   "note": "Defines HIPAA, covered entity and protected health information by reference. HIPAA regulations are also referenced in the scope exemption (Sec. 2(2)) and in several data exemptions (Sec. 2(3)(a), (j), (k), (l)).",
+   "evidence": {
+    "provision": "Sec. 1, 715D.1(13)",
+    "quote": "Accountability Act of 1996, Pub. L. No. 104-191, including amendments thereto and regulations promulgated thereunder."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Gramm-Leach-Bliley Act of 1999, Tit. V (15 U.S.C. §6801 et seq.)",
+   "note": "Exempts data subject to Title V of the GLBA; financial institutions and their affiliates are also exempt (Sec. 2(2)).",
+   "evidence": {
+    "provision": "Sec. 2, 715D.2(2)",
+    "quote": "of the federal Gramm-Leach-Bliley Act of 1999, l5 U.S.C. §6801"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Fair Credit Reporting Act, 15 U.S.C. §1681 et seq.",
+   "note": "Exempts consumer-report activity to the extent regulated by and authorized under the FCRA (Sec. 2(3)(m)).",
+   "evidence": {
+    "provision": "Sec. 2, 715D.2(3)(m)",
+    "quote": "federal Fair Credit Reporting Act, 15 U.S.C. §1681 et seq."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Children's Online Privacy Protection Act, 15 U.S.C. §6501 et seq.",
+   "note": "Referenced for personal data of a known child (Sec. 4(2)); personal data used in accordance with COPPA is also exempt (Sec. 2(3)(r)).",
+   "evidence": {
+    "provision": "Sec. 4, 715D.4(2)",
+    "quote": "Privacy Protection Act, 15 U.S.C. §6501 et seq."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Family Educational Rights and Privacy Act, 20 U.S.C. §1232 et seq.",
+   "note": "Exempts personal data regulated by FERPA (Sec. 2(3)(o)).",
+   "evidence": {
+    "provision": "Sec. 2, 715D.2(3)(o)",
+    "quote": "Personal data regulated by the federal Family Educational"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Driver's Privacy Protection Act of 1994, 18 U.S.C. §2721 et seq.",
+   "note": "Exempts personal data collected, processed, sold or disclosed in compliance with the DPPA (Sec. 2(3)(n)).",
+   "evidence": {
+    "provision": "Sec. 2, 715D.2(3)(n)",
+    "quote": "compliance with the federal Driver’s Privacy Protection Act of"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Farm Credit Act, 12 U.S.C. §2001 et seq.",
+   "note": "Exempts personal data collected, processed, sold or disclosed in compliance with the Act (Sec. 2(3)(p)).",
+   "evidence": {
+    "provision": "Sec. 2, 715D.2(3)(p)",
+    "quote": "compliance with the federal Farm Credit Act, 12 U.S.C. §2001"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "42 U.S.C. §290dd-2",
+   "note": "Exempts patient identifying information (Sec. 2(3)(c)) and information of qualified service organizations under this section (Sec. 2(3)(k)).",
+   "evidence": {
+    "provision": "Sec. 2, 715D.2(3)(c)",
+    "quote": "Patient identifying information for purposes of 42 U.S.C."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "45 C.F.R. pt. 46 (federal policy for the protection of human subjects)",
+   "note": "Exempts identifiable private information for purposes of this policy (Sec. 2(3)(d)).",
+   "evidence": {
+    "provision": "Sec. 2, 715D.2(3)(d)",
+    "quote": "federal policy for the protection of human subjects under 45"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "21 C.F.R. pts. 6, 50, and 56",
+   "note": "Exempts the protection of human subjects under these parts (Sec. 2(3)(f)).",
+   "evidence": {
+    "provision": "Sec. 2, 715D.2(3)(f)",
+    "quote": "The protection of human subjects under 21 C.F.R. pts. 6,"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Health Care Quality Improvement Act of 1986, 42 U.S.C. §11101 et seq.",
+   "note": "Exempts information and documents created for purposes of this Act (Sec. 2(3)(h)).",
+   "evidence": {
+    "provision": "Sec. 2, 715D.2(3)(h)",
+    "quote": "federal Health Care Quality Improvement Act of 1986, 42 U.S.C."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Patient Safety and Quality Improvement Act, 42 U.S.C. §299b-21 et seq.",
+   "note": "Exempts patient safety work product for purposes of this Act (Sec. 2(3)(i)).",
+   "evidence": {
+    "provision": "Sec. 2, 715D.2(3)(i)",
+    "quote": "Patient Safety and Quality Improvement Act, 42 U.S.C. §299b-21"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "section 714.16C (consumer education and litigation fund)",
+   "note": "Defines the Fund by reference; moneys collected under the enforcement section, including civil penalties, are paid into it (Sec. 8(3)).",
+   "evidence": {
+    "provision": "Sec. 1, 715D.1(11)",
+    "quote": "established pursuant to section 714.16C."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "sections 715C.1 and 715C.2 (security breach provisions)",
+   "note": "Cross-referenced for the meaning of personal information subject to security breach protection (Sec. 3(1)(c)) and for processor duties on breach notification (Sec. 5(1)(b)).",
+   "evidence": {
+    "provision": "Sec. 3, 715D.3(1)(c)",
+    "quote": "pursuant to section 715C.1 that is subject to security breach"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "section 685.6 (civil investigative demands)",
+   "note": "Applies to civil investigative demands issued by the attorney general under this chapter (Sec. 8(1)).",
+   "evidence": {
+    "provision": "Sec. 8, 715D.8(1)",
+    "quote": "The provisions of section 685.6 shall apply to civil investigative demands"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "chapter 504 (corporations)",
+   "note": "Used in the definition of nonprofit organization (Sec. 1(17)).",
+   "evidence": {
+    "provision": "Sec. 1, 715D.1(17)",
+    "quote": "under chapter 504, any organization exempt from taxation"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "chapter 499",
+   "note": "Used in the definition of nonprofit organization for entities organized pursuant to it (Sec. 1(17)).",
+   "evidence": {
+    "provision": "Sec. 1, 715D.1(17)",
+    "quote": "organized pursuant to chapter 499."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "129 IAC 10.2(8B)",
+   "note": "Defines 'State agency' by reference to an administrative rule (Sec. 1(27)).",
+   "evidence": {
+    "provision": "Sec. 1, 715D.1(27)",
+    "quote": "means the same as defined in 129 IAC"
+   }
+  },
+  {
+   "relation": "preempts",
+   "target_text": "rules, regulations, codes, ordinances, and other laws adopted by a city, county, municipality, or local agency regarding the processing of personal data by controllers or processors",
+   "note": "Supersedes and preempts local laws on the processing of personal data by controllers or processors (Sec. 9(1)).",
+   "evidence": {
+    "provision": "Sec. 9, 715D.9(1)",
+    "quote": "This chapter supersedes and preempts all rules,"
+   }
+  }
+ ],
+ "notes": "All target_instrument_id values are empty because no target is identified in the registry and the schema requires a string; targets are identified in target_text. The text does not name the Iowa Code, so references to chapters 499, 504, 685, 714.16C and 715C and to 129 IAC are unqualified. The Act is headed NEW SECTION and the text amends no other existing provision; the codification in Iowa Code ch. 715D is taken from the registry title, not stated in the text. Internal cross-references within chapter 715D are not coded. The approval day in the signature block is blank and the governor's signature line is unsigned in the document provided; the year 2023 appears only in the approval line. The section_status entry is included only because the schema requires the key; relations are populated.",
+ "events": [
+  {
+   "event": "entry_into_force",
+   "date": "2025-01-01",
+   "date_type": "absolute",
+   "date_text": "This Act takes effect January 1, 2025.",
+   "applies_to": "This Act (Iowa Code ch. 715D, Secs. 1-9)",
+   "evidence": {
+    "provision": "Sec. 10. EFFECTIVE DATE",
+    "quote": "This Act takes effect January 1, 2025."
+   }
+  },
+  {
+   "event": "signed",
+   "date": "2023",
+   "date_type": "absolute",
+   "date_text": "Approved _______________, 2023",
+   "applies_to": "Senate File 262 (Governor's approval; day and month blank in the document)",
+   "evidence": {
+    "provision": "Signature block following Sec. 10",
+    "quote": "Approved _______________, 2023"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "A controller shall respond to the consumer without undue delay, but in all cases within ninety days of receipt of a request",
+   "anchor": "receipt of a consumer request submitted under Sec. 3",
+   "applies_to": "Controller response to a consumer rights request (Sec. 715D.3(2)(a))",
+   "offset_value": 90,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Sec. 3, 715D.3(2)(a)",
+    "quote": "A controller shall respond to the consumer without undue delay, but in all cases within ninety days of receipt of a request"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "The response period may be extended once by forty-five additional days when reasonably necessary",
+   "anchor": "initial ninety-day response period",
+   "depends_on": "controller's reasonable necessity and informing the consumer of the extension within the initial ninety-day response period",
+   "applies_to": "Extension of controller response period for a consumer rights request (Sec. 715D.3(2)(a))",
+   "offset_value": 45,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Sec. 3, 715D.3(2)(a)",
+    "quote": "The response period may be extended once by forty-five additional days when reasonably necessary"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "Within sixty days of receipt of an appeal, a controller shall inform the consumer in writing",
+   "anchor": "receipt of an appeal",
+   "applies_to": "Controller decision on consumer appeal of refusal to act (Sec. 715D.3(3))",
+   "offset_value": 60,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Sec. 3, 715D.3(3)",
+    "quote": "Within sixty days of receipt of an appeal, a controller shall inform the consumer in writing"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "the attorney general shall provide a controller or processor ninety days' written notice",
+   "anchor": "attorney general's written notice identifying the alleged violations",
+   "applies_to": "Attorney general action against a controller or processor (cure period, Sec. 715D.8(2))",
+   "offset_value": 90,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Sec. 8, 715D.8(2)",
+    "quote": "the attorney general shall provide a controller or processor ninety days' written notice"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "data_subjects_count",
+   "variable_text": "consumers whose personal data is controlled or processed",
+   "operator": ">=",
+   "value": 100000,
+   "value_text": "at least one hundred thousand consumers",
+   "unit": "consumers",
+   "measurement": "calendar year; for a person conducting business in the state or producing products or services targeted to state residents",
+   "level": "entity",
+   "trigger": "scope_definition",
+   "consequence": "Chapter applies to the person when this count is met together with the business or product test in Sec. 2(1).",
+   "conditions": "Person conducts business in the state or produces products or services targeted to consumers who are state residents (Sec. 2(1)).",
+   "evidence": {
+    "provision": "Sec. 2(1)(a)",
+    "quote": "Controls or processes personal data of at least one hundred thousand consumers."
+   }
+  },
+  {
+   "variable": "data_subjects_count",
+   "variable_text": "consumers whose personal data is controlled or processed, alternative prong with revenue test",
+   "operator": ">=",
+   "value": 25000,
+   "value_text": "at least twenty-five thousand consumers",
+   "unit": "consumers",
+   "measurement": "calendar year; for a person conducting business in the state or producing products or services targeted to state residents",
+   "level": "entity",
+   "trigger": "scope_definition",
+   "consequence": "Chapter applies to the person when this count is met together with the revenue test in Sec. 2(1)(b).",
+   "conditions": "Also derives over fifty percent of gross revenue from the sale of personal data.",
+   "evidence": {
+    "provision": "Sec. 2(1)(b)",
+    "quote": "Controls or processes personal data of at least twenty-five thousand consumers and derives over fifty percent of gross revenue from the sale of personal data."
+   }
+  },
+  {
+   "variable": "share_of_financials",
+   "variable_text": "share of gross revenue from the sale of personal data",
+   "operator": ">",
+   "value": 50,
+   "value_text": "over fifty percent of gross revenue from the sale of personal data",
+   "unit": "percent of gross revenue",
+   "measurement": "calendar year; gross revenue from the sale of personal data",
+   "level": "entity",
+   "trigger": "scope_definition",
+   "consequence": "Together with at least 25,000 consumers, brings the person within scope under Sec. 2(1)(b).",
+   "conditions": "Combined with processing or controlling personal data of at least twenty-five thousand consumers in a calendar year.",
+   "evidence": {
+    "provision": "Sec. 2(1)(b)",
+    "quote": "derives over fifty percent of gross revenue from the sale of personal data"
+   }
+  },
+  {
+   "variable": "age",
+   "variable_text": "age of a natural person defined as a child",
+   "operator": "<",
+   "value": 13,
+   "value_text": "younger than thirteen years of age",
+   "unit": "years",
+   "measurement": "age of the natural person",
+   "level": "person",
+   "trigger": "scope_definition",
+   "consequence": "Defines child. Parent or guardian may invoke consumer rights for a known child (Sec. 3(1)), and personal data collected from a known child is a sensitive data category (Sec. 1(26)(c)).",
+   "conditions": "Natural person younger than 13.",
+   "evidence": {
+    "provision": "Sec. 1(5)",
+    "quote": "“Child” means any natural person younger than thirteen years of age."
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "radius of location precision for precise geolocation data",
+   "operator": "<=",
+   "value": 1750,
+   "value_text": "within a radius of one thousand seven hundred fifty feet",
+   "unit": "feet",
+   "measurement": "precision and accuracy of location data derived from technology, expressed as a radius",
+   "level": "person",
+   "trigger": "scope_definition",
+   "consequence": "Location data at this precision is precise geolocation data, a sensitive data category (Sec. 1(26)(d)).",
+   "conditions": "Data identifies the specific location of a natural person with precision and accuracy within the stated radius; excludes content of communications and utility metering data (Sec. 1(19)).",
+   "evidence": {
+    "provision": "Sec. 1(19)",
+    "quote": "identifies the specific location of a natural person with precision and accuracy within a radius of one thousand seven hundred fifty feet."
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "ownership or voting share for control in the definition of affiliate",
+   "operator": ">",
+   "value": 50,
+   "value_text": "more than fifty percent of the outstanding shares of any class of voting security",
+   "unit": "percent",
+   "measurement": "outstanding shares of any class of voting security of a company",
+   "level": "group",
+   "trigger": "scope_definition",
+   "consequence": "Ownership above this level is one form of control used to define affiliate (Sec. 1(1)), which is referenced in the sale exclusion (Sec. 1(25)(c)) and the third party definition (Sec. 1(29)).",
+   "conditions": "Other control prongs in Sec. 1(1)(b) and (c) are alternatives; affiliate also includes entities under common control or sharing common branding.",
+   "evidence": {
+    "provision": "Sec. 1(1)(a)",
+    "quote": "Ownership of, or the power to vote, more than fifty percent of the outstanding shares of any class of voting security of a company."
+   }
+  },
+  {
+   "variable": "volume",
+   "variable_text": "number of consumer requests per consumer per year for which information is provided free of charge",
+   "operator": "<=",
+   "value": 2,
+   "value_text": "up to twice annually per consumer",
+   "unit": "times per year",
+   "measurement": "per consumer, annually",
+   "level": "person",
+   "trigger": "benefit",
+   "consequence": "Information in response to a consumer request is provided free of charge up to this frequency. The text states no separate fee rule for requests beyond this number.",
+   "conditions": "Fee permitted only for manifestly unfounded, excessive, repetitive, technically unfeasible requests or where the primary purpose is not exercising a consumer right (Sec. 3(2)(c)).",
+   "evidence": {
+    "provision": "Sec. 3(2)(c)",
+    "quote": "Information provided in response to a consumer request shall be provided by a controller free of charge, up to twice annually per consumer."
+   }
+  }
+ ],
+ "section_status": {}
+}

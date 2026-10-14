@@ -1,0 +1,250 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "qa-pdppl-2016",
+ "tier": "B",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "light, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-interim-20261014"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (Claude Code retrieval)",
+  "url": "https://api.moj.gov.qa/api/v1/Legislation/9c7dca4b-8722-4212-9368-ea3abba0c95c",
+  "retrieved": "2026-10-14",
+  "version": "Original Arabic text as published in the Official Gazette No. 15 of 2016 (Al Meezan portal, MOJ Qatar)",
+  "language": "ar",
+  "extent": "full",
+  "note": "Assembled from two official sources: title, preamble and arts. 3-22 from the Al Meezan portal API (Arabic, clean text); arts. 1-2 (chapter 1) and 23-32 (chapters 7-8) plus signature are OCR (macOS Vision, Arabic) of the scanned Official Gazette copy https://files.almeezan.gov.qa/almeezan/80d3dd1d-f61a-4fcc-8e55-48305f2ac6ec.pdf, because the portal API omits those chapters. OCR parts use Eastern Arabic numerals and contain some character errors. Raw files: cache/raw/qa-pdppl-2016.api.json and qa-pdppl-2016.gazette.pdf.orig. An official English version is also on Al Meezan (https://files.almeezan.gov.qa/almeezan/a495e974-1b2c-4751-9f3b-6c6269dcc41c.pdf, not retrieved)."
+ },
+ "classification": {
+  "domains": [
+   "data_protection",
+   "data_transfer_localization",
+   "minors_child_safety"
+  ],
+  "primary_domain": "data_protection",
+  "mechanisms": [
+   "mandate_obligation",
+   "prohibition_ban",
+   "licensing_permit_certification",
+   "disclosure_transparency",
+   "enforcement_order"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "data_controller",
+   "data_processor",
+   "platform_operator",
+   "advertiser_campaign"
+  ],
+  "affected_roles": [
+   "consumers_users",
+   "minors"
+  ],
+  "decision_margins": [
+   "firm:compliance_process",
+   "firm:input_use",
+   "firm:product_design_release",
+   "household:data_privacy",
+   "household:information"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national"
+   ],
+   "description": "Applies to personal data processed electronically (Art. 2); the text states no express territorial limit.",
+   "evidence": {
+    "provision": "Art. 2",
+    "quote": "تسري أحكام هذا القانون على البيانات الشخصية عندما تتم معالجتها على نحو إلكتروني"
+   }
+  },
+  "agora_harms": [
+   "Violation of civil or human rights, including privacy"
+  ],
+  "agora_incentives": [
+   "Fines",
+   "Criminal liability"
+  ],
+  "agora_risk_factors": [
+   "Privacy",
+   "Security"
+  ],
+  "agora_strategies": [
+   "Input controls: Data use",
+   "Input controls: Data circulation",
+   "Licensing, registration, and certification",
+   "Disclosure: About inputs"
+  ]
+ },
+ "summary": {
+  "short": "Qatar's Law No. 13 of 2016 governs personal data processed electronically. It requires controllers to obtain consent, give notice, limit use, secure data and restrict cross-border transfers, with stricter rules for sensitive data and children's websites. It sets fines and gave existing processing six months to conform.",
+  "long": "The law applies to personal data processed electronically or collected for electronic processing, and excludes purely personal or family use and processing for official statistics (Art. 2). Individuals may withdraw consent, object, request deletion and correction (Art. 5), and receive access, notice and a copy of their data for a fee not exceeding the service cost (Art. 6). Controllers must obtain consent unless processing serves a legitimate purpose (Art. 4), give prior notice of purposes and processing (Art. 9), keep data relevant and no longer than necessary (Art. 10), and adopt internal measures including data protection officers, training, complaint systems and audits (Art. 11). Controllers and processors must protect personal data (Art. 13), and controllers must notify the competent administration and individuals of serious breaches (Art. 14). Controllers may not take decisions that restrict cross-border data flows, except where processing violates the law or would cause serious harm (Art. 15). Sensitive data, including racial origin, children, health, religion, marital status and criminal offences, may be processed only with a permit from the competent administration (Art. 16). Operators of websites directed at children must give notice, obtain parental consent and meet further conditions (Art. 17). Exemptions apply for national security, public interest and certain legal duties (Arts. 18 to 21). Direct marketing by electronic communication requires prior consent and an opt-out (Art. 22). Violations are punishable by fines (Arts. 23 to 25). Individuals may complain, and the competent administration may order a remedy, with appeal to the Minister (Art. 26). Contracts made in breach of the law are void (Art. 28). Existing data handlers had six months from the effective date to conform (Art. 30).}, "
+ },
+ "relations": [
+  {
+   "relation": "legal_basis",
+   "target_text": "Constitution of Qatar (الدستور)",
+   "note": "Cited in the preamble as a consideration ('after reviewing'). The text does not state which constitutional power it exercises.",
+   "evidence": {
+    "provision": "Preamble",
+    "quote": "بعد الاطلاع على الدستور"
+   }
+  },
+  {
+   "relation": "legal_basis",
+   "target_text": "Telecommunications Law, Decree-Law No. (34) of 2006 (قانون الاتصالات الصادر بالمرسوم بقانون رقم (34) لسنة 2006)",
+   "note": "Cited in the preamble as a consideration. The text does not state which power it exercises.",
+   "evidence": {
+    "provision": "Preamble",
+    "quote": "وعلى قانون الاتصالات الصادر بالمرسوم بقانون رقم (34) لسنة 2006"
+   }
+  },
+  {
+   "relation": "legal_basis",
+   "target_text": "E-Transactions and Commerce Law, Decree-Law No. (16) of 2010 (قانون المعاملات والتجارة الإلكترونية)",
+   "note": "Cited in the preamble as a consideration. The text does not state which power it exercises.",
+   "evidence": {
+    "provision": "Preamble",
+    "quote": "وعلى قانون المعاملات والتجارة الإلكترونية الصادر بالمرسوم بقانون رقم (16) لسنة 2010"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Law No. (2) of 2011 on Official Statistics (القانون رقم (2) لسنة 2011 بشأن الإحصاءات الرسمية)",
+   "note": "Article 2 excludes from this law personal data processed to obtain official statistical data under this law. The preamble also cites it as amended by Law No. (4) of 2015.",
+   "evidence": {
+    "provision": "Art. 2",
+    "quote": "وفقاً لأحكام القانون رقم (٢) لسنة ٢٠١١"
+   }
+  },
+  {
+   "relation": "legal_basis",
+   "target_text": "Cybercrime Law, Law No. (14) of 2014 (قانون مكافحة الجرائم الإلكترونية)",
+   "note": "Cited in the preamble as a consideration. The text does not state which power it exercises.",
+   "evidence": {
+    "provision": "Preamble",
+    "quote": "وعلى قانون مكافحة الجرائم الإلكترونية الصادر بالقانون رقم (14) لسنة 2014"
+   }
+  },
+  {
+   "relation": "legal_basis",
+   "target_text": "Amiri Decision No. (42) of 2014 establishing the Communications Regulatory Authority (القرار الأميري رقم (42) لسنة 2014)",
+   "note": "Cited in the preamble as a consideration. The text does not state which power it exercises.",
+   "evidence": {
+    "provision": "Preamble",
+    "quote": "وعلى القرار الأميري رقم (42) لسنة 2014 بإنشاء هيئة تنظيم الاتصالات"
+   }
+  },
+  {
+   "relation": "legal_basis",
+   "target_text": "Amiri Decision No. (8) of 2016 on the organisational structure of the Ministry of Transport and Communications (القرار الأميري رقم (8) لسنة 2016)",
+   "note": "Cited in the preamble as a consideration. The text does not state which power it exercises.",
+   "evidence": {
+    "provision": "Preamble",
+    "quote": "وعلى القرار الأميري رقم (8) لسنة 2016 بالهيكل التنظيمي لوزارة المواصلات والاتصالات"
+   }
+  }
+ ],
+ "notes": "Relations are taken from the preamble citations and from Art. 2. The preamble recitals do not state which powers each cited instrument confers, so they are coded as legal_basis without further specification. The Official Statistics Law row combines the Art. 2 exclusion with the preamble citation; the preamble also records that it was amended by Law No. (4) of 2015, which is not an amendment made by this law. Art. 26 reads 'خلال مدة . تحددها' with the period missing from the text as provided, so the compliance period cannot be taken from it. Art. 30 gives six months from 'تاريخ العمل به' without stating the entry-into-force date in the text. Only Art. 2 and Art. 30 interact with an external instrument or date; no amendment or repeal clause appears in the text. Quotes are from the document as provided, which shows OCR-style spacing artefacts.",
+ "events": [
+  {
+   "event": "signed",
+   "date": "2016-11-03",
+   "date_type": "absolute",
+   "date_text": "صدر في الديوان الأميري بتاريخ: ١٤٣٨/٢/٣ه الموافق: ٢٠١٦/١١/٣ م",
+   "applies_to": "the law as a whole",
+   "evidence": {
+    "provision": "Closing dateline (after Art. 32)",
+    "quote": "صدر في الديوان الأميري بتاريخ: ١٤٣٨/٢/٣ه"
+   }
+  },
+  {
+   "event": "published",
+   "date": null,
+   "date_type": "not_stated",
+   "date_text": "ويُنشر في الجريدة الرسمية",
+   "applies_to": "the law as a whole (publication in the Official Gazette)",
+   "evidence": {
+    "provision": "Art. 32",
+    "quote": "ويُنشر في الجريدة الرسمية"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": null,
+   "date_type": "not_stated",
+   "date_text": "تاريخ العمل به",
+   "applies_to": "the law as a whole; the text gives no calendar date for entry into force and refers only to 'the date of its effect' in Art. 30",
+   "evidence": {
+    "provision": "Art. 30",
+    "quote": "خلال ستة أشهر من تاريخ العمل به"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "خلال ستة أشهر من تاريخ العمل به",
+   "anchor": "entry into force (تاريخ العمل به)",
+   "applies_to": "controllers and processors (المخاطبين بأحكام هذا القانون) to bring their situation into conformity with the law; the Council of Ministers may extend this period by further similar periods on the Minister's proposal",
+   "offset_value": 6,
+   "offset_unit": "months",
+   "anchor_event": "entry_into_force",
+   "evidence": {
+    "provision": "Art. 30",
+    "quote": "خلال ستة أشهر من تاريخ العمل به"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "خلال ستين يوماً من تاريخ إخطاره به",
+   "anchor": "notification (إخطاره) of the competent authority's reasoned decision",
+   "depends_on": "notification of the competent authority's reasoned compliance decision under Art. 26",
+   "applies_to": "controller or processor appealing to the Minister against the competent authority's decision",
+   "offset_value": 60,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Art. 26",
+    "quote": "خلال ستين يوماً من تاريخ إخطاره به"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "ويبت الوزير في التظلم خلال ستين يوما من تاريخ تقديمه",
+   "anchor": "submission (تقديمه) of the appeal to the Minister",
+   "depends_on": "submission of the appeal to the Minister; if the period passes without a decision, the appeal is deemed implicitly rejected and the Minister's decision is final",
+   "applies_to": "the Minister's decision on the appeal",
+   "offset_value": 60,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Art. 26",
+    "quote": "ويبت الوزير في التظلم خلال ستين يوما من تاريخ تقديمه"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "بتدارك تلك المخالفة خلال مدة",
+   "depends_on": "period fixed (تحددها) in the competent authority's reasoned decision requiring the controller or processor to remedy a breach",
+   "applies_to": "controller or processor ordered to remedy a breach upon a complaint",
+   "evidence": {
+    "provision": "Art. 26",
+    "quote": "بتدارك تلك المخالفة خلال مدة"
+   }
+  }
+ ],
+ "section_status": {
+  "thresholds": {
+   "status": "not_found",
+   "note": "No numeric cutoff in the text changes legal treatment. Fine amounts in Arts. 23-25 are enforcement (penalty maxima), and the six-month compliance period in Art. 30 and the 60-day appeal periods in Art. 26 are procedural time limits (events). Art. 16 lets the Minister add special-nature data categories and Art. 17 applies to children without a numeric age, so neither yields a threshold row. Art. 6(3) refers to a fee not exceeding the service cost, which is not a number."
+  }
+ },
+ "thresholds": []
+}

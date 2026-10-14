@@ -1,0 +1,355 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "nl-stb-2023-492-hyperscale",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (connectors/fetch_texts.py)",
+  "url": "https://zoek.officielebekendmakingen.nl/stb-2023-492.pdf",
+  "retrieved": "2026-10-13",
+  "version": "as fetched",
+  "language": "nl",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "compute_data_centers"
+  ],
+  "primary_domain": "compute_data_centers",
+  "mechanisms": [
+   "prohibition_ban",
+   "mandate_obligation",
+   "designation_tiering"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "government_agency"
+  ],
+  "affected_roles": [
+   "data_center_operator",
+   "data_center_owner"
+  ],
+  "decision_margins": [
+   "firm:entry_market_access",
+   "firm:investment_location"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national"
+   ],
+   "description": "Applies across the whole Netherlands, with an exception for certain locations in Het Hogeland and Hollands Kroon.",
+   "evidence": {
+    "provision": "Art. 5.161bb",
+    "quote": "het grondgebied van Nederland met uitzondering van enkele locaties"
+   }
+  }
+ },
+ "summary": {
+  "short": "Amends the Besluit kwaliteit leefomgeving from 1 January 2024 to define hyperscale data centres (over 10 ha built area and 70 MW or more connection capacity) and bars municipal environmental plans from permitting new ones across the Netherlands, except two named areas in Het Hogeland and Hollands Kroon.",
+  "long": "Adds paragraph 5.1.7.7 on hyperscale data centres to the Besluit kwaliteit leefomgeving under the Omgevingswet. Article 5.161ba defines a hyperscale data centre as operating a data or computing centre with more than 10 ha built floor area and an electrical connection capacity of 70 MW or more, including functionally supporting activities on the same site. Article 5.161bb makes the whole territory of the Netherlands the exclusion area, except certain locations in Het Hogeland and Hollands Kroon whose boundaries are set by ministerial regulation. Article 5.161bc provides that an environmental plan applying to the exclusion area does not permit hyperscale data centres. Article 12.26d requires the competent authority to implement this by the time set in article 22.5(1) of the Omgevingswet. The rule is an instructieregel under article 2.24(1) of the Omgevingswet, takes effect on 1 January 2024, and does not apply to activities permitted under an environmental permit for building work. The explanatory note states that existing and already permitted hyperscale data centres are not affected and that municipalities have until 1 January 2032 to amend their plans."
+ },
+ "relations": [
+  {
+   "relation": "legal_basis",
+   "target_text": "Omgevingswet",
+   "note": "Enabling act for the instructieregel (art. 2.24 lid 1). The Omgevingswet is also cited in operative text (art. 22.5 lid 1 via Art. 12.26d; art. 22.5 lid 1 timing) and in the Nota (arts. 2.21, 22.6 lid 3, 2.24, 2.25, 4.16); recorded here once.",
+   "evidence": {
+    "provision": "Considerans (preamble)",
+    "quote": "Gelet op artikel 2.24, eerste lid, van de Omgevingswet;"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Besluit kwaliteit leefomgeving (Bkl)",
+   "note": "Amends art. 5.149 (lid 1 and new lid 3), adds paragraph 5.1.7.7 (arts. 5.161ba to 5.161bc) to the Bkl, inserts art. 12.26d and a definition in bijlage I, onderdeel A.",
+   "evidence": {
+    "provision": "Artikel I",
+    "quote": "Het Besluit kwaliteit leefomgeving wordt als volgt gewijzigd:"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Besluit activiteiten leefomgeving, artikel 3.235",
+   "note": "Art. 5.161ba lid 2 defines a hyperscale datacentrum by reference to a rekencentrum or datacentrum as meant in art. 3.235 of the Bal.",
+   "evidence": {
+    "provision": "Artikel I, onderdeel B (Art. 5.161ba lid 2)",
+    "quote": "als bedoeld in artikel 3.235 van het"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Omgevingsregeling (ministeriële regeling)",
+   "note": "Art. 5.161bb leaves the geometric boundary of the exclusion area to a ministerial regulation; the Nota refers to the Omgevingsregeling, bijlage III.",
+   "evidence": {
+    "provision": "Artikel I, onderdeel B (Art. 5.161bb)",
+    "quote": "bij ministeriële regeling is vastgelegd."
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "Gemeenten (municipalities)",
+   "role": "addressee",
+   "function": "Must ensure that the omgevingsplan does not permit new hyperscale datacentra; the Nota says the adjustment must be made by 1 January 2032 under the transitional period.",
+   "evidence": {
+    "provision": "Nota van toelichting, par. 4",
+    "quote": "Onderhavig besluit regelt dat gemeenten"
+   }
+  },
+  {
+   "name": "Bevoegd gezag",
+   "role": "addressee",
+   "function": "Competent authority that must give effect to the instructieregel of art. 5.161bc in the transitional phase (Art. 12.26d).",
+   "evidence": {
+    "provision": "Artikel I, onderdeel C (Art. 12.26d)",
+    "quote": "geeft het bevoegd gezag uitvoering aan artikel 5.161bc."
+   }
+  },
+  {
+   "name": "Rijk (national government)",
+   "role": "designated",
+   "function": "Under the Nota, may address a municipality for neglect of duty via the province and may suspend or annul a municipal decision under interbestuurlijk toezicht.",
+   "evidence": {
+    "provision": "Nota van toelichting, par. 5",
+    "quote": "kan het Rijk via de provincie het gemeentebestuur aanspreken vanwege taakverwaarlozing."
+   }
+  },
+  {
+   "name": "Het Hogeland (gemeente)",
+   "role": "listed",
+   "function": "Municipality in which named locations are excepted from the exclusion area for hyperscale datacentra.",
+   "evidence": {
+    "provision": "Artikel I, onderdeel B (Art. 5.161bb)",
+    "quote": "Het Hogeland en Hollands Kroon, waarvan de geometrische begrenzing"
+   }
+  },
+  {
+   "name": "Hollands Kroon (gemeente)",
+   "role": "listed",
+   "function": "Municipality in which named locations are excepted from the exclusion area for hyperscale datacentra.",
+   "evidence": {
+    "provision": "Artikel I, onderdeel B (Art. 5.161bb)",
+    "quote": "Het Hogeland en Hollands Kroon, waarvan de geometrische begrenzing"
+   }
+  }
+ ],
+ "notes": "Empty strings are used for target_instrument_id, lei and ticker where the schema requires a string but no registry ID or verified identifier is available. Internal inconsistency: art. 5.161bb sets the area boundary by ministeriële regeling, while the Nota (par. 2.2 and the artikelsgewijze toelichting on onderdeel B) refers to the Omgevingsregeling, bijlage III, art. 2.21. Art. 5.161ba lid 2 defines the facility by reference to art. 3.235 Bal; the Nota paraphrases the definition as support for dataverkeer or dataopslag. Per Nota par. 7, the instructieregel does not bind citizens and firms until the omgevingsplan is amended; the text announces a separate voorbereidingsbesluit by the Minister of BZK at the entry into force of the Omgevingswet, which is not part of this text.",
+ "events": [
+  {
+   "event": "proposed",
+   "date": "2023-04-04",
+   "date_type": "absolute",
+   "date_text": "Op de voordracht van Onze Minister voor Volkshuisvesting en Ruimtelijke Ordening van 4 april 2023, nr. 2023-0000109564",
+   "applies_to": "ontwerpbesluit (voordracht van de minister)",
+   "evidence": {
+    "provision": "Aanhef",
+    "quote": "Op de voordracht van Onze Minister voor Volkshuisvesting en Ruimtelijke Ordening van 4 april 2023"
+   }
+  },
+  {
+   "event": "consultation",
+   "date": "2022-06-10",
+   "date_type": "absolute",
+   "date_text": "Het ontwerpbesluit is op 10 juni 2022 voorgehangen in de Eerste en Tweede Kamer",
+   "applies_to": "Eerste en Tweede Kamer (voorhang van het ontwerpbesluit)",
+   "evidence": {
+    "provision": "Nota van toelichting, 6.4 Voorhang",
+    "quote": "Het ontwerpbesluit is op 10 juni 2022 voorgehangen in de Eerste en Tweede Kamer"
+   }
+  },
+  {
+   "event": "consultation",
+   "date": "2022-06-12",
+   "date_type": "absolute",
+   "date_text": "In de periode van 12 juni 2022 tot en met 10 juli 2022 heeft eenieder de mogelijkheid gehad om te reageren op het ontwerpbesluit",
+   "applies_to": "ontwerpbesluit (openbare internetconsultatie en Staatscourant)",
+   "evidence": {
+    "provision": "Nota van toelichting, 6.1 Consultatie",
+    "quote": "In de periode van 12 juni 2022 tot en met 10 juli 2022"
+   }
+  },
+  {
+   "event": "consultation",
+   "date": "2023-06-14",
+   "date_type": "absolute",
+   "date_text": "advies van 14 juni 2023, nr. W04.23.00081/I",
+   "applies_to": "Afdeling advisering van de Raad van State (advies)",
+   "evidence": {
+    "provision": "Aanhef",
+    "quote": "14 juni 2023, nr. W04.23.00081/I"
+   }
+  },
+  {
+   "event": "signed",
+   "date": "2023-12-20",
+   "date_type": "absolute",
+   "date_text": "’s-Gravenhage, 20 december 2023",
+   "applies_to": "Besluit (vaststelling door de Koning en ondertekening door de ministers)",
+   "evidence": {
+    "provision": "Dateline na Artikel II",
+    "quote": "’s-Gravenhage, 20 december 2023"
+   }
+  },
+  {
+   "event": "published",
+   "date": "2023-12-22",
+   "date_type": "absolute",
+   "date_text": "Uitgegeven de tweeëntwintigste december 2023",
+   "applies_to": "Besluit (uitgifte in het Staatsblad)",
+   "evidence": {
+    "provision": "Slot (uitgifte)",
+    "quote": "Uitgegeven de tweeëntwintigste december 2023"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2024-01-01",
+   "date_type": "absolute",
+   "date_text": "Dit besluit treedt in werking met ingang van 1 januari 2024",
+   "applies_to": "Besluit kwaliteit leefomgeving wijziging (Artikel I)",
+   "evidence": {
+    "provision": "Artikel II",
+    "quote": "Dit besluit treedt in werking met ingang van 1 januari 2024"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2032-01-01",
+   "date_type": "conditional",
+   "date_text": "Deze termijn is in een koninklijk besluit op 1 januari 2032 gesteld (Stb. 2023, 267)",
+   "anchor": "artikel 22.5, eerste lid, van de Omgevingswet (tijdstip bij koninklijk besluit)",
+   "depends_on": "Artikel 22.5, eerste lid, Omgevingswet; koninklijk besluit, Stb. 2023, 267",
+   "applies_to": "gemeenten: aanpassing van het omgevingsplan aan artikel 5.161bc (uitvoering door het bevoegd gezag, artikel 12.26d)",
+   "evidence": {
+    "provision": "Nota van toelichting, 4. Gevolgen van het besluit",
+    "quote": "Deze termijn is in een koninklijk besluit op 1 januari 2032 gesteld (Stb. 2023, 267)"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "floor_area",
+   "variable_text": "bebouwd vloeroppervlakte",
+   "operator": ">",
+   "value": 10,
+   "value_text": "een bebouwd vloeroppervlakte van meer dan 10 ha",
+   "unit": "ha",
+   "measurement": "Built floor area of the datacentre location (operative text refers to activities on the same location, Art. 5.161ba(3))",
+   "level": "facility",
+   "trigger": "scope_definition",
+   "consequence": "Together with the 70 MW connection criterion, the site falls within the definition of hyperscale datacentrum and the new paragraph 5.1.7.7 applies.",
+   "conditions": "Must hold jointly with an electrical connection capacity of 70 MW or more.",
+   "evidence": {
+    "provision": "Art. I, onderdeel B (inserting Bkl Art. 5.161ba(2))",
+    "quote": "een bebouwd vloeroppervlakte van meer dan 10 ha"
+   }
+  },
+  {
+   "variable": "power_capacity",
+   "variable_text": "elektrisch aansluitvermogen",
+   "operator": ">=",
+   "value": 70,
+   "value_text": "een elektrisch aansluitvermogen van 70 MW of meer",
+   "unit": "MW",
+   "measurement": "Electrical connection capacity of the datacentre (operative text); the explanatory note states that the capacity contracted as end state is what counts",
+   "level": "facility",
+   "trigger": "scope_definition",
+   "consequence": "Together with the floor area criterion, the site falls within the definition of hyperscale datacentrum and the new paragraph 5.1.7.7 applies.",
+   "conditions": "Must hold jointly with a built floor area of more than 10 ha.",
+   "evidence": {
+    "provision": "Art. I, onderdeel B (inserting Bkl Art. 5.161ba(2))",
+    "quote": "een elektrisch aansluitvermogen van 70 MW of meer"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "geometrische begrenzing van het uitsluitingsgebied hyperscale datacentra",
+   "operator": "=",
+   "value": null,
+   "value_text": "geometric boundary of the exclusion area, set by ministeriële regeling",
+   "unit": "",
+   "measurement": "Geometric boundary of the area in which no hyperscale datacentra are permitted, with the named exceptions",
+   "level": "jurisdiction",
+   "trigger": "scope_definition",
+   "consequence": "Defines the area in which municipal environmental plans may not permit a hyperscale datacentrum (Art. 5.161bc).",
+   "conditions": "Applies to the territory of the Netherlands except the exception locations in the municipalities of Het Hogeland and Hollands Kroon.",
+   "depends_on": "ministeriële regeling",
+   "evidence": {
+    "provision": "Art. I, onderdeel B (inserting Bkl Art. 5.161bb)",
+    "quote": "bij ministeriële regeling is vastgelegd"
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "hyperscale datacentrum",
+   "defined_in": "Bkl Art. 5.161ba(2) (inserted by Art. I, onderdeel B of this decree)",
+   "evidence": {
+    "provision": "Art. I, onderdeel B (inserting Bkl Art. 5.161ba(2))",
+    "quote": "Onder een hyperscale datacentrum wordt verstaan het exploiteren van een rekencentrum of datacentrum"
+   }
+  },
+  {
+   "term": "rekencentrum of datacentrum",
+   "defined_in": "Besluit activiteiten leefomgeving, art. 3.235 (by reference in Bkl Art. 5.161ba(2))",
+   "evidence": {
+    "provision": "Art. I, onderdeel B (inserting Bkl Art. 5.161ba(2))",
+    "quote": "een rekencentrum of datacentrum, als bedoeld in artikel 3.235 van het"
+   }
+  },
+  {
+   "term": "functioneel ondersteunende activiteiten",
+   "defined_in": "Bkl Art. 5.161ba(3) (inserted by Art. I, onderdeel B of this decree)",
+   "evidence": {
+    "provision": "Art. I, onderdeel B (inserting Bkl Art. 5.161ba(3))",
+    "quote": "Een hyperscale datacentrum omvat ook andere activiteiten die"
+   }
+  },
+  {
+   "term": "uitsluitingsgebied hyperscale datacentra",
+   "defined_in": "Bkl Art. 5.161bb (inserted by Art. I, onderdeel B of this decree)",
+   "evidence": {
+    "provision": "Art. I, onderdeel B (inserting Bkl Art. 5.161bb)",
+    "quote": "Het uitsluitingsgebied hyperscale datacentra, zijnde het gebied waar"
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "prohibition",
+   "addressee": "government_agency",
+   "modality": "shall_not",
+   "summary": "Within the exclusion area for hyperscale data centres, the omgevingsplan (the municipal environmental plan, under the competent authority) shall not permit any hyperscale data centre. The duty applies only insofar as an omgevingsplan applies to that area.",
+   "applies_from": "met ingang van 1 januari 2024 (Artikel II, entry into force of the decision)",
+   "conditional_on": "Voor zover een omgevingsplan van toepassing is op het uitsluitingsgebied hyperscale datacentra, bedoeld in artikel 5.161bb",
+   "evidence": {
+    "provision": "Art. I, onderdeel B (inserting Bkl Art. 5.161bc)",
+    "quote": "laat het omgevingsplan geen hyperscale datacentrum toe."
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The competent authority (bevoegd gezag) must give effect to Art. 5.161bc (the omgevingsplan may not permit hyperscale data centres) no later than the time referred to in Art. 22.5(1) of the Omgevingswet. The explanatory note gives 1 January 2032 for that time; the operative text does not state the date.",
+   "applies_from": "Uiterlijk op het tijdstip bedoeld in artikel 22.5, eerste lid, van de wet",
+   "evidence": {
+    "provision": "Art. I, onderdeel C (inserting Bkl Art. 12.26d)",
+    "quote": "geeft het bevoegd gezag uitvoering aan artikel 5.161bc."
+   }
+  }
+ ],
+ "section_status": {
+  "enforcement": {
+   "status": "not_found",
+   "note": "The operative articles (Art. I A–D, Art. II) contain no fine, penalty, licence revocation or other sanction. The nota van toelichting, section 5 'Uitvoering, toezicht en handhaving', describes supervisory measures against municipalities (taakverwaarlozing via the province, interbestuurlijk toezicht including suspension or annulment of a municipal decision), but these are not operative provisions of this text and no penalty amounts are stated, so no sanction regime is coded."
+  }
+ },
+ "enforcement": []
+}

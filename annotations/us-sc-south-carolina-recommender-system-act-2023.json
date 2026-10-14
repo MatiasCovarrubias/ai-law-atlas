@@ -1,0 +1,142 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "us-sc-south-carolina-recommender-system-act-2023",
+ "tier": "B",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "light, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-interim-20261014"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "AGORA plaintext (ETO, CC BY-NC 4.0), local cache",
+  "url": "https://www.scstatehouse.gov/sess125_2023-2024/bills/404.htm",
+  "retrieved": "2024-10-04",
+  "version": "1.33.0 (2026-09-16)",
+  "language": "en",
+  "extent": "partial",
+  "note": "AGORA record covers part of an act: A bill to amend the South Carolina Code of Laws by adding Section 63-5-380 so as to prohibit operators of internet-based"
+ },
+ "classification": {
+  "domains": [
+   "minors_child_safety",
+   "algorithmic_decision_systems",
+   "consumer_protection"
+  ],
+  "primary_domain": "minors_child_safety",
+  "mechanisms": [
+   "prohibition_ban",
+   "mandate_obligation",
+   "liability_rule"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "platform_operator",
+   "ai_deployer"
+  ],
+  "affected_roles": [
+   "minors",
+   "consumers_users"
+  ],
+  "decision_margins": [
+   "firm:product_design_release",
+   "firm:compliance_process",
+   "household:data_privacy"
+  ],
+  "territorial_scope": {
+   "types": [
+    "subnational",
+    "extraterritorial"
+   ],
+   "description": "State statute applying to operators of online services and apps for South Carolina residents, including operators outside the state that serve them.",
+   "evidence": {
+    "provision": "Sec. 63-5-380(A)(1)",
+    "quote": "for a user under the age of eighteen who is a resident of the State of South Carolina."
+   }
+  },
+  "agora_incentives": [
+   "Civil liability",
+   "Fines"
+  ]
+ },
+ "summary": {
+  "short": "Bill adding S.C. Code § 63-5-380. Bars operators of websites, online services and apps, including social media, from using automated decision systems for content placement for South Carolina residents under 18. Requires age verification for adult residents using such systems. Violations are unfair or deceptive trade practices.",
+  "long": "The bill would add Section 63-5-380 to the South Carolina Code. Under subsection (A)(1), it is unlawful for any operator of a website, online service, or online or mobile application, including any social media platform, to use an automated decision system for content placement, including feeds, posts, advertisements, or product offerings, for a user under eighteen who is a South Carolina resident. Under (A)(2), an operator that uses such a system for South Carolina residents eighteen or older must verify age through an independent third-party service that compares public records with the personal information the user entered, unless the operator uses one of two alternatives: verification of an account profile against publicly available records, or a required upload of a government-issued identification with a current photograph. Relying on such verification is a defense to an action under the section. Under (A)(3), failure to perform required age verification is prima facie evidence of a violation. Under (B)(1), a violation is an unfair or deceptive act or practice under the South Carolina Unfair Trade Practices Act, enforceable by the Attorney General through an injunction or civil penalties. Under (B)(2), a user who suffers damages may sue individually for actual damages. Under (B)(3), each use of an automated decision system in violation counts as a separate violation for each minor user who is a South Carolina resident. Subsection (C) defines an automated decision system as a computational process, including one derived from machine learning, statistics, or other data processing or artificial intelligence techniques, that makes or facilitates decisions and impacts consumers. Under Section 2, the act takes effect upon the Governor's approval. The registry lists the bill as introduced and pending."
+ },
+ "relations": [
+  {
+   "relation": "amends",
+   "target_instrument_id": "null",
+   "target_text": "South Carolina Code of Laws, Title 63, Chapter 5, Article 3 (adds Section 63-5-380)",
+   "note": "Adds new Section 63-5-380 to the Code.",
+   "evidence": {
+    "provision": "SECTION 1",
+    "quote": "Article 3, Chapter 5, Title 63 of the S.C. Code is amended by adding:"
+   }
+  },
+  {
+   "relation": "designates_under",
+   "target_instrument_id": "null",
+   "target_text": "South Carolina Unfair Trade Practices Act (Sections 39-5-20, 39-5-50, 39-5-110, 39-5-140)",
+   "note": "Applies Attorney General injunction and civil penalty powers (Sections 39-5-50, 39-5-110) and an individual damages action (Section 39-5-140). Deems a violation of subsection (A) an unfair or deceptive act or practice under Section 39-5-20.",
+   "evidence": {
+    "provision": "Sec. 63-5-380(B)(1)",
+    "quote": "is enforceable by the Attorney General through an action for an injunction or for civil penalties, or both, pursuant to Sections 39-5-50 and 39-5-110."
+   }
+  }
+ ],
+ "notes": "Introduced bill; no effective date other than approval by the Governor (SECTION 2). No enabling act, repeal, transposition or enacted-by-bill relation is stated in the text. Reader points: (A)(2) requires age verification for adult residents using an automated decision system, through a third-party service or, alternatively, the protections in (a) or (b); the 'unless' clause makes the third-party route optional. Reliance on proof of age is a defence (A)(2). Failure to verify is prima facie evidence of violation (A)(3). Subsection (C) defines the system by its impact on consumers, not only minors. Penalty amounts are not stated here; they sit in the referenced UTPA sections. Subsection (B)(3) counts each use per under-18 resident as a separate violation.",
+ "events": [
+  {
+   "event": "entry_into_force",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "This act takes effect upon approval by the Governor.",
+   "anchor": "approval by the Governor",
+   "depends_on": "approval by the Governor",
+   "applies_to": "entire act",
+   "evidence": {
+    "provision": "SECTION 2",
+    "quote": "This act takes effect upon approval by the Governor."
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "age",
+   "variable_text": "user under the age of eighteen",
+   "operator": "<",
+   "value": 18,
+   "value_text": "under the age of eighteen",
+   "unit": "years",
+   "measurement": "Age of the user; the bill does not specify how age is measured for this provision.",
+   "level": "person",
+   "trigger": "prohibition",
+   "consequence": "Use of an automated decision system for content placement for such users is unlawful.",
+   "conditions": "Operator of a website, online service, or online or mobile application, including any social media platform; the user is a resident of South Carolina.",
+   "evidence": {
+    "provision": "Section 63-5-380(A)(1)",
+    "quote": "for a user under the age of eighteen who is a resident of the State of South Carolina"
+   }
+  },
+  {
+   "variable": "age",
+   "variable_text": "residents of South Carolina who are eighteen years or older",
+   "operator": ">=",
+   "value": 18,
+   "value_text": "eighteen years or older",
+   "unit": "years",
+   "measurement": "Age of the user, established through age verification; the bill does not specify the measurement window.",
+   "level": "person",
+   "trigger": "obligation",
+   "consequence": "Operator using an automated decision system for content placement must perform age verification through an independent third-party service, unless the listed protections are employed.",
+   "conditions": "Operator uses an automated decision system for content placement; the user is a resident of South Carolina.",
+   "evidence": {
+    "provision": "Section 63-5-380(A)(2)",
+    "quote": "residents of South Carolina who are eighteen years or older shall perform an age verification"
+   }
+  }
+ ],
+ "section_status": {}
+}

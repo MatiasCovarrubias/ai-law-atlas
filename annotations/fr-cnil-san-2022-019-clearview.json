@@ -1,0 +1,345 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "fr-cnil-san-2022-019-clearview",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "DILA open data CNIL base (official, echanges.dila.gouv.fr)",
+  "url": "https://echanges.dila.gouv.fr/OPENDATA/CNIL/Freemium_cnil_global_20250713-140000.tar.gz",
+  "retrieved": "2026-10-14",
+  "version": "Légifrance CNIL base text CNILTEXT000046444859 (XML from the DILA global archive of 2025-07-13), published 2022-10-20",
+  "language": "fr",
+  "extent": "full",
+  "note": "Légifrance (403) and the English cnil.fr PDF (404) failed. Raw file is the unmodified CNILTEXT000046444859.xml from the archive, saved with .html extension so extract_texts.py processes it. The published text is pseudonymised (company named 'la société x' / '[…]', as the deliberation provides after two years); the .txt metadata header was trimmed."
+ },
+ "classification": {
+  "domains": [
+   "data_protection",
+   "biometrics"
+  ],
+  "primary_domain": "data_protection",
+  "mechanisms": [
+   "enforcement_order",
+   "prohibition_ban"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "data_controller"
+  ],
+  "affected_roles": [
+   "general_public"
+  ],
+  "decision_margins": [
+   "firm:input_use",
+   "firm:compliance_process",
+   "household:data_privacy"
+  ],
+  "territorial_scope": {
+   "types": [
+    "extraterritorial",
+    "targeted"
+   ],
+   "description": "Applies to a non-EU company processing data of persons located in the EU under GDPR Art. 3(2)(b); the measures are addressed to the named company and cover persons located in France.",
+   "evidence": {
+    "provision": "Motifs de la décision, para. 18",
+    "quote": "Le présent règlement s’applique au traitement des données à caractère personnel relatives à des personnes concernées qui se trouvent sur le territoire de l’Union"
+   }
+  },
+  "agora_harms": [
+   "Violation of civil or human rights, including privacy"
+  ],
+  "agora_incentives": [
+   "Fines"
+  ],
+  "agora_risk_factors": [
+   "Privacy"
+  ]
+ },
+ "summary": {
+  "short": "CNIL restricted-committee sanction against a US-established company whose scraped-image facial-recognition search engine breached GDPR Arts 6, 12, 15, 17 and 31. Imposes a €20 million administrative fine and an injunction to stop unlawful processing of persons in France and delete their data, with a €100,000-per-day penalty after two months.",
+  "long": "Restricted-committee decision of the French data protection authority (CNIL) of 17 October 2022, published 20 October 2022, against a company established in the United States, named only as '[…]' in the text. The company runs a facial-recognition search engine built from images collected from publicly accessible web pages, including social networks, from which it computes biometric templates; users upload a photograph and receive matching images with their source URLs. The committee holds that the GDPR applies under Article 3(2)(b) because the processing is linked to monitoring the behaviour of people in the Union, and that the one-stop-shop mechanism does not apply because the company has no EU establishment. It finds breaches of Article 6 (no legal basis; consent absent and legitimate interests rejected on balancing), of Articles 12 and 15 (incomplete and delayed access responses), of Article 17 (no response to an erasure request) and of Article 31 (no cooperation with the CNIL). Measures: an administrative fine of 20 million euros; an injunction not to collect or process personal data of persons in France without a legal basis for the search engine and to delete such data, with a penalty of 100,000 euros per day of delay, liquidable after two months; and publication of the decision on the CNIL and Légifrance websites, not naming the company after two years."
+ },
+ "relations": [
+  {
+   "relation": "legal_basis",
+   "target_text": "Loi n° 78-17 du 6 janvier 1978 modifiée relative à l’informatique, aux fichiers et aux libertés",
+   "note": "Cited in the visas as the CNIL's basis for the proceedings and sanctions; the text relies on its article 20 (III, sanctions) and article 22 (designation of the rapporteur).",
+   "evidence": {
+    "provision": "Visas; II.B para 7; III para 94",
+    "quote": "Vu la loi n° 78-17 du 6 janvier 1978 modifiée relative à l’informatique, aux fichiers et aux libertés, notamment ses articles 20 et suivants"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Règlement (UE) 2016/679 du Parlement européen et du Conseil du 27 avril 2016 (RGPD)",
+   "note": "Substantive law applied and enforced: the decision finds breaches of GDPR articles 6, 12, 15, 17 and 31, applies article 3(2)(b) on territorial scope and the article 83 fine criteria.",
+   "evidence": {
+    "provision": "Visas",
+    "quote": "Vu le règlement (UE) 2016/679 du Parlement européen et du Conseil du 27 avril 2016 relatif à la protection des données à caractère personnel et à la libre circulation de ces données"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Décret n° 2019-536 du 29 mai 2019 pris pour l’application de la loi n° 78-17 du 6 janvier 1978",
+   "note": "Cited in the visas only; the decree is described there as made for the application of loi 78-17.",
+   "evidence": {
+    "provision": "Visas",
+    "quote": "Vu le décret n° 2019-536 du 29 mai 2019 pris pour l’application de la loi n° 78-17 du 6 janvier 1978 relative à l’informatique, aux fichiers et aux libertés"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Décision n° MED 2021-134 du 26 novembre 2021 mettant en demeure la société",
+   "note": "Prior formal notice (mise en demeure) to the company; the decision finds that the company did not comply with it (paras 68, 78, 85, 92).",
+   "evidence": {
+    "provision": "Visas; I.B para 6",
+    "quote": "Vu la décision n° MED 2021-134 du 26 novembre 2021 mettant en demeure la société […];"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Décision n° 2020-116C de la présidente de la CNIL du 26 août 2020 (mission de vérification)",
+   "note": "Mandate for the verification mission that led to the questionnaire of 27 October 2020 (para 3).",
+   "evidence": {
+    "provision": "Visas",
+    "quote": "Vu la décision n° 2020-116C de la présidente de la Commission nationale de l’informatique et des libertés du 26 août 2020"
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "Société […] (redacted in the text; referred to as 'la société')",
+   "role": "addressee",
+   "function": "Controller of the facial recognition database and search service; subject to the administrative fine, injunction and penalty payment, and to publication of the decision",
+   "evidence": {
+    "provision": "I.A para 1",
+    "quote": "La société […] (ci-après la société ou […]), établie aux États-Unis"
+   }
+  },
+  {
+   "name": "Commission nationale de l’informatique et des libertés (CNIL), formation restreinte",
+   "role": "designated",
+   "function": "Supervisory authority; its restricted panel imposes the administrative fine, injunction, penalty payment and publication under loi 78-17 article 20 (III), as cited in the text",
+   "evidence": {
+    "provision": "I.A para 2",
+    "quote": "La Commission nationale de l’informatique et des libertés (ci-après la CNIL ) a été saisie entre mai et décembre 2020"
+   }
+  },
+  {
+   "name": "Privacy International",
+   "role": "listed",
+   "function": "Organisation whose complaint (saisine n° […]) was received by the CNIL on 27 May 2021",
+   "evidence": {
+    "provision": "I.A para 4",
+    "quote": "la CNIL a été saisie d’une plainte de l’organisme Privacy International"
+   }
+  }
+ ],
+ "notes": "The company name is redacted ('société […]', 'société x' in the heading); the registry title names CLEARVIEW AI, which the document itself does not state, so the entity name rests on registry metadata. Relation target_instrument_id fields are empty because no registry IDs were supplied. Operative sanctions are a 20,000,000 EUR administrative fine and an injunction with a penalty of 100,000 EUR per day of delay after two months. The fine is set at the article 83(5)-(6) ceiling (20 million EUR or 4% of turnover, whichever is higher) per paragraph 104, but paragraph 105 states the company gave no turnover figure, so the turnover basis is not established in the text. Header publication date 2022-10-20 is from registry metadata.",
+ "events": [
+  {
+   "event": "adopted",
+   "date": "2022-10-17",
+   "date_type": "absolute",
+   "date_text": "17 octobre 2022",
+   "applies_to": "",
+   "evidence": {
+    "provision": "En-tête",
+    "quote": "Délibération de la formation restreinte n° SAN-2022-019 du 17 octobre 2022"
+   }
+  },
+  {
+   "event": "published",
+   "date": "2022-10-20",
+   "date_type": "absolute",
+   "date_text": "date de publication : 2022-10-20",
+   "applies_to": "",
+   "evidence": {
+    "provision": "En-tête",
+    "quote": "date de publication : 2022-10-20"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "à l’issue d’un délai de deux mois suivant la notification de la présente délibération",
+   "depends_on": "notification of this deliberation",
+   "applies_to": "compliance of the processing with GDPR and the Act, and the response to access requests; injunction with astreinte of 100 000 euros per day of delay",
+   "offset_value": 2,
+   "offset_unit": "months",
+   "evidence": {
+    "provision": "Par ces motifs, 3e tiret",
+    "quote": "à l’issue d’un délai de deux mois suivant la notification de la présente délibération"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "dans un délai de quatre mois à compter de sa notification",
+   "depends_on": "notification of this deliberation",
+   "applies_to": "appeal to the Conseil d’État",
+   "offset_value": 4,
+   "offset_unit": "months",
+   "evidence": {
+    "provision": "Voies de recours (fin de la délibération)",
+    "quote": "susceptible de faire l’objet d’un recours devant le Conseil d’État dans un délai de quatre mois à compter de sa notification"
+   }
+  },
+  {
+   "event": "expiry",
+   "date": "2024-10-20",
+   "date_type": "relative",
+   "date_text": "à l’expiration d’un délai de deux ans à compter de sa publication",
+   "anchor": "publication of this deliberation",
+   "applies_to": "naming of the company in the published deliberation",
+   "offset_value": 2,
+   "offset_unit": "years",
+   "anchor_event": "published",
+   "evidence": {
+    "provision": "§ 115 ; Par ces motifs, 4e tiret",
+    "quote": "n’identifiera plus nommément la société à l’expiration d’un délai de deux ans à compter de sa publication"
+   },
+   "date_computed_from": "published 2022-10-20 (text) + 2 years"
+  }
+ ],
+ "definitions": [
+  {
+   "term": "traitement en cause",
+   "defined_in": "this decision, § 17",
+   "evidence": {
+    "provision": "§ 17",
+    "quote": "qui est de commercialiser un moteur de recherche fondé sur la reconnaissance faciale (ci-après le traitement en cause )"
+   }
+  },
+  {
+   "term": "donnée à caractère personnel",
+   "defined_in": "Règlement (UE) 2016/679 (RGPD), as quoted in this decision, § 23",
+   "evidence": {
+    "provision": "§ 23",
+    "quote": "la notion de donnée à caractère personnel est définie dans le RGPD comme toute information se rapportant à une personne physique identifiée ou identifiable"
+   }
+  },
+  {
+   "term": "données biométriques",
+   "defined_in": "Règlement (UE) 2016/679, Art. 4(14), as applied in this decision",
+   "evidence": {
+    "provision": "§ 24",
+    "quote": "les données à caractère personnel résultant d’un traitement technique spécifique, relatives aux caractéristiques physiques, physiologiques ou comportementales d’une personne physique, qui permettent ou confirment son identification unique, telles que des images faciales, constituent des données biométriques"
+   }
+  },
+  {
+   "term": "gabarit biométrique",
+   "defined_in": "this decision, § 64 (c’est-à-dire)",
+   "evidence": {
+    "provision": "§ 64",
+    "quote": "un gabarit biométrique, c’est-à-dire une donnée biométrique permettant, si elle est fiable, d’identifier la personne de façon unique à partir d’une photographie de la personne"
+   }
+  },
+  {
+   "term": "profilage",
+   "defined_in": "Règlement (UE) 2016/679, Art. 4(4), as quoted in this decision",
+   "evidence": {
+    "provision": "§ 28",
+    "quote": "Le profilage est défini à l’article 4.1.4 du RGPD comme toute forme de traitement automatisé de données à caractère personnel consistant à utiliser ces données à caractère personnel pour évaluer certains aspects personnels relatifs à une personne physique"
+   }
+  },
+  {
+   "term": "suivi du comportement des personnes concernées",
+   "defined_in": "Règlement (UE) 2016/679, considérant 24, as quoted in this decision",
+   "evidence": {
+    "provision": "§ 19",
+    "quote": "Afin de déterminer si une activité de traitement peut être considérée comme un suivi du comportement des personnes concernées, il y a lieu d’établir si les personnes physiques sont suivies sur internet"
+   }
+  },
+  {
+   "term": "reconnaissance faciale",
+   "defined_in": "this decision, § 15",
+   "evidence": {
+    "provision": "§ 15",
+    "quote": "Ce traitement vise à identifier la personne de façon unique à partir d’une photographie de l’individu. Il s’agit donc d’un dispositif de reconnaissance faciale."
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "prohibition",
+   "addressee": "data_controller",
+   "modality": "shall_not",
+   "summary": "Injunction to the company not to collect or process personal data of persons located in French territory for its facial recognition software without a legal basis.",
+   "evidence": {
+    "provision": "Dispositif (PAR CES MOTIFS), 2e tiret",
+    "quote": "une injonction de ne pas procéder sans base légale à la collecte et au traitement de données à caractère personnel relatives à des personnes concernées qui se trouvent sur le territoire français"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Injunction to delete all personal data of the persons concerned, including the complainant's data, after responding to access requests already made.",
+   "conditional_on": "after having responded to access requests already made, where applicable",
+   "evidence": {
+    "provision": "Dispositif (PAR CES MOTIFS), 2e tiret",
+    "quote": "supprimer l’ensemble des données à caractère personnel de ces personnes"
+   }
+  }
+ ],
+ "enforcement": [
+  {
+   "sanction_type": "administrative_fine",
+   "authority": "Commission nationale de l’informatique et des libertés (formation restreinte)",
+   "triggered_by": "Breaches of GDPR Arts 6, 12, 15 and 17 found in this decision, sanctioned under Art. 20 III, 7° of Loi n° 78-17",
+   "max_penalty_text": "une amende administrative ne pouvant excéder 10 millions d’euros ou, s’agissant d’une entreprise, 2 % du chiffre d’affaires annuel mondial total de l’exercice précédent, le montant le plus élevé étant retenu ; ces plafonds sont portés, respectivement, à 20 millions d'euros et 4 % dudit chiffre d’affaires dans les hypothèses des 5 et 6 de l'article 83",
+   "max_penalty_amount": 20000000,
+   "currency": "EUR",
+   "penalty_formula": "Higher of 10 M EUR or 2% of prior-year worldwide turnover; raised to 20 M EUR or 4% for breaches under GDPR Art. 83(5) and (6) (the decision applies 20 M EUR and 4%, para. 104). Turnover not provided by the company (para. 105). Amount imposed in this decision: 20,000,000 EUR (para. 107; dispositif).",
+   "penalty_reference": "Loi n° 78-17 art. 20 III 7°; GDPR Art. 83(5), 83(6)",
+   "cure_period": "Not stated in the provision; a prior formal notice (mise en demeure) of 26 November 2021 gave two months to comply (para. 6).",
+   "evidence": {
+    "provision": "Art. 20 III, 7° Loi n° 78-17 (cited at §94)",
+    "quote": "une amende administrative ne pouvant excéder 10 millions d’euros ou, s’agissant d’une entreprise, 2 % du chiffre d’affaires annuel mondial total de l’exercice précédent"
+   }
+  },
+  {
+   "sanction_type": "injunction_order",
+   "authority": "Commission nationale de l’informatique et des libertés (formation restreinte)",
+   "triggered_by": "Non-compliance with GDPR or the Law (Art. 20 III, 2° Loi n° 78-17); the decision orders no collection or processing without a legal basis and deletion of the data concerned",
+   "max_penalty_text": "une astreinte dont le montant ne peut excéder 100 000 € par jour de retard à compter de la date fixée par la formation restreinte",
+   "max_penalty_amount": 100000,
+   "currency": "EUR",
+   "penalty_formula": "Periodic penalty up to 100,000 EUR per day of delay from the date set by the restricted committee; imposed here at 100,000 EUR per day of delay, liquidable after two months (para. 112; dispositif).",
+   "penalty_reference": "Loi n° 78-17 art. 20 III 2°",
+   "cure_period": "Two months from notification of the deliberation to provide proof of compliance; the periodic penalty is liquidable after two months (dispositif; para. 112).",
+   "evidence": {
+    "provision": "Art. 20 III, 2° Loi n° 78-17 (cited at §94)",
+    "quote": "une astreinte dont le montant ne peut excéder 100 000 € par jour de retard"
+   }
+  },
+  {
+   "sanction_type": "other",
+   "authority": "Commission nationale de l’informatique et des libertés (formation restreinte)",
+   "triggered_by": "Publicity of the sanction decision, justified by gravity of breaches, scope of processing and number of persons concerned (para. 113)",
+   "penalty_formula": "No amount. The deliberation is published on the CNIL and Légifrance sites; the company is no longer named after two years from publication.",
+   "penalty_reference": "Not stated in the text; publicity measure set out in §§113-115 and dispositif. The Art. 20 III list is abridged in the excerpt ([…]).",
+   "cure_period": "Not stated.",
+   "evidence": {
+    "provision": "Dispositif (PAR CES MOTIFS), 4th item",
+    "quote": "rendre publique, sur le site de la CNIL et sur le site de Légifrance, sa délibération, qui n’identifiera plus nommément la société à l’expiration d’un délai de deux ans à compter de sa publication."
+   }
+  }
+ ],
+ "section_status": {
+  "thresholds": {
+   "status": "not_found",
+   "note": "The decision states numeric amounts (fine maxima under art. 20 III 7° and art. 83 GDPR, astreinte of 100 000 euros per day, a 130 million euros valuation) and procedural periods (two months, two years). These are enforcement, facts or events, not thresholds. No scope, eligibility or treatment cutoff was found."
+  }
+ },
+ "thresholds": []
+}

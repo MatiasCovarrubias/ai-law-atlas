@@ -1,0 +1,652 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "us-ca-sb1047-2024",
+ "tier": "B",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "light, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-interim-20261014"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "AGORA plaintext (ETO, CC BY-NC 4.0), local cache",
+  "url": "https://leginfo.legislature.ca.gov/faces/billCompareClient.xhtml?bill_id=202320240SB1047&showamends=false",
+  "retrieved": "2024-10-02",
+  "version": "1.33.0 (2026-09-16)",
+  "language": "en",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "ai_general",
+   "cybersecurity",
+   "compute_data_centers",
+   "employment_labor"
+  ],
+  "primary_domain": "ai_general",
+  "mechanisms": [
+   "mandate_obligation",
+   "prohibition_ban",
+   "disclosure_transparency",
+   "liability_rule",
+   "institution_setup",
+   "standard_setting"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "ai_developer",
+   "cloud_service_provider",
+   "auditor_assessor",
+   "government_agency"
+  ],
+  "affected_roles": [
+   "general_public",
+   "workers",
+   "research_institution"
+  ],
+  "decision_margins": [
+   "firm:product_design_release",
+   "firm:input_use",
+   "firm:compliance_process"
+  ],
+  "territorial_scope": {
+   "types": [
+    "subnational"
+   ],
+   "description": "A California state statute that applies to developers of covered models and operators of computing clusters within the state's legal framework, with no explicit extraterritorial reach stated.",
+   "evidence": {
+    "provision": "SEC. 3",
+    "quote": "Chapter 22.6 (commencing with Section 22602) is added to Division 8 of the Business and Professions Code"
+   }
+  },
+  "agora_harms": [
+   "Harm to health/safety",
+   "Harm to infrastructure",
+   "Harm to property"
+  ],
+  "agora_incentives": [
+   "Civil liability",
+   "Fines"
+  ],
+  "agora_risk_factors": [
+   "Safety",
+   "Security: Cybersecurity",
+   "Transparency"
+  ],
+  "agora_strategies": [
+   "Disclosure",
+   "Disclosure: About incidents",
+   "Evaluation",
+   "Evaluation: External auditing",
+   "Input controls: Compute use",
+   "New institution",
+   "Government study or report",
+   "Government support: For R&D"
+  ]
+ },
+ "summary": {
+  "short": "Adds Business and Professions Code Chapter 22.6 requiring developers of covered AI models to maintain safety and security protocols, assess critical-harm risk, undergo annual audits and report incidents to the Attorney General; also imposes customer checks on compute clusters. Several duties apply from January 1, 2026.",
+  "long": "Adds Business and Professions Code Chapter 22.6 for developers of 'covered models': models trained with over 10^26 operations costing over $100 million (fine-tuning: 3×10^25 operations and $10 million), with later thresholds set by a state agency from 2027. Before training, developers must implement cybersecurity protections, a full-shutdown capability and a written safety and security protocol. Before use or release, they must assess whether the model can cause a 'critical harm' (such as mass-casualty CBRN weapons or large cyberattacks on critical infrastructure), safeguard against it, and not release it if the risk is unreasonable. Developers publish redacted protocols, file annual compliance statements with the Attorney General, report safety incidents within 72 hours, and obtain annual independent audits from 2026. Computing-cluster operators must verify customers and keep records. The Attorney General may sue for civil penalties (10% of training compute cost for a first violation, 30% thereafter, for violations causing harm or imminent risk), injunctions and damages; whistleblower protections apply. A nine-member Board of Frontier Models is created, and a CalCompute public cloud framework is to be developed, subject to appropriation."
+ },
+ "relations": [
+  {
+   "relation": "amends",
+   "target_text": "Business and Professions Code, Division 8 (new Chapter 22.6, Sections 22602 to 22609)",
+   "note": "Adds Chapter 22.6 to the Business and Professions Code. Cross-references Part 2 (commencing with Section 16600) of Division 7 in Section 22607(a)(3).",
+   "evidence": {
+    "provision": "Sec. 3",
+    "quote": "Chapter 22.6 (commencing with Section 22602) is added to Division 8 of the Business and Professions Code, to read:"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Government Code (new Sections 11547.6 and 11547.6.1)",
+   "note": "Adds Section 11547.6 (Board of Frontier Models) in Sec. 4 and Section 11547.6.1 (CalCompute) in Sec. 5. Section 11547.6.1 is operative only upon a budget appropriation (11547.6.1(i)). The chapter also cross-references Government Code 7920.000 (Public Records Act exemption), 12530 (fund), 9795 (report) and 12964.5 (employee protections).",
+   "evidence": {
+    "provision": "Sec. 4; Sec. 5",
+    "quote": "Section 11547.6 is added to the Government Code, to read:"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Penal Code",
+   "note": "The definition of critical harm refers to crimes specified in the Penal Code that require intent, recklessness, or gross negligence.",
+   "evidence": {
+    "provision": "22602(g)(1)(C)(ii)",
+    "quote": "a crime specified in the Penal Code that requires intent, recklessness, or gross negligence"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Labor Code (Sections 1102.5, 1102.61, 1102.62, 1132.4, 1777.1)",
+   "note": "Penalties for violations of Section 22607 are tied to Labor Code 1102.5(f). Employee injunctive relief is governed by Labor Code 1102.61 and 1102.62. Definitions of employee and contractor come from Labor Code 1132.4 and 1777.1.",
+   "evidence": {
+    "provision": "22606(a)(2)",
+    "quote": "a civil penalty specified in subdivision (f) of Section 1102.5 of the Labor Code."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Civil Code (Sections 3294 and 3426.1)",
+   "note": "Punitive damages refer to Civil Code 3294(a). Trade secrets used for redaction refer to Civil Code 3426.1.",
+   "evidence": {
+    "provision": "22606(a)(5)(B)",
+    "quote": "Punitive damages pursuant to subdivision (a) of Section 3294 of the Civil Code."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "federal law (unspecified)",
+   "note": "The chapter does not apply to the extent it is preempted by federal law. The text does not name the federal provisions.",
+   "evidence": {
+    "provision": "22609",
+    "quote": "This chapter does not apply to the extent that it is preempted by federal law."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "contract with a federal government entity",
+   "note": "The covered-model duties in Section 22603 do not apply where they would strictly conflict with a contract with a federal government entity. They still apply to uses not covered by such a contract.",
+   "evidence": {
+    "provision": "22603(j)(1)",
+    "quote": "This section shall not apply to products or services to the extent that the requirements would strictly conflict with the terms of a contract with a federal government entity"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "guidance of the U.S. Artificial Intelligence Safety Institute and the National Institute of Standards and Technology",
+   "note": "Developers must consider this guidance (22603(i), 22604(b)). Regulations and guidance under Gov. Code 11547.6(e)(2) and (f)(2) must be consistent with it.",
+   "evidence": {
+    "provision": "Gov. Code 11547.6(e)(2)",
+    "quote": "Any regulations issued pursuant to paragraph (1) shall, at a minimum, be consistent with guidance issued by the U.S. Artificial Intelligence Safety Institute and the National Institute of Standards and Technology."
+   }
+  }
+ ],
+ "notes": "The registry marks the bill as vetoed, but the supplied document is bill text without legislative history, so the veto is not shown in the document. Covered-model thresholds change on 1 January 2027: before that date, fixed values apply (22602(e)(1)(A)); after it, thresholds are set by Government Operations Agency regulation (22602(e)(1)(B)), with the pre-2027 values as fallback if no regulation is adopted (22602(e)(1)(B)(ii)). Auditor duties start 1 January 2026 (22603(e)(1)), but the binding audit rules are due by 1 January 2027 (Gov. Code 11547.6(e)(1)). Section 8 contains a public-access finding under Cal. Const. art. I, sec. 3.",
+ "events": [
+  {
+   "event": "phase_in_step",
+   "date": "2027-01-01",
+   "date_type": "absolute",
+   "date_text": "on and after January 1, 2027, “covered model” means any of the following:",
+   "applies_to": "covered model definition in Bus. & Prof. Code §22602(e)(1)(B)(i), with thresholds set by the Government Operations Agency",
+   "evidence": {
+    "provision": "Sec. 3 (adding Bus. & Prof. Code §22602(e)(1)(B)(i))",
+    "quote": "on and after January 1, 2027, “covered model” means any of the following:"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "If the Government Operations Agency does not adopt a regulation governing subclauses (I) and (II) of clause (i) before January 1, 2027",
+   "depends_on": "Government Operations Agency regulation governing subclauses (I) and (II) of clause (i) of Bus. & Prof. Code §22602(e)(1)(B)",
+   "applies_to": "pre-2027 covered model definition remains operative until the regulation is adopted",
+   "evidence": {
+    "provision": "Sec. 3 (adding Bus. & Prof. Code §22602(e)(1)(B)(ii))",
+    "quote": "If the Government Operations Agency does not adopt a regulation governing subclauses (I) and (II) of clause (i) before January 1, 2027"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2027-01-01",
+   "date_type": "absolute",
+   "date_text": "On and after January 1, 2027, a copy of a covered model",
+   "applies_to": "covered model derivative definition in Bus. & Prof. Code §22602(f)(3)(A)(ii), with threshold set by the Government Operations Agency",
+   "evidence": {
+    "provision": "Sec. 3 (adding Bus. & Prof. Code §22602(f)(3)(A)(ii))",
+    "quote": "On and after January 1, 2027, a copy of a covered model"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "If the Government Operations Agency does not adopt a regulation governing clause (ii) of subparagraph (A) by January 1, 2027",
+   "depends_on": "Government Operations Agency regulation governing clause (ii) of subparagraph (A) of Bus. & Prof. Code §22602(f)(3)",
+   "applies_to": "pre-2027 covered model derivative computing power quantity continues to apply until the regulation is adopted",
+   "evidence": {
+    "provision": "Sec. 3 (adding Bus. & Prof. Code §22602(f)(3)(B))",
+    "quote": "If the Government Operations Agency does not adopt a regulation governing clause (ii) of subparagraph (A) by January 1, 2027"
+   }
+  },
+  {
+   "event": "application",
+   "date": "2026-01-01",
+   "date_type": "absolute",
+   "date_text": "On and after January 1, 2026, the dollar amount in this subdivision shall be adjusted annually for inflation",
+   "applies_to": "annual CPI adjustment of dollar amounts in the covered model definition (Bus. & Prof. Code §22602(e)(2))",
+   "evidence": {
+    "provision": "Sec. 3 (adding Bus. & Prof. Code §22602(e)(2))",
+    "quote": "On and after January 1, 2026, the dollar amount in this subdivision shall be adjusted annually for inflation"
+   }
+  },
+  {
+   "event": "application",
+   "date": "2026-01-01",
+   "date_type": "absolute",
+   "date_text": "On and after January 1, 2026, the dollar amounts in this subdivision shall be adjusted annually for inflation",
+   "applies_to": "annual CPI adjustment of dollar amounts in the critical harm definition (Bus. & Prof. Code §22602(g)(3))",
+   "evidence": {
+    "provision": "Sec. 3 (adding Bus. & Prof. Code §22602(g)(3))",
+    "quote": "On and after January 1, 2026, the dollar amounts in this subdivision shall be adjusted annually for inflation"
+   }
+  },
+  {
+   "event": "application",
+   "date": "2026-01-01",
+   "date_type": "absolute",
+   "date_text": "Beginning January 1, 2026, a developer of a covered model shall annually retain a third-party auditor",
+   "applies_to": "annual independent audit by a third-party auditor of developer compliance (Bus. & Prof. Code §22603(e)(1))",
+   "evidence": {
+    "provision": "Sec. 3 (adding Bus. & Prof. Code §22603(e)(1))",
+    "quote": "Beginning January 1, 2026, a developer of a covered model shall annually retain a third-party auditor"
+   }
+  },
+  {
+   "event": "application",
+   "date": "2026-01-01",
+   "date_type": "absolute",
+   "date_text": "that occurs on or after January 1, 2026",
+   "applies_to": "civil penalty for violations causing death, bodily harm, property harm or theft, or an imminent risk to public safety (Bus. & Prof. Code §22606(a)(1))",
+   "evidence": {
+    "provision": "Sec. 3 (adding Bus. & Prof. Code §22606(a)(1))",
+    "quote": "that occurs on or after January 1, 2026"
+   }
+  },
+  {
+   "event": "application",
+   "date": "2026-01-01",
+   "date_type": "absolute",
+   "date_text": "Commencing January 1, 2026, the Board of Frontier Models shall be composed of nine members",
+   "applies_to": "composition of the Board of Frontier Models (Gov. Code §11547.6(c)(1))",
+   "evidence": {
+    "provision": "Sec. 4 (adding Gov. Code §11547.6(c)(1))",
+    "quote": "Commencing January 1, 2026, the Board of Frontier Models shall be composed of nine members"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2027-01-01",
+   "date_type": "absolute",
+   "date_text": "On or before January 1, 2027, and annually thereafter, the Government Operations Agency shall issue regulations to update",
+   "applies_to": "regulations updating the compute and fine-tuning thresholds in the covered model definition; repeated annually thereafter (Gov. Code §11547.6(d)(1))",
+   "evidence": {
+    "provision": "Sec. 4 (adding Gov. Code §11547.6(d)(1))",
+    "quote": "On or before January 1, 2027, and annually thereafter, the Government Operations Agency shall issue regulations to update"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2027-01-01",
+   "date_type": "absolute",
+   "date_text": "On or before January 1, 2027, and annually thereafter, the Government Operations Agency shall issue regulations to establish binding auditing requirements",
+   "applies_to": "binding auditing requirements for audits under Bus. & Prof. Code §22603(e); repeated annually thereafter (Gov. Code §11547.6(e)(1))",
+   "evidence": {
+    "provision": "Sec. 4 (adding Gov. Code §11547.6(e)(1))",
+    "quote": "On or before January 1, 2027, and annually thereafter, the Government Operations Agency shall issue regulations to establish binding auditing requirements"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2027-01-01",
+   "date_type": "absolute",
+   "date_text": "On or before January 1, 2027, and annually thereafter, the Government Operations Agency shall issue guidance",
+   "applies_to": "guidance on preventing unreasonable risks of covered models causing critical harms; repeated annually thereafter (Gov. Code §11547.6(f)(1))",
+   "evidence": {
+    "provision": "Sec. 4 (adding Gov. Code §11547.6(f)(1))",
+    "quote": "On or before January 1, 2027, and annually thereafter, the Government Operations Agency shall issue guidance"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2026-01-01",
+   "date_type": "absolute",
+   "date_text": "On or before January 1, 2026, the Government Operations Agency shall submit, pursuant to Section 9795, a report from the consortium to the Legislature",
+   "applies_to": "CalCompute framework report from the consortium to the Legislature (Gov. Code §11547.6.1(f)(1))",
+   "evidence": {
+    "provision": "Sec. 5 (adding Gov. Code §11547.6.1(f)(1))",
+    "quote": "On or before January 1, 2026, the Government Operations Agency shall submit, pursuant to Section 9795, a report from the consortium to the Legislature"
+   }
+  },
+  {
+   "event": "application",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "This section shall become operative only upon an appropriation in a budget act for the purposes of this section.",
+   "depends_on": "appropriation in a budget act for the purposes of Gov. Code §11547.6.1",
+   "applies_to": "CalCompute (Gov. Code §11547.6.1)",
+   "evidence": {
+    "provision": "Sec. 5 (adding Gov. Code §11547.6.1(i))",
+    "quote": "This section shall become operative only upon an appropriation in a budget act for the purposes of this section."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "within 72 hours of the developer learning of the artificial intelligence safety incident",
+   "depends_on": "developer learning of the artificial intelligence safety incident or facts sufficient to establish a reasonable belief that one occurred",
+   "applies_to": "reporting of artificial intelligence safety incidents to the Attorney General (Bus. & Prof. Code §22603(g))",
+   "evidence": {
+    "provision": "Sec. 3 (adding Bus. & Prof. Code §22603(g))",
+    "quote": "within 72 hours of the developer learning of the artificial intelligence safety incident"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "an updated redacted copy within 30 days of the modification",
+   "depends_on": "material modification of the safety and security protocol",
+   "applies_to": "publication and transmission of an updated redacted safety and security protocol to the Attorney General (Bus. & Prof. Code §22603(a)(7)(D))",
+   "offset_value": 30,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Sec. 3 (adding Bus. & Prof. Code §22603(a)(7)(D))",
+    "quote": "an updated redacted copy within 30 days of the modification"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "no more than 30 days after using a covered model or covered model derivative",
+   "depends_on": "developer's first use of a covered model for a non-training purpose or first commercial or public availability of a covered model",
+   "applies_to": "statement of compliance to the Attorney General for the first use or availability (Bus. & Prof. Code §22603(h)(1))",
+   "offset_value": 30,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Sec. 3 (adding Bus. & Prof. Code §22603(h)(1))",
+    "quote": "no more than 30 days after using a covered model or covered model derivative"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "annually",
+   "applies_to": "statement of compliance signed by the chief technology officer or more senior officer, while covered model or derivatives remain in commercial or public use (Bus. & Prof. Code §22603(f)(1))",
+   "evidence": {
+    "provision": "Sec. 3 (adding Bus. & Prof. Code §22603(f)(1)(A))",
+    "quote": "A developer of a covered model shall annually submit to the Attorney General a statement of compliance"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "compute_training",
+   "variable_text": "theoretical maximum computing capacity of a computing cluster",
+   "operator": ">=",
+   "value": 1e+20,
+   "value_text": "at least 10^20 integer or floating-point operations per second",
+   "unit": "integer or floating-point operations per second",
+   "measurement": "Theoretical maximum computing capacity of the cluster",
+   "level": "facility",
+   "trigger": "scope_definition",
+   "consequence": "Defines a computing cluster; operators of such clusters are subject to the duties in Section 22604.",
+   "conditions": "Also requires networking of over 100 gigabits per second and that the cluster can be used for training artificial intelligence.",
+   "evidence": {
+    "provision": "Bus. & Prof. Code § 22602(d)",
+    "quote": "theoretical maximum computing capacity of at least 10^20 integer or floating-point operations per second"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "data center networking speed within a computing cluster",
+   "operator": ">",
+   "value": 100,
+   "value_text": "over 100 gigabits per second",
+   "unit": "gigabits per second",
+   "measurement": "Data center networking speed of the cluster",
+   "level": "facility",
+   "trigger": "scope_definition",
+   "consequence": "Defines a computing cluster; operators of such clusters are subject to the duties in Section 22604.",
+   "conditions": "Also requires theoretical maximum computing capacity of at least 10^20 operations per second and that the cluster can be used for training artificial intelligence.",
+   "evidence": {
+    "provision": "Bus. & Prof. Code § 22602(d)",
+    "quote": "data center networking of over 100 gigabits per second"
+   }
+  },
+  {
+   "variable": "compute_training",
+   "variable_text": "training compute of a covered model (before 1 January 2027)",
+   "operator": ">",
+   "value": 1e+26,
+   "value_text": "greater than 10^26 integer or floating-point operations",
+   "unit": "integer or floating-point operations",
+   "measurement": "Quantity of computing power used to train the model",
+   "level": "model",
+   "trigger": "scope_definition",
+   "consequence": "The model is a covered model, subject to the developer duties in Section 22603 when the cost condition is also met.",
+   "conditions": "Applies before 1 January 2027. Jointly with training cost exceeding $100,000,000.",
+   "evidence": {
+    "provision": "Bus. & Prof. Code § 22602(e)(1)(A)(i)",
+    "quote": "trained using a quantity of computing power greater than 10^26 integer or floating-point operations"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "training cost of a covered model (before 1 January 2027)",
+   "operator": ">",
+   "value": 100000000,
+   "value_text": "one hundred million dollars ($100,000,000)",
+   "unit": "USD",
+   "currency": "USD",
+   "indexed": true,
+   "measurement": "Cost calculated using average market prices of cloud compute at the start of training, as reasonably assessed by the developer",
+   "level": "model",
+   "trigger": "scope_definition",
+   "consequence": "Together with the compute threshold, the model is a covered model.",
+   "conditions": "Applies before 1 January 2027. Jointly with training compute greater than 10^26 operations. Amount adjusted annually for inflation from 1 January 2026.",
+   "evidence": {
+    "provision": "Bus. & Prof. Code § 22602(e)(1)(A)(i)",
+    "quote": "the cost of which exceeds one hundred million dollars ($100,000,000)"
+   }
+  },
+  {
+   "variable": "compute_training",
+   "variable_text": "fine-tuning compute of a covered model (before 1 January 2027)",
+   "operator": ">=",
+   "value": 3e+25,
+   "value_text": "equal to or greater than three times 10^25 integer or floating-point operations",
+   "unit": "integer or floating-point operations",
+   "measurement": "Quantity of computing power used in fine-tuning a covered model",
+   "level": "model",
+   "trigger": "scope_definition",
+   "consequence": "The fine-tuned model is a covered model, subject to the developer duties in Section 22603 when the cost condition is also met.",
+   "conditions": "Applies before 1 January 2027. Jointly with fine-tuning cost exceeding $10,000,000.",
+   "evidence": {
+    "provision": "Bus. & Prof. Code § 22602(e)(1)(A)(ii)",
+    "quote": "equal to or greater than three times 10^25 integer or floating-point operations"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "fine-tuning cost of a covered model (before 1 January 2027)",
+   "operator": ">",
+   "value": 10000000,
+   "value_text": "ten million dollars ($10,000,000)",
+   "unit": "USD",
+   "currency": "USD",
+   "indexed": true,
+   "measurement": "Cost calculated using average market price of cloud compute at the start of fine-tuning, as reasonably assessed by the developer",
+   "level": "model",
+   "trigger": "scope_definition",
+   "consequence": "Together with the fine-tuning compute threshold, the fine-tuned model is a covered model.",
+   "conditions": "Applies before 1 January 2027. Jointly with fine-tuning compute equal to or greater than three times 10^25 operations.",
+   "evidence": {
+    "provision": "Bus. & Prof. Code § 22602(e)(1)(A)(ii)",
+    "quote": "the cost of which, as reasonably assessed by the developer, exceeds ten million dollars ($10,000,000)"
+   }
+  },
+  {
+   "variable": "compute_training",
+   "variable_text": "training compute of a covered model (on and after 1 January 2027)",
+   "operator": ">",
+   "value": null,
+   "value_text": "a quantity of computing power determined by the Government Operations Agency pursuant to Section 11547.6 of the Government Code",
+   "unit": "integer or floating-point operations",
+   "measurement": "Quantity of computing power used to train the model, as set by Government Operations Agency regulation",
+   "level": "model",
+   "trigger": "scope_definition",
+   "consequence": "The model is a covered model when the agency-set compute and cost conditions are met.",
+   "conditions": "Applies on and after 1 January 2027. Jointly with training cost exceeding $100,000,000. If no regulation is adopted by 1 January 2027, the pre-2027 definition remains operative until adopted.",
+   "depends_on": "Government Operations Agency regulation under Gov. Code § 11547.6",
+   "evidence": {
+    "provision": "Bus. & Prof. Code § 22602(e)(1)(B)(i)(I)",
+    "quote": "trained using a quantity of computing power determined by the Government Operations Agency"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "training cost of a covered model (on and after 1 January 2027)",
+   "operator": ">",
+   "value": 100000000,
+   "value_text": "one hundred million dollars ($100,000,000)",
+   "unit": "USD",
+   "currency": "USD",
+   "indexed": true,
+   "measurement": "Cost calculated using average market prices of cloud compute at the start of training, as reasonably assessed by the developer",
+   "level": "model",
+   "trigger": "scope_definition",
+   "consequence": "Together with the agency-set compute threshold, the model is a covered model.",
+   "conditions": "Applies on and after 1 January 2027. Jointly with agency-set training compute threshold. Amount adjusted annually for inflation.",
+   "evidence": {
+    "provision": "Bus. & Prof. Code § 22602(e)(1)(B)(i)(I)",
+    "quote": "the cost of which exceeds one hundred million dollars ($100,000,000) when calculated using the average market prices of cloud compute at the start of training"
+   }
+  },
+  {
+   "variable": "compute_training",
+   "variable_text": "fine-tuning compute of a covered model (on and after 1 January 2027)",
+   "operator": ">",
+   "value": null,
+   "value_text": "a threshold determined by the Government Operations Agency",
+   "unit": "integer or floating-point operations",
+   "measurement": "Quantity of computing power used in fine-tuning, as set by Government Operations Agency regulation",
+   "level": "model",
+   "trigger": "scope_definition",
+   "consequence": "The fine-tuned model is a covered model when the agency-set compute and cost conditions are met.",
+   "conditions": "Applies on and after 1 January 2027. Jointly with fine-tuning cost exceeding $10,000,000.",
+   "depends_on": "Government Operations Agency regulation under Gov. Code § 11547.6",
+   "evidence": {
+    "provision": "Bus. & Prof. Code § 22602(e)(1)(B)(i)(II)",
+    "quote": "using a quantity of computing power that exceeds a threshold determined by the Government Operations Agency"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "fine-tuning cost of a covered model (on and after 1 January 2027)",
+   "operator": ">",
+   "value": 10000000,
+   "value_text": "ten million dollars ($10,000,000)",
+   "unit": "USD",
+   "currency": "USD",
+   "indexed": true,
+   "measurement": "Cost calculated using average market price of cloud compute at the start of fine-tuning, as reasonably assessed by the developer",
+   "level": "model",
+   "trigger": "scope_definition",
+   "consequence": "Together with the agency-set fine-tuning compute threshold, the fine-tuned model is a covered model.",
+   "conditions": "Applies on and after 1 January 2027. Jointly with agency-set fine-tuning compute threshold. Amount adjusted annually for inflation.",
+   "evidence": {
+    "provision": "Bus. & Prof. Code § 22602(e)(1)(B)(i)(II)",
+    "quote": "the cost of which, as reasonably assessed by the developer, exceeds ten million dollars ($10,000,000)"
+   }
+  },
+  {
+   "variable": "compute_training",
+   "variable_text": "fine-tuning compute of a covered model derivative (before 1 January 2027)",
+   "operator": "<=",
+   "value": 3e+25,
+   "value_text": "not exceeding three times 10^25 integer or floating point operations",
+   "unit": "integer or floating-point operations",
+   "measurement": "Quantity of computing power used in fine-tuning a copy of a covered model",
+   "level": "model",
+   "trigger": "scope_definition",
+   "consequence": "The fine-tuned copy is a covered model derivative, subject to the same developer duties as the covered model.",
+   "conditions": "Applies before 1 January 2027. Jointly with fine-tuning cost exceeding $10,000,000.",
+   "evidence": {
+    "provision": "Bus. & Prof. Code § 22602(f)(3)(A)(i)",
+    "quote": "fine-tuned using a quantity of computing power not exceeding three times 10^25 integer or floating point operations"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "fine-tuning cost of a covered model derivative (before 1 January 2027)",
+   "operator": ">",
+   "value": 10000000,
+   "value_text": "ten million dollars ($10,000,000)",
+   "unit": "USD",
+   "currency": "USD",
+   "indexed": true,
+   "measurement": "Cost calculated using average market price of cloud compute at the start of fine-tuning, as reasonably assessed by the developer",
+   "level": "model",
+   "trigger": "scope_definition",
+   "consequence": "Together with the derivative compute condition, the fine-tuned copy is a covered model derivative.",
+   "conditions": "Applies before 1 January 2027. Jointly with fine-tuning compute not exceeding three times 10^25 operations.",
+   "evidence": {
+    "provision": "Bus. & Prof. Code § 22602(f)(3)(A)(i)",
+    "quote": "the cost of which, as reasonably assessed by the developer, exceeds ten million dollars ($10,000,000)"
+   }
+  },
+  {
+   "variable": "compute_training",
+   "variable_text": "fine-tuning compute of a covered model derivative (on and after 1 January 2027)",
+   "operator": "<=",
+   "value": null,
+   "value_text": "not exceeding a threshold determined by the Government Operations Agency",
+   "unit": "integer or floating-point operations",
+   "measurement": "Quantity of computing power used in fine-tuning a copy of a covered model, as set by Government Operations Agency regulation",
+   "level": "model",
+   "trigger": "scope_definition",
+   "consequence": "The fine-tuned copy is a covered model derivative when the agency-set compute and cost conditions are met.",
+   "conditions": "Applies on and after 1 January 2027. Jointly with fine-tuning cost exceeding $10,000,000. If no regulation is adopted by 1 January 2027, the pre-2027 figure continues to apply until adopted.",
+   "depends_on": "Government Operations Agency regulation under Gov. Code § 11547.6",
+   "evidence": {
+    "provision": "Bus. & Prof. Code § 22602(f)(3)(A)(ii)",
+    "quote": "fine-tuned using a quantity of computing power not exceeding a threshold determined by the Government Operations Agency"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "damage from cyberattacks on critical infrastructure in critical harm definition",
+   "operator": ">=",
+   "value": 500000000,
+   "value_text": "at least five hundred million dollars ($500,000,000) of damage",
+   "unit": "USD",
+   "currency": "USD",
+   "indexed": true,
+   "measurement": "Damage resulting from cyberattacks on critical infrastructure by a model",
+   "level": "model",
+   "trigger": "scope_definition",
+   "consequence": "Damage at this level, alternatively to mass casualties, is a critical harm under the chapter.",
+   "conditions": "Alternative to mass casualties; requires a model conducting or providing precise instructions for a cyberattack on critical infrastructure.",
+   "evidence": {
+    "provision": "Bus. & Prof. Code § 22602(g)(1)(B)",
+    "quote": "Mass casualties or at least five hundred million dollars ($500,000,000) of damage resulting from cyberattacks on critical infrastructure"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "damage from autonomous AI model conduct in critical harm definition",
+   "operator": ">=",
+   "value": 500000000,
+   "value_text": "at least five hundred million dollars ($500,000,000) of damage",
+   "unit": "USD",
+   "currency": "USD",
+   "indexed": true,
+   "measurement": "Damage resulting from an AI model engaging in conduct with limited human oversight",
+   "level": "model",
+   "trigger": "scope_definition",
+   "consequence": "Damage at this level, alternatively to mass casualties, is a critical harm under the chapter.",
+   "conditions": "Alternative to mass casualties; requires conduct with limited human oversight that results in death, great bodily injury, property damage or property loss and would be a crime if committed by a human.",
+   "evidence": {
+    "provision": "Bus. & Prof. Code § 22602(g)(1)(C)",
+    "quote": "at least five hundred million dollars ($500,000,000) of damage resulting from an artificial intelligence model"
+   }
+  }
+ ],
+ "section_status": {}
+}

@@ -1,0 +1,881 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "us-ky-hb8-2024",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "web.archive.org (archived copy of the Kentucky legislature's enrolled bill PDF)",
+  "url": "https://web.archive.org/web/20260903195009/https://apps.legislature.ky.gov/recorddocuments/bill/24RS/hb8/bill.pdf",
+  "retrieved": "2026-10-14",
+  "version": "24 RS HB 8/EN (enrolled)",
+  "language": "en",
+  "extent": "partial",
+  "note": "Whole omnibus revenue bill (198 pages); data center provisions are a part of it. apps.legislature.ky.gov unreachable from this machine (timeouts); Wayback copy of the legislature's PDF (which carries the standard 'UNOFFICIAL COPY' header). Line numbers stripped; plain text does not mark new (underlined) or deleted (struck) language. Trimmed to the act title/enacting clause, Sections 37-42 (new KRS 154 subchapter 20 sections on qualified data center projects and the new KRS Chapter 139 sales and use tax exemption for data center equipment) and Sections 63-68 (effective-date/application/emergency clauses; none names Sections 37-42, so they take the general effective date); rest of the act omitted (incl. Section 13, KRS 131.190, whose only data-center content is a confidentiality cross-reference to Section 42). Untrimmed copy: <id>.untrimmed.txt.bak."
+ },
+ "classification": {
+  "domains": [
+   "compute_data_centers"
+  ],
+  "primary_domain": "compute_data_centers",
+  "mechanisms": [
+   "tax_incentive",
+   "licensing_permit_certification",
+   "mandate_obligation",
+   "disclosure_transparency"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "data_center_owner",
+   "data_center_operator",
+   "data_center_occupant",
+   "government_agency"
+  ],
+  "affected_roles": [
+   "hardware_supplier"
+  ],
+  "decision_margins": [
+   "firm:investment_location",
+   "firm:input_use",
+   "firm:compliance_process"
+  ],
+  "territorial_scope": {
+   "types": [
+    "subnational"
+   ],
+   "description": "Applies within the Commonwealth of Kentucky; qualifying projects must also be located in a consolidated local government of at least 500,000 population.",
+   "evidence": {
+    "provision": "Sec. 38(1)(b)",
+    "quote": "Encourage the location of data centers within the Commonwealth"
+   }
+  }
+ },
+ "summary": {
+  "short": "Kentucky HB 8 (2024) Sections 37-42 create a Kentucky Economic Development Finance Authority approval process for qualified data center projects and exempt approved companies' data center equipment from sales and use tax under agreements of 15 to 50 years. Approved companies must report annually from September 1, 2025.",
+  "long": "Kentucky HB 8 (2024 RS) is a fiscal act; this copy contains Sections 37-42 and effective-date provisions (Sections 63-68), and omits Sections 1-36 and 43-62. Sections 37-41 create a data center incentive program in KRS Chapter 154, run by the Kentucky Economic Development Finance Authority: eligible companies sign a memorandum of agreement, receive preliminary approval, then final approval once minimum capital investment is made. Qualifying projects need at least $450,000,000 of investment ($150,000,000 for a project organizer), sit in a consolidated local government of at least 500,000 residents, and may not replace existing Kentucky data centers except in listed cases. Section 42 (KRS Chapter 139) exempts approved companies' data center equipment from sales and use tax, excluding electricity. Agreement terms run 15 to 50 years. If investment falls short by the fifth anniversary, the exemption is revoked and tax is assessed. Approved companies report annually from September 1, 2025. The copy does not state the start date of Sections 37-42."
+ },
+ "relations": [
+  {
+   "relation": "amends",
+   "target_text": "KRS Chapter 154, Subchapter 20",
+   "note": "Creates new Sections 37 to 41 within Subchapter 20 of KRS Chapter 154.",
+   "evidence": {
+    "provision": "Section 37",
+    "quote": "A NEW SECTION OF SUBCHAPTER 20 OF KRS CHAPTER"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "KRS Chapter 139",
+   "note": "Creates new Section 42 of KRS Chapter 139 (sales and use tax exemption for data center equipment).",
+   "evidence": {
+    "provision": "Section 42",
+    "quote": "A NEW SECTION OF KRS CHAPTER 139 IS CREATED TO"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "KRS 154.20-010",
+   "note": "Establishes the Kentucky Economic Development Finance Authority, defined as 'Authority'.",
+   "evidence": {
+    "provision": "Section 37 (definition of \"Authority\")",
+    "quote": "established by KRS 154.20-010;"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "KRS Chapter 13A",
+   "note": "Authority may establish review and approval procedures and standards by administrative regulations under KRS Chapter 13A.",
+   "evidence": {
+    "provision": "Section 39(2)(a)",
+    "quote": "administrative regulations in accordance with KRS"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "KRS Chapter 131",
+   "note": "Tax recovered on termination of the exemption is recovered together with interest required under KRS Chapter 131.",
+   "evidence": {
+    "provision": "Section 42(5)(b)",
+    "quote": "together with interest required under KRS Chapter 131"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "KRS 139.620",
+   "note": "Timeliness and open periods for notices of assessment are made subject to KRS 139.620.",
+   "evidence": {
+    "provision": "Section 42(5)(c)",
+    "quote": "notwithstanding KRS 139.620"
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "Kentucky Economic Development Finance Authority",
+   "role": "designated",
+   "function": "Gives preliminary and final approval to eligible companies, executes memoranda of agreement, and notifies the Department of Revenue; may promulgate administrative regulations.",
+   "evidence": {
+    "provision": "Section 37 (definition of \"Authority\")",
+    "quote": "\"Authority\" means the Kentucky Economic Development Finance Authority"
+   }
+  },
+  {
+   "name": "Department of Revenue",
+   "role": "designated",
+   "function": "Issues certificates of exemption and notices of assessment, and receives annual data center project reports under the exemption.",
+   "evidence": {
+    "provision": "Section 37 (definition of \"Department\")",
+    "quote": "\"Department\" means the Department of Revenue;"
+   }
+  },
+  {
+   "name": "Interim Joint Committee on Appropriations and Revenue",
+   "role": "listed",
+   "function": "Receives the Department's annual report on data center project data.",
+   "evidence": {
+    "provision": "Section 42(7)",
+    "quote": "the department shall report to the authority and the Interim Joint Committee on Appropriations and Revenue"
+   }
+  }
+ ],
+ "notes": "Unofficial engrossed copy with broken line breaks; Sections 1-36 and 43-62 are omitted, so the effective date of Sections 37-42 is not in the excerpt. Internal inconsistencies: Section 37(17)(b)1 states 'fifty million dollars ($450,000,000)' while Section 37(18)(b)1 and Section 41(4)(b)1 use 'four hundred fifty million dollars'. The fifth-anniversary capital investment test runs from preliminary approval in Sections 37(10) and 41(3) and 41(11), but from the memorandum of agreement in Section 39(1)(e). Some definitions in Section 37(16) and 37(17) are fragmentary in this copy.",
+ "events": [
+  {
+   "event": "entry_into_force",
+   "date": "2024-08-01",
+   "date_type": "absolute",
+   "date_text": "take effect August 1, 2024",
+   "applies_to": "Sections 21, 28, and 33 of this Act",
+   "evidence": {
+    "provision": "Sec. 65",
+    "quote": "Sections 21, 28, and 33 of this Act take effect August 1, 2024."
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2025-01-01",
+   "date_type": "absolute",
+   "date_text": "take effect January 1, 2025",
+   "applies_to": "Sections 10, 18, 19, 20, and 34 of this Act",
+   "evidence": {
+    "provision": "Sec. 63",
+    "quote": "Sections 10, 18, 19, 20, and 34 of this Act take effect January 1,"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "take effect upon its passage and approval by the Governor or upon its otherwise becoming a law",
+   "depends_on": "passage and approval by the Governor or otherwise becoming a law",
+   "applies_to": "Sections 4, 15, and 48 to 60 of this Act (emergency clause)",
+   "evidence": {
+    "provision": "Sec. 68",
+    "quote": "take effect upon its passage and approval by the Governor or upon its otherwise becoming a law"
+   }
+  },
+  {
+   "event": "application",
+   "date": null,
+   "date_type": "not_stated",
+   "date_text": "applies to the fiscal year 2023-2024",
+   "applies_to": "Section 15 of this Act (calculation of GF appropriations)",
+   "evidence": {
+    "provision": "Sec. 64",
+    "quote": "Section 15 of this Act applies to the fiscal year 2023-2024"
+   }
+  },
+  {
+   "event": "application",
+   "date": "2020-07-01",
+   "date_type": "absolute",
+   "date_text": "applies to fiscal years beginning or after July 1, 2020",
+   "applies_to": "Section 30 of this Act",
+   "evidence": {
+    "provision": "Sec. 66",
+    "quote": "Section 30 of this Act applies to fiscal years beginning or after July"
+   }
+  },
+  {
+   "event": "application",
+   "date": "2024-07-01",
+   "date_type": "absolute",
+   "date_text": "the fiscal year beginning July 1, 2024, and ending June 30, 2025, and the fiscal year beginning July 1, 2025, and ending June 30, 2026",
+   "applies_to": "Sections 48 to 60 of this Act",
+   "evidence": {
+    "provision": "Sec. 67",
+    "quote": "Sections 48 to 60 of this Act apply to the fiscal year beginning July 1, 2024, and ending June 30, 2025"
+   }
+  },
+  {
+   "event": "expiry",
+   "date": "2026-06-30",
+   "date_type": "absolute",
+   "date_text": "shall expire at the end of June 30, 2026",
+   "applies_to": "Sections 48 to 60 of this Act",
+   "evidence": {
+    "provision": "Sec. 67",
+    "quote": "shall expire at the end of June 30, 2026"
+   }
+  },
+  {
+   "event": "application",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "Upon preliminary approval: Begin to purchase or lease data center equipment exempt from sales and use tax as provided in Section 42 of this Act",
+   "depends_on": "preliminary approval of an eligible company by the authority (Sec. 39(1)(b))",
+   "applies_to": "preliminarily approved companies purchasing data center equipment exempt from sales and use tax",
+   "evidence": {
+    "provision": "Sec. 39(1)(d)1.c",
+    "quote": "Begin to purchase or lease data center equipment exempt from sales and use tax as provided in Section 42 of this Act."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "on or before the fifth anniversary of the preliminary approval",
+   "anchor": "preliminary approval",
+   "depends_on": "preliminary approval by the authority (Sec. 39(1)(b))",
+   "applies_to": "minimum capital investment for a qualified data center project (Sec. 37(17)(b)); failure leads to cancellation (Sec. 41(3)) and compliance by this date (Sec. 41(11))",
+   "offset_value": 5,
+   "offset_unit": "years",
+   "evidence": {
+    "provision": "Sec. 41(3)",
+    "quote": "on or before the fifth anniversary of the preliminary approval"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "If, on or before the fifth anniversary of the memorandum of agreement, the preliminarily approved company fails to meet the minimum capital investment",
+   "anchor": "memorandum of agreement",
+   "depends_on": "execution of the memorandum of agreement (Sec. 39(1)(c); Sec. 41)",
+   "applies_to": "minimum capital investment under the memorandum of agreement; notice to department and revocation of certificate of exemption",
+   "offset_value": 5,
+   "offset_unit": "years",
+   "evidence": {
+    "provision": "Sec. 39(1)(e)",
+    "quote": "on or before the fifth anniversary of the memorandum of agreement"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "the later of: a. One hundred eighty (180) days from the date the department is notified by the authority related to termination of the memorandum of agreement",
+   "anchor": "authority notification to department of termination of sales and use tax exemption",
+   "depends_on": "authority notifies department that it has terminated the sales and use tax exemptions (Sec. 42(5)(a); Sec. 41)",
+   "applies_to": "notice of assessment issued to a preliminarily approved company",
+   "offset_value": 180,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Sec. 42(5)(c)1.a",
+    "quote": "One hundred eighty (180) days from the date the department is notified by the authority related to termination of the memorandum of agreement"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2025-09-01",
+   "date_type": "recurring",
+   "date_text": "Beginning September 1, 2025, and on or before September 1 for each year thereafter",
+   "applies_to": "preliminarily approved companies: annual report to the department on qualified data center projects and equipment purchases",
+   "evidence": {
+    "provision": "Sec. 42(6)",
+    "quote": "Beginning September 1, 2025, and on or before September 1 for each year thereafter, a preliminarily approved company shall report to the department annually"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2025-11-01",
+   "date_type": "recurring",
+   "date_text": "Beginning November 1, 2025, and on or before November 1 of each year thereafter",
+   "applies_to": "department report to the authority and the Interim Joint Committee on Appropriations and Revenue",
+   "evidence": {
+    "provision": "Sec. 42(7)",
+    "quote": "Beginning November 1, 2025, and on or before November 1 of each year thereafter, the department shall report to the authority"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "capital_investment",
+   "variable_text": "minimum capital investment for qualified data center project (item 1)",
+   "operator": ">=",
+   "value": 450000000,
+   "value_text": "fifty million dollars ($450,000,000)",
+   "unit": "USD",
+   "currency": "USD",
+   "measurement": "capital investment made on or before the fifth anniversary of the preliminary approval; verified by the authority at final approval (Sec. 37(10))",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Project must meet this minimum capital investment to be a qualified data center project",
+   "conditions": "Applies under item 1 of Sec. 37(17)(b); item 1 as extracted does not state the entity type to which it applies",
+   "evidence": {
+    "provision": "Sec. 37(17)(b)1",
+    "quote": "fifty million dollars ($450,000,000); or"
+   }
+  },
+  {
+   "variable": "capital_investment",
+   "variable_text": "minimum capital investment for an owner, operator or colocation tenant (item 2)",
+   "operator": ">=",
+   "value": 450000000,
+   "value_text": "at least four hundred",
+   "unit": "USD",
+   "currency": "USD",
+   "measurement": "capital investment on or before the fifth anniversary of the preliminary approval (Sec. 37(10))",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Project of an owner, operator or colocation tenant must meet this minimum to qualify",
+   "conditions": "Extracted text is cut off after 'at least four hundred'; the value 450000000 is read from the parallel amount in Sec. 37(18)(b)1 and Sec. 41(4)(b)1 and must be verified against the enrolled text",
+   "evidence": {
+    "provision": "Sec. 37(17)(b)2",
+    "quote": "For an owner, operator, or colocation tenant, at least four hundred"
+   }
+  },
+  {
+   "variable": "capital_investment",
+   "variable_text": "minimum capital investment for a project organizer",
+   "operator": ">=",
+   "value": 150000000,
+   "value_text": "at least one hundred fifty million dollars ($150,000,000)",
+   "unit": "USD",
+   "currency": "USD",
+   "measurement": "capital investment on or before the fifth anniversary of the preliminary approval (Sec. 37(10))",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Project of a project organizer must meet this minimum to be a qualified data center project",
+   "conditions": "Applies where the eligible company is a project organizer (Sec. 37(15))",
+   "evidence": {
+    "provision": "Sec. 37(17)(b)2",
+    "quote": "For a project organizer, at least one hundred fifty million dollars"
+   }
+  },
+  {
+   "variable": "population",
+   "variable_text": "population of the consolidated local government in which the project is located",
+   "operator": ">=",
+   "value": 500000,
+   "value_text": "a population equal to or greater than five hundred thousand (500,000)",
+   "unit": "persons",
+   "measurement": "county population estimate from the most recently available five (5) year American Community Survey published by the US Census Bureau at the time of application by the eligible company",
+   "level": "jurisdiction",
+   "trigger": "eligibility",
+   "consequence": "Project location must be in a consolidated local government meeting this population to qualify",
+   "conditions": "Project must be located within a consolidated local government",
+   "evidence": {
+    "provision": "Sec. 37(17)(c)",
+    "quote": "having a population equal to or greater than five hundred thousand (500,000)"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "term of memorandum of agreement (project organizer projects)",
+   "operator": "<=",
+   "value": 15,
+   "value_text": "Fifteen (15) years",
+   "unit": "years",
+   "measurement": "period for which a memorandum of agreement may be in effect",
+   "level": "facility",
+   "trigger": "benefit_duration",
+   "consequence": "Maximum term of the memorandum of agreement for a project organizer's qualified data center project",
+   "conditions": "Qualified data center project of a project organizer",
+   "evidence": {
+    "provision": "Sec. 37(18)(a)",
+    "quote": "Fifteen (15) years for a qualified data center project of a project organizer;"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "term of memorandum of agreement (data center project with capital investment at or above threshold)",
+   "operator": "<=",
+   "value": 50,
+   "value_text": "Fifty (50) years",
+   "unit": "years",
+   "measurement": "period for which a memorandum of agreement may be in effect",
+   "level": "facility",
+   "trigger": "benefit_duration",
+   "consequence": "Maximum term of the memorandum of agreement",
+   "conditions": "Capital investment equal to or greater than four hundred fifty million dollars ($450,000,000)",
+   "evidence": {
+    "provision": "Sec. 37(18)(b)1",
+    "quote": "Fifty (50) years for a data center project having a capital investment"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "term of memorandum of agreement (data center project with capital investment below threshold)",
+   "operator": "<=",
+   "value": 25,
+   "value_text": "Twenty-five (25) years",
+   "unit": "years",
+   "measurement": "period for which a memorandum of agreement may be in effect",
+   "level": "facility",
+   "trigger": "benefit_duration",
+   "consequence": "Maximum term of the memorandum of agreement",
+   "conditions": "Capital investment less than four hundred fifty million dollars ($450,000,000)",
+   "evidence": {
+    "provision": "Sec. 37(18)(b)2",
+    "quote": "Twenty-five (25) years for a data center project having a capital investment"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "term of memorandum of agreement (project organizer projects, restated in Sec. 41)",
+   "operator": "<=",
+   "value": 15,
+   "value_text": "Fifteen (15) years",
+   "unit": "years",
+   "measurement": "period for which a memorandum of agreement may be in effect",
+   "level": "facility",
+   "trigger": "benefit_duration",
+   "consequence": "Maximum term of the memorandum of agreement terms",
+   "conditions": "Qualified data center project of a project organizer; same limit as Sec. 37(18)(a)",
+   "evidence": {
+    "provision": "Sec. 41(4)(a)",
+    "quote": "Fifteen (15) years for a qualified data center project of a project organizer;"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "term of memorandum of agreement (capital investment at least threshold, restated in Sec. 41)",
+   "operator": "<=",
+   "value": 50,
+   "value_text": "Fifty (50) years",
+   "unit": "years",
+   "measurement": "period for which a memorandum of agreement may be in effect",
+   "level": "facility",
+   "trigger": "benefit_duration",
+   "consequence": "Maximum term of the memorandum of agreement terms",
+   "conditions": "Capital investment of at least four hundred fifty million dollars ($450,000,000)",
+   "evidence": {
+    "provision": "Sec. 41(4)(b)1",
+    "quote": "Fifty (50) years for a qualified data center project having a capital investment"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "term of memorandum of agreement (other qualified data center projects, restated in Sec. 41)",
+   "operator": "<=",
+   "value": 25,
+   "value_text": "Twenty-five (25) years",
+   "unit": "years",
+   "measurement": "period for which a memorandum of agreement may be in effect",
+   "level": "facility",
+   "trigger": "benefit_duration",
+   "consequence": "Maximum term of the memorandum of agreement terms",
+   "conditions": "Any other qualified data center project (capital investment below the Sec. 41(4)(b)1 threshold)",
+   "evidence": {
+    "provision": "Sec. 41(4)(b)2",
+    "quote": "Twenty-five (25) years for any other qualified data center project;"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "ownership share of stock, capital or profits for affiliate status",
+   "operator": ">",
+   "value": 50,
+   "value_text": "more than fifty percent (50%) in value of the outstanding stock",
+   "unit": "percent",
+   "measurement": "share owned directly or indirectly by or for an individual, trust or person; the same more-than-50% test recurs in Sec. 37(1)(c) to (n)",
+   "level": "group",
+   "trigger": "scope_definition",
+   "consequence": "Determines affiliate status, which is used in the operator and owner definitions and in the replacement-exclusion test of Sec. 40(2)(b)1",
+   "conditions": "Applies to the affiliate relationships listed in Sec. 37(1)(b) to (n)",
+   "evidence": {
+    "provision": "Sec. 37(1)(b)",
+    "quote": "a corporation more than fifty percent (50%) in value of the outstanding stock"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "number of individuals, estates or trusts owning stock of corporations in a controlled group",
+   "operator": "<=",
+   "value": 5,
+   "value_text": "five (5) or fewer persons",
+   "unit": "persons",
+   "measurement": "persons who are individuals, estates or trusts owning more than fifty percent of voting power or value of each corporation",
+   "level": "group",
+   "trigger": "scope_definition",
+   "consequence": "Two or more corporations owned by five or fewer such persons are affiliates",
+   "conditions": "Stock ownership counted per person only to the extent identical with respect to each corporation",
+   "evidence": {
+    "provision": "Sec. 37(1)(d)2",
+    "quote": "Two (2) or more corporations if five (5) or fewer persons who are"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "consecutive days a data center to be rehabilitated has not been in operation",
+   "operator": ">=",
+   "value": 90,
+   "value_text": "ninety (90) or more consecutive days",
+   "unit": "days",
+   "measurement": "consecutive days not in operation before the rehabilitation project",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "An existing data center meeting this condition may be rehabilitated under an approved project",
+   "conditions": "Read with Sec. 40(2)(a)2 and as an alternative to Sec. 40(2)(a)3, per the enumeration as extracted",
+   "evidence": {
+    "provision": "Sec. 40(2)(a)1",
+    "quote": "ninety (90) or more consecutive days"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "period during which normal operations cannot be resumed at the data center to be replaced",
+   "operator": ">=",
+   "value": 12,
+   "value_text": "cannot be resumed within twelve (12) months",
+   "unit": "months",
+   "measurement": "months after loss of title by eminent domain, or after fire or other casualty",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Replacement of an existing data center of an eligible company may be approved",
+   "conditions": "Alternatively under Sec. 40(2)(b)1.a (title held by or may be taken by eminent domain) or Sec. 40(2)(b)2 (damage or destruction by fire or casualty, same twelve-month period)",
+   "evidence": {
+    "provision": "Sec. 40(2)(b)1",
+    "quote": "resumed within twelve (12) months"
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "Affiliate",
+   "defined_in": "This Act, Sec. 37 (new KRS 154 section)",
+   "evidence": {
+    "provision": "Sec. 37(1)",
+    "quote": "\"Affiliate\" means the following:"
+   }
+  },
+  {
+   "term": "Approved company",
+   "defined_in": "This Act, Sec. 37 (new KRS 154 section)",
+   "evidence": {
+    "provision": "Sec. 37(3)",
+    "quote": "\"Approved company\" means an eligible company that has received final approval"
+   }
+  },
+  {
+   "term": "Authority",
+   "defined_in": "This Act, Sec. 37 (new KRS 154 section)",
+   "evidence": {
+    "provision": "Sec. 37 (\"Authority\" definition, unnumbered in extracted text)",
+    "quote": "\"Authority\" means the Kentucky Economic Development Finance Authority"
+   }
+  },
+  {
+   "term": "Colocation tenant",
+   "defined_in": "This Act, Sec. 37 (new KRS 154 section)",
+   "evidence": {
+    "provision": "Sec. 37(4)",
+    "quote": "\"Colocation tenant\" means an entity that contracts with the owner or operator"
+   }
+  },
+  {
+   "term": "Commonwealth",
+   "defined_in": "This Act, Sec. 37 (new KRS 154 section)",
+   "evidence": {
+    "provision": "Sec. 37(5)",
+    "quote": "\"Commonwealth\" means the Commonwealth of Kentucky;"
+   }
+  },
+  {
+   "term": "Data center equipment",
+   "defined_in": "This Act, Sec. 37 (new KRS 154 section)",
+   "evidence": {
+    "provision": "Sec. 37(6)(a)",
+    "quote": "used directly and exclusively in a qualified data center project"
+   }
+  },
+  {
+   "term": "Department",
+   "defined_in": "This Act, Sec. 37 (new KRS 154 section)",
+   "evidence": {
+    "provision": "Sec. 37(7)",
+    "quote": "\"Department\" means the Department of Revenue;"
+   }
+  },
+  {
+   "term": "Eligible company",
+   "defined_in": "This Act, Sec. 37 (new KRS 154 section)",
+   "evidence": {
+    "provision": "Sec. 37(8)(a)",
+    "quote": "Means any corporation, limited liability company, partnership."
+   }
+  },
+  {
+   "term": "Eligible costs",
+   "defined_in": "This Act, Sec. 37 (new KRS 154 section)",
+   "evidence": {
+    "provision": "Sec. 37(9)",
+    "quote": "\"Eligible costs\" means expenditures made by the preliminarily approved"
+   }
+  },
+  {
+   "term": "Final approval",
+   "defined_in": "This Act, Sec. 37 (new KRS 154 section)",
+   "evidence": {
+    "provision": "Sec. 37(10)",
+    "quote": "\"Final approval\" means the action taken by the authority to verify that"
+   }
+  },
+  {
+   "term": "Memorandum of agreement",
+   "defined_in": "This Act, Sec. 37 (new KRS 154 section)",
+   "evidence": {
+    "provision": "Sec. 37(11)",
+    "quote": "\"Memorandum of agreement\" means the agreement between the eligible company and the authority executed under Section 41 of this Act;"
+   }
+  },
+  {
+   "term": "Operator",
+   "defined_in": "This Act, Sec. 37 (new KRS 154 section)",
+   "evidence": {
+    "provision": "Sec. 37(12)(a)",
+    "quote": "Means any entity, other than an owner, a project organizer, or a colocation tenant:"
+   }
+  },
+  {
+   "term": "Owner",
+   "defined_in": "This Act, Sec. 37 (new KRS 154 section)",
+   "evidence": {
+    "provision": "Sec. 37(13)",
+    "quote": "\"Owner\" means an entity, other than a project organizer, holding fee title to a data center project and includes an affiliate of an owner;"
+   }
+  },
+  {
+   "term": "Preliminary approval",
+   "defined_in": "This Act, Sec. 37 (new KRS 154 section)",
+   "evidence": {
+    "provision": "Sec. 37(14)",
+    "quote": "\"Preliminary approval\" means the action taken by the authority to enter into a memorandum of agreement with an eligible company;"
+   }
+  },
+  {
+   "term": "Project organizer",
+   "defined_in": "This Act, Sec. 37 (new KRS 154 section)",
+   "evidence": {
+    "provision": "Sec. 37(15)(a)",
+    "quote": "Solely provides qualified data center infrastructure for a qualified data center project; and"
+   }
+  },
+  {
+   "term": "Qualified data center infrastructure",
+   "defined_in": "This Act, Sec. 37 (new KRS 154 section)",
+   "evidence": {
+    "provision": "Sec. 37(16)",
+    "quote": "\"Qualified data center infrastructure\" means providing site development and organization for a qualified data center project"
+   }
+  },
+  {
+   "term": "Qualified data center project",
+   "defined_in": "This Act, Sec. 37 (new KRS 154 section)",
+   "evidence": {
+    "provision": "Sec. 37(17)(a)2",
+    "quote": "Acquiring, leasing, rehabilitating, expanding, or constructing one (1) or more buildings that:"
+   }
+  },
+  {
+   "term": "Term",
+   "defined_in": "This Act, Sec. 37 (new KRS 154 section)",
+   "evidence": {
+    "provision": "Sec. 37(18)",
+    "quote": "\"Term\" means the period of time for which a memorandum of agreement may be in effect"
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "eligibility_condition",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "To qualify for the Section 42 sales and use tax exemption, an eligible company must enter into a memorandum of agreement with the authority and incur eligible costs for a qualified data center project.",
+   "applies_from": "not stated in the excerpt",
+   "conditional_on": "Claiming the sales and use tax exemption under Section 42",
+   "evidence": {
+    "provision": "Sec. 38(2)",
+    "quote": "an eligible company shall enter into a memorandum of agreement"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Authority shall notify the department of the preliminary approval, provide the memorandum of agreement information, and authorize the department to issue a certificate of exemption; authority shall also post the company's name, project location and investment costs on the cabinet's website.",
+   "applies_from": "Upon preliminary approval",
+   "conditional_on": "Preliminary approval of an eligible company",
+   "evidence": {
+    "provision": "Sec. 39(1)(d)2.",
+    "quote": "Notify the department of the preliminary approval"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Preliminarily approved company shall submit documentation required by the authority on request, and documentation confirming that memorandum requirements are met to obtain final approval.",
+   "applies_from": "Upon request of the authority, and for final approval on submission of documentation",
+   "conditional_on": "Preliminary approval given; for final approval, the memorandum requirements",
+   "evidence": {
+    "provision": "Sec. 39(1)(d)3.",
+    "quote": "The preliminarily approved company shall submit any documentation"
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "government_agency",
+   "modality": "may",
+   "summary": "Authority may establish procedures and standards for review and approval of eligible companies and data center projects through administrative regulations under KRS Chapter 13A.",
+   "applies_from": "not stated in the excerpt",
+   "evidence": {
+    "provision": "Sec. 39(2)(a)",
+    "quote": "The authority may establish procedures and standards for the review and"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Application to the authority shall include the applicant's name, a project description with location, total proposed capital investment and total proposed eligible costs, and any other information the authority requires.",
+   "applies_from": "not stated in the excerpt",
+   "conditional_on": "Application for approval under Sections 37 to 41",
+   "evidence": {
+    "provision": "Sec. 39(3)",
+    "quote": "The application shall include but not be limited to:"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "government_agency",
+   "modality": "shall_not",
+   "summary": "Authority shall not approve a data center project that otherwise meets the requirements and would replace existing facilities in the state, except as provided in this section.",
+   "applies_from": "not stated in the excerpt",
+   "conditional_on": "Project would result in replacement of existing facilities in the state",
+   "evidence": {
+    "provision": "Sec. 40(1)",
+    "quote": "The authority shall not approve a proposed data center project that otherwise"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "government_agency",
+   "modality": "shall_not",
+   "summary": "Authority shall not approve a data center project under this section that results in a lease abandonment or lease termination by the eligible company without the lessor's consent.",
+   "applies_from": "not stated in the excerpt",
+   "conditional_on": "Lease abandonment or termination without consent of the lessor",
+   "evidence": {
+    "provision": "Sec. 40(3)",
+    "quote": "The authority shall not approve a proposed data center project under this section"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Memorandum of agreement terms require the preliminarily approved company to provide the authority with requested documentation within required timeframes, and to notify the authority immediately if it sells, transfers or disposes of the project land.",
+   "applies_from": "not stated in the excerpt",
+   "conditional_on": "Terms of the memorandum of agreement",
+   "evidence": {
+    "provision": "Sec. 41(2)",
+    "quote": "That the preliminarily approved company shall provide the authority with all"
+   }
+  },
+  {
+   "type": "record_keeping",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Memorandum of agreement terms require the approved company to make available to the authority all its records pertaining to the project, including records of eligible costs and other records the authority may require.",
+   "applies_from": "not stated in the excerpt",
+   "conditional_on": "Terms of the memorandum of agreement",
+   "evidence": {
+    "provision": "Sec. 41(9)",
+    "quote": "That the approved company shall make available to the authority all of its records"
+   }
+  },
+  {
+   "type": "eligibility_condition",
+   "addressee": "data_center_owner",
+   "modality": "shall",
+   "summary": "If a subsequent owner wants the sales and use tax exemption to continue, it shall enter into a memorandum of agreement with the authority for the remainder of the eligibility period.",
+   "applies_from": "not stated in the excerpt",
+   "conditional_on": "Continuation of the sales and use tax exemption desired by the subsequent owner",
+   "evidence": {
+    "provision": "Sec. 41(8)(c)",
+    "quote": "The subsequent owner shall enter into a memorandum of agreement"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Department shall issue a certificate of exemption to the preliminarily approved company or approved company upon notification that the authority has executed a memorandum of agreement.",
+   "applies_from": "not stated in the excerpt",
+   "conditional_on": "Authority has executed a memorandum of agreement with a preliminarily approved company",
+   "evidence": {
+    "provision": "Sec. 42(4)",
+    "quote": "the department shall issue a certificate of"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Preliminarily approved company shall report annually to the department the project's identifying information, county, and an itemized schedule of equipment purchased during the fiscal year with the unpaid sales and use tax, verified and certified by an independent third party.",
+   "applies_from": "Beginning September 1, 2025, and on or before September 1 for each year thereafter",
+   "conditional_on": "Preliminarily approved company status",
+   "evidence": {
+    "provision": "Sec. 42(6)",
+    "quote": "a preliminarily approved company shall report to the department"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Department shall report to the authority and the Interim Joint Committee on Appropriations and Revenue the data reported for data center projects under subsection (6).",
+   "applies_from": "Beginning November 1, 2025, and on or before November 1 of each year thereafter",
+   "conditional_on": "Reports received under Sec. 42(6)",
+   "evidence": {
+    "provision": "Sec. 42(7)",
+    "quote": "the department shall report to the authority and the Interim Joint"
+   }
+  }
+ ],
+ "enforcement": [
+  {
+   "sanction_type": "benefit_revocation_clawback",
+   "authority": "Department of Revenue (department) and Kentucky Economic Development Finance Authority (authority)",
+   "triggered_by": "Preliminarily approved company fails to meet the minimum capital investment on or before the fifth anniversary of the memorandum of agreement",
+   "max_penalty_text": "No separate penalty amount stated. Recovery of sales and use tax is capped at the tax not paid because of the exemption plus interest required under KRS Chapter 131.",
+   "penalty_formula": "Tax not paid as a result of the sales and use tax exemption, plus interest under KRS Chapter 131 (aggregate recovery cap)",
+   "penalty_reference": "KRS Chapter 131; KRS 139.620 (timeliness of notice of assessment); Section 42(5) of this Act",
+   "cure_period": "Failure is tested on or before the fifth anniversary of the memorandum of agreement; no separate cure period stated",
+   "evidence": {
+    "provision": "Section 39(1)(e)3.",
+    "quote": "The preliminarily approved company shall immediately pay the tax"
+   }
+  },
+  {
+   "sanction_type": "benefit_revocation_clawback",
+   "authority": "Kentucky Economic Development Finance Authority (authority)",
+   "triggered_by": "Preliminarily approved company fails to comply with its obligations under the memorandum of agreement by the fifth anniversary of the preliminary approval",
+   "max_penalty_text": "No maximum stated. Authority shall suspend the memorandum of agreement, terminate the incentives, notify the department and instruct it to proceed with the notice of assessment.",
+   "penalty_reference": "Section 42(5) of this Act (department notice of assessment)",
+   "cure_period": "Measured by the fifth anniversary of the preliminary approval; no separate cure period stated",
+   "evidence": {
+    "provision": "Section 41(11)(a)",
+    "quote": "Suspend the memorandum of agreement;"
+   }
+  }
+ ],
+ "section_status": {}
+}

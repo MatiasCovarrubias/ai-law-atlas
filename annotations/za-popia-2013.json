@@ -1,0 +1,853 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "za-popia-2013",
+ "tier": "B",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "light, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-interim-20261014"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (connectors/fetch_texts.py)",
+  "url": "https://www.gov.za/sites/default/files/gcis_document/201409/3706726-11act4of2013popi.pdf",
+  "retrieved": "2026-10-13",
+  "version": "as fetched",
+  "language": "en",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "data_protection",
+   "algorithmic_decision_systems",
+   "data_transfer_localization"
+  ],
+  "primary_domain": "data_protection",
+  "mechanisms": [
+   "mandate_obligation",
+   "prohibition_ban",
+   "licensing_permit_certification",
+   "registration_notification",
+   "disclosure_transparency",
+   "standard_setting",
+   "institution_setup",
+   "enforcement_order",
+   "liability_rule"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "data_controller",
+   "data_processor",
+   "government_agency"
+  ],
+  "affected_roles": [
+   "consumers_users",
+   "minors",
+   "workers"
+  ],
+  "decision_margins": [
+   "firm:input_use",
+   "firm:compliance_process",
+   "firm:trade",
+   "household:data_privacy",
+   "household:information"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national",
+    "extraterritorial"
+   ],
+   "description": "Applies to responsible parties domiciled in South Africa and to non-domiciled responsible parties that use automated or non-automated means in the Republic.",
+   "evidence": {
+    "provision": "Sec. 3(1)(b)(ii)",
+    "quote": "not domiciled in the Republic, but makes use of automated or non-automated means in the Republic"
+   }
+  },
+  "agora_harms": [
+   "Violation of civil or human rights, including privacy"
+  ],
+  "agora_incentives": [
+   "Civil liability",
+   "Fines",
+   "Imprisonment"
+  ],
+  "agora_risk_factors": [
+   "Privacy",
+   "Security",
+   "Transparency"
+  ],
+  "agora_strategies": [
+   "Disclosure: About incidents",
+   "Disclosure: About inputs",
+   "Evaluation",
+   "Input controls: Data use",
+   "Input controls: Data circulation",
+   "Licensing, registration, and certification",
+   "New institution",
+   "Governance development"
+  ]
+ },
+ "summary": {
+  "short": "Protection of Personal Information Act 2013, assented 19 November 2013, regulates processing of personal information by responsible parties domiciled in or using means in South Africa. It sets eight processing conditions, limits on special and child information, automated decisions and transborder transfers, and Information Regulator enforcement with offences and fines.",
+  "long": "The Act regulates the processing of personal information by responsible parties domiciled in South Africa or using automated or non-automated means in it, and excludes purely personal or household activity, fully de-identified data, and certain journalistic, national security and judicial processing. Chapter 3 sets eight conditions: accountability, lawfulness and minimality with consent or other grounds, purpose specification, further processing limits, information quality, openness and notice, security safeguards with breach notification, and data subject participation. Part B prohibits processing special personal information and Part C prohibits processing children's personal information, each subject to listed authorisations or exceptions. Chapter 6 requires prior authorisation from the Regulator for listed processing. Chapter 8 regulates unsolicited electronic direct marketing and section 71 limits decisions based solely on automated profiling. Section 72 limits transfers outside the Republic. Chapter 5 establishes the Information Regulator, which may investigate, issue information and enforcement notices, and refer matters to an Enforcement Committee. Chapter 10 provides civil damages actions. Chapter 11 sets offences punishable by fines or imprisonment of up to 10 years or 12 months, and administrative fines not exceeding R10 million, which the Minister may adjust under section 109(10). The annotated part ends at section 109."
+ },
+ "relations": [
+  {
+   "relation": "implements",
+   "target_text": "Constitution of the Republic of South Africa, 1996",
+   "note": "The Act states that it gives effect to the constitutional right to privacy (s.2(a)). It also refers to s.14 of the Constitution (Preamble), s.213 (s.109(9)) and s.166 (s.6(1)(e)).",
+   "evidence": {
+    "provision": "Section 2(a)",
+    "quote": "give effect to the constitutional right to privacy"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Promotion of Access to Information Act, 2000 (Act No. 2 of 2000)",
+   "note": "Many provisions interact with PAIA: s.1 (information officer, Regulator powers), s.17 (documentation, PAIA ss.14 and 51), s.23(4)-(5) and s.25 (refusal grounds and manner of access), s.39(c), s.40(4), s.43, s.47 and s.56. Several of these apply PAIA provisions to functions under this Act.",
+   "evidence": {
+    "provision": "Section 1 (definition of Promotion of Access to Information Act)",
+    "quote": "the Promotion of Access to Information Act, 2000 (Act No. 2 of 2000)"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Protection of Constitutional Democracy against Terrorist and Related Activities Act, 2004 (Act No. 33 of 2004)",
+   "note": "Section 4 of that Act defines the activities that make up 'terrorist and related activities' for the public-body exclusion in s.6(1)(c).",
+   "evidence": {
+    "provision": "Section 6(2)",
+    "quote": "section 4 of the Protection of Constitutional Democracy against Terrorist and Related Activities Act, 2004 (Act No. 33 of 2004)"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "South African Revenue Service Act, 1997 (Act No. 34 of 1997)",
+   "note": "Its s.1 definition of 'revenue' is used in the collection-of-revenue exceptions in s.12(2)(d)(ii), s.15(3)(c)(ii) and s.18(4)(c)(ii).",
+   "evidence": {
+    "provision": "Section 12(2)(d)(ii)",
+    "quote": "South African Revenue Service Act, 1997 (Act No. 34 of 1997)"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Electoral Act, 1998 (Act No. 73 of 1998)",
+   "note": "Cited in s.31(1)(b)(ii)(aa) as the law regulating elections for which political parties may process personal information.",
+   "evidence": {
+    "provision": "Section 31(1)(b)(ii)(aa)",
+    "quote": "Electoral Act, 1998 (Act No. 73 of 1998)"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Local Government: Municipal Electoral Act, 2000 (Act No. 27 of 2000)",
+   "note": "Cited in s.31(1)(b)(ii)(bb) as the law regulating municipal elections.",
+   "evidence": {
+    "provision": "Section 31(1)(b)(ii)(bb)",
+    "quote": "Local Government: Municipal Electoral Act, 2000 (Act No. 27 of 2000)"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Referendums Act, 1983 (Act No. 108 of 1983)",
+   "note": "Cited in s.31(1)(b)(ii)(cc) as the law regulating referendums.",
+   "evidence": {
+    "provision": "Section 31(1)(b)(ii)(cc)",
+    "quote": "Referendums Act, 1983"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Commissions Act, 1947 (Act No. 8 of 1947)",
+   "note": "Ss.3 and 4 of the Commissions Act apply to the Regulator, with the necessary changes.",
+   "evidence": {
+    "provision": "Section 40(3)",
+    "quote": "The provisions of sections 3 and 4 of the Commissions Act, 1947 (Act No. 8 of 1947)"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Public Service Act, 1994 (Proclamation No. 103 of 1994)",
+   "note": "Used in s.46(1) to exclude Regulator members who are subject to the Public Service Act from the remuneration provision.",
+   "evidence": {
+    "provision": "Section 46(1)",
+    "quote": "Public Service Act, 1994"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Public Finance Management Act, 1999 (Act No. 1 of 1999)",
+   "note": "S.52(3) makes the Regulator's chief executive officer the accounting officer under that Act.",
+   "evidence": {
+    "provision": "Section 52(3)",
+    "quote": "Public Finance Management Act, 1999 (Act No. 1 of 1999)"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Criminal Procedure Act, 1977 (Act No. 51 of 1977)",
+   "note": "S.109(8) states that an administrative fine under this Act is not a previous conviction for the purposes of Chapter 27 of that Act.",
+   "evidence": {
+    "provision": "Section 109(8)",
+    "quote": "Criminal Procedure Act, 1977"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Public Protector Act, 1994 (Act 23 of 1994)",
+   "note": "Schedule item 1 amends sections 6(4)(b), 6(4)(c) and deletes section 6(4)(d) of the Public Protector Act; section 110 makes the Schedule amendments.",
+   "evidence": {
+    "provision": "s 110; Schedule (Act 23 of 1994)",
+    "quote": "Act 23 of 1994"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Promotion of Access to Information Act, 2000 (Act 2 of 2000)",
+   "note": "Schedule items 1 to 23 amend the Promotion of Access to Information Act, including sections 1, 10, 11, 14, 15, 22, 49, 51, 77A to 77K and 78, and the Part 5 heading; item 22 repeals section 88.",
+   "evidence": {
+    "provision": "s 110; Schedule (Act 2 of 2000)",
+    "quote": "Act 2 of 2000"
+   }
+  },
+  {
+   "relation": "repeals",
+   "target_text": "Promotion of Access to Information Act, 2000, section 88",
+   "note": "Schedule item 22 repeals section 88 of the Promotion of Access to Information Act.",
+   "evidence": {
+    "provision": "Schedule (Act 2 of 2000), item 22",
+    "quote": "22. The repeal of section 88."
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Electronic Communications and Transactions Act, 2002 (Act 25 of 2002)",
+   "note": "Schedule item 1 substitutes the definition of 'personal information' in section 1 of the Electronic Communications and Transactions Act.",
+   "evidence": {
+    "provision": "s 110; Schedule (Act 25 of 2002)",
+    "quote": "Act 25 of 2002"
+   }
+  },
+  {
+   "relation": "repeals",
+   "target_text": "Electronic Communications and Transactions Act, 2002, sections 45, 50 and 51",
+   "note": "Schedule item 2 repeals sections 45, 50 and 51 of the Electronic Communications and Transactions Act.",
+   "evidence": {
+    "provision": "Schedule (Act 25 of 2002), item 2",
+    "quote": "2. The repeal of sections 45, 50 and 51."
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "National Credit Act, 2005 (Act 34 of 2005)",
+   "note": "Schedule items 1 to 5 amend sections 1, 55, 68, 136 and 137 of the National Credit Act; section 55(2)(b) subjects certain provisions to the compliance procedures in Chapters 10 and 11 of this Act.",
+   "evidence": {
+    "provision": "s 110; Schedule (Act 34 of 2005)",
+    "quote": "Act 34 of 2005"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Promotion of Access to Information Act, 2000, sections 83 and 84",
+   "note": "Section 114(4) requires the South African Human Rights Commission to finalise its functions under sections 83 and 84 of the Promotion of Access to Information Act after their amendment under this Act.",
+   "evidence": {
+    "provision": "s 114(4)",
+    "quote": "of the Promotion of Access to Information Act, as soon as reasonably possible"
+   }
+  }
+ ],
+ "notes": "This part covers the Act's text from the front matter through s.109(10). Section 110 (Amendment of laws), ss.111-115 and the amendment schedule are not in this extract and are left to part 2, so no amends or amended_by relations are coded here. The 'SCHEDULE: Laws amended by section 110' heading in this extract is followed by Chapter 1 text of this Act, which looks like a layout artefact. No internal inconsistency of substance was found. target_instrument_id is empty for every relation because none of the cited Acts is identified in the registry text; target_text carries the names. s.109(10) allows the Minister to adjust the s.109(2)(c) fine ceiling by notice; the R10 million ceiling is the figure in s.109(2)(c). Part 2 of 2 covers ss 110 to 115 and the Schedule. Schedule amendments to the Promotion of Access to Information Act restate amended text with brackets and strike-throughs; only the added or changed wording is relevant to coding. Target instrument IDs are not given in the text, so target_instrument_id is empty. Section 110 gives 'the third column of the Schedule' as the extent of the amendments.",
+ "events": [
+  {
+   "event": "signed",
+   "date": "2013-11-19",
+   "date_type": "absolute",
+   "date_text": "(Assented to 19 November 2013)",
+   "applies_to": "Act as a whole (assent by the President)",
+   "evidence": {
+    "provision": "Front matter",
+    "quote": "(Assented to 19 November 2013)"
+   }
+  },
+  {
+   "event": "published",
+   "date": "2013-11-26",
+   "date_type": "absolute",
+   "date_text": "GOVERNMENT GAZETTE, 26 November 2013",
+   "applies_to": "Act as a whole (Government Gazette No. 37067)",
+   "evidence": {
+    "provision": "Front matter",
+    "quote": "GOVERNMENT GAZETTE, 26 November 2013"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "within four weeks of the notiﬁcation",
+   "depends_on": "notification of information processing under section 58(1)",
+   "applies_to": "Regulator's written statement whether a more detailed investigation will be conducted",
+   "offset_value": 4,
+   "offset_unit": "weeks",
+   "evidence": {
+    "provision": "Sec. 58(3)",
+    "quote": "the Regulator must inform the responsible party in writing within four weeks of the notiﬁcation"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "which period must not exceed 13 weeks",
+   "depends_on": "Regulator's decision to conduct a more detailed investigation under section 58(4)",
+   "applies_to": "period within which the Regulator plans to conduct the more detailed investigation",
+   "offset_value": 13,
+   "offset_unit": "weeks",
+   "evidence": {
+    "provision": "Sec. 58(4)",
+    "quote": "which period must not exceed 13 weeks"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "must be made within a reasonable period which must not exceed 13 weeks",
+   "depends_on": "application for the issuing of a code of conduct under section 61(1)(b)",
+   "applies_to": "decision on an application for the issuing of a code of conduct",
+   "offset_value": 13,
+   "offset_unit": "weeks",
+   "evidence": {
+    "provision": "Sec. 61(4)",
+    "quote": "must be made within a reasonable period which must not exceed 13 weeks"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "comes into force on the 28th day after the date of its notiﬁcation in the Gazette",
+   "depends_on": "notification of the code of conduct in the Gazette under section 62(1)(a)",
+   "applies_to": "codes of conduct issued under section 60",
+   "offset_value": 28,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Sec. 62(2)",
+    "quote": "comes into force on the 28th day after the date of its notiﬁcation in the Gazette"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "Within six months after the end of each ﬁnancial year",
+   "anchor": "end of each financial year of the Regulator",
+   "applies_to": "Regulator's financial statements for the preceding financial year",
+   "evidence": {
+    "provision": "Sec. 52(4)",
+    "quote": "Within six months after the end of each ﬁnancial year, the Regulator must prepare ﬁnancial statements"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "within ﬁve months of the end of its ﬁnancial year",
+   "anchor": "end of each financial year of the Regulator",
+   "applies_to": "Regulator's report to Parliament on its activities under the Act",
+   "evidence": {
+    "provision": "Sec. 40(1)(b)(v)",
+    "quote": "submitting a report to Parliament, within ﬁve months of the end of its ﬁnancial year"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "within ﬁve months of the end of a ﬁnancial year of the Regulator",
+   "anchor": "end of each financial year of the Regulator",
+   "applies_to": "adjudicator's report to the Regulator on the operation of a code of conduct",
+   "evidence": {
+    "provision": "Sec. 63(2)(d)",
+    "quote": "within ﬁve months of the end of a ﬁnancial year of the Regulator"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "at any time within seven days of the date of the warrant",
+   "depends_on": "date of the warrant issued under section 82(1)",
+   "applies_to": "entry, search and inspection under a warrant issued under section 82",
+   "offset_value": 7,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Sec. 82(2)",
+    "quote": "at any time within seven days of the date of the warrant"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "the Regulator has given seven days’ notice in writing to the occupier of the premises in question",
+   "depends_on": "written notice by the Regulator to the occupier demanding access, before a warrant is issued",
+   "applies_to": "issue of a warrant under section 82",
+   "offset_value": 7,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Sec. 83(1)(a)",
+    "quote": "the Regulator has given seven days’ notice in writing to the occupier of the premises in question"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "may not require the information to be furnished before the end of a period of three days beginning with the day on which the notice is served",
+   "depends_on": "service of an urgent information notice under subsection (4)",
+   "applies_to": "information notices stated to be urgent",
+   "offset_value": 3,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Sec. 90(5)",
+    "quote": "may not require the information to be furnished before the end of a period of three days beginning with the day on which the notice is served"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "may not require any of the provisions of the notice to be complied with before the end of a period of three days",
+   "depends_on": "service of an urgent enforcement notice under subsection (4)",
+   "applies_to": "enforcement notices stated to be urgent",
+   "offset_value": 3,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Sec. 95(5)",
+    "quote": "may not require any of the provisions of the notice to be complied with before the end of a period of three days"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "within 30 days of receiving the notice, appeal to the High Court",
+   "depends_on": "receipt of an information or enforcement notice",
+   "applies_to": "appeal by a responsible party against an information or enforcement notice",
+   "offset_value": 30,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Sec. 97(1)",
+    "quote": "within 30 days of receiving the notice, appeal to the High Court"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "within 180 days of receiving the result, appeal to the High Court",
+   "depends_on": "receipt of the result of the investigation",
+   "applies_to": "appeal by a complainant against the result of an investigation",
+   "offset_value": 180,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Sec. 97(2)",
+    "quote": "within 180 days of receiving the result, appeal to the High Court"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "Any amount not distributed within three years from the date of the ﬁrst distribution of payments",
+   "depends_on": "first distribution of payments under subsection (4)",
+   "applies_to": "amounts awarded to the Regulator in civil actions that are not distributed",
+   "offset_value": 3,
+   "offset_unit": "years",
+   "evidence": {
+    "provision": "Sec. 99(5)",
+    "quote": "Any amount not distributed within three years from the date of the ﬁrst distribution"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "not later than 30 days after the date of service of the infringement notice",
+   "depends_on": "service of the infringement notice under subsection (1)",
+   "applies_to": "payment, instalment arrangement or election to be tried in court in response to an infringement notice",
+   "offset_value": 30,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Sec. 109(2)(d)",
+    "quote": "not later than 30 days after the date of service of the infringement notice"
+   }
+  },
+  {
+   "event": "published",
+   "date": "2013-11-26",
+   "date_type": "absolute",
+   "date_text": "GOVERNMENT GAZETTE, 26 November 2013",
+   "applies_to": "Act No. 4 of 2013 (Government Gazette No. 37067)",
+   "evidence": {
+    "provision": "Gazette page header (Act No. 4 of 2013, No. 37067)",
+    "quote": "GOVERNMENT GAZETTE, 26 November 2013"
+   }
+  },
+  {
+   "event": "amended",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "The laws mentioned in the Schedule are amended to the extent indicated in the third column of the Schedule.",
+   "depends_on": "commencement of this Act under section 115(1)",
+   "applies_to": "laws listed in the Schedule (Public Protector Act 23 of 1994; PAIA 2 of 2000; ECTA 25 of 2002; National Credit Act 34 of 2005)",
+   "evidence": {
+    "provision": "s 110",
+    "quote": "The laws mentioned in the Schedule are amended to the extent indicated"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "All processing of personal information must within one year after the commencement of this section be made to conform to this Act.",
+   "anchor": "commencement of section 114",
+   "depends_on": "commencement of section 114 by proclamation under section 115(1)-(2)",
+   "applies_to": "all processing of personal information",
+   "offset_value": 1,
+   "offset_unit": "years",
+   "evidence": {
+    "provision": "s 114(1)",
+    "quote": "All processing of personal information must within one year after the commencement of this section be made to conform to this Act."
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "Section 58(2) does not apply to processing referred to in section 57, which is taking place on the date of commencement of this Act, until the Regulator determines otherwise by notice in Gazette.",
+   "anchor": "date of commencement of this Act",
+   "depends_on": "Information Regulator notice in the Gazette ending the exemption",
+   "applies_to": "processing referred to in section 57 taking place on the date of commencement of this Act",
+   "evidence": {
+    "provision": "s 114(3)",
+    "quote": "Section 58(2) does not apply to processing referred to in section 57,"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "as soon as reasonably possible after the amendment of those sections in terms of this Act",
+   "anchor": "amendment of sections 83 and 84 of the Promotion of Access to Information Act in terms of this Act",
+   "depends_on": "amendment of sections 83 and 84 of PAIA in terms of this Act",
+   "applies_to": "South African Human Rights Commission functions under PAIA ss 83 and 84",
+   "evidence": {
+    "provision": "s 114(4)",
+    "quote": "amendment of those sections in terms of this Act"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "commences on a date determined by the President by proclamation in the Gazette",
+   "depends_on": "presidential proclamation in the Gazette",
+   "applies_to": "the Act as a whole; different dates may be set for different provisions or classes of information and bodies (s 115(2))",
+   "evidence": {
+    "provision": "s 115(1)",
+    "quote": "commences on a date determined by the President by proclamation in the Gazette."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "must, within 30 days before publication of the regulations in the Gazette, as referred to in subsection (2)(b) or (4)(b), table them in Parliament",
+   "anchor": "publication of regulations in the Gazette under section 113(2)(b) or (4)(b)",
+   "depends_on": "publication of regulations in the Gazette",
+   "applies_to": "regulations made by the Minister or the Regulator under section 112",
+   "offset_value": -30,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "s 113(5)(a)",
+    "quote": "within 30 days before publication of the regulations in the Gazette"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "within 180 days of the decision",
+   "anchor": "decision of the information officer or relevant authority of a public body, or of the head of a private body",
+   "applies_to": "requester's complaint to the Information Regulator (new PAIA s 77A(2))",
+   "offset_value": 180,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Sch., Act 2 of 2000 (PAIA), item 18 (inserting s 77A(2))",
+    "quote": "within 180 days of the decision"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "within 180 days of the decision",
+   "anchor": "decision of the information officer or relevant authority of a public body, or of the head of a private body",
+   "applies_to": "third party's complaint to the Information Regulator (new PAIA s 77A(3))",
+   "offset_value": 180,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Sch., Act 2 of 2000 (PAIA), item 18 (inserting s 77A(3))",
+    "quote": "within 180 days of the decision"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "within [30] 180 days apply to a court for appropriate relief in terms of section 82",
+   "anchor": "decision referred to in s 78(2)(a)-(e), including decisions of the Information Regulator",
+   "applies_to": "requester's application to court (PAIA s 78(2))",
+   "offset_value": 180,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Sch., Act 2 of 2000 (PAIA), item 19 (amending s 78(2))",
+    "quote": "180 days apply to a court for appropriate"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "within [30] 180 days apply to a court for appropriate relief in terms of section 82",
+   "anchor": "decision referred to in s 78(3)(a)-(d), including decisions of the Information Regulator",
+   "applies_to": "third party's application to court (PAIA s 78(3))",
+   "offset_value": 180,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Sch., Act 2 of 2000 (PAIA), item 19 (amending s 78(3))",
+    "quote": "180 days apply to a court for appropriate"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "within 180 days apply to a court for appropriate relief in terms of section 82",
+   "anchor": "decision of the Information Regulator under s 77E(2)(b) or (c)",
+   "applies_to": "information officer, relevant authority or head of private body (PAIA s 78(4))",
+   "offset_value": 180,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Sch., Act 2 of 2000 (PAIA), item 19 (amending s 78(4))",
+    "quote": "within 180 days apply to a court for appropriate"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "within 30 days after notice is given",
+   "anchor": "notice of the decision to grant a request for access",
+   "applies_to": "third party's internal appeal, complaint or application against the decision (PAIA s 49(3)(b))",
+   "offset_value": 30,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Sch., Act 2 of 2000 (PAIA), item 11 (amending s 49(3)(b))",
+    "quote": "within 30 days after notice is given"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "within 30 days after notice is given",
+   "anchor": "notice of the decision of the head of a public body",
+   "applies_to": "third party's complaint or application against the decision (PAIA s 73(3)(b))",
+   "offset_value": 30,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Sch., Act 2 of 2000 (PAIA), item 17 (amending s 73(3)(b))",
+    "quote": "within 30 days after notice is"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "at intervals of not more than two years",
+   "applies_to": "Information Regulator update and publication of the PAIA guide (s 10(3))",
+   "offset_value": 2,
+   "offset_unit": "years",
+   "evidence": {
+    "provision": "Sch., Act 2 of 2000 (PAIA), item 2 (amending s 10(3))",
+    "quote": "at intervals of not more than two years"
+   }
+  },
+  {
+   "event": "repealed",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "The repeal of section 88.",
+   "depends_on": "commencement of this Act under section 115(1)",
+   "applies_to": "Promotion of Access to Information Act 2 of 2000, section 88",
+   "evidence": {
+    "provision": "Sch., Act 2 of 2000 (PAIA), item 22",
+    "quote": "The repeal of section 88."
+   }
+  },
+  {
+   "event": "repealed",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "The repeal of sections 45, 50 and 51.",
+   "depends_on": "commencement of this Act under section 115(1)",
+   "applies_to": "Electronic Communications and Transactions Act 25 of 2002, sections 45, 50 and 51",
+   "evidence": {
+    "provision": "Sch., Act 25 of 2002 (ECTA), item 2",
+    "quote": "The repeal of sections 45, 50 and 51."
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "age",
+   "variable_text": "age of a natural person for the definition of 'child'",
+   "operator": "<",
+   "value": 18,
+   "value_text": "under the age of 18 years",
+   "unit": "years",
+   "measurement": "age of the natural person; the text does not say who measures it or over what window",
+   "level": "person",
+   "trigger": "scope_definition",
+   "consequence": "Defines 'child'. Persons who meet the definition fall under the child-specific rules in Part C of Chapter 3 (ss 34-35).",
+   "conditions": "Also not legally competent, without the assistance of a competent person, to take any action or decision concerning themselves.",
+   "evidence": {
+    "provision": "s 1 (definition of 'child')",
+    "quote": "under the age of 18 years who is not legally competent"
+   }
+  },
+  {
+   "variable": "data_subjects_count",
+   "variable_text": "personal information of ten or more data subjects (document comparison in an information matching programme)",
+   "operator": ">=",
+   "value": 10,
+   "value_text": "ten or more data subjects",
+   "unit": "data subjects",
+   "measurement": "number of data subjects whose personal information appears in the compared documents; not further specified",
+   "level": "other",
+   "trigger": "scope_definition",
+   "consequence": "Sets the definition of 'information matching programme', a term used in ss 40(1)(b)(ix), 44(2) and 60(4)(a)(i).",
+   "conditions": "Comparison of documents, manually or by electronic or other device, made to produce or verify information that may be used for taking action in regard to an identifiable data subject.",
+   "evidence": {
+    "provision": "s 1 (definition of 'information matching programme')",
+    "quote": "personal information about ten or more data subjects"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "years of appropriate experience of a magistrate, for eligibility as Chairperson of the Enforcement Committee",
+   "operator": ">=",
+   "value": 10,
+   "value_text": "magistrate with at least 10 years' appropriate experience, whether in active service or not",
+   "unit": "years",
+   "measurement": "appropriate experience of the magistrate; not further specified",
+   "level": "person",
+   "trigger": "eligibility",
+   "consequence": "A magistrate meeting this experience level is eligible for appointment by the Regulator as Chairperson of the Enforcement Committee.",
+   "conditions": "Appointment made by the Regulator in consultation with the Chief Justice and Minister, as an alternative to a judge of the High Court.",
+   "evidence": {
+    "provision": "s 50(2)(a)(ii)",
+    "quote": "magistrate with at least 10 years’ appropriate experience"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "years of appropriate experience of an advocate or attorney, for eligibility as Chairperson of the Enforcement Committee",
+   "operator": ">=",
+   "value": 10,
+   "value_text": "advocate or attorney with at least 10 years' appropriate experience",
+   "unit": "years",
+   "measurement": "appropriate experience of the advocate or attorney; not further specified",
+   "level": "person",
+   "trigger": "eligibility",
+   "consequence": "An advocate or attorney meeting this experience level is eligible for appointment by the Regulator as Chairperson of the Enforcement Committee.",
+   "conditions": "Must also be a fit and proper person, as set out in s 50(4)(b).",
+   "evidence": {
+    "provision": "s 50(2)(b)",
+    "quote": "advocate or attorney with at least 10 years’ appropriate experience"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "years since death of the individual (exclusion from personal information)",
+   "operator": ">",
+   "value": 20,
+   "value_text": "dead for more than 20 years",
+   "unit": "years",
+   "measurement": "Not stated; time elapsed since the individual's death",
+   "level": "person",
+   "trigger": "scope_definition",
+   "consequence": "Information about an individual who has been dead for more than 20 years is excluded from the definition of 'personal information' as amended in this Schedule item.",
+   "conditions": "Applies to information relating to an identifiable natural person under the amended definition",
+   "evidence": {
+    "provision": "Schedule, Act 2 of 2000 (Promotion of Access to Information Act, 2000), item 1(c) (amending s 1, definition of 'personal information')",
+    "quote": "excludes information about an individual who has been dead for more than 20 years"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "years since death of the individual (exclusion from personal information)",
+   "operator": ">",
+   "value": 20,
+   "value_text": "dead for more than 20 years",
+   "unit": "years",
+   "measurement": "Not stated; time elapsed since the individual's death",
+   "level": "person",
+   "trigger": "scope_definition",
+   "consequence": "Information about an individual who has been dead for more than 20 years is excluded from the definition of 'personal information' as amended in this Schedule item.",
+   "conditions": "Applies to information relating to an identifiable natural person under the amended definition",
+   "evidence": {
+    "provision": "Schedule, Act 25 of 2002 (Electronic Communications and Transactions Act, 2002), item 1 (amending s 1, definition of 'personal information')",
+    "quote": "excludes information about an individual who has been dead for more than 20 years"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "deposit as a share of the access fee (request for access, public body)",
+   "operator": "<=",
+   "value": 0.3333,
+   "value_text": "prescribed portion (being not more than one third) of the access fee",
+   "unit": "share of access fee",
+   "measurement": "Applies where, in the opinion of the information officer, the search and preparation of the record would require more than the hours prescribed for requesters",
+   "level": "other",
+   "trigger": "cap",
+   "consequence": "The deposit the information officer may require as the prescribed portion of the access fee may not exceed one third of the access fee payable if the request is granted.",
+   "conditions": "Prescribed portion is set by regulation; applies to requests for access to a record of a public body",
+   "evidence": {
+    "provision": "Schedule, Act 2 of 2000 (Promotion of Access to Information Act, 2000), item 7(b) (amending s 22(2))",
+    "quote": "the prescribed portion (being not more than one third) of the access fee which would be payable if the request is granted"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "deposit as a share of the access fee (request for access, private body)",
+   "operator": "<=",
+   "value": 0.3333,
+   "value_text": "prescribed portion (being not more than one third) of the access fee",
+   "unit": "share of access fee",
+   "measurement": "Applies where, in the opinion of the head of the private body, the search and preparation of the record would require more than the hours prescribed for requesters",
+   "level": "other",
+   "trigger": "cap",
+   "consequence": "The deposit the head of a private body may require as the prescribed portion of the access fee may not exceed one third of the access fee payable if the request is granted.",
+   "conditions": "Prescribed portion is set by regulation; applies to requests for access to a record of a private body",
+   "evidence": {
+    "provision": "Schedule, Act 2 of 2000 (Promotion of Access to Information Act, 2000), item 14(b) (amending s 54(2))",
+    "quote": "(being not more than one third) of the access fee which would be payable if the request is granted"
+   }
+  }
+ ],
+ "section_status": {}
+}

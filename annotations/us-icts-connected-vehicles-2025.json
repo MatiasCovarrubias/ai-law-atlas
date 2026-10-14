@@ -1,0 +1,781 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "us-icts-connected-vehicles-2025",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "AGORA plaintext (ETO, CC BY-NC 4.0), local cache",
+  "url": "https://www.federalregister.gov/documents/2021/01/19/2021-01234/securing-the-information-and-communications-technology-and-services-supply-chain",
+  "retrieved": "2024-12-06",
+  "version": "1.33.0 (2026-09-16)",
+  "language": "en",
+  "extent": "partial",
+  "note": "AGORA record covers part of an act: 15 CFR part 7 (\"Securing the Information and Communications Technology and Services Supply Chain\")"
+ },
+ "classification": {
+  "domains": [
+   "cybersecurity",
+   "ai_general"
+  ],
+  "primary_domain": "cybersecurity",
+  "mechanisms": [
+   "prohibition_ban",
+   "enforcement_order",
+   "designation_tiering",
+   "mandate_obligation"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "enterprise",
+   "government_agency"
+  ],
+  "affected_roles": [
+   "consumers_users",
+   "hardware_supplier"
+  ],
+  "decision_margins": [
+   "firm:entry_market_access",
+   "firm:input_use",
+   "firm:trade",
+   "firm:compliance_process"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national",
+    "extraterritorial",
+    "targeted"
+   ],
+   "description": "Applies to ICTS transactions conducted by persons under US jurisdiction or involving US-jurisdiction property, reaches persons 'wherever located' in the foreign-adversary definition, and final determinations target specific transactions.",
+   "evidence": {
+    "provision": "§ 7.3(a)(1)",
+    "quote": "Is conducted by any person subject to the jurisdiction of the United States or involves property subject to the jurisdiction of the United States"
+   }
+  },
+  "agora_applications": [
+   "Networking and telecommunications",
+   "Security"
+  ],
+  "agora_harms": [
+   "Harm to infrastructure"
+  ],
+  "agora_incentives": [
+   "Fines",
+   "Imprisonment"
+  ],
+  "agora_risk_factors": [
+   "Security",
+   "Security: Cybersecurity"
+  ],
+  "agora_strategies": [
+   "Input controls",
+   "Evaluation"
+  ]
+ },
+ "summary": {
+  "short": "Commerce rule implementing Executive Order 13873 on procedures for reviewing and prohibiting or mitigating information and communications technology transactions involving foreign-adversary-linked persons. Covers listed ICTS, including AI and machine learning, for transactions on or after January 19, 2021, with IEEPA penalties.",
+  "long": "Subpart A defines scope: ICTS transactions, initiated on or after January 19, 2021 and subject to US jurisdiction, involving products or services designed or supplied by persons tied to foreign adversaries (designated in §7.4). Covered categories include critical infrastructure, telecommunications networks, data hosting handling sensitive personal data on over one million US persons, widely sold devices and used software, and ICTS integral to artificial intelligence and machine learning, quantum, drones, autonomous systems or robotics. Subpart B sets review procedures: referral, initial review against listed risk criteria, interagency consultation, an initial determination, a 30-day response window, and a final determination (prohibited, not prohibited, or permitted with mitigation), generally within 180 days. The Secretary may require sworn information and record retention, and keeps submissions confidential subject to exceptions. Subpart C sets penalties: civil penalties up to the greater of $250,000 (inflation-adjusted) or twice the transaction value; criminal fines up to $1,000,000 and imprisonment up to 20 years for willful violations; administrative penalties up to $307,922 (inflation-adjusted) or twice the transaction value per violation."
+ },
+ "relations": [
+  {
+   "relation": "legal_basis",
+   "target_text": "Executive Order 13873 (May 15, 2019), Securing the Information and Communications Technology and Services Supply Chain",
+   "note": "Sections 2(a), 2(b) and 2(c) of the Executive Order are cited as authority for information demands under § 7.101. The rule also applies the Executive Order's foreign adversary framework (§ 7.4(a)).",
+   "evidence": {
+    "provision": "§ 7.101(a)",
+    "quote": "Pursuant to the authority granted to the Secretary under sections 2(a), 2(b), and 2(c) of the Executive Order and IEEPA"
+   }
+  },
+  {
+   "relation": "legal_basis",
+   "target_text": "International Emergency Economic Powers Act (50 U.S.C. 1701 et seq.)",
+   "note": "Cited with the Executive Order as authority for information demands (§ 7.101) and referenced for civil and criminal penalties (§ 7.200).",
+   "evidence": {
+    "provision": "§ 7.2",
+    "quote": "IEEPA means the International Emergency Economic Powers Act"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "National Defense Authorization Act of 2019",
+   "note": "§ 7.5 states that the part does not alter other authorities, including prohibitions under this Act.",
+   "evidence": {
+    "provision": "§ 7.5",
+    "quote": "including prohibitions under the National Defense Authorization Act of 2019"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Federal Acquisition Regulation (48 CFR ch. 1) and Defense Federal Acquisition Regulation (48 CFR ch. 2)",
+   "note": "Listed as a source the Secretary considers in assessing undue or unacceptable risk.",
+   "evidence": {
+    "provision": "§ 7.100(d)(3)",
+    "quote": "Relevant provisions of the Defense Federal Acquisition Regulation (48 CFR ch. 2) and the Federal Acquisition Regulation (48 CFR ch. 1)"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Defense Production Act of 1950, section 721 (CFIUS review)",
+   "note": "Transactions CFIUS is reviewing or has reviewed are excluded from the part; § 7.3(c) keeps related transactions of other parties in scope.",
+   "evidence": {
+    "provision": "§ 7.3(b)(2)",
+    "quote": "under section 721 of the Defense Production Act of 1950, as amended"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Presidential Policy Directive 21 (Critical Infrastructure Security and Resilience)",
+   "note": "Defines the critical infrastructure sectors used in the scope test.",
+   "evidence": {
+    "provision": "§ 7.3(a)(4)(i)",
+    "quote": "designated as critical infrastructure by Presidential Policy Directive 21"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Executive Order 13526 (classified national security information)",
+   "note": "Defines classified information the Secretary may consider.",
+   "evidence": {
+    "provision": "§ 7.100(a)(3)",
+    "quote": "as defined in Executive Order 13526 (December 29, 2009)"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Executive Order 13556 (Controlled Unclassified Information)",
+   "note": "Defines Controlled Unclassified Information the Secretary may consider.",
+   "evidence": {
+    "provision": "§ 7.100(a)(3)",
+    "quote": "Controlled Unclassified Information, as defined in Executive Order 13556"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "41 U.S.C. 1323 (removal or exclusion orders on Federal Acquisition Security Council recommendations)",
+   "note": "Such orders are a listed input to the undue or unacceptable risk assessment.",
+   "evidence": {
+    "provision": "§ 7.100(d)(2)",
+    "quote": "under 41 U.S.C. 1323"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "18 U.S.C. 1905 (disclosure of information)",
+   "note": "Applies to disclosure of information provided to the Secretary under the rule.",
+   "evidence": {
+    "provision": "§ 7.102(d)",
+    "quote": "The provisions of 18 U.S.C. 1905, relating to fines and imprisonment and other penalties, shall apply"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "18 U.S.C. 1001 (false statements)",
+   "note": "Cited as a further penalty provision for false statements, without prejudice to the penalties in § 7.200.",
+   "evidence": {
+    "provision": "§ 7.200(c)",
+    "quote": "Attention is directed to 18 U.S.C. 1001"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Federal Civil Penalties Inflation Adjustment Act of 1990",
+   "note": "Civil penalties provided in IEEPA are subject to adjustment under this Act.",
+   "evidence": {
+    "provision": "§ 7.200(b)(1)",
+    "quote": "subject to adjustment pursuant to the Federal Civil Penalties Inflation Adjustment Act of 1990"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "15 CFR part 4 (Department of Commerce Freedom of Information Act regulations)",
+   "note": "Public requests for records related to the part are processed under these regulations.",
+   "evidence": {
+    "provision": "§ 7.7",
+    "quote": "Department of Commerce's Freedom of Information Act regulations, 15 CFR part 4"
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "Department of Commerce (United States Department of Commerce)",
+   "role": "designated",
+   "function": "Administers the rule; defined as the Department of Commerce.",
+   "evidence": {
+    "provision": "§ 7.2",
+    "quote": "Department means the United States Department of Commerce."
+   }
+  },
+  {
+   "name": "Secretary of Commerce (or the Secretary's designee)",
+   "role": "designated",
+   "function": "Reviews ICTS Transactions, makes initial and final determinations, and directs cessation or mitigation.",
+   "evidence": {
+    "provision": "§ 7.2",
+    "quote": "Secretary means the Secretary of Commerce or the Secretary's designee."
+   }
+  },
+  {
+   "name": "Appropriate agency heads (Secretary of the Treasury, Secretary of State, Secretary of Defense, Attorney General, Secretary of Homeland Security, United States Trade Representative, Director of National Intelligence, Administrator of General Services, Chairman of the FCC, and others the Secretary determines)",
+   "role": "designated",
+   "function": "Consulted by the Secretary on determinations and, where consensus is not reached, notified to the President.",
+   "evidence": {
+    "provision": "§ 7.2",
+    "quote": "Appropriate agency heads means the Secretary of the Treasury, the Secretary of State, the Secretary of Defense, the Attorney General,"
+   }
+  },
+  {
+   "name": "Committee on Foreign Investment in the United States (CFIUS)",
+   "role": "listed",
+   "function": "Transactions it is actively reviewing, or has reviewed, as covered transactions are excluded from the part.",
+   "evidence": {
+    "provision": "§ 7.3(b)(2)",
+    "quote": "The Committee on Foreign Investment in the United States (CFIUS) is actively reviewing, or has reviewed, as a covered transaction"
+   }
+  },
+  {
+   "name": "Federal Acquisition Security Council",
+   "role": "listed",
+   "function": "Recommends removal or exclusion orders; has designated information-sharing bodies.",
+   "evidence": {
+    "provision": "§ 7.100(a)(7)",
+    "quote": "the Federal Acquisitions Security Council and its designated information-sharing bodies"
+   }
+  },
+  {
+   "name": "Department of Homeland Security Cybersecurity and Infrastructure Security Agency",
+   "role": "listed",
+   "function": "Identifies National Critical Functions, a listed input to the undue or unacceptable risk assessment.",
+   "evidence": {
+    "provision": "§ 7.100(d)(5)",
+    "quote": "identified by the Department of Homeland Security Cybersecurity and Infrastructure Security Agency"
+   }
+  },
+  {
+   "name": "People's Republic of China, including the Hong Kong Special Administrative Region (China)",
+   "role": "listed",
+   "function": "Determined a foreign adversary solely for purposes of the Executive Order and this rule.",
+   "evidence": {
+    "provision": "§ 7.4(a)(1)",
+    "quote": "(1) The People's Republic of China, including the Hong Kong Special Administrative Region (China);"
+   }
+  },
+  {
+   "name": "Republic of Cuba (Cuba)",
+   "role": "listed",
+   "function": "Determined a foreign adversary solely for purposes of the Executive Order and this rule.",
+   "evidence": {
+    "provision": "§ 7.4(a)(2)",
+    "quote": "(2) Republic of Cuba (Cuba);"
+   }
+  },
+  {
+   "name": "Islamic Republic of Iran (Iran)",
+   "role": "listed",
+   "function": "Determined a foreign adversary solely for purposes of the Executive Order and this rule.",
+   "evidence": {
+    "provision": "§ 7.4(a)(3)",
+    "quote": "(3) Islamic Republic of Iran (Iran);"
+   }
+  },
+  {
+   "name": "Democratic People's Republic of Korea (North Korea)",
+   "role": "listed",
+   "function": "Determined a foreign adversary solely for purposes of the Executive Order and this rule.",
+   "evidence": {
+    "provision": "§ 7.4(a)(4)",
+    "quote": "(4) Democratic People's Republic of Korea (North Korea);"
+   }
+  },
+  {
+   "name": "Russian Federation (Russia)",
+   "role": "listed",
+   "function": "Determined a foreign adversary solely for purposes of the Executive Order and this rule.",
+   "evidence": {
+    "provision": "§ 7.4(a)(5)",
+    "quote": "(5) Russian Federation (Russia); and"
+   }
+  },
+  {
+   "name": "Venezuelan politician Nicolás Maduro (Maduro Regime)",
+   "role": "listed",
+   "function": "Determined a foreign adversary solely for purposes of the Executive Order and this rule; a named individual, not a state.",
+   "evidence": {
+    "provision": "§ 7.4(a)(6)",
+    "quote": "(6) Venezuelan politician Nicolás Maduro (Maduro Regime)."
+   }
+  }
+ ],
+ "notes": "The provided text is Part 7, Subparts A to C, of the ICTS supply chain rule under Executive Order 13873. The registry title refers to connected vehicles, but the text does not mention vehicles; scope rests on the § 7.3(a)(4) ICTS categories. No Federal Register preamble is included. Internal points: § 7.200(a)(1) gives IEEPA's maximum civil penalty as the greater of $250,000 (subject to inflation) or twice the transaction amount, while § 7.200(a)(3) gives an inflation-adjusted figure of $307,922; both are in the text and belong to enforcement. Several subsections carry duplicated labels such as '(c) (c)', '(d) (d)' and '(f) (f)', apparently formatting artifacts. Definitional references to other law (e.g., 48 CFR 2.101, 15 CFR 772.1, 19 CFR 201.6, 15 U.S.C. 1681a) are not coded as relations.",
+ "events": [
+  {
+   "event": "application",
+   "date": "2021-01-19",
+   "date_type": "absolute",
+   "date_text": "initiated, pending, or completed on or after January 19, 2021",
+   "applies_to": "ICTS Transactions initiated, pending, or completed on or after 2021-01-19 (scope cutoff in § 7.3(a)(3))",
+   "evidence": {
+    "provision": "§ 7.3(a)(3)",
+    "quote": "is initiated, pending, or completed on or after January 19, 2021"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "Within 30 days of service of the Secretary's notification pursuant to § 7.105",
+   "anchor": "service of the Secretary's notification pursuant to § 7.105",
+   "depends_on": "service of the Secretary's notification pursuant to § 7.105",
+   "applies_to": "party to an ICTS Transaction: response to the initial determination",
+   "offset_value": 30,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "§ 7.107",
+    "quote": "Within 30 days of service of the Secretary's notification pursuant to § 7.105"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "If the Department receives no response from the parties within 30 days after service of the initial determination to the parties, the Secretary may determine to issue a final determination without the need to engage in the consultation process",
+   "anchor": "service of the initial determination to the parties",
+   "depends_on": "service of the initial determination to the parties",
+   "applies_to": "Secretary's option to issue a final determination without second interagency consultation (§ 7.108) where parties do not respond",
+   "offset_value": 30,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "§ 7.107(f)",
+    "quote": "If the Department receives no response from the parties within 30 days after service of the initial determination to the parties"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "the Secretary shall issue the final determination within 180 days of accepting a referral and commencing the initial review of the ICTS Transaction pursuant to § 7.103; unless the Secretary determines in writing that additional time is necessary",
+   "anchor": "acceptance of a referral and commencement of initial review under § 7.103",
+   "depends_on": "acceptance of a referral and commencement of initial review under § 7.103",
+   "applies_to": "Secretary: final determination on an ICTS Transaction",
+   "offset_value": 180,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "§ 7.109(b)",
+    "quote": "within 180 days of accepting a referral and commencing the initial review of the ICTS Transaction pursuant to § 7.103"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "notifying the recipient of a right to make a written petition within 30 days as to why a penalty should not be imposed",
+   "anchor": "service of notice of the proposed penalty under § 7.200(a)(3)(i)",
+   "depends_on": "service of notice of the proposed penalty under § 7.200(a)(3)(i)",
+   "applies_to": "notified party: written petition against a proposed civil penalty",
+   "offset_value": 30,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "§ 7.200(a)(3)(i)",
+    "quote": "a right to make a written petition within 30 days"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "The Secretary shall review any presentation and issue a final administrative decision within 30 days of receipt of the petition.",
+   "anchor": "receipt of the petition",
+   "depends_on": "receipt of the petition under § 7.200(a)(3)(i)",
+   "applies_to": "Secretary: final administrative decision on a penalty petition",
+   "offset_value": 30,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "§ 7.200(a)(3)(ii)",
+    "quote": "issue a final administrative decision within 30 days of receipt of the petition"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "Such revisions will be effective immediately upon publication in the Federal Register without prior notice or opportunity for public comment.",
+   "anchor": "publication of the revised list in the Federal Register",
+   "depends_on": "publication of the revised list of foreign adversaries in the Federal Register",
+   "applies_to": "revisions to the list of foreign adversaries in § 7.4(a)",
+   "evidence": {
+    "provision": "§ 7.4(b)",
+    "quote": "Such revisions will be effective immediately upon publication in the Federal Register"
+   }
+  },
+  {
+   "event": "application",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "Any amendment to this list will apply to any ICTS Transaction that is initiated, pending, or completed on or after the date that the list is amended.",
+   "anchor": "the date the list in § 7.4(a) is amended",
+   "depends_on": "amendment of the list of foreign adversaries in § 7.4(a)",
+   "applies_to": "ICTS Transactions initiated, pending, or completed on or after the date of an amendment to the list in § 7.4(a)",
+   "evidence": {
+    "provision": "§ 7.4(d)",
+    "quote": "Any amendment to this list will apply to any ICTS Transaction that is initiated, pending, or completed on or after the date that the list is amended."
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "data_subjects_count",
+   "variable_text": "sensitive personal data on greater than one million U.S. persons",
+   "operator": ">",
+   "value": 1000000,
+   "value_text": "greater than one million U.S. persons",
+   "unit": "persons",
+   "measurement": "at any point over the twelve (12) months preceding an ICTS Transaction; the ICTS uses, processes, or retains, or is expected to use, process, or retain, such data",
+   "level": "service",
+   "trigger": "scope_definition",
+   "consequence": "Data hosting or computing ICTS (including software-defined services) integral to such services falls within scope under § 7.3(a)(4)(iii)",
+   "conditions": "Applies to software, hardware or other products or services integral to data hosting or computing services, including internet hosting, cloud-based computing and data storage, managed services and content delivery services; § 7.3(a)(1) and (a)(3) must also be met",
+   "evidence": {
+    "provision": "§ 7.3(a)(4)(iii)",
+    "quote": "sensitive personal data on greater than one million U.S. persons at any point over the twelve (12) months preceding an ICTS Transaction"
+   }
+  },
+  {
+   "variable": "volume",
+   "variable_text": "units of listed internet-enabled consumer and networking products sold to U.S. persons",
+   "operator": ">",
+   "value": 1000000,
+   "value_text": "greater than one million units have been sold to U.S. persons",
+   "unit": "units",
+   "measurement": "at any point over the twelve (12) months prior to an ICTS Transaction; units sold to U.S. persons",
+   "level": "product",
+   "trigger": "scope_definition",
+   "consequence": "The listed product category falls within scope under § 7.3(a)(4)(iv)",
+   "conditions": "Applies to internet-enabled sensors, webcams and other end-point surveillance or monitoring devices; routers, modems and other home networking devices; or drones or other unmanned aerial systems",
+   "evidence": {
+    "provision": "§ 7.3(a)(4)(iv)",
+    "quote": "if greater than one million units have been sold to U.S. persons at any point over the twelve (12) months prior to an ICTS Transaction"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "software designed primarily for internet communication in use by U.S. persons",
+   "operator": ">",
+   "value": 1000000,
+   "value_text": "greater than one million U.S. persons",
+   "unit": "persons",
+   "measurement": "at any point over the twelve (12) months preceding an ICTS Transaction; use of the software by U.S. persons",
+   "level": "product",
+   "trigger": "scope_definition",
+   "consequence": "Software designed primarily for connecting with and communicating via the internet falls within scope under § 7.3(a)(4)(v)",
+   "conditions": "Applies to desktop applications, mobile applications, gaming applications and web-based applications",
+   "evidence": {
+    "provision": "§ 7.3(a)(4)(v)",
+    "quote": "in use by greater than one million U.S. persons at any point over the twelve (12) months preceding an ICTS Transaction"
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "ICTS Transaction",
+   "defined_in": "this instrument, § 7.2",
+   "evidence": {
+    "provision": "§ 7.2",
+    "quote": "ICTS Transaction means any acquisition, importation, transfer, installation, dealing in, or use of any information and communications technology or service"
+   }
+  },
+  {
+   "term": "Information and communications technology or services (ICTS)",
+   "defined_in": "this instrument, § 7.2",
+   "evidence": {
+    "provision": "§ 7.2",
+    "quote": "any hardware, software, or other product or service, including cloud-computing services, primarily intended to fulfill or enable the function of information or data processing"
+   }
+  },
+  {
+   "term": "Foreign adversary",
+   "defined_in": "this instrument, § 7.2 (designations under § 7.4)",
+   "evidence": {
+    "provision": "§ 7.2",
+    "quote": "Foreign adversary means any foreign government or foreign non-government person determined by the Secretary to have engaged in a long-term pattern or serious instances of conduct significantly adverse to the national security of the United States"
+   }
+  },
+  {
+   "term": "Person owned by, controlled by, or subject to the jurisdiction or direction of a foreign adversary",
+   "defined_in": "this instrument, § 7.2",
+   "evidence": {
+    "provision": "§ 7.2",
+    "quote": "any person, wherever located, who acts as an agent, representative, or employee"
+   }
+  },
+  {
+   "term": "Party or parties to a transaction",
+   "defined_in": "this instrument, § 7.2",
+   "evidence": {
+    "provision": "§ 7.2",
+    "quote": "Party or parties to a transaction means a person engaged in an ICTS Transaction, including the person acquiring the ICTS and the person from whom the ICTS is acquired."
+   }
+  },
+  {
+   "term": "Person",
+   "defined_in": "this instrument, § 7.2",
+   "evidence": {
+    "provision": "§ 7.2",
+    "quote": "Person means an individual or entity."
+   }
+  },
+  {
+   "term": "Entity",
+   "defined_in": "this instrument, § 7.2",
+   "evidence": {
+    "provision": "§ 7.2",
+    "quote": "Entity means a partnership, association, trust, joint venture, corporation, group, subgroup, or other non-U.S. governmental organization."
+   }
+  },
+  {
+   "term": "United States person",
+   "defined_in": "this instrument, § 7.2",
+   "evidence": {
+    "provision": "§ 7.2",
+    "quote": "United States person means any United States citizen; any permanent resident alien; or any entity organized under the laws of the United States or any jurisdiction within the United States"
+   }
+  },
+  {
+   "term": "Sensitive personal data",
+   "defined_in": "this instrument, § 7.2",
+   "evidence": {
+    "provision": "§ 7.2",
+    "quote": "Sensitive personal data means:"
+   }
+  },
+  {
+   "term": "Undue or unacceptable risk",
+   "defined_in": "Executive Order 13873, Section 1(a)(ii) (by reference)",
+   "evidence": {
+    "provision": "§ 7.2",
+    "quote": "Undue or unacceptable risk means those risks identified in Section 1(a)(ii) of the Executive Order."
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Secretary makes an initial determination, in consultation with appropriate agency heads, on whether to prohibit an ICTS Transaction or propose mitigation measures, and engages in coordination and information sharing with international partners.",
+   "evidence": {
+    "provision": "§ 7.1",
+    "quote": "shall make an initial determination as to whether to prohibit a given ICTS Transaction or propose mitigation measures"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Secretary periodically reviews the list of foreign adversaries in consultation with appropriate agency heads and may amend it.",
+   "evidence": {
+    "provision": "§ 7.4(d)",
+    "quote": "The Secretary will periodically review this list in consultation with appropriate agency heads"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "may",
+   "summary": "In implementing the part the Secretary may consider relevant information from listed sources and consolidate reviews; in determining foreign-adversary control and undue risk the Secretary considers listed factors in consultation with agency heads; the Secretary may deviate from procedures where unusual and extraordinary harm is likely.",
+   "evidence": {
+    "provision": "§ 7.100",
+    "quote": "In implementing this part, the Secretary of Commerce may:"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Persons involved in an ICTS Transaction may be required to furnish complete information under oath, in reports or otherwise, including production of books, contracts and documents; persons providing documents must produce them in a format useable to the Department.",
+   "conditional_on": "when required by the Secretary",
+   "evidence": {
+    "provision": "§ 7.101(a)",
+    "quote": "persons involved in an ICTS Transaction may be required to furnish under oath, in the form of reports or otherwise"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall_not",
+   "summary": "Information not otherwise publicly or commercially available and submitted to the Secretary is not released publicly except as required by law, subject to listed exceptions for congressional, judicial, governmental and consented disclosures.",
+   "evidence": {
+    "provision": "§ 7.102(a)",
+    "quote": "will not be released publicly except to the extent required by law"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "On accepting a referral the Secretary assesses whether it falls within scope and involves foreign-adversary ICTS, then accepts, requests further information on, or rejects it; upon acceptance the Secretary conducts an initial review assessing undue or unacceptable risk against listed criteria.",
+   "conditional_on": "upon accepting a referral",
+   "evidence": {
+    "provision": "§ 7.103(b)",
+    "quote": "the Secretary shall assess whether the referral falls within the scope of § 7.3(a) of this part"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Upon finding that a transaction likely meets the criteria during initial review, the Secretary notifies the appropriate agency heads and, in consultation with them, determines whether the criteria are met.",
+   "conditional_on": "upon finding that an ICTS Transaction likely meets the criteria in § 7.103(c)",
+   "evidence": {
+    "provision": "§ 7.104",
+    "quote": "the Secretary shall notify the appropriate agency heads and, in consultation with them, shall determine"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "If the criteria are met, the Secretary makes a dated and signed initial written determination explaining the basis and stating whether it proposes prohibition or mitigation, and notifies the parties via Federal Register publication or service; the initial determination contains no classified information.",
+   "conditional_on": "after consultation, if the Secretary determines the criteria in § 7.103(c) are met",
+   "evidence": {
+    "provision": "§ 7.105(b)",
+    "quote": "Make an initial written determination, which shall be dated and signed by the Secretary"
+   }
+  },
+  {
+   "type": "record_keeping",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "A notified person must immediately retain any and all records relating to the ICTS Transaction.",
+   "conditional_on": "upon notification that an ICTS Transaction is under review or that an initial determination has been made",
+   "evidence": {
+    "provision": "§ 7.106",
+    "quote": "a notified person must immediately take steps to retain any and all records relating to such transaction"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Submissions responding to an initial determination must be in writing; within 30 days of service a party may respond, submit arguments or evidence, propose remedial steps, and request a meeting.",
+   "conditional_on": "when responding to an initial determination",
+   "evidence": {
+    "provision": "§ 7.107(c)",
+    "quote": "Any submission must be made in writing"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Secretary considers party submissions, consults and seeks consensus of all appropriate agency heads before a final determination; absent consensus the Secretary notifies the President and then issues a final determination.",
+   "conditional_on": "upon receipt of a party submission",
+   "evidence": {
+    "provision": "§ 7.108(b)",
+    "quote": "the Secretary shall consult with and seek the consensus of all appropriate agency heads prior to issuing a final determination"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Secretary issues a final written, signed and dated determination (prohibited, not prohibited, or permitted subject to mitigation), unclassified, considering party information, directing timing and manner of cessation where applicable, and states penalties for non-compliance; the Secretary may tailor the prohibition to the least restrictive means; results of prohibitions are published in the Federal Register omitting confidential business information.",
+   "applies_from": "within 180 days of accepting a referral",
+   "conditional_on": "unless the Secretary determines in writing that additional time is necessary; for transactions with an initial determination that the ICTS Transaction is prohibited",
+   "evidence": {
+    "provision": "§ 7.109(b)",
+    "quote": "the Secretary shall issue the final determination within 180 days of accepting a referral"
+   }
+  }
+ ],
+ "enforcement": [
+  {
+   "sanction_type": "civil_penalty",
+   "authority": "Not named in § 7.200(a)(1); recoverable in a civil action brought by the United States in U.S. district court under § 7.200(a)(4)",
+   "triggered_by": "Any person who violates, attempts to violate, conspires to violate, or causes any knowing violation of a final determination or direction issued under this part, including a violation of a mitigation agreement",
+   "max_penalty_text": "Greater of $250,000, subject to inflationary adjustment, or an amount that is twice the amount of the transaction that is the basis of the violation",
+   "max_penalty_amount": 250000,
+   "currency": "USD",
+   "penalty_formula": "Greater of $250,000 (subject to inflationary adjustment) or twice the amount of the transaction that is the basis of the violation",
+   "penalty_reference": "IEEPA Section 206, 50 U.S.C. 1705 (cited in § 7.200(a)(1)); § 7.200(b)(1) (inflation adjustment)",
+   "cure_period": "None stated.",
+   "evidence": {
+    "provision": "§ 7.200(a)(1)",
+    "quote": "A civil penalty not to exceed the amount set forth in Section 206 of IEEPA, 50 U.S.C. 1705, may be imposed on any person who violates"
+   }
+  },
+  {
+   "sanction_type": "criminal_penalty",
+   "authority": "Court, upon conviction (the text does not name the authority)",
+   "triggered_by": "Willful commission, attempt, or conspiracy to commit, or aiding and abetting, a violation of a final determination, direction, or mitigation agreement, upon conviction of a violation of IEEPA",
+   "max_penalty_text": "Fined not more than $1,000,000; if a natural person, may be imprisoned for not more than 20 years; or both",
+   "max_penalty_amount": 1000000,
+   "currency": "USD",
+   "penalty_formula": "Fine of up to $1,000,000; for natural persons, imprisonment of up to 20 years; or both",
+   "penalty_reference": "IEEPA (cited in § 7.200(a)(2)); criminal penalties subject to adjustment under 18 U.S.C. 3571 (§ 7.200(b)(2))",
+   "cure_period": "None stated.",
+   "evidence": {
+    "provision": "§ 7.200(a)(2)",
+    "quote": "shall, upon conviction of a violation of IEEPA, be fined not more than $1,000,000, or if a natural person, may be imprisoned for not more than 20 years, or both."
+   }
+  },
+  {
+   "sanction_type": "administrative_fine",
+   "authority": "Secretary of Commerce (the Secretary may impose the penalty)",
+   "triggered_by": "Any person who violates a final determination, direction, or mitigation agreement issued under this part under IEEPA, per violation",
+   "max_penalty_text": "Not more than the maximum statutory penalty amount, which when adjusted for inflation is $307,922, or twice the amount of the transaction that is the basis of the violation, per violation",
+   "max_penalty_amount": 307922,
+   "currency": "USD",
+   "penalty_formula": "Not more than the inflation-adjusted maximum statutory penalty ($307,922), or twice the amount of the transaction that is the basis of the violation, per violation",
+   "penalty_reference": "IEEPA (cited in § 7.200(a)(3)); § 7.200(b)(1) (inflation adjustment)",
+   "cure_period": "None stated. Notice recipient may make a written petition within 30 days (§ 7.200(a)(3)(i)); the Secretary issues a final administrative decision within 30 days of receiving a petition (§ 7.200(a)(3)(ii)).",
+   "evidence": {
+    "provision": "§ 7.200(a)(3)",
+    "quote": "The Secretary may impose a civil penalty of not more than the maximum statutory penalty amount, which, when adjusted for inflation, is $307,922"
+   }
+  },
+  {
+   "sanction_type": "criminal_penalty",
+   "authority": "Not named in the text",
+   "triggered_by": "Disclosure of information or documentary material provided to the Secretary under these regulations",
+   "max_penalty_text": "Fines and imprisonment and other penalties under 18 U.S.C. 1905 (amounts not stated in this text)",
+   "penalty_formula": "Not stated in this text; penalties as provided in 18 U.S.C. 1905",
+   "penalty_reference": "18 U.S.C. 1905 (cited in § 7.102(d))",
+   "cure_period": "None stated.",
+   "evidence": {
+    "provision": "§ 7.102(d)",
+    "quote": "The provisions of 18 U.S.C. 1905, relating to fines and imprisonment and other penalties, shall apply"
+   }
+  },
+  {
+   "sanction_type": "criminal_penalty",
+   "authority": "Not named in the text (penalties stated as a cross-reference, without prejudice to other penalties)",
+   "triggered_by": "Knowingly and willfully falsifying, concealing, or covering up a material fact, or making false statements or representations, in any matter within the jurisdiction of a U.S. department or agency",
+   "max_penalty_text": "Fined under title 18, United States Code, or imprisoned not more than 5 years, or both",
+   "penalty_formula": "Imprisonment of not more than 5 years, fine under title 18, United States Code, or both (cross-reference to 18 U.S.C. 1001)",
+   "penalty_reference": "18 U.S.C. 1001 (cited in § 7.200(c))",
+   "cure_period": "None stated.",
+   "evidence": {
+    "provision": "§ 7.200(c)",
+    "quote": "shall be fined under title 18, United States Code, or imprisoned not more than 5 years, or both."
+   }
+  },
+  {
+   "sanction_type": "blocking",
+   "authority": "Secretary of Commerce",
+   "triggered_by": "Initial determination that an ICTS Transaction poses an undue or unacceptable risk, followed by a final determination that the transaction is prohibited",
+   "max_penalty_text": "No monetary amount stated; the Secretary directs the timing and manner of cessation and may direct the least restrictive means necessary to tailor the prohibition",
+   "penalty_formula": "Not applicable (prohibition and direction of cessation; no monetary amount)",
+   "penalty_reference": "§ 7.109(a)(1), (c), (d)(5)",
+   "cure_period": "None stated.",
+   "evidence": {
+    "provision": "§ 7.109(c)",
+    "quote": "the Secretary shall have the discretion to direct the least restrictive means necessary to tailor the prohibition to address the undue or unacceptable risk posed by the ICTS Transaction"
+   }
+  }
+ ],
+ "section_status": {}
+}

@@ -1,0 +1,123 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "us-nj-new-jersey-sb1402-2022",
+ "tier": "B",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "light, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-interim-20261014"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "AGORA plaintext (ETO, CC BY-NC 4.0), local cache",
+  "url": "https://www.njleg.state.nj.us/bill-search/2022/S1402/bill-text?f=S1500&n=1402_I1",
+  "retrieved": "2024-05-14",
+  "version": "1.33.0 (2026-09-16)",
+  "language": "en",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "algorithmic_decision_systems",
+   "ai_sectoral"
+  ],
+  "primary_domain": "algorithmic_decision_systems",
+  "mechanisms": [
+   "prohibition_ban",
+   "liability_rule"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "financial_institution",
+   "insurer",
+   "healthcare_provider",
+   "ai_deployer"
+  ],
+  "affected_roles": [
+   "consumers_users"
+  ],
+  "decision_margins": [
+   "household:access",
+   "household:prices"
+  ],
+  "territorial_scope": {
+   "types": [
+    "subnational"
+   ],
+   "description": "State statute of New Jersey; the insurance provision reaches companies licensed, registered or authorized to do business under New Jersey law.",
+   "evidence": {
+    "provision": "Sec. 3",
+    "quote": "An insurance company licensed, registered, or otherwise authorized to do business under the laws of this State"
+   }
+  },
+  "agora_applications": [
+   "Finance and investment",
+   "Medicine, life sciences and public health"
+  ],
+  "agora_harms": [
+   "Discrimination"
+  ],
+  "agora_risk_factors": [
+   "Bias"
+  ]
+ },
+ "summary": {
+  "short": "Prohibits financial institutions and lenders, insurers, and health care providers from discriminating against members of protected classes through use of automated decision systems, deeming a system discriminatory if it selects protected-class members at a disproportionate rate. Takes effect on the first day of the third month after enactment.",
+  "long": "As introduced, the bill would supplement the New Jersey Law Against Discrimination (P.L.1945, c.169). Section 1 defines 'automated decision system' as a computational process, including one derived from machine learning, statistics, or other data processing or artificial intelligence techniques, that makes a decision or facilitates human decision making, and defines 'health care provider' and 'member of a protected class' by reference to listed characteristics. Sections 2 to 4 bar a person, bank, banking organization, credit reporting agency, mortgage company or other financial institution, lender or credit institution involved in making or purchasing loans; an insurance company licensed, registered or authorized under New Jersey law; and a health care provider from discriminating through the use of an automated decision system against members of a protected class. Each section deems a system discriminatory where it selects protected-class members for participation or eligibility, or in setting rates, terms or conditions, at a rate disproportionate to the rate for non-members. Section 5 makes a violation unlawful discrimination and a violation of section 11 of P.L.1945, c.169 (C.10:5-12). Section 6 sets the effective date as the first day of the third month next following enactment. The bill does not set out separate penalties or an enforcing authority.},"
+ },
+ "relations": [
+  {
+   "relation": "cross_references",
+   "target_text": "P.L.1945, c.169 (C.10:5-1 et seq.)",
+   "note": "The title says the act supplements this law. Sec. 5 makes a violation of the act a violation of its section 11 (C.10:5-12). Sec. 1 also refers to section 11 in defining 'member of a protected class'.",
+   "evidence": {
+    "provision": "Sec. 5",
+    "quote": "A violation of this act shall be unlawful discrimination and a violation of section 11 of P.L.1945, c.169 (C.10:5-12)."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "P.L.1971, c.136 (C.26:2H-1 et seq.)",
+   "note": "The definition of 'health care provider' includes health care facilities licensed under this law.",
+   "evidence": {
+    "provision": "Sec. 1 (definition of 'Health care provider')",
+    "quote": "a health care facility licensed pursuant to P.L.1971, c.136 (C.26:2H-1 et seq.)"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Title 45 of the Revised Statutes",
+   "note": "The definition of 'health care provider' refers to professions regulated under Title 45.",
+   "evidence": {
+    "provision": "Sec. 1 (definition of 'Health care provider')",
+    "quote": "whose professional practice is regulated pursuant to Title 45 of the Revised Statutes"
+   }
+  }
+ ],
+ "notes": "Text is the introduced bill (metadata: introduced, pending); no amendment or repeal of existing law is marked on its face. Target instrument IDs are left empty because no registry IDs were available. The act does not define 'discriminate' separately; Secs. 2 to 4 define discrimination only by a disproportionate selection rate test. Effective date (Sec. 6) is the first day of the third month after enactment.",
+ "events": [
+  {
+   "event": "entry_into_force",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "This act shall take effect on the first day of the third month next following enactment.",
+   "anchor": "enactment",
+   "applies_to": "the act as a whole",
+   "offset_value": 3,
+   "offset_unit": "months",
+   "anchor_event": "signed",
+   "evidence": {
+    "provision": "Sec. 6",
+    "quote": "This act shall take effect on the first day of the third month next following enactment."
+   }
+  }
+ ],
+ "section_status": {
+  "thresholds": {
+   "status": "not_found",
+   "note": "No numeric cutoff was found. Sections 2 to 4 apply a comparative test (selection of protected-class members 'at a rate that is disproportionate' to the rate for non-members), which is not a number. Section 6 sets an effective date, which is recorded as an event rather than a threshold. Section 1 definitions contain no numeric values."
+  }
+ },
+ "thresholds": []
+}

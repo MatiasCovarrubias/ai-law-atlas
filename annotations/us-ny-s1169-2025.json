@@ -1,0 +1,876 @@
+{
+ "schema_version": "1.1",
+ "instrument_id": "us-ny-s1169-2025",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-opus-5-5 (Claude Code)",
+  "method": "gold set (Opus, Claude Code)",
+  "date": "2026-10-11",
+  "prompt_version": "gold (hand annotation by Claude Opus in Claude Code; no prompt version)"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "New York State Assembly, Bill Search and Legislative Information (nyassembly.gov): S01169 summary, actions and text, 2025-2026 session",
+  "url": "https://nyassembly.gov/leg/?default_fld=&leg_video=&bn=S01169&term=2025&Summary=Y&Actions=Y&Text=Y",
+  "retrieved": "2026-10-11",
+  "version": "S1169-B (print 1169--B, amended and recommitted to Senate Finance 2026-05-29; passed Senate 2026-06-03; latest print on the official record as of retrieval)",
+  "language": "en",
+  "extent": "full",
+  "note": "Full bill text (sections 1-5) plus the Assembly record's summary block and action history, which are used as evidence for legislative events. nysenate.gov pages returned a Cloudflare 403 and the Open Legislation API did not respond (both logged); the Assembly record is an official legislature source carrying the same print. Line numbers and page headers of the printed bill are kept in the cached text."
+ },
+ "summary": {
+  "short": "Pending New York bill (print S1169-B) adding Civil Rights Law article 10-A: developers and deployers of high-risk AI used for consequential decisions must prevent algorithmic discrimination, notify people, offer appeals with human review, commission audits, report to DFS and keep risk programs. Bans social scoring. Effective one year after enactment.",
+  "long": "S1169-B, the New York artificial intelligence act, would add article 10-A to the Civil Rights Law. It covers developers and deployers that do business in New York or target New York residents; state agencies, local governments and public universities are excluded. Failing to take reasonable care against foreseeable algorithmic discrimination from a high-risk AI system becomes an unlawful discriminatory practice, also added to Executive Law section 296. High-risk systems are a substantial factor in consequential decisions on employment, education, housing, family planning, health care, financial or legal services, or materially affect rights or safety. Covered deployers must notify people before and within ten days after such decisions, offer an appeal with meaningful human review answered within 45 days, and have a human review each decision. Covered developers and deployers must commission recurring independent audits (ISO 42001 audits count; in-house auditors allowed if a compliant audit costs over 1% of fair market value), file periodic reports with the Department of Financial Services, keep a risk management program and protect whistleblowers. Social scoring is banned; the Attorney General can seek injunctions and civil penalties up to $25,000 per violation for developers and $10,000 for deployers. Audits start two years after enactment."
+ },
+ "classification": {
+  "domains": [
+   "algorithmic_decision_systems",
+   "ai_general",
+   "employment_labor",
+   "consumer_protection"
+  ],
+  "primary_domain": "algorithmic_decision_systems",
+  "mechanisms": [
+   "mandate_obligation",
+   "prohibition_ban",
+   "disclosure_transparency",
+   "designation_tiering",
+   "liability_rule"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "ai_developer",
+   "ai_deployer",
+   "government_agency"
+  ],
+  "affected_roles": [
+   "consumers_users",
+   "workers"
+  ],
+  "decision_margins": [
+   "firm:compliance_process",
+   "firm:product_design_release",
+   "household:access",
+   "household:employment"
+  ],
+  "territorial_scope": {
+   "types": [
+    "subnational",
+    "extraterritorial"
+   ],
+   "description": "New York State; reaches developers and deployers that do business in New York or whose products or services target New York residents, wherever located. State and local government bodies and public universities are excluded.",
+   "evidence": {
+    "provision": "Civ. Rights Law § 107(1) (bill § 3)",
+    "quote": "This article applies to developers and deployers that conduct business in New York or produce products or services that are targeted to residents of New York."
+   }
+  },
+  "agora_applications": [
+   "Education",
+   "Finance and investment",
+   "Medicine, life sciences and public health"
+  ],
+  "agora_harms": [
+   "Discrimination",
+   "Violation of civil or human rights, including privacy"
+  ],
+  "agora_incentives": [
+   "Fines",
+   "Civil liability"
+  ],
+  "agora_risk_factors": [
+   "Bias",
+   "Reliability",
+   "Transparency"
+  ],
+  "agora_strategies": [
+   "Evaluation",
+   "Evaluation: External auditing",
+   "Evaluation: Impact assessment",
+   "Disclosure",
+   "Disclosure: In deployment",
+   "Disclosure: About evaluation",
+   "Tiering",
+   "Tiering: Tiering based on impact",
+   "Governance development"
+  ]
+ },
+ "events": [
+  {
+   "event": "introduced",
+   "date": "2025-01-08",
+   "date_type": "absolute",
+   "date_text": "IN SENATE January 8, 2025; 01/08/2025 REFERRED TO INTERNET AND TECHNOLOGY",
+   "applies_to": "Introduced in the Senate (original print 1169) and referred to the Committee on Internet and Technology",
+   "evidence": {
+    "provision": "Bill heading; Assembly record, Actions",
+    "quote": "IN SENATE January 8, 2025"
+   }
+  },
+  {
+   "event": "amended",
+   "date": "2025-06-09",
+   "date_type": "absolute",
+   "date_text": "06/09/2025 AMEND AND RECOMMIT TO INTERNET AND TECHNOLOGY; PRINT NUMBER 1169A",
+   "applies_to": "Amended in Senate committee; new print 1169-A",
+   "evidence": {
+    "provision": "Assembly record, Actions",
+    "quote": "06/09/2025 PRINT NUMBER 1169A"
+   }
+  },
+  {
+   "event": "passed_chamber",
+   "date": "2025-06-12",
+   "date_type": "absolute",
+   "date_text": "06/12/2025 PASSED SENATE",
+   "applies_to": "Senate (print 1169-A); delivered to the Assembly and referred to Ways and Means the same day",
+   "evidence": {
+    "provision": "Assembly record, Actions",
+    "quote": "06/12/2025 PASSED SENATE"
+   }
+  },
+  {
+   "event": "committee_approved",
+   "date": "2026-05-21",
+   "date_type": "absolute",
+   "date_text": "05/21/2026 REPORTED AND COMMITTED TO FINANCE",
+   "applies_to": "Senate Committee on Internet and Technology reported the bill favorably and committed it to the Committee on Finance",
+   "evidence": {
+    "provision": "Assembly record, Actions",
+    "quote": "05/21/2026 REPORTED AND COMMITTED TO FINANCE"
+   }
+  },
+  {
+   "event": "amended",
+   "date": "2026-05-29",
+   "date_type": "absolute",
+   "date_text": "05/29/2026 AMEND AND RECOMMIT TO FINANCE; PRINT NUMBER 1169B",
+   "applies_to": "Amended in Senate Finance Committee; new print 1169-B (the annotated text)",
+   "evidence": {
+    "provision": "Assembly record, Actions",
+    "quote": "05/29/2026 PRINT NUMBER 1169B"
+   }
+  },
+  {
+   "event": "passed_chamber",
+   "date": "2026-06-03",
+   "date_type": "absolute",
+   "date_text": "06/03/2026 PASSED SENATE",
+   "applies_to": "Senate (print 1169-B); delivered to the Assembly the same day",
+   "evidence": {
+    "provision": "Assembly record, Actions",
+    "quote": "06/03/2026 PASSED SENATE"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "one year after it shall have become a law",
+   "anchor": "date the bill becomes law (not enacted as of the latest action on the record)",
+   "applies_to": "Whole act except Civil Rights Law § 110 (audits)",
+   "evidence": {
+    "provision": "Bill § 5",
+    "quote": "This act shall take effect one year after it shall have become a law"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "two years after it shall have become a law",
+   "anchor": "date the bill becomes law",
+   "applies_to": "Civil Rights Law § 110 (audit duties)",
+   "evidence": {
+    "provision": "Bill § 5",
+    "quote": "section 110 of article 10-A of the civil rights law as added by section three of this act shall take effect two years after it shall have become a law"
+   }
+  },
+  {
+   "event": "application",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "for a period of eighteen months following the effective date of this section; beginning eighteen months following the effective date of this section",
+   "anchor": "effective date of Civil Rights Law § 108 (one year after enactment)",
+   "applies_to": "Developer contract requirements of § 108(6)(a) for developer-deployer contracts already in force at the effective date: deemed compliant for 18 months, then must amend or replace the contracts",
+   "evidence": {
+    "provision": "Civ. Rights Law § 108(6)(b)",
+    "quote": "Developers that have fully executed contractual agreements in force and effect with deployers as of the effective date of this section ... eighteen months following the effective date of this section, comply with this subdivision by amendment of the existing contractual agreement"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "eighteen months from such effective date",
+   "anchor": "effective date of article 10-A (one year after enactment)",
+   "applies_to": "First report and independent audit for high-risk AI systems already deployed at the effective date (covered developers and deployers); then annual (developers) or biennial (deployers) reports",
+   "evidence": {
+    "provision": "Civ. Rights Law § 111(6)",
+    "quote": "covered deployers shall have eighteen months from such effective date to complete and file the first report and associated independent audit"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "within six months after completion of development ... and the initial offering ...; one audit every one year following the submission of the first audit",
+   "anchor": "completion of development and initial offering of the high-risk AI system to a deployer (or initial deployment, if the developer is the first deployer)",
+   "applies_to": "Covered developer audits: first audit, then annual",
+   "evidence": {
+    "provision": "Civ. Rights Law § 110(1)(a)",
+    "quote": "a first audit within six months after completion of development of the high-risk AI system and the initial offering of the high-risk AI system to a deployer for deployment ... one audit every one year following the submission of the first audit"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "within six months after initial deployment; within one year following the submission of the first audit; every two years following the submission of the second audit",
+   "anchor": "initial deployment of the high-risk AI system",
+   "applies_to": "Covered deployer audits: first, second, then biennial",
+   "evidence": {
+    "provision": "Civ. Rights Law § 110(2)(a)",
+    "quote": "(i) a first audit within six months after initial deployment; (ii) a second audit within one year following the submission of the first audit; and (iii) one audit every two years following the submission of the second audit"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "within six months after completion of development ...; annually following the submission of the first report; within six months of any substantial change",
+   "anchor": "completion of development and initial offering (or initial deployment); substantial change to the system",
+   "applies_to": "Covered developer reports to the Department of Financial Services",
+   "evidence": {
+    "provision": "Civ. Rights Law § 111(3)(a)",
+    "quote": "a first report within six months after completion of development ... one report annually following the submission of the first report ... one report within six months of any substantial change to the high-risk AI system"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "within six months after initial deployment; within one year after the first report; every two years after the second report; within six months of any substantial change",
+   "anchor": "initial deployment; substantial change to the system",
+   "applies_to": "Covered deployer reports to the Department of Financial Services",
+   "evidence": {
+    "provision": "Civ. Rights Law § 111(4)(a)",
+    "quote": "(i) a first report within six months after initial deployment; (ii) a second report within one year following the completion and filing of the first report; (iii) one report every two years following the completion and filing of the second report; and (iv) one report within six months of any substantial change to the high-risk AI system"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "within ten days",
+   "anchor": "use of a high-risk AI system to make a consequential decision about the covered subject",
+   "applies_to": "Covered deployer's post-decision notice to the covered subject and covered agent",
+   "evidence": {
+    "provision": "Civ. Rights Law § 108(2)(a)",
+    "quote": "within ten days in a clear, conspicuous and consumer-friendly manner that a high-risk AI system has been used to make a consequential decision"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "within forty-five days of receipt of the appeal; may be extended once by forty-five additional days",
+   "anchor": "receipt of the covered subject's or covered agent's appeal",
+   "applies_to": "Deployer's response to an appeal of a consequential decision",
+   "evidence": {
+    "provision": "Civ. Rights Law § 108(2)(a)",
+    "quote": "A deployer shall respond to a covered subject's or covered agent's appeal within forty-five days of receipt of the appeal"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "other",
+   "variable_text": "cost of an audit that complies with subdivision three, relative to the fair market value of such developer or deployer",
+   "operator": ">",
+   "value": 1,
+   "value_text": "exceeds one percent of the fair market value of such developer or deployer",
+   "unit": "percent of the developer's or deployer's fair market value",
+   "currency": null,
+   "indexed": false,
+   "measurement": "Cost of an audit by an independent third-party auditor meeting § 110(3), compared with the entity's fair market value as defined in 20 NYCRR 3-2.3 (§ 105(13))",
+   "level": "entity",
+   "trigger": "exemption",
+   "consequence": "The covered developer or deployer may use an auditor who is its own employee instead of an independent third-party auditor",
+   "depends_on": "Definition of fair market value in 20 NYCRR 3-2.3 (outside this text)",
+   "evidence": {
+    "provision": "Civ. Rights Law § 110(4)",
+    "quote": "using an auditor that is an employee of such developer or deployer, if the cost of an audit that complies with subdivision three exceeds one percent of the fair market value of such developer or deployer"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "prior auditing or non-auditing services to the commissioning company (look-back period)",
+   "operator": "<=",
+   "value": 12,
+   "value_text": "in the past twelve months",
+   "unit": "months",
+   "currency": null,
+   "indexed": false,
+   "measurement": "Any auditing, financial auditing, cybersecurity auditing or consulting service to the commissioning company in the 12 months before commissioning",
+   "level": "entity",
+   "trigger": "exclusion",
+   "consequence": "The entity may not be commissioned as auditor",
+   "evidence": {
+    "provision": "Civ. Rights Law § 110(3)(c)(i)",
+    "quote": "cybersecurity auditing, or consulting services of any type, to the commissioning company in the past twelve months"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "engagement in developing or deploying a commercially competing AI system (look-forward period)",
+   "operator": "<=",
+   "value": 5,
+   "value_text": "in the five years following an audit",
+   "unit": "years",
+   "currency": null,
+   "indexed": false,
+   "measurement": "Whether the entity is, will be or plans to be in the business of a competing AI system within five years after the audit",
+   "level": "entity",
+   "trigger": "exclusion",
+   "consequence": "The entity may not be commissioned as auditor",
+   "evidence": {
+    "provision": "Civ. Rights Law § 110(3)(c)(ii)",
+    "quote": "(ii) is, will be, or plans to be engaged in the business of developing or deploying an AI system that can compete commercially ... in the five years following an audit"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "appeals with respect to the same consequential decision in a six-month period",
+   "operator": "<=",
+   "value": 1,
+   "value_text": "no more than one appeal ... in a six-month period",
+   "unit": "appeals per consequential decision per six months",
+   "currency": null,
+   "indexed": false,
+   "measurement": "Per covered subject, per consequential decision, rolling six-month period",
+   "level": "person",
+   "trigger": "exclusion",
+   "consequence": "Further appeals of the same decision within six months are not covered by the appeal right",
+   "evidence": {
+    "provision": "Civ. Rights Law § 108(2)(b)",
+    "quote": "A covered subject shall be entitled to no more than one appeal with respect to the same consequential decision in a six-month period"
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "other",
+   "addressee": "ai_developer",
+   "summary": "Duty of reasonable care to prevent foreseeable risk of algorithmic discrimination from the use, sale or sharing of a high-risk AI system; failure is an unlawful discriminatory practice (also under Executive Law § 296(23)).",
+   "applies_from": "one year after it shall have become a law",
+   "evidence": {
+    "provision": "Civ. Rights Law § 106",
+    "quote": "It shall be an unlawful discriminatory practice for a developer or deployer to fail to take reasonable care to prevent foreseeable risk of algorithmic ... the use, sale, or sharing of a high-risk AI system"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "ai_deployer",
+   "summary": "Same duty of reasonable care against algorithmic discrimination for deployers of high-risk AI systems.",
+   "applies_from": "one year after it shall have become a law",
+   "evidence": {
+    "provision": "Civ. Rights Law § 106",
+    "quote": "It shall be an unlawful discriminatory practice for a developer or deployer to fail to take reasonable care to prevent foreseeable risk of algorithmic"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "ai_deployer",
+   "summary": "Covered deployers must tell the covered subject (and agent) at the start of an engagement, in clear terms and in every language the company serves, that AI will be used to make or assist a consequential decision.",
+   "applies_from": "one year after it shall have become a law",
+   "conditional_on": "Waived where a decision is urgently needed to confer a benefit and compliance would cause imminent detriment to the subject; the right to request human review is not waived",
+   "evidence": {
+    "provision": "Civ. Rights Law § 108(1)",
+    "quote": "Any covered deployer shall inform the covered subject and covered agent, if applicable, at the immediate onset of an engagement"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "ai_deployer",
+   "summary": "Covered deployers must notify the covered subject (and agent) within ten days that a high-risk AI system was used to make a consequential decision.",
+   "applies_from": "one year after it shall have become a law",
+   "evidence": {
+    "provision": "Civ. Rights Law § 108(2)(a)",
+    "quote": "Any covered deployer shall inform the covered subject and covered agent, if applicable, within ten days"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "ai_deployer",
+   "summary": "Deployers must provide an appeal process letting the subject contest the decision, submit information and obtain meaningful human review, and answer within 45 days (extendable once by 45 days with notice and reasons).",
+   "applies_from": "one year after it shall have become a law",
+   "evidence": {
+    "provision": "Civ. Rights Law § 108(2)(a)",
+    "quote": "The deployer shall then provide and explain a process for the covered subject or covered agent to appeal the decision"
+   }
+  },
+  {
+   "type": "human_oversight",
+   "addressee": "ai_deployer",
+   "summary": "Covered deployers must conduct meaningful human review of every consequential decision made with a high-risk AI system.",
+   "applies_from": "one year after it shall have become a law",
+   "evidence": {
+    "provision": "Civ. Rights Law § 108(4)",
+    "quote": "Each covered deployer shall conduct meaningful human review of each consequential decision made with a high-risk AI system."
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "ai_developer",
+   "summary": "A developer that intends its AI system not to be used as high-risk must sign contracts with each authorized deployer barring high-risk use, implement technical safeguards against such use, display the restriction on its website, marketing and licences, and keep deployer agreements for at least five years.",
+   "applies_from": "one year after it shall have become a law (18-month grace period for contracts already in force)",
+   "conditional_on": "Developer intends the AI system not to be used as a high-risk AI system",
+   "evidence": {
+    "provision": "Civ. Rights Law § 108(6)(a)",
+    "quote": "If a developer intends that an AI system shall not be used as a high-risk AI system, such developer shall"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "ai_developer",
+   "summary": "Covered developers may not prevent employees from disclosing suspected violations to the Attorney General, including through employment terms, or retaliate against them for doing so.",
+   "applies_from": "one year after it shall have become a law",
+   "evidence": {
+    "provision": "Civ. Rights Law § 109(1)",
+    "quote": "Covered developers and covered deployers shall not: (a) prevent any of their employees from disclosing information to the attorney general"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "ai_deployer",
+   "summary": "Same whistleblower anti-gagging and anti-retaliation duty for covered deployers.",
+   "applies_from": "one year after it shall have become a law",
+   "evidence": {
+    "provision": "Civ. Rights Law § 109(1)",
+    "quote": "Covered developers and covered deployers shall not: (a) prevent any of their employees from disclosing information to the attorney general"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "ai_developer",
+   "summary": "Covered developers must notify employees working on the AI systems of their whistleblower rights (posting or annual written notice creates a presumption of compliance) and run an anonymous internal disclosure process with monthly status updates to the discloser.",
+   "applies_from": "one year after it shall have become a law",
+   "evidence": {
+    "provision": "Civ. Rights Law § 109(3)-(4)",
+    "quote": "Covered developers and covered deployers shall provide a clear notice to all of their employees working on such AI systems of their rights and responsibilities under this article ... internal process through which an employee may anonymously disclose information"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "ai_deployer",
+   "summary": "Same employee-notice and anonymous internal disclosure process duties for covered deployers.",
+   "applies_from": "one year after it shall have become a law",
+   "evidence": {
+    "provision": "Civ. Rights Law § 109(3)-(4)",
+    "quote": "Covered developers and covered deployers shall provide a clear notice to all of their employees working on such AI systems of their rights and responsibilities under this article"
+   }
+  },
+  {
+   "type": "audit",
+   "addressee": "ai_developer",
+   "summary": "Covered developers must commission audits of each high-risk AI system (first within six months of development and initial offering, then annually) evaluating reasonable care against algorithmic discrimination and the risk management program; auditors must be independent third parties (in-house allowed above the 1% cost threshold), fees not contingent on results; ISO 42001 audits and audits done under other laws can satisfy the duty.",
+   "applies_from": "two years after it shall have become a law",
+   "evidence": {
+    "provision": "Civ. Rights Law § 110(1), (3)",
+    "quote": "Covered developers shall cause to be conducted audits in accordance with this section."
+   }
+  },
+  {
+   "type": "audit",
+   "addressee": "ai_deployer",
+   "summary": "Covered deployers must commission audits (first within six months of deployment, second within a year, then every two years) evaluating reasonable care against algorithmic discrimination, system accuracy and reliability for intended and actual uses, and the risk management program; same independence rules and ISO 42001 equivalence.",
+   "applies_from": "two years after it shall have become a law",
+   "evidence": {
+    "provision": "Civ. Rights Law § 110(2), (3)",
+    "quote": "Covered deployers shall cause to be conducted audits in accordance with this section."
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "ai_developer",
+   "summary": "Covered developers must file reports with the Department of Financial Services (first within six months, then annually and after each substantial change) describing intended and disallowed uses, development, training data and any in-house audit, with a copy of the last completed audit.",
+   "applies_from": "one year after it shall have become a law",
+   "evidence": {
+    "provision": "Civ. Rights Law § 111(2)-(3)",
+    "quote": "Covered developers of high-risk AI systems shall complete and file with the department of financial services reports in accordance with this subdivision."
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "ai_deployer",
+   "summary": "Covered deployers must file reports with the Department of Financial Services (first within six months, second within a year, then every two years and after each substantial change) describing uses and including an impact assessment of discrimination risk, monetization and costs and benefits to consumers, with a copy of the last completed audit.",
+   "applies_from": "one year after it shall have become a law",
+   "evidence": {
+    "provision": "Civ. Rights Law § 111(2), (4)",
+    "quote": "Covered deployers shall complete and file with the department of financial services reports in accordance with this subdivision."
+   }
+  },
+  {
+   "type": "risk_assessment",
+   "addressee": "ai_developer",
+   "summary": "Covered developers must plan, document and implement an iterative risk management policy and program for high-risk AI systems, reasonable in light of NIST AI RMF 1.0, ISO 42001 or an equivalent framework, and disclose it to the Attorney General on request; compliance with General Business Law § 1422 is deemed compliance.",
+   "applies_from": "one year after it shall have become a law",
+   "evidence": {
+    "provision": "Civ. Rights Law § 112(1), (3), (4)",
+    "quote": "Each covered developer or covered deployer shall plan, document, and implement a risk ... policy and program to govern development or deployment"
+   }
+  },
+  {
+   "type": "risk_assessment",
+   "addressee": "ai_deployer",
+   "summary": "Covered deployers must keep the same risk management policy and program and disclose it to the Attorney General on request.",
+   "applies_from": "one year after it shall have become a law",
+   "evidence": {
+    "provision": "Civ. Rights Law § 112(1), (3)",
+    "quote": "Each covered developer or covered deployer shall plan, document, and implement a risk"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "ai_developer",
+   "summary": "Ban on developing or selling AI systems that score people's trustworthiness from social behaviour or personal characteristics where the score leads to unrelated-context or disproportionate differential treatment or infringes legal rights.",
+   "applies_from": "one year after it shall have become a law",
+   "evidence": {
+    "provision": "Civ. Rights Law § 113",
+    "quote": "No person, partnership, association or corporation shall develop, deploy, use, or sell an AI system which evaluates or classifies the trustworthiness of natural persons"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "ai_deployer",
+   "summary": "Same social-scoring ban on deploying or using such AI systems.",
+   "applies_from": "one year after it shall have become a law",
+   "evidence": {
+    "provision": "Civ. Rights Law § 113",
+    "quote": "No person, partnership, association or corporation shall develop, deploy, use, or sell an AI system"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "summary": "The Attorney General must adopt rules for a process to request redaction of sensitive and protected information from the reports.",
+   "applies_from": null,
+   "evidence": {
+    "provision": "Civ. Rights Law § 111(5)",
+    "quote": "The attorney general shall promulgate rules for a process whereby covered developers and covered deployers may request redaction of portions of reports"
+   }
+  }
+ ],
+ "enforcement": [
+  {
+   "sanction_type": "injunction_order",
+   "authority": "New York Attorney General, by application to the supreme court",
+   "triggered_by": "Violation of Civil Rights Law §§ 107, 108, 110, 111, 112 or 113",
+   "max_penalty_text": null,
+   "max_penalty_amount": null,
+   "currency": null,
+   "penalty_formula": "Injunction without proof of injury, on at least ten days' notice to the respondent; the court may grant the Attorney General allowances under CPLR 8303(a)(6) and direct restitution. On a motion to dismiss, the court presumes the AI system violated the law and caused the harm, rebuttable by clear and convincing evidence (§ 114(2)).",
+   "penalty_reference": null,
+   "private_right_of_action": false,
+   "cure_period": null,
+   "evidence": {
+    "provision": "Civ. Rights Law § 114(1)",
+    "quote": "application may be made by the attorney general in the name of the people of the state of New York, to the supreme court having ... enjoining and restraining any further violations, without requiring proof that any person has, in fact, been injured or damaged thereby"
+   }
+  },
+  {
+   "sanction_type": "other",
+   "authority": "Supreme court, in a proceeding brought by the Attorney General",
+   "triggered_by": "Violation of article 10-A by a developer",
+   "max_penalty_text": "a civil penalty of not more than twenty-five thousand dollars for each violation",
+   "max_penalty_amount": 25000,
+   "currency": "USD",
+   "penalty_formula": "Civil penalty per violation",
+   "penalty_reference": null,
+   "private_right_of_action": false,
+   "cure_period": null,
+   "evidence": {
+    "provision": "Civ. Rights Law § 114(1)(a)",
+    "quote": "by a developer, the court may impose a civil penalty of not more than twenty-five thousand dollars for each violation"
+   }
+  },
+  {
+   "sanction_type": "other",
+   "authority": "Supreme court, in a proceeding brought by the Attorney General",
+   "triggered_by": "Violation of article 10-A by a deployer",
+   "max_penalty_text": "a civil penalty of not more than ten thousand dollars for each violation",
+   "max_penalty_amount": 10000,
+   "currency": "USD",
+   "penalty_formula": "Civil penalty per violation",
+   "penalty_reference": null,
+   "private_right_of_action": false,
+   "cure_period": null,
+   "evidence": {
+    "provision": "Civ. Rights Law § 114(1)(b)",
+    "quote": "by a deployer, the court may impose a civil penalty of not more than ten thousand dollars for each violation"
+   }
+  },
+  {
+   "sanction_type": "other",
+   "authority": "As provided for unlawful discriminatory practices under Executive Law § 296 (Human Rights Law); not stated in this text",
+   "triggered_by": "A developer or deployer engaging in the unlawful discriminatory practice defined in Civil Rights Law § 106",
+   "max_penalty_text": null,
+   "max_penalty_amount": null,
+   "currency": null,
+   "penalty_formula": null,
+   "penalty_reference": "Executive Law § 296(23) as added by bill § 4; remedies and forum under the Human Rights Law are set outside this text",
+   "cure_period": null,
+   "evidence": {
+    "provision": "Exec. Law § 296(23) (bill § 4)",
+    "quote": "It shall be an unlawful discriminatory practice under this section for a deployer or a developer"
+   }
+  },
+  {
+   "sanction_type": "other",
+   "authority": "Court, on petition by the harmed employee",
+   "triggered_by": "Violation of article 10-A harming an employee (whistleblower provisions)",
+   "max_penalty_text": null,
+   "max_penalty_amount": null,
+   "currency": null,
+   "penalty_formula": null,
+   "penalty_reference": "Labor Law § 740(5) (relief available under that subdivision; not stated in this text)",
+   "private_right_of_action": true,
+   "cure_period": null,
+   "evidence": {
+    "provision": "Civ. Rights Law § 109(2)",
+    "quote": "An employee harmed by a violation of this article may petition a court for appropriate relief as provided in subdivision five of section seven hundred forty of the labor law"
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "Algorithmic discrimination",
+   "evidence": {
+    "provision": "Civ. Rights Law § 105(1)",
+    "quote": "\"Algorithmic discrimination\" means any condition in which the use of an AI system contributes to unjustified differential treatment or impacts"
+   }
+  },
+  {
+   "term": "Artificial intelligence system (AI system)",
+   "evidence": {
+    "provision": "Civ. Rights Law § 105(2)",
+    "quote": "\"Artificial intelligence system\" or \"AI system\" means a machine-based system or combination of systems, that for a given set of human-defined objectives, makes predictions, recommendations, or decisions influencing real or virtual environments"
+   }
+  },
+  {
+   "term": "Auditor",
+   "evidence": {
+    "provision": "Civ. Rights Law § 105(3)",
+    "quote": "\"Auditor\" shall refer to an independent entity including but not limited to an individual, non-profit, firm, corporation"
+   }
+  },
+  {
+   "term": "Consequential decision",
+   "evidence": {
+    "provision": "Civ. Rights Law § 105(4)",
+    "quote": "\"Consequential decision\" means a decision or judgment that has a material, legal or similarly significant effect on an individual's access to, or the cost, terms, or availability of, any of the following"
+   }
+  },
+  {
+   "term": "Covered deployer",
+   "evidence": {
+    "provision": "Civ. Rights Law § 105(5)",
+    "quote": "\"Covered deployer\" means a deployer that uses a high-risk AI system to make one or more consequential decisions with respect to covered subjects."
+   }
+  },
+  {
+   "term": "Deployer",
+   "evidence": {
+    "provision": "Civ. Rights Law § 105(6)",
+    "quote": "\"Deployer\" means any person, partnership, association or ... that uses or makes an AI system available to one or more third parties including the general public ... A deployer shall not include any natural person using an AI system for personal use."
+   }
+  },
+  {
+   "term": "Covered developer",
+   "evidence": {
+    "provision": "Civ. Rights Law § 105(7)",
+    "quote": "\"Covered developer\" means a developer that trained or initiated the training of an AI system that is used to make one or more consequential decisions with respect to covered subjects."
+   }
+  },
+  {
+   "term": "Developer",
+   "evidence": {
+    "provision": "Civ. Rights Law § 105(8)",
+    "quote": "\"Developer\" means a person, partnership, or corporation that trained or initiated the training of an AI system, or creates a ... whether for its own use in the state of New York or for use by a third party"
+   }
+  },
+  {
+   "term": "Employee",
+   "evidence": {
+    "provision": "Civ. Rights Law § 105(9)",
+    "quote": "\"Employee\" means an individual who performs services for and under the control and direction of an employer for wages or other"
+   }
+  },
+  {
+   "term": "Covered agent",
+   "evidence": {
+    "provision": "Civ. Rights Law § 105(11)",
+    "quote": "\"Covered agent\" means any individual that interacts, directly or indirectly, with a relevant AI system, developer, or deployer on behalf of a covered subject with the express consent of such covered subject."
+   }
+  },
+  {
+   "term": "Covered subject",
+   "evidence": {
+    "provision": "Civ. Rights Law § 105(12)",
+    "quote": "\"Covered subject\" means any individual or group of individuals that is the subject of a consequential decision made entirely by or with the assistance of an AI system."
+   }
+  },
+  {
+   "term": "Fair market value",
+   "evidence": {
+    "provision": "Civ. Rights Law § 105(13)",
+    "quote": "\"Fair market value\" shall have the same meaning as such term is defined in 20 NYCRR 3-2.3."
+   }
+  },
+  {
+   "term": "High-risk AI system",
+   "evidence": {
+    "provision": "Civ. Rights Law § 105(14)",
+    "quote": "\"High-risk AI system\" means any AI system that, when deployed: (a) is a substantial factor in making a consequential decision; or (b) will have a material impact on the statutory or constitutional rights, civil liberties, safety, or welfare of an individual in the state."
+   }
+  },
+  {
+   "term": "ISO 42001",
+   "evidence": {
+    "provision": "Civ. Rights Law § 105(15)",
+    "quote": "\"ISO 42001\" means international standard ISO/IEC 42001:2023 (Information technology -- Artificial intelligence -- Management system)"
+   }
+  },
+  {
+   "term": "Substantial change",
+   "evidence": {
+    "provision": "Civ. Rights Law § 105(17)",
+    "quote": "\"Substantial change\" means any new version, new release, or any other intentional update to an AI system that results in significant and material changes to such AI system's appropriate use cases"
+   }
+  },
+  {
+   "term": "Substantial factor",
+   "evidence": {
+    "provision": "Civ. Rights Law § 105(18)",
+    "quote": "\"Substantial factor\" means a factor that is (a) material in making a consequential decision, or (b) is capable of altering the outcome of a consequential decision."
+   }
+  },
+  {
+   "term": "Meaningful human review",
+   "evidence": {
+    "provision": "Civ. Rights Law § 105(19)",
+    "quote": "\"Meaningful human review\" shall mean review, oversight and control of the AI system by one or more individuals who understand the risks, limitations, and functionality of, and are trained to use, the AI system"
+   }
+  }
+ ],
+ "relations": [
+  {
+   "relation": "amends",
+   "target_instrument_id": null,
+   "target_text": "New York Civil Rights Law (adds article 10-A, §§ 105-115)",
+   "note": "Bill § 3 adds the new article containing the operative provisions",
+   "evidence": {
+    "provision": "Bill § 3",
+    "quote": "The civil rights law is amended by adding a new article 10-A to read as follows"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_instrument_id": null,
+   "target_text": "New York Executive Law § 296 (Human Rights Law), new subdivision 23",
+   "note": "Makes the § 106 practice an unlawful discriminatory practice under the Human Rights Law",
+   "evidence": {
+    "provision": "Bill § 4",
+    "quote": "Section 296 of the executive law is amended by adding a new subdivision 23 to read as follows"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": null,
+   "target_text": "New York Labor Law § 740 (whistleblower protection)",
+   "note": "Employees harmed may seek relief under § 740(5); article 10-A does not limit § 740 protections",
+   "evidence": {
+    "provision": "Civ. Rights Law § 109(2), (5)",
+    "quote": "This section does not limit protections provided to employees under section seven hundred forty of the labor law."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": null,
+   "target_text": "New York General Business Law § 1422",
+   "note": "Safe harbor: a developer complying with GBL § 1422 is deemed compliant with the risk management requirement of § 112. The text does not name the act that contains § 1422; linking it to a registry instrument is left for the resolve stage.",
+   "evidence": {
+    "provision": "Civ. Rights Law § 112(4)",
+    "quote": "a developer that is in compliance with the duties under section fourteen hundred twenty-two of the general business law shall be deemed in compliance with this section"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": null,
+   "target_text": "US Civil Rights Act of 1964, Title II, 42 U.S.C. § 2000a(e)",
+   "note": "Private clubs not open to the public, as defined there, are carved out of 'algorithmic discrimination'",
+   "evidence": {
+    "provision": "Civ. Rights Law § 105(1)(c)",
+    "quote": "as set forth in Title II of the federal Civil Rights Act of 1964, 42 U.S.C. section 2000a(e), as amended"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": null,
+   "target_text": "20 NYCRR 3-2.3 (fair market value)",
+   "note": "Supplies the fair-market-value measure for the 1% in-house auditor threshold (§ 110(4))",
+   "evidence": {
+    "provision": "Civ. Rights Law § 105(13)",
+    "quote": "\"Fair market value\" shall have the same meaning as such term is defined in 20 NYCRR 3-2.3."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": null,
+   "target_text": "NIST Artificial Intelligence Risk Management Framework, version 1.0",
+   "note": "Benchmark for the reasonableness of the risk management policy and program",
+   "evidence": {
+    "provision": "Civ. Rights Law § 112(1)(a)(i)",
+    "quote": "version 1.0 of the \"Artificial Intelligence Risk Management Frame-work\" published by the National Institute of Standards and Technology"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": null,
+   "target_text": "ISO/IEC 42001:2023 (AI management system standard)",
+   "note": "Satisfactory ISO 42001 audits satisfy the audit duties (§ 110(1)(c), (2)(c)); also a benchmark for the risk management program (§ 112(1)(a)(ii))",
+   "evidence": {
+    "provision": "Civ. Rights Law § 110(1)(c)",
+    "quote": "satisfactory audits under ISO 42001 completed in accordance with paragraph (a) of this subdivision shall be deemed to satisfy a developer's duty"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": null,
+   "target_text": "New York Civil Practice Law and Rules § 8303(a)(6)",
+   "note": "Allowances to the Attorney General in enforcement proceedings",
+   "evidence": {
+    "provision": "Civ. Rights Law § 114(1)",
+    "quote": "as provided in paragraph six of subdivision (a) of section eighty-three hundred three of the civil practice law and rules"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": null,
+   "target_text": "New York Assembly bill A08884-A (2025-2026)",
+   "note": "Listed as the same-as (companion) bill on the Assembly bill record; not in the registry",
+   "evidence": {
+    "provision": "Assembly record, Summary",
+    "quote": "SAME AS A08884-A"
+   }
+  }
+ ],
+ "entities": [],
+ "section_status": {
+  "entities": {
+   "status": "not_applicable",
+   "note": "General rule; no firms or facilities are named. Public bodies named (Attorney General, Department of Financial Services) are authorities, not entities."
+  }
+ },
+ "notes": "Legislative history: the Assembly record also shows '01/07/2026 died in assembly' and 'returned to senate' (end of the 2025 session year; the bill carried over and was re-referred to Internet and Technology); the vocabulary has no event type for this, so it is recorded here. No Assembly action on the B print appears after delivery on 2026-06-03. Text issues: § 110(3)(a) reads 'thirty-party auditors' (apparently 'third-party'); § 112(1) refers to 'subdivision one of section one hundred six', but § 106 has no subdivisions. Enforcement gaps as written: § 114(1) lists violations of §§ 107, 108, 110, 111, 112 and 113 for Attorney General injunctions, so § 106 (the discrimination duty) is enforced through Executive Law § 296(23) and § 109 through Labor Law § 740; § 114(3) gives the supreme court jurisdiction over 'any action, claim, or lawsuit' to enforce the article, without expressly creating a private right of action. § 108(3) makes covered deployers and developers 'legally responsible' for the quality and accuracy of consequential decisions (coded as liability_rule). § 107(2) excludes state agencies, local governments, SUNY, CUNY and community colleges. Auditors are themselves bound by § 110(7) (no fully AI-made audits). The Attorney General may also make discretionary rules on audits and auditor independence (§ 110(5), (8)) and choose an alternative risk framework (§ 112(1)(a)(iii)). Civil penalties under § 114(1) are coded sanction_type 'other' because the vocabulary has no court-imposed civil-penalty type."
+}

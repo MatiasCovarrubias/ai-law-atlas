@@ -1,0 +1,320 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "cl-boletin17795-19-deepfakes",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (Claude Code retrieval)",
+  "url": "https://tramitacion.senado.cl/appsenado/index.php?mo=tramitacion&ac=getDocto&iddocto=27940&tipodoc=info",
+  "retrieved": "2026-10-14",
+  "version": "Text approved by the Cámara committee (Ciencias y Tecnología) in its first report, 2026-04-06; approved in general by the Chamber floor 2026-07-22",
+  "language": "es",
+  "extent": "full",
+  "note": "Extracted only section VII (texto del proyecto aprobado por la comisión) of the 82-page committee report, with pypdf (pdftotext drops f-ligatures in this PDF). Floor indicaciones (oficio 21.419, 2026-07-22) are pending in second report. Previous raw file (moción .docx mislabelled .html) renamed to cl-boletin17795-19-deepfakes.mocion.docx."
+ },
+ "classification": {
+  "domains": [
+   "synthetic_media_deepfakes",
+   "online_safety_content"
+  ],
+  "primary_domain": "synthetic_media_deepfakes",
+  "mechanisms": [
+   "prohibition_ban",
+   "mandate_obligation",
+   "disclosure_transparency",
+   "liability_rule"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "platform_operator",
+   "general_public"
+  ],
+  "affected_roles": [
+   "consumers_users",
+   "minors"
+  ],
+  "decision_margins": [
+   "firm:compliance_process",
+   "firm:product_design_release",
+   "household:information"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national",
+    "extraterritorial"
+   ],
+   "description": "Applies to all persons and to social media platforms offering services in Chile, including foreign platforms reached through listed criteria such as a .cl domain or Chilean payment methods.",
+   "evidence": {
+    "provision": "Art. 2",
+    "quote": "se aplicará a las plataformas digitales de redes sociales que ofrezcan sus servicios en el territorio nacional."
+   }
+  },
+  "agora_harms": [
+   "Detrimental content",
+   "Violation of civil or human rights, including privacy"
+  ],
+  "agora_incentives": [
+   "Civil liability",
+   "Fines"
+  ],
+  "agora_risk_factors": [
+   "Security: Dissemination",
+   "Transparency"
+  ],
+  "agora_strategies": [
+   "Disclosure",
+   "Disclosure: In deployment"
+  ]
+ },
+ "summary": {
+  "short": "Bill protecting persons' identity and integrity against realistic false digital representations of their image, body or voice made or altered with AI. Prohibits generating or disseminating them, requires social media platforms to label AI content and resolve takedown complaints within 72 hours, and provides civil liability and fines. In force six months after publication.",
+  "long": "Bill (committee-approved text, Boletín 17795-19) protecting persons' identity and integrity against realistic false digital representations of their image, body or voice made or altered with AI or other technology. Article 6 prohibits generating or disseminating such representations; Article 3 defines them, and Article 5 exempts clearly labelled satire, parody, criticism or artistic expression. Article 2 applies the law to all persons and to social media platforms offering services in Chile, under criteria including a .cl domain or local payment methods. Platforms must appoint a Chilean legal representative (Art. 4), label AI-generated or manipulated audio, image and video (Art. 7), and resolve takedown complaints within 72 hours (Art. 10). Courts may order removal or blocking on request and impose civil liability for damages (Arts. 8-9). The Data Protection Agency imposes fines of 5,000 to 10,000 monthly tax units, weighted by factors including harm to minors and recidivism (Arts. 11-12). The law takes effect six months after publication."
+ },
+ "relations": [
+  {
+   "relation": "cross_references",
+   "target_text": "Ley N° 19.628 (arts. 42 and 43)",
+   "note": "Art. 11 makes the sanctioning power and its determination subject to arts. 42 and 43 of Ley 19.628. Art. 11 also says these provisions were introduced by numeral 14) of Ley 21.719; this bill does not itself amend Ley 19.628.",
+   "evidence": {
+    "provision": "Art. 11",
+    "quote": "artículos 42 y 43 de la ley N° 19.628, introducidos por el numeral 14) de la ley"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Ley N° 21.719",
+   "note": "Art. 11 states that arts. 42 and 43 of Ley 19.628 were introduced by numeral 14) of Ley 21.719. The relation is stated in this text only.",
+   "evidence": {
+    "provision": "Art. 11",
+    "quote": "introducidos por el numeral 14) de la ley N° 21.719"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Ley N° 21.430",
+   "note": "Art. 12(a) refers to the rights of children and adolescents under Ley 21.430 as a factor in setting the fine amount.",
+   "evidence": {
+    "provision": "Art. 12(a)",
+    "quote": "de acuerdo con lo dispuesto en la ley N° 21.430"
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "Agencia de Protección de Datos Personales",
+   "role": "designated",
+   "function": "Receives the accreditation of legal representatives of non-domiciled platforms (Art. 4); holds the sanctioning power over infractions under the bill and sets fines under its criteria (Arts. 11, 12).",
+   "evidence": {
+    "provision": "Art. 4",
+    "quote": "La acreditación deberá realizarse ante la Agencia de Protección de Datos Personales"
+   }
+  },
+  {
+   "name": "Tribunales ordinarios de justicia",
+   "role": "designated",
+   "function": "May order removal or blocking of content at the request of the affected person, and measures to prevent ongoing harm where there is imminent irreparable danger (Art. 9).",
+   "evidence": {
+    "provision": "Art. 9",
+    "quote": "Los tribunales ordinarios de justicia"
+   }
+  }
+ ],
+ "notes": "Text is the committee-approved version (Título VII of the committee report) of a bill with status pending; no later stage is shown in the document. Art. 7 requires labelling of 'toda imagen, audio o video que haya sido generado o manipulado mediante IA', which is broader than the Art. 3(1) definition of synthetic representations. Art. 12 sets a fine of 5.000 to 10.000 UTM, which is a fine range and not a threshold. Relation targets are not in the registry, so target_instrument_id is empty.",
+ "events": [
+  {
+   "event": "committee_approved",
+   "date": null,
+   "date_type": "not_stated",
+   "date_text": "TEXTO DEL PROYECTO DE LEY APROBADO POR LA COMISIÓN",
+   "applies_to": "texto del proyecto de ley aprobado por la Comisión",
+   "evidence": {
+    "provision": "Encabezado de la sección VII del informe de la Comisión",
+    "quote": "TEXTO DEL PROYECTO DE LEY APROBADO POR LA COMISIÓN."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "en un plazo que no podrá exceder las 72 horas contado desde el requerimiento",
+   "anchor": "requerimiento formalizado por la persona afectada, sus herederos o representantes legales",
+   "depends_on": "denuncia realizada y requerimiento formalizado en el canal de denuncias de la plataforma",
+   "applies_to": "plataformas digitales de redes sociales: resolución de requerimientos de retiro presentados por el canal de denuncias",
+   "offset_value": 72,
+   "evidence": {
+    "provision": "Art. 10, inciso segundo",
+    "quote": "deberá resolver acerca de ella en un plazo que no podrá exceder las 72 horas contado desde el requerimiento."
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "en el plazo de 6 meses contados desde su publicación en el Diario Oficial",
+   "anchor": "publicación en el Diario Oficial",
+   "applies_to": "la presente ley",
+   "offset_value": 6,
+   "offset_unit": "months",
+   "anchor_event": "published",
+   "evidence": {
+    "provision": "Disposición transitoria, Artículo transitorio",
+    "quote": "La presente ley entrará en vigencia en el plazo de 6 meses contados desde su publicación en el Diario Oficial."
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "other",
+   "variable_text": "reincidencia del infractor: sanciones previas por infracción a esta ley",
+   "operator": ">=",
+   "value": 2,
+   "value_text": "sancionado en dos o más ocasiones, en los últimos treinta meses",
+   "unit": "sanciones",
+   "measurement": "Número de sanciones firmes o ejecutoriadas por infracción a esta ley, dentro de los treinta meses anteriores; medido por la Agencia en la determinación de la multa",
+   "level": "entity",
+   "trigger": "penalty_tier",
+   "consequence": "Reincidence is an aggravating criterion in determining the administrative fine (Art. 12 f).",
+   "conditions": "Las resoluciones que aplican las sanciones respectivas deberán encontrarse firmes o ejecutoriadas.",
+   "evidence": {
+    "provision": "Art. 12 f)",
+    "quote": "Existe reincidencia cuando el responsable ha sido sancionado en dos o más ocasiones, en los últimos treinta meses, por infracción a esta ley."
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "representaciones digitales verosímiles pero falsas",
+   "defined_in": "Art. 3 num. 1",
+   "evidence": {
+    "provision": "Art. 3 num. 1",
+    "quote": "aquel contenido sintético de imagen, audio o video, generado mediante IA u otra tecnología que modifica, recrea o sintetiza la apariencia, voz, gestualidad o atributos de una persona real"
+   }
+  },
+  {
+   "term": "plataformas digitales de redes sociales",
+   "defined_in": "Art. 3 num. 2",
+   "evidence": {
+    "provision": "Art. 3 num. 2",
+    "quote": "Todo servicio digital de intermediación público o privado, informático o de tecnología ejecutable en dispositivos tecnológicos, administrado por una persona natural o jurídica"
+   }
+  },
+  {
+   "term": "servicios de mensajería instantánea (excluidos de plataformas digitales de redes sociales)",
+   "defined_in": "Art. 3 num. 2",
+   "evidence": {
+    "provision": "Art. 3 num. 2",
+    "quote": "Quedan excluidos de la definición anterior, y, en consecuencia, de las obligaciones que dispone la presente ley, los servicios de mensajería instantánea, cuyo principal objetivo es la comunicación privada y directa de sus usuarios"
+   }
+  },
+  {
+   "term": "ofrecen sus servicios en el territorio nacional",
+   "defined_in": "Art. 2",
+   "evidence": {
+    "provision": "Art. 2",
+    "quote": "se entenderá que éstas ofrecen sus servicios en el territorio nacional cuando se verifique alguno de los siguientes criterios"
+   }
+  },
+  {
+   "term": "Agencia",
+   "defined_in": "Art. 4",
+   "evidence": {
+    "provision": "Art. 4",
+    "quote": "La acreditación deberá realizarse ante la Agencia de Protección de Datos Personales (en adelante, la “Agencia”)."
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "appointment_of_representative",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "Platforms not domiciled or incorporated in Chile that offer services in the national territory must designate a legal representative domiciled in the country, with sufficient powers, to answer to administrative and judicial authorities; the designation is to be accredited before the Agency, and each platform must keep that information up to date. Non-compliance is an infringement.",
+   "applies_from": "6 months from publication in the Diario Oficial (transitory article)",
+   "conditional_on": "Platform is not domiciled or constituted in Chile but offers services in the national territory",
+   "evidence": {
+    "provision": "Art. 4",
+    "quote": "deberán designar un representante legal con domicilio en el país"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "general_public",
+   "modality": "shall_not",
+   "summary": "Generating or disseminating realistic but false digital representations of a person's image, body or voice, as described in the law, is prohibited.",
+   "applies_from": "6 months from publication in the Diario Oficial (transitory article)",
+   "conditional_on": "Content meets the definition of a 'representación digital verosímil pero falsa' and is not exempt under Art. 5",
+   "evidence": {
+    "provision": "Art. 6",
+    "quote": "Toda generación o difusión de representaciones digitales verosímiles pero falsas, en los términos descritos en esta ley, se encontrará prohibida."
+   }
+  },
+  {
+   "type": "labelling_watermarking",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "Social media platforms must identify and clearly inform, through visible labels or distinctive marks, any image, audio or video generated or manipulated by AI. Non-compliance is an infringement.",
+   "applies_from": "6 months from publication in the Diario Oficial (transitory article)",
+   "evidence": {
+    "provision": "Art. 7",
+    "quote": "deberán identificar e informar de manera clara, mediante el uso de etiquetas visibles o sellos distintivos, toda imagen, audio o video que haya sido generado o manipulado mediante IA"
+   }
+  },
+  {
+   "type": "complaint_mechanism",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "Each social media platform must provide a complaint channel on its website or user interface through which affected persons, their heirs or legal representatives can request removal of such representations; the platform must decide within 72 hours of the request, and the channels must operate free of arbitrariness or discrimination. Non-compliance, including unjustified failure to decide within the period, is an infringement.",
+   "applies_from": "6 months from publication in the Diario Oficial (transitory article)",
+   "evidence": {
+    "provision": "Art. 10",
+    "quote": "cada plataforma digital de redes sociales dispondrá de un canal de denuncias en su página web o interfaz de usuario"
+   }
+  }
+ ],
+ "enforcement": [
+  {
+   "sanction_type": "administrative_fine",
+   "authority": "Agencia de Protección de Datos Personales",
+   "triggered_by": "Infracciones a la ley, incluidas las de los Arts. 4 (no designar representante legal), 7 (no etiquetar contenido generado o manipulado mediante IA) y 10 (incumplimiento del canal de denuncias o del plazo de 72 horas)",
+   "max_penalty_text": "5.000 a 10.000 unidades tributarias mensuales",
+   "max_penalty_amount": 10000,
+   "currency": "UTM (unidades tributarias mensuales)",
+   "penalty_formula": "Amount set by the Agencia within the range, applying the criteria in Art. 12 letters a) to f) (potential harm, scope on the platform, economic capacity, reparation, cooperation, recidivism); if the same facts fall under this and other laws, the more serious sanction applies",
+   "penalty_reference": "Art. 11; Arts. 42 and 43 of Ley N° 19.628 (introduced by numeral 14 of Ley N° 21.719)",
+   "cure_period": "not stated in text",
+   "evidence": {
+    "provision": "Art. 12",
+    "quote": "podrán ser objeto de sanción de multa a beneficio fiscal de 5.000 a 10.000 unidades tributarias mensuales"
+   }
+  },
+  {
+   "sanction_type": "private_damages",
+   "authority": "not stated in text (civil liability)",
+   "triggered_by": "Generating or disseminating, knowing the content is false, representaciones digitales verosímiles pero falsas of another person",
+   "max_penalty_text": "Not stated; civil liability for damages caused by the conduct",
+   "cure_period": "not stated in text",
+   "evidence": {
+    "provision": "Art. 8",
+    "quote": "responderá civilmente de los daños o perjuicios que se causen por dicha acción"
+   }
+  },
+  {
+   "sanction_type": "injunction_order",
+   "authority": "Tribunales ordinarios de justicia",
+   "triggered_by": "Request by the affected person concerning content that is a representación digital verosímil pero falsa",
+   "max_penalty_text": "Not applicable; court may order removal or blocking of the content and measures to prevent continuing harm",
+   "cure_period": "not stated in text",
+   "evidence": {
+    "provision": "Art. 9",
+    "quote": "podrán decretar, en cualquier momento, el retiro o bloqueo del contenido, a solicitud del afectado"
+   }
+  }
+ ],
+ "section_status": {}
+}

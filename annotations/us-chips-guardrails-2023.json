@@ -1,0 +1,1079 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "us-chips-guardrails-2023",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (connectors/fetch_texts.py)",
+  "url": "https://www.govinfo.gov/content/pkg/FR-2023-09-25/pdf/2023-20471.pdf",
+  "retrieved": "2026-10-13",
+  "version": "as fetched",
+  "language": "en",
+  "extent": "full",
+  "note": "Trimmed to FR Doc. 2023-20471 (the PDF pages also carried neighbouring documents); untrimmed copy kept."
+ },
+ "classification": {
+  "domains": [
+   "chips_export_controls",
+   "investment_screening"
+  ],
+  "primary_domain": "chips_export_controls",
+  "mechanisms": [
+   "prohibition_ban",
+   "registration_notification",
+   "mandate_obligation",
+   "liability_rule"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "chip_designer_manufacturer",
+   "government_agency"
+  ],
+  "decision_margins": [
+   "firm:investment_location",
+   "firm:compliance_process"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national",
+    "extraterritorial"
+   ],
+   "description": "Applies to covered entities receiving CHIPS funds, their affiliated group members and related entities, reaching their transactions involving foreign countries of concern.",
+   "evidence": {
+    "provision": "Sec. 231.202(a)",
+    "quote": "the covered entity and members of the affiliated group may not engage in any significant transaction"
+   }
+  }
+ },
+ "summary": {
+  "short": "Final NIST rule (15 CFR Part 231) setting conditions on CHIPS Act funding recipients: bars significant semiconductor manufacturing capacity expansions and certain joint research or technology licensing with foreign entities of concern, subject to exceptions; requires notification and records; effective November 24, 2023.",
+  "long": "Final rule of the National Institute of Standards and Technology implementing CHIPS Act conditions that keep CHIPS Incentives Program funding from benefiting foreign countries of concern. Subpart A defines key terms, including foreign entity of concern, legacy semiconductor and semiconductors critical to national security. Sec. 231.202 bars covered entities and affiliated group members, for 10 years after the award, significant transactions involving material expansion of semiconductor manufacturing capacity in a foreign country of concern, except for existing legacy facilities and legacy capacity that predominately serves that country's market. Sec. 231.203 bars knowingly engaging in joint research or technology licensing with a foreign entity of concern on technologies or products raising national security concerns; ongoing activities may be grandfathered if memorialized in the required agreement. Sec. 231.204 permits additional conditions against circumvention by related entities, and Sec. 231.205 requires record retention. Subpart C requires notification of planned significant transactions, sets review and reconsideration timelines, and allows mitigation agreements. Violations can lead to recovery of the full federal financial assistance as a debt owed to the government. Subpart D covers periodic legacy-semiconductor notices, liability for false information under 18 U.S.C. 1001, and severability. Effective November 24, 2023."
+ },
+ "relations": [
+  {
+   "relation": "legal_basis",
+   "target_text": "CHIPS and Science Act of 2022 (15 U.S.C. 4651 et seq.)",
+   "note": "The rule cites 15 U.S.C. 4651 et seq. as its authority. The statute itself is not in the document.",
+   "evidence": {
+    "provision": "Authority line of 15 CFR Part 231",
+    "quote": "Authority: 15 U.S.C. 4651, et seq."
+   }
+  },
+  {
+   "relation": "implements",
+   "target_text": "CHIPS and Science Act of 2022 (conditions on CHIPS funding, 15 U.S.C. 4652)",
+   "note": "The rule states it implements conditions in the Act that seek to prevent CHIPS funding from benefiting foreign countries of concern.",
+   "evidence": {
+    "provision": "SUMMARY (Federal Register cover)",
+    "quote": "to implement conditions in the Act"
+   }
+  },
+  {
+   "relation": "codifies",
+   "target_text": "Expansion Clawback, CHIPS Act, 15 U.S.C. 4652(a)(6)",
+   "note": "The rule states it codifies the Expansion Clawback in Subpart B.",
+   "evidence": {
+    "provision": "Background (Federal Register preamble)",
+    "quote": "This final rule codifies the Expansion Clawback in Subpart B"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "10 U.S.C. 4872(d) (covered nations list)",
+   "note": "The definition of foreign country of concern and the definition of foreign entity of concern refer to the covered nations defined in 10 U.S.C. 4872(d).",
+   "evidence": {
+    "provision": "§ 231.102 Foreign country of concern, para. (a)",
+    "quote": "(as defined in 10 U.S.C. 4872(d))"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "8 U.S.C. 1189 (foreign terrorist organization designations by the Secretary of State)",
+   "note": "Foreign entity of concern includes entities designated as foreign terrorist organizations under 8 U.S.C. 1189.",
+   "evidence": {
+    "provision": "§ 231.104 Foreign entity of concern, para. (a)",
+    "quote": "Designated as a foreign terrorist organization by the Secretary of State under 8 U.S.C. 1189"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Bureau of Industry and Security Entity List (15 CFR part 744, supplement no. 4)",
+   "note": "Entities on the Entity List are foreign entities of concern under the rule's definition.",
+   "evidence": {
+    "provision": "§ 231.104 Foreign entity of concern, para. (e)",
+    "quote": "Included on the Bureau of Industry and Security’s Entity List (15 CFR part 744, supplement no. 4)"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Treasury Department list of Specially Designated Nationals and Blocked Persons (SDN List)",
+   "note": "Persons on the SDN List, or majority-held by SDN-listed persons, are foreign entities of concern under the rule's definition.",
+   "evidence": {
+    "provision": "§ 231.104 Foreign entity of concern, para. (b)",
+    "quote": "Department of Treasury’s list of Specially Designated Nationals and Blocked Persons"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Treasury Department Non-SDN Chinese Military-Industrial Complex Companies (NS-CMIC) List",
+   "note": "Entities on the NS-CMIC List are foreign entities of concern under the rule's definition.",
+   "evidence": {
+    "provision": "§ 231.104 Foreign entity of concern, para. (f)",
+    "quote": "Non-SDN Chinese Military-Industrial Complex Companies"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Export Administration Regulations (Commerce Control List, 15 CFR part 774; 15 CFR 742.4, 742.6)",
+   "note": "Technologies or products raising national security concerns include Category 3 items on the Commerce Control List that are controlled for NS or RS reasons under the EAR.",
+   "evidence": {
+    "provision": "§ 231.121 Technology or product that raises national security concerns, para. (b)",
+    "quote": "Export Administration Regulations, 15 CFR part 774"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "26 U.S.C. 1504 (affiliated group)",
+   "note": "Members of the affiliated group are defined by reference to 26 U.S.C. 1504(a), disregarding 26 U.S.C. 1504(b)(3).",
+   "evidence": {
+    "provision": "§ 231.109 Members of the affiliated group",
+    "quote": "without regard to 26 U.S.C. 1504(b)(3)"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "18 U.S.C. 1001 (false statements)",
+   "note": "Section 1001 applies to all information provided to the Secretary under the rule.",
+   "evidence": {
+    "provision": "§ 231.402 Submission of false information",
+    "quote": "Section 1001 of 18 U.S.C., as amended, shall apply to all information"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Treasury Department rule authorizing the Advanced Manufacturing Investment Tax Credit",
+   "note": "The preamble states Commerce and Treasury harmonized definitions for the two regimes. The Treasury rule is not part of this text.",
+   "evidence": {
+    "provision": "Supplementary Information, D. Other Comments, Comment #1 response",
+    "quote": "harmonized definitions to the maximum extent possible"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Paperwork Reduction Act of 1995 (44 U.S.C. 3501 et seq.)",
+   "note": "The preamble states the information collection is subject to the PRA and that a new OMB control number is being requested.",
+   "evidence": {
+    "provision": "Paperwork Reduction Act (Federal Register preamble)",
+    "quote": "(44 U.S.C. 3501 et seq.)"
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "National Institute of Standards and Technology (NIST)",
+   "role": "designated",
+   "function": "Issues the final rule; the CHIPS Program Office within NIST administers the CHIPS Incentives Program.",
+   "evidence": {
+    "provision": "Signature block (Alicia Chambers, NIST Executive Secretariat)",
+    "quote": "NIST Executive Secretariat"
+   }
+  },
+  {
+   "name": "CHIPS Program Office (CPO)",
+   "role": "designated",
+   "function": "Administers the CHIPS Incentives Program; the rule places notification, review and enforcement tasks on the Secretary acting through this office.",
+   "evidence": {
+    "provision": "Background (Federal Register preamble)",
+    "quote": "administered by the CHIPS Program Office (CPO)"
+   }
+  },
+  {
+   "name": "Secretary of Commerce",
+   "role": "designated",
+   "function": "Receives notifications, reviews transactions, makes initial and final determinations, and recovers Federal financial assistance.",
+   "evidence": {
+    "provision": "§ 231.114 Secretary",
+    "quote": "Secretary means the Secretary of Commerce or the Secretary’s designees."
+   }
+  }
+ ],
+ "notes": "Final rule published in the Federal Register (vol. 88, no. 184, 25 Sept 2023), effective 24 Nov 2023 per the text. The CHIPS Act is not in the document, so statutory links are text-based only. Internal inconsistencies: (1) §231.306 waives recovery 'for violation of § 231.305(d)', while the summary of changes refers to § 231.302; (2) reconsideration of an initial determination under the Technology Clawback is due within 60 days of the request under §231.305(c)(2), but within 45 days of the initial determination under §231.307(e)(2); (3) §231.305(b) cites '§ paragraph (a)'; (4) 'significant transaction' and 'applicable term' are still used although their definitions were removed, and the $100,000 threshold appears only in the preamble; (5) 'covered entity' is used throughout but not defined in §§231.101–231.121; (6) the classification section refers to 'this proposed rule'. Typos include '28-nonometerer' (§231.118(d)). The 88 FR 17439 proposed rule appears only in the preamble. No named firms are listed; covered entities are addressed generically.",
+ "events": [
+  {
+   "event": "proposed",
+   "date": "2023-03-23",
+   "date_type": "absolute",
+   "date_text": "On March 23, 2023, the National Institute of Standards and Technology published and requested public comment on a proposed rule (88 FR 17439)",
+   "applies_to": "Proposed rule published at 88 FR 17439, the earlier version of this rule",
+   "evidence": {
+    "provision": "Supplementary Information",
+    "quote": "the National Institute of Standards and Technology published and requested public comment on a proposed rule"
+   }
+  },
+  {
+   "event": "published",
+   "date": "2023-09-25",
+   "date_type": "absolute",
+   "date_text": "Monday, September 25, 2023",
+   "applies_to": "Final rule published in Federal Register, Vol. 88, No. 184",
+   "evidence": {
+    "provision": "Federal Register header (Vol. 88, No. 184)",
+    "quote": "Monday, September 25, 2023"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2023-11-24",
+   "date_type": "absolute",
+   "date_text": "This final rule is effective November 24, 2023.",
+   "applies_to": "Final rule 15 CFR Part 231 as a whole",
+   "evidence": {
+    "provision": "DATES",
+    "quote": "This final rule is effective November 24, 2023."
+   }
+  },
+  {
+   "event": "application",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "During the 10-year period beginning on the date of the award of Federal financial assistance under 15 U.S.C. 4652",
+   "depends_on": "Date of the award of Federal financial assistance under 15 U.S.C. 4652 (CHIPS incentive award)",
+   "applies_to": "Expansion Clawback: prohibition on significant transactions involving material expansion of semiconductor manufacturing capacity in a foreign country of concern (§ 231.202(a))",
+   "evidence": {
+    "provision": "§ 231.202(a)",
+    "quote": "During the 10-year period beginning on the date of the award of Federal financial assistance under 15 U.S.C. 4652"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "No later than the date of the award of Federal financial assistance award under 15 U.S.C. 4652, the covered entity shall enter into a required agreement",
+   "depends_on": "Date of the award of Federal financial assistance under 15 U.S.C. 4652",
+   "applies_to": "Covered entity: entering into the required agreement containing the expansion prohibition (§ 231.202(b))",
+   "evidence": {
+    "provision": "§ 231.202(b)",
+    "quote": "No later than the date of the award of Federal financial assistance award under 15 U.S.C. 4652"
+   }
+  },
+  {
+   "event": "application",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "During the applicable term of a Federal financial assistance award under 15 U.S.C. 4652",
+   "depends_on": "Applicable term of the Federal financial assistance award, as set in the award documents",
+   "applies_to": "Technology Clawback: prohibition on knowingly engaging in certain joint research or technology licensing with a foreign entity of concern (§ 231.203(a))",
+   "evidence": {
+    "provision": "§ 231.203(a)",
+    "quote": "During the applicable term of a Federal financial assistance award under 15 U.S.C. 4652"
+   }
+  },
+  {
+   "event": "application",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "for a period of seven years following any significant transaction involving the material expansion of semiconductor manufacturing capacity in a foreign country of concern",
+   "depends_on": "The significant transaction involving material expansion of semiconductor manufacturing capacity in a foreign country of concern (record retention runs from the 10-year period beginning on the award)",
+   "applies_to": "Record retention for significant transactions involving material expansion (§ 231.205(a))",
+   "evidence": {
+    "provision": "§ 231.205(a)",
+    "quote": "and for a period of seven years following any significant transaction involving the material expansion"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "Not later than 90 days after a notification is accepted by the Secretary, or after the Secretary initiates a review under § 231.304(a)(2)",
+   "depends_on": "Acceptance of a notification by the Secretary (§ 231.303(c)) or initiation of a review by the Secretary (§ 231.304(a)(2)); subject to tolling under § 231.305(a)",
+   "applies_to": "Secretary: initial determination in writing as to whether the transaction would violate § 231.202",
+   "evidence": {
+    "provision": "§ 231.305(b)",
+    "quote": "Not later than 90 days after a notification is accepted by the Secretary"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "The covered entity may within 14 days of receipt of the initial determination request that the Secretary reevaluate the initial determination",
+   "depends_on": "Covered entity's receipt of the Secretary's initial determination that a transaction would violate § 231.202",
+   "applies_to": "Covered entity: request for reevaluation of initial determination under § 231.202 (§ 231.305(c)(1))",
+   "evidence": {
+    "provision": "§ 231.305(c)(1)",
+    "quote": "The covered entity may within 14 days of receipt of the initial determination request that the Secretary reevaluate the initial determination"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "the Secretary will issue the final determination within 60 days after the receipt by the Secretary of the request for reconsideration",
+   "depends_on": "Secretary's receipt of the covered entity's request for reconsideration of the initial determination",
+   "applies_to": "Secretary: final determination on expansion transaction after reconsideration request (§ 231.305(c)(2))",
+   "evidence": {
+    "provision": "§ 231.305(c)(2)",
+    "quote": "the Secretary will issue the final determination within 60 days after the receipt by the Secretary of the request for reconsideration"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "within 45 days of the final determination certifying that the transaction has ceased or been abandoned",
+   "depends_on": "Issuance of a final determination that a transaction would violate § 231.202 or has been prohibited",
+   "applies_to": "Covered entity CEO, president or equivalent: signed certification letter that the transaction has ceased or been abandoned (§ 231.305(c)(3))",
+   "evidence": {
+    "provision": "§ 231.305(c)(3)",
+    "quote": "within 45 days of the final determination certifying that the transaction has ceased or been abandoned"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "The covered entity shall provide the additional information to the Secretary within three business days",
+   "depends_on": "Secretary's written notice opening an initial review and request for additional information under § 231.307(b)",
+   "applies_to": "Covered entity: additional information for review of possible violations of § 231.203 (§ 231.307(b))",
+   "evidence": {
+    "provision": "§ 231.307(b)",
+    "quote": "The covered entity shall provide the additional information to the Secretary within three business days"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "The covered entity may within 14 days of receipt of the initial determination request that the Secretary reevaluate the initial determination",
+   "depends_on": "Covered entity's receipt of the Secretary's initial determination that the covered entity violated § 231.203",
+   "applies_to": "Covered entity: request for reevaluation of initial determination on joint research or technology licensing (§ 231.307(e)(1))",
+   "evidence": {
+    "provision": "§ 231.307(e)(1)",
+    "quote": "The covered entity may within 14 days of receipt of the initial determination request that the Secretary"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "the Secretary will issue the final determination within 45 days of the initial determination",
+   "depends_on": "Covered entity's request for reconsideration of the initial determination under § 231.307(e)(1)",
+   "applies_to": "Secretary: final determination on possible violation of § 231.203 after reconsideration request (§ 231.307(e)(2))",
+   "evidence": {
+    "provision": "§ 231.307(e)(2)",
+    "quote": "the Secretary will issue the final determination within 45 days of the initial determination"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2024-08-09",
+   "date_type": "absolute",
+   "date_text": "Not later than August 9, 2024",
+   "applies_to": "Secretary: public notice identifying additional semiconductors included in the term legacy semiconductor (§ 231.401)",
+   "evidence": {
+    "provision": "§ 231.401",
+    "quote": "Not later than August 9, 2024, and not less frequently than once every two years thereafter"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "not less frequently than once every two years thereafter for the eight-year period after the last award of Federal financial assistance under 15 U.S.C. 4652 is made",
+   "depends_on": "Last award of Federal financial assistance under 15 U.S.C. 4652",
+   "applies_to": "Secretary: public notice identifying additional semiconductors included in the term legacy semiconductor (§ 231.401)",
+   "evidence": {
+    "provision": "§ 231.401",
+    "quote": "not less frequently than once every two years thereafter for the eight-year period after the last award"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "volume",
+   "variable_text": "increase of semiconductor manufacturing capacity of an existing facility",
+   "operator": ">",
+   "value": 5,
+   "value_text": "by more than five percent of the capacity memorialized in the required agreement",
+   "unit": "percent",
+   "measurement": "Increase measured against capacity memorialized in the required agreement; cumulative across a series of cleanroom, production line or other physical space additions",
+   "level": "facility",
+   "trigger": "prohibition",
+   "consequence": "The increase is a material expansion, which the Expansion Clawback prohibits (§ 231.202(a)) unless an exception applies",
+   "conditions": "Applies to existing facilities in a foreign country of concern",
+   "evidence": {
+    "provision": "§ 231.108",
+    "quote": "Material expansion means the increase of the semiconductor manufacturing capacity of an existing facility by more than five percent"
+   }
+  },
+  {
+   "variable": "volume",
+   "variable_text": "increase in semiconductor manufacturing capacity from significant renovations",
+   "operator": ">=",
+   "value": 10,
+   "value_text": "increases semiconductor manufacturing capacity by 10 percent or more of the capacity memorialized in the required agreement",
+   "unit": "percent",
+   "measurement": "Aggregate over the applicable term of the required agreement",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "A facility that undergoes significant renovations not memorialized in the required agreement no longer qualifies as an existing facility",
+   "conditions": "Cumulative increase, including by adding a production line or new cleanroom space",
+   "evidence": {
+    "provision": "§ 231.119",
+    "quote": "increases semiconductor manufacturing capacity by 10 percent or more of the capacity memorialized in the required agreement"
+   }
+  },
+  {
+   "variable": "share_of_financials",
+   "variable_text": "share of facility output by value incorporated into final products used or consumed in the market of a foreign country of concern",
+   "operator": ">=",
+   "value": 85,
+   "value_text": "at least 85 percent of the output of the semiconductor manufacturing facility (e.g., wafers, semiconductor devices, or packages) by value",
+   "unit": "percent",
+   "measurement": "Output by value; documentation of end use required in notification (§ 231.302(g))",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Output meeting the test is one of the exceptions to the Expansion Clawback for legacy semiconductor production (§ 231.202(a)(2))",
+   "conditions": "Must also produce legacy semiconductors; the market is that of the foreign country of concern",
+   "evidence": {
+    "provision": "§ 231.111",
+    "quote": "Predominately serves the market means that at least 85 percent of the output of the semiconductor manufacturing facility"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "silicon wafer diameter (semiconductor wafer facility)",
+   "operator": "<=",
+   "value": 200,
+   "value_text": "A silicon wafer measuring 8 inches (or 200 millimeters) or smaller in diameter",
+   "unit": "millimeters",
+   "measurement": "Wafer diameter as produced by the facility",
+   "level": "product",
+   "trigger": "scope_definition",
+   "consequence": "Wafer qualifies as a legacy semiconductor, relevant to the Expansion Clawback exceptions",
+   "conditions": "For a semiconductor wafer facility; excludes items under § 231.107(b)",
+   "evidence": {
+    "provision": "§ 231.107(a)(1)(i)",
+    "quote": "A silicon wafer measuring 8 inches (or 200 millimeters) or smaller in diameter"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "compound wafer diameter (semiconductor wafer facility)",
+   "operator": "<=",
+   "value": 150,
+   "value_text": "A compound wafer measuring 6 inches (or 150 millimeters) or smaller in diameter",
+   "unit": "millimeters",
+   "measurement": "Wafer diameter as produced by the facility",
+   "level": "product",
+   "trigger": "scope_definition",
+   "consequence": "Wafer qualifies as a legacy semiconductor, relevant to the Expansion Clawback exceptions",
+   "conditions": "For a semiconductor wafer facility; excludes items under § 231.107(b)",
+   "evidence": {
+    "provision": "§ 231.107(a)(1)(ii)",
+    "quote": "A compound wafer measuring 6 inches (or 150 millimeters) or smaller in diameter"
+   }
+  },
+  {
+   "variable": "process_node",
+   "variable_text": "generation of digital or analog logic semiconductor (gate length, planar transistor)",
+   "operator": ">=",
+   "value": 28,
+   "value_text": "A digital or analog logic semiconductor that is of the 28nanometer generation or older (i.e., has a gate length of 28 nanometers or more for a planar transistor)",
+   "unit": "nanometers",
+   "measurement": "Gate length for a planar transistor",
+   "level": "product",
+   "trigger": "scope_definition",
+   "consequence": "Logic semiconductor qualifies as a legacy semiconductor for a semiconductor fabrication facility",
+   "conditions": "For a semiconductor fabrication facility; post-planar transistor architectures are excluded under § 231.107(b)(2)",
+   "evidence": {
+    "provision": "§ 231.107(a)(2)(i)",
+    "quote": "A digital or analog logic semiconductor that is of the 28nanometer generation or older"
+   }
+  },
+  {
+   "variable": "process_node",
+   "variable_text": "half-pitch of DRAM memory semiconductor",
+   "operator": ">",
+   "value": 18,
+   "value_text": "A memory semiconductor with a half-pitch greater than 18 nanometers for Dynamic Random Access Memory (DRAM)",
+   "unit": "nanometers",
+   "measurement": "Half-pitch of the memory semiconductor",
+   "level": "product",
+   "trigger": "scope_definition",
+   "consequence": "Memory semiconductor qualifies as a legacy semiconductor",
+   "conditions": "DRAM; for a semiconductor fabrication facility",
+   "evidence": {
+    "provision": "§ 231.107(a)(2)(ii)",
+    "quote": "half-pitch greater than 18 nanometers for Dynamic Random Access Memory (DRAM)"
+   }
+  },
+  {
+   "variable": "process_node",
+   "variable_text": "number of layers in NAND flash memory",
+   "operator": "<",
+   "value": 128,
+   "value_text": "less than 128 layers for Not AND (NAND) flash that does not utilize emerging memory technologies",
+   "unit": "layers",
+   "measurement": "Layer count of the NAND flash memory",
+   "level": "product",
+   "trigger": "scope_definition",
+   "consequence": "NAND flash qualifies as a legacy semiconductor",
+   "conditions": "Applies only where the flash does not utilize the emerging memory technologies listed in § 231.107(a)(2)(ii)",
+   "evidence": {
+    "provision": "§ 231.107(a)(2)(ii)",
+    "quote": "less than 128 layers for Not AND (NAND) flash"
+   }
+  },
+  {
+   "variable": "process_node",
+   "variable_text": "generation of FD-SOI semiconductors (packaging operations)",
+   "operator": ">=",
+   "value": 28,
+   "value_text": "other than with regard to semiconductor packaging operations with respect to such semiconductors of a 28-nonometerer generation or older",
+   "unit": "nanometers",
+   "measurement": "Generation of the FD-SOI semiconductor as written in the regulatory text (printed as 28-nonometerer)",
+   "level": "product",
+   "trigger": "exclusion",
+   "consequence": "FD-SOI packaging operations for semiconductors of the 28-nanometer generation or older are excluded from the critical-to-national-security category",
+   "conditions": "Applies to FD-SOI semiconductors only; the printed text contains a typographical error in the word for nanometer",
+   "evidence": {
+    "provision": "§ 231.118(d)",
+    "quote": "of a 28-nonometerer generation or older"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "operating temperature of semiconductors designed for cryogenic environments",
+   "operator": "<=",
+   "value": 77,
+   "value_text": "Semiconductors designed for operation in cryogenic environments (at or below 77 Kelvin)",
+   "unit": "kelvin",
+   "measurement": "Design operating temperature",
+   "level": "product",
+   "trigger": "scope_definition",
+   "consequence": "Semiconductor is critical to national security, which places it within the technology or product scope of the Technology Clawback (§ 231.121(a))",
+   "conditions": "Designed for operation in cryogenic environments",
+   "evidence": {
+    "provision": "§ 231.118(g)",
+    "quote": "Semiconductors designed for operation in cryogenic environments (at or below 77 Kelvin)"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "outstanding voting interest held by listed persons (SDN List)",
+   "operator": ">=",
+   "value": 50,
+   "value_text": "hold at least 50 percent of the outstanding voting interest",
+   "unit": "percent",
+   "measurement": "Aggregate direct or indirect holdings of one or more individuals or entities on the SDN list",
+   "level": "entity",
+   "trigger": "scope_definition",
+   "consequence": "Entity is a foreign entity of concern",
+   "conditions": "Applies where one or more individuals or entities included on the SDN list hold the interest, individually or in the aggregate",
+   "evidence": {
+    "provision": "§ 231.104(b)",
+    "quote": "hold at least 50 percent of the outstanding voting interest"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "outstanding voting interest held by listed persons (NS-CMIC List)",
+   "operator": ">=",
+   "value": 50,
+   "value_text": "hold at least 50 percent of the outstanding voting interest; or",
+   "unit": "percent",
+   "measurement": "Aggregate direct or indirect holdings of one or more individuals or entities on the NS-CMIC list",
+   "level": "entity",
+   "trigger": "scope_definition",
+   "consequence": "Entity is a foreign entity of concern",
+   "conditions": "Applies where one or more individuals or entities included on the NS-CMIC list hold the interest, individually or in the aggregate",
+   "evidence": {
+    "provision": "§ 231.104(f)",
+    "quote": "hold at least 50 percent of the outstanding voting interest; or"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "outstanding voting interest, board seats or equity interest held by a foreign government of a covered nation",
+   "operator": ">=",
+   "value": 25,
+   "value_text": "25 percent or more of the person’s outstanding voting interest, board seats, or equity interest is held directly or indirectly by the government of a foreign country listed in 10 U.S.C. 4872(d)",
+   "unit": "percent",
+   "measurement": "Direct or indirect holdings",
+   "level": "entity",
+   "trigger": "scope_definition",
+   "consequence": "Person is a foreign entity of concern",
+   "conditions": "Clause (iv) applies the same 25 percent test to combined holdings by persons within clauses (i) to (iii)",
+   "evidence": {
+    "provision": "§ 231.104(c)(1)(iii)",
+    "quote": "25 percent or more of the person’s outstanding voting interest, board seats, or equity interest"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "equity interest held in an entity listed in paragraph (a) of § 231.103",
+   "operator": ">=",
+   "value": 25,
+   "value_text": "owns 25 percent or more of the equity interests of an entity listed in paragraph (a) of this section",
+   "unit": "percent",
+   "measurement": "Direct or indirect ownership through any contract, arrangement, understanding, relationship, or otherwise",
+   "level": "entity",
+   "trigger": "scope_definition",
+   "consequence": "Person is included in the definition of foreign entity",
+   "conditions": "Applies to any person owning the equity interest of an entity listed in paragraph (a)",
+   "evidence": {
+    "provision": "§ 231.103(b)(4)",
+    "quote": "owns 25 percent or more of the equity interests of an entity listed in paragraph (a) of this section"
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "Existing facility",
+   "defined_in": "this instrument (15 CFR Part 231)",
+   "evidence": {
+    "provision": "§ 231.101(a)",
+    "quote": "Only facilities built, equipped, and operating prior to entering into the required agreement are considered to be existing facilities."
+   }
+  },
+  {
+   "term": "Foreign country of concern",
+   "defined_in": "this instrument (15 CFR Part 231)",
+   "evidence": {
+    "provision": "§ 231.102",
+    "quote": "A country that is a covered nation (as defined in 10 U.S.C. 4872(d))"
+   }
+  },
+  {
+   "term": "Foreign entity",
+   "defined_in": "this instrument (15 CFR Part 231)",
+   "evidence": {
+    "provision": "§ 231.103(a)",
+    "quote": "A government of a foreign country or a foreign political party"
+   }
+  },
+  {
+   "term": "Foreign entity of concern",
+   "defined_in": "this instrument (15 CFR Part 231)",
+   "evidence": {
+    "provision": "§ 231.104",
+    "quote": "Foreign entity of concern means any foreign entity that is"
+   }
+  },
+  {
+   "term": "Joint research",
+   "defined_in": "this instrument (15 CFR Part 231)",
+   "evidence": {
+    "provision": "§ 231.105(a)",
+    "quote": "Joint research means any research and development activity that is jointly undertaken by two or more parties"
+   }
+  },
+  {
+   "term": "Knowingly",
+   "defined_in": "this instrument (15 CFR Part 231)",
+   "evidence": {
+    "provision": "§ 231.106",
+    "quote": "Knowingly means acting with knowledge that a circumstance exists or is substantially certain to occur"
+   }
+  },
+  {
+   "term": "Legacy semiconductor",
+   "defined_in": "this instrument (15 CFR Part 231)",
+   "evidence": {
+    "provision": "§ 231.107(a)",
+    "quote": "Legacy semiconductor means:"
+   }
+  },
+  {
+   "term": "Material expansion",
+   "defined_in": "this instrument (15 CFR Part 231)",
+   "evidence": {
+    "provision": "§ 231.108",
+    "quote": "Material expansion means the increase of the semiconductor manufacturing capacity of an existing facility by more than five percent"
+   }
+  },
+  {
+   "term": "Members of the affiliated group",
+   "defined_in": "this instrument (15 CFR Part 231), by reference to 26 U.S.C. 1504(a)",
+   "evidence": {
+    "provision": "§ 231.109",
+    "quote": "Members of the affiliated group includes any entity that is a member of the covered entity"
+   }
+  },
+  {
+   "term": "Person",
+   "defined_in": "this instrument (15 CFR Part 231)",
+   "evidence": {
+    "provision": "§ 231.110",
+    "quote": "The term person includes an individual, partnership, association, corporation, organization, or any other combination of individuals."
+   }
+  },
+  {
+   "term": "Predominately serves the market",
+   "defined_in": "this instrument (15 CFR Part 231)",
+   "evidence": {
+    "provision": "§ 231.111",
+    "quote": "Predominately serves the market means that at least 85 percent of the output of the semiconductor manufacturing facility"
+   }
+  },
+  {
+   "term": "Required agreement",
+   "defined_in": "this instrument (15 CFR Part 231)",
+   "evidence": {
+    "provision": "§ 231.112(a)",
+    "quote": "Required agreement means the agreement that is entered into by a covered entity and the Secretary"
+   }
+  },
+  {
+   "term": "Research and development",
+   "defined_in": "this instrument (15 CFR Part 231)",
+   "evidence": {
+    "provision": "§ 231.113",
+    "quote": "Research and development means theoretical analysis, exploration, or experimentation"
+   }
+  },
+  {
+   "term": "Related entity",
+   "defined_in": "this instrument (15 CFR Part 231), for purposes of § 231.204",
+   "evidence": {
+    "provision": "§ 231.204(b)",
+    "quote": "a related entity is any entity that directly, or indirectly through one or more intermediaries, controls or is controlled by, or is under common control with, the covered entity"
+   }
+  },
+  {
+   "term": "Semiconductor",
+   "defined_in": "this instrument (15 CFR Part 231)",
+   "evidence": {
+    "provision": "§ 231.115",
+    "quote": "Semiconductor means an integrated electronic device or system"
+   }
+  },
+  {
+   "term": "Semiconductor manufacturing",
+   "defined_in": "this instrument (15 CFR Part 231)",
+   "evidence": {
+    "provision": "§ 231.116",
+    "quote": "Semiconductor manufacturing means semiconductor wafer production, semiconductor fabrication or semiconductor packaging."
+   }
+  },
+  {
+   "term": "Semiconductor manufacturing capacity",
+   "defined_in": "this instrument (15 CFR Part 231)",
+   "evidence": {
+    "provision": "§ 231.117",
+    "quote": "Semiconductor manufacturing capacity means the productive capacity of a facility for semiconductor manufacturing."
+   }
+  },
+  {
+   "term": "Semiconductors critical to national security",
+   "defined_in": "this instrument (15 CFR Part 231)",
+   "evidence": {
+    "provision": "§ 231.118",
+    "quote": "Semiconductors critical to national security means:"
+   }
+  },
+  {
+   "term": "Significant renovations",
+   "defined_in": "this instrument (15 CFR Part 231)",
+   "evidence": {
+    "provision": "§ 231.119",
+    "quote": "Significant renovations means building new cleanroom space or adding a production line or other physical space to an existing facility"
+   }
+  },
+  {
+   "term": "Technology licensing",
+   "defined_in": "this instrument (15 CFR Part 231)",
+   "evidence": {
+    "provision": "§ 231.120(a)",
+    "quote": "An express or implied contractual agreement in which the rights owned by, licensed to or otherwise lawfully available to one party in any trade secrets or knowhow are sold, licensed or otherwise made available to another party"
+   }
+  },
+  {
+   "term": "Technology or product that raises national security concerns",
+   "defined_in": "this instrument (15 CFR Part 231)",
+   "evidence": {
+    "provision": "§ 231.121",
+    "quote": "A technology or product that raises national security concerns means:"
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "prohibition",
+   "addressee": "enterprise",
+   "modality": "shall_not",
+   "summary": "Covered entity and members of its affiliated group may not engage in a significant transaction involving material expansion of semiconductor manufacturing capacity in a foreign country of concern, subject to the legacy-semiconductor exceptions in 231.202(a)(1) and (2).",
+   "applies_from": "During the 10-year period beginning on the date of the award of Federal financial assistance under 15 U.S.C. 4652",
+   "conditional_on": "Exceptions in § 231.202(a)(1) (existing legacy facilities) and § 231.202(a)(2) (legacy semiconductors predominately serving the market of a foreign country of concern)",
+   "evidence": {
+    "provision": "§ 231.202(a)",
+    "quote": "may not engage in any significant transaction"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Covered entity must enter into a required agreement with the Secretary, no later than the date of the award, that contains the expansion prohibition and otherwise implements the part.",
+   "applies_from": "No later than the date of the award of Federal financial assistance under 15 U.S.C. 4652",
+   "evidence": {
+    "provision": "§ 231.202(b)",
+    "quote": "the covered entity shall enter into a required agreement that contains this prohibition"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "enterprise",
+   "modality": "shall_not",
+   "summary": "Covered entity may not knowingly engage in joint research or technology licensing with a foreign entity of concern that relates to a technology or product raising national security concerns; ongoing activities identified in the required agreement are excepted.",
+   "applies_from": "During the applicable term of a Federal financial assistance award under 15 U.S.C. 4652",
+   "conditional_on": "Joint research or technology licensing relating to technology or products raising national security concerns; not applicable to ongoing activities memorialized in the required agreement under § 231.203(b)",
+   "evidence": {
+    "provision": "§ 231.203(a)",
+    "quote": "a covered entity may not knowingly engage in any joint research or technology licensing with a foreign entity of concern"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Secretary will specify in the required agreement any additional measures covered entities must take to mitigate circumvention risk of the Technology Clawback.",
+   "evidence": {
+    "provision": "§ 231.204(a)",
+    "quote": "the Secretary will specify, in the required agreement with the covered entity, any additional measures"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Covered entity must take the additional measures specified by the Secretary to mitigate the risk of circumvention, including measures for recovery if a related entity engages in prohibited joint research or technology licensing.",
+   "applies_from": "During the term applicable to the award",
+   "conditional_on": "Specified by the Secretary in the required agreement",
+   "evidence": {
+    "provision": "§ 231.204(a)",
+    "quote": "any additional measures that covered entities must take to mitigate the risk of circumvention of the Technology Clawback"
+   }
+  },
+  {
+   "type": "record_keeping",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Covered entity or member of its affiliated group planning or engaging in a material-expansion significant transaction must keep related records in line with ordinary-course practice. Under 231.205(b), a covered entity notified of a Secretary review must immediately retain all related records, including those held by affiliated group members or related entities.",
+   "applies_from": "During the 10-year period beginning on the date of the Federal financial assistance award under 15 U.S.C. 4652, and for seven years following any significant transaction involving material expansion",
+   "conditional_on": "Significant transaction involving material expansion of semiconductor manufacturing capacity in a foreign country of concern",
+   "evidence": {
+    "provision": "§ 231.205(a)",
+    "quote": "shall maintain records related to the significant transaction"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Covered entity must notify the Secretary of planned significant transactions by it or its affiliated group that may involve material expansion of semiconductor manufacturing capacity in a foreign country of concern, whether or not it believes an exception applies.",
+   "applies_from": "During the 10-year period beginning on the date of the Federal financial assistance award under 15 U.S.C. 4652",
+   "conditional_on": "Planned significant transactions that may involve material expansion in a foreign country of concern",
+   "evidence": {
+    "provision": "§ 231.301",
+    "quote": "the covered entity shall submit a notification to the Secretary regarding any planned significant transactions"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Notification must be certified by the covered entity's chief executive officer, president, or equivalent corporate officer, and must contain the information listed in 231.302(a) to (h), which must be accurate and complete.",
+   "applies_from": "Upon submission of a notification under § 231.301",
+   "evidence": {
+    "provision": "§ 231.302",
+    "quote": "shall be certified by the covered entity’s chief executive officer"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Secretary reviews notifications for completeness and may reject them, request additional information, or accept them and initiate review.",
+   "evidence": {
+    "provision": "§ 231.303",
+    "quote": "The Secretary will review the notification provided pursuant to § 231.301 for completeness"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Secretary consults with the Secretary of Defense and the Director of National Intelligence upon initiating any review; where the Secretary initiates review on its own, it must notify the covered entity promptly in writing.",
+   "conditional_on": "Initiation of a review under § 231.304",
+   "evidence": {
+    "provision": "§ 231.304(c)",
+    "quote": "The Secretary will consult with the Secretary of Defense and the Director of National Intelligence upon the initiation of a review of any transaction."
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Secretary must provide the covered entity a written initial determination, not later than 90 days after acceptance of a notification or initiation of review, as to whether the transaction would violate 231.202; time periods are tolled while additional information is requested.",
+   "applies_from": "Not later than 90 days after a notification is accepted or after review is initiated under § 231.304(a)(2)",
+   "conditional_on": "Subject to tolling under § 231.305(a)",
+   "evidence": {
+    "provision": "§ 231.305(b)",
+    "quote": "the Secretary will provide the covered entity an initial determination in writing"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "After a final determination that a transaction violates 231.202, the covered entity must cease or abandon the transaction, or ensure that an affiliated group member does so.",
+   "applies_from": "Upon issuance of a final determination",
+   "conditional_on": "Final determination that a transaction would violate or has violated § 231.202",
+   "evidence": {
+    "provision": "§ 231.305(c)(3)",
+    "quote": "the covered entity must cease or abandon the transaction"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Within 45 days of a final determination, the covered entity's chief executive officer, president, or equivalent corporate official must provide a signed letter certifying that the transaction has ceased or been abandoned. The covered entity must also promptly provide additional information requested during review (231.305(a)).",
+   "applies_from": "Within 45 days of the final determination",
+   "conditional_on": "Final determination under § 231.305(c)(3)",
+   "evidence": {
+    "provision": "§ 231.305(c)(3)",
+    "quote": "must provide a signed letter electronically to notifications@chips.gov within 45 days"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Covered entity must provide additional information requested by the Secretary during a review of possible violations of 231.203 within three business days, or a longer period if the Secretary grants a written request.",
+   "applies_from": "Within three business days of the Secretary's request",
+   "conditional_on": "Review of possible violations of the Technology Clawback under § 231.307",
+   "evidence": {
+    "provision": "§ 231.307(b)",
+    "quote": "The covered entity shall provide the additional information to the Secretary within three business days"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Secretary issues the final determination within 45 days of the initial determination, when the covered entity requests reconsideration in a Technology Clawback review.",
+   "applies_from": "Within 45 days of the initial determination",
+   "conditional_on": "Covered entity requests reconsideration under § 231.307(e)(1)",
+   "evidence": {
+    "provision": "§ 231.307(e)(2)",
+    "quote": "the Secretary will issue the final determination within 45 days of the initial determination"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Secretary, after public notice and comment where applicable, issues a public notice identifying additional semiconductors included in the term legacy semiconductor, at least once every two years for eight years after the last award.",
+   "applies_from": "Not later than August 9, 2024, and not less frequently than once every two years thereafter for the eight-year period after the last award",
+   "evidence": {
+    "provision": "§ 231.401",
+    "quote": "will issue a public notice identifying any additional semiconductors included in the meaning of the term"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "The required agreement between a covered entity and the Secretary must include the prohibitions on expansion transactions and joint research or technology licensing, must memorialize existing facilities and ongoing activities, and may include additional terms.",
+   "applies_from": "On or before the date the Secretary awards Federal financial assistance under 15 U.S.C. 4652",
+   "evidence": {
+    "provision": "§ 231.112(a)",
+    "quote": "The required agreement shall include, inter alia, provisions describing the prohibitions on certain expansion transactions"
+   }
+  }
+ ],
+ "enforcement": [
+  {
+   "sanction_type": "benefit_revocation_clawback",
+   "authority": "Secretary of Commerce (CHIPS Program Office, NIST)",
+   "triggered_by": "Violation of § 231.202 (Expansion Clawback), including engaging in a prohibited significant transaction or failing to cease or abandon a planned one that the Secretary has determined would violate § 231.202",
+   "max_penalty_text": "Recovery of the full amount of the Federal financial assistance provided to the covered entity, as a debt owed to the U.S. Government; recovery may be waived under § 231.306",
+   "penalty_reference": "§ 231.202; 15 U.S.C. 4652",
+   "cure_period": "not stated",
+   "evidence": {
+    "provision": "§ 231.305(d)",
+    "quote": "will result in the recovery of the full amount of the Federal financial assistance provided to the covered entity"
+   }
+  },
+  {
+   "sanction_type": "benefit_revocation_clawback",
+   "authority": "Secretary of Commerce (CHIPS Program Office, NIST)",
+   "triggered_by": "Final determination that an action violated § 231.203 (Technology Clawback, prohibition on certain joint research or technology licensing)",
+   "max_penalty_text": "Recovery of the full amount of the Federal financial assistance provided to the covered entity, which is a debt owed to the U.S. Government",
+   "penalty_reference": "§ 231.203; 15 U.S.C. 4652",
+   "cure_period": "not stated",
+   "evidence": {
+    "provision": "§ 231.307 (closing paragraph)",
+    "quote": "If the Secretary makes a final determination that an action violated § 231.203, the Secretary will recover the full amount of the Federal financial assistance provided to the covered entity"
+   }
+  },
+  {
+   "sanction_type": "benefit_revocation_clawback",
+   "authority": "Secretary of Commerce (CHIPS Program Office, NIST)",
+   "triggered_by": "Failure by the covered entity to comply with a mitigation agreement, or violation of other conditions in the mitigation agreement",
+   "max_penalty_text": "Recovery of the full amount of the Federal financial assistance provided to the covered entity (discretionary; the Secretary may recover)",
+   "penalty_reference": "§ 231.306",
+   "cure_period": "not stated",
+   "evidence": {
+    "provision": "§ 231.306",
+    "quote": "If a covered entity fails to comply with the mitigation agreement or if other conditions in the mitigation agreement are violated, the Secretary may recover the full amount of the Federal financial assistance provided to the covered entity."
+   }
+  },
+  {
+   "sanction_type": "benefit_revocation_clawback",
+   "authority": "Secretary of Commerce (CHIPS Program Office, NIST)",
+   "triggered_by": "Any related entity of the covered entity engages in joint research or technology licensing that would violate the Technology Clawback if engaged in by the covered entity, during the award term",
+   "max_penalty_text": "Recovery of up to the full amount of the Federal financial assistance provided to the covered entity, or lesser remedial measures at the Secretary's discretion",
+   "penalty_reference": "§ 231.204(a)",
+   "cure_period": "not stated",
+   "evidence": {
+    "provision": "§ 231.204(a)",
+    "quote": "measures that will allow the Secretary to recover up to the full amount of the Federal financial assistance provided to the covered entity"
+   }
+  },
+  {
+   "sanction_type": "service_suspension",
+   "authority": "Secretary of Commerce (CHIPS Program Office, NIST)",
+   "triggered_by": "Initial determination by the Secretary that § 231.202 or § 231.203 have been violated",
+   "max_penalty_text": "Suspension of Federal financial assistance (discretionary)",
+   "penalty_reference": "§ 231.308(c)",
+   "cure_period": "not stated",
+   "evidence": {
+    "provision": "§ 231.308(c)",
+    "quote": "If the Secretary makes an initial determination that § 231.202 or § 231.203 have been violated, the Secretary may suspend Federal financial assistance."
+   }
+  },
+  {
+   "sanction_type": "criminal_penalty",
+   "authority": "not stated in this text",
+   "triggered_by": "Submission of information to the Secretary under 15 U.S.C. 4652 or this part that is false (section heading: Submission of false information); 18 U.S.C. 1001 also applies to certifications under § 231.305(c)(3)",
+   "max_penalty_text": "Penalties under 18 U.S.C. 1001, as amended; penalty amount not stated in this text",
+   "penalty_reference": "18 U.S.C. 1001",
+   "cure_period": "not stated",
+   "evidence": {
+    "provision": "§ 231.402",
+    "quote": "Section 1001 of 18 U.S.C., as amended, shall apply to all information provided to the Secretary under 15 U.S.C. 4652 or under the regulations found in this part."
+   }
+  }
+ ],
+ "section_status": {}
+}

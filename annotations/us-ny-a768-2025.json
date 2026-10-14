@@ -1,0 +1,514 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "us-ny-a768-2025",
+ "tier": "B",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "light, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-interim-20261014"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "AGORA plaintext (ETO, CC BY-NC 4.0), local cache",
+  "url": "https://nyassembly.gov/leg/?default_fld=&leg_video=&bn=A00768&term=2025&Summary=Y&Actions=Y&Text=Y#",
+  "retrieved": "2025-01-30",
+  "version": "1.33.0 (2026-09-16)",
+  "language": "en",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "ai_general",
+   "algorithmic_decision_systems",
+   "consumer_protection"
+  ],
+  "primary_domain": "algorithmic_decision_systems",
+  "mechanisms": [
+   "mandate_obligation",
+   "disclosure_transparency",
+   "designation_tiering"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "ai_developer",
+   "ai_deployer",
+   "gpai_model_provider",
+   "government_agency"
+  ],
+  "affected_roles": [
+   "consumers_users"
+  ],
+  "decision_margins": [
+   "firm:compliance_process",
+   "firm:product_design_release",
+   "household:access",
+   "household:information",
+   "household:data_privacy"
+  ],
+  "territorial_scope": {
+   "types": [
+    "subnational"
+   ],
+   "description": "Applies to persons doing business in New York and to consumers defined as New York state residents; the text states no reach beyond the state.",
+   "evidence": {
+    "provision": "§ 1550(5)",
+    "quote": "\"Consumer\" shall mean any New York state resident."
+   }
+  },
+  "agora_applications": [
+   "Education",
+   "Finance and investment",
+   "Medicine, life sciences and public health"
+  ],
+  "agora_harms": [
+   "Discrimination"
+  ],
+  "agora_risk_factors": [
+   "Bias",
+   "Transparency",
+   "Interpretability and explainability"
+  ],
+  "agora_strategies": [
+   "Disclosure: In deployment",
+   "Disclosure: About inputs",
+   "Evaluation: Impact assessment",
+   "Evaluation: External auditing",
+   "Tiering: Tiering based on domain of application"
+  ]
+ },
+ "summary": {
+  "short": "Bill adding GBL Article 45-A. From 1 January 2027, developers and deployers of high-risk AI decision systems used for consequential decisions about New York consumers must use reasonable care against algorithmic discrimination, with documentation, impact assessment and notice duties; the attorney general enforces it.",
+  "long": "The bill adds GBL Article 45-A, the AI Consumer Protection Act. It covers high-risk AI decision systems that make or substantially assist consequential decisions about New York consumers in listed areas such as education, employment, lending, housing, insurance, health care and essential government services. From 1 January 2027, developers must use reasonable care against known algorithmic discrimination risks, supply documentation to deployers and publish system statements; an independent audit creates a rebuttable presumption of reasonable care. Deployers must keep a risk management program, complete impact assessments annually and within 90 days of substantial modifications, notify consumers of consequential decisions, explain adverse decisions, allow correction and appeal, and publish a statement. Developers of general-purpose AI models must keep technical documentation. Persons must disclose AI interaction to consumers unless obvious. Exemptions cover certain federal approvals, insurers and banks deemed compliant, and specified research and security activities. The attorney general has exclusive enforcement authority, with a notice-and-cure period in 2027 and discretionary cure from 2028; violations are unfair trade practices under GBL § 349, and there is no private right of action."
+ },
+ "relations": [
+  {
+   "relation": "amends",
+   "target_text": "New York General Business Law (adds new Article 45-A, §§ 1550-1556)",
+   "note": "The bill adds a new Article 45-A to the General Business Law, which contains the AI consumer protection provisions.",
+   "evidence": {
+    "provision": "§ 2",
+    "quote": "The general business law is amended by adding a new article  45-A"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "New York General Business Law § 349 (unfair trade practices)",
+   "note": "A violation of Article 45-A is an unfair trade practice for purposes of § 349, and § 349(h) does not apply to such violations; enforcement is solely by the attorney general.",
+   "evidence": {
+    "provision": "§ 1556(5)",
+    "quote": "for purposes of section three hundred forty-nine of this chapter"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "New York Public Officers Law, article six (public access to records)",
+   "note": "Documentation disclosed to the attorney general may be designated as exempt from disclosure under article six of the Public Officers Law.",
+   "evidence": {
+    "provision": "§ 1553(4)",
+    "quote": "article six of the public officers law"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "New York Civil Rights Law § 79-h",
+   "note": "Nothing in the article is to be construed to impose an obligation that adversely affects rights under § 79-h; the clause is malformed in the text.",
+   "evidence": {
+    "provision": "§ 1555(3)(b)",
+    "quote": "pursuant to section seventy-nine-h of the civil rights law"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "New York Banking Law (§ 2, § 222 and § 141, by reference)",
+   "note": "Definitions of bank, credit union, out-of-state bank and subsidiary for the prudential-regulator exemption are given by reference to Banking Law sections 2, 222 and 141.",
+   "evidence": {
+    "provision": "§ 1555(7)(b)(ii)",
+    "quote": "shall have the same meaning as set forth in section two of the banking law"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "New York Business Corporation Law § 912",
+   "note": "The term affiliate in the bank and credit union exemption has the meaning given in § 912 of the Business Corporation Law.",
+   "evidence": {
+    "provision": "§ 1555(7)(b)(i)",
+    "quote": "section nine hundred twelve of the business corporation law"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "New York Insurance Law §§ 501 and 4501 (insurer and fraternal benefit society definitions)",
+   "note": "Insurers and fraternal benefit societies are deemed in full compliance if they maintain a written AI decision systems program meeting superintendent requirements.",
+   "evidence": {
+    "provision": "§ 1555(6)",
+    "quote": "Any insurer, as defined by section five hundred one of"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Title II of the Civil Rights Act of 1964; 42 U.S.C. § 2000a(e)",
+   "note": "The definition of algorithmic discrimination excludes acts of private clubs or establishments not open to the general public, as set forth in title II.",
+   "evidence": {
+    "provision": "§ 1550(1)(b)(ii)",
+    "quote": "title II of the Civil Rights Act of 1964, 42 U.S.C. § 2000a(e), as amended"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "42 U.S.C. § 324(d)(2)",
+   "note": "The definition of health care service in the consequential decision definition refers to 42 U.S.C. § 324(d)(2).",
+   "evidence": {
+    "provision": "§ 1550(4)(e)",
+    "quote": "health care service, as defined in section 42 U.S.C."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "45 C.F.R. part 46 (title 45 of the Code of Federal Regulations)",
+   "note": "Scientific or statistical research qualifies for an exemption only if conducted in accordance with part 46 of title 45 of the CFR or FDA requirements.",
+   "evidence": {
+    "provision": "§ 1555(1)(g)(ii)(A)",
+    "quote": "the code of federal regulations, as amended"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Health Insurance Portability and Accountability Act of 1996 (HIPAA covered entities)",
+   "note": "Covered entities providing AI-generated health care recommendations that are not considered high risk are exempt from the article under the stated conditions.",
+   "evidence": {
+    "provision": "§ 1555(4)(d)",
+    "quote": "as defined by the health insurance portability and accountability act of 1996"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "NIST Artificial Intelligence Risk Management Framework",
+   "note": "Cited as a guidance standard that a deployer's risk management policy and program must consider, and as a framework for the affirmative defense in the enforcement section.",
+   "evidence": {
+    "provision": "§ 1552(2)(a)(i)(A)",
+    "quote": "the \"Artificial Intelligence Risk Management Framework\" published by the national institute of standards and technology"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "ISO/IEC 42001 (international standard for AI management systems)",
+   "note": "Cited as a guidance standard for the risk management policy and program, and as a framework for the affirmative defense in the enforcement section.",
+   "evidence": {
+    "provision": "§ 1552(2)(a)(i)(B)",
+    "quote": "ISO or IEC 42001 of the international organization for"
+   }
+  }
+ ],
+ "notes": "Excerpt of an introduced bill. The document contains only § 2 (adding GBL Article 45-A, §§ 1550-1556). The bill's section 1 and any effective-date provision are absent, and no version date is given. No enabling act or session-law relation is stated in the excerpt. Drafting defects: § 1555(3) opens with a malformed clause ('((b) pursuant to section seventy-nine-h'), with no closing clause (a). The defined term 'synthetic digital content' (§ 1550(15)) is not used in any operative provision. The 'general-purpose artificial intelligence model' definition (§ 1550(9)(a)) is built on the 'artificial intelligence decision system' definition, which is tied to consequential decisions.",
+ "events": [
+  {
+   "event": "application",
+   "date": "2027-01-01",
+   "date_type": "absolute",
+   "date_text": "Beginning on January first, two thousand twenty-seven",
+   "applies_to": "developer duty to use reasonable care against algorithmic discrimination from high-risk AI decision systems, with rebuttable presumption in AG enforcement",
+   "evidence": {
+    "provision": "Sec. 1551(1)(a)",
+    "quote": "Beginning on January first, two thousand twenty-seven, each developer"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2026-01-01",
+   "date_type": "absolute",
+   "date_text": "No later than January first, two thousand twenty-six, and at least annually thereafter",
+   "applies_to": "attorney general identifies and publishes list of independent bias and governance auditors",
+   "evidence": {
+    "provision": "Sec. 1551(1)(b)",
+    "quote": "No later than January first, two thousand twenty-six, and at least annually thereafter"
+   }
+  },
+  {
+   "event": "application",
+   "date": "2027-01-01",
+   "date_type": "absolute",
+   "date_text": "Beginning on January first, two thousand twenty-seven",
+   "applies_to": "developer disclosure of documentation and information to deployers and other developers",
+   "evidence": {
+    "provision": "Sec. 1551(2)",
+    "quote": "shall make available to each deployer or other developer the following information"
+   }
+  },
+  {
+   "event": "application",
+   "date": "2027-01-01",
+   "date_type": "absolute",
+   "date_text": "on or after January first, two thousand twenty-seven",
+   "applies_to": "developer documentation for deployer or contracted third-party impact assessments, for high-risk systems offered on or after that date",
+   "evidence": {
+    "provision": "Sec. 1551(3)(a)",
+    "quote": "The developer shall make such documentation and information available through artifacts"
+   }
+  },
+  {
+   "event": "application",
+   "date": "2027-01-01",
+   "date_type": "absolute",
+   "date_text": "Beginning on January first, two thousand twenty-seven",
+   "applies_to": "developer public statement on types of high-risk systems and how algorithmic discrimination risks are managed",
+   "evidence": {
+    "provision": "Sec. 1551(4)(a)",
+    "quote": "in a manner that is clear and readily available, on such developer's website"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "no later than ninety days after the developer intentionally and substantially modifies",
+   "depends_on": "developer's intentional and substantial modification of a high-risk system described in Sec. 1551(4)(a)(i)",
+   "applies_to": "update of developer public statement",
+   "offset_value": 90,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Sec. 1551(4)(b)(ii)",
+    "quote": "ninety days after the developer intentionally and substantially modifies"
+   }
+  },
+  {
+   "event": "application",
+   "date": "2027-01-01",
+   "date_type": "absolute",
+   "date_text": "Beginning on January first, two thousand twenty-seven",
+   "applies_to": "attorney general may require developer disclosure of statements or documentation in investigations",
+   "evidence": {
+    "provision": "Sec. 1551(6)",
+    "quote": "Beginning on January first, two thousand twenty-seven, the attorney general"
+   }
+  },
+  {
+   "event": "application",
+   "date": "2027-01-01",
+   "date_type": "absolute",
+   "date_text": "Beginning on January first, two thousand twenty-seven",
+   "applies_to": "deployer duty to use reasonable care against algorithmic discrimination from high-risk AI decision systems, with rebuttable presumption in AG enforcement",
+   "evidence": {
+    "provision": "Sec. 1552(1)(a)",
+    "quote": "Beginning on January first, two thousand twenty-seven, each deployer"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2027-01-01",
+   "date_type": "absolute",
+   "date_text": "No later than January first, two thousand twenty-seven, and at least annually thereafter",
+   "applies_to": "attorney general identifies and lists independent auditors for the deployer presumption",
+   "evidence": {
+    "provision": "Sec. 1552(1)(b)",
+    "quote": "January first, two thousand twenty-seven, and at least annually thereafter"
+   }
+  },
+  {
+   "event": "application",
+   "date": "2027-01-01",
+   "date_type": "absolute",
+   "date_text": "Beginning on January first, two thousand twenty-seven",
+   "applies_to": "deployer risk management policy and program for deployed high-risk AI decision systems",
+   "evidence": {
+    "provision": "Sec. 1552(2)(a)",
+    "quote": "The risk management policy and program shall specify and"
+   }
+  },
+  {
+   "event": "application",
+   "date": "2027-01-01",
+   "date_type": "absolute",
+   "date_text": "on or after January first, two thousand twenty-seven",
+   "applies_to": "deployer or contracted third party completes impact assessment of high-risk systems deployed on or after that date",
+   "evidence": {
+    "provision": "Sec. 1552(3)(a)(i)",
+    "quote": "shall complete an impact assessment of the high-risk artificial intelligence decision system"
+   }
+  },
+  {
+   "event": "application",
+   "date": "2027-01-01",
+   "date_type": "recurring",
+   "date_text": "beginning on January first, two thousand twenty-seven, ... at least annually",
+   "applies_to": "impact assessment of deployed high-risk systems repeated at least annually",
+   "evidence": {
+    "provision": "Sec. 1552(3)(a)(ii)(A)",
+    "quote": "at least annually; and"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "no later than ninety days after an intentional and substantial modification is made available",
+   "depends_on": "intentional and substantial modification of a deployed high-risk AI decision system",
+   "applies_to": "impact assessment after intentional and substantial modification",
+   "offset_value": 90,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Sec. 1552(3)(a)(ii)(B)",
+    "quote": "ninety days after an intentional and substantial modification to such high-risk"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2027-01-01",
+   "date_type": "recurring",
+   "date_text": "no later than January first, two thousand twenty-seven, and at least annually thereafter",
+   "applies_to": "deployer or contracted third party reviews each deployed high-risk system for algorithmic discrimination",
+   "evidence": {
+    "provision": "Sec. 1552(4)",
+    "quote": "a deployer, or a third party contracted by the deployer, shall review"
+   }
+  },
+  {
+   "event": "application",
+   "date": "2027-01-01",
+   "date_type": "absolute",
+   "date_text": "Beginning on January first, two thousand twenty-seven",
+   "applies_to": "consumer notice before consequential decisions (5(a)) and adverse-decision statements and opportunity to correct and appeal (5(b))",
+   "evidence": {
+    "provision": "Sec. 1552(5)(b)",
+    "quote": "Beginning on January first, two thousand twenty-seven, a deployer that has deployed"
+   }
+  },
+  {
+   "event": "application",
+   "date": "2027-01-01",
+   "date_type": "absolute",
+   "date_text": "Beginning on January first, two thousand twenty-seven",
+   "applies_to": "deployer public statement on deployed high-risk systems and information collected and used",
+   "evidence": {
+    "provision": "Sec. 1552(6)(a)",
+    "quote": "each deployer shall make available, in a manner that is clear and readily available on"
+   }
+  },
+  {
+   "event": "application",
+   "date": "2027-01-01",
+   "date_type": "absolute",
+   "date_text": "Beginning on January first, two thousand twenty-seven",
+   "applies_to": "attorney general may require deployer risk management policy, impact assessments or records in investigations",
+   "evidence": {
+    "provision": "Sec. 1552(9)",
+    "quote": "the attorney general may require that a deployer"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "no later than ninety days after a request by the attorney general",
+   "depends_on": "attorney general request for risk management policy, impact assessment or records",
+   "applies_to": "deployer or third-party contractor disclosure to attorney general",
+   "offset_value": 90,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Sec. 1552(9)",
+    "quote": "after a request by the attorney general"
+   }
+  },
+  {
+   "event": "application",
+   "date": "2027-01-01",
+   "date_type": "absolute",
+   "date_text": "Beginning on January first, two thousand twenty-seven",
+   "applies_to": "developer of general-purpose AI model: technical documentation and downstream information, subject to Sec. 1553(2) exemptions",
+   "evidence": {
+    "provision": "Sec. 1553(1)",
+    "quote": "each developer of a general-purpose artificial intelligence model shall"
+   }
+  },
+  {
+   "event": "application",
+   "date": "2027-01-01",
+   "date_type": "absolute",
+   "date_text": "Beginning on January first, two thousand twenty-seven",
+   "applies_to": "attorney general may require developer to disclose documentation maintained under Sec. 1553",
+   "evidence": {
+    "provision": "Sec. 1553(4)",
+    "quote": "Beginning on January first, two thousand twenty-seven, the attorney general"
+   }
+  },
+  {
+   "event": "application",
+   "date": "2027-01-01",
+   "date_type": "absolute",
+   "date_text": "Beginning on January first, two thousand twenty-seven",
+   "applies_to": "disclosure to consumers that they are interacting with an AI decision system, for systems intended to interact with consumers",
+   "evidence": {
+    "provision": "Sec. 1554(1)",
+    "quote": "shall ensure that it is disclosed to each consumer"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2027-01-01",
+   "date_type": "absolute",
+   "date_text": "during the period beginning on January first, two thousand twenty-seven, and ending on January first, two thousand twenty-eight",
+   "applies_to": "notice-of-violation and cure period before attorney general may initiate action",
+   "evidence": {
+    "provision": "Sec. 1556(2)",
+    "quote": "beginning on January first, two thousand twenty-seven, and ending on January first, two thousand twenty-eight"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2028-01-01",
+   "date_type": "absolute",
+   "date_text": "ending on January first, two thousand twenty-eight",
+   "applies_to": "end of the notice-and-cure period; from this date the cure-opportunity factors of Sec. 1556(3) apply",
+   "evidence": {
+    "provision": "Sec. 1556(2)",
+    "quote": "ending on January first, two thousand twenty-eight"
+   }
+  },
+  {
+   "event": "application",
+   "date": "2028-01-01",
+   "date_type": "absolute",
+   "date_text": "beginning on January first, two thousand twenty-eight",
+   "applies_to": "attorney general may consider listed factors in deciding whether to grant a cure opportunity",
+   "evidence": {
+    "provision": "Sec. 1556(3)",
+    "quote": "the attorney general may, in determining whether to grant a developer"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "within sixty days after receipt of such notice of violation",
+   "depends_on": "receipt of attorney general notice of violation",
+   "applies_to": "cure of violation before attorney general may bring action",
+   "offset_value": 60,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Sec. 1556(2)",
+    "quote": "within sixty days after receipt of such notice of violation"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "no later than sixty days after discovering such violation through red-teaming",
+   "depends_on": "discovery of violation through red-teaming",
+   "applies_to": "cure, notice to attorney general and evidence of harm mitigation for affirmative defense",
+   "offset_value": 60,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Sec. 1556(6)(a)(ii)",
+    "quote": "no later than sixty days after discovering such violation through red-teaming"
+   }
+  }
+ ],
+ "section_status": {
+  "thresholds": {
+   "status": "not_found",
+   "note": "No numeric cutoff changing legal treatment was found. The numbers in the text are dates (January 1, 2027 and 2028; January 1, 2026), procedural periods (ninety days in 1551(4)(b)(ii), 1552(3)(a)(ii)(B) and 1552(9); sixty days in 1556(2) and 1556(6)(a)(ii)), a record-retention period (three years in 1552(3)(e)), and the cure-period and record mechanics coded elsewhere, so they are not coded as thresholds. The definitions of consumer, consequential decision and high-risk system contain no numbers."
+  }
+ },
+ "thresholds": []
+}

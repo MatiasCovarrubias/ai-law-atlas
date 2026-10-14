@@ -1,0 +1,835 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "us-ny-raise-chapter-amendment-2026",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (connectors/fetch_texts.py)",
+  "url": "https://nyassembly.gov/leg/?default_fld=&leg_video=&bn=A09449&term=2025&Summary=Y&Actions=Y&Text=Y",
+  "retrieved": "2026-10-13",
+  "version": "as fetched",
+  "language": "en",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "ai_general",
+   "generative_ai",
+   "cybersecurity"
+  ],
+  "primary_domain": "ai_general",
+  "mechanisms": [
+   "mandate_obligation",
+   "disclosure_transparency",
+   "registration_notification",
+   "institution_setup"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "ai_developer",
+   "government_agency"
+  ],
+  "affected_roles": [
+   "general_public",
+   "consumers_users"
+  ],
+  "decision_margins": [
+   "firm:entry_market_access",
+   "firm:product_design_release",
+   "firm:compliance_process",
+   "household:information"
+  ],
+  "territorial_scope": {
+   "types": [
+    "subnational",
+    "extraterritorial"
+   ],
+   "description": "Scope turns on development, deployment or operation of frontier models in whole or in part in New York state; the text does not require the developer to be located there.",
+   "evidence": {
+    "provision": "§ 1425",
+    "quote": "This article shall only apply to frontier models that are developed, deployed, or operating in whole or in part in New York state."
+   }
+  },
+  "agora_harms": [
+   "Harm to health/safety",
+   "Harm to property"
+  ],
+  "agora_incentives": [
+   "Fines"
+  ],
+  "agora_risk_factors": [
+   "Safety",
+   "Security: Cybersecurity",
+   "Transparency"
+  ],
+  "agora_strategies": [
+   "Disclosure",
+   "Disclosure: About evaluation",
+   "Disclosure: About incidents",
+   "Disclosure: In deployment",
+   "Evaluation",
+   "Licensing, registration, and certification",
+   "New institution",
+   "Government study or report",
+   "Tiering: Tiering based on inputs"
+  ]
+ },
+ "summary": {
+  "short": "Replaces Article 44-B of the New York General Business Law (RAISE Act) on frontier AI models. Requires frontier developers to publish safety frameworks and transparency reports and report critical safety incidents to a new DFS office; large developers file disclosure statements. Effective January 1, 2027, with the 2025 chapter.",
+  "long": "Repeals and replaces Article 44-B of the New York General Business Law, added by a 2025 chapter on frontier AI models, with the Responsible AI Safety and Education (RAISE) Act (bill A.9449/S.8828, recorded as signed Chapter 96 of 2026). It covers frontier models trained with more than 10^26 operations that are developed, deployed or operating in whole or in part in New York, excluding certain academic research (§§ 1420, 1425–1426). Large frontier developers (affiliates' prior-year revenue above $500 million) must publish and annually review a frontier AI framework and publish transparency reports before or concurrently with deploying new models; developers must avoid materially false or misleading statements about catastrophic risk (§ 1421). Developers must report critical safety incidents to a new DFS office within 72 hours, and disclose imminent-risk incidents to an authority within 24 hours (§ 1422). Large developers must file a disclosure statement and pay pro rata assessments (§ 1428). The attorney general may seek civil penalties of up to $1 million for a first violation and $3 million for subsequent violations; no private right of action (§ 1427). Section 3 sets the 2025 chapter's effective date at January 1, 2027."
+ },
+ "relations": [
+  {
+   "relation": "replaces",
+   "target_text": "Article 44-B of the general business law, as added by a chapter of the laws of 2025 (S. 6953-B / A. 6453-B)",
+   "note": "Repeal and reenactment in one step: the 2025 Article 44-B is repealed and a new Article 44-B (§§ 1420-1429) is added.",
+   "evidence": {
+    "provision": "§ 2",
+    "quote": "is REPEALED and a new article 44-B is added"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Section 3 of a chapter of the laws of 2025 amending the general business law relating to the training and use of artificial intelligence frontier models (S. 6953-B / A. 6453-B)",
+   "note": "Changes the effective-date provision of the 2025 chapter from 'on the ninetieth day after it shall have become a law' to 'January 1, 2027'.",
+   "evidence": {
+    "provision": "§ 3",
+    "quote": "Section 3 of a chapter of the laws of 2025 amending the general business law relating to the training and use of artificial intelligence frontier models"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "New York General Business Law",
+   "note": "Adds Article 44-B (§§ 1420-1429) and, per the long title, repeals certain provisions of the General Business Law.",
+   "evidence": {
+    "provision": "Long title",
+    "quote": "to amend the general business law, in relation to transparency and safety requirements for developers of artificial intelligence frontier models"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Economic Development Law § 361",
+   "note": "The exemption for the Empire AI consortium and the institute uses the definitions in section 361 of the economic development law.",
+   "evidence": {
+    "provision": "§ 1426(2)",
+    "quote": "as such terms are defined by section three hundred sixty-one of the economic development law"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Public Officers Law, article six",
+   "note": "Reports of critical safety incidents and of internal-use catastrophic risk assessments are exempt from disclosure under article six.",
+   "evidence": {
+    "provision": "§ 1422(6)",
+    "quote": "are exempt from disclosure under article six of the public officers law"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "federal laws, regulations, or guidance documents designated by office regulation under § 1422(8)",
+   "note": "The office may designate federal requirements for critical safety incident reporting; a developer declaring intent to comply through a designated federal standard is deemed compliant under § 1422(3) while the designation applies.",
+   "evidence": {
+    "provision": "§ 1422(8)",
+    "quote": "designating one or more federal laws, regulations, or guidance documents"
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "Department of Financial Services",
+   "role": "designated",
+   "function": "Defined as the 'Department'; assesses large frontier developers in pro rata shares to defray administration costs (§ 1428(4)); the Office sits within it.",
+   "evidence": {
+    "provision": "§ 1420(12)",
+    "quote": "\"Department\" means the department of financial services."
+   }
+  },
+  {
+   "name": "Office (an office within the Department of Financial Services)",
+   "role": "designated",
+   "function": "Implements the article; establishes the critical safety incident reporting mechanism (§ 1422(1)); reviews reports; produces an annual report (§ 1422(7)); may adopt rules and designate federal standards (§§ 1422(8), 1429); maintains a published list of large frontier developers (§ 1428(6)).",
+   "evidence": {
+    "provision": "§ 1420(16)",
+    "quote": "\"Office\" means an office within the department of financial services, which shall report to the superintendent of financial services"
+   }
+  },
+  {
+   "name": "Attorney general",
+   "role": "designated",
+   "function": "May bring a civil action to recover civil penalties for violations of the article (§ 1427(1)).",
+   "evidence": {
+    "provision": "§ 1427(1)",
+    "quote": "The attorney general may bring a civil action to recover a civil penalty"
+   }
+  },
+  {
+   "name": "Empire AI consortium and the institute",
+   "role": "listed",
+   "function": "Named in the exceptions: the article does not apply to them, as defined by Economic Development Law § 361.",
+   "evidence": {
+    "provision": "§ 1426(2)",
+    "quote": "the Empire AI consortium or the institute"
+   }
+  }
+ ],
+ "notes": "The document is bill A.9449 as it stands after substitution by S.8828 (Actions list, 02/25/2026), with passage by both houses and a 'SIGNED CHAP.96' entry on 03/27/2026; the registry status is adopted, not yet in force. The 2025 chapter (S.6953-B / A.6453-B) is not reproduced: its Article 44-B text, which this bill repeals, is not in the document, and its chapter number is not stated. Section 5 makes §§ 1, 2 and 4 take effect with the 2025 chapter, and the rest immediately; § 3 sets January 1, 2027. Internal inconsistency: § 1428(5) refers to a 'large frontier model', a term the article does not define (it defines 'frontier model'). § 1428(3)(c) uses a 5% beneficial-ownership threshold for private companies and a 50% threshold for publicly traded ones. The companion bill is S.8828 ('SAME AS S08828'). Obligations, thresholds, events and enforcement details are not coded in this Tier A pass beyond the entities and relations above.",
+ "events": [
+  {
+   "event": "introduced",
+   "date": "2026-01-06",
+   "date_type": "absolute",
+   "date_text": "January 6, 2026",
+   "applies_to": "Assembly bill A.9449",
+   "evidence": {
+    "provision": "Text, cover page (A. 9449)",
+    "quote": "January 6, 2026"
+   }
+  },
+  {
+   "event": "received_chamber",
+   "date": "2026-01-28",
+   "date_type": "absolute",
+   "date_text": "DELIVERED TO ASSEMBLY",
+   "applies_to": "Assembly (S.8828)",
+   "evidence": {
+    "provision": "Actions (S08828)",
+    "quote": "DELIVERED TO ASSEMBLY"
+   }
+  },
+  {
+   "event": "passed_chamber",
+   "date": "2026-01-28",
+   "date_type": "absolute",
+   "date_text": "PASSED SENATE",
+   "applies_to": "Senate (S.8828)",
+   "evidence": {
+    "provision": "Actions (S08828)",
+    "quote": "PASSED SENATE"
+   }
+  },
+  {
+   "event": "committee_approved",
+   "date": "2026-02-25",
+   "date_type": "absolute",
+   "date_text": "rules report cal.85",
+   "applies_to": "Assembly Rules Committee (A.9449)",
+   "evidence": {
+    "provision": "Actions (A09449)",
+    "quote": "rules report cal.85"
+   }
+  },
+  {
+   "event": "passed_chamber",
+   "date": "2026-03-11",
+   "date_type": "absolute",
+   "date_text": "passed assembly",
+   "applies_to": "Assembly (S.8828, substituted for A.9449)",
+   "evidence": {
+    "provision": "Actions (S08828)",
+    "quote": "passed assembly"
+   }
+  },
+  {
+   "event": "legislative_approval",
+   "date": "2026-03-11",
+   "date_type": "absolute",
+   "date_text": "passed assembly",
+   "applies_to": "Final passage of the bill (S.8828)",
+   "evidence": {
+    "provision": "Actions (S08828)",
+    "quote": "passed assembly"
+   }
+  },
+  {
+   "event": "received_chamber",
+   "date": "2026-03-11",
+   "date_type": "absolute",
+   "date_text": "returned to senate",
+   "applies_to": "Senate (S.8828, returned)",
+   "evidence": {
+    "provision": "Actions (S08828)",
+    "quote": "returned to senate"
+   }
+  },
+  {
+   "event": "signed",
+   "date": "2026-03-27",
+   "date_type": "absolute",
+   "date_text": "SIGNED CHAP.96",
+   "applies_to": "Chapter 96 of the Laws of 2026",
+   "evidence": {
+    "provision": "Actions (S08828)",
+    "quote": "SIGNED CHAP.96"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2026-03-27",
+   "date_type": "relative",
+   "date_text": "This act shall take effect immediately",
+   "anchor": "This act shall take effect immediately",
+   "applies_to": "Section 3 and Section 5 of this act (Sections 1, 2 and 4 excepted)",
+   "offset_value": 0,
+   "offset_unit": "days",
+   "anchor_event": "signed",
+   "evidence": {
+    "provision": "§ 5",
+    "quote": "This act shall take effect immediately; provided, however that"
+   },
+   "date_computed_from": "signed 2026-03-27 (text) + 0 days"
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2027-01-01",
+   "date_type": "absolute",
+   "date_text": "This act shall take effect [on the ninetieth day after it shall have become a law] January 1, 2027.",
+   "applies_to": "Sections 1, 2 and 4 of this act (new GBL Art. 44-B, repeal of Art. 44-B, severability), per Section 5; date set by Section 3 as amended for the 2025 chapter",
+   "evidence": {
+    "provision": "§ 3",
+    "quote": "This act shall take effect [on the ninetieth day after it shall have become a law] January 1, 2027."
+   }
+  },
+  {
+   "event": "repealed",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "Article 44-B of the general business law, as added by a chapter of the laws of 2025, is REPEALED and a new article 44-B is added",
+   "depends_on": "effective date of Sections 1, 2 and 4 of this act, which take effect on the same date as the 2025 chapter (Section 5)",
+   "applies_to": "GBL Art. 44-B as added by the 2025 chapter (S.6953-B / A.6453-B)",
+   "evidence": {
+    "provision": "§ 2",
+    "quote": "is REPEALED and a"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "If a large frontier developer makes a material modification to its frontier AI framework, it shall publish the modified framework and a justification within thirty days",
+   "depends_on": "material modification of the large frontier developer's frontier AI framework",
+   "applies_to": "Large frontier developers: publication of modified frontier AI framework and justification (GBL § 1421(2)(b))",
+   "offset_value": 30,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "§ 1421(2)(b)",
+    "quote": "for that modification within thirty days"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "at least once per year",
+   "applies_to": "Large frontier developers: review and update of frontier AI framework (GBL § 1421(2)(a))",
+   "evidence": {
+    "provision": "§ 1421(2)(a)",
+    "quote": "update its frontier AI framework at least once per year"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "Before, or concurrently with, deploying a new frontier model or a substantially modified version of an existing frontier model, publish a transparency report",
+   "depends_on": "deployment of a new frontier model or a substantially modified version of an existing frontier model",
+   "applies_to": "Frontier developers: transparency report (GBL § 1421(3)(a)); large frontier developers also include summaries (§ 1421(3)(b))",
+   "evidence": {
+    "provision": "§ 1421(3)(a)",
+    "quote": "Before, or concurrently with, deploying a new frontier model"
+   }
+  },
+  {
+   "event": "application",
+   "date": "2028-01-01",
+   "date_type": "absolute",
+   "date_text": "Beginning January first, two thousand twenty-eight, and annually thereafter",
+   "applies_to": "Office of the department of financial services: annual report on critical safety incidents (GBL § 1422(7)(a))",
+   "evidence": {
+    "provision": "§ 1422(7)(a)",
+    "quote": "Beginning January first, two thousand twenty-eight"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "every three months or pursuant to another reasonable schedule requested by the large frontier developer and agreed upon by the office",
+   "applies_to": "Large frontier developers: summary of catastrophic risk assessments from internal use to the office (GBL § 1422(2)(a))",
+   "evidence": {
+    "provision": "§ 1422(2)(a)",
+    "quote": "every three months or pursuant to another"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "within seventy-two hours from a determination that a critical safety incident has occurred or within seventy-two hours of the frontier developer learning facts sufficient to establish a reasonable belief that a critical safety incident has occurred",
+   "depends_on": "determination, or learning of facts establishing a reasonable belief, that a critical safety incident has occurred",
+   "applies_to": "Frontier developers: report of critical safety incident to the office (GBL § 1422(3)(a))",
+   "evidence": {
+    "provision": "§ 1422(3)(a)",
+    "quote": "within seventy-two hours from a"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "shall disclose that incident within twenty-four hours to an authority",
+   "depends_on": "discovery that a critical safety incident poses an imminent risk of death or serious physical injury",
+   "applies_to": "Frontier developers: disclosure to appropriate authority (GBL § 1422(3)(b))",
+   "evidence": {
+    "provision": "§ 1422(3)(b)",
+    "quote": "shall disclose that incident within twenty-four hours"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "It shall be renewed every two years, whenever ownership of the frontier model is transferred or whenever there is a material change to the information reported, whichever occurs earlier",
+   "applies_to": "Large frontier developers: disclosure statement filed with the office (GBL § 1428(2))",
+   "evidence": {
+    "provision": "§ 1428(2)",
+    "quote": "It shall be renewed every two years"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "revenue_annual",
+   "variable_text": "annual gross revenues of a frontier developer together with its affiliates",
+   "operator": ">",
+   "value": 500000000,
+   "value_text": "annual gross revenues in excess of five hundred million dollars in the preceding calendar year",
+   "unit": "dollars",
+   "currency": "USD",
+   "measurement": "Annual gross revenues of the frontier developer and its affiliates collectively, in the preceding calendar year",
+   "level": "group",
+   "trigger": "designation_category",
+   "consequence": "Frontier developer becomes a large frontier developer, subject to the large-developer duties in §§1421, 1422(2) and 1428 of the added article",
+   "conditions": "Entity must first be a frontier developer (trained or initiated training of a frontier model); affiliates counted collectively",
+   "evidence": {
+    "provision": "§ 2 (adding Gen Bus L art 44-B § 1420(10))",
+    "quote": "of five hundred million dollars in the preceding calendar year."
+   }
+  },
+  {
+   "variable": "compute_training",
+   "variable_text": "computing power used to train a foundation model (frontier model threshold)",
+   "operator": ">",
+   "value": 1e+26,
+   "value_text": "greater than 10§26 integer or floating-point operations",
+   "unit": "integer or floating-point operations",
+   "measurement": "Computing power for the original training run plus any subsequent fine-tuning, reinforcement learning or other material modifications the developer applies (§1420(9)(b)); the text renders the exponent as '10§26'",
+   "level": "model",
+   "trigger": "scope_definition",
+   "consequence": "Model is a frontier model; its developer may be a frontier developer, and the frontier-model duties of the added article apply",
+   "conditions": "Model must also be a foundation model (trained on a broad data set, designed for generality of output, adaptable to a wide range of distinctive tasks)",
+   "evidence": {
+    "provision": "§ 2 (adding Gen Bus L art 44-B § 1420(9)(a))",
+    "quote": "using a quantity of computing power greater than 10§26 integer or float-"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "number of people dead or seriously injured by a single incident (catastrophic risk)",
+   "operator": ">",
+   "value": 50,
+   "value_text": "more than fifty people",
+   "unit": "people",
+   "measurement": "Single incident involving a frontier model; the frontier model must materially contribute to the death of or serious injury to the people",
+   "level": "other",
+   "trigger": "scope_definition",
+   "consequence": "Risk qualifies as a catastrophic risk, a defined term used in the frontier AI framework, transparency and incident-reporting duties",
+   "conditions": "Risk must be foreseeable and material and arise from conduct listed in §1420(3)(a)(i)-(iii); exclusions in §1420(3)(b) apply",
+   "evidence": {
+    "provision": "§ 2 (adding Gen Bus L art 44-B § 1420(3)(a))",
+    "quote": "injury to, more than fifty people or more than one billion dollars in"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "damage to or loss of property from a single incident (catastrophic risk)",
+   "operator": ">",
+   "value": 1000000000,
+   "value_text": "more than one billion dollars in damage to, or loss of, property",
+   "unit": "dollars",
+   "currency": "USD",
+   "measurement": "Single incident involving a frontier model; the frontier model must materially contribute to the damage or loss",
+   "level": "other",
+   "trigger": "scope_definition",
+   "consequence": "Risk qualifies as a catastrophic risk, a defined term used in the frontier AI framework, transparency and incident-reporting duties",
+   "conditions": "Loss of value of equity does not count as property damage (§1423); alternative to the fifty-person limb",
+   "evidence": {
+    "provision": "§ 2 (adding Gen Bus L art 44-B § 1420(3)(a))",
+    "quote": "injury to, more than fifty people or more than one billion dollars in"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "beneficial ownership interest in a large frontier developer or its owner (disclosure listing)",
+   "operator": ">=",
+   "value": 5,
+   "value_text": "a five percent or greater interest",
+   "unit": "percent",
+   "measurement": "Interest held at the time the disclosure statement is filed; former holders of such an interest in the preceding five years are also listed",
+   "level": "person",
+   "trigger": "obligation",
+   "consequence": "Persons holding this interest must be listed in the disclosure statement filed with the office",
+   "conditions": "Applies where the large frontier developer or its ultimate parent is a privately or closely held company",
+   "evidence": {
+    "provision": "§ 2 (adding Gen Bus L art 44-B § 1428(3)(c))",
+    "quote": "a list of all persons or entities that beneficially own a five percent"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "beneficial ownership interest in a large frontier developer or its publicly traded owner (disclosure listing)",
+   "operator": ">=",
+   "value": 50,
+   "value_text": "a fifty percent or greater interest",
+   "unit": "percent",
+   "measurement": "Interest held at the time of registration",
+   "level": "person",
+   "trigger": "obligation",
+   "consequence": "Owner that is publicly traded must list persons holding this interest in the large frontier developer",
+   "conditions": "Applies where the owner or ultimate parent of the large frontier developer is a publicly traded company",
+   "evidence": {
+    "provision": "§ 2 (adding Gen Bus L art 44-B § 1428(3)(c))",
+    "quote": "a list of all persons or entities that beneficially own a fifty percent"
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "Affiliate",
+   "defined_in": "§ 2 (adding Gen Bus L art 44-B § 1420(1))",
+   "evidence": {
+    "provision": "§ 2 (adding Gen Bus L art 44-B § 1420(1))",
+    "quote": "\"Affiliate\" means a person controlling, controlled by, or under"
+   }
+  },
+  {
+   "term": "Artificial intelligence model",
+   "defined_in": "§ 2 (adding Gen Bus L art 44-B § 1420(2))",
+   "evidence": {
+    "provision": "§ 2 (adding Gen Bus L art 44-B § 1420(2))",
+    "quote": "\"Artificial intelligence model\" means an engineered or machine-"
+   }
+  },
+  {
+   "term": "Catastrophic risk",
+   "defined_in": "§ 2 (adding Gen Bus L art 44-B § 1420(3))",
+   "evidence": {
+    "provision": "§ 2 (adding Gen Bus L art 44-B § 1420(3)(a))",
+    "quote": "\"Catastrophic risk\" means a foreseeable and material risk that"
+   }
+  },
+  {
+   "term": "Critical safety incident",
+   "defined_in": "§ 2 (adding Gen Bus L art 44-B § 1420(4))",
+   "evidence": {
+    "provision": "§ 2 (adding Gen Bus L art 44-B § 1420(4))",
+    "quote": "\"Critical safety incident\" means any of the following:"
+   }
+  },
+  {
+   "term": "Deploy",
+   "defined_in": "§ 2 (adding Gen Bus L art 44-B § 1420(5))",
+   "evidence": {
+    "provision": "§ 2 (adding Gen Bus L art 44-B § 1420(5)(a))",
+    "quote": "\"Deploy\" means to make a frontier model available to a third"
+   }
+  },
+  {
+   "term": "Foundation model",
+   "defined_in": "§ 2 (adding Gen Bus L art 44-B § 1420(6))",
+   "evidence": {
+    "provision": "§ 2 (adding Gen Bus L art 44-B § 1420(6))",
+    "quote": "\"Foundation model\" means an artificial intelligence model that is all of the following:"
+   }
+  },
+  {
+   "term": "Frontier AI framework",
+   "defined_in": "§ 2 (adding Gen Bus L art 44-B § 1420(7))",
+   "evidence": {
+    "provision": "§ 2 (adding Gen Bus L art 44-B § 1420(7))",
+    "quote": "\"Frontier AI framework\" means documented technical and organiza-"
+   }
+  },
+  {
+   "term": "Frontier developer",
+   "defined_in": "§ 2 (adding Gen Bus L art 44-B § 1420(8))",
+   "evidence": {
+    "provision": "§ 2 (adding Gen Bus L art 44-B § 1420(8))",
+    "quote": "\"Frontier developer\" means a person who has trained, or initiated"
+   }
+  },
+  {
+   "term": "Frontier model",
+   "defined_in": "§ 2 (adding Gen Bus L art 44-B § 1420(9))",
+   "evidence": {
+    "provision": "§ 2 (adding Gen Bus L art 44-B § 1420(9)(a))",
+    "quote": "\"Frontier model\" means a foundation model that was trained"
+   }
+  },
+  {
+   "term": "Large frontier developer",
+   "defined_in": "§ 2 (adding Gen Bus L art 44-B § 1420(10))",
+   "evidence": {
+    "provision": "§ 2 (adding Gen Bus L art 44-B § 1420(10))",
+    "quote": "\"Large frontier developer\" means a frontier developer that togeth-"
+   }
+  },
+  {
+   "term": "Model weight",
+   "defined_in": "§ 2 (adding Gen Bus L art 44-B § 1420(11))",
+   "evidence": {
+    "provision": "§ 2 (adding Gen Bus L art 44-B § 1420(11))",
+    "quote": "\"Model weight\" means a numerical parameter in a frontier model"
+   }
+  },
+  {
+   "term": "Person",
+   "defined_in": "§ 2 (adding Gen Bus L art 44-B § 1420(14))",
+   "evidence": {
+    "provision": "§ 2 (adding Gen Bus L art 44-B § 1420(14))",
+    "quote": "\"Person\" means an individual, proprietorship, firm, partnership,"
+   }
+  },
+  {
+   "term": "Property",
+   "defined_in": "§ 2 (adding Gen Bus L art 44-B § 1420(13))",
+   "evidence": {
+    "provision": "§ 2 (adding Gen Bus L art 44-B § 1420(13))",
+    "quote": "\"Property\" means tangible or intangible property."
+   }
+  },
+  {
+   "term": "Empire AI consortium",
+   "defined_in": "Defined by reference to section three hundred sixty-one of the economic development law (per text)",
+   "evidence": {
+    "provision": "§ 2 (adding Gen Bus L art 44-B § 1426(2))",
+    "quote": "the Empire AI consortium or the institute, as such terms are"
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "disclosure_transparency",
+   "addressee": "ai_developer",
+   "modality": "shall",
+   "summary": "A large frontier developer must write, implement, comply with and publish on its website a frontier AI framework covering the listed matters (standards, capability thresholds, mitigations, deployment review, third-party assessment, cybersecurity, critical safety incidents, internal governance, internal-use risk).",
+   "applies_from": "January 1, 2027 (§ 3 as amended; see § 5)",
+   "conditional_on": "Applies to large frontier developers (annual gross revenues above five hundred million dollars with affiliates, § 1420(10))",
+   "evidence": {
+    "provision": "§ 1421(1)",
+    "quote": "A large frontier developer shall write, implement, comply with, and clearly and conspicuously publish on"
+   }
+  },
+  {
+   "type": "management_system",
+   "addressee": "ai_developer",
+   "modality": "shall",
+   "summary": "A large frontier developer must review and, as appropriate, update its frontier AI framework at least once per year, and publish any material modification with a justification within thirty days.",
+   "applies_from": "January 1, 2027 (§ 3 as amended; see § 5)",
+   "conditional_on": "Large frontier developers only; the publication duty applies on a material modification",
+   "evidence": {
+    "provision": "§ 1421(2)(a)",
+    "quote": "A large frontier developer shall review and, as appropriate,"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "ai_developer",
+   "modality": "shall",
+   "summary": "Before or concurrently with deploying a new or substantially modified frontier model, a frontier developer must publish a transparency report with the listed items (developer website, contact mechanism, release date, languages, output modalities, intended uses, generally applicable restrictions).",
+   "applies_from": "January 1, 2027 (§ 3 as amended; see § 5)",
+   "conditional_on": "Before or concurrently with deploying a new frontier model or a substantially modified version",
+   "evidence": {
+    "provision": "§ 1421(3)(a)",
+    "quote": "a transparency report containing all of the following"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "ai_developer",
+   "modality": "shall",
+   "summary": "A large frontier developer must include in the transparency report summaries of catastrophic-risk assessments, their results, the extent of third-party evaluator involvement, and other steps taken under its framework.",
+   "applies_from": "January 1, 2027 (§ 3 as amended; see § 5)",
+   "conditional_on": "Large frontier developers only; same timing as the transparency report",
+   "evidence": {
+    "provision": "§ 1421(3)(b)",
+    "quote": "shall include in the transparency report required by"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "ai_developer",
+   "modality": "shall_not",
+   "summary": "A frontier developer must not make a materially false or misleading statement about catastrophic risk from its frontier models or its management of catastrophic risk; a large frontier developer must not make such a statement about its framework implementation or compliance. A good-faith, reasonable statement is excepted.",
+   "applies_from": "January 1, 2027 (§ 3 as amended; see § 5)",
+   "conditional_on": "Does not apply to a statement made in good faith and reasonable under the circumstances (§ 1421(4)(b))",
+   "evidence": {
+    "provision": "§ 1421(4)(a)",
+    "quote": "A frontier developer shall not make a materially false or"
+   }
+  },
+  {
+   "type": "record_keeping",
+   "addressee": "ai_developer",
+   "modality": "shall",
+   "summary": "A frontier developer that redacts a published compliance document must describe the character and justification of the redaction and retain the unredacted information for five years.",
+   "applies_from": "January 1, 2027 (§ 3 as amended; see § 5)",
+   "conditional_on": "Applies only where the developer makes redactions permitted under § 1421(5)(a)",
+   "evidence": {
+    "provision": "§ 1421(5)(b)",
+    "quote": "shall retain the unredacted information for five years"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The office (within the Department of Financial Services) must establish a reporting mechanism for critical safety incidents and a confidential submission mechanism for large developers' internal-use assessments, take reasonable precautions to limit access to internal-use reports, and review incident reports submitted by developers.",
+   "applies_from": "January 1, 2027 (§ 3 as amended; see § 5)",
+   "evidence": {
+    "provision": "§ 1422(1)",
+    "quote": "The office shall establish a mechanism to be"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "ai_developer",
+   "modality": "shall",
+   "summary": "A large frontier developer must transmit to the office a summary of any assessment of catastrophic risk from internal use of its frontier models every three months or on another schedule agreed with the office.",
+   "applies_from": "January 1, 2027 (§ 3 as amended; see § 5)",
+   "conditional_on": "Large frontier developers; concerns internal use of frontier models",
+   "evidence": {
+    "provision": "§ 1422(2)(a)",
+    "quote": "A large frontier developer shall transmit to the office a"
+   }
+  },
+  {
+   "type": "incident_reporting",
+   "addressee": "ai_developer",
+   "modality": "shall",
+   "summary": "A frontier developer must report any critical safety incident pertaining to its frontier models to the office within seventy-two hours of determining it occurred or of learning facts giving a reasonable belief it occurred; if a critical safety incident poses an imminent risk of death or serious physical injury, it must disclose it within twenty-four hours to an appropriate authority.",
+   "applies_from": "January 1, 2027 (§ 3 as amended; see § 5)",
+   "conditional_on": "Imminent-risk disclosure to an authority applies where the incident poses an imminent risk of death or serious physical injury",
+   "evidence": {
+    "provision": "§ 1422(3)(a)",
+    "quote": "shall report any critical safety incident pertaining to one or more"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "ai_developer",
+   "modality": "shall",
+   "summary": "A frontier developer that intends to comply with incident reporting by meeting a designated federal law, regulation or guidance must declare that intent to the office; it must send copies of federal incident reports to the office concurrently with sending them to federal authorities.",
+   "applies_from": "January 1, 2027 (§ 3 as amended; see § 5)",
+   "conditional_on": "Applies only where the developer chooses to rely on a federal instrument designated under § 1422(8)",
+   "evidence": {
+    "provision": "§ 1422(9)(a)",
+    "quote": "shall declare its intent to do so to the office"
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "government_agency",
+   "modality": "may",
+   "summary": "The office may adopt regulations designating federal laws, regulations or guidance for the incident-reporting equivalence test, and must revoke such a regulation if its requirements are no longer met.",
+   "applies_from": "January 1, 2027 (§ 3 as amended; see § 5)",
+   "conditional_on": "Designation requires the listed conditions to be met",
+   "evidence": {
+    "provision": "§ 1422(8)",
+    "quote": "The office may adopt regulations designating one or more federal"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Beginning January 1, 2028 and annually thereafter, the office must produce a report with anonymized and aggregated information on critical safety incidents reviewed, other relevant information, recommended updates, and developments, and transmit it to the governor and legislative committees.",
+   "applies_from": "January 1, 2028",
+   "evidence": {
+    "provision": "§ 1422(7)(a)",
+    "quote": "Beginning January first, two thousand twenty-eight"
+   }
+  },
+  {
+   "type": "registration_notification",
+   "addressee": "ai_developer",
+   "modality": "shall_not",
+   "summary": "A large frontier developer may not develop, deploy or operate a frontier model in whole or in part in New York without a current disclosure statement filed with the office and payment of the required share. The statement covers identity, addresses, ownership lists and contacts, is renewed every two years or on ownership transfer or material change.",
+   "applies_from": "January 1, 2027 (§ 3 as amended; see § 5)",
+   "conditional_on": "Large frontier developers; applies to frontier models developed, deployed or operated in whole or in part in New York",
+   "evidence": {
+    "provision": "§ 1428(1)",
+    "quote": "without having a current disclosure statement filed with the"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The office must maintain and publish a list of large frontier developers who have filed disclosure statements, excluding the point-of-contact information.",
+   "applies_from": "January 1, 2027 (§ 3 as amended; see § 5)",
+   "evidence": {
+    "provision": "§ 1428(6)",
+    "quote": "The office shall maintain and publish a list of large frontier"
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "government_agency",
+   "modality": "may",
+   "summary": "The office is authorized to adopt rules and regulations to implement the article and may consider additional reporting or publication requirements to facilitate safety and transparency.",
+   "applies_from": "January 1, 2027 (§ 3 as amended; see § 5)",
+   "evidence": {
+    "provision": "§ 1429",
+    "quote": "The office is hereby authorized to adopt"
+   }
+  }
+ ],
+ "enforcement": [
+  {
+   "sanction_type": "civil_penalty",
+   "authority": "attorney general",
+   "triggered_by": "Large frontier developer fails to publish or transmit a compliant document required under the article, makes a statement in violation of § 1421(4), fails to report an incident under § 1422, or fails to comply with its own frontier AI framework",
+   "max_penalty_text": "civil penalty not to exceed one million dollars for a first violation and not to exceed three million dollars per subsequent violation, determined based on the severity of the violation",
+   "max_penalty_amount": 1000000,
+   "currency": "USD",
+   "penalty_formula": "Determined based on the severity of the violation, capped at $1,000,000 for a first violation and $3,000,000 per subsequent violation",
+   "private_right_of_action": false,
+   "cure_period": "none stated",
+   "evidence": {
+    "provision": "§ 2 (adding GBL art. 44-B § 1427(1))",
+    "quote": "The attorney general may bring a civil action to recover a civil penalty in an amount not to exceed one million dollars for a first violation and in an amount not to exceed three million dollars per subsequent violation"
+   }
+  },
+  {
+   "sanction_type": "administrative_fine",
+   "authority": "office within the department of financial services (as defined in § 1420(16))",
+   "triggered_by": "Person develops, deploys, or operates a large frontier model in part in New York state without a current disclosure filed with the office, submits false information in its disclosure, or fails to timely pay an assessment",
+   "max_penalty_text": "civil penalty of one thousand dollars for each day the entity fails to file a disclosure or fails to correct false information, plus an amount equal to the assessments owed; no overall maximum stated",
+   "currency": "USD",
+   "penalty_formula": "$1,000 per day of failure to file a disclosure or to correct false information; plus an amount equal to the assessments owed",
+   "private_right_of_action": false,
+   "cure_period": "none stated",
+   "evidence": {
+    "provision": "§ 2 (adding GBL art. 44-B § 1428(5)(a))",
+    "quote": "a civil penalty of one thousand dollars for each day the entity fails to file a disclosure as required by this section or fails to correct false information"
+   }
+  }
+ ],
+ "section_status": {}
+}

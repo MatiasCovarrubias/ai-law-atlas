@@ -1,0 +1,1659 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "cl-cmf-ncg514-2024",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium, batch; spot-checked by Claude Opus (Claude Code) 2026-10-14",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-718f7c3f"
+ },
+ "validation": "spot-checked",
+ "text_version": {
+  "source": "official site (connectors/fetch_texts.py)",
+  "url": "https://www.cmfchile.cl/normativa/ncg_514_2024.pdf",
+  "retrieved": "2026-10-13",
+  "version": "as fetched",
+  "language": "es",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "data_access_sharing",
+   "data_protection",
+   "cybersecurity"
+  ],
+  "primary_domain": "data_access_sharing",
+  "mechanisms": [
+   "mandate_obligation",
+   "licensing_permit_certification",
+   "registration_notification",
+   "standard_setting",
+   "tariff_price_regulation",
+   "disclosure_transparency"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "financial_institution",
+   "data_holder",
+   "data_controller",
+   "enterprise"
+  ],
+  "affected_roles": [
+   "consumers_users"
+  ],
+  "decision_margins": [
+   "firm:entry_market_access",
+   "firm:compliance_process",
+   "firm:pricing",
+   "household:data_privacy"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national"
+   ],
+   "description": "Applies to participants in the Open Finance System in Chile; registration is limited to Chilean legal persons, or to foreign entities that first establish a Chilean agency.",
+   "evidence": {
+    "provision": "Sección I.C.1",
+    "quote": "Podrán solicitar su inscripción en este Registro solo personas jurídicas constituidas conforme a las normas de la República de Chile y con domicilio social dentro del territorio nacional."
+   }
+  },
+  "agora_strategies": [
+   "Licensing, registration, and certification",
+   "Performance requirements",
+   "Evaluation: Conformity assessment",
+   "Input controls: Data circulation"
+  ]
+ },
+ "summary": {
+  "short": "CMF Norma de Carácter General N° 514 (2024) sets operating rules for Chile's Open Finance System under Title III of Fintec Law 21.521: registration of information and payment initiation providers, mandatory APIs, security, consent, and phased deadlines for financial institutions.",
+  "long": "CMF Norma de Carácter General N° 514 (3 July 2024) sets rules for the Open Finance System (SFA) under Title III of Fintec Law No. 21.521. It covers financial information providers (IPI), account providers (IPC), information-based service providers (PSBI) and payment initiation providers (PSIP). PSBI registration is voluntary. PSIP registration is mandatory for entities already providing initiation services, within twelve months. PSIP applicants must post a guarantee tied to average daily amounts, with a UF 1.000 base. Temporary fund custody, where permitted, is capped at 72 hours. IPI and IPC must offer APIs meeting listed standards, with availability and response-time minimums, plus an alternative mechanism. The norm sets consent and dashboard requirements, five-year record-keeping, security and incident-reporting duties, and call-volume thresholds for reimbursable costs. The CMF may suspend participants and apply sanctions under Title III of DL 3.538. Deadlines are staged, from 6 to 36 months depending on participant group."
+ },
+ "relations": [
+  {
+   "relation": "legal_basis",
+   "target_text": "Ley N°21.521 (Ley Fintec)",
+   "note": "Statute under which the CMF issues the norm; the norm implements the Sistema de Finanzas Abiertas under Title III of that law.",
+   "evidence": {
+    "provision": "Encabezado (preámbulo)",
+    "quote": "de la Ley N°21.521 (“Ley Fintec”)"
+   }
+  },
+  {
+   "relation": "legal_basis",
+   "target_text": "Decreto Ley N°3.538",
+   "note": "Cited as a source of the Commission's powers (arts. 1, 3, 5 and 20); also cited for participant fees (art. 33) and sanctions (Title III).",
+   "evidence": {
+    "provision": "Encabezado (preámbulo)",
+    "quote": "en su numeral 3 del Decreto Ley N°3.538"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Ley N°19.628 (protección de datos personales)",
+   "note": "Personal data protection law; referenced for the treatment of sensitive client data and for the data-protection duties of participants.",
+   "evidence": {
+    "provision": "Sección IV.D",
+    "quote": "de la Ley N°19.628 de protección de datos personales"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Ley N°20.009",
+   "note": "Referenced for the civil liability and reimbursement right on unauthorised payment orders that PSIP guarantees must cover.",
+   "evidence": {
+    "provision": "Sección I.D.4 (letra a)",
+    "quote": "derecho de resarcimiento de que trata el inciso séptimo del artículo 5° de la Ley N°20.009"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Ley N°18.045 (Mercado de Valores)",
+   "note": "Cited for the definition of the controller in the corporate ownership diagram required from applicants.",
+   "evidence": {
+    "provision": "Sección I.C.1.1 (letra b, numeral ii)",
+    "quote": "en los términos de los artículos 96 y 97 de la Ley N°18.045, de Mercado"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Ley N°18.046 (Sociedades Anónimas)",
+   "note": "Cited for the extract documents foreign companies must provide when establishing an agency in Chile.",
+   "evidence": {
+    "provision": "Sección I.C.1.2 (letra a, numeral iii)",
+    "quote": "artículo 123 de la Ley N°18.046"
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "Comisión para el Mercado Financiero (CMF)",
+   "role": "designated",
+   "function": "Issuing authority of the norm; maintains the PSBI and PSIP registries and the participant directory, sets certificates and tests, may suspend participants and impose sanctions.",
+   "evidence": {
+    "provision": "Encabezado (preámbulo)",
+    "quote": "Esta Comisión, en uso de las facultades que le confieren"
+   }
+  },
+  {
+   "name": "Banco Central de Chile (BCCh)",
+   "role": "designated",
+   "function": "Sets the requirements that PSIP must meet to hold client funds temporarily.",
+   "evidence": {
+    "provision": "Sección I.D.1 (letra e)",
+    "quote": "que determine el Banco Central de Chile en conformidad con sus atribuciones legales"
+   }
+  },
+  {
+   "name": "Superintendencia de Insolvencia y Reemprendimiento",
+   "role": "listed",
+   "function": "Issues the certificate of absence of bankruptcy or insolvency proceedings required in registration files.",
+   "evidence": {
+    "provision": "Sección I.C.1.2 (letra k)",
+    "quote": "Documento expedido por la Superintendencia de Insolvencia y Reemprendimiento"
+   }
+  },
+  {
+   "name": "Instituciones Proveedoras de Información (IPI)",
+   "role": "addressee",
+   "function": "Participant class that must make client data available through APIs and meet the norm's security, availability and consent duties.",
+   "evidence": {
+    "provision": "Sección I.B",
+    "quote": "Instituciones Proveedoras de Información (IPI), Instituciones Proveedoras de Cuentas (IPC), Proveedores de Servicios Basados en Información (PSBI), y"
+   }
+  },
+  {
+   "name": "Instituciones Proveedoras de Cuentas (IPC)",
+   "role": "addressee",
+   "function": "Participant class that must provide APIs for payment initiation and account information, subject to the norm's requirements.",
+   "evidence": {
+    "provision": "Sección I.B",
+    "quote": "Instituciones Proveedoras de Información (IPI), Instituciones Proveedoras de Cuentas (IPC), Proveedores de Servicios Basados en Información (PSBI), y"
+   }
+  },
+  {
+   "name": "Proveedores de Servicios Basados en Información (PSBI)",
+   "role": "addressee",
+   "function": "Participant class that may register to access client information through the SFA.",
+   "evidence": {
+    "provision": "Sección I.B",
+    "quote": "Proveedores de Servicios Basados en Información (PSBI), y"
+   }
+  },
+  {
+   "name": "Proveedores de Servicios de Iniciación de Pagos (PSIP)",
+   "role": "addressee",
+   "function": "Participant class that initiates payment orders on behalf of clients and must register with the CMF and meet guarantee and other conditions.",
+   "evidence": {
+    "provision": "Sección I.B",
+    "quote": "Proveedores de Servicios de Iniciación de Pago (PSIP)."
+   }
+  }
+ ],
+ "notes": "Target instrument IDs are left empty because the registry IDs are not given in the document. Annexes 3 and 4 are marked “Por definir” and contain no text. Internal cross-reference error: the consent rules (Sección III.D.1 letra b) refer to “sección III.E.2”, but consent management is in Sección III.D.2. Timing: Sección V.C counts the 24-month first implementation stage from publication of the norm, while Sección V.E says entry into force is 24 months from its issuance (dictación); the text does not reconcile these anchors. The PSIP registration deadline (Sección I.D.5) runs 12 months from entry into force. Spot-check (Opus, 2026-10-14): implementation milestones counted from entry into force (Sección V.C, I.D.5, I.E.2, II.A.3) were left without dates: entry into force is computed from the issue date under Sección V.E, but Sección V.C counts the same 24 months from publication, which the text does not date. private_right_of_action is null in all enforcement rows: the norm neither creates nor excludes one.",
+ "events": [
+  {
+   "event": "adopted",
+   "date": "2024-07-01",
+   "date_type": "absolute",
+   "date_text": "1 de julio de 2024",
+   "applies_to": "Norma adopted by agreement of the Council of the Commission (Sesión Extraordinaria N°140)",
+   "evidence": {
+    "provision": "Encabezado (preámbulo)",
+    "quote": "lo acordado por el Consejo de la Comisión en Sesión Extraordinaria N°140 de 1 de julio de 2024"
+   }
+  },
+  {
+   "event": "signed",
+   "date": "2024-07-03",
+   "date_type": "absolute",
+   "date_text": "3 de julio de 2024",
+   "applies_to": "Norma de Carácter General N°514 issued by the CMF",
+   "evidence": {
+    "provision": "Encabezado",
+    "quote": "3 de julio de 2024"
+   }
+  },
+  {
+   "event": "published",
+   "date": null,
+   "date_type": "not_stated",
+   "date_text": "Este periodo de 24 meses comienza con la publicación de la presente normativa.",
+   "applies_to": "Publication of the Norma; the first implementation stage starts from publication",
+   "evidence": {
+    "provision": "Sección V.C",
+    "quote": "Este periodo de 24 meses comienza con la publicación de la presente normativa."
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "La primera de ella, que durará 24 meses",
+   "anchor": "publicación de la presente normativa",
+   "applies_to": "First of two implementation stages (technological preparation by participants and the CMF)",
+   "offset_value": 24,
+   "offset_unit": "months",
+   "anchor_event": "published",
+   "evidence": {
+    "provision": "Sección V.C",
+    "quote": "La primera de ella, que durará 24 meses, considera la preparación tecnológica"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2026-07-03",
+   "date_type": "relative",
+   "date_text": "entrarán en vigencia 24 meses contados desde su dictación",
+   "anchor": "dictación de la presente Norma",
+   "applies_to": "Disposiciones incorporadas en esta Norma (Section V.C ties the 24-month period to publication)",
+   "offset_value": 24,
+   "offset_unit": "months",
+   "anchor_event": "signed",
+   "evidence": {
+    "provision": "Sección V.E",
+    "quote": "Las disposiciones incorporadas en esta Norma entrarán en vigencia 24 meses contados desde su dictación."
+   },
+   "date_computed_from": "signed 2024-07-03 (text) + 24 months"
+  },
+  {
+   "event": "phase_in_step",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "6 meses para implementación de APIs sobre Términos y Condiciones Generales y de Canales de Atención",
+   "anchor": "entrada en vigencia de esta normativa",
+   "applies_to": "Bancos, emisores de tarjetas de crédito y emisores de tarjetas de pago con provisión de fondos: APIs on Términos y Condiciones Generales and Canales de Atención",
+   "offset_value": 6,
+   "offset_unit": "months",
+   "anchor_event": "entry_into_force",
+   "evidence": {
+    "provision": "Sección V.C",
+    "quote": "a) 6 meses para implementación de APIs sobre Términos y Condiciones"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "15 meses para implementación de APIs sobre Enrolamiento, Posiciones Financieras Históricas, Historial de usos y transacciones, y Productos vigentes, clientes personas naturales",
+   "anchor": "entrada en vigencia de esta normativa",
+   "applies_to": "Bancos, emisores de tarjetas de crédito y emisores de tarjetas de pago con provisión de fondos: APIs on Enrolamiento, Posiciones Financieras Históricas, Historial de usos y transacciones, and Productos vigentes, natural persons (credit lines excepted)",
+   "offset_value": 15,
+   "offset_unit": "months",
+   "anchor_event": "entry_into_force",
+   "evidence": {
+    "provision": "Sección V.C",
+    "quote": "b) 15 meses para implementación de APIs sobre Enrolamiento, Posiciones"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "disponibles a los 18 meses de entrada en vigencia de esta norma.",
+   "anchor": "entrada en vigencia de esta normativa",
+   "applies_to": "Same entities: credit lines linked to cuentas corrientes, cuentas vista and tarjetas de crédito, natural persons",
+   "offset_value": 18,
+   "offset_unit": "months",
+   "anchor_event": "entry_into_force",
+   "evidence": {
+    "provision": "Sección V.C",
+    "quote": "disponibles a los 18 meses de entrada en vigencia de esta norma."
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "18 meses para implementación de APIs sobre Enrolamiento, Posiciones Financieras Históricas, Historial de usos y transacciones, y Productos vigentes, clientes personas jurídicas",
+   "anchor": "entrada en vigencia de esta normativa",
+   "applies_to": "Bancos, emisores de tarjetas de crédito y emisores de tarjetas de pago con provisión de fondos: APIs on Enrolamiento etc., legal persons",
+   "offset_value": 18,
+   "offset_unit": "months",
+   "anchor_event": "entry_into_force",
+   "evidence": {
+    "provision": "Sección V.C",
+    "quote": "c) 18 meses para implementación de APIs sobre Enrolamiento, Posiciones"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "18 meses para implementación de APIs sobre Iniciación de Pagos.",
+   "anchor": "entrada en vigencia de esta normativa",
+   "applies_to": "Bancos, emisores de tarjetas de crédito y emisores de tarjetas de pago con provisión de fondos: payment initiation APIs",
+   "offset_value": 18,
+   "offset_unit": "months",
+   "anchor_event": "entry_into_force",
+   "evidence": {
+    "provision": "Sección V.C",
+    "quote": "d) 18 meses para implementación de APIs sobre Iniciación de Pagos."
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "24 meses para implementación de APIs sobre Términos y Condiciones Generales y Canales de Atención",
+   "anchor": "entrada en vigencia de esta normativa",
+   "applies_to": "Entities of Ley Fintec Art. 18 inciso segundo letras (a) a (h): APIs on Términos y Condiciones Generales and Canales de Atención",
+   "offset_value": 24,
+   "offset_unit": "months",
+   "anchor_event": "entry_into_force",
+   "evidence": {
+    "provision": "Sección V.C",
+    "quote": "a) 24 meses para implementación de APIs sobre Términos y Condiciones"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "36 meses para implementación de APIs sobre Enrolamiento, Posiciones Financieras Históricas, Historial de usos y transacciones, y Productos vigentes, de todo tipo de clientes",
+   "anchor": "entrada en vigencia de esta normativa",
+   "applies_to": "Entities of Ley Fintec Art. 18 inciso segundo letras (a) a (h): APIs on Enrolamiento etc., all client types",
+   "offset_value": 36,
+   "offset_unit": "months",
+   "anchor_event": "entry_into_force",
+   "evidence": {
+    "provision": "Sección V.C",
+    "quote": "b) 36 meses para implementación de APIs sobre Enrolamiento, Posiciones"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "aplicará el plazo de 18 meses para iniciación de pagos.",
+   "anchor": "entrada en vigencia de esta normativa",
+   "applies_to": "Entities of Ley Fintec Art. 18 inciso segundo letras (a) a (h) that directly issue payment cards or open cuentas vistas: payment initiation APIs",
+   "offset_value": 18,
+   "offset_unit": "months",
+   "anchor_event": "entry_into_force",
+   "evidence": {
+    "provision": "Sección V.C",
+    "quote": "aplicará el plazo de 18 meses para iniciación de pagos."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "en un plazo que no exceda de doce meses contado a partir de",
+   "anchor": "entrada en vigor de esta norma",
+   "applies_to": "Entities already providing payment initiation services must apply for registration in the Registro PSIP",
+   "offset_value": 12,
+   "offset_unit": "months",
+   "anchor_event": "entry_into_force",
+   "evidence": {
+    "provision": "Sección I.D.5",
+    "quote": "en un plazo que no exceda de doce meses contado a partir de"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "dentro de los primeros 90 días de entrada en vigencia de la presente Norma",
+   "anchor": "entrada en vigencia de la presente Norma",
+   "applies_to": "IPI of Ley Fintec Art. 18 inciso primero and IPC of Art. 20: submit application for incorporation in the Nómina",
+   "offset_value": 90,
+   "offset_unit": "days",
+   "anchor_event": "entry_into_force",
+   "evidence": {
+    "provision": "Sección I.E.2",
+    "quote": "dentro de los primeros 90 días de entrada en vigencia de la presente Norma"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "dentro de los 18 meses siguientes a la entrada en vigencia de la presente Norma",
+   "anchor": "entrada en vigencia de la presente Norma",
+   "applies_to": "IPI of Ley Fintec Art. 18 inciso segundo letras (a) a (h): submit application for incorporation in the Nómina IPI",
+   "offset_value": 18,
+   "offset_unit": "months",
+   "anchor_event": "entry_into_force",
+   "evidence": {
+    "provision": "Sección I.E.2",
+    "quote": "dentro de los 18 meses siguientes a la"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "para los primeros seis meses de operaciones del PSIP una vez se registre ante esta Comisión",
+   "anchor": "inscripción del PSIP en el Registro ante la Comisión",
+   "applies_to": "Guarantee formula: average daily amount factor set to zero during the PSIP's first six months of operations",
+   "offset_value": 6,
+   "offset_unit": "months",
+   "evidence": {
+    "provision": "Sección I.D.4",
+    "quote": "para los primeros seis meses de operaciones del PSIP una vez se registre ante esta Comisión"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "durante los dos primeros años de vigencia de la presente Norma",
+   "anchor": "entrada en vigencia de la presente Norma",
+   "applies_to": "Minimum monthly availability metrics for APIs are measured quarterly (90-day moving average)",
+   "offset_value": 2,
+   "offset_unit": "years",
+   "anchor_event": "entry_into_force",
+   "evidence": {
+    "provision": "Sección II.A.3",
+    "quote": "durante los dos primeros años de vigencia de la presente Norma"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "trimestralmente",
+   "applies_to": "PSIP guarantee amounts",
+   "evidence": {
+    "provision": "Sección I.D.4",
+    "quote": "El valor de las garantías deberá actualizarse trimestralmente"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "mensualmente en base semanal",
+   "applies_to": "IPI and IPC: reports to the CMF on API availability and performance standards",
+   "evidence": {
+    "provision": "Sección II.A.3",
+    "quote": "los reportes a la CMF de los respectivos estándares se deberán enviar mensualmente en base semanal"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "al menos con periodicidad semestral",
+   "applies_to": "IPI and IPC: periodic random data quality tests",
+   "evidence": {
+    "provision": "Sección II.D",
+    "quote": "Las pruebas serán realizadas al menos con periodicidad semestral"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "al menos anuales",
+   "applies_to": "Participants: backup restoration tests",
+   "evidence": {
+    "provision": "Sección III.B.1",
+    "quote": "restauración de respaldos periódicos, al menos anuales, para"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "dentro del plazo de cinco días hábiles de ocurrido el hecho respectivo",
+   "anchor": "ocurrido el hecho respectivo",
+   "applies_to": "Registered PSBI: report changes to information submitted with the registration application",
+   "offset_value": 5,
+   "offset_unit": "business_days",
+   "evidence": {
+    "provision": "Sección I.C.2",
+    "quote": "dentro del plazo de cinco días hábiles de ocurrido el hecho respectivo"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "dentro del plazo de cinco días hábiles de ocurrido el hecho respectivo",
+   "anchor": "ocurrido el hecho respectivo",
+   "applies_to": "Registered PSIP: report changes to information submitted with the registration application",
+   "offset_value": 5,
+   "offset_unit": "business_days",
+   "evidence": {
+    "provision": "Sección I.D.6",
+    "quote": "dentro del plazo de cinco días hábiles de ocurrido el hecho respectivo"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "con al menos 30 días de anticipación a su entrada en vigencia",
+   "anchor": "entrada en vigencia de la modificación de los términos tarifarios",
+   "applies_to": "IPI and IPC: notify Participants of changes to tariff terms",
+   "offset_value": -30,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Sección III.E.2",
+    "quote": "con al menos 30 días de anticipación a su entrada en vigencia"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "Mensualmente",
+   "applies_to": "IPI: inform PSBI of effective consumption of its interfaces and calls exceeding the charging threshold",
+   "evidence": {
+    "provision": "Sección III.E.2",
+    "quote": "Mensualmente, cada IPI deberá informar a los PSBI el consumo efectivo de sus"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "dentro de los cinco primeros días hábiles inmediatamente posteriores al cumplimiento de ese año de inactividad",
+   "anchor": "cumplimiento de ese año de inactividad",
+   "applies_to": "PSBI and PSIP: reminder communication to clients inactive on the control panel for more than one calendar year",
+   "offset_value": 5,
+   "offset_unit": "business_days",
+   "evidence": {
+    "provision": "Sección III.D.2",
+    "quote": "dentro de los cinco primeros días hábiles inmediatamente posteriores al cumplimiento de ese año de inactividad"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "other",
+   "variable_text": "Monto base mínimo de garantía exigible al PSIP (UF 1.000)",
+   "operator": ">=",
+   "value": 1000,
+   "value_text": "Max[UF1.000 ; 0,07% ∗ Monto diario promedio ∗ 15]",
+   "unit": "UF",
+   "currency": "UF",
+   "measurement": "Monto diario promedio = total amount of operations over the last three months divided by the number of days in the period; guarantee to be updated quarterly",
+   "level": "entity",
+   "trigger": "obligation",
+   "consequence": "PSIP must hold guarantees of at least the greater of UF 1.000 and the formula result",
+   "conditions": "During the first six months of operations after registration the average-daily-amount factor is zero, so only the UF 1.000 base applies",
+   "evidence": {
+    "provision": "Sección I.D.4",
+    "quote": "haciendo por tanto aplicable para dicho periodo únicamente el monto base de UF 1.000"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "Participación en el capital (directa o indirecta) que hace a una persona natural socio principal",
+   "operator": ">=",
+   "value": 10,
+   "value_text": "igual o superior al 10% del capital",
+   "unit": "% of capital",
+   "measurement": "Direct or indirect holding of capital, applied to natural persons",
+   "level": "person",
+   "trigger": "obligation",
+   "consequence": "Natural person is a socio principal whose identification data must be included in the PSBI registration application",
+   "conditions": "Alternatively applies to a person with the capacity to elect at least one member of the board or administration",
+   "evidence": {
+    "provision": "Sección I.C.1.1 b) i.",
+    "quote": "una participación igual o superior al 10% del capital"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "Participación en el capital (directa o indirecta) que hace a una persona natural socio principal",
+   "operator": ">=",
+   "value": 10,
+   "value_text": "igual o superior al 10% del capital",
+   "unit": "% of capital",
+   "measurement": "Direct or indirect holding of capital, applied to natural persons",
+   "level": "person",
+   "trigger": "obligation",
+   "consequence": "Natural person is a socio principal whose identification data must be included in the PSIP registration application",
+   "conditions": "Alternatively applies to a person with the capacity to elect at least one member of the board or administration",
+   "evidence": {
+    "provision": "Sección I.D.1.1 b) i.",
+    "quote": "una participación igual o superior al 10% del capital"
+   }
+  },
+  {
+   "variable": "volume",
+   "variable_text": "Umbral mensual de llamadas o consultas por PSBI — Términos y condiciones",
+   "operator": ">",
+   "value": 120,
+   "value_text": "120 llamadas mensuales por PSBI",
+   "unit": "calls/month",
+   "measurement": "Monthly count per information set; calls made in functional tests and calls without a successful response attributable to the IPI are not counted",
+   "level": "entity",
+   "trigger": "pricing_tier",
+   "consequence": "Above the threshold the IPI may charge the PSBI reimbursement of incremental direct costs for the calls",
+   "conditions": "Applies to the information set even if it includes more than one API",
+   "evidence": {
+    "provision": "Sección III.E.2 (Tabla N°2)",
+    "quote": "120 llamadas mensuales por PSBI"
+   }
+  },
+  {
+   "variable": "volume",
+   "variable_text": "Umbral mensual de llamadas o consultas por PSBI — Canales de atención",
+   "operator": ">",
+   "value": 120,
+   "value_text": "120 llamadas mensuales por PSBI",
+   "unit": "calls/month",
+   "measurement": "Monthly count per information set; calls made in functional tests and calls without a successful response attributable to the IPI are not counted",
+   "level": "entity",
+   "trigger": "pricing_tier",
+   "consequence": "Above the threshold the IPI may charge the PSBI reimbursement of incremental direct costs for the calls",
+   "conditions": "Applies to the information set even if it includes more than one API",
+   "evidence": {
+    "provision": "Sección III.E.2 (Tabla N°2)",
+    "quote": "120 llamadas mensuales por PSBI"
+   }
+  },
+  {
+   "variable": "volume",
+   "variable_text": "Umbral mensual de llamadas o consultas por cliente y PSBI — Enrolamiento",
+   "operator": ">",
+   "value": 4,
+   "value_text": "4 llamadas mensuales por cliente y PSBI",
+   "unit": "calls/month",
+   "measurement": "Monthly count per client and PSBI; calls made in functional tests and calls without a successful response attributable to the IPI are not counted",
+   "level": "person",
+   "trigger": "pricing_tier",
+   "consequence": "Above the threshold the IPI may charge the PSBI reimbursement of incremental direct costs for the calls",
+   "conditions": "Applies to the information set even if it includes more than one API",
+   "evidence": {
+    "provision": "Sección III.E.2 (Tabla N°2)",
+    "quote": "4 llamadas mensuales por cliente y PSBI"
+   }
+  },
+  {
+   "variable": "volume",
+   "variable_text": "Umbral mensual de llamadas o consultas por cliente y PSBI — Posiciones financieras históricas",
+   "operator": ">",
+   "value": 150,
+   "value_text": "150 llamadas mensuales por cliente y PSBI",
+   "unit": "calls/month",
+   "measurement": "Monthly count per client and PSBI; calls made in functional tests and calls without a successful response attributable to the IPI are not counted",
+   "level": "person",
+   "trigger": "pricing_tier",
+   "consequence": "Above the threshold the IPI may charge the PSBI reimbursement of incremental direct costs for the calls",
+   "conditions": "Applies to the information set even if it includes more than one API",
+   "evidence": {
+    "provision": "Sección III.E.2 (Tabla N°2)",
+    "quote": "150 llamadas mensuales por cliente y PSBI"
+   }
+  },
+  {
+   "variable": "volume",
+   "variable_text": "Umbral mensual de llamadas o consultas por cliente y PSBI — Historia de uso y transacciones",
+   "operator": ">",
+   "value": 150,
+   "value_text": "150 llamadas mensuales por cliente y PSBI",
+   "unit": "calls/month",
+   "measurement": "Monthly count per client and PSBI; calls made in functional tests and calls without a successful response attributable to the IPI are not counted",
+   "level": "person",
+   "trigger": "pricing_tier",
+   "consequence": "Above the threshold the IPI may charge the PSBI reimbursement of incremental direct costs for the calls",
+   "conditions": "Applies to the information set even if it includes more than one API",
+   "evidence": {
+    "provision": "Sección III.E.2 (Tabla N°2)",
+    "quote": "150 llamadas mensuales por cliente y PSBI"
+   }
+  },
+  {
+   "variable": "volume",
+   "variable_text": "Umbral mensual de llamadas o consultas por cliente y PSBI — Productos vigentes",
+   "operator": ">",
+   "value": 150,
+   "value_text": "150 llamadas mensuales por cliente y PSBI",
+   "unit": "calls/month",
+   "measurement": "Monthly count per client and PSBI; calls made in functional tests and calls without a successful response attributable to the IPI are not counted",
+   "level": "person",
+   "trigger": "pricing_tier",
+   "consequence": "Above the threshold the IPI may charge the PSBI reimbursement of incremental direct costs for the calls",
+   "conditions": "Applies to the information set even if it includes more than one API",
+   "evidence": {
+    "provision": "Sección III.E.2 (Tabla N°2)",
+    "quote": "150 llamadas mensuales por cliente y PSBI"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "Plazo máximo de custodia transitoria de fondos por el PSIP",
+   "operator": "<=",
+   "value": 72,
+   "value_text": "no podrá superar las 72 horas",
+   "unit": "hours",
+   "measurement": "Counted from the moment the payment initiation operation is executed",
+   "level": "entity",
+   "trigger": "cap",
+   "consequence": "Temporary custody of client funds by a PSIP may not exceed 72 hours",
+   "conditions": "Custody is permitted only for models authorized under the BCCh requirements and after prior accreditation before the CMF",
+   "evidence": {
+    "provision": "Sección I.D.2",
+    "quote": "la custodia de fondos temporal no podrá superar las 72 horas"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "Antigüedad de saldos de pago vencidos adeudados por un PSBI",
+   "operator": ">",
+   "value": 60,
+   "value_text": "saldos de pago vencidos por un plazo superior a sesenta días corridos",
+   "unit": "calendar days",
+   "measurement": "Period during which cost payments remain overdue",
+   "level": "entity",
+   "trigger": "exemption",
+   "consequence": "The IPI is otherwise required to keep answering queries within the thresholds; the duty does not apply where overdue balances exceed this period",
+   "conditions": "Applies to reimbursable costs unpaid by a PSBI",
+   "evidence": {
+    "provision": "Sección III.E.2",
+    "quote": "salvo que existan saldos de pago vencidos por un plazo superior a sesenta días corridos"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "Periodo de inactividad del titular en el panel de control con consentimientos vigentes",
+   "operator": ">",
+   "value": 1,
+   "value_text": "por un periodo de más de un año calendario",
+   "unit": "calendar years",
+   "measurement": "Period during which the data holder or client does not access the control panel",
+   "level": "person",
+   "trigger": "obligation",
+   "consequence": "The PSBI or PSIP must send the holder a reminder of the control panel",
+   "conditions": "Applies only where consents remain in force",
+   "evidence": {
+    "provision": "Sección III.D.2",
+    "quote": "por un periodo de más de un año calendario y existan consentimientos vigentes"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "Antigüedad máxima de datos históricos que una IPI puede comunicar a través del SFA",
+   "operator": "<=",
+   "value": 12,
+   "value_text": "Periodo histórico de la información: 12 meses",
+   "unit": "months",
+   "measurement": "Historical period of the information set as stated in Tabla N°3",
+   "level": "other",
+   "trigger": "prohibition",
+   "consequence": "The IPI must abstain from communicating through the SFA data that exceed the maximum age",
+   "conditions": "Stated for the historical financial positions and use and transaction history information sets",
+   "evidence": {
+    "provision": "Sección IV.A (Tabla N°3)",
+    "quote": "Periodo histórico de la información: 12 meses"
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "Cliente(s)",
+   "defined_in": "Sección I.A",
+   "evidence": {
+    "provision": "Sección I.A",
+    "quote": "Personas naturales o jurídicas que hayan contratado un servicio o producto financiero."
+   }
+  },
+  {
+   "term": "Participante(s)",
+   "defined_in": "Sección I.A",
+   "evidence": {
+    "provision": "Sección I.A",
+    "quote": "Noción colectiva que engloba a las IPI, IPC, PSBI y PSIP habilitados para operar dentro del SFA."
+   }
+  },
+  {
+   "term": "Sistema de Finanzas Abiertas (SFA)",
+   "defined_in": "Preámbulo",
+   "evidence": {
+    "provision": "Preámbulo",
+    "quote": "Sistema de Finanzas Abiertas (en adelante también e indistintamente el “Sistema” o “SFA”) al que se refiere el Título III de la Ley Fintec"
+   }
+  },
+  {
+   "term": "Autenticación Reforzada de Cliente (ARC)",
+   "defined_in": "Sección I.A",
+   "evidence": {
+    "provision": "Sección I.A",
+    "quote": "Tipo de autenticación de Clientes diseñada para escenarios que requieren un mayor nivel de robustez en términos de seguridad y resguardo de la protección de datos, basada en el uso o conjunción de dos o más elementos independientes entre sí"
+   }
+  },
+  {
+   "term": "Socio principal",
+   "defined_in": "Sección I.C.1.1 b) i.",
+   "evidence": {
+    "provision": "Sección I.C.1.1 b) i.",
+    "quote": "se entenderá como socio principal a las personas naturales que posean directa o indirectamente una participación igual o superior al 10% del capital"
+   }
+  },
+  {
+   "term": "Institución Proveedora de Información (IPI)",
+   "defined_in": "Ley N°21.521 (Ley Fintec), art. 18; Sección I.B",
+   "evidence": {
+    "provision": "Sección I.B",
+    "quote": "Instituciones Proveedoras de Información (IPI), Instituciones Proveedoras de Cuentas (IPC), Proveedores de Servicios Basados en Información (PSBI), y Proveedores de Servicios de Iniciación de Pago (PSIP)"
+   }
+  },
+  {
+   "term": "Institución Proveedora de Cuentas (IPC)",
+   "defined_in": "Ley N°21.521 (Ley Fintec); cited as art. 18 in Sección I.E and as art. 20 in Sección I.E.2",
+   "evidence": {
+    "provision": "Sección I.B",
+    "quote": "Instituciones Proveedoras de Información (IPI), Instituciones Proveedoras de Cuentas (IPC), Proveedores de Servicios Basados en Información (PSBI), y Proveedores de Servicios de Iniciación de Pago (PSIP)"
+   }
+  },
+  {
+   "term": "Proveedor de Servicios Basados en Información (PSBI)",
+   "defined_in": "Ley N°21.521 (Ley Fintec), art. 19; Sección I.C.1",
+   "evidence": {
+    "provision": "Sección I.C.1",
+    "quote": "aquellos proveedores de servicios habilitados por información financiera que pretendan participar en el SFA, con el fin de consultar, acceder y recibir datos para efectos de proveer servicios a los clientes"
+   }
+  },
+  {
+   "term": "Proveedor de Servicios de Iniciación de Pagos (PSIP)",
+   "defined_in": "Ley N°21.521 (Ley Fintec), art. 20; Sección I.D",
+   "evidence": {
+    "provision": "Sección I.D",
+    "quote": "Los PSIP son aquellas entidades que pueden instruir, a nombre de un cliente y ante la Institución Proveedora de Cuentas respectiva, la ejecución de órdenes de pago o transferencias electrónicas de fondos"
+   }
+  },
+  {
+   "term": "Consentimiento (se reputará otorgado)",
+   "defined_in": "Sección III.D.1",
+   "evidence": {
+    "provision": "Sección III.D.1",
+    "quote": "se reputará otorgado el consentimiento por parte del titular de los datos, tanto para la IPI e IPC, como para el PSBI y PSIP"
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "other",
+   "addressee": "data_holder",
+   "also_addressees": [
+    "enterprise"
+   ],
+   "modality": "shall",
+   "summary": "Participants (IPI, IPC, PSBI, PSIP) must adopt the measures needed to allow consultation, access, delivery and exchange of information in an expedited and secure manner.",
+   "evidence": {
+    "provision": "Sección I.B",
+    "quote": "deberán adoptar las medidas necesarias para permitir, según corresponda, la consulta, acceso, entrega e intercambio de información, de forma expedita y segura"
+   }
+  },
+  {
+   "type": "registration_notification",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Registration in the PSBI Registry must be requested by the legal or contractual representative of the entity, who is personally responsible for the accuracy of the information provided.",
+   "conditional_on": "Voluntary registration as PSBI",
+   "evidence": {
+    "provision": "Sección I.C.1",
+    "quote": "La solicitud deberá ser presentada por el representante legal o convencional de la entidad"
+   }
+  },
+  {
+   "type": "registration_notification",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "The PSBI registration application must contain identification data, corporate data and the listed items; attachments include by-laws, powers of attorney, business plan, organisation chart, client relationship description, consent documentation, personal data treatment description and records of processing activities, sworn statements, policies, security profile certificate, bankruptcy certificate and functional test report.",
+   "conditional_on": "Application for PSBI registration",
+   "evidence": {
+    "provision": "Sección I.C.1.1 and I.C.1.2",
+    "quote": "Se deberá acompañar con la solicitud los siguientes antecedentes:"
+   }
+  },
+  {
+   "type": "registration_notification",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "A PSBI must report any change to the information provided in its application within five business days of the event or of becoming aware of it; changes of a registry nature also require a registry annotation request and payment of fees.",
+   "applies_from": "From the date of the application while registered",
+   "conditional_on": "While registered in the PSBI Registry",
+   "evidence": {
+    "provision": "Sección I.C.2",
+    "quote": "dentro del plazo de cinco días hábiles de ocurrido el hecho respectivo"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "On cancellation, or on CMF-ordered termination, the PSBI must execute a plan ensuring no transactions remain pending, revoke access authorisations, report the measures and timetable to the CMF, and inform its clients of the end of participation.",
+   "applies_from": "At the date the cancellation takes effect",
+   "conditional_on": "Cancellation of PSBI registration",
+   "evidence": {
+    "provision": "Sección I.C.3",
+    "quote": "deberá poner en ejecución un plan destinado a garantizar que no existan transacciones u operaciones pendientes de ejecución"
+   }
+  },
+  {
+   "type": "eligibility_condition",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Only legal persons incorporated under Chilean law with domicile in Chile may apply for PSIP registration; foreign entities may apply only through a Chilean agency set up beforehand.",
+   "conditional_on": "Application for PSIP registration",
+   "evidence": {
+    "provision": "Sección I.D.1",
+    "quote": "Podrán solicitar su inscripción en este Registro solo personas jurídicas constituidas conforme a las normas de la República de Chile"
+   }
+  },
+  {
+   "type": "registration_notification",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "PSIP registration application must include the listed identification, corporate and attachment items, including a business plan, a description of fund protection and claims mechanisms under Law 20.009, a sworn statement on custody of funds, client relationship and consent documentation, personal data treatment description with records of processing, sworn statement on disqualification, policies, security profile certificate, guarantees, bankruptcy certificate and functional test report.",
+   "conditional_on": "Application for PSIP registration",
+   "evidence": {
+    "provision": "Sección I.D.1.2",
+    "quote": "Se deberá acompañar con la solicitud los siguientes antecedentes:"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "enterprise",
+   "modality": "shall_not",
+   "summary": "A PSIP that wishes to hold or temporarily custody client funds must first prove to the CMF compliance with the Central Bank requirements; any temporary custody may not exceed 72 hours from execution of the payment initiation operation.",
+   "conditional_on": "PSIP model with temporary custody of funds",
+   "evidence": {
+    "provision": "Sección I.D.2",
+    "quote": "la custodia de fondos temporal no podrá superar las 72 horas"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "PSIP must maintain minimum guarantees calculated by a formula with a floor of UF 1.000, updated quarterly; for the first six months after registration the average daily amount factor is zero. Guarantees may take the form of an insurance policy or a bank guarantee.",
+   "applies_from": "Guarantees are updated quarterly; the first six months after registration use only the base amount",
+   "evidence": {
+    "provision": "Sección I.D.4",
+    "quote": "Los PSIP deberán acreditar el cumplimiento de niveles mínimos de garantías en función a sus montos operados"
+   }
+  },
+  {
+   "type": "registration_notification",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Entities providing payment initiation services with client consent at the time of this norm must apply for registration within twelve months from its entry into force.",
+   "applies_from": "Twelve months from the entry into force of this norm",
+   "conditional_on": "Entities already providing payment initiation services when the norm enters into force",
+   "evidence": {
+    "provision": "Sección I.D.5",
+    "quote": "deberán dar cumplimiento a la obligación de solicitar su registro ante la Comisión en un plazo que no exceda de doce meses"
+   }
+  },
+  {
+   "type": "consent",
+   "addressee": "enterprise",
+   "modality": "shall_not",
+   "summary": "No payment order or transfer of funds may be initiated without the client's prior authorisation given under this norm and the Annex N°3 standards; recurring payments require consent from the first transaction or from the signing of the recurring charge arrangement.",
+   "evidence": {
+    "provision": "Sección I.D.5(a)",
+    "quote": "No se podrán iniciar órdenes de pago o transferencias de fondos sin autorización previa del cliente"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "enterprise",
+   "modality": "shall_not",
+   "summary": "A PSIP may not hold or custody the paying client's funds, unless it has previously proven to the CMF compliance with Central Bank rules for temporary custody models.",
+   "conditional_on": "Absent prior proof to the CMF of compliance with Central Bank rules",
+   "evidence": {
+    "provision": "Sección I.D.5(b)",
+    "quote": "El PSIP no podrá mantener o custodiar los fondos del cliente ordenante o pagador, salvo acreditación previa ante la CMF"
+   }
+  },
+  {
+   "type": "data_minimization",
+   "addressee": "enterprise",
+   "modality": "shall_not",
+   "summary": "PSIPs must refrain from requesting from paying clients more information or data than strictly necessary to initiate the payment order, without prejudice to anti-money laundering and terrorist financing duties.",
+   "evidence": {
+    "provision": "Sección I.D.5(c)",
+    "quote": "Los PSIP deberán abstenerse de solicitar a los clientes ordenantes o pagadores más información o datos de los estrictamente necesarios"
+   }
+  },
+  {
+   "type": "data_minimization",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "PSIPs must adopt technical and organisational measures to comply with the limitation on use of personal data in Article 20 of the Fintec Law; a PSIP also registered as PSBI may, with client consent, combine payment initiation data with other information for financial review, reconciliation services.",
+   "evidence": {
+    "provision": "Sección I.D.5(d)",
+    "quote": "Los PSIP deberán adoptar las medidas técnicas y organizativas necesarias para dar cumplimiento efectivo a la limitación de uso de datos personales"
+   }
+  },
+  {
+   "type": "registration_notification",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "A PSIP must report any change to the information provided in its application within five business days of the event or of becoming aware of it; registry-nature changes also require a registry annotation request and payment of fees.",
+   "applies_from": "From the date of the application while registered",
+   "conditional_on": "While registered in the PSIP Registry",
+   "evidence": {
+    "provision": "Sección I.D.6",
+    "quote": "dentro del plazo de cinco días hábiles de ocurrido el hecho respectivo"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "On cancellation or CMF-ordered termination, the PSIP must prepare and report a detailed plan ensuring no pending transactions or claims with payees remain, inform clients, and refrain from providing payment initiation services without a valid registration.",
+   "applies_from": "At the date the cancellation takes effect",
+   "conditional_on": "Cancellation of PSIP registration",
+   "evidence": {
+    "provision": "Sección I.D.7",
+    "quote": "deberá disponer e informar a la Comisión de un plan detallado que garantice y acredite que no existan transacciones"
+   }
+  },
+  {
+   "type": "registration_notification",
+   "addressee": "data_holder",
+   "modality": "shall",
+   "summary": "Incorporation into the IPI and IPC lists is mandatory for entities that the Fintec Law requires to participate in the SFA; it requires disclosure to the Directory of Participants, compliance with interface standards, testing, ARC documentation, a security profile certificate and risk management policies.",
+   "conditional_on": "Entities that the Fintec Law designates as IPI or IPC",
+   "evidence": {
+    "provision": "Sección I.E.1",
+    "quote": "La incorporación en esta nómina es obligatoria para las entidades que la Ley Fintec haya definido que deben ser parte del SFA"
+   }
+  },
+  {
+   "type": "testing_evaluation",
+   "addressee": "data_holder",
+   "modality": "shall",
+   "summary": "For list incorporation, IPI and IPC must obtain a functional testing report and certification of results from a provider of recognised standing, including contingency scenarios, with an unqualified opinion, under the requirements of Annex N°3.",
+   "conditional_on": "Incorporation into the IPI or IPC list",
+   "evidence": {
+    "provision": "Sección I.E.1(c)",
+    "quote": "Evidenciar a través de la emisión de un reporte de hallazgos y de certificación de resultados"
+   }
+  },
+  {
+   "type": "management_system",
+   "addressee": "data_holder",
+   "modality": "shall",
+   "summary": "IPI and IPC must demonstrate to the CMF the adoption and implementation of the risk management policies in Section III; entities with existing risk policies must supplement them with SFA-specific aspects.",
+   "conditional_on": "Incorporation into the IPI or IPC list",
+   "evidence": {
+    "provision": "Sección I.E.1(f)",
+    "quote": "Acreditar ante la Comisión la adopción e implementación de las políticas de gestión de riesgo"
+   }
+  },
+  {
+   "type": "registration_notification",
+   "addressee": "data_holder",
+   "modality": "shall",
+   "summary": "IPIs under Article 18 first subparagraph and IPCs under Article 20 must file their list application within the first 90 days after entry into force; IPIs under Article 18 second subparagraph (a) to (h) have 18 months.",
+   "applies_from": "Within the first 90 days after entry into force of this norm (IPI first subparagraph and IPC); 18 months after entry into force (other IPI)",
+   "conditional_on": "Entities designated as IPI or IPC by the Fintec Law",
+   "evidence": {
+    "provision": "Sección I.E.2",
+    "quote": "Deberán presentar su solicitud dentro de los primeros 90 días de entrada en vigencia de la presente Norma"
+   }
+  },
+  {
+   "type": "registration_notification",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Entities registered as PSBI through the list of financial service providers must request inclusion in the PSBI list and demonstrate compliance with the PSBI requirements.",
+   "conditional_on": "Voluntary participation as PSBI by IPIs or registered financial service providers",
+   "evidence": {
+    "provision": "Sección I.F",
+    "quote": "deberán solicitar su incorporación y acreditar ante la Comisión el cumplimiento de los requisitos dispuestos para los PSBI"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_holder",
+   "modality": "shall",
+   "summary": "IPIs and IPCs must make APIs available for the SFA, together with the associated technical documentation, to serve data access requests from PSBIs and PSIPs.",
+   "evidence": {
+    "provision": "Sección II.A.1",
+    "quote": "Las IPI e IPC deberán poner a disposición APIs para el SFA"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "data_holder",
+   "modality": "shall_not",
+   "summary": "Supervised entities may not use mechanisms other than APIs to respond to data access requests, subject to any alternative mechanism regulated by the CMF.",
+   "evidence": {
+    "provision": "Sección II.A.1",
+    "quote": "las entidades fiscalizadas no podrán utilizar mecanismos diferentes a las API para atender solicitudes de acceso a datos"
+   }
+  },
+  {
+   "type": "audit",
+   "addressee": "data_holder",
+   "modality": "shall",
+   "summary": "Compliance with the API standards in Table N°1 (OpenAPI 3.1, JSON, RESTful, ISO 20022, OAuth 2.0 and OpenID Connect, FAPI 2.0, mTLS) must be demonstrated by a report from an independent third party sent to the CMF; new interface versions should remain backward compatible where technically feasible.",
+   "evidence": {
+    "provision": "Sección II.A.2",
+    "quote": "El cumplimiento de estos estándares deberá ser acreditado mediante informe emanado de un tercero independiente y remitido a la Comisión"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_holder",
+   "modality": "shall",
+   "summary": "Data APIs for information categories in Article 17 numerals 1 to 3 must have minimum availability of 95% daily and 99% monthly and process transactions within 4,000 milliseconds; payment initiation APIs must have minimum availability of 95% daily and 99.5% monthly and process within 800 milliseconds; scheduled maintenance is excluded from the availability calculation.",
+   "evidence": {
+    "provision": "Sección II.A.3",
+    "quote": "deben estar disponibles para su uso con un tiempo de actividad mínimo del 95% de forma diaria por día calendario"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "data_holder",
+   "modality": "shall",
+   "summary": "Availability and performance reports must be sent to the CMF monthly, on a weekly basis, in the formats the CMF determines; outsourcing of monitoring does not remove the entity's responsibility for complete and timely reporting.",
+   "evidence": {
+    "provision": "Sección II.A.3",
+    "quote": "los reportes a la CMF de los respectivos estándares se deberán enviar mensualmente en base semanal"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_holder",
+   "modality": "shall",
+   "summary": "IPIs and IPCs must maintain an alternative information delivery mechanism to operate when the principal interfaces are unavailable, meeting the technical requirements in Annex N°3 and uniform for all participants.",
+   "conditional_on": "Unavailability of principal interfaces",
+   "evidence": {
+    "provision": "Sección II.B",
+    "quote": "Las IPI e IPC deberán contar con un mecanismo alternativo de entrega de información"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Each participant is solely responsible for verifying that its own information in the Directory of Participants is correct and has not undergone substantive changes; participants must supply contact, certificate and endpoint information to the Directory.",
+   "evidence": {
+    "provision": "Sección II.C",
+    "quote": "Será obligación y responsabilidad exclusiva de cada participante el cerciorarse que la información sobre sí mismo contenida en el DP resulte correcta"
+   }
+  },
+  {
+   "type": "testing_evaluation",
+   "addressee": "data_holder",
+   "modality": "shall",
+   "summary": "IPIs and IPCs must carry out periodic random data quality tests at least every six months, including comparability analysis and error source analysis, and report results to the CMF.",
+   "evidence": {
+    "provision": "Sección II.D",
+    "quote": "Las pruebas serán realizadas al menos con periodicidad semestral y sus resultados serán entregados a la Comisión"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "data_holder",
+   "modality": "shall",
+   "summary": "IPIs and IPCs must inform the CMF as soon as they become aware of any significant deficiency in the information transmitted through their SFA interfaces, through the operational incident reporting channels.",
+   "conditional_on": "Awareness of a significant deficiency in transmitted information",
+   "evidence": {
+    "provision": "Sección II.D",
+    "quote": "las IPI e IPC deberán informar a la Comisión tan pronto tomen conocimiento de su existencia, toda deficiencia significativa en la información"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_holder",
+   "modality": "shall",
+   "summary": "IPIs and IPCs must have processes to handle and resolve API problems affecting other participants, with clear error messages, and must designate a responsible officer (name, position, email and telephone) for communication with participants and the CMF.",
+   "evidence": {
+    "provision": "Sección II.E",
+    "quote": "Las entidades deben designar un funcionario responsable a quien contactar"
+   }
+  },
+  {
+   "type": "management_system",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "The board or equivalent body must approve and authorise risk management and internal control policies at least once a year, set strategic objectives, approve risk policies, assess resources and organisation, and evaluate a risk committee.",
+   "evidence": {
+    "provision": "Sección III.A.1",
+    "quote": "es la instancia responsable de aprobar y autorizar las políticas de gestión de riesgos y control interno, como mínimo una vez al año"
+   }
+  },
+  {
+   "type": "management_system",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "The risk management function must monitor controls, report directly to the board or equivalent body, report breaches with causes and measures, propose policy changes, and prepare an annual plan; the board must segregate and keep this function independent of business areas.",
+   "evidence": {
+    "provision": "Sección III.A.2",
+    "quote": "Esta función deberá reportar directamente al directorio u órgano equivalente."
+   }
+  },
+  {
+   "type": "management_system",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "The risk management function must prepare a risk management plan covering at least business continuity, information security and cybersecurity risks, with mitigation strategies, contingency planning, control mechanisms and continuous improvement, approved by the board at least annually.",
+   "evidence": {
+    "provision": "Sección III.A.3",
+    "quote": "El plan deberá contemplar, a lo menos, los riesgos de continuidad operacional, seguridad de la información y ciberseguridad."
+   }
+  },
+  {
+   "type": "management_system",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Operational risk management must give reasonable assurance of protecting client information, set risk appetite levels approved by the board, and define key risk indicators, adapted to business model, volume and client types.",
+   "evidence": {
+    "provision": "Sección III.A.4",
+    "quote": "los Participantes del SFA deberán considerar los elementos que se señalan a continuación"
+   }
+  },
+  {
+   "type": "management_system",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Services provided by third-party suppliers relevant to compliance, continuity, security and service quality must be included in operational risk processes, considering substitution, intervention, subcontracting and concentration risks.",
+   "conditional_on": "Outsourcing to suppliers",
+   "evidence": {
+    "provision": "Sección III.A.5",
+    "quote": "deberán ser considerados en los procesos de gestión de riesgo operacional de la entidad"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "enterprise",
+   "also_addressees": [
+    "data_holder"
+   ],
+   "modality": "shall",
+   "summary": "Operational risk management must include information security and cybersecurity elements: policies and procedures, ICT policies, qualified staff, roles and responsibilities, revocation of access on staff changes, audits, and board reporting.",
+   "evidence": {
+    "provision": "Sección III.B",
+    "quote": "la gestión de riesgo operacional deberá incluir los siguientes elementos, aplicables a todas las entidades participantes del SFA"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "enterprise",
+   "also_addressees": [
+    "data_holder"
+   ],
+   "modality": "shall",
+   "summary": "Entities must implement information security procedures covering asset inventories and classification, physical and logical access controls, monitoring of privileged users, mobile and remote access, backups, cloud services, authentication for digital channels, and a high-level incident management body with response and recovery procedures updated at least annually.",
+   "evidence": {
+    "provision": "Sección III.B.1",
+    "quote": "La entidad deberá considerar los siguientes procedimientos, adaptados a su modelo de negocios"
+   }
+  },
+  {
+   "type": "incident_reporting",
+   "addressee": "enterprise",
+   "also_addressees": [
+    "data_holder"
+   ],
+   "modality": "shall",
+   "summary": "Participants must report operational incidents affecting business continuity, information, client service quality, cyberattacks, malware, data leaks or fraud losses to the CMF; the CMF may require an internal report on causes and measures; a responsible officer and alternate must be designated.",
+   "conditional_on": "Occurrence of an operational incident",
+   "evidence": {
+    "provision": "Sección III.B.2.1",
+    "quote": "Los actores del SFA deberán comunicar a esta Comisión los incidentes operacionales"
+   }
+  },
+  {
+   "type": "incident_reporting",
+   "addressee": "enterprise",
+   "also_addressees": [
+    "data_holder"
+   ],
+   "modality": "shall",
+   "summary": "Cybersecurity incidents must be reported to the CMF through the Operational Incident Report (RIO) platform within a maximum of 30 minutes from the entity becoming aware of the event, with an initial report and a closing report including the listed fields.",
+   "conditional_on": "Occurrence of an incident",
+   "evidence": {
+    "provision": "Sección III.B.2.2",
+    "quote": "en el plazo máximo de 30 minutos transcurridos desde que la entidad tomó conocimiento del hecho"
+   }
+  },
+  {
+   "type": "management_system",
+   "addressee": "enterprise",
+   "also_addressees": [
+    "data_holder"
+   ],
+   "modality": "shall",
+   "summary": "Participants must have a business continuity policy covering response to internal or external events, responsibilities, and annual approval by the board or equivalent body, plus a crisis plan with escalation, communication and recovery objectives set in a business impact analysis.",
+   "evidence": {
+    "provision": "Sección III.B.2.3",
+    "quote": "Contar con una política de continuidad de negocio que considere a lo menos lo siguiente"
+   }
+  },
+  {
+   "type": "testing_evaluation",
+   "addressee": "enterprise",
+   "also_addressees": [
+    "data_holder"
+   ],
+   "modality": "shall",
+   "summary": "Continuity and disaster recovery plans must be tested annually, supervised by the risk management function, based on plausible severe scenarios including cyberattacks, disasters and health crises, with results reported to the board.",
+   "evidence": {
+    "provision": "Sección III.B.2.3",
+    "quote": "Pruebas anuales del Plan de Continuidad de Negocio y Recuperación de Desastres"
+   }
+  },
+  {
+   "type": "record_keeping",
+   "addressee": "data_holder",
+   "modality": "shall",
+   "summary": "API security standards require monitoring of API data requests and responses, backups, keeping event logs for at least five years identifying requester, time, data transmitted and result, encryption according to sensitivity, deletion of data once legal retention limits expire, and contingency sites.",
+   "evidence": {
+    "provision": "Sección III.B.3",
+    "quote": "Mantener registro de los eventos propios del SFA"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "data_holder",
+   "modality": "shall",
+   "summary": "Entities must use the Open ID Connect standard, layered on OAuth 2.0, as described in Annex N°3 for the services and APIs there listed.",
+   "evidence": {
+    "provision": "Sección III.C.1",
+    "quote": "Corresponderá utilizar, en lo que corresponda, el estándar Open ID Connect"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "data_holder",
+   "modality": "shall",
+   "summary": "Strong client authentication (ARC) using two or more independent elements of knowledge, possession and inherence is required for data queries that involve client information subject to consent; after authenticating the PSBI or PSIP, IPIs and IPCs must authenticate the client, including authorisation and payment confirmation.",
+   "conditional_on": "Data queries involving client information subject to consent",
+   "evidence": {
+    "provision": "Sección III.C.2",
+    "quote": "Se requerirá una Autenticación Reforzada del Cliente -ARC- para la consulta de datos del SFA"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "data_holder",
+   "modality": "shall",
+   "summary": "IPIs and IPCs must receive a digital certificate from the PSBI or PSIP issued by a certification authority meeting the Annex N°3 requirements, compare the certificate permissions and roles against the Directory of Participants, and confirm the validity of each PSBI and PSIP.",
+   "evidence": {
+    "provision": "Sección III.C.3",
+    "quote": "Las IPI e IPC deberán recibir un Certificado Digital por parte del PSBI o PSIP"
+   }
+  },
+  {
+   "type": "consent",
+   "addressee": "data_holder",
+   "also_addressees": [
+    "enterprise"
+   ],
+   "modality": "shall",
+   "summary": "Consent is deemed given only if expressed explicitly by the data subject or authorised representative, implemented through the consent management mechanism, stored on a durable medium, free of undue influence, limited to what is strictly necessary, given in plain language, and accompanied by a control panel; the detailed conditions are listed in letters a to i.",
+   "conditional_on": "Data exchange, processing, transfer or payment initiation within the SFA",
+   "evidence": {
+    "provision": "Sección III.D.1",
+    "quote": "se reputará otorgado el consentimiento por parte del titular de los datos"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "enterprise",
+   "also_addressees": [
+    "data_holder"
+   ],
+   "modality": "shall",
+   "summary": "When requesting consent, the entity must tell the data subject precisely which data, to which institution, for what period or frequency and purpose; the request may not contain other information or request consent for other purposes.",
+   "conditional_on": "Requesting consent for transmission, processing, transfer or payment initiation",
+   "evidence": {
+    "provision": "Sección III.D.1(e)",
+    "quote": "se deberá poner en conocimiento del titular o cliente de manera precisa y clara los datos sobre los cuales consiente"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "data_holder",
+   "modality": "shall_not",
+   "summary": "IPIs and IPCs may not alter the consent request formulated by the PSBI or PSIP, request additional consent for the same exchange, adopt practices that discourage consent, or degrade the user experience.",
+   "evidence": {
+    "provision": "Sección III.D.1",
+    "quote": "Queda prohibido a la IPI o a la IPC alterar el contenido de la solicitud de consentimiento"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "enterprise",
+   "also_addressees": [
+    "data_holder"
+   ],
+   "modality": "shall",
+   "summary": "PSBIs, PSIPs, IPIs and IPCs must provide data subjects and clients a control panel to know, verify and revoke consents, free of charge, remote and easy to use, with authentication equivalent to Section III.C, showing details of each consent and its status, and with real-time communication of revocations.",
+   "evidence": {
+    "provision": "Sección III.D.2",
+    "quote": "Las PSBI, PSIP, IPI e IPC deberán poner a disposición de los titulares de datos y clientes un panel de control"
+   }
+  },
+  {
+   "type": "record_keeping",
+   "addressee": "enterprise",
+   "also_addressees": [
+    "data_holder"
+   ],
+   "modality": "shall",
+   "summary": "A registration system must preserve, intact and for at least five years, the accesses and interactions of data subjects for CMF supervision, and display all consents granted, revoked or expired during the last five years.",
+   "evidence": {
+    "provision": "Sección III.D.2(e)",
+    "quote": "Contar con un sistema o mecanismo de registro que permita preservar, de manera íntegra y por al menos 5 años"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "enterprise",
+   "also_addressees": [
+    "data_holder"
+   ],
+   "modality": "shall",
+   "summary": "If a data subject does not access the control panel for more than one calendar year while valid consents exist, a reminder must be sent to the contact the subject has set within the first five business days after that year.",
+   "applies_from": "Within the first five business days after one calendar year of inactivity",
+   "conditional_on": "Inactivity of the data subject on the control panel with valid consents",
+   "evidence": {
+    "provision": "Sección III.D.2",
+    "quote": "Dicha comunicación se deberá remitir dentro de los cinco primeros días hábiles inmediatamente posteriores"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_holder",
+   "also_addressees": [
+    "enterprise"
+   ],
+   "modality": "shall",
+   "summary": "SFA data must be available on client request, kept current and validated against client status, reflect changes and corrections, and be available equally via the principal and alternative mechanisms; for online balances all current products must be reported, with the date of last available information where updates are periodic.",
+   "evidence": {
+    "provision": "Sección IV.A",
+    "quote": "Los datos del SFA deberán cumplir con las siguientes condiciones"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "enterprise",
+   "also_addressees": [
+    "data_holder"
+   ],
+   "modality": "shall",
+   "summary": "Participants must at all times protect integrity, availability, security and confidentiality of data in each transaction and of client information, in consideration of the Fintec Law and Law 19.628.",
+   "evidence": {
+    "provision": "Sección IV.D",
+    "quote": "Los Participantes del SFA deberán, en todo momento, resguardar la integridad, disponibilidad, seguridad y confidencialidad de los datos"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "enterprise",
+   "also_addressees": [
+    "data_holder"
+   ],
+   "modality": "shall",
+   "summary": "Participants must adopt adequate procedures to channel and manage the exercise of data subject rights over data incorporated into SFA interfaces.",
+   "evidence": {
+    "provision": "Sección IV.D(d)",
+    "quote": "Los Participantes deberán adoptar procedimientos adecuados para canalizar y gestionar el ejercicio de los derechos de los titulares de datos"
+   }
+  },
+  {
+   "type": "data_minimization",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Client data shared through the SFA may be used by the PSBI or PSIP only for the specific purposes stated when consent was given, without prejudice to another legal basis for processing.",
+   "evidence": {
+    "provision": "Sección IV.D(e)",
+    "quote": "Los datos autorizados a compartir por el Cliente solo pueden ser utilizados por el PSBI y/o por el PSIP"
+   }
+  },
+  {
+   "type": "incident_reporting",
+   "addressee": "enterprise",
+   "also_addressees": [
+    "data_holder"
+   ],
+   "modality": "shall",
+   "summary": "A participant that considers a relevant risk to SFA information assets requiring urgent action must take immediate preventive measures, such as disconnection from the SFA, and send an immediate report to the CMF with the measures and grounds, then correct the situation and inform the CMF when resolved.",
+   "conditional_on": "Relevant risk to SFA information assets requiring urgent action",
+   "evidence": {
+    "provision": "Sección V.A",
+    "quote": "deberá enviar de inmediato un reporte a la CMF informando las medidas adoptadas"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_holder",
+   "modality": "shall",
+   "summary": "Banks, card issuers and prepaid card issuers must implement APIs for Terms and Conditions and Channels of Attention within six months of the Norm entering into force.",
+   "applies_from": "Six months after the Norm enters into force (after the 24-month preparation period)",
+   "conditional_on": "Entity is a bank, credit card issuer or prepaid card issuer",
+   "evidence": {
+    "provision": "Sección V.C",
+    "quote": "6 meses para implementación de APIs sobre Términos y Condiciones Generales y de Canales de Atención"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_holder",
+   "modality": "shall",
+   "summary": "Banks, card issuers and prepaid card issuers must implement APIs for Enrollment, Historical Financial Positions, Transaction History and Current Products for natural persons within 15 months (and credit lines within 18 months) and for legal persons within 18 months; Payment Initiation APIs within 18 months.",
+   "applies_from": "Fifteen to eighteen months after the Norm enters into force",
+   "conditional_on": "Entity is a bank, credit card issuer or prepaid card issuer",
+   "evidence": {
+    "provision": "Sección V.C",
+    "quote": "15 meses para implementación de APIs sobre Enrolamiento, Posiciones Financieras Históricas, Historial de usos y transacciones, y Productos vigentes"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_holder",
+   "modality": "shall",
+   "summary": "Entities under Article 18 second subparagraph (a) to (h) of the Fintec Law must implement APIs for Terms and Conditions and Channels of Attention within 24 months of the Norm entering into force.",
+   "applies_from": "24 months after the Norm enters into force",
+   "conditional_on": "Entities listed in Article 18 second subparagraph (a) to (h) of the Fintec Law",
+   "evidence": {
+    "provision": "Sección V.C",
+    "quote": "24 meses para implementación de APIs sobre Términos y Condiciones Generales y Canales de Atención"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_holder",
+   "modality": "shall",
+   "summary": "Entities under Article 18 second subparagraph (a) to (h) of the Fintec Law must implement APIs for Enrollment, Historical Financial Positions, Transaction History and Current Products for all client types within 36 months of the Norm entering into force.",
+   "applies_from": "36 months after the Norm enters into force",
+   "conditional_on": "Entities listed in Article 18 second subparagraph (a) to (h) of the Fintec Law",
+   "evidence": {
+    "provision": "Sección V.C",
+    "quote": "36 meses para implementación de APIs sobre Enrolamiento"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "data_holder",
+   "modality": "shall_not",
+   "summary": "IPIs and IPCs may not discriminate against third-party data recipients, for example by prioritising some institutions over others in data extraction, development time, API access or response limits.",
+   "evidence": {
+    "provision": "Sección III.E.1(b)",
+    "quote": "Las IPI o IPC no pueden dar un trato discriminatorio a los terceros receptores de datos"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_holder",
+   "modality": "shall",
+   "summary": "After certifying the identity of PSBIs or PSIPs, IPIs and IPCs must provide the authorised services according to user profiles without requiring an agreement between the parties; service conditions must be published.",
+   "conditional_on": "After identity certification of the PSBI or PSIP",
+   "evidence": {
+    "provision": "Sección III.E.1(c)",
+    "quote": "deberá brindar los servicios respectivos autorizados al usuario de información según sus perfiles, sin necesidad de acuerdo entre las partes"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "data_holder",
+   "modality": "shall_not",
+   "summary": "IPIs may not charge PSBIs, except the direct incremental costs of serving queries above the volume thresholds set by the CMF; IPCs may not charge clients or PSIPs beyond what is agreed for the account, as stated in the Fintec Law.",
+   "conditional_on": "Volume thresholds set by the CMF exceeded",
+   "evidence": {
+    "provision": "Sección III.E.2",
+    "quote": "De la misma forma, las IPI no podrán efectuar cobros o realizar cargos a los PSBI"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "data_holder",
+   "modality": "shall",
+   "summary": "Any change to tariff terms must be notified to participants at least 30 days before taking effect; each IPI must also inform PSBIs monthly of the effective consumption of its interfaces and the number of calls exceeding the charging threshold.",
+   "applies_from": "At least 30 days before the tariff change takes effect",
+   "conditional_on": "Tariff term changes and monthly reporting of consumption",
+   "evidence": {
+    "provision": "Sección III.E.2",
+    "quote": "Cualquier modificación en los términos tarifarios deberá ser informada a los Participantes con al menos 30 días de anticipación"
+   }
+  }
+ ],
+ "enforcement": [
+  {
+   "sanction_type": "other",
+   "authority": "Comisión para el Mercado Financiero (CMF)",
+   "triggered_by": "Infracciones a la Ley Fintec (Ley N°21.521) o incumplimiento de las instrucciones de la Norma por los Participantes del SFA",
+   "max_penalty_text": "No maximum penalty stated in this text; the text refers to sanctions under Título III of DL N°3.538.",
+   "penalty_reference": "Título III del DL N°3.538, de 1980 (cross-reference in Sección V.B); art. 27 of Ley Fintec",
+   "cure_period": "Not stated in this text",
+   "evidence": {
+    "provision": "Sección V.B (Sanciones)",
+    "quote": "serán sancionados conforme a las reglas establecidas en el Título III del DL N°3.538, de 1980"
+   },
+   "private_right_of_action": null
+  },
+  {
+   "sanction_type": "service_suspension",
+   "authority": "Comisión para el Mercado Financiero (CMF)",
+   "triggered_by": "Deficiencias en la calidad de la información; incidentes de ciberseguridad o operacionales; deficiencias en la gestión de riesgos; otros inconvenientes con efecto negativo sobre el Sistema",
+   "max_penalty_text": "Temporary suspension (partial or total) of an entity's participation or its interfaces; no monetary amount stated.",
+   "penalty_reference": "Art. 27, inciso penúltimo, Ley Fintec (cited in Sección V.A)",
+   "cure_period": "Not stated in this text",
+   "evidence": {
+    "provision": "Sección V.A (Suspensiones temporales)",
+    "quote": "podrá suspender temporalmente, de forma parcial o total, la participación de las entidades o sus interfaces"
+   },
+   "private_right_of_action": null
+  },
+  {
+   "sanction_type": "license_revocation",
+   "authority": "Comisión para el Mercado Financiero (CMF)",
+   "triggered_by": "Infracciones a la Ley Fintec o al incumplimiento de las instrucciones de la Norma (suspensión definitiva o cancelación de registro)",
+   "max_penalty_text": "Definitive suspension or cancellation of registration; no monetary amount stated.",
+   "penalty_reference": "Sección V.B; see also Sección I.C.3 and Sección I.E (cancellation of registry entries for breach of Ley Fintec or this Norma)",
+   "cure_period": "Not stated in this text",
+   "evidence": {
+    "provision": "Sección V.B (Sanciones)",
+    "quote": "podrá sancionar con una suspensión definitiva o cancelación de registro"
+   },
+   "private_right_of_action": null
+  }
+ ],
+ "section_status": {}
+}

@@ -1,0 +1,982 @@
+{
+ "instrument_id": "us-obbba-2025",
+ "checker": "claude-opus-5-5 (Claude Code)",
+ "protocol": "VP-1.0",
+ "date": "2026-10-14",
+ "reference": [
+  {
+   "category": "threshold",
+   "provision": "Sec. 112204(a) (inserting SSA Sec. 1899D(d)(3))",
+   "quote": "in the case that the Secretary fails to reduce the rate of improper payments by 50 percent in such most recent year",
+   "value": "improper-payment rate reduction < 50% vs prior year -> report must describe reasons for failure (obligation)",
+   "match": {
+    "X": null,
+    "Y": null
+   },
+   "match_note": "Neither version codes it as a threshold; both mention it only inside the s.1899D(d) reporting obligation."
+  },
+  {
+   "category": "threshold",
+   "provision": "Sec. 71401(a) (inserting SSA Sec. 2105(h)(5)(B))",
+   "quote": "Not more than 10 percent of the amount allotted to a State for a fiscal year may be used by the State for administrative expenses.",
+   "value": "<= 10% of State allotment for administrative expenses (cap)",
+   "match": {
+    "X": 2,
+    "Y": 0
+   }
+  },
+  {
+   "category": "threshold",
+   "provision": "Sec. 71401(a) (SSA Sec. 2105(h)(5)(A)(i))",
+   "quote": "a plan for the State to use its allotment to carry out 3 or more of the activities described in paragraph (6)",
+   "value": "State plan must cover >= 3 listed activities (condition of allotment)",
+   "match": {
+    "X": null,
+    "Y": null
+   }
+  },
+  {
+   "category": "threshold",
+   "provision": "Sec. 71401(a) (SSA Sec. 2105(h)(6))",
+   "quote": "Amounts allotted to a State under this subsection shall be used for 3 or more of the following health- related activities",
+   "value": "allotments used for >= 3 listed activities (condition of use)",
+   "match": {
+    "X": 3,
+    "Y": null
+   }
+  },
+  {
+   "category": "threshold",
+   "provision": "Sec. 71401(a) (SSA Sec. 2105(h)(6)(E))",
+   "quote": "with commitments to serve rural communities for a minimum of 5 years",
+   "value": "workforce recruitment use requires >= 5-year rural service commitments",
+   "match": {
+    "X": 1,
+    "Y": null
+   }
+  },
+  {
+   "category": "key_date",
+   "provision": "Sec. 43201(a)",
+   "quote": "$500,000,000, to remain available until September 30, 2034",
+   "value": "2034-09-30 expiry of Commerce AI modernization appropriation",
+   "match": {
+    "X": 0,
+    "Y": 0
+   }
+  },
+  {
+   "category": "key_date",
+   "provision": "Sec. 43201(c)(1)",
+   "quote": "during the 10-year period beginning on the date of the enactment of this Act",
+   "value": "moratorium on State AI-law enforcement: from enactment for 10 years (application and sunset)",
+   "match": {
+    "X": null,
+    "Y": 1
+   },
+   "match_note": "X E1 codes the moratorium as an application event dated 10 years after enactment (wrong direction), so not counted."
+  },
+  {
+   "category": "key_date",
+   "provision": "Sec. 112204(a) (SSA Sec. 1899D(a))",
+   "quote": "Not later than January 1, 2027, the Secretary shall implement such artificial intelligence tools",
+   "value": "2027-01-01 deadline to implement Medicare AI tools",
+   "match": {
+    "X": 2,
+    "Y": 2
+   }
+  },
+  {
+   "category": "key_date",
+   "provision": "Sec. 112204(a) (SSA Sec. 1899D(d))",
+   "quote": "Not later than January 1, 2029, and not less frequently than annually thereafter, the Secretary shall report to Congress",
+   "value": "2029-01-01 first report, annually thereafter",
+   "match": {
+    "X": 3,
+    "Y": 3
+   }
+  },
+  {
+   "category": "key_date",
+   "provision": "Secs. 20002, 20004, 20005, 20006, 20008, 20010, 60003, 90004, 100001, 40001 (appropriation clauses)",
+   "quote": "to remain available until September 30, 2029",
+   "value": "2029-09-30 expiry of FY2025 appropriations (grouped; any row recording it counts)",
+   "match": {
+    "X": 4,
+    "Y": 4
+   },
+   "match_note": "Grouped item; X records it per AI line item (E4-E6, E8-E10), Y per section (E4-E7, E9-E11, E21, E27, E28)."
+  },
+  {
+   "category": "key_date",
+   "provision": "Sec. 50404(d)",
+   "quote": "$150,000,000, to remain available through September 30, 2026",
+   "value": "2026-09-30 expiry of DOE transformational AI models appropriation",
+   "match": {
+    "X": 7,
+    "Y": 20
+   }
+  },
+  {
+   "category": "key_date",
+   "provision": "Sec. 100001(b)(2)",
+   "quote": "the Commandant may, through September 30, 2030",
+   "value": "2030-09-30 sunset of Commandant floating dry dock authority",
+   "match": {
+    "X": null,
+    "Y": 29
+   },
+   "match_note": "X records the authority only as obligation O9 (applies_from), not as an event."
+  },
+  {
+   "category": "key_date",
+   "provision": "Sec. 100001(h)",
+   "quote": "Not later than 90 days after the date of enactment of this Act, the Commandant shall submit",
+   "value": "expenditure plan due 90 days after enactment",
+   "match": {
+    "X": null,
+    "Y": 30
+   }
+  },
+  {
+   "category": "key_date",
+   "provision": "Sec. 20008(a)(8)",
+   "quote": "not to be obligated before March 1, 2026",
+   "value": "2026-03-01 earliest obligation of Ohio-class tube conversion funds",
+   "match": {
+    "X": null,
+    "Y": 8
+   }
+  },
+  {
+   "category": "key_date",
+   "provision": "Sec. 71401(a) (SSA Sec. 2105(h)(1)(B)(i))",
+   "quote": "Any amounts appropriated under subparagraph (A) that are unexpended or unobligated as of October 1, 2032, shall be returned to the Treasury",
+   "value": "2032-10-01 unexpended rural health funds returned",
+   "match": {
+    "X": 14,
+    "Y": 25
+   }
+  },
+  {
+   "category": "key_date",
+   "provision": "Sec. 71401(a) (SSA Sec. 2105(h)(1)(B)(ii))",
+   "quote": "not later than March 31, 2028, and annually thereafter through March 31, 2032",
+   "value": "2028-03-31 first redistribution determination, annually to 2032-03-31",
+   "match": {
+    "X": 13,
+    "Y": 24
+   }
+  },
+  {
+   "category": "key_date",
+   "provision": "Sec. 71401(a) (SSA Sec. 2105(h)(2)(A))",
+   "quote": "(but that ends not later than December 31, 2025)",
+   "value": "2025-12-31 end of State application period (latest)",
+   "match": {
+    "X": 11,
+    "Y": 23
+   }
+  },
+  {
+   "category": "key_date",
+   "provision": "Sec. 71401(a) (SSA Sec. 2105(h)(2)(B))",
+   "quote": "Not later than December 31, 2025, the Administrator shall approve or deny all applications",
+   "value": "2025-12-31 deadline for approval or denial",
+   "match": {
+    "X": 12,
+    "Y": 23
+   }
+  },
+  {
+   "category": "key_date",
+   "provision": "Sec. 71401(a) (SSA Sec. 2105(h)(1)(A), (2)(C), (3)(A))",
+   "quote": "For each of fiscal years 2026 through 2030, the Administrator shall determine",
+   "value": "allotments for FY2026 through FY2030 (program application years)",
+   "match": {
+    "X": null,
+    "Y": 22
+   }
+  },
+  {
+   "category": "key_date",
+   "provision": "Sec. 71401(a) (SSA Sec. 2105(h)(1)(B)(iii)(II))",
+   "quote": "amounts redistributed in fiscal year 2032 which shall only be available for expenditure through September 30, 2032",
+   "value": "2032-09-30 expiry of FY2032 redistributed amounts",
+   "match": {
+    "X": null,
+    "Y": 26
+   }
+  },
+  {
+   "category": "key_date",
+   "provision": "Sec. 40005(a) (51 U.S.C. 20306(a))",
+   "quote": "$9,995,000,000, to remain available until September 30, 2032",
+   "value": "2032-09-30 expiry of NASA appropriation",
+   "match": {
+    "X": null,
+    "Y": 12
+   }
+  },
+  {
+   "category": "key_date",
+   "provision": "Sec. 40005(a) (51 U.S.C. 20306(a)(1))",
+   "quote": "$700,000,000, to be obligated not later than fiscal year 2026",
+   "value": "FY2026 obligation deadline for Mars telecommunications orbiter",
+   "match": {
+    "X": null,
+    "Y": 13
+   }
+  },
+  {
+   "category": "key_date",
+   "provision": "Sec. 40005(a) (51 U.S.C. 20306(a)(1)(B))",
+   "quote": "delivered to the Administration not later than December 31, 2028",
+   "value": "2028-12-31 orbiter delivery deadline",
+   "match": {
+    "X": null,
+    "Y": 14
+   }
+  },
+  {
+   "category": "key_date",
+   "provision": "Sec. 40005(a) (51 U.S.C. 20306(b)(1))",
+   "quote": "Not later than 30 days after the date of the enactment of this section, the Administrator shall identify a space vehicle",
+   "value": "space vehicle identified within 30 days after enactment",
+   "match": {
+    "X": null,
+    "Y": 15
+   }
+  },
+  {
+   "category": "key_date",
+   "provision": "Sec. 40005(a) (51 U.S.C. 20306(b)(3); also (a)(6)(F))",
+   "quote": "Not later than 18 months after the date of the enactment of this section, the space vehicle identified under paragraph (1) shall be transferred",
+   "value": "space vehicle transferred within 18 months after enactment",
+   "match": {
+    "X": null,
+    "Y": 16
+   }
+  },
+  {
+   "category": "key_date",
+   "provision": "Sec. 40005(a) (51 U.S.C. 20306(c)(1))",
+   "quote": "Not less than 50 percent of the total funds in subsection (a) shall be obligated not later than September 30, 2028.",
+   "value": "2028-09-30: >= 50% of NASA funds obligated",
+   "match": {
+    "X": null,
+    "Y": 17
+   }
+  },
+  {
+   "category": "key_date",
+   "provision": "Sec. 40005(a) (51 U.S.C. 20306(c)(2))",
+   "quote": "100 percent of funds shall be obligated not later than September 30, 2029.",
+   "value": "2029-09-30: 100% of NASA funds obligated",
+   "match": {
+    "X": null,
+    "Y": 18
+   }
+  },
+  {
+   "category": "key_date",
+   "provision": "Sec. 40005(a) (51 U.S.C. 20306(c)(3))",
+   "quote": "All associated outlays shall occur not later than September 30, 2034.",
+   "value": "2034-09-30 NASA outlay deadline",
+   "match": {
+    "X": null,
+    "Y": 19
+   }
+  },
+  {
+   "category": "sanction",
+   "provision": "Sec. 71401(a) (SSA Sec. 2105(h)(1)(B)(iv))",
+   "quote": "the Administrator may withhold payments to, or reduce payments to, or recover previous payments from, the State",
+   "value": "misuse of rural health funds: withholding, reduction or recovery of payments (no maximum)",
+   "match": {
+    "X": 0,
+    "Y": 0
+   }
+  }
+ ],
+ "judgments": {
+  "X": {
+   "thresholds": [
+    {
+     "index": 0,
+     "verdict": "unsupported",
+     "note": "10-year moratorium period is a time period (event/sunset), not a numeric cutoff"
+    },
+    {
+     "index": 1,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 2,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 3,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 4,
+     "verdict": "unsupported",
+     "note": "50/50 allotment split is a distribution rule sizing a government duty, not a cutoff"
+    },
+    {
+     "index": 5,
+     "verdict": "unsupported",
+     "note": "Federal appropriation spending limit; under codebook 3.4/3.5 quantities that size a government duty are obligations, not thresholds (Coast Guard 15% design cap)"
+    },
+    {
+     "index": 6,
+     "verdict": "unsupported",
+     "note": "Federal appropriation spending limit; under codebook 3.4/3.5 quantities that size a government duty are obligations, not thresholds (homeport sub-appropriation)"
+    },
+    {
+     "index": 7,
+     "verdict": "unsupported",
+     "note": "Federal appropriation spending limit; under codebook 3.4/3.5 quantities that size a government duty are obligations, not thresholds ($100bn loan-principal cap)"
+    },
+    {
+     "index": 8,
+     "verdict": "unsupported",
+     "note": "Federal appropriation spending limit; under codebook 3.4/3.5 quantities that size a government duty are obligations, not thresholds ($100bn loan-principal cap)"
+    }
+   ],
+   "events": [
+    {
+     "index": 0,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 1,
+     "verdict": "wrong_date",
+     "note": "The moratorium applies from enactment for 10 years; coded as an application event dated enactment + 10 years (should be application at enactment, expiry at +10 years)"
+    },
+    {
+     "index": 2,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 3,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 4,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 5,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 6,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 7,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 8,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 9,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 10,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 11,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 12,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 13,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 14,
+     "verdict": "correct",
+     "note": ""
+    }
+   ],
+   "obligations": [
+    {
+     "index": 0,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 1,
+     "verdict": "correct",
+     "note": "State/local governments as government_agency; moratorium judged against the fetched text (see notes)"
+    },
+    {
+     "index": 2,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 3,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 4,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 5,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 6,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 7,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 8,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 9,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 10,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 11,
+     "verdict": "unsupported",
+     "note": "Disapplies other law or waives a requirement; no addressee duty or conduct, so not an obligation (14 U.S.C. 1131-1133 do not apply)"
+    },
+    {
+     "index": 12,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 13,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 14,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 15,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 16,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 17,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 18,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 19,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 20,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 21,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 22,
+     "verdict": "unsupported",
+     "note": "Withholding/recovery of State payments is the sanction (coded as enforcement N0); a penalty coded as an obligation"
+    },
+    {
+     "index": 23,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 24,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 25,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 26,
+     "verdict": "unsupported",
+     "note": "Disapplies other law or waives a requirement; no addressee duty or conduct, so not an obligation (no State matching requirement)"
+    },
+    {
+     "index": 27,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 28,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 29,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 30,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 31,
+     "verdict": "unsupported",
+     "note": "Disapplies other law or waives a requirement; no addressee duty or conduct, so not an obligation (SSA 2105(c) paragraphs do not apply)"
+    },
+    {
+     "index": 32,
+     "verdict": "unsupported",
+     "note": "Disapplies other law or waives a requirement; no addressee duty or conduct, so not an obligation (bar on administrative or judicial review)"
+    },
+    {
+     "index": 33,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 34,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 35,
+     "verdict": "unsupported",
+     "note": "Disapplies other law or waives a requirement; no addressee duty or conduct, so not an obligation (appropriation made notwithstanding title 14 provisions)"
+    },
+    {
+     "index": 36,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 37,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 38,
+     "verdict": "correct",
+     "note": ""
+    }
+   ],
+   "enforcement": [
+    {
+     "index": 0,
+     "verdict": "correct",
+     "note": ""
+    }
+   ]
+  },
+  "Y": {
+   "thresholds": [
+    {
+     "index": 0,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 1,
+     "verdict": "unsupported",
+     "note": "Federal appropriation spending limit; under codebook 3.4/3.5 quantities that size a government duty are obligations, not thresholds (Coast Guard 15% design cap)"
+    },
+    {
+     "index": 2,
+     "verdict": "unsupported",
+     "note": "Federal appropriation spending limit; under codebook 3.4/3.5 quantities that size a government duty are obligations, not thresholds ($100bn loan-principal cap)"
+    }
+   ],
+   "events": [
+    {
+     "index": 0,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 1,
+     "verdict": "correct",
+     "note": "expiry at enactment + 10 years, consistent with the text"
+    },
+    {
+     "index": 2,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 3,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 4,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 5,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 6,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 7,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 8,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 9,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 10,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 11,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 12,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 13,
+     "verdict": "correct",
+     "note": "date '2026' stands for fiscal year 2026 (ends 2026-09-30); accepted, date_text gives the fiscal-year wording"
+    },
+    {
+     "index": 14,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 15,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 16,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 17,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 18,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 19,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 20,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 21,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 22,
+     "verdict": "correct",
+     "note": "date '2026' stands for fiscal year 2026 (ends 2026-09-30); accepted, date_text gives the fiscal-year wording"
+    },
+    {
+     "index": 23,
+     "verdict": "correct",
+     "note": "merges the application-period end and the approval deadline (same date)"
+    },
+    {
+     "index": 24,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 25,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 26,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 27,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 28,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 29,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 30,
+     "verdict": "correct",
+     "note": ""
+    }
+   ],
+   "obligations": [
+    {
+     "index": 0,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 1,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 2,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 3,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 4,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 5,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 6,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 7,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 8,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 9,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 10,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 11,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 12,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 13,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 14,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 15,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 16,
+     "verdict": "wrong_addressee",
+     "note": "Delivery date is a requirement of NASA's procurement; the statute binds the Administration, not a commercial provider (enterprise)"
+    },
+    {
+     "index": 17,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 18,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 19,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 20,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 21,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 22,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 23,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 24,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 25,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 26,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 27,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 28,
+     "verdict": "correct",
+     "note": ""
+    }
+   ],
+   "enforcement": [
+    {
+     "index": 0,
+     "verdict": "correct",
+     "note": ""
+    }
+   ]
+  }
+ },
+ "sampling": {
+  "X": {},
+  "Y": {}
+ },
+ "classification": {
+  "X": {
+   "domains": "right",
+   "primary_domain": "right",
+   "note": "public_sector_ai (Commerce IT modernization, Medicare AI tools, DOE models) primary; ai_general (state-law moratorium) and ai_sectoral defensible. Most of the text is defense, Coast Guard, NASA and rural-health appropriations with no matching domain in the vocabulary. The registry's chips_export_controls is not supported by this text."
+  },
+  "Y": {
+   "domains": "right",
+   "primary_domain": "right",
+   "note": "Same domains as X."
+  }
+ },
+ "reference_scope": "full fetched text (AGORA excerpts of 19 OBBBA sections, some in two versions), with restrictions: the 2029-09-30 appropriation availability date that recurs across ten sections is one grouped item; spending limits on federal agencies' own use of funds (Coast Guard 15% design cap, $100bn DoD loan-principal caps, per-fiscal-year minimum obligation amounts in 51 U.S.C. 20306(a)(2)-(6), 50/50 and 1/4 allotment rules) are not listed as thresholds; the enactment date is not stated in the text and is not listed.",
+ "notes": "The fetched text is a compilation of AGORA excerpts, not Pub. L. 119-21: it mixes House-passed sections (43201 with the state AI-law moratorium, 112204, 50404, 60003, 100001) with enacted sections (40001, 40005, 71401, 90004, 20008, 20010) and gives Secs. 20002/20004/20005/20006 in two versions. The registry provenance notes that the moratorium provision failed. All items were judged against the fetched text as the annotators were instructed; if the instrument is defined as the enacted act, the items coded from Secs. 43201, 112204, 50404, 60003 and 100001 would be not_this_instrument in both versions (X: thresholds 0, 5; events 0-3, 7, 9; obligations 0-16, 18, 19; Y: threshold 1; events 0-3, 20, 21, 28-30; obligations 0-7, 9-13). The enactment date is not stated in the text; both versions anchor relative dates on the registry's 2025-07-04 'signed' date, which the codebook's runner rule allows. Five X and two Y threshold verdicts depend on the rule that limits on federal agencies' own use of appropriations (15% design cap, $100bn loan caps, sub-appropriation ceilings, allotment split) are government-duty quantities rather than thresholds; the 10% administrative cap and the 3-activity and 5-year conditions on State grantees are counted as thresholds. Both versions over-split some sections into several government_duty rows (e.g., Sec. 100001(b)-(i), SSA 1899D(a)-(d)); these were not counted as duplicates because each row records a distinct duty. Both versions' notes state that the Sec. 43201(c) moratorium is 'not coded' or 'outside this partial fill', but both code it (X E1/T0/O1, Y E1/O1)."
+}

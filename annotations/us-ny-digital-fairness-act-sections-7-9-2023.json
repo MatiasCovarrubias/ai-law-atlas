@@ -1,0 +1,295 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "us-ny-digital-fairness-act-sections-7-9-2023",
+ "tier": "B",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "light, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-interim-20261014"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "AGORA plaintext (ETO, CC BY-NC 4.0), local cache",
+  "url": "https://www.nysenate.gov/legislation/bills/2023/S2277",
+  "retrieved": "2024-04-23",
+  "version": "1.33.0 (2026-09-16)",
+  "language": "en",
+  "extent": "partial",
+  "note": "AGORA record covers part of an act: An Act to amend the general business law, the executive law, the state finance law and the education law, in relation to"
+ },
+ "classification": {
+  "domains": [
+   "public_sector_ai",
+   "algorithmic_decision_systems"
+  ],
+  "primary_domain": "public_sector_ai",
+  "mechanisms": [
+   "mandate_obligation",
+   "disclosure_transparency",
+   "procurement_rule",
+   "liability_rule"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "government_agency"
+  ],
+  "affected_roles": [
+   "consumers_users",
+   "ai_provider"
+  ],
+  "decision_margins": [
+   "household:access",
+   "household:information"
+  ],
+  "territorial_scope": {
+   "types": [
+    "subnational"
+   ],
+   "description": "Applies to the State of New York and its agencies, political subdivisions and public benefit corporations, and to individuals known or reasonably believed to be located within New York State.",
+   "evidence": {
+    "provision": "Sec. 7 (adding State Finance Law § 165(9)(B))",
+    "quote": "THE STATE AND ANY GOVERNMENTAL"
+   }
+  },
+  "agora_applications": [
+   "Government: other applications/unspecified"
+  ],
+  "agora_harms": [
+   "Discrimination",
+   "Violation of civil or human rights, including privacy"
+  ],
+  "agora_incentives": [
+   "Civil liability"
+  ],
+  "agora_risk_factors": [
+   "Bias",
+   "Privacy",
+   "Transparency",
+   "Interpretability and explainability"
+  ],
+  "agora_strategies": [
+   "Disclosure",
+   "Disclosure: About evaluation",
+   "Disclosure: In deployment",
+   "Evaluation: Impact assessment",
+   "Government study or report"
+  ]
+ },
+ "summary": {
+  "short": "Amends New York State Finance Law § 165 and § 8 so that the State, its agencies, political subdivisions and public benefit corporations must commission neutral impact assessments and publish use policies before acquiring or using automated decision systems, give notice, provide explanations and human review, and face payment bars and a private right of action. Covers only Sections 7 to 9 of the bill.",
+  "long": "Sections 7 to 9 of the bill add subdivisions 9 and 10 to State Finance Law § 165 and subdivisions 21 to 25 to State Finance Law § 8. The rules apply to the State and any governmental agency, political subdivision or public benefit corporation of the State that purchases, obtains, uses or accesses information from an automated decision system (ADS). Before doing so, such bodies must engage a neutral third party to conduct an ADS impact assessment and publish it; existing systems are covered within one year of the subdivision's effective date and every two years thereafter, and new systems before acquisition. Use policies must be published at least ninety days before acquisition or deployment of new systems and within 180 days for existing ones. Changes require an addendum, and certain acquisitions or new uses require approval by a city or county council or the state legislature after a public hearing. The Committee on Open Government conducts annual audits; the Office of Information Technology Services must complete a statistical impact study within two years. Bodies must give plain-language notice when an ADS affects decisions, be able to explain decisions, and develop a human review process. Individuals may sue, and the court must award injunctive relief, actual damages or ten thousand dollars per violation (whichever is greater), fees and costs. Section 8 bars payment for such systems unless they use only open source software and the impact assessment and use policy requirements were met, where contracts impair these duties, where they discriminate on enumerated protected factors, or where they make final decisions without human intervention affecting legal rights or deploy or trigger a weapon. The effective date is referenced but not stated in the excerpt."
+ },
+ "relations": [
+  {
+   "relation": "amends",
+   "target_text": "New York State Finance Law § 165",
+   "note": "Adds new subdivisions 9 and 10 to section 165 (automated decision system impact assessments; use policies; notice and human review).",
+   "evidence": {
+    "provision": "§ 7",
+    "quote": "Section 165 of the state finance law is amended by adding two new"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "New York State Finance Law § 8",
+   "note": "Adds subdivision 21 (§ 8) and subdivisions 22 to 25 (§ 9), which restrict payments for automated decision systems.",
+   "evidence": {
+    "provision": "§ 8; § 9",
+    "quote": "Section 8 of the state finance law is amended"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "New York Executive Law § 296",
+   "note": "Protected classes under Executive Law § 296 are used in the definitions in § 7 (subd. 9 and 10) and as a ground for the payment bar in § 9 (subd. 24).",
+   "evidence": {
+    "provision": "§ 7 (state finance law § 165, subd. 9 A(II))",
+    "quote": "SECTION TWO HUNDRED NINETY-SIX OF THE EXECUTIVE LAW"
+   }
+  }
+ ],
+ "notes": "The text is an excerpt of sections 7 to 9 only. The title also names amendments to the general business law, executive law and education law, which are not in this text and are not coded. The effective date is not in the excerpt, so periods keyed to the effective date cannot be dated. Extracted text runs subdivision letters into preceding words (e.g., 'MODEL.B.'). Subdivisions 9 and 10 repeat near-identical definitions of automated decision system, harm and personal information. No enabling act or session law is stated in the text.",
+ "events": [
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "WITHIN ONE YEAR OF THE EFFECTIVE DATE OF THIS SUBDIVISION",
+   "anchor": "effective date of this subdivision",
+   "depends_on": "effective date of this subdivision (not stated in the excerpt)",
+   "applies_to": "existing automated decision systems: state and governmental agencies publish impact assessment on website",
+   "offset_value": 1,
+   "offset_unit": "years",
+   "evidence": {
+    "provision": "§ 7 (inserting State Finance Law § 165(9)(B)(I))",
+    "quote": "WITHIN ONE YEAR OF THE EFFECTIVE DATE OF THIS SUBDIVISION"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "EVERY TWO YEARS THEREAFTER",
+   "anchor": "initial impact assessment deadlines in State Finance Law § 165(9)(B)(I) and (II)",
+   "applies_to": "impact assessments of existing and new automated decision systems",
+   "offset_value": 2,
+   "offset_unit": "years",
+   "evidence": {
+    "provision": "§ 7 (inserting State Finance Law § 165(9)(B)(I))",
+    "quote": "EVERY TWO YEARS THEREAFTER"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "PRIOR TO ACQUISITION",
+   "anchor": "acquisition of a new automated decision system",
+   "depends_on": "acquisition of a new automated decision system",
+   "applies_to": "new automated decision systems: state and governmental agencies publish impact assessment before acquisition",
+   "evidence": {
+    "provision": "§ 7 (inserting State Finance Law § 165(9)(B)(II))",
+    "quote": "OF NEW AUTOMATED DECISION SYSTEMS PRIOR TO ACQUISITION"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "THE PUBLIC SHALL HAVE FORTY-FIVE DAYS TO SUBMIT COMMENTS, UPON PUBLICATION OF AN AUTOMATED DECISION SYSTEM IMPACT ASSESSMENT",
+   "anchor": "publication of an automated decision system impact assessment",
+   "depends_on": "publication of an automated decision system impact assessment",
+   "applies_to": "public comment period on published automated decision system impact assessments",
+   "offset_value": 45,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "§ 7 (inserting State Finance Law § 165(9)(C))",
+    "quote": "UPON PUBLICATION OF AN AUTOMATED DECISION SYSTEM IMPACT ASSESSMENT"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "WITHIN FORTY-FIVE DAYS AFTER THE CLOSE OF THE PUBLIC COMMENT PERIOD",
+   "anchor": "close of the public comment period on an impact assessment",
+   "depends_on": "close of the public comment period on an impact assessment",
+   "applies_to": "state and governmental agencies: post responses to public comments on impact assessments",
+   "offset_value": 45,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "§ 7 (inserting State Finance Law § 165(9)(C))",
+    "quote": "WITHIN FORTY-FIVE DAYS AFTER THE CLOSE"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "WITHIN TWO YEARS OF THE EFFECTIVE DATE OF THIS SUBDIVISION",
+   "anchor": "effective date of this subdivision",
+   "depends_on": "effective date of this subdivision (not stated in the excerpt)",
+   "applies_to": "Office of Information Technology Services: complete and publish comprehensive study of statistical impacts of automated decision systems",
+   "offset_value": 2,
+   "offset_unit": "years",
+   "evidence": {
+    "provision": "§ 7 (inserting State Finance Law § 165(9)(F))",
+    "quote": "OF THE EFFECTIVE DATE OF THIS SUBDIVISION, THE"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "WITHIN ONE HUNDRED EIGHTY DAYS OF THE EFFECTIVE DATE OF THIS SUBDIVISION",
+   "anchor": "effective date of this subdivision",
+   "depends_on": "effective date of this subdivision (not stated in the excerpt)",
+   "applies_to": "existing automated decision systems: state and governmental agencies publish automated decision system use policy",
+   "offset_value": 180,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "§ 7 (inserting State Finance Law § 165(10)(B))",
+    "quote": "WITHIN ONE HUNDRED EIGHTY DAYS OF THE"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "AT LEAST NINETY DAYS PRIOR TO THE PURCHASE, OBTAINING, USE, ACQUISITION, OR DEPLOYMENT OF NEW AUTOMATED DECISION SYSTEMS",
+   "anchor": "purchase, obtaining, use, acquisition or deployment of new automated decision systems",
+   "depends_on": "purchase, obtaining, use, acquisition or deployment of new automated decision systems",
+   "applies_to": "new automated decision systems: state and governmental agencies publish use policy in advance",
+   "offset_value": -90,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "§ 7 (inserting State Finance Law § 165(10)(B))",
+    "quote": "PRIOR TO THE PURCHASE, OBTAINING, USE, ACQUISITION, OR DEPLOY"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "UPON PUBLICATION OF, OR ADDENDUM TO, ANY PROPOSED AUTOMATED DECISION SYSTEM POLICY, THE PUBLIC SHALL HAVE FORTY-FIVE DAYS TO SUBMIT COMMENTS",
+   "anchor": "publication of, or addendum to, a proposed automated decision system use policy",
+   "depends_on": "publication of, or addendum to, a proposed automated decision system use policy",
+   "applies_to": "public comment period on proposed automated decision system use policies",
+   "offset_value": 45,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "§ 7 (inserting State Finance Law § 165(10)(B)(II))",
+    "quote": "UPON PUBLICATION OF, OR ADDENDUM TO, ANY PROPOSED"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "NO LATER THAN FORTY-FIVE DAYS AFTER THE CLOSE OF THE PUBLIC COMMENT PERIOD",
+   "anchor": "close of the public comment period on a proposed use policy",
+   "depends_on": "close of the public comment period on a proposed use policy",
+   "applies_to": "state and governmental agencies: post final automated decision system use policy",
+   "offset_value": 45,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "§ 7 (inserting State Finance Law § 165(10)(B)(III))",
+    "quote": "AFTER THE CLOSE OF THE PUBLIC COMMENT"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "annually",
+   "applies_to": "state and governmental agencies using automated decision systems that assign rights, benefits, opportunities or services: publish metrics on human review requests and outcomes",
+   "offset_value": 1,
+   "offset_unit": "years",
+   "evidence": {
+    "provision": "§ 7 (inserting State Finance Law § 165(10)(H))",
+    "quote": "ANNUALLY PUBLISH PUBLICLY ON ITS WEBSITE METRICS"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "annual audits",
+   "applies_to": "Committee on Open Government: annual audits of automated decision system use policies",
+   "offset_value": 1,
+   "offset_unit": "years",
+   "evidence": {
+    "provision": "§ 7 (inserting State Finance Law § 165(10)(D))",
+    "quote": "SHALL CONDUCT ANNUAL AUDITS OF"
+   }
+  }
+ ],
+ "section_status": {
+  "thresholds": {
+   "status": "not_found",
+   "note": "No numeric cutoff in the text changes scope, eligibility, exemption, obligation tier, prohibition, benefit or price tier. Day and year periods (ninety days, one hundred eighty days, forty-five days, one year, two years) are procedural time limits and are coded as events. The ten thousand dollar minimum damages per violation in section 165(10)(F)(IV)(B) is a civil remedy amount and is not coded as a threshold."
+  }
+ },
+ "thresholds": []
+}

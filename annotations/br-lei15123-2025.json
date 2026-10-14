@@ -1,0 +1,113 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "br-lei15123-2025",
+ "tier": "B",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "light, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-interim-20261014"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (connectors/fetch_texts.py)",
+  "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15123.htm",
+  "retrieved": "2026-10-13",
+  "version": "as fetched",
+  "language": "pt",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "synthetic_media_deepfakes"
+  ],
+  "primary_domain": "synthetic_media_deepfakes",
+  "mechanisms": [
+   "prohibition_ban"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "general_public"
+  ],
+  "decision_margins": [],
+  "territorial_scope": {
+   "types": [
+    "national"
+   ],
+   "description": "Federal statute that amends the national Penal Code.",
+   "evidence": {
+    "provision": "Art. 1º",
+    "quote": "Esta Lei altera o art. 147-B do Decreto-Lei nº"
+   }
+  },
+  "agora_applications": [
+   "Government: judicial and law enforcement"
+  ],
+  "agora_incentives": [
+   "Criminal liability"
+  ]
+ },
+ "summary": {
+  "short": "Amends Article 147-B of the Brazilian Penal Code to add a paragraph under which the penalty for psychological violence against women is increased by half when committed using artificial intelligence or other technology that alters the victim's image or sound. Takes effect on publication.",
+  "long": "Law No. 15.123 of 24 April 2025 amends Article 147-B of the Brazilian Penal Code, which covers psychological violence against women, by adding a single paragraph. Under the new paragraph, the penalty is increased by half where the crime is committed using artificial intelligence or any other technological resource that alters the victim's image or sound. The law creates no new offence, authority, registration, labelling or platform duty, and it does not restate the base penalty or the Code's other sanctions. Article 3 provides that the law enters into force on the date of its publication. The text notes that it does not replace the version published in the official gazette (DOU) of 25 April 2025."
+ },
+ "relations": [
+  {
+   "relation": "amends",
+   "target_text": "Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), art. 147-B",
+   "note": "Adds a parágrafo único to art. 147-B (half-penalty increase where the crime is committed with artificial intelligence or other technology that alters the victim's image or sound). The target code is not in the registry, so target_instrument_id is empty.",
+   "evidence": {
+    "provision": "Art. 2º (amending Decreto-Lei nº 2.848/1940, art. 147-B)",
+    "quote": "passa a vigorar acrescido do seguinte parágrafo único"
+   }
+  }
+ ],
+ "notes": "Short amending statute. The document reproduces only the added parágrafo único of art. 147-B; the base text is shown as an ellipsis, so the base penalty is not in this text. The text states that it does not replace the version published in the DOU of 25.4.2025, while the law is dated 24 April 2025; the entry-into-force rule in Art. 3 ('na data de sua publicação') gives no calendar date. The Art. 1 wording 'causa de aumento de pena' matches the added paragraph, which is marked '(NR)' (new wording).",
+ "events": [
+  {
+   "event": "signed",
+   "date": "2025-04-24",
+   "date_type": "absolute",
+   "date_text": "Brasília, 24 de abril de 2025",
+   "applies_to": "Lei nº 15.123/2025 (signature)",
+   "evidence": {
+    "provision": "Signature block (after Art. 3º)",
+    "quote": "Brasília, 24 de abril de 2025"
+   }
+  },
+  {
+   "event": "published",
+   "date": "2025-04-25",
+   "date_type": "absolute",
+   "date_text": "publicado no DOU de 25.4.2025",
+   "applies_to": "Lei nº 15.123/2025 (publication in the Diário Oficial da União, as noted in the document)",
+   "evidence": {
+    "provision": "Footer note (reference to DOU publication)",
+    "quote": "publicado no DOU de 25.4.2025"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2025-04-25",
+   "date_type": "relative",
+   "date_text": "na data de sua publicação",
+   "anchor": "publication of the law",
+   "applies_to": "Lei nº 15.123/2025 as a whole",
+   "offset_value": 0,
+   "offset_unit": "days",
+   "anchor_event": "published",
+   "evidence": {
+    "provision": "Art. 3º",
+    "quote": "Esta Lei entra em vigor na data de sua publicação."
+   },
+   "date_computed_from": "published 2025-04-25 (text) + 0 days"
+  }
+ ],
+ "section_status": {
+  "thresholds": {
+   "status": "not_found",
+   "note": "The only numeric element is the penalty increase in the new Art. 147-B single paragraph (\"A pena é aumentada de metade\", a one-half increase). It is a fixed sentencing modifier triggered by a qualitative condition (use of AI or another technology that alters the victim's image or sound), not a numeric cutoff that changes legal treatment, so it is not coded as a threshold. It is a candidate for the enforcement section. No other numeric cutoffs, scope limits, or thresholds appear in the text."
+  }
+ },
+ "thresholds": []
+}

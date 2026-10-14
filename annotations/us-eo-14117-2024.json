@@ -1,0 +1,756 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "us-eo-14117-2024",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (connectors/fetch_texts.py)",
+  "url": "https://www.govinfo.gov/content/pkg/FR-2024-03-01/pdf/2024-04573.pdf",
+  "retrieved": "2026-10-13",
+  "version": "as fetched",
+  "language": "en",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "data_transfer_localization",
+   "data_access_sharing",
+   "cybersecurity"
+  ],
+  "primary_domain": "data_transfer_localization",
+  "mechanisms": [
+   "prohibition_ban",
+   "licensing_permit_certification",
+   "mandate_obligation",
+   "designation_tiering",
+   "standard_setting"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "government_agency",
+   "enterprise",
+   "data_broker"
+  ],
+  "affected_roles": [
+   "consumers_users",
+   "healthcare_provider",
+   "research_institution",
+   "data_holder"
+  ],
+  "decision_margins": [
+   "firm:trade",
+   "household:data_privacy"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national",
+    "extraterritorial",
+    "targeted"
+   ],
+   "description": "Applies to U.S. persons' transactions involving property in which a foreign country or national has an interest, reaching foreign-located countries of concern and covered persons named or defined by the order and its regulations.",
+   "evidence": {
+    "provision": "Sec. 2(a)",
+    "quote": "regulations that prohibit or otherwise restrict United States persons from engaging in any acquisition, holding, use, transfer, transportation, or exportation of, or dealing in, any property in which a foreign country or national thereof has any interest"
+   }
+  },
+  "agora_strategies": [
+   "Input controls: Data circulation",
+   "Licensing, registration, and certification"
+  ]
+ },
+ "summary": {
+  "short": "Executive Order 14117 directs the Attorney General to issue regulations restricting U.S. persons' transactions that give countries of concern or covered persons access to Americans' bulk sensitive personal data or US Government-related data. DHS/CISA must publish security requirements for restricted transactions. Signed 28 February 2024.",
+  "long": "Sets national-security restrictions on access by countries of concern to Americans' bulk sensitive personal data and US Government-related data, under IEEPA and the national emergency in EO 13873. Section 2 directs the Attorney General, with DHS, to issue regulations that prohibit or restrict U.S. persons' transactions involving such data or classes of transactions posing unacceptable risk. Regulations must define terms, identify countries of concern and covered persons, create licensing, and address recordkeeping; they may not impose generalized data localization. A proposed rule is due within 180 days. DHS/CISA must publish security requirements for restricted transactions based on NIST frameworks. Evasion, conspiracy and knowingly directing prohibited transactions are also prohibited. Section 3 directs the Committee for the Assessment of Foreign Participation in the US Telecommunications Services Sector to prioritise reviews of submarine cable licences linked to countries of concern; agencies are to consider limiting federal healthcare and research assistance that enables such access; the CFPB is encouraged to address data brokers. Sections 4 to 6 require recommendations on prior transfers, reports to the President, and an assessment of other human 'omic data. Section 8 creates no enforceable rights. The order states no penalty amounts; enforcement terms are left to implementing regulations."
+ },
+ "relations": [
+  {
+   "relation": "legal_basis",
+   "target_text": "International Emergency Economic Powers Act (50 U.S.C. 1701 et seq.) (IEEPA)",
+   "note": "Cited as statutory authority for the order. Sec. 2(b) authorizes the Attorney General to employ powers granted to the President by IEEPA.",
+   "evidence": {
+    "provision": "Preamble",
+    "quote": "the International Emergency Economic Powers Act (50 U.S.C. 1701 et seq.) (IEEPA)"
+   }
+  },
+  {
+   "relation": "legal_basis",
+   "target_text": "National Emergencies Act (50 U.S.C. 1601 et seq.) (NEA)",
+   "note": "Cited as statutory authority. Sec. 2(m) authorizes reports to Congress consistent with NEA section 401(c).",
+   "evidence": {
+    "provision": "Preamble",
+    "quote": "the National Emergencies Act (50 U.S.C. 1601 et seq.) (NEA)"
+   }
+  },
+  {
+   "relation": "legal_basis",
+   "target_text": "section 301 of title 3, United States Code",
+   "note": "Cited as statutory authority for the order.",
+   "evidence": {
+    "provision": "Preamble",
+    "quote": "section 301 of title 3,"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Executive Order 13873 of May 15, 2019 (Securing the Information and Communications Technology and Services Supply Chain)",
+   "note": "The order expands the scope of the national emergency declared in EO 13873. Sec. 2(c)(vii) requires coordination with entities implementing EO 13873.",
+   "evidence": {
+    "provision": "Preamble",
+    "quote": "expand the scope of the national emergency declared in Executive Order"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Executive Order 14034 of June 9, 2021 (Protecting Americans’ Sensitive Data from Foreign Adversaries)",
+   "note": "The order states it further addresses the threat with additional measures beyond EO 14034. Sec. 2(c)(vii) requires coordination with entities implementing EO 14034.",
+   "evidence": {
+    "provision": "Preamble",
+    "quote": "further addressed with additional measures in Executive Order 14034 of June 9, 2021"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Executive Order 13694 of April 1, 2015 (Blocking the Property of Certain Persons Engaging in Significant Malicious Cyber-Enabled Activities), as amended",
+   "note": "The recitals state that aspects of the threat were addressed in EO 13694, as amended, and that additional steps are needed.",
+   "evidence": {
+    "provision": "Preamble",
+    "quote": "such as Executive Order 13694 of April 1, 2015"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Executive Order 13913 of April 4, 2020 (Establishing the Committee for the Assessment of Foreign Participation in the United States Telecommunications Services Sector)",
+   "note": "Sec. 3(a) directs the Committee to act through the section 6 process of EO 13913 and to update the Memorandum of Understanding required under section 11 of EO 13913. Sec. 2(c)(vii) requires coordination with the Committee.",
+   "evidence": {
+    "provision": "Sec. 3(a)(i)",
+    "quote": "for purposes of and in reliance on the process set forth in section 6 of Executive Order 13913"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "National Security Memorandum 2 of February 4, 2021 (Renewing the National Security Council System)",
+   "note": "Disputes among agencies during consultation may be resolved through the interagency process described in NSM 2, or any successor document.",
+   "evidence": {
+    "provision": "Sec. 8(c)",
+    "quote": "National Security Memorandum 2 of February 4, 2021"
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "Attorney General",
+   "role": "designated",
+   "function": "Issues, with public notice and comment, regulations prohibiting or restricting covered transactions (Sec. 2(a)); proposes the rule for notice and comment (Sec. 2(c)); determines countries of concern and covered persons; issues enforcement guidance on security requirements (Sec. 2(d)(ii)); reports to the President and Congress (Secs. 2(m), 5).",
+   "evidence": {
+    "provision": "Sec. 2(a)",
+    "quote": "shall issue, subject to public notice and comment, regulations that prohibit or otherwise restrict United States persons"
+   }
+  },
+  {
+   "name": "Secretary of Homeland Security (acting through the Director of the Cybersecurity and Infrastructure Security Agency)",
+   "role": "designated",
+   "function": "Proposes, seeks public comment on, and publishes security requirements addressing the unacceptable risk posed by restricted transactions (Sec. 2(d)); may promulgate rules and standards under Sec. 2(e).",
+   "evidence": {
+    "provision": "Sec. 2(d)",
+    "quote": "propose, seek public comment on, and publish security requirements that address the unacceptable risk posed by restricted transactions"
+   }
+  },
+  {
+   "name": "Cybersecurity and Infrastructure Security Agency",
+   "role": "designated",
+   "function": "Its Director, acting for the Secretary of Homeland Security, issues interpretive guidance regarding the security requirements (Sec. 2(d)(i)).",
+   "evidence": {
+    "provision": "Sec. 2(d)(i)",
+    "quote": "issue any interpretive guidance regarding the"
+   }
+  },
+  {
+   "name": "Committee for the Assessment of Foreign Participation in the United States Telecommunications Services Sector",
+   "role": "addressee",
+   "function": "Shall prioritize reviews of existing submarine cable licences involving countries of concern, issue policy guidance on license reviews, and address data-access risks in new applications and existing licenses (Sec. 3(a)(i)-(iii)).",
+   "evidence": {
+    "provision": "Sec. 3(a)",
+    "quote": "(Committee) shall, to the extent consistent"
+   }
+  },
+  {
+   "name": "Secretary of Defense",
+   "role": "addressee",
+   "function": "Shall consider steps, including regulations, guidance or orders, to prohibit or mitigate federal assistance enabling access to bulk data, and jointly publish guidance for research entities; jointly reports to the President within 1 year (Sec. 3(b)(i)-(ii)).",
+   "evidence": {
+    "provision": "Sec. 3(b)(i)",
+    "quote": "the Secretary of Veterans Affairs, and the Director of the National Science Foundation shall consider taking steps"
+   }
+  },
+  {
+   "name": "Secretary of Health and Human Services",
+   "role": "addressee",
+   "function": "Shall consider steps, including regulations, guidance or orders, to prohibit or mitigate federal assistance enabling access to bulk data, and jointly publish guidance for research entities; jointly reports to the President within 1 year (Sec. 3(b)(i)-(ii)).",
+   "evidence": {
+    "provision": "Sec. 3(b)(i)",
+    "quote": "the Secretary of Veterans Affairs, and the Director of the National Science Foundation shall consider taking steps"
+   }
+  },
+  {
+   "name": "Secretary of Veterans Affairs",
+   "role": "addressee",
+   "function": "Shall consider steps, including regulations, guidance or orders, to prohibit or mitigate federal assistance enabling access to bulk data, and jointly publish guidance for research entities; jointly reports to the President within 1 year (Sec. 3(b)(i)-(ii)).",
+   "evidence": {
+    "provision": "Sec. 3(b)(i)",
+    "quote": "the Secretary of Veterans Affairs, and the Director of the National Science Foundation shall consider taking steps"
+   }
+  },
+  {
+   "name": "Director of the National Science Foundation",
+   "role": "addressee",
+   "function": "Shall consider steps, including regulations, guidance or orders, to prohibit or mitigate federal assistance enabling access to bulk data, and jointly publish guidance for research entities; jointly reports to the President within 1 year (Sec. 3(b)(i)-(ii)).",
+   "evidence": {
+    "provision": "Sec. 3(b)(i)",
+    "quote": "the Secretary of Veterans Affairs, and the Director of the National Science Foundation shall consider taking steps"
+   }
+  },
+  {
+   "name": "Director of the Consumer Financial Protection Bureau",
+   "role": "addressee",
+   "function": "Encouraged to consider steps, consistent with existing authority, to address data-brokerage risks and enhance compliance with consumer protection law (Sec. 3(c)).",
+   "evidence": {
+    "provision": "Sec. 3(c)",
+    "quote": "is encouraged to consider taking steps, consistent with CFPB’s existing legal authorities"
+   }
+  },
+  {
+   "name": "Assistant to the President for National Security Affairs (APNSA)",
+   "role": "designated",
+   "function": "Reviews the recommendations on prior transfers of bulk data and consults on implementation (Sec. 4); receives the Attorney General report (Sec. 5) and the joint risk report (Sec. 6).",
+   "evidence": {
+    "provision": "Sec. 4",
+    "quote": "the APNSA shall review these recommendations"
+   }
+  },
+  {
+   "name": "Director of National Intelligence",
+   "role": "addressee",
+   "function": "With the Attorney General and the Secretary of Homeland Security, recommends to the APNSA actions to detect, assess and mitigate risks from prior transfers of bulk data (Sec. 4).",
+   "evidence": {
+    "provision": "Sec. 4",
+    "quote": "and the Director of National Intelligence, in consultation with the heads of relevant agencies, shall recommend to the APNSA"
+   }
+  },
+  {
+   "name": "Director of the Office of Science and Technology Policy",
+   "role": "addressee",
+   "function": "Jointly submits to the President, through the APNSA, a report assessing risks and benefits of regulating human ’omic data other than genomic data (Sec. 6).",
+   "evidence": {
+    "provision": "Sec. 6",
+    "quote": "the Director of the Office of Science and Technology Policy, and the Director of the Office of Pandemic"
+   }
+  }
+ ],
+ "notes": "Operative provisions largely delegate key terms to later Attorney General regulations: the bulk threshold (Sec. 7(b)), countries of concern (Sec. 7(c)), covered personal identifiers (Sec. 7(e)), human ’omic data (Sec. 7(i)) and the prohibited and restricted transaction classes (Sec. 2(a)-(c)). No numeric threshold, penalty amount or effective date is stated in this text. Sec. 2(g)(v) excludes non-genomic ’omic data pending the Sec. 6 report. Timing in Secs. 4 and 5 runs from the effective date of regulations under Sec. 2(c), which the text does not date. Sec. 8(e) states the order creates no enforceable right. Entities listed are those with operative duties; consultation-only bodies (e.g., Treasury, Commerce, FBI) are omitted. Sec. 1 and Sec. 2(g)(iii) disclaim generalized data localization. Federal Register print artifacts (header lines, 'ddrumheller' tags, 'BIDEN.EPS' graphic tag) are not coded.",
+ "events": [
+  {
+   "event": "signed",
+   "date": "2024-02-28",
+   "date_type": "absolute",
+   "date_text": "February 28, 2024.",
+   "applies_to": "Executive Order as a whole",
+   "evidence": {
+    "provision": "Signature block",
+    "quote": "February 28, 2024."
+   }
+  },
+  {
+   "event": "published",
+   "date": "2024-03-01",
+   "date_type": "absolute",
+   "date_text": "Friday, March 1, 2024",
+   "applies_to": "Executive Order as a whole (Federal Register, Vol. 89, No. 42)",
+   "evidence": {
+    "provision": "Federal Register header",
+    "quote": "Friday, March 1, 2024"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2024-08-26",
+   "date_type": "relative",
+   "date_text": "Within 180 days of the date of this order",
+   "anchor": "date of this order",
+   "applies_to": "Attorney General, in coordination with the Secretary of Homeland Security: publish proposed rule under Sec. 2(a) for notice and comment",
+   "offset_value": 180,
+   "offset_unit": "days",
+   "anchor_event": "signed",
+   "evidence": {
+    "provision": "Sec. 2(c)",
+    "quote": "Within 180 days of the date of this order, the Attorney General,"
+   },
+   "date_computed_from": "signed 2024-02-28 (text) + 180 days"
+  },
+  {
+   "event": "application",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "The prohibitions promulgated pursuant to this section apply except to the extent provided by law",
+   "depends_on": "effective date of the regulations issued pursuant to section 2 of this order",
+   "applies_to": "Prohibitions promulgated under Sec. 2 (applies notwithstanding contracts or licences entered into before the regulations' effective date)",
+   "evidence": {
+    "provision": "Sec. 2(h)",
+    "quote": "The prohibitions promulgated pursuant to this section apply"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2025-02-28",
+   "date_type": "relative",
+   "date_text": "Within 1 year of the date of this order",
+   "anchor": "date of this order",
+   "applies_to": "Secretary of Defense, Secretary of Health and Human Services, Secretary of Veterans Affairs and Director of the National Science Foundation: jointly submit progress report to the President through the APNSA",
+   "offset_value": 1,
+   "offset_unit": "years",
+   "anchor_event": "signed",
+   "evidence": {
+    "provision": "Sec. 3(b)(ii)",
+    "quote": "Within 1 year of the date of this order, the Secretary of Defense"
+   },
+   "date_computed_from": "signed 2024-02-28 (text) + 1 years"
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "Within 120 days of the effective date of the regulations issued pursuant to section 2(c) of this order",
+   "depends_on": "effective date of the regulations issued pursuant to section 2(c) of this order",
+   "applies_to": "Attorney General, Secretary of Homeland Security and Director of National Intelligence: recommend to the APNSA actions on prior transfers of bulk sensitive personal data",
+   "offset_value": 120,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Sec. 4",
+    "quote": "Within 120 days of the effective date of the regulations issued pursuant to section 2(c) of this order, the Attorney General"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "Within 150 days of the effective date of the regulations issued pursuant to section 2(c) of this order",
+   "depends_on": "effective date of the regulations issued pursuant to section 2(c) of this order",
+   "applies_to": "APNSA: review the Sec. 4 recommendations and consult on implementing them",
+   "offset_value": 150,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Sec. 4",
+    "quote": "Within 150 days of the effective date of the regulations issued pursuant to section 2(c) of this order, the APNSA shall review"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "Within 1 year of the effective date of the regulations issued pursuant to section 2(c) of this order",
+   "depends_on": "effective date of the regulations issued pursuant to section 2(c) of this order",
+   "applies_to": "Attorney General: submit report to the President through the APNSA on effectiveness and economic impact of measures",
+   "offset_value": 1,
+   "offset_unit": "years",
+   "evidence": {
+    "provision": "Sec. 5(a)",
+    "quote": "Within 1 year of the effective date of the regulations issued pursuant to section 2(c) of this order"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2024-06-27",
+   "date_type": "relative",
+   "date_text": "Within 120 days of the date of this order",
+   "anchor": "date of this order",
+   "applies_to": "APNSA, Assistant to the President and Director of the Domestic Policy Council, Director of OSTP and Director of the Office of Pandemic Preparedness and Response Policy: submit report on risks and benefits of regulating non-genomic human 'omic data",
+   "offset_value": 120,
+   "offset_unit": "days",
+   "anchor_event": "signed",
+   "evidence": {
+    "provision": "Sec. 6",
+    "quote": "Within 120 days of the date of this order, the APNSA"
+   },
+   "date_computed_from": "signed 2024-02-28 (text) + 120 days"
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "volume",
+   "variable_text": "bulk: amount of sensitive personal data meeting or exceeding a threshold over a set period of time",
+   "operator": ">=",
+   "value": null,
+   "value_text": "meets or exceeds a threshold over a set period of time, as specified in regulations issued by the Attorney General pursuant to section 2 of this order",
+   "unit": "",
+   "measurement": "over a set period of time, as specified in regulations issued by the Attorney General",
+   "level": "other",
+   "trigger": "scope_definition",
+   "consequence": "Defines bulk for the purposes of the Attorney General's transaction regulations; bulk sensitive personal data is a scope element of the prohibited and restricted transactions under section 2",
+   "conditions": "Also requires sensitive personal data as defined in Sec. 7(l) and the other criteria in Sec. 2(a)",
+   "depends_on": "regulations issued by the Attorney General pursuant to section 2 of this order",
+   "evidence": {
+    "provision": "Sec. 7(b)",
+    "quote": "meets or exceeds a threshold over a set period of time"
+   }
+  },
+  {
+   "variable": "volume",
+   "variable_text": "thresholds and due diligence requirements for assessing whether a transaction is a prohibited transaction or a restricted transaction",
+   "operator": "=",
+   "value": null,
+   "value_text": "set by the Attorney General's proposed regulations under Sec. 2(g)(ii); no value stated in this order",
+   "unit": "",
+   "measurement": "as set in the implementing regulations",
+   "level": "other",
+   "trigger": "scope_definition",
+   "consequence": "Thresholds for entities to use in assessing whether a transaction is a prohibited transaction or a restricted transaction",
+   "conditions": "Proposed regulations must reflect consideration of the volume of bulk sensitive personal data involved in the transaction under Sec. 2(g)(i)",
+   "depends_on": "regulations issued by the Attorney General under Sec. 2(g)",
+   "evidence": {
+    "provision": "Sec. 2(g)(ii)",
+    "quote": "shall establish thresholds and due diligence requirements for entities"
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "access",
+   "defined_in": "this order",
+   "evidence": {
+    "provision": "Sec. 7(a)",
+    "quote": "The term ‘‘access’’ means logical or physical access"
+   }
+  },
+  {
+   "term": "bulk",
+   "defined_in": "this order",
+   "evidence": {
+    "provision": "Sec. 7(b)",
+    "quote": "meets or exceeds a threshold over a set period of time"
+   }
+  },
+  {
+   "term": "country of concern",
+   "defined_in": "this order",
+   "evidence": {
+    "provision": "Sec. 7(c)",
+    "quote": "means any foreign government that,"
+   }
+  },
+  {
+   "term": "covered person",
+   "defined_in": "this order",
+   "evidence": {
+    "provision": "Sec. 7(d)",
+    "quote": "means an entity owned by, controlled"
+   }
+  },
+  {
+   "term": "covered personal identifiers",
+   "defined_in": "this order",
+   "evidence": {
+    "provision": "Sec. 7(e)",
+    "quote": "specifically listed classes of personally identifiable data that are reasonably"
+   }
+  },
+  {
+   "term": "entity",
+   "defined_in": "this order",
+   "evidence": {
+    "provision": "Sec. 7(f)",
+    "quote": "The term ‘‘entity’’ means a partnership, association, trust, joint venture,"
+   }
+  },
+  {
+   "term": "foreign person",
+   "defined_in": "this order",
+   "evidence": {
+    "provision": "Sec. 7(g)",
+    "quote": "The term ‘‘foreign person’’ means any person that is not a United"
+   }
+  },
+  {
+   "term": "human genomic data",
+   "defined_in": "this order",
+   "evidence": {
+    "provision": "Sec. 7(h)",
+    "quote": "The term ‘‘human genomic data’’ refers to data representing the nucleic"
+   }
+  },
+  {
+   "term": "human ’omic data",
+   "defined_in": "this order",
+   "evidence": {
+    "provision": "Sec. 7(i)",
+    "quote": "The term ‘‘human ’omic data’’ means data generated from humans"
+   }
+  },
+  {
+   "term": "person",
+   "defined_in": "this order",
+   "evidence": {
+    "provision": "Sec. 7(j)",
+    "quote": "The term ‘‘person’’ means an individual or entity."
+   }
+  },
+  {
+   "term": "sensitive personal data",
+   "defined_in": "this order",
+   "evidence": {
+    "provision": "Sec. 7(l)",
+    "quote": "The term ‘‘sensitive personal data’’ means, to the extent consistent"
+   }
+  },
+  {
+   "term": "United States Government-related data",
+   "defined_in": "this order",
+   "evidence": {
+    "provision": "Sec. 7(m)",
+    "quote": "The term ‘‘United States Government-related data’’ means sensitive"
+   }
+  },
+  {
+   "term": "United States person",
+   "defined_in": "this order",
+   "evidence": {
+    "provision": "Sec. 7(n)",
+    "quote": "The term ‘‘United States person’’ means any United States citizen,"
+   }
+  },
+  {
+   "term": "transaction",
+   "defined_in": "this order",
+   "evidence": {
+    "provision": "Sec. 2(a)",
+    "quote": "has any interest (transaction)"
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Attorney General shall issue, subject to public notice and comment, regulations that prohibit or restrict United States persons' transactions involving bulk sensitive personal data or United States Government-related data.",
+   "evidence": {
+    "provision": "Sec. 2(a)",
+    "quote": "shall issue, subject to public notice and comment, regulations that prohibit or otherwise restrict United States persons from engaging in any acquisition, holding, use, transfer, transportation, or exportation of, or dealing in, any property"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "enterprise",
+   "modality": "shall_not",
+   "summary": "Under regulations to be issued by the Attorney General, United States persons (individuals and entities) are prohibited or restricted from specified transactions involving bulk sensitive personal data or Government-related data, as defined in those regulations.",
+   "conditional_on": "Regulations issued by the Attorney General under Sec. 2(a)",
+   "evidence": {
+    "provision": "Sec. 2(a)",
+    "quote": "regulations that prohibit or otherwise restrict United States persons from engaging in any acquisition, holding, use, transfer, transportation, or exportation of, or dealing in, any property"
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "government_agency",
+   "modality": "may",
+   "summary": "Attorney General is authorized to take actions, including rules and regulations, and to use other IEEPA powers as necessary to carry out the order.",
+   "evidence": {
+    "provision": "Sec. 2(b)",
+    "quote": "is authorized to take such actions, including the promulgation of rules and regulations, and to employ all other powers granted to the President by IEEPA"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Executive departments and agencies are directed to take all appropriate measures within their authority to implement the order.",
+   "evidence": {
+    "provision": "Sec. 2(b)",
+    "quote": "are directed to take all appropriate measures within their authority to implement the provisions of this order."
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Attorney General, with the Secretary of Homeland Security, shall publish for notice and comment a proposed rule that identifies prohibited transactions, restricted transactions, countries of concern and covered persons, licensing processes, definitions and recordkeeping and reporting, among other elements.",
+   "applies_from": "Within 180 days of the date of this order",
+   "evidence": {
+    "provision": "Sec. 2(c)",
+    "quote": "shall publish the proposed rule described in subsection (a) of this section for notice and comment."
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Secretary of Homeland Security, acting through the CISA Director, shall propose, seek comment on and publish security requirements for restricted transactions, based on NIST frameworks; CISA issues interpretive guidance and the Attorney General issues enforcement guidance on those requirements (Sec. 2(d)(i)-(ii)).",
+   "evidence": {
+    "provision": "Sec. 2(d)",
+    "quote": "propose, seek public comment on, and publish security requirements that address the unacceptable risk posed by restricted transactions"
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "government_agency",
+   "modality": "may",
+   "summary": "Secretary of Homeland Security, in coordination with the Attorney General, is authorized to promulgate rules, regulations, standards and requirements, issue interpretive guidance and use IEEPA powers to carry out Sec. 2(d).",
+   "evidence": {
+    "provision": "Sec. 2(e)",
+    "quote": "is hereby authorized to take such actions, including promulgating"
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "government_agency",
+   "modality": "may",
+   "summary": "Attorney General may propose further regulations, including additional classes of prohibited and restricted transactions, changes to countries of concern, and a mechanism to monitor compliance with security requirements.",
+   "evidence": {
+    "provision": "Sec. 2(f)",
+    "quote": "may, in addition to the rulemaking directed in subsection (c) of this section, propose one or more regulations to further implement this section"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Proposed regulations shall establish thresholds and due diligence requirements for entities, shall reflect the nature and volume of transactions, and shall not establish generalized data localization requirements; they shall not address other human 'omic data types before the Sec. 6 report.",
+   "evidence": {
+    "provision": "Sec. 2(g)",
+    "quote": "shall establish thresholds and due diligence requirements for entities to use in assessing whether a transaction is a prohibited transaction or a restricted transaction"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "enterprise",
+   "modality": "shall_not",
+   "summary": "Transactions with the purpose of evading or avoiding the prohibitions, causing or attempting a violation, and conspiracies to violate them are prohibited; Attorney General may also prohibit United States persons from knowingly directing prohibited transactions (Sec. 2(i)-(k)).",
+   "conditional_on": "Prohibitions promulgated under Sec. 2",
+   "evidence": {
+    "provision": "Sec. 2(i)",
+    "quote": "Any transaction or other activity that has the purpose of evading or avoiding, causes a violation of, or attempts to violate any of the prohibitions promulgated pursuant to this section is prohibited."
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "may",
+   "summary": "Attorney General, with the Secretary of Homeland Security, is authorized to submit recurring and final reports to Congress related to the order.",
+   "evidence": {
+    "provision": "Sec. 2(m)",
+    "quote": "is hereby authorized to submit recurring and final reports to the Congress related to this order"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Committee for the Assessment of Foreign Participation in the US Telecommunications Services Sector shall, to the extent consistent with its authority, prioritize reviews of existing submarine cable licences, issue policy guidance on license reviews, and address ongoing risks from new applications and existing licences.",
+   "conditional_on": "To the extent consistent with existing authority and applicable law",
+   "evidence": {
+    "provision": "Sec. 3(a)(i)",
+    "quote": "prioritize, for purposes of and in reliance on the process set forth in section 6 of Executive Order 13913, the initiation of reviews of existing licenses"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Secretaries of Defense, HHS, Veterans Affairs and the NSF Director shall consider steps, including regulations, guidance or orders, to prohibit or mitigate assistance enabling access by countries of concern to health and genomic data, and shall jointly develop and publish guidance for research entities.",
+   "evidence": {
+    "provision": "Sec. 3(b)(i)",
+    "quote": "shall consider taking steps, including issuing regulations, guidance, or orders, as appropriate"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Secretaries of Defense, HHS and Veterans Affairs and the NSF Director shall jointly report to the President through the APNSA on progress implementing Sec. 3(b).",
+   "applies_from": "Within 1 year of the date of this order",
+   "evidence": {
+    "provision": "Sec. 3(b)(ii)",
+    "quote": "shall jointly submit a report to the President through the Assistant to the President for National Security Affairs (APNSA)"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "encouraged",
+   "summary": "The CFPB Director is encouraged to consider steps, within existing authority, to address data broker risks and enhance compliance with federal consumer protection law.",
+   "conditional_on": "Consistent with CFPB's existing legal authorities",
+   "evidence": {
+    "provision": "Sec. 3(c)",
+    "quote": "The Director of the Consumer Financial Protection Bureau (CFPB) is encouraged to consider taking steps"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Attorney General, Secretary of Homeland Security and Director of National Intelligence shall recommend to the APNSA actions to detect, assess and mitigate national security risks from prior transfers of US persons' bulk sensitive personal data to countries of concern.",
+   "applies_from": "Within 120 days of the effective date of the regulations issued pursuant to Sec. 2(c)",
+   "conditional_on": "Regulations issued pursuant to Sec. 2(c)",
+   "evidence": {
+    "provision": "Sec. 4",
+    "quote": "shall recommend to the APNSA appropriate actions to detect, assess, and mitigate national security risks arising from prior transfers"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The APNSA shall review the Sec. 4 recommendations and, as appropriate, consult agencies on implementing them consistent with applicable law.",
+   "applies_from": "Within 150 days of the effective date of the regulations issued pursuant to Sec. 2(c)",
+   "conditional_on": "Regulations issued pursuant to Sec. 2(c)",
+   "evidence": {
+    "provision": "Sec. 4",
+    "quote": "the APNSA shall review these recommendations"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Attorney General shall submit a report to the President through the APNSA assessing the effectiveness of the measures and the economic impact of the order, to the extent practicable.",
+   "applies_from": "Within 1 year of the effective date of the regulations issued pursuant to Sec. 2(c)",
+   "conditional_on": "Regulations issued pursuant to Sec. 2(c)",
+   "evidence": {
+    "provision": "Sec. 5(a)",
+    "quote": "shall submit a report to the President through the APNSA assessing, to the extent practicable:"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "In preparing the Sec. 5(a) report, the Attorney General shall solicit and consider public comments on the economic impact of the order.",
+   "evidence": {
+    "provision": "Sec. 5(b)",
+    "quote": "the Attorney General shall solicit and consider public comments concerning the economic impact of this order"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The APNSA, OSTP Director, Domestic Policy Council and Pandemic Preparedness officials shall submit a report assessing risks and benefits of regulating transactions involving human 'omic data other than genomic data.",
+   "applies_from": "Within 120 days of the date of this order",
+   "evidence": {
+    "provision": "Sec. 6",
+    "quote": "shall submit a report to the President, through the APNSA, assessing the risks and benefits of regulating transactions"
+   }
+  }
+ ],
+ "section_status": {
+  "enforcement": {
+   "status": "not_found",
+   "note": "The order states no fine, criminal penalty, licence revocation, clawback, suspension or blocking sanction. Sec. 2(i) and 2(j) declare evasion and conspiracy prohibited, and Sec. 2(b) authorizes the Attorney General to use IEEPA powers, but no penalty amount or sanction regime is specified; enforcement is left to implementing regulations not contained in this text."
+  }
+ },
+ "enforcement": []
+}

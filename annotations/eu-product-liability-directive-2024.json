@@ -1,0 +1,772 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "eu-product-liability-directive-2024",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (connectors/fetch_texts.py)",
+  "url": "http://publications.europa.eu/resource/cellar/10bdc8d8-a54e-11ef-85f0-01aa75ed71a1.0006.03/DOC_1",
+  "retrieved": "2026-10-13",
+  "version": "as fetched",
+  "language": "en",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "consumer_protection",
+   "ai_general",
+   "platforms_competition"
+  ],
+  "primary_domain": "consumer_protection",
+  "mechanisms": [
+   "liability_rule",
+   "mandate_obligation",
+   "disclosure_transparency",
+   "registration_notification"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "government_agency",
+   "enterprise",
+   "platform_operator",
+   "consumers_users"
+  ],
+  "affected_roles": [
+   "general_public"
+  ],
+  "decision_margins": [
+   "firm:product_design_release",
+   "firm:compliance_process"
+  ],
+  "territorial_scope": {
+   "types": [
+    "supranational",
+    "national",
+    "extraterritorial"
+   ],
+   "description": "EU-wide directive implemented by Member States; also reaches importers, authorised representatives and fulfilment service providers for manufacturers established outside the Union.",
+   "evidence": {
+    "provision": "Art. 8(1), point (c)",
+    "quote": "in the case of a manufacturer of a product or a component established outside the Union"
+   }
+  },
+  "agora_harms": [
+   "Harm to health/safety",
+   "Harm to property"
+  ],
+  "agora_incentives": [
+   "Civil liability"
+  ],
+  "agora_risk_factors": [
+   "Safety",
+   "Security: Cybersecurity"
+  ],
+  "agora_strategies": [
+   "Government study or report"
+  ]
+ },
+ "summary": {
+  "short": "Replaces Council Directive 85/374/EEC with EU rules on no-fault liability for defective products, including software, for manufacturers and other economic operators. Applies to products placed on the market or put into service after 9 December 2026; Member States must transpose by that date.",
+  "long": "Replaces Council Directive 85/374/EEC with EU rules on no-fault liability for damage caused by defective products. 'Product' includes software, electricity, digital manufacturing files and raw materials (Art. 4(1)). Liable are manufacturers, manufacturers of defective components, importers, authorised representatives and fulfilment service providers (for non-EU manufacturers), and conditionally distributors and online platforms (Art. 8). Compensable damage: death or personal injury, property damage (not exclusively professional property) and corruption of non-professional data (Art. 6). Defectiveness is assessed by the safety the public is entitled to expect (Art. 7). Courts may order disclosure of evidence and presume defectiveness or causation (Arts 9-10). Defences are in Art. 11; liability is joint and several (Art. 12) and cannot be contractually excluded (Art. 15). Limitation period is three years; expiry period is 10 years, or 25 years for latent personal injury (Arts 16-17). Member States may keep or adopt development-risk derogations after notifying the Commission (Art. 18). Final judgments must be published and the Commission sets up a database (Art. 19). Member States transpose by 9 December 2026; rules apply to products placed on the market or put into service after that date (Arts 2, 22)."
+ },
+ "relations": [
+  {
+   "relation": "repeals",
+   "target_text": "Council Directive 85/374/EEC",
+   "note": "Repealed with effect from 9 December 2026; continues to apply to products placed on the market or put into service before that date. Recital 5 describes this as 'repealed and replaced'.",
+   "evidence": {
+    "provision": "Art. 21",
+    "quote": "Directive 85/374/EEC is repealed with effect from 9 December 2026."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) 2024/1689 (Artificial Intelligence Act)",
+   "note": "Recital 13 treats AI system providers within the meaning of that Regulation as developers or producers of software, i.e. as manufacturers under this Directive. Recital text only.",
+   "evidence": {
+    "provision": "Recital (13)",
+    "quote": "including AI system providers within the meaning of Regulation (EU) 2024/1689"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) 2022/2065 (Digital Services Act)",
+   "note": "Art. 8(4) extends the Art. 8(3) distributor fallback to providers of online platforms that meet the conditions of Art. 6(3) of that Regulation. Art. 4(16) defines 'online platform' by reference to Art. 3(i) of that Regulation.",
+   "evidence": {
+    "provision": "Art. 8(4)",
+    "quote": "provided that the conditions set out in Article 6(3) of Regulation (EU) 2022/2065 are fulfilled"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) 2016/679 (GDPR)",
+   "note": "Art. 2(4)(a): the Directive does not affect EU data protection law, including this Regulation. Art. 4(6) and recital 20 also distinguish data destruction from data protection breaches.",
+   "evidence": {
+    "provision": "Art. 2(4)(a)",
+    "quote": "the applicability of Union law on the protection of personal data, in particular Regulation (EU) 2016/679"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive 2002/58/EC (privacy and electronic communications)",
+   "note": "Art. 2(4)(a): the Directive does not affect EU data protection law, including this Directive.",
+   "evidence": {
+    "provision": "Art. 2(4)(a)",
+    "quote": "Directives 2002/58/EC and (EU) 2016/680"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive (EU) 2016/680 (law enforcement data processing)",
+   "note": "Art. 2(4)(a): the Directive does not affect EU data protection law, including this Directive.",
+   "evidence": {
+    "provision": "Art. 2(4)(a)",
+    "quote": "Directives 2002/58/EC and (EU) 2016/680"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive (EU) 2016/943 (trade secrets)",
+   "note": "Art. 4(17) defines 'trade secret' by reference to Art. 2(1) of this Directive. Art. 9(5) and Art. 9(4) apply trade-secret confidentiality measures in disclosure proceedings.",
+   "evidence": {
+    "provision": "Art. 4(17)",
+    "quote": "trade secret as defined in Article 2, point (1), of Directive (EU) 2016/943"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) 2022/868 (Data Governance Act)",
+   "note": "Art. 4(6) defines 'data' by reference to Art. 2(1) of this Regulation.",
+   "evidence": {
+    "provision": "Art. 4(6)",
+    "quote": "data as defined in Article 2, point (1), of Regulation (EU) 2022/868"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive 97/67/EC (postal services)",
+   "note": "Art. 4(13) excludes postal services as defined in Art. 2(1) of this Directive from the fulfilment service provider definition.",
+   "evidence": {
+    "provision": "Art. 4(13)",
+    "quote": "excluding postal services as defined in Article 2, point (1), of Directive 97/67/EC"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) 2018/644 (cross-border parcel delivery)",
+   "note": "Art. 4(13) excludes parcel delivery services as defined in Art. 2(2) of this Regulation from the fulfilment service provider definition.",
+   "evidence": {
+    "provision": "Art. 4(13)",
+    "quote": "parcel delivery services as defined in Article 2, point (2), of Regulation (EU) 2018/644"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Commission Recommendation 2003/361/EC (micro, small and medium-sized enterprises)",
+   "note": "Art. 12(2)(a) uses the enterprise size definitions in the Annex to this Recommendation to determine whether a software component manufacturer is a microenterprise or small enterprise.",
+   "evidence": {
+    "provision": "Art. 12(2)(a)",
+    "quote": "partner enterprises as defined in Article 3(2) of the Annex to Commission Recommendation 2003/361/EC"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) 2023/988 (General Product Safety Regulation)",
+   "note": "Recital 46 cites this Regulation among mandatory safety requirements whose non-compliance results in a presumption of defectiveness under Art. 10(2)(b). Recital 37 and recital 39 also refer to it. The operative Art. 10(2)(b) is worded generically.",
+   "evidence": {
+    "provision": "Recital (46)",
+    "quote": "including under Regulation (EU) 2023/988"
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "Member States",
+   "role": "addressee",
+   "function": "Addressees of the Directive; must bring into force transposing measures by 9 December 2026 and communicate main national measures to the Commission (Art. 22); must notify any measures maintained or introduced under the development risk derogation (Art. 18).",
+   "evidence": {
+    "provision": "Art. 24",
+    "quote": "This Directive is addressed to the Member States."
+   }
+  },
+  {
+   "name": "European Commission",
+   "role": "designated",
+   "function": "Sets up and maintains the publicly available database of judgments (Art. 19(2)); receives notifications and may issue non-binding opinions on proposed national development risk measures (Art. 18(4)-(5)); carries out the evaluation and reports (Art. 20).",
+   "evidence": {
+    "provision": "Art. 19(2)",
+    "quote": "The Commission shall set up and maintain an easily accessible and publicly available database"
+   }
+  }
+ ],
+ "notes": "Adopted, not yet in force: Art. 23 sets entry into force on the twentieth day after OJ publication (not coded here as an event). Scope is products placed on the market or put into service after 9 December 2026 (Art. 2(1)), consistent with recital 63 and Art. 21. Internal tension: Art. 8(5) says schemes are 'preferably not funded by public revenue', while recital 41 leaves funding to Member States; the operative wording is coded as written. The Annex correlation table is not coded. target_instrument_id is empty where the target is not in the registry. section_status entries are populated only because the schema requires them; both sections have entries.",
+ "events": [
+  {
+   "event": "passed_chamber",
+   "date": "2024-03-12",
+   "date_type": "absolute",
+   "date_text": "Position of the European Parliament of 12 March 2024",
+   "applies_to": "European Parliament, first-reading position",
+   "evidence": {
+    "provision": "Footnote (^2)",
+    "quote": "Position of the European Parliament of 12 March 2024"
+   }
+  },
+  {
+   "event": "legislative_approval",
+   "date": "2024-10-10",
+   "date_type": "absolute",
+   "date_text": "decision of the Council of 10 October 2024",
+   "applies_to": "Council decision approving the European Parliament position",
+   "evidence": {
+    "provision": "Footnote (^2)",
+    "quote": "decision of the Council of 10 October 2024"
+   }
+  },
+  {
+   "event": "signed",
+   "date": "2024-10-23",
+   "date_type": "absolute",
+   "date_text": "Done at Strasbourg, 23 October 2024.",
+   "applies_to": "Directive (EU) 2024/2853",
+   "evidence": {
+    "provision": "Signature block",
+    "quote": "Done at Strasbourg, 23 October 2024."
+   }
+  },
+  {
+   "event": "published",
+   "date": "2024-11-18",
+   "date_type": "absolute",
+   "date_text": "18.11.2024",
+   "applies_to": "Official Journal of the European Union, L series",
+   "evidence": {
+    "provision": "Front page (Official Journal issue date)",
+    "quote": "18.11.2024"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2024-12-08",
+   "date_type": "relative",
+   "date_text": "on the twentieth day following that of its publication in the Official Journal of the European Union",
+   "anchor": "publication in the Official Journal of the European Union",
+   "applies_to": "Directive (EU) 2024/2853",
+   "offset_value": 20,
+   "offset_unit": "days",
+   "anchor_event": "published",
+   "evidence": {
+    "provision": "Article 23",
+    "quote": "shall enter into force on the twentieth day following that of its publication in the Official Journal of the European Union"
+   },
+   "date_computed_from": "published 2024-11-18 (text) + 20 days"
+  },
+  {
+   "event": "application",
+   "date": "2026-12-09",
+   "date_type": "absolute",
+   "date_text": "after 9 December 2026",
+   "applies_to": "products placed on the market or put into service after 9 December 2026",
+   "evidence": {
+    "provision": "Article 2(1)",
+    "quote": "This Directive shall apply to products placed on the market or put into service after 9 December 2026."
+   }
+  },
+  {
+   "event": "repealed",
+   "date": "2026-12-09",
+   "date_type": "absolute",
+   "date_text": "repealed with effect from 9 December 2026",
+   "applies_to": "Directive 85/374/EEC (continues to apply to products placed on the market before that date)",
+   "evidence": {
+    "provision": "Article 21",
+    "quote": "Directive 85/374/EEC is repealed with effect from 9 December 2026."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2026-12-09",
+   "date_type": "absolute",
+   "date_text": "by 9 December 2026",
+   "applies_to": "Member States: laws, regulations and administrative provisions transposing this Directive",
+   "evidence": {
+    "provision": "Article 22(1)",
+    "quote": "Member States shall bring into force the laws, regulations and administrative provisions necessary to comply with this Directive by 9 December 2026."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2026-12-09",
+   "date_type": "absolute",
+   "date_text": "no later than 9 December 2026",
+   "applies_to": "Member States: notification of measures maintaining development-risk derogation",
+   "evidence": {
+    "provision": "Article 18(1), second subparagraph",
+    "quote": "shall notify the text of the measures to the Commission no later than 9 December 2026"
+   }
+  },
+  {
+   "event": "suspended",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "for six months following its notification to the Commission",
+   "depends_on": "Member State notification of proposed measure under Article 18(4)",
+   "applies_to": "proposed national measure derogating from the development risk defence",
+   "evidence": {
+    "provision": "Article 18(5)",
+    "quote": "shall hold that measure in abeyance for six months following its notification to the Commission"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "within six months of receiving a notification pursuant to paragraph 4",
+   "depends_on": "Member State notification of proposed measure under Article 18(4)",
+   "applies_to": "Commission opinion on proposed national measure",
+   "evidence": {
+    "provision": "Article 18(5)",
+    "quote": "within six months of receiving a notification pursuant to paragraph 4"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2030-12-09",
+   "date_type": "absolute",
+   "date_text": "by 9 December 2030",
+   "applies_to": "Commission: evaluation of the application of this Directive and report",
+   "evidence": {
+    "provision": "Article 20",
+    "quote": "The Commission shall by 9 December 2030, and every five years thereafter, evaluate the application of this Directive"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "every five years thereafter",
+   "depends_on": "first evaluation by 9 December 2030",
+   "applies_to": "Commission: evaluation of the application of this Directive and report",
+   "evidence": {
+    "provision": "Article 20",
+    "quote": "every five years thereafter"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "a limitation period of three years applies",
+   "depends_on": "date on which the injured person became aware, or should reasonably have become aware, of the damage, the defectiveness and the identity of the liable economic operator (Article 16(1))",
+   "applies_to": "initiation of proceedings to claim compensation under this Directive",
+   "evidence": {
+    "provision": "Article 16(1)",
+    "quote": "a limitation period of three years applies to the initiation of proceedings to claim compensation"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "within one month of receiving the request referred to in point (a)",
+   "depends_on": "injured person's request to a distributor to identify an economic operator (Article 8(3)(a))",
+   "applies_to": "distributor required to identify an economic operator established in the Union",
+   "evidence": {
+    "provision": "Article 8(3)(b)",
+    "quote": "within one month of receiving the request referred to in point (a)"
+   }
+  },
+  {
+   "event": "expiry",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "upon the expiry of a period of 10 years",
+   "depends_on": "date the defective product was placed on the market or put into service, or the date a substantially modified product was made available on the market or put into service (Article 17(1))",
+   "applies_to": "entitlement to compensation for damage caused by the defective product",
+   "evidence": {
+    "provision": "Article 17(1)",
+    "quote": "upon the expiry of a period of 10 years"
+   }
+  },
+  {
+   "event": "expiry",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "upon the expiry of a period of 25 years",
+   "depends_on": "latency of a personal injury, where proceedings could not be initiated within 10 years (Article 17(2))",
+   "applies_to": "entitlement to compensation for personal injury with latency",
+   "evidence": {
+    "provision": "Article 17(2)",
+    "quote": "upon the expiry of a period of 25 years"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "other",
+   "variable_text": "number of listed services offered by a fulfilment service provider",
+   "operator": ">=",
+   "value": 2,
+   "value_text": "at least two of the following services",
+   "unit": "services",
+   "level": "entity",
+   "trigger": "scope_definition",
+   "consequence": "Qualifies the person as a fulfilment service provider, which is liable under Article 8(1)(c)(iii) where no importer or authorised representative is established in the Union.",
+   "conditions": "Offered in the course of a commercial activity, without ownership of the product.",
+   "evidence": {
+    "provision": "Article 4, point (13)",
+    "quote": "at least two of the following services"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "microenterprise or small enterprise (size class)",
+   "operator": "=",
+   "value": null,
+   "value_text": "a microenterprise as defined in Article 2(3) of that Annex or a small enterprise as defined in Article 2(2) of that Annex",
+   "unit": "",
+   "measurement": "Assessed together with all partner enterprises and linked enterprises, if any.",
+   "level": "group",
+   "trigger": "eligibility",
+   "consequence": "Where the contractual waiver under point (b) is agreed, the integrating manufacturer has no right of recourse against the software component manufacturer.",
+   "conditions": "The manufacturer that integrated the defective software component contractually agreed with the software component manufacturer to waive that right.",
+   "depends_on": "Annex to Commission Recommendation 2003/361/EC, Article 2(2) and Article 2(3)",
+   "evidence": {
+    "provision": "Article 12(2), point (a)",
+    "quote": "is a microenterprise as defined in Article 2(3) of that Annex or a small enterprise as defined in Article 2(2) of that Annex"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "expiry period for compensation claims",
+   "operator": "=",
+   "value": 10,
+   "value_text": "a period of 10 years",
+   "unit": "years",
+   "measurement": "Runs from the date the defective product was placed on the market or put into service, or from the date a substantially modified product was made available on the market or put into service again.",
+   "level": "product",
+   "trigger": "eligibility",
+   "consequence": "Injured person is no longer entitled to compensation under this Directive upon expiry, unless proceedings were initiated against a liable economic operator in the meantime.",
+   "conditions": "No proceedings initiated against an economic operator that can be held liable under Article 8 within the period.",
+   "evidence": {
+    "provision": "Article 17(1)",
+    "quote": "upon the expiry of a period of 10 years"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "expiry period for compensation claims where personal injury is latent",
+   "operator": "=",
+   "value": 25,
+   "value_text": "the expiry of a period of 25 years",
+   "unit": "years",
+   "measurement": "Runs from the same starting dates as the 10-year period in Article 17(1).",
+   "level": "product",
+   "trigger": "eligibility",
+   "consequence": "Extends the expiry period to 25 years where the injured person could not initiate proceedings within 10 years due to the latency of a personal injury.",
+   "conditions": "Latency of a personal injury prevented initiating proceedings within 10 years; no proceedings initiated against a liable economic operator in the meantime.",
+   "evidence": {
+    "provision": "Article 17(2)",
+    "quote": "upon the expiry of a period of 25 years"
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "product",
+   "defined_in": "this Directive, Article 4(1)",
+   "evidence": {
+    "provision": "Article 4, point (1)",
+    "quote": "‘product’ means all movables, even if integrated into, or inter-connected with, another movable or an immovable"
+   }
+  },
+  {
+   "term": "digital manufacturing file",
+   "defined_in": "this Directive, Article 4(2)",
+   "evidence": {
+    "provision": "Article 4, point (2)",
+    "quote": "‘digital manufacturing file’ means a digital version of, or digital template for, a movable"
+   }
+  },
+  {
+   "term": "related service",
+   "defined_in": "this Directive, Article 4(3)",
+   "evidence": {
+    "provision": "Article 4, point (3)",
+    "quote": "‘related service’ means a digital service that is integrated into, or inter-connected with, a product"
+   }
+  },
+  {
+   "term": "component",
+   "defined_in": "this Directive, Article 4(4)",
+   "evidence": {
+    "provision": "Article 4, point (4)",
+    "quote": "‘component’ means any item, whether tangible or intangible, raw material or related service"
+   }
+  },
+  {
+   "term": "data",
+   "defined_in": "Regulation (EU) 2022/868, Article 2, point (1) (by reference)",
+   "evidence": {
+    "provision": "Article 4, point (6)",
+    "quote": "‘data’ means data as defined in Article 2, point (1), of Regulation (EU) 2022/868"
+   }
+  },
+  {
+   "term": "manufacturer's control",
+   "defined_in": "this Directive, Article 4(5)",
+   "evidence": {
+    "provision": "Article 4, point (5)",
+    "quote": "‘manufacturer’s control’ means that:"
+   }
+  },
+  {
+   "term": "making available on the market",
+   "defined_in": "this Directive, Article 4(7)",
+   "evidence": {
+    "provision": "Article 4, point (7)",
+    "quote": "‘making available on the market’ means any supply of a product for distribution, consumption or use on the Union market in the course of a commercial activity"
+   }
+  },
+  {
+   "term": "placing on the market",
+   "defined_in": "this Directive, Article 4(8)",
+   "evidence": {
+    "provision": "Article 4, point (8)",
+    "quote": "‘placing on the market’ means the first making available of a product on the Union market"
+   }
+  },
+  {
+   "term": "putting into service",
+   "defined_in": "this Directive, Article 4(9)",
+   "evidence": {
+    "provision": "Article 4, point (9)",
+    "quote": "‘putting into service’ means the first use of a product in the Union in the course of a commercial activity"
+   }
+  },
+  {
+   "term": "manufacturer",
+   "defined_in": "this Directive, Article 4(10)",
+   "evidence": {
+    "provision": "Article 4, point (10)",
+    "quote": "‘manufacturer’ means any natural or legal person who:"
+   }
+  },
+  {
+   "term": "authorised representative",
+   "defined_in": "this Directive, Article 4(11)",
+   "evidence": {
+    "provision": "Article 4, point (11)",
+    "quote": "‘authorised representative’ means any natural or legal person established within the Union who has received a written mandate from a manufacturer"
+   }
+  },
+  {
+   "term": "importer",
+   "defined_in": "this Directive, Article 4(12)",
+   "evidence": {
+    "provision": "Article 4, point (12)",
+    "quote": "‘importer’ means any natural or legal person who places a product from a third country on the Union market"
+   }
+  },
+  {
+   "term": "fulfilment service provider",
+   "defined_in": "this Directive, Article 4(13)",
+   "evidence": {
+    "provision": "Article 4, point (13)",
+    "quote": "‘fulfilment service provider’ means any natural or legal person offering, in the course of a commercial activity, at least two of the following services"
+   }
+  },
+  {
+   "term": "distributor",
+   "defined_in": "this Directive, Article 4(14)",
+   "evidence": {
+    "provision": "Article 4, point (14)",
+    "quote": "‘distributor’ means any natural or legal person in the supply chain who makes a product available on the market"
+   }
+  },
+  {
+   "term": "economic operator",
+   "defined_in": "this Directive, Article 4(15)",
+   "evidence": {
+    "provision": "Article 4, point (15)",
+    "quote": "‘economic operator’ means a manufacturer of a product or component"
+   }
+  },
+  {
+   "term": "online platform",
+   "defined_in": "Regulation (EU) 2022/2065, Article 3, point (i) (by reference)",
+   "evidence": {
+    "provision": "Article 4, point (16)",
+    "quote": "‘online platform’ means online platform as defined in Article 3, point (i), of Regulation (EU) 2022/2065"
+   }
+  },
+  {
+   "term": "trade secret",
+   "defined_in": "Directive (EU) 2016/943, Article 2, point (1) (by reference)",
+   "evidence": {
+    "provision": "Article 4, point (17)",
+    "quote": "‘trade secret’ means trade secret as defined in Article 2, point (1), of Directive (EU) 2016/943"
+   }
+  },
+  {
+   "term": "substantial modification",
+   "defined_in": "this Directive, Article 4(18)",
+   "evidence": {
+    "provision": "Article 4, point (18)",
+    "quote": "‘substantial modification’ means a modification of a product after it has been placed on the market or put into service"
+   }
+  },
+  {
+   "term": "injured person",
+   "defined_in": "this Directive, Article 5(1)",
+   "evidence": {
+    "provision": "Article 5, paragraph 1",
+    "quote": "any natural person who suffers damage caused by a defective product (the ‘injured person’)"
+   }
+  },
+  {
+   "term": "defective product (defectiveness)",
+   "defined_in": "this Directive, Article 7(1)",
+   "evidence": {
+    "provision": "Article 7, paragraph 1",
+    "quote": "A product shall be considered defective where it does not provide the safety that a person is entitled to expect or that is required under Union or national law."
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "other",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "In Member State court proceedings for product damage, the defendant is required, on a reasoned request and after the claimant presents sufficient facts and evidence, to disclose relevant evidence at its disposal; disclosure must be limited to what is necessary and proportionate. Member States must ensure this (Art. 9(1) to (3)).",
+   "conditional_on": "at the request of a claimant in national court proceedings who has presented facts and evidence sufficient to support the plausibility of the claim",
+   "evidence": {
+    "provision": "Art. 9(1)",
+    "quote": "the defendant is required to disclose relevant evidence that is at the defendant’s disposal"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "government_agency",
+   "modality": "shall_not",
+   "summary": "Member States shall not maintain or introduce national provisions diverging from this Directive, including more or less stringent provisions, unless the Directive otherwise provides.",
+   "conditional_on": "unless otherwise provided for in this Directive",
+   "evidence": {
+    "provision": "Art. 3",
+    "quote": "Member States shall not maintain or introduce, in their national law, provisions diverging from those laid down in this Directive"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States that maintain existing measures under the development risk defence derogation must notify the text of those measures to the Commission, and the Commission informs the other Member States (Art. 18(1), second subparagraph).",
+   "applies_from": "no later than 9 December 2026",
+   "conditional_on": "Member State wishes to maintain existing measures under Art. 18(1)",
+   "evidence": {
+    "provision": "Art. 18(1)",
+    "quote": "shall notify the text of the measures to the Commission no later than 9 December 2026"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Measures introduced or amended under Art. 18(2) must be limited to specific categories of products, justified by public interest objectives, and proportionate.",
+   "conditional_on": "Member State introduces or amends a development risk derogation measure under Art. 18(2)",
+   "evidence": {
+    "provision": "Art. 18(3)",
+    "quote": "The measures referred to in paragraph 2 shall be:"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "A Member State introducing or amending a development risk derogation measure must notify the proposed text to the Commission with a justification of compliance with Art. 18(3); the Commission informs other Member States.",
+   "conditional_on": "Member State wishes to introduce or amend a measure under Art. 18(2)",
+   "evidence": {
+    "provision": "Art. 18(4)",
+    "quote": "shall notify the text of the proposed measure to the Commission"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "After notification under Art. 18(4), the Member State must hold the proposed measure in abeyance for six months unless the Commission issues its opinion earlier. The Commission may issue a non-binding opinion within six months.",
+   "conditional_on": "notification of a proposed measure under Art. 18(4)",
+   "evidence": {
+    "provision": "Art. 18(5)",
+    "quote": "shall hold that measure in abeyance for six months following its notification to the Commission"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States must publish in an easily accessible electronic format final judgments delivered by national courts of appeal or the highest instance in proceedings under the Directive.",
+   "conditional_on": "final judgment delivered by a national court of appeal or of the highest instance in proceedings under this Directive",
+   "evidence": {
+    "provision": "Art. 19(1)",
+    "quote": "Member States shall publish, in an easily accessible and electronic format, any final judgment"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Commission must set up and maintain an easily accessible, publicly available database containing the judgments referred to in Art. 19(1).",
+   "evidence": {
+    "provision": "Art. 19(2)",
+    "quote": "The Commission shall set up and maintain an easily accessible and publicly available database"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Commission must evaluate the application of the Directive by 9 December 2030 and every five years thereafter, and submit a report to Parliament, the Council and the EESC, including cost-benefit information, an OECD comparison and product liability insurance availability.",
+   "applies_from": "by 9 December 2030, and every five years thereafter",
+   "evidence": {
+    "provision": "Art. 20",
+    "quote": "The Commission shall by 9 December 2030, and every five years thereafter, evaluate the application of this Directive and submit a report"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States must bring into force the laws, regulations and administrative provisions necessary to comply with the Directive, inform the Commission immediately, and include a reference to the Directive in those measures.",
+   "applies_from": "by 9 December 2026",
+   "evidence": {
+    "provision": "Art. 22(1)",
+    "quote": "Member States shall bring into force the laws, regulations and administrative provisions necessary to comply with this Directive by 9 December 2026."
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States must communicate to the Commission the text of the main national law measures they adopt in the field covered by the Directive.",
+   "conditional_on": "adoption of main measures of national law in the field covered by the Directive",
+   "evidence": {
+    "provision": "Art. 22(2)",
+    "quote": "Member States shall communicate to the Commission the text of the main measures of national law which they adopt"
+   }
+  }
+ ],
+ "section_status": {
+  "enforcement": {
+   "status": "not_applicable",
+   "note": "The directive sets civil liability for compensation of injured natural persons (Arts 5, 8, 12, 16, 17) and contains no fines, criminal penalties, licence revocation, benefit clawback, suspension or blocking, and no penalty clause requiring Member States to lay down sanctions. Liability rules are recorded under obligations and related sections, not as enforcement."
+  }
+ },
+ "enforcement": []
+}

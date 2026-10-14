@@ -1,0 +1,116 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "us-s1638-119",
+ "tier": "B",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "light, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-interim-20261014"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "AGORA plaintext (ETO, CC BY-NC 4.0), local cache",
+  "url": "https://www.congress.gov/bill/119th-congress/senate-bill/1638/text",
+  "retrieved": "2026-01-27",
+  "version": "1.33.0 (2026-09-16)",
+  "language": "en",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "ai_general",
+   "generative_ai",
+   "public_sector_ai"
+  ],
+  "primary_domain": "public_sector_ai",
+  "mechanisms": [
+   "prohibition_ban",
+   "procurement_rule",
+   "mandate_obligation"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "ai_deployer",
+   "government_agency"
+  ],
+  "affected_roles": [
+   "ai_developer"
+  ],
+  "decision_margins": [
+   "firm:input_use"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national",
+    "targeted"
+   ],
+   "description": "Applies to Federal contractors with active Federal contracts and names the DeepSeek application and High Flyer specifically.",
+   "evidence": {
+    "provision": "Sec. 2(a)",
+    "quote": "no Federal contractor with an active Federal contract may use the DeepSeek application"
+   }
+  },
+  "agora_applications": [
+   "Government: other applications/unspecified"
+  ],
+  "agora_risk_factors": [
+   "Security",
+   "Privacy"
+  ],
+  "agora_strategies": [
+   "Government study or report"
+  ]
+ },
+ "summary": {
+  "short": "Bars federal contractors with active contracts from using DeepSeek or successor applications developed or provided by High Flyer to perform those contracts, subject to a Commerce Secretary waiver. Requires a Commerce Secretary report to Congress within one year on national security threats from AI platforms linked to countries of concern.",
+  "long": "The Protection Against Foreign Adversarial Artificial Intelligence Act of 2025 is a bill in introduced form. Section 2 prohibits any Federal contractor with an active Federal contract from using the DeepSeek application, or any successor application or service developed or provided by High Flyer or any entity it owns, to fulfil or support a contract with a Federal agency. The Secretary of Commerce, in consultation with the Secretary of Defense, may waive this prohibition case by case where use is required for a national security-related objective of a contract or for research purposes. Section 3 defines 'country of concern' by reference to 'covered nation' in 10 U.S.C. 4872(f). It requires the Secretary of Commerce, within one year after enactment, to submit to specified congressional committees an unclassified report, which may include a classified annex, on national security threats from AI platforms based in or affiliated with countries of concern. The report must cover censorship laws, state-sponsored propaganda, circumvention of United States GPU export controls, and privacy and data security threats to United States user data, and may include recommendations for administrative and legislative action. The bill states no penalties or private right of action."
+ },
+ "relations": [
+  {
+   "relation": "cross_references",
+   "target_text": "section 4872(f) of title 10, United States Code",
+   "note": "Sec. 3(a) defines 'country of concern' by reference to the term 'covered nation' in that provision, which sets the scope of the Sec. 3 report. Target is not in the registry, so target_instrument_id is left empty.",
+   "evidence": {
+    "provision": "Sec. 3(a)",
+    "quote": "has the meaning given the term “covered nation” in section 4872(f) of title 10, United States Code"
+   }
+  }
+ ],
+ "notes": "Internal inconsistencies: Sec. 2 is limited to the DeepSeek application and High Flyer, while Sec. 3 uses the generic terms 'country of concern' and 'artificial intelligence platforms'. Sec. 3(c)(4)(C) refers to 'artificial intelligence applications described in subsection (b)', but subsection (b) describes 'artificial intelligence platforms'. Sec. 2 uses 'Federal contractor' and 'Federal agency' without definition. The bill contains no enforcement or penalty provision. Sec. 2(b) gives the waiver power to the Secretary of Commerce. The relations section is marked not_applicable only because the schema requires a status entry; one cross-reference is recorded above.",
+ "events": [
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "Not later than 1 year after the date of the enactment of this Act",
+   "anchor": "date of the enactment of this Act",
+   "applies_to": "Secretary of Commerce, in consultation with the Secretary of Defense: submission of a detailed report on threats to national security posed by AI platforms based in or affiliated with countries of concern, to specified congressional committees",
+   "offset_value": 1,
+   "offset_unit": "years",
+   "anchor_event": "signed",
+   "evidence": {
+    "provision": "Sec. 3(b)",
+    "quote": "Not later than 1 year after the date of the enactment of this Act"
+   }
+  },
+  {
+   "event": "application",
+   "date": null,
+   "date_type": "not_stated",
+   "date_text": "No date or start date is stated for the prohibition in subsection (a).",
+   "applies_to": "Federal contractors with an active Federal contract: prohibition on using the DeepSeek application or successor services of High Flyer for fulfilment of a contract with a Federal agency",
+   "evidence": {
+    "provision": "Sec. 2(a)",
+    "quote": "no Federal contractor with an active Federal contract may use the DeepSeek application"
+   }
+  }
+ ],
+ "section_status": {
+  "thresholds": {
+   "status": "not_found",
+   "note": "No numeric cutoff changes legal treatment in the operative provisions. The only number is the 1-year reporting deadline in Sec. 3(b), which is a procedural time limit recorded as an event, not a threshold. Sec. 2 and the Sec. 2(b) waiver contain no numeric cutoff, and the Sec. 3(a) 'covered nation' definition is by cross-reference to 10 U.S.C. 4872(f) with no number stated in this text."
+  }
+ },
+ "thresholds": []
+}

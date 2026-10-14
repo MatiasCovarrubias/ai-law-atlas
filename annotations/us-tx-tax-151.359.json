@@ -1,0 +1,409 @@
+{
+ "schema_version": "1.1",
+ "instrument_id": "us-tx-tax-151.359",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-opus-5-5 (Claude Code)",
+  "method": "manual + model (codebook worked example)",
+  "date": "2026-10-11",
+  "prompt_version": "gold (codebook worked example; no prompt version)"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "Texas Constitution and Statutes (tcss.legis.texas.gov), Tax Code chapter 151",
+  "url": "https://tcss.legis.texas.gov/resources/TX/htm/TX.151.htm",
+  "retrieved": "2026-10-11",
+  "version": "consolidated, as amended through Acts 2025, 89th Leg., Ch. 204 (eff. 2025-09-01)",
+  "language": "en",
+  "extent": "excerpt",
+  "note": "Section 151.359 only; cross-referenced sections (151.429, 151.3111, chapters 313 and 321-323) and Comptroller rules not included."
+ },
+ "summary": {
+  "short": "Exempts electricity, equipment and software used in large single-occupant Texas data centers from state sales and use tax for 10 or 15 years, if the Comptroller certifies the center and it creates 20 well-paid jobs and invests at least $200 million.",
+  "long": "Section 151.359 of the Texas Tax Code exempts from state sales and use tax the tangible personal property necessary to operate a qualifying data center: electricity, electrical and cooling systems, generators, servers, storage, network equipment, racks, software and related components. A data center must occupy at least 100,000 square feet in a single building used by a single qualifying occupant. Certification by the Comptroller requires that, on or after 1 September 2013, the occupant, owner or operator create at least 20 qualifying jobs in the county, paying at least 120% of the county average weekly wage, and invest at least $200 million over five years. The exemption runs from certification for 10 years, or 15 years if investment reaches $250 million. Office supplies, short leases, taxable services and local sales taxes are excluded, as are centers with former Chapter 313 value-limitation agreements. Registration numbers are revoked if requirements are not met, and the taxes become due with penalty and interest."
+ },
+ "classification": {
+  "domains": [
+   "compute_data_centers",
+   "energy_grid_water"
+  ],
+  "primary_domain": "compute_data_centers",
+  "mechanisms": [
+   "tax_incentive",
+   "registration_notification"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "data_center_owner",
+   "data_center_operator",
+   "data_center_occupant",
+   "government_agency"
+  ],
+  "affected_roles": [
+   "workers"
+  ],
+  "decision_margins": [
+   "firm:investment_location",
+   "firm:input_use",
+   "firm:size_organization"
+  ],
+  "territorial_scope": {
+   "types": [
+    "subnational"
+   ],
+   "description": "Data-center space located in Texas; state sales and use tax only (local sales taxes excluded).",
+   "evidence": {
+    "provision": "Sec. 151.359(a)(2)(A)",
+    "quote": "is located in this state"
+   }
+  },
+  "agora_applications": [],
+  "agora_harms": [],
+  "agora_incentives": [
+   "Subsidies"
+  ],
+  "agora_risk_factors": [],
+  "agora_strategies": [
+   "Government support"
+  ]
+ },
+ "events": [
+  {
+   "event": "entry_into_force",
+   "date": "2013-09-01",
+   "date_type": "absolute",
+   "date_text": "eff. September 1, 2013",
+   "applies_to": "Section 151.359 as added by H.B. 1223",
+   "evidence": {
+    "provision": "History note",
+    "quote": "Added by Acts 2013, 83rd Leg., R.S., Ch. 1274 (H.B. 1223), Sec. 1, eff. September 1, 2013."
+   }
+  },
+  {
+   "event": "application",
+   "date": "2013-09-01",
+   "date_type": "absolute",
+   "date_text": "on or after September 1, 2013",
+   "applies_to": "Earliest date for the qualifying lease or occupancy and for counted capital investment",
+   "evidence": {
+    "provision": "Sec. 151.359(d)",
+    "quote": "a data center may be certified by the comptroller as a qualifying data center for purposes of this section if, on or after September 1, 2013"
+   }
+  },
+  {
+   "event": "amended",
+   "date": "2017-06-01",
+   "date_type": "absolute",
+   "date_text": "eff. June 1, 2017",
+   "applies_to": "Amendment by H.B. 4038",
+   "evidence": {
+    "provision": "History note",
+    "quote": "Acts 2017, 85th Leg., R.S., Ch. 378 (H.B. 4038), Sec. 1, eff. June 1, 2017."
+   }
+  },
+  {
+   "event": "amended",
+   "date": "2025-09-01",
+   "date_type": "absolute",
+   "date_text": "eff. September 1, 2025",
+   "applies_to": "Amendment by H.B. 1620",
+   "evidence": {
+    "provision": "History note",
+    "quote": "Acts 2025, 89th Leg., R.S., Ch. 204 (H.B. 1620), Sec. 19.002(a), eff. September 1, 2025."
+   }
+  },
+  {
+   "event": "application",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "begins on the date the data center is certified by the comptroller",
+   "anchor": "certification of the data center by the Comptroller",
+   "applies_to": "Start of each center's exemption",
+   "evidence": {
+    "provision": "Sec. 151.359(f)",
+    "quote": "The exemption provided by this section begins on the date the data center is certified by the comptroller as a qualifying data center"
+   }
+  },
+  {
+   "event": "expiry",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "on the 10th anniversary of that date / on the 15th anniversary of that date",
+   "anchor": "certification date; 10 years if investment is $200M-<$250M, 15 years if $250M or more",
+   "applies_to": "End of each center's exemption",
+   "evidence": {
+    "provision": "Sec. 151.359(f)(1)-(2)",
+    "quote": "on the 10th anniversary of that date, if the qualifying occupant, qualifying owner, or qualifying operator independently or jointly makes a capital investment of at least $200 million but less than $250 million"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "floor_area",
+   "variable_text": "square feet of space in a single building",
+   "operator": ">=",
+   "value": 100000,
+   "value_text": "at least 100,000 square feet",
+   "unit": "square feet",
+   "currency": null,
+   "indexed": false,
+   "measurement": "Space in a single building or portion of a single building",
+   "level": "facility",
+   "trigger": "scope_definition",
+   "consequence": "Space qualifies as a 'data center' under the section",
+   "conditions": "Also single occupant, primarily housing servers, not mainly a telecom provider, backup power, fire suppression and security",
+   "evidence": {
+    "provision": "Sec. 151.359(a)(2)",
+    "quote": "\"Data center\" means at least 100,000 square feet of space in a single building or portion of a single building"
+   }
+  },
+  {
+   "variable": "jobs_created",
+   "variable_text": "qualifying jobs in the county",
+   "operator": ">=",
+   "value": 20,
+   "value_text": "at least 20 qualifying jobs",
+   "unit": "jobs",
+   "currency": null,
+   "indexed": false,
+   "measurement": "Created in the county of the data center; jobs moved between Texas counties excluded; may be met jointly by occupant, owner or operator",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Required for certification as a qualifying data center",
+   "evidence": {
+    "provision": "Sec. 151.359(d)(2)(A)",
+    "quote": "creates at least 20 qualifying jobs in the county in which the data center is located, not including jobs moved from one county in this state to another county in this state"
+   }
+  },
+  {
+   "variable": "wage_level",
+   "variable_text": "percent of the county average weekly wage",
+   "operator": ">=",
+   "value": 120,
+   "value_text": "at least 120 percent of the county average weekly wage",
+   "unit": "percent of county average weekly wage",
+   "currency": null,
+   "indexed": true,
+   "measurement": "County average weekly wage over the most recent four quarters, computed by the Texas Workforce Commission when the job is created",
+   "level": "person",
+   "trigger": "scope_definition",
+   "consequence": "A full-time permanent job counts as a 'qualifying job'",
+   "evidence": {
+    "provision": "Sec. 151.359(a)(5)",
+    "quote": "\"Qualifying job\" means a full-time, permanent job that pays at least 120 percent of the county average weekly wage in the county in which the job is based"
+   }
+  },
+  {
+   "variable": "job_duration",
+   "variable_text": "employment position that will exist for at least five years",
+   "operator": ">=",
+   "value": 5,
+   "value_text": "at least five years",
+   "unit": "years",
+   "currency": null,
+   "indexed": false,
+   "measurement": "From the date the job is created",
+   "level": "person",
+   "trigger": "scope_definition",
+   "consequence": "A job counts as 'permanent'",
+   "evidence": {
+    "provision": "Sec. 151.359(a)(3)",
+    "quote": "\"Permanent job\" means an employment position that will exist for at least five years after the date the job is created"
+   }
+  },
+  {
+   "variable": "capital_investment",
+   "variable_text": "capital investment in that particular data center",
+   "operator": ">=",
+   "value": 200000000,
+   "value_text": "at least $200 million",
+   "unit": "USD",
+   "currency": "USD",
+   "indexed": false,
+   "measurement": "Made or agreed on or after 2013-09-01, over five years from certification; may be met jointly",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Required for certification; also gives the 10-year exemption term",
+   "evidence": {
+    "provision": "Sec. 151.359(d)(2)(B)",
+    "quote": "of at least $200 million in that particular data center over a five-year period beginning on the date the data center is certified by the comptroller as a qualifying data center"
+   }
+  },
+  {
+   "variable": "capital_investment",
+   "variable_text": "capital investment",
+   "operator": ">=",
+   "value": 250000000,
+   "value_text": "$250 million or more",
+   "unit": "USD",
+   "currency": "USD",
+   "indexed": false,
+   "measurement": "As in (d)(2)(B)",
+   "level": "facility",
+   "trigger": "benefit_duration",
+   "consequence": "Exemption lasts 15 years instead of 10",
+   "evidence": {
+    "provision": "Sec. 151.359(f)(2)",
+    "quote": "on the 15th anniversary of that date, if the qualifying occupant, qualifying owner, or qualifying operator independently or jointly makes a capital investment of $250 million or more"
+   }
+  },
+  {
+   "variable": "lease_term",
+   "variable_text": "rented or leased for a term of one year or less",
+   "operator": "<=",
+   "value": 1,
+   "value_text": "one year or less",
+   "unit": "years",
+   "currency": null,
+   "indexed": false,
+   "measurement": "Lease or rental term of the property",
+   "level": "product",
+   "trigger": "exclusion",
+   "consequence": "Property rented or leased for one year or less is not exempt",
+   "evidence": {
+    "provision": "Sec. 151.359(c)(6)",
+    "quote": "tangible personal property that is rented or leased for a term of one year or less"
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "registration_notification",
+   "addressee": "data_center_occupant",
+   "summary": "Eligible data centers must apply to the Comptroller for certification and registration numbers, naming occupant, owner and operator and certifying the investment commitment.",
+   "applies_from": "2013-09-01",
+   "evidence": {
+    "provision": "Sec. 151.359(e)",
+    "quote": "shall apply to the comptroller for certification as a qualifying data center and for issuance of a registration number or numbers by the comptroller"
+   }
+  },
+  {
+   "type": "eligibility_condition",
+   "addressee": "data_center_operator",
+   "summary": "Anyone claiming the exemption must hold a Comptroller registration number and state it on the exemption certificate given to sellers.",
+   "applies_from": null,
+   "evidence": {
+    "provision": "Sec. 151.359(g)",
+    "quote": "Each person who is eligible to claim an exemption authorized by this section must hold a registration number issued by the comptroller"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "summary": "The Comptroller must adopt implementing rules on qualification, registration numbers, reporting and compliance.",
+   "applies_from": null,
+   "evidence": {
+    "provision": "Sec. 151.359(i)",
+    "quote": "The comptroller shall adopt rules consistent with and necessary to implement this section"
+   }
+  }
+ ],
+ "enforcement": [
+  {
+   "sanction_type": "benefit_revocation_clawback",
+   "authority": "Texas Comptroller of Public Accounts",
+   "triggered_by": "Data center does not meet the certification requirements of subsection (d)",
+   "max_penalty_text": "liable for taxes, including penalty and interest from the date of purchase",
+   "max_penalty_amount": null,
+   "currency": null,
+   "penalty_formula": "All exempted state sales and use taxes plus penalty and interest, from the date of purchase, including purchases made before revocation",
+   "penalty_reference": null,
+   "private_right_of_action": false,
+   "cure_period": null,
+   "evidence": {
+    "provision": "Sec. 151.359(h)",
+    "quote": "is liable for taxes, including penalty and interest from the date of purchase, imposed under this chapter on purchases for which the person claimed an exemption under this section"
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "Data center",
+   "evidence": {
+    "provision": "Sec. 151.359(a)(2)",
+    "quote": "\"Data center\" means at least 100,000 square feet of space in a single building or portion of a single building, which space"
+   }
+  },
+  {
+   "term": "Qualifying job",
+   "evidence": {
+    "provision": "Sec. 151.359(a)(5)",
+    "quote": "\"Qualifying job\" means a full-time, permanent job that pays at least 120 percent of the county average weekly wage"
+   }
+  },
+  {
+   "term": "Qualifying occupant",
+   "evidence": {
+    "provision": "Sec. 151.359(a)(8)",
+    "quote": "contracts with a qualifying owner or qualifying operator to place, or cause to be placed, and to use tangible personal property at the qualifying data center"
+   }
+  },
+  {
+   "term": "County average weekly wage",
+   "evidence": {
+    "provision": "Sec. 151.359(a)(1)",
+    "quote": "\"County average weekly wage\" means the average weekly wage in a county for all jobs during the most recent four quarterly periods for which data is available"
+   }
+  }
+ ],
+ "relations": [
+  {
+   "relation": "enacted_by_bill",
+   "target_instrument_id": null,
+   "target_text": "Texas H.B. 1223 (2013), Acts 2013, 83rd Leg., R.S., Ch. 1274",
+   "note": "Session law that added the section",
+   "evidence": {
+    "provision": "History note",
+    "quote": "Added by Acts 2013, 83rd Leg., R.S., Ch. 1274 (H.B. 1223), Sec. 1"
+   }
+  },
+  {
+   "relation": "amended_by",
+   "target_instrument_id": null,
+   "target_text": "Texas H.B. 4038 (2017), Acts 2017, 85th Leg., R.S., Ch. 378",
+   "note": "",
+   "evidence": {
+    "provision": "History note",
+    "quote": "Acts 2017, 85th Leg., R.S., Ch. 378 (H.B. 4038), Sec. 1, eff. June 1, 2017."
+   }
+  },
+  {
+   "relation": "amended_by",
+   "target_instrument_id": null,
+   "target_text": "Texas H.B. 1620 (2025), Acts 2025, 89th Leg., R.S., Ch. 204",
+   "note": "",
+   "evidence": {
+    "provision": "History note",
+    "quote": "Acts 2025, 89th Leg., R.S., Ch. 204 (H.B. 1620), Sec. 19.002(a), eff. September 1, 2025."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": null,
+   "target_text": "Texas Tax Code former Chapter 313, Subchapters B and C (appraised value limitation agreements)",
+   "note": "Exclusion: centers with a former Chapter 313 value-limitation agreement are ineligible",
+   "evidence": {
+    "provision": "Sec. 151.359(k)",
+    "quote": "A data center is not eligible to receive an exemption under this section if the data center is subject to an agreement limiting the appraised value of the data center's property"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": null,
+   "target_text": "Texas Tax Code Chapters 321, 322, 323 (local sales and use taxes)",
+   "note": "Exemption does not cover local sales taxes",
+   "evidence": {
+    "provision": "Sec. 151.359(j)",
+    "quote": "The exemption in this section does not apply to the taxes imposed under Chapter"
+   }
+  }
+ ],
+ "entities": [],
+ "section_status": {
+  "entities": {
+   "status": "not_applicable",
+   "note": "General rule; certified data centers are not named in the statute (the Comptroller keeps the registry)."
+  }
+ },
+ "notes": "The single-occupant requirement ((a)(2)(C), (d)(1)) excludes multi-tenant colocation facilities. Local sales taxes (chapters 321-323) remain due."
+}

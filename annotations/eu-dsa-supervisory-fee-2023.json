@@ -1,0 +1,580 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "eu-dsa-supervisory-fee-2023",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (connectors/fetch_texts.py)",
+  "url": "http://publications.europa.eu/resource/cellar/91e31a49-0694-11ee-b12e-01aa75ed71a1.0006.03/DOC_1",
+  "retrieved": "2026-10-13",
+  "version": "as fetched",
+  "language": "en",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "platforms_competition"
+  ],
+  "primary_domain": "platforms_competition",
+  "mechanisms": [
+   "tariff_price_regulation",
+   "mandate_obligation",
+   "disclosure_transparency"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "platform_operator",
+   "search_engine_operator",
+   "government_agency"
+  ],
+  "decision_margins": [
+   "firm:compliance_process"
+  ],
+  "territorial_scope": {
+   "types": [
+    "supranational",
+    "extraterritorial"
+   ],
+   "description": "Binding in all Member States as a Commission delegated regulation; the fee cap is measured on worldwide profit and accepts third-country reporting standards, so providers outside the Union may be covered.",
+   "evidence": {
+    "provision": "Art. 5(2)(c)",
+    "quote": "any acceptable third country reporting standard, where neither point (a) or (b) are used by the provider."
+   }
+  }
+ },
+ "summary": {
+  "short": "Sets the methodology for annual supervisory fees the European Commission charges providers of very large online platforms and search engines under the Digital Services Act: cost estimation, per-service basic amounts, a cap of 0.05% of worldwide profit, payment rules and reporting. Applies from the twentieth day after OJ publication.",
+  "long": "Adopted on 2 March 2023 under Article 43(4) of Regulation (EU) 2022/2065 (DSA), this Regulation sets how the Commission estimates and charges annual supervisory fees on providers of designated very large online platforms and very large online search engines. The overall annual costs estimated for year n+1 (human resources, operating expenditure and other items listed in Annex I) are recovered in year n through fees. Each designated service receives a basic amount proportionate to its average monthly active recipients (coefficient U, Annex II) and its days of designation (coefficient T). Each provider's fee is capped at 0.05% of its worldwide profit in the preceding financial year, and amounts above the cap are redistributed to providers below it. Providers submit financial statements by 31 August; the Commission communicates provisional amounts by 30 September, providers may submit observations within two weeks, and implementing decisions are adopted by 30 November with payment due by 31 December. Unpaid amounts are recovered with interest, without prejudice to DSA fines. The Commission reports annually on incurred costs and fees charged and publishes the report. Article 9 allows costs from 16 November 2022 to 31 December 2023 to be added to the first estimate."
+ },
+ "relations": [
+  {
+   "relation": "legal_basis",
+   "target_text": "Regulation (EU) 2022/2065 (Digital Services Act)",
+   "note": "Enabling act. The delegated regulation supplements it with detailed methodologies and procedures for supervisory fees; Article 43(4) is cited as the power.",
+   "evidence": {
+    "provision": "Preamble, citations",
+    "quote": "Having regard to Regulation (EU) 2022/2065 of the European Parliament and of the Council of 19 October 2022"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU, Euratom) 2018/1046 (financial rules applicable to the general budget of the Union)",
+   "note": "Budget procedure and recovery rules: Article 41(8) (draft budget estimate), Article 98 (amounts receivable) and Article 99(2) (default interest) of that Regulation are applied.",
+   "evidence": {
+    "provision": "Article 6(1)",
+    "quote": "In accordance with Article 41(8) of Regulation (EU, Euratom) 2018/1046"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EC) No 1606/2002 (application of international accounting standards)",
+   "note": "IFRS, where used by the provider, is the first reference for the worldwide profit that sets the maximum overall limit.",
+   "evidence": {
+    "provision": "Article 5(2)(a)",
+    "quote": "the International Financial Reporting Standards applicable in accordance with Regulation (EC) No 1606/2002"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive 2013/34/EU (annual financial statements)",
+   "note": "Points 17 of Annex V and 15 of Annex VI are a second reference for the worldwide profit that sets the maximum overall limit.",
+   "evidence": {
+    "provision": "Article 5(2)(b)",
+    "quote": "point 17 of Annex V or point 15 of Annex VI to Directive 2013/34/EU"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EEC, Euratom) No 1182/71 (periods, dates and time limits)",
+   "note": "Its general rules are used to calculate the four-month period before designation decisions take effect.",
+   "evidence": {
+    "provision": "Recital (5)",
+    "quote": "Regulation (EEC, Euratom) No 1182/71 of the Council"
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "European Commission",
+   "role": "designated",
+   "function": "Estimates the overall annual costs of supervision, sets the basic amount and the maximum limit per provider, adopts the yearly individual implementing decisions setting the supervisory fee, and reports on incurred costs and fees charged.",
+   "evidence": {
+    "provision": "Article 2(1)",
+    "quote": "In each year n the Commission shall estimate the overall annual costs"
+   }
+  },
+  {
+   "name": "Providers of designated services (very large online platforms and very large online search engines)",
+   "role": "addressee",
+   "function": "Liable to pay the annual supervisory fee; must submit financial statements by 31 August and may be given provisional fee determinations and observation rights.",
+   "evidence": {
+    "provision": "Article 1(2)",
+    "quote": "‘provider of designated service or services’ means any provider to whom one or more Commission decisions designating"
+   }
+  }
+ ],
+ "notes": "Only relations, entities and notes were requested; other sections are not filled. Target IDs are empty because registry IDs for the cited instruments were not supplied. The formulas in Articles 4(1), 4(3) and 4(4) and the bracket formula in Annex II are not reproduced in the text provided, so the basic-amount and residual-allocation formulas cannot be coded from it. Inconsistency: recital 7 describes the cap as 0,05 % of annual worldwide net income, while Article 5(2) uses worldwide profit in the preceding financial year. Recital 12 ends the pre-entry cost period on 1 January 2024, while Article 9(1) ends it on 31 December 2023. Entry into force is the twentieth day after OJ publication (Article 10); the publication date appears only in the header.",
+ "events": [
+  {
+   "event": "adopted",
+   "date": "2023-03-02",
+   "date_type": "absolute",
+   "date_text": "of 2 March 2023",
+   "applies_to": "Regulation (EU) 2023/1127 as a whole",
+   "evidence": {
+    "provision": "Title",
+    "quote": "of 2 March 2023"
+   }
+  },
+  {
+   "event": "signed",
+   "date": "2023-03-02",
+   "date_type": "absolute",
+   "date_text": "Done at Brussels, 2 March 2023.",
+   "applies_to": "Regulation (EU) 2023/1127 as a whole",
+   "evidence": {
+    "provision": "Signature block after Article 10",
+    "quote": "Done at Brussels, 2 March 2023."
+   }
+  },
+  {
+   "event": "published",
+   "date": "2023-06-09",
+   "date_type": "absolute",
+   "date_text": "9.6.2023",
+   "applies_to": "Regulation (EU) 2023/1127 in the Official Journal of the European Union, L 149",
+   "evidence": {
+    "provision": "Document header (Official Journal L 149/16)",
+    "quote": "9.6.2023"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2023-06-29",
+   "date_type": "relative",
+   "date_text": "This Regulation shall enter into force on the twentieth day following that of its publication in the Official Journal of the European Union.",
+   "anchor": "publication in the Official Journal of the European Union",
+   "applies_to": "Regulation (EU) 2023/1127 as a whole",
+   "offset_value": 20,
+   "offset_unit": "days",
+   "anchor_event": "published",
+   "evidence": {
+    "provision": "Article 10",
+    "quote": "shall enter into force on the twentieth day following that of its publication"
+   },
+   "date_computed_from": "published 2023-06-09 (text) + 20 days"
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2023-12-31",
+   "date_type": "absolute",
+   "date_text": "for the period from 16 November 2022 until 31 December 2023",
+   "applies_to": "costs already incurred or planned from 16 November 2022 until 31 December 2023 that may be added to the first cost estimation for 2024",
+   "evidence": {
+    "provision": "Article 9(1)",
+    "quote": "for the period from 16 November 2022 until 31 December 2023 may be added"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2024-03-31",
+   "date_type": "absolute",
+   "date_text": "by 31 March 2024",
+   "applies_to": "first report of the Commission under Article 8 covering 16 November 2022 to 31 December 2023",
+   "evidence": {
+    "provision": "Article 9(2)",
+    "quote": "shall be adopted by the Commission by 31 March 2024"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "By 31 March of each year n",
+   "applies_to": "Commission report on costs incurred and supervisory fees charged in year n-1",
+   "evidence": {
+    "provision": "Article 8(1)",
+    "quote": "By 31 March of each year n"
+   }
+  },
+  {
+   "event": "application",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "on 1 January of that year",
+   "applies_to": "designated services already subject to Section 5 of Chapter III of Regulation (EU) 2022/2065 on 1 January of year n, charged for year n",
+   "evidence": {
+    "provision": "Article 3(a)",
+    "quote": "on 1 January of that year, was already subject"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "as available on 31 August of year n",
+   "applies_to": "data on average monthly active recipients used to determine coefficient (U)",
+   "evidence": {
+    "provision": "Article 4(2)",
+    "quote": "as available on 31 August of year n"
+   }
+  },
+  {
+   "event": "application",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "shall be considered to start four months after the date of notification of the designation decision",
+   "depends_on": "notification of the designation decision pursuant to Article 33(4) of Regulation (EU) 2022/2065",
+   "applies_to": "start of the period in which a designated service is charged the supervisory fee",
+   "evidence": {
+    "provision": "Article 4(3)",
+    "quote": "shall be considered to start four months after the date of notification of the designation decision"
+   }
+  },
+  {
+   "event": "application",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "shall be considered to end four months after the notification of the termination decision",
+   "depends_on": "notification of the termination decision pursuant to Article 33(5) of Regulation (EU) 2022/2065",
+   "applies_to": "end of the period in which a designated service is charged the supervisory fee",
+   "evidence": {
+    "provision": "Article 4(3)",
+    "quote": "shall be considered to end four months after the notification of the termination decision"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "to be published at the latest by 30 June of each calendar year",
+   "applies_to": "overview of the elements accounted for in the estimation of overall annual costs, published on the Commission website",
+   "evidence": {
+    "provision": "Article 6(1)",
+    "quote": "to be published at the latest by 30 June of each calendar year"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "At the latest by 31 August of each year",
+   "applies_to": "providers submit latest financial statements and supporting documents for the maximum overall limit",
+   "evidence": {
+    "provision": "Article 6(2)",
+    "quote": "At the latest by 31 August of each year"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "At the latest by 30 September of each year",
+   "applies_to": "Commission communication of the provisional determination of the fee to each provider",
+   "evidence": {
+    "provision": "Article 6(3)",
+    "quote": "At the latest by 30 September of each year"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "within two weeks from receipt of the communication of that provisional determination",
+   "anchor": "receipt of the communication of the provisional determination under Article 6(3)",
+   "applies_to": "provider observations on the provisional determination of the fee",
+   "offset_value": 2,
+   "offset_unit": "weeks",
+   "evidence": {
+    "provision": "Article 6(3)",
+    "quote": "within two weeks from receipt of the communication of that provisional determination"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "At the latest by 30 November of each year",
+   "applies_to": "Commission adoption and notification of the implementing decision determining the individual supervisory fee",
+   "evidence": {
+    "provision": "Article 6(4)",
+    "quote": "At the latest by 30 November of each year"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "by 31 December of that year",
+   "applies_to": "payment of the supervisory fee set by the implementing decision",
+   "evidence": {
+    "provision": "Article 6(4)",
+    "quote": "set a deadline to pay the supervisory fees by 31 December of that year"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "share_of_financials",
+   "variable_text": "maximum overall limit of the supervisory fee as a share of the provider's worldwide profit in the preceding financial year",
+   "operator": "<=",
+   "value": 0.05,
+   "value_text": "shall not exceed the maximum overall limit equal to 0,05 % of its worldwide profit in the preceding financial year",
+   "unit": "%",
+   "measurement": "worldwide profit from the best available figures from the annual financial statements for the last full business year presented by the provider; consolidated group profit where the provider has consolidated accounts",
+   "level": "entity",
+   "trigger": "cap",
+   "consequence": "the overall supervisory fee charged to the provider in the year is reduced to this limit; residual amounts are reallocated to remaining providers under Art. 5(4)",
+   "conditions": "applies to the overall fee for all designated services provided by the same provider",
+   "evidence": {
+    "provision": "Art. 5(2)",
+    "quote": "shall not exceed the maximum overall limit equal to 0,05 % of its worldwide profit in the preceding financial year"
+   }
+  },
+  {
+   "variable": "users_monthly_active",
+   "variable_text": "number of average monthly active recipients of the designated service (in millions)",
+   "operator": "range",
+   "value": 95,
+   "value_max": 104.9,
+   "value_text": "95 -104,9 (coefficient U = 2)",
+   "unit": "millions of average monthly active recipients",
+   "measurement": "average monthly active recipients per data reported under Art. 24(2) DSA or other information available to the Commission, as available on 31 August of year n (Art. 4(2))",
+   "level": "service",
+   "trigger": "pricing_tier",
+   "consequence": "coefficient U of 2 applied in calculating the basic amount for the designated service",
+   "evidence": {
+    "provision": "Annex II",
+    "quote": "95 -104,9"
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "designated service",
+   "defined_in": "this Regulation",
+   "evidence": {
+    "provision": "Art. 1(1)",
+    "quote": "‘designated service’ means an intermediary service designated as a very large online platform or a very large online search engine pursuant to Article 33(4) of Regulation (EU) 2022/2065"
+   }
+  },
+  {
+   "term": "provider of designated service or services",
+   "defined_in": "this Regulation",
+   "evidence": {
+    "provision": "Art. 1(2)",
+    "quote": "‘provider of designated service or services’ means any provider to whom one or more Commission decisions designating a very large online platform or a very large online search engine pursuant to Article 33(4) of Regulation (EU) 2022/2065 is addressed"
+   }
+  },
+  {
+   "term": "basic amount",
+   "defined_in": "this Regulation",
+   "evidence": {
+    "provision": "Art. 1(3)",
+    "quote": "‘basic amount’ means the amount calculated for each designated service in accordance with Article 4 and before the application of the maximum overall limit referred to in Article 5"
+   }
+  },
+  {
+   "term": "worldwide profit",
+   "defined_in": "this Regulation",
+   "evidence": {
+    "provision": "Art. 5(2)",
+    "quote": "the worldwide profit shall be that resulting from the best available figures from the annual financial statements relating to the last full business year presented by the provider concerned"
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Commission shall estimate overall annual costs for year n+1 (Art. 2(1)); in estimating, it takes into account human resources, other expenditure, and the incurred-cost deficit or surplus from the report (Art. 2(2)-(3)).",
+   "applies_from": "In each year n",
+   "evidence": {
+    "provision": "Art. 2(1)",
+    "quote": "In each year n the Commission shall estimate the overall annual costs that are expected to be incurred"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The basic amount per designated service for year n is calculated as the share of estimated overall annual costs for year n+1, using coefficients U and T.",
+   "applies_from": "For the year n",
+   "evidence": {
+    "provision": "Art. 4(1)",
+    "quote": "the basic amount for the year n shall be calculated as the share of the overall annual costs estimated for the year n+1"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "platform_operator",
+   "also_addressees": [
+    "search_engine_operator"
+   ],
+   "modality": "shall",
+   "summary": "Each year the provider of designated service(s) pays the supervisory fee resulting from the basic amounts; residual amounts not charged under the maximum overall limit are charged to remaining providers (Art. 5(4)).",
+   "applies_from": "Each year",
+   "evidence": {
+    "provision": "Art. 5(1)",
+    "quote": "Each year, the concerned provider of designated service or services shall pay a supervisory fee"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Commission determines, for each relevant budget line, the estimated amount of external assigned revenues from supervisory fees; publishes the accompanying overview on its website by 30 June each year.",
+   "applies_from": "In the context of the establishment of the draft budget for year n+1",
+   "evidence": {
+    "provision": "Art. 6(1)",
+    "quote": "the Commission shall determine, for each relevant budget line, the estimated amount of external assigned revenues"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "platform_operator",
+   "also_addressees": [
+    "search_engine_operator"
+   ],
+   "modality": "shall",
+   "summary": "Provider shall provide the Commission its latest financial statement and supporting documents for the maximum overall limit and any information needed for the fee.",
+   "applies_from": "At the latest by 31 August of each year",
+   "evidence": {
+    "provision": "Art. 6(2)",
+    "quote": "At the latest by 31 August of each year, any provider of designated service or services subject to the supervisory fee pursuant to Article 3 shall provide to the Commission its latest financial statement"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Commission communicates to each provider the provisional determination of its supervisory fee.",
+   "applies_from": "At the latest by 30 September of each year",
+   "evidence": {
+    "provision": "Art. 6(3)",
+    "quote": "At the latest by 30 September of each year, the Commission shall communicate to each provider"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "platform_operator",
+   "also_addressees": [
+    "search_engine_operator"
+   ],
+   "modality": "shall",
+   "summary": "Provider communicates any observations on the provisional fee calculation to the Commission.",
+   "applies_from": "Within two weeks from receipt of the provisional determination",
+   "conditional_on": "Receipt of the Commission's provisional determination",
+   "evidence": {
+    "provision": "Art. 6(3)",
+    "quote": "The provider shall communicate to the Commission any observation on such calculation within two weeks from receipt"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Commission adopts and notifies to each provider an implementing decision determining the supervisory fee, setting amounts receivable and a payment deadline of 31 December of that year.",
+   "applies_from": "At the latest by 30 November of each year",
+   "evidence": {
+    "provision": "Art. 6(4)",
+    "quote": "At the latest by 30 November of each year, account taken of the observations referred to in paragraph 3, the Commission shall adopt and notify"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "platform_operator",
+   "also_addressees": [
+    "search_engine_operator"
+   ],
+   "modality": "shall",
+   "summary": "Supervisory fees are payable in euro and in accordance with the payment references in the implementing decision.",
+   "conditional_on": "Implementing decision adopted under Art. 6(4)",
+   "evidence": {
+    "provision": "Art. 7(1)",
+    "quote": "All supervisory fees shall be payable in euro"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Commission reports to Parliament and Council by 31 March each year on incurred overall annual costs and fees charged in the preceding year, with specified content (Art. 8(2)-(4)), and publishes the report on its website (Art. 8(5)).",
+   "applies_from": "By 31 March of each year n",
+   "evidence": {
+    "provision": "Art. 8(1)",
+    "quote": "By 31 March of each year n, the Commission shall report to the European Parliament and the Council"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "may",
+   "summary": "Costs already incurred or planned for the period from 16 November 2022 to 31 December 2023 may be added to the first cost estimation for 2024, unless covered by 2023 budget appropriations.",
+   "applies_from": "16 November 2022 until 31 December 2023",
+   "conditional_on": "Costs not already covered by initial appropriations for the general budget of the Union for 2023",
+   "evidence": {
+    "provision": "Art. 9(1)",
+    "quote": "Costs pursuant to Article 2(1) and (2) already incurred or planned for the period from 16 November 2022 until 31 December 2023 may be added"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Commission adopts the first report under Art. 8 covering 16 November 2022 to 31 December 2023.",
+   "applies_from": "By 31 March 2024",
+   "evidence": {
+    "provision": "Art. 9(2)",
+    "quote": "The first report pursuant to Article 8 shall be adopted by the Commission by 31 March 2024"
+   }
+  }
+ ],
+ "enforcement": [
+  {
+   "sanction_type": "administrative_fine",
+   "authority": "European Commission (fines under Art. 74 of Regulation (EU) 2022/2065, as cross-referenced in this Regulation)",
+   "triggered_by": "Not specified in this Regulation; Art. 7(2) states that payment defaults are without prejudice to these fines",
+   "max_penalty_text": "Not stated in this text; fines applicable pursuant to Article 74 of Regulation (EU) 2022/2065 (cross-reference only)",
+   "penalty_reference": "Regulation (EU) 2022/2065, Art. 74",
+   "cure_period": "not stated",
+   "evidence": {
+    "provision": "Art. 7(2)",
+    "quote": "Those payments are without prejudice to the fines and periodic penalty payments applicable pursuant to Articles 74 and 76 of Regulation (EU) 2022/2065."
+   }
+  },
+  {
+   "sanction_type": "other",
+   "authority": "European Commission (periodic penalty payments under Art. 76 of Regulation (EU) 2022/2065, as cross-referenced in this Regulation)",
+   "triggered_by": "Not specified in this Regulation; Art. 7(2) states that payment defaults are without prejudice to these periodic penalty payments",
+   "max_penalty_text": "Not stated in this text; periodic penalty payments applicable pursuant to Article 76 of Regulation (EU) 2022/2065 (cross-reference only)",
+   "penalty_reference": "Regulation (EU) 2022/2065, Art. 76",
+   "cure_period": "not stated",
+   "evidence": {
+    "provision": "Art. 7(2)",
+    "quote": "Those payments are without prejudice to the fines and periodic penalty payments applicable pursuant to Articles 74 and 76 of Regulation (EU) 2022/2065."
+   }
+  },
+  {
+   "sanction_type": "other",
+   "authority": "Not named in Art. 7(2); the implementing decision under Art. 6(4) setting payment terms is adopted by the Commission",
+   "triggered_by": "Late payment, partial payment, non-payment, or non-compliance with the payment conditions in the implementing decision under Art. 6(4)",
+   "max_penalty_text": "Recovery of the unpaid amount together with interest at the rate referred to in Article 99(2) of Regulation (EU, Euratom) 2018/1046",
+   "penalty_formula": "Interest rate per Art. 99(2) of Regulation (EU, Euratom) 2018/1046; recital (10) describes it as the European Central Bank refinancing rate increased by 3,5 %",
+   "penalty_reference": "Regulation (EU, Euratom) 2018/1046, Art. 99(2)",
+   "cure_period": "not stated",
+   "evidence": {
+    "provision": "Art. 7(2)",
+    "quote": "shall give rise to the recovery of the amount unpaid together with interest at the rate referred to in Article 99(2)"
+   }
+  }
+ ],
+ "section_status": {}
+}

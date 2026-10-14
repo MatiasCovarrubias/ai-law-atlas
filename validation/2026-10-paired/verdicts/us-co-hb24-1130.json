@@ -1,0 +1,381 @@
+{
+ "instrument_id": "us-co-hb24-1130",
+ "checker": "claude-opus-5-5 (Claude Code)",
+ "protocol": "VP-1.0",
+ "date": "2026-10-14",
+ "reference": [
+  {
+   "category": "threshold",
+   "provision": "Sec. 2 (6-1-1314(5)(b)(I)(C))",
+   "quote": "EITHER COLLECTS OR PROCESSES THE PERSONAL DATA OF ONE HUNDRED THOUSAND INDIVIDUALS OR MORE DURING A CALENDAR YEAR",
+   "value": ">= 100,000 individuals per calendar year: right-to-access duty in (5)(a) applies",
+   "match": {
+    "X": 0,
+    "Y": 0
+   }
+  },
+  {
+   "category": "threshold",
+   "provision": "Sec. 2 (6-1-1314(5)(b)(I)(C))",
+   "quote": "COLLECTS AND PROCESSES THE PERSONAL DATA OF TWENTY-FIVE THOUSAND INDIVIDUALS OR MORE AND DERIVES REVENUE FROM, OR RECEIVES A DISCOUNT ON THE PRICE OF GOODS OR SERVICES FROM, THE SALE OF PERSONAL DATA",
+   "value": ">= 25,000 individuals plus revenue/discount from sale of personal data: right-to-access duty applies",
+   "match": {
+    "X": 1,
+    "Y": 1
+   }
+  },
+  {
+   "category": "threshold",
+   "provision": "Sec. 2 (6-1-1314(5)(b)(III))",
+   "quote": "A JOINT VENTURE OR PARTNERSHIP CONSISTING OF NO MORE THAN TWO BUSINESSES THAT SHARE CONSUMERS' PERSONAL DATA WITH EACH OTHER",
+   "value": "<= 2 businesses: joint venture covered by right-to-access duty",
+   "match": {
+    "X": 3,
+    "Y": null
+   }
+  },
+  {
+   "category": "threshold",
+   "provision": "Sec. 2 (6-1-1314(6)(a)(II))",
+   "quote": "RECORD THE COMMENCEMENT AND CONCLUSION OF THE EMPLOYEE'S FULL WORK DAY, INCLUDING MEAL BREAKS AND REST BREAKS IN EXCESS OF THIRTY MINUTES",
+   "value": "> 30 minutes breaks: employer may require biometric consent as a condition of employment to record them",
+   "match": {
+    "X": 4,
+    "Y": 2
+   }
+  },
+  {
+   "category": "threshold",
+   "provision": "Sec. 4 (6-1-1304(1)(b))",
+   "quote": "CONTROLS OR PROCESSES ANY AMOUNT OF BIOMETRIC IDENTIFIERS OR BIOMETRIC DATA REGARDLESS OF THE AMOUNT OF BIOMETRIC IDENTIFIERS OR BIOMETRIC DATA CONTROLLED OR PROCESSED ANNUALLY",
+   "value": "any amount (> 0) of biometric identifiers/data: CPA applies for biometric purposes regardless of the volume thresholds",
+   "match": {
+    "X": 2,
+    "Y": 3
+   }
+  },
+  {
+   "category": "key_date",
+   "provision": "Sec. 5(1)",
+   "quote": "This act takes effect July 1, 2025",
+   "value": "2025-07-01 effective date",
+   "match": {
+    "X": 0,
+    "Y": 0
+   }
+  },
+  {
+   "category": "key_date",
+   "provision": "Sec. 5(2)",
+   "quote": "of biometric identifiers and biometric data on and after the applicable effective date of this act.",
+   "value": "application to collection/processing on and after the effective date (2025-07-01)",
+   "match": {
+    "X": 3,
+    "Y": 1
+   }
+  },
+  {
+   "category": "key_date",
+   "provision": "Sec. 5(1)",
+   "quote": "will not take effect unless approved by the people at the general election to be held in November 2024 and, in such case, will take effect July 1, 2025, or on the date of the official declaration of the vote thereon by the governor, whichever is later",
+   "value": "conditional: if a referendum petition is filed within 90 days after adjournment, effect depends on November 2024 vote; later of 2025-07-01 or declaration of the vote",
+   "match": {
+    "X": 1,
+    "Y": null
+   }
+  }
+ ],
+ "judgments": {
+  "X": {
+   "thresholds": [
+    {
+     "index": 0,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 1,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 2,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 3,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 4,
+     "verdict": "correct",
+     "note": ""
+    }
+   ],
+   "events": [
+    {
+     "index": 0,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 1,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 2,
+     "verdict": "correct",
+     "note": "referendum petition window stated in Sec. 5(1)"
+    },
+    {
+     "index": 3,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 4,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 5,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 6,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 7,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 8,
+     "verdict": "correct",
+     "note": "signature date illegible in the fetched text"
+    }
+   ],
+   "obligations": [
+    {
+     "index": 0,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 1,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 2,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 3,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 4,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 5,
+     "verdict": "duplicate",
+     "note": "granularity: (4)(c) prohibitions on the controller should be one row with (4)(b) [4] (same section/subsection, role and type)"
+    },
+    {
+     "index": 6,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 7,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 8,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 9,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 10,
+     "verdict": "duplicate",
+     "note": "granularity: (6)(b) consent permission for employer should be one row with (6)(a) [9] (same subsection, role and type)"
+    },
+    {
+     "index": 11,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 12,
+     "verdict": "correct",
+     "note": "rulemaking permission coded as delegated_power"
+    }
+   ],
+   "enforcement": []
+  },
+  "Y": {
+   "thresholds": [
+    {
+     "index": 0,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 1,
+     "verdict": "correct",
+     "note": "measurement adds \"during a calendar year\" for the 25,000 prong, which the text does not state; minor"
+    },
+    {
+     "index": 2,
+     "verdict": "correct",
+     "note": "trigger eligibility acceptable"
+    },
+    {
+     "index": 3,
+     "verdict": "correct",
+     "note": ""
+    }
+   ],
+   "events": [
+    {
+     "index": 0,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 1,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 2,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 3,
+     "verdict": "correct",
+     "note": "date_type coded conditional rather than relative (offset not given); anchor correct, treated as minor"
+    },
+    {
+     "index": 4,
+     "verdict": "correct",
+     "note": "date_type coded conditional rather than relative (offset not given); anchor correct, treated as minor"
+    },
+    {
+     "index": 5,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 6,
+     "verdict": "correct",
+     "note": "signature date illegible in the fetched text"
+    }
+   ],
+   "obligations": [
+    {
+     "index": 0,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 1,
+     "verdict": "correct",
+     "note": "deletion guidelines coded as data_minimization, separate type from the written-policy row; allowed"
+    },
+    {
+     "index": 2,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 3,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 4,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 5,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 6,
+     "verdict": "duplicate",
+     "note": "granularity: (4)(c) prohibitions on the controller should be one row with (4)(b) [5] (same section/subsection, role and type)"
+    },
+    {
+     "index": 7,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 8,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 9,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 10,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 11,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 12,
+     "verdict": "correct",
+     "note": "rulemaking permission coded as delegated_power"
+    }
+   ],
+   "enforcement": []
+  }
+ },
+ "sampling": {
+  "X": {},
+  "Y": {}
+ },
+ "classification": {
+  "X": {
+   "domains": "right",
+   "primary_domain": "right",
+   "note": "biometrics primary; data_protection, employment_labor (6-1-1314(6)) and consumer_protection all have operative provisions"
+  },
+  "Y": {
+   "domains": "right",
+   "primary_domain": "right",
+   "note": "same as X"
+  }
+ },
+ "reference_scope": "full text (new material only; restated CPA thresholds in 6-1-1304(1)(a) excluded per the amending-act rule)",
+ "notes": "No sanction regime in the text (the 6-1-1314 heading mentions remedies and civil actions but no such subsection appears); both versions mark enforcement not_found, which is correct, so no enforcement items were judged. Governor approval date is illegible in the fetched text. Granularity splits within one section, role and type are recorded as duplicate. Retention/deletion periods (24 months, 45+45 days, annual review) are coded as deadline events by both versions and are not reference items."
+}

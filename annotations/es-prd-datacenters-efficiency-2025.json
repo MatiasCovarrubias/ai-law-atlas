@@ -1,0 +1,461 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "es-prd-datacenters-efficiency-2025",
+ "tier": "B",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "light, effort high, obligations medium",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "miteco.gob.es (official), draft text attached to the public hearing (audiencia e información pública) page (Claude Code retrieval)",
+  "url": "https://www.miteco.gob.es/content/dam/miteco/es/energia/files-1/es-ES/Participacion/Documents/anexos/aeip-rd-cpds/20250807_RD-CD.pdf",
+  "retrieved": "2026-10-14",
+  "version": "Proyecto de Real Decreto por el que se regula la eficiencia energética y la sostenibilidad para los centros de datos, draft dated 2025-08-07 submitted to public hearing 8 Aug - 15 Sep 2025 (17 pp.; preamble, arts. 1-7, disposición transitoria única, two disposiciones finales, Annex I)",
+  "language": "es",
+  "extent": "full",
+  "note": "Replaces the cached MITECO consultation web page (kept as .prev.txt.bak; old raw HTML kept as cache/raw/<id>.prev.html.bak). Extracted with tools/extract_texts.py (pdftotext). The PDF's table of contents lists only arts. 1-6, but the body also has art. 7 (acceso y conexión a las redes eléctricas) and a disposición transitoria única. No later (post-hearing) version found on the consultation page."
+ },
+ "classification": {
+  "domains": [
+   "compute_data_centers",
+   "energy_grid_water"
+  ],
+  "primary_domain": "compute_data_centers",
+  "mechanisms": [
+   "mandate_obligation",
+   "disclosure_transparency",
+   "designation_tiering",
+   "licensing_permit_certification"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "data_center_operator",
+   "data_center_owner",
+   "government_agency",
+   "utility_grid_operator"
+  ],
+  "affected_roles": [
+   "general_public"
+  ],
+  "decision_margins": [
+   "firm:compliance_process",
+   "firm:entry_market_access",
+   "firm:investment_location",
+   "household:information"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national"
+   ],
+   "description": "Applies to data centres and public bodies in Spain; takes effect on publication in the Spanish Official State Gazette (BOE).",
+   "evidence": {
+    "provision": "Disposición final segunda",
+    "quote": "entrará en vigor el día siguiente al de su publicación en el «Boletín Oficial del Estado»"
+   }
+  },
+  "agora_strategies": [
+   "Disclosure",
+   "Performance requirements"
+  ]
+ },
+ "summary": {
+  "short": "Draft royal decree on data-centre energy efficiency. Operators with ≥500 kW IT power demand publish annual energy, water and employment indicators; owners above 1 MW must reuse waste heat; sites of 1 MW or more report best practices; grid access depends on compliance. Enters into force after BOE publication.",
+  "long": "Spanish draft royal decree implementing the waste-heat and reporting provisions of Directive (EU) 2023/1791 for data centres. Article 4 requires operators with IT power demand of 500 kW or more to report annually, by 15 May, the indicators under Delegated Regulation (EU) 2024/1364, plus minimisation strategies for specified indicators, employment estimates, and client and data location by country; the information is published on the ministry's website. Article 5 requires data centres above 1 MW nominal energy input to reuse waste heat, through a plan with a cost-benefit analysis (Annex I), regional assessment and municipal authorisation; a three-year voluntary period is followed by a mandatory two-year period. Article 6 requires data centres with IT demand of 1 MW or more to report how they apply EU Code of Conduct best practices; sites above 100 MW must show placement in the top 15% on specified indicators. Article 7 conditions grid access permits on compliance with Articles 4 to 6. Article 3(4) excludes facilities used exclusively for defence and civil protection. Enters into force the day after BOE publication."
+ },
+ "relations": [
+  {
+   "relation": "transposes",
+   "target_text": "Directiva (UE) 2023/1791 del Parlamento Europeo y del Consejo, de 13 de septiembre de 2023, relativa a la eficiencia energética (versión refundida)",
+   "note": "The preamble says the RD transposes Articles 12 and 26 of the Directive. Article 1 cites the Directive as the basis of the RD.",
+   "evidence": {
+    "provision": "Preámbulo, Parte II",
+    "quote": "transponer lo previsto en el artículo 12 de la Directiva (UE) 2023/1791"
+   }
+  },
+  {
+   "relation": "implements",
+   "target_text": "Ley 24/2013, de 26 de diciembre",
+   "note": "The preamble describes the RD as developing the provisions of Ley 24/2013. The act's title is not given in the text.",
+   "evidence": {
+    "provision": "Preámbulo, Parte II",
+    "quote": "supone el desarrollo de las previsiones contenidas en la Ley 24/2013, de 26 de diciembre"
+   }
+  },
+  {
+   "relation": "legal_basis",
+   "target_text": "Constitución Española, artículo 149.1.13.ª, 23.ª y 25.ª",
+   "note": "The preamble cites the constitutional distribution of competences as the basis for the RD.",
+   "evidence": {
+    "provision": "Preámbulo, Parte II",
+    "quote": "Este real decreto se adecua al orden de distribución de competencias regulado en el artículo 149.1.13.ª, 23.ª y 25.ª de la Constitución Española"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Reglamento Delegado (UE) 2024/1364 de la Comisión, de 14 de marzo de 2024 (régimen de evaluación común de la Unión para centros de datos)",
+   "note": "Article 4 requires the information in Annexes I and II of the Delegated Regulation to be reported. Article 2(2) uses its definition of data centre operator.",
+   "evidence": {
+    "provision": "Artículo 4(1)",
+    "quote": "que incluya la información indicada en el anexo I y II del Reglamento Delegado (UE) 2024/1364 de la Comisión"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Reglamento (CE) 1099/2008 del Parlamento Europeo y del Consejo, de 22 de octubre de 2008, relativo a las estadísticas sobre energía",
+   "note": "The data centre definition in Article 2(1) refers to Annex A, point 2.6.3.1.16 of this Regulation.",
+   "evidence": {
+    "provision": "Artículo 2(1)",
+    "quote": "de conformidad con lo definido en el anexo A, punto 2.6.3.1.16, del Reglamento (CE) 1099/2008"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Ley 1/2019, de 20 de febrero, de Secretos Empresariales, artículo 1 punto 1",
+   "note": "Article 2(5) defines 'secreto empresarial' by reference to this law. The term does not appear in the operative provisions reviewed.",
+   "evidence": {
+    "provision": "Artículo 2(5)",
+    "quote": "tal y como se define en la Ley 1/2019, de 20 de febrero, de Secretos Empresariales"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Ley 17/2009, de 23 de noviembre, sobre el libre acceso a las actividades de servicios y su ejercicio, artículo 3.11",
+   "note": "Article 5(11)(a) requires that restrictions on heat reuse rest on the overriding reasons of general interest defined in this law.",
+   "evidence": {
+    "provision": "Artículo 5(11)(a)",
+    "quote": "definidas en el artículo 3.11 de la Ley 17/2009, de 23 de noviembre"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Real Decreto 1183/2020, de 29 de diciembre (capítulo III; artículo VI)",
+   "note": "Article 7 makes grid access and connection permits conditional on compliance with Articles 4 to 6, in addition to Chapter III of this RD. The transitional provision refers to 'artículo VI' of the same RD.",
+   "evidence": {
+    "provision": "Artículo 7",
+    "quote": "además de cumplir con lo previsto en el capítulo III del Real Decreto 1183/2020, de 29 de diciembre"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, artículos 129.1 y 133",
+   "note": "Cited in the preamble for good-regulation principles and public consultation. No operative provision of the RD cross-refers to it.",
+   "evidence": {
+    "provision": "Preámbulo, Parte II",
+    "quote": "artículo 129.1 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Ley 50/1997, de 27 de noviembre, del Gobierno, artículo 26.2 y 26.6",
+   "note": "Cited in the preamble for the public consultation and hearing stages. No operative provision of the RD cross-refers to it.",
+   "evidence": {
+    "provision": "Preámbulo, Parte II",
+    "quote": "artículo 26.2 de la Ley 50/1997, de 27 de noviembre, del Gobierno"
+   }
+  }
+ ],
+ "notes": "Draft RD (proyecto), no adoption date. The date of the public hearing, the Council of Ministers meeting and the signature are left blank ('…'). Article 1 cites only the Directive, not the Delegated Regulation. Article 3(2) addresses promoters and owners, but Article 5(1) addresses 'centros de datos'. Article 5(2) names the 'Ministerio para la Transición Energética', while Article 5(3) and other provisions name the 'Transición Ecológica'. The transitional provision cites 'artículo VI' of RD 1183/2020, where Article 7 cites its Chapter III. Article 4(2)(c) refers to Spanish skilled-employment rules without naming them. Relations to the Directive and Ley 24/2013 are stated only in the preamble.",
+ "events": [
+  {
+   "event": "consultation",
+   "date": "2024-07-01",
+   "date_type": "absolute",
+   "date_text": "fue publicado a través de la página web del Ministerio para la Transición Ecológica y el Reto Demográfico el lunes 1 de julio de 2024",
+   "applies_to": "consulta pública previa",
+   "evidence": {
+    "provision": "Preámbulo, parte II",
+    "quote": "el lunes 1 de julio de 2024"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2024-07-19",
+   "date_type": "absolute",
+   "date_text": "el plazo para enviar las eventuales observaciones finalizó el 19 de julio de 2024",
+   "applies_to": "observaciones a la consulta pública previa",
+   "evidence": {
+    "provision": "Preámbulo, parte II",
+    "quote": "finalizó el 19 de julio de 2024"
+   }
+  },
+  {
+   "event": "consultation",
+   "date": null,
+   "date_type": "not_stated",
+   "date_text": "entre el … de … de 2025 y el … de … de 2025",
+   "applies_to": "trámite de audiencia e información pública",
+   "evidence": {
+    "provision": "Preámbulo, parte II",
+    "quote": "entre el … de … de 2025 y el … de … de 2025"
+   }
+  },
+  {
+   "event": "adopted",
+   "date": null,
+   "date_type": "not_stated",
+   "date_text": "previa deliberación del Consejo de Ministros en su reunión del día … de 2025",
+   "applies_to": "aprobación por el Consejo de Ministros",
+   "evidence": {
+    "provision": "Fórmula de aprobación (preámbulo final)",
+    "quote": "reunión del día … de 2025"
+   }
+  },
+  {
+   "event": "signed",
+   "date": null,
+   "date_type": "not_stated",
+   "date_text": "Dado en Madrid, el …",
+   "applies_to": "real decreto",
+   "evidence": {
+    "provision": "Fórmula final",
+    "quote": "Dado en Madrid, el …"
+   }
+  },
+  {
+   "event": "published",
+   "date": null,
+   "date_type": "not_stated",
+   "date_text": "publicación en el «Boletín Oficial del Estado»",
+   "applies_to": "Boletín Oficial del Estado",
+   "evidence": {
+    "provision": "Disposición final segunda",
+    "quote": "entrará en vigor el día siguiente al de su publicación en"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "entrará en vigor el día siguiente al de su publicación en el «Boletín Oficial del Estado»",
+   "anchor": "publicación en el «Boletín Oficial del Estado»",
+   "applies_to": "real decreto en su conjunto",
+   "offset_value": 1,
+   "offset_unit": "days",
+   "anchor_event": "published",
+   "evidence": {
+    "provision": "Disposición final segunda",
+    "quote": "entrará en vigor el día siguiente al de su publicación en"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "Cada año, a más tardar el día 15 de mayo",
+   "applies_to": "operadores de centros de datos con demanda de potencia de TI igual o superior a 500 kW (artículo 3, apartado 1): comunicación de información a la Dirección General de Planificación y Coordinación Energética",
+   "evidence": {
+    "provision": "Art. 4(1)",
+    "quote": "Cada año, a más tardar el día 15 de mayo"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "en un plazo de 3 meses",
+   "anchor": "entrada en vigor de este Real Decreto",
+   "applies_to": "centros de datos con permisos de acceso y conexión a las redes a la entrada en vigor: remisión de la información del artículo 4",
+   "offset_value": 3,
+   "offset_unit": "months",
+   "anchor_event": "entry_into_force",
+   "evidence": {
+    "provision": "Disposición transitoria única",
+    "quote": "en un plazo de 3 meses"
+   }
+  },
+  {
+   "event": "application",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "o se soliciten con posterioridad a la entrada en vigor de este real decreto",
+   "anchor": "entrada en vigor de este real decreto",
+   "applies_to": "permisos de acceso y conexión a las redes solicitados con posterioridad a la entrada en vigor: exigencia de acreditar lo previsto en los artículos 4, 5 y 6",
+   "offset_value": 0,
+   "offset_unit": "days",
+   "anchor_event": "entry_into_force",
+   "evidence": {
+    "provision": "Art. 7",
+    "quote": "o se soliciten con posterioridad a la entrada en vigor de este real decreto"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "Para los existentes y sin renovación sustancial: a los tres años de la entrada en vigor de esta norma",
+   "anchor": "entrada en vigor de esta norma",
+   "applies_to": "análisis de costes y beneficios para centros de datos existentes sin renovación sustancial",
+   "offset_value": 3,
+   "offset_unit": "years",
+   "anchor_event": "entry_into_force",
+   "evidence": {
+    "provision": "Art. 5(7)(a)",
+    "quote": "Para los existentes y sin renovación sustancial: a los tres años de la"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "Para todos: cada cinco años desde la realización del último análisis",
+   "applies_to": "análisis de costes y beneficios de todos los centros de datos sujetos al artículo 5",
+   "evidence": {
+    "provision": "Art. 5(7)(b)",
+    "quote": "Para todos: cada cinco años desde la realización del último análisis."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "Se establecerá un plazo de tres años, a contar desde la ratificación del resultado favorable del análisis",
+   "depends_on": "ratificación del resultado favorable del análisis de costes y beneficios por el órgano autonómico competente",
+   "applies_to": "implementación voluntaria del sistema de reutilización de calor residual (periodo voluntario)",
+   "offset_value": 3,
+   "offset_unit": "years",
+   "evidence": {
+    "provision": "Art. 5(12)",
+    "quote": "Se establecerá un plazo de tres años, a contar desde la ratificación del resultado favorable del análisis"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "en el periodo de dos años, a contar desde el día siguiente a la finalización del periodo voluntario",
+   "depends_on": "finalización del periodo voluntario de tres años",
+   "applies_to": "obligación de implementar el sistema de reutilización de calor residual",
+   "offset_value": 2,
+   "offset_unit": "years",
+   "evidence": {
+    "provision": "Art. 5(12)",
+    "quote": "en el periodo de dos años, a contar desde el día siguiente a la finalización"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "power_capacity",
+   "variable_text": "demanda de potencia eléctrica de los sistemas de tecnología de la información instalados",
+   "operator": ">=",
+   "value": 500,
+   "value_text": "igual o superior a 500 kW",
+   "unit": "kW",
+   "measurement": "Nominal power demand of network, servers and storage equipment installed in the computer room (Art. 2(3))",
+   "level": "facility",
+   "trigger": "scope_definition",
+   "consequence": "Operators fall within the scope of Art. 4 (annual reporting to the Dirección General de Planificación y Coordinación Energética)",
+   "conditions": "Applies to data centre operators; threshold measured on installed IT systems",
+   "evidence": {
+    "provision": "Art. 3(1)",
+    "quote": "igual o superior a 500 kW"
+   }
+  },
+  {
+   "variable": "power_capacity",
+   "variable_text": "entrada de energía nominal total",
+   "operator": ">",
+   "value": 1,
+   "value_text": "entrada de energía nominal total superior a 1 MW",
+   "unit": "MW",
+   "measurement": "Total nominal energy input of the data centre",
+   "level": "facility",
+   "trigger": "scope_definition",
+   "consequence": "Project promoters and owners fall within the scope of Art. 5 (waste heat reuse obligations)",
+   "conditions": "Applies to promoters of data centre projects or owners of data centres",
+   "evidence": {
+    "provision": "Art. 3(2)",
+    "quote": "entrada de energía nominal total superior a 1 MW"
+   }
+  },
+  {
+   "variable": "power_capacity",
+   "variable_text": "demanda de potencia eléctrica de los sistemas de TI",
+   "operator": ">=",
+   "value": 1,
+   "value_text": "igual o superior a 1 MW",
+   "unit": "MW",
+   "measurement": "Electrical power demand of installed IT systems",
+   "level": "facility",
+   "trigger": "scope_definition",
+   "consequence": "Promoters, owners and operators fall within the scope of Art. 6 (best-practice communication)",
+   "conditions": "Applies to promoters of data centre projects, owners and operators",
+   "evidence": {
+    "provision": "Art. 3(3)",
+    "quote": "igual o superior a 1 MW"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "período de funcionamiento del centro de datos notificante",
+   "operator": "<",
+   "value": 1,
+   "value_text": "lleve en funcionamiento menos de un año",
+   "unit": "years",
+   "measurement": "Operating period of the notifying data centre",
+   "level": "facility",
+   "trigger": "obligation",
+   "consequence": "Operator reports only the period of operation and states that period",
+   "conditions": "Applies to the annual reporting under Art. 4(1)",
+   "evidence": {
+    "provision": "Art. 4(3)",
+    "quote": "lleve en funcionamiento menos de un año"
+   }
+  },
+  {
+   "variable": "capital_investment",
+   "variable_text": "coste de la renovación frente al coste de inversión de una unidad nueva comparable",
+   "operator": ">",
+   "value": 50,
+   "value_text": "cuyo coste supere el 50% del coste de inversión",
+   "unit": "%",
+   "measurement": "Renovation cost compared with the investment cost of a comparable new unit",
+   "level": "facility",
+   "trigger": "scope_definition",
+   "consequence": "Renovation is treated as substantial, so a cost-benefit analysis must be carried out at the project phase",
+   "conditions": "Applies to data centres projected for the first time or undergoing substantial renovation",
+   "evidence": {
+    "provision": "Art. 5(6)",
+    "quote": "cuyo coste supere el 50% del coste de inversión"
+   }
+  },
+  {
+   "variable": "energy_efficiency",
+   "variable_text": "posición dentro de las instalaciones con mejores prestaciones en los indicadores relevantes",
+   "operator": "<=",
+   "value": 15,
+   "value_text": "dentro del 15% de instalaciones con mejores prestaciones",
+   "unit": "% of installations",
+   "measurement": "Ranking among installations on relevant indicators (including PUE, WUE, ERF and renewable energy share)",
+   "level": "facility",
+   "trigger": "obligation",
+   "consequence": "Operator must demonstrate that the data centre is within the best-performing 15% of installations to show best practice",
+   "conditions": "Applies to data centres above 100 MW (Art. 6(2))",
+   "evidence": {
+    "provision": "Art. 6(2)",
+    "quote": "estar situados dentro del 15% de instalaciones con mejores prestaciones"
+   }
+  },
+  {
+   "variable": "power_capacity",
+   "variable_text": "potencia de los centros de datos",
+   "operator": ">",
+   "value": 100,
+   "value_text": "Para los centros de datos de potencia superior a 100MW",
+   "unit": "MW",
+   "measurement": "Power of the data centre",
+   "level": "facility",
+   "trigger": "obligation",
+   "consequence": "Operator must demonstrate compliance with best practice, within the best-performing 15% of installations",
+   "conditions": "Applies to data centres above 100 MW",
+   "evidence": {
+    "provision": "Art. 6(2)",
+    "quote": "Para los centros de datos de potencia superior a 100MW"
+   }
+  }
+ ],
+ "section_status": {}
+}

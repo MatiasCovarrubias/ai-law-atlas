@@ -1,0 +1,789 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "us-tx-hb4-2023",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (connectors/fetch_texts.py)",
+  "url": "https://capitol.texas.gov/tlodocs/88R/billtext/pdf/HB00004F.pdf",
+  "retrieved": "2026-10-13",
+  "version": "as fetched",
+  "language": "en",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "data_protection",
+   "algorithmic_decision_systems",
+   "biometrics",
+   "minors_child_safety",
+   "consumer_protection"
+  ],
+  "primary_domain": "data_protection",
+  "mechanisms": [
+   "mandate_obligation",
+   "prohibition_ban",
+   "disclosure_transparency"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "data_controller",
+   "data_processor",
+   "government_agency"
+  ],
+  "affected_roles": [
+   "consumers_users",
+   "minors"
+  ],
+  "decision_margins": [
+   "household:data_privacy",
+   "household:information",
+   "firm:compliance_process",
+   "firm:pricing",
+   "firm:size_organization"
+  ],
+  "territorial_scope": {
+   "types": [
+    "subnational",
+    "extraterritorial"
+   ],
+   "description": "Statewide law applying to persons that conduct business in Texas or produce products or services consumed by Texas residents, including actors outside Texas; it preempts local ordinances on personal data processing.",
+   "evidence": {
+    "provision": "Sec. 541.002(a)(1)",
+    "quote": "product or service consumed by residents of this state"
+   }
+  },
+  "agora_harms": [
+   "Violation of civil or human rights, including privacy"
+  ],
+  "agora_incentives": [
+   "Fines"
+  ],
+  "agora_risk_factors": [
+   "Privacy"
+  ],
+  "agora_strategies": [
+   "Disclosure",
+   "Input controls: Data use",
+   "Evaluation: Impact assessment"
+  ]
+ },
+ "summary": {
+  "short": "Texas Data Privacy and Security Act: adds Chapter 541 to the Business & Commerce Code, giving Texas consumers rights over their personal data and imposing duties on controllers and processors that conduct business in Texas or produce products consumed by its residents. Enforced by the attorney general; in force from July 1, 2024.",
+  "long": "Adds Chapter 541 (Consumer Data Protection) to the Business & Commerce Code. It applies to persons that conduct business in Texas or produce products or services consumed by Texas residents, excluding state agencies, financial institutions, HIPAA-covered entities, nonprofits, higher education institutions and certain electric utilities; small businesses are excluded except for a consent rule on sales of sensitive data. Consumers may confirm, access, correct, delete, port and opt out of targeted advertising, data sales and certain profiling. Controllers must respond to requests within 45 days, provide an appeal process, offer two or more request methods, limit collection, secure data, and obtain consent for sensitive data, and must post privacy notices, with sale notices for sensitive or biometric data. Processors act under controller contracts. Controllers must assess processing for targeted advertising, sales, risky profiling and sensitive data. The attorney general has exclusive enforcement authority and may issue civil investigative demands; a written notice and 30-day opportunity to cure apply before action, and violations carry civil penalties of up to $7,500 each. No private right of action is created, and local ordinances are preempted. Chapter 541 takes effect July 1, 2024, with one provision effective January 1, 2025."
+ },
+ "relations": [
+  {
+   "relation": "cross_references",
+   "target_instrument_id": "null",
+   "target_text": "Children's Online Privacy Protection Act of 1998 (15 U.S.C. Section 6501 et seq.)",
+   "note": "A controller that complies with COPPA verifiable parental consent is treated as compliant with parental consent requirements under the chapter; COPPA is also cited in the sensitive-data consent duty for known children.",
+   "evidence": {
+    "provision": "Sec. 541.005",
+    "quote": "complies with the verifiable parental consent requirements of"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": "null",
+   "target_text": "Title V, Gramm-Leach-Bliley Act (15 U.S.C. Section 6801 et seq.)",
+   "note": "Financial institutions and data subject to Title V are excluded from the chapter.",
+   "evidence": {
+    "provision": "Sec. 541.002(b)(2)",
+    "quote": "V, Gramm-Leach-Bliley Act (15 U.S.C. Section 6801 et seq.);"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": "null",
+   "target_text": "Fair Credit Reporting Act (15 U.S.C. Section 1681 et seq.)",
+   "note": "Consumer-reporting activity regulated by and authorized under the FCRA is excluded from the definition-based exemptions listed in the section.",
+   "evidence": {
+    "provision": "Sec. 541.003(11)",
+    "quote": "regulated by and authorized under the Fair Credit Reporting Act (15 U.S.C. Section 1681 et seq.);"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": "null",
+   "target_text": "Education Code, Section 61.003",
+   "note": "Used to define institution of higher education, which is excluded from the chapter.",
+   "evidence": {
+    "provision": "Sec. 541.001(16)",
+    "quote": "as defined by Section 61.003, Education Code."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": "null",
+   "target_text": "Section 15.10 (code not named in this text)",
+   "note": "Civil investigative demand procedures under Section 15.10 apply to attorney general demands under this section.",
+   "evidence": {
+    "provision": "Sec. 541.153(a)",
+    "quote": "civil investigative demand under Section 15.10 apply to the same extent and manner"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": "null",
+   "target_text": "Government Code, Section 402.007",
+   "note": "Civil penalties collected by the attorney general are deposited under this section.",
+   "evidence": {
+    "provision": "Sec. 541.155(d)",
+    "quote": "in accordance with Section 402.007, Government Code."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": "null",
+   "target_text": "Government Code, Chapter 552",
+   "note": "Data protection assessments are confidential and exempt from public inspection under this chapter.",
+   "evidence": {
+    "provision": "Sec. 541.105(d)",
+    "quote": "from public inspection and copying under Chapter 552, Government Code."
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "attorney general",
+   "role": "designated",
+   "function": "Exclusive enforcement authority; may issue civil investigative demands; posts consumer information and complaint mechanism; gives notice of violation and cure opportunity; may bring civil penalty and injunction actions (Secs. 541.151-541.155).",
+   "lei": "null",
+   "ticker": "null",
+   "evidence": {
+    "provision": "Sec. 541.151",
+    "quote": "The attorney general has exclusive authority to enforce this chapter."
+   }
+  },
+  {
+   "name": "Department of Information Resources",
+   "role": "designated",
+   "function": "Reviews implementation of Chapter 541 under the management of the chief privacy officer; creates a public feedback portal and makes a status report available (Section 3).",
+   "lei": "null",
+   "ticker": "null",
+   "evidence": {
+    "provision": "Section 3(a)",
+    "quote": "The Department of Information Resources, under the management of the chief privacy officer, shall review the implementation"
+   }
+  }
+ ],
+ "notes": "Text is H.B. 4 as enacted (88th Leg., R.S.); the approval and governor signature dates are blank, so no enactment date is stated. Chapter 541 is added by Section 2; Section 3(d) expires September 1, 2025; Section 541.055(e) takes effect January 1, 2025 and the rest on July 1, 2024 (Section 7). Section 541.156 states there is no private right of action; Section 541.155 sets a civil penalty not to exceed $7,500 per violation. Quotes are normalized for line breaks and layout tokens in the extracted text.",
+ "events": [
+  {
+   "event": "passed_chamber",
+   "date": "2023-04-05",
+   "date_type": "absolute",
+   "date_text": "passed by the House on April 5, 2023",
+   "applies_to": "House (initial passage)",
+   "evidence": {
+    "provision": "Certification following Sec. 7 (legislative history)",
+    "quote": "was passed by the House on April 5, 2023"
+   }
+  },
+  {
+   "event": "passed_chamber",
+   "date": "2023-05-10",
+   "date_type": "absolute",
+   "date_text": "passed by the Senate, with amendments, on May 10, 2023",
+   "applies_to": "Senate (passed with amendments)",
+   "evidence": {
+    "provision": "Certification following Sec. 7 (legislative history)",
+    "quote": "was passed by the Senate, with amendments, on May 10, 2023"
+   }
+  },
+  {
+   "event": "passed_chamber",
+   "date": "2023-05-27",
+   "date_type": "absolute",
+   "date_text": "the Senate adopted the conference committee report on H.B. No. 4 on May 27, 2023",
+   "applies_to": "Senate (adopted conference committee report)",
+   "evidence": {
+    "provision": "Certification following Sec. 7 (legislative history)",
+    "quote": "the Senate adopted the conference committee report on H.B. No. 4 on May 27, 2023"
+   }
+  },
+  {
+   "event": "legislative_approval",
+   "date": "2023-05-28",
+   "date_type": "absolute",
+   "date_text": "the House adopted the conference committee report on H.B. No. 4 on May 28, 2023",
+   "applies_to": "House (adopted conference committee report; final legislative approval)",
+   "evidence": {
+    "provision": "Certification following Sec. 7 (legislative history)",
+    "quote": "the House adopted the conference committee report on H.B. No. 4 on May 28, 2023"
+   }
+  },
+  {
+   "event": "signed",
+   "date": null,
+   "date_type": "not_stated",
+   "date_text": "APPROVED: blank signature and date line",
+   "applies_to": "Governor's approval of H.B. No. 4",
+   "evidence": {
+    "provision": "Approval block following certifications",
+    "quote": "APPROVED:"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2024-07-01",
+   "date_type": "absolute",
+   "date_text": "this Act takes effect July 1, 2024",
+   "applies_to": "Chapter 541, Business & Commerce Code, as added by this Act, except Section 541.055(e)",
+   "evidence": {
+    "provision": "Sec. 7(a)",
+    "quote": "this Act takes effect July 1, 2024."
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2025-01-01",
+   "date_type": "absolute",
+   "date_text": "Section 541.055(e), Business & Commerce Code, as added by this Act, takes effect January 1, 2025",
+   "applies_to": "Section 541.055(e), Business & Commerce Code (authorized agent opt-out requests)",
+   "evidence": {
+    "provision": "Sec. 7(b)",
+    "quote": "by this Act, takes effect January 1, 2025."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2025-01-01",
+   "date_type": "absolute",
+   "date_text": "Not later than January 1, 2025, the Department of Information Resources shall make available to the public a report",
+   "applies_to": "Department of Information Resources: publish implementation status report (Sec. 3(c))",
+   "evidence": {
+    "provision": "Sec. 3(c)",
+    "quote": "Information Resources shall make available to the public a report"
+   }
+  },
+  {
+   "event": "application",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "apply only to processing activities generated after the effective date of this Act and are not retroactive",
+   "anchor": "effective date of this Act",
+   "depends_on": "entry into force of this Act (Sec. 7(a))",
+   "applies_to": "Data protection assessments under Sec. 541.105 for processing activities generated after the effective date",
+   "evidence": {
+    "provision": "Sec. 4",
+    "quote": "apply only to processing activities generated after the effective date of this Act"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "may not be later than the 45th day after the date of receipt of the request",
+   "anchor": "receipt of the consumer's request",
+   "applies_to": "Controller response to consumer rights request (Sec. 541.052(b)) and notice of declined action (Sec. 541.052(c)); one 45-day extension permitted under Sec. 541.052(b)",
+   "offset_value": 45,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Sec. 541.052(b)",
+    "quote": "which may not be later than the 45th day after the date of receipt of the request."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "not later than the 60th day after the date of receipt of the appeal",
+   "anchor": "receipt of the consumer's appeal",
+   "applies_to": "Controller written response to consumer appeal (Sec. 541.053(c))",
+   "offset_value": 60,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Sec. 541.053(c)",
+    "quote": "not later than the 60th day after the date of receipt of the appeal"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "not later than the 30th day before bringing the action",
+   "anchor": "bringing an action under Section 541.155",
+   "applies_to": "Attorney general written notice of alleged violation before action (Sec. 541.154(a))",
+   "offset_value": -30,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Sec. 541.154(a)",
+    "quote": "not later than the 30th day before bringing the action"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "within the 30-day period, the person cures the violation",
+   "anchor": "attorney general's written notice of violation",
+   "applies_to": "Person alleged to have violated the chapter: cure period (Sec. 541.154(1))",
+   "offset_value": 30,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Sec. 541.154(1)",
+    "quote": "the 30-day period, the person cures the"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "other",
+   "variable_text": "ownership or voting control in the definition of affiliate",
+   "operator": ">",
+   "value": 50,
+   "value_text": "more than 50 percent of the outstanding shares of any class of voting security",
+   "unit": "percent",
+   "measurement": "share of outstanding voting securities held by the company, or control over director elections or management",
+   "level": "group",
+   "trigger": "scope_definition",
+   "consequence": "An entity that controls, is controlled by, or is under common control with another entity is its affiliate; affiliates are excluded from the definition of third party and from the definition of sale.",
+   "conditions": "Alternatively, control may be shown by control over the election of a majority of directors or controlling influence over management (Sec. 541.001(1)(B)-(C)); shared common branding also makes entities affiliates.",
+   "evidence": {
+    "provision": "Sec. 541.001(1)(A)",
+    "quote": "50 percent of the outstanding shares of any class of voting security"
+   }
+  },
+  {
+   "variable": "age",
+   "variable_text": "individual younger than 13 years of age",
+   "operator": "<",
+   "value": 13,
+   "value_text": "an individual younger than 13 years of age",
+   "unit": "years",
+   "measurement": "age of the individual; for known children, a controller's actual knowledge of or wilful disregard of the child's age (Sec. 541.001(17))",
+   "level": "person",
+   "trigger": "scope_definition",
+   "consequence": "Individual is a child; personal data collected from a known child is sensitive data, and processing it requires consent or compliance with COPPA.",
+   "conditions": "Known child requires that the controller has actual knowledge of, or wilfully disregards, the child's age.",
+   "evidence": {
+    "provision": "Sec. 541.001(5)",
+    "quote": "\"Child\" means an individual younger than 13 years"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "radius of precision for precise geolocation data (feet)",
+   "operator": "<=",
+   "value": 1750,
+   "value_text": "within a radius of 1,750 feet",
+   "unit": "feet",
+   "measurement": "precision and accuracy with which the data directly identifies the specific location of an individual",
+   "level": "person",
+   "trigger": "scope_definition",
+   "consequence": "Location data meeting this precision is precise geolocation data, which is included in sensitive data.",
+   "conditions": "Data must be derived from technology, such as GPS-level latitude and longitude or other mechanisms; the term excludes communication content and data from advanced utility metering infrastructure or utility equipment.",
+   "evidence": {
+    "provision": "Sec. 541.001(21)",
+    "quote": "within a radius of 1,750 feet."
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "Affiliate",
+   "defined_in": "Business & Commerce Code, Sec. 541.001(1)",
+   "evidence": {
+    "provision": "Sec. 541.001(1)",
+    "quote": "\"Affiliate\" means a legal entity that controls, is"
+   }
+  },
+  {
+   "term": "Biometric data",
+   "defined_in": "Business & Commerce Code, Sec. 541.001(3)",
+   "evidence": {
+    "provision": "Sec. 541.001(3)",
+    "quote": "\"Biometric data\" means data generated by automatic"
+   }
+  },
+  {
+   "term": "Business associate",
+   "defined_in": "Health Insurance Portability and Accountability Act of 1996 (42 U.S.C. Section 1320d et seq.)",
+   "evidence": {
+    "provision": "Sec. 541.001(4)",
+    "quote": "\"Business associate\" has the meaning assigned to"
+   }
+  },
+  {
+   "term": "Consent",
+   "defined_in": "Business & Commerce Code, Sec. 541.001(6)",
+   "evidence": {
+    "provision": "Sec. 541.001(6)",
+    "quote": "\"Consent,\" when referring to a consumer, means a"
+   }
+  },
+  {
+   "term": "Consumer",
+   "defined_in": "Business & Commerce Code, Sec. 541.001(7)",
+   "evidence": {
+    "provision": "Sec. 541.001(7)",
+    "quote": "\"Consumer\" means an individual who is a resident"
+   }
+  },
+  {
+   "term": "Controller",
+   "defined_in": "Business & Commerce Code, Sec. 541.001(8)",
+   "evidence": {
+    "provision": "Sec. 541.001(8)",
+    "quote": "\"Controller\" means an individual or other person"
+   }
+  },
+  {
+   "term": "Covered entity",
+   "defined_in": "Health Insurance Portability and Accountability Act of 1996 (42 U.S.C. Section 1320d et seq.)",
+   "evidence": {
+    "provision": "Sec. 541.001(9)",
+    "quote": "\"Covered entity\" has the meaning assigned to the"
+   }
+  },
+  {
+   "term": "Dark pattern",
+   "defined_in": "Business & Commerce Code, Sec. 541.001(10)",
+   "evidence": {
+    "provision": "Sec. 541.001(10)",
+    "quote": "\"Dark pattern\" means a user interface designed or"
+   }
+  },
+  {
+   "term": "Decision that produces a legal or similarly significant effect concerning a consumer",
+   "defined_in": "Business & Commerce Code, Sec. 541.001(11)",
+   "evidence": {
+    "provision": "Sec. 541.001(11)",
+    "quote": "significant effect concerning a consumer\" means a decision made by"
+   }
+  },
+  {
+   "term": "Deidentified data",
+   "defined_in": "Business & Commerce Code, Sec. 541.001(12)",
+   "evidence": {
+    "provision": "Sec. 541.001(12)",
+    "quote": "reasonably be linked to an identified or identifiable individual,"
+   }
+  },
+  {
+   "term": "Health record",
+   "defined_in": "Business & Commerce Code, Sec. 541.001(14)",
+   "evidence": {
+    "provision": "Sec. 541.001(14)",
+    "quote": "\"Health record\" means any written, printed, or"
+   }
+  },
+  {
+   "term": "Known child",
+   "defined_in": "Business & Commerce Code, Sec. 541.001(17)",
+   "evidence": {
+    "provision": "Sec. 541.001(17)",
+    "quote": "where a controller has actual knowledge of, or wilfully disregards,"
+   }
+  },
+  {
+   "term": "Nonprofit organization",
+   "defined_in": "Business & Commerce Code, Sec. 541.001(18)",
+   "evidence": {
+    "provision": "Sec. 541.001(18)",
+    "quote": "\"Nonprofit organization\" means:"
+   }
+  },
+  {
+   "term": "Personal data",
+   "defined_in": "Business & Commerce Code, Sec. 541.001(19)",
+   "evidence": {
+    "provision": "Sec. 541.001(19)",
+    "quote": "\"Personal data\" means any information, including"
+   }
+  },
+  {
+   "term": "Precise geolocation data",
+   "defined_in": "Business & Commerce Code, Sec. 541.001(21)",
+   "evidence": {
+    "provision": "Sec. 541.001(21)",
+    "quote": "derived from technology, including global positioning system level"
+   }
+  },
+  {
+   "term": "Processor",
+   "defined_in": "Business & Commerce Code, Sec. 541.001(23)",
+   "evidence": {
+    "provision": "Sec. 541.001(23)",
+    "quote": "personal data on behalf of a controller."
+   }
+  },
+  {
+   "term": "Profiling",
+   "defined_in": "Business & Commerce Code, Sec. 541.001(24)",
+   "evidence": {
+    "provision": "Sec. 541.001(24)",
+    "quote": "\"Profiling\" means any form of solely automated"
+   }
+  },
+  {
+   "term": "Pseudonymous data",
+   "defined_in": "Business & Commerce Code, Sec. 541.001(26)",
+   "evidence": {
+    "provision": "Sec. 541.001(26)",
+    "quote": "\"Pseudonymous data\" means any information that"
+   }
+  },
+  {
+   "term": "Sale of personal data",
+   "defined_in": "Business & Commerce Code, Sec. 541.001(28)",
+   "evidence": {
+    "provision": "Sec. 541.001(28)",
+    "quote": "valuable consideration by the controller to a third party."
+   }
+  },
+  {
+   "term": "State agency",
+   "defined_in": "Business & Commerce Code, Sec. 541.001(30)",
+   "evidence": {
+    "provision": "Sec. 541.001(30)",
+    "quote": "\"State agency\" means a department, commission,"
+   }
+  },
+  {
+   "term": "Targeted advertising",
+   "defined_in": "Business & Commerce Code, Sec. 541.001(31)",
+   "evidence": {
+    "provision": "Sec. 541.001(31)",
+    "quote": "consumer an advertisement that is selected based on personal data"
+   }
+  },
+  {
+   "term": "Third party",
+   "defined_in": "Business & Commerce Code, Sec. 541.001(32)",
+   "evidence": {
+    "provision": "Sec. 541.001(32)",
+    "quote": "consumer, the controller, the processor, or an affiliate of the"
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "security_measures",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Establish, implement and maintain reasonable administrative, technical and physical data security practices appropriate to the volume and nature of the data.",
+   "applies_from": "takes effect July 1, 2024 (SECTION A7(a))",
+   "evidence": {
+    "provision": "Sec. 541.101(a)(2)",
+    "quote": "shall establish, implement, and maintain reasonable administrative, technical, and physical data security practices"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Provide a reasonably accessible and clear privacy notice with the listed content; where selling sensitive or biometric data, include the prescribed sale notice in the same location as the privacy notice.",
+   "applies_from": "takes effect July 1, 2024 (SECTION A7(a))",
+   "evidence": {
+    "provision": "Sec. 541.102(a)-(c)",
+    "quote": "shall provide consumers with a reasonably accessible and clear privacy notice"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Where the controller sells personal data to third parties or processes it for targeted advertising, clearly and conspicuously disclose that the consumer may opt out of that processing.",
+   "applies_from": "takes effect July 1, 2024 (SECTION A7(a))",
+   "conditional_on": "if the controller sells personal data to third parties or processes it for targeted advertising",
+   "evidence": {
+    "provision": "Sec. 541.103",
+    "quote": "may exercise the right to opt out of that process"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_processor",
+   "also_addressees": [
+    "data_controller"
+   ],
+   "modality": "shall",
+   "summary": "Processor must adhere to controller instructions and assist the controller with consumer requests, security and breach notification, and data protection assessments; processor provides an assessment report to the controller on request.",
+   "applies_from": "takes effect July 1, 2024 (SECTION A7(a))",
+   "evidence": {
+    "provision": "Sec. 541.104(a), (c)",
+    "quote": "A processor shall adhere to the instructions of a controller"
+   }
+  },
+  {
+   "type": "impact_assessment",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Conduct and document a data protection assessment for targeted advertising, sales, certain profiling, sensitive data processing and other processing presenting heightened risk of harm.",
+   "applies_from": "takes effect July 1, 2024 (SECTION A7(a)); SECTION A4 limits application to processing activities generated after the effective date",
+   "evidence": {
+    "provision": "Sec. 541.105(a)-(b)",
+    "quote": "A controller shall conduct and document a data protection assessment"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Comply with authenticated consumer requests to exercise rights under Sec. 541.051; respond without undue delay and within 45 days (extendable once by 45 days with notice); inform the consumer of reasons if declining action; respond free of charge at least twice annually, with a fee or refusal only for manifestly unfounded, excessive or repetitive requests.",
+   "applies_from": "takes effect July 1, 2024 (SECTION A7(a))",
+   "evidence": {
+    "provision": "Sec. 541.052(a)-(f)",
+    "quote": "Except as otherwise provided by this chapter, a controller shall"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Establish two or more secure and reliable methods for consumers to submit rights requests; where the controller maintains a website, provide a submission mechanism there; comply with authorized-agent opt-out requests where identity and authority can be verified.",
+   "applies_from": "takes effect July 1, 2024 (SECTION A7(a))",
+   "evidence": {
+    "provision": "Sec. 541.055(a), (c), (e)",
+    "quote": "shall establish two or more secure and reliable methods"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "data_controller",
+   "modality": "shall_not",
+   "summary": "Controller may not require a consumer to create a new account to exercise rights (it may require use of an existing account).",
+   "applies_from": "takes effect July 1, 2024 (SECTION A7(a))",
+   "evidence": {
+    "provision": "Sec. 541.055(b)",
+    "quote": "may not require a consumer to create a new account"
+   }
+  },
+  {
+   "type": "complaint_mechanism",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Establish an appeal process for refusals of consumer requests; inform the consumer in writing of the appeal decision with reasons within 60 days; if the appeal is denied, provide the online mechanism to contact the attorney general.",
+   "applies_from": "takes effect July 1, 2024 (SECTION A7(a))",
+   "evidence": {
+    "provision": "Sec. 541.053(a)-(d)",
+    "quote": "A controller shall establish a process for a consumer to appeal"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "enterprise",
+   "modality": "shall_not",
+   "summary": "A person that is not a small business under the SBA definition may not sell sensitive personal data without prior consent from the consumer.",
+   "applies_from": "takes effect July 1, 2024 (SECTION A7(a))",
+   "conditional_on": "applies to persons described by Sec. 541.002(a)(3) (not a small business)",
+   "evidence": {
+    "provision": "Sec. 541.107(a)",
+    "quote": "may not engage in the sale of personal data that is sensitive data without receiving prior consent from the consumer"
+   }
+  },
+  {
+   "type": "data_minimization",
+   "addressee": "data_controller",
+   "also_addressees": [
+    "data_processor"
+   ],
+   "modality": "shall",
+   "summary": "Processing of personal data under the exemptions in Subchapter E must be reasonably necessary and proportionate to the listed purposes and limited to what is necessary; collection, use or retention must take into account its nature and purpose.",
+   "applies_from": "takes effect July 1, 2024 (SECTION A7(a))",
+   "conditional_on": "when relying on an exemption in Subchapter E",
+   "evidence": {
+    "provision": "Sec. 541.204(a)-(b)",
+    "quote": "must, where applicable, take into account the nature and purpose of such collection, use, or retention"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "data_controller",
+   "also_addressees": [
+    "data_processor"
+   ],
+   "modality": "shall",
+   "summary": "Personal data processed under the Subchapter E exemptions is subject to reasonable administrative, technical and physical measures to protect confidentiality, integrity and accessibility.",
+   "applies_from": "takes effect July 1, 2024 (SECTION A7(a))",
+   "conditional_on": "when relying on an exemption in Subchapter E",
+   "evidence": {
+    "provision": "Sec. 541.204(b)",
+    "quote": "is subject to reasonable administrative, technical, and physical measures"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Attorney general must post on its website information on controller and processor responsibilities and consumer rights, and an online mechanism for submitting complaints.",
+   "applies_from": "takes effect July 1, 2024 (SECTION A7(a)); SECTION A5 requires posting not later than July 1, 2024",
+   "evidence": {
+    "provision": "Sec. 541.152(1)-(2)",
+    "quote": "The attorney general shall post on the attorney general ’s Internet website"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Department of Information Resources, under the chief privacy officer, must review implementation of Chapter 541.",
+   "applies_from": "takes effect July 1, 2024 (SECTION A7(a)); SECTION A3(d) states the section expires September 1, 2025",
+   "evidence": {
+    "provision": "SECTION A3(a)",
+    "quote": "under the management of the chief privacy officer, shall review the"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Department of Information Resources must create an online portal for public feedback and recommended changes to Chapter 541, open for at least 90 days.",
+   "applies_from": "not later than September 1, 2024",
+   "evidence": {
+    "provision": "SECTION A3(b)",
+    "quote": "shall create an online portal available on the department"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Department of Information Resources must make available to the public a report on implementation status and any recommendations to the legislature.",
+   "applies_from": "not later than January 1, 2025",
+   "evidence": {
+    "provision": "SECTION A3(c)",
+    "quote": "shall make available to the public a report"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Attorney general must post the information and online mechanism required by Sec. 541.152.",
+   "applies_from": "not later than July 1, 2024",
+   "evidence": {
+    "provision": "SECTION A5",
+    "quote": "the attorney general shall post the information and online mechanism"
+   }
+  }
+ ],
+ "enforcement": [
+  {
+   "sanction_type": "civil_penalty",
+   "authority": "Attorney General of Texas",
+   "triggered_by": "Violation of Chapter 541 after the cure period in Sec. 541.154, or breach of a written statement provided to the attorney general under that section; also sale of sensitive data without prior consent by a small business person under Sec. 541.107(a), which is subject to the penalty under Sec. 541.155 (Sec. 541.107(b))",
+   "max_penalty_text": "An amount not to exceed $7,500 for each violation",
+   "max_penalty_amount": 7500,
+   "currency": "USD",
+   "penalty_formula": "Per violation; the attorney general may also recover reasonable attorney's fees and other reasonable expenses incurred in investigating and bringing an action (Sec. 541.155(c))",
+   "penalty_reference": "Sec. 541.155(a)",
+   "private_right_of_action": false,
+   "cure_period": "The attorney general must notify the person in writing not later than the 30th day before bringing the action; no action if the person cures within the 30-day period and provides a written statement (Sec. 541.154)",
+   "evidence": {
+    "provision": "Sec. 541.155(a)",
+    "quote": "liable for a civil penalty in an amount not to exceed $7,500 for each violation"
+   }
+  }
+ ],
+ "section_status": {}
+}

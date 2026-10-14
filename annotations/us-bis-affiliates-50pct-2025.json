@@ -1,0 +1,535 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "us-bis-affiliates-50pct-2025",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (connectors/fetch_texts.py)",
+  "url": "https://www.govinfo.gov/content/pkg/FR-2025-09-30/pdf/2025-19001.pdf",
+  "retrieved": "2026-10-13",
+  "version": "as fetched",
+  "language": "en",
+  "extent": "full",
+  "note": "Trimmed to FR Doc. 2025-19001 (the PDF pages also carried neighbouring documents); untrimmed copy kept."
+ },
+ "classification": {
+  "domains": [
+   "chips_export_controls"
+  ],
+  "primary_domain": "chips_export_controls",
+  "mechanisms": [
+   "export_import_control",
+   "licensing_permit_certification",
+   "mandate_obligation"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "exporter"
+  ],
+  "affected_roles": [
+   "enterprise"
+  ],
+  "decision_margins": [
+   "firm:trade",
+   "firm:compliance_process"
+  ],
+  "territorial_scope": {
+   "types": [
+    "extraterritorial",
+    "targeted"
+   ],
+   "description": "Reaches foreign entities in any foreign country that are owned 50 percent or more by parties on the Entity List, MEU List or designated SDN list.",
+   "evidence": {
+    "provision": "Preamble, Table 1 (Compliance aid)",
+    "quote": "These requirements apply to all foreign countries regardless of under which destination the listed entity or entity’s owners are listed."
+   }
+  }
+ },
+ "summary": {
+  "short": "Interim final rule extending Export Administration Regulations end-user license requirements to foreign entities at least 50 percent owned by Entity List, Military End-User List or designated SDN parties. Effective 29 September 2025, it applies to exporters, reexporters and transferors dealing with those affiliates.",
+  "long": "Interim final rule by the Bureau of Industry and Security amending parts 732, 734, 736, 744 and 748 of the Export Administration Regulations, effective 29 September 2025. It replaces the prior 'legally distinct' standard with a 50 percent ownership rule (the Affiliates rule): foreign entities owned 50 percent or more, directly or indirectly and in aggregate, by Entity List, MEU List or SDN parties are subject to the same license requirements as those parties, and the most restrictive owner's requirements apply. Where an exporter cannot determine the ownership percentage, it must resolve new Red Flag 29, obtain a license or identify a license exception before proceeding. Further provisions cover license application content (supplement no. 2 to part 748, marking 'Affiliates rule'), requests by affiliates to modify owners' listings (sections 744.16(e) and 744.21(b)(2)), and supplement no. 8 guidelines. A temporary general license (General Order No. 7) authorizes certain transactions involving non-listed affiliates; the preamble summary gives its expiry as November 28, 2025, while the regulatory text says December 1, 2025. A savings clause covers shipments en route on 29 September 2025 until 29 October 2025. The End-User Review Committee may grant case-by-case exceptions."
+ },
+ "relations": [
+  {
+   "relation": "legal_basis",
+   "target_text": "Export Control Reform Act of 2018 (50 U.S.C. 4801–4852)",
+   "note": "The text states that ECRA is the authority under which BIS issues this rule; ECRA sections 1753, 1754 and 1762 are also cited.",
+   "evidence": {
+    "provision": "Export Control Reform Act of 2018 (preamble)",
+    "quote": "ECRA provides the legal basis for BIS’s principal authorities and serves as the authority under which BIS issues this rule."
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Export Administration Regulations (15 CFR parts 730–774)",
+   "note": "Amends parts 732, 734, 736, 744 and 748 of the EAR; the main changes are to part 744 (Entity List, MEU List and § 744.8).",
+   "evidence": {
+    "provision": "Regulatory text, introductory amendment clause",
+    "quote": "parts 732, 734, 736, 744, and 748 of the Export Administration Regulations (15 CFR parts 730 through 774) are amended as follows:"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "OFAC guidance: Revised Guidance On Foreign Entities Owned By Persons Whose Property And Interests In Property Are Blocked (August 13, 2014)",
+   "note": "Supplement no. 8 to part 744 provides guidance described as similar to this OFAC guidance, adapted to the EAR.",
+   "evidence": {
+    "provision": "Preamble, II.D.2 (Supplement No. 8 to part 744)",
+    "quote": "This new supplement provides similar guidance as is contained in the guidance document from OFAC titled, Revised Guidance On Foreign Entities Owned By Persons Whose Property And Interests In Property Are Blocked, from August 13, 2014."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "OFAC SDN List (appendix A to 31 CFR chapter V)",
+   "note": "Background on the SDN List; § 744.8 applies to persons blocked under the OFAC programs listed in § 744.8(a)(1).",
+   "evidence": {
+    "provision": "Preamble, II.C.1 (Background on SDN List)",
+    "quote": "see appendix A to 31 CFR chapter V"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "End-User Controls: Imposition of Restrictions on Certain Persons Identified on the List of Specially Designated Nationals and Blocked Persons (SDN List), 89 FR 20107 (March 21, 2024)",
+   "note": "Earlier final rule that added § 744.8 to the EAR; the preamble notes that BIS had previously stated it used the legally distinct standard.",
+   "evidence": {
+    "provision": "Preamble, II.C.2 (Adoption of the Affiliates Rule for the Purposes of § 744.8)",
+    "quote": "published March 21, 2024 (89 FR 20107)"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Proposed rule, End-Use and End-User Based Export Controls, Including U.S. Persons Activities Controls: Military and Intelligence End Uses and End Users, 89 FR 60985 (July 29, 2024)",
+   "note": "Described as under review; the Affiliates rule for the MEU List is said to be consistent with proposals to align the MEU List and Entity List.",
+   "evidence": {
+    "provision": "Preamble, II.A.1 section I.B.3 (Protecting U.S. National Security)",
+    "quote": "the July 29, 2024 proposed rule"
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "Bureau of Industry and Security (BIS), U.S. Department of Commerce",
+   "role": "designated",
+   "function": "Issues and administers the EAR under ECRA; determines license applications and handles requests for Entity List removal or modification.",
+   "evidence": {
+    "provision": "Summary",
+    "quote": "the Bureau of Industry and Security (BIS) amends the Export Administration Regulations (EAR)"
+   }
+  },
+  {
+   "name": "End-User Review Committee (ERC)",
+   "role": "designated",
+   "function": "Makes decisions on additions to, removals from and modifications of the Entity List; may apply exceptions to the Affiliates rule case by case and determines whether affiliates below the 50 percent threshold may be added.",
+   "evidence": {
+    "provision": "Preamble, I.C (Extending the Entity List Requirements)",
+    "quote": "The ERC may apply exceptions to the Affiliates rule on a case-by-case basis"
+   }
+  },
+  {
+   "name": "JSC Integral",
+   "role": "listed",
+   "function": "Entity List entry used as an illustrative example; the text notes a License Exception GOV authorization may apply to exports to it.",
+   "evidence": {
+    "provision": "Preamble, II.A.1 (Scope of Entries Listed on the Entity List)",
+    "quote": "JSC Integral, a company that is involved with the International Space Station (ISS), is listed on the Entity List"
+   }
+  }
+ ],
+ "notes": "Internal inconsistency: the front-page summary gives the expiry of the Temporary General License (General Order No. 7) as November 28, 2025, while the regulatory text (Supplement no. 1 to part 736, para. (g)(3)) and the preamble (II.D.1) give December 1, 2025. Both dates are kept in the events of the full annotation. The EAR is the amended instrument and has no registry ID; no targets are assigned IDs. Authority citations also list several executive orders, which are not separately recorded as relations.",
+ "events": [
+  {
+   "event": "entry_into_force",
+   "date": "2025-09-29",
+   "date_type": "absolute",
+   "date_text": "This rule is effective September 29, 2025.",
+   "applies_to": "Interim final rule as a whole (amendments to 15 CFR parts 732, 734, 736, 744 and 748)",
+   "evidence": {
+    "provision": "Front matter, Dates (Effective date)",
+    "quote": "This rule is effective September 29, 2025."
+   }
+  },
+  {
+   "event": "application",
+   "date": "2025-09-29",
+   "date_type": "absolute",
+   "date_text": "may request modification of the relevant entry ... at any time on or after September 29, 2025",
+   "applies_to": "Nonlisted foreign affiliates of listed entities subject to Affiliates rule restrictions may request modification under § 744.16(e) or § 744.21(b)(2)",
+   "evidence": {
+    "provision": "Front matter, Dates (Modification request date)",
+    "quote": "at any time on or after September 29, 2025."
+   }
+  },
+  {
+   "event": "published",
+   "date": "2025-09-30",
+   "date_type": "absolute",
+   "date_text": "Tuesday, September 30, 2025",
+   "applies_to": "Federal Register, Vol. 90, No. 187, Rules and Regulations section",
+   "evidence": {
+    "provision": "Federal Register page header",
+    "quote": "Tuesday, September 30, 2025"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2025-10-29",
+   "date_type": "absolute",
+   "date_text": "Comments must be received by BIS no later than October 29, 2025.",
+   "applies_to": "Public comments on this interim final rule submitted to BIS",
+   "evidence": {
+    "provision": "Front matter, Dates (Comment date)",
+    "quote": "Comments must be received by BIS no later than October 29, 2025."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2025-10-29",
+   "date_type": "absolute",
+   "date_text": "is completed no later than on October 29, 2025.",
+   "applies_to": "Shipments removed from License Exception or NLR eligibility that were en route on September 29, 2025 under actual orders (savings clause)",
+   "evidence": {
+    "provision": "Savings Clause",
+    "quote": "is completed no later than on October 29, 2025."
+   }
+  },
+  {
+   "event": "expiry",
+   "date": "2025-11-28",
+   "date_type": "absolute",
+   "date_text": "This TGL expires on November 28, 2025.",
+   "applies_to": "General Order No. 7, Temporary General License for non-listed foreign affiliates of listed entities (as stated in front matter)",
+   "evidence": {
+    "provision": "Front matter, Dates (Temporary General License validity date)",
+    "quote": "This TGL expires on November 28, 2025."
+   }
+  },
+  {
+   "event": "expiry",
+   "date": "2025-12-01",
+   "date_type": "absolute",
+   "date_text": "Validity date: Paragraph (g) expires on December 1, 2025.",
+   "applies_to": "General Order No. 7, Temporary General License for non-listed foreign affiliates of listed entities (Supp. No. 1 to part 736, para. (g))",
+   "evidence": {
+    "provision": "Part 736, Supp. No. 1, para. (g)(3)",
+    "quote": "Validity date: Paragraph (g) expires on December 1, 2025."
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "other",
+   "variable_text": "ownership percentage of a foreign entity, direct or indirect, individually or in aggregate, by one or more Entity List entities",
+   "operator": ">=",
+   "value": 50,
+   "value_text": "50 percent or more",
+   "unit": "percent",
+   "measurement": "Direct or indirect ownership, individually or in aggregate, by one or more Entity List entities or unlisted entities subject to Entity List restrictions based on their ownership; where owners carry different requirements, the most restrictive apply",
+   "level": "group",
+   "trigger": "scope_definition",
+   "consequence": "Entity List license requirements and other Entity List restrictions apply to the foreign entity",
+   "conditions": "Applies to foreign entities; does not apply to foreign affiliates owned 50 percent or more by entities operating at an Entity List address where those operating entities are not themselves specifically listed; the ERC may exclude specific affiliates by Entity List entry",
+   "evidence": {
+    "provision": "§ 744.11(a)(1)",
+    "quote": "The Entity List license requirements and other Entity List restrictions also apply to any foreign entity that is owned, directly or indirectly, individually or in aggregate, 50 percent or more"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "ownership percentage of a foreign entity, direct or indirect, individually or in aggregate, by one or more MEU List or Entity List entities",
+   "operator": ">=",
+   "value": 50,
+   "value_text": "50 percent or more",
+   "unit": "percent",
+   "measurement": "Direct or indirect ownership, individually or in aggregate, by one or more MEU List or Entity List entities or entities subject to their restrictions based on ownership; most restrictive owner requirements apply",
+   "level": "group",
+   "trigger": "scope_definition",
+   "consequence": "MEU List and Entity List license requirements in § 744.21(a)(1) and (2) apply to the foreign entity",
+   "conditions": "Unlisted foreign affiliates owned solely by one or more unlisted military end users are excluded unless the affiliate itself meets the definition of military end user",
+   "evidence": {
+    "provision": "§ 744.21(a)(3)",
+    "quote": "also apply to any foreign entity that is owned, directly or indirectly, individually or in aggregate, 50 percent or more"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "ownership percentage of a foreign affiliate of a listed entity, direct or indirect, individually or in aggregate, by persons blocked under § 744.8(a)(1) programs",
+   "operator": ">=",
+   "value": 50,
+   "value_text": "50 percent or more",
+   "unit": "percent",
+   "measurement": "Direct or indirect ownership, individually or in aggregate, by one or more persons blocked pursuant to the programs listed in § 744.8(a)(1); where several owners apply, the most restrictive requirements apply",
+   "level": "group",
+   "trigger": "scope_definition",
+   "consequence": "EAR controls under § 744.8 apply to the foreign affiliate of a listed entity",
+   "conditions": "Owners must be blocked pursuant to the programs listed in § 744.8(a)(1); the rule applies in parallel with OFAC's 50 percent rule",
+   "evidence": {
+    "provision": "§ 744.8(a)(2)",
+    "quote": "These EAR controls also apply to any foreign affiliate of a listed entity that is owned, directly or indirectly, individually or in aggregate, 50 percent or more"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "ownership percentage of a foreign entity, direct or indirect, individually or in aggregate, by one or more Entity List entities or unlisted entities subject to Entity List restrictions",
+   "operator": ">=",
+   "value": 50,
+   "value_text": "50 percent or more",
+   "unit": "percent",
+   "measurement": "Direct or indirect ownership, individually or in aggregate; applies where at least one owner is within the end-user scope of paragraph (e)",
+   "level": "group",
+   "trigger": "scope_definition",
+   "consequence": "Entity List foreign direct product rule requirements apply to the foreign entity, even when only one owner meets the end-user criteria under paragraph (e)",
+   "conditions": "Applies to entities on the Entity List with a footnote referenced under paragraph (e); the foreign entity must include at least one entity within the end-user scope",
+   "evidence": {
+    "provision": "§ 734.9(e)",
+    "quote": "also includes any foreign entity that is owned, directly or indirectly, individually or in aggregate, 50 percent or more"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "ownership percentage of a foreign entity, direct or indirect, individually or in aggregate, by one or more listed entities or unlisted entities subject to Entity List restrictions",
+   "operator": ">=",
+   "value": 50,
+   "value_text": "50 percent or more",
+   "unit": "percent",
+   "measurement": "Direct or indirect ownership, individually or in aggregate; applies where at least one owner is within the end-user scope of paragraph (g)(2)",
+   "level": "group",
+   "trigger": "scope_definition",
+   "consequence": "Russia/Belarus-Military End User and Procurement FDP requirements apply to the foreign entity, even when only one owner meets the end-user criteria under paragraph (g)(2)",
+   "conditions": "The foreign entity must be owned by listed entities or unlisted entities subject to Entity List restrictions, including at least one entity within the end-user scope of paragraph (g)(2)",
+   "evidence": {
+    "provision": "§ 734.9(g)",
+    "quote": "also includes any foreign entity that is owned 50 percent or more, directly or indirectly, individually or in aggregate"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "ownership percentage of a non-listed foreign affiliate of a listed entity, direct or indirect, individually or in aggregate, by Entity List or MEU List entities",
+   "operator": ">=",
+   "value": 50,
+   "value_text": "owned 50 percent or more",
+   "unit": "percent",
+   "measurement": "Direct or indirect ownership, individually or in aggregate, by one or more Entity List or MEU List entities, or by unlisted entities subject to their license requirements or restrictions based on ownership",
+   "level": "group",
+   "trigger": "benefit",
+   "consequence": "General Order No. 7 temporary general license authorizes exports, reexports and in-country transfers to destinations other than Country Group E:1 or E:2 where a party is such an affiliate and a joint venture meeting the stated criteria; the authorization overcomes only §§ 744.11 and 744.21 requirements",
+   "conditions": "The joint venture partner must be a non-listed entity headquartered in the United States or in Country Group A:5 or A:6 and not owned 50 percent or more by listed entities or entities subject to Entity List or MEU restrictions based on ownership; the general license expires December 1, 2025",
+   "evidence": {
+    "provision": "Supp. No. 1 to Part 736, para. (g)(1)(ii)(A)",
+    "quote": "A party to the transaction is a nonlisted foreign affiliate of a listed entity that is owned 50 percent or more"
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "Entity List",
+   "defined_in": "this instrument (preamble, Part I.A); list published in EAR supplement no. 4 to part 744",
+   "evidence": {
+    "provision": "Preamble, Part I.A",
+    "quote": "identifies entities for which there is reasonable cause to believe, based on specific and articulable facts"
+   }
+  },
+  {
+   "term": "Affiliates rule",
+   "defined_in": "this instrument (preamble, Part I.B.3)",
+   "evidence": {
+    "provision": "Preamble, Part I.B.3",
+    "quote": "which for EAR purposes will be referred to as the Affiliates rule"
+   }
+  },
+  {
+   "term": "Military End-User (MEU) List",
+   "defined_in": "this instrument (preamble, Part I.B.3); list published in EAR supplement no. 7 to part 744",
+   "evidence": {
+    "provision": "Preamble, Part I.B.3",
+    "quote": "for the ‘Military End-User’ (MEU) List in supplement no. 7 to part 744"
+   }
+  },
+  {
+   "term": "Specially Designated Nationals and Blocked Persons List (SDN List)",
+   "defined_in": "OFAC (described in this instrument, preamble Part I.C.1)",
+   "evidence": {
+    "provision": "Preamble, Part I.C.1",
+    "quote": "OFAC maintains the SDN List to identify persons whose property or interests in property"
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "other",
+   "addressee": "exporter",
+   "modality": "shall",
+   "summary": "Entity List license requirements and other Entity List restrictions apply to foreign entities at least 50 percent owned by listed entities or by entities subject to ownership-based restrictions; the most restrictive applicable requirements govern owned entities. Applies from the effective date.",
+   "applies_from": "September 29, 2025 (effective date)",
+   "evidence": {
+    "provision": "Supplement No. 4 to Part 744 (introductory text), as revised",
+    "quote": "The Entity List license requirements and other Entity List restrictions also apply to any foreign entity that is owned, directly or indirectly, individually or in aggregate, 50 percent or more by one or more listed entities"
+   }
+  },
+  {
+   "type": "verification_gatekeeping",
+   "addressee": "exporter",
+   "modality": "shall",
+   "summary": "Where an exporter, reexporter or transferor cannot determine the ownership percentage of a foreign entity owned by listed entities, it must resolve the Red Flag or obtain a BIS license before proceeding, unless a license exception is available.",
+   "applies_from": "September 29, 2025 (effective date)",
+   "conditional_on": "Ownership percentage cannot be determined",
+   "evidence": {
+    "provision": "§ 744.11(a)(1)",
+    "quote": "they must resolve the Red Flag or obtain a license from BIS prior to proceeding with the export, reexport, or transfer (in-country)"
+   }
+  },
+  {
+   "type": "verification_gatekeeping",
+   "addressee": "exporter",
+   "modality": "shall",
+   "summary": "New Red Flag 29 (Supplement No. 3 to Part 732): where an exporter has knowledge that a foreign entity party to a transaction has listed or restricted owners, it has an affirmative duty to determine the ownership percentage and, if that is not possible, to obtain a license if required.",
+   "applies_from": "September 29, 2025 (effective date)",
+   "conditional_on": "Exporter has knowledge that the foreign entity has listed or restricted owners",
+   "evidence": {
+    "provision": "Supplement No. 3 to Part 732, paragraph (b)29 (Red Flag 29)",
+    "quote": "it has an affirmative duty to determine the percentage of ownership by those entities and if that is not possible, to obtain a license from BIS if required under the Entity List or MEU List"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "exporter",
+   "modality": "shall",
+   "summary": "MEU List and Entity List license requirements in paragraphs (a)(1) and (2) of § 744.21 extend to foreign entities at least 50 percent owned by listed entities or by entities subject to Entity List or MEU List restrictions; the most restrictive requirements apply. Unlisted affiliates owned solely by unlisted military end users are excluded.",
+   "applies_from": "September 29, 2025 (effective date)",
+   "evidence": {
+    "provision": "§ 744.21(a)(3)",
+    "quote": "The MEU List and Entity List license requirements in paragraphs (a)(1) and (2) of this section also apply to any foreign entity that is owned, directly or indirectly, individually or in aggregate, 50 percent or more by one or more listed entities"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "exporter",
+   "modality": "shall",
+   "summary": "MEU List license requirements and other MEU List restrictions apply to foreign entities at least 50 percent owned by listed entities or by entities subject to restrictions based on ownership; no license exceptions are available for listed MEU List entities except those under License Exception GOV specified in § 744.21(c).",
+   "applies_from": "September 29, 2025 (effective date)",
+   "evidence": {
+    "provision": "Supplement No. 7 to Part 744 (introductory text), as revised",
+    "quote": "The MEU List license requirements and other MEU List restrictions also apply to any foreign entity that is owned, directly or indirectly, individually or in aggregate, 50 percent or more by one or more listed entities"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "exporter",
+   "modality": "shall",
+   "summary": "Under § 744.8, EAR controls and the license requirement in paragraph (b) also apply to foreign affiliates at least 50 percent owned by persons blocked under the listed OFAC programs, with the most restrictive requirements applying to multiply-owned entities.",
+   "applies_from": "September 29, 2025 (effective date)",
+   "conditional_on": "Party to the transaction is a person blocked under the programs in § 744.8(a)(1), or a foreign affiliate owned 50 percent or more by such a person",
+   "evidence": {
+    "provision": "§ 744.8(a)(2) and (b)",
+    "quote": "These EAR controls also apply to any foreign affiliate of a listed entity that is owned, directly or indirectly, individually or in aggregate, 50 percent or more by one or more persons blocked pursuant to the programs listed in paragraph (a)(1) of this section."
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "exporter",
+   "modality": "shall",
+   "summary": "Conforming change to the Foreign-Direct Product rules: the end-user scope of the Entity List FDP rules (paragraph (e)) and the Russia/Belarus-Military End User and Procurement FDP rule (paragraph (g)) includes foreign entities at least 50 percent owned by listed or restricted entities, including where only one owner meets the end-user criteria.",
+   "applies_from": "September 29, 2025 (effective date)",
+   "evidence": {
+    "provision": "§ 734.9(e) (and (g))",
+    "quote": "the enduser scope of the Entity List FDP rules also includes any foreign entity that is owned, directly or indirectly, individually or in aggregate, 50 percent or more by one or more listed entities"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "enterprise",
+   "modality": "may",
+   "summary": "A foreign entity owned 50 percent or more by Entity List entities may request that its owner's listing be modified to exclude the requester; all such requests must be in writing and sent to the End-User Review Committee.",
+   "applies_from": "September 29, 2025 (effective date)",
+   "evidence": {
+    "provision": "§ 744.16(e) (Removal or modification requests)",
+    "quote": "may request that its Entity List owner’s entry listing be modified to exclude the requester."
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "An entity listed on the MEU List or Entity List under § 744.21 that petitions for removal or modification must address why it is not a military end user; foreign entities owned by such listed entities may request modification of the owner's listing.",
+   "applies_from": "September 29, 2025 (effective date)",
+   "conditional_on": "Entity petitions BIS for removal or modification of its listing",
+   "evidence": {
+    "provision": "§ 744.21(b)(2)",
+    "quote": "the entity must address why the entity is not a ‘military end user’ for purposes of this section."
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "exporter",
+   "modality": "shall",
+   "summary": "License applications for Affiliates rule entities must specify Affiliates rule in Block 9 of Form BIS-748P, name the listed owning parties and their ownership percentages, and state the method used; where ownership cannot be determined, the applicant must explain its due diligence.",
+   "applies_from": "September 29, 2025 (effective date)",
+   "conditional_on": "License application for a foreign entity owned 50 percent or more by listed or MEU List entities or SDNs, or where ownership cannot be determined",
+   "evidence": {
+    "provision": "Supplement No. 2 to Part 748, paragraph (cc) (and § 748.8(aa))",
+    "quote": "you must specify ‘‘Affiliates rule’’ in Block 9 (Special Purpose) of the BIS–748P"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "exporter",
+   "also_addressees": [
+    "regulator"
+   ],
+   "modality": "encouraged",
+   "summary": "Exporters, reexporters and transferors are advised to act with caution, and should undertake due diligence, when transacting with non-listed foreign entities in which listed entities hold significant ownership interests below 50 percent or that are parent entities of listed entities.",
+   "applies_from": "September 29, 2025 (effective date)",
+   "conditional_on": "Transaction with a foreign entity in which listed parties hold a significant interest below 50 percent, or a parent of a listed entity",
+   "evidence": {
+    "provision": "Supplement No. 8 to Part 744, paragraph (c)",
+    "quote": "Exporters, reexporters, and transferors are advised to act with caution when considering a transaction"
+   }
+  },
+  {
+   "type": "record_keeping",
+   "addressee": "exporter",
+   "modality": "shall",
+   "summary": "Exports, reexports, transfers (in-country) and exports from abroad made under the Temporary General License in General Order No. 7 are subject to the recordkeeping requirements of part 762 of the EAR.",
+   "applies_from": "September 29, 2025 (effective date)",
+   "conditional_on": "Transactions made under the Temporary General License (General Order No. 7); the TGL expires December 1, 2025",
+   "evidence": {
+    "provision": "Supplement No. 1 to Part 736, paragraph (g)(4)",
+    "quote": "are subject to the recordkeeping requirements of part 762 of the EAR."
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Persons using the Temporary General License in General Order No. 7 must comply with all provisions of the EAR, including any additional applicable license requirements; the TGL overcomes only the license requirements of §§ 744.11 and 744.21 for the non-listed affiliate.",
+   "applies_from": "September 29, 2025 (effective date)",
+   "conditional_on": "Use of the Temporary General License in General Order No. 7",
+   "evidence": {
+    "provision": "Supplement No. 1 to Part 736, paragraph (g)(2)",
+    "quote": "Persons must comply with all provisions of the EAR, including any additional applicable license requirements."
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Entity List in Supplement No. 4 to Part 744 is revised and updated on a periodic basis by adding new or amended notifications and deleting notifications no longer in effect.",
+   "applies_from": "September 29, 2025 (effective date)",
+   "evidence": {
+    "provision": "Supplement No. 4 to Part 744 (introductory text), as revised",
+    "quote": "This list is revised and updated on a periodic basis in this supplement by adding new or amended notifications and deleting notifications no longer in effect."
+   }
+  }
+ ],
+ "section_status": {
+  "enforcement": {
+   "status": "not_found",
+   "note": "The text states that exporters, reexporters and transferors can be held liable on a strict liability basis and that knowledge is considered in penalty calculations for EAR violations. It does not describe any sanction regime, its authority, type, maximum penalty or cure period, and it cites no penalty provision (only ECRA 50 U.S.C. 4801-4852 as legal basis)."
+  }
+ },
+ "enforcement": []
+}

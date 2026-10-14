@@ -1,0 +1,563 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "us-ca-ab1043-2025",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (Claude Code retrieval)",
+  "url": "https://downloads.leginfo.legislature.ca.gov/pubinfo_2025.zip#BILL_VERSION_TBL_9521.lob",
+  "retrieved": "2026-10-14",
+  "version": "Chaptered (Chapter 675, Statutes of 2025), version 20250AB104392CHP",
+  "language": "en",
+  "extent": "full",
+  "note": "leginfo.legislature.ca.gov is behind a Cloudflare challenge; text taken from the Legislative Counsel's official pubinfo database export (CAML XML of the chaptered version), converted to plain text including the Legislative Counsel's Digest."
+ },
+ "classification": {
+  "domains": [
+   "minors_child_safety",
+   "data_protection",
+   "platforms_competition"
+  ],
+  "primary_domain": "minors_child_safety",
+  "mechanisms": [
+   "mandate_obligation",
+   "prohibition_ban",
+   "liability_rule"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "browser_os_provider",
+   "platform_operator",
+   "enterprise"
+  ],
+  "affected_roles": [
+   "consumers_users",
+   "minors"
+  ],
+  "decision_margins": [
+   "firm:compliance_process",
+   "firm:product_design_release",
+   "household:data_privacy"
+  ],
+  "territorial_scope": {
+   "types": [
+    "subnational"
+   ],
+   "description": "Applies to California; the account holder definition covers users under 18 in the state.",
+   "evidence": {
+    "provision": "1798.500(a)(1)",
+    "quote": "a parent or legal guardian of a user who is under 18 years of age in the state"
+   }
+  },
+  "agora_harms": [
+   "Violation of civil or human rights, including privacy"
+  ],
+  "agora_incentives": [
+   "Fines"
+  ],
+  "agora_strategies": [
+   "Input controls: Data use"
+  ]
+ },
+ "summary": {
+  "short": "California AB 1043 (Digital Age Assurance Act), operative January 1, 2027, requires operating system providers to obtain account-holder age information and send age-bracket signals to app developers, requires developers to request and apply those signals, and provides Attorney General civil penalties for violations.",
+  "long": "AB 1043 (Statutes of 2025, ch. 675) adds the Digital Age Assurance Act, Civil Code Sections 1798.500 to 1798.505, operative January 1, 2027. Operating system providers must offer an account-setup interface for an account holder to indicate the user's birth date or age, and a real-time interface giving developers a signal of one of four age brackets (under 13, 13 to under 16, 16 to under 18, 18 and over), limiting data sharing to purposes required by the title. Developers must request a signal when an application is downloaded and launched, are deemed to have actual knowledge of the user's age range, and treat the signal as the primary age indicator unless they hold clear and convincing contrary information. Existing devices and applications have a July 1, 2027 compliance date. Operating system providers and covered application stores must not treat their own apps more favorably than third-party apps and must not use third-party data collected under the title to compete against those third parties. Broadband, telecommunications and physical products are excluded. The Attorney General may seek an injunction and civil penalties of up to $2,500 per affected child for negligent violations or $7,500 for intentional violations."
+ },
+ "relations": [
+  {
+   "relation": "part_of",
+   "target_text": "California Civil Code, Part 4 of Division 3",
+   "note": "The act adds Title 1.81.9 (Sections 1798.500 to 1798.505) to the Civil Code.",
+   "evidence": {
+    "provision": "SECTION 1",
+    "quote": "Title 1.81.9 (commencing with Section 1798.500) is added to Part 4 of Division 3 of the Civil Code"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "California Age-Appropriate Design Code Act (Title 1.81.47 (commencing with Section 1798.99.28))",
+   "note": "States that the title's protections are in addition to those of this other act and of any other applicable law.",
+   "evidence": {
+    "provision": "1798.504(d)",
+    "quote": "the California Age-Appropriate Design Code Act (Title 1.81.47 (commencing with Section 1798.99.28))"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Section 3100 (broadband internet access service definition; the code containing it is not named in the text)",
+   "note": "Excludes broadband internet access services, as defined there, from the title's scope.",
+   "evidence": {
+    "provision": "1798.504(f)(1)",
+    "quote": "A broadband internet access service, as defined in Section 3100."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "47 U.S.C. Section 153 (telecommunications service definition)",
+   "note": "Excludes telecommunications services, as defined there, from the title's scope.",
+   "evidence": {
+    "provision": "1798.504(f)(2)",
+    "quote": "A telecommunications service, as defined in Section 153 of Title 47 of the United States Code."
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "Attorney General of California",
+   "role": "designated",
+   "function": "Sole authority to bring civil actions for injunctions and civil penalties under the title, in the name of the people of the State of California.",
+   "evidence": {
+    "provision": "1798.503(a)",
+    "quote": "shall be assessed and recovered only in a civil action brought in the name of the people of the State of California by the Attorney General"
+   }
+  }
+ ],
+ "notes": "Identifier fields use empty strings where the codebook says null, because the schema types them as strings. The Legislative Counsel's Digest is summary text and was not used as a source for operative provisions. Internal tension: “User” is defined as a child who is the primary user of the device (1798.500(i)), yet the signal duties in 1798.501(a)(2)(D) and (b) cover all age brackets, including At least 18 years of age; the text does not reconcile these. Section 1798.505 makes the title operative on January 1, 2027. The relation and entity sections are populated above; the section_status entries are included only because the schema requires them.",
+ "events": [
+  {
+   "event": "signed",
+   "date": "2025-10-13",
+   "date_type": "absolute",
+   "date_text": "Chaptered 2025-10-13",
+   "applies_to": "Assembly Bill No. 1043, Chapter 675, Statutes of 2025",
+   "evidence": {
+    "provision": "Document header",
+    "quote": "Chaptered 2025-10-13"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2027-01-01",
+   "date_type": "absolute",
+   "date_text": "This title shall become operative on January 1, 2027.",
+   "applies_to": "Title 1.81.9 (Civil Code Sections 1798.500 to 1798.505) as a whole, including the operating system provider and developer duties in Sections 1798.501 and 1798.502",
+   "evidence": {
+    "provision": "1798.505",
+    "quote": "This title shall become operative on January 1, 2027."
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2026-01-01",
+   "date_type": "absolute",
+   "date_text": "If an application last updated with updates on or after January 1, 2026, was downloaded to a device before January 1, 2027",
+   "applies_to": "Applications last updated with updates on or after 2026-01-01 that were downloaded before 2027-01-01 and for which the developer has not requested a signal (cohort cut-off for the one-time signal request in Section 1798.502(b))",
+   "evidence": {
+    "provision": "1798.502(b)",
+    "quote": "last updated with updates on or after January 1, 2026"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2027-07-01",
+   "date_type": "absolute",
+   "date_text": "before July 1, 2027, provide an accessible interface",
+   "applies_to": "Operating system providers, for devices with account setup completed before January 1, 2027 (Section 1798.502(a)); developers, for applications described in Section 1798.502(b) that have not requested a signal (request from a covered application store)",
+   "evidence": {
+    "provision": "1798.502(a)",
+    "quote": "before July 1, 2027, provide an accessible interface"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "age",
+   "variable_text": "age of individual qualifying as account holder (adult)",
+   "operator": ">=",
+   "value": 18,
+   "value_text": "at least 18 years of age",
+   "unit": "years",
+   "measurement": "Age of the individual who may act as account holder",
+   "level": "person",
+   "trigger": "scope_definition",
+   "consequence": "An individual aged 18 or over may be an account holder; a parent or legal guardian of a user under 18 also qualifies",
+   "conditions": "Individual must be in the state; a parent of an emancipated minor or a parent not associated with the user's device is excluded (1798.500(a)(2))",
+   "evidence": {
+    "provision": "Civ. Code 1798.500(a)(1)",
+    "quote": "an individual who is at least 18 years of age"
+   }
+  },
+  {
+   "variable": "age",
+   "variable_text": "age of child (under 18)",
+   "operator": "<",
+   "value": 18,
+   "value_text": "under 18 years of age",
+   "unit": "years",
+   "measurement": "Age of the natural person",
+   "level": "person",
+   "trigger": "scope_definition",
+   "consequence": "Defines child; a child who is the primary user of a device is a user for the purposes of the title",
+   "evidence": {
+    "provision": "Civ. Code 1798.500(d)",
+    "quote": "a natural person who is under 18 years of age"
+   }
+  },
+  {
+   "variable": "age",
+   "variable_text": "user under 13 years of age (age bracket)",
+   "operator": "<",
+   "value": 13,
+   "value_text": "under 13 years of age",
+   "unit": "years",
+   "measurement": "Age range indicated by age bracket data for the user",
+   "level": "person",
+   "trigger": "designation_category",
+   "consequence": "Age bracket data indicates the user is under 13 years of age",
+   "conditions": "Age bracket data is nonpersonally identifiable data derived from birth date or age",
+   "evidence": {
+    "provision": "Civ. Code 1798.500(b)(1)",
+    "quote": "Whether a user is under 13 years of age."
+   }
+  },
+  {
+   "variable": "age",
+   "variable_text": "user at least 13 and under 16 years of age (age bracket)",
+   "operator": "range",
+   "value": 13,
+   "value_max": 16,
+   "value_text": "at least 13 years of age and under 16 years of age",
+   "unit": "years",
+   "measurement": "Age range indicated by age bracket data for the user",
+   "level": "person",
+   "trigger": "designation_category",
+   "consequence": "Age bracket data indicates the user is in the 13 to under 16 bracket",
+   "conditions": "Age bracket data is nonpersonally identifiable data derived from birth date or age",
+   "evidence": {
+    "provision": "Civ. Code 1798.500(b)(2)",
+    "quote": "Whether the user is at least 13 years of age and under 16 years of age."
+   }
+  },
+  {
+   "variable": "age",
+   "variable_text": "user at least 16 and under 18 years of age (age bracket)",
+   "operator": "range",
+   "value": 16,
+   "value_max": 18,
+   "value_text": "at least 16 years of age and under 18 years of age",
+   "unit": "years",
+   "measurement": "Age range indicated by age bracket data for the user",
+   "level": "person",
+   "trigger": "designation_category",
+   "consequence": "Age bracket data indicates the user is in the 16 to under 18 bracket",
+   "conditions": "Age bracket data is nonpersonally identifiable data derived from birth date or age",
+   "evidence": {
+    "provision": "Civ. Code 1798.500(b)(3)",
+    "quote": "Whether the user is at least 16 years of age and under 18 years of age."
+   }
+  },
+  {
+   "variable": "age",
+   "variable_text": "user at least 18 years of age (age bracket)",
+   "operator": ">=",
+   "value": 18,
+   "value_text": "at least 18 years of age",
+   "unit": "years",
+   "measurement": "Age range indicated by age bracket data for the user",
+   "level": "person",
+   "trigger": "designation_category",
+   "consequence": "Age bracket data indicates the user is at least 18 years of age",
+   "conditions": "Age bracket data is nonpersonally identifiable data derived from birth date or age",
+   "evidence": {
+    "provision": "Civ. Code 1798.500(b)(4)",
+    "quote": "Whether the user is at least 18 years of age."
+   }
+  },
+  {
+   "variable": "age",
+   "variable_text": "signal category: under 13 years of age (operative API)",
+   "operator": "<",
+   "value": 13,
+   "value_text": "Under 13 years of age",
+   "unit": "years",
+   "measurement": "Category identified by the digital signal provided to a developer",
+   "level": "person",
+   "trigger": "designation_category",
+   "consequence": "Operating system provider's digital signal must identify this category where it pertains to the user",
+   "conditions": "Signal provided via a reasonably consistent real-time application programming interface on request of a developer",
+   "evidence": {
+    "provision": "Civ. Code 1798.501(a)(2)(A)",
+    "quote": "Under 13 years of age."
+   }
+  },
+  {
+   "variable": "age",
+   "variable_text": "signal category: at least 13 and under 16 years of age (operative API)",
+   "operator": "range",
+   "value": 13,
+   "value_max": 16,
+   "value_text": "At least 13 years of age and under 16 years of age",
+   "unit": "years",
+   "measurement": "Category identified by the digital signal provided to a developer",
+   "level": "person",
+   "trigger": "designation_category",
+   "consequence": "Operating system provider's digital signal must identify this category where it pertains to the user",
+   "conditions": "Signal provided via a reasonably consistent real-time application programming interface on request of a developer",
+   "evidence": {
+    "provision": "Civ. Code 1798.501(a)(2)(B)",
+    "quote": "At least 13 years of age and under 16 years of age."
+   }
+  },
+  {
+   "variable": "age",
+   "variable_text": "signal category: at least 16 and under 18 years of age (operative API)",
+   "operator": "range",
+   "value": 16,
+   "value_max": 18,
+   "value_text": "At least 16 years of age and under 18 years of age",
+   "unit": "years",
+   "measurement": "Category identified by the digital signal provided to a developer",
+   "level": "person",
+   "trigger": "designation_category",
+   "consequence": "Operating system provider's digital signal must identify this category where it pertains to the user",
+   "conditions": "Signal provided via a reasonably consistent real-time application programming interface on request of a developer",
+   "evidence": {
+    "provision": "Civ. Code 1798.501(a)(2)(C)",
+    "quote": "At least 16 years of age and under 18 years of age."
+   }
+  },
+  {
+   "variable": "age",
+   "variable_text": "signal category: at least 18 years of age (operative API)",
+   "operator": ">=",
+   "value": 18,
+   "value_text": "At least 18 years of age",
+   "unit": "years",
+   "measurement": "Category identified by the digital signal provided to a developer",
+   "level": "person",
+   "trigger": "designation_category",
+   "consequence": "Operating system provider's digital signal must identify this category where it pertains to the user",
+   "conditions": "Signal provided via a reasonably consistent real-time application programming interface on request of a developer",
+   "evidence": {
+    "provision": "Civ. Code 1798.501(a)(2)(D)",
+    "quote": "At least 18 years of age."
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "Account holder",
+   "defined_in": "Civ. Code 1798.500(a)",
+   "evidence": {
+    "provision": "Civ. Code 1798.500(a)(1)",
+    "quote": "means an individual who is at least 18 years of age or a parent or legal guardian of a user who is under 18 years of age in the state."
+   }
+  },
+  {
+   "term": "Age bracket data",
+   "defined_in": "Civ. Code 1798.500(b)",
+   "evidence": {
+    "provision": "Civ. Code 1798.500(b)",
+    "quote": "means nonpersonally identifiable data derived from a user’s birth date or age for the purpose of sharing with developers of applications"
+   }
+  },
+  {
+   "term": "Application",
+   "defined_in": "Civ. Code 1798.500(c)",
+   "evidence": {
+    "provision": "Civ. Code 1798.500(c)",
+    "quote": "means a software application that may be run or directed by a user on a computer, a mobile device, or any other general purpose computing device"
+   }
+  },
+  {
+   "term": "Child",
+   "defined_in": "Civ. Code 1798.500(d)",
+   "evidence": {
+    "provision": "Civ. Code 1798.500(d)",
+    "quote": "means a natural person who is under 18 years of age."
+   }
+  },
+  {
+   "term": "Covered application store",
+   "defined_in": "Civ. Code 1798.500(e)(1)",
+   "evidence": {
+    "provision": "Civ. Code 1798.500(e)(1)",
+    "quote": "means a publicly available internet website, software application, online service, or platform that distributes and facilitates the download of applications from third-party developers to users"
+   }
+  },
+  {
+   "term": "Covered application store (exclusion)",
+   "defined_in": "Civ. Code 1798.500(e)(2)",
+   "evidence": {
+    "provision": "Civ. Code 1798.500(e)(2)",
+    "quote": "does not mean an online service or platform that distributes extensions, plug-ins, add-ons, or other software applications that run exclusively within a separate host application."
+   }
+  },
+  {
+   "term": "Developer",
+   "defined_in": "Civ. Code 1798.500(f)",
+   "evidence": {
+    "provision": "Civ. Code 1798.500(f)",
+    "quote": "means a person that owns, maintains, or controls an application."
+   }
+  },
+  {
+   "term": "Operating system provider",
+   "defined_in": "Civ. Code 1798.500(g)",
+   "evidence": {
+    "provision": "Civ. Code 1798.500(g)",
+    "quote": "means a person or entity that develops, licenses, or controls the operating system software on a computer, mobile device, or any other general purpose computing device."
+   }
+  },
+  {
+   "term": "Signal",
+   "defined_in": "Civ. Code 1798.500(h)",
+   "evidence": {
+    "provision": "Civ. Code 1798.500(h)",
+    "quote": "means age bracket data sent by a real-time secure application programming interface or operating system to an application."
+   }
+  },
+  {
+   "term": "User",
+   "defined_in": "Civ. Code 1798.500(i)",
+   "evidence": {
+    "provision": "Civ. Code 1798.500(i)",
+    "quote": "means a child that is the primary user of the device."
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "age_verification",
+   "addressee": "browser_os_provider",
+   "modality": "shall",
+   "summary": "Operating system provider shall provide an accessible account-setup interface requiring the account holder to indicate the user's birth date or age, and shall provide a developer that requested it a real-time API signal of the user's age bracket (under 13, 13-15, 16-17, 18 or over).",
+   "applies_from": "January 1, 2027 (Sec. 1798.505)",
+   "evidence": {
+    "provision": "Sec. 1798.501(a)(1)-(2)",
+    "quote": "Provide an accessible interface at account setup that requires an account holder to indicate the birth date, age, or both, of the user of that device"
+   }
+  },
+  {
+   "type": "data_minimization",
+   "addressee": "browser_os_provider",
+   "modality": "shall",
+   "summary": "Operating system provider shall send only the minimum amount of information necessary to comply with the title and shall not share the digital signal information with a third party for a purpose not required by the title.",
+   "applies_from": "January 1, 2027 (Sec. 1798.505)",
+   "evidence": {
+    "provision": "Sec. 1798.501(a)(3)",
+    "quote": "Send only the minimum amount of information necessary to comply with this title"
+   }
+  },
+  {
+   "type": "age_verification",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Developer shall request an age signal for a particular user from an operating system provider or a covered application store when the application is downloaded and launched.",
+   "applies_from": "January 1, 2027 (Sec. 1798.505)",
+   "evidence": {
+    "provision": "Sec. 1798.501(b)(1)",
+    "quote": "A developer shall request a signal with respect to a particular user from an operating system provider or a covered application store when the application is downloaded and launched."
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "enterprise",
+   "modality": "shall_not",
+   "summary": "Developer shall not willfully disregard internal clear and convincing information indicating that a user's age differs from the signal; the signal is the primary indicator of age unless the developer holds contrary clear and convincing information, which it shall then use.",
+   "applies_from": "January 1, 2027 (Sec. 1798.505)",
+   "evidence": {
+    "provision": "Sec. 1798.501(b)(2)(B), (b)(3)",
+    "quote": "A developer shall not willfully disregard internal clear and convincing information"
+   }
+  },
+  {
+   "type": "data_minimization",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Developer shall use the received signal to comply with applicable law, shall not request from an operating system provider or covered application store more information than the minimum necessary, and shall not share the signal with a third party for a purpose not required by the title.",
+   "applies_from": "January 1, 2027 (Sec. 1798.505)",
+   "evidence": {
+    "provision": "Sec. 1798.501(b)(4)",
+    "quote": "shall use that signal to comply with applicable law but shall not do either of the following"
+   }
+  },
+  {
+   "type": "age_verification",
+   "addressee": "browser_os_provider",
+   "modality": "shall",
+   "summary": "For devices whose account setup was completed before January 1, 2027, operating system provider shall provide an accessible interface allowing the account holder to indicate the user's birth date or age.",
+   "applies_from": "before July 1, 2027",
+   "evidence": {
+    "provision": "Sec. 1798.502(a)",
+    "quote": "an operating system provider shall, before July 1, 2027, provide an accessible interface that allows an account holder to indicate the birth date, age, or both"
+   }
+  },
+  {
+   "type": "age_verification",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "For applications last updated on or after January 1, 2026 and downloaded before January 1, 2027, where the developer has not requested a signal for that user, the developer shall request a signal from a covered application store.",
+   "applies_from": "before July 1, 2027",
+   "evidence": {
+    "provision": "Sec. 1798.502(b)",
+    "quote": "the developer shall request a signal from a covered application store with respect to that user before July 1, 2027"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "browser_os_provider",
+   "also_addressees": [
+    "platform_operator"
+   ],
+   "modality": "shall",
+   "summary": "Operating system provider or covered application store shall comply with the title in a nondiscriminatory manner, including by imposing at least the same restrictions and obligations on its own applications and distribution as on third-party applications or distributors.",
+   "applies_from": "January 1, 2027 (Sec. 1798.505)",
+   "evidence": {
+    "provision": "Sec. 1798.504(c)(1)",
+    "quote": "shall impose at least the same restrictions and obligations on its own applications"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "browser_os_provider",
+   "also_addressees": [
+    "platform_operator"
+   ],
+   "modality": "shall_not",
+   "summary": "Operating system provider or covered application store shall not use data collected from a third party in the course of compliance to compete against that third party, give its own store preference, or otherwise use such data or the consent mechanism anticompetitively.",
+   "applies_from": "January 1, 2027 (Sec. 1798.505)",
+   "evidence": {
+    "provision": "Sec. 1798.504(c)(2)",
+    "quote": "shall not use data collected from a third party in the course of compliance with this title to compete against that third party"
+   }
+  }
+ ],
+ "enforcement": [
+  {
+   "sanction_type": "injunction_order",
+   "authority": "Attorney General (civil action in the name of the people of the State of California, per 1798.503(a))",
+   "triggered_by": "Violation of this title (Civil Code 1798.500 to 1798.505) by a person",
+   "max_penalty_text": "injunction",
+   "currency": "USD",
+   "penalty_formula": "Subject to an injunction; no amount stated",
+   "cure_period": "none stated",
+   "evidence": {
+    "provision": "1798.503(a)",
+    "quote": "shall be subject to an injunction"
+   }
+  },
+  {
+   "sanction_type": "civil_penalty",
+   "authority": "Attorney General (civil action in the name of the people of the State of California)",
+   "triggered_by": "Violation of this title by a person; amount scales per affected child and by negligent or intentional violation",
+   "max_penalty_text": "not more than two thousand five hundred dollars ($2,500) per affected child for each negligent violation or not more than seven thousand five hundred dollars ($7,500) per affected child for each intentional violation",
+   "max_penalty_amount": 7500,
+   "currency": "USD",
+   "penalty_formula": "Up to $2,500 per affected child per negligent violation; up to $7,500 per affected child per intentional violation; assessed and recovered only in a civil action brought by the Attorney General",
+   "private_right_of_action": false,
+   "cure_period": "none stated",
+   "evidence": {
+    "provision": "1798.503(a)",
+    "quote": "liable for a civil penalty of not more than two thousand five hundred dollars ($2,500) per affected child for each negligent violation"
+   }
+  }
+ ],
+ "section_status": {}
+}

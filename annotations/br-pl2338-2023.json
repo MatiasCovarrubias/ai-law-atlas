@@ -1,0 +1,1369 @@
+{
+ "schema_version": "1.1",
+ "instrument_id": "br-pl2338-2023",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-opus-5-5 (Claude Code)",
+  "method": "gold set (Opus, Claude Code)",
+  "date": "2026-10-11",
+  "prompt_version": "gold (hand annotation by Claude Opus in Claude Code; no prompt version)"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "Câmara dos Deputados, inteiro teor of PL 2338/2023 (authenticated copy of the Senate autógrafo received by the Chamber, presented 2025-03-17)",
+  "url": "https://www.camara.leg.br/proposicoesWeb/prop_mostrarintegra?codteor=2868197",
+  "retrieved": "2026-10-11",
+  "version": "Senate-passed text (approved by the Federal Senate plenary 2024-12-10 as Substitutivo, Emenda nº 199; autógrafo dated 2025-01-31, sent to the Chamber of Deputies 2025-03-17). No later official Chamber version: the Chamber special committee (PL233823) had not reported as of 2026-10-11.",
+  "language": "pt",
+  "extent": "full",
+  "note": "Arts. 1-80 (the text has no Art. 31). The Senate's own autógrafo PDF is an image-only scan; the Chamber copy was extracted with pdftotext -layout and its per-page stamps (timestamp, barcode, authentication line) removed. Word-level comparison with the Senate redação final (Parecer nº 208/2024-PLEN, texto revisado of 2024-12-19) found no differences in the operative text."
+ },
+ "summary": {
+  "short": "Brazilian bill (Senate-passed text) setting national rules for AI: bans excessive-risk uses, imposes rights, governance and impact-assessment duties for high-risk and general-purpose AI, requires remuneration for copyrighted training content, and creates an ANPD-coordinated supervisory system. Most provisions would apply 730 days after publication.",
+  "long": "PL 2338/2023, approved by the Senate on 10 December 2024 and pending in the Chamber of Deputies, would set national general rules for developing, deploying and using AI systems. It excludes private non-economic use, national defence, pre-market research and testing, and pure data infrastructure. It prohibits excessive-risk systems: harmful behavioural manipulation, crime-risk profiling, child sexual abuse material, public-authority social scoring, autonomous weapons, and real-time remote biometric identification in public spaces outside listed law-enforcement exceptions. For listed high-risk uses (critical infrastructure, education, employment, essential services, justice, health, emotion recognition, migration and others), developers and deployers must document, test, mitigate bias, ensure human oversight and carry out algorithmic impact assessments with public conclusions; affected persons gain rights to explanation, contestation and human review. General-purpose and generative AI developers must make preliminary risk assessments; those with systemic risk must document testing and publish training-data summaries. Developers must disclose and remunerate copyrighted content used, subject to a research mining exception and rightholder opt-out. The ANPD would coordinate a national system (SIA) of sectoral regulators. Fines reach R$50 million or 2% of group revenue in Brazil per infraction. Most rules apply 730 days after publication; prohibitions, general-purpose AI and copyright rules after 180 days."
+ },
+ "classification": {
+  "domains": [
+   "ai_general",
+   "generative_ai",
+   "algorithmic_decision_systems",
+   "biometrics",
+   "synthetic_media_deepfakes",
+   "ip_training_data",
+   "public_sector_ai",
+   "employment_labor",
+   "minors_child_safety"
+  ],
+  "primary_domain": "ai_general",
+  "mechanisms": [
+   "prohibition_ban",
+   "mandate_obligation",
+   "designation_tiering",
+   "disclosure_transparency",
+   "liability_rule",
+   "institution_setup",
+   "standard_setting",
+   "sandbox_pilot",
+   "direct_subsidy_grant"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "ai_developer",
+   "ai_deployer",
+   "ai_provider",
+   "gpai_model_provider",
+   "government_agency",
+   "regulator"
+  ],
+  "affected_roles": [
+   "consumers_users",
+   "general_public",
+   "workers",
+   "minors"
+  ],
+  "decision_margins": [
+   "firm:entry_market_access",
+   "firm:product_design_release",
+   "firm:compliance_process",
+   "firm:input_use",
+   "household:information",
+   "household:employment",
+   "household:data_privacy"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national"
+   ],
+   "description": "National general rules for AI systems developed, deployed or used in Brazil; binds federal, state and municipal public administration as well as private agents.",
+   "evidence": {
+    "provision": "Art. 1, caput",
+    "quote": "Esta Lei estabelece normas gerais de caráter nacional para a governança responsável de sistemas de inteligência artificial (IA) no Brasil"
+   }
+  },
+  "agora_applications": [
+   "Education",
+   "Energy and utilities",
+   "Government: benefits and welfare",
+   "Government: judicial and law enforcement",
+   "Government: military and public safety",
+   "Medicine, life sciences and public health",
+   "Transportation"
+  ],
+  "agora_harms": [
+   "Discrimination",
+   "Harm to health/safety",
+   "Harm to infrastructure",
+   "Harm to property",
+   "Ecological harm",
+   "Detrimental content",
+   "Violation of civil or human rights, including privacy"
+  ],
+  "agora_incentives": [
+   "Fines",
+   "Civil liability"
+  ],
+  "agora_risk_factors": [
+   "Bias",
+   "Interpretability and explainability",
+   "Privacy",
+   "Reliability",
+   "Reliability: Robustness",
+   "Safety",
+   "Security",
+   "Transparency"
+  ],
+  "agora_strategies": [
+   "Tiering",
+   "Tiering: Tiering based on impact",
+   "Tiering: Tiering based on domain of application",
+   "Tiering: Tiering based on generality",
+   "Disclosure",
+   "Disclosure: In deployment",
+   "Disclosure: About inputs",
+   "Disclosure: About incidents",
+   "Evaluation",
+   "Evaluation: Impact assessment",
+   "Evaluation: Conformity assessment",
+   "Evaluation: External auditing",
+   "Evaluation: Post-market monitoring",
+   "Input controls: Data use",
+   "New institution",
+   "Pilots and testbeds",
+   "Convening",
+   "Governance development",
+   "Government study or report",
+   "Government support",
+   "Government support: AI workforce-related",
+   "Government support: For R&D"
+  ]
+ },
+ "events": [
+  {
+   "event": "introduced",
+   "date": "2023-05-03",
+   "date_type": "external",
+   "date_text": "dataApresentacao 2023-05-03; \"Autuado o Projeto de Lei nº 2338/2023\"",
+   "applies_to": "Federal Senate (originating house); bill presented by Senator Rodrigo Pacheco",
+   "external_evidence": {
+    "url": "https://legis.senado.leg.br/dadosabertos/processo/8441243",
+    "description": "Senate open-data record of PL 2338/2023 (process 8441243): presentation date 2023-05-03 and informe legislativo of the same date.",
+    "accessed": "2026-10-11"
+   }
+  },
+  {
+   "event": "committee_approved",
+   "date": "2024-12-05",
+   "date_type": "external",
+   "date_text": "Na 24ª Reunião, realizada nesta data, a Comissão aprova o relatório",
+   "applies_to": "Senate Temporary Internal Committee on AI (CTIA): report approved in the form of the Substitutivo (Emenda nº 199-CCT)",
+   "external_evidence": {
+    "url": "https://legis.senado.leg.br/dadosabertos/processo/8441243",
+    "description": "Senate open-data informe legislativo of 2024-12-05 recording CTIA approval of the rapporteur's report (Parecer da CTIA) with the substitute.",
+    "accessed": "2026-10-11"
+   }
+  },
+  {
+   "event": "passed_chamber",
+   "date": "2024-12-10",
+   "date_type": "external",
+   "date_text": "Sessão Deliberativa Ordinária, realizada em 10/12/2024 ... Aprovada a Emenda nº 199 (Substitutivo)",
+   "applies_to": "Federal Senate plenary: substitute approved and definitively adopted in the supplementary round; bill sent to the Chamber of Deputies",
+   "external_evidence": {
+    "url": "https://legis.senado.leg.br/dadosabertos/processo/8441243",
+    "description": "Senate open-data record: deliberacao 'Aprovada pelo Plenário' on 2024-12-10, destination Câmara dos Deputados; informe of the 10/12/2024 session.",
+    "accessed": "2026-10-11"
+   }
+  },
+  {
+   "event": "introduced",
+   "date": "2025-03-17",
+   "date_type": "external",
+   "date_text": "Apresentação do PL n. 2338/2023 (Projeto de Lei), pelo Senado Federal",
+   "applies_to": "Chamber of Deputies (revising house under art. 65 of the Constitution): autógrafo received via Ofício SF nº 235/2025 and presented; later referred to a special committee",
+   "external_evidence": {
+    "url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2487262/tramitacoes",
+    "description": "Chamber of Deputies open-data tramitação of proposição 2487262: receipt of Ofício nº 235/2025 and presentation on 2025-03-17; status 'Aguardando Parecer' in the special committee as of 2026-09-02.",
+    "accessed": "2026-10-11"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "após decorridos 730 (setecentos e trinta) dias de sua publicação oficial",
+   "anchor": "official publication of the enacted Law + 730 days",
+   "applies_to": "The Law in general (all provisions not listed in Art. 80 §§1-2), including the sanctions of Art. 50",
+   "evidence": {
+    "provision": "Art. 80, caput",
+    "quote": "Esta Lei entra em vigor após decorridos 730 (setecentos e trinta) dias de sua publicação oficial."
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "após 180 (cento e oitenta) dias da publicação desta Lei",
+   "anchor": "publication of the enacted Law + 180 days",
+   "applies_to": "Art. 13 (prohibited excessive-risk systems)",
+   "evidence": {
+    "provision": "Art. 80, §1º, I",
+    "quote": "Entram em vigor após 180 (cento e oitenta) dias da publicação desta Lei: I – o art. 13;"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "após 180 (cento e oitenta) dias da publicação desta Lei",
+   "anchor": "publication of the enacted Law + 180 days",
+   "applies_to": "Chapter IV, Section V (Arts. 29-33: general-purpose and generative AI)",
+   "evidence": {
+    "provision": "Art. 80, §1º, II",
+    "quote": "II – as regras previstas na Seção V do Capítulo IV; e"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "após 180 (cento e oitenta) dias da publicação desta Lei ... salvo o art. 62, que possui vigência imediata",
+   "anchor": "publication of the enacted Law + 180 days",
+   "applies_to": "Chapter X, Section IV (Arts. 63-66: copyright and personality rights), except Art. 62",
+   "evidence": {
+    "provision": "Art. 80, §1º, III",
+    "quote": "III – as regras previstas na Seção IV do Capítulo X, salvo o art. 62, que possui vigência imediata."
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "que possui vigência imediata",
+   "anchor": "publication of the enacted Law (same day)",
+   "applies_to": "Art. 62 (developers' duty to publish a summary of copyrighted content used)",
+   "evidence": {
+    "provision": "Art. 80, §1º, III",
+    "quote": "salvo o art. 62, que possui vigência imediata"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "Entram em vigor na data de publicação desta Lei",
+   "anchor": "publication of the enacted Law (same day)",
+   "applies_to": "Chapter IX (Arts. 45-54: SIA, ANPD and sectoral authority powers, Cria, Cecia), except Art. 50 (sanctions)",
+   "evidence": {
+    "provision": "Art. 80, §2º, I",
+    "quote": "Entram em vigor na data de publicação desta Lei: I – as disposições do Capítulo IX, com exceção do art. 50;"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "Entram em vigor na data de publicação desta Lei ... Seção III; e b) Seção V",
+   "anchor": "publication of the enacted Law (same day)",
+   "applies_to": "Chapter X, Sections III (Arts. 59-61: incentives and sustainability) and V (Art. 67: micro and small enterprises and startups)",
+   "evidence": {
+    "provision": "Art. 80, §2º, II",
+    "quote": "II – as seguintes Seções do Capítulo X: a) Seção III; e b) Seção V."
+   }
+  },
+  {
+   "event": "application",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "A comunicação será devida após a autoridade setorial definir o prazo e os critérios de determinação da gravidade do incidente",
+   "depends_on": "Sectoral authority regulation setting the reporting deadline and severity criteria",
+   "applies_to": "Serious-incident reporting duty of AI agents (Art. 42)",
+   "evidence": {
+    "provision": "Art. 42, §1º",
+    "quote": "A comunicação será devida após a autoridade setorial definir o prazo e os critérios de determinação da gravidade do incidente"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "deverão se adequar em prazo razoável, a ser definido pela autoridade competente",
+   "depends_on": "Period to be set by the competent authority (ANPD)",
+   "applies_to": "Adaptation of high-risk AI systems already implemented by public authorities when the Law is published",
+   "evidence": {
+    "provision": "Art. 23, §4º",
+    "quote": "Sistemas de IA de alto risco já implementados pelo poder público quando da publicação desta Lei deverão se adequar em prazo razoável, a ser definido pela autoridade competente."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "no prazo de 2 (dois) anos",
+   "anchor": "2 years; the start of the period is not stated in the text (publication or entry into force)",
+   "applies_to": "Federal Executive to provide the ANPD with the resources needed, including administrative restructuring",
+   "evidence": {
+    "provision": "Art. 74, I",
+    "quote": "fornecerá, no prazo de 2 (dois) anos, os recursos necessários à ANPD, inclusive para sua reestruturação administrativa"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "a cada quadriênio",
+   "anchor": "every four years; start not stated",
+   "applies_to": "SIA studies and advisory opinion to the National Congress on the need to update the Law (recurring)",
+   "evidence": {
+    "provision": "Art. 79",
+    "quote": "caberá ao SIA, a cada quadriênio, promover estudos e emitir parecer opinativo a ser enviado ao Congresso Nacional"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "other",
+   "variable_text": "pena privativa de liberdade (maximum custodial sentence of the crime in flagrante delicto)",
+   "operator": ">",
+   "value": 2,
+   "value_text": "superior a 2 (dois) anos",
+   "unit": "years of custodial sentence",
+   "currency": null,
+   "indexed": false,
+   "measurement": "Statutory custodial penalty for the crime being committed",
+   "level": "other",
+   "trigger": "exemption",
+   "consequence": "Real-time remote biometric identification in publicly accessible spaces is permitted for flagrante delicto of such crimes, as an exception to the Art. 13 ban",
+   "conditions": "Immediate communication to the judicial authority; use proportional and strictly necessary, under due process and judicial control (Art. 13 §2)",
+   "evidence": {
+    "provision": "Art. 13, IV, c",
+    "quote": "flagrante delito de crimes punidos com pena privativa de liberdade superior a 2 (dois) anos, com imediata comunicação à autoridade judicial"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "microempresas, empresas de pequeno porte e startups",
+   "operator": "<=",
+   "value": null,
+   "value_text": "set by the legal definitions of microempresa, empresa de pequeno porte and startup (not cited in this text)",
+   "unit": "firm size category",
+   "currency": null,
+   "indexed": false,
+   "measurement": "Not specified in this text",
+   "level": "entity",
+   "trigger": "designation_category",
+   "consequence": "Sectoral authorities must set differentiated criteria for AI systems offered by these firms",
+   "conditions": "The firm promotes the development of the national technology industry; criteria consider competitive impact, number of affected users and nature of the activities",
+   "depends_on": "Brazilian statutory definitions of microempresa, empresa de pequeno porte and startup (not cited in this bill); sectoral authority criteria",
+   "evidence": {
+    "provision": "Art. 67",
+    "quote": "As autoridades setoriais deverão definir critérios diferenciados para sistemas de IA ofertados por microempresas, empresas de pequeno porte e startups que promovam o desenvolvimento da indústria tecnológica nacional."
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "micro e pequenas empresas, startups e Instituições Científica, Tecnológicas e de Inovação (ICTs)",
+   "operator": "<=",
+   "value": null,
+   "value_text": "set by the legal definitions of micro and small enterprise and startup (not cited in this text)",
+   "unit": "firm size category",
+   "currency": null,
+   "indexed": false,
+   "measurement": "Not specified in this text",
+   "level": "entity",
+   "trigger": "benefit",
+   "consequence": "Priority access to regulatory sandboxes; authorities may create mechanisms to reduce their regulatory costs",
+   "conditions": "Must meet sandbox eligibility conditions and selection criteria; public and private ICTs qualify regardless of size",
+   "depends_on": "Brazilian statutory definitions of micro and small enterprises and startups (not cited in this bill); sandbox regulations under Art. 56",
+   "evidence": {
+    "provision": "Art. 56, §1º",
+    "quote": "As autoridades setoriais deverão proporcionar a micro e pequenas empresas, startups e Instituições Científica, Tecnológicas e de Inovação (ICTs) públicas e privadas acesso prioritário aos ambientes de testagem"
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "prohibition",
+   "addressee": "ai_developer",
+   "summary": "Development, implementation and use of excessive-risk AI systems is prohibited: harmful behavioural manipulation, exploitation of vulnerabilities, crime-risk assessment from personality or past behaviour, enabling child sexual abuse material, and autonomous weapons. Binds all agents (developers, distributors, deployers).",
+   "applies_from": "180 days after publication (Art. 80 §1 I)",
+   "evidence": {
+    "provision": "Art. 13, caput, I and III",
+    "quote": "São vedados o desenvolvimento, a implementação e o uso de sistemas de IA"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "government_agency",
+   "summary": "Public authorities may not use AI to evaluate, classify or rank people by social behaviour or personality through universal scoring for access to goods, services and public policies in an illegitimate or disproportionate way.",
+   "applies_from": "180 days after publication (Art. 80 §1 I)",
+   "evidence": {
+    "provision": "Art. 13, II",
+    "quote": "pelo poder público, para avaliar, classificar ou ranquear as pessoas naturais, com base no seu comportamento social ou em atributos da sua personalidade, por meio de pontuação universal"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "government_agency",
+   "summary": "Real-time remote biometric identification in publicly accessible spaces is banned except for criminal investigations with prior judicial authorisation, searches for victims and missing persons or imminent threats to life, flagrante delicto of crimes punishable by over 2 years, and recapture of fugitives or execution of warrants; permitted use must be proportional, under judicial control, with review of the algorithmic inference by the responsible official.",
+   "applies_from": "180 days after publication (Art. 80 §1 I)",
+   "conditional_on": "One of the exceptions in Art. 13 IV a-d applies",
+   "evidence": {
+    "provision": "Art. 13, IV and §2º",
+    "quote": "em sistemas de identificação biométrica à distância, em tempo real e em espaços acessíveis ao público, com exceção das seguintes hipóteses"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "ai_developer",
+   "summary": "Developers must adopt measures to prevent their systems being used for the prohibited purposes of Art. 13.",
+   "applies_from": "180 days after publication (Art. 80 §1 I)",
+   "evidence": {
+    "provision": "Art. 13, §1º",
+    "quote": "Os desenvolvedores de sistemas de IA devem adotar medidas para coibir o uso de seus sistemas para as hipóteses descritas no caput deste artigo."
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "ai_deployer",
+   "summary": "Persons affected by any AI system have a right to free, accessible information about their interactions with AI, including its automated nature, given with standardised icons or symbols (except cybersecurity and cyberdefence systems).",
+   "applies_from": "730 days after publication (Art. 80 caput)",
+   "evidence": {
+    "provision": "Art. 5, I and §1º",
+    "quote": "direito à informação quanto às suas interações com sistemas de IA, de forma acessível, gratuita e de fácil compreensão, inclusive sobre caráter automatizado da interação"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "ai_developer",
+   "summary": "AI systems intended for vulnerable groups must be transparent throughout their life cycle, use simple, age- and capacity-appropriate language and be implemented in those groups' best interest.",
+   "applies_from": "730 days after publication (Art. 80 caput)",
+   "evidence": {
+    "provision": "Art. 5, §2º",
+    "quote": "Os sistemas de IA que se destinem a grupos vulneráveis deverão, em todas as etapas de seu ciclo de vida, ser transparentes e adotar linguagem simples, clara e apropriada à idade e à capacidade cognitiva"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "ai_deployer",
+   "summary": "Persons affected by high-risk AI have rights to an explanation of decisions, recommendations or predictions, to contest them and to human review; explanations must be free, in simple language and within a reasonable time, under procedures set by the competent authority (simplified for small firms).",
+   "applies_from": "730 days after publication (Art. 80 caput)",
+   "evidence": {
+    "provision": "Arts. 6-7",
+    "quote": "A pessoa ou grupo afetado por sistema de IA de alto risco tem os seguintes direitos: I – direito à explicação sobre a decisão, a recomendação ou a previsão feitas pelo sistema"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "ai_deployer",
+   "summary": "Agents of high-risk AI must inform affected persons, clearly and accessibly, of the procedures for exercising their rights.",
+   "applies_from": "730 days after publication (Art. 80 caput)",
+   "evidence": {
+    "provision": "Art. 9",
+    "quote": "Os agentes de IA de alto risco informarão, de forma suficiente, objetiva, clara e acessível, os procedimentos necessários para o exercício dos direitos descritos neste Capítulo."
+   }
+  },
+  {
+   "type": "human_oversight",
+   "addressee": "ai_deployer",
+   "summary": "High-risk AI systems must be subject to human oversight enabling responsible persons to understand, interpret, decide and intervene; where oversight is demonstrably impossible or disproportionate, effective alternative measures are required.",
+   "applies_from": "730 days after publication (Art. 80 caput)",
+   "evidence": {
+    "provision": "Art. 8",
+    "quote": "A supervisão humana de sistemas de IA de alto risco buscará prevenir ou minimizar os riscos para direitos e liberdades das pessoas ou grupos afetados"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "ai_developer",
+   "summary": "All AI agents (developers, distributors, deployers) must ensure the security of systems and respect for the rights of affected persons, as regulated.",
+   "applies_from": "730 days after publication (Art. 80 caput)",
+   "evidence": {
+    "provision": "Art. 17",
+    "quote": "Os agentes de IA deverão garantir a segurança dos sistemas e o atendimento dos direitos de pessoas ou grupos afetados, nos termos de regulamento."
+   }
+  },
+  {
+   "type": "record_keeping",
+   "addressee": "ai_deployer",
+   "summary": "Deployers placing high-risk systems on the market must keep life-cycle documentation, monitor outputs for accuracy, robustness and discriminatory results, document tests and the degree of human oversight, mitigate bias and provide information to interpret results.",
+   "applies_from": "730 days after publication (Art. 80 caput)",
+   "conditional_on": "Sectoral authorities may relax or waive these obligations depending on the agent's role in the value chain (Art. 18 §1)",
+   "evidence": {
+    "provision": "Art. 18, I",
+    "quote": "o desenvolvedor e o aplicador, ao introduzirem ou colocarem em circulação no mercado sistema de alto risco, adotarão, entre outras, as seguintes medidas de governança"
+   }
+  },
+  {
+   "type": "testing_evaluation",
+   "addressee": "ai_developer",
+   "summary": "Developers of high-risk systems must keep records of governance measures for deployers, log system operation, test for safety, adopt technical measures for explainability, mitigate bias and be transparent about governance policies.",
+   "applies_from": "730 days after publication (Art. 80 caput)",
+   "conditional_on": "Sectoral authorities may relax or waive these obligations depending on the agent's role in the value chain (Art. 18 §1)",
+   "evidence": {
+    "provision": "Art. 18, II",
+    "quote": "manutenção de registro das medidas de governança adotadas no desenvolvimento do sistema de IA, para prestação das informações necessárias ao aplicador"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "ai_provider",
+   "summary": "Distributors must support and verify that a high-risk AI system complies with the governance measures of the Law before it is placed on the market.",
+   "applies_from": "730 days after publication (Art. 80 caput)",
+   "evidence": {
+    "provision": "Art. 18, §2º (also Art. 16, §3º)",
+    "quote": "Os distribuidores deverão apoiar e verificar se o sistema de IA cumpre as medidas de governança previstas nesta Lei, antes de o sistema ser colocado em circulação no mercado"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "ai_developer",
+   "summary": "Agents in the AI value chain must cooperate, sharing information, technical access and assistance needed for high-risk governance obligations; a deployer or distributor that substantially modifies a system or changes its purpose is treated as its developer.",
+   "applies_from": "730 days after publication (Art. 80 caput)",
+   "evidence": {
+    "provision": "Art. 18, §§3º and 5º",
+    "quote": "Os agentes da cadeia de valor de sistema ou aplicação de IA devem cooperar entre si, disponibilizando as informações necessárias"
+   }
+  },
+  {
+   "type": "labelling_watermarking",
+   "addressee": "ai_developer",
+   "summary": "AI systems that generate synthetic content must embed an identifier allowing verification of authenticity, provenance, modification or transmission, considering the state of the art and context of use; artistic works may be labelled in credits or metadata.",
+   "applies_from": "730 days after publication (Art. 80 caput)",
+   "evidence": {
+    "provision": "Art. 19, caput and §3º",
+    "quote": "Quando o sistema de IA gerar conteúdo sintético, deverá, considerando o estado da arte do desenvolvimento tecnológico e o contexto de uso, incluir identificador em tais conteúdos"
+   }
+  },
+  {
+   "type": "impact_assessment",
+   "addressee": "ai_developer",
+   "summary": "The developer that places a high-risk AI system on the market must carry out an algorithmic impact assessment beforehand and update it periodically over the life cycle.",
+   "applies_from": "730 days after publication (Art. 80 caput)",
+   "conditional_on": "System or its use is high-risk; sectoral authority may relax the assessment (Art. 25 §4)",
+   "evidence": {
+    "provision": "Arts. 25-26",
+    "quote": "A avaliação de impacto algorítmico de sistemas de IA é obrigação do desenvolvedor ou do aplicador que introduzir ou colocar sistema de IA em circulação no mercado, sempre que o sistema ou o seu uso forem de alto risco"
+   }
+  },
+  {
+   "type": "impact_assessment",
+   "addressee": "ai_deployer",
+   "summary": "The deployer that places a high-risk AI system on the market must carry out an algorithmic impact assessment beforehand, according to its role in the chain, and update it periodically.",
+   "applies_from": "730 days after publication (Art. 80 caput)",
+   "conditional_on": "System or its use is high-risk; sectoral authority may relax the assessment (Art. 25 §4)",
+   "evidence": {
+    "provision": "Art. 25, caput and §3º",
+    "quote": "A avaliação deverá ser realizada em momento prévio e de acordo com o contexto específico da introdução ou colocação em circulação no mercado do sistema de IA."
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "ai_developer",
+   "summary": "Developers of high-risk AI must share their preliminary and algorithmic impact assessments with the sectoral authority.",
+   "applies_from": "730 days after publication (Art. 80 caput)",
+   "evidence": {
+    "provision": "Art. 25, §1º",
+    "quote": "O desenvolvedor de sistema de IA de alto risco deverá, nos termos de regulamento, compartilhar com a autoridade setorial as avaliações preliminares e de impacto algorítmico"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "ai_developer",
+   "summary": "Conclusions of algorithmic impact assessments must be made public, subject to trade secrets; the competent authority keeps a public database of high-risk AI impact assessments (Art. 44).",
+   "applies_from": "730 days after publication (Art. 80 caput)",
+   "evidence": {
+    "provision": "Art. 28",
+    "quote": "As conclusões da avaliação de impacto algorítmico serão públicas, observados os segredos industrial e comercial, nos termos de regulamento."
+   }
+  },
+  {
+   "type": "incident_reporting",
+   "addressee": "ai_developer",
+   "summary": "AI agents that learn after market placement of an unexpected and relevant risk to people's rights must notify the sectoral authority and other agents in the chain immediately, and notify affected persons where necessary.",
+   "applies_from": "730 days after publication (Art. 80 caput)",
+   "evidence": {
+    "provision": "Art. 25, §7º",
+    "quote": "tiverem conhecimento de risco ou impacto inesperado e relevante que o sistema apresente a direitos de pessoas naturais comunicarão o fato imediatamente à autoridade setorial"
+   }
+  },
+  {
+   "type": "incident_reporting",
+   "addressee": "ai_developer",
+   "summary": "AI agents must report serious security incidents (risk to life or physical integrity, disruption of critical infrastructure, serious property or environmental damage, serious violations of fundamental rights, information integrity or the democratic process) to the sectoral authority.",
+   "applies_from": "When the sectoral authority sets the deadline and severity criteria (Art. 42 §1); not before 730 days after publication",
+   "conditional_on": "Sectoral authority defines the reporting deadline and severity criteria",
+   "evidence": {
+    "provision": "Art. 42",
+    "quote": "O agente de IA comunicará, em prazo a ser estabelecido, à autoridade setorial a ocorrência de grave incidente de segurança"
+   }
+  },
+  {
+   "type": "risk_assessment",
+   "addressee": "gpai_model_provider",
+   "summary": "Developers of general-purpose and generative AI systems must document development and carry out a preliminary assessment of expected risk levels, including potential systemic risk.",
+   "applies_from": "180 days after publication (Art. 80 §1 II)",
+   "conditional_on": "Competent authority may simplify or waive the obligations of Section V (Art. 33)",
+   "evidence": {
+    "provision": "Art. 29",
+    "quote": "O desenvolvedor de sistemas de IA de propósito geral e generativa deverá realizar, além da documentação pertinente sobre o desenvolvimento do sistema, sua avaliação preliminar"
+   }
+  },
+  {
+   "type": "testing_evaluation",
+   "addressee": "gpai_model_provider",
+   "summary": "Before commercial release, developers of general-purpose and generative AI with systemic risk must describe the model, document tests and analyses of foreseeable risks, document residual unmitigable risks, and provide technical documentation and instructions for downstream agents; applies also to open-source and API distribution.",
+   "applies_from": "180 days after publication (Art. 80 §1 II)",
+   "conditional_on": "System has systemic risk",
+   "evidence": {
+    "provision": "Art. 30, I-III and VII, §1º",
+    "quote": "O desenvolvedor de sistemas de IA de propósito geral e generativa com risco sistêmico, deve, antes de sua disponibilização ou introdução no mercado para fins comerciais, garantir o cumprimento dos seguintes requisitos"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "gpai_model_provider",
+   "summary": "Developers of general-purpose and generative AI with systemic risk must publish a summary of the training dataset.",
+   "applies_from": "180 days after publication (Art. 80 §1 II)",
+   "conditional_on": "System has systemic risk",
+   "evidence": {
+    "provision": "Art. 30, V",
+    "quote": "publicar resumo do conjunto de dados utilizados no treinamento do sistema, nos termos de regulamentação"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "gpai_model_provider",
+   "summary": "Developers of general-purpose and generative AI with systemic risk may process only datasets collected and processed lawfully and under adequate data governance, especially personal data under the LGPD.",
+   "applies_from": "180 days after publication (Art. 80 §1 II)",
+   "conditional_on": "System has systemic risk",
+   "evidence": {
+    "provision": "Art. 30, IV",
+    "quote": "processar e incorporar apenas conjuntos de dados coletados e tratados em conformidade com as exigências legais e sujeitos a uma adequada governança de dados"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "gpai_model_provider",
+   "summary": "Developers of general-purpose and generative AI with systemic risk must design systems, following applicable standards, to reduce energy and resource use and waste and increase energy efficiency.",
+   "applies_from": "180 days after publication (Art. 80 §1 II)",
+   "conditional_on": "System has systemic risk",
+   "evidence": {
+    "provision": "Art. 30, VI",
+    "quote": "reduzir a utilização de energia, a utilização de recursos e os resíduos, bem como para aumentar a eficiência energética e a eficiência global do sistema"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "gpai_model_provider",
+   "summary": "Developers of general-purpose and generative AI offered to third parties (e.g., via API) must cooperate with downstream agents for risk mitigation and compliance with rights while the service is provided.",
+   "applies_from": "180 days after publication (Art. 80 §1 II)",
+   "evidence": {
+    "provision": "Art. 32",
+    "quote": "como aqueles fornecidos por meio de API ou outros modelos de integração, devem cooperar, na medida de sua participação, com os demais agentes de IA"
+   }
+  },
+  {
+   "type": "cooperation_with_authority",
+   "addressee": "ai_developer",
+   "summary": "CADE may order developers to grant access to training, validation and test datasets of high-risk AI systems when investigating concrete indications of infringements of the economic order.",
+   "applies_from": "On publication (Chapter IX, Art. 80 §2 I)",
+   "conditional_on": "CADE investigation of concrete indications of antitrust infringement",
+   "evidence": {
+    "provision": "Art. 49, §4º; Art. 52, parágrafo único",
+    "quote": "o Cade poderá ordenar aos desenvolvedores que seja concedido acesso aos conjuntos de dados de treinamento, validação e teste utilizados para o desenvolvimento dos sistemas de IA de alto risco"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "ai_deployer",
+   "summary": "Public and private entities must prioritise AI systems and applications aimed at energy efficiency and rational use of natural resources.",
+   "applies_from": "On publication (Chapter X Section III, Art. 80 §2 II)",
+   "evidence": {
+    "provision": "Art. 60",
+    "quote": "Entidades públicas e privadas devem priorizar a utilização de sistemas e aplicações de IA que visem à eficiência energética e à racionalização do consumo de recursos naturais."
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "ai_developer",
+   "summary": "AI developers that use copyright-protected content must publish, on an accessible website, a summary of the protected content used in development (mining, training, retraining, testing, validation, application).",
+   "applies_from": "On publication (Art. 80 §1 III, immediate effect of Art. 62)",
+   "evidence": {
+    "provision": "Art. 62",
+    "quote": "O desenvolvedor de IA que utilizar conteúdo protegido por direitos de autor e conexos deverá informar sobre os conteúdos protegidos utilizados nos processos de desenvolvimento dos sistemas de IA, por meio da publicação de sumário"
+   }
+  },
+  {
+   "type": "eligibility_condition",
+   "addressee": "ai_developer",
+   "summary": "Text and data mining of protected content for AI research and development by scientific, research and educational organisations, museums, public archives and libraries is not infringement if access was lawful, non-commercial and proportionate; copies must be stored securely and only as long as needed, and works may not be displayed or disseminated. Excludes institutions linked to for-profit AI providers.",
+   "applies_from": "180 days after publication (Art. 80 §1 III)",
+   "evidence": {
+    "provision": "Art. 63",
+    "quote": "Não constitui ofensa aos direitos de autor e conexos a utilização automatizada de conteúdos protegidos em processos de mineração de textos e dados para os fins de pesquisa e desenvolvimento de sistemas de IA"
+   }
+  },
+  {
+   "type": "consent",
+   "addressee": "ai_developer",
+   "summary": "Rightholders may prohibit the use of their content in AI development outside the Art. 63 exception; AI agents remain liable for damages for use after such prohibition.",
+   "applies_from": "180 days after publication (Art. 80 §1 III)",
+   "evidence": {
+    "provision": "Art. 64",
+    "quote": "O titular de direitos de autor e conexos poderá proibir a utilização dos conteúdos de sua titularidade no desenvolvimento de sistemas de IA nas hipóteses não contempladas pelo art. 63 desta Lei."
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "ai_developer",
+   "summary": "AI agents that use protected content in mining, training or development must remunerate rightholders, with collective or direct negotiation and remuneration reflecting reasonableness, proportionality, the agent's size and competitive effects; due only to rightholders domiciled in Brazil or in reciprocal countries.",
+   "applies_from": "180 days after publication (Art. 80 §1 III)",
+   "conditional_on": "Rightholder is Brazilian or foreign domiciled in Brazil, or domiciled in a country granting reciprocity (Art. 65 §1)",
+   "evidence": {
+    "provision": "Art. 65",
+    "quote": "O agente de IA que utilizar conteúdos protegidos por direitos de autor e conexos em processos de mineração, treinamento ou desenvolvimento de sistemas de IA deve remunerar os titulares desses conteúdos em virtude dessa utilização"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "ai_developer",
+   "summary": "Use by AI systems of images, audio, voice or video depicting or identifying natural persons must respect personality rights under the Civil Code.",
+   "applies_from": "180 days after publication (Art. 80 §1 III)",
+   "evidence": {
+    "provision": "Art. 66",
+    "quote": "A utilização de conteúdos de imagem, áudio, voz ou vídeo que retratem ou identifiquem pessoas naturais pelos sistemas de IA deverá respeitar os direitos da personalidade"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "summary": "Public authorities developing, contracting or adopting high-risk AI must ensure access to databases and full data portability, and minimum standardisation of data architecture for interoperability.",
+   "applies_from": "730 days after publication (Art. 80 caput)",
+   "evidence": {
+    "provision": "Art. 22",
+    "quote": "Ao desenvolver, contratar ou adotar os sistemas de IA de alto risco, o poder público deve garantir"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "summary": "All public administration bodies (and public-service concessionaires, and the Legislative and Judiciary in administrative functions) using high-risk AI must log who used the system and why, guarantee explanation and human review of decisions with relevant legal effects, and publish preliminary assessments.",
+   "applies_from": "730 days after publication (Art. 80 caput); existing systems within a period set by the competent authority (Art. 23 §4)",
+   "evidence": {
+    "provision": "Art. 23, caput, §§3º and 5º",
+    "quote": "todos os entes da Administração Pública direta e indireta, ao desenvolver ou utilizar sistemas de IA de alto risco, adotarão as seguintes medidas"
+   }
+  },
+  {
+   "type": "impact_assessment",
+   "addressee": "government_agency",
+   "summary": "Public use of biometric systems for identification must be preceded by an algorithmic impact assessment; a system whose risks cannot be eliminated or substantially mitigated must be discontinued.",
+   "applies_from": "730 days after publication (Art. 80 caput)",
+   "evidence": {
+    "provision": "Art. 23, §§1º-2º",
+    "quote": "A utilização de sistemas biométricos para fins de identificação deverá observar os princípios e as medidas de governança previstos nesta Lei e será precedida de avaliação de impacto algorítmico"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "summary": "The federal Executive must set minimum transparency standards for AI systems used by federal public bodies and monitor compliance.",
+   "applies_from": "730 days after publication (Art. 80 caput)",
+   "evidence": {
+    "provision": "Art. 24",
+    "quote": "Caberá ao Poder Executivo federal fixar padrões mínimos de transparência para os sistemas de IA utilizados por órgãos e entidades do setor público federal"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "regulator",
+   "summary": "The SIA must regulate the list of high-risk AI systems and identify new high-risk uses on stated criteria, after social participation and regulatory impact analysis; the competent authority publishes the consolidated list and sectoral authorities set sector lists and receive impact assessments.",
+   "applies_from": "730 days after publication (Art. 80 caput)",
+   "evidence": {
+    "provision": "Arts. 15-16",
+    "quote": "Caberá ao SIA regulamentar a classificação da lista dos sistemas de IA de alto risco, bem como identificar novas hipóteses de aplicação de alto risco"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "regulator",
+   "summary": "As SIA coordinator, the competent authority (ANPD) must represent Brazil internationally, issue binding general norms (information disclosure, impact assessment procedures, incident reporting), receive anonymous complaints and publish annual reports; it is the residual regulator where no sectoral regulator exists.",
+   "applies_from": "On publication (Chapter IX, Art. 80 §2 I)",
+   "evidence": {
+    "provision": "Arts. 46-47",
+    "quote": "expedir, em colaboração com os demais integrantes do SIA, normas vinculantes de caráter geral sobre os seguintes temas"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "regulator",
+   "summary": "Sectoral authorities exercise regulatory, supervisory and sanctioning powers over AI in their sectors, issue specific rules including for high-risk activities, and supervise governance measures for systems they classify as high-risk.",
+   "applies_from": "On publication (Chapter IX, Art. 80 §2 I)",
+   "evidence": {
+    "provision": "Art. 48",
+    "quote": "exercer competência regulatória, fiscalizatória e sancionatória, conforme sua esfera de competência outorgada por lei, para desenvolvimento, implementação e uso de sistemas de IA"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "regulator",
+   "summary": "SIA bodies must immediately pass to CADE any information found during supervision that may be relevant to competition law enforcement.",
+   "applies_from": "On publication (Chapter IX, Art. 80 §2 I)",
+   "evidence": {
+    "provision": "Art. 52 (also Art. 49, §3º)",
+    "quote": "Os órgãos e entidades integrantes do SIA devem comunicar imediatamente ao Conselho Administrativo de Defesa Econômica (Cade) quaisquer informações identificadas no decurso das atividades de fiscalização"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "regulator",
+   "summary": "The competent authority must create and maintain a publicly accessible database of high-risk AI containing the public documents of impact assessments.",
+   "applies_from": "730 days after publication (Art. 80 caput)",
+   "evidence": {
+    "provision": "Art. 44",
+    "quote": "Cabe à autoridade competente, em colaboração com as autoridades setoriais, a criação e a manutenção de base de dados de IA de alto risco, acessível ao público"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "regulator",
+   "summary": "The competent authority must regulate, after public consultation and regulatory impact analysis, the procedure and criteria for administrative sanctions and publish dosimetry methodologies.",
+   "applies_from": "730 days after publication (Art. 80 caput)",
+   "evidence": {
+    "provision": "Art. 50, §6º",
+    "quote": "A autoridade competente definirá, por meio de regulamento próprio, o procedimento de apuração e os critérios de aplicação das sanções administrativas a infrações a esta Lei"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "regulator",
+   "summary": "The competent authority and sectoral authorities must promote and authorise AI regulatory sandboxes, regulate their procedures, and may waive rules under their competence for participants.",
+   "applies_from": "730 days after publication (Art. 80 caput)",
+   "evidence": {
+    "provision": "Arts. 55-56",
+    "quote": "A autoridade competente e as autoridades setoriais que compõem o SIA deverão promover e autorizar o funcionamento de ambiente regulatório experimental para inovação em inteligência artificial (sandbox regulatório de IA)"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "regulator",
+   "summary": "The competent authority, sectoral authorities and Cria, with the Ministry of Labour, must develop guidelines to mitigate negative impacts of AI on workers (job displacement), enhance positive impacts, value collective bargaining and foster training.",
+   "applies_from": "730 days after publication (Art. 80 caput)",
+   "evidence": {
+    "provision": "Art. 58",
+    "quote": "em cooperação com o Ministério do Trabalho, deverão desenvolver diretrizes para, entre outros objetivos"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "regulator",
+   "summary": "Sectoral authorities must set differentiated criteria for AI systems offered by micro and small enterprises and startups.",
+   "applies_from": "On publication (Chapter X Section V, Art. 80 §2 II)",
+   "evidence": {
+    "provision": "Art. 67",
+    "quote": "As autoridades setoriais deverão definir critérios diferenciados para sistemas de IA ofertados por microempresas, empresas de pequeno porte e startups"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "summary": "Public administration at all levels must implement AI education, training and requalification programmes, digital literacy (prioritising basic education) and support for workers affected by AI.",
+   "applies_from": "730 days after publication (Art. 80 caput)",
+   "evidence": {
+    "provision": "Art. 70",
+    "quote": "A administração pública, no âmbito da União, dos Estados, do Distrito Federal e dos Municípios, implementará programas de"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "summary": "The Executive must provide the ANPD with resources within 2 years and define the list of sectoral authorities in the SIA, the composition of Cria and Cecia, and the role of the federal mediation chamber.",
+   "applies_from": "730 days after publication (Art. 80 caput); resources within 2 years (start not stated)",
+   "evidence": {
+    "provision": "Art. 74",
+    "quote": "definirá a lista de órgãos e entidades que figurarão como autoridades setoriais integrantes do SIA"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "regulator",
+   "summary": "The SIA must, every four years, carry out studies and send Congress an advisory opinion on the need to update the Law.",
+   "applies_from": "730 days after publication (Art. 80 caput)",
+   "evidence": {
+    "provision": "Art. 79",
+    "quote": "promover estudos e emitir parecer opinativo a ser enviado ao Congresso Nacional quanto à necessidade de aprimoramento das normas estabelecidas nesta Lei"
+   }
+  }
+ ],
+ "enforcement": [
+  {
+   "sanction_type": "administrative_fine",
+   "authority": "Competent authority (ANPD) and sectoral authorities within their legal remit (Arts. 47-48)",
+   "triggered_by": "Infringements by AI agents of the rules of the Law",
+   "max_penalty_text": "multa simples, limitada, no total, a R$ 50.000.000,00 (cinquenta milhões de reais) por infração, sendo, no caso de pessoa jurídica de direito privado, de até 2% (dois por cento) de seu faturamento bruto",
+   "max_penalty_amount": 50000000,
+   "currency": "BRL",
+   "penalty_formula": "Per infraction: for private legal persons up to 2% of gross revenue of the entity, its group or conglomerate in Brazil in the last fiscal year, excluding taxes, capped at R$50 million in total; graded by severity, good faith, advantage, economic condition, recidivism, damage, cooperation, governance and corrective measures (Art. 50 §1)",
+   "penalty_reference": null,
+   "private_right_of_action": false,
+   "cure_period": null,
+   "evidence": {
+    "provision": "Art. 50, II",
+    "quote": "multa simples, limitada, no total, a R$ 50.000.000,00 (cinquenta milhões de reais) por infração, sendo, no caso de pessoa jurídica de direito privado, de até 2% (dois por cento) de seu faturamento bruto, de seu grupo ou conglomerado no Brasil no seu último exercício, excluídos os tributos"
+   }
+  },
+  {
+   "sanction_type": "other",
+   "authority": "Competent authority (ANPD) and sectoral authorities within their legal remit (Arts. 47-48)",
+   "triggered_by": "Infringements by AI agents of the rules of the Law",
+   "max_penalty_text": "proibição ou restrição para participar do regime de sandbox regulatório previsto nesta Lei, por até 5 (cinco) anos",
+   "max_penalty_amount": null,
+   "currency": null,
+   "penalty_formula": "Warning; publication of the infringement once confirmed; prohibition or restriction from the regulatory sandbox for up to 5 years. Also applicable to public bodies (Art. 50 §7)",
+   "penalty_reference": null,
+   "private_right_of_action": false,
+   "cure_period": null,
+   "evidence": {
+    "provision": "Art. 50, I, III-IV",
+    "quote": "I – advertência;"
+   }
+  },
+  {
+   "sanction_type": "injunction_order",
+   "authority": "Competent authority (ANPD) and sectoral authorities within their legal remit (Arts. 47-48)",
+   "triggered_by": "Infringements by AI agents of the rules of the Law",
+   "max_penalty_text": "suspensão parcial ou total, temporária ou definitiva, do desenvolvimento, fornecimento ou operação do sistema de IA",
+   "max_penalty_amount": null,
+   "currency": null,
+   "penalty_formula": "Partial or total, temporary or permanent suspension of development, supply or operation of the AI system; prohibition of processing certain databases. Also applicable to public bodies (Art. 50 §7)",
+   "penalty_reference": null,
+   "private_right_of_action": false,
+   "cure_period": null,
+   "evidence": {
+    "provision": "Art. 50, V-VI",
+    "quote": "suspensão parcial ou total, temporária ou definitiva, do desenvolvimento, fornecimento ou operação do sistema de IA; VI – proibição de tratamento de determinadas bases de dados."
+   }
+  },
+  {
+   "sanction_type": "administrative_fine",
+   "authority": "Competent authority (ANPD) and sectoral authorities",
+   "triggered_by": "Development, supply or use of excessive-risk AI systems (Art. 13)",
+   "max_penalty_text": "haverá, no mínimo, aplicação de multa e, no caso de pessoa jurídica, suspensão parcial ou total, provisória ou definitiva, de suas atividades",
+   "max_penalty_amount": null,
+   "currency": null,
+   "penalty_formula": "Mandatory minimum: a fine (within the Art. 50 II cap) and, for legal persons, partial or total, provisional or permanent suspension of activities",
+   "penalty_reference": "Art. 50, II (fine cap)",
+   "private_right_of_action": false,
+   "cure_period": null,
+   "evidence": {
+    "provision": "Art. 50, §4º",
+    "quote": "No caso do desenvolvimento, fornecimento ou utilização de sistemas de IA de risco excessivo, haverá, no mínimo, aplicação de multa e, no caso de pessoa jurídica, suspensão parcial ou total, provisória ou definitiva, de suas atividades."
+   }
+  },
+  {
+   "sanction_type": "injunction_order",
+   "authority": "Competent authority (ANPD)",
+   "triggered_by": "Indication or well-founded fear that the AI agent causes or may cause irreparable harm, or renders the final outcome of the proceeding ineffective",
+   "max_penalty_text": "medidas preventivas, incluída multa cominatória, observado o limite total a que se refere o inciso II do caput",
+   "max_penalty_amount": null,
+   "currency": null,
+   "penalty_formula": "Preventive measures, including a periodic penalty payment, before or during proceedings, within the R$50 million total cap",
+   "penalty_reference": "Art. 50, II (total cap)",
+   "private_right_of_action": false,
+   "cure_period": null,
+   "evidence": {
+    "provision": "Art. 50, §2º",
+    "quote": "Antes ou durante o processo administrativo de que trata o § 1º deste artigo, poderá a autoridade competente adotar medidas preventivas, incluída multa cominatória"
+   }
+  },
+  {
+   "sanction_type": "injunction_order",
+   "authority": "Sectoral authority",
+   "triggered_by": "Serious security incident reported under Art. 42",
+   "max_penalty_text": null,
+   "max_penalty_amount": null,
+   "currency": null,
+   "penalty_formula": "Order to the agent to adopt measures to reverse or mitigate the effects of the incident",
+   "penalty_reference": null,
+   "private_right_of_action": false,
+   "cure_period": null,
+   "evidence": {
+    "provision": "Art. 42, §2º",
+    "quote": "A autoridade setorial verificará a gravidade do incidente e poderá, caso necessário, determinar ao agente a adoção de providências e medidas para reverter ou mitigar os efeitos do incidente."
+   }
+  },
+  {
+   "sanction_type": "private_damages",
+   "authority": "Courts",
+   "triggered_by": "Damage caused by AI systems (consumer relations under the Consumer Defence Code; otherwise the Civil Code and special legislation)",
+   "max_penalty_text": null,
+   "max_penalty_amount": null,
+   "currency": null,
+   "penalty_formula": "Full compensation of damage (Art. 50 §5); the judge reverses the burden of proof when the victim is hyposufficient or the system's characteristics make proof excessively burdensome (Art. 37); rights may be asserted individually or collectively in court (Art. 11 II)",
+   "penalty_reference": "Lei nº 8.078/1990 (Código de Defesa do Consumidor); Lei nº 10.406/2002 (Código Civil); special legislation",
+   "private_right_of_action": true,
+   "cure_period": null,
+   "evidence": {
+    "provision": "Arts. 35-37",
+    "quote": "O juiz inverterá o ônus da prova quando a vítima for hipossuficiente ou quando as características de funcionamento do sistema de IA tornarem excessivamente oneroso para a vítima provar os requisitos da responsabilidade civil."
+   }
+  },
+  {
+   "sanction_type": "private_damages",
+   "authority": "Courts",
+   "triggered_by": "Use of protected works in an AI system's databases after the rightholder's prohibition (Art. 64)",
+   "max_penalty_text": null,
+   "max_penalty_amount": null,
+   "currency": null,
+   "penalty_formula": "Liability for moral and material losses and damages under applicable law",
+   "penalty_reference": "Applicable copyright and civil legislation",
+   "private_right_of_action": true,
+   "cure_period": null,
+   "evidence": {
+    "provision": "Art. 64, parágrafo único",
+    "quote": "não exime o agente de IA de responder por perdas e danos morais e materiais, nos termos da legislação aplicável"
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "Sistema de inteligência artificial (IA) [AI system]",
+   "evidence": {
+    "provision": "Art. 4, I",
+    "quote": "sistema baseado em máquina que, com graus diferentes de autonomia e para objetivos explícitos ou implícitos, infere, a partir de um conjunto de dados ou informações que recebe, como gerar resultados"
+   }
+  },
+  {
+   "term": "Sistema de inteligência artificial de propósito geral (SIAPG) [general-purpose AI system]",
+   "evidence": {
+    "provision": "Art. 4, III",
+    "quote": "sistema de IA baseado em modelo de IA treinado com bases de dados em grande escala, capaz de realizar ampla variedade de tarefas distintas e servir diferentes finalidades"
+   }
+  },
+  {
+   "term": "Inteligência artificial generativa [generative AI]",
+   "evidence": {
+    "provision": "Art. 4, IV",
+    "quote": "modelo de IA especificamente destinado a gerar ou modificar significativamente, com diferentes graus de autonomia, texto, imagens, áudio, vídeo ou código de software"
+   }
+  },
+  {
+   "term": "Desenvolvedor [developer]",
+   "evidence": {
+    "provision": "Art. 4, V",
+    "quote": "pessoa natural ou jurídica, de natureza pública ou privada, que desenvolva sistema de IA, diretamente ou por encomenda, com vistas a sua colocação no mercado ou a sua aplicação em serviço por ela fornecido"
+   }
+  },
+  {
+   "term": "Distribuidor [distributor]",
+   "evidence": {
+    "provision": "Art. 4, VI",
+    "quote": "que disponibilize e distribua sistema de IA para que terceiro o aplique, a título oneroso ou gratuito"
+   }
+  },
+  {
+   "term": "Aplicador [deployer]",
+   "evidence": {
+    "provision": "Art. 4, VII",
+    "quote": "que empregue ou utilize, em seu nome ou benefício, sistema de IA, inclusive configurando, mantendo ou apoiando com o fornecimento de dados para a operação e o monitoramento do sistema de IA"
+   }
+  },
+  {
+   "term": "Agentes de inteligência artificial [AI agents]",
+   "evidence": {
+    "provision": "Art. 4, VIII",
+    "quote": "desenvolvedores, distribuidores e aplicadores que atuem na cadeia de valor e na governança interna de sistemas de IA"
+   }
+  },
+  {
+   "term": "Desenvolvedor (deemed) [deployer or distributor treated as developer]",
+   "evidence": {
+    "provision": "Art. 18, §5º",
+    "quote": "Caso o aplicador ou o distribuidor realize modificação substancial ou altere a finalidade de um sistema de IA, será considerado desenvolvedor para os efeitos desta Lei."
+   }
+  },
+  {
+   "term": "Autoridade competente [competent authority]",
+   "evidence": {
+    "provision": "Art. 4, IX; Art. 45, §1º, I",
+    "quote": "entidade da administração pública federal, dotada de autonomia técnica e decisória, que coordenará o Sistema Nacional de Regulação e Governança de Inteligência Artificial (SIA)"
+   }
+  },
+  {
+   "term": "Autoridades setoriais [sectoral authorities]",
+   "evidence": {
+    "provision": "Art. 4, XXVI",
+    "quote": "órgãos e entidades do Poder Executivo federal responsáveis pela regulação de setores específicos da atividade econômica e governamental"
+   }
+  },
+  {
+   "term": "Sistema Nacional de Regulação e Governança de Inteligência Artificial (SIA)",
+   "evidence": {
+    "provision": "Art. 4, X",
+    "quote": "ecossistema regulatório coordenado pela autoridade competente que tem por finalidade precípua promover e garantir a cooperação e a harmonização com as demais autoridades setoriais e entes reguladores"
+   }
+  },
+  {
+   "term": "Discriminação abusiva ou ilícita [abusive or unlawful discrimination]",
+   "evidence": {
+    "provision": "Art. 4, XI",
+    "quote": "qualquer distinção, exclusão, restrição ou preferência, em qualquer área da vida pública ou privada, cujo propósito ou efeito seja anular ou restringir, de forma abusiva ou ilícita"
+   }
+  },
+  {
+   "term": "Mineração de textos e dados [text and data mining]",
+   "evidence": {
+    "provision": "Art. 4, XIII",
+    "quote": "processo de extração e análise de grandes quantidades de dados, com alto grau de automação, realizado de forma direta nos dados primários, ou indireta por meio de outra ferramenta"
+   }
+  },
+  {
+   "term": "Pessoa ou grupo afetado [affected person or group]",
+   "evidence": {
+    "provision": "Art. 4, XIV",
+    "quote": "pessoa natural ou grupo de pessoas que seja direta ou indiretamente impactado por sistema de IA"
+   }
+  },
+  {
+   "term": "Avaliação preliminar [preliminary assessment]",
+   "evidence": {
+    "provision": "Art. 4, XV",
+    "quote": "processo simplificado de autoavaliação, anterior à utilização ou colocação no mercado de um ou mais sistemas de IA, para classificação de seu grau de risco"
+   }
+  },
+  {
+   "term": "Avaliação de impacto algorítmico [algorithmic impact assessment]",
+   "evidence": {
+    "provision": "Art. 4, XVI",
+    "quote": "análise do impacto sobre os direitos fundamentais, apresentando medidas preventivas, mitigadoras e de reversão dos impactos negativos"
+   }
+  },
+  {
+   "term": "Vulnerabilidade [vulnerability]",
+   "evidence": {
+    "provision": "Art. 4, XVII",
+    "quote": "estado de assimetria agravada de informação ou de poder que afeta pessoas naturais ou grupos"
+   }
+  },
+  {
+   "term": "Ambiente regulatório experimental (sandbox regulatório) [regulatory sandbox]",
+   "evidence": {
+    "provision": "Art. 4, XVIII",
+    "quote": "conjunto de condições especiais estabelecidas para desenvolver, treinar, validar e testar, por tempo limitado, um sistema de IA inovador"
+   }
+  },
+  {
+   "term": "Efeitos jurídicos relevantes [relevant legal effects]",
+   "evidence": {
+    "provision": "Art. 4, XX",
+    "quote": "consequências jurídicas modificativas, impeditivas ou extintivas negativas que atingem direitos e liberdades fundamentais"
+   }
+  },
+  {
+   "term": "Conteúdos sintéticos [synthetic content]",
+   "evidence": {
+    "provision": "Art. 4, XXI",
+    "quote": "informações, tais como imagens, vídeos, áudio e texto, que foram significativamente modificadas ou geradas por sistemas de IA"
+   }
+  },
+  {
+   "term": "Identificação biométrica [biometric identification]",
+   "evidence": {
+    "provision": "Art. 4, XXIII",
+    "quote": "método que envolve o reconhecimento de características físicas, fisiológicas e comportamentais humanas, com o propósito de identificar um indivíduo"
+   }
+  },
+  {
+   "term": "Autenticação biométrica [biometric authentication]",
+   "evidence": {
+    "provision": "Art. 4, XXIV",
+    "quote": "processo de verificação ou confirmação da identidade de um indivíduo, com o objetivo de singularizá-lo, por meio da comparação de suas características biométricas"
+   }
+  },
+  {
+   "term": "Introdução ou colocação em circulação no mercado [placing on the market]",
+   "evidence": {
+    "provision": "Art. 4, XXV",
+    "quote": "disponibilização inicial ou introdução para usuários do sistema de IA, a título oneroso ou gratuito"
+   }
+  },
+  {
+   "term": "Sistemas de armas autônomas (SAA) [autonomous weapons systems]",
+   "evidence": {
+    "provision": "Art. 4, XXVII",
+    "quote": "sistemas que, uma vez ativados, podem selecionar e atacar alvos sem intervenção humana adicional"
+   }
+  },
+  {
+   "term": "Contexto de uso [context of use]",
+   "evidence": {
+    "provision": "Art. 4, XXIX",
+    "quote": "utilização específica à qual é destinado o sistema ou aplicação de IA, incluindo o sistema a ser utilizado, o contexto e a finalidade específicos e suas condições de utilização"
+   }
+  },
+  {
+   "term": "Risco sistêmico [systemic risk]",
+   "evidence": {
+    "provision": "Art. 4, XXX",
+    "quote": "potenciais efeitos adversos negativos decorrentes de um sistema de IA de propósito geral e generativa com impacto significativo sobre direitos fundamentais individuais e sociais"
+   }
+  },
+  {
+   "term": "Desenvolvimento (for the copyright section) [development]",
+   "evidence": {
+    "provision": "Art. 62, parágrafo único",
+    "quote": "o desenvolvimento compreende as etapas de mineração, treinamento, retreinamento, testagem, validação e aplicação de sistemas de IA"
+   }
+  }
+ ],
+ "relations": [
+  {
+   "relation": "amends",
+   "target_instrument_id": null,
+   "target_text": "Lei nº 14.533, de 11 de janeiro de 2023 (Política Nacional de Educação Digital), art. 3º",
+   "note": "Adds item VI on critical algorithmic literacy, especially regarding AI",
+   "evidence": {
+    "provision": "Art. 75",
+    "quote": "O caput do art. 3º da Lei nº 14.533, de 11 de janeiro de 2023 (Política Nacional de Educação Digital), passa a vigorar acrescido do seguinte inciso VI"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_instrument_id": null,
+   "target_text": "Lei nº 11.540, de 12 de novembro de 2007 (FNDCT), art. 12",
+   "note": "Adds §6 prioritising AI research and projects in specified fund allocations",
+   "evidence": {
+    "provision": "Art. 76",
+    "quote": "O art. 12 da Lei nº 11.540, de 12 de novembro de 2007, passa a vigorar acrescido do seguinte § 6º"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": "br-lgpd-2018",
+   "target_text": "Lei nº 13.709, de 14 de agosto de 2018 (Lei Geral de Proteção de Dados Pessoais)",
+   "note": "Data-subject rights preserved (Art. 5 II); impact assessment may be combined with the LGPD data protection impact report (Art. 27); lawful data for systemic-risk GPAI (Art. 30 IV); biometric identification (Art. 13 §2); LGPD sanctions not displaced (Art. 50 §3); ANPD keeps its LGPD powers (Art. 46)",
+   "evidence": {
+    "provision": "Art. 27",
+    "quote": "Caso o agente de IA tenha que elaborar relatório de impacto à proteção de dados pessoais, nos termos da Lei nº 13.709, de 14 de agosto de 2018 (Lei Geral de Proteção de Dados Pessoais), a avaliação de impacto algorítmico poderá ser realizada em conjunto com o referido documento."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": null,
+   "target_text": "Lei nº 8.078, de 11 de setembro de 1990 (Código de Defesa do Consumidor)",
+   "note": "Civil liability for AI damage in consumer relations stays under the CDC (Art. 35); CDC sanctions not displaced (Art. 50 §3); applies to pre-market research and testing (Art. 1 §1 III)",
+   "evidence": {
+    "provision": "Art. 35",
+    "quote": "A responsabilidade civil decorrente de danos causados por sistemas de IA no âmbito das relações de consumo permanece sujeita às regras de responsabilidade previstas na Lei nº 8.078, de 11 de setembro de 1990 (Código de Defesa do Consumidor)"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": null,
+   "target_text": "Lei nº 10.406, de 10 de janeiro de 2002 (Código Civil)",
+   "note": "Civil liability outside consumer relations (Art. 36); personality rights for images and voices (Art. 66); freedom of contract in copyright remuneration (Art. 65 III)",
+   "evidence": {
+    "provision": "Art. 36",
+    "quote": "permanece sujeita às regras de responsabilidade previstas na Lei nº 10.406, de 10 de janeiro de 2002 (Código Civil), e na legislação especial"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": null,
+   "target_text": "Lei nº 9.610, de 19 de fevereiro de 1998 (Lei dos Direitos Autorais)",
+   "note": "Collective negotiation of AI training remuneration under Title VI and reciprocity rules (Art. 65); applies to pre-market research and testing (Art. 1 §1 III)",
+   "evidence": {
+    "provision": "Art. 65, I",
+    "quote": "negociar coletivamente, nos termos do Título VI da Lei nº 9.610, de 19 de fevereiro de 1998 (Lei dos Direitos Autorais)"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": null,
+   "target_text": "Lei nº 12.529, de 30 de novembro de 2011 (Lei de Defesa da Concorrência)",
+   "note": "Self-regulatory associations must observe competition law (Art. 41 §2); SIA bodies report to CADE and CADE may order access to training data (Arts. 49 §§3-4, 52)",
+   "evidence": {
+    "provision": "Art. 41, §2º",
+    "quote": "A associação entre agentes de IA para fins de autorregulação deverá observar os preceitos da Lei nº 12.529, de 30 de novembro de 2011 (Lei de Defesa da Concorrência)"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": null,
+   "target_text": "Lei nº 12.527, de 18 de novembro de 2011 (Lei de Acesso à Informação)",
+   "note": "Public high-risk AI database must comply with it (Art. 44); public-body sanctions without prejudice to it (Art. 50 §7)",
+   "evidence": {
+    "provision": "Art. 44",
+    "quote": "e a Lei nº 12.527, de 18 de novembro de 2011 (Lei de Acesso à Informação)"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": null,
+   "target_text": "Decreto-Lei nº 4.657, de 4 de setembro de 1942 (Lei de Introdução às Normas do Direito Brasileiro)",
+   "note": "Basis for settlement commitments with AI agents (Arts. 48 VI, 49 V) and for the sanctions regulation (Art. 50 §6)",
+   "evidence": {
+    "provision": "Art. 48, VI",
+    "quote": "de acordo com o previsto no Decreto-Lei nº 4.657, de 4 de setembro de 1942 (Lei de Introdução às Normas do Direito Brasileiro)"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": null,
+   "target_text": "Lei nº 9.784, de 29 de janeiro de 1999 (Lei Geral do Processo Administrativo)",
+   "note": "Sanctions regulation must respect it",
+   "evidence": {
+    "provision": "Art. 50, §6º, I",
+    "quote": "da Lei nº 9.784, de 29 de janeiro de 1999 (Lei Geral do Processo Administrativo)"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": null,
+   "target_text": "Lei nº 8.112/1990 (Estatuto do Servidor Público Federal) and Lei nº 8.429/1992 (Lei da Improbidade Administrativa)",
+   "note": "Non-fine sanctions may be applied to public bodies without prejudice to these laws",
+   "evidence": {
+    "provision": "Art. 50, §7º",
+    "quote": "sem prejuízo do disposto na Lei nº 8.112, de 11 de dezembro de 1990 (Estatuto do Servidor Público Federal), na Lei nº 8.429, de 2 de junho de 1992 (Lei da Improbidade Administrativa)"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": null,
+   "target_text": "Lei nº 11.079, de 30 de dezembro de 2004 (public-private partnerships)",
+   "note": "Promotion of AI innovation may use public-private partnerships under this law",
+   "evidence": {
+    "provision": "Art. 59, parágrafo único, I",
+    "quote": "celebração de parcerias público-privadas nos termos da Lei nº 11.079, de 30 de dezembro de 2004"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": null,
+   "target_text": "Lei nº 6.938, de 31 de agosto de 1981 (Política Nacional do Meio Ambiente)",
+   "note": "Applies to pre-market AI research and testing activities excluded from the bill",
+   "evidence": {
+    "provision": "Art. 1, §1º, III",
+    "quote": "a Lei nº 6.938, de 31 de agosto de 1981 (Política Nacional do Meio Ambiente)"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": null,
+   "target_text": "Future specific legislation on online content circulation",
+   "note": "Regulation of online content circulation affecting freedom of expression, including AI content moderation and recommendation, is reserved to specific legislation",
+   "evidence": {
+    "provision": "Art. 77",
+    "quote": "A regulação de aspectos associados à circulação de conteúdo online e que possam afetar a liberdade de expressão, inclusive o uso de IA para moderação e recomendação de conteúdo, somente poderá ser feita por meio de legislação específica."
+   }
+  }
+ ],
+ "entities": [],
+ "section_status": {
+  "entities": {
+   "status": "not_applicable",
+   "note": "General rule; no firms or facilities are named. Public bodies are named in institutional roles: ANPD as the competent authority coordinating the SIA (Art. 45 §1 I), CADE (Arts. 49, 52), the Ministry of Labour (Art. 58), the Ministry of Environment and Climate Change (Art. 61); Cria and Cecia are created (Arts. 53-54)."
+  }
+ },
+ "notes": "Text-internal issues: (1) numbering jumps from Art. 30 to Art. 32 (no Art. 31); (2) Arts. 38 and 57 are near-identical (sandbox participants' liability), as are Art. 49 §§3-4 and Art. 52 (CADE); (3) Art. 1 §2 and Art. 73 both mandate simplified regimes, with different lists (Art. 73 adds national promotion and PPP/ICT projects and excludes GPAI under Ch. IV Sec. V). Staggered entry into force (Art. 80): prohibitions, GPAI and copyright rules at 180 days; Art. 62 and the institutional chapter (Ch. IX except Art. 50) on publication; everything else, including sanctions, at 730 days. No numeric compute, parameter, user or revenue threshold defines 'systemic risk' or the GPAI regime; high-risk status depends on the Art. 14 list and SIA regulation (Art. 15). Preliminary assessment is voluntary for AI agents generally (Art. 12, 'poderá') but mandatory for GPAI developers (Art. 29). The autógrafo is signed 'Senado Federal, em 31 de janeiro de 2025'."
+}

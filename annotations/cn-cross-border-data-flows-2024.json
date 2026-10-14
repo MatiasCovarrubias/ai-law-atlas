@@ -1,0 +1,524 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "cn-cross-border-data-flows-2024",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (connectors/fetch_texts.py)",
+  "url": "https://www.cac.gov.cn/2024-03/22/c_1712776611775634.htm",
+  "retrieved": "2026-10-13",
+  "version": "as fetched",
+  "language": "zh",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "data_transfer_localization",
+   "data_protection",
+   "cybersecurity"
+  ],
+  "primary_domain": "data_transfer_localization",
+  "mechanisms": [
+   "mandate_obligation",
+   "licensing_permit_certification",
+   "registration_notification",
+   "designation_tiering"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "data_controller",
+   "essential_entity",
+   "government_agency"
+  ],
+  "affected_roles": [
+   "consumers_users",
+   "workers"
+  ],
+  "decision_margins": [
+   "firm:trade",
+   "firm:compliance_process",
+   "household:data_privacy"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national",
+    "subnational"
+   ],
+   "description": "Governs outbound data transfers by processors under the Chinese framework; free trade zones may set their own negative lists within the national framework, subject to provincial approval and filing.",
+   "evidence": {
+    "provision": "Art. 6 para. 1",
+    "quote": "可以自行制定区内需要纳入数据出境安全评估、个人信息出境标准合同、个人信息保护认证管理范围的数据清单"
+   }
+  },
+  "agora_harms": [
+   "Violation of civil or human rights, including privacy"
+  ],
+  "agora_risk_factors": [
+   "Privacy",
+   "Security: Cybersecurity"
+  ],
+  "agora_strategies": [
+   "Input controls: Data circulation",
+   "Licensing, registration, and certification",
+   "Evaluation: Impact assessment"
+  ]
+ },
+ "summary": {
+  "short": "Chinese CAC rules, in force from promulgation, that set when data processors must pass a national security assessment, sign a standard contract or obtain certification before providing data abroad, and exempt listed low-risk transfers from those steps.",
+  "long": "Order No. 16 of the Cyberspace Administration of China, adopted at the CAC's 2023 26th office meeting and in force from its publication. It governs outbound provision of data by data processors. Exemptions (Arts. 2-6) cover data that is neither personal information nor important data, transfers in international trade, cross-border transport and academic cooperation, foreign-collected data processed in China, transfers needed for contracts with individuals, cross-border HR management and emergencies, and transfers by non-CIIO processors of personal information of fewer than 100,000 people (excluding sensitive data) cumulatively since 1 January. A security assessment through the provincial CAC is required for CIIO operators transferring personal information or important data, and for other processors transferring important data or personal information of 1 million or more people, or sensitive personal information of 10,000 or more (Art. 7). Non-CIIO processors transferring data of 100,000 to under 1 million people, or under 10,000 sensitive-data subjects, must sign a standard contract or obtain personal information protection certification (Art. 8). Assessment results are valid for three years, extendable by three years on application (Art. 9). Processors must also meet consent, notice and impact assessment duties (Art. 10), data security and incident reporting duties (Art. 11), and local CAC supervision (Art. 12). Free trade zones may set negative lists subject to provincial approval and filing (Art. 6). The rules prevail over conflicting 2022 and 2023 measures (Art. 13)."
+ },
+ "relations": [
+  {
+   "relation": "legal_basis",
+   "target_text": "中华人民共和国网络安全法 (Cybersecurity Law)",
+   "note": "Cited as a statute under which the provisions were made.",
+   "evidence": {
+    "provision": "第一条",
+    "quote": "根据《中华人民共和国网络安全法》"
+   }
+  },
+  {
+   "relation": "legal_basis",
+   "target_text": "中华人民共和国数据安全法 (Data Security Law)",
+   "note": "Cited as a statute under which the provisions were made.",
+   "evidence": {
+    "provision": "第一条",
+    "quote": "《中华人民共和国数据安全法》"
+   }
+  },
+  {
+   "relation": "legal_basis",
+   "target_text": "中华人民共和国个人信息保护法 (Personal Information Protection Law)",
+   "note": "Cited as a statute under which the provisions were made.",
+   "evidence": {
+    "provision": "第一条",
+    "quote": "《中华人民共和国个人信息保护法》"
+   }
+  },
+  {
+   "relation": "preempts",
+   "target_text": "数据出境安全评估办法 (Order No. 11 of the CAC, published 2022-07-07)",
+   "note": "Art. 13 states that where this rule is inconsistent with the named measure, this rule applies. The text does not state that the named measure is repealed.",
+   "evidence": {
+    "provision": "第十三条",
+    "quote": "《数据出境安全评估办法》（国家互联网信息办公室令第11号）"
+   }
+  },
+  {
+   "relation": "preempts",
+   "target_text": "个人信息出境标准合同办法 (Order No. 13 of the CAC, published 2023-02-22)",
+   "note": "Art. 13 states that where this rule is inconsistent with the named measure, this rule applies. The text does not state that the named measure is repealed.",
+   "evidence": {
+    "provision": "第十三条",
+    "quote": "《个人信息出境标准合同办法》（国家互联网信息办公室令第13号）"
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "国家网信部门 (national cyberspace administration)",
+   "role": "designated",
+   "function": "Receives data export security assessment declarations (Art. 7), approves extension of assessment result validity (Art. 9), and receives filings of negative lists (Art. 6).",
+   "evidence": {
+    "provision": "第七条",
+    "quote": "应当通过所在地省级网信部门向国家网信部门申报数据出境安全评估"
+   }
+  },
+  {
+   "name": "省级网信部门 (provincial cyberspace administration)",
+   "role": "designated",
+   "function": "Receives data export security assessment declarations from data processors for forwarding to the national authority (Art. 7) and receives extension requests (Art. 9).",
+   "evidence": {
+    "provision": "第七条",
+    "quote": "通过所在地省级网信部门"
+   }
+  },
+  {
+   "name": "各地网信部门 (local cyberspace administrations)",
+   "role": "designated",
+   "function": "Guide and supervise data export activities, require rectification of risks or incidents, and pursue legal liability for refusal to correct (Art. 12).",
+   "evidence": {
+    "provision": "第十二条",
+    "quote": "各地网信部门应当加强对数据处理者数据出境活动的指导监督"
+   }
+  },
+  {
+   "name": "国家数据管理部门 (national data administration)",
+   "role": "designated",
+   "function": "Receives filings of negative lists formulated by free trade zones (Art. 6).",
+   "evidence": {
+    "provision": "第六条",
+    "quote": "报国家网信部门、国家数据管理部门备案"
+   }
+  },
+  {
+   "name": "省级网络安全和信息化委员会 (provincial cybersecurity and informatization commission)",
+   "role": "designated",
+   "function": "Approves negative lists formulated by free trade zones before filing (Art. 6).",
+   "evidence": {
+    "provision": "第六条",
+    "quote": "经省级网络安全和信息化委员会批准后"
+   }
+  },
+  {
+   "name": "自由贸易试验区 (free trade pilot zones)",
+   "role": "designated",
+   "function": "May formulate, within the national data classification framework, lists of in-zone data subject to assessment, standard contracts or certification (negative lists) (Art. 6).",
+   "evidence": {
+    "provision": "第六条",
+    "quote": "自由贸易试验区在国家数据分类分级保护制度框架下，可以自行制定区内需要纳入"
+   }
+  }
+ ],
+ "notes": "Relations and entities only; thresholds and obligations (e.g., Arts. 5, 7, 8, 9) are not coded in this pass. Art. 1 cites three statutes without registry IDs. Art. 13 is a conflict clause naming two CAC measures, which it does not expressly repeal. The text is the official publication of 22 March 2024 (Order No. 16), in force on publication (Art. 14); the page is otherwise CMS navigation. No internal inconsistency found. The text uses 重要数据 and 关键信息基础设施 without defining them in this document. section_status is set to not_applicable for both sections only because the schema requires the field; both sections are populated above.",
+ "events": [
+  {
+   "event": "adopted",
+   "date": "2023-11-28",
+   "date_type": "absolute",
+   "date_text": "2023年11月28日",
+   "applies_to": "Provisions (whole instrument)",
+   "evidence": {
+    "provision": "Promulgation notice (公布令)",
+    "quote": "已经2023年11月28日国家互联网信息办公室2023年第26次室务会议审议通过"
+   }
+  },
+  {
+   "event": "signed",
+   "date": "2024-03-22",
+   "date_type": "absolute",
+   "date_text": "2024年3月22日",
+   "applies_to": "Provisions (whole instrument), Order No. 16",
+   "evidence": {
+    "provision": "Promulgation notice (公布令), signature block",
+    "quote": "国家互联网信息办公室主任 庄荣文"
+   }
+  },
+  {
+   "event": "published",
+   "date": "2024-03-22",
+   "date_type": "absolute",
+   "date_text": "2024年3月22日",
+   "applies_to": "Provisions (whole instrument)",
+   "evidence": {
+    "provision": "Promulgation notice (公布令)",
+    "quote": "现予公布，自公布之日起施行。"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2024-03-22",
+   "date_type": "relative",
+   "date_text": "自公布之日起施行",
+   "anchor": "publication of the Provisions",
+   "applies_to": "Provisions (whole instrument)",
+   "offset_value": 0,
+   "offset_unit": "days",
+   "anchor_event": "published",
+   "evidence": {
+    "provision": "Art. 14",
+    "quote": "本规定自公布之日起施行。"
+   },
+   "date_computed_from": "published 2024-03-22 (text) + 0 days"
+  },
+  {
+   "event": "expiry",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "有效期为3年，自评估结果出具之日起计算",
+   "depends_on": "date of issuance of the data export security assessment result (评估结果出具之日)",
+   "applies_to": "data export security assessment results passed under Art. 7",
+   "evidence": {
+    "provision": "Art. 9",
+    "quote": "通过数据出境安全评估的结果有效期为3年，自评估结果出具之日起计算。"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "有效期届满前60个工作日内",
+   "anchor": "expiry of the data export security assessment result validity period",
+   "applies_to": "applications to extend the validity of a data export security assessment result",
+   "offset_value": -60,
+   "offset_unit": "business_days",
+   "anchor_event": "expiry",
+   "evidence": {
+    "provision": "Art. 9",
+    "quote": "在有效期届满前60个工作日内"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "data_subjects_count",
+   "variable_text": "向境外提供个人信息的人数（不含敏感个人信息）[number of persons whose personal information is provided abroad, excluding sensitive personal information]",
+   "operator": "<",
+   "value": 100000,
+   "value_text": "不满10万人 [fewer than 100,000 persons]",
+   "unit": "persons",
+   "measurement": "cumulative from 1 January of the current year, provided abroad by a data processor other than a critical information infrastructure operator",
+   "level": "entity",
+   "trigger": "exemption",
+   "consequence": "exempt from declaring a data export security assessment, concluding a personal information export standard contract, and obtaining personal information protection certification",
+   "conditions": "processor is not a critical information infrastructure operator; excludes sensitive personal information; excludes important data (Art. 5 para. 2)",
+   "evidence": {
+    "provision": "Art. 5 para. 1 item (4)",
+    "quote": "自当年1月1日起累计向境外提供不满10万人个人信息（不含敏感个人信息）的"
+   }
+  },
+  {
+   "variable": "data_subjects_count",
+   "variable_text": "向境外提供个人信息的人数（不含敏感个人信息）[number of persons whose personal information is provided abroad, excluding sensitive personal information]",
+   "operator": ">=",
+   "value": 1000000,
+   "value_text": "100万人以上 [1 million persons or more]",
+   "unit": "persons",
+   "measurement": "cumulative from 1 January of the current year, provided abroad by a data processor other than a critical information infrastructure operator",
+   "level": "entity",
+   "trigger": "obligation",
+   "consequence": "must declare a data export security assessment through the provincial cyberspace authority to the national cyberspace authority",
+   "conditions": "processor is not a critical information infrastructure operator; alternative to the important data condition in the same item; excludes sensitive personal information",
+   "evidence": {
+    "provision": "Art. 7 para. 1 item (2)",
+    "quote": "自当年1月1日起累计向境外提供100万人以上个人信息（不含敏感个人信息）或者1万人以上敏感个人信息"
+   }
+  },
+  {
+   "variable": "data_subjects_count",
+   "variable_text": "向境外提供敏感个人信息的人数 [number of persons whose sensitive personal information is provided abroad]",
+   "operator": ">=",
+   "value": 10000,
+   "value_text": "1万人以上敏感个人信息 [10,000 persons or more of sensitive personal information]",
+   "unit": "persons",
+   "measurement": "cumulative from 1 January of the current year, provided abroad by a data processor other than a critical information infrastructure operator",
+   "level": "entity",
+   "trigger": "obligation",
+   "consequence": "must declare a data export security assessment through the provincial cyberspace authority to the national cyberspace authority",
+   "conditions": "processor is not a critical information infrastructure operator; alternative to the 1 million non-sensitive personal information condition in the same item",
+   "evidence": {
+    "provision": "Art. 7 para. 1 item (2)",
+    "quote": "自当年1月1日起累计向境外提供100万人以上个人信息（不含敏感个人信息）或者1万人以上敏感个人信息"
+   }
+  },
+  {
+   "variable": "data_subjects_count",
+   "variable_text": "向境外提供个人信息的人数（不含敏感个人信息）[number of persons whose personal information is provided abroad, excluding sensitive personal information]",
+   "operator": "range",
+   "value": 100000,
+   "value_max": 1000000,
+   "value_text": "10万人以上、不满100万人 [100,000 or more but fewer than 1 million persons]",
+   "unit": "persons",
+   "measurement": "cumulative from 1 January of the current year, provided abroad by a data processor other than a critical information infrastructure operator",
+   "level": "entity",
+   "trigger": "obligation",
+   "consequence": "must conclude a personal information export standard contract with the overseas recipient or obtain personal information protection certification",
+   "conditions": "processor is not a critical information infrastructure operator; excludes sensitive personal information; alternative to the sensitive personal information condition; does not apply where the Art. 3 to Art. 6 situations apply (Art. 8 para. 2)",
+   "evidence": {
+    "provision": "Art. 8 para. 1",
+    "quote": "自当年1月1日起累计向境外提供10万人以上、不满100万人个人信息（不含敏感个人信息）或者不满1万人敏感个人信息的"
+   }
+  },
+  {
+   "variable": "data_subjects_count",
+   "variable_text": "向境外提供敏感个人信息的人数 [number of persons whose sensitive personal information is provided abroad]",
+   "operator": "<",
+   "value": 10000,
+   "value_text": "不满1万人敏感个人信息 [fewer than 10,000 persons of sensitive personal information]",
+   "unit": "persons",
+   "measurement": "cumulative from 1 January of the current year, provided abroad by a data processor other than a critical information infrastructure operator",
+   "level": "entity",
+   "trigger": "obligation",
+   "consequence": "must conclude a personal information export standard contract with the overseas recipient or obtain personal information protection certification",
+   "conditions": "processor is not a critical information infrastructure operator; alternative to the 100,000 to 1 million non-sensitive personal information condition in the same paragraph; does not apply where the Art. 3 to Art. 6 situations apply (Art. 8 para. 2)",
+   "evidence": {
+    "provision": "Art. 8 para. 1",
+    "quote": "自当年1月1日起累计向境外提供10万人以上、不满100万人个人信息（不含敏感个人信息）或者不满1万人敏感个人信息的"
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "负面清单",
+   "defined_in": "this instrument, Art. 6 para. 1",
+   "evidence": {
+    "provision": "Art. 6 para. 1",
+    "quote": "数据清单（以下简称负面清单）"
+   }
+  },
+  {
+   "term": "向境外提供的个人信息",
+   "defined_in": "this instrument, Art. 5 para. 2",
+   "evidence": {
+    "provision": "Art. 5 para. 2",
+    "quote": "前款所称向境外提供的个人信息，不包括重要数据。"
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "registration_notification",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Data processors must identify and declare important data under applicable rules. Data not notified or published as important data by authorities need not be declared for a security assessment.",
+   "applies_from": "from promulgation (自公布之日起施行, Art. 14)",
+   "conditional_on": "data identified as important data under applicable rules",
+   "evidence": {
+    "provision": "Art. 2 (第二条)",
+    "quote": "数据处理者应当按照相关规定识别、申报重要数据"
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "government_agency",
+   "modality": "may",
+   "summary": "Free trade zones may formulate a negative list of data subject to security assessment, standard contracts and certification. The list requires approval by the provincial cybersecurity and informatization committee and filing with the national CAC and national data administration.",
+   "applies_from": "from promulgation (自公布之日起施行, Art. 14)",
+   "conditional_on": "within the national data classification and grading framework",
+   "evidence": {
+    "provision": "Art. 6 (第六条)",
+    "quote": "可以自行制定区内需要纳入数据出境安全评估"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Data processors exporting data must apply through the local provincial CAC to the national CAC for a data export security assessment in the listed cases: CII operators exporting personal information or important data; other processors exporting important data, or cumulatively exporting personal information of 1 million or more persons or sensitive personal information of 10,000 or more persons since 1 January.",
+   "applies_from": "from promulgation (自公布之日起施行, Art. 14)",
+   "conditional_on": "cases listed in Art. 7 items (1) and (2); exemptions in Arts. 3 to 6 prevail",
+   "evidence": {
+    "provision": "Art. 7 (第七条)",
+    "quote": "数据处理者向境外提供数据，符合下列条件之一的，应当通过所在地省级网信部门向国家网信部门申报数据出境安全评估"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Processors other than CII operators that cumulatively export personal information of 100,000 to under 1 million persons, or sensitive personal information of under 10,000 persons, must conclude a personal information export standard contract with the overseas recipient or pass personal information protection certification.",
+   "applies_from": "from promulgation (自公布之日起施行, Art. 14)",
+   "conditional_on": "non-CII processor exporting 100,000 or more but fewer than 1 million persons' personal information (excluding sensitive) since 1 January, or fewer than 10,000 sensitive personal information; exemptions in Arts. 3 to 6 prevail",
+   "evidence": {
+    "provision": "Art. 8 (第八条)",
+    "quote": "应当依法与境外接收方订立个人信息出境标准合同或者通过个人信息保护认证"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_controller",
+   "modality": "may",
+   "summary": "An approved security assessment result is valid for 3 years from issuance. Processors may apply through the provincial CAC to extend validity, filing up to 60 working days before expiry if activities continue and no reassessment-triggering change has occurred; the national CAC may extend by 3 years.",
+   "applies_from": "3 years from the date the assessment result is issued (Art. 9)",
+   "conditional_on": "continued export activities and no change requiring a new security assessment",
+   "evidence": {
+    "provision": "Art. 9 (第九条)",
+    "quote": "数据处理者可以在有效期届满前60个工作日内通过所在地省级网信部门向国家网信部门提出延长评估结果有效期申请"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Processors providing personal information abroad must give notice as required by laws and administrative regulations.",
+   "applies_from": "from promulgation (自公布之日起施行, Art. 14)",
+   "conditional_on": "providing personal information abroad, subject to exemptions in Arts. 3 to 6",
+   "evidence": {
+    "provision": "Art. 10 (第十条)",
+    "quote": "应当按照法律、行政法规的规定履行告知、取得个人单独同意、进行个人信息保护影响评估等义务"
+   }
+  },
+  {
+   "type": "consent",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Processors providing personal information abroad must obtain the individual's separate consent as required by laws and administrative regulations.",
+   "applies_from": "from promulgation (自公布之日起施行, Art. 14)",
+   "conditional_on": "providing personal information abroad, subject to exemptions in Arts. 3 to 6",
+   "evidence": {
+    "provision": "Art. 10 (第十条)",
+    "quote": "应当按照法律、行政法规的规定履行告知、取得个人单独同意、进行个人信息保护影响评估等义务"
+   }
+  },
+  {
+   "type": "impact_assessment",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Processors providing personal information abroad must carry out a personal information protection impact assessment as required by laws and administrative regulations.",
+   "applies_from": "from promulgation (自公布之日起施行, Art. 14)",
+   "conditional_on": "providing personal information abroad, subject to exemptions in Arts. 3 to 6",
+   "evidence": {
+    "provision": "Art. 10 (第十条)",
+    "quote": "应当按照法律、行政法规的规定履行告知、取得个人单独同意、进行个人信息保护影响评估等义务"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Processors exporting data must comply with laws and regulations, perform data security protection obligations, and adopt technical and other necessary measures to ensure the security of outbound data.",
+   "applies_from": "from promulgation (自公布之日起施行, Art. 14)",
+   "conditional_on": "exporting data abroad",
+   "evidence": {
+    "provision": "Art. 11 (第十一条)",
+    "quote": "应当遵守法律、法规的规定，履行数据安全保护义务，采取技术措施和其他必要措施，保障数据出境安全"
+   }
+  },
+  {
+   "type": "incident_reporting",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "On an actual or possible data security incident, processors must take remedial measures and promptly report to the provincial-level or higher CAC and other competent authorities.",
+   "applies_from": "from promulgation (自公布之日起施行, Art. 14)",
+   "conditional_on": "occurrence or possible occurrence of a data security incident in outbound transfers",
+   "evidence": {
+    "provision": "Art. 11 (第十一条)",
+    "quote": "发生或者可能发生数据安全事件的，应当采取补救措施，及时向省级以上网信部门和其他有关主管部门报告"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Local CAC departments must strengthen guidance and supervision of outbound data activities, improve the security assessment system and process, supervise across the full lifecycle, and require rectification where risks or incidents arise.",
+   "applies_from": "from promulgation (自公布之日起施行, Art. 14)",
+   "conditional_on": "outbound data activities presenting significant risk or a data security incident",
+   "evidence": {
+    "provision": "Art. 12 (第十二条)",
+    "quote": "各地网信部门应当加强对数据处理者数据出境活动的指导监督"
+   }
+  }
+ ],
+ "enforcement": [
+  {
+   "sanction_type": "injunction_order",
+   "authority": "各地网信部门 (local cyberspace administrations)",
+   "triggered_by": "Data export activities that present greater risks or in which data security incidents occur (发现数据出境活动存在较大风险或者发生数据安全事件)",
+   "max_penalty_text": "Not stated in this text.",
+   "cure_period": "None stated; the authority orders rectification to eliminate hidden dangers (消除隐患).",
+   "evidence": {
+    "provision": "Art. 12 (第十二条)",
+    "quote": "要求数据处理者进行整改，消除隐患"
+   }
+  },
+  {
+   "sanction_type": "other",
+   "authority": "各地网信部门 (local cyberspace administrations)",
+   "triggered_by": "Refusal to correct after a rectification order, or serious consequences (拒不改正或者造成严重后果)",
+   "max_penalty_text": "Not stated in this text; liability is pursued 'in accordance with law' (依法追究法律责任).",
+   "penalty_reference": "Not specified in this text; refers to liability under applicable law (依法追究法律责任).",
+   "cure_period": "None stated.",
+   "evidence": {
+    "provision": "Art. 12 (第十二条)",
+    "quote": "对拒不改正或者造成严重后果的，依法追究法律责任"
+   }
+  }
+ ],
+ "section_status": {}
+}

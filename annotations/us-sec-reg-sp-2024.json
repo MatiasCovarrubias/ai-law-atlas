@@ -1,0 +1,1160 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "us-sec-reg-sp-2024",
+ "tier": "B",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "light, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-interim-20261014"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (connectors/fetch_texts.py)",
+  "url": "https://www.govinfo.gov/content/pkg/FR-2024-06-03/pdf/2024-11116.pdf",
+  "retrieved": "2026-10-13",
+  "version": "as fetched",
+  "language": "en",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "data_protection",
+   "cybersecurity"
+  ],
+  "primary_domain": "data_protection",
+  "mechanisms": [
+   "mandate_obligation",
+   "disclosure_transparency"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "financial_institution"
+  ],
+  "affected_roles": [
+   "consumers_users",
+   "data_processor"
+  ],
+  "decision_margins": [
+   "firm:compliance_process",
+   "household:data_privacy"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national"
+   ],
+   "description": "Federal SEC rule applying to SEC-registered broker-dealers, investment companies, registered investment advisers, funding portals and transfer agents, with customer notice owed regardless of State residency.",
+   "evidence": {
+    "provision": "SUMMARY",
+    "quote": "will require brokers and dealers"
+   }
+  },
+  "agora_harms": [
+   "Violation of civil or human rights, including privacy",
+   "Financial loss"
+  ]
+ },
+ "summary": {
+  "short": "SEC rule amending Regulation S-P requires covered financial institutions (broker-dealers, investment companies, registered investment advisers, funding portals, transfer agents) to adopt incident response programs, notify affected individuals of sensitive customer information breaches, and keep compliance records. Effective 2 August 2024.",
+  "long": "The amendments to Regulation S-P, adopted by the SEC, require covered institutions (broker-dealers, investment companies, registered investment advisers, funding portals and transfer agents) to adopt written policies and procedures for an incident response program covering unauthorized access to or use of customer information. The program must assess incidents, contain and control them, and notify each affected individual whose sensitive customer information was, or is reasonably likely to have been, accessed or used without authorization, as soon as practicable and no later than 30 days after becoming aware of the incident. Notice is not required if a reasonable investigation determines that sensitive customer information has not been and is not reasonably likely to be used in a manner that would result in substantial harm or inconvenience. Covered institutions must oversee their service providers, which must notify them as soon as possible and no later than 72 hours after becoming aware of a breach affecting a customer information system. The Attorney General may, by written notice to the Commission, allow delay of notice for national security or public safety reasons. The amendments extend the safeguards and disposal rules to transfer agents, broaden the customer information covered, and require written records documenting compliance. The annual privacy notice delivery provisions are conformed to a statutory exception. The rule is effective 2 August 2024."
+ },
+ "relations": [
+  {
+   "relation": "legal_basis",
+   "target_text": "Gramm-Leach-Bliley Act, Title V (15 U.S.C. 6801 through 6827)",
+   "note": "The amendments are stated to be adopted under Title V of the GLBA.",
+   "evidence": {
+    "provision": "Supplementary Information",
+    "quote": "under Title V of the GLBA [15 U.S.C. 6801 through 6827]"
+   }
+  },
+  {
+   "relation": "legal_basis",
+   "target_text": "Fair Credit Reporting Act (FCRA), 15 U.S.C. 1681 through 1681x",
+   "note": "Listed among the statutes under which the amendments are adopted.",
+   "evidence": {
+    "provision": "Supplementary Information",
+    "quote": "the Fair Credit Reporting Act (‘‘FCRA’’)"
+   }
+  },
+  {
+   "relation": "legal_basis",
+   "target_text": "Securities Exchange Act of 1934, 15 U.S.C. 78a et seq.",
+   "note": "Listed among the statutes under which the amendments are adopted.",
+   "evidence": {
+    "provision": "Supplementary Information",
+    "quote": "(‘‘Exchange Act’’) [15 U.S.C. 78a et seq.]"
+   }
+  },
+  {
+   "relation": "legal_basis",
+   "target_text": "Investment Company Act of 1940, 15 U.S.C. 80a-1 et seq.",
+   "note": "Listed among the statutes under which the amendments are adopted.",
+   "evidence": {
+    "provision": "Supplementary Information",
+    "quote": "Investment Company Act of 1940"
+   }
+  },
+  {
+   "relation": "legal_basis",
+   "target_text": "Investment Advisers Act of 1940, 15 U.S.C. 80b-1 et seq.",
+   "note": "Listed among the statutes under which the amendments are adopted.",
+   "evidence": {
+    "provision": "Supplementary Information",
+    "quote": "the Investment Advisers Act of 1940"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Regulation S-P (17 CFR 248.1 through 248.100), as in force before these amendments",
+   "note": "The release adopts amendments to Regulation S-P. The text states the amendments are adopted substantially as proposed, with some changes.",
+   "evidence": {
+    "provision": "Section I (Introduction and Background)",
+    "quote": "We are adopting amendments to Regulation S–P substantially as proposed"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Public Company Cybersecurity Rules (Cybersecurity Risk Management, Strategy, Governance, and Incident Disclosure, Securities Act Release No. 11216)",
+   "note": "The text says the delay provision was changed to align with a similar provision in these rules, and that the rules' materiality-based reporting trigger differs from the notice trigger in this release.",
+   "evidence": {
+    "provision": "n.14",
+    "quote": "‘‘Public Company Cybersecurity Rules’’"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Cyber Incident Reporting for Critical Infrastructure Act of 2022 (CIRCIA)",
+   "note": "The 72-hour service provider notification deadline is said to be informed by the 72-hour reporting deadline in CIRCIA.",
+   "evidence": {
+    "provision": "Section I (Introduction and Background)",
+    "quote": "Cyber Incident Reporting for Critical Infrastructure Act of 2022"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation Crowdfunding (17 CFR 227.403(b))",
+   "note": "Under Regulation Crowdfunding, funding portals must comply with Regulation S-P as it applies to brokers, so references to brokers in the release include funding portals (unless stated otherwise).",
+   "evidence": {
+    "provision": "Section I (Introduction and Background)",
+    "quote": "under Regulation Crowdfunding, funding portals must comply with the requirements of Regulation S–P as they apply to brokers"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Federal Trade Commission Safeguards Rule (16 CFR part 314)",
+   "note": "Described as amended in 2021 to add an incident response plan requirement; cited for comparison with the amendments.",
+   "evidence": {
+    "provision": "n.26",
+    "quote": "amended its Safeguards Rule (16 CFR part 314"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Interagency Guidance on Response Programs for Unauthorized Access to Customer Information and Customer Notice, 70 FR 15736 (Mar. 29, 2005) (Banking Agencies' Incident Response Guidance)",
+   "note": "Cited for comparison; the text states the amendments diverge from it in some respects and that the Commission did not define 'substantial harm or inconvenience' as the guidance does not.",
+   "evidence": {
+    "provision": "n.26",
+    "quote": "Interagency Guidance on Response Programs for Unauthorized Access to Customer Information and Customer Notice"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation S-ID (17 CFR part 248, subpart C)",
+   "note": "Cited as an example of other Commission rules that require written policies and procedures; this release does not state changes to it.",
+   "evidence": {
+    "provision": "n.15",
+    "quote": "Regulation S–ID, 17 CFR part 248, subpart C"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Dodd-Frank Wall Street Reform and Consumer Protection Act (Public Law 111-203), section 1041, amending GLBA section 507",
+   "note": "Rule 248.17 is revised to refer to determinations made by the CFPB rather than the FTC, consistent with this statutory change.",
+   "evidence": {
+    "provision": "n.30",
+    "quote": "changes made to section 507 of the GLBA by the Dodd-Frank Wall Street Reform and Consumer Protection Act"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation S-P: Privacy of Consumer Financial Information and Safeguarding Customer Information, Securities Exchange Act Release No. 97141 (Mar. 15, 2023) (Proposing Release)",
+   "note": "The proposal on which the final amendments are based; referenced throughout for responses to comments.",
+   "evidence": {
+    "provision": "n.8",
+    "quote": "Securities Exchange Act Release No. 97141 (Mar. 15, 2023)"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "17 CFR 270.38a-1 (investment company compliance policies and procedures)",
+   "note": "Cited as an example of other rules requiring written compliance policies and procedures; also cited as see-also for the assessment and containment procedures.",
+   "evidence": {
+    "provision": "n.15",
+    "quote": "17 CFR 270.38a–1(a)(1) (requiring investment companies to adopt compliance policies and procedures)"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "17 CFR 275.206(4)-7 (investment adviser compliance policies and procedures)",
+   "note": "Cited as an example of other rules requiring written compliance policies and procedures; also cited as see-also for the assessment and containment procedures.",
+   "evidence": {
+    "provision": "n.15",
+    "quote": "275.206(4)–7(a) (requiring investment advisers to adopt compliance policies and procedures)"
+   }
+  },
+  {
+   "relation": "legal_basis",
+   "target_text": "Securities Exchange Act of 1934, section 17A(d)(1) (15 U.S.C. 78q–1(d)(1))",
+   "note": "The Commission states it relies on this authority to extend the safeguards rule to transfer agents registered with another appropriate regulatory agency and to extend the disposal rule to those agents.",
+   "evidence": {
+    "provision": "Preamble, Sec. II.B.2 (Federal Register p. 47717)",
+    "quote": "The Commission is exercising its authority under section 17A(d)(1) of the Exchange Act to extend the safeguards rule"
+   }
+  },
+  {
+   "relation": "legal_basis",
+   "target_text": "Gramm-Leach-Bliley Act, 15 U.S.C. 6801(b)(3) (GLBA safeguards standards)",
+   "note": "The text cites the GLBA mandate for standards protecting customer information as the basis for the safeguards rule's objectives.",
+   "evidence": {
+    "provision": "Preamble, fn. 282 (Sec. II.B.1)",
+    "quote": "mandating that the Commission shall establish appropriate standards for the financial institutions subject to its jurisdiction"
+   }
+  },
+  {
+   "relation": "legal_basis",
+   "target_text": "FACT Act, section 216 (15 U.S.C. 1681w)",
+   "note": "Cited as the congressional directive under which the disposal rule was originally adopted; the text describes this as background to the amendments.",
+   "evidence": {
+    "provision": "Preamble, Sec. II.B.2 (Federal Register p. 47717)",
+    "quote": "to implement the congressional directive in section 216 of the FACT Act"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "17 CFR 248.30 (Regulation S-P safeguards and disposal rules, before this amendment)",
+   "note": "The rule amends the scope and structure of rule 248.30, replacing the term customer records and information with customer information and adding it to the disposal rule.",
+   "evidence": {
+    "provision": "Preamble, Sec. II.B.1 (Federal Register p. 47714)",
+    "quote": "are amending rule 248.30 by replacing the term"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "17 CFR 240.17a–4 (broker-dealer recordkeeping)",
+   "note": "The final amendments require records of the safeguards and disposal rules; the text cites final 17 CFR 240.17a–4(e)(14) for the recordkeeping items.",
+   "evidence": {
+    "provision": "Preamble, Sec. II.C, Table 1 (Federal Register p. 47721)",
+    "quote": "17 CFR 240.17a–4(e)"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "17 CFR 240.17ad–7 (transfer agent record retention)",
+   "note": "Transfer agent recordkeeping for the safeguards and disposal rules, as listed in Table 1.",
+   "evidence": {
+    "provision": "Preamble, Sec. II.C, Table 1 (Federal Register p. 47721)",
+    "quote": "17 CFR 240.17ad–7(k)"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "17 CFR 270.31a–1 (investment company recordkeeping)",
+   "note": "The text states the rule text for registered and unregistered investment companies is modified to add detailed record descriptions.",
+   "evidence": {
+    "provision": "Preamble, Sec. II.C, Table 1 (Federal Register p. 47721)",
+    "quote": "17 CFR 270.31a–1(b)"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "17 CFR 275.204–2 (investment adviser recordkeeping)",
+   "note": "The text states the adviser recordkeeping rule is modified to provide the same detailed description as for broker-dealers and transfer agents.",
+   "evidence": {
+    "provision": "Preamble, Sec. II.C, Table 1 (Federal Register p. 47721)",
+    "quote": "17 CFR 275.204–2(a)"
+   }
+  },
+  {
+   "relation": "implements",
+   "target_text": "Fixing America's Surface Transportation Act (FAST Act), Pub. L. 114-94, Sec. 75001 (adding GLBA section 503(f), 15 U.S.C. 6803(f))",
+   "note": "The amendments conform Regulation S-P to the FAST Act exception to the annual privacy notice requirement.",
+   "evidence": {
+    "provision": "Sec. II.D (Exception From Requirement To Deliver Annual Privacy Notice), Federal Register p. 47722",
+    "quote": "to the requirements of the Fixing America’s Surface Transportation Act"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "CFTC financial privacy rules (17 CFR 160.30), via substituted compliance under 17 CFR 248.2(c)",
+   "note": "Notice-registered broker-dealers are deemed to comply with the safeguards rule if they comply with CFTC financial privacy rules; the disposal rule remains excluded for them.",
+   "evidence": {
+    "provision": "Sec. II.B.3 (Federal Register p. 47721)",
+    "quote": "if they are subject to, and comply with, the financial privacy rules of the CFTC"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation Crowdfunding (Rule 404 and related provisions, 17 CFR 227.404)",
+   "note": "Funding portals must comply with Regulation S-P as it applies to brokers and keep records under Regulation Crowdfunding Rule 404, rather than the Rule 17a-4 recordkeeping obligations.",
+   "evidence": {
+    "provision": "Preamble, fn. 385 (Sec. II.C)",
+    "quote": "funding portals must comply with the requirements of Regulation S–P as they apply to brokers"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "CIRCIA (named only by acronym in the text)",
+   "note": "The 72-hour service-provider notification period in the amendments is stated to be informed by the CIRCIA 72-hour deadline.",
+   "evidence": {
+    "provision": "Preamble, fn. 322 (Sec. II.B.2)",
+    "quote": "which is informed by the 72-hour deadline that is required under CIRCIA"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Exchange Act Rule 17Ad-12 (17 CFR 240.17Ad-12, safeguarding of funds and securities)",
+   "note": "Cited as an existing transfer agent safeguarding requirement that addresses securityholder funds and securities.",
+   "evidence": {
+    "provision": "Preamble, Sec. II.B.2 (Federal Register p. 47719)",
+    "quote": "since the adoption of Exchange Act Rule 17Ad–12, transfer agents have been required to safeguard any funds and securities"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation SCI (17 CFR 242.1000 through 1007)",
+   "note": "Alternative trading systems operated by broker-dealers above specified volume thresholds are SCI entities; information about an SCI event caused by a cybersecurity incident may be required to be disseminated under Regulation SCI.",
+   "evidence": {
+    "provision": "Sec. IV.C.2.b (text after n. 596)",
+    "quote": "are SCI entities subject to Regulation SCI"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation S-ID",
+   "note": "Covered institutions holding transactional accounts for consumers may also be subject to Regulation S-ID, which requires an identity theft program.",
+   "evidence": {
+    "provision": "Sec. IV.C.2.b",
+    "quote": "Covered institutions that hold transactional accounts for consumers may also be subject to Regulation S–ID."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation Crowdfunding (17 CFR part 227)",
+   "note": "Under Regulation Crowdfunding, funding portals must comply with Regulation S-P as it applies to brokers; funding portals are also subject to a separate recordkeeping rule under that regulation.",
+   "evidence": {
+    "provision": "n. 414",
+    "quote": "Pursuant to Regulation Crowdfunding, funding portals"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "FTC Safeguards Rule (16 CFR part 314)",
+   "note": "Private funds that are not subject to Regulation S-P may be subject to the FTC Safeguards Rule; the text notes that the FTC Safeguards Rule was recently amended.",
+   "evidence": {
+    "provision": "Sec. IV.C.2.b",
+    "quote": "Private funds may be subject to the FTC"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Banking Agencies' Incident Response Guidance",
+   "note": "Transfer agents supervised by a Banking Agency may be subject to this guidance, which requires notice to customers in defined cases.",
+   "evidence": {
+    "provision": "Sec. IV.C.2.b",
+    "quote": "Transfer agents supervised by one of the Banking Agencies may be subject to the Banking Agencies"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Banking Agencies' Safeguards Guidance",
+   "note": "The guidance requires certain financial institutions to maintain a written information security program; it is described as a possible overlapping requirement for transfer agents.",
+   "evidence": {
+    "provision": "Sec. IV.C.2.b",
+    "quote": "requires certain financial institutions to implement a comprehensive written information security program"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Financial privacy rules of the CFTC",
+   "note": "Notice-registered broker-dealers complying with CFTC financial privacy rules are deemed to comply with the final provision through substituted compliance under Regulation S-P.",
+   "evidence": {
+    "provision": "n. 413",
+    "quote": "Notice-registered broker-dealers subject to and complying with the financial privacy rules of the CFTC will be deemed to be in compliance"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "GDPR (as named in the text)",
+   "note": "Cited as an example of a foreign data protection regime that may apply to covered institutions operating abroad, including a notification provision.",
+   "evidence": {
+    "provision": "Sec. IV.C.2.b",
+    "quote": "the GDPR requires entities that process the personal data of EU citizens or residents"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) 2022/2554 (DORA, as cited in the text)",
+   "note": "Cited as an example of foreign rules on cybersecurity risk management by financial institutions and some of their service providers.",
+   "evidence": {
+    "provision": "n. 622",
+    "quote": "Regulation (EU) 2022/2554 of the European Parliament and of the Council of 14 December 2022"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Public Company Cybersecurity Rules",
+   "note": "The Commission states it modified the final amendments relative to the proposal to align with these rules on disclosure delays for national security or public safety reasons.",
+   "evidence": {
+    "provision": "n. 701",
+    "quote": "to align with the Public Company Cybersecurity Rules with regard to disclosure delays for national security or public safety reasons"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Electronic Recordkeeping Adopting Release (Release No. 34-96034)",
+   "note": "That release amended Rules 17a-4 and 18a-6; a commenter raised possible concurrent obligations, which the economic analysis considers as part of the baseline.",
+   "evidence": {
+    "provision": "n. 483",
+    "quote": "Rule 17a–4 and Rule 18a–6 were amended in the Electronic Recordkeeping Adopting Release"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Money Market Fund Adopting Release",
+   "note": "Cited as a recently adopted rule whose compliance burden overlaps with the final amendments for a subset of covered institutions; treated as part of the baseline.",
+   "evidence": {
+    "provision": "Sec. IV.D (discussion of other adopted rules)",
+    "quote": "The amendments adopted in the Money Market Fund Adopting Release place a compliance burden"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Private Fund Advisers Adopting Release",
+   "note": "Cited as an adopted rule whose compliance dates may overlap with the final amendments for advisers to private funds.",
+   "evidence": {
+    "provision": "Sec. IV.D (discussion of other adopted rules)",
+    "quote": "for which the compliance dates have not already passed, apply to advisers to private funds"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "February 2024 Form PF Adopting Release",
+   "note": "Cited with the Private Fund Advisers Adopting Release as applying to advisers to private funds, a subset of covered institutions.",
+   "evidence": {
+    "provision": "Sec. IV.D (discussion of other adopted rules)",
+    "quote": "the rules and amendments in the February 2024 Form PF Adopting Release"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Investment Company Names Adopting Release (Release No. 33-11238)",
+   "note": "Cited as amending requirements for certain registered investment companies and BDCs whose names suggest particular characteristics; treated as part of the baseline.",
+   "evidence": {
+    "provision": "Sec. IV.D (discussion of other adopted rules)",
+    "quote": "The Investment Company Names Adopting Release amended requirements for those registered investment companies"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Beneficial Ownership Adopting Release (Release No. 33-11253)",
+   "note": "Cited as amending disclosure requirements that apply only to persons beneficially owning more than five percent of a covered class of equity securities.",
+   "evidence": {
+    "provision": "Sec. IV.D (discussion of other adopted rules)",
+    "quote": "The Beneficial Ownership Adopting Release amended disclosure requirements"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Securitizations Conflicts Adopting Release (Release No. 33-11254)",
+   "note": "Cited as affecting only certain securitization participants and their affiliates; treated as part of the baseline.",
+   "evidence": {
+    "provision": "Sec. IV.D (discussion of other adopted rules)",
+    "quote": "The rule adopted in the Securitization Conflicts Adopting Release affects only certain entities"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "State data breach notification laws (all 50 States and the District of Columbia)",
+   "note": "Describes existing State customer notification laws, their no-harm exceptions, timing rules and GLBA or regulator substitution provisions, as the baseline for the notification requirement.",
+   "evidence": {
+    "provision": "Sec. IV.C.2.a(1)",
+    "quote": "All 50 States and the District of Columbia impose some form of data breach notification requirement under State law"
+   }
+  },
+  {
+   "relation": "implements",
+   "target_text": "FAST Act, Public Law 114-94, section 75001 (adding GLBA section 503(f), 15 U.S.C. 6803(f))",
+   "note": "The amendments incorporate into Regulation S-P the statutory exception to annual privacy notice requirements, which the text says was self-effectuating from 2015.",
+   "evidence": {
+    "provision": "Sec. IV.D (introduction)",
+    "quote": "they incorporate into regulation an existing statutory exemption for annual privacy notices"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Congressional Review Act (5 U.S.C. 801 et seq.)",
+   "note": "The Office of Information and Regulatory Affairs designated the final amendments a major rule as defined by 5 U.S.C. 804(2).",
+   "evidence": {
+    "provision": "III. Other Matters",
+    "quote": "Pursuant to the Congressional Review Act"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Securities Exchange Act of 1934, section 23(a)(2)",
+   "note": "States that section 23(a)(2) requires the Commission to consider effects on competition and prohibits rules imposing burdens not necessary or appropriate in furtherance of the Exchange Act; the economic analysis is framed on this requirement.",
+   "evidence": {
+    "provision": "Sec. IV (opening paragraph)",
+    "quote": "Section 23(a)(2) of the Exchange Act"
+   }
+  },
+  {
+   "relation": "implements",
+   "target_text": "Gramm-Leach-Bliley Act (GLBA), 15 U.S.C. 6803(f)",
+   "note": "Rule incorporates a statutory exception from annual privacy notice delivery. The same discussion cites 15 U.S.C. 6802(e) for other GLBA information-sharing exceptions. Target not in registry.",
+   "evidence": {
+    "provision": "Economic analysis, section IV.D.4 (Exception From Annual Notice Delivery Requirement)",
+    "quote": "The final amendments incorporate into the regulation an existing statutory exception to the requirement that a broker-dealer, investment company, or registered investment adviser deliver an annual privacy notice to its customers."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation SCI",
+   "note": "Footnote states that some covered institutions may be required to share information about certain events under Regulation SCI, which is noted as a baseline interaction.",
+   "evidence": {
+    "provision": "Economic analysis, section IV.D.1.b, footnote 757",
+    "quote": "under other Federal regulations such as Regulation SCI or the Banking Agencies’ Incident Response Guidance"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Banking Agencies’ Incident Response Guidance",
+   "note": "Commenters said the proposal aligned with this guidance; the text says the final notification requirement is largely aligned with it but differs in some respects.",
+   "evidence": {
+    "provision": "Economic analysis, incident response program discussion (main text, section IV.D.1)",
+    "quote": "such as the Banking Agencies’ Incident Response Guidance"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Banking Agencies’ Safeguards Guidance",
+   "note": "Cited as a baseline requirement on proper disposal of customer information for transfer agents registered with a banking agency.",
+   "evidence": {
+    "provision": "Economic analysis, section IV.D.2.b, footnote 1029",
+    "quote": "The Banking Agencies’ Safeguards Guidance requires that a covered entity’s information security program be designed to ensure the proper disposal of customer information"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "FTC Safeguards Rule",
+   "note": "Cited as a baseline requirement that financial institutions select service providers capable of maintaining safeguards; the text says many private funds subject to it already have safeguards.",
+   "evidence": {
+    "provision": "Economic analysis, section IV.D.1.c, footnote 928",
+    "quote": "the FTC Safeguards Rule requires financial institutions to take reasonable steps to select and retain service providers"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "NIST Computer Security Incident Handling Guide",
+   "note": "The text maps the rule's assessment, containment and notification requirements to the later phases of NIST recommendations; footnote 736 cites the NIST guide.",
+   "evidence": {
+    "provision": "Economic analysis, incident response program discussion (text preceding footnote 736)",
+    "quote": "correspond to the latter three phases of the NIST recommendations"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "GDPR",
+   "note": "Cited as another regime whose service providers may already have safeguards in place. The acronym is not expanded in the text.",
+   "evidence": {
+    "provision": "Economic analysis, section IV.D.1.c, footnote 928",
+    "quote": "service providers that are subject to other regimes such as the GDPR or DORA may already have appropriate safeguards in place"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Outsourcing by Investment Advisers, Release No. 6176 (Oct. 26, 2022)",
+   "note": "Cited when explaining that cost estimates for a separate service-provider proposal are not determinative here, because its scope differed.",
+   "evidence": {
+    "provision": "Economic analysis, section IV.D.1.c, footnote 916",
+    "quote": "Outsourcing by Investment Advisers, Release No. 6176 (Oct. 26, 2022)"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "State data breach notification laws",
+   "note": "Text describes the federal notification standard as a minimum applied alongside state laws. This part does not state that the rule preempts state laws.",
+   "evidence": {
+    "provision": "Economic analysis, incident response program benefits discussion (section IV.D.1.a)",
+    "quote": "all States have previously enacted data breach notification laws with substantially similar aims"
+   }
+  },
+  {
+   "relation": "legal_basis",
+   "target_text": "Securities Exchange Act of 1934 (sections 17, 17A, 23 and 36)",
+   "note": "Statutory authority clause for the amendments to Regulation S-P.",
+   "evidence": {
+    "provision": "Statutory Authority",
+    "quote": "sections 17, 17A, 23, and 36 of the Exchange Act"
+   }
+  },
+  {
+   "relation": "legal_basis",
+   "target_text": "Investment Company Act of 1940 (sections 31 and 38)",
+   "note": "Statutory authority clause for the amendments.",
+   "evidence": {
+    "provision": "Statutory Authority",
+    "quote": "sections 31 and 38 of the Investment Company Act"
+   }
+  },
+  {
+   "relation": "legal_basis",
+   "target_text": "Investment Advisers Act of 1940 (sections 204, 204A and 211)",
+   "note": "Statutory authority clause for the amendments.",
+   "evidence": {
+    "provision": "Statutory Authority",
+    "quote": "204, 204A, and 211 of the Investment Advisers Act"
+   }
+  },
+  {
+   "relation": "legal_basis",
+   "target_text": "Fair Credit Reporting Act (section 628(a))",
+   "note": "Statutory authority clause for the amendments.",
+   "evidence": {
+    "provision": "Statutory Authority",
+    "quote": "section 628(a) of the FCRA"
+   }
+  },
+  {
+   "relation": "legal_basis",
+   "target_text": "Gramm-Leach-Bliley Act (sections 501, 504, 505 and 525)",
+   "note": "Statutory authority clause for the amendments; the GLBA is cited by its section numbers in the text.",
+   "evidence": {
+    "provision": "Statutory Authority",
+    "quote": "504, 505, and 525 of the GLBA"
+   }
+  },
+  {
+   "relation": "legal_basis",
+   "target_text": "Pub. L. 111–203 (cited as authority for 17 CFR Parts 240, 248 and 270)",
+   "note": "Authority citation in the 17 CFR Part 240 authority line (sec. 939A); Part 240 also cites sec. 913 for § 240.17a-14 and Part 248 cites sec. 1088.",
+   "evidence": {
+    "provision": "17 CFR Part 240 authority citation",
+    "quote": "Pub. L. 111–203, 939A, 124 Stat. 1376 (2010)"
+   }
+  },
+  {
+   "relation": "legal_basis",
+   "target_text": "Pub. L. 112–106, secs. 503 and 602 (cited in the 17 CFR Part 240 authority line)",
+   "note": "Authority citation only; the text does not describe the provisions further.",
+   "evidence": {
+    "provision": "17 CFR Part 240 authority citation",
+    "quote": "Pub. L. 112–106, sec. 503 and"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "17 CFR Part 240 (Exchange Act rules § 240.17a-4 and § 240.17ad-7)",
+   "note": "Adds paragraph (e)(14) to § 240.17a-4 and redesignates § 240.17Ad-7 as § 240.17ad-7 with added paragraph (k) on records for policies and procedures under § 248.30.",
+   "evidence": {
+    "provision": "Text of Rule Amendments, 17 CFR Part 240",
+    "quote": "Amend § 240.17a–4 by adding a"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "17 CFR Part 270 (Investment Company Act rules § 270.31a-1 and § 270.31a-2)",
+   "note": "Adds recordkeeping paragraph (b)(13) to § 270.31a-1 and preservation paragraph (a)(8) to § 270.31a-2.",
+   "evidence": {
+    "provision": "Text of Rule Amendments, 17 CFR Part 270",
+    "quote": "Amend § 270.31a–1 by adding"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "17 CFR Part 275 (Investment Advisers Act rule § 275.204-2)",
+   "note": "Adds recordkeeping paragraph (a)(25) to § 275.204-2.",
+   "evidence": {
+    "provision": "Text of Rule Amendments, 17 CFR Part 275",
+    "quote": "Amend § 275.204–2 by adding"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Fair Credit Reporting Act, section 603(d)",
+   "note": "Consumer report has the meaning given in FCRA section 603(d), used in the definition of consumer information.",
+   "evidence": {
+    "provision": "§ 248.30(d)(2)",
+    "quote": "meaning as in section 603(d) of the Fair Credit Reporting Act"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Securities Exchange Act of 1934, section 3(a)(34)(B) (and section 3(a)(25) for transfer agent)",
+   "note": "Covered institution includes an appropriate regulatory agency (ARA) as defined in section 3(a)(34)(B); the transfer agent definition in § 248.30(d)(11) refers to section 3(a)(25).",
+   "evidence": {
+    "provision": "§ 248.30(d)(3)",
+    "quote": "section 3(a)(34)(B) of the Securities Exchange Act of 1934"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "18 U.S.C. 1029(e)",
+   "note": "Defines access device for the examples of sensitive customer information.",
+   "evidence": {
+    "provision": "§ 248.30(d)(9)(ii)(A)(4)",
+    "quote": "access device (as defined in 18 U.S.C. 1029(e))"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "17 CFR 248.3 (Regulation S-P definitions, not amended in this part)",
+   "note": "The customer definition incorporates § 248.3(j), and nonpublic personal information for customer information is defined by reference to § 248.3(t).",
+   "evidence": {
+    "provision": "§ 248.30(d)(4)(i)",
+    "quote": "same meaning as in § 248.3(j)"
+   }
+  }
+ ],
+ "notes": "Part 1 of 5 covers the Federal Register front matter, Summary, Dates, Supplementary Information, Section I, and Section II.A (incident response program, customer notice, service providers) with the footnotes in that range. The codified regulatory text (17 CFR 248.30 and related sections) is not in this part, so the operative obligations, thresholds and definitions it sets are not coded here; references such as 'final rule 248.30(a)(4)' are discussion only. Wording of the notice deadline differs: 'as soon as reasonably practicable, but not later than 30 days' in the Section I summary of principal elements, and 'as soon as practicable' with the same 30-day outside limit in Section II.A.3.d(1). Funding portals are subject to the safeguards amendments but are excluded from the new written-records requirement (n.36). Part 2 of 5 (Federal Register pp. 47712-47724) covers the service provider definition, scope of customer information, transfer agents, notice-registered broker-dealers, recordkeeping, the annual privacy notice exception, staff statements and the compliance period; relations are limited to those stated in this part. Points for readers: (1) disposal-rule paragraph citations are not uniform: proposed 248.30(c)(1) in fn. 384, 248.30(b)(2) and (b)(2)(i) in fns. 376 and 395. (2) Commenters asked the Commission to consider preempting State breach-notice laws; the text does not state any preemption and says contract changes are not prohibited. (3) The transfer agent definition of customer applies only to section 248, per the text. (4) The compliance period (18 months for larger entities, 24 months for smaller) is stated in this part and is not coded here. Part 3 of 5 covers the opening of the economic analysis (Section IV introduction, IV.A to IV.D.1 intro, including state-law and service-provider context) and the Other Matters section. It contains no operative obligations, thresholds, events or definitions, which are annotated in other parts. Relations are cross-references to other rules, guidance and statutes, mainly for baseline and overlap; target_instrument_id is empty because no registry IDs were given. Footnote 413 states that for the economic analysis 'broker' and 'broker-dealer' exclude funding portals, unlike elsewhere in the release. Dollar and count figures in this part (e.g., compliance cost estimates, account counts) are economic estimates, not legal thresholds. Part 4 of 5 covers the economic analysis (sections IV.D to IV.F) and footnotes of the Federal Register release (Vol. 89, No. 107, June 3, 2024, pp. 47753 to 47776), plus quoted rule text (248.30(a)(4), (a)(5), (d)(5), (d)(9), (d)(10)). Quoted rule text describes the adopted amendments and is not coded here as operative obligations. Internal inconsistency: footnote 765 lists 19 entries including the District of Columbia, while the text refers to 19 States. Footnote 776 says a Proposing Release figure of 197 days should read 97. Targets not in the registry use an empty target_instrument_id. Part 5 contains the SEC release's economic, PRA and RFA sections, the Statutory Authority clause, and the rule text for 17 CFR Parts 240, 248, 270 and 275. Relations come from the authority clause and authority lines, the conforming CFR amendments, and definitional cross-references in § 248.30(d). Target instruments are not matched to registry IDs, so target_instrument_id is empty. The CFR parts are sub-units of the Code of Federal Regulations, not separate instruments. § 240.17Ad-7 is redesignated (renamed), not repealed; §§ 240.17a-4(e)(13) and 240.17ad-7(j) are reserved. Preamble references to other rules and guidance (for example Regulation Crowdfunding, Banking Agencies' Incident Response Guidance) are not coded as relations.",
+ "events": [
+  {
+   "event": "proposed",
+   "date": "2023-03-15",
+   "date_type": "absolute",
+   "date_text": "The Commission voted to issue the Proposing Release on Mar. 15, 2023.",
+   "applies_to": "Proposing Release (Securities Exchange Act Release No. 97141) that preceded these amendments",
+   "evidence": {
+    "provision": "Section I, footnote 8",
+    "quote": "The Commission voted to issue the Proposing Release on Mar. 15, 2023."
+   }
+  },
+  {
+   "event": "consultation",
+   "date": "2023-06-05",
+   "date_type": "absolute",
+   "date_text": "The comment period closed on June 5, 2023.",
+   "applies_to": "comment period on the proposed amendments",
+   "evidence": {
+    "provision": "Section I, footnote 8",
+    "quote": "The comment period closed on June 5, 2023."
+   }
+  },
+  {
+   "event": "published",
+   "date": "2024-06-03",
+   "date_type": "absolute",
+   "date_text": "Monday, June 3, 2024",
+   "applies_to": "final rule as published in the Federal Register",
+   "evidence": {
+    "provision": "Federal Register header (Vol. 89, No. 107, p. 47688)",
+    "quote": "Monday, June 3, 2024"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2024-08-02",
+   "date_type": "absolute",
+   "date_text": "This rule is effective August 2, 2024.",
+   "applies_to": "amendments to Regulation S-P as a whole",
+   "evidence": {
+    "provision": "DATES (Effective date)",
+    "quote": "This rule is effective August 2, 2024."
+   }
+  },
+  {
+   "event": "application",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "Compliance date: The applicable compliance dates are discussed in section II.F of this rule.",
+   "depends_on": "compliance dates set out in section II.F of this rule (section not part of this part)",
+   "applies_to": "covered institutions subject to the amended requirements",
+   "evidence": {
+    "provision": "DATES (Compliance date)",
+    "quote": "The applicable compliance dates are discussed in section II.F of this rule."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "not later than 30 days, after becoming aware that unauthorized access to or use of customer information has occurred or is reasonably likely to have occurred",
+   "anchor": "covered institution becoming aware of unauthorized access to or use of customer information",
+   "depends_on": "covered institution becoming aware that unauthorized access to or use of customer information has occurred or is reasonably likely to have occurred",
+   "applies_to": "notice to affected individuals whose sensitive customer information was, or is reasonably likely to have been, accessed or used without authorization",
+   "offset_value": 30,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "II.A.3.d(1)",
+    "quote": "the final amendments require covered institutions to provide notices to affected individuals as soon as practicable, but not later than 30 days, after becoming aware"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "the covered institution may delay such notice for a time period specified by the Attorney General, up to 30 days following the date when such notice was otherwise required to be provided",
+   "anchor": "date when notice was otherwise required to be provided",
+   "depends_on": "written determination by the Attorney General that notice poses a substantial risk to national security or public safety, communicated to the Commission in writing",
+   "applies_to": "covered institutions delaying notice to affected individuals",
+   "offset_value": 30,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "II.A.3.d(2)",
+    "quote": "the covered institution may delay such notice for a time period specified by the Attorney General, up to 30 days following the date when such notice was otherwise required to be provided."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "the notice may be delayed for an additional period of up to 30 days if the Attorney General determines that the notice continues to pose a substantial risk to national security or public safety",
+   "anchor": "end of the initial delay period",
+   "depends_on": "Attorney General determination that notice continues to pose a substantial risk to national security or public safety, notified to the Commission in writing",
+   "applies_to": "covered institutions delaying notice to affected individuals",
+   "offset_value": 30,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "II.A.3.d(2)",
+    "quote": "the notice may be delayed for an additional period of up to 30 days"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "in extraordinary circumstances, notice may be delayed for a final additional period of up to 60 days if the Attorney General determines",
+   "anchor": "end of the additional 30-day delay period",
+   "depends_on": "extraordinary circumstances and Attorney General determination that notice continues to pose a substantial risk to national security, notified to the Commission in writing",
+   "applies_to": "covered institutions delaying notice to affected individuals",
+   "offset_value": 60,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "II.A.3.d(2)",
+    "quote": "notice may be delayed for a final additional period of up to 60 days"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "as soon as possible, but no later than 72 hours after becoming aware of a breach in security has occurred resulting in unauthorized access to a customer information system maintained by the service provider",
+   "anchor": "service provider becoming aware of a breach in security",
+   "depends_on": "service provider becoming aware of a breach in security resulting in unauthorized access to a customer information system maintained by the service provider",
+   "applies_to": "service providers notifying covered institutions",
+   "evidence": {
+    "provision": "II.A.4 (final rule 248.30(a)(5)(i))",
+    "quote": "as soon as possible, but no later than 72 hours after becoming aware of a breach in security has occurred resulting in unauthorized access to a customer information system maintained by the service provider"
+   }
+  },
+  {
+   "event": "published",
+   "date": "2024-06-03",
+   "date_type": "absolute",
+   "date_text": "Monday, June 3, 2024",
+   "applies_to": "Federal Register issue, Vol. 89, No. 107 (publication of the final amendments)",
+   "evidence": {
+    "provision": "Federal Register page header, p. 47712 (printed on each page of this part)",
+    "quote": "Federal Register / Vol. 89, No. 107 / Monday, June 3, 2024"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2025-12-03",
+   "date_type": "relative",
+   "date_text": "an 18month compliance period after the date of publication in the Federal Register for larger entities",
+   "anchor": "date of publication of the final amendments in the Federal Register",
+   "applies_to": "larger entities (Table 3): compliance with the final amendments",
+   "offset_value": 18,
+   "offset_unit": "months",
+   "anchor_event": "published",
+   "evidence": {
+    "provision": "Preamble, Section II.F (Compliance Period)",
+    "quote": "The Commission is providing an 18month compliance period after the date of publication in the Federal Register for larger entities"
+   },
+   "date_computed_from": "published 2024-06-03 (text) + 18 months"
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2026-06-03",
+   "date_type": "relative",
+   "date_text": "a 24-month compliance period after the date of publication in the Federal Register for smaller entities",
+   "anchor": "date of publication of the final amendments in the Federal Register",
+   "applies_to": "smaller entities (covered institutions that do not meet the Table 3 larger-entity standards): compliance with the final amendments",
+   "offset_value": 24,
+   "offset_unit": "months",
+   "anchor_event": "published",
+   "evidence": {
+    "provision": "Preamble, Section II.F (Compliance Period)",
+    "quote": "and 24-months following the date of publication in the Federal Register for smaller entities."
+   },
+   "date_computed_from": "published 2024-06-03 (text) + 24 months"
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "within 100 days of the change",
+   "anchor": "institution's change in policies and practices that ends the annual privacy notice exception",
+   "depends_on": "institution's change in policies and practices that causes the exception to no longer apply",
+   "applies_to": "resumption of annual privacy notice delivery by institutions that change their disclosure policies",
+   "evidence": {
+    "provision": "Preamble, Section II.D (Exception From Requirement To Deliver Annual Privacy Notice)",
+    "quote": "privacy notices within 100 days of the change."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "no later than 72 hours after becoming aware that an applicable breach has occurred",
+   "anchor": "service provider becoming aware that an applicable breach has occurred",
+   "depends_on": "service provider becoming aware that an applicable breach has occurred",
+   "applies_to": "service providers' notification to covered institutions of a breach (final rule 248.30(a)(5))",
+   "evidence": {
+    "provision": "Preamble, Section II.B.2, fn. 322",
+    "quote": "no later than 72 hours after becoming aware that an applicable breach has occurred"
+   }
+  },
+  {
+   "event": "withdrawn",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "Upon the compliance date of these rules, staff letters and other staff statements, or portions thereof, will be withdrawn or rescinded",
+   "anchor": "compliance date of these rules",
+   "depends_on": "compliance date of these rules",
+   "applies_to": "staff letters and staff statements listed in Table 2, to the extent moot, superseded or inconsistent with the rules",
+   "evidence": {
+    "provision": "Preamble, Section II.E (Existing Staff No-Action Letters and Other Staff Statements)",
+    "quote": "Upon the compliance date of these rules, staff letters and other staff statements, or portions thereof, will be withdrawn or rescinded"
+   }
+  },
+  {
+   "event": "published",
+   "date": "2024-06-03",
+   "date_type": "absolute",
+   "date_text": "Monday, June 3, 2024",
+   "applies_to": "Federal Register issue containing the final amendments (89 FR 47725 et seq.)",
+   "evidence": {
+    "provision": "Federal Register page header, 89 FR 47725-47752 (part 3 of 5)",
+    "quote": "Monday, June 3, 2024"
+   }
+  },
+  {
+   "event": "application",
+   "date": "2025-12-03",
+   "date_type": "relative",
+   "date_text": "18 months from the date of publication in the Federal Register",
+   "anchor": "date of publication in the Federal Register",
+   "applies_to": "larger covered institutions (compliance period for larger institutions)",
+   "offset_value": 18,
+   "offset_unit": "months",
+   "anchor_event": "published",
+   "evidence": {
+    "provision": "Economic analysis, Sec. IV.D.1, fn. 728",
+    "quote": "The compliance period for larger institutions under the final amendments is 18 months from the date of publication in the Federal Register."
+   },
+   "date_computed_from": "published 2024-06-03 (text) + 18 months"
+  },
+  {
+   "event": "application",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "an even longer compliance period of 24 months for smaller covered institutions",
+   "depends_on": "the start date of the 24-month compliance period is not stated in this part of the text",
+   "applies_to": "smaller covered institutions",
+   "offset_value": 24,
+   "offset_unit": "months",
+   "evidence": {
+    "provision": "Economic analysis, Sec. IV.D.1 (text accompanying fn. 728)",
+    "quote": "an even longer compliance period of 24 months for smaller covered institutions"
+   }
+  },
+  {
+   "event": "published",
+   "date": "2024-06-03",
+   "date_type": "absolute",
+   "date_text": "Monday, June 3, 2024",
+   "applies_to": "Federal Register, Vol. 89, No. 107 (publication of the final rule)",
+   "evidence": {
+    "provision": "Federal Register, Vol. 89, No. 107 (page header)",
+    "quote": "Monday, June 3, 2024"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2025-12-03",
+   "date_type": "relative",
+   "date_text": "18 months after the date of publication in the Federal Register (larger covered institutions)",
+   "anchor": "date of publication in the Federal Register",
+   "applies_to": "larger covered institutions",
+   "offset_value": 18,
+   "offset_unit": "months",
+   "anchor_event": "published",
+   "evidence": {
+    "provision": "Section IV.E (Effects on Efficiency, Competition, and Capital Formation)",
+    "quote": "The final amendments provide 24 months for smaller covered institutions to comply with the final amendments after the date of publication in the Federal Register, compared to 18 months for larger covered institutions."
+   },
+   "date_computed_from": "published 2024-06-03 (text) + 18 months"
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "as soon as practicable, but not later than 30 days, after becoming aware that unauthorized access to or use of customer information has occurred or is reasonably likely to have occurred",
+   "anchor": "becoming aware that unauthorized access to or use of customer information has occurred or is reasonably likely to have occurred",
+   "applies_to": "covered institutions: notice to affected customers",
+   "offset_value": 30,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "248.30(a)(4)(iii)",
+    "quote": "as soon as practicable, but not later than 30 days, after becoming aware that unauthorized access to or use of customer information has occurred or is reasonably likely to have occurred"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "as soon as possible, but no later than 72 hours after becoming aware that a breach in security has occurred",
+   "anchor": "becoming aware that a breach in security has occurred",
+   "applies_to": "service providers: notification to the covered institution",
+   "evidence": {
+    "provision": "248.30(a)(5)(i)",
+    "quote": "as soon as possible, but no later than 72 hours after becoming aware that a breach in security has occurred"
+   }
+  },
+  {
+   "event": "published",
+   "date": "2024-06-03",
+   "date_type": "absolute",
+   "date_text": "Monday, June 3, 2024",
+   "applies_to": "rule as a whole (Federal Register)",
+   "evidence": {
+    "provision": "Federal Register page header (Vol. 89, No. 107, Rules and Regulations)",
+    "quote": "Monday, June 3, 2024"
+   }
+  },
+  {
+   "event": "signed",
+   "date": "2024-05-16",
+   "date_type": "absolute",
+   "date_text": "Dated: May 16, 2024.",
+   "applies_to": "rule as a whole (Commission signature block)",
+   "evidence": {
+    "provision": "Signature block, Commission Secretary",
+    "quote": "Dated: May 16, 2024."
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "a longer compliance period of 24 months for smaller covered institutions",
+   "anchor": "start of the compliance period (not stated in this part)",
+   "depends_on": "compliance date set in other parts of the rule",
+   "applies_to": "smaller covered institutions",
+   "offset_value": 24,
+   "offset_unit": "months",
+   "evidence": {
+    "provision": "Preamble, Section VI.B (Significant Issues Raised by Public Comments)",
+    "quote": "we are now adopting a longer compliance period of 24 months for smaller covered institutions"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "as soon as practicable, but not later than 30 days, after becoming aware that unauthorized access to or use of customer information has occurred",
+   "anchor": "covered institution becoming aware that unauthorized access to or use of customer information has occurred or is reasonably likely to have occurred",
+   "depends_on": "covered institution becoming aware of the incident",
+   "applies_to": "covered institutions: notice to affected individuals",
+   "offset_value": 30,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "§ 248.30(a)(4)(iii)",
+    "quote": "A covered institution must provide the notice as soon as practicable, but not later than 30 days, after becoming aware"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "as soon as possible, but no later than 72 hours after becoming aware that a breach in security has occurred",
+   "anchor": "service provider becoming aware that a breach in security has occurred resulting in unauthorized access to a customer information system maintained by the service provider",
+   "depends_on": "service provider becoming aware of the breach",
+   "applies_to": "service providers: notification to covered institutions",
+   "evidence": {
+    "provision": "§ 248.30(a)(5)(i)(B)",
+    "quote": "no later than 72 hours after becoming aware that a breach in security has occurred"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "may delay providing such notice for a time period specified by the Attorney General, up to 30 days following the date when such notice was otherwise required to be provided",
+   "anchor": "date when such notice was otherwise required to be provided",
+   "depends_on": "Attorney General determination that notice poses a substantial risk to national security or public safety, notified to the Commission in writing",
+   "applies_to": "covered institutions: delayed customer notice",
+   "offset_value": 30,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "§ 248.30(a)(4)(iii)",
+    "quote": "up to 30 days following the date when such notice was otherwise required to be provided"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "The notice may be delayed for an additional period of up to 30 days",
+   "anchor": "end of the initial delay period",
+   "depends_on": "Attorney General determination that the notice continues to pose a substantial risk, notified to the Commission in writing",
+   "applies_to": "covered institutions: delayed customer notice",
+   "offset_value": 30,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "§ 248.30(a)(4)(iii)",
+    "quote": "The notice may be delayed for an additional period of up to 30 days"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "In extraordinary circumstances, notice required under this section may be delayed for a final additional period of up to 60 days",
+   "anchor": "end of the additional delay period",
+   "depends_on": "Attorney General determination that such notice continues to pose a substantial risk to national security, notified to the Commission in writing",
+   "applies_to": "covered institutions: delayed customer notice",
+   "offset_value": 60,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "§ 248.30(a)(4)(iii)",
+    "quote": "may be delayed for a final additional period of up to 60 days"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "you must provide an annual privacy notice within 100 days of the change in your policies or practices that causes you to no longer meet the requirement of paragraph (e)(1)",
+   "anchor": "change in policies or practices that causes the institution to no longer meet the exception in paragraph (e)(1)",
+   "depends_on": "change in the institution's policies or practices",
+   "applies_to": "financial institutions relying on the annual privacy notice exception",
+   "offset_value": 100,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "§ 248.5(e)(2)(ii)",
+    "quote": "you must provide an annual privacy notice within 100 days of the change in your policies or practices"
+   }
+  }
+ ],
+ "section_status": {
+  "thresholds": {
+   "status": "not_found",
+   "note": "Part 5 of 5 contains the end of the preamble (economic analysis, PRA, RFA) and the operative rule text of 248.30, 248.5, 240.17a-4, 240.17ad-7, 270.31a-1/-2 and 275.204-2. Its numbers are procedural time limits or record-retention periods (30 days, 72 hours, 100 days, 3/6 years, 60-day delays), which are coded as events or obligations, not thresholds. The small-entity size tests (broker-dealer total capital under $500,000; adviser assets under $25 million; 500 or 1,000 transfer-agent items or accounts) appear only in the RFA discussion and do not change legal treatment under the rule text, so they are not coded. No operative size, volume or value cutoff was found."
+  }
+ },
+ "thresholds": []
+}

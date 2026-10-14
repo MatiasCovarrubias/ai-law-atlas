@@ -1,0 +1,655 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "br-bcb-res85-2021",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (connectors/fetch_texts.py)",
+  "url": "https://www.bcb.gov.br/api/conteudo/app/normativos/exibenormativo?p1=Resolu%C3%A7%C3%A3o%20BCB&p2=85",
+  "retrieved": "2026-10-13",
+  "version": "as fetched",
+  "language": "pt",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "cybersecurity",
+   "data_transfer_localization"
+  ],
+  "primary_domain": "cybersecurity",
+  "mechanisms": [
+   "mandate_obligation",
+   "registration_notification",
+   "licensing_permit_certification",
+   "disclosure_transparency"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "financial_institution"
+  ],
+  "affected_roles": [
+   "cloud_service_provider",
+   "consumers_users"
+  ],
+  "decision_margins": [
+   "firm:input_use",
+   "firm:trade",
+   "firm:compliance_process",
+   "household:data_privacy"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national",
+    "extraterritorial"
+   ],
+   "description": "Applies to institutions authorised by the Central Bank of Brazil and, through contracting conditions, reaches cloud services provided abroad.",
+   "evidence": {
+    "provision": "Art. 16",
+    "quote": "prestados no exterior"
+   }
+  }
+ },
+ "summary": {
+  "short": "Requires Central Bank-authorised payment institutions (and, as amended, certain brokers and virtual asset providers) to adopt a cybersecurity policy and incident plan and follow rules for contracting cloud and data-processing services, including notification and conditions for services abroad. Applies from 1 August 2021.",
+  "long": "Sets cybersecurity policy and cloud-contracting rules for payment institutions and, under later amendments, certain securities brokers and distributors, foreign-exchange brokers and virtual asset service providers authorised by the Central Bank of Brazil. Each institution must adopt a cybersecurity policy with minimum contents, approved by its board and reviewed annually, plus an incident response plan; it must publish a policy summary, designate a responsible director and report annually on the plan. Before contracting relevant cloud or data-processing services, it must follow verification procedures, include specified contract clauses, and notify the Central Bank within ten days. Services provided abroad require a Central Bank information-sharing agreement with the foreign supervisor or prior Central Bank authorisation requested sixty days in advance. The Central Bank may veto or restrict contracting for non-compliance. Records must be kept for five years. The Resolution took effect on 1 August 2021; the text reflects amendments by Resolutions 368/2024, 538/2025 and 552/2026."
+ },
+ "relations": [
+  {
+   "relation": "legal_basis",
+   "target_text": "Lei nº 12.865, de 9 de outubro de 2013, arts. 9º, 10 e 15",
+   "note": "Preamble: the Diretoria Colegiada acts on the basis of these articles of the Law.",
+   "evidence": {
+    "provision": "Preâmbulo",
+    "quote": "com base nos arts. 9º, 10 e 15 da Lei"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Resolução CMN nº 4.282, de 4 de novembro de 2013, art. 14",
+   "note": "Preamble cites art. 14 as having regard to ('tendo em vista'); the text does not state it as the power basis.",
+   "evidence": {
+    "provision": "Preâmbulo",
+    "quote": "tendo em vista o art. 14 da Resolução nº"
+   }
+  },
+  {
+   "relation": "amended_by",
+   "target_text": "Resolução BCB nº 368, de 25/1/2024",
+   "note": "Rewrites many provisions from 1/3/2024 (e.g. arts. 1, 2, 3, 12, 17, 21) and revokes art. 24 as shown in the text.",
+   "evidence": {
+    "provision": "Art. 24",
+    "quote": "pela Resolução BCB nº 368, de 25/1/2024"
+   }
+  },
+  {
+   "relation": "amended_by",
+   "target_text": "Resolução BCB nº 538, de 18/12/2025",
+   "note": "Adds new provisions (e.g. arts. 3-A, 22-A, 22-B and paragraphs of art. 3) and rewrites others, as marked in the text.",
+   "evidence": {
+    "provision": "Art. 22-A",
+    "quote": "Incluído pela Resolução BCB nº 538, de 18/12/2025"
+   }
+  },
+  {
+   "relation": "amended_by",
+   "target_text": "Resolução BCB nº 552, de 3/3/2026",
+   "note": "Rewrites the heading and art. 1; the text shows the scope extended to sociedades prestadoras de serviços de ativos virtuais.",
+   "evidence": {
+    "provision": "Art. 1º",
+    "quote": "Redação dada pela Resolução BCB nº 552, de"
+   }
+  },
+  {
+   "relation": "repeals",
+   "target_text": "Circular nº 3.909, de 16 de agosto de 2018, arts. 1º a 26",
+   "note": "Revocation provided in art. 26 of this Resolution, with entry into force on 1/8/2021 under art. 27.",
+   "evidence": {
+    "provision": "Art. 26, I",
+    "quote": "os arts. 1º a 26 da Circular nº 3.909, de"
+   }
+  },
+  {
+   "relation": "repeals",
+   "target_text": "Circular nº 3.969, de 13 de novembro de 2019",
+   "note": "Revoked in full under art. 26 of this Resolution.",
+   "evidence": {
+    "provision": "Art. 26, II",
+    "quote": "a Circular nº 3.969, de 13 de novembro"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Catálogo de Serviços do SFN (BCB publication)",
+   "note": "Technical RSFN requirements that payment institutions must also observe; referenced, not annotated here.",
+   "evidence": {
+    "provision": "Art. 3º-A, parágrafo único, III",
+    "quote": "III - em todos os requisitos técnicos da RSFN"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Manual de Redes do SFN (BCB publication)",
+   "note": "Technical RSFN requirements referenced in art. 3º-A, parágrafo único, III; not annotated here.",
+   "evidence": {
+    "provision": "Art. 3º-A, parágrafo único, III",
+    "quote": "III - em todos os requisitos técnicos da RSFN"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Manual de Segurança do SFN (BCB publication)",
+   "note": "Technical RSFN requirements referenced in art. 3º-A, parágrafo único, III; not annotated here.",
+   "evidence": {
+    "provision": "Art. 3º-A, parágrafo único, III",
+    "quote": "III - em todos os requisitos técnicos da RSFN"
+   }
+  }
+ ],
+ "entities": [],
+ "notes": "The consolidated text (VersaoNormativo 4) shows original 2021 wording alongside amendment wording from Resoluções BCB 368/2024, 538/2025 and 552/2026. Quotes follow the amended wording where it replaces the original. Art. 24 is shown as revoked from 1/3/2024, yet its original wording (deadline 31/12/2021) also appears. Art. 1 scope: the 2021 original covered only payment institutions; the 2024 wording adds brokers, distributors and FX brokers; the 2026 wording adds virtual-asset service providers. Empty strings in target_instrument_id, lei and ticker mean no registry ID or verified identifier; the schema requires strings.",
+ "events": [
+  {
+   "event": "published",
+   "date": "2021-04-12",
+   "date_type": "absolute",
+   "date_text": "Publicada no DOU de 12/4/2021, Seção 1, p. 66/67.",
+   "applies_to": "Diário Oficial da União",
+   "evidence": {
+    "provision": "Metadados (campo DOU)",
+    "quote": "Publicada no DOU de 12/4/2021, Seção 1, p. 66/67."
+   }
+  },
+  {
+   "event": "amended",
+   "date": "2024-03-01",
+   "date_type": "absolute",
+   "date_text": "Resolução BCB nº 368/2024 - Alteração, a partir de 1º/3/2024",
+   "applies_to": "Provisions rewritten by Resolução BCB nº 368, de 25/1/2024 (per consolidated history note)",
+   "evidence": {
+    "provision": "Atualizações (metadados)",
+    "quote": "Resolução BCB nº 368/2024 - Alteração, a partir de 1º/3/2024"
+   }
+  },
+  {
+   "event": "repealed",
+   "date": "2024-03-01",
+   "date_type": "absolute",
+   "date_text": "(Revogado, a partir de 1º/3/2024, pela Resolução BCB nº 368, de 25/1/2024.)",
+   "applies_to": "Art. 24 (adequação de contratos existentes), partial repeal",
+   "evidence": {
+    "provision": "Art. 24",
+    "quote": "Revogado, a partir de"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2021-12-31",
+   "date_type": "absolute",
+   "date_text": "até 31 de dezembro de 2021",
+   "applies_to": "Institutions that had already contracted relevant cloud services before 1 September 2019 (adjust contracts to Art. 16 I, II, IV, §2 and Arts. 15 §1 and 17); provision revoked from 1/3/2024",
+   "evidence": {
+    "provision": "Art. 24, parágrafo único",
+    "quote": "deve ocorrer até 31 de dezembro de 2021."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "até 31 de março do ano seguinte ao da data-base (data-base 31 de dezembro, Art. 8º caput)",
+   "applies_to": "Annual report on implementation of the incident action and response plan, presented to the board or executive board",
+   "evidence": {
+    "provision": "Art. 8º, § 2º",
+    "quote": "até 31 de março do ano seguinte ao da data-base."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "ter periodicidade mínima anual",
+   "applies_to": "Intrusion tests (Art. 3º, § 8º, inciso IV)",
+   "evidence": {
+    "provision": "Art. 22-A, inciso I",
+    "quote": "ter periodicidade mínima"
+   }
+  },
+  {
+   "event": "amended",
+   "date": "2025-12-18",
+   "date_type": "absolute",
+   "date_text": "Incluído pela Resolução BCB nº 538, de 18/12/2025.",
+   "applies_to": "Provisions inserted or rewritten by Resolução BCB nº 538, de 18/12/2025 (e.g., Arts. 3º §§ 2º-3º, 3º-A, 8º, 22-A, 22-B)",
+   "evidence": {
+    "provision": "Art. 22-B",
+    "quote": "(Incluído pela Resolução BCB nº 538, de 18/12/2025.)"
+   }
+  },
+  {
+   "event": "amended",
+   "date": "2026-03-03",
+   "date_type": "absolute",
+   "date_text": "Redação dada pela Resolução BCB nº 552, de 3/3/2026",
+   "applies_to": "Ementa and Art. 1º, rewritten by Resolução BCB nº 552, de 3/3/2026",
+   "evidence": {
+    "provision": "Atualizações (metadados)",
+    "quote": "Resolução BCB nº 552/2026 - Nova redação: ementa e art. 1º."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "até dez dias após a contratação dos serviços",
+   "anchor": "contratação dos serviços",
+   "depends_on": "contratação dos serviços relevantes de processamento, armazenamento de dados e computação em nuvem",
+   "applies_to": "Communication to the Banco Central of contracting relevant cloud or data processing services",
+   "offset_value": 10,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Art. 15, § 2º",
+    "quote": "deve ser realizada até dez dias após a"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "até dez dias após a alteração contratual",
+   "anchor": "alteração contratual",
+   "depends_on": "alteração contratual que implique modificação das informações do § 1º",
+   "applies_to": "Communication to the Banco Central of contract changes affecting the information in Art. 15 § 1º",
+   "offset_value": 10,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Art. 15, § 3º",
+    "quote": "devem ser comunicadas ao Banco Central do Brasil até dez dias após a"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "observando o prazo mínimo de sessenta dias antes da alteração contratual",
+   "anchor": "alteração contratual",
+   "depends_on": "contract change affecting the information in Art. 15 § 1º, where there is no convênio under Art. 16 I",
+   "applies_to": "Prior authorisation from the Banco Central for contract changes for services abroad without convênio",
+   "offset_value": -60,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Art. 16, § 1º, inciso II",
+    "quote": "sessenta dias antes da alteração contratual"
+   }
+  },
+  {
+   "event": "repealed",
+   "date": "2021-08-01",
+   "date_type": "relative",
+   "date_text": "Ficam revogados:",
+   "anchor": "entrada em vigor (Art. 27)",
+   "applies_to": "Circular BCB nº 3.909/2018, arts. 1º a 26, and Circular BCB nº 3.969/2019",
+   "offset_value": 0,
+   "offset_unit": "days",
+   "anchor_event": "entry_into_force",
+   "evidence": {
+    "provision": "Art. 26",
+    "quote": "Ficam revogados:"
+   },
+   "date_computed_from": "entry_into_force 2021-08-01 (registry) + 0 days"
+  }
+ ],
+ "definitions": [
+  {
+   "term": "serviço relevante (comunicação eletrônica de dados na RSFN)",
+   "defined_in": "Art. 22-B (this Resolution)",
+   "evidence": {
+    "provision": "Art. 22-B",
+    "quote": "considerado relevante para fins da aplicação do disposto nesta Resolução"
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "management_system",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Implement and maintain a cybersecurity policy based on principles and guidelines ensuring confidentiality, integrity and availability of data and systems; policy must be compatible with size, risk profile, business model, activity nature and data sensitivity (§1); prudential conglomerate option and board formalisation in §§2-3 (see separate row for §2 option).",
+   "applies_from": "1 August 2021 (Art. 27); wording extended to the other listed institutions from 1 March 2024 (Res. BCB 368)",
+   "evidence": {
+    "provision": "Art. 2 caput; §§1 and 3",
+    "quote": "As instituições de pagamento devem implementar"
+   }
+  },
+  {
+   "type": "management_system",
+   "addressee": "financial_institution",
+   "modality": "may",
+   "summary": "Members of a prudential conglomerate may adopt a single cybersecurity policy for the conglomerate, if compatible with Chapter II; institutions not doing so must formalise that option at a board meeting (§3).",
+   "applies_from": "1 August 2021 (Art. 27)",
+   "conditional_on": "Institution is part of a prudential conglomerate",
+   "evidence": {
+    "provision": "Art. 2 §2",
+    "quote": "podem adotar política de segurança"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Cybersecurity policy must specify at minimum: objectives, procedures and controls to reduce vulnerability to incidents, specific controls for sensitive information, registration and impact analysis of relevant incidents, data classification and incident relevance parameters, culture-building mechanisms, and information sharing on relevant incidents.",
+   "applies_from": "1 August 2021 (Art. 27); amended text from 1 March 2024 (Res. BCB 368)",
+   "evidence": {
+    "provision": "Art. 3 caput and items I-VII",
+    "quote": "deve especificar, no mínimo:"
+   }
+  },
+  {
+   "type": "testing_evaluation",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Vulnerability assessment and correction must include periodic tests and analyses to detect vulnerabilities, periodic scans to identify unauthorised devices connected to the corporate network, periodic technology analyses, intrusion tests, and timely correction of identified vulnerabilities.",
+   "applies_from": "Added by Res. BCB 538 of 18 Dec 2025 (effective date not stated in text)",
+   "evidence": {
+    "provision": "Art. 3 §8",
+    "quote": "deve contemplar, no mínimo:"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "financial_institution",
+   "also_addressees": [
+    "consumers_users"
+   ],
+   "modality": "shall",
+   "summary": "Cybersecurity policy must include providing information to clients and end users on precautions when using the institution's products and services.",
+   "applies_from": "1 March 2024 (Res. BCB 368)",
+   "evidence": {
+    "provision": "Art. 3 VI b",
+    "quote": "prestação de informações a usuários finais sobre precauções na"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Institution must publicly disclose a summary of the general lines of its cybersecurity policy.",
+   "applies_from": "1 August 2021 (Art. 27)",
+   "evidence": {
+    "provision": "Art. 5",
+    "quote": "devem divulgar ao público resumo contendo as linhas gerais da"
+   }
+  },
+  {
+   "type": "management_system",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Establish an action and incident response plan to implement the cybersecurity policy, covering organisational adjustments, prevention and response routines and controls, and the area responsible for recording relevant incident effects.",
+   "applies_from": "1 August 2021 (Art. 27)",
+   "evidence": {
+    "provision": "Art. 6 caput and sole paragraph",
+    "quote": "plano de ação e de resposta a incidentes visando à implementação da"
+   }
+  },
+  {
+   "type": "management_system",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Designate a director responsible for the cybersecurity policy and for executing the action and incident response plan; that director may hold other functions if there is no conflict of interest.",
+   "applies_from": "1 August 2021 (Art. 27)",
+   "evidence": {
+    "provision": "Art. 7 caput and sole paragraph",
+    "quote": "devem designar diretor responsável pela política de segurança"
+   }
+  },
+  {
+   "type": "record_keeping",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Prepare an annual report on implementation of the response plan with data-base date 31 December, covering minimum contents listed in §1; submit it to the risk committee where one exists and to the board or executive board by 31 March of the following year (§2).",
+   "applies_from": "Annual; data-base 31 December; submission by 31 March of following year",
+   "evidence": {
+    "provision": "Art. 8 caput",
+    "quote": "devem elaborar relatório anual sobre a implementação do plano de ação"
+   }
+  },
+  {
+   "type": "management_system",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "The cybersecurity policy and the incident response plan must be approved by the board of directors or, where none exists, by the executive board.",
+   "applies_from": "1 August 2021 (Art. 27)",
+   "evidence": {
+    "provision": "Art. 9",
+    "quote": "devem ser aprovados pelo conselho de administração"
+   }
+  },
+  {
+   "type": "management_system",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Risk management policies, strategies and structures on outsourcing decision criteria must cover the contracting of relevant data processing, storage and cloud computing services, in Brazil or abroad.",
+   "applies_from": "1 August 2021 (Art. 27); amended text from 1 March 2024 (Res. BCB 368)",
+   "conditional_on": "Relevant services as defined in Art. 12 and Art. 22-B",
+   "evidence": {
+    "provision": "Art. 11",
+    "quote": "contemplem a contratação de"
+   }
+  },
+  {
+   "type": "verification_gatekeeping",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Before contracting relevant cloud or data services, adopt procedures covering governance and management practices proportionate to service relevance and risks, and verify the provider's capacity to ensure legal compliance, data access, confidentiality, integrity, availability and recovery, certification adherence, access to independent audit reports, monitoring information, segregation of user data and access controls (items I-II, a-h); §3 requires controls against vulnerabilities in app releases for internet-executed applications.",
+   "applies_from": "1 August 2021 (Art. 27); amended text from 1 March 2024 (Res. BCB 368)",
+   "conditional_on": "Relevant data processing, storage or cloud service contracting",
+   "evidence": {
+    "provision": "Art. 12 caput",
+    "quote": "devem adotar procedimentos que"
+   }
+  },
+  {
+   "type": "record_keeping",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Procedures for relevant cloud contracting and the information on provider capacity verification must be documented.",
+   "applies_from": "1 August 2021 (Art. 27)",
+   "conditional_on": "Relevant data processing, storage or cloud service contracting",
+   "evidence": {
+    "provision": "Art. 12 §2",
+    "quote": "devem ser documentados."
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Relevant data processing, storage and cloud contracting must be notified to the Central Bank, stating the contracted company, the relevant services and the countries and regions where services and data may be provided and stored (§1); notice within ten days after contracting (§2); contract changes modifying that information notified within ten days (§3).",
+   "applies_from": "1 August 2021 (Art. 27)",
+   "conditional_on": "Relevant services contracted",
+   "evidence": {
+    "provision": "Art. 15 caput",
+    "quote": "comunicada pelas instituições de pagamento ao Banco Central do Brasil."
+   }
+  },
+  {
+   "type": "verification_gatekeeping",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Contracting relevant services provided abroad requires: an information-exchange agreement between the Central Bank and supervisory authorities of the countries concerned (I); that the services do not impair regular operation or hinder the Central Bank (II); prior definition of countries and regions for services and data (III); and alternatives for business continuity if the contract cannot be maintained or ends (IV). Laws of those countries must not restrict access to data (§2).",
+   "applies_from": "1 August 2021 (Art. 27); amended text from 1 March 2024 (Res. BCB 368)",
+   "conditional_on": "Services provided abroad",
+   "evidence": {
+    "provision": "Art. 16 caput",
+    "quote": "deve observar os seguintes"
+   }
+  },
+  {
+   "type": "licensing_certification",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Where no information-exchange agreement exists under Art. 16 I, the institution must request Central Bank authorisation for the contracting at least sixty days before, and for contract changes at least sixty days before the change.",
+   "applies_from": "1 August 2021 (Art. 27); amended text from 1 March 2024 (Res. BCB 368)",
+   "conditional_on": "No convênio under Art. 16 I",
+   "evidence": {
+    "provision": "Art. 16 §1",
+    "quote": "deverá solicitar autorização do Banco Central do Brasil para"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Contracts for relevant cloud and data services must contain clauses on: countries and regions for storage and processing; security measures for transmission and storage; segregation of data and access controls during the contract; data transfer and deletion on termination; institution access to provider information, certifications, audit reports and monitoring resources; Central Bank access to contracts and data; measures the institution must take on Central Bank instruction.",
+   "applies_from": "1 August 2021 (Art. 27); amended text from 1 March 2024 (Res. BCB 368)",
+   "conditional_on": "Relevant data processing, storage or cloud service contracts",
+   "evidence": {
+    "provision": "Art. 17 caput",
+    "quote": "devem conter cláusulas dispondo sobre:"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "cloud_service_provider",
+   "modality": "shall",
+   "summary": "Contracts must require the contracted provider to notify the institution of subcontracting of relevant services (item VI) and to keep the institution permanently informed of limitations that may affect service provision or legal compliance (item IX).",
+   "applies_from": "1 August 2021 (Art. 27); amended text from 1 March 2024 (Res. BCB 368)",
+   "conditional_on": "Relevant services contracted",
+   "evidence": {
+    "provision": "Art. 17 VI and IX",
+    "quote": "a obrigação de a empresa contratada notificar a instituição de"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "cloud_service_provider",
+   "modality": "shall",
+   "summary": "Where a resolution regime is decreed for the institution, contracts must require the provider to give the resolution manager full access to contracts, documents, data, processing information and access codes, and to notify the manager at least thirty days before interrupting service (including for non-payment by the institution), accepting a further thirty days if requested.",
+   "applies_from": "1 August 2021 (Art. 27); amended text from 1 March 2024 (Res. BCB 368)",
+   "conditional_on": "Decree of a resolution regime by the Central Bank for the institution",
+   "evidence": {
+    "provision": "Art. 17 sole paragraph",
+    "quote": "devem prever, para o caso da decretação de regime"
+   }
+  },
+  {
+   "type": "management_system",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Risk management policies in the risk framework must address business continuity, including treatment of relevant cyber incidents, procedures if relevant cloud services are interrupted (including provider replacement and return to normal operation), and incident scenarios in continuity tests.",
+   "applies_from": "1 August 2021 (Art. 27); amended text from 1 March 2024 (Res. BCB 368)",
+   "evidence": {
+    "provision": "Art. 19",
+    "quote": "suas políticas previstas na estrutura de gerenciamento de riscos"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Procedures must provide for timely communication to the Central Bank of relevant incidents and interruptions of relevant services that constitute a crisis situation for the institution, and of the steps to restart activities; they must also specify treatment to mitigate effects and the period for restart or normalisation.",
+   "applies_from": "1 August 2021 (Art. 27); amended text from 1 March 2024 (Res. BCB 368)",
+   "conditional_on": "Incidents or service interruptions constituting a crisis situation",
+   "evidence": {
+    "provision": "Art. 20 III",
+    "quote": "comunicação tempestiva ao Banco Central do Brasil das ocorrências"
+   }
+  },
+  {
+   "type": "management_system",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Institution must establish and document the criteria that define a crisis situation for the purposes of Art. 20 III.",
+   "applies_from": "1 August 2021 (Art. 27); amended text from 1 March 2024 (Res. BCB 368)",
+   "evidence": {
+    "provision": "Art. 20 sole paragraph",
+    "quote": "os critérios que configurem a situação de crise de que trata o"
+   }
+  },
+  {
+   "type": "management_system",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Institution must establish monitoring and control mechanisms to ensure implementation and effectiveness of the cybersecurity policy, the incident response plan and the cloud contracting requirements, including processes, tests and audit trails, metrics and indicators, and identification and correction of deficiencies.",
+   "applies_from": "1 August 2021 (Art. 27); amended text from 1 March 2024 (Res. BCB 368)",
+   "evidence": {
+    "provision": "Art. 21 caput",
+    "quote": "devem instituir mecanismos de acompanhamento e de controle com vistas"
+   }
+  },
+  {
+   "type": "testing_evaluation",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "The monitoring and control mechanisms must be subject to periodic tests by internal audit consistent with the institution's internal controls; subcontracting notifications under Art. 17 VI must be considered in designing them (§1).",
+   "applies_from": "1 August 2021 (Art. 27)",
+   "evidence": {
+    "provision": "Art. 21 §2",
+    "quote": "devem ser submetidos a testes periódicos"
+   }
+  },
+  {
+   "type": "incident_reporting",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Institutions must develop initiatives to share information on relevant cyber incidents, including information received from third-party service providers, with other authorised institutions, and make the shared information available to the Central Bank, without prejudice to confidentiality and free competition.",
+   "applies_from": "1 August 2021 (Art. 27); amended text from 1 March 2024 (Res. BCB 368)",
+   "evidence": {
+    "provision": "Art. 22 caput and §§1-2",
+    "quote": "devem desenvolver iniciativas para o compartilhamento de"
+   }
+  },
+  {
+   "type": "testing_evaluation",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Intrusion tests must be performed at least annually, independently and impartially by a natural person or specialised company contracted for that purpose (internal teams may also test), and their results, vulnerabilities and correction plans must be documented.",
+   "applies_from": "Added by Res. BCB 538 of 18 Dec 2025 (effective date not stated in text)",
+   "evidence": {
+    "provision": "Art. 22-A I",
+    "quote": "ter periodicidade mínima"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "regulator",
+   "modality": "may",
+   "summary": "The Central Bank may veto or impose restrictions on contracting data processing, storage and cloud services when non-compliance with the resolution or a limitation on its own action is found at any time, and set a deadline for adjusting the services and contracts.",
+   "applies_from": "1 August 2021 (Art. 27)",
+   "conditional_on": "Non-compliance with the resolution or limitation on Central Bank action found",
+   "evidence": {
+    "provision": "Art. 25",
+    "quote": "poderá vetar ou impor restrições para a contratação de"
+   }
+  }
+ ],
+ "enforcement": [
+  {
+   "sanction_type": "other",
+   "authority": "Banco Central do Brasil",
+   "triggered_by": "Constatação, a qualquer tempo, da inobservância do disposto nesta Resolução (Art. 25)",
+   "max_penalty_text": "Nenhum valor máximo consta do texto; a medida prevista é veto ou restrição à contratação de serviços, não multa.",
+   "cure_period": "Prazo para adequação dos serviços e dos contratos, estabelecido pelo Banco Central do Brasil no caso concreto; o texto não fixa prazo.",
+   "evidence": {
+    "provision": "Art. 25",
+    "quote": "poderá vetar ou impor restrições para a contratação de"
+   }
+  }
+ ],
+ "section_status": {
+  "thresholds": {
+   "status": "not_found",
+   "note": "No numeric cutoff changing legal treatment found. Time periods (ten days for communications in Art. 15 §§ 2-3; thirty days for interruption notice in Art. 17 parágrafo único II; sixty days for prior authorisation in Art. 16 § 1) are procedural deadlines coded as events. The five-year retention period (Art. 23) is an obligation. The 1 September 2019 cohort date in Art. 24 is revoked and is not a numeric threshold. Art. 25 and the relevance criteria in Art. 12 § 1 contain no numeric value."
+  },
+  "entities": {
+   "status": "not_found",
+   "note": "set by runner: model returned no entries"
+  }
+ },
+ "thresholds": []
+}

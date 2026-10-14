@@ -1,0 +1,116 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "es-prd-datacenters-efficiency-2025",
+ "tier": "B",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "light, effort high, obligations medium",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (connectors/fetch_texts.py)",
+  "url": "https://www.miteco.gob.es/es/energia/participacion/2025/detalle-participacion-publica-k-775.html",
+  "retrieved": "2026-10-13",
+  "version": "as fetched",
+  "language": "es",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "compute_data_centers",
+   "energy_grid_water"
+  ],
+  "primary_domain": "compute_data_centers",
+  "mechanisms": [
+   "mandate_obligation",
+   "disclosure_transparency"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "data_center_owner",
+   "data_center_operator"
+  ],
+  "affected_roles": [
+   "utility_grid_operator",
+   "general_public"
+  ],
+  "decision_margins": [
+   "firm:entry_market_access",
+   "firm:investment_location",
+   "firm:input_use",
+   "firm:compliance_process"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national"
+   ],
+   "description": "Draft national Royal Decree of Spain's Council of Ministers; the page states no extraterritorial or subnational reach.",
+   "evidence": {
+    "provision": "Consulta metadata: Rango de la Norma",
+    "quote": "Real Decreto de Consejo de Ministros"
+   }
+  },
+  "agora_strategies": [
+   "Performance requirements",
+   "Disclosure"
+  ]
+ },
+ "summary": {
+  "short": "Draft Spanish Royal Decree on energy efficiency and sustainability of data centres. Data-centre owners and operators would report energy, water, refrigerant and socio-economic indicators, show top-15% performance for planned facilities, and reuse waste heat where viable. Compliance would condition grid access. Effective date not stated.",
+  "long": "Draft Royal Decree on energy efficiency and sustainability of data centres in Spain, opened to public hearing from 8 August to 15 September 2025. The page cites Articles 12 and 26(6) of Directive (EU) 2023/1791 and Delegated Regulation (EU) 2024/1364, which requires operators with IT power demand of at least 500 kW to report to an EU database. As described, data-centre owners and operators would report indicators on occupied surface, energy consumption and its origin (including renewable share), contribution to grid resilience, total and potable water use, refrigerant types, resource-efficiency ratios, and socio-economic impact including employment. They would also state how they take the European data-centre code of conduct into account, and demonstrate that planned facilities rank in the best 15% on the indicators, particularly electricity and water. Waste heat must be reused where technically and economically viable, following a cost-benefit methodology. Meeting these criteria would be a condition for access to electricity transport and distribution networks. The page states no penalties, entry-into-force date or competent authority, and the draft PDF annex is not reproduced in the fetched text, so this summary relies on the page's description."
+ },
+ "relations": [
+  {
+   "relation": "implements",
+   "target_text": "Directiva (UE) 2023/1791 del Parlamento Europeo y del Consejo de 13 de septiembre de 2023 relativa a la eficiencia energética y por la que se modifica el Reglamento (UE) 2023/955 (versión refundida), arts. 12 and 26(6)",
+   "note": "The summary says the draft regulates the heat-reuse obligation of Art. 26(6) and sets minimum bases under Art. 12 for data-centre energy efficiency and transparency. The Directive is named in the summary; the draft's articles are not in the fetched text.",
+   "evidence": {
+    "provision": "2. Antecedentes de la norma",
+    "quote": "el artículo 26 de la citada Directiva establece, en su apartado 6, que los Estados miembros deben velar porque los centros de datos utilicen el calor residual"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Reglamento Delegado (UE) 2024/1364 de la Comisión, de 14 de marzo de 2024, relativo a la primera fase del establecimiento de un régimen de evaluación común de la Unión para centros de datos",
+   "note": "The draft's indicator reporting is described alongside the information and key performance indicators that the Delegated Regulation requires operators to report to the EU database (500 kW threshold). The summary does not say the draft adopts those indicators.",
+   "evidence": {
+    "provision": "2. Antecedentes de la norma",
+    "quote": "Este Reglamento establece la información y los indicadores clave de rendimiento que deben comunicar a la base de datos europea"
+   }
+  }
+ ],
+ "notes": "The source is the public consultation page (audiencia e información pública, closed) summarising the draft Real Decreto, not its articles. The draft text is in an annex (RD CPDs PDF) that is not in the fetched document, so only relations described in the summary are coded. No operative provisions, obligations or thresholds are annotated. target_instrument_id is empty because registry IDs are not given in the document. The 500 kW cutoff belongs to Delegated Regulation (EU) 2024/1364, not to this draft. Ley 50/1997, Ley 39/2015 and Orden PRE/1590/2016 are cited for the consultation procedure and are not coded as legal basis. Navigation-menu links (e.g., RDL 14/2022, Directives 2010/31/UE and 2024/1275) are not referenced in the text and are not coded. The PNIEC 2023-2030 and the Estrategia de Inteligencia Artificial 2024 appear as background only.",
+ "events": [
+  {
+   "event": "consultation",
+   "date": "2025-08-08",
+   "date_type": "absolute",
+   "date_text": "desde el viernes, 08 de agosto de 2025",
+   "applies_to": "public information and hearing (audiencia e información pública) on the draft Real Decreto on energy efficiency and sustainability of data centres",
+   "evidence": {
+    "provision": "Plazo de remisión",
+    "quote": "desde el viernes, 08 de agosto de 2025"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2025-09-15",
+   "date_type": "absolute",
+   "date_text": "hasta el lunes, 15 de septiembre de 2025",
+   "applies_to": "deadline for submitting documentation and comments in the public consultation on the draft Real Decreto",
+   "evidence": {
+    "provision": "Plazo de remisión",
+    "quote": "hasta el lunes, 15 de septiembre de 2025"
+   }
+  }
+ ],
+ "section_status": {
+  "thresholds": {
+   "status": "not_found",
+   "note": "The operative text of the draft Real Decreto is in the annex PDF ('RD CPDs'), which is not part of the fetched document. The only numbers in the document appear in the background summary: a 500 kW IT power demand cutoff, which belongs to Delegated Regulation (EU) 2024/1364 and is not a provision of this draft, and a 15% best-performance benchmark described as an obligation of this draft. Neither is an operative provision of this instrument, so neither is coded. Code thresholds from the annex text once it is annotated."
+  }
+ },
+ "thresholds": []
+}

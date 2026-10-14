@@ -1,0 +1,170 @@
+{
+ "instrument_id": "us-s2528-119",
+ "checker": "claude-opus-5-5 (Claude Code)",
+ "protocol": "VP-1.0",
+ "date": "2026-10-14",
+ "tier": "B",
+ "reference": [
+  {
+   "category": "threshold",
+   "provision": "Sec. 3(a)(2)(A)(v)",
+   "quote": "A regulated entity that is regulated or supervised by more than 1 financial regulatory agency shall provide notice of any application",
+   "value": "> 1 financial regulatory agency: notice of application to each regulator (obligation)",
+   "match": {
+    "X": null,
+    "Y": null
+   }
+  },
+  {
+   "category": "threshold",
+   "provision": "Sec. 3(a)(2)(B)(iii)(II)(bb)",
+   "quote": "may not resubmit more than 2 applications that are substantially similar to the denied application",
+   "value": "max 2 substantially similar resubmissions after denial (cap)",
+   "match": {
+    "X": 0,
+    "Y": 0
+   }
+  },
+  {
+   "category": "key_date",
+   "provision": "Sec. 3(a)(2)(D)",
+   "quote": "Not later than 180 days after the date of enactment of this Act, each financial regulatory agency shall promulgate regulations",
+   "value": "enactment + 180 days: agencies' implementing regulations",
+   "match": {
+    "X": 5,
+    "Y": 0
+   }
+  },
+  {
+   "category": "key_date",
+   "provision": "Sec. 3(b)",
+   "quote": "Not later than 2 years after the date of enactment of this Act, and each year for 7 years thereafter, each financial regulatory agency shall submit",
+   "value": "first annual report enactment + 2 years, then annually for 7 years (reporting duty ends)",
+   "match": {
+    "X": 6,
+    "Y": 1
+   }
+  }
+ ],
+ "judgments": {
+  "X": {
+   "thresholds": [
+    {
+     "index": 0,
+     "verdict": "correct",
+     "note": "'may not resubmit more than 2' coded as > 2 with trigger prohibition"
+    }
+   ],
+   "events": [
+    {
+     "index": 0,
+     "verdict": "correct",
+     "note": "120-day agency review period"
+    },
+    {
+     "index": 1,
+     "verdict": "correct",
+     "note": "deemed approval after the 120-day extension expires; deadline type acceptable, anchor names the extension"
+    },
+    {
+     "index": 2,
+     "verdict": "correct",
+     "note": "5-business-day notice to other regulators"
+    },
+    {
+     "index": 3,
+     "verdict": "correct",
+     "note": "30-day bar on enforcement after denial notice"
+    },
+    {
+     "index": 4,
+     "verdict": "correct",
+     "note": "enforcement limits apply from approval date (conditional application)"
+    },
+    {
+     "index": 5,
+     "verdict": "correct",
+     "note": "180 days after enactment; anchor_event 'signed' acceptable for a US bill"
+    },
+    {
+     "index": 6,
+     "verdict": "correct",
+     "note": "first report 2 years after enactment"
+    },
+    {
+     "index": 7,
+     "verdict": "correct",
+     "note": "annual reports for 7 years thereafter (recurring)"
+    }
+   ],
+   "obligations": [],
+   "enforcement": []
+  },
+  "Y": {
+   "thresholds": [
+    {
+     "index": 0,
+     "verdict": "correct",
+     "note": "'may not resubmit more than 2' coded as > 2 with trigger prohibition"
+    }
+   ],
+   "events": [
+    {
+     "index": 0,
+     "verdict": "correct",
+     "note": "180 days after enactment"
+    },
+    {
+     "index": 1,
+     "verdict": "correct",
+     "note": "first report 2 years after enactment"
+    },
+    {
+     "index": 2,
+     "verdict": "correct",
+     "note": "annual reports for 7 years thereafter (recurring)"
+    },
+    {
+     "index": 3,
+     "verdict": "correct",
+     "note": "5-business-day notice"
+    },
+    {
+     "index": 4,
+     "verdict": "correct",
+     "note": "120-day review period"
+    },
+    {
+     "index": 5,
+     "verdict": "correct",
+     "note": "optional 120-day extension"
+    },
+    {
+     "index": 6,
+     "verdict": "correct",
+     "note": "30-day bar on enforcement after denial notice"
+    }
+   ],
+   "obligations": [],
+   "enforcement": []
+  }
+ },
+ "sampling": {
+  "X": {},
+  "Y": {}
+ },
+ "classification": {
+  "X": {
+   "domains": "right",
+   "primary_domain": "right",
+   "note": "ai_sectoral (financial services AI sandbox)"
+  },
+  "Y": {
+   "domains": "right",
+   "primary_domain": "right",
+   "note": "same as X"
+  }
+ },
+ "reference_scope": "full text",
+ "notes": "Match indices refer to the thresholds section for threshold items and to the events section for key_date items; for the reporting item the first-report row is given (X also has recurring row 7, Y row 2). Both versions miss the 'more than 1 financial regulatory agency' notice threshold. Event sets differ slightly but all items are correct: X adds the conditional start of enforcement limits on approval and the deemed-approval point; Y codes the 120-day extension as its own row. Neither codes the 60-day comment period or the minimum 1-year test-project term (not reference items)."
+}

@@ -1,0 +1,429 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "eu-data-centre-rating-scheme-2024",
+ "tier": "B",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "light, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-interim-20261014"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (connectors/fetch_texts.py)",
+  "url": "http://publications.europa.eu/resource/cellar/fe730afc-13e7-11ef-a251-01aa75ed71a1.0006.03/DOC_1",
+  "retrieved": "2026-10-13",
+  "version": "as fetched",
+  "language": "en",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "compute_data_centers",
+   "energy_grid_water",
+   "data_access_sharing"
+  ],
+  "primary_domain": "compute_data_centers",
+  "mechanisms": [
+   "mandate_obligation",
+   "disclosure_transparency",
+   "standard_setting"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "data_center_operator",
+   "government_agency"
+  ],
+  "affected_roles": [
+   "general_public",
+   "data_center_occupant"
+  ],
+  "decision_margins": [
+   "firm:compliance_process",
+   "household:information"
+  ],
+  "territorial_scope": {
+   "types": [
+    "supranational"
+   ],
+   "description": "Binding and directly applicable in all EU Member States; applies to data centre operators with installed IT power demand of at least 500 kW.",
+   "evidence": {
+    "provision": "Art. 6",
+    "quote": "This Regulation shall be binding in its entirety and directly applicable in all Member States."
+   }
+  },
+  "agora_strategies": [
+   "Disclosure"
+  ]
+ },
+ "summary": {
+  "short": "The Regulation requires operators of data centres with at least 500 kW installed IT power demand to report defined information and sustainability indicators (energy, water, waste heat, renewables) to a European database, with first reports due 15 September 2024 and annual reporting thereafter.",
+  "long": "The Regulation defines the information and key performance indicators (KPIs) that operators of data centres with an installed information technology power demand of at least 500 kW must communicate to a European database, plus common measurement and calculation methods (Art. 1). Reports are due by 15 September 2024, then by 15 May 2025 and yearly, covering the preceding calendar year; they go through a national scheme where one exists, otherwise directly to the database (Art. 3(1)). In the first reporting periods, operators may omit listed KPIs for technical reasons with an explanation, and colocation operators may estimate coverage (Art. 3(2)-(3)). Annex I covers identification and redundancy; Annex II covers energy, water, waste heat, refrigerant, renewable energy, ICT capacity and traffic KPIs and requires measurement records kept for at least 10 years. Annex III defines PUE, WUE, ERF and REF. Aggregated data is published by Member State and Union level, by size category (Art. 5(2), Annex IV); individual data is kept confidential by the Commission and Member States (Art. 5(5)). It enters into force on the twentieth day after publication in the Official Journal (Art. 6)."
+ },
+ "relations": [
+  {
+   "relation": "legal_basis",
+   "target_text": "Directive (EU) 2023/1791 of the European Parliament and of the Council of 13 September 2023 on energy efficiency, Article 33(3)",
+   "note": "Enabling act: the regulation is adopted under Article 33(3) of the Directive. The same Directive is also cited for Article 12 and Annex VII (recitals 3 and 9), Article 12(3) (recital 10) and Article 34 (recital 15), which are recorded here as one row for this target.",
+   "evidence": {
+    "provision": "Preamble (citations)",
+    "quote": "Having regard to Directive (EU) 2023/1791 of the European Parliament and of the Council of 13 September 2023 on energy efficiency"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Commission Regulation (EU) 2019/424 of 15 March 2019 laying down ecodesign requirements for servers and data storage products",
+   "note": "Annex II point 2 uses the definitions of servers and data storage products in this Regulation to define the ICT capacity indicators.",
+   "evidence": {
+    "provision": "Annex II, point 2",
+    "quote": "as servers and data storage products are defined in the Commission Regulation (EU) 2019/424"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) No 517/2014 on fluorinated greenhouse gases",
+   "note": "Annex II point 1(m) requires refrigerant types to be named in accordance with the Annexes to this Regulation.",
+   "evidence": {
+    "provision": "Annex II, point 1(m)",
+    "quote": "in accordance with the Annexes to the Regulation (EU) No 517/2014"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EC) No 1049/2001 regarding public access to European Parliament, Council and Commission documents",
+   "note": "Article 5(5) treats individual data-centre information as confidential commercial information under Article 4(2) of this Regulation.",
+   "evidence": {
+    "provision": "Art. 5(5)",
+    "quote": "Article 4(2) of Regulation (EC) No 1049/2001 of the European Parliament and of the Council"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive 2003/4/EC on public access to environmental information",
+   "note": "Article 5(5) also relies on Article 4(2)(d) of this Directive for the confidentiality of individual data-centre information.",
+   "evidence": {
+    "provision": "Art. 5(5)",
+    "quote": "Article 4(2)(d) of Directive 2003/4/EC of the European Parliament and of the Council"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EC) No 223/2009 on European statistics",
+   "note": "Article 5(6) allows the aggregated data to be reused for European statistics under the principles of this Regulation.",
+   "evidence": {
+    "provision": "Art. 5(6)",
+    "quote": "in line with the principles defined in Regulation (EC) No 223/2009 of the European Parliament and of the Council"
+   }
+  }
+ ],
+ "notes": "No amendment, repeal or replacement relations are stated in this text. Standards (CEN/CENELEC EN 50600 series) and Eurostat and Copernicus sources are cited for measurement methods and are not coded as relations. Internal inconsistencies: (1) Annex III(b) says WIN is 'as defined in Annex III' and EIT 'expressed in MWh', while WIN is defined in Annex II point 1(h) and EIT is measured in kWh in Annex II point 1(e). (2) The symbol TIN is used for intake air temperature in Annex II point 1(l) and for incoming data traffic in Annex II point 3(c). (3) Article 2(15) defines 'rated information technology load', while Annex II point 1(a) refers to 'rated information technology power demand'. (4) Article 1 covers data centres of at least 500 kW, but Annex IV lists a 'very small data centre' band of 100-500 kW. (5) The guarantees-of-origin definition in Annex II point 1(p) refers to the data centre measuring ERES-PPA.",
+ "events": [
+  {
+   "event": "adopted",
+   "date": "2024-03-14",
+   "date_type": "absolute",
+   "date_text": "of 14 March 2024",
+   "applies_to": "",
+   "evidence": {
+    "provision": "Title",
+    "quote": "of 14 March 2024"
+   }
+  },
+  {
+   "event": "signed",
+   "date": "2024-03-14",
+   "date_type": "absolute",
+   "date_text": "Done at Brussels, 14 March 2024.",
+   "applies_to": "",
+   "evidence": {
+    "provision": "Signature block (after Art. 6)",
+    "quote": "Done at Brussels, 14 March 2024."
+   }
+  },
+  {
+   "event": "published",
+   "date": "2024-05-17",
+   "date_type": "absolute",
+   "date_text": "17.5.2024",
+   "applies_to": "",
+   "evidence": {
+    "provision": "Cover page (Official Journal dateline)",
+    "quote": "17.5.2024"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2024-06-06",
+   "date_type": "relative",
+   "date_text": "on the twentieth day following that of its publication in the Official Journal of the European Union",
+   "anchor": "publication in the Official Journal of the European Union",
+   "applies_to": "",
+   "offset_value": 20,
+   "offset_unit": "days",
+   "anchor_event": "published",
+   "evidence": {
+    "provision": "Art. 6(1)",
+    "quote": "This Regulation shall enter into force on the twentieth day following that of its publication in the Official Journal of the European Union."
+   },
+   "date_computed_from": "published 2024-05-17 (text) + 20 days"
+  },
+  {
+   "event": "deadline",
+   "date": "2024-09-15",
+   "date_type": "absolute",
+   "date_text": "By 15 September 2024",
+   "applies_to": "reporting data centre operators: communicate information and key performance indicators (Annexes I and II) to the European database",
+   "evidence": {
+    "provision": "Art. 3(1)",
+    "quote": "By 15 September 2024"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2025-05-15",
+   "date_type": "absolute",
+   "date_text": "then by 15 May 2025",
+   "applies_to": "reporting data centre operators: communicate information and key performance indicators (Annexes I and II) to the European database",
+   "evidence": {
+    "provision": "Art. 3(1)",
+    "quote": "then by 15 May 2025"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "every year thereafter (reporting by 15 May, covering the preceding calendar year)",
+   "applies_to": "reporting data centre operators: communicate information and key performance indicators (Annexes I and II) to the European database",
+   "evidence": {
+    "provision": "Art. 3(1)",
+    "quote": "and every year thereafter"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "For the first reporting period",
+   "depends_on": "first reporting period under Art. 3(1) (first deadline 15 September 2024)",
+   "applies_to": "reporting data centre operators may omit Annex II KPIs 1(d), 1(e), 1(h)-(l) and 1(o)-(r) for technical reasons, explaining the reasons",
+   "evidence": {
+    "provision": "Art. 3(2)",
+    "quote": "For the first reporting period, if a data centre operator cannot monitor and gather one or more of the key performance indicators"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "For the first two reporting periods",
+   "depends_on": "first two reporting periods under Art. 3(1)",
+   "applies_to": "colocation data centre operators: estimate and indicate the percentage of computer room floor area covered by KPIs 2(a) and 2(b)",
+   "evidence": {
+    "provision": "Art. 3(3)",
+    "quote": "For the first two reporting periods, if a colocation data centre operator cannot monitor and gather the necessary data"
+   }
+  },
+  {
+   "event": "application",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "after the date of the entry into force of this Delegated Regulation",
+   "depends_on": "entry into force of this Delegated Regulation (Art. 6(1))",
+   "applies_to": "ICT capacity for servers (CSERV): new servers installed in the reporting data centre after entry into force",
+   "evidence": {
+    "provision": "Annex II, point 2(a)",
+    "quote": "ICT capacity for servers shall be reported, as a minimum, for all new servers installed in the reporting data centre after the date of the entry into force of this Delegated Regulation."
+   }
+  },
+  {
+   "event": "application",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "after the date of the entry into force of this Delegated Regulation",
+   "depends_on": "entry into force of this Delegated Regulation (Art. 6(1))",
+   "applies_to": "ICT capacity for storage equipment (CSTOR): new devices installed in the reporting data centre after entry into force",
+   "evidence": {
+    "provision": "Annex II, point 2(b)",
+    "quote": "ICT capacity for storage equipment shall be reported, as a minimum, for all new devices installed in the reporting data centre after the date of the entry into force of this Delegated Regulation."
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "power_capacity",
+   "variable_text": "installed information technology power demand of data centres in scope",
+   "operator": ">=",
+   "value": 500,
+   "value_text": "installed information technology power demand of at least 500 kW",
+   "unit": "kW",
+   "measurement": "Installed information technology power demand (PDIT) of the reporting data centre, per Article 2(14) and Annex II, point 1(a)",
+   "level": "facility",
+   "trigger": "scope_definition",
+   "consequence": "Data centre operators with installed IT power demand at this level must communicate the required information and KPIs to the European database.",
+   "conditions": "Operators of data centres with the stated installed IT power demand; the rule applies to the Regulation's reporting scope under Article 1.",
+   "evidence": {
+    "provision": "Art. 1",
+    "quote": "operators of data centres with an installed information technology power demand of at least 500 kW"
+   }
+  },
+  {
+   "variable": "power_capacity",
+   "variable_text": "very small data centre size category",
+   "operator": "range",
+   "value": 100,
+   "value_max": 500,
+   "value_text": "very small data centre: 100–500 kW",
+   "unit": "kW",
+   "measurement": "Data centre's information technology installed power, as used for the size categories in the public aggregated data",
+   "level": "facility",
+   "trigger": "designation_category",
+   "consequence": "Data centre is placed in the very small size category for aggregated public presentation of data.",
+   "conditions": "Size categories apply to the aggregated public information in the European database.",
+   "evidence": {
+    "provision": "Annex IV, point (a)",
+    "quote": "very small data centre: 100–500 kW;"
+   }
+  },
+  {
+   "variable": "power_capacity",
+   "variable_text": "small data centre size category",
+   "operator": "range",
+   "value": 500,
+   "value_max": 1000,
+   "value_text": "small data centre: 500–1 000 kW",
+   "unit": "kW",
+   "measurement": "Data centre's information technology installed power, as used for the size categories in the public aggregated data",
+   "level": "facility",
+   "trigger": "designation_category",
+   "consequence": "Data centre is placed in the small size category for aggregated public presentation of data.",
+   "conditions": "Size categories apply to the aggregated public information in the European database.",
+   "evidence": {
+    "provision": "Annex IV, point (a)",
+    "quote": "small data centre: 500–1 000 kW;"
+   }
+  },
+  {
+   "variable": "power_capacity",
+   "variable_text": "medium size data centre size category",
+   "operator": "range",
+   "value": 1,
+   "value_max": 2,
+   "value_text": "medium size data centre: 1–2 MW",
+   "unit": "MW",
+   "measurement": "Data centre's information technology installed power, as used for the size categories in the public aggregated data",
+   "level": "facility",
+   "trigger": "designation_category",
+   "consequence": "Data centre is placed in the medium size category for aggregated public presentation of data.",
+   "conditions": "Size categories apply to the aggregated public information in the European database.",
+   "evidence": {
+    "provision": "Annex IV, point (a)",
+    "quote": "medium size data centre: 1–2 MW;"
+   }
+  },
+  {
+   "variable": "power_capacity",
+   "variable_text": "large data centre size category",
+   "operator": "range",
+   "value": 2,
+   "value_max": 10,
+   "value_text": "large data centre: 2–10 MW",
+   "unit": "MW",
+   "measurement": "Data centre's information technology installed power, as used for the size categories in the public aggregated data",
+   "level": "facility",
+   "trigger": "designation_category",
+   "consequence": "Data centre is placed in the large size category for aggregated public presentation of data.",
+   "conditions": "Size categories apply to the aggregated public information in the European database.",
+   "evidence": {
+    "provision": "Annex IV, point (a)",
+    "quote": "large data centre: 2–10 MW;"
+   }
+  },
+  {
+   "variable": "power_capacity",
+   "variable_text": "very large data centre size category",
+   "operator": ">",
+   "value": 10,
+   "value_text": "very large data centre: > 10 MW",
+   "unit": "MW",
+   "measurement": "Data centre's information technology installed power, as used for the size categories in the public aggregated data",
+   "level": "facility",
+   "trigger": "designation_category",
+   "consequence": "Data centre is placed in the very large size category for aggregated public presentation of data.",
+   "conditions": "Size categories apply to the aggregated public information in the European database.",
+   "evidence": {
+    "provision": "Annex IV, point (a)",
+    "quote": "very large data centre: > 10 MW."
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "number of reporting data centres in a data centre type or size category",
+   "operator": ">=",
+   "value": 3,
+   "value_text": "at least three data centres",
+   "unit": "data centres",
+   "measurement": "Count of reporting data centres in the category, at Member State or Union level",
+   "level": "jurisdiction",
+   "trigger": "eligibility",
+   "consequence": "Aggregated presentation of sustainability indicators per type of data centre and per size category is possible.",
+   "conditions": "Applies to the sustainability indicators under points (vi)–(ix) of the Member State and Union level public data.",
+   "evidence": {
+    "provision": "Annex IV, point (a)",
+    "quote": "presentation of aggregated data per type of data centre and per size category will be possible only if the respective category contains data from at least three data centres"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "share of installed IT power demand of new servers that the extrapolated value must correspond to",
+   "operator": ">=",
+   "value": 90,
+   "value_text": "at least 90 % of the installed information technology power demand of all new servers",
+   "unit": "%",
+   "measurement": "Installed IT power demand of all new servers installed in the reporting data centre",
+   "level": "entity",
+   "trigger": "eligibility",
+   "consequence": "Colocation data centre operators may calculate CSERV by extrapolation.",
+   "conditions": "Applies only to colocation data centre operators calculating CSERV by extrapolation.",
+   "evidence": {
+    "provision": "Annex II, point 2(a)",
+    "quote": "by extrapolating the value that corresponds to at least 90 % of the installed information technology power demand of all new servers"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "share of installed IT power demand of new storage equipment that the extrapolated value must correspond to",
+   "operator": ">=",
+   "value": 90,
+   "value_text": "at least 90 % of the installed information technology power demand of all new storage equipment",
+   "unit": "%",
+   "measurement": "Installed IT power demand of all new storage equipment installed in the reporting data centre",
+   "level": "entity",
+   "trigger": "eligibility",
+   "consequence": "Colocation data centre operators may calculate CSTOR by extrapolation.",
+   "conditions": "Applies only to colocation data centre operators calculating CSTOR by extrapolation.",
+   "evidence": {
+    "provision": "Annex II, point 2(b)",
+    "quote": "by extrapolating the value that corresponds to at least 90 % of the installed information technology power demand of all new storage equipment"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "period of operation of the reporting data centre within the reporting year",
+   "operator": "<",
+   "value": 1,
+   "value_text": "in operation for less than a year",
+   "unit": "years",
+   "measurement": "Period during which the reporting data centre has been in operation, counted for the calendar year preceding the reporting year",
+   "level": "facility",
+   "trigger": "scope_definition",
+   "consequence": "Operator reports only for the period the data centre has been in operation, indicating that period.",
+   "conditions": "Applies to reporting data centres that have been in operation for less than a year.",
+   "evidence": {
+    "provision": "Art. 3(1)",
+    "quote": "Where a reporting data centre has been in operation for less than a year"
+   }
+  }
+ ],
+ "section_status": {}
+}

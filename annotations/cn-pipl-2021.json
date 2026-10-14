@@ -1,0 +1,1395 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "cn-pipl-2021",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (connectors/fetch_texts.py)",
+  "url": "http://www.npc.gov.cn/npc/c2/c30834/202108/t20210820_313088.html",
+  "retrieved": "2026-10-13",
+  "version": "as fetched",
+  "language": "zh",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "data_protection",
+   "data_transfer_localization",
+   "algorithmic_decision_systems",
+   "biometrics",
+   "minors_child_safety"
+  ],
+  "primary_domain": "data_protection",
+  "mechanisms": [
+   "mandate_obligation",
+   "prohibition_ban",
+   "disclosure_transparency",
+   "designation_tiering",
+   "institution_setup",
+   "standard_setting",
+   "liability_rule",
+   "licensing_permit_certification"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "data_controller",
+   "data_processor",
+   "platform_operator",
+   "government_agency"
+  ],
+  "affected_roles": [
+   "consumers_users",
+   "minors",
+   "workers"
+  ],
+  "decision_margins": [
+   "firm:trade",
+   "firm:compliance_process",
+   "firm:pricing",
+   "household:access",
+   "household:prices",
+   "household:data_privacy",
+   "household:information"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national",
+    "extraterritorial"
+   ],
+   "description": "Applies to personal information processing within the PRC and, under Article 3(2), to processing outside the PRC of PRC residents' information where the processing offers products or services to them or analyses or assesses their conduct.",
+   "evidence": {
+    "provision": "Art. 3 para. 2",
+    "quote": "在中华人民共和国境外处理中华人民共和国境内自然人个人信息的活动，有下列情形之一的，也适用本法："
+   }
+  },
+  "agora_harms": [
+   "Violation of civil or human rights, including privacy"
+  ],
+  "agora_incentives": [
+   "Fines",
+   "Civil liability",
+   "Criminal liability"
+  ],
+  "agora_risk_factors": [
+   "Privacy",
+   "Transparency",
+   "Security"
+  ],
+  "agora_strategies": [
+   "Disclosure",
+   "Evaluation: Impact assessment",
+   "Evaluation: External auditing",
+   "Input controls: Data circulation",
+   "Licensing, registration, and certification",
+   "Governance development",
+   "Tiering: Tiering based on impact"
+  ]
+ },
+ "summary": {
+  "short": "China's Personal Information Protection Law, in force from 1 November 2021. It sets rules for processing personal information of natural persons in China, including processing abroad that targets or analyses people in China. It imposes consent, notice, impact-assessment and cross-border transfer duties, individual rights, and sanctions.",
+  "long": "The Personal Information Protection Law applies to processing of natural persons' personal information within the PRC and, in defined cases, to processing outside the PRC that offers products or services to, or analyses or assesses the conduct of, persons in China. It sets general principles and lawful bases for processing, with consent as one basis among several. Sensitive personal information, including biometric data and information on minors under fourteen, is subject to separate rules and heightened consent requirements. State organs have special rules, including a data localisation requirement. Cross-border provision requires one of several conditions, such as a state security assessment, certification, or a standard contract, plus notice and separate consent. Individuals have rights of access, correction, deletion, portability and explanation. Processors must adopt internal management measures, appoint a personal information protection officer above a volume threshold, conduct impact assessments for specified activities, and undergo compliance audits. Large platforms have additional duties. Automated decision-making must be transparent and fair, and individuals may refuse decisions made solely by automation. Authorities may investigate, inspect and interview parties. Penalties include warnings, confiscation of unlawful gains, suspension of applications, fines up to stated amounts or a share of prior-year turnover for serious cases, and criminal or civil liability.  Article 74 sets the entry-into-force date.  Article 72 excludes purely personal or household processing."
+ },
+ "relations": [
+  {
+   "relation": "legal_basis",
+   "target_text": "宪法 (Constitution of the PRC, not in registry)",
+   "note": "The text states it was enacted under the Constitution.",
+   "evidence": {
+    "provision": "Art. 1",
+    "quote": "根据宪法，制定本法"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "治安管理处罚 legislation (not named in this text)",
+   "note": "Violations that also constitute public security administration violations are punished under unnamed public security law.",
+   "evidence": {
+    "provision": "Art. 71",
+    "quote": "构成违反治安管理行为的，依法给予治安管理处罚"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Statistics and archives management laws (not named in this text)",
+   "note": "Where other laws regulate personal information processing in statistics and archive management by governments, those rules apply.",
+   "evidence": {
+    "provision": "Art. 72 para. 2",
+    "quote": "法律对各级人民政府及其有关部门组织实施的统计、档案管理活动中的个人信息处理有规定的，适用其规定"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "International treaties and agreements concluded or acceded to by the PRC",
+   "note": "Treaty conditions on providing personal information outside China may be followed in place of the Chapter 3 conditions.",
+   "evidence": {
+    "provision": "Art. 38 para. 2",
+    "quote": "中华人民共和国缔结或者参加的国际条约、协定对向中华人民共和国境外提供个人信息的条件等有规定的，可以按照其规定执行"
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "国家网信部门 (national cyberspace administration)",
+   "role": "designated",
+   "function": "Coordinates personal information protection work and related supervision (Art. 60 para. 1); issues specific rules and standards, including for facial recognition and artificial intelligence (Art. 62); conducts security assessments for cross-border transfers (Art. 38, 40); may list restricted overseas recipients (Art. 42).",
+   "evidence": {
+    "provision": "Art. 60 para. 1",
+    "quote": "国家网信部门负责统筹协调个人信息保护工作和相关监督管理工作"
+   }
+  },
+  {
+   "name": "国务院有关部门 (State Council departments)",
+   "role": "designated",
+   "function": "Responsible for personal information protection and supervision within their own remits under this law and other laws and regulations (Art. 60 para. 1).",
+   "evidence": {
+    "provision": "Art. 60 para. 1",
+    "quote": "国务院有关部门依照本法和有关法律、行政法规的规定，在各自职责范围内负责个人信息保护和监督管理工作"
+   }
+  },
+  {
+   "name": "县级以上地方人民政府有关部门 (local government departments at county level and above)",
+   "role": "designated",
+   "function": "Personal information protection and supervision powers at local level, to be determined under national rules (Art. 60 para. 2).",
+   "evidence": {
+    "provision": "Art. 60 para. 2",
+    "quote": "县级以上地方人民政府有关部门的个人信息保护和监督管理职责，按照国家有关规定确定"
+   }
+  },
+  {
+   "name": "履行个人信息保护职责的部门 (authorities performing personal information protection duties)",
+   "role": "designated",
+   "function": "Collective term for the authorities in Art. 60; they exercise the powers of Art. 61 and Art. 63, receive complaints (Art. 65), and issue penalties (Art. 66).",
+   "evidence": {
+    "provision": "Art. 60 para. 3",
+    "quote": "前两款规定的部门统称为履行个人信息保护职责的部门"
+   }
+  },
+  {
+   "name": "人民检察院 (people's procuratorates)",
+   "role": "designated",
+   "function": "May bring lawsuits before the people's courts against processors that infringe the rights of many individuals (Art. 70).",
+   "evidence": {
+    "provision": "Art. 70",
+    "quote": "人民检察院、法律规定的消费者组织和由国家网信部门确定的组织可以依法向人民法院提起诉讼"
+   }
+  },
+  {
+   "name": "法律规定的消费者组织 (consumer organisations established by law)",
+   "role": "designated",
+   "function": "May bring lawsuits before the people's courts against processors that infringe the rights of many individuals (Art. 70).",
+   "evidence": {
+    "provision": "Art. 70",
+    "quote": "法律规定的消费者组织"
+   }
+  },
+  {
+   "name": "由国家网信部门确定的组织 (organisations determined by the national cyberspace administration)",
+   "role": "designated",
+   "function": "May bring lawsuits before the people's courts against processors that infringe the rights of many individuals (Art. 70).",
+   "evidence": {
+    "provision": "Art. 70",
+    "quote": "由国家网信部门确定的组织"
+   }
+  },
+  {
+   "name": "公安机关 (public security organs)",
+   "role": "designated",
+   "function": "Receive referrals from the authorities in Art. 60 when suspected unlawful processing amounts to a crime (Art. 64 para. 2).",
+   "evidence": {
+    "provision": "Art. 64 para. 2",
+    "quote": "发现违法处理个人信息涉嫌犯罪的，应当及时移送公安机关依法处理"
+   }
+  },
+  {
+   "name": "中华人民共和国主管机关 (competent authority of the PRC, unnamed)",
+   "role": "designated",
+   "function": "Approves provision of personal information stored in China to foreign judicial or law enforcement bodies (Art. 41); the text does not name the authority.",
+   "evidence": {
+    "provision": "Art. 41",
+    "quote": "非经中华人民共和国主管机关批准"
+   }
+  }
+ ],
+ "notes": "The text names no other statute by title; the Constitution is the only named basis, and unnamed laws are referenced in Arts. 67, 71 and 72. Volume thresholds for Arts. 40 and 52 (数量) are left to the national cyberspace administration, and no number appears in the text. Art. 73(1) defines personal information processors by role; they are not listed as entities. Art. 74 gives the effective date as 2021-11-01 and is not coded here.",
+ "events": [
+  {
+   "event": "adopted",
+   "date": "2021-08-20",
+   "date_type": "absolute",
+   "date_text": "2021年8月20日第十三届全国人民代表大会常务委员会第三十次会议通过",
+   "applies_to": "National People's Congress Standing Committee (approval at 30th session of 13th NPCSC)",
+   "evidence": {
+    "provision": "Preamble (adoption line)",
+    "quote": "2021年8月20日第十三届全国人民代表大会常务委员会第三十次会议通过"
+   }
+  },
+  {
+   "event": "published",
+   "date": "2021-08-20",
+   "date_type": "absolute",
+   "date_text": "2021年08月20日 16:53",
+   "applies_to": "Posting on the official site 中国人大网 (page dateline)",
+   "evidence": {
+    "provision": "Page header (posting dateline)",
+    "quote": "2021年08月20日 16:53"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2021-11-01",
+   "date_type": "absolute",
+   "date_text": "本法自2021年11月1日起施行。",
+   "applies_to": "Whole Law",
+   "evidence": {
+    "provision": "Art. 74",
+    "quote": "本法自2021年11月1日起施行。"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "age",
+   "variable_text": "未成年人年龄（不满十四周岁）",
+   "operator": "<",
+   "value": 14,
+   "value_text": "不满十四周岁",
+   "unit": "years",
+   "measurement": "Age of the natural person whose personal information is processed; no window or measuring body stated.",
+   "level": "person",
+   "trigger": "designation_category",
+   "consequence": "Personal information of a person under 14 is sensitive personal information (Art. 28 para. 1), subject to the sensitive-information rules.",
+   "evidence": {
+    "provision": "Art. 28 para. 1",
+    "quote": "以及不满十四周岁未成年人的个人信息。"
+   }
+  },
+  {
+   "variable": "age",
+   "variable_text": "未成年人年龄（不满十四周岁）",
+   "operator": "<",
+   "value": 14,
+   "value_text": "不满十四周岁",
+   "unit": "years",
+   "measurement": "Age of the natural person whose personal information is processed; no window or measuring body stated.",
+   "level": "person",
+   "trigger": "obligation",
+   "consequence": "Processing requires consent of the minor's parents or other guardians, and the processor must adopt special processing rules (Art. 31 para. 2).",
+   "evidence": {
+    "provision": "Art. 31 para. 1",
+    "quote": "个人信息处理者处理不满十四周岁未成年人个人信息的，应当取得未成年人的父母或者其他监护人的同意。"
+   }
+  },
+  {
+   "variable": "volume",
+   "variable_text": "处理个人信息达到国家网信部门规定数量",
+   "operator": ">=",
+   "value": null,
+   "value_text": "set by 国家网信部门 (the CAC): 达到国家网信部门规定数量",
+   "unit": "",
+   "measurement": "Not specified in the text; the measurement method is to be set by the CAC regulation.",
+   "level": "entity",
+   "trigger": "obligation",
+   "consequence": "Personal information collected and generated in China must be stored domestically; provision abroad requires a security assessment (Art. 40).",
+   "conditions": "Applies in addition to critical information infrastructure operators, who are covered without a volume test.",
+   "depends_on": "国家网信部门规定 (CAC regulation setting the quantity)",
+   "evidence": {
+    "provision": "Art. 40",
+    "quote": "处理个人信息达到国家网信部门规定数量的个人信息处理者，应当将在中华人民共和国境内收集和产生的个人信息存储在境内"
+   }
+  },
+  {
+   "variable": "volume",
+   "variable_text": "处理个人信息达到国家网信部门规定数量",
+   "operator": ">=",
+   "value": null,
+   "value_text": "set by 国家网信部门 (the CAC): 达到国家网信部门规定数量",
+   "unit": "",
+   "measurement": "Not specified in the text; the measurement method is to be set by the CAC regulation.",
+   "level": "entity",
+   "trigger": "obligation",
+   "consequence": "The processor must designate a personal information protection officer (Art. 52 para. 1).",
+   "depends_on": "国家网信部门规定 (CAC regulation setting the quantity)",
+   "evidence": {
+    "provision": "Art. 52 para. 1",
+    "quote": "处理个人信息达到国家网信部门规定数量的个人信息处理者应当指定个人信息保护负责人"
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "个人信息",
+   "defined_in": "this instrument",
+   "evidence": {
+    "provision": "Art. 4 para. 1",
+    "quote": "个人信息是以电子或者其他方式记录的与已识别或者可识别的自然人有关的各种信息，不包括匿名化处理后的信息。"
+   }
+  },
+  {
+   "term": "个人信息的处理",
+   "defined_in": "this instrument",
+   "evidence": {
+    "provision": "Art. 4 para. 2",
+    "quote": "个人信息的处理包括个人信息的收集、存储、使用、加工、传输、提供、公开、删除等。"
+   }
+  },
+  {
+   "term": "敏感个人信息",
+   "defined_in": "this instrument",
+   "evidence": {
+    "provision": "Art. 28 para. 1",
+    "quote": "敏感个人信息是一旦泄露或者非法使用，容易导致自然人的人格尊严受到侵害或者人身、财产安全受到危害的个人信息"
+   }
+  },
+  {
+   "term": "个人信息处理者",
+   "defined_in": "this instrument",
+   "evidence": {
+    "provision": "Art. 73 item (1)",
+    "quote": "个人信息处理者，是指在个人信息处理活动中自主决定处理目的、处理方式的组织、个人。"
+   }
+  },
+  {
+   "term": "自动化决策",
+   "defined_in": "this instrument",
+   "evidence": {
+    "provision": "Art. 73 item (2)",
+    "quote": "自动化决策，是指通过计算机程序自动分析、评估个人的行为习惯、兴趣爱好或者经济、健康、信用状况等，并进行决策的活动。"
+   }
+  },
+  {
+   "term": "去标识化",
+   "defined_in": "this instrument",
+   "evidence": {
+    "provision": "Art. 73 item (3)",
+    "quote": "去标识化，是指个人信息经过处理，使其在不借助额外信息的情况下无法识别特定自然人的过程。"
+   }
+  },
+  {
+   "term": "匿名化",
+   "defined_in": "this instrument",
+   "evidence": {
+    "provision": "Art. 73 item (4)",
+    "quote": "匿名化，是指个人信息经过处理无法识别特定自然人且不能复原的过程。"
+   }
+  },
+  {
+   "term": "履行个人信息保护职责的部门",
+   "defined_in": "this instrument",
+   "evidence": {
+    "provision": "Art. 60 para. 3",
+    "quote": "前两款规定的部门统称为履行个人信息保护职责的部门。"
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "prohibition",
+   "addressee": "general_public",
+   "modality": "shall_not",
+   "summary": "Any organization or individual must not infringe natural persons' personal information rights and interests.",
+   "applies_from": "2021-11-01",
+   "evidence": {
+    "provision": "Art. 2",
+    "quote": "任何组织、个人不得侵害自然人的个人信息权益"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "data_controller",
+   "modality": "shall_not",
+   "summary": "Processing must be lawful, legitimate, necessary and in good faith; personal information must not be processed by misleading, fraudulent or coercive means.",
+   "applies_from": "2021-11-01",
+   "evidence": {
+    "provision": "Art. 5",
+    "quote": "不得通过误导、欺诈、胁迫等方式处理个人信息"
+   }
+  },
+  {
+   "type": "data_minimization",
+   "addressee": "data_controller",
+   "modality": "shall_not",
+   "summary": "Processing must use the least impact on rights; collection is limited to the minimum scope needed for the purpose and must not be excessive.",
+   "applies_from": "2021-11-01",
+   "evidence": {
+    "provision": "Art. 6",
+    "quote": "不得过度收集个人信息"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Publish personal information processing rules and state the purpose, method and scope of processing.",
+   "applies_from": "2021-11-01",
+   "evidence": {
+    "provision": "Art. 7",
+    "quote": "公开个人信息处理规则，明示处理的目的、方式和范围"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Ensure the quality of personal information so that inaccuracy or incompleteness does not harm individuals' rights.",
+   "applies_from": "2021-11-01",
+   "evidence": {
+    "provision": "Art. 8",
+    "quote": "处理个人信息应当保证个人信息的质量"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Be responsible for processing activities and take necessary measures to ensure the security of personal information processed.",
+   "applies_from": "2021-11-01",
+   "evidence": {
+    "provision": "Art. 9",
+    "quote": "个人信息处理者应当对其个人信息处理活动负责，并采取必要措施保障所处理的个人信息的安全"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "general_public",
+   "modality": "shall_not",
+   "summary": "No organization or individual may unlawfully collect, use, process, transmit, trade, provide or disclose others' personal information, or carry out processing that endangers national security or public interest.",
+   "applies_from": "2021-11-01",
+   "evidence": {
+    "provision": "Art. 10",
+    "quote": "任何组织、个人不得非法收集、使用、加工、传输他人个人信息"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The State establishes and improves the personal information protection system, prevents infringing acts and promotes education.",
+   "applies_from": "2021-11-01",
+   "evidence": {
+    "provision": "Art. 11",
+    "quote": "国家建立健全个人信息保护制度"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "encouraged",
+   "summary": "The State actively participates in formulating international personal information protection rules and promotes mutual recognition of rules and standards.",
+   "applies_from": "2021-11-01",
+   "evidence": {
+    "provision": "Art. 12",
+    "quote": "国家积极参与个人信息保护国际规则的制定"
+   }
+  },
+  {
+   "type": "consent",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Where processing relies on other grounds of Art. 13 (paras 2-7) consent is not required; otherwise processing requires the individual's consent.",
+   "applies_from": "2021-11-01",
+   "conditional_on": "Processing not based on Art. 13(1)-(7) grounds",
+   "evidence": {
+    "provision": "Art. 13",
+    "quote": "依照本法其他有关规定，处理个人信息应当取得个人同意"
+   }
+  },
+  {
+   "type": "consent",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Consent must be given voluntarily, explicitly and with full knowledge; processing purpose, method or categories changed requires new consent; separate or written consent where law requires.",
+   "applies_from": "2021-11-01",
+   "conditional_on": "Processing based on consent",
+   "evidence": {
+    "provision": "Art. 14",
+    "quote": "该同意应当由个人在充分知情的前提下自愿、明确作出"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Provide a convenient way for individuals to withdraw consent; withdrawal does not affect prior processing.",
+   "applies_from": "2021-11-01",
+   "conditional_on": "Processing based on consent",
+   "evidence": {
+    "provision": "Art. 15",
+    "quote": "个人信息处理者应当提供便捷的撤回同意的方式"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "data_controller",
+   "modality": "shall_not",
+   "summary": "Must not refuse products or services because an individual refuses or withdraws consent, unless processing is necessary for providing the product or service.",
+   "applies_from": "2021-11-01",
+   "evidence": {
+    "provision": "Art. 16",
+    "quote": "个人信息处理者不得以个人不同意处理其个人信息或者撤回同意为由，拒绝提供产品或者服务"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Before processing, notify individuals of controller identity and contact, purpose, method, data categories, retention period and how to exercise rights; notify changes; publish processing rules.",
+   "applies_from": "2021-11-01",
+   "evidence": {
+    "provision": "Art. 17",
+    "quote": "应当以显著方式、清晰易懂的语言真实、准确、完整地向个人告知下列事项"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Where emergency circumstances prevented timely notice, notify individuals promptly after the emergency ends.",
+   "applies_from": "2021-11-01",
+   "conditional_on": "Emergency protecting life, health or property where notice was not possible in time",
+   "evidence": {
+    "provision": "Art. 18",
+    "quote": "应当在紧急情况消除后及时告知"
+   }
+  },
+  {
+   "type": "data_minimization",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Retention period must be the shortest necessary to achieve the processing purpose, unless law provides otherwise.",
+   "applies_from": "2021-11-01",
+   "evidence": {
+    "provision": "Art. 19",
+    "quote": "个人信息的保存期限应当为实现处理目的所必要的最短时间"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Joint controllers must agree their respective rights and duties; they bear joint liability for harm (liability not coded here).",
+   "applies_from": "2021-11-01",
+   "conditional_on": "Two or more controllers jointly determine purposes and methods",
+   "evidence": {
+    "provision": "Art. 20",
+    "quote": "应当约定各自的权利和义务"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "When entrusting processing, agree purpose, period, method, data categories and protection measures with the processor and supervise it.",
+   "applies_from": "2021-11-01",
+   "conditional_on": "Processing entrusted to a processor",
+   "evidence": {
+    "provision": "Art. 21",
+    "quote": "应当与受托人约定委托处理的目的、期限、处理方式"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_processor",
+   "modality": "shall_not",
+   "summary": "Entrusted processor must process only as agreed, must not exceed agreed purpose or method, must return or delete data when the contract ends, and must not sub-entrust without consent.",
+   "applies_from": "2021-11-01",
+   "conditional_on": "Processing entrusted by a controller",
+   "evidence": {
+    "provision": "Art. 21",
+    "quote": "受托人应当按照约定处理个人信息，不得超出约定的处理目的、处理方式等处理个人信息"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "On merger, division, dissolution or bankruptcy, notify individuals of the recipient's name and contact; the recipient must continue the obligations and obtain new consent for changed purposes.",
+   "applies_from": "2021-11-01",
+   "conditional_on": "Transfer of personal information due to merger, division, dissolution or bankruptcy",
+   "evidence": {
+    "provision": "Art. 22",
+    "quote": "应当向个人告知接收方的名称或者姓名和联系方式"
+   }
+  },
+  {
+   "type": "consent",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "When providing personal information to another processor, notify individuals of the recipient and processing details and obtain separate consent; the recipient must process within the agreed scope.",
+   "applies_from": "2021-11-01",
+   "conditional_on": "Provision of processed personal information to another processor",
+   "evidence": {
+    "provision": "Art. 23",
+    "quote": "并取得个人的单独同意"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Automated decision-making must ensure transparency and fair, impartial results; must not impose unreasonable differential treatment on transaction prices or conditions.",
+   "applies_from": "2021-11-01",
+   "conditional_on": "Use of automated decision-making",
+   "evidence": {
+    "provision": "Art. 24",
+    "quote": "应当保证决策的透明度和结果公平、公正"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "For automated push or marketing, offer an option not targeting personal characteristics or an easy refusal; for decisions with major impact, explain them and let individuals refuse decisions made solely by automation.",
+   "applies_from": "2021-11-01",
+   "conditional_on": "Use of automated decision-making",
+   "evidence": {
+    "provision": "Art. 24",
+    "quote": "应当同时提供不针对其个人特征的选项，或者向个人提供便捷的拒绝方式"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "data_controller",
+   "modality": "shall_not",
+   "summary": "Must not publicly disclose processed personal information unless separate consent is obtained.",
+   "applies_from": "2021-11-01",
+   "evidence": {
+    "provision": "Art. 25",
+    "quote": "个人信息处理者不得公开其处理的个人信息"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Image-collection or identification devices in public places must be necessary for public safety, comply with state rules and display prominent notices; collected data used only for public safety.",
+   "applies_from": "2021-11-01",
+   "conditional_on": "Installation of image collection or identity recognition devices in public places",
+   "evidence": {
+    "provision": "Art. 26",
+    "quote": "并设置显著的提示标识"
+   }
+  },
+  {
+   "type": "consent",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "For publicly available personal information with major impact on rights, obtain consent as required by the law; individuals may refuse.",
+   "applies_from": "2021-11-01",
+   "conditional_on": "Processing of publicly disclosed personal information with major impact on rights",
+   "evidence": {
+    "provision": "Art. 27",
+    "quote": "对个人权益有重大影响的，应当依照本法规定取得个人同意"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Sensitive personal information may be processed only for a specific purpose, with sufficient necessity and strict protection measures.",
+   "applies_from": "2021-11-01",
+   "conditional_on": "Processing of sensitive personal information",
+   "evidence": {
+    "provision": "Art. 28",
+    "quote": "只有在具有特定的目的和充分的必要性，并采取严格保护措施的情形下，个人信息处理者方可处理敏感个人信息"
+   }
+  },
+  {
+   "type": "consent",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Processing sensitive personal information requires separate consent, or written consent where law requires.",
+   "applies_from": "2021-11-01",
+   "conditional_on": "Processing of sensitive personal information",
+   "evidence": {
+    "provision": "Art. 29",
+    "quote": "处理敏感个人信息应当取得个人的单独同意"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "For sensitive personal information, notify individuals in addition to Art. 17 of the necessity of processing and its impact on their rights.",
+   "applies_from": "2021-11-01",
+   "conditional_on": "Processing of sensitive personal information",
+   "evidence": {
+    "provision": "Art. 30",
+    "quote": "还应当向个人告知处理敏感个人信息的必要性以及对个人权益的影响"
+   }
+  },
+  {
+   "type": "consent",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "For personal information of minors under fourteen, obtain consent of a parent or other guardian.",
+   "applies_from": "2021-11-01",
+   "conditional_on": "Processing personal information of minors under 14",
+   "evidence": {
+    "provision": "Art. 31",
+    "quote": "应当取得未成年人的父母或者其他监护人的同意"
+   }
+  },
+  {
+   "type": "minors_protection",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Processing personal information of minors under fourteen requires dedicated processing rules.",
+   "applies_from": "2021-11-01",
+   "conditional_on": "Processing personal information of minors under 14",
+   "evidence": {
+    "provision": "Art. 31",
+    "quote": "应当制定专门的个人信息处理规则"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "State organs processing personal information to perform statutory duties must act within the powers and procedures set by law and must not exceed the necessary scope.",
+   "applies_from": "2021-11-01",
+   "conditional_on": "Processing by state organs for statutory duties",
+   "evidence": {
+    "provision": "Art. 34",
+    "quote": "应当依照法律、行政法规规定的权限、程序进行"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "State organs processing personal information to perform statutory duties must give the notice required by this Law, subject to exceptions in Art. 18(1) or where notice would impede their duties.",
+   "applies_from": "2021-11-01",
+   "conditional_on": "Processing by state organs for statutory duties",
+   "evidence": {
+    "provision": "Art. 35",
+    "quote": "应当依照本法规定履行告知义务"
+   }
+  },
+  {
+   "type": "localization",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Personal information processed by state organs must be stored within mainland China; overseas provision requires a security assessment.",
+   "applies_from": "2021-11-01",
+   "conditional_on": "Processing by state organs",
+   "evidence": {
+    "provision": "Art. 36",
+    "quote": "国家机关处理的个人信息应当在中华人民共和国境内存储"
+   }
+  },
+  {
+   "type": "localization",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Before providing personal information outside China, the processor must meet one of the listed conditions: security assessment, professional certification, standard contract or other conditions; treaty rules may apply; must take measures so that the overseas recipient meets the Law's standard.",
+   "applies_from": "2021-11-01",
+   "conditional_on": "Provision of personal information to recipients outside China",
+   "evidence": {
+    "provision": "Art. 38",
+    "quote": "应当具备下列条件之一"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Before providing personal information abroad, notify individuals of the overseas recipient's details, processing purpose, method, data categories and how to exercise rights, and obtain separate consent.",
+   "applies_from": "2021-11-01",
+   "conditional_on": "Provision of personal information outside China",
+   "evidence": {
+    "provision": "Art. 39",
+    "quote": "应当向个人告知境外接收方的名称或者姓名、联系方式"
+   }
+  },
+  {
+   "type": "localization",
+   "addressee": "data_controller",
+   "also_addressees": [
+    "essential_entity"
+   ],
+   "modality": "shall",
+   "summary": "Critical information infrastructure operators and processors reaching the volume set by the CAC must store domestically collected personal information in China; overseas provision requires a security assessment unless exempted by rules.",
+   "applies_from": "2021-11-01",
+   "conditional_on": "Critical information infrastructure operators, or processors reaching the volume set by the national cyberspace authority",
+   "evidence": {
+    "provision": "Art. 40",
+    "quote": "应当将在中华人民共和国境内收集和产生的个人信息存储在境内"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "data_controller",
+   "modality": "shall_not",
+   "summary": "Must not provide personal information stored in China to foreign judicial or law enforcement bodies without approval from the competent authority.",
+   "applies_from": "2021-11-01",
+   "conditional_on": "Request from a foreign judicial or law enforcement body",
+   "evidence": {
+    "provision": "Art. 41",
+    "quote": "非经中华人民共和国主管机关批准，个人信息处理者不得向外国司法或者执法机构提供存储于中华人民共和国境内的个人信息"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "regulator",
+   "modality": "may",
+   "summary": "The national cyberspace authority may list overseas organizations or individuals that infringe personal information rights or endanger national security in a restricted or prohibited provision list and take restrictive measures.",
+   "applies_from": "2021-11-01",
+   "conditional_on": "Overseas organizations or individuals infringing rights of Chinese citizens or endangering national security or public interest",
+   "evidence": {
+    "provision": "Art. 42",
+    "quote": "国家网信部门可以将其列入限制或者禁止个人信息提供清单"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "may",
+   "summary": "China may take reciprocal measures against a country or region that adopts discriminatory measures on personal information protection.",
+   "applies_from": "2021-11-01",
+   "conditional_on": "Discriminatory prohibitions or restrictions by another country or region",
+   "evidence": {
+    "provision": "Art. 43",
+    "quote": "中华人民共和国可以根据实际情况对该国家或者地区对等采取措施"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Promptly provide individuals access to and copies of their personal information, and provide a route for transfer to a designated processor where CAC conditions are met.",
+   "applies_from": "2021-11-01",
+   "conditional_on": "Individual request",
+   "evidence": {
+    "provision": "Art. 45",
+    "quote": "个人请求查阅、复制其个人信息的，个人信息处理者应当及时提供"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Verify and promptly correct or supplement inaccurate or incomplete personal information upon individual request.",
+   "applies_from": "2021-11-01",
+   "conditional_on": "Individual request",
+   "evidence": {
+    "provision": "Art. 46",
+    "quote": "个人信息处理者应当对其个人信息予以核实，并及时更正、补充"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Must proactively delete personal information in listed circumstances (purpose achieved, service ended, consent withdrawn, unlawful processing); where deletion is not technically feasible, stop processing other than storage and security.",
+   "applies_from": "2021-11-01",
+   "conditional_on": "Listed circumstances in Art. 47(1)-(5)",
+   "evidence": {
+    "provision": "Art. 47",
+    "quote": "有下列情形之一的，个人信息处理者应当主动删除个人信息"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Explain processing rules to an individual who requests explanation.",
+   "applies_from": "2021-11-01",
+   "conditional_on": "Individual request",
+   "evidence": {
+    "provision": "Art. 48",
+    "quote": "个人有权要求个人信息处理者对其个人信息处理规则进行解释说明"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Establish a convenient mechanism to receive and handle requests to exercise rights; reasons must be given for refusals.",
+   "applies_from": "2021-11-01",
+   "evidence": {
+    "provision": "Art. 50",
+    "quote": "应当建立便捷的个人行使权利的申请受理和处理机制"
+   }
+  },
+  {
+   "type": "management_system",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Based on purpose, method, data categories, impact and security risk, adopt internal management rules, data classification, encryption or de-identification, staff training, and an emergency plan.",
+   "applies_from": "2021-11-01",
+   "evidence": {
+    "provision": "Art. 51",
+    "quote": "个人信息处理者应当根据个人信息的处理目的"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Processors reaching the volume set by the CAC must appoint a personal information protection officer to supervise processing and protective measures.",
+   "applies_from": "2021-11-01",
+   "conditional_on": "Processors reaching the volume set by the national cyberspace authority",
+   "evidence": {
+    "provision": "Art. 52",
+    "quote": "处理个人信息达到国家网信部门规定数量的个人信息处理者应当指定个人信息保护负责人"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Publish the officer's contact details and report the officer's name and contact details to the authority performing personal information protection duties.",
+   "applies_from": "2021-11-01",
+   "conditional_on": "Processors reaching the volume set by the national cyberspace authority",
+   "evidence": {
+    "provision": "Art. 52",
+    "quote": "并将个人信息保护负责人的姓名、联系方式等报送履行个人信息保护职责的部门"
+   }
+  },
+  {
+   "type": "appointment_of_representative",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Overseas processors subject to Art. 3(2) must establish a dedicated body or designate a representative in China for personal information protection and report it to the authority.",
+   "applies_from": "2021-11-01",
+   "conditional_on": "Overseas processors subject to Art. 3(2)",
+   "evidence": {
+    "provision": "Art. 53",
+    "quote": "应当在中华人民共和国境内设立专门机构或者指定代表"
+   }
+  },
+  {
+   "type": "audit",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Periodically conduct compliance audits of personal information processing against laws and administrative regulations.",
+   "applies_from": "2021-11-01",
+   "evidence": {
+    "provision": "Art. 54",
+    "quote": "应当定期对其处理个人信息遵守法律、行政法规的情况进行合规审计"
+   }
+  },
+  {
+   "type": "impact_assessment",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Conduct a personal information protection impact assessment before sensitive processing, automated decision-making, entrusted processing, provision to others, public disclosure, overseas provision or other major-impact processing, and keep processing records.",
+   "applies_from": "2021-11-01",
+   "conditional_on": "Sensitive processing, automated decisions, entrusted or onward provision, public disclosure, overseas provision, or other major-impact processing",
+   "evidence": {
+    "provision": "Art. 55",
+    "quote": "应当事前进行个人信息保护影响评估，并对处理情况进行记录"
+   }
+  },
+  {
+   "type": "record_keeping",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "The impact assessment report and processing records must be kept for at least three years; the assessment must cover legality, impact and risk, and adequacy of protective measures.",
+   "applies_from": "2021-11-01",
+   "conditional_on": "Processing subject to Art. 55 impact assessment",
+   "evidence": {
+    "provision": "Art. 56",
+    "quote": "个人信息保护影响评估报告和处理情况记录应当至少保存三年"
+   }
+  },
+  {
+   "type": "incident_reporting",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "On actual or possible leakage, tampering or loss, take remedial measures immediately and notify the authority and individuals with listed content; notice to individuals may be omitted where measures effectively avoid harm.",
+   "applies_from": "2021-11-01",
+   "conditional_on": "Actual or possible leakage, tampering or loss of personal information",
+   "evidence": {
+    "provision": "Art. 57",
+    "quote": "应当立即采取补救措施，并通知履行个人信息保护职责的部门和个人"
+   }
+  },
+  {
+   "type": "management_system",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "Platforms providing important internet services with very large user numbers and complex business must establish a personal information compliance system with an independent body mainly of external members.",
+   "applies_from": "2021-11-01",
+   "conditional_on": "Important internet platform services, very large user numbers and complex business types",
+   "evidence": {
+    "provision": "Art. 58",
+    "quote": "按照国家规定建立健全个人信息保护合规制度体系"
+   }
+  },
+  {
+   "type": "content_moderation",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "Such platforms must set platform rules governing on-platform providers' processing, and stop services to on-platform providers that seriously violate the law.",
+   "applies_from": "2021-11-01",
+   "conditional_on": "Important internet platform services, very large user numbers and complex business types",
+   "evidence": {
+    "provision": "Art. 58",
+    "quote": "对严重违反法律、行政法规处理个人信息的平台内的产品或者服务提供者，停止提供服务"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "Such platforms must regularly publish a personal information protection social responsibility report and accept public oversight.",
+   "applies_from": "2021-11-01",
+   "conditional_on": "Important internet platform services, very large user numbers and complex business types",
+   "evidence": {
+    "provision": "Art. 58",
+    "quote": "定期发布个人信息保护社会责任报告"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "data_processor",
+   "modality": "shall",
+   "summary": "Entrusted processors must take necessary measures to secure the personal information they process and assist the controller in meeting its obligations.",
+   "applies_from": "2021-11-01",
+   "conditional_on": "Processing entrusted by a controller",
+   "evidence": {
+    "provision": "Art. 59",
+    "quote": "应当依照本法和有关法律、行政法规的规定，采取必要措施保障所处理的个人信息的安全"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "regulator",
+   "modality": "shall",
+   "summary": "The national cyberspace authority coordinates personal information protection and related supervision; other departments perform supervision within their own remits.",
+   "applies_from": "2021-11-01",
+   "evidence": {
+    "provision": "Art. 60",
+    "quote": "国家网信部门负责统筹协调个人信息保护工作和相关监督管理工作"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "regulator",
+   "modality": "shall",
+   "summary": "Authorities performing personal information protection duties must promote education, receive complaints, evaluate applications and publish results, and investigate unlawful processing.",
+   "applies_from": "2021-11-01",
+   "evidence": {
+    "provision": "Art. 61",
+    "quote": "履行个人信息保护职责的部门履行下列个人信息保护职责"
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "regulator",
+   "modality": "shall",
+   "summary": "The national cyberspace authority coordinates other departments in advancing specified work: formulating detailed rules and standards, special rules for small processors, sensitive information and new technologies such as face recognition and AI, electronic identity, service systems and complaint mechanisms.",
+   "applies_from": "2021-11-01",
+   "evidence": {
+    "provision": "Art. 62",
+    "quote": "国家网信部门统筹协调有关部门依据本法推进下列个人信息保护工作"
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "regulator",
+   "modality": "may",
+   "summary": "Authorities performing personal information protection duties may inquire, review and copy records, conduct on-site inspections and, with approval, seize equipment used for unlawful processing.",
+   "applies_from": "2021-11-01",
+   "evidence": {
+    "provision": "Art. 63",
+    "quote": "履行个人信息保护职责的部门履行个人信息保护职责，可以采取下列措施"
+   }
+  },
+  {
+   "type": "cooperation_with_authority",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Parties must assist and cooperate with the authority in its investigations and must not refuse or obstruct it.",
+   "applies_from": "2021-11-01",
+   "conditional_on": "Investigation by the authority performing personal information protection duties",
+   "evidence": {
+    "provision": "Art. 63",
+    "quote": "当事人应当予以协助、配合，不得拒绝、阻挠"
+   }
+  },
+  {
+   "type": "cooperation_with_authority",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Where the authority finds major risk or a security incident, the processor must take measures to rectify and remove hazards, and may be required to commission a professional compliance audit.",
+   "applies_from": "2021-11-01",
+   "conditional_on": "Authority finds major risk or a personal information security incident",
+   "evidence": {
+    "provision": "Art. 64",
+    "quote": "应当按照要求采取措施，进行整改，消除隐患"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "regulator",
+   "modality": "shall",
+   "summary": "Where the authority finds personal information processing suspected of crime, it must promptly transfer the case to the public security organ.",
+   "applies_from": "2021-11-01",
+   "conditional_on": "Suspected crime in personal information processing",
+   "evidence": {
+    "provision": "Art. 64",
+    "quote": "应当及时移送公安机关依法处理"
+   }
+  },
+  {
+   "type": "complaint_mechanism",
+   "addressee": "regulator",
+   "modality": "shall",
+   "summary": "Authorities must handle complaints and reports promptly, inform complainants of results, and publish contact details for complaints and reports.",
+   "applies_from": "2021-11-01",
+   "evidence": {
+    "provision": "Art. 65",
+    "quote": "收到投诉、举报的部门应当依法及时处理，并将处理结果告知投诉、举报人"
+   }
+  }
+ ],
+ "enforcement": [
+  {
+   "sanction_type": "administrative_fine",
+   "authority": "履行个人信息保护职责的部门 (department performing personal information protection duties)",
+   "triggered_by": "Processing personal information in violation of this Law, or failing to perform PI protection obligations; the fine applies if the processor refuses to correct (拒不改正的)",
+   "max_penalty_text": "拒不改正的，并处一百万元以下罚款",
+   "max_penalty_amount": 1000000,
+   "currency": "CNY",
+   "penalty_formula": "Up to 1,000,000 yuan for refusal to correct; no revenue-based formula in this paragraph",
+   "cure_period": "Order to correct (责令改正) comes first; fine applies only if the processor refuses to correct; no period stated",
+   "evidence": {
+    "provision": "Art. 66 para. 1",
+    "quote": "拒不改正的，并处一百万元以下罚款"
+   }
+  },
+  {
+   "sanction_type": "warning_reprimand",
+   "authority": "履行个人信息保护职责的部门 (department performing personal information protection duties)",
+   "triggered_by": "Processing personal information in violation of this Law, or failing to perform PI protection obligations",
+   "max_penalty_text": "给予警告 (warning; no amount)",
+   "cure_period": "Order to correct (责令改正) issued together with the warning; no period stated",
+   "evidence": {
+    "provision": "Art. 66 para. 1",
+    "quote": "责令改正，给予警告"
+   }
+  },
+  {
+   "sanction_type": "benefit_revocation_clawback",
+   "authority": "履行个人信息保护职责的部门 (department performing personal information protection duties)",
+   "triggered_by": "Processing personal information in violation of this Law, or failing to perform PI protection obligations",
+   "max_penalty_text": "没收违法所得 (confiscation of unlawful gains; no amount stated)",
+   "cure_period": "None stated",
+   "evidence": {
+    "provision": "Art. 66 para. 1",
+    "quote": "没收违法所得"
+   }
+  },
+  {
+   "sanction_type": "service_suspension",
+   "authority": "履行个人信息保护职责的部门 (department performing personal information protection duties)",
+   "triggered_by": "Application (app) that unlawfully processes personal information",
+   "max_penalty_text": "责令暂停或者终止提供服务 (order to suspend or terminate service; no duration stated)",
+   "cure_period": "None stated",
+   "evidence": {
+    "provision": "Art. 66 para. 1",
+    "quote": "对违法处理个人信息的应用程序，责令暂停或者终止提供服务"
+   }
+  },
+  {
+   "sanction_type": "administrative_fine",
+   "authority": "履行个人信息保护职责的部门 (department performing personal information protection duties)",
+   "triggered_by": "Violation of this Law's processing rules; applies to directly responsible supervisors and other directly responsible persons",
+   "max_penalty_text": "对直接负责的主管人员和其他直接责任人员处一万元以上十万元以下罚款",
+   "max_penalty_amount": 100000,
+   "currency": "CNY",
+   "penalty_formula": "10,000 to 100,000 yuan per responsible individual",
+   "cure_period": "None stated",
+   "evidence": {
+    "provision": "Art. 66 para. 1",
+    "quote": "对直接负责的主管人员和其他直接责任人员处一万元以上十万元以下罚款"
+   }
+  },
+  {
+   "sanction_type": "administrative_fine",
+   "authority": "省级以上履行个人信息保护职责的部门 (provincial-level or higher PI protection authority)",
+   "triggered_by": "Serious cases (情节严重) of the violations in Art. 66 para. 1; confiscation of unlawful gains also applies",
+   "max_penalty_text": "并处五千万元以下或者上一年度营业额百分之五以下罚款",
+   "max_penalty_amount": 50000000,
+   "currency": "CNY",
+   "penalty_formula": "Up to 50 million yuan, or up to 5% of the previous year's turnover (上一年度营业额百分之五以下); the text does not state how the two alternatives are chosen",
+   "cure_period": "Order to correct (责令改正) comes first; no period stated",
+   "evidence": {
+    "provision": "Art. 66 para. 2",
+    "quote": "并处五千万元以下或者上一年度营业额百分之五以下罚款"
+   }
+  },
+  {
+   "sanction_type": "service_suspension",
+   "authority": "省级以上履行个人信息保护职责的部门 (provincial-level or higher PI protection authority)",
+   "triggered_by": "Serious cases (情节严重) of the violations in Art. 66 para. 1",
+   "max_penalty_text": "可以责令暂停相关业务或者停业整顿 (may order suspension of relevant business or business halt for rectification; no duration stated)",
+   "cure_period": "None stated",
+   "evidence": {
+    "provision": "Art. 66 para. 2",
+    "quote": "可以责令暂停相关业务或者停业整顿"
+   }
+  },
+  {
+   "sanction_type": "license_revocation",
+   "authority": "有关主管部门 (relevant competent authorities, on notification by the PI protection authority)",
+   "triggered_by": "Serious cases (情节严重) of the violations in Art. 66 para. 1",
+   "max_penalty_text": "吊销相关业务许可或者吊销营业执照 (revocation of relevant business licence or business licence)",
+   "cure_period": "None stated",
+   "evidence": {
+    "provision": "Art. 66 para. 2",
+    "quote": "通报有关主管部门吊销相关业务许可或者吊销营业执照"
+   }
+  },
+  {
+   "sanction_type": "administrative_fine",
+   "authority": "省级以上履行个人信息保护职责的部门 (provincial-level or higher PI protection authority)",
+   "triggered_by": "Serious cases (情节严重); applies to directly responsible supervisors and other directly responsible persons",
+   "max_penalty_text": "对直接负责的主管人员和其他直接责任人员处十万元以上一百万元以下罚款",
+   "max_penalty_amount": 1000000,
+   "currency": "CNY",
+   "penalty_formula": "100,000 to 1,000,000 yuan per responsible individual",
+   "cure_period": "None stated",
+   "evidence": {
+    "provision": "Art. 66 para. 2",
+    "quote": "对直接负责的主管人员和其他直接责任人员处十万元以上一百万元以下罚款"
+   }
+  },
+  {
+   "sanction_type": "other",
+   "authority": "省级以上履行个人信息保护职责的部门 (provincial-level or higher PI protection authority)",
+   "triggered_by": "Serious cases (情节严重); applies to directly responsible supervisors and other directly responsible persons",
+   "max_penalty_text": "禁止其在一定期限内担任相关企业的董事、监事、高级管理人员和个人信息保护负责人 (prohibition from serving as director, supervisor, senior manager or PI protection officer for a period; duration not stated)",
+   "cure_period": "None stated",
+   "evidence": {
+    "provision": "Art. 66 para. 2",
+    "quote": "并可以决定禁止其在一定期限内担任相关企业的董事、监事、高级管理人员和个人信息保护负责人"
+   }
+  },
+  {
+   "sanction_type": "other",
+   "authority": "Not specified in the text (credit record under other laws and regulations)",
+   "triggered_by": "Any violation of conduct under this Law",
+   "max_penalty_text": "记入信用档案，并予以公示 (recorded in credit file and publicly disclosed; no amount)",
+   "penalty_reference": "Other laws and administrative regulations on credit records",
+   "cure_period": "None stated",
+   "evidence": {
+    "provision": "Art. 67",
+    "quote": "依照有关法律、行政法规的规定记入信用档案，并予以公示"
+   }
+  },
+  {
+   "sanction_type": "other",
+   "authority": "上级机关或者履行个人信息保护职责的部门 (superior organ or PI protection authority)",
+   "triggered_by": "State organ failing to perform PI protection obligations under this Law; applies to directly responsible supervisors and other directly responsible persons",
+   "max_penalty_text": "责令改正；依法给予处分 (order to correct; disciplinary sanctions under law)",
+   "cure_period": "None stated",
+   "evidence": {
+    "provision": "Art. 68 para. 1",
+    "quote": "对直接负责的主管人员和其他直接责任人员依法给予处分"
+   }
+  },
+  {
+   "sanction_type": "private_damages",
+   "authority": "Affected individual (civil damages claim; forum not stated in this article)",
+   "triggered_by": "Processing of personal information that infringes PI rights and causes damage, where the processor cannot prove absence of fault",
+   "max_penalty_text": "应当承担损害赔偿等侵权责任 (tort damages liability; no cap stated)",
+   "penalty_formula": "Damages measured by the individual's loss or the processor's gain; if neither can be determined, amount set according to actual circumstances (Art. 69 para. 2)",
+   "private_right_of_action": true,
+   "cure_period": "None stated",
+   "evidence": {
+    "provision": "Art. 69 para. 1",
+    "quote": "个人信息处理者不能证明自己没有过错的，应当承担损害赔偿等侵权责任"
+   }
+  },
+  {
+   "sanction_type": "other",
+   "authority": "人民检察院、法律规定的消费者组织和由国家网信部门确定的组织 (people's procuratorates, legally designated consumer organisations, and organisations designated by the CAC)",
+   "triggered_by": "Processing that violates this Law and infringes the rights and interests of many individuals",
+   "max_penalty_text": "向人民法院提起诉讼 (lawsuit before the people's courts; no amount stated)",
+   "private_right_of_action": true,
+   "cure_period": "None stated",
+   "evidence": {
+    "provision": "Art. 70",
+    "quote": "可以依法向人民法院提起诉讼"
+   }
+  },
+  {
+   "sanction_type": "criminal_penalty",
+   "authority": "Not specified in the text (criminal justice authorities)",
+   "triggered_by": "Violation of this Law that constitutes a crime",
+   "max_penalty_text": "依法追究刑事责任 (criminal liability under law; no penalty stated)",
+   "penalty_reference": "Criminal law (not named in this text)",
+   "cure_period": "None stated",
+   "evidence": {
+    "provision": "Art. 71",
+    "quote": "构成犯罪的，依法追究刑事责任"
+   }
+  },
+  {
+   "sanction_type": "other",
+   "authority": "Administrative public security punishment under other law (not named in this text)",
+   "triggered_by": "Violation of this Law that constitutes a public security administrative violation",
+   "max_penalty_text": "依法给予治安管理处罚 (public security administrative punishment under law; no amount stated)",
+   "penalty_reference": "治安管理处罚 (public security administration punishment law, not named in this text)",
+   "cure_period": "None stated",
+   "evidence": {
+    "provision": "Art. 71",
+    "quote": "构成违反治安管理行为的，依法给予治安管理处罚"
+   }
+  },
+  {
+   "sanction_type": "blocking",
+   "authority": "国家网信部门 (national cyberspace authority)",
+   "triggered_by": "Overseas organisations or individuals engaged in PI processing that infringes rights of PRC citizens or endangers national security or public interest",
+   "max_penalty_text": "列入限制或者禁止个人信息提供清单，予以公告，并采取限制或者禁止向其提供个人信息等措施 (listing on restricted or prohibited provision list, public notice, and restriction or prohibition on providing PI)",
+   "cure_period": "None stated",
+   "evidence": {
+    "provision": "Art. 42",
+    "quote": "国家网信部门可以将其列入限制或者禁止个人信息提供清单，予以公告"
+   }
+  },
+  {
+   "sanction_type": "service_suspension",
+   "authority": "Operator of an important internet platform (must stop service to in-platform provider)",
+   "triggered_by": "In-platform product or service provider that seriously violates laws and administrative regulations in processing PI",
+   "max_penalty_text": "停止提供服务 (stop providing service; no duration stated)",
+   "cure_period": "None stated",
+   "evidence": {
+    "provision": "Art. 58 item (3)",
+    "quote": "对严重违反法律、行政法规处理个人信息的平台内的产品或者服务提供者，停止提供服务"
+   }
+  },
+  {
+   "sanction_type": "other",
+   "authority": "履行个人信息保护职责的部门 (department performing personal information protection duties)",
+   "triggered_by": "Higher-risk PI processing or a PI security incident detected in the course of duties",
+   "max_penalty_text": "约谈法定代表人或者主要负责人，或者要求委托专业机构进行合规审计；责令整改 (summons of legal representative or principal responsible person, or order to commission compliance audit; rectification)",
+   "cure_period": "Processor must rectify as required; no period stated",
+   "evidence": {
+    "provision": "Art. 64 para. 1",
+    "quote": "可以按照规定的权限和程序对该个人信息处理者的法定代表人或者主要负责人进行约谈"
+   }
+  },
+  {
+   "sanction_type": "other",
+   "authority": "履行个人信息保护职责的部门 (department performing personal information protection duties)",
+   "triggered_by": "Evidence that equipment or items are used for unlawful PI processing; requires written report to head of the department and approval",
+   "max_penalty_text": "查封或者扣押 (seizure or detention of equipment or items; no amount)",
+   "cure_period": "None stated",
+   "evidence": {
+    "provision": "Art. 63 para. 1 item (4)",
+    "quote": "可以查封或者扣押"
+   }
+  }
+ ],
+ "section_status": {}
+}

@@ -1,0 +1,1171 @@
+{
+ "schema_version": "1.1",
+ "instrument_id": "us-treasury-outbound-2024",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-opus-5-5 (Claude Code)",
+  "method": "gold set (Opus, Claude Code)",
+  "date": "2026-10-11",
+  "prompt_version": "gold (hand annotation by Claude Opus in Claude Code; no prompt version)"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "Federal Register (federalregister.gov), FR Doc. 2024-25422, 89 FR 90398, full-text XML",
+  "url": "https://www.federalregister.gov/documents/full_text/xml/2024/11/15/2024-25422.xml",
+  "retrieved": "2026-10-11",
+  "version": "original as published in the Federal Register (2024-11-15), effective 2025-01-02; the eCFR versioner lists 2025-01-02 as the only version of 31 CFR part 850 as of retrieval, so the published text equals the current consolidated text",
+  "language": "en",
+  "extent": "full",
+  "note": "The cached text is the whole FR document: preamble (Supplementary Information, section-by-section discussion, regulatory analyses) followed by the regulatory text adding 31 CFR part 850 (§§ 850.101-850.904). All of part 850 is annotated. The preamble is non-operative and is used only as context: for the summary and classification and for the rulemaking history events (ANPRM, NPRM, effective date). Every threshold, obligation, sanction and definition cites part 850. Converted from XML with a one-off script (superscript exponents rendered as 10^N)."
+ },
+ "summary": {
+  "short": "Treasury rule (31 CFR part 850), effective 2 January 2025, requiring U.S. persons to notify Treasury of, or barring them from, investments in Chinese, Hong Kong or Macau entities active in semiconductors, quantum technologies and AI, according to technology-specific criteria and compute thresholds.",
+  "long": "Part 850 implements Executive Order 14105 under IEEPA. It covers U.S. persons' acquisitions of equity or contingent equity, equity-like loans, conversions, greenfield and brownfield projects, joint ventures and limited-partner stakes in non-U.S. funds involving a 'covered foreign person': a person of a country of concern (as listed in the Order's Annex) engaged in a covered activity, or a person that derives more than 50% of its revenue, net income, capital expenditure or operating expenses from such persons. Prohibited transactions involve EDA software, front-end, advanced-packaging and EUV equipment, advanced chip design and fabrication (non-planar or 16/14 nm logic, 128-layer NAND, 18 nm DRAM), advanced packaging, supercomputers, quantum computers and components, military or surveillance AI, AI trained with more than 10^25 operations (10^24 using primarily biological sequence data), and listed entities. Other chip activities and AI for military, cyber or robotic uses, or trained with more than 10^23 operations, are notifiable within 30 days. Exceptions cover publicly traded securities, registered funds, LP commitments of $2 million or less, buyouts of country-of-concern interests and pre-2025 binding commitments; Treasury may grant national interest exemptions. Violations carry IEEPA civil penalties (greater of $250,000, inflation-adjusted, or twice the transaction value), criminal penalties and divestment orders."
+ },
+ "classification": {
+  "domains": [
+   "investment_screening",
+   "chips_export_controls",
+   "ai_general"
+  ],
+  "primary_domain": "investment_screening",
+  "mechanisms": [
+   "prohibition_ban",
+   "registration_notification",
+   "designation_tiering",
+   "investment_review",
+   "mandate_obligation"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "investor",
+   "government_agency"
+  ],
+  "affected_roles": [
+   "ai_developer",
+   "chip_designer_manufacturer"
+  ],
+  "decision_margins": [
+   "firm:investment_location",
+   "firm:compliance_process"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national",
+    "extraterritorial"
+   ],
+   "description": "Binds U.S. persons (including foreign branches of U.S. entities and, through reasonable-steps and notification duties, their controlled foreign entities) with respect to investments in or involving persons of a country of concern, wherever the joint venture or asset is located.",
+   "evidence": {
+    "provision": "§ 850.229",
+    "quote": "The term U.S. person means any United States citizen, lawful permanent resident, entity organized under the laws of the United States or any jurisdiction within the United States, including any foreign branch of any such entity, or any person in the United States."
+   }
+  },
+  "agora_applications": [
+   "Government: military and public safety"
+  ],
+  "agora_harms": [],
+  "agora_incentives": [
+   "Fines",
+   "Imprisonment",
+   "Criminal liability"
+  ],
+  "agora_risk_factors": [],
+  "agora_strategies": [
+   "Tiering",
+   "Tiering: Tiering based on inputs",
+   "Tiering: Tiering based on domain of application",
+   "Licensing, registration, and certification"
+  ]
+ },
+ "events": [
+  {
+   "event": "consultation",
+   "date": "2023-08-09",
+   "date_type": "absolute",
+   "date_text": "on August 9, 2023, the Treasury Department issued an Advance Notice of Proposed Rulemaking, 88 FR 54961 (published August 14, 2023)",
+   "applies_to": "Advance Notice of Proposed Rulemaking (ANPRM) soliciting public comment; 60 comment letters received",
+   "evidence": {
+    "provision": "Preamble, Supplementary Information I.B",
+    "quote": "on August 9, 2023, the Treasury Department issued an Advance Notice of Proposed Rulemaking, 88 FR 54961 (published August 14, 2023) (ANPRM)"
+   }
+  },
+  {
+   "event": "proposed",
+   "date": "2024-06-21",
+   "date_type": "absolute",
+   "date_text": "On June 21, 2024, the Treasury Department issued a Notice of Proposed Rulemaking, 89 FR 55846 (published July 5, 2024)",
+   "applies_to": "Notice of Proposed Rulemaking with full draft regulations (issued 2024-06-21, published 2024-07-05)",
+   "evidence": {
+    "provision": "Preamble, Supplementary Information I.C",
+    "quote": "On June 21, 2024, the Treasury Department issued a Notice of Proposed Rulemaking, 89 FR 55846 (published July 5, 2024) (Proposed Rule), setting forth the full proposed regulations"
+   }
+  },
+  {
+   "event": "published",
+   "date": "2024-11-15",
+   "date_type": "external",
+   "date_text": "publication_date 2024-11-15 (Federal Register API record); the text itself shows only 'Filed 11-7-24'",
+   "applies_to": "Final rule published at 89 FR 90398",
+   "external_evidence": {
+    "url": "https://www.federalregister.gov/api/v1/documents/2024-25422.json",
+    "description": "Official Federal Register API record for FR Doc. 2024-25422: citation 89 FR 90398, publication_date 2024-11-15, effective_on 2025-01-02",
+    "accessed": "2026-10-11"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2025-01-02",
+   "date_type": "absolute",
+   "date_text": "This final rule is effective on January 2, 2025.",
+   "applies_to": "All of 31 CFR part 850, including the prohibitions, notification duties and the anti-evasion rule (§ 850.604 applies to actions on or after the effective date)",
+   "evidence": {
+    "provision": "Preamble, DATES",
+    "quote": "This final rule is effective on January 2, 2025."
+   }
+  },
+  {
+   "event": "application",
+   "date": "2025-01-02",
+   "date_type": "absolute",
+   "date_text": "where the contingent equity interest was acquired by the U.S. person on or after January 2, 2025",
+   "applies_to": "Conversions of contingent equity interests are covered transactions only if the contingent interest was acquired on or after this date",
+   "evidence": {
+    "provision": "§ 850.210(a)(3)",
+    "quote": "where the contingent equity interest was acquired by the U.S. person on or after January 2, 2025"
+   }
+  },
+  {
+   "event": "application",
+   "date": "2025-01-02",
+   "date_type": "absolute",
+   "date_text": "pursuant to a binding, uncalled capital commitment entered into before January 2, 2025",
+   "applies_to": "Grandfathering: transactions made after this date under binding uncalled capital commitments entered into before it are excepted transactions",
+   "evidence": {
+    "provision": "§ 850.501(d)",
+    "quote": "A transaction made after January 2, 2025, pursuant to a binding, uncalled capital commitment entered into before January 2, 2025"
+   }
+  },
+  {
+   "event": "application",
+   "date": "2025-01-02",
+   "date_type": "absolute",
+   "date_text": "covered activities that the controlled foreign entity was engaged in prior to January 2, 2025",
+   "applies_to": "Intra-group transactions between a U.S. person and its controlled foreign entity are excepted if they maintain covered activities engaged in before this date",
+   "evidence": {
+    "provision": "§ 850.501(c)",
+    "quote": "maintains covered activities that the controlled foreign entity was engaged in prior to January 2, 2025"
+   }
+  },
+  {
+   "event": "application",
+   "date": "2025-01-02",
+   "date_type": "absolute",
+   "date_text": "where the equity was pledged prior to January 2, 2025",
+   "applies_to": "Foreclosure on pledged equity is not a covered transaction if the equity was pledged before this date",
+   "evidence": {
+    "provision": "Note 2 to § 850.210",
+    "quote": "provided that such an acquisition is not a covered transaction where the equity was pledged prior to January 2, 2025"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "no later than 30 calendar days following the completion date of a notifiable transaction",
+   "anchor": "completion date of the notifiable transaction (§ 850.204)",
+   "applies_to": "Filing of notifications under §§ 850.401 and 850.402; also the deadline for updating a pre-completion filing whose information materially changed (§ 850.404(d))",
+   "evidence": {
+    "provision": "§ 850.404(c)",
+    "quote": "A U.S. person shall file a notification under § 850.401 or § 850.402 with the Department of the Treasury no later than 30 calendar days following the completion date of a notifiable transaction."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "promptly, and in no event later than 30 calendar days following the acquisition of such knowledge",
+   "anchor": "date the U.S. person acquires actual knowledge, after the completion date, of facts making the transaction covered",
+   "applies_to": "Post-transaction knowledge notifications (§§ 850.403, 850.404(c))",
+   "evidence": {
+    "provision": "§ 850.403",
+    "quote": "shall promptly, and in no event later than 30 calendar days following the acquisition of such knowledge, submit a notification pursuant to § 850.404"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "no later than 30 calendar days following the acquisition of previously unavailable information",
+   "anchor": "date previously unavailable notification information becomes available",
+   "applies_to": "Supplementing a notification with information required by § 850.405 that was unavailable at filing (§§ 850.404(e), 850.405(d))",
+   "evidence": {
+    "provision": "§ 850.404(e)",
+    "quote": "A U.S. person shall inform the Department of the Treasury in writing no later than 30 calendar days following the acquisition of previously unavailable information required under § 850.405."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "promptly, and in no event later than 30 calendar days after learning of a material omission or inaccuracy",
+   "anchor": "date the person learns of a material omission or inaccuracy",
+   "applies_to": "Notice of material omission or inaccuracy in any representation, statement or certification",
+   "evidence": {
+    "provision": "§ 850.406",
+    "quote": "shall inform the Department of the Treasury in writing promptly, and in no event later than 30 calendar days after learning of a material omission or inaccuracy"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "for a period of ten years from the date of the filing",
+   "anchor": "date of filing of the notification",
+   "applies_to": "End of the retention period for notifications and supporting documentation",
+   "evidence": {
+    "provision": "§ 850.405(c)",
+    "quote": "The U.S. person shall maintain a copy of the notification filed and supporting documentation for a period of ten years from the date of the filing."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "on an annual basis on or before January 15 of each calendar year",
+   "anchor": "each calendar year (recurring, on or before January 15)",
+   "applies_to": "Treasury publication of the inflation-adjusted maximum civil penalty in the Federal Register and on the program website",
+   "evidence": {
+    "provision": "§ 850.701(c)",
+    "quote": "Notice of the maximum penalty which may be assessed under this section will be published in the Federal Register and on Treasury's Outbound Investment Security Program website on an annual basis on or before January 15 of each calendar year."
+   }
+  },
+  {
+   "event": "application",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "designated by the Secretary ... made available through public notice",
+   "depends_on": "Secretary's designation of countries or territories and determination of transaction types under § 850.501(g)(1), made available through public notice",
+   "applies_to": "Exception for transactions with persons of designated third countries or territories addressing similar national security risks",
+   "evidence": {
+    "provision": "§ 850.501(g)(1), (3)",
+    "quote": "The Secretary's designations and determinations under paragraph (g)(1) of this section shall be made available through public notice."
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "compute_training",
+   "variable_text": "quantity of computing power",
+   "operator": ">",
+   "value": 1e+23,
+   "value_text": "greater than 10^23 computational operations (e.g., integer or floating-point operations)",
+   "unit": "computational operations (integer or floating-point)",
+   "currency": null,
+   "indexed": false,
+   "measurement": "Total operations used to train the AI system; Treasury to assess the criterion periodically and update it through public notice (Note 1 to § 850.217)",
+   "level": "model",
+   "trigger": "designation_category",
+   "consequence": "A covered transaction with a person developing such an AI system is a notifiable transaction (if not prohibited)",
+   "conditions": "AI system not described in § 850.224(j) or (k); covered foreign person or joint venture develops it; fine-tuning strictly for internal non-commercial use does not by itself trigger (Note 3)",
+   "evidence": {
+    "provision": "§ 850.217(d)(3)",
+    "quote": "Trained using a quantity of computing power greater than 10^23 computational operations (e.g., integer or floating-point operations)."
+   }
+  },
+  {
+   "variable": "compute_training",
+   "variable_text": "quantity of computing power",
+   "operator": ">",
+   "value": 1e+25,
+   "value_text": "greater than 10^25 computational operations (e.g., integer or floating-point operations)",
+   "unit": "computational operations (integer or floating-point)",
+   "currency": null,
+   "indexed": false,
+   "measurement": "Total operations used to train the AI system; Treasury to assess the criterion periodically and update it through public notice (Note 1 to § 850.224)",
+   "level": "model",
+   "trigger": "designation_category",
+   "consequence": "A covered transaction with a person developing such an AI system is a prohibited transaction",
+   "conditions": "Covered foreign person or joint venture develops the AI system; fine-tuning strictly for internal non-commercial use does not by itself trigger (Note 3)",
+   "evidence": {
+    "provision": "§ 850.224(k)(1)",
+    "quote": "Develops any AI system that is trained using a quantity of computing power greater than: (1) 10^25 computational operations (e.g., integer or floating-point operations)"
+   }
+  },
+  {
+   "variable": "compute_training",
+   "variable_text": "quantity of computing power ... using primarily biological sequence data",
+   "operator": ">",
+   "value": 1e+24,
+   "value_text": "greater than 10^24 computational operations (e.g., integer or floating-point operations) using primarily biological sequence data",
+   "unit": "computational operations (integer or floating-point)",
+   "currency": null,
+   "indexed": false,
+   "measurement": "Total training operations, where training uses primarily biological sequence data",
+   "level": "model",
+   "trigger": "designation_category",
+   "consequence": "A covered transaction with a person developing such an AI system is a prohibited transaction",
+   "conditions": "Training data primarily biological sequence data",
+   "evidence": {
+    "provision": "§ 850.224(k)(2)",
+    "quote": "10^24 computational operations (e.g., integer or floating-point operations) using primarily biological sequence data"
+   }
+  },
+  {
+   "variable": "chip_performance",
+   "variable_text": "performance parameters in Export Control Classification Number 3A090.a",
+   "operator": ">=",
+   "value": null,
+   "value_text": "meets or exceeds the performance parameters in Export Control Classification Number 3A090.a in supplement No. 1 to 15 CFR part 774",
+   "unit": "ECCN 3A090.a performance parameters",
+   "currency": null,
+   "indexed": false,
+   "measurement": "Parameters as set in the Export Administration Regulations Commerce Control List (moves with any EAR amendment)",
+   "level": "product",
+   "trigger": "designation_category",
+   "consequence": "A covered transaction with a person designing such integrated circuits is a prohibited transaction; design of other ICs is notifiable (§ 850.217(a))",
+   "depends_on": "ECCN 3A090.a, supplement No. 1 to 15 CFR part 774 (Export Administration Regulations)",
+   "evidence": {
+    "provision": "§ 850.224(c)",
+    "quote": "Designs any integrated circuit that meets or exceeds the performance parameters in Export Control Classification Number 3A090.a in supplement No. 1 to 15 CFR part 774"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "designed for operation at or below 4.5 Kelvin",
+   "operator": "<=",
+   "value": 4.5,
+   "value_text": "at or below 4.5 Kelvin",
+   "unit": "Kelvin (operating temperature)",
+   "currency": null,
+   "indexed": false,
+   "measurement": "Design operating temperature of the integrated circuit",
+   "level": "product",
+   "trigger": "designation_category",
+   "consequence": "Designing (§ 850.224(c)) or fabricating (§ 850.224(d)(6)) such integrated circuits makes the covered transaction prohibited",
+   "evidence": {
+    "provision": "§ 850.224(c), (d)(6)",
+    "quote": "Integrated circuits designed for operation at or below 4.5 Kelvin"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "production technology node",
+   "operator": "<=",
+   "value": 16,
+   "value_text": "a production technology node of 16/14 nanometers or less",
+   "unit": "nanometers (technology node; the text names the 16/14 nm node)",
+   "currency": null,
+   "indexed": false,
+   "measurement": "Production technology node of logic ICs; alternatively any non-planar transistor architecture; FDSOI included",
+   "level": "product",
+   "trigger": "designation_category",
+   "consequence": "Fabricating such logic integrated circuits makes the covered transaction prohibited; fabricating other ICs is notifiable (§ 850.217(b))",
+   "conditions": "Logic integrated circuits",
+   "evidence": {
+    "provision": "§ 850.224(d)(1)",
+    "quote": "Logic integrated circuits using a non-planar transistor architecture or with a production technology node of 16/14 nanometers or less, including fully depleted silicon-on-insulator (FDSOI) integrated circuits"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "layers",
+   "operator": ">=",
+   "value": 128,
+   "value_text": "128 layers or more",
+   "unit": "memory layers",
+   "currency": null,
+   "indexed": false,
+   "measurement": "Layer count of NAND memory ICs",
+   "level": "product",
+   "trigger": "designation_category",
+   "consequence": "Fabricating such NAND memory integrated circuits makes the covered transaction prohibited",
+   "conditions": "NOT-AND (NAND) memory integrated circuits",
+   "evidence": {
+    "provision": "§ 850.224(d)(2)",
+    "quote": "NOT-AND (NAND) memory integrated circuits with 128 layers or more"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "technology node ... half-pitch",
+   "operator": "<=",
+   "value": 18,
+   "value_text": "18 nanometer half-pitch or less",
+   "unit": "nanometers half-pitch",
+   "currency": null,
+   "indexed": false,
+   "measurement": "Technology node of DRAM ICs measured as half-pitch",
+   "level": "product",
+   "trigger": "designation_category",
+   "consequence": "Fabricating such DRAM integrated circuits makes the covered transaction prohibited",
+   "conditions": "Dynamic random-access memory (DRAM) integrated circuits",
+   "evidence": {
+    "provision": "§ 850.224(d)(3)",
+    "quote": "Dynamic random-access memory (DRAM) integrated circuits using a technology node of 18 nanometer half-pitch or less"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "theoretical compute capacity ... double-precision (64-bit) petaflops",
+   "operator": ">=",
+   "value": 100,
+   "value_text": "100 or more double-precision (64-bit) petaflops",
+   "unit": "double-precision (64-bit) petaflops",
+   "currency": null,
+   "indexed": false,
+   "measurement": "Theoretical compute capacity of a supercomputer enabled by advanced ICs",
+   "level": "facility",
+   "trigger": "designation_category",
+   "consequence": "Developing, installing, selling or producing such a supercomputer makes the covered transaction prohibited",
+   "conditions": "Alternative to 200 single-precision petaflops; within a 41,600 cubic foot or smaller envelope",
+   "evidence": {
+    "provision": "§ 850.224(f)",
+    "quote": "can provide a theoretical compute capacity of 100 or more double-precision (64-bit) petaflops"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "single-precision (32-bit) petaflops of processing power",
+   "operator": ">=",
+   "value": 200,
+   "value_text": "200 or more single-precision (32-bit) petaflops",
+   "unit": "single-precision (32-bit) petaflops",
+   "currency": null,
+   "indexed": false,
+   "measurement": "Theoretical compute capacity of a supercomputer enabled by advanced ICs",
+   "level": "facility",
+   "trigger": "designation_category",
+   "consequence": "Developing, installing, selling or producing such a supercomputer makes the covered transaction prohibited",
+   "conditions": "Alternative to 100 double-precision petaflops; within a 41,600 cubic foot or smaller envelope",
+   "evidence": {
+    "provision": "§ 850.224(f)",
+    "quote": "or 200 or more single-precision (32-bit) petaflops of processing power within a 41,600 cubic foot or smaller envelope"
+   }
+  },
+  {
+   "variable": "floor_area",
+   "variable_text": "cubic foot ... envelope",
+   "operator": "<=",
+   "value": 41600,
+   "value_text": "within a 41,600 cubic foot or smaller envelope",
+   "unit": "cubic feet (volume, not area)",
+   "currency": null,
+   "indexed": false,
+   "measurement": "Physical envelope containing the supercomputer's compute capacity",
+   "level": "facility",
+   "trigger": "designation_category",
+   "consequence": "Supercomputer prohibition applies only to capacity within this envelope",
+   "conditions": "Joint with the petaflops thresholds of § 850.224(f)",
+   "evidence": {
+    "provision": "§ 850.224(f)",
+    "quote": "within a 41,600 cubic foot or smaller envelope"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "percent of its revenue",
+   "operator": ">",
+   "value": 50,
+   "value_text": "more than 50 percent of its revenue",
+   "unit": "percent of revenue",
+   "currency": null,
+   "indexed": false,
+   "measurement": "Annual; from one person of a country of concern engaged in a covered activity, or aggregated across such persons each contributing at least $50,000; based on the most recent audited (else unaudited, appraisal, good-faith estimate) statement (§ 850.209(b))",
+   "level": "entity",
+   "trigger": "scope_definition",
+   "consequence": "A holder of a board seat, voting or equity interest or management power in such persons is a covered foreign person",
+   "conditions": "Alternative tests on net income, capital expenditure and operating expenses (§ 850.209(a)(2)(ii)-(iv)) use the same 50% cutoff",
+   "evidence": {
+    "provision": "§ 850.209(a)(2)(i)",
+    "quote": "Derives more than 50 percent of its revenue individually, or as aggregated across such persons from each of which it derives at least $50,000 (or equivalent) of its revenue, on an annual basis"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "percent of its net income",
+   "operator": ">",
+   "value": 50,
+   "value_text": "more than 50 percent of its net income",
+   "unit": "percent of net income",
+   "currency": null,
+   "indexed": false,
+   "measurement": "As for revenue (§ 850.209(b))",
+   "level": "entity",
+   "trigger": "scope_definition",
+   "consequence": "Holder is a covered foreign person",
+   "evidence": {
+    "provision": "§ 850.209(a)(2)(ii)",
+    "quote": "Derives more than 50 percent of its net income individually"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "percent of its capital expenditure",
+   "operator": ">",
+   "value": 50,
+   "value_text": "more than 50 percent of its capital expenditure",
+   "unit": "percent of capital expenditure",
+   "currency": null,
+   "indexed": false,
+   "measurement": "As for revenue (§ 850.209(b))",
+   "level": "entity",
+   "trigger": "scope_definition",
+   "consequence": "Holder is a covered foreign person",
+   "evidence": {
+    "provision": "§ 850.209(a)(2)(iii)",
+    "quote": "Incurs more than 50 percent of its capital expenditure individually"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "percent of its operating expenses",
+   "operator": ">",
+   "value": 50,
+   "value_text": "more than 50 percent of its operating expenses",
+   "unit": "percent of operating expenses",
+   "currency": null,
+   "indexed": false,
+   "measurement": "As for revenue (§ 850.209(b))",
+   "level": "entity",
+   "trigger": "scope_definition",
+   "consequence": "Holder is a covered foreign person",
+   "evidence": {
+    "provision": "§ 850.209(a)(2)(iv)",
+    "quote": "Incurs more than 50 percent of its operating expenses individually"
+   }
+  },
+  {
+   "variable": "revenue_annual",
+   "variable_text": "at least $50,000 (or equivalent) of its revenue",
+   "operator": ">=",
+   "value": 50000,
+   "value_text": "at least $50,000 (or equivalent)",
+   "unit": "USD per year from each counted person",
+   "currency": "USD",
+   "indexed": false,
+   "measurement": "Annual amount derived from (or incurred with) each person of a country of concern engaged in a covered activity; non-USD amounts converted at Treasury's latest published rate (§ 850.209(b)(2)); applies equally to net income, capex and opex",
+   "level": "entity",
+   "trigger": "scope_definition",
+   "consequence": "Only persons contributing at least this amount are aggregated toward the 50% tests",
+   "evidence": {
+    "provision": "§ 850.209(a)(2)(i); Note 1 to § 850.209",
+    "quote": "as aggregated across such persons from each of which it derives at least $50,000 (or equivalent) of its revenue"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "voting interest, voting power of the board, or equity interest held by the government of a country of concern",
+   "operator": ">=",
+   "value": 50,
+   "value_text": "50 percent or more",
+   "unit": "percent",
+   "currency": null,
+   "indexed": false,
+   "measurement": "Held individually or in the aggregate, directly or indirectly, by the government of a country of concern",
+   "level": "entity",
+   "trigger": "scope_definition",
+   "consequence": "The entity is a person of a country of concern",
+   "evidence": {
+    "provision": "§ 850.221(c)",
+    "quote": "any entity with respect to which the government of a country of concern holds individually or in the aggregate, directly or indirectly, 50 percent or more of the entity's outstanding voting interest, voting power of the board, or equity interest"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "outstanding voting interest, voting power of the board, or equity interest held by persons of a country of concern",
+   "operator": ">=",
+   "value": 50,
+   "value_text": "at least 50 percent",
+   "unit": "percent",
+   "currency": null,
+   "indexed": false,
+   "measurement": "Held individually or in the aggregate, directly or indirectly; applied at two tiers ((d) by persons in (a)-(c); (e) by entities in (d))",
+   "level": "group",
+   "trigger": "scope_definition",
+   "consequence": "The entity is a person of a country of concern",
+   "evidence": {
+    "provision": "§ 850.221(d)-(e)",
+    "quote": "Any entity in which one or more persons identified in paragraph (a), (b), or (c) of this section, individually or in the aggregate, directly or indirectly, holds at least 50 percent of any of the following interests of such entity"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "outstanding voting interest / voting power of the board",
+   "operator": ">",
+   "value": 50,
+   "value_text": "more than 50 percent",
+   "unit": "percent",
+   "currency": null,
+   "indexed": false,
+   "measurement": "Direct or indirect holdings; in tiered structures subsidiary holdings are fully attributed and holdings of 50% or less are attributed proportionately (§ 850.206(b))",
+   "level": "group",
+   "trigger": "scope_definition",
+   "consequence": "The holder is a parent; a foreign entity of which a U.S. person is parent is a controlled foreign entity subject to §§ 850.302 and 850.402",
+   "evidence": {
+    "provision": "§ 850.219(a)",
+    "quote": "A person who or which directly or indirectly holds more than 50 percent of: (1) The outstanding voting interest in the entity; or (2) The voting power of the board of the entity"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "interest owned by persons on the SDN List",
+   "operator": ">=",
+   "value": 50,
+   "value_text": "a 50 percent or greater interest",
+   "unit": "percent ownership",
+   "currency": null,
+   "indexed": false,
+   "measurement": "Owned individually or in the aggregate, directly or indirectly, by persons on the SDN List",
+   "level": "entity",
+   "trigger": "designation_category",
+   "consequence": "A covered transaction with such an entity engaged in any covered activity (including notifiable ones) is a prohibited transaction",
+   "conditions": "Entity engages in a covered activity under § 850.217 or § 850.224",
+   "evidence": {
+    "provision": "§ 850.224(m)(4)",
+    "quote": "or is an entity in which one or more individuals or entities included on the SDN List, individually or in the aggregate, directly or indirectly, own a 50 percent or greater interest"
+   }
+  },
+  {
+   "variable": "capital_investment",
+   "variable_text": "limited partner or equivalent's committed capital",
+   "operator": "<=",
+   "value": 2000000,
+   "value_text": "not more than $2,000,000",
+   "unit": "USD committed capital",
+   "currency": "USD",
+   "indexed": false,
+   "measurement": "Aggregated across any investment and co-investment vehicles of the fund",
+   "level": "entity",
+   "trigger": "exemption",
+   "consequence": "LP investment in a pooled fund is an excepted transaction (neither notifiable nor prohibited)",
+   "conditions": "Investment as limited partner or equivalent; no rights beyond standard minority shareholder protections (§ 850.501(a)(2)); alternative is a binding contractual assurance ((a)(1)(iii)(B))",
+   "evidence": {
+    "provision": "§ 850.501(a)(1)(iii)(A)",
+    "quote": "The limited partner or equivalent's committed capital is not more than $2,000,000, aggregated across any investment and co-investment vehicles of the fund"
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "prohibition",
+   "addressee": "investor",
+   "summary": "U.S. persons may not engage in a prohibited transaction unless a national interest exemption has been granted.",
+   "applies_from": "2025-01-02",
+   "evidence": {
+    "provision": "§ 850.301",
+    "quote": "A U.S. person may not engage in a prohibited transaction unless an exemption for that transaction has been granted under § 850.502."
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "investor",
+   "summary": "U.S. persons may not knowingly direct a non-U.S. person's transaction that would be prohibited for a U.S. person; officers or directors who recuse themselves from approval, document review and negotiation are not treated as directing it.",
+   "applies_from": "2025-01-02",
+   "evidence": {
+    "provision": "§ 850.303(a)",
+    "quote": "A U.S. person is prohibited from knowingly directing a transaction by a non-U.S. person that the U.S. person knows at the time of the transaction would be a prohibited transaction if engaged in by a U.S. person."
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "investor",
+   "summary": "U.S. persons must take all reasonable steps to prohibit and prevent prohibited transactions by their controlled foreign entities; Treasury considers compliance agreements, governance rights, training, internal controls and testing or auditing.",
+   "applies_from": "2025-01-02",
+   "evidence": {
+    "provision": "§ 850.302(a)-(b)",
+    "quote": "A U.S. person shall take all reasonable steps to prohibit and prevent any transaction by its controlled foreign entity that would be a prohibited transaction if engaged in by a U.S. person."
+   }
+  },
+  {
+   "type": "registration_notification",
+   "addressee": "investor",
+   "summary": "U.S. persons must file an electronic notification of each notifiable transaction, with the information in § 850.405 and a certification, within 30 days of the completion date.",
+   "applies_from": "2025-01-02",
+   "evidence": {
+    "provision": "§ 850.401; § 850.404(a)",
+    "quote": "A U.S. person that undertakes a notifiable transaction shall file a notification of that transaction with the Department of the Treasury pursuant to § 850.404."
+   }
+  },
+  {
+   "type": "registration_notification",
+   "addressee": "investor",
+   "summary": "U.S. persons must notify Treasury of transactions by their controlled foreign entities that would be notifiable if engaged in by a U.S. person.",
+   "applies_from": "2025-01-02",
+   "evidence": {
+    "provision": "§ 850.402",
+    "quote": "A U.S. person shall file a notification with the Department of the Treasury pursuant to § 850.404 with respect to any transaction by a controlled foreign entity of that U.S. person that would be a notifiable transaction if engaged in by a U.S. person."
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "investor",
+   "summary": "A U.S. person that learns after completion that a transaction would have been covered (notifiable or prohibited) must notify Treasury within 30 days, explaining why it lacked the knowledge and what diligence it did.",
+   "applies_from": "2025-01-02",
+   "conditional_on": "Actual knowledge acquired after the completion date",
+   "evidence": {
+    "provision": "§ 850.403; § 850.405(b)(13)",
+    "quote": "This requirement applies regardless of whether the transaction would have been a notifiable transaction or a prohibited transaction."
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "investor",
+   "summary": "Notifications must contain the listed information (parties, ownership charts, rationale, transaction value, covered activities, end uses, technology nodes), accurate and complete in all material respects, or explain why information is unavailable and supply it within 30 days once available; pre-completion filings must be updated if materially changed.",
+   "applies_from": "2025-01-02",
+   "evidence": {
+    "provision": "§ 850.405(a), (d); § 850.404(d)",
+    "quote": "A U.S. person that has an obligation under this part to file a notification shall provide the information set forth in this section, which must be accurate and complete in all material respects"
+   }
+  },
+  {
+   "type": "cooperation_with_authority",
+   "addressee": "investor",
+   "summary": "Notifying U.S. persons must answer Treasury questions and document requests within the time and manner Treasury specifies; responses are part of the certified notification.",
+   "applies_from": "2025-01-02",
+   "evidence": {
+    "provision": "§ 850.404(b)",
+    "quote": "The U.S. person shall respond to any such questions or requests within the time frame and in the manner specified by the Department of the Treasury."
+   }
+  },
+  {
+   "type": "record_keeping",
+   "addressee": "investor",
+   "summary": "Notifying U.S. persons must keep the notification and supporting documentation (pitch decks, transaction documents, side letters, diligence materials) for ten years and provide them on request.",
+   "applies_from": "2025-01-02",
+   "evidence": {
+    "provision": "§ 850.405(c)",
+    "quote": "Such supporting documentation shall include, as applicable, any pitch decks, marketing letters, and offering memorandums; transaction documents including side letters and investment agreements; and due diligence materials related to the transaction."
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "investor",
+   "summary": "Any person who made a representation, statement or certification under the part must tell Treasury in writing within 30 days of learning of a material omission or inaccuracy.",
+   "applies_from": "2025-01-02",
+   "evidence": {
+    "provision": "§ 850.406",
+    "quote": "A person who has made any representation, statement, or certification subject to this part shall inform the Department of the Treasury in writing promptly"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "investor",
+   "summary": "All filings must be in English; foreign-language supplementary materials are submitted in the original plus any existing English versions.",
+   "applies_from": "2025-01-02",
+   "evidence": {
+    "provision": "§ 850.802",
+    "quote": "All materials or information filed with the Department of the Treasury under this part shall be submitted in English."
+   }
+  },
+  {
+   "type": "cooperation_with_authority",
+   "addressee": "investor",
+   "summary": "Any person must furnish under oath complete information on any act or transaction subject to the part when Treasury requires it, including exempted transactions; Treasury may investigate, hold hearings and subpoena witnesses and documents.",
+   "applies_from": "2025-01-02",
+   "evidence": {
+    "provision": "§ 850.904(a)",
+    "quote": "Any person is required to furnish under oath, in the form of reports or otherwise, at any time as may be required by the Department of the Treasury, complete information regarding any act or transaction subject to the provisions of this part"
+   }
+  },
+  {
+   "type": "eligibility_condition",
+   "addressee": "investor",
+   "summary": "A U.S. person seeking a national interest exemption must submit information on the transaction, its analysis of the national-interest impact and a certification; exemptions are valid only in writing signed by the (Deputy) Assistant Secretary for Investment Security and may carry binding conditions.",
+   "applies_from": "2025-01-02",
+   "evidence": {
+    "provision": "§ 850.502(c)-(e)",
+    "quote": "A U.S. person seeking a national interest exemption shall submit relevant information to the Department of the Treasury regarding the transaction and shall articulate the basis for the request"
+   }
+  },
+  {
+   "type": "eligibility_condition",
+   "addressee": "investor",
+   "summary": "A voluntary self-disclosure, considered in Treasury's response to a violation, must be a written notice describing the conduct and persons, followed by a sufficiently detailed report; disclosures prompted by agencies, subpoenas, third parties or required notifications do not qualify.",
+   "applies_from": "2025-01-02",
+   "conditional_on": "Person chooses to self-disclose possible violations",
+   "evidence": {
+    "provision": "§ 850.704(e)",
+    "quote": "A voluntary self-disclosure to the Department of the Treasury must take the form of a written notice describing the conduct that may constitute a violation and each of the persons involved."
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "summary": "The Secretary of the Treasury shall, as appropriate, communicate with Congress and the public, consult Commerce, State, Defense, Energy and the DNI, engage allies, and investigate violations and pursue civil penalties.",
+   "applies_from": "2025-01-02",
+   "evidence": {
+    "provision": "§ 850.101(e)",
+    "quote": "Investigate, in consultation with the heads of relevant agencies, as appropriate, violations of the Order or the regulations in this part and pursue available civil penalties for such violations."
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "summary": "The Secretary shall periodically assess whether the AI training-compute criteria (10^23 notifiable; 10^25 and 10^24 prohibited) effectively address the threats and update them through public notice.",
+   "applies_from": null,
+   "evidence": {
+    "provision": "Note 1 to § 850.217; Note 1 to § 850.224",
+    "quote": "shall periodically assess whether the criterion described in paragraph (k) of this section is serving to effectively address threats to the national security of the United States described in the Order and make updates, as appropriate, through public notice."
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "summary": "Before designating third countries or transaction types for the § 850.501(g) exception the Secretary must consult State and Commerce, and designations, determinations and rescissions must be made public.",
+   "applies_from": null,
+   "evidence": {
+    "provision": "§ 850.501(g)(2)",
+    "quote": "Prior to making a designation or determination under this paragraph (g), the Secretary shall consult with the Secretary of State, the Secretary of Commerce, and, as appropriate, the heads of other relevant agencies."
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "summary": "Treasury must not publicly disclose non-public information submitted under the part, except in proceedings, to Congress, to domestic or allied governments, with consent, or when the Secretary (not below Assistant Secretary) finds disclosure in the national interest; anonymized data may be published.",
+   "applies_from": "2025-01-02",
+   "evidence": {
+    "provision": "§ 850.801(a)",
+    "quote": "information or documentary materials not otherwise publicly available that are submitted to the Department of the Treasury under this part shall not be disclosed to the public"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "summary": "Treasury publishes the inflation-adjusted maximum civil penalty annually, by 15 January, in the Federal Register and on the program website.",
+   "applies_from": null,
+   "evidence": {
+    "provision": "§ 850.701(c)",
+    "quote": "Notice of the maximum penalty which may be assessed under this section will be published in the Federal Register"
+   }
+  }
+ ],
+ "enforcement": [
+  {
+   "sanction_type": "administrative_fine",
+   "authority": "Department of the Treasury (Secretary; delegable to the Assistant Secretary for Investment Security, § 850.901)",
+   "triggered_by": "Any violation, attempt, conspiracy or causing of a violation of the part: prohibited actions, failure to act within the required time and manner, material misrepresentation or omission, evasion (§§ 850.601-850.604)",
+   "max_penalty_text": "an amount not to exceed the greater of: (i) $250,000, as such amount is adjusted pursuant to the Federal Civil Penalties Inflation Adjustment Act of 1990 ... or (ii) An amount that is twice the amount of the transaction that is the basis of the violation",
+   "max_penalty_amount": 250000,
+   "currency": "USD",
+   "penalty_formula": "Greater of $250,000 (inflation-adjusted annually; current figure published each January) or twice the transaction amount; unpaid penalties are a debt to the U.S. Government, collected by Treasury or referred to DOJ (§ 850.702)",
+   "penalty_reference": "IEEPA section 206 (50 U.S.C. 1705); Federal Civil Penalties Inflation Adjustment Act of 1990 (28 U.S.C. 2461 note)",
+   "private_right_of_action": false,
+   "cure_period": null,
+   "evidence": {
+    "provision": "§ 850.701(a)(1)",
+    "quote": "A civil penalty may be imposed on any person who violates, attempts to violate, conspires to violate, or causes a violation of any order, regulation, or prohibition issued under IEEPA, including any provision of this part in an amount not to exceed the greater of: (i) $250,000"
+   }
+  },
+  {
+   "sanction_type": "criminal_penalty",
+   "authority": "Attorney General / Department of Justice, on referral by the Secretary (§ 850.701(b))",
+   "triggered_by": "Willful violation, attempt, conspiracy, or aiding and abetting a violation of the part",
+   "max_penalty_text": "fined not more than $1,000,000, or if a natural person, be imprisoned for not more than 20 years, or both",
+   "max_penalty_amount": 1000000,
+   "currency": "USD",
+   "penalty_formula": "Fine up to $1,000,000 and/or up to 20 years' imprisonment for natural persons; subject to adjustment under 18 U.S.C. 3571 (§ 850.701(d))",
+   "penalty_reference": "IEEPA section 206 (50 U.S.C. 1705); 18 U.S.C. 3571",
+   "private_right_of_action": false,
+   "cure_period": null,
+   "evidence": {
+    "provision": "§ 850.701(a)(2)",
+    "quote": "shall, upon conviction, be fined not more than $1,000,000, or if a natural person, be imprisoned for not more than 20 years, or both"
+   }
+  },
+  {
+   "sanction_type": "criminal_penalty",
+   "authority": "Department of Justice (federal prosecution)",
+   "triggered_by": "Knowing and willful falsification, concealment or false statements in matters within federal jurisdiction, including notifications and certifications under the part",
+   "max_penalty_text": "shall be fined under title 18, United States Code, or imprisoned not more than 5 years, or both",
+   "max_penalty_amount": null,
+   "currency": null,
+   "penalty_formula": "Fine under title 18 and/or up to 5 years' imprisonment",
+   "penalty_reference": "18 U.S.C. 1001",
+   "private_right_of_action": false,
+   "cure_period": null,
+   "evidence": {
+    "provision": "§ 850.701(f)",
+    "quote": "shall be fined under title 18, United States Code, or imprisoned not more than 5 years, or both"
+   }
+  },
+  {
+   "sanction_type": "other",
+   "authority": "Secretary of the Treasury, in consultation with relevant agencies; may refer to the Attorney General for enforcement",
+   "triggered_by": "Prohibited transaction entered into after the effective date of the part",
+   "max_penalty_text": null,
+   "max_penalty_amount": null,
+   "currency": null,
+   "penalty_formula": "Nullification, voiding or compelled divestment of the transaction (any action authorized under IEEPA)",
+   "penalty_reference": "IEEPA (50 U.S.C. 1701 et seq.)",
+   "private_right_of_action": false,
+   "cure_period": null,
+   "evidence": {
+    "provision": "§ 850.703(a)",
+    "quote": "may take any action authorized under IEEPA to nullify, void, or otherwise compel the divestment of any prohibited transaction entered into after the effective date of this part"
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "AI system",
+   "evidence": {
+    "provision": "§ 850.202",
+    "quote": "A machine-based system that can, for a given set of human-defined objectives, make predictions, recommendations, or decisions influencing real or virtual environments"
+   }
+  },
+  {
+   "term": "Covered transaction",
+   "evidence": {
+    "provision": "§ 850.210(a)",
+    "quote": "The term covered transaction means a U.S. person's direct or indirect: (1) Acquisition of an equity interest or contingent equity interest in a person that the U.S. person knows at the time of the acquisition is a covered foreign person"
+   }
+  },
+  {
+   "term": "Covered foreign person",
+   "evidence": {
+    "provision": "§ 850.209(a)(1)",
+    "quote": "A person of a country of concern that engages in a covered activity"
+   }
+  },
+  {
+   "term": "Covered activity",
+   "evidence": {
+    "provision": "§ 850.208",
+    "quote": "any of the activities referred to in the definition of notifiable transaction in § 850.217 or prohibited transaction in § 850.224"
+   }
+  },
+  {
+   "term": "Notifiable transaction",
+   "evidence": {
+    "provision": "§ 850.217",
+    "quote": "The term notifiable transaction means a covered transaction (that is not a prohibited transaction) in which the relevant covered foreign person"
+   }
+  },
+  {
+   "term": "Prohibited transaction",
+   "evidence": {
+    "provision": "§ 850.224",
+    "quote": "The term prohibited transaction means a covered transaction in which the relevant covered foreign person or, with respect to a covered transaction described in § 850.210(a)(5), the relevant joint venture"
+   }
+  },
+  {
+   "term": "Excepted transaction",
+   "evidence": {
+    "provision": "§ 850.213",
+    "quote": "The term excepted transaction means a transaction that meets the criteria in § 850.501."
+   }
+  },
+  {
+   "term": "Country of concern",
+   "evidence": {
+    "provision": "§ 850.207",
+    "quote": "The term country of concern has the meaning given to it in the Annex to the Order."
+   }
+  },
+  {
+   "term": "Person of a country of concern",
+   "evidence": {
+    "provision": "§ 850.221(b)",
+    "quote": "An entity with a principal place of business in, headquartered in, or incorporated in or otherwise organized under the laws of, a country of concern"
+   }
+  },
+  {
+   "term": "U.S. person",
+   "evidence": {
+    "provision": "§ 850.229",
+    "quote": "The term U.S. person means any United States citizen, lawful permanent resident, entity organized under the laws of the United States"
+   }
+  },
+  {
+   "term": "Controlled foreign entity",
+   "evidence": {
+    "provision": "§ 850.206(a)",
+    "quote": "The term controlled foreign entity means any entity incorporated in, or otherwise organized under the laws of, a country other than the United States of which a U.S. person is a parent."
+   }
+  },
+  {
+   "term": "Parent",
+   "evidence": {
+    "provision": "§ 850.219",
+    "quote": "The general partner, managing member, or equivalent of the entity; or (c) The investment adviser to any entity that is a pooled investment fund"
+   }
+  },
+  {
+   "term": "Contingent equity interest",
+   "evidence": {
+    "provision": "§ 850.205",
+    "quote": "a financial interest (including debt) that currently does not constitute an equity interest but is convertible into, or provides the right to acquire, an equity interest"
+   }
+  },
+  {
+   "term": "Completion date",
+   "evidence": {
+    "provision": "§ 850.204(a)",
+    "quote": "the earliest date upon which any interest, asset, property, or right is conveyed, assigned, delivered, or otherwise transferred to a U.S. person"
+   }
+  },
+  {
+   "term": "Knowledge",
+   "evidence": {
+    "provision": "§ 850.216",
+    "quote": "Actual knowledge that a fact or circumstance exists or is substantially certain to occur; (b) An awareness of a high probability of a fact or circumstance's existence or future occurrence; or (c) Reason to know"
+   }
+  },
+  {
+   "term": "Knowingly directs",
+   "evidence": {
+    "provision": "§ 850.303(a)",
+    "quote": "a U.S. person “knowingly directs” a transaction when the U.S. person has authority, individually or as part of a group, to make or substantially participate in decisions on behalf of a non-U.S. person"
+   }
+  },
+  {
+   "term": "Develop",
+   "evidence": {
+    "provision": "§ 850.211",
+    "quote": "the term develop means to engage in any stages prior to serial production, such as design or substantive modification"
+   }
+  },
+  {
+   "term": "Produce",
+   "evidence": {
+    "provision": "§ 850.223",
+    "quote": "The term produce means to engage in any of the post-development stages of realizing the relevant technology or product"
+   }
+  },
+  {
+   "term": "Advanced packaging",
+   "evidence": {
+    "provision": "§ 850.201",
+    "quote": "The term advanced packaging means to package integrated circuits in a manner that supports the two-and-one-half-dimensional (2.5D) or three-dimensional (3D) assembly of integrated circuits"
+   }
+  },
+  {
+   "term": "Fabricate",
+   "evidence": {
+    "provision": "§ 850.214",
+    "quote": "The term fabricate means to form devices such as transistors, poly capacitors, non-metal resistors, and diodes on a wafer of semiconductor material."
+   }
+  },
+  {
+   "term": "Package",
+   "evidence": {
+    "provision": "§ 850.218",
+    "quote": "The term package means to assemble various components, such as the integrated circuit die, lead frames, interconnects, and substrate materials"
+   }
+  },
+  {
+   "term": "Quantum computer",
+   "evidence": {
+    "provision": "§ 850.225",
+    "quote": "The term quantum computer means a computer that performs computations that harness the collective properties of quantum states, such as superposition, interference, or entanglement."
+   }
+  },
+  {
+   "term": "Principal place of business",
+   "evidence": {
+    "provision": "§ 850.222",
+    "quote": "the primary location where an entity's management directs, controls, or coordinates the entity's activities"
+   }
+  }
+ ],
+ "relations": [
+  {
+   "relation": "implements",
+   "target_instrument_id": null,
+   "target_text": "Executive Order 14105 of August 9, 2023, 'Addressing United States Investments in Certain National Security Technologies and Products in Countries of Concern' (88 FR 54867)",
+   "note": "Part 850 implements the Order; the Order's Annex defines the countries of concern (§ 850.207)",
+   "evidence": {
+    "provision": "§ 850.101(a)",
+    "quote": "This part implements Executive Order 14105 of August 9, 2023, “Addressing United States Investments in Certain National Security Technologies and Products in Countries of Concern” (the Order)"
+   }
+  },
+  {
+   "relation": "legal_basis",
+   "target_instrument_id": null,
+   "target_text": "International Emergency Economic Powers Act (50 U.S.C. 1701 et seq.); E.O. 14105; 31 U.S.C. 321",
+   "note": "Authority citation for part 850",
+   "evidence": {
+    "provision": "Authority",
+    "quote": "Authority: 50 U.S.C. 1701 et seq.; E.O. 14105, 88 FR 54867, 31 U.S.C. 321."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": null,
+   "target_text": "International Emergency Economic Powers Act, section 206 (50 U.S.C. 1705) and 50 U.S.C. 1702(b)",
+   "note": "Civil and criminal penalties come from IEEPA section 206; conduct excluded by 50 U.S.C. 1702(b) is not regulated (§ 850.503)",
+   "evidence": {
+    "provision": "§ 850.701(a); § 850.503",
+    "quote": "Conduct referred to in 50 U.S.C. 1702(b) shall not be regulated or prohibited, directly or indirectly, by this part."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": null,
+   "target_text": "Export Administration Regulations, ECCN 3A090.a (supplement No. 1 to 15 CFR part 774)",
+   "note": "Defines the chip-design prohibition threshold by reference to export-control performance parameters",
+   "evidence": {
+    "provision": "§ 850.224(c)",
+    "quote": "meets or exceeds the performance parameters in Export Control Classification Number 3A090.a in supplement No. 1 to 15 CFR part 774"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": null,
+   "target_text": "BIS Entity List (15 CFR part 744, supp. 4), Military End User List (supp. 7), Military Intelligence End-User (15 CFR 744.22(f)(2)); Treasury SDN List and NS-CMIC List; State Department FTO designations (8 U.S.C. 1189)",
+   "note": "Listed persons engaged in any covered activity, including otherwise notifiable ones, make the transaction prohibited",
+   "evidence": {
+    "provision": "§ 850.224(m)",
+    "quote": "Included on the Bureau of Industry and Security's Entity List (15 CFR part 744, supplement no. 4)"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": null,
+   "target_text": "Securities Exchange Act of 1934 s. 3(a)(10); Investment Company Act of 1940 ss. 3(a)(1), 54",
+   "note": "Defines the publicly traded securities, registered investment company and BDC exceptions",
+   "evidence": {
+    "provision": "§ 850.501(a)(1)(i)-(ii)",
+    "quote": "with “security” as defined in section 3(a)(10) of the Securities Exchange Act of 1934, as amended, at 15 U.S.C. 78c(a)(10)"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": null,
+   "target_text": "Investment Advisers Act of 1940 (15 U.S.C. 80b-2(a)(11))",
+   "note": "A fund's investment adviser is its parent, which brings non-U.S. funds advised by U.S. advisers into the controlled-foreign-entity rules",
+   "evidence": {
+    "provision": "§ 850.219(c)",
+    "quote": "with “investment adviser” as defined in the Investment Advisers Act of 1940 (15 U.S.C. 80b-2(a)(11))"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": null,
+   "target_text": "False Statements Accountability Act of 1996 (18 U.S.C. 1001)",
+   "note": "Certifications of notifications are made under its penalties; restated in § 850.701(f)",
+   "evidence": {
+    "provision": "§ 850.203(a)",
+    "quote": "certifies under the penalties provided in the False Statements Accountability Act of 1996, as amended (18 U.S.C. 1001)"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": null,
+   "target_text": "Federal Civil Penalties Inflation Adjustment Act of 1990 (Pub. L. 101-410, 28 U.S.C. 2461 note); 18 U.S.C. 3571",
+   "note": "Civil penalty maximum indexed for inflation; criminal fines adjustable under 18 U.S.C. 3571",
+   "evidence": {
+    "provision": "§ 850.701(c)-(d)",
+    "quote": "The criminal penalties provided for in IEEPA are subject to adjustment pursuant to 18 U.S.C. 3571."
+   }
+  }
+ ],
+ "entities": [],
+ "section_status": {
+  "entities": {
+   "status": "not_applicable",
+   "note": "General rule; no firms are named. Covered persons are identified by reference to the Annex to E.O. 14105 (countries of concern) and to lists kept elsewhere (BIS Entity List and MEU List, SDN and NS-CMIC Lists, FTO designations)."
+  }
+ },
+ "notes": "Thresholds on prohibited vs notifiable activity are coded with trigger 'designation_category' (the rule sorts covered transactions into notifiable and prohibited tiers); the vocabulary has no 'prohibition' trigger. The 41,600 cubic-foot supercomputer envelope is a volume coded under floor_area for lack of a volume variable. The logic-node cutoff is written '16/14 nanometers or less' and coded as <= 16. The covered-foreign-person 50% tests (revenue, net income, capex, opex) are coded as four rows. Several criteria move with other instruments: ECCN 3A090.a, the BIS and Treasury lists, the countries of concern in the E.O. 14105 Annex, and the compute thresholds, which Treasury reassesses and updates by public notice. Countries of concern are named only in the preamble (PRC, Hong Kong, Macau, citing the Annex). Civil penalties: the current inflation-adjusted figure is published annually. The text shows 'Filed 11-7-24'; the signing date is not in the text."
+}

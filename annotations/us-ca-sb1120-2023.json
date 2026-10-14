@@ -1,0 +1,635 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "us-ca-sb1120-2023",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "AGORA plaintext (ETO, CC BY-NC 4.0), local cache",
+  "url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202320240SB1120",
+  "retrieved": "2024-11-17",
+  "version": "1.33.0 (2026-09-16)",
+  "language": "en",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "ai_sectoral",
+   "algorithmic_decision_systems"
+  ],
+  "primary_domain": "ai_sectoral",
+  "mechanisms": [
+   "mandate_obligation",
+   "prohibition_ban",
+   "disclosure_transparency"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "insurer",
+   "ai_deployer"
+  ],
+  "affected_roles": [
+   "consumers_users",
+   "healthcare_provider"
+  ],
+  "decision_margins": [
+   "household:access",
+   "firm:compliance_process"
+  ],
+  "territorial_scope": {
+   "types": [
+    "subnational"
+   ],
+   "description": "Applies to health care service plans and disability insurers subject to California's Health and Safety Code and Insurance Code.",
+   "evidence": {
+    "provision": "Sec. 1 (amending Health and Safety Code § 1367.01(k)(1))",
+    "quote": "A health care service plan, including a specialized health care service plan that uses an artificial intelligence, algorithm, or other software tool"
+   }
+  },
+  "agora_applications": [
+   "Medicine, life sciences and public health"
+  ],
+  "agora_harms": [
+   "Discrimination",
+   "Harm to health/safety"
+  ],
+  "agora_incentives": [
+   "Fines"
+  ],
+  "agora_risk_factors": [
+   "Bias",
+   "Privacy",
+   "Reliability",
+   "Transparency"
+  ],
+  "agora_strategies": [
+   "Disclosure",
+   "Evaluation",
+   "Input controls: Data use"
+  ]
+ },
+ "summary": {
+  "short": "Amends California Health and Safety Code §1367.01 and Insurance Code §10123.135 to regulate health plans and disability insurers using AI or algorithms in utilization review. Such tools may not deny, delay or modify care based on medical necessity; a licensed physician or health care professional must decide.",
+  "long": "Section 1 amends Health and Safety Code §1367.01 for health care service plans, including specialized plans, and entities that use AI, algorithm or software tools for utilization review based on medical necessity. The plan must ensure the tool bases determinations on the enrollee's clinical history and individual circumstances, does not rely solely on a group dataset, does not supplant provider decisionmaking, does not discriminate, is fairly applied, is open to department inspection, and does not directly or indirectly harm enrollees. The tool may not deny, delay or modify services; only a licensed physician or qualified health professional may make that determination. Plans must document AI use in written policies, periodically review performance, and limit patient data use. The department may issue guidance within one year of federal rules. Section 2 adds parallel requirements for disability insurers in Insurance Code §10123.135, including annual review of criteria. The director or commissioner may assess administrative penalties by order for each failure to meet timeframes or other requirements; amounts are not stated. Section 3 states that no state reimbursement is required for local agencies. No effective date is stated in the text.},"
+ },
+ "relations": [
+  {
+   "relation": "amends",
+   "target_text": "California Health and Safety Code § 1367.01",
+   "note": "Sec. 1 amends § 1367.01 (utilization review of provider requests; AI, algorithm or software tool use in utilization review). The restated section is shown in full without marking of changed text.",
+   "evidence": {
+    "provision": "SECTION 1",
+    "quote": "Section 1367.01 of the Health and Safety Code is amended to read:"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "California Insurance Code § 10123.135",
+   "note": "Sec. 2 amends § 10123.135 for disability insurers (utilization review; AI, algorithm or software tool use). The restated section is shown in full without marking of changed text.",
+   "evidence": {
+    "provision": "SECTION 2",
+    "quote": "Section 10123.135 of the Insurance Code is amended to read:"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Confidentiality of Medical Information Act (Civil Code Part 2.6, commencing with Section 56)",
+   "note": "Requires patient data use to be consistent with this Act, as applicable, in the AI/software tool duties of § 1367.01(k)(1)(J). Parallel reference in § 10123.135(j)(1)(J).",
+   "evidence": {
+    "provision": "Sec. 1367.01(k)(1)(J)",
+    "quote": "Patient data is not used beyond its intended and stated purpose, consistent with the Confidentiality of Medical Information Act"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Health Insurance Portability and Accountability Act of 1996 (Public Law 104-191)",
+   "note": "Referenced, as applicable, in the patient data duty of § 1367.01(k)(1)(J). Parallel reference in § 10123.135(j)(1)(J).",
+   "evidence": {
+    "provision": "Sec. 1367.01(k)(1)(J)",
+    "quote": "the federal Health Insurance Portability and Accountability Act of 1996 (Public Law 104-191), as applicable."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Federal Public Health Service Act § 2719 (42 U.S.C. Sec. 300gg-19)",
+   "note": "Sets the maximum decision period for urgent requests where it is shorter than 72 hours, in § 1367.01(h)(2). Parallel reference in § 10123.135(h)(2).",
+   "evidence": {
+    "provision": "Sec. 1367.01(h)(2)",
+    "quote": "the period of time required under Section 2719 of the federal Public Health Service Act (42 U.S.C. Sec. 300gg-19)"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "California Administrative Procedure Act (Gov. Code, Chapter 3.5, commencing with Section 11340)",
+   "note": "Guidance issued under § 1367.01(k)(5) is exempted from the Act. Parallel exemption in § 10123.135(j)(5).",
+   "evidence": {
+    "provision": "Sec. 1367.01(k)(5)",
+    "quote": "Such guidance shall not be subject to the Administrative Procedure Act"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Health and Safety Code § 1363.5",
+   "note": "Criteria and guidelines used in utilization review must be developed under § 1363.5, per § 1367.01(b) and (f). The AI tool criteria must comply with § 1363.5 under § 1367.01(k)(1)(C).",
+   "evidence": {
+    "provision": "Sec. 1367.01(b)",
+    "quote": "These criteria and guidelines shall be developed pursuant to Section 1363.5."
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "Director (health care service plans)",
+   "role": "designated",
+   "function": "Reviews health care service plan compliance with the section during periodic onsite medical surveys; may assess administrative penalties by order for failures to meet timeframes or other requirements. The text refers to 'the director' and 'the department' without naming the agency.",
+   "evidence": {
+    "provision": "Sec. 1367.01(l)",
+    "quote": "The director shall review a health care service plan’s compliance with this section as part of its periodic onsite medical survey"
+   }
+  },
+  {
+   "name": "State Department of Health Care Services",
+   "role": "designated",
+   "function": "May inspect AI, algorithm or software tools used in utilization review for audit or compliance reviews; may enter contracts to implement the subdivision for Medi-Cal managed care plans.",
+   "evidence": {
+    "provision": "Sec. 1367.01(k)(1)(G)",
+    "quote": "is open to inspection for audit or compliance reviews by the department pursuant to Section 1381 and by the State Department of Health Care Services"
+   }
+  },
+  {
+   "name": "Commissioner (insurance)",
+   "role": "designated",
+   "function": "Receives filings of disability insurer utilization review policies and procedures; may assess administrative penalties by order for failures to meet timeframes or other requirements. The text refers to 'the commissioner' without naming the office.",
+   "evidence": {
+    "provision": "Sec. 2 (10123.135(b))",
+    "quote": "shall be filed with the commissioner"
+   }
+  }
+ ],
+ "notes": "The document is the bill text (SECs 1-3) without underline or strikeout marking, so unchanged restated text cannot be separated from new text; both amended sections are shown in full. No effective date appears in the text. The 'department' in both amended sections is not named in this excerpt. Internal differences between parallel provisions: § 1367.01(k)(1)(G) refers to inspection 'pursuant to Section 1381', but § 10123.135(j)(1)(G) does not; § 1367.01(k)(5) lets 'the department and the State Department of Health Care Services' issue guidance, while § 10123.135(j)(5) names only 'the department'. § 10123.135(h)(5) refers to 'enrollee' although that section concerns insureds. SEC. 3 is a state-mandate statement with no operative obligation.",
+ "events": [
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "not to exceed five business days from the plan’s receipt of the information reasonably necessary and requested by the plan to make the determination",
+   "depends_on": "plan's receipt of the information reasonably necessary and requested by the plan",
+   "applies_to": "Non-urgent decisions on provider requests (medical necessity) by health care service plans, SEC. 1 (Health and Safety Code § 1367.01(h)(1))",
+   "offset_value": 5,
+   "offset_unit": "business_days",
+   "evidence": {
+    "provision": "SEC. 1 (amending Health and Safety Code § 1367.01(h)(1))",
+    "quote": "not to exceed five business days from the plan’s receipt of the information reasonably necessary and requested by the plan to make the determination"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "within 30 days of the receipt of information that is reasonably necessary to make this determination",
+   "depends_on": "receipt of the information reasonably necessary to make the determination (retrospective review)",
+   "applies_to": "Retrospective reviews of provider requests by health care service plans, SEC. 1 (Health and Safety Code § 1367.01(h)(1))",
+   "offset_value": 30,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "SEC. 1 (amending Health and Safety Code § 1367.01(h)(1))",
+    "quote": "within 30 days of the receipt of information that is reasonably necessary to make this determination"
+   }
+  },
+  {
+   "event": "application",
+   "date": "2000-01-01",
+   "date_type": "absolute",
+   "date_text": "For purposes of this section, retrospective reviews shall be for care rendered on or after January 1, 2000.",
+   "applies_to": "Retrospective reviews of care rendered, health care service plans, SEC. 1 (Health and Safety Code § 1367.01(h)(1))",
+   "evidence": {
+    "provision": "SEC. 1 (amending Health and Safety Code § 1367.01(h)(1))",
+    "quote": "For purposes of this section, retrospective reviews shall be for care rendered on or after January 1, 2000."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "not to exceed 72 hours or, if shorter, the period of time required under Section 2719 of the federal Public Health Service Act (42 U.S.C. Sec. 300gg-19) and any subsequent rules or regulations issued thereunder, after the plan’s receipt of the information reasonably necessary and requested by the plan to make the determination",
+   "depends_on": "plan's receipt of the information reasonably necessary and requested by the plan (urgent cases)",
+   "applies_to": "Decisions on urgent provider requests where the enrollee faces an imminent and serious threat, SEC. 1 (Health and Safety Code § 1367.01(h)(2))",
+   "evidence": {
+    "provision": "SEC. 1 (amending Health and Safety Code § 1367.01(h)(2))",
+    "quote": "not to exceed 72 hours or, if shorter, the period of time required under Section 2719"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "shall be communicated to the requesting provider within 24 hours of the decision",
+   "depends_on": "the plan's decision on a provider's authorization request",
+   "applies_to": "Communication of decisions on provider authorization requests to the requesting provider, SEC. 1 (Health and Safety Code § 1367.01(h)(3))",
+   "evidence": {
+    "provision": "SEC. 1 (amending Health and Safety Code § 1367.01(h)(3))",
+    "quote": "shall be communicated to the requesting provider within 24 hours of the decision."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "decisions resulting in denial, delay, or modification ... shall be communicated to the enrollee in writing within two business days of the decision",
+   "depends_on": "the plan's decision denying, delaying or modifying a requested service",
+   "applies_to": "Written communication of denial, delay or modification to the enrollee, SEC. 1 (Health and Safety Code § 1367.01(h)(3))",
+   "offset_value": 2,
+   "offset_unit": "business_days",
+   "evidence": {
+    "provision": "SEC. 1 (amending Health and Safety Code § 1367.01(h)(3))",
+    "quote": "shall be communicated to the enrollee in writing within two business days of the decision."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "not to exceed five business days from the insurer’s receipt of the information reasonably necessary and requested by the insurer to make the determination",
+   "depends_on": "insurer's receipt of the information reasonably necessary and requested by the insurer",
+   "applies_to": "Non-urgent decisions on provider requests (medical necessity) by disability insurers, SEC. 2 (Insurance Code § 10123.135(h)(1))",
+   "offset_value": 5,
+   "offset_unit": "business_days",
+   "evidence": {
+    "provision": "SEC. 2 (amending Insurance Code § 10123.135(h)(1))",
+    "quote": "not to exceed five business days from the insurer’s receipt of the information reasonably necessary"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "within 30 days of the receipt of information that is reasonably necessary to make this determination",
+   "depends_on": "receipt of the information reasonably necessary to make the determination (retrospective review)",
+   "applies_to": "Retrospective reviews of provider requests by disability insurers, SEC. 2 (Insurance Code § 10123.135(h)(1))",
+   "offset_value": 30,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "SEC. 2 (amending Insurance Code § 10123.135(h)(1))",
+    "quote": "within 30 days of the receipt of information that is reasonably necessary to make this determination"
+   }
+  },
+  {
+   "event": "application",
+   "date": "2000-01-01",
+   "date_type": "absolute",
+   "date_text": "For purposes of this section, retrospective reviews shall be for care rendered on or after January 1, 2000.",
+   "applies_to": "Retrospective reviews of care rendered, disability insurers, SEC. 2 (Insurance Code § 10123.135(h)(1))",
+   "evidence": {
+    "provision": "SEC. 2 (amending Insurance Code § 10123.135(h)(1))",
+    "quote": "For purposes of this section, retrospective reviews shall be for care rendered on or after January 1, 2000."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "but not to exceed 72 hours or, if shorter, the period of time required under Section 2719 of the federal Public Health Service Act (42 U.S.C. Sec. 300gg-19) and any subsequent rules or regulations issued thereunder, after the insurer’s receipt of the information reasonably necessary and requested by the insurer to make the determination",
+   "depends_on": "insurer's receipt of the information reasonably necessary and requested by the insurer (urgent cases)",
+   "applies_to": "Decisions on urgent provider requests where the insured faces an imminent and serious threat, SEC. 2 (Insurance Code § 10123.135(h)(2))",
+   "evidence": {
+    "provision": "SEC. 2 (amending Insurance Code § 10123.135(h)(2))",
+    "quote": "but not to exceed 72 hours or, if shorter, the period of time required under Section 2719"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "shall be communicated to the requesting provider within 24 hours of the decision",
+   "depends_on": "the insurer's decision on a provider's authorization request",
+   "applies_to": "Communication of decisions on provider authorization requests to the requesting provider, SEC. 2 (Insurance Code § 10123.135(h)(3))",
+   "evidence": {
+    "provision": "SEC. 2 (amending Insurance Code § 10123.135(h)(3))",
+    "quote": "shall be communicated to the requesting provider within 24 hours of the decision."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "decisions resulting in denial, delay, or modification of all or part of the requested health care service shall be communicated to the insured in writing within two business days of the decision",
+   "depends_on": "the insurer's decision denying, delaying or modifying a requested service",
+   "applies_to": "Written communication of denial, delay or modification to the insured, SEC. 2 (Insurance Code § 10123.135(h)(3))",
+   "offset_value": 2,
+   "offset_unit": "business_days",
+   "evidence": {
+    "provision": "SEC. 2 (amending Insurance Code § 10123.135(h)(3))",
+    "quote": "shall be communicated to the insured in writing within two business days of the decision."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "Be evaluated, and updated if necessary, at least annually.",
+   "applies_to": "Criteria and guidelines used by disability insurers and their utilization review entities, SEC. 2 (Insurance Code § 10123.135(f)(2)(C))",
+   "evidence": {
+    "provision": "SEC. 2 (amending Insurance Code § 10123.135(f)(2)(C))",
+    "quote": "Be evaluated, and updated if necessary, at least annually."
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "artificial intelligence",
+   "defined_in": "Health and Safety Code § 1367.01(k)(3) (SEC. 1)",
+   "evidence": {
+    "provision": "SEC. 1 (amending Health and Safety Code § 1367.01(k)(3))",
+    "quote": "“artificial intelligence” means an engineered or machine-based system that varies in its level of autonomy"
+   }
+  },
+  {
+   "term": "artificial intelligence",
+   "defined_in": "Insurance Code § 10123.135(j)(3) (SEC. 2)",
+   "evidence": {
+    "provision": "SEC. 2 (amending Insurance Code § 10123.135(j)(3))",
+    "quote": "“artificial intelligence” means an engineered or machine-based system that varies in its level of autonomy"
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "prohibition",
+   "addressee": "insurer",
+   "modality": "shall_not",
+   "summary": "A health care service plan using AI or software for utilization review shall not have the tool deny, delay, or modify health care services based on medical necessity.",
+   "applies_from": "not stated in text",
+   "conditional_on": "plan uses an artificial intelligence, algorithm, or other software tool for utilization review or utilization management functions based on medical necessity",
+   "evidence": {
+    "provision": "SEC. 1, Health and Safety Code § 1367.01(k)(2)",
+    "quote": "shall not deny, delay, or modify health care services based, in whole or in part, on medical necessity"
+   }
+  },
+  {
+   "type": "human_oversight",
+   "addressee": "insurer",
+   "modality": "shall",
+   "summary": "Medical necessity determinations must be made only by a licensed physician or licensed health care professional competent to evaluate the clinical issues, who reviews the provider's recommendation and the enrollee's history; the tool must not supplant provider decisionmaking under (k)(1)(D).",
+   "applies_from": "not stated in text",
+   "conditional_on": "plan uses an artificial intelligence, algorithm, or other software tool for utilization review or utilization management functions based on medical necessity",
+   "evidence": {
+    "provision": "SEC. 1, Health and Safety Code § 1367.01(k)(2)",
+    "quote": "A determination of medical necessity shall be made only by a licensed physician or a licensed health care professional competent to evaluate the specific clinical issues"
+   }
+  },
+  {
+   "type": "bias_mitigation",
+   "addressee": "insurer",
+   "modality": "shall",
+   "summary": "The tool must not base its determination solely on a group dataset, must not discriminate directly or indirectly against enrollees in violation of law, and must be fairly and equitably applied.",
+   "applies_from": "not stated in text",
+   "conditional_on": "plan uses an artificial intelligence, algorithm, or other software tool for utilization review or utilization management functions based on medical necessity",
+   "evidence": {
+    "provision": "SEC. 1, Health and Safety Code § 1367.01(k)(1)(E)",
+    "quote": "The use of the artificial intelligence, algorithm, or other software tool does not discriminate, directly or indirectly, against enrollees in violation of state or federal law."
+   }
+  },
+  {
+   "type": "audit",
+   "addressee": "insurer",
+   "modality": "shall",
+   "summary": "The tool must be open to inspection for audit or compliance reviews by the department under Section 1381 and by the State Department of Health Care Services.",
+   "applies_from": "not stated in text",
+   "conditional_on": "plan uses an artificial intelligence, algorithm, or other software tool for utilization review or utilization management functions based on medical necessity",
+   "evidence": {
+    "provision": "SEC. 1, Health and Safety Code § 1367.01(k)(1)(G)",
+    "quote": "is open to inspection for audit or compliance reviews by the department pursuant to Section 1381"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "insurer",
+   "modality": "shall",
+   "summary": "Disclosures on the use and oversight of the tool must be contained in the written policies and procedures required by subdivision (b), which are filed with the director and disclosed on request.",
+   "applies_from": "not stated in text",
+   "conditional_on": "plan uses an artificial intelligence, algorithm, or other software tool for utilization review or utilization management functions based on medical necessity",
+   "evidence": {
+    "provision": "SEC. 1, Health and Safety Code § 1367.01(k)(1)(H)",
+    "quote": "Disclosures pertaining to the use and oversight of the artificial intelligence, algorithm, or other software tool are contained in the written policies and procedures, as required by subdivision (b)."
+   }
+  },
+  {
+   "type": "testing_evaluation",
+   "addressee": "insurer",
+   "modality": "shall",
+   "summary": "The tool's performance, use, and outcomes must be periodically reviewed and revised to maximize accuracy and reliability.",
+   "applies_from": "not stated in text",
+   "conditional_on": "plan uses an artificial intelligence, algorithm, or other software tool for utilization review or utilization management functions based on medical necessity",
+   "evidence": {
+    "provision": "SEC. 1, Health and Safety Code § 1367.01(k)(1)(I)",
+    "quote": "The artificial intelligence, algorithm, or other software tool’s performance, use, and outcomes are periodically reviewed and revised to maximize accuracy and reliability."
+   }
+  },
+  {
+   "type": "data_minimization",
+   "addressee": "insurer",
+   "modality": "shall",
+   "summary": "Patient data may not be used beyond its intended and stated purpose, consistent with the Confidentiality of Medical Information Act and HIPAA as applicable.",
+   "applies_from": "not stated in text",
+   "conditional_on": "plan uses an artificial intelligence, algorithm, or other software tool for utilization review or utilization management functions based on medical necessity",
+   "evidence": {
+    "provision": "SEC. 1, Health and Safety Code § 1367.01(k)(1)(J)",
+    "quote": "Patient data is not used beyond its intended and stated purpose"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "insurer",
+   "modality": "shall",
+   "summary": "The tool must base determinations on the enrollee's clinical history, individual clinical circumstances and clinical record; its criteria must comply with the chapter including Section 1363.5; and it must not directly or indirectly cause harm to the enrollee.",
+   "applies_from": "not stated in text",
+   "conditional_on": "plan uses an artificial intelligence, algorithm, or other software tool for utilization review or utilization management functions based on medical necessity",
+   "evidence": {
+    "provision": "SEC. 1, Health and Safety Code § 1367.01(k)(1)(K)",
+    "quote": "The artificial intelligence, algorithm, or other software tool does not directly or indirectly cause harm to the enrollee."
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "insurer",
+   "modality": "shall",
+   "summary": "A plan subject to subdivision (k) must comply with applicable federal rules and guidance issued by HHS on the use of artificial intelligence, algorithm, or other software tools.",
+   "applies_from": "not stated in text",
+   "conditional_on": "plan uses an artificial intelligence, algorithm, or other software tool for utilization review or utilization management functions based on medical necessity",
+   "evidence": {
+    "provision": "SEC. 1, Health and Safety Code § 1367.01(k)(5)",
+    "quote": "A health care service plan subject to this subdivision shall comply with applicable federal rules and guidance issued by the federal Department of Health and Human Services regarding the use of artificial intelligence, algorithm, or other software tools."
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "government_agency",
+   "modality": "may",
+   "summary": "The department and the State Department of Health Care Services may issue guidance implementing paragraph (5) within one year of federal rules or guidance; such guidance is exempt from the Administrative Procedure Act.",
+   "applies_from": "not stated in text",
+   "conditional_on": "federal rules or guidance on AI use issued by HHS",
+   "evidence": {
+    "provision": "SEC. 1, Health and Safety Code § 1367.01(k)(5)",
+    "quote": "The department and the State Department of Health Care Services may issue guidance to implement this paragraph within one year of the adoption of federal rules"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "insurer",
+   "modality": "shall_not",
+   "summary": "A disability insurer's AI or software tool used for utilization review shall not deny, delay, or modify health care services based on medical necessity.",
+   "applies_from": "not stated in text",
+   "conditional_on": "insurer uses an artificial intelligence, algorithm, or other software tool for utilization review or utilization management functions based on medical necessity",
+   "evidence": {
+    "provision": "SEC. 2, Insurance Code § 10123.135(j)(2)",
+    "quote": "Notwithstanding paragraph (1), the artificial intelligence, algorithm, or other software tool shall not deny, delay, or modify health care services based, in whole or in part, on medical necessity."
+   }
+  },
+  {
+   "type": "human_oversight",
+   "addressee": "insurer",
+   "modality": "shall",
+   "summary": "Medical necessity determinations must be made only by a licensed physician or licensed health care professional competent to evaluate the clinical issues, reviewing the provider's recommendation and the insured's history; the tool must not supplant provider decisionmaking under (j)(1)(D).",
+   "applies_from": "not stated in text",
+   "conditional_on": "insurer uses an artificial intelligence, algorithm, or other software tool for utilization review or utilization management functions based on medical necessity",
+   "evidence": {
+    "provision": "SEC. 2, Insurance Code § 10123.135(j)(2)",
+    "quote": "A determination of medical necessity shall be made only by a licensed physician or licensed health care professional competent to evaluate the specific clinical issues"
+   }
+  },
+  {
+   "type": "bias_mitigation",
+   "addressee": "insurer",
+   "modality": "shall",
+   "summary": "The tool must not base its determination solely on a group dataset, must not discriminate directly or indirectly against insureds in violation of law, and must be fairly and equitably applied.",
+   "applies_from": "not stated in text",
+   "conditional_on": "insurer uses an artificial intelligence, algorithm, or other software tool for utilization review or utilization management functions based on medical necessity",
+   "evidence": {
+    "provision": "SEC. 2, Insurance Code § 10123.135(j)(1)(E)",
+    "quote": "The use of the artificial intelligence, algorithm, or other software tool does not discriminate, directly or indirectly, against insureds in violation of state or federal law."
+   }
+  },
+  {
+   "type": "audit",
+   "addressee": "insurer",
+   "modality": "shall",
+   "summary": "The tool must be open to inspection for audit or compliance reviews by the department pursuant to applicable state and federal law.",
+   "applies_from": "not stated in text",
+   "conditional_on": "insurer uses an artificial intelligence, algorithm, or other software tool for utilization review or utilization management functions based on medical necessity",
+   "evidence": {
+    "provision": "SEC. 2, Insurance Code § 10123.135(j)(1)(G)",
+    "quote": "is open to inspection for audit or compliance reviews by the department pursuant to applicable state and federal law."
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "insurer",
+   "modality": "shall",
+   "summary": "Disclosures on the use and oversight of the tool must be contained in the written policies and procedures required by subdivision (b), which are filed with the commissioner and disclosed on request.",
+   "applies_from": "not stated in text",
+   "conditional_on": "insurer uses an artificial intelligence, algorithm, or other software tool for utilization review or utilization management functions based on medical necessity",
+   "evidence": {
+    "provision": "SEC. 2, Insurance Code § 10123.135(j)(1)(H)",
+    "quote": "Disclosures pertaining to the use and oversight of the artificial intelligence, algorithm, or other software tool are contained in the written policies and procedures, as required by subdivision (b)."
+   }
+  },
+  {
+   "type": "testing_evaluation",
+   "addressee": "insurer",
+   "modality": "shall",
+   "summary": "The tool's performance, use, and outcomes must be periodically reviewed and revised to maximize accuracy and reliability.",
+   "applies_from": "not stated in text",
+   "conditional_on": "insurer uses an artificial intelligence, algorithm, or other software tool for utilization review or utilization management functions based on medical necessity",
+   "evidence": {
+    "provision": "SEC. 2, Insurance Code § 10123.135(j)(1)(I)",
+    "quote": "The artificial intelligence, algorithm, or other software tool’s performance, use, and outcomes are periodically reviewed and revised to maximize accuracy and reliability."
+   }
+  },
+  {
+   "type": "data_minimization",
+   "addressee": "insurer",
+   "modality": "shall",
+   "summary": "Patient data may not be used beyond its intended and stated purpose, consistent with the Confidentiality of Medical Information Act and HIPAA as applicable.",
+   "applies_from": "not stated in text",
+   "conditional_on": "insurer uses an artificial intelligence, algorithm, or other software tool for utilization review or utilization management functions based on medical necessity",
+   "evidence": {
+    "provision": "SEC. 2, Insurance Code § 10123.135(j)(1)(J)",
+    "quote": "Patient data is not used beyond its intended and stated purpose"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "insurer",
+   "modality": "shall",
+   "summary": "The tool must base determinations on the insured's clinical history, individual clinical circumstances and clinical record; its criteria must comply with the chapter and applicable law; and it must not directly or indirectly cause harm to the insured.",
+   "applies_from": "not stated in text",
+   "conditional_on": "insurer uses an artificial intelligence, algorithm, or other software tool for utilization review or utilization management functions based on medical necessity",
+   "evidence": {
+    "provision": "SEC. 2, Insurance Code § 10123.135(j)(1)(K)",
+    "quote": "The artificial intelligence, algorithm, or other software tool does not directly or indirectly cause harm to the insured."
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "insurer",
+   "modality": "shall",
+   "summary": "A disability insurer subject to subdivision (j) must comply with applicable federal rules and guidance issued by HHS on the use of artificial intelligence, algorithm, or other software tools.",
+   "applies_from": "not stated in text",
+   "conditional_on": "insurer uses an artificial intelligence, algorithm, or other software tool for utilization review or utilization management functions based on medical necessity",
+   "evidence": {
+    "provision": "SEC. 2, Insurance Code § 10123.135(j)(5)",
+    "quote": "A disability insurer subject to this subdivision shall comply with applicable federal rules and guidance issued by the federal Department of Health and Human Services regarding the use of artificial intelligence, algorithm, or other software tools."
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "government_agency",
+   "modality": "may",
+   "summary": "The department may issue guidance implementing paragraph (5) within one year of federal rules or guidance; such guidance is exempt from the Administrative Procedure Act.",
+   "applies_from": "not stated in text",
+   "conditional_on": "federal rules or guidance on AI use issued by HHS",
+   "evidence": {
+    "provision": "SEC. 2, Insurance Code § 10123.135(j)(5)",
+    "quote": "The department may issue guidance to implement this paragraph within one year"
+   }
+  }
+ ],
+ "enforcement": [
+  {
+   "sanction_type": "administrative_fine",
+   "authority": "director (Health and Safety Code § 1367.01)",
+   "triggered_by": "Director determines that a health care service plan failed to meet any timeframe in the section or any other requirement of the section",
+   "max_penalty_text": "Not stated in this text; the director may assess administrative penalties by order for each failure",
+   "penalty_formula": "Assessed per failure; no amount or formula stated in this text",
+   "cure_period": "None stated in this text",
+   "evidence": {
+    "provision": "Sec. 1 (amending Health and Safety Code § 1367.01(h)(6))",
+    "quote": "the director may assess, by order, administrative penalties for each failure"
+   }
+  },
+  {
+   "sanction_type": "administrative_fine",
+   "authority": "commissioner (Insurance Code § 10123.135)",
+   "triggered_by": "Commissioner determines that an insurer failed to meet any timeframe in the section or any other requirement of the section",
+   "max_penalty_text": "Not stated in this text; the commissioner may assess administrative penalties by order for each failure",
+   "penalty_formula": "Assessed per failure; no amount or formula stated in this text",
+   "cure_period": "None stated in this text",
+   "evidence": {
+    "provision": "Sec. 2 (amending Insurance Code § 10123.135(h)(6))",
+    "quote": "the commissioner may assess, by order, administrative penalties for each failure"
+   }
+  }
+ ],
+ "section_status": {
+  "thresholds": {
+   "status": "not_found",
+   "note": "The new text (Health and Safety Code § 1367.01(k) and Insurance Code § 10123.135(j)) contains no numeric cut-off that changes legal treatment. Time limits are procedural events and are not coded. The 50 percent insured test in § 10123.135(c) and the January 1, 2000 retrospective-review date in § 1367.01(h)(1) appear to be restated existing text and are not coded."
+  }
+ },
+ "thresholds": []
+}

@@ -1,0 +1,170 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "cl-boletin18090-19-social-media-minors",
+ "tier": "B",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "light, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-interim-20261014"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (connectors/fetch_texts.py)",
+  "url": "https://tramitacion.senado.cl/appsenado/index.php?mo=tramitacion&ac=getDocto&iddocto=18756&tipodoc=mensaje_mocion",
+  "retrieved": "2026-10-13",
+  "version": "as fetched",
+  "language": "es",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "minors_child_safety",
+   "online_safety_content",
+   "data_protection"
+  ],
+  "primary_domain": "minors_child_safety",
+  "mechanisms": [
+   "prohibition_ban",
+   "mandate_obligation"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "platform_operator"
+  ],
+  "affected_roles": [
+   "minors"
+  ],
+  "decision_margins": [
+   "household:access",
+   "firm:product_design_release",
+   "firm:compliance_process"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national",
+    "extraterritorial"
+   ],
+   "description": "Applies to providers of social media platforms that offer or direct services to Chile, whether or not they are domiciled or incorporated in Chile.",
+   "evidence": {
+    "provision": "Artículo 2.- Ámbito de Aplicación de la Ley",
+    "quote": "independientemente de si la empresa proveedora de dichos servicios está o no domiciliada o constituida dentro del territorio nacional"
+   }
+  },
+  "agora_harms": [
+   "Detrimental content",
+   "Harm to health/safety"
+  ],
+  "agora_incentives": [
+   "Fines"
+  ],
+  "agora_risk_factors": [
+   "Privacy"
+  ],
+  "agora_strategies": [
+   "Performance requirements"
+  ]
+ },
+ "summary": {
+  "short": "Bill (Boletín 18.090-19) that would bar under-16s from social media accounts, require platform operators, including foreign ones serving Chile, to verify ages and mitigate risks to minors, and fine breaches 1,000–5,000 UTM, applying six months after publication.",
+  "long": "Bill (Boletín 18.090-19), introduced by senators by motion, which would prohibit persons under sixteen from registering for, accessing or using social media platform accounts (Art. 4), and require platform operators to delete active accounts held by such minors. It applies to any provider offering or directing social media services to Chile, whether or not domiciled there (Art. 2). Providers would have to implement effective age verification systems (Art. 5), with verification processed under Law 19.628 (Art. 6), and to prevent registration by under-sixteens and mitigate risks to minors, including harmful content and manipulative attention-maximising design (Art. 7). Breaches would be fined 1,000 to 5,000 monthly tax units (UTM); repeat offences would bring a fine twice the previous amount plus temporary suspension of the service in Chile (Art. 8). Other civil, criminal or legal liabilities are not affected. The stated purpose is protecting the physical, psychological, social and moral wellbeing of children and adolescents (Art. 1). The transitional provision sets entry into force six months after publication in the Diario Oficial."
+ },
+ "relations": [
+  {
+   "relation": "cross_references",
+   "target_text": "Ley N° 19.628, sobre protección de la vida privada",
+   "note": "Art. 6 requires age verification systems to comply with this law and states that all infractions, sanctions, liabilities and claims under the bill are subject to it. Art. 8 sets its own fines and suspension, so the relation with the bill's sanctions regime is not fully specified in the text.",
+   "evidence": {
+    "provision": "Artículo 6.- Protección de datos personales",
+    "quote": "Los sistemas de verificación deberán cumplir con la Ley N° 19.628, sobre protección de la vida privada."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Ley N° 21.719 [Regula la Protección y el Tratamiento de Datos Personales y Crea la Agencia de Protección de Datos Personales]",
+   "note": "Cited in the Fundamentos (not an operative provision) as reflecting a special protection standard for under-16s' sensitive personal data; the bill says its age-16 limit is aligned with that standard. The text does not state the law's status beyond calling it recently approved.",
+   "evidence": {
+    "provision": "II. Fundamentos",
+    "quote": "la recientemente aprobada Ley N° 21.719"
+   }
+  }
+ ],
+ "notes": "Comparative references in the Antecedentes (COPPA, Australian Online Safety Act, UK Online Safety Act, EU and US state measures) describe other jurisdictions and are not coded as relations to this bill. Internal points: Art. 6 places all infractions and sanctions under Ley 19.628, while Art. 8 sets administrative fines of 1.000 to 5.000 UTM and suspension of service, without stating how the two regimes interact. Art. 7 makes non-compliance subject to Art. 8 'salvo prueba en contrario', which the text does not explain. Art. 1 refers to protecting the 'bienestar' of minors, whereas the Antecedentes cite a 13-year age benchmark under COPPA; the bill sets 16. The Fundamentos say the bill is a motion of named senators, so the text is a bill as introduced.",
+ "events": [
+  {
+   "event": "introduced",
+   "date": null,
+   "date_type": "not_stated",
+   "date_text": "Proyecto de ley, iniciado en Moción de los Honorables Senadores señor Kast",
+   "applies_to": "Senate (moción de senadores)",
+   "evidence": {
+    "provision": "Encabezado",
+    "quote": "Proyecto de ley, iniciado en Moción de los Honorables Senadores señor Kast"
+   }
+  },
+  {
+   "event": "published",
+   "date": null,
+   "date_type": "not_stated",
+   "date_text": "su publicación en el Diario Oficial",
+   "anchor": "publication in the Diario Oficial",
+   "applies_to": "the law as a whole",
+   "evidence": {
+    "provision": "Disposiciones transitorias, Artículo primero",
+    "quote": "desde su publicación en el Diario Oficial"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "transcurridos seis meses desde su publicación en el Diario Oficial",
+   "anchor": "publication in the Diario Oficial",
+   "applies_to": "the law as a whole",
+   "offset_value": 6,
+   "offset_unit": "months",
+   "anchor_event": "published",
+   "evidence": {
+    "provision": "Disposiciones transitorias, Artículo primero",
+    "quote": "La presente ley entrará en vigencia transcurridos seis meses desde su publicación en el Diario Oficial."
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "age",
+   "variable_text": "personas menores de dieciséis años (prohibición de registro, acceso y uso de cuentas en plataformas de redes sociales)",
+   "operator": "<",
+   "value": 16,
+   "value_text": "menores de dieciséis años",
+   "unit": "years",
+   "measurement": "No window or aggregation stated; applies to the age of the individual user.",
+   "level": "person",
+   "trigger": "prohibition",
+   "consequence": "Registration, access and use of an account on social media platforms is prohibited for persons under 16, and platforms must delete any active account held by such a person.",
+   "conditions": "Applies to social media platforms as defined in Art. 3(a) that offer or direct services to Chile, whether or not the provider is domiciled in Chile (Art. 2).",
+   "evidence": {
+    "provision": "Art. 4, inciso 1",
+    "quote": "Se prohíbe el registro, acceso y uso de una cuenta asociada a las plataformas de redes sociales para las personas menores de dieciséis años."
+   }
+  },
+  {
+   "variable": "age",
+   "variable_text": "personas menores de dieciséis años (responsabilidad de los proveedores de impedir registro, acceso y uso)",
+   "operator": "<",
+   "value": 16,
+   "value_text": "personas menores de dieciséis años",
+   "unit": "years",
+   "measurement": "No window or aggregation stated; applies to the age of the individual user.",
+   "level": "person",
+   "trigger": "obligation",
+   "consequence": "Digital service providers are made responsible for preventing registration, access and use by persons under 16, which triggers the sanctions of Art. 8 on non-compliance.",
+   "conditions": "Applies to digital service providers as defined in Art. 3(b); Art. 7 also requires risk-mitigation measures for minor users, and the sanctions of Art. 8 apply subject to proof to the contrary.",
+   "evidence": {
+    "provision": "Art. 7, inciso 1",
+    "quote": "Los proveedores de servicios digitales serán responsables de impedir el registro, acceso y uso de personas menores de dieciséis años."
+   }
+  }
+ ],
+ "section_status": {}
+}

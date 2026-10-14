@@ -1,0 +1,136 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "de-urhg-44b-tdm",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (Claude Code retrieval)",
+  "url": "https://www.gesetze-im-internet.de/urhg/__44b.html",
+  "retrieved": "2026-10-14",
+  "version": "current text of § 44b UrhG as published on gesetze-im-internet.de (retrieved 14 Oct 2026)",
+  "language": "de",
+  "extent": "full",
+  "note": "Single provision only (§ 44b Text und Data Mining), as the registry entry describes; site chrome removed."
+ },
+ "classification": {
+  "domains": [
+   "ip_training_data"
+  ],
+  "primary_domain": "ip_training_data",
+  "mechanisms": [
+   "mandate_obligation"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [],
+  "decision_margins": [
+   "firm:input_use"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national"
+   ],
+   "description": "Applies under German copyright law; the text states no reach beyond Germany.",
+   "evidence": {
+    "provision": "Title of the Act",
+    "quote": "Gesetz über Urheberrecht und verwandte Schutzrechte (Urheberrechtsgesetz)"
+   }
+  },
+  "agora_strategies": [
+   "Input controls: Data use"
+  ]
+ },
+ "summary": {
+  "short": "Section 44b of Germany's Copyright Act defines text and data mining and permits reproductions of lawfully accessible works for that purpose, to be deleted once no longer needed. Uses are excluded where rights holders have reserved them; online reservations count only if machine-readable.",
+  "long": "This document is § 44b of the German Copyright Act (Urheberrechtsgesetz), a partial text covering only that section. Paragraph 1 defines text and data mining (TDM) as the automated analysis of one or more digital or digitised works to obtain information, in particular about patterns, trends and correlations. Paragraph 2 permits reproductions of lawfully accessible works for TDM and requires that they be deleted once they are no longer necessary for that purpose. Paragraph 3 makes these uses permitted only where the rights holder has not reserved them; for works accessible online, a reservation is effective only if made in machine-readable form. The section does not name a specific addressee role, sets no thresholds, penalties or dates, and does not mention artificial intelligence."
+ },
+ "notes": "Excerpt: this annotation covers only § 44b paras 1-3 of the UrhG. The section cites no other instrument, names no authority, and contains no enforcement or penalty provisions. Para. 3 sentence 2 states that a reservation of use for online-accessible works is effective only if made in machine-readable form. Other sections of the Gesetz are not covered here.",
+ "events": [],
+ "definitions": [
+  {
+   "term": "Text und Data Mining",
+   "defined_in": "§ 44b Abs. 1",
+   "evidence": {
+    "provision": "§ 44b Abs. 1",
+    "quote": "Text und Data Mining ist die automatisierte Analyse von einzelnen oder mehreren digitalen oder digitalisierten Werken, um daraus Informationen insbesondere über Muster, Trends und Korrelationen zu gewinnen."
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "other",
+   "addressee": "ai_developer",
+   "modality": "may",
+   "summary": "Reproductions of lawfully accessible works may be made for text and data mining (permission; the text names no specific addressee).",
+   "conditional_on": "Works must be lawfully accessible.",
+   "evidence": {
+    "provision": "§ 44b Abs. 2 Satz 1",
+    "quote": "Zulässig sind Vervielfältigungen von rechtmäßig zugänglichen Werken für das Text und Data Mining."
+   }
+  },
+  {
+   "type": "data_minimization",
+   "addressee": "ai_developer",
+   "modality": "shall",
+   "summary": "Reproductions made for text and data mining must be deleted once they are no longer necessary for that purpose.",
+   "conditional_on": "Reproductions are no longer necessary for text and data mining.",
+   "evidence": {
+    "provision": "§ 44b Abs. 2 Satz 2",
+    "quote": "Die Vervielfältigungen sind zu löschen, wenn sie für das Text und Data Mining nicht mehr erforderlich sind."
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "ai_developer",
+   "modality": "shall_not",
+   "summary": "Uses under the text and data mining permission are not permitted where the rights holder has reserved them.",
+   "conditional_on": "The rights holder has not reserved the use.",
+   "evidence": {
+    "provision": "§ 44b Abs. 3 Satz 1",
+    "quote": "Nutzungen nach Absatz 2 Satz 1 sind nur zulässig, wenn der Rechtsinhaber sich diese nicht vorbehalten hat."
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_holder",
+   "modality": "shall",
+   "summary": "A rights holder's reservation of use for online-accessible works is effective only if made in machine-readable form.",
+   "conditional_on": "The work is online-accessible and the rights holder reserves use.",
+   "evidence": {
+    "provision": "§ 44b Abs. 3 Satz 2",
+    "quote": "Ein Nutzungsvorbehalt bei online zugänglichen Werken ist nur dann wirksam, wenn er in maschinenlesbarer Form erfolgt."
+   }
+  }
+ ],
+ "section_status": {
+  "relations": {
+   "status": "not_found",
+   "note": "The excerpt cites no other instrument and states no legal basis, amendment, repeal, implementation or transposition relation."
+  },
+  "entities": {
+   "status": "not_applicable",
+   "note": "General statute addressed to unnamed roles (Rechtsinhaber, Nutzer); no named firms, facilities or public bodies appear in the text."
+  },
+  "events": {
+   "status": "not_found",
+   "note": "The provided text is § 44b UrhG only. It states no dates, and no entry-into-force, amendment or session-law history appears in the document, so no events are coded."
+  },
+  "thresholds": {
+   "status": "not_applicable",
+   "note": "§ 44b contains no numeric cutoffs; its conditions are qualitative (lawfully accessible works, a reservation of use made in machine-readable form for online works, and deletion when no longer necessary)."
+  },
+  "enforcement": {
+   "status": "not_found",
+   "note": "The provided document is the excerpt § 44b UrhG (paras. 1-3). It contains no sanction, fine, penalty, licence, clawback, suspension or blocking provision, and does not refer to any enforcement provision."
+  }
+ },
+ "thresholds": [],
+ "enforcement": [],
+ "relations": [],
+ "entities": []
+}

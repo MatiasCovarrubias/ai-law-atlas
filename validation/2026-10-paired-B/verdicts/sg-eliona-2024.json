@@ -1,0 +1,113 @@
+{
+ "instrument_id": "sg-eliona-2024",
+ "checker": "claude-opus-5-5 (Claude Code)",
+ "protocol": "VP-1.0",
+ "date": "2026-10-14",
+ "reference": [
+  {
+   "category": "key_date",
+   "provision": "Bill front matter",
+   "quote": "Read the first time on 9 September 2024.",
+   "value": "2024-09-09 first reading (introduced)",
+   "match": {
+    "X": 0,
+    "Y": 0
+   }
+  },
+  {
+   "category": "key_date",
+   "provision": "s. 1",
+   "quote": "comes into operation on a date that the Minister appoints by notification in the Gazette",
+   "value": "conditional commencement: date appointed by the Minister by Gazette notification",
+   "match": {
+    "X": 1,
+    "Y": 1
+   }
+  }
+ ],
+ "judgments": {
+  "X": {
+   "thresholds": [
+    {
+     "index": 0,
+     "verdict": "unsupported",
+     "note": "Candidate deposit 'required by this section' is a payment condition whose amount sits in the amended Act's existing s. 28, not a numeric cutoff introduced or stated by this text (borderline; codebook delegated-threshold rule covers size classes, not fees/deposits)"
+    },
+    {
+     "index": 1,
+     "verdict": "unsupported",
+     "note": "Same as row 0 for the Presidential Elections Act s. 10 deposit"
+    }
+   ],
+   "events": [
+    {
+     "index": 0,
+     "verdict": "correct",
+     "note": "first reading 2024-09-09"
+    },
+    {
+     "index": 1,
+     "verdict": "correct",
+     "note": "conditional commencement by Gazette notification"
+    }
+   ],
+   "obligations": [],
+   "enforcement": []
+  },
+  "Y": {
+   "thresholds": [],
+   "events": [
+    {
+     "index": 0,
+     "verdict": "correct",
+     "note": "introduced 2024-09-09; applies_to carries a stray 'passed_chamber:' prefix, minor"
+    },
+    {
+     "index": 1,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 2,
+     "verdict": "unsupported",
+     "note": "Temporal element of the Returning Officer's duty (writ issue to end of nomination), repeated at each election; not a dated event at which a regime starts to apply (borderline)"
+    },
+    {
+     "index": 3,
+     "verdict": "unsupported",
+     "note": "Election period is an element of the s. 61MA offence, not an application event of the instrument"
+    },
+    {
+     "index": 4,
+     "verdict": "unsupported",
+     "note": "Same as row 2 for Presidential Elections Act s. 10(2A)"
+    },
+    {
+     "index": 5,
+     "verdict": "unsupported",
+     "note": "Same as row 3 for s. 42LA"
+    }
+   ],
+   "obligations": [],
+   "enforcement": []
+  }
+ },
+ "sampling": {
+  "X": {},
+  "Y": {}
+ },
+ "classification": {
+  "X": {
+   "domains": "right",
+   "primary_domain": "right",
+   "note": "elections_political_ads (primary) + synthetic_media_deepfakes."
+  },
+  "Y": {
+   "domains": "right",
+   "primary_domain": "right",
+   "note": "Same as X."
+  }
+ },
+ "reference_scope": "full text (Tier B: thresholds and key dates only); text is Bill No. 29/2024 as introduced",
+ "notes": "Tier B. Reference has no thresholds (fine tiers $1,000,000 / $1,000 are penalty maxima). Both versions record the two key dates. X adds two deposit 'thresholds' (value null, depends on the amended Acts); judged unsupported as borderline. Y correctly marks thresholds not_found but adds four 'application' events that restate the offence's election-period window and the Returning Officer's writ-to-nomination window; judged unsupported as borderline (temporal scope elements rather than dated events). Both note that the text is the Bill as introduced, not the enacted Act 34 of 2024."
+}

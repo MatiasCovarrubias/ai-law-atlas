@@ -1,0 +1,519 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "us-hr2794-119",
+ "tier": "B",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "light, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-interim-20261014"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (connectors/fetch_texts.py)",
+  "url": "https://www.govinfo.gov/content/pkg/BILLS-119hr2794ih/html/BILLS-119hr2794ih.htm",
+  "retrieved": "2026-10-13",
+  "version": "as fetched",
+  "language": "en",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "synthetic_media_deepfakes",
+   "generative_ai",
+   "online_safety_content"
+  ],
+  "primary_domain": "synthetic_media_deepfakes",
+  "mechanisms": [
+   "liability_rule",
+   "mandate_obligation",
+   "registration_notification",
+   "prohibition_ban"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "ai_distributor",
+   "ai_developer",
+   "platform_operator",
+   "government_agency"
+  ],
+  "affected_roles": [
+   "consumers_users",
+   "minors",
+   "general_public"
+  ],
+  "decision_margins": [
+   "firm:product_design_release",
+   "firm:compliance_process",
+   "household:information"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national"
+   ],
+   "description": "Reaches conduct in a manner affecting interstate commerce or using means or facilities of interstate commerce.",
+   "evidence": {
+    "provision": "Sec. 2(c)(1)",
+    "quote": "in a manner affecting interstate commerce (or using any means or facility of interstate commerce)"
+   }
+  },
+  "agora_applications": [
+   "Arts, sports, leisure, travel, and lifestyle",
+   "Broadcasting and media production"
+  ],
+  "agora_harms": [
+   "Violation of civil or human rights, including privacy",
+   "Financial loss"
+  ],
+  "agora_incentives": [
+   "Civil liability"
+  ],
+  "agora_risk_factors": [
+   "Security: Dissemination"
+  ],
+  "agora_strategies": [
+   "Licensing, registration, and certification"
+  ]
+ },
+ "summary": {
+  "short": "Proposes a federal intellectual property right in an individual's voice and visual likeness, enforceable through civil action against unauthorized digital replicas and products designed to produce them, with notice-and-takedown safe harbors for online services; applies from 180 days after enactment.",
+  "long": "The bill would create a federal right to authorize use of an individual's voice or visual likeness in a digital replica (a highly realistic computer-generated representation of that individual) or in a product or service requiring such authorization. The right is licensable, not assignable during life, and survives death for 10 years, extendable in 5-year periods on active authorized use, ending no later than 70 years after death. Lifetime licences last up to 10 years and must be written, signed and specific; licences involving minors last up to 5 years, end at age 18 and require court approval. Liability attaches to unauthorized digital replicas made available to the public and to products or services primarily designed to produce them. Online services with a designated agent, a repeat-violator policy and prompt removal after compliant notice are shielded for user-uploaded material. Knowingly false notices incur liability of the greater of $25,000 per notification or actual damages. Civil actions allow statutory damages (individuals: $5,000 per work), injunctions and a three-year limitations period. Exceptions include news, documentary, commentary and parody uses. State-law claims are preempted, except those existing on 2 January 2025. Liability covers only post-enactment conduct; the Act takes effect 180 days after enactment."
+ },
+ "relations": [
+  {
+   "relation": "cross_references",
+   "target_text": "17 U.S.C. (Title 17, United States Code), section 115",
+   "note": "Defines the scope of 'online service' by reference to digital music providers to which section 115 of title 17 applies. Target is not in the registry, so no ID is given.",
+   "evidence": {
+    "provision": "Sec. 2(a)(5)(A)(ii)",
+    "quote": "to which section 115 of title 17, United States Code, applies"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Communications Act of 1934, section 230(e)(2) (47 U.S.C. 230(e)(2))",
+   "note": "Provides that the section is to be treated as a law pertaining to intellectual property for purposes of section 230(e)(2) of the Communications Act.",
+   "evidence": {
+    "provision": "Sec. 2(h)(1)",
+    "quote": "for the purposes of section 230(e)(2) of the Communications Act of 1934 (47 U.S.C. 230(e)(2))"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "18 U.S.C. 2256(2)(A) (title 18, United States Code, section 2256(2)(A))",
+   "note": "Used to define 'sexually explicit conduct' in the fair-use exclusion (Sec. 2(c)(5)(B)) and in the state-law savings clause (Sec. 2(g)(2)(B)).",
+   "evidence": {
+    "provision": "Sec. 2(c)(5)(B); Sec. 2(g)(2)(B)",
+    "quote": "as defined in section 2256(2)(A) of title 18, United States Code"
+   }
+  },
+  {
+   "relation": "preempts",
+   "target_text": "State-law causes of action for protection of an individual's voice and visual likeness rights in connection with a digital replica in an expressive work",
+   "note": "Preemption is subject to the savings clause in Sec. 2(g)(2), which excludes state causes of action existing as of January 2, 2025, and certain state statutes on sexually explicit or election-related digital replicas, and on products capable of producing digital replicas.",
+   "evidence": {
+    "provision": "Sec. 2(g)(1)",
+    "quote": "shall preempt any cause of action under State law"
+   }
+  }
+ ],
+ "notes": "The bill does not amend, repeal, or implement any existing instrument, and it states no legal basis. Its only external citations are to Title 17, 47 U.S.C. 230(e)(2) and 18 U.S.C. 2256(2)(A); none is in the registry, so target_instrument_id is left empty (schema requires a string). Sec. 2(g)(2) fixes a reference date of January 2, 2025 for existing state causes of action, which precedes the bill's introduction on April 9, 2025. Sec. 2(g)(1) preempts 'any cause of action', while Sec. 2(g)(2) carves out several categories; these are read together, not as a conflict. The relations section is populated, so the section_status entry below is a schema formality and does not indicate absence of relations.",
+ "events": [
+  {
+   "event": "introduced",
+   "date": "2025-04-09",
+   "date_type": "absolute",
+   "date_text": "April 9, 2025",
+   "applies_to": "House of Representatives; referred to the Committee on the Judiciary",
+   "evidence": {
+    "provision": "Cover page (introduction block)",
+    "quote": "April 9, 2025"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "on the date that is 180 days after the date of enactment of this Act",
+   "anchor": "date of enactment of this Act",
+   "applies_to": "entire Act (Sec. 1 and Sec. 2); anchor is enactment (signature)",
+   "offset_value": 180,
+   "offset_unit": "days",
+   "anchor_event": "signed",
+   "evidence": {
+    "provision": "Sec. 2(k)",
+    "quote": "This Act shall take effect on the date that is 180 days after the date of enactment of this Act."
+   }
+  },
+  {
+   "event": "application",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "Liability under this section shall apply only to— (A) conduct occurring after the date of enactment of this Act",
+   "anchor": "date of enactment of this Act",
+   "applies_to": "liability under Sec. 2 for conduct occurring after enactment; for conduct covered by a license or contract, licences or contracts executed after enactment",
+   "anchor_event": "signed",
+   "evidence": {
+    "provision": "Sec. 2(j)(1)(A)",
+    "quote": "conduct occurring after the date of enactment of this Act"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "if the action is brought not later than 14 days after the end user receives notice that the provider has removed or disabled access to the material",
+   "depends_on": "end user that uploaded the material receives notice that the provider has removed or disabled access to the material",
+   "applies_to": "online service provider restoring removed material without monetary liability (Sec. 2(e)(4)(C))",
+   "offset_value": 14,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Sec. 2(e)(4)(C)",
+    "quote": "brought not later than 14 days after the end user receives notice"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "commenced not later than 3 years after the date on which the party seeking to bring the civil action discovered, or with due diligence should have discovered, the applicable violation",
+   "depends_on": "discovery (or due-diligence discovery) of the applicable violation by the party seeking to bring the civil action",
+   "applies_to": "civil action under Sec. 2(e)",
+   "offset_value": 3,
+   "offset_unit": "years",
+   "evidence": {
+    "provision": "Sec. 2(e)(2)",
+    "quote": "commenced not later than 3 years after the date on which the party seeking to bring the civil action discovered"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "lease_term",
+   "variable_text": "license duration while the individual is living",
+   "operator": "<=",
+   "value": 10,
+   "value_text": "does not exceed 10 years",
+   "unit": "years",
+   "level": "person",
+   "trigger": "cap",
+   "consequence": "A license of a living individual's digital replica rights is valid only if its duration does not exceed 10 years.",
+   "conditions": "Applies while the individual is living; license must also be in writing, signed, and describe intended uses.",
+   "evidence": {
+    "provision": "Sec. 2(b)(2)(B)(i)(I)",
+    "quote": "is valid only to the extent that the license duration does not exceed 10 years"
+   }
+  },
+  {
+   "variable": "age",
+   "variable_text": "age of living individual licensing digital replica rights",
+   "operator": "<",
+   "value": 18,
+   "value_text": "younger than 18 years of age",
+   "unit": "years",
+   "level": "person",
+   "trigger": "eligibility",
+   "consequence": "A license involving a living minor is subject to additional requirements, including a 5-year duration cap and court approval.",
+   "conditions": "License involves a living individual; applies to licenses under Sec. 2(b)(2)(A)(i)(III).",
+   "evidence": {
+    "provision": "Sec. 2(b)(2)(B)(ii)",
+    "quote": "a living individual who is younger than 18"
+   }
+  },
+  {
+   "variable": "lease_term",
+   "variable_text": "license duration for living minor",
+   "operator": "<=",
+   "value": 5,
+   "value_text": "does not exceed 5 years",
+   "unit": "years",
+   "level": "person",
+   "trigger": "cap",
+   "consequence": "A license involving a living minor is valid only if its duration does not exceed 5 years.",
+   "conditions": "Applies to a living individual younger than 18; also requires approval by a court under applicable State law.",
+   "evidence": {
+    "provision": "Sec. 2(b)(2)(B)(ii)(I)",
+    "quote": "the license duration does not exceed 5 years"
+   }
+  },
+  {
+   "variable": "age",
+   "variable_text": "age at which minor license terminates",
+   "operator": "=",
+   "value": 18,
+   "value_text": "reaches 18 years of age",
+   "unit": "years",
+   "level": "person",
+   "trigger": "benefit_duration",
+   "consequence": "A license involving a living minor terminates when the individual reaches 18 years of age.",
+   "conditions": "Applies to a living individual younger than 18 under Sec. 2(b)(2)(B)(ii).",
+   "evidence": {
+    "provision": "Sec. 2(b)(2)(B)(ii)(I)",
+    "quote": "terminates when the individual reaches 18 years of age"
+   }
+  },
+  {
+   "variable": "age",
+   "variable_text": "age of right holder for parent or guardian to bring civil action",
+   "operator": "<",
+   "value": 18,
+   "value_text": "younger than 18 years of age",
+   "unit": "years",
+   "level": "person",
+   "trigger": "eligibility",
+   "consequence": "A parent or guardian may bring a civil action when the right holder is younger than 18.",
+   "conditions": "Applies where the applicable right holder is an individual.",
+   "evidence": {
+    "provision": "Sec. 2(e)(1)(B)",
+    "quote": "the applicable right holder is an individual who is younger than 18 years of age"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "post-mortem exclusive period for right holder",
+   "operator": "=",
+   "value": 10,
+   "value_text": "for a period of 10 years after the death of the individual",
+   "unit": "years",
+   "measurement": "period after death of individual",
+   "level": "person",
+   "trigger": "benefit_duration",
+   "consequence": "The right is exclusive to the right holder for 10 years after the individual's death.",
+   "conditions": "Subject to licensing during the individual's lifetime.",
+   "evidence": {
+    "provision": "Sec. 2(b)(2)(A)(iv)(II)(aa)",
+    "quote": "for a period of 10 years after the death of the individual"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "period of active authorized public use required for post-mortem renewal",
+   "operator": "=",
+   "value": 2,
+   "value_text": "the 2-year period preceding the expiration of the 10-year period",
+   "unit": "years",
+   "level": "person",
+   "trigger": "eligibility",
+   "consequence": "The post-mortem right may be extended only if the right holder demonstrates active and authorized public use during the 2-year period.",
+   "conditions": "Demonstration of active and authorized public use of the voice or visual likeness during the 2-year period.",
+   "evidence": {
+    "provision": "Sec. 2(b)(2)(A)(iv)(II)(bb)",
+    "quote": "the 2-year period preceding the expiration of the 10-year period"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "additional post-mortem period, renewable",
+   "operator": "=",
+   "value": 5,
+   "value_text": "for an additional 5-year period, subject to renewal for additional 5-year periods",
+   "unit": "years",
+   "level": "person",
+   "trigger": "benefit_duration",
+   "consequence": "The post-mortem exclusive period may be extended by 5-year periods, subject to renewal conditions.",
+   "conditions": "Requires active and authorized public use during the 2-year period preceding each expiration.",
+   "evidence": {
+    "provision": "Sec. 2(b)(2)(A)(iv)(II)(bb)",
+    "quote": "for an additional 5-year period"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "post-mortem termination of digital replication right",
+   "operator": "=",
+   "value": 70,
+   "value_text": "the date that is 70 years after the death of the individual",
+   "unit": "years",
+   "measurement": "period after death of individual",
+   "level": "person",
+   "trigger": "benefit_duration",
+   "consequence": "The digital replication right terminates on the earlier of this date or the end of the 10-year or 5-year period without renewal.",
+   "conditions": "Applies on the earlier of the two dates in Sec. 2(b)(2)(A)(v).",
+   "evidence": {
+    "provision": "Sec. 2(b)(2)(A)(v)(II)",
+    "quote": "the date that is 70 years after the death of the individual"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "statutory damages per work, individual (digital replica)",
+   "operator": "=",
+   "value": 5000,
+   "value_text": "$5,000 per work embodying the applicable unauthorized digital replica",
+   "unit": "USD per work",
+   "currency": "USD",
+   "measurement": "per work embodying the unauthorized digital replica",
+   "level": "person",
+   "trigger": "penalty_tier",
+   "consequence": "Liability to the injured party is the greater of this amount or actual damages and profits.",
+   "conditions": "Individual engaging in activity described in Sec. 2(c)(2)(A).",
+   "evidence": {
+    "provision": "Sec. 2(e)(4)(A)(i)(I)(aa)",
+    "quote": "$5,000 per work embodying"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "statutory damages per work, online service provider with good faith compliance",
+   "operator": "=",
+   "value": 25000,
+   "value_text": "$25,000 per work embodying the applicable unauthorized digital replica",
+   "unit": "USD per work",
+   "currency": "USD",
+   "measurement": "per work embodying the unauthorized digital replica",
+   "level": "entity",
+   "trigger": "penalty_tier",
+   "consequence": "Liability to the injured party is the greater of this amount or actual damages and profits.",
+   "conditions": "Provider of an online service that has undertaken a good faith effort to comply with Sec. 2(d).",
+   "evidence": {
+    "provision": "Sec. 2(e)(4)(A)(i)(I)(bb)",
+    "quote": "subsection (d), $25,000 per work"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "statutory damages per display, copy, transmission and instance, online service provider without good faith compliance",
+   "operator": "=",
+   "value": 5000,
+   "value_text": "$5,000 per display, copy made, transmission, and instance",
+   "unit": "USD per display, copy, transmission or instance",
+   "currency": "USD",
+   "measurement": "per display, copy made, transmission, and instance of the unauthorized digital replica",
+   "level": "entity",
+   "trigger": "penalty_tier",
+   "consequence": "Liability to the injured party is the greater of this amount or actual damages and profits, subject to a cap.",
+   "conditions": "Provider of an online service that has not undertaken a good faith effort to comply with Sec. 2(d).",
+   "evidence": {
+    "provision": "Sec. 2(e)(4)(A)(i)(I)(cc)",
+    "quote": "$5,000 per display, copy made, transmission, and instance"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "statutory damages cap per work, online service provider without good faith compliance",
+   "operator": "<=",
+   "value": 750000,
+   "value_text": "in a sum of not more than $750,000 per work",
+   "unit": "USD per work",
+   "currency": "USD",
+   "measurement": "per work embodying the unauthorized digital replica",
+   "level": "entity",
+   "trigger": "cap",
+   "consequence": "Statutory damages under the per-display rule are capped at this sum per work.",
+   "conditions": "Provider of an online service that has not undertaken a good faith effort to comply with Sec. 2(d).",
+   "evidence": {
+    "provision": "Sec. 2(e)(4)(A)(i)(I)(cc)",
+    "quote": "in a sum of not more than $750,000 per work"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "statutory damages per work, entity that is not an online service provider",
+   "operator": "=",
+   "value": 25000,
+   "value_text": "$25,000 per work embodying the applicable unauthorized digital replica",
+   "unit": "USD per work",
+   "currency": "USD",
+   "measurement": "per work embodying the unauthorized digital replica",
+   "level": "entity",
+   "trigger": "penalty_tier",
+   "consequence": "Liability to the injured party is the greater of this amount or actual damages and profits.",
+   "conditions": "Entity that is not a provider of an online service.",
+   "evidence": {
+    "provision": "Sec. 2(e)(4)(A)(i)(I)(dd)",
+    "quote": "$25,000 per work embodying the"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "statutory damages per product or service, individual",
+   "operator": "=",
+   "value": 5000,
+   "value_text": "$5,000 per product or service",
+   "unit": "USD per product or service",
+   "currency": "USD",
+   "measurement": "per product or service",
+   "level": "person",
+   "trigger": "penalty_tier",
+   "consequence": "Liability to the injured party is the greater of this amount or actual damages and profits.",
+   "conditions": "Individual engaging in activity described in Sec. 2(c)(2)(B).",
+   "evidence": {
+    "provision": "Sec. 2(e)(4)(A)(ii)(I)(aa)",
+    "quote": "$5,000 per product or service"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "statutory damages per product or service, online service provider with good faith compliance",
+   "operator": "=",
+   "value": 25000,
+   "value_text": "$25,000 per product or service",
+   "unit": "USD per product or service",
+   "currency": "USD",
+   "measurement": "per product or service",
+   "level": "entity",
+   "trigger": "penalty_tier",
+   "consequence": "Liability to the injured party is the greater of this amount or actual damages and profits.",
+   "conditions": "Provider of an online service that has undertaken a good faith effort to comply with Sec. 2(d).",
+   "evidence": {
+    "provision": "Sec. 2(e)(4)(A)(ii)(I)(bb)",
+    "quote": "$25,000 per product or service"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "statutory damages per product or service, online service provider without good faith compliance",
+   "operator": "=",
+   "value": 750000,
+   "value_text": "comply with subsection (d), $750,000 per product or service",
+   "unit": "USD per product or service",
+   "currency": "USD",
+   "measurement": "per product or service",
+   "level": "entity",
+   "trigger": "penalty_tier",
+   "consequence": "Liability to the injured party is the greater of this amount or actual damages and profits.",
+   "conditions": "Provider of an online service that has not undertaken a good faith effort to comply with Sec. 2(d).",
+   "evidence": {
+    "provision": "Sec. 2(e)(4)(A)(ii)(I)(cc)",
+    "quote": "comply with subsection (d), $750,000 per product or service"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "statutory damages per product or service, entity that is not an online service provider",
+   "operator": "=",
+   "value": 25000,
+   "value_text": "$25,000 per product or service",
+   "unit": "USD per product or service",
+   "currency": "USD",
+   "measurement": "per product or service",
+   "level": "entity",
+   "trigger": "penalty_tier",
+   "consequence": "Liability to the injured party is the greater of this amount or actual damages and profits.",
+   "conditions": "Entity that is not a provider of an online service.",
+   "evidence": {
+    "provision": "Sec. 2(e)(4)(A)(ii)(I)(dd)",
+    "quote": "is not a provider of an online service, $25,000 per product or service"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "statutory damages per knowing material misrepresentation in notice",
+   "operator": "=",
+   "value": 25000,
+   "value_text": "$25,000 per notification sent under paragraph (3)",
+   "unit": "USD per notification",
+   "currency": "USD",
+   "measurement": "per notification sent under Sec. 2(d)(3) containing a misrepresentation",
+   "level": "entity",
+   "trigger": "penalty_tier",
+   "consequence": "Liability to the alleged violator or injured online service provider is the greater of this amount or actual damages.",
+   "conditions": "Notice containing a misrepresentation described in Sec. 2(d)(4)(A).",
+   "evidence": {
+    "provision": "Sec. 2(d)(4)(B)(i)",
+    "quote": "$25,000 per notification sent under paragraph (3)"
+   }
+  }
+ ],
+ "section_status": {}
+}

@@ -1,0 +1,311 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "cl-ds295-2024-interior",
+ "tier": "B",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "light, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-interim-20261014"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (Claude Code retrieval)",
+  "url": "https://nuevo.leychile.cl/servicios/Navegar/get_norma_json?idNorma=1211466",
+  "retrieved": "2026-10-14",
+  "version": "LeyChile (BCN) text as published in Diario Oficial 2025-03-01",
+  "language": "es",
+  "extent": "full",
+  "note": "Retrieved via LeyChile JSON service (obtxml returned 429 rate limit); converted to plain text."
+ },
+ "classification": {
+  "domains": [
+   "cybersecurity",
+   "data_protection"
+  ],
+  "primary_domain": "cybersecurity",
+  "mechanisms": [
+   "mandate_obligation",
+   "registration_notification",
+   "designation_tiering",
+   "standard_setting"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "essential_entity",
+   "government_agency"
+  ],
+  "affected_roles": [
+   "cloud_service_provider"
+  ],
+  "decision_margins": [
+   "firm:compliance_process"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national"
+   ],
+   "description": "Applies to public and private institutions providing essential services and to vital operators in Chile, which must report to the national CSIRT.",
+   "evidence": {
+    "provision": "Artículo 2°",
+    "quote": "Las instituciones públicas y privadas que presten servicios calificados como esenciales"
+   }
+  },
+  "agora_risk_factors": [
+   "Security: Cybersecurity"
+  ],
+  "agora_strategies": [
+   "Disclosure: About incidents"
+  ]
+ },
+ "summary": {
+  "short": "Regulation implementing Law 21.663 (Chile) requires essential-service providers and vital operators to report significant cybersecurity incidents to the national CSIRT: an early alert within three hours, a second report after 72 hours, and a final report within 15 days of the alert.",
+  "long": "Chile's regulation under Law 21.663 sets reporting rules for significant cybersecurity incidents. Essential-service providers and vital operators must report to the national CSIRT. An incident is significant if it can interrupt an essential service, affect physical integrity or health, affect IT assets or networks even without immediate service impact, enter systems without authorisation, or affect systems holding personal data; the number of people affected, duration and geographic extent are also considered (Art. 3). Reports go through the Agency's platform, which operates 24 hours a day (Art. 8). Reporting is staged: an early alert within three hours of becoming aware of the incident (Art. 9), a second report after 72 hours (Art. 10; 24 hours for a vital operator whose essential services are affected), an action plan within seven calendar days for vital operators (Art. 11), and a final report within 15 calendar days of the early alert once the incident has been managed (Art. 12). Partial reports are due every 15 days for prolonged incidents (Art. 13). Reports must omit personal data (Art. 6). Planned maintenance is not an incident (Art. 4). The Director may exempt incident categories and essential-service providers from notification (Art. 3). Heads of state bodies must require IT service providers to share vulnerability and incident information (Art. 15). The regulation takes effect when the Agency starts its activities (first transitional article)."
+ },
+ "relations": [
+  {
+   "relation": "legal_basis",
+   "target_text": "Ley N° 21.663, marco de Ciberseguridad",
+   "note": "Enabling act. Considerandos 5 and 6 state that the contents of the reports and the notification procedure are to be set by this regulation under the Ley's art. 9 and art. 27.",
+   "evidence": {
+    "provision": "Vistos",
+    "quote": "en la Ley N° 21.663, marco de Ciberseguridad"
+   }
+  },
+  {
+   "relation": "legal_basis",
+   "target_text": "Constitución Política de la República de Chile, arts. 32 N° 6 and 35",
+   "note": "Constitutional power to issue regulations, cited in the preamble.",
+   "evidence": {
+    "provision": "Vistos",
+    "quote": "Lo dispuesto en el artículo 32, N° 6, y 35 de la Constitución Política de la República de Chile"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Decreto supremo N° 164, de 2023 (Política Nacional de Ciberseguridad 2023-2028)",
+   "note": "Cited as the national policy whose objective of resilient infrastructure the regulation's background refers to (Considerando 3).",
+   "evidence": {
+    "provision": "Vistos",
+    "quote": "el decreto supremo N° 164, de 2023, del Ministerio del Interior y Seguridad Pública, que aprueba la Política Nacional de Ciberseguridad 2023-2028"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Ley N° 20.502 (creates the Ministerio del Interior y Seguridad Pública)",
+   "note": "Cited as the basis for identifying the Ministry in charge of public security as the issuing authority (Considerando 9).",
+   "evidence": {
+    "provision": "Considerando 9",
+    "quote": "en virtud de lo dispuesto en el artículo 2° de la ley N° 20.502"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Ley N° 19.628, sobre Protección de la Vida Privada",
+   "note": "Art. 6 requires incident reports to omit personal data, by reference to art. 2 letter f) of that law; IP addresses are stated not to count as personal data.",
+   "evidence": {
+    "provision": "Artículo 6°",
+    "quote": "conforme a lo dispuesto en el artículo 2°, letra f), de la Ley N° 19.628, sobre Protección de la Vida Privada"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Decreto con fuerza de ley N° 1, de 2020 (Ministerio Secretaría General de la Presidencia)",
+   "note": "Its gradualidad rules govern when electronic notifications under this regulation begin to be practised (transitional article).",
+   "evidence": {
+    "provision": "Artículo segundo transitorio",
+    "quote": "de conformidad a las reglas de gradualidad dispuestas en el decreto con fuerza de ley N° 1, de 2020"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Ley N° 21.180, de Transformación Digital del Estado",
+   "note": "Cited for the electronic notification of procedures (art. 7) and in the transitional article on gradualidad.",
+   "evidence": {
+    "provision": "Artículo 7°",
+    "quote": "Ley N° 21.180 sobre Transformación Digital del Estado"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Decreto supremo N° 4, de 2020 (reglamento on electronic expression of administrative procedures)",
+   "note": "Applies to notifications where the institution has not reported an email address (art. 7).",
+   "evidence": {
+    "provision": "Artículo 7°",
+    "quote": "decreto supremo N° 4, de 2020, del Ministerio Secretaría General de la Presidencia"
+   }
+  }
+ ],
+ "notes": "Enabling act is Ley 21.663. The Vistos also cite DFL 1/19.653 (Ley 18.575), Ley 19.880 and Contraloría Res. 7/2019; the text gives them no operative link, so they are not coded. Inconsistencies: Art. 1 l) defines the Plataforma by reference to Art. 2, which does not mention it (the platform is in Art. 8). Art. 1 k) refers to 'su Reglamento' of the Ley, which appears to be a separate instrument not in this document. Art. 10 contains 'plazo de máximo de setenta y dos horas' (wording only). The section_status entry is included only because the schema requires it; relations are coded in the array.",
+ "events": [
+  {
+   "event": "signed",
+   "date": "2024-09-25",
+   "date_type": "absolute",
+   "date_text": "Santiago, 25 de septiembre de 2024",
+   "applies_to": "Reglamento de reporte de incidentes de ciberseguridad de la Ley N° 21.663",
+   "evidence": {
+    "provision": "Decreto N° 295, encabezado",
+    "quote": "Núm. 295.- Santiago, 25 de septiembre de 2024."
+   }
+  },
+  {
+   "event": "consultation",
+   "date": "2024-07-29",
+   "date_type": "absolute",
+   "date_text": "durante los días 29, 30 y 31 de julio de 2024 se realizó un proceso de diálogo público privado",
+   "applies_to": "Elaboración del reglamento (diálogo público privado)",
+   "evidence": {
+    "provision": "Considerando 7",
+    "quote": "durante los días 29, 30 y 31 de julio de 2024 se realizó un proceso de diálogo público privado"
+   }
+  },
+  {
+   "event": "consultation",
+   "date": "2024-08-07",
+   "date_type": "absolute",
+   "date_text": "durante los días 7 y 12 de agosto de 2024 se publicó el borrador del presente reglamento",
+   "applies_to": "Borrador del reglamento publicado para observaciones",
+   "evidence": {
+    "provision": "Considerando 8",
+    "quote": "durante los días 7 y 12 de agosto de 2024 se publicó el borrador del presente reglamento"
+   }
+  },
+  {
+   "event": "published",
+   "date": null,
+   "date_type": "not_stated",
+   "date_text": "publíquese",
+   "applies_to": "Reglamento de reporte de incidentes de ciberseguridad",
+   "evidence": {
+    "provision": "Firma final del decreto",
+    "quote": "Anótese, tómese razón y publíquese."
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "comenzará a regir desde la fecha de iniciación de las actividades de la Agencia",
+   "depends_on": "fecha de iniciación de las actividades de la Agencia, de conformidad al artículo 1° transitorio de la Ley N° 21.663",
+   "applies_to": "Reglamento de reporte de incidentes de ciberseguridad (en su conjunto)",
+   "evidence": {
+    "provision": "Disposiciones transitorias, Artículo primero transitorio",
+    "quote": "El presente Reglamento comenzará a regir desde la fecha de iniciación de las actividades de la Agencia"
+   }
+  },
+  {
+   "event": "application",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "comenzarán a practicarse de conformidad a las reglas de gradualidad",
+   "depends_on": "reglas de gradualidad dispuestas en el decreto con fuerza de ley N° 1, de 2020 (Ley N° 21.180)",
+   "applies_to": "Notificaciones electrónicas dispuestas en el reglamento; until that regime applies, notifications are made by certified letter",
+   "evidence": {
+    "provision": "Disposiciones transitorias, Artículo segundo transitorio",
+    "quote": "Las notificaciones electrónicas dispuestas en el presente reglamento comenzarán a practicarse de conformidad a las reglas de gradualidad"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "en el plazo máximo de tres horas, contado desde que hubiere tomado conocimiento de la ocurrencia del incidente",
+   "anchor": "tomar conocimiento de la ocurrencia de un incidente de ciberseguridad",
+   "applies_to": "Alerta temprana de la institución obligada a reportar",
+   "offset_value": 3,
+   "evidence": {
+    "provision": "Artículo 9°, inciso primero",
+    "quote": "deberá enviar una alerta sobre la ocurrencia del evento en el plazo máximo de tres horas"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "Transcurrido el plazo de máximo de setenta y dos horas desde que la institución hubiere tomado conocimiento",
+   "anchor": "tomar conocimiento de la ocurrencia de un incidente de ciberseguridad",
+   "applies_to": "Segundo reporte al CSIRT Nacional de la institución obligada",
+   "offset_value": 72,
+   "evidence": {
+    "provision": "Artículo 10, inciso primero",
+    "quote": "Transcurrido el plazo de máximo de setenta y dos horas desde que la institución hubiere tomado conocimiento"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "la actualización de la información, a través del segundo reporte, deberá entregarse en el plazo máximo de veinticuatro horas",
+   "anchor": "segundo reporte (Artículo 10); the text does not state the starting point more precisely",
+   "applies_to": "Operadores de importancia vital cuya prestación de servicios esenciales se vea afectada por el incidente",
+   "offset_value": 24,
+   "evidence": {
+    "provision": "Artículo 10, inciso primero",
+    "quote": "la actualización de la información, a través del segundo reporte, deberá entregarse en el plazo máximo de veinticuatro horas"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "en un plazo que, en ningún caso, podrá ser superior siete días corridos, contados desde que se tiene conocimiento de la ocurrencia del ciberataque o incidente de ciberseguridad",
+   "anchor": "conocimiento de la ocurrencia del ciberataque o incidente de ciberseguridad",
+   "applies_to": "Plan de acción frente al incidente de los operadores de importancia vital",
+   "offset_value": 7,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Artículo 11, inciso primero",
+    "quote": "en un plazo que, en ningún caso, podrá ser superior siete días corridos, contados desde que se tiene conocimiento"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "Dentro del plazo máximo de quince días corridos contados desde el envío de la alerta temprana y siempre que el incidente hubiese sido gestionado",
+   "anchor": "envío de la alerta temprana",
+   "applies_to": "Informe final de incidente gestionado",
+   "offset_value": 15,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Artículo 12, inciso primero",
+    "quote": "Dentro del plazo máximo de quince días corridos contados desde el envío de la alerta temprana"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "Dichos informes deberán actualizarse cada quince días contados desde el último envío",
+   "anchor": "último envío del informe parcial",
+   "applies_to": "Informes parciales de incidente de ocurrencia prolongada (cuando el incidente no se hubiera gestionado en el plazo del artículo 12)",
+   "offset_value": 15,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Artículo 13",
+    "quote": "Dichos informes deberán actualizarse cada quince días contados desde el último envío."
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "other",
+   "variable_text": "participación accionaria del Estado en empresas y sociedades (State ownership stake)",
+   "operator": ">",
+   "value": 50,
+   "value_text": "participación accionaria superior al 50%",
+   "unit": "percent",
+   "measurement": "Ownership stake held by the State (éste) in the company; alternative test is majority on the board (mayoría en el directorio), not numeric",
+   "level": "entity",
+   "trigger": "scope_definition",
+   "consequence": "The regulation's provisions apply to state companies and companies in which the State holds the stated stake",
+   "conditions": "Alternative to majority in the board of directors (mayoría en el directorio)",
+   "evidence": {
+    "provision": "Artículo 1° letra a)",
+    "quote": "Las disposiciones de este reglamento serán aplicables a las empresas del Estado y sociedades en que éste tenga participación accionaria superior al 50% o mayoría en el directorio."
+   }
+  }
+ ],
+ "section_status": {}
+}

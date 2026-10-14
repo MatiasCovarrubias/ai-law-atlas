@@ -1,0 +1,1951 @@
+{
+ "instrument_id": "mx-lmtr-2025",
+ "checker": "claude-opus-5-5 (Claude Code)",
+ "protocol": "VP-1.0",
+ "date": "2026-10-14",
+ "reference": [
+  {
+   "category": "threshold",
+   "provision": "Art. 16 frac. II",
+   "quote": "Tener cuando menos treinta y cinco años cumplidos al día de la designación;",
+   "value": "age >= 35 years: eligibility to be a Commissioner (Persona Comisionada) of the Comisión Reguladora de Telecomunicaciones",
+   "match": {
+    "X": 4,
+    "Y": 3
+   }
+  },
+  {
+   "category": "threshold",
+   "provision": "Art. 16 frac. III",
+   "quote": "No haber sido condenado por delito doloso que amerite pena de prisión por más de un año;",
+   "value": "conviction for an intentional crime carrying > 1 year prison: excludes eligibility as Commissioner",
+   "match": {
+    "X": 5,
+    "Y": 4
+   }
+  },
+  {
+   "category": "threshold",
+   "provision": "Art. 16 frac. V",
+   "quote": "Haberse desempeñado, cuando menos tres años, en actividades profesionales, de servicio público,",
+   "value": ">= 3 years of relevant professional experience: eligibility as Commissioner",
+   "match": {
+    "X": 6,
+    "Y": 5
+   }
+  },
+  {
+   "category": "threshold",
+   "provision": "Art. 16 frac. VI",
+   "quote": "durante los tres años\nprevios a su designación",
+   "value": "no listed political office in the 3 years before designation: eligibility as Commissioner",
+   "match": {
+    "X": 7,
+    "Y": 6
+   }
+  },
+  {
+   "category": "threshold",
+   "provision": "Art. 16 frac. VII",
+   "quote": "No haber ocupado, en los últimos cinco años, ningún empleo, cargo o función directiva de los",
+   "value": "no management post at a regulated entity in the last 5 years: eligibility as Commissioner",
+   "match": {
+    "X": 8,
+    "Y": 7
+   }
+  },
+  {
+   "category": "threshold",
+   "provision": "Art. 94 para. 1",
+   "quote": "relación de los accionistas que sean titulares del cinco por ciento o más",
+   "value": "shareholders holding >= 5%: must be listed in the concessionaire's annual shareholding filing (by 30 June)",
+   "match": {
+    "X": 20,
+    "Y": 17
+   }
+  },
+  {
+   "category": "threshold",
+   "provision": "Art. 94 para. 1",
+   "quote": "con el diez por ciento o más del capital social de la empresa",
+   "value": "natural persons holding directly or indirectly >= 10% of capital: must be named in the filing",
+   "match": {
+    "X": 21,
+    "Y": 18
+   }
+  },
+  {
+   "category": "threshold",
+   "provision": "Art. 94 para. 2",
+   "quote": "actos, que represente el diez por ciento o más del monto de su capital social",
+   "value": "subscription or transfer of shares >= 10% of capital (when no merger notification under competition law): prior-notice regime of Art. 94 applies",
+   "match": {
+    "X": 22,
+    "Y": 19
+   }
+  },
+  {
+   "category": "threshold",
+   "provision": "Art. 94 (last paras.)",
+   "quote": "Comisión conozca la identidad de las personas físicas que tengan intereses patrimoniales mayores al diez por ciento",
+   "value": "acquiring legal person must identify natural persons with > 10% interest",
+   "match": {
+    "X": 23,
+    "Y": 20
+   }
+  },
+  {
+   "category": "threshold",
+   "provision": "Art. 147 frac. II",
+   "quote": "de canales superior al cincuenta por ciento del total de los canales de televisión abierta, incluidos",
+   "value": "preponderant / substantial-power broadcasters: multiprogramming channels may not exceed 50% of total open-TV channels in the coverage region",
+   "match": {
+    "X": 26,
+    "Y": 21
+   }
+  },
+  {
+   "category": "threshold",
+   "provision": "Art. 148 para. 1",
+   "quote": "una cobertura del cincuenta por ciento o más del territorio nacional y con mayor audiencia.",
+   "value": "satellite pay-TV must carry multiprogrammed broadcast signals with coverage >= 50% of national territory (and highest audience)",
+   "match": {
+    "X": 27,
+    "Y": 22
+   }
+  },
+  {
+   "category": "threshold",
+   "provision": "Art. 154",
+   "quote": "las señales radiodifundidas de cobertura del cincuenta por ciento o más del territorio nacional.",
+   "value": "satellite pay-TV must-carry obligation limited to broadcast signals covering >= 50% of national territory",
+   "match": {
+    "X": 28,
+    "Y": 23
+   }
+  },
+  {
+   "category": "threshold",
+   "provision": "Art. 230 frac. I, inc. a)",
+   "quote": "dieciocho por ciento del tiempo total de transmisión por cada canal de programación",
+   "value": "commercial TV stations: advertising <= 18% of total transmission time per programming channel",
+   "match": {
+    "X": 36,
+    "Y": 29
+   }
+  },
+  {
+   "category": "threshold",
+   "provision": "Art. 230 frac. I, inc. b)",
+   "quote": "En estaciones de radio, el tiempo destinado a publicidad comercial no excederá del cuarenta",
+   "value": "commercial radio stations: advertising <= 40% of total transmission time per channel",
+   "match": {
+    "X": 37,
+    "Y": 30
+   }
+  },
+  {
+   "category": "threshold",
+   "provision": "Art. 230 (pay TV/audio)",
+   "quote": "Podrán transmitir, diariamente y por canal, hasta seis minutos de publicidad por cada hora de",
+   "value": "pay TV and audio: advertising <= 6 minutes per hour per channel (product-offer channels exempt)",
+   "match": {
+    "X": 38,
+    "Y": 31
+   }
+  },
+  {
+   "category": "threshold",
+   "provision": "Art. 230 (social concessions, TV)",
+   "quote": "territoriales, no excederá del seis por ciento del tiempo total de transmisión por cada canal de",
+   "value": "social/community/indigenous/Afro-Mexican TV: public-entity advertising <= 6% of transmission time",
+   "match": {
+    "X": 39,
+    "Y": 32
+   }
+  },
+  {
+   "category": "threshold",
+   "provision": "Art. 230 (social concessions, radio)",
+   "quote": "excederá del catorce por ciento del tiempo total de transmisión por cada canal de",
+   "value": "social/community/indigenous/Afro-Mexican radio: public-entity advertising <= 14% of transmission time",
+   "match": {
+    "X": 40,
+    "Y": 33
+   }
+  },
+  {
+   "category": "threshold",
+   "provision": "Art. 241",
+   "quote": "cubran con producción nacional cuando menos un veinte por ciento de su programación, podrán incrementar el",
+   "value": "commercial broadcasters with >= 20% national production may raise the advertising percentage by up to 2 points",
+   "match": {
+    "X": 41,
+    "Y": 34
+   }
+  },
+  {
+   "category": "threshold",
+   "provision": "Art. 242",
+   "quote": "producción nacional independiente cuando menos un veinte por ciento de su programación, podrán incrementar el",
+   "value": "commercial broadcasters with >= 20% independent national production may raise the advertising percentage by up to 5 points",
+   "match": {
+    "X": 42,
+    "Y": 35
+   }
+  },
+  {
+   "category": "threshold",
+   "provision": "Art. 256",
+   "quote": "participación nacional mayor al cincuenta por ciento, medido este porcentaje ya sea por el número de usuarios,",
+   "value": "national share > 50% (users, subscribers, audience, traffic or capacity): Agente Económico Preponderante (asymmetric regulation)",
+   "match": {
+    "X": 46,
+    "Y": 39
+   }
+  },
+  {
+   "category": "threshold",
+   "provision": "Art. 258 frac. VII",
+   "quote": "Los concesionarios que cuenten con 12 MHz o más de espectro radioeléctrico en la",
+   "value": "broadcasters with >= 12 MHz of spectrum in the locality cannot access the preponderant broadcaster's passive-infrastructure sharing",
+   "match": {
+    "X": 47,
+    "Y": 40
+   }
+  },
+  {
+   "category": "threshold",
+   "provision": "Art. 267",
+   "quote": "reducir su participación nacional por debajo del cincuenta por ciento en el sector donde hayan sido declarados",
+   "value": "preponderant agent's divestiture plan must reduce national share below 50% in the sector",
+   "match": {
+    "X": 48,
+    "Y": null
+   }
+  },
+  {
+   "category": "threshold",
+   "provision": "Art. 287 frac. XIV",
+   "quote": "Suspender, total o parcialmente, en más del cincuenta por ciento de la zona de cobertura, sin",
+   "value": "suspension of services in > 50% of coverage area for > 24 hours (telecom) or up to 3 calendar days (broadcasting) without justification: revocation ground",
+   "match": {
+    "X": null,
+    "Y": 42
+   }
+  },
+  {
+   "category": "threshold",
+   "provision": "Art. 287 (para. after frac. XXI)",
+   "quote": "sancionado al respectivo concesionario por lo menos en dos ocasiones por cualquiera de las causas previstas en",
+   "value": ">= 2 prior final sanctions for the same grounds required before revocation in the non-immediate cases",
+   "match": {
+    "X": 51,
+    "Y": 45
+   }
+  },
+  {
+   "category": "threshold",
+   "provision": "Art. 254 frac. I",
+   "quote": "Tener cuando menos 30 años cumplidos al día de su designación;",
+   "value": "age >= 30 years: eligibility as audience defender (defensor de audiencias)",
+   "match": {
+    "X": 43,
+    "Y": 36
+   }
+  },
+  {
+   "category": "threshold",
+   "provision": "Art. 254 frac. III",
+   "quote": "No haber sido condenado por delito doloso que amerite pena de prisión por más de un año, y",
+   "value": "conviction carrying > 1 year prison: excludes eligibility as audience defender",
+   "match": {
+    "X": 44,
+    "Y": 37
+   }
+  },
+  {
+   "category": "threshold",
+   "provision": "Art. 3 frac. LIX (def. Programación de oferta de productos)",
+   "quote": "cinco minutos continuos;",
+   "value": "product-offer programming = selling content lasting > 5 continuous minutes (excluded from advertising time limits)",
+   "match": {
+    "X": 2,
+    "Y": 2
+   }
+  },
+  {
+   "category": "key_date",
+   "provision": "Header / DOF publication",
+   "quote": "Nueva Ley publicada en el Diario Oficial de la Federación el 16 de julio de 2025",
+   "value": "2025-07-16 published in the DOF",
+   "match": {
+    "X": 0,
+    "Y": 0
+   }
+  },
+  {
+   "category": "key_date",
+   "provision": "Transitorio Primero",
+   "quote": "El presente Decreto entrará en vigor al día siguiente de su publicación en el Diario Oficial de la",
+   "value": "2025-07-17 entry into force (day after publication)",
+   "match": {
+    "X": 85,
+    "Y": 74
+   }
+  },
+  {
+   "category": "key_date",
+   "provision": "Decree signature block (Congress)",
+   "quote": "Ciudad de México, a 1 de julio de 2025.- Sen. Gerardo Fernández Noroña, Presidente.- Dip. Sergio Carlos",
+   "value": "2025-07-01 approved by Congress (legislative approval)",
+   "match": {
+    "X": 83,
+    "Y": 95
+   }
+  },
+  {
+   "category": "key_date",
+   "provision": "Decree promulgation",
+   "quote": "Ejecutivo Federal, en la Ciudad de México, a 15 de julio de 2025.- Claudia Sheinbaum Pardo, Presidenta de los",
+   "value": "2025-07-15 promulgated / signed by the President",
+   "match": {
+    "X": 84,
+    "Y": 96
+   }
+  },
+  {
+   "category": "key_date",
+   "provision": "Transitorio Segundo",
+   "quote": "Segundo. Al día siguiente a aquel en que se integre el Pleno de la Comisión Reguladora de Telecomunicaciones,",
+   "value": "conditional: day after the CRT plenum is integrated, the Art. 28 constitutional amendments (DOF 20-12-2024) take effect",
+   "match": {
+    "X": 87,
+    "Y": 75
+   }
+  },
+  {
+   "category": "key_date",
+   "provision": "Transitorio Quinto",
+   "quote": "Quinto. Al día siguiente a aquel en que se integre el Pleno de la Comisión Reguladora de Telecomunicaciones",
+   "value": "conditional: day after CRT plenum integration, conflicting provisions derogated and references to IFT read as CRT / CNA",
+   "match": {
+    "X": 90,
+    "Y": 78
+   }
+  },
+  {
+   "category": "key_date",
+   "provision": "Transitorio Sexto",
+   "quote": "Sexto. Al día siguiente a aquel en que se integre el Pleno de la Comisión Reguladora de Telecomunicaciones, se",
+   "value": "conditional: day after CRT plenum integration, the Ley Federal de Telecomunicaciones y Radiodifusión (2014) is abrogated",
+   "match": {
+    "X": 91,
+    "Y": 79
+   }
+  },
+  {
+   "category": "key_date",
+   "provision": "Transitorio Octavo",
+   "quote": "se extingue el Instituto Federal de Telecomunicaciones, y concluirán sus funciones los Comisionados del citado",
+   "value": "conditional: day after CRT plenum integration, the IFT is extinguished",
+   "match": {
+    "X": 93,
+    "Y": 81
+   }
+  },
+  {
+   "category": "key_date",
+   "provision": "Transitorio Cuarto para. 2",
+   "quote": "hayan entrado en funciones de los años 2028, 2029, 2030, 2031 y 2032, respectivamente.",
+   "value": "staggered end of first Commissioners' terms in 2028, 2029, 2030, 2031 and 2032",
+   "match": {
+    "X": 88,
+    "Y": 76
+   }
+  },
+  {
+   "category": "key_date",
+   "provision": "Transitorio Vigésimo Segundo",
+   "quote": "constancia de registro correspondiente, a partir de la entrada en vigor del presente Decreto",
+   "value": "pre-2014 permits must request transition from entry into force until one year later (2026-07-17); otherwise titles lapse and frequencies revert",
+   "match": {
+    "X": 97,
+    "Y": 87
+   }
+  },
+  {
+   "category": "key_date",
+   "provision": "Transitorio Vigésimo Noveno",
+   "quote": "convenios de interconexión a que se refiere el artículo 114 del presente Decreto, con vigencia a partir del 1 de enero",
+   "value": "2026-01-01: interconnection agreements effective from this date apply 2025 tariffs and minimum technical conditions",
+   "match": {
+    "X": 99,
+    "Y": 91
+   }
+  },
+  {
+   "category": "key_date",
+   "provision": "Transitorio Trigésimo para. 2",
+   "quote": "Transcurridos ciento veinte días hábiles posteriores a la conclusión de la implementación de la medida a la que",
+   "value": "conditional: 120 business days after completion of mobile-line identification, unidentified lines are suspended (guidelines due within 120 business days of entry into force)",
+   "match": {
+    "X": null,
+    "Y": 93
+   }
+  },
+  {
+   "category": "sanction",
+   "provision": "Art. 281 para. 2",
+   "quote": "por la PROFECO con multa por el equivalente de 0.01% hasta 3% de los ingresos del concesionario, autorizado o",
+   "value": "PROFECO fine 0.01%-3% of income for infringements of user rights",
+   "match": {
+    "X": 22,
+    "Y": 12
+   }
+  },
+  {
+   "category": "sanction",
+   "provision": "Art. 282 inc. A); Art. 283 frac. I",
+   "quote": "Con multa por el equivalente de 0.01% hasta 0.75% de los ingresos del concesionario, autorizado,",
+   "value": "CRT fine 0.01%-0.75% of income (late filings, homologation/unlocking, registration); warning for first infraction; none on spontaneous compliance; fallback cap 20 million UMA",
+   "match": {
+    "X": 23,
+    "Y": 13
+   }
+  },
+  {
+   "category": "sanction",
+   "provision": "Art. 282 inc. B); Art. 283 frac. II",
+   "quote": "Con multa por el equivalente de 0.01% hasta 3% de los ingresos del concesionario, autorizado,",
+   "value": "CRT fine 0.01%-3% of income (other violations, concession conditions); fallback cap 202 million UMA",
+   "match": {
+    "X": 24,
+    "Y": 14
+   }
+  },
+  {
+   "category": "sanction",
+   "provision": "Art. 282 inc. C); Art. 283 frac. III",
+   "quote": "Con multa por el equivalente de 1% hasta 3% de los ingresos del concesionario, autorizado, o persona",
+   "value": "CRT fine 1%-3% of income (arbitrary blocking of Internet access users, exclusive property contracts); fallback cap 101 million UMA",
+   "match": {
+    "X": 25,
+    "Y": 15
+   }
+  },
+  {
+   "category": "sanction",
+   "provision": "Art. 282 inc. D); Art. 283 frac. IV",
+   "quote": "Con multa por el equivalente de 1.1% hasta 4% de los ingresos del concesionario, autorizado o",
+   "value": "CRT fine 1.1%-4% of income (advertising exclusivity, EMF limits, terminal barriers, collaboration with justice, false user information); fallback cap 163 million UMA",
+   "match": {
+    "X": 26,
+    "Y": 16
+   }
+  },
+  {
+   "category": "sanction",
+   "provision": "Art. 282 inc. E); Art. 283 frac. V",
+   "quote": "Con multa por el equivalente del 2.01% hasta 6% de los ingresos del concesionario, autorizado o",
+   "value": "CRT fine 2.01%-6% of income (interconnection, interception, privacy of communications, tariffs, asymmetric regulation); fallback cap 202 million UMA",
+   "match": {
+    "X": 27,
+    "Y": 17
+   }
+  },
+  {
+   "category": "sanction",
+   "provision": "Art. 282 inc. F); Art. 283 frac. VI",
+   "quote": "Con multa por el equivalente de 6.01% hasta 10% de los ingresos de la persona infractora",
+   "value": "CRT fine 6.01%-10% of income (operating without concession; unjustified total interruption where sole provider); fallback cap 246 million UMA",
+   "match": {
+    "X": 28,
+    "Y": 18
+   }
+  },
+  {
+   "category": "sanction",
+   "provision": "Art. 284",
+   "quote": "Artículo 284. En caso de reincidencia, la Comisión podrá imponer una multa equivalente hasta el doble de las",
+   "value": "recidivism: fine up to double the amounts",
+   "match": {
+    "X": 23,
+    "Y": 20
+   }
+  },
+  {
+   "category": "sanction",
+   "provision": "Art. 287",
+   "quote": "Artículo 287. Las concesiones, las autorizaciones y, en su caso, las constancias de registro se podrán revocar",
+   "value": "revocation of concessions, authorizations and registration certificates (21 grounds; immediate for listed fractions)",
+   "match": {
+    "X": 29,
+    "Y": 24
+   }
+  },
+  {
+   "category": "sanction",
+   "provision": "Art. 288",
+   "quote": "obtener, por sí o través de otra persona, nuevas concesiones o autorizaciones de las previstas en esta Ley, por un",
+   "value": "holder of revoked concession disqualified from new concessions/authorizations for 5 years",
+   "match": {
+    "X": 30,
+    "Y": 25
+   }
+  },
+  {
+   "category": "sanction",
+   "provision": "Art. 289",
+   "quote": "perderán en beneficio de la Nación los bienes, instalaciones y equipos empleados en la comisión de dichas",
+   "value": "forfeiture of goods, installations and equipment for unlicensed service or obstruction of general means of communication",
+   "match": {
+    "X": 31,
+    "Y": 26
+   }
+  },
+  {
+   "category": "sanction",
+   "provision": "Art. 290",
+   "quote": "será castigado con un año a ocho años de prisión y",
+   "value": "criminal: 1-8 years prison and fine 7,000-36,000 UMA for damaging telecom/broadcast infrastructure; 12-15 years with explosives",
+   "match": {
+    "X": 32,
+    "Y": 27
+   }
+  },
+  {
+   "category": "sanction",
+   "provision": "Art. 292 frac. I",
+   "quote": "Con apercibimiento por una sola vez o multa por el equivalente de 0.01% hasta el 0.75% de los",
+   "value": "SEGOB: warning or fine 0.01%-0.75% of income (late filings on content matters)",
+   "match": {
+    "X": 33,
+    "Y": 28
+   }
+  },
+  {
+   "category": "sanction",
+   "provision": "Art. 292 frac. II",
+   "quote": "Con apercibimiento por una sola vez o multa por el equivalente de 0.76% hasta el 2.5% de los",
+   "value": "SEGOB: warning or fine 0.76%-2.5% of income (state time, national chains, sponsorship duration, classification)",
+   "match": {
+    "X": 34,
+    "Y": 29
+   }
+  },
+  {
+   "category": "sanction",
+   "provision": "Art. 292 frac. III",
+   "quote": "Con multa por el equivalente de 2% hasta el 5% de los ingresos del concesionario, autorizado,",
+   "value": "SEGOB: fine 2%-5% of income of concessionaire, authorized party, programmer or digital platform (sponsorship rules; Art. 232 advertising prohibition)",
+   "match": {
+    "X": 35,
+    "Y": 30
+   }
+  },
+  {
+   "category": "sanction",
+   "provision": "Art. 295 frac. I",
+   "quote": "Con multa por el equivalente al doble de los ingresos obtenidos por el concesionario, derivados de",
+   "value": "CRT: fine equal to double the income obtained from exceeding advertising caps",
+   "match": {
+    "X": 36,
+    "Y": 31
+   }
+  },
+  {
+   "category": "sanction",
+   "provision": "Art. 295 frac. II",
+   "quote": "Con multa por el equivalente de 0.01% hasta el 1% de los ingresos acumulables del concesionario,",
+   "value": "CRT: fine 0.01%-1% of income for audience-defence failures (no mechanisms, no defender, no code of ethics)",
+   "match": {
+    "X": 37,
+    "Y": 32
+   }
+  },
+  {
+   "category": "sanction",
+   "provision": "Art. 280",
+   "quote": "Multa de 100 a 20,000 del valor diario de la de Unidad de Medida y Actualización;",
+   "value": "coercive measures (medios de apremio): fine 100-20,000 UMA, additional daily fine up to 10 days for blocking verification, public force",
+   "match": {
+    "X": 21,
+    "Y": 11
+   }
+  }
+ ],
+ "judgments": {
+  "X": {
+   "thresholds": [
+    {
+     "index": 0,
+     "verdict": "correct",
+     "note": "definitional scope of 'espectro radioeléctrico'"
+    },
+    {
+     "index": 2,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 4,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 6,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 8,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 10,
+     "verdict": "correct",
+     "note": "recusal impediment cutoff for Commissioners"
+    },
+    {
+     "index": 12,
+     "verdict": "correct",
+     "note": "maximum concession term coded as benefit_duration; accepted"
+    },
+    {
+     "index": 14,
+     "verdict": "correct",
+     "note": "maximum concession term; accepted"
+    },
+    {
+     "index": 16,
+     "verdict": "correct",
+     "note": "instalment payment window; benefit_duration would be more precise"
+    },
+    {
+     "index": 18,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 20,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 22,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 24,
+     "verdict": "correct",
+     "note": "delegated reference minimum (value null, depends_on)"
+    },
+    {
+     "index": 26,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 28,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 30,
+     "verdict": "unsupported",
+     "note": "Art. 143 'previo al inicio de la última tercera parte de la vida útil del satélite' is a filing deadline (event), not a threshold; codebook 3.4"
+    },
+    {
+     "index": 32,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 34,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 36,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 38,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 40,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 42,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 44,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 46,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 48,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 50,
+     "verdict": "correct",
+     "note": "delegated accumulation cap"
+    }
+   ],
+   "events": [
+    {
+     "index": 0,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 3,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 6,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 9,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 12,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 15,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 18,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 21,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 24,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 27,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 30,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 33,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 36,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 39,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 42,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 45,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 48,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 51,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 54,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 57,
+     "verdict": "correct",
+     "note": "data-retention period coded as a deadline; acceptable"
+    },
+    {
+     "index": 60,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 63,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 66,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 69,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 72,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 75,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 78,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 81,
+     "verdict": "wrong_type",
+     "note": "Art. 267 VI 18-month waiting period is the earliest point an authorization may be granted (eligibility/application), not a deadline"
+    },
+    {
+     "index": 84,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 87,
+     "verdict": "correct",
+     "note": "Transitorio Segundo of this decree sets when the Art. 28 constitutional amendments take effect"
+    },
+    {
+     "index": 90,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 93,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 96,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 99,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 102,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 105,
+     "verdict": "correct",
+     "note": ""
+    }
+   ],
+   "obligations": [
+    {
+     "index": 0,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 7,
+     "verdict": "duplicate",
+     "note": "codebook 3.5 granularity: one row per article, addressee role and obligation type; repeats row [6] (same article, role, type)"
+    },
+    {
+     "index": 14,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 21,
+     "verdict": "correct",
+     "note": "cooperation_with_authority would fit better than other"
+    },
+    {
+     "index": 28,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 35,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 42,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 49,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 56,
+     "verdict": "correct",
+     "note": "physical presence at domestic IXPs coded as localization; borderline but acceptable"
+    },
+    {
+     "index": 63,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 70,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 77,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 84,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 91,
+     "verdict": "duplicate",
+     "note": "codebook 3.5 granularity: one row per article, addressee role and obligation type; repeats row [90] (same article, role, type)"
+    },
+    {
+     "index": 98,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 105,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 112,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 119,
+     "verdict": "duplicate",
+     "note": "codebook 3.5 granularity: one row per article, addressee role and obligation type; repeats row [117] (same article, role, type)"
+    },
+    {
+     "index": 126,
+     "verdict": "duplicate",
+     "note": "codebook 3.5 granularity: one row per article, addressee role and obligation type; repeats row [125] (same article, role, type)"
+    },
+    {
+     "index": 133,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 140,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 147,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 154,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 161,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 168,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 175,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 182,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 189,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 196,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 203,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 210,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 217,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 224,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 231,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 238,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 245,
+     "verdict": "correct",
+     "note": ""
+    }
+   ],
+   "enforcement": [
+    {
+     "index": 0,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 1,
+     "verdict": "duplicate",
+     "note": "restates a Title XIV regime coded in row [36] (competence or generic cross-reference, not a separate sanction regime)"
+    },
+    {
+     "index": 2,
+     "verdict": "duplicate",
+     "note": "restates a Title XIV regime coded in row [37] (competence or generic cross-reference, not a separate sanction regime)"
+    },
+    {
+     "index": 3,
+     "verdict": "unsupported",
+     "note": "Art. 10 LIV is a duty of the Commission to report supervision results to other ministries, not a sanction regime"
+    },
+    {
+     "index": 4,
+     "verdict": "duplicate",
+     "note": "restates a Title XIV regime coded in row [27] (competence or generic cross-reference, not a separate sanction regime)"
+    },
+    {
+     "index": 5,
+     "verdict": "duplicate",
+     "note": "Art. 10 XXXII general power to impose sanctions; the regimes are coded in rows [21]-[37]"
+    },
+    {
+     "index": 6,
+     "verdict": "duplicate",
+     "note": "restates a Title XIV regime coded in row [31] (competence or generic cross-reference, not a separate sanction regime)"
+    },
+    {
+     "index": 7,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 8,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 9,
+     "verdict": "duplicate",
+     "note": "restates a Title XIV regime coded in row [29] (competence or generic cross-reference, not a separate sanction regime)"
+    },
+    {
+     "index": 10,
+     "verdict": "correct",
+     "note": "rescate without compensation where non-compliance is a ground; borderline, accepted"
+    },
+    {
+     "index": 11,
+     "verdict": "duplicate",
+     "note": "Art. 115 only refers to sanctions 'conforme a lo dispuesto en la presente Ley'; regime coded in [27]/[29]"
+    },
+    {
+     "index": 12,
+     "verdict": "duplicate",
+     "note": "Art. 76 refers to sanctions under this Law (coded in [24]); ITU cancellation is an act of the ITU"
+    },
+    {
+     "index": 13,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 14,
+     "verdict": "correct",
+     "note": "specific revocation ground for persistent suspension (Art. 146)"
+    },
+    {
+     "index": 15,
+     "verdict": "correct",
+     "note": "Art. 157 is the specific source of the revocation also listed in Art. 287 XV"
+    },
+    {
+     "index": 16,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 17,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 18,
+     "verdict": "duplicate",
+     "note": "Art. 208 IV repeats the precautionary-suspension power of Art. 10 LIII coded in [0]"
+    },
+    {
+     "index": 19,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 20,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 21,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 22,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 23,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 24,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 25,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 26,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 27,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 28,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 29,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 30,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 31,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 32,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 33,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 34,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 35,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 36,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 37,
+     "verdict": "correct",
+     "note": ""
+    }
+   ]
+  },
+  "Y": {
+   "thresholds": [
+    {
+     "index": 0,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 2,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 4,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 6,
+     "verdict": "wrong_value",
+     "note": "operator '=' 3 years; the exclusion applies to office held within the 3 years before designation (<= 3 years)"
+    },
+    {
+     "index": 8,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 10,
+     "verdict": "correct",
+     "note": "maximum concession term coded as cap; accepted"
+    },
+    {
+     "index": 12,
+     "verdict": "correct",
+     "note": "maximum concession term; accepted"
+    },
+    {
+     "index": 14,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 16,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 18,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 20,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 22,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 24,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 26,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 28,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 30,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 32,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 34,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 36,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 38,
+     "verdict": "wrong_value",
+     "note": "operator '=' 2 years; the exclusion applies to work for the concessionaire within the 2 years before appointment"
+    },
+    {
+     "index": 40,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 42,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 44,
+     "verdict": "correct",
+     "note": "'hasta por tres días naturales' read as > 3 days for broadcasting; acceptable"
+    }
+   ],
+   "events": [
+    {
+     "index": 0,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 3,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 6,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 9,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 12,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 15,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 18,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 21,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 24,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 27,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 30,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 33,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 36,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 39,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 42,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 45,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 48,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 51,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 54,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 57,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 60,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 63,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 66,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 69,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 72,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 75,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 78,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 81,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 84,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 87,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 90,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 93,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 96,
+     "verdict": "correct",
+     "note": ""
+    }
+   ],
+   "obligations": [
+    {
+     "index": 0,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 7,
+     "verdict": "duplicate",
+     "note": "codebook 3.5 granularity: one row per article, addressee role and obligation type; repeats row [5] (same article, role, type)"
+    },
+    {
+     "index": 14,
+     "verdict": "duplicate",
+     "note": "codebook 3.5 granularity: one row per article, addressee role and obligation type; repeats row [5] (same article, role, type)"
+    },
+    {
+     "index": 21,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 28,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 35,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 42,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 49,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 56,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 63,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 70,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 77,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 84,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 91,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 98,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 105,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 112,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 119,
+     "verdict": "unsupported",
+     "note": "Art. 157 revocation is a sanction (coded in enforcement [21]); a penalty coded as an obligation"
+    },
+    {
+     "index": 126,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 133,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 140,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 147,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 154,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 161,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 168,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 175,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 182,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 189,
+     "verdict": "correct",
+     "note": "provision field holds a quote instead of an article number"
+    },
+    {
+     "index": 196,
+     "verdict": "correct",
+     "note": "provision field holds a quote instead of an article number (Art. 226)"
+    },
+    {
+     "index": 203,
+     "verdict": "correct",
+     "note": "provision field holds a quote instead of an article number"
+    },
+    {
+     "index": 210,
+     "verdict": "correct",
+     "note": "provision field holds a quote instead of an article number (Art. 241)"
+    },
+    {
+     "index": 217,
+     "verdict": "correct",
+     "note": "provision field holds a quote instead of an article number"
+    },
+    {
+     "index": 224,
+     "verdict": "correct",
+     "note": "provision field holds a quote instead of an article number (Art. 254)"
+    },
+    {
+     "index": 231,
+     "verdict": "correct",
+     "note": "provision field holds a quote instead of an article number"
+    },
+    {
+     "index": 238,
+     "verdict": "correct",
+     "note": "provision field holds a quote instead of an article number"
+    },
+    {
+     "index": 245,
+     "verdict": "correct",
+     "note": "provision field holds a quote instead of an article number (Art. 271); summary mistranslates 'Estados Unidos Mexicanos'"
+    },
+    {
+     "index": 252,
+     "verdict": "correct",
+     "note": "provision field holds a quote instead of an article number (Art. 278)"
+    },
+    {
+     "index": 259,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 266,
+     "verdict": "correct",
+     "note": ""
+    }
+   ],
+   "enforcement": [
+    {
+     "index": 0,
+     "verdict": "duplicate",
+     "note": "Art. 10 XXXII general power to impose sanctions; regimes coded in rows [11]-[32]"
+    },
+    {
+     "index": 1,
+     "verdict": "duplicate",
+     "note": "restates a Title XIV regime coded in row [26] (competence or generic cross-reference, not a separate sanction regime)"
+    },
+    {
+     "index": 2,
+     "verdict": "duplicate",
+     "note": "restates a Title XIV regime coded in row [17] (competence or generic cross-reference, not a separate sanction regime)"
+    },
+    {
+     "index": 3,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 4,
+     "verdict": "duplicate",
+     "note": "restates a Title XIV regime coded in row [31] (competence or generic cross-reference, not a separate sanction regime)"
+    },
+    {
+     "index": 5,
+     "verdict": "unsupported",
+     "note": "Art. 10 LIV is a duty of the Commission to report supervision results to other ministries, not a sanction regime"
+    },
+    {
+     "index": 6,
+     "verdict": "duplicate",
+     "note": "Art. 115 only refers to sanctions 'conforme a lo dispuesto en la presente Ley'; regime coded in [17]/[24]"
+    },
+    {
+     "index": 7,
+     "verdict": "duplicate",
+     "note": "Art. 76 refers to sanctions under this Law (coded in [14]); ITU cancellation is an act of the ITU"
+    },
+    {
+     "index": 8,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 9,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 10,
+     "verdict": "duplicate",
+     "note": "restates a Title XIV regime coded in row [24] (competence or generic cross-reference, not a separate sanction regime)"
+    },
+    {
+     "index": 11,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 12,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 13,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 14,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 15,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 16,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 17,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 18,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 19,
+     "verdict": "correct",
+     "note": "Art. 283 fixed UMA maxima for infringers without declared income, a separate row; accepted"
+    },
+    {
+     "index": 20,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 21,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 22,
+     "verdict": "correct",
+     "note": "specific revocation ground for persistent suspension (Art. 146)"
+    },
+    {
+     "index": 23,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 24,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 25,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 26,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 27,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 28,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 29,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 30,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 31,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 32,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 33,
+     "verdict": "correct",
+     "note": "line suspension for unidentified users (Transitorio Trigésimo) accepted as an enforcement consequence; borderline"
+    }
+   ]
+  }
+ },
+ "sampling": {
+  "X": {
+   "events": 3,
+   "thresholds": 2,
+   "obligations": 7
+  },
+  "Y": {
+   "events": 3,
+   "thresholds": 2,
+   "obligations": 7
+  }
+ },
+ "classification": {
+  "X": {
+   "domains": "right",
+   "primary_domain": "right",
+   "note": "no telecom domain in the vocabulary; platforms_competition (asymmetric regulation) is a defensible primary; online_safety_content rests on audiovisual content rules"
+  },
+  "Y": {
+   "domains": "right",
+   "primary_domain": "right",
+   "note": "same as X without online_safety_content; both acceptable"
+  }
+ },
+ "reference_scope": "operative articles only",
+ "notes": "Very long text (413K characters, 299 articles + 32 transitory articles); both versions were annotated in three parts and merged. Systematic sampling: X events k=3 (36 of 106), thresholds k=2 (26 of 52), obligations k=7 (36 of 249), enforcement all 38; Y events k=3 (33 of 98), thresholds k=2 (23 of 46), obligations k=7 (39 of 270), enforcement all 34. Reference list restricted to operative cutoffs, key dates and Title XIV sanctions (see reference_note in the reference file). Both versions code Art. 10 (and Art. 115, 76, 98) competence or cross-reference clauses as separate sanction rows; judged duplicate of the Title XIV regime rows by the same rule in both. Y cites many obligations with a quote in the provision field instead of an article number (from index ~180 onward); content judged on its merits. X records the Art. 284 recidivism doubling inside the Art. 282 rows; Y as its own row. X misses the Art. 287 XIV revocation cutoffs (>50% coverage, >24 h / 3 days); Y misses the Art. 267 below-50% plan cutoff and does not code the Art. 208 IV / 209 XI precautionary suspensions."
+}

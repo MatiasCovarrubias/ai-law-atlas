@@ -1,0 +1,1048 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "us-de-hb154-2023",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (connectors/fetch_texts.py)",
+  "url": "https://legis.delaware.gov/json/BillDetail/GeneratePdfDocument?legislationId=140388&legislationTypeId=1&docTypeId=2&legislationName=HB154",
+  "retrieved": "2026-10-13",
+  "version": "as fetched",
+  "language": "en",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "data_protection",
+   "consumer_protection",
+   "algorithmic_decision_systems",
+   "minors_child_safety"
+  ],
+  "primary_domain": "data_protection",
+  "mechanisms": [
+   "mandate_obligation",
+   "prohibition_ban",
+   "disclosure_transparency"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "data_controller",
+   "data_processor",
+   "government_agency"
+  ],
+  "affected_roles": [
+   "consumers_users",
+   "minors"
+  ],
+  "decision_margins": [
+   "household:data_privacy",
+   "household:information",
+   "firm:compliance_process",
+   "firm:pricing"
+  ],
+  "territorial_scope": {
+   "types": [
+    "subnational",
+    "extraterritorial"
+   ],
+   "description": "Applies to persons conducting business in Delaware and to persons whose products or services are targeted to Delaware residents.",
+   "evidence": {
+    "provision": "§ 12D-103(a)",
+    "quote": "This chapter applies to persons that conduct business in the State or persons that produce products or services"
+   }
+  },
+  "agora_harms": [
+   "Violation of civil or human rights, including privacy"
+  ],
+  "agora_risk_factors": [
+   "Privacy"
+  ],
+  "agora_strategies": [
+   "Disclosure",
+   "Evaluation: Impact assessment"
+  ]
+ },
+ "summary": {
+  "short": "Creates the Delaware Personal Data Privacy Act (6 Del. C. ch. 12D). It gives Delaware residents rights to access, correct, delete and obtain a portable copy of personal data, and imposes duties on controllers and processors. Takes effect 1 January 2025 or 2026, depending on enactment date.",
+  "long": "Creates the Delaware Personal Data Privacy Act (6 Del. C. ch. 12D). Residents gain rights to confirm and access, correct, delete and obtain a portable copy of their personal data, to learn recipients, and to opt out of targeted advertising, sale, and solely automated profiling with legal or similarly significant effects. Controllers must respond within 45 days (extendable by 45), provide an appeal, honor authorized agents and opt-out preference signals, limit collection and purposes, obtain consent for sensitive data and for certain minors' data, post a privacy notice, and not discriminate against consumers who exercise rights. Processors must follow controller instructions and meet contract terms. Controllers handling data of 100,000 or more consumers must document data protection assessments for high-risk processing. Coverage: persons doing business in Delaware or targeting residents that process data of 35,000 or more consumers (or 10,000 plus over 20 percent of gross revenue from data sales); excludes state bodies, GLBA financial institutions, HIPAA data and other listed categories. The Department of Justice alone enforces, after a notice of violation with at least 60 days to cure; no private right of action is created. Takes effect 1 January 2025 if enacted on or before 1 January 2024, otherwise 1 January 2026."
+ },
+ "relations": [
+  {
+   "relation": "amends",
+   "target_text": "Title 6 of the Delaware Code",
+   "note": "Adds new Chapter 12D (§ 12D-101 to § 12D-111). Strike-through and underline markings are not visible in the extracted text, so existing provisions changed by deletion cannot be identified.",
+   "evidence": {
+    "provision": "Section 1",
+    "quote": "Amend Title 6 of the Delaware Code by making deletions as shown by strike through and insertions as"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Health Insurance Portability and Accountability Act of 1996, 42 U.S.C. § 1320d et seq.",
+   "note": "HIPAA is defined by reference; covered entities, business associates and protected health information are defined by reference to HIPAA, and protected health information is excluded (§ 12D-103(c)(1)).",
+   "evidence": {
+    "provision": "§ 12D-102(17)",
+    "quote": "means the Health Insurance Portability and Accountability Act of 1996, 42 U.S.C. § 1320d"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Children’s Online Privacy Protection Act of 1998, 15 U.S.C. § 6501 et seq. (COPPA)",
+   "note": "COPPA is defined by reference; § 12D-103(d) deems controllers and processors that comply with COPPA verifiable parental consent requirements compliant with the chapter's parental consent obligations for known children.",
+   "evidence": {
+    "provision": "§ 12D-102(10)",
+    "quote": "means the Children’s Online Privacy Protection Act of 1998, 15 U.S.C. § 6501, et seq."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Gramm Leach Bliley Act, Title V (15 U.S.C. § 6801 et seq.)",
+   "note": "Entity-level exclusion for financial institutions and affiliates to the extent subject to Title V of the Act (§ 12D-103(b)(2)).",
+   "evidence": {
+    "provision": "§ 12D-103(b)(2)",
+    "quote": "subject to Title V of the Gramm Leach Bliley Act"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Fair Credit Reporting Act (15 U.S.C. § 1681 et seq.)",
+   "note": "Data-scope exclusion for consumer reporting activity regulated and authorized under the FCRA (§ 12D-103(c)(7)).",
+   "evidence": {
+    "provision": "§ 12D-103(c)(7)",
+    "quote": "authorized under the federal Fair Credit Reporting Act (15 U.S.C. § 1681, et seq., as amended)"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Driver’s Privacy Protection Act of 1994, 18 U.S.C. § 2721 et seq.",
+   "note": "Data-scope exclusion for personal data collected, processed, sold or disclosed in compliance with the DPPA (§ 12D-103(c)(8)).",
+   "evidence": {
+    "provision": "§ 12D-103(c)(8)",
+    "quote": "Act of 1994, 18 U.S.C. § 2721, et seq., as amended"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Family Educational Rights and Privacy Act, 20 U.S.C. § 1232g et seq.",
+   "note": "Data-scope exclusion for personal data regulated by FERPA (§ 12D-103(c)(9)).",
+   "evidence": {
+    "provision": "§ 12D-103(c)(9)",
+    "quote": "regulated by the Family Educational Rights and Privacy Act, 20 U.S.C. § 1232g"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Farm Credit Act, 12 U.S.C. § 2001 et seq.",
+   "note": "Data-scope exclusion for personal data collected, processed, sold or disclosed in compliance with the Farm Credit Act (§ 12D-103(c)(10)).",
+   "evidence": {
+    "provision": "§ 12D-103(c)(10)",
+    "quote": "in compliance with the Farm Credit Act, 12 U.S.C."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Airline Deregulation Act, 49 U.S.C. § 40101 et seq. and § 41713",
+   "note": "Exclusion for personal data relating to price, route or service of air carriers, to the extent any part of the chapter is preempted by the Airline Deregulation Act.",
+   "evidence": {
+    "provision": "§ 12D-103(c)(12)",
+    "quote": "the extent any part of this chapter is preempted by the Airline Deregulation Act, 49 U.S.C. § 41713, as amended."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Chapter 12B of this title (Title 6 Delaware Code), § 12B-101(1)",
+   "note": "Breach of security is defined by reference; processors assist controllers with breach notification under this definition (§ 12D-107(a)(2)).",
+   "evidence": {
+    "provision": "§ 12D-107(a)(2)",
+    "quote": "§ 12B-101(1) of Chapter 12B of this title"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Chapter 12C of this title (Title 6 Delaware Code), § 1204C",
+   "note": "Parental consent for sensitive data of a known child is also subject to § 1204C of Chapter 12C (§ 12D-106(a)(4)).",
+   "evidence": {
+    "provision": "§ 12D-106(a)(4)",
+    "quote": "§ 1204C of Chapter 12C of this title"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Chapter 20 of this title (Title 6 Delaware Code), § 2001(4)",
+   "note": "Trade secret is defined by reference (§ 12D-102(35)); trade secrets limit access and portability rights (§ 12D-104(a)(1), (4)).",
+   "evidence": {
+    "provision": "§ 12D-102(35)",
+    "quote": "means as defined in § 2001(4) of Chapter 20 of this title"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Title 10 Delaware Code, § 901(a) and § 1041",
+   "note": "Child abuse and domestic violence are defined by reference to Title 10 (§ 12D-102(6), (15)); these terms are used in the nonprofit victim-services exclusion (§ 12D-103(c)(13)).",
+   "evidence": {
+    "provision": "§ 12D-102(6)",
+    "quote": "as defined in § 901(a) of Title"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Title 11 Delaware Code, §§ 768–780, 787, 1312 and 4201",
+   "note": "Sexual assault, human trafficking, stalking and violent felony are defined by reference to offences in Title 11 (§ 12D-102(18), (31), (32), (36)).",
+   "evidence": {
+    "provision": "§ 12D-102(18)",
+    "quote": "the offense defined in § 787 of Title 11"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "45 C.F.R. Part 46, § 46.102 (identifiable private information)",
+   "note": "Exclusion for identifiable private information used for federal human subjects protection (§ 12D-103(c)(3)).",
+   "evidence": {
+    "provision": "§ 12D-103(c)(3)",
+    "quote": "as defined in 45 CFR § 46.102"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Title 29 Delaware Code, Chapter 25, Subchapter II",
+   "note": "Investigation and prosecution by the Department of Justice proceed in accordance with this subchapter (§ 12D-111(a)).",
+   "evidence": {
+    "provision": "§ 12D-111(a)",
+    "quote": "Subchapter II of Chapter 25 of Title 29"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Chapter 25 of this title (Title 6 Delaware Code), § 2513",
+   "note": "A violation of the chapter is deemed an unlawful practice under § 2513 and a violation of Subchapter II of Chapter 25 (§ 12D-111(d)).",
+   "evidence": {
+    "provision": "§ 12D-111(d)",
+    "quote": "deemed an unlawful practice under § 2513 of Chapter 25 of this title"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Chapter 100 of Title 29 Delaware Code, § 10002(o)",
+   "note": "Data protection assessments are not public records within the meaning of § 10002(o) (§ 12D-108(c)).",
+   "evidence": {
+    "provision": "§ 12D-108(c)",
+    "quote": "within the meaning of § 10002(o) of Chapter 100 of Title 29"
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "Delaware Department of Justice",
+   "role": "designated",
+   "function": "Enforcement authority over the chapter: investigates and prosecutes violations; issues notices of violation with at least 60 days to cure (§ 12D-111(b)); receives consumer complaints on appeal (§ 12D-104(d)); may publish a list of authorized agents (§ 12D-105(b)); conducts public outreach before the effective date (Section 2).",
+   "evidence": {
+    "provision": "§ 12D-111(a)",
+    "quote": "The Department of Justice has enforcement authority over this chapter"
+   }
+  },
+  {
+   "name": "Attorney General (Delaware)",
+   "role": "designated",
+   "function": "May require a controller to disclose data protection assessments relevant to an investigation and may evaluate them for compliance (§ 12D-108(c)).",
+   "evidence": {
+    "provision": "§ 12D-108(c)",
+    "quote": "The Attorney General may require that a controller disclose any data protection assessment that is relevant to"
+   }
+  }
+ ],
+ "notes": "The document is House Bill 154 as released 05/12/2023 (sponsors and synopsis present). It contains no enactment record, so the adopted stage and the session-law citation come from registry metadata only. Section 3 sets the effective date by enactment date: 1 January 2025 if enacted on or before 1 January 2024, otherwise 1 January 2026. Two bracketed placeholders are unfilled: § 12D-106(e)(2) '[one year following the effective date of this Act]' and § 12D-108(f) '[six months following the effective date of this chapter]'. The text names both the Department of Justice and the Attorney General as enforcing bodies without stating how they relate.",
+ "events": [
+  {
+   "event": "entry_into_force",
+   "date": "2025-01-01",
+   "date_type": "conditional",
+   "date_text": "If this Act is enacted before or on January 1, 2024, this Act takes effect on January 1, 2025.",
+   "anchor": "effective date of this Act",
+   "depends_on": "Act enacted before or on January 1, 2024",
+   "applies_to": "Act as a whole",
+   "evidence": {
+    "provision": "Section 3",
+    "quote": "If this Act is enacted before or on January 1, 2024, this Act takes effect on January 1, 2025."
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2026-01-01",
+   "date_type": "conditional",
+   "date_text": "If this Act is enacted after January 1, 2024, this Act takes effect on January 1, 2026.",
+   "anchor": "effective date of this Act",
+   "depends_on": "Act enacted after January 1, 2024",
+   "applies_to": "Act as a whole",
+   "evidence": {
+    "provision": "Section 3",
+    "quote": "If this Act is enacted after January 1, 2024, this Act takes effect on January 1, 2026."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "Beginning at least 6 months prior to the effective date of this Act",
+   "anchor": "effective date of this Act",
+   "applies_to": "Department of Justice public outreach to consumers and the business community about the Act",
+   "offset_value": -6,
+   "offset_unit": "months",
+   "anchor_event": "entry_into_force",
+   "evidence": {
+    "provision": "Section 2",
+    "quote": "Beginning at least 6 months prior to the effective date of this Act, the Department of Justice shall engage in public outreach"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "Not later than [one year following the effective date of this Act]",
+   "anchor": "effective date of this Act",
+   "applies_to": "controllers: opt-out preference signal honoured for targeted advertising or sale of personal data",
+   "offset_value": 1,
+   "offset_unit": "years",
+   "anchor_event": "entry_into_force",
+   "evidence": {
+    "provision": "§ 12D-106(e)(1)a.2",
+    "quote": "Not later than [one year following the effective date of this Act], allowing a consumer to opt out of"
+   }
+  },
+  {
+   "event": "application",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "on or after [six months following the effective date of this chapter]",
+   "anchor": "effective date of this chapter",
+   "applies_to": "data protection assessments for processing activities created or generated on or after the date",
+   "offset_value": 6,
+   "offset_unit": "months",
+   "anchor_event": "entry_into_force",
+   "evidence": {
+    "provision": "§ 12D-108(f)",
+    "quote": "shall apply to processing activities created or generated on or after [six months following the effective date of this chapter]"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "not later than 45 days after receipt of the request",
+   "anchor": "receipt of consumer rights request",
+   "depends_on": "receipt of a consumer request under § 12D-104(a)",
+   "applies_to": "controllers responding to consumer rights requests",
+   "evidence": {
+    "provision": "§ 12D-104(c)(1)",
+    "quote": "A controller shall respond to the consumer without undue delay, but not later than 45 days after receipt of"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "informs the consumer of any such extension within the initial 45-day response period",
+   "anchor": "receipt of consumer rights request",
+   "depends_on": "receipt of a consumer request; controller extends response period by 45 additional days",
+   "applies_to": "controllers extending the response period for consumer rights requests",
+   "evidence": {
+    "provision": "§ 12D-104(c)(1)",
+    "quote": "any such extension within the initial 45-day response period"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "not later than 45 days after receipt of the request (notice of declining action)",
+   "anchor": "receipt of consumer rights request",
+   "depends_on": "receipt of a consumer request that the controller declines to act on",
+   "applies_to": "controllers declining consumer rights requests",
+   "evidence": {
+    "provision": "§ 12D-104(c)(2)",
+    "quote": "consumer without undue delay, but not later than 45 days after receipt of the request"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "Not later than 60 days after receipt of an appeal",
+   "anchor": "receipt of appeal",
+   "depends_on": "receipt of an appeal of a refusal to take action on a request",
+   "applies_to": "controllers responding to consumer appeals",
+   "evidence": {
+    "provision": "§ 12D-104(d)",
+    "quote": "later than 60 days after receipt of an appeal, a controller shall inform the consumer in writing"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "as soon as practicable, but not later than 15 days after the receipt of such request",
+   "anchor": "receipt of consent revocation request",
+   "depends_on": "receipt of a request to revoke consent",
+   "applies_to": "controllers ceasing processing after consent revocation",
+   "evidence": {
+    "provision": "§ 12D-106(a)(6)",
+    "quote": "cease to process the data as soon as practicable, but not later than 15 days after the receipt of such"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "the controller shall have at least 60 days to cure the violation after receipt of the notice",
+   "anchor": "receipt of notice of violation",
+   "depends_on": "receipt of a notice of violation issued by the Department of Justice",
+   "applies_to": "controllers and processors given notice of violation",
+   "evidence": {
+    "provision": "§ 12D-111(b)",
+    "quote": "the controller shall have at least 60 days to cure the violation"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "data_subjects_count",
+   "variable_text": "Controlled or processed the personal data of not less than 35,000 consumers",
+   "operator": ">=",
+   "value": 35000,
+   "value_text": "not less than 35,000 consumers",
+   "unit": "consumers",
+   "measurement": "Consumers whose personal data were controlled or processed during the preceding calendar year, excluding personal data processed solely to complete a payment transaction",
+   "level": "entity",
+   "trigger": "scope_definition",
+   "consequence": "Chapter applies to persons that conduct business in the State or target products or services to residents and meet this count (alternative to the revenue-based limb)",
+   "conditions": "Persons conduct business in the State or produce products or services targeted to residents of the State; entities in § 12D-103(b) and information in § 12D-103(c) are excluded",
+   "evidence": {
+    "provision": "§ 12D-103(a)(1)",
+    "quote": "Controlled or processed the personal data of not less than 35,000 consumers"
+   }
+  },
+  {
+   "variable": "data_subjects_count",
+   "variable_text": "Controlled or processed the personal data of not less than 10,000 consumers and derived more than 20 percent of their gross revenue from the sale of personal data",
+   "operator": ">=",
+   "value": 10000,
+   "value_text": "not less than 10,000 consumers and derived more than 20 percent of their gross revenue from the sale of personal data",
+   "unit": "consumers",
+   "measurement": "Consumers whose personal data were controlled or processed during the preceding calendar year",
+   "level": "entity",
+   "trigger": "scope_definition",
+   "consequence": "Chapter applies to persons that meet this count jointly with the revenue share test",
+   "conditions": "Joint test with the more than 20 percent gross revenue share from the sale of personal data; persons conduct business in the State or target products or services to residents",
+   "evidence": {
+    "provision": "§ 12D-103(a)(2)",
+    "quote": "not less than 10,000 consumers and derived more than 20 percent of their gross revenue from the sale of personal data"
+   }
+  },
+  {
+   "variable": "share_of_financials",
+   "variable_text": "derived more than 20 percent of their gross revenue from the sale of personal data",
+   "operator": ">",
+   "value": 20,
+   "value_text": "more than 20 percent of their gross revenue from the sale of personal data",
+   "unit": "percent",
+   "measurement": "Share of gross revenue from the sale of personal data during the preceding calendar year",
+   "level": "entity",
+   "trigger": "scope_definition",
+   "consequence": "Chapter applies to persons that meet this share jointly with the 10,000-consumer count",
+   "conditions": "Joint test with controlling or processing personal data of not less than 10,000 consumers",
+   "evidence": {
+    "provision": "§ 12D-103(a)(2)",
+    "quote": "derived more than 20 percent of their gross revenue from the sale of personal data"
+   }
+  },
+  {
+   "variable": "data_subjects_count",
+   "variable_text": "A controller that controls or processes the data of not less than 100,000 consumers",
+   "operator": ">=",
+   "value": 100000,
+   "value_text": "not less than 100,000 consumers",
+   "unit": "consumers",
+   "measurement": "Consumers whose data are controlled or processed, excluding data controlled or processed solely to complete a payment transaction",
+   "level": "entity",
+   "trigger": "obligation",
+   "consequence": "Controller must conduct and document data protection assessments, on a regular basis, for processing activities that present a heightened risk of harm to a consumer",
+   "conditions": "Applies to processing for targeted advertising, sale of personal data, certain profiling, or processing of sensitive data (§ 12D-108(a)(1) to (4))",
+   "evidence": {
+    "provision": "§ 12D-108(a)",
+    "quote": "A controller that controls or processes the data of not less than 100,000 consumers"
+   }
+  },
+  {
+   "variable": "age",
+   "variable_text": "the consumer is at least thirteen years of age but younger than 18 years of age",
+   "operator": "range",
+   "value": 13,
+   "value_max": 18,
+   "value_text": "at least thirteen years of age but younger than 18 years of age",
+   "unit": "years",
+   "measurement": "Age as known to the controller or as willfully disregarded by the controller",
+   "level": "person",
+   "trigger": "prohibition",
+   "consequence": "Controller may not process the consumer’s personal data for targeted advertising, or sell it, without the consumer’s consent",
+   "conditions": "Applies only where the controller has actual knowledge or willfully disregards the consumer’s age; range read as 13 inclusive to 18 exclusive",
+   "evidence": {
+    "provision": "§ 12D-106(a)(7)",
+    "quote": "the consumer is at least thirteen years of age but younger than 18 years of age"
+   }
+  },
+  {
+   "variable": "age",
+   "variable_text": "“Child” means as defined in COPPA.",
+   "operator": "=",
+   "value": null,
+   "value_text": "“Child” means as defined in COPPA.",
+   "unit": "",
+   "measurement": "Age of a known child as defined by reference to COPPA",
+   "level": "person",
+   "trigger": "obligation",
+   "consequence": "Personal data of a known child is sensitive data; processing it requires consent from the child’s parent or lawful guardian",
+   "conditions": "Applies to personal data of a known child; controllers complying with COPPA verifiable parental consent requirements are deemed compliant with parental consent obligations",
+   "depends_on": "COPPA, as referenced in § 12D-102(5) and § 12D-102(10)",
+   "evidence": {
+    "provision": "§ 12D-102(5)",
+    "quote": "“Child” means as defined in COPPA."
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "that directly identifies the specific location of an individual with precision and accuracy within a radius of 1,750 feet",
+   "operator": "<=",
+   "value": 1750,
+   "value_text": "within a radius of 1,750 feet",
+   "unit": "feet",
+   "measurement": "Precision and accuracy radius of location information that directly identifies the specific location of an individual",
+   "level": "person",
+   "trigger": "scope_definition",
+   "consequence": "Location data at this precision is precise geolocation data, which is sensitive data under § 12D-102(30)(d)",
+   "conditions": "Information derived from technology such as GPS-level coordinates; excludes content of communications and data from advanced utility metering infrastructure",
+   "evidence": {
+    "provision": "§ 12D-102(22)",
+    "quote": "that directly identifies the specific location of an individual with precision and accuracy within a radius of 1,750 feet"
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "Affiliate",
+   "defined_in": "Chapter 12D (§ 12D-102(1))",
+   "evidence": {
+    "provision": "§ 12D-102(1)",
+    "quote": "“Affiliate” means a legal entity that shares common branding with another legal entity"
+   }
+  },
+  {
+   "term": "Biometric data",
+   "defined_in": "Chapter 12D (§ 12D-102(3))",
+   "evidence": {
+    "provision": "§ 12D-102(3)",
+    "quote": "“Biometric data” means data generated by automatic measurements of an individual’s unique biological"
+   }
+  },
+  {
+   "term": "Child",
+   "defined_in": "COPPA, by reference (§ 12D-102(10))",
+   "evidence": {
+    "provision": "§ 12D-102(5)",
+    "quote": "“Child” means as defined in COPPA."
+   }
+  },
+  {
+   "term": "Consent",
+   "defined_in": "Chapter 12D (§ 12D-102(7))",
+   "evidence": {
+    "provision": "§ 12D-102(7)",
+    "quote": "“Consent” means a clear affirmative act signifying a consumer’s freely given, specific, informed and unambiguous agreement to allow the processing of personal data relating to the consumer."
+   }
+  },
+  {
+   "term": "Consumer",
+   "defined_in": "Chapter 12D (§ 12D-102(8))",
+   "evidence": {
+    "provision": "§ 12D-102(8)",
+    "quote": "“Consumer” means an individual who is a resident of this State."
+   }
+  },
+  {
+   "term": "Controller",
+   "defined_in": "Chapter 12D (§ 12D-102(9))",
+   "evidence": {
+    "provision": "§ 12D-102(9)",
+    "quote": "“Controller” means a person that, alone or jointly with others, determines the purpose and means of processing personal data."
+   }
+  },
+  {
+   "term": "Dark pattern",
+   "defined_in": "Chapter 12D (§ 12D-102(12))",
+   "evidence": {
+    "provision": "§ 12D-102(12)",
+    "quote": "“Dark pattern” means any of the following:"
+   }
+  },
+  {
+   "term": "Decisions that produce legal or similarly significant effects concerning the consumer",
+   "defined_in": "Chapter 12D (§ 12D-102(13))",
+   "evidence": {
+    "provision": "§ 12D-102(13)",
+    "quote": "“Decisions that produce legal or similarly significant effects concerning the consumer” means decisions made by the controller that result in the provision or denial by the controller of financial or lending services"
+   }
+  },
+  {
+   "term": "De-identified data",
+   "defined_in": "Chapter 12D (§ 12D-102(14))",
+   "evidence": {
+    "provision": "§ 12D-102(14)",
+    "quote": "“De-identified data” means data that cannot reasonably be used to infer information about, or otherwise be linked to, an identified or identifiable individual"
+   }
+  },
+  {
+   "term": "Genetic data",
+   "defined_in": "Chapter 12D (§ 12D-102(16))",
+   "evidence": {
+    "provision": "§ 12D-102(16)",
+    "quote": "“Genetic data” means any data, regardless of its format, that results from the analysis of a biological sample of an individual"
+   }
+  },
+  {
+   "term": "HIPAA",
+   "defined_in": "Chapter 12D (§ 12D-102(17))",
+   "evidence": {
+    "provision": "§ 12D-102(17)",
+    "quote": "“HIPAA” means the Health Insurance Portability and Accountability Act of 1996, 42 U.S.C. § 1320d, et seq., as amended."
+   }
+  },
+  {
+   "term": "Identified or identifiable individual",
+   "defined_in": "Chapter 12D (§ 12D-102(19))",
+   "evidence": {
+    "provision": "§ 12D-102(19)",
+    "quote": "“Identified or identifiable individual” means an individual who can be readily identified, directly or indirectly."
+   }
+  },
+  {
+   "term": "Nonprofit organization",
+   "defined_in": "Chapter 12D (§ 12D-102(20))",
+   "evidence": {
+    "provision": "§ 12D-102(20)",
+    "quote": "“Nonprofit organization” means any organization that is exempt from taxation under §§ 501(c)(3)"
+   }
+  },
+  {
+   "term": "Personal data",
+   "defined_in": "Chapter 12D (§ 12D-102(21))",
+   "evidence": {
+    "provision": "§ 12D-102(21)",
+    "quote": "“Personal data” means any information that is linked or reasonably linkable to an identified or identifiable individual"
+   }
+  },
+  {
+   "term": "Precise geolocation data",
+   "defined_in": "Chapter 12D (§ 12D-102(22))",
+   "evidence": {
+    "provision": "§ 12D-102(22)",
+    "quote": "“Precise geolocation data” means information derived from technology, including global positioning system level latitude and longitude coordinates"
+   }
+  },
+  {
+   "term": "Process or processing",
+   "defined_in": "Chapter 12D (§ 12D-102(23))",
+   "evidence": {
+    "provision": "§ 12D-102(23)",
+    "quote": "“Process” or “processing” means any operation or set of operations performed, whether by manual or automated means, on personal data"
+   }
+  },
+  {
+   "term": "Processor",
+   "defined_in": "Chapter 12D (§ 12D-102(24))",
+   "evidence": {
+    "provision": "§ 12D-102(24)",
+    "quote": "“Processor” means a person that processes personal data on behalf of a controller."
+   }
+  },
+  {
+   "term": "Profiling",
+   "defined_in": "Chapter 12D (§ 12D-102(25))",
+   "evidence": {
+    "provision": "§ 12D-102(25)",
+    "quote": "“Profiling” means any form of automated processing performed on personal data to evaluate, analyze, or predict personal aspects related to an identified or identifiable individual’s economic situation"
+   }
+  },
+  {
+   "term": "Protected health information",
+   "defined_in": "HIPAA, by reference (§ 12D-102(17))",
+   "evidence": {
+    "provision": "§ 12D-102(26)",
+    "quote": "“Protected health information” means as defined in HIPAA."
+   }
+  },
+  {
+   "term": "Pseudonymous data",
+   "defined_in": "Chapter 12D (§ 12D-102(27))",
+   "evidence": {
+    "provision": "§ 12D-102(27)",
+    "quote": "“Pseudonymous data” means personal data that cannot be attributed to a specific individual without the"
+   }
+  },
+  {
+   "term": "Publicly available information",
+   "defined_in": "Chapter 12D (§ 12D-102(28))",
+   "evidence": {
+    "provision": "§ 12D-102(28)",
+    "quote": "“Publicly available information” means information that is lawfully made readily available to the general"
+   }
+  },
+  {
+   "term": "Sale of personal data",
+   "defined_in": "Chapter 12D (§ 12D-102(29))",
+   "evidence": {
+    "provision": "§ 12D-102(29)",
+    "quote": "“Sale of personal data” means the exchange or transfer of personal data for monetary or other valuable consideration by the controller to a third party."
+   }
+  },
+  {
+   "term": "Sensitive data",
+   "defined_in": "Chapter 12D (§ 12D-102(30))",
+   "evidence": {
+    "provision": "§ 12D-102(30)",
+    "quote": "“Sensitive data” means personal data that includes any of the following:"
+   }
+  },
+  {
+   "term": "Targeted advertising",
+   "defined_in": "Chapter 12D (§ 12D-102(33))",
+   "evidence": {
+    "provision": "§ 12D-102(33)",
+    "quote": "“Targeted advertising” means displaying advertisements to a consumer where the advertisement is"
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "data_subject_rights",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Respond to consumer rights requests without undue delay and within 45 days, extendable by 45 days with notice; if declining, inform the consumer with justification and appeal instructions within 45 days; provide information free of charge once per 12-month period; may decline or charge a fee only for manifestly unfounded, excessive or repetitive requests; may withhold action until authentication, with notice; deny a suspected fraudulent opt-out only with notice.",
+   "applies_from": "effective date of this chapter (Section 3)",
+   "conditional_on": "controller meets § 12D-103(a) applicability thresholds",
+   "evidence": {
+    "provision": "§ 12D-104(c)(1)",
+    "quote": "A controller shall respond to the consumer without undue delay, but not later than 45 days after receipt of"
+   }
+  },
+  {
+   "type": "complaint_mechanism",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Establish a process for consumers to appeal refusals to act; inform the consumer in writing of the outcome within 60 days of an appeal, with reasons; if the appeal is denied, provide a mechanism to contact the Department of Justice.",
+   "applies_from": "effective date of this chapter (Section 3)",
+   "conditional_on": "controller meets § 12D-103(a) applicability thresholds",
+   "evidence": {
+    "provision": "§ 12D-104(d)",
+    "quote": "A controller shall establish a process for a consumer to appeal the controller’s refusal to take action on a"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Comply with an opt-out request received from an authorized agent where the controller can verify, with commercially reasonable effort, the consumer's identity and the agent's authority.",
+   "applies_from": "effective date of this chapter (Section 3)",
+   "conditional_on": "controller meets § 12D-103(a) applicability thresholds",
+   "evidence": {
+    "provision": "§ 12D-105(b)",
+    "quote": "A controller shall comply with an opt-out request received from an authorized agent if the controller is able to"
+   }
+  },
+  {
+   "type": "data_minimization",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Limit collection of personal data to what is adequate, relevant and reasonably necessary for the disclosed purposes; do not process for purposes neither reasonably necessary to nor compatible with the disclosed purposes unless the consumer consents.",
+   "applies_from": "effective date of this chapter (Section 3)",
+   "conditional_on": "controller meets § 12D-103(a) applicability thresholds",
+   "evidence": {
+    "provision": "§ 12D-106(a)(1)",
+    "quote": "Limit the collection of personal data to what is adequate, relevant, and reasonably necessary in relation to the"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Establish, implement and maintain reasonable administrative, technical and physical data security practices protecting confidentiality, integrity and accessibility of personal data, appropriate to its volume and nature.",
+   "applies_from": "effective date of this chapter (Section 3)",
+   "conditional_on": "controller meets § 12D-103(a) applicability thresholds",
+   "evidence": {
+    "provision": "§ 12D-106(a)(3)",
+    "quote": "Establish, implement, and maintain reasonable administrative, technical, and physical data security"
+   }
+  },
+  {
+   "type": "consent",
+   "addressee": "data_controller",
+   "modality": "shall_not",
+   "summary": "Do not process sensitive data without the consumer's consent; for a known child, obtain consent from the child's parent or lawful guardian and comply with § 1204C of Chapter 12C.",
+   "applies_from": "effective date of this chapter (Section 3)",
+   "conditional_on": "controller meets § 12D-103(a) applicability thresholds",
+   "evidence": {
+    "provision": "§ 12D-106(a)(4)",
+    "quote": "Not process sensitive data concerning a consumer without obtaining the consumer’s consent"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "data_controller",
+   "modality": "shall_not",
+   "summary": "Do not process personal data in violation of State laws and federal laws that prohibit unlawful discrimination.",
+   "applies_from": "effective date of this chapter (Section 3)",
+   "conditional_on": "controller meets § 12D-103(a) applicability thresholds",
+   "evidence": {
+    "provision": "§ 12D-106(a)(5)",
+    "quote": "Not process personal data in violation of the laws of this State and federal laws that prohibit unlawful"
+   }
+  },
+  {
+   "type": "consent",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Provide an consumer mechanism to revoke consent at least as easy as the mechanism used to give it, and cease processing as soon as practicable and no later than 15 days after the request.",
+   "applies_from": "effective date of this chapter (Section 3)",
+   "conditional_on": "controller meets § 12D-103(a) applicability thresholds",
+   "evidence": {
+    "provision": "§ 12D-106(a)(6)",
+    "quote": "Provide an effective mechanism for a consumer to revoke the consumer’s consent under this section"
+   }
+  },
+  {
+   "type": "minors_protection",
+   "addressee": "data_controller",
+   "modality": "shall_not",
+   "summary": "Where the controller has actual knowledge or wilfully disregards that the consumer is 13 to under 18 years old, do not process the consumer's personal data for targeted advertising, or sell it, without the consumer's consent.",
+   "applies_from": "effective date of this chapter (Section 3)",
+   "conditional_on": "controller has actual knowledge or wilfully disregards that the consumer is at least thirteen and younger than 18",
+   "evidence": {
+    "provision": "§ 12D-106(a)(7)",
+    "quote": "Not process the personal data of a consumer for purposes of targeted advertising, or sell the consumer’s"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "data_controller",
+   "modality": "shall_not",
+   "summary": "Do not discriminate against a consumer for exercising rights under the chapter, including by denying goods or services, charging different prices or rates, or providing a different level of quality.",
+   "applies_from": "effective date of this chapter (Section 3)",
+   "conditional_on": "controller meets § 12D-103(a) applicability thresholds",
+   "evidence": {
+    "provision": "§ 12D-106(a)(8)",
+    "quote": "Not discriminate against a consumer for exercising any of the consumer rights contained in this chapter"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Provide a reasonably accessible, clear and meaningful privacy notice listing categories of personal data processed, purposes, how to exercise rights and appeal, categories of data and third parties shared with, and an active contact email or online mechanism.",
+   "applies_from": "effective date of this chapter (Section 3)",
+   "conditional_on": "controller meets § 12D-103(a) applicability thresholds",
+   "evidence": {
+    "provision": "§ 12D-106(c)",
+    "quote": "A controller shall provide consumers with a reasonably accessible, clear, and meaningful privacy notice that"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "If selling personal data to third parties or processing it for targeted advertising, clearly and conspicuously disclose such processing and how the consumer may opt out.",
+   "applies_from": "effective date of this chapter (Section 3)",
+   "conditional_on": "controller sells personal data to third parties or processes it for targeted advertising",
+   "evidence": {
+    "provision": "§ 12D-106(d)",
+    "quote": "controller shall clearly and conspicuously disclose such processing, as well as the manner in which a consumer may"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Establish and describe in the privacy notice one or more secure and reliable means for consumers to submit rights requests, without requiring a new account; includes a clear link on the website to an opt-out page.",
+   "applies_from": "effective date of this chapter (Section 3)",
+   "conditional_on": "controller meets § 12D-103(a) applicability thresholds",
+   "evidence": {
+    "provision": "§ 12D-106(e)(1)",
+    "quote": "A controller shall establish, and shall describe in the privacy notice required by subsection (c) of this"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Allow consumers to opt out of targeted advertising or sale through an opt-out preference signal sent by a platform, technology or mechanism, meeting the listed criteria (A to E); comply with the signal, and may notify the consumer of conflicts with controller-specific settings or loyalty programmes.",
+   "applies_from": "[one year following the effective date of this Act] (bracketed in the bill text)",
+   "conditional_on": "controller meets § 12D-103(a) applicability thresholds",
+   "evidence": {
+    "provision": "§ 12D-106(e)(1)a.2",
+    "quote": "Not later than [one year following the effective date of this Act], allowing a consumer to opt out of"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "If the controller charges for a product or service in response to opt-out requests, present the terms of any financial incentive offered for retention, use, sale or sharing of the personal data.",
+   "applies_from": "effective date of this chapter (Section 3)",
+   "conditional_on": "controller responds to opt-out requests by informing the consumer of a charge",
+   "evidence": {
+    "provision": "§ 12D-106(e)(2)",
+    "quote": "the controller shall present the"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_processor",
+   "also_addressees": [
+    "data_controller"
+   ],
+   "modality": "shall",
+   "summary": "Adhere to the controller's instructions and assist the controller in meeting its obligations: responding to consumer requests, security of processing and breach notification, and providing information for data protection assessments.",
+   "applies_from": "effective date of this chapter (Section 3)",
+   "evidence": {
+    "provision": "§ 12D-107(a)",
+    "quote": "A processor shall adhere to the instructions of a controller and shall assist the controller in meeting the"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_processor",
+   "also_addressees": [
+    "data_controller"
+   ],
+   "modality": "shall",
+   "summary": "Contract between controller and processor must set out processing instructions and require the processor to: ensure confidentiality of processing personnel; delete or return data at the end of services; make compliance information available on reasonable request; engage subcontractors only under written contract after opportunity to object; and allow and cooperate with assessments.",
+   "applies_from": "effective date of this chapter (Section 3)",
+   "conditional_on": "processing performed on behalf of a controller",
+   "evidence": {
+    "provision": "§ 12D-107(b)",
+    "quote": "The contract must be binding and clearly set forth instructions"
+   }
+  },
+  {
+   "type": "impact_assessment",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Conduct and document, on a regular basis, a data protection assessment for each processing activity presenting a heightened risk of harm (targeted advertising, sale, certain profiling, sensitive data processing), weighing benefits against risks; applies to processing activities created or generated on or after [six months following the effective date of this chapter] (§ 12D-108(f)).",
+   "applies_from": "[six months following the effective date of this chapter] for processing activities created or generated on or after that date (§ 12D-108(f))",
+   "conditional_on": "controller controls or processes the data of not less than 100,000 consumers, excluding payment-only data",
+   "evidence": {
+    "provision": "§ 12D-108(a)",
+    "quote": "shall conduct and document, on a regular basis"
+   }
+  },
+  {
+   "type": "cooperation_with_authority",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Where the Attorney General requires it in an investigation, disclose and make available any relevant data protection assessment, which the Attorney General may evaluate for compliance.",
+   "applies_from": "effective date of this chapter (Section 3)",
+   "conditional_on": "Attorney General investigation and requirement to disclose",
+   "evidence": {
+    "provision": "§ 12D-108(c)",
+    "quote": "the controller shall make the data protection assessment available"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_controller",
+   "also_addressees": [
+    "data_processor"
+   ],
+   "modality": "shall",
+   "summary": "A controller that discloses pseudonymous or de-identified data shall exercise reasonable oversight to monitor compliance with contractual commitments and take appropriate steps to address breaches.",
+   "applies_from": "effective date of this chapter (Section 3)",
+   "conditional_on": "controller discloses pseudonymous or de-identified data",
+   "evidence": {
+    "provision": "§ 12D-109(d)",
+    "quote": "shall exercise reasonable oversight to"
+   }
+  },
+  {
+   "type": "data_minimization",
+   "addressee": "data_controller",
+   "also_addressees": [
+    "data_processor"
+   ],
+   "modality": "shall",
+   "summary": "Personal data processed under the listed exemptions may be processed only to the extent reasonably necessary and proportionate to the exempted purposes, and must be adequate, relevant and limited to what is necessary for them.",
+   "applies_from": "effective date of this chapter (Section 3)",
+   "conditional_on": "processing relies on an exemption in § 12D-110",
+   "evidence": {
+    "provision": "§ 12D-110(f)",
+    "quote": "is adequate, relevant, and limited to what"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "data_controller",
+   "also_addressees": [
+    "data_processor"
+   ],
+   "modality": "shall",
+   "summary": "Personal data processed under the § 12D-110 exemptions is subject to reasonable administrative, technical and physical measures protecting confidentiality, integrity and accessibility and reducing foreseeable risks of harm to consumers.",
+   "applies_from": "effective date of this chapter (Section 3)",
+   "conditional_on": "processing relies on an exemption in § 12D-110",
+   "evidence": {
+    "provision": "§ 12D-110(f)",
+    "quote": "Such data shall be subject to reasonable administrative, technical, and physical measures to"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Department of Justice must engage in public outreach to educate consumers and the business community about the Act, beginning at least 6 months before the Act's effective date.",
+   "applies_from": "at least 6 months prior to the effective date of this Act",
+   "evidence": {
+    "provision": "Section 2",
+    "quote": "the Department of Justice shall engage in public outreach"
+   }
+  }
+ ],
+ "enforcement": [
+  {
+   "sanction_type": "other",
+   "authority": "Department of Justice",
+   "triggered_by": "Violation of this chapter (Delaware Personal Data Privacy Act), investigated and prosecuted by the Department of Justice",
+   "max_penalty_text": "Not stated in this text",
+   "penalty_reference": "Subchapter II of Chapter 25 of Title 29 (referenced; not reproduced in this text)",
+   "private_right_of_action": false,
+   "cure_period": "Before initiating an action, the Department of Justice may issue a notice of violation if it determines a cure is possible; the controller or processor then has at least 60 days to cure after receipt of the notice (§ 12D-111(b))",
+   "evidence": {
+    "provision": "§ 12D-111(a)",
+    "quote": "The Department of Justice has enforcement authority over this chapter and may investigate and prosecute"
+   }
+  },
+  {
+   "sanction_type": "other",
+   "authority": "Department of Justice",
+   "triggered_by": "Violation of this chapter, which is deemed an unlawful practice under § 2513 of Chapter 25 of Title 6",
+   "max_penalty_text": "Not stated in this text; the penalty regime is the one referenced in § 2513 of Chapter 25 of Title 6",
+   "penalty_reference": "§ 2513 of Chapter 25 of Title 6 (referenced; not reproduced in this text)",
+   "private_right_of_action": false,
+   "cure_period": "The cure-notice procedure in § 12D-111(b) applies before an action is initiated; the text does not state a separate cure period for this designation",
+   "evidence": {
+    "provision": "§ 12D-111(d)",
+    "quote": "A violation of this chapter shall be deemed an unlawful practice under § 2513 of Chapter 25 of this title"
+   }
+  }
+ ],
+ "section_status": {}
+}

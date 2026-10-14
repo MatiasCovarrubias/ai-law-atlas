@@ -1,0 +1,82 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "br-pl3982-2026-direitos-autorais-ia",
+ "tier": "B",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "light, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-interim-20261014"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (connectors/fetch_texts.py)",
+  "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2640657",
+  "retrieved": "2026-10-13",
+  "version": "as fetched",
+  "language": "pt",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "ip_training_data"
+  ],
+  "primary_domain": "ip_training_data",
+  "mechanisms": [
+   "mandate_obligation"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "ai_developer"
+  ],
+  "decision_margins": [
+   "firm:input_use"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national"
+   ],
+   "description": "Federal Brazilian bill amending the national Copyright Law (Lei 9.610/1998).",
+   "evidence": {
+    "provision": "Ementa",
+    "quote": "Altera a Lei nº 9.610, de 19 de fevereiro de 1998 (Lei de Direitos Autorais)"
+   }
+  }
+ },
+ "summary": {
+  "short": "Bill PL 3982/2026, presented 17 July 2026, would amend Brazil's Copyright Law (Lei 9.610/1998) to regulate the economic exploitation of intellectual works used in training AI systems, create a proportional remuneration right and refine moral attribution rights.",
+  "long": "Proposed federal bill by deputy Amom Mandel, presented to the Câmara dos Deputados on 17/07/2026. According to its ementa (summary of purpose), it would amend Law 9.610 of 19 February 1998 (Brazil's Copyright Law) to regulate the economic use of intellectual works within the training of artificial intelligence systems, establish a right to proportional remuneration, and improve moral rights of attribution. The fetched Câmara page contains only the ementa and the procedural record; the articles of the bill (inteiro teor) are not in the document, so specific obligations, thresholds, exceptions and enforcement cannot be described. As of retrieval the bill is listed as awaiting dispatch by the Chamber president."
+ },
+ "relations": [
+  {
+   "relation": "amends",
+   "target_text": "Lei nº 9.610, de 19 de fevereiro de 1998 (Lei de Direitos Autorais)",
+   "note": "Amendment stated in the ementa only; the articles of Lei 9.610/1998 to be altered are not identified in the fetched document.",
+   "evidence": {
+    "provision": "Ementa",
+    "quote": "Altera a Lei nº 9.610, de 19 de fevereiro de 1998 (Lei de Direitos Autorais)"
+   }
+  }
+ ],
+ "notes": "The fetched page contains only the ementa, indexing, status and presentation record (17/07/2026). The bill's articles (Inteiro teor) are not in the document, so the provisions to be amended are unknown and no obligations, thresholds or definitions are coded. The 'Legislação citada' section shows no content. The ementa names three changes: regulating economic use of intellectual works in AI training, a proportional remuneration right, and improved moral rights of attribution. Status: awaiting dispatch by the Chamber President; no later legislative step is recorded.",
+ "events": [
+  {
+   "event": "introduced",
+   "date": "2026-07-17",
+   "date_type": "absolute",
+   "date_text": "17/07/2026",
+   "applies_to": "Câmara dos Deputados",
+   "evidence": {
+    "provision": "Tramitação, 17/07/2026 (Mesa Diretora)",
+    "quote": "Apresentação do PL n. 3982/2026 (Projeto de Lei), pelo Deputado Amom Mandel"
+   }
+  }
+ ],
+ "section_status": {
+  "thresholds": {
+   "status": "not_found",
+   "note": "The fetched document is the Câmara portal cover page for PL 3982/2026, with the ementa (summary of purpose) and tramitação record only. It contains no operative articles, so no numeric cutoffs were found. The full bill text (Inteiro teor) is not included in the document. Numbers such as Lei nº 9.610 and 19 de fevereiro de 1998 are citations of the amended law, not thresholds. Re-annotate when the bill text is fetched."
+  }
+ },
+ "thresholds": []
+}

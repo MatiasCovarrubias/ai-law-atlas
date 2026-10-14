@@ -1,0 +1,358 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "us-nd-57-39.2-04.17",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (connectors/fetch_texts.py)",
+  "url": "https://ndlegis.gov/cencode/t57c39-2.pdf",
+  "retrieved": "2026-10-13",
+  "version": "as fetched",
+  "language": "en",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "compute_data_centers"
+  ],
+  "primary_domain": "compute_data_centers",
+  "mechanisms": [
+   "tax_incentive",
+   "licensing_permit_certification",
+   "mandate_obligation"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "data_center_owner",
+   "data_center_operator",
+   "data_center_occupant",
+   "government_agency"
+  ],
+  "decision_margins": [
+   "firm:investment_location",
+   "firm:input_use",
+   "firm:compliance_process"
+  ],
+  "territorial_scope": {
+   "types": [
+    "subnational"
+   ],
+   "description": "Applies to sales tax on transactions within North Dakota, under the state sales tax chapter.",
+   "evidence": {
+    "provision": "57-39.2-04.17(1)",
+    "quote": "Gross receipts from sales of enterprise information technology equipment and computer software purchased for use by a qualifying business in a qualified data center are exempt from the tax imposed by this chapter."
+   }
+  }
+ },
+ "summary": {
+  "short": "North Dakota sales and use tax exemption for enterprise information technology equipment and computer software bought for use in a certified qualified data center. Covers owners, operators and tenants, with a certification step and annual reporting to the tax commissioner.",
+  "long": "Exempts from North Dakota sales and use tax the gross receipts from sales of enterprise information technology equipment and computer software purchased for use by a qualifying business in a qualified data center, including upgraded or replacement equipment. A future owner must apply to the tax commissioner for certification and answer information requests within thirty days. The exemption requires a commissioner certificate at purchase; otherwise the business pays the tax and applies for a refund, and contractor-installed purchases may be refunded. A qualified data center is a newly constructed or substantially refurbished facility of at least 15,000 square feet, at least half used for data processing, on one or contiguous parcels, with construction completed after December 31, 2020, sophisticated fire suppression, enhanced security features, and commissioner certification. Owners must give collocated operators or tenants documentation of certification. By January 31 each year the owner files a report of the exemption claimed, jobs created or retained, and local incentives. The commissioner may disclose these report details to legislative management chairs on written request, excluding the owner's name and identifiers. Heading notes retroactive application."
+ },
+ "relations": [
+  {
+   "relation": "part_of",
+   "target_text": "N.D.C.C. chapter 57-39.2 (Sales Tax)",
+   "note": "Section 57-39.2-04.17 is one section of chapter 57-39.2; the supplied document is the full chapter text, but this annotation covers only the section.",
+   "evidence": {
+    "provision": "57-39.2-04.17",
+    "quote": "57-39.2-04.17. Sales and use tax exemption for enterprise information technology equipment and computer software used in a qualified data center."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "N.D.C.C. chapter 57-38",
+   "note": "Subsection 9 excludes from the disclosure authority the owner's identifiers and any other information prohibited from disclosure under chapter 57-38.",
+   "evidence": {
+    "provision": "57-39.2-04.17(9)",
+    "quote": "or any other information prohibited from disclosure under chapter 57-38."
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "tax commissioner (North Dakota)",
+   "role": "designated",
+   "function": "Certifies a proposed or existing facility as a qualified data center; issues certificates of exemption for purchases; receives annual qualified-data-center reports; may disclose reporting information on written request (subsections 2, 3, 5(e)(5), 8, 9).",
+   "evidence": {
+    "provision": "57-39.2-04.17(5)(e)(5)",
+    "quote": "Certified by the tax commissioner as a qualified data center."
+   }
+  },
+  {
+   "name": "chairman of the legislative management or chairman of a standing committee of the legislative assembly",
+   "role": "designated",
+   "function": "May request in writing that the tax commissioner disclose qualified-data-center report information (subsection 9).",
+   "evidence": {
+    "provision": "57-39.2-04.17(9)",
+    "quote": "Upon receipt of a written request from the chairman of the legislative management or the chairman of a standing committee of the legislative assembly"
+   }
+  }
+ ],
+ "notes": "Only the section 57-39.2-04.17 is annotated although the document is the full chapter. The heading carries '(Retroactive application - See note)' but no note text appears in the document. The text gives no enacting session law, amendment or repeal for this section, so no legal_basis, amends or repeals relations are recorded. Subsection 1 refers to a 'qualifying business' while subsection 5(d) defines 'qualified business'; the document uses both terms. Subsection 5(e)(3) requires completion or substantial refurbishment after December 31, 2020. Predecessor section 57-39.2-04.13 (expired under S.L. 2015, ch. 456, § 3) covers a similar data center exemption; the text does not link the two.",
+ "events": [
+  {
+   "event": "application",
+   "date": "2020-12-31",
+   "date_type": "absolute",
+   "date_text": "after December 31, 2020",
+   "applies_to": "qualified data centers: facilities on which construction is completed or substantially refurbished after December 31, 2020 (eligibility cutoff)",
+   "evidence": {
+    "provision": "Sec. 57-39.2-04.17(5)(e)(3)",
+    "quote": "On which construction is completed or which is substantially refurbished after December 31, 2020"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "within thirty days of the request",
+   "depends_on": "tax commissioner's request for additional information",
+   "applies_to": "applicant for certification as a qualified data center (future owner of a proposed data center)",
+   "offset_value": 30,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Sec. 57-39.2-04.17(2)",
+    "quote": "An applicant shall respond to a request for additional information from the tax commissioner within thirty days of the request or the application may no longer be considered."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "By January thirty-first of each year",
+   "applies_to": "qualified data center owners: report to the tax commissioner for the previous calendar year",
+   "evidence": {
+    "provision": "Sec. 57-39.2-04.17(8)",
+    "quote": "By January thirty-first of each year, a qualified data center owner shall file with the tax commissioner"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "floor_area",
+   "variable_text": "aggregate floor area of the buildings containing the qualified data center",
+   "operator": ">=",
+   "value": 15000,
+   "value_text": "an aggregate amount of fifteen thousand square feet [1394 square meters] or more",
+   "unit": "square feet",
+   "measurement": "Aggregate square footage of the buildings whose primary purpose is to contain a data center; office, meeting, mechanical and other support space counts if used to support the enterprise IT equipment (subsection 6)",
+   "level": "facility",
+   "trigger": "scope_definition",
+   "consequence": "A facility meets this size element of the qualified data center definition only at or above this area.",
+   "conditions": "Also requires that no fewer than fifty percent of the floor area is used for data processing, a single or contiguous parcel, construction completed after December 31, 2020, certification by the tax commissioner, and the security attributes in subdivision e(4).",
+   "evidence": {
+    "provision": "Sec. 57-39.2-04.17(5)(e)(1)",
+    "quote": "consisting of an aggregate amount of fifteen thousand square feet [1394 square meters] or more"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "share of floor area of the qualified data center used for data processing",
+   "operator": ">=",
+   "value": 50,
+   "value_text": "no fewer than fifty percent of which is used for data processing",
+   "unit": "percent",
+   "measurement": "Share of the buildings' floor area used for data processing; subsection 6 counts support space that supports the enterprise IT equipment",
+   "level": "facility",
+   "trigger": "scope_definition",
+   "consequence": "A facility meets this element of the qualified data center definition only if at least this share of its buildings is used for data processing.",
+   "conditions": "Applies together with the 15,000 square foot aggregate size test in the same paragraph.",
+   "evidence": {
+    "provision": "Sec. 57-39.2-04.17(5)(e)(1)",
+    "quote": "no fewer than fifty percent of which is used for data processing"
+   }
+  },
+  {
+   "variable": "floor_area",
+   "variable_text": "floor area rebuilt, modified or improved in a data center to make it substantially refurbished",
+   "operator": ">=",
+   "value": 15000,
+   "value_text": "fifteen thousand square feet [1394 square meters] or more has been rebuilt, modified, or improved",
+   "unit": "square feet",
+   "measurement": "Aggregate floor area rebuilt, modified or improved through energy efficiency, building improvements, installation of enterprise IT equipment, environmental controls and computer software",
+   "level": "facility",
+   "trigger": "scope_definition",
+   "consequence": "A data center meets the substantial refurbishment test, and a refurbished facility can then qualify as a qualified data center, only if at least this area is rebuilt, modified or improved.",
+   "conditions": "Applies to the definition of substantially refurbished in subdivision f.",
+   "evidence": {
+    "provision": "Sec. 57-39.2-04.17(5)(f)",
+    "quote": "fifteen thousand square feet [1394 square meters] or more has been rebuilt, modified, or improved"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "date after which construction is completed or substantial refurbishment occurs",
+   "operator": ">",
+   "value": 2020,
+   "value_text": "after December 31, 2020",
+   "unit": "year",
+   "measurement": "Date of completion of construction or of substantial refurbishment of the facility",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Only facilities whose construction is completed, or which are substantially refurbished, after December 31, 2020 qualify as a qualified data center.",
+   "conditions": "Date cut-off stated as 31 December 2020; the operator is applied to the calendar year.",
+   "evidence": {
+    "provision": "Sec. 57-39.2-04.17(5)(e)(3)",
+    "quote": "On which construction is completed or which is substantially refurbished after December 31, 2020"
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "Computer software",
+   "defined_in": "this instrument, Sec. 57-39.2-04.17(5)(a)",
+   "evidence": {
+    "provision": "Sec. 57-39.2-04.17(5)(a)",
+    "quote": "\"Computer software\" includes software used or loaded at a qualified data center, software maintenance, software licensing, and software customization."
+   }
+  },
+  {
+   "term": "Data center",
+   "defined_in": "this instrument, Sec. 57-39.2-04.17(5)(b)",
+   "evidence": {
+    "provision": "Sec. 57-39.2-04.17(5)(b)",
+    "quote": "\"Data center\" means a centralized repository for the storage, management, and dissemination of electronic data and information organized around a particular body or bodies of knowledge."
+   }
+  },
+  {
+   "term": "Enterprise information technology equipment",
+   "defined_in": "this instrument, Sec. 57-39.2-04.17(5)(c)",
+   "evidence": {
+    "provision": "Sec. 57-39.2-04.17(5)(c)",
+    "quote": "\"Enterprise information technology equipment\" includes:"
+   }
+  },
+  {
+   "term": "Qualified business",
+   "defined_in": "this instrument, Sec. 57-39.2-04.17(5)(d)",
+   "evidence": {
+    "provision": "Sec. 57-39.2-04.17(5)(d)",
+    "quote": "\"Qualified business\" means the owner, operator, or tenants of a qualified data center."
+   }
+  },
+  {
+   "term": "Qualified data center",
+   "defined_in": "this instrument, Sec. 57-39.2-04.17(5)(e)",
+   "evidence": {
+    "provision": "Sec. 57-39.2-04.17(5)(e)",
+    "quote": "\"Qualified data center\" means a newly constructed or substantially refurbished facility located in this state:"
+   }
+  },
+  {
+   "term": "Substantially refurbished",
+   "defined_in": "this instrument, Sec. 57-39.2-04.17(5)(f)",
+   "evidence": {
+    "provision": "Sec. 57-39.2-04.17(5)(f)",
+    "quote": "\"Substantially refurbished\" means a data center used to house enterprise information technology equipment"
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "licensing_certification",
+   "addressee": "data_center_owner",
+   "modality": "shall",
+   "summary": "The future owner of a proposed data center shall apply to the tax commissioner to be certified as a qualified data center.",
+   "conditional_on": "Owner of a proposed data center seeking the exemption under this section",
+   "evidence": {
+    "provision": "57-39.2-04.17(2)",
+    "quote": "The future owner of a proposed data center shall apply to the tax commissioner to be certified as a qualified data center."
+   }
+  },
+  {
+   "type": "cooperation_with_authority",
+   "addressee": "data_center_owner",
+   "modality": "shall",
+   "summary": "An applicant for certification as a qualified data center shall respond to a tax commissioner request for additional information within thirty days of the request, or the application may no longer be considered.",
+   "conditional_on": "Applicant has received a request for additional information from the tax commissioner",
+   "evidence": {
+    "provision": "57-39.2-04.17(2)",
+    "quote": "An applicant shall respond to a request for additional information from the tax commissioner within thirty days of the request"
+   }
+  },
+  {
+   "type": "licensing_certification",
+   "addressee": "data_center_operator",
+   "also_addressees": [
+    "data_center_owner",
+    "data_center_occupant"
+   ],
+   "modality": "shall",
+   "summary": "To receive the exemption at the time of purchase, the qualified business shall obtain a certificate from the tax commissioner for equipment or software it intends to buy; if no certificate is received before purchase, the qualified business shall pay the tax and apply to the commissioner for a refund.",
+   "conditional_on": "Purchase of enterprise information technology equipment or computer software for use in a qualified data center",
+   "evidence": {
+    "provision": "57-39.2-04.17(3)",
+    "quote": "the qualified business shall obtain from the tax commissioner a certificate that the enterprise information technology equipment or computer software the qualified business intends to purchase qualifies for the exemption"
+   }
+  },
+  {
+   "type": "eligibility_condition",
+   "addressee": "data_center_owner",
+   "modality": "shall",
+   "summary": "A qualified data center must be certified by the tax commissioner as a qualified data center, as part of the statutory definition.",
+   "conditional_on": "Facility seeking to qualify as a qualified data center under this section",
+   "evidence": {
+    "provision": "57-39.2-04.17(5)(e)(5)",
+    "quote": "Certified by the tax commissioner as a qualified data center."
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_center_owner",
+   "modality": "shall",
+   "summary": "A qualified data center owner intending to collocate operators or tenants shall provide them with tax commissioner documentation that the center meets the definition of a qualified data center.",
+   "conditional_on": "Owner intends to collocate operators or tenants within the center",
+   "evidence": {
+    "provision": "57-39.2-04.17(7)",
+    "quote": "Qualified data center owners that intend to collocate operators or tenants within the center shall provide the operators or tenants with documentation from the tax commissioner"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_center_occupant",
+   "modality": "shall",
+   "summary": "Operators or tenants shall obtain and submit a copy of the tax commissioner documentation with all applications for sales tax exemption on equipment and software purchased for use in the qualified data center.",
+   "conditional_on": "Operator or tenant in a qualified data center applying for the exemption",
+   "evidence": {
+    "provision": "57-39.2-04.17(7)",
+    "quote": "Operators or tenants shall obtain and submit a copy of the documentation with all applications for sales tax exemption"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "data_center_owner",
+   "modality": "shall",
+   "summary": "By January thirty-first of each year, a qualified data center owner shall file with the tax commissioner a report for the previous calendar year showing the exemption claimed, jobs created or retained, and local incentives provided.",
+   "applies_from": "Each year, by January thirty-first",
+   "conditional_on": "Owner of a qualified data center",
+   "evidence": {
+    "provision": "57-39.2-04.17(8)",
+    "quote": "By January thirty-first of each year, a qualified data center owner shall file with the tax commissioner"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "On written request from the chairman of the legislative management or of a standing committee of the legislative assembly, the tax commissioner shall disclose information described in the annual report, except the owner's name, social security number, federal employer identification number, address, or other information prohibited from disclosure under chapter 57-38.",
+   "conditional_on": "Written request from the chairman of the legislative management or a standing committee chairman",
+   "evidence": {
+    "provision": "57-39.2-04.17(9)",
+    "quote": "Upon receipt of a written request from the chairman of the legislative management or the chairman of a standing committee of the legislative assembly, the tax commissioner shall disclose any information described under subsection 8."
+   }
+  }
+ ],
+ "section_status": {
+  "enforcement": {
+   "status": "not_found",
+   "note": "Section 57-39.2-04.17 contains no penalty, fine, criminal sanction, licence or permit revocation, benefit clawback, suspension or blocking provision. Subsection 2 says an applicant's application may no longer be considered if it does not respond to a request for information within thirty days; this is an eligibility consequence and is not coded as enforcement. The section does not cross-reference the chapter's penalty provisions (57-39.2-18), and the exemption-disallowance language in 57-39.2-04.19 is in a different section."
+  }
+ },
+ "enforcement": []
+}

@@ -1,0 +1,153 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "cn-mofcom-2024-46-us-dual-use",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (Claude Code retrieval)",
+  "url": "https://exportcontrol.mofcom.gov.cn/article/zcfg/gnzcfg/zcfggzqd/202412/1072.html",
+  "retrieved": "2026-10-14",
+  "version": "as issued 2024-12-03",
+  "language": "zh",
+  "extent": "full",
+  "note": "China Export Control Information Network (MOFCOM); announcement text is short (two operative points); title line added from the page; site chrome trimmed."
+ },
+ "classification": {
+  "domains": [
+   "chips_export_controls"
+  ],
+  "primary_domain": "chips_export_controls",
+  "mechanisms": [
+   "prohibition_ban",
+   "export_import_control"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "exporter",
+   "general_public"
+  ],
+  "decision_margins": [
+   "firm:trade"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national",
+    "extraterritorial",
+    "targeted"
+   ],
+   "description": "Applies to exports by Chinese-jurisdiction actors and, through the closing paragraph, to organisations and individuals of any country or region who transfer Chinese-origin dual-use items to the United States; the measures are directed at US military users and US destinations.",
+   "evidence": {
+    "provision": "Unnumbered closing paragraph after item 二",
+    "quote": "任何国家和地区的组织和个人，违反上述规定"
+   }
+  }
+ },
+ "summary": {
+  "short": "Bans dual-use item exports to US military users or uses, in principle refuses licences for gallium, germanium, antimony and superhard-material items to the US, and tightens end-user review for graphite exports to the US. Effective on publication, 3 December 2024.",
+  "long": "MOFCOM Announcement No. 46 of 2024, issued by the Ministry of Commerce on 3 December 2024 under the Export Control Law and other laws, strengthens export controls on dual-use items destined for the United States. Item one prohibits exports of dual-use items to US military end users or for military uses. Item two provides that licences will in principle not be granted for dual-use gallium, germanium, antimony and superhard-material items exported to the US, and applies stricter end-user and end-use review to graphite dual-use items exported to the US. The closing unnumbered paragraph states that organisations and individuals of any country or region who, in breach of these rules, transfer or supply Chinese-origin dual-use items to US organisations or individuals will be subject to legal liability under law. The announcement takes effect on publication. It is not specific to AI, and it sets no numeric thresholds, compliance deadlines or penalty amounts."
+ },
+ "relations": [
+  {
+   "relation": "legal_basis",
+   "target_text": "中华人民共和国出口管制法 (Export Control Law of the People's Republic of China)",
+   "note": "Issued under the Export Control Law 'and other laws and regulations' ('等法律法规'); only the Export Control Law is named in the text.",
+   "evidence": {
+    "provision": "Preamble (序言)",
+    "quote": "根据《中华人民共和国出口管制法》等法律法规有关规定"
+   }
+  }
+ ],
+ "notes": "Internal inconsistency: the header gives the issuing unit as 安全与管制局 (Security and Control Bureau), while the signature block reads 商务部 (MOFCOM). The text does not define 军事用户 (military end users), 军事用途 (military end uses), 相关两用物项 (related dual-use items) or the graphite 'stricter end-user and end-use review', and it names no covered item list. '原则上不予许可' (not licensed in principle) is a presumption of refusal, not an absolute ban. The measure takes effect 'from the date of publication' (自公布之日起); the only date stated is the 发文日期 of 2024年12月03日. The final paragraph refers to liability 'according to law' without naming any sanction.",
+ "events": [
+  {
+   "event": "signed",
+   "date": "2024-12-03",
+   "date_type": "absolute",
+   "date_text": "2024年12月3日",
+   "applies_to": "Announcement No. 46 of 2024, signed by MOFCOM (商务部) as printed in the signature block",
+   "evidence": {
+    "provision": "Signature block (落款)",
+    "quote": "2024年12月3日"
+   }
+  },
+  {
+   "event": "published",
+   "date": "2024-12-03",
+   "date_type": "absolute",
+   "date_text": "【发文日期】2024年12月03日",
+   "applies_to": "Announcement No. 46 of 2024 as a whole (issuance date printed in the document header)",
+   "evidence": {
+    "provision": "Header (发文日期)",
+    "quote": "【发文日期】2024年12月03日"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2024-12-03",
+   "date_type": "relative",
+   "date_text": "本公告自公布之日起正式实施。",
+   "anchor": "publication date (公布之日)",
+   "applies_to": "Announcement No. 46 of 2024 as a whole, including the prohibition on military end users and the licensing and review measures",
+   "offset_value": 0,
+   "offset_unit": "days",
+   "anchor_event": "published",
+   "evidence": {
+    "provision": "Final provision (本公告自公布之日起正式实施)",
+    "quote": "本公告自公布之日起正式实施。"
+   },
+   "date_computed_from": "published 2024-12-03 (text) + 0 days"
+  }
+ ],
+ "obligations": [
+  {
+   "type": "prohibition",
+   "addressee": "exporter",
+   "modality": "shall_not",
+   "summary": "Prohibits export of dual-use items to US military users or for US military end-uses.",
+   "applies_from": "从公布之日起正式实施 (effective from the date of publication, per the final paragraph)",
+   "evidence": {
+    "provision": "Item 一 (point 1)",
+    "quote": "禁止两用物项对美国军事用户或军事用途出口。"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall_not",
+   "summary": "In principle, licences are not to be granted for export to the US of dual-use items related to gallium, germanium, antimony and superhard materials; graphite dual-use items to the US are subject to stricter end-user and end-use review. Single row covering both sub-rules.",
+   "applies_from": "从公布之日起正式实施 (effective from the date of publication, per the final paragraph)",
+   "evidence": {
+    "provision": "Item 二 (point 2)",
+    "quote": "原则上不予许可镓、锗、锑、超硬材料相关两用物项对美国出口；对石墨两用物项对美国出口，实施更严格的最终用户和最终用途审查。"
+   }
+  }
+ ],
+ "section_status": {
+  "entities": {
+   "status": "not_found",
+   "note": "No named firms, facilities or public bodies are designated or listed. The restricted parties are unnamed (military users, military end uses, 'organizations and individuals'). The issuing bodies (安全与管制局 / 商务部) are not designated or empowered by name in the text."
+  },
+  "thresholds": {
+   "status": "not_found",
+   "note": "The announcement contains no numeric cutoffs. Its measures apply by item category (gallium, germanium, antimony, superhard materials, graphite), by end user (US military users) and by end use (military use), not by a numeric value."
+  },
+  "definitions": {
+   "status": "not_found",
+   "note": "The text defines no terms. '两用物项', '军事用户' and '军事用途' are used without definition, and the announcement relies on the Export Control Law and other laws and regulations without defining the terms itself."
+  },
+  "enforcement": {
+   "status": "not_found",
+   "note": "The text states only that organisations and individuals who transfer or provide China-origin dual-use items to the United States in breach of the rules 'will be held legally liable according to law' (将依法追究法律责任) in the unnumbered closing paragraph. It names no sanction type, authority, fine, penalty maximum, licence revocation, clawback or cure period."
+  }
+ },
+ "thresholds": [],
+ "enforcement": [],
+ "definitions": [],
+ "entities": []
+}

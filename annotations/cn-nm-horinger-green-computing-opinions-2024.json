@@ -1,0 +1,483 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "cn-nm-horinger-green-computing-opinions-2024",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (connectors/fetch_texts.py)",
+  "url": "http://www.yuquan.gov.cn/ztzl/hqzc/zzqj/202409/t20240924_1779834.html",
+  "retrieved": "2026-10-13",
+  "version": "as fetched",
+  "language": "zh",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "compute_data_centers",
+   "energy_grid_water"
+  ],
+  "primary_domain": "compute_data_centers",
+  "mechanisms": [
+   "mandate_obligation",
+   "direct_subsidy_grant",
+   "sandbox_pilot"
+  ],
+  "binding_force": "quasi_binding",
+  "addressee_roles": [
+   "data_center_operator",
+   "data_center_owner",
+   "enterprise",
+   "research_institution",
+   "government_agency"
+  ],
+  "decision_margins": [
+   "firm:investment_location",
+   "firm:input_use"
+  ],
+  "territorial_scope": {
+   "types": [
+    "subnational"
+   ],
+   "description": "Applies to data centre projects and bodies in the Inner Mongolia Autonomous Region, with a siting rule for the Horinger data centre cluster.",
+   "evidence": {
+    "provision": "一、优化产业布局（一）",
+    "quote": "原则上要布局在和林格尔数据中心集群内"
+   }
+  },
+  "agora_incentives": [
+   "Subsidies"
+  ],
+  "agora_strategies": [
+   "Government support",
+   "Government support: For R&D",
+   "Government support: AI workforce-related",
+   "Pilots and testbeds"
+  ]
+ },
+ "summary": {
+  "short": "Inner Mongolia government office opinions (June 2024, valid three years) supporting green computing in the Horinger data center cluster. They set siting rules for large data centres, electricity and green-power measures, network and computing-platform rewards, PUE limits, and innovation and talent support.",
+  "long": "These government office opinions, issued in Inner Mongolia Autonomous Region and dated 7 June 2024, aim to support green computing industry development in the Horinger data center cluster. Section 1 provides that new large and super-large data centres (3,000 standard racks or more) should in principle be located in the Horinger cluster, and projects that do not meet the siting requirement do not receive the support policies. Section 2 covers power: coordination of computing, grid and renewable-energy planning; a green-power share of not less than 80%; long-term contracts between renewable generators and computing centres; green direct supply; and renewable quota allocation for projects with at least 10 billion yuan of fixed-asset investment and over 10,000P of computing capacity. Section 3 covers network interconnection and platform incentives: a reward of 10% of platform settlement, up to 2 million yuan per year, for firms connecting to the multi-cloud platform, and a reward of 30%, up to 2 million yuan, for buyers of at least 1 million yuan in annual compute services. Section 4 requires retirement of data centres with annual PUE above 1.5, sets new data centres at PUE 1.2 or below, and encourages low-carbon certification and standards work. Sections 5 and 6 provide a one-off 5 million yuan research grant for newly certified technology centres, talent treatment, and one-off rewards of up to 2 million yuan for projects in national data-element cases, plus pilot demonstration programmes. The text is marked as partially deleted and contains no separate enforcement provisions."
+ },
+ "relations": [
+  {
+   "relation": "implements",
+   "target_text": "国务院关于推动内蒙古高质量发展奋力书写中国式现代化新篇章的意见（国发〔2023〕16号）",
+   "note": "The preamble says the opinions carry out the State Council opinion; that instrument is not in the registry.",
+   "evidence": {
+    "provision": "Preamble (paragraph 1)",
+    "quote": "为贯彻落实《国务院关于推动内蒙古高质量发展奋力书写中国式现代化新篇章的意见》（国发〔2023〕16号）精神"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "内蒙古自治区战略性新兴产业目录",
+   "note": "Item (四) ties electricity-policy benefits for data-centre users to this catalogue; the catalogue is not part of this text.",
+   "evidence": {
+    "provision": "二、（四）",
+    "quote": "支持数据中心电力用户按照《内蒙古自治区战略性新兴产业目录》，依法依规享受相关政策"
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "各盟行政公署、市人民政府，自治区各有关委、办、厅、局，各有关企业",
+   "role": "addressee",
+   "function": "Addressees of the opinions, named in the salutation",
+   "evidence": {
+    "provision": "Preamble (salutation)",
+    "quote": "各盟行政公署、市人民政府，自治区各有关委、办、厅、局，各有关企业："
+   }
+  },
+  {
+   "name": "自治区 (Inner Mongolia Autonomous Region authorities)",
+   "role": "designated",
+   "function": "Carries out window guidance (窗口指导) on whether large data-centre projects meet the siting rule in item (一)",
+   "evidence": {
+    "provision": "一、（一）",
+    "quote": "自治区实行窗口指导"
+   }
+  },
+  {
+   "name": "和林格尔数据中心集群",
+   "role": "designated",
+   "function": "Designated location where new large and extra-large data centres are to be sited under item (一)",
+   "evidence": {
+    "provision": "一、（一）",
+    "quote": "新建大型、超大型数据中心（折合标准机架3000架及以上）原则上要布局在和林格尔数据中心集群内"
+   }
+  },
+  {
+   "name": "国家数据局",
+   "role": "listed",
+   "function": "Its selection of \"数据要素×\" typical cases determines eligibility for a one-time award under item (十五)",
+   "evidence": {
+    "provision": "六、（十五）",
+    "quote": "入围国家数据局“数据要素×”典型案例的项目"
+   }
+  }
+ ],
+ "notes": "The document is an abridged web reproduction (marked （本文有删减）). The opinions are dated 2024年6月7日, while the web page shows publication on 2024-09-05. The stated validity is three years from issuance. Empty LEI, ticker and target instrument ID fields are recorded as empty strings to match the schema's string type.",
+ "events": [
+  {
+   "event": "signed",
+   "date": "2024-06-07",
+   "date_type": "absolute",
+   "date_text": "2024年6月7日",
+   "applies_to": "whole instrument (issuance date of 内政办发〔2024〕26号)",
+   "evidence": {
+    "provision": "Dateline (落款)",
+    "quote": "2024年6月7日"
+   }
+  },
+  {
+   "event": "published",
+   "date": "2024-09-05",
+   "date_type": "absolute",
+   "date_text": "发布日期：2024-09-05 10:30",
+   "applies_to": "whole instrument (website publication)",
+   "evidence": {
+    "provision": "Page header (发布日期)",
+    "quote": "发布日期：2024-09-05 10:30"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2024-06-07",
+   "date_type": "relative",
+   "date_text": "本意见自印发之日起施行",
+   "anchor": "印发之日 (date of issuance)",
+   "applies_to": "whole instrument",
+   "offset_value": 0,
+   "offset_unit": "days",
+   "anchor_event": "signed",
+   "evidence": {
+    "provision": "Final paragraph (末段)",
+    "quote": "本意见自印发之日起施行"
+   },
+   "date_computed_from": "signed 2024-06-07 (text) + 0 days"
+  },
+  {
+   "event": "expiry",
+   "date": "2027-06-07",
+   "date_type": "relative",
+   "date_text": "有效期限三年",
+   "anchor": "entry into force (本意见自印发之日起施行)",
+   "applies_to": "whole instrument",
+   "offset_value": 3,
+   "offset_unit": "years",
+   "anchor_event": "entry_into_force",
+   "evidence": {
+    "provision": "Final paragraph (末段)",
+    "quote": "有效期限三年"
+   },
+   "date_computed_from": "entry_into_force 2024-06-07 (computed) + 3 years"
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "volume",
+   "variable_text": "新建大型、超大型数据中心（折合标准机架）",
+   "operator": ">=",
+   "value": 3000,
+   "value_text": "3000架及以上",
+   "unit": "standard racks (折合标准机架)",
+   "measurement": "Converted standard racks (折合标准机架) of a new large or very large data centre",
+   "level": "facility",
+   "trigger": "scope_definition",
+   "consequence": "New large and very large data centres are to be sited within the Horinger data centre cluster; projects not meeting the siting requirement do not receive the support policies",
+   "conditions": "Administered by window guidance (窗口指导) of the autonomous region; applies to new construction",
+   "evidence": {
+    "provision": "一、优化产业布局（一）",
+    "quote": "新建大型、超大型数据中心（折合标准机架3000架及以上）原则上要布局在和林格尔数据中心集群内"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "绿电比例",
+   "operator": ">=",
+   "value": 80,
+   "value_text": "不低于80%",
+   "unit": "%",
+   "measurement": "Share of green electricity used by the data centre power user (as stated; window and measurer not specified)",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Stated as a condition of the support package for data centre power users (related policies and stable low-cost electricity prices)",
+   "conditions": "Policies apply under the Inner Mongolia strategic emerging industries catalogue (战略性新兴产业目录), in accordance with law and regulation; the text does not separately state the consequence of falling below 80%",
+   "evidence": {
+    "provision": "二、强化电力保障（四）",
+    "quote": "绿电比例不低于80%"
+   }
+  },
+  {
+   "variable": "capital_investment",
+   "variable_text": "一次性固定资产投资",
+   "operator": ">=",
+   "value": 100,
+   "value_text": "100亿元以上",
+   "unit": "亿元",
+   "currency": "CNY",
+   "measurement": "One-time fixed asset investment of the intelligent computing centre project; allocation applies after the project is completed and commissioned (建成投运后)",
+   "level": "facility",
+   "trigger": "benefit",
+   "consequence": "Appropriate allocation of guaranteed new-energy indicators (保障性新能源指标) after completion and commissioning",
+   "conditions": "Joint with computing scale exceeding 10000P (算力规模超过10000P)",
+   "evidence": {
+    "provision": "二、强化电力保障（七）",
+    "quote": "对一次性固定资产投资达到100亿元以上且算力规模超过10000P的智算中心项目"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "算力规模",
+   "operator": ">",
+   "value": 10000,
+   "value_text": "超过10000P",
+   "unit": "P",
+   "measurement": "Computing scale of the intelligent computing centre project (as stated)",
+   "level": "facility",
+   "trigger": "benefit",
+   "consequence": "Appropriate allocation of guaranteed new-energy indicators (保障性新能源指标) after completion and commissioning",
+   "conditions": "Joint with one-time fixed asset investment of 100亿元 or more",
+   "evidence": {
+    "provision": "二、强化电力保障（七）",
+    "quote": "对一次性固定资产投资达到100亿元以上且算力规模超过10000P的智算中心项目"
+   }
+  },
+  {
+   "variable": "energy_efficiency",
+   "variable_text": "年均PUE值",
+   "operator": ">",
+   "value": 1.5,
+   "value_text": "高于1.5",
+   "unit": "PUE",
+   "measurement": "Annual average PUE value (年均PUE值)",
+   "level": "facility",
+   "trigger": "obligation",
+   "consequence": "Existing data centres with annual average PUE above 1.5 are to be orderly phased out (有序腾退)",
+   "conditions": "Applies within the green transformation of existing data centres (存量数据中心绿色化改造)",
+   "evidence": {
+    "provision": "四、推进绿色发展（十一）",
+    "quote": "有序腾退年均PUE值高于1.5的落后数据中心"
+   }
+  },
+  {
+   "variable": "energy_efficiency",
+   "variable_text": "新建数据中心PUE值",
+   "operator": "<",
+   "value": 1.2,
+   "value_text": "1.2以下",
+   "unit": "PUE",
+   "measurement": "PUE value of new data centres (as stated)",
+   "level": "facility",
+   "trigger": "obligation",
+   "consequence": "PUE of new data centres to be strictly controlled below 1.2",
+   "conditions": "Applies to new data centre construction",
+   "evidence": {
+    "provision": "四、推进绿色发展（十一）",
+    "quote": "新建数据中心PUE值严格控制在1.2以下"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "按平台结算额10%计算的年度奖励金额",
+   "operator": "<=",
+   "value": 200,
+   "value_text": "每年最高200万元",
+   "unit": "万元",
+   "currency": "CNY",
+   "measurement": "Annual reward, calculated at 10% of the entity's settlement amount on the multi-cloud computing monitoring and scheduling platform",
+   "level": "entity",
+   "trigger": "cap",
+   "consequence": "Annual reward to an enterprise connecting computing resources to the platform is capped at 200万元",
+   "conditions": "Reward rate of 10% of the platform settlement amount (平台结算额的10%)",
+   "evidence": {
+    "provision": "三、促进调度交易（九）",
+    "quote": "按照其在平台结算额的10%给予每年最高200万元奖励"
+   }
+  },
+  {
+   "variable": "transaction_value",
+   "variable_text": "同一主体每年购买算力服务费用",
+   "operator": ">=",
+   "value": 100,
+   "value_text": "100万元以上",
+   "unit": "万元",
+   "currency": "CNY",
+   "measurement": "Annual computing service fees purchased by the same entity through the multi-cloud platform (as stated)",
+   "level": "entity",
+   "trigger": "eligibility",
+   "consequence": "Eligible for a reward of 30% of the actual settlement fee, capped at 200万元",
+   "conditions": "Purchase of computing resources within the Horinger cluster through the multi-cloud platform (通过和林格尔数据中心集群“多云”算力监测与调度平台)",
+   "evidence": {
+    "provision": "三、促进调度交易（十）",
+    "quote": "对同一主体每年购买算力服务费用100万元以上的"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "算力服务奖励金额（按实际结算费用30%计算）",
+   "operator": "<=",
+   "value": 200,
+   "value_text": "最高200万元",
+   "unit": "万元",
+   "currency": "CNY",
+   "measurement": "Reward calculated at 30% of actual computing service settlement fee",
+   "level": "entity",
+   "trigger": "cap",
+   "consequence": "Reward capped at 200万元",
+   "conditions": "Reward rate of 30% of actual settlement fee; applies to entities meeting the 100万元 purchase threshold",
+   "evidence": {
+    "provision": "三、促进调度交易（十）",
+    "quote": "按照算力服务实际结算费用的30%给予最高200万元奖励"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "入围典型案例项目的一次性奖励金额",
+   "operator": "<=",
+   "value": 200,
+   "value_text": "最高不超过200万元",
+   "unit": "万元",
+   "currency": "CNY",
+   "measurement": "One-off reward amount for projects selected for the national data bureau case list (as stated)",
+   "level": "other",
+   "trigger": "cap",
+   "consequence": "One-off reward capped at 200万元",
+   "conditions": "Applies to projects shortlisted as typical cases of the National Data Bureau's “数据要素×” programme (国家数据局“数据要素×”典型案例)",
+   "evidence": {
+    "provision": "六、拓展应用场景（十五）",
+    "quote": "对入围国家数据局“数据要素×”典型案例的项目给予最高不超过200万元的一次性奖励"
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "和林格尔数据中心集群",
+   "defined_in": "Preamble (序言)",
+   "evidence": {
+    "provision": "序言",
+    "quote": "和林格尔数据中心集群（和林格尔新区、集宁大数据产业园）"
+   }
+  },
+  {
+   "term": "新建大型、超大型数据中心",
+   "defined_in": "一、优化产业布局（一）",
+   "evidence": {
+    "provision": "一、优化产业布局（一）",
+    "quote": "新建大型、超大型数据中心（折合标准机架3000架及以上）"
+   }
+  },
+  {
+   "term": "落后数据中心",
+   "defined_in": "四、推进绿色发展（十一）",
+   "evidence": {
+    "provision": "四、推进绿色发展（十一）",
+    "quote": "年均PUE值高于1.5的落后数据中心"
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "localization",
+   "addressee": "data_center_owner",
+   "also_addressees": [
+    "data_center_operator"
+   ],
+   "modality": "shall",
+   "summary": "New large and very large data centres (3000+ standard racks) should in principle be sited within the Hohhot Horinger data centre cluster; projects not meeting the siting requirement do not receive the support policies.",
+   "conditional_on": "new large or very large data centre (3000 or more standard racks)",
+   "evidence": {
+    "provision": "一、优化产业布局（一）",
+    "quote": "新建大型、超大型数据中心（折合标准机架3000架及以上）原则上要布局在和林格尔数据中心集群内"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The autonomous region implements window guidance (窗口指导) on the siting of large data centres.",
+   "evidence": {
+    "provision": "一、优化产业布局（一）",
+    "quote": "自治区实行窗口指导"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Coordinate computing-industry development planning with grid development planning and new-energy planning, and reserve new-energy sites and plan grid construction with appropriate foresight.",
+   "evidence": {
+    "provision": "二、强化电力保障（三）",
+    "quote": "加强算力产业发展规划与电网发展规划、新能源规划的统筹衔接"
+   }
+  },
+  {
+   "type": "eligibility_condition",
+   "addressee": "data_center_occupant",
+   "modality": "shall",
+   "summary": "Data centre electricity users may enjoy the relevant policies (per the strategic emerging industries catalogue) on condition of lawful compliance and a green-electricity share of not less than 80%.",
+   "conditional_on": "compliance with the Inner Mongolia strategic emerging industries catalogue and lawful compliance",
+   "evidence": {
+    "provision": "二、强化电力保障（四）",
+    "quote": "依法依规享受相关政策，稳定保障低成本电价优势，绿电比例不低于80%"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "enterprise",
+   "modality": "encouraged",
+   "summary": "Encourages new-energy generation enterprises to conclude multi-year electricity trading contracts with intelligent computing centres on their own initiative.",
+   "evidence": {
+    "provision": "二、强化电力保障（五）",
+    "quote": "鼓励新能源发电企业与智算中心自主签订多年度电力交易合同"
+   }
+  },
+  {
+   "type": "eligibility_condition",
+   "addressee": "data_center_owner",
+   "summary": "Intelligent computing centre projects with fixed-asset investment of 10 billion yuan or more and computing capacity above 10000P, after completion and commissioning, may be allocated security new-energy quotas (appropriately).",
+   "applies_from": "after completion and commissioning of the project",
+   "conditional_on": "one-time fixed-asset investment of 100 million yuan or more and computing capacity above 10000P",
+   "evidence": {
+    "provision": "二、强化电力保障（七）",
+    "quote": "对一次性固定资产投资达到100亿元以上且算力规模超过10000P的智算中心项目"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_center_owner",
+   "also_addressees": [
+    "data_center_operator"
+   ],
+   "modality": "shall",
+   "summary": "Green retrofit of existing data centres; orderly phase-out of backward data centres with annual average PUE above 1.5; new data centres must keep PUE strictly controlled at 1.2 or below.",
+   "evidence": {
+    "provision": "四、推进绿色发展（十一）",
+    "quote": "新建数据中心PUE值严格控制在1.2以下"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Promote green computing application pilots and demonstration zones, enterprises and projects; select typical cases and release catalogues of innovative products and solutions from time to time.",
+   "evidence": {
+    "provision": "六、拓展应用场景（十六）",
+    "quote": "遴选典型案例，适时发布创新产品与解决方案目录"
+   }
+  }
+ ],
+ "section_status": {
+  "enforcement": {
+   "status": "not_found",
+   "note": "The text states no fines, criminal penalties, licence revocation, benefit clawback, suspension or blocking. Article I(1) provides that projects not meeting the layout requirement do not receive the support policies; this is an eligibility condition and is not coded as a sanction. It is a support measure, so no enforcement regime is recorded."
+  }
+ },
+ "enforcement": []
+}

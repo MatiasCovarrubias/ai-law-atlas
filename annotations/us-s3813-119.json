@@ -1,0 +1,162 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "us-s3813-119",
+ "tier": "B",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "light, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-interim-20261014"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "AGORA plaintext (ETO, CC BY-NC 4.0), local cache",
+  "url": "https://www.congress.gov/bill/119th-congress/senate-bill/3813/text",
+  "retrieved": "2026-04-07",
+  "version": "1.33.0 (2026-09-16)",
+  "language": "en",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "ip_training_data",
+   "generative_ai"
+  ],
+  "primary_domain": "ip_training_data",
+  "mechanisms": [
+   "mandate_obligation",
+   "disclosure_transparency",
+   "liability_rule"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "ai_developer",
+   "government_agency"
+  ],
+  "decision_margins": [
+   "firm:input_use",
+   "firm:product_design_release",
+   "firm:compliance_process"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national"
+   ],
+   "description": "Federal US statute; enforcement is by action in United States district courts, and the text states no explicit extraterritorial reach.",
+   "evidence": {
+    "provision": "Sec. 2(c)(1)",
+    "quote": "may bring an action in an appropriate district court of the United States against that person"
+   }
+  },
+  "agora_incentives": [
+   "Civil liability",
+   "Fines"
+  ],
+  "agora_risk_factors": [
+   "Transparency"
+  ],
+  "agora_strategies": [
+   "Disclosure: About inputs"
+  ]
+ },
+ "summary": {
+  "short": "Requires persons who use training datasets of registered copyrighted works to train or release generative AI models to file a notice with the Register of Copyrights 30 days before commercial use or release. Copyright owners may sue for civil penalties.",
+  "long": "The bill, titled the CLEAR Act, requires any person that uses a training dataset in connection with training or release of a generative AI model to submit to the Register of Copyrights a notice containing a sufficiently detailed summary of each copyrighted work in the dataset, and the dataset's URL if it is publicly available. For models first used or released on or after the effective date, notice is due 30 days before commercial use (including internal use) or release; for earlier models, notice is due 30 days after the Register issues implementing regulations, which must be issued within 180 days of the effective date. A copyright owner may sue in a United States district court for failure to file; the court may impose a civil penalty of at least $5,000 per instance, capped at $2,500,000 in total per person per year, may enjoin use until notice is submitted, and may award attorney's fees. The Register must maintain a publicly available online database of notices. The Act takes effect 180 days after enactment."
+ },
+ "relations": [
+  {
+   "relation": "cross_references",
+   "target_text": "Title 17, United States Code (copyright law)",
+   "note": "The definition of 'copyrighted work' refers to title 17 for protection, and to sections 408 and 1401 of title 17 for registration and scheduling. The bill does not otherwise cite title 17.",
+   "evidence": {
+    "provision": "Sec. 2(a)(2)(A)",
+    "quote": "protected under title 17, United States Code"
+   }
+  }
+ ],
+ "notes": "Text as introduced; the document gives no version date. Sec. 2(b)(2)(A) and (B) use different filing triggers. Sec. 2(b)(2)(B) runs from Register regulations, which Sec. 2(b)(3) requires within 180 days after the effective date, and Sec. 2(e) sets the effective date at 180 days after enactment, so the (B) deadline has no fixed date in the text. Because 'copyrighted work' requires registration or scheduling (Sec. 2(a)(2)), the notice duty and the cause of action in Sec. 2(c)(1) reach only registered or scheduled works. Section_status is included only because the schema requires it; relations entries are present.",
+ "events": [
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "not later than 30 days before the date on which the applicable generative AI model is used commercially",
+   "anchor": "first commercial use or release of the generative AI model",
+   "depends_on": "first use or release of the generative AI model on or after the effective date of this Act",
+   "applies_to": "generative AI models first used or released on or after the effective date; notice under subsection (b)(1)",
+   "offset_value": -30,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Sec. 2(b)(2)(A)",
+    "quote": "not later than 30 days before the date on which the applicable generative AI model is used commercially"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "not later than 30 days after the date on which the Register issues regulations under paragraph (3)",
+   "anchor": "issuance of regulations under subsection (b)(3)",
+   "depends_on": "Register issues regulations under subsection (b)(3)",
+   "applies_to": "generative AI models first used or released before the effective date; notice under subsection (b)(1)",
+   "offset_value": 30,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Sec. 2(b)(2)(B)",
+    "quote": "not later than 30 days after the date on which the Register issues regulations under paragraph (3)"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "Not later than 180 days after the effective date of this Act, the Register shall issue regulations",
+   "anchor": "effective date of this Act",
+   "applies_to": "regulations establishing the form, content, and filing procedures for the notice under subsection (b)",
+   "offset_value": 180,
+   "offset_unit": "days",
+   "anchor_event": "entry_into_force",
+   "evidence": {
+    "provision": "Sec. 2(b)(3)",
+    "quote": "Not later than 180 days after the effective date of this Act, the Register shall issue regulations"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "shall take effect on the date that is 180 days after the date of enactment of this Act",
+   "anchor": "date of enactment of this Act",
+   "applies_to": "entire Act",
+   "offset_value": 180,
+   "offset_unit": "days",
+   "anchor_event": "signed",
+   "evidence": {
+    "provision": "Sec. 2(e)",
+    "quote": "This Act shall take effect on the date that is 180 days after the date of enactment of this Act."
+   }
+  },
+  {
+   "event": "application",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "in the case that the generative AI model is first used or released on or after the effective date of this Act",
+   "anchor": "effective date of this Act",
+   "applies_to": "notice requirement under subsection (b)(1) for generative AI models first used or released on or after the effective date",
+   "offset_value": 0,
+   "offset_unit": "days",
+   "anchor_event": "entry_into_force",
+   "evidence": {
+    "provision": "Sec. 2(b)(2)(A)",
+    "quote": "in the case that the generative AI model is first used or released on or after the effective date of this Act"
+   }
+  }
+ ],
+ "section_status": {
+  "thresholds": {
+   "status": "not_found",
+   "note": "No numeric cutoff in the text changes scope, eligibility, exemption, obligation tier or prohibition. The dollar figures ($5,000 minimum per instance in Sec. 2(c)(2)(A)(i) and the $2,500,000 annual limit in Sec. 2(c)(3)(A)) are penalty amounts and are recorded under enforcement, not thresholds. The day counts (Sec. 2(b)(2), (b)(3), (e)) are procedural time limits and deadlines, recorded as events. The definitions in Sec. 2(a) contain no numeric cutoff."
+  }
+ },
+ "thresholds": []
+}

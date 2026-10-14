@@ -1,0 +1,135 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "Triage",
+ "type": "object",
+ "description": "Consequentiality triage (PLAN.md section 4): content scored as if enacted, plus legislative stage. Decides annotation depth.",
+ "required": [
+  "date",
+  "gates",
+  "instrument_id",
+  "legislative_stage",
+  "model",
+  "rationale",
+  "tier"
+ ],
+ "properties": {
+  "instrument_id": {
+   "type": "string"
+  },
+  "gates": {
+   "type": "object",
+   "required": [
+    "binding",
+    "private_reach"
+   ],
+   "properties": {
+    "binding": {
+     "type": "boolean",
+     "description": "Binding, or would be if adopted"
+    },
+    "private_reach": {
+     "type": "boolean"
+    }
+   }
+  },
+  "scores": {
+   "type": "object",
+   "properties": {
+    "decision_margin": {
+     "enum": [
+      0,
+      1,
+      2
+     ]
+    },
+    "bite": {
+     "enum": [
+      0,
+      1,
+      2
+     ]
+    },
+    "reach": {
+     "enum": [
+      0,
+      1,
+      2
+     ]
+    },
+    "specificity": {
+     "enum": [
+      0,
+      1,
+      2
+     ]
+    }
+   }
+  },
+  "decision_margins": {
+   "type": "array",
+   "items": {
+    "enum": [
+     "firm:entry_market_access",
+     "firm:investment_location",
+     "firm:input_use",
+     "firm:product_design_release",
+     "firm:pricing",
+     "firm:trade",
+     "firm:compliance_process",
+     "firm:size_organization",
+     "household:access",
+     "household:prices",
+     "household:data_privacy",
+     "household:employment",
+     "household:information"
+    ]
+   }
+  },
+  "family_rule": {
+   "type": "boolean"
+  },
+  "tier": {
+   "enum": [
+    "A",
+    "B",
+    "C"
+   ]
+  },
+  "override": {
+   "type": "object",
+   "properties": {
+    "tier": {
+     "enum": [
+      "A",
+      "B",
+      "C"
+     ]
+    },
+    "by": {
+     "type": "string"
+    },
+    "reason": {
+     "type": "string"
+    }
+   }
+  },
+  "rationale": {
+   "type": "string"
+  },
+  "model": {
+   "type": "string"
+  },
+  "date": {
+   "type": "string"
+  },
+  "legislative_stage": {
+   "enum": [
+    "adopted",
+    "final_passage",
+    "advanced",
+    "introduced",
+    "dead"
+   ]
+  }
+ }
+}

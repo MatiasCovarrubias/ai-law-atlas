@@ -1,0 +1,273 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "ie-cru-21-124-dc-connections",
+ "tier": "B",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "light, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-interim-20261014"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (Claude Code retrieval)",
+  "url": "https://cruie-live-96ca64acab2247eca8a850a7e54b-5b34f62.divio-media.com/documents/CRU21124-CRU-Direction-to-the-System-Operators-related-to-Data-Centre-grid-connection-.pdf",
+  "retrieved": "2026-10-14",
+  "version": "CRU/21/124 Decision Paper (published 23 Nov 2021) plus the two formal Directions of 23 Nov 2021 (to EirGrid, ref D/21/25841, and to ESB Networks)",
+  "language": "en",
+  "extent": "full",
+  "note": "Merged PDF (pdfunite) of three CRU documents located via api.cru.ie documents API: decision paper (doc 27097, 50 pp), CRU21124-EirGrid-Direction-1.pdf (doc 27096) and CRU21124-ESBN-Direction-1.pdf (doc 27095), same divio-media host. The two direction letters were re-rendered with pdftocairo to remove empty-password encryption before merging. The EirGrid letter of 27 May 2021 referred to as an appendix to the Directions is not included in those PDFs."
+ },
+ "classification": {
+  "domains": [
+   "energy_grid_water",
+   "compute_data_centers"
+  ],
+  "primary_domain": "energy_grid_water",
+  "mechanisms": [
+   "mandate_obligation",
+   "enforcement_order"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "utility_grid_operator"
+  ],
+  "affected_roles": [
+   "data_center_operator",
+   "consumers_users"
+  ],
+  "decision_margins": [
+   "firm:entry_market_access",
+   "firm:investment_location",
+   "firm:input_use"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national",
+    "targeted"
+   ],
+   "description": "Applies to data centre connection applications at any location in Ireland and is addressed by name to EirGrid and ESB Networks.",
+   "evidence": {
+    "provision": "Section 5 (Decision)",
+    "quote": "The assessment criteria will apply to all connection applications received for the connection of data centres at any location in Ireland"
+   }
+  },
+  "agora_applications": [
+   "Energy and utilities"
+  ]
+ },
+ "summary": {
+  "short": "CRU Decision of 23 November 2021 directing EirGrid and ESB Networks to assess data centre grid connection applications against four criteria (location, onsite generation, demand flexibility), with applications terminating if no connection offer is consistent with system needs. Applies immediately to all applications except Connected or Contracted ones.",
+  "long": "This CRU Decision (CRU/21/124, published 23 November 2021) gives Directions under section 34(1) of the Electricity Regulation Act 1999 to the transmission system operator EirGrid and the distribution system operator ESB Networks. The system operators must assess applications for data centre grid connection against four assessment criteria: whether the applicant is in a constrained or unconstrained region of the electricity system; its ability to bring onsite dispatchable generation (and/or storage) equivalent to or greater than its demand; and its ability to provide demand flexibility by reducing consumption when requested, through onsite dispatchable generation or otherwise. The criteria are not ranked. Where a system operator is not satisfied that a connection offer can be made consistent with the needs of the electricity system, the application will not be processed further and terminates. The criteria apply to all data centre connection applications in Ireland, including those in process, with immediate effect; applications categorised as Connected or Contracted in Tables 1 and 2 are excluded. The system operators must provide bi-annual reports to the CRU, the first due 1 March 2022. The Decision considered and did not adopt a do-nothing option or a moratorium on data centre connections at this time."
+ },
+ "relations": [
+  {
+   "relation": "legal_basis",
+   "target_text": "Electricity Regulation Act 1999 (the Act), s.34(1)",
+   "note": "The Direction is stated to be made pursuant to s.34(1) of the Act. The text also cites ss.9(3)-(5), 14 and 16 of the Act as the CRU's duties and licensing/authorisation powers.",
+   "evidence": {
+    "provision": "Sec. 5 Decision (Assessment Criteria)",
+    "quote": "Pursuant to Section 34(1) of the Electricity Regulation Act 1999 (the Act), the CRU directs EirGrid as transmission system operator (TSO) & ESBN as distribution system operator (DSO)"
+   }
+  },
+  {
+   "relation": "legal_basis",
+   "target_text": "European Communities (Internal Market in Electricity) Regulations 2005 (SI No 60 of 2005)",
+   "note": "Cited as the legal framework for the CRU's security-of-supply duty (Reg. 28(5)). The text states the Direction itself is made under s.34(1) of the Act.",
+   "evidence": {
+    "provision": "Sec. 2.3 Legal Context",
+    "quote": "Regulation 28(5) provides that the CRU shall take such measures as it considers necessary to protect security of supply."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "SI No 445 of 2000 (responsibilities and functions of the System Operators)",
+   "note": "Cited for the SOs' duty to operate and maintain a safe, secure, reliable, economical and efficient electricity system.",
+   "evidence": {
+    "provision": "Sec. 2.3 Legal Context",
+    "quote": "The responsibilities and functions of the SOs, arising under SI No 445 of 2000"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive (EU) 2019/944 on common rules for the internal market for electricity",
+   "note": "Cited as the EU framework; the text refers to its recitals for guidance on operation of the internal market in electricity.",
+   "evidence": {
+    "provision": "Sec. 2.3 Legal Context",
+    "quote": "Directive (EU) 2019/944 of the European Parliament and of the Council of 5 June 2019"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Secondary Fuel Obligations on Licensed Generation Capacity in the Republic of Ireland (CER/09/001)",
+   "note": "The text states that the SFO storage obligation remains in place for data centre applicants installing fossil-fuel dispatchable on-site generation over 10MW.",
+   "evidence": {
+    "provision": "Sec. 4.4 CRU Response",
+    "quote": "fossil fuel generators with an installed capacity of greater than 10MW are required to provide secondary fuel storage under the SFO"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Capacity Market Code / Capacity Market Rules (SEM-O)",
+   "note": "Cited for the 10MW De Minimis Threshold (Maximum Export Capacity) above which a generator must participate in the Capacity Market.",
+   "evidence": {
+    "provision": "Sec. 4.4 CRU Response",
+    "quote": "is a Maximum Export Capacity of 10MW"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "EirGrid Data Centre Connection Offer Process and Policy (DCCOPP) Version 1",
+   "note": "Policy document, not a legal instrument. The text relies on it for identifying the greater Dublin Region as a constrained region.",
+   "evidence": {
+    "provision": "Sec. 2.2 Data Centre Demand",
+    "quote": "The greater Dublin Region has been identified as a constrained region by EirGrid, as described in the DCCOPP Version 1."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Government Statement on The Role of Data Centres in Ireland's Enterprise Strategy (2018)",
+   "note": "Policy statement cited as a reason against a moratorium on data centre connections.",
+   "evidence": {
+    "provision": "Sec. 4.4 CRU Response",
+    "quote": "a moratorium would be contrary to current government policy on data centres"
+   }
+  }
+ ],
+ "notes": "The text does not state that the Decision or Directions have been repealed; the repealed status comes from registry metadata only and is not verified here. Internal inconsistencies: the EirGrid letter of 27 May 2021 (Appendix 3) gives 25% and 33% data-centre demand shares for 2030 and MW figures, while Sec. 2.2 gives 23% and 30% and MVA figures. Sec. 4.4 cross-refers to 'Section 5.1 Updated Connection Measures', which does not appear in the document. Sec. 5 excludes 'Connected' and 'Contracted' applications from the Directions, a limit not stated in the Overview or Sec. 2.2. The Directions to EirGrid and ESBN appear twice (with minor wording differences, and a stray bracket in the ESBN date). Relations are recorded in the relations array; section_status is included only because the schema requires it.",
+ "events": [
+  {
+   "event": "consultation",
+   "date": "2021-06-08",
+   "date_type": "absolute",
+   "date_text": "on 8 June 2021 the CRU published a consultation paper CRU/21/060",
+   "applies_to": "consultation paper CRU/21/060 on the proposed Direction to the System Operators",
+   "evidence": {
+    "provision": "Appendix 1 (Direction letter to EirGrid plc), opening paragraph",
+    "quote": "on 8 June 2021 the CRU published a consultation paper CRU/21/060"
+   }
+  },
+  {
+   "event": "published",
+   "date": "2021-11-23",
+   "date_type": "absolute",
+   "date_text": "Date Published: 23 November 2021",
+   "applies_to": "CRU decision paper CRU/21/124 (Decision)",
+   "evidence": {
+    "provision": "Cover page",
+    "quote": "23 November 2021"
+   }
+  },
+  {
+   "event": "signed",
+   "date": "2021-11-23",
+   "date_type": "absolute",
+   "date_text": "Our Ref: D/21/25841, 23 November 2021 (e-signed on 2021-11-23 10:13:48 GMT)",
+   "applies_to": "Direction to EirGrid plc as transmission system operator (Appendix 1)",
+   "evidence": {
+    "provision": "Appendix 1 (e-signed copy of Direction letter to EirGrid plc)",
+    "quote": "on 2021-11-23 10:13:48 GMT"
+   }
+  },
+  {
+   "event": "signed",
+   "date": "2021-11-23",
+   "date_type": "absolute",
+   "date_text": "Our Ref: D/21/25842, 23 November 2021 (e-signed on 2021-11-23 10:15:56 GMT)",
+   "applies_to": "Direction to ESB Networks DAC as distribution system operator (Appendix 2)",
+   "evidence": {
+    "provision": "Appendix 2 (e-signed copy of Direction letter to ESBN DAC)",
+    "quote": "on 2021-11-23 10:15:56 GMT"
+   }
+  },
+  {
+   "event": "application",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "The assessment criteria will have immediate effect, upon issuance of the Directions to the SOs.",
+   "anchor": "issuance of the Directions to the SOs",
+   "depends_on": "issuance of the Directions to the SOs",
+   "applies_to": "connection applications for data centres at any location in Ireland, including applications currently being processed",
+   "evidence": {
+    "provision": "Sec. 1.3 Purpose of Paper",
+    "quote": "The assessment criteria will have immediate effect, upon issuance of the Directions to the SOs."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2022-03-01",
+   "date_type": "absolute",
+   "date_text": "First report due by 1 March 2022",
+   "applies_to": "first bi-annual monitoring report from the System Operators to the CRU on the effectiveness of the assessment criteria",
+   "evidence": {
+    "provision": "Sec. 5 Decision, footnote 24",
+    "quote": "First report due by 1 March 2022"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "bi-annual reports which the SOs will be required to provide to the CRU",
+   "applies_to": "System Operators (EirGrid and ESBN) reports to the CRU on the effectiveness of the assessment criteria",
+   "evidence": {
+    "provision": "Sec. 5 Decision",
+    "quote": "by way of bi-annual7 reports which the SOs will be required to provide to the CRU"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "power_capacity",
+   "variable_text": "installed capacity of fossil fuel generators",
+   "operator": ">",
+   "value": 10,
+   "value_text": "installed capacity of greater than 10MW",
+   "unit": "MW",
+   "measurement": "Installed capacity of the fossil fuel generator; measurement method not stated in the text",
+   "level": "facility",
+   "trigger": "obligation",
+   "consequence": "Fossil fuel generators above the threshold are required to provide secondary fuel storage under the SFO; the text states this obligation remains for data centre applicants installing fossil fuel powered dispatchable onsite generation over 10MW.",
+   "conditions": "Fossil fuel generation; Secondary Fuel Obligation (SFO) under CER/09/001 as described in the text",
+   "evidence": {
+    "provision": "Section 4.4, CRU Response, Dispatchable On-Site Generation and Secondary Fuel Obligations",
+    "quote": "The CRU notes that fossil fuel generators with an installed capacity of greater than 10MW are required to provide secondary fuel storage under the SFO."
+   }
+  },
+  {
+   "variable": "power_capacity",
+   "variable_text": "De-Minimus Threshold, defined as a Maximum Export Capacity",
+   "operator": ">",
+   "value": 10,
+   "value_text": "any dispatchable generator greater than 10MW",
+   "unit": "MW",
+   "measurement": "Maximum Export Capacity, as defined under the Capacity Market Code",
+   "level": "facility",
+   "trigger": "obligation",
+   "consequence": "Dispatchable generators greater than the De-Minimus Threshold are required to participate in the Capacity Market.",
+   "conditions": "Threshold as defined in the Capacity Market Code (Trading and Settlement Code, De-Minimus Threshold); the text notes the obligation may apply to data centre operators depending on backup generation installed capacity",
+   "evidence": {
+    "provision": "Section 4.4, CRU Response, Capacity Market",
+    "quote": "This means that any dispatchable generator greater than 10MW is required to participate in the Capacity Market."
+   }
+  },
+  {
+   "variable": "power_capacity",
+   "variable_text": "dispatchable on-site generation greater than 1MW",
+   "operator": ">",
+   "value": 1,
+   "value_text": "dispatchable on-site generation greater than 1MW",
+   "unit": "MW",
+   "measurement": "Capacity of dispatchable on-site generation; measurement method not stated in the text",
+   "level": "facility",
+   "trigger": "obligation",
+   "consequence": "Data centre operators developing dispatchable on-site generation above the threshold must acquire an authorisation to construct and a licence to generate from the CRU, as appropriate.",
+   "conditions": "Authorisation and licence under sections 14 and 16 of the Electricity Regulation Act 1999, as appropriate",
+   "evidence": {
+    "provision": "Section 4.4, CRU Response, Capacity Market",
+    "quote": "developing dispatchable on-site generation greater than 1MW will require data centre operators to acquire an authorisation to construct and a licence to generate"
+   }
+  }
+ ],
+ "section_status": {}
+}

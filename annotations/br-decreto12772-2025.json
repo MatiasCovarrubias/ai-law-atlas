@@ -1,0 +1,721 @@
+{
+ "schema_version": "1.2",
+ "instrument_id": "br-decreto12772-2025",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-opus-5-5 (Claude Code)",
+  "method": "gold set (Opus, Claude Code)",
+  "date": "2026-10-13",
+  "prompt_version": "gold (hand annotation by Claude Opus in Claude Code; no prompt version)"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "Portal da Legislação, Presidência da República (planalto.gov.br)",
+  "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/decreto/D12772.htm",
+  "retrieved": "2026-10-13",
+  "version": "original as published (DOU 2025-12-08); the Planalto page shows no later amendments as of retrieval",
+  "language": "pt",
+  "extent": "full",
+  "note": "Full text of Decreto 12.772/2025 (Arts. 1-17, Chapters I-III). Art. 15 restates amended provisions of Decreto 5.597/2005 (Art. 2 caput and §§1-2; Art. 3 I); the parts of Decreto 5.597/2005 elided on the page ('....') are not included. Provision IDs for that text use the numbering of Decreto 5.597/2005 (e.g. 'Decreto 5.597/2005, Art. 2 §2, as amended by Art. 15'). Raw page is Windows-1252 HTML, extracted with tools/extract_texts.py. The consolidated Decreto 5.597/2005 on planalto.gov.br was read for context only; nothing is coded from it."
+ },
+ "summary": {
+  "short": "Creates Brazil's National Transmission Access Policy (PNAST): from 8 December 2025, permanent access to the basic transmission grid and increases in contracted use go through periodic Access Seasons run by the ONS, with competitive processes where demand exceeds capacity. Sets transitional rules for pending requests; excludes distribution utilities.",
+  "long": "Decreto 12.772/2025 creates the PNAST for users seeking permanent access to the transmission system or more contracted transmission use; distribution concessionaires and permissionaires are excluded. Access to the basic grid and increases in contracted use occur through Access Seasons: periodic windows in which applicants register demand, analysed jointly by the national system operator (ONS). Where registered demand exceeds available capacity at a connection point, competitive processes are held; their revenues go to tariff moderation. Under ministry guidelines, these processes may cover future capacity, voluntary release of contracted amounts, capacity conditioned on investment, and margins for regional development. The first season must be held within ten months of publication and at least two a year from the following year, with schedules published 90 days ahead. Requests filed before publication receive access opinions within ten months, without priority for future margins or revalidation; interim requests need remaining capacity. Consumer requests pending at the ministry go to the ONS, subject to a 45-day financial guarantee, and the ministry plans grid expansions for them. EPE gains access to applicant data and runs an annual mapping call. Decreto 5.597/2005 is amended to cover multi-unit hubs or clusters at one connection point."
+ },
+ "classification": {
+  "domains": [
+   "energy_grid_water"
+  ],
+  "primary_domain": "energy_grid_water",
+  "mechanisms": [
+   "mandate_obligation",
+   "registration_notification",
+   "licensing_permit_certification",
+   "disclosure_transparency"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "utility_grid_operator",
+   "enterprise",
+   "government_agency",
+   "regulator"
+  ],
+  "affected_roles": [
+   "consumers_users"
+  ],
+  "decision_margins": [
+   "firm:entry_market_access",
+   "firm:investment_location",
+   "firm:input_use",
+   "firm:compliance_process",
+   "household:prices"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national"
+   ],
+   "description": "Access to the transmission system and basic grid of Brazil's National Interconnected System (SIN); distribution concessionaires and permissionaires are excluded.",
+   "evidence": {
+    "provision": "Art. 2 I",
+    "quote": "a promoção da transição energética nacional por meio do adequado aproveitamento dos recursos do Sistema Interligado Nacional – SIN"
+   }
+  },
+  "agora_applications": [],
+  "agora_harms": [],
+  "agora_incentives": [],
+  "agora_risk_factors": [],
+  "agora_strategies": []
+ },
+ "events": [
+  {
+   "event": "signed",
+   "date": "2025-12-05",
+   "date_type": "absolute",
+   "date_text": "Brasília, 5 de dezembro de 2025",
+   "applies_to": "Presidential signature of the decree",
+   "evidence": {
+    "provision": "Signature block",
+    "quote": "Brasília, 5 de dezembro de 2025; 204º da Independência e 137º da República."
+   }
+  },
+  {
+   "event": "published",
+   "date": "2025-12-08",
+   "date_type": "absolute",
+   "date_text": "publicado no DOU de 8.12.2025",
+   "applies_to": "Publication in the Diário Oficial da União (Planalto page note)",
+   "evidence": {
+    "provision": "Planalto note",
+    "quote": "Este texto não substitui o publicado no DOU de 8.12.2025."
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2025-12-08",
+   "date_type": "relative",
+   "date_text": "entra em vigor na data de sua publicação",
+   "anchor": "date of publication (DOU 2025-12-08)",
+   "applies_to": "Whole decree",
+   "evidence": {
+    "provision": "Art. 17",
+    "quote": "Este Decreto entra em vigor na data de sua publicação."
+   }
+  },
+  {
+   "event": "application",
+   "date": "2025-12-08",
+   "date_type": "relative",
+   "date_text": "A partir da data de publicação deste Decreto",
+   "anchor": "date of publication (DOU 2025-12-08)",
+   "applies_to": "Permanent access requests become subject to the PNAST guidelines",
+   "evidence": {
+    "provision": "Art. 8",
+    "quote": "A partir da data de publicação deste Decreto, as solicitações de acesso permanente estarão submetidas às diretrizes da PNAST."
+   }
+  },
+  {
+   "event": "application",
+   "date": "2025-12-08",
+   "date_type": "relative",
+   "date_text": "protocoladas no ONS após a data de publicação deste Decreto e antes da abertura da primeira Temporada de Acesso",
+   "anchor": "date of publication (DOU 2025-12-08); the interim regime ends at the opening of the first Access Season",
+   "applies_to": "Interim acceptance conditions for permanent basic-grid access requests filed with the ONS between publication and the opening of the first Access Season (Art. 10)",
+   "evidence": {
+    "provision": "Art. 10 caput",
+    "quote": "As solicitações de acesso permanente à rede básica protocoladas no ONS após a data de publicação deste Decreto e antes da abertura da primeira Temporada de Acesso somente serão aceitas se"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2026-01-22",
+   "date_type": "relative",
+   "date_text": "no prazo de quarenta e cinco dias, contado da data de publicação deste Decreto",
+   "anchor": "date of publication (DOU 2025-12-08) + 45 days",
+   "applies_to": "Financial guarantee for analysis of consumer requests forwarded from the Ministry of Mines and Energy (Art. 12 §2) and of consumer requests filed up to publication (Art. 13 §1); reduction of requested transmission amounts with adjustment of the guarantee (Art. 13 §2)",
+   "evidence": {
+    "provision": "Art. 13 §1 (same period in Art. 12 §2 and Art. 13 §2)",
+    "quote": "será condicionada à apresentação de garantia financeira, nos termos da regulação vigente, no prazo de quarenta e cinco dias, contado da data de publicação deste Decreto"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2026-10-08",
+   "date_type": "relative",
+   "date_text": "no prazo de dez meses, contado da data de publicação deste Decreto",
+   "anchor": "date of publication (DOU 2025-12-08) + 10 months",
+   "applies_to": "Holding of the first Access Season",
+   "evidence": {
+    "provision": "Art. 7 §1",
+    "quote": "A primeira Temporada de Acesso será realizada no prazo de dez meses, contado da data de publicação deste Decreto."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2026-10-08",
+   "date_type": "relative",
+   "date_text": "no prazo de dez meses, contado da data de publicação deste Decreto, e antes da data de realização da primeira Temporada de Acesso",
+   "anchor": "date of publication (DOU 2025-12-08) + 10 months, and before the first Access Season if earlier",
+   "applies_to": "Analysis and issue of access opinions for permanent basic-grid access requests filed with the ONS before publication",
+   "evidence": {
+    "provision": "Art. 9 caput",
+    "quote": "serão analisadas e terão os seus respectivos pareceres de acesso emitidos no prazo de dez meses, contado da data de publicação deste Decreto, e antes da data de realização da primeira Temporada de Acesso"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "A partir do ano seguinte ao da realização da primeira Temporada de Acesso, deverão ser realizadas, no mínimo, duas Temporadas de Acesso ao ano",
+   "anchor": "calendar year following the year of the first Access Season",
+   "applies_to": "At least two Access Seasons per year",
+   "evidence": {
+    "provision": "Art. 7 §2",
+    "quote": "A partir do ano seguinte ao da realização da primeira Temporada de Acesso, deverão ser realizadas, no mínimo, duas Temporadas de Acesso ao ano."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "com antecedência mínima de noventa dias",
+   "anchor": "each Access Season",
+   "applies_to": "ONS publication of the stages and schedule of each Access Season at least 90 days in advance",
+   "evidence": {
+    "provision": "Art. 7 §3",
+    "quote": "O ONS deverá divulgar com antecedência mínima de noventa dias as etapas e o cronograma de realização das Temporadas de Acesso."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "deverá realizar anualmente chamada pública",
+   "applies_to": "EPE annual public call mapping generation potential, large consumers and projects affecting electricity consumption or generation",
+   "evidence": {
+    "provision": "Art. 5 II",
+    "quote": "deverá realizar anualmente chamada pública para mapeamento de potenciais de geração, de grandes consumidores"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "power_capacity",
+   "variable_text": "demanda registrada [vs.] capacidade disponível no ponto de conexão",
+   "operator": ">",
+   "value": null,
+   "value_text": "onde a demanda registrada superar a capacidade disponível",
+   "unit": "transmission capacity at the connection point",
+   "currency": null,
+   "indexed": false,
+   "measurement": "Demand registered in an Access Season compared with available capacity at each connection point, analysed jointly by the ONS",
+   "level": "other",
+   "trigger": "obligation",
+   "consequence": "A competitive process is held for the connection point",
+   "depends_on": "Available capacity at each connection point as determined by the ONS (Art. 3 §1; Art. 11 for the first season)",
+   "evidence": {
+    "provision": "Art. 3 §3",
+    "quote": "Nas Temporadas de Acesso serão realizados processos competitivos dos pontos de conexão onde a demanda registrada superar a capacidade disponível."
+   }
+  },
+  {
+   "variable": "power_capacity",
+   "variable_text": "capacidade remanescente disponível no ponto de conexão pretendido",
+   "operator": ">",
+   "value": 0,
+   "value_text": "houver capacidade remanescente disponível no ponto de conexão pretendido",
+   "unit": "transmission capacity at the connection point",
+   "currency": null,
+   "indexed": false,
+   "measurement": "Remaining capacity at the requested connection point",
+   "level": "other",
+   "trigger": "eligibility",
+   "consequence": "An interim permanent basic-grid access request (filed after publication and before the first Access Season) can be accepted",
+   "conditions": "Request also filed before the opening of the first Access Season and earlier than the ONS regulatory analysis period (Art. 10 II); 'houver capacidade remanescente' coded as remaining capacity greater than zero",
+   "evidence": {
+    "provision": "Art. 10 I",
+    "quote": "houver capacidade remanescente disponível no ponto de conexão pretendido"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "nível de tensão",
+   "operator": ">=",
+   "value": 230,
+   "value_text": "nível de tensão igual ou superior a 230 kV",
+   "unit": "kV",
+   "currency": null,
+   "indexed": false,
+   "measurement": "Technical compatibility of the new consumer unit with the voltage level",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Connection of a new, previously unconnected consumer unit is a case listed in Art. 3 of Decreto 5.597/2005 (caput not restated in this text)",
+   "conditions": "Consumer unit not previously connected",
+   "evidence": {
+    "provision": "Decreto 5.597/2005, Art. 3 I, as amended by Art. 15",
+    "quote": "ligação de nova unidade consumidora não conectada anteriormente, desde que seja tecnicamente compatível com o nível de tensão igual ou superior a 230 kV"
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "registration_notification",
+   "addressee": "enterprise",
+   "summary": "Users seeking permanent access to the basic grid or an increase in contracted transmission use must go through Access Seasons, formally registering their access demand in periodic windows.",
+   "applies_from": null,
+   "conditional_on": "Opening of the first Access Season (Art. 7 §1); interim rules of Arts. 9-13 apply until then",
+   "evidence": {
+    "provision": "Art. 3 caput and §1",
+    "quote": "O acesso permanente à rede básica e o aumento do montante de uso contratado ocorrerão por meio de Temporadas de Acesso."
+   }
+  },
+  {
+   "type": "eligibility_condition",
+   "addressee": "enterprise",
+   "summary": "After the Access Season stages, only users meeting the technical, economic and financial requirements proceed to the access procedure with the ONS under Aneel regulation.",
+   "applies_from": null,
+   "conditional_on": "Completion of an Access Season; requirements set by Aneel regulation",
+   "evidence": {
+    "provision": "Art. 3 §4",
+    "quote": "os usuários que cumprirem os requisitos técnicos, econômicos e financeiros seguirão o rito de acesso junto ao ONS, conforme regulação da Agência Nacional de Energia Elétrica – Aneel"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "utility_grid_operator",
+   "summary": "The ONS develops, operationalises and runs the Access Seasons, analysing registered demands jointly and in coordination, and sets their periodicity and schedules.",
+   "applies_from": "2025-12-08",
+   "evidence": {
+    "provision": "Art. 3 §2; Art. 7 caput",
+    "quote": "O ONS será responsável por desenvolver, operacionalizar e executar as Temporadas de Acesso"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "utility_grid_operator",
+   "summary": "Competitive processes are held within Access Seasons for connection points where registered demand exceeds available capacity.",
+   "applies_from": null,
+   "conditional_on": "Registered demand above available capacity at the connection point",
+   "evidence": {
+    "provision": "Art. 3 §3",
+    "quote": "serão realizados processos competitivos dos pontos de conexão onde a demanda registrada superar a capacidade disponível"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "also_addressees": [
+    "regulator"
+   ],
+   "summary": "Revenues from the competitive processes are applied to tariff moderation, under Ministry of Mines and Energy guidelines and Aneel regulation.",
+   "applies_from": null,
+   "evidence": {
+    "provision": "Art. 3 §5",
+    "quote": "As receitas obtidas nos processos competitivos das Temporadas de Acesso serão revertidas para a modicidade tarifária, conforme diretrizes do Ministério de Minas e Energia, com regulação estabelecida pela Aneel."
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "government_agency",
+   "modality": "may",
+   "summary": "Ministry of Mines and Energy guidelines may provide for competitive processes for future capacity, a voluntary stage to release contracted amounts, future capacity conditioned on winners' investments, and a specific margin for regional development policies.",
+   "applies_from": "2025-12-08",
+   "evidence": {
+    "provision": "Art. 3 §§6-7",
+    "quote": "A partir de diretrizes do Ministério de Minas e Energia, os processos competitivos das Temporadas de Acesso poderão prever"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "may",
+   "summary": "The Ministry of Mines and Energy may use Access Seasons to support decisions on tenders for basic-grid expansion, and their results to coordinate EPE planning studies and the Transmission Grant Plan.",
+   "applies_from": "2025-12-08",
+   "evidence": {
+    "provision": "Art. 4",
+    "quote": "poderão ser utilizadas como ferramenta de apoio à tomada de decisão do Ministério de Minas e Energia para fins de licitação com vistas à ampliação da rede básica do SIN"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "may",
+   "summary": "Energy and capacity auctions that use transmission margin as a selection stage may use the Access Seasons as a preliminary stage, under Ministry of Mines and Energy guidelines.",
+   "applies_from": "2025-12-08",
+   "evidence": {
+    "provision": "Art. 6",
+    "quote": "poderão utilizar, como etapa preliminar, as Temporadas de Acesso de que trata este Decreto, conforme diretrizes estabelecidas pelo Ministério de Minas e Energia"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "may",
+   "summary": "EPE has access to the data and information of users registering in Access Seasons for national energy planning studies, subject to the data protection law (Lei 13.709/2018).",
+   "applies_from": "2025-12-08",
+   "evidence": {
+    "provision": "Art. 5 I",
+    "quote": "terá acesso aos dados e informações dos usuários que se inscreverem nas Temporadas de Acesso, para a avaliação e o uso das informações nos estudos de planejamento energético nacional"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "summary": "EPE must hold an annual public call mapping generation potential, large consumers, industrial hubs, organised ports, industrial parks and clusters, infrastructure and other projects affecting electricity consumption or generation, for ten-year planning.",
+   "applies_from": "2025-12-08",
+   "evidence": {
+    "provision": "Art. 5 II",
+    "quote": "deverá realizar anualmente chamada pública para mapeamento de potenciais de geração, de grandes consumidores, de polos industriais, de portos organizados, de parques e clusters industriais"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "also_addressees": [
+    "utility_grid_operator"
+   ],
+   "summary": "EPE must work with the ONS on basic-grid access studies, following the minimum global cost criterion.",
+   "applies_from": "2025-12-08",
+   "evidence": {
+    "provision": "Art. 5 III",
+    "quote": "deverá interagir com o ONS para auxiliar no desenvolvimento dos estudos de acesso à rede básica, observado o critério de mínimo custo global"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "utility_grid_operator",
+   "summary": "The first Access Season must be held within ten months of publication.",
+   "applies_from": "2025-12-08",
+   "evidence": {
+    "provision": "Art. 7 §1",
+    "quote": "A primeira Temporada de Acesso será realizada no prazo de dez meses, contado da data de publicação deste Decreto."
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "utility_grid_operator",
+   "summary": "From the year after the first Access Season, at least two Access Seasons must be held each year.",
+   "applies_from": null,
+   "conditional_on": "Year following the first Access Season",
+   "evidence": {
+    "provision": "Art. 7 §2",
+    "quote": "deverão ser realizadas, no mínimo, duas Temporadas de Acesso ao ano"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "utility_grid_operator",
+   "summary": "The ONS must publish the stages and schedule of each Access Season at least 90 days in advance.",
+   "applies_from": "2025-12-08",
+   "evidence": {
+    "provision": "Art. 7 §3",
+    "quote": "O ONS deverá divulgar com antecedência mínima de noventa dias as etapas e o cronograma de realização das Temporadas de Acesso."
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "utility_grid_operator",
+   "summary": "Permanent basic-grid access requests filed with the ONS before publication must be analysed and receive access opinions within ten months of publication and before the first Access Season.",
+   "applies_from": "2025-12-08",
+   "evidence": {
+    "provision": "Art. 9 caput",
+    "quote": "As solicitações de acesso permanente à rede básica protocoladas no ONS antes da data de publicação deste Decreto serão analisadas e terão os seus respectivos pareceres de acesso emitidos no prazo de dez meses"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "utility_grid_operator",
+   "also_addressees": [
+    "enterprise"
+   ],
+   "modality": "shall_not",
+   "summary": "For pre-publication and interim access requests, mechanisms guaranteeing access priority for future margins are barred, and the access opinions issued cannot be revalidated.",
+   "applies_from": "2025-12-08",
+   "evidence": {
+    "provision": "Art. 9 §§1-2; Art. 10 sole paragraph",
+    "quote": "Para as solicitações de acesso de que trata o caput são vedados mecanismos de garantia de prioridade de acesso para margens futuras."
+   }
+  },
+  {
+   "type": "eligibility_condition",
+   "addressee": "enterprise",
+   "summary": "Permanent basic-grid access requests filed after publication and before the first Access Season are accepted only if remaining capacity exists at the requested connection point and the request is filed before the season opens and earlier than the ONS regulatory analysis period.",
+   "applies_from": "2025-12-08",
+   "evidence": {
+    "provision": "Art. 10 I-II",
+    "quote": "forem apresentadas antes da abertura da primeira Temporada de Acesso e com antecedência maior que o prazo regulamentar de análise exigido pelo ONS"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "utility_grid_operator",
+   "summary": "In computing remaining capacity for the first Access Season, the ONS deducts capacity already reserved by valid access opinions issued under Arts. 9 and 10.",
+   "applies_from": null,
+   "conditional_on": "First Access Season",
+   "evidence": {
+    "provision": "Art. 11",
+    "quote": "o ONS descontará as capacidades já reservadas por meio de pareceres de acesso vigentes emitidos nos termos do disposto nos art. 9º e art. 10"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "summary": "Consumer requests pending at the Ministry of Mines and Energy on the publication date are forwarded to the ONS for an access opinion under Art. 9, without prior ministerial authorisation.",
+   "applies_from": "2025-12-08",
+   "evidence": {
+    "provision": "Art. 12 caput",
+    "quote": "As solicitações de consumidores em curso no Ministério de Minas e Energia na data de publicação deste Decreto serão encaminhadas ao ONS para emissão de parecer de acesso nos termos do disposto no art. 9º, dispensada prévia autorização ministerial."
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "utility_grid_operator",
+   "summary": "The ONS analyses the forwarded consumer requests in chronological order of filing at the Ministry and may require complementary technical documentation to continue the analysis.",
+   "applies_from": "2025-12-08",
+   "evidence": {
+    "provision": "Art. 12 §§1, 3",
+    "quote": "O ONS analisará as solicitações de que trata o caput em ordem cronológica de protocolo no Ministério de Minas e Energia."
+   }
+  },
+  {
+   "type": "eligibility_condition",
+   "addressee": "enterprise",
+   "summary": "Analysis of consumer requests forwarded from the Ministry (Art. 12) and of consumer access requests filed up to publication (Art. 13) requires a financial guarantee within 45 days of publication, under Aneel regulation.",
+   "applies_from": "2025-12-08",
+   "evidence": {
+    "provision": "Art. 12 §2; Art. 13 §1",
+    "quote": "A análise somente será realizada se o interessado apresentar garantia financeira no prazo de quarenta e cinco dias contado da data de publicação deste Decreto, nos termos da regulação da Aneel."
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "summary": "Exceptionally, the Ministry of Mines and Energy is to determine, through an extraordinary revision of the Transmission Grant Plan, basic-grid expansions primarily to serve consumer access requests filed up to publication, including those forwarded under Art. 12.",
+   "applies_from": "2025-12-08",
+   "evidence": {
+    "provision": "Art. 13 caput",
+    "quote": "Excepcionalmente, o Ministério de Minas e Energia determinará, por meio de revisão extraordinária do Plano de Outorgas de Transmissão de Energia Elétrica, expansões na rede básica que serão destinadas prioritariamente a atender"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "enterprise",
+   "modality": "may",
+   "summary": "Consumers with requests under Art. 13 may reduce the transmission amounts requested, adjusting the financial guarantee within 45 days of publication, keeping their original place in the analysis order.",
+   "applies_from": "2025-12-08",
+   "evidence": {
+    "provision": "Art. 13 §2",
+    "quote": "poderão reduzir os montantes de uso do sistema de transmissão requeridos na solicitação de acesso, com a adequação da respectiva garantia financeira"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "utility_grid_operator",
+   "summary": "After the 45-day periods, the ONS computes new transmission margins for the Art. 13 requests, with the main guideline of maximising the transmission use contracted from the expansions.",
+   "applies_from": null,
+   "conditional_on": "Expiry of the 45-day periods of Art. 13 §§1-2",
+   "evidence": {
+    "provision": "Art. 13 §3",
+    "quote": "o ONS calculará as novas margens de escoamento destinadas às solicitações de acesso de que trata este artigo, adotando como diretriz principal a maximização do montante de uso do sistema de transmissão a ser contratado"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "utility_grid_operator",
+   "modality": "may",
+   "summary": "The absence of specific regulation does not prevent the ONS from running Access Seasons, provided Ministry guidelines and the PNAST are respected.",
+   "applies_from": "2025-12-08",
+   "evidence": {
+    "provision": "Art. 14",
+    "quote": "A ausência de regulação específica não impedirá a realização das Temporadas de Acesso pelo ONS"
+   }
+  },
+  {
+   "type": "licensing_certification",
+   "addressee": "enterprise",
+   "summary": "Consumer access to the basic grid under Decreto 5.597/2005 must be preceded by the steps listed in its Art. 2 (items not restated here; item I repealed by Art. 16), including an ONS access opinion; this also applies to a project, hub or cluster with multiple consumption units at one connection point, under Aneel regulation.",
+   "applies_from": "2025-12-08",
+   "evidence": {
+    "provision": "Decreto 5.597/2005, Art. 2 caput and §2, as amended by Art. 15",
+    "quote": "Aplica-se o disposto no caput também para atendimento, em um mesmo ponto de conexão à rede básica, de empreendimento, de polo ou de cluster com múltiplas unidades de consumo, conforme regulação da ANEEL."
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "utility_grid_operator",
+   "summary": "In preparing an access opinion, the ONS must observe the grid procedures and the technical standards of the transmission installation accessed.",
+   "applies_from": "2025-12-08",
+   "evidence": {
+    "provision": "Decreto 5.597/2005, Art. 2 §1, as amended by Art. 15",
+    "quote": "Quando da elaboração do parecer de acesso pelo ONS, deverão ser observados os procedimentos de rede e os padrões técnicos da instalação de transmissão acessada."
+   }
+  }
+ ],
+ "enforcement": [],
+ "definitions": [
+  {
+   "term": "Política Nacional de Acesso ao Sistema de Transmissão – PNAST [National Transmission Access Policy]",
+   "evidence": {
+    "provision": "Art. 1 caput",
+    "quote": "Fica instituída a Política Nacional de Acesso ao Sistema de Transmissão – PNAST, destinada aos usuários que pretendam acessar o sistema de transmissão em caráter permanente ou aumentar o montante de uso do sistema de transmissão contratado."
+   }
+  },
+  {
+   "term": "Temporadas de Acesso [Access Seasons]",
+   "evidence": {
+    "provision": "Art. 3 §1",
+    "quote": "As Temporadas de Acesso são janelas periódicas nas quais os interessados registram formalmente suas demandas de acesso, que serão analisadas de forma conjunta e coordenada pelo Operador Nacional do Sistema Elétrico – ONS."
+   }
+  }
+ ],
+ "relations": [
+  {
+   "relation": "legal_basis",
+   "target_instrument_id": null,
+   "target_text": "Constituição Federal, Art. 84 caput IV and VI(a)",
+   "note": "Presidential regulatory power",
+   "evidence": {
+    "provision": "Preamble",
+    "quote": "no uso das atribuições que lhe confere o art. 84, caput, incisos IV e VI, alínea “a”, da Constituição"
+   }
+  },
+  {
+   "relation": "legal_basis",
+   "target_instrument_id": null,
+   "target_text": "Lei nº 9.074, de 7 de julho de 1995, Arts. 11 and 15",
+   "evidence": {
+    "provision": "Preamble",
+    "quote": "tendo em vista o disposto nos art. 11 e art. 15, da Lei nº 9.074, de 7 de julho de 1995"
+   }
+  },
+  {
+   "relation": "legal_basis",
+   "target_instrument_id": null,
+   "target_text": "Lei nº 9.427, de 26 de dezembro de 1996, Art. 2",
+   "evidence": {
+    "provision": "Preamble",
+    "quote": "no art. 2º da Lei nº 9.427, de 26 de dezembro de 1996"
+   }
+  },
+  {
+   "relation": "legal_basis",
+   "target_instrument_id": null,
+   "target_text": "Lei nº 9.648, de 27 de maio de 1998, Art. 9 §1",
+   "evidence": {
+    "provision": "Preamble",
+    "quote": "no art. 9º, § 1º, da Lei nº 9.648, de 27 de maio de 1998"
+   }
+  },
+  {
+   "relation": "legal_basis",
+   "target_instrument_id": null,
+   "target_text": "Lei nº 14.600, de 19 de junho de 2023, Art. 37",
+   "evidence": {
+    "provision": "Preamble",
+    "quote": "no art. 37 da Lei nº 14.600, de 19 de junho de 2023"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": null,
+   "target_text": "Lei nº 9.648, de 27 de maio de 1998, Art. 13 sole paragraph (d)",
+   "note": "The ONS runs the Access Seasons under this provision",
+   "evidence": {
+    "provision": "Art. 3 §2",
+    "quote": "nos termos do disposto no art. 13, parágrafo único, alínea “d”, da Lei nº 9.648, de 27 de maio de 1998"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": "br-lgpd-2018",
+   "target_text": "Lei nº 13.709, de 14 de agosto de 2018 (LGPD)",
+   "note": "EPE's access to the data of Access Season registrants is subject to the LGPD",
+   "evidence": {
+    "provision": "Art. 5 I",
+    "quote": "observado o disposto na Lei nº 13.709, de 14 de agosto de 2018"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_instrument_id": null,
+   "target_text": "Decreto nº 5.597, de 28 de novembro de 2005 (Art. 2 caput and §§1-2; Art. 3 I)",
+   "note": "Rewords the access requirements and extends them to multi-unit projects, hubs or clusters at one connection point",
+   "evidence": {
+    "provision": "Art. 15",
+    "quote": "O Decreto nº 5.597, de 28 de novembro de 2005, passa a vigorar com as seguintes alterações"
+   }
+  },
+  {
+   "relation": "repeals",
+   "target_instrument_id": null,
+   "target_text": "Decreto nº 5.597, de 28 de novembro de 2005: Art. 2 caput I and sole paragraph; Art. 5 §3",
+   "note": "Partial repeal; the content of the repealed provisions is not restated in this text",
+   "evidence": {
+    "provision": "Art. 16 I",
+    "quote": "os seguintes dispositivos do Decreto nº 5.597, de 28 de novembro de 2005"
+   }
+  },
+  {
+   "relation": "repeals",
+   "target_instrument_id": null,
+   "target_text": "Decreto nº 10.893, de 14 de dezembro de 2021, Art. 2",
+   "note": "Partial repeal; the content of the repealed article is not restated in this text",
+   "evidence": {
+    "provision": "Art. 16 II",
+    "quote": "o art. 2º do Decreto nº 10.893, de 14 de dezembro de 2021"
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "Operador Nacional do Sistema Elétrico (ONS)",
+   "role": "designated",
+   "function": "Develops, operationalises and runs the Access Seasons; sets their periodicity and schedule; runs competitive processes; issues access opinions; computes remaining capacity and new transmission margins",
+   "lei": null,
+   "ticker": null,
+   "evidence": {
+    "provision": "Art. 3 §§1-2",
+    "quote": "O ONS será responsável por desenvolver, operacionalizar e executar as Temporadas de Acesso de que trata o caput"
+   }
+  },
+  {
+   "name": "Agência Nacional de Energia Elétrica (Aneel)",
+   "role": "designated",
+   "function": "Regulates the access procedure, the requirements for users, the financial guarantee, and the application of competitive-process revenues to tariff moderation",
+   "lei": null,
+   "ticker": null,
+   "evidence": {
+    "provision": "Art. 3 §4",
+    "quote": "conforme regulação da Agência Nacional de Energia Elétrica – Aneel"
+   }
+  },
+  {
+   "name": "Ministério de Minas e Energia",
+   "role": "designated",
+   "function": "Issues guidelines for the Access Seasons and competitive processes; may use season results for transmission tenders, planning and auctions; forwards pending consumer requests; determines expansions by extraordinary revision of the Transmission Grant Plan",
+   "lei": null,
+   "ticker": null,
+   "evidence": {
+    "provision": "Art. 13 caput",
+    "quote": "o Ministério de Minas e Energia determinará, por meio de revisão extraordinária do Plano de Outorgas de Transmissão de Energia Elétrica, expansões na rede básica"
+   }
+  },
+  {
+   "name": "Empresa de Pesquisa Energética (EPE)",
+   "role": "designated",
+   "function": "Accesses Access Season registrant data for energy planning; holds an annual mapping call; supports the ONS on access studies",
+   "lei": null,
+   "ticker": null,
+   "evidence": {
+    "provision": "Art. 4 sole paragraph; Art. 5",
+    "quote": "para a coordenação dos estudos de planejamento da Empresa de Pesquisa Energética – EPE"
+   }
+  }
+ ],
+ "section_status": {
+  "enforcement": {
+   "status": "not_found",
+   "note": "The decree sets no sanctions. The only consequences stated are procedural: requests are not analysed without the financial guarantee (Art. 12 §2, Art. 13 §1), interim requests are not accepted without remaining capacity (Art. 10), and access opinions under Arts. 9-10 cannot be revalidated."
+  }
+ },
+ "notes": "Data centres are not named in the text; the provisions relevant to large loads are the Access Season regime (Arts. 3, 7), the transitional treatment of consumer requests (Arts. 12-13), EPE's mapping of 'grandes consumidores' and industrial clusters (Art. 5 II), and the extension of Decreto 5.597/2005 Art. 2 to projects, hubs or clusters with multiple consumption units at one connection point (Art. 15). For that reason only 'energy_grid_water' is coded as a domain. Delegated and not in this text: Aneel regulation of the access procedure, requirements, guarantees and revenue use (Art. 3 §§4-5, Art. 12 §2); Ministry of Mines and Energy guidelines for seasons and competitive processes (Art. 3 §§5-7, Art. 6, Art. 14); season periodicity and schedules set by the ONS (Art. 7 caput). The ONS is coded as 'utility_grid_operator' and its duties as type 'other' (it is not a government body in the text's terms). Duties stated in the passive voice for the seasons (Art. 3 §3, Art. 7 §§1-2) are attributed to the ONS because Art. 3 §2 makes it responsible for running them. Event dates are computed from publication on 2025-12-08 (ten months: 2026-10-08; 45 days: 2026-01-22). The 230 kV threshold is coded from the restated Art. 3 I of Decreto 5.597/2005; the decree marks the whole item as new wording (NR) and does not show which words changed. Per the consolidated Decreto 5.597/2005 on planalto.gov.br (context only, outside the annotated text), the repealed Art. 2 I required a Ministry of Mines and Energy ordinance before access."
+}

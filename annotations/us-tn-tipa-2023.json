@@ -1,0 +1,874 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "us-tn-tipa-2023",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (connectors/fetch_texts.py)",
+  "url": "https://publications.tnsosfiles.com/acts/113/pub/pc0408.pdf",
+  "retrieved": "2026-10-13",
+  "version": "as fetched",
+  "language": "en",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "data_protection",
+   "algorithmic_decision_systems",
+   "minors_child_safety"
+  ],
+  "primary_domain": "data_protection",
+  "mechanisms": [
+   "mandate_obligation",
+   "disclosure_transparency"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "data_controller",
+   "data_processor"
+  ],
+  "affected_roles": [
+   "consumers_users",
+   "minors"
+  ],
+  "decision_margins": [
+   "household:data_privacy",
+   "firm:compliance_process",
+   "firm:pricing"
+  ],
+  "territorial_scope": {
+   "types": [
+    "subnational"
+   ],
+   "description": "Applies to persons conducting business in Tennessee that produce products or services targeting Tennessee residents and meet the revenue and consumer-count tests.",
+   "evidence": {
+    "provision": "47-18-3202",
+    "quote": "This part applies to persons that conduct business in this state producing products or services that target residents of this state"
+   }
+  },
+  "agora_harms": [
+   "Violation of civil or human rights, including privacy"
+  ],
+  "agora_incentives": [
+   "Fines"
+  ],
+  "agora_strategies": [
+   "Disclosure",
+   "Evaluation: Impact assessment",
+   "Input controls: Data use"
+  ]
+ },
+ "summary": {
+  "short": "Tennessee's consumer data privacy statute gives state residents access, correction, deletion, portability and opt-out rights and imposes controller and processor duties on large businesses meeting revenue and consumer-count thresholds; the attorney general enforces it. Effective 1 July 2025.",
+  "long": "Adds a Tennessee consumer personal-information part (Title 47, Ch. 18). Covers businesses producing products or services targeting Tennessee residents that exceed $25 million in revenue and meet a consumer-count or data-sale test; excludes state bodies, financial institutions, HIPAA-covered entities, nonprofits and higher-education institutions. Consumers gain access, correction, deletion, portability and opt-out rights (sale, targeted advertising, certain profiling); controllers must respond within 45 days, limit collection, secure data, obtain consent for sensitive data, publish privacy notices and conduct data protection assessments for targeted advertising, sales, certain profiling and sensitive data. Processors act under binding contracts. The attorney general enforces exclusively after a 60-day cure notice, with civil penalties up to $7,500 per violation and treble damages for willful or knowing violations; no private right of action. A NIST-conforming privacy program is an affirmative defense. Preempts conflicting local ordinances; effective July 1, 2025."
+ },
+ "relations": [
+  {
+   "relation": "amends",
+   "target_text": "Tennessee Code Annotated, Title 47, Chapter 18",
+   "note": "Adds a new part (sections 47-18-3201 to 47-18-3213) to Chapter 18 of Title 47 (Section 2).",
+   "evidence": {
+    "provision": "Section 2",
+    "quote": "Tennessee Code Annotated, Title 47, Chapter 18, is amended by adding"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Tennessee Code Annotated, Titles 4, 12, 43, 45, 47, 48, 50, 61, 66 and 67",
+   "note": "The long title names these titles. The only operative amendment in the text is to Title 47, Chapter 18 (Section 2).",
+   "evidence": {
+    "provision": "Long title (AN ACT)",
+    "quote": "to amend Tennessee Code Annotated, Title 4; Title 12; Title 43"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Health Insurance Portability and Accountability Act of 1996 (HIPAA), 42 U.S.C. § 1320d et seq., and 45 CFR Parts 160 and 164",
+   "note": "Defines HIPAA-linked terms and exempts covered entities and business associates governed by the HIPAA privacy, security and breach notification rules.",
+   "evidence": {
+    "provision": "47-18-3210(a)(4)",
+    "quote": "A covered entity or business associate governed by the privacy"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Children's Online Privacy Protection Act (15 U.S.C. § 6501 et seq.)",
+   "note": "Processing sensitive data of a known child must follow COPPA; controllers that comply with COPPA verifiable parental consent are deemed compliant (47-18-3210(b)).",
+   "evidence": {
+    "provision": "47-18-3204(a)(6)",
+    "quote": "the federal Children's Online Privacy Protection Act (15 U.S.C. § 6501 et seq.)"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Gramm-Leach-Bliley Act, Title V (15 U.S.C. § 6801 et seq.)",
+   "note": "Exempts financial institutions, their affiliates, and data subject to Title V of the Act.",
+   "evidence": {
+    "provision": "47-18-3210(a)(2)",
+    "quote": "data subject to Title V of the federal Gramm-Leach-Bliley Act"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Fair Credit Reporting Act (15 U.S.C. § 1681 et seq.)",
+   "note": "Exempts consumer-report activity only to the extent it is regulated by and authorized under the FCRA.",
+   "evidence": {
+    "provision": "47-18-3210(a)(16)",
+    "quote": "authorized under the federal Fair Credit Reporting Act"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Family Educational Rights and Privacy Act (FERPA), 20 U.S.C. § 1232g et seq.",
+   "note": "Exempts personal or educational information regulated by FERPA.",
+   "evidence": {
+    "provision": "47-18-3210(a)(18)",
+    "quote": "regulated by the federal Family Educational Rights and Privacy Act (FERPA)"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Title 68 (health care entities and health records)",
+   "note": "Exempts health records for purposes of Title 68.",
+   "evidence": {
+    "provision": "47-18-3210(a)(8)",
+    "quote": "Health records for purposes of title 68"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "NIST privacy framework, A Tool for Improving Privacy through Enterprise Risk Management Version 1.0",
+   "note": "A written privacy policy that reasonably conforms to this framework is part of the affirmative defense.",
+   "evidence": {
+    "provision": "47-18-3213(a)(1)(A)",
+    "quote": "Reasonably conforms to the National Institute of Standards"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Asia Pacific Economic Cooperation Cross Border Privacy Rules and Privacy Recognition for Processors systems",
+   "note": "A controller or processor may be certified under these APEC systems; certification may be considered in addition to the factors in subsection (b).",
+   "evidence": {
+    "provision": "47-18-3213(c)(1)(A)",
+    "quote": "A controller may be certified pursuant to the Asia Pacific"
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "Attorney general and reporter",
+   "role": "designated",
+   "function": "Has exclusive authority to enforce the part; may issue civil investigative demands (47-18-3209), send cure notices, bring actions for specified relief, and recover investigation expenses (47-18-3212).",
+   "evidence": {
+    "provision": "47-18-3212(a)",
+    "quote": "The attorney general and reporter has exclusive authority to enforce this part."
+   }
+  },
+  {
+   "name": "Tennessee Code Commission",
+   "role": "listed",
+   "function": "Requested to include the act's headings in any compilation or publication containing the act (Section 5).",
+   "evidence": {
+    "provision": "Section 5",
+    "quote": "requested to include the headings in any compilation or publication containing this act"
+   }
+  }
+ ],
+ "notes": "The long title lists ten Titles of the Tennessee Code, but the only operative amendment (Section 2) adds a part to Title 47, Chapter 18. Section 47-18-3204(a)(5) refers to 47-18-3203(a)(2)(F), but 47-18-3203(a)(2) ends at subdivision (E). Section 47-18-3206(f) applies data protection assessment requirements to processing from July 1, 2024, while Section 6 sets the act's effective date as July 1, 2025. The scanned text has OCR artifacts: many subdivision letters (B) appear as (8), and some quotes contain such characters. The text is the 2023 enacted version; no consolidated code text was checked.",
+ "events": [
+  {
+   "event": "legislative_approval",
+   "date": "2023-04-21",
+   "date_type": "absolute",
+   "date_text": "PASSED: April 21, 2023",
+   "applies_to": "House Bill No. 1181 (final passage; substituted for Senate Bill No. 73)",
+   "evidence": {
+    "provision": "Enacting legislation, signature block",
+    "quote": "April 21, 2023"
+   }
+  },
+  {
+   "event": "signed",
+   "date": "2023",
+   "date_type": "absolute",
+   "date_text": "APPROVED this ... day of ... 2023 (day and month illegible in the document)",
+   "applies_to": "Governor Bill Lee's approval of House Bill No. 1181",
+   "evidence": {
+    "provision": "Enacting legislation, signature block",
+    "quote": "APPROVED this"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2025-07-01",
+   "date_type": "absolute",
+   "date_text": "This act takes effect July 1, 2025, the public welfare requiring it.",
+   "applies_to": "The whole act",
+   "evidence": {
+    "provision": "Section 6",
+    "quote": "This act takes effect July 1, 2025"
+   }
+  },
+  {
+   "event": "application",
+   "date": "2024-07-01",
+   "date_type": "absolute",
+   "date_text": "Data protection assessment requirements apply to processing activities created or generated on or after July 1, 2024, and are not retroactive.",
+   "applies_to": "Data protection assessment requirements (47-18-3206) for processing activities created or generated on or after 2024-07-01",
+   "evidence": {
+    "provision": "47-18-3206(f)",
+    "quote": "Data protection assessment requirements apply to processing activities created or generated on or after July 1, 2024"
+   }
+  },
+  {
+   "event": "application",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "This part applies to contracts entered into, amended, or renewed on or after the effective date of this act.",
+   "depends_on": "effective date of this act (Section 6)",
+   "applies_to": "Contracts entered into, amended, or renewed on or after the effective date of the act (47-18-3211)",
+   "evidence": {
+    "provision": "47-18-3211(c)",
+    "quote": "This part applies to contracts entered into, amended, or renewed on or after the effective date of this act"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "The controller shall respond to the consumer without undue delay, but in all cases within forty-five (45) days of receipt of a request submitted pursuant to subsection (a).",
+   "depends_on": "receipt of an authenticated consumer request",
+   "applies_to": "Controller response to consumer rights requests (47-18-3203(a)(2) rights)",
+   "offset_value": 45,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "47-18-3203(b)(1)",
+    "quote": "within forty-five (45) days of receipt of a request submitted pursuant to subsection (a)"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "The response period may be extended once by forty-five (45) additional days when reasonably necessary, so long as the controller informs the consumer of the extension within the initial forty-five-day response period.",
+   "depends_on": "controller informs the consumer of the extension within the initial 45-day response period",
+   "applies_to": "Extension of the consumer request response period (47-18-3203(b)(1))",
+   "offset_value": 45,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "47-18-3203(b)(1)",
+    "quote": "The response period may be extended once by forty-five (45) additional days"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "Within sixty (60) days of receipt of an appeal, a controller shall inform the consumer in writing of action taken or not taken in response to the appeal.",
+   "depends_on": "receipt of a consumer appeal",
+   "applies_to": "Controller response to consumer appeals (47-18-3203(c))",
+   "offset_value": 60,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "47-18-3203(c)",
+    "quote": "Within sixty (60) days of receipt of an appeal"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "If within the sixty-day period, the controller or processor cures the noticed violation and provides the attorney general and reporter an express written statement that the alleged violations have been cured, the attorney general and reporter shall not initiate an action.",
+   "depends_on": "receipt of the attorney general and reporter's sixty-day written notice of alleged violation",
+   "applies_to": "Controllers and processors that receive a notice of alleged violation (cure period)",
+   "offset_value": 60,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "47-18-3212(b)",
+    "quote": "the controller or processor cures the noticed violation"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "is updated to reasonably conform with a subsequent revision to the NIST or comparable privacy framework within two (2) years of the publication date stated in the most recent revision to the NIST or comparable privacy framework",
+   "depends_on": "publication date stated in the most recent revision of the NIST or comparable privacy framework",
+   "applies_to": "Controllers or processors relying on the affirmative defense to update their written privacy policy (47-18-3213(a)(1)(B))",
+   "offset_value": 2,
+   "offset_unit": "years",
+   "evidence": {
+    "provision": "47-18-3213(a)(1)(B)",
+    "quote": "within two (2) years of the publication date stated in the most recent revision to the NIST or comparable privacy framework"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "revenue_annual",
+   "variable_text": "revenue",
+   "operator": ">",
+   "value": 25000000,
+   "value_text": "Exceed twenty-five million dollars ($25,000,000) in revenue",
+   "unit": "USD",
+   "currency": "USD",
+   "measurement": "Revenue of the person conducting business in Tennessee; measurement window and aggregation not stated in the section",
+   "level": "entity",
+   "trigger": "scope_definition",
+   "consequence": "Person may fall within scope of the part, if the consumer tests in 47-18-3202(2) are also met",
+   "conditions": "Conducts business in Tennessee producing products or services that target residents of Tennessee; and meets 47-18-3202(2)(A) or (B)",
+   "evidence": {
+    "provision": "47-18-3202(1)",
+    "quote": "Exceed twenty-five million dollars ($25,000,000) in revenue"
+   }
+  },
+  {
+   "variable": "data_subjects_count",
+   "variable_text": "consumers controlled or processed (with sale-revenue test)",
+   "operator": ">=",
+   "value": 25000,
+   "value_text": "at least twenty-five thousand (25,000) consumers",
+   "unit": "consumers",
+   "measurement": "Consumers whose personal information the person controls or processes; no time window stated in 47-18-3202(2)(A)",
+   "level": "entity",
+   "trigger": "scope_definition",
+   "consequence": "Together with the sale-revenue test, brings the person within scope",
+   "conditions": "Revenue test in 47-18-3202(1) met; and derives more than 50% of gross revenue from the sale of personal information (joint)",
+   "evidence": {
+    "provision": "47-18-3202(2)(A)",
+    "quote": "Control or process personal information of at least twenty-five thousand (25,000) consumers"
+   }
+  },
+  {
+   "variable": "share_of_financials",
+   "variable_text": "share of gross revenue from sale of personal information",
+   "operator": ">",
+   "value": 50,
+   "value_text": "more than fifty percent (50%) of gross revenue from the sale of personal information",
+   "unit": "percent",
+   "measurement": "Share of gross revenue derived from the sale of personal information; measurement period not stated",
+   "level": "entity",
+   "trigger": "scope_definition",
+   "consequence": "Together with the 25,000-consumer test, brings the person within scope",
+   "conditions": "Also controls or processes personal information of at least 25,000 consumers; revenue test in 47-18-3202(1) met",
+   "evidence": {
+    "provision": "47-18-3202(2)(A)",
+    "quote": "derive more than fifty percent (50%) of gross revenue from the sale of personal information"
+   }
+  },
+  {
+   "variable": "data_subjects_count",
+   "variable_text": "consumers controlled or processed during a calendar year",
+   "operator": ">=",
+   "value": 175000,
+   "value_text": "at least one hundred seventy-five thousand (175,000) consumers",
+   "unit": "consumers",
+   "measurement": "Consumers whose personal information is controlled or processed during a calendar year",
+   "level": "entity",
+   "trigger": "scope_definition",
+   "consequence": "Brings the person within scope as an alternative to the 25,000-consumer and sale-revenue test in 47-18-3202(2)(A)",
+   "conditions": "Revenue test in 47-18-3202(1) met",
+   "evidence": {
+    "provision": "47-18-3202(2)(B)",
+    "quote": "control or process personal information of at least one hundred seventy-five thousand (175,000) consumers"
+   }
+  },
+  {
+   "variable": "age",
+   "variable_text": "child (natural person younger than thirteen)",
+   "operator": "<",
+   "value": 13,
+   "value_text": "younger than thirteen (13) years of age",
+   "unit": "years",
+   "measurement": "Age of the natural person; the measurement point is not stated",
+   "level": "person",
+   "trigger": "scope_definition",
+   "consequence": "Personal information collected from a known child is sensitive data (47-18-3201(26)(C)); its processing requires consent or COPPA-compliant processing (47-18-3204(a)(6))",
+   "conditions": "Text refers to a 'known child'; parent or legal guardian may invoke consumer rights on the child's behalf (47-18-3203(a)(1))",
+   "evidence": {
+    "provision": "47-18-3201(5)",
+    "quote": "\"Child\" means a natural person younger than thirteen (13) years of age"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "radius of precise location accuracy",
+   "operator": "<=",
+   "value": 1750,
+   "value_text": "within a radius of one thousand seven hundred fifty feet (1, 750')",
+   "unit": "feet",
+   "measurement": "Accuracy radius of location information derived from technology",
+   "level": "other",
+   "trigger": "scope_definition",
+   "consequence": "Location data at this precision is precise geolocation data, a category of sensitive data (47-18-3201(26)(D))",
+   "conditions": "Information derived from technology that directly identifies the specific location of a natural person; excludes content of communications and advanced utility metering data (47-18-3201(18)(B))",
+   "evidence": {
+    "provision": "47-18-3201(18)(A)",
+    "quote": "within a radius of one thousand seven hundred fifty feet (1, 750')"
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "Affiliate",
+   "defined_in": "47-18-3201(1)",
+   "evidence": {
+    "provision": "47-18-3201(1)",
+    "quote": "\"Affiliate\" means a legal entity that controls, is controlled by, or is under common control with another legal entity"
+   }
+  },
+  {
+   "term": "Authenticate",
+   "defined_in": "47-18-3201(2)",
+   "evidence": {
+    "provision": "47-18-3201(2)",
+    "quote": "\"Authenticate\" means to verify using reasonable means that a consumer who is entitled to exercise the rights in § 47-18-3203"
+   }
+  },
+  {
+   "term": "Biometric data",
+   "defined_in": "47-18-3201(3)",
+   "evidence": {
+    "provision": "47-18-3201(3)",
+    "quote": "Means data generated by automatic measurement of an individual's biological characteristics"
+   }
+  },
+  {
+   "term": "Business associate",
+   "defined_in": "HIPAA",
+   "evidence": {
+    "provision": "47-18-3201(4)",
+    "quote": "\"Business associate\" has the same meaning as defined by HIPAA"
+   }
+  },
+  {
+   "term": "Child",
+   "defined_in": "47-18-3201(5)",
+   "evidence": {
+    "provision": "47-18-3201(5)",
+    "quote": "\"Child\" means a natural person younger than thirteen (13) years of age"
+   }
+  },
+  {
+   "term": "Consent",
+   "defined_in": "47-18-3201(6)",
+   "evidence": {
+    "provision": "47-18-3201(6)",
+    "quote": "Means a clear affirmative act signifying a consumer's freely given, specific, informed, and unambiguous agreement to process personal information relating to the consumer"
+   }
+  },
+  {
+   "term": "Consumer",
+   "defined_in": "47-18-3201(7)",
+   "evidence": {
+    "provision": "47-18-3201(7)",
+    "quote": "Means a natural person who is a resident of this state acting only in a personal context"
+   }
+  },
+  {
+   "term": "Controller",
+   "defined_in": "47-18-3201(8)",
+   "evidence": {
+    "provision": "47-18-3201(8)",
+    "quote": "\"Controller\" means the natural or legal person that, alone or jointly with others, determines the purpose and means of processing personal information"
+   }
+  },
+  {
+   "term": "Covered entity",
+   "defined_in": "HIPAA",
+   "evidence": {
+    "provision": "47-18-3201(9)",
+    "quote": "\"Covered entity\" has the same meaning as defined by HIPAA"
+   }
+  },
+  {
+   "term": "Decisions that produce legal or similarly significant effects concerning the consumer",
+   "defined_in": "47-18-3201(10)",
+   "evidence": {
+    "provision": "47-18-3201(10)",
+    "quote": "means decisions made by the controller that result in the provision or denial by the controller of financial or lending services"
+   }
+  },
+  {
+   "term": "De-identified data",
+   "defined_in": "47-18-3201(11)",
+   "evidence": {
+    "provision": "47-18-3201(11)",
+    "quote": "\"De-identified data\" means data that cannot reasonably be linked to an identified or identifiable natural person"
+   }
+  },
+  {
+   "term": "Health record",
+   "defined_in": "47-18-3201(12)",
+   "evidence": {
+    "provision": "47-18-3201(12)",
+    "quote": "Means a written, printed, or electronically recorded material that"
+   }
+  },
+  {
+   "term": "HIPAA",
+   "defined_in": "47-18-3201(13)",
+   "evidence": {
+    "provision": "47-18-3201(13)",
+    "quote": "\"HIPAA\" means the federal Health Insurance Portability and Accountability Act of 1996 (42 U.S.C. § 1320d et seq.)"
+   }
+  },
+  {
+   "term": "Identified or identifiable natural person",
+   "defined_in": "47-18-3201(14)",
+   "evidence": {
+    "provision": "47-18-3201(14)",
+    "quote": "mean a human being who can be readily identified, whether directly or indirectly"
+   }
+  },
+  {
+   "term": "Institution of higher education",
+   "defined_in": "47-18-3201(15)",
+   "evidence": {
+    "provision": "47-18-3201(15)",
+    "quote": "\"Institution of higher education\" means a public or private institution of higher education"
+   }
+  },
+  {
+   "term": "Nonprofit organization",
+   "defined_in": "47-18-3201(16)",
+   "evidence": {
+    "provision": "47-18-3201(16)",
+    "quote": "\"Nonprofit organization\" means:"
+   }
+  },
+  {
+   "term": "Personal information",
+   "defined_in": "47-18-3201(17)",
+   "evidence": {
+    "provision": "47-18-3201(17)",
+    "quote": "Means information that is linked or reasonably linkable to an identified or identifiable natural person"
+   }
+  },
+  {
+   "term": "Precise geolocation data",
+   "defined_in": "47-18-3201(18)",
+   "evidence": {
+    "provision": "47-18-3201(18)",
+    "quote": "Means information derived from technology, including, but not limited to, global positioning system level latitude and longitude coordinates"
+   }
+  },
+  {
+   "term": "Process or processing",
+   "defined_in": "47-18-3201(19)",
+   "evidence": {
+    "provision": "47-18-3201(19)",
+    "quote": "\"Process\" or \"processing\" means an operation or set of operations performed, whether by manual or automated means, on personal information"
+   }
+  },
+  {
+   "term": "Processor",
+   "defined_in": "47-18-3201(20)",
+   "evidence": {
+    "provision": "47-18-3201(20)",
+    "quote": "\"Processor\" means a natural or legal entity that processes personal information on behalf of a controller"
+   }
+  },
+  {
+   "term": "Profiling",
+   "defined_in": "47-18-3201(21)",
+   "evidence": {
+    "provision": "47-18-3201(21)",
+    "quote": "\"Profiling\" means a form of solely automated processing performed on personal information"
+   }
+  },
+  {
+   "term": "Protected health information",
+   "defined_in": "HIPAA",
+   "evidence": {
+    "provision": "47-18-3201(22)",
+    "quote": "\"Protected health information\" has the same meaning as defined by"
+   }
+  },
+  {
+   "term": "Pseudonymous data",
+   "defined_in": "47-18-3201(23)",
+   "evidence": {
+    "provision": "47-18-3201(23)",
+    "quote": "\"Pseudonymous data\" means personal information that cannot be attributed to a specific natural person without the use of additional information"
+   }
+  },
+  {
+   "term": "Publicly available information",
+   "defined_in": "47-18-3201(24)",
+   "evidence": {
+    "provision": "47-18-3201(24)",
+    "quote": "\"Publicly available information\" means information that is lawfully made available through federal, state, or local government records"
+   }
+  },
+  {
+   "term": "Sale of personal information",
+   "defined_in": "47-18-3201(25)",
+   "evidence": {
+    "provision": "47-18-3201(25)(A)",
+    "quote": "Means the exchange of personal information for valuable monetary consideration by the controller to a third party"
+   }
+  },
+  {
+   "term": "Sensitive data",
+   "defined_in": "47-18-3201(26)",
+   "evidence": {
+    "provision": "47-18-3201(26)",
+    "quote": "\"Sensitive data\" means a category of personal information that includes"
+   }
+  },
+  {
+   "term": "Targeted advertising",
+   "defined_in": "47-18-3201(28)",
+   "evidence": {
+    "provision": "47-18-3201(28)(A)",
+    "quote": "Means displaying to a consumer an advertisement that is selected based on personal information obtained from that consumer's activities over time and across nonaffiliated websites or online applications"
+   }
+  },
+  {
+   "term": "Third party",
+   "defined_in": "47-18-3201(29)",
+   "evidence": {
+    "provision": "47-18-3201(29)",
+    "quote": "\"Third party\" means a natural or legal person, public authority, agency, or body other than the consumer, controller, processor"
+   }
+  },
+  {
+   "term": "Trade secret",
+   "defined_in": "47-18-3201(30)",
+   "evidence": {
+    "provision": "47-18-3201(30)",
+    "quote": "\"Trade secret\" means information, without regard to form"
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "data_subject_rights",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Comply with authenticated consumer requests to confirm and access, correct, delete, obtain a portable copy, and opt out of sale, targeted advertising or profiling; respond within 45 days, extendable once by 45 days; provide information free of charge up to twice annually.",
+   "applies_from": "July 1, 2025 (effective date of the act, SECTION 6)",
+   "conditional_on": "authenticated consumer request",
+   "evidence": {
+    "provision": "47-18-3203(a)(2)",
+    "quote": "A controller shall comply with an authenticated consumer request to exercise the right to:"
+   }
+  },
+  {
+   "type": "complaint_mechanism",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Establish an appeal process for refusals of consumer requests, available at no cost; inform the consumer in writing of the appeal outcome within 60 days; if the appeal is denied, provide a means to contact the attorney general and reporter.",
+   "applies_from": "July 1, 2025 (effective date of the act, SECTION 6)",
+   "conditional_on": "controller refuses to take action on a consumer request",
+   "evidence": {
+    "provision": "47-18-3203(c)",
+    "quote": "A controller shall establish a process for a consumer to appeal the controller's refusal to take action on a request"
+   }
+  },
+  {
+   "type": "data_minimization",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Limit collection of personal information to what is adequate, relevant and reasonably necessary for the disclosed purposes; not process it for purposes beyond what is reasonably necessary and compatible with the disclosed purposes without consent.",
+   "applies_from": "July 1, 2025 (effective date of the act, SECTION 6)",
+   "evidence": {
+    "provision": "47-18-3204(a)(1)",
+    "quote": "Limit the collection of personal information to what is adequate, relevant, and reasonably necessary"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Establish, implement and maintain reasonable administrative, technical and physical data security practices to protect confidentiality, integrity and accessibility, appropriate to the volume and nature of the personal information.",
+   "applies_from": "July 1, 2025 (effective date of the act, SECTION 6)",
+   "evidence": {
+    "provision": "47-18-3204(a)(3)",
+    "quote": "Establish, implement, and maintain reasonable administrative, technical, and physical data security practices"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "data_controller",
+   "modality": "shall_not",
+   "summary": "Not discriminate against a consumer for exercising consumer rights, including by denying goods or services or charging different prices, subject to stated exceptions; not require a consumer to create a new account to exercise consumer rights.",
+   "applies_from": "July 1, 2025 (effective date of the act, SECTION 6)",
+   "evidence": {
+    "provision": "47-18-3204(a)(5)",
+    "quote": "A controller shall not discriminate against a consumer for exercising the consumer rights contained in this part"
+   }
+  },
+  {
+   "type": "consent",
+   "addressee": "data_controller",
+   "modality": "shall_not",
+   "summary": "Not process sensitive data concerning a consumer without the consumer's consent; for sensitive data of a known child, process it in accordance with COPPA and its implementing regulations.",
+   "applies_from": "July 1, 2025 (effective date of the act, SECTION 6)",
+   "conditional_on": "processing sensitive data",
+   "evidence": {
+    "provision": "47-18-3204(a)(6)",
+    "quote": "Not process sensitive data concerning a consumer without obtaining the consumer's consent"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Provide a reasonably accessible, clear and meaningful privacy notice listing categories of personal information processed, processing purposes, how consumers may exercise rights and appeal, and categories of personal information sold and of third parties to whom it is sold.",
+   "applies_from": "July 1, 2025 (effective date of the act, SECTION 6)",
+   "evidence": {
+    "provision": "47-18-3204(c)",
+    "quote": "A controller shall provide a reasonably accessible, clear, and meaningful privacy notice that includes:"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Where personal information is sold to third parties or processed for targeted advertising, clearly and conspicuously disclose the processing and the manner in which a consumer may opt out.",
+   "applies_from": "July 1, 2025 (effective date of the act, SECTION 6)",
+   "conditional_on": "sale of personal information to third parties or processing for targeted advertising",
+   "evidence": {
+    "provision": "47-18-3204(d)",
+    "quote": "then the controller shall clearly and conspicuously disclose the processing"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Provide and describe in the privacy notice one or more secure and reliable means for consumers to submit rights requests, taking into account how consumers interact with the controller, the need for secure communication, and the ability to authenticate the consumer.",
+   "applies_from": "July 1, 2025 (effective date of the act, SECTION 6)",
+   "evidence": {
+    "provision": "47-18-3204(e)(1)",
+    "quote": "A controller shall provide, and shall describe in a privacy notice"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_processor",
+   "modality": "shall",
+   "summary": "Adhere to the controller's instructions and assist the controller in meeting its obligations, including responding to consumer rights requests and providing information to enable data protection assessments.",
+   "applies_from": "July 1, 2025 (effective date of the act, SECTION 6)",
+   "conditional_on": "processing on behalf of a controller",
+   "evidence": {
+    "provision": "47-18-3205(a)",
+    "quote": "A processor shall adhere to the instructions of a controller and shall assist the controller"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_processor",
+   "modality": "shall",
+   "summary": "Contract between controller and processor must set out processing instructions and include processor duties: confidentiality of persons processing data, deletion or return of data, providing information on compliance, allowing and cooperating with assessments (or an independent assessor report), and written subcontracting terms.",
+   "applies_from": "July 1, 2025 (effective date of the act, SECTION 6)",
+   "conditional_on": "processing performed on behalf of a controller",
+   "evidence": {
+    "provision": "47-18-3205(b)",
+    "quote": "The contract must also include requirements that the processor shall:"
+   }
+  },
+  {
+   "type": "impact_assessment",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Conduct and document a data protection assessment of targeted advertising, sale of personal information, profiling with listed risks, processing of sensitive data, and processing presenting a heightened risk of harm; the assessment must weigh benefits against risks as mitigated by safeguards.",
+   "applies_from": "processing activities created or generated on or after July 1, 2024",
+   "conditional_on": "listed processing activities",
+   "evidence": {
+    "provision": "47-18-3206(a)",
+    "quote": "A controller shall conduct and document a data protection assessment of each of the following processing activities"
+   }
+  },
+  {
+   "type": "cooperation_with_authority",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Make a relevant data protection assessment available to the attorney general and reporter when requested under a civil investigative demand.",
+   "applies_from": "processing activities created or generated on or after July 1, 2024",
+   "conditional_on": "attorney general and reporter request pursuant to a civil investigative demand",
+   "evidence": {
+    "provision": "47-18-3206(c)",
+    "quote": "shall make the data protection assessment available to the attorney general and reporter"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "For de-identified data: take reasonable measures to ensure it cannot be associated with a natural person, publicly commit not to reidentify it, and contractually obligate recipients to comply with the part; when disclosing pseudonymous or de-identified data, exercise reasonable oversight of contractual commitments and address breaches.",
+   "applies_from": "July 1, 2025 (effective date of the act, SECTION 6)",
+   "conditional_on": "possession or disclosure of de-identified or pseudonymous data",
+   "evidence": {
+    "provision": "47-18-3207(a)",
+    "quote": "The controller in possession of de-identified data shall:"
+   }
+  },
+  {
+   "type": "data_minimization",
+   "addressee": "data_controller",
+   "modality": "shall_not",
+   "summary": "Not process personal information for purposes other than those expressly listed in the exemptions section unless otherwise allowed; any such processing must be reasonably necessary and proportionate and limited to what is necessary for the specific purpose.",
+   "applies_from": "July 1, 2025 (effective date of the act, SECTION 6)",
+   "conditional_on": "processing relying on an exemption in section 47-18-3208",
+   "evidence": {
+    "provision": "47-18-3208(f)",
+    "quote": "A controller shall not process personal information for purposes other than those expressly listed in this section"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "encouraged",
+   "summary": "The Tennessee Code Commission is requested to include the act's headings in any compilation or publication containing the act.",
+   "applies_from": "July 1, 2025 (effective date of the act, SECTION 6)",
+   "conditional_on": "compilation or publication containing the act",
+   "evidence": {
+    "provision": "SECTION 5",
+    "quote": "requested to include the headings in any compilation or publication containing this act"
+   }
+  }
+ ],
+ "enforcement": [
+  {
+   "sanction_type": "civil_penalty",
+   "authority": "attorney general and reporter (court-imposed civil penalty)",
+   "triggered_by": "Continued violation of the part after the cure period, or breach of an express written cure statement (47-18-3212(c)); treble damages if the court finds a willful or knowing violation",
+   "max_penalty_text": "up to seven thousand five hundred dollars ($7,500) for each violation of this part; treble damages available for willful or knowing violations",
+   "max_penalty_amount": 7500,
+   "currency": "USD",
+   "penalty_formula": "Up to $7,500 per violation; if the court finds a willful or knowing violation, the court may in its discretion award treble damages",
+   "penalty_reference": "47-18-3212(c)(3), (d)(1)-(2)",
+   "private_right_of_action": false,
+   "cure_period": "Sixty days after the attorney general and reporter's written notice identifying the alleged violated provisions; no action if the controller or processor cures and gives an express written statement (47-18-3212(b))",
+   "evidence": {
+    "provision": "47-18-3212(d)(1)",
+    "quote": "A court may impose a civil penalty of up to seven thousand five hundred dollars ($7,500) for each violation of this part."
+   }
+  },
+  {
+   "sanction_type": "injunction_order",
+   "authority": "attorney general and reporter (court action)",
+   "triggered_by": "Continued violation of the part following the cure period, or breach of an express written cure statement (47-18-3212(c))",
+   "max_penalty_text": "Not stated in this text; injunctive relief (preliminary and permanent injunctions) sought in a court action",
+   "currency": "not applicable",
+   "penalty_formula": "Not stated",
+   "penalty_reference": "47-18-3212(c)(2)",
+   "private_right_of_action": false,
+   "cure_period": "Sixty days after the attorney general and reporter's written notice; no action if the controller or processor cures within that period (47-18-3212(b))",
+   "evidence": {
+    "provision": "47-18-3212(c)(2)",
+    "quote": "Injunctive relief, including preliminary and permanent injunctions, to prevent an additional violation of and compel compliance with this part"
+   }
+  }
+ ],
+ "section_status": {}
+}

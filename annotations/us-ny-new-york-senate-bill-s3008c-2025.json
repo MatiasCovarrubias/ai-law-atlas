@@ -1,0 +1,463 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "us-ny-new-york-senate-bill-s3008c-2025",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "AGORA plaintext (ETO, CC BY-NC 4.0), local cache",
+  "url": "https://legislation.nysenate.gov/pdf/bills/2025/s3008c",
+  "retrieved": "2026-01-24",
+  "version": "1.33.0 (2026-09-16)",
+  "language": "en",
+  "extent": "partial",
+  "note": "AGORA sections of the act only: New York Senate Bill S3008C (\"Part X\"); New York Senate Bill S3008C (\"Part U\")"
+ },
+ "classification": {
+  "domains": [
+   "generative_ai",
+   "consumer_protection",
+   "algorithmic_decision_systems"
+  ],
+  "primary_domain": "generative_ai",
+  "mechanisms": [
+   "mandate_obligation",
+   "prohibition_ban",
+   "disclosure_transparency"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "ai_provider",
+   "ai_deployer",
+   "government_agency"
+  ],
+  "affected_roles": [
+   "consumers_users"
+  ],
+  "decision_margins": [
+   "firm:pricing",
+   "firm:product_design_release",
+   "household:data_privacy",
+   "household:information"
+  ],
+  "territorial_scope": {
+   "types": [
+    "subnational"
+   ],
+   "description": "State statute of New York; the AI companion duties attach to operators providing AI companions to users within the state.",
+   "evidence": {
+    "provision": "Part U, Section 1, § 1700 (definition of \"User\")",
+    "quote": "who uses an AI companion for personal use within the state"
+   }
+  },
+  "agora_applications": [
+   "Sales, retail, and customer relations",
+   "Arts, sports, leisure, travel, and lifestyle"
+  ],
+  "agora_harms": [
+   "Harm to health/safety",
+   "Violation of civil or human rights, including privacy"
+  ],
+  "agora_incentives": [
+   "Fines"
+  ],
+  "agora_risk_factors": [
+   "Privacy",
+   "Safety",
+   "Transparency"
+  ],
+  "agora_strategies": [
+   "Disclosure",
+   "Disclosure: In deployment",
+   "Disclosure: About inputs",
+   "Performance requirements"
+  ]
+ },
+ "summary": {
+  "short": "New York S3008C adds consumer rules for personalized algorithmic pricing (disclosure of algorithm use, personal data and prices) and AI companion models (suicide-detection protocols and not-human notices), enforced by the attorney general with civil penalties. Part X takes effect on the sixtieth day after enactment.",
+  "long": "Part X adds General Business Law § 349-a on personalized algorithmic pricing, defining algorithm, personal data, dynamic pricing and personalized algorithmic pricing. Providers must disclose that they use such pricing, disclose the personal data used to set it, and give a clear and conspicuous disclosure of the price. After a consumer report, the attorney general may send a cease and desist letter and then seek an injunction; courts may impose civil penalties of up to $1,000 per violation. Part U adds General Business Law Article 47 on AI companion models, defining AI companions as systems that retain personal information, ask unprompted emotion-based questions and sustain ongoing personal dialogue, and excluding customer-service, efficiency or research tools and internal business systems. Operators must maintain a protocol to detect suicidal ideation or self-harm and refer users to crisis services, and must tell users at the start of an interaction that they are not communicating with a human; such notices need not exceed once per day and must recur at least every three hours in continuing interactions. The attorney general may seek injunctions and civil penalties of up to $15,000 per day; fines are deposited in a suicide prevention fund created by State Finance Law § 99-ss. The excerpt gives no effective date for Part U."
+ },
+ "relations": [
+  {
+   "relation": "amends",
+   "target_text": "General Business Law (New York)",
+   "note": "Part X renumbers GBL § 349-a as § 349-h and adds a new § 349-a on personalized algorithmic pricing; Part U adds a new article 47 (§§ 1700-1704) on AI companion models.",
+   "evidence": {
+    "provision": "Part U, Section 1",
+    "quote": "The general business law is amended by adding a new article 47 to read as follows"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "State Finance Law (New York)",
+   "note": "Adds § 99-ss establishing the suicide prevention fund. GBL § 1703 directs fees, fines and penalties under article 47 into this fund.",
+   "evidence": {
+    "provision": "Part U, Section 2",
+    "quote": "The state finance law is amended by adding a new section 99-ss to read as follows"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Mental Hygiene Law § 36.03",
+   "note": "GBL § 1701 requires crisis referral to the 9-8-8 suicide prevention and behavioral health crisis hotline under this section.",
+   "evidence": {
+    "provision": "Part U, GBL § 1701",
+    "quote": "under section 36.03 of the mental hygiene law, a crisis text line"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "New York City Administrative Code § 19-502",
+   "note": "GBL § 349-a(1)(d) excludes from 'personal data' location data used by a for-hire vehicle as defined in this section.",
+   "evidence": {
+    "provision": "Part X, GBL § 349-a(1)(d)",
+    "quote": "section 19-502 of the administrative code of the city of New York"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Vehicle and Traffic Law § 1691",
+   "note": "GBL § 349-a(1)(d) excludes from 'personal data' location data used by a transportation network company vehicle as defined in this section to calculate fares.",
+   "evidence": {
+    "provision": "Part X, GBL § 349-a(1)(d)",
+    "quote": "section sixteen hundred ninety-one of the vehicle and traffic law"
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "Attorney General of the State of New York",
+   "role": "designated",
+   "function": "Enforcement authority: under GBL § 349-a may dispatch cease and desist letters and seek injunctions and civil penalties; under GBL § 1703 may bring actions to enjoin operators and seek civil penalties of up to fifteen thousand dollars per day.",
+   "evidence": {
+    "provision": "Part U, GBL § 1703(1)",
+    "quote": "Whenever the attorney general shall believe from evidence satisfactory to them that an operator"
+   }
+  },
+  {
+   "name": "Comptroller (New York State)",
+   "role": "designated",
+   "function": "Joint custodian of the suicide prevention fund established under State Finance Law § 99-ss.",
+   "evidence": {
+    "provision": "Part U, Section 2 (State Finance Law § 99-ss(1))",
+    "quote": "There is hereby established in the joint custody of the comptroller, the commissioner of taxation and finance, and the office of mental health"
+   }
+  },
+  {
+   "name": "Commissioner of Taxation and Finance (New York State)",
+   "role": "designated",
+   "function": "Joint custodian of the suicide prevention fund established under State Finance Law § 99-ss.",
+   "evidence": {
+    "provision": "Part U, Section 2 (State Finance Law § 99-ss(1))",
+    "quote": "There is hereby established in the joint custody of the comptroller, the commissioner of taxation and finance, and the office of mental health"
+   }
+  },
+  {
+   "name": "Office of Mental Health (New York State)",
+   "role": "designated",
+   "function": "Joint custodian of the suicide prevention fund established under State Finance Law § 99-ss.",
+   "evidence": {
+    "provision": "Part U, Section 2 (State Finance Law § 99-ss(1))",
+    "quote": "There is hereby established in the joint custody of the comptroller, the commissioner of taxation and finance, and the office of mental health"
+   }
+  },
+  {
+   "name": "Suicide prevention fund",
+   "role": "beneficiary",
+   "function": "Receives all fees, fines and penalties collected under GBL article 47.",
+   "evidence": {
+    "provision": "Part U, GBL § 1703(2)",
+    "quote": "All fees, fines and penalties collected under this article shall be deposited into the suicide prevention fund"
+   }
+  }
+ ],
+ "notes": "Document combines two Parts of S3008C: Part X (GBL § 349-a, personalized algorithmic pricing) and Part U (GBL article 47, AI companion models, plus State Finance Law § 99-ss). Part X takes effect on the sixtieth day after becoming law; no effective date for Part U appears in the provided text. Penalties differ between Parts: Part X civil penalty up to one thousand dollars per violation; Part U up to fifteen thousand dollars per day for violations of §§ 1701 or 1702. The text ends during § 99-ss(1); later subsections were not reviewed. Operators are a defined class, not named entities. Relations target instruments are not in the registry, so target_instrument_id is empty.",
+ "events": [
+  {
+   "event": "entry_into_force",
+   "date": "2025-07-08",
+   "date_type": "relative",
+   "date_text": "This act shall take effect on the sixtieth day after it shall have become a law.",
+   "anchor": "the date this act becomes a law (enactment)",
+   "applies_to": "Part X: GBL § 349-a (pricing) and renumbering of former § 349-a as § 349-h",
+   "offset_value": 60,
+   "offset_unit": "days",
+   "anchor_event": "signed",
+   "evidence": {
+    "provision": "Part X, Section 2",
+    "quote": "This act shall take effect on the sixtieth day after it shall have become a law."
+   },
+   "date_computed_from": "signed 2025-05-09 (registry) + 60 days"
+  },
+  {
+   "event": "application",
+   "date": "2025-07-08",
+   "date_type": "relative",
+   "date_text": "This act shall take effect on the sixtieth day after it shall have become a law.",
+   "anchor": "the date this act becomes a law (enactment)",
+   "applies_to": "Personalized algorithmic pricing provider duties under GBL § 349-a (disclosures and clear and conspicuous price disclosure)",
+   "offset_value": 60,
+   "offset_unit": "days",
+   "anchor_event": "signed",
+   "evidence": {
+    "provision": "Part X, Section 1 (GBL § 349-a)",
+    "quote": "Any personalized algorithmic pricing provider shall:"
+   },
+   "date_computed_from": "signed 2025-05-09 (registry) + 60 days"
+  }
+ ],
+ "definitions": [
+  {
+   "term": "Algorithm",
+   "defined_in": "GBL § 349-a(1)(a)",
+   "evidence": {
+    "provision": "Part X, Sec. 1, GBL § 349-a(1)(a)",
+    "quote": "(a) \"Algorithm\" means a computational automated process that uses a set of rules to define a sequence of operations."
+   }
+  },
+  {
+   "term": "Clear and conspicuous disclosure",
+   "defined_in": "GBL § 349-a(1)(b)",
+   "evidence": {
+    "provision": "Part X, Sec. 1, GBL § 349-a(1)(b)",
+    "quote": "\"Clear and conspicuous disclosure\" means disclosure in the same medium as, and provided on, at, or near and contemporaneous with every advertisement"
+   }
+  },
+  {
+   "term": "Consumer",
+   "defined_in": "GBL § 349-a(1)(c)",
+   "evidence": {
+    "provision": "Part X, Sec. 1, GBL § 349-a(1)(c)",
+    "quote": "\"Consumer\" means a natural person who is seeking or solicited to purchase, lease or receive a good or service for personal, family or household use."
+   }
+  },
+  {
+   "term": "Personal data",
+   "defined_in": "GBL § 349-a(1)(d)",
+   "evidence": {
+    "provision": "Part X, Sec. 1, GBL § 349-a(1)(d)",
+    "quote": "\"Personal data\" means any data that identifies or could reasonably be linked, directly or indirectly, with a specific consumer or device."
+   }
+  },
+  {
+   "term": "Dynamic pricing",
+   "defined_in": "GBL § 349-a(1)(e)",
+   "evidence": {
+    "provision": "Part X, Sec. 1, GBL § 349-a(1)(e)",
+    "quote": "\"Dynamic pricing\" means pricing that fluctuates dependent on current market conditions."
+   }
+  },
+  {
+   "term": "Personalized algorithmic pricing",
+   "defined_in": "GBL § 349-a(1)(f)",
+   "evidence": {
+    "provision": "Part X, Sec. 1, GBL § 349-a(1)(f)",
+    "quote": "\"Personalized algorithmic pricing\" means dynamic pricing set by an algorithm that uses personal data as defined in this section."
+   }
+  },
+  {
+   "term": "Personalized algorithmic pricing provider",
+   "defined_in": "GBL § 349-a(1)(g)",
+   "evidence": {
+    "provision": "Part X, Sec. 1, GBL § 349-a(1)(g)",
+    "quote": "\"Personalized algorithmic pricing provider\" means any person, partnership, corporation, association or other entity that uses personalized algorithmic pricing."
+   }
+  },
+  {
+   "term": "Artificial intelligence (AI)",
+   "defined_in": "GBL § 1700",
+   "evidence": {
+    "provision": "Part U, Sec. 1, GBL § 1700",
+    "quote": "\"Artificial intelligence\", \"artificial intelligence technology\", or \"AI\" means a machine-based system that can, for a given set of human-defined objectives, make predictions, recommendations, or decisions"
+   }
+  },
+  {
+   "term": "Generative artificial intelligence",
+   "defined_in": "GBL § 1700",
+   "evidence": {
+    "provision": "Part U, Sec. 1, GBL § 1700",
+    "quote": "\"Generative artificial intelligence\" means a class of AI models that emulate the structure and characteristics of input data to generate derived synthetic content"
+   }
+  },
+  {
+   "term": "AI model",
+   "defined_in": "GBL § 1700",
+   "evidence": {
+    "provision": "Part U, Sec. 1, GBL § 1700",
+    "quote": "\"AI model\" means a component of an information system that implements artificial intelligence technology and uses computational, statistical, or machine-learning techniques to produce outputs from a given set of inputs."
+   }
+  },
+  {
+   "term": "AI companion",
+   "defined_in": "GBL § 1700(a)",
+   "evidence": {
+    "provision": "Part U, Sec. 1, GBL § 1700(a)",
+    "quote": "\"AI companion\" means a system using artificial intelligence, generative artificial intelligence, and/or emotional recognition algorithms designed to simulate a sustained human or human-like relationship with a user by:"
+   }
+  },
+  {
+   "term": "Operator",
+   "defined_in": "GBL § 1700",
+   "evidence": {
+    "provision": "Part U, Sec. 1, GBL § 1700",
+    "quote": "\"Operator\" means any person, partnership, association, firm, or business entity, or any member, affiliate, subsidiary or beneficial owner"
+   }
+  },
+  {
+   "term": "Person",
+   "defined_in": "GBL § 1700",
+   "evidence": {
+    "provision": "Part U, Sec. 1, GBL § 1700",
+    "quote": "\"Person\" means any natural person."
+   }
+  },
+  {
+   "term": "Emotional recognition algorithms",
+   "defined_in": "GBL § 1700",
+   "evidence": {
+    "provision": "Part U, Sec. 1, GBL § 1700",
+    "quote": "\"Emotional recognition algorithms\" means artificial intelligence that detects and interprets human emotional signals in text"
+   }
+  },
+  {
+   "term": "User",
+   "defined_in": "GBL § 1700",
+   "evidence": {
+    "provision": "Part U, Sec. 1, GBL § 1700",
+    "quote": "\"User\" means any person who uses an AI companion for personal use within the state and who is not an operator or agent or affiliate of the operator of the AI companion."
+   }
+  },
+  {
+   "term": "Self-harm",
+   "defined_in": "GBL § 1700",
+   "evidence": {
+    "provision": "Part U, Sec. 1, GBL § 1700",
+    "quote": "\"Self-harm\" means intentional self-injury with or without the intent to cause death."
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "disclosure_transparency",
+   "addressee": "ai_deployer",
+   "modality": "shall",
+   "summary": "Personalized algorithmic pricing providers must disclose to consumers that they use personalized algorithmic pricing, disclose the personal data used to set the price, and give a clear and conspicuous disclosure of the price of the good or service.",
+   "applies_from": "sixtieth day after it shall have become a law (Part X, § 2)",
+   "conditional_on": "entity uses dynamic pricing set by an algorithm that uses personal data",
+   "evidence": {
+    "provision": "Part X, Sec. 1 (GBL § 349-a, 2(a)-(c))",
+    "quote": "disclose to the consumer that they are using personalized algorithmic pricing"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "ai_provider",
+   "modality": "shall_not",
+   "summary": "Unlawful for an operator to operate for or provide an AI companion to a user unless the AI companion contains a protocol to take reasonable efforts to detect and address suicidal ideation or self-harm expressions, including a notification referring the user to crisis service providers upon detection.",
+   "applies_from": "not stated in the provided text",
+   "conditional_on": "operator operates for or provides an AI companion to a user",
+   "evidence": {
+    "provision": "Part U, GBL art. 47, § 1701",
+    "quote": "It shall be unlawful for any operator to operate for or provide an AI companion to a user unless such AI companion contains a protocol"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "ai_provider",
+   "modality": "shall",
+   "summary": "Operator must give users a clear and conspicuous notification, at the beginning of any AI companion interaction, stating verbally or in writing that the user is not communicating with a human; need not exceed once per day and must recur at least every three hours for continuing interactions.",
+   "applies_from": "not stated in the provided text",
+   "conditional_on": "AI companion interaction",
+   "evidence": {
+    "provision": "Part U, GBL art. 47, § 1702",
+    "quote": "An operator shall provide a clear and conspicuous notification to a user at the beginning of any AI companion interaction"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "All fees, fines and penalties collected under the AI companion article must be deposited into the suicide prevention fund established under State Finance Law § 99-ss.",
+   "applies_from": "not stated in the provided text",
+   "conditional_on": "fees, fines or penalties collected under the article",
+   "evidence": {
+    "provision": "Part U, GBL art. 47, § 1703 (second paragraph)",
+    "quote": "All fees, fines and penalties collected under this article shall be deposited into the suicide prevention fund"
+   }
+  }
+ ],
+ "enforcement": [
+  {
+   "sanction_type": "warning_reprimand",
+   "authority": "Attorney General",
+   "triggered_by": "Reason to believe a violation of GBL § 349-a exists, based on among other things a consumer report of an alleged violation",
+   "cure_period": "Cease and desist letter specifies remedies to cure within a designated timeline (length not stated)",
+   "evidence": {
+    "provision": "GBL § 349-a (Part X, Sec. 1)",
+    "quote": "the attorney general, in the name of the people of the state of New York, shall dispatch a cease and desist letter to the entity at issue, specifying the alleged violation or violations and the remedies to cure the violations within a designated timeline"
+   }
+  },
+  {
+   "sanction_type": "injunction_order",
+   "authority": "Court or justice, on application by the Attorney General",
+   "triggered_by": "Entity continues to violate GBL § 349-a after receipt of the cease and desist letter and expiration of the designated timeline",
+   "max_penalty_text": "Not stated (injunctive relief)",
+   "cure_period": "Designated timeline in the cease and desist letter (length not stated)",
+   "evidence": {
+    "provision": "GBL § 349-a (Part X, Sec. 1)",
+    "quote": "an injunction may be issued by such court or justice, enjoining and restraining any further violation, without requiring proof that any person has, in fact, been injured or damaged thereby"
+   }
+  },
+  {
+   "sanction_type": "civil_penalty",
+   "authority": "Court or justice",
+   "triggered_by": "Court determines that a violation of GBL § 349-a has occurred",
+   "max_penalty_text": "not more than one thousand dollars for each violation",
+   "max_penalty_amount": 1000,
+   "currency": "USD",
+   "penalty_formula": "Per violation, not more than $1,000",
+   "cure_period": "No separate cure period stated for the civil penalty; cease and desist timeline applies before enforcement",
+   "evidence": {
+    "provision": "GBL § 349-a (Part X, Sec. 1)",
+    "quote": "the court may impose a civil penalty of not more than one thousand dollars for each violation"
+   }
+  },
+  {
+   "sanction_type": "injunction_order",
+   "authority": "Attorney General (action in the name of the people of the State of New York)",
+   "triggered_by": "Operator has engaged in or is about to engage in unlawful acts under GBL article 47, or in violation of §§ 1701 or 1702",
+   "max_penalty_text": "Not stated (injunctive relief and other remedies the court deems appropriate)",
+   "cure_period": "No cure period stated",
+   "evidence": {
+    "provision": "GBL § 1703(1) (Part U, Sec. 1)",
+    "quote": "may bring an action in the name and on behalf of the people of the state of New York to enjoin an operator from continuing such unlawful acts or practices"
+   }
+  },
+  {
+   "sanction_type": "civil_penalty",
+   "authority": "Court (action brought by the Attorney General)",
+   "triggered_by": "Operator violates GBL § 1701 (suicidal ideation protocol) or § 1702 (AI disclosure notification)",
+   "max_penalty_text": "up to fifteen thousand dollars per day for a violation under section seventeen hundred one or seventeen hundred two of this article",
+   "max_penalty_amount": 15000,
+   "currency": "USD",
+   "penalty_formula": "Up to $15,000 per day for a violation of § 1701 or § 1702",
+   "cure_period": "No cure period stated",
+   "evidence": {
+    "provision": "GBL § 1703(1) (Part U, Sec. 1)",
+    "quote": "may seek civil penalties of up to fifteen thousand dollars per day for a violation under section seventeen hundred one or seventeen hundred two of this article"
+   }
+  }
+ ],
+ "section_status": {
+  "thresholds": {
+   "status": "not_found",
+   "note": "No numeric cutoff that changes scope, eligibility, exemption, obligation tier or prohibition was found. The civil penalty amounts (not more than $1,000 per violation under § 349-a; up to $15,000 per day under § 1703) are enforcement. The five-day notice, the designated cease-and-desist timeline and the notification timing in § 1702 (at least every three hours, need not exceed once per day) are procedural or obligation parameters."
+  }
+ },
+ "thresholds": []
+}

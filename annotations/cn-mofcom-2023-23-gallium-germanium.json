@@ -1,0 +1,346 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "cn-mofcom-2023-23-gallium-germanium",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (connectors/fetch_texts.py)",
+  "url": "http://www.mofcom.gov.cn/zcfb/dwmygl/art/2023/art_52b9a321087f402bb3d310d18b07967e.html",
+  "retrieved": "2026-10-13",
+  "version": "as fetched",
+  "language": "zh",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "chips_export_controls"
+  ],
+  "primary_domain": "chips_export_controls",
+  "mechanisms": [
+   "export_import_control",
+   "licensing_permit_certification"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "exporter",
+   "government_agency"
+  ],
+  "decision_margins": [
+   "firm:trade",
+   "firm:compliance_process"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national"
+   ],
+   "description": "Applies to exports of the listed gallium- and germanium-related items from China, subject to MOFCOM licensing and customs clearance.",
+   "evidence": {
+    "provision": "Item 1 (一)",
+    "quote": "满足以下特性的物项，未经许可，不得出口"
+   }
+  }
+ },
+ "summary": {
+  "short": "Requires MOFCOM export licences for listed gallium- and germanium-related items, including metals, compounds and wafers, from 1 August 2023. Exporters apply through provincial commerce authorities; customs clears shipments against the licence.",
+  "long": "Joint announcement of the Ministry of Commerce (MOFCOM) and General Administration of Customs (GAC), dated 3 July 2023 and issued with State Council approval under the Export Control Law, Foreign Trade Law and Customs Law. Item 1 prohibits export without a licence of listed gallium-related items (metallic gallium, gallium nitride, gallium oxide, gallium arsenide and others) and germanium-related items (metallic germanium, germanium ingots, germanium dioxide, germanium tetrachloride and others). Item 2 lists application documents, filed through provincial commerce authorities. Item 3 requires MOFCOM to review and decide within statutory time limits, with State Council approval for items of major national-security impact. Items 4 to 6 cover licence issuance, licensing procedures under a 2005 MOFCOM/GAC order, and customs clearance against the licence. Item 7 refers unlicensed or excess exports to administrative penalties and criminal liability under other laws. Item 8 sets entry into force on 1 August 2023."
+ },
+ "relations": [
+  {
+   "relation": "legal_basis",
+   "target_text": "中华人民共和国出口管制法 (Export Control Law of the PRC)",
+   "note": "Cited in the preamble as a legal basis for the announcement.",
+   "evidence": {
+    "provision": "前言",
+    "quote": "根据《中华人民共和国出口管制法》《中华人民共和国对外贸易法》《中华人民共和国海关法》有关规定"
+   }
+  },
+  {
+   "relation": "legal_basis",
+   "target_text": "中华人民共和国对外贸易法 (Foreign Trade Law of the PRC)",
+   "note": "Cited in the preamble as a legal basis for the announcement.",
+   "evidence": {
+    "provision": "前言",
+    "quote": "根据《中华人民共和国出口管制法》《中华人民共和国对外贸易法》《中华人民共和国海关法》有关规定"
+   }
+  },
+  {
+   "relation": "legal_basis",
+   "target_text": "中华人民共和国海关法 (Customs Law of the PRC)",
+   "note": "Cited in the preamble as a legal basis for the announcement; also referred to in Art. 6.",
+   "evidence": {
+    "provision": "前言",
+    "quote": "根据《中华人民共和国出口管制法》《中华人民共和国对外贸易法》《中华人民共和国海关法》有关规定"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "两用物项和技术进出口许可证管理办法 (MOFCOM/GAC Order No. 29 of 2005)",
+   "note": "Art. 5 states that export licence issuance and signing procedures, special cases and document retention periods follow this order.",
+   "evidence": {
+    "provision": "五",
+    "quote": "依照商务部、海关总署令2005年第29号（《两用物项和技术进出口许可证管理办法》）的相关规定执行"
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "出口经营者 (exporters)",
+   "role": "addressee",
+   "function": "Must complete export licence procedures under the applicable rules and submit applications through provincial commerce authorities; must present export licence documents to customs.",
+   "evidence": {
+    "provision": "二",
+    "quote": "出口经营者应按照相关规定办理出口许可手续"
+   }
+  },
+  {
+   "name": "商务部 (Ministry of Commerce)",
+   "role": "designated",
+   "function": "Receives and reviews export licence applications, grants or refuses licences, and issues dual-use item and technology export licence documents.",
+   "evidence": {
+    "provision": "三",
+    "quote": "商务部应当自收到出口申请文件之日起进行审查"
+   }
+  },
+  {
+   "name": "海关总署 (General Administration of Customs)",
+   "role": "designated",
+   "function": "Co-issuing body of the announcement; customs clearance and supervision of exports, releasing goods on the basis of MOFCOM-issued licence documents.",
+   "evidence": {
+    "provision": "六",
+    "quote": "海关凭商务部签发的出口许可证件办理验放手续"
+   }
+  },
+  {
+   "name": "省级商务主管部门 (provincial-level commerce authorities)",
+   "role": "designated",
+   "function": "Channel through which exporters submit export licence applications to MOFCOM.",
+   "evidence": {
+    "provision": "二",
+    "quote": "通过省级商务主管部门向商务部提出申请"
+   }
+  },
+  {
+   "name": "国务院 (State Council)",
+   "role": "designated",
+   "function": "Approves exports of listed items that have a major impact on national security, on MOFCOM's submission with relevant departments.",
+   "evidence": {
+    "provision": "三",
+    "quote": "对国家安全有重大影响的本公告所列物项的出口，商务部会同有关部门报国务院批准。"
+   }
+  }
+ ],
+ "notes": "Official MOFCOM web page copy; no consolidated or later version is provided. Article 1 uses HS codes marked as reference only (参考海关商品编号). Article 3 refers to a statutory time limit (法定时限) without stating its length. Article 7 provides for administrative penalties and criminal liability under other laws without stating amounts or penalty types in this text. Article 8 states effect from 2023-08-01. Header date and signing date are both 2023-07-03. Quotes are verbatim; no English translation of the list items was added. Relations and entities sections are populated, so section_status entries are placeholders required by the schema.",
+ "events": [
+  {
+   "event": "adopted",
+   "date": null,
+   "date_type": "not_stated",
+   "date_text": "经国务院批准",
+   "applies_to": "State Council approval of export controls on gallium- and germanium-related items",
+   "evidence": {
+    "provision": "Preamble (前言)",
+    "quote": "经国务院批准，决定对镓、锗相关物项实施出口管制。"
+   }
+  },
+  {
+   "event": "signed",
+   "date": "2023-07-03",
+   "date_type": "absolute",
+   "date_text": "【发文日期】2023年07月03日",
+   "applies_to": "Announcement No. 23 of 2023 (商务部公告2023年第23号), issued jointly by MOFCOM and GAC",
+   "evidence": {
+    "provision": "Header (【发文日期】) and signature block",
+    "quote": "【发文日期】2023年07月03日"
+   }
+  },
+  {
+   "event": "published",
+   "date": "2023-07-03",
+   "date_type": "absolute",
+   "date_text": "2023-07-03 18:00",
+   "applies_to": "Announcement text as posted on the MOFCOM website (来源：安全与管制局)",
+   "evidence": {
+    "provision": "Page header (publication timestamp)",
+    "quote": "2023-07-03 18:00"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2023-08-01",
+   "date_type": "absolute",
+   "date_text": "自2023年8月1日起正式实施",
+   "applies_to": "whole announcement",
+   "evidence": {
+    "provision": "八",
+    "quote": "本公告自2023年8月1日起正式实施。"
+   }
+  },
+  {
+   "event": "application",
+   "date": "2023-08-01",
+   "date_type": "absolute",
+   "date_text": "自2023年8月1日起正式实施 (export prohibition without licence applies from the same date)",
+   "applies_to": "export of gallium- and germanium-related items listed in Part 一 without export licence (未经许可，不得出口)",
+   "evidence": {
+    "provision": "一 (read with 八)",
+    "quote": "满足以下特性的物项，未经许可，不得出口："
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "not_stated",
+   "date_text": "在法定时限内作出准予或者不予许可的决定",
+   "applies_to": "MOFCOM decision to grant or refuse export licence applications, after receipt of application documents",
+   "evidence": {
+    "provision": "三",
+    "quote": "在法定时限内作出准予或者不予许可的决定"
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "满足以下特性的物项 (items meeting the following characteristics)",
+   "defined_in": "Sec. I (一、)",
+   "evidence": {
+    "provision": "Sec. I (一、)",
+    "quote": "一、满足以下特性的物项，未经许可，不得出口："
+   }
+  },
+  {
+   "term": "镓相关物项 (gallium-related items)",
+   "defined_in": "Sec. I item (1) (一、（一）)",
+   "evidence": {
+    "provision": "Sec. I item (1) (一、（一）)",
+    "quote": "（一）镓相关物项。"
+   }
+  },
+  {
+   "term": "锗相关物项 (germanium-related items)",
+   "defined_in": "Sec. I item (2) (一、（二）)",
+   "evidence": {
+    "provision": "Sec. I item (2) (一、（二）)",
+    "quote": "（二）锗相关物项。"
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "prohibition",
+   "addressee": "exporter",
+   "modality": "shall_not",
+   "summary": "Listed gallium- and germanium-related items may not be exported without a licence (Pt. 1 (一) lists gallium items 1-8 and germanium items 1-6 with reference customs codes).",
+   "applies_from": "2023-08-01",
+   "evidence": {
+    "provision": "Pt. 1 (一)",
+    "quote": "未经许可，不得出口"
+   }
+  },
+  {
+   "type": "licensing_certification",
+   "addressee": "exporter",
+   "modality": "shall",
+   "summary": "Exporters must complete export licence procedures under the applicable rules, applying through the provincial commerce department to MOFCOM on the dual-use export application form with listed documents (contract, technical description or test report, end-user and end-use certificates, importer and end-user information, identity documents of legal representatives and operators).",
+   "applies_from": "2023-08-01",
+   "evidence": {
+    "provision": "Pt. 2 (二)",
+    "quote": "出口经营者应按照相关规定办理出口许可手续，通过省级商务主管部门向商务部提出申请"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "MOFCOM must review applications within the received-application period, alone or with other departments, and decide within the statutory time limit whether to grant or refuse a licence. For exports with a major impact on national security, MOFCOM, together with other departments, reports to the State Council for approval.",
+   "applies_from": "2023-08-01",
+   "evidence": {
+    "provision": "Pt. 3 (三)",
+    "quote": "商务部应当自收到出口申请文件之日起进行审查，或者会同有关部门进行审查，并在法定时限内作出准予或者不予许可的决定"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Where a licence is granted, MOFCOM issues the dual-use items and technology export licence certificates (the export licence certificates).",
+   "applies_from": "2023-08-01",
+   "conditional_on": "Licence granted after review under Pt. 3",
+   "evidence": {
+    "provision": "Pt. 4 (四)",
+    "quote": "经审查准予许可的，由商务部颁发两用物项和技术出口许可证件"
+   }
+  },
+  {
+   "type": "record_keeping",
+   "addressee": "exporter",
+   "modality": "shall",
+   "summary": "Licence issuance and signing procedures, special-case handling and document retention periods are governed by the referenced 2005 Order No. 29 (Measures for Licence Administration of Dual-Use Items and Technologies Import and Export); the announcement does not restate these duties.",
+   "applies_from": "2023-08-01",
+   "evidence": {
+    "provision": "Pt. 5 (五)",
+    "quote": "依照商务部、海关总署令2005年第29号（《两用物项和技术进出口许可证管理办法》）的相关规定执行"
+   }
+  },
+  {
+   "type": "cooperation_with_authority",
+   "addressee": "exporter",
+   "modality": "shall",
+   "summary": "Exporters must present the export licence certificates to customs, complete customs formalities under the Customs Law and accept customs supervision.",
+   "applies_from": "2023-08-01",
+   "evidence": {
+    "provision": "Pt. 6 (六)",
+    "quote": "出口经营者应当向海关出具出口许可证件"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Customs releases goods on the basis of the export licence certificates issued by MOFCOM.",
+   "applies_from": "2023-08-01",
+   "evidence": {
+    "provision": "Pt. 6 (六)",
+    "quote": "海关凭商务部签发的出口许可证件办理验放手续"
+   }
+  }
+ ],
+ "enforcement": [
+  {
+   "sanction_type": "other",
+   "authority": "商务部或者海关等部门 (MOFCOM or customs and other departments; text says 等部门)",
+   "triggered_by": "Exporting without a licence, exporting beyond the licence scope, or other violations by export operators (出口经营者未经许可出口、超出许可范围出口或有其他违法情形)",
+   "max_penalty_text": "No maximum stated in this text (administrative penalty 行政处罚 referred to laws and regulations)",
+   "penalty_reference": "有关法律法规的规定 (the laws and regulations referred to are not named in this text)",
+   "cure_period": "Not stated in this text",
+   "evidence": {
+    "provision": "七",
+    "quote": "出口经营者未经许可出口、超出许可范围出口或有其他违法情形的，由商务部或者海关等部门依照有关法律法规的规定给予行政处罚。"
+   }
+  },
+  {
+   "sanction_type": "criminal_penalty",
+   "authority": "Not specified in this text (依法追究刑事责任 [criminal liability pursued according to law])",
+   "triggered_by": "Conduct that constitutes a crime under the export-control violations described in Article 7 (构成犯罪的)",
+   "max_penalty_text": "No penalty stated in this text; criminal liability is referred to law",
+   "penalty_reference": "Criminal law, not named in this text (依法追究刑事责任)",
+   "cure_period": "Not stated in this text",
+   "evidence": {
+    "provision": "七",
+    "quote": "构成犯罪的，依法追究刑事责任。"
+   }
+  }
+ ],
+ "section_status": {
+  "thresholds": {
+   "status": "not_applicable",
+   "note": "The announcement sets no numeric cutoff that changes legal treatment. Scope is set by enumerated items and reference HS codes (参考海关商品编号), which are not thresholds. The effective date is an event, not a threshold."
+  }
+ },
+ "thresholds": []
+}

@@ -1,0 +1,988 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "ae-pdpl-2021",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "uaelegislation.gov.ae official Arabic PDF via Internet Archive snapshot (2024-11-21)",
+  "url": "https://web.archive.org/web/20241121125619/https://uaelegislation.gov.ae/ar/legislations/1972/download",
+  "retrieved": "2026-10-14",
+  "version": "Official Arabic text (original) of Federal Decree-Law No. 45 of 2021 as published on the UAE federal legislation portal",
+  "language": "ar",
+  "extent": "full",
+  "note": "uaelegislation.gov.ae returns Cloudflare 403 to scripts; saved the Wayback raw capture of the official Arabic download. Text extracted with pypdf (pdftotext garbles lam-ligatures in this PDF, so do not re-run extract_texts.py on it); a few word-boundary glitches remain."
+ },
+ "classification": {
+  "domains": [
+   "data_protection",
+   "data_transfer_localization",
+   "algorithmic_decision_systems"
+  ],
+  "primary_domain": "data_protection",
+  "mechanisms": [
+   "mandate_obligation",
+   "prohibition_ban",
+   "registration_notification",
+   "disclosure_transparency",
+   "institution_setup"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "data_controller",
+   "data_processor"
+  ],
+  "affected_roles": [
+   "consumers_users"
+  ],
+  "decision_margins": [
+   "firm:compliance_process",
+   "firm:product_design_release",
+   "household:data_privacy",
+   "household:information"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national",
+    "extraterritorial"
+   ],
+   "description": "Applies to controllers and processors in the UAE, to data subjects in the UAE, and to controllers and processors outside the UAE that process data of data subjects in the UAE.",
+   "evidence": {
+    "provision": "Art. 2(1)(c)",
+    "quote": "كل متحكم أو معالج متواجد خارج الدولة يقوم بمزاولة أنشطة معالجة البيانات الشخصية لأصحاب البيانات في الدولة."
+   }
+  },
+  "agora_harms": [
+   "Violation of civil or human rights, including privacy"
+  ],
+  "agora_risk_factors": [
+   "Privacy",
+   "Security",
+   "Transparency"
+  ],
+  "agora_strategies": [
+   "Disclosure",
+   "Evaluation: Impact assessment",
+   "Input controls: Data use",
+   "Input controls: Data circulation"
+  ]
+ },
+ "summary": {
+  "short": "The decree-law regulates processing of personal data in the UAE, binding controllers and processors and granting data subjects rights, including over automated decisions. It requires consent or a listed exception, security measures, breach notification, and restricts cross-border transfers. It applies from 2 January 2022.",
+  "long": "The decree-law sets general rules for processing personal data by controllers and processors in the UAE, and by controllers and processors outside the UAE that process data of data subjects in the UAE. It excludes government data, government entities, data held by security and judicial bodies, personal-purpose processing, health and banking data governed by other legislation, and free-zone entities with their own data protection laws. Processing without the data subject's consent is prohibited unless an enumerated exception applies, and consent must be provable, clear and withdrawable. Processing principles include purpose limitation, data minimisation, accuracy and security. Controllers and processors must apply technical and organisational measures, keep records, notify the Office of breaches, and appoint a data protection officer in listed high-risk cases. Data subjects have rights to information, portability, rectification, erasure, restriction and objection, including to decisions based on automated processing and a right to human review. Impact assessments are required for high-risk processing. Cross-border transfers are allowed where the destination offers adequate protection or on listed grounds. Complaints go to the Office. Administrative sanctions are to be set by Cabinet decision; the text states no amounts. The decree-law applies from 2 January 2022; the executive regulation is due within six months, and controllers have six months after it is issued to comply."
+ },
+ "relations": [
+  {
+   "relation": "legal_basis",
+   "target_text": "Constitution of the United Arab Emirates [الدستور]",
+   "note": "Cited in the preamble among the instruments reviewed; the text does not state which constitutional power it exercises.",
+   "evidence": {
+    "provision": "Preamble",
+    "quote": "بعد الاطلاع على"
+   }
+  },
+  {
+   "relation": "legal_basis",
+   "target_text": "Federal Law No. (1) of 1972 on the competencies of ministries and powers of ministers",
+   "note": "Cited in the preamble among the instruments reviewed; no operative provision names it.",
+   "evidence": {
+    "provision": "Preamble",
+    "quote": "بشأن اختصاصاتالوزارات وصلاحيات الوزراء"
+   }
+  },
+  {
+   "relation": "legal_basis",
+   "target_text": "Federal Decree-Law No. (3) of 2003 regulating the telecommunications sector",
+   "note": "Cited in the preamble among the instruments reviewed; no operative provision names it.",
+   "evidence": {
+    "provision": "Preamble",
+    "quote": "تنظيم قطاع الاتصالات"
+   }
+  },
+  {
+   "relation": "legal_basis",
+   "target_text": "Federal Law No. (14) of 2016 on administrative violations and penalties in the federal government",
+   "note": "Cited in the preamble among the instruments reviewed; the administrative sanctions in Art. 26 are to be set by Cabinet decision.",
+   "evidence": {
+    "provision": "Preamble",
+    "quote": "والجزاءات الإدارية في الحكومة الاتحادية"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Federal Decree-Law No. (44) of 2021 establishing the Emirates Data Office",
+   "note": "The Emirates Data Office, which this law designates as regulator, is established under this decree-law; the text defines the Office by reference to it.",
+   "evidence": {
+    "provision": "Art. 1 (definition 'المكتب')",
+    "quote": "مكتب الإمارات للبيانات المنشأ بموجب المرسوم بقانون"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Federal Law No. (2) of 2019 on the use of information and communication technology in health fields",
+   "note": "Preamble citation only. Art. 2(2)(هـ) excludes health personal data where separate legislation governs it; the operative text does not name this law.",
+   "evidence": {
+    "provision": "Preamble",
+    "quote": "في شأن استخدام تقنية المعلومات والاتصالات في المجالات"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Federal Law No. (6) of 2010 on credit information",
+   "note": "Preamble citation only. Art. 2(2)(و) excludes banking and credit personal data where separate legislation governs it; the operative text does not name this law.",
+   "evidence": {
+    "provision": "Preamble",
+    "quote": "بشأن المعلومات الائتمانية"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Federal Decree-Law No. (14) of 2018 on the Central Bank and regulation of financial institutions and activities",
+   "note": "Preamble citation only. Art. 2(2)(و) excludes banking and credit personal data where separate legislation governs it; the operative text does not name this decree-law.",
+   "evidence": {
+    "provision": "Preamble",
+    "quote": "في شأن المصرف المركزي وتنظيم المنشآت والأنشطة"
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "مكتب الإمارات للبيانات (Emirates Data Office)",
+   "role": "designated",
+   "function": "Supervisory authority ('المكتب'): receives breach reports from controllers (Art. 9), handles complaints (Art. 24), may impose administrative sanctions (Art. 24(3)), approves cross-border transfer grounds (Art. 22), may grant exemptions (Art. 3), and maintains the list of processing exempt from impact assessment (Art. 21(6)).",
+   "evidence": {
+    "provision": "Art. 1 (definition 'المكتب')",
+    "quote": "مكتب الإمارات للبيانات المنشأ بموجب المرسوم بقانون"
+   }
+  },
+  {
+   "name": "مجلس الوزراء (Cabinet of Ministers)",
+   "role": "designated",
+   "function": "Issues the executive regulations on the Office's proposal (Art. 28), issues the decision defining violations and administrative sanctions (Art. 26), and may delegate certain Office powers to local government bodies (Art. 27).",
+   "evidence": {
+    "provision": "Art. 26",
+    "quote": "يصدر مجلس الوزراء"
+   }
+  }
+ ],
+ "notes": "Arabic original. The fetched text has OCR-type spacing and garbled words (e.g., 'اختصاصاتالوزارات', 'لمبشأن'); quotes are copied as they appear. Key terms are deferred to executive regulations and Cabinet decisions (Arts. 4(11), 7(7), 9(1), 10(4), 22-23, 26) that are not in this document. Art. 2(2)(ه) and (و) exclude sector data where separate legislation exists, but the operative text does not name the laws; the preamble cites them. Art. 27 allows delegation to local government bodies that are not named, so none are listed. Art. 31 states entry into force on 2 January 2022. Target_instrument_id is empty where the target is not in the registry text (the codebook asks for null; the schema requires a string).",
+ "events": [
+  {
+   "event": "legislative_approval",
+   "date": null,
+   "date_type": "not_stated",
+   "date_text": "وموافقة مجلس الوزراء",
+   "applies_to": "Federal Decree-Law as a whole (Cabinet approval recited in the preamble)",
+   "evidence": {
+    "provision": "Preamble",
+    "quote": "وموافقة مجلس الوزراء"
+   }
+  },
+  {
+   "event": "signed",
+   "date": "2021-09-20",
+   "date_type": "absolute",
+   "date_text": "الموافق: 20 // سبتمبر2021م",
+   "applies_to": "Federal Decree-Law as a whole (issued at the Presidential Palace, Abu Dhabi)",
+   "evidence": {
+    "provision": "Closing clause (صدر عنا في قصر الرئاسة بأبو ظبي)",
+    "quote": "الموافق: 20 // سبتمبر2021م"
+   }
+  },
+  {
+   "event": "published",
+   "date": null,
+   "date_type": "not_stated",
+   "date_text": "يُنشر هذا المرسوم بقانون في الجريدة الرسمية",
+   "applies_to": "Federal Decree-Law as a whole (publication in the Official Gazette)",
+   "evidence": {
+    "provision": "Art. 31",
+    "quote": "يُنشر هذا المرسوم بقانون في الجريدة الرسمية"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2022-01-02",
+   "date_type": "absolute",
+   "date_text": "ويُعمل به اعتبارًا من 2 يناير2022.م",
+   "applies_to": "Federal Decree-Law as a whole",
+   "evidence": {
+    "provision": "Art. 31",
+    "quote": "ويُعمل به اعتبارًا من 2 يناير2022.م"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2022-03-20",
+   "date_type": "relative",
+   "date_text": "خلال (6 ) ستة أشهر من تاريخ صدوره",
+   "anchor": "تاريخ صدوره (date of issue of this Decree-Law)",
+   "applies_to": "Council of Ministers, on proposal of the Director General of the Office: issuance of the executive regulation",
+   "offset_value": 6,
+   "offset_unit": "months",
+   "anchor_event": "signed",
+   "evidence": {
+    "provision": "Art. 28",
+    "quote": "خلال (6 ) ستة أشهر من تاريخ صدوره"
+   },
+   "date_computed_from": "signed 2021-09-20 (text) + 6 months"
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "خلال مدة لا تزيد على (6 ) ستة أشهر من تاريخ صدور لائحته التنفيذية، ويجوز لمجلس الوزراء تمديد هذه المهلة لمدة أخرى مماثلة",
+   "depends_on": "issuance of the executive regulation under Art. 28",
+   "applies_to": "Controllers and processors: bringing their status into conformity with the Decree-Law (توفيق الأوضاع)",
+   "offset_value": 6,
+   "offset_unit": "months",
+   "evidence": {
+    "provision": "Art. 29",
+    "quote": "من تاريخ صدور لائحته التنفيذية"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "خلال المدة ووفقًا للإجراءات والشروط التي تحددها اللائحة التنفيذية لهذا المرسوم بقانون",
+   "depends_on": "period and procedures set by the executive regulation",
+   "applies_to": "Controller notifying the Office of a personal data breach (Art. 9(1)); controller notifying the data subject (Art. 9(2))",
+   "evidence": {
+    "provision": "Art. 9(1)",
+    "quote": "خلال المدة ووفقًا للإجراءات والشروط"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "وذلك خلال (30 ) ثلاثين يومًا من تاريخ إخطاره بذلك القرار أو الجزاء الإداري أو الإجراء",
+   "anchor": "notification of the Office's decision, penalty or measure",
+   "depends_on": "notification of the Office's decision, penalty or measure",
+   "applies_to": "Any interested party: written appeal (تظلم) to the Director General of the Office",
+   "offset_value": 30,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Art. 25",
+    "quote": "ثلاثين يومًا من تاريخ إخطاره بذلك القرار"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "ويتم البت في هذا التظلم خلال ( 30.) ثلاثين يومًا من تاريخ تقديمه",
+   "anchor": "filing of the appeal",
+   "depends_on": "filing of the appeal (تظلم)",
+   "applies_to": "The Office: decision on the appeal",
+   "offset_value": 30,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Art. 25",
+    "quote": "ثلاثين يومًا من تاريخ تقديمه"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "volume",
+   "variable_text": "حجم كبير من البيانات الشخصية",
+   "operator": ">",
+   "value": null,
+   "value_text": "set by the executive regulations: establishments not processing a large volume of personal data (المنشآت التي لا تقوم بمعالجة حجم كبير من البيانات الشخصية)",
+   "unit": "",
+   "measurement": "Standards and criteria to be set by the Executive Regulations; measurement window and measurer not stated in this text",
+   "level": "entity",
+   "trigger": "exemption",
+   "consequence": "The Office may exempt such establishments from part or all of the requirements of the Decree-Law",
+   "conditions": "Discretionary Office power; applies to establishments not processing a large volume of personal data",
+   "depends_on": "Executive Regulations of this Decree-Law (Art. 3)",
+   "evidence": {
+    "provision": "Art. 3",
+    "quote": "المنشآت التي لا تقوم بمعالجة حجم كبير من البيانات الشخصية"
+   }
+  },
+  {
+   "variable": "volume",
+   "variable_text": "حجم كبير من البيانات الشخصية الحساسة",
+   "operator": ">",
+   "value": null,
+   "value_text": "large volume of sensitive personal data (حجم كبير من البيانات الشخصية الحساسة); standards set by the executive regulations (Art. 10(4))",
+   "unit": "",
+   "measurement": "Standards for determining the volume to be set by the Executive Regulations; measurement window and measurer not stated in this text",
+   "level": "entity",
+   "trigger": "obligation",
+   "consequence": "The controller and the processor must appoint a data protection officer",
+   "conditions": "One of three alternatives in Art. 10(1): (a) high-level risk from new technologies or volume-linked technologies; (b) systematic and comprehensive evaluation of sensitive data including profiling and automated processing; (c) this volume criterion",
+   "depends_on": "Executive Regulations (Art. 10(4)) set the standards for determining the volume",
+   "evidence": {
+    "provision": "Art. 10(1)(c)",
+    "quote": "إذا كانت المعالجة ستتم على حجم كبير من البيانات الشخصية الحساسة"
+   }
+  },
+  {
+   "variable": "volume",
+   "variable_text": "حجم كبير من البيانات الشخصية الحساسة",
+   "operator": ">",
+   "value": null,
+   "value_text": "large volume of sensitive personal data (حجم كبير من البيانات الشخصية الحساسة); no numeric value in the text",
+   "unit": "",
+   "measurement": "Not defined in the text",
+   "level": "entity",
+   "trigger": "obligation",
+   "consequence": "The controller must carry out a data protection impact assessment before the processing",
+   "conditions": "One of two listed cases in Art. 21(2); the other is systematic evaluation of personal aspects by automated processing with legal or significant effects (Art. 21(2)(a))",
+   "depends_on": "Not quantified in this text; the Art. 10(4) volume standard is stated for Art. 10 only",
+   "evidence": {
+    "provision": "Art. 21(2)(b)",
+    "quote": "إذا كانت المعالجة ستتم على حجم كبير من البيانات الشخصية الحساسة"
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "الدولة",
+   "defined_in": "Art. 1",
+   "evidence": {
+    "provision": "Art. 1",
+    "quote": "الإمارات العربية المتحدة."
+   }
+  },
+  {
+   "term": "البيانات الشخصية",
+   "defined_in": "Art. 1",
+   "evidence": {
+    "provision": "Art. 1",
+    "quote": "أي بيانات تتعلق بشخص طبيعي محدد، أو تتعلق بشخص طبيعي يمكن التعرف عليه بشكل"
+   }
+  },
+  {
+   "term": "البيانات الشخصية الحساسة",
+   "defined_in": "Art. 1",
+   "evidence": {
+    "provision": "Art. 1",
+    "quote": "أي بيانات تكشف بشكل مباشر أو غير مباشر عن عائلة الشخص الطبيعي أو أصله العرقي أو"
+   }
+  },
+  {
+   "term": "البيانات الحيوية البيومترية",
+   "defined_in": "Art. 1",
+   "evidence": {
+    "provision": "Art. 1",
+    "quote": "البيانات الشخصية الناتجة عن المعالجة باستخدام تقنية محددة تتعلق بالخصائص الجسدية"
+   }
+  },
+  {
+   "term": "صاحب البيانات",
+   "defined_in": "Art. 1",
+   "evidence": {
+    "provision": "Art. 1",
+    "quote": "الشخص الطبيعي موضوع البيانات الشخصية."
+   }
+  },
+  {
+   "term": "المنشأة",
+   "defined_in": "Art. 1",
+   "evidence": {
+    "provision": "Art. 1",
+    "quote": "أي شركة أو مؤسسة فردية داخل الدولة أو خارجها"
+   }
+  },
+  {
+   "term": "المتحكم",
+   "defined_in": "Art. 1",
+   "evidence": {
+    "provision": "Art. 1",
+    "quote": "المنشأة أو الشخص الطبيعي الذي لديه بيانات شخصية، وبحكم نشاطه يقوم بتحديد طريقة"
+   }
+  },
+  {
+   "term": "المعالج",
+   "defined_in": "Art. 1",
+   "evidence": {
+    "provision": "Art. 1",
+    "quote": "المنشأة أو الشخص الطبيعي الذي يعالج البيانات الشخصية نيابة عن المتحكم، بحيث يقوم"
+   }
+  },
+  {
+   "term": "مسؤول حماية البيانات",
+   "defined_in": "Art. 1",
+   "evidence": {
+    "provision": "Art. 1",
+    "quote": "أي شخص طبيعي أو اعتباري يتم تعيينه من قبل المتحكم أو المعالج، يتولى مهام التأكد من مدى"
+   }
+  },
+  {
+   "term": "المعالجة",
+   "defined_in": "Art. 1",
+   "evidence": {
+    "provision": "Art. 1",
+    "quote": "أي عملية أو مجموعة عمليات يتم إجراؤها على البيانات الشخصية باستخدام أي وسيلة من"
+   }
+  },
+  {
+   "term": "المعالجة المؤتمتة",
+   "defined_in": "Art. 1",
+   "evidence": {
+    "provision": "Art. 1",
+    "quote": "المعالجة التي تتم باستخدام برنامج أ و نظام إلكتروني، يعمل بطريقة آلية وتلقائية إما بشكل"
+   }
+  },
+  {
+   "term": "آلية إخفاء الهوية",
+   "defined_in": "Art. 1",
+   "evidence": {
+    "provision": "Art. 1",
+    "quote": "المعالجة التي يتم إجراؤها على البيانات الشخصية بطريقة تؤدي إلى إخفاء هوية صاحب"
+   }
+  },
+  {
+   "term": "آلية إخفاء البيانات",
+   "defined_in": "Art. 1",
+   "evidence": {
+    "provision": "Art. 1",
+    "quote": "المعالجة التي يتم إجراؤها على البيانات الشخصية بطريقة تؤدي بعد إتمام المعالجة إلى عدم"
+   }
+  },
+  {
+   "term": "خرق وانتهاك البيانات",
+   "defined_in": "Art. 1",
+   "evidence": {
+    "provision": "Art. 1",
+    "quote": "عملية خرق لأمن المعلومات وانتهاك البيانات الشخصية من خلال الدخول والوصول إليها بشكل"
+   }
+  },
+  {
+   "term": "التنميط",
+   "defined_in": "Art. 1",
+   "evidence": {
+    "provision": "Art. 1",
+    "quote": "شكل من أشكال المعالجة المؤتمتة بحيث تتضمن استخدام البيانات الشخصية لتقييم جوانب"
+   }
+  },
+  {
+   "term": "المعالجة عبر الحدود",
+   "defined_in": "Art. 1",
+   "evidence": {
+    "provision": "Art. 1",
+    "quote": "الشخصية أو معالجتها خارج النطاق الجغرافي للدولة."
+   }
+  },
+  {
+   "term": "الموافقة",
+   "defined_in": "Art. 1",
+   "evidence": {
+    "provision": "Art. 1",
+    "quote": "الموافقة التي يصرح فيها صاحب البيانات للغير بمعالجة بياناته الشخصية"
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "prohibition",
+   "addressee": "data_controller",
+   "also_addressees": [
+    "data_processor"
+   ],
+   "modality": "shall_not",
+   "summary": "Processing of personal data without the data subject's consent is prohibited unless one of the listed exceptions in Art. 4(1)-(11) applies.",
+   "applies_from": "from 2 January 2022 (Art. 31)",
+   "evidence": {
+    "provision": "Art. 4",
+    "quote": "يُحظر معالجة البيانات الشخصية دون موافقة صاحبها"
+   }
+  },
+  {
+   "type": "data_minimization",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Processing must be fair, transparent and lawful; data collected for a specific purpose and not processed incompatibly with it; data adequate and limited to what is necessary; data accurate and updated; measures to erase or correct inaccurate data; data kept securely; data not kept after the purpose is exhausted except in anonymised form (Art. 5(1)-(7)).",
+   "applies_from": "from 2 January 2022 (Art. 31)",
+   "evidence": {
+    "provision": "Art. 5(1)",
+    "quote": "أن تكون المعالجة بطريقة عادلة وشفافة ومشروعة"
+   }
+  },
+  {
+   "type": "consent",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Where processing relies on consent, the controller must be able to prove the data subject's consent, and consent must be clear, simple, unambiguous and easily accessible, including a statement of the right to withdraw and an easy withdrawal procedure (Art. 6(1)(a)-(c)).",
+   "applies_from": "from 2 January 2022 (Art. 31)",
+   "conditional_on": "processing based on consent",
+   "evidence": {
+    "provision": "Art. 6(1)(b)",
+    "quote": "أن تكون الموافقة معدة بطريقة واضحة وبسيطة وغير مبهمة وسهلة الوصول إليها"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Take appropriate technical and organisational measures to apply the standards needed to protect and secure personal data, to keep it confidential and private, and to prevent breach, destruction, alteration or tampering, considering nature, scope and purposes of processing and the risks.",
+   "applies_from": "from 2 January 2022 (Art. 31)",
+   "evidence": {
+    "provision": "Art. 7(1)",
+    "quote": "اتخاذ الإجراءات والتدابير التقنية والتنظيمية الملائمة لتطبيق المعايير القياسية اللازمة لحماية وتأمين"
+   }
+  },
+  {
+   "type": "data_minimization",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Apply appropriate measures both when determining and during processing, including data masking; for default settings, apply measures so that processing is limited to the specified purpose, covering volume and type of data, type of processing, storage period and accessibility (Art. 7(2)-(3)).",
+   "applies_from": "from 2 January 2022 (Art. 31)",
+   "evidence": {
+    "provision": "Art. 7(2)",
+    "quote": "تطبيق التدابير الملائمة سواء أثناء تحديد وسائل المعالجة أو أثناء المعالجة نفسها"
+   }
+  },
+  {
+   "type": "record_keeping",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Keep a special record of personal data with prescribed contents (controller and DPO details, data categories, authorised persons, retention periods, purposes, cross-border movements, security measures) and provide it to the Office on request (Art. 7(4)).",
+   "applies_from": "from 2 January 2022 (Art. 31)",
+   "evidence": {
+    "provision": "Art. 7(4)",
+    "quote": "مسك سجل خاص للبيانات الشخصية، على أن يتضمن هذا السجل"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Appoint only a processor that provides sufficient guarantees for applying the technical and organisational measures so that processing meets the requirements of the decree-law and its executive regulation (Art. 7(5)).",
+   "applies_from": "from 2 January 2022 (Art. 31)",
+   "evidence": {
+    "provision": "Art. 7(5)",
+    "quote": "تعيين المعالج الذي يتوفر لديه ضمانات كافية لتطبيق التدابير التقنية والتنظيمية"
+   }
+  },
+  {
+   "type": "cooperation_with_authority",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Provide the Office with any information it requests for its functions, upon a decision of the competent judicial authority (Art. 7(6)).",
+   "applies_from": "from 2 January 2022 (Art. 31)",
+   "conditional_on": "decision of the competent judicial authority",
+   "evidence": {
+    "provision": "Art. 7(6)",
+    "quote": "تزويد المكتب، وبناءً على قرار من الجهة القضائية المختصة، بأي معلومات يطلبها"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_processor",
+   "modality": "shall",
+   "summary": "Carry out processing and its execution in accordance with the controller's instructions and the contracts and agreements between them, which specify scope, subject, purpose, nature, data types and categories of data subjects (Art. 8(1)).",
+   "applies_from": "from 2 January 2022 (Art. 31)",
+   "evidence": {
+    "provision": "Art. 8(1)",
+    "quote": "إجراء المعالجة وتنفيذها وفقًا لتعليمات المتحكم، والعقود والاتفاقات المبرمة بينهما"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "data_processor",
+   "modality": "shall",
+   "summary": "Apply appropriate technical and organisational measures to protect personal data at the design stage, both when determining the means of processing and during processing, taking into account cost, nature, scope and purposes (Art. 8(2)); Art. 8(6) also requires securing processing media and devices.",
+   "applies_from": "from 2 January 2022 (Art. 31)",
+   "evidence": {
+    "provision": "Art. 8(2)",
+    "quote": "تطبيق الإجراءات والتدابير التقنية والتنظيمية الملائمة لحماية البيانات الشخصية في مرحلة التصميم"
+   }
+  },
+  {
+   "type": "data_minimization",
+   "addressee": "data_processor",
+   "modality": "shall",
+   "summary": "Process only for the specified purpose and duration; if processing exceeds the duration, notify the controller to obtain an extension or instructions (Art. 8(3)); erase data after the processing period or deliver it to the controller (Art. 8(4)).",
+   "applies_from": "from 2 January 2022 (Art. 31)",
+   "evidence": {
+    "provision": "Art. 8(3)",
+    "quote": "إجراء المعالجة وفق الغرض والمدة المحددة لها"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "data_processor",
+   "modality": "shall_not",
+   "summary": "Do not disclose personal data or processing results except where legally permitted (Art. 8(5)).",
+   "applies_from": "from 2 January 2022 (Art. 31)",
+   "evidence": {
+    "provision": "Art. 8(5)",
+    "quote": "عدم القيام بأي عمل من شأنه الإفصاح عن البيانات الشخصية أو نتائج المعالجة إلا في الأحوال المصرح"
+   }
+  },
+  {
+   "type": "record_keeping",
+   "addressee": "data_processor",
+   "modality": "shall",
+   "summary": "Keep a special record of personal data processed on behalf of the controller, with prescribed contents, and provide it to the Office on request (Art. 8(7)); Art. 8(8) also requires means to demonstrate compliance on request of the controller or the Office.",
+   "applies_from": "from 2 January 2022 (Art. 31)",
+   "evidence": {
+    "provision": "Art. 8(7)",
+    "quote": "مسك سجل خاص للبيانات الشخصية التي تتم معالجتها نيابة عن المتحكم"
+   }
+  },
+  {
+   "type": "incident_reporting",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Once aware of a personal data breach that may affect privacy, confidentiality or security, notify the Office of the breach and the investigation results within the period and under the procedures set by the executive regulation, with the details listed in Art. 9(1)(a)-(f).",
+   "applies_from": "from 2 January 2022 (Art. 31); period set by the executive regulation",
+   "conditional_on": "breach that may affect the privacy, confidentiality or security of personal data",
+   "evidence": {
+    "provision": "Art. 9(1)",
+    "quote": "يلتزم المتحكم بمجرد علمه بوجود"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Notify the data subject of a breach that may affect the privacy, confidentiality or security of their personal data, within the period set by the executive regulation, and inform them of the measures taken (Art. 9(2)).",
+   "applies_from": "from 2 January 2022 (Art. 31); period set by the executive regulation",
+   "conditional_on": "breach that may affect the privacy, confidentiality or security of the data subject's personal data",
+   "evidence": {
+    "provision": "Art. 9(2)",
+    "quote": "يجب على المتحكم أن يخطر صاحب البيانات في حال كان الانتهاك"
+   }
+  },
+  {
+   "type": "incident_reporting",
+   "addressee": "data_processor",
+   "modality": "shall",
+   "summary": "On becoming aware of a personal data breach, notify the controller immediately so that the controller can report it to the Office (Art. 9(3)).",
+   "applies_from": "from 2 January 2022 (Art. 31)",
+   "evidence": {
+    "provision": "Art. 9(3)",
+    "quote": "المتحكم بهذا الاختراق أو الانتهاك فور علمه بذلك"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "regulator",
+   "modality": "shall",
+   "summary": "After receiving the controller's breach report, the Office verifies the causes of the breach and the adequacy of security measures, and imposes administrative sanctions referred to in Art. 26 where a violation is established (Art. 9(4)).",
+   "applies_from": "from 2 January 2022 (Art. 31)",
+   "conditional_on": "receipt of a breach report from the controller",
+   "evidence": {
+    "provision": "Art. 9(4)",
+    "quote": "يتولى المكتب بعد استلام البلاغ من المتحكم"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_controller",
+   "also_addressees": [
+    "data_processor"
+   ],
+   "modality": "shall",
+   "summary": "Appoint a data protection officer with adequate skills where processing creates a high-level risk through new or volume-related technologies, involves systematic evaluation of sensitive data including profiling and automated processing, or involves large volumes of sensitive data; notify the Office of the officer's contact address (Art. 10(1)-(3)).",
+   "applies_from": "from 2 January 2022 (Art. 31)",
+   "conditional_on": "processing with high-level risk, systematic evaluation of sensitive data, or large volumes of sensitive data (Art. 10(1))",
+   "evidence": {
+    "provision": "Art. 10(1)",
+    "quote": "يجب على المتحكم والمعالج تعيين مسؤول لحماية البيانات"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_controller",
+   "also_addressees": [
+    "data_processor"
+   ],
+   "modality": "shall",
+   "summary": "Ensure the data protection officer is properly and timely involved in all data protection matters, is provided with resources and support, is not dismissed or penalised for performing duties, and is not given tasks creating a conflict of interest (Art. 12(1)(a)-(d)).",
+   "applies_from": "from 2 January 2022 (Art. 31)",
+   "conditional_on": "appointment of a data protection officer under Art. 10",
+   "evidence": {
+    "provision": "Art. 12(1)(a)",
+    "quote": "ضمان إشراكه بشكل مناسب وفي الوقت الملائم في كافة المسائل المتعلقة بحماية البيانات الشخصية"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "On the data subject's request and free of charge, provide information on the types of data processed, purposes, automated decisions including profiling, recipients, retention criteria, rectification, erasure and restriction procedures, cross-border safeguards, breach procedures and complaint procedures (Art. 13(1)).",
+   "applies_from": "from 2 January 2022 (Art. 31)",
+   "conditional_on": "request by the data subject",
+   "evidence": {
+    "provision": "Art. 13(1)",
+    "quote": "يحق لصاحب البيانات وبناءً على طلب يقدمه إلى المتحكم"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Before processing begins, provide the data subject with the information in Art. 13(1)(b), (d) and (z): purposes, recipients, and cross-border transfer safeguards.",
+   "applies_from": "from 2 January 2022 (Art. 31)",
+   "evidence": {
+    "provision": "Art. 13(2)",
+    "quote": "يجب على المتحكم، وقبل البدء بالمعالجة، تزويد صاحب البيانات بالمعلومات"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Enable the data subject to obtain their personal data provided to the controller in a structured, machine-readable form where processing is based on consent or contract and is automated, and to request transfer to another controller where technically feasible (Art. 14).",
+   "applies_from": "from 2 January 2022 (Art. 31)",
+   "conditional_on": "processing based on consent or contractual obligation and carried out by automated means",
+   "evidence": {
+    "provision": "Art. 14(1)",
+    "quote": "يحق لصاحب البيانات الحصول على البيانات الشخصية الخاصة به"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Correct or complete inaccurate personal data without undue delay on request, and erase personal data in the cases listed in Art. 15(2)(a)-(d), subject to the exceptions in Art. 15(3).",
+   "applies_from": "from 2 January 2022 (Art. 31)",
+   "conditional_on": "request by the data subject",
+   "evidence": {
+    "provision": "Art. 15(1)",
+    "quote": "يحق لصاحب البيانات طلب تصحيح بياناته الشخصية غير الدقيقة"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "On the data subject's request, restrict and stop processing in the cases listed in Art. 16(1)(a)-(c), including where the data is inaccurate or processing is unlawful; retain data for the data subject's legal claims on request (Art. 16(2)).",
+   "applies_from": "from 2 January 2022 (Art. 31)",
+   "conditional_on": "cases listed in Art. 16(1)",
+   "evidence": {
+    "provision": "Art. 16(1)",
+    "quote": "يحق لصاحب البيانات إلزام المتحكم بتقييد وإيقاف المعالجة"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "When lifting a processing restriction, notify the data subject.",
+   "applies_from": "from 2 January 2022 (Art. 31)",
+   "conditional_on": "lifting of a restriction under Art. 16",
+   "evidence": {
+    "provision": "Art. 16(4)",
+    "quote": "يجب على المتحكم في حال قام برفع التقييد المنصوص عليه في هذه المادة، أن يخطر"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Stop processing on the data subject's objection in the cases listed: direct marketing including related profiling, statistical surveys unless necessary for public interest, and processing contrary to Art. 5 (Art. 17).",
+   "applies_from": "from 2 January 2022 (Art. 31)",
+   "conditional_on": "objection by the data subject in the cases listed in Art. 17",
+   "evidence": {
+    "provision": "Art. 17",
+    "quote": "يحق لصاحب البيانات الاعتراض على معالجة بياناته الشخصية وإيقاف المعالجة"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Enable the data subject to object to decisions based on automated processing that have legal effects or significantly affect them, including profiling, subject to the exceptions in Art. 18(2); Art. 18(3) requires protective measures in those cases.",
+   "applies_from": "from 2 January 2022 (Art. 31)",
+   "conditional_on": "decisions based on automated processing with legal effects or significant effects",
+   "evidence": {
+    "provision": "Art. 18(1)",
+    "quote": "يحق لصاحب البيانات الاعتراض على القرارات التي تصدر عن المعالجة المؤتمتة"
+   }
+  },
+  {
+   "type": "human_oversight",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "On the data subject's request, include human involvement in reviewing automated processing decisions; in the cases of Art. 18(2), apply measures to protect the data subject's privacy, confidentiality and rights (Art. 18(3)-(4)).",
+   "applies_from": "from 2 January 2022 (Art. 31)",
+   "conditional_on": "request by the data subject for review of an automated decision",
+   "evidence": {
+    "provision": "Art. 18(4)",
+    "quote": "يتعين على المتحكم إدخال العنصر البشري في مراجعة قرارات المعالجة المؤتمتة"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Provide appropriate and clear means and mechanisms enabling the data subject to contact the controller and request the exercise of their rights.",
+   "applies_from": "from 2 January 2022 (Art. 31)",
+   "evidence": {
+    "provision": "Art. 19",
+    "quote": "على المتحكم توفير طرق وآليات مناسبة وواضحة لتمكين صاحب البيانات من التواصل معه"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "data_controller",
+   "also_addressees": [
+    "data_processor"
+   ],
+   "modality": "shall",
+   "summary": "Implement appropriate technical and organisational measures to ensure information security proportionate to processing risks, according to international standards and best practices, which may include encryption, masking, business continuity, data recovery and regular testing of effectiveness (Art. 20(1)-(2)).",
+   "applies_from": "from 2 January 2022 (Art. 31)",
+   "evidence": {
+    "provision": "Art. 20(1)",
+    "quote": "يجب على المتحكم والمعالج وضع واتخاذ إجراءات وتدابير تقنية وتنظيمية ملائمة"
+   }
+  },
+  {
+   "type": "impact_assessment",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Before processing using new technologies that create a high risk, assess the impact of the proposed processing on data protection, including the cases in Art. 21(2)(a)-(b) (systematic automated evaluation with legal or significant effects, and large volumes of sensitive data); the assessment must cover the minimum content in Art. 21(3)(a)-(d), be coordinated with the DPO, and be reviewed periodically (Art. 21(5), (7)).",
+   "applies_from": "from 2 January 2022 (Art. 31)",
+   "conditional_on": "use of new technologies creating a high risk, or the cases in Art. 21(2)",
+   "evidence": {
+    "provision": "Art. 21(1)",
+    "quote": "يجب على المتحكم قبل القيام بإجراء المعالجة، أن يقوم"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Office prepares and publishes on its website a list of types of processing that do not require a data protection impact assessment (Art. 21(6)).",
+   "applies_from": "from 2 January 2022 (Art. 31)",
+   "evidence": {
+    "provision": "Art. 21(6)",
+    "quote": "على المكتب إعداد قائمة بنوع عمليات المعالجة غير الملزمة بتقييم أثر حماية البيانات الشخصية"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_controller",
+   "also_addressees": [
+    "data_processor"
+   ],
+   "modality": "may",
+   "summary": "Personal data may be transferred outside the State in the cases approved by the Office: where the destination has data protection legislation with the listed provisions and enforcement mechanisms, or where the State has joined bilateral or multilateral data protection agreements with the destination states (Art. 22(1)-(2)).",
+   "applies_from": "from 2 January 2022 (Art. 31)",
+   "conditional_on": "adequate level of protection in the destination (Art. 22)",
+   "evidence": {
+    "provision": "Art. 22",
+    "quote": "يجوز نقل البيانات الشخصية إلى خارج الدولة في الأحوال الآتية المعتمدة من المكتب"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_controller",
+   "also_addressees": [
+    "data_processor"
+   ],
+   "modality": "may",
+   "summary": "Where there is no adequate level of protection, personal data may be transferred outside the State in the cases of Art. 23(1)(a)-(f), including under a contract binding the entity abroad, with the data subject's explicit consent not contrary to public and security interests, or where necessary for a contract, legal claims, international judicial cooperation or the public interest.",
+   "applies_from": "from 2 January 2022 (Art. 31)",
+   "conditional_on": "absence of an adequate level of protection in the destination (Art. 23)",
+   "evidence": {
+    "provision": "Art. 23(1)(a)",
+    "quote": "يجوز للمنشآت العاملة في الدولة وفي تلك الدول أن"
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The executive regulation sets the controls and requirements for the cross-border transfer cases in Art. 23(1).",
+   "applies_from": "from issue of the executive regulation",
+   "conditional_on": "issue of the executive regulation",
+   "evidence": {
+    "provision": "Art. 23(2)",
+    "quote": "تحدد اللائحة التنفيذية لهذا المرسوم بقانون الضوابط والاشتراطات للحالات"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "may",
+   "summary": "The Office may exempt, in whole or in part, establishments that do not process large volumes of personal data from the requirements of the decree-law, according to standards set by the executive regulation (Art. 3).",
+   "applies_from": "from 2 January 2022 (Art. 31)",
+   "conditional_on": "criteria set by the executive regulation",
+   "evidence": {
+    "provision": "Art. 3",
+    "quote": "يكون للمكتب إعفاء بعض المنشآت التي لا تقوم بمعالجة حجم كبير من البيانات الشخصية"
+   }
+  },
+  {
+   "type": "complaint_mechanism",
+   "addressee": "regulator",
+   "modality": "shall",
+   "summary": "The Office receives complaints from data subjects about alleged violations, verifies them in coordination with the controller and processor, and may impose the administrative sanctions in Art. 26 where a violation is established (Art. 24(2)-(3)).",
+   "applies_from": "from 2 January 2022 (Art. 31)",
+   "conditional_on": "complaint by the data subject",
+   "evidence": {
+    "provision": "Art. 24(2)",
+    "quote": "يتولى المكتب استلام الشكاوى المقدمة من صاحب البيانات"
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "government_agency",
+   "modality": "may",
+   "summary": "The Council of Ministers, on the Office Director General's proposal, may delegate to competent local government bodies, within their local jurisdiction, some of the Office's powers under the decree-law (Art. 27).",
+   "applies_from": "from 2 January 2022 (Art. 31)",
+   "conditional_on": "proposal by the Office Director General",
+   "evidence": {
+    "provision": "Art. 27",
+    "quote": "تفويض أيّ من الجهات الحكومية المحلية المختصة"
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Council of Ministers, on the Office Director General's proposal, issues the executive regulation of the decree-law within 6 months of its issue (Art. 28).",
+   "applies_from": "within 6 months from the date of issue of the decree-law (Art. 28)",
+   "conditional_on": "proposal by the Office Director General",
+   "evidence": {
+    "provision": "Art. 28",
+    "quote": "اللائحة التنفيذية لهذا المرسوم بقانون، وذلك"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_controller",
+   "also_addressees": [
+    "data_processor"
+   ],
+   "modality": "shall",
+   "summary": "Controllers and processors must bring their position into conformity with the decree-law within a period not exceeding 6 months from the issue of the executive regulation; the Council of Ministers may extend this period for a similar period (Art. 29).",
+   "applies_from": "within 6 months from the date of issue of the executive regulation (Art. 29)",
+   "conditional_on": "issue of the executive regulation",
+   "evidence": {
+    "provision": "Art. 29",
+    "quote": "على المتحكم والمعالج توفيق أوضاعهما بما يتفق وأحكام هذا المرسوم بقانون"
+   }
+  }
+ ],
+ "enforcement": [
+  {
+   "sanction_type": "administrative_fine",
+   "authority": "Council of Ministers (on the proposal of the Director General of the Office), with the Office imposing the sanctions (Art. 24(3), Art. 9(4))",
+   "triggered_by": "Violation of the Decree-Law or its executive regulation, or of decisions issued under it, as determined by a Council of Ministers decision (Art. 26); the Office may impose them after a complaint or breach notification (Art. 24(3), Art. 9(4))",
+   "max_penalty_text": "Not stated in this text. Art. 26 leaves both the prohibited acts and the administrative sanctions to a Council of Ministers decision.",
+   "penalty_reference": "Art. 26; Art. 24(3); Art. 9(4)",
+   "cure_period": "No cure period is stated for the administrative sanctions. Art. 29 gives controllers and processors 6 months from the issue of the executive regulation to align their status, extendable by the Council of Ministers.",
+   "evidence": {
+    "provision": "Art. 26",
+    "quote": "والجزاءات الإدارية التي يتم توقيعها"
+   }
+  }
+ ],
+ "section_status": {}
+}

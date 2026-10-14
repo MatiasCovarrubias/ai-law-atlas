@@ -1,0 +1,186 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "uy-crr691-2025-ai-sexual-content",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "vamosuruguay.com.uy (party site) copy of the Cámara de Representantes Repartido Nº 346 (unofficial copy)",
+  "url": "https://vamosuruguay.com.uy/PDF/proyectodeley/2025/Gabriel%20Gurmendez/Proyecto%20de%20Ley%20Manipluaci%C3%B3n%20o%20Generaci%C3%B3n%20de%20Im%C3%A1genes%20Sexuales%20Falsas.pdf",
+  "retrieved": "2026-10-14",
+  "version": "Bill as introduced: Carpeta Nº 691 de 2025, Repartido Nº 346 (July 2025), with exposición de motivos",
+  "language": "es",
+  "extent": "full",
+  "note": "parlamento.gub.uy returns 403 to scripts and WebFetch, so the text approved by the Chamber (reported 2025-12-17) and any committee changes could not be retrieved; this is the introduced text in the parliament's repartido format."
+ },
+ "classification": {
+  "domains": [
+   "synthetic_media_deepfakes",
+   "online_safety_content",
+   "minors_child_safety"
+  ],
+  "primary_domain": "synthetic_media_deepfakes",
+  "mechanisms": [
+   "prohibition_ban",
+   "mandate_obligation"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "general_public",
+   "platform_operator",
+   "search_engine_operator"
+  ],
+  "affected_roles": [
+   "minors"
+  ],
+  "decision_margins": [
+   "household:data_privacy",
+   "firm:compliance_process"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national"
+   ],
+   "description": "Amends a national criminal statute (Ley Nº 19.580); the text contains no explicit territorial clause.",
+   "evidence": {
+    "provision": "Artículo único",
+    "quote": "Sustitúyese el artículo 92 de la Ley Nº 19.580"
+   }
+  },
+  "agora_harms": [
+   "Detrimental content",
+   "Violation of civil or human rights, including privacy"
+  ],
+  "agora_incentives": [
+   "Criminal liability",
+   "Imprisonment"
+  ],
+  "agora_risk_factors": [
+   "Security: Dissemination"
+  ]
+ },
+ "summary": {
+  "short": "Proposed bill amending Article 92 of Uruguay's Law No. 19.580 to penalise unauthorised disclosure of real or AI-simulated intimate images or recordings, with six months to two years' imprisonment. Website, portal and search-engine administrators must remove such content immediately once notified, under the same penalty; no start date stated.",
+  "long": "Single-article bill (Carpeta 691/2025, July 2025) replacing Article 92 of Law No. 19.580. Paragraph 1 criminalises whoever disseminates, discloses, exhibits or transfers to third parties real or simulated images or recordings of a person with intimate or sexual content without authorisation, punishable by six months to two years' imprisonment ('prisión' to 'penitenciaría'). Paragraph 2 defines simulated images as those created by artificial intelligence, digital editing or other technology producing a false but credible representation of a person's appearance, voice or conduct. Paragraph 3 states that authorisation given by a person under eighteen is never valid, and that the offence applies even if the disseminator took part in the recordings. Paragraph 4 applies the same penalty to administrators of websites, portals, search engines or similar services who, once notified of the lack of authorisation, do not remove the images immediately. The explanatory memorandum cites deepfake abuse mainly affecting women and minors and foreign measures; it says the bill would also penalise creation and modification, which the operative wording does not expressly cover. No entry-into-force date is stated."
+ },
+ "relations": [
+  {
+   "relation": "amends",
+   "target_text": "Ley Nº 19.580, de 22 de diciembre de 2017 (art. 92, replaced)",
+   "note": "The bill replaces art. 92 of Ley 19.580 with a new text on disclosure of real or simulated intimate images. Target instrument is not in the registry, so target_instrument_id is left empty.",
+   "evidence": {
+    "provision": "Artículo único",
+    "quote": "Sustitúyese el artículo 92 de la Ley Nº 19.580"
+   }
+  }
+ ],
+ "notes": "Single-article bill (Artículo único), Carpeta Nº 691/2025, Repartido Nº 346, July 2025, as submitted; not a consolidated text. The registry title's reference to 'violencia hacia las mujeres basada en género' does not appear in the bill text; the document is authoritative. Internal points: the exposición de motivos describes 'mínimos cambios' to the existing law, while the replacement article adds a definition of simulated images and a liability clause for site administrators. The administrator clause refers back to the same article for its penalty ('la misma pena prevista en este artículo'). The text states no penalty amounts beyond the prison terms in art. 92. The exposición de motivos cites the US Take It Down Act, Spain, Germany, France, Canada and the UK Online Safety Act as comparators only; these are not coded as relations. Site administrators, portals and search engines are addressees as a class, not named entities.",
+ "events": [
+  {
+   "event": "proposed",
+   "date": "2025-07-04",
+   "date_type": "absolute",
+   "date_text": "Montevideo, 4 de julio de 2025",
+   "applies_to": "Bill text (Proyecto de ley) signed by the proposing representative",
+   "evidence": {
+    "provision": "Proyecto de ley, signature block",
+    "quote": "Montevideo, 4 de julio de 2025"
+   }
+  },
+  {
+   "event": "introduced",
+   "date": "2025-07",
+   "date_type": "absolute",
+   "date_text": "Repartido Nº 346 Julio de 2025",
+   "applies_to": "Cámara de Representantes, Comisión Especial de Equidad y Género, Carpeta Nº 691 de 2025",
+   "evidence": {
+    "provision": "Cover page, Repartido Nº 346",
+    "quote": "Julio de 2025"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "age",
+   "variable_text": "edad de la persona que otorga la autorización",
+   "operator": "<",
+   "value": 18,
+   "value_text": "menor de dieciocho años de edad",
+   "unit": "years",
+   "measurement": "age of the person who gives the authorization to disseminate the images or recordings",
+   "level": "person",
+   "trigger": "eligibility",
+   "consequence": "Authorization given by a person under 18 is never considered valid",
+   "conditions": "Applies to authorization for dissemination of real or simulated images or recordings with intimate or sexual content, under the proposed art. 92",
+   "evidence": {
+    "provision": "Artículo único (texto propuesto art. 92 Ley 19.580), inciso 3",
+    "quote": "En ningún caso se considerará válida la autorización otorgada por una persona menor de dieciocho años de edad."
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "imágenes o grabaciones simuladas",
+   "defined_in": "Artículo único (texto propuesto art. 92 Ley 19.580), inciso 2",
+   "evidence": {
+    "provision": "Artículo único (texto propuesto art. 92 Ley 19.580), inciso 2",
+    "quote": "Se entiende por imágenes o grabaciones simuladas aquellas que, de manera verosímil, mediante inteligencia artificial, edición digital u otra tecnología que produzca una representación falsa pero creíble en apariencia, voz o conducta de la persona afectada."
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "content_moderation",
+   "addressee": "platform_operator",
+   "also_addressees": [
+    "search_engine_operator"
+   ],
+   "modality": "shall",
+   "summary": "Administrators of internet sites, portals, search engines or similar services, once notified of the lack of authorization, must take down the images or recordings immediately. The same article's fourth paragraph attaches a criminal sanction to failure to do so, which is recorded here only as the duty's trigger, not as a separate enforcement entry. The bill's other operative provisions (the offence in the first paragraph, the definition of simulated images, and the rule that consent given by a person under eighteen is not valid) are not coded as obligations.",
+   "applies_from": "not stated",
+   "conditional_on": "notification of the lack of authorization",
+   "evidence": {
+    "provision": "Artículo único (sustituye Ley Nº 19.580, Art. 92, último párrafo)",
+    "quote": "no den de baja las imágenes de manera inmediata"
+   }
+  }
+ ],
+ "enforcement": [
+  {
+   "sanction_type": "criminal_penalty",
+   "authority": "not stated in the text",
+   "triggered_by": "Disseminating, revealing, displaying or transferring to third parties real or simulated images or recordings with intimate or sexual content of a person, without their authorization",
+   "max_penalty_text": "seis meses de prisión a dos años de penitenciaría",
+   "penalty_reference": "Ley 19.580, Art. 92 as substituted by the bill's single article",
+   "cure_period": "not stated",
+   "evidence": {
+    "provision": "Artículo único (sustitúyese el artículo 92 de la Ley Nº 19.580)",
+    "quote": "será castigado con una pena de seis meses de prisión a dos años de penitenciaría"
+   }
+  },
+  {
+   "sanction_type": "criminal_penalty",
+   "authority": "not stated in the text",
+   "triggered_by": "Administrators of websites, portals, search engines or similar which, having been notified of the lack of authorization, do not remove the images immediately",
+   "max_penalty_text": "la misma pena prevista en este artículo (six months to two years of penitenciaría)",
+   "penalty_reference": "Ley 19.580, Art. 92 as substituted by the bill's single article (same penalty as the principal offence)",
+   "cure_period": "not stated",
+   "evidence": {
+    "provision": "Artículo único (sustitúyese el artículo 92 de la Ley Nº 19.580)",
+    "quote": "serán sancionados con la misma pena prevista en este artículo"
+   }
+  }
+ ],
+ "section_status": {
+  "entities": {
+   "status": "not_found",
+   "note": "No named firms, facilities or public bodies. The addressees are described by class (administrators of websites, portals, search engines or similar) and no authority is designated or empowered."
+  }
+ },
+ "entities": []
+}

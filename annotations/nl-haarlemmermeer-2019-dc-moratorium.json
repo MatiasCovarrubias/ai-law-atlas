@@ -1,0 +1,226 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "nl-haarlemmermeer-2019-dc-moratorium",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (connectors/fetch_texts.py)",
+  "url": "https://zoek.officielebekendmakingen.nl/gmb-2019-181101.pdf",
+  "retrieved": "2026-10-13",
+  "version": "Gemeenteblad 2019, 181101 (22 July 2019): kennisgeving (publication notice) of raadsbesluit 11 July 2019 no. 2019.0032954",
+  "language": "nl",
+  "extent": "partial",
+  "note": "Checked 2026-10-14: this is the official publication notice summarising the voorbereidingsbesluit (whole municipality, one year, bouwvergunningen aangehouden, gebruikswijziging verboden), not the besluit text itself. The besluit and verbeelding (plan ID NL.IMRO.0394.VBBdatac2019-C001) were on ruimtelijkeplannen.nl, whose /documents/ paths now 404 after the switch to the Omgevingswet DSO; not found on planviewer.nl (403) or the Haarlemmermeer iBabs council portal."
+ },
+ "classification": {
+  "domains": [
+   "compute_data_centers"
+  ],
+  "primary_domain": "compute_data_centers",
+  "mechanisms": [
+   "moratorium_pause",
+   "prohibition_ban"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "government_agency",
+   "data_center_owner"
+  ],
+  "affected_roles": [
+   "data_center_operator",
+   "data_center_occupant"
+  ],
+  "decision_margins": [
+   "firm:entry_market_access",
+   "firm:investment_location"
+  ],
+  "territorial_scope": {
+   "types": [
+    "municipal"
+   ],
+   "description": "Applies to the entire municipal territory of Haarlemmermeer as shown on the attached map.",
+   "evidence": {
+    "provision": "Voorbereidingsbesluit Datacenters, first paragraph (raadsbesluit 11 juli 2019)",
+    "quote": "voor het gehele grondgebied van de gemeente Haarlemmermeer"
+   }
+  }
+ },
+ "summary": {
+  "short": "Municipal moratorium (voorbereidingsbesluit) adopted by Haarlemmermeer council on 11 July 2019, in force from the day after adoption for one year. Across the whole municipality it holds data-centre building permit applications and prohibits changing land or building use while a new zoning plan is prepared.",
+  "long": "The Haarlemmermeer municipal council decided on 11 July 2019 to declare a preparatory decision (voorbereidingsbesluit) for the entire municipal territory, as shown on the attached map, and a new zoning plan (bestemmingsplan) is to be prepared. The decision took effect the day after the council adopted it and applies for one year. Its stated purpose is to put the existing situation regarding data centres 'on hold' pending future data-centre policy. Under the Wet algemene bepaling omgevingsrecht, building permit applications for the activity 'bouwen' must be held, and the council prohibited changing the use of land and/or buildings. The text says the same measure was adopted by Amsterdam on the same date, as most data-centre establishment and new applications occur in those two municipalities. The decision and map can be consulted on the ruimtelijkeplannen.nl and municipal websites and at the town hall in Hoofddorp. The text states that no objection or appeal is possible against the decision. No penalties, exemptions or numeric thresholds are stated."
+ },
+ "relations": [
+  {
+   "relation": "cross_references",
+   "target_text": "Wet algemene bepaling omgevingsrecht",
+   "note": "The text states that under this Act building-permit applications for the activity of building must be held in abeyance while the moratorium applies. The text does not name it as the legal basis of the preparatory decision.",
+   "evidence": {
+    "provision": "Body, para. 3",
+    "quote": "Op grond van de Wet algemene bepaling omgevingsrecht"
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "Gemeenteraad van de gemeente Haarlemmermeer",
+   "role": "designated",
+   "function": "Decided at its meeting of 11 July 2019 (no. 2019.0032954) to declare that a new bestemmingsplan is to be prepared for the whole municipal territory, and determined that changing land use and buildings is prohibited.",
+   "evidence": {
+    "provision": "Body, para. 1",
+    "quote": "besloten heeft te verklaren dat voor het gehele"
+   }
+  },
+  {
+   "name": "Burgemeester en wethouders van de gemeente Haarlemmermeer",
+   "role": "designated",
+   "function": "Published (bekend gemaakt) the council's preparatory decision and made the documents available for inspection at the town hall in Hoofddorp.",
+   "evidence": {
+    "provision": "Body, para. 1",
+    "quote": "Burgemeester en wethouders van de gemeente Haarlemmermeer maken bekend"
+   }
+  }
+ ],
+ "notes": "The document is a Gemeenteblad notice of a council preparatory decision (voorbereidingsbesluit) covering the whole municipal territory; the decision text itself is not included. The stated duration is one year (para. 2: 'geldt voor de periode van één jaar'). The text gives no repeal or end date, so the 'repealed' status comes from registry metadata only. The text does not name the enabling provision of the preparatory decision. Para. 4 says that changing 'de gronden en of bouwwerken' is prohibited; the 'en of' wording is unclear. Para. 4 also contains a garbled sentence on the plan identification number and website. Para. 2 says Amsterdam's council took a parallel preparatory decision on 11 July 2019; no relation is coded because the text does not identify that instrument. Para. 6 states that no objection or appeal is possible against this decision.",
+ "events": [
+  {
+   "event": "adopted",
+   "date": "2019-07-11",
+   "date_type": "absolute",
+   "date_text": "in zijn vergadering van 11 juli 2019",
+   "applies_to": "voorbereidingsbesluit datacenters (gemeenteraad decision)",
+   "evidence": {
+    "provision": "Gemeenteblad 2019 nr. 181101, opening paragraph",
+    "quote": "de raad in zijn vergadering van 11 juli 2019 no. 2019.0032954 besloten heeft te verklaren"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2019-07-12",
+   "date_type": "relative",
+   "date_text": "daags nadat de gemeenteraad het besluit heeft genomen",
+   "anchor": "adoption by gemeenteraad on 2019-07-11",
+   "applies_to": "voorbereidingsbesluit datacenters",
+   "offset_value": 1,
+   "offset_unit": "days",
+   "anchor_event": "adopted",
+   "evidence": {
+    "provision": "Gemeenteblad 2019 nr. 181101, paragraph 2",
+    "quote": "Het voorbereidingsbesluit is in werking getreden daags nadat de gemeenteraad het besluit heeft genomen"
+   },
+   "date_computed_from": "adopted 2019-07-11 (text) + 1 days"
+  },
+  {
+   "event": "application",
+   "date": "2019-07-12",
+   "date_type": "relative",
+   "date_text": "in het besluit tevens bepaald dat het verboden is het gebruik van de gronden en of bouwwerken te wijzigen",
+   "anchor": "entry into force of the voorbereidingsbesluit",
+   "applies_to": "prohibition on changing use of land and buildings in the municipality; building permit applications for building activity held in abeyance",
+   "offset_value": 0,
+   "offset_unit": "days",
+   "anchor_event": "entry_into_force",
+   "evidence": {
+    "provision": "Gemeenteblad 2019 nr. 181101, paragraph 3",
+    "quote": "het verboden is het gebruik van de gronden en of bouwwerken te wijzigen"
+   },
+   "date_computed_from": "entry_into_force 2019-07-12 (computed) + 0 days"
+  },
+  {
+   "event": "expiry",
+   "date": "2020-07-12",
+   "date_type": "relative",
+   "date_text": "geldt voor de periode van één jaar",
+   "anchor": "entry into force of the voorbereidingsbesluit",
+   "applies_to": "voorbereidingsbesluit datacenters",
+   "offset_value": 1,
+   "offset_unit": "years",
+   "anchor_event": "entry_into_force",
+   "evidence": {
+    "provision": "Gemeenteblad 2019 nr. 181101, paragraph 2",
+    "quote": "geldt voor de periode van één jaar"
+   },
+   "date_computed_from": "entry_into_force 2019-07-12 (computed) + 1 years"
+  },
+  {
+   "event": "published",
+   "date": "2019-07-22",
+   "date_type": "absolute",
+   "date_text": "Hoofddorp, 22 juli 2019",
+   "applies_to": "announcement of the voorbereidingsbesluit by burgemeester en wethouders (Gemeenteblad 2019 nr. 181101)",
+   "evidence": {
+    "provision": "Gemeenteblad 2019 nr. 181101, closing dateline",
+    "quote": "Hoofddorp, 22 juli 2019"
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The municipal council declares that a new zoning plan (bestemmingsplan) is to be prepared for the whole municipal territory, as a preparatory measure for data-centre policy.",
+   "applies_from": "the day after the council adopted the decision",
+   "evidence": {
+    "provision": "Voorbereidingsbesluit, para. 1 (opening paragraph)",
+    "quote": "een nieuw bestemmingsplan wordt voorbereid [a new zoning plan is being prepared]"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Environmental permits for the building activity must be held in abeyance (aangehouden) under the Omgevingswet-based rules cited in the decision. The duty is stated passively and is directed at the permit-granting authority.",
+   "applies_from": "the day after the council adopted the decision, for one year",
+   "evidence": {
+    "provision": "Voorbereidingsbesluit, para. 4",
+    "quote": "dienen omgevingsvergunningen voor de activiteit bouwen te worden aangehouden [environmental permits for the building activity must be held in abeyance]"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "general_public",
+   "modality": "shall_not",
+   "summary": "The council prohibits changing the use of the land and/or of buildings in the municipality during the preparatory period; the text does not name a specific addressee group.",
+   "applies_from": "the day after the council adopted the decision, for one year",
+   "evidence": {
+    "provision": "Voorbereidingsbesluit, para. 4",
+    "quote": "het verboden is het gebruik van de gronden en of bouwwerken te wijzigen [it is prohibited to change the use of the land and/or buildings]"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The municipality makes the decision and its documents available for inspection at the town hall in Hoofddorp, by appointment, for the full duration of the preparatory decision.",
+   "applies_from": "during the one-year period of the preparatory decision",
+   "conditional_on": "by appointment",
+   "evidence": {
+    "provision": "Voorbereidingsbesluit, para. 6",
+    "quote": "Voorts liggen de stukken ter inzage in het raadhuis in Hoofddorp. [the documents are also available for inspection at the town hall in Hoofddorp]"
+   }
+  }
+ ],
+ "section_status": {
+  "thresholds": {
+   "status": "not_found",
+   "note": "The text sets no numeric cutoff that changes legal treatment. It covers the whole municipal territory (gehele grondgebied) for one year (één jaar), which describes scope in place and duration rather than a threshold. Procedural dates (publication, inspection hours) are not coded."
+  },
+  "definitions": {
+   "status": "not_found",
+   "note": "The text does not define 'datacenters' or any other term determining scope. The preparatory decision (voorbereidingsbesluit) covers all of the municipality's territory and the term 'datacenters' is used without a definition."
+  },
+  "enforcement": {
+   "status": "not_found",
+   "note": "The text states a prohibition on changing the use of land and buildings (\"verboden het gebruik van de gronden en of bouwwerken te wijzigen\") and a permit-holding duty under the Wet algemene bepaling omgevingsrecht, but states no fine, penalty, criminal sanction, licence revocation, clawback, suspension or blocking. It also states that objection and appeal are not possible, which is not a sanction regime. No enforcement regime is found in this text."
+  }
+ },
+ "thresholds": [],
+ "enforcement": [],
+ "definitions": []
+}

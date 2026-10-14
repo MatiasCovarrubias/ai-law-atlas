@@ -1,0 +1,646 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "us-ca-ab2655-2024",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (Claude Code retrieval)",
+  "url": "https://downloads.leginfo.legislature.ca.gov/pubinfo_2023.zip#BILL_VERSION_TBL_19800.lob",
+  "retrieved": "2026-10-14",
+  "version": "Chaptered (Chapter 261, Statutes of 2024), version 20230AB265589CHP",
+  "language": "en",
+  "extent": "full",
+  "note": "leginfo.legislature.ca.gov is behind a Cloudflare challenge; text taken from the Legislative Counsel's official pubinfo database export (CAML XML of the chaptered version), converted to plain text including the Legislative Counsel's Digest."
+ },
+ "classification": {
+  "domains": [
+   "elections_political_ads",
+   "synthetic_media_deepfakes",
+   "online_safety_content"
+  ],
+  "primary_domain": "elections_political_ads",
+  "mechanisms": [
+   "mandate_obligation",
+   "disclosure_transparency",
+   "liability_rule"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "platform_operator",
+   "advertiser_campaign"
+  ],
+  "affected_roles": [
+   "consumers_users",
+   "general_public"
+  ],
+  "decision_margins": [
+   "firm:compliance_process",
+   "firm:product_design_release",
+   "household:information"
+  ],
+  "territorial_scope": {
+   "types": [
+    "subnational",
+    "extraterritorial"
+   ],
+   "description": "Applies to platforms defined by at least 1,000,000 California users, not by where they are based, and to content concerning elections in California; the text does not state where platforms must be located.",
+   "evidence": {
+    "provision": "Sec. 3 (adding Elections Code § 20512(h))",
+    "quote": "had at least 1,000,000 California users during the preceding 12 months"
+   }
+  },
+  "agora_applications": [
+   "Broadcasting and media production"
+  ],
+  "agora_harms": [
+   "Detrimental content"
+  ],
+  "agora_incentives": [
+   "Civil liability"
+  ],
+  "agora_risk_factors": [
+   "Security: Dissemination"
+  ],
+  "agora_strategies": [
+   "Disclosure: In deployment"
+  ]
+ },
+ "summary": {
+  "short": "Requires large online platforms to remove or label materially deceptive election deepfakes and to run a reporting process for Californians, during periods before and after California elections. Allows candidates, officials and prosecutors to seek injunctive relief against platforms.",
+  "long": "Adds Chapter 7 (Defending Democracy from Deepfake Deception Act of 2024) to the Elections Code and amends Code of Civil Procedure § 35 to give precedence to actions under it. Covers large online platforms (public-facing websites, apps or search engines with at least 1,000,000 California users in the preceding 12 months) and audio or visual materially deceptive content, including deepfakes and chatbot output. Platforms must use state-of-the-art techniques to remove, within 72 hours of a report, deceptive content depicting candidates, elections officials or elected officials, from 120 days before a California election through election day (60 days after for elections-official content). A candidate may avoid removal of self-portrayals by including a 'manipulated' disclosure. Platforms must label other deceptive election content, within 72 hours of a report, from six months before an election. They must provide a reporting channel for California residents and respond within 36 hours. Candidates, elected and elections officials, the Attorney General, and district or city attorneys may seek injunctive relief. Newspapers, broadcasting stations and satire or parody are exempt. The text sets no fines."
+ },
+ "relations": [
+  {
+   "relation": "amends",
+   "target_text": "Code of Civil Procedure § 35",
+   "note": "Amends § 35 in four alternative versions (SEC. 1, 1.5, 2, 2.5). SEC. 4 and 5 set which version becomes operative depending on AB 2839.",
+   "evidence": {
+    "provision": "SEC. 1",
+    "quote": "Section 35 of the Code of Civil Procedure, as amended by Section 1 of Chapter 343 of the Statutes of 2023, is amended to read:"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Chapter 343 of the Statutes of 2023 (base text of Code of Civil Procedure § 35)",
+   "note": "The amended section is described as amended by Chapter 343. The base version is not separately annotated.",
+   "evidence": {
+    "provision": "SEC. 1",
+    "quote": "as amended by Section 1 of Chapter 343 of the Statutes of 2023"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Assembly Bill 2839",
+   "note": "Incorporation and operative-date conditions for SEC. 1.5 and 2.5 depend on AB 2839 being enacted and also amending Code of Civil Procedure § 35.",
+   "evidence": {
+    "provision": "SEC. 4",
+    "quote": "Section 1.5 of this bill incorporates amendments to Section 35 of the Code of Civil Procedure that are proposed by this bill and Assembly Bill 2839."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Elections Code §§ 320, 359.5, 20010, 20012, 21100 (other Elections Code provisions)",
+   "note": "Section 320 defines elections official, 359.5 defines voter-nominated office. 20010, 20012 and Chapter 2 of Division 21 (from 21100) are actions given precedence under CCP § 35.",
+   "evidence": {
+    "provision": "SEC. 3 (Elections Code § 20512(c))",
+    "quote": "any person running for a voter-nominated office as defined in Section 359.5"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Business and Professions Code § 22675",
+   "note": "Social media platform definition used in the definition of large online platform.",
+   "evidence": {
+    "provision": "SEC. 3 (Elections Code § 20512(h))",
+    "quote": "including a social media platform as defined in Section 22675 of the Business and Professions Code"
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "Attorney General",
+   "role": "designated",
+   "function": "May seek injunctive or other equitable relief against a large online platform to compel removal or labeling of specific content, or compliance with the reporting process (Elections Code § 20516).",
+   "evidence": {
+    "provision": "SEC. 3 (Elections Code § 20516)",
+    "quote": "The Attorney General or any district attorney or city attorney may seek injunctive or other equitable relief against any large online platform"
+   }
+  },
+  {
+   "name": "District attorney",
+   "role": "designated",
+   "function": "May seek injunctive or other equitable relief against a large online platform to compel removal or labeling of specific content, or compliance with the reporting process (Elections Code § 20516).",
+   "evidence": {
+    "provision": "SEC. 3 (Elections Code § 20516)",
+    "quote": "The Attorney General or any district attorney or city attorney may seek injunctive or other equitable relief against any large online platform"
+   }
+  },
+  {
+   "name": "City attorney",
+   "role": "designated",
+   "function": "May seek injunctive or other equitable relief against a large online platform to compel removal or labeling of specific content, or compliance with the reporting process (Elections Code § 20516).",
+   "evidence": {
+    "provision": "SEC. 3 (Elections Code § 20516)",
+    "quote": "The Attorney General or any district attorney or city attorney may seek injunctive or other equitable relief against any large online platform"
+   }
+  },
+  {
+   "name": "Secretary of State",
+   "role": "listed",
+   "function": "Included in the definition of elections official acting in official capacity (Elections Code § 20512(g)(2)).",
+   "evidence": {
+    "provision": "SEC. 3 (Elections Code § 20512(g)(2))",
+    "quote": "(2) The Secretary of State."
+   }
+  },
+  {
+   "name": "Elections official (as defined in Elections Code § 320)",
+   "role": "designated",
+   "function": "May seek injunctive or other equitable relief against a large online platform after reporting content (Elections Code § 20515(b)). Also named in the prohibition on portrayals of elections officials (§ 20513(a)(2)(B)).",
+   "evidence": {
+    "provision": "SEC. 3 (Elections Code § 20515(b))",
+    "quote": "A candidate for elective office, elected official, or elections official who has made a report to a large online platform under subdivision (a)"
+   }
+  }
+ ],
+ "notes": "The registry status 'repealed' is not stated in this text, which contains no repeal clause of its own. CCP § 35(b) in SEC. 1 and 1.5 says the section is repealed on January 1, 2027 unless extended; SEC. 2 and 2.5 become operative January 1, 2027. The new Elections Code chapter has no sunset in the text. Four alternative versions of CCP § 35 exist with different precedence lists (SEC. 1.5 adds 20010 and 20012; SEC. 2 omits 20010 and 20012; SEC. 2.5 lists only 20012). SEC. 4 and 5 determine which version operates, so the amendments are conditional. The addressees (large online platforms) are a defined class, not named firms, so no firm entities are listed. Only relations, entities and notes are filled in this pass; the annotation is based on the chaptered text as provided.",
+ "events": [
+  {
+   "event": "signed",
+   "date": "2024-09-17",
+   "date_type": "absolute",
+   "date_text": "Chaptered 2024-09-17",
+   "applies_to": "Statutes of 2024, Chapter 261 (AB 2655) as a whole",
+   "evidence": {
+    "provision": "Header (Assembly Bill No. 2655, Chapter 261, Statutes of 2024)",
+    "quote": "Chaptered 2024-09-17"
+   }
+  },
+  {
+   "event": "sunset",
+   "date": "2027-01-01",
+   "date_type": "absolute",
+   "date_text": "shall remain in effect only until January 1, 2027, and as of that date is repealed",
+   "applies_to": "Code of Civil Procedure § 35 as amended by Sec. 1 (precedence provision)",
+   "evidence": {
+    "provision": "Sec. 1 (CCP § 35(b))",
+    "quote": "This section shall remain in effect only until January 1, 2027, and as of that date is repealed"
+   }
+  },
+  {
+   "event": "application",
+   "date": "2027-01-01",
+   "date_type": "absolute",
+   "date_text": "This section shall become operative January 1, 2027.",
+   "applies_to": "Code of Civil Procedure § 35 as amended by Sec. 2 (precedence provision)",
+   "evidence": {
+    "provision": "Sec. 2 (CCP § 35(b))",
+    "quote": "This section shall become operative January 1, 2027."
+   }
+  },
+  {
+   "event": "application",
+   "date": "2027-01-01",
+   "date_type": "absolute",
+   "date_text": "This section shall become operative January 1, 2027.",
+   "applies_to": "Code of Civil Procedure § 35 as amended by Sec. 2.5 (precedence provision)",
+   "evidence": {
+    "provision": "Sec. 2.5 (CCP § 35(b))",
+    "quote": "This section shall become operative January 1, 2027."
+   }
+  },
+  {
+   "event": "application",
+   "date": "2025-01-01",
+   "date_type": "conditional",
+   "date_text": "Section 1.5 of this bill shall only become operative if (1) both bills are enacted and become effective on or before January 1, 2025",
+   "depends_on": "Enactment of this bill and Assembly Bill 2839, both effective on or before January 1, 2025, with this bill enacted after AB 2839 (Sec. 4)",
+   "applies_to": "Code of Civil Procedure § 35 as amended by Sec. 1.5 (precedence provision); Sec. 1 not operative in that case; AB 2839 version of § 35 remains operative only until January 1, 2025",
+   "evidence": {
+    "provision": "Sec. 4",
+    "quote": "Section 1.5 of this bill shall only become operative if (1) both bills are enacted and become effective on or before January 1, 2025"
+   }
+  },
+  {
+   "event": "application",
+   "date": "2025-01-01",
+   "date_type": "conditional",
+   "date_text": "Section 2.5 of this bill shall only become operative if (1) both bills are enacted and become effective on or before January 1, 2025",
+   "depends_on": "Enactment of this bill and Assembly Bill 2839, both effective on or before January 1, 2025, with this bill enacted after AB 2839 (Sec. 5)",
+   "applies_to": "Code of Civil Procedure § 35 as amended by Sec. 2.5 (precedence provision); Sec. 2 not operative in that case; AB 2839 version of § 35 remains operative only until January 1, 2025",
+   "evidence": {
+    "provision": "Sec. 5",
+    "quote": "Section 2.5 of this bill shall only become operative if (1) both bills are enacted and become effective on or before January 1, 2025"
+   }
+  },
+  {
+   "event": "application",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "during a period beginning 120 days before an election in California and through the day of the election",
+   "depends_on": "An election in California (Elections Code § 20512(f))",
+   "applies_to": "Removal of materially deceptive content under Elections Code § 20513(a) to (c) by large online platforms, and candidate disclosure under § 20513(d)",
+   "evidence": {
+    "provision": "Sec. 3 (Elections Code § 20513(e)(1))",
+    "quote": "during a period beginning 120 days before an election in California and through the day of the election."
+   }
+  },
+  {
+   "event": "application",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "a period beginning 120 days before an election in California and ending on the 60th day after the election",
+   "depends_on": "An election in California (Elections Code § 20512(f))",
+   "applies_to": "Removal of materially deceptive content under Elections Code § 20513(a) to (c) where content depicts or pertains to elections officials",
+   "evidence": {
+    "provision": "Sec. 3 (Elections Code § 20513(e)(2))",
+    "quote": "a period beginning 120 days before an election in California and ending on the 60th day after the election"
+   }
+  },
+  {
+   "event": "application",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "The period beginning six months before an election in California and through the day of the election.",
+   "depends_on": "An election in California (Elections Code § 20512(f))",
+   "applies_to": "Labeling of materially deceptive content under Elections Code § 20514(a)",
+   "evidence": {
+    "provision": "Sec. 3 (Elections Code § 20514(e)(1))",
+    "quote": "The period beginning six months before an election in California and through the day of the election."
+   }
+  },
+  {
+   "event": "application",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "The period beginning six months before an election in California and ending on the 60th day after the election",
+   "depends_on": "An election in California (Elections Code § 20512(f))",
+   "applies_to": "Labeling under Elections Code § 20514(a) where content depicts or pertains to elections officials, the electoral college process, voting equipment, or the canvass of the vote",
+   "evidence": {
+    "provision": "Sec. 3 (Elections Code § 20514(e)(2))",
+    "quote": "The period beginning six months before an election in California and ending on the 60th day after the election"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "no later than 72 hours after a report is made pursuant to subdivision (a) of Section 20515",
+   "anchor": "report made pursuant to Section 20515(a)",
+   "depends_on": "Report made under Elections Code § 20515(a)",
+   "applies_to": "Removal under Elections Code § 20513(b) and labeling under § 20514(b)",
+   "evidence": {
+    "provision": "Sec. 3 (Elections Code § 20513(b))",
+    "quote": "no later than 72 hours after a report is made pursuant to subdivision (a) of Section 20515"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "shall respond to the person who made the report within 36 hours of the report",
+   "anchor": "report made pursuant to Section 20515(a)",
+   "depends_on": "Report made under Elections Code § 20515(a)",
+   "applies_to": "Large online platform response to the person who made the report under Elections Code § 20515(a)",
+   "evidence": {
+    "provision": "Sec. 3 (Elections Code § 20515(a))",
+    "quote": "shall respond to the person who made the report within 36 hours of the report"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "who either has not received a response within 36 hours or disagrees with the response, action taken, or failure by the large online platform to take action within 72 hours",
+   "anchor": "report made pursuant to Section 20515(a)",
+   "depends_on": "Report made under Elections Code § 20515(a) with no response within 36 hours or disagreement with the response",
+   "applies_to": "Candidate, elected official or elections official seeking injunctive or equitable relief under Elections Code § 20515(b)",
+   "evidence": {
+    "provision": "Sec. 3 (Elections Code § 20515(b))",
+    "quote": "disagrees with the response, action taken, or failure by the large online platform to take action within 72 hours"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "other",
+   "variable_text": "California users of a platform during the preceding 12 months",
+   "operator": ">=",
+   "value": 1000000,
+   "value_text": "at least 1,000,000 California users during the preceding 12 months",
+   "unit": "users",
+   "measurement": "California users counted over the preceding 12 months",
+   "level": "service",
+   "trigger": "scope_definition",
+   "consequence": "Platform qualifies as a large online platform subject to the Chapter 7 duties",
+   "conditions": "Public-facing internet website, web application or digital application, including social media platform, video sharing platform, advertising network or search engine",
+   "evidence": {
+    "provision": "SEC. 3 (adding Elections Code § 20512(h))",
+    "quote": "that had at least 1,000,000 California users during the preceding 12 months"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "days before an election in California (start of removal window)",
+   "operator": "<=",
+   "value": 120,
+   "value_text": "a period beginning 120 days before an election in California and through the day of the election",
+   "unit": "days",
+   "measurement": "Calendar days counted back from election day, running through the day of the election",
+   "level": "other",
+   "trigger": "scope_definition",
+   "consequence": "Removal duties under Elections Code § 20513(a) to (c) apply during this window",
+   "conditions": "Content meets the materially deceptive content conditions of § 20513(a) (candidates, elections officials or elected officials)",
+   "evidence": {
+    "provision": "SEC. 3 (adding Elections Code § 20513(e)(1))",
+    "quote": "during a period beginning 120 days before an election in California and through the day of the election."
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "days before an election in California (start of removal window for elections officials content)",
+   "operator": "<=",
+   "value": 120,
+   "value_text": "during a period beginning 120 days before an election in California and ending on the 60th day after the election",
+   "unit": "days",
+   "measurement": "Calendar days counted back from election day",
+   "level": "other",
+   "trigger": "scope_definition",
+   "consequence": "Removal duties under Elections Code § 20513(a) to (c) apply during this window",
+   "conditions": "Content depicts or pertains to elections officials",
+   "evidence": {
+    "provision": "SEC. 3 (adding Elections Code § 20513(e)(2))",
+    "quote": "during a period beginning 120 days before an election in California and ending on the 60th day after the election."
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "days after an election in California (end of removal window for elections officials content)",
+   "operator": "<=",
+   "value": 60,
+   "value_text": "ending on the 60th day after the election",
+   "unit": "days",
+   "measurement": "Calendar days counted forward from election day",
+   "level": "other",
+   "trigger": "scope_definition",
+   "consequence": "Removal duties under Elections Code § 20513(a) to (c) end at this point for elections officials content",
+   "conditions": "Content depicts or pertains to elections officials",
+   "evidence": {
+    "provision": "SEC. 3 (adding Elections Code § 20513(e)(2))",
+    "quote": "ending on the 60th day after the election"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "months before an election in California (start of labeling window)",
+   "operator": "<=",
+   "value": 6,
+   "value_text": "The period beginning six months before an election in California and through the day of the election",
+   "unit": "months",
+   "measurement": "Months counted back from election day, running through the day of the election",
+   "level": "other",
+   "trigger": "scope_definition",
+   "consequence": "Labeling duty under Elections Code § 20514(a) applies during this period",
+   "conditions": "Content within § 20514(a)(2)",
+   "evidence": {
+    "provision": "SEC. 3 (adding Elections Code § 20514(e)(1))",
+    "quote": "The period beginning six months before an election in California and through the day of the election."
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "months before an election in California (start of labeling window for elections officials and related content)",
+   "operator": "<=",
+   "value": 6,
+   "value_text": "The period beginning six months before an election in California and ending on the 60th day after the election",
+   "unit": "months",
+   "measurement": "Months counted back from election day",
+   "level": "other",
+   "trigger": "scope_definition",
+   "consequence": "Labeling duty under Elections Code § 20514(a) applies during this period",
+   "conditions": "Content depicts or pertains to elections officials, the electoral college process, a voting machine, ballot, voting site or other election equipment, or the canvass of the vote",
+   "evidence": {
+    "provision": "SEC. 3 (adding Elections Code § 20514(e)(2))",
+    "quote": "The period beginning six months before an election in California and ending on the 60th day after the election"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "days after an election in California (end of labeling window for elections officials and related content)",
+   "operator": "<=",
+   "value": 60,
+   "value_text": "and ending on the 60th day after the election, if the content depicts or pertains to elections officials",
+   "unit": "days",
+   "measurement": "Calendar days counted forward from election day",
+   "level": "other",
+   "trigger": "scope_definition",
+   "consequence": "Labeling duty under Elections Code § 20514(a) ends at this point for the listed content",
+   "conditions": "Content depicts or pertains to elections officials, the electoral college process, a voting machine, ballot, voting site or other election equipment, or the canvass of the vote",
+   "evidence": {
+    "provision": "SEC. 3 (adding Elections Code § 20514(e)(2))",
+    "quote": "and ending on the 60th day after the election, if the content depicts or pertains to elections officials"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "length of audio media (minutes)",
+   "operator": ">",
+   "value": 2,
+   "value_text": "if the audio is greater than two minutes in length",
+   "unit": "minutes",
+   "measurement": "Length of the audio media",
+   "level": "other",
+   "trigger": "obligation",
+   "consequence": "The audio disclosure must also be repeated within the audio at intervals of not greater than two minutes each",
+   "conditions": "Disclosure required for candidate portrayals under Elections Code § 20513(d) where the media is audio only",
+   "evidence": {
+    "provision": "SEC. 3 (adding Elections Code § 20513(d)(2)(B))",
+    "quote": "if the audio is greater than two minutes in length, interspersed within the audio at intervals of not greater than two minutes each."
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "Advertisement",
+   "defined_in": "Elections Code § 20512(a)",
+   "evidence": {
+    "provision": "SEC. 3 (adding Elections Code § 20512(a))",
+    "quote": "“Advertisement” means any general or public communication that a large online platform knows is authorized or paid for with the purpose of supporting or opposing a candidate for elective office."
+   }
+  },
+  {
+   "term": "Broadcasting station",
+   "defined_in": "Elections Code § 20512(b)",
+   "evidence": {
+    "provision": "SEC. 3 (adding Elections Code § 20512(b))",
+    "quote": "“Broadcasting station” means a radio or television broadcasting station, including any of the following:"
+   }
+  },
+  {
+   "term": "Candidate",
+   "defined_in": "Elections Code § 20512(c)",
+   "evidence": {
+    "provision": "SEC. 3 (adding Elections Code § 20512(c))",
+    "quote": "“Candidate” means any person running for a voter-nominated office as defined in Section 359.5"
+   }
+  },
+  {
+   "term": "Deepfake",
+   "defined_in": "Elections Code § 20512(d)",
+   "evidence": {
+    "provision": "SEC. 3 (adding Elections Code § 20512(d))",
+    "quote": "“Deepfake” means audio or visual media that is digitally created or modified such that it would falsely appear to a reasonable person to be an authentic record of the actual speech or conduct of the individual depicted in the media."
+   }
+  },
+  {
+   "term": "Election communication",
+   "defined_in": "Elections Code § 20512(e)",
+   "evidence": {
+    "provision": "SEC. 3 (adding Elections Code § 20512(e))",
+    "quote": "“Election communication” means a general or public communication that is not an “advertisement” and that concerns any of the following:"
+   }
+  },
+  {
+   "term": "Election in California",
+   "defined_in": "Elections Code § 20512(f)",
+   "evidence": {
+    "provision": "SEC. 3 (adding Elections Code § 20512(f))",
+    "quote": "“Election in California” means any election where a candidate, as defined in this section, is on the ballot, and any election where a statewide initiative or statewide referendum measure is on the ballot."
+   }
+  },
+  {
+   "term": "Elections official",
+   "defined_in": "Elections Code § 20512(g)",
+   "evidence": {
+    "provision": "SEC. 3 (adding Elections Code § 20512(g))",
+    "quote": "“Elections official” means either of the following persons acting in their official capacity:"
+   }
+  },
+  {
+   "term": "Large online platform",
+   "defined_in": "Elections Code § 20512(h)",
+   "evidence": {
+    "provision": "SEC. 3 (adding Elections Code § 20512(h))",
+    "quote": "“Large online platform” means a public-facing internet website, web application, or digital application"
+   }
+  },
+  {
+   "term": "Materially deceptive content",
+   "defined_in": "Elections Code § 20512(i)(1)",
+   "evidence": {
+    "provision": "SEC. 3 (adding Elections Code § 20512(i)(1))",
+    "quote": "“Materially deceptive content” means audio or visual media that is digitally created or modified"
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Courts must place proceedings in actions under Chapter 7 (commencing with Section 20510) of Division 20 of the Elections Code on the calendar in filing order and give them precedence (amended Code of Civil Procedure § 35(a)).",
+   "applies_from": "Sec. 1 version applies until January 1, 2027 (CCP § 35(b)); Sec. 2 version operative January 1, 2027 (CCP § 35(b))",
+   "conditional_on": "Applies to actions under Chapter 7 of Division 20 of the Elections Code, which are added to the list of precedence actions by this bill.",
+   "evidence": {
+    "provision": "Sec. 1 (amending Code of Civil Procedure § 35(a))",
+    "quote": "shall be placed on the calendar in the order of their date of filing and shall be given precedence."
+   }
+  },
+  {
+   "type": "content_moderation",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "Large online platforms must develop and implement procedures to identify and remove materially deceptive election content meeting listed conditions, remove qualifying posts within 72 hours of a report, and remove identical or substantially similar previously removed content during the applicable period.",
+   "applies_from": "Not stated in text",
+   "conditional_on": "Content reported under Section 20515(a); content posted during the period beginning 120 days before an election in California through election day (or through the 60th day after the election for content about elections officials); platform knows or acts with reckless disregard; content is about a candidate, elections official or elected official as specified.",
+   "evidence": {
+    "provision": "Elections Code § 20513(a)-(c)",
+    "quote": "Any large online platform shall develop and implement procedures for the use of state-of-the-art techniques to identify and remove materially deceptive content"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "ai_deployer",
+   "modality": "shall",
+   "summary": "Candidates for elective office must include the disclosure \"This _____ has been manipulated.\" (image, audio or video) when portraying themselves as doing or saying something they did not do or say, during the period beginning 120 days before an election through election day. Applies to candidates who publish such content; addressee role is the closest available.",
+   "applies_from": "Not stated in text",
+   "conditional_on": "Applies during the period beginning 120 days before an election in California and through the day of the election; the disclosure requirement is the condition for the exception in Section 20513(d)(1).",
+   "evidence": {
+    "provision": "Elections Code § 20513(e)(1)",
+    "quote": "any candidate for elective office shall include the disclosure required by subdivision (d)"
+   }
+  },
+  {
+   "type": "labelling_watermarking",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "Large online platforms must develop and implement procedures to identify materially deceptive content and label it \"This _____ has been manipulated and is not authentic.\" within 72 hours of a report, with a clickable explanation, for content outside the Section 20513 removal rules or within advertisements and election communications.",
+   "applies_from": "Not stated in text",
+   "conditional_on": "Content reported under Section 20515(a); content outside the period in Section 20513(e) or within an advertisement or election communication not subject to Section 20513; labelling periods in Section 20514(e) (six months before the election through election day, or the 60th day after the election for specified content).",
+   "evidence": {
+    "provision": "Elections Code § 20514(a)",
+    "quote": "Any large online platform shall develop and implement procedures for the use of state-of-the-art techniques to identify materially deceptive content and for labeling such content"
+   }
+  },
+  {
+   "type": "complaint_mechanism",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "Large online platforms must provide an easily accessible way for California residents to report content that should be removed or labelled, and must respond to the reporter within 36 hours describing action taken or not taken.",
+   "applies_from": "Not stated in text",
+   "conditional_on": "Applies to content that should be removed under Section 20513 or labelled under Section 20514.",
+   "evidence": {
+    "provision": "Elections Code § 20515(a)",
+    "quote": "A large online platform shall provide an easily accessible way for California residents to report to that platform content that should be removed pursuant to Section 20513 or labeled pursuant to Section 20514."
+   }
+  },
+  {
+   "type": "labelling_watermarking",
+   "addressee": "platform_operator",
+   "also_addressees": [
+    "ai_deployer"
+   ],
+   "modality": "shall",
+   "summary": "Where the content is not in English, the candidate disclosure under Section 20513(d) and the platform label under Section 20514 must appear in the language used as well as in English.",
+   "applies_from": "Not stated in text",
+   "conditional_on": "Applies where the language of the materially deceptive content is not English.",
+   "evidence": {
+    "provision": "Elections Code § 20517",
+    "quote": "the disclosure required by subdivision (d) of Section 20513 and the label required by Section 20514 must appear in the language used as well as in English."
+   }
+  }
+ ],
+ "enforcement": [
+  {
+   "sanction_type": "injunction_order",
+   "authority": "Courts, on action by a candidate for elective office, elected official, or elections official",
+   "triggered_by": "Platform noncompliance with the removal (Elections Code §20513), labeling (§20514), or reporting-process (§20515(a)) requirements, after a report with no response within 36 hours or a disagreement within 72 hours",
+   "max_penalty_text": "No monetary penalty or fine stated in this text; the remedy is injunctive or other equitable relief to compel removal, labeling, or compliance",
+   "private_right_of_action": true,
+   "cure_period": "No cure period stated; the action may be brought if the platform does not respond within 36 hours or disagrees with the response within 72 hours of the report",
+   "evidence": {
+    "provision": "Sec. 3 (adding Elections Code §20515(b))",
+    "quote": "may seek injunctive or other equitable relief against the large online platform to compel the removal of specific content"
+   }
+  },
+  {
+   "sanction_type": "injunction_order",
+   "authority": "Courts, on action by the Attorney General, a district attorney, or a city attorney",
+   "triggered_by": "Platform noncompliance with the removal (Elections Code §20513), labeling (§20514), or reporting-process (§20515(a)) requirements",
+   "max_penalty_text": "No monetary penalty or fine stated in this text; the remedy is injunctive or other equitable relief to compel removal, labeling, or compliance",
+   "private_right_of_action": false,
+   "cure_period": "None stated",
+   "evidence": {
+    "provision": "Sec. 3 (adding Elections Code §20516)",
+    "quote": "The Attorney General or any district attorney or city attorney may seek injunctive or other equitable relief against any large online platform"
+   }
+  }
+ ],
+ "section_status": {}
+}

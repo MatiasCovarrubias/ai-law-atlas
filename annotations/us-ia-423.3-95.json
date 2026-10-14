@@ -1,0 +1,443 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "us-ia-423.3-95",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (connectors/fetch_texts.py)",
+  "url": "https://www.legis.iowa.gov/docs/code/423.3.pdf",
+  "retrieved": "2026-10-13",
+  "version": "as fetched",
+  "language": "en",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "compute_data_centers",
+   "energy_grid_water"
+  ],
+  "primary_domain": "compute_data_centers",
+  "mechanisms": [
+   "tax_incentive",
+   "registration_notification",
+   "mandate_obligation",
+   "liability_rule"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "data_center_operator",
+   "data_center_occupant",
+   "search_engine_operator"
+  ],
+  "decision_margins": [
+   "firm:investment_location",
+   "firm:input_use",
+   "firm:compliance_process"
+  ],
+  "territorial_scope": {
+   "types": [
+    "subnational"
+   ],
+   "description": "Applies to data center and web search portal businesses in Iowa; eligibility requires a physical location in the state.",
+   "evidence": {
+    "provision": "Sec. 423.3(95)(b)(2)",
+    "quote": "The data center business shall have a physical location in the state"
+   }
+  },
+  "agora_incentives": [
+   "Subsidies"
+  ]
+ },
+ "summary": {
+  "short": "Iowa Code §423.3 lists sales and use tax exemptions. Subsection 95 exempts computers, equipment, backup power fuel and electricity used by data center businesses that invest at least $200 million in Iowa within six years and register annually with the department.",
+  "long": "Iowa Code §423.3 lists exemptions from the state sales and use tax, including resales, agricultural inputs, nonprofit purchases, food, medicine and manufacturing inputs. Subsections 92, 93 and 95 are its data-center provisions. Subsection 95 exempts the sales price of computers and equipment, cooling and power infrastructure, backup power generation fuel and electricity used by a data center business; subsections 92 and 93 apply similar exemptions to web search portal businesses. The exemption applies from the initial investment or site preparation. A data center business needs a physical location in Iowa of at least 5,000 square feet, a $200 million minimum investment in an Iowa location within six years, registration with the department, an annual report from January 31, 2026, and compliance with sustainable design standards. Fuel and electricity exemption duration depends on whether the property began operating before June 6, 2025 and, for later property, on whether it lies in a city over 30,000 residents (ten years) or elsewhere (fifteen years). If less than 80% of the minimum investment is made within six years, the exemption is lost and the tax due, plus penalty and interest, is owed."
+ },
+ "relations": [
+  {
+   "relation": "cross_references",
+   "target_text": "Iowa Code section 103A.8B (sustainable design and construction standards set by the state building code commissioner)",
+   "note": "Subsection 95(b)(4) requires data center businesses to comply with standards established under section 103A.8B. The text does not describe those standards.",
+   "evidence": {
+    "provision": "§423.3, subsection 95, paragraph b, subparagraph (4)",
+    "quote": "The data center business shall comply with the sustainable design and construction standards established by the state building code commissioner pursuant to section 103A.8B."
+   }
+  },
+  {
+   "relation": "amended_by",
+   "target_text": "2025 Acts, ch 148, §67 – 79, 87",
+   "note": "Section-level amendment history. The history does not say which subsections each act changed. A separate note says subsections 92, 93 and 95 were amended, without citing an act for that note.",
+   "evidence": {
+    "provision": "Source note (section history, end of §423.3)",
+    "quote": "2025 Acts, ch 148, §67 – 79, 87"
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "state building code commissioner",
+   "role": "designated",
+   "function": "Establishes the sustainable design and construction standards that data center businesses must comply with under section 103A.8B, as cited in subsection 95(b)(4).",
+   "evidence": {
+    "provision": "§423.3, subsection 95, paragraph b, subparagraph (4)",
+    "quote": "established by the state building code commissioner pursuant to section 103A.8B"
+   }
+  },
+  {
+   "name": "the department (not named in §423.3)",
+   "role": "designated",
+   "function": "Receives the registration of data center businesses and their annual reports, which must describe backup fuel and electricity purchased and any other information the department requires.",
+   "evidence": {
+    "provision": "§423.3, subsection 95, paragraph b, subparagraph (5)",
+    "quote": "The data center business shall register with the department as a data center business."
+   }
+  }
+ ],
+ "notes": "The document is the full Iowa Code section 423.3, printed 12 Dec 2025 as Iowa Code 2026; these fields cover subsection 95 only. Subsections 92, 93 and 95 use near-identical language, but 95 adds a 5,000 square foot physical location requirement (95(b)(2)) and a lease-term start date (95(b)(3), (c), (d)), and only 95 requires compliance with section 103A.8B standards. Wording differs between paragraphs: 95(a)(2)(b)(iii) says 'not located entirely or in part within a city', while 95(a)(3)(b)(iii) says 'not located in part within a city'. The text does not name the department and gives no penalty amounts for failing the 80% investment test in 95(e), which refers only to penalty and interest imposed by statute. The 2025 history note is not tied to subsection 95 specifically. Filing dates (January 31, 2026 and annually) are events and are not coded here.",
+ "events": [
+  {
+   "event": "amended",
+   "date": null,
+   "date_type": "not_stated",
+   "date_text": "Subsections 92, 93, and 95 amended and editorially internally renumbered and redesignated (no date given in the history note)",
+   "applies_to": "Sec. 423.3(95) data center business exemption",
+   "evidence": {
+    "provision": "Sec. 423.3 (editorial history note at end of section)",
+    "quote": "Subsections 92, 93, and 95 amended and editorially internally renumbered and redesignated"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2025-06-06",
+   "date_type": "absolute",
+   "date_text": "the data center business began operating prior to June 6, 2025 (no limitation on the duration of the backup power fuel exemption)",
+   "applies_to": "Data center businesses whose real property began operating before June 6, 2025: backup power generation fuel exemption without duration limit (electricity cohort is parallel under (a)(3)(b)(i))",
+   "evidence": {
+    "provision": "Sec. 423.3(95)(a)(2)(b)(i)",
+    "quote": "the data center business began operating prior to June 6, 2025"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2025-06-06",
+   "date_type": "absolute",
+   "date_text": "new construction upon the property completed on or after June 6, 2025, or additions upon existing property on or after June 6, 2025, located in a city of more than thirty thousand population",
+   "applies_to": "Data center businesses with new construction or additions completed on or after June 6, 2025, located entirely or in part in a city with population over 30,000: exemption limited to the first ten years of operation",
+   "evidence": {
+    "provision": "Sec. 423.3(95)(a)(2)(b)(ii)",
+    "quote": "such property is located entirely or in part within a city having a population of more than thirty thousand"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2025-06-06",
+   "date_type": "absolute",
+   "date_text": "new construction upon the property completed on or after June 6, 2025, or additions upon existing property on or after June 6, 2025, not located in a city of more than thirty thousand population",
+   "applies_to": "Data center businesses with new construction or additions completed on or after June 6, 2025, not located in a city with population over 30,000: exemption limited to the first fifteen years of operation",
+   "evidence": {
+    "provision": "Sec. 423.3(95)(a)(2)(b)(iii)",
+    "quote": "such property is not located entirely or in part within a city having a population of more than thirty thousand"
+   }
+  },
+  {
+   "event": "expiry",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "the first ten years of operation in connection with the new construction or addition upon the existing property",
+   "depends_on": "Start of operation of the new-construction or addition cohort (completed on or after June 6, 2025) located in a city with population over 30,000",
+   "applies_to": "Backup power generation fuel purchases under the city cohort (Sec. 423.3(95)(a)(2)(b)(ii)); parallel electricity limit in (a)(3)(b)(ii)",
+   "evidence": {
+    "provision": "Sec. 423.3(95)(a)(2)(b)(ii)",
+    "quote": "the first ten years of operation"
+   }
+  },
+  {
+   "event": "expiry",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "the first fifteen years of operation in connection with the new construction or addition upon the existing property",
+   "depends_on": "Start of operation of the new-construction or addition cohort (completed on or after June 6, 2025) not located in a city with population over 30,000",
+   "applies_to": "Backup power generation fuel purchases under the non-city cohort (Sec. 423.3(95)(a)(2)(b)(iii)); parallel electricity limit in (a)(3)(b)(iii)",
+   "evidence": {
+    "provision": "Sec. 423.3(95)(a)(2)(b)(iii)",
+    "quote": "the first fifteen years"
+   }
+  },
+  {
+   "event": "application",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "This exemption applies from the date of the initial investment in, the initiation of site preparation activities for the data center business facility, or the beginning date of the initial lease term",
+   "depends_on": "Date of the initial investment in, or initiation of site preparation activities for, the data center business facility, or the beginning date of the initial lease term",
+   "applies_to": "Data center business exemption under Sec. 423.3(95)(a)",
+   "evidence": {
+    "provision": "Sec. 423.3(95)(c)",
+    "quote": "This exemption applies from the date of the initial investment in"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "within the first six years of operation in Iowa beginning with the date the data center business initiates site preparation activities, or the beginning date of the initial lease term",
+   "depends_on": "Initiation of site preparation activities, or the beginning date of the initial lease term, as applicable",
+   "applies_to": "Data center business claiming the exemption under Sec. 423.3(95)(b)(3): minimum investment of two hundred million dollars in an Iowa physical location",
+   "evidence": {
+    "provision": "Sec. 423.3(95)(b)(3)",
+    "quote": "physical location of two hundred million dollars within the first six years of operation in Iowa"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2026-01-31",
+   "date_type": "recurring",
+   "date_text": "by January 31, 2026, and by each January 31 thereafter",
+   "applies_to": "Data center business registered with the department: annual report on backup power generation fuel and electricity purchased in the previous calendar year (Sec. 423.3(95)(b)(5))",
+   "evidence": {
+    "provision": "Sec. 423.3(95)(b)(5)",
+    "quote": "by January 31, 2026, and by each January 31 thereafter"
+   }
+  },
+  {
+   "event": "application",
+   "date": "2026-01-31",
+   "date_type": "absolute",
+   "date_text": "Beginning after January 31, 2026, when purchasing exempt property under paragraph a",
+   "applies_to": "Data center businesses purchasing exempt property: must present an exemption certificate issued after filing the annual report, to the retailer",
+   "evidence": {
+    "provision": "Sec. 423.3(95)(b)(6)",
+    "quote": "Beginning after January 31, 2026, when purchasing exempt property"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "capital_investment",
+   "variable_text": "minimum investment in an Iowa physical location",
+   "operator": ">=",
+   "value": 200000000,
+   "value_text": "two hundred million dollars",
+   "unit": "dollars",
+   "currency": "USD",
+   "measurement": "Investment at the Iowa location within the first six years of operation, beginning with the date site preparation activities start or the beginning date of the initial lease term; includes initial investment, later acquisition of adjacent land and subsequent investment at the Iowa location.",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Condition for claiming the subsection 95 sales and use tax exemption.",
+   "conditions": "Applies to data center businesses claiming the exemption; a shortfall below eighty percent of this amount is a separate row.",
+   "evidence": {
+    "provision": "Sec. 423.3(95)(b)(3)",
+    "quote": "physical location of two hundred million dollars within the first six years of operation in Iowa"
+   }
+  },
+  {
+   "variable": "capital_investment",
+   "variable_text": "investment shortfall below eighty percent of minimum investment amount",
+   "operator": "<",
+   "value": 80,
+   "value_text": "Failure to meet eighty percent of the minimum investment amount requirement",
+   "unit": "percent of minimum investment amount",
+   "measurement": "Within the first six years of operation from the date site preparation activities begin, or from the beginning date of the initial lease term, as applicable.",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Data center business loses the right to claim the exemption and must pay all sales or use tax that would have been due, plus any applicable penalty and interest imposed by statute.",
+   "conditions": "Applies when the minimum investment requirement in paragraph b(3) is not met.",
+   "evidence": {
+    "provision": "Sec. 423.3(95)(e)",
+    "quote": "Failure to meet eighty percent of the minimum investment amount requirement"
+   }
+  },
+  {
+   "variable": "floor_area",
+   "variable_text": "aggregate size of physical location used for operations and maintenance",
+   "operator": ">=",
+   "value": 5000,
+   "value_text": "at least five thousand square feet in size",
+   "unit": "square feet",
+   "measurement": "Aggregate size of the physical location in the state used for operations and maintenance of the data center business.",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Requirement for claiming the subsection 95 exemption.",
+   "conditions": "Physical location must be in the state and used for the operations and maintenance of the data center business.",
+   "evidence": {
+    "provision": "Sec. 423.3(95)(b)(2)",
+    "quote": "at least five thousand square feet in size that is used for the operations and"
+   }
+  },
+  {
+   "variable": "population",
+   "variable_text": "city population for location of new construction or addition",
+   "operator": ">",
+   "value": 30000,
+   "value_text": "a city having a population of more than thirty thousand, according to the most recent decennial federal census",
+   "unit": "residents",
+   "measurement": "Population according to the most recent decennial federal census; applies where the real property is located entirely or in part within the city.",
+   "level": "facility",
+   "trigger": "benefit_duration",
+   "consequence": "Exemption for backup power generation fuel runs for the first ten years of operation; otherwise fifteen years.",
+   "conditions": "Applies to real property with new construction or additions completed on or after June 6, 2025. The same cut-off appears in subparagraph (3)(b)(ii) for electricity.",
+   "evidence": {
+    "provision": "Sec. 423.3(95)(a)(2)(b)(ii)",
+    "quote": "located entirely or in part within a city having a population of more than thirty"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "exemption duration for property located in a city over 30,000 population",
+   "operator": "=",
+   "value": 10,
+   "value_text": "the first ten years of operation in connection with the new construction or addition",
+   "unit": "years",
+   "measurement": "Counted from the first year of operation in connection with the new construction or addition upon the existing property.",
+   "level": "facility",
+   "trigger": "benefit_duration",
+   "consequence": "Sales and use tax exemption for backup power generation fuel is limited to the first ten years of operation.",
+   "conditions": "Property with new construction or additions completed on or after June 6, 2025, located entirely or in part within a city having a population of more than thirty thousand.",
+   "evidence": {
+    "provision": "Sec. 423.3(95)(a)(2)(b)(ii)",
+    "quote": "the first ten years of"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "exemption duration for property not located in a city over 30,000 population",
+   "operator": "=",
+   "value": 15,
+   "value_text": "the first fifteen years of operation in connection with the new construction or addition",
+   "unit": "years",
+   "measurement": "Counted from the first year of operation in connection with the new construction or addition to the existing property.",
+   "level": "facility",
+   "trigger": "benefit_duration",
+   "consequence": "Sales and use tax exemption for backup power generation fuel is limited to the first fifteen years of operation.",
+   "conditions": "Property with new construction or additions completed on or after June 6, 2025, not located entirely or in part within a city having a population of more than thirty thousand.",
+   "evidence": {
+    "provision": "Sec. 423.3(95)(a)(2)(b)(iii)",
+    "quote": "the first fifteen years"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "vintage cut-off: new construction or addition completed on or after June 6, 2025",
+   "operator": ">=",
+   "value": null,
+   "value_text": "on or after June 6, 2025",
+   "unit": "date",
+   "measurement": "Completion date of new construction or addition upon the property; for existing property, the date the data center business began operating.",
+   "level": "facility",
+   "trigger": "benefit_duration",
+   "consequence": "Property that began operating prior to June 6, 2025 has no limitation on the duration of the exemption; later cohorts are limited to ten or fifteen years.",
+   "conditions": "Applies to backup power generation fuel under subparagraph (2) and electricity under subparagraph (3).",
+   "depends_on": "Completion date of new construction or addition, or date the data center business began operating in connection with existing real property",
+   "evidence": {
+    "provision": "Sec. 423.3(95)(a)(2)(b)(i)",
+    "quote": "began operating prior to June 6, 2025, there shall be no limitation on the"
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "Data center",
+   "defined_in": "Sec. 423.3(95)(f)(1)",
+   "evidence": {
+    "provision": "Sec. 423.3(95)(f)(1)",
+    "quote": "“Data center” means a building rehabilitated or constructed to house a group of"
+   }
+  },
+  {
+   "term": "Data center business",
+   "defined_in": "Sec. 423.3(95)(f)(2)",
+   "evidence": {
+    "provision": "Sec. 423.3(95)(f)(2)",
+    "quote": "“Data center business” means an entity whose business among other businesses, is to"
+   }
+  },
+  {
+   "term": "Site preparation activities",
+   "defined_in": "Sec. 423.3(95)(f)(3)",
+   "evidence": {
+    "provision": "Sec. 423.3(95)(f)(3)",
+    "quote": "“Site preparation activities” means actions that are taken prior to beginning"
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "registration_notification",
+   "addressee": "data_center_operator",
+   "modality": "shall",
+   "summary": "A data center business claiming the exemption under subsection 95 must register with the department as a data center business; registration is maintained by the annual report.",
+   "conditional_on": "claiming the exemption under subsection 95",
+   "evidence": {
+    "provision": "Sec. 423.3(95)(b)(5)",
+    "quote": "The data center business shall register with the department as a data center business."
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "data_center_operator",
+   "modality": "shall",
+   "summary": "File an annual report with the department to maintain registration. The report must describe the backup power generation fuel and electricity purchased and used in the previous calendar year, and any other information the department requires.",
+   "applies_from": "by January 31, 2026, and by each January 31 thereafter",
+   "conditional_on": "maintaining registration under subsection 95",
+   "evidence": {
+    "provision": "Sec. 423.3(95)(b)(5)",
+    "quote": "file an annual report with the department, by January 31, 2026, and by each January 31 thereafter."
+   }
+  },
+  {
+   "type": "verification_gatekeeping",
+   "addressee": "data_center_operator",
+   "modality": "shall",
+   "summary": "When purchasing exempt property, present to the retailer an exemption certificate issued annually after the annual report is filed.",
+   "applies_from": "Beginning after January 31, 2026",
+   "conditional_on": "purchasing exempt property under subsection 95(a)",
+   "evidence": {
+    "provision": "Sec. 423.3(95)(b)(6)",
+    "quote": "the data center business shall present an exemption certificate, issued annually to the data center business after filing the annual report"
+   }
+  },
+  {
+   "type": "eligibility_condition",
+   "addressee": "data_center_operator",
+   "modality": "shall",
+   "summary": "Meet the conditions for the exemption: a minimum investment of two hundred million dollars in an Iowa physical location within the first six years of operation, a physical location of at least five thousand square feet in aggregate, and purchase, option or lease of Iowa land not later than December 31, 2008 for any initial investment.",
+   "applies_from": "within the first six years of operation in Iowa beginning with the date the data center business initiates site preparation activities, or the beginning date of the initial lease term",
+   "conditional_on": "claiming the exemption under subsection 95",
+   "evidence": {
+    "provision": "Sec. 423.3(95)(b)(3)",
+    "quote": "The data center business shall make a minimum investment in an Iowa"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_center_operator",
+   "modality": "shall",
+   "summary": "Comply with the sustainable design and construction standards established by the state building code commissioner under section 103A.8B.",
+   "conditional_on": "claiming the exemption under subsection 95",
+   "evidence": {
+    "provision": "Sec. 423.3(95)(b)(4)",
+    "quote": "The data center business shall comply with the sustainable design and construction standards established by the state building code commissioner pursuant to section 103A.8B."
+   }
+  }
+ ],
+ "enforcement": [
+  {
+   "sanction_type": "benefit_revocation_clawback",
+   "authority": "Not stated in this provision",
+   "triggered_by": "Failure to meet eighty percent of the minimum investment amount requirement within the first six years of operation, measured from the date the data center business initiates site preparation activities or from the beginning date of the initial lease term",
+   "max_penalty_text": "pay all sales or use tax that would have been due on the purchase or use of the items listed in this exemption, plus any applicable penalty and interest imposed by statute",
+   "penalty_formula": "Loss of the exemption; repayment of all sales or use tax that would have been due on the purchase or use of the exempt items, plus any applicable penalty and interest imposed by statute",
+   "penalty_reference": "Penalty and interest 'imposed by statute'; the statute is not named in this text",
+   "cure_period": "Not stated",
+   "evidence": {
+    "provision": "Sec. 423.3(95)(e)",
+    "quote": "the data center business shall pay all sales or use tax that would have been due on the purchase or use of the items listed in this exemption, plus any applicable penalty and interest imposed by statute."
+   }
+  }
+ ],
+ "section_status": {}
+}

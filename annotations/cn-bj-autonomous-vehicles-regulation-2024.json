@@ -1,0 +1,151 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "cn-bj-autonomous-vehicles-regulation-2024",
+ "tier": "B",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "light, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-interim-20261014"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (connectors/fetch_texts.py)",
+  "url": "https://www.beijing.gov.cn/zhengce/dfxfg/202501/t20250103_3980149.html",
+  "retrieved": "2026-10-13",
+  "version": "as fetched",
+  "language": "zh",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "ai_sectoral",
+   "data_protection",
+   "data_access_sharing",
+   "cybersecurity"
+  ],
+  "primary_domain": "ai_sectoral",
+  "mechanisms": [
+   "mandate_obligation",
+   "licensing_permit_certification",
+   "registration_notification",
+   "disclosure_transparency",
+   "sandbox_pilot",
+   "standard_setting",
+   "institution_setup"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "ai_provider",
+   "ai_deployer",
+   "data_controller",
+   "government_agency",
+   "consumers_users",
+   "workers",
+   "auditor_assessor"
+  ],
+  "affected_roles": [
+   "general_public",
+   "insurer",
+   "research_institution"
+  ],
+  "decision_margins": [
+   "firm:entry_market_access",
+   "firm:product_design_release",
+   "firm:compliance_process",
+   "household:access",
+   "household:data_privacy"
+  ],
+  "territorial_scope": {
+   "types": [
+    "subnational"
+   ],
+   "description": "Applies within the administrative area of Beijing municipality.",
+   "evidence": {
+    "provision": "Art. 2",
+    "quote": "在本市行政区域内开展自动驾驶汽车技术创新 [technological innovation of autonomous vehicles within the administrative area of this municipality]"
+   }
+  },
+  "agora_applications": [
+   "Transportation"
+  ],
+  "agora_harms": [
+   "Harm to health/safety",
+   "Harm to property"
+  ],
+  "agora_incentives": [
+   "Fines"
+  ],
+  "agora_risk_factors": [
+   "Safety",
+   "Security: Cybersecurity",
+   "Privacy"
+  ],
+  "agora_strategies": [
+   "Pilots and testbeds",
+   "Licensing, registration, and certification",
+   "Evaluation: Conformity assessment",
+   "Government study or report",
+   "Government support: For R&D",
+   "Disclosure: In deployment"
+  ]
+ },
+ "summary": {
+  "short": "Beijing municipal regulation, in force from 1 April 2025, governing testing, demonstration and road-application pilots of autonomous vehicles in Beijing. It sets approval steps and duties for vehicle makers, pilot operators and data handlers, and fines for unauthorised pilots and maintenance or staffing breaches.",
+  "long": "Beijing municipal regulation adopted by the 16th Beijing Municipal People's Congress Standing Committee on 31 December 2024, in force from 1 April 2025. It governs innovation, roadside infrastructure, road testing, demonstration applications and road-application pilots of autonomous vehicles in Beijing. Road testing and demonstration applications are reviewed and confirmed by the economic and information technology department; road-application pilots require a safety assessment and a pilot qualification from the transport department. Pilot operators must have safety officers and platform monitoring staff, a safety monitoring platform, and must keep operating records. Vehicle makers must maintain functional safety, cybersecurity and data security capabilities and manage software upgrades. Data rules require risk assessments for important data and breach reporting; cross-border transfers follow national rules. Mandatory insurance applies to tests and pilots. Fines of RMB 30,000 to 100,000 apply to pilots run without consent, and RMB 10,000 to 30,000 to failures to maintain or inspect pilot vehicles or to staff them properly. Traffic violations and accidents are handled under national traffic rules."
+ },
+ "relations": [
+  {
+   "relation": "cross_references",
+   "target_text": "个人信息保护法 (Personal Information Protection Law)",
+   "note": "Article 39 requires enterprises in automated-driving data handling to comply with the Personal Information Protection Law when processing personal information; the text names the law but does not state a legal relationship beyond this reference.",
+   "evidence": {
+    "provision": "Art. 39 item (3) (第三十九条第（三）项)",
+    "quote": "处理个人信息应当遵守个人信息保护法的有关规定"
+   }
+  }
+ ],
+ "notes": "Enabling national laws and administrative regulations are referred to only generically (Art. 1 '根据有关法律、行政法规'; Art. 43; Art. 47 '国家和本市有关规定'; Art. 39 cross-border transfers '按照国家有关规定执行'), so no legal_basis row is coded. Road traffic safety law is referred to generically (Art. 31, Art. 37) and is not named. The text states no amendments, repeals or implementations of other instruments. No internal numerical inconsistencies were found; penalty cross-references in Arts. 44-46 point to provisions of this regulation.",
+ "events": [
+  {
+   "event": "adopted",
+   "date": "2024-12-31",
+   "date_type": "absolute",
+   "date_text": "2024年12月31日北京市第十六届人民代表大会常务委员会第十四次会议通过",
+   "applies_to": "Beijing Municipal People's Congress Standing Committee (adopting body, per dateline)",
+   "evidence": {
+    "provision": "Dateline (preamble, before 第一章)",
+    "quote": "2024年12月31日北京市第十六届人民代表大会常务委员会第十四次会议通过"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2025-04-01",
+   "date_type": "absolute",
+   "date_text": "本条例自2025年4月1日起施行",
+   "applies_to": "entire regulation",
+   "evidence": {
+    "provision": "Art. 48 (第四十八条)",
+    "quote": "本条例自2025年4月1日起施行"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "每年 (annually) evaluation of innovative application activities, with annual report submitted to the Municipal People's Government and published",
+   "applies_to": "Municipal economic and informatisation department, jointly with transport and public security traffic management departments: annual evaluation and annual report",
+   "evidence": {
+    "provision": "Art. 34 (第三十四条)",
+    "quote": "每年对自动驾驶汽车创新应用活动情况进行评估，形成年度报告报送市人民政府"
+   }
+  }
+ ],
+ "section_status": {
+  "thresholds": {
+   "status": "not_found",
+   "note": "No numeric cutoff changing legal treatment was found. The fine amounts in Arts. 44-46 are enforcement (penalty) provisions, and the 2025-04-01 entry-into-force date in Art. 48 is an event. Conditions set by reference to rules to be made later (Arts. 24, 26, 27) have no numeric value, and the vehicle-volume cap in Art. 23 is determined by the transport authority without a stated number."
+  }
+ },
+ "thresholds": []
+}

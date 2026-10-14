@@ -1,0 +1,3217 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "us-cfpb-1033-2024",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (connectors/fetch_texts.py)",
+  "url": "https://www.govinfo.gov/content/pkg/FR-2024-11-18/pdf/2024-25079.pdf",
+  "retrieved": "2026-10-13",
+  "version": "as fetched",
+  "language": "en",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "data_access_sharing",
+   "data_protection",
+   "consumer_protection",
+   "cybersecurity"
+  ],
+  "primary_domain": "data_access_sharing",
+  "mechanisms": [
+   "mandate_obligation",
+   "prohibition_ban",
+   "designation_tiering",
+   "disclosure_transparency",
+   "standard_setting"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "financial_institution",
+   "data_holder",
+   "data_controller",
+   "data_processor"
+  ],
+  "affected_roles": [
+   "consumers_users"
+  ],
+  "decision_margins": [
+   "firm:input_use",
+   "firm:pricing",
+   "firm:compliance_process",
+   "household:access",
+   "household:data_privacy"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national"
+   ],
+   "description": "Applies to covered persons and covered products; covered products are limited to those obtained by consumers residing in the U.S.",
+   "evidence": {
+    "provision": "Preamble, Part IV.A.3 (coverage of data providers)",
+    "quote": "covered consumer financial products and services in this rule are limited to products and services obtained by consumers who reside in the U.S."
+   }
+  },
+  "agora_applications": [
+   "Finance and investment"
+  ],
+  "agora_harms": [
+   "Violation of civil or human rights, including privacy",
+   "Financial loss"
+  ],
+  "agora_risk_factors": [
+   "Privacy",
+   "Security: Cybersecurity",
+   "Transparency"
+  ],
+  "agora_strategies": [
+   "Disclosure",
+   "Performance requirements",
+   "Input controls: Data use",
+   "Input controls: Data circulation"
+  ]
+ },
+ "summary": {
+  "short": "CFPB final rule under CFPA section 1033 requires banks, credit unions and other financial data providers to make covered consumer financial data available, without fees, to consumers and authorized third parties. Third parties must limit collection and use of that data. Compliance is phased in from 2026 to 2030.",
+  "long": "The CFPB final rule, effective January 17, 2025, implements CFPA section 1033 by requiring data providers to make covered consumer financial data available to consumers and authorized third parties in electronic form. Covered data concerns Regulation E accounts, Regulation Z credit cards and payment facilitation products; depository institutions at or below the $850 million SBA size standard are excluded, while nondepository providers are covered. Providers must use standardized, machine-readable formats, meet minimum response rates, avoid credential-based screen scraping, and charge no access fees. Third parties must obtain express informed consent, certify limits on collection, use and retention, limit collection duration to one year, provide revocation, and retain records for at least three years. Data aggregators may perform authorization for third parties. CFPB-recognized consensus standards serve as indicia of compliance. Part 1001 treats financial data processing as a financial product or service under the CFPA. Compliance dates are tiered from April 1, 2026 to April 1, 2030 by asset size or receipts."
+ },
+ "relations": [
+  {
+   "relation": "legal_basis",
+   "target_text": "Consumer Financial Protection Act of 2010 (CFPA), section 1033 (title X of the Dodd-Frank Act, Pub. L. 111-203)",
+   "note": "Enabling statute for the rule. The preamble also relies on CFPA sections 1022(b), 1024(b)(7) and 1002 (Part III.B-C) and discusses CFPA section 1034(c) (Part IV.4).",
+   "evidence": {
+    "provision": "Part I.A (Summary of the Final Rule)",
+    "quote": "CFPA section 1033(a) and (b) provide that, subject to rules prescribed by the CFPB"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Required Rulemaking on Personal Financial Data Rights, notice of proposed rulemaking, 88 FR 74796 (Oct. 31, 2023)",
+   "note": "The proposal that this final rule finalizes, with changes.",
+   "evidence": {
+    "provision": "Part II.B (Summary of the Proposed Rule)",
+    "quote": "The proposal was published in the Federal Register on October 31, 2023"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "13 CFR 121.201 (SBA size standards)",
+   "note": "Depository institution coverage threshold is keyed to the SBA size standard for the relevant NAICS code; the text states the current size standard is $850 million.",
+   "evidence": {
+    "provision": "Part IV.A.4 (Coverage Threshold, 1033.111(d))",
+    "quote": "as codified in 13 CFR 121.201"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation Z (12 CFR part 1026), Truth in Lending Act",
+   "note": "Card issuer and credit card are defined by reference to Regulation Z; the rule covers Regulation Z card issuers as data providers.",
+   "evidence": {
+    "provision": "Part IV.A.3 (Coverage of Data Providers, 1033.111(a) through (c))",
+    "quote": "(2) A card issuer, as defined in Regulation Z, 12 CFR 1026.2(a)(7)"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Electronic Fund Transfer Act and Regulation E (12 CFR part 1005)",
+   "note": "The rule states it does not change consumer error-resolution rights under EFTA and Regulation E. The preamble cites EFTA as 15 U.S.C. 1691 et seq. (see notes).",
+   "evidence": {
+    "provision": "Part IV.4 (Electronic Fund Transfer Act and Regulation E)",
+    "quote": "this final rule does not change such rights under EFTA and Regulation E"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Gramm-Leach-Bliley Act (GLBA) Safeguards Framework; Regulation P (12 CFR part 1016)",
+   "note": "Authorized third parties must satisfy applicable GLBA Safeguards Framework rules; the preamble states the rule does not affect obligations under the GLBA.",
+   "evidence": {
+    "provision": "Part I.A (Authorized Third Parties)",
+    "quote": "the Safeguards Framework of the GrammLeach-Bliley Act (GLBA), 15 U.S.C. 6801 et seq."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Fair Credit Reporting Act (15 U.S.C. 1681 et seq.) and Regulation V (12 CFR part 1022)",
+   "note": "The preamble states the rule does not affect FCRA or Regulation V obligations and that data providers are not furnishers solely by permitting authorized access.",
+   "evidence": {
+    "provision": "Part IV.4 (Fair Credit Reporting Act and Regulation V)",
+    "quote": "this final rule does not affect a person's obligations or duties under the FCRA"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "CFPB advisory opinion, Consumer Information Requests to Large Banks and Credit Unions, 88 FR 71279 (Oct. 16, 2023), interpreting CFPA section 1034(c)",
+   "note": "Preamble discusses overlap between the data scope of CFPA section 1034(c) and of section 1033.",
+   "evidence": {
+    "provision": "Part IV.4 (CFPA Section 1034(c))",
+    "quote": "In October 2023, prior to the proposal, the CFPB issued an advisory opinion on CFPA section 1034(c)"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Consolidated Appropriations Act of 2023",
+   "note": "Context only: directs USDA to rulemake on EBT card security; the preamble cites it when explaining why EBT cards are not covered here.",
+   "evidence": {
+    "provision": "Part IV.A.3 (Coverage of Data Providers)",
+    "quote": "pursuant to the Consolidated Appropriations Act of 2023, the USDA has been directed to engage in a rulemaking"
+   }
+  },
+  {
+   "relation": "legal_basis",
+   "target_text": "Consumer Financial Protection Act (CFPA) section 1033 (12 U.S.C. 5533) and section 1022(b)(1)",
+   "note": "The preamble states the CFPB finalizes provisions under its rulemaking authority under CFPA sections 1033(a) and (d) and 1022(b)(1). Section 1033(b) exceptions and section 1033(e) consultation are also discussed.",
+   "evidence": {
+    "provision": "Preamble, consensus standards discussion (Industry Standard-Setting)",
+    "quote": "using its rulemaking authority under CFPA section 1033(a) and (d) and section 1022(b)(1)"
+   }
+  },
+  {
+   "relation": "legal_basis",
+   "target_text": "CFPA sections 1033(a) and 1022(b)(1)",
+   "note": "Stated authority for the fee prohibition in 12 CFR 1033.301(c); the preamble also says section 1022(b)(1) independently authorizes the fee prohibition to prevent evasion.",
+   "evidence": {
+    "provision": "Preamble, § 1033.301(c) fee prohibition discussion",
+    "quote": "pursuant to its authorities under sections 1033(a) and 1022(b)(1) of the CFPA"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation E, 12 CFR part 1005",
+   "note": "Cited as precedent for prohibiting fees on error resolution; also cited for account-number disclosure on periodic statements and for the record-retention timeframe (12 CFR 1005.13).",
+   "evidence": {
+    "provision": "Preamble, § 1033.301(c) fee prohibition discussion",
+    "quote": "Regulation E (12 CFR part 1005) and Regulation Z (12 CFR part 1026) both prohibit fees for error resolution"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation Z, 12 CFR part 1026",
+   "note": "Cited for the 24-month historical transaction record-retention timeframe (12 CFR 1026.25) and as precedent for the fee prohibition.",
+   "evidence": {
+    "provision": "Preamble, § 1033.211(a) transaction information discussion",
+    "quote": "consistent with the existing recordkeeping timeframes in Regulation E, 12 CFR 1005.13, and Regulation Z, 12 CFR 1026.25"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation DD, 12 CFR part 1030 (implementing the Truth in Savings Act)",
+   "note": "Footnote cites Regulation DD as the implementation of the Truth in Savings Act schedule-of-terms requirement, used to explain why terms and conditions are retrievable in the ordinary course of business.",
+   "evidence": {
+    "provision": "Preamble, § 1033.221(d) discussion, footnote 59",
+    "quote": "TISA is implemented in the CFPB’s Regulation DD (12 CFR part 1030)"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Truth in Savings Act (TISA), 12 U.S.C. 4301 et seq.",
+   "note": "Footnote quotes the statute requiring depository institutions to maintain a schedule of fees, charges, interest rates and terms and conditions.",
+   "evidence": {
+    "provision": "Preamble, § 1033.221(d) discussion, footnote 59",
+    "quote": "Each depository institution shall maintain a schedule of fees, charges, interest rates, and terms and conditions applicable to each class of accounts"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Federal Deposit Insurance Act, 12 U.S.C. 1813(c)(1)",
+   "note": "Used in the definition of depository institution, which the rule adds for clarity.",
+   "evidence": {
+    "provision": "Preamble, definition of depository institution",
+    "quote": "any depository institution as defined in the Federal Deposit Insurance Act, 12 U.S.C. 1813(c)(1)"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "NCUA regulation, 12 CFR 700.2 (definition of credit union)",
+   "note": "Used in the definition of depository institution to include credit unions.",
+   "evidence": {
+    "provision": "Preamble, definition of depository institution",
+    "quote": "any credit union as defined in the NCUA’s regulation at 12 CFR 700.2"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "OCC regulation, 12 CFR 7.4002",
+   "note": "Cited by commenters against the fee prohibition; the preamble says the fee prohibition is not inconsistent with it because it does not override other laws that bar specific fees.",
+   "evidence": {
+    "provision": "Preamble, § 1033.301(c) fee prohibition discussion",
+    "quote": "The OCC regulation, 12 CFR 7.4002, generally provides that national banks have authority to charge their customers noninterest charges and fees"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "CFPB advisory opinion interpreting CFPA section 1034(c) (88 FR 71279)",
+   "note": "Commenters cited this opinion, which permits some fees; the preamble says it was not promulgated by notice-and-comment and does not bind the section 1033 fee rule.",
+   "evidence": {
+    "provision": "Preamble, § 1033.301(c) fee prohibition discussion",
+    "quote": "The fee prohibition is not inconsistent with CFPA section 1034(c)"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "SBA regulations defining small businesses",
+   "note": "The final rule excludes depository institutions that are small businesses as defined in SBA regulations, in contrast to the proposal; the size threshold itself is not restated here.",
+   "evidence": {
+    "provision": "Preamble, § 1033.301(c) fee prohibition discussion (costs)",
+    "quote": "depository institutions that are small businesses as defined in SBA’s regulations"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "CFPB Industry Standard-Setting Final Rule (separate rulemaking)",
+   "note": "The preamble refers to a separate final rule on standard-setting bodies, which is not identified by citation in this part.",
+   "evidence": {
+    "provision": "Preamble, consensus standards discussion (Industry Standard-Setting)",
+    "quote": "prior to issuing the Industry Standard-Setting Final Rule"
+   }
+  },
+  {
+   "relation": "implements",
+   "target_text": "CFPA section 1033(a)",
+   "note": "Preamble states the adopted requirement implements CFPA section 1033(a); the statute is not part of this document.",
+   "evidence": {
+    "provision": "Preamble, § 1033.311(c)(1)",
+    "quote": "The requirement implements CFPA section 1033(a)"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "GLBA section 501, 15 U.S.C. 6801",
+   "note": "§ 1033.311(e)(2)(i) requires an information security program meeting the applicable rules issued under GLBA section 501; the rule does not amend GLBA.",
+   "evidence": {
+    "provision": "Preamble, § 1033.311(e)(2)",
+    "quote": "satisfies the applicable rules issued pursuant to section 501 of the GLBA, 15 U.S.C. 6801"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "FTC Standards for Safeguarding Customer Information, 16 CFR part 314",
+   "note": "Applies to data providers not subject to GLBA section 501 under § 1033.311(e)(2)(ii).",
+   "evidence": {
+    "provision": "Preamble, § 1033.311(e)(2)",
+    "quote": "the FTC’s Standards for Safeguarding Customer Information, 16 CFR part 314"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation E (12 CFR 1005.4(c), cited in footnote 78)",
+   "note": "Preamble discusses liability allocation for unauthorized transactions under Regulation E; it states the CFPB declines to change the Regulation E framework.",
+   "evidence": {
+    "provision": "Preamble, § 1033.321 (footnote 76)",
+    "quote": "Under Regulation E, financial institutions have an obligation to protect their customers against unauthorized transactions"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation Z (12 CFR 1026.5(d), cited in footnote 78)",
+   "note": "Preamble states the same view as for Regulation E on liability allocation; no amendment is stated.",
+   "evidence": {
+    "provision": "Preamble, § 1033.321 (footnote 76)",
+    "quote": "The CFPB has the same view with respect to comments raising concerns about the allocation of any liability under Regulation Z"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "12 U.S.C. 5481(24) (definition of prudential regulator)",
+   "note": "Final § 1033.321(a)(1)(i) refers to safety and soundness standards of a prudential regulator as defined in this provision.",
+   "evidence": {
+    "provision": "Preamble, § 1033.321(a)",
+    "quote": "as defined at 12 U.S.C. 5481(24)"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Interagency Guidance on ThirdParty Relationships: Risk Management (2023)",
+   "note": "Discussed as prudential regulators' guidance; the preamble states denials must ultimately rest on legal requirements, not non-binding guidance.",
+   "evidence": {
+    "provision": "Preamble, § 1033.321(a) (footnote 73)",
+    "quote": "the prudential regulators issued the Interagency Guidance on ThirdParty Relationships: Risk Management"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "section 3022(a) of the Public Health Service Act (information blocking definition)",
+   "note": "Source of language in the proposed § 1033.331(e) revocation provision as described in the proposal; the final rule text is not stated to cite it.",
+   "evidence": {
+    "provision": "Preamble, § 1033.331(e) (proposed rule)",
+    "quote": "section 3022(a) of the Public Health Service Act"
+   }
+  },
+  {
+   "relation": "legal_basis",
+   "target_text": "Consumer Financial Protection Act (CFPA), sections 1033(a), 1022(b)(1) and 1024(b)(7)",
+   "note": "The rule's authority is stated by reference to CFPA sections 1033(a), 1022(b)(1) and 1024(b)(7). The CFPA appears in this part only by its abbreviation and section numbers.",
+   "evidence": {
+    "provision": "Preamble, discussion of § 1033.351(b)(1) and § 1033.351(d)",
+    "quote": "The CFPB is finalizing § 1033.351(b)(1) pursuant to its authority provided by CFPA sections 1033(a) and 1022(b)(1)."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation E, 12 CFR part 1005",
+   "note": "Cited as a comparison for record-retention periods and as an example of existing error-protection rules; the text states Regulation E implements EFTA.",
+   "evidence": {
+    "provision": "Preamble, discussion of § 1033.351(c) (accuracy)",
+    "quote": "Regulation E's protection of consumers against errors"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation Z, 12 CFR part 1026 (including 12 CFR 1026.13)",
+   "note": "Cited as a comparison for record-retention periods and as an example of existing billing-error protections; the text states Regulation Z implements TILA.",
+   "evidence": {
+    "provision": "Preamble, discussion of § 1033.351(c) (accuracy)",
+    "quote": "Regulation Z's protection of consumers against billing errors"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Americans with Disabilities Act (ADA) and its implementing regulations",
+   "note": "The preamble states that the ADA addresses accessibility of the authorization disclosure, so the rule does not add its own accessibility requirements.",
+   "evidence": {
+    "provision": "Preamble, discussion of § 1033.411(a) (general requirements)",
+    "quote": "the Americans with Disabilities Act (ADA) and its implementing regulations"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "CFPB guidance, Limited Applicability of Consumer Financial Protection Act's 'Time or Space' Exception With Respect to Digital Marketing Providers, 87 FR 50556 (Aug. 17, 2022)",
+   "note": "Cited in a footnote on commingling of targeting and delivery of advertisements, in the discussion of the limit on targeted advertising under § 1033.421(a)(2).",
+   "evidence": {
+    "provision": "Preamble, discussion of § 1033.421(a)(2) (footnote 102)",
+    "quote": "The CFPB has previously issued guidance related to commingling of targeting and delivery of advertisements to consumers."
+   }
+  },
+  {
+   "relation": "legal_basis",
+   "target_text": "Consumer Financial Protection Act (CFPA), §§ 1002(15)(A)(xi)(II), 1022(b)(1), 1024(b)(7)",
+   "note": "Preamble cites CFPA § 1022(b)(1) and § 1024(b)(7) as authority for § 1033.441, and CFPA § 1002(15)(A)(xi)(II) as authority for the § 1001.2(b) rulemaking.",
+   "evidence": {
+    "provision": "Preamble, § 1033.441 discussion (Final Rule); 12 CFR Part 1001 discussion",
+    "quote": "Section 1033.441 is authorized under CFPA section 1022(b)(1)"
+   }
+  },
+  {
+   "relation": "implements",
+   "target_text": "CFPA section 1033",
+   "note": "Preamble describes the final rule as implementing CFPA section 1033.",
+   "evidence": {
+    "provision": "Preamble, § 1033.421(c) comments discussion",
+    "quote": "the final rule to implement CFPA section 1033"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Gramm-Leach-Bliley Act, section 501 (15 U.S.C. 6801)",
+   "note": "Final § 1033.421(e)(1) requires third parties to apply an information security program satisfying GLBA section 501 rules.",
+   "evidence": {
+    "provision": "Preamble, § 1033.421(e) discussion (Final Rule)",
+    "quote": "satisfies the applicable rules issued pursuant to section 501 of the Gramm-Leach-Bliley Act (15 U.S.C. 6801)"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "FTC Standards for Safeguarding Customer Information, 16 CFR part 314",
+   "note": "Under § 1033.421(e)(2), applies if the third party is not subject to GLBA section 501.",
+   "evidence": {
+    "provision": "Preamble, § 1033.421(e) discussion (Final Rule)",
+    "quote": "Standards for Safeguarding Customer Information, 16 CFR part 314"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation E (12 CFR part 1005)",
+   "note": "Preamble footnote 116 cites Regulation E as an example of existing consumer protection; the CFPB states § 1033.441 retention requirements are substantively different from Regulation E and Regulation Z retention requirements.",
+   "evidence": {
+    "provision": "Preamble, § 1033.441 discussion, footnote 116",
+    "quote": "Regulation E protects consumers against unauthorized electronic fund transfers"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation Z (12 CFR part 1026)",
+   "note": "Preamble footnote 116 cites Regulation Z; the CFPB states § 1033.441 retention requirements are substantively different from Regulation Z retention requirements.",
+   "evidence": {
+    "provision": "Preamble, § 1033.441 discussion, footnote 116",
+    "quote": "Regulation Z protects consumers against certain billing and servicing errors"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "FCRA",
+   "note": "Preamble footnote 118 states data aggregators may have dispute obligations under other statutes such as the FCRA; the § 1033 analysis does not supplant those obligations.",
+   "evidence": {
+    "provision": "Preamble, § 1033.421(d) discussion, footnote 118",
+    "quote": "may have dispute resolution obligations under other statutes, such as the FCRA"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation P",
+   "note": "Preamble notes that data providers and third parties may use data as permitted under the GLBA and Regulation P, to the extent applicable.",
+   "evidence": {
+    "provision": "Preamble, § 1033.421(c) discussion",
+    "quote": "as permitted under the GLBA and Regulation P"
+   }
+  },
+  {
+   "relation": "implements",
+   "target_text": "Consumer Financial Protection Act (CFPA), section 1033",
+   "note": "Preamble states the rule implements CFPA section 1033 for certain covered persons; the rule also relies on other CFPA authorities.",
+   "evidence": {
+    "provision": "VI.A Statement of Need",
+    "quote": "The CFPB is issuing this final rule to implement CFPA section 1033 with respect to certain covered persons under the CFPA."
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "12 CFR part 1001",
+   "note": "Preamble refers to an amendment to part 1001 (new financial data processing products or services definition); the amending text is not in this part.",
+   "evidence": {
+    "provision": "V. Effective and Compliance Dates",
+    "quote": "In the case of the amendment to part 1001, the proposal explained that the activities covered by the amendment are already within the scope of the CFPA’s definition of financial product or service"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Industry Standard-Setting Final Rule (89 FR 49084, June 11, 2024)",
+   "note": "Consensus standards recognised under the Industry Standard-Setting Final Rule are described as indicia of compliance with provisions of this rule.",
+   "evidence": {
+    "provision": "VI.E.1 Costs to Data Providers (Developing and Implementing Policies and Procedures)",
+    "quote": "the Industry Standard-Setting Final Rule finalized in June 2024 specifies the attributes standard-setting bodies must satisfy"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "GLBA (FTC Safeguards Rule; prudential regulators’ Safeguards Guidelines)",
+   "note": "Baseline discussion: third parties and data providers are described as subject to the GLBA safeguards framework, which the rule's data security representations reference.",
+   "evidence": {
+    "provision": "VI.D Baseline for Consideration of Costs and Benefits",
+    "quote": "are subject to the GLBA, specifically either the FTC’s Safeguards Rule or the prudential regulators’ Safeguards Guidelines"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Federal Trade Commission Act, section 5",
+   "note": "Baseline discussion: firms outside the CFPA's financial product definition would already be subject to the FTC Act prohibition on unfair or deceptive acts or practices.",
+   "evidence": {
+    "provision": "VI.E.1 Costs to Covered Persons (New Financial Data Processing Products or Services Definition)",
+    "quote": "subject to a prohibition on unfair or deceptive acts or practices under section 5 the Federal Trade Commission Act"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "California Consumer Privacy Act (CCPA)",
+   "note": "Baseline discussion: some third parties may already have deletion systems if subject to the CCPA; the analysis says costs may be lower for them.",
+   "evidence": {
+    "provision": "VI.E.1 Costs to Third Parties (Implementing Mechanisms for Data Deletion and Record Retention)",
+    "quote": "if they are subject to the California Consumer Privacy Act (CCPA)"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation E",
+   "note": "Discussion of consumer liability for account takeover fraud, which may be limited under Regulation E.",
+   "evidence": {
+    "provision": "VI.E.3 Benefits to Covered Persons (Benefits to Data Providers, footnote 194)",
+    "quote": "Consumers’ liability for ATO fraud may be limited under Regulation E"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation Y and OCC regulations",
+   "note": "Commenter discussion: financial data transmission is said to be covered by existing provisions of Regulation Y and OCC regulations.",
+   "evidence": {
+    "provision": "V. Effective and Compliance Dates (discussion of comments on part 1001 amendment, footnote context)",
+    "quote": "financial data transmission is expressly covered by the applicable longstanding provisions of Regulation Y and OCC regulations"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "CFPB confidentiality regulations, 12 CFR 1070.40 et seq.",
+   "note": "The CFPB states it treats information received in the Provider and Aggregator Collections under these regulations.",
+   "evidence": {
+    "provision": "VI.B Data and Evidence (footnote 137)",
+    "quote": "in accordance with its confidentiality regulations at 12 CFR 1070.40 et seq."
+   }
+  },
+  {
+   "relation": "legal_basis",
+   "target_text": "Consumer Financial Protection Act of 2010 (CFPA), 12 U.S.C. 5481(15)(A)(XI), 5512, 5514, 5533",
+   "note": "The rule is issued under the CFPA. The preamble also says the CFPB relies on other CFPA authorities for specific aspects of the rule (Section VII.B.1). The CFPA is not in the registry, so target_instrument_id is empty.",
+   "evidence": {
+    "provision": "Authority line of 12 CFR part 1033; § 1033.101(a)",
+    "quote": "the CFPB interprets CFPA section 1033 as authority to establish a framework"
+   }
+  },
+  {
+   "relation": "implements",
+   "target_text": "Consumer Financial Protection Act of 2010 (CFPA), section 1033 (12 U.S.C. 5533)",
+   "note": "Part 1033 states that it implements the provisions of CFPA section 1033 by requiring data providers to make covered data available to consumers and authorized third parties.",
+   "evidence": {
+    "provision": "§ 1033.101(b)",
+    "quote": "This part implements the provisions of section 1033 of the CFPA"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "12 CFR part 1001 (Financial Products or Services), § 1001.2",
+   "note": "Instruction 2 amends § 1001.2 by adding paragraphs (b) and (c). Paragraph (b) defines financial data processing products or services. Paragraph (c) is text reserved as [Reserved].",
+   "evidence": {
+    "provision": "Amendatory instructions, 12 CFR parts 1001 and 1033 (instruction 2)",
+    "quote": "Amend § 1001.2 by adding"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "12 CFR part 1033 (Personal Financial Data Rights)",
+   "note": "The rule amends and adds to 12 CFR part 1033. Instruction 3 says to revise part 1033 to read as follows, and the full part 1033 text follows in this part.",
+   "evidence": {
+    "provision": "VIII. Paperwork Reduction Act; amendatory instruction 3",
+    "quote": "The rule amends and adds to 12 CFR part 1033 and amends 12 CFR part 1001."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "SBA size standards, 13 CFR 121.201",
+   "note": "The SBA size standard for the data provider's NAICS code defines the depository institutions excluded from subparts B and C under the coverage threshold in § 1033.111(d).",
+   "evidence": {
+    "provision": "§ 1033.111(d)(1)",
+    "quote": "as codified in 13 CFR 121.201"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation E, 12 CFR 1005",
+   "note": "Defines Regulation E account, one of the covered consumer financial product or service categories (§ 1033.111(b)(1)).",
+   "evidence": {
+    "provision": "§ 1033.111(b)(1)",
+    "quote": "an account, as defined in Regulation E, 12 CFR 1005.2(b)"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation Z, 12 CFR 1026",
+   "note": "Defines Regulation Z credit card, one of the covered consumer financial product or service categories (§ 1033.111(b)(2)).",
+   "evidence": {
+    "provision": "§ 1033.111(b)(2)",
+    "quote": "a credit card, as defined in Regulation Z, 12 CFR 1026.2(a)(15)(i)"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "FTC Standards for Safeguarding Customer Information, 16 CFR part 314",
+   "note": "Information security program required for a data provider not subject to GLBA section 501 (developer interface), and for third parties not subject to it (§ 1033.421(e)(2)).",
+   "evidence": {
+    "provision": "§ 1033.311(e)(2)(ii)",
+    "quote": "the Federal Trade Commission’s Standards for Safeguarding Customer Information, 16 CFR part 314."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Gramm-Leach-Bliley Act section 501 (15 U.S.C. 6801)",
+   "note": "Data providers subject to GLBA section 501 must apply its information security rules to the developer interface. The same reference appears in § 1033.321(a) and § 1033.421(e)(1).",
+   "evidence": {
+    "provision": "§ 1033.311(e)(2)(i)",
+    "quote": "that satisfies the applicable rules issued pursuant to section 501"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "12 CFR 700.2 (credit union definition)",
+   "note": "Depository institution definition in § 1033.131 incorporates the credit union definition in 12 CFR 700.2.",
+   "evidence": {
+    "provision": "§ 1033.131 (Definitions), 'Depository institution'",
+    "quote": "or any credit union as defined by 12 CFR 700.2"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "CFPB Industry Standard-Setting Final Rule (June 2024)",
+   "note": "Separate CFPB rule published in June 2024 to provide clarity on industry standards. It is referred to in the preamble only.",
+   "evidence": {
+    "provision": "VII.B.2 (preamble)",
+    "quote": "published the Industry StandardSetting Final Rule in June 2024"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Paperwork Reduction Act of 1995 (44 U.S.C. 3501 et seq.)",
+   "note": "Preamble section VIII describes the information collection requirements under the PRA and the OMB review of the collections.",
+   "evidence": {
+    "provision": "VIII. Paperwork Reduction Act",
+    "quote": "Under the Paperwork Reduction Act of 1995 (PRA)"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Congressional Review Act (5 U.S.C. 801 et seq.)",
+   "note": "Preamble section IX describes the report the CFPB will submit under the CRA and the major rule designation.",
+   "evidence": {
+    "provision": "IX. Congressional Review Act",
+    "quote": "Pursuant to the Congressional Review Act (5 U.S.C. 801 et seq.)"
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "Consumer Financial Protection Bureau (CFPB)",
+   "role": "designated",
+   "function": "Prescribes this rule under CFPA section 1033 and the standards for standardized formats",
+   "evidence": {
+    "provision": "Part III.A (CFPA Section 1033)",
+    "quote": "CFPA section 1033(d) provides that the CFPB, by rule, shall prescribe standards applicable to covered persons to promote the development and use of standardized formats"
+   }
+  },
+  {
+   "name": "Federal Trade Commission (FTC)",
+   "role": "listed",
+   "function": "Consulted by the CFPB under CFPA section 1033(e); coordinates enforcement with the CFPB",
+   "evidence": {
+    "provision": "Part III.A (CFPA Section 1033)",
+    "quote": "CFPA section 1033(e) requires that the CFPB consult with the prudential regulators and the FTC"
+   }
+  },
+  {
+   "name": "Board of Governors of the Federal Reserve System; Office of the Comptroller of the Currency (OCC); Federal Deposit Insurance Corporation (FDIC); National Credit Union Administration (NCUA)",
+   "role": "listed",
+   "function": "Prudential regulators whose staff gave feedback to the CFPB before and after the proposal",
+   "evidence": {
+    "provision": "Part II.A (Outreach)",
+    "quote": "obtain feedback from staff from the Board of Governors of the Federal Reserve System, OCC, FDIC, NCUA, and FTC"
+   }
+  },
+  {
+   "name": "Federal Financial Institutions Examination Council (FFIEC)",
+   "role": "listed",
+   "function": "Receives the call report submissions used to calculate depository institution total assets for coverage and compliance dates",
+   "evidence": {
+    "provision": "Part IV.A.4 (Coverage Threshold, 1033.111(d))",
+    "quote": "averaging the assets reported on its four preceding quarterly call report data submissions to the FFIEC or NCUA"
+   }
+  },
+  {
+   "name": "U.S. Small Business Administration (SBA)",
+   "role": "listed",
+   "function": "Sets the size standard (13 CFR 121.201) used as the depository institution coverage threshold",
+   "evidence": {
+    "provision": "Part IV.A.4 (Coverage Threshold, 1033.111(d))",
+    "quote": "the SBA size standard for the data provider's appropriate NAICS code"
+   }
+  },
+  {
+   "name": "U.S. Department of Agriculture (USDA)",
+   "role": "listed",
+   "function": "Directed to rulemake on EBT card security practices; cited in the preamble's discussion of EBT coverage",
+   "evidence": {
+    "provision": "Part IV.A.3 (Coverage of Data Providers)",
+    "quote": "the USDA has been directed to engage in a rulemaking and issue guidance on EBT card security practices"
+   }
+  },
+  {
+   "name": "Consumer Financial Protection Bureau (CFPB)",
+   "role": "designated",
+   "function": "Issuing agency; may supervise and enforce compliance with part 1033 against data providers, including for vendor failures",
+   "evidence": {
+    "provision": "Preamble, § 1033.301(a) discussion (developer interface and service providers)",
+    "quote": "the CFPB (or other regulator) may supervise and enforce that compliance failure against the data provider"
+   }
+  },
+  {
+   "name": "Prudential regulators",
+   "role": "listed",
+   "function": "Consulted by the CFPB under CFPA section 1033(e) before issuing the rule",
+   "evidence": {
+    "provision": "Preamble, consensus standards discussion (prudential requirements)",
+    "quote": "CFPA section 1033(e) requires that the CFPB consult with the prudential regulators and the FTC"
+   }
+  },
+  {
+   "name": "Consumer Financial Protection Bureau (CFPB)",
+   "role": "designated",
+   "function": "Issuing agency of the rule; the preamble states it intends to exercise supervisory authority over data providers and third parties where appropriate.",
+   "evidence": {
+    "provision": "Preamble, § 1033.321(d)",
+    "quote": "the CFPB intends to exercise its supervisory authorities in circumstances where that is appropriate"
+   }
+  },
+  {
+   "name": "Prudential regulators",
+   "role": "listed",
+   "function": "Named as agencies that implement and enforce data providers' risk management obligations, which the rule's denial provisions reference.",
+   "evidence": {
+    "provision": "Preamble, § 1033.321(a)",
+    "quote": "implemented and enforced by other agencies such as the prudential regulators"
+   }
+  },
+  {
+   "name": "Federal Trade Commission (FTC)",
+   "role": "listed",
+   "function": "Issuer of the Standards for Safeguarding Customer Information (16 CFR part 314) cited as the safeguards fallback for data providers not subject to GLBA section 501.",
+   "evidence": {
+    "provision": "Preamble, § 1033.311(e)(2)",
+    "quote": "the FTC’s Standards for Safeguarding Customer Information, 16 CFR part 314"
+   }
+  },
+  {
+   "name": "LEI Regulatory Oversight Committee",
+   "role": "listed",
+   "function": "Endorses utilities that may issue the LEI a data provider's required disclosure must use.",
+   "evidence": {
+    "provision": "Preamble, § 1033.321(d)(1)(iii)",
+    "quote": "A utility endorsed by the LEI Regulatory Oversight Committee"
+   }
+  },
+  {
+   "name": "Global LEI Foundation",
+   "role": "listed",
+   "function": "Endorses or governs utilities that may issue LEIs, including after it assumes operational governance of the global LEI system.",
+   "evidence": {
+    "provision": "Preamble, § 1033.321(d)(1)(iii)",
+    "quote": "A utility endorsed or otherwise governed by the Global LEI Foundation"
+   }
+  },
+  {
+   "name": "Office of Foreign Assets Control (OFAC)",
+   "role": "listed",
+   "function": "Publishes a sanctions list whose entries may justify denial of third-party access under the rule's risk-management provisions.",
+   "evidence": {
+    "provision": "Preamble, § 1033.321(a)",
+    "quote": "a list released by OFAC"
+   }
+  },
+  {
+   "name": "Consumer Financial Protection Bureau (CFPB)",
+   "role": "designated",
+   "function": "Issues the final rule and holds rulemaking authority under CFPA sections 1033(a), 1022(b)(1) and 1024(b)(7); the preamble states the CFPB will monitor the market and may use its supervisory and enforcement authority.",
+   "evidence": {
+    "provision": "Preamble, discussion of § 1033.351(b)(1) and § 1033.421(a)(2)",
+    "quote": "The CFPB is finalizing § 1033.351(b)(1) pursuant to its authority provided by CFPA sections 1033(a) and 1022(b)(1)."
+   }
+  },
+  {
+   "name": "Consumer Financial Protection Bureau (CFPB)",
+   "role": "designated",
+   "function": "Enforces third-party obligations under its authority to prevent unfair, deceptive, or abusive acts or practices; evaluates third-party compliance records under § 1033.441",
+   "evidence": {
+    "provision": "Preamble, § 1033.421(f) discussion",
+    "quote": "the CFPB could enforce those obligations using its authority to prevent unfair, deceptive, or abusive acts or practices"
+   }
+  },
+  {
+   "name": "Federal Trade Commission (FTC)",
+   "role": "listed",
+   "function": "Issues the Standards for Safeguarding Customer Information (16 CFR part 314), which apply to third parties not subject to GLBA section 501",
+   "evidence": {
+    "provision": "Preamble, § 1033.421(e) discussion (Final Rule)",
+    "quote": "Standards for Safeguarding Customer Information, 16 CFR part 314"
+   }
+  },
+  {
+   "name": "Office of the Comptroller of the Currency (OCC)",
+   "role": "listed",
+   "function": "OCC regulations cited as the basis for national banks being permitted to engage in financial data processing (§ 1001.2(b) discussion)",
+   "evidence": {
+    "provision": "Preamble, 12 CFR Part 1001 discussion, § 1001.2(b) statutory factors",
+    "quote": "for national banks under OCC regulations"
+   }
+  },
+  {
+   "name": "Consumer Financial Protection Bureau (CFPB)",
+   "role": "designated",
+   "function": "Issuing authority for the rule under CFPA section 1033; recognises standard-setting bodies under the Industry Standard-Setting Final Rule; supervises and enforces compliance with the rule.",
+   "evidence": {
+    "provision": "VI.A Statement of Need",
+    "quote": "The CFPB is issuing this final rule to implement CFPA section 1033 with respect to certain covered persons under the CFPA."
+   }
+  },
+  {
+   "name": "Small Business Administration (SBA)",
+   "role": "listed",
+   "function": "Defines the asset size standards below which depositories are not covered as data providers under the rule.",
+   "evidence": {
+    "provision": "VI.C Coverage of the Rule",
+    "quote": "depositories with assets below specified size standards defined by the SBA are not covered as data providers under the rule."
+   }
+  },
+  {
+   "name": "Jack Henry & Assocs., Inc.",
+   "role": "listed",
+   "function": "Cited in a footnote as an example of a core banking provider offering a developer interface.",
+   "evidence": {
+    "provision": "VI.E.1 Costs to Data Providers (Contracted Services approach, footnote 146)",
+    "quote": "For example, see Jack Henry & Assocs., Inc., Secure Data Connection"
+   }
+  },
+  {
+   "name": "Consumer Financial Protection Bureau (CFPB)",
+   "role": "designated",
+   "function": "Issues the rule. Recognizes standard-setting bodies under § 1033.141 and receives applications under Appendix A, and may monitor and revoke recognition.",
+   "evidence": {
+    "provision": "§ 1033.101(a); § 1033.141(a)",
+    "quote": "The regulation in this part is issued by the Consumer Financial Protection Bureau (CFPB)"
+   }
+  },
+  {
+   "name": "Small Business Administration (SBA)",
+   "role": "listed",
+   "function": "Its size standard, as codified in 13 CFR 121.201, determines which depository institutions are excluded from subparts B and C (§ 1033.111(d)).",
+   "evidence": {
+    "provision": "§ 1033.111(d)(1)",
+    "quote": "the SBA size standard is the SBA size standard for the data provider’s"
+   }
+  },
+  {
+   "name": "Federal Financial Institutions Examination Council and National Credit Union Administration",
+   "role": "listed",
+   "function": "Receive the call report submissions used to calculate a depository institution's total assets for the coverage threshold (§ 1033.111(d)(2)).",
+   "evidence": {
+    "provision": "§ 1033.111(d)(2)",
+    "quote": "to the Federal Financial Institutions Examination Council or National Credit Union Association"
+   }
+  },
+  {
+   "name": "Federal Trade Commission",
+   "role": "listed",
+   "function": "Issues the Standards for Safeguarding Customer Information (16 CFR part 314), referenced as an information security program in § 1033.311(e)(2)(ii).",
+   "evidence": {
+    "provision": "§ 1033.311(e)(2)(ii)",
+    "quote": "the Federal Trade Commission’s Standards for Safeguarding Customer Information, 16 CFR part 314."
+   }
+  },
+  {
+   "name": "Office of Management and Budget (OMB)",
+   "role": "listed",
+   "function": "Reviews the information collections in the rule under PRA section 3507(d).",
+   "evidence": {
+    "provision": "VIII. Paperwork Reduction Act",
+    "quote": "have been submitted to OMB for review under section 3507(d) of the"
+   }
+  },
+  {
+   "name": "Office of Information and Regulatory Affairs",
+   "role": "listed",
+   "function": "Designated the rule as a major rule under 5 U.S.C. 804(2) for CRA purposes.",
+   "evidence": {
+    "provision": "IX. Congressional Review Act",
+    "quote": "The Office of Information and Regulatory Affairs has designated this rule as a"
+   }
+  },
+  {
+   "name": "Global LEI Foundation",
+   "role": "listed",
+   "function": "Endorses or governs the LEI issuing utilities whose LEI must be disclosed by data providers and required of third parties (§ 1033.341(b)(3); § 1033.321(d)(2)(iii)(B)).",
+   "evidence": {
+    "provision": "§ 1033.321(d)(2)(iii)(B)",
+    "quote": "A utility endorsed or otherwise governed by the Global LEI Foundation"
+   }
+  }
+ ],
+ "notes": "Part 1 of 7 covers the front matter and the preamble through the discussion of 12 CFR 1033.111 and 1033.121. The regulatory text of 12 CFR 1033 and 1001.2 appears in later parts, so relations and entities here reflect only what this part states. Target instrument IDs are empty because no registry match was verified. Internal inconsistency: the preamble cites EFTA as 15 U.S.C. 1691 et seq. but the anti-waiver provision as 15 U.S.C. 1693l. Front matter gives an effective date of January 17, 2025 and staggered data-provider compliance dates (April 1, 2026 to April 1, 2030); these events are not coded in this part. Part 2 of 7 is Federal Register preamble: discussion and responses to comments on consensus standards, definitions (consumer, consumer interface, data aggregator, depository institution, developer interface, third party), Subpart B (current data, covered data, exceptions) and Subpart C (consumer and developer interfaces, machine-readable files, fees, standardized format). Operative text is quoted only as context; no obligations, thresholds, events, definitions or enforcement are coded from this part, which belong to the part containing the regulatory text. target_instrument_id is empty throughout because no registry IDs for the CFPA, Regulations E, Z or DD, or the other cited instruments were supplied. Entities and relations are empty-string placeholders where the schema requires a value. section_status entries are not_applicable because this part does contain entries; the schema requires both keys. Part 3 of 7 is Federal Register preamble commentary (Vol. 89, No. 222, pp. 90889-90914) on §§ 1033.311(c)-(e), 1033.321, 1033.331, 1033.341 and 1033.351, with quoted regulatory text. It contains no operative thresholds, obligations or events coded here; the 99.5 percent response rate and other operative figures are coded from the regulatory text where it appears in other parts. Preamble also describes proposed text (e.g., proposed § 1033.331(e)), which is flagged in the relevant row. Quotes reproduce the document's typesetting, including 'ThirdParty'. No registry IDs are known for the external authorities cited, so target_instrument_id is empty. Part 4 of 7 is Federal Register preamble discussion (policies and procedures under § 1033.351(a)-(d); subpart D on authorized third parties, including § 1033.401, § 1033.411, § 1033.421(a)-(b) and screen scraping). Only relations and entities are coded. Preamble statements are not coded as obligations or thresholds, because operative duties are in the regulatory text of other parts. Internal inconsistencies: the Comments discussion refers to the 'proposed limitation in § 1033.431(a)(2)', while the provision discussed is § 1033.421(a)(2). The preamble cites '§ 1033.351(d)(3)(ii)' and '§ 1033.351(d)(vi)', which do not match the final numbering shown in this part (final text is (d)(2)(vi)). Section status for relations and entities is set to not_applicable only because the schema requires it; both sections are populated above. This part is Federal Register preamble text (discussion of §§ 1033.421(c)-(i), 1033.431, 1033.441 and 12 CFR 1001.2(b)); it contains no new operative obligations, thresholds or enforcement rows. Target instrument IDs are empty because the registry IDs are not known from this part. Internal inconsistencies: the § 1033.421(i) discussion cites 'proposed § 1033.421(c)(4)' for the maximum-duration provision, while earlier text cites 'proposed § 1033.421(b)(4)'; and the § 1033.421(g) discussion says the CFPB is 'not modifying § 1033.421(c)' regarding the data provider name, which appears to concern the authorization disclosure. This part is Federal Register preamble (Parts V and VI: effective date, CFPA 1022(b) analysis, costs and benefits). It contains no operative provisions, so no obligations, thresholds, events or definitions are coded here. Relations and entities come from preamble statements and footnotes. Where a target is not in the registry, target_instrument_id is an empty string. The text states that the amendment to part 1001 needs no compliance date and gives a 60-day effective date. Data provider compliance dates (April 1, 2026 to April 1, 2030, per 12 CFR 1033.121) are stated here by reference and belong to the operative provisions annotated elsewhere. Part 7 covers the preamble severability section (X), the end matter (authority, amendments to 12 CFR 1001.2, codified 12 CFR part 1033 §§ 1033.101 to 1033.441 and Appendix A to part 1033), and the preamble sections VII to IX as context. Only relations and entities are annotated here. The severability clause in section X is not codified but is stated to be operative; footnote 227 lists the severable provisions and subpart D is treated as inseparable from the data-provider obligations. Internal inconsistency: instruction 2 says to add paragraphs (b) and (c) to § 1001.2, but paragraph (c) is text marked [Reserved]. Section 1033.111(d) covers depository institutions at or below the SBA size standard; section 1033.121(c) sets a reasonable time after crossing the size standard, not to exceed five years. The codified text cross-refers to the CFPA and to Regulations E and Z by CFR cite only; no LEI or ticker values are given in this part.",
+ "events": [
+  {
+   "event": "entry_into_force",
+   "date": "2025-01-17",
+   "date_type": "absolute",
+   "date_text": "This final rule is effective January 17, 2025.",
+   "applies_to": "final rule (12 CFR parts 1001 and 1033)",
+   "evidence": {
+    "provision": "DATES",
+    "quote": "This final rule is effective January 17, 2025."
+   }
+  },
+  {
+   "event": "published",
+   "date": "2024-11-18",
+   "date_type": "absolute",
+   "date_text": "Monday, November 18, 2024",
+   "applies_to": "final rule (Federal Register, Vol. 89, No. 222)",
+   "evidence": {
+    "provision": "Front matter (Federal Register header)",
+    "quote": "Federal Register / Vol. 89, No. 222 / Monday, November 18, 2024 / Rules and Regulations"
+   }
+  },
+  {
+   "event": "proposed",
+   "date": "2023-10-19",
+   "date_type": "absolute",
+   "date_text": "On October 19, 2023, the CFPB released the notice of proposed rulemaking",
+   "applies_to": "proposed rule (notice of proposed rulemaking)",
+   "evidence": {
+    "provision": "II.B (Summary of the Proposed Rule)",
+    "quote": "On October 19, 2023, the CFPB released the notice of proposed rulemaking"
+   }
+  },
+  {
+   "event": "consultation",
+   "date": "2023-12-29",
+   "date_type": "absolute",
+   "date_text": "the public comment period closed on December 29, 2023",
+   "applies_to": "proposed rule comment period",
+   "evidence": {
+    "provision": "II.B (Summary of the Proposed Rule)",
+    "quote": "the public comment period closed on December 29, 2023"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2026-04-01",
+   "date_type": "absolute",
+   "date_text": "must comply by April 1, 2026",
+   "applies_to": "tier 1: depository institution data providers with at least $250 billion in total assets and nondepository data providers with at least $10 billion in total receipts in 2023 or 2024; subparts B and C",
+   "evidence": {
+    "provision": "IV.A.5 (Compliance Dates, § 1033.121(b) as finalized)",
+    "quote": "must comply by April 1, 2026"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2027-04-01",
+   "date_type": "absolute",
+   "date_text": "must comply by April 1, 2027",
+   "applies_to": "tier 2: depository institution data providers with at least $10 billion and less than $250 billion in total assets; nondepository data providers with less than $10 billion in total receipts in both 2023 and 2024; subparts B and C",
+   "evidence": {
+    "provision": "IV.A.5 (Compliance Dates, § 1033.121(b) as finalized)",
+    "quote": "must comply by April 1, 2027"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2028-04-01",
+   "date_type": "absolute",
+   "date_text": "must comply by April 1, 2028",
+   "applies_to": "tier 3: depository institution data providers with at least $3 billion and less than $10 billion in total assets; subparts B and C",
+   "evidence": {
+    "provision": "IV.A.5 (Compliance Dates, § 1033.121(b) as finalized)",
+    "quote": "must comply by April 1, 2028"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2029-04-01",
+   "date_type": "absolute",
+   "date_text": "must comply by April 1, 2029",
+   "applies_to": "tier 4: depository institution data providers with at least $1.5 billion and less than $3 billion in total assets; subparts B and C",
+   "evidence": {
+    "provision": "IV.A.5 (Compliance Dates, § 1033.121(b) as finalized)",
+    "quote": "must comply by April 1, 2029"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2030-04-01",
+   "date_type": "absolute",
+   "date_text": "must comply by April 1, 2030",
+   "applies_to": "tier 5: depository institution data providers with less than $1.5 billion and more than $850 million in total assets; subparts B and C",
+   "evidence": {
+    "provision": "IV.A.5 (Compliance Dates, § 1033.121(b) as finalized)",
+    "quote": "must comply by April 1, 2030"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "the reasonable amount of time shall not exceed five years",
+   "depends_on": "Depository institution data provider that held total assets at or below the SBA size standard at the effective date and later crosses the threshold; period counted from the submission of its fourth call report used in the asset calculation under § 1033.111(d)(2)",
+   "applies_to": "depository institution data providers that subsequently cross the total asset threshold; subparts B and C",
+   "offset_value": 5,
+   "offset_unit": "years",
+   "evidence": {
+    "provision": "IV.A.5 (Compliance Dates, § 1033.121(c) as finalized)",
+    "quote": "the reasonable amount of time shall not exceed five years"
+   }
+  },
+  {
+   "event": "published",
+   "date": "2024-11-18",
+   "date_type": "absolute",
+   "date_text": "Monday, November 18, 2024",
+   "applies_to": "Federal Register, Vol. 89, No. 222, Rules and Regulations (page header of the final rule)",
+   "evidence": {
+    "provision": "Federal Register page header, Vol. 89, No. 222 (part 2 of 7)",
+    "quote": "Federal Register / Vol. 89, No. 222 / Monday, November 18, 2024 / Rules and Regulations"
+   }
+  },
+  {
+   "event": "proposed",
+   "date": "2023-10-31",
+   "date_type": "absolute",
+   "date_text": "88 FR 74796, 74797 (Oct. 31, 2023)",
+   "applies_to": "Proposed rule (88 FR 74796), cited in the preamble",
+   "evidence": {
+    "provision": "Preamble, Subpart B discussion (part 2 of 7), citing 88 FR 74796",
+    "quote": "88 FR 74796, 74797 (Oct. 31, 2023)"
+   }
+  },
+  {
+   "event": "published",
+   "date": "2024-11-18",
+   "date_type": "absolute",
+   "date_text": "Monday, November 18, 2024",
+   "applies_to": "Final rule as published in the Federal Register (Vol. 89, No. 222)",
+   "evidence": {
+    "provision": "Federal Register page header, 89 FR 90890",
+    "quote": "Federal Register / Vol. 89, No. 222 / Monday, November 18, 2024 / Rules and Regulations"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "on or before the final day of each calendar month",
+   "applies_to": "Disclosure of the response rate achieved in the previous calendar month under § 1033.341(d)",
+   "evidence": {
+    "provision": "§ 1033.341(d) (preamble discussion)",
+    "quote": "Final § 1033.341(d) requires a data provider to disclose, on or before the final day of each calendar month"
+   }
+  },
+  {
+   "event": "published",
+   "date": "2024-11-18",
+   "date_type": "absolute",
+   "date_text": "Monday, November 18, 2024",
+   "applies_to": "Federal Register publication of the final rule (Vol. 89, No. 222, Rules and Regulations)",
+   "evidence": {
+    "provision": "Federal Register page header, preamble (pp. 90915-90938)",
+    "quote": "Federal Register / Vol. 89, No. 222 / Monday, November 18, 2024"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": null,
+   "date_type": "not_stated",
+   "date_text": "final rule’s effective date",
+   "applies_to": "covered data accessed by third parties before the effective date, to which the final rule does not apply",
+   "evidence": {
+    "provision": "Preamble, part IV.D (Other Concerns Related to the Proposed Approach to Authorizing Third Party Data Access)",
+    "quote": "the final rule does not apply to covered data accessed by third parties prior to the final rule’s effective date"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "no later than the anniversary of the most recent authorization from the consumer",
+   "anchor": "most recent authorization from the consumer",
+   "depends_on": "consumer's most recent authorization",
+   "applies_to": "third party collecting covered data beyond the one-year maximum duration (§ 1033.421(b)(3))",
+   "evidence": {
+    "provision": "Preamble, part IV.D.4, discussion of § 1033.421(b)(3)",
+    "quote": "the third party will obtain a new authorization from the consumer pursuant to § 1033.401 no later than the anniversary of the most recent authorization from the consumer"
+   }
+  },
+  {
+   "event": "published",
+   "date": "2024-11-18",
+   "date_type": "absolute",
+   "date_text": "Monday, November 18, 2024",
+   "applies_to": "Final rule as published in the Federal Register (Vol. 89, No. 222)",
+   "evidence": {
+    "provision": "Federal Register page header, Vol. 89, No. 222 (part 5 of 7)",
+    "quote": "Federal Register / Vol. 89, No. 222 / Monday, November 18, 2024 / Rules and Regulations"
+   }
+  },
+  {
+   "event": "consultation",
+   "date": "2016",
+   "date_type": "absolute",
+   "date_text": "In 2016, the CFPB released and received comments on an RFI on consumer rights to access financial data.",
+   "applies_to": "rulemaking on consumer financial data access (CFPA section 1033)",
+   "evidence": {
+    "provision": "Part VI.B (Data and Evidence)",
+    "quote": "In 2016, the CFPB released and received comments on an RFI on consumer rights to access financial data."
+   }
+  },
+  {
+   "event": "consultation",
+   "date": "2020",
+   "date_type": "absolute",
+   "date_text": "Later in 2020, the CFPB released and received comments on an ANPR.",
+   "applies_to": "rulemaking on consumer financial data access (CFPA section 1033)",
+   "evidence": {
+    "provision": "Part VI.B (Data and Evidence)",
+    "quote": "Later in 2020, the CFPB released and received comments on an ANPR."
+   }
+  },
+  {
+   "event": "consultation",
+   "date": "2023",
+   "date_type": "absolute",
+   "date_text": "In 2023, the CFPB convened a SBREFA Panel to gather input from small businesses",
+   "applies_to": "rulemaking on consumer financial data access (SBREFA process)",
+   "evidence": {
+    "provision": "Part VI.B (Data and Evidence)",
+    "quote": "In 2023, the CFPB convened a SBREFA Panel to gather input from small businesses"
+   }
+  },
+  {
+   "event": "proposed",
+   "date": "2023-10-31",
+   "date_type": "absolute",
+   "date_text": "Later in 2023, the CFPB issued its proposed rule (88 FR 74796 (Oct. 31, 2023))",
+   "applies_to": "proposed rule on personal financial data rights",
+   "evidence": {
+    "provision": "Part VI.B, footnote 136",
+    "quote": "See 88 FR 74796 (Oct. 31, 2023)"
+   }
+  },
+  {
+   "event": "published",
+   "date": "2024-11-18",
+   "date_type": "absolute",
+   "date_text": "Monday, November 18, 2024",
+   "applies_to": "final rule (Federal Register publication, Vol. 89, No. 222)",
+   "evidence": {
+    "provision": "Federal Register page header, Vol. 89, No. 222",
+    "quote": "Federal Register / Vol. 89, No. 222 / Monday, November 18, 2024"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2025-01-17",
+   "date_type": "relative",
+   "date_text": "60 days after the rule is published in the Federal Register",
+   "anchor": "publication in the Federal Register",
+   "applies_to": "final rule",
+   "offset_value": 60,
+   "offset_unit": "days",
+   "anchor_event": "published",
+   "evidence": {
+    "provision": "Part V (Effective and Compliance Dates)",
+    "quote": "The effective date of the final rule is 60 days after the rule is published in the Federal Register."
+   },
+   "date_computed_from": "published 2024-11-18 (text) + 60 days"
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2026-04-01",
+   "date_type": "absolute",
+   "date_text": "April 1, 2026",
+   "depends_on": "criteria set forth in § 1033.121(c)",
+   "applies_to": "data providers required to comply with subparts B and C, by the cohort criteria in § 1033.121(c) (cohort not stated in this part)",
+   "evidence": {
+    "provision": "Part V (Effective and Compliance Dates); cross-reference 12 CFR 1033.121",
+    "quote": "data providers must comply with the requirements in subparts B and C beginning April 1, 2026; April 1, 2027; April 1, 2028; April 1, 2029; or April 1, 2030"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "on a monthly basis",
+   "applies_to": "data providers (disclosure of response rate for third-party data access)",
+   "evidence": {
+    "provision": "Part VI.E.1 (Developing and Implementing Policies and Procedures)",
+    "quote": "The rule requires data providers to calculate and disclose the response rate for third party data access on a monthly basis."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "before the first anniversary of the consumer's most recent authorization",
+   "anchor": "consumer's most recent authorization",
+   "applies_to": "authorized third parties collecting covered data (reauthorization)",
+   "evidence": {
+    "provision": "Part VI.E.1 (Annual Reauthorization Process)",
+    "quote": "Third parties will be required to obtain a new authorization from the consumer before the first anniversary of the consumer's most recent authorization"
+   }
+  },
+  {
+   "event": "published",
+   "date": "2024-11-18",
+   "date_type": "absolute",
+   "date_text": "Monday, November 18, 2024",
+   "applies_to": "Federal Register publication of the final rule",
+   "evidence": {
+    "provision": "Federal Register header (Vol. 89, No. 222, p. 90981 et seq.)",
+    "quote": "Monday, November 18, 2024"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2026-04-01",
+   "date_type": "absolute",
+   "date_text": "April 1, 2026, for depository institution data providers that hold at least $250 billion in total assets and nondepository institution data providers that generated at least $10 billion in total receipts in either calendar year 2023 or calendar year 2024",
+   "applies_to": "depository institution data providers with at least $250 billion in total assets; nondepository institution data providers with at least $10 billion in total receipts in 2023 or 2024",
+   "evidence": {
+    "provision": "§ 1033.121(b)(1)",
+    "quote": "April 1, 2026, for depository institution data providers that hold at least $250 billion in total assets"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2027-04-01",
+   "date_type": "absolute",
+   "date_text": "April 1, 2027, for data providers that are: (i) Depository institutions that hold at least $10 billion in total assets but less than $250 billion in total assets; or (ii) Nondepository institutions that did not generate $10 billion or more in total receipts in both calendar year 2023 and calendar year 2024.",
+   "applies_to": "depository institutions with at least $10 billion but less than $250 billion in total assets; nondepository institutions not meeting the $10 billion receipts test in both 2023 and 2024",
+   "evidence": {
+    "provision": "§ 1033.121(b)(2)",
+    "quote": "April 1, 2027, for data providers that are:"
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2028-04-01",
+   "date_type": "absolute",
+   "date_text": "April 1, 2028, for depository institution data providers that hold at least $3 billion in total assets but less than $10 billion in total assets.",
+   "applies_to": "depository institution data providers with at least $3 billion but less than $10 billion in total assets",
+   "evidence": {
+    "provision": "§ 1033.121(b)(3)",
+    "quote": "April 1, 2028, for depository institution data providers that hold at least $3 billion in total assets but less than $10 billion in total assets."
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2029-04-01",
+   "date_type": "absolute",
+   "date_text": "April 1, 2029, for depository institution data providers that hold at least $1.5 billion in total assets but less than $3 billion in total assets.",
+   "applies_to": "depository institution data providers with at least $1.5 billion but less than $3 billion in total assets",
+   "evidence": {
+    "provision": "§ 1033.121(b)(4)",
+    "quote": "April 1, 2029, for depository institution data providers that hold at least $1.5 billion in total assets but less than $3 billion in total assets."
+   }
+  },
+  {
+   "event": "phase_in_step",
+   "date": "2030-04-01",
+   "date_type": "absolute",
+   "date_text": "April 1, 2030, for depository institution data providers that hold less than $1.5 billion in total assets but more than $850 million in total assets.",
+   "applies_to": "depository institution data providers with less than $1.5 billion but more than $850 million in total assets",
+   "evidence": {
+    "provision": "§ 1033.121(b)(5)",
+    "quote": "April 1, 2030, for depository institution data providers that hold less than $1.5 billion in total assets but more than $850 million in total assets."
+   }
+  },
+  {
+   "event": "application",
+   "date": "2025-01-17",
+   "date_type": "absolute",
+   "date_text": "as of or at any point after January 17, 2025",
+   "applies_to": "depository institution coverage determination under the SBA size standard test in § 1033.111(d)",
+   "evidence": {
+    "provision": "§ 1033.111(d)",
+    "quote": "as of or at any point after January 17, 2025"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "within a reasonable amount of time after exceeding the size standard, not to exceed five years",
+   "anchor": "exceeding the SBA size standard",
+   "depends_on": "depository institution data provider subsequently holds total assets above the SBA size standard",
+   "applies_to": "depository institution data providers that subsequently cross the coverage threshold",
+   "offset_value": 5,
+   "offset_unit": "years",
+   "evidence": {
+    "provision": "§ 1033.121(c)",
+    "quote": "within a reasonable amount of time after exceeding the size standard, not to exceed five years"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "On or before the final day of each calendar month",
+   "applies_to": "data providers disclosing developer interface response rate performance",
+   "evidence": {
+    "provision": "§ 1033.341(d)",
+    "quote": "On or before the final day of each calendar month"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "no later than the anniversary of the most recent authorization from the consumer",
+   "anchor": "consumer's most recent authorization",
+   "depends_on": "consumer's most recent authorization",
+   "applies_to": "authorized third parties collecting covered data beyond the one-year maximum period",
+   "offset_value": 1,
+   "offset_unit": "years",
+   "evidence": {
+    "provision": "§ 1033.421(b)(3)",
+    "quote": "no later than the anniversary of the most recent authorization from the consumer"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2024-11-18",
+   "date_type": "relative",
+   "date_text": "at least 60 days prior to the rule’s published effective date",
+   "anchor": "rule's published effective date",
+   "applies_to": "CFPB submission of report containing the rule to Congress and the Comptroller General",
+   "offset_value": -60,
+   "offset_unit": "days",
+   "anchor_event": "entry_into_force",
+   "evidence": {
+    "provision": "Part IX (Congressional Review Act)",
+    "quote": "at least 60 days prior to the rule’s published effective date"
+   },
+   "date_computed_from": "entry_into_force 2025-01-17 (text) + -60 days"
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "within 10 days, written explanation of any material change to information that was submitted with your application or during recognition",
+   "anchor": "material change to information submitted by a recognized standard setter",
+   "depends_on": "material change to information submitted with application or during recognition",
+   "applies_to": "recognized standard setters",
+   "offset_value": 10,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Appendix A to Part 1033, Step Five",
+    "quote": "within 10 days, written explanation of any material change"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "at least 180 days before expiration",
+   "anchor": "expiration of standard-setter recognition",
+   "depends_on": "expiration of the standard setter's recognition",
+   "applies_to": "standard setters seeking re-recognition",
+   "offset_value": -180,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Appendix A to Part 1033, Step Five",
+    "quote": "at least 180 days before expiration"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "other",
+   "variable_text": "total assets of a depository institution data provider, averaged over four preceding quarterly call report submissions",
+   "operator": "<=",
+   "value": 850000000,
+   "value_text": "equal to or less than the SBA size standard for the data provider's appropriate NAICS code; the current size standard is $850 million",
+   "unit": "USD",
+   "currency": "USD",
+   "measurement": "average of total assets reported on the four preceding quarterly call report submissions to the FFIEC or NCUA; SBA re-evaluates the size standard at least once every five years",
+   "level": "entity",
+   "trigger": "exclusion",
+   "consequence": "Depository institution data providers at or below the SBA size standard are not subject to the requirements of subparts B and C",
+   "conditions": "Applies to data providers under § 1033.111(c)(1) through (3) that are depository institutions; an institution above the standard as of the effective date remains subject to subparts B and C if it later falls below it",
+   "depends_on": "13 CFR 121.201 (SBA size standard)",
+   "evidence": {
+    "provision": "Part IV.A.4 (§ 1033.111(d))",
+    "quote": "The current size standard for all the relevant NAICS codes is $850 million."
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "total assets of a depository institution data provider",
+   "operator": ">=",
+   "value": 250000000000,
+   "value_text": "hold at least $250 billion in total assets",
+   "unit": "USD",
+   "currency": "USD",
+   "measurement": "average of total assets on call report submissions for 2023 third quarter, 2023 fourth quarter, 2024 first quarter and 2024 second quarter",
+   "level": "entity",
+   "trigger": "phase_in",
+   "consequence": "First-tier compliance date for depository institution data providers: April 1, 2026",
+   "conditions": "Tier assignment for depository institution data providers; applies together with the nondepository receipts test in the same tier",
+   "evidence": {
+    "provision": "Part IV.A.5 (describing § 1033.121(b))",
+    "quote": "depository institution data providers that hold at least $250 billion in total assets"
+   }
+  },
+  {
+   "variable": "revenue_annual",
+   "variable_text": "total receipts of a nondepository institution data provider in calendar year 2023 or 2024",
+   "operator": ">=",
+   "value": 10000000000,
+   "value_text": "generated at least $10 billion in total receipts in either calendar year 2023 or calendar year 2024",
+   "unit": "USD",
+   "currency": "USD",
+   "measurement": "total receipts calculated under the SBA definition of receipts in 13 CFR 121.104(a)",
+   "level": "entity",
+   "trigger": "phase_in",
+   "consequence": "First-tier compliance date for nondepository institution data providers: April 1, 2026",
+   "conditions": "Nondepository institution data provider; nondepository providers with less than $10 billion in total receipts in both 2023 and 2024 fall in the second tier, with compliance by April 1, 2027",
+   "evidence": {
+    "provision": "Part IV.A.5 (describing § 1033.121(b))",
+    "quote": "nondepository institution data providers that generated at least $10 billion in total receipts in either calendar year 2023 or calendar year 2024"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "total assets of a depository institution data provider",
+   "operator": "range",
+   "value": 10000000000,
+   "value_max": 250000000000,
+   "value_text": "hold at least $10 billion in total assets but less than $250 billion in total assets",
+   "unit": "USD",
+   "currency": "USD",
+   "measurement": "average of total assets on call report submissions for 2023 third quarter, 2023 fourth quarter, 2024 first quarter and 2024 second quarter",
+   "level": "entity",
+   "trigger": "phase_in",
+   "consequence": "Second-tier compliance date for depository institution data providers: April 1, 2027",
+   "conditions": "Lower bound inclusive ('at least'), upper bound exclusive ('less than')",
+   "evidence": {
+    "provision": "Part IV.A.5 (describing § 1033.121(b))",
+    "quote": "depository institution data providers that hold at least $10 billion in total assets but less than $250 billion in total assets"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "total assets of a depository institution data provider",
+   "operator": "range",
+   "value": 3000000000,
+   "value_max": 10000000000,
+   "value_text": "hold at least $3 billion in total assets but less than $10 billion in total assets",
+   "unit": "USD",
+   "currency": "USD",
+   "measurement": "average of total assets on call report submissions for 2023 third quarter, 2023 fourth quarter, 2024 first quarter and 2024 second quarter",
+   "level": "entity",
+   "trigger": "phase_in",
+   "consequence": "Third-tier compliance date for depository institution data providers: April 1, 2028",
+   "conditions": "Lower bound inclusive ('at least'), upper bound exclusive ('less than')",
+   "evidence": {
+    "provision": "Part IV.A.5 (describing § 1033.121(b))",
+    "quote": "depository institution data providers that hold at least $3 billion in total assets but less than $10 billion in total assets"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "total assets of a depository institution data provider",
+   "operator": "range",
+   "value": 1500000000,
+   "value_max": 3000000000,
+   "value_text": "hold at least $1.5 billion in total assets but less than $3 billion in total assets",
+   "unit": "USD",
+   "currency": "USD",
+   "measurement": "average of total assets on call report submissions for 2023 third quarter, 2023 fourth quarter, 2024 first quarter and 2024 second quarter",
+   "level": "entity",
+   "trigger": "phase_in",
+   "consequence": "Fourth-tier compliance date for depository institution data providers: April 1, 2029",
+   "conditions": "Lower bound inclusive ('at least'), upper bound exclusive ('less than')",
+   "evidence": {
+    "provision": "Part IV.A.5 (describing § 1033.121(b))",
+    "quote": "depository institution data providers that hold at least $1.5 billion in total assets but less than $3 billion in total assets"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "total assets of a depository institution data provider",
+   "operator": "range",
+   "value": 850000000,
+   "value_max": 1500000000,
+   "value_text": "hold less than $1.5 billion in total assets but more than $850 million in total assets",
+   "unit": "USD",
+   "currency": "USD",
+   "measurement": "average of total assets on call report submissions for 2023 third quarter, 2023 fourth quarter, 2024 first quarter and 2024 second quarter",
+   "level": "entity",
+   "trigger": "phase_in",
+   "consequence": "Final-tier compliance date for depository institution data providers above the coverage threshold: April 1, 2030",
+   "conditions": "Lower bound exclusive ('more than $850 million') and upper bound exclusive ('less than $1.5 billion')",
+   "evidence": {
+    "provision": "Part IV.A.5 (describing § 1033.121(b))",
+    "quote": "depository institution data providers that hold less than $1.5 billion in total assets but more than $850 million in total assets"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "duration of collection of covered data under a single authorization",
+   "operator": "<=",
+   "value": 1,
+   "value_text": "a maximum period of one year",
+   "unit": "years",
+   "measurement": "per authorization; a new authorization is required no later than the anniversary of the most recent authorization",
+   "level": "entity",
+   "trigger": "cap",
+   "consequence": "Authorized third party must certify that it limits collection duration to this maximum and must cease collection absent a new authorization",
+   "conditions": "Certification made by an authorized third party under subpart D of part 1033",
+   "evidence": {
+    "provision": "Part I.A (Authorized Third Parties)",
+    "quote": "limit the duration of collection of covered data pursuant to a given authorization to a maximum period of one year"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "retention period for records evidencing compliance by a third party",
+   "operator": ">=",
+   "value": 3,
+   "value_text": "not less than three years after a third party obtains the consumer’s most recent authorization",
+   "unit": "years",
+   "measurement": "counted from the third party's receipt of the consumer's most recent authorization",
+   "level": "entity",
+   "trigger": "obligation",
+   "consequence": "Third party must maintain written policies and procedures to retain compliance records for at least this period",
+   "conditions": "Applies to a third party that is a covered person or service provider as defined in the CFPA (12 U.S.C. 5481(6) and (26))",
+   "evidence": {
+    "provision": "Part I.A (Policies and Procedures, and Recordkeeping for Data Providers and Third Parties)",
+    "quote": "not less than three years after a third party obtains the consumer’s most recent authorization"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "historical transaction information (24-month safe harbor)",
+   "operator": ">=",
+   "value": 24,
+   "value_text": "at least 24 months of such information",
+   "unit": "months",
+   "measurement": "Amount of historical transaction information the data provider makes available under § 1033.211(a)",
+   "level": "entity",
+   "trigger": "presumption",
+   "consequence": "Data provider is deemed to make available sufficient historical transaction information for § 1033.201(a)",
+   "conditions": "Applies to the historical transaction information category in § 1033.211(a)",
+   "evidence": {
+    "provision": "Preamble, § 1033.301(b) discussion (describing § 1033.211(a))",
+    "quote": "Section 1033.211(a) provides that a data provider is deemed to make available sufficient historical transaction information if it makes available at least 24 months of such information."
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "asset size",
+   "operator": ">",
+   "value": null,
+   "value_text": "above a certain asset size",
+   "unit": "",
+   "level": "entity",
+   "trigger": "scope_definition",
+   "consequence": "A depository institution data provider above that asset size is subject to part 1033",
+   "conditions": "Application of part 1033 to depository institution data providers",
+   "depends_on": "Asset size figure is not stated in this part of the document",
+   "evidence": {
+    "provision": "Preamble, discussion of the consumer interface definition",
+    "quote": "it is determined by whether the data provider is above a certain asset size"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "small business as defined in SBA's regulations",
+   "operator": "=",
+   "value": null,
+   "value_text": "small businesses as defined in SBA’s regulations",
+   "unit": "",
+   "level": "entity",
+   "trigger": "exclusion",
+   "consequence": "The final rule does not apply to depository institutions that are such small businesses",
+   "conditions": "Applies irrespective of whether the institution has a consumer interface",
+   "depends_on": "SBA regulations (size class defined in another law)",
+   "evidence": {
+    "provision": "Preamble, discussion of fee prohibition (§ 1033.301(c)) and rule cost reductions",
+    "quote": "the final rule does not apply to depository institutions that are small businesses as defined in SBA’s regulations"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "response rate of the developer interface (proper responses in each calendar month)",
+   "operator": ">=",
+   "value": 99.5,
+   "value_text": "equal to or greater than 99.5 percent in each calendar month",
+   "unit": "percent",
+   "measurement": "Calendar-month response rate for the developer interface, measured on proper responses to requests for covered data (per the preamble's description of final § 1033.311(c)(1)); responses during unscheduled downtime are excluded from proper responses",
+   "level": "service",
+   "trigger": "obligation",
+   "consequence": "Developer interface performance below this level cannot constitute commercially reasonable performance under § 1033.311(c) (preamble)",
+   "conditions": "Applies to the proper response rate under § 1033.311(c)(1); the minimum is not a safe harbor for commercial reasonableness under § 1033.311(c)",
+   "evidence": {
+    "provision": "§ 1033.311(c)(1) (as described in preamble, Final Rule discussion)",
+    "quote": "requires that the response rate be equal to or greater than 99.5 percent ‘‘in each calendar month,’’"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "maximum duration of collection of covered data after the consumer's most recent authorization",
+   "operator": "<=",
+   "value": 1,
+   "value_text": "a maximum durational limit of one year after the consumer’s most recent authorization",
+   "unit": "years",
+   "measurement": "Duration measured from the consumer's most recent authorization; a third party may collect beyond this period only with a new authorization obtained no later than the anniversary of the most recent authorization",
+   "level": "entity",
+   "trigger": "cap",
+   "consequence": "Third party may not collect covered data beyond one year after the most recent authorization unless it obtains a new authorization",
+   "conditions": "Applies unless the consumer provides a new authorization under § 1033.401 before the period ends",
+   "evidence": {
+    "provision": "§ 1033.421(b)(2) (preamble discussion)",
+    "quote": "the CFPB is finalizing in § 1033.421(b)(2) a maximum durational limit of one year after the consumer’s most recent authorization"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "maximum durational period of third-party authorization (one year)",
+   "operator": "=",
+   "value": 1,
+   "value_text": "not providing a new authorization after one year",
+   "unit": "years",
+   "measurement": "period running from the consumer's authorization; applies if no new authorization is provided",
+   "level": "service",
+   "trigger": "prohibition",
+   "consequence": "Absent a new authorization, the third party must stop collecting covered data, and may use or retain previously collected data only as reasonably necessary to provide the requested product or service.",
+   "conditions": "Consumer does not provide a new authorization, or revokes; continued use or retention may be justified in specific circumstances under the general standard.",
+   "evidence": {
+    "provision": "§ 1033.421(i)(2) (preamble, Final Rule discussion)",
+    "quote": "not providing a new authorization after one year"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "minimum retention period for records evidencing compliance with subpart D (three years)",
+   "operator": ">=",
+   "value": 3,
+   "value_text": "three-year length of the retention requirement in § 1033.441(b), as finalized as proposed",
+   "unit": "years",
+   "measurement": "period running from the third party's most recent authorization under § 1033.401(a)",
+   "level": "entity",
+   "trigger": "obligation",
+   "consequence": "Third party must retain records evidencing compliance with subpart D for at least this period.",
+   "conditions": "Records must be retained under the policies and procedures required by § 1033.441(a); the period is a reasonable period of not less than three years.",
+   "evidence": {
+    "provision": "§ 1033.441(b) (preamble, Final Rule discussion)",
+    "quote": "retention requirement in § 1033.441(b) is appropriate"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "total assets (depository institution coverage threshold)",
+   "operator": "<=",
+   "value": null,
+   "value_text": "equal to or less than the Small Business Administration (SBA) size standard, as determined in accordance with this paragraph (d)",
+   "unit": "USD total assets",
+   "currency": "USD",
+   "measurement": "average of total assets reported on the depository institution's own four preceding quarterly call report submissions (§ 1033.111(d)(2))",
+   "level": "entity",
+   "trigger": "exemption",
+   "consequence": "Subparts B and C of part 1033 do not apply to depository institution data providers at or below the SBA size standard; once the standard is exceeded, those subparts continue to apply if assets later fall below it",
+   "conditions": "Applies to data providers defined in § 1033.111(c)(1) through (3) that are depository institutions",
+   "depends_on": "SBA size standard for the data provider's NAICS code, as codified in 13 CFR 121.201",
+   "evidence": {
+    "provision": "§ 1033.111(d)",
+    "quote": "hold total assets equal to or less than the Small Business Administration (SBA) size standard"
+   }
+  },
+  {
+   "variable": "revenue_annual",
+   "variable_text": "total receipts (nondepository institution data providers)",
+   "operator": ">=",
+   "value": 10000000000,
+   "value_text": "generated at least $10 billion in total receipts in either calendar year 2023 or calendar year 2024",
+   "unit": "USD",
+   "currency": "USD",
+   "measurement": "total receipts for calendar year 2023 or 2024, calculated under the SBA definition of receipts (13 CFR 121.104(a)) (§ 1033.121(a)(2))",
+   "level": "entity",
+   "trigger": "phase_in",
+   "consequence": "Subparts B and C of part 1033 apply to the data provider from April 1, 2026",
+   "conditions": "Nondepository institution data provider; met in either calendar year 2023 or 2024",
+   "evidence": {
+    "provision": "§ 1033.121(b)(1)",
+    "quote": "nondepository institution data providers that generated at least $10 billion in total receipts in either calendar year 2023 or calendar year 2024"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "total assets (depository institution data providers)",
+   "operator": ">=",
+   "value": 250000000000,
+   "value_text": "hold at least $250 billion in total assets",
+   "unit": "USD",
+   "currency": "USD",
+   "measurement": "average of assets reported on 2023 third quarter, 2023 fourth quarter, 2024 first quarter and 2024 second quarter call reports (§ 1033.121(a)(1))",
+   "level": "entity",
+   "trigger": "phase_in",
+   "consequence": "Subparts B and C of part 1033 apply to the data provider from April 1, 2026",
+   "conditions": "Depository institution data provider",
+   "evidence": {
+    "provision": "§ 1033.121(b)(1)",
+    "quote": "depository institution data providers that hold at least $250 billion in total assets"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "total assets (depository institution data providers)",
+   "operator": "range",
+   "value": 10000000000,
+   "value_max": 250000000000,
+   "value_text": "hold at least $10 billion in total assets but less than $250 billion in total assets",
+   "unit": "USD",
+   "currency": "USD",
+   "measurement": "average of assets reported on 2023 third quarter, 2023 fourth quarter, 2024 first quarter and 2024 second quarter call reports (§ 1033.121(a)(1))",
+   "level": "entity",
+   "trigger": "phase_in",
+   "consequence": "Subparts B and C of part 1033 apply to the data provider from April 1, 2027",
+   "conditions": "Depository institution data provider",
+   "evidence": {
+    "provision": "§ 1033.121(b)(2)(i)",
+    "quote": "Depository institutions that hold at least $10 billion in total assets but less than $250 billion in total assets"
+   }
+  },
+  {
+   "variable": "revenue_annual",
+   "variable_text": "total receipts (nondepository institution data providers)",
+   "operator": "<",
+   "value": 10000000000,
+   "value_text": "did not generate $10 billion or more in total receipts in both calendar year 2023 and calendar year 2024",
+   "unit": "USD",
+   "currency": "USD",
+   "measurement": "total receipts for calendar years 2023 and 2024, calculated under the SBA definition of receipts (§ 1033.121(a)(2))",
+   "level": "entity",
+   "trigger": "phase_in",
+   "consequence": "Subparts B and C of part 1033 apply to the data provider from April 1, 2027",
+   "conditions": "Nondepository institution data provider that did not meet the $10 billion receipts level in both calendar year 2023 and calendar year 2024",
+   "evidence": {
+    "provision": "§ 1033.121(b)(2)(ii)",
+    "quote": "Nondepository institutions that did not generate $10 billion or more in total receipts in both calendar year 2023 and calendar year 2024"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "total assets (depository institution data providers)",
+   "operator": "range",
+   "value": 3000000000,
+   "value_max": 10000000000,
+   "value_text": "hold at least $3 billion in total assets but less than $10 billion in total assets",
+   "unit": "USD",
+   "currency": "USD",
+   "measurement": "average of assets reported on 2023 third quarter, 2023 fourth quarter, 2024 first quarter and 2024 second quarter call reports (§ 1033.121(a)(1))",
+   "level": "entity",
+   "trigger": "phase_in",
+   "consequence": "Subparts B and C of part 1033 apply to the data provider from April 1, 2028",
+   "conditions": "Depository institution data provider",
+   "evidence": {
+    "provision": "§ 1033.121(b)(3)",
+    "quote": "depository institution data providers that hold at least $3 billion in total assets but less than $10 billion in total assets"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "total assets (depository institution data providers)",
+   "operator": "range",
+   "value": 1500000000,
+   "value_max": 3000000000,
+   "value_text": "hold at least $1.5 billion in total assets but less than $3 billion in total assets",
+   "unit": "USD",
+   "currency": "USD",
+   "measurement": "average of assets reported on 2023 third quarter, 2023 fourth quarter, 2024 first quarter and 2024 second quarter call reports (§ 1033.121(a)(1))",
+   "level": "entity",
+   "trigger": "phase_in",
+   "consequence": "Subparts B and C of part 1033 apply to the data provider from April 1, 2029",
+   "conditions": "Depository institution data provider",
+   "evidence": {
+    "provision": "§ 1033.121(b)(4)",
+    "quote": "depository institution data providers that hold at least $1.5 billion in total assets but less than $3 billion in total assets"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "total assets (depository institution data providers)",
+   "operator": "range",
+   "value": 850000000,
+   "value_max": 1500000000,
+   "value_text": "hold less than $1.5 billion in total assets but more than $850 million in total assets",
+   "unit": "USD",
+   "currency": "USD",
+   "measurement": "average of assets reported on 2023 third quarter, 2023 fourth quarter, 2024 first quarter and 2024 second quarter call reports (§ 1033.121(a)(1))",
+   "level": "entity",
+   "trigger": "phase_in",
+   "consequence": "Subparts B and C of part 1033 apply to the data provider from April 1, 2030",
+   "conditions": "Depository institution data provider",
+   "evidence": {
+    "provision": "§ 1033.121(b)(5)",
+    "quote": "depository institution data providers that hold less than $1.5 billion in total assets but more than $850 million in total assets"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "months of historical transaction information (safe harbor)",
+   "operator": ">=",
+   "value": 24,
+   "value_text": "at least 24 months of such information",
+   "unit": "months",
+   "measurement": "historical transaction information in the control or possession of the data provider",
+   "level": "product",
+   "trigger": "obligation",
+   "consequence": "Data provider is deemed to make available sufficient historical transaction information for purposes of § 1033.201(a)(1)",
+   "conditions": "Covered data described in § 1033.211(a) (transaction information)",
+   "evidence": {
+    "provision": "§ 1033.211(a)",
+    "quote": "if it makes available at least 24 months of such information"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "monthly response rate of the developer interface",
+   "operator": ">=",
+   "value": 99.5,
+   "value_text": "equal to or greater than 99.5 percent in each calendar month",
+   "unit": "percent",
+   "measurement": "proper responses divided by total requests for covered data, per calendar month; responses and requests during scheduled downtime excluded (§ 1033.311(c)(1)(i))",
+   "level": "service",
+   "trigger": "obligation",
+   "consequence": "Developer interface performance cannot be commercially reasonable if the response rate is below this specification",
+   "conditions": "Developer interface required under § 1033.301(a)",
+   "evidence": {
+    "provision": "§ 1033.311(c)(1)",
+    "quote": "must be equal to or greater than 99.5 percent in each calendar month"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "maximum duration of collection of covered data",
+   "operator": "<=",
+   "value": 1,
+   "value_text": "a maximum period of one year after the consumer’s most recent authorization",
+   "unit": "years",
+   "measurement": "period counted from the consumer's most recent authorization (§ 1033.421(b)(2))",
+   "level": "entity",
+   "trigger": "cap",
+   "consequence": "Third party must limit collection of covered data to one year after the most recent authorization; collection beyond that requires a new authorization",
+   "conditions": "Authorized third party collecting covered data on behalf of a consumer",
+   "evidence": {
+    "provision": "§ 1033.421(b)(2)",
+    "quote": "to a maximum period of one year after the consumer’s most recent authorization"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "maximum duration of collection of covered data (authorization disclosure statement)",
+   "operator": "<=",
+   "value": 1,
+   "value_text": "collection will not last longer than one year after the consumer’s most recent reauthorization",
+   "unit": "years",
+   "measurement": "period counted from the consumer's most recent reauthorization (§ 1033.411(b)(6))",
+   "level": "entity",
+   "trigger": "cap",
+   "consequence": "Authorization disclosure must state that collection will not last longer than one year after the most recent reauthorization",
+   "conditions": "Authorization disclosure provided by a third party under § 1033.411",
+   "evidence": {
+    "provision": "§ 1033.411(b)(6)",
+    "quote": "collection will not last longer than one year after the consumer’s most recent reauthorization"
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "data provider",
+   "defined_in": "§ 1033.111(c)",
+   "evidence": {
+    "provision": "Part IV.A.3 (§ 1033.111(c))",
+    "quote": "As in the proposal, § 1033.111(c) defines data provider to mean a covered person, as defined in 12 U.S.C. 5481(6), that is: (1) A financial institution, as defined in Regulation E, 12 CFR 1005.2(i)"
+   }
+  },
+  {
+   "term": "covered data",
+   "defined_in": "§ 1033.211 (cross-referenced in § 1033.131)",
+   "evidence": {
+    "provision": "Part I.A (Coverage)",
+    "quote": "‘‘covered data’’ includes information about transactions, costs, charges, and usage."
+   }
+  },
+  {
+   "term": "authorized third party",
+   "defined_in": "§ 1033.131 (cross-reference to § 1033.401)",
+   "evidence": {
+    "provision": "Part I.A (Coverage)",
+    "quote": "an authorized third party is a third party that has complied with the authorization procedures set forth in subpart D of part 1033"
+   }
+  },
+  {
+   "term": "covered consumer financial product or service",
+   "defined_in": "§ 1033.111(b)",
+   "evidence": {
+    "provision": "Part IV.A.3 (§ 1033.111(b)(3))",
+    "quote": "facilitation of payments from a Regulation E account or Regulation Z credit card, excluding products or services that merely facilitate first party payments"
+   }
+  },
+  {
+   "term": "consumer",
+   "defined_in": "12 U.S.C. 5481 (CFPA § 1002)",
+   "evidence": {
+    "provision": "Part III.A (CFPA Section 1033)",
+    "quote": "defining ‘‘consumer’’ as ‘‘an individual or an agent, trustee, or representative acting on behalf of an individual.’’"
+   }
+  },
+  {
+   "term": "screen scraping",
+   "defined_in": "Preamble, Part I.A, footnote 2",
+   "evidence": {
+    "provision": "Part I.A (footnote 2)",
+    "quote": "the term ‘‘screen scraping’’ in this final rule refers to credential-based screen scraping"
+   }
+  },
+  {
+   "term": "developer interface",
+   "defined_in": "Preamble, Part I.A (Access Requirements)",
+   "evidence": {
+    "provision": "Part I.A (Access Requirements)",
+    "quote": "The rule uses the term ‘‘developer interface’’ to refer to the functionality through which a data provider receives requests for covered data"
+   }
+  },
+  {
+   "term": "recognized standard setter",
+   "defined_in": "§ 1033.141(a) (cross-referenced in § 1033.131)",
+   "evidence": {
+    "provision": "Part IV.A.6 (§ 1033.131)",
+    "quote": "the term refers to a standard-setting body with certain attributes listed in § 1033.141(a)"
+   }
+  },
+  {
+   "term": "total assets (depository institution data provider)",
+   "defined_in": "§ 1033.111(d)(2)",
+   "evidence": {
+    "provision": "Part IV.A.4 (§ 1033.111(d)(2))",
+    "quote": "total assets held by a depository institution are determined by averaging the assets reported on its four preceding quarterly call report data submissions"
+   }
+  },
+  {
+   "term": "total receipts (nondepository institution data provider)",
+   "defined_in": "§ 1033.121(a)(2); SBA definition of receipts, 13 CFR 121.104(a)",
+   "evidence": {
+    "provision": "Part IV.A.5 (§ 1033.121(a)(2))",
+    "quote": "for nondepository institution data providers, total receipts are calculated based on the SBA definition of receipts"
+   }
+  },
+  {
+   "term": "financial products or services (financial data processing)",
+   "defined_in": "12 CFR 1001.2(b)",
+   "evidence": {
+    "provision": "Part I.A (Financial Products or Services, Part 1001)",
+    "quote": "The final rule defines financial products or services under the CFPA to ensure that it includes providing"
+   }
+  },
+  {
+   "term": "consumer",
+   "defined_in": "§ 1033.131",
+   "evidence": {
+    "provision": "Preamble, definition of consumer (§ 1033.131)",
+    "quote": "The CFPB proposed in § 1033.131 to define the term consumer for purposes of part 1033 to mean a natural person."
+   }
+  },
+  {
+   "term": "third party",
+   "defined_in": "§ 1033.131",
+   "evidence": {
+    "provision": "Preamble, definition of third party (§ 1033.131)",
+    "quote": "the final rule defines third party to mean any person that is not the consumer about whom the covered data pertains or the data provider that controls or possesses the consumer’s covered data"
+   }
+  },
+  {
+   "term": "data aggregator",
+   "defined_in": "§ 1033.131",
+   "evidence": {
+    "provision": "Preamble, definition of data aggregator (§ 1033.131)",
+    "quote": "data aggregator means a person that is retained by and provides services to the authorized third party to enable access to covered data"
+   }
+  },
+  {
+   "term": "depository institution",
+   "defined_in": "final rule (section not stated in this part); by reference to 12 U.S.C. 1813(c)(1) and 12 CFR 700.2",
+   "evidence": {
+    "provision": "Preamble, definition of depository institution",
+    "quote": "The definition of depository institution is any depository institution as defined in the Federal Deposit Insurance Act, 12 U.S.C. 1813(c)(1), or any credit union as defined in the NCUA’s regulation at 12 CFR 700.2."
+   }
+  },
+  {
+   "term": "developer interface",
+   "defined_in": "§ 1033.131",
+   "evidence": {
+    "provision": "Preamble, definition of developer interface (§ 1033.131)",
+    "quote": "functionality through which a data provider receives requests for covered data from authorized third parties and makes covered data available electronically in response to the requests"
+   }
+  },
+  {
+   "term": "consumer interface",
+   "defined_in": "§ 1033.131",
+   "evidence": {
+    "provision": "Preamble, definition of consumer interface (§ 1033.131)",
+    "quote": "an interface through which a data provider receives requests for covered data and makes available covered data in an electronic form usable by consumers in response to the requests"
+   }
+  },
+  {
+   "term": "covered data",
+   "defined_in": "§ 1033.211",
+   "evidence": {
+    "provision": "Preamble, Subpart B, covered data (§ 1033.211), In General",
+    "quote": "defining a list of categories of data that data providers must make available"
+   }
+  },
+  {
+   "term": "third party",
+   "defined_in": "Final rule (definition text not reproduced in this part); preamble states the term includes data aggregators",
+   "evidence": {
+    "provision": "Preamble, Denials Related to Risk Management (§ 1033.321(a)), footnote 74",
+    "quote": "the term ‘‘third party’’ is defined in the final rule to include data aggregators."
+   }
+  },
+  {
+   "term": "proper response",
+   "defined_in": "§ 1033.311(c)(1)(iv)",
+   "evidence": {
+    "provision": "§ 1033.311(c)(1)(iv) (as described in preamble, Final Rule discussion)",
+    "quote": "excludes from the proper response definition ‘‘any message provided during unscheduled downtime of the interface.’’"
+   }
+  },
+  {
+   "term": "consumer",
+   "defined_in": "CFPA section 1002(4) (12 U.S.C. 5481(4))",
+   "evidence": {
+    "provision": "Preamble, discussion of § 1033.311(c)(1) (citing CFPA section 1021(b))",
+    "quote": "consumers, defined in CFPA section 1002(4) to include consumers’ authorized third party representatives"
+   }
+  },
+  {
+   "term": "prudential regulator",
+   "defined_in": "12 U.S.C. 5481(24)",
+   "evidence": {
+    "provision": "§ 1033.321(a)(1)(i)",
+    "quote": "safety and soundness standards of a prudential regulator, as defined at 12 U.S.C. 5481(24), of the data provider"
+   }
+  },
+  {
+   "term": "targeted advertising",
+   "defined_in": "§ 1033.421(a)(2) (preamble statement of CFPB position)",
+   "evidence": {
+    "provision": "§ 1033.421(a)(2) (preamble discussion)",
+    "quote": "the CFPB intends to take the position that targeted advertising is advertising that comprises the identification or selection of prospective customers or the selection or placement of content to affect consumer engagement, including purchase or adoption behavior."
+   }
+  },
+  {
+   "term": "cross-selling of other products or services",
+   "defined_in": "§ 1033.421(a)(2) (preamble statement of CFPB position)",
+   "evidence": {
+    "provision": "§ 1033.421(a)(2) (preamble discussion)",
+    "quote": "Crossselling of other products and services is the advertising, sale, or referral of the third party’s own products or services to the third party’s existing customers."
+   }
+  },
+  {
+   "term": "data sales",
+   "defined_in": "§ 1033.421(a)(2) (preamble statement of CFPB position)",
+   "evidence": {
+    "provision": "§ 1033.421(a)(2) (preamble discussion)",
+    "quote": "Data sales is selling, renting, releasing, disclosing, disseminating, making available, transferring, or otherwise communicating personal information for monetary or other valuable consideration."
+   }
+  },
+  {
+   "term": "standalone product or service",
+   "defined_in": "§ 1033.421(a)(2) (preamble discussion)",
+   "evidence": {
+    "provision": "§ 1033.421(a)(2) (preamble discussion)",
+    "quote": "it must be clear that the targeted advertising, cross-selling, or sale of covered data is a distinct product or service the consumer could obtain in the market without obtaining other products or services."
+   }
+  },
+  {
+   "term": "consumer's requested product or service",
+   "defined_in": "§ 1033.421(a) (preamble discussion)",
+   "evidence": {
+    "provision": "§ 1033.421(a) (preamble discussion)",
+    "quote": "what constitutes a consumer’s requested product or service is informed by context, such as general public understanding of what attributes a given product or service has or how the product or service functions in the market."
+   }
+  },
+  {
+   "term": "consumer",
+   "defined_in": "CFPA section 1002(4) (quoted in preamble)",
+   "evidence": {
+    "provision": "CFPA § 1002(4) (quoted in preamble, part IV.D.1)",
+    "quote": "CFPA section 1002(4) defines ‘‘consumer’’ as ‘‘an individual or an agent, trustee, or representative acting on behalf of an individual.’’"
+   }
+  },
+  {
+   "term": "authorized third party",
+   "defined_in": "Part 1033 (preamble convention for the rule's terminology)",
+   "evidence": {
+    "provision": "Part 1033 (preamble, part IV.D.1)",
+    "quote": "For convenience, part 1033 generally refers to the individual as the ‘‘consumer’’ and an agent, trustee, or representative acting on behalf of that individual as an ‘‘authorized third party.’’"
+   }
+  },
+  {
+   "term": "providing financial data processing products or services",
+   "defined_in": "12 CFR 1001.2(b)",
+   "evidence": {
+    "provision": "12 CFR 1001.2(b) (preamble, Statutory Framework discussion)",
+    "quote": "providing financial data processing products or services by any technological means, including processing, storing, aggregating, or transmitting financial or banking data"
+   }
+  },
+  {
+   "term": "financial data processing products or services",
+   "defined_in": "12 CFR 1001.2(b)",
+   "evidence": {
+    "provision": "12 CFR 1001.2(b)",
+    "quote": "Providing financial data processing products or services by any technological means"
+   }
+  },
+  {
+   "term": "covered consumer financial product or service",
+   "defined_in": "§ 1033.111(b)",
+   "evidence": {
+    "provision": "§ 1033.111(b)",
+    "quote": "Covered consumer financial product or service means a consumer financial product or service, as defined in 12 U.S.C. 5481(5), that is:"
+   }
+  },
+  {
+   "term": "Regulation E account",
+   "defined_in": "§ 1033.111(b)(1)",
+   "evidence": {
+    "provision": "§ 1033.111(b)(1)",
+    "quote": "A Regulation E account, which means an account, as defined in Regulation E, 12 CFR 1005.2(b)"
+   }
+  },
+  {
+   "term": "Regulation Z credit card",
+   "defined_in": "§ 1033.111(b)(2)",
+   "evidence": {
+    "provision": "§ 1033.111(b)(2)",
+    "quote": "A Regulation Z credit card, which means a credit card, as defined in Regulation Z, 12 CFR 1026.2(a)(15)(i)"
+   }
+  },
+  {
+   "term": "data provider",
+   "defined_in": "§ 1033.111(c)",
+   "evidence": {
+    "provision": "§ 1033.111(c)",
+    "quote": "Data provider means a covered person, as defined in 12 U.S.C. 5481(6), that is:"
+   }
+  },
+  {
+   "term": "financial institution",
+   "defined_in": "§ 1033.111(c)(1)",
+   "evidence": {
+    "provision": "§ 1033.111(c)(1)",
+    "quote": "A financial institution, as defined in Regulation E, 12 CFR 1005.2(i)"
+   }
+  },
+  {
+   "term": "SBA size standard",
+   "defined_in": "§ 1033.111(d)(1)",
+   "evidence": {
+    "provision": "§ 1033.111(d)(1)",
+    "quote": "the SBA size standard is the SBA size standard for the data provider’s appropriate North American Industry Classification System (NAICS) code"
+   }
+  },
+  {
+   "term": "total assets",
+   "defined_in": "§ 1033.111(d)(2)",
+   "evidence": {
+    "provision": "§ 1033.111(d)(2)",
+    "quote": "total assets held by a depository institution are determined by averaging the assets reported on its own four preceding quarterly call report submissions"
+   }
+  },
+  {
+   "term": "authorized third party",
+   "defined_in": "§ 1033.131",
+   "evidence": {
+    "provision": "§ 1033.131",
+    "quote": "Authorized third party means a third party that has complied with the authorization procedures described in § 1033.401."
+   }
+  },
+  {
+   "term": "card issuer",
+   "defined_in": "§ 1033.111(c)(2)",
+   "evidence": {
+    "provision": "§ 1033.131",
+    "quote": "Card issuer is defined at § 1033.111(c)(2)."
+   }
+  },
+  {
+   "term": "consensus standard",
+   "defined_in": "§ 1033.131",
+   "evidence": {
+    "provision": "§ 1033.131",
+    "quote": "Consensus standard means a standard that is adopted by a recognized standard setter and that continues to be maintained by that recognized standard setter."
+   }
+  },
+  {
+   "term": "consumer",
+   "defined_in": "§ 1033.131",
+   "evidence": {
+    "provision": "§ 1033.131",
+    "quote": "Consumer means a natural person. Trusts established for tax or estate planning purposes are considered natural persons for purposes of this definition."
+   }
+  },
+  {
+   "term": "consumer interface",
+   "defined_in": "§ 1033.131",
+   "evidence": {
+    "provision": "§ 1033.131",
+    "quote": "Consumer interface means an interface through which a data provider receives requests for covered data and makes available covered data in an electronic form usable by consumers in response to the requests."
+   }
+  },
+  {
+   "term": "covered data",
+   "defined_in": "§ 1033.211",
+   "evidence": {
+    "provision": "§ 1033.211",
+    "quote": "Covered data in this part means, as applicable:"
+   }
+  },
+  {
+   "term": "terms and conditions (covered data)",
+   "defined_in": "§ 1033.211(d)",
+   "evidence": {
+    "provision": "§ 1033.211(d)",
+    "quote": "terms and conditions are limited to data in agreements evidencing the terms of the legal obligation between a data provider and a consumer"
+   }
+  },
+  {
+   "term": "data aggregator",
+   "defined_in": "§ 1033.131",
+   "evidence": {
+    "provision": "§ 1033.131",
+    "quote": "Data aggregator means a person that is retained by and provides services to the authorized third party to enable access to covered data."
+   }
+  },
+  {
+   "term": "depository institution",
+   "defined_in": "§ 1033.131",
+   "evidence": {
+    "provision": "§ 1033.131",
+    "quote": "Depository institution means any depository institution as defined by the Federal Deposit Insurance Act, 12 U.S.C. 1813(c)(1), or any credit union as defined by 12 CFR 700.2."
+   }
+  },
+  {
+   "term": "developer interface",
+   "defined_in": "§ 1033.131",
+   "evidence": {
+    "provision": "§ 1033.131",
+    "quote": "Developer interface means an interface through which a data provider receives requests for covered data and makes available covered data in an electronic form usable by authorized third parties in response to the requests."
+   }
+  },
+  {
+   "term": "recognized standard setter",
+   "defined_in": "§ 1033.131",
+   "evidence": {
+    "provision": "§ 1033.131",
+    "quote": "the term refers to a standard-setting body with certain attributes listed in § 1033.141(a)"
+   }
+  },
+  {
+   "term": "third party",
+   "defined_in": "§ 1033.131",
+   "evidence": {
+    "provision": "§ 1033.131",
+    "quote": "Third party means any person that is not the consumer about whom the covered data pertains or the data provider that controls or possesses the consumer’s covered data."
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "data_subject_rights",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Data providers must make covered data available to consumers and authorized third parties upon request.",
+   "applies_from": "effective January 17, 2025, subject to compliance dates in § 1033.121",
+   "conditional_on": "data provider within coverage of § 1033.111 (depository institutions at or below the SBA size standard are excluded)",
+   "evidence": {
+    "provision": "Preamble, Part I.A (Summary of the Final Rule), Access Requirements",
+    "quote": "The final rule generally requires a data provider to make covered data available to consumers and authorized third parties upon request."
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Data providers must make covered data available to authorized third parties in a standardized, machine-readable format and in a commercially reasonable manner, including a minimum response rate, and must not unreasonably restrict request frequency.",
+   "applies_from": "effective January 17, 2025, subject to compliance dates in § 1033.121",
+   "conditional_on": "requests from authorized third parties",
+   "evidence": {
+    "provision": "Preamble, Part I.A (Summary of the Final Rule), Access Requirements",
+    "quote": "meeting a minimum response rate with respect to requests for covered data."
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "financial_institution",
+   "modality": "shall_not",
+   "summary": "Data provider may not satisfy the third-party access requirement by allowing credential-based screen scraping.",
+   "applies_from": "effective January 17, 2025, subject to compliance dates in § 1033.121",
+   "evidence": {
+    "provision": "Preamble, Part I.A (Summary of the Final Rule), Access Requirements",
+    "quote": "cannot comply with the requirement to make data available to authorized third parties by allowing the third party to engage in"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "financial_institution",
+   "modality": "shall_not",
+   "summary": "Final rule prohibits data providers from charging fees or charges related to consumer and third party data access.",
+   "applies_from": "effective January 17, 2025, subject to compliance dates in § 1033.121",
+   "evidence": {
+    "provision": "Preamble, Part I.A (Summary of the Final Rule), Access Requirements",
+    "quote": "prohibits fees or charges related to"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Data providers must publicly disclose certain information about themselves to facilitate access to covered data.",
+   "applies_from": "effective January 17, 2025, subject to compliance dates in § 1033.121",
+   "evidence": {
+    "provision": "Preamble, Part I.A (Summary of the Final Rule), Access Requirements",
+    "quote": "publicly disclose certain information about itself"
+   }
+  },
+  {
+   "type": "management_system",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Data providers must have written policies and procedures reasonably designed to achieve objectives on data made generally available, responses to developer interface and information requests, data accuracy, and record retention.",
+   "applies_from": "effective January 17, 2025, subject to compliance dates in § 1033.121",
+   "evidence": {
+    "provision": "Preamble, Part I.A (Summary of the Final Rule), Policies and Procedures, and Recordkeeping",
+    "quote": "have written policies and procedures that are reasonably designed to achieve certain objectives"
+   }
+  },
+  {
+   "type": "record_keeping",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Third parties that are covered persons or service providers under the CFPA must maintain written policies and procedures to retain compliance records for not less than three years after the most recent authorization.",
+   "applies_from": "effective January 17, 2025, subject to compliance dates in § 1033.121",
+   "conditional_on": "third party is a covered person or service provider as defined in the CFPA (12 U.S.C. 5481(6) and (26))",
+   "evidence": {
+    "provision": "Preamble, Part I.A (Summary of the Final Rule), Policies and Procedures, and Recordkeeping for Data Providers and Third Parties",
+    "quote": "must establish and maintain written policies and procedures that are reasonably designed to ensure retention of records"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Authorized third parties must provide the consumer an authorization disclosure containing key terms of the data access, including a certification of agreement to the rule's third party obligations.",
+   "applies_from": "effective January 17, 2025, subject to compliance dates in § 1033.121",
+   "conditional_on": "third party seeking access to covered data on behalf of a consumer",
+   "evidence": {
+    "provision": "Preamble, Part I.A (Summary of the Final Rule), Authorized Third Parties",
+    "quote": "provide the consumer with an authorization disclosure containing certain key terms of the data access"
+   }
+  },
+  {
+   "type": "consent",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Authorized third parties must obtain the consumer's express informed consent, via an authorization disclosure signed by the consumer electronically or in writing, before accessing covered data.",
+   "applies_from": "effective January 17, 2025, subject to compliance dates in § 1033.121",
+   "conditional_on": "third party seeking access to covered data on behalf of a consumer",
+   "evidence": {
+    "provision": "Preamble, Part I.A (Summary of the Final Rule), Authorized Third Parties",
+    "quote": "obtain the consumer’s express informed consent to access covered data on behalf of the consumer"
+   }
+  },
+  {
+   "type": "data_minimization",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Authorized third parties must certify to limit collection, use and retention of covered data to what is reasonably necessary to provide the consumer's requested product or service; targeted advertising, cross-selling and sale of covered data are not reasonably necessary.",
+   "applies_from": "effective January 17, 2025, subject to compliance dates in § 1033.121",
+   "conditional_on": "third party seeking access to covered data on behalf of a consumer",
+   "evidence": {
+    "provision": "Preamble, Part I.A (Summary of the Final Rule), Authorized Third Parties",
+    "quote": "reasonably necessary to provide the consumer’s requested product or service"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Authorized third parties must certify to limit the duration of collection under an authorization to a maximum of one year and obtain a new authorization no later than the anniversary of the most recent authorization.",
+   "applies_from": "effective January 17, 2025, subject to compliance dates in § 1033.121",
+   "conditional_on": "third party seeking access to covered data on behalf of a consumer",
+   "evidence": {
+    "provision": "Preamble, Part I.A (Summary of the Final Rule), Authorized Third Parties",
+    "quote": "limit the duration of collection of covered data pursuant to a given authorization to a maximum period of one year"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Authorized third parties must apply an information security program to their systems for collection, use and retention of covered data, generally satisfying the GLBA Safeguards Framework rules.",
+   "applies_from": "effective January 17, 2025, subject to compliance dates in § 1033.121",
+   "conditional_on": "third party seeking access to covered data on behalf of a consumer",
+   "evidence": {
+    "provision": "Preamble, Part I.A (Summary of the Final Rule), Authorized Third Parties",
+    "quote": "Apply an information security program to its systems for the collection, use, and retention of covered data."
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Authorized third parties must provide consumers a method to revoke authorization, and certify they will notify the data provider, any data aggregator and other third parties to which covered data was provided upon a revocation request.",
+   "applies_from": "effective January 17, 2025, subject to compliance dates in § 1033.121",
+   "conditional_on": "third party seeking access to covered data on behalf of a consumer",
+   "evidence": {
+    "provision": "Preamble, Part I.A (Summary of the Final Rule), Authorized Third Parties",
+    "quote": "Provide the consumer with a method to revoke the third party’s authorization."
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Authorized third parties must require other third parties, by contract, to comply with specified third party obligations before providing them covered data.",
+   "applies_from": "effective January 17, 2025, subject to compliance dates in § 1033.121",
+   "conditional_on": "third party provides covered data to other third parties",
+   "evidence": {
+    "provision": "Preamble, Part I.A (Summary of the Final Rule), Authorized Third Parties",
+    "quote": "Require other third parties, by contract, to comply with specified third party obligations before providing covered data to them."
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "A data aggregator assisting a third party must certify to the consumer that it will satisfy the third party obligations, except the duties to inform the consumer and to provide a revocation mechanism.",
+   "applies_from": "effective January 17, 2025, subject to compliance dates in § 1033.121",
+   "conditional_on": "third party uses a data aggregator to assist with accessing covered data",
+   "evidence": {
+    "provision": "Preamble, Part I.A (Summary of the Final Rule), Data Aggregators",
+    "quote": "the data aggregator must certify to the consumer that it will satisfy the third party obligations"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "First compliance tier: depository institution data providers with at least $250 billion in total assets and nondepository data providers with at least $10 billion in total receipts in 2023 or 2024 must comply.",
+   "applies_from": "2026-04-01",
+   "conditional_on": "depository institution with at least $250 billion in total assets, or nondepository institution with at least $10 billion in total receipts in calendar year 2023 or 2024",
+   "evidence": {
+    "provision": "Preamble, Part IV.A.5 (§ 1033.121(b))",
+    "quote": "must comply by April 1, 2026"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Second compliance tier: depository institutions with at least $10 billion but under $250 billion in total assets, and nondepository data providers with less than $10 billion in receipts in both 2023 and 2024, must comply.",
+   "applies_from": "2027-04-01",
+   "conditional_on": "depository institution with at least $10 billion and less than $250 billion in total assets, or nondepository institution with less than $10 billion in total receipts in both 2023 and 2024",
+   "evidence": {
+    "provision": "Preamble, Part IV.A.5 (§ 1033.121(b))",
+    "quote": "must comply by April 1, 2027"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Third compliance tier: depository institutions with at least $3 billion but under $10 billion in total assets must comply.",
+   "applies_from": "2028-04-01",
+   "conditional_on": "depository institution with at least $3 billion and less than $10 billion in total assets",
+   "evidence": {
+    "provision": "Preamble, Part IV.A.5 (§ 1033.121(b))",
+    "quote": "must comply by April 1, 2028"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Fourth compliance tier: depository institutions with at least $1.5 billion but under $3 billion in total assets must comply.",
+   "applies_from": "2029-04-01",
+   "conditional_on": "depository institution with at least $1.5 billion and less than $3 billion in total assets",
+   "evidence": {
+    "provision": "Preamble, Part IV.A.5 (§ 1033.121(b))",
+    "quote": "must comply by April 1, 2029"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Final compliance tier: depository institutions with less than $1.5 billion but more than $850 million in total assets must comply.",
+   "applies_from": "2030-04-01",
+   "conditional_on": "depository institution with less than $1.5 billion and more than $850 million in total assets",
+   "evidence": {
+    "provision": "Preamble, Part IV.A.5 (§ 1033.121(b))",
+    "quote": "must comply by April 1, 2030"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Depository institution data providers that were at or below the asset threshold at the effective date and later exceed it must comply within a reasonable amount of time, not exceeding five years.",
+   "conditional_on": "depository institution that subsequently crosses the asset size threshold",
+   "evidence": {
+    "provision": "Preamble, Part IV.A.5 (§ 1033.121(c))",
+    "quote": "reasonable amount of time to comply with the rule after exceeding the size standard"
+   }
+  },
+  {
+   "type": "record_keeping",
+   "addressee": "financial_institution",
+   "modality": "shall",
+   "summary": "Depository institution data providers must determine total assets by averaging assets on the four preceding call report submissions and continue calculating total assets going forward.",
+   "applies_from": "effective January 17, 2025",
+   "conditional_on": "depository institution data provider",
+   "evidence": {
+    "provision": "Preamble, Part IV.A.4 (§ 1033.111(d)(2))",
+    "quote": "must determine their total assets by averaging their assets on the four preceding call report data submissions"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "regulator",
+   "modality": "shall",
+   "summary": "Under CFPA section 1033(d), the CFPB must by rule prescribe standards applicable to covered persons to promote standardized formats for information made available to consumers.",
+   "evidence": {
+    "provision": "Preamble, Part I.A (Summary of the Final Rule)",
+    "quote": "the CFPB, by rule, shall prescribe standards applicable to covered persons"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_holder",
+   "modality": "shall",
+   "summary": "Data provider's developer interface must make covered data available in a standardized format (format widely used by other data providers and readily usable by authorized third parties; consensus standard is indicia of compliance, not a safe harbor).",
+   "evidence": {
+    "provision": "§ 1033.311(b)",
+    "quote": "so long as entities comply with the standardized format requirement of § 1033.311(b)"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_holder",
+   "modality": "shall",
+   "summary": "Developer interface performance must be commercially reasonable; a proper response must be provided within a commercially reasonable amount of time, with consensus standard conformance as an indicium.",
+   "evidence": {
+    "provision": "§ 1033.311(c)(1)(iv)(C)",
+    "quote": "requires that a proper response be provided within a commercially reasonable amount of time"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_holder",
+   "modality": "shall",
+   "summary": "Developer interface response rate must be equal to or greater than 99.5 percent in each calendar month (proper responses divided by requests); scheduled downtime is excluded under the final rule's definitions.",
+   "evidence": {
+    "provision": "§ 1033.311(c)(1)",
+    "quote": "final § 1033.311(c)(1) requires that the response rate be equal to or greater than 99.5 percent"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "data_holder",
+   "modality": "shall_not",
+   "summary": "Data provider may not unreasonably restrict the frequency with which it receives and responds to requests from an authorized third party; reasonable access caps are permitted, and consensus standard adherence is an indicium of reasonableness.",
+   "evidence": {
+    "provision": "§ 1033.311(d)",
+    "quote": "to prohibit a data provider from unreasonably restricting the frequency with which it receives and responds to requests for covered data"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "data_holder",
+   "modality": "shall_not",
+   "summary": "Data provider must not allow a third party to access its developer interface by using any credentials that a consumer uses to access the consumer interface; a service-provider contract is excepted where the service provider makes data available using consumer credentials under the rule.",
+   "evidence": {
+    "provision": "§ 1033.311(e)(1)",
+    "quote": "a data provider must not allow a third party to access the data provider’s developer interface by using any credentials that a consumer uses to access the consumer interface"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "data_holder",
+   "modality": "shall",
+   "summary": "Data provider must apply to its developer interface an information security program satisfying the GLBA section 501 rules; if not subject to GLBA section 501, the FTC Standards for Safeguarding Customer Information (16 CFR part 314).",
+   "evidence": {
+    "provision": "§ 1033.311(e)(2)(i)",
+    "quote": "a data provider must apply to the developer interface an information security program that satisfies the applicable rules issued pursuant to section 501 of the GLBA, 15 U.S.C. 6801"
+   }
+  },
+  {
+   "type": "verification_gatekeeping",
+   "addressee": "data_holder",
+   "modality": "may",
+   "summary": "Data provider may deny a consumer or third party access to all elements of the interface where granting access would be inconsistent with reasonably designed policies and procedures to comply with specified legal requirements and the denial is reasonable.",
+   "conditional_on": "denial inconsistent with reasonably designed risk management policies and procedures and reasonable under § 1033.321(b)",
+   "evidence": {
+    "provision": "§ 1033.321(a)",
+    "quote": "a data provider does not violate the general obligation in § 1033.201(a)(1) by denying a consumer or third party"
+   }
+  },
+  {
+   "type": "verification_gatekeeping",
+   "addressee": "data_holder",
+   "modality": "shall",
+   "summary": "A denial of access must be directly related to a specific risk of which the data provider is aware, and must be applied in a consistent and non-discriminatory manner, to be reasonable.",
+   "evidence": {
+    "provision": "§ 1033.321(b)(1)-(2)",
+    "quote": "directly related to a specific risk of which the data provider is aware"
+   }
+  },
+  {
+   "type": "verification_gatekeeping",
+   "addressee": "data_holder",
+   "modality": "may",
+   "summary": "Listed conditions are each a sufficient basis for denying access to a third party, including failure to present any evidence of adequate information security practices and failure to make specified identity information publicly available in human- and machine-readable formats.",
+   "evidence": {
+    "provision": "§ 1033.321(d)(1)",
+    "quote": "each of the following is a sufficient basis for denying access to a third party"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "data_holder",
+   "modality": "shall",
+   "summary": "Upon request from a consumer, data provider must make covered data available when it receives information sufficient to authenticate the consumer's identity and identify the scope of the data requested (proposed wording, adopted as proposed).",
+   "conditional_on": "receipt of information sufficient to authenticate the consumer and identify the scope of data requested",
+   "evidence": {
+    "provision": "§ 1033.331(a)",
+    "quote": "upon request from a consumer, a data provider would be required to make available covered data"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "data_holder",
+   "modality": "shall",
+   "summary": "Upon request from an authorized third party, data provider must make covered data available when it receives information sufficient to authenticate the consumer and third party, document third-party authorization procedures, and identify the scope of data requested.",
+   "conditional_on": "receipt of the information listed in § 1033.331(b)(1)(i)-(iv)",
+   "evidence": {
+    "provision": "§ 1033.331(b)(1)",
+    "quote": "upon request from an authorized third party, a data provider must make available covered data when it receives certain information"
+   }
+  },
+  {
+   "type": "verification_gatekeeping",
+   "addressee": "data_holder",
+   "modality": "may",
+   "summary": "Data provider is permitted to confirm the scope of a third party's authorization, including the accounts and categories of covered data, directly with the consumer; repeated confirmation of previously documented authorization may interfere with access.",
+   "evidence": {
+    "provision": "§ 1033.331(b)(2)",
+    "quote": "data provider is permitted to take certain steps to confirm the scope of information requested"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "data_holder",
+   "modality": "shall",
+   "summary": "For jointly held accounts, a data provider receiving a request from one joint consumer, or from an authorized third party acting for that consumer, must make covered data available, subject to the other provisions of § 1033.331; other account holders need not be notified.",
+   "conditional_on": "subject to the other provisions of § 1033.331",
+   "evidence": {
+    "provision": "§ 1033.331(d)",
+    "quote": "must make available covered data to that consumer or authorized third party"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "data_holder",
+   "modality": "shall",
+   "summary": "A data provider that offers a consumer a revocation method must, on receiving a revocation request through it, revoke the authorized third party's access and notify the third party in a timely manner; providing a revocation method is optional.",
+   "conditional_on": "data provider makes a revocation method available",
+   "evidence": {
+    "provision": "§ 1033.331(e)",
+    "quote": "A data provider that receives a revocation request from a consumer through a revocation method it makes available must revoke the authorized third party’s access and notify the authorized third party of the request in a timely manner."
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "data_holder",
+   "modality": "shall",
+   "summary": "Required public disclosures must be readily identifiable to the public and available in both human- and machine-readable formats; information available only in a human-readable format does not comply.",
+   "evidence": {
+    "provision": "§ 1033.341(a)",
+    "quote": "information that is only available in a humanreadable format that a consumer can print or retain, but that is not also available in a machine-readable format, would not comply with § 1033.341(a)"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "data_holder",
+   "modality": "shall",
+   "summary": "Data provider must publicly disclose its legal name and any assumed name, a link to its website, its LEI, and contact information enabling consumers or third parties to ask questions about accessing covered data (the contact may be a vendor maintaining the interface).",
+   "evidence": {
+    "provision": "§ 1033.341(b)",
+    "quote": "the CFPB is finalizing § 1033.341(b) as proposed"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "data_holder",
+   "modality": "shall",
+   "summary": "Data provider must publicly disclose developer interface documentation, including metadata for covered data fields and documentation sufficient for third-party access and use, technical support and issue-reporting information, and keep it updated as reasonably necessary; information that would impede denial of access under § 1033.321 need not be disclosed.",
+   "evidence": {
+    "provision": "§ 1033.341(c)",
+    "quote": "final § 1033.341(c) requires a data provider to disclose in the manner required by § 1033.341(a) documentation about its developer interface"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "data_holder",
+   "modality": "shall",
+   "summary": "On or before the final day of each calendar month, data provider must disclose the response rate achieved in the previous calendar month, showing at least a rolling 13 months, as a percentage rounded to four decimal places.",
+   "applies_from": "compliance date applicable to the data provider (rolling 13 months need not include months before that date)",
+   "evidence": {
+    "provision": "§ 1033.341(d)",
+    "quote": "Final § 1033.341(d) requires a data provider to disclose, on or before the final day of each calendar month"
+   }
+  },
+  {
+   "type": "management_system",
+   "addressee": "data_holder",
+   "modality": "shall",
+   "summary": "Data provider must establish and maintain written policies and procedures reasonably designed to achieve the objectives of subparts B and C, appropriate to its size, nature and complexity, and periodically review and update them.",
+   "evidence": {
+    "provision": "§ 1033.351(a)",
+    "quote": "a data provider must establish and maintain written policies and procedures that are reasonably designed to achieve the objectives set forth in subparts B and C of the final rule"
+   }
+  },
+  {
+   "type": "record_keeping",
+   "addressee": "data_holder",
+   "modality": "shall",
+   "summary": "Policies and procedures must be reasonably designed to ensure data providers create a record of the data fields that are covered data and of covered data not made available under an exception, with the reasons (as proposed; final wording not in this part).",
+   "evidence": {
+    "provision": "§ 1033.351(b)(1)",
+    "quote": "reasonably designed to ensure that data providers create a record of the data fields that are covered data"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "enterprise",
+   "modality": "shall_not",
+   "summary": "Authorized third parties may not use covered data for secondary uses, meaning uses not reasonably necessary to provide the consumer's requested product or service, as part of the authorization. Preamble restatement of § 1033.421(a); final text is in other parts.",
+   "applies_from": "not stated in this part",
+   "evidence": {
+    "provision": "Federal Register preamble, Final Rule discussion of § 1033.421(a)",
+    "quote": "uses that are not reasonably necessary to provide the consumer’s requested product or service are secondary uses, and are not permitted as part of the third party’s authorization"
+   }
+  },
+  {
+   "type": "management_system",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Third parties must establish and maintain written policies and procedures reasonably designed to ensure accurate receipt and transmission of covered data, as finalized in § 1033.421(d) as proposed (with a clarifying change on consensus standards).",
+   "applies_from": "not stated in this part",
+   "evidence": {
+    "provision": "Federal Register preamble, Final Rule discussion of § 1033.421(d)",
+    "quote": "Proposed § 1033.421(d) would have required third parties to establish and maintain written policies and procedures that are reasonably designed to ensure that covered data are accurately received from a data provider"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Third parties must apply to their systems an information security program satisfying GLBA section 501 rules, or the FTC Safeguards Standards (16 CFR part 314) if not subject to section 501, per § 1033.421(e).",
+   "applies_from": "not stated in this part",
+   "evidence": {
+    "provision": "Federal Register preamble, Final Rule discussion of § 1033.421(e)",
+    "quote": "Final § 1033.421(e)(1) requires a third party to apply to its systems for the collection, use, and retention of covered data an information security program that satisfies the applicable rules issued pursuant to section 501 of the Gramm-Leach-Bliley Act"
+   }
+  },
+  {
+   "type": "consent",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Third parties must provide a revocation method as easy to access and operate as the initial authorization, free of cost or penalty, and allow revocation for one product while maintaining access for others (§ 1033.421(h)(1)).",
+   "applies_from": "not stated in this part",
+   "evidence": {
+    "provision": "Federal Register preamble, Final Rule discussion of § 1033.421(h)(1)",
+    "quote": "third parties must certify that they will allow consumers to revoke consent to data access for a particular product or service and maintain consent to data access for any others"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "On receipt of a revocation request, the third party must notify the data provider, any data aggregator, and other third parties to whom it provided covered data (§ 1033.421(h)(2)), as proposed and finalized without change.",
+   "applies_from": "not stated in this part",
+   "conditional_on": "when the third party receives a consumer revocation request",
+   "evidence": {
+    "provision": "Federal Register preamble, Final Rule discussion of § 1033.421(h)(2)",
+    "quote": "the third party would certify to notify the data provider, any data aggregator, and other third parties to whom it has provided the consumer’s covered data"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Before providing covered data to another third party, the third party must contractually require that party to comply with § 1033.421(a) through (f) and the condition in § 1033.421(i), subject to the limitations in § 1033.421(a) and (c). The preamble notes this is a certification duty.",
+   "applies_from": "not stated in this part",
+   "conditional_on": "before providing covered data to another third party",
+   "evidence": {
+    "provision": "Federal Register preamble, Final Rule discussion of § 1033.421(f)",
+    "quote": "the third party must certify that it will require the other third party by contract to comply with the third party obligations in § 1033.421(a) through (f)"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Third parties must certify that they will keep policies and procedures to provide consumers, on request, a copy of any data aggregator certification statement provided separately from the authorization disclosure (§ 1033.421(g)(3)(vii)). Other § 1033.421(g) consumer-information duties are stated in the preamble.",
+   "applies_from": "not stated in this part",
+   "conditional_on": "upon consumer request",
+   "evidence": {
+    "provision": "Federal Register preamble, Final Rule discussion of § 1033.421(g)(3)(vii)",
+    "quote": "the CFPB is finalizing in § 1033.421(g)(3)(vii) an additional requirement that the third party certify to maintain policies and procedures to provide to consumers, upon request, a copy of any data aggregator certification statement"
+   }
+  },
+  {
+   "type": "data_minimization",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "After the maximum durational period ends without new authorization, or on revocation, the third party must stop collecting covered data and stop using or retaining previously collected data unless reasonably necessary to provide the requested product or service (§ 1033.421(i)).",
+   "applies_from": "not stated in this part",
+   "conditional_on": "consumer does not provide a new authorization after the maximum durational period, or a revocation request is received",
+   "evidence": {
+    "provision": "Federal Register preamble, Final Rule discussion of § 1033.421(i)",
+    "quote": "a third party will: (1) no longer collect covered data pursuant to the most recent authorization"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "data_processor",
+   "modality": "shall",
+   "summary": "Data aggregators must certify to the consumer that they will comply with specified obligations in § 1033.421. Under § 1033.431(c)(2), the certification must be given electronically or in writing, separate from the authorization disclosure, in the same language, clear and conspicuous.",
+   "applies_from": "not stated in this part",
+   "conditional_on": "when a third party uses a data aggregator to access covered data",
+   "evidence": {
+    "provision": "Federal Register preamble, Final Rule discussion of § 1033.431(c)",
+    "quote": "the data aggregator must certify to the consumer that it will satisfy the third party obligations discussed above"
+   }
+  },
+  {
+   "type": "record_keeping",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Covered third parties must establish policies to retain records evidencing compliance with subpart D for not less than three years after obtaining the consumer's most recent authorization (§ 1033.441(a)-(b)). Under § 1033.441(e), retained records must include the signed authorization disclosure, revocation records and any data aggregator certification statement.",
+   "applies_from": "not stated in this part",
+   "evidence": {
+    "provision": "Federal Register preamble, Final Rule discussion of § 1033.441(b) and (e)",
+    "quote": "records required under proposed § 1033.441(a) would have to be retained for a reasonable period of time, not less than three years after a third party obtains the consumer’s most recent authorization"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "data_holder",
+   "modality": "shall",
+   "summary": "Make covered data available to consumers and authorized third parties upon request, including the most recently updated data and authorized but not yet settled transactions (§ 1033.201(b)).",
+   "applies_from": "Compliance dates in § 1033.121",
+   "conditional_on": "Covered data the data provider controls or possesses concerning a covered consumer financial product or service (§ 1033.111(a))",
+   "evidence": {
+    "provision": "§ 1033.201(a)(1)",
+    "quote": "A data provider must make available to a consumer and an authorized third party, upon request, covered data"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "data_holder",
+   "modality": "shall_not",
+   "summary": "Must not take action with intent to evade subparts B and C, that renders covered data unusable, or that prevents, interferes with or materially discourages access.",
+   "applies_from": "Compliance dates in § 1033.121",
+   "evidence": {
+    "provision": "§ 1033.201(a)(2)",
+    "quote": "A data provider must not take any action"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_holder",
+   "modality": "shall",
+   "summary": "Maintain both a consumer interface and a developer interface that satisfy § 1033.301 and, for the developer interface, § 1033.311.",
+   "applies_from": "Compliance dates in § 1033.121",
+   "evidence": {
+    "provision": "§ 1033.301(a)",
+    "quote": "A data provider subject to the requirements of this part must maintain a consumer interface and a developer interface"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "data_holder",
+   "modality": "shall",
+   "summary": "Upon request, provide covered data in a machine-readable file that the consumer or authorized third party can retain and transfer, subject to paragraph (b)(1) exclusions for certain consumer-interface data.",
+   "applies_from": "Compliance dates in § 1033.121",
+   "conditional_on": "Request for covered data in a machine-readable file",
+   "evidence": {
+    "provision": "§ 1033.301(b)",
+    "quote": "a data provider must make available to a consumer or an authorized third party covered data in a file that is machine-readable"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "data_holder",
+   "modality": "shall_not",
+   "summary": "Must not impose fees or charges on consumers or authorized third parties for establishing or maintaining the required interfaces or for receiving requests and making data available.",
+   "applies_from": "Compliance dates in § 1033.121",
+   "evidence": {
+    "provision": "§ 1033.301(c)",
+    "quote": "A data provider must not impose any fees or charges on a consumer or an authorized third party"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_holder",
+   "modality": "shall",
+   "summary": "Developer interface must make covered data available in a standardized, machine-readable format and must have commercially reasonable performance, including a 99.5 percent monthly response rate minimum (§ 1033.311(c)(1)).",
+   "applies_from": "Compliance dates in § 1033.121",
+   "evidence": {
+    "provision": "§ 1033.311(b)",
+    "quote": "The developer interface must make available covered data in a standardized and machine-readable format."
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "data_holder",
+   "modality": "shall_not",
+   "summary": "Must not unreasonably restrict the frequency of requests for covered data from authorized third parties through the developer interface, and any restrictions must be non-discriminatory.",
+   "applies_from": "Compliance dates in § 1033.121",
+   "conditional_on": "Exceptions permitted under §§ 1033.221, 1033.321 and 1033.331(b) and (c)",
+   "evidence": {
+    "provision": "§ 1033.311(d)",
+    "quote": "a data provider must not unreasonably restrict the frequency with which it receives or responds to requests for covered data"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "data_holder",
+   "modality": "shall_not",
+   "summary": "Must not allow third-party access to the developer interface using the consumer's consumer-interface credentials; must also apply an information security program (GLBA § 501 rules or FTC Safeguards) to the developer interface (§ 1033.311(e)(2)).",
+   "applies_from": "Compliance dates in § 1033.121",
+   "evidence": {
+    "provision": "§ 1033.311(e)(1)",
+    "quote": "A data provider must not allow a third party to access the data provider’s developer interface by using any credentials that a consumer uses"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_holder",
+   "modality": "may",
+   "summary": "Permission to deny consumer or third-party access to interface elements for risk-management reasons, if the denial is directly related to a specific risk and applied consistently; listed conditions suffice to justify denial.",
+   "conditional_on": "Denial reasonably related to a specific risk and applied in a consistent, non-discriminatory manner (§ 1033.321(b))",
+   "evidence": {
+    "provision": "§ 1033.321(a)",
+    "quote": "A data provider does not violate the general obligation in § 1033.201(a)(1) by denying a consumer or third party access"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "data_holder",
+   "modality": "shall",
+   "summary": "On request from a consumer or authorized third party, make covered data available once sufficient information to authenticate and scope the request is received; for joint accounts and revocations, respond to requests and revoke third-party access as provided (§ 1033.331(d)–(e)).",
+   "applies_from": "Compliance dates in § 1033.121",
+   "conditional_on": "Receipt of information sufficient to authenticate the consumer or third party and identify the scope of the data requested",
+   "evidence": {
+    "provision": "§ 1033.331(a)",
+    "quote": "upon request from a consumer, a data provider must make available covered data"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "data_holder",
+   "modality": "shall",
+   "summary": "Upon receiving a consumer revocation request through a revocation method it makes available, revoke the authorized third party's access and notify that third party in a timely manner.",
+   "conditional_on": "Consumer submits revocation through a revocation method the data provider makes available",
+   "evidence": {
+    "provision": "§ 1033.331(e)",
+    "quote": "A data provider that receives a revocation request from a consumer through a revocation method it makes available must revoke the authorized third party’s access"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "data_holder",
+   "modality": "shall",
+   "summary": "Disclose legal name, website, LEI, contact information, developer interface documentation, and a monthly performance disclosure of the response rate (rolling 13 months), readily identifiable to the public in human- and machine-readable formats.",
+   "applies_from": "Performance disclosure: on or before the final day of each calendar month",
+   "evidence": {
+    "provision": "§ 1033.341(d)",
+    "quote": "a data provider must disclose in the manner required by paragraph (a) of this section"
+   }
+  },
+  {
+   "type": "management_system",
+   "addressee": "data_holder",
+   "modality": "shall",
+   "summary": "Establish and maintain written policies and procedures reasonably designed to meet subparts B and C, including denials, accuracy (§ 1033.351(c)) and record retention, reviewed periodically.",
+   "applies_from": "Compliance dates in § 1033.121",
+   "evidence": {
+    "provision": "§ 1033.351(a)",
+    "quote": "A data provider must establish and maintain written policies and procedures"
+   }
+  },
+  {
+   "type": "record_keeping",
+   "addressee": "data_holder",
+   "modality": "shall",
+   "summary": "Create records substantiating denials and communicate denial reasons to third parties or consumers in a timely manner; retain compliance evidence, including interface access records, for at least three years.",
+   "applies_from": "Compliance dates in § 1033.121",
+   "evidence": {
+    "provision": "§ 1033.351(d)(1)",
+    "quote": "must be retained for at least three years after a data provider has responded to the request"
+   }
+  },
+  {
+   "type": "consent",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Third party (addressed as data_controller) must provide an authorization disclosure with a certification of agreement to § 1033.421 obligations, and obtain the consumer's express informed consent signed electronically or in writing.",
+   "conditional_on": "Third party seeks to become an authorized third party to access covered data on the consumer's behalf",
+   "evidence": {
+    "provision": "§ 1033.401(c)",
+    "quote": "Obtain the consumer’s express informed consent to access covered data on behalf of the consumer"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Authorization disclosure must be clear, conspicuous and segregated, name the third party and data provider, describe the product, data categories, certification, one-year duration limit and revocation method, and be in the same language as the communication.",
+   "conditional_on": "Required before obtaining consumer authorization under § 1033.401(a)",
+   "evidence": {
+    "provision": "§ 1033.411(a)",
+    "quote": "The authorization disclosure must be clear, conspicuous, and segregated from other material."
+   }
+  },
+  {
+   "type": "data_minimization",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Limit collection, use and retention of covered data to what is reasonably necessary; exclude targeted advertising, cross-selling and sale of data; limit collection to one year after most recent authorization absent new authorization; stop collection and delete data on revocation or lapse (§ 1033.421(a), (b), (c), (i)).",
+   "conditional_on": "Third party accessing covered data on a consumer's behalf",
+   "evidence": {
+    "provision": "§ 1033.421(a)(1)",
+    "quote": "The third party will limit its collection, use, and retention of covered data"
+   }
+  },
+  {
+   "type": "management_system",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Establish and maintain written policies and procedures reasonably designed to ensure accurate receipt and onward provision of covered data, reviewed periodically.",
+   "evidence": {
+    "provision": "§ 1033.421(d)",
+    "quote": "A third party will establish and maintain written policies and procedures"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Apply to its systems an information security program satisfying GLBA § 501 rules or, if not subject to them, the FTC Standards for Safeguarding Customer Information (16 CFR part 314).",
+   "evidence": {
+    "provision": "§ 1033.421(e)(1)",
+    "quote": "A third party will apply to its systems for the collection, use, and retention of covered data"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Before providing covered data to another third party, require that party by contract to comply with the third-party obligations in § 1033.421(a) through (f) and the condition in paragraph (i).",
+   "conditional_on": "Provision of covered data to another third party",
+   "evidence": {
+    "provision": "§ 1033.421(f)",
+    "quote": "the third party will require the other third party by contract to comply with the third party obligations"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Give the consumer a copy of the signed authorization disclosure, provide contact information for questions, and maintain policies to provide information on collection, use, sharing and revocation upon request.",
+   "conditional_on": "Upon obtaining authorization",
+   "evidence": {
+    "provision": "§ 1033.421(g)(1)",
+    "quote": "the third party will provide the consumer with a copy of the authorization disclosure"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Provide the consumer a revocation method as easy to access and operate as the initial authorization, without costs or penalties; notify the data provider, any data aggregator and other third parties of a revocation request.",
+   "evidence": {
+    "provision": "§ 1033.421(h)(1)",
+    "quote": "The third party will provide the consumer with a method to revoke the third party’s authorization"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Authorization disclosure must include the name of any data aggregator that will assist with accessing covered data and a brief description of the aggregator's services.",
+   "conditional_on": "Third party uses a data aggregator to access covered data",
+   "evidence": {
+    "provision": "§ 1033.431(b)",
+    "quote": "The authorization disclosure must include the name of any data aggregator"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "data_processor",
+   "modality": "shall",
+   "summary": "Data aggregator must certify to the consumer that it agrees to the conditions in § 1033.421(a) through (f) and (i), either in the authorization disclosure or separately before accessing data.",
+   "conditional_on": "Third party uses a data aggregator to assist with accessing covered data",
+   "evidence": {
+    "provision": "§ 1033.431(c)",
+    "quote": "the data aggregator must certify to the consumer that it agrees to the conditions"
+   }
+  },
+  {
+   "type": "record_keeping",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Establish written policies to retain records evidencing compliance with subpart D, not less than three years after obtaining the consumer's most recent authorization.",
+   "conditional_on": "Third party that is a covered person or service provider as defined in 12 U.S.C. 5481(6) and (26)",
+   "evidence": {
+    "provision": "§ 1033.441(b)",
+    "quote": "Records required under paragraph (a) of this section must be retained for a reasonable period of time, not less than three years"
+   }
+  },
+  {
+   "type": "eligibility_condition",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Standard-setting body (addressed as enterprise) must satisfy openness, balance, due process and appeals, consensus and transparency attributes to obtain CFPB recognition.",
+   "conditional_on": "Request for CFPB recognition as a standard-setting body",
+   "evidence": {
+    "provision": "§ 1033.141(a)",
+    "quote": "unless it demonstrates that it satisfies the following attributes"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Recognized standard setter must provide the CFPB with written explanation within 10 days of any material change to its application information or any reason it may no longer meet recognition requirements.",
+   "conditional_on": "Recognized standard setter (Appendix A, Step Five)",
+   "evidence": {
+    "provision": "Appendix A to Part 1033, Step Five",
+    "quote": "You must also provide us, within 10 days, written explanation of any material change"
+   }
+  },
+  {
+   "type": "cooperation_with_authority",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Recognized standard setter agrees that the CFPB may monitor its organization and must provide information the CFPB requests; may also be subject to specified recognition terms.",
+   "conditional_on": "Recognized standard setter (Appendix A, Step Five)",
+   "evidence": {
+    "provision": "Appendix A to Part 1033, Step Five",
+    "quote": "As a recognized standard setter, you agree that the CFPB may monitor your organization"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "CFPB must submit a report containing the rule and other required information to Congress and the Comptroller General at least 60 days before its published effective date.",
+   "applies_from": "At least 60 days prior to the rule's published effective date",
+   "evidence": {
+    "provision": "Part IX (Congressional Review Act)",
+    "quote": "the CFPB will submit a report containing this rule and other required information"
+   }
+  }
+ ],
+ "section_status": {
+  "enforcement": {
+   "status": "not_found",
+   "note": "Part 7 (Appendix A on standard-setter recognition, severability, Congressional Review Act, Regulatory Flexibility Act, Paperwork Reduction Act, and the regulatory text ending at §1033.441) states no fines, penalties, criminal sanctions, benefit clawback, suspension, blocking or injunctions. Appendix A Step Five says the CFPB 'may modify or revoke' a standard setter's recognition, but this concerns recognition status and is not stated as a sanction for breach, so no entry is recorded."
+  }
+ },
+ "enforcement": []
+}

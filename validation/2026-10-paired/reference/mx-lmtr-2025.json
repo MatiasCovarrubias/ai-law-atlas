@@ -1,0 +1,352 @@
+{
+ "instrument_id": "mx-lmtr-2025",
+ "checker": "claude-opus-5-5 (Claude Code)",
+ "protocol": "VP-1.0",
+ "date": "2026-10-14",
+ "reference_scope": "operative articles only",
+ "reference_note": "Very long text (413K characters). Thresholds restricted to operative cutoffs on a characteristic of a person or firm (eligibility ages and experience, shareholding, market share, coverage, spectrum holdings, advertising-time caps and incentives, revocation triggers, one scope definition). Not listed: maximum terms of concessions and authorizations (Arts. 51, 54, 61, 62, 160), procedural time limits and retention periods, and government quantities (Art. 68 public advertising budget 1-10%, Art. 69 10% FM reservation). Key dates: publication, approval, promulgation, entry into force and transitory application, repeal and phase-in dates; transitory procedural deadlines for authorities (15 business days, 180 days, one-year harmonisation) are not listed. Sanctions: all regimes of Title XIV plus Art. 280 coercive measures.",
+ "reference": [
+  {
+   "category": "threshold",
+   "provision": "Art. 16 frac. II",
+   "quote": "Tener cuando menos treinta y cinco años cumplidos al día de la designación;",
+   "value": "age >= 35 years: eligibility to be a Commissioner (Persona Comisionada) of the Comisión Reguladora de Telecomunicaciones"
+  },
+  {
+   "category": "threshold",
+   "provision": "Art. 16 frac. III",
+   "quote": "No haber sido condenado por delito doloso que amerite pena de prisión por más de un año;",
+   "value": "conviction for an intentional crime carrying > 1 year prison: excludes eligibility as Commissioner"
+  },
+  {
+   "category": "threshold",
+   "provision": "Art. 16 frac. V",
+   "quote": "Haberse desempeñado, cuando menos tres años, en actividades profesionales, de servicio público,",
+   "value": ">= 3 years of relevant professional experience: eligibility as Commissioner"
+  },
+  {
+   "category": "threshold",
+   "provision": "Art. 16 frac. VI",
+   "quote": "durante los tres años\nprevios a su designación",
+   "value": "no listed political office in the 3 years before designation: eligibility as Commissioner"
+  },
+  {
+   "category": "threshold",
+   "provision": "Art. 16 frac. VII",
+   "quote": "No haber ocupado, en los últimos cinco años, ningún empleo, cargo o función directiva de los",
+   "value": "no management post at a regulated entity in the last 5 years: eligibility as Commissioner"
+  },
+  {
+   "category": "threshold",
+   "provision": "Art. 94 para. 1",
+   "quote": "relación de los accionistas que sean titulares del cinco por ciento o más",
+   "value": "shareholders holding >= 5%: must be listed in the concessionaire's annual shareholding filing (by 30 June)"
+  },
+  {
+   "category": "threshold",
+   "provision": "Art. 94 para. 1",
+   "quote": "con el diez por ciento o más del capital social de la empresa",
+   "value": "natural persons holding directly or indirectly >= 10% of capital: must be named in the filing"
+  },
+  {
+   "category": "threshold",
+   "provision": "Art. 94 para. 2",
+   "quote": "actos, que represente el diez por ciento o más del monto de su capital social",
+   "value": "subscription or transfer of shares >= 10% of capital (when no merger notification under competition law): prior-notice regime of Art. 94 applies"
+  },
+  {
+   "category": "threshold",
+   "provision": "Art. 94 (last paras.)",
+   "quote": "Comisión conozca la identidad de las personas físicas que tengan intereses patrimoniales mayores al diez por ciento",
+   "value": "acquiring legal person must identify natural persons with > 10% interest"
+  },
+  {
+   "category": "threshold",
+   "provision": "Art. 147 frac. II",
+   "quote": "de canales superior al cincuenta por ciento del total de los canales de televisión abierta, incluidos",
+   "value": "preponderant / substantial-power broadcasters: multiprogramming channels may not exceed 50% of total open-TV channels in the coverage region"
+  },
+  {
+   "category": "threshold",
+   "provision": "Art. 148 para. 1",
+   "quote": "una cobertura del cincuenta por ciento o más del territorio nacional y con mayor audiencia.",
+   "value": "satellite pay-TV must carry multiprogrammed broadcast signals with coverage >= 50% of national territory (and highest audience)"
+  },
+  {
+   "category": "threshold",
+   "provision": "Art. 154",
+   "quote": "las señales radiodifundidas de cobertura del cincuenta por ciento o más del territorio nacional.",
+   "value": "satellite pay-TV must-carry obligation limited to broadcast signals covering >= 50% of national territory"
+  },
+  {
+   "category": "threshold",
+   "provision": "Art. 230 frac. I, inc. a)",
+   "quote": "dieciocho por ciento del tiempo total de transmisión por cada canal de programación",
+   "value": "commercial TV stations: advertising <= 18% of total transmission time per programming channel"
+  },
+  {
+   "category": "threshold",
+   "provision": "Art. 230 frac. I, inc. b)",
+   "quote": "En estaciones de radio, el tiempo destinado a publicidad comercial no excederá del cuarenta",
+   "value": "commercial radio stations: advertising <= 40% of total transmission time per channel"
+  },
+  {
+   "category": "threshold",
+   "provision": "Art. 230 (pay TV/audio)",
+   "quote": "Podrán transmitir, diariamente y por canal, hasta seis minutos de publicidad por cada hora de",
+   "value": "pay TV and audio: advertising <= 6 minutes per hour per channel (product-offer channels exempt)"
+  },
+  {
+   "category": "threshold",
+   "provision": "Art. 230 (social concessions, TV)",
+   "quote": "territoriales, no excederá del seis por ciento del tiempo total de transmisión por cada canal de",
+   "value": "social/community/indigenous/Afro-Mexican TV: public-entity advertising <= 6% of transmission time"
+  },
+  {
+   "category": "threshold",
+   "provision": "Art. 230 (social concessions, radio)",
+   "quote": "excederá del catorce por ciento del tiempo total de transmisión por cada canal de",
+   "value": "social/community/indigenous/Afro-Mexican radio: public-entity advertising <= 14% of transmission time"
+  },
+  {
+   "category": "threshold",
+   "provision": "Art. 241",
+   "quote": "cubran con producción nacional cuando menos un veinte por ciento de su programación, podrán incrementar el",
+   "value": "commercial broadcasters with >= 20% national production may raise the advertising percentage by up to 2 points"
+  },
+  {
+   "category": "threshold",
+   "provision": "Art. 242",
+   "quote": "producción nacional independiente cuando menos un veinte por ciento de su programación, podrán incrementar el",
+   "value": "commercial broadcasters with >= 20% independent national production may raise the advertising percentage by up to 5 points"
+  },
+  {
+   "category": "threshold",
+   "provision": "Art. 256",
+   "quote": "participación nacional mayor al cincuenta por ciento, medido este porcentaje ya sea por el número de usuarios,",
+   "value": "national share > 50% (users, subscribers, audience, traffic or capacity): Agente Económico Preponderante (asymmetric regulation)"
+  },
+  {
+   "category": "threshold",
+   "provision": "Art. 258 frac. VII",
+   "quote": "Los concesionarios que cuenten con 12 MHz o más de espectro radioeléctrico en la",
+   "value": "broadcasters with >= 12 MHz of spectrum in the locality cannot access the preponderant broadcaster's passive-infrastructure sharing"
+  },
+  {
+   "category": "threshold",
+   "provision": "Art. 267",
+   "quote": "reducir su participación nacional por debajo del cincuenta por ciento en el sector donde hayan sido declarados",
+   "value": "preponderant agent's divestiture plan must reduce national share below 50% in the sector"
+  },
+  {
+   "category": "threshold",
+   "provision": "Art. 287 frac. XIV",
+   "quote": "Suspender, total o parcialmente, en más del cincuenta por ciento de la zona de cobertura, sin",
+   "value": "suspension of services in > 50% of coverage area for > 24 hours (telecom) or up to 3 calendar days (broadcasting) without justification: revocation ground"
+  },
+  {
+   "category": "threshold",
+   "provision": "Art. 287 (para. after frac. XXI)",
+   "quote": "sancionado al respectivo concesionario por lo menos en dos ocasiones por cualquiera de las causas previstas en",
+   "value": ">= 2 prior final sanctions for the same grounds required before revocation in the non-immediate cases"
+  },
+  {
+   "category": "threshold",
+   "provision": "Art. 254 frac. I",
+   "quote": "Tener cuando menos 30 años cumplidos al día de su designación;",
+   "value": "age >= 30 years: eligibility as audience defender (defensor de audiencias)"
+  },
+  {
+   "category": "threshold",
+   "provision": "Art. 254 frac. III",
+   "quote": "No haber sido condenado por delito doloso que amerite pena de prisión por más de un año, y",
+   "value": "conviction carrying > 1 year prison: excludes eligibility as audience defender"
+  },
+  {
+   "category": "threshold",
+   "provision": "Art. 3 frac. LIX (def. Programación de oferta de productos)",
+   "quote": "cinco minutos continuos;",
+   "value": "product-offer programming = selling content lasting > 5 continuous minutes (excluded from advertising time limits)"
+  },
+  {
+   "category": "key_date",
+   "provision": "Header / DOF publication",
+   "quote": "Nueva Ley publicada en el Diario Oficial de la Federación el 16 de julio de 2025",
+   "value": "2025-07-16 published in the DOF"
+  },
+  {
+   "category": "key_date",
+   "provision": "Transitorio Primero",
+   "quote": "El presente Decreto entrará en vigor al día siguiente de su publicación en el Diario Oficial de la",
+   "value": "2025-07-17 entry into force (day after publication)"
+  },
+  {
+   "category": "key_date",
+   "provision": "Decree signature block (Congress)",
+   "quote": "Ciudad de México, a 1 de julio de 2025.- Sen. Gerardo Fernández Noroña, Presidente.- Dip. Sergio Carlos",
+   "value": "2025-07-01 approved by Congress (legislative approval)"
+  },
+  {
+   "category": "key_date",
+   "provision": "Decree promulgation",
+   "quote": "Ejecutivo Federal, en la Ciudad de México, a 15 de julio de 2025.- Claudia Sheinbaum Pardo, Presidenta de los",
+   "value": "2025-07-15 promulgated / signed by the President"
+  },
+  {
+   "category": "key_date",
+   "provision": "Transitorio Segundo",
+   "quote": "Segundo. Al día siguiente a aquel en que se integre el Pleno de la Comisión Reguladora de Telecomunicaciones,",
+   "value": "conditional: day after the CRT plenum is integrated, the Art. 28 constitutional amendments (DOF 20-12-2024) take effect"
+  },
+  {
+   "category": "key_date",
+   "provision": "Transitorio Quinto",
+   "quote": "Quinto. Al día siguiente a aquel en que se integre el Pleno de la Comisión Reguladora de Telecomunicaciones",
+   "value": "conditional: day after CRT plenum integration, conflicting provisions derogated and references to IFT read as CRT / CNA"
+  },
+  {
+   "category": "key_date",
+   "provision": "Transitorio Sexto",
+   "quote": "Sexto. Al día siguiente a aquel en que se integre el Pleno de la Comisión Reguladora de Telecomunicaciones, se",
+   "value": "conditional: day after CRT plenum integration, the Ley Federal de Telecomunicaciones y Radiodifusión (2014) is abrogated"
+  },
+  {
+   "category": "key_date",
+   "provision": "Transitorio Octavo",
+   "quote": "se extingue el Instituto Federal de Telecomunicaciones, y concluirán sus funciones los Comisionados del citado",
+   "value": "conditional: day after CRT plenum integration, the IFT is extinguished"
+  },
+  {
+   "category": "key_date",
+   "provision": "Transitorio Cuarto para. 2",
+   "quote": "hayan entrado en funciones de los años 2028, 2029, 2030, 2031 y 2032, respectivamente.",
+   "value": "staggered end of first Commissioners' terms in 2028, 2029, 2030, 2031 and 2032"
+  },
+  {
+   "category": "key_date",
+   "provision": "Transitorio Vigésimo Segundo",
+   "quote": "constancia de registro correspondiente, a partir de la entrada en vigor del presente Decreto",
+   "value": "pre-2014 permits must request transition from entry into force until one year later (2026-07-17); otherwise titles lapse and frequencies revert"
+  },
+  {
+   "category": "key_date",
+   "provision": "Transitorio Vigésimo Noveno",
+   "quote": "convenios de interconexión a que se refiere el artículo 114 del presente Decreto, con vigencia a partir del 1 de enero",
+   "value": "2026-01-01: interconnection agreements effective from this date apply 2025 tariffs and minimum technical conditions"
+  },
+  {
+   "category": "key_date",
+   "provision": "Transitorio Trigésimo para. 2",
+   "quote": "Transcurridos ciento veinte días hábiles posteriores a la conclusión de la implementación de la medida a la que",
+   "value": "conditional: 120 business days after completion of mobile-line identification, unidentified lines are suspended (guidelines due within 120 business days of entry into force)"
+  },
+  {
+   "category": "sanction",
+   "provision": "Art. 281 para. 2",
+   "quote": "por la PROFECO con multa por el equivalente de 0.01% hasta 3% de los ingresos del concesionario, autorizado o",
+   "value": "PROFECO fine 0.01%-3% of income for infringements of user rights"
+  },
+  {
+   "category": "sanction",
+   "provision": "Art. 282 inc. A); Art. 283 frac. I",
+   "quote": "Con multa por el equivalente de 0.01% hasta 0.75% de los ingresos del concesionario, autorizado,",
+   "value": "CRT fine 0.01%-0.75% of income (late filings, homologation/unlocking, registration); warning for first infraction; none on spontaneous compliance; fallback cap 20 million UMA"
+  },
+  {
+   "category": "sanction",
+   "provision": "Art. 282 inc. B); Art. 283 frac. II",
+   "quote": "Con multa por el equivalente de 0.01% hasta 3% de los ingresos del concesionario, autorizado,",
+   "value": "CRT fine 0.01%-3% of income (other violations, concession conditions); fallback cap 202 million UMA"
+  },
+  {
+   "category": "sanction",
+   "provision": "Art. 282 inc. C); Art. 283 frac. III",
+   "quote": "Con multa por el equivalente de 1% hasta 3% de los ingresos del concesionario, autorizado, o persona",
+   "value": "CRT fine 1%-3% of income (arbitrary blocking of Internet access users, exclusive property contracts); fallback cap 101 million UMA"
+  },
+  {
+   "category": "sanction",
+   "provision": "Art. 282 inc. D); Art. 283 frac. IV",
+   "quote": "Con multa por el equivalente de 1.1% hasta 4% de los ingresos del concesionario, autorizado o",
+   "value": "CRT fine 1.1%-4% of income (advertising exclusivity, EMF limits, terminal barriers, collaboration with justice, false user information); fallback cap 163 million UMA"
+  },
+  {
+   "category": "sanction",
+   "provision": "Art. 282 inc. E); Art. 283 frac. V",
+   "quote": "Con multa por el equivalente del 2.01% hasta 6% de los ingresos del concesionario, autorizado o",
+   "value": "CRT fine 2.01%-6% of income (interconnection, interception, privacy of communications, tariffs, asymmetric regulation); fallback cap 202 million UMA"
+  },
+  {
+   "category": "sanction",
+   "provision": "Art. 282 inc. F); Art. 283 frac. VI",
+   "quote": "Con multa por el equivalente de 6.01% hasta 10% de los ingresos de la persona infractora",
+   "value": "CRT fine 6.01%-10% of income (operating without concession; unjustified total interruption where sole provider); fallback cap 246 million UMA"
+  },
+  {
+   "category": "sanction",
+   "provision": "Art. 284",
+   "quote": "Artículo 284. En caso de reincidencia, la Comisión podrá imponer una multa equivalente hasta el doble de las",
+   "value": "recidivism: fine up to double the amounts"
+  },
+  {
+   "category": "sanction",
+   "provision": "Art. 287",
+   "quote": "Artículo 287. Las concesiones, las autorizaciones y, en su caso, las constancias de registro se podrán revocar",
+   "value": "revocation of concessions, authorizations and registration certificates (21 grounds; immediate for listed fractions)"
+  },
+  {
+   "category": "sanction",
+   "provision": "Art. 288",
+   "quote": "obtener, por sí o través de otra persona, nuevas concesiones o autorizaciones de las previstas en esta Ley, por un",
+   "value": "holder of revoked concession disqualified from new concessions/authorizations for 5 years"
+  },
+  {
+   "category": "sanction",
+   "provision": "Art. 289",
+   "quote": "perderán en beneficio de la Nación los bienes, instalaciones y equipos empleados en la comisión de dichas",
+   "value": "forfeiture of goods, installations and equipment for unlicensed service or obstruction of general means of communication"
+  },
+  {
+   "category": "sanction",
+   "provision": "Art. 290",
+   "quote": "será castigado con un año a ocho años de prisión y",
+   "value": "criminal: 1-8 years prison and fine 7,000-36,000 UMA for damaging telecom/broadcast infrastructure; 12-15 years with explosives"
+  },
+  {
+   "category": "sanction",
+   "provision": "Art. 292 frac. I",
+   "quote": "Con apercibimiento por una sola vez o multa por el equivalente de 0.01% hasta el 0.75% de los",
+   "value": "SEGOB: warning or fine 0.01%-0.75% of income (late filings on content matters)"
+  },
+  {
+   "category": "sanction",
+   "provision": "Art. 292 frac. II",
+   "quote": "Con apercibimiento por una sola vez o multa por el equivalente de 0.76% hasta el 2.5% de los",
+   "value": "SEGOB: warning or fine 0.76%-2.5% of income (state time, national chains, sponsorship duration, classification)"
+  },
+  {
+   "category": "sanction",
+   "provision": "Art. 292 frac. III",
+   "quote": "Con multa por el equivalente de 2% hasta el 5% de los ingresos del concesionario, autorizado,",
+   "value": "SEGOB: fine 2%-5% of income of concessionaire, authorized party, programmer or digital platform (sponsorship rules; Art. 232 advertising prohibition)"
+  },
+  {
+   "category": "sanction",
+   "provision": "Art. 295 frac. I",
+   "quote": "Con multa por el equivalente al doble de los ingresos obtenidos por el concesionario, derivados de",
+   "value": "CRT: fine equal to double the income obtained from exceeding advertising caps"
+  },
+  {
+   "category": "sanction",
+   "provision": "Art. 295 frac. II",
+   "quote": "Con multa por el equivalente de 0.01% hasta el 1% de los ingresos acumulables del concesionario,",
+   "value": "CRT: fine 0.01%-1% of income for audience-defence failures (no mechanisms, no defender, no code of ethics)"
+  },
+  {
+   "category": "sanction",
+   "provision": "Art. 280",
+   "quote": "Multa de 100 a 20,000 del valor diario de la de Unidad de Medida y Actualización;",
+   "value": "coercive measures (medios de apremio): fine 100-20,000 UMA, additional daily fine up to 10 days for blocking verification, public force"
+  }
+ ]
+}

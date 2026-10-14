@@ -1,0 +1,834 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "eu-dsa-data-access-2025",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (connectors/fetch_texts.py)",
+  "url": "http://publications.europa.eu/resource/cellar/c735acd1-a4a8-11f0-a7c5-01aa75ed71a1.0006.03/DOC_1",
+  "retrieved": "2026-10-13",
+  "version": "as fetched",
+  "language": "en",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "data_access_sharing",
+   "data_protection"
+  ],
+  "primary_domain": "data_access_sharing",
+  "mechanisms": [
+   "mandate_obligation",
+   "institution_setup",
+   "disclosure_transparency"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "platform_operator",
+   "search_engine_operator",
+   "government_agency",
+   "data_controller",
+   "data_processor",
+   "research_institution"
+  ],
+  "affected_roles": [
+   "consumers_users"
+  ],
+  "decision_margins": [
+   "firm:compliance_process",
+   "household:data_privacy"
+  ],
+  "territorial_scope": {
+   "types": [
+    "supranational"
+   ],
+   "description": "Adopted by the European Commission; binding in its entirety and directly applicable in all Member States.",
+   "evidence": {
+    "provision": "Art. 16",
+    "quote": "This Regulation shall be binding in its entirety and directly applicable in all Member States."
+   }
+  },
+  "agora_strategies": [
+   "Input controls: Data circulation"
+  ]
+ },
+ "summary": {
+  "short": "Commission delegated regulation under the Digital Services Act setting technical conditions and procedures for vetted researchers' access to data held by very large online platforms and search engines. It requires a DSA data access portal, reasoned requests by Digital Services Coordinators, and data provider catalogues and access modalities.",
+  "long": "Supplements Regulation (EU) 2022/2065 (Digital Services Act) with technical conditions and procedures for vetted researchers' access to data held by very large online platform and search engine providers under Article 40(4). Requires the Commission to establish a DSA data access portal linked to AGORA, and data providers to publish points of contact, data catalogues and suggested access modalities. The Digital Services Coordinator of establishment must decide within 80 working days whether to formulate a reasoned request, assessing applicant affiliation, independence, funding, necessity, and data-protection and security risks, and determines access modalities, which may require secure processing environments. Overviews of reasoned requests are published; data providers may file amendment requests and seek mediation within five working days, with mediation capped at 40 working days and costs borne by the provider. Coordinators may consult independent experts registered in AGORA. Data providers must notify access start and termination within three working days and must not impose archiving or analytical-tool restrictions unless stated in the reasoned request. The Annex sets Commission processor duties and security measures for the portal. Enters into force on the twentieth day after OJ publication; binding in all Member States."
+ },
+ "relations": [
+  {
+   "relation": "legal_basis",
+   "target_text": "Regulation (EU) 2022/2065 (Digital Services Act)",
+   "note": "Delegated regulation adopted under Article 40(13) of Regulation (EU) 2022/2065; supplements it by laying down technical conditions and procedures for data access under Article 40(4).",
+   "evidence": {
+    "provision": "Citation",
+    "quote": "and in particular Article 40(13) thereof"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Commission Implementing Regulation (EU) 2024/607 (information sharing system AGORA)",
+   "note": "DSA data access portal must be interoperable with AGORA; Digital Services Coordinators access submitted information in AGORA; expert consultations and mediation records are registered in AGORA.",
+   "evidence": {
+    "provision": "Article 3(3)",
+    "quote": "The DSA data access portal shall be interoperable with the information sharing system AGORA established by Implementing Regulation (EU) 2024/607."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) 2016/679 (General Data Protection Regulation)",
+   "note": "Imports GDPR definitions; Digital Services Coordinators may consult GDPR Art. 51 supervisory authorities (Art. 9(2)); also cited for controller, lawful basis and transfer provisions (Arts 5, 9, 10(3); recital 30; Annex point 7).",
+   "evidence": {
+    "provision": "Article 2",
+    "quote": "the definitions in Article 4 of Regulation (EU) 2016/679 and Article 3 of Regulation (EU) 2018/1725 shall apply"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) 2018/1725 (EU institutions data protection)",
+   "note": "Imports definitions (Art. 2); Annex point 3 and point 7(j) refer to Article 31(2) of this Regulation for the Commission's processing records.",
+   "evidence": {
+    "provision": "Article 2",
+    "quote": "Article 3 of Regulation (EU) 2018/1725 shall apply"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) 2022/868 (Data Governance Act)",
+   "note": "Definition of secure processing environment is taken from Article 2, point (20), of that Regulation; secure processing environments may be required for access (Art. 9(5)).",
+   "evidence": {
+    "provision": "Article 2(8)",
+    "quote": "secure processing environment as defined in Article 2, point (20), of Regulation (EU) 2022/868"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive (EU) 2019/790 (copyright in the Digital Single Market)",
+   "note": "Definition of research organisation is taken from Article 2, point (1), of that Directive; affiliation confirmation is a prerequisite for reasoned requests (Art. 8(a)(i)).",
+   "evidence": {
+    "provision": "Article 8(a)(i)",
+    "quote": "a confirmation of affiliation to a research organisation as defined in Article 2, point (1), of Directive (EU) 2019/790"
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "European Commission",
+   "role": "designated",
+   "function": "Establishes and hosts the DSA data access portal (Art. 3(1)); processor of personal data processed in the portal (Art. 4(2)); security and operational duties set out in the Annex.",
+   "evidence": {
+    "provision": "Article 3(1)",
+    "quote": "The Commission shall establish and host a DSA data access portal."
+   }
+  },
+  {
+   "name": "Digital Services Coordinator of establishment (and Digital Services Coordinator of the Member State of the research organisation)",
+   "role": "designated",
+   "function": "Decides whether a reasoned request is formulated (Art. 7); determines access modalities (Art. 9); publishes overviews of reasoned requests (Art. 11); handles amendment requests and mediation (Arts 12-13); may consult experts (Art. 14); registers records in AGORA.",
+   "evidence": {
+    "provision": "Article 7(1)",
+    "quote": "the Digital Services Coordinator of establishment, taking due account of the prerequisites set out in Article 8"
+   }
+  },
+  {
+   "name": "Data providers (providers of very large online platforms and of very large online search engines)",
+   "role": "addressee",
+   "function": "Establish a point of contact (Art. 6(1)); publish a DSA data catalogue and suggested access modalities (Art. 6(4)); notify the Digital Services Coordinator of establishment within three working days of access being given or terminated (Art. 15(1)); provide documentation and impose no restrictions beyond the reasoned request (Arts 15(2)-(4)).",
+   "evidence": {
+    "provision": "Article 2(5)",
+    "quote": "a provider of a very large online platform or of a very large online search engine designated as such in accordance with Article 33(4)"
+   }
+  }
+ ],
+ "notes": "Adopted 1 July 2025; published in the OJ on 9.10.2025 (date from the document header); entry into force on the twentieth day after publication (Art. 16), no calendar date stated in the text. The text amends or repeals no other instrument. Target_instrument_id is an empty string where the target is not in the registry (schema requires a string). Applicant researchers (natural persons), the European Board for Digital Services, the EDPS and GDPR supervisory authorities are described but not coded as entities. Minor wording points: recital 21 uses 'Digital Service Coordinator' (singular); Art. 6(4)(c) cites 'Regulation EU 2022/2065' without brackets.",
+ "events": [
+  {
+   "event": "adopted",
+   "date": "2025-07-01",
+   "date_type": "absolute",
+   "date_text": "of 1 July 2025",
+   "applies_to": "Regulation as a whole",
+   "evidence": {
+    "provision": "Title",
+    "quote": "of 1 July 2025"
+   }
+  },
+  {
+   "event": "signed",
+   "date": "2025-07-01",
+   "date_type": "absolute",
+   "date_text": "Done at Brussels, 1 July 2025.",
+   "applies_to": "Regulation as a whole (signature by the President of the Commission)",
+   "evidence": {
+    "provision": "Final provisions (signature block)",
+    "quote": "Done at Brussels, 1 July 2025."
+   }
+  },
+  {
+   "event": "consultation",
+   "date": "2024-12-04",
+   "date_type": "absolute",
+   "date_text": "delivered an opinion on 4 December 2024",
+   "applies_to": "European Data Protection Supervisor opinion",
+   "evidence": {
+    "provision": "Recital (31)",
+    "quote": "delivered an opinion on 4 December 2024"
+   }
+  },
+  {
+   "event": "published",
+   "date": "2025-10-09",
+   "date_type": "absolute",
+   "date_text": "9.10.2025",
+   "applies_to": "Regulation as a whole (Official Journal of the European Union, L series 2025/2050)",
+   "evidence": {
+    "provision": "Official Journal header (dateline)",
+    "quote": "9.10.2025"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2025-10-29",
+   "date_type": "relative",
+   "date_text": "shall enter into force on the twentieth day following that of its publication in the Official Journal of the European Union",
+   "anchor": "publication in the Official Journal of the European Union",
+   "applies_to": "Regulation as a whole",
+   "offset_value": 20,
+   "offset_unit": "days",
+   "anchor_event": "published",
+   "evidence": {
+    "provision": "Article 16",
+    "quote": "This Regulation shall enter into force on the twentieth day following that of its publication in the Official Journal of the European Union."
+   },
+   "date_computed_from": "published 2025-10-09 (text) + 20 days"
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "Within 80 working days from the submission of a data access application",
+   "anchor": "submission of a data access application",
+   "depends_on": "submission of a data access application to the Digital Services Coordinator of establishment",
+   "applies_to": "Digital Services Coordinator of establishment: decision whether a reasoned request can be formulated (Article 7(1)(a) or (b))",
+   "offset_value": 80,
+   "offset_unit": "business_days",
+   "evidence": {
+    "provision": "Article 7(1)",
+    "quote": "Within 80 working days from the submission of a data access application"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "within a period of five working days from the communication by the Digital Services Coordinator of establishment pursuant to Article 40(6), second subparagraph of Regulation (EU) 2022/2065",
+   "anchor": "communication by the Digital Services Coordinator of establishment of its decision on the amendment request",
+   "depends_on": "communication by the Digital Services Coordinator of establishment of its decision on the amendment request",
+   "applies_to": "Data provider: written request to participate in mediation",
+   "offset_value": 5,
+   "offset_unit": "business_days",
+   "evidence": {
+    "provision": "Article 13(1)",
+    "quote": "within a period of five working days from the communication by the Digital Services Coordinator of establishment"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "initiate the mediation within 20 working days from the submission of the mediation request pursuant to paragraph 3",
+   "anchor": "submission of the written request for mediation",
+   "depends_on": "submission of the mediation request pursuant to Article 13(3)",
+   "applies_to": "Digital Services Coordinator of establishment and data provider: appointment of a mediator and initiation of mediation",
+   "offset_value": 20,
+   "offset_unit": "business_days",
+   "evidence": {
+    "provision": "Article 13(4)",
+    "quote": "initiate the mediation within 20 working days from the submission of the mediation request"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "shall not exceed 40 working days starting on the day of the initiation of the mediation pursuant to paragraph 4",
+   "anchor": "initiation of the mediation",
+   "depends_on": "initiation of the mediation pursuant to Article 13(4)",
+   "applies_to": "Time limit for the mediation set by the Digital Services Coordinator of establishment",
+   "offset_value": 40,
+   "offset_unit": "business_days",
+   "evidence": {
+    "provision": "Article 13(9)",
+    "quote": "shall not exceed 40 working days starting on the day of the initiation of the mediation"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "Data providers shall notify the Digital Services Coordinator of establishment within three working days of the fact: (a) that access to the requested data has been provided to vetted researchers; (b) that the access for the vetted researchers has been terminated",
+   "anchor": "the fact that access has been provided to vetted researchers or has been terminated",
+   "depends_on": "access provided to vetted researchers or access for vetted researchers terminated",
+   "applies_to": "Data providers: notification to the Digital Services Coordinator of establishment of access provided and of access terminated",
+   "offset_value": 3,
+   "offset_unit": "business_days",
+   "evidence": {
+    "provision": "Article 15(1)",
+    "quote": "within three working days of the fact"
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "data access application",
+   "defined_in": "this Regulation, Art. 2(1)",
+   "evidence": {
+    "provision": "Art. 2(1)",
+    "quote": "‘data access application’ means the information and relevant documentation submitted by applicant researchers to the Digital Services Coordinator of establishment"
+   }
+  },
+  {
+   "term": "applicant researcher",
+   "defined_in": "this Regulation, Art. 2(3)",
+   "evidence": {
+    "provision": "Art. 2(3)",
+    "quote": "‘applicant researcher’ means any natural person applying for access to data as referred to in Article 40(4) of Regulation (EU) 2022/2065, either individually, in a group or as part of an entity;"
+   }
+  },
+  {
+   "term": "principal researcher",
+   "defined_in": "this Regulation, Art. 2(4)",
+   "evidence": {
+    "provision": "Art. 2(4)",
+    "quote": "‘principal researcher’ means the applicant researcher who submits the data access application in their individual capacity or on behalf of an entity or a group of applicant researchers;"
+   }
+  },
+  {
+   "term": "data provider",
+   "defined_in": "this Regulation, Art. 2(5)",
+   "evidence": {
+    "provision": "Art. 2(5)",
+    "quote": "‘data provider’ means a provider of a very large online platform or of a very large online search engine designated as such in accordance with Article 33(4) of Regulation (EU) 2022/2065"
+   }
+  },
+  {
+   "term": "reasoned request",
+   "defined_in": "this Regulation, Art. 2(6)",
+   "evidence": {
+    "provision": "Art. 2(6)",
+    "quote": "‘reasoned request’ means a reasoned request for data access pursuant to Article 40(4) of Regulation (EU) 2022/2065;"
+   }
+  },
+  {
+   "term": "amendment request",
+   "defined_in": "this Regulation, Art. 2(7)",
+   "evidence": {
+    "provision": "Art. 2(7)",
+    "quote": "‘amendment request’ means a request for amendment pursuant to Article 40(5) of Regulation (EU) 2022/2065 submitted by the data provider to the Digital Services Coordinator of establishment"
+   }
+  },
+  {
+   "term": "secure processing environment",
+   "defined_in": "Regulation (EU) 2022/868, Article 2, point (20) (by reference, Art. 2(8) of this Regulation)",
+   "evidence": {
+    "provision": "Art. 2(8)",
+    "quote": "‘secure processing environment’ means secure processing environment as defined in Article 2, point (20), of Regulation (EU) 2022/868"
+   }
+  },
+  {
+   "term": "vetted researcher",
+   "defined_in": "Regulation (EU) 2022/2065, Article 40(8), first subparagraph (by reference, Art. 2(1) of this Regulation)",
+   "evidence": {
+    "provision": "Art. 2(1)",
+    "quote": "to obtain the status of ‘vetted researcher’ as referred to in Article 40(8), first subparagraph, of Regulation (EU) 2022/2065"
+   }
+  },
+  {
+   "term": "research organisation",
+   "defined_in": "Directive (EU) 2019/790, Article 2, point (1) (by reference, Art. 8(a)(i) of this Regulation)",
+   "evidence": {
+    "provision": "Art. 8, point (a)(i)",
+    "quote": "a confirmation of affiliation to a research organisation as defined in Article 2, point (1), of Directive (EU) 2019/790"
+   }
+  },
+  {
+   "term": "personal data",
+   "defined_in": "Regulation (EU) 2016/679, Article 4 (applied by reference, Art. 2 of this Regulation)",
+   "evidence": {
+    "provision": "Art. 2",
+    "quote": "the definitions in Article 4 of Regulation (EU) 2016/679 and Article 3 of Regulation (EU) 2018/1725 shall apply"
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Commission establishes and hosts the DSA data access portal.",
+   "applies_from": "twentieth day following publication in the Official Journal",
+   "evidence": {
+    "provision": "Art. 3(1)",
+    "quote": "The Commission shall establish and host a DSA data access portal."
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "Data providers must have an account on the DSA data access portal.",
+   "applies_from": "twentieth day following publication in the Official Journal",
+   "evidence": {
+    "provision": "Art. 3(4)",
+    "quote": "Data providers shall have an account on the DSA data access portal."
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "research_institution",
+   "modality": "shall",
+   "summary": "Applicant researchers (natural persons; no closer role in the vocabulary) must have an account on the portal to participate in the data access process.",
+   "applies_from": "twentieth day following publication in the Official Journal",
+   "evidence": {
+    "provision": "Art. 3(5)",
+    "quote": "To participate in the data access process, applicant researchers shall have an account on the DSA data access portal."
+   }
+  },
+  {
+   "type": "data_minimization",
+   "addressee": "data_controller",
+   "also_addressees": [
+    "data_processor"
+   ],
+   "modality": "shall",
+   "summary": "Personal data registered in or exchanged via the portal may be processed only as far as proportionate and necessary for the data access process and publication of relevant information.",
+   "applies_from": "twentieth day following publication in the Official Journal",
+   "evidence": {
+    "provision": "Art. 5(1)",
+    "quote": "the processing shall take place only in so far as it is proportionate and necessary for the purpose of the data access process and publication of relevant information."
+   }
+  },
+  {
+   "type": "localization",
+   "addressee": "data_controller",
+   "also_addressees": [
+    "data_processor"
+   ],
+   "modality": "shall",
+   "summary": "Processing of personal data under Art. 5(1) must use IT infrastructure located in the European Economic Area.",
+   "applies_from": "twentieth day following publication in the Official Journal",
+   "evidence": {
+    "provision": "Art. 5(4)",
+    "quote": "shall be performed using information technology infrastructure located in the European Economic Area."
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "also_addressees": [
+    "platform_operator"
+   ],
+   "modality": "shall",
+   "summary": "Each Digital Services Coordinator and each data provider establishes a dedicated point of contact to provide information and support on the data access process.",
+   "applies_from": "twentieth day following publication in the Official Journal",
+   "evidence": {
+    "provision": "Art. 6(1)",
+    "quote": "Each Digital Services Coordinator and each data provider shall establish a dedicated point of contact"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "also_addressees": [
+    "platform_operator"
+   ],
+   "modality": "shall",
+   "summary": "Digital Services Coordinators and data providers communicate their points of contact to the Commission as soon as possible.",
+   "applies_from": "twentieth day following publication in the Official Journal",
+   "evidence": {
+    "provision": "Art. 6(2)",
+    "quote": "The Digital Services Coordinators and data providers shall communicate their points of contact to the Commission, as soon as possible."
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Each Digital Services Coordinator makes available on its online interface the point of contact details together with a link to the portal.",
+   "applies_from": "twentieth day following publication in the Official Journal",
+   "evidence": {
+    "provision": "Art. 6(3)",
+    "quote": "Each Digital Services Coordinator shall make available and easily findable on its online interface, the details of the point of contact"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "Data providers make available on their online interfaces their point of contact, a link to the portal, a DSA data catalogue and suggested access modalities, regularly updated (Art. 6(4)-(5)).",
+   "applies_from": "twentieth day following publication in the Official Journal",
+   "evidence": {
+    "provision": "Art. 6(4)",
+    "quote": "Data providers shall make the following information available and easily findable on their online interfaces:"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Within 80 working days of an application, the Digital Services Coordinator of establishment decides whether to formulate a reasoned request and acts on that decision; in justified cases it notifies the principal researcher of the delay and a new date (Art. 7(2)).",
+   "applies_from": "twentieth day following publication in the Official Journal",
+   "evidence": {
+    "provision": "Art. 7(1)",
+    "quote": "shall decide whether a reasoned request can be formulated and shall undertake one of the following actions:"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Digital Services Coordinator of establishment decides whether a reasoned request can be formulated, taking into account the listed prerequisites.",
+   "applies_from": "twentieth day following publication in the Official Journal",
+   "evidence": {
+    "provision": "Art. 8",
+    "quote": "The Digital Services Coordinator of establishment shall decide whether a reasoned request can be formulated taking into account the following elements:"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "research_institution",
+   "modality": "shall",
+   "summary": "Applicant researchers provide a confirmation of affiliation to a research organisation, a declaration of independence from commercial interests, a commitment to publish results free of charge, funding information, a data description, risk information and a summary of the application.",
+   "applies_from": "twentieth day following publication in the Official Journal",
+   "evidence": {
+    "provision": "Art. 8(a)(ii)",
+    "quote": "a declaration of independence from commercial interests relevant to the specific project for which the data are requested;"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Digital Services Coordinator of establishment determines the access modalities the data provider must use, taking into account the application, rights of providers and recipients, and the listed elements (Art. 9(3)-(4)).",
+   "applies_from": "twentieth day following publication in the Official Journal",
+   "evidence": {
+    "provision": "Art. 9(1)",
+    "quote": "The Digital Services Coordinator of establishment shall determine the modalities, including the technical, legal and organisational measures, that the data provider is to use"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Where a secure processing environment is to be used, the Digital Services Coordinator requires documentation attesting that its operator meets the listed conditions.",
+   "applies_from": "twentieth day following publication in the Official Journal",
+   "conditional_on": "where the Digital Services Coordinator considers that a secure processing environment is to be used",
+   "evidence": {
+    "provision": "Art. 9(5)",
+    "quote": "the Digital Services Coordinator of establishment shall require documentation attesting that the operator of that environment:"
+   }
+  },
+  {
+   "type": "record_keeping",
+   "addressee": "cloud_service_provider",
+   "modality": "shall",
+   "summary": "The operator of a secure processing environment keeps identifiable access logs for the period necessary to verify and audit processing; the same provision also requires access conditions, individual user identities, sufficient computing power and monitoring. The operator may be the data provider or a third party.",
+   "applies_from": "twentieth day following publication in the Official Journal",
+   "conditional_on": "where a secure processing environment is to be used",
+   "evidence": {
+    "provision": "Art. 9(5)(c)",
+    "quote": "keeps identifiable logs of access to the secure processing environment for the period necessary to verify and audit all processing operations in that environment;"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "A reasoned request must contain the date of access and of its termination, the access modalities and the application summary; where a third-country transfer is involved it includes information on the transfer mechanism.",
+   "applies_from": "twentieth day following publication in the Official Journal",
+   "evidence": {
+    "provision": "Art. 10(1)",
+    "quote": "A reasoned request shall contain at least the following elements:"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Upon formulation of a reasoned request, the Digital Services Coordinator publishes an overview of it on the portal and keeps it updated after amendments or mediation outcomes.",
+   "applies_from": "twentieth day following publication in the Official Journal",
+   "conditional_on": "upon formulation of a reasoned request",
+   "evidence": {
+    "provision": "Art. 11(1)",
+    "quote": "the Digital Services Coordinator of establishment shall publish an overview of the reasoned request in the public interface of the DSA data access portal."
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "On receipt of an amendment request, the Digital Services Coordinator informs the principal researcher concerned.",
+   "applies_from": "twentieth day following publication in the Official Journal",
+   "conditional_on": "upon receipt of an amendment request",
+   "evidence": {
+    "provision": "Art. 12(1)",
+    "quote": "the Digital Services Coordinator of establishment shall inform the principal researcher concerned."
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Digital Services Coordinator decides on amendment requests within the timeframe of Art. 40(6) DSA, taking into account the listed factors (Art. 12(2)-(3)) and requests for additional information (Art. 12(4)-(5)).",
+   "applies_from": "twentieth day following publication in the Official Journal",
+   "evidence": {
+    "provision": "Art. 12(5)",
+    "quote": "shall make its decision within the timeframe laid down in Article 40(6) of Regulation (EU) 2022/2065"
+   }
+  },
+  {
+   "type": "complaint_mechanism",
+   "addressee": "platform_operator",
+   "modality": "may",
+   "summary": "A data provider that disagrees with a decision on an amendment request may request in writing that the Digital Services Coordinator participate in mediation.",
+   "applies_from": "twentieth day following publication in the Official Journal",
+   "conditional_on": "if the data provider disagrees with the decision on the amendment request",
+   "evidence": {
+    "provision": "Art. 13(1)",
+    "quote": "the data provider may, within a period of five working days"
+   }
+  },
+  {
+   "type": "complaint_mechanism",
+   "addressee": "government_agency",
+   "also_addressees": [
+    "platform_operator"
+   ],
+   "modality": "shall",
+   "summary": "The Digital Services Coordinator and the data provider agree on a mediator and initiate mediation within 20 working days; the Coordinator sets a mediation time limit of 40 working days (Art. 13(9)) and informs the principal researcher (Art. 13(7)).",
+   "applies_from": "twentieth day following publication in the Official Journal",
+   "evidence": {
+    "provision": "Art. 13(4)",
+    "quote": "shall agree on the appointment of a mediator and initiate the mediation within 20 working days"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "The data provider bears all costs of the mediation.",
+   "applies_from": "twentieth day following publication in the Official Journal",
+   "evidence": {
+    "provision": "Art. 13(6)",
+    "quote": "The data provider shall bear all costs of the mediation."
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Digital Services Coordinator sets a time limit for mediation not exceeding 40 working days from its initiation.",
+   "applies_from": "twentieth day following publication in the Official Journal",
+   "evidence": {
+    "provision": "Art. 13(9)",
+    "quote": "shall set a time limit for the mediation, which shall not exceed 40 working days"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Digital Services Coordinator registers in AGORA a summary record of the mediation, prepared by the mediator and signed by all parties, with listed contents.",
+   "applies_from": "twentieth day following publication in the Official Journal",
+   "evidence": {
+    "provision": "Art. 13(13)",
+    "quote": "shall register in AGORA a summary record of the mediation"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "may",
+   "summary": "The Digital Services Coordinator may consult independent experts before formulating a reasoned request or deciding on an amendment request.",
+   "applies_from": "twentieth day following publication in the Official Journal",
+   "conditional_on": "before formulating a reasoned request or deciding on an amendment request",
+   "evidence": {
+    "provision": "Art. 14(1)",
+    "quote": "the Digital Services Coordinator may decide to consult experts."
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "auditor_assessor",
+   "modality": "shall",
+   "summary": "Consulted experts must be independent and impartial and sign a declaration of no financial or personal ties, no interest in the outcome, and freedom from conflicts of interest.",
+   "applies_from": "twentieth day following publication in the Official Journal",
+   "evidence": {
+    "provision": "Art. 14(3)",
+    "quote": "the experts shall sign a declaration confirming that they:"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Digital Services Coordinator records each expert consultation and the expert opinion received in AGORA without undue delay.",
+   "applies_from": "twentieth day following publication in the Official Journal",
+   "evidence": {
+    "provision": "Art. 14(4)",
+    "quote": "shall encode any consultation carried out pursuant to paragraph 1"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "Data providers notify the Digital Services Coordinator of establishment within three working days when access to requested data is provided and when it is terminated.",
+   "applies_from": "twentieth day following publication in the Official Journal",
+   "evidence": {
+    "provision": "Art. 15(1)",
+    "quote": "Data providers shall notify the Digital Services Coordinator of establishment within three working days of the fact:"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "Data providers provide vetted researchers with metadata and documentation such as codebooks, changelogs and architectural documentation; if this risks a significant vulnerability, they notify the Digital Services Coordinator and may propose alternatives.",
+   "applies_from": "twentieth day following publication in the Official Journal",
+   "evidence": {
+    "provision": "Art. 15(2)",
+    "quote": "Data providers shall provide vetted researchers with any additional information needed to access and understand the requested data"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "platform_operator",
+   "modality": "shall_not",
+   "summary": "Data providers may not impose on vetted researchers archiving, storage, refresh or deletion requirements, limits on standard analytical tools, or personal-data processing conditions beyond those in the reasoned request (Art. 15(3)-(4)); exceptions apply where the reasoned request explicitly mentions them.",
+   "applies_from": "twentieth day following publication in the Official Journal",
+   "evidence": {
+    "provision": "Art. 15(3)",
+    "quote": "data providers shall not impose on vetted researchers data management requirements"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Commission sets up and ensures a secure and reliable IT infrastructure, the portal, on behalf of the Digital Services Coordinators.",
+   "applies_from": "twentieth day following publication in the Official Journal",
+   "evidence": {
+    "provision": "Annex, point 1",
+    "quote": "The Commission shall set up and ensure a secure and reliable IT infrastructure"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Commission informs the controllers of any use or replacement of sub-processors, so that they can object.",
+   "applies_from": "twentieth day following publication in the Official Journal",
+   "evidence": {
+    "provision": "Annex, point 2",
+    "quote": "The Commission shall inform the controllers of said use or replacement of sub-processors"
+   }
+  },
+  {
+   "type": "data_minimization",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Commission, as processor, processes personal data only as necessary for authentication, access control, storage, deletion and related functions listed in points (a)-(f).",
+   "applies_from": "twentieth day following publication in the Official Journal",
+   "evidence": {
+    "provision": "Annex, point 3",
+    "quote": "The processing by the Commission shall process personal data only insofar as necessary for the:"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Commission takes state-of-the-art organisational, physical and logical security measures for the portal and its facilities, including designating a security entity, regular testing, access controls and intrusion blocking (points 4, 6 and 7(a)).",
+   "applies_from": "twentieth day following publication in the Official Journal",
+   "evidence": {
+    "provision": "Annex, point 4",
+    "quote": "The Commission shall take all state of the art organisational, physical, and logical security measures to ensure the DSA data access portal functioning."
+   }
+  },
+  {
+   "type": "risk_assessment",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Commission applies risk assessment procedures to identify and estimate potential threats to the portal, and maintains a risk management plan (point 7(b)).",
+   "applies_from": "twentieth day following publication in the Official Journal",
+   "evidence": {
+    "provision": "Annex, point 5(a)",
+    "quote": "risk assessment procedures to identify and estimate potential threats to the DSA data access portal;"
+   }
+  },
+  {
+   "type": "audit",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Commission runs audit and review procedures to check implemented security measures against the security policy, control integrity regularly, detect breaches and implement changes; it also defines conditions for independent audits.",
+   "applies_from": "twentieth day following publication in the Official Journal",
+   "evidence": {
+    "provision": "Annex, point 5(b)",
+    "quote": "audit and review procedure to:"
+   }
+  },
+  {
+   "type": "incident_reporting",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Commission lays down a security incident procedure defining reporting and escalation, informing affected controllers without delay so they can notify supervisory authorities of personal data breaches.",
+   "applies_from": "twentieth day following publication in the Official Journal",
+   "evidence": {
+    "provision": "Annex, point 5(e)",
+    "quote": "laying down a security incident procedure to define the reporting and escalation scheme, inform without delay the controllers affected"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Commission assists controllers with technical and organisational measures so they can respond to data subject rights requests under Chapter III GDPR.",
+   "applies_from": "twentieth day following publication in the Official Journal",
+   "evidence": {
+    "provision": "Annex, point 7(e)",
+    "quote": "assist the controllers by appropriate technical and organisational measures"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Commission maintains a record of processing activities carried out on behalf of the controllers, under Art. 31(2) of Regulation (EU) 2018/1725.",
+   "applies_from": "twentieth day following publication in the Official Journal",
+   "evidence": {
+    "provision": "Annex, point 7(j)",
+    "quote": "maintain a record of processing activities carried out on behalf of the controllers"
+   }
+  }
+ ],
+ "section_status": {
+  "thresholds": {
+   "status": "not_found",
+   "note": "No numeric cutoff changing legal treatment was found. The only numbers are procedural working-day periods (Art. 7(1), Art. 13(1), 13(4), 13(9), Art. 15(1)) and the Art. 40(6) reference, which are coded as procedural limits, not thresholds."
+  },
+  "enforcement": {
+   "status": "not_found",
+   "note": "The text sets out no sanction, fine, penalty, suspension, revocation or blocking provisions. It refers to Article 40 of Regulation (EU) 2022/2065 and Article 40(6) for decision deadlines, but states no penalty regime itself."
+  }
+ },
+ "thresholds": [],
+ "enforcement": []
+}

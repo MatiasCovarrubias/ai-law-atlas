@@ -1,0 +1,1719 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "eu-political-advertising-2024",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (connectors/fetch_texts.py)",
+  "url": "http://publications.europa.eu/resource/cellar/825b8717-e65c-11ee-8b2b-01aa75ed71a1.0006.03/DOC_1",
+  "retrieved": "2026-10-13",
+  "version": "as fetched",
+  "language": "en",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "elections_political_ads",
+   "data_protection",
+   "ai_general",
+   "data_access_sharing",
+   "online_safety_content"
+  ],
+  "primary_domain": "elections_political_ads",
+  "mechanisms": [
+   "mandate_obligation",
+   "disclosure_transparency",
+   "prohibition_ban",
+   "registration_notification",
+   "designation_tiering",
+   "institution_setup",
+   "standard_setting",
+   "liability_rule"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "advertiser_campaign",
+   "platform_operator",
+   "search_engine_operator",
+   "data_controller",
+   "government_agency",
+   "regulator"
+  ],
+  "affected_roles": [
+   "consumers_users",
+   "general_public",
+   "minors",
+   "research_institution"
+  ],
+  "decision_margins": [
+   "firm:entry_market_access",
+   "firm:input_use",
+   "firm:product_design_release",
+   "firm:compliance_process",
+   "firm:size_organization",
+   "household:access",
+   "household:data_privacy",
+   "household:information"
+  ],
+  "territorial_scope": {
+   "types": [
+    "supranational",
+    "extraterritorial"
+   ],
+   "description": "EU-wide regulation applying to political advertising disseminated in the Union, irrespective of where the provider or sponsor is established.",
+   "evidence": {
+    "provision": "Art. 2(1)",
+    "quote": "irrespective of the place of establishment of the provider of political advertising services"
+   }
+  },
+  "agora_harms": [
+   "Violation of civil or human rights, including privacy"
+  ],
+  "agora_incentives": [
+   "Fines"
+  ],
+  "agora_strategies": [
+   "Disclosure",
+   "Disclosure: About inputs",
+   "Disclosure: In deployment",
+   "Evaluation: Impact assessment",
+   "Input controls: Data use"
+  ]
+ },
+ "summary": {
+  "short": "EU Regulation 2024/900 harmonises transparency and due-diligence rules for political advertising. It requires labels and transparency notices on political ads, a European ad repository, and limits targeting using personal data. It restricts pre-election sponsorship to EU-linked sponsors and sets sanction maxima of 6% of turnover. Applies from 10 October 2025.",
+  "long": "Regulation (EU) 2024/900 sets harmonised EU rules on transparency and due diligence for political advertising services and sponsors, and on targeting and ad-delivery techniques that process personal data. Political advertising covers paid or in-house messages by, for or on behalf of political actors, or liable and designed to influence elections, referendums or legislative processes; official communication, editorial content and personal opinions are excluded. Publishers must label each political advertisement and publish a transparency notice, keep records for seven years, and very large platforms have extra repository duties and feed a public European repository. Personal-data targeting requires separate explicit consent; special-category profiling and targeting of persons known to be at least one year below voting age are prohibited. Controllers must adopt internal policies and annual risk assessments. In the three months before elections, services are limited to eligible sponsors. Non-EU providers need legal representatives. Member States set sanctions up to 6% of annual turnover or income. Applies from 10 October 2025."
+ },
+ "relations": [
+  {
+   "relation": "legal_basis",
+   "target_text": "Treaty on the Functioning of the European Union (TFEU), Articles 16 and 114",
+   "note": "Enacting legal basis. The recitals state that the transparency rules rest on Article 114 TFEU and the targeting and ad-delivery rules on Article 16 TFEU.",
+   "evidence": {
+    "provision": "Preamble",
+    "quote": "Having regard to the Treaty on the Functioning of the European Union, and in particular Articles 16 and 114 thereof,"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive 2000/31/EC (Directive on electronic commerce)",
+   "note": "Listed among the instruments this Regulation is without prejudice to.",
+   "evidence": {
+    "provision": "Article 2(3)(a)",
+    "quote": "Directive 2000/31/EC;"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive 2002/58/EC (Directive on privacy and electronic communications)",
+   "note": "Listed among the instruments this Regulation is without prejudice to; Recital 113 says it complements the data protection acquis including this Directive.",
+   "evidence": {
+    "provision": "Article 2(3)(b)",
+    "quote": "Directive 2002/58/EC;"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive 2005/29/EC (Unfair Commercial Practices Directive)",
+   "note": "Listed among the instruments this Regulation is without prejudice to.",
+   "evidence": {
+    "provision": "Article 2(3)(c)",
+    "quote": "Directive 2005/29/EC;"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive 2006/114/EC (misleading and comparative advertising)",
+   "note": "Listed among the instruments this Regulation is without prejudice to.",
+   "evidence": {
+    "provision": "Article 2(3)(d)",
+    "quote": "Directive 2006/114/EC;"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive 2006/123/EC (services in the internal market)",
+   "note": "Listed among the instruments this Regulation is without prejudice to.",
+   "evidence": {
+    "provision": "Article 2(3)(e)",
+    "quote": "Directive 2006/123/EC;"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive 2010/13/EU (Audiovisual Media Services Directive)",
+   "note": "Listed among the instruments this Regulation is without prejudice to (Art 2(3)(f)). Art 22(4) allows the competent authorities under this Regulation to be the same as those referred to in Article 30 of this Directive.",
+   "evidence": {
+    "provision": "Article 2(3)(f)",
+    "quote": "Directive 2010/13/EU;"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive 2011/83/EU (consumer rights)",
+   "note": "Listed among the instruments this Regulation is without prejudice to.",
+   "evidence": {
+    "provision": "Article 2(3)(g)",
+    "quote": "Directive 2011/83/EU;"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) 2019/1150 (promoting fairness and transparency for business users of online intermediation services)",
+   "note": "Listed among the instruments this Regulation is without prejudice to.",
+   "evidence": {
+    "provision": "Article 2(3)(h)",
+    "quote": "Regulation (EU) 2019/1150;"
+   }
+  },
+  {
+   "relation": "designates_under",
+   "target_text": "Regulation (EU) 2022/2065 (Digital Services Act)",
+   "note": "Art 22(3) assigns supervision of intermediary-service providers to competent authorities and the Digital Services Coordinator under Art 49 of that Regulation, applying its Articles 49, 58(1) to (4), 60(1) and 51. Also listed in Art 2(3)(i) as an instrument this Regulation is without prejudice to, and Art 13(2), Art 15(5) and Art 25 rely on its provisions.",
+   "evidence": {
+    "provision": "Article 22(3)",
+    "quote": "The Digital Services Coordinator referred to in Article 49 of Regulation (EU) 2022/2065 in each Member State shall be responsible for ensuring coordination at national level"
+   }
+  },
+  {
+   "relation": "designates_under",
+   "target_text": "Regulation (EU) 2016/679 (General Data Protection Regulation)",
+   "note": "Art 22(1) makes the GDPR supervisory authorities competent to monitor Articles 18 and 19 of this Regulation and applies GDPR Articles 58 and Chapter VII. Art 18(1)(c) and Art 25(6) also refer to GDPR provisions (Articles 4(4), 9(1), 9(2), 83(5)).",
+   "evidence": {
+    "provision": "Article 22(1)",
+    "quote": "The supervisory authorities referred to in Article 51 of Regulation (EU) 2016/679"
+   }
+  },
+  {
+   "relation": "designates_under",
+   "target_text": "Regulation (EU) 2018/1725 (EU institutions data protection)",
+   "note": "Art 22(1) makes the European Data Protection Supervisor competent to monitor Articles 18 and 19 of this Regulation; Art 25(7) gives it fining power for those Articles.",
+   "evidence": {
+    "provision": "Article 22(1)",
+    "quote": "the European Data Protection Supervisor referred to in Article 52 of Regulation (EU) 2018/1725 shall be competent to monitor the application of Articles 18 and 19 of this Regulation"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive (EU) 2020/1828 (representative actions for consumers)",
+   "note": "Redress information for notifications and for information requests refers to the possibilities under this Directive, where applicable.",
+   "evidence": {
+    "provision": "Article 17(5)",
+    "quote": "including, where applicable, those that exist under Directive (EU) 2020/1828."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Directive 2013/34/EU (annual financial statements)",
+   "note": "Micro, small and medium-sized undertaking categories (Art 3(1) to (3)) and the management report (Art 19) are taken from this Directive by reference; used for exemptions in Articles 9(4), 12(5), 14 and 16.",
+   "evidence": {
+    "provision": "Article 9(4)",
+    "quote": "micro-undertakings qualifying under Article 3(1) of Directive 2013/34/EU"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU, Euratom) No 1141/2014 (European political parties and foundations)",
+   "note": "Definitions of political party, political alliance and European political party in Art 3(4)(a) to (c) and Art 5(1) are taken from this Regulation by reference.",
+   "evidence": {
+    "provision": "Article 3(4)(a)",
+    "quote": "as defined in Article 2, point 1, of Regulation (EU, Euratom) No 1141/2014"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Regulation (EU) No 182/2011 (committee procedure)",
+   "note": "Art 29(1) states that the Commission's committee is a committee within the meaning of this Regulation; implementing acts under Articles 11(4) and 12(7) are adopted under the examination procedure of Art 29(2).",
+   "evidence": {
+    "provision": "Article 29(1)",
+    "quote": "That committee shall be a committee within the meaning of Regulation (EU) No 182/2011."
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "European Commission",
+   "role": "designated",
+   "function": "Establishes and manages the European repository for online political advertisements (directly or through a management authority), adopts implementing acts under Articles 11(4), 12(7) and 13(6), and provides the portal under Articles 21(5) and 26(2).",
+   "evidence": {
+    "provision": "Article 13(1)",
+    "quote": "The Commission shall establish and ensure, directly or by entrusting this responsibility to a management authority, the management of a European repository for online political advertisements"
+   }
+  },
+  {
+   "name": "European Data Protection Board",
+   "role": "designated",
+   "function": "Referred to in Article 68 of Regulation (EU) 2016/679; prepares guidelines to assist GDPR supervisory authorities in assessing compliance with this Regulation.",
+   "evidence": {
+    "provision": "Article 22(2)",
+    "quote": "The European Data Protection Board referred to in Article 68 of Regulation (EU) 2016/679 shall, on its own initiative or at the request of the Commission, prepare guidelines"
+   }
+  },
+  {
+   "name": "European Data Protection Supervisor",
+   "role": "designated",
+   "function": "Competent to monitor Articles 18 and 19 within its field of competence (Art 22(1)); may impose fines for infringements of Articles 18 and 19 under Article 25(7).",
+   "evidence": {
+    "provision": "Article 22(1)",
+    "quote": "or the European Data Protection Supervisor referred to in Article 52 of Regulation (EU) 2018/1725 shall be competent to monitor the application of Articles 18 and 19 of this Regulation"
+   }
+  },
+  {
+   "name": "Supervisory authorities referred to in Article 51 of Regulation (EU) 2016/679",
+   "role": "designated",
+   "function": "Competent to monitor Articles 18 and 19 of this Regulation within their field of competence (Art 22(1)); may impose fines under Article 25(6).",
+   "evidence": {
+    "provision": "Article 22(1)",
+    "quote": "The supervisory authorities referred to in Article 51 of Regulation (EU) 2016/679"
+   }
+  },
+  {
+   "name": "Digital Services Coordinator (each Member State)",
+   "role": "designated",
+   "function": "Designated under Article 49 of Regulation (EU) 2022/2065; responsible for national coordination for providers of intermediary services under this Regulation (Art 22(3)).",
+   "evidence": {
+    "provision": "Article 22(3)",
+    "quote": "The Digital Services Coordinator referred to in Article 49 of Regulation (EU) 2022/2065 in each Member State shall be responsible for ensuring coordination at national level"
+   }
+  },
+  {
+   "name": "Competent authorities designated by Member States (Art 22(4))",
+   "role": "designated",
+   "function": "Responsible for application and enforcement of aspects not covered by Art 22(1) and (3); empowered under Art 22(5) to request information, issue warnings, order cessation, impose or request fines, publish statements and carry out inspections.",
+   "evidence": {
+    "provision": "Article 22(4)",
+    "quote": "Each Member State shall designate one or more competent authorities to be responsible for the application and enforcement of the aspects of this Regulation not referred to in paragraphs 1 and 3 of this Article"
+   }
+  },
+  {
+   "name": "National contact points (one per Member State)",
+   "role": "designated",
+   "function": "Designated as national contact point at Union level for all aspects of this Regulation; take part in the network of national contact points (Art 22(8) and (9)).",
+   "evidence": {
+    "provision": "Article 22(9)",
+    "quote": "Each Member State shall designate one competent authority as a national contact point at Union level for the purposes of all aspects of this Regulation."
+   }
+  }
+ ],
+ "notes": "Text is the Official Journal version of 20.3.2024; no consolidated text was used. Application: Article 30(2) sets application from 10 October 2025, but Article 3 and Article 5(1) apply from entry into force (twentieth day after publication, Article 30(1)); the entry-into-force date itself is not stated in the text. Article 28(2) gives a delegation period running from 9 April 2024, a date not otherwise stated. Article 25(2) sets two alternative maximum bases, (a) 6 % of annual income or budget (whichever is highest) and (b) 6 % of worldwide turnover, without saying when each applies. Article 7(1) uses 'provider of advertising services', a term not defined here, where Article 3(6) defines 'provider of political advertising services'. Relation target_instrument_id values are empty because registry IDs were not checked; target_text identifies each instrument.",
+ "events": [
+  {
+   "event": "signed",
+   "date": "2024-03-13",
+   "date_type": "absolute",
+   "date_text": "Done at Strasbourg, 13 March 2024.",
+   "applies_to": "Regulation (EU) 2024/900 as a whole",
+   "evidence": {
+    "provision": "Closing formula (after Article 30)",
+    "quote": "Done at Strasbourg, 13 March 2024."
+   }
+  },
+  {
+   "event": "passed_chamber",
+   "date": "2024-02-27",
+   "date_type": "absolute",
+   "date_text": "Position of the European Parliament of 27 February 2024",
+   "applies_to": "European Parliament (first-reading position)",
+   "evidence": {
+    "provision": "Footnote (^3)",
+    "quote": "Position of the European Parliament of 27 February 2024"
+   }
+  },
+  {
+   "event": "legislative_approval",
+   "date": "2024-03-11",
+   "date_type": "absolute",
+   "date_text": "decision of the Council of 11 March 2024",
+   "applies_to": "Council (approval of the Parliament position)",
+   "evidence": {
+    "provision": "Footnote (^3)",
+    "quote": "decision of the Council of 11 March 2024"
+   }
+  },
+  {
+   "event": "consultation",
+   "date": "2022-01-20",
+   "date_type": "absolute",
+   "date_text": "delivered an opinion on 20 January 2022",
+   "applies_to": "European Data Protection Supervisor (opinion on the proposal)",
+   "evidence": {
+    "provision": "Recital (114)",
+    "quote": "delivered an opinion on 20 January 2022"
+   }
+  },
+  {
+   "event": "published",
+   "date": "2024-03-20",
+   "date_type": "absolute",
+   "date_text": "20.3.2024",
+   "applies_to": "Regulation (EU) 2024/900 as a whole (Official Journal of the European Union, Series L)",
+   "evidence": {
+    "provision": "Header (Official Journal dateline)",
+    "quote": "20.3.2024"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2024-04-09",
+   "date_type": "relative",
+   "date_text": "on the twentieth day following that of its publication in the Official Journal of the European Union",
+   "anchor": "publication in the Official Journal of the European Union",
+   "applies_to": "Regulation (EU) 2024/900 as a whole, except Article 3 and Article 5(1) (see application row)",
+   "offset_value": 20,
+   "offset_unit": "days",
+   "anchor_event": "published",
+   "evidence": {
+    "provision": "Art. 30(1)",
+    "quote": "This Regulation shall enter into force on the twentieth day following that of its publication in the Official Journal of the European Union."
+   },
+   "date_computed_from": "published 2024-03-20 (text) + 20 days"
+  },
+  {
+   "event": "application",
+   "date": "2024-04-09",
+   "date_type": "relative",
+   "date_text": "as from the date of its entry into force",
+   "anchor": "date of entry into force of this Regulation",
+   "applies_to": "Article 3 (definitions) and Article 5(1) (non-discrimination in provision of political advertising services), within the scope of the Regulation",
+   "offset_value": 0,
+   "offset_unit": "days",
+   "anchor_event": "entry_into_force",
+   "evidence": {
+    "provision": "Art. 30(2)",
+    "quote": "within the scope of application of this Regulation, Article 3 and Article 5(1) shall apply as from the date of its entry into force."
+   },
+   "date_computed_from": "entry_into_force 2024-04-09 (computed) + 0 days"
+  },
+  {
+   "event": "application",
+   "date": "2025-10-10",
+   "date_type": "absolute",
+   "date_text": "It shall apply from 10 October 2025.",
+   "applies_to": "Regulation as a whole, other than Article 3 and Article 5(1) (which apply from entry into force)",
+   "evidence": {
+    "provision": "Art. 30(2)",
+    "quote": "It shall apply from 10 October 2025."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2025-07-10",
+   "date_type": "absolute",
+   "date_text": "By 10 July 2025, the Commission shall adopt implementing acts establishing the format and the template of the labels",
+   "applies_to": "Commission implementing acts on the format and template of political advertising labels",
+   "evidence": {
+    "provision": "Art. 11(4)",
+    "quote": "By 10 July 2025, the Commission shall adopt implementing acts establishing the format and the template of the labels referred to in paragraph 3."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2025-07-10",
+   "date_type": "absolute",
+   "date_text": "By 10 July 2025, the Commission shall adopt implementing acts to establish the format of and provide technical specifications for the transparency notice",
+   "applies_to": "Commission implementing acts on the format and technical specifications of transparency notices",
+   "evidence": {
+    "provision": "Art. 12(7)",
+    "quote": "By 10 July 2025, the Commission shall adopt implementing acts to establish the format of and provide technical specifications for the transparency notice"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2026-01-10",
+   "date_type": "absolute",
+   "date_text": "by 10 January 2026, notify the Commission of those rules and of those measures",
+   "applies_to": "Member States (notification of sanction rules to the Commission)",
+   "evidence": {
+    "provision": "Art. 25(3)",
+    "quote": "Member States shall, by 10 January 2026, notify the Commission of those rules and of those measures"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2026-04-10",
+   "date_type": "absolute",
+   "date_text": "By 10 April 2026, the Commission shall adopt implementing acts",
+   "applies_to": "Commission implementing acts on the European repository for online political advertisements (data structure, metadata, authentication, API)",
+   "evidence": {
+    "provision": "Art. 13(6)",
+    "quote": "By 10 April 2026, the Commission shall adopt implementing acts in accordance with Article 29"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "Within two years after each election to the European Parliament, the Commission shall submit a report on the evaluation and review of this Regulation",
+   "anchor": "each election to the European Parliament",
+   "applies_to": "Commission evaluation and review report",
+   "offset_value": 2,
+   "offset_unit": "years",
+   "evidence": {
+    "provision": "Art. 27",
+    "quote": "Within two years after each election to the European Parliament, the Commission shall submit a report on the evaluation and review of this Regulation"
+   }
+  },
+  {
+   "event": "expiry",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "for a period of four years from the 9 April 2024",
+   "anchor": "9 April 2024",
+   "depends_on": "tacit extension for periods of identical duration unless the European Parliament or the Council opposes (Art. 28(2))",
+   "applies_to": "Commission power to adopt delegated acts under Article 12(6) and Article 19(5)",
+   "evidence": {
+    "provision": "Art. 28(2)",
+    "quote": "shall be conferred on the Commission for a period of four years from the 9 April 2024."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "not later than nine months before the end of the four-year period",
+   "anchor": "end of the four-year delegation period",
+   "applies_to": "Commission report on the delegation of power (Art. 12(6) and Art. 19(5))",
+   "offset_value": -9,
+   "offset_unit": "months",
+   "anchor_event": "expiry",
+   "evidence": {
+    "provision": "Art. 28(2)",
+    "quote": "The Commission shall draw up a report in respect of the delegation of power not later than nine months before the end of the four-year period."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "within 48 hours",
+   "depends_on": "receipt of a notification about a political advertisement linked to an election or referendum in the last month preceding that election or referendum",
+   "applies_to": "Political advertising publishers (processing of notifications), other than micro, small or medium-sized undertakings",
+   "evidence": {
+    "provision": "Art. 15(7)",
+    "quote": "shall process any notification they receive about a political advertisement linked to that election or referendum within 48 hours"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "shall, within two working days, acknowledge receipt of that request",
+   "depends_on": "receipt of a request for information from a national competent authority under Article 16(1)",
+   "applies_to": "Providers of political advertising services (acknowledgement of requests)",
+   "evidence": {
+    "provision": "Art. 16(3)",
+    "quote": "shall, within two working days, acknowledge receipt of that request"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "shall provide the requested information within eight working days",
+   "depends_on": "receipt of a request for information from a national competent authority under Article 16(1)",
+   "applies_to": "Providers of political advertising services (provision of requested information)",
+   "evidence": {
+    "provision": "Art. 16(3)",
+    "quote": "The relevant provider of political advertising services shall provide the requested information within eight working days."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "shall make reasonable efforts to provide the requested information within 12 working days and thereafter, without undue delay",
+   "depends_on": "receipt of a request for information from a national competent authority under Article 16(1)",
+   "applies_to": "Providers qualifying as micro, small or medium-sized undertakings under Article 3(1), (2) and (3) of Directive 2013/34/EU",
+   "evidence": {
+    "provision": "Art. 16(3)",
+    "quote": "shall make reasonable efforts to provide the requested information within 12 working days"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "no later than 48 hours, in the last month preceding an election or a referendum",
+   "depends_on": "receipt of a request for information under Article 16(1) in the last month preceding an election or referendum",
+   "applies_to": "Providers of political advertising services (derogation from the eight-working-day period in Art. 16(3))",
+   "evidence": {
+    "provision": "Art. 16(4)",
+    "quote": "shall provide the requested information that is in their possession without undue delay and no later than 48 hours"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "no later than 72 hours after the first publication of the political advertisement",
+   "depends_on": "first publication of the political advertisement",
+   "applies_to": "Political advertising publishers other than very large online platforms and very large online search engines, publishing through an online service (upload to the European repository)",
+   "evidence": {
+    "provision": "Art. 13(4)",
+    "quote": "no later than 72 hours after the first publication of the political advertisement"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "as soon as possible and, at the latest, within one month",
+   "depends_on": "request from an interested entity under Article 17(1)",
+   "applies_to": "Providers of political advertising services (response to interested entities)",
+   "evidence": {
+    "provision": "Art. 17(3)",
+    "quote": "at the latest, within one month."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "no later than 14 days after receiving the request",
+   "depends_on": "receipt of a reasoned request for information from the competent authority of another Member State",
+   "applies_to": "Competent authorities (information to a competent authority of another Member State)",
+   "evidence": {
+    "provision": "Art. 23(3)",
+    "quote": "no later than 14 days after receiving the request"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "without undue delay and no later than one month after receiving the request, which may be extended to one month in cases requiring additional investigation",
+   "depends_on": "receipt of a justified request for assistance from another competent authority",
+   "applies_to": "Competent authorities (assistance to another competent authority for supervision or enforcement)",
+   "evidence": {
+    "provision": "Art. 23(3)",
+    "quote": "without undue delay and no later than one month after receiving the request"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "without undue delay and no later than one month following receipt of the notification",
+   "depends_on": "receipt of a notification of a suspected infringement under Article 23(4) (or of additional information under Article 23(6))",
+   "applies_to": "Competent authority of the main establishment (assessment of suspected infringement)",
+   "evidence": {
+    "provision": "Art. 23(7)",
+    "quote": "no later than one month following receipt of the notification referred to in paragraph 4"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "other",
+   "variable_text": "period preceding an election or referendum (sponsor eligibility window)",
+   "operator": "=",
+   "value": 3,
+   "value_text": "in the last three months preceding an election or referendum organised at Union level or at national, regional or local level in a Member State",
+   "unit": "months",
+   "measurement": "window measured back from the election or referendum date in the Member State concerned",
+   "level": "other",
+   "trigger": "eligibility",
+   "consequence": "Political advertising services pertaining to that election or referendum may only be provided to a sponsor, or service provider acting on behalf of a sponsor, who declares itself to be a Union citizen, a permanently resident third-country national with voting right, or an EU-established legal person not ultimately owned or controlled by a third-country national or by a legal person established in a third country",
+   "conditions": "Without prejudice to stricter national rules",
+   "evidence": {
+    "provision": "Art. 5(2)",
+    "quote": "in the last three months preceding an election or referendum organised at Union level or at national, regional or local level in a Member State"
+   }
+  },
+  {
+   "variable": "age",
+   "variable_text": "at least one year under the voting age established by national rules",
+   "operator": ">=",
+   "value": 1,
+   "value_text": "known by the controller with reasonable certainty to be at least one year under the voting age established by national rules",
+   "unit": "years",
+   "measurement": "known by the controller with reasonable certainty; the controller is not obliged to process additional personal data to assess age",
+   "level": "person",
+   "trigger": "prohibition",
+   "consequence": "Targeting techniques or ad-delivery techniques involving the processing of personal data of such a data subject in the context of political advertising are prohibited",
+   "conditions": "Applies to targeting or ad-delivery techniques involving processing of personal data in the context of political advertising",
+   "evidence": {
+    "provision": "Art. 18(2)",
+    "quote": "known by the controller with reasonable certainty to be at least one year under the voting age established by national rules are prohibited"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "last month preceding an election or referendum",
+   "operator": "=",
+   "value": 1,
+   "value_text": "during the last month preceding an election or referendum",
+   "unit": "months",
+   "measurement": "period of publication or dissemination of the political advertising, measured back from the election or referendum date",
+   "level": "other",
+   "trigger": "penalty_tier",
+   "consequence": "Infringements of Articles 5, 7, 11, 12, 13, 15, 16 and 18 are considered particularly serious where the political advertising concerned is published or disseminated in that period",
+   "conditions": "Directed to citizens in the Member State in which the relevant election or referendum is being organised",
+   "evidence": {
+    "provision": "Art. 25(5)",
+    "quote": "during the last month preceding an election or referendum"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "micro-undertaking under Article 3(1) of Directive 2013/34/EU",
+   "operator": "=",
+   "value": null,
+   "value_text": "micro-undertakings qualifying under Article 3(1) of Directive 2013/34/EU",
+   "unit": "",
+   "measurement": "size class as defined in Directive 2013/34/EU, Article 3(1)",
+   "level": "entity",
+   "trigger": "exemption",
+   "consequence": "Article 9 (record-keeping) does not apply to the micro-undertaking",
+   "conditions": "The provision of advertising services is purely marginal and ancillary to their main activities",
+   "depends_on": "Directive 2013/34/EU, Art. 3(1) (size class)",
+   "evidence": {
+    "provision": "Art. 9(4)",
+    "quote": "This Article shall not apply to micro-undertakings qualifying under Article 3(1) of Directive 2013/34/EU, if the provision of advertising services is purely marginal and ancillary to their main activities."
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "micro-undertaking under Article 3(1) of Directive 2013/34/EU",
+   "operator": "=",
+   "value": null,
+   "value_text": "micro-undertakings qualifying under Article 3(1) of Directive 2013/34/EU",
+   "unit": "",
+   "measurement": "size class as defined in Directive 2013/34/EU, Article 3(1)",
+   "level": "entity",
+   "trigger": "exemption",
+   "consequence": "Article 12(4) (retention of transparency notices for seven years) does not apply to the micro-undertaking",
+   "conditions": "Provision of advertising services is purely marginal and ancillary to their main activities",
+   "depends_on": "Directive 2013/34/EU, Art. 3(1) (size class)",
+   "evidence": {
+    "provision": "Art. 12(5)",
+    "quote": "Paragraph 4 of this Article shall not apply to micro-undertakings qualifying under Article 3(1) of Directive 2013/34/EU, provided that the provision of advertising services is purely marginal and ancillary to their main activities."
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "micro, small or medium-sized undertaking under Article 3(1), (2) and (3) of Directive 2013/34/EU",
+   "operator": "=",
+   "value": null,
+   "value_text": "micro, small or medium-sized undertakings qualifying under Article 3(1), (2) and (3) of Directive 2013/34/EU",
+   "unit": "",
+   "measurement": "size class as defined in Directive 2013/34/EU, Article 3(1), (2) and (3)",
+   "level": "entity",
+   "trigger": "exemption",
+   "consequence": "Paragraph 1 of Article 14 (periodic reporting on amounts and benefits received) does not apply to the undertaking",
+   "conditions": "None stated",
+   "depends_on": "Directive 2013/34/EU, Art. 3(1), (2) and (3) (size classes)",
+   "evidence": {
+    "provision": "Art. 14(2)",
+    "quote": "Paragraph 1 of this Article shall not apply to micro, small or medium-sized undertakings qualifying under Article 3(1), (2) and (3) of Directive 2013/34/EU."
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "micro, small or medium-sized undertaking under Article 3(1), (2) and (3) of Directive 2013/34/EU",
+   "operator": "=",
+   "value": null,
+   "value_text": "providers of political advertising services qualifying as micro, small or medium-sized undertakings under Article 3(1), (2) and (3) of Directive 2013/34/EU shall make reasonable efforts",
+   "unit": "",
+   "measurement": "size class as defined in Directive 2013/34/EU, Article 3(1), (2) and (3)",
+   "level": "entity",
+   "trigger": "benefit",
+   "consequence": "The reply period to a competent authority information request is 12 working days instead of 8 working days, on a reasonable-efforts basis",
+   "conditions": "Applies to requests under Article 16(1) outside the last month preceding an election or referendum",
+   "depends_on": "Directive 2013/34/EU, Art. 3(1), (2) and (3) (size classes)",
+   "evidence": {
+    "provision": "Art. 16(3)",
+    "quote": "qualifying as micro, small or medium-sized undertakings under Article 3(1), (2) and (3) of Directive 2013/34/EU shall make reasonable efforts to provide the requested information within 12 working days"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "micro, small or medium-sized undertaking under Article 3(1), (2) and (3) of Directive 2013/34/EU",
+   "operator": "=",
+   "value": null,
+   "value_text": "Political advertising publishers qualifying as micro, small or medium-sized undertakings under Article 3(1), (2) and (3) of Directive 2013/34/EU shall make best efforts to process any notification",
+   "unit": "",
+   "measurement": "size class as defined in Directive 2013/34/EU, Article 3(1), (2) and (3)",
+   "level": "entity",
+   "trigger": "exemption",
+   "consequence": "Notifications linked to an election or referendum are processed on a best-efforts, without-undue-delay basis instead of within 48 hours in the last month preceding that election or referendum",
+   "conditions": "Notification concerns a political advertisement linked to an election or referendum",
+   "depends_on": "Directive 2013/34/EU, Art. 3(1), (2) and (3) (size classes)",
+   "evidence": {
+    "provision": "Art. 15(7)",
+    "quote": "Political advertising publishers qualifying as micro, small or medium-sized undertakings under Article 3(1), (2) and (3) of Directive 2013/34/EU shall make best efforts to process any notification"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "micro, small or medium-sized undertaking under Article 3(1), (2) and (3) of Directive 2013/34/EU",
+   "operator": "=",
+   "value": null,
+   "value_text": "Providers of political advertising services qualifying as micro, small or medium-sized undertakings under Article 3(1), (2) and (3) of Directive 2013/34/EU may appoint an external natural person as contact point",
+   "unit": "",
+   "measurement": "size class as defined in Directive 2013/34/EU, Article 3(1), (2) and (3)",
+   "level": "entity",
+   "trigger": "benefit",
+   "consequence": "May appoint an external natural person as contact point for national competent authorities",
+   "conditions": "None stated",
+   "depends_on": "Directive 2013/34/EU, Art. 3(1), (2) and (3) (size classes)",
+   "evidence": {
+    "provision": "Art. 16(5)",
+    "quote": "Providers of political advertising services qualifying as micro, small or medium-sized undertakings under Article 3(1), (2) and (3) of Directive 2013/34/EU may appoint an external natural person as contact point."
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "political advertising",
+   "defined_in": "this Regulation",
+   "evidence": {
+    "provision": "Art. 3(2)",
+    "quote": "‘political advertising’ means the preparation, placement, promotion, publication, delivery or dissemination, by any means, of a message, normally provided for remuneration or through in-house activities or as part of a political advertising campaign:"
+   }
+  },
+  {
+   "term": "service",
+   "defined_in": "this Regulation, by reference to Article 57 TFEU",
+   "evidence": {
+    "provision": "Art. 3(1)",
+    "quote": "‘service’ means any self-employed economic activity, normally provided for remuneration, as referred to in Article 57 TFEU;"
+   }
+  },
+  {
+   "term": "political advertisement",
+   "defined_in": "this Regulation",
+   "evidence": {
+    "provision": "Art. 3(3)",
+    "quote": "‘political advertisement’ means an instance of political advertising published, delivered or disseminated by any means;"
+   }
+  },
+  {
+   "term": "political actor",
+   "defined_in": "this Regulation",
+   "evidence": {
+    "provision": "Art. 3(4)",
+    "quote": "‘political actor’ means any of the following:"
+   }
+  },
+  {
+   "term": "political party",
+   "defined_in": "Regulation (EU, Euratom) No 1141/2014, Art. 2 point 1",
+   "evidence": {
+    "provision": "Art. 3(4)(a)",
+    "quote": "a ‘political party’ as defined in Article 2, point 1, of Regulation (EU, Euratom) No 1141/2014"
+   }
+  },
+  {
+   "term": "political advertising service",
+   "defined_in": "this Regulation",
+   "evidence": {
+    "provision": "Art. 3(5)",
+    "quote": "‘political advertising service’ means a service consisting of political advertising with the exception of an online ‘intermediary service’"
+   }
+  },
+  {
+   "term": "intermediary service",
+   "defined_in": "Regulation (EU) 2022/2065, Art. 3 point (g)",
+   "evidence": {
+    "provision": "Art. 3(5)",
+    "quote": "an online ‘intermediary service’, as defined in Article 3, point (g), of Regulation (EU) 2022/2065"
+   }
+  },
+  {
+   "term": "provider of political advertising services",
+   "defined_in": "this Regulation",
+   "evidence": {
+    "provision": "Art. 3(6)",
+    "quote": "‘provider of political advertising services’ means a natural or legal person engaging in the provision of political advertising services, with the exception of purely ancillary services;"
+   }
+  },
+  {
+   "term": "political advertising campaign",
+   "defined_in": "this Regulation",
+   "evidence": {
+    "provision": "Art. 3(7)",
+    "quote": "‘political advertising campaign’ means the preparation, placement, promotion, publication, delivery or dissemination of a series of linked political advertisements"
+   }
+  },
+  {
+   "term": "very large online platform",
+   "defined_in": "Regulation (EU) 2022/2065, Art. 33(4) (designation)",
+   "evidence": {
+    "provision": "Art. 3(8)",
+    "quote": "‘very large online platform’ means an online platform designated as a very large online platform pursuant to Article 33(4) of Regulation (EU) 2022/2065;"
+   }
+  },
+  {
+   "term": "very large online search engine",
+   "defined_in": "Regulation (EU) 2022/2065, Art. 33(4) (designation)",
+   "evidence": {
+    "provision": "Art. 3(9)",
+    "quote": "‘very large online search engine’ means an online search engine designated as a very large online search engine pursuant to Article 33(4) of Regulation (EU) 2022/2065;"
+   }
+  },
+  {
+   "term": "sponsor",
+   "defined_in": "this Regulation",
+   "evidence": {
+    "provision": "Art. 3(10)",
+    "quote": "‘sponsor’ means the natural or legal person at whose request or on whose behalf a political advertisement is prepared, placed, promoted, published, delivered or disseminated;"
+   }
+  },
+  {
+   "term": "targeting techniques",
+   "defined_in": "this Regulation",
+   "evidence": {
+    "provision": "Art. 3(11)",
+    "quote": "‘targeting techniques’ means techniques that are used to address a political advertisement only to a specific person or group of persons, or to exclude them, on the basis of the processing of personal data;"
+   }
+  },
+  {
+   "term": "ad-delivery techniques",
+   "defined_in": "this Regulation",
+   "evidence": {
+    "provision": "Art. 3(12)",
+    "quote": "‘ad-delivery techniques’ means optimisation techniques that are used to increase the circulation, reach or visibility of a political advertisement"
+   }
+  },
+  {
+   "term": "political advertising publisher",
+   "defined_in": "this Regulation",
+   "evidence": {
+    "provision": "Art. 3(13)",
+    "quote": "‘political advertising publisher’ means a provider of political advertising service that publishes, delivers or disseminates political advertising through any medium;"
+   }
+  },
+  {
+   "term": "controller",
+   "defined_in": "Regulation (EU) 2016/679, Art. 4 point 7; Regulation (EU) 2018/1725, Art. 3 point 8",
+   "evidence": {
+    "provision": "Art. 3(14)",
+    "quote": "‘controller’ means a ‘controller’ as defined in Article 4, point 7, of Regulation (EU) 2016/679 or, where applicable, as defined in Article 3, point 8, of Regulation (EU) 2018/1725."
+   }
+  },
+  {
+   "term": "European political party",
+   "defined_in": "Regulation (EU, Euratom) No 1141/2014, Art. 2 point 3",
+   "evidence": {
+    "provision": "Art. 5(1)",
+    "quote": "a ‘European political party’ as defined in Article 2, point 3, of Regulation (EU, Euratom) No 1141/2014"
+   }
+  },
+  {
+   "term": "profiling",
+   "defined_in": "Regulation (EU) 2016/679, Art. 4 point 4",
+   "evidence": {
+    "provision": "Art. 18(1)(c)",
+    "quote": "‘profiling’ as defined in Article 4, point 4, of Regulation (EU) 2016/679"
+   }
+  },
+  {
+   "term": "micro, small or medium-sized undertakings",
+   "defined_in": "Directive 2013/34/EU, Art. 3(1), (2) and (3)",
+   "evidence": {
+    "provision": "Art. 14(2)",
+    "quote": "Paragraph 1 of this Article shall not apply to micro, small or medium-sized undertakings qualifying under Article 3(1), (2) and (3) of Directive 2013/34/EU."
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "prohibition",
+   "addressee": "government_agency",
+   "modality": "shall_not",
+   "summary": "Member States shall not maintain or introduce transparency provisions diverging from the Regulation; under Art. 4(2) the provision of political advertising services shall not be prohibited or restricted on transparency grounds where the Regulation's requirements are complied with.",
+   "applies_from": "from 10 October 2025 (Art. 30(2))",
+   "evidence": {
+    "provision": "Art. 4(1)",
+    "quote": "Member States shall not maintain or introduce, on grounds related to the transparency of political advertising, provisions or measures diverging from those laid down in this Regulation."
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "enterprise",
+   "modality": "shall_not",
+   "summary": "Providers of political advertising services shall not make provision of their services subject to discriminatory restrictions based solely on the sponsor's place of residence or establishment, and shall not restrict services to European political parties or EP political groups solely on their place of establishment.",
+   "applies_from": "from the date of entry into force (Art. 30(2))",
+   "evidence": {
+    "provision": "Art. 5(1)",
+    "quote": "Providers of political advertising services shall not make the provision of their services subject to discriminatory restrictions solely based on the place of residence or establishment of the sponsor."
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "In the last three months before an election or referendum, political advertising services pertaining to it may only be provided to a sponsor (or agent) who declares it is an EU citizen, a permanently resident third-country national with voting rights, or an EU-established legal person not ultimately owned or controlled by a third-country national or third-country entity.",
+   "applies_from": "from 10 October 2025 (Art. 30(2))",
+   "conditional_on": "last three months preceding an election or referendum organised at Union, national, regional or local level",
+   "evidence": {
+    "provision": "Art. 5(2)",
+    "quote": "political advertising services pertaining to that election or referendum shall only be provided to a sponsor, or service provider acting on behalf of a sponsor, who declares itself to be"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Political advertising services shall be provided in a transparent manner in accordance with Art. 6, Arts. 7 to 17 and Art. 21.",
+   "applies_from": "from 10 October 2025 (Art. 30(2))",
+   "evidence": {
+    "provision": "Art. 6(1)",
+    "quote": "Political advertising services shall be provided in a transparent manner in accordance with the obligations laid down in this Article, Articles 7 to 17 and Article 21."
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Providers of political advertising services shall ensure that contractual arrangements for the service enable compliance, including allocation of responsibility and completeness and accuracy of information.",
+   "applies_from": "from 10 October 2025 (Art. 30(2))",
+   "evidence": {
+    "provision": "Art. 6(2)",
+    "quote": "Providers of political advertising services shall ensure that the contractual arrangements concluded for the provision of a political advertising service enable compliance with the relevant provisions of this Regulation"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "advertiser_campaign",
+   "also_addressees": [
+    "enterprise"
+   ],
+   "modality": "shall",
+   "summary": "Sponsors, and providers of advertising services acting on behalf of sponsors, shall make declarations on whether the service is political advertising and on Art. 5(2) requirements truthfully and are responsible for their accuracy; providers of advertising services shall request such declarations from sponsors.",
+   "applies_from": "from 10 October 2025 (Art. 30(2))",
+   "evidence": {
+    "provision": "Art. 7(1)",
+    "quote": "Sponsors, and providers of advertising services acting on behalf of sponsors, shall make such declarations truthfully and shall be responsible for their accuracy."
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Providers of political advertising services shall ensure that contracts require sponsors (or agents) to provide the Art. 7(1) declaration and the information needed to comply with Arts. 9(1), 11(1) and 12(1).",
+   "applies_from": "from 10 October 2025 (Art. 30(2))",
+   "evidence": {
+    "provision": "Art. 7(2)",
+    "quote": "Providers of political advertising services shall ensure that the contractual arrangements concluded for the provision of a political advertising service require the sponsor"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "advertiser_campaign",
+   "also_addressees": [
+    "enterprise"
+   ],
+   "modality": "shall",
+   "summary": "Sponsors (and agents acting for them) shall provide and ensure the accuracy of information needed for Arts. 9(1), 11(1) and 12(1) before or during publication, update changed information, and correct incomplete or inaccurate information transmitted to publishers.",
+   "applies_from": "before or during the period of publication, delivery or dissemination (Art. 7(3))",
+   "evidence": {
+    "provision": "Art. 7(3)",
+    "quote": "Sponsors shall provide and ensure the accuracy of the information necessary for the providers of political advertising services to comply with Article 9(1)"
+   }
+  },
+  {
+   "type": "verification_gatekeeping",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Providers of political advertising services shall require sponsors to correct declarations or information that are manifestly erroneous.",
+   "applies_from": "from 10 October 2025 (Art. 30(2))",
+   "conditional_on": "declaration or information is manifestly erroneous",
+   "evidence": {
+    "provision": "Art. 7(4)",
+    "quote": "Providers of political advertising services shall require sponsors, or providers of advertising services acting on behalf of sponsors"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Providers of political advertising services using an online interface shall design and organise it to facilitate sponsors' compliance with their Art. 7(1) and Art. 9(1) obligations.",
+   "applies_from": "from 10 October 2025 (Art. 30(2))",
+   "evidence": {
+    "provision": "Art. 7(5)",
+    "quote": "Providers of political advertising services using an online interface shall ensure that that online interface is designed and organised in a way that facilitates compliance"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Commission shall draw up common guidance on the application of the Art. 8 criteria for identifying political advertising.",
+   "applies_from": "from 10 October 2025 (Art. 30(2))",
+   "evidence": {
+    "provision": "Art. 8(2)",
+    "quote": "The Commission shall draw up common guidance intended to contribute to the proper application of this Article."
+   }
+  },
+  {
+   "type": "record_keeping",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Providers of political advertising services shall retain, to the extent necessary, information on the advertisement, services, amounts and benefits, origin of funds, and sponsor identity; make reasonable efforts to keep it complete and accurate; and retain it in machine-readable form for seven years. Art. 9(4) exempts certain micro-undertakings.",
+   "applies_from": "from 10 October 2025 (Art. 30(2))",
+   "evidence": {
+    "provision": "Art. 9(1)",
+    "quote": "Providers of political advertising services shall retain, to the extent necessary to comply with this Regulation, information they collect in the provision of their services"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Providers of political advertising services shall transmit the Art. 9(1) information in a timely, complete and accurate manner to political advertising publishers, during the service and by standardised automated process where technically possible; they shall transmit updated information when it changes.",
+   "applies_from": "from 10 October 2025 (Art. 30(2))",
+   "evidence": {
+    "provision": "Art. 10(1)",
+    "quote": "Providers of political advertising services shall ensure that the information referred to in Article 9(1) is transmitted in a timely, complete and accurate manner"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "advertiser_campaign",
+   "modality": "shall",
+   "summary": "Where the publisher is the only provider of political advertising services, the sponsor shall transmit the relevant information to the publisher.",
+   "applies_from": "from 10 October 2025 (Art. 30(2))",
+   "conditional_on": "the political advertising publisher is the only provider of political advertising services",
+   "evidence": {
+    "provision": "Art. 10(1)",
+    "quote": "When the political advertising publisher is the only provider of political advertising services, the sponsor shall transmit the relevant information"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Political advertising publishers shall make each political advertisement available with a statement that it is political, the sponsor identity and controlling entity, linked election or process, targeting disclosure, and a transparency notice or a clear indication where it can be retrieved; labels shall be prominent and remain in place when further disseminated; completeness and accuracy of the information shall be ensured.",
+   "applies_from": "from 10 October 2025 (Art. 30(2))",
+   "conditional_on": "where applicable (Art. 11(1)(c) and (d))",
+   "evidence": {
+    "provision": "Art. 11(1)",
+    "quote": "Political advertising publishers shall ensure that each political advertisement is made available together with the following information in a clear, salient and unambiguous way:"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Commission shall adopt implementing acts establishing the format and template of the labels for political advertisements, adapted to the medium used.",
+   "applies_from": "by 10 July 2025",
+   "evidence": {
+    "provision": "Art. 11(4)",
+    "quote": "By 10 July 2025, the Commission shall adopt implementing acts establishing the format and the template of the labels"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "encouraged",
+   "summary": "Member States, including competent authorities, and the Commission shall encourage voluntary codes of conduct for the application of Art. 11, taking account of micro, small and medium-sized undertakings.",
+   "applies_from": "from 10 October 2025 (Art. 30(2))",
+   "evidence": {
+    "provision": "Art. 11(5)",
+    "quote": "Member States, including competent authorities, and the Commission shall encourage the drawing up of voluntary codes of conduct"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Political advertising publishers shall ensure that the transparency notice includes the Art. 12(1) items (a) to (m), including sponsor identity, remuneration, period, aggregated amounts and value of benefits, methodology, links and reach/engagement data where applicable. Under Art. 12(3) notices shall be in each advertisement or easily retrievable, kept up to date, machine-readable when made available electronically, in the language of the advertisement, accessible and clearly visible.",
+   "applies_from": "from 10 October 2025 (Art. 30(2))",
+   "conditional_on": "where applicable (Art. 12(1)(k) to (m))",
+   "evidence": {
+    "provision": "Art. 12(1)",
+    "quote": "Political advertising publishers shall ensure that the transparency notice referred to in Article 11(1), point (e), includes the following information:"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Political advertising publishers shall ensure completeness of the transparency notice information and accuracy of listed items before and during publication; make best efforts to correct incomplete or inaccurate information; and shall not make available, or shall discontinue, an advertisement that cannot be completed or corrected without undue delay, informing sponsors and providers concerned.",
+   "applies_from": "from 10 October 2025 (Art. 30(2))",
+   "evidence": {
+    "provision": "Art. 12(2)",
+    "quote": "Where the information cannot be completed or corrected without undue delay, the political advertising publisher shall not make the political advertisement available"
+   }
+  },
+  {
+   "type": "record_keeping",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Political advertising publishers shall retain their transparency notices and modifications for seven years after the last publication, unless the micro-undertaking exemption in Art. 12(5) applies.",
+   "applies_from": "from 10 October 2025 (Art. 30(2))",
+   "evidence": {
+    "provision": "Art. 12(4)",
+    "quote": "Political advertising publishers shall retain their transparency notices together with any modifications thereto for a period of seven years after the last publication"
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "government_agency",
+   "modality": "may",
+   "summary": "The Commission is empowered to adopt delegated acts amending Art. 12, including the list of notice items in Art. 12(1) and point (f), in light of technological and market developments.",
+   "applies_from": "from 10 October 2025 (Art. 30(2))",
+   "evidence": {
+    "provision": "Art. 12(6)",
+    "quote": "The Commission is empowered to adopt delegated acts in accordance with Article 28 to amend this Regulation"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Commission shall adopt implementing acts establishing the format of, and technical specifications for, the transparency notice, adapted to the medium used.",
+   "applies_from": "by 10 July 2025",
+   "evidence": {
+    "provision": "Art. 12(7)",
+    "quote": "By 10 July 2025, the Commission shall adopt implementing acts to establish the format of and provide technical specifications for the transparency notice"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Commission shall establish and ensure the management of a public European repository for all online political advertisements, directly or through a management authority, with a single portal, machine-readable access and a hosting service for seven years after last presentation.",
+   "applies_from": "from 10 October 2025 (Art. 30(2))",
+   "evidence": {
+    "provision": "Art. 13(1)",
+    "quote": "The Commission shall establish and ensure, directly or by entrusting this responsibility to a management authority, the management of a European repository"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "platform_operator",
+   "also_addressees": [
+    "search_engine_operator"
+   ],
+   "modality": "shall",
+   "summary": "Political advertising publishers that are very large online platforms or very large online search engines shall make each political advertisement and its Art. 12(1) information available in a repository under Art. 39 DSA, and enable access through the European repository from publication for the presentation period and seven years after last presentation.",
+   "applies_from": "from 10 October 2025 (Art. 30(2))",
+   "evidence": {
+    "provision": "Art. 13(2)",
+    "quote": "Political advertising publishers that are very large online platforms and very large online search engines shall ensure that each political advertisement"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Where a publisher removes or disables access to an advertisement on grounds of illegality or terms incompatibility, it shall continue to provide the Art. 12(1) information for the period in Art. 9(3).",
+   "applies_from": "from 10 October 2025 (Art. 30(2))",
+   "conditional_on": "removal or disabling of access to a specific political advertisement",
+   "evidence": {
+    "provision": "Art. 13(3)",
+    "quote": "they shall continue to provide access to the information required by Article 12(1) of this Regulation for the period referred to in Article 9(3)"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Political advertising publishers other than very large online platforms and search engines that publish through an online service shall make each advertisement and its Art. 12(1) information available in the European repository.",
+   "applies_from": "no later than 72 hours after the first publication of the political advertisement",
+   "conditional_on": "publication through an online service",
+   "evidence": {
+    "provision": "Art. 13(4)",
+    "quote": "shall make each such political advertisement and the information required under Article 12(1) available in the European repository no later than 72 hours after the first publication"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Commission (or management authority) shall adopt implementing acts on the repository's data structure, metadata, authentication, and common application programming interface.",
+   "applies_from": "by 10 April 2026",
+   "evidence": {
+    "provision": "Art. 13(6)",
+    "quote": "By 10 April 2026, the Commission shall adopt implementing acts in accordance with Article 29 to set out detailed arrangements"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Political advertising publishers shall include in their management report, under Art. 19 of Directive 2013/34/EU, information on amounts or value of benefits received for services, including use of targeting and ad-delivery techniques, aggregated by campaign, and make it available to competent authorities where established under national law.",
+   "applies_from": "from 10 October 2025 (Art. 30(2))",
+   "evidence": {
+    "provision": "Art. 14(1)",
+    "quote": "Political advertising publishers shall include information on the amounts or the value of other benefits received in part or full exchange for the services provided"
+   }
+  },
+  {
+   "type": "complaint_mechanism",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Political advertising publishers shall have free, easy-to-access mechanisms for natural or legal persons to notify non-compliant advertisements, accepting electronic notifications where possible and containing the Art. 15(3) elements; they shall send confirmation of receipt without undue delay, provide redress information and information on automated means, and (non-VLOP publishers) make best efforts to examine notifications and inform notifiers on request.",
+   "applies_from": "from 10 October 2025 (Art. 30(2))",
+   "evidence": {
+    "provision": "Art. 15(1)",
+    "quote": "Political advertising publishers shall have in place the necessary mechanisms to enable natural or legal persons to notify them"
+   }
+  },
+  {
+   "type": "complaint_mechanism",
+   "addressee": "platform_operator",
+   "also_addressees": [
+    "search_engine_operator"
+   ],
+   "modality": "shall",
+   "summary": "Political advertising publishers that are very large online platforms or search engines shall examine and address notifications in a diligent, non-arbitrary and objective manner and inform the notifier of the follow-up, without undue delay.",
+   "applies_from": "from 10 October 2025 (Art. 30(2))",
+   "evidence": {
+    "provision": "Art. 15(5)",
+    "quote": "Political advertising publishers which are very large online platforms and very large online search engines shall without undue delay:"
+   }
+  },
+  {
+   "type": "complaint_mechanism",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "In the last month before an election or referendum, publishers shall process notifications about linked advertisements within 48 hours where they can be processed completely on the information in the notification; micro, small and medium-sized publishers shall make best efforts to process them without undue delay.",
+   "applies_from": "last month preceding an election or referendum",
+   "conditional_on": "notification can be processed completely on the basis of the information included in the notification",
+   "evidence": {
+    "provision": "Art. 15(7)",
+    "quote": "In the last month preceding an election or a referendum, political advertising publishers shall process any notification they receive about a political advertisement linked to that election or referendum within 48 hours"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Political advertising publishers shall inform the sponsors or providers concerned, without undue delay, of measures taken following notifications that affect the availability or presentation of the advertisement.",
+   "applies_from": "from 10 October 2025 (Art. 30(2))",
+   "conditional_on": "measures affect availability or presentation of the advertisement",
+   "evidence": {
+    "provision": "Art. 15(9)",
+    "quote": "Political advertising publishers shall without undue delay inform the sponsors or providers of political advertising services concerned of any measures they take following notifications"
+   }
+  },
+  {
+   "type": "complaint_mechanism",
+   "addressee": "enterprise",
+   "modality": "may",
+   "summary": "Political advertising publishers may respond collectively to multiple notifications about the same advertisement or campaign, including through automated tools or a website announcement.",
+   "applies_from": "from 10 October 2025 (Art. 30(2))",
+   "evidence": {
+    "provision": "Art. 15(10)",
+    "quote": "Political advertising publishers may respond to multiple notifications under paragraph 1 regarding the same advertisement or advertising campaign collectively"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "may",
+   "summary": "The Commission, after consulting the network of national contact points, may issue guidelines on the application of Art. 15.",
+   "applies_from": "from 10 October 2025 (Art. 30(2))",
+   "evidence": {
+    "provision": "Art. 15(11)",
+    "quote": "The Commission, after consulting the network of national contact points referred to in Article 22(8), may issue guidelines"
+   }
+  },
+  {
+   "type": "cooperation_with_authority",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "When national competent authorities request information to verify compliance, providers of political advertising services shall transmit complete, accurate and trustworthy information in a clear and, where possible, machine-readable format; acknowledge requests within two working days; and provide the information within eight working days (12 working days for micro, small and medium-sized undertakings), or without undue delay and within 48 hours in the last month before an election or referendum.",
+   "applies_from": "from 10 October 2025 (Art. 30(2))",
+   "conditional_on": "upon a request by a national competent authority",
+   "evidence": {
+    "provision": "Art. 16(1)",
+    "quote": "The transmitted information shall be complete, accurate and trustworthy"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "regulator",
+   "modality": "shall",
+   "summary": "A request by a national competent authority for information shall contain a statement of reasons (unless a criminal or serious administrative offence investigation would be jeopardised) and information on available redress.",
+   "applies_from": "from 10 October 2025 (Art. 30(2))",
+   "evidence": {
+    "provision": "Art. 16(2)",
+    "quote": "The request referred to in paragraph 1 shall contain the following elements:"
+   }
+  },
+  {
+   "type": "cooperation_with_authority",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Providers of political advertising services shall designate a contact point for interaction with national competent authorities; micro, small and medium-sized undertakings may appoint an external natural person.",
+   "applies_from": "from 10 October 2025 (Art. 30(2))",
+   "evidence": {
+    "provision": "Art. 16(5)",
+    "quote": "Providers of political advertising services shall designate a contact point for the interaction with competent national authorities."
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "At the request of interested entities (vetted researchers, civil society organisations, political actors, electoral observers, journalists), providers of political advertising services shall transmit promptly and free of charge the information required under Arts. 9, 11 and 12, in machine-readable form where possible, within one month or with a reasoned response; they may aggregate or range amounts to protect commercial interests, may refuse manifestly unclear or excessive requests, and may charge a reasonable fee for significant costs.",
+   "applies_from": "from 10 October 2025 (Art. 30(2))",
+   "conditional_on": "at the request of interested entities",
+   "evidence": {
+    "provision": "Art. 17(1)",
+    "quote": "providers of political advertising services shall transmit promptly and free of charge, and where technically possible in a machine-readable format"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Targeting or ad-delivery techniques involving personal data in online political advertising are permitted only if the controller collected the data from the data subject, the data subject gave explicit consent separately for political advertising, and the techniques do not involve profiling using special categories of personal data.",
+   "applies_from": "from 10 October 2025 (Art. 30(2))",
+   "conditional_on": "processing of personal data for online political advertising targeting or ad-delivery",
+   "evidence": {
+    "provision": "Art. 18(1)",
+    "quote": "Targeting techniques or ad-delivery techniques that involve the processing of personal data in the context of online political advertising shall be permitted only when the following conditions are fulfilled:"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "data_controller",
+   "also_addressees": [
+    "platform_operator"
+   ],
+   "modality": "shall_not",
+   "summary": "Targeting or ad-delivery techniques involving processing of personal data of a data subject known with reasonable certainty to be at least one year under the national voting age are prohibited; controllers are not required to process additional data to assess age.",
+   "applies_from": "from 10 October 2025 (Art. 30(2))",
+   "conditional_on": "data subject known with reasonable certainty to be at least one year under the voting age",
+   "evidence": {
+    "provision": "Art. 18(2)",
+    "quote": "targeting techniques or ad-delivery techniques that involve the processing of the personal data of a data subject"
+   }
+  },
+  {
+   "type": "consent",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "When requesting or withdrawing explicit consent for political advertising processing, controllers shall not request consent from a data subject who has already indicated by automated means refusal (unless a substantial change of circumstances), and shall offer a non-refusing data subject an equivalent alternative for using the online service without political advertising.",
+   "applies_from": "from 10 October 2025 (Art. 30(2))",
+   "evidence": {
+    "provision": "Art. 18(4)(a)",
+    "quote": "the data subject is not requested to consent if he or she has already indicated by automated means that he or she does not consent to data processing for political advertising purposes"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Controllers using targeting or ad-delivery techniques shall adopt, implement and make publicly available an internal policy in plain language on their use, retain it for seven years from last use, and provide with each political advertisement the logic, main parameters, recipient groups, data categories, targeting goals, use of AI systems, period and number of recipients, and a link to the policy.",
+   "applies_from": "from 10 October 2025 (Art. 30(2))",
+   "conditional_on": "use of targeting or ad-delivery techniques involving processing of personal data",
+   "evidence": {
+    "provision": "Art. 19(1)(a)",
+    "quote": "adopt, implement and make publicly available an internal policy describing clearly and in plain language how such techniques are used"
+   }
+  },
+  {
+   "type": "record_keeping",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Controllers shall keep records on the use of targeting and ad-delivery techniques, including the relevant mechanisms and parameters used.",
+   "applies_from": "from 10 October 2025 (Art. 30(2))",
+   "conditional_on": "use of targeting or ad-delivery techniques involving processing of personal data",
+   "evidence": {
+    "provision": "Art. 19(1)(b)",
+    "quote": "keep records on the use of such techniques, the relevant mechanisms and parameters used"
+   }
+  },
+  {
+   "type": "impact_assessment",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Controllers shall prepare an internal annual risk assessment of the use of targeting or ad-delivery techniques on fundamental rights and freedoms, with results made publicly available.",
+   "applies_from": "from 10 October 2025 (Art. 30(2))",
+   "conditional_on": "use of targeting or ad-delivery techniques involving processing of personal data",
+   "evidence": {
+    "provision": "Art. 19(1)(d)",
+    "quote": "prepare an internal annual risk assessment of the use of targeting techniques or ad-delivery techniques on the fundamental rights and freedoms"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Controllers shall provide, with the advertisement (unless included in the transparency notice), a reference to effective means to exercise data protection rights, including rights to amend data or withdraw consent, with a link to an interface for exercising them.",
+   "applies_from": "from 10 October 2025 (Art. 30(2))",
+   "conditional_on": "use of targeting or ad-delivery techniques involving processing of personal data",
+   "evidence": {
+    "provision": "Art. 19(1)(e)",
+    "quote": "a reference to effective means to support individuals exercise their rights under Regulations (EU) 2016/679 or (EU) 2018/1725"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Where the controller differs from the publisher, the controller shall communicate the Art. 19(1)(c) and (e) information to the publisher in a timely and accurate manner, by standardised automated process where technically possible.",
+   "applies_from": "from 10 October 2025 (Art. 30(2))",
+   "conditional_on": "controller is different from the political advertising publisher",
+   "evidence": {
+    "provision": "Art. 19(2)",
+    "quote": "Where the controller is different from the political advertising publisher, the controller shall ensure that the information referred to in paragraph 1"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Providers of political advertising services shall, as necessary, transmit to controllers the information needed to comply with Art. 19(1) and (2).",
+   "applies_from": "from 10 October 2025 (Art. 30(2))",
+   "evidence": {
+    "provision": "Art. 19(3)",
+    "quote": "Providers of political advertising services shall, as necessary, transmit to the controllers the information necessary to comply with paragraphs 1 and 2."
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "government_agency",
+   "modality": "may",
+   "summary": "The Commission is empowered to adopt delegated acts amending Art. 19 by adding points to Art. 19(1) in light of technological and market developments.",
+   "applies_from": "from 10 October 2025 (Art. 30(2))",
+   "evidence": {
+    "provision": "Art. 19(5)",
+    "quote": "The Commission is empowered to adopt delegated acts in accordance with Article 28 to amend this Regulation by adding points"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Controllers shall take appropriate measures to transmit to interested entities, at their request and free of charge, the Art. 19 information.",
+   "applies_from": "from 10 October 2025 (Art. 30(2))",
+   "conditional_on": "request by an interested entity referred to in Art. 17(2)",
+   "evidence": {
+    "provision": "Art. 20",
+    "quote": "Controllers shall take appropriate measures to transmit to interested entities referred to in Article 17(2), at their request and free of charge"
+   }
+  },
+  {
+   "type": "appointment_of_representative",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Service providers offering political advertising services in the Union without an EU establishment shall designate in writing a legal representative in one Member State, register it with the competent authority, and give it the necessary powers and resources; the legal representative is responsible for compliance and is the addressee of communications.",
+   "applies_from": "from 10 October 2025 (Art. 30(2))",
+   "conditional_on": "provider has no establishment in the Union",
+   "evidence": {
+    "provision": "Art. 21(1)",
+    "quote": "shall designate, in writing, a natural or legal person as its legal representative in one of the Member States where that provider offers its services"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States shall designate a national competent authority to keep publicly available, machine-readable online registers of legal representatives; the Commission shall set up and maintain a public portal linking to them.",
+   "applies_from": "from 10 October 2025 (Art. 30(2))",
+   "evidence": {
+    "provision": "Art. 21(4)",
+    "quote": "Member States shall designate one national competent authority responsible for keeping publicly available and machine-readable online registers"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States shall designate competent authorities for Arts. 18 and 19 (data protection supervisory authorities), for intermediary service providers under Arts. 7 to 17 and 21 (with Digital Services Coordinators coordinating), and one or more independent authorities for other aspects; they shall provide resources and national cooperation, and designate a national contact point. The EDPB shall prepare guidelines for supervisory authorities on Arts. 18 and 19, and the network of national contact points shall meet at least twice a year.",
+   "applies_from": "from 10 October 2025 (Art. 30(2))",
+   "evidence": {
+    "provision": "Art. 22(4)",
+    "quote": "Each Member State shall designate one or more competent authorities to be responsible for the application and enforcement of the aspects of this Regulation"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "regulator",
+   "modality": "shall",
+   "summary": "Competent authorities shall, on a justified request from another authority, provide assistance and information without undue delay (within one month, or 14 days for requested information); a competent authority suspecting an infringement shall notify the authority of the main establishment, which shall communicate its assessment within one month; authorities shall cooperate in good faith in any joint investigation.",
+   "applies_from": "from 10 October 2025 (Art. 30(2))",
+   "conditional_on": "justified request from another competent authority, or suspected infringement in another Member State",
+   "evidence": {
+    "provision": "Art. 23(3)",
+    "quote": "A competent authority shall, upon receipt of a justified request from another competent authority, provide the other competent authority, without undue delay and no later than one month"
+   }
+  },
+  {
+   "type": "complaint_mechanism",
+   "addressee": "regulator",
+   "modality": "shall",
+   "summary": "Competent authorities shall duly address every notification of possible infringements, inform the notifier of follow-up on request, and transmit complaints falling within another Member State's competence without undue delay; during the last month before elections or referendums, notifications about them shall be addressed without undue delay.",
+   "applies_from": "from 10 October 2025 (Art. 30(2))",
+   "evidence": {
+    "provision": "Art. 24",
+    "quote": "competent authorities shall duly address every notification of possible infringements of this Regulation"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States shall notify the Commission of their sanctions rules and measures by 10 January 2026 and of subsequent amendments without delay.",
+   "applies_from": "by 10 January 2026",
+   "evidence": {
+    "provision": "Art. 25(3)",
+    "quote": "Member States shall, by 10 January 2026, notify the Commission of those rules and of those measures"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States shall report annually to the Commission on the sanctions imposed to enforce the Regulation, including the types of sanctions and amounts of fines.",
+   "applies_from": "annually",
+   "evidence": {
+    "provision": "Art. 25(8)",
+    "quote": "Member States shall report annually to the Commission on the sanctions imposed to enforce the provisions of this Regulation"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Member States shall publish the dates of their elections and referendums and, where applicable, their electoral periods, in an easily accessible place with a reference to this Regulation.",
+   "applies_from": "from 10 October 2025 (Art. 30(2))",
+   "evidence": {
+    "provision": "Art. 26(1)",
+    "quote": "Member States shall publish the dates of their elections and referendums and, where applicable, of their electoral periods"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Commission shall provide a publicly available portal through which Member States provide election and referendum dates immediately after announcement.",
+   "applies_from": "from 10 October 2025 (Art. 30(2))",
+   "evidence": {
+    "provision": "Art. 26(2)",
+    "quote": "The Commission shall provide a portal through which Member States shall provide, immediately after announcement"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Commission shall submit a public report on the evaluation and review of the Regulation to Parliament and Council, assessing need for amendment on listed matters.",
+   "applies_from": "within two years after each election to the European Parliament",
+   "evidence": {
+    "provision": "Art. 27",
+    "quote": "Within two years after each election to the European Parliament, the Commission shall submit a report on the evaluation and review of this Regulation"
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Commission's power to adopt delegated acts under Art. 12(6) and Art. 19(5) is conferred for four years from 9 April 2024, tacitly extendable; the Commission shall draw up a report at least nine months before the period ends, consult Member State experts before adopting delegated acts, notify them simultaneously to Parliament and Council, and no objection period applies under Art. 28(6).",
+   "applies_from": "for four years from 9 April 2024",
+   "evidence": {
+    "provision": "Art. 28(2)",
+    "quote": "The power to adopt delegated acts referred to in Article 12(6) and Article 19(5) shall be conferred on the Commission for a period of four years from the 9 April 2024."
+   }
+  }
+ ],
+ "enforcement": [
+  {
+   "sanction_type": "administrative_fine",
+   "authority": "Member State authorities (rules on sanctions to be laid down by Member States; competent authorities designated under Art. 22(4))",
+   "triggered_by": "Infringements by sponsors or providers of political advertising services of Articles 5 to 17, 20 and 21",
+   "max_penalty_text": "6 % of the annual income or budget of the sponsor or of the provider of political advertising services as applicable and whichever is the highest; or 6 % of the annual worldwide turnover of the sponsor or the provider of political advertising services in the preceding financial year.",
+   "penalty_formula": "Maximum amount based on economic capacity: 6% of annual income or budget (whichever is highest), or 6% of annual worldwide turnover in the preceding financial year, as stated alternatives (a) and (b)",
+   "penalty_reference": "Art. 25(1)-(2) of this Regulation",
+   "cure_period": "not stated",
+   "evidence": {
+    "provision": "Art. 25(2)(a)-(b)",
+    "quote": "6 % of the annual worldwide turnover of the sponsor or the provider of political advertising services in the preceding financial year"
+   }
+  },
+  {
+   "sanction_type": "other",
+   "authority": "Member State authorities",
+   "triggered_by": "Serious and repeated infringements of this Regulation, to compel sponsors, providers of political advertising services and political advertising publishers to end them",
+   "penalty_reference": "Art. 25(5)",
+   "cure_period": "not stated",
+   "evidence": {
+    "provision": "Art. 25(5)",
+    "quote": "Member States may also impose periodic penalty payments to compel sponsors, providers of political advertising services and political advertising publishers to put an end to a serious and repeated infringement of this Regulation."
+   }
+  },
+  {
+   "sanction_type": "administrative_fine",
+   "authority": "Supervisory authorities referred to in Article 51 of Regulation (EU) 2016/679",
+   "triggered_by": "Infringements of the obligations laid down in Articles 18 and 19 of this Regulation",
+   "max_penalty_text": "up to the amount referred to in Article 83(5) of Regulation (EU) 2016/679",
+   "penalty_reference": "Art. 83 of Regulation (EU) 2016/679; amount per Art. 83(5) of that Regulation",
+   "cure_period": "not stated",
+   "evidence": {
+    "provision": "Art. 25(6)",
+    "quote": "may within their competence impose fines in line with Article 83 of Regulation (EU) 2016/679 and up to the amount referred to in Article 83(5) of that Regulation"
+   }
+  },
+  {
+   "sanction_type": "administrative_fine",
+   "authority": "European Data Protection Supervisor (Art. 52 of Regulation (EU) 2018/1725)",
+   "triggered_by": "Infringements of the obligations laid down in Articles 18 and 19 of this Regulation",
+   "max_penalty_text": "up to the amount referred to in Article 66(3) of Regulation (EU) 2018/1725",
+   "penalty_reference": "Art. 66 of Regulation (EU) 2018/1725; amount per Art. 66(3) of that Regulation",
+   "cure_period": "not stated",
+   "evidence": {
+    "provision": "Art. 25(7)",
+    "quote": "may impose within its competence fines in line with Article 66 of Regulation (EU) 2018/1725 up to the amount referred to in Article 66 (3) of that Regulation"
+   }
+  },
+  {
+   "sanction_type": "warning_reprimand",
+   "authority": "Competent authorities designated under Art. 22(4)",
+   "triggered_by": "Non-compliance by providers of political advertising services with the obligations under this Regulation",
+   "penalty_reference": "Art. 22(5)(b)",
+   "cure_period": "not stated",
+   "evidence": {
+    "provision": "Art. 22(5)(b)",
+    "quote": "issue warnings addressed to the providers of political advertising services regarding their non-compliance with the obligations under this Regulation"
+   }
+  },
+  {
+   "sanction_type": "injunction_order",
+   "authority": "Competent authorities designated under Art. 22(4)",
+   "triggered_by": "Infringements of this Regulation by sponsors or providers of political advertising services",
+   "penalty_reference": "Art. 22(5)(c)",
+   "cure_period": "not stated",
+   "evidence": {
+    "provision": "Art. 22(5)(c)",
+    "quote": "order the cessation of infringements and require sponsors or providers of political advertising services to take the steps necessary to comply with this Regulation"
+   }
+  },
+  {
+   "sanction_type": "other",
+   "authority": "Competent authorities designated under Art. 22(4)",
+   "triggered_by": "Infringement of an obligation laid down in this Regulation",
+   "penalty_reference": "Art. 22(5)(g)",
+   "cure_period": "not stated",
+   "evidence": {
+    "provision": "Art. 22(5)(g)",
+    "quote": "publish a statement which identifies the legal and natural person(s) responsible for the infringement of an obligation laid down in this Regulation and the nature of that infringement"
+   }
+  },
+  {
+   "sanction_type": "other",
+   "authority": "Not specified in the text",
+   "triggered_by": "Non-compliance by the represented service provider with obligations under this Regulation",
+   "penalty_reference": "Art. 21(2)",
+   "cure_period": "not stated",
+   "evidence": {
+    "provision": "Art. 21(2)",
+    "quote": "may be held liable for any non-compliance with the obligations under this Regulation"
+   }
+  }
+ ],
+ "section_status": {}
+}

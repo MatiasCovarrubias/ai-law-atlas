@@ -1,0 +1,1624 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "us-ca-ccpa",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (connectors/fetch_texts.py)",
+  "url": "https://cppa.ca.gov/regulations/pdf/cppa_act.pdf",
+  "retrieved": "2026-10-13",
+  "version": "as fetched",
+  "language": "en",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "data_protection",
+   "consumer_protection",
+   "minors_child_safety",
+   "cybersecurity",
+   "algorithmic_decision_systems"
+  ],
+  "primary_domain": "data_protection",
+  "mechanisms": [
+   "mandate_obligation",
+   "prohibition_ban",
+   "disclosure_transparency",
+   "liability_rule",
+   "institution_setup",
+   "direct_subsidy_grant",
+   "standard_setting"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "enterprise",
+   "data_controller",
+   "data_processor",
+   "regulator",
+   "government_agency"
+  ],
+  "affected_roles": [
+   "consumers_users",
+   "minors",
+   "workers"
+  ],
+  "decision_margins": [
+   "firm:pricing",
+   "firm:input_use",
+   "firm:compliance_process",
+   "firm:product_design_release",
+   "household:data_privacy",
+   "household:prices",
+   "household:information"
+  ],
+  "territorial_scope": {
+   "types": [
+    "subnational",
+    "extraterritorial"
+   ],
+   "description": "Applies to businesses that do business in California and protects California residents; conduct taking place wholly outside California is exempt in defined cases.",
+   "evidence": {
+    "provision": "Sec. 1798.140(d)(1)",
+    "quote": "that does business in the State of California"
+   }
+  },
+  "agora_harms": [
+   "Violation of civil or human rights, including privacy"
+  ],
+  "agora_incentives": [
+   "Civil liability",
+   "Fines"
+  ],
+  "agora_strategies": [
+   "Disclosure",
+   "Input controls: Data use",
+   "Evaluation: Impact assessment",
+   "New institution"
+  ]
+ },
+ "summary": {
+  "short": "California statute giving consumers rights to know, delete, correct and opt out of the sale or sharing of their personal information, and to limit use of sensitive data and minors' data. Binds businesses above revenue or volume thresholds and their service providers. Enforced by the California Privacy Protection Agency and the Attorney General.",
+  "long": "Gives California consumers rights to know, delete, correct and opt out of sale or sharing of their personal information, and to limit use of sensitive personal information (§§1798.105–1798.121). Affirmative authorization is required before selling data of consumers under 16. Businesses must give notice at collection, provide request methods, and not discriminate against consumers exercising rights (§§1798.100, 1798.125, 1798.130, 1798.135). Duties apply to businesses doing business in California that meet revenue, volume or data-sale thresholds (§1798.140(d)); service providers and contractors must act under written contracts. Exemptions cover certain medical, credit, financial and deidentified data (§§1798.145–1798.146). Consumers may sue for statutory damages of USD 100 to 750 per incident after certain security breaches (§1798.150). The California Privacy Protection Agency enforces through administrative fines of up to USD 2,500 per violation, or 7,500 for intentional violations; the Attorney General may seek civil penalties (§§1798.155, 1798.199.90). The Agency's regulations cover opt-out signals, risk assessments, cybersecurity audits and automated decisionmaking (§1798.185). Local laws are preempted (§1798.180)."
+ },
+ "relations": [
+  {
+   "relation": "cross_references",
+   "target_text": "Gramm-Leach-Bliley Act (Public Law 106-102) and implementing regulations",
+   "note": "Title does not apply to personal information subject to the GLBA; the exclusion does not extend to Section 1798.150.",
+   "evidence": {
+    "provision": "1798.145(e)",
+    "quote": "subject to the federal Gramm-Leach-Bliley Act (Public Law 106-102), and implementing regulations"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "California Financial Information Privacy Act (Division 1.4 (commencing with Section 4050) of the Financial Code)",
+   "note": "Title does not apply to personal information subject to this Act; the exclusion does not extend to Section 1798.150.",
+   "evidence": {
+    "provision": "1798.145(e)",
+    "quote": "the California Financial Information Privacy Act (Division 1.4 (commencing with Section 4050) of the Financial Code)"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Farm Credit Act of 1971 (12 U.S.C. 2001-2279cc) and implementing regulations",
+   "note": "Exclusion for personal information subject to the Farm Credit Act; does not extend to Section 1798.150.",
+   "evidence": {
+    "provision": "1798.145(e)",
+    "quote": "the federal Farm Credit Act of 1971"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Fair Credit Reporting Act (Section 1681 et seq., Title 15 of the United States Code)",
+   "note": "Partial exclusion for consumer reporting activity to the extent subject to the FCRA.",
+   "evidence": {
+    "provision": "1798.145(d)(2)",
+    "quote": "is subject to regulation under the Fair Credit Reporting Act, Section 1681 et seq., Title 15 of the United States Code"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Confidentiality of Medical Information Act (Part 2.6 (commencing with Section 56) of Division 1)",
+   "note": "Exempts medical information governed by the Act from this title.",
+   "evidence": {
+    "provision": "1798.145(c)(1)(A)",
+    "quote": "Medical information governed by the Confidentiality of Medical Information Act (Part 2.6 (commencing with Section 56) of Division 1)"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Health Insurance Portability and Accountability Act of 1996 (Public Law 104-191) and HHS privacy, security and breach notification rules (45 CFR Parts 160 and 164)",
+   "note": "Exempts protected health information of covered entities and business associates governed by the HHS rules.",
+   "evidence": {
+    "provision": "1798.145(c)(1)(A)",
+    "quote": "established pursuant to the Health Insurance Portability and Accountability Act of 1996 (Public Law 104-191)"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Health Information Technology for Economic and Clinical Health Act (Public Law 111-5)",
+   "note": "Named alongside HIPAA in the medical information and PHI exemption.",
+   "evidence": {
+    "provision": "1798.145(c)(1)(A)",
+    "quote": "the Health Information Technology for Economic and Clinical Health Act (Public Law 111-5)"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Federal Policy for the Protection of Human Subjects (Common Rule)",
+   "note": "Exempts personal information collected in clinical trials or biomedical research under the Common Rule, subject to conditions.",
+   "evidence": {
+    "provision": "1798.145(c)(1)(C)",
+    "quote": "the Federal Policy for the Protection of Human Subjects, also known as the Common Rule"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Driver's Privacy Protection Act of 1994 (18 U.S.C. Sec. 2721 et seq.)",
+   "note": "Title does not apply to personal information collected, processed, sold or disclosed under the DPPA; does not extend to Section 1798.150.",
+   "evidence": {
+    "provision": "1798.145(f)",
+    "quote": "pursuant to the Driver’s Privacy Protection Act of 1994 (18 U.S.C. Sec. 2721 et seq.)"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Family Educational Rights and Privacy Act (20 U.S.C. Sec. 1232g; 34 C.F.R. Part 99)",
+   "note": "Used in the definition of education information.",
+   "evidence": {
+    "provision": "1798.140(v)(1)(J)",
+    "quote": "Family Educational Rights and Privacy Act (20 U.S.C. Sec. 1232g; 34 C.F.R. Part 99)"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "California Electronic Communications Privacy Act (Chapter 3.6 (commencing with Section 1546) of Title 12 of Part 2 of the Penal Code)",
+   "note": "Deletion-request exception where needed to comply with CalECPA.",
+   "evidence": {
+    "provision": "1798.105(d)(5)",
+    "quote": "Comply with the California Electronic Communications Privacy Act pursuant to Chapter 3.6 (commencing with Section 1546) of Title 12 of Part 2 of the Penal Code"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Chapter 22 (commencing with Section 22575) of Division 8 of the Business and Professions Code",
+   "note": "Stated as an existing law that this title is intended to supplement.",
+   "evidence": {
+    "provision": "1798.175",
+    "quote": "Chapter 22 (commencing with Section 22575) of Division 8 of the Business and Professions Code"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Title 1.81 (commencing with Section 1798.80)",
+   "note": "Stated as an existing law that this title is intended to supplement; personal information definition refers to subdivision (e) of Section 1798.80.",
+   "evidence": {
+    "provision": "1798.175",
+    "quote": "Title 1.81 (commencing with Section 1798.80)"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Section 1798.81.5",
+   "note": "Security procedures duty refers to this section; Section 1798.150 uses its definition of personal information.",
+   "evidence": {
+    "provision": "1798.100(e)",
+    "quote": "in accordance with Section 1798.81.5"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Unfair and Deceptive Practices Act (Chapter 5 (commencing with Section 17200) of Part 2 of Division 7 of the Business and Professions Code)",
+   "note": "Transfer exception in the sale definition: material retroactive policy changes may not violate this Act.",
+   "evidence": {
+    "provision": "1798.140(ad)(2)(C)",
+    "quote": "Unfair and Deceptive Practices Act (Chapter 5 (commencing with Section 17200) of Part 2 of Division 7 of the Business and Professions Code)"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Insurance Code",
+   "note": "Agency must review Insurance Code consumer privacy provisions and adopt a regulation applying the more protective provisions to insurers; Insurance Commissioner retains rate jurisdiction.",
+   "evidence": {
+    "provision": "1798.185(a)(20)",
+    "quote": "Review existing Insurance Code provisions and regulations relating to consumer privacy"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Section 17014 of Title 18 of the California Code of Regulations",
+   "note": "Definition of consumer (California resident) incorporates this regulation as read on September 1, 2017.",
+   "evidence": {
+    "provision": "1798.140(i)",
+    "quote": "Section 17014 of Title 18 of the California Code of Regulations"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Initiative measure No. 17-0039, The Consumer Right to Privacy Act of 2018",
+   "note": "Title is operative only if this initiative is withdrawn from the ballot; operative date stated in subdivision (a).",
+   "evidence": {
+    "provision": "1798.198(b)",
+    "quote": "initiative measure No. 17-0039, The Consumer Right to Privacy Act of 2018"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Elections Code, Section 9604",
+   "note": "Procedure by which the initiative must be withdrawn for the operative condition in subdivision (b).",
+   "evidence": {
+    "provision": "1798.198(b)",
+    "quote": "pursuant to Section 9604 of the Elections Code"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Administrative Procedure Act (Chapter 5 (commencing with Section 11500), Part 1, Division 3, Title 2, Government Code)",
+   "note": "Governs notice and hearing for agency enforcement orders. Section 1798.199.95(d)(4) also refers to Chapter 3.5 (commencing with Section 11340) of the same Part for rulemaking exemption.",
+   "evidence": {
+    "provision": "1798.199.55(a)",
+    "quote": "Administrative Procedure Act (Chapter 5 (commencing with Section 11500), Part 1, Division 3, Title 2, Government Code)"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Public Records Act",
+   "note": "Agency board members must keep information confidential except where the Public Records Act requires disclosure.",
+   "evidence": {
+    "provision": "1798.199.15(b)",
+    "quote": "except to the extent that disclosure is required by the Public Records Act"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Education Code, Section 49073.1(d) (local educational agency)",
+   "note": "Exception to deletion for student grades and assessments held on behalf of a local educational agency.",
+   "evidence": {
+    "provision": "1798.145(q)(1)",
+    "quote": "as defined in subdivision (d) of Section 49073.1 of the Education Code"
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "California Privacy Protection Agency",
+   "role": "designated",
+   "function": "Established to implement and enforce the Act through administrative actions; administrative enforcement and fines (1798.155, 1798.199.55); rulemaking under 1798.185; appoints a Chief Privacy Auditor; five-member board.",
+   "evidence": {
+    "provision": "1798.199.10(a)",
+    "quote": "There is hereby established in state government the California Privacy Protection Agency, which is vested with full administrative power"
+   }
+  },
+  {
+   "name": "Attorney General of California",
+   "role": "designated",
+   "function": "Brings civil actions in the name of the people of California to assess and recover civil penalties; may adopt additional regulations (1798.185(b)); provides staff support to the agency until it hires its own staff (1798.199.95(c)).",
+   "evidence": {
+    "provision": "1798.199.90(a)",
+    "quote": "a civil action brought in the name of the people of the State of California by the Attorney General"
+   }
+  },
+  {
+   "name": "Insurance Commissioner",
+   "role": "designated",
+   "function": "Has jurisdiction over insurance rates and pricing, which the agency's Insurance Code review excludes from its scope.",
+   "evidence": {
+    "provision": "1798.185(a)(20)",
+    "quote": "the Insurance Commissioner shall have jurisdiction over insurance rates and pricing"
+   }
+  }
+ ],
+ "notes": "Compilation posted by the agency (header: effective 7/15/2024, AB 3286 update); the text includes no enacting clause, session-law history or amending act name, so no legal_basis, enacted_by_bill or amends relation is recorded. Sections 1798.185(d) and 1798.199 refer to 'the act adding this section' or 'this subdivision' without naming it. Internal inconsistency: 1798.140(d)(1)(A) refers to paragraph (5) of subdivision (d) of Section 1798.199.95 for threshold adjustment, but 1798.199.95(d) has only paragraphs (1) to (4). Operative date in 1798.198(a) is subject to the initiative condition in 1798.198(b). Exemptions in 1798.145(m)(4) and (n)(3) state they become inoperative on January 1, 2023. Contents list headings for 1798.146, 1798.148, 1798.194, 1798.196, 1798.198 and 1798.199.10 onward are blank or abbreviated in the document.",
+ "events": [
+  {
+   "event": "entry_into_force",
+   "date": "2020-01-01",
+   "date_type": "absolute",
+   "date_text": "this title shall be operative January 1, 2020",
+   "applies_to": "entire title, subject to 1798.198(b) and 1798.199",
+   "evidence": {
+    "provision": "1798.198(a)",
+    "quote": "this title shall be operative January 1, 2020."
+   }
+  },
+  {
+   "event": "application",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "Section 1798.180 shall be operative on the effective date of the act adding this section.",
+   "depends_on": "effective date of the act adding this section",
+   "applies_to": "Section 1798.180 (preemption of local laws)",
+   "evidence": {
+    "provision": "1798.199",
+    "quote": "Section 1798.180 shall be operative on the effective date of the act adding this section."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "The initial appointments to the agency shall be made within 90 days of the effective date of the act adding this section.",
+   "depends_on": "effective date of the act adding this section",
+   "applies_to": "initial appointments to the California Privacy Protection Agency board",
+   "evidence": {
+    "provision": "1798.199.10(b)",
+    "quote": "shall be made within 90 days of the effective date of the act adding this section"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "within 45 days of receiving a verifiable consumer request from the consumer",
+   "depends_on": "receipt of a verifiable consumer request",
+   "applies_to": "disclosure, correction or deletion in response to a verifiable consumer request",
+   "evidence": {
+    "provision": "1798.130(a)(2)(A)",
+    "quote": "within 45 days of receiving a verifiable consumer request from the consumer."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "may be extended once by an additional 45 days when reasonably necessary",
+   "depends_on": "expiry of the 45-day response period, with notice of extension given within that period",
+   "applies_to": "disclosure, correction or deletion in response to a verifiable consumer request",
+   "evidence": {
+    "provision": "1798.130(a)(2)(A)",
+    "quote": "may be extended once by an additional 45 days when reasonably necessary"
+   }
+  },
+  {
+   "event": "application",
+   "date": "2022-01-01",
+   "date_type": "absolute",
+   "date_text": "shall only apply to personal information collected on or after January 1, 2022.",
+   "applies_to": "consumer right to request required information beyond the 12-month period",
+   "evidence": {
+    "provision": "1798.130(a)(3)(B)",
+    "quote": "shall only apply to personal information collected on or after January 1, 2022."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "update that information at least once every 12 months",
+   "applies_to": "online privacy policy and California-specific description of consumer privacy rights",
+   "evidence": {
+    "provision": "1798.130(a)(5)",
+    "quote": "update that information at least once every 12 months"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "shall not delete the personal information for 90 days",
+   "depends_on": "receipt of direction from a law enforcement agency-approved investigation",
+   "applies_to": "business receiving law enforcement direction not to delete personal information",
+   "evidence": {
+    "provision": "1798.145(a)(1)(B)",
+    "quote": "shall not delete the personal information for 90 days"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "The agency agrees to petition a court for an appropriate order within three days",
+   "depends_on": "government agency emergency access request approved under 1798.145(a)(1)(D)(i)",
+   "applies_to": "government agencies requesting emergency access to personal information",
+   "evidence": {
+    "provision": "1798.145(a)(1)(D)(i)(III)",
+    "quote": "The agency agrees to petition a court for an appropriate order within three days"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "The business shall inform the consumer of any such extension within 45 days of receipt of the request",
+   "depends_on": "receipt of the request",
+   "applies_to": "businesses extending the time to respond to verifiable consumer requests (up to 90 days in total)",
+   "evidence": {
+    "provision": "1798.145(h)(1)",
+    "quote": "The business shall inform the consumer of any such extension within 45 days of receipt of the request"
+   }
+  },
+  {
+   "event": "sunset",
+   "date": "2023-01-01",
+   "date_type": "absolute",
+   "date_text": "This subdivision shall become inoperative on January 1, 2023.",
+   "applies_to": "1798.145(m), exemption for personal information of job applicants, employees, owners, directors, officers, medical staff and independent contractors",
+   "evidence": {
+    "provision": "1798.145(m)(4)",
+    "quote": "This subdivision shall become inoperative on January 1, 2023."
+   }
+  },
+  {
+   "event": "sunset",
+   "date": "2023-01-01",
+   "date_type": "absolute",
+   "date_text": "This subdivision shall become inoperative on January 1, 2023.",
+   "applies_to": "1798.145(n), exemption for business-to-business communications and transactions",
+   "evidence": {
+    "provision": "1798.145(n)(3)",
+    "quote": "This subdivision shall become inoperative on January 1, 2023."
+   }
+  },
+  {
+   "event": "application",
+   "date": "2021-01-01",
+   "date_type": "absolute",
+   "date_text": "Beginning January 1, 2021, any contract for the sale or license of deidentified information",
+   "applies_to": "contracts for the sale or license of deidentified patient information where a party resides or does business in California",
+   "evidence": {
+    "provision": "1798.148(c)",
+    "quote": "Beginning January 1, 2021, any contract for the sale or license of deidentified information"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "a consumer provides a business 30 days’ written notice identifying the specific provisions of this title the consumer alleges have been or are being violated",
+   "depends_on": "consumer's written notice to the business before initiating an action for statutory damages",
+   "applies_to": "consumer actions for statutory damages under 1798.150",
+   "evidence": {
+    "provision": "1798.150(b)",
+    "quote": "a consumer provides a business 30 days"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2020-07-01",
+   "date_type": "absolute",
+   "date_text": "On or before July 1, 2020, the Attorney General shall solicit broad public participation and adopt regulations",
+   "applies_to": "Attorney General regulations under 1798.185(a)",
+   "evidence": {
+    "provision": "1798.185(a)",
+    "quote": "On or before July 1, 2020, the Attorney General shall solicit broad public participation and adopt regulations"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "within one year of passage of this title and as needed thereafter",
+   "depends_on": "passage of this title",
+   "applies_to": "rules under 1798.185(a)(3), (a)(5) and (a)(6): exceptions, financial incentive rules, and verifiable consumer request rules",
+   "evidence": {
+    "provision": "1798.185(a)(3)",
+    "quote": "within one year of passage of this title and as needed thereafter"
+   }
+  },
+  {
+   "event": "application",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "The Attorney General shall not bring an enforcement action under this title until six months after the publication of the final regulations issued pursuant to this section or July 1, 2020, whichever is sooner.",
+   "depends_on": "publication of the final regulations issued pursuant to 1798.185, or July 1, 2020, whichever is sooner",
+   "applies_to": "Attorney General enforcement actions under this title",
+   "evidence": {
+    "provision": "1798.185(c)",
+    "quote": "shall not bring an enforcement action under this title until six months after the publication of the final regulations issued pursuant to this section or July 1, 2020, whichever is sooner."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2022-07-01",
+   "date_type": "absolute",
+   "date_text": "the timeline for adopting final regulations required by the act adding this subdivision shall be July 1, 2022",
+   "applies_to": "final regulations under 1798.185 required by the act adding subdivision (d)",
+   "evidence": {
+    "provision": "1798.185(d)",
+    "quote": "the timeline for adopting final regulations required by the act adding this subdivision shall be July 1, 2022."
+   }
+  },
+  {
+   "event": "application",
+   "date": "2023-07-01",
+   "date_type": "absolute",
+   "date_text": "civil and administrative enforcement of the provisions of law added or amended by this act shall not commence until July 1, 2023",
+   "applies_to": "civil and administrative enforcement of provisions added or amended by the act",
+   "evidence": {
+    "provision": "1798.185(d)",
+    "quote": "civil and administrative enforcement of the provisions of law added or amended by this act shall not commence until July 1, 2023"
+   }
+  },
+  {
+   "event": "application",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "On and after the later of July 1, 2021, or within six months of the agency providing the Attorney General with notice that it is prepared to assume rulemaking responsibilities under this title",
+   "depends_on": "later of July 1, 2021, or six months after the agency gives the Attorney General notice that it is prepared to assume rulemaking",
+   "applies_to": "California Privacy Protection Agency rulemaking authority under 1798.185 (also 1798.185(d))",
+   "evidence": {
+    "provision": "1798.199.40(b)",
+    "quote": "On and after the later of July 1, 2021, or within six months of the agency providing the"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "at least 30 days prior to the agency’s consideration of the alleged violation",
+   "depends_on": "service of notice of the alleged violation on the business, service provider, contractor or person",
+   "applies_to": "agency probable cause findings",
+   "evidence": {
+    "provision": "1798.199.50",
+    "quote": "at least 30 days prior to the agency"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "shall be commenced more than five years after the date on which the violation occurred",
+   "depends_on": "date on which the violation occurred",
+   "applies_to": "administrative actions alleging violations of this title",
+   "evidence": {
+    "provision": "1798.199.70",
+    "quote": "shall be commenced more than five years after the date on which the violation occurred"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "shall be commenced within four years after the date on which the administrative fines were imposed",
+   "depends_on": "date on which the administrative fines were imposed",
+   "applies_to": "civil actions by the agency to collect unpaid administrative fines",
+   "evidence": {
+    "provision": "1798.199.75(b)",
+    "quote": "shall be commenced within four years after the date on which the administrative fines were imposed"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "only within four years after the date on which all means of judicial review of the order or decision have been exhausted",
+   "depends_on": "date on which all means of judicial review of the order or decision have been exhausted",
+   "applies_to": "agency applications to the court clerk for judgment to collect administrative fines",
+   "evidence": {
+    "provision": "1798.199.80(e)",
+    "quote": "only within four years after the date on which all means of judicial review of the order or decision have been exhausted"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2025-01-01",
+   "date_type": "recurring",
+   "date_text": "On January 1, 2025, and on January 1 of any odd-numbered year thereafter",
+   "applies_to": "adjustment of monetary thresholds by the California Privacy Protection Agency to reflect CPI increases",
+   "evidence": {
+    "provision": "1798.199.95(d)(1)",
+    "quote": "On January 1, 2025, and on January 1 of any odd-numbered year thereafter"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "no later than January 15 of the year in which the adjustment becomes effective.",
+   "applies_to": "posting of adjusted monetary thresholds on the agency website",
+   "evidence": {
+    "provision": "1798.199.95(d)(3)",
+    "quote": "no later than January 15 of the year in which the adjustment becomes effective."
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "revenue_annual",
+   "variable_text": "annual gross revenues",
+   "operator": ">",
+   "value": 25000000,
+   "value_text": "annual gross revenues in excess of twenty-five million dollars ($25,000,000)",
+   "unit": "USD",
+   "currency": "USD",
+   "indexed": true,
+   "measurement": "As of January 1 of the calendar year, annual gross revenues in the preceding calendar year",
+   "level": "entity",
+   "trigger": "scope_definition",
+   "consequence": "Entity meets one of the business thresholds and is covered as a business under this title",
+   "conditions": "Also collects consumers’ personal information, determines purposes and means of processing, and does business in California; alternative tests in (d)(1)(B) and (d)(1)(C)",
+   "evidence": {
+    "provision": "1798.140(d)(1)(A)",
+    "quote": "had annual gross revenues in excess of twenty-five million dollars ($25,000,000) in the preceding calendar year"
+   }
+  },
+  {
+   "variable": "data_subjects_count",
+   "variable_text": "consumers or households whose personal information is bought, sold or shared",
+   "operator": ">=",
+   "value": 100000,
+   "value_text": "100,000 or more consumers or households",
+   "unit": "consumers or households",
+   "measurement": "Alone or in combination, annually buys, sells, or shares personal information",
+   "level": "entity",
+   "trigger": "scope_definition",
+   "consequence": "Entity meets one of the business thresholds and is covered as a business under this title",
+   "conditions": "Also collects consumers’ personal information, determines purposes and means of processing, and does business in California",
+   "evidence": {
+    "provision": "1798.140(d)(1)(B)",
+    "quote": "annually buys, sells, or shares the personal information of 100,000 or more consumers or households"
+   }
+  },
+  {
+   "variable": "share_of_financials",
+   "variable_text": "share of annual revenues from selling or sharing consumers’ personal information",
+   "operator": ">=",
+   "value": 50,
+   "value_text": "50 percent or more of its annual revenues",
+   "unit": "percent",
+   "measurement": "Annual revenues, share derived from selling or sharing consumers’ personal information",
+   "level": "entity",
+   "trigger": "scope_definition",
+   "consequence": "Entity meets one of the business thresholds and is covered as a business under this title",
+   "conditions": "Also collects consumers’ personal information, determines purposes and means of processing, and does business in California",
+   "evidence": {
+    "provision": "1798.140(d)(1)(C)",
+    "quote": "Derives 50 percent or more of its annual revenues from selling or sharing consumers’ personal information"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "control of an entity through ownership or voting power",
+   "operator": ">",
+   "value": 50,
+   "value_text": "more than 50 percent of the outstanding shares of any class of voting security",
+   "unit": "percent of outstanding voting shares",
+   "measurement": "Ownership or voting power over another business",
+   "level": "group",
+   "trigger": "scope_definition",
+   "consequence": "A controlled entity sharing common branding and consumers’ personal information with a business is covered as a business",
+   "conditions": "Also shares common branding with the business and shares consumers’ personal information with it",
+   "evidence": {
+    "provision": "1798.140(d)(2)",
+    "quote": "ownership of, or the power to vote, more than 50 percent of the outstanding shares of any class of voting security of a business"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "interest held by each business in a joint venture or partnership",
+   "operator": ">=",
+   "value": 40,
+   "value_text": "at least a 40 percent interest",
+   "unit": "percent",
+   "measurement": "Interest held by each business composing the joint venture or partnership",
+   "level": "group",
+   "trigger": "scope_definition",
+   "consequence": "Joint venture or partnership is treated as a single business for purposes of this title",
+   "conditions": "Each business composing the venture has at least a 40 percent interest",
+   "evidence": {
+    "provision": "1798.140(d)(3)",
+    "quote": "in which each business has at least a 40 percent interest"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "area within which device data locates a consumer",
+   "operator": "<=",
+   "value": 1850,
+   "value_text": "equal to or less than the area of a circle with a radius of 1,850 feet",
+   "unit": "feet",
+   "measurement": "Radius of the geographic area within which device-derived data locates a consumer",
+   "level": "person",
+   "trigger": "scope_definition",
+   "consequence": "Data meeting this area limit is precise geolocation, which is sensitive personal information",
+   "conditions": "Except as prescribed by regulations",
+   "evidence": {
+    "provision": "1798.140(w)",
+    "quote": "equal to or less than the area of a circle with a radius of 1,850 feet"
+   }
+  },
+  {
+   "variable": "age",
+   "variable_text": "consumer age, based on actual knowledge",
+   "operator": "<",
+   "value": 16,
+   "value_text": "less than 16 years of age",
+   "unit": "years",
+   "measurement": "Actual knowledge of the consumer’s age; willful disregard is deemed actual knowledge",
+   "level": "person",
+   "trigger": "prohibition",
+   "consequence": "Business shall not sell or share the consumer’s personal information unless affirmative authorization is given",
+   "conditions": "Business has actual knowledge that the consumer is less than 16 years of age",
+   "evidence": {
+    "provision": "1798.120(c)",
+    "quote": "a business shall not sell or share the personal information of consumers if the business has actual knowledge that the consumer is less than 16 years of age"
+   }
+  },
+  {
+   "variable": "age",
+   "variable_text": "consumer age band permitting consumer self-authorization",
+   "operator": "range",
+   "value": 13,
+   "value_max": 16,
+   "value_text": "at least 13 years of age and less than 16 years of age",
+   "unit": "years",
+   "measurement": "Consumer age as known to the business",
+   "level": "person",
+   "trigger": "eligibility",
+   "consequence": "The consumer may affirmatively authorize the sale or sharing of their personal information",
+   "conditions": "Consumer, not parent or guardian, gives the authorization in this age band",
+   "evidence": {
+    "provision": "1798.120(c)",
+    "quote": "in the case of consumers at least 13 years of age and less than 16 years of age"
+   }
+  },
+  {
+   "variable": "age",
+   "variable_text": "consumer age below which a parent or guardian must authorize",
+   "operator": "<",
+   "value": 13,
+   "value_text": "less than 13 years of age",
+   "unit": "years",
+   "measurement": "Consumer age as known to the business",
+   "level": "person",
+   "trigger": "eligibility",
+   "consequence": "The parent or guardian may affirmatively authorize the sale or sharing of the consumer’s personal information",
+   "conditions": "Business has actual knowledge of the consumer’s age under 16",
+   "evidence": {
+    "provision": "1798.120(c)",
+    "quote": "in the case of consumers who are less than 13 years of age"
+   }
+  },
+  {
+   "variable": "age",
+   "variable_text": "consumer age for opt-in refrain duty",
+   "operator": "<",
+   "value": 16,
+   "value_text": "For consumers under 16 years of age",
+   "unit": "years",
+   "measurement": "Consumer age as known to the business",
+   "level": "person",
+   "trigger": "obligation",
+   "consequence": "Business shall refrain from selling or sharing the consumer’s personal information and wait at least 12 months before requesting consent again",
+   "conditions": "Consumer under 16 years of age does not consent to the sale or sharing of their personal information",
+   "evidence": {
+    "provision": "1798.135(c)(5)",
+    "quote": "For consumers under 16 years of age who do not consent to the sale or sharing of their personal information"
+   }
+  },
+  {
+   "variable": "age",
+   "variable_text": "consumer age in administrative fine tier",
+   "operator": "<",
+   "value": 16,
+   "value_text": "actual knowledge are under 16 years of age",
+   "unit": "years",
+   "measurement": "Business or other person has actual knowledge of the consumer’s age",
+   "level": "person",
+   "trigger": "penalty_tier",
+   "consequence": "Higher administrative fine tier applies to violations involving these consumers’ personal information (amounts in enforcement)",
+   "conditions": "Actual knowledge that the consumers are under 16 years of age",
+   "evidence": {
+    "provision": "1798.155(a)",
+    "quote": "violations involving the personal information of consumers whom the business, service provider, contractor, or other person has actual knowledge are under 16 years of age"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "number of requests for information in a 12-month period",
+   "operator": ">",
+   "value": 2,
+   "value_text": "more than twice in a 12-month period",
+   "unit": "requests per 12-month period",
+   "measurement": "Requests from the same consumer in a 12-month period",
+   "level": "person",
+   "trigger": "exemption",
+   "consequence": "Business is not obligated to provide the information required by Sections 1798.110 and 1798.115 beyond two requests",
+   "conditions": "Same consumer",
+   "evidence": {
+    "provision": "1798.130(b)",
+    "quote": "A business is not obligated to provide the information required by Sections 1798.110 and 1798.115 to the same consumer more than twice in a 12-month period"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "length of consumer addendum on health information",
+   "operator": "<=",
+   "value": 250,
+   "value_text": "limited to 250 words per alleged incomplete or incorrect item",
+   "unit": "words",
+   "measurement": "Words per alleged incomplete or incorrect item",
+   "level": "person",
+   "trigger": "cap",
+   "consequence": "Consumer’s written addendum to a rejected health-information correction is capped in length",
+   "conditions": "Business rejects a request to correct personal information concerning the consumer’s health",
+   "evidence": {
+    "provision": "1798.185(a)(7)(D)",
+    "quote": "The addendum shall be limited to 250 words per alleged incomplete or incorrect item"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "grant funds available after other distributions",
+   "operator": ">",
+   "value": 300000,
+   "value_text": "exceeds three hundred thousand dollars ($300,000)",
+   "unit": "USD",
+   "currency": "USD",
+   "measurement": "Grant funds available after all other distributions in a fiscal year",
+   "level": "other",
+   "trigger": "phase_in",
+   "consequence": "The Agency begins administering the grant program; otherwise funds are reserved for future years",
+   "conditions": "Applies to the grant program in paragraph (2)(B) of subdivision (b)",
+   "evidence": {
+    "provision": "1798.160(d)(1)",
+    "quote": "exceeds three hundred thousand dollars ($300,000)"
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "Business",
+   "defined_in": "this title",
+   "evidence": {
+    "provision": "1798.140(d)(1)",
+    "quote": "A sole proprietorship, partnership, limited liability company, corporation, association, or other legal entity that is organized or operated for the profit or financial benefit of its shareholders or other owners"
+   }
+  },
+  {
+   "term": "Consumer",
+   "defined_in": "this title",
+   "evidence": {
+    "provision": "1798.140(i)",
+    "quote": "“Consumer” means a natural person who is a California resident"
+   }
+  },
+  {
+   "term": "Personal information",
+   "defined_in": "this title",
+   "evidence": {
+    "provision": "1798.140(v)(1)",
+    "quote": "“Personal information” means information that identifies, relates to, describes, is reasonably capable of being associated with, or could reasonably be linked, directly or indirectly, with a particular consumer or household"
+   }
+  },
+  {
+   "term": "Publicly available (exclusion from personal information)",
+   "defined_in": "this title",
+   "evidence": {
+    "provision": "1798.140(v)(2)",
+    "quote": "“Personal information” does not include publicly available information or lawfully obtained, truthful information that is a matter of public concern"
+   }
+  },
+  {
+   "term": "Deidentified",
+   "defined_in": "this title",
+   "evidence": {
+    "provision": "1798.140(m)",
+    "quote": "“Deidentified” means information that cannot reasonably be used to infer information about, or otherwise be linked to, a particular consumer"
+   }
+  },
+  {
+   "term": "Aggregate consumer information",
+   "defined_in": "this title",
+   "evidence": {
+    "provision": "1798.140(b)",
+    "quote": "“Aggregate consumer information” means information that relates to a group or category of consumers"
+   }
+  },
+  {
+   "term": "Sensitive personal information",
+   "defined_in": "this title",
+   "evidence": {
+    "provision": "1798.140(ae)",
+    "quote": "“Sensitive personal information” means:"
+   }
+  },
+  {
+   "term": "Biometric information",
+   "defined_in": "this title",
+   "evidence": {
+    "provision": "1798.140(c)",
+    "quote": "“Biometric information” means an individual’s physiological, biological, or behavioral characteristics"
+   }
+  },
+  {
+   "term": "Precise geolocation",
+   "defined_in": "this title",
+   "evidence": {
+    "provision": "1798.140(w)",
+    "quote": "“Precise geolocation” means any data that is derived from a device"
+   }
+  },
+  {
+   "term": "Collects",
+   "defined_in": "this title",
+   "evidence": {
+    "provision": "1798.140(f)",
+    "quote": "means buying, renting, gathering, obtaining, receiving, or accessing any personal information pertaining to a consumer by any means"
+   }
+  },
+  {
+   "term": "Sell",
+   "defined_in": "this title",
+   "evidence": {
+    "provision": "1798.140(ad)(1)",
+    "quote": "means selling, renting, releasing, disclosing, disseminating, making available, transferring, or otherwise communicating orally, in writing, or by electronic or other means"
+   }
+  },
+  {
+   "term": "Share",
+   "defined_in": "this title",
+   "evidence": {
+    "provision": "1798.140(ah)(1)",
+    "quote": "“Share,” “shared,” or “sharing” means sharing, renting, releasing"
+   }
+  },
+  {
+   "term": "Cross-context behavioral advertising",
+   "defined_in": "this title",
+   "evidence": {
+    "provision": "1798.140(k)",
+    "quote": "“Cross-context behavioral advertising” means the targeting of advertising to a consumer based on the consumer’s personal information"
+   }
+  },
+  {
+   "term": "Service provider",
+   "defined_in": "this title",
+   "evidence": {
+    "provision": "1798.140(ag)(1)",
+    "quote": "“Service provider” means a person that processes personal information on behalf of a business"
+   }
+  },
+  {
+   "term": "Contractor",
+   "defined_in": "this title",
+   "evidence": {
+    "provision": "1798.140(j)(1)",
+    "quote": "“Contractor” means a person to whom the business makes available a consumer’s personal information for a business purpose, pursuant to a written contract with the business"
+   }
+  },
+  {
+   "term": "Third party",
+   "defined_in": "this title",
+   "evidence": {
+    "provision": "1798.140(ai)",
+    "quote": "“Third party” means a person who is not any of the following"
+   }
+  },
+  {
+   "term": "Business purpose",
+   "defined_in": "this title",
+   "evidence": {
+    "provision": "1798.140(e)",
+    "quote": "“Business purpose” means the use of personal information for the business’ operational purposes"
+   }
+  },
+  {
+   "term": "Household",
+   "defined_in": "this title",
+   "evidence": {
+    "provision": "1798.140(q)",
+    "quote": "“Household” means a group, however identified, of consumers who cohabitate with one another at the same residential address"
+   }
+  },
+  {
+   "term": "Consent",
+   "defined_in": "this title",
+   "evidence": {
+    "provision": "1798.140(h)",
+    "quote": "“Consent” means any freely given, specific, informed, and unambiguous indication of the consumer’s wishes"
+   }
+  },
+  {
+   "term": "Dark pattern",
+   "defined_in": "this title",
+   "evidence": {
+    "provision": "1798.140(l)",
+    "quote": "“Dark pattern” means a user interface designed or manipulated with the substantial effect of subverting or impairing user autonomy"
+   }
+  },
+  {
+   "term": "Profiling",
+   "defined_in": "this title",
+   "evidence": {
+    "provision": "1798.140(z)",
+    "quote": "“Profiling” means any form of automated processing of personal information"
+   }
+  },
+  {
+   "term": "Control",
+   "defined_in": "this title",
+   "evidence": {
+    "provision": "1798.140(d)(2)",
+    "quote": "“Control” or “controlled” means ownership of, or the power to vote, more than 50 percent of the outstanding shares of any class of voting security of a business"
+   }
+  },
+  {
+   "term": "Verifiable consumer request",
+   "defined_in": "this title",
+   "evidence": {
+    "provision": "1798.140(ak)",
+    "quote": "“Verifiable consumer request” means a request that is made by a consumer"
+   }
+  },
+  {
+   "term": "Covered entity",
+   "defined_in": "Title 45 of the Code of Federal Regulations, Section 160.103",
+   "evidence": {
+    "provision": "1798.146(b)(2)",
+    "quote": "“Covered entity” has the same meaning as defined in Section 160.103 of Title 45 of the Code of Federal Regulations."
+   }
+  },
+  {
+   "term": "Patient information",
+   "defined_in": "this title",
+   "evidence": {
+    "provision": "1798.146(b)(6)",
+    "quote": "“Patient information” shall mean identifiable private information, protected health information, individually identifiable health information, or medical information."
+   }
+  },
+  {
+   "term": "Medical information",
+   "defined_in": "Section 56.05",
+   "evidence": {
+    "provision": "1798.146(b)(5)",
+    "quote": "“Medical information” has the same meaning as defined in Section 56.05."
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "notice_to_users",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "At or before collection, inform consumers of categories collected, purposes, whether sold or shared, and retention; no incompatible new collection or use without notice.",
+   "conditional_on": "business controls the collection of a consumer's personal information",
+   "evidence": {
+    "provision": "1798.100(a)",
+    "quote": "A business that controls the collection of a consumer’s personal information shall, at or before the point of collection, inform consumers of the following:"
+   }
+  },
+  {
+   "type": "data_minimization",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Collection, use, retention and sharing must be reasonably necessary and proportionate and not further processed incompatibly with the purposes.",
+   "evidence": {
+    "provision": "1798.100(c)",
+    "quote": "A business’ collection, use, retention, and sharing of a consumer’s personal information shall be reasonably necessary and proportionate"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Enter written agreements with third parties, service providers or contractors limiting purposes, requiring equivalent privacy protection, granting audit-type rights and requiring notice if they cannot comply.",
+   "conditional_on": "business sells or shares personal information with, or discloses it to, a third party, service provider or contractor",
+   "evidence": {
+    "provision": "1798.100(d)",
+    "quote": "shall enter into an agreement with the third party, service provider, or contractor, that:"
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Implement reasonable security procedures and practices appropriate to the nature of the personal information.",
+   "evidence": {
+    "provision": "1798.100(e)",
+    "quote": "shall implement reasonable security procedures and practices appropriate to the nature of the personal information"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Disclose consumers' deletion rights as provided in Section 1798.130.",
+   "evidence": {
+    "provision": "1798.105(b)",
+    "quote": "shall disclose, pursuant to Section 1798.130, the consumer’s rights to request the deletion of the consumer’s personal information."
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "data_controller",
+   "also_addressees": [
+    "data_processor"
+   ],
+   "modality": "shall",
+   "summary": "On a verifiable deletion request, delete the consumer's personal information, notify service providers, contractors and third parties to whom it was sold or shared, subject to exceptions.",
+   "conditional_on": "verifiable consumer request to delete",
+   "evidence": {
+    "provision": "1798.105(c)(1)",
+    "quote": "shall delete the consumer’s personal information from its records"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "data_processor",
+   "modality": "shall",
+   "summary": "Service providers and contractors cooperate with the business in responding to verifiable deletion requests and delete at the business's direction.",
+   "evidence": {
+    "provision": "1798.105(c)(3)",
+    "quote": "A service provider or contractor shall cooperate with the business in responding to a verifiable consumer request"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "On a verifiable correction request, use commercially reasonable efforts to correct inaccurate personal information as directed by the consumer.",
+   "conditional_on": "verifiable consumer request to correct",
+   "evidence": {
+    "provision": "1798.106(c)",
+    "quote": "shall use commercially reasonable efforts to correct the inaccurate personal information as directed by the consumer"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Upon a verifiable request, disclose to the consumer the information specified in subdivision (a) of Section 1798.110, including specific pieces of personal information.",
+   "conditional_on": "verifiable consumer request",
+   "evidence": {
+    "provision": "1798.110(b)",
+    "quote": "shall disclose to the consumer, pursuant to subparagraph (B) of paragraph (3) of subdivision (a) of Section 1798.130"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Disclose in its privacy information the categories of personal information collected, sources, purposes and categories of third parties, and the right to request specific pieces.",
+   "evidence": {
+    "provision": "1798.110(c)",
+    "quote": "A business that collects personal information about consumers shall disclose, pursuant to subparagraph (B) of paragraph (5) of subdivision (a) of Section 1798.130"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Upon a verifiable request, disclose the categories of personal information sold or shared and disclosed for a business purpose, with the categories of third parties and recipients.",
+   "conditional_on": "business sells or shares, or discloses for a business purpose, consumers' personal information",
+   "evidence": {
+    "provision": "1798.115(b)",
+    "quote": "shall disclose, pursuant to paragraph (4) of subdivision (a) of Section 1798.130, the information specified in subdivision (a)"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "data_controller",
+   "modality": "shall_not",
+   "summary": "A third party may not resell or share personal information it received from a business unless the consumer received explicit notice and an opportunity to opt out.",
+   "evidence": {
+    "provision": "1798.115(d)",
+    "quote": "A third party shall not sell or share personal information about a consumer that has been sold to, or shared with, the third party by a business unless"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Provide notice that personal information may be sold or shared and that consumers have a right to opt out.",
+   "conditional_on": "business sells or shares consumers' personal information to third parties",
+   "evidence": {
+    "provision": "1798.120(b)",
+    "quote": "shall provide notice to consumers, pursuant to subdivision (a) of Section 1798.135"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "data_controller",
+   "modality": "shall_not",
+   "summary": "After receiving an opt-out direction, may not sell or share the consumer's personal information unless the consumer later consents.",
+   "conditional_on": "consumer has directed the business not to sell or share",
+   "evidence": {
+    "provision": "1798.120(d)",
+    "quote": "shall be prohibited, pursuant to paragraph (4) of subdivision (c) of Section 1798.135, from selling or sharing the consumer’s personal information after its receipt of the consumer’s direction"
+   }
+  },
+  {
+   "type": "minors_protection",
+   "addressee": "data_controller",
+   "modality": "shall_not",
+   "summary": "May not sell or share personal information of consumers under 16 without affirmative authorization (consumer aged 13-15 or parent/guardian for under 13).",
+   "conditional_on": "business has actual knowledge that the consumer is less than 16 years of age",
+   "evidence": {
+    "provision": "1798.120(c)",
+    "quote": "a business shall not sell or share the personal information of consumers if the business has actual knowledge that the consumer is less than 16 years of age"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Provide notice of use or disclosure of sensitive personal information for purposes beyond those listed, and of the right to limit it.",
+   "conditional_on": "business uses or discloses sensitive personal information for purposes other than those in subdivision (a)",
+   "evidence": {
+    "provision": "1798.121(a)",
+    "quote": "shall provide notice to consumers, pursuant to subdivision (a) of Section 1798.135"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "data_controller",
+   "modality": "shall_not",
+   "summary": "After a direction to limit use of sensitive personal information, may not use or disclose it for other purposes unless the consumer consents.",
+   "conditional_on": "consumer has directed the business to limit use of sensitive personal information",
+   "evidence": {
+    "provision": "1798.121(b)",
+    "quote": "shall be prohibited, pursuant to paragraph (4) of subdivision (c) of Section 1798.135, from using or disclosing the consumer’s sensitive personal information"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "data_controller",
+   "modality": "shall_not",
+   "summary": "May not discriminate against a consumer for exercising rights, including by denying goods or services, charging different prices, or providing different quality.",
+   "evidence": {
+    "provision": "1798.125(a)(1)",
+    "quote": "A business shall not discriminate against a consumer because the consumer exercised any of the consumer’s rights under this title"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Notify consumers of financial incentives offered under subdivision (b) pursuant to Section 1798.130.",
+   "conditional_on": "business offers financial incentives",
+   "evidence": {
+    "provision": "1798.125(b)(2)",
+    "quote": "shall notify consumers of the financial incentives pursuant to Section 1798.130"
+   }
+  },
+  {
+   "type": "consent",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Enter a consumer into a financial incentive program only with prior opt-in consent describing material terms; wait at least 12 months before re-requesting after refusal.",
+   "conditional_on": "business offers a financial incentive program",
+   "evidence": {
+    "provision": "1798.125(b)(3)",
+    "quote": "A business may enter a consumer into a financial incentive program only if the consumer gives the business prior opt-in consent"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "data_controller",
+   "modality": "shall_not",
+   "summary": "May not use financial incentive practices that are unjust, unreasonable, coercive, or usurious.",
+   "evidence": {
+    "provision": "1798.125(b)(4)",
+    "quote": "A business shall not use financial incentive practices that are unjust, unreasonable, coercive, or usurious in nature."
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Make available two or more designated request methods, including at minimum a toll-free number (email only for exclusively online businesses with direct relationships), and the website where applicable.",
+   "evidence": {
+    "provision": "1798.130(a)(1)(A)",
+    "quote": "Make available to consumers two or more designated methods for submitting requests"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Disclose and deliver required information free of charge, correct or delete data on request, within 45 days of a verifiable request (one 45-day extension with notice); information in readily useable format; authentication may be required.",
+   "conditional_on": "verifiable consumer request",
+   "evidence": {
+    "provision": "1798.130(a)(2)(A)",
+    "quote": "Disclose and deliver the required information to a consumer free of charge"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Disclose consumer rights, request methods, categories collected, sources, purposes, third-party disclosures and sale/sharing lists in its online privacy policy, updated at least every 12 months.",
+   "evidence": {
+    "provision": "1798.130(a)(5)",
+    "quote": "Disclose the following information in its online privacy policy or policies"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Ensure individuals handling consumer inquiries are informed of the requirements of the title and how to direct consumers to exercise their rights.",
+   "evidence": {
+    "provision": "1798.130(a)(6)",
+    "quote": "Ensure that all individuals responsible for handling consumer inquiries"
+   }
+  },
+  {
+   "type": "data_minimization",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Use personal information collected for request verification solely for verification, without further disclosure, unnecessary retention or unrelated use.",
+   "evidence": {
+    "provision": "1798.130(a)(7)",
+    "quote": "Use any personal information collected from the consumer in connection with the business’ verification"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Provide a clear and conspicuous homepage link to opt out of sale or sharing and a link to limit use of sensitive personal information, or a single combined link.",
+   "conditional_on": "business sells or shares personal information, or uses sensitive personal information beyond permitted purposes",
+   "evidence": {
+    "provision": "1798.135(a)(1)",
+    "quote": "Provide a clear and conspicuous link on the business’ internet homepages"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "data_controller",
+   "modality": "shall_not",
+   "summary": "May not require a consumer to create an account or provide additional information beyond what is necessary to exercise opt-out or limit choices.",
+   "conditional_on": "business is subject to subdivision (a) or (b) of Section 1798.135",
+   "evidence": {
+    "provision": "1798.135(c)(1)",
+    "quote": "Not require a consumer to create an account or provide additional information"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "data_controller",
+   "modality": "shall_not",
+   "summary": "After an opt-out or limit request, refrain from selling or sharing the personal information or using sensitive personal information, and wait at least 12 months before re-requesting consent.",
+   "conditional_on": "consumer has exercised the right to opt out or limit",
+   "evidence": {
+    "provision": "1798.135(c)(4)",
+    "quote": "refrain from selling or sharing the consumer’s personal information"
+   }
+  },
+  {
+   "type": "minors_protection",
+   "addressee": "data_controller",
+   "modality": "shall_not",
+   "summary": "For consumers under 16 who do not consent, refrain from selling or sharing their personal information and wait at least 12 months before requesting consent again, unless authorized by regulations or the consumer turns 16.",
+   "conditional_on": "consumer under 16 years of age who does not consent",
+   "evidence": {
+    "provision": "1798.135(c)(5)",
+    "quote": "refrain from selling or sharing the personal information of the consumer under 16 years of age"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "data_processor",
+   "modality": "shall_not",
+   "summary": "A person to whom an opt-out request is communicated may use the consumer's information only for the specified business purpose and may not sell, share, retain, use or disclose it outside the permitted purposes.",
+   "conditional_on": "business communicates an opt-out request to a person authorized to collect personal information",
+   "evidence": {
+    "provision": "1798.135(f)",
+    "quote": "the person shall thereafter only use that consumer’s personal information for a business purpose specified by the business"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Inform the consumer of any extension of the response period within 45 days of receipt, with reasons; inform the consumer of reasons for not taking action and any right to appeal.",
+   "conditional_on": "response extended, or business does not act on a request",
+   "evidence": {
+    "provision": "1798.145(h)(1)",
+    "quote": "The business shall inform the consumer of any such extension within 45 days of receipt of the request, together with the reasons for the delay."
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "data_controller",
+   "also_addressees": [
+    "data_processor"
+   ],
+   "modality": "shall_not",
+   "summary": "May not reidentify, or attempt to reidentify, deidentified patient information, except for listed purposes.",
+   "conditional_on": "information met the deidentification requirements of Section 1798.146(a)(4)",
+   "evidence": {
+    "provision": "1798.148(a)",
+    "quote": "A business or other person shall not reidentify, or attempt to reidentify, information"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Contracts for sale or license of deidentified patient information must include statements that the information is deidentified patient information, that reidentification is prohibited, and onward-disclosure limits.",
+   "applies_from": "Beginning January 1, 2021",
+   "conditional_on": "one party is a person residing or doing business in the state",
+   "evidence": {
+    "provision": "1798.148(c)",
+    "quote": "Beginning January 1, 2021, any contract for the sale or license of deidentified information"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Consumer Privacy Fund monies are to be used exclusively for listed purposes, including court, agency and Attorney General costs and grants.",
+   "evidence": {
+    "provision": "1798.160(b)",
+    "quote": "Funds transferred to the Consumer Privacy Fund shall be used exclusively as follows:"
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Attorney General must solicit public participation and adopt regulations furthering the title, including the listed areas (categories, exceptions, opt-out rules, verification, and others).",
+   "applies_from": "On or before July 1, 2020",
+   "evidence": {
+    "provision": "1798.185(a)",
+    "quote": "the Attorney General shall solicit broad public participation and adopt regulations to further the purposes of this title"
+   }
+  },
+  {
+   "type": "risk_assessment",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Regulations are to require businesses whose processing presents significant risk to submit regular risk assessments to the California Privacy Protection Agency, weighing benefits against risks.",
+   "conditional_on": "regulations adopted under 1798.185(a)(14) for processing presenting significant risk",
+   "evidence": {
+    "provision": "1798.185(a)(14)(B)",
+    "quote": "Submit to the California Privacy Protection Agency on a regular basis a risk assessment with respect to their processing of personal information"
+   }
+  },
+  {
+   "type": "audit",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Regulations are to require annual cybersecurity audits by businesses whose processing presents significant risk to security.",
+   "conditional_on": "regulations adopted under 1798.185(a)(14) for processing presenting significant risk",
+   "evidence": {
+    "provision": "1798.185(a)(14)(A)",
+    "quote": "Perform a cybersecurity audit on an annual basis"
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Regulations are to govern access and opt-out rights concerning business use of automated decisionmaking technology, including profiling, and meaningful information about the logic involved.",
+   "evidence": {
+    "provision": "1798.185(a)(15)",
+    "quote": "Issuing regulations governing access and opt-out rights with respect to a business’ use of automated decisionmaking technology"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Establishes the California Privacy Protection Agency, a five-member board, with full administrative power to implement and enforce the title.",
+   "evidence": {
+    "provision": "1798.199.10(a)",
+    "quote": "There is hereby established in state government the California Privacy Protection Agency"
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Agency is to adopt, amend and rescind regulations under Section 1798.185, including regulations specifying recordkeeping requirements for businesses.",
+   "applies_from": "On and after the later of July 1, 2021, or within six months of the agency providing the Attorney General with notice that it is prepared to assume rulemaking responsibilities",
+   "evidence": {
+    "provision": "1798.199.40(b)",
+    "quote": "adopt, amend, and rescind regulations pursuant to Section 1798.185 to carry out the purposes and provisions"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "regulator",
+   "modality": "shall",
+   "summary": "Agency is to provide a public report summarizing the risk assessments filed with it, without compromising data security.",
+   "evidence": {
+    "provision": "1798.199.40(d)",
+    "quote": "provide a public report summarizing the risk assessments filed with the agency"
+   }
+  },
+  {
+   "type": "audit",
+   "addressee": "regulator",
+   "modality": "shall",
+   "summary": "Agency is to appoint a Chief Privacy Auditor to conduct audits of businesses to ensure compliance.",
+   "evidence": {
+    "provision": "1798.199.40(f)",
+    "quote": "appoint a Chief Privacy Auditor to conduct audits of businesses to ensure compliance with this title"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "regulator",
+   "modality": "shall",
+   "summary": "Agency is to adjust the monetary thresholds in the listed provisions to reflect CPI increases.",
+   "applies_from": "On January 1, 2025, and on January 1 of any odd-numbered year thereafter",
+   "evidence": {
+    "provision": "1798.199.95(d)(1)",
+    "quote": "the California Privacy Protection Agency shall adjust the monetary thresholds"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "regulator",
+   "modality": "shall",
+   "summary": "Agency is to post the adjusted monetary thresholds on its website.",
+   "applies_from": "No later than January 15 of the year in which the adjustment becomes effective",
+   "evidence": {
+    "provision": "1798.199.95(d)(3)",
+    "quote": "The agency shall post the adjusted monetary thresholds on its internet website no later than January 15"
+   }
+  }
+ ],
+ "enforcement": [
+  {
+   "sanction_type": "administrative_fine",
+   "authority": "California Privacy Protection Agency",
+   "triggered_by": "Violation of this title by any business, service provider, contractor, or other person, in an administrative enforcement action brought by the California Privacy Protection Agency",
+   "max_penalty_text": "not more than two thousand five hundred dollars ($2,500) for each violation or seven thousand five hundred dollars ($7,500) for each intentional violation or violations involving the personal information of consumers whom the business, service provider, contractor, or other person has actual knowledge are under 16 years of age, as adjusted pursuant to subdivision (d) of Section 1798.199.95",
+   "max_penalty_amount": 2500,
+   "currency": "USD",
+   "penalty_formula": "Per violation: $2,500; $7,500 per intentional violation or violation involving personal information of consumers the business has actual knowledge are under 16; amounts adjusted under Section 1798.199.95(d)",
+   "penalty_reference": "Sections 1798.199.55(a)(2) and 1798.199.100",
+   "cure_period": "No fixed period stated; the agency may decline to investigate or provide time to cure (Section 1798.199.45(a)) and must consider good faith cooperation (Section 1798.199.100)",
+   "evidence": {
+    "provision": "1798.155(a)",
+    "quote": "shall be liable for an administrative fine of not more than two thousand five hundred dollars"
+   }
+  },
+  {
+   "sanction_type": "injunction_order",
+   "authority": "California Privacy Protection Agency",
+   "triggered_by": "Agency determination after a hearing that a violation of this title has occurred",
+   "max_penalty_text": "order may require the violator to cease and desist violation of this title",
+   "penalty_reference": "Section 1798.199.55(a)(1)",
+   "cure_period": "Agency may decide to provide a time period to cure the alleged violation (Section 1798.199.45(a))",
+   "evidence": {
+    "provision": "1798.199.55(a)(1)",
+    "quote": "Cease and desist violation of this title."
+   }
+  },
+  {
+   "sanction_type": "civil_penalty",
+   "authority": "Attorney General (civil action in the name of the people of the State of California)",
+   "triggered_by": "Violation of this title, recovered in a civil action brought by the Attorney General; no such action may be filed after the agency has issued a decision or order against the same person for the same violation (Section 1798.199.90(d))",
+   "max_penalty_text": "civil penalty of not more than two thousand five hundred dollars ($2,500) for each violation or seven thousand five hundred dollars ($7,500) for each intentional violation and each violation involving the personal information of minor consumers, as adjusted pursuant subdivision (d) of Section 1798.199.95",
+   "max_penalty_amount": 2500,
+   "currency": "USD",
+   "penalty_formula": "Per violation: $2,500; $7,500 per intentional violation and per violation involving personal information of minor consumers; court may consider good faith cooperation; injunction also available",
+   "penalty_reference": "Section 1798.199.90(a)",
+   "cure_period": "None stated",
+   "evidence": {
+    "provision": "1798.199.90(a)",
+    "quote": "liable for a civil penalty of not more than two thousand five hundred dollars ($2,500) for each violation"
+   }
+  },
+  {
+   "sanction_type": "private_damages",
+   "authority": "Consumer (private civil action)",
+   "triggered_by": "Unauthorized access and exfiltration, theft, or disclosure of nonencrypted and nonredacted personal information as a result of the business's violation of the duty to implement and maintain reasonable security procedures",
+   "max_penalty_text": "not less than one hundred dollars ($100) and not greater than seven hundred and fifty ($750) per consumer per incident or actual damages, whichever is greater; amounts adjusted pursuant to subdivision (d) of Section 1798.199.95",
+   "max_penalty_amount": 750,
+   "currency": "USD",
+   "penalty_formula": "$100 to $750 per consumer per incident, or actual damages, whichever is greater; injunctive or declaratory relief and other relief the court deems proper also available",
+   "penalty_reference": "Section 1798.150(a)(1)",
+   "private_right_of_action": true,
+   "cure_period": "Consumer must give the business 30 days' written notice before an action for statutory damages; a cure is possible if the business cures within the 30 days and gives an express written statement (Section 1798.150(b))",
+   "evidence": {
+    "provision": "1798.150(a)(1)(A)",
+    "quote": "To recover damages in an amount not less than one hundred dollars ($100) and not greater than seven hundred and fifty ($750) per consumer per incident or actual damages, whichever is greater."
+   }
+  }
+ ],
+ "section_status": {}
+}

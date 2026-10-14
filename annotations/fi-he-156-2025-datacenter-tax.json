@@ -1,0 +1,213 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "fi-he-156-2025-datacenter-tax",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (connectors/fetch_texts.py)",
+  "url": "https://api.eduskunta.fi/documents/fi/6094B897-C67E-413C-A08D-C95D0169A613.pdf",
+  "retrieved": "2026-10-13",
+  "version": "as fetched",
+  "language": "fi",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "compute_data_centers",
+   "energy_grid_water"
+  ],
+  "primary_domain": "compute_data_centers",
+  "mechanisms": [
+   "tax_incentive"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "data_center_operator"
+  ],
+  "affected_roles": [
+   "utility_grid_operator"
+  ],
+  "decision_margins": [
+   "firm:input_use"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national"
+   ],
+   "description": "Applies to electricity excise tax in Finland, as set by the Finnish Electricity and Certain Fuels Excise Tax Act.",
+   "evidence": {
+    "provision": "1 §",
+    "quote": "Tällä lailla kumotaan sähkön ja eräiden polttoaineiden valmisteverosta annetun lain (1260/1996)"
+   }
+  }
+ },
+ "summary": {
+  "short": "Government bill HE 156/2025 vp proposes repealing the Finnish electricity excise tax provisions (§2 points 6a–6c and §4a) that let data centres buy electricity at the lower class II rate. Data-centre electricity would move to the general class I from 1 July 2026.",
+  "long": "The bill repeals §2 points 6a–6c and §4a of the Electricity and Certain Fuels Excise Tax Act (1260/1996), as they stood under Act 1215/2021. Section 4a provided the reduced electricity tax class II for data centres (konesalit) with more than 0.5 MW of server capacity that met conditions on waste-heat use, ERE values or PUE values. Under the bill, electricity used in data centres would be taxed at the general class I rate of 2.24 cents per kWh instead of the class II rate of 0.05 cents per kWh, an increase of 2.19 cents per kWh. The bill proposes entry into force on 1 July 2026 and is linked to the 2026 state budget proposal. The explanatory sections also set out the background to the 2022 threshold change, the EU energy tax and state aid framework, the comparison with Sweden and Norway, and a separate bill (HE 97/2025 vp) on the mining electricity class. The operative text contains no enforcement regime of its own.},"
+ },
+ "relations": [
+  {
+   "relation": "repeals",
+   "target_text": "Sähkön ja eräiden polttoaineiden valmisteverosta annettu laki (1260/1996)",
+   "note": "Repeals 2 § paragraphs 6 a to 6 c and 4 a § of the 1260/1996 Act (electricity consumer tax support for data centres, 4 a §). The repealed text is not reproduced in this document.",
+   "evidence": {
+    "provision": "Lakiehdotus, 1 §",
+    "quote": "2 §:n 6 a –— 6 c kohta ja 4 a §, sellaisina kuin ne ovat laissa 1215/2021"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Laki 1215/2021 (version of the provisions to be repealed)",
+   "note": "The repealed provisions are cited as they stand in the act amended by 1215/2021. The text does not state that this act amends 1260/1996.",
+   "evidence": {
+    "provision": "Lakiehdotus, 1 §",
+    "quote": "sellaisina kuin ne ovat laissa 1215/2021"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Energiatehokkuusdirektiivi (EU) 2023/1791, Art. 26(6)",
+   "note": "Text states this provision requires data centres above 1 MW to use waste heat unless infeasible; it is cited as the reason the tax-support waste-heat condition is no longer needed.",
+   "evidence": {
+    "provision": "Perustelut 2.2 EU-lainsäädäntö",
+    "quote": "26 artiklan 6 kohdassa velvoitetaan kokonaisteholtaan yli yhden megawatin konesalit"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Neuvoston direktiivi 2003/96/EY (energiaverodirektiivi)",
+   "note": "Text describes electricity taxation as harmonised under this directive, which sets minimum electricity tax levels. No provision of the directive is amended here.",
+   "evidence": {
+    "provision": "Perustelut 2.2 EU-lainsäädäntö",
+    "quote": "neuvoston direktiivissä 2003/96/EY"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "HE 97/2025 vp (government bill on mining electricity tax class)",
+   "note": "Text says the electricity tax class change for mining is covered by a separate government bill.",
+   "evidence": {
+    "provision": "Perustelut 1.1 Tausta",
+    "quote": "Kaivostoiminnan sähköveroluokan muutoksesta on annettu erillinen hallituksen esitys HE 97/2025 vp."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "HE 85/2025 vp (bill implementing energy efficiency directive Art. 26(6))",
+   "note": "Text says this bill is pending in Parliament and concerns national implementation of the waste-heat provision.",
+   "evidence": {
+    "provision": "Perustelut 2.2 EU-lainsäädäntö",
+    "quote": "Tätä koskeva hallituksen esitys HE 85/2025 vp on käsiteltävänä eduskunnassa."
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "Verohallinto",
+   "role": "designated",
+   "function": "Administers excise taxation, including electricity tax; text also refers to support notifications to it.",
+   "evidence": {
+    "provision": "Perustelut 2.1 Kansallinen lainsäädäntö",
+    "quote": "Valmisteverotuksen toimittamisesta vastaa Verohallinto."
+   }
+  },
+  {
+   "name": "Valtiovarainministeriö",
+   "role": "listed",
+   "function": "Ministry that prepared the bill.",
+   "evidence": {
+    "provision": "Perustelut 1.2 Valmistelu",
+    "quote": "Esitys on valmisteltu valtiovarainministeriössä."
+   }
+  }
+ ],
+ "notes": "The document is the government bill HE 156/2025 vp, signed in Helsinki on 23.10.2025; the 'adopted' status in the metadata is not verifiable from the text. The entry-into-force clause in the bill text is blank ('päivänä kuuta 20 .'); the explanatory sections give 1.7.2026. The operative provisions are repeals only, so no thresholds are coded from the repealed 4 a § text (0.5 MW, ERE and PUE limits), which is not reproduced. Revenue figures (47 million euro per year at 2026 level; about 24 million for 2026; 16 million cash-based) are impact estimates and are not coded as facts.",
+ "events": [
+  {
+   "event": "proposed",
+   "date": "2025-10-23",
+   "date_type": "absolute",
+   "date_text": "Helsingissä 23.10.2025",
+   "applies_to": "Government bill HE 156/2025 vp",
+   "evidence": {
+    "provision": "Lakiehdotus (signature block at end of bill)",
+    "quote": "Helsingissä 23.10.2025"
+   }
+  },
+  {
+   "event": "consultation",
+   "date": null,
+   "date_type": "not_stated",
+   "date_text": "Kaivostoiminnan ja konesalien sähköveroluokan muutosta koskeva esitysluonnos oli lausuntokierroksella",
+   "applies_to": "Draft proposal (esitysluonnos) on electricity tax class change for mining and data centres; 125 statements received",
+   "evidence": {
+    "provision": "1.2 Valmistelu",
+    "quote": "Kaivostoiminnan ja konesalien sähköveroluokan muutosta koskeva esitysluonnos oli"
+   }
+  },
+  {
+   "event": "repealed",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "Tällä lailla kumotaan sähkön ja eräiden polttoaineiden valmisteverosta annetun lain (1260/1996) 2 §:n 6 a –— 6 c kohta ja 4 a §",
+   "anchor": "entry into force of this Act (§ 2)",
+   "depends_on": "entry into force of this Act (§ 2)",
+   "applies_to": "Section 2, points 6 a to 6 c, and section 4 a of Act 1260/1996 (electricity and certain fuels excise duty Act)",
+   "anchor_event": "entry_into_force",
+   "evidence": {
+    "provision": "1 §",
+    "quote": "Tällä lailla kumotaan sähkön ja eräiden polttoaineiden valmisteverosta annetun lain (1260/1996)"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2026-07-01",
+   "date_type": "absolute",
+   "date_text": "Ehdotetaan, että laki tulee voimaan 1.7.2026. (The operative § 2 of the bill leaves the day blank: 'Tämä laki tulee voimaan päivänä kuuta 20 .')",
+   "applies_to": "This Act",
+   "evidence": {
+    "provision": "8 Voimaantulo",
+    "quote": "Ehdotetaan, että laki tulee voimaan 1.7.2026."
+   }
+  },
+  {
+   "event": "application",
+   "date": "2026-07-01",
+   "date_type": "absolute",
+   "date_text": "Koska muutos tulisi voimaan vasta 1.7.2026",
+   "applies_to": "Electricity used in data centres (konesalit), taxed under general electricity tax class I instead of class II",
+   "evidence": {
+    "provision": "7 Säännöskohtaiset perustelut, 4 a §",
+    "quote": "Konesaleissa käytetty sähkö verotettaisiin jatkossa yleisen sähköveroluokan I mukaan."
+   }
+  }
+ ],
+ "section_status": {
+  "thresholds": {
+   "status": "not_found",
+   "note": "The operative text (Lakiehdotus 1 §) only repeals § 2 subparagraphs 6 a to 6 c and § 4 a of the Electricity Tax Act (1260/1996, as amended by 1215/2021); their wording is not reproduced in the document. The numeric criteria for the lower class II (server capacity above 0.5 MW, average power 5 and 10 MW, ERE 0.90 and 1, PUE 1.20 and 1.25 until end 2026) and the class rates (2.24 and 0.05 c/kWh) appear only in the background description of the current law (Perustelut 2.1) and are not coded as operative thresholds of this act. Entry into force on 1.7.2026 is an event, not a threshold."
+  },
+  "definitions": {
+   "status": "not_found",
+   "note": "No operative definitions in this act. Lakiehdotus 1 § repeals § 2 subparagraphs 6 a to 6 c of the Electricity Tax Act, which Perustelut 7 describes as definitions related to the data-centre tax support; their wording is not reproduced. The description of konesali in Perustelut 2.1 concerns current law and is background only, not coded. The jäljempänä shorthand in Perustelut 1.1 is not an operative definition."
+  },
+  "obligations": {
+   "status": "not_applicable",
+   "note": "The only operative section (1 §) repeals 2 § 6 a–6 c kohta and 4 a § of the electricity tax act; section 2 sets the entry-into-force date. The bill creates no new duties for any addressee. The statement that data-centre electricity would be taxed under class I (7 Säännöskohtaiset perustelut, 4 a §) is in the explanatory memorandum, not the operative text. Repealed provisions are not reproduced in the document."
+  },
+  "enforcement": {
+   "status": "not_found",
+   "note": "The text contains no sanction, fine, penalty, licence revocation, clawback, suspension or blocking provision. It only repeals 2 § points 6 a–6 c and 4 a § of the electricity tax act (1260/1996), and section 4.2 mentions Verohallinto supervision descriptively. Penalties in the parent act are outside this text."
+  }
+ },
+ "thresholds": [],
+ "obligations": [],
+ "enforcement": [],
+ "definitions": []
+}

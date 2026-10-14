@@ -1,0 +1,766 @@
+{
+ "schema_version": "1.1",
+ "instrument_id": "br-redata-lei15504-2026",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-opus-5-5 (Claude Code)",
+  "method": "gold set (Opus, Claude Code)",
+  "date": "2026-10-11",
+  "prompt_version": "gold (hand annotation by Claude Opus in Claude Code; no prompt version)"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "Portal da Legislação, Presidência da República (planalto.gov.br)",
+  "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/lei/L15504.htm",
+  "retrieved": "2026-10-11",
+  "version": "original as published (DOU 2026-09-15, edição extra); the Planalto page shows no later amendments or vetoes as of retrieval",
+  "language": "pt",
+  "extent": "full",
+  "note": "Full text of Lei 15.504/2026 (Arts. 1-5). Art. 2 restates amended provisions of Lei 11.196/2005 (Arts. 1, 2 caput, 2 §4 and new Arts. 11-A to 11-J); unchanged parts of Lei 11.196/2005 are elided ('....') on the page and not included. Provision IDs for inserted text use the article numbers of Lei 11.196/2005 (e.g. 'Lei 11.196/2005, Art. 11-B §1 I, as inserted by Art. 2')."
+ },
+ "summary": {
+  "short": "Amends Lei 11.196/2005 to create Redata: suspension, then zero-rating, of PIS/Pasep, Cofins, IPI and import duty on ICT equipment for accredited data-center projects in Brazil that commit to domestic-capacity, renewable-electricity, water-efficiency and R&D-investment conditions. Benefits last five years; in force 15 September 2026.",
+  "long": "Lei 15.504/2026 amends Lei 11.196/2005 to create Redata, a special tax regime for data-center services, and excludes data-center services from the Repes export regime. Firms implementing data-center installation, modernisation or expansion projects in Brazil may be accredited (habilitação) by the Federal Revenue Service; manufacturers supplying ICT products for an accredited firm's fixed assets may be co-accredited. Accreditation requires federal tax regularity and no Cadin record, and excludes Simples firms. Accredited firms commit to offer at least 10% of the capacity installed with Redata benefits to the domestic market (or invest an extra 10% of benefited purchases in R&D), meet sustainability criteria set by regulation, source all electricity from renewable or low-emission supply, keep water usage effectiveness at or below 0.05 L/kWh, and invest 2% of benefited purchases in R&D programmes. The domestic-capacity and R&D commitments fall by 20% in the North, Northeast and Center-West. Suspended taxes become zero-rated once commitments are met. Non-compliance leads to repayment with interest and late-payment fines, ex officio assessment, or suspension and cancellation of accreditation. Benefits last five years; PIS/Cofins/IPI benefits end 31 December 2026. The law also directs ECA Digital fines to the national children's fund for five years."
+ },
+ "classification": {
+  "domains": [
+   "compute_data_centers",
+   "energy_grid_water",
+   "minors_child_safety"
+  ],
+  "primary_domain": "compute_data_centers",
+  "mechanisms": [
+   "tax_incentive",
+   "licensing_permit_certification",
+   "disclosure_transparency"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "data_center_operator",
+   "chip_designer_manufacturer",
+   "government_agency"
+  ],
+  "affected_roles": [
+   "data_center_occupant"
+  ],
+  "decision_margins": [
+   "firm:investment_location",
+   "firm:input_use",
+   "firm:trade",
+   "firm:compliance_process"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national"
+   ],
+   "description": "Federal taxes on data-center projects located in Brazil; commitments reduced for establishments in the North, Northeast and Center-West regions.",
+   "evidence": {
+    "provision": "Lei 11.196/2005, Art. 11-A, as inserted by Art. 2",
+    "quote": "implemente projeto de instalação, de modernização ou de ampliação de serviços de datacenter no território nacional"
+   }
+  },
+  "agora_applications": [],
+  "agora_harms": [],
+  "agora_incentives": [
+   "Subsidies"
+  ],
+  "agora_risk_factors": [],
+  "agora_strategies": [
+   "Government support",
+   "Disclosure"
+  ]
+ },
+ "events": [
+  {
+   "event": "legislative_approval",
+   "date": null,
+   "date_type": "not_stated",
+   "date_text": "o Congresso Nacional decreta",
+   "applies_to": "Passage by the Congresso Nacional (date not given in the text)",
+   "evidence": {
+    "provision": "Enacting clause",
+    "quote": "Faço saber que o Congresso Nacional decreta e eu sanciono a seguinte Lei"
+   }
+  },
+  {
+   "event": "signed",
+   "date": "2026-09-15",
+   "date_type": "absolute",
+   "date_text": "Brasília, 15 de setembro de 2026",
+   "applies_to": "Presidential sanction of the law",
+   "evidence": {
+    "provision": "Signature block",
+    "quote": "Brasília, 15 de setembro de 2026; 205º da Independência e 138º da República."
+   }
+  },
+  {
+   "event": "published",
+   "date": "2026-09-15",
+   "date_type": "absolute",
+   "date_text": "publicado no DOU de 15.9.2026 - Edição extra",
+   "applies_to": "Publication in the Diário Oficial da União, extra edition (Planalto page note)",
+   "evidence": {
+    "provision": "Planalto note",
+    "quote": "Este texto não substitui o publicado no DOU de 15.9.2026 - Edição extra"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2026-09-15",
+   "date_type": "relative",
+   "date_text": "entra em vigor na data de sua publicação",
+   "anchor": "date of publication (DOU 2026-09-15, edição extra)",
+   "applies_to": "Whole law",
+   "evidence": {
+    "provision": "Art. 5",
+    "quote": "Esta Lei entra em vigor na data de sua publicação"
+   }
+  },
+  {
+   "event": "application",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "nos termos estabelecidos em regulamento; aplica-se exclusivamente aos produtos relacionados em ato do Poder Executivo federal",
+   "depends_on": "Federal executive regulation (regulamento do Poder Executivo federal), not yet issued in this text; Act of the federal Executive listing eligible products (ato do Poder Executivo federal, Art. 11-C §§4-6)",
+   "applies_to": "Operation of Redata: accreditation requests and tax suspension can only be used once the regulation and the product list exist",
+   "evidence": {
+    "provision": "Lei 11.196/2005, Art. 11-B caput and Art. 11-C §4, as inserted by Art. 2",
+    "quote": "deverá solicitar a habilitação ou a coabilitação nos termos estabelecidos em regulamento"
+   }
+  },
+  {
+   "event": "expiry",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "prazo de vigência de 5 (cinco) anos, na forma do disposto no art. 139 da Lei nº 15.080, de 30 de dezembro de 2024",
+   "anchor": "start of the five-year term as governed by Art. 139 of Lei 15.080/2024 (not stated in this text)",
+   "depends_on": "Lei 15.080/2024, Art. 139",
+   "applies_to": "All Art. 11-C benefits (tax suspensions and zero-rating)",
+   "evidence": {
+    "provision": "Lei 11.196/2005, Art. 11-J caput, as inserted by Art. 2",
+    "quote": "Os benefícios e os incentivos previstos no art. 11-C desta Lei terão prazo de vigência de 5 (cinco) anos"
+   }
+  },
+  {
+   "event": "expiry",
+   "date": "2026-12-31",
+   "date_type": "absolute",
+   "date_text": "produzirão efeitos até 31 de dezembro de 2026",
+   "applies_to": "Benefits for PIS/Pasep and Cofins (domestic and import) and IPI (Art. 11-C I-III); import duty (II) not covered by this end date",
+   "evidence": {
+    "provision": "Lei 11.196/2005, Art. 11-J sole paragraph, as inserted by Art. 2",
+    "quote": "Os benefícios fiscais relativos aos tributos previstos nos incisos I, II e III do caput do art. 11-C desta Lei produzirão efeitos até 31 de dezembro de 2026"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "no prazo estabelecido em regulamento",
+   "depends_on": "Federal executive regulation (regulamento do Poder Executivo federal), not yet issued in this text",
+   "applies_to": "Deadline for accredited firms to meet commitments II-V of Art. 11-B §1 before suspended taxes become due",
+   "evidence": {
+    "provision": "Lei 11.196/2005, Art. 11-D, as inserted by Art. 2",
+    "quote": "não cumprir os compromissos de que tratam os incisos II, III, IV e V do § 1º do art. 11-B desta Lei no prazo estabelecido em regulamento"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "no prazo de 180 (cento e oitenta) dias, contado da data da notificação de suspensão",
+   "anchor": "date of notification of suspension of benefits under Art. 11-H",
+   "applies_to": "Cure period for the domestic-capacity commitment; suspension converts automatically into cancellation of accreditation if not cured",
+   "evidence": {
+    "provision": "Lei 11.196/2005, Art. 11-H §1, as inserted by Art. 2",
+    "quote": "no caso de a pessoa jurídica não sanar a infração no prazo de 180 (cento e oitenta) dias, contado da data da notificação de suspensão"
+   }
+  },
+  {
+   "event": "application",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "após o decurso do prazo de 2 (dois) anos, contado da data do cancelamento",
+   "anchor": "date of cancellation of accreditation under Art. 11-H",
+   "applies_to": "Earliest date on which an excluded firm and its economic group may re-join Redata",
+   "evidence": {
+    "provision": "Lei 11.196/2005, Art. 11-H §5, as inserted by Art. 2",
+    "quote": "somente poderão efetuar nova adesão ao Redata após o decurso do prazo de 2 (dois) anos, contado da data do cancelamento"
+   }
+  },
+  {
+   "event": "expiry",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "pelo prazo de 5 (cinco) anos",
+   "anchor": "start of the five-year period is not stated; presumably entry into force of Art. 36-A (2026-09-15)",
+   "applies_to": "Allocation of ECA Digital (Lei 15.211/2025) fines to the Fundo Nacional para a Criança e o Adolescente",
+   "evidence": {
+    "provision": "Lei 15.211/2025, Art. 36-A, as inserted by Art. 3",
+    "quote": "serão destinados, pelo prazo de 5 (cinco) anos, ao Fundo Nacional para a Criança e o Adolescente"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "other",
+   "variable_text": "fornecimento efetivo de processamento, armazenagem e tratamento de dados disponibilizado para o mercado interno",
+   "operator": ">=",
+   "value": 10,
+   "value_text": "no mínimo, 10% (dez por cento)",
+   "unit": "percent of effective supply of installed capacity",
+   "currency": null,
+   "indexed": false,
+   "measurement": "Ratio of annual gross domestic-market revenue to total annual gross revenue from sales of data-center services installed with Redata benefits (§4); capacity ceded free of charge to ICTs or the public sector counts with a multiplier set by regulation (§3)",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Required commitment for accreditation; non-compliance suspends benefits on new acquisitions (Art. 11-H)",
+   "conditions": "Cumulative with commitments II-V; may be replaced by an additional 10% R&D investment (§6); reduced by 20% in the North, Northeast and Center-West (§7); export or own use barred absent domestic demand",
+   "evidence": {
+    "provision": "Lei 11.196/2005, Art. 11-B §1 I, as inserted by Art. 2",
+    "quote": "disponibilizar para o mercado interno, no mínimo, 10% (dez por cento) do fornecimento efetivo de processamento, armazenagem e tratamento de dados a ser instalado com os benefícios do Redata"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "Índice de Eficiência Hídrica (Water Usage Effectiveness – WUE)",
+   "operator": "<=",
+   "value": 0.05,
+   "value_text": "igual ou inferior a 0,05 L/kWh (cinco centésimos de litro por quilowatt-hora)",
+   "unit": "L/kWh",
+   "currency": null,
+   "indexed": false,
+   "measurement": "Measured annually (aferição anual)",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Required commitment for accreditation and for conversion of suspended taxes into zero rate",
+   "conditions": "Cumulative with the other Art. 11-B §1 commitments",
+   "evidence": {
+    "provision": "Lei 11.196/2005, Art. 11-B §1 IV, as inserted by Art. 2",
+    "quote": "apresentar Índice de Eficiência Hídrica (Water Usage Effectiveness – WUE) igual ou inferior a 0,05 L/kWh (cinco centésimos de litro por quilowatt-hora), com aferição anual"
+   }
+  },
+  {
+   "variable": "energy_consumption",
+   "variable_text": "totalidade da sua demanda de energia elétrica [...] proveniente de geração a partir de fontes renováveis ou de baixa emissão",
+   "operator": "=",
+   "value": 100,
+   "value_text": "totalidade da sua demanda de energia elétrica",
+   "unit": "percent of electricity demand",
+   "currency": null,
+   "indexed": false,
+   "measurement": "Through supply contracts or self-production from renewable or low-emission sources, as set by regulation",
+   "level": "entity",
+   "trigger": "eligibility",
+   "consequence": "Required commitment for accreditation and for conversion of suspended taxes into zero rate",
+   "conditions": "Cumulative with the other Art. 11-B §1 commitments; 'totalidade' (entirety) coded as 100%",
+   "evidence": {
+    "provision": "Lei 11.196/2005, Art. 11-B §1 III, as inserted by Art. 2",
+    "quote": "atender à totalidade da sua demanda de energia elétrica por meio de contratos de suprimento ou autoprodução proveniente de geração a partir de fontes renováveis ou de baixa emissão"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "investimentos no País em projetos de pesquisa, desenvolvimento e inovação, em proporção do valor dos produtos adquiridos com benefício do Redata",
+   "operator": "=",
+   "value": 2,
+   "value_text": "correspondentes a 2% (dois por cento) do valor dos produtos adquiridos no mercado interno ou importados com benefício do Redata",
+   "unit": "percent of value of benefited purchases",
+   "currency": null,
+   "indexed": false,
+   "measurement": "Value of products bought domestically or imported with Redata benefits; invested in priority digital-economy R&D programmes with ICTs, recognised education entities, public companies with tech-investment funds, or social organisations; may be pooled in a private fund (§9)",
+   "level": "entity",
+   "trigger": "eligibility",
+   "consequence": "Required commitment for accreditation and for conversion of suspended taxes into zero rate",
+   "conditions": "Reduced by 20% in the North, Northeast and Center-West (§7)",
+   "evidence": {
+    "provision": "Lei 11.196/2005, Art. 11-B §1 V, as inserted by Art. 2",
+    "quote": "realizar investimentos no País correspondentes a 2% (dois por cento) do valor dos produtos adquiridos no mercado interno ou importados com benefício do Redata em projetos de pesquisa, desenvolvimento e inovação"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "investimento adicional em projetos de pesquisa, desenvolvimento e inovação",
+   "operator": "=",
+   "value": 10,
+   "value_text": "investimento adicional de 10% (dez por cento) do valor dos produtos adquiridos no mercado interno ou importados com benefício do Redata",
+   "unit": "percent of value of benefited purchases",
+   "currency": null,
+   "indexed": false,
+   "measurement": "Same base and eligible partners as Art. 11-B §1 V",
+   "level": "entity",
+   "trigger": "exemption",
+   "consequence": "Replaces the 10% domestic-market capacity commitment (Art. 11-B §1 I)",
+   "evidence": {
+    "provision": "Lei 11.196/2005, Art. 11-B §6, as inserted by Art. 2",
+    "quote": "O compromisso de que trata o inciso I do § 1º poderá ser substituído pelo investimento adicional de 10% (dez por cento) do valor dos produtos adquiridos no mercado interno ou importados com benefício do Redata"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "redução dos compromissos dos incisos I e V do § 1º para estabelecimentos nas Regiões Norte, Nordeste e Centro-Oeste",
+   "operator": "=",
+   "value": 20,
+   "value_text": "reduzidos em 20% (vinte por cento)",
+   "unit": "percent reduction of commitments",
+   "currency": null,
+   "indexed": false,
+   "measurement": "Location of the accredited firm's establishment, including the areas covered by the regional development agencies",
+   "level": "facility",
+   "trigger": "benefit",
+   "consequence": "Domestic-capacity commitment (10%) and R&D commitment (2%) are reduced by 20% (i.e. to 8% and 1.6%)",
+   "evidence": {
+    "provision": "Lei 11.196/2005, Art. 11-B §7, as inserted by Art. 2",
+    "quote": "os compromissos de que tratam os incisos I e V do § 1º deste artigo serão reduzidos em 20% (vinte por cento)"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "fator multiplicador do fornecimento efetivo cedido sem ônus",
+   "operator": "=",
+   "value": null,
+   "value_text": "fator multiplicador a ser definido em regulamento",
+   "unit": "multiplier",
+   "currency": null,
+   "indexed": false,
+   "measurement": "Applied to capacity ceded free of charge to ICTs or the public sector",
+   "level": "facility",
+   "trigger": "eligibility",
+   "consequence": "Weights free cession when computing compliance with the 10% domestic-market commitment",
+   "depends_on": "Federal executive regulation (regulamento do Poder Executivo federal), not yet issued in this text (Art. 11-B §8 I)",
+   "evidence": {
+    "provision": "Lei 11.196/2005, Art. 11-B §3, as inserted by Art. 2",
+    "quote": "será computado com fator multiplicador a ser definido em regulamento"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "parcela dos recursos aplicada em programas e projetos destinados às Regiões Norte, Nordeste e Centro-Oeste",
+   "operator": ">=",
+   "value": 40,
+   "value_text": "no mínimo, 40% (quarenta por cento)",
+   "unit": "percent of R&D resources",
+   "currency": null,
+   "indexed": false,
+   "measurement": "Share of the total resources from Art. 11-B §1 V and §6 investments",
+   "level": "jurisdiction",
+   "trigger": "obligation",
+   "consequence": "At least 40% of the R&D resources must go to programmes in the North, Northeast and Center-West",
+   "evidence": {
+    "provision": "Lei 11.196/2005, Art. 11-I sole paragraph, as inserted by Art. 2",
+    "quote": "serão aplicados, no mínimo, 40% (quarenta por cento) em programas e projetos destinados às Regiões Norte, Nordeste e Centro-Oeste"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "compromisso de exportação em proporção da receita bruta anual (Repes)",
+   "operator": ">=",
+   "value": 50,
+   "value_text": "igual ou superior a 50% (cinquenta por cento) de sua receita bruta anual",
+   "unit": "percent of annual gross revenue",
+   "currency": null,
+   "indexed": false,
+   "measurement": "Annual gross revenue from sales of the software and IT services covered, committed on opting into Repes",
+   "level": "entity",
+   "trigger": "eligibility",
+   "consequence": "Eligibility for the Repes export regime (restated caput); data-center services are now excluded from Repes",
+   "evidence": {
+    "provision": "Lei 11.196/2005, Art. 2 caput, as amended by Art. 2",
+    "quote": "assuma compromisso de exportação igual ou superior a 50% (cinquenta por cento) de sua receita bruta anual"
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "licensing_certification",
+   "addressee": "data_center_operator",
+   "summary": "To use Redata benefits, a firm must request accreditation (habilitação) or co-accreditation under terms set by regulation; the Federal Revenue Service grants it.",
+   "applies_from": null,
+   "conditional_on": "Issue of the implementing regulation",
+   "evidence": {
+    "provision": "Lei 11.196/2005, Art. 11-B caput, as inserted by Art. 2",
+    "quote": "Para fruição dos benefícios do Redata, a pessoa jurídica interessada deverá solicitar a habilitação ou a coabilitação nos termos estabelecidos em regulamento"
+   }
+  },
+  {
+   "type": "eligibility_condition",
+   "addressee": "data_center_operator",
+   "summary": "Accreditation requires a data-center installation, modernisation or expansion project in Brazil, federal tax regularity and no Cadin record; Simples firms are barred.",
+   "applies_from": "2026-09-15",
+   "evidence": {
+    "provision": "Lei 11.196/2005, Art. 11-A §§4-5, as inserted by Art. 2",
+    "quote": "A adesão ao Redata fica condicionada à regularidade fiscal da pessoa jurídica em relação aos tributos federais e à inexistência de registro no Cadastro Informativo de Créditos Não Quitados do Setor Público Federal (Cadin)"
+   }
+  },
+  {
+   "type": "eligibility_condition",
+   "addressee": "chip_designer_manufacturer",
+   "summary": "Co-accreditation is open to firms contractually supplying ICT products they manufacture for an accredited firm's fixed assets; it ends when the contract ends.",
+   "applies_from": "2026-09-15",
+   "evidence": {
+    "provision": "Lei 11.196/2005, Art. 11-A §§2-3, as inserted by Art. 2",
+    "quote": "Poderá ser coabilitada ao Redata a pessoa jurídica que possua vínculo contratual para fornecimento de produtos de tecnologias da informação e comunicação industrializados por ela"
+   }
+  },
+  {
+   "type": "eligibility_condition",
+   "addressee": "data_center_operator",
+   "summary": "Commit to offer at least 10% of the capacity installed with Redata benefits to the domestic market (by sale or free cession to ICTs or the public sector), or invest an additional 10% of benefited purchases in R&D.",
+   "applies_from": null,
+   "conditional_on": "Accreditation; compliance terms and deadlines set by regulation (Art. 11-B §8 II)",
+   "evidence": {
+    "provision": "Lei 11.196/2005, Art. 11-B §1 I and §2, as inserted by Art. 2",
+    "quote": "vedada sua destinação para exportação ou uso próprio na ausência de demanda doméstica"
+   }
+  },
+  {
+   "type": "eligibility_condition",
+   "addressee": "data_center_operator",
+   "summary": "Commit to meet sustainability criteria and indicators defined by regulation.",
+   "applies_from": null,
+   "conditional_on": "Accreditation; criteria set by regulation",
+   "evidence": {
+    "provision": "Lei 11.196/2005, Art. 11-B §1 II, as inserted by Art. 2",
+    "quote": "atender aos critérios e aos indicadores de sustentabilidade definidos em regulamento"
+   }
+  },
+  {
+   "type": "eligibility_condition",
+   "addressee": "data_center_operator",
+   "summary": "Commit to meet all electricity demand through contracts or self-production from renewable or low-emission sources.",
+   "applies_from": null,
+   "conditional_on": "Accreditation; form set by regulation",
+   "evidence": {
+    "provision": "Lei 11.196/2005, Art. 11-B §1 III, as inserted by Art. 2",
+    "quote": "atender à totalidade da sua demanda de energia elétrica por meio de contratos de suprimento ou autoprodução"
+   }
+  },
+  {
+   "type": "eligibility_condition",
+   "addressee": "data_center_operator",
+   "summary": "Commit to a water usage effectiveness (WUE) of at most 0.05 L/kWh, measured annually.",
+   "applies_from": null,
+   "conditional_on": "Accreditation",
+   "evidence": {
+    "provision": "Lei 11.196/2005, Art. 11-B §1 IV, as inserted by Art. 2",
+    "quote": "igual ou inferior a 0,05 L/kWh (cinco centésimos de litro por quilowatt-hora), com aferição anual"
+   }
+  },
+  {
+   "type": "eligibility_condition",
+   "addressee": "data_center_operator",
+   "summary": "Commit to invest 2% of benefited purchases in priority digital-economy R&D programmes in Brazil with listed partner institutions, possibly pooled in a private fund.",
+   "applies_from": null,
+   "conditional_on": "Accreditation; programmes set by regulation",
+   "evidence": {
+    "provision": "Lei 11.196/2005, Art. 11-B §1 V and §9, as inserted by Art. 2",
+    "quote": "poderá ser cumprido por meio da centralização dos aportes em fundo privado, conforme disposto em regulamento do Poder Executivo federal"
+   }
+  },
+  {
+   "type": "audit",
+   "addressee": "data_center_operator",
+   "summary": "Capacity ceded free of charge must be proven annually by a consolidated report and opinion from an independent auditor accredited by the federal Executive.",
+   "applies_from": null,
+   "conditional_on": "Accreditation and use of free cession to meet the domestic-market commitment",
+   "evidence": {
+    "provision": "Lei 11.196/2005, Art. 11-B §5, as inserted by Art. 2",
+    "quote": "deverá ser comprovada anualmente por relatório consolidado e parecer conclusivo elaborados por auditoria independente, credenciada pelo Poder Executivo federal"
+   }
+  },
+  {
+   "type": "disclosure_transparency",
+   "addressee": "data_center_operator",
+   "summary": "Publish on an easily accessible website a sustainability report for accredited data-center units, including at least WUE, electricity sources and other sustainability indicators.",
+   "applies_from": null,
+   "conditional_on": "Accreditation; terms set by regulation",
+   "evidence": {
+    "provision": "Lei 11.196/2005, Art. 11-B §10, as inserted by Art. 2",
+    "quote": "A pessoa jurídica habilitada ao Redata deverá publicar, em sítio eletrônico de fácil acesso, relatório de sustentabilidade"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_center_operator",
+   "summary": "Products acquired with suspended taxes may be resold domestically to non-accredited firms before zero-rating only if the suspended taxes, interest, late fines and all normal taxes on the sale are paid.",
+   "applies_from": null,
+   "conditional_on": "Resale before conversion to zero rate",
+   "evidence": {
+    "provision": "Lei 11.196/2005, Art. 11-F, as inserted by Art. 2",
+    "quote": "poderão ser vendidos para o mercado interno para pessoa jurídica não habilitada, desde que a pessoa jurídica habilitada ou coabilitada ao Redata efetue o pagamento dos referidos tributos suspensos"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "summary": "The federal Executive must set by regulation the conditions for Repes accreditation and for Redata accreditation and co-accreditation.",
+   "applies_from": "2026-09-15",
+   "evidence": {
+    "provision": "Lei 11.196/2005, Art. 1 sole paragraph, as amended by Art. 2",
+    "quote": "O Poder Executivo federal disciplinará em regulamento as condições necessárias para a habilitação ao Repes e a habilitação e a coabilitação ao Redata"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "summary": "The Federal Revenue Service (Secretaria Especial da Receita Federal do Brasil) grants Redata accreditation and co-accreditation.",
+   "applies_from": "2026-09-15",
+   "evidence": {
+    "provision": "Lei 11.196/2005, Art. 11-A §6, as inserted by Art. 2",
+    "quote": "A habilitação e a coabilitação ao Redata deverão ser concedidas pela Secretaria Especial da Receita Federal do Brasil do Ministério da Fazenda"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "summary": "The regulation must govern the commitments and set the free-cession multiplier, the terms and deadlines for proving compliance, and the procedure for exclusion from Redata.",
+   "applies_from": "2026-09-15",
+   "evidence": {
+    "provision": "Lei 11.196/2005, Art. 11-B §8, as inserted by Art. 2",
+    "quote": "Caberá ao regulamento disciplinar os compromissos previstos no § 1º deste artigo e estabelecer"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "summary": "The federal Executive lists by act the data-center services (by NBS code) and the products eligible for suspension (import duty only for products without equivalent national production); once issued, the lists may only be extended.",
+   "applies_from": "2026-09-15",
+   "evidence": {
+    "provision": "Lei 11.196/2005, Art. 11-C §§4, 6 and 7, as inserted by Art. 2",
+    "quote": "Após a edição pelo Poder Executivo federal, os atos de que tratam os §§ 4º e 6º deste artigo somente poderão ser alterados para a inclusão de novos bens"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "summary": "R&D resources must finance programmes for the digital-economy production chain, with at least 40% for the North, Northeast and Center-West (the responsible body is not named).",
+   "applies_from": "2026-09-15",
+   "evidence": {
+    "provision": "Lei 11.196/2005, Art. 11-I, as inserted by Art. 2",
+    "quote": "serão aplicados no financiamento de programas e projetos de fomento à cadeia produtiva da economia digital"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "summary": "The Ministry of Development, Industry, Trade and Services and the Ministry of Finance must monitor and evaluate the Art. 11-C tax benefits against their objectives.",
+   "applies_from": "2026-09-15",
+   "evidence": {
+    "provision": "Art. 4",
+    "quote": "serão objeto de acompanhamento e de avaliação pelo Ministério do Desenvolvimento, Indústria, Comércio e Serviços e pelo Ministério da Fazenda"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "summary": "Fines imposed under the ECA Digital (Lei 15.211/2025) go for five years to the Fundo Nacional para a Criança e o Adolescente, to be used for child-protection policies and projects.",
+   "applies_from": "2026-09-15",
+   "evidence": {
+    "provision": "Lei 15.211/2025, Art. 36-A, as inserted by Art. 3",
+    "quote": "serão utilizados necessariamente em políticas e projetos que tenham por objetivo a proteção de crianças e de adolescentes"
+   }
+  }
+ ],
+ "enforcement": [
+  {
+   "sanction_type": "benefit_revocation_clawback",
+   "authority": "Not named in Art. 11-D (accreditation is granted by the Secretaria Especial da Receita Federal do Brasil, Art. 11-A §6)",
+   "triggered_by": "Accredited firm fails commitments II-V of Art. 11-B §1 (sustainability, renewable electricity, WUE, R&D investment) within the regulatory deadline",
+   "max_penalty_text": "recolher os tributos suspensos, acrescidos de juros e multa de mora",
+   "max_penalty_amount": null,
+   "currency": null,
+   "penalty_formula": "Suspended taxes plus interest and late-payment fine, computed from the dates of the taxable events; as taxpayer for imports and as responsible party for domestic purchases",
+   "penalty_reference": null,
+   "private_right_of_action": false,
+   "cure_period": null,
+   "evidence": {
+    "provision": "Lei 11.196/2005, Art. 11-D, as inserted by Art. 2",
+    "quote": "fica obrigada a recolher os tributos suspensos, acrescidos de juros e multa de mora, calculados a partir da data de ocorrência dos respectivos fatos geradores"
+   }
+  },
+  {
+   "sanction_type": "benefit_revocation_clawback",
+   "authority": "Not named in Art. 11-E",
+   "triggered_by": "Co-accredited supplier does not complete the sale and delivery of the ICT product to an accredited firm (Art. 11-C §9)",
+   "max_penalty_text": "recolher os tributos suspensos, acrescidos de juros e multa de mora",
+   "max_penalty_amount": null,
+   "currency": null,
+   "penalty_formula": "Suspended taxes plus interest and late-payment fine from the dates of the taxable events",
+   "penalty_reference": null,
+   "private_right_of_action": false,
+   "cure_period": null,
+   "evidence": {
+    "provision": "Lei 11.196/2005, Art. 11-E, as inserted by Art. 2",
+    "quote": "A pessoa jurídica coabilitada ao Redata que não cumprir as condições de que trata o § 9º do art. 11-C desta Lei fica obrigada a recolher os tributos suspensos"
+   }
+  },
+  {
+   "sanction_type": "administrative_fine",
+   "authority": "Tax authority (lançamento de ofício; body not named)",
+   "triggered_by": "Suspended taxes due under Arts. 11-D, 11-E or 11-F are not paid",
+   "max_penalty_text": null,
+   "max_penalty_amount": null,
+   "currency": null,
+   "penalty_formula": "Ex officio tax assessment with interest and the fine of Art. 44 of Lei 9.430/1996",
+   "penalty_reference": "Lei nº 9.430/1996, Art. 44",
+   "private_right_of_action": false,
+   "cure_period": null,
+   "evidence": {
+    "provision": "Lei 11.196/2005, Art. 11-G, as inserted by Art. 2",
+    "quote": "caberá lançamento de ofício, com aplicação de juros e da multa de que trata o art. 44 da Lei nº 9.430, de 27 de dezembro de 1996"
+   }
+  },
+  {
+   "sanction_type": "benefit_revocation_clawback",
+   "authority": "Administrative decision (body not named), under Lei 9.784/1999",
+   "triggered_by": "Failure to make the domestic-market capacity available (Art. 11-B §1 I)",
+   "max_penalty_text": "suspensão dos benefícios em novas aquisições; cancelamento da habilitação ao Redata",
+   "max_penalty_amount": null,
+   "currency": null,
+   "penalty_formula": "Benefits suspended on new acquisitions for the firm and its economic group; converted automatically to cancellation if not cured within 180 days; after cancellation the firm and its group may re-join only after 2 years; appeal has no suspensive effect",
+   "penalty_reference": null,
+   "private_right_of_action": false,
+   "cure_period": "180 days from notification of suspension",
+   "evidence": {
+    "provision": "Lei 11.196/2005, Art. 11-H caput and §1, as inserted by Art. 2",
+    "quote": "implicará suspensão dos benefícios em novas aquisições, na forma estabelecida em regulamento"
+   }
+  },
+  {
+   "sanction_type": "benefit_revocation_clawback",
+   "authority": "Set by regulation",
+   "triggered_by": "Breach of the conditions of the law or of the commitments assumed",
+   "max_penalty_text": "exclusão do Redata",
+   "max_penalty_amount": null,
+   "currency": null,
+   "penalty_formula": null,
+   "penalty_reference": "Procedure to be set by regulation (Art. 11-B §8 III)",
+   "private_right_of_action": false,
+   "cure_period": null,
+   "evidence": {
+    "provision": "Lei 11.196/2005, Art. 11-B §8 III, as inserted by Art. 2",
+    "quote": "o procedimento de exclusão do Redata, em caso de descumprimento das condições previstas nesta Lei ou nos compromissos assumidos"
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "Serviços de datacenter [data-center services]",
+   "evidence": {
+    "provision": "Lei 11.196/2005, Art. 11-A §1, as inserted by Art. 2",
+    "quote": "consideram-se serviços de datacenter aqueles providos por infraestrutura e recursos computacionais dedicados à armazenagem, ao processamento e à gestão de dados e aplicações digitais, incluídos computação em nuvem, processamento de alto desempenho, treinamento e inferência de modelos de inteligência artificial e serviços correlatos"
+   }
+  },
+  {
+   "term": "Coabilitação ao Redata [co-accreditation]",
+   "evidence": {
+    "provision": "Lei 11.196/2005, Art. 11-A §2, as inserted by Art. 2",
+    "quote": "Poderá ser coabilitada ao Redata a pessoa jurídica que possua vínculo contratual para fornecimento de produtos de tecnologias da informação e comunicação industrializados por ela, por iniciativa própria ou por encomenda, para incorporação ao ativo imobilizado de beneficiário habilitado ao Redata"
+   }
+  },
+  {
+   "term": "Destinação do fornecimento efetivo ao mercado interno [measurement of domestic-market supply]",
+   "evidence": {
+    "provision": "Lei 11.196/2005, Art. 11-B §4, as inserted by Art. 2",
+    "quote": "considerando-se a razão entre o faturamento anual bruto originado no mercado doméstico e o faturamento anual bruto total, ambos decorrentes da venda dos serviços de datacenter instalados com benefícios do regime"
+   }
+  },
+  {
+   "term": "Beneficiária do Repes [Repes beneficiary, excluding data-center services]",
+   "evidence": {
+    "provision": "Lei 11.196/2005, Art. 2 caput, as amended by Art. 2",
+    "quote": "É beneficiária do Repes a pessoa jurídica que exerça preponderantemente as atividades de desenvolvimento de software ou de prestação de serviços de tecnologia da informação, exceto serviços de datacenter"
+   }
+  }
+ ],
+ "relations": [
+  {
+   "relation": "amends",
+   "target_instrument_id": null,
+   "target_text": "Lei nº 11.196, de 21 de novembro de 2005 (ementa, Arts. 1 and 2; inserts Arts. 11-A to 11-J)",
+   "note": "Creates Redata within the Repes chapter of Lei 11.196/2005",
+   "evidence": {
+    "provision": "Art. 2",
+    "quote": "A Lei nº 11.196, de 21 de novembro de 2005, passa a vigorar com as seguintes alterações"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_instrument_id": "br-eca-digital-lei15211-2025",
+   "target_text": "Lei nº 15.211, de 17 de setembro de 2025 (Estatuto Digital da Criança e do Adolescente), new Art. 36-A",
+   "note": "Allocates ECA Digital fines to the Fundo Nacional para a Criança e o Adolescente for five years",
+   "evidence": {
+    "provision": "Art. 3",
+    "quote": "passa a vigorar acrescida do seguinte art. 36-A"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": null,
+   "target_text": "Lei nº 15.080, de 30 de dezembro de 2024, Art. 139",
+   "note": "Governs the five-year term of the Art. 11-C benefits",
+   "evidence": {
+    "provision": "Lei 11.196/2005, Art. 11-J caput, as inserted by Art. 2",
+    "quote": "na forma do disposto no art. 139 da Lei nº 15.080, de 30 de dezembro de 2024"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": null,
+   "target_text": "Emenda Constitucional nº 132/2023 and Lei Complementar nº 214/2025 (consumption-tax reform)",
+   "note": "PIS/Cofins/IPI benefits end on 31 December 2026, subject to these instruments",
+   "evidence": {
+    "provision": "Lei 11.196/2005, Art. 11-J sole paragraph, as inserted by Art. 2",
+    "quote": "observado o disposto na Emenda Constitucional nº 132, de 20 de dezembro de 2023, e na Lei Complementar nº 214, de 16 de janeiro de 2025"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": null,
+   "target_text": "Lei nº 9.430, de 27 de dezembro de 1996, Art. 44",
+   "note": "Fine applied in ex officio assessment of unpaid suspended taxes",
+   "evidence": {
+    "provision": "Lei 11.196/2005, Art. 11-G, as inserted by Art. 2",
+    "quote": "multa de que trata o art. 44 da Lei nº 9.430, de 27 de dezembro de 1996"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": null,
+   "target_text": "Lei nº 9.784, de 29 de janeiro de 1999 (Lei do Processo Administrativo Federal)",
+   "note": "Governs the administrative process for suspension and cancellation under Art. 11-H",
+   "evidence": {
+    "provision": "Lei 11.196/2005, Art. 11-H §3, as inserted by Art. 2",
+    "quote": "O processo administrativo de que trata este artigo será regido pela Lei nº 9.784, de 29 de janeiro de 1999"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": null,
+   "target_text": "Lei nº 9.637, de 15 de maio de 1998 (organizações sociais)",
+   "note": "Social organisations qualified under this law are eligible R&D partners",
+   "evidence": {
+    "provision": "Lei 11.196/2005, Art. 11-B §1 V d, as inserted by Art. 2",
+    "quote": "organizações sociais qualificadas conforme o disposto na Lei nº 9.637, de 15 de maio de 1998"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_instrument_id": null,
+   "target_text": "Lei nº 8.242, de 12 de outubro de 1991 (Fundo Nacional para a Criança e o Adolescente)",
+   "note": "Fund receiving ECA Digital fines under new Art. 36-A",
+   "evidence": {
+    "provision": "Lei 15.211/2025, Art. 36-A, as inserted by Art. 3",
+    "quote": "Fundo Nacional para a Criança e o Adolescente, instituído pela Lei nº 8.242, de 12 de outubro de 1991"
+   }
+  }
+ ],
+ "entities": [],
+ "section_status": {
+  "entities": {
+   "status": "not_applicable",
+   "note": "General regime; accredited firms are not named in the law (accreditation is granted case by case by the Receita Federal)."
+  }
+ },
+ "notes": "Delegated to regulation or executive acts and not in this text: accreditation conditions and procedure (Art. 1 sole para., Art. 11-B caput); list of data-center services by NBS code (Art. 11-A §1); list of eligible products, Zona Franca de Manaus IPI exclusions and products without national equivalent (Art. 11-C §§4-6); sustainability criteria (Art. 11-B §1 II); free-cession multiplier, compliance terms and deadlines, exclusion procedure (§8); accreditation of independent auditors (§5); R&D programmes and private fund (§§1 V, 9). Conversion of suspended taxes into zero rate for accredited firms requires commitments II-V and incorporation into fixed assets (Art. 11-C §8); commitment I is enforced separately by suspension/cancellation (Art. 11-H). A pending Redata application does not block use of Repes (Art. 2 §4 of Lei 11.196/2005). The text does not mention Medida Provisória 1.318/2025 (br-mp1318-2025); any succession relation is not stated here. 'minors_child_safety' is coded as a domain only because Art. 3 (ECA Digital fines allocation) is an operative provision."
+}

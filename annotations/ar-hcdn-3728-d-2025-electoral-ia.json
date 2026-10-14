@@ -1,0 +1,110 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "ar-hcdn-3728-d-2025-electoral-ia",
+ "tier": "B",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "light, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-interim-20261014"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (connectors/fetch_texts.py)",
+  "url": "https://www4.hcdn.gob.ar/dependencias/dsecretaria/Periodo2025/PDF2025/TP2025/3728-D-2025.pdf",
+  "retrieved": "2026-10-13",
+  "version": "as fetched",
+  "language": "es",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "elections_political_ads",
+   "synthetic_media_deepfakes",
+   "online_safety_content"
+  ],
+  "primary_domain": "elections_political_ads",
+  "mechanisms": [
+   "prohibition_ban",
+   "mandate_obligation"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "advertiser_campaign",
+   "general_public",
+   "platform_operator",
+   "government_agency"
+  ],
+  "affected_roles": [
+   "general_public"
+  ],
+  "decision_margins": [
+   "household:information"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national"
+   ],
+   "description": "Amends the national Código Nacional Electoral, so the rules apply under national electoral law.",
+   "evidence": {
+    "provision": "Art. 1",
+    "quote": "Modifícase el artículo Artículo 64 ter. Del Código Nacional Electoral"
+   }
+  },
+  "agora_applications": [
+   "Broadcasting and media production"
+  ],
+  "agora_harms": [
+   "Detrimental content"
+  ],
+  "agora_incentives": [
+   "Criminal liability",
+   "Imprisonment"
+  ],
+  "agora_risk_factors": [
+   "Security: Dissemination"
+  ]
+ },
+ "summary": {
+  "short": "Bill amending the Código Nacional Electoral to bar AI-generated or manipulated content used to influence elections, including impersonation of candidates and false attributions, and to allow judicially ordered removal of such content. Adds prison penalties for AI-enabled electoral deception. No entry-into-force date is stated.",
+  "long": "The bill amends Art. 64 ter of the Código Nacional Electoral. It keeps a ban on TV and radio electoral advertising promoting candidates or parties before 35 days before the election, and limits other electoral advertising (print, public roads, internet, mobile and fixed telephony, static displays at public events) to the campaign period. The federal electoral court must order the immediate cessation of advertising that falls outside these rules. The bill prohibits using AI to generate, alter, manipulate or synthesise digital content with the deliberate aim of influencing the electoral process through five conducts: credible impersonation of real candidates and electoral figures; false attribution of statements or acts (with an exclusion for clearly artistic, fictional, satirical or hypothetical works); fake events tied to electoral figures; dissemination of AI-generated false claims about the electoral process with actual knowledge or gross negligence; and content inciting institutional violence or simulating unauthorised public functions. A saving clause protects legitimate expression and bars prior removal or censorship. The electoral enforcement authority may, by judicial order, stop the spread of altered content. With judicial authorisation, internet intermediaries may be required to suspend, delist, block or remove identified content. Art. 2 creates Art. 128 quinquies: prison from two months to two years for AI-enabled deception that induces voting in a given way or abstention, rising to two months to three years where the disseminator is a candidate or part of a deliberately planned disinformation campaign. The text states no date from which these rules apply.</parameter>"
+ },
+ "relations": [
+  {
+   "relation": "amends",
+   "target_text": "Código Nacional Electoral (Art. 64 ter modified; new Art. 128 quinquies inserted in Título VI, Capítulo I)",
+   "note": "Art. 1 modifies Art. 64 ter and Art. 2 creates Art. 128 quinquies in Título VI, Capítulo I. The target is not in the registry, so target_instrument_id is left empty.",
+   "evidence": {
+    "provision": "Art. 1; Art. 2",
+    "quote": "Modifícase el artículo Artículo 64 ter. Del Código Nacional Electoral"
+   }
+  }
+ ],
+ "notes": "Bill text as introduced (Expte. 3728-D-2025); only operative Arts. 1-2 are coded. The fundamentos (rationale) are not coded as obligations. Art. 1 does not reproduce the original Art. 64 ter or mark changes, so the whole new wording is coded and unchanged parts cannot be separated. Drafting points: Art. 1 repeats the label ('el artículo Artículo 64 ter'); it refers to an undefined 'autoridad de aplicación electoral' alongside a 'juzgado federal con competencia electoral' (cese automático); content removal by intermediaries requires judicial authorisation; the 'período de campaña establecido en esta ley' is defined in the Código, not in this text. Art. 2 penalty tiers: prisión de dos meses a dos años, and dos meses a tres años where the sharer is a candidate or part of a planned campaign. Art. 2 refers back to conduct described in Art. 64 ter. The fundamentos cite foreign instruments (California AB 2655, AB 2839, AB 2355; Michigan; Kentucky) and international texts for context only; they are not recorded as relations. The section_status entry below is formal only, because the schema requires it; relations are populated above.",
+ "events": [],
+ "thresholds": [
+  {
+   "variable": "other",
+   "variable_text": "días previos a la fecha fijada para el comicio",
+   "operator": ">",
+   "value": 35,
+   "value_text": "antes de los treinta y cinco (35) días previos a la fecha fijada para el comicio",
+   "unit": "days",
+   "measurement": "Days counted back from the date set for the election; window within which TV and radio advertising is prohibited",
+   "level": "other",
+   "trigger": "prohibition",
+   "consequence": "Vote-seeking advertising for candidates and party-related advertising on television and radio is prohibited before this window.",
+   "conditions": "Applies to TV and radio advertising; other media (print, public roads, internet, mobile and fixed telephony, static advertising at public events) may carry electoral advertising only during the campaign period set by this law.",
+   "evidence": {
+    "provision": "Art. 1 (modifying Código Nacional Electoral, Art. 64 ter, first paragraph)",
+    "quote": "antes de los treinta y cinco (35) días previos a la fecha fijada para el comicio"
+   }
+  }
+ ],
+ "section_status": {
+  "events": {
+   "status": "not_found",
+   "note": "The bill text states no dated events for this instrument: no introduction date, no entry-into-force clause, and no application, phase-in or deadline provisions in Art. 1 or Art. 2. The dates in the Fundamentos (18 May 2025 Tribunal Electoral resolution, 20/5/2025 access date of a UNESCO source) concern other matters and are not events of this bill. The introduction is not dated in the fetched text, and no official legislature URL was supplied for an external event."
+  }
+ }
+}

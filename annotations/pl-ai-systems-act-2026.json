@@ -1,0 +1,684 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "pl-ai-systems-act-2026",
+ "tier": "B",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "light, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-interim-20261014"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (connectors/fetch_texts.py)",
+  "url": "https://api.sejm.gov.pl/eli/acts/DU/2026/1003/text.pdf",
+  "retrieved": "2026-10-13",
+  "version": "as fetched",
+  "language": "pl",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "ai_general",
+   "ai_sectoral",
+   "public_sector_ai",
+   "data_protection"
+  ],
+  "primary_domain": "ai_general",
+  "mechanisms": [
+   "mandate_obligation",
+   "enforcement_order",
+   "institution_setup",
+   "sandbox_pilot",
+   "standard_setting",
+   "licensing_permit_certification",
+   "disclosure_transparency"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "ai_provider",
+   "ai_deployer",
+   "gpai_model_provider",
+   "ai_developer",
+   "auditor_assessor",
+   "government_agency",
+   "regulator",
+   "research_institution"
+  ],
+  "affected_roles": [
+   "consumers_users",
+   "workers",
+   "general_public"
+  ],
+  "decision_margins": [
+   "firm:product_design_release",
+   "firm:entry_market_access",
+   "firm:compliance_process",
+   "household:access"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national",
+    "targeted",
+    "extraterritorial"
+   ],
+   "description": "Applies to entities within the scope of Art. 2(1) of Regulation (EU) 2024/1689 in Poland; individual Commission decisions target named operators; sandbox admission extends to entities without a seat or branch in the EU after EU entities are listed (Art. 95(5)).",
+   "evidence": {
+    "provision": "Art. 3(1)",
+    "quote": "Ustawę stosuje się do podmiotów, o których mowa w art. 2 ust. 1 rozporządzenia 2024/1689"
+   }
+  },
+  "agora_harms": [
+   "Harm to health/safety",
+   "Violation of civil or human rights, including privacy"
+  ],
+  "agora_incentives": [
+   "Fines",
+   "Criminal liability"
+  ],
+  "agora_risk_factors": [
+   "Privacy",
+   "Safety",
+   "Security: Cybersecurity"
+  ],
+  "agora_strategies": [
+   "Licensing, registration, and certification",
+   "Evaluation: Conformity assessment",
+   "Pilots and testbeds",
+   "New institution",
+   "Government support: For R&D",
+   "Government study or report"
+  ]
+ },
+ "summary": {
+  "short": "Polish statute on AI systems that sets up national supervision of Regulation (EU) 2024/1689. It creates the Commission for the Development and Security of Artificial Intelligence as market surveillance authority, with inspections, enforcement decisions, notified-body rules, regulatory sandboxes and administrative fines. General entry into force is 14 days after publication.",
+  "long": "Polish Act of 3 July 2026 on AI systems (Dz.U. 2026 poz. 1003). It applies to the entities in Art. 2(1) of Regulation (EU) 2024/1689 and excludes defence, national security and certain research activities (Art. 2(1), Art. 3). It creates the Commission for the Development and Security of Artificial Intelligence as market surveillance authority and single point of contact, and sets its composition, appointment, independence and procedure (Art. 5, Art. 19-47). The Commission may run inspections, issue warnings, and order an operator to cease use or withdraw a system where there is a direct risk to life, health, safety or fundamental rights, and it may impose administrative fines (Art. 48-66, Art. 104). Individual opinions and clarifications are available (Art. 8-17). The minister for informatisation accredits and notifies conformity assessment bodies (Art. 86-90). Regulatory sandboxes last 6 to 12 months and carry participation fees (Art. 91-101). Obstructing inspections or not complying with a Commission decision is a criminal offence (Art. 112-113). Other Acts are amended (Art. 115-124), and a state budget spending ceiling for 2026-2035 is set (Art. 126). General entry into force is 14 days after publication, with listed provisions 3 months after (Art. 127)."
+ },
+ "relations": [
+  {
+   "relation": "implements",
+   "target_text": "rozporządzenie Parlamentu Europejskiego i Rady (UE) 2024/1689 (akt w sprawie sztucznej inteligencji)",
+   "note": "The Act sets national organisation and supervision for matters within the scope of Regulation 2024/1689; the text does not use the word implements.",
+   "evidence": {
+    "provision": "Art. 1 pkt 1",
+    "quote": "organizację i sposób sprawowania nadzoru nad rynkiem systemów sztucznej inteligencji oraz modelami sztucznej inteligencji ogólnego przeznaczenia w zakresie objętym rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2024/1689"
+   }
+  },
+  {
+   "relation": "designates_under",
+   "target_text": "rozporządzenie Parlamentu Europejskiego i Rady (UE) 2024/1689 (art. 70 ust. 1)",
+   "note": "Designates the Commission as market surveillance authority for AI systems within the meaning of Art. 70(1) of Regulation 2024/1689.",
+   "evidence": {
+    "provision": "Art. 5 ust. 1",
+    "quote": "jest organem nadzoru rynku w zakresie systemów sztucznej inteligencji w rozumieniu art. 70 ust. 1 rozporządzenia 2024/1689"
+   }
+  },
+  {
+   "relation": "designates_under",
+   "target_text": "rozporządzenie Parlamentu Europejskiego i Rady (UE) 2024/1689 (rozdział III sekcja 4)",
+   "note": "Designates the Minister for computerisation as notifying authority under Chapter III Section 4 of Regulation 2024/1689.",
+   "evidence": {
+    "provision": "Art. 86 ust. 1",
+    "quote": "jest organem notyfikującym, o którym mowa w rozdziale III sekcja 4 rozporządzenia 2024/1689"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "rozporządzenie Parlamentu Europejskiego i Rady (UE) 2016/679 (RODO)",
+   "note": "The Personal Data Protection Office's supervisory powers under Regulation 2016/679 are left unaffected when giving opinions on personal data in sandboxes.",
+   "evidence": {
+    "provision": "Art. 92",
+    "quote": "bez uszczerbku dla swoich uprawnień nadzorczych określonych w rozporządzeniu 2016/679"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "rozporządzenie Parlamentu Europejskiego i Rady (UE) 2022/2065 (akt o usługach cyfrowych)",
+   "note": "The digital services coordinator under Regulation 2022/2065 is one of the bodies the Commission cooperates with, for its tasks under the Act.",
+   "evidence": {
+    "provision": "Art. 20 ust. 1 pkt 9",
+    "quote": "koordynatorem do spraw usług cyfrowych w rozumieniu rozporządzenia Parlamentu Europejskiego i Rady (UE) 2022/2065"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "ustawa z dnia 13 kwietnia 2016 r. o systemach oceny zgodności i nadzoru rynku",
+   "note": "Applies to notification of conformity assessment bodies and, in matters not regulated otherwise, to the chapter on notification.",
+   "evidence": {
+    "provision": "Art. 86 ust. 2",
+    "quote": "ustawie z dnia 13 kwietnia 2016 r. o systemach oceny zgodności i nadzoru rynku"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "ustawa z dnia 6 marca 2018 r. – Prawo przedsiębiorców",
+   "note": "For inspections of entrepreneurs, chapter 5 of this act applies, except Art. 51 ust. 3a.",
+   "evidence": {
+    "provision": "Art. 48 ust. 3 pkt 1",
+    "quote": "stosuje się przepisy rozdziału 5 ustawy z dnia 6 marca 2018 r. – Prawo przedsiębiorców"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "ustawa z dnia 14 czerwca 1960 r. – Kodeks postępowania administracyjnego",
+   "note": "Applies to proceedings before the Commission in matters not regulated by the Act.",
+   "evidence": {
+    "provision": "Art. 64",
+    "quote": "stosuje się ustawę z dnia 14 czerwca 1960 r. – Kodeks postępowania administracyjnego"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "ustawa z dnia 17 listopada 1964 r. – Kodeks postępowania cywilnego",
+   "note": "Adds a new Dział IVfa on AI-related proceedings.",
+   "evidence": {
+    "provision": "Art. 115",
+    "quote": "W ustawie z dnia 17 listopada 1964 r. – Kodeks postępowania cywilnego"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "ustawa z dnia 17 czerwca 1966 r. o postępowaniu egzekucyjnym w administracji",
+   "note": "Changes the complaint period in Art. 17 § 1a.",
+   "evidence": {
+    "provision": "Art. 116",
+    "quote": "W ustawie z dnia 17 czerwca 1966 r. o postępowaniu egzekucyjnym w administracji"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "ustawa z dnia 29 grudnia 1992 r. o radiofonii i telewizji",
+   "note": "Adds cooperation with the Commission to the list in Art. 6 ust. 2.",
+   "evidence": {
+    "provision": "Art. 117",
+    "quote": "W ustawie z dnia 29 grudnia 1992 r. o radiofonii i telewizji"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "ustawa z dnia 21 sierpnia 1997 r. o ograniczeniu prowadzenia działalności gospodarczej przez osoby pełniące funkcje publiczne",
+   "note": "Adds the Commission chair and deputies to the list of persons covered.",
+   "evidence": {
+    "provision": "Art. 118",
+    "quote": "W ustawie z dnia 21 sierpnia 1997 r. o ograniczeniu prowadzenia działalności gospodarczej przez osoby pełniące funkcje publiczne"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "ustawa z dnia 24 maja 2002 r. o Agencji Bezpieczeństwa Wewnętrznego oraz Agencji Wywiadu",
+   "note": "Adds a reporting requirement on use of AI systems by the agencies.",
+   "evidence": {
+    "provision": "Art. 119",
+    "quote": "W ustawie z dnia 24 maja 2002 r. o Agencji Bezpieczeństwa Wewnętrznego oraz Agencji Wywiadu"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "ustawa z dnia 28 lipca 2005 r. o kosztach sądowych w sprawach cywilnych",
+   "note": "Adds the Commission to the fixed court fee provisions in Arts. 3 and 32.",
+   "evidence": {
+    "provision": "Art. 120",
+    "quote": "W ustawie z dnia 28 lipca 2005 r. o kosztach sądowych w sprawach cywilnych"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "ustawa z dnia 21 lipca 2006 r. o nadzorze nad rynkiem finansowym",
+   "note": "Adds Art. 17h on cooperation and information exchange with the Commission.",
+   "evidence": {
+    "provision": "Art. 121",
+    "quote": "W ustawie z dnia 21 lipca 2006 r. o nadzorze nad rynkiem finansowym"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "ustawa z dnia 18 marca 2011 r. o Urzędzie Rejestracji Produktów Leczniczych, Wyrobów Medycznych i Produktów Biobójczych",
+   "note": "Amends the notification definition in Art. 2 ust. 1 pkt 7 and adds a cooperation duty in Art. 4.",
+   "evidence": {
+    "provision": "Art. 122",
+    "quote": "W ustawie z dnia 18 marca 2011 r. o Urzędzie Rejestracji Produktów Leczniczych, Wyrobów Medycznych i Produktów Biobójczych"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "ustawa z dnia 10 maja 2018 r. o ochronie danych osobowych",
+   "note": "Adds Art. 59a on cooperation with the Commission.",
+   "evidence": {
+    "provision": "Art. 123",
+    "quote": "W ustawie z dnia 10 maja 2018 r. o ochronie danych osobowych"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "ustawa z dnia 5 lipca 2018 r. o krajowym systemie cyberbezpieczeństwa",
+   "note": "Adds a point 24 on cooperation with the Commission to Art. 26 ust. 3.",
+   "evidence": {
+    "provision": "Art. 124",
+    "quote": "W ustawie z dnia 5 lipca 2018 r. o krajowym systemie cyberbezpieczeństwa"
+   }
+  }
+ ],
+ "notes": "Relations are those stated in this text. Targets are not in the registry, so target_instrument_id is empty and target_text identifies them. The footnote to Art. 2 ust. 1 lists the acts amended, matching the amending articles in Ch. 9. Art. 74 ust. 1 contains an undated placeholder (z dnia …). Entry into force is staged (Art. 127): Art. 8–18 and Chs. 3–5, 8 and 9 take effect after 3 months; Art. 125 ust. 4 the day after publication; the rest after 14 days. The text is the original as published (Dz.U. 2026 poz. 1003); no consolidated version is shown.",
+ "events": [
+  {
+   "event": "adopted",
+   "date": "2026-07-03",
+   "date_type": "absolute",
+   "date_text": "z dnia 3 lipca 2026 r.",
+   "applies_to": "Act as a whole (date of the act)",
+   "evidence": {
+    "provision": "Tytuł (title)",
+    "quote": "z dnia 3 lipca 2026 r."
+   }
+  },
+  {
+   "event": "published",
+   "date": "2026-07-27",
+   "date_type": "absolute",
+   "date_text": "Warszawa, dnia 27 lipca 2026 r.",
+   "applies_to": "Act as a whole (Dziennik Ustaw, Poz. 1003)",
+   "evidence": {
+    "provision": "Dziennik Ustaw dateline (header)",
+    "quote": "Warszawa, dnia 27 lipca 2026 r."
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2026-08-10",
+   "date_type": "relative",
+   "date_text": "po upływie 14 dni od dnia ogłoszenia",
+   "anchor": "publication (ogłoszenie)",
+   "applies_to": "Act as a whole, except provisions listed in Art. 127 pkt 1 and 2",
+   "offset_value": 14,
+   "offset_unit": "days",
+   "anchor_event": "published",
+   "evidence": {
+    "provision": "Art. 127",
+    "quote": "wchodzi w życie po upływie 14 dni od dnia ogłoszenia"
+   },
+   "date_computed_from": "published 2026-07-27 (text) + 14 days"
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2026-07-28",
+   "date_type": "relative",
+   "date_text": "z dniem następującym po dniu ogłoszenia",
+   "anchor": "publication (ogłoszenie)",
+   "applies_to": "Art. 125 ust. 4",
+   "offset_value": 1,
+   "offset_unit": "days",
+   "anchor_event": "published",
+   "evidence": {
+    "provision": "Art. 127 pkt 1",
+    "quote": "który wchodzi w życie z dniem następującym po dniu ogłoszenia"
+   },
+   "date_computed_from": "published 2026-07-27 (text) + 1 days"
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2026-10-27",
+   "date_type": "relative",
+   "date_text": "po upływie 3 miesięcy od dnia ogłoszenia",
+   "anchor": "publication (ogłoszenie)",
+   "applies_to": "Art. 8–18 and Chapters 3–5, 8 and 9",
+   "offset_value": 3,
+   "offset_unit": "months",
+   "anchor_event": "published",
+   "evidence": {
+    "provision": "Art. 127 pkt 2",
+    "quote": "które wchodzą w życie po upływie 3 miesięcy od dnia ogłoszenia"
+   },
+   "date_computed_from": "published 2026-07-27 (text) + 3 months"
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "w terminie 2 miesięcy od dnia wejścia w życie ustawy",
+   "anchor": "entry into force of the Act",
+   "applies_to": "Sejm (with Senate consent) appoints the Chairman of the Commission",
+   "offset_value": 2,
+   "offset_unit": "months",
+   "anchor_event": "entry_into_force",
+   "evidence": {
+    "provision": "Art. 125 ust. 2",
+    "quote": "w terminie 2 miesięcy od dnia wejścia w życie ustawy"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "w terminie 3 miesięcy od dnia wejścia w życie ustawy",
+   "anchor": "entry into force of the Act",
+   "applies_to": "Chairman of the Commission convenes the first sitting of the Commission",
+   "offset_value": 3,
+   "offset_unit": "months",
+   "anchor_event": "entry_into_force",
+   "evidence": {
+    "provision": "Art. 125 ust. 3",
+    "quote": "w terminie 3 miesięcy od dnia wejścia w życie ustawy"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "w terminie 2 miesięcy od dnia wejścia w życie ustawy",
+   "anchor": "entry into force of the Act",
+   "applies_to": "Minister responsible for informatisation sets up the organisational unit and starts the Commission's activity",
+   "offset_value": 2,
+   "offset_unit": "months",
+   "anchor_event": "entry_into_force",
+   "evidence": {
+    "provision": "Art. 125 ust. 4",
+    "quote": "i jej Przewodniczącego w terminie 2 miesięcy od dnia wejścia"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "do dnia 31 marca każdego roku (report on the previous year)",
+   "applies_to": "Chairman of the Commission submits the annual activity report to the Sejm",
+   "evidence": {
+    "provision": "Art. 26 ust. 1",
+    "quote": "do dnia 31 marca przedstawia Sejmowi sprawozdanie"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "do dnia 31 marca każdego roku",
+   "applies_to": "Minister responsible for informatisation transmits information on required computing resources to the Council of Ministers and the Commission",
+   "evidence": {
+    "provision": "Art. 102 ust. 3",
+    "quote": "do dnia 31 marca każdego roku przekazuje Radzie Ministrów oraz Komisji"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "w terminie do dnia 31 marca każdego roku",
+   "applies_to": "Commission publishes an annual information on good practices (BIP, Commission's page)",
+   "evidence": {
+    "provision": "Art. 6 pkt 17 lit. b",
+    "quote": "w terminie do dnia 31 marca każdego roku"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "na dzień 28 stycznia każdego roku",
+   "applies_to": "Conversion of euro amounts into złoty at the NBP average rate",
+   "evidence": {
+    "provision": "Art. 104 ust. 4",
+    "quote": "na dzień 28 stycznia każdego roku"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "Postępowanie nie może trwać dłużej niż 6 miesięcy od dnia doręczenia stronie postanowienia",
+   "depends_on": "service on the party of the decision initiating proceedings",
+   "applies_to": "Proceedings before the Commission (maximum duration)",
+   "offset_value": 6,
+   "offset_unit": "months",
+   "evidence": {
+    "provision": "Art. 60 ust. 3",
+    "quote": "Postępowanie nie może trwać dłużej niż 6 miesięcy"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "w terminie 21 dni od dnia otrzymania ostrzeżenia",
+   "depends_on": "receipt of a warning under Art. 61 ust. 1",
+   "applies_to": "Party reports to the Commission on implementation of actions in a warning",
+   "offset_value": 21,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Art. 61 ust. 3",
+    "quote": "w terminie 21 dni od dnia otrzymania ostrzeżenia"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "przez okres niedłuższy niż 7 dni od dnia wszczęcia postępowania",
+   "depends_on": "initiation of proceedings under Art. 63 ust. 1",
+   "applies_to": "Proceedings on AI systems posing a risk (urgent risk procedure)",
+   "offset_value": 7,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Art. 63 ust. 4",
+    "quote": "przez okres niedłuższy niż 7 dni od dnia wszczęcia postępowania"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "uiszcza się w terminie 30 dni od dnia uprawomocnienia się decyzji",
+   "depends_on": "decision imposing an administrative fine becoming final",
+   "applies_to": "Payment of administrative fine",
+   "offset_value": 30,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Art. 104 ust. 5",
+    "quote": "uiszcza się w terminie 30 dni od dnia uprawomocnienia się decyzji"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "po upływie 10 lat od dnia zakończenia postępowania",
+   "depends_on": "end of proceedings under Chapter 3",
+   "applies_to": "Commission deletes personal data unless other provisions apply",
+   "offset_value": 10,
+   "offset_unit": "years",
+   "evidence": {
+    "provision": "Art. 41 ust. 1",
+    "quote": "są usuwane przez Komisję po upływie 10 lat od dnia zakończenia postępowania"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "jeżeli od dnia doręczenia decyzji, o której mowa w art. 76 ust. 1, upłynęło więcej niż 10 lat",
+   "depends_on": "service of the decision under Art. 76 ust. 1",
+   "applies_to": "Reopening of proceedings after a settlement is barred",
+   "offset_value": 10,
+   "offset_unit": "years",
+   "evidence": {
+    "provision": "Art. 80 ust. 2",
+    "quote": "upłynęło więcej niż 10 lat"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "niepóźniej niż 7 dni od dnia zgody na odstępstwo",
+   "depends_on": "consent to derogation under Art. 91 ust. 1",
+   "applies_to": "Commission informs the European Commission and the European AI Board of the sandbox",
+   "offset_value": 7,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Art. 97 ust. 2",
+    "quote": "niepóźniej niż 7 dni od dnia zgody na odstępstwo"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "W terminie 90 dni od dnia doręczenia potwierdzenia uczestnictwa w piaskownicy regulacyjnej",
+   "depends_on": "delivery of the confirmation of participation in the regulatory sandbox",
+   "applies_to": "Sandbox participant may request an individual opinion",
+   "offset_value": 90,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Art. 101 ust. 1",
+    "quote": "W terminie 90 dni od dnia doręczenia potwierdzenia uczestnictwa"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "w terminie miesiąca od dnia przekazania Senatowi uchwały Sejmu",
+   "depends_on": "transmission to the Senate of the Sejm resolution on appointment or dismissal of the Chairman",
+   "applies_to": "Senate resolution on consent; silence counts as consent",
+   "offset_value": 1,
+   "offset_unit": "months",
+   "evidence": {
+    "provision": "Art. 28 ust. 2",
+    "quote": "w terminie miesiąca od dnia przekazania Senatowi uchwały Sejmu"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "wykonał w terminie 3 miesięcy od dnia doręczenia decyzji w sprawie nałożenia administracyjnej kary pieniężnej",
+   "depends_on": "service of the administrative fine decision",
+   "applies_to": "Fine may be reduced if the warning measures were performed within the period",
+   "offset_value": 3,
+   "offset_unit": "months",
+   "evidence": {
+    "provision": "Art. 107 ust. 1",
+    "quote": "wykonał w terminie 3 miesięcy od dnia doręczenia decyzji w sprawie nałożenia administracyjnej kary pieniężnej"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "other",
+   "variable_text": "years of managerial experience required for eligibility to be Chair of the Commission",
+   "operator": ">=",
+   "value": 3,
+   "value_text": "co najmniej 3-letni staż pracy na stanowiskach kierowniczych",
+   "unit": "years",
+   "level": "person",
+   "trigger": "eligibility",
+   "consequence": "Eligibility requirement for appointment as Chair of the Commission",
+   "conditions": "Cumulative with other requirements in Art. 28 ust. 3 (Polish citizenship, higher education, AI expertise, no criminal conviction)",
+   "evidence": {
+    "provision": "Art. 28 ust. 3 pkt 4",
+    "quote": "posiada co najmniej 3-letni staż pracy na stanowiskach kierowniczych w podmiotach wykonujących działalność w obszarze informatyzacji"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "duration of illness after which loss of capacity to perform duties is a ground for dismissal of the Chair of the Commission",
+   "operator": ">",
+   "value": 3,
+   "value_text": "choroba trwająca dłużej niż 3 miesiące",
+   "unit": "months",
+   "level": "person",
+   "trigger": "eligibility",
+   "consequence": "Ground for dismissal of the Chair of the Commission before the end of the term, by the Sejm with Senate consent",
+   "conditions": "Loss of capacity to perform entrusted duties as a result of the illness",
+   "evidence": {
+    "provision": "Art. 30 ust. 1 pkt 6",
+    "quote": "utraty zdolności do pełnienia powierzonych obowiązków na skutek choroby trwającej dłużej niż 3 miesiące"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "period of non-performance of Council duties after which Council membership expires",
+   "operator": ">",
+   "value": 3,
+   "value_text": "niewykonywania obowiązków przez okres dłuższy niż 3 miesiące",
+   "unit": "months",
+   "level": "person",
+   "trigger": "eligibility",
+   "consequence": "Council membership expires before the end of the term",
+   "conditions": "Expiry is notified in writing by the Commission under Art. 45 ust. 7",
+   "evidence": {
+    "provision": "Art. 45 ust. 6 pkt 3",
+    "quote": "niewykonywania obowiązków przez okres dłuższy niż 3 miesiące"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "duration of a regulatory sandbox project",
+   "operator": "range",
+   "value": 6,
+   "value_max": 12,
+   "value_text": "niemniej niż 6 i niewięcej niż 12 miesięcy",
+   "unit": "months",
+   "level": "other",
+   "trigger": "benefit_duration",
+   "consequence": "Sets the permitted duration of a regulatory sandbox under the Act",
+   "conditions": "Sandbox established by the Commission under Art. 91 ust. 1",
+   "evidence": {
+    "provision": "Art. 91 ust. 7",
+    "quote": "Czas trwania piaskownicy regulacyjnej wynosi niemniej niż 6 i niewięcej niż 12 miesięcy."
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "enterprise size class (micro, small and medium-sized entrepreneurs) for free sandbox participation",
+   "operator": "=",
+   "value": null,
+   "value_text": "mikroprzedsiębiorców, małych i średnich przedsiębiorców w rozumieniu ustawy z dnia 6 marca 2018 r. – Prawo przedsiębiorców",
+   "unit": "",
+   "level": "entity",
+   "trigger": "benefit",
+   "consequence": "Participation in the regulatory sandbox is free of charge for these enterprises",
+   "conditions": "Size classes as defined in the Prawo przedsiębiorców Act",
+   "depends_on": "ustawa z dnia 6 marca 2018 r. – Prawo przedsiębiorców (size class definitions)",
+   "evidence": {
+    "provision": "Art. 93 ust. 1",
+    "quote": "Uczestnictwo mikroprzedsiębiorców, małych i średnich przedsiębiorców w rozumieniu ustawy z dnia 6 marca 2018 r. – Prawo przedsiębiorców w piaskownicy regulacyjnej jest nieodpłatne."
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "sandbox participation fee for local government units, upper limit",
+   "operator": "<=",
+   "value": null,
+   "value_text": "nie może być wyższa niż dwukrotność minimalnego wynagrodzenia za pracę",
+   "unit": "multiple of minimum wage",
+   "currency": "PLN",
+   "level": "other",
+   "trigger": "cap",
+   "consequence": "Upper limit on the sandbox participation fee payable by local government units",
+   "conditions": "Fee set by the Minister responsible for computerisation by regulation within this limit (Art. 93 ust. 4)",
+   "depends_on": "minimalne wynagrodzenie za pracę, o którym mowa w art. 2 ust. 4 ustawy z dnia 10 października 2002 r. o minimalnym wynagrodzeniu za pracę",
+   "evidence": {
+    "provision": "Art. 93 ust. 2",
+    "quote": "Opłata za uczestnictwo w piaskownicy regulacyjnej jednostek samorządu terytorialnego nie może być wyższa niż dwukrotność minimalnego wynagrodzenia za pracę"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "sandbox participation fee for entities other than micro, small, medium and local government units, upper limit",
+   "operator": "<=",
+   "value": null,
+   "value_text": "nie może być wyższa niż czterokrotność minimalnego wynagrodzenia za pracę",
+   "unit": "multiple of minimum wage",
+   "currency": "PLN",
+   "level": "other",
+   "trigger": "cap",
+   "consequence": "Upper limit on the sandbox participation fee payable by other entities",
+   "conditions": "Fee set by the Minister responsible for computerisation by regulation within this limit (Art. 93 ust. 4)",
+   "depends_on": "minimalne wynagrodzenie za pracę, o którym mowa w art. 2 ust. 4 ustawy z dnia 10 października 2002 r. o minimalnym wynagrodzeniu za pracę",
+   "evidence": {
+    "provision": "Art. 93 ust. 3",
+    "quote": "niż czterokrotność minimalnego wynagrodzenia za pracę"
+   }
+  }
+ ],
+ "section_status": {}
+}

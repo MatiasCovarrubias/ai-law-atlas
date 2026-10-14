@@ -1,0 +1,488 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "kr-ai-basic-act-decree-2026",
+ "tier": "B",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "light, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-interim-20261014"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (Claude Code retrieval)",
+  "url": "https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=282879&efYd=20260122",
+  "retrieved": "2026-10-14",
+  "version": "as enacted: Presidential Decree No. 36053, 2026-01-21, in force 2026-01-22",
+  "language": "ko",
+  "extent": "full",
+  "note": "Korean National Law Information Center (law.go.kr) body fragment fetched via the page's own lsInfoR.do POST endpoint; header chrome and attachment-link boxes trimmed; annex tables (별표/서식) are links only, not included."
+ },
+ "classification": {
+  "domains": [
+   "ai_general",
+   "generative_ai",
+   "synthetic_media_deepfakes",
+   "algorithmic_decision_systems",
+   "data_access_sharing"
+  ],
+  "primary_domain": "ai_general",
+  "mechanisms": [
+   "mandate_obligation",
+   "disclosure_transparency",
+   "designation_tiering",
+   "institution_setup",
+   "direct_subsidy_grant"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "ai_provider",
+   "ai_developer",
+   "ai_deployer",
+   "government_agency"
+  ],
+  "affected_roles": [
+   "consumers_users"
+  ],
+  "decision_margins": [
+   "firm:compliance_process",
+   "household:information"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national"
+   ],
+   "description": "Applies to AI business operators under the Korean statute; the domestic-agent criteria turn on revenue and on domestic user numbers.",
+   "evidence": {
+    "provision": "Art. 29 para. 1 item 3",
+    "quote": "국내 이용자 수가 1일 평균 100만명 이상인 인공지능사업자"
+   }
+  },
+  "agora_harms": [
+   "Harm to health/safety",
+   "Violation of civil or human rights, including privacy"
+  ],
+  "agora_incentives": [
+   "Fines",
+   "Subsidies"
+  ],
+  "agora_risk_factors": [
+   "Safety",
+   "Transparency",
+   "Interpretability and explainability"
+  ],
+  "agora_strategies": [
+   "Disclosure: In deployment",
+   "Evaluation: Impact assessment",
+   "Evaluation: Conformity assessment",
+   "Tiering: Tiering based on impact",
+   "Tiering: Tiering based on inputs",
+   "Government support: For R&D",
+   "Government study or report",
+   "New institution"
+  ]
+ },
+ "summary": {
+  "short": "Enforcement decree of South Korea's AI Basic Act. Sets the carve-out for defence and intelligence AI, criteria for high-impact and computing-scale AI systems, labelling and notice duties for AI business operators, impact assessments, record-keeping, support programmes and domestic-agent criteria. In force from 22 January 2026.",
+  "long": "Presidential Decree No. 36053 (enacted 21 January 2026, in force 22 January 2026; digital medical device parts from 24 January 2026) implements the AI Basic Act. It excludes AI used solely for listed defence, intelligence and security tasks designated by the Defence Minister, the National Intelligence Service director or the Police Commissioner. It sets up the National AI Strategy Committee, its support secretariat, AI policy centres, the AI Safety Research Institute and an AI industry association. For AI business operators it requires notice to users when a product or service is based on high-impact or generative AI, with labelling of generated output in human- or machine-readable form, and exemptions for obvious use or internal use. It defines a computing-scale test for AI safety duties (cumulative training compute of 10^26 floating-point operations, plus state-of-the-art technology and broad serious-risk criteria). It sets a procedure for the Ministry to confirm whether a system is high-impact, with 30-day response periods. Operators must publish risk-management information, keep records for five years and carry out impact assessments. Large operators must appoint a domestic agent under revenue, user-number and fine-history criteria. Fines follow a standards table in an annex not reproduced in this text. The decree also covers support for learning data, a data integration system, AI industrial clusters and sandbox infrastructure.</parameter>"
+ },
+ "relations": [
+  {
+   "relation": "legal_basis",
+   "target_text": "인공지능 발전과 신뢰 기반 조성 등에 관한 기본법 (AI Basic Act; cited in the decree as 법률 제20676호 in 부칙 제3조)",
+   "note": "Enabling Act under which this Enforcement Decree is made. The decree cites the Act by name in 제1조 and by act number only in 부칙 제3조; the Act's own date is not stated in this text.",
+   "evidence": {
+    "provision": "제1조(목적)",
+    "quote": "이 영은 「인공지능 발전과 신뢰 기반 조성 등에 관한 기본법」에서 위임된 사항과 그 시행에 필요한 사항을 규정함을 목적으로 한다."
+   }
+  },
+  {
+   "relation": "repeals",
+   "target_text": "국가인공지능전략위원회의 설치 및 운영에 관한 규정",
+   "note": "Abolished by 부칙 제2조, effective with the decree's entry into force on 2026-01-22. Transitional provisions in 부칙 제4조 to 제6조 transfer its committee, support unit and seconded staff.",
+   "evidence": {
+    "provision": "부칙 제2조(다른 법령의 폐지)",
+    "quote": "「국가인공지능전략위원회의 설치 및 운영에 관한 규정」은 폐지한다."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "공공기관의 운영에 관한 법률",
+   "note": "Defines 공공기관 used for the 국가기관등 concept (제7조) and for entities that may be designated or appointed (제9조, 제19조, 제8조); no obligations are imposed through this reference alone.",
+   "evidence": {
+    "provision": "제7조제1항",
+    "quote": "「공공기관의 운영에 관한 법률」 제4조에 따른 공공기관"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "데이터 산업진흥 및 이용촉진에 관한 기본법",
+   "note": "Used to define 데이터 for the AI-safety data programme in 제10조제1항제3호.",
+   "evidence": {
+    "provision": "제10조제1항제3호",
+    "quote": "「데이터 산업진흥 및 이용촉진에 관한 기본법」 제2조제1호에 따른 데이터를 말한다"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "국방정보화 기반조성 및 국방정보자원관리에 관한 법률",
+   "note": "Scope exclusion under 제2조 (work designated by the Minister of National Defense): defines the defence information network and system.",
+   "evidence": {
+    "provision": "제2조제1호가목",
+    "quote": "「국방정보화 기반조성 및 국방정보자원관리에 관한 법률」 제2조제3호에 따른 국방정보통신망"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "방위사업법",
+   "note": "Scope exclusion under 제2조제1호나목: defines weapon systems and force support systems.",
+   "evidence": {
+    "provision": "제2조제1호나목",
+    "quote": "「방위사업법」 제3조제3호에 따른 무기체계"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "국가연구개발혁신법",
+   "note": "Scope exclusion under 제2조제2호나목 for R&D projects classified as security projects.",
+   "evidence": {
+    "provision": "제2조제2호나목",
+    "quote": "「국가연구개발혁신법」 제21조제2항에 따라 보안과제로 분류된"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "국가첨단전략산업 경쟁력 강화 및 보호에 관한 특별조치법",
+   "note": "Scope exclusion under 제2조제2호라목 (National Intelligence Service) and 제2조제3호가목 (National Police Agency) for investigation and measures on outflow of national advanced strategic technologies.",
+   "evidence": {
+    "provision": "제2조제2호라목",
+    "quote": "「국가첨단전략산업 경쟁력 강화 및 보호에 관한 특별조치법」 제2조제1호에 따른 국가첨단전략기술의 유출 및 침해행위 등의 조사 및 조치"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "국민보호와 공공안전을 위한 테러방지법",
+   "note": "Scope exclusion under 제2조제2호마목 and 제2조제3호나목 for counter-terrorism activities.",
+   "evidence": {
+    "provision": "제2조제2호마목",
+    "quote": "「국민보호와 공공안전을 위한 테러방지법」 제2조제6호에 따른 대테러활동"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "산업기술의 유출방지 및 보호에 관한 법률",
+   "note": "Scope exclusion under 제2조제2호사목 and 제2조제3호라목 for national core technology outflow prevention.",
+   "evidence": {
+    "provision": "제2조제2호사목",
+    "quote": "「산업기술의 유출방지 및 보호에 관한 법률」 제2조제2호에 따른 국가핵심기술의 유출 및 침해를 방지하기 위하여 필요한 조사 및 조치"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "전자정부법",
+   "note": "Scope exclusion under 제2조제2호아목 for security measures whose safety the National Intelligence Service head has confirmed under Article 56(3) of that Act.",
+   "evidence": {
+    "provision": "제2조제2호아목",
+    "quote": "「전자정부법」 제56조제3항에 따라 국가정보원장이 안전성을 확인한 보안조치"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "통합방위법",
+   "note": "Scope exclusion under 제2조제2호자목 for intelligence centres and joint intelligence investigation teams.",
+   "evidence": {
+    "provision": "제2조제2호자목",
+    "quote": "「통합방위법」 제9조의2제1항에 따른 정보센터"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "국가정보원법",
+   "note": "Scope exclusion under 제2조제2호카목 for work listed in Article 4(1)(1) to (5) of that Act.",
+   "evidence": {
+    "provision": "제2조제2호카목",
+    "quote": "「국가정보원법」 제4조제1항제1호부터 제5호까지에 해당하는 업무"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "방첩업무 규정",
+   "note": "Scope exclusion under 제2조제2호차목 and 제2조제3호마목 for counter-intelligence work.",
+   "evidence": {
+    "provision": "제2조제2호차목",
+    "quote": "「방첩업무 규정」 제3조에 따른 방첩업무"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "정보 및 보안 업무 기획ㆍ조정 규정",
+   "note": "Scope exclusion under 제2조제3호바목 for investigation and arrest of intelligence offenders.",
+   "evidence": {
+    "provision": "제2조제3호바목",
+    "quote": "「정보 및 보안 업무 기획ㆍ조정 규정」 제2조제5호에 따른 정보사범"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "부정경쟁방지 및 영업비밀보호에 관한 법률",
+   "note": "Trade-secret carve-out from the disclosure duty for the operator's published measures (제27조제1항 proviso).",
+   "evidence": {
+    "provision": "제27조제1항",
+    "quote": "「부정경쟁방지 및 영업비밀보호에 관한 법률」 제2조제2호에 따른 영업비밀에 해당하는 사항은 제외할 수 있다"
+   }
+  }
+ ],
+ "notes": "Relations are taken only from this decree's text; target registry IDs are not known, so target_instrument_id is empty. The Act is named in 제1조 and identified by act number (법률 제20676호) only in 부칙 제3조. Annexes 별표 1 and 별표 2 and the 별지서식 forms appear only as titles and .hwp placeholders; their content is not in the document, and 제27조제5항 and 제32조 depend on it. 부칙 제1조 sets a 2026-01-24 start for the digital medical device part of 별표 1, which cannot be checked here. Cited statute articles in 제2조 exclusions were not verified against those statutes. No internal numerical or cross-reference inconsistency was found.",
+ "events": [
+  {
+   "event": "signed",
+   "date": "2026-01-21",
+   "date_type": "absolute",
+   "date_text": "대통령령 제36053호, 2026. 1. 21., 제정",
+   "applies_to": "이 영 전부",
+   "evidence": {
+    "provision": "제목 표기 (decree header)",
+    "quote": "대통령령 제36053호, 2026. 1. 21., 제정"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2026-01-22",
+   "date_type": "absolute",
+   "date_text": "2026년 1월 22일부터 시행",
+   "applies_to": "이 영 전부 (general entry into force)",
+   "evidence": {
+    "provision": "부칙 제1조(시행일)",
+    "quote": "이 영은 2026년 1월 22일부터 시행한다."
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2026-01-24",
+   "date_type": "absolute",
+   "date_text": "2026년 1월 24일부터 시행",
+   "applies_to": "별표 1 중 디지털의료기기에 관한 부분",
+   "evidence": {
+    "provision": "부칙 제1조(시행일)",
+    "quote": "다만, 별표 1 중 디지털의료기기에 관한 부분은 2026년 1월 24일부터 시행한다."
+   }
+  },
+  {
+   "event": "repealed",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "은 폐지한다",
+   "anchor": "이 영 시행일 (부칙 제1조)",
+   "applies_to": "국가인공지능전략위원회의 설치 및 운영에 관한 규정",
+   "offset_value": 0,
+   "offset_unit": "days",
+   "anchor_event": "entry_into_force",
+   "evidence": {
+    "provision": "부칙 제2조(다른 법령의 폐지)",
+    "quote": "「국가인공지능전략위원회의 설치 및 운영에 관한 규정」은 폐지한다."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2026-01-01",
+   "date_type": "recurring",
+   "date_text": "2026년 1월 1일을 기준으로 3년마다(매 3년이 되는 해의 1월 1일 전까지를 말한다)",
+   "applies_to": "제18조, 제24조, 제29조 (regulatory review)",
+   "evidence": {
+    "provision": "제33조(규제의 재검토)",
+    "quote": "2026년 1월 1일을 기준으로 3년마다(매 3년이 되는 해의 1월 1일 전까지를 말한다)"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "매년 1월 31일까지",
+   "applies_to": "안전연구소 (annual results and business plan submission)",
+   "evidence": {
+    "provision": "제10조제4항",
+    "quote": "안전연구소는 전년도 사업실적과 해당 연도의 사업계획을 매년 1월 31일까지 과학기술정보통신부장관에게 제출해야 한다."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "권고 또는 의견의 표명을 받은 날부터 3개월 이내에",
+   "depends_on": "권고 또는 의견의 표명을 받은 날 (Act Art. 8(3))",
+   "applies_to": "국가기관등의 장 (improvement plan report to the Committee)",
+   "offset_value": 3,
+   "offset_unit": "months",
+   "evidence": {
+    "provision": "제7조제1항",
+    "quote": "권고 또는 의견의 표명을 받은 날부터 3개월 이내에"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "요청을 받은 날부터 30일 이내에 그 결과를 회신해야 한다 (extendable once by up to 30 days)",
+   "depends_on": "요청을 받은 날 (Art. 25(1) identification request)",
+   "applies_to": "과학기술정보통신부장관 (reply on high-impact AI identification request)",
+   "offset_value": 30,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "제25조제3항",
+    "quote": "요청을 받은 날부터 30일 이내에 그 결과를 회신해야 한다."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "회신을 받은 날부터 10일 이내에",
+   "depends_on": "회신을 받은 날 (Art. 25(3) reply)",
+   "applies_to": "인공지능사업자 (objection and reconfirmation request)",
+   "offset_value": 10,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "제25조제4항",
+    "quote": "회신을 받은 날부터 10일 이내에"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "재확인 요청을 받은 날부터 30일 이내에 그 결과를 회신해야 한다",
+   "depends_on": "재확인 요청을 받은 날 (Art. 25(4) reconfirmation request)",
+   "applies_to": "과학기술정보통신부장관 (reply on reconfirmation request)",
+   "offset_value": 30,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "제25조제5항",
+    "quote": "재확인 요청을 받은 날부터 30일 이내에 그 결과를 회신해야 한다."
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "compute_training",
+   "variable_text": "누적 연산량 (cumulative computation used for training)",
+   "operator": ">=",
+   "value": 1e+26,
+   "value_text": "10의 26승 부동소수점연산 이상",
+   "unit": "floating-point operations",
+   "measurement": "Cumulative computation used to train the AI system; calculation method set by 과학기술정보통신부장관 notice (제24조제2항).",
+   "level": "model",
+   "trigger": "scope_definition",
+   "consequence": "Defines the high-capability AI system subject to the safety obligations of 법 제32조 (AI system meeting the 대통령령 criteria).",
+   "conditions": "All three criteria in 제24조제1항 must be met jointly: (1) this compute threshold; (2) state-of-the-art AI technology in use; (3) risk of broad and serious impact on human life, bodily safety and fundamental rights.",
+   "evidence": {
+    "provision": "제24조제1항제1호",
+    "quote": "학습에 사용된 누적 연산량이 10의 26승 부동소수점연산 이상일 것"
+   }
+  },
+  {
+   "variable": "revenue_annual",
+   "variable_text": "전년도 매출액 (prior-year sales revenue of the AI business operator)",
+   "operator": ">=",
+   "value": 1000000000000,
+   "value_text": "1조원 이상",
+   "unit": "KRW",
+   "currency": "KRW",
+   "measurement": "Prior fiscal year (for corporations, prior business year) sales; converted to won at the prior-year average exchange rate (제29조제2항).",
+   "level": "entity",
+   "trigger": "eligibility",
+   "consequence": "Operator falls within the 대통령령 criteria for AI business operators subject to the domestic agent requirement of 법 제36조제1항.",
+   "conditions": "Alternative criteria in 제29조제1항: AI service segment sales of 100억원 or more; or 1 million or more average daily domestic users; or a prior fine under 법 제43조제1항제3호. Any one suffices.",
+   "evidence": {
+    "provision": "제29조제1항제1호",
+    "quote": "전년도(법인인 경우에는 전 사업연도를 말한다) 매출액이 1조원 이상인 인공지능사업자"
+   }
+  },
+  {
+   "variable": "revenue_annual",
+   "variable_text": "인공지능서비스 부문 전년도 매출액 (prior-year sales of the AI service segment)",
+   "operator": ">=",
+   "value": 10000000000,
+   "value_text": "100억원 이상",
+   "unit": "KRW",
+   "currency": "KRW",
+   "measurement": "Prior fiscal year (for corporations, prior business year) sales of the AI service segment; converted to won at the prior-year average exchange rate (제29조제2항).",
+   "level": "service",
+   "trigger": "eligibility",
+   "consequence": "Operator falls within the 대통령령 criteria for AI business operators subject to the domestic agent requirement of 법 제36조제1항.",
+   "conditions": "Alternative criteria in 제29조제1항: total prior-year sales of 1조원 or more; or 1 million or more average daily domestic users; or a prior fine under 법 제43조제1항제3호. Any one suffices.",
+   "evidence": {
+    "provision": "제29조제1항제2호",
+    "quote": "인공지능서비스 부문 전년도(법인인 경우에는 전 사업연도를 말한다) 매출액이 100억원 이상인 인공지능사업자"
+   }
+  },
+  {
+   "variable": "users_daily_active",
+   "variable_text": "국내 이용자 수 (average daily domestic users of AI products and services over the prior 3 months)",
+   "operator": ">=",
+   "value": 1000000,
+   "value_text": "1일 평균 100만명 이상",
+   "unit": "persons",
+   "measurement": "Average daily number of domestic users over the 3 months immediately preceding the end of the prior year, for the operator's AI products and AI services.",
+   "level": "service",
+   "trigger": "eligibility",
+   "consequence": "Operator falls within the 대통령령 criteria for AI business operators subject to the domestic agent requirement of 법 제36조제1항.",
+   "conditions": "Alternative criteria in 제29조제1항: total prior-year sales of 1조원 or more; AI service segment sales of 100억원 or more; or a prior fine under 법 제43조제1항제3호. Any one suffices.",
+   "evidence": {
+    "provision": "제29조제1항제3호",
+    "quote": "전년도 말 기준 해당 인공지능사업자의 인공지능제품 및 인공지능서비스에 대한 직전 3개월간 국내 이용자 수가 1일 평균 100만명 이상인 인공지능사업자"
+   }
+  },
+  {
+   "variable": "employees",
+   "variable_text": "전담인력 (full-time dedicated staff for supporting an AI industrial complex)",
+   "operator": ">=",
+   "value": 5,
+   "value_text": "5명 이상 상시 고용",
+   "unit": "persons",
+   "measurement": "Number of dedicated staff permanently employed to support the AI industrial complex.",
+   "level": "entity",
+   "trigger": "eligibility",
+   "consequence": "Staffing requirement that an organisation must meet to be designated as the dedicated agency (전담기관) of an AI industrial complex under 제18조제1항.",
+   "conditions": "All requirements in 제18조제1항 must be met jointly: type of organisation, staffing, location, office and meeting rooms, and accounting and personnel information system.",
+   "evidence": {
+    "provision": "제18조제1항제2호",
+    "quote": "인공지능집적단지의 지원을 위한 전담인력을 5명 이상 상시 고용할 것"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "발기인 수 (founders engaged in AI-related research or work)",
+   "operator": ">=",
+   "value": 50,
+   "value_text": "50명 이상이 발기인이 되어",
+   "unit": "persons",
+   "measurement": "Number of founders who are persons engaged in research or work related to AI, as stated in 제20조제1항.",
+   "level": "group",
+   "trigger": "eligibility",
+   "consequence": "Founder requirement for filing an application with 과학기술정보통신부장관 to establish 한국인공지능진흥협회 (인가).",
+   "conditions": "Founders must act through a 발기인총회 resolution after drafting articles of association; application documents listed in 제20조제2항 must be attached.",
+   "evidence": {
+    "provision": "제20조제1항",
+    "quote": "인공지능등과 관련한 연구 및 업무에 종사하는 자 50명 이상이 발기인이 되어"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "회원 수 (members of a non-profit corporation engaged in AI-related research or work)",
+   "operator": ">=",
+   "value": 50,
+   "value_text": "50명 이상의 회원을 보유한 비영리법인",
+   "unit": "persons",
+   "measurement": "Number of members of the non-profit corporation who are engaged in AI-related research or work.",
+   "level": "group",
+   "trigger": "eligibility",
+   "consequence": "Member requirement for a non-profit corporation to be designated as the 한국인공지능진흥협회 under 법 제26조제1항 (지정 application).",
+   "conditions": "Corporation must be established under 「민법」 제32조; application documents listed in 제20조제4항 must be attached.",
+   "evidence": {
+    "provision": "제20조제4항",
+    "quote": "인공지능등과 관련한 연구 및 업무에 종사하는 자 50명 이상의 회원을 보유한 비영리법인으로서"
+   }
+  }
+ ],
+ "section_status": {}
+}

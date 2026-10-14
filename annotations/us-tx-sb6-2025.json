@@ -1,0 +1,685 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "us-tx-sb6-2025",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (connectors/fetch_texts.py)",
+  "url": "https://capitol.texas.gov/tlodocs/89R/billtext/html/SB00006F.htm",
+  "retrieved": "2026-10-13",
+  "version": "as fetched",
+  "language": "en",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "energy_grid_water"
+  ],
+  "primary_domain": "energy_grid_water",
+  "mechanisms": [
+   "mandate_obligation",
+   "standard_setting",
+   "disclosure_transparency",
+   "registration_notification",
+   "licensing_permit_certification",
+   "tariff_price_regulation",
+   "prohibition_ban"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "utility_grid_operator",
+   "regulator",
+   "enterprise"
+  ],
+  "affected_roles": [
+   "consumers_users"
+  ],
+  "decision_margins": [
+   "firm:input_use",
+   "firm:investment_location",
+   "household:prices"
+  ],
+  "territorial_scope": {
+   "types": [
+    "subnational"
+   ],
+   "description": "Applies to large load customers and utilities in Texas, principally those interconnecting in the ERCOT power region.",
+   "evidence": {
+    "provision": "Sec. 37.0561(b)",
+    "quote": "interconnecting large load customers in the ERCOT power region"
+   }
+  }
+ },
+ "summary": {
+  "short": "Texas SB 6 (2025) amends the Utilities Code and Water Code on electric service to large loads, mainly in the ERCOT power region. It covers interconnection standards, cost and financial commitment rules, disclosure, curtailment, and water-corporation power generation, effective immediately or September 1, 2025.",
+  "long": "Texas SB 6 amends the Utilities Code and Water Code on electric service for large loads. It directs the Public Utility Commission (PUC) to set interconnection standards for new or expanded loads above a demand threshold, set by default at 75 megawatts in the ERCOT power region. The standards cover disclosure of competing requests, a flat study fee of at least $100,000, site control, uniform financial commitments with conditional refunds, and cost contribution by large load customers. Large loads with on-site backup generation that can serve at least 50 percent of on-site demand must disclose it, and ERCOT may direct them to deploy it or curtail load. Power generation companies must notify ERCOT before netting an existing stand-alone generation resource with a new large load; the PUC may approve, deny or condition such arrangements after an ERCOT study. Loads interconnected after December 31, 2025 must have curtailment protocols, and ERCOT must procure demand reductions from large loads of at least 75 megawatts. Water or sewer corporations may generate power for their own water uses and, if they meet conditions and register, sell excess power. The PUC must evaluate transmission cost allocation and amend rules by December 31, 2026. The Act takes effect immediately if passed by two-thirds of each house, otherwise on September 1, 2025."
+ },
+ "relations": [
+  {
+   "relation": "amends",
+   "target_text": "Texas Utilities Code (Sections 35.004, 37.0561, 39.002, 39.169, 39.170)",
+   "note": "Amends Sec. 35.004 by adding subsections (c-1) and (c-2), adds Sec. 37.0561 and Secs. 39.169 and 39.170, and amends Sec. 39.002 (applicability).",
+   "evidence": {
+    "provision": "SECTION 1",
+    "quote": "Section 35.004, Utilities Code, is amended by"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Texas Water Code, Chapter 67",
+   "note": "Adds Sec. 67.0115 on electric power generation by a corporation for its water and sewer operations.",
+   "evidence": {
+    "provision": "SECTION 5",
+    "quote": "Subchapter A, Chapter 67, Water Code, is amended"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Texas Government Code, Chapter 552",
+   "note": "Sec. 37.0561(k) (inserted by Section 2) makes certain customer-specific or competitively sensitive information confidential and not subject to disclosure under Chapter 552.",
+   "evidence": {
+    "provision": "SECTION 2 (inserting Utilities Code Sec. 37.0561(k))",
+    "quote": "subject to disclosure under Chapter 552, Government Code."
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Texas Constitution, Article III, Section 39",
+   "note": "Section 8 makes the Act take effect immediately if it receives a two-thirds vote of each house, as provided by that section.",
+   "evidence": {
+    "provision": "SECTION 8",
+    "quote": "provided by Section 39, Article III, Texas Constitution."
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "Public Utility Commission of Texas",
+   "role": "designated",
+   "function": "Must evaluate the wholesale transmission cost methodology (Sec. 6(a)) and amend commission rules not later than December 31, 2026 (Sec. 6(c)); also the body that adopts rules under Secs. 35.004(c-1), 37.0561 and 39.169.",
+   "evidence": {
+    "provision": "SECTION 6(a)",
+    "quote": "The Public Utility Commission of Texas shall evaluate whether the existing methodology"
+   }
+  },
+  {
+   "name": "Independent organization certified under Section 39.151 for the ERCOT power region",
+   "role": "designated",
+   "function": "Studies system impacts of proposed net metering arrangements (Sec. 39.169(d)), develops a reliability service for large loads (Sec. 39.170(b)), and is given access to interconnection information for transmission planning (Sec. 37.0561(k)).",
+   "evidence": {
+    "provision": "SECTION 4 (Sec. 39.169(d))",
+    "quote": "shall study the system impacts of"
+   }
+  }
+ ],
+ "notes": "Enrolled copy: the governor approval and date lines are blank in this text. Sections 1 to 5 refer to 'the commission' without naming it; Section 6 names the Public Utility Commission of Texas. Sec. 37.0561(c) lets the commission set a demand threshold below 75 megawatts, while Sec. 39.170(b) uses a fixed 'at least 75 megawatts' for demand reductions. Only relations, entities and notes are annotated in this record.",
+ "events": [
+  {
+   "event": "passed_chamber",
+   "date": "2025-03-19",
+   "date_type": "absolute",
+   "date_text": "passed the Senate on March 19, 2025, by the following vote: Yeas 31, Nays 0",
+   "applies_to": "Senate",
+   "evidence": {
+    "provision": "Certification (Secretary of the Senate)",
+    "quote": "March 19, 2025, by the following vote: Yeas 31, Nays 0"
+   }
+  },
+  {
+   "event": "passed_chamber",
+   "date": "2025-05-27",
+   "date_type": "absolute",
+   "date_text": "passed the House, with amendments, on May 27, 2025, by the following vote: Yeas 103, Nays 25, two present not voting",
+   "applies_to": "House (with amendments)",
+   "evidence": {
+    "provision": "Certification (Chief Clerk of the House)",
+    "quote": "amendments, on May 27, 2025, by the following vote: Yeas 103,"
+   }
+  },
+  {
+   "event": "legislative_approval",
+   "date": "2025-05-29",
+   "date_type": "absolute",
+   "date_text": "the Senate concurred in House amendments on May 29, 2025, by the following vote: Yeas 31, Nays 0",
+   "applies_to": "Senate concurrence in House amendments",
+   "evidence": {
+    "provision": "Certification (Secretary of the Senate)",
+    "quote": "the Senate concurred in House amendments on May 29, 2025"
+   }
+  },
+  {
+   "event": "signed",
+   "date": null,
+   "date_type": "not_stated",
+   "date_text": "Approved: [signature line] Date [blank] Governor [signature line]",
+   "applies_to": "Governor",
+   "evidence": {
+    "provision": "Certification block (Governor approval)",
+    "quote": "Approved:"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "This Act takes effect immediately if it receives a vote of two-thirds of all the members elected to each house",
+   "depends_on": "two-thirds vote of all the members elected to each house",
+   "applies_to": "Act as a whole (immediate effect)",
+   "evidence": {
+    "provision": "Sec. 8",
+    "quote": "a vote of two-thirds of all the members elected to each house"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2025-09-01",
+   "date_type": "absolute",
+   "date_text": "If this Act does not receive the vote necessary for immediate effect, this Act takes effect September 1, 2025",
+   "applies_to": "Act as a whole, if immediate effect is not achieved",
+   "evidence": {
+    "provision": "Sec. 8",
+    "quote": "takes effect September 1, 2025"
+   }
+  },
+  {
+   "event": "application",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "Section 35.004(c-1), Utilities Code, as added by this Act, applies only to an interconnection agreement entered into on or after the effective date of this Act",
+   "depends_on": "effective date of this Act (Sec. 8)",
+   "applies_to": "interconnection agreements entered into on or after the effective date, for Utilities Code Sec. 35.004(c-1) (cost recovery for large load interconnection)",
+   "evidence": {
+    "provision": "Sec. 7",
+    "quote": "applies only to an interconnection agreement entered into"
+   }
+  },
+  {
+   "event": "application",
+   "date": "2025-12-31",
+   "date_type": "absolute",
+   "date_text": "applies only to a load interconnected after December 31, 2025",
+   "applies_to": "loads interconnected after December 31, 2025 (demand management protocol, Utilities Code Sec. 39.170(a))",
+   "evidence": {
+    "provision": "Sec. 4 (adding Utilities Code Sec. 39.170(a))",
+    "quote": "interconnected after December 31, 2025"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2025-11-30",
+   "date_type": "relative",
+   "date_text": "shall begin the evaluation ... not later than the 90th day after the effective date of this Act",
+   "anchor": "effective date of this Act",
+   "applies_to": "Commission evaluation of wholesale transmission cost methodology (Sec. 6(a))",
+   "offset_value": 90,
+   "offset_unit": "days",
+   "anchor_event": "entry_into_force",
+   "evidence": {
+    "provision": "Sec. 6(c)",
+    "quote": "not later than the 90th day after the effective date of this Act"
+   },
+   "date_computed_from": "entry_into_force 2025-09-01 (text) + 90 days"
+  },
+  {
+   "event": "deadline",
+   "date": "2026-12-31",
+   "date_type": "absolute",
+   "date_text": "not later than December 31, 2026, the commission shall amend commission rules to ensure that wholesale transmission charges appropriately assign costs for transmission investment",
+   "applies_to": "Public Utility Commission of Texas rule amendments on wholesale transmission charges (Sec. 6(c))",
+   "evidence": {
+    "provision": "Sec. 6(c)",
+    "quote": "31, 2026, the commission shall amend commission rules to ensure"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "Not later than the 120th day after the independent organization receives all required information regarding the arrangement, the independent organization must complete the study and submit the results to the commission",
+   "anchor": "receipt by the independent organization of all required information on the net metering arrangement",
+   "depends_on": "independent organization receives all required information regarding the arrangement",
+   "applies_to": "ERCOT system impact study of proposed net metering arrangement (Utilities Code Sec. 39.169(d))",
+   "evidence": {
+    "provision": "Sec. 4 (adding Utilities Code Sec. 39.169(d))",
+    "quote": "later than the 120th day after the independent organization"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "Not later than the 60th day after the date the commission receives the study results from the independent organization, the commission shall approve, deny, or impose reasonable conditions",
+   "anchor": "date the commission receives the study results from the independent organization",
+   "depends_on": "commission receives the study results from the independent organization",
+   "applies_to": "Commission decision on proposed net metering arrangement (Utilities Code Sec. 39.169(d))",
+   "evidence": {
+    "provision": "Sec. 4 (adding Utilities Code Sec. 39.169(d))",
+    "quote": "Not later than the 60th day after the date the commission receives the"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "recurring",
+   "date_text": "if conditions imposed under Subsection (d) are not limited to a specific period, the commission shall review the conditions at least every five years",
+   "depends_on": "conditions imposed under Sec. 39.169(d) not limited to a specific period",
+   "applies_to": "Commission review of net metering conditions (Utilities Code Sec. 39.169(f))",
+   "evidence": {
+    "provision": "Sec. 4 (adding Utilities Code Sec. 39.169(f))",
+    "quote": "conditions at least every five years to determine whether the"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "power_capacity",
+   "variable_text": "total load at a single site (demand threshold for large load customer standards)",
+   "operator": ">",
+   "value": 75,
+   "value_text": "The commission shall establish a demand threshold of 75 megawatts",
+   "unit": "megawatts",
+   "measurement": "Total load at a single site for a new or expanded interconnection request; threshold set by PUC rule",
+   "level": "facility",
+   "trigger": "scope_definition",
+   "consequence": "Interconnection standards apply to requests above the demand threshold; requesting entity is a large load customer under Sec. 37.0561(a)",
+   "conditions": "Commission may set a lower threshold if it determines one is necessary to accomplish the purposes of Subsection (b)",
+   "evidence": {
+    "provision": "Sec. 37.0561(c)",
+    "quote": "The commission shall establish a demand threshold of 75 megawatts"
+   }
+  },
+  {
+   "variable": "power_capacity",
+   "variable_text": "demand threshold set by the commission (total load at a single site)",
+   "operator": ">",
+   "value": null,
+   "value_text": "a demand threshold established by the commission based on the size of loads that significantly impact transmission needs in the ERCOT power region",
+   "unit": "megawatts",
+   "measurement": "Total load at a single site for a new or expanded interconnection request",
+   "level": "facility",
+   "trigger": "scope_definition",
+   "consequence": "Determines which new or expanded interconnection requests the large load standards apply to",
+   "conditions": "The 75 megawatt figure in the same subsection applies unless the commission determines a lower threshold is necessary",
+   "depends_on": "Public Utility Commission rule under Sec. 37.0561(c)",
+   "evidence": {
+    "provision": "Sec. 37.0561(c)",
+    "quote": "a demand threshold established by the commission"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "share of on-site demand that on-site backup generation can serve",
+   "operator": ">=",
+   "value": 50,
+   "value_text": "can serve at least 50 percent of on-site demand",
+   "unit": "percent",
+   "measurement": "Aggregate capacity of on-site generation that is not capable of exporting energy to the ERCOT transmission grid, relative to on-site demand",
+   "level": "facility",
+   "trigger": "scope_definition",
+   "consequence": "Generation meeting this share is an on-site backup generating facility subject to the disclosure and deployment provisions of Subsection (e)",
+   "conditions": "Generation must not be capable of exporting energy to the ERCOT transmission grid",
+   "evidence": {
+    "provision": "Sec. 37.0561(e)",
+    "quote": "can serve at least 50 percent of on-site demand"
+   }
+  },
+  {
+   "variable": "power_capacity",
+   "variable_text": "demand of large load customers subject to competitive procurement of demand reductions",
+   "operator": ">=",
+   "value": 75,
+   "value_text": "large load customers with a demand of at least 75 megawatts",
+   "unit": "megawatts",
+   "measurement": "Customer demand; service developed and procured by the ERCOT independent organization",
+   "level": "entity",
+   "trigger": "eligibility",
+   "consequence": "Large load customers at or above this demand may be competitively procured for demand reductions in an anticipated emergency condition",
+   "conditions": "Rules must prohibit participation by any large load customer that curtails in response to the wholesale price of electricity or participates in another reliability or ancillary service",
+   "evidence": {
+    "provision": "Sec. 39.170(b)",
+    "quote": "large load customers with a demand of at least 75 megawatts"
+   }
+  },
+  {
+   "variable": "population",
+   "variable_text": "county population",
+   "operator": "<",
+   "value": 350000,
+   "value_text": "county with a population of less than 350,000",
+   "unit": "persons",
+   "measurement": "County population; measurement source and date not stated in this text",
+   "level": "jurisdiction",
+   "trigger": "eligibility",
+   "consequence": "A corporation operating solely as a wholesale water supplier or sewer service in such a county may generate excess electric power for sale in the ERCOT power region",
+   "conditions": "Corporation must primarily generate power solely for its water or sewer uses and must register as a power generation company under Sec. 39.351, Utilities Code",
+   "evidence": {
+    "provision": "Sec. 67.0115(b)",
+    "quote": "county with a population of less than 350,000"
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "large load customer",
+   "defined_in": "Utilities Code Sec. 37.0561(a) (this Act)",
+   "evidence": {
+    "provision": "Sec. 37.0561(a)",
+    "quote": "includes an entity requesting an interconnection that exceeds the"
+   }
+  },
+  {
+   "term": "on-site backup generating facilities",
+   "defined_in": "Utilities Code Sec. 37.0561(e) (this Act)",
+   "evidence": {
+    "provision": "Sec. 37.0561(e)",
+    "quote": "\"on-site backup generating facilities\" means generation that is not capable"
+   }
+  },
+  {
+   "term": "critical load industrial customer",
+   "defined_in": "Utilities Code Sec. 17.002 (defined by reference in this text)",
+   "evidence": {
+    "provision": "Sec. 39.170(a)(1)",
+    "quote": "load operated by a critical load industrial customer, as defined by Section 17.002"
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "government_duty",
+   "addressee": "regulator",
+   "modality": "shall",
+   "summary": "The commission must by rule ensure that large load customers subject to the Sec. 37.0561 standards contribute to recovery of the interconnecting electric utility's interconnection costs.",
+   "applies_from": "Effective date of this Act (immediately if two-thirds vote; otherwise September 1, 2025)",
+   "conditional_on": "Applies only to interconnection agreements entered into on or after the effective date (Section 7).",
+   "evidence": {
+    "provision": "Section 1 (Utilities Code Sec. 35.004(c-1))",
+    "quote": "The commission by rule shall ensure that a large load"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "utility_grid_operator",
+   "modality": "shall",
+   "summary": "An electric cooperative or municipally owned utility that has not adopted customer choice must pass through to large load customers subject to the Sec. 37.0561 standards the reasonable interconnection costs, in a manner it determines.",
+   "applies_from": "Effective date of this Act (immediately if two-thirds vote; otherwise September 1, 2025)",
+   "conditional_on": "Applies only to interconnection agreements entered into on or after the effective date (Section 7).",
+   "evidence": {
+    "provision": "Section 1 (Utilities Code Sec. 35.004(c-2))",
+    "quote": "that has not adopted customer choice shall pass through"
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "regulator",
+   "modality": "shall",
+   "summary": "The commission must by rule set interconnection standards for large loads in the ERCOT power region, including a demand threshold of 75 MW unless a lower threshold is needed (c), site control (g), uniform financial commitment requirements (h), reallocation requirements (j), criteria for including forecasted large load in ERCOT models (m), a flat study fee of at least $100,000 (f), and a prohibition on utilities selling, sharing or disclosing information submitted under (d).",
+   "applies_from": "Effective date of this Act (immediately if two-thirds vote; otherwise September 1, 2025)",
+   "conditional_on": "Standards apply to customers requesting a new or expanded interconnection above the demand threshold.",
+   "evidence": {
+    "provision": "Section 2 (Utilities Code Sec. 37.0561(b))",
+    "quote": "The commission by rule shall establish standards for"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Under standards the commission must require, each large load customer must disclose to the interconnecting utility whether it is pursuing a substantially similar request for service in Texas that would materially change, delay or withdraw its interconnection request (d), and must disclose information on on-site backup generating facilities (e). Disclosure may withhold or anonymize competitively sensitive details.",
+   "applies_from": "Effective date of this Act (immediately if two-thirds vote; otherwise September 1, 2025)",
+   "conditional_on": "Applies to large load customers subject to the Subsection (c) demand threshold; (e) applies to interconnected customers.",
+   "evidence": {
+    "provision": "Section 2 (Utilities Code Sec. 37.0561(d))",
+    "quote": "is pursuing a substantially similar request for electric service in"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "utility_grid_operator",
+   "modality": "shall",
+   "summary": "Under standards the commission must require, the interconnecting utility must provide backup generation information received from interconnected large load customers to the ERCOT independent organization.",
+   "applies_from": "Effective date of this Act (immediately if two-thirds vote; otherwise September 1, 2025)",
+   "conditional_on": "Applies to interconnected large load customers subject to Subsection (c).",
+   "evidence": {
+    "provision": "Section 2 (Utilities Code Sec. 37.0561(e))",
+    "quote": "to provide the information to the"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "utility_grid_operator",
+   "modality": "shall",
+   "summary": "The interconnecting utility must apply any unused portion of the initial transmission screening study fee as a credit toward financial obligations for procurement or interconnection agreements at the same geographic site.",
+   "applies_from": "Effective date of this Act (immediately if two-thirds vote; otherwise September 1, 2025)",
+   "conditional_on": "Applies to large loads subject to Subsection (c) that pay the initial screening study fee.",
+   "evidence": {
+    "provision": "Section 2 (Utilities Code Sec. 37.0561(f))",
+    "quote": "shall apply any unused portion of the initial transmission"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "regulator",
+   "modality": "shall_not",
+   "summary": "The commission may not limit the authority of a municipally owned utility or electric cooperative to impose additional electric service requirements on large load customers on its system.",
+   "applies_from": "Effective date of this Act (immediately if two-thirds vote; otherwise September 1, 2025)",
+   "evidence": {
+    "provision": "Section 2 (Utilities Code Sec. 37.0561(l))",
+    "quote": "The commission may not limit the authority of a"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "utility_grid_operator",
+   "modality": "shall",
+   "summary": "The ERCOT independent organization must establish a threshold for issuing notice to large loads with on-site backup generation, may direct utilities to require deployment or curtailment after other market services are deployed, and must include such deployments in reliability price adjustments. It must also allow access to utility-collected information for transmission planning compliance.",
+   "applies_from": "Effective date of this Act (immediately if two-thirds vote; otherwise September 1, 2025)",
+   "conditional_on": "Applies to the energy emergency alert process described in Utilities Code Sec. 37.0561(e).",
+   "evidence": {
+    "provision": "Section 2 (Utilities Code Sec. 37.0561(e))",
+    "quote": "The independent organization shall establish a threshold before or"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "enterprise",
+   "also_addressees": [
+    "utility_grid_operator"
+   ],
+   "modality": "shall",
+   "summary": "A power generation company, municipally owned utility, or electric cooperative must submit a notice to ERCOT before implementing a net metering arrangement between a stand-alone generation resource and a new large load customer.",
+   "applies_from": "Before implementing the net metering arrangement; applies to facilities registered as stand-alone generation resources as of September 1, 2025",
+   "conditional_on": "Does not apply to resources listed in subsection (b), e.g., co-located at energization or majority-owned by the customer's parent as of January 1, 2025.",
+   "evidence": {
+    "provision": "Section 4 (Utilities Code Sec. 39.169(a))",
+    "quote": "A power generation company, municipally owned utility, or electric cooperative must submit a"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "utility_grid_operator",
+   "modality": "may",
+   "summary": "The electric cooperative, transmission and distribution utility, or municipally owned utility serving the location may object to a net metering arrangement for reasonable cause; no reasonable cause objection may be raised after a final commission decision.",
+   "applies_from": "Effective date of this Act (immediately if two-thirds vote; otherwise September 1, 2025)",
+   "conditional_on": "Applies to net metering arrangements under Utilities Code Sec. 39.169.",
+   "evidence": {
+    "provision": "Section 4 (Utilities Code Sec. 39.169(c))",
+    "quote": "may for reasonable cause including a violation of other law"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "utility_grid_operator",
+   "modality": "shall",
+   "summary": "ERCOT must study the system impacts of the proposed net metering arrangement and removal of generation, and submit results and recommendations to the commission not later than the 120th day after receiving all required information.",
+   "applies_from": "Not later than the 120th day after the independent organization receives all required information",
+   "conditional_on": "Applies to notices under Utilities Code Sec. 39.169(a).",
+   "evidence": {
+    "provision": "Section 4 (Utilities Code Sec. 39.169(d))",
+    "quote": "shall study the system impacts of"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "regulator",
+   "modality": "shall",
+   "summary": "The commission must approve, deny, or impose reasonable conditions on the proposed net metering arrangement, including conditions to maintain reliability, and must require dispatchable capacity to be made available as specified.",
+   "applies_from": "Not later than the 60th day after the commission receives the study results",
+   "conditional_on": "Applies to notices under Utilities Code Sec. 39.169(a).",
+   "evidence": {
+    "provision": "Section 4 (Utilities Code Sec. 39.169(d))",
+    "quote": "the commission shall approve, deny, or impose reasonable conditions on the"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "regulator",
+   "modality": "shall",
+   "summary": "Where conditions imposed on a net metering arrangement are not limited to a specific period, the commission must review them at least every five years to decide whether to extend or rescind them.",
+   "applies_from": "Conditions not limited to a specific period",
+   "conditional_on": "Applies only where the conditions are not limited to a specific period.",
+   "evidence": {
+    "provision": "Section 4 (Utilities Code Sec. 39.169(f))",
+    "quote": "shall review the conditions at least every five years"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "regulator",
+   "modality": "shall",
+   "summary": "The commission must post the decision made on each notice under Sec. 39.169 on its Internet website, except information that is competitively sensitive or otherwise confidential.",
+   "conditional_on": "Applies to each notice submitted under Utilities Code Sec. 39.169.",
+   "evidence": {
+    "provision": "Section 4 (Utilities Code Sec. 39.169(h))",
+    "quote": "The commission shall post the decision made on each"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "regulator",
+   "modality": "shall",
+   "summary": "The commission must require the ERCOT independent organization to ensure that each electric cooperative, transmission and distribution utility, and municipally owned utility serving a transmission-voltage customer develops a load curtailment protocol during firm load shed.",
+   "applies_from": "Loads interconnected after December 31, 2025",
+   "conditional_on": "Excludes critical load industrial customers (Sec. 17.002) and critical natural gas facilities designated under Sec. 38.074.",
+   "evidence": {
+    "provision": "Section 4 (Utilities Code Sec. 39.170(a))",
+    "quote": "The commission shall require the independent organization"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "utility_grid_operator",
+   "modality": "shall",
+   "summary": "The utility serving a transmission-voltage customer must develop a curtailment protocol, including installation of any necessary equipment or technology before interconnection, and must confer with the customer to the extent feasible to shed load in a coordinated manner.",
+   "applies_from": "Loads interconnected after December 31, 2025",
+   "conditional_on": "Excludes critical load industrial customers and critical natural gas facilities designated under Sec. 38.074.",
+   "evidence": {
+    "provision": "Section 4 (Utilities Code Sec. 39.170(a))",
+    "quote": "develops a protocol, including the installation of any necessary equipment"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "regulator",
+   "modality": "shall",
+   "summary": "The commission must require ERCOT to develop a reliability service that competitively procures demand reductions from large load customers with a demand of at least 75 MW for use in anticipated emergency conditions, with rules specifying use periods.",
+   "conditional_on": "Applies to large load customers with a demand of at least 75 megawatts.",
+   "evidence": {
+    "provision": "Section 4 (Utilities Code Sec. 39.170(b))",
+    "quote": "develop a reliability service to competitively procure"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "utility_grid_operator",
+   "modality": "shall",
+   "summary": "ERCOT must provide at least a 24-hour notice to large load customers before deploying the reliability service and require each large load to remain curtailed for the event duration or until safely recalled; ERCOT must also include such deployments when calculating reliability price adjustments.",
+   "conditional_on": "Applies to the reliability service under Utilities Code Sec. 39.170(b).",
+   "evidence": {
+    "provision": "Section 4 (Utilities Code Sec. 39.170(b)(2) and (c))",
+    "quote": "at least a 24-hour notice to large load customers"
+   }
+  },
+  {
+   "type": "prohibition",
+   "addressee": "enterprise",
+   "modality": "shall_not",
+   "summary": "The reliability service rules must prohibit participation by any large load customer that curtails in response to the wholesale price of electricity or that otherwise participates in a different reliability or ancillary service.",
+   "conditional_on": "Applies to large load customers in the reliability service under Utilities Code Sec. 39.170(b).",
+   "evidence": {
+    "provision": "Section 4 (Utilities Code Sec. 39.170(b)(3))",
+    "quote": "prohibit participation by any large load customer that curtails in response"
+   }
+  },
+  {
+   "type": "registration_notification",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "A corporation operating solely as a wholesale water supplier or sewer service in a county under 350,000 population that sells excess generated power in the ERCOT power region must register as a power generation company under Utilities Code Sec. 39.351.",
+   "conditional_on": "Applies only if the corporation primarily generates power for its own water and sewer uses and only for sale of excess power to provide revenue.",
+   "evidence": {
+    "provision": "Section 5 (Water Code Sec. 67.0115(b)(2))",
+    "quote": "registers as a power generation company under Section 39.351"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "A corporation that sells electric power under Sec. 67.0115(b) must account for and use the sales revenue in compliance with Sec. 67.004, only for production and selling costs or a purpose described in Sec. 67.002.",
+   "conditional_on": "Applies to corporations generating electric power for sale under Sec. 67.0115(b).",
+   "evidence": {
+    "provision": "Section 5 (Water Code Sec. 67.0115(c))",
+    "quote": "shall account for and use the revenue from those sales"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "enterprise",
+   "modality": "may",
+   "summary": "A corporation may generate electric power for use in its operations, limited to powering water well, service and treatment pumps and infrastructure for raw water and potable drinking water delivery.",
+   "conditional_on": "Limited to the uses listed in paragraphs (1) and (2); sale of excess power is governed by subsection (b).",
+   "evidence": {
+    "provision": "Section 5 (Water Code Sec. 67.0115(a))",
+    "quote": "A corporation may generate electric power for use in the corporation's operations"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "regulator",
+   "modality": "shall",
+   "summary": "The Public Utility Commission of Texas must evaluate whether the existing wholesale transmission cost methodology under Utilities Code Sec. 35.004(d) appropriately assigns costs, including the four coincident peak methodology and the nonbypassable portion of costs, and whether retail ratemaking charges transmission costs to each customer class.",
+   "applies_from": "Evaluation to begin not later than the 90th day after the effective date of this Act",
+   "conditional_on": "Transitional provision (Section 6).",
+   "evidence": {
+    "provision": "Section 6(a) and (b)",
+    "quote": "The Public Utility Commission of Texas shall evaluate whether the existing methodology"
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "regulator",
+   "modality": "shall",
+   "summary": "After completing the evaluation, the commission must amend its rules to ensure that wholesale transmission charges appropriately assign costs for transmission investment.",
+   "applies_from": "Not later than December 31, 2026",
+   "conditional_on": "Follows completion of the evaluation required under Section 6(a).",
+   "evidence": {
+    "provision": "Section 6(c)",
+    "quote": "the commission shall amend commission rules to ensure"
+   }
+  }
+ ],
+ "section_status": {
+  "enforcement": {
+   "status": "not_found",
+   "note": "The enacted text of SB 6 contains no penalties, fines, criminal sanctions, license revocations, benefit clawbacks, suspensions or blocking provisions. It sets duties (e.g., Sec. 37.0561, Sec. 39.169, Sec. 39.170) and directs the PUC to adopt rules, but it does not state consequences for non-compliance and does not cite another act's penalty provisions."
+  }
+ },
+ "enforcement": []
+}

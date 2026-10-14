@@ -1,0 +1,470 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "br-anatel-res780-2025",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (connectors/fetch_texts.py)",
+  "url": "https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2054-resolucao-780",
+  "retrieved": "2026-10-13",
+  "version": "as fetched",
+  "language": "pt",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "consumer_protection",
+   "compute_data_centers",
+   "cybersecurity"
+  ],
+  "primary_domain": "consumer_protection",
+  "mechanisms": [
+   "mandate_obligation",
+   "prohibition_ban",
+   "licensing_permit_certification",
+   "liability_rule"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "platform_operator",
+   "hardware_supplier",
+   "enterprise",
+   "data_center_operator",
+   "data_center_owner"
+  ],
+  "affected_roles": [
+   "consumers_users"
+  ],
+  "decision_margins": [
+   "firm:compliance_process",
+   "firm:input_use"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national"
+   ],
+   "description": "Issued by Anatel, Brazil's national telecommunications agency; the text contains no explicit territorial clause.",
+   "evidence": {
+    "provision": "Preamble",
+    "quote": "no uso das atribuições que lhe foram conferidas pelo art. 22 da Lei nº 9.472, de 16 de julho de 1997"
+   }
+  },
+  "agora_incentives": [
+   "Civil liability"
+  ],
+  "agora_strategies": [
+   "Licensing, registration, and certification",
+   "Evaluation: Conformity assessment"
+  ]
+ },
+ "summary": {
+  "short": "Amends Anatel's telecom product conformity and homologation rules: makes online marketplaces jointly liable with sellers for non-homologated products, widens sanctionable conduct, and adds a Title VI-A requiring conformity assessment of telecom-network data centers before operation (its enforceability is suspended per the document).",
+  "long": "Amends Anatel's telecom product conformity and homologation regulation (Resolução 715/2019). Art. 1 revokes two provisions. Art. 2 makes marketplaces and other digital platforms involved in selling a product jointly liable with the seller, including for disclosing and checking its homologation code. Art. 3 revises arts. 83-85 to list sanctionable conduct, extends responsibility to platforms for irregular online offers, and allows removal of designated bodies after due process. Art. 4 limits certification of reconditioned products to public-policy purposes; Art. 5 applies the Consumer Protection Code subsidiarily. Art. 6 adds Title VI-A: data centers integrated into telecom networks need conformity assessment before operation, under a procedure due within 240 days; providers may then install or contract only certified new centers, and existing ones have three years to comply. Requirements cover continuous operation, physical and cyber security, energy efficiency and environmental practices. As the document notes, Acórdão nº 58 of 3 March 2026 suspended Art. 6's enforceability pending reassessment. Art. 7: in force on publication, except Arts. 2 and 3, which take effect four months later."
+ },
+ "relations": [
+  {
+   "relation": "legal_basis",
+   "target_text": "Lei nº 9.472, de 16 de julho de 1997",
+   "note": "Enabling statute cited in the preamble (art. 22 powers).",
+   "evidence": {
+    "provision": "Preâmbulo",
+    "quote": "pelo art. 22 da Lei nº 9.472, de 16 de julho de 1997"
+   }
+  },
+  {
+   "relation": "legal_basis",
+   "target_text": "Regulamento da Agência Nacional de Telecomunicações, aprovado pelo Decreto nº 2.338, de 7 de outubro de 1997",
+   "note": "Preamble cites art. 35 of this regulation as a basis for the Council's powers.",
+   "evidence": {
+    "provision": "Preâmbulo",
+    "quote": "pelo art. 35 do Regulamento da Agência Nacional de Telecomunicações, aprovado pelo Decreto nº 2.338, de 7 de outubro de 1997"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Regulamento de Avaliação da Conformidade e de Homologação de Produtos para Telecomunicações, aprovado pela Resolução nº 715, de 23 de outubro de 2019",
+   "note": "Amends arts. 55, 83, 84, 85, 90 and 95 and inserts Título VI-A (arts. 85-A to 85-E). Art. 1 also revokes § 2º of art. 20 and the parágrafo único of art. 63 of that regulation.",
+   "evidence": {
+    "provision": "Art. 1",
+    "quote": "Regulamento de Avaliação da Conformidade e de Homologação de Produtos para Telecomunicações, aprovado pela Resolução nº 715, de 23 de outubro de 2019"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Acordão nº 58, de 3 de março de 2026 (Conselho Diretor; SEI nº 15267178)",
+   "note": "Council decision, quoted in the text, that suspended ex officio the enforceability of art. 6 of this Resolution until the matter is reassessed.",
+   "evidence": {
+    "provision": "Art. 6 (preface to Título VI-A)",
+    "quote": "suspendeu, de ofício, a exigibilidade dos efeitos do art. 6º da Resolução Anatel nº 780, de 1º de agosto de 2025"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Código de Proteção e Defesa do Consumidor",
+   "note": "Art. 5 makes its provisions subsidiarily applicable to commercial relations within the scope of the regulation.",
+   "evidence": {
+    "provision": "Art. 5 (inserting parágrafo único in art. 95)",
+    "quote": "os dispositivos estabelecidos no Código de Proteção e Defesa do Consumidor"
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "Agência Nacional de Telecomunicações (Anatel)",
+   "role": "designated",
+   "function": "Issuing authority of the Resolution. Under the inserted Título VI-A it sets the operational procedure for assessing data centers and the recognition of certifying entities, and designates Organismos de Certificação Designados (Art. 85-E).",
+   "evidence": {
+    "provision": "Preâmbulo",
+    "quote": "O CONSELHO DIRETOR DA AGÊNCIA NACIONAL DE TELECOMUNICAÇÕES"
+   }
+  },
+  {
+   "name": "Superintendência competente (Anatel)",
+   "role": "designated",
+   "function": "Issues the administrative act declaring removal from conformity assessment (Art. 85 § 2º) and may issue complementary rules for designating OCDs and accrediting laboratories for data centers (Art. 85-E, parágrafo único).",
+   "evidence": {
+    "provision": "Art. 85 § 2º",
+    "quote": "A Superintendência competente expedirá o ato administrativo para declarar o afastamento"
+   }
+  },
+  {
+   "name": "Inmetro",
+   "role": "listed",
+   "function": "Public body that must be notified of loss of accreditation conditions where applicable under the removal measures (Art. 85, item II).",
+   "evidence": {
+    "provision": "Art. 85, II",
+    "quote": "a comunicação ao Inmetro da perda das condições de acreditação, quando for o caso"
+   }
+  }
+ ],
+ "notes": "Art. 6 (new Título VI-A on data centers that integrate telecom networks) is suspended per Acordão nº 58 of 3 March 2026, quoted in the text, pending reassessment; the title text is reproduced as adopted. Art. 7: the Resolution enters into force on publication, except arts. 2 and 3, which enter into force 4 months after entry into force (dated relative to entry into force; no fixed date stated). Art. 2 (marketplace joint liability) and Art. 3 (expanded conduct list) are therefore not yet in force on the text's own terms. The text states it does not replace the DOU publication of 4/8/2025. Category-level addressees (marketplaces and digital platforms, telecom providers, data centers) are not listed as named entities.",
+ "events": [
+  {
+   "event": "adopted",
+   "date": "2025-08-01",
+   "date_type": "absolute",
+   "date_text": "Circuito Deliberativo nº 174, de 1º de agosto de 2025",
+   "applies_to": "Conselho Diretor da Anatel (deliberation on the Regulation amendments)",
+   "evidence": {
+    "provision": "Considerandos",
+    "quote": "CONSIDERANDO a deliberação tomada por meio do Circuito Deliberativo nº 174, de 1º de agosto de 2025"
+   }
+  },
+  {
+   "event": "signed",
+   "date": "2025-08-01",
+   "date_type": "absolute",
+   "date_text": "Resolução Anatel nº 780, de 1º de agosto de 2025",
+   "applies_to": "Resolução Anatel nº 780 (as a whole)",
+   "evidence": {
+    "provision": "Title (heading of the Resolution)",
+    "quote": "Resolução Anatel nº 780, de 1º de agosto de 2025"
+   }
+  },
+  {
+   "event": "published",
+   "date": "2025-08-04",
+   "date_type": "absolute",
+   "date_text": "publicado no DOU de 4/8/2025",
+   "applies_to": "Resolução Anatel nº 780 (as a whole)",
+   "evidence": {
+    "provision": "Preface note (Observação)",
+    "quote": "publicado no DOU de 4/8/2025"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2025-08-04",
+   "date_type": "relative",
+   "date_text": "entra em vigor na data de sua publicação",
+   "anchor": "publication in the DOU",
+   "applies_to": "Resolução Anatel nº 780, except Arts. 2º and 3º",
+   "offset_value": 0,
+   "offset_unit": "days",
+   "anchor_event": "published",
+   "evidence": {
+    "provision": "Art. 7º",
+    "quote": "Esta Resolução entra em vigor na data de sua publicação"
+   },
+   "date_computed_from": "published 2025-08-04 (text) + 0 days"
+  },
+  {
+   "event": "entry_into_force",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "entrarão em vigor em 4 (quatro) meses após a entrada em vigor desta Resolução",
+   "anchor": "entry into force of this Resolution (Art. 7º)",
+   "applies_to": "Arts. 2º and 3º (amending Art. 55 and Arts. 83, 84 and 85 of the Regulation)",
+   "offset_value": 4,
+   "offset_unit": "months",
+   "anchor_event": "entry_into_force",
+   "evidence": {
+    "provision": "Art. 7º, parágrafo único",
+    "quote": "entrarão em vigor em 4 (quatro) meses após a entrada em vigor desta Resolução"
+   }
+  },
+  {
+   "event": "suspended",
+   "date": "2026-03-03",
+   "date_type": "absolute",
+   "date_text": "Acordão nº 58, de 3 de março de 2026",
+   "applies_to": "Art. 6º (Title VI-A on data centers), enforceability of its effects suspended ex officio",
+   "evidence": {
+    "provision": "Art. 6º (preliminary note V)",
+    "quote": "suspendeu, de ofício, a exigibilidade dos efeitos do art. 6º"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "deverá ser publicado em até 240 (duzentos e quarenta) dias após a entrada em vigor deste Regulamento",
+   "anchor": "entry into force of this Regulation",
+   "applies_to": "Operational procedure for assessment of data centers integrated in telecommunications networks (Art. 85-B, caput)",
+   "offset_value": 240,
+   "offset_unit": "days",
+   "anchor_event": "entry_into_force",
+   "evidence": {
+    "provision": "Art. 6º (Title VI-A, Art. 85-B, § 1º)",
+    "quote": "deverá ser publicado em até 240 (duzentos e quarenta) dias após a entrada em vigor deste Regulamento"
+   }
+  },
+  {
+   "event": "application",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "Após a publicação do procedimento operacional descrito no caput, as prestadoras de serviços de telecomunicações só poderão instalar ou contratar novos data centers que possuírem o documento que ateste sua avaliação da conformidade",
+   "anchor": "publication of the operational procedure (Art. 85-B, caput)",
+   "depends_on": "publication of the operational procedure under Art. 85-B, § 1º",
+   "applies_to": "New data centers installed or contracted by telecommunications providers",
+   "evidence": {
+    "provision": "Art. 6º (Title VI-A, Art. 85-B, § 2º)",
+    "quote": "só poderão instalar ou contratar novos data centers que possuírem o documento que ateste sua avaliação da conformidade"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "Os atuais data centers terão um prazo de 3 (três) anos, após a entrada em vigor do procedimento operacional, para se adequarem",
+   "anchor": "entry into force of the operational procedure",
+   "depends_on": "entry into force of the operational procedure under Art. 85-B, § 1º",
+   "applies_to": "Existing data centers integrated in telecommunications networks",
+   "offset_value": 3,
+   "offset_unit": "years",
+   "evidence": {
+    "provision": "Art. 6º (Title VI-A, Art. 85-B, § 3º)",
+    "quote": "Os atuais data centers terão um prazo de 3 (três) anos, após a entrada em vigor do procedimento operacional, para se adequarem"
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "verification_gatekeeping",
+   "addressee": "platform_operator",
+   "modality": "shall",
+   "summary": "Marketplaces and other digital platforms involved in the sale of products, including those only doing advertising, must disclose the homologation code in ads and verify the product's regularity; they are jointly liable with the seller (liability element noted, not coded).",
+   "applies_from": "4 (quatro) meses após a entrada em vigor desta Resolução",
+   "evidence": {
+    "provision": "Art. 2 (amending Resolução 715/2019, Art. 55 § 2º; Art. 7 parágrafo único)",
+    "quote": "pela verificação de sua regularidade"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Competent Superintendência must hold a specific fact-finding procedure with contradictory process before applying the administrative measures of Art. 85 caput; the Superintendência must issue the act declaring removal; and it must forward facts of suspected infringements to the monitoring and control Superintendência (Art. 85 §§ 1-3 as amended).",
+   "applies_from": "4 (quatro) meses após a entrada em vigor desta Resolução",
+   "evidence": {
+    "provision": "Art. 3 (amending Resolução 715/2019, Art. 85 § 3º; Art. 7 parágrafo único)",
+    "quote": "deve encaminhar à Superintendência responsável pelo acompanhamento e controle"
+   }
+  },
+  {
+   "type": "eligibility_condition",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Refurbished or remanufactured products must meet Art. 55 and may undergo conformity assessment only when intended for public policies, as defined in a specific operational procedure.",
+   "applies_from": "entrada em vigor na data de sua publicação (Art. 7, caput)",
+   "evidence": {
+    "provision": "Art. 4 (amending Resolução 715/2019, Art. 90 caput)",
+    "quote": "só poderão ser submetidos ao processo de avaliação da conformidade quando destinados ao atendimento de políticas públicas"
+   }
+  },
+  {
+   "type": "labelling_watermarking",
+   "addressee": "enterprise",
+   "modality": "may",
+   "summary": "Refurbished products may bear a Anatel homologation identification different from that applied to original-manufacture products.",
+   "applies_from": "entrada em vigor na data de sua publicação (Art. 7, caput)",
+   "evidence": {
+    "provision": "Art. 4 (amending Resolução 715/2019, Art. 90 parágrafo único)",
+    "quote": "os produtos poderão apresentar identificação da homologação Anatel distinta daquela aplicada aos produtos de fabricação original"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Consumer protection code applies subsidiarily to commercial relations within the scope of the Regulation (duty stated by reference to another law).",
+   "applies_from": "entrada em vigor na data de sua publicação (Art. 7, caput)",
+   "evidence": {
+    "provision": "Art. 5 (adding parágrafo único to Resolução 715/2019, Art. 95; Art. 7 caput)",
+    "quote": "Aplicam-se subsidiariamente às hipóteses referentes às relações comerciais alcançáveis por força deste Regulamento os dispositivos estabelecidos no Código de Proteção e Defesa do Consumidor."
+   }
+  },
+  {
+   "type": "licensing_certification",
+   "addressee": "data_center_operator",
+   "modality": "shall",
+   "summary": "Data centres integrating telecommunications networks must be assessed for conformity with Anatel rules before starting operation, as set out in an operational procedure.",
+   "applies_from": "before the start of operation; the Title is to take effect on publication (Art. 7, caput)",
+   "conditional_on": "Art. 6 suspended: the text states that the Conselho Diretor, by Acórdão nº 58 of 3 March 2026, suspended the enforceability of the effects of Art. 6 (preceding item V)",
+   "evidence": {
+    "provision": "Art. 6 (inserting Resolução 715/2019, Título VI-A, Art. 85-B caput)",
+    "quote": "deverão ser avaliados quanto à conformidade às regras expedidas pela Anatel"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Anatel must publish the operational procedure for data-centre conformity assessment within 240 days after entry into force of the Regulation.",
+   "applies_from": "240 (duzentos e quarenta) dias após a entrada em vigor deste Regulamento",
+   "conditional_on": "Art. 6 suspended per Acórdão nº 58 of 3 March 2026 (preceding item V)",
+   "evidence": {
+    "provision": "Art. 6 (inserting Resolução 715/2019, Título VI-A, Art. 85-B § 1º)",
+    "quote": "O procedimento operacional deverá ser publicado em até 240 (duzentos e quarenta) dias após a entrada em vigor deste Regulamento."
+   }
+  },
+  {
+   "type": "licensing_certification",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Telecommunications service providers may install or contract only new data centres that hold the conformity assessment document issued by the Agency.",
+   "applies_from": "after publication of the operational procedure (Art. 85-B caput, § 1º)",
+   "conditional_on": "Art. 6 suspended per Acórdão nº 58 of 3 March 2026 (preceding item V)",
+   "evidence": {
+    "provision": "Art. 6 (inserting Resolução 715/2019, Título VI-A, Art. 85-B § 2º)",
+    "quote": "só poderão instalar ou contratar novos data centers que possuírem o documento que ateste sua avaliação da conformidade"
+   }
+  },
+  {
+   "type": "licensing_certification",
+   "addressee": "data_center_operator",
+   "modality": "shall",
+   "summary": "Existing data centres must bring themselves into line with the Agency's requirements within 3 years after entry into force of the operational procedure.",
+   "applies_from": "3 (três) anos, após a entrada em vigor do procedimento operacional",
+   "conditional_on": "Art. 6 suspended per Acórdão nº 58 of 3 March 2026 (preceding item V)",
+   "evidence": {
+    "provision": "Art. 6 (inserting Resolução 715/2019, Título VI-A, Art. 85-B § 3º)",
+    "quote": "terão um prazo de 3 (três) anos, após a entrada em vigor do procedimento operacional, para se adequarem ao estabelecido pela Agência."
+   }
+  },
+  {
+   "type": "security_measures",
+   "addressee": "data_center_operator",
+   "modality": "shall",
+   "summary": "Data centres must operate continuously including during failures and disasters (I), have physical security against unauthorised access and threats (II), and have robust cybersecurity against attacks and intrusions (III); the operational procedure is to include these requirements.",
+   "applies_from": "when the operational procedure under Art. 85-B is issued",
+   "conditional_on": "Art. 6 suspended per Acórdão nº 58 of 3 March 2026 (preceding item V)",
+   "evidence": {
+    "provision": "Art. 6 (inserting Resolução 715/2019, Título VI-A, Art. 85-C incisos II e III)",
+    "quote": "possuir segurança cibernética robusta para proteger dados e sistemas contra ataques e invasões"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_center_operator",
+   "modality": "shall",
+   "summary": "Data centres must use technologies and practices promoting energy efficiency and reduced energy consumption (IV) and operate in line with environmental and sustainability best practices (V); to be included in the operational procedure.",
+   "applies_from": "when the operational procedure under Art. 85-B is issued",
+   "conditional_on": "Art. 6 suspended per Acórdão nº 58 of 3 March 2026 (preceding item V)",
+   "evidence": {
+    "provision": "Art. 6 (inserting Resolução 715/2019, Título VI-A, Art. 85-C incisos IV e V)",
+    "quote": "utilizar tecnologias e práticas que promovam a eficiência energética e redução da energia consumida"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The operational procedure must set out the process for recognising entities that will carry out conformity assessment of data centres.",
+   "applies_from": "when the operational procedure under Art. 85-B is issued",
+   "conditional_on": "Art. 6 suspended per Acórdão nº 58 of 3 March 2026 (preceding item V)",
+   "evidence": {
+    "provision": "Art. 6 (inserting Resolução 715/2019, Título VI-A, Art. 85-D)",
+    "quote": "O procedimento operacional deverá indicar, igualmente, o processo de reconhecimento de entidades"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Existing operational procedures for designating Certification Bodies (OCD) and accrediting test laboratories apply, as applicable, to recognition of entities assessing data centres.",
+   "applies_from": "entrada em vigor na data de sua publicação (Art. 7, caput)",
+   "conditional_on": "Art. 6 suspended per Acórdão nº 58 of 3 March 2026 (preceding item V)",
+   "evidence": {
+    "provision": "Art. 6 (inserting Resolução 715/2019, Título VI-A, Art. 85-E caput)",
+    "quote": "Aplicar-se-á, no que couber, os procedimentos operacionais para designação de Organismo de Certificação Designado"
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "government_agency",
+   "modality": "may",
+   "summary": "The Superintendência responsible for the assessment procedure may issue complementary rules on designation of OCDs and accreditation of laboratories for data-centre assessment.",
+   "applies_from": "entrada em vigor na data de sua publicação (Art. 7, caput)",
+   "conditional_on": "Art. 6 suspended per Acórdão nº 58 of 3 March 2026 (preceding item V)",
+   "evidence": {
+    "provision": "Art. 6 (inserting Resolução 715/2019, Título VI-A, Art. 85-E parágrafo único)",
+    "quote": "poderá expedir regras complementares à designação de OCDs e habilitação de Laboratórios"
+   }
+  }
+ ],
+ "enforcement": [
+  {
+   "sanction_type": "other",
+   "authority": "Anatel (regulator issuing the Regulamento; the text does not name the body that imposes sanctions under Art. 83-84)",
+   "triggered_by": "Conduct listed in Art. 83 (use, sale, import or manufacture of non-homologated or non-conforming telecom products, and related marketplace conduct) and Art. 84 (fraud in conformity assessment, breach of homologation commitments, breach of designation or accreditation commitments)",
+   "max_penalty_text": "Not stated in this text; the conduct is subject to sanction 'observada a legislação e a regulamentação específica'",
+   "penalty_reference": "Sanctioning rules referred to as 'legislação e regulamentação específica' (not identified in this text)",
+   "cure_period": "Not stated in this text",
+   "evidence": {
+    "provision": "Art. 3 (amending Regulamento Art. 83; Art. 84 same wording form; in force per Art. 7 par. único, 4 months after entry into force)",
+    "quote": "Art. 83. São condutas passíveis de sancionamento, observada a legislação e a regulamentação específica:"
+   }
+  },
+  {
+   "sanction_type": "license_revocation",
+   "authority": "Anatel; the competent Superintendência issues the act declaring the removal (Art. 85 §2); the Inmetro is notified where accreditation is lost (Art. 85 II)",
+   "triggered_by": "Infractions that involve fraud, documentary falsehood, anticompetitive conduct, or an attempt to circumvent technical standards issued by Anatel, as established in the specific case",
+   "max_penalty_text": "Removal (afastamento) by (I) revocation of the designation; (II) communication to Inmetro of loss of accreditation conditions, where applicable; (III) for non-accredited agents, Requerentes and evaluated professionals, loss of conditions to act in conformity assessment for up to 2 (dois) anos",
+   "penalty_reference": "Art. 85 caput and items I-III (no monetary penalty stated)",
+   "cure_period": "Not stated; §1 requires a specific proceeding ensuring contraditório and ampla defesa before the measures apply",
+   "evidence": {
+    "provision": "Art. 3 (amending Regulamento Art. 85, caput and item I)",
+    "quote": "pode ter seu afastamento com as seguintes medidas administrativas:"
+   }
+  }
+ ],
+ "section_status": {
+  "thresholds": {
+   "status": "not_found",
+   "note": "The text contains numbers but none is a cutoff that changes legal treatment. Art. 85-B §1 (240 days), §3 (3 years) and Art. 7 par. único (4 months) are procedural periods and are coded as events. Art. 85 III (up to 2 years) is an enforcement measure. Art. 85-B applies to data centers integrating telecommunications networks without a numeric size or capacity test. Art. 6 is noted in the text as suspended by Acórdão nº 58, de 3 de março de 2026 (text-internal, not coded here)."
+  },
+  "definitions": {
+   "status": "not_found",
+   "note": "The instrument contains no defined terms. Scope-determining phrases such as 'data centers que integram as redes de telecomunicações' (Art. 85-A) and 'plataformas intermediadoras de comércio eletrônico (marketplaces)' (Art. 2, Art. 3 §2) appear in operative provisions without a definition. 'Organismo de Certificação Designado' and 'Requisito Técnico' are referenced but not defined in this text."
+  }
+ },
+ "thresholds": [],
+ "definitions": []
+}

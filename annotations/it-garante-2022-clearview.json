@@ -1,0 +1,500 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "it-garante-2022-clearview",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium, batch; spot-checked by Claude Opus (Claude Code) 2026-10-14",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-718f7c3f"
+ },
+ "validation": "spot-checked",
+ "text_version": {
+  "source": "official site (connectors/fetch_texts.py)",
+  "url": "https://www.garanteprivacy.it/home/docweb/-/docweb-display/docweb/9751362",
+  "retrieved": "2026-10-13",
+  "version": "as fetched",
+  "language": "it",
+  "extent": "full"
+ },
+ "classification": {
+  "domains": [
+   "data_protection",
+   "biometrics"
+  ],
+  "primary_domain": "data_protection",
+  "mechanisms": [
+   "prohibition_ban",
+   "enforcement_order"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "data_controller"
+  ],
+  "affected_roles": [
+   "general_public"
+  ],
+  "decision_margins": [
+   "firm:input_use",
+   "firm:compliance_process",
+   "household:data_privacy"
+  ],
+  "territorial_scope": {
+   "types": [
+    "extraterritorial",
+    "targeted"
+   ],
+   "description": "Applies to a US-based company with no EU establishment under GDPR Article 3(2); the orders are addressed to Clearview AI by name and limited to persons in Italy.",
+   "evidence": {
+    "provision": "Sec. 3.2; GDPR Art. 3(2)",
+    "quote": "porta a ritenere integrati i presupposti di applicabilità dell’art. 3.2 del Regolamento"
+   }
+  },
+  "agora_applications": [
+   "Government: judicial and law enforcement"
+  ],
+  "agora_harms": [
+   "Violation of civil or human rights, including privacy"
+  ],
+  "agora_incentives": [
+   "Fines"
+  ],
+  "agora_risk_factors": [
+   "Privacy",
+   "Transparency"
+  ]
+ },
+ "summary": {
+  "short": "Italian data protection authority (Garante) decision of 10 February 2022 finding that US company Clearview AI unlawfully processed personal data, including biometric data, of persons in Italy. It orders a ban on further scraping and processing, deletion of data, designation of an EU representative, and a €20 million fine.",
+  "long": "The Italian data protection authority (Garante) decision of 10 February 2022 finds that Clearview AI Inc., a US company with no EU establishment, unlawfully processed personal data, including biometric data, of persons in Italy through web scraping of publicly available images and a facial-recognition search service. It holds that the GDPR applies under Article 3(2) and finds breaches of Articles 5(1)(a), (b) and (e), 6, 9, 12, 13, 14, 15 and 27; no breach of Article 22 is found. Operative orders: a prohibition on further web scraping of images and metadata of persons in Italy and on further processing of such data (Art. 58(2)(f)); deletion of that data (Art. 58(2)(g)); designation of a representative in the EU within 30 days (Art. 58(2)(d)); and a report on measures taken within 30 days. The Garante imposes an administrative fine of EUR 20 million under Article 83(5) and orders publication of the decision on its website. The decision notes the company may settle by complying and paying half the fine within 60 days; judicial opposition is available within 30 days."
+ },
+ "relations": [
+  {
+   "relation": "legal_basis",
+   "target_text": "Regolamento (UE) 2016/679 (GDPR)",
+   "note": "The GDPR is the regulation under which the proceeding, the corrective measures and the administrative fine are adopted.",
+   "evidence": {
+    "provision": "Preambolo (VISTO)",
+    "quote": "VISTO il Regolamento (UE) 2016/679 del Parlamento europeo e del Consiglio, del 27 aprile 2016"
+   }
+  },
+  {
+   "relation": "legal_basis",
+   "target_text": "Codice in materia di protezione dei dati personali (d.lgs. 30 giugno 2003, n. 196), come modificato dal d.lgs. 10 agosto 2018, n. 101",
+   "note": "National data protection code cited as basis for the proceeding (art. 166 Codice) and for the publication and appeal provisions.",
+   "evidence": {
+    "provision": "Preambolo (VISTO)",
+    "quote": "VISTO il Codice in materia di protezione dei dati personali (d.lgs. 30 giugno 2003, n. 196), come modificato dal d.lgs. 10 agosto 2018, n. 101"
+   }
+  },
+  {
+   "relation": "legal_basis",
+   "target_text": "Regolamento del Garante n. 1/2019 (procedure interne aventi rilevanza esterna)",
+   "note": "Internal procedural regulation of the Garante cited for the injunction order (art. 16) and the annotation of the violations (art. 17).",
+   "evidence": {
+    "provision": "Preambolo (VISTO)",
+    "quote": "VISTO il Regolamento n. 1/2019 concernente le procedure interne aventi rilevanza esterna"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "d.l. 139/2021, convertito con modificazioni nella l. 205/2021 (decreto capienze)",
+   "note": "Section 3.4 describes a moratorium on biometric facial recognition systems in public places until 31 December 2023, with law-enforcement exceptions under d.lgs. 51/2018. Cited as context; not applied to the findings on Clearview.",
+   "evidence": {
+    "provision": "3.4 Sussistenza di un trattamento di dati personali e considerazioni generali sulla liceità",
+    "quote": "è stata disposta, col d.l. 139/2021, convertito con modificazioni nella l. 205/2021"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "EDPB Guidelines 3/2018 on territorial scope",
+   "note": "Relied on for the interpretation of the art. 3(2) targeting criteria (offering goods or services and monitoring of behaviour).",
+   "evidence": {
+    "provision": "3.2 Sussistenza della giurisdizione eurounitaria",
+    "quote": "“Guidelines 3/2018 on territorial scope”, adottate dal Comitato per la protezione dei dati personali il 12 novembre 2019"
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "Clearview AI Inc.",
+   "role": "addressee",
+   "function": "Respondent found to have unlawfully processed personal data; ordered to pay a fine of EUR 20 million, to stop processing and web scraping of images of persons in Italy, to delete the data, and to designate a representative in the EU.",
+   "evidence": {
+    "provision": "Premesso, 1. Introduzione",
+    "quote": "della società statunitense Clearview AI Inc. (di seguito “Clearview” o “Società”)"
+   }
+  },
+  {
+   "name": "Garante per la protezione dei dati personali",
+   "role": "designated",
+   "function": "Italian supervisory authority that adopted the injunction order and the corrective measures under art. 58(2) GDPR and the fine under art. 83 GDPR.",
+   "evidence": {
+    "provision": "Intestazione",
+    "quote": "IL GARANTE PER LA PROTEZIONE DEI DATI PERSONALI"
+   }
+  },
+  {
+   "name": "Polizia di Stato",
+   "role": "listed",
+   "function": "Named in a 2021 notification requesting that the Office verify use of Clearview services by this body; the decision records the request and does not make a finding on that use.",
+   "evidence": {
+    "provision": "1. Introduzione",
+    "quote": "la fruizione dei servizi offerti da Clearview da parte della Polizia di Stato"
+   }
+  }
+ ],
+ "notes": "The text uses placeholder URLs (https://...) and redacted complainant identifiers (XX), so URL-level facts cannot be verified from the document. The EUR 20 million fine is the statutory maximum under art. 83(5) and is stated as applied; the breakdown (3.8 million for each violation of arts. 5, 6 and 9; 2 million for each of arts. 12-15; 600,000 for art. 27) sums to 20 million. Company submissions on jurisdiction and on its non-application of the GDPR are recorded as the company's position and rejected by the Garante. Art. 22 was not found violated. The decision allows settlement at half the fine under art. 166(8) Codice; this option is not coded as an event. The conclusions list arts. 5(1)(a), (b), (e), 6, 9, 12, 13, 14, 15 and 27, while section 3.6.4 states the violation of arts. 12, 15, 13 and 14 in one sentence.",
+ "events": [
+  {
+   "event": "adopted",
+   "date": "2022-02-10",
+   "date_type": "absolute",
+   "date_text": "Registro dei provvedimenti n. 50 del 10 febbraio 2022",
+   "applies_to": "Garante decision (ordinanza ingiunzione) against Clearview AI",
+   "evidence": {
+    "provision": "Header (Registro dei provvedimenti)",
+    "quote": "n. 50 del 10 febbraio 2022"
+   }
+  },
+  {
+   "event": "signed",
+   "date": "2022-02-10",
+   "date_type": "absolute",
+   "date_text": "Roma, 10 febbraio 2022",
+   "applies_to": "Garante decision (ordinanza ingiunzione), signed by the President, the rapporteur and the Secretary General",
+   "evidence": {
+    "provision": "Closing (signature block)",
+    "quote": "Roma, 10 febbraio 2022"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "entro trenta giorni dalla notifica del provvedimento",
+   "anchor": "notifica del provvedimento",
+   "applies_to": "Designation of a representative in the Italian territory (art. 58(2)(d) GDPR), as ordered to Clearview AI",
+   "offset_value": 30,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Part 4 (Misure correttive) and Dispositivo c)",
+    "quote": "entro trenta giorni dalla notifica del provvedimento"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "entro trenta giorni dalla notifica del presente provvedimento",
+   "anchor": "notifica del presente provvedimento",
+   "applies_to": "Communication to the Garante of the initiatives taken to implement the ordered measures, with documented feedback (art. 58(1)(a) GDPR and art. 157 Codice)",
+   "offset_value": 30,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Part 4 (Misure correttive)",
+    "quote": "entro trenta giorni dalla notifica del presente provvedimento"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "entro 30 giorni dalla data di ricezione del presente provvedimento",
+   "anchor": "ricezione del presente provvedimento",
+   "applies_to": "Communication of the initiatives taken to implement the decision (art. 58(1)(a) GDPR), as invited to the controller",
+   "offset_value": 30,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Dispositivo (final invitation to the controller)",
+    "quote": "entro 30 giorni dalla data di ricezione del presente provvedimento"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "entro 30 giorni dalla notificazione del presente provvedimento",
+   "anchor": "notificazione del presente provvedimento",
+   "applies_to": "Payment of the administrative fine of 20 million euros, failing settlement under art. 166(8) Codice; non-payment leads to enforcement under art. 27 l. 689/1981",
+   "offset_value": 30,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Part 5 (Ordinanza ingiunzione), Ingiunge",
+    "quote": "entro 30 giorni dalla notificazione del presente provvedimento"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "entro il termine di sessanta giorni",
+   "anchor": "decorrenza non indicata nel testo",
+   "applies_to": "Settlement of the proceedings under art. 166(8) Codice by compliance with the orders and payment of half the fine",
+   "offset_value": 60,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Part 5 (Ordinanza ingiunzione), Ordina",
+    "quote": "entro il termine di sessanta giorni"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "relative",
+   "date_text": "entro il termine di trenta giorni dalla data di comunicazione del provvedimento stesso",
+   "anchor": "comunicazione del provvedimento",
+   "applies_to": "Opposition to the ordinary judicial authority (art. 78 GDPR, art. 152 Codice, art. 10 d.lgs. 150/2011); the text sets 60 days if the applicant resides abroad",
+   "offset_value": 30,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Final notice (Ai sensi dell'art. 78)",
+    "quote": "entro il termine di trenta giorni dalla data di comunicazione del provvedimento stesso"
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "dati biometrici",
+   "defined_in": "Regolamento (UE) 2016/679 (GDPR), art. 4(1)(14), as quoted in the decision",
+   "evidence": {
+    "provision": "3.4",
+    "quote": "I dati personali ottenuti da un trattamento tecnico specifico relativi alle caratteristiche fisiche, fisiologiche o comportamentali di una persona fisica che ne consentono o confermano l’identificazione univoca, quali l’immagine facciale, sono definiti “dati biometrici”"
+   }
+  },
+  {
+   "term": "dato personale",
+   "defined_in": "Regolamento (UE) 2016/679 (GDPR), art. 4(1)(1), as applied in the decision",
+   "evidence": {
+    "provision": "3.4",
+    "quote": "un’immagine fotografica costituisce, ai sensi dell’art. 4, par. 1, n. 1), del Regolamento, “dato personale” nella misura in cui consenta l’identificazione di una persona fisica (interessato)"
+   }
+  },
+  {
+   "term": "profilazione",
+   "defined_in": "Regolamento (UE) 2016/679 (GDPR), art. 4(1)(4), as quoted in the decision",
+   "evidence": {
+    "provision": "3.2",
+    "quote": "qualsiasi forma di trattamento automatizzato di dati personali"
+   }
+  },
+  {
+   "term": "trattamento",
+   "defined_in": "Regolamento (UE) 2016/679 (GDPR), art. 4(1)(2), as quoted in the decision",
+   "evidence": {
+    "provision": "3.4",
+    "quote": "qualsiasi operazione o insieme di operazioni […] applicate a dati personali"
+   }
+  },
+  {
+   "term": "titolare del trattamento",
+   "defined_in": "Regolamento (UE) 2016/679 (GDPR), art. 4(1)(7), as applied in the decision",
+   "evidence": {
+    "provision": "3.5",
+    "quote": "debba essere considerato tale chi determina le finalità e i mezzi del trattamento"
+   }
+  },
+  {
+   "term": "trattamento transfrontaliero",
+   "defined_in": "Regolamento (UE) 2016/679 (GDPR), art. 4(1)(23), as applied in the decision",
+   "evidence": {
+    "provision": "3.3",
+    "quote": "trattamento transfrontaliero di dati personali ai sensi dell’art. 4, par. 1, n. 23 del Regolamento"
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "prohibition",
+   "addressee": "data_controller",
+   "modality": "shall_not",
+   "summary": "Clearview is prohibited from further collection, by web scraping, of images and related metadata of persons located in Italian territory, and from any further processing of common and biometric data of such persons.",
+   "evidence": {
+    "provision": "Sez. 4 (Misure correttive), punto i); Parte dispositiva, lett. a)",
+    "quote": "divieto di ulteriore raccolta, mediante tecniche di web scraping, di immagini e relativi metadati concernenti persone che si trovano nel territorio italiano"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Clearview is ordered to erase common and biometric data processed through its facial recognition system concerning persons located in Italy, without prejudice to responding to data subject rights requests under Arts. 15-22 GDPR.",
+   "evidence": {
+    "provision": "Sez. 4 (Misure correttive); Parte dispositiva, lett. b)",
+    "quote": "ordina la cancellazione dei dati, comuni e biometrici"
+   }
+  },
+  {
+   "type": "data_subject_rights",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Clearview must continue to provide timely responses to data subject requests under Arts. 15-22 GDPR received in the meantime, in compliance with the timing rules of Art. 12(3) GDPR.",
+   "evidence": {
+    "provision": "Parte dispositiva, lett. b)",
+    "quote": "fermo l’obbligo di fornire puntuale riscontro alle richieste di esercizio dei diritti di cui agli artt. 15-22 del Regolamento"
+   }
+  },
+  {
+   "type": "appointment_of_representative",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Clearview is ordered to designate a representative in the European Union to act as contact point, in addition to or in place of the controller, for data subjects.",
+   "applies_from": "within thirty days from notification of the decision",
+   "evidence": {
+    "provision": "Parte dispositiva, lett. c)",
+    "quote": "di designare un rappresentante nel territorio dell’Unione europea"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Clearview must report to the Garante, with documented evidence, the measures taken to implement the prohibition, erasure and data subject measures ordered.",
+   "applies_from": "within thirty days from notification of the decision",
+   "evidence": {
+    "provision": "Sez. 4 (Misure correttive)",
+    "quote": "la Società dovrà comunicare a questa Autorità"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_controller",
+   "modality": "shall",
+   "summary": "Clearview is ordered to pay an administrative fine of EUR 20 million; under Art. 166(8) of the Codice it may settle the dispute by complying with the orders and paying half the fine within sixty days, otherwise payment is due within 30 days of notification.",
+   "applies_from": "within thirty days from notification if the dispute is not settled under Art. 166(8) Codice",
+   "conditional_on": "no settlement under Art. 166(8) of the Codice",
+   "evidence": {
+    "provision": "Ordinanza ingiunzione (ORDINA e INGIUNGE)",
+    "quote": "di pagare la somma di euro venti milioni a titolo di sanzione amministrativa pecuniaria"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Garante is directed to publish the full decision on its website, under Art. 166(7) of the Codice.",
+   "evidence": {
+    "provision": "Parte dispositiva, DISPONE lett. b)",
+    "quote": "la pubblicazione per intero del presente provvedimento nel sito web del Garante"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Garante is directed to record the violations and measures adopted in its internal register under Art. 57(1)(u) GDPR.",
+   "evidence": {
+    "provision": "Parte dispositiva, DISPONE lett. a)",
+    "quote": "l’annotazione nel registro interno dell’Autorità"
+   }
+  }
+ ],
+ "enforcement": [
+  {
+   "sanction_type": "administrative_fine",
+   "authority": "Garante per la protezione dei dati personali",
+   "triggered_by": "Violations of GDPR arts 5(1)(a), (b) and (e), 6, 9, 12, 13, 14, 15 and 27 found by the Garante",
+   "max_penalty_text": "20 million euro or, for undertakings, 4% of total worldwide annual turnover of the preceding financial year if higher (art. 83(5) GDPR, as stated in the text); fine imposed: 20 million euro",
+   "max_penalty_amount": 20000000,
+   "currency": "EUR",
+   "penalty_formula": "Fine imposed as 20 million euro in total: 3.8 million per violation of arts 5, 6 and 9; 2 million per violation of arts 12, 13, 14 and 15; 600,000 for art. 27. Settlement option: pay half the fine within sixty days (art. 166, comma 8, Codice).",
+   "penalty_reference": "Art. 83(5) GDPR; Art. 83(3) GDPR; Art. 166 Codice",
+   "cure_period": "not stated",
+   "evidence": {
+    "provision": "Sec. 5 (Ordinanza ingiunzione per l'applicazione della sanzione amministrativa pecuniaria)",
+    "quote": "sanzione prevista dall’art. 83, par. 5, la quale fissa il massimo edittale nella somma di 20 milioni di euro ovvero, per le imprese, nel 4% del fatturato mondiale annuo dell’esercizio precedente ove superiore."
+   }
+  },
+  {
+   "sanction_type": "administrative_fine",
+   "authority": "Garante per la protezione dei dati personali",
+   "triggered_by": "Non-compliance with the Garante's processing ban or the order under GDPR art. 58(2)",
+   "max_penalty_text": "Sanction under art. 83(5)(e) GDPR; the maximum amount is not restated in this text",
+   "currency": "EUR",
+   "penalty_formula": "Cross-reference to art. 83(5)(e) GDPR; no amount stated in this text",
+   "penalty_reference": "Art. 83(5)(e) GDPR; Art. 58(2) GDPR",
+   "cure_period": "not stated",
+   "evidence": {
+    "provision": "Sec. 5",
+    "quote": "in caso di inosservanza del medesimo provvedimento, è altresì applicata in sede amministrativa la sanzione di cui all’art. 83, par. 5, lett. e), del Regolamento"
+   }
+  },
+  {
+   "sanction_type": "criminal_penalty",
+   "authority": "not specified in text",
+   "triggered_by": "Non-compliance with the processing ban by a person obliged to comply with it",
+   "max_penalty_text": "reclusione da tre mesi a due anni (imprisonment from three months to two years)",
+   "currency": "not applicable",
+   "penalty_formula": "Imprisonment only; no amount stated in this text",
+   "penalty_reference": "Art. 170 Codice (d.lgs. 196/2003)",
+   "cure_period": "not stated",
+   "evidence": {
+    "provision": "Sec. 5",
+    "quote": "chiunque, essendovi tenuto, non osserva il presente provvedimento di divieto del trattamento è punito con la reclusione da tre mesi a due anni"
+   }
+  },
+  {
+   "sanction_type": "injunction_order",
+   "authority": "Garante per la protezione dei dati personali",
+   "triggered_by": "Unlawful processing of personal data found by the Garante (GDPR arts 5, 6, 9, 12-15 and 27)",
+   "max_penalty_text": "not applicable (corrective measure under art. 58(2)(f) GDPR)",
+   "currency": "not applicable",
+   "penalty_formula": "not applicable",
+   "penalty_reference": "Art. 58(2)(f) GDPR",
+   "cure_period": "not stated",
+   "evidence": {
+    "provision": "Dispositivo, lett. a)",
+    "quote": "dispone il divieto di prosecuzione del trattamento e di ulteriore raccolta, mediante tecniche di web scraping, di immagini"
+   }
+  },
+  {
+   "sanction_type": "injunction_order",
+   "authority": "Garante per la protezione dei dati personali",
+   "triggered_by": "Unlawful processing of personal data found by the Garante (GDPR arts 5, 6, 9, 12-15 and 27)",
+   "max_penalty_text": "not applicable (corrective measure under art. 58(2)(g) GDPR)",
+   "currency": "not applicable",
+   "penalty_formula": "not applicable",
+   "penalty_reference": "Art. 58(2)(g) GDPR",
+   "cure_period": "not stated",
+   "evidence": {
+    "provision": "Dispositivo, lett. b)",
+    "quote": "ordina la cancellazione dei dati, comuni e biometrici"
+   }
+  },
+  {
+   "sanction_type": "injunction_order",
+   "authority": "Garante per la protezione dei dati personali",
+   "triggered_by": "Failure to designate a representative in the EU under GDPR art. 27",
+   "max_penalty_text": "not applicable (corrective measure under art. 58(2)(d) GDPR)",
+   "currency": "not applicable",
+   "penalty_formula": "not applicable",
+   "penalty_reference": "Art. 58(2)(d) GDPR; Art. 27 GDPR",
+   "cure_period": "30 days from notification of the order to designate the representative",
+   "evidence": {
+    "provision": "Dispositivo, lett. c)",
+    "quote": "ingiunge alla Società, entro trenta giorni dalla notifica del provvedimento, di designare un rappresentante nel territorio dell’Unione europea"
+   }
+  },
+  {
+   "sanction_type": "other",
+   "authority": "Garante per la protezione dei dati personali",
+   "triggered_by": "Particular sensitivity of the personal data processed (accessory sanction)",
+   "max_penalty_text": "Publication on the Garante website of the decision (accessory sanction)",
+   "currency": "not applicable",
+   "penalty_formula": "not applicable",
+   "penalty_reference": "Art. 166 comma 7 Codice; Art. 16 Regolamento del Garante n. 1/2019",
+   "cure_period": "not stated",
+   "evidence": {
+    "provision": "Sec. 5",
+    "quote": "si ritiene altresì che debba applicarsi la sanzione accessoria della pubblicazione sul sito del Garante del presente provvedimento"
+   }
+  }
+ ],
+ "section_status": {
+  "thresholds": {
+   "status": "not_found",
+   "note": "No numeric cutoff in the decision changes the legal treatment of a person or entity. The EUR 20 million and 4% turnover figures are penalty maxima (enforcement, not coded here). The 30-day and one-month response periods are procedural time limits. The two-requests-in-twelve-months limit is a term of Clearview's own policy. The 512-vector and 10-billion-image figures are technical description or company claims. The moratorium runs to 31 December 2023 and is recorded as a date."
+  }
+ },
+ "thresholds": []
+}

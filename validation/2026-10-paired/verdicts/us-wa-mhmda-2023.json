@@ -1,0 +1,633 @@
+{
+ "instrument_id": "us-wa-mhmda-2023",
+ "checker": "claude-opus-5-5 (Claude Code)",
+ "protocol": "VP-1.0",
+ "date": "2026-10-14",
+ "reference": [
+  {
+   "category": "threshold",
+   "provision": "Sec. 3(2)(a)",
+   "quote": "Ownership of, or the power to vote, more than 50 percent of the outstanding shares of any class of voting security of a company",
+   "value": "> 50% of voting shares = control (affiliate definition)",
+   "match": {
+    "X": 5,
+    "Y": 3
+   }
+  },
+  {
+   "category": "threshold",
+   "provision": "Sec. 3(14)",
+   "quote": "\"geofence\" means a virtual boundary that is 2,000 feet or less from the perimeter of the physical location",
+   "value": "<= 2,000 feet (geofence scope, relevant to Sec. 10 prohibition)",
+   "match": {
+    "X": 0,
+    "Y": 4
+   }
+  },
+  {
+   "category": "threshold",
+   "provision": "Sec. 3(19)",
+   "quote": "directly identifies the specific location of an individual with precision and accuracy within a radius of 1,750 feet",
+   "value": "within 1,750 feet radius (precise location information)",
+   "match": {
+    "X": 1,
+    "Y": 5
+   }
+  },
+  {
+   "category": "threshold",
+   "provision": "Sec. 3(28)(a)",
+   "quote": "Collects, processes, sells, or shares consumer health data of fewer than 100,000 consumers during a calendar year",
+   "value": "< 100,000 consumers per calendar year = small business",
+   "match": {
+    "X": 2,
+    "Y": 0
+   }
+  },
+  {
+   "category": "threshold",
+   "provision": "Sec. 3(28)(b)",
+   "quote": "Derives less than 50 percent of gross revenue from the collection, processing, selling, or sharing of consumer health data",
+   "value": "< 50% of gross revenue from consumer health data (jointly with < 25,000 consumers) = small business",
+   "match": {
+    "X": 3,
+    "Y": 1
+   }
+  },
+  {
+   "category": "threshold",
+   "provision": "Sec. 3(28)(b)",
+   "quote": "controls, processes, sells, or shares consumer health data of fewer than 25,000 consumers",
+   "value": "< 25,000 consumers (jointly with < 50% revenue) = small business",
+   "match": {
+    "X": 4,
+    "Y": 2
+   }
+  },
+  {
+   "category": "threshold",
+   "provision": "Sec. 6(1)(f)",
+   "quote": "must be provided by a regulated entity and a small business free of charge, up to twice annually per consumer",
+   "value": "<= 2 requests per year per consumer free of charge",
+   "match": {
+    "X": 6,
+    "Y": null
+   }
+  },
+  {
+   "category": "key_date",
+   "provision": "Certification / history",
+   "quote": "Passed by the Senate April 5, 2023",
+   "value": "2023-04-05 passed Senate",
+   "match": {
+    "X": 1,
+    "Y": 1
+   }
+  },
+  {
+   "category": "key_date",
+   "provision": "Certification / history",
+   "quote": "Passed by the House April 17, 2023",
+   "value": "2023-04-17 passed House (final passage)",
+   "match": {
+    "X": 2,
+    "Y": 2
+   }
+  },
+  {
+   "category": "key_date",
+   "provision": "Certification / history",
+   "quote": "Approved by the Governor April 27, 2023",
+   "value": "2023-04-27 signed by Governor (and filed with Secretary of State)",
+   "match": {
+    "X": 3,
+    "Y": 3
+   }
+  },
+  {
+   "category": "key_date",
+   "provision": "Certification",
+   "quote": "EFFECTIVE DATE: July 23, 2023",
+   "value": "2023-07-23 effective date",
+   "match": {
+    "X": 5,
+    "Y": 5
+   }
+  },
+  {
+   "category": "key_date",
+   "provision": "Secs. 4(1), 5(1), 6(1), 7(1), 8(1), 9(1)",
+   "quote": "beginning March 31, 2024, a regulated entity and a small business shall maintain a consumer health data privacy policy",
+   "value": "2024-03-31 application of Secs. 4-9 to regulated entities",
+   "match": {
+    "X": 6,
+    "Y": 6
+   }
+  },
+  {
+   "category": "key_date",
+   "provision": "Secs. 4(2), 5(2), 6(2), 7(2), 8(2), 9(6)",
+   "quote": "A small business must comply with this section beginning June 30, 2024.",
+   "value": "2024-06-30 application to small businesses",
+   "match": {
+    "X": 7,
+    "Y": 12
+   }
+  },
+  {
+   "category": "key_date",
+   "provision": "Sec. 13(4)",
+   "quote": "The joint committee shall submit a report of its findings and recommendations to the governor and the appropriate committees of the legislature by September 30, 2030.",
+   "value": "2030-09-30 JLARC report deadline",
+   "match": {
+    "X": 12,
+    "Y": 17
+   }
+  },
+  {
+   "category": "key_date",
+   "provision": "Sec. 13(5)",
+   "quote": "This section expires June 30, 2031.",
+   "value": "2031-06-30 sunset of Sec. 13",
+   "match": {
+    "X": 13,
+    "Y": 18
+   }
+  },
+  {
+   "category": "sanction",
+   "provision": "Sec. 11",
+   "quote": "A violation of this chapter is not reasonable in relation to the development and preservation of business, and is an unfair or deceptive act in trade or commerce and an unfair method of competition for the purpose of applying the consumer protection act, chapter 19.86 RCW.",
+   "value": "Enforcement via Consumer Protection Act (ch. 19.86 RCW), by AG and consumers; no maximum stated in this text (penalty by reference)",
+   "match": {
+    "X": 0,
+    "Y": 0
+   }
+  }
+ ],
+ "judgments": {
+  "X": {
+   "thresholds": [
+    {
+     "index": 0,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 1,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 2,
+     "verdict": "correct",
+     "note": "phase_in trigger fits: small-business status only changes compliance dates"
+    },
+    {
+     "index": 3,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 4,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 5,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 6,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 7,
+     "verdict": "unsupported",
+     "note": "one-year validity term of a sale authorization is a required content item/time period (Sec. 9(2)(h)), not a cutoff that changes legal treatment"
+    }
+   ],
+   "events": [
+    {
+     "index": 0,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 1,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 2,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 3,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 4,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 5,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 6,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 7,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 8,
+     "verdict": "correct",
+     "note": "date_type coded conditional rather than relative; anchor and offset correct, treated as minor"
+    },
+    {
+     "index": 9,
+     "verdict": "correct",
+     "note": "date_type coded conditional rather than relative; anchor and offset correct, treated as minor"
+    },
+    {
+     "index": 10,
+     "verdict": "correct",
+     "note": "date_type coded conditional rather than relative; anchor and offset correct, treated as minor"
+    },
+    {
+     "index": 11,
+     "verdict": "correct",
+     "note": "date_type coded conditional rather than relative; anchor and offset correct, treated as minor"
+    },
+    {
+     "index": 12,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 13,
+     "verdict": "correct",
+     "note": ""
+    }
+   ],
+   "obligations": [
+    {
+     "index": 0,
+     "verdict": "unsupported",
+     "note": "Sec. 3(6)(b) is part of the definition of consent, not a separate duty"
+    },
+    {
+     "index": 1,
+     "verdict": "unsupported",
+     "note": "Sec. 3(10) lists conditions for data to count as deidentified (definition), not an obligation"
+    },
+    {
+     "index": 2,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 3,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 4,
+     "verdict": "correct",
+     "note": "small-business compliance row; split allowed because start date differs; addressee enterprise is a stretch (small businesses are regulated entities, data_controller preferable) but accepted"
+    },
+    {
+     "index": 5,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 6,
+     "verdict": "correct",
+     "note": "separate type (notice) for the consent-request disclosure in the same article; allowed"
+    },
+    {
+     "index": 7,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 8,
+     "verdict": "correct",
+     "note": "small-business compliance row; split allowed because start date differs; addressee enterprise is a stretch (small businesses are regulated entities, data_controller preferable) but accepted"
+    },
+    {
+     "index": 9,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 10,
+     "verdict": "correct",
+     "note": "downstream recipients (affiliates, processors, third parties) honour deletion requests; distinct role"
+    },
+    {
+     "index": 11,
+     "verdict": "correct",
+     "note": "small-business compliance row; split allowed because start date differs; addressee enterprise is a stretch (small businesses are regulated entities, data_controller preferable) but accepted"
+    },
+    {
+     "index": 12,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 13,
+     "verdict": "correct",
+     "note": "small-business compliance row; split allowed because start date differs; addressee enterprise is a stretch (small businesses are regulated entities, data_controller preferable) but accepted"
+    },
+    {
+     "index": 14,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 15,
+     "verdict": "correct",
+     "note": "literal reading of Sec. 8(2); small-business compliance row; split allowed because start date differs; addressee enterprise is a stretch (small businesses are regulated entities, data_controller preferable) but accepted"
+    },
+    {
+     "index": 16,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 17,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 18,
+     "verdict": "correct",
+     "note": "small-business compliance row; split allowed because start date differs; addressee enterprise is a stretch (small businesses are regulated entities, data_controller preferable) but accepted"
+    },
+    {
+     "index": 19,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 20,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 21,
+     "verdict": "duplicate",
+     "note": "granularity: same article (Sec. 13), role (government_agency) and type (government_duty) as [20]; should be one row"
+    }
+   ],
+   "enforcement": [
+    {
+     "index": 0,
+     "verdict": "correct",
+     "note": "CPA by reference, no amount; private right of action supported by Sec. 13(1) reference to enforcement actions by consumers"
+    }
+   ]
+  },
+  "Y": {
+   "thresholds": [
+    {
+     "index": 0,
+     "verdict": "correct",
+     "note": "designation_category acceptable (phase_in would be more precise)"
+    },
+    {
+     "index": 1,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 2,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 3,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 4,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 5,
+     "verdict": "correct",
+     "note": ""
+    }
+   ],
+   "events": [
+    {
+     "index": 0,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 1,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 2,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 3,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 4,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 5,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 6,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 7,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 8,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 9,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 10,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 11,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 12,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 13,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 14,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 15,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 16,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 17,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 18,
+     "verdict": "correct",
+     "note": ""
+    }
+   ],
+   "obligations": [
+    {
+     "index": 0,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 1,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 2,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 3,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 4,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 5,
+     "verdict": "correct",
+     "note": "appeal process coded as complaint_mechanism, separate type in same article; allowed"
+    },
+    {
+     "index": 6,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 7,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 8,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 9,
+     "verdict": "correct",
+     "note": "authorization content requirements coded as consent, separate type from the Sec. 9(1) prohibition; allowed by type split"
+    },
+    {
+     "index": 10,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 11,
+     "verdict": "correct",
+     "note": ""
+    },
+    {
+     "index": 12,
+     "verdict": "unsupported",
+     "note": "Sec. 12(4) allocates a burden of proof for the exemption; not a conduct duty"
+    },
+    {
+     "index": 13,
+     "verdict": "correct",
+     "note": ""
+    }
+   ],
+   "enforcement": [
+    {
+     "index": 0,
+     "verdict": "correct",
+     "note": "CPA by reference, no amount; private_right_of_action field omitted although Sec. 13(1) refers to enforcement actions by consumers"
+    }
+   ]
+  }
+ },
+ "sampling": {
+  "X": {},
+  "Y": {}
+ },
+ "classification": {
+  "X": {
+   "domains": "right",
+   "primary_domain": "right",
+   "note": "data_protection primary, consumer_protection via Sec. 11 CPA; biometrics omitted acceptably (biometric data is only one category of consumer health data)"
+  },
+  "Y": {
+   "domains": "right",
+   "primary_domain": "right",
+   "note": "same as X"
+  }
+ },
+ "reference_scope": "full text",
+ "notes": "Reference key dates restricted to legislative history, effective date, application/phase-in dates, report deadline and sunset; procedural 45-day/6-month limits not listed as reference items. Both versions code them as deadline events. Y omits the free-of-charge twice-annually threshold (mentioned only in an obligation summary)."
+}

@@ -1,0 +1,702 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "fr-ordonnance-2021-1518-dsm",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (Claude Code retrieval)",
+  "url": "https://echanges.dila.gouv.fr/OPENDATA/JORF/Freemium_jorf_global_20250713-140000.tar.gz",
+  "retrieved": "2026-10-14",
+  "version": "JORF text: JORF n°0274 du 25 novembre 2021 (NOR MICB2121839R); DILA JORF open data, JORFTEXT000044362034",
+  "language": "fr",
+  "extent": "full",
+  "note": "Registry title/number match; registry has no dates: signed 24 Nov 2021, published JORF 25 Nov 2021. TDM exceptions are art. 1 (CPI art. L. 122-5 10° and new L. 122-5-3) with related provisions for databases/software/neighbouring rights. The separate 'Rapport au Président de la République' published the same day is not included. 14 articles. Raw HTML assembled by script from the official DILA JORF open-data XML (texte/version + texte/struct + section_ta + article files) downloaded with curl from echanges.dila.gouv.fr (Légifrance itself returns 403 to curl); article order and headings follow the JORF struct file; no text altered."
+ },
+ "classification": {
+  "domains": [
+   "ip_training_data"
+  ],
+  "primary_domain": "ip_training_data",
+  "mechanisms": [
+   "mandate_obligation",
+   "licensing_permit_certification",
+   "registration_notification"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "government_agency",
+   "research_institution",
+   "enterprise"
+  ],
+  "affected_roles": [
+   "general_public",
+   "data_holder"
+  ],
+  "decision_margins": [
+   "firm:input_use",
+   "household:access"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national",
+    "supranational"
+   ],
+   "description": "Applies to acts in France; cross-border digital acts within the EU are deemed to occur in the Member State where the establishment is located.",
+   "evidence": {
+    "provision": "Art. 1 II (inserting CPI Art. L. 122-5-4 I)",
+    "quote": "Dans le cas où les actes de représentation et de reproduction sont effectués au moyen d'un environnement numérique dans un cadre transfrontière au sein de l'Union européenne, ils sont réputés avoir lieu uniquement sur le territoire de l'Etat où l'établissement est établi."
+   }
+  }
+ },
+ "summary": {
+  "short": "Ordinance 2021-1518 completes France's transposition of EU Directive 2019/790 by amending the Intellectual Property Code. It adds copyright exceptions for text and data mining, teaching illustration and unavailable works, extends collective licensing, and extends the regime to neighbouring and database rights. Published 25 November 2021 (JORF).",
+  "long": "The ordinance completes France's transposition of EU Directive 2019/790 by amending the Intellectual Property Code. It adds three exceptions: text and data mining (L. 122-5-3; copies of lawfully accessed works for scientific research by research bodies and heritage institutions, and for any purpose unless rightsholders have opted out appropriately; copies stored securely and destroyed after mining), teaching and vocational illustration (L. 122-5-4; flat-rate remuneration; excluded where adequate licences are offered), and unavailable works held by heritage institutions (L. 122-5-5; author opposition; notice to the EU Intellectual Property Office at least six months before publication). It creates extended collective licensing, under which ministerially approved collective management organisations may extend licences to non-members (L. 324-8-1 to L. 324-8-6, L. 137-2-1, L. 139-1, L. 134-3 to L. 134-7). It also adds a chapter on unavailable works (L. 138-1 to L. 138-5) with ministerial approval of organisations, opposition rights, and exclusions for sets of works principally first published outside the EU. Neighbouring rights (L. 211-3, L. 211-8) and database producers' rights (L. 342-3, L. 342-6) are brought into parts of the regime. Articles 10 and 13 set which exceptions the first paragraph of L. 331-8 and L. 331-28/L. 331-31 do not apply to, and which amended provisions apply under L. 811-1-1. Several chapters defer implementing conditions to Conseil d'État decrees. The text sets no fines or penalties of its own. Publication date is taken from the document header (JORF of 25 November 2021)."
+ },
+ "relations": [
+  {
+   "relation": "legal_basis",
+   "target_text": "Constitution (article 38)",
+   "note": "Cited in the visas. The text does not say which cited power the ordinance is made under.",
+   "evidence": {
+    "provision": "Visas",
+    "quote": "Vu la Constitution, notamment son article 38"
+   }
+  },
+  {
+   "relation": "legal_basis",
+   "target_text": "Loi n° 2020-1508 du 3 décembre 2020 (article 34)",
+   "note": "Cited in the visas; the visa names article 34. The text does not state its role.",
+   "evidence": {
+    "provision": "Visas",
+    "quote": "Vu la loi n° 2020-1508 du 3 décembre 2020"
+   }
+  },
+  {
+   "relation": "legal_basis",
+   "target_text": "Loi n° 2020-1674 du 24 décembre 2020 (article 28)",
+   "note": "Cited in the visas; the visa names article 28.",
+   "evidence": {
+    "provision": "Visas",
+    "quote": "Vu la loi n° 2020-1674 du 24 décembre 2020"
+   }
+  },
+  {
+   "relation": "legal_basis",
+   "target_text": "Loi n° 2021-1382 du 25 octobre 2021 (27° of article 1 and I of article 34)",
+   "note": "Cited in the visas. Article 10 later refers to it as the loi du 25 octobre 2021 susvisée.",
+   "evidence": {
+    "provision": "Visas",
+    "quote": "Vu la loi n° 2021-1382 du 25 octobre 2021"
+   }
+  },
+  {
+   "relation": "transposes",
+   "target_text": "Directive (UE) 2019/790 du Parlement européen et du Conseil du 17 avril 2019 sur le droit d'auteur et les droits voisins dans le marché unique numérique",
+   "note": "Title states the ordinance completes the transposition of this directive.",
+   "evidence": {
+    "provision": "Titre",
+    "quote": "complétant la transposition de la directive 2019/790 du Parlement européen et du Conseil du 17 avril 2019"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Code de la propriété intellectuelle",
+   "note": "Articles 1 to 13 amend or insert provisions of the code, including L. 122-5, L. 122-5-3 to L. 122-5-5, L. 122-6-1, L. 134-3 to L. 134-7, L. 137-2-1, L. 138-1 to L. 138-5, L. 139-1, L. 211-3, L. 211-8, L. 324-8-1 to L. 324-8-6, L. 331-8, L. 331-31, L. 342-3, L. 342-6 and L. 811-1-1 (article 13).",
+   "evidence": {
+    "provision": "Art. 1 I",
+    "quote": "L'article L. 122-5 du code de la propriété intellectuelle est ainsi modifié"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Code de l'éducation (articles L. 123-1 and L. 732-1)",
+   "note": "Article 6 (L. 139-1) refers to research and higher-education activities under these articles.",
+   "evidence": {
+    "provision": "Art. 6 (L. 139-1)",
+    "quote": "relevant des articles L. 123-1 et L. 732-1 du code de l'éducation"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Code de la recherche (article L. 112-2)",
+   "note": "Article 6 (L. 139-1) refers to research activity under this article.",
+   "evidence": {
+    "provision": "Art. 6 (L. 139-1)",
+    "quote": "de l'article L. 112-2 du code de la recherche"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Ordonnance n° 2019-1169 du 13 novembre 2019 relative aux marques de produits ou de services (article 12)",
+   "note": "Article 13 III provides a parallel version of L. 811-1-1 that applies once article 12 of that ordinance enters into force.",
+   "evidence": {
+    "provision": "Art. 13 III",
+    "quote": "résultant de l'article 12 de l'ordonnance n° 2019-1169 du 13 novembre 2019"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Règlement (UE) n° 386/2012 du Parlement européen et du Conseil du 19 avril 2012",
+   "note": "Cited in the visas only; no operative provision refers to it.",
+   "evidence": {
+    "provision": "Visas",
+    "quote": "Vu le règlement (UE) n° 386/2012 du Parlement européen et du Conseil du 19 avril 2012"
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "ministre chargé de la culture",
+   "role": "designated",
+   "function": "Approves collective management organisations (agrément) and extends licence contracts to non-member rightholders by arrêté (L. 324-8-1, L. 137-2-1, L. 138-2, L. 139-1); also responsible for application with the Premier ministre (Art. 14).",
+   "evidence": {
+    "provision": "Art. 9 (L. 324-8-1)",
+    "quote": "agréé à cet effet par le ministre chargé de la culture"
+   }
+  },
+  {
+   "name": "Office de l'Union européenne pour la propriété intellectuelle",
+   "role": "designated",
+   "function": "Receives identification, opposition and licence information on unavailable works from the institutions and hosts it on its portal (L. 138-3; L. 122-5-5 I).",
+   "evidence": {
+    "provision": "Art. 5 (L. 138-3)",
+    "quote": "à l'Office de l'Union européenne pour la propriété intellectuelle les informations aux fins d'identification de l'œuvre concernée"
+   }
+  },
+  {
+   "name": "Premier ministre",
+   "role": "designated",
+   "function": "Responsible, together with the culture minister, for the application of the ordinance.",
+   "evidence": {
+    "provision": "Art. 14",
+    "quote": "Le Premier ministre et la ministre de la culture sont responsables, chacun en ce qui le concerne, de l'application de la présente ordonnance"
+   }
+  },
+  {
+   "name": "organismes de gestion collective agréés",
+   "role": "addressee",
+   "function": "Must treat all rightholders equally and carry out publicity measures and opposition handling for extended licences (L. 324-8-1, L. 324-8-2, L. 324-8-4, L. 138-3, L. 138-4).",
+   "evidence": {
+    "provision": "Art. 9 (L. 324-8-1)",
+    "quote": "est tenu de garantir une égalité de traitement à l'ensemble des titulaires de droits représentés"
+   }
+  },
+  {
+   "name": "bibliothèques accessibles au public, musées, services d'archives et institutions dépositaires du patrimoine cinématographique, audiovisuel ou sonore",
+   "role": "beneficiary",
+   "function": "May represent and reproduce an unavailable work in its collections for non-commercial online availability (L. 122-5-5 I; L. 138-2 and L. 138-3 for licence contracts).",
+   "evidence": {
+    "provision": "Art. 1 II (inserting L. 122-5-5 I)",
+    "quote": "les bibliothèques accessibles au public, les musées, les services d'archives ou les institutions dépositaires du patrimoine cinématographique, audiovisuel ou sonore peuvent représenter et reproduire sans autorisation de l'auteur une œuvre indisponible"
+   }
+  }
+ ],
+ "notes": "Text as published in the JORF of 25 Nov 2021; not a consolidated version. Visa citations of the laws of 2020-1508, 2020-1674 and 2021-1382 are recorded as legal_basis, but the text does not say which one is the delegating provision. The title's reference to amending directives 96/9/CE and 2001/29/CE describes the EU directive 2019/790, not changes made by this ordinance. Article 2 renumbers L. 122-6-1 V as VIII and inserts new V to VII. Article 10 2° quotes pre-2021 wording, applicable until 31 December 2021, with garbled text in the source (e.g., '2009,7° et 8°'). Article 13 I and II switch the reference from L. 331-31 to L. 331-28 from 1 January 2022, and Article 13 III provides an alternative version tied to ordinance 2019-1169. Article 7 1° contains the typo 'troisième at quatrième'.",
+ "events": [
+  {
+   "event": "signed",
+   "date": "2021-11-24",
+   "date_type": "absolute",
+   "date_text": "Fait le 24 novembre 2021",
+   "applies_to": "Ordonnance n° 2021-1518 as a whole",
+   "evidence": {
+    "provision": "Closing formula",
+    "quote": "Fait le 24 novembre 2021."
+   }
+  },
+  {
+   "event": "published",
+   "date": "2021-11-25",
+   "date_type": "absolute",
+   "date_text": "JORF n°0274 du 25 novembre 2021",
+   "applies_to": "Ordonnance n° 2021-1518 as a whole (publication in the Journal officiel)",
+   "evidence": {
+    "provision": "Header (JORF reference)",
+    "quote": "JORF n°0274 du 25 novembre 2021"
+   }
+  },
+  {
+   "event": "application",
+   "date": "2022-01-01",
+   "date_type": "absolute",
+   "date_text": "A compter du 1er janvier 2022",
+   "applies_to": "Reference to L. 331-31 replaced by L. 331-28 in the penultimate paragraph of the 1° of L. 811-1-1",
+   "evidence": {
+    "provision": "Art. 13 II",
+    "quote": "A compter du 1er janvier 2022, à l'avant-dernier alinéa du 1° du même article L. 811-1-1"
+   }
+  },
+  {
+   "event": "expiry",
+   "date": "2021-12-31",
+   "date_type": "absolute",
+   "date_text": "applicable jusqu'au 31 décembre 2021",
+   "applies_to": "Prior wording of L. 331-31 (applies until the end of 2021 before the amendment in Art. 10 2°)",
+   "evidence": {
+    "provision": "Art. 10 2°",
+    "quote": "applicable jusqu'au 31 décembre 2021"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "au moins six mois avant que l'œuvre soit mise à la disposition du public",
+   "depends_on": "Making available of the unavailable work to the public",
+   "applies_to": "Transmission of information to the EUIPO by the institutions (L. 122-5-5 I)",
+   "offset_value": -6,
+   "offset_unit": "months",
+   "evidence": {
+    "provision": "Art. 5 (L. 122-5-5 I, second paragraph)",
+    "quote": "au moins six mois avant que l'œuvre soit mise à la disposition du public"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "sans délai, et au moins six mois avant que l'œuvre soit mise à la disposition du public",
+   "depends_on": "Making available of the unavailable work to the public",
+   "applies_to": "Transmission of information to the EUIPO by the licensing collective management organisation (L. 138-3)",
+   "offset_value": -6,
+   "offset_unit": "months",
+   "evidence": {
+    "provision": "Art. 5 (L. 138-3)",
+    "quote": "transmet sans délai, et au moins six mois avant que l'œuvre soit mise à la disposition du public"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "au plus tard dans les trois mois qui suivent cette notification",
+   "depends_on": "Notification of the author's opposition to exploitation of an unavailable work",
+   "applies_to": "Cessation of exploitation of an unavailable work after the author's opposition (L. 122-5-5 I, last paragraph)",
+   "offset_value": 3,
+   "offset_unit": "months",
+   "evidence": {
+    "provision": "Art. 5 (L. 122-5-5 I, last paragraph)",
+    "quote": "au plus tard dans les trois mois qui suivent cette notification"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "au plus tard dans les trois mois qui suivent cette notification",
+   "depends_on": "Notification of the author's opposition to a collective management organisation",
+   "applies_to": "End of exploitation authorised by a collective management organisation after opposition (L. 138-4)",
+   "offset_value": 3,
+   "offset_unit": "months",
+   "evidence": {
+    "provision": "Art. 5 (L. 138-4, second paragraph)",
+    "quote": "au plus tard dans les trois mois qui suivent cette notification"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "au plus tard dans les trois mois qui suivent la notification",
+   "depends_on": "Notification of the rights holder's opposition to an extended collective licence",
+   "applies_to": "Cessation of effects of an extended contract for a rights holder who objects (L. 324-8-2)",
+   "offset_value": 3,
+   "offset_unit": "months",
+   "evidence": {
+    "provision": "Art. 9 (L. 324-8-2, second paragraph)",
+    "quote": "au plus tard dans les trois mois qui suivent la notification"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "L'utilisateur met fin à l'exploitation du livre dans les meilleurs délais et au plus tard dans les trois mois qui suivent la notification de cette information",
+   "depends_on": "Notification to the user of information on the author's or rights holder's opposition",
+   "applies_to": "End of exploitation of an unavailable book by the user (L. 134-6)",
+   "offset_value": 3,
+   "offset_unit": "months",
+   "evidence": {
+    "provision": "Art. 3 4° b (L. 134-6, last paragraph)",
+    "quote": "L'utilisateur met fin à l'exploitation du livre dans les meilleurs délais et au plus tard dans les trois mois qui suivent la notification de cette information."
+   }
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "dans un délai maximum de sept jours à compter de cette conclusion",
+   "depends_on": "Conclusion of a contract authorising exploitation of works or protected objects",
+   "applies_to": "Publicity measures on the minister's power to extend the contract (L. 324-8-4, second paragraph)",
+   "offset_value": 7,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "Art. 9 (L. 324-8-4, second paragraph)",
+    "quote": "dans un délai maximum de sept jours à compter de cette conclusion"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "age",
+   "variable_text": "durée écoulée depuis la première publication ou communication au public de l'œuvre",
+   "operator": ">=",
+   "value": 30,
+   "value_text": "trente ans ou plus",
+   "unit": "years",
+   "measurement": "Time since the work's first publication or communication to the public (reference point as stated in the text); the text does not name a measuring body",
+   "level": "other",
+   "trigger": "scope_definition",
+   "consequence": "A protected work meeting the other conditions counts as an unavailable work (œuvre indisponible) to which Chapter VIII (L. 138-1 to L. 138-5) applies",
+   "conditions": "Also protected; presumed in good faith, after reasonable search efforts, not to be available to the public through usual commercial distribution channels; not an excluded collection under L. 138-1 II",
+   "evidence": {
+    "provision": "Art. 5 (inserting CPI Art. L. 138-1 I, al. 1)",
+    "quote": "dont la première publication ou communication au public remonte à trente ans ou plus"
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "fouille de textes et de données",
+   "defined_in": "Code de la propriété intellectuelle, Art. L. 122-5-3 I",
+   "evidence": {
+    "provision": "Art. 1 II (inserting CPI Art. L. 122-5-3 I)",
+    "quote": "la mise en œuvre d'une technique d'analyse automatisée de textes et données sous forme numérique afin d'en dégager des informations"
+   }
+  },
+  {
+   "term": "œuvre indisponible",
+   "defined_in": "Code de la propriété intellectuelle, Art. L. 138-1 I",
+   "evidence": {
+    "provision": "Art. 5 (inserting CPI Art. L. 138-1 I)",
+    "quote": "L'œuvre indisponible au sens du présent chapitre est une œuvre protégée dont on peut présumer de bonne foi, au terme d'efforts raisonnables d'investigation, qu'elle n'est pas disponible pour le public par le biais des circuits de distribution commerciaux habituels"
+   }
+  },
+  {
+   "term": "auteur (for neighbouring rights, as applied in Art. L. 211-3)",
+   "defined_in": "Code de la propriété intellectuelle, Art. L. 211-3 8° (adapted interpretation)",
+   "evidence": {
+    "provision": "Art. 7 4° (inserting CPI Art. L. 211-3, 8°)",
+    "quote": "Pour l'application de cet article, l'auteur s'entend de l'artiste-interprète, du producteur, de l'entreprise de communication audiovisuelle, de l'éditeur de presse ou de l'agence de presse bénéficiaire d'un droit voisin"
+   }
+  },
+  {
+   "term": "auteur and titulaire des droits d'auteur (for database rights, as applied in Art. L. 342-3)",
+   "defined_in": "Code de la propriété intellectuelle, Art. L. 342-3 6° (adapted interpretation)",
+   "evidence": {
+    "provision": "Art. 11 3° (inserting CPI Art. L. 342-3, 6°)",
+    "quote": "Pour l'application de cet article, les auteurs et titulaires des droits d'auteur s'entendent des producteurs de bases de données"
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "other",
+   "addressee": "research_institution",
+   "modality": "shall",
+   "summary": "Copies and digital reproductions made for text and data mining under L. 122-5-3 II must be stored at an appropriate security level and may be kept only for scientific research purposes, including verification of results.",
+   "conditional_on": "Copies made by research organisations, public-access libraries, museums, archives or heritage institutions (or for them) for scientific research TDM under Art. L. 122-5-3 II.",
+   "evidence": {
+    "provision": "Art. 1 II (inserting CPI Art. L. 122-5-3 II, para. 3)",
+    "quote": "Les copies et reproductions numériques effectuées lors d'une fouille de textes et de données sont stockées avec un niveau de sécurité approprié"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "general_public",
+   "modality": "shall",
+   "summary": "Copies and reproductions made for text and data mining under L. 122-5-3 III must be stored at an appropriate security level and destroyed at the end of the mining.",
+   "conditional_on": "TDM by any person for any purpose, unless the author has opposed it appropriately (Art. L. 122-5-3 III).",
+   "evidence": {
+    "provision": "Art. 1 II (inserting CPI Art. L. 122-5-3 III, para. 2)",
+    "quote": "Les copies et reproductions sont stockées avec un niveau de sécurité approprié puis détruites à l'issue de la fouille de textes et de données"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "consumers_users",
+   "modality": "shall",
+   "summary": "Representations or reproductions of extracts for illustration in teaching under L. 122-5-4 I are compensated by a lump-sum negotiated remuneration. The text does not name the payer.",
+   "conditional_on": "Uses under the teaching-illustration exception in Art. L. 122-5-4 I.",
+   "evidence": {
+    "provision": "Art. 1 II (inserting CPI Art. L. 122-5-4 I, para. 4)",
+    "quote": "sont compensés par une rémunération négociée sur une base forfaitaire"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Licences for digital teaching illustration under L. 122-5-4 II must be granted on objective and transparent criteria, and the fees requested must be reasonable. Addressee is the licence grantor, not named in the text.",
+   "conditional_on": "Applies where adequate licences are offered to educational establishments (Art. L. 122-5-4 II).",
+   "evidence": {
+    "provision": "Art. 1 II (inserting CPI Art. L. 122-5-4 II, para. 2)",
+    "quote": "Les conditions d'octroi des licences mentionnées au précédent alinéa sont fondées sur des critères objectifs et transparents"
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "government_agency",
+   "modality": "may",
+   "summary": "The culture minister may, by order, extend adequate licences granted by an approved collective management organisation to non-member rightholders under Art. L. 324-8-1 to L. 324-8-6.",
+   "conditional_on": "Licences granted under Art. L. 122-5-4 II and the conditions of Art. L. 324-8-1 to L. 324-8-6.",
+   "evidence": {
+    "provision": "Art. 1 II (inserting CPI Art. L. 122-5-4 II, para. 3)",
+    "quote": "peuvent être étendues aux titulaires de droits non membres de cet organisme par arrêté du ministre chargé de la culture"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "data_holder",
+   "modality": "shall",
+   "summary": "Cultural heritage institutions must transmit to EUIPO, without delay and at least six months before the work is made available, identification information, opposition arrangements, covered territories and intended uses, and register them on EUIPO's portal.",
+   "applies_from": "at least six months before the work is made available to the public",
+   "conditional_on": "Use of unavailable works under Art. L. 122-5-5 I.",
+   "evidence": {
+    "provision": "Art. 1 II (inserting CPI Art. L. 122-5-5 I, para. 2)",
+    "quote": "transmettent sans délai, et au moins six mois avant que l'œuvre soit mise à la disposition du public, à l'Office de l'Union européenne pour la propriété intellectuelle les informations"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_holder",
+   "modality": "shall",
+   "summary": "Where an author opposes exploitation of an unavailable work after the acts have been carried out, the exploitation must cease as regards the author within the shortest time and at latest three months after notification.",
+   "conditional_on": "The author's opposition is expressed after the exploitation acts have been carried out (Art. L. 122-5-5 I).",
+   "evidence": {
+    "provision": "Art. 1 II (inserting CPI Art. L. 122-5-5 I, para. 4)",
+    "quote": "l'exploitation doit cesser à l'égard de l'auteur dans les meilleurs délais et au plus tard dans les trois mois qui suivent cette notification"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "On approval, the collective management organisation must immediately take appropriate publicity measures to inform authors and publishers that it is deemed to hold a mandate for digital reproduction and communication of unavailable books, and of the opposition procedure (new L. 134-3 V, collective management organisation).",
+   "conditional_on": "Upon approval under the criteria in L. 134-3 III.",
+   "evidence": {
+    "provision": "Art. 3 1° f) (inserting CPI Art. L. 134-3 V)",
+    "quote": "met immédiatement en œuvre des mesures de publicité appropriées pour garantir l'information des auteurs et des éditeurs"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_holder",
+   "modality": "shall",
+   "summary": "The user of an unavailable book must end its exploitation within the shortest time and at latest three months after notification of the information (amended L. 134-6, last paragraph).",
+   "conditional_on": "Notification of the information under Art. L. 134-6 as amended.",
+   "evidence": {
+    "provision": "Art. 3 4° b) (amending CPI Art. L. 134-6, last paragraph)",
+    "quote": "L'utilisateur met fin à l'exploitation du livre dans les meilleurs délais et au plus tard dans les trois mois qui suivent la notification de cette information."
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "government_agency",
+   "modality": "may",
+   "summary": "The culture minister may, by order, extend a collective licence agreement concluded by an approved collective management organisation for graphic and plastic arts to non-member rightholders of online content-sharing services.",
+   "conditional_on": "Conditions of Art. L. 324-8-1 to L. 324-8-6.",
+   "evidence": {
+    "provision": "Art. 4 (inserting CPI Art. L. 137-2-1)",
+    "quote": "peut être étendu aux titulaires de droits non membres de cet organisme par arrêté du ministre chargé de la culture"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_holder",
+   "modality": "shall",
+   "summary": "Cultural heritage institutions must carry out reasonable investigation efforts to establish that a work is unavailable (new L. 138-1 I, second paragraph).",
+   "conditional_on": "Works in the institution's permanent collection (Art. L. 138-1 I).",
+   "evidence": {
+    "provision": "Art. 5 (inserting CPI Art. L. 138-1 I, para. 2)",
+    "quote": "Les efforts raisonnables d'investigation mentionnés au précédent alinéa sont menés à bien par les bibliothèques accessibles au public"
+   }
+  },
+  {
+   "type": "licensing_certification",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "A collective management organisation may conclude non-exclusive, non-commercial licences for unavailable works only if approved for this purpose by the culture minister.",
+   "conditional_on": "Non-exclusive, non-commercial contract with a public-access library, museum, archive or heritage institution (L. 138-2 I).",
+   "evidence": {
+    "provision": "Art. 5 (inserting CPI Art. L. 138-2 I)",
+    "quote": "agréé à cet effet par le ministre de la culture"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "The approved collective management organisation must transmit to EUIPO, without delay and at least six months before the work is made available, identification information, opposition arrangements, licence parties, territories and intended uses.",
+   "applies_from": "at least six months before the work is made available to the public",
+   "conditional_on": "Licences for unavailable works under Art. L. 138-2.",
+   "evidence": {
+    "provision": "Art. 5 (inserting CPI Art. L. 138-3)",
+    "quote": "L'organisme de gestion collective agréé transmet sans délai, et au moins six mois avant que l'œuvre soit mise à la disposition du public, à l'Office de l'Union européenne pour la propriété intellectuelle les informations"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "On an author's opposition to licensing, the approved collective management organisation must end any use already authorised within the shortest time and at latest three months after notification.",
+   "conditional_on": "Use of the work has already been authorised (Art. L. 138-4).",
+   "evidence": {
+    "provision": "Art. 5 (inserting CPI Art. L. 138-4, para. 2)",
+    "quote": "Si l'utilisation de l'œuvre a déjà été autorisée, l'organisme y met fin dans les meilleurs délais et au plus tard dans les trois mois qui suivent cette notification"
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Implementing rules for L. 138-1 to L. 138-4, including approval and withdrawal of approval and the opposition procedure, are to be set by decree in Conseil d'Etat.",
+   "evidence": {
+    "provision": "Art. 5 (inserting CPI Art. L. 138-5)",
+    "quote": "Les modalités d'application des articles L. 138-1 à L. 138-4"
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "government_agency",
+   "modality": "may",
+   "summary": "The culture minister may, by order, extend a contract by an approved collective management organisation for reproduction and display of visual-arts works in published research and higher-education work to non-member rightholders.",
+   "conditional_on": "Conditions of Art. L. 324-8-1 to L. 324-8-6; works listed in L. 112-2 7° to 12°.",
+   "evidence": {
+    "provision": "Art. 6 (inserting CPI Art. L. 139-1, para. 1)",
+    "quote": "peut être étendu aux titulaires de droits non membres de cet organisme par arrêté du ministre chargé de la culture"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "The approved collective management organisation must inform signatories of agreements of any oppositions notified to it, under L. 324-8-2.",
+   "conditional_on": "Agreements authorising the uses in L. 139-1 para. 1.",
+   "evidence": {
+    "provision": "Art. 6 (inserting CPI Art. L. 139-1, para. 2)",
+    "quote": "L'organisme de gestion collective agréé informe les signataires d'accords autorisant les actes d'exploitation"
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Implementing rules for the extension of exceptions for press and related rights in L. 211-3 are to be set by decree in Conseil d'Etat.",
+   "evidence": {
+    "provision": "Art. 7 (amending CPI Art. L. 211-3, final paragraph)",
+    "quote": "Les modalités d'application du présent article sont précisées par décret en Conseil d'Etat."
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "government_agency",
+   "modality": "may",
+   "summary": "The culture minister may, by order, extend a contract concluded by an approved collective management organisation for use on national territory to non-member rightholders.",
+   "conditional_on": "A contract under Art. L. 324-8-1 for the exploitation of protected works or objects; the extension concerns use on national territory.",
+   "evidence": {
+    "provision": "Art. 9 (inserting CPI Art. L. 324-8-1, para. 1)",
+    "quote": "être étendu aux titulaires de droits non membres de cet organisme par arrêté du ministre chargé de la culture"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "The approved collective management organisation must ensure equal treatment of all represented rightholders when a contract is extended (L. 324-8-1, para. 2).",
+   "conditional_on": "Extended contract under L. 324-8-1 para. 1.",
+   "evidence": {
+    "provision": "Art. 9 (inserting CPI Art. L. 324-8-1, para. 2)",
+    "quote": "L'organisme de gestion collective agréé est tenu de garantir une égalité de traitement à l'ensemble des titulaires de droits représentés."
+   }
+  },
+  {
+   "type": "eligibility_condition",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "Approval to conclude extendable collective contracts is granted in consideration of the repertoire and diversity of members, the professional qualifications of managers, the human and material means, and the fairness of distribution principles.",
+   "conditional_on": "Approval under L. 324-8-1 granted by the minister.",
+   "evidence": {
+    "provision": "Art. 9 (inserting CPI Art. L. 324-8-3)",
+    "quote": "L'agrément mentionné à l'article L. 324-8-1 est délivré en considération"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "On approval, the collective management organisation must immediately take appropriate publicity measures to inform concerned rightholders that it may negotiate and seek extension of contracts, and of the opposition procedure.",
+   "conditional_on": "Upon approval under L. 324-8-3.",
+   "evidence": {
+    "provision": "Art. 9 (inserting CPI Art. L. 324-8-4, para. 1)",
+    "quote": "met immédiatement en œuvre des mesures de publicité appropriées pour informer les titulaires de droits concernés"
+   }
+  },
+  {
+   "type": "notice_to_users",
+   "addressee": "enterprise",
+   "modality": "shall",
+   "summary": "After concluding a contract, the collective management organisation must take appropriate publicity measures informing rightholders of the minister's power to extend the contract.",
+   "applies_from": "within a maximum of seven days from conclusion of the contract",
+   "conditional_on": "Conclusion of a contract authorising exploitation of protected works or objects (L. 324-8-4, para. 2).",
+   "evidence": {
+    "provision": "Art. 9 (inserting CPI Art. L. 324-8-4, para. 2)",
+    "quote": "met en œuvre, dans un délai maximum de sept jours à compter de cette conclusion, des mesures de publicité appropriées"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_holder",
+   "modality": "shall",
+   "summary": "A user that has concluded a contract under L. 324-8-1 must communicate all relevant information referred to in L. 324-8 to the collective management organisation.",
+   "conditional_on": "Contract concluded under Art. L. 324-8-1.",
+   "evidence": {
+    "provision": "Art. 9 (inserting CPI Art. L. 324-8-5)",
+    "quote": "L'utilisateur qui a conclu un contrat dans les conditions prévues à l'article L. 324-8-1 communique à l'organisme de gestion collective agréé l'ensemble des informations pertinentes"
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Implementing rules for L. 324-8-1 to L. 324-8-5, including opposition, approval and withdrawal, and publicity measures, are to be set by decree in Conseil d'Etat.",
+   "evidence": {
+    "provision": "Art. 9 (inserting CPI Art. L. 324-8-6)",
+    "quote": "Les modalités d'application des articles L. 324-8-1 à L. 324-8-5"
+   }
+  },
+  {
+   "type": "delegated_power",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Implementing rules for the extension of the exception for database extraction and re-use in L. 342-3 are to be set by decree in Conseil d'Etat.",
+   "evidence": {
+    "provision": "Art. 11 (amending CPI Art. L. 342-3, final paragraph)",
+    "quote": "Les modalités d'application du présent article sont précisées par décret en Conseil d'Etat."
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Prime Minister and the minister of culture are each responsible, for their respective areas, for applying the ordinance.",
+   "evidence": {
+    "provision": "Art. 14",
+    "quote": "sont responsables, chacun en ce qui le concerne, de l'application de la présente ordonnance"
+   }
+  }
+ ],
+ "section_status": {
+  "enforcement": {
+   "status": "not_found",
+   "note": "The text sets no fine, criminal penalty, licence revocation, benefit clawback, suspension or blocking. Article 10 changes references to L. 331-8, L. 331-28 and L. 331-31 (rules on which exceptions the first paragraph of L. 331-8 does not apply to) but states no sanction for those provisions."
+  }
+ },
+ "enforcement": []
+}

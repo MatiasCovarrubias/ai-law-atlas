@@ -1,0 +1,267 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "br-stf-tema987-2025",
+ "tier": "B",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "light, effort high, obligations medium, batch",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-interim-20261014"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "official site (Claude Code retrieval)",
+  "url": "https://portal.stf.jus.br/processos/downloadTexto.asp?id=6624573&ext=RTF",
+  "retrieved": "2026-10-14",
+  "version": "STF judgment decision (certidão/decisão de julgamento) of 26.6.2025 with the Tema 987 thesis, plus the 17.6.2026 ED decision restating the thesis",
+  "language": "pt",
+  "extent": "partial",
+  "note": "Decision and thesis text only, not the full acórdão (inteiro teor, DJE 05/11/2025, behind redir.stf.jus.br bot challenge). Section [2] is the 17.6.2026 embargos decision (https://portal.stf.jus.br/processos/downloadTexto.asp?id=6897486&ext=RTF) that re-fixed the thesis (adds item 14: 60-day implementation period) and declared immediate trânsito em julgado; raw RTFs saved as br-stf-tema987-2025.rtf and br-stf-tema987-2025.ed2026.rtf. Converted with macOS textutil."
+ },
+ "classification": {
+  "domains": [
+   "online_safety_content",
+   "minors_child_safety",
+   "consumer_protection"
+  ],
+  "primary_domain": "online_safety_content",
+  "mechanisms": [
+   "liability_rule",
+   "mandate_obligation",
+   "disclosure_transparency"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "platform_operator"
+  ],
+  "affected_roles": [
+   "consumers_users",
+   "general_public",
+   "minors"
+  ],
+  "decision_margins": [
+   "firm:compliance_process",
+   "firm:product_design_release",
+   "household:information"
+  ],
+  "territorial_scope": {
+   "types": [
+    "national",
+    "extraterritorial"
+   ],
+   "description": "Applies to internet application providers operating in Brazil, which must maintain a seat and legal representative in the country.",
+   "evidence": {
+    "provision": "Tese (ED, 17.6.2026), item 10",
+    "quote": "Os provedores de aplicações de internet com atuação no Brasil devem constituir e manter sede e representante no país"
+   }
+  },
+  "agora_harms": [
+   "Detrimental content"
+  ],
+  "agora_incentives": [
+   "Civil liability"
+  ],
+  "agora_risk_factors": [
+   "Transparency"
+  ],
+  "agora_strategies": [
+   "Disclosure",
+   "Performance requirements"
+  ]
+ },
+ "summary": {
+  "short": "Brazil's Supreme Court partly struck down Marco Civil da Internet art. 19, which required a court order for platform liability for third-party content. Platforms are civilly liable in listed cases, including failure to remove listed serious crimes, and must meet notice, transparency and local-representative duties, from 5 Aug 2025.",
+  "long": "STF decision on Tema 987 (RE 1.037.396/SP), judged 26 June 2025, with embargos de declaração on 17 June 2026, declaring art. 19 of Marco Civil da Internet (Law 12.965/2014) partially unconstitutional. Internet application providers are civilly liable, jointly and severally under art. 21 of that law, for third-party content in cases of crime or unlawful acts, unless reasonable doubt on unlawfulness is shown after qualified diligence. Art. 19 still governs crimes against honour, email, closed video or voice meetings and private messaging. A relative presumption of fault applies to paid advertising, boosting and artificial inorganic dissemination mechanisms. Providers are liable for systemic failure to promptly remove content of listed serious crimes, such as anti-democratic acts, terrorism, incitement to suicide, violence against women and child sexual abuse material. Marketplaces answer under the Consumer Protection Code. Providers must adopt self-regulation covering notice systems, due process and annual transparency reports, offer user and non-user channels, and keep a legal representative in Brazil. Strict liability is excluded. Effects are ex nunc from publication of the 5 August 2025 minutes; the item 5 structural obligations run 60 days from publication of the 2026 embargos minutes."
+ },
+ "relations": [
+  {
+   "relation": "cross_references",
+   "target_text": "Lei nº 12.965/2014 (Marco Civil da Internet), art. 19 and art. 21",
+   "note": "The decision declares art. 19 partially unconstitutional and sets how it is to be interpreted until new legislation; it applies art. 21 to cases of crime or unlawful acts. The text does not amend or repeal the MCI.",
+   "evidence": {
+    "provision": "[2] Tese (ED), item 1",
+    "quote": "O art. 19 da Lei nº 12.965/2014 (Marco Civil da Internet)"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Constituição Federal de 1988, art. 5º, incs. X e XII",
+   "note": "Cited for the scope of the exemption of private interpersonal communications (email, closed video/voice meetings, instant messaging) from art. 19 MCI liability rules.",
+   "evidence": {
+    "provision": "[2] Tese (ED), item 3.4",
+    "quote": "(art. 5º, incs. X e XII, da CF/88)"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Constituição Federal de 1988, art. 84, IV and VI, a",
+   "note": "Cited in the ED thesis on the Congress's role and the Executive's power to regulate and organise federal administration for supervision of platform obligations.",
+   "evidence": {
+    "provision": "[2] Tese (ED), item 12",
+    "quote": "nos termos do art. 84, VI, a, da Constituição Federal"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Código Penal (Decreto-Lei nº 2.848/1940 as cited in the text), arts. 286, 359-L, 359-M, 359-N, 359-P, 359-R, 122, 141, 146-A, 147, 147-A, 147-B, 149-A, 217-A, 218, 218-A, 218-B, 218-C",
+   "note": "Penal provisions define the crimes listed in the item on serious unlawful content whose non-immediate removal triggers provider liability (item 5 of the thesis).",
+   "evidence": {
+    "provision": "[2] Tese (ED), item 5(a)",
+    "quote": "artigos 286, parágrafo único, 359-L, 359-M, 359-N, 359-P e 359-R do Código Penal"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Lei nº 13.260/2016 (terrorism)",
+   "note": "Terrorism and preparatory terrorism offences are listed in item 5(b) of the thesis as serious unlawful content.",
+   "evidence": {
+    "provision": "[2] Tese (ED), item 5(b)",
+    "quote": "tipificados pela Lei nº 13.260/2016"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Lei nº 7.716, de 1989, arts. 20, 20-A, 20-B and 20-C",
+   "note": "Racial and related discrimination offences listed in item 5(d) (homophobic and transphobic conduct).",
+   "evidence": {
+    "provision": "[2] Tese (ED), item 5(d)",
+    "quote": "passível de enquadramento nos arts. 20, 20-A, 20-B e 20-C da Lei nº 7.716, de 1989"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Lei nº 11.340/06",
+   "note": "Cited in item 5(e) for crimes against women on account of their sex.",
+   "evidence": {
+    "provision": "[2] Tese (ED), item 5(e)",
+    "quote": "Lei nº 11.340/06"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Lei nº 10.446/02",
+   "note": "Cited in item 5(e) among the listed offences against women.",
+   "evidence": {
+    "provision": "[2] Tese (ED), item 5(e)",
+    "quote": "Lei nº 10.446/02"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Lei nº 14.192/21",
+   "note": "Cited in item 5(e) among the listed offences against women.",
+   "evidence": {
+    "provision": "[2] Tese (ED), item 5(e)",
+    "quote": "Lei nº 14.192/21"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Estatuto da Criança e do Adolescente (Lei nº 8.069/1990 as cited in the text), arts. 240, 241-A, 241-C, 241-D",
+   "note": "Child sexual abuse material and serious crimes against children and adolescents, listed in item 5(f).",
+   "evidence": {
+    "provision": "[2] Tese (ED), item 5(f)",
+    "quote": "dos arts. 240, 241-A, 241-C, 241-D do Estatuto da Criança e do Adolescente"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Lei nº 8.078/90 (Código de Defesa do Consumidor)",
+   "note": "Marketplace providers are civilly liable under the consumer code (item 6 of the thesis).",
+   "evidence": {
+    "provision": "[2] Tese (ED), item 6",
+    "quote": "respondem civilmente de acordo com o Código de Defesa do Consumidor (Lei nº 8.078/90)"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "Legislação eleitoral and normative acts issued by the TSE",
+   "note": "Item 2 carves out specific electoral legislation and TSE normative acts from the interpretation of art. 19 MCI; no specific instrument is named.",
+   "evidence": {
+    "provision": "[2] Tese (ED), item 2",
+    "quote": "ressalvada a aplicação das disposições específicas da legislação eleitoral e os atos normativos expedidos pelo TSE"
+   }
+  }
+ ],
+ "notes": "The document contains two decisions on RE 1.037.396 (Tema 987): the plenary thesis of 26.6.2025 [1] and the embargos de declaração thesis of 17.6.2026 [2], which refixes it. [2] is the later text; its wording differs in several items (item 3 adds 'de forma solidária'; item 4 changes 'rede artificial de distribuição (chatbot ou robôs)' to 'mecanismos artificiais de disseminação inorgânica'; item 5.6 is new; item 14 of [1] (prospective effect) becomes ex nunc from the minutes of 5/8/25 in [2] item 13, with a 60-day period for item 5 obligations in [2] item 14). The registry title also cites RE 1.057.258 (Tema 533), which does not appear in the fetched text. Relations to the MCI describe how the decision treats art. 19 and 21; the text itself amends or repeals no law.",
+ "events": [
+  {
+   "event": "adopted",
+   "date": "2025-06-26",
+   "date_type": "absolute",
+   "date_text": "Plenário, 26.6.2025",
+   "applies_to": "tese do Tema 987 (RE 1.037.396/SP), decisão de julgamento do Tribunal Pleno",
+   "evidence": {
+    "provision": "[1] Decisão de julgamento - Tribunal Pleno, 26.6.2025",
+    "quote": "Plenário, 26.6.2025"
+   }
+  },
+  {
+   "event": "published",
+   "date": "2025-08-05",
+   "date_type": "absolute",
+   "date_text": "em 5/8/25",
+   "applies_to": "ata de julgamento referida na modulação dos efeitos temporais",
+   "evidence": {
+    "provision": "[2] Decisão nos embargos de declaração (ED) - Tribunal Pleno, 17.6.2026, item 13",
+    "quote": "a partir da data da publicação da ata de julgamento (em 5/8/25)"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2025-08-05",
+   "date_type": "absolute",
+   "date_text": "produzirá efeitos ex nunc, a partir da data da publicação da ata de julgamento (em 5/8/25)",
+   "applies_to": "efeitos da tese fixada no tema 987 (ex nunc, ressalvados atos continuados ou permanentes e decisões transitadas em julgado)",
+   "evidence": {
+    "provision": "[2] Decisão nos embargos de declaração (ED) - Tribunal Pleno, 17.6.2026, item 13",
+    "quote": "produzirá efeitos ex nunc, a partir da data da publicação da ata de julgamento (em 5/8/25)"
+   }
+  },
+  {
+   "event": "adopted",
+   "date": "2026-06-17",
+   "date_type": "absolute",
+   "date_text": "Plenário, 17.6.2026",
+   "applies_to": "tese refixada nos embargos de declaração (tema 987)",
+   "evidence": {
+    "provision": "[2] Decisão nos embargos de declaração (ED) - Tribunal Pleno, 17.6.2026",
+    "quote": "Plenário, 17.6.2026"
+   }
+  },
+  {
+   "event": "published",
+   "date": null,
+   "date_type": "not_stated",
+   "date_text": "da publicação da ata de julgamento dos presentes embargos de declaração",
+   "applies_to": "ata de julgamento dos embargos de declaração de 17.6.2026",
+   "evidence": {
+    "provision": "[2] Decisão nos embargos de declaração (ED) - Tribunal Pleno, 17.6.2026, item 14",
+    "quote": "contados da publicação da ata de julgamento dos presentes embargos de declaração"
+   }
+  },
+  {
+   "event": "deadline",
+   "date": "2025-10-04",
+   "date_type": "relative",
+   "date_text": "terão o prazo de 60 (sessenta) dias, contados da publicação da ata de julgamento dos presentes embargos de declaração, para a implementação das obrigações a eles impostas no item 5",
+   "anchor": "publicação da ata de julgamento dos presentes embargos de declaração",
+   "applies_to": "implementação das obrigações do item 5 (indisponibilização de conteúdos que configurem crimes graves) pelos provedores de aplicações de internet",
+   "offset_value": 60,
+   "offset_unit": "days",
+   "anchor_event": "published",
+   "evidence": {
+    "provision": "[2] Decisão nos embargos de declaração (ED) - Tribunal Pleno, 17.6.2026, item 14",
+    "quote": "terão o prazo de 60 (sessenta) dias, contados da publicação da ata de julgamento dos presentes embargos de declaração"
+   },
+   "date_computed_from": "published 2025-08-05 (text) + 60 days"
+  }
+ ],
+ "section_status": {
+  "thresholds": {
+   "status": "not_found",
+   "note": "The decision (teses of 26.6.2025 and of the embargos of 17.6.2026) sets no numeric cutoff that changes the legal treatment of any person, entity, service or product. The numbers that appear were considered and excluded: the 60-day period for implementing the structural obligations in item 14 of the 2026 tese is a procedural time limit (event, not threshold); the date of the minutes (5/8/25) fixes the temporal effect and is not a threshold; statute and article numbers are citations; and the liability regime turns on qualitative standards (e.g., 'tempo razoável', 'tempo razoável', 'estado da técnica', 'dúvida razoável') rather than numbers. Penalties, fines and multas are referred to only generically, with no amounts stated."
+  }
+ },
+ "thresholds": []
+}

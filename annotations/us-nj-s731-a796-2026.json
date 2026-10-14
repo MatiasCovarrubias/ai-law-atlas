@@ -1,0 +1,493 @@
+{
+ "schema_version": "1.3",
+ "instrument_id": "us-nj-s731-a796-2026",
+ "tier": "A",
+ "annotator": {
+  "model": "claude-haiku-5-5",
+  "method": "focused, effort high, obligations medium",
+  "date": "2026-10-14",
+  "prompt_version": "1.3-030c54d5"
+ },
+ "validation": "machine",
+ "text_version": {
+  "source": "web.archive.org (archived copy of the official pub.njleg.gov advance law text)",
+  "url": "https://web.archive.org/web/20261006220214/https://pub.njleg.gov/Bills/2026/AL26/32_.HTM",
+  "retrieved": "2026-10-14",
+  "version": "P.L.2026, c.32 (Assembly No. 796, Fourth Reprint), approved July 7, 2026; advance law (chaptered) text, C.48:7-6.2; effective immediately",
+  "language": "en",
+  "extent": "full",
+  "note": "Chaptered advance-law text replacing the A796 4R reprint PDF (kept as .prev.txt.bak; old raw PDF kept as cache/raw/<id>.prev.pdf.bak). pub.njleg.gov refuses connections from this machine (and from WebFetch/Save Page Now), so the Wayback raw capture (id_) was used. NJ advance laws keep the reprint's amendment notation: extracted with tools/extract_texts.py, superscript amendment numbers appear as ^1..^4 and deleted matter sits inside ^N[...] brackets (the whole original section 1 is struck, ^3[...]^3, and replaced by a new section 1). Operative text: BPU standards define a large data center with a minimum megawatt designation not greater than 50 MW. Chapter number confirmed by the text header and fastdemocracy.com bill page."
+ },
+ "classification": {
+  "domains": [
+   "energy_grid_water",
+   "compute_data_centers"
+  ],
+  "primary_domain": "energy_grid_water",
+  "mechanisms": [
+   "tariff_price_regulation",
+   "mandate_obligation",
+   "designation_tiering"
+  ],
+  "binding_force": "binding",
+  "addressee_roles": [
+   "utility_grid_operator",
+   "data_center_operator",
+   "data_center_owner",
+   "regulator"
+  ],
+  "affected_roles": [
+   "consumers_users"
+  ],
+  "decision_margins": [
+   "household:prices",
+   "firm:input_use"
+  ],
+  "territorial_scope": {
+   "types": [
+    "subnational"
+   ],
+   "description": "Applies to electric public utilities and large data center customers in New Jersey, within each utility's service area.",
+   "evidence": {
+    "provision": "Sec. 1 f.",
+    "quote": "within the electric public utility’s service area"
+   }
+  }
+ },
+ "summary": {
+  "short": "Requires New Jersey electric public utilities to seek Board of Public Utilities approval of a rate class and tariff for large data center customers, so that other customers do not subsidize their costs. Customers must post financial guarantees and accept curtailment and flexibility duties. Takes effect immediately.",
+  "long": "Supplements Title 48 to regulate retail electricity service to large data centers in New Jersey. Within 12 months, the Board of Public Utilities must set by order standards for each electric public utility, including defining characteristics of a large data center (minimum size not greater than 50 megawatts, with commonly owned or co-located facilities aggregated). The standards aim to keep other customers from subsidizing data center costs and from bearing stranded costs. They also cover co-located generation, capacity valuation, load-forecast submissions, a voluntary demand-reduction program, interconnection and curtailment priority (data centers before residential customers, excluding designated critical load), and anti-evasion measures. Within 180 days after that order, each utility must petition for a rate class and tariff, which the Board approves if it meets the Act. Large data center customers must provide financial guarantees for at least 85 percent of their electricity supply over 10 years, post deposits or security, accept demand-flexibility commitments, report flexibility performance annually, and pay interconnection study costs. Facilities approved before enactment are exempt from some of these duties for their already approved megawatts. Rate and service agreements must meet the Act's protections, and FERC jurisdiction over wholesale sales and transmission is preserved. The Act takes effect immediately."
+ },
+ "relations": [
+  {
+   "relation": "cross_references",
+   "target_text": "Federal Power Act (16 U.S.C. s.791 et seq.)",
+   "note": "Savings clause: nothing in the section is to affect or displace FERC's exclusive jurisdiction over wholesale sales of electric energy or capacity and over transmission rates, terms and conditions under the Federal Power Act.",
+   "evidence": {
+    "provision": "§1 j.",
+    "quote": "the exclusive jurisdiction of the Federal Energy Regulatory Commission over wholesale sales of electric energy or capacity"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "P.L.1999, c.23 (C.48:3-51 and C.48:3-55)",
+   "note": "Section 3 of P.L.1999, c.23 is used for the definition of electric public utility; section 7 of that act sets the Board's review procedure for tariff applications and petitions under this section.",
+   "evidence": {
+    "provision": "§1 c.",
+    "quote": "pursuant to the provisions of section 7 of P.L.1999, c.23 (C.48:3-55)"
+   }
+  },
+  {
+   "relation": "cross_references",
+   "target_text": "P.L.1995, c.180 (C.48:2-21.26), section 3",
+   "note": "Rate or service agreements under section 3 of P.L.1995, c.180 must satisfy the substantive requirements of subsection d. of this section; the Board may not approve agreements that materially diminish its protections.",
+   "evidence": {
+    "provision": "§1 i.",
+    "quote": "pursuant to section 3 of P.L.1995, c.180 (C.48:2-21.26) or any other authority"
+   }
+  },
+  {
+   "relation": "amends",
+   "target_text": "Title 48 of the Revised Statutes (new section codified at C.48:7-6.2)",
+   "note": "The act is stated to supplement Title 48 by adding a new section; the codification C.48:7-6.2 appears in the header. Closest relation type used; no existing section of Title 48 is quoted as changed.",
+   "evidence": {
+    "provision": "Title (long title)",
+    "quote": "supplementing Title 48 of the Revised Statutes"
+   }
+  }
+ ],
+ "entities": [
+  {
+   "name": "Board of Public Utilities",
+   "role": "designated",
+   "function": "Establishes by order the standards for supplying large data center customers, approves tariffs and rate classes, determines whether a facility qualifies as a large data center customer, and reviews the applications and petitions filed under the section.",
+   "evidence": {
+    "provision": "§1 a.",
+    "quote": "“Board” means the Board of Public Utilities."
+   }
+  },
+  {
+   "name": "Federal Energy Regulatory Commission",
+   "role": "listed",
+   "function": "Named as holding exclusive jurisdiction over wholesale sales of electric energy or capacity and transmission service rates, which the section does not displace.",
+   "evidence": {
+    "provision": "§1 j.",
+    "quote": "the exclusive jurisdiction of the Federal Energy Regulatory Commission"
+   }
+  }
+ ],
+ "notes": "Reprint format: bracketed text marks struck language and ^ markers mark amendments, so the annotator coded the unbracketed text as operative. The bracketed old section 1 contains a 100 megawatt data center definition and an 85 percent guarantee; the new section 1 instead leaves the size threshold to Board standards capped at 50 megawatts. The registry bill number S731 does not appear in the document, which identifies the act as Assembly No. 796 (Fourth Reprint). No enabling act is stated. Missing registry IDs are left as empty strings.",
+ "events": [
+  {
+   "event": "signed",
+   "date": "2026-07-07",
+   "date_type": "absolute",
+   "date_text": "approved July 7, 2026",
+   "applies_to": "Act as a whole (P.L. 2026, c.032)",
+   "evidence": {
+    "provision": "Dateline (P.L. 2026, c.032)",
+    "quote": "approved July 7, 2026"
+   }
+  },
+  {
+   "event": "entry_into_force",
+   "date": "2026-07-07",
+   "date_type": "relative",
+   "date_text": "This act shall take effect immediately.",
+   "anchor": "Approval of P.L. 2026, c.032 (signed July 7, 2026)",
+   "applies_to": "Act as a whole",
+   "offset_value": 0,
+   "offset_unit": "days",
+   "anchor_event": "signed",
+   "evidence": {
+    "provision": "§2",
+    "quote": "This act shall take effect immediately."
+   },
+   "date_computed_from": "signed 2026-07-07 (text) + 0 days"
+  },
+  {
+   "event": "deadline",
+   "date": "2027-07-07",
+   "date_type": "relative",
+   "date_text": "No later than 12 months after the effective date of this section, the Board of Public Utilities shall establish, by order for every electric public utility, standards",
+   "anchor": "Effective date of this act",
+   "applies_to": "Board of Public Utilities: establish by order, for every electric public utility, standards for large data center customers",
+   "offset_value": 12,
+   "offset_unit": "months",
+   "anchor_event": "entry_into_force",
+   "evidence": {
+    "provision": "§1 b. (as enacted)",
+    "quote": "b. No later than 12 months after the effective date"
+   },
+   "date_computed_from": "entry_into_force 2026-07-07 (computed) + 12 months"
+  },
+  {
+   "event": "deadline",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "No later than 180 days after the board issues an order establishing standards for the provision of electricity to large data center customers",
+   "anchor": "Board order establishing standards under §1 b.",
+   "depends_on": "Board order establishing standards under §1 b.",
+   "applies_to": "Each electric public utility: file a petition with the Board for approval of a rate class and tariff for large data center customers",
+   "offset_value": 180,
+   "offset_unit": "days",
+   "evidence": {
+    "provision": "§1 c.",
+    "quote": "No later than 180 days after the board issues an"
+   }
+  },
+  {
+   "event": "application",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "Commencing upon the board’s approval of the tariff filed pursuant to subsection c. of this section",
+   "anchor": "Board approval of the tariff filed under §1 c.",
+   "depends_on": "Board approval of the tariff filed under §1 c.",
+   "applies_to": "Electric public utilities: apply the approved tariff to each large data center customer within the service area",
+   "evidence": {
+    "provision": "§1 f.",
+    "quote": "Commencing upon the board’s approval of the"
+   }
+  },
+  {
+   "event": "application",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "shall be subject to the approved tariff upon the commencement of service, unless the board determines that application of the tariff would be inequitable",
+   "anchor": "Effective date of the approved tariff under §1 f.",
+   "depends_on": "Effective date of the approved tariff under §1 f.",
+   "applies_to": "Pending applications for new or expanded service above the megawatt threshold set under §1 b.(1)",
+   "evidence": {
+    "provision": "§1 f.",
+    "quote": "the approved tariff upon the commencement of service"
+   }
+  },
+  {
+   "event": "application",
+   "date": null,
+   "date_type": "conditional",
+   "date_text": "approved by an electric public utility to receive service prior to the effective date of this act",
+   "anchor": "Effective date of this act",
+   "depends_on": "Service approved by an electric public utility before the effective date of this act",
+   "applies_to": "Large data centers approved to receive service before the effective date of this act: exempt from §1 d.(1), (2) and (8) for that approved service",
+   "evidence": {
+    "provision": "§1 g.",
+    "quote": "approved by an electric public utility to receive service prior to the effective date of"
+   }
+  }
+ ],
+ "thresholds": [
+  {
+   "variable": "power_capacity",
+   "variable_text": "minimum megawatt size designation (ceiling on the Board-set size threshold for a large data center)",
+   "operator": "<=",
+   "value": 50,
+   "value_text": "which shall not be greater than 50 megawatts",
+   "unit": "megawatts",
+   "measurement": "Board-set minimum megawatt size designation; the Board aggregates the peak monthly compute and compute-related energy demand of commonly owned, co-located or interconnected data centers",
+   "level": "facility",
+   "trigger": "scope_definition",
+   "consequence": "Caps the minimum size at which the Board may define a large data center",
+   "conditions": "Board sets the size threshold by order for each electric public utility",
+   "evidence": {
+    "provision": "Sec. 1(b)(1)",
+    "quote": "which shall not be greater than 50 megawatts"
+   }
+  },
+  {
+   "variable": "power_capacity",
+   "variable_text": "minimum megawatt size designation set by the Board for each electric public utility",
+   "operator": ">=",
+   "value": null,
+   "value_text": "minimum megawatt size designation, to be set by the Board (defining characteristics of a large data center for each electric public utility)",
+   "unit": "megawatts",
+   "measurement": "Board-defined; aggregated peak monthly compute and compute-related energy demand of commonly owned or co-located data centers",
+   "level": "facility",
+   "trigger": "scope_definition",
+   "consequence": "Facilities at or above the Board-set size are large data centers subject to the large data center standards and tariff",
+   "conditions": "Board establishes standards by order for every electric public utility, with stakeholder input",
+   "depends_on": "Board order establishing standards under Sec. 1(b)",
+   "evidence": {
+    "provision": "Sec. 1(b)(1)",
+    "quote": "including, but not limited to, minimum megawatt"
+   }
+  },
+  {
+   "variable": "other",
+   "variable_text": "share of electricity supply requested that a new large data center customer must pay for under a financial guarantee",
+   "operator": ">=",
+   "value": 85,
+   "value_text": "pay for at least 85 percent of the electricity supply it requests for a period of 10 years from when service commences",
+   "unit": "percent",
+   "measurement": "share of electricity supply requested, over 10 years from when service commences, or as otherwise determined in the Board's standards",
+   "level": "entity",
+   "trigger": "obligation",
+   "consequence": "Each new large data center customer must provide adequate financial guarantees covering this share",
+   "conditions": "Applies to any new large data center customer served by an electric public utility",
+   "evidence": {
+    "provision": "Sec. 1(d)(1)",
+    "quote": "for at least 85 percent of the"
+   }
+  },
+  {
+   "variable": "power_capacity",
+   "variable_text": "megawatts of service approved before the effective date of this act",
+   "operator": "<=",
+   "value": null,
+   "value_text": "the megawatts of service approved before the effective date of this act; any service above that approved quantity is subject to the tariff",
+   "unit": "megawatts",
+   "measurement": "quantity of service approved by an electric public utility before the effective date of this act",
+   "level": "facility",
+   "trigger": "exemption",
+   "consequence": "Large data center approved before the effective date is exempt from paragraphs (1), (2) and (8) of subsection d. for that approved quantity only",
+   "conditions": "Exemption not diminished by renewal, extension or amendment of the approved service agreement; does not extend to new or expanded service above the Board-set megawatt threshold",
+   "depends_on": "service approved by an electric public utility before the effective date of this act",
+   "evidence": {
+    "provision": "Sec. 1(g)",
+    "quote": "shall apply only to the megawatts of service approved before the effective date of this act"
+   }
+  }
+ ],
+ "definitions": [
+  {
+   "term": "Electric public utility",
+   "defined_in": "section 3 of P.L.1999, c.23 (C.48:3-51)",
+   "evidence": {
+    "provision": "Sec. 1(a)",
+    "quote": "“Electric public utility” means the same as the term is defined in section 3 of P.L.1999, c.23 (C.48:3-51)"
+   }
+  },
+  {
+   "term": "Large data center",
+   "defined_in": "this section (Sec. 1(a))",
+   "evidence": {
+    "provision": "Sec. 1(a)",
+    "quote": "“Large data center” means a data center that meets the size threshold and other defining characteristics established by the board"
+   }
+  },
+  {
+   "term": "Large data center customer",
+   "defined_in": "this section (Sec. 1(a))",
+   "evidence": {
+    "provision": "Sec. 1(a)",
+    "quote": "“Large data center customer” means a customer of an electric public utility responsible for one or more large data centers"
+   }
+  },
+  {
+   "term": "Co-located generation",
+   "defined_in": "this section (Sec. 1(a))",
+   "evidence": {
+    "provision": "Sec. 1(a)",
+    "quote": "“Co-located generation” means an electric power generation facility that is interconnected directly with a data center customer’s electrical load"
+   }
+  },
+  {
+   "term": "Capacity resource",
+   "defined_in": "this section (Sec. 1(a))",
+   "evidence": {
+    "provision": "Sec. 1(a)",
+    "quote": "“Capacity resource” means an energy resource, including generation, energy storage, demand response, demand reduction, energy efficiency, or any combination thereof"
+   }
+  },
+  {
+   "term": "Demand flexibility",
+   "defined_in": "this section (Sec. 1(a))",
+   "evidence": {
+    "provision": "Sec. 1(a)",
+    "quote": "“Demand flexibility” means the ability of a customer to modify the timing, level, or pattern of their electricity consumption in response to grid conditions"
+   }
+  }
+ ],
+ "obligations": [
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Board of Public Utilities must establish by order, for every electric public utility, standards for supplying large data center customers, including defining characteristics, cost allocation, demand-reduction, interconnection and anti-evasion requirements.",
+   "applies_from": "No later than 12 months after the effective date of this section",
+   "evidence": {
+    "provision": "Sec. 1 (new text), subsec. 1.b",
+    "quote": "the Board of Public Utilities shall establish, by order for every electric public utility, standards"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "utility_grid_operator",
+   "modality": "shall",
+   "summary": "Each electric public utility must file a petition with the Board for approval of a rate class and tariff for large data center customers.",
+   "applies_from": "No later than 180 days after the Board issues an order establishing standards under subsection b.",
+   "evidence": {
+    "provision": "Sec. 1 (new text), subsec. 1.c",
+    "quote": "shall file a petition with the board for approval of a rate class and tariff"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "Rates, terms and conditions the Board approves for large data center customers must reasonably protect other utility customers against increased transmission and distribution costs; the Board must require each electric public utility to impose the protections listed in paragraphs (1) to (10).",
+   "evidence": {
+    "provision": "Sec. 1 (new text), subsec. 1.d",
+    "quote": "shall reasonably protect other electric public utility customers"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_center_operator",
+   "also_addressees": [
+    "utility_grid_operator"
+   ],
+   "modality": "shall",
+   "summary": "Large data center customers must provide adequate financial guarantees to pay for at least 85 percent of the electricity supply they request for 10 years from commencement of service, and post deposits or financial security sufficient to protect ratepayers.",
+   "evidence": {
+    "provision": "Sec. 1 (new text), subsec. 1.d(1)-(2)",
+    "quote": "provides adequate financial guarantees that it will pay"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "utility_grid_operator",
+   "modality": "shall",
+   "summary": "Each electric public utility must develop a voluntary demand-reduction trade program through which large data center customers may contract with third parties for verified demand flexibility, without passing transaction costs to other ratepayers.",
+   "evidence": {
+    "provision": "Sec. 1 (new text), subsec. 1.d(4)",
+    "quote": "develop a voluntary demand-reduction trade"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "data_center_operator",
+   "modality": "shall",
+   "summary": "Large data center customers must make demand flexibility commitments, including at least one of: curtailment during system emergencies, enforceable performance standards with financial penalties, participation in the voluntary trade program, or other contractual flexibility commitments.",
+   "evidence": {
+    "provision": "Sec. 1 (new text), subsec. 1.d(5)",
+    "quote": "require demand flexibility commitments by large"
+   }
+  },
+  {
+   "type": "reporting_to_authority",
+   "addressee": "utility_grid_operator",
+   "also_addressees": [
+    "data_center_operator"
+   ],
+   "modality": "shall",
+   "summary": "The Board requires annual reporting of actual flexibility performance to the Board; the provision does not state which party reports, and the utility is the addressee of the requirement.",
+   "evidence": {
+    "provision": "Sec. 1 (new text), subsec. 1.d(7)",
+    "quote": "require annual reporting of actual flexibility"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "utility_grid_operator",
+   "modality": "shall",
+   "summary": "Each electric public utility must assess the capacity value of total capacity resources procured by a large data center customer to meet its energy needs, with later changes in valuation not affecting cost allocation or curtailment.",
+   "evidence": {
+    "provision": "Sec. 1 (new text), subsec. 1.d(9)",
+    "quote": "assess the capacity value of total capacity"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "The Board must review each petition submitted under the section expeditiously under the Board's statutory review procedure and approve it if it complies with the section and other applicable law.",
+   "evidence": {
+    "provision": "Sec. 1 (new text), subsec. 1.e",
+    "quote": "The board shall expeditiously review, pursuant"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "utility_grid_operator",
+   "modality": "shall",
+   "summary": "Each electric public utility must apply the approved tariff to each large data center customer within its service area, including to new or expanded service pending on the effective date of the approved tariff unless the Board finds application inequitable.",
+   "applies_from": "Commencing upon approval of the tariff filed pursuant to subsection c.",
+   "evidence": {
+    "provision": "Sec. 1 (new text), subsec. 1.f",
+    "quote": "shall apply the tariff developed pursuant to this section, as approved"
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall",
+   "summary": "For a bilateral or multilateral demand-reduction contract entered into before the regional transmission organization capacity deadlines, the Board must accept the contract filed with it unless its terms are inconsistent with the specified substantive provisions.",
+   "conditional_on": "To the extent the regional transmission organization sets earlier capacity auction deadlines",
+   "evidence": {
+    "provision": "Sec. 1 (new text), subsec. 1.h",
+    "quote": "The board shall accept the contract unless the board finds"
+   }
+  },
+  {
+   "type": "other",
+   "addressee": "utility_grid_operator",
+   "also_addressees": [
+    "data_center_operator"
+   ],
+   "modality": "shall",
+   "summary": "Any rate or service agreement between an electric public utility and a large data center customer, whether under a tariff or under other authority, must satisfy the substantive requirements of subsection d.",
+   "evidence": {
+    "provision": "Sec. 1 (new text), subsec. 1.i",
+    "quote": "shall satisfy the substantive requirements of subsection d."
+   }
+  },
+  {
+   "type": "government_duty",
+   "addressee": "government_agency",
+   "modality": "shall_not",
+   "summary": "The Board shall not approve, or allow to take effect, any agreement under the cited authority that materially diminishes the protections established by the section.",
+   "evidence": {
+    "provision": "Sec. 1 (new text), subsec. 1.i",
+    "quote": "The board shall not approve, and shall not allow to take effect"
+   }
+  }
+ ],
+ "section_status": {
+  "enforcement": {
+   "status": "not_found",
+   "note": "The Act sets no fines, criminal penalties, licence revocation, clawback, suspension or blocking. Subsection d(5)(b) mentions financial penalties for non-performance of demand flexibility commitments, but leaves them to the tariff. This text states no amount, formula, authority or cure period for them, so no enforcement row is coded."
+  }
+ },
+ "enforcement": []
+}
